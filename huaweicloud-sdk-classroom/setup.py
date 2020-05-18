@@ -18,7 +18,7 @@ DESCRIPTION = "Classroom"
 AUTHOR = "HuaweiCloud SDK"
 URL = "https://github.com/huaweicloud/huaweicloud-sdk-python-v3"
 
-VERSION = "3.0.1-beta"
+VERSION = "3.0.2-beta"
 
 REQUIRES = ["huaweicloudsdkcore"]
 
