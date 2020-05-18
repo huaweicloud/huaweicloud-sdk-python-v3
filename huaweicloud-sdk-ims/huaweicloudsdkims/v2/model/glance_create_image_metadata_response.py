@@ -1,0 +1,802 @@
+# coding: utf-8
+
+import pprint
+import re
+
+import six
+
+
+class GlanceCreateImageMetadataResponse(object):
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    openapi_types = {
+        'visibility': 'str',
+        'name': 'str',
+        'protected': 'bool',
+        'container_format': 'str',
+        'disk_format': 'str',
+        'tags': 'list[str]',
+        'min_ram': 'int',
+        'min_disk': 'int',
+        'status': 'str',
+        'created_at': 'str',
+        'updated_at': 'str',
+        '_self': 'str',
+        'id': 'str',
+        'file': 'str',
+        'schema': 'str',
+        'image_source_type': 'str',
+        'image_size': 'str',
+        'isregistered': 'str',
+        'os_version': 'str',
+        'os_type': 'str',
+        'platform': 'str',
+        'os_bit': 'str',
+        'imagetype': 'str',
+        'virtual_env_type': 'str',
+        'owner': 'str',
+        'virtual_size': 'int',
+        'properties': 'object'
+    }
+
+    attribute_map = {
+        'visibility': 'visibility',
+        'name': 'name',
+        'protected': 'protected',
+        'container_format': 'container_format',
+        'disk_format': 'disk_format',
+        'tags': 'tags',
+        'min_ram': 'min_ram',
+        'min_disk': 'min_disk',
+        'status': 'status',
+        'created_at': 'created_at',
+        'updated_at': 'updated_at',
+        '_self': 'self',
+        'id': 'id',
+        'file': 'file',
+        'schema': 'schema',
+        'image_source_type': '__image_source_type',
+        'image_size': '__image_size',
+        'isregistered': '__isregistered',
+        'os_version': '__os_version',
+        'os_type': '__os_type',
+        'platform': '__platform',
+        'os_bit': '__os_bit',
+        'imagetype': '__imagetype',
+        'virtual_env_type': 'virtual_env_type',
+        'owner': 'owner',
+        'virtual_size': 'virtual_size',
+        'properties': 'properties'
+    }
+
+    def __init__(self, visibility=None, name=None, protected=None, container_format=None, disk_format=None, tags=None, min_ram=None, min_disk=None, status=None, created_at=None, updated_at=None, _self=None, id=None, file=None, schema=None, image_source_type=None, image_size=None, isregistered=None, os_version=None, os_type=None, platform=None, os_bit=None, imagetype=None, virtual_env_type=None, owner=None, virtual_size=None, properties=None):  # noqa: E501
+        """GlanceCreateImageMetadataResponse - a model defined in huaweicloud sdk"""
+
+        self._visibility = None
+        self._name = None
+        self._protected = None
+        self._container_format = None
+        self._disk_format = None
+        self._tags = None
+        self._min_ram = None
+        self._min_disk = None
+        self._status = None
+        self._created_at = None
+        self._updated_at = None
+        self.__self = None
+        self._id = None
+        self._file = None
+        self._schema = None
+        self._image_source_type = None
+        self._image_size = None
+        self._isregistered = None
+        self._os_version = None
+        self._os_type = None
+        self._platform = None
+        self._os_bit = None
+        self._imagetype = None
+        self._virtual_env_type = None
+        self._owner = None
+        self._virtual_size = None
+        self._properties = None
+        self.discriminator = None
+
+        if visibility is not None:
+            self.visibility = visibility
+        if name is not None:
+            self.name = name
+        if protected is not None:
+            self.protected = protected
+        if container_format is not None:
+            self.container_format = container_format
+        if disk_format is not None:
+            self.disk_format = disk_format
+        if tags is not None:
+            self.tags = tags
+        if min_ram is not None:
+            self.min_ram = min_ram
+        if min_disk is not None:
+            self.min_disk = min_disk
+        if status is not None:
+            self.status = status
+        if created_at is not None:
+            self.created_at = created_at
+        if updated_at is not None:
+            self.updated_at = updated_at
+        if _self is not None:
+            self._self = _self
+        if id is not None:
+            self.id = id
+        if file is not None:
+            self.file = file
+        if schema is not None:
+            self.schema = schema
+        if image_source_type is not None:
+            self.image_source_type = image_source_type
+        if image_size is not None:
+            self.image_size = image_size
+        if isregistered is not None:
+            self.isregistered = isregistered
+        if os_version is not None:
+            self.os_version = os_version
+        if os_type is not None:
+            self.os_type = os_type
+        if platform is not None:
+            self.platform = platform
+        if os_bit is not None:
+            self.os_bit = os_bit
+        if imagetype is not None:
+            self.imagetype = imagetype
+        if virtual_env_type is not None:
+            self.virtual_env_type = virtual_env_type
+        if owner is not None:
+            self.owner = owner
+        if virtual_size is not None:
+            self.virtual_size = virtual_size
+        if properties is not None:
+            self.properties = properties
+
+    @property
+    def visibility(self):
+        """Gets the visibility of this GlanceCreateImageMetadataResponse.
+
+        其他租户是否可见。取值为private。
+
+        :return: The visibility of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._visibility
+
+    @visibility.setter
+    def visibility(self, visibility):
+        """Sets the visibility of this GlanceCreateImageMetadataResponse.
+
+        其他租户是否可见。取值为private。
+
+        :param visibility: The visibility of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._visibility = visibility
+
+    @property
+    def name(self):
+        """Gets the name of this GlanceCreateImageMetadataResponse.
+
+        镜像名称，如果未指定name的取值，则默认为空，但是使用该镜像创建虚拟机会失败。名称的长度为1～128位。
+
+        :return: The name of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this GlanceCreateImageMetadataResponse.
+
+        镜像名称，如果未指定name的取值，则默认为空，但是使用该镜像创建虚拟机会失败。名称的长度为1～128位。
+
+        :param name: The name of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def protected(self):
+        """Gets the protected of this GlanceCreateImageMetadataResponse.
+
+        镜像是否被保护，保护后的镜像不可删除。取值为false
+
+        :return: The protected of this GlanceCreateImageMetadataResponse.
+        :rtype: bool
+        """
+        return self._protected
+
+    @protected.setter
+    def protected(self, protected):
+        """Sets the protected of this GlanceCreateImageMetadataResponse.
+
+        镜像是否被保护，保护后的镜像不可删除。取值为false
+
+        :param protected: The protected of this GlanceCreateImageMetadataResponse.
+        :type: bool
+        """
+        self._protected = protected
+
+    @property
+    def container_format(self):
+        """Gets the container_format of this GlanceCreateImageMetadataResponse.
+
+        容器格式。取值为bare。
+
+        :return: The container_format of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._container_format
+
+    @container_format.setter
+    def container_format(self, container_format):
+        """Sets the container_format of this GlanceCreateImageMetadataResponse.
+
+        容器格式。取值为bare。
+
+        :param container_format: The container_format of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._container_format = container_format
+
+    @property
+    def disk_format(self):
+        """Gets the disk_format of this GlanceCreateImageMetadataResponse.
+
+        镜像文件格式。目前支持vhd、zvhd、raw、qcow2。默认值是vhd。
+
+        :return: The disk_format of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._disk_format
+
+    @disk_format.setter
+    def disk_format(self, disk_format):
+        """Sets the disk_format of this GlanceCreateImageMetadataResponse.
+
+        镜像文件格式。目前支持vhd、zvhd、raw、qcow2。默认值是vhd。
+
+        :param disk_format: The disk_format of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._disk_format = disk_format
+
+    @property
+    def tags(self):
+        """Gets the tags of this GlanceCreateImageMetadataResponse.
+
+        镜像标签列表。长度为1～255位。
+
+        :return: The tags of this GlanceCreateImageMetadataResponse.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this GlanceCreateImageMetadataResponse.
+
+        镜像标签列表。长度为1～255位。
+
+        :param tags: The tags of this GlanceCreateImageMetadataResponse.
+        :type: list[str]
+        """
+        self._tags = tags
+
+    @property
+    def min_ram(self):
+        """Gets the min_ram of this GlanceCreateImageMetadataResponse.
+
+        镜像运行最小内存，单位为MB。取值参考ECS规格限制，一般设置为0。云服务器的规格限制，请参见规格清单。
+
+        :return: The min_ram of this GlanceCreateImageMetadataResponse.
+        :rtype: int
+        """
+        return self._min_ram
+
+    @min_ram.setter
+    def min_ram(self, min_ram):
+        """Sets the min_ram of this GlanceCreateImageMetadataResponse.
+
+        镜像运行最小内存，单位为MB。取值参考ECS规格限制，一般设置为0。云服务器的规格限制，请参见规格清单。
+
+        :param min_ram: The min_ram of this GlanceCreateImageMetadataResponse.
+        :type: int
+        """
+        self._min_ram = min_ram
+
+    @property
+    def min_disk(self):
+        """Gets the min_disk of this GlanceCreateImageMetadataResponse.
+
+        镜像运行需要的最小磁盘容量，单位为GB 。取值为40～1024GB。必须大于镜像系统盘容量，否则创建云主机云服务器可能失败。
+
+        :return: The min_disk of this GlanceCreateImageMetadataResponse.
+        :rtype: int
+        """
+        return self._min_disk
+
+    @min_disk.setter
+    def min_disk(self, min_disk):
+        """Sets the min_disk of this GlanceCreateImageMetadataResponse.
+
+        镜像运行需要的最小磁盘容量，单位为GB 。取值为40～1024GB。必须大于镜像系统盘容量，否则创建云主机云服务器可能失败。
+
+        :param min_disk: The min_disk of this GlanceCreateImageMetadataResponse.
+        :type: int
+        """
+        self._min_disk = min_disk
+
+    @property
+    def status(self):
+        """Gets the status of this GlanceCreateImageMetadataResponse.
+
+        镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待上传镜像文件。saving：表示镜像正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用。
+
+        :return: The status of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this GlanceCreateImageMetadataResponse.
+
+        镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待上传镜像文件。saving：表示镜像正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用。
+
+        :param status: The status of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._status = status
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this GlanceCreateImageMetadataResponse.
+
+        创建时间。格式为UTC时间。
+
+        :return: The created_at of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this GlanceCreateImageMetadataResponse.
+
+        创建时间。格式为UTC时间。
+
+        :param created_at: The created_at of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._created_at = created_at
+
+    @property
+    def updated_at(self):
+        """Gets the updated_at of this GlanceCreateImageMetadataResponse.
+
+        更新时间。格式为UTC时间。
+
+        :return: The updated_at of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        """Sets the updated_at of this GlanceCreateImageMetadataResponse.
+
+        更新时间。格式为UTC时间。
+
+        :param updated_at: The updated_at of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._updated_at = updated_at
+
+    @property
+    def _self(self):
+        """Gets the _self of this GlanceCreateImageMetadataResponse.
+
+        本镜像链接。
+
+        :return: The _self of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self.__self
+
+    @_self.setter
+    def _self(self, _self):
+        """Sets the _self of this GlanceCreateImageMetadataResponse.
+
+        本镜像链接。
+
+        :param _self: The _self of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self.__self = _self
+
+    @property
+    def id(self):
+        """Gets the id of this GlanceCreateImageMetadataResponse.
+
+        镜像ID，用户调用创建镜像接口后，需保存该镜像的ID，用来调用上传镜像接口完成镜像上传。
+
+        :return: The id of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this GlanceCreateImageMetadataResponse.
+
+        镜像ID，用户调用创建镜像接口后，需保存该镜像的ID，用来调用上传镜像接口完成镜像上传。
+
+        :param id: The id of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._id = id
+
+    @property
+    def file(self):
+        """Gets the file of this GlanceCreateImageMetadataResponse.
+
+        上传下载镜像文件的地址链接。
+
+        :return: The file of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._file
+
+    @file.setter
+    def file(self, file):
+        """Sets the file of this GlanceCreateImageMetadataResponse.
+
+        上传下载镜像文件的地址链接。
+
+        :param file: The file of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._file = file
+
+    @property
+    def schema(self):
+        """Gets the schema of this GlanceCreateImageMetadataResponse.
+
+        视图链接。
+
+        :return: The schema of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._schema
+
+    @schema.setter
+    def schema(self, schema):
+        """Sets the schema of this GlanceCreateImageMetadataResponse.
+
+        视图链接。
+
+        :param schema: The schema of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._schema = schema
+
+    @property
+    def image_source_type(self):
+        """Gets the image_source_type of this GlanceCreateImageMetadataResponse.
+
+        镜像后端存储类型，目前支持uds。
+
+        :return: The image_source_type of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._image_source_type
+
+    @image_source_type.setter
+    def image_source_type(self, image_source_type):
+        """Sets the image_source_type of this GlanceCreateImageMetadataResponse.
+
+        镜像后端存储类型，目前支持uds。
+
+        :param image_source_type: The image_source_type of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._image_source_type = image_source_type
+
+    @property
+    def image_size(self):
+        """Gets the image_size of this GlanceCreateImageMetadataResponse.
+
+        镜像大小。单位为字节。
+
+        :return: The image_size of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._image_size
+
+    @image_size.setter
+    def image_size(self, image_size):
+        """Sets the image_size of this GlanceCreateImageMetadataResponse.
+
+        镜像大小。单位为字节。
+
+        :param image_size: The image_size of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._image_size = image_size
+
+    @property
+    def isregistered(self):
+        """Gets the isregistered of this GlanceCreateImageMetadataResponse.
+
+        镜像是否注册。只有已注册的镜像才能在Portal界面上查询到。取值为true。
+
+        :return: The isregistered of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._isregistered
+
+    @isregistered.setter
+    def isregistered(self, isregistered):
+        """Sets the isregistered of this GlanceCreateImageMetadataResponse.
+
+        镜像是否注册。只有已注册的镜像才能在Portal界面上查询到。取值为true。
+
+        :param isregistered: The isregistered of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._isregistered = isregistered
+
+    @property
+    def os_version(self):
+        """Gets the os_version of this GlanceCreateImageMetadataResponse.
+
+        镜像的操作系统具体版本。
+
+        :return: The os_version of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._os_version
+
+    @os_version.setter
+    def os_version(self, os_version):
+        """Sets the os_version of this GlanceCreateImageMetadataResponse.
+
+        镜像的操作系统具体版本。
+
+        :param os_version: The os_version of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._os_version = os_version
+
+    @property
+    def os_type(self):
+        """Gets the os_type of this GlanceCreateImageMetadataResponse.
+
+        镜像的操作系统类型，取值由__os_version确定。支持Windows、Linux和other。
+
+        :return: The os_type of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._os_type
+
+    @os_type.setter
+    def os_type(self, os_type):
+        """Sets the os_type of this GlanceCreateImageMetadataResponse.
+
+        镜像的操作系统类型，取值由__os_version确定。支持Windows、Linux和other。
+
+        :param os_type: The os_type of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._os_type = os_type
+
+    @property
+    def platform(self):
+        """Gets the platform of this GlanceCreateImageMetadataResponse.
+
+        表示镜像支持的操作系统平台。取值由__os_version确定
+
+        :return: The platform of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._platform
+
+    @platform.setter
+    def platform(self, platform):
+        """Sets the platform of this GlanceCreateImageMetadataResponse.
+
+        表示镜像支持的操作系统平台。取值由__os_version确定
+
+        :param platform: The platform of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._platform = platform
+
+    @property
+    def os_bit(self):
+        """Gets the os_bit of this GlanceCreateImageMetadataResponse.
+
+        表示操作系统位数。取值由__os_version确定，取值为32或64。
+
+        :return: The os_bit of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._os_bit
+
+    @os_bit.setter
+    def os_bit(self, os_bit):
+        """Sets the os_bit of this GlanceCreateImageMetadataResponse.
+
+        表示操作系统位数。取值由__os_version确定，取值为32或64。
+
+        :param os_bit: The os_bit of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._os_bit = os_bit
+
+    @property
+    def imagetype(self):
+        """Gets the imagetype of this GlanceCreateImageMetadataResponse.
+
+        镜像类型。取值为private，表示私有镜像。
+
+        :return: The imagetype of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._imagetype
+
+    @imagetype.setter
+    def imagetype(self, imagetype):
+        """Sets the imagetype of this GlanceCreateImageMetadataResponse.
+
+        镜像类型。取值为private，表示私有镜像。
+
+        :param imagetype: The imagetype of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._imagetype = imagetype
+
+    @property
+    def virtual_env_type(self):
+        """Gets the virtual_env_type of this GlanceCreateImageMetadataResponse.
+
+        平台类型。镜像使用环境类型：FusionCompute、Ironic、DataImage。如果是云主机云服务器镜像，则取值为FusionCompute。如果是数据卷镜像则取值是DataImage。如果是物理机裸金属服务器镜像，则取值是Ironic。
+
+        :return: The virtual_env_type of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._virtual_env_type
+
+    @virtual_env_type.setter
+    def virtual_env_type(self, virtual_env_type):
+        """Sets the virtual_env_type of this GlanceCreateImageMetadataResponse.
+
+        平台类型。镜像使用环境类型：FusionCompute、Ironic、DataImage。如果是云主机云服务器镜像，则取值为FusionCompute。如果是数据卷镜像则取值是DataImage。如果是物理机裸金属服务器镜像，则取值是Ironic。
+
+        :param virtual_env_type: The virtual_env_type of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._virtual_env_type = virtual_env_type
+
+    @property
+    def owner(self):
+        """Gets the owner of this GlanceCreateImageMetadataResponse.
+
+        镜像所属项目ID。
+
+        :return: The owner of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._owner
+
+    @owner.setter
+    def owner(self, owner):
+        """Sets the owner of this GlanceCreateImageMetadataResponse.
+
+        镜像所属项目ID。
+
+        :param owner: The owner of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._owner = owner
+
+    @property
+    def virtual_size(self):
+        """Gets the virtual_size of this GlanceCreateImageMetadataResponse.
+
+        镜像虚拟大小。单位为字节。
+
+        :return: The virtual_size of this GlanceCreateImageMetadataResponse.
+        :rtype: int
+        """
+        return self._virtual_size
+
+    @virtual_size.setter
+    def virtual_size(self, virtual_size):
+        """Sets the virtual_size of this GlanceCreateImageMetadataResponse.
+
+        镜像虚拟大小。单位为字节。
+
+        :param virtual_size: The virtual_size of this GlanceCreateImageMetadataResponse.
+        :type: int
+        """
+        self._virtual_size = virtual_size
+
+    @property
+    def properties(self):
+        """Gets the properties of this GlanceCreateImageMetadataResponse.
+
+        镜像属性的集合，不表示具体的镜像属性
+
+        :return: The properties of this GlanceCreateImageMetadataResponse.
+        :rtype: object
+        """
+        return self._properties
+
+    @properties.setter
+    def properties(self, properties):
+        """Sets the properties of this GlanceCreateImageMetadataResponse.
+
+        镜像属性的集合，不表示具体的镜像属性
+
+        :param properties: The properties of this GlanceCreateImageMetadataResponse.
+        :type: object
+        """
+        self._properties = properties
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        return pprint.pformat(self.to_dict())
+
+    def __repr__(self):
+        """For `print` and `pprint`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, GlanceCreateImageMetadataResponse):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other
