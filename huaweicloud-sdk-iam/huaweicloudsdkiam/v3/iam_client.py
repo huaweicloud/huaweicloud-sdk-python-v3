@@ -121,7 +121,7 @@ class IamClient(Client):
         :return: None
         """
 
-        all_params = ['agency_id', 'role_id']
+        all_params = ['project_id', 'agency_id', 'role_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -135,6 +135,8 @@ class IamClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
         if 'agency_id' in local_var_params:
             path_params['agency_id'] = local_var_params['agency_id']
         if 'role_id' in local_var_params:
@@ -243,7 +245,7 @@ class IamClient(Client):
         :return: None
         """
 
-        all_params = ['agency_id', 'role_id']
+        all_params = ['project_id', 'agency_id', 'role_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -257,6 +259,8 @@ class IamClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
         if 'agency_id' in local_var_params:
             path_params['agency_id'] = local_var_params['agency_id']
         if 'role_id' in local_var_params:
@@ -545,7 +549,7 @@ class IamClient(Client):
         :return: None
         """
 
-        all_params = ['group_id', 'role_id']
+        all_params = ['project_id', 'group_id', 'role_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -559,6 +563,8 @@ class IamClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
         if 'group_id' in local_var_params:
             path_params['group_id'] = local_var_params['group_id']
         if 'role_id' in local_var_params:
@@ -667,7 +673,7 @@ class IamClient(Client):
         :return: None
         """
 
-        all_params = ['group_id', 'role_id']
+        all_params = ['project_id', 'group_id', 'role_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -681,6 +687,8 @@ class IamClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
         if 'group_id' in local_var_params:
             path_params['group_id'] = local_var_params['group_id']
         if 'role_id' in local_var_params:
@@ -1273,7 +1281,7 @@ class IamClient(Client):
         :return: tuple(KeystoneListProjectPermissionsForGroupResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['group_id']
+        all_params = ['project_id', 'group_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1287,6 +1295,8 @@ class IamClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
         if 'group_id' in local_var_params:
             path_params['group_id'] = local_var_params['group_id']
 
@@ -1521,7 +1531,7 @@ class IamClient(Client):
         :return: None
         """
 
-        all_params = ['group_id', 'role_id']
+        all_params = ['project_id', 'group_id', 'role_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1535,6 +1545,8 @@ class IamClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
         if 'group_id' in local_var_params:
             path_params['group_id'] = local_var_params['group_id']
         if 'role_id' in local_var_params:
@@ -2137,7 +2149,7 @@ class IamClient(Client):
         :return: tuple(ListProjectPermissionsForAgencyResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['agency_id']
+        all_params = ['project_id', 'agency_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -2151,6 +2163,8 @@ class IamClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
         if 'agency_id' in local_var_params:
             path_params['agency_id'] = local_var_params['agency_id']
 
@@ -2259,7 +2273,7 @@ class IamClient(Client):
         :return: None
         """
 
-        all_params = ['agency_id', 'role_id']
+        all_params = ['project_id', 'agency_id', 'role_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -2273,6 +2287,8 @@ class IamClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
         if 'agency_id' in local_var_params:
             path_params['agency_id'] = local_var_params['agency_id']
         if 'role_id' in local_var_params:

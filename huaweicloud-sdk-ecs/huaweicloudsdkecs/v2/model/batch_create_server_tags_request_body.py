@@ -18,20 +18,46 @@ class BatchCreateServerTagsRequestBody(object):
     """
 
     openapi_types = {
+        'action': 'str',
         'tags': 'list[ServerTag]'
     }
 
     attribute_map = {
+        'action': 'action',
         'tags': 'tags'
     }
 
-    def __init__(self, tags=None):  # noqa: E501
+    def __init__(self, action=None, tags=None):  # noqa: E501
         """BatchCreateServerTagsRequestBody - a model defined in huaweicloud sdk"""
 
+        self._action = None
         self._tags = None
         self.discriminator = None
 
+        self.action = action
         self.tags = tags
+
+    @property
+    def action(self):
+        """Gets the action of this BatchCreateServerTagsRequestBody.
+
+        操作标识（仅支持小写）：create（创建）。
+
+        :return: The action of this BatchCreateServerTagsRequestBody.
+        :rtype: str
+        """
+        return self._action
+
+    @action.setter
+    def action(self, action):
+        """Sets the action of this BatchCreateServerTagsRequestBody.
+
+        操作标识（仅支持小写）：create（创建）。
+
+        :param action: The action of this BatchCreateServerTagsRequestBody.
+        :type: str
+        """
+        self._action = action
 
     @property
     def tags(self):

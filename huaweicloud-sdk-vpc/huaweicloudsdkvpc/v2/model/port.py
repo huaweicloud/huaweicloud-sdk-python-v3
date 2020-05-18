@@ -33,7 +33,11 @@ class Port(object):
         'extra_dhcp_opts': 'list[ExtraDhcpOpt]',
         'bindingvnic_type': 'str',
         'dns_assignment': 'list[DnsAssignMent]',
-        'dns_name': 'str'
+        'dns_name': 'str',
+        'bindingvif_details': 'object',
+        'bindingprofile': 'object',
+        'instance_id': 'str',
+        'instance_type': 'str'
     }
 
     attribute_map = {
@@ -52,10 +56,14 @@ class Port(object):
         'extra_dhcp_opts': 'extra_dhcp_opts',
         'bindingvnic_type': 'binding:vnic_type',
         'dns_assignment': 'dns_assignment',
-        'dns_name': 'dns_name'
+        'dns_name': 'dns_name',
+        'bindingvif_details': 'binding:vif_details',
+        'bindingprofile': 'binding:profile',
+        'instance_id': 'instance_id',
+        'instance_type': 'instance_type'
     }
 
-    def __init__(self, id=None, name=None, network_id=None, admin_state_up=None, mac_address=None, fixed_ips=None, device_id=None, device_owner=None, tenant_id=None, status=None, security_groups=None, allowed_address_pairs=None, extra_dhcp_opts=None, bindingvnic_type=None, dns_assignment=None, dns_name=None):  # noqa: E501
+    def __init__(self, id=None, name=None, network_id=None, admin_state_up=None, mac_address=None, fixed_ips=None, device_id=None, device_owner=None, tenant_id=None, status=None, security_groups=None, allowed_address_pairs=None, extra_dhcp_opts=None, bindingvnic_type=None, dns_assignment=None, dns_name=None, bindingvif_details=None, bindingprofile=None, instance_id=None, instance_type=None):  # noqa: E501
         """Port - a model defined in huaweicloud sdk"""
 
         self._id = None
@@ -74,6 +82,10 @@ class Port(object):
         self._bindingvnic_type = None
         self._dns_assignment = None
         self._dns_name = None
+        self._bindingvif_details = None
+        self._bindingprofile = None
+        self._instance_id = None
+        self._instance_type = None
         self.discriminator = None
 
         self.id = id
@@ -92,6 +104,10 @@ class Port(object):
         self.bindingvnic_type = bindingvnic_type
         self.dns_assignment = dns_assignment
         self.dns_name = dns_name
+        self.bindingvif_details = bindingvif_details
+        self.bindingprofile = bindingprofile
+        self.instance_id = instance_id
+        self.instance_type = instance_type
 
     @property
     def id(self):
@@ -444,6 +460,94 @@ class Port(object):
         :type: str
         """
         self._dns_name = dns_name
+
+    @property
+    def bindingvif_details(self):
+        """Gets the bindingvif_details of this Port.
+
+        功能说明：vif的详细信息，  \"ovs_hybrid_plug\": 是否为ovs/bridge混合模式 约束：管理员权限，普通租户不可指定
+
+        :return: The bindingvif_details of this Port.
+        :rtype: object
+        """
+        return self._bindingvif_details
+
+    @bindingvif_details.setter
+    def bindingvif_details(self, bindingvif_details):
+        """Sets the bindingvif_details of this Port.
+
+        功能说明：vif的详细信息，  \"ovs_hybrid_plug\": 是否为ovs/bridge混合模式 约束：管理员权限，普通租户不可指定
+
+        :param bindingvif_details: The bindingvif_details of this Port.
+        :type: object
+        """
+        self._bindingvif_details = bindingvif_details
+
+    @property
+    def bindingprofile(self):
+        """Gets the bindingprofile of this Port.
+
+        功能说明：提供用户设置自定义信息(扩展属性)
+
+        :return: The bindingprofile of this Port.
+        :rtype: object
+        """
+        return self._bindingprofile
+
+    @bindingprofile.setter
+    def bindingprofile(self, bindingprofile):
+        """Sets the bindingprofile of this Port.
+
+        功能说明：提供用户设置自定义信息(扩展属性)
+
+        :param bindingprofile: The bindingprofile of this Port.
+        :type: object
+        """
+        self._bindingprofile = bindingprofile
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this Port.
+
+        功能说明：端口所属实例ID，例如RDS实例ID 约束：不支持设置和更新，由系统自动维护
+
+        :return: The instance_id of this Port.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this Port.
+
+        功能说明：端口所属实例ID，例如RDS实例ID 约束：不支持设置和更新，由系统自动维护
+
+        :param instance_id: The instance_id of this Port.
+        :type: str
+        """
+        self._instance_id = instance_id
+
+    @property
+    def instance_type(self):
+        """Gets the instance_type of this Port.
+
+        功能说明：端口所属实例类型，例如“RDS” 约束：不支持设置和更新，由系统自动维护
+
+        :return: The instance_type of this Port.
+        :rtype: str
+        """
+        return self._instance_type
+
+    @instance_type.setter
+    def instance_type(self, instance_type):
+        """Sets the instance_type of this Port.
+
+        功能说明：端口所属实例类型，例如“RDS” 约束：不支持设置和更新，由系统自动维护
+
+        :param instance_type: The instance_type of this Port.
+        :type: str
+        """
+        self._instance_type = instance_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

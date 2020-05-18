@@ -22,6 +22,8 @@ class ListSnapshotsDetailsRequest(object):
         'limit': 'int',
         'name': 'str',
         'status': 'str',
+        'volume_id': 'str',
+        'availability_zone': 'str',
         'id': 'str',
         'dedicated_storage_name': 'str',
         'dedicated_storage_id': 'str',
@@ -34,6 +36,8 @@ class ListSnapshotsDetailsRequest(object):
         'limit': 'limit',
         'name': 'name',
         'status': 'status',
+        'volume_id': 'volume_id',
+        'availability_zone': 'availability_zone',
         'id': 'id',
         'dedicated_storage_name': 'dedicated_storage_name',
         'dedicated_storage_id': 'dedicated_storage_id',
@@ -41,13 +45,15 @@ class ListSnapshotsDetailsRequest(object):
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, offset=None, limit=None, name=None, status=None, id=None, dedicated_storage_name=None, dedicated_storage_id=None, service_type=None, enterprise_project_id=None):  # noqa: E501
+    def __init__(self, offset=None, limit=None, name=None, status=None, volume_id=None, availability_zone=None, id=None, dedicated_storage_name=None, dedicated_storage_id=None, service_type=None, enterprise_project_id=None):  # noqa: E501
         """ListSnapshotsDetailsRequest - a model defined in huaweicloud sdk"""
 
         self._offset = None
         self._limit = None
         self._name = None
         self._status = None
+        self._volume_id = None
+        self._availability_zone = None
         self._id = None
         self._dedicated_storage_name = None
         self._dedicated_storage_id = None
@@ -63,6 +69,10 @@ class ListSnapshotsDetailsRequest(object):
             self.name = name
         if status is not None:
             self.status = status
+        if volume_id is not None:
+            self.volume_id = volume_id
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
         if id is not None:
             self.id = id
         if dedicated_storage_name is not None:
@@ -153,6 +163,46 @@ class ListSnapshotsDetailsRequest(object):
         :type: str
         """
         self._status = status
+
+    @property
+    def volume_id(self):
+        """Gets the volume_id of this ListSnapshotsDetailsRequest.
+
+
+        :return: The volume_id of this ListSnapshotsDetailsRequest.
+        :rtype: str
+        """
+        return self._volume_id
+
+    @volume_id.setter
+    def volume_id(self, volume_id):
+        """Sets the volume_id of this ListSnapshotsDetailsRequest.
+
+
+        :param volume_id: The volume_id of this ListSnapshotsDetailsRequest.
+        :type: str
+        """
+        self._volume_id = volume_id
+
+    @property
+    def availability_zone(self):
+        """Gets the availability_zone of this ListSnapshotsDetailsRequest.
+
+
+        :return: The availability_zone of this ListSnapshotsDetailsRequest.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        """Sets the availability_zone of this ListSnapshotsDetailsRequest.
+
+
+        :param availability_zone: The availability_zone of this ListSnapshotsDetailsRequest.
+        :type: str
+        """
+        self._availability_zone = availability_zone
 
     @property
     def id(self):

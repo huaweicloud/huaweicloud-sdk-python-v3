@@ -18,45 +18,21 @@ class CreateEventsRequest(object):
     """
 
     openapi_types = {
-        'content_type': 'str',
         'body': 'list[EventItem]'
     }
 
     attribute_map = {
-        'content_type': 'Content-Type',
         'body': 'body'
     }
 
-    def __init__(self, content_type='application/json; charset=UTF-8', body=None):  # noqa: E501
+    def __init__(self, body=None):  # noqa: E501
         """CreateEventsRequest - a model defined in huaweicloud sdk"""
 
-        self._content_type = None
         self._body = None
         self.discriminator = None
 
-        self.content_type = content_type
         if body is not None:
             self.body = body
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this CreateEventsRequest.
-
-
-        :return: The content_type of this CreateEventsRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this CreateEventsRequest.
-
-
-        :param content_type: The content_type of this CreateEventsRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def body(self):

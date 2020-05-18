@@ -18,20 +18,46 @@ class BatchDeleteVolumeTagsRequestBody(object):
     """
 
     openapi_types = {
+        'action': 'str',
         'tags': 'list[DeleteTagsOption]'
     }
 
     attribute_map = {
+        'action': 'action',
         'tags': 'tags'
     }
 
-    def __init__(self, tags=None):  # noqa: E501
+    def __init__(self, action='delete', tags=None):  # noqa: E501
         """BatchDeleteVolumeTagsRequestBody - a model defined in huaweicloud sdk"""
 
+        self._action = None
         self._tags = None
         self.discriminator = None
 
+        self.action = action
         self.tags = tags
+
+    @property
+    def action(self):
+        """Gets the action of this BatchDeleteVolumeTagsRequestBody.
+
+        操作标识，当前支持的取值如下：  删除标签：delete
+
+        :return: The action of this BatchDeleteVolumeTagsRequestBody.
+        :rtype: str
+        """
+        return self._action
+
+    @action.setter
+    def action(self, action):
+        """Sets the action of this BatchDeleteVolumeTagsRequestBody.
+
+        操作标识，当前支持的取值如下：  删除标签：delete
+
+        :param action: The action of this BatchDeleteVolumeTagsRequestBody.
+        :type: str
+        """
+        self._action = action
 
     @property
     def tags(self):

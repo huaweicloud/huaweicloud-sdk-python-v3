@@ -33,14 +33,19 @@ class ListImagesRequest(object):
         'support_xen_gpu_type': 'str',
         'support_xen_hana': 'str',
         'container_format': 'str',
+        'disk_format': 'str',
+        'enterprise_project_id': 'str',
         'id': 'str',
+        'limit': 'int',
         'marker': 'str',
         'member_status': 'str',
+        'min_disk': 'int',
         'min_ram': 'int',
         'name': 'str',
         'owner': 'str',
         'protected': 'bool',
         'sort_dir': 'str',
+        'sort_key': 'str',
         'status': 'str',
         'tag': 'str',
         'virtual_env_type': 'str',
@@ -68,14 +73,19 @@ class ListImagesRequest(object):
         'support_xen_gpu_type': '__support_xen_gpu_type',
         'support_xen_hana': '__support_xen_hana',
         'container_format': 'container_format',
+        'disk_format': 'disk_format',
+        'enterprise_project_id': 'enterprise_project_id',
         'id': 'id',
+        'limit': 'limit',
         'marker': 'marker',
         'member_status': 'member_status',
+        'min_disk': 'min_disk',
         'min_ram': 'min_ram',
         'name': 'name',
         'owner': 'owner',
         'protected': 'protected',
         'sort_dir': 'sort_dir',
+        'sort_key': 'sort_key',
         'status': 'status',
         'tag': 'tag',
         'virtual_env_type': 'virtual_env_type',
@@ -87,7 +97,7 @@ class ListImagesRequest(object):
         'architecture': 'architecture'
     }
 
-    def __init__(self, imagetype=None, isregistered='true', os_bit=None, os_type=None, platform=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, container_format=None, id=None, marker=None, member_status=None, min_ram=None, name=None, owner=None, protected=None, sort_dir='desc', status=None, tag=None, virtual_env_type=None, visibility=None, x_sdk_date=None, flavor_id=None, created_at=None, updated_at=None, architecture=None):  # noqa: E501
+    def __init__(self, imagetype=None, isregistered='true', os_bit=None, os_type=None, platform=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, container_format=None, disk_format='vhd', enterprise_project_id='0', id=None, limit=500, marker=None, member_status=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, sort_dir='desc', sort_key='create_at', status=None, tag=None, virtual_env_type=None, visibility=None, x_sdk_date=None, flavor_id=None, created_at=None, updated_at=None, architecture=None):  # noqa: E501
         """ListImagesRequest - a model defined in huaweicloud sdk"""
 
         self._imagetype = None
@@ -105,14 +115,19 @@ class ListImagesRequest(object):
         self._support_xen_gpu_type = None
         self._support_xen_hana = None
         self._container_format = None
+        self._disk_format = None
+        self._enterprise_project_id = None
         self._id = None
+        self._limit = None
         self._marker = None
         self._member_status = None
+        self._min_disk = None
         self._min_ram = None
         self._name = None
         self._owner = None
         self._protected = None
         self._sort_dir = None
+        self._sort_key = None
         self._status = None
         self._tag = None
         self._virtual_env_type = None
@@ -154,12 +169,20 @@ class ListImagesRequest(object):
             self.support_xen_hana = support_xen_hana
         if container_format is not None:
             self.container_format = container_format
+        if disk_format is not None:
+            self.disk_format = disk_format
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if id is not None:
             self.id = id
+        if limit is not None:
+            self.limit = limit
         if marker is not None:
             self.marker = marker
         if member_status is not None:
             self.member_status = member_status
+        if min_disk is not None:
+            self.min_disk = min_disk
         if min_ram is not None:
             self.min_ram = min_ram
         if name is not None:
@@ -170,6 +193,8 @@ class ListImagesRequest(object):
             self.protected = protected
         if sort_dir is not None:
             self.sort_dir = sort_dir
+        if sort_key is not None:
+            self.sort_key = sort_key
         if status is not None:
             self.status = status
         if tag is not None:
@@ -490,6 +515,46 @@ class ListImagesRequest(object):
         self._container_format = container_format
 
     @property
+    def disk_format(self):
+        """Gets the disk_format of this ListImagesRequest.
+
+
+        :return: The disk_format of this ListImagesRequest.
+        :rtype: str
+        """
+        return self._disk_format
+
+    @disk_format.setter
+    def disk_format(self, disk_format):
+        """Sets the disk_format of this ListImagesRequest.
+
+
+        :param disk_format: The disk_format of this ListImagesRequest.
+        :type: str
+        """
+        self._disk_format = disk_format
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListImagesRequest.
+
+
+        :return: The enterprise_project_id of this ListImagesRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListImagesRequest.
+
+
+        :param enterprise_project_id: The enterprise_project_id of this ListImagesRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
     def id(self):
         """Gets the id of this ListImagesRequest.
 
@@ -508,6 +573,26 @@ class ListImagesRequest(object):
         :type: str
         """
         self._id = id
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListImagesRequest.
+
+
+        :return: The limit of this ListImagesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListImagesRequest.
+
+
+        :param limit: The limit of this ListImagesRequest.
+        :type: int
+        """
+        self._limit = limit
 
     @property
     def marker(self):
@@ -548,6 +633,26 @@ class ListImagesRequest(object):
         :type: str
         """
         self._member_status = member_status
+
+    @property
+    def min_disk(self):
+        """Gets the min_disk of this ListImagesRequest.
+
+
+        :return: The min_disk of this ListImagesRequest.
+        :rtype: int
+        """
+        return self._min_disk
+
+    @min_disk.setter
+    def min_disk(self, min_disk):
+        """Sets the min_disk of this ListImagesRequest.
+
+
+        :param min_disk: The min_disk of this ListImagesRequest.
+        :type: int
+        """
+        self._min_disk = min_disk
 
     @property
     def min_ram(self):
@@ -648,6 +753,26 @@ class ListImagesRequest(object):
         :type: str
         """
         self._sort_dir = sort_dir
+
+    @property
+    def sort_key(self):
+        """Gets the sort_key of this ListImagesRequest.
+
+
+        :return: The sort_key of this ListImagesRequest.
+        :rtype: str
+        """
+        return self._sort_key
+
+    @sort_key.setter
+    def sort_key(self, sort_key):
+        """Sets the sort_key of this ListImagesRequest.
+
+
+        :param sort_key: The sort_key of this ListImagesRequest.
+        :type: str
+        """
+        self._sort_key = sort_key
 
     @property
     def status(self):

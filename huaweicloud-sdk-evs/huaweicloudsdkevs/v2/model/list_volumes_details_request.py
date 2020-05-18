@@ -26,6 +26,7 @@ class ListVolumesDetailsRequest(object):
         'sort_dir': 'str',
         'status': 'str',
         'metadata': 'str',
+        'availability_zone': 'str',
         'multiattach': 'bool',
         'service_type': 'str',
         'dedicated_storage_id': 'str',
@@ -45,6 +46,7 @@ class ListVolumesDetailsRequest(object):
         'sort_dir': 'sort_dir',
         'status': 'status',
         'metadata': 'metadata',
+        'availability_zone': 'availability_zone',
         'multiattach': 'multiattach',
         'service_type': 'service_type',
         'dedicated_storage_id': 'dedicated_storage_id',
@@ -55,7 +57,7 @@ class ListVolumesDetailsRequest(object):
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, marker=None, name=None, limit=1000, sort_key=None, offset=None, sort_dir=None, status=None, metadata=None, multiattach=None, service_type=None, dedicated_storage_id=None, dedicated_storage_name=None, volume_type_id=None, id=None, ids=None, enterprise_project_id=None):  # noqa: E501
+    def __init__(self, marker=None, name=None, limit=1000, sort_key=None, offset=None, sort_dir=None, status=None, metadata=None, availability_zone=None, multiattach=None, service_type=None, dedicated_storage_id=None, dedicated_storage_name=None, volume_type_id=None, id=None, ids=None, enterprise_project_id=None):  # noqa: E501
         """ListVolumesDetailsRequest - a model defined in huaweicloud sdk"""
 
         self._marker = None
@@ -66,6 +68,7 @@ class ListVolumesDetailsRequest(object):
         self._sort_dir = None
         self._status = None
         self._metadata = None
+        self._availability_zone = None
         self._multiattach = None
         self._service_type = None
         self._dedicated_storage_id = None
@@ -92,6 +95,8 @@ class ListVolumesDetailsRequest(object):
             self.status = status
         if metadata is not None:
             self.metadata = metadata
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
         if multiattach is not None:
             self.multiattach = multiattach
         if service_type is not None:
@@ -268,6 +273,26 @@ class ListVolumesDetailsRequest(object):
         :type: str
         """
         self._metadata = metadata
+
+    @property
+    def availability_zone(self):
+        """Gets the availability_zone of this ListVolumesDetailsRequest.
+
+
+        :return: The availability_zone of this ListVolumesDetailsRequest.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        """Sets the availability_zone of this ListVolumesDetailsRequest.
+
+
+        :param availability_zone: The availability_zone of this ListVolumesDetailsRequest.
+        :type: str
+        """
+        self._availability_zone = availability_zone
 
     @property
     def multiattach(self):

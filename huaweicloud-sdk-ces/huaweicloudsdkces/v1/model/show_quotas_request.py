@@ -18,40 +18,14 @@ class ShowQuotasRequest(object):
     """
 
     openapi_types = {
-        'content_type': 'str'
     }
 
     attribute_map = {
-        'content_type': 'Content-Type'
     }
 
-    def __init__(self, content_type='application/json; charset=UTF-8'):  # noqa: E501
+    def __init__(self):  # noqa: E501
         """ShowQuotasRequest - a model defined in huaweicloud sdk"""
-
-        self._content_type = None
         self.discriminator = None
-
-        self.content_type = content_type
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this ShowQuotasRequest.
-
-
-        :return: The content_type of this ShowQuotasRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this ShowQuotasRequest.
-
-
-        :param content_type: The content_type of this ShowQuotasRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

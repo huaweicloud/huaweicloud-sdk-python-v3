@@ -667,7 +667,7 @@ class EvsClient(Client):
         :return: tuple(ListSnapshotsDetailsResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['offset', 'limit', 'name', 'status', 'id', 'dedicated_storage_name', 'dedicated_storage_id', 'service_type', 'enterprise_project_id']
+        all_params = ['offset', 'limit', 'name', 'status', 'volume_id', 'availability_zone', 'id', 'dedicated_storage_name', 'dedicated_storage_id', 'service_type', 'enterprise_project_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -691,6 +691,10 @@ class EvsClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
+        if 'volume_id' in local_var_params:
+            query_params.append(('volume_id', local_var_params['volume_id']))
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
         if 'dedicated_storage_name' in local_var_params:
@@ -863,7 +867,7 @@ class EvsClient(Client):
         :return: tuple(ListVolumesDetailsResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['marker', 'name', 'limit', 'sort_key', 'offset', 'sort_dir', 'status', 'metadata', 'multiattach', 'service_type', 'dedicated_storage_id', 'dedicated_storage_name', 'volume_type_id', 'id', 'ids', 'enterprise_project_id']
+        all_params = ['marker', 'name', 'limit', 'sort_key', 'offset', 'sort_dir', 'status', 'metadata', 'availability_zone', 'multiattach', 'service_type', 'dedicated_storage_id', 'dedicated_storage_name', 'volume_type_id', 'id', 'ids', 'enterprise_project_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -895,6 +899,8 @@ class EvsClient(Client):
             query_params.append(('status', local_var_params['status']))
         if 'metadata' in local_var_params:
             query_params.append(('metadata', local_var_params['metadata']))
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
         if 'multiattach' in local_var_params:
             query_params.append(('multiattach', local_var_params['multiattach']))
         if 'service_type' in local_var_params:

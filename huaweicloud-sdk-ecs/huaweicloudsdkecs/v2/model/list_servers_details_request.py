@@ -22,6 +22,7 @@ class ListServersDetailsRequest(object):
         'flavor': 'str',
         'name': 'str',
         'status': 'str',
+        'limit': 'int',
         'not_tags': 'str',
         'reservation_id': 'str',
         'enterprise_project_id': 'str',
@@ -34,6 +35,7 @@ class ListServersDetailsRequest(object):
         'flavor': 'flavor',
         'name': 'name',
         'status': 'status',
+        'limit': 'limit',
         'not_tags': 'not-tags',
         'reservation_id': 'reservation_id',
         'enterprise_project_id': 'enterprise_project_id',
@@ -41,13 +43,14 @@ class ListServersDetailsRequest(object):
         'ip': 'ip'
     }
 
-    def __init__(self, offset=1, flavor=None, name=None, status=None, not_tags=None, reservation_id=None, enterprise_project_id=None, tags=None, ip=None):  # noqa: E501
+    def __init__(self, offset=1, flavor=None, name=None, status=None, limit=25, not_tags=None, reservation_id=None, enterprise_project_id=None, tags=None, ip=None):  # noqa: E501
         """ListServersDetailsRequest - a model defined in huaweicloud sdk"""
 
         self._offset = None
         self._flavor = None
         self._name = None
         self._status = None
+        self._limit = None
         self._not_tags = None
         self._reservation_id = None
         self._enterprise_project_id = None
@@ -63,6 +66,8 @@ class ListServersDetailsRequest(object):
             self.name = name
         if status is not None:
             self.status = status
+        if limit is not None:
+            self.limit = limit
         if not_tags is not None:
             self.not_tags = not_tags
         if reservation_id is not None:
@@ -153,6 +158,26 @@ class ListServersDetailsRequest(object):
         :type: str
         """
         self._status = status
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListServersDetailsRequest.
+
+
+        :return: The limit of this ListServersDetailsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListServersDetailsRequest.
+
+
+        :param limit: The limit of this ListServersDetailsRequest.
+        :type: int
+        """
+        self._limit = limit
 
     @property
     def not_tags(self):

@@ -18,21 +18,75 @@ class PostPaidServerRootVolumeExtendParam(object):
     """
 
     openapi_types = {
+        'resource_spec_code': 'str',
+        'resource_type': 'str',
         'snapshot_id': 'str'
     }
 
     attribute_map = {
+        'resource_spec_code': 'resourceSpecCode',
+        'resource_type': 'resourceType',
         'snapshot_id': 'snapshotId'
     }
 
-    def __init__(self, snapshot_id=None):  # noqa: E501
+    def __init__(self, resource_spec_code=None, resource_type=None, snapshot_id=None):  # noqa: E501
         """PostPaidServerRootVolumeExtendParam - a model defined in huaweicloud sdk"""
 
+        self._resource_spec_code = None
+        self._resource_type = None
         self._snapshot_id = None
         self.discriminator = None
 
+        if resource_spec_code is not None:
+            self.resource_spec_code = resource_spec_code
+        if resource_type is not None:
+            self.resource_type = resource_type
         if snapshot_id is not None:
             self.snapshot_id = snapshot_id
+
+    @property
+    def resource_spec_code(self):
+        """Gets the resource_spec_code of this PostPaidServerRootVolumeExtendParam.
+
+        磁盘产品资源规格编码，如SATA，SAS和SSD。  > 说明： >  > 废弃字段。
+
+        :return: The resource_spec_code of this PostPaidServerRootVolumeExtendParam.
+        :rtype: str
+        """
+        return self._resource_spec_code
+
+    @resource_spec_code.setter
+    def resource_spec_code(self, resource_spec_code):
+        """Sets the resource_spec_code of this PostPaidServerRootVolumeExtendParam.
+
+        磁盘产品资源规格编码，如SATA，SAS和SSD。  > 说明： >  > 废弃字段。
+
+        :param resource_spec_code: The resource_spec_code of this PostPaidServerRootVolumeExtendParam.
+        :type: str
+        """
+        self._resource_spec_code = resource_spec_code
+
+    @property
+    def resource_type(self):
+        """Gets the resource_type of this PostPaidServerRootVolumeExtendParam.
+
+        磁盘产品资源类型。  > 说明： >  > 废弃字段。
+
+        :return: The resource_type of this PostPaidServerRootVolumeExtendParam.
+        :rtype: str
+        """
+        return self._resource_type
+
+    @resource_type.setter
+    def resource_type(self, resource_type):
+        """Sets the resource_type of this PostPaidServerRootVolumeExtendParam.
+
+        磁盘产品资源类型。  > 说明： >  > 废弃字段。
+
+        :param resource_type: The resource_type of this PostPaidServerRootVolumeExtendParam.
+        :type: str
+        """
+        self._resource_type = resource_type
 
     @property
     def snapshot_id(self):

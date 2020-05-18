@@ -18,55 +18,31 @@ class ListAlarmsRequest(object):
     """
 
     openapi_types = {
-        'content_type': 'str',
         'limit': 'int',
         'order': 'str',
         'start': 'str'
     }
 
     attribute_map = {
-        'content_type': 'Content-Type',
         'limit': 'limit',
         'order': 'order',
         'start': 'start'
     }
 
-    def __init__(self, content_type='application/json; charset=UTF-8', limit=None, order=None, start=None):  # noqa: E501
+    def __init__(self, limit=None, order=None, start=None):  # noqa: E501
         """ListAlarmsRequest - a model defined in huaweicloud sdk"""
 
-        self._content_type = None
         self._limit = None
         self._order = None
         self._start = None
         self.discriminator = None
 
-        self.content_type = content_type
         if limit is not None:
             self.limit = limit
         if order is not None:
             self.order = order
         if start is not None:
             self.start = start
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this ListAlarmsRequest.
-
-
-        :return: The content_type of this ListAlarmsRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this ListAlarmsRequest.
-
-
-        :param content_type: The content_type of this ListAlarmsRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def limit(self):

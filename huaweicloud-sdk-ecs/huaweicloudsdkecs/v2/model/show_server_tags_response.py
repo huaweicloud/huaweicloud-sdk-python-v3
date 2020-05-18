@@ -18,14 +18,43 @@ class ShowServerTagsResponse(object):
     """
 
     openapi_types = {
+        'tags': 'list[ServerTag]'
     }
 
     attribute_map = {
+        'tags': 'tags'
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self, tags=None):  # noqa: E501
         """ShowServerTagsResponse - a model defined in huaweicloud sdk"""
+
+        self._tags = None
         self.discriminator = None
+
+        if tags is not None:
+            self.tags = tags
+
+    @property
+    def tags(self):
+        """Gets the tags of this ShowServerTagsResponse.
+
+        标签列表
+
+        :return: The tags of this ShowServerTagsResponse.
+        :rtype: list[ServerTag]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ShowServerTagsResponse.
+
+        标签列表
+
+        :param tags: The tags of this ShowServerTagsResponse.
+        :type: list[ServerTag]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

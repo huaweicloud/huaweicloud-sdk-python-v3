@@ -18,7 +18,6 @@ class ShowEventDataRequest(object):
     """
 
     openapi_types = {
-        'content_type': 'str',
         'dim0': 'str',
         'dim1': 'str',
         'dim2': 'str',
@@ -29,7 +28,6 @@ class ShowEventDataRequest(object):
     }
 
     attribute_map = {
-        'content_type': 'Content-Type',
         'dim0': 'dim.0',
         'dim1': 'dim.1',
         'dim2': 'dim.2',
@@ -39,10 +37,9 @@ class ShowEventDataRequest(object):
         'type': 'type'
     }
 
-    def __init__(self, content_type='application/json; charset=UTF-8', dim0=None, dim1=None, dim2=None, _from=None, namespace=None, to=None, type=None):  # noqa: E501
+    def __init__(self, dim0=None, dim1=None, dim2=None, _from=None, namespace=None, to=None, type=None):  # noqa: E501
         """ShowEventDataRequest - a model defined in huaweicloud sdk"""
 
-        self._content_type = None
         self._dim0 = None
         self._dim1 = None
         self._dim2 = None
@@ -52,7 +49,6 @@ class ShowEventDataRequest(object):
         self._type = None
         self.discriminator = None
 
-        self.content_type = content_type
         self.dim0 = dim0
         if dim1 is not None:
             self.dim1 = dim1
@@ -62,26 +58,6 @@ class ShowEventDataRequest(object):
         self.namespace = namespace
         self.to = to
         self.type = type
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this ShowEventDataRequest.
-
-
-        :return: The content_type of this ShowEventDataRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this ShowEventDataRequest.
-
-
-        :param content_type: The content_type of this ShowEventDataRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def dim0(self):

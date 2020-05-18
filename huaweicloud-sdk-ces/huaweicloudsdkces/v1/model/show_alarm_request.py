@@ -18,44 +18,20 @@ class ShowAlarmRequest(object):
     """
 
     openapi_types = {
-        'content_type': 'str',
         'alarm_id': 'str'
     }
 
     attribute_map = {
-        'content_type': 'Content-Type',
         'alarm_id': 'alarm_id'
     }
 
-    def __init__(self, content_type='application/json; charset=UTF-8', alarm_id=None):  # noqa: E501
+    def __init__(self, alarm_id=None):  # noqa: E501
         """ShowAlarmRequest - a model defined in huaweicloud sdk"""
 
-        self._content_type = None
         self._alarm_id = None
         self.discriminator = None
 
-        self.content_type = content_type
         self.alarm_id = alarm_id
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this ShowAlarmRequest.
-
-
-        :return: The content_type of this ShowAlarmRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this ShowAlarmRequest.
-
-
-        :param content_type: The content_type of this ShowAlarmRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def alarm_id(self):

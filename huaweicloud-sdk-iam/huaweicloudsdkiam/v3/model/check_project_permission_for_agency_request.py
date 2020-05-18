@@ -18,24 +18,48 @@ class CheckProjectPermissionForAgencyRequest(object):
     """
 
     openapi_types = {
+        'project_id': 'str',
         'agency_id': 'str',
         'role_id': 'str'
     }
 
     attribute_map = {
+        'project_id': 'project_id',
         'agency_id': 'agency_id',
         'role_id': 'role_id'
     }
 
-    def __init__(self, agency_id=None, role_id=None):  # noqa: E501
+    def __init__(self, project_id=None, agency_id=None, role_id=None):  # noqa: E501
         """CheckProjectPermissionForAgencyRequest - a model defined in huaweicloud sdk"""
 
+        self._project_id = None
         self._agency_id = None
         self._role_id = None
         self.discriminator = None
 
+        self.project_id = project_id
         self.agency_id = agency_id
         self.role_id = role_id
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this CheckProjectPermissionForAgencyRequest.
+
+
+        :return: The project_id of this CheckProjectPermissionForAgencyRequest.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this CheckProjectPermissionForAgencyRequest.
+
+
+        :param project_id: The project_id of this CheckProjectPermissionForAgencyRequest.
+        :type: str
+        """
+        self._project_id = project_id
 
     @property
     def agency_id(self):

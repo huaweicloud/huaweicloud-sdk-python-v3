@@ -19,6 +19,7 @@ class NovaListServersDetailsRequest(object):
 
     openapi_types = {
         'open_stack_api_version': 'str',
+        'changes_since': 'str',
         'ip': 'str',
         'image': 'str',
         'flavor': 'str',
@@ -34,6 +35,7 @@ class NovaListServersDetailsRequest(object):
 
     attribute_map = {
         'open_stack_api_version': 'OpenStack-API-Version',
+        'changes_since': 'changes-since',
         'ip': 'ip',
         'image': 'image',
         'flavor': 'flavor',
@@ -47,10 +49,11 @@ class NovaListServersDetailsRequest(object):
         'sort_key': 'sort_key'
     }
 
-    def __init__(self, open_stack_api_version='compute 2.60', ip=None, image=None, flavor=None, name=None, status=None, limit=25, marker=None, tags=None, not_tags=None, reservation_id=None, sort_key='created_at'):  # noqa: E501
+    def __init__(self, open_stack_api_version='compute 2.60', changes_since=None, ip=None, image=None, flavor=None, name=None, status=None, limit=25, marker=None, tags=None, not_tags=None, reservation_id=None, sort_key='created_at'):  # noqa: E501
         """NovaListServersDetailsRequest - a model defined in huaweicloud sdk"""
 
         self._open_stack_api_version = None
+        self._changes_since = None
         self._ip = None
         self._image = None
         self._flavor = None
@@ -66,6 +69,8 @@ class NovaListServersDetailsRequest(object):
 
         if open_stack_api_version is not None:
             self.open_stack_api_version = open_stack_api_version
+        if changes_since is not None:
+            self.changes_since = changes_since
         if ip is not None:
             self.ip = ip
         if image is not None:
@@ -108,6 +113,26 @@ class NovaListServersDetailsRequest(object):
         :type: str
         """
         self._open_stack_api_version = open_stack_api_version
+
+    @property
+    def changes_since(self):
+        """Gets the changes_since of this NovaListServersDetailsRequest.
+
+
+        :return: The changes_since of this NovaListServersDetailsRequest.
+        :rtype: str
+        """
+        return self._changes_since
+
+    @changes_since.setter
+    def changes_since(self, changes_since):
+        """Sets the changes_since of this NovaListServersDetailsRequest.
+
+
+        :param changes_since: The changes_since of this NovaListServersDetailsRequest.
+        :type: str
+        """
+        self._changes_since = changes_since
 
     @property
     def ip(self):

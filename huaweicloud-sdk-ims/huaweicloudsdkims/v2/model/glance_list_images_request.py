@@ -19,6 +19,7 @@ class GlanceListImagesRequest(object):
 
     openapi_types = {
         'imagetype': 'str',
+        'isregistered': 'bool',
         'os_bit': 'str',
         'os_type': 'str',
         'platform': 'str',
@@ -46,12 +47,14 @@ class GlanceListImagesRequest(object):
         'sort_key': 'str',
         'status': 'str',
         'tag': 'str',
+        'visibility': 'str',
         'created_at': 'str',
         'updated_at': 'str'
     }
 
     attribute_map = {
         'imagetype': '__imagetype',
+        'isregistered': '__isregistered',
         'os_bit': '__os_bit',
         'os_type': '__os_type',
         'platform': '__platform',
@@ -79,14 +82,16 @@ class GlanceListImagesRequest(object):
         'sort_key': 'sort_key',
         'status': 'status',
         'tag': 'tag',
+        'visibility': 'visibility',
         'created_at': 'created_at',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, imagetype=None, os_bit=None, os_type=None, platform=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, container_format='bare', disk_format='vhd', id=None, limit=25, marker=None, member_status=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, sort_dir=None, sort_key=None, status=None, tag=None, created_at=None, updated_at=None):  # noqa: E501
+    def __init__(self, imagetype=None, isregistered=True, os_bit=None, os_type=None, platform=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, container_format='bare', disk_format='vhd', id=None, limit=25, marker=None, member_status=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, sort_dir=None, sort_key=None, status=None, tag=None, visibility=None, created_at=None, updated_at=None):  # noqa: E501
         """GlanceListImagesRequest - a model defined in huaweicloud sdk"""
 
         self._imagetype = None
+        self._isregistered = None
         self._os_bit = None
         self._os_type = None
         self._platform = None
@@ -114,12 +119,15 @@ class GlanceListImagesRequest(object):
         self._sort_key = None
         self._status = None
         self._tag = None
+        self._visibility = None
         self._created_at = None
         self._updated_at = None
         self.discriminator = None
 
         if imagetype is not None:
             self.imagetype = imagetype
+        if isregistered is not None:
+            self.isregistered = isregistered
         if os_bit is not None:
             self.os_bit = os_bit
         if os_type is not None:
@@ -174,6 +182,8 @@ class GlanceListImagesRequest(object):
             self.status = status
         if tag is not None:
             self.tag = tag
+        if visibility is not None:
+            self.visibility = visibility
         if created_at is not None:
             self.created_at = created_at
         if updated_at is not None:
@@ -198,6 +208,26 @@ class GlanceListImagesRequest(object):
         :type: str
         """
         self._imagetype = imagetype
+
+    @property
+    def isregistered(self):
+        """Gets the isregistered of this GlanceListImagesRequest.
+
+
+        :return: The isregistered of this GlanceListImagesRequest.
+        :rtype: bool
+        """
+        return self._isregistered
+
+    @isregistered.setter
+    def isregistered(self, isregistered):
+        """Sets the isregistered of this GlanceListImagesRequest.
+
+
+        :param isregistered: The isregistered of this GlanceListImagesRequest.
+        :type: bool
+        """
+        self._isregistered = isregistered
 
     @property
     def os_bit(self):
@@ -738,6 +768,26 @@ class GlanceListImagesRequest(object):
         :type: str
         """
         self._tag = tag
+
+    @property
+    def visibility(self):
+        """Gets the visibility of this GlanceListImagesRequest.
+
+
+        :return: The visibility of this GlanceListImagesRequest.
+        :rtype: str
+        """
+        return self._visibility
+
+    @visibility.setter
+    def visibility(self, visibility):
+        """Sets the visibility of this GlanceListImagesRequest.
+
+
+        :param visibility: The visibility of this GlanceListImagesRequest.
+        :type: str
+        """
+        self._visibility = visibility
 
     @property
     def created_at(self):

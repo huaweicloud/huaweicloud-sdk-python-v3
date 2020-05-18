@@ -59,7 +59,7 @@ class CesClient(Client):
         :return: tuple(BatchListMetricDataResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['content_type', 'batch_list_metric_data_request_body']
+        all_params = ['batch_list_metric_data_request_body']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -77,8 +77,6 @@ class CesClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = []
 
@@ -185,7 +183,7 @@ class CesClient(Client):
         :return: tuple(list[CreateEventsResponseBody], status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['content_type', 'event_items']
+        all_params = ['event_items']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -203,8 +201,6 @@ class CesClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = []
 
@@ -367,7 +363,7 @@ class CesClient(Client):
         :return: tuple(ListAlarmsResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['content_type', 'limit', 'order', 'start']
+        all_params = ['limit', 'order', 'start']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -391,8 +387,6 @@ class CesClient(Client):
             query_params.append(('start', local_var_params['start']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = []
 
@@ -433,7 +427,7 @@ class CesClient(Client):
         :return: tuple(ListMetricsResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['content_type', 'dim_0', 'dim_1', 'dim_2', 'limit', 'metric_name', 'namespace', 'order', 'start']
+        all_params = ['dim_0', 'dim_1', 'dim_2', 'limit', 'metric_name', 'namespace', 'order', 'start']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -467,8 +461,6 @@ class CesClient(Client):
             query_params.append(('start', local_var_params['start']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = []
 
@@ -509,7 +501,7 @@ class CesClient(Client):
         :return: tuple(ShowAlarmResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['content_type', 'alarm_id']
+        all_params = ['alarm_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -529,8 +521,6 @@ class CesClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = []
 
@@ -571,7 +561,7 @@ class CesClient(Client):
         :return: tuple(ShowEventDataResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['content_type', 'dim_0', '_from', 'namespace', 'to', 'type', 'dim_1', 'dim_2']
+        all_params = ['dim_0', '_from', 'namespace', 'to', 'type', 'dim_1', 'dim_2']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -603,8 +593,6 @@ class CesClient(Client):
             query_params.append(('type', local_var_params['type']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = []
 
@@ -645,7 +633,7 @@ class CesClient(Client):
         :return: tuple(ShowMetricDataResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['content_type', 'dim_0', 'filter', '_from', 'metric_name', 'namespace', 'period', 'to', 'dim_1', 'dim_2']
+        all_params = ['dim_0', 'filter', '_from', 'metric_name', 'namespace', 'period', 'to', 'dim_1', 'dim_2']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -681,8 +669,6 @@ class CesClient(Client):
             query_params.append(('to', local_var_params['to']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = []
 
@@ -723,7 +709,7 @@ class CesClient(Client):
         :return: tuple(ShowQuotasResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['content_type']
+        all_params = []
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -741,8 +727,6 @@ class CesClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = []
 
@@ -783,7 +767,7 @@ class CesClient(Client):
         :return: None
         """
 
-        all_params = ['content_type', 'alarm_id', 'modify_alarm_action_req']
+        all_params = ['alarm_id', 'modify_alarm_action_req']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -803,8 +787,6 @@ class CesClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = []
 

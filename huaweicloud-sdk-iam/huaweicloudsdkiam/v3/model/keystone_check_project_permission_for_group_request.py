@@ -18,24 +18,48 @@ class KeystoneCheckProjectPermissionForGroupRequest(object):
     """
 
     openapi_types = {
+        'project_id': 'str',
         'group_id': 'str',
         'role_id': 'str'
     }
 
     attribute_map = {
+        'project_id': 'project_id',
         'group_id': 'group_id',
         'role_id': 'role_id'
     }
 
-    def __init__(self, group_id=None, role_id=None):  # noqa: E501
+    def __init__(self, project_id=None, group_id=None, role_id=None):  # noqa: E501
         """KeystoneCheckProjectPermissionForGroupRequest - a model defined in huaweicloud sdk"""
 
+        self._project_id = None
         self._group_id = None
         self._role_id = None
         self.discriminator = None
 
+        self.project_id = project_id
         self.group_id = group_id
         self.role_id = role_id
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this KeystoneCheckProjectPermissionForGroupRequest.
+
+
+        :return: The project_id of this KeystoneCheckProjectPermissionForGroupRequest.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this KeystoneCheckProjectPermissionForGroupRequest.
+
+
+        :param project_id: The project_id of this KeystoneCheckProjectPermissionForGroupRequest.
+        :type: str
+        """
+        self._project_id = project_id
 
     @property
     def group_id(self):

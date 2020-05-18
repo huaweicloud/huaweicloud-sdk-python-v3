@@ -18,49 +18,25 @@ class UpdateAlarmActionRequest(object):
     """
 
     openapi_types = {
-        'content_type': 'str',
         'alarm_id': 'str',
         'body': 'ModifyAlarmActionReq'
     }
 
     attribute_map = {
-        'content_type': 'Content-Type',
         'alarm_id': 'alarm_id',
         'body': 'body'
     }
 
-    def __init__(self, content_type='application/json; charset=UTF-8', alarm_id='al15454523384878yogJg6ao', body=None):  # noqa: E501
+    def __init__(self, alarm_id='al15454523384878yogJg6ao', body=None):  # noqa: E501
         """UpdateAlarmActionRequest - a model defined in huaweicloud sdk"""
 
-        self._content_type = None
         self._alarm_id = None
         self._body = None
         self.discriminator = None
 
-        self.content_type = content_type
         self.alarm_id = alarm_id
         if body is not None:
             self.body = body
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this UpdateAlarmActionRequest.
-
-
-        :return: The content_type of this UpdateAlarmActionRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this UpdateAlarmActionRequest.
-
-
-        :param content_type: The content_type of this UpdateAlarmActionRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def alarm_id(self):

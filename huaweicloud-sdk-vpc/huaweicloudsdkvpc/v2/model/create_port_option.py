@@ -23,7 +23,7 @@ class CreatePortOption(object):
         'fixed_ips': 'list[FixedIp]',
         'device_owner': 'str',
         'security_groups': 'list[str]',
-        'admin_state_up': 'str',
+        'admin_state_up': 'bool',
         'allowed_address_pairs': 'list[AllowedAddressPair]',
         'extra_dhcp_opts': 'list[ExtraDhcpOpt]',
         'tenant_id': 'str'
@@ -190,7 +190,7 @@ class CreatePortOption(object):
         功能说明：管理状态 取值范围：只支持true，默认为true
 
         :return: The admin_state_up of this CreatePortOption.
-        :rtype: str
+        :rtype: bool
         """
         return self._admin_state_up
 
@@ -201,7 +201,7 @@ class CreatePortOption(object):
         功能说明：管理状态 取值范围：只支持true，默认为true
 
         :param admin_state_up: The admin_state_up of this CreatePortOption.
-        :type: str
+        :type: bool
         """
         self._admin_state_up = admin_state_up
 

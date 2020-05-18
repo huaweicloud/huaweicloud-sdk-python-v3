@@ -52,6 +52,7 @@ from huaweicloudsdkevs.v2.model.list_volumes_by_tags_response import ListVolumes
 from huaweicloudsdkevs.v2.model.list_volumes_details_request import ListVolumesDetailsRequest
 from huaweicloudsdkevs.v2.model.list_volumes_details_response import ListVolumesDetailsResponse
 from huaweicloudsdkevs.v2.model.list_volumes_details_response_body import ListVolumesDetailsResponseBody
+from huaweicloudsdkevs.v2.model.match import Match
 from huaweicloudsdkevs.v2.model.os_extend import OsExtend
 from huaweicloudsdkevs.v2.model.quota_detail import QuotaDetail
 from huaweicloudsdkevs.v2.model.quota_list import QuotaList

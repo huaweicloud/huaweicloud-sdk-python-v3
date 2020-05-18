@@ -20,21 +20,24 @@ class ListVpcsRequest(object):
     openapi_types = {
         'limit': 'int',
         'marker': 'str',
-        'id': 'str'
+        'id': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
         'limit': 'limit',
         'marker': 'marker',
-        'id': 'id'
+        'id': 'id',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, limit=2000, marker=None, id=None):  # noqa: E501
+    def __init__(self, limit=2000, marker=None, id=None, enterprise_project_id=None):  # noqa: E501
         """ListVpcsRequest - a model defined in huaweicloud sdk"""
 
         self._limit = None
         self._marker = None
         self._id = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if limit is not None:
@@ -43,6 +46,8 @@ class ListVpcsRequest(object):
             self.marker = marker
         if id is not None:
             self.id = id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def limit(self):
@@ -103,6 +108,26 @@ class ListVpcsRequest(object):
         :type: str
         """
         self._id = id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListVpcsRequest.
+
+
+        :return: The enterprise_project_id of this ListVpcsRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListVpcsRequest.
+
+
+        :param enterprise_project_id: The enterprise_project_id of this ListVpcsRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

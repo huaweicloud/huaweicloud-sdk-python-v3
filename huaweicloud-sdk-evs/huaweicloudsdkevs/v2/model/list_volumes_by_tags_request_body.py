@@ -20,6 +20,7 @@ class ListVolumesByTagsRequestBody(object):
     openapi_types = {
         'action': 'str',
         'limit': 'int',
+        'matches': 'list[Match]',
         'offset': 'int',
         'tags': 'list[TagsForListVolumes]'
     }
@@ -27,15 +28,17 @@ class ListVolumesByTagsRequestBody(object):
     attribute_map = {
         'action': 'action',
         'limit': 'limit',
+        'matches': 'matches',
         'offset': 'offset',
         'tags': 'tags'
     }
 
-    def __init__(self, action='filter', limit=1000, offset=0, tags=None):  # noqa: E501
+    def __init__(self, action='filter', limit=1000, matches=None, offset=0, tags=None):  # noqa: E501
         """ListVolumesByTagsRequestBody - a model defined in huaweicloud sdk"""
 
         self._action = None
         self._limit = None
+        self._matches = None
         self._offset = None
         self._tags = None
         self.discriminator = None
@@ -43,6 +46,8 @@ class ListVolumesByTagsRequestBody(object):
         self.action = action
         if limit is not None:
             self.limit = limit
+        if matches is not None:
+            self.matches = matches
         if offset is not None:
             self.offset = offset
         self.tags = tags
@@ -90,6 +95,28 @@ class ListVolumesByTagsRequestBody(object):
         :type: int
         """
         self._limit = limit
+
+    @property
+    def matches(self):
+        """Gets the matches of this ListVolumesByTagsRequestBody.
+
+        资源本身支持的查询条件。标签列表中的标签key值不允许重复。
+
+        :return: The matches of this ListVolumesByTagsRequestBody.
+        :rtype: list[Match]
+        """
+        return self._matches
+
+    @matches.setter
+    def matches(self, matches):
+        """Sets the matches of this ListVolumesByTagsRequestBody.
+
+        资源本身支持的查询条件。标签列表中的标签key值不允许重复。
+
+        :param matches: The matches of this ListVolumesByTagsRequestBody.
+        :type: list[Match]
+        """
+        self._matches = matches
 
     @property
     def offset(self):

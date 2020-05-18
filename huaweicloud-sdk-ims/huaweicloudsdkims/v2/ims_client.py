@@ -745,7 +745,7 @@ class ImsClient(Client):
         :return: tuple(ListImagesResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['imagetype', 'isregistered', 'os_bit', 'os_type', 'platform', 'support_diskintensive', 'support_highperformance', 'support_kvm', 'support_kvm_gpu_type', 'support_kvm_infiniband', 'support_largememory', 'support_xen', 'support_xen_gpu_type', 'support_xen_hana', 'container_format', 'id', 'marker', 'member_status', 'min_ram', 'name', 'owner', 'protected', 'sort_dir', 'status', 'tag', 'virtual_env_type', 'visibility', 'x_sdk_date', 'flavor_id', 'created_at', 'updated_at', 'architecture']
+        all_params = ['imagetype', 'isregistered', 'os_bit', 'os_type', 'platform', 'support_diskintensive', 'support_highperformance', 'support_kvm', 'support_kvm_gpu_type', 'support_kvm_infiniband', 'support_largememory', 'support_xen', 'support_xen_gpu_type', 'support_xen_hana', 'container_format', 'disk_format', 'enterprise_project_id', 'id', 'limit', 'marker', 'member_status', 'min_disk', 'min_ram', 'name', 'owner', 'protected', 'sort_dir', 'sort_key', 'status', 'tag', 'virtual_env_type', 'visibility', 'x_sdk_date', 'flavor_id', 'created_at', 'updated_at', 'architecture']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -791,12 +791,20 @@ class ImsClient(Client):
             query_params.append(('__support_xen_hana', local_var_params['support_xen_hana']))
         if 'container_format' in local_var_params:
             query_params.append(('container_format', local_var_params['container_format']))
+        if 'disk_format' in local_var_params:
+            query_params.append(('disk_format', local_var_params['disk_format']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
         if 'member_status' in local_var_params:
             query_params.append(('member_status', local_var_params['member_status']))
+        if 'min_disk' in local_var_params:
+            query_params.append(('min_disk', local_var_params['min_disk']))
         if 'min_ram' in local_var_params:
             query_params.append(('min_ram', local_var_params['min_ram']))
         if 'name' in local_var_params:
@@ -807,6 +815,8 @@ class ImsClient(Client):
             query_params.append(('protected', local_var_params['protected']))
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
         if 'tag' in local_var_params:
@@ -1746,7 +1756,7 @@ class ImsClient(Client):
         :return: tuple(GlanceListImagesResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['imagetype', 'os_bit', 'os_type', 'platform', 'support_diskintensive', 'support_highperformance', 'support_kvm', 'support_kvm_gpu_type', 'support_kvm_infiniband', 'support_largememory', 'support_xen', 'support_xen_gpu_type', 'support_xen_hana', 'container_format', 'disk_format', 'id', 'limit', 'marker', 'member_status', 'min_disk', 'min_ram', 'name', 'owner', 'protected', 'sort_dir', 'sort_key', 'status', 'tag', 'created_at', 'updated_at']
+        all_params = ['imagetype', 'isregistered', 'os_bit', 'os_type', 'platform', 'support_diskintensive', 'support_highperformance', 'support_kvm', 'support_kvm_gpu_type', 'support_kvm_infiniband', 'support_largememory', 'support_xen', 'support_xen_gpu_type', 'support_xen_hana', 'container_format', 'disk_format', 'id', 'limit', 'marker', 'member_status', 'min_disk', 'min_ram', 'name', 'owner', 'protected', 'sort_dir', 'sort_key', 'status', 'tag', 'visibility', 'created_at', 'updated_at']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1764,6 +1774,8 @@ class ImsClient(Client):
         query_params = []
         if 'imagetype' in local_var_params:
             query_params.append(('__imagetype', local_var_params['imagetype']))
+        if 'isregistered' in local_var_params:
+            query_params.append(('__isregistered', local_var_params['isregistered']))
         if 'os_bit' in local_var_params:
             query_params.append(('__os_bit', local_var_params['os_bit']))
         if 'os_type' in local_var_params:
@@ -1818,6 +1830,8 @@ class ImsClient(Client):
             query_params.append(('status', local_var_params['status']))
         if 'tag' in local_var_params:
             query_params.append(('tag', local_var_params['tag']))
+        if 'visibility' in local_var_params:
+            query_params.append(('visibility', local_var_params['visibility']))
         if 'created_at' in local_var_params:
             query_params.append(('created_at', local_var_params['created_at']))
         if 'updated_at' in local_var_params:

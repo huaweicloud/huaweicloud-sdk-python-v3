@@ -18,7 +18,6 @@ class ListMetricsRequest(object):
     """
 
     openapi_types = {
-        'content_type': 'str',
         'dim0': 'str',
         'dim1': 'str',
         'dim2': 'str',
@@ -30,7 +29,6 @@ class ListMetricsRequest(object):
     }
 
     attribute_map = {
-        'content_type': 'Content-Type',
         'dim0': 'dim.0',
         'dim1': 'dim.1',
         'dim2': 'dim.2',
@@ -41,10 +39,9 @@ class ListMetricsRequest(object):
         'start': 'start'
     }
 
-    def __init__(self, content_type='application/json; charset=UTF-8', dim0=None, dim1=None, dim2=None, limit=None, metric_name=None, namespace=None, order=None, start=None):  # noqa: E501
+    def __init__(self, dim0=None, dim1=None, dim2=None, limit=None, metric_name=None, namespace=None, order=None, start=None):  # noqa: E501
         """ListMetricsRequest - a model defined in huaweicloud sdk"""
 
-        self._content_type = None
         self._dim0 = None
         self._dim1 = None
         self._dim2 = None
@@ -55,7 +52,6 @@ class ListMetricsRequest(object):
         self._start = None
         self.discriminator = None
 
-        self.content_type = content_type
         if dim0 is not None:
             self.dim0 = dim0
         if dim1 is not None:
@@ -72,26 +68,6 @@ class ListMetricsRequest(object):
             self.order = order
         if start is not None:
             self.start = start
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this ListMetricsRequest.
-
-
-        :return: The content_type of this ListMetricsRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this ListMetricsRequest.
-
-
-        :param content_type: The content_type of this ListMetricsRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def dim0(self):

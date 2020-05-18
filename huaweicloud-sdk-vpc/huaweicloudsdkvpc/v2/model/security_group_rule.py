@@ -27,7 +27,8 @@ class SecurityGroupRule(object):
         'port_range_min': 'int',
         'port_range_max': 'int',
         'remote_ip_prefix': 'str',
-        'remote_group_id': 'str'
+        'remote_group_id': 'str',
+        'tenant_id': 'str'
     }
 
     attribute_map = {
@@ -40,10 +41,11 @@ class SecurityGroupRule(object):
         'port_range_min': 'port_range_min',
         'port_range_max': 'port_range_max',
         'remote_ip_prefix': 'remote_ip_prefix',
-        'remote_group_id': 'remote_group_id'
+        'remote_group_id': 'remote_group_id',
+        'tenant_id': 'tenant_id'
     }
 
-    def __init__(self, id=None, description=None, security_group_id=None, direction=None, ethertype=None, protocol=None, port_range_min=None, port_range_max=None, remote_ip_prefix=None, remote_group_id=None):  # noqa: E501
+    def __init__(self, id=None, description=None, security_group_id=None, direction=None, ethertype=None, protocol=None, port_range_min=None, port_range_max=None, remote_ip_prefix=None, remote_group_id=None, tenant_id=None):  # noqa: E501
         """SecurityGroupRule - a model defined in huaweicloud sdk"""
 
         self._id = None
@@ -56,6 +58,7 @@ class SecurityGroupRule(object):
         self._port_range_max = None
         self._remote_ip_prefix = None
         self._remote_group_id = None
+        self._tenant_id = None
         self.discriminator = None
 
         self.id = id
@@ -68,6 +71,7 @@ class SecurityGroupRule(object):
         self.port_range_max = port_range_max
         self.remote_ip_prefix = remote_ip_prefix
         self.remote_group_id = remote_group_id
+        self.tenant_id = tenant_id
 
     @property
     def id(self):
@@ -288,6 +292,28 @@ class SecurityGroupRule(object):
         :type: str
         """
         self._remote_group_id = remote_group_id
+
+    @property
+    def tenant_id(self):
+        """Gets the tenant_id of this SecurityGroupRule.
+
+        安全组所属项目ID
+
+        :return: The tenant_id of this SecurityGroupRule.
+        :rtype: str
+        """
+        return self._tenant_id
+
+    @tenant_id.setter
+    def tenant_id(self, tenant_id):
+        """Sets the tenant_id of this SecurityGroupRule.
+
+        安全组所属项目ID
+
+        :param tenant_id: The tenant_id of this SecurityGroupRule.
+        :type: str
+        """
+        self._tenant_id = tenant_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
