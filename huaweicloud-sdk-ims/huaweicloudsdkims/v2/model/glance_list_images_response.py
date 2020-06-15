@@ -17,6 +17,8 @@ class GlanceListImagesResponse(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'first': 'str',
         'images': 'list[GlanceShowImageResponseBody]',
@@ -157,7 +159,10 @@ class GlanceListImagesResponse(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

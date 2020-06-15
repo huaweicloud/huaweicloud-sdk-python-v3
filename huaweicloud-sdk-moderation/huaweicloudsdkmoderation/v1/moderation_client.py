@@ -6,7 +6,6 @@ import datetime
 import re
 import importlib
 
-# python 2 and python 3 compatibility library
 import six
 
 from huaweicloudsdkcore.client import Client
@@ -100,7 +99,8 @@ class ModerationClient(Client):
             post_params=form_params,
             response_type='RunImageBatchModerationResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def run_image_moderation(self, request):
         """图像内容检测
@@ -162,7 +162,8 @@ class ModerationClient(Client):
             post_params=form_params,
             response_type='RunImageModerationResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def run_text_moderation(self, request):
         """文本内容检测
@@ -224,7 +225,8 @@ class ModerationClient(Client):
             post_params=form_params,
             response_type='RunTextModerationResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
     def run_check_result(self, request):
@@ -285,7 +287,8 @@ class ModerationClient(Client):
             post_params=form_params,
             response_type='RunCheckResultResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def run_check_task_jobs(self, request):
         """图像内容检测（批量）- 任务列表查询
@@ -345,7 +348,8 @@ class ModerationClient(Client):
             post_params=form_params,
             response_type='RunCheckTaskJobsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def run_task_sumbit(self, request):
         """图像内容检测（批量）- 任务提交
@@ -407,13 +411,13 @@ class ModerationClient(Client):
             post_params=form_params,
             response_type='RunTaskSumbitResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method,
-                 path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None,
-                 response_type=None, auth_settings=None,  collection_formats=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
+                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
+                 request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -434,4 +438,4 @@ class ModerationClient(Client):
         """
         return self.do_http_request(method, resource_path, path_params,
                                     query_params, header_params, body, post_params,
-                                    response_type, collection_formats)
+                                    response_type, collection_formats, request_type)

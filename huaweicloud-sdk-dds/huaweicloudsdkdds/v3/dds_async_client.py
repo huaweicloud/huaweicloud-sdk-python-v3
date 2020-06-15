@@ -1,0 +1,1281 @@
+# coding: utf-8
+
+from __future__ import absolute_import
+
+import datetime
+import re
+import importlib
+
+import six
+
+from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.exceptions import exceptions
+from huaweicloudsdkcore.utils import http_utils
+
+
+class DdsAsyncClient(Client):
+    """
+    :param configuration: .Configuration object for this client
+    :param pool_threads: The number of threads to use for async requests
+        to the API. More threads means more concurrent API requests.
+    """
+
+    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
+    NATIVE_TYPES_MAPPING = {
+        'int': int,
+        'long': int if six.PY3 else long,
+        'float': float,
+        'str': str,
+        'bool': bool,
+        'date': datetime.date,
+        'datetime': datetime.datetime,
+        'object': object,
+    }
+
+    def __init__(self):
+        super(DdsAsyncClient, self).__init__()
+        self.model_package = importlib.import_module("huaweicloudsdkdds.v3.model")
+        self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
+
+
+
+    def add_sharding_node_async(self, request):
+        """扩容指定集群实例的节点数量
+
+        扩容指定集群实例的节点数量。
+
+        :param AddShardingNodeRequest request
+        :return: AddShardingNodeResponse
+        """
+        return self.add_sharding_node_with_http_info(request)
+
+    def add_sharding_node_with_http_info(self, request):
+        """扩容指定集群实例的节点数量
+
+        扩容指定集群实例的节点数量。
+
+        :param AddShardingNodeRequest request
+        :return: tuple(AddShardingNodeResponse, status_code(int), headers(HTTPHeaderDict))
+        """
+
+        all_params = ['instance_id', 'add_sharding_node_request_body']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+
+        header_params['Accept'] = http_utils.select_header_accept(
+            ['application/json'])
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/instances/{instance_id}/enlarge', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddShardingNodeResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_create_instance_tags_async(self, request):
+        """批量添加指定实例的标签
+
+        批量添加指定实例的标签。
+
+        :param BatchCreateInstanceTagsRequest request
+        :return: None
+        """
+        return self.batch_create_instance_tags_with_http_info(request)
+
+    def batch_create_instance_tags_with_http_info(self, request):
+        """批量添加指定实例的标签
+
+        批量添加指定实例的标签。
+
+        :param BatchCreateInstanceTagsRequest request
+        :return: None
+        """
+
+        all_params = ['instance_id', 'batch_create_instance_tags_request_body']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/instances/{instance_id}/tags/action', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type=None,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_delete_instance_tags_async(self, request):
+        """批量删除指定实例的标签
+
+        批量删除指定实例的标签。
+
+        :param BatchDeleteInstanceTagsRequest request
+        :return: None
+        """
+        return self.batch_delete_instance_tags_with_http_info(request)
+
+    def batch_delete_instance_tags_with_http_info(self, request):
+        """批量删除指定实例的标签
+
+        批量删除指定实例的标签。
+
+        :param BatchDeleteInstanceTagsRequest request
+        :return: None
+        """
+
+        all_params = ['instance_id', 'batch_delete_instance_tags_request_body']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/instances/{instance_id}/tags/action', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type=None,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_instance_async(self, request):
+        """创建文档数据库实例，包括集群实例、副本集实例、以及单节点实例。
+
+        创建文档数据库实例，包括集群实例、副本集实例、以及单节点实例。
+
+        :param CreateInstanceRequest request
+        :return: CreateInstanceResponse
+        """
+        return self.create_instance_with_http_info(request)
+
+    def create_instance_with_http_info(self, request):
+        """创建文档数据库实例，包括集群实例、副本集实例、以及单节点实例。
+
+        创建文档数据库实例，包括集群实例、副本集实例、以及单节点实例。
+
+        :param CreateInstanceRequest request
+        :return: tuple(CreateInstanceResponse, status_code(int), headers(HTTPHeaderDict))
+        """
+
+        all_params = ['create_instance_request_body']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+
+        header_params['Accept'] = http_utils.select_header_accept(
+            ['application/json'])
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/instances', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateInstanceResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_manual_backup_async(self, request):
+        """创建数据库实例的手动备份
+
+        创建数据库实例的手动备份。
+
+        :param CreateManualBackupRequest request
+        :return: CreateManualBackupResponse
+        """
+        return self.create_manual_backup_with_http_info(request)
+
+    def create_manual_backup_with_http_info(self, request):
+        """创建数据库实例的手动备份
+
+        创建数据库实例的手动备份。
+
+        :param CreateManualBackupRequest request
+        :return: tuple(CreateManualBackupResponse, status_code(int), headers(HTTPHeaderDict))
+        """
+
+        all_params = ['create_manual_backup_request_body']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+
+        header_params['Accept'] = http_utils.select_header_accept(
+            ['application/json'])
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/backups', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateManualBackupResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_instance_async(self, request):
+        """删除数据库实例
+
+        删除数据库实例。
+
+        :param DeleteInstanceRequest request
+        :return: DeleteInstanceResponse
+        """
+        return self.delete_instance_with_http_info(request)
+
+    def delete_instance_with_http_info(self, request):
+        """删除数据库实例
+
+        删除数据库实例。
+
+        :param DeleteInstanceRequest request
+        :return: tuple(DeleteInstanceResponse, status_code(int), headers(HTTPHeaderDict))
+        """
+
+        all_params = ['instance_id']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+
+        header_params['Accept'] = http_utils.select_header_accept(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/instances/{instance_id}', 'DELETE',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteInstanceResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_manual_backup_async(self, request):
+        """删除数据库实例的手动备份
+
+        删除数据库实例的手动备份。
+
+        :param DeleteManualBackupRequest request
+        :return: DeleteManualBackupResponse
+        """
+        return self.delete_manual_backup_with_http_info(request)
+
+    def delete_manual_backup_with_http_info(self, request):
+        """删除数据库实例的手动备份
+
+        删除数据库实例的手动备份。
+
+        :param DeleteManualBackupRequest request
+        :return: tuple(DeleteManualBackupResponse, status_code(int), headers(HTTPHeaderDict))
+        """
+
+        all_params = ['backup_id']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'backup_id' in local_var_params:
+            path_params['backup_id'] = local_var_params['backup_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+
+        header_params['Accept'] = http_utils.select_header_accept(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/backups/{backup_id}', 'DELETE',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteManualBackupResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_backups_async(self, request):
+        """根据指定条件查询备份列表
+
+        根据指定条件查询备份列表。
+
+        :param ListBackupsRequest request
+        :return: ListBackupsResponse
+        """
+        return self.list_backups_with_http_info(request)
+
+    def list_backups_with_http_info(self, request):
+        """根据指定条件查询备份列表
+
+        根据指定条件查询备份列表。
+
+        :param ListBackupsRequest request
+        :return: tuple(ListBackupsResponse, status_code(int), headers(HTTPHeaderDict))
+        """
+
+        all_params = ['instance_id', 'backup_id', 'backup_type', 'offset', 'limit', 'begin_time', 'end_time', 'mode']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'backup_id' in local_var_params:
+            query_params.append(('backup_id', local_var_params['backup_id']))
+        if 'backup_type' in local_var_params:
+            query_params.append(('backup_type', local_var_params['backup_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'begin_time' in local_var_params:
+            query_params.append(('begin_time', local_var_params['begin_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'mode' in local_var_params:
+            query_params.append(('mode', local_var_params['mode']))
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+
+        header_params['Accept'] = http_utils.select_header_accept(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/backups', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListBackupsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_datastore_versions_async(self, request):
+        """查询数据库版本信息
+
+        查询指定实例类型的数据库版本信息。
+
+        :param ListDatastoreVersionsRequest request
+        :return: ListDatastoreVersionsResponse
+        """
+        return self.list_datastore_versions_with_http_info(request)
+
+    def list_datastore_versions_with_http_info(self, request):
+        """查询数据库版本信息
+
+        查询指定实例类型的数据库版本信息。
+
+        :param ListDatastoreVersionsRequest request
+        :return: tuple(ListDatastoreVersionsResponse, status_code(int), headers(HTTPHeaderDict))
+        """
+
+        all_params = ['datastore_name']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'datastore_name' in local_var_params:
+            path_params['datastore_name'] = local_var_params['datastore_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+
+        header_params['Accept'] = http_utils.select_header_accept(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/datastores/{datastore_name}/versions', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListDatastoreVersionsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_flavors_async(self, request):
+        """查询指定条件下的所有实例规格信息
+
+        查询指定条件下的所有实例规格信息。
+
+        :param ListFlavorsRequest request
+        :return: ListFlavorsResponse
+        """
+        return self.list_flavors_with_http_info(request)
+
+    def list_flavors_with_http_info(self, request):
+        """查询指定条件下的所有实例规格信息
+
+        查询指定条件下的所有实例规格信息。
+
+        :param ListFlavorsRequest request
+        :return: tuple(ListFlavorsResponse, status_code(int), headers(HTTPHeaderDict))
+        """
+
+        all_params = ['region', 'engine_name']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'region' in local_var_params:
+            query_params.append(('region', local_var_params['region']))
+        if 'engine_name' in local_var_params:
+            query_params.append(('engine_name', local_var_params['engine_name']))
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+
+        header_params['Accept'] = http_utils.select_header_accept(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/flavors', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListFlavorsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_instance_tags_async(self, request):
+        """查询指定实例的标签信息
+
+        查询指定实例的标签信息。
+
+        :param ListInstanceTagsRequest request
+        :return: ListInstanceTagsResponse
+        """
+        return self.list_instance_tags_with_http_info(request)
+
+    def list_instance_tags_with_http_info(self, request):
+        """查询指定实例的标签信息
+
+        查询指定实例的标签信息。
+
+        :param ListInstanceTagsRequest request
+        :return: tuple(ListInstanceTagsResponse, status_code(int), headers(HTTPHeaderDict))
+        """
+
+        all_params = ['instance_id']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+
+        header_params['Accept'] = http_utils.select_header_accept(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/instances/{instance_id}/tags', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListInstanceTagsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_instances_async(self, request):
+        """根据指定条件查询实例列表
+
+        根据指定条件查询实例列表。
+
+        :param ListInstancesRequest request
+        :return: ListInstancesResponse
+        """
+        return self.list_instances_with_http_info(request)
+
+    def list_instances_with_http_info(self, request):
+        """根据指定条件查询实例列表
+
+        根据指定条件查询实例列表。
+
+        :param ListInstancesRequest request
+        :return: tuple(ListInstancesResponse, status_code(int), headers(HTTPHeaderDict))
+        """
+
+        all_params = ['id', 'name', 'mode', 'datastore_type', 'vpc_id', 'subnet_id', 'offset', 'limit']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'mode' in local_var_params:
+            query_params.append(('mode', local_var_params['mode']))
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+        if 'subnet_id' in local_var_params:
+            query_params.append(('subnet_id', local_var_params['subnet_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+
+        header_params['Accept'] = http_utils.select_header_accept(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/instances', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListInstancesResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_instances_by_tags_async(self, request):
+        """根据标签查询指定的数据库实例
+
+        根据标签查询指定的数据库实例。
+
+        :param ListInstancesByTagsRequest request
+        :return: ListInstancesByTagsResponse
+        """
+        return self.list_instances_by_tags_with_http_info(request)
+
+    def list_instances_by_tags_with_http_info(self, request):
+        """根据标签查询指定的数据库实例
+
+        根据标签查询指定的数据库实例。
+
+        :param ListInstancesByTagsRequest request
+        :return: tuple(ListInstancesByTagsResponse, status_code(int), headers(HTTPHeaderDict))
+        """
+
+        all_params = ['list_instances_by_tags_request_body']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+
+        header_params['Accept'] = http_utils.select_header_accept(
+            ['application/json'])
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/instances/action', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListInstancesByTagsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_project_tags_async(self, request):
+        """查询指定project ID下实例的所有标签集合
+
+        查询指定project ID下实例的所有标签集合。
+
+        :param ListProjectTagsRequest request
+        :return: ListProjectTagsResponse
+        """
+        return self.list_project_tags_with_http_info(request)
+
+    def list_project_tags_with_http_info(self, request):
+        """查询指定project ID下实例的所有标签集合
+
+        查询指定project ID下实例的所有标签集合。
+
+        :param ListProjectTagsRequest request
+        :return: tuple(ListProjectTagsResponse, status_code(int), headers(HTTPHeaderDict))
+        """
+
+        all_params = []
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+
+        header_params['Accept'] = http_utils.select_header_accept(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/tags', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListProjectTagsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def resize_instance_async(self, request):
+        """变更实例的规格
+
+        变更实例的规格。
+
+        :param ResizeInstanceRequest request
+        :return: ResizeInstanceResponse
+        """
+        return self.resize_instance_with_http_info(request)
+
+    def resize_instance_with_http_info(self, request):
+        """变更实例的规格
+
+        变更实例的规格。
+
+        :param ResizeInstanceRequest request
+        :return: tuple(ResizeInstanceResponse, status_code(int), headers(HTTPHeaderDict))
+        """
+
+        all_params = ['instance_id', 'resize_instance_request_body']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+
+        header_params['Accept'] = http_utils.select_header_accept(
+            ['application/json'])
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/instances/{instance_id}/resize', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ResizeInstanceResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def resize_instance_volume_async(self, request):
+        """扩容实例相关的存储容量大小
+
+        扩容实例相关的存储容量大小。
+
+        :param ResizeInstanceVolumeRequest request
+        :return: ResizeInstanceVolumeResponse
+        """
+        return self.resize_instance_volume_with_http_info(request)
+
+    def resize_instance_volume_with_http_info(self, request):
+        """扩容实例相关的存储容量大小
+
+        扩容实例相关的存储容量大小。
+
+        :param ResizeInstanceVolumeRequest request
+        :return: tuple(ResizeInstanceVolumeResponse, status_code(int), headers(HTTPHeaderDict))
+        """
+
+        all_params = ['instance_id', 'resize_instance_volume_request_body']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+
+        header_params['Accept'] = http_utils.select_header_accept(
+            ['application/json'])
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/instances/{instance_id}/enlarge-volume', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ResizeInstanceVolumeResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def restart_instance_async(self, request):
+        """重启实例的数据库服务
+
+        重启实例的数据库服务。
+
+        :param RestartInstanceRequest request
+        :return: RestartInstanceResponse
+        """
+        return self.restart_instance_with_http_info(request)
+
+    def restart_instance_with_http_info(self, request):
+        """重启实例的数据库服务
+
+        重启实例的数据库服务。
+
+        :param RestartInstanceRequest request
+        :return: tuple(RestartInstanceResponse, status_code(int), headers(HTTPHeaderDict))
+        """
+
+        all_params = ['instance_id', 'restart_instance_request_body']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+
+        header_params['Accept'] = http_utils.select_header_accept(
+            ['application/json'])
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/instances/{instance_id}/restart', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RestartInstanceResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def set_backup_policy_async(self, request):
+        """设置自动备份策略
+
+        设置自动备份策略。 x-constraint: |- - 该接口支持DDS社区版和增强版。
+
+        :param SetBackupPolicyRequest request
+        :return: None
+        """
+        return self.set_backup_policy_with_http_info(request)
+
+    def set_backup_policy_with_http_info(self, request):
+        """设置自动备份策略
+
+        设置自动备份策略。 x-constraint: |- - 该接口支持DDS社区版和增强版。
+
+        :param SetBackupPolicyRequest request
+        :return: None
+        """
+
+        all_params = ['instance_id', 'set_backup_policy_request_body']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/instances/{instance_id}/backups/policy', 'PUT',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type=None,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_backup_policy_async(self, request):
+        """查询自动备份策略
+
+        查询自动备份策略。
+
+        :param ShowBackupPolicyRequest request
+        :return: ShowBackupPolicyResponse
+        """
+        return self.show_backup_policy_with_http_info(request)
+
+    def show_backup_policy_with_http_info(self, request):
+        """查询自动备份策略
+
+        查询自动备份策略。
+
+        :param ShowBackupPolicyRequest request
+        :return: tuple(ShowBackupPolicyResponse, status_code(int), headers(HTTPHeaderDict))
+        """
+
+        all_params = ['instance_id']
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+
+        body_params = None
+
+        header_params['Accept'] = http_utils.select_header_accept(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            '/v3/{project_id}/instances/{instance_id}/backups/policy', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowBackupPolicyResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
+                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
+                 request_type=None):
+        """Makes the HTTP request and returns deserialized data.
+
+        :param resource_path: Path to method endpoint.
+        :param method: Method to call.
+        :param path_params: Path parameters in the url.
+        :param query_params: Query parameters in the url.
+        :param header_params: Header parameters to be
+            placed in the request header.
+        :param body: Request body.
+        :param post_params dict: Request post form parameters,
+            for `application/x-www-form-urlencoded`, `multipart/form-data`.
+        :param auth_settings list: Auth Settings names for the request.
+        :param response_type: Response data type.
+        :param collection_formats: dict of collection formats for path, query,
+            header, and post parameters.
+        :return:
+            Return the response directly.
+        """
+        return self.do_http_request(method, resource_path, path_params,
+                                    query_params, header_params, body, post_params,
+                                    response_type, collection_formats, request_type, True)

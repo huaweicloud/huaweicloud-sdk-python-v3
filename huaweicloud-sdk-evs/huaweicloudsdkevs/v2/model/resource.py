@@ -17,6 +17,8 @@ class Resource(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'resource_id': 'str',
         'resource_name': 'str',
@@ -152,7 +154,10 @@ class Resource(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

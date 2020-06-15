@@ -6,7 +6,6 @@ import datetime
 import re
 import importlib
 
-# python 2 and python 3 compatibility library
 import six
 
 from huaweicloudsdkcore.client import Client
@@ -102,7 +101,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='AttachServerVolumeResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def batch_add_server_nics(self, request):
         """批量添加云服务器网卡
@@ -166,7 +166,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='BatchAddServerNicsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def batch_create_server_tags(self, request):
         """批量添加云服务器标签
@@ -228,7 +229,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def batch_delete_server_nics(self, request):
         """批量删除云服务器网卡
@@ -292,7 +294,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='BatchDeleteServerNicsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def batch_delete_server_tags(self, request):
         """批量删除云服务器标签
@@ -354,7 +357,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def batch_reboot_servers(self, request):
         """批量重启云服务器
@@ -416,7 +420,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='BatchRebootServersResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def batch_start_servers(self, request):
         """批量启动云服务器
@@ -478,7 +483,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='BatchStartServersResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def batch_stop_servers(self, request):
         """批量关闭云服务器
@@ -540,7 +546,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='BatchStopServersResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_post_paid_servers(self, request):
         """创建云服务器(按需)
@@ -602,7 +609,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='CreatePostPaidServersResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_servers(self, request):
         """删除云服务器
@@ -664,7 +672,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='DeleteServersResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def detach_server_volume(self, request):
         """弹性云服务器卸载磁盘
@@ -728,7 +737,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='DetachServerVolumeResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_flavors(self, request):
         """查询规格详情和规格扩展信息列表
@@ -788,7 +798,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='ListFlavorsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_server_block_devices(self, request):
         """查询弹性云服务器磁盘信息
@@ -848,7 +859,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='ListServerBlockDevicesResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_server_interfaces(self, request):
         """查询云服务器网卡信息
@@ -908,7 +920,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='ListServerInterfacesResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_servers_details(self, request):
         """查询云服务器详情列表
@@ -986,7 +999,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='ListServersDetailsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def nova_create_servers(self, request):
         """创建云服务器
@@ -1050,7 +1064,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='NovaCreateServersResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def nova_delete_server(self, request):
         """删除云服务器
@@ -1108,7 +1123,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def nova_list_servers_details(self, request):
         """查询云服务器详情列表
@@ -1192,7 +1208,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='NovaListServersDetailsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def nova_show_server(self, request):
         """查询云服务器详情
@@ -1254,7 +1271,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='NovaShowServerResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def resize_post_paid_server(self, request):
         """变更云服务器规格(按需)
@@ -1318,7 +1336,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='ResizePostPaidServerResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_server(self, request):
         """查询云服务器详情
@@ -1378,7 +1397,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='ShowServerResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_server_tags(self, request):
         """查询云服务器标签
@@ -1438,7 +1458,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='ShowServerTagsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def update_server(self, request):
         """修改云服务器
@@ -1502,7 +1523,8 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='UpdateServerResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
     def show_job(self, request):
@@ -1563,13 +1585,13 @@ class EcsClient(Client):
             post_params=form_params,
             response_type='ShowJobResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method,
-                 path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None,
-                 response_type=None, auth_settings=None,  collection_formats=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
+                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
+                 request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -1590,4 +1612,4 @@ class EcsClient(Client):
         """
         return self.do_http_request(method, resource_path, path_params,
                                     query_params, header_params, body, post_params,
-                                    response_type, collection_formats)
+                                    response_type, collection_formats, request_type)

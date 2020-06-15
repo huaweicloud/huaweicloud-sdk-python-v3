@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 # import CtsClient
 from huaweicloudsdkcts.v1.cts_client import CtsClient
+from huaweicloudsdkcts.v1.cts_async_client import CtsAsyncClient
 # import models into sdk package
 from huaweicloudsdkcts.v1.model.base_user import BaseUser
 from huaweicloudsdkcts.v1.model.create_tracker_request import CreateTrackerRequest

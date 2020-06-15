@@ -6,7 +6,6 @@ import datetime
 import re
 import importlib
 
-# python 2 and python 3 compatibility library
 import six
 
 from huaweicloudsdkcore.client import Client
@@ -102,7 +101,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='AsyncInvokeFunctionResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_function(self, request):
         """创建函数。
@@ -164,7 +164,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='CreateFunctionResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_function_version(self, request):
         """发布函数版本。
@@ -228,7 +229,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='CreateFunctionVersionResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_version_alias(self, request):
         """创建函数版本别名。
@@ -292,7 +294,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='CreateVersionAliasResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_function(self, request):
         """删除函数/版本。
@@ -350,7 +353,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_version_alias(self, request):
         """删除函数版本别名。
@@ -410,7 +414,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def invoke_function(self, request):
         """同步执行函数。
@@ -478,7 +483,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='InvokeFunctionResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_function_versions(self, request):
         """获取指定函数的版本列表。
@@ -542,7 +548,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='ListFunctionVersionsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_functions(self, request):
         """获取函数列表
@@ -604,7 +611,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='ListFunctionsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_version_aliases(self, request):
         """获取指定函数所有版本别名列表。
@@ -664,7 +672,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='list[ListVersionAliasResult]',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_function_code(self, request):
         """获取指定函数代码。
@@ -724,7 +733,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='ShowFunctionCodeResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_function_config(self, request):
         """获取函数的metadata。
@@ -784,7 +794,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='ShowFunctionConfigResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_version_alias(self, request):
         """获取函数版本的指定别名信息。
@@ -846,7 +857,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='ShowVersionAliasResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def update_function_code(self, request):
         """修改函数代码。
@@ -910,7 +922,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='UpdateFunctionCodeResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def update_function_config(self, request):
         """修改函数的metadata信息。
@@ -974,7 +987,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='UpdateFunctionConfigResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def update_version_alias(self, request):
         """修改函数版本别名信息。
@@ -1040,7 +1054,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='UpdateVersionAliasResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
     def batch_delete_function_triggers(self, request):
@@ -1099,7 +1114,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_function_trigger(self, request):
         """创建触发器。
@@ -1163,7 +1179,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='CreateFunctionTriggerResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_function_trigger(self, request):
         """删除触发器。
@@ -1225,7 +1242,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_function_triggers(self, request):
         """获取指定函数的所有触发器。
@@ -1285,7 +1303,8 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='list[ListFunctionTriggerResult]',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_function_trigger(self, request):
         """获取指定触发器的信息。
@@ -1349,13 +1368,13 @@ class FgsClient(Client):
             post_params=form_params,
             response_type='ShowFunctionTriggerResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method,
-                 path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None,
-                 response_type=None, auth_settings=None,  collection_formats=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
+                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
+                 request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -1376,4 +1395,4 @@ class FgsClient(Client):
         """
         return self.do_http_request(method, resource_path, path_params,
                                     query_params, header_params, body, post_params,
-                                    response_type, collection_formats)
+                                    response_type, collection_formats, request_type)

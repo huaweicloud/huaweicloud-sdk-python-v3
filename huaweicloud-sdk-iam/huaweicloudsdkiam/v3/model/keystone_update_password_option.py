@@ -17,6 +17,8 @@ class KeystoneUpdatePasswordOption(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'password': 'str',
         'original_password': 'str'
@@ -101,7 +103,10 @@ class KeystoneUpdatePasswordOption(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

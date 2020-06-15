@@ -17,30 +17,26 @@ class ServerSchedulerHints(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'group': 'list[str]',
         'different_host': 'list[str]',
-        'same_host': 'list[str]',
-        'cidr': 'list[str]',
-        'build_near_host_ip': 'list[str]'
+        'same_host': 'list[str]'
     }
 
     attribute_map = {
         'group': 'group',
         'different_host': 'different_host',
-        'same_host': 'same_host',
-        'cidr': 'cidr',
-        'build_near_host_ip': 'build_near_host_ip'
+        'same_host': 'same_host'
     }
 
-    def __init__(self, group=None, different_host=None, same_host=None, cidr=None, build_near_host_ip=None):  # noqa: E501
+    def __init__(self, group=None, different_host=None, same_host=None):  # noqa: E501
         """ServerSchedulerHints - a model defined in huaweicloud sdk"""
 
         self._group = None
         self._different_host = None
         self._same_host = None
-        self._cidr = None
-        self._build_near_host_ip = None
         self.discriminator = None
 
         if group is not None:
@@ -49,10 +45,6 @@ class ServerSchedulerHints(object):
             self.different_host = different_host
         if same_host is not None:
             self.same_host = same_host
-        if cidr is not None:
-            self.cidr = cidr
-        if build_near_host_ip is not None:
-            self.build_near_host_ip = build_near_host_ip
 
     @property
     def group(self):
@@ -120,50 +112,6 @@ class ServerSchedulerHints(object):
         """
         self._same_host = same_host
 
-    @property
-    def cidr(self):
-        """Gets the cidr of this ServerSchedulerHints.
-
-        将弹性云服务器scheduler到指定网段的host上，host网段的cidr。当前不支持该功能。
-
-        :return: The cidr of this ServerSchedulerHints.
-        :rtype: list[str]
-        """
-        return self._cidr
-
-    @cidr.setter
-    def cidr(self, cidr):
-        """Sets the cidr of this ServerSchedulerHints.
-
-        将弹性云服务器scheduler到指定网段的host上，host网段的cidr。当前不支持该功能。
-
-        :param cidr: The cidr of this ServerSchedulerHints.
-        :type: list[str]
-        """
-        self._cidr = cidr
-
-    @property
-    def build_near_host_ip(self):
-        """Gets the build_near_host_ip of this ServerSchedulerHints.
-
-        预留字段，当前不支持该功能。
-
-        :return: The build_near_host_ip of this ServerSchedulerHints.
-        :rtype: list[str]
-        """
-        return self._build_near_host_ip
-
-    @build_near_host_ip.setter
-    def build_near_host_ip(self, build_near_host_ip):
-        """Sets the build_near_host_ip of this ServerSchedulerHints.
-
-        预留字段，当前不支持该功能。
-
-        :param build_near_host_ip: The build_near_host_ip of this ServerSchedulerHints.
-        :type: list[str]
-        """
-        self._build_near_host_ip = build_near_host_ip
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -184,7 +132,10 @@ class ServerSchedulerHints(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 # import DdsClient
 from huaweicloudsdkdds.v3.dds_client import DdsClient
+from huaweicloudsdkdds.v3.dds_async_client import DdsAsyncClient
 # import models into sdk package
 from huaweicloudsdkdds.v3.model.add_sharding_node_request import AddShardingNodeRequest
 from huaweicloudsdkdds.v3.model.add_sharding_node_request_body import AddShardingNodeRequestBody

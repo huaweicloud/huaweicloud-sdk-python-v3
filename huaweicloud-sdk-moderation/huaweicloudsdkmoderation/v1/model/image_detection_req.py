@@ -17,6 +17,8 @@ class ImageDetectionReq(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'url': 'str',
         'image': 'str',
@@ -157,7 +159,10 @@ class ImageDetectionReq(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

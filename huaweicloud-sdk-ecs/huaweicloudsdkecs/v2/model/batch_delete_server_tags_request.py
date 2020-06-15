@@ -17,6 +17,8 @@ class BatchDeleteServerTagsRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'server_id': 'str',
         'body': 'BatchDeleteServerTagsRequestBody'
@@ -98,7 +100,10 @@ class BatchDeleteServerTagsRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

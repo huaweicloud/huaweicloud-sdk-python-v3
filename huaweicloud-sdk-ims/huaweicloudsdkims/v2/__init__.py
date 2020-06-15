@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 # import ImsClient
 from huaweicloudsdkims.v2.ims_client import ImsClient
+from huaweicloudsdkims.v2.ims_async_client import ImsAsyncClient
 # import models into sdk package
 from huaweicloudsdkims.v2.model.add_or_update_tags_request_body import AddOrUpdateTagsRequestBody
 from huaweicloudsdkims.v2.model.additional_properties import AdditionalProperties

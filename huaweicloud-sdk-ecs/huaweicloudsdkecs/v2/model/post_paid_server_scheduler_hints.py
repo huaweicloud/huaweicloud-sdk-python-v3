@@ -17,6 +17,8 @@ class PostPaidServerSchedulerHints(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'group': 'str',
         'dedicated_host_id': 'str',
@@ -130,7 +132,10 @@ class PostPaidServerSchedulerHints(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

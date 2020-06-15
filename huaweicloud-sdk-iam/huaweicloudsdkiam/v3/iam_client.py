@@ -6,7 +6,6 @@ import datetime
 import re
 import importlib
 
-# python 2 and python 3 compatibility library
 import six
 
 from huaweicloudsdkcore.client import Client
@@ -59,7 +58,7 @@ class IamClient(Client):
         :return: None
         """
 
-        all_params = ['domain_id', 'agency_id', 'role_id']
+        all_params = ['agency_id', 'role_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -73,8 +72,6 @@ class IamClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'domain_id' in local_var_params:
-            path_params['domain_id'] = local_var_params['domain_id']
         if 'agency_id' in local_var_params:
             path_params['agency_id'] = local_var_params['agency_id']
         if 'role_id' in local_var_params:
@@ -100,7 +97,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def associate_agency_with_project_permission(self, request):
         """为委托授予项目服务权限
@@ -162,7 +160,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def check_domain_permission_for_agency(self, request):
         """查询委托是否拥有全局服务权限
@@ -183,7 +182,7 @@ class IamClient(Client):
         :return: None
         """
 
-        all_params = ['domain_id', 'agency_id', 'role_id']
+        all_params = ['agency_id', 'role_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -197,8 +196,6 @@ class IamClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'domain_id' in local_var_params:
-            path_params['domain_id'] = local_var_params['domain_id']
         if 'agency_id' in local_var_params:
             path_params['agency_id'] = local_var_params['agency_id']
         if 'role_id' in local_var_params:
@@ -224,7 +221,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def check_project_permission_for_agency(self, request):
         """查询委托是否拥有项目服务权限
@@ -286,7 +284,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_agency(self, request):
         """创建委托
@@ -348,7 +347,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='CreateAgencyResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_agency(self, request):
         """删除委托
@@ -406,7 +406,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_add_user_to_group(self, request):
         """添加IAM用户到用户组
@@ -466,7 +467,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_associate_group_with_domain_permission(self, request):
         """为用户组授予全局服务权限
@@ -487,7 +489,7 @@ class IamClient(Client):
         :return: None
         """
 
-        all_params = ['domain_id', 'group_id', 'role_id']
+        all_params = ['group_id', 'role_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -501,8 +503,6 @@ class IamClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'domain_id' in local_var_params:
-            path_params['domain_id'] = local_var_params['domain_id']
         if 'group_id' in local_var_params:
             path_params['group_id'] = local_var_params['group_id']
         if 'role_id' in local_var_params:
@@ -528,7 +528,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_associate_group_with_project_permission(self, request):
         """为用户组授予项目服务权限
@@ -590,7 +591,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_check_domain_permission_for_group(self, request):
         """查询用户组是否拥有全局服务权限
@@ -611,7 +613,7 @@ class IamClient(Client):
         :return: None
         """
 
-        all_params = ['domain_id', 'group_id', 'role_id']
+        all_params = ['group_id', 'role_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -625,8 +627,6 @@ class IamClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'domain_id' in local_var_params:
-            path_params['domain_id'] = local_var_params['domain_id']
         if 'group_id' in local_var_params:
             path_params['group_id'] = local_var_params['group_id']
         if 'role_id' in local_var_params:
@@ -652,7 +652,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_check_project_permission_for_group(self, request):
         """查询用户组是否拥有项目服务权限
@@ -714,7 +715,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_check_user_in_group(self, request):
         """查询IAM用户是否在用户组中
@@ -774,7 +776,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_create_group(self, request):
         """创建用户组
@@ -836,7 +839,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='KeystoneCreateGroupResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_create_user(self, request):
         """管理员创建IAM用户
@@ -898,7 +902,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='KeystoneCreateUserResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_delete_group(self, request):
         """删除用户组
@@ -956,7 +961,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_delete_user(self, request):
         """管理员删除IAM用户
@@ -1014,7 +1020,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_list_domain_permissions_for_group(self, request):
         """查询全局服务中的用户组权限
@@ -1035,7 +1042,7 @@ class IamClient(Client):
         :return: tuple(KeystoneListDomainPermissionsForGroupResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['domain_id', 'group_id']
+        all_params = ['group_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1049,8 +1056,6 @@ class IamClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'domain_id' in local_var_params:
-            path_params['domain_id'] = local_var_params['domain_id']
         if 'group_id' in local_var_params:
             path_params['group_id'] = local_var_params['group_id']
 
@@ -1076,7 +1081,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='KeystoneListDomainPermissionsForGroupResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_list_groups(self, request):
         """查询用户组列表
@@ -1097,7 +1103,7 @@ class IamClient(Client):
         :return: tuple(KeystoneListGroupsResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['domain_id', 'name']
+        all_params = ['name']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1113,8 +1119,6 @@ class IamClient(Client):
         path_params = {}
 
         query_params = []
-        if 'domain_id' in local_var_params:
-            query_params.append(('domain_id', local_var_params['domain_id']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
 
@@ -1138,7 +1142,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='KeystoneListGroupsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_list_groups_for_user(self, request):
         """查询IAM用户所属用户组
@@ -1198,7 +1203,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='KeystoneListGroupsForUserResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_list_permissions(self, request):
         """查询权限列表
@@ -1219,7 +1225,7 @@ class IamClient(Client):
         :return: tuple(KeystoneListPermissionsResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['name', 'domain_id']
+        all_params = ['name']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1237,8 +1243,6 @@ class IamClient(Client):
         query_params = []
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
-        if 'domain_id' in local_var_params:
-            query_params.append(('domain_id', local_var_params['domain_id']))
 
         header_params = {}
 
@@ -1260,7 +1264,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='KeystoneListPermissionsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_list_project_permissions_for_group(self, request):
         """查询项目服务中的用户组权限
@@ -1322,7 +1327,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='KeystoneListProjectPermissionsForGroupResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_list_users(self, request):
         """管理员查询IAM用户列表
@@ -1343,7 +1349,7 @@ class IamClient(Client):
         :return: tuple(KeystoneListUsersResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['domain_id', 'enabled', 'name', 'password_expires_at']
+        all_params = ['enabled', 'name', 'password_expires_at']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1359,8 +1365,6 @@ class IamClient(Client):
         path_params = {}
 
         query_params = []
-        if 'domain_id' in local_var_params:
-            query_params.append(('domain_id', local_var_params['domain_id']))
         if 'enabled' in local_var_params:
             query_params.append(('enabled', local_var_params['enabled']))
         if 'name' in local_var_params:
@@ -1388,7 +1392,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='KeystoneListUsersResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_list_users_for_group_by_admin(self, request):
         """管理员查询用户组所包含的IAM用户
@@ -1448,7 +1453,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='KeystoneListUsersForGroupByAdminResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_remove_domain_permission_from_group(self, request):
         """移除用户组的全局服务权限
@@ -1469,7 +1475,7 @@ class IamClient(Client):
         :return: None
         """
 
-        all_params = ['domain_id', 'group_id', 'role_id']
+        all_params = ['group_id', 'role_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -1483,8 +1489,6 @@ class IamClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'domain_id' in local_var_params:
-            path_params['domain_id'] = local_var_params['domain_id']
         if 'group_id' in local_var_params:
             path_params['group_id'] = local_var_params['group_id']
         if 'role_id' in local_var_params:
@@ -1510,7 +1514,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_remove_project_permission_from_group(self, request):
         """移除用户组的项目服务权限
@@ -1572,7 +1577,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_remove_user_from_group(self, request):
         """移除用户组中的IAM用户
@@ -1632,7 +1638,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_show_group(self, request):
         """查询用户组详情
@@ -1692,7 +1699,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='KeystoneShowGroupResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_show_permission(self, request):
         """查询权限详情
@@ -1752,7 +1760,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='KeystoneShowPermissionResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_show_user(self, request):
         """查询IAM用户详情
@@ -1812,7 +1821,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='KeystoneShowUserResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_update_group(self, request):
         """更新用户组
@@ -1876,7 +1886,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='KeystoneUpdateGroupResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_update_user_by_admin(self, request):
         """管理员修改IAM用户信息
@@ -1940,7 +1951,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='KeystoneUpdateUserByAdminResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def keystone_update_user_password(self, request):
         """修改IAM用户密码
@@ -2002,7 +2014,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_agencies(self, request):
         """查询指定条件下的委托列表
@@ -2023,7 +2036,7 @@ class IamClient(Client):
         :return: tuple(ListAgenciesResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['domain_id', 'trust_domain_id', 'name']
+        all_params = ['trust_domain_id', 'name']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -2039,8 +2052,6 @@ class IamClient(Client):
         path_params = {}
 
         query_params = []
-        if 'domain_id' in local_var_params:
-            query_params.append(('domain_id', local_var_params['domain_id']))
         if 'trust_domain_id' in local_var_params:
             query_params.append(('trust_domain_id', local_var_params['trust_domain_id']))
         if 'name' in local_var_params:
@@ -2066,7 +2077,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='ListAgenciesResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_domain_permissions_for_agency(self, request):
         """查询全局服务中的委托权限
@@ -2087,7 +2099,7 @@ class IamClient(Client):
         :return: tuple(ListDomainPermissionsForAgencyResponse, status_code(int), headers(HTTPHeaderDict))
         """
 
-        all_params = ['domain_id', 'agency_id']
+        all_params = ['agency_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -2101,8 +2113,6 @@ class IamClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'domain_id' in local_var_params:
-            path_params['domain_id'] = local_var_params['domain_id']
         if 'agency_id' in local_var_params:
             path_params['agency_id'] = local_var_params['agency_id']
 
@@ -2128,7 +2138,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='ListDomainPermissionsForAgencyResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_project_permissions_for_agency(self, request):
         """查询项目服务中的委托权限
@@ -2190,7 +2201,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='ListProjectPermissionsForAgencyResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def remove_domain_permission_from_agency(self, request):
         """移除委托的全局服务权限
@@ -2211,7 +2223,7 @@ class IamClient(Client):
         :return: None
         """
 
-        all_params = ['domain_id', 'agency_id', 'role_id']
+        all_params = ['agency_id', 'role_id']
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -2225,8 +2237,6 @@ class IamClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'domain_id' in local_var_params:
-            path_params['domain_id'] = local_var_params['domain_id']
         if 'agency_id' in local_var_params:
             path_params['agency_id'] = local_var_params['agency_id']
         if 'role_id' in local_var_params:
@@ -2252,7 +2262,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def remove_project_permission_from_agency(self, request):
         """移除委托的项目服务权限
@@ -2314,7 +2325,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_agency(self, request):
         """查询委托详情
@@ -2374,7 +2386,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='ShowAgencyResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def update_agency(self, request):
         """修改委托
@@ -2438,7 +2451,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='UpdateAgencyResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
     def create_temporary_access_key_by_agency(self, request):
@@ -2501,7 +2515,8 @@ class IamClient(Client):
             post_params=form_params,
             response_type='CreateTemporaryAccessKeyByAgencyResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_temporary_access_key_by_token(self, request):
         """通过token获取临时访问密钥和securitytoken
@@ -2563,13 +2578,13 @@ class IamClient(Client):
             post_params=form_params,
             response_type='CreateTemporaryAccessKeyByTokenResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method,
-                 path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None,
-                 response_type=None, auth_settings=None,  collection_formats=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
+                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
+                 request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -2590,4 +2605,4 @@ class IamClient(Client):
         """
         return self.do_http_request(method, resource_path, path_params,
                                     query_params, header_params, body, post_params,
-                                    response_type, collection_formats)
+                                    response_type, collection_formats, request_type)

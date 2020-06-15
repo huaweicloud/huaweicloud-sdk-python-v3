@@ -17,6 +17,8 @@ class ExtraDhcpOption(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'opt_name': 'str',
         'opt_value': 'str'
@@ -102,7 +104,10 @@ class ExtraDhcpOption(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

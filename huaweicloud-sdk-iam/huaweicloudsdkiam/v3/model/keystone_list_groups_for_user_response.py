@@ -17,6 +17,8 @@ class KeystoneListGroupsForUserResponse(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'groups': 'list[KeystoneGroupResult]',
         'links': 'Links'
@@ -101,7 +103,10 @@ class KeystoneListGroupsForUserResponse(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

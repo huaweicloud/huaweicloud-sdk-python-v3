@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 # import VpcClient
 from huaweicloudsdkvpc.v2.vpc_client import VpcClient
+from huaweicloudsdkvpc.v2.vpc_async_client import VpcAsyncClient
 # import models into sdk package
 from huaweicloudsdkvpc.v2.model.allowed_address_pair import AllowedAddressPair
 from huaweicloudsdkvpc.v2.model.create_port_option import CreatePortOption

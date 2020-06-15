@@ -17,6 +17,8 @@ class ListVpcsRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'limit': 'int',
         'marker': 'str',
@@ -149,7 +151,10 @@ class ListVpcsRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

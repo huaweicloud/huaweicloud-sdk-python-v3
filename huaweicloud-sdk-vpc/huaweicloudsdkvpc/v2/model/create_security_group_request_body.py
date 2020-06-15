@@ -17,6 +17,8 @@ class CreateSecurityGroupRequestBody(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'security_group': 'CreateSecurityGroupOption'
     }
@@ -73,7 +75,10 @@ class CreateSecurityGroupRequestBody(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

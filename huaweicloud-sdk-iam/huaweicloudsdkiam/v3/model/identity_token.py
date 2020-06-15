@@ -17,6 +17,8 @@ class IdentityToken(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'id': 'str',
         'duration_seconds': 'int'
@@ -103,7 +105,10 @@ class IdentityToken(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

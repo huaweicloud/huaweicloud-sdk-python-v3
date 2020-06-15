@@ -17,6 +17,8 @@ class ListMetricsResponse(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'metrics': 'list[MetricInfo]',
         'meta_data': 'MetaData'
@@ -101,7 +103,10 @@ class ListMetricsResponse(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

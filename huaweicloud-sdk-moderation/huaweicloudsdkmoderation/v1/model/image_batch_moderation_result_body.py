@@ -17,33 +17,29 @@ class ImageBatchModerationResultBody(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'url': 'str',
         'suggestion': 'str',
-        'detail': 'object',
-        'confidence': 'float',
-        'face_detail': 'object',
-        'label': 'str'
+        'detail': 'ImageDetectionResultDetail',
+        'category_suggestion': 'object'
     }
 
     attribute_map = {
         'url': 'url',
         'suggestion': 'suggestion',
         'detail': 'detail',
-        'confidence': 'confidence',
-        'face_detail': 'face_detail',
-        'label': 'label'
+        'category_suggestion': 'category_suggestion'
     }
 
-    def __init__(self, url=None, suggestion=None, detail=None, confidence=None, face_detail=None, label=None):  # noqa: E501
+    def __init__(self, url=None, suggestion=None, detail=None, category_suggestion=None):  # noqa: E501
         """ImageBatchModerationResultBody - a model defined in huaweicloud sdk"""
 
         self._url = None
         self._suggestion = None
         self._detail = None
-        self._confidence = None
-        self._face_detail = None
-        self._label = None
+        self._category_suggestion = None
         self.discriminator = None
 
         if url is not None:
@@ -52,12 +48,8 @@ class ImageBatchModerationResultBody(object):
             self.suggestion = suggestion
         if detail is not None:
             self.detail = detail
-        if confidence is not None:
-            self.confidence = confidence
-        if face_detail is not None:
-            self.face_detail = face_detail
-        if label is not None:
-            self.label = label
+        if category_suggestion is not None:
+            self.category_suggestion = category_suggestion
 
     @property
     def url(self):
@@ -107,10 +99,9 @@ class ImageBatchModerationResultBody(object):
     def detail(self):
         """Gets the detail of this ImageBatchModerationResultBody.
 
-        请参见[表2](https://support.huaweicloud.com/api-moderation/moderation_03_0019.html#moderation_03_0019__zh-cn_topic_0087142444_table663805019540)中detail字段说明
 
         :return: The detail of this ImageBatchModerationResultBody.
-        :rtype: object
+        :rtype: ImageDetectionResultDetail
         """
         return self._detail
 
@@ -118,78 +109,33 @@ class ImageBatchModerationResultBody(object):
     def detail(self, detail):
         """Sets the detail of this ImageBatchModerationResultBody.
 
-        请参见[表2](https://support.huaweicloud.com/api-moderation/moderation_03_0019.html#moderation_03_0019__zh-cn_topic_0087142444_table663805019540)中detail字段说明
 
         :param detail: The detail of this ImageBatchModerationResultBody.
-        :type: object
+        :type: ImageDetectionResultDetail
         """
         self._detail = detail
 
     @property
-    def confidence(self):
-        """Gets the confidence of this ImageBatchModerationResultBody.
+    def category_suggestion(self):
+        """Gets the category_suggestion of this ImageBatchModerationResultBody.
 
-        请参见[表2](https://support.huaweicloud.com/api-moderation/moderation_03_0019.html#moderation_03_0019__zh-cn_topic_0087142444_table663805019540)中confidence字段说明。
+        具体每个场景的检测结果。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检 
 
-        :return: The confidence of this ImageBatchModerationResultBody.
-        :rtype: float
-        """
-        return self._confidence
-
-    @confidence.setter
-    def confidence(self, confidence):
-        """Sets the confidence of this ImageBatchModerationResultBody.
-
-        请参见[表2](https://support.huaweicloud.com/api-moderation/moderation_03_0019.html#moderation_03_0019__zh-cn_topic_0087142444_table663805019540)中confidence字段说明。
-
-        :param confidence: The confidence of this ImageBatchModerationResultBody.
-        :type: float
-        """
-        self._confidence = confidence
-
-    @property
-    def face_detail(self):
-        """Gets the face_detail of this ImageBatchModerationResultBody.
-
-        请参见[表2](https://support.huaweicloud.com/api-moderation/moderation_03_0019.html#moderation_03_0019__zh-cn_topic_0087142444_table663805019540)中face_detail字段说明。
-
-        :return: The face_detail of this ImageBatchModerationResultBody.
+        :return: The category_suggestion of this ImageBatchModerationResultBody.
         :rtype: object
         """
-        return self._face_detail
+        return self._category_suggestion
 
-    @face_detail.setter
-    def face_detail(self, face_detail):
-        """Sets the face_detail of this ImageBatchModerationResultBody.
+    @category_suggestion.setter
+    def category_suggestion(self, category_suggestion):
+        """Sets the category_suggestion of this ImageBatchModerationResultBody.
 
-        请参见[表2](https://support.huaweicloud.com/api-moderation/moderation_03_0019.html#moderation_03_0019__zh-cn_topic_0087142444_table663805019540)中face_detail字段说明。
+        具体每个场景的检测结果。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检 
 
-        :param face_detail: The face_detail of this ImageBatchModerationResultBody.
+        :param category_suggestion: The category_suggestion of this ImageBatchModerationResultBody.
         :type: object
         """
-        self._face_detail = face_detail
-
-    @property
-    def label(self):
-        """Gets the label of this ImageBatchModerationResultBody.
-
-        请参见[表2](https://support.huaweicloud.com/api-moderation/moderation_03_0019.html#moderation_03_0019__zh-cn_topic_0087142444_table663805019540)中label字段说明。
-
-        :return: The label of this ImageBatchModerationResultBody.
-        :rtype: str
-        """
-        return self._label
-
-    @label.setter
-    def label(self, label):
-        """Sets the label of this ImageBatchModerationResultBody.
-
-        请参见[表2](https://support.huaweicloud.com/api-moderation/moderation_03_0019.html#moderation_03_0019__zh-cn_topic_0087142444_table663805019540)中label字段说明。
-
-        :param label: The label of this ImageBatchModerationResultBody.
-        :type: str
-        """
-        self._label = label
+        self._category_suggestion = category_suggestion
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -211,7 +157,10 @@ class ImageBatchModerationResultBody(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

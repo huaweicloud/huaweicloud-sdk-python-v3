@@ -23,7 +23,10 @@ from huaweicloudsdkcore.signer import signer
 
 
 class Credentials:
-    def sign_request(self, request):
+    def get_update_path_params(self):
+        pass
+
+    def process_auth_request(self, request):
         pass
 
 
@@ -40,9 +43,17 @@ class BasicCredentials(Credentials):
         self.project_id = project_id
         self.domain_id = domain_id
 
-    def sign_request(self, request):
+    def get_update_path_params(self):
+        path_params = {}
+        if self.project_id is not None:
+            path_params["project_id"] = self.project_id
+        if self.domain_id is not None:
+            path_params["domain_id"] = self.domain_id
+        return path_params
+
+    def process_auth_request(self, request):
         if self.project_id is not None:
             request.header_params["X-Project-Id"] = self.project_id
         if self.domain_id is not None:
-            request.header_params["X-Domain-Id"] = self.project_id
+            request.header_params["X-Domain-Id"] = self.domain_id
         return signer.Signer(self).sign(request)

@@ -17,49 +17,27 @@ class KeystoneCheckDomainPermissionForGroupRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
-        'domain_id': 'str',
         'group_id': 'str',
         'role_id': 'str'
     }
 
     attribute_map = {
-        'domain_id': 'domain_id',
         'group_id': 'group_id',
         'role_id': 'role_id'
     }
 
-    def __init__(self, domain_id=None, group_id=None, role_id=None):  # noqa: E501
+    def __init__(self, group_id=None, role_id=None):  # noqa: E501
         """KeystoneCheckDomainPermissionForGroupRequest - a model defined in huaweicloud sdk"""
 
-        self._domain_id = None
         self._group_id = None
         self._role_id = None
         self.discriminator = None
 
-        self.domain_id = domain_id
         self.group_id = group_id
         self.role_id = role_id
-
-    @property
-    def domain_id(self):
-        """Gets the domain_id of this KeystoneCheckDomainPermissionForGroupRequest.
-
-
-        :return: The domain_id of this KeystoneCheckDomainPermissionForGroupRequest.
-        :rtype: str
-        """
-        return self._domain_id
-
-    @domain_id.setter
-    def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneCheckDomainPermissionForGroupRequest.
-
-
-        :param domain_id: The domain_id of this KeystoneCheckDomainPermissionForGroupRequest.
-        :type: str
-        """
-        self._domain_id = domain_id
 
     @property
     def group_id(self):
@@ -121,7 +99,10 @@ class KeystoneCheckDomainPermissionForGroupRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

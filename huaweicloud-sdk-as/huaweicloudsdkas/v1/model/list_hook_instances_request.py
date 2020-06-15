@@ -17,6 +17,8 @@ class ListHookInstancesRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'scaling_group_id': 'str',
         'instance_id': 'str'
@@ -98,7 +100,10 @@ class ListHookInstancesRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

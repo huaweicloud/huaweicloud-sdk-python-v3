@@ -17,6 +17,8 @@ class AsyncInvokeFunctionRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'function_urn': 'str',
         'body': 'dict(str, object)'
@@ -100,7 +102,10 @@ class AsyncInvokeFunctionRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

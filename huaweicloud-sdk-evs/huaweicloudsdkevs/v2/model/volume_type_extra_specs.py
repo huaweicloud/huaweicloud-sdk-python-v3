@@ -17,6 +17,8 @@ class VolumeTypeExtraSpecs(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'reske_yavailability_zones': 'str',
         'availability_zone': 'str',
@@ -184,7 +186,10 @@ class VolumeTypeExtraSpecs(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

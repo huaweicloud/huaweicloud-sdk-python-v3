@@ -17,6 +17,8 @@ class PostPaidServerEip(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'iptype': 'str',
         'bandwidth': 'PostPaidServerEipBandwidth',
@@ -124,7 +126,10 @@ class PostPaidServerEip(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

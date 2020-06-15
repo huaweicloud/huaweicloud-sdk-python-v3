@@ -17,6 +17,8 @@ class BatchUpdateMembersRequestBody(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'images': 'list[str]',
         'project_id': 'str',
@@ -154,7 +156,10 @@ class BatchUpdateMembersRequestBody(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

@@ -6,7 +6,6 @@ import datetime
 import re
 import importlib
 
-# python 2 and python 3 compatibility library
 import six
 
 from huaweicloudsdkcore.client import Client
@@ -104,7 +103,8 @@ class ClassroomClient(Client):
             post_params=form_params,
             response_type='ListClassroomMembersResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_classrooms(self, request):
         """获取当前用户的课堂列表
@@ -168,7 +168,8 @@ class ClassroomClient(Client):
             post_params=form_params,
             response_type='ListClassroomsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_classroom_detail(self, request):
         """根据课堂ID获取指定课堂的详细信息
@@ -228,7 +229,8 @@ class ClassroomClient(Client):
             post_params=form_params,
             response_type='ShowClassroomDetailResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
     def list_classroom_member_jobs(self, request):
@@ -295,7 +297,8 @@ class ClassroomClient(Client):
             post_params=form_params,
             response_type='ListClassroomMemberJobsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_jobs(self, request):
         """查询指定课堂下的作业列表信息
@@ -361,7 +364,8 @@ class ClassroomClient(Client):
             post_params=form_params,
             response_type='ListJobsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_member_job_records(self, request):
         """查询学生函数习题提交记录信息
@@ -429,7 +433,8 @@ class ClassroomClient(Client):
             post_params=form_params,
             response_type='ListMemberJobRecordsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_job_detail(self, request):
         """根据作业ID，查询指定作业的信息
@@ -489,7 +494,8 @@ class ClassroomClient(Client):
             post_params=form_params,
             response_type='ShowJobDetailResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_job_exercises(self, request):
         """查询指定作业下的习题信息
@@ -557,13 +563,13 @@ class ClassroomClient(Client):
             post_params=form_params,
             response_type='ShowJobExercisesResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method,
-                 path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None,
-                 response_type=None, auth_settings=None,  collection_formats=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
+                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
+                 request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -584,4 +590,4 @@ class ClassroomClient(Client):
         """
         return self.do_http_request(method, resource_path, path_params,
                                     query_params, header_params, body, post_params,
-                                    response_type, collection_formats)
+                                    response_type, collection_formats, request_type)

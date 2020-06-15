@@ -17,27 +17,24 @@ class KeystoneListPermissionsRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
-        'name': 'str',
-        'domain_id': 'str'
+        'name': 'str'
     }
 
     attribute_map = {
-        'name': 'name',
-        'domain_id': 'domain_id'
+        'name': 'name'
     }
 
-    def __init__(self, name=None, domain_id=None):  # noqa: E501
+    def __init__(self, name=None):  # noqa: E501
         """KeystoneListPermissionsRequest - a model defined in huaweicloud sdk"""
 
         self._name = None
-        self._domain_id = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
-        if domain_id is not None:
-            self.domain_id = domain_id
 
     @property
     def name(self):
@@ -59,26 +56,6 @@ class KeystoneListPermissionsRequest(object):
         """
         self._name = name
 
-    @property
-    def domain_id(self):
-        """Gets the domain_id of this KeystoneListPermissionsRequest.
-
-
-        :return: The domain_id of this KeystoneListPermissionsRequest.
-        :rtype: str
-        """
-        return self._domain_id
-
-    @domain_id.setter
-    def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneListPermissionsRequest.
-
-
-        :param domain_id: The domain_id of this KeystoneListPermissionsRequest.
-        :type: str
-        """
-        self._domain_id = domain_id
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -99,7 +76,10 @@ class KeystoneListPermissionsRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

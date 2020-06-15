@@ -17,6 +17,8 @@ class ListMetricsRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'dim0': 'str',
         'dim1': 'str',
@@ -249,7 +251,10 @@ class ListMetricsRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

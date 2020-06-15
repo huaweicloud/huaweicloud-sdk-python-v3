@@ -6,7 +6,6 @@ import datetime
 import re
 import importlib
 
-# python 2 and python 3 compatibility library
 import six
 
 from huaweicloudsdkcore.client import Client
@@ -98,7 +97,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def complete_lifecycle_action(self, request):
         """伸缩实例生命周期回调
@@ -160,7 +160,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_lify_cycle_hook(self, request):
         """创建生命周期挂钩
@@ -224,7 +225,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='CreateLifyCycleHookResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_scaling_config(self, request):
         """创建弹性伸缩配置
@@ -286,7 +288,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='CreateScalingConfigResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_scaling_group(self, request):
         """创建弹性伸缩组
@@ -348,7 +351,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='CreateScalingGroupResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_scaling_notification(self, request):
         """配置伸缩组通知
@@ -412,7 +416,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='CreateScalingNotificationResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_scaling_policy(self, request):
         """创建弹性伸缩策略
@@ -474,7 +479,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='CreateScalingPolicyResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_scaling_tags(self, request):
         """创建标签
@@ -538,7 +544,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_lifecycle_hook(self, request):
         """删除生命周期挂钩
@@ -598,7 +605,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_scaling_config(self, request):
         """删除弹性伸缩配置
@@ -656,7 +664,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_scaling_group(self, request):
         """删除弹性伸缩组
@@ -716,7 +725,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_scaling_instance(self, request):
         """移出弹性伸缩组实例
@@ -776,7 +786,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_scaling_notification(self, request):
         """删除伸缩组通知
@@ -836,7 +847,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_scaling_policy(self, request):
         """删除弹性伸缩策略
@@ -894,7 +906,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_scaling_tags(self, request):
         """删除标签
@@ -958,7 +971,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def enable_or_disable_scaling_group(self, request):
         """启用或停止弹性伸缩组
@@ -1020,7 +1034,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def execute_scaling_policy(self, request):
         """执行或启用或停止弹性伸缩策略。
@@ -1082,7 +1097,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_hook_instances(self, request):
         """查询伸缩实例挂起信息
@@ -1144,7 +1160,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ListHookInstancesResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_life_cycle_hooks(self, request):
         """查询生命周期挂钩列表
@@ -1204,7 +1221,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ListLifeCycleHooksResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_resource_instances(self, request):
         """查询资源实例
@@ -1268,7 +1286,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ListResourceInstancesResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_scaling_activity_logs(self, request):
         """查询伸缩活动日志
@@ -1336,7 +1355,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ListScalingActivityLogsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_scaling_configs(self, request):
         """查询弹性伸缩配置列表
@@ -1402,7 +1422,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ListScalingConfigsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_scaling_groups(self, request):
         """查询弹性伸缩组列表
@@ -1470,7 +1491,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ListScalingGroupsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_scaling_instances(self, request):
         """查询弹性伸缩组中的实例列表
@@ -1540,7 +1562,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ListScalingInstancesResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_scaling_notifications(self, request):
         """查询伸缩组通知列表
@@ -1600,7 +1623,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ListScalingNotificationsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_scaling_policies(self, request):
         """查询弹性伸缩策略列表
@@ -1670,7 +1694,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ListScalingPoliciesResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_scaling_policy_execute_logs(self, request):
         """查询策略执行日志
@@ -1746,7 +1771,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ListScalingPolicyExecuteLogsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_scaling_tag_infos_by_resource_id(self, request):
         """查询资源标签
@@ -1808,7 +1834,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ListScalingTagInfosByResourceIdResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_scaling_tag_infos_by_tenant_id(self, request):
         """查询标签
@@ -1868,7 +1895,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ListScalingTagInfosByTenantIdResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_life_cycle_hook(self, request):
         """查询生命周期挂钩详情
@@ -1930,7 +1958,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ShowLifeCycleHookResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_policy_and_instance_quota(self, request):
         """查询弹性伸缩策略和伸缩实例配额
@@ -1990,7 +2019,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ShowPolicyAndInstanceQuotaResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_resource_quota(self, request):
         """查询配额
@@ -2048,7 +2078,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ShowResourceQuotaResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_scaling_config(self, request):
         """查询弹性伸缩配置详情
@@ -2108,7 +2139,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ShowScalingConfigResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_scaling_group(self, request):
         """查询弹性伸缩组详情
@@ -2168,7 +2200,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ShowScalingGroupResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_scaling_policy(self, request):
         """查询弹性伸缩策略详情
@@ -2228,7 +2261,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='ShowScalingPolicyResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def update_life_cycle_hook(self, request):
         """修改生命周期挂钩
@@ -2294,7 +2328,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='UpdateLifeCycleHookResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def update_scaling_group(self, request):
         """修改弹性伸缩组
@@ -2358,7 +2393,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type='UpdateScalingGroupResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def update_scaling_group_instance(self, request):
         """批量操作实例
@@ -2420,7 +2456,8 @@ class AsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def update_scaling_policy(self, request):
         """修改弹性伸缩策略
@@ -2484,13 +2521,13 @@ class AsClient(Client):
             post_params=form_params,
             response_type='UpdateScalingPolicyResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method,
-                 path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None,
-                 response_type=None, auth_settings=None,  collection_formats=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
+                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
+                 request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -2511,4 +2548,4 @@ class AsClient(Client):
         """
         return self.do_http_request(method, resource_path, path_params,
                                     query_params, header_params, body, post_params,
-                                    response_type, collection_formats)
+                                    response_type, collection_formats, request_type)

@@ -17,51 +17,29 @@ class ListAgenciesRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
-        'domain_id': 'str',
         'trust_domain_id': 'str',
         'name': 'str'
     }
 
     attribute_map = {
-        'domain_id': 'domain_id',
         'trust_domain_id': 'trust_domain_id',
         'name': 'name'
     }
 
-    def __init__(self, domain_id=None, trust_domain_id=None, name=None):  # noqa: E501
+    def __init__(self, trust_domain_id=None, name=None):  # noqa: E501
         """ListAgenciesRequest - a model defined in huaweicloud sdk"""
 
-        self._domain_id = None
         self._trust_domain_id = None
         self._name = None
         self.discriminator = None
 
-        self.domain_id = domain_id
         if trust_domain_id is not None:
             self.trust_domain_id = trust_domain_id
         if name is not None:
             self.name = name
-
-    @property
-    def domain_id(self):
-        """Gets the domain_id of this ListAgenciesRequest.
-
-
-        :return: The domain_id of this ListAgenciesRequest.
-        :rtype: str
-        """
-        return self._domain_id
-
-    @domain_id.setter
-    def domain_id(self, domain_id):
-        """Sets the domain_id of this ListAgenciesRequest.
-
-
-        :param domain_id: The domain_id of this ListAgenciesRequest.
-        :type: str
-        """
-        self._domain_id = domain_id
 
     @property
     def trust_domain_id(self):
@@ -123,7 +101,10 @@ class ListAgenciesRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

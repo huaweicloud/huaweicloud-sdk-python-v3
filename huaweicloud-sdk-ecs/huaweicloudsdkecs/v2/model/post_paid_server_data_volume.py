@@ -17,6 +17,8 @@ class PostPaidServerDataVolume(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'volumetype': 'str',
         'size': 'int',
@@ -24,6 +26,8 @@ class PostPaidServerDataVolume(object):
         'multiattach': 'bool',
         'hwpassthrough': 'bool',
         'extendparam': 'PostPaidServerDataVolumeExtendParam',
+        'cluster_type': 'str',
+        'cluster_id': 'str',
         'metadata': 'PostPaidServerDataVolumeMetadata',
         'data_image_id': 'str'
     }
@@ -35,11 +39,13 @@ class PostPaidServerDataVolume(object):
         'multiattach': 'multiattach',
         'hwpassthrough': 'hw:passthrough',
         'extendparam': 'extendparam',
+        'cluster_type': 'cluster_type',
+        'cluster_id': 'cluster_id',
         'metadata': 'metadata',
         'data_image_id': 'data_image_id'
     }
 
-    def __init__(self, volumetype=None, size=None, shareable=False, multiattach=False, hwpassthrough=False, extendparam=None, metadata=None, data_image_id=None):  # noqa: E501
+    def __init__(self, volumetype=None, size=None, shareable=False, multiattach=False, hwpassthrough=False, extendparam=None, cluster_type=None, cluster_id=None, metadata=None, data_image_id=None):  # noqa: E501
         """PostPaidServerDataVolume - a model defined in huaweicloud sdk"""
 
         self._volumetype = None
@@ -48,6 +54,8 @@ class PostPaidServerDataVolume(object):
         self._multiattach = None
         self._hwpassthrough = None
         self._extendparam = None
+        self._cluster_type = None
+        self._cluster_id = None
         self._metadata = None
         self._data_image_id = None
         self.discriminator = None
@@ -62,6 +70,10 @@ class PostPaidServerDataVolume(object):
             self.hwpassthrough = hwpassthrough
         if extendparam is not None:
             self.extendparam = extendparam
+        if cluster_type is not None:
+            self.cluster_type = cluster_type
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
         if metadata is not None:
             self.metadata = metadata
         if data_image_id is not None:
@@ -198,6 +210,50 @@ class PostPaidServerDataVolume(object):
         self._extendparam = extendparam
 
     @property
+    def cluster_type(self):
+        """Gets the cluster_type of this PostPaidServerDataVolume.
+
+        云服务器数据盘对应的磁盘存储类型。 磁盘存储类型枚举值： DSS：专属存储类型
+
+        :return: The cluster_type of this PostPaidServerDataVolume.
+        :rtype: str
+        """
+        return self._cluster_type
+
+    @cluster_type.setter
+    def cluster_type(self, cluster_type):
+        """Sets the cluster_type of this PostPaidServerDataVolume.
+
+        云服务器数据盘对应的磁盘存储类型。 磁盘存储类型枚举值： DSS：专属存储类型
+
+        :param cluster_type: The cluster_type of this PostPaidServerDataVolume.
+        :type: str
+        """
+        self._cluster_type = cluster_type
+
+    @property
+    def cluster_id(self):
+        """Gets the cluster_id of this PostPaidServerDataVolume.
+
+        云服务器数据盘对应的存储池的ID。
+
+        :return: The cluster_id of this PostPaidServerDataVolume.
+        :rtype: str
+        """
+        return self._cluster_id
+
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        """Sets the cluster_id of this PostPaidServerDataVolume.
+
+        云服务器数据盘对应的存储池的ID。
+
+        :param cluster_id: The cluster_id of this PostPaidServerDataVolume.
+        :type: str
+        """
+        self._cluster_id = cluster_id
+
+    @property
     def metadata(self):
         """Gets the metadata of this PostPaidServerDataVolume.
 
@@ -259,7 +315,10 @@ class PostPaidServerDataVolume(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

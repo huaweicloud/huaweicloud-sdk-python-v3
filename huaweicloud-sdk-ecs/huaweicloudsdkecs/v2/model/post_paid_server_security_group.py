@@ -17,6 +17,8 @@ class PostPaidServerSecurityGroup(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'id': 'str'
     }
@@ -31,7 +33,8 @@ class PostPaidServerSecurityGroup(object):
         self._id = None
         self.discriminator = None
 
-        self.id = id
+        if id is not None:
+            self.id = id
 
     @property
     def id(self):
@@ -75,7 +78,10 @@ class PostPaidServerSecurityGroup(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

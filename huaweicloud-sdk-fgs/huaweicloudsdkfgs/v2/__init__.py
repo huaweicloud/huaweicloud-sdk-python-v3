@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 # import FgsClient
 from huaweicloudsdkfgs.v2.fgs_client import FgsClient
+from huaweicloudsdkfgs.v2.fgs_async_client import FgsAsyncClient
 # import models into sdk package
 from huaweicloudsdkfgs.v2.model.async_invoke_function_request import AsyncInvokeFunctionRequest
 from huaweicloudsdkfgs.v2.model.async_invoke_function_response import AsyncInvokeFunctionResponse

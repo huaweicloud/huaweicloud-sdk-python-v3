@@ -17,6 +17,8 @@ class CreateEventsResponseBody(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'event_id': 'str',
         'event_name': 'str'
@@ -101,7 +103,10 @@ class CreateEventsResponseBody(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

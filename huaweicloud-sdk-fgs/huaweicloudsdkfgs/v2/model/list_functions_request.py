@@ -17,6 +17,8 @@ class ListFunctionsRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'marker': 'str',
         'maxitems': 'str'
@@ -99,7 +101,10 @@ class ListFunctionsRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

@@ -17,6 +17,8 @@ class LbaasListeners(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'pool_id': 'str',
         'protocol_port': 'int',
@@ -128,7 +130,10 @@ class LbaasListeners(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

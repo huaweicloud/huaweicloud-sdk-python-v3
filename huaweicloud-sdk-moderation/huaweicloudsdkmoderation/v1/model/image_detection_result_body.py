@@ -17,8 +17,10 @@ class ImageDetectionResultBody(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
-        'detail': 'object',
+        'detail': 'ImageDetectionResultDetail',
         'suggestion': 'str',
         'category_suggestion': 'object'
     }
@@ -48,10 +50,9 @@ class ImageDetectionResultBody(object):
     def detail(self):
         """Gets the detail of this ImageDetectionResultBody.
 
-        针对选定的每个检测场景列出结果列表，politics为涉政敏感人物检测结果，terrorism为涉政暴恐检测结果，porn为涉黄检测结果。如果检测场景中的最高置信度也未达到threshold则结果列表为空。 
 
         :return: The detail of this ImageDetectionResultBody.
-        :rtype: object
+        :rtype: ImageDetectionResultDetail
         """
         return self._detail
 
@@ -59,10 +60,9 @@ class ImageDetectionResultBody(object):
     def detail(self, detail):
         """Sets the detail of this ImageDetectionResultBody.
 
-        针对选定的每个检测场景列出结果列表，politics为涉政敏感人物检测结果，terrorism为涉政暴恐检测结果，porn为涉黄检测结果。如果检测场景中的最高置信度也未达到threshold则结果列表为空。 
 
         :param detail: The detail of this ImageDetectionResultBody.
-        :type: object
+        :type: ImageDetectionResultDetail
         """
         self._detail = detail
 
@@ -130,7 +130,10 @@ class ImageDetectionResultBody(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

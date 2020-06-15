@@ -18,9 +18,35 @@
  under the LICENSE.
 """
 
+from requests.exceptions import ConnectionError
+from urllib3.exceptions import SSLError, NewConnectionError
+
+from huaweicloudsdkcore.exceptions import exceptions
+
 
 class SdkResponse:
     def __init__(self, code, headers, body):
         self.status_code = code
         self.header_params = headers
         self.body = body
+
+
+class FutureSdkResponse:
+    def __init__(self, future, logger):
+        self.__future = future
+        self.__logger = logger
+
+    def result(self):
+        try:
+            response = self.__future.result().data
+        except ConnectionError as connectionError:
+            for each in connectionError.args:
+                if isinstance(each.reason, SSLError):
+                    self.__logger.error("Sync SslHandShakeException occurred. %s" % str(each.reason))
+                    raise exceptions.SslHandShakeException(str(each.reason))
+                if isinstance(each.reason, NewConnectionError):
+                    self.__logger.error("Sync ConnectionException occurred. %s" % str(each.reason))
+                    raise exceptions.ConnectionException(str(each.reason))
+            self.__logger.error("ConnectionException occurred. %s" % str(connectionError))
+            raise exceptions.ConnectionException(str(connectionError))
+        return response

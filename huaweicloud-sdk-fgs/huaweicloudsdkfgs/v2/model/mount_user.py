@@ -17,6 +17,8 @@ class MountUser(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'user_id': 'str',
         'user_group_id': 'str'
@@ -101,7 +103,10 @@ class MountUser(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

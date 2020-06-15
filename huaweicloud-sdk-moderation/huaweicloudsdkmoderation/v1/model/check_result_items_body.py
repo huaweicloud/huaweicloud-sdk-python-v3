@@ -17,10 +17,12 @@ class CheckResultItemsBody(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'url': 'str',
         'suggestion': 'str',
-        'detail': 'CheckResultDetailBody'
+        'detail': 'ImageDetectionResultDetail'
     }
 
     attribute_map = {
@@ -94,7 +96,7 @@ class CheckResultItemsBody(object):
 
 
         :return: The detail of this CheckResultItemsBody.
-        :rtype: CheckResultDetailBody
+        :rtype: ImageDetectionResultDetail
         """
         return self._detail
 
@@ -104,7 +106,7 @@ class CheckResultItemsBody(object):
 
 
         :param detail: The detail of this CheckResultItemsBody.
-        :type: CheckResultDetailBody
+        :type: ImageDetectionResultDetail
         """
         self._detail = detail
 
@@ -128,7 +130,10 @@ class CheckResultItemsBody(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

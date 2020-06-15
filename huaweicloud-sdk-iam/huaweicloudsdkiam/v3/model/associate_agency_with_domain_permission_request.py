@@ -17,49 +17,27 @@ class AssociateAgencyWithDomainPermissionRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
-        'domain_id': 'str',
         'agency_id': 'str',
         'role_id': 'str'
     }
 
     attribute_map = {
-        'domain_id': 'domain_id',
         'agency_id': 'agency_id',
         'role_id': 'role_id'
     }
 
-    def __init__(self, domain_id=None, agency_id=None, role_id=None):  # noqa: E501
+    def __init__(self, agency_id=None, role_id=None):  # noqa: E501
         """AssociateAgencyWithDomainPermissionRequest - a model defined in huaweicloud sdk"""
 
-        self._domain_id = None
         self._agency_id = None
         self._role_id = None
         self.discriminator = None
 
-        self.domain_id = domain_id
         self.agency_id = agency_id
         self.role_id = role_id
-
-    @property
-    def domain_id(self):
-        """Gets the domain_id of this AssociateAgencyWithDomainPermissionRequest.
-
-
-        :return: The domain_id of this AssociateAgencyWithDomainPermissionRequest.
-        :rtype: str
-        """
-        return self._domain_id
-
-    @domain_id.setter
-    def domain_id(self, domain_id):
-        """Sets the domain_id of this AssociateAgencyWithDomainPermissionRequest.
-
-
-        :param domain_id: The domain_id of this AssociateAgencyWithDomainPermissionRequest.
-        :type: str
-        """
-        self._domain_id = domain_id
 
     @property
     def agency_id(self):
@@ -121,7 +99,10 @@ class AssociateAgencyWithDomainPermissionRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

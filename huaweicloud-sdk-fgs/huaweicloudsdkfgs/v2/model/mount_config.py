@@ -17,6 +17,8 @@ class MountConfig(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'mount_user': 'MountUser',
         'func_mounts': 'list[FuncMount]'
@@ -99,7 +101,10 @@ class MountConfig(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

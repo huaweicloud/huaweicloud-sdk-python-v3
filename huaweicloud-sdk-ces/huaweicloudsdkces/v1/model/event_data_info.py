@@ -17,6 +17,8 @@ class EventDataInfo(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'type': 'str',
         'timestamp': 'int',
@@ -127,7 +129,10 @@ class EventDataInfo(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

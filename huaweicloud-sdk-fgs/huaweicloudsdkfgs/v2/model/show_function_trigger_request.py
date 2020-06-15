@@ -17,6 +17,8 @@ class ShowFunctionTriggerRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'function_urn': 'str',
         'trigger_type_code': 'str',
@@ -121,7 +123,10 @@ class ShowFunctionTriggerRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

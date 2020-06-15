@@ -17,6 +17,8 @@ class ServerAddress(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'version': 'int',
         'addr': 'str',
@@ -182,7 +184,10 @@ class ServerAddress(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

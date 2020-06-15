@@ -17,22 +17,44 @@ class NovaCreateServersSchedulerHint(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
-        'group': 'str'
+        'group': 'str',
+        'different_host': 'list[str]',
+        'same_host': 'list[str]',
+        'cidr': 'str',
+        'build_near_host_ip': 'str'
     }
 
     attribute_map = {
-        'group': 'group'
+        'group': 'group',
+        'different_host': 'different_host',
+        'same_host': 'same_host',
+        'cidr': 'cidr',
+        'build_near_host_ip': 'build_near_host_ip'
     }
 
-    def __init__(self, group=None):  # noqa: E501
+    def __init__(self, group=None, different_host=None, same_host=None, cidr=None, build_near_host_ip=None):  # noqa: E501
         """NovaCreateServersSchedulerHint - a model defined in huaweicloud sdk"""
 
         self._group = None
+        self._different_host = None
+        self._same_host = None
+        self._cidr = None
+        self._build_near_host_ip = None
         self.discriminator = None
 
         if group is not None:
             self.group = group
+        if different_host is not None:
+            self.different_host = different_host
+        if same_host is not None:
+            self.same_host = same_host
+        if cidr is not None:
+            self.cidr = cidr
+        if build_near_host_ip is not None:
+            self.build_near_host_ip = build_near_host_ip
 
     @property
     def group(self):
@@ -56,6 +78,94 @@ class NovaCreateServersSchedulerHint(object):
         """
         self._group = group
 
+    @property
+    def different_host(self):
+        """Gets the different_host of this NovaCreateServersSchedulerHint.
+
+        与指定弹性云服务器满足反亲和性。   当前不支持该功能。
+
+        :return: The different_host of this NovaCreateServersSchedulerHint.
+        :rtype: list[str]
+        """
+        return self._different_host
+
+    @different_host.setter
+    def different_host(self, different_host):
+        """Sets the different_host of this NovaCreateServersSchedulerHint.
+
+        与指定弹性云服务器满足反亲和性。   当前不支持该功能。
+
+        :param different_host: The different_host of this NovaCreateServersSchedulerHint.
+        :type: list[str]
+        """
+        self._different_host = different_host
+
+    @property
+    def same_host(self):
+        """Gets the same_host of this NovaCreateServersSchedulerHint.
+
+        与指定的弹性云服务器满足亲和性。   当前不支持该功能。
+
+        :return: The same_host of this NovaCreateServersSchedulerHint.
+        :rtype: list[str]
+        """
+        return self._same_host
+
+    @same_host.setter
+    def same_host(self, same_host):
+        """Sets the same_host of this NovaCreateServersSchedulerHint.
+
+        与指定的弹性云服务器满足亲和性。   当前不支持该功能。
+
+        :param same_host: The same_host of this NovaCreateServersSchedulerHint.
+        :type: list[str]
+        """
+        self._same_host = same_host
+
+    @property
+    def cidr(self):
+        """Gets the cidr of this NovaCreateServersSchedulerHint.
+
+        将弹性云服务器scheduler到指定网段的host上，host网段的cidr。   当前不支持该功能。
+
+        :return: The cidr of this NovaCreateServersSchedulerHint.
+        :rtype: str
+        """
+        return self._cidr
+
+    @cidr.setter
+    def cidr(self, cidr):
+        """Sets the cidr of this NovaCreateServersSchedulerHint.
+
+        将弹性云服务器scheduler到指定网段的host上，host网段的cidr。   当前不支持该功能。
+
+        :param cidr: The cidr of this NovaCreateServersSchedulerHint.
+        :type: str
+        """
+        self._cidr = cidr
+
+    @property
+    def build_near_host_ip(self):
+        """Gets the build_near_host_ip of this NovaCreateServersSchedulerHint.
+
+        将弹性云服务器scheduler到指定网段的host上，host IP地址。   当前不支持该功能。
+
+        :return: The build_near_host_ip of this NovaCreateServersSchedulerHint.
+        :rtype: str
+        """
+        return self._build_near_host_ip
+
+    @build_near_host_ip.setter
+    def build_near_host_ip(self, build_near_host_ip):
+        """Sets the build_near_host_ip of this NovaCreateServersSchedulerHint.
+
+        将弹性云服务器scheduler到指定网段的host上，host IP地址。   当前不支持该功能。
+
+        :param build_near_host_ip: The build_near_host_ip of this NovaCreateServersSchedulerHint.
+        :type: str
+        """
+        self._build_near_host_ip = build_near_host_ip
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -76,7 +186,10 @@ class NovaCreateServersSchedulerHint(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

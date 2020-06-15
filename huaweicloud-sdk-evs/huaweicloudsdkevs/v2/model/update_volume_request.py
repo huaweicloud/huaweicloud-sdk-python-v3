@@ -17,6 +17,8 @@ class UpdateVolumeRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'volume_id': 'str',
         'body': 'UpdateVolumeRequestBody'
@@ -98,7 +100,10 @@ class UpdateVolumeRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

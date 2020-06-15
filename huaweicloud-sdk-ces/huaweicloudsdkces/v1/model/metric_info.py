@@ -17,6 +17,8 @@ class MetricInfo(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'dimensions': 'list[MetricsDimension]',
         'metric_name': 'str',
@@ -154,7 +156,10 @@ class MetricInfo(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

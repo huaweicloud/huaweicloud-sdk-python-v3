@@ -17,6 +17,8 @@ class QuotaList(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'backup_gigabytes': 'QuotaDetail',
         'backups': 'QuotaDetail',
@@ -420,7 +422,10 @@ class QuotaList(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

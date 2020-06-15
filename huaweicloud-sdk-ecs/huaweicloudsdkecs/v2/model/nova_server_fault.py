@@ -17,24 +17,29 @@ class NovaServerFault(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'code': 'int',
         'created': 'str',
-        'message': 'str'
+        'message': 'str',
+        'details': 'str'
     }
 
     attribute_map = {
         'code': 'code',
         'created': 'created',
-        'message': 'message'
+        'message': 'message',
+        'details': 'details'
     }
 
-    def __init__(self, code=None, created=None, message=None):  # noqa: E501
+    def __init__(self, code=None, created=None, message=None, details=None):  # noqa: E501
         """NovaServerFault - a model defined in huaweicloud sdk"""
 
         self._code = None
         self._created = None
         self._message = None
+        self._details = None
         self.discriminator = None
 
         if code is not None:
@@ -43,6 +48,8 @@ class NovaServerFault(object):
             self.created = created
         if message is not None:
             self.message = message
+        if details is not None:
+            self.details = details
 
     @property
     def code(self):
@@ -110,6 +117,28 @@ class NovaServerFault(object):
         """
         self._message = message
 
+    @property
+    def details(self):
+        """Gets the details of this NovaServerFault.
+
+        异常详情信息。
+
+        :return: The details of this NovaServerFault.
+        :rtype: str
+        """
+        return self._details
+
+    @details.setter
+    def details(self, details):
+        """Sets the details of this NovaServerFault.
+
+        异常详情信息。
+
+        :param details: The details of this NovaServerFault.
+        :type: str
+        """
+        self._details = details
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -130,7 +159,10 @@ class NovaServerFault(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

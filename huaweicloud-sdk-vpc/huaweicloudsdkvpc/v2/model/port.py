@@ -17,6 +17,8 @@ class Port(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'id': 'str',
         'name': 'str',
@@ -37,7 +39,8 @@ class Port(object):
         'bindingvif_details': 'object',
         'bindingprofile': 'object',
         'instance_id': 'str',
-        'instance_type': 'str'
+        'instance_type': 'str',
+        'port_security_enabled': 'bool'
     }
 
     attribute_map = {
@@ -60,10 +63,11 @@ class Port(object):
         'bindingvif_details': 'binding:vif_details',
         'bindingprofile': 'binding:profile',
         'instance_id': 'instance_id',
-        'instance_type': 'instance_type'
+        'instance_type': 'instance_type',
+        'port_security_enabled': 'port_security_enabled'
     }
 
-    def __init__(self, id=None, name=None, network_id=None, admin_state_up=None, mac_address=None, fixed_ips=None, device_id=None, device_owner=None, tenant_id=None, status=None, security_groups=None, allowed_address_pairs=None, extra_dhcp_opts=None, bindingvnic_type=None, dns_assignment=None, dns_name=None, bindingvif_details=None, bindingprofile=None, instance_id=None, instance_type=None):  # noqa: E501
+    def __init__(self, id=None, name=None, network_id=None, admin_state_up=None, mac_address=None, fixed_ips=None, device_id=None, device_owner=None, tenant_id=None, status=None, security_groups=None, allowed_address_pairs=None, extra_dhcp_opts=None, bindingvnic_type=None, dns_assignment=None, dns_name=None, bindingvif_details=None, bindingprofile=None, instance_id=None, instance_type=None, port_security_enabled=None):  # noqa: E501
         """Port - a model defined in huaweicloud sdk"""
 
         self._id = None
@@ -86,6 +90,7 @@ class Port(object):
         self._bindingprofile = None
         self._instance_id = None
         self._instance_type = None
+        self._port_security_enabled = None
         self.discriminator = None
 
         self.id = id
@@ -108,6 +113,7 @@ class Port(object):
         self.bindingprofile = bindingprofile
         self.instance_id = instance_id
         self.instance_type = instance_type
+        self.port_security_enabled = port_security_enabled
 
     @property
     def id(self):
@@ -549,6 +555,28 @@ class Port(object):
         """
         self._instance_type = instance_type
 
+    @property
+    def port_security_enabled(self):
+        """Gets the port_security_enabled of this Port.
+
+        功能说明：端口安全使能标记，如果不使能则安全组和dhcp防欺骗不生效 取值范围：启用（true）或禁用（false）
+
+        :return: The port_security_enabled of this Port.
+        :rtype: bool
+        """
+        return self._port_security_enabled
+
+    @port_security_enabled.setter
+    def port_security_enabled(self, port_security_enabled):
+        """Sets the port_security_enabled of this Port.
+
+        功能说明：端口安全使能标记，如果不使能则安全组和dhcp防欺骗不生效 取值范围：启用（true）或禁用（false）
+
+        :param port_security_enabled: The port_security_enabled of this Port.
+        :type: bool
+        """
+        self._port_security_enabled = port_security_enabled
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -569,7 +597,10 @@ class Port(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

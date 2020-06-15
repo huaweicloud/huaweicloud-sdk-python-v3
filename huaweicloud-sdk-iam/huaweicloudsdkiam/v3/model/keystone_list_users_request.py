@@ -17,57 +17,35 @@ class KeystoneListUsersRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+    sensitive_list.append('password_expires_at')
+
     openapi_types = {
-        'domain_id': 'str',
         'enabled': 'bool',
         'name': 'str',
         'password_expires_at': 'str'
     }
 
     attribute_map = {
-        'domain_id': 'domain_id',
         'enabled': 'enabled',
         'name': 'name',
         'password_expires_at': 'password_expires_at'
     }
 
-    def __init__(self, domain_id=None, enabled=None, name=None, password_expires_at=None):  # noqa: E501
+    def __init__(self, enabled=None, name=None, password_expires_at=None):  # noqa: E501
         """KeystoneListUsersRequest - a model defined in huaweicloud sdk"""
 
-        self._domain_id = None
         self._enabled = None
         self._name = None
         self._password_expires_at = None
         self.discriminator = None
 
-        if domain_id is not None:
-            self.domain_id = domain_id
         if enabled is not None:
             self.enabled = enabled
         if name is not None:
             self.name = name
         if password_expires_at is not None:
             self.password_expires_at = password_expires_at
-
-    @property
-    def domain_id(self):
-        """Gets the domain_id of this KeystoneListUsersRequest.
-
-
-        :return: The domain_id of this KeystoneListUsersRequest.
-        :rtype: str
-        """
-        return self._domain_id
-
-    @domain_id.setter
-    def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneListUsersRequest.
-
-
-        :param domain_id: The domain_id of this KeystoneListUsersRequest.
-        :type: str
-        """
-        self._domain_id = domain_id
 
     @property
     def enabled(self):
@@ -149,7 +127,10 @@ class KeystoneListUsersRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

@@ -17,6 +17,8 @@ class CinderExportToImageRequestBody(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'os_volume_upload_image': 'CinderExportToImageOption'
     }
@@ -73,7 +75,10 @@ class CinderExportToImageRequestBody(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

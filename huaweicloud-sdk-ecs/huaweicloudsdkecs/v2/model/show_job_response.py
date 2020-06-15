@@ -17,10 +17,12 @@ class ShowJobResponse(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
-        'begin_time': 'datetime',
+        'begin_time': 'str',
         'code': 'str',
-        'end_time': 'datetime',
+        'end_time': 'str',
         'entities': 'JobEntities',
         'error_code': 'str',
         'fail_reason': 'str',
@@ -86,7 +88,7 @@ class ShowJobResponse(object):
         开始时间。
 
         :return: The begin_time of this ShowJobResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._begin_time
 
@@ -97,7 +99,7 @@ class ShowJobResponse(object):
         开始时间。
 
         :param begin_time: The begin_time of this ShowJobResponse.
-        :type: datetime
+        :type: str
         """
         self._begin_time = begin_time
 
@@ -130,7 +132,7 @@ class ShowJobResponse(object):
         结束时间。
 
         :return: The end_time of this ShowJobResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._end_time
 
@@ -141,7 +143,7 @@ class ShowJobResponse(object):
         结束时间。
 
         :param end_time: The end_time of this ShowJobResponse.
-        :type: datetime
+        :type: str
         """
         self._end_time = end_time
 
@@ -317,7 +319,10 @@ class ShowJobResponse(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 # import AsClient
 from huaweicloudsdkas.v1.as_client import AsClient
+from huaweicloudsdkas.v1.as_async_client import AsAsyncClient
 # import models into sdk package
 from huaweicloudsdkas.v1.model.all_quotas import AllQuotas
 from huaweicloudsdkas.v1.model.all_resources import AllResources

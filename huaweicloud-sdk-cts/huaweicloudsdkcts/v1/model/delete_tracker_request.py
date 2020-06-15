@@ -17,6 +17,8 @@ class DeleteTrackerRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'tracker_name': 'str'
     }
@@ -73,7 +75,10 @@ class DeleteTrackerRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

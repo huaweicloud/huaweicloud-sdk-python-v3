@@ -17,6 +17,8 @@ class ShowServerTagsResponse(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'tags': 'list[ServerTag]'
     }
@@ -76,7 +78,10 @@ class ShowServerTagsResponse(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

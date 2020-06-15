@@ -17,6 +17,8 @@ class ImageInfo(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'backup_id': 'str',
         'data_origin': 'str',
@@ -1422,7 +1424,10 @@ class ImageInfo(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

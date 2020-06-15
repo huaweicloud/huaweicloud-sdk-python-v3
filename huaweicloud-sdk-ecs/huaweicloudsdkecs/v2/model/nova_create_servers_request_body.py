@@ -17,6 +17,8 @@ class NovaCreateServersRequestBody(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'server': 'NovaCreateServersOption',
         'osscheduler_hints': 'NovaCreateServersSchedulerHint'
@@ -98,7 +100,10 @@ class NovaCreateServersRequestBody(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

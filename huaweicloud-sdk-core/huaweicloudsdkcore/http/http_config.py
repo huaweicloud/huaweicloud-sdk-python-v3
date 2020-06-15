@@ -20,92 +20,97 @@
 
 
 class HttpConfig:
-    def __init__(self):
-        self.proxy_protocol = None
-        self.proxy_host = None
-        self.proxy_port = None
-        self.proxy_user = None
-        self.proxy_password = None
-        self.ignore_ssl_verification = False
-        self.ssl_ca_cert = None
-        self.cert_file = None
-        self.key_file = None
-        self.assert_hostname = None
-        self.timeout = 3
-        self.preload_content = True
-        self.return_http_data_only = True
+    def __init__(self, proxy_protocol=None, proxy_host=None, proxy_port=None, proxy_user=None, proxy_password=None,
+                 ignore_ssl_verification=False, ssl_ca_cert=None, cert_file=None, key_file=None, timeout=(3, 10),
+                 preload_content=True, return_http_data_only=True, retry_times=0, pool_connections=1, pool_maxsize=1):
+        """
+        :param proxy_protocol(optional) : proxy protocol, http or https
+        :type proxy_protocol: str
+
+        :param proxy_host(optional) : hostname or ip address of proxy server
+        :type proxy_host: str
+
+        :param proxy_port(optional) : port of proxy server
+        :type proxy_port: str
+
+        :param proxy_user(optional) : user name used for proxy authentication
+        :type proxy_user: str
+
+        :param proxy_password(optional) : user name used for proxy authentication
+        :type proxy_password: str
+
+        :param ignore_ssl_verification: whether skip SSL certificate validation while sending https request,
+         default, value is False
+        :type ignore_ssl_verification: bool
+
+        :param ssl_ca_cert: (optional) a path to a CA bundle to use
+        :type ssl_ca_cert: str
+
+        :param cert_file: (optional) a path to ssl client cert file (.pem)
+        :type cert_file: str
+
+        :param key_file: (optional) a path to a  ssl client cert key file (.key)
+        :type key_file: str
+
+        :param timeout: (optional) seconds to wait for the server to send data before giving up,
+         as a float, or a :ref:`(connect timeout, read timeout) <timeouts>` tuple.
+        :type timeout: float or tuple
+
+        :param preload_content: whether deserialize http response to service module object,
+         default, value is true
+        :type preload_content: bool
+
+        :param return_http_data_only: whether return http response directly,
+         class:`Response <Response> of requests module` object,
+         take effect only when preload_content is false,
+         default, value is true
+        :type return_http_data_only: bool
+
+        :param retry_times: maximum number of retries each connection should attempt,
+         default, does not retry failed connections.
+        :type retry_times: int
+
+        :param pool_connections: number of urllib3 connection pools to cache,
+         default, value is 1
+        :type pool_connections: int
+
+        :param pool_maxsize: maximum number of connections to save in the pool，
+         default, value is 1
+        :type pool_maxsize: int
+        """
+        self.proxy_protocol = proxy_protocol
+        self.proxy_host = proxy_host
+        self.proxy_port = proxy_port
+        self.proxy_user = proxy_user
+        self.proxy_password = proxy_password
+
+        self.ignore_ssl_verification = ignore_ssl_verification
+
+        self.ssl_ca_cert = ssl_ca_cert
+        self.cert_file = cert_file
+        self.key_file = key_file
+
+        self.timeout = timeout
+        self.retry_times = retry_times
+        self.pool_connections = pool_connections
+        self.pool_maxsize = pool_maxsize
+
+        self.preload_content = preload_content
+        self.return_http_data_only = return_http_data_only
 
     def get_proxy(self):
         if self.proxy_host is None:
             return None
 
-        if self.proxy_port is not None:
-            return {
-                "http": "{}://{}:{}@{}:{}".format(
-                    self.proxy_protocol, self.proxy_user, self.proxy_password, self.proxy_host, self.proxy_port),
-                "https": "{}://{}:{}@{}:{}".format(
-                    self.proxy_protocol, self.proxy_user, self.proxy_password, self.proxy_host, self.proxy_port)
-            }
-        else:
-            return {
-                "http": "{}://{}:{}@{}".format(
-                    self.proxy_protocol, self.proxy_user, self.proxy_password, self.proxy_host),
-                "https": "{}://{}:{}@{}".format(
-                    self.proxy_protocol, self.proxy_user, self.proxy_password, self.proxy_host)
-            }
+        return {
+            "https": "%s://%s%s%s" % (
+                self.proxy_protocol,
+                "%s:%s@" % (self.proxy_user, self.proxy_password) if self.proxy_user is not None else "",
+                self.proxy_host,
+                ":%s" % self.proxy_port if self.proxy_port is not None else ""
+            )
+        }
 
     @staticmethod
     def get_default_config():
         return HttpConfig()
-
-    def with_proxy_protocol(self, protocol):
-        self.proxy_protocol = protocol
-        return self
-
-    def with_proxy_host(self, host):
-        self.proxy_host = host
-        return self
-
-    def with_proxy_port(self, port):
-        self.proxy_port = port
-        return self
-
-    def with_proxy_user(self, username):
-        self.proxy_user = username
-        return self
-
-    def with_proxy_password(self, password):
-        self.proxy_password = password
-        return self
-
-    def with_ignore_ssl_verification(self, ignore):
-        self.ignore_ssl_verification = ignore
-        return self
-
-    def with_ssl_ca_cert(self, ca_cert):
-        self.ssl_ca_cert = ca_cert
-        return self
-
-    def with_cert_file(self, cert_file):
-        self.cert_file = cert_file
-        return self
-
-    def with_key_file(self, key_file):
-        self.key_file = key_file
-        return self
-
-    def with_assert_hostname(self, assert_hostname):
-        self.assert_hostname = assert_hostname
-        return self
-
-    def with_timeout(self, timeout):
-        self.timeout = timeout
-        return self
-
-    def with_preload_content(self, preload_content):
-        self.preload_content = preload_content
-        return self
-
-    def with_return_http_data_only(self, return_http_data_only):
-        self.return_http_data_only = return_http_data_only
-        return self

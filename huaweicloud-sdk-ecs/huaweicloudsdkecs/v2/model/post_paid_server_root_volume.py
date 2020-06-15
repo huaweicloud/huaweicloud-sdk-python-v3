@@ -17,10 +17,14 @@ class PostPaidServerRootVolume(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'volumetype': 'str',
         'size': 'int',
         'hwpassthrough': 'bool',
+        'cluster_type': 'str',
+        'cluster_id': 'str',
         'extendparam': 'PostPaidServerRootVolumeExtendParam'
     }
 
@@ -28,15 +32,19 @@ class PostPaidServerRootVolume(object):
         'volumetype': 'volumetype',
         'size': 'size',
         'hwpassthrough': 'hw:passthrough',
+        'cluster_type': 'cluster_type',
+        'cluster_id': 'cluster_id',
         'extendparam': 'extendparam'
     }
 
-    def __init__(self, volumetype=None, size=None, hwpassthrough=False, extendparam=None):  # noqa: E501
+    def __init__(self, volumetype=None, size=None, hwpassthrough=False, cluster_type=None, cluster_id=None, extendparam=None):  # noqa: E501
         """PostPaidServerRootVolume - a model defined in huaweicloud sdk"""
 
         self._volumetype = None
         self._size = None
         self._hwpassthrough = None
+        self._cluster_type = None
+        self._cluster_id = None
         self._extendparam = None
         self.discriminator = None
 
@@ -45,6 +53,10 @@ class PostPaidServerRootVolume(object):
             self.size = size
         if hwpassthrough is not None:
             self.hwpassthrough = hwpassthrough
+        if cluster_type is not None:
+            self.cluster_type = cluster_type
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
         if extendparam is not None:
             self.extendparam = extendparam
 
@@ -115,6 +127,50 @@ class PostPaidServerRootVolume(object):
         self._hwpassthrough = hwpassthrough
 
     @property
+    def cluster_type(self):
+        """Gets the cluster_type of this PostPaidServerRootVolume.
+
+        云服务器系统盘对应的磁盘存储类型。 磁盘存储类型枚举值： DSS：专属存储类型
+
+        :return: The cluster_type of this PostPaidServerRootVolume.
+        :rtype: str
+        """
+        return self._cluster_type
+
+    @cluster_type.setter
+    def cluster_type(self, cluster_type):
+        """Sets the cluster_type of this PostPaidServerRootVolume.
+
+        云服务器系统盘对应的磁盘存储类型。 磁盘存储类型枚举值： DSS：专属存储类型
+
+        :param cluster_type: The cluster_type of this PostPaidServerRootVolume.
+        :type: str
+        """
+        self._cluster_type = cluster_type
+
+    @property
+    def cluster_id(self):
+        """Gets the cluster_id of this PostPaidServerRootVolume.
+
+        使用SDI规格创建虚拟机时请关注该参数，如果该参数值为true，说明创建的为scsi类型的卷
+
+        :return: The cluster_id of this PostPaidServerRootVolume.
+        :rtype: str
+        """
+        return self._cluster_id
+
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        """Sets the cluster_id of this PostPaidServerRootVolume.
+
+        使用SDI规格创建虚拟机时请关注该参数，如果该参数值为true，说明创建的为scsi类型的卷
+
+        :param cluster_id: The cluster_id of this PostPaidServerRootVolume.
+        :type: str
+        """
+        self._cluster_id = cluster_id
+
+    @property
     def extendparam(self):
         """Gets the extendparam of this PostPaidServerRootVolume.
 
@@ -154,7 +210,10 @@ class PostPaidServerRootVolume(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

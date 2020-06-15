@@ -17,8 +17,10 @@ class RunImageBatchModerationResponse(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
-        'result': 'ImageBatchModerationResultBody'
+        'result': 'list[ImageBatchModerationResultBody]'
     }
 
     attribute_map = {
@@ -38,9 +40,10 @@ class RunImageBatchModerationResponse(object):
     def result(self):
         """Gets the result of this RunImageBatchModerationResponse.
 
+        调用成功时表示调用结果。 调用失败时无此字段。 
 
         :return: The result of this RunImageBatchModerationResponse.
-        :rtype: ImageBatchModerationResultBody
+        :rtype: list[ImageBatchModerationResultBody]
         """
         return self._result
 
@@ -48,9 +51,10 @@ class RunImageBatchModerationResponse(object):
     def result(self, result):
         """Sets the result of this RunImageBatchModerationResponse.
 
+        调用成功时表示调用结果。 调用失败时无此字段。 
 
         :param result: The result of this RunImageBatchModerationResponse.
-        :type: ImageBatchModerationResultBody
+        :type: list[ImageBatchModerationResultBody]
         """
         self._result = result
 
@@ -74,7 +78,10 @@ class RunImageBatchModerationResponse(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

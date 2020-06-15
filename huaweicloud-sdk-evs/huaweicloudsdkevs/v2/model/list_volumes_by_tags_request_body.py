@@ -17,6 +17,8 @@ class ListVolumesByTagsRequestBody(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'action': 'str',
         'limit': 'int',
@@ -182,7 +184,10 @@ class ListVolumesByTagsRequestBody(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

@@ -17,47 +17,24 @@ class KeystoneListGroupsRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
-        'domain_id': 'str',
         'name': 'str'
     }
 
     attribute_map = {
-        'domain_id': 'domain_id',
         'name': 'name'
     }
 
-    def __init__(self, domain_id=None, name=None):  # noqa: E501
+    def __init__(self, name=None):  # noqa: E501
         """KeystoneListGroupsRequest - a model defined in huaweicloud sdk"""
 
-        self._domain_id = None
         self._name = None
         self.discriminator = None
 
-        if domain_id is not None:
-            self.domain_id = domain_id
         if name is not None:
             self.name = name
-
-    @property
-    def domain_id(self):
-        """Gets the domain_id of this KeystoneListGroupsRequest.
-
-
-        :return: The domain_id of this KeystoneListGroupsRequest.
-        :rtype: str
-        """
-        return self._domain_id
-
-    @domain_id.setter
-    def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneListGroupsRequest.
-
-
-        :param domain_id: The domain_id of this KeystoneListGroupsRequest.
-        :type: str
-        """
-        self._domain_id = domain_id
 
     @property
     def name(self):
@@ -99,7 +76,10 @@ class KeystoneListGroupsRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

@@ -17,6 +17,8 @@ class ObsInfo(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'bucket_name': 'str',
         'file_prefix_name': 'str'
@@ -103,7 +105,10 @@ class ObsInfo(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

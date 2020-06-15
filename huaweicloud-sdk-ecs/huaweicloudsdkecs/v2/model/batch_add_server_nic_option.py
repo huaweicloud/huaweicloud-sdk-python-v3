@@ -17,24 +17,32 @@ class BatchAddServerNicOption(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'subnet_id': 'str',
         'security_groups': 'list[ServerNicSecurityGroup]',
-        'ip_address': 'str'
+        'ip_address': 'str',
+        'ipv6_enable': 'bool',
+        'ipv6_bandwidth': 'Ipv6Bandwidth'
     }
 
     attribute_map = {
         'subnet_id': 'subnet_id',
         'security_groups': 'security_groups',
-        'ip_address': 'ip_address'
+        'ip_address': 'ip_address',
+        'ipv6_enable': 'ipv6_enable',
+        'ipv6_bandwidth': 'ipv6_bandwidth'
     }
 
-    def __init__(self, subnet_id=None, security_groups=None, ip_address=None):  # noqa: E501
+    def __init__(self, subnet_id=None, security_groups=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None):  # noqa: E501
         """BatchAddServerNicOption - a model defined in huaweicloud sdk"""
 
         self._subnet_id = None
         self._security_groups = None
         self._ip_address = None
+        self._ipv6_enable = None
+        self._ipv6_bandwidth = None
         self.discriminator = None
 
         self.subnet_id = subnet_id
@@ -42,6 +50,10 @@ class BatchAddServerNicOption(object):
             self.security_groups = security_groups
         if ip_address is not None:
             self.ip_address = ip_address
+        if ipv6_enable is not None:
+            self.ipv6_enable = ipv6_enable
+        if ipv6_bandwidth is not None:
+            self.ipv6_bandwidth = ipv6_bandwidth
 
     @property
     def subnet_id(self):
@@ -109,6 +121,48 @@ class BatchAddServerNicOption(object):
         """
         self._ip_address = ip_address
 
+    @property
+    def ipv6_enable(self):
+        """Gets the ipv6_enable of this BatchAddServerNicOption.
+
+        是否支持ipv6。  取值为true时，标识此网卡支持ipv6。
+
+        :return: The ipv6_enable of this BatchAddServerNicOption.
+        :rtype: bool
+        """
+        return self._ipv6_enable
+
+    @ipv6_enable.setter
+    def ipv6_enable(self, ipv6_enable):
+        """Sets the ipv6_enable of this BatchAddServerNicOption.
+
+        是否支持ipv6。  取值为true时，标识此网卡支持ipv6。
+
+        :param ipv6_enable: The ipv6_enable of this BatchAddServerNicOption.
+        :type: bool
+        """
+        self._ipv6_enable = ipv6_enable
+
+    @property
+    def ipv6_bandwidth(self):
+        """Gets the ipv6_bandwidth of this BatchAddServerNicOption.
+
+
+        :return: The ipv6_bandwidth of this BatchAddServerNicOption.
+        :rtype: Ipv6Bandwidth
+        """
+        return self._ipv6_bandwidth
+
+    @ipv6_bandwidth.setter
+    def ipv6_bandwidth(self, ipv6_bandwidth):
+        """Sets the ipv6_bandwidth of this BatchAddServerNicOption.
+
+
+        :param ipv6_bandwidth: The ipv6_bandwidth of this BatchAddServerNicOption.
+        :type: Ipv6Bandwidth
+        """
+        self._ipv6_bandwidth = ipv6_bandwidth
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -129,7 +183,10 @@ class BatchAddServerNicOption(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

@@ -17,6 +17,8 @@ class ShowTagsRequestBody(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'tags': 'list[TagsMultiValue]',
         'tags_any': 'list[TagsMultiValue]',
@@ -291,7 +293,10 @@ class ShowTagsRequestBody(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

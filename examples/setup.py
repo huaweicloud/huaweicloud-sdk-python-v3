@@ -21,11 +21,12 @@
 from setuptools import setup, find_packages
 
 NAME = "huaweicloudsdkexample"
-DESCRIPTION = "HuaweiCloud SDK Python Example"
+VERSION = "3.0.3-beta"
 AUTHOR = "HuaweiCloud SDK"
+AUTHOR_EMAIL = "hwcloudsdk@huawei.com"
 URL = "https://github.com/huaweicloud/huaweicloud-sdk-python-v3"
 
-VERSION = "3.0.2-beta"
+DESCRIPTION = "HuaweiCloud SDK Python Example"
 
 REQUIRES = [
     "huaweicloudsdkcore",
@@ -37,13 +38,14 @@ setup(
     version=VERSION,
     description=DESCRIPTION,
     author=AUTHOR,
+    author_email=AUTHOR_EMAIL,
     license="Apache LICENSE 2.0",
     url=URL,
     keywords=["huaweicloud", "sdk", "example"],
     packages=find_packages(exclude=["tests*"]),
     platforms=['any'],
     install_requires=REQUIRES,
-    classifiers=(
+    classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Apache Software License',
@@ -53,6 +55,6 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
-        'Topic :: Software Development',
-    )
+        'Topic :: Software Development'
+    ]
 )

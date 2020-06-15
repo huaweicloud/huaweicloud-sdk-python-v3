@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 # import ImageClient
 from huaweicloudsdkimage.v1.image_client import ImageClient
+from huaweicloudsdkimage.v1.image_async_client import ImageAsyncClient
 # import models into sdk package
 from huaweicloudsdkimage.v1.model.celebrity_recognition_req import CelebrityRecognitionReq
 from huaweicloudsdkimage.v1.model.celebrity_recognition_result_body import CelebrityRecognitionResultBody

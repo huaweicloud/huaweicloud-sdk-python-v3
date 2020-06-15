@@ -17,6 +17,8 @@ class ShowMetricDataResponse(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'datapoints': 'list[Datapoint]',
         'metric_name': 'str'
@@ -103,7 +105,10 @@ class ShowMetricDataResponse(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

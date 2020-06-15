@@ -17,6 +17,8 @@ class ListClassroomsRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'offset': 'int',
         'limit': 'int',
@@ -124,7 +126,10 @@ class ListClassroomsRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

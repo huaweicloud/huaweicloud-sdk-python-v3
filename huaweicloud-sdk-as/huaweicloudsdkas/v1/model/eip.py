@@ -17,6 +17,8 @@ class Eip(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'ip_type': 'str',
         'bandwidth': 'Bandwidth'
@@ -99,7 +101,10 @@ class Eip(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

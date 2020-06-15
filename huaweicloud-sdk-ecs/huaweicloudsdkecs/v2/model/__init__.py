@@ -46,6 +46,7 @@ from huaweicloudsdkecs.v2.model.flavor import Flavor
 from huaweicloudsdkecs.v2.model.flavor_extra_spec import FlavorExtraSpec
 from huaweicloudsdkecs.v2.model.flavor_link import FlavorLink
 from huaweicloudsdkecs.v2.model.interface_attachment import InterfaceAttachment
+from huaweicloudsdkecs.v2.model.ipv6_bandwidth import Ipv6Bandwidth
 from huaweicloudsdkecs.v2.model.job_entities import JobEntities
 from huaweicloudsdkecs.v2.model.list_flavors_request import ListFlavorsRequest
 from huaweicloudsdkecs.v2.model.list_flavors_response import ListFlavorsResponse
@@ -67,10 +68,6 @@ from huaweicloudsdkecs.v2.model.nova_link import NovaLink
 from huaweicloudsdkecs.v2.model.nova_list_servers_details_request import NovaListServersDetailsRequest
 from huaweicloudsdkecs.v2.model.nova_list_servers_details_response import NovaListServersDetailsResponse
 from huaweicloudsdkecs.v2.model.nova_network import NovaNetwork
-from huaweicloudsdkecs.v2.model.nova_security_group import NovaSecurityGroup
-from huaweicloudsdkecs.v2.model.nova_security_group_common_group import NovaSecurityGroupCommonGroup
-from huaweicloudsdkecs.v2.model.nova_security_group_common_ip_range import NovaSecurityGroupCommonIpRange
-from huaweicloudsdkecs.v2.model.nova_security_group_common_rule import NovaSecurityGroupCommonRule
 from huaweicloudsdkecs.v2.model.nova_server import NovaServer
 from huaweicloudsdkecs.v2.model.nova_server_block_device_mapping import NovaServerBlockDeviceMapping
 from huaweicloudsdkecs.v2.model.nova_server_fault import NovaServerFault

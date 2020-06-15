@@ -17,12 +17,14 @@ class NovaServer(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'name': 'str',
         'id': 'str',
         'status': 'str',
-        'created': 'datetime',
-        'updated': 'datetime',
+        'created': 'str',
+        'updated': 'str',
         'flavor': 'NovaServerFlavor',
         'image': 'NovaServerImage',
         'tenant_id': 'str',
@@ -31,7 +33,7 @@ class NovaServer(object):
         'metadata': 'dict(str, str)',
         'host_id': 'str',
         'addresses': 'dict(str, list[NovaNetwork])',
-        'security_groups': 'list[NovaSecurityGroup]',
+        'security_groups': 'list[NovaServerSecurityGroup]',
         'links': 'list[NovaLink]',
         'os_dc_fdisk_config': 'str',
         'os_ext_a_zavailability_zone': 'str',
@@ -280,7 +282,7 @@ class NovaServer(object):
         云服务器创建时间。 时间格式例如：2019-05-22T07:48:53Z
 
         :return: The created of this NovaServer.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created
 
@@ -291,7 +293,7 @@ class NovaServer(object):
         云服务器创建时间。 时间格式例如：2019-05-22T07:48:53Z
 
         :param created: The created of this NovaServer.
-        :type: datetime
+        :type: str
         """
         self._created = created
 
@@ -302,7 +304,7 @@ class NovaServer(object):
         云服务器上一次更新时间。时间格式例如：2019-05-22T07:48:53Z
 
         :return: The updated of this NovaServer.
-        :rtype: datetime
+        :rtype: str
         """
         return self._updated
 
@@ -313,7 +315,7 @@ class NovaServer(object):
         云服务器上一次更新时间。时间格式例如：2019-05-22T07:48:53Z
 
         :param updated: The updated of this NovaServer.
-        :type: datetime
+        :type: str
         """
         self._updated = updated
 
@@ -496,7 +498,7 @@ class NovaServer(object):
         云服务器所属安全组列表。
 
         :return: The security_groups of this NovaServer.
-        :rtype: list[NovaSecurityGroup]
+        :rtype: list[NovaServerSecurityGroup]
         """
         return self._security_groups
 
@@ -507,7 +509,7 @@ class NovaServer(object):
         云服务器所属安全组列表。
 
         :param security_groups: The security_groups of this NovaServer.
-        :type: list[NovaSecurityGroup]
+        :type: list[NovaServerSecurityGroup]
         """
         self._security_groups = security_groups
 
@@ -1145,7 +1147,10 @@ class NovaServer(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

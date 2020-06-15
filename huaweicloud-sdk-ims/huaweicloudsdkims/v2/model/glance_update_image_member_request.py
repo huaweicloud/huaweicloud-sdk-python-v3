@@ -17,6 +17,8 @@ class GlanceUpdateImageMemberRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'image_id': 'str',
         'member_id': 'str',
@@ -122,7 +124,10 @@ class GlanceUpdateImageMemberRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

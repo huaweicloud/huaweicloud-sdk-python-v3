@@ -6,7 +6,6 @@ import datetime
 import re
 import importlib
 
-# python 2 and python 3 compatibility library
 import six
 
 from huaweicloudsdkcore.client import Client
@@ -100,7 +99,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='BatchAddMembersResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def batch_delete_members(self, request):
         """批量删除镜像成员
@@ -162,7 +162,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='BatchDeleteMembersResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def batch_update_members(self, request):
         """批量更新镜像成员状态
@@ -224,7 +225,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='BatchUpdateMembersResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def copy_image_cross_region(self, request):
         """跨Region复制镜像
@@ -288,7 +290,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='CopyImageCrossRegionResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def copy_image_in_region(self, request):
         """Region内复制镜像
@@ -352,7 +355,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='CopyImageInRegionResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_data_image(self, request):
         """使用外部镜像文件制作数据镜像
@@ -414,7 +418,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='CreateDataImageResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_image(self, request):
         """制作镜像
@@ -476,7 +481,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='CreateImageResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_or_update_tags(self, request):
         """增加或修改标签
@@ -536,7 +542,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_whole_image(self, request):
         """制作整机镜像
@@ -598,7 +605,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='CreateWholeImageResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def export_image(self, request):
         """导出镜像
@@ -662,7 +670,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='ExportImageResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def import_image_quick(self, request):
         """镜像文件快速导入
@@ -724,7 +733,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='ImportImageQuickResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_images(self, request):
         """查询镜像列表
@@ -856,7 +866,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='ListImagesResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_os_versions(self, request):
         """查询镜像支持的OS列表
@@ -916,7 +927,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='list[ListOsVersionsResponseBody]',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_tags(self, request):
         """按条件查询租户镜像标签列表
@@ -1004,7 +1016,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='ListTagsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def register_image(self, request):
         """注册镜像
@@ -1068,7 +1081,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='RegisterImageResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_image_quota(self, request):
         """查询镜像配额
@@ -1126,7 +1140,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='ShowImageQuotaResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def update_image(self, request):
         """更新镜像信息
@@ -1190,7 +1205,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='UpdateImageResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
     def glance_add_image_member(self, request):
@@ -1255,7 +1271,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='GlanceAddImageMemberResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def glance_create_image_metadata(self, request):
         """创建镜像元数据（OpenStack原生）
@@ -1317,7 +1334,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='GlanceCreateImageMetadataResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def glance_create_tag(self, request):
         """增加标签（OpenStack原生）
@@ -1377,7 +1395,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def glance_delete_image(self, request):
         """删除镜像（OpenStack原生）
@@ -1439,7 +1458,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def glance_delete_image_member(self, request):
         """删除指定的镜像成员（OpenStack原生）
@@ -1499,7 +1519,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def glance_delete_tag(self, request):
         """删除标签（OpenStack原生）
@@ -1559,7 +1580,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def glance_list_image_member_schemas(self, request):
         """查询镜像成员列表视图（OpenStack原生）
@@ -1617,7 +1639,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='GlanceListImageMemberSchemasResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def glance_list_image_members(self, request):
         """获取镜像成员列表（OpenStack原生）
@@ -1677,7 +1700,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='GlanceListImageMembersResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def glance_list_image_schemas(self, request):
         """查询镜像列表视图（OpenStack原生）
@@ -1735,7 +1759,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='GlanceListImageSchemasResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def glance_list_images(self, request):
         """查询镜像列表（OpenStack原生）
@@ -1857,7 +1882,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='GlanceListImagesResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def glance_show_image(self, request):
         """查询镜像详情（OpenStack原生）
@@ -1917,7 +1943,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='GlanceShowImageResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def glance_show_image_member(self, request):
         """获取镜像成员详情（OpenStack原生）
@@ -1979,7 +2006,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='GlanceShowImageMemberResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def glance_show_image_member_schemas(self, request):
         """查询镜像成员视图（OpenStack原生）
@@ -2037,7 +2065,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='GlanceShowImageMemberSchemasResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def glance_show_image_schemas(self, request):
         """查询镜像视图（OpenStack原生）
@@ -2095,7 +2124,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='GlanceShowImageSchemasResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def glance_update_image(self, request):
         """更新镜像信息（OpenStack原生）
@@ -2159,7 +2189,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='GlanceUpdateImageResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def glance_update_image_member(self, request):
         """更新镜像成员状态（OpenStack原生）
@@ -2225,7 +2256,8 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='GlanceUpdateImageMemberResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
     def show_job(self, request):
@@ -2286,13 +2318,13 @@ class ImsClient(Client):
             post_params=form_params,
             response_type='ShowJobResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method,
-                 path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None,
-                 response_type=None, auth_settings=None,  collection_formats=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
+                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
+                 request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -2313,4 +2345,4 @@ class ImsClient(Client):
         """
         return self.do_http_request(method, resource_path, path_params,
                                     query_params, header_params, body, post_params,
-                                    response_type, collection_formats)
+                                    response_type, collection_formats, request_type)

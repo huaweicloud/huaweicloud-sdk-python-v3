@@ -17,6 +17,8 @@ class ShowClassroomDetailResponse(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'name': 'str',
         'description': 'str',
@@ -25,7 +27,7 @@ class ShowClassroomDetailResponse(object):
         'create_time': 'str',
         'update_time': 'str',
         'teacher': 'str',
-        'credit': 'str',
+        'credit': 'float',
         'start_time': 'str',
         'end_time': 'str',
         'role': 'str',
@@ -275,7 +277,7 @@ class ShowClassroomDetailResponse(object):
         课堂学分
 
         :return: The credit of this ShowClassroomDetailResponse.
-        :rtype: str
+        :rtype: float
         """
         return self._credit
 
@@ -286,7 +288,7 @@ class ShowClassroomDetailResponse(object):
         课堂学分
 
         :param credit: The credit of this ShowClassroomDetailResponse.
-        :type: str
+        :type: float
         """
         self._credit = credit
 
@@ -508,7 +510,10 @@ class ShowClassroomDetailResponse(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

@@ -17,11 +17,13 @@ class ClassroomCard(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'classroom_id': 'str',
         'name': 'str',
         'description': 'str',
-        'credit': 'str',
+        'credit': 'float',
         'status': 'str'
     }
 
@@ -122,7 +124,7 @@ class ClassroomCard(object):
         课堂学分
 
         :return: The credit of this ClassroomCard.
-        :rtype: str
+        :rtype: float
         """
         return self._credit
 
@@ -133,7 +135,7 @@ class ClassroomCard(object):
         课堂学分
 
         :param credit: The credit of this ClassroomCard.
-        :type: str
+        :type: float
         """
         self._credit = credit
 
@@ -179,7 +181,10 @@ class ClassroomCard(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

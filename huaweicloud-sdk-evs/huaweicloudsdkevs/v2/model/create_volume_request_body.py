@@ -17,6 +17,8 @@ class CreateVolumeRequestBody(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'bss_param': 'BssParamForCreateVolume',
         'volume': 'CreateVolumeOption'
@@ -98,7 +100,10 @@ class CreateVolumeRequestBody(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 # import CesClient
 from huaweicloudsdkces.v1.ces_client import CesClient
+from huaweicloudsdkces.v1.ces_async_client import CesAsyncClient
 # import models into sdk package
 from huaweicloudsdkces.v1.model.alarm_actions import AlarmActions
 from huaweicloudsdkces.v1.model.batch_list_metric_data_request import BatchListMetricDataRequest

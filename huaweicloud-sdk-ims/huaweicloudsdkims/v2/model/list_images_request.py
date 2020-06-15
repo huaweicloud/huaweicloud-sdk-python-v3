@@ -17,6 +17,8 @@ class ListImagesRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'imagetype': 'str',
         'isregistered': 'str',
@@ -974,7 +976,10 @@ class ListImagesRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

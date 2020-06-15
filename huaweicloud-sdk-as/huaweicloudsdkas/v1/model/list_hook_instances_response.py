@@ -17,6 +17,8 @@ class ListHookInstancesResponse(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'instance_hanging_info': 'list[InstanceHangingInfos]'
     }
@@ -76,7 +78,10 @@ class ListHookInstancesResponse(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

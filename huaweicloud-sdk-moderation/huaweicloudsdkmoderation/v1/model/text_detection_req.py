@@ -17,6 +17,8 @@ class TextDetectionReq(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'categories': 'list[str]',
         'items': 'list[TextDetectionItemsReq]'
@@ -102,7 +104,10 @@ class TextDetectionReq(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

@@ -17,6 +17,8 @@ class Lts(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'is_lts_enabled': 'bool',
         'log_group_name': 'str',
@@ -127,7 +129,10 @@ class Lts(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 # import ClassroomClient
 from huaweicloudsdkclassroom.v3.classroom_client import ClassroomClient
+from huaweicloudsdkclassroom.v3.classroom_async_client import ClassroomAsyncClient
 # import models into sdk package
 from huaweicloudsdkclassroom.v3.model.classroom_card import ClassroomCard
 from huaweicloudsdkclassroom.v3.model.classroom_member import ClassroomMember

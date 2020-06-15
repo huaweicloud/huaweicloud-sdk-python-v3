@@ -17,6 +17,8 @@ class ImportImageQuickRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'body': 'QuickImportImageByFileRequestBody'
     }
@@ -74,7 +76,10 @@ class ImportImageQuickRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

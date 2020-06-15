@@ -17,6 +17,8 @@ class FuncMount(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'mount_type': 'str',
         'mount_resource': 'str',
@@ -154,7 +156,10 @@ class FuncMount(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

@@ -17,6 +17,8 @@ class BatchMetricData(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'unit': 'str',
         'datapoints': 'list[Datapoint]',
@@ -182,7 +184,10 @@ class BatchMetricData(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

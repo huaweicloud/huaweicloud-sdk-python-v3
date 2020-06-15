@@ -4,6 +4,7 @@ from __future__ import absolute_import
 
 # import IamClient
 from huaweicloudsdkiam.v3.iam_client import IamClient
+from huaweicloudsdkiam.v3.iam_async_client import IamAsyncClient
 # import models into sdk package
 from huaweicloudsdkiam.v3.model.agency_auth import AgencyAuth
 from huaweicloudsdkiam.v3.model.agency_auth_identity import AgencyAuthIdentity

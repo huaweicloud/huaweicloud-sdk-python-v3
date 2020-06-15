@@ -6,7 +6,6 @@ import datetime
 import re
 import importlib
 
-# python 2 and python 3 compatibility library
 import six
 
 from huaweicloudsdkcore.client import Client
@@ -102,7 +101,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type='AddShardingNodeResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def batch_create_instance_tags(self, request):
         """批量添加指定实例的标签
@@ -164,7 +164,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def batch_delete_instance_tags(self, request):
         """批量删除指定实例的标签
@@ -226,7 +227,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_instance(self, request):
         """创建文档数据库实例，包括集群实例、副本集实例、以及单节点实例。
@@ -288,7 +290,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type='CreateInstanceResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_manual_backup(self, request):
         """创建数据库实例的手动备份
@@ -350,7 +353,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type='CreateManualBackupResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_instance(self, request):
         """删除数据库实例
@@ -410,7 +414,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type='DeleteInstanceResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_manual_backup(self, request):
         """删除数据库实例的手动备份
@@ -470,7 +475,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type='DeleteManualBackupResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_backups(self, request):
         """根据指定条件查询备份列表
@@ -544,7 +550,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type='ListBackupsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_datastore_versions(self, request):
         """查询数据库版本信息
@@ -604,7 +611,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type='ListDatastoreVersionsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_flavors(self, request):
         """查询指定条件下的所有实例规格信息
@@ -666,7 +674,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type='ListFlavorsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_instance_tags(self, request):
         """查询指定实例的标签信息
@@ -726,7 +735,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type='ListInstanceTagsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_instances(self, request):
         """根据指定条件查询实例列表
@@ -800,7 +810,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type='ListInstancesResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_instances_by_tags(self, request):
         """根据标签查询指定的数据库实例
@@ -862,7 +873,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type='ListInstancesByTagsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_project_tags(self, request):
         """查询指定project ID下实例的所有标签集合
@@ -920,7 +932,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type='ListProjectTagsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def resize_instance(self, request):
         """变更实例的规格
@@ -984,7 +997,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type='ResizeInstanceResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def resize_instance_volume(self, request):
         """扩容实例相关的存储容量大小
@@ -1048,7 +1062,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type='ResizeInstanceVolumeResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def restart_instance(self, request):
         """重启实例的数据库服务
@@ -1112,7 +1127,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type='RestartInstanceResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def set_backup_policy(self, request):
         """设置自动备份策略
@@ -1174,7 +1190,8 @@ class DdsClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_backup_policy(self, request):
         """查询自动备份策略
@@ -1234,13 +1251,13 @@ class DdsClient(Client):
             post_params=form_params,
             response_type='ShowBackupPolicyResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method,
-                 path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None,
-                 response_type=None, auth_settings=None,  collection_formats=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
+                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
+                 request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -1261,4 +1278,4 @@ class DdsClient(Client):
         """
         return self.do_http_request(method, resource_path, path_params,
                                     query_params, header_params, body, post_params,
-                                    response_type, collection_formats)
+                                    response_type, collection_formats, request_type)

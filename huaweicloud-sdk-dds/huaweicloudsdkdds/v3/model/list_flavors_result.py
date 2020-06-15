@@ -17,6 +17,8 @@ class ListFlavorsResult(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'engine_name': 'str',
         'type': 'str',
@@ -206,7 +208,10 @@ class ListFlavorsResult(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

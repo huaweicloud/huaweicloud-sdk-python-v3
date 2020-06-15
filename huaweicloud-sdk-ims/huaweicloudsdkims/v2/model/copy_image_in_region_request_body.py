@@ -17,6 +17,8 @@ class CopyImageInRegionRequestBody(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'cmk_id': 'str',
         'description': 'str',
@@ -156,7 +158,10 @@ class CopyImageInRegionRequestBody(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 

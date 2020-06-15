@@ -6,7 +6,6 @@ import datetime
 import re
 import importlib
 
-# python 2 and python 3 compatibility library
 import six
 
 from huaweicloudsdkcore.client import Client
@@ -100,7 +99,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='CreatePortResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_security_group(self, request):
         """创建安全组
@@ -162,7 +162,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='CreateSecurityGroupResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_security_group_rule(self, request):
         """创建安全组规则
@@ -224,7 +225,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='CreateSecurityGroupRuleResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def create_subnet(self, request):
         """创建子网
@@ -286,7 +288,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='CreateSubnetResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_port(self, request):
         """删除端口
@@ -344,7 +347,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_security_group(self, request):
         """删除安全组
@@ -402,7 +406,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_security_group_rule(self, request):
         """删除安全组规则
@@ -460,7 +465,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_subnet(self, request):
         """删除子网
@@ -520,7 +526,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_ports(self, request):
         """查询端口列表
@@ -602,7 +609,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='ListPortsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_security_group_rules(self, request):
         """查询安全组规则列表
@@ -666,7 +674,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='ListSecurityGroupRulesResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_security_groups(self, request):
         """查询安全组列表
@@ -732,7 +741,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='ListSecurityGroupsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_subnets(self, request):
         """查询子网列表
@@ -796,7 +806,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='ListSubnetsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_port(self, request):
         """查询端口
@@ -856,7 +867,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='ShowPortResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_quota(self, request):
         """查询配额
@@ -916,7 +928,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='ShowQuotaResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_security_group(self, request):
         """查询安全组
@@ -976,7 +989,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='ShowSecurityGroupResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_security_group_rule(self, request):
         """查询安全组规则
@@ -1036,7 +1050,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='ShowSecurityGroupRuleResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_subnet(self, request):
         """查询子网
@@ -1096,7 +1111,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='ShowSubnetResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def update_port(self, request):
         """更新端口
@@ -1160,7 +1176,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='UpdatePortResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def update_subnet(self, request):
         """更新子网
@@ -1226,7 +1243,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='UpdateSubnetResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
     def create_privateip(self, request):
@@ -1289,7 +1307,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='CreatePrivateipResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_privateip(self, request):
         """删除私有IP
@@ -1347,7 +1366,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_privateips(self, request):
         """查询私有IP列表
@@ -1411,7 +1431,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='ListPrivateipsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_privateip(self, request):
         """查询私有IP
@@ -1471,7 +1492,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='ShowPrivateipResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
     def create_vpc(self, request):
@@ -1534,7 +1556,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='CreateVpcResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def delete_vpc(self, request):
         """删除VPC
@@ -1592,7 +1615,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type=None,
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def list_vpcs(self, request):
         """查询VPC列表
@@ -1658,7 +1682,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='ListVpcsResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def show_vpc(self, request):
         """查询VPC
@@ -1718,7 +1743,8 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='ShowVpcResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
     def update_vpc(self, request):
         """更新VPC
@@ -1782,13 +1808,13 @@ class VpcClient(Client):
             post_params=form_params,
             response_type='UpdateVpcResponse',
             auth_settings=auth_settings,
-            collection_formats=collection_formats)
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method,
-                 path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None,
-                 response_type=None, auth_settings=None,  collection_formats=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
+                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
+                 request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -1809,4 +1835,4 @@ class VpcClient(Client):
         """
         return self.do_http_request(method, resource_path, path_params,
                                     query_params, header_params, body, post_params,
-                                    response_type, collection_formats)
+                                    response_type, collection_formats, request_type)

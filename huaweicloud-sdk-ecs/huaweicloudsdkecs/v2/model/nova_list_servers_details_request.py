@@ -17,6 +17,8 @@ class NovaListServersDetailsRequest(object):
                             and the value is json key in definition.
     """
 
+    sensitive_list = []
+
     openapi_types = {
         'open_stack_api_version': 'str',
         'changes_since': 'str',
@@ -374,7 +376,10 @@ class NovaListServersDetailsRequest(object):
                     value.items()
                 ))
             else:
-                result[attr] = value
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
 
         return result
 
