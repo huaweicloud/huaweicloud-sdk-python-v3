@@ -26,15 +26,19 @@ class QuotaList(object):
         'id': 'str',
         'snapshots': 'QuotaDetail',
         'volumes': 'QuotaDetail',
-        'volumes_ssd': 'QuotaDetail',
-        'volumes_sas': 'QuotaDetail',
-        'volumes_sata': 'QuotaDetail',
-        'gigabytes_ssd': 'QuotaDetail',
-        'gigabytes_sas': 'QuotaDetail',
         'gigabytes_sata': 'QuotaDetail',
-        'snapshots_ssd': 'QuotaDetail',
+        'snapshots_sata': 'QuotaDetail',
+        'volumes_sata': 'QuotaDetail',
+        'gigabytes_sas': 'QuotaDetail',
         'snapshots_sas': 'QuotaDetail',
-        'snapshots_sata': 'QuotaDetail'
+        'volumes_sas': 'QuotaDetail',
+        'gigabytes_ssd': 'QuotaDetail',
+        'snapshots_ssd': 'QuotaDetail',
+        'volumes_ssd': 'QuotaDetail',
+        'gigabytes_gpssd': 'QuotaDetail',
+        'snapshots_gpssd': 'QuotaDetail',
+        'volumes_gpssd': 'QuotaDetail',
+        'per_volume_gigabytes': 'QuotaDetail'
     }
 
     attribute_map = {
@@ -44,18 +48,22 @@ class QuotaList(object):
         'id': 'id',
         'snapshots': 'snapshots',
         'volumes': 'volumes',
-        'volumes_ssd': 'volumes_SSD',
-        'volumes_sas': 'volumes_SAS',
-        'volumes_sata': 'volumes_SATA',
-        'gigabytes_ssd': 'gigabytes_SSD',
-        'gigabytes_sas': 'gigabytes_SAS',
         'gigabytes_sata': 'gigabytes_SATA',
-        'snapshots_ssd': 'snapshots_SSD',
+        'snapshots_sata': 'snapshots_SATA',
+        'volumes_sata': 'volumes_SATA',
+        'gigabytes_sas': 'gigabytes_SAS',
         'snapshots_sas': 'snapshots_SAS',
-        'snapshots_sata': 'snapshots_SATA'
+        'volumes_sas': 'volumes_SAS',
+        'gigabytes_ssd': 'gigabytes_SSD',
+        'snapshots_ssd': 'snapshots_SSD',
+        'volumes_ssd': 'volumes_SSD',
+        'gigabytes_gpssd': 'gigabytes_GPSSD',
+        'snapshots_gpssd': 'snapshots_GPSSD',
+        'volumes_gpssd': 'volumes_GPSSD',
+        'per_volume_gigabytes': 'per_volume_gigabytes'
     }
 
-    def __init__(self, backup_gigabytes=None, backups=None, gigabytes=None, id=None, snapshots=None, volumes=None, volumes_ssd=None, volumes_sas=None, volumes_sata=None, gigabytes_ssd=None, gigabytes_sas=None, gigabytes_sata=None, snapshots_ssd=None, snapshots_sas=None, snapshots_sata=None):  # noqa: E501
+    def __init__(self, backup_gigabytes=None, backups=None, gigabytes=None, id=None, snapshots=None, volumes=None, gigabytes_sata=None, snapshots_sata=None, volumes_sata=None, gigabytes_sas=None, snapshots_sas=None, volumes_sas=None, gigabytes_ssd=None, snapshots_ssd=None, volumes_ssd=None, gigabytes_gpssd=None, snapshots_gpssd=None, volumes_gpssd=None, per_volume_gigabytes=None):  # noqa: E501
         """QuotaList - a model defined in huaweicloud sdk"""
 
         self._backup_gigabytes = None
@@ -64,15 +72,19 @@ class QuotaList(object):
         self._id = None
         self._snapshots = None
         self._volumes = None
-        self._volumes_ssd = None
-        self._volumes_sas = None
-        self._volumes_sata = None
-        self._gigabytes_ssd = None
-        self._gigabytes_sas = None
         self._gigabytes_sata = None
-        self._snapshots_ssd = None
-        self._snapshots_sas = None
         self._snapshots_sata = None
+        self._volumes_sata = None
+        self._gigabytes_sas = None
+        self._snapshots_sas = None
+        self._volumes_sas = None
+        self._gigabytes_ssd = None
+        self._snapshots_ssd = None
+        self._volumes_ssd = None
+        self._gigabytes_gpssd = None
+        self._snapshots_gpssd = None
+        self._volumes_gpssd = None
+        self._per_volume_gigabytes = None
         self.discriminator = None
 
         self.backup_gigabytes = backup_gigabytes
@@ -81,24 +93,32 @@ class QuotaList(object):
         self.id = id
         self.snapshots = snapshots
         self.volumes = volumes
-        if volumes_ssd is not None:
-            self.volumes_ssd = volumes_ssd
-        if volumes_sas is not None:
-            self.volumes_sas = volumes_sas
-        if volumes_sata is not None:
-            self.volumes_sata = volumes_sata
-        if gigabytes_ssd is not None:
-            self.gigabytes_ssd = gigabytes_ssd
-        if gigabytes_sas is not None:
-            self.gigabytes_sas = gigabytes_sas
         if gigabytes_sata is not None:
             self.gigabytes_sata = gigabytes_sata
-        if snapshots_ssd is not None:
-            self.snapshots_ssd = snapshots_ssd
-        if snapshots_sas is not None:
-            self.snapshots_sas = snapshots_sas
         if snapshots_sata is not None:
             self.snapshots_sata = snapshots_sata
+        if volumes_sata is not None:
+            self.volumes_sata = volumes_sata
+        if gigabytes_sas is not None:
+            self.gigabytes_sas = gigabytes_sas
+        if snapshots_sas is not None:
+            self.snapshots_sas = snapshots_sas
+        if volumes_sas is not None:
+            self.volumes_sas = volumes_sas
+        if gigabytes_ssd is not None:
+            self.gigabytes_ssd = gigabytes_ssd
+        if snapshots_ssd is not None:
+            self.snapshots_ssd = snapshots_ssd
+        if volumes_ssd is not None:
+            self.volumes_ssd = volumes_ssd
+        if gigabytes_gpssd is not None:
+            self.gigabytes_gpssd = gigabytes_gpssd
+        if snapshots_gpssd is not None:
+            self.snapshots_gpssd = snapshots_gpssd
+        if volumes_gpssd is not None:
+            self.volumes_gpssd = volumes_gpssd
+        if per_volume_gigabytes is not None:
+            self.per_volume_gigabytes = per_volume_gigabytes
 
     @property
     def backup_gigabytes(self):
@@ -223,44 +243,44 @@ class QuotaList(object):
         self._volumes = volumes
 
     @property
-    def volumes_ssd(self):
-        """Gets the volumes_ssd of this QuotaList.
+    def gigabytes_sata(self):
+        """Gets the gigabytes_sata of this QuotaList.
 
 
-        :return: The volumes_ssd of this QuotaList.
+        :return: The gigabytes_sata of this QuotaList.
         :rtype: QuotaDetail
         """
-        return self._volumes_ssd
+        return self._gigabytes_sata
 
-    @volumes_ssd.setter
-    def volumes_ssd(self, volumes_ssd):
-        """Sets the volumes_ssd of this QuotaList.
+    @gigabytes_sata.setter
+    def gigabytes_sata(self, gigabytes_sata):
+        """Sets the gigabytes_sata of this QuotaList.
 
 
-        :param volumes_ssd: The volumes_ssd of this QuotaList.
+        :param gigabytes_sata: The gigabytes_sata of this QuotaList.
         :type: QuotaDetail
         """
-        self._volumes_ssd = volumes_ssd
+        self._gigabytes_sata = gigabytes_sata
 
     @property
-    def volumes_sas(self):
-        """Gets the volumes_sas of this QuotaList.
+    def snapshots_sata(self):
+        """Gets the snapshots_sata of this QuotaList.
 
 
-        :return: The volumes_sas of this QuotaList.
+        :return: The snapshots_sata of this QuotaList.
         :rtype: QuotaDetail
         """
-        return self._volumes_sas
+        return self._snapshots_sata
 
-    @volumes_sas.setter
-    def volumes_sas(self, volumes_sas):
-        """Sets the volumes_sas of this QuotaList.
+    @snapshots_sata.setter
+    def snapshots_sata(self, snapshots_sata):
+        """Sets the snapshots_sata of this QuotaList.
 
 
-        :param volumes_sas: The volumes_sas of this QuotaList.
+        :param snapshots_sata: The snapshots_sata of this QuotaList.
         :type: QuotaDetail
         """
-        self._volumes_sas = volumes_sas
+        self._snapshots_sata = snapshots_sata
 
     @property
     def volumes_sata(self):
@@ -283,26 +303,6 @@ class QuotaList(object):
         self._volumes_sata = volumes_sata
 
     @property
-    def gigabytes_ssd(self):
-        """Gets the gigabytes_ssd of this QuotaList.
-
-
-        :return: The gigabytes_ssd of this QuotaList.
-        :rtype: QuotaDetail
-        """
-        return self._gigabytes_ssd
-
-    @gigabytes_ssd.setter
-    def gigabytes_ssd(self, gigabytes_ssd):
-        """Sets the gigabytes_ssd of this QuotaList.
-
-
-        :param gigabytes_ssd: The gigabytes_ssd of this QuotaList.
-        :type: QuotaDetail
-        """
-        self._gigabytes_ssd = gigabytes_ssd
-
-    @property
     def gigabytes_sas(self):
         """Gets the gigabytes_sas of this QuotaList.
 
@@ -321,46 +321,6 @@ class QuotaList(object):
         :type: QuotaDetail
         """
         self._gigabytes_sas = gigabytes_sas
-
-    @property
-    def gigabytes_sata(self):
-        """Gets the gigabytes_sata of this QuotaList.
-
-
-        :return: The gigabytes_sata of this QuotaList.
-        :rtype: QuotaDetail
-        """
-        return self._gigabytes_sata
-
-    @gigabytes_sata.setter
-    def gigabytes_sata(self, gigabytes_sata):
-        """Sets the gigabytes_sata of this QuotaList.
-
-
-        :param gigabytes_sata: The gigabytes_sata of this QuotaList.
-        :type: QuotaDetail
-        """
-        self._gigabytes_sata = gigabytes_sata
-
-    @property
-    def snapshots_ssd(self):
-        """Gets the snapshots_ssd of this QuotaList.
-
-
-        :return: The snapshots_ssd of this QuotaList.
-        :rtype: QuotaDetail
-        """
-        return self._snapshots_ssd
-
-    @snapshots_ssd.setter
-    def snapshots_ssd(self, snapshots_ssd):
-        """Sets the snapshots_ssd of this QuotaList.
-
-
-        :param snapshots_ssd: The snapshots_ssd of this QuotaList.
-        :type: QuotaDetail
-        """
-        self._snapshots_ssd = snapshots_ssd
 
     @property
     def snapshots_sas(self):
@@ -383,24 +343,164 @@ class QuotaList(object):
         self._snapshots_sas = snapshots_sas
 
     @property
-    def snapshots_sata(self):
-        """Gets the snapshots_sata of this QuotaList.
+    def volumes_sas(self):
+        """Gets the volumes_sas of this QuotaList.
 
 
-        :return: The snapshots_sata of this QuotaList.
+        :return: The volumes_sas of this QuotaList.
         :rtype: QuotaDetail
         """
-        return self._snapshots_sata
+        return self._volumes_sas
 
-    @snapshots_sata.setter
-    def snapshots_sata(self, snapshots_sata):
-        """Sets the snapshots_sata of this QuotaList.
+    @volumes_sas.setter
+    def volumes_sas(self, volumes_sas):
+        """Sets the volumes_sas of this QuotaList.
 
 
-        :param snapshots_sata: The snapshots_sata of this QuotaList.
+        :param volumes_sas: The volumes_sas of this QuotaList.
         :type: QuotaDetail
         """
-        self._snapshots_sata = snapshots_sata
+        self._volumes_sas = volumes_sas
+
+    @property
+    def gigabytes_ssd(self):
+        """Gets the gigabytes_ssd of this QuotaList.
+
+
+        :return: The gigabytes_ssd of this QuotaList.
+        :rtype: QuotaDetail
+        """
+        return self._gigabytes_ssd
+
+    @gigabytes_ssd.setter
+    def gigabytes_ssd(self, gigabytes_ssd):
+        """Sets the gigabytes_ssd of this QuotaList.
+
+
+        :param gigabytes_ssd: The gigabytes_ssd of this QuotaList.
+        :type: QuotaDetail
+        """
+        self._gigabytes_ssd = gigabytes_ssd
+
+    @property
+    def snapshots_ssd(self):
+        """Gets the snapshots_ssd of this QuotaList.
+
+
+        :return: The snapshots_ssd of this QuotaList.
+        :rtype: QuotaDetail
+        """
+        return self._snapshots_ssd
+
+    @snapshots_ssd.setter
+    def snapshots_ssd(self, snapshots_ssd):
+        """Sets the snapshots_ssd of this QuotaList.
+
+
+        :param snapshots_ssd: The snapshots_ssd of this QuotaList.
+        :type: QuotaDetail
+        """
+        self._snapshots_ssd = snapshots_ssd
+
+    @property
+    def volumes_ssd(self):
+        """Gets the volumes_ssd of this QuotaList.
+
+
+        :return: The volumes_ssd of this QuotaList.
+        :rtype: QuotaDetail
+        """
+        return self._volumes_ssd
+
+    @volumes_ssd.setter
+    def volumes_ssd(self, volumes_ssd):
+        """Sets the volumes_ssd of this QuotaList.
+
+
+        :param volumes_ssd: The volumes_ssd of this QuotaList.
+        :type: QuotaDetail
+        """
+        self._volumes_ssd = volumes_ssd
+
+    @property
+    def gigabytes_gpssd(self):
+        """Gets the gigabytes_gpssd of this QuotaList.
+
+
+        :return: The gigabytes_gpssd of this QuotaList.
+        :rtype: QuotaDetail
+        """
+        return self._gigabytes_gpssd
+
+    @gigabytes_gpssd.setter
+    def gigabytes_gpssd(self, gigabytes_gpssd):
+        """Sets the gigabytes_gpssd of this QuotaList.
+
+
+        :param gigabytes_gpssd: The gigabytes_gpssd of this QuotaList.
+        :type: QuotaDetail
+        """
+        self._gigabytes_gpssd = gigabytes_gpssd
+
+    @property
+    def snapshots_gpssd(self):
+        """Gets the snapshots_gpssd of this QuotaList.
+
+
+        :return: The snapshots_gpssd of this QuotaList.
+        :rtype: QuotaDetail
+        """
+        return self._snapshots_gpssd
+
+    @snapshots_gpssd.setter
+    def snapshots_gpssd(self, snapshots_gpssd):
+        """Sets the snapshots_gpssd of this QuotaList.
+
+
+        :param snapshots_gpssd: The snapshots_gpssd of this QuotaList.
+        :type: QuotaDetail
+        """
+        self._snapshots_gpssd = snapshots_gpssd
+
+    @property
+    def volumes_gpssd(self):
+        """Gets the volumes_gpssd of this QuotaList.
+
+
+        :return: The volumes_gpssd of this QuotaList.
+        :rtype: QuotaDetail
+        """
+        return self._volumes_gpssd
+
+    @volumes_gpssd.setter
+    def volumes_gpssd(self, volumes_gpssd):
+        """Sets the volumes_gpssd of this QuotaList.
+
+
+        :param volumes_gpssd: The volumes_gpssd of this QuotaList.
+        :type: QuotaDetail
+        """
+        self._volumes_gpssd = volumes_gpssd
+
+    @property
+    def per_volume_gigabytes(self):
+        """Gets the per_volume_gigabytes of this QuotaList.
+
+
+        :return: The per_volume_gigabytes of this QuotaList.
+        :rtype: QuotaDetail
+        """
+        return self._per_volume_gigabytes
+
+    @per_volume_gigabytes.setter
+    def per_volume_gigabytes(self, per_volume_gigabytes):
+        """Sets the per_volume_gigabytes of this QuotaList.
+
+
+        :param per_volume_gigabytes: The per_volume_gigabytes of this QuotaList.
+        :type: QuotaDetail
+        """
+        self._per_volume_gigabytes = per_volume_gigabytes
 
     def to_dict(self):
         """Returns the model properties as a dict"""

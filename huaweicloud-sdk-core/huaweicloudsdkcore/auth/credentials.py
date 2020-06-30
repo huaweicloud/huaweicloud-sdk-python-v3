@@ -17,6 +17,7 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
+from concurrent.futures.thread import ThreadPoolExecutor
 
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError
 from huaweicloudsdkcore.signer import signer
@@ -26,7 +27,7 @@ class Credentials:
     def get_update_path_params(self):
         pass
 
-    def process_auth_request(self, request):
+    def process_auth_request(self, request, http_client):
         pass
 
 
@@ -51,7 +52,12 @@ class BasicCredentials(Credentials):
             path_params["domain_id"] = self.domain_id
         return path_params
 
-    def process_auth_request(self, request):
+    def process_auth_request(self, request, http_client):
+        executor = ThreadPoolExecutor(max_workers=8)
+        future = executor.submit(self.sign_request, request)
+        return future
+
+    def sign_request(self, request):
         if self.project_id is not None:
             request.header_params["X-Project-Id"] = self.project_id
         if self.domain_id is not None:

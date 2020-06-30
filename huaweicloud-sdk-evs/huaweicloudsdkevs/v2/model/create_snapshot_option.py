@@ -147,7 +147,7 @@ class CreateSnapshotOption(object):
     def name(self):
         """Gets the name of this CreateSnapshotOption.
 
-        云硬盘快照名称，最大支持255个字节。
+        云硬盘快照名称。最大支持255个字节。  > > 说明： > 对云硬盘创建备份时，同时会创建以autobk_snapshot_为名称前缀的快照，云硬盘控制台对此类快照会有操作限制。因此建议不要创建以> > autobk_snapshot_为名称前缀的快照，避免影响快照的正常使用
 
         :return: The name of this CreateSnapshotOption.
         :rtype: str
@@ -158,7 +158,7 @@ class CreateSnapshotOption(object):
     def name(self, name):
         """Sets the name of this CreateSnapshotOption.
 
-        云硬盘快照名称，最大支持255个字节。
+        云硬盘快照名称。最大支持255个字节。  > > 说明： > 对云硬盘创建备份时，同时会创建以autobk_snapshot_为名称前缀的快照，云硬盘控制台对此类快照会有操作限制。因此建议不要创建以> > autobk_snapshot_为名称前缀的快照，避免影响快照的正常使用
 
         :param name: The name of this CreateSnapshotOption.
         :type: str

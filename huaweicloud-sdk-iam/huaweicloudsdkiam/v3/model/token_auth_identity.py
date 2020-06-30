@@ -21,24 +21,29 @@ class TokenAuthIdentity(object):
 
     openapi_types = {
         'methods': 'list[str]',
-        'token': 'IdentityToken'
+        'token': 'IdentityToken',
+        'policy': 'ServicePolicy'
     }
 
     attribute_map = {
         'methods': 'methods',
-        'token': 'token'
+        'token': 'token',
+        'policy': 'policy'
     }
 
-    def __init__(self, methods=None, token=None):  # noqa: E501
+    def __init__(self, methods=None, token=None, policy=None):  # noqa: E501
         """TokenAuthIdentity - a model defined in huaweicloud sdk"""
 
         self._methods = None
         self._token = None
+        self._policy = None
         self.discriminator = None
 
         self.methods = methods
         if token is not None:
             self.token = token
+        if policy is not None:
+            self.policy = policy
 
     @property
     def methods(self):
@@ -81,6 +86,26 @@ class TokenAuthIdentity(object):
         :type: IdentityToken
         """
         self._token = token
+
+    @property
+    def policy(self):
+        """Gets the policy of this TokenAuthIdentity.
+
+
+        :return: The policy of this TokenAuthIdentity.
+        :rtype: ServicePolicy
+        """
+        return self._policy
+
+    @policy.setter
+    def policy(self, policy):
+        """Sets the policy of this TokenAuthIdentity.
+
+
+        :param policy: The policy of this TokenAuthIdentity.
+        :type: ServicePolicy
+        """
+        self._policy = policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

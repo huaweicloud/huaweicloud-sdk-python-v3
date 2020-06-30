@@ -87,7 +87,7 @@ class EvsClient(Client):
 
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
         auth_settings = []
 
         return self.call_api(
@@ -150,7 +150,7 @@ class EvsClient(Client):
 
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
         auth_settings = []
 
         return self.call_api(
@@ -168,7 +168,7 @@ class EvsClient(Client):
     def cinder_export_to_image(self, request):
         """将云硬盘导出为镜像
 
-        将系统盘或数据盘的数据导出为镜像。
+        将系统盘或数据盘的数据导出为IMS镜像，导出的镜像在IMS的私有镜像列表中可以查 看并使用。
 
         :param CinderExportToImageRequest request
         :return: CinderExportToImageResponse
@@ -178,7 +178,7 @@ class EvsClient(Client):
     def cinder_export_to_image_with_http_info(self, request):
         """将云硬盘导出为镜像
 
-        将系统盘或数据盘的数据导出为镜像。
+        将系统盘或数据盘的数据导出为IMS镜像，导出的镜像在IMS的私有镜像列表中可以查 看并使用。
 
         :param CinderExportToImageRequest request
         :return: tuple(CinderExportToImageResponse, status_code(int), headers(HTTPHeaderDict))
@@ -215,7 +215,7 @@ class EvsClient(Client):
             ['*/*', 'application/json'])
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
         auth_settings = []
 
         return self.call_api(
@@ -459,7 +459,7 @@ class EvsClient(Client):
             ['*/*', 'application/json'])
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
         auth_settings = []
 
         return self.call_api(
@@ -522,7 +522,7 @@ class EvsClient(Client):
             ['*/*', 'application/json', 'application/json-1'])
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
         auth_settings = []
 
         return self.call_api(
@@ -845,7 +845,7 @@ class EvsClient(Client):
             ['*/*', 'application/json'])
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
         auth_settings = []
 
         return self.call_api(
@@ -1003,7 +1003,7 @@ class EvsClient(Client):
             ['*/*', 'application/json', 'application/json-1'])
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
         auth_settings = []
 
         return self.call_api(
@@ -1021,7 +1021,7 @@ class EvsClient(Client):
     def rollback_snapshot(self, request):
         """回滚快照到云硬盘
 
-        将快照数据回滚到云硬盘。
+        将快照数据回滚到云硬盘。支持企业项目授权功能。
 
         :param RollbackSnapshotRequest request
         :return: RollbackSnapshotResponse
@@ -1031,7 +1031,7 @@ class EvsClient(Client):
     def rollback_snapshot_with_http_info(self, request):
         """回滚快照到云硬盘
 
-        将快照数据回滚到云硬盘。
+        将快照数据回滚到云硬盘。支持企业项目授权功能。
 
         :param RollbackSnapshotRequest request
         :return: tuple(RollbackSnapshotResponse, status_code(int), headers(HTTPHeaderDict))
@@ -1068,7 +1068,7 @@ class EvsClient(Client):
             ['*/*', 'application/json'])
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
         auth_settings = []
 
         return self.call_api(
@@ -1147,7 +1147,7 @@ class EvsClient(Client):
     def show_snapshot(self, request):
         """查询单个云硬盘快照详细信息
 
-        查询单个云硬盘快照信息。
+        查询单个云硬盘快照信息。支持企业项目授权功能。
 
         :param ShowSnapshotRequest request
         :return: ShowSnapshotResponse
@@ -1157,7 +1157,7 @@ class EvsClient(Client):
     def show_snapshot_with_http_info(self, request):
         """查询单个云硬盘快照详细信息
 
-        查询单个云硬盘快照信息。
+        查询单个云硬盘快照信息。支持企业项目授权功能。
 
         :param ShowSnapshotRequest request
         :return: tuple(ShowSnapshotResponse, status_code(int), headers(HTTPHeaderDict))
@@ -1208,7 +1208,7 @@ class EvsClient(Client):
     def show_volume(self, request):
         """查询单个云硬盘详情
 
-        查询单个云硬盘的详细信息。
+        查询单个云硬盘的详细信息。支持企业项目授权功能。
 
         :param ShowVolumeRequest request
         :return: ShowVolumeResponse
@@ -1218,7 +1218,7 @@ class EvsClient(Client):
     def show_volume_with_http_info(self, request):
         """查询单个云硬盘详情
 
-        查询单个云硬盘的详细信息。
+        查询单个云硬盘的详细信息。支持企业项目授权功能。
 
         :param ShowVolumeRequest request
         :return: tuple(ShowVolumeResponse, status_code(int), headers(HTTPHeaderDict))
@@ -1330,7 +1330,7 @@ class EvsClient(Client):
     def update_snapshot(self, request):
         """更新云硬盘快照
 
-        更新云硬盘快照。
+        更新云硬盘快照。支持企业项目授权功能。
 
         :param UpdateSnapshotRequest request
         :return: UpdateSnapshotResponse
@@ -1340,7 +1340,7 @@ class EvsClient(Client):
     def update_snapshot_with_http_info(self, request):
         """更新云硬盘快照
 
-        更新云硬盘快照。
+        更新云硬盘快照。支持企业项目授权功能。
 
         :param UpdateSnapshotRequest request
         :return: tuple(UpdateSnapshotResponse, status_code(int), headers(HTTPHeaderDict))
@@ -1377,7 +1377,7 @@ class EvsClient(Client):
             ['*/*', 'application/json'])
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
         auth_settings = []
 
         return self.call_api(
@@ -1395,7 +1395,7 @@ class EvsClient(Client):
     def update_volume(self, request):
         """更新云硬盘
 
-        更新一个云硬盘的名称和描述。支持企业项目授权功能。
+        更新一个云硬盘的名称和描述。
 
         :param UpdateVolumeRequest request
         :return: UpdateVolumeResponse
@@ -1405,7 +1405,7 @@ class EvsClient(Client):
     def update_volume_with_http_info(self, request):
         """更新云硬盘
 
-        更新一个云硬盘的名称和描述。支持企业项目授权功能。
+        更新一个云硬盘的名称和描述。
 
         :param UpdateVolumeRequest request
         :return: tuple(UpdateVolumeResponse, status_code(int), headers(HTTPHeaderDict))
@@ -1442,7 +1442,7 @@ class EvsClient(Client):
             ['*/*', 'application/json'])
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
         auth_settings = []
 
         return self.call_api(

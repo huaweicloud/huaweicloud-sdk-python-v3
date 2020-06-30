@@ -35,7 +35,7 @@ class CinderExportToImageOption(object):
         'os_type': '__os_type'
     }
 
-    def __init__(self, container_format='bare', disk_format='vhd', force=False, image_name=None, os_type='linux'):  # noqa: E501
+    def __init__(self, container_format='bare', disk_format='vhd', force=None, image_name=None, os_type='linux'):  # noqa: E501
         """CinderExportToImageOption - a model defined in huaweicloud sdk"""
 
         self._container_format = None
@@ -147,7 +147,7 @@ class CinderExportToImageOption(object):
     def os_type(self):
         """Gets the os_type of this CinderExportToImageOption.
 
-        云硬盘导出镜像的系统类型。目前只支持“windows”和“linux”，默认值是“linux”。 只有云硬盘的volume_image_metadata信息中无“__os_type”字段且云硬盘状态为“available”时，设置的__os_type才会生效。
+        云硬盘导出镜像的系统类型。目前只支持“windows”和“linux”，默认值是“linux”。  说明： 只有云硬盘的volume_image_metadata信息中无“__os_type”字段且云硬盘状态为“available”时，设置的__os_type才会生效。 如果不传递该参数，则使用默认的“linux”值作为镜像的系统类型。
 
         :return: The os_type of this CinderExportToImageOption.
         :rtype: str
@@ -158,7 +158,7 @@ class CinderExportToImageOption(object):
     def os_type(self, os_type):
         """Sets the os_type of this CinderExportToImageOption.
 
-        云硬盘导出镜像的系统类型。目前只支持“windows”和“linux”，默认值是“linux”。 只有云硬盘的volume_image_metadata信息中无“__os_type”字段且云硬盘状态为“available”时，设置的__os_type才会生效。
+        云硬盘导出镜像的系统类型。目前只支持“windows”和“linux”，默认值是“linux”。  说明： 只有云硬盘的volume_image_metadata信息中无“__os_type”字段且云硬盘状态为“available”时，设置的__os_type才会生效。 如果不传递该参数，则使用默认的“linux”值作为镜像的系统类型。
 
         :param os_type: The os_type of this CinderExportToImageOption.
         :type: str

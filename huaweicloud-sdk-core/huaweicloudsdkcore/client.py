@@ -25,14 +25,16 @@ import logging
 import os
 import re
 import sys
+from concurrent.futures.thread import ThreadPoolExecutor
 from logging.handlers import RotatingFileHandler
 
 import six
 from six.moves.urllib.parse import quote, urlparse
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
-from huaweicloudsdkcore.exceptions.exceptions import ApiValueError
 from huaweicloudsdkcore.http.http_client import HttpClient
+from huaweicloudsdkcore.http.http_config import HttpConfig
+from huaweicloudsdkcore.http.http_handler import HttpHandler
 from huaweicloudsdkcore.http.primitive_types import native_types_mapping
 from huaweicloudsdkcore.http.primitive_types import primitive_types
 from huaweicloudsdkcore.sdk_request import SdkRequest
@@ -41,37 +43,34 @@ from huaweicloudsdkcore.utils import http_utils, core_utils
 
 
 class ClientBuilder:
-    def __init__(self, clazz):
-        self.__clazz = clazz
-        self.__config = None
-        self.__credentials = None
-        self.__endpoint = None
-        self.__file_logger_handler = None
-        self.__stream_logger_handler = None
-        self.__enable_http_log = False
+    def __init__(self, client_type):
+        self._client_class = client_type
+        self._config = None
+        self._credentials = None
+        self._endpoint = None
 
-    def with_config(self, config):
-        self.__config = config
-        return self
+        self._http_handler = None
+        self._file_logger_handler = None
+        self._stream_logger_handler = None
 
-    def with_http_config(self, config):
-        self.__config = config
+    def with_http_config(self, config: HttpConfig):
+        self._config = config
         return self
 
     def with_credentials(self, credentials):
-        self.__credentials = credentials
+        self._credentials = credentials
         return self
 
     def with_endpoint(self, endpoint):
-        self.__endpoint = endpoint
+        self._endpoint = endpoint
         return self
 
-    def with_enable_http_log(self, enable_http_log: bool):
-        self.__enable_http_log = enable_http_log
+    def with_http_handler(self, http_handler):
+        self._http_handler = http_handler
         return self
 
     def with_file_log(self, path, log_level=logging.INFO, max_bytes=10485760, backup_count=5, format_string=None):
-        self.__file_logger_handler = {
+        self._file_logger_handler = {
             "path": path,
             "log_level": log_level,
             "max_bytes": max_bytes,
@@ -81,7 +80,7 @@ class ClientBuilder:
         return self
 
     def with_stream_log(self, stream=sys.stdout, log_level=logging.INFO, format_string=None):
-        self.__stream_logger_handler = {
+        self._stream_logger_handler = {
             "stream": stream,
             "log_level": log_level,
             "format_string": format_string
@@ -89,19 +88,19 @@ class ClientBuilder:
         return self
 
     def build(self):
-        if self.__credentials is None:
-            self.__credentials = self.get_credential_from_environment_variables()
+        if self._credentials is None:
+            self._credentials = self.get_credential_from_environment_variables()
 
-        client = self.__clazz()
-        client.set_endpoint(self.__endpoint)
-        client.set_credentials(self.__credentials)
-        client.set_config(self.__config)
+        client = self._client_class() \
+            .with_endpoint(self._endpoint) \
+            .with_credentials(self._credentials) \
+            .with_config(self._config) \
+            .with_http_handler(self._http_handler)
 
-        if self.__file_logger_handler is not None:
-            client.add_file_logger(**self.__file_logger_handler)
-        if self.__stream_logger_handler is not None:
-            client.add_stream_logger(**self.__stream_logger_handler)
-        client.enable_http_log(self.__enable_http_log)
+        if self._file_logger_handler is not None:
+            client.add_file_logger(**self._file_logger_handler)
+        if self._stream_logger_handler is not None:
+            client.add_stream_logger(**self._stream_logger_handler)
 
         client.init_http_client()
         return client
@@ -121,47 +120,52 @@ class Client:
         return ClientBuilder(clazz)
 
     def __init__(self):
+        self.preset_headers = {}
+
         self._agent = {"User-Agent": "huaweicloud-sdk-pythons/3.0"}
         self._logger = self._init_logger()
-        self._enable_http_log = False
 
         self._credentials = None
         self._config = None
         self._endpoint = None
-        self._http_client = None
 
-        self.preset_headers = {}
+        self._http_client = None
+        self._http_handler = None
+
         self.model_package = None
         try:
             exception_handler_model_name = "%s.exception_handler" % self.__module__[:self.__module__.rindex('.')]
             self.exception_handler_model = importlib.import_module(exception_handler_model_name)
-        except ModuleNotFoundError:
+        except ImportError:
             self.exception_handler_model = None
 
-    def _init_logger(self):
-        logger_name = 'huaweicloud-sdk-{}'.format(str(id(self)))
+    @classmethod
+    def _init_logger(cls):
+        logger_name = 'HuaweiCloud-SDK'
         logger = logging.getLogger(logger_name)
         logger.propagate = False
         return logger
 
-    def set_config(self, config):
+    def with_config(self, config):
         self._config = config
+        return self
 
-    def set_credentials(self, credentials):
+    def with_credentials(self, credentials):
         self._credentials = credentials
+        return self
 
-    def set_endpoint(self, endpoint):
+    def with_endpoint(self, endpoint):
         self._endpoint = endpoint
+        return self
 
-    def enable_http_log(self, enable_http_log):
-        self._enable_http_log = enable_http_log
+    def with_http_handler(self, http_handler):
+        self._http_handler = http_handler if http_handler is not None else HttpHandler()
+        return self
 
     def init_http_client(self):
-        http_client = HttpClient(self._logger, self._enable_http_log)
-        http_client.set_config(self._config)
-        if self.exception_handler_model is not None:
-            http_client.set_service_spec_exception_handler(getattr(self.exception_handler_model, "handle_exception"))
-        self._http_client = http_client
+        exception_handler = None \
+            if self.exception_handler_model is None else getattr(self.exception_handler_model, "handle_exception")
+        self._http_client = HttpClient(self._config, self._http_handler, exception_handler, self._logger)
 
     def add_stream_logger(self, stream, log_level, format_string):
         self._logger.setLevel(log_level)
@@ -169,6 +173,7 @@ class Client:
         stream_handler.setLevel(log_level)
         formatter = logging.Formatter(format_string if format_string is not None else core_utils.LOG_FORMAT)
         stream_handler.setFormatter(formatter)
+
         if stream_handler not in self._logger.handlers:
             self._logger.addHandler(stream_handler)
 
@@ -178,11 +183,21 @@ class Client:
         file_handler.setLevel(log_level)
         formatter = logging.Formatter(format_string if format_string is not None else core_utils.LOG_FORMAT)
         file_handler.setFormatter(formatter)
+
         if file_handler not in self._logger.handlers:
             self._logger.addHandler(file_handler)
 
+    def get_agent(self):
+        return self._agent
+
+    def get_credentials(self):
+        return self._credentials
+
+    def get_http_client(self):
+        return self._http_client
+
     def _parse_header_params(self, collection_formats, header_params):
-        header_params = header_params or {}
+        header_params = self.post_process_params(header_params) or {}
         header_params.update(self.preset_headers)
         if header_params:
             header_params = http_utils.sanitize_for_serialization(header_params)
@@ -215,7 +230,8 @@ class Client:
             post_params = http_utils.parameters_to_tuples(post_params, collection_formats)
         return post_params
 
-    def _parse_body(self, body):
+    @classmethod
+    def _parse_body(cls, body):
         if body:
             body = http_utils.sanitize_for_serialization(body)
             body = json.dumps(body)
@@ -247,55 +263,29 @@ class Client:
         query_params = self._parse_query_params(collection_formats, query_params)
         post_params = self._parse_post_params(collection_formats, post_params)
         body = self._parse_body(body)
-        sdk_request = SdkRequest(method, schema, host, resource_path, query_params, header_params, body, post_params)
-        request = self._credentials.process_auth_request(sdk_request)
 
-        request_sensitive_list = self._get_sensitive_list(request_type)
-        response_sensitive_list = self._get_sensitive_list(response_type)
+        sdk_request = SdkRequest(method, schema, host, resource_path, query_params, header_params, body, post_params)
+        future_request = self._credentials.process_auth_request(sdk_request, self._http_client)
 
         if async_request:
-            future_response = self._do_http_request_async(request, response_type, request_sensitive_list,
-                                                          response_sensitive_list)
+            executor = ThreadPoolExecutor(max_workers=8)
+            future_response = executor.submit(self._do_http_request_async, future_request, response_type)
             return FutureSdkResponse(future_response, self._logger)
         else:
-            response = self._do_http_request_sync(request, request_sensitive_list, response_sensitive_list)
+            request = future_request.result()
+            response = self._do_http_request_sync(request)
             return self.sync_response_handler(response, response_type)
 
-    def _get_sensitive_list(self, clazz):
-        if clazz is None:
-            return []
-
-        response_sensitive_list = []
-        if clazz in native_types_mapping:
-            return response_sensitive_list
-
-        klass = getattr(self.model_package, clazz)
-        for attr, attr_type in six.iteritems(klass.openapi_types):
-            if attr_type in native_types_mapping and attr in klass.sensitive_list:
-                response_sensitive_list.append(attr)
-            elif attr_type.startswith('list['):
-                sub_attr_type = re.match(r'list\[(.*)\]', attr_type).group(1)
-                response_sensitive_list.extend(
-                    [attr + ".[*]." + i for i in self._get_sensitive_list(sub_attr_type)])
-            elif attr_type.startswith('dict('):
-                sub_attr_type = re.match(r'dict\(([^,]*), (.*)\)', attr_type).group(2)
-                response_sensitive_list.extend(
-                    [attr + ".*." + i for i in self._get_sensitive_list(sub_attr_type)])
-            else:
-                response_sensitive_list.extend(
-                    [attr + "." + i for i in self._get_sensitive_list(attr_type)])
-        return response_sensitive_list
-
-    def _do_http_request_sync(self, request, request_sensitive_list, response_sensitive_list):
-        response = self._http_client.do_request_sync(request, request_sensitive_list, response_sensitive_list)
+    def _do_http_request_sync(self, request):
+        response = self._http_client.do_request_sync(request)
         return response
 
-    def _do_http_request_async(self, request, response_type, request_sensitive_list, response_sensitive_list):
-        future = self._http_client.do_request_async(request,
-                                                    [self.async_response_hook_factory(response_type=response_type)],
-                                                    request_sensitive_list,
-                                                    response_sensitive_list)
-        return future
+    def _do_http_request_async(self, future_request, response_type):
+        request = future_request.result()
+        future_response = self._http_client.do_request_async(
+            request=request, hooks=[self.async_response_hook_factory(response_type=response_type)]
+        )
+        return future_response
 
     def sync_response_handler(self, response, response_type):
         return_data = response

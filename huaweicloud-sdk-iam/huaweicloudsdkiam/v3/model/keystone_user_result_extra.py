@@ -22,23 +22,20 @@ class KeystoneUserResultExtra(object):
     openapi_types = {
         'description': 'str',
         'pwd_status': 'bool',
-        'force_reset_pwd': 'bool',
         'last_project_id': 'str'
     }
 
     attribute_map = {
         'description': 'description',
         'pwd_status': 'pwd_status',
-        'force_reset_pwd': 'forceResetPwd',
         'last_project_id': 'last_project_id'
     }
 
-    def __init__(self, description=None, pwd_status=None, force_reset_pwd=None, last_project_id=None):  # noqa: E501
+    def __init__(self, description=None, pwd_status=None, last_project_id=None):  # noqa: E501
         """KeystoneUserResultExtra - a model defined in huaweicloud sdk"""
 
         self._description = None
         self._pwd_status = None
-        self._force_reset_pwd = None
         self._last_project_id = None
         self.discriminator = None
 
@@ -46,8 +43,6 @@ class KeystoneUserResultExtra(object):
             self.description = description
         if pwd_status is not None:
             self.pwd_status = pwd_status
-        if force_reset_pwd is not None:
-            self.force_reset_pwd = force_reset_pwd
         if last_project_id is not None:
             self.last_project_id = last_project_id
 
@@ -94,28 +89,6 @@ class KeystoneUserResultExtra(object):
         :type: bool
         """
         self._pwd_status = pwd_status
-
-    @property
-    def force_reset_pwd(self):
-        """Gets the force_reset_pwd of this KeystoneUserResultExtra.
-
-        IAM用户下次登录是否强制重置密码。
-
-        :return: The force_reset_pwd of this KeystoneUserResultExtra.
-        :rtype: bool
-        """
-        return self._force_reset_pwd
-
-    @force_reset_pwd.setter
-    def force_reset_pwd(self, force_reset_pwd):
-        """Sets the force_reset_pwd of this KeystoneUserResultExtra.
-
-        IAM用户下次登录是否强制重置密码。
-
-        :param force_reset_pwd: The force_reset_pwd of this KeystoneUserResultExtra.
-        :type: bool
-        """
-        self._force_reset_pwd = force_reset_pwd
 
     @property
     def last_project_id(self):

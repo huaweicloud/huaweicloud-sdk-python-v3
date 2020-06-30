@@ -65,7 +65,7 @@ class BatchCreateVolumeTagsRequestBody(object):
     def tags(self):
         """Gets the tags of this BatchCreateVolumeTagsRequestBody.
 
-        标签列表
+        标签列表。
 
         :return: The tags of this BatchCreateVolumeTagsRequestBody.
         :rtype: list[Tag]
@@ -76,7 +76,7 @@ class BatchCreateVolumeTagsRequestBody(object):
     def tags(self, tags):
         """Sets the tags of this BatchCreateVolumeTagsRequestBody.
 
-        标签列表
+        标签列表。
 
         :param tags: The tags of this BatchCreateVolumeTagsRequestBody.
         :type: list[Tag]

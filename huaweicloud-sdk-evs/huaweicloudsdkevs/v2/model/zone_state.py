@@ -40,7 +40,7 @@ class ZoneState(object):
     def available(self):
         """Gets the available of this ZoneState.
 
-        可用分区是否可用。
+        可用分区是否可用。 true表示可用 false表示不可用
 
         :return: The available of this ZoneState.
         :rtype: bool
@@ -51,7 +51,7 @@ class ZoneState(object):
     def available(self, available):
         """Sets the available of this ZoneState.
 
-        可用分区是否可用。
+        可用分区是否可用。 true表示可用 false表示不可用
 
         :param available: The available of this ZoneState.
         :type: bool

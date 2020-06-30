@@ -20,7 +20,7 @@ class CinderListAvailabilityZonesResponse(object):
     sensitive_list = []
 
     openapi_types = {
-        'availability_zone_info': 'list[AvailabilityZone]'
+        'availability_zone_info': 'list[AzInfo]'
     }
 
     attribute_map = {
@@ -40,10 +40,10 @@ class CinderListAvailabilityZonesResponse(object):
     def availability_zone_info(self):
         """Gets the availability_zone_info of this CinderListAvailabilityZonesResponse.
 
-        可用分区的信息。
+        查询请求返回的可用分区列表，请参见• [availabilityZoneInfo参数说明](https://support.huaweicloud.com/api-evs/evs_04_2081.html#evs_04_2081__li19751007201910)。
 
         :return: The availability_zone_info of this CinderListAvailabilityZonesResponse.
-        :rtype: list[AvailabilityZone]
+        :rtype: list[AzInfo]
         """
         return self._availability_zone_info
 
@@ -51,10 +51,10 @@ class CinderListAvailabilityZonesResponse(object):
     def availability_zone_info(self, availability_zone_info):
         """Sets the availability_zone_info of this CinderListAvailabilityZonesResponse.
 
-        可用分区的信息。
+        查询请求返回的可用分区列表，请参见• [availabilityZoneInfo参数说明](https://support.huaweicloud.com/api-evs/evs_04_2081.html#evs_04_2081__li19751007201910)。
 
         :param availability_zone_info: The availability_zone_info of this CinderListAvailabilityZonesResponse.
-        :type: list[AvailabilityZone]
+        :type: list[AzInfo]
         """
         self._availability_zone_info = availability_zone_info
 

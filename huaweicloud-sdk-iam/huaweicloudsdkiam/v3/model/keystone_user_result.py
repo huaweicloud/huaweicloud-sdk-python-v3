@@ -23,7 +23,6 @@ class KeystoneUserResult(object):
         'pwd_status': 'bool',
         'domain_id': 'str',
         'last_project_id': 'str',
-        'force_reset_pwd': 'bool',
         'name': 'str',
         'description': 'str',
         'password_expires_at': 'str',
@@ -38,7 +37,6 @@ class KeystoneUserResult(object):
         'pwd_status': 'pwd_status',
         'domain_id': 'domain_id',
         'last_project_id': 'last_project_id',
-        'force_reset_pwd': 'forceResetPwd',
         'name': 'name',
         'description': 'description',
         'password_expires_at': 'password_expires_at',
@@ -49,13 +47,12 @@ class KeystoneUserResult(object):
         'extra': 'extra'
     }
 
-    def __init__(self, pwd_status=None, domain_id=None, last_project_id=None, force_reset_pwd=None, name=None, description=None, password_expires_at=None, links=None, id=None, enabled=None, pwd_strength=None, extra=None):  # noqa: E501
+    def __init__(self, pwd_status=None, domain_id=None, last_project_id=None, name=None, description=None, password_expires_at=None, links=None, id=None, enabled=None, pwd_strength=None, extra=None):  # noqa: E501
         """KeystoneUserResult - a model defined in huaweicloud sdk"""
 
         self._pwd_status = None
         self._domain_id = None
         self._last_project_id = None
-        self._force_reset_pwd = None
         self._name = None
         self._description = None
         self._password_expires_at = None
@@ -71,8 +68,6 @@ class KeystoneUserResult(object):
         self.domain_id = domain_id
         if last_project_id is not None:
             self.last_project_id = last_project_id
-        if force_reset_pwd is not None:
-            self.force_reset_pwd = force_reset_pwd
         self.name = name
         if description is not None:
             self.description = description
@@ -150,28 +145,6 @@ class KeystoneUserResult(object):
         :type: str
         """
         self._last_project_id = last_project_id
-
-    @property
-    def force_reset_pwd(self):
-        """Gets the force_reset_pwd of this KeystoneUserResult.
-
-        IAM用户下次登录是否强制重置密码。
-
-        :return: The force_reset_pwd of this KeystoneUserResult.
-        :rtype: bool
-        """
-        return self._force_reset_pwd
-
-    @force_reset_pwd.setter
-    def force_reset_pwd(self, force_reset_pwd):
-        """Sets the force_reset_pwd of this KeystoneUserResult.
-
-        IAM用户下次登录是否强制重置密码。
-
-        :param force_reset_pwd: The force_reset_pwd of this KeystoneUserResult.
-        :type: bool
-        """
-        self._force_reset_pwd = force_reset_pwd
 
     @property
     def name(self):

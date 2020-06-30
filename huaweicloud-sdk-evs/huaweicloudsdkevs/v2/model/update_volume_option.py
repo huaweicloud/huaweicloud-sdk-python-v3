@@ -45,7 +45,7 @@ class UpdateVolumeOption(object):
     def description(self):
         """Gets the description of this UpdateVolumeOption.
 
-        新的云硬盘的描述，最大支持255个字节。
+        新的云硬盘的描述，name和description不能同时为null。最大支持255个字节。
 
         :return: The description of this UpdateVolumeOption.
         :rtype: str
@@ -56,7 +56,7 @@ class UpdateVolumeOption(object):
     def description(self, description):
         """Sets the description of this UpdateVolumeOption.
 
-        新的云硬盘的描述，最大支持255个字节。
+        新的云硬盘的描述，name和description不能同时为null。最大支持255个字节。
 
         :param description: The description of this UpdateVolumeOption.
         :type: str
@@ -67,7 +67,7 @@ class UpdateVolumeOption(object):
     def name(self):
         """Gets the name of this UpdateVolumeOption.
 
-        新的云硬盘的名字，最大支持255个字节。
+        新的云硬盘的名字，name和description不能同时为null。最大支持255个字节。
 
         :return: The name of this UpdateVolumeOption.
         :rtype: str
@@ -78,7 +78,7 @@ class UpdateVolumeOption(object):
     def name(self, name):
         """Sets the name of this UpdateVolumeOption.
 
-        新的云硬盘的名字，最大支持255个字节。
+        新的云硬盘的名字，name和description不能同时为null。最大支持255个字节。
 
         :param name: The name of this UpdateVolumeOption.
         :type: str

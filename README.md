@@ -118,7 +118,6 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
         .with_endpoint(endpoint) \
         .with_file_log(path="test.log", log_level=logging.INFO) \  # Write log files
         .with_stream_log(log_level=logging.INFO) \                 # Write log to console
-        .with_enable_http_log(True) \                              # log whole http request and response
         .build()
     ```
 
@@ -134,8 +133,11 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
         - `stream`: stream object, default is sys.stdout.
         - `log_level`: log level, default is INFO.
     
-    **Warning**
-    - `with_enable_http_log`: We recommend you only use this for debugging purposes. Disable it in your production environments, as it records the whole request and response data, which may contains sensitive data, and it could be very large.
+    After enabled log, the SDK will print the access log by default, every request will be recorded in console like: '%(asctime)s %(thread)d %(name)s %(filename)s %(lineno)d %(levelname)s %(message)s'
+
+    ```shell script
+    2020-06-16 10:44:02,019 4568 HuaweiCloud-SDK http_handler.py 28 INFO "GET https://vpc.cn-north-1.myhuaweicloud.com/v1/0904f9e1f100d2932f94c01f9aa1cfd7/vpcs" 200 11 0:00:00.543430 b5c927ffdab8401e772e70aa49972037
+    ```
 
 5. Send a request and print response.
 
@@ -184,6 +186,47 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
     # get asynchronous response
     print(response.result())
     ```
+
+8. Troubleshooting
+
+    In some situation, you may need to debug your http requests, original http request and response information will be needed. The SDK provides a listener function to obtain the original encrypted http request and response information.
+
+    **Warning:** The original http log can only be used in troubleshooting scenarios, please do not print the original http header or body in the production environment. The log content is not encrypted and may contain sensitive information such as the password of your ECS or the password of your IAM user account, etc. When the response body is binary content, the body will be printed as "***" without detailed information.
+
+    ```python
+    def response_handler(**kwargs):
+        logger = kwargs.get("logger")
+        response = kwargs.get("response")
+        request = response.request
+
+        base = "> Request %s %s HTTP/1.1" % (request.method, request.path_url) + "\n"
+        if len(request.headers) != 0:
+            base = base + "> Headers:" + "\n"
+            for each in request.headers:
+                base = base + "    %s : %s" % (each, request.headers[each]) + "\n"
+        base = base + "> Body: %s" % request.body + "\n\n"
+
+        base = base + "< Response HTTP/1.1 %s " % response.status_code + "\n"
+        if len(response.headers) != 0:
+            base = base + "< Headers:" + "\n"
+            for each in response.headers:
+                base = base + "    %s : %s" % (each, response.headers[each],) + "\n"
+        base = base + "< Body: %s" % response.content
+        logger.debug(base)
+    
+    client = VpcClient.new_builder(VpcClient) \
+        .with_http_config(config) \
+        .with_credentials(credentials) \
+        .with_endpoint(endpoint) \
+        .with_file_log(path="test.log", log_level=logging.INFO) \
+        .with_stream_log(log_level=logging.INFO) \
+        .with_http_handler(HttpHandler().add_response_handler(response_handler)) \
+        .build()
+    ```
+
+	**where:**
+
+    HttpHandler supports add_request_handler and add_response_handler.
 
 ## Code example
 

@@ -29,17 +29,15 @@ class Link(object):
         'rel': 'rel'
     }
 
-    def __init__(self, href=None, rel=None):  # noqa: E501
+    def __init__(self, href=None, rel='next'):  # noqa: E501
         """Link - a model defined in huaweicloud sdk"""
 
         self._href = None
         self._rel = None
         self.discriminator = None
 
-        if href is not None:
-            self.href = href
-        if rel is not None:
-            self.rel = rel
+        self.href = href
+        self.rel = rel
 
     @property
     def href(self):

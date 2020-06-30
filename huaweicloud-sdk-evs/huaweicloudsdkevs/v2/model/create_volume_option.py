@@ -32,7 +32,8 @@ class CreateVolumeOption(object):
         'shareable': 'str',
         'size': 'int',
         'snapshot_id': 'str',
-        'volume_type': 'str'
+        'volume_type': 'str',
+        'tags': 'list[Tag]'
     }
 
     attribute_map = {
@@ -48,10 +49,11 @@ class CreateVolumeOption(object):
         'shareable': 'shareable',
         'size': 'size',
         'snapshot_id': 'snapshot_id',
-        'volume_type': 'volume_type'
+        'volume_type': 'volume_type',
+        'tags': 'tags'
     }
 
-    def __init__(self, availability_zone=None, backup_id=None, count=None, description=None, enterprise_project_id=None, image_ref=None, metadata=None, multiattach=None, name=None, shareable=None, size=None, snapshot_id=None, volume_type=None):  # noqa: E501
+    def __init__(self, availability_zone=None, backup_id=None, count=None, description=None, enterprise_project_id=None, image_ref=None, metadata=None, multiattach=None, name=None, shareable=None, size=None, snapshot_id=None, volume_type=None, tags=None):  # noqa: E501
         """CreateVolumeOption - a model defined in huaweicloud sdk"""
 
         self._availability_zone = None
@@ -67,6 +69,7 @@ class CreateVolumeOption(object):
         self._size = None
         self._snapshot_id = None
         self._volume_type = None
+        self._tags = None
         self.discriminator = None
 
         self.availability_zone = availability_zone
@@ -88,10 +91,13 @@ class CreateVolumeOption(object):
             self.name = name
         if shareable is not None:
             self.shareable = shareable
-        self.size = size
+        if size is not None:
+            self.size = size
         if snapshot_id is not None:
             self.snapshot_id = snapshot_id
         self.volume_type = volume_type
+        if tags is not None:
+            self.tags = tags
 
     @property
     def availability_zone(self):
@@ -361,7 +367,7 @@ class CreateVolumeOption(object):
     def volume_type(self):
         """Gets the volume_type of this CreateVolumeOption.
 
-        云硬盘类型。 目前支持“SSD”，“SAS”和“SATA”三种。 “SSD”为超高IO云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘 当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败
+        云硬盘类型。  目前支持“SSD”，“SAS”和“SATA”三种。 “SSD”为超高IO云硬盘 \"GPSSD\"为通用型SSD云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘 当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败。  说明： 从快照创建云硬盘时，volume_type字段必须和快照源云硬盘保持一致。 了解不同磁盘类型的详细信息，请参见 [磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
 
         :return: The volume_type of this CreateVolumeOption.
         :rtype: str
@@ -372,12 +378,34 @@ class CreateVolumeOption(object):
     def volume_type(self, volume_type):
         """Sets the volume_type of this CreateVolumeOption.
 
-        云硬盘类型。 目前支持“SSD”，“SAS”和“SATA”三种。 “SSD”为超高IO云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘 当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败
+        云硬盘类型。  目前支持“SSD”，“SAS”和“SATA”三种。 “SSD”为超高IO云硬盘 \"GPSSD\"为通用型SSD云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘 当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败。  说明： 从快照创建云硬盘时，volume_type字段必须和快照源云硬盘保持一致。 了解不同磁盘类型的详细信息，请参见 [磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
 
         :param volume_type: The volume_type of this CreateVolumeOption.
         :type: str
         """
         self._volume_type = volume_type
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateVolumeOption.
+
+        云硬盘标签信息。
+
+        :return: The tags of this CreateVolumeOption.
+        :rtype: list[Tag]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateVolumeOption.
+
+        云硬盘标签信息。
+
+        :param tags: The tags of this CreateVolumeOption.
+        :type: list[Tag]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

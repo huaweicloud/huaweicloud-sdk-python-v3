@@ -38,7 +38,8 @@ class UpdateVolumeResponse(object):
         'status': 'str',
         'volume_image_metadata': 'ImageMetadata',
         'volume_type': 'str',
-        'description': 'str'
+        'description': 'str',
+        'os_volume_replicationextended_status': 'str'
     }
 
     attribute_map = {
@@ -60,10 +61,11 @@ class UpdateVolumeResponse(object):
         'status': 'status',
         'volume_image_metadata': 'volume_image_metadata',
         'volume_type': 'volume_type',
-        'description': 'description'
+        'description': 'description',
+        'os_volume_replicationextended_status': 'os-volume-replication:extended_status'
     }
 
-    def __init__(self, attachments=None, availability_zone=None, bootable=None, created_at=None, id=None, links=None, metadata=None, multiattach=None, name=None, os_vol_host_attrhost=None, os_vol_tenant_attrtenant_id=None, shareable=None, size=None, snapshot_id=None, source_volid=None, status=None, volume_image_metadata=None, volume_type=None, description=None):  # noqa: E501
+    def __init__(self, attachments=None, availability_zone=None, bootable=None, created_at=None, id=None, links=None, metadata=None, multiattach=None, name=None, os_vol_host_attrhost=None, os_vol_tenant_attrtenant_id=None, shareable=None, size=None, snapshot_id=None, source_volid=None, status=None, volume_image_metadata=None, volume_type=None, description=None, os_volume_replicationextended_status=None):  # noqa: E501
         """UpdateVolumeResponse - a model defined in huaweicloud sdk"""
 
         self._attachments = None
@@ -85,6 +87,7 @@ class UpdateVolumeResponse(object):
         self._volume_image_metadata = None
         self._volume_type = None
         self._description = None
+        self._os_volume_replicationextended_status = None
         self.discriminator = None
 
         if attachments is not None:
@@ -125,6 +128,8 @@ class UpdateVolumeResponse(object):
             self.volume_type = volume_type
         if description is not None:
             self.description = description
+        if os_volume_replicationextended_status is not None:
+            self.os_volume_replicationextended_status = os_volume_replicationextended_status
 
     @property
     def attachments(self):
@@ -539,6 +544,28 @@ class UpdateVolumeResponse(object):
         :type: str
         """
         self._description = description
+
+    @property
+    def os_volume_replicationextended_status(self):
+        """Gets the os_volume_replicationextended_status of this UpdateVolumeResponse.
+
+        预留属性。
+
+        :return: The os_volume_replicationextended_status of this UpdateVolumeResponse.
+        :rtype: str
+        """
+        return self._os_volume_replicationextended_status
+
+    @os_volume_replicationextended_status.setter
+    def os_volume_replicationextended_status(self, os_volume_replicationextended_status):
+        """Sets the os_volume_replicationextended_status of this UpdateVolumeResponse.
+
+        预留属性。
+
+        :param os_volume_replicationextended_status: The os_volume_replicationextended_status of this UpdateVolumeResponse.
+        :type: str
+        """
+        self._os_volume_replicationextended_status = os_volume_replicationextended_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

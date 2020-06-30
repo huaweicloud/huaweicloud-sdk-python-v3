@@ -40,7 +40,6 @@ class CinderListVolumeTypesResponse(object):
     def volume_types(self):
         """Gets the volume_types of this CinderListVolumeTypesResponse.
 
-        云硬盘类型列表信息。
 
         :return: The volume_types of this CinderListVolumeTypesResponse.
         :rtype: list[VolumeType]
@@ -51,7 +50,6 @@ class CinderListVolumeTypesResponse(object):
     def volume_types(self, volume_types):
         """Sets the volume_types of this CinderListVolumeTypesResponse.
 
-        云硬盘类型列表信息。
 
         :param volume_types: The volume_types of this CinderListVolumeTypesResponse.
         :type: list[VolumeType]

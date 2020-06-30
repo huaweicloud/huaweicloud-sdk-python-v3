@@ -148,7 +148,7 @@ class JobEntities(object):
     def sub_jobs(self):
         """Gets the sub_jobs of this JobEntities.
 
-        子Job的信息。
+        子Job的信息。当存在子Job信息时，entities中的其他字段将不会返回。
 
         :return: The sub_jobs of this JobEntities.
         :rtype: list[SubJob]
@@ -159,7 +159,7 @@ class JobEntities(object):
     def sub_jobs(self, sub_jobs):
         """Sets the sub_jobs of this JobEntities.
 
-        子Job的信息。
+        子Job的信息。当存在子Job信息时，entities中的其他字段将不会返回。
 
         :param sub_jobs: The sub_jobs of this JobEntities.
         :type: list[SubJob]

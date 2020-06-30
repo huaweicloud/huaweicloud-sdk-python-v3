@@ -121,7 +121,6 @@
         .with_endpoint(endpoint) \
         .with_file_log(path="test.log", log_level=logging.INFO) \  # 日志打印至文件
         .with_stream_log(log_level=logging.INFO) \                 # 日志打印至控制台
-        .with_enable_http_log(True) \                              # 打开HTTP请求日志
         .build()
     ```
 
@@ -136,9 +135,12 @@
     - `with_stream_log` 支持如下配置：
         - `stream`: 流对象，默认sys.stdout。
         - `log_level`: 日志级别，默认INFO。
-    
-    **注意：**
-    - `with_enable_http_log`: http日志仅用于开发场景下的问题定位，生产环境不推荐打开此功能。由于此功能会打印详细的请求以及相应信息，可能包含敏感信息，同时可能导致日志文件过大。
+
+    打开日志开关后，每次请求将打印访问日志，格式如下：'%(asctime)s %(thread)d %(name)s %(filename)s %(lineno)d %(levelname)s %(message)s'
+
+    ```shell script
+    2020-06-16 10:44:02,019 4568 HuaweiCloud-SDK http_handler.py 28 INFO "GET https://vpc.cn-north-1.myhuaweicloud.com/v1/0904f9e1f100d2932f94c01f9aa1cfd7/vpcs" 200 11 0:00:00.543430 b5c927ffdab8401e772e70aa49972037
+    ```
 
 5. 发送请求并查看响应.
 
@@ -158,7 +160,7 @@
     | | | RetryOutageException | 在重试策略消耗完成已后，仍无有效的响应 |
     | ServiceResponseException | 服务器响应异常 | ServerResponseException | 服务端内部错误，Http响应码：[500,] |
     | | | ClientRequestException | 请求参数不合法，Http响应码：[400， 500) |
-    
+
     ```python
     # 异常处理
     try:
@@ -187,6 +189,48 @@
     # 获取异步请求结果
     print(response.result())
     ```
+
+8. 问题定位
+
+    在某些场景下可能对业务发出的Http请求进行Debug，需要看到原始的Http请求和返回信息，SDK提供侦听器功能来获取原始的为加密的Http请求和返回信息。
+
+    **注意：** 原始信息打印仅在debug阶段使用，请不要在生产系统中将原始的Http头和Body信息打印到日志，这些信息并未加密且其中包含敏感数据，例如所创建虚拟机的密码，IAM用户的密码等;
+    当Body体为二进制内容,即Content-Type标识为二进制时 body为"***",详细内容不输出。
+
+    ```python
+    def response_handler(**kwargs):
+        logger = kwargs.get("logger")
+        response = kwargs.get("response")
+        request = response.request
+
+        base = "> Request %s %s HTTP/1.1" % (request.method, request.path_url) + "\n"
+        if len(request.headers) != 0:
+            base = base + "> Headers:" + "\n"
+            for each in request.headers:
+                base = base + "    %s : %s" % (each, request.headers[each]) + "\n"
+        base = base + "> Body: %s" % request.body + "\n\n"
+
+        base = base + "< Response HTTP/1.1 %s " % response.status_code + "\n"
+        if len(response.headers) != 0:
+            base = base + "< Headers:" + "\n"
+            for each in response.headers:
+                base = base + "    %s : %s" % (each, response.headers[each],) + "\n"
+        base = base + "< Body: %s" % response.content
+        logger.debug(base)
+    
+    client = VpcClient.new_builder(VpcClient) \
+        .with_http_config(config) \
+        .with_credentials(credentials) \
+        .with_endpoint(endpoint) \
+        .with_file_log(path="test.log", log_level=logging.INFO) \
+        .with_stream_log(log_level=logging.INFO) \
+        .with_http_handler(HttpHandler().add_response_handler(response_handler)) \
+        .build()
+    ```
+
+   	**说明:**
+
+    HttpHandler支持如下方法add_request_handler、add_response_handler。
 
 ## 代码实例
 

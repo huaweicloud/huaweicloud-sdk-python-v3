@@ -21,23 +21,28 @@ class AgencyAuthIdentity(object):
 
     openapi_types = {
         'methods': 'list[str]',
-        'assume_role': 'IdentityAssumerole'
+        'assume_role': 'IdentityAssumerole',
+        'policy': 'ServicePolicy'
     }
 
     attribute_map = {
         'methods': 'methods',
-        'assume_role': 'assume_role'
+        'assume_role': 'assume_role',
+        'policy': 'policy'
     }
 
-    def __init__(self, methods=None, assume_role=None):  # noqa: E501
+    def __init__(self, methods=None, assume_role=None, policy=None):  # noqa: E501
         """AgencyAuthIdentity - a model defined in huaweicloud sdk"""
 
         self._methods = None
         self._assume_role = None
+        self._policy = None
         self.discriminator = None
 
         self.methods = methods
         self.assume_role = assume_role
+        if policy is not None:
+            self.policy = policy
 
     @property
     def methods(self):
@@ -80,6 +85,26 @@ class AgencyAuthIdentity(object):
         :type: IdentityAssumerole
         """
         self._assume_role = assume_role
+
+    @property
+    def policy(self):
+        """Gets the policy of this AgencyAuthIdentity.
+
+
+        :return: The policy of this AgencyAuthIdentity.
+        :rtype: ServicePolicy
+        """
+        return self._policy
+
+    @policy.setter
+    def policy(self, policy):
+        """Sets the policy of this AgencyAuthIdentity.
+
+
+        :param policy: The policy of this AgencyAuthIdentity.
+        :type: ServicePolicy
+        """
+        self._policy = policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

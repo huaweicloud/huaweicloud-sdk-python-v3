@@ -67,7 +67,7 @@ class SubJob(object):
     def status(self):
         """Gets the status of this SubJob.
 
-        job的状态。SUCCESS：成功。RUNNING：运行中。FAIL：失败。INIT：正在初始化。
+        子job的状态。SUCCESS：成功。RUNNING：运行中。FAIL：失败。INIT：正在初始化。
 
         :return: The status of this SubJob.
         :rtype: str
@@ -78,7 +78,7 @@ class SubJob(object):
     def status(self, status):
         """Sets the status of this SubJob.
 
-        job的状态。SUCCESS：成功。RUNNING：运行中。FAIL：失败。INIT：正在初始化。
+        子job的状态。SUCCESS：成功。RUNNING：运行中。FAIL：失败。INIT：正在初始化。
 
         :param status: The status of this SubJob.
         :type: str
@@ -109,7 +109,7 @@ class SubJob(object):
     def job_id(self):
         """Gets the job_id of this SubJob.
 
-        job的ID。
+        子job的ID。
 
         :return: The job_id of this SubJob.
         :rtype: str
@@ -120,7 +120,7 @@ class SubJob(object):
     def job_id(self, job_id):
         """Sets the job_id of this SubJob.
 
-        job的ID。
+        子job的ID。
 
         :param job_id: The job_id of this SubJob.
         :type: str
@@ -131,7 +131,7 @@ class SubJob(object):
     def job_type(self):
         """Gets the job_type of this SubJob.
 
-        job的类型。createVolume：创建单个云硬盘。batchCreateVolume：批量创建云硬盘。deleteVolume：删除单个云硬盘。extendVolume：扩容云硬盘。bulkDeleteVolume：批量删除云硬盘。deleteSingleVolume：批量删除时逐个删除单个云硬盘。retypeVolume：对云硬盘做硬盘类型变更。
+        子job的类型。createVolume：创建单个云硬盘。batchCreateVolume：批量创建云硬盘。deleteVolume：删除单个云硬盘。extendVolume：扩容云硬盘。bulkDeleteVolume：批量删除云硬盘。deleteSingleVolume：批量删除时逐个删除单个云硬盘。retypeVolume：对云硬盘做硬盘类型变更。
 
         :return: The job_type of this SubJob.
         :rtype: str
@@ -142,7 +142,7 @@ class SubJob(object):
     def job_type(self, job_type):
         """Sets the job_type of this SubJob.
 
-        job的类型。createVolume：创建单个云硬盘。batchCreateVolume：批量创建云硬盘。deleteVolume：删除单个云硬盘。extendVolume：扩容云硬盘。bulkDeleteVolume：批量删除云硬盘。deleteSingleVolume：批量删除时逐个删除单个云硬盘。retypeVolume：对云硬盘做硬盘类型变更。
+        子job的类型。createVolume：创建单个云硬盘。batchCreateVolume：批量创建云硬盘。deleteVolume：删除单个云硬盘。extendVolume：扩容云硬盘。bulkDeleteVolume：批量删除云硬盘。deleteSingleVolume：批量删除时逐个删除单个云硬盘。retypeVolume：对云硬盘做硬盘类型变更。
 
         :param job_type: The job_type of this SubJob.
         :type: str
@@ -197,7 +197,7 @@ class SubJob(object):
     def error_code(self):
         """Gets the error_code of this SubJob.
 
-        job执行失败时的错误码。
+        子job执行失败时的错误码。
 
         :return: The error_code of this SubJob.
         :rtype: str
@@ -208,7 +208,7 @@ class SubJob(object):
     def error_code(self, error_code):
         """Sets the error_code of this SubJob.
 
-        job执行失败时的错误码。
+        子job执行失败时的错误码。
 
         :param error_code: The error_code of this SubJob.
         :type: str
@@ -219,7 +219,7 @@ class SubJob(object):
     def fail_reason(self):
         """Gets the fail_reason of this SubJob.
 
-        job执行失败时的错误原因。
+        子job执行失败时的错误原因。
 
         :return: The fail_reason of this SubJob.
         :rtype: str
@@ -230,7 +230,7 @@ class SubJob(object):
     def fail_reason(self, fail_reason):
         """Sets the fail_reason of this SubJob.
 
-        job执行失败时的错误原因。
+        子job执行失败时的错误原因。
 
         :param fail_reason: The fail_reason of this SubJob.
         :type: str

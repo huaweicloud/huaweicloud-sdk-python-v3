@@ -23,7 +23,7 @@ class QuotaDetail(object):
         'in_use': 'int',
         'limit': 'int',
         'reserved': 'int',
-        'allocated': 'int'
+        'allocated': 'str'
     }
 
     attribute_map = {
@@ -120,7 +120,7 @@ class QuotaDetail(object):
         预留属性。
 
         :return: The allocated of this QuotaDetail.
-        :rtype: int
+        :rtype: str
         """
         return self._allocated
 
@@ -131,7 +131,7 @@ class QuotaDetail(object):
         预留属性。
 
         :param allocated: The allocated of this QuotaDetail.
-        :type: int
+        :type: str
         """
         self._allocated = allocated
 

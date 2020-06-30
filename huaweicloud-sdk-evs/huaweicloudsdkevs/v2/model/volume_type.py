@@ -22,42 +22,42 @@ class VolumeType(object):
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'is_public': 'bool',
         'extra_specs': 'VolumeTypeExtraSpecs',
         'description': 'str',
-        'qos_specs_id': 'str'
+        'qos_specs_id': 'str',
+        'is_public': 'bool'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'is_public': 'is_public',
         'extra_specs': 'extra_specs',
         'description': 'description',
-        'qos_specs_id': 'qos_specs_id'
+        'qos_specs_id': 'qos_specs_id',
+        'is_public': 'is_public'
     }
 
-    def __init__(self, id=None, name=None, is_public=None, extra_specs=None, description=None, qos_specs_id=None):  # noqa: E501
+    def __init__(self, id=None, name=None, extra_specs=None, description=None, qos_specs_id=None, is_public=None):  # noqa: E501
         """VolumeType - a model defined in huaweicloud sdk"""
 
         self._id = None
         self._name = None
-        self._is_public = None
         self._extra_specs = None
         self._description = None
         self._qos_specs_id = None
+        self._is_public = None
         self.discriminator = None
 
         self.id = id
         self.name = name
-        if is_public is not None:
-            self.is_public = is_public
         if extra_specs is not None:
             self.extra_specs = extra_specs
         if description is not None:
             self.description = description
         if qos_specs_id is not None:
             self.qos_specs_id = qos_specs_id
+        if is_public is not None:
+            self.is_public = is_public
 
     @property
     def id(self):
@@ -102,28 +102,6 @@ class VolumeType(object):
         :type: str
         """
         self._name = name
-
-    @property
-    def is_public(self):
-        """Gets the is_public of this VolumeType.
-
-        预留属性。
-
-        :return: The is_public of this VolumeType.
-        :rtype: bool
-        """
-        return self._is_public
-
-    @is_public.setter
-    def is_public(self, is_public):
-        """Sets the is_public of this VolumeType.
-
-        预留属性。
-
-        :param is_public: The is_public of this VolumeType.
-        :type: bool
-        """
-        self._is_public = is_public
 
     @property
     def extra_specs(self):
@@ -188,6 +166,28 @@ class VolumeType(object):
         :type: str
         """
         self._qos_specs_id = qos_specs_id
+
+    @property
+    def is_public(self):
+        """Gets the is_public of this VolumeType.
+
+        预留属性。
+
+        :return: The is_public of this VolumeType.
+        :rtype: bool
+        """
+        return self._is_public
+
+    @is_public.setter
+    def is_public(self, is_public):
+        """Sets the is_public of this VolumeType.
+
+        预留属性。
+
+        :param is_public: The is_public of this VolumeType.
+        :type: bool
+        """
+        self._is_public = is_public
 
     def to_dict(self):
         """Returns the model properties as a dict"""

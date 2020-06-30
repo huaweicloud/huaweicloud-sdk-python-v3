@@ -33,20 +33,22 @@ class SdkResponse:
 
 class FutureSdkResponse:
     def __init__(self, future, logger):
-        self.__future = future
-        self.__logger = logger
+        self._future = future
+        self._logger = logger
 
     def result(self):
         try:
-            response = self.__future.result().data
+            future_response = self._future.result().result()
+            response = future_response.data \
+                if hasattr(future_response, 'data') and future_response.data is not None else future_response
         except ConnectionError as connectionError:
             for each in connectionError.args:
                 if isinstance(each.reason, SSLError):
-                    self.__logger.error("Sync SslHandShakeException occurred. %s" % str(each.reason))
+                    self._logger.error("Sync SslHandShakeException occurred. %s" % str(each.reason))
                     raise exceptions.SslHandShakeException(str(each.reason))
                 if isinstance(each.reason, NewConnectionError):
-                    self.__logger.error("Sync ConnectionException occurred. %s" % str(each.reason))
+                    self._logger.error("Sync ConnectionException occurred. %s" % str(each.reason))
                     raise exceptions.ConnectionException(str(each.reason))
-            self.__logger.error("ConnectionException occurred. %s" % str(connectionError))
+            self._logger.error("ConnectionException occurred. %s" % str(connectionError))
             raise exceptions.ConnectionException(str(connectionError))
         return response

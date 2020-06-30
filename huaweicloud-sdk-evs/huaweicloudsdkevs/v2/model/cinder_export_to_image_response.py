@@ -20,7 +20,7 @@ class CinderExportToImageResponse(object):
     sensitive_list = []
 
     openapi_types = {
-        'os_volume_upload_image': 'ExportToImageDetail'
+        'os_volume_upload_image': 'Image'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class CinderExportToImageResponse(object):
 
 
         :return: The os_volume_upload_image of this CinderExportToImageResponse.
-        :rtype: ExportToImageDetail
+        :rtype: Image
         """
         return self._os_volume_upload_image
 
@@ -52,7 +52,7 @@ class CinderExportToImageResponse(object):
 
 
         :param os_volume_upload_image: The os_volume_upload_image of this CinderExportToImageResponse.
-        :type: ExportToImageDetail
+        :type: Image
         """
         self._os_volume_upload_image = os_volume_upload_image
 

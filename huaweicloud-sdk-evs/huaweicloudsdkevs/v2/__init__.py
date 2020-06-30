@@ -7,7 +7,7 @@ from huaweicloudsdkevs.v2.evs_client import EvsClient
 from huaweicloudsdkevs.v2.evs_async_client import EvsAsyncClient
 # import models into sdk package
 from huaweicloudsdkevs.v2.model.attachment import Attachment
-from huaweicloudsdkevs.v2.model.availability_zone import AvailabilityZone
+from huaweicloudsdkevs.v2.model.az_info import AzInfo
 from huaweicloudsdkevs.v2.model.batch_create_volume_tags_request import BatchCreateVolumeTagsRequest
 from huaweicloudsdkevs.v2.model.batch_create_volume_tags_request_body import BatchCreateVolumeTagsRequestBody
 from huaweicloudsdkevs.v2.model.batch_create_volume_tags_response import BatchCreateVolumeTagsResponse
@@ -39,7 +39,7 @@ from huaweicloudsdkevs.v2.model.delete_snapshot_response import DeleteSnapshotRe
 from huaweicloudsdkevs.v2.model.delete_tags_option import DeleteTagsOption
 from huaweicloudsdkevs.v2.model.delete_volume_request import DeleteVolumeRequest
 from huaweicloudsdkevs.v2.model.delete_volume_response import DeleteVolumeResponse
-from huaweicloudsdkevs.v2.model.export_to_image_detail import ExportToImageDetail
+from huaweicloudsdkevs.v2.model.image import Image
 from huaweicloudsdkevs.v2.model.image_metadata import ImageMetadata
 from huaweicloudsdkevs.v2.model.job_entities import JobEntities
 from huaweicloudsdkevs.v2.model.link import Link
@@ -88,10 +88,10 @@ from huaweicloudsdkevs.v2.model.update_volume_option import UpdateVolumeOption
 from huaweicloudsdkevs.v2.model.update_volume_request import UpdateVolumeRequest
 from huaweicloudsdkevs.v2.model.update_volume_request_body import UpdateVolumeRequestBody
 from huaweicloudsdkevs.v2.model.update_volume_response import UpdateVolumeResponse
+from huaweicloudsdkevs.v2.model.volume_attachment import VolumeAttachment
 from huaweicloudsdkevs.v2.model.volume_detail import VolumeDetail
 from huaweicloudsdkevs.v2.model.volume_metadata import VolumeMetadata
 from huaweicloudsdkevs.v2.model.volume_type import VolumeType
 from huaweicloudsdkevs.v2.model.volume_type_extra_specs import VolumeTypeExtraSpecs
-from huaweicloudsdkevs.v2.model.volume_type_for_export import VolumeTypeForExport
 from huaweicloudsdkevs.v2.model.zone_state import ZoneState
 
