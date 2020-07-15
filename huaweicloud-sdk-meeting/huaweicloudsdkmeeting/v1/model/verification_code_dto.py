@@ -6,7 +6,10 @@ import re
 import six
 
 
-class VerificationCodeDTO(object):
+
+
+
+class VerificationCodeDTO:
 
 
     """
@@ -31,8 +34,10 @@ class VerificationCodeDTO(object):
         'country': 'country'
     }
 
-    def __init__(self, contact=None, verification_code=None, country='chinaPR'):  # noqa: E501
+    def __init__(self, contact=None, verification_code=None, country='chinaPR'):
         """VerificationCodeDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._contact = None
         self._verification_code = None

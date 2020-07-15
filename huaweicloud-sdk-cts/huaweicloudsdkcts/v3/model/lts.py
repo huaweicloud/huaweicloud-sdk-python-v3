@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Lts(object):
+
+
+
+class Lts:
 
 
     """
@@ -31,8 +34,10 @@ class Lts(object):
         'log_topic_name': 'log_topic_name'
     }
 
-    def __init__(self, is_lts_enabled=None, log_group_name=None, log_topic_name=None):  # noqa: E501
+    def __init__(self, is_lts_enabled=None, log_group_name=None, log_topic_name=None):
         """Lts - a model defined in huaweicloud sdk"""
+        
+        
 
         self._is_lts_enabled = None
         self._log_group_name = None

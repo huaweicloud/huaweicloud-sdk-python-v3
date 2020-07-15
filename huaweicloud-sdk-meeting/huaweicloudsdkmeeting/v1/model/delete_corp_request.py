@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteCorpRequest(object):
+
+
+
+class DeleteCorpRequest:
 
 
     """
@@ -33,8 +36,10 @@ class DeleteCorpRequest(object):
         'force_delete': 'forceDelete'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, id=None, force_delete=False):  # noqa: E501
+    def __init__(self, x_request_id=None, accept_language=None, id=None, force_delete=False):
         """DeleteCorpRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_request_id = None
         self._accept_language = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class InterfaceAttachment(object):
+
+
+
+class InterfaceAttachment:
 
 
     """
@@ -35,8 +38,10 @@ class InterfaceAttachment(object):
         'port_state': 'port_state'
     }
 
-    def __init__(self, fixed_ips=None, mac_addr=None, net_id=None, port_id=None, port_state=None):  # noqa: E501
+    def __init__(self, fixed_ips=None, mac_addr=None, net_id=None, port_id=None, port_state=None):
         """InterfaceAttachment - a model defined in huaweicloud sdk"""
+        
+        
 
         self._fixed_ips = None
         self._mac_addr = None

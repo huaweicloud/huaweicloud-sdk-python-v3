@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowProductResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowProductResponse(SdkResponse):
 
 
     """
@@ -49,8 +52,10 @@ class ShowProductResponse(object):
         'create_time': 'create_time'
     }
 
-    def __init__(self, app_id=None, app_name=None, product_id=None, name=None, device_type=None, protocol_type=None, data_format=None, manufacturer_name=None, industry=None, description=None, service_capabilities=None, create_time=None):  # noqa: E501
+    def __init__(self, app_id=None, app_name=None, product_id=None, name=None, device_type=None, protocol_type=None, data_format=None, manufacturer_name=None, industry=None, description=None, service_capabilities=None, create_time=None):
         """ShowProductResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._app_id = None
         self._app_name = None

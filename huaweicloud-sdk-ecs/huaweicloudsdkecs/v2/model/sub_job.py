@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SubJob(object):
+
+
+
+class SubJob:
 
 
     """
@@ -41,8 +44,10 @@ class SubJob(object):
         'fail_reason': 'fail_reason'
     }
 
-    def __init__(self, status=None, entities=None, job_id=None, job_type=None, begin_time=None, end_time=None, error_code=None, fail_reason=None):  # noqa: E501
+    def __init__(self, status=None, entities=None, job_id=None, job_type=None, begin_time=None, end_time=None, error_code=None, fail_reason=None):
         """SubJob - a model defined in huaweicloud sdk"""
+        
+        
 
         self._status = None
         self._entities = None

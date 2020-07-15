@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RolePolicy(object):
+
+
+
+class RolePolicy:
 
 
     """
@@ -31,8 +34,10 @@ class RolePolicy(object):
         'version': 'Version'
     }
 
-    def __init__(self, depends=None, statement=None, version=None):  # noqa: E501
+    def __init__(self, depends=None, statement=None, version=None):
         """RolePolicy - a model defined in huaweicloud sdk"""
+        
+        
 
         self._depends = None
         self._statement = None

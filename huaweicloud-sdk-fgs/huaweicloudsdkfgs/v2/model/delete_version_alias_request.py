@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteVersionAliasRequest(object):
+
+
+
+class DeleteVersionAliasRequest:
 
 
     """
@@ -29,8 +32,10 @@ class DeleteVersionAliasRequest(object):
         'name': 'name'
     }
 
-    def __init__(self, function_urn=None, name=None):  # noqa: E501
+    def __init__(self, function_urn=None, name=None):
         """DeleteVersionAliasRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._function_urn = None
         self._name = None

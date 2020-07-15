@@ -6,7 +6,10 @@ import re
 import six
 
 
-class NovaNetwork(object):
+
+
+
+class NovaNetwork:
 
 
     """
@@ -33,8 +36,10 @@ class NovaNetwork(object):
         'os_ext_ip_stype': 'OS-EXT-IPS:type'
     }
 
-    def __init__(self, addr=None, version=None, os_ext_ips_ma_cmac_addr=None, os_ext_ip_stype=None):  # noqa: E501
+    def __init__(self, addr=None, version=None, os_ext_ips_ma_cmac_addr=None, os_ext_ip_stype=None):
         """NovaNetwork - a model defined in huaweicloud sdk"""
+        
+        
 
         self._addr = None
         self._version = None

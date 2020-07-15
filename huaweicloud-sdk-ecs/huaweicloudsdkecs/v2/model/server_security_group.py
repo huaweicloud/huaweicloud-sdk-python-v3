@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ServerSecurityGroup(object):
+
+
+
+class ServerSecurityGroup:
 
 
     """
@@ -29,8 +32,10 @@ class ServerSecurityGroup(object):
         'id': 'id'
     }
 
-    def __init__(self, name=None, id=None):  # noqa: E501
+    def __init__(self, name=None, id=None):
         """ServerSecurityGroup - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._id = None

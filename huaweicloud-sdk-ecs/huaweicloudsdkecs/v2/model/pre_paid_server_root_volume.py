@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PrePaidServerRootVolume(object):
+
+
+
+class PrePaidServerRootVolume:
 
 
     """
@@ -37,8 +40,10 @@ class PrePaidServerRootVolume(object):
         'hwpassthrough': 'hw:passthrough'
     }
 
-    def __init__(self, volumetype=None, size=None, extendparam=None, cluster_type=None, cluster_id=None, hwpassthrough=False):  # noqa: E501
+    def __init__(self, volumetype=None, size=None, extendparam=None, cluster_type=None, cluster_id=None, hwpassthrough=False):
         """PrePaidServerRootVolume - a model defined in huaweicloud sdk"""
+        
+        
 
         self._volumetype = None
         self._size = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class NovaServerFlavor(object):
+
+
+
+class NovaServerFlavor:
 
 
     """
@@ -43,8 +46,10 @@ class NovaServerFlavor(object):
         'extra_specs': 'extra_specs'
     }
 
-    def __init__(self, id=None, links=None, vcpus=None, ram=None, disk=None, ephemeral=None, swap=None, original_name=None, extra_specs=None):  # noqa: E501
+    def __init__(self, id=None, links=None, vcpus=None, ram=None, disk=None, ephemeral=None, swap=None, original_name=None, extra_specs=None):
         """NovaServerFlavor - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._links = None

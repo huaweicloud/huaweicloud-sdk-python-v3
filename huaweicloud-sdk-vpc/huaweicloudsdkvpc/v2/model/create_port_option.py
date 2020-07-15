@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreatePortOption(object):
+
+
+
+class CreatePortOption:
 
 
     """
@@ -43,8 +46,10 @@ class CreatePortOption(object):
         'tenant_id': 'tenant_id'
     }
 
-    def __init__(self, name=None, network_id=None, fixed_ips=None, device_owner=None, security_groups=None, admin_state_up=None, allowed_address_pairs=None, extra_dhcp_opts=None, tenant_id=None):  # noqa: E501
+    def __init__(self, name=None, network_id=None, fixed_ips=None, device_owner=None, security_groups=None, admin_state_up=None, allowed_address_pairs=None, extra_dhcp_opts=None, tenant_id=None):
         """CreatePortOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._network_id = None

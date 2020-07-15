@@ -6,7 +6,10 @@ import re
 import six
 
 
-class QuotaInfo(object):
+
+
+
+class QuotaInfo:
 
 
     """
@@ -35,8 +38,10 @@ class QuotaInfo(object):
         'max': 'max'
     }
 
-    def __init__(self, type=None, used=None, quota=None, min=None, max=None):  # noqa: E501
+    def __init__(self, type=None, used=None, quota=None, min=None, max=None):
         """QuotaInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._type = None
         self._used = None

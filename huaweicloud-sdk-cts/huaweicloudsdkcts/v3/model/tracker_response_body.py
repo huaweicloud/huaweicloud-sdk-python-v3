@@ -6,7 +6,10 @@ import re
 import six
 
 
-class TrackerResponseBody(object):
+
+
+
+class TrackerResponseBody:
 
 
     """
@@ -53,8 +56,10 @@ class TrackerResponseBody(object):
         'data_bucket': 'data_bucket'
     }
 
-    def __init__(self, id=None, create_time=None, kms_id=None, is_support_validate=None, lts=None, tracker_type=None, domain_id=None, project_id=None, tracker_name=None, status=None, detail=None, is_support_trace_files_encryption=None, obs_info=None, data_bucket=None):  # noqa: E501
+    def __init__(self, id=None, create_time=None, kms_id=None, is_support_validate=None, lts=None, tracker_type=None, domain_id=None, project_id=None, tracker_name=None, status=None, detail=None, is_support_trace_files_encryption=None, obs_info=None, data_bucket=None):
         """TrackerResponseBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._create_time = None

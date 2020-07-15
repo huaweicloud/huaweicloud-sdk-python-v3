@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RollbackSnapshotOption(object):
+
+
+
+class RollbackSnapshotOption:
 
 
     """
@@ -29,8 +32,10 @@ class RollbackSnapshotOption(object):
         'volume_id': 'volume_id'
     }
 
-    def __init__(self, name=None, volume_id=None):  # noqa: E501
+    def __init__(self, name=None, volume_id=None):
         """RollbackSnapshotOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._volume_id = None

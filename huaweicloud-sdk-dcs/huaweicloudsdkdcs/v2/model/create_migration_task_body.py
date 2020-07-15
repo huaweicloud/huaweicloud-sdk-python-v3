@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateMigrationTaskBody(object):
+
+
+
+class CreateMigrationTaskBody:
 
 
     """
@@ -41,8 +44,10 @@ class CreateMigrationTaskBody(object):
         'target_instance': 'target_instance'
     }
 
-    def __init__(self, task_name=None, description=None, migration_type=None, migration_method=None, backup_files=None, network_type=None, source_instance=None, target_instance=None):  # noqa: E501
+    def __init__(self, task_name=None, description=None, migration_type=None, migration_method=None, backup_files=None, network_type=None, source_instance=None, target_instance=None):
         """CreateMigrationTaskBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._task_name = None
         self._description = None

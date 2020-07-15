@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowPolicyAndInstanceQuotaResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowPolicyAndInstanceQuotaResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ShowPolicyAndInstanceQuotaResponse(object):
         'all_quotas': 'AllQuotas'
     }
 
-    def __init__(self, all_quotas=None):  # noqa: E501
+    def __init__(self, all_quotas=None):
         """ShowPolicyAndInstanceQuotaResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._all_quotas = None
         self.discriminator = None

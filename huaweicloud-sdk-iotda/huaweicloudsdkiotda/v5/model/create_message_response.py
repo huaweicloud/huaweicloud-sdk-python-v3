@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateMessageResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CreateMessageResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class CreateMessageResponse(object):
         'result': 'result'
     }
 
-    def __init__(self, message_id=None, result=None):  # noqa: E501
+    def __init__(self, message_id=None, result=None):
         """CreateMessageResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._message_id = None
         self._result = None

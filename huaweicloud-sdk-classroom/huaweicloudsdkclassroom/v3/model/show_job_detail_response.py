@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowJobDetailResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowJobDetailResponse(SdkResponse):
 
 
     """
@@ -39,8 +42,10 @@ class ShowJobDetailResponse(object):
         'submit_job_num': 'submit_job_num'
     }
 
-    def __init__(self, accept_job_num=None, end_time=None, is_answer_visibility=None, is_score_visibility=None, average_score=None, score_job_num=None, submit_job_num=None):  # noqa: E501
+    def __init__(self, accept_job_num=None, end_time=None, is_answer_visibility=None, is_score_visibility=None, average_score=None, score_job_num=None, submit_job_num=None):
         """ShowJobDetailResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._accept_job_num = None
         self._end_time = None

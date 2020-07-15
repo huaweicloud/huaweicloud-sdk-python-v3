@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CorpBasicInfoDTO(object):
+
+
+
+class CorpBasicInfoDTO:
 
 
     """
@@ -49,8 +52,10 @@ class CorpBasicInfoDTO(object):
         'auto_user_create': 'autoUserCreate'
     }
 
-    def __init__(self, id=None, name=None, address=None, admin_name=None, account=None, phone=None, country=None, email=None, enable_sms=None, enable_cloud_disk=None, enable_pstn=None, auto_user_create=None):  # noqa: E501
+    def __init__(self, id=None, name=None, address=None, admin_name=None, account=None, phone=None, country=None, email=None, enable_sms=None, enable_cloud_disk=None, enable_pstn=None, auto_user_create=None):
         """CorpBasicInfoDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._name = None

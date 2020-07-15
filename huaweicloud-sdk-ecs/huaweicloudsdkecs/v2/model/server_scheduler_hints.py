@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ServerSchedulerHints(object):
+
+
+
+class ServerSchedulerHints:
 
 
     """
@@ -31,8 +34,10 @@ class ServerSchedulerHints(object):
         'same_host': 'same_host'
     }
 
-    def __init__(self, group=None, different_host=None, same_host=None):  # noqa: E501
+    def __init__(self, group=None, different_host=None, same_host=None):
         """ServerSchedulerHints - a model defined in huaweicloud sdk"""
+        
+        
 
         self._group = None
         self._different_host = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class MetricDataItem(object):
+
+
+
+class MetricDataItem:
 
 
     """
@@ -37,8 +40,10 @@ class MetricDataItem(object):
         'type': 'type'
     }
 
-    def __init__(self, metric=None, ttl=None, collect_time=None, value=None, unit=None, type=None):  # noqa: E501
+    def __init__(self, metric=None, ttl=None, collect_time=None, value=None, unit=None, type=None):
         """MetricDataItem - a model defined in huaweicloud sdk"""
+        
+        
 
         self._metric = None
         self._ttl = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeviceDataCondition(object):
+
+
+
+class DeviceDataCondition:
 
 
     """
@@ -31,8 +34,10 @@ class DeviceDataCondition(object):
         'filters': 'filters'
     }
 
-    def __init__(self, device_id=None, product_id=None, filters=None):  # noqa: E501
+    def __init__(self, device_id=None, product_id=None, filters=None):
         """DeviceDataCondition - a model defined in huaweicloud sdk"""
+        
+        
 
         self._device_id = None
         self._product_id = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneListUsersRequest(object):
+
+
+
+class KeystoneListUsersRequest:
 
 
     """
@@ -32,8 +35,10 @@ class KeystoneListUsersRequest(object):
         'password_expires_at': 'password_expires_at'
     }
 
-    def __init__(self, enabled=None, name=None, password_expires_at=None):  # noqa: E501
+    def __init__(self, enabled=None, name=None, password_expires_at=None):
         """KeystoneListUsersRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._enabled = None
         self._name = None

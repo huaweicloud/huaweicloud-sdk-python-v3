@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteBackupFileRequest(object):
+
+
+
+class DeleteBackupFileRequest:
 
 
     """
@@ -29,8 +32,10 @@ class DeleteBackupFileRequest(object):
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, backup_id=None, instance_id=None):  # noqa: E501
+    def __init__(self, backup_id=None, instance_id=None):
         """DeleteBackupFileRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._backup_id = None
         self._instance_id = None

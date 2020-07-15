@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateVpcOption(object):
+
+
+
+class CreateVpcOption:
 
 
     """
@@ -33,8 +36,10 @@ class CreateVpcOption(object):
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, cidr=None, name=None, description=None, enterprise_project_id='0'):  # noqa: E501
+    def __init__(self, cidr=None, name=None, description=None, enterprise_project_id='0'):
         """CreateVpcOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._cidr = None
         self._name = None

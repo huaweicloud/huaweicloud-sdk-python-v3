@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DownloadBackupFilesReq(object):
+
+
+
+class DownloadBackupFilesReq:
 
 
     """
@@ -27,8 +30,10 @@ class DownloadBackupFilesReq(object):
         'expiration': 'expiration'
     }
 
-    def __init__(self, expiration=None):  # noqa: E501
+    def __init__(self, expiration=None):
         """DownloadBackupFilesReq - a model defined in huaweicloud sdk"""
+        
+        
 
         self._expiration = None
         self.discriminator = None

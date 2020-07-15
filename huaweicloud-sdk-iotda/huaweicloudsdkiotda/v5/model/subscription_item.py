@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SubscriptionItem(object):
+
+
+
+class SubscriptionItem:
 
 
     """
@@ -33,8 +36,10 @@ class SubscriptionItem(object):
         'channel': 'channel'
     }
 
-    def __init__(self, subscription_id=None, subject=None, callbackurl=None, channel=None):  # noqa: E501
+    def __init__(self, subscription_id=None, subject=None, callbackurl=None, channel=None):
         """SubscriptionItem - a model defined in huaweicloud sdk"""
+        
+        
 
         self._subscription_id = None
         self._subject = None

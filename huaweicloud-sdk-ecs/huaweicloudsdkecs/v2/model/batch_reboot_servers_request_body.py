@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchRebootServersRequestBody(object):
+
+
+
+class BatchRebootServersRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class BatchRebootServersRequestBody(object):
         'reboot': 'reboot'
     }
 
-    def __init__(self, reboot=None):  # noqa: E501
+    def __init__(self, reboot=None):
         """BatchRebootServersRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._reboot = None
         self.discriminator = None

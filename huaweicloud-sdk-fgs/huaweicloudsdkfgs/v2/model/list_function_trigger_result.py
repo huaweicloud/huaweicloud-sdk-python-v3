@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListFunctionTriggerResult(object):
+
+
+
+class ListFunctionTriggerResult:
 
 
     """
@@ -37,8 +40,10 @@ class ListFunctionTriggerResult(object):
         'created_time': 'created_time'
     }
 
-    def __init__(self, trigger_id=None, trigger_type_code=None, trigger_status=None, event_data=None, last_updated_time=None, created_time=None):  # noqa: E501
+    def __init__(self, trigger_id=None, trigger_type_code=None, trigger_status=None, event_data=None, last_updated_time=None, created_time=None):
         """ListFunctionTriggerResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._trigger_id = None
         self._trigger_type_code = None

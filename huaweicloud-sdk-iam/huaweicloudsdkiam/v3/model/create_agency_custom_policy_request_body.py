@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateAgencyCustomPolicyRequestBody(object):
+
+
+
+class CreateAgencyCustomPolicyRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class CreateAgencyCustomPolicyRequestBody(object):
         'role': 'role'
     }
 
-    def __init__(self, role=None):  # noqa: E501
+    def __init__(self, role=None):
         """CreateAgencyCustomPolicyRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._role = None
         self.discriminator = None

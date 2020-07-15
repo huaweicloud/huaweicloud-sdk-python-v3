@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Files(object):
+
+
+
+class Files:
 
 
     """
@@ -31,8 +34,10 @@ class Files(object):
         'update_at': 'update_at'
     }
 
-    def __init__(self, file_name=None, size=None, update_at=None):  # noqa: E501
+    def __init__(self, file_name=None, size=None, update_at=None):
         """Files - a model defined in huaweicloud sdk"""
+        
+        
 
         self._file_name = None
         self._size = None

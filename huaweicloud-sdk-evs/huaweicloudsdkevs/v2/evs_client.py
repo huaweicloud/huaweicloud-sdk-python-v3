@@ -11,6 +11,7 @@ import six
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class EvsClient(Client):
@@ -45,7 +46,7 @@ class EvsClient(Client):
         为指定云硬盘批量添加标签。  添加标签时，如果云硬盘的标签已存在相同key，则会覆盖已有标签。 单个云硬盘最多支持创建10个标签。
 
         :param BatchCreateVolumeTagsRequest request
-        :return: None
+        :return: BatchCreateVolumeTagsResponse
         """
         return self.batch_create_volume_tags_with_http_info(request)
 
@@ -55,15 +56,10 @@ class EvsClient(Client):
         为指定云硬盘批量添加标签。  添加标签时，如果云硬盘的标签已存在相同key，则会覆盖已有标签。 单个云硬盘最多支持创建10个标签。
 
         :param BatchCreateVolumeTagsRequest request
-        :return: None
+        :return: BatchCreateVolumeTagsResponse
         """
 
         all_params = ['volume_id', 'batch_create_volume_tags_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -79,25 +75,28 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/cloudvolumes/{volume_id}/tags/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/cloudvolumes/{volume_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='BatchCreateVolumeTagsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -108,7 +107,7 @@ class EvsClient(Client):
         为指定云硬盘批量删除标签。
 
         :param BatchDeleteVolumeTagsRequest request
-        :return: None
+        :return: BatchDeleteVolumeTagsResponse
         """
         return self.batch_delete_volume_tags_with_http_info(request)
 
@@ -118,15 +117,10 @@ class EvsClient(Client):
         为指定云硬盘批量删除标签。
 
         :param BatchDeleteVolumeTagsRequest request
-        :return: None
+        :return: BatchDeleteVolumeTagsResponse
         """
 
         all_params = ['volume_id', 'batch_delete_volume_tags_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -142,25 +136,28 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/cloudvolumes/{volume_id}/tags/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/cloudvolumes/{volume_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='BatchDeleteVolumeTagsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -181,15 +178,10 @@ class EvsClient(Client):
         将系统盘或数据盘的数据导出为IMS镜像，导出的镜像在IMS的私有镜像列表中可以查 看并使用。
 
         :param CinderExportToImageRequest request
-        :return: tuple(CinderExportToImageResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CinderExportToImageResponse
         """
 
         all_params = ['volume_id', 'cinder_export_to_image_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -205,24 +197,25 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/volumes/{volume_id}/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/volumes/{volume_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CinderExportToImageResponse',
@@ -246,15 +239,10 @@ class EvsClient(Client):
         查询所有的可用分区信息。
 
         :param CinderListAvailabilityZonesRequest request
-        :return: tuple(CinderListAvailabilityZonesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CinderListAvailabilityZonesResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -268,20 +256,21 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/os-availability-zone', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/os-availability-zone',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CinderListAvailabilityZonesResponse',
@@ -305,15 +294,10 @@ class EvsClient(Client):
         查询租户的详细配额。
 
         :param CinderListQuotasRequest request
-        :return: tuple(CinderListQuotasResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CinderListQuotasResponse
         """
 
         all_params = ['target_project_id', 'usage']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -331,20 +315,21 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/os-quota-sets/{target_project_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/os-quota-sets/{target_project_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CinderListQuotasResponse',
@@ -368,15 +353,10 @@ class EvsClient(Client):
         查询云硬盘类型列表。
 
         :param CinderListVolumeTypesRequest request
-        :return: tuple(CinderListVolumeTypesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CinderListVolumeTypesResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -390,20 +370,21 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/types', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/types',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CinderListVolumeTypesResponse',
@@ -427,15 +408,10 @@ class EvsClient(Client):
         创建云硬盘快照。
 
         :param CreateSnapshotRequest request
-        :return: tuple(CreateSnapshotResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateSnapshotResponse
         """
 
         all_params = ['create_snapshot_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -449,24 +425,25 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/cloudsnapshots', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/cloudsnapshots',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateSnapshotResponse',
@@ -490,15 +467,10 @@ class EvsClient(Client):
         创建按需或包周期云硬盘。 在创建包周期云硬盘的场景下： - 如果您需要查看订单可用的优惠券，请参考\"[查询订单可用优惠券](https://support.huaweicloud.com/api-oce/zh-cn_topic_0092953630.html)\"。 - 如果您需要支付订单，请参考\"[支付包周期产品订单](https://support.huaweicloud.com/api-oce/zh-cn_topic_0075746561.html)\"。 - 如果您需要查询订单的资源开通详情，请参考\"[查询订单的资源开通详情](https://support.huaweicloud.com/api-oce/api_order_00001.html)\"。 - 如果您需要退订该包周期资源，请参考“[退订包周期资源](https://support.huaweicloud.com/api-oce/zh-cn_topic_0082522030.html)”。
 
         :param CreateVolumeRequest request
-        :return: tuple(CreateVolumeResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateVolumeResponse
         """
 
         all_params = ['create_volume_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -512,24 +484,25 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json', 'application/json-1'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2.1/{project_id}/cloudvolumes', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2.1/{project_id}/cloudvolumes',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateVolumeResponse',
@@ -543,7 +516,7 @@ class EvsClient(Client):
         删除云硬盘快照。
 
         :param DeleteSnapshotRequest request
-        :return: None
+        :return: DeleteSnapshotResponse
         """
         return self.delete_snapshot_with_http_info(request)
 
@@ -553,15 +526,10 @@ class EvsClient(Client):
         删除云硬盘快照。
 
         :param DeleteSnapshotRequest request
-        :return: None
+        :return: DeleteSnapshotResponse
         """
 
         all_params = ['snapshot_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -577,21 +545,24 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/cloudsnapshots/{snapshot_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/cloudsnapshots/{snapshot_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteSnapshotResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -612,15 +583,10 @@ class EvsClient(Client):
         删除一个云硬盘。
 
         :param DeleteVolumeRequest request
-        :return: tuple(DeleteVolumeResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: DeleteVolumeResponse
         """
 
         all_params = ['volume_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -636,20 +602,21 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/cloudvolumes/{volume_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/cloudvolumes/{volume_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='DeleteVolumeResponse',
@@ -673,15 +640,10 @@ class EvsClient(Client):
         查询云硬盘快照详细列表信息。
 
         :param ListSnapshotsDetailsRequest request
-        :return: tuple(ListSnapshotsDetailsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListSnapshotsDetailsResponse
         """
 
         all_params = ['offset', 'limit', 'name', 'status', 'volume_id', 'availability_zone', 'id', 'dedicated_storage_name', 'dedicated_storage_id', 'service_type', 'enterprise_project_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -717,20 +679,21 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/cloudsnapshots/detail', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/cloudsnapshots/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListSnapshotsDetailsResponse',
@@ -754,15 +717,10 @@ class EvsClient(Client):
         获取某个租户的所有云硬盘资源的标签信息。
 
         :param ListVolumeTagsRequest request
-        :return: tuple(ListVolumeTagsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListVolumeTagsResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -776,20 +734,21 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/cloudvolumes/tags', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/cloudvolumes/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListVolumeTagsResponse',
@@ -813,15 +772,10 @@ class EvsClient(Client):
         通过标签查询云硬盘资源实例详情。
 
         :param ListVolumesByTagsRequest request
-        :return: tuple(ListVolumesByTagsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListVolumesByTagsResponse
         """
 
         all_params = ['list_volumes_by_tags_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -835,24 +789,25 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/cloudvolumes/resource_instances/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/cloudvolumes/resource_instances/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListVolumesByTagsResponse',
@@ -876,15 +831,10 @@ class EvsClient(Client):
         查询所有云硬盘的详细信息。
 
         :param ListVolumesDetailsRequest request
-        :return: tuple(ListVolumesDetailsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListVolumesDetailsResponse
         """
 
         all_params = ['marker', 'name', 'limit', 'sort_key', 'offset', 'sort_dir', 'status', 'metadata', 'availability_zone', 'multiattach', 'service_type', 'dedicated_storage_id', 'dedicated_storage_name', 'volume_type_id', 'id', 'ids', 'enterprise_project_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -932,20 +882,21 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/cloudvolumes/detail', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/cloudvolumes/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListVolumesDetailsResponse',
@@ -969,15 +920,10 @@ class EvsClient(Client):
         对按需或者包周期云硬盘进行扩容。 在扩容包周期云硬盘的场景下： - 如果您需要查看订单可用的优惠券，请参考\"[查询订单可用优惠券](https://support.huaweicloud.com/api-oce/zh-cn_topic_0092953630.html)\"。 - 如果您需要支付订单，请参考\"[支付包周期产品订单](https://support.huaweicloud.com/api-oce/zh-cn_topic_0075746561.html)\"。 - 如果您需要查询订单的资源开通详情，请参考\"[查询订单的资源开通详情](https://support.huaweicloud.com/api-oce/api_order_00001.html)\"。 - 如果您需要退订该包周期资源，请参考“[退订包周期资源](https://support.huaweicloud.com/api-oce/zh-cn_topic_0082522030.html)”。
 
         :param ResizeVolumeRequest request
-        :return: tuple(ResizeVolumeResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ResizeVolumeResponse
         """
 
         all_params = ['volume_id', 'resize_volume_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -993,24 +939,25 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json', 'application/json-1'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2.1/{project_id}/cloudvolumes/{volume_id}/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2.1/{project_id}/cloudvolumes/{volume_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ResizeVolumeResponse',
@@ -1034,15 +981,10 @@ class EvsClient(Client):
         将快照数据回滚到云硬盘。支持企业项目授权功能。
 
         :param RollbackSnapshotRequest request
-        :return: tuple(RollbackSnapshotResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: RollbackSnapshotResponse
         """
 
         all_params = ['snapshot_id', 'rollback_snapshot_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1058,24 +1000,25 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/cloudsnapshots/{snapshot_id}/rollback', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/cloudsnapshots/{snapshot_id}/rollback',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='RollbackSnapshotResponse',
@@ -1099,15 +1042,10 @@ class EvsClient(Client):
         查询Job的执行状态。 可用于查询创建云硬盘，扩容云硬盘，删除云硬盘等API的执行状态。
 
         :param ShowJobRequest request
-        :return: tuple(ShowJobResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowJobResponse
         """
 
         all_params = ['job_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1123,20 +1061,21 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/jobs/{job_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/jobs/{job_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowJobResponse',
@@ -1160,15 +1099,10 @@ class EvsClient(Client):
         查询单个云硬盘快照信息。支持企业项目授权功能。
 
         :param ShowSnapshotRequest request
-        :return: tuple(ShowSnapshotResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowSnapshotResponse
         """
 
         all_params = ['snapshot_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1184,20 +1118,21 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/cloudsnapshots/{snapshot_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/cloudsnapshots/{snapshot_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowSnapshotResponse',
@@ -1221,15 +1156,10 @@ class EvsClient(Client):
         查询单个云硬盘的详细信息。支持企业项目授权功能。
 
         :param ShowVolumeRequest request
-        :return: tuple(ShowVolumeResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowVolumeResponse
         """
 
         all_params = ['volume_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1245,20 +1175,21 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/cloudvolumes/{volume_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/cloudvolumes/{volume_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowVolumeResponse',
@@ -1282,15 +1213,10 @@ class EvsClient(Client):
         查询指定云硬盘的标签信息。
 
         :param ShowVolumeTagsRequest request
-        :return: tuple(ShowVolumeTagsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowVolumeTagsResponse
         """
 
         all_params = ['volume_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1306,20 +1232,21 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/cloudvolumes/{volume_id}/tags', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/cloudvolumes/{volume_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowVolumeTagsResponse',
@@ -1343,15 +1270,10 @@ class EvsClient(Client):
         更新云硬盘快照。支持企业项目授权功能。
 
         :param UpdateSnapshotRequest request
-        :return: tuple(UpdateSnapshotResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateSnapshotResponse
         """
 
         all_params = ['snapshot_id', 'update_snapshot_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1367,24 +1289,25 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/cloudsnapshots/{snapshot_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/cloudsnapshots/{snapshot_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateSnapshotResponse',
@@ -1408,15 +1331,10 @@ class EvsClient(Client):
         更新一个云硬盘的名称和描述。
 
         :param UpdateVolumeRequest request
-        :return: tuple(UpdateVolumeResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateVolumeResponse
         """
 
         all_params = ['volume_id', 'update_volume_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1432,24 +1350,25 @@ class EvsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/cloudvolumes/{volume_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/cloudvolumes/{volume_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateVolumeResponse',
@@ -1479,6 +1398,14 @@ class EvsClient(Client):
         :return:
             Return the response directly.
         """
-        return self.do_http_request(method, resource_path, path_params,
-                                    query_params, header_params, body, post_params,
-                                    response_type, collection_formats, request_type)
+        return self.do_http_request(
+            method=method,
+            resource_path=resource_path,
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body,
+            post_params=post_params,
+            response_type=response_type,
+            collection_formats=collection_formats,
+            request_type=request_type)

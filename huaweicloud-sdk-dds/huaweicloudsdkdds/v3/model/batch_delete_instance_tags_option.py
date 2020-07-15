@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchDeleteInstanceTagsOption(object):
+
+
+
+class BatchDeleteInstanceTagsOption:
 
 
     """
@@ -29,8 +32,10 @@ class BatchDeleteInstanceTagsOption(object):
         'value': 'value'
     }
 
-    def __init__(self, key=None, value=None):  # noqa: E501
+    def __init__(self, key=None, value=None):
         """BatchDeleteInstanceTagsOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._key = None
         self._value = None

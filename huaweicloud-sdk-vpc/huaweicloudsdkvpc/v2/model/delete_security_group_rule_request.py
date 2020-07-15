@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteSecurityGroupRuleRequest(object):
+
+
+
+class DeleteSecurityGroupRuleRequest:
 
 
     """
@@ -27,8 +30,10 @@ class DeleteSecurityGroupRuleRequest(object):
         'security_group_rule_id': 'security_group_rule_id'
     }
 
-    def __init__(self, security_group_rule_id=None):  # noqa: E501
+    def __init__(self, security_group_rule_id=None):
         """DeleteSecurityGroupRuleRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._security_group_rule_id = None
         self.discriminator = None

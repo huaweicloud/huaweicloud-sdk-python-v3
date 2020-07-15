@@ -6,7 +6,10 @@ import re
 import six
 
 
-class GlanceListImagesRequest(object):
+
+
+
+class GlanceListImagesRequest:
 
 
     """
@@ -89,8 +92,10 @@ class GlanceListImagesRequest(object):
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, imagetype=None, isregistered=True, os_bit=None, os_type=None, platform=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, container_format='bare', disk_format='vhd', id=None, limit=25, marker=None, member_status=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, sort_dir=None, sort_key=None, status=None, tag=None, visibility=None, created_at=None, updated_at=None):  # noqa: E501
+    def __init__(self, imagetype=None, isregistered=True, os_bit=None, os_type=None, platform=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, container_format='bare', disk_format='vhd', id=None, limit=25, marker=None, member_status=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, sort_dir=None, sort_key=None, status=None, tag=None, visibility=None, created_at=None, updated_at=None):
         """GlanceListImagesRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._imagetype = None
         self._isregistered = None

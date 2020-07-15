@@ -22,7 +22,7 @@
 class HttpConfig:
     def __init__(self, proxy_protocol=None, proxy_host=None, proxy_port=None, proxy_user=None, proxy_password=None,
                  ignore_ssl_verification=False, ssl_ca_cert=None, cert_file=None, key_file=None, timeout=(3, 10),
-                 preload_content=True, return_http_data_only=True, retry_times=0, pool_connections=1, pool_maxsize=1):
+                 retry_times=0, pool_connections=1, pool_maxsize=1):
         """
         :param proxy_protocol(optional) : proxy protocol, http or https
         :type proxy_protocol: str
@@ -56,16 +56,6 @@ class HttpConfig:
          as a float, or a :ref:`(connect timeout, read timeout) <timeouts>` tuple.
         :type timeout: float or tuple
 
-        :param preload_content: whether deserialize http response to service module object,
-         default, value is true
-        :type preload_content: bool
-
-        :param return_http_data_only: whether return http response directly,
-         class:`Response <Response> of requests module` object,
-         take effect only when preload_content is false,
-         default, value is true
-        :type return_http_data_only: bool
-
         :param retry_times: maximum number of retries each connection should attempt,
          default, does not retry failed connections.
         :type retry_times: int
@@ -94,9 +84,6 @@ class HttpConfig:
         self.retry_times = retry_times
         self.pool_connections = pool_connections
         self.pool_maxsize = pool_maxsize
-
-        self.preload_content = preload_content
-        self.return_http_data_only = return_http_data_only
 
     def get_proxy(self):
         if self.proxy_host is None:

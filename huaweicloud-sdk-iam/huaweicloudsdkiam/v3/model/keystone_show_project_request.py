@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneShowProjectRequest(object):
+
+
+
+class KeystoneShowProjectRequest:
 
 
     """
@@ -27,8 +30,10 @@ class KeystoneShowProjectRequest(object):
         'project_id': 'project_id'
     }
 
-    def __init__(self, project_id=None):  # noqa: E501
+    def __init__(self, project_id=None):
         """KeystoneShowProjectRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._project_id = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteSubnetRequest(object):
+
+
+
+class DeleteSubnetRequest:
 
 
     """
@@ -29,8 +32,10 @@ class DeleteSubnetRequest(object):
         'subnet_id': 'subnet_id'
     }
 
-    def __init__(self, vpc_id=None, subnet_id=None):  # noqa: E501
+    def __init__(self, vpc_id=None, subnet_id=None):
         """DeleteSubnetRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._vpc_id = None
         self._subnet_id = None

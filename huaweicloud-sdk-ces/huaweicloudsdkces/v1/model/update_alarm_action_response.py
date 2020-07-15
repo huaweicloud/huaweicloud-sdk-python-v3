@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateAlarmActionResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class UpdateAlarmActionResponse(SdkResponse):
 
 
     """
@@ -25,8 +28,10 @@ class UpdateAlarmActionResponse(object):
     attribute_map = {
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self):
         """UpdateAlarmActionResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
         self.discriminator = None
 
     def to_dict(self):

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListTrackersRequest(object):
+
+
+
+class ListTrackersRequest:
 
 
     """
@@ -29,8 +32,10 @@ class ListTrackersRequest(object):
         'tracker_type': 'tracker_type'
     }
 
-    def __init__(self, tracker_name=None, tracker_type=None):  # noqa: E501
+    def __init__(self, tracker_name=None, tracker_type=None):
         """ListTrackersRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._tracker_name = None
         self._tracker_type = None

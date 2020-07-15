@@ -6,7 +6,10 @@ import re
 import six
 
 
-class NovaListServersDetailsRequest(object):
+
+
+
+class NovaListServersDetailsRequest:
 
 
     """
@@ -51,8 +54,10 @@ class NovaListServersDetailsRequest(object):
         'sort_key': 'sort_key'
     }
 
-    def __init__(self, open_stack_api_version='compute 2.60', changes_since=None, ip=None, image=None, flavor=None, name=None, status=None, limit=25, marker=None, tags=None, not_tags=None, reservation_id=None, sort_key='created_at'):  # noqa: E501
+    def __init__(self, open_stack_api_version='compute 2.60', changes_since=None, ip=None, image=None, flavor=None, name=None, status=None, limit=25, marker=None, tags=None, not_tags=None, reservation_id=None, sort_key='created_at'):
         """NovaListServersDetailsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._open_stack_api_version = None
         self._changes_since = None

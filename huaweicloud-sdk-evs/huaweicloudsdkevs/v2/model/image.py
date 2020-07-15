@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Image(object):
+
+
+
+class Image:
 
 
     """
@@ -45,8 +48,10 @@ class Image(object):
         'volume_type': 'volume_type'
     }
 
-    def __init__(self, container_format=None, disk_format=None, display_description=None, id=None, image_id=None, image_name=None, size=None, status=None, updated_at=None, volume_type=None):  # noqa: E501
+    def __init__(self, container_format=None, disk_format=None, display_description=None, id=None, image_id=None, image_name=None, size=None, status=None, updated_at=None, volume_type=None):
         """Image - a model defined in huaweicloud sdk"""
+        
+        
 
         self._container_format = None
         self._disk_format = None

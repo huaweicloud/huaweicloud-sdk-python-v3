@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListFlavorsResult(object):
+
+
+
+class ListFlavorsResult:
 
 
     """
@@ -37,8 +40,10 @@ class ListFlavorsResult(object):
         'az_status': 'az_status'
     }
 
-    def __init__(self, engine_name=None, type=None, vcpus=None, ram=None, spec_code=None, az_status=None):  # noqa: E501
+    def __init__(self, engine_name=None, type=None, vcpus=None, ram=None, spec_code=None, az_status=None):
         """ListFlavorsResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._engine_name = None
         self._type = None

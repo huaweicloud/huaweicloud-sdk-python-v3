@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Traces(object):
+
+
+
+class Traces:
 
 
     """
@@ -67,8 +70,10 @@ class Traces(object):
         'resource_url': 'resource_url'
     }
 
-    def __init__(self, resource_id=None, trace_name=None, trace_rating=None, trace_type=None, request=None, response=None, code=None, api_version=None, message=None, record_time=None, trace_id=None, time=None, user=None, service_type=None, resource_type=None, source_ip=None, resource_name=None, request_id=None, location_info=None, endpoint=None, resource_url=None):  # noqa: E501
+    def __init__(self, resource_id=None, trace_name=None, trace_rating=None, trace_type=None, request=None, response=None, code=None, api_version=None, message=None, record_time=None, trace_id=None, time=None, user=None, service_type=None, resource_type=None, source_ip=None, resource_name=None, request_id=None, location_info=None, endpoint=None, resource_url=None):
         """Traces - a model defined in huaweicloud sdk"""
+        
+        
 
         self._resource_id = None
         self._trace_name = None

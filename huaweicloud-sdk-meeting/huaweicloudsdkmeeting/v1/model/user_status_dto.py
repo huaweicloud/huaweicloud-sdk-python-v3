@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UserStatusDTO(object):
+
+
+
+class UserStatusDTO:
 
 
     """
@@ -31,8 +34,10 @@ class UserStatusDTO(object):
         'call_status': 'CallStatus'
     }
 
-    def __init__(self, number=None, reg_status=None, call_status=None):  # noqa: E501
+    def __init__(self, number=None, reg_status=None, call_status=None):
         """UserStatusDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._number = None
         self._reg_status = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class VolumeTypeExtraSpecs(object):
+
+
+
+class VolumeTypeExtraSpecs:
 
 
     """
@@ -35,8 +38,10 @@ class VolumeTypeExtraSpecs(object):
         'h_wavailability_zone': 'HW:availability_zone'
     }
 
-    def __init__(self, reske_yavailability_zones=None, availability_zone=None, os_vendor_extendedsold_out_availability_zones=None, volume_backend_name=None, h_wavailability_zone=None):  # noqa: E501
+    def __init__(self, reske_yavailability_zones=None, availability_zone=None, os_vendor_extendedsold_out_availability_zones=None, volume_backend_name=None, h_wavailability_zone=None):
         """VolumeTypeExtraSpecs - a model defined in huaweicloud sdk"""
+        
+        
 
         self._reske_yavailability_zones = None
         self._availability_zone = None

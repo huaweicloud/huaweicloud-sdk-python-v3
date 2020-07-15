@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListTracesRequest(object):
+
+
+
+class ListTracesRequest:
 
 
     """
@@ -53,8 +56,10 @@ class ListTracesRequest(object):
         'trace_rating': 'trace_rating'
     }
 
-    def __init__(self, trace_type=None, limit=None, _from=None, next=None, to=None, tracker_name=None, service_type=None, user=None, resource_id=None, resource_name=None, resource_type=None, trace_id=None, trace_name=None, trace_rating=None):  # noqa: E501
+    def __init__(self, trace_type=None, limit=None, _from=None, next=None, to=None, tracker_name=None, service_type=None, user=None, resource_id=None, resource_name=None, resource_type=None, trace_id=None, trace_name=None, trace_rating=None):
         """ListTracesRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._trace_type = None
         self._limit = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateScalingGroupRequest(object):
+
+
+
+class UpdateScalingGroupRequest:
 
 
     """
@@ -29,8 +32,10 @@ class UpdateScalingGroupRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, scaling_group_id=None, body=None):  # noqa: E501
+    def __init__(self, scaling_group_id=None, body=None):
         """UpdateScalingGroupRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._scaling_group_id = None
         self._body = None

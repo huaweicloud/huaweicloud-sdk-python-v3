@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchOpsResult(object):
+
+
+
+class BatchOpsResult:
 
 
     """
@@ -29,8 +32,10 @@ class BatchOpsResult(object):
         'instance': 'instance'
     }
 
-    def __init__(self, result=None, instance=None):  # noqa: E501
+    def __init__(self, result=None, instance=None):
         """BatchOpsResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._result = None
         self._instance = None

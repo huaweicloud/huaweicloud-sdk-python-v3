@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneShowRegionResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class KeystoneShowRegionResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class KeystoneShowRegionResponse(object):
         'region': 'region'
     }
 
-    def __init__(self, region=None):  # noqa: E501
+    def __init__(self, region=None):
         """KeystoneShowRegionResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._region = None
         self.discriminator = None

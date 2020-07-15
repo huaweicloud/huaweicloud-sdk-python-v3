@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchMetricData(object):
+
+
+
+class BatchMetricData:
 
 
     """
@@ -35,8 +38,10 @@ class BatchMetricData(object):
         'dimensions': 'dimensions'
     }
 
-    def __init__(self, unit=None, datapoints=None, namespace=None, metric_name=None, dimensions=None):  # noqa: E501
+    def __init__(self, unit=None, datapoints=None, namespace=None, metric_name=None, dimensions=None):
         """BatchMetricData - a model defined in huaweicloud sdk"""
+        
+        
 
         self._unit = None
         self._datapoints = None

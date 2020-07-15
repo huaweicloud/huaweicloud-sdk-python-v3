@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateVolumeRequestBody(object):
+
+
+
+class UpdateVolumeRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class UpdateVolumeRequestBody(object):
         'volume': 'volume'
     }
 
-    def __init__(self, volume=None):  # noqa: E501
+    def __init__(self, volume=None):
         """UpdateVolumeRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._volume = None
         self.discriminator = None

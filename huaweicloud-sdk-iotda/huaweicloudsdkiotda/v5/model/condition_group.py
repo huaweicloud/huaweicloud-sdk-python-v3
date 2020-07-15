@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ConditionGroup(object):
+
+
+
+class ConditionGroup:
 
 
     """
@@ -31,8 +34,10 @@ class ConditionGroup(object):
         'time_range': 'time_range'
     }
 
-    def __init__(self, conditions=None, logic=None, time_range=None):  # noqa: E501
+    def __init__(self, conditions=None, logic=None, time_range=None):
         """ConditionGroup - a model defined in huaweicloud sdk"""
+        
+        
 
         self._conditions = None
         self._logic = None

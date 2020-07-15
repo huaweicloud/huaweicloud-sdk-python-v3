@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListCESMonitoredObjectsRequest(object):
+
+
+
+class ListCESMonitoredObjectsRequest:
 
 
     """
@@ -31,8 +34,10 @@ class ListCESMonitoredObjectsRequest(object):
         'limit': 'limit'
     }
 
-    def __init__(self, dim_name=None, offset=0, limit=10):  # noqa: E501
+    def __init__(self, dim_name=None, offset=0, limit=10):
         """ListCESMonitoredObjectsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._dim_name = None
         self._offset = None

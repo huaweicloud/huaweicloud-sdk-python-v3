@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ChangeInstanceStatusBody(object):
+
+
+
+class ChangeInstanceStatusBody:
 
 
     """
@@ -29,8 +32,10 @@ class ChangeInstanceStatusBody(object):
         'action': 'action'
     }
 
-    def __init__(self, instances=None, action=None):  # noqa: E501
+    def __init__(self, instances=None, action=None):
         """ChangeInstanceStatusBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instances = None
         self._action = None

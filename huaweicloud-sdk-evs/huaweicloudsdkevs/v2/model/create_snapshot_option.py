@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateSnapshotOption(object):
+
+
+
+class CreateSnapshotOption:
 
 
     """
@@ -35,8 +38,10 @@ class CreateSnapshotOption(object):
         'name': 'name'
     }
 
-    def __init__(self, volume_id=None, force=None, metadata=None, description=None, name=None):  # noqa: E501
+    def __init__(self, volume_id=None, force=None, metadata=None, description=None, name=None):
         """CreateSnapshotOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._volume_id = None
         self._force = None

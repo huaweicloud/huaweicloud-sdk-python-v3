@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PrePaidServerDataVolumeMetadata(object):
+
+
+
+class PrePaidServerDataVolumeMetadata:
 
 
     """
@@ -29,8 +32,10 @@ class PrePaidServerDataVolumeMetadata(object):
         'system_cmkid': '__system__cmkid'
     }
 
-    def __init__(self, system_encrypted='0', system_cmkid=None):  # noqa: E501
+    def __init__(self, system_encrypted='0', system_cmkid=None):
         """PrePaidServerDataVolumeMetadata - a model defined in huaweicloud sdk"""
+        
+        
 
         self._system_encrypted = None
         self._system_cmkid = None

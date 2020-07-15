@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Condition(object):
+
+
+
+class Condition:
 
 
     """
@@ -37,8 +40,10 @@ class Condition(object):
         'value': 'value'
     }
 
-    def __init__(self, comparison_operator=None, count=None, filter=None, period=None, unit=None, value=None):  # noqa: E501
+    def __init__(self, comparison_operator=None, count=None, filter=None, period=None, unit=None, value=None):
         """Condition - a model defined in huaweicloud sdk"""
+        
+        
 
         self._comparison_operator = None
         self._count = None

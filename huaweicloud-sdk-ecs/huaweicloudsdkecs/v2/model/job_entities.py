@@ -6,7 +6,10 @@ import re
 import six
 
 
-class JobEntities(object):
+
+
+
+class JobEntities:
 
 
     """
@@ -29,8 +32,10 @@ class JobEntities(object):
         'sub_jobs_total': 'sub_jobs_total'
     }
 
-    def __init__(self, sub_jobs=None, sub_jobs_total=None):  # noqa: E501
+    def __init__(self, sub_jobs=None, sub_jobs_total=None):
         """JobEntities - a model defined in huaweicloud sdk"""
+        
+        
 
         self._sub_jobs = None
         self._sub_jobs_total = None

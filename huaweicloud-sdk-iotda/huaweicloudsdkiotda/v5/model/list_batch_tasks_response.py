@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListBatchTasksResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListBatchTasksResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class ListBatchTasksResponse(object):
         'page': 'page'
     }
 
-    def __init__(self, batchtasks=None, page=None):  # noqa: E501
+    def __init__(self, batchtasks=None, page=None):
         """ListBatchTasksResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._batchtasks = None
         self._page = None

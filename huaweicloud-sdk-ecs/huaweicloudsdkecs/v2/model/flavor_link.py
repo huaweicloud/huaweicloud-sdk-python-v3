@@ -6,7 +6,10 @@ import re
 import six
 
 
-class FlavorLink(object):
+
+
+
+class FlavorLink:
 
 
     """
@@ -31,8 +34,10 @@ class FlavorLink(object):
         'type': 'type'
     }
 
-    def __init__(self, href=None, rel=None, type=None):  # noqa: E501
+    def __init__(self, href=None, rel=None, type=None):
         """FlavorLink - a model defined in huaweicloud sdk"""
+        
+        
 
         self._href = None
         self._rel = None

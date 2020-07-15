@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateDevice(object):
+
+
+
+class UpdateDevice:
 
 
     """
@@ -33,8 +36,10 @@ class UpdateDevice(object):
         'auth_info': 'auth_info'
     }
 
-    def __init__(self, device_name=None, description=None, extension_info=None, auth_info=None):  # noqa: E501
+    def __init__(self, device_name=None, description=None, extension_info=None, auth_info=None):
         """UpdateDevice - a model defined in huaweicloud sdk"""
+        
+        
 
         self._device_name = None
         self._description = None

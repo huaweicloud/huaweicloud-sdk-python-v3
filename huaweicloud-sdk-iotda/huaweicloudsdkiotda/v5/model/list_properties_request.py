@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListPropertiesRequest(object):
+
+
+
+class ListPropertiesRequest:
 
 
     """
@@ -31,8 +34,10 @@ class ListPropertiesRequest(object):
         'service_id': 'service_id'
     }
 
-    def __init__(self, device_id=None, instance_id=None, service_id=None):  # noqa: E501
+    def __init__(self, device_id=None, instance_id=None, service_id=None):
         """ListPropertiesRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._device_id = None
         self._instance_id = None

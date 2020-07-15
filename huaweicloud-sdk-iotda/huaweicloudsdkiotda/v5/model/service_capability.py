@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ServiceCapability(object):
+
+
+
+class ServiceCapability:
 
 
     """
@@ -39,8 +42,10 @@ class ServiceCapability(object):
         'option': 'option'
     }
 
-    def __init__(self, service_id=None, service_type=None, properties=None, commands=None, events=None, description=None, option='Optional'):  # noqa: E501
+    def __init__(self, service_id=None, service_type=None, properties=None, commands=None, events=None, description=None, option='Optional'):
         """ServiceCapability - a model defined in huaweicloud sdk"""
+        
+        
 
         self._service_id = None
         self._service_type = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateCloudServiceCustomPolicyResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class UpdateCloudServiceCustomPolicyResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class UpdateCloudServiceCustomPolicyResponse(object):
         'role': 'role'
     }
 
-    def __init__(self, role=None):  # noqa: E501
+    def __init__(self, role=None):
         """UpdateCloudServiceCustomPolicyResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._role = None
         self.discriminator = None

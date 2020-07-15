@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateVpcRequestBody(object):
+
+
+
+class UpdateVpcRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class UpdateVpcRequestBody(object):
         'vpc': 'vpc'
     }
 
-    def __init__(self, vpc=None):  # noqa: E501
+    def __init__(self, vpc=None):
         """UpdateVpcRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._vpc = None
         self.discriminator = None

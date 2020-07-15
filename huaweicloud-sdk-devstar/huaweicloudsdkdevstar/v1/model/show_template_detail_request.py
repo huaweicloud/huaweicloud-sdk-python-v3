@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowTemplateDetailRequest(object):
+
+
+
+class ShowTemplateDetailRequest:
 
 
     """
@@ -29,8 +32,10 @@ class ShowTemplateDetailRequest(object):
         'template_id': 'template_id'
     }
 
-    def __init__(self, x_language=None, template_id=None):  # noqa: E501
+    def __init__(self, x_language=None, template_id=None):
         """ShowTemplateDetailRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_language = None
         self._template_id = None

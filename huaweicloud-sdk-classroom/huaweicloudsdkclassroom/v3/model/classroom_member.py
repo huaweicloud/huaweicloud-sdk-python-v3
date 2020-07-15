@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ClassroomMember(object):
+
+
+
+class ClassroomMember:
 
 
     """
@@ -43,8 +46,10 @@ class ClassroomMember(object):
         'job_finished_rate': 'job_finished_rate'
     }
 
-    def __init__(self, member_id=None, name=None, number=None, class_name=None, user_name=None, join_time=None, job_received_count=None, job_finished_count=None, job_finished_rate=None):  # noqa: E501
+    def __init__(self, member_id=None, name=None, number=None, class_name=None, user_name=None, join_time=None, job_received_count=None, job_finished_count=None, job_finished_rate=None):
         """ClassroomMember - a model defined in huaweicloud sdk"""
+        
+        
 
         self._member_id = None
         self._name = None

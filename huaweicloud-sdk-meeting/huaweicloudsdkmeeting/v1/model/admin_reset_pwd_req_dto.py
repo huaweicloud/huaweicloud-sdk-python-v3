@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AdminResetPwdReqDTO(object):
+
+
+
+class AdminResetPwdReqDTO:
 
 
     """
@@ -27,8 +30,10 @@ class AdminResetPwdReqDTO(object):
         'account': 'account'
     }
 
-    def __init__(self, account=None):  # noqa: E501
+    def __init__(self, account=None):
         """AdminResetPwdReqDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._account = None
         self.discriminator = None

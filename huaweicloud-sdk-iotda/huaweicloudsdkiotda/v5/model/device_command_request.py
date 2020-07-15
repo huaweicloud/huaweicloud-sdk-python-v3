@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeviceCommandRequest(object):
+
+
+
+class DeviceCommandRequest:
 
 
     """
@@ -31,8 +34,10 @@ class DeviceCommandRequest(object):
         'paras': 'paras'
     }
 
-    def __init__(self, service_id=None, command_name=None, paras=None):  # noqa: E501
+    def __init__(self, service_id=None, command_name=None, paras=None):
         """DeviceCommandRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._service_id = None
         self._command_name = None

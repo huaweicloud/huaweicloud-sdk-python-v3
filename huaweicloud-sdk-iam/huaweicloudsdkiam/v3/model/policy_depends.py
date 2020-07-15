@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PolicyDepends(object):
+
+
+
+class PolicyDepends:
 
 
     """
@@ -29,8 +32,10 @@ class PolicyDepends(object):
         'display_name': 'display_name'
     }
 
-    def __init__(self, catalog=None, display_name=None):  # noqa: E501
+    def __init__(self, catalog=None, display_name=None):
         """PolicyDepends - a model defined in huaweicloud sdk"""
+        
+        
 
         self._catalog = None
         self._display_name = None

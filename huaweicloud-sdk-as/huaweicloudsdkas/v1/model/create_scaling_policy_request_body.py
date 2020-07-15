@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateScalingPolicyRequestBody(object):
+
+
+
+class CreateScalingPolicyRequestBody:
 
 
     """
@@ -39,8 +42,10 @@ class CreateScalingPolicyRequestBody(object):
         'cool_down_time': 'cool_down_time'
     }
 
-    def __init__(self, scaling_policy_name=None, scaling_group_id=None, scaling_policy_type=None, alarm_id=None, scheduled_policy=None, scaling_policy_action=None, cool_down_time=None):  # noqa: E501
+    def __init__(self, scaling_policy_name=None, scaling_group_id=None, scaling_policy_type=None, alarm_id=None, scheduled_policy=None, scaling_policy_action=None, cool_down_time=None):
         """CreateScalingPolicyRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._scaling_policy_name = None
         self._scaling_group_id = None

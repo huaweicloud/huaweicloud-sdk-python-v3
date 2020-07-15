@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteScalingConfigRequest(object):
+
+
+
+class DeleteScalingConfigRequest:
 
 
     """
@@ -27,8 +30,10 @@ class DeleteScalingConfigRequest(object):
         'scaling_configuration_id': 'scaling_configuration_id'
     }
 
-    def __init__(self, scaling_configuration_id=None):  # noqa: E501
+    def __init__(self, scaling_configuration_id=None):
         """DeleteScalingConfigRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._scaling_configuration_id = None
         self.discriminator = None

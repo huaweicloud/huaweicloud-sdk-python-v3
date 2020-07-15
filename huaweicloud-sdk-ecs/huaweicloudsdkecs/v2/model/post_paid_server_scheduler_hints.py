@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PostPaidServerSchedulerHints(object):
+
+
+
+class PostPaidServerSchedulerHints:
 
 
     """
@@ -31,8 +34,10 @@ class PostPaidServerSchedulerHints(object):
         'tenancy': 'tenancy'
     }
 
-    def __init__(self, group=None, dedicated_host_id=None, tenancy=None):  # noqa: E501
+    def __init__(self, group=None, dedicated_host_id=None, tenancy=None):
         """PostPaidServerSchedulerHints - a model defined in huaweicloud sdk"""
+        
+        
 
         self._group = None
         self._dedicated_host_id = None

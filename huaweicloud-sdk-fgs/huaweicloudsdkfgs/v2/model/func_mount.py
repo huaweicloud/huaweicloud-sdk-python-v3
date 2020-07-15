@@ -6,7 +6,10 @@ import re
 import six
 
 
-class FuncMount(object):
+
+
+
+class FuncMount:
 
 
     """
@@ -33,8 +36,10 @@ class FuncMount(object):
         'local_mount_path': 'local_mount_path'
     }
 
-    def __init__(self, mount_type=None, mount_resource=None, mount_share_path=None, local_mount_path=None):  # noqa: E501
+    def __init__(self, mount_type=None, mount_resource=None, mount_share_path=None, local_mount_path=None):
         """FuncMount - a model defined in huaweicloud sdk"""
+        
+        
 
         self._mount_type = None
         self._mount_resource = None

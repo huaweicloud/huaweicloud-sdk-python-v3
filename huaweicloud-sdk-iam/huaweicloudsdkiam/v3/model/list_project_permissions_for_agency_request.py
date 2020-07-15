@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListProjectPermissionsForAgencyRequest(object):
+
+
+
+class ListProjectPermissionsForAgencyRequest:
 
 
     """
@@ -29,8 +32,10 @@ class ListProjectPermissionsForAgencyRequest(object):
         'agency_id': 'agency_id'
     }
 
-    def __init__(self, project_id=None, agency_id=None):  # noqa: E501
+    def __init__(self, project_id=None, agency_id=None):
         """ListProjectPermissionsForAgencyRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._project_id = None
         self._agency_id = None

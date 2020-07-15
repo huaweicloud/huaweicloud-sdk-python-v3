@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BackupPlan(object):
+
+
+
+class BackupPlan:
 
 
     """
@@ -33,8 +36,10 @@ class BackupPlan(object):
         'begin_at': 'begin_at'
     }
 
-    def __init__(self, timezone_offset=None, backup_at=None, period_type=None, begin_at=None):  # noqa: E501
+    def __init__(self, timezone_offset=None, backup_at=None, period_type=None, begin_at=None):
         """BackupPlan - a model defined in huaweicloud sdk"""
+        
+        
 
         self._timezone_offset = None
         self._backup_at = None

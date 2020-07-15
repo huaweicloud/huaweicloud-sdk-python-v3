@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ResetDeviceSecretRequest(object):
+
+
+
+class ResetDeviceSecretRequest:
 
 
     """
@@ -33,8 +36,10 @@ class ResetDeviceSecretRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, instance_id=None, device_id=None, action_id=None, body=None):  # noqa: E501
+    def __init__(self, instance_id=None, device_id=None, action_id=None, body=None):
         """ResetDeviceSecretRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._device_id = None

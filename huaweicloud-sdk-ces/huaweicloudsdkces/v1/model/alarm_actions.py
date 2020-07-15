@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AlarmActions(object):
+
+
+
+class AlarmActions:
 
 
     """
@@ -29,8 +32,10 @@ class AlarmActions(object):
         'notification_list': 'notificationList'
     }
 
-    def __init__(self, type=None, notification_list=None):  # noqa: E501
+    def __init__(self, type=None, notification_list=None):
         """AlarmActions - a model defined in huaweicloud sdk"""
+        
+        
 
         self._type = None
         self._notification_list = None

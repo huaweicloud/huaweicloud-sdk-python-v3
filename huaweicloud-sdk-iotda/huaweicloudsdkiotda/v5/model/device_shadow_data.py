@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeviceShadowData(object):
+
+
+
+class DeviceShadowData:
 
 
     """
@@ -33,8 +36,10 @@ class DeviceShadowData(object):
         'version': 'version'
     }
 
-    def __init__(self, service_id=None, desired=None, reported=None, version=None):  # noqa: E501
+    def __init__(self, service_id=None, desired=None, reported=None, version=None):
         """DeviceShadowData - a model defined in huaweicloud sdk"""
+        
+        
 
         self._service_id = None
         self._desired = None

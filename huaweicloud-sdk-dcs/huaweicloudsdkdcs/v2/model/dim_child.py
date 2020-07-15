@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DimChild(object):
+
+
+
+class DimChild:
 
 
     """
@@ -29,8 +32,10 @@ class DimChild(object):
         'dim_route': 'dim_route'
     }
 
-    def __init__(self, dim_name=None, dim_route=None):  # noqa: E501
+    def __init__(self, dim_name=None, dim_route=None):
         """DimChild - a model defined in huaweicloud sdk"""
+        
+        
 
         self._dim_name = None
         self._dim_route = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListMonitoredObjectsOfInstanceResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
 
     """
@@ -37,8 +40,10 @@ class ListMonitoredObjectsOfInstanceResponse(object):
         'total': 'total'
     }
 
-    def __init__(self, router=None, children=None, instances=None, dcs_cluster_redis_node=None, dcs_cluster_proxy_node=None, total=None):  # noqa: E501
+    def __init__(self, router=None, children=None, instances=None, dcs_cluster_redis_node=None, dcs_cluster_proxy_node=None, total=None):
         """ListMonitoredObjectsOfInstanceResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._router = None
         self._children = None

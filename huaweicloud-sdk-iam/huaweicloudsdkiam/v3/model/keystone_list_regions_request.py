@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneListRegionsRequest(object):
+
+
+
+class KeystoneListRegionsRequest:
 
 
     """
@@ -25,8 +28,10 @@ class KeystoneListRegionsRequest(object):
     attribute_map = {
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self):
         """KeystoneListRegionsRequest - a model defined in huaweicloud sdk"""
+        
+        
         self.discriminator = None
 
     def to_dict(self):

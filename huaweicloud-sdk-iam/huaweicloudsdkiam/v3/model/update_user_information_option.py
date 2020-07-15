@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateUserInformationOption(object):
+
+
+
+class UpdateUserInformationOption:
 
 
     """
@@ -29,8 +32,10 @@ class UpdateUserInformationOption(object):
         'mobile': 'mobile'
     }
 
-    def __init__(self, email=None, mobile=None):  # noqa: E501
+    def __init__(self, email=None, mobile=None):
         """UpdateUserInformationOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._email = None
         self._mobile = None

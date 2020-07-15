@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SecurityCompliance(object):
+
+
+
+class SecurityCompliance:
 
 
     """
@@ -29,8 +32,10 @@ class SecurityCompliance(object):
         'password_regex_description': 'password_regex_description'
     }
 
-    def __init__(self, password_regex=None, password_regex_description=None):  # noqa: E501
+    def __init__(self, password_regex=None, password_regex_description=None):
         """SecurityCompliance - a model defined in huaweicloud sdk"""
+        
+        
 
         self._password_regex = None
         self._password_regex_description = None

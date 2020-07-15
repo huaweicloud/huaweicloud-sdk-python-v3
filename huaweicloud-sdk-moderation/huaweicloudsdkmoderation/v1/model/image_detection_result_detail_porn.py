@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ImageDetectionResultDetailPorn(object):
+
+
+
+class ImageDetectionResultDetailPorn:
 
 
     """
@@ -29,8 +32,10 @@ class ImageDetectionResultDetailPorn(object):
         'label': 'label'
     }
 
-    def __init__(self, confidence=None, label=None):  # noqa: E501
+    def __init__(self, confidence=None, label=None):
         """ImageDetectionResultDetailPorn - a model defined in huaweicloud sdk"""
+        
+        
 
         self._confidence = None
         self._label = None

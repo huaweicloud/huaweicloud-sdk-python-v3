@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Eip(object):
+
+
+
+class Eip:
 
 
     """
@@ -29,8 +32,10 @@ class Eip(object):
         'bandwidth': 'bandwidth'
     }
 
-    def __init__(self, ip_type=None, bandwidth=None):  # noqa: E501
+    def __init__(self, ip_type=None, bandwidth=None):
         """Eip - a model defined in huaweicloud sdk"""
+        
+        
 
         self._ip_type = None
         self._bandwidth = None

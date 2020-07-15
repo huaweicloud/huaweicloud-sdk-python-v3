@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PostPaidServerTag(object):
+
+
+
+class PostPaidServerTag:
 
 
     """
@@ -29,8 +32,10 @@ class PostPaidServerTag(object):
         'value': 'value'
     }
 
-    def __init__(self, key=None, value=None):  # noqa: E501
+    def __init__(self, key=None, value=None):
         """PostPaidServerTag - a model defined in huaweicloud sdk"""
+        
+        
 
         self._key = None
         self._value = None

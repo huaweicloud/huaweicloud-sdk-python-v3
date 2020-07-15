@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListFlavorsRequest(object):
+
+
+
+class ListFlavorsRequest:
 
 
     """
@@ -37,8 +40,10 @@ class ListFlavorsRequest(object):
         'capacity': 'capacity'
     }
 
-    def __init__(self, spec_code=None, cache_mode=None, engine=None, engine_version=None, cpu_type=None, capacity=None):  # noqa: E501
+    def __init__(self, spec_code=None, cache_mode=None, engine=None, engine_version=None, cpu_type=None, capacity=None):
         """ListFlavorsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._spec_code = None
         self._cache_mode = None

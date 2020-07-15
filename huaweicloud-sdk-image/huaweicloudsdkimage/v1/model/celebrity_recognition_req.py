@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CelebrityRecognitionReq(object):
+
+
+
+class CelebrityRecognitionReq:
 
 
     """
@@ -31,8 +34,10 @@ class CelebrityRecognitionReq(object):
         'threshold': 'threshold'
     }
 
-    def __init__(self, image=None, url=None, threshold=None):  # noqa: E501
+    def __init__(self, image=None, url=None, threshold=None):
         """CelebrityRecognitionReq - a model defined in huaweicloud sdk"""
+        
+        
 
         self._image = None
         self._url = None

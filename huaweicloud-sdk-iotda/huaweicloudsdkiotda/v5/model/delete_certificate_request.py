@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteCertificateRequest(object):
+
+
+
+class DeleteCertificateRequest:
 
 
     """
@@ -29,8 +32,10 @@ class DeleteCertificateRequest(object):
         'certificate_id': 'certificate_id'
     }
 
-    def __init__(self, instance_id=None, certificate_id=None):  # noqa: E501
+    def __init__(self, instance_id=None, certificate_id=None):
         """DeleteCertificateRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._certificate_id = None

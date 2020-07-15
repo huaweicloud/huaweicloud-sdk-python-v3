@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListAlarmsRequest(object):
+
+
+
+class ListAlarmsRequest:
 
 
     """
@@ -31,8 +34,10 @@ class ListAlarmsRequest(object):
         'start': 'start'
     }
 
-    def __init__(self, limit=None, order=None, start=None):  # noqa: E501
+    def __init__(self, limit=None, order=None, start=None):
         """ListAlarmsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._limit = None
         self._order = None

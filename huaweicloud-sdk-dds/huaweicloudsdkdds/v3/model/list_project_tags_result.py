@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListProjectTagsResult(object):
+
+
+
+class ListProjectTagsResult:
 
 
     """
@@ -29,8 +32,10 @@ class ListProjectTagsResult(object):
         'values': 'values'
     }
 
-    def __init__(self, key=None, values=None):  # noqa: E501
+    def __init__(self, key=None, values=None):
         """ListProjectTagsResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._key = None
         self._values = None

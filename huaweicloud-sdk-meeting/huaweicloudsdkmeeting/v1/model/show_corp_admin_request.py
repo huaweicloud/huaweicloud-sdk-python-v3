@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowCorpAdminRequest(object):
+
+
+
+class ShowCorpAdminRequest:
 
 
     """
@@ -31,8 +34,10 @@ class ShowCorpAdminRequest(object):
         'account': 'account'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, account=None):  # noqa: E501
+    def __init__(self, x_request_id=None, accept_language=None, account=None):
         """ShowCorpAdminRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_request_id = None
         self._accept_language = None

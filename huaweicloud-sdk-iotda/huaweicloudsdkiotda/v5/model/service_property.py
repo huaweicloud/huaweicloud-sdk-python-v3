@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ServiceProperty(object):
+
+
+
+class ServiceProperty:
 
 
     """
@@ -49,8 +52,10 @@ class ServiceProperty(object):
         'default_value': 'default_value'
     }
 
-    def __init__(self, property_name=None, required=False, data_type=None, enum_list=None, min=None, max=None, max_length=None, step=None, unit=None, method=None, description=None, default_value=None):  # noqa: E501
+    def __init__(self, property_name=None, required=False, data_type=None, enum_list=None, min=None, max=None, max_length=None, step=None, unit=None, method=None, description=None, default_value=None):
         """ServiceProperty - a model defined in huaweicloud sdk"""
+        
+        
 
         self._property_name = None
         self._required = None

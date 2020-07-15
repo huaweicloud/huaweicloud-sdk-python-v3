@@ -6,7 +6,10 @@ import re
 import six
 
 
-class TextDetectionBody(object):
+
+
+
+class TextDetectionBody:
 
 
     """
@@ -29,8 +32,10 @@ class TextDetectionBody(object):
         'detail': 'detail'
     }
 
-    def __init__(self, suggestion=None, detail=None):  # noqa: E501
+    def __init__(self, suggestion=None, detail=None):
         """TextDetectionBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._suggestion = None
         self._detail = None

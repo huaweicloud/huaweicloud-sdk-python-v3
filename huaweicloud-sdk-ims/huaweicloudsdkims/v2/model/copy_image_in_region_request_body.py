@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CopyImageInRegionRequestBody(object):
+
+
+
+class CopyImageInRegionRequestBody:
 
 
     """
@@ -33,8 +36,10 @@ class CopyImageInRegionRequestBody(object):
         'name': 'name'
     }
 
-    def __init__(self, cmk_id=None, description=None, enterprise_project_id='0', name=None):  # noqa: E501
+    def __init__(self, cmk_id=None, description=None, enterprise_project_id='0', name=None):
         """CopyImageInRegionRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._cmk_id = None
         self._description = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PostPaidServerDataVolume(object):
+
+
+
+class PostPaidServerDataVolume:
 
 
     """
@@ -45,8 +48,10 @@ class PostPaidServerDataVolume(object):
         'data_image_id': 'data_image_id'
     }
 
-    def __init__(self, volumetype=None, size=None, shareable=False, multiattach=False, hwpassthrough=False, extendparam=None, cluster_type=None, cluster_id=None, metadata=None, data_image_id=None):  # noqa: E501
+    def __init__(self, volumetype=None, size=None, shareable=False, multiattach=False, hwpassthrough=False, extendparam=None, cluster_type=None, cluster_id=None, metadata=None, data_image_id=None):
         """PostPaidServerDataVolume - a model defined in huaweicloud sdk"""
+        
+        
 
         self._volumetype = None
         self._size = None

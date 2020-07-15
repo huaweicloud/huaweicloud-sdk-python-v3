@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RuleAction(object):
+
+
+
+class RuleAction:
 
 
     """
@@ -45,8 +48,10 @@ class RuleAction(object):
         'kafka_forwarding': 'kafka_forwarding'
     }
 
-    def __init__(self, type=None, addition=None, smn_forwarding=None, device_alarm=None, device_command=None, dis_forwarding=None, obs_forwarding=None, roma_forwarding=None, iota_forwarding=None, kafka_forwarding=None):  # noqa: E501
+    def __init__(self, type=None, addition=None, smn_forwarding=None, device_alarm=None, device_command=None, dis_forwarding=None, obs_forwarding=None, roma_forwarding=None, iota_forwarding=None, kafka_forwarding=None):
         """RuleAction - a model defined in huaweicloud sdk"""
+        
+        
 
         self._type = None
         self._addition = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListScalingTagInfosByResourceIdResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListScalingTagInfosByResourceIdResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class ListScalingTagInfosByResourceIdResponse(object):
         'sys_tags': 'sys_tags'
     }
 
-    def __init__(self, tags=None, sys_tags=None):  # noqa: E501
+    def __init__(self, tags=None, sys_tags=None):
         """ListScalingTagInfosByResourceIdResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._tags = None
         self._sys_tags = None

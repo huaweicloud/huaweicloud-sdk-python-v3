@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RepositoryInfo(object):
+
+
+
+class RepositoryInfo:
 
 
     """
@@ -31,8 +34,10 @@ class RepositoryInfo(object):
         'region_id': 'region_id'
     }
 
-    def __init__(self, name=None, project_id=None, region_id=None):  # noqa: E501
+    def __init__(self, name=None, project_id=None, region_id=None):
         """RepositoryInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._project_id = None

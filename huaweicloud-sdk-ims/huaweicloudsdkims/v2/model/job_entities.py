@@ -6,7 +6,10 @@ import re
 import six
 
 
-class JobEntities(object):
+
+
+
+class JobEntities:
 
 
     """
@@ -27,8 +30,10 @@ class JobEntities(object):
         'image_id': 'image_id'
     }
 
-    def __init__(self, image_id=None):  # noqa: E501
+    def __init__(self, image_id=None):
         """JobEntities - a model defined in huaweicloud sdk"""
+        
+        
 
         self._image_id = None
         self.discriminator = None

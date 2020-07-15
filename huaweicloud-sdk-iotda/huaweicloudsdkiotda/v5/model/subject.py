@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Subject(object):
+
+
+
+class Subject:
 
 
     """
@@ -29,8 +32,10 @@ class Subject(object):
         'event': 'event'
     }
 
-    def __init__(self, resource=None, event=None):  # noqa: E501
+    def __init__(self, resource=None, event=None):
         """Subject - a model defined in huaweicloud sdk"""
+        
+        
 
         self._resource = None
         self._event = None

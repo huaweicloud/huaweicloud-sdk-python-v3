@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateSubReq(object):
+
+
+
+class UpdateSubReq:
 
 
     """
@@ -27,8 +30,10 @@ class UpdateSubReq(object):
         'callbackurl': 'callbackurl'
     }
 
-    def __init__(self, callbackurl=None):  # noqa: E501
+    def __init__(self, callbackurl=None):
         """UpdateSubReq - a model defined in huaweicloud sdk"""
+        
+        
 
         self._callbackurl = None
         self.discriminator = None

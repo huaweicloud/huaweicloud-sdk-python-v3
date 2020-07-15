@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BssParamForResizeVolume(object):
+
+
+
+class BssParamForResizeVolume:
 
 
     """
@@ -27,8 +30,10 @@ class BssParamForResizeVolume(object):
         'is_auto_pay': 'isAutoPay'
     }
 
-    def __init__(self, is_auto_pay='false'):  # noqa: E501
+    def __init__(self, is_auto_pay='false'):
         """BssParamForResizeVolume - a model defined in huaweicloud sdk"""
+        
+        
 
         self._is_auto_pay = None
         self.discriminator = None

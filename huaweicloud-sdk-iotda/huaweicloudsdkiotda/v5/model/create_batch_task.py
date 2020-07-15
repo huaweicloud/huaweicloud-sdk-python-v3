@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateBatchTask(object):
+
+
+
+class CreateBatchTask:
 
 
     """
@@ -41,8 +44,10 @@ class CreateBatchTask(object):
         'document_source': 'document_source'
     }
 
-    def __init__(self, app_id=None, task_name=None, task_type=None, targets=None, targets_filter=None, document=None, task_policy=None, document_source=None):  # noqa: E501
+    def __init__(self, app_id=None, task_name=None, task_type=None, targets=None, targets_filter=None, document=None, task_policy=None, document_source=None):
         """CreateBatchTask - a model defined in huaweicloud sdk"""
+        
+        
 
         self._app_id = None
         self._task_name = None

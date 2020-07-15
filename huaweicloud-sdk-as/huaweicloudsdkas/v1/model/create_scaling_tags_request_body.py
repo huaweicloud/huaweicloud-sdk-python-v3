@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateScalingTagsRequestBody(object):
+
+
+
+class CreateScalingTagsRequestBody:
 
 
     """
@@ -29,8 +32,10 @@ class CreateScalingTagsRequestBody(object):
         'action': 'action'
     }
 
-    def __init__(self, tags=None, action=None):  # noqa: E501
+    def __init__(self, tags=None, action='create'):
         """CreateScalingTagsRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._tags = None
         self._action = None
@@ -45,7 +50,7 @@ class CreateScalingTagsRequestBody(object):
     def tags(self):
         """Gets the tags of this CreateScalingTagsRequestBody.
 
-        标签列表。action为delete时，tags结构体不能缺失，key不能为空，或者空字符串。
+        标签列表。
 
         :return: The tags of this CreateScalingTagsRequestBody.
         :rtype: list[TagsSingleValue]
@@ -56,7 +61,7 @@ class CreateScalingTagsRequestBody(object):
     def tags(self, tags):
         """Sets the tags of this CreateScalingTagsRequestBody.
 
-        标签列表。action为delete时，tags结构体不能缺失，key不能为空，或者空字符串。
+        标签列表。
 
         :param tags: The tags of this CreateScalingTagsRequestBody.
         :type: list[TagsSingleValue]
@@ -67,7 +72,7 @@ class CreateScalingTagsRequestBody(object):
     def action(self):
         """Gets the action of this CreateScalingTagsRequestBody.
 
-        操作标识（区分大小写）：delete：删除。create：创建。若已经存在相同的key值则会覆盖对应的value值。
+        操作标识（区分大小写）：create：创建。若已经存在相同的key值则会覆盖对应的value值。
 
         :return: The action of this CreateScalingTagsRequestBody.
         :rtype: str
@@ -78,7 +83,7 @@ class CreateScalingTagsRequestBody(object):
     def action(self, action):
         """Sets the action of this CreateScalingTagsRequestBody.
 
-        操作标识（区分大小写）：delete：删除。create：创建。若已经存在相同的key值则会覆盖对应的value值。
+        操作标识（区分大小写）：create：创建。若已经存在相同的key值则会覆盖对应的value值。
 
         :param action: The action of this CreateScalingTagsRequestBody.
         :type: str

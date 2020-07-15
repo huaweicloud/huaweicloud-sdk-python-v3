@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ResetPwdReqDTOV1(object):
+
+
+
+class ResetPwdReqDTOV1:
 
 
     """
@@ -31,8 +34,10 @@ class ResetPwdReqDTOV1(object):
         'pass_word_type': 'passWordType'
     }
 
-    def __init__(self, user=None, new_pwd=None, pass_word_type=None):  # noqa: E501
+    def __init__(self, user=None, new_pwd=None, pass_word_type=None):
         """ResetPwdReqDTOV1 - a model defined in huaweicloud sdk"""
+        
+        
 
         self._user = None
         self._new_pwd = None

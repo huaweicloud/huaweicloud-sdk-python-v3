@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteProductRequest(object):
+
+
+
+class DeleteProductRequest:
 
 
     """
@@ -31,8 +34,10 @@ class DeleteProductRequest(object):
         'app_id': 'app_id'
     }
 
-    def __init__(self, instance_id=None, product_id=None, app_id=None):  # noqa: E501
+    def __init__(self, instance_id=None, product_id=None, app_id=None):
         """DeleteProductRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._product_id = None

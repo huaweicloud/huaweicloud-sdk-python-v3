@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AddDeviceDTO(object):
+
+
+
+class AddDeviceDTO:
 
 
     """
@@ -47,8 +50,10 @@ class AddDeviceDTO(object):
         'send_notify': 'sendNotify'
     }
 
-    def __init__(self, name=None, model=None, sn=None, prj_code_mode=None, dept_code=None, phone=None, country=None, email=None, description=None, status=None, send_notify=None):  # noqa: E501
+    def __init__(self, name=None, model=None, sn=None, prj_code_mode=None, dept_code=None, phone=None, country=None, email=None, description=None, status=None, send_notify=None):
         """AddDeviceDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._model = None

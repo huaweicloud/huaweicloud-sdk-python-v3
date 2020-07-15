@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListDatastoreVersionsRequest(object):
+
+
+
+class ListDatastoreVersionsRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ListDatastoreVersionsRequest(object):
         'datastore_name': 'datastore_name'
     }
 
-    def __init__(self, datastore_name=None):  # noqa: E501
+    def __init__(self, datastore_name=None):
         """ListDatastoreVersionsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._datastore_name = None
         self.discriminator = None

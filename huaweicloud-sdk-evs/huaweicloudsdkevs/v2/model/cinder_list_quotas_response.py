@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CinderListQuotasResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CinderListQuotasResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class CinderListQuotasResponse(object):
         'quota_set': 'quota_set'
     }
 
-    def __init__(self, quota_set=None):  # noqa: E501
+    def __init__(self, quota_set=None):
         """CinderListQuotasResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._quota_set = None
         self.discriminator = None

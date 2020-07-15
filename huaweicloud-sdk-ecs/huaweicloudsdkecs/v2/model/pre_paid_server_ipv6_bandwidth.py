@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PrePaidServerIpv6Bandwidth(object):
+
+
+
+class PrePaidServerIpv6Bandwidth:
 
 
     """
@@ -27,8 +30,10 @@ class PrePaidServerIpv6Bandwidth(object):
         'id': 'id'
     }
 
-    def __init__(self, id=None):  # noqa: E501
+    def __init__(self, id=None):
         """PrePaidServerIpv6Bandwidth - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self.discriminator = None

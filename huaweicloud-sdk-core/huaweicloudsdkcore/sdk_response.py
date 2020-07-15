@@ -25,10 +25,10 @@ from huaweicloudsdkcore.exceptions import exceptions
 
 
 class SdkResponse:
-    def __init__(self, code, headers, body):
-        self.status_code = code
-        self.header_params = headers
-        self.body = body
+    def __init__(self):
+        self.status_code = None
+        self.header_params = None
+        self.body = None
 
 
 class FutureSdkResponse:

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ResetPwdResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ResetPwdResponse(SdkResponse):
 
 
     """
@@ -25,8 +28,10 @@ class ResetPwdResponse(object):
     attribute_map = {
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self):
         """ResetPwdResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
         self.discriminator = None
 
     def to_dict(self):

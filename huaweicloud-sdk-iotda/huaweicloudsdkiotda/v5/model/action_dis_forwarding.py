@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ActionDisForwarding(object):
+
+
+
+class ActionDisForwarding:
 
 
     """
@@ -31,8 +34,10 @@ class ActionDisForwarding(object):
         'stream_name': 'stream_name'
     }
 
-    def __init__(self, region_name=None, project_id=None, stream_name=None):  # noqa: E501
+    def __init__(self, region_name=None, project_id=None, stream_name=None):
         """ActionDisForwarding - a model defined in huaweicloud sdk"""
+        
+        
 
         self._region_name = None
         self._project_id = None

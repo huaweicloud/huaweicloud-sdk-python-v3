@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Cmd(object):
+
+
+
+class Cmd:
 
 
     """
@@ -37,8 +40,10 @@ class Cmd(object):
         'mode': 'mode'
     }
 
-    def __init__(self, command_name=None, command_body=None, service_id=None, buffer_timeout=172800, response_timeout=1800, mode=None):  # noqa: E501
+    def __init__(self, command_name=None, command_body=None, service_id=None, buffer_timeout=172800, response_timeout=1800, mode=None):
         """Cmd - a model defined in huaweicloud sdk"""
+        
+        
 
         self._command_name = None
         self._command_body = None

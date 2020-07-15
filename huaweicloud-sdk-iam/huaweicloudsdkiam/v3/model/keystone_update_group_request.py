@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneUpdateGroupRequest(object):
+
+
+
+class KeystoneUpdateGroupRequest:
 
 
     """
@@ -29,8 +32,10 @@ class KeystoneUpdateGroupRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, group_id=None, body=None):  # noqa: E501
+    def __init__(self, group_id=None, body=None):
         """KeystoneUpdateGroupRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._group_id = None
         self._body = None

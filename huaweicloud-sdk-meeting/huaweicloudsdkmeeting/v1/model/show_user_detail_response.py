@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowUserDetailResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowUserDetailResponse(SdkResponse):
 
 
     """
@@ -69,8 +72,10 @@ class ShowUserDetailResponse(object):
         'hide_phone': 'hidePhone'
     }
 
-    def __init__(self, id=None, user_account=None, name=None, english_name=None, phone=None, country=None, email=None, sip_num=None, vmr_list=None, dept_code=None, dept_name=None, dept_name_path=None, user_type=None, admin_type=None, signature=None, title=None, desc=None, corp=None, function=None, status=None, sort_level=None, hide_phone=None):  # noqa: E501
+    def __init__(self, id=None, user_account=None, name=None, english_name=None, phone=None, country=None, email=None, sip_num=None, vmr_list=None, dept_code=None, dept_name=None, dept_name_path=None, user_type=None, admin_type=None, signature=None, title=None, desc=None, corp=None, function=None, status=None, sort_level=None, hide_phone=None):
         """ShowUserDetailResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._id = None
         self._user_account = None

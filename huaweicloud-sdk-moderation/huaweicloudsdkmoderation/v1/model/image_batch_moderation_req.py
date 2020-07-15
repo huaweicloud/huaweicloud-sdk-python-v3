@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ImageBatchModerationReq(object):
+
+
+
+class ImageBatchModerationReq:
 
 
     """
@@ -31,8 +34,10 @@ class ImageBatchModerationReq(object):
         'threshold': 'threshold'
     }
 
-    def __init__(self, urls=None, categories=None, threshold=None):  # noqa: E501
+    def __init__(self, urls=None, categories=None, threshold=None):
         """ImageBatchModerationReq - a model defined in huaweicloud sdk"""
+        
+        
 
         self._urls = None
         self._categories = None

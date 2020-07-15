@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchAddServerNicOption(object):
+
+
+
+class BatchAddServerNicOption:
 
 
     """
@@ -35,8 +38,10 @@ class BatchAddServerNicOption(object):
         'ipv6_bandwidth': 'ipv6_bandwidth'
     }
 
-    def __init__(self, subnet_id=None, security_groups=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None):  # noqa: E501
+    def __init__(self, subnet_id=None, security_groups=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None):
         """BatchAddServerNicOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._subnet_id = None
         self._security_groups = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateDesired(object):
+
+
+
+class UpdateDesired:
 
 
     """
@@ -31,8 +34,10 @@ class UpdateDesired(object):
         'version': 'version'
     }
 
-    def __init__(self, service_id=None, desired=None, version=None):  # noqa: E501
+    def __init__(self, service_id=None, desired=None, version=None):
         """UpdateDesired - a model defined in huaweicloud sdk"""
+        
+        
 
         self._service_id = None
         self._desired = None

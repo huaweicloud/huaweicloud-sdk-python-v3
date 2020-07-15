@@ -6,7 +6,10 @@ import re
 import six
 
 
-class MemberJobCard(object):
+
+
+
+class MemberJobCard:
 
 
     """
@@ -35,8 +38,10 @@ class MemberJobCard(object):
         'last_submit_time': 'last_submit_time'
     }
 
-    def __init__(self, name=None, average_score=None, score=None, send_time=None, last_submit_time=None):  # noqa: E501
+    def __init__(self, name=None, average_score=None, score=None, send_time=None, last_submit_time=None):
         """MemberJobCard - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._average_score = None

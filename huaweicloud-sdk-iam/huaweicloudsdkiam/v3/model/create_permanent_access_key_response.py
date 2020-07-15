@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreatePermanentAccessKeyResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CreatePermanentAccessKeyResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class CreatePermanentAccessKeyResponse(object):
         'credential': 'credential'
     }
 
-    def __init__(self, credential=None):  # noqa: E501
+    def __init__(self, credential=None):
         """CreatePermanentAccessKeyResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._credential = None
         self.discriminator = None

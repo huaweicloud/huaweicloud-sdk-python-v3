@@ -20,14 +20,14 @@
 
 
 class SdkRequest:
-    def __init__(self, method='GET', schema=None, host=None, resource_path=None, query_params=None, header_params=None,
-                 body=None, form_params=None, uri=None):
+    def __init__(self, method='GET', schema=None, host=None, resource_path=None, uri=None, query_params=None,
+                 header_params=None, body=None, stream=False):
         self.method = method
         self.schema = schema
         self.host = host
         self.resource_path = resource_path
+        self.uri = uri
         self.query_params = query_params
         self.header_params = header_params
         self.body = body
-        self.form_params = form_params
-        self.uri = uri
+        self.stream = stream

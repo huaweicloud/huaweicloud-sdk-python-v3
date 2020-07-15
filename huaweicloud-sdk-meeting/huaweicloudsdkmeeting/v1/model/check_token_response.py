@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CheckTokenResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CheckTokenResponse(SdkResponse):
 
 
     """
@@ -45,8 +48,10 @@ class CheckTokenResponse(object):
         'days_pwd_available': 'daysPwdAvailable'
     }
 
-    def __init__(self, access_token=None, token_ip=None, valid_period=None, expire_time=None, user=None, client_type=None, force_login_ind=None, first_login=False, pwd_expired=False, days_pwd_available=None):  # noqa: E501
+    def __init__(self, access_token=None, token_ip=None, valid_period=None, expire_time=None, user=None, client_type=None, force_login_ind=None, first_login=False, pwd_expired=False, days_pwd_available=None):
         """CheckTokenResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._access_token = None
         self._token_ip = None

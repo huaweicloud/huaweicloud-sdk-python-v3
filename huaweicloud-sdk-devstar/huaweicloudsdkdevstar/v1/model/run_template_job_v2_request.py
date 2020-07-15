@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RunTemplateJobV2Request(object):
+
+
+
+class RunTemplateJobV2Request:
 
 
     """
@@ -29,8 +32,10 @@ class RunTemplateJobV2Request(object):
         'body': 'body'
     }
 
-    def __init__(self, x_language='zh-cn', body=None):  # noqa: E501
+    def __init__(self, x_language='zh-cn', body=None):
         """RunTemplateJobV2Request - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_language = None
         self._body = None

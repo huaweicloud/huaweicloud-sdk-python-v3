@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteVolumeRequest(object):
+
+
+
+class DeleteVolumeRequest:
 
 
     """
@@ -27,8 +30,10 @@ class DeleteVolumeRequest(object):
         'volume_id': 'volume_id'
     }
 
-    def __init__(self, volume_id=None):  # noqa: E501
+    def __init__(self, volume_id=None):
         """DeleteVolumeRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._volume_id = None
         self.discriminator = None

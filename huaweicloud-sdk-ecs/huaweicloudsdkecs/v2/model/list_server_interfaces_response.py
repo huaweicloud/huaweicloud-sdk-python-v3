@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListServerInterfacesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListServerInterfacesResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ListServerInterfacesResponse(object):
         'interface_attachments': 'interfaceAttachments'
     }
 
-    def __init__(self, interface_attachments=None):  # noqa: E501
+    def __init__(self, interface_attachments=None):
         """ListServerInterfacesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._interface_attachments = None
         self.discriminator = None

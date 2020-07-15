@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Networks(object):
+
+
+
+class Networks:
 
 
     """
@@ -31,8 +34,10 @@ class Networks(object):
         'ipv6_bandwidth': 'ipv6_bandwidth'
     }
 
-    def __init__(self, id=None, ipv6_enable=None, ipv6_bandwidth=None):  # noqa: E501
+    def __init__(self, id=None, ipv6_enable=None, ipv6_bandwidth=None):
         """Networks - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._ipv6_enable = None

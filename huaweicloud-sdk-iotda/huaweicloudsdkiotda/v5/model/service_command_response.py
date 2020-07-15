@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ServiceCommandResponse(object):
+
+
+
+class ServiceCommandResponse:
 
 
     """
@@ -29,8 +32,10 @@ class ServiceCommandResponse(object):
         'response_name': 'response_name'
     }
 
-    def __init__(self, paras=None, response_name=None):  # noqa: E501
+    def __init__(self, paras=None, response_name=None):
         """ServiceCommandResponse - a model defined in huaweicloud sdk"""
+        
+        
 
         self._paras = None
         self._response_name = None

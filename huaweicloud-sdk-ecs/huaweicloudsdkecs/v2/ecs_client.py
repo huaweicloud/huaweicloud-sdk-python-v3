@@ -11,6 +11,7 @@ import six
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class EcsClient(Client):
@@ -55,15 +56,10 @@ class EcsClient(Client):
         把磁盘挂载到弹性云服务器上。
 
         :param AttachServerVolumeRequest request
-        :return: tuple(AttachServerVolumeResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: AttachServerVolumeResponse
         """
 
         all_params = ['server_id', 'attach_server_volume_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -79,24 +75,25 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/{server_id}/attachvolume', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/attachvolume',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='AttachServerVolumeResponse',
@@ -120,15 +117,10 @@ class EcsClient(Client):
         给云服务器添加一张或多张网卡。
 
         :param BatchAddServerNicsRequest request
-        :return: tuple(BatchAddServerNicsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: BatchAddServerNicsResponse
         """
 
         all_params = ['server_id', 'batch_add_server_nics_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -144,24 +136,25 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/{server_id}/nics', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/nics',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='BatchAddServerNicsResponse',
@@ -175,7 +168,7 @@ class EcsClient(Client):
         - 为指定云服务器批量添加标签。  - 标签管理服务TMS使用该接口批量管理云服务器的标签。
 
         :param BatchCreateServerTagsRequest request
-        :return: None
+        :return: BatchCreateServerTagsResponse
         """
         return self.batch_create_server_tags_with_http_info(request)
 
@@ -185,15 +178,10 @@ class EcsClient(Client):
         - 为指定云服务器批量添加标签。  - 标签管理服务TMS使用该接口批量管理云服务器的标签。
 
         :param BatchCreateServerTagsRequest request
-        :return: None
+        :return: BatchCreateServerTagsResponse
         """
 
         all_params = ['server_id', 'batch_create_server_tags_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -209,25 +197,28 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/{server_id}/tags/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='BatchCreateServerTagsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -248,15 +239,10 @@ class EcsClient(Client):
         卸载并删除云服务器中的一张或多张网卡。
 
         :param BatchDeleteServerNicsRequest request
-        :return: tuple(BatchDeleteServerNicsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: BatchDeleteServerNicsResponse
         """
 
         all_params = ['server_id', 'batch_delete_server_nics_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -272,24 +258,25 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/{server_id}/nics/delete', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/nics/delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='BatchDeleteServerNicsResponse',
@@ -303,7 +290,7 @@ class EcsClient(Client):
         - 为指定云服务器批量删除标签。  - 标签管理服务TMS使用该接口批量管理云服务器的标签。
 
         :param BatchDeleteServerTagsRequest request
-        :return: None
+        :return: BatchDeleteServerTagsResponse
         """
         return self.batch_delete_server_tags_with_http_info(request)
 
@@ -313,15 +300,10 @@ class EcsClient(Client):
         - 为指定云服务器批量删除标签。  - 标签管理服务TMS使用该接口批量管理云服务器的标签。
 
         :param BatchDeleteServerTagsRequest request
-        :return: None
+        :return: BatchDeleteServerTagsResponse
         """
 
         all_params = ['server_id', 'batch_delete_server_tags_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -337,25 +319,28 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/{server_id}/tags/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='BatchDeleteServerTagsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -376,15 +361,10 @@ class EcsClient(Client):
         根据给定的云服务器ID列表，批量重启云服务器，一次最多可以重启1000台。
 
         :param BatchRebootServersRequest request
-        :return: tuple(BatchRebootServersResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: BatchRebootServersResponse
         """
 
         all_params = ['batch_reboot_servers_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -398,24 +378,25 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='BatchRebootServersResponse',
@@ -439,15 +420,10 @@ class EcsClient(Client):
         根据给定的云服务器ID列表，批量启动云服务器，一次最多可以启动1000台。
 
         :param BatchStartServersRequest request
-        :return: tuple(BatchStartServersResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: BatchStartServersResponse
         """
 
         all_params = ['batch_start_servers_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -461,24 +437,25 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='BatchStartServersResponse',
@@ -502,15 +479,10 @@ class EcsClient(Client):
         根据给定的云服务器ID列表，批量关闭云服务器，一次最多可以关闭1000台。
 
         :param BatchStopServersRequest request
-        :return: tuple(BatchStopServersResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: BatchStopServersResponse
         """
 
         all_params = ['batch_stop_servers_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -524,24 +496,25 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='BatchStopServersResponse',
@@ -565,15 +538,10 @@ class EcsClient(Client):
         创建一台或多台按需付费方式的云服务器。  弹性云服务器的登录鉴权方式包括两种：密钥对、密码。为安全起见，推荐使用密钥对方式。  - 密钥对 密钥对指使用密钥对作为弹性云服务器的鉴权方式。 接口调用方法：使用key_name字段，指定弹性云服务器登录时使用的密钥文件。  - 密码 密码指使用设置初始密码方式作为弹性云服务器的鉴权方式，此时，您可以通过用户名密码方式登录弹性云服务器，Linux操作系统时为root用户的初始密码，Windows操作系统时为Administrator用户的初始密码。  接口调用方法：使用adminPass字段，指定管理员帐号的初始登录密码。对于镜像已安装Cloud-init的Linux云服务器，如果需要使用密文密码，可以使用user_data字段进行密码注入。  > 对于安装Cloud-init镜像的Linux云服务器云主机，若指定user_data字段，则adminPass字段无效。
 
         :param CreatePostPaidServersRequest request
-        :return: tuple(CreatePostPaidServersResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreatePostPaidServersResponse
         """
 
         all_params = ['create_post_paid_servers_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -587,24 +555,25 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreatePostPaidServersResponse',
@@ -628,15 +597,10 @@ class EcsClient(Client):
         创建一台或多台云服务器。  指该接口兼容《弹性云服务器接口参考》创建云服务器v1的功能，同时合入新功能，支持创建包年/包月的弹性云服务器。  弹性云服务器的登录鉴权方式包括两种：密钥对、密码。为安全起见，推荐使用密钥对方式。  - 密钥对  指使用密钥对作为弹性云服务器的鉴权方式。  接口调用方法：使用key_name字段，指定弹性云服务器登录时使用的密钥文件。  - 密码  指使用设置初始密码方式作为弹性云服务器的鉴权方式，此时，您可以通过用户名密码方式登录弹性云服务器，Linux操作系统时为root用户的初始密码，Windows操作系统时为Administrator用户的初始密码。  接口调用方法：使用adminPass字段，指定管理员帐号的初始登录密码。对于镜像已安装Cloud-init的Linux云服务器，如果需要使用密文密码，可以使用user_data字段进行密码注入。  > 对于安装Cloud-init镜像的Linux云服务器云主机，若指定user_data字段，则adminPass字段无效。
 
         :param CreateServersRequest request
-        :return: tuple(CreateServersResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateServersResponse
         """
 
         all_params = ['create_servers_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -650,24 +614,25 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1.1/{project_id}/cloudservers', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1.1/{project_id}/cloudservers',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateServersResponse',
@@ -691,15 +656,10 @@ class EcsClient(Client):
         根据指定的云服务器ID列表，删除云服务器。  系统支持删除单台云服务器和批量删除多台云服务器操作，批量删除云服务器时，一次最多可以删除1000台。
 
         :param DeleteServersRequest request
-        :return: tuple(DeleteServersResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: DeleteServersResponse
         """
 
         all_params = ['delete_servers_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -713,24 +673,25 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/delete', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='DeleteServersResponse',
@@ -754,15 +715,10 @@ class EcsClient(Client):
         从弹性云服务器中卸载磁盘。
 
         :param DetachServerVolumeRequest request
-        :return: tuple(DetachServerVolumeResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: DetachServerVolumeResponse
         """
 
         all_params = ['server_id', 'volume_id', 'delete_flag']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -782,20 +738,21 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/{server_id}/detachvolume/{volume_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/detachvolume/{volume_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='DetachServerVolumeResponse',
@@ -819,15 +776,10 @@ class EcsClient(Client):
         查询云服务器规格详情信息和规格扩展信息列表。
 
         :param ListFlavorsRequest request
-        :return: tuple(ListFlavorsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListFlavorsResponse
         """
 
         all_params = ['availability_zone']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -843,20 +795,21 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/flavors', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/flavors',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListFlavorsResponse',
@@ -880,15 +833,10 @@ class EcsClient(Client):
         查询弹性云服务器挂载的磁盘信息。
 
         :param ListServerBlockDevicesRequest request
-        :return: tuple(ListServerBlockDevicesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListServerBlockDevicesResponse
         """
 
         all_params = ['server_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -904,20 +852,21 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/{server_id}/block_device', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/block_device',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListServerBlockDevicesResponse',
@@ -941,15 +890,10 @@ class EcsClient(Client):
         查询云服务器网卡信息。
 
         :param ListServerInterfacesRequest request
-        :return: tuple(ListServerInterfacesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListServerInterfacesResponse
         """
 
         all_params = ['server_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -965,20 +909,21 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/{server_id}/os-interface', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/os-interface',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListServerInterfacesResponse',
@@ -1002,15 +947,10 @@ class EcsClient(Client):
         根据用户请求条件从数据库筛选、查询所有的弹性云服务器，并关联相关表获取到弹性云服务器的详细信息。  该接口支持查询弹性云服务器计费方式，以及是否被冻结。
 
         :param ListServersDetailsRequest request
-        :return: tuple(ListServersDetailsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListServersDetailsResponse
         """
 
         all_params = ['offset', 'flavor', 'name', 'status', 'limit', 'not_tags', 'reservation_id', 'enterprise_project_id', 'tags', 'ip']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1044,20 +984,21 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/detail', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListServersDetailsResponse',
@@ -1081,15 +1022,10 @@ class EcsClient(Client):
         创建一台弹性云服务器。  弹性云服务器创建完成后，如需开启自动恢复功能，可以调用配置云服务器自动恢复的接口，具体使用请参见管理云服务器自动恢复动作。  该接口在云服务器创建失败后不支持自动回滚。若需要自动回滚能力，可以调用POST /v1/{project_id}/cloudservers接口，具体使用请参见创建云服务器（按需）。
 
         :param NovaCreateServersRequest request
-        :return: tuple(NovaCreateServersResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: NovaCreateServersResponse
         """
 
         all_params = ['nova_create_servers_request_body', 'open_stack_api_version']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1105,24 +1041,25 @@ class EcsClient(Client):
         if 'open_stack_api_version' in local_var_params:
             header_params['OpenStack-API-Version'] = local_var_params['open_stack_api_version']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2.1/{project_id}/servers', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2.1/{project_id}/servers',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='NovaCreateServersResponse',
@@ -1136,7 +1073,7 @@ class EcsClient(Client):
         删除一台云服务器。
 
         :param NovaDeleteServerRequest request
-        :return: None
+        :return: NovaDeleteServerResponse
         """
         return self.nova_delete_server_with_http_info(request)
 
@@ -1146,15 +1083,10 @@ class EcsClient(Client):
         删除一台云服务器。
 
         :param NovaDeleteServerRequest request
-        :return: None
+        :return: NovaDeleteServerResponse
         """
 
         all_params = ['server_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1170,21 +1102,24 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v2.1/{project_id}/servers/{server_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2.1/{project_id}/servers/{server_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='NovaDeleteServerResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1205,15 +1140,10 @@ class EcsClient(Client):
         查询云服务器详情信息列表。
 
         :param NovaListServersDetailsRequest request
-        :return: tuple(NovaListServersDetailsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: NovaListServersDetailsResponse
         """
 
         all_params = ['open_stack_api_version', 'changes_since', 'ip', 'image', 'flavor', 'name', 'status', 'limit', 'marker', 'tags', 'not_tags', 'reservation_id', 'sort_key']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1253,20 +1183,21 @@ class EcsClient(Client):
         if 'open_stack_api_version' in local_var_params:
             header_params['OpenStack-API-Version'] = local_var_params['open_stack_api_version']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2.1/{project_id}/servers/detail', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2.1/{project_id}/servers/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='NovaListServersDetailsResponse',
@@ -1290,15 +1221,10 @@ class EcsClient(Client):
         根据云服务器ID，查询云服务器的详细信息。
 
         :param NovaShowServerRequest request
-        :return: tuple(NovaShowServerResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: NovaShowServerResponse
         """
 
         all_params = ['server_id', 'open_stack_api_version']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1316,20 +1242,21 @@ class EcsClient(Client):
         if 'open_stack_api_version' in local_var_params:
             header_params['OpenStack-API-Version'] = local_var_params['open_stack_api_version']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2.1/{project_id}/servers/{server_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2.1/{project_id}/servers/{server_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='NovaShowServerResponse',
@@ -1353,15 +1280,10 @@ class EcsClient(Client):
         当您创建的弹性云服务器规格无法满足业务需要时，可以变更云服务器规格，升级vCPU、内存。具体接口的使用，请参见本节内容。  变更规格时，部分规格的云服务器之间不能互相变更。  您可以通过接口“/v1/{project_id}/cloudservers/resize_flavors?{instance_uuid,source_flavor_id,source_flavor_name}”查询支持列表。
 
         :param ResizePostPaidServerRequest request
-        :return: tuple(ResizePostPaidServerResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ResizePostPaidServerResponse
         """
 
         all_params = ['server_id', 'resize_post_paid_server_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1377,24 +1299,25 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/{server_id}/resize', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/resize',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ResizePostPaidServerResponse',
@@ -1418,15 +1341,10 @@ class EcsClient(Client):
         查询弹性云服务器的详细信息。  该接口支持查询弹性云服务器的计费方式，以及是否被冻结。
 
         :param ShowServerRequest request
-        :return: tuple(ShowServerResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowServerResponse
         """
 
         all_params = ['server_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1442,20 +1360,21 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/{server_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/{server_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowServerResponse',
@@ -1479,15 +1398,10 @@ class EcsClient(Client):
         - 查询指定云服务器的标签信息。  - 标签管理服务TMS使用该接口查询指定云服务器的全部标签数据。
 
         :param ShowServerTagsRequest request
-        :return: tuple(ShowServerTagsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowServerTagsResponse
         """
 
         all_params = ['server_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1503,20 +1417,21 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/{server_id}/tags', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowServerTagsResponse',
@@ -1540,15 +1455,10 @@ class EcsClient(Client):
         修改云服务器信息，目前支持修改云服务器名称及描述和hostname。
 
         :param UpdateServerRequest request
-        :return: tuple(UpdateServerResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateServerResponse
         """
 
         all_params = ['server_id', 'update_server_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1564,24 +1474,25 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/cloudservers/{server_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/cloudservers/{server_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateServerResponse',
@@ -1606,15 +1517,10 @@ class EcsClient(Client):
         查询Job的执行状态。  对于创建云服务器、删除云服务器、云服务器批量操作和网卡操作等异步API，命令下发后，会返回job_id，通过job_id可以查询任务的执行状态。
 
         :param ShowJobRequest request
-        :return: tuple(ShowJobResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowJobResponse
         """
 
         all_params = ['job_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1630,20 +1536,21 @@ class EcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/jobs/{job_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/jobs/{job_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowJobResponse',
@@ -1673,6 +1580,14 @@ class EcsClient(Client):
         :return:
             Return the response directly.
         """
-        return self.do_http_request(method, resource_path, path_params,
-                                    query_params, header_params, body, post_params,
-                                    response_type, collection_formats, request_type)
+        return self.do_http_request(
+            method=method,
+            resource_path=resource_path,
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body,
+            post_params=post_params,
+            response_type=response_type,
+            collection_formats=collection_formats,
+            request_type=request_type)

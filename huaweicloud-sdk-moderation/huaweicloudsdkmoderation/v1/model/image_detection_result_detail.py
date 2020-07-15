@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ImageDetectionResultDetail(object):
+
+
+
+class ImageDetectionResultDetail:
 
 
     """
@@ -33,8 +36,10 @@ class ImageDetectionResultDetail(object):
         'ad': 'ad'
     }
 
-    def __init__(self, politics=None, porn=None, terrorism=None, ad=None):  # noqa: E501
+    def __init__(self, politics=None, porn=None, terrorism=None, ad=None):
         """ImageDetectionResultDetail - a model defined in huaweicloud sdk"""
+        
+        
 
         self._politics = None
         self._porn = None

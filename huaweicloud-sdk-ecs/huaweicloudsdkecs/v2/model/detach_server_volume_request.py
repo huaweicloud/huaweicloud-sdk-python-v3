@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DetachServerVolumeRequest(object):
+
+
+
+class DetachServerVolumeRequest:
 
 
     """
@@ -31,8 +34,10 @@ class DetachServerVolumeRequest(object):
         'delete_flag': 'delete_flag'
     }
 
-    def __init__(self, server_id=None, volume_id=None, delete_flag='0'):  # noqa: E501
+    def __init__(self, server_id=None, volume_id=None, delete_flag='0'):
         """DetachServerVolumeRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._server_id = None
         self._volume_id = None

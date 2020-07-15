@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AsyncInvokeFunctionResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class AsyncInvokeFunctionResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class AsyncInvokeFunctionResponse(object):
         'request_id': 'request_id'
     }
 
-    def __init__(self, request_id=None):  # noqa: E501
+    def __init__(self, request_id=None):
         """AsyncInvokeFunctionResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._request_id = None
         self.discriminator = None

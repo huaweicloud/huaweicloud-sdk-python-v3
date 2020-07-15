@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneListUsersResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class KeystoneListUsersResponse(SdkResponse):
 
 
     """
@@ -21,7 +24,7 @@ class KeystoneListUsersResponse(object):
 
     openapi_types = {
         'links': 'Links',
-        'users': 'list[KeystoneUserResult]'
+        'users': 'list[KeystoneListUsersResult]'
     }
 
     attribute_map = {
@@ -29,8 +32,10 @@ class KeystoneListUsersResponse(object):
         'users': 'users'
     }
 
-    def __init__(self, links=None, users=None):  # noqa: E501
+    def __init__(self, links=None, users=None):
         """KeystoneListUsersResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._links = None
         self._users = None
@@ -68,7 +73,7 @@ class KeystoneListUsersResponse(object):
         IAM用户信息列表。
 
         :return: The users of this KeystoneListUsersResponse.
-        :rtype: list[KeystoneUserResult]
+        :rtype: list[KeystoneListUsersResult]
         """
         return self._users
 
@@ -79,7 +84,7 @@ class KeystoneListUsersResponse(object):
         IAM用户信息列表。
 
         :param users: The users of this KeystoneListUsersResponse.
-        :type: list[KeystoneUserResult]
+        :type: list[KeystoneListUsersResult]
         """
         self._users = users
 

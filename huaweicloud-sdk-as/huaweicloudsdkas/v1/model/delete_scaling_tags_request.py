@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteScalingTagsRequest(object):
+
+
+
+class DeleteScalingTagsRequest:
 
 
     """
@@ -31,8 +34,10 @@ class DeleteScalingTagsRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, resource_type=None, resource_id=None, body=None):  # noqa: E501
+    def __init__(self, resource_type=None, resource_id=None, body=None):
         """DeleteScalingTagsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._resource_type = None
         self._resource_id = None

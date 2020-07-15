@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateUserResult(object):
+
+
+
+class CreateUserResult:
 
 
     """
@@ -59,8 +62,10 @@ class CreateUserResult(object):
         'password_expires_at': 'password_expires_at'
     }
 
-    def __init__(self, status=None, pwd_status=None, xuser_id=None, xuser_type=None, description=None, name=None, phone=None, is_domain_owner=None, domain_id=None, enabled=None, areacode=None, email=None, create_time=None, xdomain_id=None, xdomain_type=None, id=None, password_expires_at=None):  # noqa: E501
+    def __init__(self, status=None, pwd_status=None, xuser_id=None, xuser_type=None, description=None, name=None, phone=None, is_domain_owner=None, domain_id=None, enabled=None, areacode=None, email=None, create_time=None, xdomain_id=None, xdomain_type=None, id=None, password_expires_at=None):
         """CreateUserResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._status = None
         self._pwd_status = None

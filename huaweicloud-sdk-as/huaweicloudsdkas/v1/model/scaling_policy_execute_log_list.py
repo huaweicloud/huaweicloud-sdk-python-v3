@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ScalingPolicyExecuteLogList(object):
+
+
+
+class ScalingPolicyExecuteLogList:
 
 
     """
@@ -55,8 +58,10 @@ class ScalingPolicyExecuteLogList(object):
         'meta_data': 'meta_data'
     }
 
-    def __init__(self, status=None, failed_reason=None, execute_type=None, execute_time=None, id=None, project_id=None, scaling_policy_id=None, scaling_resource_type=None, scaling_resource_id=None, old_value=None, desire_value=None, limit_value=None, type=None, job_records=None, meta_data=None):  # noqa: E501
+    def __init__(self, status=None, failed_reason=None, execute_type=None, execute_time=None, id=None, project_id=None, scaling_policy_id=None, scaling_resource_type=None, scaling_resource_id=None, old_value=None, desire_value=None, limit_value=None, type=None, job_records=None, meta_data=None):
         """ScalingPolicyExecuteLogList - a model defined in huaweicloud sdk"""
+        
+        
 
         self._status = None
         self._failed_reason = None

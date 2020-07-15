@@ -6,7 +6,10 @@ import re
 import six
 
 
-class QueryResourceByTagsDTO(object):
+
+
+
+class QueryResourceByTagsDTO:
 
 
     """
@@ -29,8 +32,10 @@ class QueryResourceByTagsDTO(object):
         'tags': 'tags'
     }
 
-    def __init__(self, resource_type=None, tags=None):  # noqa: E501
+    def __init__(self, resource_type=None, tags=None):
         """QueryResourceByTagsDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._resource_type = None
         self._tags = None

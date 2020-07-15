@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PostPaidServerEipExtendParam(object):
+
+
+
+class PostPaidServerEipExtendParam:
 
 
     """
@@ -27,8 +30,10 @@ class PostPaidServerEipExtendParam(object):
         'charging_mode': 'chargingMode'
     }
 
-    def __init__(self, charging_mode=None):  # noqa: E501
+    def __init__(self, charging_mode=None):
         """PostPaidServerEipExtendParam - a model defined in huaweicloud sdk"""
+        
+        
 
         self._charging_mode = None
         self.discriminator = None

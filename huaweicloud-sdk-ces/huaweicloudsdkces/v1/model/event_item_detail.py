@@ -6,7 +6,10 @@ import re
 import six
 
 
-class EventItemDetail(object):
+
+
+
+class EventItemDetail:
 
 
     """
@@ -39,8 +42,10 @@ class EventItemDetail(object):
         'event_user': 'event_user'
     }
 
-    def __init__(self, content=None, group_id=None, resource_id=None, resource_name=None, event_state=None, event_level=None, event_user=None):  # noqa: E501
+    def __init__(self, content=None, group_id=None, resource_id=None, resource_name=None, event_state=None, event_level=None, event_user=None):
         """EventItemDetail - a model defined in huaweicloud sdk"""
+        
+        
 
         self._content = None
         self._group_id = None

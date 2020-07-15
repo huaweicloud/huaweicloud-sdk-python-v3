@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchListMetricDataResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class BatchListMetricDataResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class BatchListMetricDataResponse(object):
         'metrics': 'metrics'
     }
 
-    def __init__(self, metrics=None):  # noqa: E501
+    def __init__(self, metrics=None):
         """BatchListMetricDataResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._metrics = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Rule(object):
+
+
+
+class Rule:
 
 
     """
@@ -41,8 +44,10 @@ class Rule(object):
         'edge_node_ids': 'edge_node_ids'
     }
 
-    def __init__(self, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None, edge_node_ids=None):  # noqa: E501
+    def __init__(self, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None, edge_node_ids=None):
         """Rule - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._description = None

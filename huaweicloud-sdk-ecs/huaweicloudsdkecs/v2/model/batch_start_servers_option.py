@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchStartServersOption(object):
+
+
+
+class BatchStartServersOption:
 
 
     """
@@ -27,8 +30,10 @@ class BatchStartServersOption(object):
         'servers': 'servers'
     }
 
-    def __init__(self, servers=None):  # noqa: E501
+    def __init__(self, servers=None):
         """BatchStartServersOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._servers = None
         self.discriminator = None

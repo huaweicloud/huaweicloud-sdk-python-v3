@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneUpdateProjectRequestBody(object):
+
+
+
+class KeystoneUpdateProjectRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class KeystoneUpdateProjectRequestBody(object):
         'project': 'project'
     }
 
-    def __init__(self, project=None):  # noqa: E501
+    def __init__(self, project=None):
         """KeystoneUpdateProjectRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._project = None
         self.discriminator = None

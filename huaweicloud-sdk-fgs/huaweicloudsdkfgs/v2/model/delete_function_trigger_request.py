@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteFunctionTriggerRequest(object):
+
+
+
+class DeleteFunctionTriggerRequest:
 
 
     """
@@ -31,8 +34,10 @@ class DeleteFunctionTriggerRequest(object):
         'trigger_id': 'triggerId'
     }
 
-    def __init__(self, function_urn=None, trigger_type_code=None, trigger_id=None):  # noqa: E501
+    def __init__(self, function_urn=None, trigger_type_code=None, trigger_id=None):
         """DeleteFunctionTriggerRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._function_urn = None
         self._trigger_type_code = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class JobRecords(object):
+
+
+
+class JobRecords:
 
 
     """
@@ -41,8 +44,10 @@ class JobRecords(object):
         'auto_score_using_time': 'auto_score_using_time'
     }
 
-    def __init__(self, name=None, auto_score=None, case_pass_count=None, exe_case_count=None, code_line=None, commit_time=None, complexity_file_avg=None, auto_score_using_time=None):  # noqa: E501
+    def __init__(self, name=None, auto_score=None, case_pass_count=None, exe_case_count=None, code_line=None, commit_time=None, complexity_file_avg=None, auto_score_using_time=None):
         """JobRecords - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._auto_score = None

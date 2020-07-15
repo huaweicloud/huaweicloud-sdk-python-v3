@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListVersionAliasResult(object):
+
+
+
+class ListVersionAliasResult:
 
 
     """
@@ -35,8 +38,10 @@ class ListVersionAliasResult(object):
         'alias_urn': 'alias_urn'
     }
 
-    def __init__(self, name=None, version=None, description=None, last_modified=None, alias_urn=None):  # noqa: E501
+    def __init__(self, name=None, version=None, description=None, last_modified=None, alias_urn=None):
         """ListVersionAliasResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._version = None

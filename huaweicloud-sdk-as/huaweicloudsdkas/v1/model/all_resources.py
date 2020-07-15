@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AllResources(object):
+
+
+
+class AllResources:
 
 
     """
@@ -33,8 +36,10 @@ class AllResources(object):
         'max': 'max'
     }
 
-    def __init__(self, type=None, used=None, quota=None, max=None):  # noqa: E501
+    def __init__(self, type=None, used=None, quota=None, max=None):
         """AllResources - a model defined in huaweicloud sdk"""
+        
+        
 
         self._type = None
         self._used = None

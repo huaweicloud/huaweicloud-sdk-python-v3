@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ScalingActivityLogList(object):
+
+
+
+class ScalingActivityLogList:
 
 
     """
@@ -47,8 +50,10 @@ class ScalingActivityLogList(object):
         'desire_value': 'desire_value'
     }
 
-    def __init__(self, status=None, start_time=None, end_time=None, id=None, instance_removed_list=None, instance_deleted_list=None, instance_added_list=None, scaling_value=None, description=None, instance_value=None, desire_value=None):  # noqa: E501
+    def __init__(self, status=None, start_time=None, end_time=None, id=None, instance_removed_list=None, instance_deleted_list=None, instance_added_list=None, scaling_value=None, description=None, instance_value=None, desire_value=None):
         """ScalingActivityLogList - a model defined in huaweicloud sdk"""
+        
+        
 
         self._status = None
         self._start_time = None

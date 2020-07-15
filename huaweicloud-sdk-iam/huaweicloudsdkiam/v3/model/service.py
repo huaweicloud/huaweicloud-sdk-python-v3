@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Service(object):
+
+
+
+class Service:
 
 
     """
@@ -37,8 +40,10 @@ class Service(object):
         'enabled': 'enabled'
     }
 
-    def __init__(self, name=None, description=None, links=None, id=None, type=None, enabled=None):  # noqa: E501
+    def __init__(self, name=None, description=None, links=None, id=None, type=None, enabled=None):
         """Service - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._description = None

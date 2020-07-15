@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ScalingPolicyAction(object):
+
+
+
+class ScalingPolicyAction:
 
 
     """
@@ -31,8 +34,10 @@ class ScalingPolicyAction(object):
         'instance_percentage': 'instance_percentage'
     }
 
-    def __init__(self, operation=None, instance_number=None, instance_percentage=None):  # noqa: E501
+    def __init__(self, operation=None, instance_number=None, instance_percentage=None):
         """ScalingPolicyAction - a model defined in huaweicloud sdk"""
+        
+        
 
         self._operation = None
         self._instance_number = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchCreateInstanceTagsRequestBody(object):
+
+
+
+class BatchCreateInstanceTagsRequestBody:
 
 
     """
@@ -29,8 +32,10 @@ class BatchCreateInstanceTagsRequestBody(object):
         'tags': 'tags'
     }
 
-    def __init__(self, action=None, tags=None):  # noqa: E501
+    def __init__(self, action='create', tags=None):
         """BatchCreateInstanceTagsRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._action = None
         self._tags = None

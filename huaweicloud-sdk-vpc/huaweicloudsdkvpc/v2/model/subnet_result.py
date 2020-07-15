@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SubnetResult(object):
+
+
+
+class SubnetResult:
 
 
     """
@@ -29,8 +32,10 @@ class SubnetResult(object):
         'status': 'status'
     }
 
-    def __init__(self, id=None, status=None):  # noqa: E501
+    def __init__(self, id=None, status=None):
         """SubnetResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._status = None

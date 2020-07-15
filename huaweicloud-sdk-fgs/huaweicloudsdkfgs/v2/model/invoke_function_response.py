@@ -6,7 +6,10 @@ import re
 import six
 
 
-class InvokeFunctionResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class InvokeFunctionResponse(SdkResponse):
 
 
     """
@@ -33,8 +36,10 @@ class InvokeFunctionResponse(object):
         'status': 'status'
     }
 
-    def __init__(self, request_id=None, result=None, log=None, status=None):  # noqa: E501
+    def __init__(self, request_id=None, result=None, log=None, status=None):
         """InvokeFunctionResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._request_id = None
         self._result = None

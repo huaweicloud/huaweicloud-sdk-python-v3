@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ResetDeviceSecret(object):
+
+
+
+class ResetDeviceSecret:
 
 
     """
@@ -29,8 +32,10 @@ class ResetDeviceSecret(object):
         'force_disconnect': 'force_disconnect'
     }
 
-    def __init__(self, secret=None, force_disconnect=False):  # noqa: E501
+    def __init__(self, secret=None, force_disconnect=False):
         """ResetDeviceSecret - a model defined in huaweicloud sdk"""
+        
+        
 
         self._secret = None
         self._force_disconnect = None

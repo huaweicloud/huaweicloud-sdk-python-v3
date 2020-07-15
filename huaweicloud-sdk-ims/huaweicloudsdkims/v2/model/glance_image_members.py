@@ -6,7 +6,10 @@ import re
 import six
 
 
-class GlanceImageMembers(object):
+
+
+
+class GlanceImageMembers:
 
 
     """
@@ -37,8 +40,10 @@ class GlanceImageMembers(object):
         'schema': 'schema'
     }
 
-    def __init__(self, status=None, created_at=None, updated_at=None, image_id=None, member_id=None, schema=None):  # noqa: E501
+    def __init__(self, status=None, created_at=None, updated_at=None, image_id=None, member_id=None, schema=None):
         """GlanceImageMembers - a model defined in huaweicloud sdk"""
+        
+        
 
         self._status = None
         self._created_at = None

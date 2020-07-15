@@ -10,8 +10,8 @@ from huaweicloudsdkvpc.v2 import *
 def list_vpc(client):
     try:
         request = ListVpcsRequest()
-        response = client.list_vpcs(request)
-        print(response.result().data)
+        response = client.list_vpcs_async(request)
+        print(response.result())
     except exceptions.ClientRequestException as e:
         print(e.status_code)
         print(e.request_id)
@@ -30,7 +30,7 @@ if __name__ == "__main__":
     credentials = BasicCredentials(ak, sk, project_id)
 
     vpc_client = VpcAsyncClient.new_builder(VpcAsyncClient) \
-        .with_config(config) \
+        .with_http_config(config) \
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \
         .with_file_log(path="vpc.log", log_level=logging.DEBUG) \

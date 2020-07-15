@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListSecurityGroupRulesRequest(object):
+
+
+
+class ListSecurityGroupRulesRequest:
 
 
     """
@@ -31,8 +34,10 @@ class ListSecurityGroupRulesRequest(object):
         'security_group_id': 'security_group_id'
     }
 
-    def __init__(self, marker=None, limit=2000, security_group_id=None):  # noqa: E501
+    def __init__(self, marker=None, limit=2000, security_group_id=None):
         """ListSecurityGroupRulesRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._marker = None
         self._limit = None

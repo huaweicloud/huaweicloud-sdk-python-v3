@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListServersDetailsRequest(object):
+
+
+
+class ListServersDetailsRequest:
 
 
     """
@@ -45,8 +48,10 @@ class ListServersDetailsRequest(object):
         'ip': 'ip'
     }
 
-    def __init__(self, offset=1, flavor=None, name=None, status=None, limit=25, not_tags=None, reservation_id=None, enterprise_project_id=None, tags=None, ip=None):  # noqa: E501
+    def __init__(self, offset=1, flavor=None, name=None, status=None, limit=25, not_tags=None, reservation_id=None, enterprise_project_id=None, tags=None, ip=None):
         """ListServersDetailsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._offset = None
         self._flavor = None

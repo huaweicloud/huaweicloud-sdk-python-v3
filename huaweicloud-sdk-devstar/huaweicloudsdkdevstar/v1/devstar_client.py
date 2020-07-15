@@ -11,6 +11,7 @@ import six
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DevstarClient(Client):
@@ -55,15 +56,10 @@ class DevstarClient(Client):
         通过DevStar的模板进行应用代码创建  新建任务时会返回任务ID，通过任务ID可以查看任务的状态以及最终代码生成的地址  - 接口鉴权方式 通过华为云服务获取的用户token  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
 
         :param RunTemplateJobV2Request request
-        :return: tuple(RunTemplateJobV2Response, status_code(int), headers(HTTPHeaderDict))
+        :return: RunTemplateJobV2Response
         """
 
         all_params = ['run_template_job_request_body', 'x_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -79,24 +75,25 @@ class DevstarClient(Client):
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/jobs/template', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/jobs/template',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='RunTemplateJobV2Response',
@@ -120,15 +117,10 @@ class DevstarClient(Client):
         查询任务的详情  通过任务ID可以查看任务的状态 当任务结束时返回应用代码存放的位置  - 接口鉴权方式 通过华为云服务获取的用户token  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址
 
         :param ShowJobDetailRequest request
-        :return: tuple(ShowJobDetailResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowJobDetailResponse
         """
 
         all_params = ['job_id', 'x_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -146,20 +138,21 @@ class DevstarClient(Client):
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/jobs/{job_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/jobs/{job_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowJobDetailResponse',
@@ -184,15 +177,10 @@ class DevstarClient(Client):
         查询模板列表
 
         :param ListPublishedTemplatesRequest request
-        :return: tuple(ListPublishedTemplatesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListPublishedTemplatesResponse
         """
 
         all_params = ['x_language', 'keyword', 'offset', 'limit']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -214,20 +202,21 @@ class DevstarClient(Client):
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/templates', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/templates',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListPublishedTemplatesResponse',
@@ -252,15 +241,10 @@ class DevstarClient(Client):
         查询模板详情
 
         :param ShowTemplateDetailRequest request
-        :return: tuple(ShowTemplateDetailResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowTemplateDetailResponse
         """
 
         all_params = ['template_id', 'x_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -278,20 +262,21 @@ class DevstarClient(Client):
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/templates/{template_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/templates/{template_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowTemplateDetailResponse',
@@ -321,6 +306,14 @@ class DevstarClient(Client):
         :return:
             Return the response directly.
         """
-        return self.do_http_request(method, resource_path, path_params,
-                                    query_params, header_params, body, post_params,
-                                    response_type, collection_formats, request_type)
+        return self.do_http_request(
+            method=method,
+            resource_path=resource_path,
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body,
+            post_params=post_params,
+            response_type=response_type,
+            collection_formats=collection_formats,
+            request_type=request_type)

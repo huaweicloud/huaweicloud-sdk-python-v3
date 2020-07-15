@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SendSlideVerifyCodeResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class SendSlideVerifyCodeResponse(SdkResponse):
 
 
     """
@@ -35,8 +38,10 @@ class SendSlideVerifyCodeResponse(object):
         'expire': 'expire'
     }
 
-    def __init__(self, shadow_image=None, cut_image=None, point_y=None, token=None, expire=None):  # noqa: E501
+    def __init__(self, shadow_image=None, cut_image=None, point_y=None, token=None, expire=None):
         """SendSlideVerifyCodeResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._shadow_image = None
         self._cut_image = None

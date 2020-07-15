@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RuleCondition(object):
+
+
+
+class RuleCondition:
 
 
     """
@@ -37,8 +40,10 @@ class RuleCondition(object):
         'device_status_condition': 'device_status_condition'
     }
 
-    def __init__(self, type=None, device_property_condition=None, simple_timer_condition=None, daily_timer_condition=None, device_message_condition=None, device_status_condition=None):  # noqa: E501
+    def __init__(self, type=None, device_property_condition=None, simple_timer_condition=None, daily_timer_condition=None, device_message_condition=None, device_status_condition=None):
         """RuleCondition - a model defined in huaweicloud sdk"""
+        
+        
 
         self._type = None
         self._device_property_condition = None

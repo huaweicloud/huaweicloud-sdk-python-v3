@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ImageTaggingItemBody(object):
+
+
+
+class ImageTaggingItemBody:
 
 
     """
@@ -33,8 +36,10 @@ class ImageTaggingItemBody(object):
         'i18n_tag': 'i18n_tag'
     }
 
-    def __init__(self, confidence=None, type=None, tag=None, i18n_tag=None):  # noqa: E501
+    def __init__(self, confidence=None, type=None, tag=None, i18n_tag=None):
         """ImageTaggingItemBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._confidence = None
         self._type = None

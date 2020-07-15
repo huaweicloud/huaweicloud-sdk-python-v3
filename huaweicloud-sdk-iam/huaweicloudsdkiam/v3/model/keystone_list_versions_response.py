@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneListVersionsResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class KeystoneListVersionsResponse(SdkResponse):
 
 
     """
@@ -20,15 +23,17 @@ class KeystoneListVersionsResponse(object):
     sensitive_list = []
 
     openapi_types = {
-        'versions': 'list[Version]'
+        'versions': 'Versions'
     }
 
     attribute_map = {
         'versions': 'versions'
     }
 
-    def __init__(self, versions=None):  # noqa: E501
+    def __init__(self, versions=None):
         """KeystoneListVersionsResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._versions = None
         self.discriminator = None
@@ -40,10 +45,9 @@ class KeystoneListVersionsResponse(object):
     def versions(self):
         """Gets the versions of this KeystoneListVersionsResponse.
 
-        Keystone API的版本信息。
 
         :return: The versions of this KeystoneListVersionsResponse.
-        :rtype: list[Version]
+        :rtype: Versions
         """
         return self._versions
 
@@ -51,10 +55,9 @@ class KeystoneListVersionsResponse(object):
     def versions(self, versions):
         """Sets the versions of this KeystoneListVersionsResponse.
 
-        Keystone API的版本信息。
 
         :param versions: The versions of this KeystoneListVersionsResponse.
-        :type: list[Version]
+        :type: Versions
         """
         self._versions = versions
 

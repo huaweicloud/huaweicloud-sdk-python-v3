@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ServerImage(object):
+
+
+
+class ServerImage:
 
 
     """
@@ -27,8 +30,10 @@ class ServerImage(object):
         'id': 'id'
     }
 
-    def __init__(self, id=None):  # noqa: E501
+    def __init__(self, id=None):
         """ServerImage - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self.discriminator = None

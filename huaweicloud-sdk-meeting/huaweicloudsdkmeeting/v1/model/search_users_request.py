@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SearchUsersRequest(object):
+
+
+
+class SearchUsersRequest:
 
 
     """
@@ -49,8 +52,10 @@ class SearchUsersRequest(object):
         'status': 'status'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=100, search_key=None, sort_field=None, is_asc=None, dept_code=None, enable_sub_dept=None, admin_type=None, enable_room=None, status=None):  # noqa: E501
+    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=100, search_key=None, sort_field=None, is_asc=None, dept_code=None, enable_sub_dept=None, admin_type=None, enable_room=None, status=None):
         """SearchUsersRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_request_id = None
         self._accept_language = None

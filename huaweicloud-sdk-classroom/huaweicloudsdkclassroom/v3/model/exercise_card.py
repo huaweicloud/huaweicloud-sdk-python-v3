@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ExerciseCard(object):
+
+
+
+class ExerciseCard:
 
 
     """
@@ -35,8 +38,10 @@ class ExerciseCard(object):
         'target_score': 'target_score'
     }
 
-    def __init__(self, name=None, exercise_id=None, description=None, resource_sub_type=None, target_score=None):  # noqa: E501
+    def __init__(self, name=None, exercise_id=None, description=None, resource_sub_type=None, target_score=None):
         """ExerciseCard - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._exercise_id = None

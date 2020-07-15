@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CheckTaskJobsItemsBody(object):
+
+
+
+class CheckTaskJobsItemsBody:
 
 
     """
@@ -33,8 +36,10 @@ class CheckTaskJobsItemsBody(object):
         'update_time': 'update_time'
     }
 
-    def __init__(self, job_id=None, status=None, create_time=None, update_time=None):  # noqa: E501
+    def __init__(self, job_id=None, status=None, create_time=None, update_time=None):
         """CheckTaskJobsItemsBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._job_id = None
         self._status = None

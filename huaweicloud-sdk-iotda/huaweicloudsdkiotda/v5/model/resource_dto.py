@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ResourceDTO(object):
+
+
+
+class ResourceDTO:
 
 
     """
@@ -27,8 +30,10 @@ class ResourceDTO(object):
         'resource_id': 'resource_id'
     }
 
-    def __init__(self, resource_id=None):  # noqa: E501
+    def __init__(self, resource_id=None):
         """ResourceDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._resource_id = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RuleStatus(object):
+
+
+
+class RuleStatus:
 
 
     """
@@ -27,8 +30,10 @@ class RuleStatus(object):
         'status': 'status'
     }
 
-    def __init__(self, status=None):  # noqa: E501
+    def __init__(self, status=None):
         """RuleStatus - a model defined in huaweicloud sdk"""
+        
+        
 
         self._status = None
         self.discriminator = None

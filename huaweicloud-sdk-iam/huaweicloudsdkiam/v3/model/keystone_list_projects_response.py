@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneListProjectsResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class KeystoneListProjectsResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class KeystoneListProjectsResponse(object):
         'projects': 'projects'
     }
 
-    def __init__(self, links=None, projects=None):  # noqa: E501
+    def __init__(self, links=None, projects=None):
         """KeystoneListProjectsResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._links = None
         self._projects = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteInstanceRequest(object):
+
+
+
+class DeleteInstanceRequest:
 
 
     """
@@ -27,8 +30,10 @@ class DeleteInstanceRequest(object):
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, instance_id=None):  # noqa: E501
+    def __init__(self, instance_id=None):
         """DeleteInstanceRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self.discriminator = None

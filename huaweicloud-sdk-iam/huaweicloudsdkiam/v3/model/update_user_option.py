@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateUserOption(object):
+
+
+
+class UpdateUserOption:
 
 
     """
@@ -45,8 +48,10 @@ class UpdateUserOption(object):
         'description': 'description'
     }
 
-    def __init__(self, name=None, password=None, email=None, areacode=None, phone=None, enabled=None, pwd_status=None, xuser_type=None, xuser_id=None, description=None):  # noqa: E501
+    def __init__(self, name=None, password=None, email=None, areacode=None, phone=None, enabled=None, pwd_status=None, xuser_type=None, xuser_id=None, description=None):
         """UpdateUserOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._password = None
@@ -107,7 +112,7 @@ class UpdateUserOption(object):
     def password(self):
         """Gets the password of this UpdateUserOption.
 
-        IAM用户新密码。   - 系统默认密码最小长度为6字符，在6-32字符之间支持用户自定义密码长度。   - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。   - 不能包含手机号和邮箱。   - 必须满足账户设置中[密码策略](https://support.huaweicloud.com/usermanual-iam/iam_01_0607.html)的要求。   - 新密码不能与当前密码相同。 
+        IAM用户新密码。   - 系统默认密码最小长度为6字符，在6-32字符之间支持用户自定义密码长度。   - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。   - 必须满足账户设置中[密码策略](https://support.huaweicloud.com/usermanual-iam/iam_01_0607.html)的要求。   - 新密码不能与当前密码相同。 
 
         :return: The password of this UpdateUserOption.
         :rtype: str
@@ -118,7 +123,7 @@ class UpdateUserOption(object):
     def password(self, password):
         """Sets the password of this UpdateUserOption.
 
-        IAM用户新密码。   - 系统默认密码最小长度为6字符，在6-32字符之间支持用户自定义密码长度。   - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。   - 不能包含手机号和邮箱。   - 必须满足账户设置中[密码策略](https://support.huaweicloud.com/usermanual-iam/iam_01_0607.html)的要求。   - 新密码不能与当前密码相同。 
+        IAM用户新密码。   - 系统默认密码最小长度为6字符，在6-32字符之间支持用户自定义密码长度。   - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。   - 必须满足账户设置中[密码策略](https://support.huaweicloud.com/usermanual-iam/iam_01_0607.html)的要求。   - 新密码不能与当前密码相同。 
 
         :param password: The password of this UpdateUserOption.
         :type: str

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListAvailableZonesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListAvailableZonesResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class ListAvailableZonesResponse(object):
         'available_zones': 'available_zones'
     }
 
-    def __init__(self, region_id=None, available_zones=None):  # noqa: E501
+    def __init__(self, region_id=None, available_zones=None):
         """ListAvailableZonesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._region_id = None
         self._available_zones = None

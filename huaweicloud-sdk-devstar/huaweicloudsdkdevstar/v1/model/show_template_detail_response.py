@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowTemplateDetailResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowTemplateDetailResponse(SdkResponse):
 
 
     """
@@ -45,8 +48,10 @@ class ShowTemplateDetailResponse(object):
         'properties': 'properties'
     }
 
-    def __init__(self, id=None, title=None, description=None, region_id=None, repostory_id=None, code_url=None, ssh_url=None, project_uuid=None, status=None, properties=None):  # noqa: E501
+    def __init__(self, id=None, title=None, description=None, region_id=None, repostory_id=None, code_url=None, ssh_url=None, project_uuid=None, status=None, properties=None):
         """ShowTemplateDetailResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._id = None
         self._title = None

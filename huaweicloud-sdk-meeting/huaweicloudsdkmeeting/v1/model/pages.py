@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Pages(object):
+
+
+
+class Pages:
 
 
     """
@@ -31,8 +34,10 @@ class Pages(object):
         'count': 'count'
     }
 
-    def __init__(self, offset=None, limit=None, count=None):  # noqa: E501
+    def __init__(self, offset=None, limit=None, count=None):
         """Pages - a model defined in huaweicloud sdk"""
+        
+        
 
         self._offset = None
         self._limit = None

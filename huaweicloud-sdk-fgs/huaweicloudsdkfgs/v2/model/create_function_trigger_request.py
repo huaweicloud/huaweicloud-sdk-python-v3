@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateFunctionTriggerRequest(object):
+
+
+
+class CreateFunctionTriggerRequest:
 
 
     """
@@ -29,8 +32,10 @@ class CreateFunctionTriggerRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, function_urn=None, body=None):  # noqa: E501
+    def __init__(self, function_urn=None, body=None):
         """CreateFunctionTriggerRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._function_urn = None
         self._body = None

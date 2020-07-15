@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ClassroomCard(object):
+
+
+
+class ClassroomCard:
 
 
     """
@@ -35,8 +38,10 @@ class ClassroomCard(object):
         'status': 'status'
     }
 
-    def __init__(self, classroom_id=None, name=None, description=None, credit=None, status=None):  # noqa: E501
+    def __init__(self, classroom_id=None, name=None, description=None, credit=None, status=None):
         """ClassroomCard - a model defined in huaweicloud sdk"""
+        
+        
 
         self._classroom_id = None
         self._name = None

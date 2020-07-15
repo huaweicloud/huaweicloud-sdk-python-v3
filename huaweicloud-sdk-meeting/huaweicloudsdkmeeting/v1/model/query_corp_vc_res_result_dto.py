@@ -6,7 +6,10 @@ import re
 import six
 
 
-class QueryCorpVcResResultDTO(object):
+
+
+
+class QueryCorpVcResResultDTO:
 
 
     """
@@ -47,8 +50,10 @@ class QueryCorpVcResResultDTO(object):
         'idea_hub_count': 'ideaHubCount'
     }
 
-    def __init__(self, vmr_pkg_list=None, te1080p_hard_count=None, te720p_hard_count=None, te_soft_count=None, room_count=None, record_capability=None, conf_call_count=None, live_count=None, third_party_hard_count=None, hw_vision_count=None, idea_hub_count=None):  # noqa: E501
+    def __init__(self, vmr_pkg_list=None, te1080p_hard_count=None, te720p_hard_count=None, te_soft_count=None, room_count=None, record_capability=None, conf_call_count=None, live_count=None, third_party_hard_count=None, hw_vision_count=None, idea_hub_count=None):
         """QueryCorpVcResResultDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._vmr_pkg_list = None
         self._te1080p_hard_count = None

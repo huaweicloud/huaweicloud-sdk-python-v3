@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AddShardingNodeVolumeOption(object):
+
+
+
+class AddShardingNodeVolumeOption:
 
 
     """
@@ -27,8 +30,10 @@ class AddShardingNodeVolumeOption(object):
         'size': 'size'
     }
 
-    def __init__(self, size=None):  # noqa: E501
+    def __init__(self, size=None):
         """AddShardingNodeVolumeOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._size = None
         self.discriminator = None

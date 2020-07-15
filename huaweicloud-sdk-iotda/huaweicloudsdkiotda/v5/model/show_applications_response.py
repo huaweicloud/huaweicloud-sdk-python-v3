@@ -1,0 +1,110 @@
+# coding: utf-8
+
+import pprint
+import re
+
+import six
+
+
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowApplicationsResponse(SdkResponse):
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'applications': 'list[ApplicationDTO]'
+    }
+
+    attribute_map = {
+        'applications': 'applications'
+    }
+
+    def __init__(self, applications=None):
+        """ShowApplicationsResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
+
+        self._applications = None
+        self.discriminator = None
+
+        if applications is not None:
+            self.applications = applications
+
+    @property
+    def applications(self):
+        """Gets the applications of this ShowApplicationsResponse.
+
+        资源空间信息列表。
+
+        :return: The applications of this ShowApplicationsResponse.
+        :rtype: list[ApplicationDTO]
+        """
+        return self._applications
+
+    @applications.setter
+    def applications(self, applications):
+        """Sets the applications of this ShowApplicationsResponse.
+
+        资源空间信息列表。
+
+        :param applications: The applications of this ShowApplicationsResponse.
+        :type: list[ApplicationDTO]
+        """
+        self._applications = applications
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        return pprint.pformat(self.to_dict())
+
+    def __repr__(self):
+        """For `print` and `pprint`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ShowApplicationsResponse):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

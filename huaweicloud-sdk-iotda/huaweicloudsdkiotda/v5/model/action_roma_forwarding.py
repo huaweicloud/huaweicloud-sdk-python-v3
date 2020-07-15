@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ActionRomaForwarding(object):
+
+
+
+class ActionRomaForwarding:
 
 
     """
@@ -31,8 +34,10 @@ class ActionRomaForwarding(object):
         'roma_push_type': 'roma_push_type'
     }
 
-    def __init__(self, region_name=None, project_id=None, roma_push_type=None):  # noqa: E501
+    def __init__(self, region_name=None, project_id=None, roma_push_type=None):
         """ActionRomaForwarding - a model defined in huaweicloud sdk"""
+        
+        
 
         self._region_name = None
         self._project_id = None

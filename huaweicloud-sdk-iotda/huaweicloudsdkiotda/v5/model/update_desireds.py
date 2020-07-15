@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateDesireds(object):
+
+
+
+class UpdateDesireds:
 
 
     """
@@ -27,8 +30,10 @@ class UpdateDesireds(object):
         'shadow': 'shadow'
     }
 
-    def __init__(self, shadow=None):  # noqa: E501
+    def __init__(self, shadow=None):
         """UpdateDesireds - a model defined in huaweicloud sdk"""
+        
+        
 
         self._shadow = None
         self.discriminator = None

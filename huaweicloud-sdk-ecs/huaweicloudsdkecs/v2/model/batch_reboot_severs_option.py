@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchRebootSeversOption(object):
+
+
+
+class BatchRebootSeversOption:
 
 
     """
@@ -29,8 +32,10 @@ class BatchRebootSeversOption(object):
         'type': 'type'
     }
 
-    def __init__(self, servers=None, type=None):  # noqa: E501
+    def __init__(self, servers=None, type=None):
         """BatchRebootSeversOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._servers = None
         self._type = None

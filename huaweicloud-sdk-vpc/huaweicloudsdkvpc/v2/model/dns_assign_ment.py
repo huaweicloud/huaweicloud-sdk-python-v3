@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DnsAssignMent(object):
+
+
+
+class DnsAssignMent:
 
 
     """
@@ -31,8 +34,10 @@ class DnsAssignMent(object):
         'fqdn': 'fqdn'
     }
 
-    def __init__(self, hostname=None, ip_address=None, fqdn=None):  # noqa: E501
+    def __init__(self, hostname=None, ip_address=None, fqdn=None):
         """DnsAssignMent - a model defined in huaweicloud sdk"""
+        
+        
 
         self._hostname = None
         self._ip_address = None

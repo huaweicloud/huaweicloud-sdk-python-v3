@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListClassroomMembersRequest(object):
+
+
+
+class ListClassroomMembersRequest:
 
 
     """
@@ -33,8 +36,10 @@ class ListClassroomMembersRequest(object):
         'filter': 'filter'
     }
 
-    def __init__(self, classroom_id=None, offset=None, limit=None, filter=None):  # noqa: E501
+    def __init__(self, classroom_id=None, offset=None, limit=None, filter=None):
         """ListClassroomMembersRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._classroom_id = None
         self._offset = None

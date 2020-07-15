@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AddDeviceGroupResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class AddDeviceGroupResponse(SdkResponse):
 
 
     """
@@ -33,8 +36,10 @@ class AddDeviceGroupResponse(object):
         'super_group_id': 'super_group_id'
     }
 
-    def __init__(self, group_id=None, name=None, description=None, super_group_id=None):  # noqa: E501
+    def __init__(self, group_id=None, name=None, description=None, super_group_id=None):
         """AddDeviceGroupResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._group_id = None
         self._name = None

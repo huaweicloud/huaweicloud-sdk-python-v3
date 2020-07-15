@@ -11,6 +11,7 @@ import six
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DcsClient(Client):
@@ -45,7 +46,7 @@ class DcsClient(Client):
         为指定实例批量添加标签，或批量删除标签。
 
         :param BatchCreateOrDeleteDcsTagsRequest request
-        :return: None
+        :return: BatchCreateOrDeleteDcsTagsResponse
         """
         return self.batch_create_or_delete_dcs_tags_with_http_info(request)
 
@@ -55,15 +56,10 @@ class DcsClient(Client):
         为指定实例批量添加标签，或批量删除标签。
 
         :param BatchCreateOrDeleteDcsTagsRequest request
-        :return: None
+        :return: BatchCreateOrDeleteDcsTagsResponse
         """
 
         all_params = ['instance_id', 'batch_create_or_delete_dcs_tags_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -79,25 +75,28 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/dcs/{instance_id}/tags/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/dcs/{instance_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='BatchCreateOrDeleteDcsTagsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -108,7 +107,7 @@ class DcsClient(Client):
         批量删除多个缓存实例。
 
         :param BatchDeleteDcsInstancesRequest request
-        :return: BatchDeleteDCSInstancesResponse
+        :return: BatchDeleteDcsInstancesResponse
         """
         return self.batch_delete_dcs_instances_with_http_info(request)
 
@@ -118,15 +117,10 @@ class DcsClient(Client):
         批量删除多个缓存实例。
 
         :param BatchDeleteDcsInstancesRequest request
-        :return: tuple(BatchDeleteDCSInstancesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: BatchDeleteDcsInstancesResponse
         """
 
         all_params = ['all_failure', 'batch_delete_dcs_instances_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -142,27 +136,28 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='BatchDeleteDCSInstancesResponse',
+            response_type='BatchDeleteDcsInstancesResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -183,15 +178,10 @@ class DcsClient(Client):
         备份指定的缓存实例。 > 只有主备和集群类型的缓存实例支持备份恢复操作，单机实例不支持备份恢复操作。 
 
         :param CopyInstanceRequest request
-        :return: tuple(CopyInstanceResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CopyInstanceResponse
         """
 
         all_params = ['instance_id', 'copy_instance_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -207,24 +197,25 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/{instance_id}/backups', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/{instance_id}/backups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CopyInstanceResponse',
@@ -238,7 +229,7 @@ class DcsClient(Client):
         创建缓存实例，该接口创建的缓存实例支持按需计费和包周期两种方式。
 
         :param CreateDcsInstanceRequest request
-        :return: CreateDCSInstanceResponse
+        :return: CreateDcsInstanceResponse
         """
         return self.create_dcs_instance_with_http_info(request)
 
@@ -248,15 +239,10 @@ class DcsClient(Client):
         创建缓存实例，该接口创建的缓存实例支持按需计费和包周期两种方式。
 
         :param CreateDcsInstanceRequest request
-        :return: tuple(CreateDCSInstanceResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateDcsInstanceResponse
         """
 
         all_params = ['create_dcs_instance_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -270,27 +256,28 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='CreateDCSInstanceResponse',
+            response_type='CreateDcsInstanceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -311,15 +298,10 @@ class DcsClient(Client):
         创建数据迁移任务。
 
         :param CreateMigrationTaskRequest request
-        :return: tuple(CreateMigrationTaskResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateMigrationTaskResponse
         """
 
         all_params = ['create_migration_task_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -333,24 +315,25 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/migration-task', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/migration-task',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateMigrationTaskResponse',
@@ -364,7 +347,7 @@ class DcsClient(Client):
         为Cluster集群实例的分片添加副本。
 
         :param CreateReplicationRequest request
-        :return: None
+        :return: CreateReplicationResponse
         """
         return self.create_replication_with_http_info(request)
 
@@ -374,15 +357,10 @@ class DcsClient(Client):
         为Cluster集群实例的分片添加副本。
 
         :param CreateReplicationRequest request
-        :return: None
+        :return: CreateReplicationResponse
         """
 
         all_params = ['instance_id', 'group_id', 'create_replication_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -400,25 +378,28 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instance/{instance_id}/groups/{group_id}/replications', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instance/{instance_id}/groups/{group_id}/replications',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='CreateReplicationResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -429,7 +410,7 @@ class DcsClient(Client):
         删除缓存实例已备份的文件。
 
         :param DeleteBackupFileRequest request
-        :return: None
+        :return: DeleteBackupFileResponse
         """
         return self.delete_backup_file_with_http_info(request)
 
@@ -439,15 +420,10 @@ class DcsClient(Client):
         删除缓存实例已备份的文件。
 
         :param DeleteBackupFileRequest request
-        :return: None
+        :return: DeleteBackupFileResponse
         """
 
         all_params = ['backup_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -465,21 +441,24 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/{instance_id}/backups/{backup_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/{instance_id}/backups/{backup_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteBackupFileResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -500,15 +479,10 @@ class DcsClient(Client):
         将只读副本的IP从域名中摘除，摘除成功后，只读域名不会再解析到该副本IP。
 
         :param DeleteIpFromDomainNameRequest request
-        :return: tuple(DeleteIpFromDomainNameResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: DeleteIpFromDomainNameResponse
         """
 
         all_params = ['instance_id', 'group_id', 'node_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -528,20 +502,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/{instance_id}/groups/{group_id}/replications/{node_id}/remove-ip', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/{instance_id}/groups/{group_id}/replications/{node_id}/remove-ip',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='DeleteIpFromDomainNameResponse',
@@ -565,15 +540,10 @@ class DcsClient(Client):
         删除数据迁移任务。
 
         :param DeleteMigrationTaskRequest request
-        :return: tuple(DeleteMigrationTaskResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: DeleteMigrationTaskResponse
         """
 
         all_params = ['delete_migration_task_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -587,24 +557,25 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/migration-tasks/delete', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/migration-tasks/delete',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='DeleteMigrationTaskResponse',
@@ -628,15 +599,10 @@ class DcsClient(Client):
         为Cluster集群删除指定副本
 
         :param DeleteReplicationRequest request
-        :return: tuple(DeleteReplicationResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: DeleteReplicationResponse
         """
 
         all_params = ['instance_id', 'group_id', 'node_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -656,20 +622,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/{instance_id}/groups/{group_id}/replications/{node_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/{instance_id}/groups/{group_id}/replications/{node_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='DeleteReplicationResponse',
@@ -683,7 +650,7 @@ class DcsClient(Client):
         删除指定的缓存实例，释放该实例的所有资源。  > 如果是删除按需资源，请按照本章节执行；如果是删除包周期资源，即退订，请参考[退订包周期资源](https://support.huaweicloud.com/api-oce/zh-cn_topic_0082522030.html#section2)。 
 
         :param DeleteSingleDcsInstanceRequest request
-        :return: None
+        :return: DeleteSingleDcsInstanceResponse
         """
         return self.delete_single_dcs_instance_with_http_info(request)
 
@@ -693,15 +660,10 @@ class DcsClient(Client):
         删除指定的缓存实例，释放该实例的所有资源。  > 如果是删除按需资源，请按照本章节执行；如果是删除包周期资源，即退订，请参考[退订包周期资源](https://support.huaweicloud.com/api-oce/zh-cn_topic_0082522030.html#section2)。 
 
         :param DeleteSingleDcsInstanceRequest request
-        :return: None
+        :return: DeleteSingleDcsInstanceResponse
         """
 
         all_params = ['instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -717,21 +679,24 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/{instance_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/{instance_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteSingleDcsInstanceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -752,15 +717,10 @@ class DcsClient(Client):
         查询所在局点的可用区信息
 
         :param ListAvailableZonesRequest request
-        :return: tuple(ListAvailableZonesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListAvailableZonesResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -774,20 +734,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/available-zones', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/available-zones',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListAvailableZonesResponse',
@@ -811,15 +772,10 @@ class DcsClient(Client):
         获取指定实例的备份文件下载链接，下载备份文件。
 
         :param ListBackupFileLinksRequest request
-        :return: tuple(ListBackupFileLinksResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListBackupFileLinksResponse
         """
 
         all_params = ['instance_id', 'backup_id', 'list_backup_file_links_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -837,24 +793,25 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/{instance_id}/backups/{backup_id}/links', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/{instance_id}/backups/{backup_id}/links',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListBackupFileLinksResponse',
@@ -878,15 +835,10 @@ class DcsClient(Client):
         查询指定缓存实例的备份信息列表。
 
         :param ListBackupRecordsRequest request
-        :return: tuple(ListBackupRecordsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListBackupRecordsResponse
         """
 
         all_params = ['instance_id', 'begin_time', 'end_time', 'limit', 'offset']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -910,20 +862,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/{instance_id}/backups', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/{instance_id}/backups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListBackupRecordsResponse',
@@ -937,7 +890,7 @@ class DcsClient(Client):
         查询主维度对象列表，主维度ID当前支持dcs_instance_id，dcs_memcached_instance_id。 > 该接口当前仅在中国华南区开放。 
 
         :param ListCesMonitoredObjectsRequest request
-        :return: ListCESMonitoredObjectsResponse
+        :return: ListCesMonitoredObjectsResponse
         """
         return self.list_ces_monitored_objects_with_http_info(request)
 
@@ -947,15 +900,10 @@ class DcsClient(Client):
         查询主维度对象列表，主维度ID当前支持dcs_instance_id，dcs_memcached_instance_id。 > 该接口当前仅在中国华南区开放。 
 
         :param ListCesMonitoredObjectsRequest request
-        :return: tuple(ListCESMonitoredObjectsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListCesMonitoredObjectsResponse
         """
 
         all_params = ['dim_name', 'offset', 'limit']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -975,23 +923,24 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/dims/monitored-objects', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/dims/monitored-objects',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ListCESMonitoredObjectsResponse',
+            response_type='ListCesMonitoredObjectsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1012,15 +961,10 @@ class DcsClient(Client):
         查询指定实例的配置参数信息。
 
         :param ListConfigurationsRequest request
-        :return: tuple(ListConfigurationsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListConfigurationsResponse
         """
 
         all_params = ['instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1036,20 +980,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/{instance_id}/configs', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/{instance_id}/configs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListConfigurationsResponse',
@@ -1073,15 +1018,10 @@ class DcsClient(Client):
         查询租户在指定Project中实例类型的所有资源标签集合。
 
         :param ListDcsTagsOfTenantRequest request
-        :return: tuple(ListDcsTagsOfTenantResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListDcsTagsOfTenantResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1095,20 +1035,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/dcs/tags', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/dcs/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListDcsTagsOfTenantResponse',
@@ -1132,15 +1073,10 @@ class DcsClient(Client):
         在创建缓存实例时，需要配置订购的产品规格编码（spec_code），可通过该接口查询产品规格，查询条件不选时默认查询全部。
 
         :param ListFlavorsRequest request
-        :return: tuple(ListFlavorsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListFlavorsResponse
         """
 
         all_params = ['spec_code', 'cache_mode', 'engine', 'engine_version', 'cpu_type', 'capacity']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1166,20 +1102,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/flavors', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/flavors',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListFlavorsResponse',
@@ -1203,15 +1140,10 @@ class DcsClient(Client):
         查询读写分离实例和集群实例的分片和副本信息，其中，读写分离实例仅Redis4.0和Redis5.0的主备实例支持。
 
         :param ListGroupReplicationInfoRequest request
-        :return: tuple(ListGroupReplicationInfoResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListGroupReplicationInfoResponse
         """
 
         all_params = ['instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1227,20 +1159,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instance/{instance_id}/groups', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instance/{instance_id}/groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListGroupReplicationInfoResponse',
@@ -1264,15 +1197,10 @@ class DcsClient(Client):
         查询维护时间窗开始时间和结束时间。
 
         :param ListMaintenanceWindowsRequest request
-        :return: tuple(ListMaintenanceWindowsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListMaintenanceWindowsResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1286,20 +1214,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/instances/maintain-windows', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/instances/maintain-windows',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListMaintenanceWindowsResponse',
@@ -1323,15 +1252,10 @@ class DcsClient(Client):
         查询迁移任务列表。
 
         :param ListMigrationTaskRequest request
-        :return: tuple(ListMigrationTaskResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListMigrationTaskResponse
         """
 
         all_params = ['offset', 'limit', 'name']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1351,20 +1275,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/migration-tasks', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/migration-tasks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListMigrationTaskResponse',
@@ -1388,15 +1313,10 @@ class DcsClient(Client):
         查询主维度下子维度监控对象列表，当前支持子维度的主维度ID的有 dcs_instance_id > 该接口当前仅在中国华南区开放。 
 
         :param ListMonitoredObjectsOfInstanceRequest request
-        :return: tuple(ListMonitoredObjectsOfInstanceResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListMonitoredObjectsOfInstanceResponse
         """
 
         all_params = ['instance_id', 'dim_name']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1414,20 +1334,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/dims/monitored-objects/{instance_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/dims/monitored-objects/{instance_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListMonitoredObjectsOfInstanceResponse',
@@ -1451,15 +1372,10 @@ class DcsClient(Client):
         查询该租户在当前区域下不同状态的实例数。
 
         :param ListNumberOfInstancesInDifferentStatusRequest request
-        :return: tuple(ListNumberOfInstancesInDifferentStatusResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListNumberOfInstancesInDifferentStatusResponse
         """
 
         all_params = ['include_failure']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1475,20 +1391,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/status', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/status',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListNumberOfInstancesInDifferentStatusResponse',
@@ -1512,15 +1429,10 @@ class DcsClient(Client):
         查询指定缓存实例的恢复记录列表。
 
         :param ListRestoreRecordsRequest request
-        :return: tuple(ListRestoreRecordsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListRestoreRecordsResponse
         """
 
         all_params = ['instance_id', 'begin_time', 'end_time', 'limit', 'offset']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1544,20 +1456,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/{instance_id}/restores', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/{instance_id}/restores',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListRestoreRecordsResponse',
@@ -1581,15 +1494,10 @@ class DcsClient(Client):
         查询当前租户下处于“运行中”状态的缓存实例的统计信息。
 
         :param ListStatisticsOfRunningInstancesRequest request
-        :return: tuple(ListStatisticsOfRunningInstancesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListStatisticsOfRunningInstancesResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1603,20 +1511,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/statistic', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/statistic',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListStatisticsOfRunningInstancesResponse',
@@ -1630,7 +1539,7 @@ class DcsClient(Client):
         重启运行中的DCS缓存实例。  清空Redis4.0/Redis5.0的实例数据，数据清空后，无法撤销，且无法恢复，请谨慎操作。 
 
         :param RestartOrFlushDcsInstancesRequest request
-        :return: RestartOrFlushDCSInstancesResponse
+        :return: RestartOrFlushDcsInstancesResponse
         """
         return self.restart_or_flush_dcs_instances_with_http_info(request)
 
@@ -1640,15 +1549,10 @@ class DcsClient(Client):
         重启运行中的DCS缓存实例。  清空Redis4.0/Redis5.0的实例数据，数据清空后，无法撤销，且无法恢复，请谨慎操作。 
 
         :param RestartOrFlushDcsInstancesRequest request
-        :return: tuple(RestartOrFlushDCSInstancesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: RestartOrFlushDcsInstancesResponse
         """
 
         all_params = ['restart_or_flush_dcs_instances_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1662,27 +1566,28 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/status', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/status',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='RestartOrFlushDCSInstancesResponse',
+            response_type='RestartOrFlushDcsInstancesResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1703,15 +1608,10 @@ class DcsClient(Client):
         恢复指定的缓存实例。 > 只有主备和集群类型的缓存实例支持备份恢复操作，单机实例不支持备份恢复操作。 
 
         :param RestoreInstanceRequest request
-        :return: tuple(RestoreInstanceResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: RestoreInstanceResponse
         """
 
         all_params = ['instance_id', 'restore_instance_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1727,24 +1627,25 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/{instance_id}/restores', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/{instance_id}/restores',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='RestoreInstanceResponse',
@@ -1768,15 +1669,10 @@ class DcsClient(Client):
         通过实例id查询标签。
 
         :param ShowDcsTagsRequest request
-        :return: tuple(ShowDcsTagsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowDcsTagsResponse
         """
 
         all_params = ['instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1792,20 +1688,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/{instance_id}/tags', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/{instance_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowDcsTagsResponse',
@@ -1829,15 +1726,10 @@ class DcsClient(Client):
         查询迁移任务详情。
 
         :param ShowMigrationTaskRequest request
-        :return: tuple(ShowMigrationTaskResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowMigrationTaskResponse
         """
 
         all_params = ['task_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1853,20 +1745,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/migration-task/{task_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/migration-task/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowMigrationTaskResponse',
@@ -1890,15 +1783,10 @@ class DcsClient(Client):
         查询租户默认可以创建的实例数和总内存的配额限制，以及可以申请配额的最大值和最小值。不同的租户在不同的区域配额可能不同。
 
         :param ShowQuotaOfTenantRequest request
-        :return: tuple(ShowQuotaOfTenantResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowQuotaOfTenantResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1912,20 +1800,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/quota', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/quota',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowQuotaOfTenantResponse',
@@ -1949,15 +1838,10 @@ class DcsClient(Client):
         停止数据迁移任务。
 
         :param StopMigrationTaskRequest request
-        :return: tuple(StopMigrationTaskResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: StopMigrationTaskResponse
         """
 
         all_params = ['task_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1973,20 +1857,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/migration-task/{task_id}/stop', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/migration-task/{task_id}/stop',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='StopMigrationTaskResponse',
@@ -2000,7 +1885,7 @@ class DcsClient(Client):
         为了确保分布式缓存服务发挥出最优性能，您可以根据自己的业务情况对DCS缓存实例的运行参数进行调整。
 
         :param UpdateConfigurationsRequest request
-        :return: None
+        :return: UpdateConfigurationsResponse
         """
         return self.update_configurations_with_http_info(request)
 
@@ -2010,15 +1895,10 @@ class DcsClient(Client):
         为了确保分布式缓存服务发挥出最优性能，您可以根据自己的业务情况对DCS缓存实例的运行参数进行调整。
 
         :param UpdateConfigurationsRequest request
-        :return: None
+        :return: UpdateConfigurationsResponse
         """
 
         all_params = ['instance_id', 'update_configurations_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2034,25 +1914,28 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/{instance_id}/configs', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/{instance_id}/configs',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateConfigurationsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2063,7 +1946,7 @@ class DcsClient(Client):
         修改缓存实例的信息，可修改信息包括实例名称、描述、备份策略、维护时间窗开始和结束时间以及安全组。
 
         :param UpdateDcsInstanceRequest request
-        :return: None
+        :return: UpdateDcsInstanceResponse
         """
         return self.update_dcs_instance_with_http_info(request)
 
@@ -2073,15 +1956,10 @@ class DcsClient(Client):
         修改缓存实例的信息，可修改信息包括实例名称、描述、备份策略、维护时间窗开始和结束时间以及安全组。
 
         :param UpdateDcsInstanceRequest request
-        :return: None
+        :return: UpdateDcsInstanceResponse
         """
 
         all_params = ['instance_id', 'update_dcs_instance_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2097,25 +1975,28 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/{instance_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/{instance_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateDcsInstanceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2136,15 +2017,10 @@ class DcsClient(Client):
         修改缓存实例的密码。
 
         :param UpdatePasswordRequest request
-        :return: tuple(UpdatePasswordResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdatePasswordResponse
         """
 
         all_params = ['instance_id', 'update_password_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2160,24 +2036,25 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/{instance_id}/password', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/{instance_id}/password',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdatePasswordResponse',
@@ -2191,7 +2068,7 @@ class DcsClient(Client):
         设置副本优先级，主节点故障时，权重越小的备节点切换为主节点的优先级越高。
 
         :param UpdateSlavePriorityRequest request
-        :return: None
+        :return: UpdateSlavePriorityResponse
         """
         return self.update_slave_priority_with_http_info(request)
 
@@ -2201,15 +2078,10 @@ class DcsClient(Client):
         设置副本优先级，主节点故障时，权重越小的备节点切换为主节点的优先级越高。
 
         :param UpdateSlavePriorityRequest request
-        :return: None
+        :return: UpdateSlavePriorityResponse
         """
 
         all_params = ['instance_id', 'group_id', 'node_id', 'update_slave_priority_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2229,25 +2101,28 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instances/{instance_id}/groups/{group_id}/replications/{node_id}/slave-priority', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instances/{instance_id}/groups/{group_id}/replications/{node_id}/slave-priority',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateSlavePriorityResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2269,15 +2144,10 @@ class DcsClient(Client):
         查询指定实例的IP白名单。
 
         :param ShowIpWhitelistRequest request
-        :return: tuple(ShowIpWhitelistResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowIpWhitelistResponse
         """
 
         all_params = ['instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2293,20 +2163,21 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json;charset=UTF-8', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instance/{instance_id}/whitelist', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instance/{instance_id}/whitelist',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowIpWhitelistResponse',
@@ -2320,7 +2191,7 @@ class DcsClient(Client):
         为指定实例设置IP白名单分组
 
         :param UpdateIpWhitelistRequest request
-        :return: None
+        :return: UpdateIpWhitelistResponse
         """
         return self.update_ip_whitelist_with_http_info(request)
 
@@ -2330,15 +2201,10 @@ class DcsClient(Client):
         为指定实例设置IP白名单分组
 
         :param UpdateIpWhitelistRequest request
-        :return: None
+        :return: UpdateIpWhitelistResponse
         """
 
         all_params = ['instance_id', 'update_ip_whitelist_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2354,25 +2220,28 @@ class DcsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/instance/{instance_id}/whitelist', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/instance/{instance_id}/whitelist',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateIpWhitelistResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2399,6 +2268,14 @@ class DcsClient(Client):
         :return:
             Return the response directly.
         """
-        return self.do_http_request(method, resource_path, path_params,
-                                    query_params, header_params, body, post_params,
-                                    response_type, collection_formats, request_type)
+        return self.do_http_request(
+            method=method,
+            resource_path=resource_path,
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body,
+            post_params=post_params,
+            response_type=response_type,
+            collection_formats=collection_formats,
+            request_type=request_type)

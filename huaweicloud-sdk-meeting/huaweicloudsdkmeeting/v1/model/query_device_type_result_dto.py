@@ -6,7 +6,10 @@ import re
 import six
 
 
-class QueryDeviceTypeResultDTO(object):
+
+
+
+class QueryDeviceTypeResultDTO:
 
 
     """
@@ -37,8 +40,10 @@ class QueryDeviceTypeResultDTO(object):
         'support_svc': 'supportSVC'
     }
 
-    def __init__(self, type=None, model=None, enable_active_code=None, resolution=None, support_projection_code=None, support_svc=None):  # noqa: E501
+    def __init__(self, type=None, model=None, enable_active_code=None, resolution=None, support_projection_code=None, support_svc=None):
         """QueryDeviceTypeResultDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._type = None
         self._model = None

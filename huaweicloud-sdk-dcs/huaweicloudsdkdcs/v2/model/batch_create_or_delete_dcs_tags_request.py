@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchCreateOrDeleteDcsTagsRequest(object):
+
+
+
+class BatchCreateOrDeleteDcsTagsRequest:
 
 
     """
@@ -29,8 +32,10 @@ class BatchCreateOrDeleteDcsTagsRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, instance_id=None, body=None):  # noqa: E501
+    def __init__(self, instance_id=None, body=None):
         """BatchCreateOrDeleteDcsTagsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._body = None

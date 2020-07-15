@@ -6,7 +6,10 @@ import re
 import six
 
 
-class TemplateJobInfo(object):
+
+
+
+class TemplateJobInfo:
 
 
     """
@@ -35,8 +38,10 @@ class TemplateJobInfo(object):
         'repo_info': 'repo_info'
     }
 
-    def __init__(self, application_name=None, template_id=None, repo_type=None, properties=None, repo_info=None):  # noqa: E501
+    def __init__(self, application_name=None, template_id=None, repo_type=None, properties=None, repo_info=None):
         """TemplateJobInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._application_name = None
         self._template_id = None

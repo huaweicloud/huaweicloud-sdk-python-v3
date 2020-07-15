@@ -6,7 +6,10 @@ import re
 import six
 
 
-class NovaServerImage(object):
+
+
+
+class NovaServerImage:
 
 
     """
@@ -29,8 +32,10 @@ class NovaServerImage(object):
         'links': 'links'
     }
 
-    def __init__(self, id=None, links=None):  # noqa: E501
+    def __init__(self, id=None, links=None):
         """NovaServerImage - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._links = None

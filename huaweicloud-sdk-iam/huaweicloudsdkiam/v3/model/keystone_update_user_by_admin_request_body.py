@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneUpdateUserByAdminRequestBody(object):
+
+
+
+class KeystoneUpdateUserByAdminRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class KeystoneUpdateUserByAdminRequestBody(object):
         'user': 'user'
     }
 
-    def __init__(self, user=None):  # noqa: E501
+    def __init__(self, user=None):
         """KeystoneUpdateUserByAdminRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._user = None
         self.discriminator = None

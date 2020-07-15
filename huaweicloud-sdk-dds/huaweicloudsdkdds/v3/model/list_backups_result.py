@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListBackupsResult(object):
+
+
+
+class ListBackupsResult:
 
 
     """
@@ -47,8 +50,10 @@ class ListBackupsResult(object):
         'description': 'description'
     }
 
-    def __init__(self, id=None, name=None, instance_id=None, instance_name=None, datastore=None, type=None, begin_time=None, end_time=None, status=None, size=None, description=None):  # noqa: E501
+    def __init__(self, id=None, name=None, instance_id=None, instance_name=None, datastore=None, type=None, begin_time=None, end_time=None, status=None, size=None, description=None):
         """ListBackupsResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._name = None

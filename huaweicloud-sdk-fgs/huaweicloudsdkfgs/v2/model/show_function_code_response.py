@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowFunctionCodeResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowFunctionCodeResponse(SdkResponse):
 
 
     """
@@ -55,8 +58,10 @@ class ShowFunctionCodeResponse(object):
         'dependencies': 'dependencies'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, runtime=None, code_type=None, code_url=None, code_filename=None, code_size=None, digest=None, last_modified=None, func_code=None, concurrency=None, depend_list=None, strategy_config=None, dependencies=None):  # noqa: E501
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, runtime=None, code_type=None, code_url=None, code_filename=None, code_size=None, digest=None, last_modified=None, func_code=None, concurrency=None, depend_list=None, strategy_config=None, dependencies=None):
         """ShowFunctionCodeResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._func_urn = None
         self._func_name = None

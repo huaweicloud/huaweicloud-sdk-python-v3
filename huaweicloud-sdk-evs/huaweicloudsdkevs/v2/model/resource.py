@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Resource(object):
+
+
+
+class Resource:
 
 
     """
@@ -22,7 +25,7 @@ class Resource(object):
     openapi_types = {
         'resource_id': 'str',
         'resource_name': 'str',
-        'resource_detail': 'ListVolumesDetailsResponseBody',
+        'resource_detail': 'VolumeDetail',
         'tags': 'list[dict(str, str)]'
     }
 
@@ -33,8 +36,10 @@ class Resource(object):
         'tags': 'tags'
     }
 
-    def __init__(self, resource_id=None, resource_name=None, resource_detail=None, tags=None):  # noqa: E501
+    def __init__(self, resource_id=None, resource_name=None, resource_detail=None, tags=None):
         """Resource - a model defined in huaweicloud sdk"""
+        
+        
 
         self._resource_id = None
         self._resource_name = None
@@ -98,7 +103,7 @@ class Resource(object):
 
 
         :return: The resource_detail of this Resource.
-        :rtype: ListVolumesDetailsResponseBody
+        :rtype: VolumeDetail
         """
         return self._resource_detail
 
@@ -108,7 +113,7 @@ class Resource(object):
 
 
         :param resource_detail: The resource_detail of this Resource.
-        :type: ListVolumesDetailsResponseBody
+        :type: VolumeDetail
         """
         self._resource_detail = resource_detail
 

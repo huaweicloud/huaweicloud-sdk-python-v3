@@ -6,7 +6,10 @@ import re
 import six
 
 
-class QuotaDetail(object):
+
+
+
+class QuotaDetail:
 
 
     """
@@ -33,8 +36,10 @@ class QuotaDetail(object):
         'allocated': 'allocated'
     }
 
-    def __init__(self, in_use=None, limit=None, reserved=None, allocated=None):  # noqa: E501
+    def __init__(self, in_use=None, limit=None, reserved=None, allocated=None):
         """QuotaDetail - a model defined in huaweicloud sdk"""
+        
+        
 
         self._in_use = None
         self._limit = None

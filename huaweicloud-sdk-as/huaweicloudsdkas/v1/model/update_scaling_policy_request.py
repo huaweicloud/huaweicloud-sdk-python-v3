@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateScalingPolicyRequest(object):
+
+
+
+class UpdateScalingPolicyRequest:
 
 
     """
@@ -29,8 +32,10 @@ class UpdateScalingPolicyRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, scaling_policy_id=None, body=None):  # noqa: E501
+    def __init__(self, scaling_policy_id=None, body=None):
         """UpdateScalingPolicyRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._scaling_policy_id = None
         self._body = None

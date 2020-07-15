@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListServerBlockDevicesRequest(object):
+
+
+
+class ListServerBlockDevicesRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ListServerBlockDevicesRequest(object):
         'server_id': 'server_id'
     }
 
-    def __init__(self, server_id=None):  # noqa: E501
+    def __init__(self, server_id=None):
         """ListServerBlockDevicesRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._server_id = None
         self.discriminator = None

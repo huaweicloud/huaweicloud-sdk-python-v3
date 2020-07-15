@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PostPaidServerNic(object):
+
+
+
+class PostPaidServerNic:
 
 
     """
@@ -33,8 +36,10 @@ class PostPaidServerNic(object):
         'ipv6_bandwidth': 'ipv6_bandwidth'
     }
 
-    def __init__(self, subnet_id=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None):  # noqa: E501
+    def __init__(self, subnet_id=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None):
         """PostPaidServerNic - a model defined in huaweicloud sdk"""
+        
+        
 
         self._subnet_id = None
         self._ip_address = None

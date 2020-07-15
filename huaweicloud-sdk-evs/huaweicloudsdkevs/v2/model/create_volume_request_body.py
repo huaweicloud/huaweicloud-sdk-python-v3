@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateVolumeRequestBody(object):
+
+
+
+class CreateVolumeRequestBody:
 
 
     """
@@ -29,8 +32,10 @@ class CreateVolumeRequestBody(object):
         'volume': 'volume'
     }
 
-    def __init__(self, bss_param=None, volume=None):  # noqa: E501
+    def __init__(self, bss_param=None, volume=None):
         """CreateVolumeRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._bss_param = None
         self._volume = None

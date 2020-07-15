@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowSnapshotRequest(object):
+
+
+
+class ShowSnapshotRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ShowSnapshotRequest(object):
         'snapshot_id': 'snapshot_id'
     }
 
-    def __init__(self, snapshot_id=None):  # noqa: E501
+    def __init__(self, snapshot_id=None):
         """ShowSnapshotRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._snapshot_id = None
         self.discriminator = None

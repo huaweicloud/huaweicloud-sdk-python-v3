@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ChangeRuleStatusResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ChangeRuleStatusResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ChangeRuleStatusResponse(object):
         'status': 'status'
     }
 
-    def __init__(self, status=None):  # noqa: E501
+    def __init__(self, status=None):
         """ChangeRuleStatusResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._status = None
         self.discriminator = None

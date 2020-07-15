@@ -6,7 +6,10 @@ import re
 import six
 
 
-class MetaData(object):
+
+
+
+class MetaData:
 
 
     """
@@ -27,8 +30,10 @@ class MetaData(object):
         'customize_key': 'customize_key'
     }
 
-    def __init__(self, customize_key=None):  # noqa: E501
+    def __init__(self, customize_key=None):
         """MetaData - a model defined in huaweicloud sdk"""
+        
+        
 
         self._customize_key = None
         self.discriminator = None

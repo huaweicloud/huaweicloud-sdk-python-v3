@@ -43,8 +43,7 @@ def sdk_request():
                              resource_path="/resources",
                              query_params=[("size", "1")],
                              header_params={"X-Sdk-Date": "20200608T023900Z"},
-                             body="",
-                             form_params=[])
+                             body="")
     yield sdk_request
 
 

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Region(object):
+
+
+
+class Region:
 
 
     """
@@ -37,8 +40,10 @@ class Region(object):
         'type': 'type'
     }
 
-    def __init__(self, description=None, parent_region_id=None, links=None, locales=None, id=None, type=None):  # noqa: E501
+    def __init__(self, description=None, parent_region_id=None, links=None, locales=None, id=None, type=None):
         """Region - a model defined in huaweicloud sdk"""
+        
+        
 
         self._description = None
         self._parent_region_id = None

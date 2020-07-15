@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListScalingTagInfosByTenantIdRequest(object):
+
+
+
+class ListScalingTagInfosByTenantIdRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ListScalingTagInfosByTenantIdRequest(object):
         'resource_type': 'resource_type'
     }
 
-    def __init__(self, resource_type=None):  # noqa: E501
+    def __init__(self, resource_type=None):
         """ListScalingTagInfosByTenantIdRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._resource_type = None
         self.discriminator = None

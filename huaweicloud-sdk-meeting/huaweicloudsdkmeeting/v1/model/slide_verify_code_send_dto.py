@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SlideVerifyCodeSendDTO(object):
+
+
+
+class SlideVerifyCodeSendDTO:
 
 
     """
@@ -31,8 +34,10 @@ class SlideVerifyCodeSendDTO(object):
         'check_type': 'checkType'
     }
 
-    def __init__(self, user=None, client_type=None, check_type=None):  # noqa: E501
+    def __init__(self, user=None, client_type=None, check_type=None):
         """SlideVerifyCodeSendDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._user = None
         self._client_type = None

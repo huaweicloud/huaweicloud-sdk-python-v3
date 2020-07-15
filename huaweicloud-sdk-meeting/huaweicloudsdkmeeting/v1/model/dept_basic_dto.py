@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeptBasicDTO(object):
+
+
+
+class DeptBasicDTO:
 
 
     """
@@ -35,8 +38,10 @@ class DeptBasicDTO(object):
         'parent_dept_code': 'parentDeptCode'
     }
 
-    def __init__(self, dept_code=None, corp_id=None, dept_name=None, dept_name_path=None, parent_dept_code=None):  # noqa: E501
+    def __init__(self, dept_code=None, corp_id=None, dept_name=None, dept_name_path=None, parent_dept_code=None):
         """DeptBasicDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._dept_code = None
         self._corp_id = None

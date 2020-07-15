@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListInstancesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListInstancesResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class ListInstancesResponse(object):
         'total_count': 'total_count'
     }
 
-    def __init__(self, instances=None, total_count=None):  # noqa: E501
+    def __init__(self, instances=None, total_count=None):
         """ListInstancesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._instances = None
         self._total_count = None

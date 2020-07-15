@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListImagesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListImagesResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ListImagesResponse(object):
         'images': 'images'
     }
 
-    def __init__(self, images=None):  # noqa: E501
+    def __init__(self, images=None):
         """ListImagesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._images = None
         self.discriminator = None

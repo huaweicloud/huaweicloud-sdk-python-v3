@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ResizePostPaidServerRequestBody(object):
+
+
+
+class ResizePostPaidServerRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class ResizePostPaidServerRequestBody(object):
         'resize': 'resize'
     }
 
-    def __init__(self, resize=None):  # noqa: E501
+    def __init__(self, resize=None):
         """ResizePostPaidServerRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._resize = None
         self.discriminator = None

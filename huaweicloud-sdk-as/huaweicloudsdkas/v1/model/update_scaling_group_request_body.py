@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateScalingGroupRequestBody(object):
+
+
+
+class UpdateScalingGroupRequestBody:
 
 
     """
@@ -61,8 +64,10 @@ class UpdateScalingGroupRequestBody(object):
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, scaling_group_name=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, available_zones=None, networks=None, security_groups=None, lb_listener_id=None, lbaas_listeners=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, scaling_configuration_id=None, notifications=None, delete_publicip=None, enterprise_project_id=None):  # noqa: E501
+    def __init__(self, scaling_group_name=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, available_zones=None, networks=None, security_groups=None, lb_listener_id=None, lbaas_listeners=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, scaling_configuration_id=None, notifications=None, delete_publicip=None, enterprise_project_id=None):
         """UpdateScalingGroupRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._scaling_group_name = None
         self._desire_instance_number = None

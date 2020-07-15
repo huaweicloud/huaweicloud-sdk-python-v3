@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PropertyFilter(object):
+
+
+
+class PropertyFilter:
 
 
     """
@@ -33,8 +36,10 @@ class PropertyFilter(object):
         'strategy': 'strategy'
     }
 
-    def __init__(self, path=None, operator=None, value=None, strategy=None):  # noqa: E501
+    def __init__(self, path=None, operator=None, value=None, strategy=None):
         """PropertyFilter - a model defined in huaweicloud sdk"""
+        
+        
 
         self._path = None
         self._operator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeviceStatusCondition(object):
+
+
+
+class DeviceStatusCondition:
 
 
     """
@@ -27,8 +30,10 @@ class DeviceStatusCondition(object):
         'status_list': 'status_list'
     }
 
-    def __init__(self, status_list=None):  # noqa: E501
+    def __init__(self, status_list=None):
         """DeviceStatusCondition - a model defined in huaweicloud sdk"""
+        
+        
 
         self._status_list = None
         self.discriminator = None

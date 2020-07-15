@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListTrackersResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListTrackersResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ListTrackersResponse(object):
         'trackers': 'trackers'
     }
 
-    def __init__(self, trackers=None):  # noqa: E501
+    def __init__(self, trackers=None):
         """ListTrackersResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._trackers = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowBackupPolicyRequest(object):
+
+
+
+class ShowBackupPolicyRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ShowBackupPolicyRequest(object):
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, instance_id=None):  # noqa: E501
+    def __init__(self, instance_id=None):
         """ShowBackupPolicyRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateCorpRequest(object):
+
+
+
+class UpdateCorpRequest:
 
 
     """
@@ -33,8 +36,10 @@ class UpdateCorpRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, id=None, body=None):  # noqa: E501
+    def __init__(self, x_request_id=None, accept_language=None, id=None, body=None):
         """UpdateCorpRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_request_id = None
         self._accept_language = None

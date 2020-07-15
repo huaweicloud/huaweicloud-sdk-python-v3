@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneUpdateProjectResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class KeystoneUpdateProjectResponse(SdkResponse):
 
 
     """
@@ -20,15 +23,17 @@ class KeystoneUpdateProjectResponse(object):
     sensitive_list = []
 
     openapi_types = {
-        'project': 'KeystoneCreateProjectResult'
+        'project': 'KeystoneUpdateProjectResult'
     }
 
     attribute_map = {
         'project': 'project'
     }
 
-    def __init__(self, project=None):  # noqa: E501
+    def __init__(self, project=None):
         """KeystoneUpdateProjectResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._project = None
         self.discriminator = None
@@ -42,7 +47,7 @@ class KeystoneUpdateProjectResponse(object):
 
 
         :return: The project of this KeystoneUpdateProjectResponse.
-        :rtype: KeystoneCreateProjectResult
+        :rtype: KeystoneUpdateProjectResult
         """
         return self._project
 
@@ -52,7 +57,7 @@ class KeystoneUpdateProjectResponse(object):
 
 
         :param project: The project of this KeystoneUpdateProjectResponse.
-        :type: KeystoneCreateProjectResult
+        :type: KeystoneUpdateProjectResult
         """
         self._project = project
 

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ModVmrDTO(object):
+
+
+
+class ModVmrDTO:
 
 
     """
@@ -35,8 +38,10 @@ class ModVmrDTO(object):
         'gust_first_notice': 'gustFirstNotice'
     }
 
-    def __init__(self, vmr_name=None, gust_pwd=None, chair_pwd=None, allow_gust_first=None, gust_first_notice=None):  # noqa: E501
+    def __init__(self, vmr_name=None, gust_pwd=None, chair_pwd=None, allow_gust_first=None, gust_first_notice=None):
         """ModVmrDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._vmr_name = None
         self._gust_pwd = None

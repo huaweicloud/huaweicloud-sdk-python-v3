@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RunCheckResultRequest(object):
+
+
+
+class RunCheckResultRequest:
 
 
     """
@@ -27,8 +30,10 @@ class RunCheckResultRequest(object):
         'job_id': 'job_id'
     }
 
-    def __init__(self, job_id=None):  # noqa: E501
+    def __init__(self, job_id=None):
         """RunCheckResultRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._job_id = None
         self.discriminator = None

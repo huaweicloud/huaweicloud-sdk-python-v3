@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteIpFromDomainNameRequest(object):
+
+
+
+class DeleteIpFromDomainNameRequest:
 
 
     """
@@ -31,8 +34,10 @@ class DeleteIpFromDomainNameRequest(object):
         'node_id': 'node_id'
     }
 
-    def __init__(self, instance_id=None, group_id=None, node_id=None):  # noqa: E501
+    def __init__(self, instance_id=None, group_id=None, node_id=None):
         """DeleteIpFromDomainNameRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._group_id = None

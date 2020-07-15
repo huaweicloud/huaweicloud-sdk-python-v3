@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListGroupReplicationInfoResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListGroupReplicationInfoResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class ListGroupReplicationInfoResponse(object):
         'group_count': 'group_count'
     }
 
-    def __init__(self, group_list=None, group_count=None):  # noqa: E501
+    def __init__(self, group_list=None, group_count=None):
         """ListGroupReplicationInfoResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._group_list = None
         self._group_count = None

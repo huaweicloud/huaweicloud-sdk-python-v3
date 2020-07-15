@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListSubnetsRequest(object):
+
+
+
+class ListSubnetsRequest:
 
 
     """
@@ -31,8 +34,10 @@ class ListSubnetsRequest(object):
         'vpc_id': 'vpc_id'
     }
 
-    def __init__(self, limit=2000, marker=None, vpc_id=None):  # noqa: E501
+    def __init__(self, limit=2000, marker=None, vpc_id=None):
         """ListSubnetsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._limit = None
         self._marker = None

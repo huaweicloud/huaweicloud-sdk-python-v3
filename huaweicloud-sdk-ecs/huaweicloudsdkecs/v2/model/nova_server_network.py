@@ -6,7 +6,10 @@ import re
 import six
 
 
-class NovaServerNetwork(object):
+
+
+
+class NovaServerNetwork:
 
 
     """
@@ -31,8 +34,10 @@ class NovaServerNetwork(object):
         'fixed_ip': 'fixed_ip'
     }
 
-    def __init__(self, port=None, uuid=None, fixed_ip=None):  # noqa: E501
+    def __init__(self, port=None, uuid=None, fixed_ip=None):
         """NovaServerNetwork - a model defined in huaweicloud sdk"""
+        
+        
 
         self._port = None
         self._uuid = None

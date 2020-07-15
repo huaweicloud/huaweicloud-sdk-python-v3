@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchStopServersRequestBody(object):
+
+
+
+class BatchStopServersRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class BatchStopServersRequestBody(object):
         'os_stop': 'os-stop'
     }
 
-    def __init__(self, os_stop=None):  # noqa: E501
+    def __init__(self, os_stop=None):
         """BatchStopServersRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._os_stop = None
         self.discriminator = None

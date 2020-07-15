@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateInstanceFlavorResult(object):
+
+
+
+class CreateInstanceFlavorResult:
 
 
     """
@@ -35,8 +38,10 @@ class CreateInstanceFlavorResult(object):
         'spec_code': 'spec_code'
     }
 
-    def __init__(self, type=None, num=None, storage=None, size=None, spec_code=None):  # noqa: E501
+    def __init__(self, type=None, num=None, storage=None, size=None, spec_code=None):
         """CreateInstanceFlavorResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._type = None
         self._num = None

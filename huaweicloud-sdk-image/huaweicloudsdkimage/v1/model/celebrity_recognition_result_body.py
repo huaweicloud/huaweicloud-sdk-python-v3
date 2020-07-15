@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CelebrityRecognitionResultBody(object):
+
+
+
+class CelebrityRecognitionResultBody:
 
 
     """
@@ -31,8 +34,10 @@ class CelebrityRecognitionResultBody(object):
         'label': 'label'
     }
 
-    def __init__(self, confidence=None, face_detail=None, label=None):  # noqa: E501
+    def __init__(self, confidence=None, face_detail=None, label=None):
         """CelebrityRecognitionResultBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._confidence = None
         self._face_detail = None

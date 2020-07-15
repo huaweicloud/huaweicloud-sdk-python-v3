@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteRuleRequest(object):
+
+
+
+class DeleteRuleRequest:
 
 
     """
@@ -29,8 +32,10 @@ class DeleteRuleRequest(object):
         'rule_id': 'rule_id'
     }
 
-    def __init__(self, instance_id=None, rule_id=None):  # noqa: E501
+    def __init__(self, instance_id=None, rule_id=None):
         """DeleteRuleRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._rule_id = None

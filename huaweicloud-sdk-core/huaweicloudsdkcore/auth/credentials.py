@@ -62,4 +62,9 @@ class BasicCredentials(Credentials):
             request.header_params["X-Project-Id"] = self.project_id
         if self.domain_id is not None:
             request.header_params["X-Domain-Id"] = self.domain_id
+
+        if "Content-Type" in request.header_params and not request.header_params["Content-Type"].startswith(
+                "application/json"):
+            request.header_params["X-Sdk-Content-Sha256"] = "UNSIGNED-PAYLOAD"
+
         return signer.Signer(self).sign(request)

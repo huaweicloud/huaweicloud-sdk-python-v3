@@ -6,7 +6,10 @@ import re
 import six
 
 
-class TaskProgress(object):
+
+
+
+class TaskProgress:
 
 
     """
@@ -39,8 +42,10 @@ class TaskProgress(object):
         'stopped': 'stopped'
     }
 
-    def __init__(self, total=None, processing=None, success=None, fail=None, waitting=None, fail_wait_retry=None, stopped=None):  # noqa: E501
+    def __init__(self, total=None, processing=None, success=None, fail=None, waitting=None, fail_wait_retry=None, stopped=None):
         """TaskProgress - a model defined in huaweicloud sdk"""
+        
+        
 
         self._total = None
         self._processing = None

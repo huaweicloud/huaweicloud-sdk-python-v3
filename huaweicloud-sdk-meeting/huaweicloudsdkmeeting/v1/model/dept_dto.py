@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeptDTO(object):
+
+
+
+class DeptDTO:
 
 
     """
@@ -39,8 +42,10 @@ class DeptDTO(object):
         'designated_out_dept_codes': 'designatedOutDeptCodes'
     }
 
-    def __init__(self, dept_code=None, dept_name=None, parent_dept_code=None, note=None, in_permission=None, out_permission=None, designated_out_dept_codes=None):  # noqa: E501
+    def __init__(self, dept_code=None, dept_name=None, parent_dept_code=None, note=None, in_permission=None, out_permission=None, designated_out_dept_codes=None):
         """DeptDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._dept_code = None
         self._dept_name = None

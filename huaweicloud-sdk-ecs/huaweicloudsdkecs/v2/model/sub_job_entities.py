@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SubJobEntities(object):
+
+
+
+class SubJobEntities:
 
 
     """
@@ -31,8 +34,10 @@ class SubJobEntities(object):
         'errorcode_message': 'errorcode_message'
     }
 
-    def __init__(self, server_id=None, nic_id=None, errorcode_message=None):  # noqa: E501
+    def __init__(self, server_id=None, nic_id=None, errorcode_message=None):
         """SubJobEntities - a model defined in huaweicloud sdk"""
+        
+        
 
         self._server_id = None
         self._nic_id = None

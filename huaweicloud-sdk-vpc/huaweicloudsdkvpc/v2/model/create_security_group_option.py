@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateSecurityGroupOption(object):
+
+
+
+class CreateSecurityGroupOption:
 
 
     """
@@ -31,8 +34,10 @@ class CreateSecurityGroupOption(object):
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, name=None, vpc_id=None, enterprise_project_id=None):  # noqa: E501
+    def __init__(self, name=None, vpc_id=None, enterprise_project_id=None):
         """CreateSecurityGroupOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._vpc_id = None

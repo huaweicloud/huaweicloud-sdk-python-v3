@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneUpdatePasswordOption(object):
+
+
+
+class KeystoneUpdatePasswordOption:
 
 
     """
@@ -29,8 +32,10 @@ class KeystoneUpdatePasswordOption(object):
         'original_password': 'original_password'
     }
 
-    def __init__(self, password=None, original_password=None):  # noqa: E501
+    def __init__(self, password=None, original_password=None):
         """KeystoneUpdatePasswordOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._password = None
         self._original_password = None

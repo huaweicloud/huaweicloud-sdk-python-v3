@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchDeleteServerNicsRequestBody(object):
+
+
+
+class BatchDeleteServerNicsRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class BatchDeleteServerNicsRequestBody(object):
         'nics': 'nics'
     }
 
-    def __init__(self, nics=None):  # noqa: E501
+    def __init__(self, nics=None):
         """BatchDeleteServerNicsRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._nics = None
         self.discriminator = None

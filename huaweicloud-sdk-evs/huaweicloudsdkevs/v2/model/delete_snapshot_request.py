@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteSnapshotRequest(object):
+
+
+
+class DeleteSnapshotRequest:
 
 
     """
@@ -27,8 +30,10 @@ class DeleteSnapshotRequest(object):
         'snapshot_id': 'snapshot_id'
     }
 
-    def __init__(self, snapshot_id=None):  # noqa: E501
+    def __init__(self, snapshot_id=None):
         """DeleteSnapshotRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._snapshot_id = None
         self.discriminator = None

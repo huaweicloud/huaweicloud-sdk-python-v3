@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneShowSecurityComplianceResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class KeystoneShowSecurityComplianceResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class KeystoneShowSecurityComplianceResponse(object):
         'config': 'config'
     }
 
-    def __init__(self, config=None):  # noqa: E501
+    def __init__(self, config=None):
         """KeystoneShowSecurityComplianceResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._config = None
         self.discriminator = None

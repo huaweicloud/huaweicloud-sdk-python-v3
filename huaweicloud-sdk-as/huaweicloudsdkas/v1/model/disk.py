@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Disk(object):
+
+
+
+class Disk:
 
 
     """
@@ -37,8 +40,10 @@ class Disk(object):
         'snapshot_id': 'snapshot_id'
     }
 
-    def __init__(self, size=None, volume_type='SATA', disk_type='SYS', dedicate_storage_id=None, data_disk_image_id=None, snapshot_id=None):  # noqa: E501
+    def __init__(self, size=None, volume_type='SATA', disk_type='SYS', dedicate_storage_id=None, data_disk_image_id=None, snapshot_id=None):
         """Disk - a model defined in huaweicloud sdk"""
+        
+        
 
         self._size = None
         self._volume_type = None

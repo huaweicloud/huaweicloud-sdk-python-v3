@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateRuleResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CreateRuleResponse(SdkResponse):
 
 
     """
@@ -45,8 +48,10 @@ class CreateRuleResponse(object):
         'last_update_time': 'last_update_time'
     }
 
-    def __init__(self, rule_id=None, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None, edge_node_ids=None, last_update_time=None):  # noqa: E501
+    def __init__(self, rule_id=None, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None, edge_node_ids=None, last_update_time=None):
         """CreateRuleResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._rule_id = None
         self._name = None

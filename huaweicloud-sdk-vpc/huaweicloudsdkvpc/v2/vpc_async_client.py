@@ -11,6 +11,7 @@ import six
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class VpcAsyncClient(Client):
@@ -55,15 +56,10 @@ class VpcAsyncClient(Client):
         创建端口。
 
         :param CreatePortRequest request
-        :return: tuple(CreatePortResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreatePortResponse
         """
 
         all_params = ['port']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -77,24 +73,25 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/ports', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/ports',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreatePortResponse',
@@ -118,15 +115,10 @@ class VpcAsyncClient(Client):
         创建安全组。
 
         :param CreateSecurityGroupRequest request
-        :return: tuple(CreateSecurityGroupResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateSecurityGroupResponse
         """
 
         all_params = ['security_group']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -140,24 +132,25 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/security-groups', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/security-groups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateSecurityGroupResponse',
@@ -181,15 +174,10 @@ class VpcAsyncClient(Client):
         创建安全组规则。
 
         :param CreateSecurityGroupRuleRequest request
-        :return: tuple(CreateSecurityGroupRuleResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateSecurityGroupRuleResponse
         """
 
         all_params = ['security_group_rule']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -203,24 +191,25 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/security-group-rules', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/security-group-rules',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateSecurityGroupRuleResponse',
@@ -244,15 +233,10 @@ class VpcAsyncClient(Client):
         创建子网。
 
         :param CreateSubnetRequest request
-        :return: tuple(CreateSubnetResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateSubnetResponse
         """
 
         all_params = ['subnet']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -266,24 +250,25 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/subnets', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/subnets',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateSubnetResponse',
@@ -297,7 +282,7 @@ class VpcAsyncClient(Client):
         删除端口。
 
         :param DeletePortRequest request
-        :return: None
+        :return: DeletePortResponse
         """
         return self.delete_port_with_http_info(request)
 
@@ -307,15 +292,10 @@ class VpcAsyncClient(Client):
         删除端口。
 
         :param DeletePortRequest request
-        :return: None
+        :return: DeletePortResponse
         """
 
         all_params = ['port_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -331,21 +311,24 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/ports/{port_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/ports/{port_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeletePortResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -356,7 +339,7 @@ class VpcAsyncClient(Client):
         删除安全组。
 
         :param DeleteSecurityGroupRequest request
-        :return: None
+        :return: DeleteSecurityGroupResponse
         """
         return self.delete_security_group_with_http_info(request)
 
@@ -366,15 +349,10 @@ class VpcAsyncClient(Client):
         删除安全组。
 
         :param DeleteSecurityGroupRequest request
-        :return: None
+        :return: DeleteSecurityGroupResponse
         """
 
         all_params = ['security_group_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -390,21 +368,24 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/security-groups/{security_group_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/security-groups/{security_group_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteSecurityGroupResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -415,7 +396,7 @@ class VpcAsyncClient(Client):
         删除安全组规则。
 
         :param DeleteSecurityGroupRuleRequest request
-        :return: None
+        :return: DeleteSecurityGroupRuleResponse
         """
         return self.delete_security_group_rule_with_http_info(request)
 
@@ -425,15 +406,10 @@ class VpcAsyncClient(Client):
         删除安全组规则。
 
         :param DeleteSecurityGroupRuleRequest request
-        :return: None
+        :return: DeleteSecurityGroupRuleResponse
         """
 
         all_params = ['security_group_rule_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -449,21 +425,24 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/security-group-rules/{security_group_rule_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/security-group-rules/{security_group_rule_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteSecurityGroupRuleResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -474,7 +453,7 @@ class VpcAsyncClient(Client):
         删除子网
 
         :param DeleteSubnetRequest request
-        :return: None
+        :return: DeleteSubnetResponse
         """
         return self.delete_subnet_with_http_info(request)
 
@@ -484,15 +463,10 @@ class VpcAsyncClient(Client):
         删除子网
 
         :param DeleteSubnetRequest request
-        :return: None
+        :return: DeleteSubnetResponse
         """
 
         all_params = ['vpc_id', 'subnet_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -510,21 +484,24 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/vpcs/{vpc_id}/subnets/{subnet_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/vpcs/{vpc_id}/subnets/{subnet_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteSubnetResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -545,15 +522,10 @@ class VpcAsyncClient(Client):
         查询提交请求的租户的所有端口，单次查询最多返回2000条数据。
 
         :param ListPortsRequest request
-        :return: tuple(ListPortsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListPortsResponse
         """
 
         all_params = ['name', 'id', 'limit', 'admin_state_up', 'network_id', 'mac_address', 'device_id', 'device_owner', 'status', 'marker', 'fixed_ips', 'enterprise_project_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -591,20 +563,21 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/ports', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/ports',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListPortsResponse',
@@ -628,15 +601,10 @@ class VpcAsyncClient(Client):
         查询安全组规则列表。
 
         :param ListSecurityGroupRulesRequest request
-        :return: tuple(ListSecurityGroupRulesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListSecurityGroupRulesResponse
         """
 
         all_params = ['marker', 'limit', 'security_group_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -656,20 +624,21 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/security-group-rules', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/security-group-rules',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListSecurityGroupRulesResponse',
@@ -693,15 +662,10 @@ class VpcAsyncClient(Client):
         查询安全组列表
 
         :param ListSecurityGroupsRequest request
-        :return: tuple(ListSecurityGroupsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListSecurityGroupsResponse
         """
 
         all_params = ['limit', 'marker', 'vpc_id', 'enterprise_project_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -723,20 +687,21 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/security-groups', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/security-groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListSecurityGroupsResponse',
@@ -760,15 +725,10 @@ class VpcAsyncClient(Client):
         查询子网列表
 
         :param ListSubnetsRequest request
-        :return: tuple(ListSubnetsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListSubnetsResponse
         """
 
         all_params = ['limit', 'marker', 'vpc_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -788,20 +748,21 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/subnets', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/subnets',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListSubnetsResponse',
@@ -825,15 +786,10 @@ class VpcAsyncClient(Client):
         查询单个端口详情。
 
         :param ShowPortRequest request
-        :return: tuple(ShowPortResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowPortResponse
         """
 
         all_params = ['port_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -849,20 +805,21 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/ports/{port_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/ports/{port_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowPortResponse',
@@ -886,15 +843,10 @@ class VpcAsyncClient(Client):
         查询单租户在VPC服务下的网络资源配额，包括vpc配额、子网配额、安全组配额、安全组规则配额、弹性公网IP配额，vpn配额等。
 
         :param ShowQuotaRequest request
-        :return: tuple(ShowQuotaResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowQuotaResponse
         """
 
         all_params = ['type']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -910,20 +862,21 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/quotas', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/quotas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowQuotaResponse',
@@ -947,15 +900,10 @@ class VpcAsyncClient(Client):
         查询单个安全组详情。
 
         :param ShowSecurityGroupRequest request
-        :return: tuple(ShowSecurityGroupResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowSecurityGroupResponse
         """
 
         all_params = ['security_group_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -971,20 +919,21 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/security-groups/{security_group_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/security-groups/{security_group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowSecurityGroupResponse',
@@ -1008,15 +957,10 @@ class VpcAsyncClient(Client):
         查询单个安全组规则详情
 
         :param ShowSecurityGroupRuleRequest request
-        :return: tuple(ShowSecurityGroupRuleResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowSecurityGroupRuleResponse
         """
 
         all_params = ['security_group_rule_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1032,20 +976,21 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/security-group-rules/{security_group_rule_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/security-group-rules/{security_group_rule_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowSecurityGroupRuleResponse',
@@ -1069,15 +1014,10 @@ class VpcAsyncClient(Client):
         查询子网详情。
 
         :param ShowSubnetRequest request
-        :return: tuple(ShowSubnetResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowSubnetResponse
         """
 
         all_params = ['subnet_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1093,20 +1033,21 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/subnets/{subnet_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/subnets/{subnet_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowSubnetResponse',
@@ -1130,15 +1071,10 @@ class VpcAsyncClient(Client):
         更新端口。
 
         :param UpdatePortRequest request
-        :return: tuple(UpdatePortResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdatePortResponse
         """
 
         all_params = ['port_id', 'port']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1154,24 +1090,25 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/ports/{port_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/ports/{port_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdatePortResponse',
@@ -1195,15 +1132,10 @@ class VpcAsyncClient(Client):
         更新子网。
 
         :param UpdateSubnetRequest request
-        :return: tuple(UpdateSubnetResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateSubnetResponse
         """
 
         all_params = ['vpc_id', 'subnet_id', 'subnet']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1221,24 +1153,25 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/vpcs/{vpc_id}/subnets/{subnet_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/vpcs/{vpc_id}/subnets/{subnet_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateSubnetResponse',
@@ -1263,15 +1196,10 @@ class VpcAsyncClient(Client):
         申请私有IP。
 
         :param CreatePrivateipRequest request
-        :return: tuple(CreatePrivateipResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreatePrivateipResponse
         """
 
         all_params = ['privateips']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1285,24 +1213,25 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/privateips', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/privateips',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreatePrivateipResponse',
@@ -1316,7 +1245,7 @@ class VpcAsyncClient(Client):
         删除私有IP。
 
         :param DeletePrivateipRequest request
-        :return: None
+        :return: DeletePrivateipResponse
         """
         return self.delete_privateip_with_http_info(request)
 
@@ -1326,15 +1255,10 @@ class VpcAsyncClient(Client):
         删除私有IP。
 
         :param DeletePrivateipRequest request
-        :return: None
+        :return: DeletePrivateipResponse
         """
 
         all_params = ['privateip_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1350,21 +1274,24 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/privateips/{privateip_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/privateips/{privateip_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeletePrivateipResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1385,15 +1312,10 @@ class VpcAsyncClient(Client):
         查询指定子网下的私有IP列表。
 
         :param ListPrivateipsRequest request
-        :return: tuple(ListPrivateipsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListPrivateipsResponse
         """
 
         all_params = ['subnet_id', 'limit', 'marker']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1413,20 +1335,21 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/subnets/{subnet_id}/privateips', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/subnets/{subnet_id}/privateips',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListPrivateipsResponse',
@@ -1450,15 +1373,10 @@ class VpcAsyncClient(Client):
         指定ID查询私有IP。
 
         :param ShowPrivateipRequest request
-        :return: tuple(ShowPrivateipResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowPrivateipResponse
         """
 
         all_params = ['privateip_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1474,20 +1392,21 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/privateips/{privateip_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/privateips/{privateip_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowPrivateipResponse',
@@ -1512,15 +1431,10 @@ class VpcAsyncClient(Client):
         创建虚拟私有云。
 
         :param CreateVpcRequest request
-        :return: tuple(CreateVpcResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateVpcResponse
         """
 
         all_params = ['vpc']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1534,24 +1448,25 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/vpcs', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/vpcs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateVpcResponse',
@@ -1565,7 +1480,7 @@ class VpcAsyncClient(Client):
         删除虚拟私有云。
 
         :param DeleteVpcRequest request
-        :return: None
+        :return: DeleteVpcResponse
         """
         return self.delete_vpc_with_http_info(request)
 
@@ -1575,15 +1490,10 @@ class VpcAsyncClient(Client):
         删除虚拟私有云。
 
         :param DeleteVpcRequest request
-        :return: None
+        :return: DeleteVpcResponse
         """
 
         all_params = ['vpc_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1599,21 +1509,24 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/vpcs/{vpc_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/vpcs/{vpc_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteVpcResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1634,15 +1547,10 @@ class VpcAsyncClient(Client):
         查询虚拟私有云列表。
 
         :param ListVpcsRequest request
-        :return: tuple(ListVpcsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListVpcsResponse
         """
 
         all_params = ['limit', 'marker', 'id', 'enterprise_project_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1664,20 +1572,21 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/vpcs', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/vpcs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListVpcsResponse',
@@ -1701,15 +1610,10 @@ class VpcAsyncClient(Client):
         查询虚拟私有云。
 
         :param ShowVpcRequest request
-        :return: tuple(ShowVpcResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowVpcResponse
         """
 
         all_params = ['vpc_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1725,20 +1629,21 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/vpcs/{vpc_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/vpcs/{vpc_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowVpcResponse',
@@ -1762,15 +1667,10 @@ class VpcAsyncClient(Client):
         更新虚拟私有云。
 
         :param UpdateVpcRequest request
-        :return: tuple(UpdateVpcResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateVpcResponse
         """
 
         all_params = ['vpc_id', 'vpc']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1786,24 +1686,25 @@ class VpcAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/{project_id}/vpcs/{vpc_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/{project_id}/vpcs/{vpc_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateVpcResponse',
@@ -1833,6 +1734,15 @@ class VpcAsyncClient(Client):
         :return:
             Return the response directly.
         """
-        return self.do_http_request(method, resource_path, path_params,
-                                    query_params, header_params, body, post_params,
-                                    response_type, collection_formats, request_type, True)
+        return self.do_http_request(
+            method=method,
+            resource_path=resource_path,
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body,
+            post_params=post_params,
+            response_type=response_type,
+            collection_formats=collection_formats,
+            request_type=request_type,
+	    async_request=True)

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListFunctionVersionsRequest(object):
+
+
+
+class ListFunctionVersionsRequest:
 
 
     """
@@ -31,8 +34,10 @@ class ListFunctionVersionsRequest(object):
         'maxitems': 'maxitems'
     }
 
-    def __init__(self, function_urn=None, marker=None, maxitems=None):  # noqa: E501
+    def __init__(self, function_urn=None, marker=None, maxitems=None):
         """ListFunctionVersionsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._function_urn = None
         self._marker = None

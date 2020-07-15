@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneListProjectsRequest(object):
+
+
+
+class KeystoneListProjectsRequest:
 
 
     """
@@ -37,8 +40,10 @@ class KeystoneListProjectsRequest(object):
         'per_page': 'per_page'
     }
 
-    def __init__(self, name=None, parent_id=None, enabled=None, is_domain=None, page=None, per_page=None):  # noqa: E501
+    def __init__(self, name=None, parent_id=None, enabled=None, is_domain=None, page=None, per_page=None):
         """KeystoneListProjectsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._parent_id = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class InstanceConfig(object):
+
+
+
+class InstanceConfig:
 
 
     """
@@ -55,8 +58,10 @@ class InstanceConfig(object):
         'market_type': 'market_type'
     }
 
-    def __init__(self, instance_id=None, flavor_ref=None, image_ref=None, disk=None, key_name=None, personality=None, public_ip=None, user_data=None, metadata=None, security_groups=None, server_group_id=None, tenancy=None, dedicated_host_id=None, multi_flavor_priority_policy=None, market_type=None):  # noqa: E501
+    def __init__(self, instance_id=None, flavor_ref=None, image_ref=None, disk=None, key_name=None, personality=None, public_ip=None, user_data=None, metadata=None, security_groups=None, server_group_id=None, tenancy=None, dedicated_host_id=None, multi_flavor_priority_policy=None, market_type=None):
         """InstanceConfig - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._flavor_ref = None

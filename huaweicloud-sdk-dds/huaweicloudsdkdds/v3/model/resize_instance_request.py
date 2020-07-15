@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ResizeInstanceRequest(object):
+
+
+
+class ResizeInstanceRequest:
 
 
     """
@@ -29,8 +32,10 @@ class ResizeInstanceRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, instance_id=None, body=None):  # noqa: E501
+    def __init__(self, instance_id=None, body=None):
         """ResizeInstanceRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._body = None

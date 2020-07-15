@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ResourceDTO(object):
+
+
+
+class ResourceDTO:
 
 
     """
@@ -37,8 +40,10 @@ class ResourceDTO(object):
         'editable': 'editable'
     }
 
-    def __init__(self, id=None, type=None, type_id=None, count=None, expire_date=None, editable=True):  # noqa: E501
+    def __init__(self, id=None, type=None, type_id=None, count=None, expire_date=None, editable=True):
         """ResourceDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._type = None

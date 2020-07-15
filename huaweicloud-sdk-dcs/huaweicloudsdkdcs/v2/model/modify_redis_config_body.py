@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ModifyRedisConfigBody(object):
+
+
+
+class ModifyRedisConfigBody:
 
 
     """
@@ -27,8 +30,10 @@ class ModifyRedisConfigBody(object):
         'redis_config': 'redis_config'
     }
 
-    def __init__(self, redis_config=None):  # noqa: E501
+    def __init__(self, redis_config=None):
         """ModifyRedisConfigBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._redis_config = None
         self.discriminator = None

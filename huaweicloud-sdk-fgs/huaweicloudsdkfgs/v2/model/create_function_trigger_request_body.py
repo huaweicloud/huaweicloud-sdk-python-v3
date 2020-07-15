@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateFunctionTriggerRequestBody(object):
+
+
+
+class CreateFunctionTriggerRequestBody:
 
 
     """
@@ -33,8 +36,10 @@ class CreateFunctionTriggerRequestBody(object):
         'event_data': 'event_data'
     }
 
-    def __init__(self, trigger_type_code=None, trigger_status=None, event_type_code=None, event_data=None):  # noqa: E501
+    def __init__(self, trigger_type_code=None, trigger_status=None, event_type_code=None, event_data=None):
         """CreateFunctionTriggerRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._trigger_type_code = None
         self._trigger_status = None

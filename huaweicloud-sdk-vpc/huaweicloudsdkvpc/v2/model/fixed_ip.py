@@ -6,7 +6,10 @@ import re
 import six
 
 
-class FixedIp(object):
+
+
+
+class FixedIp:
 
 
     """
@@ -29,8 +32,10 @@ class FixedIp(object):
         'subnet_id': 'subnet_id'
     }
 
-    def __init__(self, ip_address=None, subnet_id=None):  # noqa: E501
+    def __init__(self, ip_address=None, subnet_id=None):
         """FixedIp - a model defined in huaweicloud sdk"""
+        
+        
 
         self._ip_address = None
         self._subnet_id = None

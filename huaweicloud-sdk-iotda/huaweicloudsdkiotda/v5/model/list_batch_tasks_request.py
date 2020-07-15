@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListBatchTasksRequest(object):
+
+
+
+class ListBatchTasksRequest:
 
 
     """
@@ -39,8 +42,10 @@ class ListBatchTasksRequest(object):
         'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None, app_id=None, task_type=None, status=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):  # noqa: E501
+    def __init__(self, instance_id=None, app_id=None, task_type=None, status=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):
         """ListBatchTasksRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._app_id = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListProductsResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListProductsResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class ListProductsResponse(object):
         'page': 'page'
     }
 
-    def __init__(self, products=None, page=None):  # noqa: E501
+    def __init__(self, products=None, page=None):
         """ListProductsResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._products = None
         self._page = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateServersResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CreateServersResponse(SdkResponse):
 
 
     """
@@ -31,8 +34,10 @@ class CreateServersResponse(object):
         'server_ids': 'serverIds'
     }
 
-    def __init__(self, job_id=None, order_id=None, server_ids=None):  # noqa: E501
+    def __init__(self, job_id=None, order_id=None, server_ids=None):
         """CreateServersResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._job_id = None
         self._order_id = None

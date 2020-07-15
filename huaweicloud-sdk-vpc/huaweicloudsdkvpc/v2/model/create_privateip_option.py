@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreatePrivateipOption(object):
+
+
+
+class CreatePrivateipOption:
 
 
     """
@@ -29,8 +32,10 @@ class CreatePrivateipOption(object):
         'ip_address': 'ip_address'
     }
 
-    def __init__(self, subnet_id=None, ip_address=None):  # noqa: E501
+    def __init__(self, subnet_id=None, ip_address=None):
         """CreatePrivateipOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._subnet_id = None
         self._ip_address = None

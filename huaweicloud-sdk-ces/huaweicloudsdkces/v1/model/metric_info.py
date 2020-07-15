@@ -6,7 +6,10 @@ import re
 import six
 
 
-class MetricInfo(object):
+
+
+
+class MetricInfo:
 
 
     """
@@ -33,8 +36,10 @@ class MetricInfo(object):
         'unit': 'unit'
     }
 
-    def __init__(self, dimensions=None, metric_name=None, namespace=None, unit=None):  # noqa: E501
+    def __init__(self, dimensions=None, metric_name=None, namespace=None, unit=None):
         """MetricInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._dimensions = None
         self._metric_name = None

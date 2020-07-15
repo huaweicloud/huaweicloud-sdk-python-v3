@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CopyInstanceResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CopyInstanceResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class CopyInstanceResponse(object):
         'backup_id': 'backup_id'
     }
 
-    def __init__(self, backup_id=None):  # noqa: E501
+    def __init__(self, backup_id=None):
         """CopyInstanceResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._backup_id = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class OsVersionInfo(object):
+
+
+
+class OsVersionInfo:
 
 
     """
@@ -35,8 +38,10 @@ class OsVersionInfo(object):
         'os_type': 'os_type'
     }
 
-    def __init__(self, platform=None, os_version_key=None, os_version=None, os_bit=None, os_type=None):  # noqa: E501
+    def __init__(self, platform=None, os_version_key=None, os_version=None, os_bit=None, os_type=None):
         """OsVersionInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._platform = None
         self._os_version_key = None

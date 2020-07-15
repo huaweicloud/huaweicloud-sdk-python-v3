@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneCreateProjectOption(object):
+
+
+
+class KeystoneCreateProjectOption:
 
 
     """
@@ -33,8 +36,10 @@ class KeystoneCreateProjectOption(object):
         'description': 'description'
     }
 
-    def __init__(self, name=None, parent_id=None, domain_id=None, description=None):  # noqa: E501
+    def __init__(self, name=None, parent_id=None, domain_id=None, description=None):
         """KeystoneCreateProjectOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._parent_id = None

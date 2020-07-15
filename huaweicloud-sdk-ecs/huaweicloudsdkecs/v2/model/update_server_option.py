@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateServerOption(object):
+
+
+
+class UpdateServerOption:
 
 
     """
@@ -31,8 +34,10 @@ class UpdateServerOption(object):
         'hostname': 'hostname'
     }
 
-    def __init__(self, name=None, description=None, hostname=None):  # noqa: E501
+    def __init__(self, name=None, description=None, hostname=None):
         """UpdateServerOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._description = None

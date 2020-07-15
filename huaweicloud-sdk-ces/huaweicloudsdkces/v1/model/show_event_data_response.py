@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowEventDataResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowEventDataResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ShowEventDataResponse(object):
         'datapoints': 'datapoints'
     }
 
-    def __init__(self, datapoints=None):  # noqa: E501
+    def __init__(self, datapoints=None):
         """ShowEventDataResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._datapoints = None
         self.discriminator = None

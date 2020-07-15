@@ -6,7 +6,10 @@ import re
 import six
 
 
-class QueryOrgVmrResultDTO(object):
+
+
+
+class QueryOrgVmrResultDTO:
 
 
     """
@@ -41,8 +44,10 @@ class QueryOrgVmrResultDTO(object):
         'status': 'status'
     }
 
-    def __init__(self, id=None, vmr_id=None, vmr_name=None, vmr_pkg_name=None, vmr_pkg_parties=None, member=None, device=None, status=None):  # noqa: E501
+    def __init__(self, id=None, vmr_id=None, vmr_name=None, vmr_pkg_name=None, vmr_pkg_parties=None, member=None, device=None, status=None):
         """QueryOrgVmrResultDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._vmr_id = None

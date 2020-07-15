@@ -6,7 +6,10 @@ import re
 import six
 
 
-class LifecycleHookList(object):
+
+
+
+class LifecycleHookList:
 
 
     """
@@ -41,8 +44,10 @@ class LifecycleHookList(object):
         'create_time': 'create_time'
     }
 
-    def __init__(self, lifecycle_hook_name=None, lifecycle_hook_type=None, default_result=None, default_timeout=None, notification_topic_urn=None, notification_topic_name=None, notification_metadata=None, create_time=None):  # noqa: E501
+    def __init__(self, lifecycle_hook_name=None, lifecycle_hook_type=None, default_result=None, default_timeout=None, notification_topic_urn=None, notification_topic_name=None, notification_metadata=None, create_time=None):
         """LifecycleHookList - a model defined in huaweicloud sdk"""
+        
+        
 
         self._lifecycle_hook_name = None
         self._lifecycle_hook_type = None

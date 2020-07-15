@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateMessageRequest(object):
+
+
+
+class CreateMessageRequest:
 
 
     """
@@ -31,8 +34,10 @@ class CreateMessageRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, device_id=None, instance_id=None, body=None):  # noqa: E501
+    def __init__(self, device_id=None, instance_id=None, body=None):
         """CreateMessageRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._device_id = None
         self._instance_id = None

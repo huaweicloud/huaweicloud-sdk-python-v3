@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RegisterImageRequestBody(object):
+
+
+
+class RegisterImageRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class RegisterImageRequestBody(object):
         'image_url': 'image_url'
     }
 
-    def __init__(self, image_url=None):  # noqa: E501
+    def __init__(self, image_url=None):
         """RegisterImageRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._image_url = None
         self.discriminator = None

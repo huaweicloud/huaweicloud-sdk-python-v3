@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListInstancesResult(object):
+
+
+
+class ListInstancesResult:
 
 
     """
@@ -73,8 +76,10 @@ class ListInstancesResult(object):
         'actions': 'actions'
     }
 
-    def __init__(self, id=None, name=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, ssl=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, storage=None, disk_encryption_id=None, enterprise_project_id=None, time_zone=None, actions=None):  # noqa: E501
+    def __init__(self, id=None, name=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, ssl=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, storage=None, disk_encryption_id=None, enterprise_project_id=None, time_zone=None, actions=None):
         """ListInstancesResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._name = None

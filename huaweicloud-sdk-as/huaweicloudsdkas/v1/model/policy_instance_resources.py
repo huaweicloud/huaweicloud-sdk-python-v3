@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PolicyInstanceResources(object):
+
+
+
+class PolicyInstanceResources:
 
 
     """
@@ -33,8 +36,10 @@ class PolicyInstanceResources(object):
         'max': 'max'
     }
 
-    def __init__(self, type=None, used=None, quota=None, max=None):  # noqa: E501
+    def __init__(self, type=None, used=None, quota=None, max=None):
         """PolicyInstanceResources - a model defined in huaweicloud sdk"""
+        
+        
 
         self._type = None
         self._used = None

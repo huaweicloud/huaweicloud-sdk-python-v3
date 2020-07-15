@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdatePermanentAccessKeyRequest(object):
+
+
+
+class UpdatePermanentAccessKeyRequest:
 
 
     """
@@ -29,8 +32,10 @@ class UpdatePermanentAccessKeyRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, access_key=None, body=None):  # noqa: E501
+    def __init__(self, access_key=None, body=None):
         """UpdatePermanentAccessKeyRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._access_key = None
         self._body = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CheckResultItemsBody(object):
+
+
+
+class CheckResultItemsBody:
 
 
     """
@@ -31,8 +34,10 @@ class CheckResultItemsBody(object):
         'detail': 'detail'
     }
 
-    def __init__(self, url=None, suggestion=None, detail=None):  # noqa: E501
+    def __init__(self, url=None, suggestion=None, detail=None):
         """CheckResultItemsBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._url = None
         self._suggestion = None

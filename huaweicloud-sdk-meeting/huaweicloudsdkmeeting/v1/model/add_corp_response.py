@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AddCorpResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class AddCorpResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class AddCorpResponse(object):
         'value': 'value'
     }
 
-    def __init__(self, value=None):  # noqa: E501
+    def __init__(self, value=None):
         """AddCorpResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._value = None
         self.discriminator = None

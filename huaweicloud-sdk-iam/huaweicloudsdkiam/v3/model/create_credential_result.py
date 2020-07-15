@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateCredentialResult(object):
+
+
+
+class CreateCredentialResult:
 
 
     """
@@ -37,8 +40,10 @@ class CreateCredentialResult(object):
         'description': 'description'
     }
 
-    def __init__(self, create_time=None, access=None, secret=None, status=None, user_id=None, description=None):  # noqa: E501
+    def __init__(self, create_time=None, access=None, secret=None, status=None, user_id=None, description=None):
         """CreateCredentialResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._create_time = None
         self._access = None

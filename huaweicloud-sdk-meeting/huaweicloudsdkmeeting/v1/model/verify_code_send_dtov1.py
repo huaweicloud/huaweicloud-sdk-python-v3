@@ -6,7 +6,10 @@ import re
 import six
 
 
-class VerifyCodeSendDTOV1(object):
+
+
+
+class VerifyCodeSendDTOV1:
 
 
     """
@@ -31,8 +34,10 @@ class VerifyCodeSendDTOV1(object):
         'token': 'token'
     }
 
-    def __init__(self, user=None, send_method=None, token=None):  # noqa: E501
+    def __init__(self, user=None, send_method=None, token=None):
         """VerifyCodeSendDTOV1 - a model defined in huaweicloud sdk"""
+        
+        
 
         self._user = None
         self._send_method = None

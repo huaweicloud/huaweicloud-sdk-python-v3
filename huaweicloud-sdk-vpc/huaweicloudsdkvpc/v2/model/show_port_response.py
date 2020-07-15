@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowPortResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowPortResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ShowPortResponse(object):
         'port': 'port'
     }
 
-    def __init__(self, port=None):  # noqa: E501
+    def __init__(self, port=None):
         """ShowPortResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._port = None
         self.discriminator = None

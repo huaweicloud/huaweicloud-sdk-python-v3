@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateSubReq(object):
+
+
+
+class CreateSubReq:
 
 
     """
@@ -33,8 +36,10 @@ class CreateSubReq(object):
         'channel': 'channel'
     }
 
-    def __init__(self, subject=None, callbackurl=None, app_id=None, channel=None):  # noqa: E501
+    def __init__(self, subject=None, callbackurl=None, app_id=None, channel=None):
         """CreateSubReq - a model defined in huaweicloud sdk"""
+        
+        
 
         self._subject = None
         self._callbackurl = None

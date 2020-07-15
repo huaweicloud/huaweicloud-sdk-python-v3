@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowQuotasRequest(object):
+
+
+
+class ShowQuotasRequest:
 
 
     """
@@ -25,8 +28,10 @@ class ShowQuotasRequest(object):
     attribute_map = {
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self):
         """ShowQuotasRequest - a model defined in huaweicloud sdk"""
+        
+        
         self.discriminator = None
 
     def to_dict(self):

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PostPaidServerRootVolume(object):
+
+
+
+class PostPaidServerRootVolume:
 
 
     """
@@ -37,8 +40,10 @@ class PostPaidServerRootVolume(object):
         'extendparam': 'extendparam'
     }
 
-    def __init__(self, volumetype=None, size=None, hwpassthrough=False, cluster_type=None, cluster_id=None, extendparam=None):  # noqa: E501
+    def __init__(self, volumetype=None, size=None, hwpassthrough=False, cluster_type=None, cluster_id=None, extendparam=None):
         """PostPaidServerRootVolume - a model defined in huaweicloud sdk"""
+        
+        
 
         self._volumetype = None
         self._size = None

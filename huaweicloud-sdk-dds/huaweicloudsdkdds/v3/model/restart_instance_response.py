@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RestartInstanceResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class RestartInstanceResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class RestartInstanceResponse(object):
         'job_id': 'job_id'
     }
 
-    def __init__(self, job_id=None):  # noqa: E501
+    def __init__(self, job_id=None):
         """RestartInstanceResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._job_id = None
         self.discriminator = None

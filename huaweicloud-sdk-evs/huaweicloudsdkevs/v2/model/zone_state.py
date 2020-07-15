@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ZoneState(object):
+
+
+
+class ZoneState:
 
 
     """
@@ -27,8 +30,10 @@ class ZoneState(object):
         'available': 'available'
     }
 
-    def __init__(self, available=None):  # noqa: E501
+    def __init__(self, available=None):
         """ZoneState - a model defined in huaweicloud sdk"""
+        
+        
 
         self._available = None
         self.discriminator = None
@@ -40,7 +45,7 @@ class ZoneState(object):
     def available(self):
         """Gets the available of this ZoneState.
 
-        可用分区是否可用。 true表示可用 false表示不可用
+        可用分区是否可用。
 
         :return: The available of this ZoneState.
         :rtype: bool
@@ -51,7 +56,7 @@ class ZoneState(object):
     def available(self, available):
         """Sets the available of this ZoneState.
 
-        可用分区是否可用。 true表示可用 false表示不可用
+        可用分区是否可用。
 
         :param available: The available of this ZoneState.
         :type: bool

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class LinksSelf(object):
+
+
+
+class LinksSelf:
 
 
     """
@@ -27,8 +30,10 @@ class LinksSelf(object):
         '_self': 'self'
     }
 
-    def __init__(self, _self=None):  # noqa: E501
+    def __init__(self, _self=None):
         """LinksSelf - a model defined in huaweicloud sdk"""
+        
+        
 
         self.__self = None
         self.discriminator = None

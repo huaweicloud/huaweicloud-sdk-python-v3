@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PrePaidServerEipExtendParam(object):
+
+
+
+class PrePaidServerEipExtendParam:
 
 
     """
@@ -27,8 +30,10 @@ class PrePaidServerEipExtendParam(object):
         'charging_mode': 'chargingMode'
     }
 
-    def __init__(self, charging_mode=None):  # noqa: E501
+    def __init__(self, charging_mode=None):
         """PrePaidServerEipExtendParam - a model defined in huaweicloud sdk"""
+        
+        
 
         self._charging_mode = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class NovaServerFault(object):
+
+
+
+class NovaServerFault:
 
 
     """
@@ -33,8 +36,10 @@ class NovaServerFault(object):
         'details': 'details'
     }
 
-    def __init__(self, code=None, created=None, message=None, details=None):  # noqa: E501
+    def __init__(self, code=None, created=None, message=None, details=None):
         """NovaServerFault - a model defined in huaweicloud sdk"""
+        
+        
 
         self._code = None
         self._created = None

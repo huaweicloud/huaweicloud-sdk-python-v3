@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchDeleteVolumeTagsRequestBody(object):
+
+
+
+class BatchDeleteVolumeTagsRequestBody:
 
 
     """
@@ -29,8 +32,10 @@ class BatchDeleteVolumeTagsRequestBody(object):
         'tags': 'tags'
     }
 
-    def __init__(self, action='delete', tags=None):  # noqa: E501
+    def __init__(self, action='delete', tags=None):
         """BatchDeleteVolumeTagsRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._action = None
         self._tags = None

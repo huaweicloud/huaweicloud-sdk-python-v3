@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AvailableZones(object):
+
+
+
+class AvailableZones:
 
 
     """
@@ -35,8 +38,10 @@ class AvailableZones(object):
         'resource_availability': 'resource_availability'
     }
 
-    def __init__(self, code=None, port=None, name=None, id=None, resource_availability=None):  # noqa: E501
+    def __init__(self, code=None, port=None, name=None, id=None, resource_availability=None):
         """AvailableZones - a model defined in huaweicloud sdk"""
+        
+        
 
         self._code = None
         self._port = None

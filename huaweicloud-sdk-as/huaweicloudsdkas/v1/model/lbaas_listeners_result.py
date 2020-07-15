@@ -6,7 +6,10 @@ import re
 import six
 
 
-class LbaasListenersResult(object):
+
+
+
+class LbaasListenersResult:
 
 
     """
@@ -33,8 +36,10 @@ class LbaasListenersResult(object):
         'weight': 'weight'
     }
 
-    def __init__(self, listeners_id=None, pool_id=None, protocol_port=None, weight=None):  # noqa: E501
+    def __init__(self, listeners_id=None, pool_id=None, protocol_port=None, weight=None):
         """LbaasListenersResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._listeners_id = None
         self._pool_id = None

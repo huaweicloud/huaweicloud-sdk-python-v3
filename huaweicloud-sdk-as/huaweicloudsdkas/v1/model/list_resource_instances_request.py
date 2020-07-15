@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListResourceInstancesRequest(object):
+
+
+
+class ListResourceInstancesRequest:
 
 
     """
@@ -29,8 +32,10 @@ class ListResourceInstancesRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, resource_type=None, body=None):  # noqa: E501
+    def __init__(self, resource_type=None, body=None):
         """ListResourceInstancesRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._resource_type = None
         self._body = None

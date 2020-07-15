@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListCustomPoliciesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListCustomPoliciesResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class ListCustomPoliciesResponse(object):
         'roles': 'roles'
     }
 
-    def __init__(self, links=None, roles=None):  # noqa: E501
+    def __init__(self, links=None, roles=None):
         """ListCustomPoliciesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._links = None
         self._roles = None

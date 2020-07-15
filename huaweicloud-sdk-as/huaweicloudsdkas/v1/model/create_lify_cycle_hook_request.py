@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateLifyCycleHookRequest(object):
+
+
+
+class CreateLifyCycleHookRequest:
 
 
     """
@@ -29,8 +32,10 @@ class CreateLifyCycleHookRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, scaling_group_id=None, body=None):  # noqa: E501
+    def __init__(self, scaling_group_id=None, body=None):
         """CreateLifyCycleHookRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._scaling_group_id = None
         self._body = None

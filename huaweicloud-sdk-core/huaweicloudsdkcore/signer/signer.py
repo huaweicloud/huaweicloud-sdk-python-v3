@@ -59,9 +59,9 @@ EncodeUtf8 = "utf-8"
 BasicDateFormat = "%Y%m%dT%H%M%SZ"
 Algorithm = "SDK-HMAC-SHA256"
 HeaderXDate = "X-Sdk-Date"
-HeaderHost = "host"
+HeaderHost = "Host"
 HeaderAuthorization = "Authorization"
-HeaderContentSha256 = "x-sdk-content-sha256"
+HeaderContentSha256 = "X-Sdk-Content-Sha256"
 
 
 def url_encode(s):

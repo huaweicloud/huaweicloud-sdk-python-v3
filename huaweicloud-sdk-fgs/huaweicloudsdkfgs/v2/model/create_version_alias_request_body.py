@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateVersionAliasRequestBody(object):
+
+
+
+class CreateVersionAliasRequestBody:
 
 
     """
@@ -33,8 +36,10 @@ class CreateVersionAliasRequestBody(object):
         'additional_version_weights': 'additional_version_weights'
     }
 
-    def __init__(self, name=None, version=None, description=None, additional_version_weights=None):  # noqa: E501
+    def __init__(self, name=None, version=None, description=None, additional_version_weights=None):
         """CreateVersionAliasRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._version = None

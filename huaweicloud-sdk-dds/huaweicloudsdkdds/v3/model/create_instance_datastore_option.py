@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateInstanceDatastoreOption(object):
+
+
+
+class CreateInstanceDatastoreOption:
 
 
     """
@@ -31,8 +34,10 @@ class CreateInstanceDatastoreOption(object):
         'storage_engine': 'storage_engine'
     }
 
-    def __init__(self, type=None, version=None, storage_engine=None):  # noqa: E501
+    def __init__(self, type=None, version=None, storage_engine=None):
         """CreateInstanceDatastoreOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._type = None
         self._version = None

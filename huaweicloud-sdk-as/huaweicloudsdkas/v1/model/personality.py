@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Personality(object):
+
+
+
+class Personality:
 
 
     """
@@ -29,8 +32,10 @@ class Personality(object):
         'content': 'content'
     }
 
-    def __init__(self, path=None, content=None):  # noqa: E501
+    def __init__(self, path=None, content=None):
         """Personality - a model defined in huaweicloud sdk"""
+        
+        
 
         self._path = None
         self._content = None

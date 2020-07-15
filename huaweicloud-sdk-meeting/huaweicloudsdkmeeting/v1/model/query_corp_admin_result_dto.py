@@ -6,7 +6,10 @@ import re
 import six
 
 
-class QueryCorpAdminResultDTO(object):
+
+
+
+class QueryCorpAdminResultDTO:
 
 
     """
@@ -45,8 +48,10 @@ class QueryCorpAdminResultDTO(object):
         'dept': 'dept'
     }
 
-    def __init__(self, id=None, account=None, name=None, admin_type=None, email=None, phone=None, country=None, menu_template_id=None, menu_template_name=None, dept=None):  # noqa: E501
+    def __init__(self, id=None, account=None, name=None, admin_type=None, email=None, phone=None, country=None, menu_template_id=None, menu_template_name=None, dept=None):
         """QueryCorpAdminResultDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._account = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Privateip(object):
+
+
+
+class Privateip:
 
 
     """
@@ -37,8 +40,10 @@ class Privateip(object):
         'ip_address': 'ip_address'
     }
 
-    def __init__(self, status=None, id=None, subnet_id=None, tenant_id=None, device_owner=None, ip_address=None):  # noqa: E501
+    def __init__(self, status=None, id=None, subnet_id=None, tenant_id=None, device_owner=None, ip_address=None):
         """Privateip - a model defined in huaweicloud sdk"""
+        
+        
 
         self._status = None
         self._id = None

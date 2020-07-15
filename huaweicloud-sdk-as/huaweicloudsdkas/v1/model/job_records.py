@@ -6,7 +6,10 @@ import re
 import six
 
 
-class JobRecords(object):
+
+
+
+class JobRecords:
 
 
     """
@@ -41,8 +44,10 @@ class JobRecords(object):
         'job_status': 'job_status'
     }
 
-    def __init__(self, job_name=None, record_type=None, record_time=None, request=None, response=None, code=None, message=None, job_status=None):  # noqa: E501
+    def __init__(self, job_name=None, record_type=None, record_time=None, request=None, response=None, code=None, message=None, job_status=None):
         """JobRecords - a model defined in huaweicloud sdk"""
+        
+        
 
         self._job_name = None
         self._record_type = None

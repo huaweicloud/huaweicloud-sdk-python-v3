@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateDataImageRequestBody(object):
+
+
+
+class CreateDataImageRequestBody:
 
 
     """
@@ -43,8 +46,10 @@ class CreateDataImageRequestBody(object):
         'tags': 'tags'
     }
 
-    def __init__(self, cmk_id=None, description=None, enterprise_project_id='0', image_tags=None, image_url=None, min_disk=None, name=None, os_type=None, tags=None):  # noqa: E501
+    def __init__(self, cmk_id=None, description=None, enterprise_project_id='0', image_tags=None, image_url=None, min_disk=None, name=None, os_type=None, tags=None):
         """CreateDataImageRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._cmk_id = None
         self._description = None

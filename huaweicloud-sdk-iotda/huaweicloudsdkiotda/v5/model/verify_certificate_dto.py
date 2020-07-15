@@ -6,7 +6,10 @@ import re
 import six
 
 
-class VerifyCertificateDTO(object):
+
+
+
+class VerifyCertificateDTO:
 
 
     """
@@ -27,8 +30,10 @@ class VerifyCertificateDTO(object):
         'verify_content': 'verify_content'
     }
 
-    def __init__(self, verify_content=None):  # noqa: E501
+    def __init__(self, verify_content=None):
         """VerifyCertificateDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._verify_content = None
         self.discriminator = None

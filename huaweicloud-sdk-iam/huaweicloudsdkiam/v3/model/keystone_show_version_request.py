@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneShowVersionRequest(object):
+
+
+
+class KeystoneShowVersionRequest:
 
 
     """
@@ -25,8 +28,10 @@ class KeystoneShowVersionRequest(object):
     attribute_map = {
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self):
         """KeystoneShowVersionRequest - a model defined in huaweicloud sdk"""
+        
+        
         self.discriminator = None
 
     def to_dict(self):

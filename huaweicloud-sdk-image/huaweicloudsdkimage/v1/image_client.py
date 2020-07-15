@@ -11,6 +11,7 @@ import six
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ImageClient(Client):
@@ -55,15 +56,10 @@ class ImageClient(Client):
         分析并识别图片中包含的政治人物、明星及网红人物，返回人物信息及人脸坐标。
 
         :param RunCelebrityRecognitionRequest request
-        :return: tuple(RunCelebrityRecognitionResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: RunCelebrityRecognitionResponse
         """
 
         all_params = ['body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -77,24 +73,25 @@ class ImageClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1.0/image/celebrity-recognition', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1.0/image/celebrity-recognition',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='RunCelebrityRecognitionResponse',
@@ -118,15 +115,10 @@ class ImageClient(Client):
         自然图像的语义内容非常丰富，一个图像包含多个标签内容，图像标签服务准确识别自然图片中数百种场景、上千种通用物体及其属性，让智能相册管理、照片检索和分类、基于场景内容或者物体的广告推荐等功能更加直观。使用时用户发送待处理图片，返回图片标签内容及相应置信度。
 
         :param RunImageTaggingRequest request
-        :return: tuple(RunImageTaggingResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: RunImageTaggingResponse
         """
 
         all_params = ['body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -140,24 +132,25 @@ class ImageClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1.0/image/tagging', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1.0/image/tagging',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='RunImageTaggingResponse',
@@ -187,6 +180,14 @@ class ImageClient(Client):
         :return:
             Return the response directly.
         """
-        return self.do_http_request(method, resource_path, path_params,
-                                    query_params, header_params, body, post_params,
-                                    response_type, collection_formats, request_type)
+        return self.do_http_request(
+            method=method,
+            resource_path=resource_path,
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body,
+            post_params=post_params,
+            response_type=response_type,
+            collection_formats=collection_formats,
+            request_type=request_type)

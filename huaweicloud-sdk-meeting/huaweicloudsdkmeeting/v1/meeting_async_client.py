@@ -11,6 +11,7 @@ import six
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class MeetingAsyncClient(Client):
@@ -55,15 +56,10 @@ class MeetingAsyncClient(Client):
         创建企业，默认管理员及分配资源。
 
         :param AddCorpRequest request
-        :return: tuple(AddCorpResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: AddCorpResponse
         """
 
         all_params = ['corp_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -81,22 +77,25 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/sp/corp', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/sp/corp',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='AddCorpResponse',
@@ -110,7 +109,7 @@ class MeetingAsyncClient(Client):
         企业默认管理员添加企业普通管理员
 
         :param AddCorpAdminRequest request
-        :return: None
+        :return: AddCorpAdminResponse
         """
         return self.add_corp_admin_with_http_info(request)
 
@@ -120,15 +119,10 @@ class MeetingAsyncClient(Client):
         企业默认管理员添加企业普通管理员
 
         :param AddCorpAdminRequest request
-        :return: None
+        :return: AddCorpAdminResponse
         """
 
         all_params = ['admin_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -146,23 +140,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/admin', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/admin',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='AddCorpAdminResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -183,15 +182,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口添加部门，最多支持10级部门，每级子部门最多支持100个，默认企业最大部门数量为3000个。
 
         :param AddDepartmentRequest request
-        :return: tuple(AddDepartmentResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: AddDepartmentResponse
         """
 
         all_params = ['dept_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -209,22 +203,25 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/dept', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/dept',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='AddDepartmentResponse',
@@ -248,15 +245,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口添加硬终端。
 
         :param AddDeviceRequest request
-        :return: tuple(AddDeviceResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: AddDeviceResponse
         """
 
         all_params = ['device_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -274,22 +266,25 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/device', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/device',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='AddDeviceResponse',
@@ -303,7 +298,7 @@ class MeetingAsyncClient(Client):
         企业新增资源发放。优化适配，该接口同时支持修改，带resourceId后会判断该资源是否存在，存在即修改（支持修改的参数见修改接口），否则按新增处理
 
         :param AddResourceRequest request
-        :return: None
+        :return: AddResourceResponse
         """
         return self.add_resource_with_http_info(request)
 
@@ -313,15 +308,10 @@ class MeetingAsyncClient(Client):
         企业新增资源发放。优化适配，该接口同时支持修改，带resourceId后会判断该资源是否存在，存在即修改（支持修改的参数见修改接口），否则按新增处理
 
         :param AddResourceRequest request
-        :return: None
+        :return: AddResourceResponse
         """
 
         all_params = ['corp_id', 'resource_list', 'x_request_id', 'accept_language', 'force_edit_flag']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -343,23 +333,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/sp/corp/{corp_id}/resource', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/sp/corp/{corp_id}/resource',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='AddResourceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -380,15 +375,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口添加企业用户。
 
         :param AddUserRequest request
-        :return: tuple(AddUserResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: AddUserResponse
         """
 
         all_params = ['user_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -406,25 +396,91 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/member', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/member',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='AddUserResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def allow_guest_unmute_async(self, request):
+        """与会者自己解除静音
+
+        决定与会者是否可以自己解除静音。
+
+        :param AllowGuestUnmuteRequest request
+        :return: AllowGuestUnmuteResponse
+        """
+        return self.allow_guest_unmute_with_http_info(request)
+
+    def allow_guest_unmute_with_http_info(self, request):
+        """与会者自己解除静音
+
+        决定与会者是否可以自己解除静音。
+
+        :param AllowGuestUnmuteRequest request
+        :return: AllowGuestUnmuteResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization', 'req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/mute/guestUnMute',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AllowGuestUnmuteResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -435,7 +491,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口将云会议室分配给用户、硬终端（当前仅支持分配TE10、TE20、HUAWEI Board、HUAWEI Bar 500及HUAWEI Box系列硬件终端）。云会议室分配给硬件终端后，需要重启或重新激活硬件终端。若需要管理云会议室、预约会议、录制会议或进行完整的会控操作，请同时将该云会议室分配给会议用户。
 
         :param AssociateVmrRequest request
-        :return: None
+        :return: AssociateVmrResponse
         """
         return self.associate_vmr_with_http_info(request)
 
@@ -445,15 +501,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口将云会议室分配给用户、硬终端（当前仅支持分配TE10、TE20、HUAWEI Board、HUAWEI Bar 500及HUAWEI Box系列硬件终端）。云会议室分配给硬件终端后，需要重启或重新激活硬件终端。若需要管理云会议室、预约会议、录制会议或进行完整的会控操作，请同时将该云会议室分配给会议用户。
 
         :param AssociateVmrRequest request
-        :return: None
+        :return: AssociateVmrResponse
         """
 
         all_params = ['account', 'assign_list', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -473,23 +524,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/vmr/assign-to-member/{account}', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/vmr/assign-to-member/{account}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='AssociateVmrResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -500,7 +556,7 @@ class MeetingAsyncClient(Client):
         批量删除企业管理员
 
         :param BatchDeleteCorpAdminsRequest request
-        :return: None
+        :return: BatchDeleteCorpAdminsResponse
         """
         return self.batch_delete_corp_admins_with_http_info(request)
 
@@ -510,15 +566,10 @@ class MeetingAsyncClient(Client):
         批量删除企业管理员
 
         :param BatchDeleteCorpAdminsRequest request
-        :return: None
+        :return: BatchDeleteCorpAdminsResponse
         """
 
         all_params = ['del_list', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -536,23 +587,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/admin/delete', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/admin/delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='BatchDeleteCorpAdminsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -563,7 +619,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口批量删除终端，返回删除失败的列表。
 
         :param BatchDeleteDevicesRequest request
-        :return: None
+        :return: BatchDeleteDevicesResponse
         """
         return self.batch_delete_devices_with_http_info(request)
 
@@ -573,15 +629,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口批量删除终端，返回删除失败的列表。
 
         :param BatchDeleteDevicesRequest request
-        :return: None
+        :return: BatchDeleteDevicesResponse
         """
 
         all_params = ['del_list', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -599,23 +650,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/device/delete', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/device/delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='BatchDeleteDevicesResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -626,7 +682,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口批量删除企业用户，全量成功或全量失败。
 
         :param BatchDeleteUsersRequest request
-        :return: None
+        :return: BatchDeleteUsersResponse
         """
         return self.batch_delete_users_with_http_info(request)
 
@@ -636,15 +692,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口批量删除企业用户，全量成功或全量失败。
 
         :param BatchDeleteUsersRequest request
-        :return: None
+        :return: BatchDeleteUsersResponse
         """
 
         all_params = ['del_list', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -662,23 +713,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/member/delete', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/member/delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='BatchDeleteUsersResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -689,7 +745,7 @@ class MeetingAsyncClient(Client):
         批量修改终端状态
 
         :param BatchUpdateDevicesStatusRequest request
-        :return: None
+        :return: BatchUpdateDevicesStatusResponse
         """
         return self.batch_update_devices_status_with_http_info(request)
 
@@ -699,15 +755,10 @@ class MeetingAsyncClient(Client):
         批量修改终端状态
 
         :param BatchUpdateDevicesStatusRequest request
-        :return: None
+        :return: BatchUpdateDevicesStatusResponse
         """
 
         all_params = ['value', 'sn_list', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -727,23 +778,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/device/status/{value}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/device/status/{value}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='BatchUpdateDevicesStatusResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -754,7 +810,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口批量修改用户状态，当用户账号数资源或者第三方电子白板资源到期后，若企业内对应资源的用户账号超过数量后会被系统随机自动停用，此时可通过该接口修改用户的状态。
 
         :param BatchUpdateUserStatusRequest request
-        :return: None
+        :return: BatchUpdateUserStatusResponse
         """
         return self.batch_update_user_status_with_http_info(request)
 
@@ -764,15 +820,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口批量修改用户状态，当用户账号数资源或者第三方电子白板资源到期后，若企业内对应资源的用户账号超过数量后会被系统随机自动停用，此时可通过该接口修改用户的状态。
 
         :param BatchUpdateUserStatusRequest request
-        :return: None
+        :return: BatchUpdateUserStatusResponse
         """
 
         all_params = ['value', 'account_list', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -792,23 +843,154 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/dcs/corp/member/status/{value}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchUpdateUserStatusResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def broadcast_participant_async(self, request):
+        """广播会场
+
+        同一时间，只允许一个与会者被广播。
+
+        :param BroadcastParticipantRequest request
+        :return: BroadcastParticipantResponse
+        """
+        return self.broadcast_participant_with_http_info(request)
+
+    def broadcast_participant_with_http_info(self, request):
+        """广播会场
+
+        同一时间，只允许一个与会者被广播。
+
+        :param BroadcastParticipantRequest request
+        :return: BroadcastParticipantResponse
+        """
+
+        all_params = ['conference_id', 'participant_id', 'x_conference_authorization']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'participant_id' in local_var_params:
+            query_params.append(('participantID', local_var_params['participant_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/member/status/{value}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/mmc/control/conferences/participants/broadcast',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='BroadcastParticipantResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def cancel_meeting_async(self, request):
+        """取消预约会议
+
+        取消预约会议。
+
+        :param CancelMeetingRequest request
+        :return: CancelMeetingResponse
+        """
+        return self.cancel_meeting_with_http_info(request)
+
+    def cancel_meeting_with_http_info(self, request):
+        """取消预约会议
+
+        取消预约会议。
+
+        :param CancelMeetingRequest request
+        :return: CancelMeetingResponse
+        """
+
+        all_params = ['conference_id', 'user_uuid', 'type', 'x_authorization_type', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CancelMeetingResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -829,15 +1011,10 @@ class MeetingAsyncClient(Client):
         该接口提供校验滑块验证码。服务器收到请求，返回校验结果。用户在前台界面通过滑块操作匹配图形，使得抠图和原图吻合。然后服务器进行校验滑块验证码。
 
         :param CheckSlideVerifyCodeRequest request
-        :return: tuple(CheckSlideVerifyCodeResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CheckSlideVerifyCodeResponse
         """
 
         all_params = ['slide_verify_code_check_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -855,24 +1032,25 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/acs/auth/slideverifycode/check', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/acs/auth/slideverifycode/check',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CheckSlideVerifyCodeResponse',
@@ -896,15 +1074,10 @@ class MeetingAsyncClient(Client):
         该接口提供校验token合法性功能。服务器收到请求后，验证token合法性并返回结果。如果参数needGenNewToken为true时，生成新的token并返回。
 
         :param CheckTokenRequest request
-        :return: tuple(CheckTokenResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CheckTokenResponse
         """
 
         all_params = ['validate_token_req_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -922,22 +1095,25 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
+        header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/acs/token/validate', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/acs/token/validate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CheckTokenResponse',
@@ -951,7 +1127,7 @@ class MeetingAsyncClient(Client):
         企业用户通过该接口校验手机和邮箱对应的验证码，一分钟内记录尝试次数不得超过5次。
 
         :param CheckVeriCodeForUpdateUserInfoRequest request
-        :return: None
+        :return: CheckVeriCodeForUpdateUserInfoResponse
         """
         return self.check_veri_code_for_update_user_info_with_http_info(request)
 
@@ -961,15 +1137,10 @@ class MeetingAsyncClient(Client):
         企业用户通过该接口校验手机和邮箱对应的验证码，一分钟内记录尝试次数不得超过5次。
 
         :param CheckVeriCodeForUpdateUserInfoRequest request
-        :return: None
+        :return: CheckVeriCodeForUpdateUserInfoResponse
         """
 
         all_params = ['verification_code_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -987,23 +1158,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/member/verification-code/verify', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/member/verification-code/verify',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='CheckVeriCodeForUpdateUserInfoResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1024,15 +1200,10 @@ class MeetingAsyncClient(Client):
         该接口提供校验验证码，服务器收到请求，返回结果。
 
         :param CheckVerifyCodeRequest request
-        :return: tuple(CheckVerifyCodeResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CheckVerifyCodeResponse
         """
 
         all_params = ['verify_code_check_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1050,27 +1221,280 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/acs/verifycode/check', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/acs/verifycode/check',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CheckVerifyCodeResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_anonymous_auth_random_async(self, request):
+        """匿名用户会议鉴权
+
+        未登陆终端，通过输入会议ID进行会议鉴权，返回鉴权随机数。如果需要密码则返回需要会议密码错误码，然后终端弹出输入会议ID输入框，用户输入密码后，终端再次调用该接口进行鉴权。
+
+        :param CreateAnonymousAuthRandomRequest request
+        :return: CreateAnonymousAuthRandomResponse
+        """
+        return self.create_anonymous_auth_random_with_http_info(request)
+
+    def create_anonymous_auth_random_with_http_info(self, request):
+        """匿名用户会议鉴权
+
+        未登陆终端，通过输入会议ID进行会议鉴权，返回鉴权随机数。如果需要密码则返回需要会议密码错误码，然后终端弹出输入会议ID输入框，用户输入密码后，终端再次调用该接口进行鉴权。
+
+        :param CreateAnonymousAuthRandomRequest request
+        :return: CreateAnonymousAuthRandomResponse
+        """
+
+        all_params = ['conference_id', 'x_password']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_password' in local_var_params:
+            header_params['X-Password'] = local_var_params['x_password']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences/anonymous/auth',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateAnonymousAuthRandomResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_conf_token_async(self, request):
+        """获取会控Token
+
+        获取会控授权令牌，然后会议会被拉起。
+
+        :param CreateConfTokenRequest request
+        :return: CreateConfTokenResponse
+        """
+        return self.create_conf_token_with_http_info(request)
+
+    def create_conf_token_with_http_info(self, request):
+        """获取会控Token
+
+        获取会控授权令牌，然后会议会被拉起。
+
+        :param CreateConfTokenRequest request
+        :return: CreateConfTokenResponse
+        """
+
+        all_params = ['conference_id', 'x_password', 'x_login_type', 'x_conference_authorization', 'x_nonce']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+        if 'x_password' in local_var_params:
+            header_params['X-Password'] = local_var_params['x_password']
+        if 'x_login_type' in local_var_params:
+            header_params['X-Login-Type'] = local_var_params['x_login_type']
+        if 'x_nonce' in local_var_params:
+            header_params['X-Nonce'] = local_var_params['x_nonce']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/token',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateConfTokenResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_meeting_async(self, request):
+        """创建会议
+
+        您可根据需要创建立即会议和预约会议。
+
+        :param CreateMeetingRequest request
+        :return: CreateMeetingResponse
+        """
+        return self.create_meeting_with_http_info(request)
+
+    def create_meeting_with_http_info(self, request):
+        """创建会议
+
+        您可根据需要创建立即会议和预约会议。
+
+        :param CreateMeetingRequest request
+        :return: CreateMeetingResponse
+        """
+
+        all_params = ['req_body', 'user_uuid', 'x_authorization_type', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateMeetingResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_attendees_async(self, request):
+        """删除与会者
+
+        删除与会者。
+
+        :param DeleteAttendeesRequest request
+        :return: DeleteAttendeesResponse
+        """
+        return self.delete_attendees_with_http_info(request)
+
+    def delete_attendees_with_http_info(self, request):
+        """删除与会者
+
+        删除与会者。
+
+        :param DeleteAttendeesRequest request
+        :return: DeleteAttendeesResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization', 'req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/attendees/delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteAttendeesResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1081,7 +1505,7 @@ class MeetingAsyncClient(Client):
         删除企业
 
         :param DeleteCorpRequest request
-        :return: None
+        :return: DeleteCorpResponse
         """
         return self.delete_corp_with_http_info(request)
 
@@ -1091,15 +1515,10 @@ class MeetingAsyncClient(Client):
         删除企业
 
         :param DeleteCorpRequest request
-        :return: None
+        :return: DeleteCorpResponse
         """
 
         all_params = ['id', 'x_request_id', 'accept_language', 'force_delete']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1121,21 +1540,24 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/sp/corp/{id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/sp/corp/{id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteCorpResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1146,7 +1568,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口删除企业的专用云会议室
 
         :param DeleteCorpVmrRequest request
-        :return: None
+        :return: DeleteCorpVmrResponse
         """
         return self.delete_corp_vmr_with_http_info(request)
 
@@ -1156,15 +1578,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口删除企业的专用云会议室
 
         :param DeleteCorpVmrRequest request
-        :return: None
+        :return: DeleteCorpVmrResponse
         """
 
         all_params = ['del_list', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1182,23 +1599,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/vmr/delete', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/vmr/delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteCorpVmrResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1209,7 +1631,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口删除部门。
 
         :param DeleteDepartmentRequest request
-        :return: None
+        :return: DeleteDepartmentResponse
         """
         return self.delete_department_with_http_info(request)
 
@@ -1219,15 +1641,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口删除部门。
 
         :param DeleteDepartmentRequest request
-        :return: None
+        :return: DeleteDepartmentResponse
         """
 
         all_params = ['dept_code', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1247,21 +1664,87 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/dept/{dept_code}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/dept/{dept_code}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteDepartmentResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_recordings_async(self, request):
+        """批量删除录制
+
+        批量删除录制。
+
+        :param DeleteRecordingsRequest request
+        :return: DeleteRecordingsResponse
+        """
+        return self.delete_recordings_with_http_info(request)
+
+    def delete_recordings_with_http_info(self, request):
+        """批量删除录制
+
+        批量删除录制。
+
+        :param DeleteRecordingsRequest request
+        :return: DeleteRecordingsResponse
+        """
+
+        all_params = ['conf_uui_ds', 'user_uuid', 'x_authorization_type', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conf_uui_ds' in local_var_params:
+            query_params.append(('confUUIDs', local_var_params['conf_uui_ds']))
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/record/files',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteRecordingsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1272,7 +1755,7 @@ class MeetingAsyncClient(Client):
         企业删除资源项，删除资源项后，企业资源总数会自动减少
 
         :param DeleteResourceRequest request
-        :return: None
+        :return: DeleteResourceResponse
         """
         return self.delete_resource_with_http_info(request)
 
@@ -1282,15 +1765,10 @@ class MeetingAsyncClient(Client):
         企业删除资源项，删除资源项后，企业资源总数会自动减少
 
         :param DeleteResourceRequest request
-        :return: None
+        :return: DeleteResourceResponse
         """
 
         all_params = ['corp_id', 'resource_id_list', 'x_request_id', 'accept_language', 'force_edit_flag']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1312,23 +1790,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/sp/corp/{corp_id}/resource/delete', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/sp/corp/{corp_id}/resource/delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteResourceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1339,7 +1822,7 @@ class MeetingAsyncClient(Client):
         给企业用户回收vmr，需要做好纵向越权校验，避免企业管理员给其他企业的账号分配
 
         :param DisassociateVmrRequest request
-        :return: None
+        :return: DisassociateVmrResponse
         """
         return self.disassociate_vmr_with_http_info(request)
 
@@ -1349,15 +1832,10 @@ class MeetingAsyncClient(Client):
         给企业用户回收vmr，需要做好纵向越权校验，避免企业管理员给其他企业的账号分配
 
         :param DisassociateVmrRequest request
-        :return: None
+        :return: DisassociateVmrResponse
         """
 
         all_params = ['account', 'recycle_list', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1377,23 +1855,794 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/vmr/recycle-from-member/{account}', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/vmr/recycle-from-member/{account}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DisassociateVmrResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def edit_meeting_async(self, request):
+        """编辑预约会议
+
+        编辑预约会议。会议开始后，不能被编辑。
+
+        :param EditMeetingRequest request
+        :return: EditMeetingResponse
+        """
+        return self.edit_meeting_with_http_info(request)
+
+    def edit_meeting_with_http_info(self, request):
+        """编辑预约会议
+
+        编辑预约会议。会议开始后，不能被编辑。
+
+        :param EditMeetingRequest request
+        :return: EditMeetingResponse
+        """
+
+        all_params = ['conference_id', 'req_body', 'user_uuid', 'x_authorization_type', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='EditMeetingResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def hand_async(self, request):
+        """举手
+
+        所有来宾可以举手。来宾举手后，可以取消自己的举手。主持人可以取消所有来宾的举手。
+
+        :param HandRequest request
+        :return: HandResponse
+        """
+        return self.hand_with_http_info(request)
+
+    def hand_with_http_info(self, request):
+        """举手
+
+        所有来宾可以举手。来宾举手后，可以取消自己的举手。主持人可以取消所有来宾的举手。
+
+        :param HandRequest request
+        :return: HandResponse
+        """
+
+        all_params = ['conference_id', 'participant_id', 'x_conference_authorization', 'rest_hands_up_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'participant_id' in local_var_params:
+            query_params.append(('participantID', local_var_params['participant_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/participants/hands',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='HandResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def hang_up_async(self, request):
+        """挂断与会者
+
+        挂断正在通话中的与会者。
+
+        :param HangUpRequest request
+        :return: HangUpResponse
+        """
+        return self.hang_up_with_http_info(request)
+
+    def hang_up_with_http_info(self, request):
+        """挂断与会者
+
+        挂断正在通话中的与会者。
+
+        :param HangUpRequest request
+        :return: HangUpResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization', 'req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/participants/delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='HangUpResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def invite_participant_async(self, request):
+        """邀请与会者
+
+        邀请与会者加入会议。
+
+        :param InviteParticipantRequest request
+        :return: InviteParticipantResponse
+        """
+        return self.invite_participant_with_http_info(request)
+
+    def invite_participant_with_http_info(self, request):
+        """邀请与会者
+
+        邀请与会者加入会议。
+
+        :param InviteParticipantRequest request
+        :return: InviteParticipantResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization', 'req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/participants',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='InviteParticipantResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def live_async(self, request):
+        """启停会议直播
+
+        启动或停止会议直播。
+
+        :param LiveRequest request
+        :return: LiveResponse
+        """
+        return self.live_with_http_info(request)
+
+    def live_with_http_info(self, request):
+        """启停会议直播
+
+        启动或停止会议直播。
+
+        :param LiveRequest request
+        :return: LiveResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization', 'rest_set_live_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/live',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='LiveResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def lock_meeting_async(self, request):
+        """锁定会议
+
+        锁定或解锁会议。锁定会议后，不允许与会者加入会议。
+
+        :param LockMeetingRequest request
+        :return: LockMeetingResponse
+        """
+        return self.lock_meeting_with_http_info(request)
+
+    def lock_meeting_with_http_info(self, request):
+        """锁定会议
+
+        锁定或解锁会议。锁定会议后，不允许与会者加入会议。
+
+        :param LockMeetingRequest request
+        :return: LockMeetingResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization', 'rest_lock_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/lock',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='LockMeetingResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def lock_view_async(self, request):
+        """锁定会场视频源
+
+        锁定或者解锁某在线会场的视频源。
+
+        :param LockViewRequest request
+        :return: LockViewResponse
+        """
+        return self.lock_view_with_http_info(request)
+
+    def lock_view_with_http_info(self, request):
+        """锁定会场视频源
+
+        锁定或者解锁某在线会场的视频源。
+
+        :param LockViewRequest request
+        :return: LockViewResponse
+        """
+
+        all_params = ['conference_id', 'participant_id', 'x_conference_authorization', 'req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'participant_id' in local_var_params:
+            query_params.append(('participantID', local_var_params['participant_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/lockView',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='LockViewResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def mute_meeting_async(self, request):
+        """全场静音
+
+        主持人可以通过该接口静音/取消静音整个会议所有与会者（主持人除外）。
+
+        :param MuteMeetingRequest request
+        :return: MuteMeetingResponse
+        """
+        return self.mute_meeting_with_http_info(request)
+
+    def mute_meeting_with_http_info(self, request):
+        """全场静音
+
+        主持人可以通过该接口静音/取消静音整个会议所有与会者（主持人除外）。
+
+        :param MuteMeetingRequest request
+        :return: MuteMeetingResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization', 'rest_mute_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/mute',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='MuteMeetingResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def mute_participant_async(self, request):
+        """静音与会者
+
+        主持人可以静音/取消静音任意与会者，来宾也可静音/取消静音自己。
+
+        :param MuteParticipantRequest request
+        :return: MuteParticipantResponse
+        """
+        return self.mute_participant_with_http_info(request)
+
+    def mute_participant_with_http_info(self, request):
+        """静音与会者
+
+        主持人可以静音/取消静音任意与会者，来宾也可静音/取消静音自己。
+
+        :param MuteParticipantRequest request
+        :return: MuteParticipantResponse
+        """
+
+        all_params = ['conference_id', 'participant_id', 'x_conference_authorization', 'rest_mute_participant_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'participant_id' in local_var_params:
+            query_params.append(('participantID', local_var_params['participant_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/participants/mute',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='MuteParticipantResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def prolong_meeting_async(self, request):
+        """延长会议
+
+        延长会议。
+
+        :param ProlongMeetingRequest request
+        :return: ProlongMeetingResponse
+        """
+        return self.prolong_meeting_with_http_info(request)
+
+    def prolong_meeting_with_http_info(self, request):
+        """延长会议
+
+        延长会议。
+
+        :param ProlongMeetingRequest request
+        :return: ProlongMeetingResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization', 'rest_prolong_dur_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/duration',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ProlongMeetingResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def record_async(self, request):
+        """启停会议录制
+
+        启动或停止会议录制。
+
+        :param RecordRequest request
+        :return: RecordResponse
+        """
+        return self.record_with_http_info(request)
+
+    def record_with_http_info(self, request):
+        """启停会议录制
+
+        启动或停止会议录制。
+
+        :param RecordRequest request
+        :return: RecordResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization', 'rest_set_record_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/record',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecordResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def rename_participant_async(self, request):
+        """重命名与会者
+
+        重命名某个与会者。
+
+        :param RenameParticipantRequest request
+        :return: RenameParticipantResponse
+        """
+        return self.rename_participant_with_http_info(request)
+
+    def rename_participant_with_http_info(self, request):
+        """重命名与会者
+
+        重命名某个与会者。
+
+        :param RenameParticipantRequest request
+        :return: RenameParticipantResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization', 'rest_rename_part_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/participants/name',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RenameParticipantResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1404,7 +2653,7 @@ class MeetingAsyncClient(Client):
         当硬终端激活码失效时，企业管理员可以通过该接口重置激活码，使用重新获取的激活码激活终端，每24小时可重新激活5次。
 
         :param ResetActivecodeRequest request
-        :return: None
+        :return: ResetActivecodeResponse
         """
         return self.reset_activecode_with_http_info(request)
 
@@ -1414,15 +2663,10 @@ class MeetingAsyncClient(Client):
         当硬终端激活码失效时，企业管理员可以通过该接口重置激活码，使用重新获取的激活码激活终端，每24小时可重新激活5次。
 
         :param ResetActivecodeRequest request
-        :return: None
+        :return: ResetActivecodeResponse
         """
 
         all_params = ['sn', 'active_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1442,23 +2686,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/device/{sn}/activecode', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/device/{sn}/activecode',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='ResetActivecodeResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1469,7 +2718,7 @@ class MeetingAsyncClient(Client):
         该接口提供给用户重置密码功能，服务器收到请求，重新设置用户密码并返回结果。
 
         :param ResetPwdRequest request
-        :return: None
+        :return: ResetPwdResponse
         """
         return self.reset_pwd_with_http_info(request)
 
@@ -1479,15 +2728,10 @@ class MeetingAsyncClient(Client):
         该接口提供给用户重置密码功能，服务器收到请求，重新设置用户密码并返回结果。
 
         :param ResetPwdRequest request
-        :return: None
+        :return: ResetPwdResponse
         """
 
         all_params = ['reset_pwd_req_dtov1', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1505,25 +2749,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/acs/password/reset', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/acs/password/reset',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='ResetPwdResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1534,7 +2781,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口提供企业管理员重置企业成员密码的功能。当服务器收到重置密码的请求时，发送新的密码到企业成员的邮箱或者短信，并返回结果。
 
         :param ResetPwdByAdminRequest request
-        :return: None
+        :return: ResetPwdByAdminResponse
         """
         return self.reset_pwd_by_admin_with_http_info(request)
 
@@ -1544,15 +2791,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口提供企业管理员重置企业成员密码的功能。当服务器收到重置密码的请求时，发送新的密码到企业成员的邮箱或者短信，并返回结果。
 
         :param ResetPwdByAdminRequest request
-        :return: None
+        :return: ResetPwdByAdminResponse
         """
 
         all_params = ['admin_reset_pwd_req_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1570,25 +2812,160 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/acs/password/admin/reset', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/acs/password/admin/reset',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='ResetPwdByAdminResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def rollcall_participant_async(self, request):
+        """点名会场
+
+        同一时间，只允许一个与会者被点名。点名会场的效果是除了主持人外，点名与会者为非静音状态，未点名的与会者统一为静音状态。
+
+        :param RollcallParticipantRequest request
+        :return: RollcallParticipantResponse
+        """
+        return self.rollcall_participant_with_http_info(request)
+
+    def rollcall_participant_with_http_info(self, request):
+        """点名会场
+
+        同一时间，只允许一个与会者被点名。点名会场的效果是除了主持人外，点名与会者为非静音状态，未点名的与会者统一为静音状态。
+
+        :param RollcallParticipantRequest request
+        :return: RollcallParticipantResponse
+        """
+
+        all_params = ['conference_id', 'participant_id', 'x_conference_authorization']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'participant_id' in local_var_params:
+            query_params.append(('participantID', local_var_params['participant_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/participants/rollCall',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RollcallParticipantResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def search_attendance_records_of_his_meeting_async(self, request):
+        """查询历史会议的与会者记录
+
+        查询指定历史会议的与会者记录。
+
+        :param SearchAttendanceRecordsOfHisMeetingRequest request
+        :return: SearchAttendanceRecordsOfHisMeetingResponse
+        """
+        return self.search_attendance_records_of_his_meeting_with_http_info(request)
+
+    def search_attendance_records_of_his_meeting_with_http_info(self, request):
+        """查询历史会议的与会者记录
+
+        查询指定历史会议的与会者记录。
+
+        :param SearchAttendanceRecordsOfHisMeetingRequest request
+        :return: SearchAttendanceRecordsOfHisMeetingResponse
+        """
+
+        all_params = ['conf_uuid', 'offset', 'limit', 'search_key', 'user_uuid', 'x_authorization_type', 'x_site_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conf_uuid' in local_var_params:
+            query_params.append(('confUUID', local_var_params['conf_uuid']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences/history/confAttendeeRecord',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchAttendanceRecordsOfHisMeetingResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1609,15 +2986,10 @@ class MeetingAsyncClient(Client):
         分页搜索企业,支持名称、企业ID搜索
 
         :param SearchCorpRequest request
-        :return: tuple(SearchCorpResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: SearchCorpResponse
         """
 
         all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1641,20 +3013,21 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/sp/corp', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/sp/corp',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='SearchCorpResponse',
@@ -1678,15 +3051,10 @@ class MeetingAsyncClient(Client):
         通过该接口分页查询企业管理员。
 
         :param SearchCorpAdminsRequest request
-        :return: tuple(SearchCorpAdminsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: SearchCorpAdminsResponse
         """
 
         all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1710,20 +3078,21 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/admin', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/admin',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='SearchCorpAdminsResponse',
@@ -1747,15 +3116,10 @@ class MeetingAsyncClient(Client):
         企业用户（含管理员）通过该接口查询该企业的通讯录。
 
         :param SearchCorpDirRequest request
-        :return: tuple(SearchCorpDirResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: SearchCorpDirResponse
         """
 
         all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'dept_code', 'query_sub_dept', 'search_scope']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1785,20 +3149,21 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/abs/users', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/abs/users',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='SearchCorpDirResponse',
@@ -1822,15 +3187,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口分页查询企业的专用云会议室。
 
         :param SearchCorpVmrRequest request
-        :return: tuple(SearchCorpVmrResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: SearchCorpVmrResponse
         """
 
         all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'status']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1856,23 +3216,93 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/vmr', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/vmr',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='SearchCorpVmrResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def search_ctl_records_of_his_meeting_async(self, request):
+        """查询历史会议的会控记录
+
+        查询指定历史会议的会控记录。
+
+        :param SearchCtlRecordsOfHisMeetingRequest request
+        :return: SearchCtlRecordsOfHisMeetingResponse
+        """
+        return self.search_ctl_records_of_his_meeting_with_http_info(request)
+
+    def search_ctl_records_of_his_meeting_with_http_info(self, request):
+        """查询历史会议的会控记录
+
+        查询指定历史会议的会控记录。
+
+        :param SearchCtlRecordsOfHisMeetingRequest request
+        :return: SearchCtlRecordsOfHisMeetingResponse
+        """
+
+        all_params = ['conf_uuid', 'offset', 'limit', 'user_uuid', 'x_authorization_type', 'x_site_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conf_uuid' in local_var_params:
+            query_params.append(('confUUID', local_var_params['conf_uuid']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences/history/confCtlRecord',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchCtlRecordsOfHisMeetingResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1883,7 +3313,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口按名称查询所有的部门。
 
         :param SearchDepartmentByNameRequest request
-        :return: list[QueryDeptResultDTO]
+        :return: SearchDepartmentByNameResponse
         """
         return self.search_department_by_name_with_http_info(request)
 
@@ -1893,15 +3323,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口按名称查询所有的部门。
 
         :param SearchDepartmentByNameRequest request
-        :return: tuple(list[QueryDeptResultDTO], status_code(int), headers(HTTPHeaderDict))
+        :return: SearchDepartmentByNameResponse
         """
 
         all_params = ['x_request_id', 'accept_language', 'dept_name']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1921,23 +3346,24 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/member/dept', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/member/dept',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='list[QueryDeptResultDTO]',
+            response_type='SearchDepartmentByNameResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1958,15 +3384,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口分页查询终端信息。
 
         :param SearchDevicesRequest request
-        :return: tuple(SearchDevicesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: SearchDevicesResponse
         """
 
         all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'model', 'dept_code', 'enable_sub_dept']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1996,23 +3417,172 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/device', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/device',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='SearchDevicesResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def search_his_meetings_async(self, request):
+        """查询历史会议列表
+
+        管理员可以查询管理权限域内所有的历史会议，普通用户仅能查询当前帐号管理的历史会议。不带查询参数时，默认查询权限范围内的历史会议。
+
+        :param SearchHisMeetingsRequest request
+        :return: SearchHisMeetingsResponse
+        """
+        return self.search_his_meetings_with_http_info(request)
+
+    def search_his_meetings_with_http_info(self, request):
+        """查询历史会议列表
+
+        管理员可以查询管理权限域内所有的历史会议，普通用户仅能查询当前帐号管理的历史会议。不带查询参数时，默认查询权限范围内的历史会议。
+
+        :param SearchHisMeetingsRequest request
+        :return: SearchHisMeetingsResponse
+        """
+
+        all_params = ['start_date', 'end_date', 'user_uuid', 'offset', 'limit', 'search_key', 'query_all', 'sort_type', 'x_authorization_type', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+        if 'query_all' in local_var_params:
+            query_params.append(('queryAll', local_var_params['query_all']))
+        if 'start_date' in local_var_params:
+            query_params.append(('startDate', local_var_params['start_date']))
+        if 'end_date' in local_var_params:
+            query_params.append(('endDate', local_var_params['end_date']))
+        if 'sort_type' in local_var_params:
+            query_params.append(('sortType', local_var_params['sort_type']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences/history',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchHisMeetingsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def search_meetings_async(self, request):
+        """查询会议列表
+
+        管理员可以查询管理权限域内所有的会议，普通用户仅能查询当前帐号管理的会议。不带查询参数时，默认查询权限范围内正在召开或还未召开的会议。
+
+        :param SearchMeetingsRequest request
+        :return: SearchMeetingsResponse
+        """
+        return self.search_meetings_with_http_info(request)
+
+    def search_meetings_with_http_info(self, request):
+        """查询会议列表
+
+        管理员可以查询管理权限域内所有的会议，普通用户仅能查询当前帐号管理的会议。不带查询参数时，默认查询权限范围内正在召开或还未召开的会议。
+
+        :param SearchMeetingsRequest request
+        :return: SearchMeetingsResponse
+        """
+
+        all_params = ['user_uuid', 'offset', 'limit', 'query_all', 'search_key', 'query_conf_mode', 'sort_type', 'x_authorization_type', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'query_all' in local_var_params:
+            query_params.append(('queryAll', local_var_params['query_all']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+        if 'query_conf_mode' in local_var_params:
+            query_params.append(('queryConfMode', local_var_params['query_conf_mode']))
+        if 'sort_type' in local_var_params:
+            query_params.append(('sortType', local_var_params['sort_type']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchMeetingsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2033,15 +3603,10 @@ class MeetingAsyncClient(Client):
         企业用户通过该接口查询个人已分配的云会议室，包括个人及专用两种。
 
         :param SearchMemberVmrRequest request
-        :return: tuple(SearchMemberVmrResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: SearchMemberVmrResponse
         """
 
         all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'special_vmr']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2067,23 +3632,168 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/member/vmr', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/member/vmr',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='SearchMemberVmrResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def search_online_meetings_async(self, request):
+        """查询在线会议列表
+
+        管理员可以查询管理权限域内所有在线会议，普通用户仅能查询当前自己帐号管理的在线会议。不带查询参数时，默认查询权限范围内的在线会议，按开始时间升序排列。
+
+        :param SearchOnlineMeetingsRequest request
+        :return: SearchOnlineMeetingsResponse
+        """
+        return self.search_online_meetings_with_http_info(request)
+
+    def search_online_meetings_with_http_info(self, request):
+        """查询在线会议列表
+
+        管理员可以查询管理权限域内所有在线会议，普通用户仅能查询当前自己帐号管理的在线会议。不带查询参数时，默认查询权限范围内的在线会议，按开始时间升序排列。
+
+        :param SearchOnlineMeetingsRequest request
+        :return: SearchOnlineMeetingsResponse
+        """
+
+        all_params = ['user_uuid', 'offset', 'limit', 'query_all', 'search_key', 'x_authorization_type', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'query_all' in local_var_params:
+            query_params.append(('queryAll', local_var_params['query_all']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences/online',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchOnlineMeetingsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def search_recordings_async(self, request):
+        """查询录制列表
+
+        管理员可以查询管理权限域内所有的录制，普通用户仅能查询当前帐号管理的录制。不带查询参数时，默认查询权限范围内的录制。
+
+        :param SearchRecordingsRequest request
+        :return: SearchRecordingsResponse
+        """
+        return self.search_recordings_with_http_info(request)
+
+    def search_recordings_with_http_info(self, request):
+        """查询录制列表
+
+        管理员可以查询管理权限域内所有的录制，普通用户仅能查询当前帐号管理的录制。不带查询参数时，默认查询权限范围内的录制。
+
+        :param SearchRecordingsRequest request
+        :return: SearchRecordingsResponse
+        """
+
+        all_params = ['start_date', 'end_date', 'user_uuid', 'offset', 'limit', 'query_all', 'search_key', 'sort_type', 'x_authorization_type', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'query_all' in local_var_params:
+            query_params.append(('queryAll', local_var_params['query_all']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+        if 'start_date' in local_var_params:
+            query_params.append(('startDate', local_var_params['start_date']))
+        if 'end_date' in local_var_params:
+            query_params.append(('endDate', local_var_params['end_date']))
+        if 'sort_type' in local_var_params:
+            query_params.append(('sortType', local_var_params['sort_type']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/record/files',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchRecordingsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2104,15 +3814,10 @@ class MeetingAsyncClient(Client):
         sp根据条件查询企业的资源项
 
         :param SearchResourceRequest request
-        :return: tuple(SearchResourceResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: SearchResourceResponse
         """
 
         all_params = ['corp_id', 'x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'start_expire_date', 'end_expire_date', 'type', 'type_id', 'status']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2148,20 +3853,21 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/sp/corp/{corp_id}/resource', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/sp/corp/{corp_id}/resource',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='SearchResourceResponse',
@@ -2185,15 +3891,10 @@ class MeetingAsyncClient(Client):
         sp根据条件查询企业的资源操作记录，支持根据resourceId模糊搜索
 
         :param SearchResourceOpRecordRequest request
-        :return: tuple(SearchResourceOpRecordResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: SearchResourceOpRecordResponse
         """
 
         all_params = ['corp_id', 'x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'start_expire_date', 'end_expire_date', 'start_operate_date', 'end_operate_date', 'type', 'type_id', 'operate_type']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2233,20 +3934,21 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/sp/corp/{corp_id}/resource-record', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/sp/corp/{corp_id}/resource-record',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='SearchResourceOpRecordResponse',
@@ -2270,15 +3972,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口分页查询企业用户。
 
         :param SearchUsersRequest request
-        :return: tuple(SearchUsersResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: SearchUsersResponse
         """
 
         all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'sort_field', 'is_asc', 'dept_code', 'enable_sub_dept', 'admin_type', 'enable_room', 'status']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2316,20 +4013,21 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/member', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/member',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='SearchUsersResponse',
@@ -2353,15 +4051,10 @@ class MeetingAsyncClient(Client):
         该接口提供发送滑块验证码。服务器收到请求，返回抠图以及抠图后的原图等结果。需要在前台界面显示出抠图以及抠图后的原图，用户通过滑块操作来匹配图形。
 
         :param SendSlideVerifyCodeRequest request
-        :return: tuple(SendSlideVerifyCodeResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: SendSlideVerifyCodeResponse
         """
 
         all_params = ['slide_verify_code_send_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2379,24 +4072,25 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/acs/auth/slideverifycode/send', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/acs/auth/slideverifycode/send',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='SendSlideVerifyCodeResponse',
@@ -2420,15 +4114,10 @@ class MeetingAsyncClient(Client):
         该接口提供发送验证码，服务器收到请求，发送验证码到邮箱或者短信并返回结果。用户在前台界面通过滑块验证后，再进行发送验证码操作。
 
         :param SendVeriCodeForChangePwdRequest request
-        :return: tuple(SendVeriCodeForChangePwdResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: SendVeriCodeForChangePwdResponse
         """
 
         all_params = ['verify_code_send_dtov1', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2446,24 +4135,25 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/acs/verifycode/send', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/acs/verifycode/send',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='SendVeriCodeForChangePwdResponse',
@@ -2477,7 +4167,7 @@ class MeetingAsyncClient(Client):
         获取验证码，向手机或邮箱发送，一分钟内只会发送一次。
 
         :param SendVeriCodeForUpdateUserInfoRequest request
-        :return: None
+        :return: SendVeriCodeForUpdateUserInfoResponse
         """
         return self.send_veri_code_for_update_user_info_with_http_info(request)
 
@@ -2487,15 +4177,10 @@ class MeetingAsyncClient(Client):
         获取验证码，向手机或邮箱发送，一分钟内只会发送一次。
 
         :param SendVeriCodeForUpdateUserInfoRequest request
-        :return: None
+        :return: SendVeriCodeForUpdateUserInfoResponse
         """
 
         all_params = ['verification_code_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2513,23 +4198,284 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/member/verification-code', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/member/verification-code',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='SendVeriCodeForUpdateUserInfoResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def set_host_view_async(self, request):
+        """主持人选看
+
+        用于主持人轮询、主持人选看多画面、主持人选看会场操作。目前只适用于硬终端为主持人的场景。
+
+        :param SetHostViewRequest request
+        :return: SetHostViewResponse
+        """
+        return self.set_host_view_with_http_info(request)
+
+    def set_host_view_with_http_info(self, request):
+        """主持人选看
+
+        用于主持人轮询、主持人选看多画面、主持人选看会场操作。目前只适用于硬终端为主持人的场景。
+
+        :param SetHostViewRequest request
+        :return: SetHostViewResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization', 'req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/chairView',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetHostViewResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def set_multi_picture_async(self, request):
+        """设置多画面
+
+        设置会议多画面。
+
+        :param SetMultiPictureRequest request
+        :return: SetMultiPictureResponse
+        """
+        return self.set_multi_picture_with_http_info(request)
+
+    def set_multi_picture_with_http_info(self, request):
+        """设置多画面
+
+        设置会议多画面。
+
+        :param SetMultiPictureRequest request
+        :return: SetMultiPictureResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization', 'req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/display/multiPicture',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetMultiPictureResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def set_participant_view_async(self, request):
+        """会场选看
+
+        目前只适用于硬终端选看其他会场人的场景。
+
+        :param SetParticipantViewRequest request
+        :return: SetParticipantViewResponse
+        """
+        return self.set_participant_view_with_http_info(request)
+
+    def set_participant_view_with_http_info(self, request):
+        """会场选看
+
+        目前只适用于硬终端选看其他会场人的场景。
+
+        :param SetParticipantViewRequest request
+        :return: SetParticipantViewResponse
+        """
+
+        all_params = ['conference_id', 'participant_id', 'x_conference_authorization', 'req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'participant_id' in local_var_params:
+            query_params.append(('participantID', local_var_params['participant_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/partView',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetParticipantViewResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def set_role_async(self, request):
+        """申请主持人
+
+        申请或释放主持人。普通用户可申请主持人，主持人可释放主持人权限。
+
+        :param SetRoleRequest request
+        :return: SetRoleResponse
+        """
+        return self.set_role_with_http_info(request)
+
+    def set_role_with_http_info(self, request):
+        """申请主持人
+
+        申请或释放主持人。普通用户可申请主持人，主持人可释放主持人权限。
+
+        :param SetRoleRequest request
+        :return: SetRoleResponse
+        """
+
+        all_params = ['conference_id', 'participant_id', 'x_conference_authorization', 'rest_chair_token_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'participant_id' in local_var_params:
+            query_params.append(('participantID', local_var_params['participant_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/participants/role',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetRoleResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2550,15 +4496,10 @@ class MeetingAsyncClient(Client):
         获取企业
 
         :param ShowCorpRequest request
-        :return: tuple(ShowCorpResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowCorpResponse
         """
 
         all_params = ['id', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2578,20 +4519,21 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/sp/corp/{id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/sp/corp/{id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowCorpResponse',
@@ -2615,15 +4557,10 @@ class MeetingAsyncClient(Client):
         通过该接口查询企业管理员。
 
         :param ShowCorpAdminRequest request
-        :return: tuple(ShowCorpAdminResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowCorpAdminResponse
         """
 
         all_params = ['account', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2643,20 +4580,21 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/admin/{account}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/admin/{account}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowCorpAdminResponse',
@@ -2680,15 +4618,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口查询企业注册信息。
 
         :param ShowCorpBasicInfoRequest request
-        :return: tuple(ShowCorpBasicInfoResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowCorpBasicInfoResponse
         """
 
         all_params = ['x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2706,20 +4639,21 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowCorpBasicInfoResponse',
@@ -2743,15 +4677,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口查询企业内资源及业务权限，包括查询已使用的资源情况。
 
         :param ShowCorpResourceRequest request
-        :return: tuple(ShowCorpResourceResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowCorpResourceResponse
         """
 
         all_params = ['x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2769,20 +4698,21 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/resource', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/resource',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowCorpResourceResponse',
@@ -2806,15 +4736,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口查询部门及其一级子部门列表。
 
         :param ShowDeptAndChildDeptRequest request
-        :return: tuple(ShowDeptAndChildDeptResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowDeptAndChildDeptResponse
         """
 
         all_params = ['dept_code', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2834,20 +4759,21 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/member/dept/{dept_code}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/member/dept/{dept_code}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowDeptAndChildDeptResponse',
@@ -2871,15 +4797,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口查询终端详情。
 
         :param ShowDeviceDetailRequest request
-        :return: tuple(ShowDeviceDetailResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowDeviceDetailResponse
         """
 
         all_params = ['sn', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2899,20 +4820,21 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/device/{sn}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/device/{sn}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowDeviceDetailResponse',
@@ -2926,7 +4848,7 @@ class MeetingAsyncClient(Client):
         调用本接口可以查询硬终端的状态。 硬终端与发起查询请求的帐号需在同一企业下，否则会鉴权失败。 
 
         :param ShowDeviceStatusRequest request
-        :return: list[UserStatusDTO]
+        :return: ShowDeviceStatusResponse
         """
         return self.show_device_status_with_http_info(request)
 
@@ -2936,15 +4858,10 @@ class MeetingAsyncClient(Client):
         调用本接口可以查询硬终端的状态。 硬终端与发起查询请求的帐号需在同一企业下，否则会鉴权失败。 
 
         :param ShowDeviceStatusRequest request
-        :return: tuple(list[UserStatusDTO], status_code(int), headers(HTTPHeaderDict))
+        :return: ShowDeviceStatusResponse
         """
 
         all_params = ['number', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2962,25 +4879,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
+        header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/acs/ap/userstatus', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/acs/ap/userstatus',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='list[UserStatusDTO]',
+            response_type='ShowDeviceStatusResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2991,7 +4911,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口获取所有的终端类型。
 
         :param ShowDeviceTypesRequest request
-        :return: list[QueryDeviceTypeResultDTO]
+        :return: ShowDeviceTypesResponse
         """
         return self.show_device_types_with_http_info(request)
 
@@ -3001,15 +4921,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口获取所有的终端类型。
 
         :param ShowDeviceTypesRequest request
-        :return: tuple(list[QueryDeviceTypeResultDTO], status_code(int), headers(HTTPHeaderDict))
+        :return: ShowDeviceTypesResponse
         """
 
         all_params = ['x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3027,23 +4942,170 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/termdevtype', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/termdevtype',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='list[QueryDeviceTypeResultDTO]',
+            response_type='ShowDeviceTypesResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_his_meeting_detail_async(self, request):
+        """查询历史会议详情
+
+        管理员可以查询管理权限域内所有的历史会议详情，普通用户仅能查询当前帐号管理的历史会议详情。
+
+        :param ShowHisMeetingDetailRequest request
+        :return: ShowHisMeetingDetailResponse
+        """
+        return self.show_his_meeting_detail_with_http_info(request)
+
+    def show_his_meeting_detail_with_http_info(self, request):
+        """查询历史会议详情
+
+        管理员可以查询管理权限域内所有的历史会议详情，普通用户仅能查询当前帐号管理的历史会议详情。
+
+        :param ShowHisMeetingDetailRequest request
+        :return: ShowHisMeetingDetailResponse
+        """
+
+        all_params = ['conf_uuid', 'offset', 'limit', 'search_key', 'user_uuid', 'x_type', 'x_query_type', 'x_authorization_type', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conf_uuid' in local_var_params:
+            query_params.append(('confUUID', local_var_params['conf_uuid']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+
+        header_params = {}
+        if 'x_type' in local_var_params:
+            header_params['X-Type'] = local_var_params['x_type']
+        if 'x_query_type' in local_var_params:
+            header_params['X-Query-Type'] = local_var_params['x_query_type']
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences/history/confDetail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowHisMeetingDetailResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_meeting_detail_async(self, request):
+        """查询会议详情
+
+        管理员可以查询管理权限域内所有会议的详情，普通用户仅能查询当前帐号管理的会议详情。
+
+        :param ShowMeetingDetailRequest request
+        :return: ShowMeetingDetailResponse
+        """
+        return self.show_meeting_detail_with_http_info(request)
+
+    def show_meeting_detail_with_http_info(self, request):
+        """查询会议详情
+
+        管理员可以查询管理权限域内所有会议的详情，普通用户仅能查询当前帐号管理的会议详情。
+
+        :param ShowMeetingDetailRequest request
+        :return: ShowMeetingDetailResponse
+        """
+
+        all_params = ['conference_id', 'offset', 'limit', 'search_key', 'user_uuid', 'x_type', 'x_query_type', 'x_authorization_type', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+
+        header_params = {}
+        if 'x_type' in local_var_params:
+            header_params['X-Type'] = local_var_params['x_type']
+        if 'x_query_type' in local_var_params:
+            header_params['X-Query-Type'] = local_var_params['x_query_type']
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences/confDetail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowMeetingDetailResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3064,15 +5126,10 @@ class MeetingAsyncClient(Client):
         企业用户通过该接口查询自己的信息。
 
         :param ShowMyInfoRequest request
-        :return: tuple(ShowMyInfoResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowMyInfoResponse
         """
 
         all_params = ['x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3090,23 +5147,276 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/member', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/member',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowMyInfoResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_online_meeting_detail_async(self, request):
+        """查询在线会议详情
+
+        管理员可以查询管理权限域内所有的在线会议详情，普通用户仅能查询当前自己的帐号管理的在线会议详情。
+
+        :param ShowOnlineMeetingDetailRequest request
+        :return: ShowOnlineMeetingDetailResponse
+        """
+        return self.show_online_meeting_detail_with_http_info(request)
+
+    def show_online_meeting_detail_with_http_info(self, request):
+        """查询在线会议详情
+
+        管理员可以查询管理权限域内所有的在线会议详情，普通用户仅能查询当前自己的帐号管理的在线会议详情。
+
+        :param ShowOnlineMeetingDetailRequest request
+        :return: ShowOnlineMeetingDetailResponse
+        """
+
+        all_params = ['conference_id', 'offset', 'limit', 'search_key', 'user_uuid', 'x_type', 'x_query_type', 'x_authorization_type', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+
+        header_params = {}
+        if 'x_type' in local_var_params:
+            header_params['X-Type'] = local_var_params['x_type']
+        if 'x_query_type' in local_var_params:
+            header_params['X-Query-Type'] = local_var_params['x_query_type']
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences/online/confDetail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowOnlineMeetingDetailResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_real_time_info_of_meeting_async(self, request):
+        """查询会议实时信息
+
+        查询会议实时信息
+
+        :param ShowRealTimeInfoOfMeetingRequest request
+        :return: ShowRealTimeInfoOfMeetingResponse
+        """
+        return self.show_real_time_info_of_meeting_with_http_info(request)
+
+    def show_real_time_info_of_meeting_with_http_info(self, request):
+        """查询会议实时信息
+
+        查询会议实时信息
+
+        :param ShowRealTimeInfoOfMeetingRequest request
+        :return: ShowRealTimeInfoOfMeetingResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/realTimeInfo',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowRealTimeInfoOfMeetingResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_recording_detail_async(self, request):
+        """查询录制详情
+
+        查询某个录制详情。
+
+        :param ShowRecordingDetailRequest request
+        :return: ShowRecordingDetailResponse
+        """
+        return self.show_recording_detail_with_http_info(request)
+
+    def show_recording_detail_with_http_info(self, request):
+        """查询录制详情
+
+        查询某个录制详情。
+
+        :param ShowRecordingDetailRequest request
+        :return: ShowRecordingDetailResponse
+        """
+
+        all_params = ['conf_uuid', 'user_uuid', 'x_authorization_type', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conf_uuid' in local_var_params:
+            query_params.append(('confUUID', local_var_params['conf_uuid']))
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences/record/files',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowRecordingDetailResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_region_info_of_meeting_async(self, request):
+        """查询会议所在区域信息
+
+        查询会议所在区域信息，如果会议不存在或者会议未召开，返回对应的错误码。
+
+        :param ShowRegionInfoOfMeetingRequest request
+        :return: ShowRegionInfoOfMeetingResponse
+        """
+        return self.show_region_info_of_meeting_with_http_info(request)
+
+    def show_region_info_of_meeting_with_http_info(self, request):
+        """查询会议所在区域信息
+
+        查询会议所在区域信息，如果会议不存在或者会议未召开，返回对应的错误码。
+
+        :param ShowRegionInfoOfMeetingRequest request
+        :return: ShowRegionInfoOfMeetingResponse
+        """
+
+        all_params = ['conference_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences/region/info',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowRegionInfoOfMeetingResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3127,15 +5437,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口查询企业用户详情
 
         :param ShowUserDetailRequest request
-        :return: tuple(ShowUserDetailResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowUserDetailResponse
         """
 
         all_params = ['account', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3155,23 +5460,146 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/member/{account}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/member/{account}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowUserDetailResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def stop_meeting_async(self, request):
+        """结束会议
+
+        结束会议。
+
+        :param StopMeetingRequest request
+        :return: StopMeetingResponse
+        """
+        return self.stop_meeting_with_http_info(request)
+
+    def stop_meeting_with_http_info(self, request):
+        """结束会议
+
+        结束会议。
+
+        :param StopMeetingRequest request
+        :return: StopMeetingResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/stop',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StopMeetingResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def switch_mode_async(self, request):
+        """切换视频显示策略
+
+        切换视频显示策略
+
+        :param SwitchModeRequest request
+        :return: SwitchModeResponse
+        """
+        return self.switch_mode_with_http_info(request)
+
+    def switch_mode_with_http_info(self, request):
+        """切换视频显示策略
+
+        切换视频显示策略
+
+        :param SwitchModeRequest request
+        :return: SwitchModeResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization', 'req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/display/mode',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SwitchModeResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3182,7 +5610,7 @@ class MeetingAsyncClient(Client):
         企业用户通过该接口修改手机或邮箱，需要先获取验证码，验证多次失败会禁止修改。
 
         :param UpdateContactRequest request
-        :return: None
+        :return: UpdateContactResponse
         """
         return self.update_contact_with_http_info(request)
 
@@ -3192,15 +5620,10 @@ class MeetingAsyncClient(Client):
         企业用户通过该接口修改手机或邮箱，需要先获取验证码，验证多次失败会禁止修改。
 
         :param UpdateContactRequest request
-        :return: None
+        :return: UpdateContactResponse
         """
 
         all_params = ['verification_code_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3218,23 +5641,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/member/contact', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/member/contact',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateContactResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3245,7 +5673,7 @@ class MeetingAsyncClient(Client):
         修改企业，若任一参数为null或者不携带则不修改
 
         :param UpdateCorpRequest request
-        :return: None
+        :return: UpdateCorpResponse
         """
         return self.update_corp_with_http_info(request)
 
@@ -3255,15 +5683,10 @@ class MeetingAsyncClient(Client):
         修改企业，若任一参数为null或者不携带则不修改
 
         :param UpdateCorpRequest request
-        :return: None
+        :return: UpdateCorpResponse
         """
 
         all_params = ['id', 'corp_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3283,23 +5706,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/sp/corp/{id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/sp/corp/{id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateCorpResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3310,7 +5738,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口修改企业注册信息。当前只支持修改地址。
 
         :param UpdateCorpBasicInfoRequest request
-        :return: None
+        :return: UpdateCorpBasicInfoResponse
         """
         return self.update_corp_basic_info_with_http_info(request)
 
@@ -3320,15 +5748,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口修改企业注册信息。当前只支持修改地址。
 
         :param UpdateCorpBasicInfoRequest request
-        :return: None
+        :return: UpdateCorpBasicInfoResponse
         """
 
         all_params = ['mod_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3346,23 +5769,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateCorpBasicInfoResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3373,7 +5801,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口修改部门。
 
         :param UpdateDepartmentRequest request
-        :return: None
+        :return: UpdateDepartmentResponse
         """
         return self.update_department_with_http_info(request)
 
@@ -3383,15 +5811,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口修改部门。
 
         :param UpdateDepartmentRequest request
-        :return: None
+        :return: UpdateDepartmentResponse
         """
 
         all_params = ['dept_code', 'dept_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3411,23 +5834,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/dept/{dept_code}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/dept/{dept_code}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateDepartmentResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3438,7 +5866,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口修改终端。
 
         :param UpdateDeviceRequest request
-        :return: None
+        :return: UpdateDeviceResponse
         """
         return self.update_device_with_http_info(request)
 
@@ -3448,15 +5876,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口修改终端。
 
         :param UpdateDeviceRequest request
-        :return: None
+        :return: UpdateDeviceResponse
         """
 
         all_params = ['sn', 'device_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3476,23 +5899,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/device/{sn}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/device/{sn}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateDeviceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3503,7 +5931,7 @@ class MeetingAsyncClient(Client):
         企业用户登录后可以修改分配给用户的专用云会议室及个人云会议室。
 
         :param UpdateMemberVmrRequest request
-        :return: None
+        :return: UpdateMemberVmrResponse
         """
         return self.update_member_vmr_with_http_info(request)
 
@@ -3513,15 +5941,10 @@ class MeetingAsyncClient(Client):
         企业用户登录后可以修改分配给用户的专用云会议室及个人云会议室。
 
         :param UpdateMemberVmrRequest request
-        :return: None
+        :return: UpdateMemberVmrResponse
         """
 
         all_params = ['id', 'mod_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3541,23 +5964,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/member/vmr/{id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/member/vmr/{id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateMemberVmrResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3568,7 +5996,7 @@ class MeetingAsyncClient(Client):
         企业用户通过该接口修改自己的信息。
 
         :param UpdateMyInfoRequest request
-        :return: None
+        :return: UpdateMyInfoResponse
         """
         return self.update_my_info_with_http_info(request)
 
@@ -3578,15 +6006,10 @@ class MeetingAsyncClient(Client):
         企业用户通过该接口修改自己的信息。
 
         :param UpdateMyInfoRequest request
-        :return: None
+        :return: UpdateMyInfoResponse
         """
 
         all_params = ['member_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3604,23 +6027,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/member', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/member',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateMyInfoResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3631,7 +6059,7 @@ class MeetingAsyncClient(Client):
         企业成员通过该接口提供用户修改密码功能，服务器收到请求，修改用户密码并返回结果。
 
         :param UpdatePwdRequest request
-        :return: None
+        :return: UpdatePwdResponse
         """
         return self.update_pwd_with_http_info(request)
 
@@ -3641,15 +6069,10 @@ class MeetingAsyncClient(Client):
         企业成员通过该接口提供用户修改密码功能，服务器收到请求，修改用户密码并返回结果。
 
         :param UpdatePwdRequest request
-        :return: None
+        :return: UpdatePwdResponse
         """
 
         all_params = ['mod_pwd_req_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3667,25 +6090,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/acs/password', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/acs/password',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdatePwdResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3696,7 +6122,7 @@ class MeetingAsyncClient(Client):
         企业修改资源的过期时间、停用状态
 
         :param UpdateResourceRequest request
-        :return: None
+        :return: UpdateResourceResponse
         """
         return self.update_resource_with_http_info(request)
 
@@ -3706,15 +6132,10 @@ class MeetingAsyncClient(Client):
         企业修改资源的过期时间、停用状态
 
         :param UpdateResourceRequest request
-        :return: None
+        :return: UpdateResourceResponse
         """
 
         all_params = ['corp_id', 'resource_list', 'x_request_id', 'accept_language', 'force_edit_flag']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3736,23 +6157,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/sp/corp/{corp_id}/resource', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/sp/corp/{corp_id}/resource',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateResourceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3773,15 +6199,10 @@ class MeetingAsyncClient(Client):
         该接口提供刷新Token功能，根据传入的Token，刷新Token失效时间并返回结果。
 
         :param UpdateTokenRequest request
-        :return: tuple(UpdateTokenResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateTokenResponse
         """
 
         all_params = ['x_request_id', 'accept_language', 'empty_dto']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3799,22 +6220,25 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
+        header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/acs/token', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/acs/token',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateTokenResponse',
@@ -3828,7 +6252,7 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口修改企业用户。
 
         :param UpdateUserRequest request
-        :return: None
+        :return: UpdateUserResponse
         """
         return self.update_user_with_http_info(request)
 
@@ -3838,15 +6262,10 @@ class MeetingAsyncClient(Client):
         企业管理员通过该接口修改企业用户。
 
         :param UpdateUserRequest request
-        :return: None
+        :return: UpdateUserResponse
         """
 
         all_params = ['account', 'user_dto', 'x_request_id', 'accept_language']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3866,23 +6285,28 @@ class MeetingAsyncClient(Client):
         if 'accept_language' in local_var_params:
             header_params['Accept-Language'] = local_var_params['accept_language']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v1/usg/dcs/corp/member/{account}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v1/usg/dcs/corp/member/{account}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateUserResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3909,6 +6333,15 @@ class MeetingAsyncClient(Client):
         :return:
             Return the response directly.
         """
-        return self.do_http_request(method, resource_path, path_params,
-                                    query_params, header_params, body, post_params,
-                                    response_type, collection_formats, request_type, True)
+        return self.do_http_request(
+            method=method,
+            resource_path=resource_path,
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body,
+            post_params=post_params,
+            response_type=response_type,
+            collection_formats=collection_formats,
+            request_type=request_type,
+	    async_request=True)

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ServerAddress(object):
+
+
+
+class ServerAddress:
 
 
     """
@@ -35,8 +38,10 @@ class ServerAddress(object):
         'os_ext_ip_sport_id': 'OS-EXT-IPS:port_id'
     }
 
-    def __init__(self, version=None, addr=None, os_ext_ip_stype=None, os_ext_ips_ma_cmac_addr=None, os_ext_ip_sport_id=None):  # noqa: E501
+    def __init__(self, version=None, addr=None, os_ext_ip_stype=None, os_ext_ips_ma_cmac_addr=None, os_ext_ip_sport_id=None):
         """ServerAddress - a model defined in huaweicloud sdk"""
+        
+        
 
         self._version = None
         self._addr = None

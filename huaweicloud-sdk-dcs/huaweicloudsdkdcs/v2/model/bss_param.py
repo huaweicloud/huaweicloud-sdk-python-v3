@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BssParam(object):
+
+
+
+class BssParam:
 
 
     """
@@ -35,8 +38,10 @@ class BssParam(object):
         'period_num': 'period_num'
     }
 
-    def __init__(self, is_auto_renew='false', charging_mode='postPaid', is_auto_pay=None, period_type=None, period_num=None):  # noqa: E501
+    def __init__(self, is_auto_renew='false', charging_mode='postPaid', is_auto_pay=None, period_type=None, period_num=None):
         """BssParam - a model defined in huaweicloud sdk"""
+        
+        
 
         self._is_auto_renew = None
         self._charging_mode = None

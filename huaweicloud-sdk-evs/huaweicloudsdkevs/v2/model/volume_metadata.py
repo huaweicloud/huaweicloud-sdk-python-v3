@@ -6,7 +6,10 @@ import re
 import six
 
 
-class VolumeMetadata(object):
+
+
+
+class VolumeMetadata:
 
 
     """
@@ -33,8 +36,10 @@ class VolumeMetadata(object):
         'hwpassthrough': 'hw:passthrough'
     }
 
-    def __init__(self, system_cmkid=None, system_encrypted=None, full_clone=None, hwpassthrough=None):  # noqa: E501
+    def __init__(self, system_cmkid=None, system_encrypted=None, full_clone=None, hwpassthrough=None):
         """VolumeMetadata - a model defined in huaweicloud sdk"""
+        
+        
 
         self._system_cmkid = None
         self._system_encrypted = None

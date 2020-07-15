@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteTagsOption(object):
+
+
+
+class DeleteTagsOption:
 
 
     """
@@ -27,8 +30,10 @@ class DeleteTagsOption(object):
         'key': 'key'
     }
 
-    def __init__(self, key=None):  # noqa: E501
+    def __init__(self, key=None):
         """DeleteTagsOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._key = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SecurityGroups(object):
+
+
+
+class SecurityGroups:
 
 
     """
@@ -27,8 +30,10 @@ class SecurityGroups(object):
         'id': 'id'
     }
 
-    def __init__(self, id=None):  # noqa: E501
+    def __init__(self, id=None):
         """SecurityGroups - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self.discriminator = None

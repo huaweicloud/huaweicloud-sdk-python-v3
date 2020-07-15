@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListJobsRequest(object):
+
+
+
+class ListJobsRequest:
 
 
     """
@@ -33,8 +36,10 @@ class ListJobsRequest(object):
         'limit': 'limit'
     }
 
-    def __init__(self, source_from=None, source_id=None, offset=None, limit=None):  # noqa: E501
+    def __init__(self, source_from=None, source_id=None, offset=None, limit=None):
         """ListJobsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._source_from = None
         self._source_id = None

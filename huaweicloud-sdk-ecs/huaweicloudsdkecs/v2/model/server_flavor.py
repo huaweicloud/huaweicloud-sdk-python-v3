@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ServerFlavor(object):
+
+
+
+class ServerFlavor:
 
 
     """
@@ -35,8 +38,10 @@ class ServerFlavor(object):
         'ram': 'ram'
     }
 
-    def __init__(self, id=None, name=None, disk=None, vcpus=None, ram=None):  # noqa: E501
+    def __init__(self, id=None, name=None, disk=None, vcpus=None, ram=None):
         """ServerFlavor - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._name = None

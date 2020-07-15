@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UnfreezeDeviceRequest(object):
+
+
+
+class UnfreezeDeviceRequest:
 
 
     """
@@ -29,8 +32,10 @@ class UnfreezeDeviceRequest(object):
         'device_id': 'device_id'
     }
 
-    def __init__(self, instance_id=None, device_id=None):  # noqa: E501
+    def __init__(self, instance_id=None, device_id=None):
         """UnfreezeDeviceRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._device_id = None

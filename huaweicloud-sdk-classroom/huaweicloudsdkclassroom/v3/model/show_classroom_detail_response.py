@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowClassroomDetailResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowClassroomDetailResponse(SdkResponse):
 
 
     """
@@ -59,8 +62,10 @@ class ShowClassroomDetailResponse(object):
         'status': 'status'
     }
 
-    def __init__(self, name=None, description=None, announcement=None, announcement_time=None, create_time=None, update_time=None, teacher=None, credit=None, start_time=None, end_time=None, role=None, school=None, content_count=None, courseware_count=None, job_count=None, member_count=None, status=None):  # noqa: E501
+    def __init__(self, name=None, description=None, announcement=None, announcement_time=None, create_time=None, update_time=None, teacher=None, credit=None, start_time=None, end_time=None, role=None, school=None, content_count=None, courseware_count=None, job_count=None, member_count=None, status=None):
         """ShowClassroomDetailResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._name = None
         self._description = None

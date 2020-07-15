@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListHookInstancesRequest(object):
+
+
+
+class ListHookInstancesRequest:
 
 
     """
@@ -29,8 +32,10 @@ class ListHookInstancesRequest(object):
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, scaling_group_id=None, instance_id=None):  # noqa: E501
+    def __init__(self, scaling_group_id=None, instance_id=None):
         """ListHookInstancesRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._scaling_group_id = None
         self._instance_id = None

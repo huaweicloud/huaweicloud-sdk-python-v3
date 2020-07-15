@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateCredentialOption(object):
+
+
+
+class CreateCredentialOption:
 
 
     """
@@ -29,8 +32,10 @@ class CreateCredentialOption(object):
         'description': 'description'
     }
 
-    def __init__(self, user_id=None, description=None):  # noqa: E501
+    def __init__(self, user_id=None, description=None):
         """CreateCredentialOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._user_id = None
         self._description = None

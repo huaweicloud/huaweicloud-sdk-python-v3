@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowVersionAliasRequest(object):
+
+
+
+class ShowVersionAliasRequest:
 
 
     """
@@ -29,8 +32,10 @@ class ShowVersionAliasRequest(object):
         'name': 'name'
     }
 
-    def __init__(self, function_urn=None, name=None):  # noqa: E501
+    def __init__(self, function_urn=None, name=None):
         """ShowVersionAliasRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._function_urn = None
         self._name = None

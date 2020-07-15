@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListOsVersionsResponseBody(object):
+
+
+
+class ListOsVersionsResponseBody:
 
 
     """
@@ -29,8 +32,10 @@ class ListOsVersionsResponseBody(object):
         'version_list': 'version_list'
     }
 
-    def __init__(self, platform=None, version_list=None):  # noqa: E501
+    def __init__(self, platform=None, version_list=None):
         """ListOsVersionsResponseBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._platform = None
         self._version_list = None

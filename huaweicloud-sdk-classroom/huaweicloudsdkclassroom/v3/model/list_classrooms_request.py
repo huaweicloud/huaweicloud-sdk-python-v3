@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListClassroomsRequest(object):
+
+
+
+class ListClassroomsRequest:
 
 
     """
@@ -31,8 +34,10 @@ class ListClassroomsRequest(object):
         'query_type': 'query_type'
     }
 
-    def __init__(self, offset=None, limit=None, query_type=None):  # noqa: E501
+    def __init__(self, offset=None, limit=None, query_type=None):
         """ListClassroomsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._offset = None
         self._limit = None

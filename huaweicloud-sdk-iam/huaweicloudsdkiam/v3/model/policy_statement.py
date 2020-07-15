@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PolicyStatement(object):
+
+
+
+class PolicyStatement:
 
 
     """
@@ -33,8 +36,10 @@ class PolicyStatement(object):
         'resource': 'Resource'
     }
 
-    def __init__(self, action=None, effect=None, condition=None, resource=None):  # noqa: E501
+    def __init__(self, action=None, effect=None, condition=None, resource=None):
         """PolicyStatement - a model defined in huaweicloud sdk"""
+        
+        
 
         self._action = None
         self._effect = None

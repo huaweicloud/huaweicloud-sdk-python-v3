@@ -11,6 +11,7 @@ import six
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class ClassroomAsyncClient(Client):
@@ -55,15 +56,10 @@ class ClassroomAsyncClient(Client):
         根据课堂ID获取指定课堂的课堂成员列表，支持分页，搜索字段默认同时匹配姓名，学号，用户名，班级。
 
         :param ListClassroomMembersRequest request
-        :return: tuple(ListClassroomMembersResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListClassroomMembersResponse
         """
 
         all_params = ['classroom_id', 'offset', 'limit', 'filter']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -85,20 +81,21 @@ class ClassroomAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/classrooms/{classroom_id}/members', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/classrooms/{classroom_id}/members',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListClassroomMembersResponse',
@@ -122,15 +119,10 @@ class ClassroomAsyncClient(Client):
         获取当前用户的课堂列表，课堂课表分为我创建的课堂，我加入的课堂以及所有课堂，支持分页查询。
 
         :param ListClassroomsRequest request
-        :return: tuple(ListClassroomsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListClassroomsResponse
         """
 
         all_params = ['offset', 'limit', 'query_type']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -150,20 +142,21 @@ class ClassroomAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/classrooms', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/classrooms',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListClassroomsResponse',
@@ -187,15 +180,10 @@ class ClassroomAsyncClient(Client):
         根据课堂ID获取指定课堂的详细信息
 
         :param ShowClassroomDetailRequest request
-        :return: tuple(ShowClassroomDetailResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowClassroomDetailResponse
         """
 
         all_params = ['classroom_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -211,20 +199,21 @@ class ClassroomAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/classrooms/{classroom_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/classrooms/{classroom_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowClassroomDetailResponse',
@@ -249,15 +238,10 @@ class ClassroomAsyncClient(Client):
         查询课堂下指定成员的作业信息
 
         :param ListClassroomMemberJobsRequest request
-        :return: tuple(ListClassroomMemberJobsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListClassroomMemberJobsResponse
         """
 
         all_params = ['classroom_id', 'member_id', 'offset', 'limit']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -279,20 +263,21 @@ class ClassroomAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/classrooms/{classroom_id}/jobs', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/classrooms/{classroom_id}/jobs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListClassroomMemberJobsResponse',
@@ -316,15 +301,10 @@ class ClassroomAsyncClient(Client):
         查询指定课堂下的作业列表信息，支持分页查询。
 
         :param ListJobsRequest request
-        :return: tuple(ListJobsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListJobsResponse
         """
 
         all_params = ['source_from', 'source_id', 'offset', 'limit']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -346,20 +326,21 @@ class ClassroomAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/jobs', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/jobs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListJobsResponse',
@@ -383,15 +364,10 @@ class ClassroomAsyncClient(Client):
         查询学生指定作业的习题提交记录信息(针对函数习题)
 
         :param ListMemberJobRecordsRequest request
-        :return: tuple(ListMemberJobRecordsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListMemberJobRecordsResponse
         """
 
         all_params = ['job_id', 'exercise_id', 'member_id', 'offset', 'limit']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -415,20 +391,21 @@ class ClassroomAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/jobs/{job_id}/exercises/{exercise_id}/records', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/jobs/{job_id}/exercises/{exercise_id}/records',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListMemberJobRecordsResponse',
@@ -452,15 +429,10 @@ class ClassroomAsyncClient(Client):
         根据作业ID，查询指定作业的信息
 
         :param ShowJobDetailRequest request
-        :return: tuple(ShowJobDetailResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowJobDetailResponse
         """
 
         all_params = ['job_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -476,20 +448,21 @@ class ClassroomAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/jobs/{job_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/jobs/{job_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowJobDetailResponse',
@@ -513,15 +486,10 @@ class ClassroomAsyncClient(Client):
         查询指定作业下的习题信息
 
         :param ShowJobExercisesRequest request
-        :return: tuple(ShowJobExercisesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowJobExercisesResponse
         """
 
         all_params = ['job_id', 'source_from', 'source_id', 'offset', 'limit']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -545,20 +513,21 @@ class ClassroomAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/jobs/{job_id}/exercises', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/jobs/{job_id}/exercises',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowJobExercisesResponse',
@@ -588,6 +557,15 @@ class ClassroomAsyncClient(Client):
         :return:
             Return the response directly.
         """
-        return self.do_http_request(method, resource_path, path_params,
-                                    query_params, header_params, body, post_params,
-                                    response_type, collection_formats, request_type, True)
+        return self.do_http_request(
+            method=method,
+            resource_path=resource_path,
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body,
+            post_params=post_params,
+            response_type=response_type,
+            collection_formats=collection_formats,
+            request_type=request_type,
+	    async_request=True)

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Flavor(object):
+
+
+
+class Flavor:
 
 
     """
@@ -55,8 +58,10 @@ class Flavor(object):
         'attachable_quantity': 'attachableQuantity'
     }
 
-    def __init__(self, id=None, name=None, vcpus=None, ram=None, disk='0', swap=None, os_flv_ext_dat_aephemeral=None, os_flv_disable_ddisabled=False, rxtx_factor=None, rxtx_quota=None, rxtx_cap=None, os_flavor_accessis_public=True, links=None, os_extra_specs=None, attachable_quantity=None):  # noqa: E501
+    def __init__(self, id=None, name=None, vcpus=None, ram=None, disk='0', swap=None, os_flv_ext_dat_aephemeral=None, os_flv_disable_ddisabled=False, rxtx_factor=None, rxtx_quota=None, rxtx_cap=None, os_flavor_accessis_public=True, links=None, os_extra_specs=None, attachable_quantity=None):
         """Flavor - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._name = None

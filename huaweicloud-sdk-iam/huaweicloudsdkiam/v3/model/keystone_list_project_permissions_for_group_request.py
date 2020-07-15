@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneListProjectPermissionsForGroupRequest(object):
+
+
+
+class KeystoneListProjectPermissionsForGroupRequest:
 
 
     """
@@ -29,8 +32,10 @@ class KeystoneListProjectPermissionsForGroupRequest(object):
         'group_id': 'group_id'
     }
 
-    def __init__(self, project_id=None, group_id=None):  # noqa: E501
+    def __init__(self, project_id=None, group_id=None):
         """KeystoneListProjectPermissionsForGroupRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._project_id = None
         self._group_id = None

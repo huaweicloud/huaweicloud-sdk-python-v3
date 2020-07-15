@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListConfigurationsResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListConfigurationsResponse(SdkResponse):
 
 
     """
@@ -35,8 +38,10 @@ class ListConfigurationsResponse(object):
         'status': 'status'
     }
 
-    def __init__(self, config_time=None, instance_id=None, redis_config=None, config_status=None, status=None):  # noqa: E501
+    def __init__(self, config_time=None, instance_id=None, redis_config=None, config_status=None, status=None):
         """ListConfigurationsResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._config_time = None
         self._instance_id = None

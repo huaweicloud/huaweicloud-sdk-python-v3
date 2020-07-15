@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowQuotaRequest(object):
+
+
+
+class ShowQuotaRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ShowQuotaRequest(object):
         'type': 'type'
     }
 
-    def __init__(self, type=None):  # noqa: E501
+    def __init__(self, type=None):
         """ShowQuotaRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._type = None
         self.discriminator = None

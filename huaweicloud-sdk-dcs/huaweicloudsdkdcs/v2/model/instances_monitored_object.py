@@ -6,7 +6,10 @@ import re
 import six
 
 
-class InstancesMonitoredObject(object):
+
+
+
+class InstancesMonitoredObject:
 
 
     """
@@ -31,8 +34,10 @@ class InstancesMonitoredObject(object):
         'status': 'status'
     }
 
-    def __init__(self, dcs_instance_id=None, name=None, status=None):  # noqa: E501
+    def __init__(self, dcs_instance_id=None, name=None, status=None):
         """InstancesMonitoredObject - a model defined in huaweicloud sdk"""
+        
+        
 
         self._dcs_instance_id = None
         self._name = None

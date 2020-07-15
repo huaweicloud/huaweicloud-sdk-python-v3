@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListDcsTagsOfTenantRequest(object):
+
+
+
+class ListDcsTagsOfTenantRequest:
 
 
     """
@@ -25,8 +28,10 @@ class ListDcsTagsOfTenantRequest(object):
     attribute_map = {
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self):
         """ListDcsTagsOfTenantRequest - a model defined in huaweicloud sdk"""
+        
+        
         self.discriminator = None
 
     def to_dict(self):

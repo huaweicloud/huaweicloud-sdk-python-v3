@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DisassociateVmrRequest(object):
+
+
+
+class DisassociateVmrRequest:
 
 
     """
@@ -33,8 +36,10 @@ class DisassociateVmrRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, account=None, body=None):  # noqa: E501
+    def __init__(self, x_request_id=None, accept_language=None, account=None, body=None):
         """DisassociateVmrRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_request_id = None
         self._accept_language = None

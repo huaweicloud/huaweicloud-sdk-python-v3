@@ -6,7 +6,10 @@ import re
 import six
 
 
-class EmptyDTO(object):
+
+
+
+class EmptyDTO:
 
 
     """
@@ -27,8 +30,10 @@ class EmptyDTO(object):
         'token': 'token'
     }
 
-    def __init__(self, token=None):  # noqa: E501
+    def __init__(self, token=None):
         """EmptyDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._token = None
         self.discriminator = None

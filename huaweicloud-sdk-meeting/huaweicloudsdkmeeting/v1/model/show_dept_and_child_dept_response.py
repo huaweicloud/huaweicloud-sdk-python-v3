@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowDeptAndChildDeptResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowDeptAndChildDeptResponse(SdkResponse):
 
 
     """
@@ -51,8 +54,10 @@ class ShowDeptAndChildDeptResponse(object):
         'child_depts': 'childDepts'
     }
 
-    def __init__(self, corp_id=None, dept_code=None, dept_level=None, dept_name=None, dept_name_path=None, is_leaf_node=None, parent_dept_code=None, dept_code_path=None, note=None, in_permission=None, out_permission=None, designated_out_dept_codes=None, child_depts=None):  # noqa: E501
+    def __init__(self, corp_id=None, dept_code=None, dept_level=None, dept_name=None, dept_name_path=None, is_leaf_node=None, parent_dept_code=None, dept_code_path=None, note=None, in_permission=None, out_permission=None, designated_out_dept_codes=None, child_depts=None):
         """ShowDeptAndChildDeptResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._corp_id = None
         self._dept_code = None

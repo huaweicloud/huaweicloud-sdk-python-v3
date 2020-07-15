@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListSubscriptionsRequest(object):
+
+
+
+class ListSubscriptionsRequest:
 
 
     """
@@ -43,8 +46,10 @@ class ListSubscriptionsRequest(object):
         'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None, resource=None, event=None, callbackurl=None, app_id=None, channel=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):  # noqa: E501
+    def __init__(self, instance_id=None, resource=None, event=None, callbackurl=None, app_id=None, channel=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):
         """ListSubscriptionsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._resource = None

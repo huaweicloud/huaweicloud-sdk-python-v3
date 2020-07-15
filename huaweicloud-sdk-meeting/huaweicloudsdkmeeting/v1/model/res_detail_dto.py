@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ResDetailDTO(object):
+
+
+
+class ResDetailDTO:
 
 
     """
@@ -29,8 +32,10 @@ class ResDetailDTO(object):
         'used_count': 'usedCount'
     }
 
-    def __init__(self, sum_count=None, used_count=None):  # noqa: E501
+    def __init__(self, sum_count=None, used_count=None):
         """ResDetailDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._sum_count = None
         self._used_count = None

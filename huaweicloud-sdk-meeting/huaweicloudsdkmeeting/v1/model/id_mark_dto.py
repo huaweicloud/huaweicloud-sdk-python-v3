@@ -6,7 +6,10 @@ import re
 import six
 
 
-class IdMarkDTO(object):
+
+
+
+class IdMarkDTO:
 
 
     """
@@ -29,8 +32,10 @@ class IdMarkDTO(object):
         'mark': 'mark'
     }
 
-    def __init__(self, id=None, mark=None):  # noqa: E501
+    def __init__(self, id=None, mark=None):
         """IdMarkDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._mark = None

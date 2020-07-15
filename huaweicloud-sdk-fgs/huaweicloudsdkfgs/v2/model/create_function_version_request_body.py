@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateFunctionVersionRequestBody(object):
+
+
+
+class CreateFunctionVersionRequestBody:
 
 
     """
@@ -31,8 +34,10 @@ class CreateFunctionVersionRequestBody(object):
         'description': 'description'
     }
 
-    def __init__(self, digest=None, version=None, description=None):  # noqa: E501
+    def __init__(self, digest=None, version=None, description=None):
         """CreateFunctionVersionRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._digest = None
         self._version = None

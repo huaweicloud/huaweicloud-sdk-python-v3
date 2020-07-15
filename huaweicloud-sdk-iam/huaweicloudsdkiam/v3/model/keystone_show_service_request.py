@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneShowServiceRequest(object):
+
+
+
+class KeystoneShowServiceRequest:
 
 
     """
@@ -27,8 +30,10 @@ class KeystoneShowServiceRequest(object):
         'service_id': 'service_id'
     }
 
-    def __init__(self, service_id=None):  # noqa: E501
+    def __init__(self, service_id=None):
         """KeystoneShowServiceRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._service_id = None
         self.discriminator = None

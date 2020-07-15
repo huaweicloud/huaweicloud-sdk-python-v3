@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeviceMessageCondition(object):
+
+
+
+class DeviceMessageCondition:
 
 
     """
@@ -29,8 +32,10 @@ class DeviceMessageCondition(object):
         'topic': 'topic'
     }
 
-    def __init__(self, product_id=None, topic=None):  # noqa: E501
+    def __init__(self, product_id=None, topic=None):
         """DeviceMessageCondition - a model defined in huaweicloud sdk"""
+        
+        
 
         self._product_id = None
         self._topic = None

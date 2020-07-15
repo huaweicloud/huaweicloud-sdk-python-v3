@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowVolumeTagsResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowVolumeTagsResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ShowVolumeTagsResponse(object):
         'tags': 'tags'
     }
 
-    def __init__(self, tags=None):  # noqa: E501
+    def __init__(self, tags=None):
         """ShowVolumeTagsResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._tags = None
         self.discriminator = None

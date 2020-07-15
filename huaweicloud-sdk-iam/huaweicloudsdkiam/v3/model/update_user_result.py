@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateUserResult(object):
+
+
+
+class UpdateUserResult:
 
 
     """
@@ -51,8 +54,10 @@ class UpdateUserResult(object):
         'password_expires_at': 'password_expires_at'
     }
 
-    def __init__(self, pwd_status=None, xuser_id=None, xuser_type=None, description=None, name=None, phone=None, domain_id=None, enabled=None, areacode=None, email=None, id=None, links=None, password_expires_at=None):  # noqa: E501
+    def __init__(self, pwd_status=None, xuser_id=None, xuser_type=None, description=None, name=None, phone=None, domain_id=None, enabled=None, areacode=None, email=None, id=None, links=None, password_expires_at=None):
         """UpdateUserResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._pwd_status = None
         self._xuser_id = None

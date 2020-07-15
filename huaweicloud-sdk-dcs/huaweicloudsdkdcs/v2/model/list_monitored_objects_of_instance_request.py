@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListMonitoredObjectsOfInstanceRequest(object):
+
+
+
+class ListMonitoredObjectsOfInstanceRequest:
 
 
     """
@@ -29,8 +32,10 @@ class ListMonitoredObjectsOfInstanceRequest(object):
         'dim_name': 'dim_name'
     }
 
-    def __init__(self, instance_id=None, dim_name=None):  # noqa: E501
+    def __init__(self, instance_id=None, dim_name=None):
         """ListMonitoredObjectsOfInstanceRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._dim_name = None

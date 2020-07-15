@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RegionLocales(object):
+
+
+
+class RegionLocales:
 
 
     """
@@ -35,8 +38,10 @@ class RegionLocales(object):
         'es_es': 'es-es'
     }
 
-    def __init__(self, zh_cn=None, en_us=None, pt_br=None, es_us=None, es_es=None):  # noqa: E501
+    def __init__(self, zh_cn=None, en_us=None, pt_br=None, es_us=None, es_es=None):
         """RegionLocales - a model defined in huaweicloud sdk"""
+        
+        
 
         self._zh_cn = None
         self._en_us = None

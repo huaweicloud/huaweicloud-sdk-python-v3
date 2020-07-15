@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PostPaidServerEipBandwidth(object):
+
+
+
+class PostPaidServerEipBandwidth:
 
 
     """
@@ -33,8 +36,10 @@ class PostPaidServerEipBandwidth(object):
         'id': 'id'
     }
 
-    def __init__(self, size=None, sharetype=None, chargemode=None, id=None):  # noqa: E501
+    def __init__(self, size=None, sharetype=None, chargemode=None, id=None):
         """PostPaidServerEipBandwidth - a model defined in huaweicloud sdk"""
+        
+        
 
         self._size = None
         self._sharetype = None

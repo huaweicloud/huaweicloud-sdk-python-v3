@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AddShardingNodeRequestBody(object):
+
+
+
+class AddShardingNodeRequestBody:
 
 
     """
@@ -33,8 +36,10 @@ class AddShardingNodeRequestBody(object):
         'volume': 'volume'
     }
 
-    def __init__(self, type=None, spec_code=None, num=None, volume=None):  # noqa: E501
+    def __init__(self, type=None, spec_code=None, num=None, volume=None):
         """AddShardingNodeRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._type = None
         self._spec_code = None

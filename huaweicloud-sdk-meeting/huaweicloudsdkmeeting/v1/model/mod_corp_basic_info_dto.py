@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ModCorpBasicInfoDTO(object):
+
+
+
+class ModCorpBasicInfoDTO:
 
 
     """
@@ -29,8 +32,10 @@ class ModCorpBasicInfoDTO(object):
         'auto_user_create': 'autoUserCreate'
     }
 
-    def __init__(self, address=None, auto_user_create=None):  # noqa: E501
+    def __init__(self, address=None, auto_user_create=None):
         """ModCorpBasicInfoDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._address = None
         self._auto_user_create = None

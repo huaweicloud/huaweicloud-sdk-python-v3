@@ -6,7 +6,10 @@ import re
 import six
 
 
-class StopMigrationTaskRequest(object):
+
+
+
+class StopMigrationTaskRequest:
 
 
     """
@@ -27,8 +30,10 @@ class StopMigrationTaskRequest(object):
         'task_id': 'task_id'
     }
 
-    def __init__(self, task_id=None):  # noqa: E501
+    def __init__(self, task_id=None):
         """StopMigrationTaskRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._task_id = None
         self.discriminator = None

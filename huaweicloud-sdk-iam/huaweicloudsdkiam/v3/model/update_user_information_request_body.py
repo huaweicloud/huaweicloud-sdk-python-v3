@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateUserInformationRequestBody(object):
+
+
+
+class UpdateUserInformationRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class UpdateUserInformationRequestBody(object):
         'user': 'user'
     }
 
-    def __init__(self, user=None):  # noqa: E501
+    def __init__(self, user=None):
         """UpdateUserInformationRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._user = None
         self.discriminator = None

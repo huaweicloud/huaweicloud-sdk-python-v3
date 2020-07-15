@@ -6,7 +6,10 @@ import re
 import six
 
 
-class QueryResourceResultDTO(object):
+
+
+
+class QueryResourceResultDTO:
 
 
     """
@@ -41,8 +44,10 @@ class QueryResourceResultDTO(object):
         'editable': 'editable'
     }
 
-    def __init__(self, id=None, type=None, type_id=None, type_desc=None, count=None, expire_date=None, status=None, editable=None):  # noqa: E501
+    def __init__(self, id=None, type=None, type_id=None, type_desc=None, count=None, expire_date=None, status=None, editable=None):
         """QueryResourceResultDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._type = None

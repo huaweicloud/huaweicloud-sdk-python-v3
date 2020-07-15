@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DevicePropertiesRequest(object):
+
+
+
+class DevicePropertiesRequest:
 
 
     """
@@ -27,8 +30,10 @@ class DevicePropertiesRequest(object):
         'services': 'services'
     }
 
-    def __init__(self, services=None):  # noqa: E501
+    def __init__(self, services=None):
         """DevicePropertiesRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._services = None
         self.discriminator = None

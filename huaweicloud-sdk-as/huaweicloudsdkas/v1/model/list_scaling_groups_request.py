@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListScalingGroupsRequest(object):
+
+
+
+class ListScalingGroupsRequest:
 
 
     """
@@ -35,8 +38,10 @@ class ListScalingGroupsRequest(object):
         'limit': 'limit'
     }
 
-    def __init__(self, scaling_group_name=None, scaling_configuration_id=None, scaling_group_status=None, start_number=None, limit=None):  # noqa: E501
+    def __init__(self, scaling_group_name=None, scaling_configuration_id=None, scaling_group_status=None, start_number=None, limit=None):
         """ListScalingGroupsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._scaling_group_name = None
         self._scaling_configuration_id = None

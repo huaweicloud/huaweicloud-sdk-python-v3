@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowIpWhitelistResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowIpWhitelistResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class ShowIpWhitelistResponse(object):
         'whitelist': 'whitelist'
     }
 
-    def __init__(self, enable_whitelist=None, whitelist=None):  # noqa: E501
+    def __init__(self, enable_whitelist=None, whitelist=None):
         """ShowIpWhitelistResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._enable_whitelist = None
         self._whitelist = None

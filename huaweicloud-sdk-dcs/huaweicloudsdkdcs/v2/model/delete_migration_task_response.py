@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteMigrationTaskResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class DeleteMigrationTaskResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class DeleteMigrationTaskResponse(object):
         'task_id_list': 'task_id_list'
     }
 
-    def __init__(self, task_id_list=None):  # noqa: E501
+    def __init__(self, task_id_list=None):
         """DeleteMigrationTaskResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._task_id_list = None
         self.discriminator = None

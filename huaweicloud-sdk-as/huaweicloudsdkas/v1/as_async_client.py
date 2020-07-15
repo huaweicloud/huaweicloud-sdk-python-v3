@@ -11,6 +11,7 @@ import six
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class AsAsyncClient(Client):
@@ -45,7 +46,7 @@ class AsAsyncClient(Client):
         批量删除指定弹性伸缩配置。被伸缩组使用的伸缩配置不能被删除。单次最多删除伸缩配置个数为50。
 
         :param BatchDeleteScalingConfigsRequest request
-        :return: None
+        :return: BatchDeleteScalingConfigsResponse
         """
         return self.batch_delete_scaling_configs_with_http_info(request)
 
@@ -55,15 +56,10 @@ class AsAsyncClient(Client):
         批量删除指定弹性伸缩配置。被伸缩组使用的伸缩配置不能被删除。单次最多删除伸缩配置个数为50。
 
         :param BatchDeleteScalingConfigsRequest request
-        :return: None
+        :return: BatchDeleteScalingConfigsResponse
         """
 
         all_params = ['bodyparam']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -77,25 +73,28 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_configurations', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_configurations',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='BatchDeleteScalingConfigsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -106,7 +105,7 @@ class AsAsyncClient(Client):
         通过生命周期操作令牌或者通过实例ID和生命周期挂钩名称对伸缩实例指定的挂钩进行回调操作。如果在超时时间结束前已完成自定义操作，选择终止或继续完成生命周期操作。如果需要更多时间完成自定义操作，选择延长超时时间，实例保持等待状态的时间将增加1小时。只有实例的生命周期挂钩状态为 HANGING 时才可以进行回调操作。
 
         :param CompleteLifecycleActionRequest request
-        :return: None
+        :return: CompleteLifecycleActionResponse
         """
         return self.complete_lifecycle_action_with_http_info(request)
 
@@ -116,15 +115,10 @@ class AsAsyncClient(Client):
         通过生命周期操作令牌或者通过实例ID和生命周期挂钩名称对伸缩实例指定的挂钩进行回调操作。如果在超时时间结束前已完成自定义操作，选择终止或继续完成生命周期操作。如果需要更多时间完成自定义操作，选择延长超时时间，实例保持等待状态的时间将增加1小时。只有实例的生命周期挂钩状态为 HANGING 时才可以进行回调操作。
 
         :param CompleteLifecycleActionRequest request
-        :return: None
+        :return: CompleteLifecycleActionResponse
         """
 
         all_params = ['scaling_group_id', 'bodyparam']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -140,25 +134,28 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_instance_hook/{scaling_group_id}/callback', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_instance_hook/{scaling_group_id}/callback',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='CompleteLifecycleActionResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -179,15 +176,10 @@ class AsAsyncClient(Client):
         创建生命周期挂钩，可为伸缩组添加一个或多个生命周期挂钩，最多添加5个。添加生命周期挂钩后，当伸缩组进行伸缩活动时，实例将被生命周期挂钩挂起并置于等待状态（正在加入伸缩组或正在移出伸缩组），实例将保持此状态直至超时时间结束或者用户手动回调。用户能够在实例保持等待状态的时间段内执行自定义操作，例如，用户可以在新启动的实例上安装或配置软件，也可以在实例终止前从实例中下载日志文件。
 
         :param CreateLifyCycleHookRequest request
-        :return: tuple(CreateLifyCycleHookResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateLifyCycleHookResponse
         """
 
         all_params = ['scaling_group_id', 'bodyparam']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -203,24 +195,25 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateLifyCycleHookResponse',
@@ -244,15 +237,10 @@ class AsAsyncClient(Client):
         创建弹性伸缩配置。伸缩配置是伸缩组内实例（弹性云服务器云主机）的模板，定义了伸缩组内待添加的实例的规格数据。伸缩配置与伸缩组是解耦的，同一伸缩配置可以被多个伸缩组使用。默认最多可以创建100个伸缩配置。
 
         :param CreateScalingConfigRequest request
-        :return: tuple(CreateScalingConfigResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateScalingConfigResponse
         """
 
         all_params = ['bodyparam']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -266,24 +254,25 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_configuration', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_configuration',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateScalingConfigResponse',
@@ -307,15 +296,10 @@ class AsAsyncClient(Client):
         伸缩组是具有相同应用场景的实例的集合，是启停伸缩策略和进行伸缩活动的基本单位。伸缩组内定义了最大实例数、期望实例数、最小实例数、虚拟私有云、子网、负载均衡等信息。默认最多可以创建10个伸缩组。如果伸缩组配置了负载均衡，在添加或移除实例时，会自动为实例绑定或解绑负载均衡监听器。如果伸缩组使用负载均衡健康检查方式，伸缩组中的实例需要启用负载均衡器的监听端口才能通过健康检查。端口启用可在安全组中进行配置，可参考添加安全组规则进行操作。
 
         :param CreateScalingGroupRequest request
-        :return: tuple(CreateScalingGroupResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateScalingGroupResponse
         """
 
         all_params = ['bodyparam']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -329,24 +313,25 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'appliction/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_group', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateScalingGroupResponse',
@@ -370,15 +355,10 @@ class AsAsyncClient(Client):
         给弹性伸缩组配置通知功能。每调用一次该接口，伸缩组即配置一个通知主题及其通知场景，每个伸缩组最多可以增加5个主题。通知主题由用户事先在SMN创建并进行订阅，当通知主题对应的通知场景出现时，伸缩组会向用户的订阅终端发送通知。
 
         :param CreateScalingNotificationRequest request
-        :return: tuple(CreateScalingNotificationResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateScalingNotificationResponse
         """
 
         all_params = ['scaling_group_id', 'bodyparam']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -394,24 +374,25 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_notification/{scaling_group_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_notification/{scaling_group_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateScalingNotificationResponse',
@@ -435,15 +416,10 @@ class AsAsyncClient(Client):
         创建弹性伸缩策略。伸缩策略定义了伸缩组内实例的扩张和收缩操作。如果执行伸缩策略造成伸缩组期望实例数与伸缩组内实例数不符，弹性伸缩会自动调整实例资源，以匹配期望实例数。当前伸缩策略支持告警触发策略，周期触发策略，定时触发策略。在策略执行具体动作中，可设置实例变化的个数，或根据当前实例的百分比数进行伸缩。
 
         :param CreateScalingPolicyRequest request
-        :return: tuple(CreateScalingPolicyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateScalingPolicyResponse
         """
 
         all_params = ['bodyparam']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -457,24 +433,25 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_policy', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateScalingPolicyResponse',
@@ -488,7 +465,7 @@ class AsAsyncClient(Client):
         创建或删除指定资源的标签。每个伸缩组最多添加10个标签。
 
         :param CreateScalingTagsRequest request
-        :return: None
+        :return: CreateScalingTagsResponse
         """
         return self.create_scaling_tags_with_http_info(request)
 
@@ -498,15 +475,10 @@ class AsAsyncClient(Client):
         创建或删除指定资源的标签。每个伸缩组最多添加10个标签。
 
         :param CreateScalingTagsRequest request
-        :return: None
+        :return: CreateScalingTagsResponse
         """
 
         all_params = ['resource_type', 'resource_id', 'bodyparam']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -524,25 +496,28 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/{resource_type}/{resource_id}/tags/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/{resource_type}/{resource_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='CreateScalingTagsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -553,7 +528,7 @@ class AsAsyncClient(Client):
         删除一个指定生命周期挂钩。伸缩组进行伸缩活动时，不允许删除该伸缩组内的生命周期挂钩。
 
         :param DeleteLifecycleHookRequest request
-        :return: None
+        :return: DeleteLifecycleHookResponse
         """
         return self.delete_lifecycle_hook_with_http_info(request)
 
@@ -563,15 +538,10 @@ class AsAsyncClient(Client):
         删除一个指定生命周期挂钩。伸缩组进行伸缩活动时，不允许删除该伸缩组内的生命周期挂钩。
 
         :param DeleteLifecycleHookRequest request
-        :return: None
+        :return: DeleteLifecycleHookResponse
         """
 
         all_params = ['scaling_group_id', 'lifecycle_hook_name']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -589,21 +559,24 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}/{lifecycle_hook_name}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}/{lifecycle_hook_name}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteLifecycleHookResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -614,7 +587,7 @@ class AsAsyncClient(Client):
         删除一个指定弹性伸缩配置。
 
         :param DeleteScalingConfigRequest request
-        :return: None
+        :return: DeleteScalingConfigResponse
         """
         return self.delete_scaling_config_with_http_info(request)
 
@@ -624,15 +597,10 @@ class AsAsyncClient(Client):
         删除一个指定弹性伸缩配置。
 
         :param DeleteScalingConfigRequest request
-        :return: None
+        :return: DeleteScalingConfigResponse
         """
 
         all_params = ['scaling_configuration_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -648,21 +616,24 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_configuration/{scaling_configuration_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_configuration/{scaling_configuration_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteScalingConfigResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -673,7 +644,7 @@ class AsAsyncClient(Client):
         删除一个指定弹性伸缩组。force_delete属性表示如果伸缩组存在ECS实例或正在进行伸缩活动，是否强制删除伸缩组并移出和释放ECS实例。默认值为no，表示不强制删除伸缩组。如果force_delete的值为no，必须满足以下两个条件，才能删除伸缩组：条件一：伸缩组没有正在进行的伸缩活动。条件二：伸缩组当前的ECS实例数量（current_instance_number）为0。如果force_delete的值为yes，伸缩组会被置于DELETING状态，拒绝接收新的伸缩活动请求，然后等待已有的伸缩活动完成，最后将伸缩组内所有ECS实例移出伸缩组（用户手动添加的ECS实例会被移出伸缩组，弹性伸缩自动创建的ECS实例会被自动删除）并删除伸缩组。
 
         :param DeleteScalingGroupRequest request
-        :return: None
+        :return: DeleteScalingGroupResponse
         """
         return self.delete_scaling_group_with_http_info(request)
 
@@ -683,15 +654,10 @@ class AsAsyncClient(Client):
         删除一个指定弹性伸缩组。force_delete属性表示如果伸缩组存在ECS实例或正在进行伸缩活动，是否强制删除伸缩组并移出和释放ECS实例。默认值为no，表示不强制删除伸缩组。如果force_delete的值为no，必须满足以下两个条件，才能删除伸缩组：条件一：伸缩组没有正在进行的伸缩活动。条件二：伸缩组当前的ECS实例数量（current_instance_number）为0。如果force_delete的值为yes，伸缩组会被置于DELETING状态，拒绝接收新的伸缩活动请求，然后等待已有的伸缩活动完成，最后将伸缩组内所有ECS实例移出伸缩组（用户手动添加的ECS实例会被移出伸缩组，弹性伸缩自动创建的ECS实例会被自动删除）并删除伸缩组。
 
         :param DeleteScalingGroupRequest request
-        :return: None
+        :return: DeleteScalingGroupResponse
         """
 
         all_params = ['scaling_group_id', 'force_delete']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -709,21 +675,24 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteScalingGroupResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -734,7 +703,7 @@ class AsAsyncClient(Client):
         从弹性伸缩组中移出一个指定实例。实例处于INSERVICE且移出后实例数不能小于伸缩组的最小实例数时才可以移出。当伸缩组没有伸缩活动时，才能移出实例。
 
         :param DeleteScalingInstanceRequest request
-        :return: None
+        :return: DeleteScalingInstanceResponse
         """
         return self.delete_scaling_instance_with_http_info(request)
 
@@ -744,15 +713,10 @@ class AsAsyncClient(Client):
         从弹性伸缩组中移出一个指定实例。实例处于INSERVICE且移出后实例数不能小于伸缩组的最小实例数时才可以移出。当伸缩组没有伸缩活动时，才能移出实例。
 
         :param DeleteScalingInstanceRequest request
-        :return: None
+        :return: DeleteScalingInstanceResponse
         """
 
         all_params = ['instance_id', 'instance_delete']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -770,21 +734,24 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_group_instance/{instance_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{instance_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteScalingInstanceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -795,7 +762,7 @@ class AsAsyncClient(Client):
         删除指定的弹性伸缩组中指定的通知。
 
         :param DeleteScalingNotificationRequest request
-        :return: None
+        :return: DeleteScalingNotificationResponse
         """
         return self.delete_scaling_notification_with_http_info(request)
 
@@ -805,15 +772,10 @@ class AsAsyncClient(Client):
         删除指定的弹性伸缩组中指定的通知。
 
         :param DeleteScalingNotificationRequest request
-        :return: None
+        :return: DeleteScalingNotificationResponse
         """
 
         all_params = ['scaling_group_id', 'topic_urn']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -831,21 +793,24 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_notification/{scaling_group_id}/{topic_urn}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_notification/{scaling_group_id}/{topic_urn}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteScalingNotificationResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -856,7 +821,7 @@ class AsAsyncClient(Client):
         删除一个指定弹性伸缩策略。
 
         :param DeleteScalingPolicyRequest request
-        :return: None
+        :return: DeleteScalingPolicyResponse
         """
         return self.delete_scaling_policy_with_http_info(request)
 
@@ -866,15 +831,10 @@ class AsAsyncClient(Client):
         删除一个指定弹性伸缩策略。
 
         :param DeleteScalingPolicyRequest request
-        :return: None
+        :return: DeleteScalingPolicyResponse
         """
 
         all_params = ['scaling_policy_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -890,21 +850,24 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteScalingPolicyResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -915,7 +878,7 @@ class AsAsyncClient(Client):
         创建或删除指定资源的标签。每个伸缩组最多添加10个标签。
 
         :param DeleteScalingTagsRequest request
-        :return: None
+        :return: DeleteScalingTagsResponse
         """
         return self.delete_scaling_tags_with_http_info(request)
 
@@ -925,15 +888,10 @@ class AsAsyncClient(Client):
         创建或删除指定资源的标签。每个伸缩组最多添加10个标签。
 
         :param DeleteScalingTagsRequest request
-        :return: None
+        :return: DeleteScalingTagsResponse
         """
 
         all_params = ['resource_type', 'resource_id', 'bodyparam']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -951,25 +909,28 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/{resource_type}/{resource_id}/tags/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/{resource_type}/{resource_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteScalingTagsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -980,7 +941,7 @@ class AsAsyncClient(Client):
         启用或停止一个指定弹性伸缩组。已停用状态的伸缩组，不会自动触发任何伸缩活动。当伸缩组正在进行伸缩活动，即使停用，正在进行的伸缩活动也不会立即停止。
 
         :param EnableOrDisableScalingGroupRequest request
-        :return: None
+        :return: EnableOrDisableScalingGroupResponse
         """
         return self.enable_or_disable_scaling_group_with_http_info(request)
 
@@ -990,15 +951,10 @@ class AsAsyncClient(Client):
         启用或停止一个指定弹性伸缩组。已停用状态的伸缩组，不会自动触发任何伸缩活动。当伸缩组正在进行伸缩活动，即使停用，正在进行的伸缩活动也不会立即停止。
 
         :param EnableOrDisableScalingGroupRequest request
-        :return: None
+        :return: EnableOrDisableScalingGroupResponse
         """
 
         all_params = ['scaling_group_id', 'body_param']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1014,25 +970,28 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='EnableOrDisableScalingGroupResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1043,7 +1002,7 @@ class AsAsyncClient(Client):
         立即执行或启用或停止一个指定弹性伸缩策略。当伸缩组、伸缩策略状态处于INSERVICE时，伸缩策略才能被正确执行，否则会执行失败。
 
         :param ExecuteScalingPolicyRequest request
-        :return: None
+        :return: ExecuteScalingPolicyResponse
         """
         return self.execute_scaling_policy_with_http_info(request)
 
@@ -1053,15 +1012,10 @@ class AsAsyncClient(Client):
         立即执行或启用或停止一个指定弹性伸缩策略。当伸缩组、伸缩策略状态处于INSERVICE时，伸缩策略才能被正确执行，否则会执行失败。
 
         :param ExecuteScalingPolicyRequest request
-        :return: None
+        :return: ExecuteScalingPolicyResponse
         """
 
         all_params = ['scaling_policy_id', 'bodyparam']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1077,25 +1031,28 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='ExecuteScalingPolicyResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1116,15 +1073,10 @@ class AsAsyncClient(Client):
         添加生命周期挂钩后，当伸缩组进行伸缩活动时，实例将被挂钩挂起并置于等待状态，根据输入条件过滤查询弹性伸缩组中伸缩实例的挂起信息。可根据实例ID进行条件过滤查询。若不加过滤条件默认查询指定伸缩组内所有实例挂起信息。
 
         :param ListHookInstancesRequest request
-        :return: tuple(ListHookInstancesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListHookInstancesResponse
         """
 
         all_params = ['scaling_group_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1142,20 +1094,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_instance_hook/{scaling_group_id}/list', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_instance_hook/{scaling_group_id}/list',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListHookInstancesResponse',
@@ -1179,15 +1132,10 @@ class AsAsyncClient(Client):
         根据伸缩组ID查询生命周期挂钩列表。
 
         :param ListLifeCycleHooksRequest request
-        :return: tuple(ListLifeCycleHooksResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListLifeCycleHooksResponse
         """
 
         all_params = ['scaling_group_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1203,20 +1151,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}/list', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}/list',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListLifeCycleHooksResponse',
@@ -1240,15 +1189,10 @@ class AsAsyncClient(Client):
         根据项目ID查询指定资源类型的资源实例。资源、资源tag默认按照创建时间倒序。
 
         :param ListResourceInstancesRequest request
-        :return: tuple(ListResourceInstancesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListResourceInstancesResponse
         """
 
         all_params = ['resource_type', 'bodyparam']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1264,24 +1208,25 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/{resource_type}/resource_instances/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/{resource_type}/resource_instances/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListResourceInstancesResponse',
@@ -1305,15 +1250,10 @@ class AsAsyncClient(Client):
         根据输入条件过滤查询伸缩活动日志。查询结果分页显示。可根据起始时间，截止时间，起始行号，记录数进行条件过滤查询。若不加过滤条件默认查询最多20条伸缩活动日志信息。
 
         :param ListScalingActivityLogsRequest request
-        :return: tuple(ListScalingActivityLogsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListScalingActivityLogsResponse
         """
 
         all_params = ['scaling_group_id', 'start_time', 'end_time', 'start_number', 'limit']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1337,20 +1277,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_activity_log/{scaling_group_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_activity_log/{scaling_group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListScalingActivityLogsResponse',
@@ -1374,15 +1315,10 @@ class AsAsyncClient(Client):
         根据输入条件过滤查询弹性伸缩配置。查询结果分页显示。可以根据伸缩配置名称，镜像ID，起始行号，记录条数进行条件过滤查询。若不加过滤条件默认最多查询租户下20条伸缩配置信息。
 
         :param ListScalingConfigsRequest request
-        :return: tuple(ListScalingConfigsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListScalingConfigsResponse
         """
 
         all_params = ['scaling_configuration_name', 'image_id', 'start_number', 'limit']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1404,20 +1340,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_configuration', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_configuration',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListScalingConfigsResponse',
@@ -1441,15 +1378,10 @@ class AsAsyncClient(Client):
         根据输入条件过滤查询弹性伸缩组列表。查询结果分页显示。可根据伸缩组名称，伸缩配置ID，伸缩组状态，企业项目ID，起始行号，记录条数进行条件过滤查询。若不加过滤条件默认最多查询租户下20条伸缩组信息。
 
         :param ListScalingGroupsRequest request
-        :return: tuple(ListScalingGroupsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListScalingGroupsResponse
         """
 
         all_params = ['scaling_group_name', 'scaling_configuration_id', 'scaling_group_status', 'start_number', 'limit']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1473,20 +1405,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_group', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListScalingGroupsResponse',
@@ -1510,15 +1443,10 @@ class AsAsyncClient(Client):
         根据输入条件过滤查询弹性伸缩组中实例信息。查询结果分页显示。可根据实例在伸缩组中的生命周期状态，实例健康状态，实例保护状态，起始行号，记录条数进行条件过滤查询。若不加过滤条件默认查询组内最多20条实例信息
 
         :param ListScalingInstancesRequest request
-        :return: tuple(ListScalingInstancesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListScalingInstancesResponse
         """
 
         all_params = ['scaling_group_id', 'life_cycle_state', 'health_status', 'protect_from_scaling_down', 'start_number', 'limit']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1544,20 +1472,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/list', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/list',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListScalingInstancesResponse',
@@ -1581,15 +1510,10 @@ class AsAsyncClient(Client):
         根据伸缩组ID查询指定弹性伸缩组的通知列表。
 
         :param ListScalingNotificationsRequest request
-        :return: tuple(ListScalingNotificationsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListScalingNotificationsResponse
         """
 
         all_params = ['scaling_group_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1605,20 +1529,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_notification/{scaling_group_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_notification/{scaling_group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListScalingNotificationsResponse',
@@ -1642,15 +1567,10 @@ class AsAsyncClient(Client):
         根据输入条件过滤查询弹性伸缩策略。查询结果分页显示。可根据伸缩策略名称，策略类型，伸缩策略ID，起始行号，记录数进行条件过滤查询。若不加过滤条件默认查询租户下指定伸缩组内最多20条伸缩策略信息。
 
         :param ListScalingPoliciesRequest request
-        :return: tuple(ListScalingPoliciesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListScalingPoliciesResponse
         """
 
         all_params = ['scaling_group_id', 'scaling_policy_name', 'scaling_policy_type', 'scaling_policy_id', 'start_number', 'limit']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1676,20 +1596,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_group_id}/list', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_group_id}/list',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListScalingPoliciesResponse',
@@ -1713,15 +1634,10 @@ class AsAsyncClient(Client):
         根据输入条件过滤查询策略执行的历史记录。查询结果分页显示。可根据日志ID，伸缩资源类型，伸缩资源ID，策略执行类型，查询额起始，查询截止时间，查询起始行号，查询记录数进行条件过滤查询。若不加过滤条件默认查询最多20条策略执行日志信息。
 
         :param ListScalingPolicyExecuteLogsRequest request
-        :return: tuple(ListScalingPolicyExecuteLogsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListScalingPolicyExecuteLogsResponse
         """
 
         all_params = ['scaling_policy_id', 'log_id', 'scaling_resource_type', 'scaling_resource_id', 'execute_type', 'start_time', 'end_time', 'start_number', 'limit']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1753,20 +1669,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_policy_execute_log/{scaling_policy_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy_execute_log/{scaling_policy_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListScalingPolicyExecuteLogsResponse',
@@ -1790,15 +1707,10 @@ class AsAsyncClient(Client):
         根据项目ID和资源ID查询指定资源类型的资源标签列表。
 
         :param ListScalingTagInfosByResourceIdRequest request
-        :return: tuple(ListScalingTagInfosByResourceIdResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListScalingTagInfosByResourceIdResponse
         """
 
         all_params = ['resource_type', 'resource_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1816,20 +1728,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/{resource_type}/{resource_id}/tags', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/{resource_type}/{resource_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListScalingTagInfosByResourceIdResponse',
@@ -1853,15 +1766,10 @@ class AsAsyncClient(Client):
         根据项目ID查询指定资源类型的标签列表。
 
         :param ListScalingTagInfosByTenantIdRequest request
-        :return: tuple(ListScalingTagInfosByTenantIdResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListScalingTagInfosByTenantIdResponse
         """
 
         all_params = ['resource_type']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1877,20 +1785,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/{resource_type}/tags', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/{resource_type}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListScalingTagInfosByTenantIdResponse',
@@ -1914,15 +1823,10 @@ class AsAsyncClient(Client):
         根据伸缩组ID及生命周期挂钩名称查询指定的生命周期挂钩详情。
 
         :param ShowLifeCycleHookRequest request
-        :return: tuple(ShowLifeCycleHookResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowLifeCycleHookResponse
         """
 
         all_params = ['scaling_group_id', 'lifecycle_hook_name']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1940,20 +1844,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}/{lifecycle_hook_name}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}/{lifecycle_hook_name}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowLifeCycleHookResponse',
@@ -1977,15 +1882,10 @@ class AsAsyncClient(Client):
         根据伸缩组ID查询指定弹性伸缩组下的伸缩策略和伸缩实例的配额总数及已使用配额数。
 
         :param ShowPolicyAndInstanceQuotaRequest request
-        :return: tuple(ShowPolicyAndInstanceQuotaResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowPolicyAndInstanceQuotaResponse
         """
 
         all_params = ['scaling_group_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2001,20 +1901,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/quotas/{scaling_group_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/quotas/{scaling_group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowPolicyAndInstanceQuotaResponse',
@@ -2038,15 +1939,10 @@ class AsAsyncClient(Client):
         查询指定租户下的弹性伸缩组、伸缩配置、伸缩带宽策略、伸缩策略和伸缩实例的配额总数及已使用配额数。
 
         :param ShowResourceQuotaRequest request
-        :return: tuple(ShowResourceQuotaResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowResourceQuotaResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2060,20 +1956,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/quotas', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/quotas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowResourceQuotaResponse',
@@ -2097,15 +1994,10 @@ class AsAsyncClient(Client):
         根据伸缩配置ID查询一个弹性伸缩配置的详细信息。
 
         :param ShowScalingConfigRequest request
-        :return: tuple(ShowScalingConfigResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowScalingConfigResponse
         """
 
         all_params = ['scaling_configuration_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2121,20 +2013,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_configuration/{scaling_configuration_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_configuration/{scaling_configuration_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowScalingConfigResponse',
@@ -2158,15 +2051,10 @@ class AsAsyncClient(Client):
         查询一个指定弹性伸缩组详情。
 
         :param ShowScalingGroupRequest request
-        :return: tuple(ShowScalingGroupResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowScalingGroupResponse
         """
 
         all_params = ['scaling_group_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2182,20 +2070,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowScalingGroupResponse',
@@ -2219,15 +2108,10 @@ class AsAsyncClient(Client):
         查询指定弹性伸缩策略信息。
 
         :param ShowScalingPolicyRequest request
-        :return: tuple(ShowScalingPolicyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowScalingPolicyResponse
         """
 
         all_params = ['scaling_policy_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2243,20 +2127,21 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowScalingPolicyResponse',
@@ -2280,15 +2165,10 @@ class AsAsyncClient(Client):
         修改一个指定生命周期挂钩中的信息。
 
         :param UpdateLifeCycleHookRequest request
-        :return: tuple(UpdateLifeCycleHookResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateLifeCycleHookResponse
         """
 
         all_params = ['scaling_group_id', 'lifecycle_hook_name', 'bodyparam']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2306,24 +2186,25 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}/{lifecycle_hook_name}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}/{lifecycle_hook_name}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateLifeCycleHookResponse',
@@ -2347,15 +2228,10 @@ class AsAsyncClient(Client):
         修改一个指定弹性伸缩组中的信息。更换伸缩组的伸缩配置，伸缩组中已经存在的使用之前伸缩配置创建的云服务器云主机不受影响。伸缩组为没有正在进行的伸缩活动时，可以修改伸缩组的子网、可用区和负载均衡配置。当伸缩组的期望实例数改变时，会触发伸缩活动加入或移出实例。期望实例数必须大于或等于最小实例数，必须小于或等于最大实例数。
 
         :param UpdateScalingGroupRequest request
-        :return: tuple(UpdateScalingGroupResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateScalingGroupResponse
         """
 
         all_params = ['scaling_group_id', 'bodyparam']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2371,24 +2247,25 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateScalingGroupResponse',
@@ -2402,7 +2279,7 @@ class AsAsyncClient(Client):
         批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
 
         :param UpdateScalingGroupInstanceRequest request
-        :return: None
+        :return: UpdateScalingGroupInstanceResponse
         """
         return self.update_scaling_group_instance_with_http_info(request)
 
@@ -2412,15 +2289,10 @@ class AsAsyncClient(Client):
         批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
 
         :param UpdateScalingGroupInstanceRequest request
-        :return: None
+        :return: UpdateScalingGroupInstanceResponse
         """
 
         all_params = ['scaling_group_id', 'bodyparam']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2436,25 +2308,28 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateScalingGroupInstanceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2475,15 +2350,10 @@ class AsAsyncClient(Client):
         修改指定弹性伸缩策略。
 
         :param UpdateScalingPolicyRequest request
-        :return: tuple(UpdateScalingPolicyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateScalingPolicyResponse
         """
 
         all_params = ['scaling_policy_id', 'bodyparam']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2499,24 +2369,25 @@ class AsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateScalingPolicyResponse',
@@ -2546,6 +2417,15 @@ class AsAsyncClient(Client):
         :return:
             Return the response directly.
         """
-        return self.do_http_request(method, resource_path, path_params,
-                                    query_params, header_params, body, post_params,
-                                    response_type, collection_formats, request_type, True)
+        return self.do_http_request(
+            method=method,
+            resource_path=resource_path,
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body,
+            post_params=post_params,
+            response_type=response_type,
+            collection_formats=collection_formats,
+            request_type=request_type,
+	    async_request=True)

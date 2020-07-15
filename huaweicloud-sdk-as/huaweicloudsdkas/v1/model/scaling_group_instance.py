@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ScalingGroupInstance(object):
+
+
+
+class ScalingGroupInstance:
 
 
     """
@@ -45,8 +48,10 @@ class ScalingGroupInstance(object):
         'protect_from_scaling_down': 'protect_from_scaling_down'
     }
 
-    def __init__(self, instance_id=None, instance_name=None, scaling_group_id=None, scaling_group_name=None, life_cycle_state=None, health_status=None, scaling_configuration_name=None, scaling_configuration_id=None, create_time=None, protect_from_scaling_down=None):  # noqa: E501
+    def __init__(self, instance_id=None, instance_name=None, scaling_group_id=None, scaling_group_name=None, life_cycle_state=None, health_status=None, scaling_configuration_name=None, scaling_configuration_id=None, create_time=None, protect_from_scaling_down=None):
         """ScalingGroupInstance - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._instance_name = None

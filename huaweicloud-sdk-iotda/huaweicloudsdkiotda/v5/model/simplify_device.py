@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SimplifyDevice(object):
+
+
+
+class SimplifyDevice:
 
 
     """
@@ -33,8 +36,10 @@ class SimplifyDevice(object):
         'product_id': 'product_id'
     }
 
-    def __init__(self, device_id=None, node_id=None, device_name=None, product_id=None):  # noqa: E501
+    def __init__(self, device_id=None, node_id=None, device_name=None, product_id=None):
         """SimplifyDevice - a model defined in huaweicloud sdk"""
+        
+        
 
         self._device_id = None
         self._node_id = None

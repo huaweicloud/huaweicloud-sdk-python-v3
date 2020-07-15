@@ -4,12 +4,13 @@
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.http.http_config import HttpConfig
-from huaweicloudsdkvpc.v2 import VpcClient
+from huaweicloudsdkvpc.v2 import *
 
 
 def list_vpc(client):
     try:
-        response = client.list_vpcs()
+        request = ListVpcsRequest()
+        response = client.list_vpcs(request)
         print(response)
     except exceptions.ClientRequestException as e:
         print(e.status_code)
@@ -29,7 +30,7 @@ if __name__ == "__main__":
     credentials = BasicCredentials(ak, sk, project_id)
 
     vpc_client = VpcClient.new_builder(VpcClient) \
-        .with_config(config) \
+        .with_http_config(config) \
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \
         .build()

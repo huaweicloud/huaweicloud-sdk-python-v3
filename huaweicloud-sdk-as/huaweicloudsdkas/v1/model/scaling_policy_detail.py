@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ScalingPolicyDetail(object):
+
+
+
+class ScalingPolicyDetail:
 
 
     """
@@ -43,8 +46,10 @@ class ScalingPolicyDetail(object):
         'create_time': 'create_time'
     }
 
-    def __init__(self, scaling_group_id=None, scaling_policy_name=None, scaling_policy_id=None, scaling_policy_type=None, alarm_id=None, scheduled_policy=None, scaling_policy_action=None, cool_down_time=None, create_time=None):  # noqa: E501
+    def __init__(self, scaling_group_id=None, scaling_policy_name=None, scaling_policy_id=None, scaling_policy_type=None, alarm_id=None, scheduled_policy=None, scaling_policy_action=None, cool_down_time=None, create_time=None):
         """ScalingPolicyDetail - a model defined in huaweicloud sdk"""
+        
+        
 
         self._scaling_group_id = None
         self._scaling_policy_name = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchUpdateMembersRequestBody(object):
+
+
+
+class BatchUpdateMembersRequestBody:
 
 
     """
@@ -33,8 +36,10 @@ class BatchUpdateMembersRequestBody(object):
         'vault_id': 'vault_id'
     }
 
-    def __init__(self, images=None, project_id=None, status=None, vault_id=None):  # noqa: E501
+    def __init__(self, images=None, project_id=None, status=None, vault_id=None):
         """BatchUpdateMembersRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._images = None
         self._project_id = None

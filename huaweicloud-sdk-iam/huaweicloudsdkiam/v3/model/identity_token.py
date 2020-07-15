@@ -6,7 +6,10 @@ import re
 import six
 
 
-class IdentityToken(object):
+
+
+
+class IdentityToken:
 
 
     """
@@ -26,11 +29,13 @@ class IdentityToken(object):
 
     attribute_map = {
         'id': 'id',
-        'duration_seconds': 'duration-seconds'
+        'duration_seconds': 'duration_seconds'
     }
 
-    def __init__(self, id=None, duration_seconds=900):  # noqa: E501
+    def __init__(self, id=None, duration_seconds=900):
         """IdentityToken - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._duration_seconds = None

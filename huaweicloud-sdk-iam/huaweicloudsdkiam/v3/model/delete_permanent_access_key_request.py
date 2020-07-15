@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeletePermanentAccessKeyRequest(object):
+
+
+
+class DeletePermanentAccessKeyRequest:
 
 
     """
@@ -27,8 +30,10 @@ class DeletePermanentAccessKeyRequest(object):
         'access_key': 'access_key'
     }
 
-    def __init__(self, access_key=None):  # noqa: E501
+    def __init__(self, access_key=None):
         """DeletePermanentAccessKeyRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._access_key = None
         self.discriminator = None

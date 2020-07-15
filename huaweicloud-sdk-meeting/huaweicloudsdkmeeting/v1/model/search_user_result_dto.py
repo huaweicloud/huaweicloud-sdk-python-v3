@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SearchUserResultDTO(object):
+
+
+
+class SearchUserResultDTO:
 
 
     """
@@ -61,8 +64,10 @@ class SearchUserResultDTO(object):
         'hide_phone': 'hidePhone'
     }
 
-    def __init__(self, id=None, user_account=None, name=None, english_name=None, phone=None, country=None, email=None, vmr_id=None, dept_code=None, dept_name_path=None, user_type=None, admin_type=None, signature=None, title=None, desc=None, status=None, sort_level=None, hide_phone=None):  # noqa: E501
+    def __init__(self, id=None, user_account=None, name=None, english_name=None, phone=None, country=None, email=None, vmr_id=None, dept_code=None, dept_name_path=None, user_type=None, admin_type=None, signature=None, title=None, desc=None, status=None, sort_level=None, hide_phone=None):
         """SearchUserResultDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._user_account = None

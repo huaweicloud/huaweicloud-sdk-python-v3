@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ObsInfo(object):
+
+
+
+class ObsInfo:
 
 
     """
@@ -24,7 +27,7 @@ class ObsInfo(object):
         'file_prefix_name': 'str',
         'is_obs_created': 'bool',
         'is_authorized_bucket': 'bool',
-        'bucket_lifecycle': 'str'
+        'bucket_lifecycle': 'int'
     }
 
     attribute_map = {
@@ -35,8 +38,10 @@ class ObsInfo(object):
         'bucket_lifecycle': 'bucket_lifecycle'
     }
 
-    def __init__(self, bucket_name=None, file_prefix_name=None, is_obs_created=None, is_authorized_bucket=None, bucket_lifecycle=None):  # noqa: E501
+    def __init__(self, bucket_name=None, file_prefix_name=None, is_obs_created=None, is_authorized_bucket=None, bucket_lifecycle=None):
         """ObsInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._bucket_name = None
         self._file_prefix_name = None
@@ -151,7 +156,7 @@ class ObsInfo(object):
         标识配置桶内对象存储周期。 当\"tracker_type\"参数值为\"data\"时该参数值有效。
 
         :return: The bucket_lifecycle of this ObsInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._bucket_lifecycle
 
@@ -162,7 +167,7 @@ class ObsInfo(object):
         标识配置桶内对象存储周期。 当\"tracker_type\"参数值为\"data\"时该参数值有效。
 
         :param bucket_lifecycle: The bucket_lifecycle of this ObsInfo.
-        :type: str
+        :type: int
         """
         self._bucket_lifecycle = bucket_lifecycle
 

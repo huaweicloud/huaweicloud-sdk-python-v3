@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateInstanceRequestBody(object):
+
+
+
+class CreateInstanceRequestBody:
 
 
     """
@@ -55,8 +58,10 @@ class CreateInstanceRequestBody(object):
         'ssl_option': 'ssl_option'
     }
 
-    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, disk_encryption_id=None, mode=None, flavor=None, storage=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None):  # noqa: E501
+    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, disk_encryption_id=None, mode=None, flavor=None, storage=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None):
         """CreateInstanceRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._datastore = None

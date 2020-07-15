@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ModifyInstancePasswordBody(object):
+
+
+
+class ModifyInstancePasswordBody:
 
 
     """
@@ -29,8 +32,10 @@ class ModifyInstancePasswordBody(object):
         'new_password': 'new_password'
     }
 
-    def __init__(self, old_password=None, new_password=None):  # noqa: E501
+    def __init__(self, old_password=None, new_password=None):
         """ModifyInstancePasswordBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._old_password = None
         self._new_password = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class MigrationTaskList(object):
+
+
+
+class MigrationTaskList:
 
 
     """
@@ -41,8 +44,10 @@ class MigrationTaskList(object):
         'created_at': 'created_at'
     }
 
-    def __init__(self, task_id=None, task_name=None, status=None, migration_type=None, migration_method=None, target_instance_name=None, data_source=None, created_at=None):  # noqa: E501
+    def __init__(self, task_id=None, task_name=None, status=None, migration_type=None, migration_method=None, target_instance_name=None, data_source=None, created_at=None):
         """MigrationTaskList - a model defined in huaweicloud sdk"""
+        
+        
 
         self._task_id = None
         self._task_name = None

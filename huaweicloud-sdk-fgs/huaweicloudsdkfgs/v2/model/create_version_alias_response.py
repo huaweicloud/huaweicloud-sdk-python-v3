@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateVersionAliasResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CreateVersionAliasResponse(SdkResponse):
 
 
     """
@@ -37,8 +40,10 @@ class CreateVersionAliasResponse(object):
         'additional_version_weights': 'additional_version_weights'
     }
 
-    def __init__(self, name=None, version=None, description=None, last_modified=None, alias_urn=None, additional_version_weights=None):  # noqa: E501
+    def __init__(self, name=None, version=None, description=None, last_modified=None, alias_urn=None, additional_version_weights=None):
         """CreateVersionAliasResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._name = None
         self._version = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ValidateTokenReqDTO(object):
+
+
+
+class ValidateTokenReqDTO:
 
 
     """
@@ -31,8 +34,10 @@ class ValidateTokenReqDTO(object):
         'need_account_info': 'needAccountInfo'
     }
 
-    def __init__(self, token=None, need_gen_new_token=False, need_account_info=True):  # noqa: E501
+    def __init__(self, token=None, need_gen_new_token=False, need_account_info=True):
         """ValidateTokenReqDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._token = None
         self._need_gen_new_token = None

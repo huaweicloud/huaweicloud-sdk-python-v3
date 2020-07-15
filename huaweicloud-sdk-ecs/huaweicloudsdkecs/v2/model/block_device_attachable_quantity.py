@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BlockDeviceAttachableQuantity(object):
+
+
+
+class BlockDeviceAttachableQuantity:
 
 
     """
@@ -31,8 +34,10 @@ class BlockDeviceAttachableQuantity(object):
         'free_disk': 'free_disk'
     }
 
-    def __init__(self, free_scsi=None, free_blk=None, free_disk=None):  # noqa: E501
+    def __init__(self, free_scsi=None, free_blk=None, free_disk=None):
         """BlockDeviceAttachableQuantity - a model defined in huaweicloud sdk"""
+        
+        
 
         self._free_scsi = None
         self._free_blk = None

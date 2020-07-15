@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SearchDevicesRequest(object):
+
+
+
+class SearchDevicesRequest:
 
 
     """
@@ -41,8 +44,10 @@ class SearchDevicesRequest(object):
         'enable_sub_dept': 'enableSubDept'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=100, search_key=None, model=None, dept_code=None, enable_sub_dept=None):  # noqa: E501
+    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=100, search_key=None, model=None, dept_code=None, enable_sub_dept=None):
         """SearchDevicesRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_request_id = None
         self._accept_language = None

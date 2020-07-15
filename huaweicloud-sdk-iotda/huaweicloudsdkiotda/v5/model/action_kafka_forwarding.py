@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ActionKafkaForwarding(object):
+
+
+
+class ActionKafkaForwarding:
 
 
     """
@@ -39,8 +42,10 @@ class ActionKafkaForwarding(object):
         'kafka_mechanism': 'kafka_mechanism'
     }
 
-    def __init__(self, region_name=None, project_id=None, kafka_addresses=None, kafka_topic=None, kafka_username=None, kafka_password=None, kafka_mechanism=None):  # noqa: E501
+    def __init__(self, region_name=None, project_id=None, kafka_addresses=None, kafka_topic=None, kafka_username=None, kafka_password=None, kafka_mechanism=None):
         """ActionKafkaForwarding - a model defined in huaweicloud sdk"""
+        
+        
 
         self._region_name = None
         self._project_id = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AuthInfoWithoutSecret(object):
+
+
+
+class AuthInfoWithoutSecret:
 
 
     """
@@ -29,8 +32,10 @@ class AuthInfoWithoutSecret(object):
         'timeout': 'timeout'
     }
 
-    def __init__(self, secure_access=True, timeout=0):  # noqa: E501
+    def __init__(self, secure_access=True, timeout=0):
         """AuthInfoWithoutSecret - a model defined in huaweicloud sdk"""
+        
+        
 
         self._secure_access = None
         self._timeout = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class QueryDeviceSimplify(object):
+
+
+
+class QueryDeviceSimplify:
 
 
     """
@@ -53,8 +56,10 @@ class QueryDeviceSimplify(object):
         'tags': 'tags'
     }
 
-    def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, description=None, fw_version=None, sw_version=None, product_id=None, product_name=None, status=None, tags=None):  # noqa: E501
+    def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, description=None, fw_version=None, sw_version=None, product_id=None, product_name=None, status=None, tags=None):
         """QueryDeviceSimplify - a model defined in huaweicloud sdk"""
+        
+        
 
         self._app_id = None
         self._app_name = None

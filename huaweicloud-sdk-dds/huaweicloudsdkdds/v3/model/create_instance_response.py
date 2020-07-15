@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateInstanceResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CreateInstanceResponse(SdkResponse):
 
 
     """
@@ -61,8 +64,10 @@ class CreateInstanceResponse(object):
         'job_id': 'job_id'
     }
 
-    def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, disk_encryption_id=None, mode=None, flavor=None, storage=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, job_id=None):  # noqa: E501
+    def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, disk_encryption_id=None, mode=None, flavor=None, storage=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, job_id=None):
         """CreateInstanceResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._id = None
         self._datastore = None

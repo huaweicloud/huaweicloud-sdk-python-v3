@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateCertificateDTO(object):
+
+
+
+class CreateCertificateDTO:
 
 
     """
@@ -29,8 +32,10 @@ class CreateCertificateDTO(object):
         'app_id': 'app_id'
     }
 
-    def __init__(self, content=None, app_id=None):  # noqa: E501
+    def __init__(self, content=None, app_id=None):
         """CreateCertificateDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._content = None
         self._app_id = None

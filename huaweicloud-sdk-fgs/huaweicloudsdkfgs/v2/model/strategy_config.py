@@ -6,7 +6,10 @@ import re
 import six
 
 
-class StrategyConfig(object):
+
+
+
+class StrategyConfig:
 
 
     """
@@ -27,8 +30,10 @@ class StrategyConfig(object):
         'concurrency': 'concurrency'
     }
 
-    def __init__(self, concurrency=None):  # noqa: E501
+    def __init__(self, concurrency=None):
         """StrategyConfig - a model defined in huaweicloud sdk"""
+        
+        
 
         self._concurrency = None
         self.discriminator = None

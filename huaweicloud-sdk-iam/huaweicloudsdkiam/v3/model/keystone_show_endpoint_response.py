@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneShowEndpointResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class KeystoneShowEndpointResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class KeystoneShowEndpointResponse(object):
         'endpoint': 'endpoint'
     }
 
-    def __init__(self, endpoint=None):  # noqa: E501
+    def __init__(self, endpoint=None):
         """KeystoneShowEndpointResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._endpoint = None
         self.discriminator = None

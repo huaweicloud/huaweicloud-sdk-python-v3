@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchDeleteDCSInstancesRequest(object):
+
+
+
+class BatchDeleteDCSInstancesRequest:
 
 
     """
@@ -29,8 +32,10 @@ class BatchDeleteDCSInstancesRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, all_failure=None, body=None):  # noqa: E501
+    def __init__(self, all_failure=None, body=None):
         """BatchDeleteDCSInstancesRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._all_failure = None
         self._body = None

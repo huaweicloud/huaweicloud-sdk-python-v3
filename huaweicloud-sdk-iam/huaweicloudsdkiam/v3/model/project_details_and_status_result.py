@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ProjectDetailsAndStatusResult(object):
+
+
+
+class ProjectDetailsAndStatusResult:
 
 
     """
@@ -41,8 +44,10 @@ class ProjectDetailsAndStatusResult(object):
         'status': 'status'
     }
 
-    def __init__(self, domain_id=None, is_domain=None, parent_id=None, name=None, description=None, id=None, enabled=None, status=None):  # noqa: E501
+    def __init__(self, domain_id=None, is_domain=None, parent_id=None, name=None, description=None, id=None, enabled=None, status=None):
         """ProjectDetailsAndStatusResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._domain_id = None
         self._is_domain = None

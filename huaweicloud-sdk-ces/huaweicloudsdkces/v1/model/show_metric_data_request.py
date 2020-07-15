@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowMetricDataRequest(object):
+
+
+
+class ShowMetricDataRequest:
 
 
     """
@@ -43,8 +46,10 @@ class ShowMetricDataRequest(object):
         'to': 'to'
     }
 
-    def __init__(self, dim0=None, dim1=None, dim2=None, filter=None, _from=None, metric_name=None, namespace=None, period=None, to=None):  # noqa: E501
+    def __init__(self, dim0=None, dim1=None, dim2=None, filter=None, _from=None, metric_name=None, namespace=None, period=None, to=None):
         """ShowMetricDataRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._dim0 = None
         self._dim1 = None

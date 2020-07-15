@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RedisConfig(object):
+
+
+
+class RedisConfig:
 
 
     """
@@ -31,8 +34,10 @@ class RedisConfig(object):
         'param_id': 'param_id'
     }
 
-    def __init__(self, param_value=None, param_name=None, param_id=None):  # noqa: E501
+    def __init__(self, param_value=None, param_name=None, param_id=None):
         """RedisConfig - a model defined in huaweicloud sdk"""
+        
+        
 
         self._param_value = None
         self._param_name = None

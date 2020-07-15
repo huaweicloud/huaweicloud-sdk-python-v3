@@ -11,6 +11,9 @@ from huaweicloudsdkiotda.v5.model.action_kafka_forwarding import ActionKafkaForw
 from huaweicloudsdkiotda.v5.model.action_obs_forwarding import ActionObsForwarding
 from huaweicloudsdkiotda.v5.model.action_roma_forwarding import ActionRomaForwarding
 from huaweicloudsdkiotda.v5.model.action_smn_forwarding import ActionSmnForwarding
+from huaweicloudsdkiotda.v5.model.add_application import AddApplication
+from huaweicloudsdkiotda.v5.model.add_application_request import AddApplicationRequest
+from huaweicloudsdkiotda.v5.model.add_application_response import AddApplicationResponse
 from huaweicloudsdkiotda.v5.model.add_certificate_request import AddCertificateRequest
 from huaweicloudsdkiotda.v5.model.add_certificate_response import AddCertificateResponse
 from huaweicloudsdkiotda.v5.model.add_device import AddDevice
@@ -20,6 +23,7 @@ from huaweicloudsdkiotda.v5.model.add_device_group_response import AddDeviceGrou
 from huaweicloudsdkiotda.v5.model.add_device_request import AddDeviceRequest
 from huaweicloudsdkiotda.v5.model.add_device_response import AddDeviceResponse
 from huaweicloudsdkiotda.v5.model.add_product import AddProduct
+from huaweicloudsdkiotda.v5.model.application_dto import ApplicationDTO
 from huaweicloudsdkiotda.v5.model.auth_info import AuthInfo
 from huaweicloudsdkiotda.v5.model.auth_info_without_secret import AuthInfoWithoutSecret
 from huaweicloudsdkiotda.v5.model.bind_tags_dto import BindTagsDTO
@@ -48,6 +52,8 @@ from huaweicloudsdkiotda.v5.model.create_sub_req import CreateSubReq
 from huaweicloudsdkiotda.v5.model.create_subscription_request import CreateSubscriptionRequest
 from huaweicloudsdkiotda.v5.model.create_subscription_response import CreateSubscriptionResponse
 from huaweicloudsdkiotda.v5.model.daily_timer_type import DailyTimerType
+from huaweicloudsdkiotda.v5.model.delete_application_request import DeleteApplicationRequest
+from huaweicloudsdkiotda.v5.model.delete_application_response import DeleteApplicationResponse
 from huaweicloudsdkiotda.v5.model.delete_certificate_request import DeleteCertificateRequest
 from huaweicloudsdkiotda.v5.model.delete_certificate_response import DeleteCertificateResponse
 from huaweicloudsdkiotda.v5.model.delete_device_group_request import DeleteDeviceGroupRequest
@@ -119,6 +125,10 @@ from huaweicloudsdkiotda.v5.model.service_command_para import ServiceCommandPara
 from huaweicloudsdkiotda.v5.model.service_command_response import ServiceCommandResponse
 from huaweicloudsdkiotda.v5.model.service_event import ServiceEvent
 from huaweicloudsdkiotda.v5.model.service_property import ServiceProperty
+from huaweicloudsdkiotda.v5.model.show_application_request import ShowApplicationRequest
+from huaweicloudsdkiotda.v5.model.show_application_response import ShowApplicationResponse
+from huaweicloudsdkiotda.v5.model.show_applications_request import ShowApplicationsRequest
+from huaweicloudsdkiotda.v5.model.show_applications_response import ShowApplicationsResponse
 from huaweicloudsdkiotda.v5.model.show_batch_task_request import ShowBatchTaskRequest
 from huaweicloudsdkiotda.v5.model.show_batch_task_response import ShowBatchTaskResponse
 from huaweicloudsdkiotda.v5.model.show_device_group_request import ShowDeviceGroupRequest

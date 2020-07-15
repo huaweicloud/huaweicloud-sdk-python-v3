@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SetBackupPolicyRequestBody(object):
+
+
+
+class SetBackupPolicyRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class SetBackupPolicyRequestBody(object):
         'backup_policy': 'backup_policy'
     }
 
-    def __init__(self, backup_policy=None):  # noqa: E501
+    def __init__(self, backup_policy=None):
         """SetBackupPolicyRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._backup_policy = None
         self.discriminator = None

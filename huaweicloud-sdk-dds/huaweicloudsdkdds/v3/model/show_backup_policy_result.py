@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowBackupPolicyResult(object):
+
+
+
+class ShowBackupPolicyResult:
 
 
     """
@@ -31,8 +34,10 @@ class ShowBackupPolicyResult(object):
         'period': 'period'
     }
 
-    def __init__(self, keep_days=None, start_time=None, period=None):  # noqa: E501
+    def __init__(self, keep_days=None, start_time=None, period=None):
         """ShowBackupPolicyResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._keep_days = None
         self._start_time = None

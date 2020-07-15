@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CompleteLifecycleActionRequestBody(object):
+
+
+
+class CompleteLifecycleActionRequestBody:
 
 
     """
@@ -33,8 +36,10 @@ class CompleteLifecycleActionRequestBody(object):
         'lifecycle_action_result': 'lifecycle_action_result'
     }
 
-    def __init__(self, lifecycle_action_key=None, instance_id=None, lifecycle_hook_name=None, lifecycle_action_result=None):  # noqa: E501
+    def __init__(self, lifecycle_action_key=None, instance_id=None, lifecycle_hook_name=None, lifecycle_action_result=None):
         """CompleteLifecycleActionRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._lifecycle_action_key = None
         self._instance_id = None

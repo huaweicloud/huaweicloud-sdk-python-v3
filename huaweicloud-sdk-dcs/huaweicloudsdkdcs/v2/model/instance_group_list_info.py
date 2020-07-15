@@ -6,7 +6,10 @@ import re
 import six
 
 
-class InstanceGroupListInfo(object):
+
+
+
+class InstanceGroupListInfo:
 
 
     """
@@ -31,8 +34,10 @@ class InstanceGroupListInfo(object):
         'replication_list': 'replication_list'
     }
 
-    def __init__(self, group_id=None, group_name=None, replication_list=None):  # noqa: E501
+    def __init__(self, group_id=None, group_name=None, replication_list=None):
         """InstanceGroupListInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._group_id = None
         self._group_name = None

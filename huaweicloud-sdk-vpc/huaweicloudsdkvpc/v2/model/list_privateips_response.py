@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListPrivateipsResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListPrivateipsResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ListPrivateipsResponse(object):
         'privateips': 'privateips'
     }
 
-    def __init__(self, privateips=None):  # noqa: E501
+    def __init__(self, privateips=None):
         """ListPrivateipsResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._privateips = None
         self.discriminator = None

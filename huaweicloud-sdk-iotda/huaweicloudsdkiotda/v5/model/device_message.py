@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeviceMessage(object):
+
+
+
+class DeviceMessage:
 
 
     """
@@ -39,8 +42,10 @@ class DeviceMessage(object):
         'finished_time': 'finished_time'
     }
 
-    def __init__(self, message_id=None, name=None, message=None, topic=None, status=None, created_time=None, finished_time=None):  # noqa: E501
+    def __init__(self, message_id=None, name=None, message=None, topic=None, status=None, created_time=None, finished_time=None):
         """DeviceMessage - a model defined in huaweicloud sdk"""
+        
+        
 
         self._message_id = None
         self._name = None

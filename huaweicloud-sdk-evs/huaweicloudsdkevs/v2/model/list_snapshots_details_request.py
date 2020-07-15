@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListSnapshotsDetailsRequest(object):
+
+
+
+class ListSnapshotsDetailsRequest:
 
 
     """
@@ -47,8 +50,10 @@ class ListSnapshotsDetailsRequest(object):
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, offset=None, limit=None, name=None, status=None, volume_id=None, availability_zone=None, id=None, dedicated_storage_name=None, dedicated_storage_id=None, service_type=None, enterprise_project_id=None):  # noqa: E501
+    def __init__(self, offset=None, limit=None, name=None, status=None, volume_id=None, availability_zone=None, id=None, dedicated_storage_name=None, dedicated_storage_id=None, service_type=None, enterprise_project_id=None):
         """ListSnapshotsDetailsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._offset = None
         self._limit = None

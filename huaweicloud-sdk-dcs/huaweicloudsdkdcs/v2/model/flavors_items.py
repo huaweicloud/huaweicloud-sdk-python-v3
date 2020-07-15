@@ -6,7 +6,10 @@ import re
 import six
 
 
-class FlavorsItems(object):
+
+
+
+class FlavorsItems:
 
 
     """
@@ -57,8 +60,10 @@ class FlavorsItems(object):
         'flavors_available_zones': 'flavors_available_zones'
     }
 
-    def __init__(self, spec_code=None, cloud_service_type_code=None, cloud_resource_type_code=None, cache_mode=None, engine=None, engine_version=None, product_type=None, cpu_type=None, storage_type=None, capacity=None, billing_mode=None, tenant_ip_count=None, pricing_type=None, is_dec=None, attrs=None, flavors_available_zones=None):  # noqa: E501
+    def __init__(self, spec_code=None, cloud_service_type_code=None, cloud_resource_type_code=None, cache_mode=None, engine=None, engine_version=None, product_type=None, cpu_type=None, storage_type=None, capacity=None, billing_mode=None, tenant_ip_count=None, pricing_type=None, is_dec=None, attrs=None, flavors_available_zones=None):
         """FlavorsItems - a model defined in huaweicloud sdk"""
+        
+        
 
         self._spec_code = None
         self._cloud_service_type_code = None

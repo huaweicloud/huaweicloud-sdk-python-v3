@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Version(object):
+
+
+
+class Version:
 
 
     """
@@ -35,8 +38,10 @@ class Version(object):
         'media_types': 'media-types'
     }
 
-    def __init__(self, status=None, updated=None, links=None, id=None, media_types=None):  # noqa: E501
+    def __init__(self, status=None, updated=None, links=None, id=None, media_types=None):
         """Version - a model defined in huaweicloud sdk"""
+        
+        
 
         self._status = None
         self._updated = None

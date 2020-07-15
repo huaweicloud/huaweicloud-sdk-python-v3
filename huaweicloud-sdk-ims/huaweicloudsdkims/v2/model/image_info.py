@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ImageInfo(object):
+
+
+
+class ImageInfo:
 
 
     """
@@ -24,7 +27,7 @@ class ImageInfo(object):
         'data_origin': 'str',
         'description': 'str',
         'image_location': 'str',
-        'image_size': 'int',
+        'image_size': 'str',
         'image_source_type': 'str',
         'imagetype': 'str',
         'is_config_init': 'str',
@@ -129,8 +132,10 @@ class ImageInfo(object):
         'support_arm': '__support_arm'
     }
 
-    def __init__(self, backup_id=None, data_origin=None, description=None, image_location=None, image_size=None, image_source_type=None, imagetype=None, is_config_init=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, deleted=None, deleted_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, architecture=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None):  # noqa: E501
+    def __init__(self, backup_id=None, data_origin=None, description=None, image_location=None, image_size=None, image_source_type=None, imagetype=None, is_config_init=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, deleted=None, deleted_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, architecture=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None):
         """ImageInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._backup_id = None
         self._data_origin = None
@@ -355,7 +360,7 @@ class ImageInfo(object):
         镜像文件的大小，单位为字节
 
         :return: The image_size of this ImageInfo.
-        :rtype: int
+        :rtype: str
         """
         return self._image_size
 
@@ -366,7 +371,7 @@ class ImageInfo(object):
         镜像文件的大小，单位为字节
 
         :param image_size: The image_size of this ImageInfo.
-        :type: int
+        :type: str
         """
         self._image_size = image_size
 

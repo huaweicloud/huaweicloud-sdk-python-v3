@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeletePortRequest(object):
+
+
+
+class DeletePortRequest:
 
 
     """
@@ -27,8 +30,10 @@ class DeletePortRequest(object):
         'port_id': 'port_id'
     }
 
-    def __init__(self, port_id=None):  # noqa: E501
+    def __init__(self, port_id=None):
         """DeletePortRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._port_id = None
         self.discriminator = None

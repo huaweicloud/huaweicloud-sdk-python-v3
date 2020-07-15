@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateAlarmActionRequest(object):
+
+
+
+class UpdateAlarmActionRequest:
 
 
     """
@@ -29,8 +32,10 @@ class UpdateAlarmActionRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, alarm_id='al15454523384878yogJg6ao', body=None):  # noqa: E501
+    def __init__(self, alarm_id='al15454523384878yogJg6ao', body=None):
         """UpdateAlarmActionRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._alarm_id = None
         self._body = None

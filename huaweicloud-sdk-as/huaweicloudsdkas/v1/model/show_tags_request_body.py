@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowTagsRequestBody(object):
+
+
+
+class ShowTagsRequestBody:
 
 
     """
@@ -43,8 +46,10 @@ class ShowTagsRequestBody(object):
         'matchs': 'matchs'
     }
 
-    def __init__(self, tags=None, tags_any=None, not_tags=None, not_tags_any=None, limit=None, marker=None, action=None, offset=None, matchs=None):  # noqa: E501
+    def __init__(self, tags=None, tags_any=None, not_tags=None, not_tags_any=None, limit=None, marker=None, action=None, offset=None, matchs=None):
         """ShowTagsRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._tags = None
         self._tags_any = None

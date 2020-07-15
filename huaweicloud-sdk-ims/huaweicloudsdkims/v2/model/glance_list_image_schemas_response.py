@@ -6,7 +6,10 @@ import re
 import six
 
 
-class GlanceListImageSchemasResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class GlanceListImageSchemasResponse(SdkResponse):
 
 
     """
@@ -31,8 +34,10 @@ class GlanceListImageSchemasResponse(object):
         'links': 'links'
     }
 
-    def __init__(self, name=None, properties=None, links=None):  # noqa: E501
+    def __init__(self, name=None, properties=None, links=None):
         """GlanceListImageSchemasResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._name = None
         self._properties = None

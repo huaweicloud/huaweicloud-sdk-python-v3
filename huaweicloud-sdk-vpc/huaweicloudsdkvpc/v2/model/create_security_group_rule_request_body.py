@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateSecurityGroupRuleRequestBody(object):
+
+
+
+class CreateSecurityGroupRuleRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class CreateSecurityGroupRuleRequestBody(object):
         'security_group_rule': 'security_group_rule'
     }
 
-    def __init__(self, security_group_rule=None):  # noqa: E501
+    def __init__(self, security_group_rule=None):
         """CreateSecurityGroupRuleRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._security_group_rule = None
         self.discriminator = None

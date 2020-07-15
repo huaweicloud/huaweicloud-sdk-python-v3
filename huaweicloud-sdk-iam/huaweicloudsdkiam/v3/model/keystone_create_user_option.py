@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneCreateUserOption(object):
+
+
+
+class KeystoneCreateUserOption:
 
 
     """
@@ -35,8 +38,10 @@ class KeystoneCreateUserOption(object):
         'description': 'description'
     }
 
-    def __init__(self, name=None, domain_id=None, password=None, enabled=None, description=None):  # noqa: E501
+    def __init__(self, name=None, domain_id=None, password=None, enabled=None, description=None):
         """KeystoneCreateUserOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._domain_id = None

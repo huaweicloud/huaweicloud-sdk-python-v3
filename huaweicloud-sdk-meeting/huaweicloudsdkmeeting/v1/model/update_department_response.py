@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateDepartmentResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class UpdateDepartmentResponse(SdkResponse):
 
 
     """
@@ -25,8 +28,10 @@ class UpdateDepartmentResponse(object):
     attribute_map = {
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self):
         """UpdateDepartmentResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
         self.discriminator = None
 
     def to_dict(self):

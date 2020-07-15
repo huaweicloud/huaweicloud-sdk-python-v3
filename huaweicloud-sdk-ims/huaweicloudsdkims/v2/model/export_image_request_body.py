@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ExportImageRequestBody(object):
+
+
+
+class ExportImageRequestBody:
 
 
     """
@@ -29,8 +32,10 @@ class ExportImageRequestBody(object):
         'file_format': 'file_format'
     }
 
-    def __init__(self, bucket_url=None, file_format=None):  # noqa: E501
+    def __init__(self, bucket_url=None, file_format=None):
         """ExportImageRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._bucket_url = None
         self._file_format = None

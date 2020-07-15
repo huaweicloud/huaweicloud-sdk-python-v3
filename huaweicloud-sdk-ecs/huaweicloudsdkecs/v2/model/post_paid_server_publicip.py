@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PostPaidServerPublicip(object):
+
+
+
+class PostPaidServerPublicip:
 
 
     """
@@ -29,8 +32,10 @@ class PostPaidServerPublicip(object):
         'eip': 'eip'
     }
 
-    def __init__(self, id=None, eip=None):  # noqa: E501
+    def __init__(self, id=None, eip=None):
         """PostPaidServerPublicip - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._eip = None

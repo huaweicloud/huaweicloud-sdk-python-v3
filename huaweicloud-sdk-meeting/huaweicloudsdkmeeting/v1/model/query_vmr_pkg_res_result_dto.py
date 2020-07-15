@@ -6,7 +6,10 @@ import re
 import six
 
 
-class QueryVmrPkgResResultDTO(object):
+
+
+
+class QueryVmrPkgResResultDTO:
 
 
     """
@@ -35,8 +38,10 @@ class QueryVmrPkgResResultDTO(object):
         'vmr_pkg_used_count': 'vmrPkgUsedCount'
     }
 
-    def __init__(self, vmr_pkg_id=None, vmr_name=None, vmr_pkg_parties=None, vmr_pkg_count=None, vmr_pkg_used_count=None):  # noqa: E501
+    def __init__(self, vmr_pkg_id=None, vmr_name=None, vmr_pkg_parties=None, vmr_pkg_count=None, vmr_pkg_used_count=None):
         """QueryVmrPkgResResultDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._vmr_pkg_id = None
         self._vmr_name = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListBackupFileLinksResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListBackupFileLinksResponse(SdkResponse):
 
 
     """
@@ -31,8 +34,10 @@ class ListBackupFileLinksResponse(object):
         'links': 'links'
     }
 
-    def __init__(self, file_path=None, bucket_name=None, links=None):  # noqa: E501
+    def __init__(self, file_path=None, bucket_name=None, links=None):
         """ListBackupFileLinksResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._file_path = None
         self._bucket_name = None

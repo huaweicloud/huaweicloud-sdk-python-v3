@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AuthProjectResult(object):
+
+
+
+class AuthProjectResult:
 
 
     """
@@ -41,8 +44,10 @@ class AuthProjectResult(object):
         'name': 'name'
     }
 
-    def __init__(self, is_domain=None, description=None, links=None, enabled=None, id=None, parent_id=None, domain_id=None, name=None):  # noqa: E501
+    def __init__(self, is_domain=None, description=None, links=None, enabled=None, id=None, parent_id=None, domain_id=None, name=None):
         """AuthProjectResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._is_domain = None
         self._description = None

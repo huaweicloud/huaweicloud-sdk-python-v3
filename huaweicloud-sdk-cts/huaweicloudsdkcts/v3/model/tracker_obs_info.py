@@ -6,7 +6,10 @@ import re
 import six
 
 
-class TrackerObsInfo(object):
+
+
+
+class TrackerObsInfo:
 
 
     """
@@ -33,8 +36,10 @@ class TrackerObsInfo(object):
         'bucket_lifecycle': 'bucket_lifecycle'
     }
 
-    def __init__(self, bucket_name=None, file_prefix_name=None, is_obs_created=None, bucket_lifecycle=None):  # noqa: E501
+    def __init__(self, bucket_name=None, file_prefix_name=None, is_obs_created=None, bucket_lifecycle=None):
         """TrackerObsInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._bucket_name = None
         self._file_prefix_name = None

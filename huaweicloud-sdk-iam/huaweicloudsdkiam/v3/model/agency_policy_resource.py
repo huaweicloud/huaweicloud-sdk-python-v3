@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AgencyPolicyResource(object):
+
+
+
+class AgencyPolicyResource:
 
 
     """
@@ -27,8 +30,10 @@ class AgencyPolicyResource(object):
         'uri': 'uri'
     }
 
-    def __init__(self, uri=None):  # noqa: E501
+    def __init__(self, uri=None):
         """AgencyPolicyResource - a model defined in huaweicloud sdk"""
+        
+        
 
         self._uri = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListBackupsRequest(object):
+
+
+
+class ListBackupsRequest:
 
 
     """
@@ -41,8 +44,10 @@ class ListBackupsRequest(object):
         'mode': 'mode'
     }
 
-    def __init__(self, instance_id=None, backup_id=None, backup_type=None, offset=None, limit=None, begin_time=None, end_time=None, mode=None):  # noqa: E501
+    def __init__(self, instance_id=None, backup_id=None, backup_type=None, offset=None, limit=None, begin_time=None, end_time=None, mode=None):
         """ListBackupsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._backup_id = None

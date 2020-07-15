@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Route(object):
+
+
+
+class Route:
 
 
     """
@@ -29,8 +32,10 @@ class Route(object):
         'nexthop': 'nexthop'
     }
 
-    def __init__(self, destination=None, nexthop=None):  # noqa: E501
+    def __init__(self, destination=None, nexthop=None):
         """Route - a model defined in huaweicloud sdk"""
+        
+        
 
         self._destination = None
         self._nexthop = None

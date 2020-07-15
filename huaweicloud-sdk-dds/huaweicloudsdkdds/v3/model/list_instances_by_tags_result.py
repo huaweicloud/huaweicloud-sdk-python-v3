@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListInstancesByTagsResult(object):
+
+
+
+class ListInstancesByTagsResult:
 
 
     """
@@ -31,8 +34,10 @@ class ListInstancesByTagsResult(object):
         'tags': 'tags'
     }
 
-    def __init__(self, instance_id=None, instance_name=None, tags=None):  # noqa: E501
+    def __init__(self, instance_id=None, instance_name=None, tags=None):
         """ListInstancesByTagsResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._instance_name = None

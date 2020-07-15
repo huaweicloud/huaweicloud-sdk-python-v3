@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ExtraDhcpOption(object):
+
+
+
+class ExtraDhcpOption:
 
 
     """
@@ -29,8 +32,10 @@ class ExtraDhcpOption(object):
         'opt_value': 'opt_value'
     }
 
-    def __init__(self, opt_name=None, opt_value=None):  # noqa: E501
+    def __init__(self, opt_name=None, opt_value=None):
         """ExtraDhcpOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._opt_name = None
         self._opt_value = None

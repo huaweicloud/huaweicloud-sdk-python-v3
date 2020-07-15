@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CheckVerifyCodeResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CheckVerifyCodeResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class CheckVerifyCodeResponse(object):
         'expire': 'expire'
     }
 
-    def __init__(self, token=None, expire=None):  # noqa: E501
+    def __init__(self, token=None, expire=None):
         """CheckVerifyCodeResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._token = None
         self._expire = None

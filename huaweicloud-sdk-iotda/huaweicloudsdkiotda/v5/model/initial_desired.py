@@ -6,7 +6,10 @@ import re
 import six
 
 
-class InitialDesired(object):
+
+
+
+class InitialDesired:
 
 
     """
@@ -29,8 +32,10 @@ class InitialDesired(object):
         'desired': 'desired'
     }
 
-    def __init__(self, service_id=None, desired=None):  # noqa: E501
+    def __init__(self, service_id=None, desired=None):
         """InitialDesired - a model defined in huaweicloud sdk"""
+        
+        
 
         self._service_id = None
         self._desired = None

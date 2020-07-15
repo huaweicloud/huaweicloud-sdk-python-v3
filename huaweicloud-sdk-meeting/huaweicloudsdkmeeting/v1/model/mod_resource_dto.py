@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ModResourceDTO(object):
+
+
+
+class ModResourceDTO:
 
 
     """
@@ -33,8 +36,10 @@ class ModResourceDTO(object):
         'is_disabled': 'isDisabled'
     }
 
-    def __init__(self, id=None, type=None, expire_date=None, is_disabled=None):  # noqa: E501
+    def __init__(self, id=None, type=None, expire_date=None, is_disabled=None):
         """ModResourceDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._type = None

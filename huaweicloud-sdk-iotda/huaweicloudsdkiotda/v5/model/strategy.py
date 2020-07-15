@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Strategy(object):
+
+
+
+class Strategy:
 
 
     """
@@ -29,8 +32,10 @@ class Strategy(object):
         'event_valid_time': 'event_valid_time'
     }
 
-    def __init__(self, trigger=None, event_valid_time=None):  # noqa: E501
+    def __init__(self, trigger=None, event_valid_time=None):
         """Strategy - a model defined in huaweicloud sdk"""
+        
+        
 
         self._trigger = None
         self._event_valid_time = None

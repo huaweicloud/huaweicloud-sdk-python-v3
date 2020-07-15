@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CinderListAvailabilityZonesRequest(object):
+
+
+
+class CinderListAvailabilityZonesRequest:
 
 
     """
@@ -25,8 +28,10 @@ class CinderListAvailabilityZonesRequest(object):
     attribute_map = {
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self):
         """CinderListAvailabilityZonesRequest - a model defined in huaweicloud sdk"""
+        
+        
         self.discriminator = None
 
     def to_dict(self):

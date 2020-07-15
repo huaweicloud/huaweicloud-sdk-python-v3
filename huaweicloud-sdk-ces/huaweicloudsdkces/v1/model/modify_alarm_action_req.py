@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ModifyAlarmActionReq(object):
+
+
+
+class ModifyAlarmActionReq:
 
 
     """
@@ -27,8 +30,10 @@ class ModifyAlarmActionReq(object):
         'alarm_enabled': 'alarm_enabled'
     }
 
-    def __init__(self, alarm_enabled=False):  # noqa: E501
+    def __init__(self, alarm_enabled=False):
         """ModifyAlarmActionReq - a model defined in huaweicloud sdk"""
+        
+        
 
         self._alarm_enabled = None
         self.discriminator = None

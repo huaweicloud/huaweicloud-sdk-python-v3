@@ -26,7 +26,7 @@ from huaweicloudsdkcore.auth.credentials import BasicCredentials
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.exceptions.exceptions import ClientRequestException, ServerResponseException
 from huaweicloudsdkcore.http.http_config import HttpConfig
-from tests.vpc import ListVpcsResponse
+from tests.model.vpc import ListVpcsResponse
 
 
 @pytest.fixture()
@@ -70,18 +70,18 @@ def client_err_response():
 
 
 @pytest.fixture()
-def client_err_response2():
-    client_err_response2 = Response()
-    client_err_response2.status_code = 400
-    client_err_response2.reason = "mock client error response"
-    client_err_response2.url = ""
-    client_err_response2._content = b"request-client-error-002"
-    client_err_response2.headers = {"X-Request-Id": "request-client-error-002"}
-    client_err_response2.request = Request()
-    client_err_response2.request.method = "GET"
-    client_err_response2.request.url = ""
+def client_err_response_type2():
+    client_err_response_type2 = Response()
+    client_err_response_type2.status_code = 400
+    client_err_response_type2.reason = "mock client error response"
+    client_err_response_type2.url = ""
+    client_err_response_type2._content = b"request-client-error-002"
+    client_err_response_type2.headers = {"X-Request-Id": "request-client-error-002"}
+    client_err_response_type2.request = Request()
+    client_err_response_type2.request.method = "GET"
+    client_err_response_type2.request.url = ""
 
-    yield client_err_response2
+    yield client_err_response_type2
 
 
 @pytest.fixture()
@@ -105,12 +105,12 @@ def server_err_response():
 
 
 @pytest.fixture()
-def server_err_response2():
-    server_err_response2 = Response()
-    server_err_response2.status_code = 500
-    server_err_response2.reason = "mock server error response"
-    server_err_response2.url = ""
-    server_err_response2._content = b"""
+def server_err_response_type2():
+    server_err_response_type2 = Response()
+    server_err_response_type2.status_code = 500
+    server_err_response_type2.reason = "mock server error response"
+    server_err_response_type2.url = ""
+    server_err_response_type2._content = b"""
         {
             "xxx":{
                 "code":"ERR.SERVER_ERR",
@@ -118,12 +118,12 @@ def server_err_response2():
             }
         }
         """
-    server_err_response2.headers = {"X-Request-Id": "request-server-error-002"}
-    server_err_response2.request = Request()
-    server_err_response2.request.method = "GET"
-    server_err_response2.request.url = ""
+    server_err_response_type2.headers = {"X-Request-Id": "request-server-error-002"}
+    server_err_response_type2.request = Request()
+    server_err_response_type2.request.method = "GET"
+    server_err_response_type2.request.url = ""
 
-    yield server_err_response2
+    yield server_err_response_type2
 
 
 @pytest.fixture()
@@ -162,10 +162,6 @@ def list_vpc_response():
     yield list_vpc_response
 
 
-def test_request_headers_with_project_id_and_domain_id():
-    pass
-
-
 def test_client_request_exception(client, client_err_response):
     with pytest.raises(ClientRequestException) as e:
         client.get_http_client().response_error_hook_factory()(client_err_response)
@@ -175,9 +171,9 @@ def test_client_request_exception(client, client_err_response):
     assert e.value.error_msg == "request-client-error-001"
 
 
-def test_client_request_exception2(client, client_err_response2):
+def test_client_request_exception2(client, client_err_response_type2):
     with pytest.raises(ServerResponseException) as e:
-        client.get_http_client().response_error_hook_factory()(client_err_response2)
+        client.get_http_client().response_error_hook_factory()(client_err_response_type2)
 
     assert e.value.error_msg == "request-client-error-002"
 
@@ -191,21 +187,17 @@ def test_server_response_exception(client, server_err_response):
     assert e.value.error_msg == "request-server-error-001"
 
 
-def test_server_response_exception2(client, server_err_response2):
+def test_server_response_exception2(client, server_err_response_type2):
     with pytest.raises(ServerResponseException) as e:
-        client.get_http_client().response_error_hook_factory()(server_err_response2)
+        client.get_http_client().response_error_hook_factory()(server_err_response_type2)
 
     assert e.value.request_id == "request-server-error-002"
     assert e.value.error_code == "ERR.SERVER_ERR"
     assert e.value.error_msg == "request-server-error-002"
 
 
-def test_service_spec_exception():
-    pass
-
-
 def test_response_deserialization(client, list_vpc_response):
-    client.model_package = importlib.import_module("tests.vpc")
+    client.model_package = importlib.import_module("tests.model.vpc")
     response = client.sync_response_handler(list_vpc_response, "ListVpcsResponse")
 
     assert isinstance(response, ListVpcsResponse)

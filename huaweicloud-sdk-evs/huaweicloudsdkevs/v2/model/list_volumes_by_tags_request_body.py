@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListVolumesByTagsRequestBody(object):
+
+
+
+class ListVolumesByTagsRequestBody:
 
 
     """
@@ -35,8 +38,10 @@ class ListVolumesByTagsRequestBody(object):
         'tags': 'tags'
     }
 
-    def __init__(self, action='filter', limit=1000, matches=None, offset=0, tags=None):  # noqa: E501
+    def __init__(self, action='filter', limit=1000, matches=None, offset=0, tags=None):
         """ListVolumesByTagsRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._action = None
         self._limit = None

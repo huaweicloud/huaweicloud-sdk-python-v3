@@ -6,7 +6,10 @@ import re
 import six
 
 
-class TagV5DTO(object):
+
+
+
+class TagV5DTO:
 
 
     """
@@ -29,8 +32,10 @@ class TagV5DTO(object):
         'tag_value': 'tag_value'
     }
 
-    def __init__(self, tag_key=None, tag_value=None):  # noqa: E501
+    def __init__(self, tag_key=None, tag_value=None):
         """TagV5DTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._tag_key = None
         self._tag_value = None

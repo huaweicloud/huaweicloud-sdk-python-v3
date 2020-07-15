@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListPrivateipsRequest(object):
+
+
+
+class ListPrivateipsRequest:
 
 
     """
@@ -31,8 +34,10 @@ class ListPrivateipsRequest(object):
         'marker': 'marker'
     }
 
-    def __init__(self, subnet_id=None, limit=2000, marker=None):  # noqa: E501
+    def __init__(self, subnet_id=None, limit=2000, marker=None):
         """ListPrivateipsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._subnet_id = None
         self._limit = None

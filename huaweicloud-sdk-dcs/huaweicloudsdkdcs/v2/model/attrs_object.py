@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AttrsObject(object):
+
+
+
+class AttrsObject:
 
 
     """
@@ -31,8 +34,10 @@ class AttrsObject(object):
         'value': 'value'
     }
 
-    def __init__(self, capacity=None, name=None, value=None):  # noqa: E501
+    def __init__(self, capacity=None, name=None, value=None):
         """AttrsObject - a model defined in huaweicloud sdk"""
+        
+        
 
         self._capacity = None
         self._name = None

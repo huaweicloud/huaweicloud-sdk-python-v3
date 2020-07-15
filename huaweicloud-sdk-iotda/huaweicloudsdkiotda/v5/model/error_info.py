@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ErrorInfo(object):
+
+
+
+class ErrorInfo:
 
 
     """
@@ -29,8 +32,10 @@ class ErrorInfo(object):
         'error_msg': 'error_msg'
     }
 
-    def __init__(self, error_code=None, error_msg=None):  # noqa: E501
+    def __init__(self, error_code=None, error_msg=None):
         """ErrorInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._error_code = None
         self._error_msg = None

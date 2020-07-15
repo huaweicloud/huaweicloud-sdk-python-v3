@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SlideVerifyCodeCheckDTO(object):
+
+
+
+class SlideVerifyCodeCheckDTO:
 
 
     """
@@ -37,8 +40,10 @@ class SlideVerifyCodeCheckDTO(object):
         'slide_time': 'slideTime'
     }
 
-    def __init__(self, user=None, client_type=None, check_type=None, token=None, point_x=None, slide_time=None):  # noqa: E501
+    def __init__(self, user=None, client_type=None, check_type=None, token=None, point_x=None, slide_time=None):
         """SlideVerifyCodeCheckDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._user = None
         self._client_type = None

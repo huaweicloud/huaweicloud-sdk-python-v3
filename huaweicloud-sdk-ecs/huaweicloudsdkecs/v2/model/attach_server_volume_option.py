@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AttachServerVolumeOption(object):
+
+
+
+class AttachServerVolumeOption:
 
 
     """
@@ -29,8 +32,10 @@ class AttachServerVolumeOption(object):
         'volume_id': 'volumeId'
     }
 
-    def __init__(self, device=None, volume_id=None):  # noqa: E501
+    def __init__(self, device=None, volume_id=None):
         """AttachServerVolumeOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._device = None
         self._volume_id = None

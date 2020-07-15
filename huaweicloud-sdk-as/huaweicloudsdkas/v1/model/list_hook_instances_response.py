@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListHookInstancesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListHookInstancesResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ListHookInstancesResponse(object):
         'instance_hanging_info': 'instance_hanging_info'
     }
 
-    def __init__(self, instance_hanging_info=None):  # noqa: E501
+    def __init__(self, instance_hanging_info=None):
         """ListHookInstancesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._instance_hanging_info = None
         self.discriminator = None

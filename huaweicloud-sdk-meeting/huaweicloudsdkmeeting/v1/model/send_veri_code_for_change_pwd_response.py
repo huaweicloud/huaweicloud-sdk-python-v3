@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SendVeriCodeForChangePwdResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class SendVeriCodeForChangePwdResponse(SdkResponse):
 
 
     """
@@ -31,8 +34,10 @@ class SendVeriCodeForChangePwdResponse(object):
         'bind_email': 'bindEmail'
     }
 
-    def __init__(self, expire=None, bind_phone=None, bind_email=None):  # noqa: E501
+    def __init__(self, expire=None, bind_phone=None, bind_email=None):
         """SendVeriCodeForChangePwdResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._expire = None
         self._bind_phone = None

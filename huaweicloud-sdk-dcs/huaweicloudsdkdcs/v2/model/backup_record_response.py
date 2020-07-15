@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BackupRecordResponse(object):
+
+
+
+class BackupRecordResponse:
 
 
     """
@@ -51,8 +54,10 @@ class BackupRecordResponse(object):
         'is_support_restore': 'is_support_restore'
     }
 
-    def __init__(self, backup_id=None, period=None, backup_name=None, instance_id=None, size=None, backup_type=None, created_at=None, updated_at=None, progress=None, error_code=None, remark=None, status=None, is_support_restore=None):  # noqa: E501
+    def __init__(self, backup_id=None, period=None, backup_name=None, instance_id=None, size=None, backup_type=None, created_at=None, updated_at=None, progress=None, error_code=None, remark=None, status=None, is_support_restore=None):
         """BackupRecordResponse - a model defined in huaweicloud sdk"""
+        
+        
 
         self._backup_id = None
         self._period = None

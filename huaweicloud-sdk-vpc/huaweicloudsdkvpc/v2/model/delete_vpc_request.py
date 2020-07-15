@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteVpcRequest(object):
+
+
+
+class DeleteVpcRequest:
 
 
     """
@@ -27,8 +30,10 @@ class DeleteVpcRequest(object):
         'vpc_id': 'vpc_id'
     }
 
-    def __init__(self, vpc_id=None):  # noqa: E501
+    def __init__(self, vpc_id=None):
         """DeleteVpcRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._vpc_id = None
         self.discriminator = None

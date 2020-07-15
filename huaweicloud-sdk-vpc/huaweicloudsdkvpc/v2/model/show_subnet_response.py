@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowSubnetResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowSubnetResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ShowSubnetResponse(object):
         'subnet': 'subnet'
     }
 
-    def __init__(self, subnet=None):  # noqa: E501
+    def __init__(self, subnet=None):
         """ShowSubnetResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._subnet = None
         self.discriminator = None

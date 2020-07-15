@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateAlarmRequestBody(object):
+
+
+
+class CreateAlarmRequestBody:
 
 
     """
@@ -47,8 +50,10 @@ class CreateAlarmRequestBody(object):
         'ok_actions': 'ok_actions'
     }
 
-    def __init__(self, alarm_name=None, alarm_description=None, metric=None, condition=None, alarm_enabled=True, alarm_action_enabled=True, alarm_level=None, alarm_type=None, alarm_actions=None, insufficientdata_actions=None, ok_actions=None):  # noqa: E501
+    def __init__(self, alarm_name=None, alarm_description=None, metric=None, condition=None, alarm_enabled=True, alarm_action_enabled=True, alarm_level=None, alarm_type=None, alarm_actions=None, insufficientdata_actions=None, ok_actions=None):
         """CreateAlarmRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._alarm_name = None
         self._alarm_description = None

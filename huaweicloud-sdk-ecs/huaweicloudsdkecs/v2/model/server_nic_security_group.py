@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ServerNicSecurityGroup(object):
+
+
+
+class ServerNicSecurityGroup:
 
 
     """
@@ -27,8 +30,10 @@ class ServerNicSecurityGroup(object):
         'id': 'id'
     }
 
-    def __init__(self, id=None):  # noqa: E501
+    def __init__(self, id=None):
         """ServerNicSecurityGroup - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self.discriminator = None

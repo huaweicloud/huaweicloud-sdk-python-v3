@@ -6,7 +6,10 @@ import re
 import six
 
 
-class TimeRange(object):
+
+
+
+class TimeRange:
 
 
     """
@@ -31,8 +34,10 @@ class TimeRange(object):
         'days_of_week': 'days_of_week'
     }
 
-    def __init__(self, start_time=None, end_time=None, days_of_week=None):  # noqa: E501
+    def __init__(self, start_time=None, end_time=None, days_of_week=None):
         """TimeRange - a model defined in huaweicloud sdk"""
+        
+        
 
         self._start_time = None
         self._end_time = None

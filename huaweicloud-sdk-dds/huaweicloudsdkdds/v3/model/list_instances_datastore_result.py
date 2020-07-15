@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListInstancesDatastoreResult(object):
+
+
+
+class ListInstancesDatastoreResult:
 
 
     """
@@ -29,8 +32,10 @@ class ListInstancesDatastoreResult(object):
         'version': 'version'
     }
 
-    def __init__(self, type=None, version=None):  # noqa: E501
+    def __init__(self, type=None, version=None):
         """ListInstancesDatastoreResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._type = None
         self._version = None

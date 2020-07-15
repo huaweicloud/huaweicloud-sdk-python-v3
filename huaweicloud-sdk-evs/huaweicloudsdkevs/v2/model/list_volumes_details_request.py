@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListVolumesDetailsRequest(object):
+
+
+
+class ListVolumesDetailsRequest:
 
 
     """
@@ -59,8 +62,10 @@ class ListVolumesDetailsRequest(object):
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, marker=None, name=None, limit=1000, sort_key=None, offset=None, sort_dir=None, status=None, metadata=None, availability_zone=None, multiattach=None, service_type=None, dedicated_storage_id=None, dedicated_storage_name=None, volume_type_id=None, id=None, ids=None, enterprise_project_id=None):  # noqa: E501
+    def __init__(self, marker=None, name=None, limit=1000, sort_key=None, offset=None, sort_dir=None, status=None, metadata=None, availability_zone=None, multiattach=None, service_type=None, dedicated_storage_id=None, dedicated_storage_name=None, volume_type_id=None, id=None, ids=None, enterprise_project_id=None):
         """ListVolumesDetailsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._marker = None
         self._name = None

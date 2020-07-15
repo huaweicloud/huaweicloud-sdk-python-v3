@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateVolumeResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class UpdateVolumeResponse(SdkResponse):
 
 
     """
@@ -31,12 +34,12 @@ class UpdateVolumeResponse(object):
         'name': 'str',
         'os_vol_host_attrhost': 'str',
         'os_vol_tenant_attrtenant_id': 'str',
-        'shareable': 'bool',
+        'shareable': 'str',
         'size': 'int',
         'snapshot_id': 'str',
         'source_volid': 'str',
         'status': 'str',
-        'volume_image_metadata': 'ImageMetadata',
+        'volume_image_metadata': 'object',
         'volume_type': 'str',
         'description': 'str',
         'os_volume_replicationextended_status': 'str'
@@ -65,8 +68,10 @@ class UpdateVolumeResponse(object):
         'os_volume_replicationextended_status': 'os-volume-replication:extended_status'
     }
 
-    def __init__(self, attachments=None, availability_zone=None, bootable=None, created_at=None, id=None, links=None, metadata=None, multiattach=None, name=None, os_vol_host_attrhost=None, os_vol_tenant_attrtenant_id=None, shareable=None, size=None, snapshot_id=None, source_volid=None, status=None, volume_image_metadata=None, volume_type=None, description=None, os_volume_replicationextended_status=None):  # noqa: E501
+    def __init__(self, attachments=None, availability_zone=None, bootable=None, created_at=None, id=None, links=None, metadata=None, multiattach=None, name=None, os_vol_host_attrhost=None, os_vol_tenant_attrtenant_id=None, shareable='false', size=None, snapshot_id=None, source_volid=None, status=None, volume_image_metadata=None, volume_type=None, description=None, os_volume_replicationextended_status=None):
         """UpdateVolumeResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._attachments = None
         self._availability_zone = None
@@ -378,7 +383,7 @@ class UpdateVolumeResponse(object):
         是否为共享云硬盘。
 
         :return: The shareable of this UpdateVolumeResponse.
-        :rtype: bool
+        :rtype: str
         """
         return self._shareable
 
@@ -389,7 +394,7 @@ class UpdateVolumeResponse(object):
         是否为共享云硬盘。
 
         :param shareable: The shareable of this UpdateVolumeResponse.
-        :type: bool
+        :type: str
         """
         self._shareable = shareable
 
@@ -485,9 +490,10 @@ class UpdateVolumeResponse(object):
     def volume_image_metadata(self):
         """Gets the volume_image_metadata of this UpdateVolumeResponse.
 
+        云硬盘镜像的元数据。 > 说明： >  > 关于“volume_image_metadata”字段的详细说明，具体请参见：\"[查询镜像详情](https://support.huaweicloud.com/api-ims/ims_03_0703.html)\"。
 
         :return: The volume_image_metadata of this UpdateVolumeResponse.
-        :rtype: ImageMetadata
+        :rtype: object
         """
         return self._volume_image_metadata
 
@@ -495,9 +501,10 @@ class UpdateVolumeResponse(object):
     def volume_image_metadata(self, volume_image_metadata):
         """Sets the volume_image_metadata of this UpdateVolumeResponse.
 
+        云硬盘镜像的元数据。 > 说明： >  > 关于“volume_image_metadata”字段的详细说明，具体请参见：\"[查询镜像详情](https://support.huaweicloud.com/api-ims/ims_03_0703.html)\"。
 
         :param volume_image_metadata: The volume_image_metadata of this UpdateVolumeResponse.
-        :type: ImageMetadata
+        :type: object
         """
         self._volume_image_metadata = volume_image_metadata
 

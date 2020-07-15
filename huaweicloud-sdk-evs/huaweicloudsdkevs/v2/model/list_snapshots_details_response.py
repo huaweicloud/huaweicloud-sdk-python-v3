@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListSnapshotsDetailsResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListSnapshotsDetailsResponse(SdkResponse):
 
 
     """
@@ -31,8 +34,10 @@ class ListSnapshotsDetailsResponse(object):
         'snapshots_links': 'snapshots_links'
     }
 
-    def __init__(self, count=None, snapshots=None, snapshots_links=None):  # noqa: E501
+    def __init__(self, count=None, snapshots=None, snapshots_links=None):
         """ListSnapshotsDetailsResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._count = None
         self._snapshots = None

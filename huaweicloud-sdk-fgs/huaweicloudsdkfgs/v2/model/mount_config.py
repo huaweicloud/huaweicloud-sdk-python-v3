@@ -6,7 +6,10 @@ import re
 import six
 
 
-class MountConfig(object):
+
+
+
+class MountConfig:
 
 
     """
@@ -29,8 +32,10 @@ class MountConfig(object):
         'func_mounts': 'func_mounts'
     }
 
-    def __init__(self, mount_user=None, func_mounts=None):  # noqa: E501
+    def __init__(self, mount_user=None, func_mounts=None):
         """MountConfig - a model defined in huaweicloud sdk"""
+        
+        
 
         self._mount_user = None
         self._func_mounts = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteReplicationResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class DeleteReplicationResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class DeleteReplicationResponse(object):
         'job_id': 'job_id'
     }
 
-    def __init__(self, job_id=None):  # noqa: E501
+    def __init__(self, job_id=None):
         """DeleteReplicationResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._job_id = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowIpWhitelistRequest(object):
+
+
+
+class ShowIpWhitelistRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ShowIpWhitelistRequest(object):
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, instance_id=None):  # noqa: E501
+    def __init__(self, instance_id=None):
         """ShowIpWhitelistRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self.discriminator = None

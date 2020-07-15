@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateSubnetOption(object):
+
+
+
+class CreateSubnetOption:
 
 
     """
@@ -49,8 +52,10 @@ class CreateSubnetOption(object):
         'extra_dhcp_opts': 'extra_dhcp_opts'
     }
 
-    def __init__(self, name=None, description=None, cidr=None, vpc_id=None, gateway_ip=None, ipv6_enable=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, availability_zone=None, extra_dhcp_opts=None):  # noqa: E501
+    def __init__(self, name=None, description=None, cidr=None, vpc_id=None, gateway_ip=None, ipv6_enable=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, availability_zone=None, extra_dhcp_opts=None):
         """CreateSubnetOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._description = None

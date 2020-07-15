@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ImageTag(object):
+
+
+
+class ImageTag:
 
 
     """
@@ -29,8 +32,10 @@ class ImageTag(object):
         'value': 'value'
     }
 
-    def __init__(self, key=None, value=None):  # noqa: E501
+    def __init__(self, key=None, value=None):
         """ImageTag - a model defined in huaweicloud sdk"""
+        
+        
 
         self._key = None
         self._value = None

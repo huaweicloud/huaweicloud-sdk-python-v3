@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateAgencyOption(object):
+
+
+
+class UpdateAgencyOption:
 
 
     """
@@ -33,8 +36,10 @@ class UpdateAgencyOption(object):
         'duration': 'duration'
     }
 
-    def __init__(self, trust_domain_id=None, trust_domain_name=None, description=None, duration=None):  # noqa: E501
+    def __init__(self, trust_domain_id=None, trust_domain_name=None, description=None, duration=None):
         """UpdateAgencyOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._trust_domain_id = None
         self._trust_domain_name = None

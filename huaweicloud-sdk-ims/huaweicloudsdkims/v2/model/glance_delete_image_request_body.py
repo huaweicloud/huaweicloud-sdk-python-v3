@@ -6,7 +6,10 @@ import re
 import six
 
 
-class GlanceDeleteImageRequestBody(object):
+
+
+
+class GlanceDeleteImageRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class GlanceDeleteImageRequestBody(object):
         'delete_backup': 'delete_backup'
     }
 
-    def __init__(self, delete_backup=None):  # noqa: E501
+    def __init__(self, delete_backup=None):
         """GlanceDeleteImageRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._delete_backup = None
         self.discriminator = None

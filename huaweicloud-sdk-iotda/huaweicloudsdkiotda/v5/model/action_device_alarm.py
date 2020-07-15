@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ActionDeviceAlarm(object):
+
+
+
+class ActionDeviceAlarm:
 
 
     """
@@ -33,8 +36,10 @@ class ActionDeviceAlarm(object):
         'description': 'description'
     }
 
-    def __init__(self, name=None, alarm_status=None, severity=None, description=None):  # noqa: E501
+    def __init__(self, name=None, alarm_status=None, severity=None, description=None):
         """ActionDeviceAlarm - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._alarm_status = None

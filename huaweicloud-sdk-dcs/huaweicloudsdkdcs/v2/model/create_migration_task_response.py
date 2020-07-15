@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateMigrationTaskResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CreateMigrationTaskResponse(SdkResponse):
 
 
     """
@@ -31,8 +34,10 @@ class CreateMigrationTaskResponse(object):
         'status': 'status'
     }
 
-    def __init__(self, id=None, name=None, status=None):  # noqa: E501
+    def __init__(self, id=None, name=None, status=None):
         """CreateMigrationTaskResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._id = None
         self._name = None

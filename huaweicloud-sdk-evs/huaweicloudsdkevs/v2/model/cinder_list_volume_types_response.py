@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CinderListVolumeTypesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CinderListVolumeTypesResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class CinderListVolumeTypesResponse(object):
         'volume_types': 'volume_types'
     }
 
-    def __init__(self, volume_types=None):  # noqa: E501
+    def __init__(self, volume_types=None):
         """CinderListVolumeTypesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._volume_types = None
         self.discriminator = None

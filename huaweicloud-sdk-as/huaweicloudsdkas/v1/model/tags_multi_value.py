@@ -6,7 +6,10 @@ import re
 import six
 
 
-class TagsMultiValue(object):
+
+
+
+class TagsMultiValue:
 
 
     """
@@ -29,8 +32,10 @@ class TagsMultiValue(object):
         'values': 'values'
     }
 
-    def __init__(self, key=None, values=None):  # noqa: E501
+    def __init__(self, key=None, values=None):
         """TagsMultiValue - a model defined in huaweicloud sdk"""
+        
+        
 
         self._key = None
         self._values = None

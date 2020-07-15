@@ -6,7 +6,10 @@ import re
 import six
 
 
-class InstanceRestoreInfo(object):
+
+
+
+class InstanceRestoreInfo:
 
 
     """
@@ -47,8 +50,10 @@ class InstanceRestoreInfo(object):
         'status': 'status'
     }
 
-    def __init__(self, backup_id=None, restore_id=None, backup_name=None, updated_at=None, restore_remark=None, created_at=None, progress=None, error_code=None, restore_name=None, backup_remark=None, status=None):  # noqa: E501
+    def __init__(self, backup_id=None, restore_id=None, backup_name=None, updated_at=None, restore_remark=None, created_at=None, progress=None, error_code=None, restore_name=None, backup_remark=None, status=None):
         """InstanceRestoreInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._backup_id = None
         self._restore_id = None

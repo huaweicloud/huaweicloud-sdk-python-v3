@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ResizeInstanceOption(object):
+
+
+
+class ResizeInstanceOption:
 
 
     """
@@ -31,8 +34,10 @@ class ResizeInstanceOption(object):
         'target_spec_code': 'target_spec_code'
     }
 
-    def __init__(self, target_type=None, target_id=None, target_spec_code=None):  # noqa: E501
+    def __init__(self, target_type=None, target_id=None, target_spec_code=None):
         """ResizeInstanceOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._target_type = None
         self._target_id = None

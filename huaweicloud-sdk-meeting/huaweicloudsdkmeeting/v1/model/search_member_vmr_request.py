@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SearchMemberVmrRequest(object):
+
+
+
+class SearchMemberVmrRequest:
 
 
     """
@@ -37,8 +40,10 @@ class SearchMemberVmrRequest(object):
         'special_vmr': 'specialVmr'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, offset=0, limit=100, search_key=None, special_vmr=None):  # noqa: E501
+    def __init__(self, x_request_id=None, accept_language=None, offset=0, limit=100, search_key=None, special_vmr=None):
         """SearchMemberVmrRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_request_id = None
         self._accept_language = None

@@ -11,6 +11,7 @@ import six
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CesAsyncClient(Client):
@@ -55,15 +56,10 @@ class CesAsyncClient(Client):
         批量查询指定时间范围内指定指标的指定粒度的监控数据，目前最多支持10指标的批量查询。
 
         :param BatchListMetricDataRequest request
-        :return: tuple(BatchListMetricDataResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: BatchListMetricDataResponse
         """
 
         all_params = ['batch_list_metric_data_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -77,24 +73,25 @@ class CesAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/V1.0/{project_id}/batch-query-metric-data', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/V1.0/{project_id}/batch-query-metric-data',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='BatchListMetricDataResponse',
@@ -118,15 +115,10 @@ class CesAsyncClient(Client):
         创建一条告警规则。
 
         :param CreateAlarmRequest request
-        :return: tuple(CreateAlarmResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateAlarmResponse
         """
 
         all_params = ['create_alarm_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -140,24 +132,25 @@ class CesAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/V1.0/{project_id}/alarms', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/V1.0/{project_id}/alarms',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateAlarmResponse',
@@ -171,7 +164,7 @@ class CesAsyncClient(Client):
         上报自定义事件。
 
         :param CreateEventsRequest request
-        :return: list[CreateEventsResponseBody]
+        :return: CreateEventsResponse
         """
         return self.create_events_with_http_info(request)
 
@@ -181,15 +174,10 @@ class CesAsyncClient(Client):
         上报自定义事件。
 
         :param CreateEventsRequest request
-        :return: tuple(list[CreateEventsResponseBody], status_code(int), headers(HTTPHeaderDict))
+        :return: CreateEventsResponse
         """
 
         all_params = ['event_items']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -203,27 +191,28 @@ class CesAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/V1.0/{project_id}/events', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/V1.0/{project_id}/events',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='list[CreateEventsResponseBody]',
+            response_type='CreateEventsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -234,7 +223,7 @@ class CesAsyncClient(Client):
         添加一条或多条指标监控数据。
 
         :param CreateMetricDataRequest request
-        :return: None
+        :return: CreateMetricDataResponse
         """
         return self.create_metric_data_with_http_info(request)
 
@@ -244,15 +233,10 @@ class CesAsyncClient(Client):
         添加一条或多条指标监控数据。
 
         :param CreateMetricDataRequest request
-        :return: None
+        :return: CreateMetricDataResponse
         """
 
         all_params = ['metric_data_item']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -266,25 +250,28 @@ class CesAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/V1.0/{project_id}/metric-data', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/V1.0/{project_id}/metric-data',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='CreateMetricDataResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -295,7 +282,7 @@ class CesAsyncClient(Client):
         删除一条告警规则。
 
         :param DeleteAlarmRequest request
-        :return: None
+        :return: DeleteAlarmResponse
         """
         return self.delete_alarm_with_http_info(request)
 
@@ -305,15 +292,10 @@ class CesAsyncClient(Client):
         删除一条告警规则。
 
         :param DeleteAlarmRequest request
-        :return: None
+        :return: DeleteAlarmResponse
         """
 
         all_params = ['alarm_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -329,21 +311,24 @@ class CesAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/V1.0/{project_id}/alarms/{alarm_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/V1.0/{project_id}/alarms/{alarm_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteAlarmResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -364,15 +349,10 @@ class CesAsyncClient(Client):
         查询告警规则列表，可以指定分页条件限制结果数量，可以指定排序规则。
 
         :param ListAlarmsRequest request
-        :return: tuple(ListAlarmsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListAlarmsResponse
         """
 
         all_params = ['limit', 'order', 'start']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -392,20 +372,21 @@ class CesAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*'])
 
         auth_settings = []
 
         return self.call_api(
-            '/V1.0/{project_id}/alarms', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/V1.0/{project_id}/alarms',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListAlarmsResponse',
@@ -429,15 +410,10 @@ class CesAsyncClient(Client):
         查询系统当前可监控指标列表，可以指定指标命名空间、指标名称、维度、排序方式，起始记录和最大记录条数过滤查询结果。
 
         :param ListMetricsRequest request
-        :return: tuple(ListMetricsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListMetricsResponse
         """
 
         all_params = ['dim_0', 'dim_1', 'dim_2', 'limit', 'metric_name', 'namespace', 'order', 'start']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -467,20 +443,21 @@ class CesAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*'])
 
         auth_settings = []
 
         return self.call_api(
-            '/V1.0/{project_id}/metrics', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/V1.0/{project_id}/metrics',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListMetricsResponse',
@@ -504,15 +481,10 @@ class CesAsyncClient(Client):
         根据告警ID查询告警规则信息。
 
         :param ShowAlarmRequest request
-        :return: tuple(ShowAlarmResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowAlarmResponse
         """
 
         all_params = ['alarm_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -528,20 +500,21 @@ class CesAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*'])
 
         auth_settings = []
 
         return self.call_api(
-            '/V1.0/{project_id}/alarms/{alarm_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/V1.0/{project_id}/alarms/{alarm_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowAlarmResponse',
@@ -565,15 +538,10 @@ class CesAsyncClient(Client):
         查询指定时间范围指定事件类型的主机配置数据，可以通过参数指定需要查询的数据维度。注意：该接口提供给HANA场景下SAP Monitor查询主机配置数据，其他场景下查不到主机配置数据。
 
         :param ShowEventDataRequest request
-        :return: tuple(ShowEventDataResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowEventDataResponse
         """
 
         all_params = ['dim_0', '_from', 'namespace', 'to', 'type', 'dim_1', 'dim_2']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -601,20 +569,21 @@ class CesAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*'])
 
         auth_settings = []
 
         return self.call_api(
-            '/V1.0/{project_id}/event-data', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/V1.0/{project_id}/event-data',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowEventDataResponse',
@@ -638,15 +607,10 @@ class CesAsyncClient(Client):
         查询指定时间范围指定指标的指定粒度的监控数据，可以通过参数指定需要查询的数据维度。
 
         :param ShowMetricDataRequest request
-        :return: tuple(ShowMetricDataResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowMetricDataResponse
         """
 
         all_params = ['dim_0', 'filter', '_from', 'metric_name', 'namespace', 'period', 'to', 'dim_1', 'dim_2']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -678,20 +642,21 @@ class CesAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*'])
 
         auth_settings = []
 
         return self.call_api(
-            '/V1.0/{project_id}/metric-data', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/V1.0/{project_id}/metric-data',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowMetricDataResponse',
@@ -715,15 +680,10 @@ class CesAsyncClient(Client):
         查询用户可以创建的资源配额总数及当前使用量，当前仅有告警规则一种资源类型。
 
         :param ShowQuotasRequest request
-        :return: tuple(ShowQuotasResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowQuotasResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -737,20 +697,21 @@ class CesAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*'])
 
         auth_settings = []
 
         return self.call_api(
-            '/V1.0/{project_id}/quotas', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/V1.0/{project_id}/quotas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowQuotasResponse',
@@ -764,7 +725,7 @@ class CesAsyncClient(Client):
         启动或停止一条告警规则。
 
         :param UpdateAlarmActionRequest request
-        :return: None
+        :return: UpdateAlarmActionResponse
         """
         return self.update_alarm_action_with_http_info(request)
 
@@ -774,15 +735,10 @@ class CesAsyncClient(Client):
         启动或停止一条告警规则。
 
         :param UpdateAlarmActionRequest request
-        :return: None
+        :return: UpdateAlarmActionResponse
         """
 
         all_params = ['alarm_id', 'modify_alarm_action_req']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -798,25 +754,28 @@ class CesAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/V1.0/{project_id}/alarms/{alarm_id}/action', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/V1.0/{project_id}/alarms/{alarm_id}/action',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateAlarmActionResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -843,6 +802,15 @@ class CesAsyncClient(Client):
         :return:
             Return the response directly.
         """
-        return self.do_http_request(method, resource_path, path_params,
-                                    query_params, header_params, body, post_params,
-                                    response_type, collection_formats, request_type, True)
+        return self.do_http_request(
+            method=method,
+            resource_path=resource_path,
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body,
+            post_params=post_params,
+            response_type=response_type,
+            collection_formats=collection_formats,
+            request_type=request_type,
+	    async_request=True)

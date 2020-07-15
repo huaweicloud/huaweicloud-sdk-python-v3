@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AddUserDTO(object):
+
+
+
+class AddUserDTO:
 
 
     """
@@ -61,8 +64,10 @@ class AddUserDTO(object):
         'hide_phone': 'hidePhone'
     }
 
-    def __init__(self, id=None, name=None, english_name=None, account=None, phone=None, country=None, pwd=None, email=None, vmr_id=None, dept_code=None, signature=None, title=None, desc=None, status=None, function=None, send_notify=None, sort_level=None, hide_phone=None):  # noqa: E501
+    def __init__(self, id=None, name=None, english_name=None, account=None, phone=None, country=None, pwd=None, email=None, vmr_id=None, dept_code=None, signature=None, title=None, desc=None, status=None, function=None, send_notify=None, sort_level=None, hide_phone=None):
         """AddUserDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._name = None

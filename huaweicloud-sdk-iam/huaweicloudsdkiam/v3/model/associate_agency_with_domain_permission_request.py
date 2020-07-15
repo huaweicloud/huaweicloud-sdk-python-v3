@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AssociateAgencyWithDomainPermissionRequest(object):
+
+
+
+class AssociateAgencyWithDomainPermissionRequest:
 
 
     """
@@ -29,8 +32,10 @@ class AssociateAgencyWithDomainPermissionRequest(object):
         'role_id': 'role_id'
     }
 
-    def __init__(self, agency_id=None, role_id=None):  # noqa: E501
+    def __init__(self, agency_id=None, role_id=None):
         """AssociateAgencyWithDomainPermissionRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._agency_id = None
         self._role_id = None

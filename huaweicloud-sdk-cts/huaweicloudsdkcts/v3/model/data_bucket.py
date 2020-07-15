@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DataBucket(object):
+
+
+
+class DataBucket:
 
 
     """
@@ -29,8 +32,10 @@ class DataBucket(object):
         'data_event': 'data_event'
     }
 
-    def __init__(self, data_bucket_name=None, data_event=None):  # noqa: E501
+    def __init__(self, data_bucket_name=None, data_event=None):
         """DataBucket - a model defined in huaweicloud sdk"""
+        
+        
 
         self._data_bucket_name = None
         self._data_event = None

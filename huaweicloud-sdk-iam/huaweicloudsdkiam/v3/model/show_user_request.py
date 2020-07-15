@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowUserRequest(object):
+
+
+
+class ShowUserRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ShowUserRequest(object):
         'user_id': 'user_id'
     }
 
-    def __init__(self, user_id=None):  # noqa: E501
+    def __init__(self, user_id=None):
         """ShowUserRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._user_id = None
         self.discriminator = None

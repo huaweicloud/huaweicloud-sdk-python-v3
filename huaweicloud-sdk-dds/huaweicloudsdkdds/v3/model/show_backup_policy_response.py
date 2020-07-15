@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowBackupPolicyResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowBackupPolicyResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ShowBackupPolicyResponse(object):
         'backup_policy': 'backup_policy'
     }
 
-    def __init__(self, backup_policy=None):  # noqa: E501
+    def __init__(self, backup_policy=None):
         """ShowBackupPolicyResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._backup_policy = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListMaintenanceWindowsResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListMaintenanceWindowsResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ListMaintenanceWindowsResponse(object):
         'maintain_windows': 'maintain_windows'
     }
 
-    def __init__(self, maintain_windows=None):  # noqa: E501
+    def __init__(self, maintain_windows=None):
         """ListMaintenanceWindowsResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._maintain_windows = None
         self.discriminator = None

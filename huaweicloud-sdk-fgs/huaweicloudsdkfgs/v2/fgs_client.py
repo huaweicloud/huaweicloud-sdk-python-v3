@@ -11,6 +11,7 @@ import six
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class FgsClient(Client):
@@ -55,15 +56,10 @@ class FgsClient(Client):
         异步执行函数。
 
         :param AsyncInvokeFunctionRequest request
-        :return: tuple(AsyncInvokeFunctionResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: AsyncInvokeFunctionResponse
         """
 
         all_params = ['function_urn', 'async_invoke_function_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -79,24 +75,25 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/functions/{function_urn}/invocations-async', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/invocations-async',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='AsyncInvokeFunctionResponse',
@@ -120,15 +117,10 @@ class FgsClient(Client):
         创建指定的函数。
 
         :param CreateFunctionRequest request
-        :return: tuple(CreateFunctionResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateFunctionResponse
         """
 
         all_params = ['create_function_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -142,24 +134,25 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/functions', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/functions',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateFunctionResponse',
@@ -183,15 +176,10 @@ class FgsClient(Client):
         发布函数版本。
 
         :param CreateFunctionVersionRequest request
-        :return: tuple(CreateFunctionVersionResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateFunctionVersionResponse
         """
 
         all_params = ['function_urn', 'create_function_version_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -207,24 +195,25 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/functions/{function_urn}/versions', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/versions',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateFunctionVersionResponse',
@@ -248,15 +237,10 @@ class FgsClient(Client):
         创建函数灰度版本别名。
 
         :param CreateVersionAliasRequest request
-        :return: tuple(CreateVersionAliasResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateVersionAliasResponse
         """
 
         all_params = ['function_urn', 'create_version_alias_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -272,24 +256,25 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/functions/{function_urn}/aliases', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/aliases',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateVersionAliasResponse',
@@ -303,7 +288,7 @@ class FgsClient(Client):
         删除指定的函数或者特定的版本（不允许删除latest版本）。  如果URN中包含函数版本或者别名，则删除特定的函数版本或者别名指向的版本以及该版本关联的trigger。 如果URN中不包含版本或者别名，则删除整个函数，包含所有版本以及别名，触发器。
 
         :param DeleteFunctionRequest request
-        :return: None
+        :return: DeleteFunctionResponse
         """
         return self.delete_function_with_http_info(request)
 
@@ -313,15 +298,10 @@ class FgsClient(Client):
         删除指定的函数或者特定的版本（不允许删除latest版本）。  如果URN中包含函数版本或者别名，则删除特定的函数版本或者别名指向的版本以及该版本关联的trigger。 如果URN中不包含版本或者别名，则删除整个函数，包含所有版本以及别名，触发器。
 
         :param DeleteFunctionRequest request
-        :return: None
+        :return: DeleteFunctionResponse
         """
 
         all_params = ['function_urn']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -337,21 +317,24 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/functions/{function_urn}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteFunctionResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -362,7 +345,7 @@ class FgsClient(Client):
         删除函数版本别名。
 
         :param DeleteVersionAliasRequest request
-        :return: None
+        :return: DeleteVersionAliasResponse
         """
         return self.delete_version_alias_with_http_info(request)
 
@@ -372,15 +355,10 @@ class FgsClient(Client):
         删除函数版本别名。
 
         :param DeleteVersionAliasRequest request
-        :return: None
+        :return: DeleteVersionAliasResponse
         """
 
         all_params = ['function_urn', 'name']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -398,21 +376,24 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/functions/{function_urn}/aliases/{name}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/aliases/{name}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteVersionAliasResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -433,15 +414,10 @@ class FgsClient(Client):
         同步调用指的是客户端请求需要明确等到响应结果，也就是说这样的请求必须得调用到用户的函数，并且等到调用完成才返回。
 
         :param InvokeFunctionRequest request
-        :return: tuple(InvokeFunctionResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: InvokeFunctionResponse
         """
 
         all_params = ['function_urn', 'invoke_function_request_body', 'x_cff_log_type', 'x_cff_request_version']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -461,24 +437,25 @@ class FgsClient(Client):
         if 'x_cff_request_version' in local_var_params:
             header_params['X-CFF-Request-Version'] = local_var_params['x_cff_request_version']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json', 'text/plain'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/functions/{function_urn}/invocations', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/invocations',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='InvokeFunctionResponse',
@@ -502,15 +479,10 @@ class FgsClient(Client):
         获取指定函数的版本列表。
 
         :param ListFunctionVersionsRequest request
-        :return: tuple(ListFunctionVersionsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListFunctionVersionsResponse
         """
 
         all_params = ['function_urn', 'marker', 'maxitems']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -530,20 +502,21 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/functions/{function_urn}/versions', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/versions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListFunctionVersionsResponse',
@@ -567,15 +540,10 @@ class FgsClient(Client):
         获取函数列表
 
         :param ListFunctionsRequest request
-        :return: tuple(ListFunctionsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListFunctionsResponse
         """
 
         all_params = ['marker', 'maxitems']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -593,20 +561,21 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/functions', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/functions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListFunctionsResponse',
@@ -620,7 +589,7 @@ class FgsClient(Client):
         获取函数版本别名列表。
 
         :param ListVersionAliasesRequest request
-        :return: list[ListVersionAliasResult]
+        :return: ListVersionAliasesResponse
         """
         return self.list_version_aliases_with_http_info(request)
 
@@ -630,15 +599,10 @@ class FgsClient(Client):
         获取函数版本别名列表。
 
         :param ListVersionAliasesRequest request
-        :return: tuple(list[ListVersionAliasResult], status_code(int), headers(HTTPHeaderDict))
+        :return: ListVersionAliasesResponse
         """
 
         all_params = ['function_urn']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -654,23 +618,24 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/functions/{function_urn}/aliases', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/aliases',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='list[ListVersionAliasResult]',
+            response_type='ListVersionAliasesResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -691,15 +656,10 @@ class FgsClient(Client):
         获取指定函数的代码。
 
         :param ShowFunctionCodeRequest request
-        :return: tuple(ShowFunctionCodeResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowFunctionCodeResponse
         """
 
         all_params = ['function_urn']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -715,20 +675,21 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/functions/{function_urn}/code', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/code',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowFunctionCodeResponse',
@@ -752,15 +713,10 @@ class FgsClient(Client):
         获取指定函数的metadata。
 
         :param ShowFunctionConfigRequest request
-        :return: tuple(ShowFunctionConfigResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowFunctionConfigResponse
         """
 
         all_params = ['function_urn']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -776,20 +732,21 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/functions/{function_urn}/config', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/config',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowFunctionConfigResponse',
@@ -813,15 +770,10 @@ class FgsClient(Client):
         获取函数指定的版本别名信息。
 
         :param ShowVersionAliasRequest request
-        :return: tuple(ShowVersionAliasResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowVersionAliasResponse
         """
 
         all_params = ['function_urn', 'name']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -839,20 +791,21 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/functions/{function_urn}/aliases/{name}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/aliases/{name}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowVersionAliasResponse',
@@ -876,15 +829,10 @@ class FgsClient(Client):
         修改指定的函数的代码。
 
         :param UpdateFunctionCodeRequest request
-        :return: tuple(UpdateFunctionCodeResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateFunctionCodeResponse
         """
 
         all_params = ['function_urn', 'update_function_code_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -900,24 +848,25 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/functions/{function_urn}/code', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/code',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateFunctionCodeResponse',
@@ -941,15 +890,10 @@ class FgsClient(Client):
         修改指定的函数的metadata信息。
 
         :param UpdateFunctionConfigRequest request
-        :return: tuple(UpdateFunctionConfigResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateFunctionConfigResponse
         """
 
         all_params = ['function_urn', 'update_function_config_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -965,24 +909,25 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/functions/{function_urn}/config', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/config',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateFunctionConfigResponse',
@@ -1006,15 +951,10 @@ class FgsClient(Client):
         修改函数版本别名信息。
 
         :param UpdateVersionAliasRequest request
-        :return: tuple(UpdateVersionAliasResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateVersionAliasResponse
         """
 
         all_params = ['function_urn', 'name', 'update_version_alias_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1032,24 +972,25 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/functions/{function_urn}/aliases/{name}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/aliases/{name}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateVersionAliasResponse',
@@ -1064,7 +1005,7 @@ class FgsClient(Client):
         删除指定函数所有触发器设置。  在提供函数版本且非latest的情况下，删除对应函数版本的触发器。 在提供函数别名的情况下，删除对应函数别名的触发器。 在不提供函数版本（也不提供别名）或版本为latest的情况下，删除该函数所有的触发器（包括所有版本和别名）。
 
         :param BatchDeleteFunctionTriggersRequest request
-        :return: None
+        :return: BatchDeleteFunctionTriggersResponse
         """
         return self.batch_delete_function_triggers_with_http_info(request)
 
@@ -1074,15 +1015,10 @@ class FgsClient(Client):
         删除指定函数所有触发器设置。  在提供函数版本且非latest的情况下，删除对应函数版本的触发器。 在提供函数别名的情况下，删除对应函数别名的触发器。 在不提供函数版本（也不提供别名）或版本为latest的情况下，删除该函数所有的触发器（包括所有版本和别名）。
 
         :param BatchDeleteFunctionTriggersRequest request
-        :return: None
+        :return: BatchDeleteFunctionTriggersResponse
         """
 
         all_params = ['function_urn']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1098,21 +1034,24 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/triggers/{function_urn}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='BatchDeleteFunctionTriggersResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1133,15 +1072,10 @@ class FgsClient(Client):
         创建触发器。  - 可以创建的触发器类型包括TIMER、APIG、CTS、DDS、DMS、DIS、LTS、OBS、SMN、KAFKA。 - DDS和KAFKA触发器创建时默认为DISABLE状态，其他触发器默认为ACTIVE状态。 - TIMER、DDS、DMS、KAFKA、LTS触发器支持禁用，其他触发器不支持。
 
         :param CreateFunctionTriggerRequest request
-        :return: tuple(CreateFunctionTriggerResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateFunctionTriggerResponse
         """
 
         all_params = ['function_urn', 'create_function_trigger_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1157,24 +1091,25 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/triggers/{function_urn}', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateFunctionTriggerResponse',
@@ -1188,7 +1123,7 @@ class FgsClient(Client):
         删除触发器。
 
         :param DeleteFunctionTriggerRequest request
-        :return: None
+        :return: DeleteFunctionTriggerResponse
         """
         return self.delete_function_trigger_with_http_info(request)
 
@@ -1198,15 +1133,10 @@ class FgsClient(Client):
         删除触发器。
 
         :param DeleteFunctionTriggerRequest request
-        :return: None
+        :return: DeleteFunctionTriggerResponse
         """
 
         all_params = ['function_urn', 'trigger_type_code', 'trigger_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1226,21 +1156,24 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/triggers/{function_urn}/{trigger_type_code}/{triggerId}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}/{trigger_type_code}/{triggerId}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteFunctionTriggerResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1251,7 +1184,7 @@ class FgsClient(Client):
         获取指定函数的所有触发器设置。
 
         :param ListFunctionTriggersRequest request
-        :return: list[ListFunctionTriggerResult]
+        :return: ListFunctionTriggersResponse
         """
         return self.list_function_triggers_with_http_info(request)
 
@@ -1261,15 +1194,10 @@ class FgsClient(Client):
         获取指定函数的所有触发器设置。
 
         :param ListFunctionTriggersRequest request
-        :return: tuple(list[ListFunctionTriggerResult], status_code(int), headers(HTTPHeaderDict))
+        :return: ListFunctionTriggersResponse
         """
 
         all_params = ['function_urn']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1285,23 +1213,24 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/triggers/{function_urn}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='list[ListFunctionTriggerResult]',
+            response_type='ListFunctionTriggersResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1322,15 +1251,10 @@ class FgsClient(Client):
         获取特定触发器的信息。
 
         :param ShowFunctionTriggerRequest request
-        :return: tuple(ShowFunctionTriggerResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowFunctionTriggerResponse
         """
 
         all_params = ['function_urn', 'trigger_type_code', 'trigger_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1350,20 +1274,21 @@ class FgsClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v2/{project_id}/fgs/triggers/{function_urn}/{trigger_type_code}/{triggerId}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}/{trigger_type_code}/{triggerId}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowFunctionTriggerResponse',
@@ -1393,6 +1318,14 @@ class FgsClient(Client):
         :return:
             Return the response directly.
         """
-        return self.do_http_request(method, resource_path, path_params,
-                                    query_params, header_params, body, post_params,
-                                    response_type, collection_formats, request_type)
+        return self.do_http_request(
+            method=method,
+            resource_path=resource_path,
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body,
+            post_params=post_params,
+            response_type=response_type,
+            collection_formats=collection_formats,
+            request_type=request_type)

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PostPaidServerDataVolumeExtendParam(object):
+
+
+
+class PostPaidServerDataVolumeExtendParam:
 
 
     """
@@ -31,8 +34,10 @@ class PostPaidServerDataVolumeExtendParam(object):
         'snapshot_id': 'snapshotId'
     }
 
-    def __init__(self, resource_spec_code=None, resource_type=None, snapshot_id=None):  # noqa: E501
+    def __init__(self, resource_spec_code=None, resource_type=None, snapshot_id=None):
         """PostPaidServerDataVolumeExtendParam - a model defined in huaweicloud sdk"""
+        
+        
 
         self._resource_spec_code = None
         self._resource_type = None

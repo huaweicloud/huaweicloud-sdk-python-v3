@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreatePrivateipRequestBody(object):
+
+
+
+class CreatePrivateipRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class CreatePrivateipRequestBody(object):
         'privateips': 'privateips'
     }
 
-    def __init__(self, privateips=None):  # noqa: E501
+    def __init__(self, privateips=None):
         """CreatePrivateipRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._privateips = None
         self.discriminator = None

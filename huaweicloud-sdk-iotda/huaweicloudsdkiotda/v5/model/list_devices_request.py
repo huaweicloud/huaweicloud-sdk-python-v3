@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListDevicesRequest(object):
+
+
+
+class ListDevicesRequest:
 
 
     """
@@ -49,8 +52,10 @@ class ListDevicesRequest(object):
         'app_id': 'app_id'
     }
 
-    def __init__(self, instance_id=None, product_id=None, gateway_id=None, is_cascade_query=False, node_id=None, device_name=None, limit=10, marker='ffffffffffffffffffffffff', offset=0, start_time=None, end_time=None, app_id=None):  # noqa: E501
+    def __init__(self, instance_id=None, product_id=None, gateway_id=None, is_cascade_query=False, node_id=None, device_name=None, limit=10, marker='ffffffffffffffffffffffff', offset=0, start_time=None, end_time=None, app_id=None):
         """ListDevicesRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._product_id = None

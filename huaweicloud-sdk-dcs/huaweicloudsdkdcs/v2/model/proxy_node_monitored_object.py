@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ProxyNodeMonitoredObject(object):
+
+
+
+class ProxyNodeMonitoredObject:
 
 
     """
@@ -33,8 +36,10 @@ class ProxyNodeMonitoredObject(object):
         'status': 'status'
     }
 
-    def __init__(self, dcs_instance_id=None, name=None, dcs_cluster_proxy_node=None, status=None):  # noqa: E501
+    def __init__(self, dcs_instance_id=None, name=None, dcs_cluster_proxy_node=None, status=None):
         """ProxyNodeMonitoredObject - a model defined in huaweicloud sdk"""
+        
+        
 
         self._dcs_instance_id = None
         self._name = None

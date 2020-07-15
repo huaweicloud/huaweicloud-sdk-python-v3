@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RestartOrFlushDCSInstancesRequest(object):
+
+
+
+class RestartOrFlushDCSInstancesRequest:
 
 
     """
@@ -27,8 +30,10 @@ class RestartOrFlushDCSInstancesRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, body=None):  # noqa: E501
+    def __init__(self, body=None):
         """RestartOrFlushDCSInstancesRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._body = None
         self.discriminator = None

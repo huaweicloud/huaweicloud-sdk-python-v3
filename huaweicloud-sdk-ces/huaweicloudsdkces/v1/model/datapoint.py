@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Datapoint(object):
+
+
+
+class Datapoint:
 
 
     """
@@ -31,8 +34,10 @@ class Datapoint(object):
         'unit': 'unit'
     }
 
-    def __init__(self, average=None, timestamp=None, unit=None):  # noqa: E501
+    def __init__(self, average=None, timestamp=None, unit=None):
         """Datapoint - a model defined in huaweicloud sdk"""
+        
+        
 
         self._average = None
         self._timestamp = None

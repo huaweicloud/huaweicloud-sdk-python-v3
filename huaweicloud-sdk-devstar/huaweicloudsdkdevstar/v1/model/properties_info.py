@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PropertiesInfo(object):
+
+
+
+class PropertiesInfo:
 
 
     """
@@ -47,8 +50,10 @@ class PropertiesInfo(object):
         'is_show': 'isShow'
     }
 
-    def __init__(self, key=None, default_value=None, label=None, type=None, help_text=None, read_only=None, required=None, reg_type=None, reg_pattern=None, reg_tip=None, is_show=None):  # noqa: E501
+    def __init__(self, key=None, default_value=None, label=None, type=None, help_text=None, read_only=None, required=None, reg_type=None, reg_pattern=None, reg_tip=None, is_show=None):
         """PropertiesInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._key = None
         self._default_value = None

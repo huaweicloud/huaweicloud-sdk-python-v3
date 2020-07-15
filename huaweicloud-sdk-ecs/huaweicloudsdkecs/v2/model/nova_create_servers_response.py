@@ -6,7 +6,10 @@ import re
 import six
 
 
-class NovaCreateServersResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class NovaCreateServersResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class NovaCreateServersResponse(object):
         'server': 'server'
     }
 
-    def __init__(self, server=None):  # noqa: E501
+    def __init__(self, server=None):
         """NovaCreateServersResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._server = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteScalingNotificationRequest(object):
+
+
+
+class DeleteScalingNotificationRequest:
 
 
     """
@@ -29,8 +32,10 @@ class DeleteScalingNotificationRequest(object):
         'topic_urn': 'topic_urn'
     }
 
-    def __init__(self, scaling_group_id=None, topic_urn=None):  # noqa: E501
+    def __init__(self, scaling_group_id=None, topic_urn=None):
         """DeleteScalingNotificationRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._scaling_group_id = None
         self._topic_urn = None

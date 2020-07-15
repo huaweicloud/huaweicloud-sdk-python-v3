@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ImageBatchModerationResultBody(object):
+
+
+
+class ImageBatchModerationResultBody:
 
 
     """
@@ -33,8 +36,10 @@ class ImageBatchModerationResultBody(object):
         'category_suggestion': 'category_suggestion'
     }
 
-    def __init__(self, url=None, suggestion=None, detail=None, category_suggestion=None):  # noqa: E501
+    def __init__(self, url=None, suggestion=None, detail=None, category_suggestion=None):
         """ImageBatchModerationResultBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._url = None
         self._suggestion = None

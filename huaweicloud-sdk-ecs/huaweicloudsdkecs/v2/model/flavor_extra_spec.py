@@ -6,7 +6,10 @@ import re
 import six
 
 
-class FlavorExtraSpec(object):
+
+
+
+class FlavorExtraSpec:
 
 
     """
@@ -55,8 +58,10 @@ class FlavorExtraSpec(object):
         'condoperationcharge': 'cond:operation:charge'
     }
 
-    def __init__(self, ecsperformancetype=None, resource_type=None, quotalocal_disk=None, quotanvme_ssd=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None):  # noqa: E501
+    def __init__(self, ecsperformancetype=None, resource_type=None, quotalocal_disk=None, quotanvme_ssd=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None):
         """FlavorExtraSpec - a model defined in huaweicloud sdk"""
+        
+        
 
         self._ecsperformancetype = None
         self._resource_type = None

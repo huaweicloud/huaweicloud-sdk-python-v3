@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowPortRequest(object):
+
+
+
+class ShowPortRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ShowPortRequest(object):
         'port_id': 'port_id'
     }
 
-    def __init__(self, port_id=None):  # noqa: E501
+    def __init__(self, port_id=None):
         """ShowPortRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._port_id = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneUpdateUserPasswordResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class KeystoneUpdateUserPasswordResponse(SdkResponse):
 
 
     """
@@ -25,8 +28,10 @@ class KeystoneUpdateUserPasswordResponse(object):
     attribute_map = {
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self):
         """KeystoneUpdateUserPasswordResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
         self.discriminator = None
 
     def to_dict(self):

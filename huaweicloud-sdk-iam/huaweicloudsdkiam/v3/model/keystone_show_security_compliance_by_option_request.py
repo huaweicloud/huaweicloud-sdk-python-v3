@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneShowSecurityComplianceByOptionRequest(object):
+
+
+
+class KeystoneShowSecurityComplianceByOptionRequest:
 
 
     """
@@ -27,8 +30,10 @@ class KeystoneShowSecurityComplianceByOptionRequest(object):
         'option': 'option'
     }
 
-    def __init__(self, option=None):  # noqa: E501
+    def __init__(self, option=None):
         """KeystoneShowSecurityComplianceByOptionRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._option = None
         self.discriminator = None

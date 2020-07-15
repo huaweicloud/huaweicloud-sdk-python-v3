@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListStatisticsOfRunningInstancesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListStatisticsOfRunningInstancesResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ListStatisticsOfRunningInstancesResponse(object):
         'statistics': 'statistics'
     }
 
-    def __init__(self, statistics=None):  # noqa: E501
+    def __init__(self, statistics=None):
         """ListStatisticsOfRunningInstancesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._statistics = None
         self.discriminator = None

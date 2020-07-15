@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateSnapshotRequestBody(object):
+
+
+
+class UpdateSnapshotRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class UpdateSnapshotRequestBody(object):
         'snapshot': 'snapshot'
     }
 
-    def __init__(self, snapshot=None):  # noqa: E501
+    def __init__(self, snapshot=None):
         """UpdateSnapshotRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._snapshot = None
         self.discriminator = None

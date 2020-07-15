@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListResourcesByTagsRequest(object):
+
+
+
+class ListResourcesByTagsRequest:
 
 
     """
@@ -35,8 +38,10 @@ class ListResourcesByTagsRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, instance_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0, body=None):  # noqa: E501
+    def __init__(self, instance_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0, body=None):
         """ListResourcesByTagsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._limit = None

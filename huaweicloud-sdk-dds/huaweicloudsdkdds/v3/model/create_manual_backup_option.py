@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateManualBackupOption(object):
+
+
+
+class CreateManualBackupOption:
 
 
     """
@@ -31,8 +34,10 @@ class CreateManualBackupOption(object):
         'description': 'description'
     }
 
-    def __init__(self, instance_id=None, name=None, description=None):  # noqa: E501
+    def __init__(self, instance_id=None, name=None, description=None):
         """CreateManualBackupOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._name = None

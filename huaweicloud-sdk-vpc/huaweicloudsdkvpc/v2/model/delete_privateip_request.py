@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeletePrivateipRequest(object):
+
+
+
+class DeletePrivateipRequest:
 
 
     """
@@ -27,8 +30,10 @@ class DeletePrivateipRequest(object):
         'privateip_id': 'privateip_id'
     }
 
-    def __init__(self, privateip_id=None):  # noqa: E501
+    def __init__(self, privateip_id=None):
         """DeletePrivateipRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._privateip_id = None
         self.discriminator = None

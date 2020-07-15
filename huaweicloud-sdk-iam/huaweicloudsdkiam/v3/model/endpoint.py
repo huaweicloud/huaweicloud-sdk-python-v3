@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Endpoint(object):
+
+
+
+class Endpoint:
 
 
     """
@@ -41,8 +44,10 @@ class Endpoint(object):
         'enabled': 'enabled'
     }
 
-    def __init__(self, service_id=None, region_id=None, links=None, id=None, interface=None, region=None, url=None, enabled=None):  # noqa: E501
+    def __init__(self, service_id=None, region_id=None, links=None, id=None, interface=None, region=None, url=None, enabled=None):
         """Endpoint - a model defined in huaweicloud sdk"""
+        
+        
 
         self._service_id = None
         self._region_id = None

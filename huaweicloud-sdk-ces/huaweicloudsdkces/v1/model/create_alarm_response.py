@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateAlarmResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CreateAlarmResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class CreateAlarmResponse(object):
         'alarm_id': 'alarm_id'
     }
 
-    def __init__(self, alarm_id=None):  # noqa: E501
+    def __init__(self, alarm_id=None):
         """CreateAlarmResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._alarm_id = None
         self.discriminator = None

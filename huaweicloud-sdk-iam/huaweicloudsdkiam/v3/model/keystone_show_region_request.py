@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneShowRegionRequest(object):
+
+
+
+class KeystoneShowRegionRequest:
 
 
     """
@@ -27,8 +30,10 @@ class KeystoneShowRegionRequest(object):
         'region_id': 'region_id'
     }
 
-    def __init__(self, region_id=None):  # noqa: E501
+    def __init__(self, region_id=None):
         """KeystoneShowRegionRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._region_id = None
         self.discriminator = None

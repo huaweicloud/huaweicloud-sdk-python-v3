@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CorpBasicDTO(object):
+
+
+
+class CorpBasicDTO:
 
 
     """
@@ -47,8 +50,10 @@ class CorpBasicDTO(object):
         'time_zone_id': 'timeZoneId'
     }
 
-    def __init__(self, name=None, domain=None, phone=None, country='chinaPR', fax=None, email=None, address=None, description=None, sp_id=None, language='zh-CN', time_zone_id='56'):  # noqa: E501
+    def __init__(self, name=None, domain=None, phone=None, country='chinaPR', fax=None, email=None, address=None, description=None, sp_id=None, language='zh-CN', time_zone_id='56'):
         """CorpBasicDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._domain = None

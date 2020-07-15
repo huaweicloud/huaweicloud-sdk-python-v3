@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdatePropertiesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class UpdatePropertiesResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class UpdatePropertiesResponse(object):
         'response': 'response'
     }
 
-    def __init__(self, response=None):  # noqa: E501
+    def __init__(self, response=None):
         """UpdatePropertiesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._response = None
         self.discriminator = None

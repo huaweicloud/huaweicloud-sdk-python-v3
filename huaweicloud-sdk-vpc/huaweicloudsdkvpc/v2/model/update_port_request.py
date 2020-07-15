@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdatePortRequest(object):
+
+
+
+class UpdatePortRequest:
 
 
     """
@@ -29,8 +32,10 @@ class UpdatePortRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, port_id=None, body=None):  # noqa: E501
+    def __init__(self, port_id=None, body=None):
         """UpdatePortRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._port_id = None
         self._body = None

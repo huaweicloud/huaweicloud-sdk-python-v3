@@ -6,7 +6,10 @@ import re
 import six
 
 
-class QueryCorpBasicResultDTO(object):
+
+
+
+class QueryCorpBasicResultDTO:
 
 
     """
@@ -41,8 +44,10 @@ class QueryCorpBasicResultDTO(object):
         'sp_id': 'spId'
     }
 
-    def __init__(self, name=None, phone=None, country=None, fax=None, email=None, address=None, description=None, sp_id=None):  # noqa: E501
+    def __init__(self, name=None, phone=None, country=None, fax=None, email=None, address=None, description=None, sp_id=None):
         """QueryCorpBasicResultDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._phone = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Attachment(object):
+
+
+
+class Attachment:
 
 
     """
@@ -39,8 +42,10 @@ class Attachment(object):
         'volume_id': 'volume_id'
     }
 
-    def __init__(self, attached_at=None, attachment_id=None, device=None, host_name=None, id=None, server_id=None, volume_id=None):  # noqa: E501
+    def __init__(self, attached_at=None, attachment_id=None, device=None, host_name=None, id=None, server_id=None, volume_id=None):
         """Attachment - a model defined in huaweicloud sdk"""
+        
+        
 
         self._attached_at = None
         self._attachment_id = None
@@ -195,7 +200,7 @@ class Attachment(object):
     def volume_id(self):
         """Gets the volume_id of this Attachment.
 
-        云硬盘ID
+        云硬盘ID。
 
         :return: The volume_id of this Attachment.
         :rtype: str
@@ -206,7 +211,7 @@ class Attachment(object):
     def volume_id(self, volume_id):
         """Sets the volume_id of this Attachment.
 
-        云硬盘ID
+        云硬盘ID。
 
         :param volume_id: The volume_id of this Attachment.
         :type: str

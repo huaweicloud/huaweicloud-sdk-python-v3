@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SearchCorpDirResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class SearchCorpDirResponse(SdkResponse):
 
 
     """
@@ -33,8 +36,10 @@ class SearchCorpDirResponse(object):
         'data': 'data'
     }
 
-    def __init__(self, offset=None, limit=None, count=None, data=None):  # noqa: E501
+    def __init__(self, offset=None, limit=None, count=None, data=None):
         """SearchCorpDirResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._offset = None
         self._limit = None

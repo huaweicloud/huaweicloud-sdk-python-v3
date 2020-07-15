@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListInstancesRequest(object):
+
+
+
+class ListInstancesRequest:
 
 
     """
@@ -41,8 +44,10 @@ class ListInstancesRequest(object):
         'limit': 'limit'
     }
 
-    def __init__(self, id=None, name=None, mode=None, datastore_type=None, vpc_id=None, subnet_id=None, offset=None, limit=None):  # noqa: E501
+    def __init__(self, id=None, name=None, mode=None, datastore_type=None, vpc_id=None, subnet_id=None, offset=None, limit=None):
         """ListInstancesRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._name = None

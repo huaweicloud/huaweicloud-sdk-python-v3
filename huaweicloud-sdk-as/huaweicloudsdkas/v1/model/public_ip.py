@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PublicIp(object):
+
+
+
+class PublicIp:
 
 
     """
@@ -27,8 +30,10 @@ class PublicIp(object):
         'eip': 'eip'
     }
 
-    def __init__(self, eip=None):  # noqa: E501
+    def __init__(self, eip=None):
         """PublicIp - a model defined in huaweicloud sdk"""
+        
+        
 
         self._eip = None
         self.discriminator = None

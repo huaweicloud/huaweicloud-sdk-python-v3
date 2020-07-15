@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchDeleteBody(object):
+
+
+
+class BatchDeleteBody:
 
 
     """
@@ -27,8 +30,10 @@ class BatchDeleteBody(object):
         'instances': 'instances'
     }
 
-    def __init__(self, instances=None):  # noqa: E501
+    def __init__(self, instances=None):
         """BatchDeleteBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instances = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListOsVersionsRequest(object):
+
+
+
+class ListOsVersionsRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ListOsVersionsRequest(object):
         'tag': 'tag'
     }
 
-    def __init__(self, tag=None):  # noqa: E501
+    def __init__(self, tag=None):
         """ListOsVersionsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._tag = None
         self.discriminator = None

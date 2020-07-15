@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneListAuthProjectsRequest(object):
+
+
+
+class KeystoneListAuthProjectsRequest:
 
 
     """
@@ -25,8 +28,10 @@ class KeystoneListAuthProjectsRequest(object):
     attribute_map = {
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self):
         """KeystoneListAuthProjectsRequest - a model defined in huaweicloud sdk"""
+        
+        
         self.discriminator = None
 
     def to_dict(self):

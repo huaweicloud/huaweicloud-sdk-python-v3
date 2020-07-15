@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RunImageModerationResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class RunImageModerationResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class RunImageModerationResponse(object):
         'result': 'result'
     }
 
-    def __init__(self, result=None):  # noqa: E501
+    def __init__(self, result=None):
         """RunImageModerationResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._result = None
         self.discriminator = None

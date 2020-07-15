@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateOrUpdateTagsRequest(object):
+
+
+
+class CreateOrUpdateTagsRequest:
 
 
     """
@@ -27,8 +30,10 @@ class CreateOrUpdateTagsRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, body=None):  # noqa: E501
+    def __init__(self, body=None):
         """CreateOrUpdateTagsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._body = None
         self.discriminator = None

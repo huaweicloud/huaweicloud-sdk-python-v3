@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateVpcResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CreateVpcResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class CreateVpcResponse(object):
         'vpc': 'vpc'
     }
 
-    def __init__(self, vpc=None):  # noqa: E501
+    def __init__(self, vpc=None):
         """CreateVpcResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._vpc = None
         self.discriminator = None

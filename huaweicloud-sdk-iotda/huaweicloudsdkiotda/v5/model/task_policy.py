@@ -6,7 +6,10 @@ import re
 import six
 
 
-class TaskPolicy(object):
+
+
+
+class TaskPolicy:
 
 
     """
@@ -31,8 +34,10 @@ class TaskPolicy(object):
         'retry_interval': 'retry_interval'
     }
 
-    def __init__(self, schedule_time=None, retry_count=None, retry_interval=None):  # noqa: E501
+    def __init__(self, schedule_time=None, retry_count=None, retry_interval=None):
         """TaskPolicy - a model defined in huaweicloud sdk"""
+        
+        
 
         self._schedule_time = None
         self._retry_count = None

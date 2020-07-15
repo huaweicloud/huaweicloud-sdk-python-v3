@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListTagsRequest(object):
+
+
+
+class ListTagsRequest:
 
 
     """
@@ -55,8 +58,10 @@ class ListTagsRequest(object):
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, limit=None, page=1, imagetype=None, id=None, status=None, name=None, min_disk=None, platform=None, os_type=None, member_status=None, virtual_env_type=None, enterprise_project_id=None, architecture=None, created_at=None, updated_at=None):  # noqa: E501
+    def __init__(self, limit=None, page=1, imagetype=None, id=None, status=None, name=None, min_disk=None, platform=None, os_type=None, member_status=None, virtual_env_type=None, enterprise_project_id=None, architecture=None, created_at=None, updated_at=None):
         """ListTagsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._limit = None
         self._page = None

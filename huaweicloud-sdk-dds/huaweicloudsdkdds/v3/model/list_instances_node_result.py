@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListInstancesNodeResult(object):
+
+
+
+class ListInstancesNodeResult:
 
 
     """
@@ -41,8 +44,10 @@ class ListInstancesNodeResult(object):
         'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, id=None, name=None, status=None, role=None, private_ip=None, public_ip=None, spec_code=None, availability_zone=None):  # noqa: E501
+    def __init__(self, id=None, name=None, status=None, role=None, private_ip=None, public_ip=None, spec_code=None, availability_zone=None):
         """ListInstancesNodeResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._name = None

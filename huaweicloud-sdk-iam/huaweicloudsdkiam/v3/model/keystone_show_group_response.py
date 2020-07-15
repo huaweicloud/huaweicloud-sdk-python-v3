@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneShowGroupResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class KeystoneShowGroupResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class KeystoneShowGroupResponse(object):
         'group': 'group'
     }
 
-    def __init__(self, group=None):  # noqa: E501
+    def __init__(self, group=None):
         """KeystoneShowGroupResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._group = None
         self.discriminator = None

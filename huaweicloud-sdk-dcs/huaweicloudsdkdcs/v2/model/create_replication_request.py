@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateReplicationRequest(object):
+
+
+
+class CreateReplicationRequest:
 
 
     """
@@ -31,8 +34,10 @@ class CreateReplicationRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, instance_id=None, group_id=None, body=None):  # noqa: E501
+    def __init__(self, instance_id=None, group_id=None, body=None):
         """CreateReplicationRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._group_id = None

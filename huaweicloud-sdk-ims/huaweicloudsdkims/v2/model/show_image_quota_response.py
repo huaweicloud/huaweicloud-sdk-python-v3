@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowImageQuotaResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowImageQuotaResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ShowImageQuotaResponse(object):
         'quotas': 'quotas'
     }
 
-    def __init__(self, quotas=None):  # noqa: E501
+    def __init__(self, quotas=None):
         """ShowImageQuotaResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._quotas = None
         self.discriminator = None

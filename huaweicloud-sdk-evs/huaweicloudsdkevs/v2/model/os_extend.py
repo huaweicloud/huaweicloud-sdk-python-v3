@@ -6,7 +6,10 @@ import re
 import six
 
 
-class OsExtend(object):
+
+
+
+class OsExtend:
 
 
     """
@@ -27,8 +30,10 @@ class OsExtend(object):
         'new_size': 'new_size'
     }
 
-    def __init__(self, new_size=None):  # noqa: E501
+    def __init__(self, new_size=None):
         """OsExtend - a model defined in huaweicloud sdk"""
+        
+        
 
         self._new_size = None
         self.discriminator = None

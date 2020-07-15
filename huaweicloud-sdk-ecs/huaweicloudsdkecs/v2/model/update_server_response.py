@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateServerResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class UpdateServerResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class UpdateServerResponse(object):
         'server': 'server'
     }
 
-    def __init__(self, server=None):  # noqa: E501
+    def __init__(self, server=None):
         """UpdateServerResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._server = None
         self.discriminator = None

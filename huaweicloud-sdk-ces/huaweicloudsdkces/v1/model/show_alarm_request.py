@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowAlarmRequest(object):
+
+
+
+class ShowAlarmRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ShowAlarmRequest(object):
         'alarm_id': 'alarm_id'
     }
 
-    def __init__(self, alarm_id=None):  # noqa: E501
+    def __init__(self, alarm_id=None):
         """ShowAlarmRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._alarm_id = None
         self.discriminator = None

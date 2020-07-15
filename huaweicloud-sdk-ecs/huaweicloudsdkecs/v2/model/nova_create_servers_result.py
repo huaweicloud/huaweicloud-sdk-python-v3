@@ -6,7 +6,10 @@ import re
 import six
 
 
-class NovaCreateServersResult(object):
+
+
+
+class NovaCreateServersResult:
 
 
     """
@@ -37,8 +40,10 @@ class NovaCreateServersResult(object):
         'admin_pass': 'adminPass'
     }
 
-    def __init__(self, id=None, links=None, security_groups=None, os_dc_fdisk_config=None, reservation_id=None, admin_pass=None):  # noqa: E501
+    def __init__(self, id=None, links=None, security_groups=None, os_dc_fdisk_config=None, reservation_id=None, admin_pass=None):
         """NovaCreateServersResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._links = None

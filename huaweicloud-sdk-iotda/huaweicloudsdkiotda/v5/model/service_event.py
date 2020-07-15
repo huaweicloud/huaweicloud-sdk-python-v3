@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ServiceEvent(object):
+
+
+
+class ServiceEvent:
 
 
     """
@@ -29,8 +32,10 @@ class ServiceEvent(object):
         'paras': 'paras'
     }
 
-    def __init__(self, event_type=None, paras=None):  # noqa: E501
+    def __init__(self, event_type=None, paras=None):
         """ServiceEvent - a model defined in huaweicloud sdk"""
+        
+        
 
         self._event_type = None
         self._paras = None

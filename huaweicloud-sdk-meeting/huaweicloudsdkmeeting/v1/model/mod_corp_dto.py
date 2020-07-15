@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ModCorpDTO(object):
+
+
+
+class ModCorpDTO:
 
 
     """
@@ -29,8 +32,10 @@ class ModCorpDTO(object):
         'admin_info': 'adminInfo'
     }
 
-    def __init__(self, basic_info=None, admin_info=None):  # noqa: E501
+    def __init__(self, basic_info=None, admin_info=None):
         """ModCorpDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._basic_info = None
         self._admin_info = None

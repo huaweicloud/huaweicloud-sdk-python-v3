@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateScalingConfigRequestBody(object):
+
+
+
+class CreateScalingConfigRequestBody:
 
 
     """
@@ -29,8 +32,10 @@ class CreateScalingConfigRequestBody(object):
         'instance_config': 'instance_config'
     }
 
-    def __init__(self, scaling_configuration_name=None, instance_config=None):  # noqa: E501
+    def __init__(self, scaling_configuration_name=None, instance_config=None):
         """CreateScalingConfigRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._scaling_configuration_name = None
         self._instance_config = None

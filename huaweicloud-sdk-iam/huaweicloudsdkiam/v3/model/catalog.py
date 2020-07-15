@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Catalog(object):
+
+
+
+class Catalog:
 
 
     """
@@ -33,8 +36,10 @@ class Catalog(object):
         'type': 'type'
     }
 
-    def __init__(self, endpoints=None, id=None, name=None, type=None):  # noqa: E501
+    def __init__(self, endpoints=None, id=None, name=None, type=None):
         """Catalog - a model defined in huaweicloud sdk"""
+        
+        
 
         self._endpoints = None
         self._id = None

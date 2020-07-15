@@ -6,7 +6,10 @@ import re
 import six
 
 
-class GlanceShowImageMemberRequest(object):
+
+
+
+class GlanceShowImageMemberRequest:
 
 
     """
@@ -29,8 +32,10 @@ class GlanceShowImageMemberRequest(object):
         'member_id': 'member_id'
     }
 
-    def __init__(self, image_id=None, member_id=None):  # noqa: E501
+    def __init__(self, image_id=None, member_id=None):
         """GlanceShowImageMemberRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._image_id = None
         self._member_id = None

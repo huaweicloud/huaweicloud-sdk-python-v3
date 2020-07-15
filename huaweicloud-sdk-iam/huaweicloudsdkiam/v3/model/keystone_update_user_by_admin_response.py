@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneUpdateUserByAdminResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class KeystoneUpdateUserByAdminResponse(SdkResponse):
 
 
     """
@@ -20,15 +23,17 @@ class KeystoneUpdateUserByAdminResponse(object):
     sensitive_list = []
 
     openapi_types = {
-        'user': 'KeystoneUserResult'
+        'user': 'KeystoneUpdateUserByAdminResult'
     }
 
     attribute_map = {
         'user': 'user'
     }
 
-    def __init__(self, user=None):  # noqa: E501
+    def __init__(self, user=None):
         """KeystoneUpdateUserByAdminResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._user = None
         self.discriminator = None
@@ -42,7 +47,7 @@ class KeystoneUpdateUserByAdminResponse(object):
 
 
         :return: The user of this KeystoneUpdateUserByAdminResponse.
-        :rtype: KeystoneUserResult
+        :rtype: KeystoneUpdateUserByAdminResult
         """
         return self._user
 
@@ -52,7 +57,7 @@ class KeystoneUpdateUserByAdminResponse(object):
 
 
         :param user: The user of this KeystoneUpdateUserByAdminResponse.
-        :type: KeystoneUserResult
+        :type: KeystoneUpdateUserByAdminResult
         """
         self._user = user
 

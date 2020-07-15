@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListLifeCycleHooksRequest(object):
+
+
+
+class ListLifeCycleHooksRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ListLifeCycleHooksRequest(object):
         'scaling_group_id': 'scaling_group_id'
     }
 
-    def __init__(self, scaling_group_id=None):  # noqa: E501
+    def __init__(self, scaling_group_id=None):
         """ListLifeCycleHooksRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._scaling_group_id = None
         self.discriminator = None

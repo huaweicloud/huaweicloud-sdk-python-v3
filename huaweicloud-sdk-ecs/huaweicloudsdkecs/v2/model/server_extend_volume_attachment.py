@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ServerExtendVolumeAttachment(object):
+
+
+
+class ServerExtendVolumeAttachment:
 
 
     """
@@ -33,8 +36,10 @@ class ServerExtendVolumeAttachment(object):
         'device': 'device'
     }
 
-    def __init__(self, id=None, delete_on_termination=None, boot_index=None, device=None):  # noqa: E501
+    def __init__(self, id=None, delete_on_termination=None, boot_index=None, device=None):
         """ServerExtendVolumeAttachment - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._delete_on_termination = None

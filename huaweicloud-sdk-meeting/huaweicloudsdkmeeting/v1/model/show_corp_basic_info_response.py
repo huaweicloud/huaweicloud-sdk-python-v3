@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowCorpBasicInfoResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowCorpBasicInfoResponse(SdkResponse):
 
 
     """
@@ -49,8 +52,10 @@ class ShowCorpBasicInfoResponse(object):
         'auto_user_create': 'autoUserCreate'
     }
 
-    def __init__(self, id=None, name=None, address=None, admin_name=None, account=None, phone=None, country=None, email=None, enable_sms=None, enable_cloud_disk=None, enable_pstn=None, auto_user_create=None):  # noqa: E501
+    def __init__(self, id=None, name=None, address=None, admin_name=None, account=None, phone=None, country=None, email=None, enable_sms=None, enable_cloud_disk=None, enable_pstn=None, auto_user_create=None):
         """ShowCorpBasicInfoResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._id = None
         self._name = None

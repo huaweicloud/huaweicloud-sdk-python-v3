@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ResizePostPaidServerOption(object):
+
+
+
+class ResizePostPaidServerOption:
 
 
     """
@@ -29,8 +32,10 @@ class ResizePostPaidServerOption(object):
         'mode': 'mode'
     }
 
-    def __init__(self, flavor_ref=None, mode=None):  # noqa: E501
+    def __init__(self, flavor_ref=None, mode=None):
         """ResizePostPaidServerOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._flavor_ref = None
         self._mode = None

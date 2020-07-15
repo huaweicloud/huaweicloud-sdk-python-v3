@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ScalingConfiguration(object):
+
+
+
+class ScalingConfiguration:
 
 
     """
@@ -35,8 +38,10 @@ class ScalingConfiguration(object):
         'create_time': 'create_time'
     }
 
-    def __init__(self, scaling_configuration_id=None, tenant=None, scaling_configuration_name=None, instance_config=None, create_time=None):  # noqa: E501
+    def __init__(self, scaling_configuration_id=None, tenant=None, scaling_configuration_name=None, instance_config=None, create_time=None):
         """ScalingConfiguration - a model defined in huaweicloud sdk"""
+        
+        
 
         self._scaling_configuration_id = None
         self._tenant = None

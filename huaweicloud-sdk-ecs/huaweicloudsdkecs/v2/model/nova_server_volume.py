@@ -6,7 +6,10 @@ import re
 import six
 
 
-class NovaServerVolume(object):
+
+
+
+class NovaServerVolume:
 
 
     """
@@ -29,8 +32,10 @@ class NovaServerVolume(object):
         'delete_on_termination': 'delete_on_termination'
     }
 
-    def __init__(self, id=None, delete_on_termination=False):  # noqa: E501
+    def __init__(self, id=None, delete_on_termination=False):
         """NovaServerVolume - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._delete_on_termination = None

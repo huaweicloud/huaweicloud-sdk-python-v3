@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchCreateVolumeTagsRequest(object):
+
+
+
+class BatchCreateVolumeTagsRequest:
 
 
     """
@@ -29,8 +32,10 @@ class BatchCreateVolumeTagsRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, volume_id=None, body=None):  # noqa: E501
+    def __init__(self, volume_id=None, body=None):
         """BatchCreateVolumeTagsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._volume_id = None
         self._body = None

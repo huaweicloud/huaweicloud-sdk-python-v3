@@ -6,7 +6,10 @@ import re
 import six
 
 
-class GlanceCreateImageMetadataRequestBody(object):
+
+
+
+class GlanceCreateImageMetadataRequestBody:
 
 
     """
@@ -43,8 +46,10 @@ class GlanceCreateImageMetadataRequestBody(object):
         'visibility': 'visibility'
     }
 
-    def __init__(self, os_version=None, container_format='bare', disk_format=None, min_disk=40, min_ram=0, name=None, protected=False, tags=None, visibility='private'):  # noqa: E501
+    def __init__(self, os_version=None, container_format='bare', disk_format=None, min_disk=40, min_ram=0, name=None, protected=False, tags=None, visibility='private'):
         """GlanceCreateImageMetadataRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._os_version = None
         self._container_format = None

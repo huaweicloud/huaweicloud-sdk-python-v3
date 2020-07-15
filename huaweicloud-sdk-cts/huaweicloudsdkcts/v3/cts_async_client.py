@@ -11,6 +11,7 @@ import six
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class CtsAsyncClient(Client):
@@ -55,15 +56,10 @@ class CtsAsyncClient(Client):
         云审计服务开通后系统会自动创建一个追踪器，用来关联系统记录的所有操作。目前，一个云账户在一个Region下支持创建一个管理类追踪器和多个数据类追踪器。 云审计服务支持在管理控制台查询近7天内的操作记录。如需保存更长时间的操作记录，您可以在创建追踪器之后通过对象存储服务（Object Storage Service，以下简称OBS）将操作记录实时保存至OBS桶中。
 
         :param CreateTrackerRequest request
-        :return: tuple(CreateTrackerResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateTrackerResponse
         """
 
         all_params = ['create_tracker_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -77,24 +73,25 @@ class CtsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/tracker', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/tracker',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateTrackerResponse',
@@ -108,7 +105,7 @@ class CtsAsyncClient(Client):
         云审计服务目前仅支持删除已创建的数据类追踪器。删除追踪器对已有的操作记录没有影响，当您重新开通云审计服务后，依旧可以查看已有的操作记录。
 
         :param DeleteTrackerRequest request
-        :return: None
+        :return: DeleteTrackerResponse
         """
         return self.delete_tracker_with_http_info(request)
 
@@ -118,15 +115,10 @@ class CtsAsyncClient(Client):
         云审计服务目前仅支持删除已创建的数据类追踪器。删除追踪器对已有的操作记录没有影响，当您重新开通云审计服务后，依旧可以查看已有的操作记录。
 
         :param DeleteTrackerRequest request
-        :return: None
+        :return: DeleteTrackerResponse
         """
 
         all_params = ['tracker_name', 'tracker_type']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -144,21 +136,24 @@ class CtsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/trackers', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/trackers',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteTrackerResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -179,15 +174,10 @@ class CtsAsyncClient(Client):
         通过事件列表查询接口，可以查出系统记录的7天内资源操作记录。
 
         :param ListTracesRequest request
-        :return: tuple(ListTracesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListTracesResponse
         """
 
         all_params = ['trace_type', 'limit', '_from', 'next', 'to', 'tracker_name', 'service_type', 'user', 'resource_id', 'resource_name', 'resource_type', 'trace_id', 'trace_name', 'trace_rating']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -229,20 +219,21 @@ class CtsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/traces', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/traces',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListTracesResponse',
@@ -266,15 +257,10 @@ class CtsAsyncClient(Client):
         开通云审计服务成功后，您可以在追踪器信息页面查看系统自动创建的追踪器的详细信息。详细信息主要包括追踪器名称，用于存储操作事件的OBS桶名称和OBS桶中的事件文件前缀。
 
         :param ListTrackersRequest request
-        :return: tuple(ListTrackersResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListTrackersResponse
         """
 
         all_params = ['tracker_name', 'tracker_type']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -292,20 +278,21 @@ class CtsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/trackers', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/trackers',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListTrackersResponse',
@@ -319,7 +306,7 @@ class CtsAsyncClient(Client):
         云审计服务支持修改已创建追踪器的配置项，包括OBS桶转储、关键事件通知、事件转储加密、通过LTS对管理类事件进行检索、事件文件完整性校验以及追踪器启停状态等相关参数，修改追踪器对已有的操作记录没有影响。修改追踪器完成后，系统立即以新的规则开始记录操作。
 
         :param UpdateTrackerRequest request
-        :return: None
+        :return: UpdateTrackerResponse
         """
         return self.update_tracker_with_http_info(request)
 
@@ -329,15 +316,10 @@ class CtsAsyncClient(Client):
         云审计服务支持修改已创建追踪器的配置项，包括OBS桶转储、关键事件通知、事件转储加密、通过LTS对管理类事件进行检索、事件文件完整性校验以及追踪器启停状态等相关参数，修改追踪器对已有的操作记录没有影响。修改追踪器完成后，系统立即以新的规则开始记录操作。
 
         :param UpdateTrackerRequest request
-        :return: None
+        :return: UpdateTrackerResponse
         """
 
         all_params = ['update_tracker_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -351,25 +333,28 @@ class CtsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/tracker', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/tracker',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateTrackerResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -396,6 +381,15 @@ class CtsAsyncClient(Client):
         :return:
             Return the response directly.
         """
-        return self.do_http_request(method, resource_path, path_params,
-                                    query_params, header_params, body, post_params,
-                                    response_type, collection_formats, request_type, True)
+        return self.do_http_request(
+            method=method,
+            resource_path=resource_path,
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body,
+            post_params=post_params,
+            response_type=response_type,
+            collection_formats=collection_formats,
+            request_type=request_type,
+	    async_request=True)

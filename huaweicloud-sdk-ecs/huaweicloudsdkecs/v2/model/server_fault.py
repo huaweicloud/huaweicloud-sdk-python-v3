@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ServerFault(object):
+
+
+
+class ServerFault:
 
 
     """
@@ -31,8 +34,10 @@ class ServerFault(object):
         'message': 'message'
     }
 
-    def __init__(self, code=None, created=None, message=None):  # noqa: E501
+    def __init__(self, code=None, created=None, message=None):
         """ServerFault - a model defined in huaweicloud sdk"""
+        
+        
 
         self._code = None
         self._created = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Topics(object):
+
+
+
+class Topics:
 
 
     """
@@ -31,8 +34,10 @@ class Topics(object):
         'topic_name': 'topic_name'
     }
 
-    def __init__(self, topic_urn=None, topic_scene=None, topic_name=None):  # noqa: E501
+    def __init__(self, topic_urn=None, topic_scene=None, topic_name=None):
         """Topics - a model defined in huaweicloud sdk"""
+        
+        
 
         self._topic_urn = None
         self._topic_scene = None

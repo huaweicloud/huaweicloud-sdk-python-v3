@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateSecurityGroupRuleOption(object):
+
+
+
+class CreateSecurityGroupRuleOption:
 
 
     """
@@ -43,8 +46,10 @@ class CreateSecurityGroupRuleOption(object):
         'remote_group_id': 'remote_group_id'
     }
 
-    def __init__(self, security_group_id=None, description=None, direction=None, ethertype=None, protocol=None, port_range_min=None, port_range_max=None, remote_ip_prefix=None, remote_group_id=None):  # noqa: E501
+    def __init__(self, security_group_id=None, description=None, direction=None, ethertype=None, protocol=None, port_range_min=None, port_range_max=None, remote_ip_prefix=None, remote_group_id=None):
         """CreateSecurityGroupRuleOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._security_group_id = None
         self._description = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListLifeCycleHooksResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListLifeCycleHooksResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ListLifeCycleHooksResponse(object):
         'lifecycle_hooks': 'lifecycle_hooks'
     }
 
-    def __init__(self, lifecycle_hooks=None):  # noqa: E501
+    def __init__(self, lifecycle_hooks=None):
         """ListLifeCycleHooksResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._lifecycle_hooks = None
         self.discriminator = None

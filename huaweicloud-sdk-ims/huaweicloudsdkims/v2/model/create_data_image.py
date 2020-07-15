@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateDataImage(object):
+
+
+
+class CreateDataImage:
 
 
     """
@@ -33,8 +36,10 @@ class CreateDataImage(object):
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, volume_id=None, description=None, tags=None):  # noqa: E501
+    def __init__(self, name=None, volume_id=None, description=None, tags=None):
         """CreateDataImage - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._volume_id = None

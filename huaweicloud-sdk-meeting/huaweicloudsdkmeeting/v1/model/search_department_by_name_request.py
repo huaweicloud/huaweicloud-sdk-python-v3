@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SearchDepartmentByNameRequest(object):
+
+
+
+class SearchDepartmentByNameRequest:
 
 
     """
@@ -31,8 +34,10 @@ class SearchDepartmentByNameRequest(object):
         'dept_name': 'deptName'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, dept_name=None):  # noqa: E501
+    def __init__(self, x_request_id=None, accept_language=None, dept_name=None):
         """SearchDepartmentByNameRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_request_id = None
         self._accept_language = None

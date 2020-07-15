@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListCertificatesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListCertificatesResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class ListCertificatesResponse(object):
         'page': 'page'
     }
 
-    def __init__(self, certificates=None, page=None):  # noqa: E501
+    def __init__(self, certificates=None, page=None):
         """ListCertificatesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._certificates = None
         self._page = None

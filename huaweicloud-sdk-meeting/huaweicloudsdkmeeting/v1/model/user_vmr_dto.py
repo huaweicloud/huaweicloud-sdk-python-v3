@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UserVmrDTO(object):
+
+
+
+class UserVmrDTO:
 
 
     """
@@ -41,8 +44,10 @@ class UserVmrDTO(object):
         'status': 'status'
     }
 
-    def __init__(self, id=None, vmr_id=None, vmr_name=None, vmr_pkg_id=None, vmr_pkg_name=None, vmr_pkg_parties=None, vmr_pkg_length=None, status=None):  # noqa: E501
+    def __init__(self, id=None, vmr_id=None, vmr_name=None, vmr_pkg_id=None, vmr_pkg_name=None, vmr_pkg_parties=None, vmr_pkg_length=None, status=None):
         """UserVmrDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._vmr_id = None

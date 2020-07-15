@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Bandwidth(object):
+
+
+
+class Bandwidth:
 
 
     """
@@ -33,8 +36,10 @@ class Bandwidth(object):
         'id': 'id'
     }
 
-    def __init__(self, size=None, share_type=None, charging_mode=None, id=None):  # noqa: E501
+    def __init__(self, size=None, share_type=None, charging_mode=None, id=None):
         """Bandwidth - a model defined in huaweicloud sdk"""
+        
+        
 
         self._size = None
         self._share_type = None

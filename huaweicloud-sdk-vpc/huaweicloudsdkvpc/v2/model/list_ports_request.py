@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListPortsRequest(object):
+
+
+
+class ListPortsRequest:
 
 
     """
@@ -49,8 +52,10 @@ class ListPortsRequest(object):
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, name=None, id=None, limit=2000, admin_state_up=None, network_id=None, mac_address=None, device_id=None, device_owner=None, status=None, marker=None, fixed_ips=None, enterprise_project_id=None):  # noqa: E501
+    def __init__(self, name=None, id=None, limit=2000, admin_state_up=None, network_id=None, mac_address=None, device_id=None, device_owner=None, status=None, marker=None, fixed_ips=None, enterprise_project_id=None):
         """ListPortsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._id = None

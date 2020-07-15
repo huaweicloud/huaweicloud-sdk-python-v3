@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowVpcRequest(object):
+
+
+
+class ShowVpcRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ShowVpcRequest(object):
         'vpc_id': 'vpc_id'
     }
 
-    def __init__(self, vpc_id=None):  # noqa: E501
+    def __init__(self, vpc_id=None):
         """ShowVpcRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._vpc_id = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ModifyIpWhitelistBody(object):
+
+
+
+class ModifyIpWhitelistBody:
 
 
     """
@@ -29,8 +32,10 @@ class ModifyIpWhitelistBody(object):
         'whitelist': 'whitelist'
     }
 
-    def __init__(self, enable_whitelist=None, whitelist=None):  # noqa: E501
+    def __init__(self, enable_whitelist=None, whitelist=None):
         """ModifyIpWhitelistBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._enable_whitelist = None
         self._whitelist = None

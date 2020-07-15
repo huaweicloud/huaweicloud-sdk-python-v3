@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SnapshotList(object):
+
+
+
+class SnapshotList:
 
 
     """
@@ -28,7 +31,7 @@ class SnapshotList(object):
         'updated_at': 'str',
         'metadata': 'dict(str, str)',
         'volume_id': 'str',
-        'size': 'str',
+        'size': 'int',
         'os_extended_snapshot_attributesproject_id': 'str',
         'os_extended_snapshot_attributesprogress': 'str',
         'dedicated_storage_id': 'str',
@@ -53,8 +56,10 @@ class SnapshotList(object):
         'service_type': 'service_type'
     }
 
-    def __init__(self, id=None, status=None, name=None, description=None, created_at=None, updated_at=None, metadata=None, volume_id=None, size=None, os_extended_snapshot_attributesproject_id=None, os_extended_snapshot_attributesprogress=None, dedicated_storage_id=None, dedicated_storage_name=None, service_type=None):  # noqa: E501
+    def __init__(self, id=None, status=None, name=None, description=None, created_at=None, updated_at=None, metadata=None, volume_id=None, size=None, os_extended_snapshot_attributesproject_id=None, os_extended_snapshot_attributesprogress=None, dedicated_storage_id=None, dedicated_storage_name=None, service_type=None):
         """SnapshotList - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._status = None
@@ -97,7 +102,7 @@ class SnapshotList(object):
     def id(self):
         """Gets the id of this SnapshotList.
 
-        云硬盘快照ID
+        云硬盘快照ID。
 
         :return: The id of this SnapshotList.
         :rtype: str
@@ -108,7 +113,7 @@ class SnapshotList(object):
     def id(self, id):
         """Sets the id of this SnapshotList.
 
-        云硬盘快照ID
+        云硬盘快照ID。
 
         :param id: The id of this SnapshotList.
         :type: str
@@ -119,7 +124,7 @@ class SnapshotList(object):
     def status(self):
         """Gets the status of this SnapshotList.
 
-        云硬盘快照的状态
+        云硬盘快照的状态。
 
         :return: The status of this SnapshotList.
         :rtype: str
@@ -130,7 +135,7 @@ class SnapshotList(object):
     def status(self, status):
         """Sets the status of this SnapshotList.
 
-        云硬盘快照的状态
+        云硬盘快照的状态。
 
         :param status: The status of this SnapshotList.
         :type: str
@@ -141,7 +146,7 @@ class SnapshotList(object):
     def name(self):
         """Gets the name of this SnapshotList.
 
-        云硬盘快照名称
+        云硬盘快照名称。
 
         :return: The name of this SnapshotList.
         :rtype: str
@@ -152,7 +157,7 @@ class SnapshotList(object):
     def name(self, name):
         """Sets the name of this SnapshotList.
 
-        云硬盘快照名称
+        云硬盘快照名称。
 
         :param name: The name of this SnapshotList.
         :type: str
@@ -163,7 +168,7 @@ class SnapshotList(object):
     def description(self):
         """Gets the description of this SnapshotList.
 
-        云硬盘快照描述信息
+        云硬盘快照描述信息。
 
         :return: The description of this SnapshotList.
         :rtype: str
@@ -174,7 +179,7 @@ class SnapshotList(object):
     def description(self, description):
         """Sets the description of this SnapshotList.
 
-        云硬盘快照描述信息
+        云硬盘快照描述信息。
 
         :param description: The description of this SnapshotList.
         :type: str
@@ -185,7 +190,7 @@ class SnapshotList(object):
     def created_at(self):
         """Gets the created_at of this SnapshotList.
 
-        云硬盘快照创建时间
+        云硬盘快照创建时间。
 
         :return: The created_at of this SnapshotList.
         :rtype: str
@@ -196,7 +201,7 @@ class SnapshotList(object):
     def created_at(self, created_at):
         """Sets the created_at of this SnapshotList.
 
-        云硬盘快照创建时间
+        云硬盘快照创建时间。
 
         :param created_at: The created_at of this SnapshotList.
         :type: str
@@ -207,7 +212,7 @@ class SnapshotList(object):
     def updated_at(self):
         """Gets the updated_at of this SnapshotList.
 
-        云硬盘快照更新时间
+        云硬盘快照更新时间。
 
         :return: The updated_at of this SnapshotList.
         :rtype: str
@@ -218,7 +223,7 @@ class SnapshotList(object):
     def updated_at(self, updated_at):
         """Sets the updated_at of this SnapshotList.
 
-        云硬盘快照更新时间
+        云硬盘快照更新时间。
 
         :param updated_at: The updated_at of this SnapshotList.
         :type: str
@@ -229,7 +234,7 @@ class SnapshotList(object):
     def metadata(self):
         """Gets the metadata of this SnapshotList.
 
-        云硬盘快照的元数据信息
+        云硬盘快照的元数据信息。
 
         :return: The metadata of this SnapshotList.
         :rtype: dict(str, str)
@@ -240,7 +245,7 @@ class SnapshotList(object):
     def metadata(self, metadata):
         """Sets the metadata of this SnapshotList.
 
-        云硬盘快照的元数据信息
+        云硬盘快照的元数据信息。
 
         :param metadata: The metadata of this SnapshotList.
         :type: dict(str, str)
@@ -273,10 +278,10 @@ class SnapshotList(object):
     def size(self):
         """Gets the size of this SnapshotList.
 
-        云硬盘快照大小
+        云硬盘快照大小。
 
         :return: The size of this SnapshotList.
-        :rtype: str
+        :rtype: int
         """
         return self._size
 
@@ -284,10 +289,10 @@ class SnapshotList(object):
     def size(self, size):
         """Sets the size of this SnapshotList.
 
-        云硬盘快照大小
+        云硬盘快照大小。
 
         :param size: The size of this SnapshotList.
-        :type: str
+        :type: int
         """
         self._size = size
 
@@ -295,7 +300,7 @@ class SnapshotList(object):
     def os_extended_snapshot_attributesproject_id(self):
         """Gets the os_extended_snapshot_attributesproject_id of this SnapshotList.
 
-        租户ID
+        项目ID。
 
         :return: The os_extended_snapshot_attributesproject_id of this SnapshotList.
         :rtype: str
@@ -306,7 +311,7 @@ class SnapshotList(object):
     def os_extended_snapshot_attributesproject_id(self, os_extended_snapshot_attributesproject_id):
         """Sets the os_extended_snapshot_attributesproject_id of this SnapshotList.
 
-        租户ID
+        项目ID。
 
         :param os_extended_snapshot_attributesproject_id: The os_extended_snapshot_attributesproject_id of this SnapshotList.
         :type: str
@@ -317,7 +322,7 @@ class SnapshotList(object):
     def os_extended_snapshot_attributesprogress(self):
         """Gets the os_extended_snapshot_attributesprogress of this SnapshotList.
 
-        快照进度
+        快照进度。
 
         :return: The os_extended_snapshot_attributesprogress of this SnapshotList.
         :rtype: str
@@ -328,7 +333,7 @@ class SnapshotList(object):
     def os_extended_snapshot_attributesprogress(self, os_extended_snapshot_attributesprogress):
         """Sets the os_extended_snapshot_attributesprogress of this SnapshotList.
 
-        快照进度
+        快照进度。
 
         :param os_extended_snapshot_attributesprogress: The os_extended_snapshot_attributesprogress of this SnapshotList.
         :type: str
@@ -339,7 +344,7 @@ class SnapshotList(object):
     def dedicated_storage_id(self):
         """Gets the dedicated_storage_id of this SnapshotList.
 
-        专属存储ID
+        专属存储ID。
 
         :return: The dedicated_storage_id of this SnapshotList.
         :rtype: str
@@ -350,7 +355,7 @@ class SnapshotList(object):
     def dedicated_storage_id(self, dedicated_storage_id):
         """Sets the dedicated_storage_id of this SnapshotList.
 
-        专属存储ID
+        专属存储ID。
 
         :param dedicated_storage_id: The dedicated_storage_id of this SnapshotList.
         :type: str
@@ -361,7 +366,7 @@ class SnapshotList(object):
     def dedicated_storage_name(self):
         """Gets the dedicated_storage_name of this SnapshotList.
 
-        专属存储的名称
+        专属存储名称。
 
         :return: The dedicated_storage_name of this SnapshotList.
         :rtype: str
@@ -372,7 +377,7 @@ class SnapshotList(object):
     def dedicated_storage_name(self, dedicated_storage_name):
         """Sets the dedicated_storage_name of this SnapshotList.
 
-        专属存储的名称
+        专属存储名称。
 
         :param dedicated_storage_name: The dedicated_storage_name of this SnapshotList.
         :type: str
@@ -383,7 +388,7 @@ class SnapshotList(object):
     def service_type(self):
         """Gets the service_type of this SnapshotList.
 
-        服务类型
+        服务类型。
 
         :return: The service_type of this SnapshotList.
         :rtype: str
@@ -394,7 +399,7 @@ class SnapshotList(object):
     def service_type(self, service_type):
         """Sets the service_type of this SnapshotList.
 
-        服务类型
+        服务类型。
 
         :param service_type: The service_type of this SnapshotList.
         :type: str

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AddOrUpdateTagsRequestBody(object):
+
+
+
+class AddOrUpdateTagsRequestBody:
 
 
     """
@@ -31,8 +34,10 @@ class AddOrUpdateTagsRequestBody(object):
         'image_tag': 'image_tag'
     }
 
-    def __init__(self, image_id=None, tag=None, image_tag=None):  # noqa: E501
+    def __init__(self, image_id=None, tag=None, image_tag=None):
         """AddOrUpdateTagsRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._image_id = None
         self._tag = None

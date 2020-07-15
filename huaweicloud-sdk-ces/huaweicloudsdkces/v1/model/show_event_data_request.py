@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowEventDataRequest(object):
+
+
+
+class ShowEventDataRequest:
 
 
     """
@@ -39,8 +42,10 @@ class ShowEventDataRequest(object):
         'type': 'type'
     }
 
-    def __init__(self, dim0=None, dim1=None, dim2=None, _from=None, namespace=None, to=None, type=None):  # noqa: E501
+    def __init__(self, dim0=None, dim1=None, dim2=None, _from=None, namespace=None, to=None, type=None):
         """ShowEventDataRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._dim0 = None
         self._dim1 = None

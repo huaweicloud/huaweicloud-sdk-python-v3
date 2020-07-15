@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneCreateGroupResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class KeystoneCreateGroupResponse(SdkResponse):
 
 
     """
@@ -20,15 +23,17 @@ class KeystoneCreateGroupResponse(object):
     sensitive_list = []
 
     openapi_types = {
-        'group': 'KeystoneGroupResult'
+        'group': 'KeystoneGroupResultWithLinksSelf'
     }
 
     attribute_map = {
         'group': 'group'
     }
 
-    def __init__(self, group=None):  # noqa: E501
+    def __init__(self, group=None):
         """KeystoneCreateGroupResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._group = None
         self.discriminator = None
@@ -42,7 +47,7 @@ class KeystoneCreateGroupResponse(object):
 
 
         :return: The group of this KeystoneCreateGroupResponse.
-        :rtype: KeystoneGroupResult
+        :rtype: KeystoneGroupResultWithLinksSelf
         """
         return self._group
 
@@ -52,7 +57,7 @@ class KeystoneCreateGroupResponse(object):
 
 
         :param group: The group of this KeystoneCreateGroupResponse.
-        :type: KeystoneGroupResult
+        :type: KeystoneGroupResultWithLinksSelf
         """
         self._group = group
 

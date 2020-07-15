@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RestoreInstanceResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class RestoreInstanceResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class RestoreInstanceResponse(object):
         'restore_id': 'restore_id'
     }
 
-    def __init__(self, restore_id=None):  # noqa: E501
+    def __init__(self, restore_id=None):
         """RestoreInstanceResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._restore_id = None
         self.discriminator = None

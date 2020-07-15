@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AddReplicationBody(object):
+
+
+
+class AddReplicationBody:
 
 
     """
@@ -27,8 +30,10 @@ class AddReplicationBody(object):
         'az_code': 'az_code'
     }
 
-    def __init__(self, az_code=None):  # noqa: E501
+    def __init__(self, az_code=None):
         """AddReplicationBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._az_code = None
         self.discriminator = None

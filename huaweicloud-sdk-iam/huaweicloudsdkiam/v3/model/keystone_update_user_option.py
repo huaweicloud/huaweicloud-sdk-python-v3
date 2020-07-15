@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneUpdateUserOption(object):
+
+
+
+class KeystoneUpdateUserOption:
 
 
     """
@@ -37,8 +40,10 @@ class KeystoneUpdateUserOption(object):
         'pwd_status': 'pwd_status'
     }
 
-    def __init__(self, domain_id=None, name=None, password=None, enabled=None, description=None, pwd_status=None):  # noqa: E501
+    def __init__(self, domain_id=None, name=None, password=None, enabled=None, description=None, pwd_status=None):
         """KeystoneUpdateUserOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._domain_id = None
         self._name = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ServerAttachableQuantity(object):
+
+
+
+class ServerAttachableQuantity:
 
 
     """
@@ -33,8 +36,10 @@ class ServerAttachableQuantity(object):
         'free_nic': 'free_nic'
     }
 
-    def __init__(self, free_scsi=None, free_blk=None, free_disk=None, free_nic=None):  # noqa: E501
+    def __init__(self, free_scsi=None, free_blk=None, free_disk=None, free_nic=None):
         """ServerAttachableQuantity - a model defined in huaweicloud sdk"""
+        
+        
 
         self._free_scsi = None
         self._free_blk = None

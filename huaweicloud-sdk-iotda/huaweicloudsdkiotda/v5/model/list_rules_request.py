@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListRulesRequest(object):
+
+
+
+class ListRulesRequest:
 
 
     """
@@ -35,8 +38,10 @@ class ListRulesRequest(object):
         'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None, app_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):  # noqa: E501
+    def __init__(self, instance_id=None, app_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):
         """ListRulesRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._app_id = None

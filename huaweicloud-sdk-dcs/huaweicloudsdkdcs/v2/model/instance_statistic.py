@@ -6,7 +6,10 @@ import re
 import six
 
 
-class InstanceStatistic(object):
+
+
+
+class InstanceStatistic:
 
 
     """
@@ -43,8 +46,10 @@ class InstanceStatistic(object):
         'used_cpu': 'used_cpu'
     }
 
-    def __init__(self, input_kbps=None, output_kbps=None, instance_id=None, keys=None, used_memory=None, max_memory=None, cmd_get_count=None, cmd_set_count=None, used_cpu=None):  # noqa: E501
+    def __init__(self, input_kbps=None, output_kbps=None, instance_id=None, keys=None, used_memory=None, max_memory=None, cmd_get_count=None, cmd_set_count=None, used_cpu=None):
         """InstanceStatistic - a model defined in huaweicloud sdk"""
+        
+        
 
         self._input_kbps = None
         self._output_kbps = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateProjectOption(object):
+
+
+
+class UpdateProjectOption:
 
 
     """
@@ -27,8 +30,10 @@ class UpdateProjectOption(object):
         'status': 'status'
     }
 
-    def __init__(self, status=None):  # noqa: E501
+    def __init__(self, status=None):
         """UpdateProjectOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._status = None
         self.discriminator = None

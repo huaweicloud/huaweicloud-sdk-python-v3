@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateManualBackupRequestBody(object):
+
+
+
+class CreateManualBackupRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class CreateManualBackupRequestBody(object):
         'backup': 'backup'
     }
 
-    def __init__(self, backup=None):  # noqa: E501
+    def __init__(self, backup=None):
         """CreateManualBackupRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._backup = None
         self.discriminator = None

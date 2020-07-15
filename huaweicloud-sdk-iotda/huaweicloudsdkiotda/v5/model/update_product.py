@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateProduct(object):
+
+
+
+class UpdateProduct:
 
 
     """
@@ -43,8 +46,10 @@ class UpdateProduct(object):
         'service_capabilities': 'service_capabilities'
     }
 
-    def __init__(self, app_id=None, name=None, device_type=None, protocol_type=None, data_format=None, manufacturer_name=None, industry=None, description=None, service_capabilities=None):  # noqa: E501
+    def __init__(self, app_id=None, name=None, device_type=None, protocol_type=None, data_format=None, manufacturer_name=None, industry=None, description=None, service_capabilities=None):
         """UpdateProduct - a model defined in huaweicloud sdk"""
+        
+        
 
         self._app_id = None
         self._name = None

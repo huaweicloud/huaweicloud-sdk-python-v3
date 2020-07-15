@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateInstanceBody(object):
+
+
+
+class CreateInstanceBody:
 
 
     """
@@ -79,8 +82,10 @@ class CreateInstanceBody(object):
         'rename_commands': 'rename_commands'
     }
 
-    def __init__(self, publicip_id='false', enterprise_project_id=None, enterprise_project_name=None, vpc_id=None, description=None, security_group_id=None, enable_ssl=None, private_ip=None, capacity=None, instance_num=1, maintain_begin=None, maintain_end=None, password=None, engine=None, engine_version=None, spec_code=None, no_password_access=False, bss_param=None, instance_backup_policy=None, az_codes=None, tags=None, access_user=None, enable_publicip=False, name=None, subnet_id=None, port=None, rename_commands=None):  # noqa: E501
+    def __init__(self, publicip_id='false', enterprise_project_id=None, enterprise_project_name=None, vpc_id=None, description=None, security_group_id=None, enable_ssl=None, private_ip=None, capacity=None, instance_num=1, maintain_begin=None, maintain_end=None, password=None, engine=None, engine_version=None, spec_code=None, no_password_access=False, bss_param=None, instance_backup_policy=None, az_codes=None, tags=None, access_user=None, enable_publicip=False, name=None, subnet_id=None, port=None, rename_commands=None):
         """CreateInstanceBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._publicip_id = None
         self._enterprise_project_id = None

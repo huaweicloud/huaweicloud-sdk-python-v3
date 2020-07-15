@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneUserResultExtra(object):
+
+
+
+class KeystoneUserResultExtra:
 
 
     """
@@ -31,8 +34,10 @@ class KeystoneUserResultExtra(object):
         'last_project_id': 'last_project_id'
     }
 
-    def __init__(self, description=None, pwd_status=None, last_project_id=None):  # noqa: E501
+    def __init__(self, description=None, pwd_status=None, last_project_id=None):
         """KeystoneUserResultExtra - a model defined in huaweicloud sdk"""
+        
+        
 
         self._description = None
         self._pwd_status = None

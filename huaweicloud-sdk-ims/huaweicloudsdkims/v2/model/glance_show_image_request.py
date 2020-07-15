@@ -6,7 +6,10 @@ import re
 import six
 
 
-class GlanceShowImageRequest(object):
+
+
+
+class GlanceShowImageRequest:
 
 
     """
@@ -27,8 +30,10 @@ class GlanceShowImageRequest(object):
         'image_id': 'image_id'
     }
 
-    def __init__(self, image_id=None):  # noqa: E501
+    def __init__(self, image_id=None):
         """GlanceShowImageRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._image_id = None
         self.discriminator = None

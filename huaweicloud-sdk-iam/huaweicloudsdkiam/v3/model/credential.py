@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Credential(object):
+
+
+
+class Credential:
 
 
     """
@@ -33,8 +36,10 @@ class Credential(object):
         'securitytoken': 'securitytoken'
     }
 
-    def __init__(self, expires_at=None, access=None, secret=None, securitytoken=None):  # noqa: E501
+    def __init__(self, expires_at=None, access=None, secret=None, securitytoken=None):
         """Credential - a model defined in huaweicloud sdk"""
+        
+        
 
         self._expires_at = None
         self._access = None

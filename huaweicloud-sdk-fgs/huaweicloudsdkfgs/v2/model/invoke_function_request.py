@@ -6,7 +6,10 @@ import re
 import six
 
 
-class InvokeFunctionRequest(object):
+
+
+
+class InvokeFunctionRequest:
 
 
     """
@@ -33,8 +36,10 @@ class InvokeFunctionRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, function_urn=None, x_cff_log_type=None, x_cff_request_version=None, body=None):  # noqa: E501
+    def __init__(self, function_urn=None, x_cff_log_type=None, x_cff_request_version=None, body=None):
         """InvokeFunctionRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._function_urn = None
         self._x_cff_log_type = None

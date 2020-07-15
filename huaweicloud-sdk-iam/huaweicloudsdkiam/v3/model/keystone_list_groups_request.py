@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneListGroupsRequest(object):
+
+
+
+class KeystoneListGroupsRequest:
 
 
     """
@@ -27,8 +30,10 @@ class KeystoneListGroupsRequest(object):
         'name': 'name'
     }
 
-    def __init__(self, name=None):  # noqa: E501
+    def __init__(self, name=None):
         """KeystoneListGroupsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SourceInstanceBody(object):
+
+
+
+class SourceInstanceBody:
 
 
     """
@@ -29,8 +32,10 @@ class SourceInstanceBody(object):
         'password': 'password'
     }
 
-    def __init__(self, addrs=None, password=None):  # noqa: E501
+    def __init__(self, addrs=None, password=None):
         """SourceInstanceBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._addrs = None
         self._password = None

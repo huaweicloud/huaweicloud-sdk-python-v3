@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SearchCorpAdminsRequest(object):
+
+
+
+class SearchCorpAdminsRequest:
 
 
     """
@@ -35,8 +38,10 @@ class SearchCorpAdminsRequest(object):
         'search_key': 'searchKey'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=100, search_key=None):  # noqa: E501
+    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=100, search_key=None):
         """SearchCorpAdminsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_request_id = None
         self._accept_language = None

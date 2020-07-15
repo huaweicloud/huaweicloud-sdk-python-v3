@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ActionIoTAForwarding(object):
+
+
+
+class ActionIoTAForwarding:
 
 
     """
@@ -29,8 +32,10 @@ class ActionIoTAForwarding(object):
         'project_id': 'project_id'
     }
 
-    def __init__(self, region_name=None, project_id=None):  # noqa: E501
+    def __init__(self, region_name=None, project_id=None):
         """ActionIoTAForwarding - a model defined in huaweicloud sdk"""
+        
+        
 
         self._region_name = None
         self._project_id = None

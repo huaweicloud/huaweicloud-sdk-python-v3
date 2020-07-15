@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CinderListQuotasRequest(object):
+
+
+
+class CinderListQuotasRequest:
 
 
     """
@@ -29,8 +32,10 @@ class CinderListQuotasRequest(object):
         'usage': 'usage'
     }
 
-    def __init__(self, target_project_id=None, usage=None):  # noqa: E501
+    def __init__(self, target_project_id=None, usage=None):
         """CinderListQuotasRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._target_project_id = None
         self._usage = None

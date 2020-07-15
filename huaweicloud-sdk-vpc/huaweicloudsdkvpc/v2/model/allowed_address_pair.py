@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AllowedAddressPair(object):
+
+
+
+class AllowedAddressPair:
 
 
     """
@@ -29,8 +32,10 @@ class AllowedAddressPair(object):
         'mac_address': 'mac_address'
     }
 
-    def __init__(self, ip_address=None, mac_address=None):  # noqa: E501
+    def __init__(self, ip_address=None, mac_address=None):
         """AllowedAddressPair - a model defined in huaweicloud sdk"""
+        
+        
 
         self._ip_address = None
         self._mac_address = None

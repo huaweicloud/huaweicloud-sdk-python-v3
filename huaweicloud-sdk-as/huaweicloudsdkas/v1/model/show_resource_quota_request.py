@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowResourceQuotaRequest(object):
+
+
+
+class ShowResourceQuotaRequest:
 
 
     """
@@ -25,8 +28,10 @@ class ShowResourceQuotaRequest(object):
     attribute_map = {
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self):
         """ShowResourceQuotaRequest - a model defined in huaweicloud sdk"""
+        
+        
         self.discriminator = None
 
     def to_dict(self):

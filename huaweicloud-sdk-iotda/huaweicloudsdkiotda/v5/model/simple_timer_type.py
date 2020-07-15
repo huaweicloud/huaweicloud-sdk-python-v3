@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SimpleTimerType(object):
+
+
+
+class SimpleTimerType:
 
 
     """
@@ -31,8 +34,10 @@ class SimpleTimerType(object):
         'repeat_count': 'repeat_count'
     }
 
-    def __init__(self, start_time=None, repeat_interval=None, repeat_count=None):  # noqa: E501
+    def __init__(self, start_time=None, repeat_interval=None, repeat_count=None):
         """SimpleTimerType - a model defined in huaweicloud sdk"""
+        
+        
 
         self._start_time = None
         self._repeat_interval = None

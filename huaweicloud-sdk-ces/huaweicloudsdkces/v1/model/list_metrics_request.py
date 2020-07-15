@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListMetricsRequest(object):
+
+
+
+class ListMetricsRequest:
 
 
     """
@@ -41,8 +44,10 @@ class ListMetricsRequest(object):
         'start': 'start'
     }
 
-    def __init__(self, dim0=None, dim1=None, dim2=None, limit=None, metric_name=None, namespace=None, order=None, start=None):  # noqa: E501
+    def __init__(self, dim0=None, dim1=None, dim2=None, limit=None, metric_name=None, namespace=None, order=None, start=None):
         """ListMetricsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._dim0 = None
         self._dim1 = None

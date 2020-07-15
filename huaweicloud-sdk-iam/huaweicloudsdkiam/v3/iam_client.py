@@ -11,6 +11,7 @@ import six
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IamClient(Client):
@@ -45,7 +46,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)为委托授予全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param AssociateAgencyWithDomainPermissionRequest request
-        :return: None
+        :return: AssociateAgencyWithDomainPermissionResponse
         """
         return self.associate_agency_with_domain_permission_with_http_info(request)
 
@@ -55,15 +56,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)为委托授予全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param AssociateAgencyWithDomainPermissionRequest request
-        :return: None
+        :return: AssociateAgencyWithDomainPermissionResponse
         """
 
         all_params = ['agency_id', 'role_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -81,21 +77,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-AGENCY/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-AGENCY/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='AssociateAgencyWithDomainPermissionResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -106,7 +105,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)为委托授予项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param AssociateAgencyWithProjectPermissionRequest request
-        :return: None
+        :return: AssociateAgencyWithProjectPermissionResponse
         """
         return self.associate_agency_with_project_permission_with_http_info(request)
 
@@ -116,15 +115,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)为委托授予项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param AssociateAgencyWithProjectPermissionRequest request
-        :return: None
+        :return: AssociateAgencyWithProjectPermissionResponse
         """
 
         all_params = ['project_id', 'agency_id', 'role_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -144,21 +138,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-AGENCY/projects/{project_id}/agencies/{agency_id}/roles/{role_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-AGENCY/projects/{project_id}/agencies/{agency_id}/roles/{role_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='AssociateAgencyWithProjectPermissionResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -169,7 +166,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询委托是否拥有全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CheckDomainPermissionForAgencyRequest request
-        :return: None
+        :return: CheckDomainPermissionForAgencyResponse
         """
         return self.check_domain_permission_for_agency_with_http_info(request)
 
@@ -179,15 +176,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询委托是否拥有全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CheckDomainPermissionForAgencyRequest request
-        :return: None
+        :return: CheckDomainPermissionForAgencyResponse
         """
 
         all_params = ['agency_id', 'role_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -205,21 +197,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-AGENCY/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}', 'HEAD',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-AGENCY/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}',
+            method='HEAD',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='CheckDomainPermissionForAgencyResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -230,7 +225,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询委托是否拥有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CheckProjectPermissionForAgencyRequest request
-        :return: None
+        :return: CheckProjectPermissionForAgencyResponse
         """
         return self.check_project_permission_for_agency_with_http_info(request)
 
@@ -240,15 +235,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询委托是否拥有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CheckProjectPermissionForAgencyRequest request
-        :return: None
+        :return: CheckProjectPermissionForAgencyResponse
         """
 
         all_params = ['project_id', 'agency_id', 'role_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -268,21 +258,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-AGENCY/projects/{project_id}/agencies/{agency_id}/roles/{role_id}', 'HEAD',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-AGENCY/projects/{project_id}/agencies/{agency_id}/roles/{role_id}',
+            method='HEAD',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='CheckProjectPermissionForAgencyResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -303,15 +296,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)创建委托。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateAgencyRequest request
-        :return: tuple(CreateAgencyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateAgencyResponse
         """
 
         all_params = ['create_agency_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -325,24 +313,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-AGENCY/agencies', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-AGENCY/agencies',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateAgencyResponse',
@@ -366,15 +355,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建委托自定义策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateAgencyCustomPolicyRequest request
-        :return: tuple(CreateAgencyCustomPolicyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateAgencyCustomPolicyResponse
         """
 
         all_params = ['create_agency_custom_policy_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -388,24 +372,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-ROLE/roles', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-ROLE/roles',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateAgencyCustomPolicyResponse',
@@ -429,15 +414,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建云服务自定义策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateCloudServiceCustomPolicyRequest request
-        :return: tuple(CreateCloudServiceCustomPolicyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateCloudServiceCustomPolicyResponse
         """
 
         all_params = ['create_cloud_service_custom_policy_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -451,24 +431,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-ROLE/roles', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-ROLE/roles',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateCloudServiceCustomPolicyResponse',
@@ -482,7 +463,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)删除委托。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeleteAgencyRequest request
-        :return: None
+        :return: DeleteAgencyResponse
         """
         return self.delete_agency_with_http_info(request)
 
@@ -492,15 +473,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)删除委托。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeleteAgencyRequest request
-        :return: None
+        :return: DeleteAgencyResponse
         """
 
         all_params = ['agency_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -516,21 +492,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-AGENCY/agencies/{agency_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-AGENCY/agencies/{agency_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteAgencyResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -541,7 +520,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除自定义策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeleteCustomPolicyRequest request
-        :return: None
+        :return: DeleteCustomPolicyResponse
         """
         return self.delete_custom_policy_with_http_info(request)
 
@@ -551,15 +530,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除自定义策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeleteCustomPolicyRequest request
-        :return: None
+        :return: DeleteCustomPolicyResponse
         """
 
         all_params = ['role_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -575,21 +549,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-ROLE/roles/{role_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-ROLE/roles/{role_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeleteCustomPolicyResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -600,7 +577,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)添加IAM用户到用户组。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneAddUserToGroupRequest request
-        :return: None
+        :return: KeystoneAddUserToGroupResponse
         """
         return self.keystone_add_user_to_group_with_http_info(request)
 
@@ -610,15 +587,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)添加IAM用户到用户组。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneAddUserToGroupRequest request
-        :return: None
+        :return: KeystoneAddUserToGroupResponse
         """
 
         all_params = ['group_id', 'user_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -636,21 +608,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/groups/{group_id}/users/{user_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/groups/{group_id}/users/{user_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='KeystoneAddUserToGroupResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -661,7 +636,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为用户组授予所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneAssociateGroupWithAllProjectPermissionRequest request
-        :return: None
+        :return: KeystoneAssociateGroupWithAllProjectPermissionResponse
         """
         return self.keystone_associate_group_with_all_project_permission_with_http_info(request)
 
@@ -671,15 +646,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为用户组授予所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneAssociateGroupWithAllProjectPermissionRequest request
-        :return: None
+        :return: KeystoneAssociateGroupWithAllProjectPermissionResponse
         """
 
         all_params = ['group_id', 'role_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -697,21 +667,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/{role_id}/inherited_to_projects', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/{role_id}/inherited_to_projects',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='KeystoneAssociateGroupWithAllProjectPermissionResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -722,7 +695,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)为用户组授予全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneAssociateGroupWithDomainPermissionRequest request
-        :return: None
+        :return: KeystoneAssociateGroupWithDomainPermissionResponse
         """
         return self.keystone_associate_group_with_domain_permission_with_http_info(request)
 
@@ -732,15 +705,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)为用户组授予全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneAssociateGroupWithDomainPermissionRequest request
-        :return: None
+        :return: KeystoneAssociateGroupWithDomainPermissionResponse
         """
 
         all_params = ['group_id', 'role_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -758,21 +726,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/domains/{domain_id}/groups/{group_id}/roles/{role_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/domains/{domain_id}/groups/{group_id}/roles/{role_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='KeystoneAssociateGroupWithDomainPermissionResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -783,7 +754,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)为用户组授予项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneAssociateGroupWithProjectPermissionRequest request
-        :return: None
+        :return: KeystoneAssociateGroupWithProjectPermissionResponse
         """
         return self.keystone_associate_group_with_project_permission_with_http_info(request)
 
@@ -793,15 +764,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)为用户组授予项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneAssociateGroupWithProjectPermissionRequest request
-        :return: None
+        :return: KeystoneAssociateGroupWithProjectPermissionResponse
         """
 
         all_params = ['project_id', 'group_id', 'role_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -821,21 +787,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/projects/{project_id}/groups/{group_id}/roles/{role_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/projects/{project_id}/groups/{group_id}/roles/{role_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='KeystoneAssociateGroupWithProjectPermissionResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -846,7 +815,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询用户组是否拥有全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCheckDomainPermissionForGroupRequest request
-        :return: None
+        :return: KeystoneCheckDomainPermissionForGroupResponse
         """
         return self.keystone_check_domain_permission_for_group_with_http_info(request)
 
@@ -856,15 +825,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询用户组是否拥有全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCheckDomainPermissionForGroupRequest request
-        :return: None
+        :return: KeystoneCheckDomainPermissionForGroupResponse
         """
 
         all_params = ['group_id', 'role_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -882,21 +846,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/domains/{domain_id}/groups/{group_id}/roles/{role_id}', 'HEAD',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/domains/{domain_id}/groups/{group_id}/roles/{role_id}',
+            method='HEAD',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='KeystoneCheckDomainPermissionForGroupResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -907,7 +874,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询用户组是否拥有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCheckProjectPermissionForGroupRequest request
-        :return: None
+        :return: KeystoneCheckProjectPermissionForGroupResponse
         """
         return self.keystone_check_project_permission_for_group_with_http_info(request)
 
@@ -917,15 +884,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询用户组是否拥有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCheckProjectPermissionForGroupRequest request
-        :return: None
+        :return: KeystoneCheckProjectPermissionForGroupResponse
         """
 
         all_params = ['project_id', 'group_id', 'role_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -945,21 +907,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/projects/{project_id}/groups/{group_id}/roles/{role_id}', 'HEAD',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/projects/{project_id}/groups/{group_id}/roles/{role_id}',
+            method='HEAD',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='KeystoneCheckProjectPermissionForGroupResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -970,7 +935,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询IAM用户是否在用户组中。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCheckUserInGroupRequest request
-        :return: None
+        :return: KeystoneCheckUserInGroupResponse
         """
         return self.keystone_check_user_in_group_with_http_info(request)
 
@@ -980,15 +945,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询IAM用户是否在用户组中。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCheckUserInGroupRequest request
-        :return: None
+        :return: KeystoneCheckUserInGroupResponse
         """
 
         all_params = ['group_id', 'user_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1006,21 +966,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/groups/{group_id}/users/{user_id}', 'HEAD',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/groups/{group_id}/users/{user_id}',
+            method='HEAD',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='KeystoneCheckUserInGroupResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1041,15 +1004,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)创建用户组。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateGroupRequest request
-        :return: tuple(KeystoneCreateGroupResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneCreateGroupResponse
         """
 
         all_params = ['keystone_create_group_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1063,24 +1021,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/groups', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/groups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneCreateGroupResponse',
@@ -1104,15 +1063,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建项目。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateProjectRequest request
-        :return: tuple(KeystoneCreateProjectResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneCreateProjectResponse
         """
 
         all_params = ['keystone_create_project_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1126,24 +1080,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/projects', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/projects',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneCreateProjectResponse',
@@ -1157,7 +1112,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)删除用户组。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneDeleteGroupRequest request
-        :return: None
+        :return: KeystoneDeleteGroupResponse
         """
         return self.keystone_delete_group_with_http_info(request)
 
@@ -1167,15 +1122,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)删除用户组。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneDeleteGroupRequest request
-        :return: None
+        :return: KeystoneDeleteGroupResponse
         """
 
         all_params = ['group_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1191,21 +1141,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/groups/{group_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/groups/{group_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='KeystoneDeleteGroupResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1226,15 +1179,10 @@ class IamClient(Client):
         该接口可以用于查询IAM用户可以用访问的账号详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListAuthDomainsRequest request
-        :return: tuple(KeystoneListAuthDomainsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneListAuthDomainsResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1248,20 +1196,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/auth/domains', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/auth/domains',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneListAuthDomainsResponse',
@@ -1285,15 +1234,10 @@ class IamClient(Client):
         该接口可以用于查询IAM用户可以访问的项目列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListAuthProjectsRequest request
-        :return: tuple(KeystoneListAuthProjectsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneListAuthProjectsResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1307,20 +1251,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/auth/projects', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/auth/projects',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneListAuthProjectsResponse',
@@ -1344,15 +1289,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询全局服务中的用户组权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListDomainPermissionsForGroupRequest request
-        :return: tuple(KeystoneListDomainPermissionsForGroupResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneListDomainPermissionsForGroupResponse
         """
 
         all_params = ['group_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1368,20 +1308,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/domains/{domain_id}/groups/{group_id}/roles', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/domains/{domain_id}/groups/{group_id}/roles',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneListDomainPermissionsForGroupResponse',
@@ -1405,15 +1346,10 @@ class IamClient(Client):
         该接口可以用于查询终端节点列表。终端节点用来提供服务访问入口。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListEndpointsRequest request
-        :return: tuple(KeystoneListEndpointsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneListEndpointsResponse
         """
 
         all_params = ['interface', 'service_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1431,20 +1367,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/endpoints', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/endpoints',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneListEndpointsResponse',
@@ -1468,15 +1405,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询用户组列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListGroupsRequest request
-        :return: tuple(KeystoneListGroupsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneListGroupsResponse
         """
 
         all_params = ['name']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1492,20 +1424,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/groups', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneListGroupsResponse',
@@ -1529,15 +1462,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询权限列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListPermissionsRequest request
-        :return: tuple(KeystoneListPermissionsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneListPermissionsResponse
         """
 
         all_params = ['name']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1553,20 +1481,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/roles', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/roles',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneListPermissionsResponse',
@@ -1590,15 +1519,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询项目服务中的用户组权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListProjectPermissionsForGroupRequest request
-        :return: tuple(KeystoneListProjectPermissionsForGroupResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneListProjectPermissionsForGroupResponse
         """
 
         all_params = ['project_id', 'group_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1616,20 +1540,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/projects/{project_id}/groups/{group_id}/roles', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/projects/{project_id}/groups/{group_id}/roles',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneListProjectPermissionsForGroupResponse',
@@ -1653,15 +1578,10 @@ class IamClient(Client):
         该接口可以用于查询指定条件下的项目列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListProjectsRequest request
-        :return: tuple(KeystoneListProjectsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneListProjectsResponse
         """
 
         all_params = ['name', 'parent_id', 'enabled', 'is_domain', 'page', 'per_page']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1687,20 +1607,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/projects', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/projects',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneListProjectsResponse',
@@ -1724,15 +1645,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定IAM用户的项目列表，或IAM用户查询自己的项目列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListProjectsForUserRequest request
-        :return: tuple(KeystoneListProjectsForUserResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneListProjectsForUserResponse
         """
 
         all_params = ['user_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1748,20 +1664,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/users/{user_id}/projects', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/users/{user_id}/projects',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneListProjectsForUserResponse',
@@ -1785,15 +1702,10 @@ class IamClient(Client):
         该接口可以用于查询区域列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListRegionsRequest request
-        :return: tuple(KeystoneListRegionsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneListRegionsResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1807,20 +1719,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/regions', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/regions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneListRegionsResponse',
@@ -1844,15 +1757,10 @@ class IamClient(Client):
         该接口可以用于查询服务列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListServicesRequest request
-        :return: tuple(KeystoneListServicesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneListServicesResponse
         """
 
         all_params = ['type']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1868,20 +1776,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/services', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/services',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneListServicesResponse',
@@ -1905,15 +1814,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询用户组中所包含的IAM用户。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListUsersForGroupByAdminRequest request
-        :return: tuple(KeystoneListUsersForGroupByAdminResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneListUsersForGroupByAdminResponse
         """
 
         all_params = ['group_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1929,20 +1833,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/groups/{group_id}/users', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/groups/{group_id}/users',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneListUsersForGroupByAdminResponse',
@@ -1956,7 +1861,7 @@ class IamClient(Client):
         该接口用于查询Keystone API的版本信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListVersionsRequest request
-        :return: None
+        :return: KeystoneListVersionsResponse
         """
         return self.keystone_list_versions_with_http_info(request)
 
@@ -1966,15 +1871,10 @@ class IamClient(Client):
         该接口用于查询Keystone API的版本信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListVersionsRequest request
-        :return: None
+        :return: KeystoneListVersionsResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1988,23 +1888,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='KeystoneListVersionsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2015,7 +1916,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)移除用户组的全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneRemoveDomainPermissionFromGroupRequest request
-        :return: None
+        :return: KeystoneRemoveDomainPermissionFromGroupResponse
         """
         return self.keystone_remove_domain_permission_from_group_with_http_info(request)
 
@@ -2025,15 +1926,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)移除用户组的全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneRemoveDomainPermissionFromGroupRequest request
-        :return: None
+        :return: KeystoneRemoveDomainPermissionFromGroupResponse
         """
 
         all_params = ['group_id', 'role_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2051,21 +1947,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/domains/{domain_id}/groups/{group_id}/roles/{role_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/domains/{domain_id}/groups/{group_id}/roles/{role_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='KeystoneRemoveDomainPermissionFromGroupResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2076,7 +1975,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)移除用户组的项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneRemoveProjectPermissionFromGroupRequest request
-        :return: None
+        :return: KeystoneRemoveProjectPermissionFromGroupResponse
         """
         return self.keystone_remove_project_permission_from_group_with_http_info(request)
 
@@ -2086,15 +1985,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)移除用户组的项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneRemoveProjectPermissionFromGroupRequest request
-        :return: None
+        :return: KeystoneRemoveProjectPermissionFromGroupResponse
         """
 
         all_params = ['project_id', 'group_id', 'role_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2114,21 +2008,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/projects/{project_id}/groups/{group_id}/roles/{role_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/projects/{project_id}/groups/{group_id}/roles/{role_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='KeystoneRemoveProjectPermissionFromGroupResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2139,7 +2036,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)移除用户组中的IAM用户。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneRemoveUserFromGroupRequest request
-        :return: None
+        :return: KeystoneRemoveUserFromGroupResponse
         """
         return self.keystone_remove_user_from_group_with_http_info(request)
 
@@ -2149,15 +2046,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)移除用户组中的IAM用户。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneRemoveUserFromGroupRequest request
-        :return: None
+        :return: KeystoneRemoveUserFromGroupResponse
         """
 
         all_params = ['group_id', 'user_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2175,21 +2067,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/groups/{group_id}/users/{user_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/groups/{group_id}/users/{user_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='KeystoneRemoveUserFromGroupResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2210,15 +2105,10 @@ class IamClient(Client):
         该接口可以用于查询请求头中X-Auth-Token对应的服务目录。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowCatalogRequest request
-        :return: tuple(KeystoneShowCatalogResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneShowCatalogResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2232,20 +2122,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/auth/catalog', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/auth/catalog',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneShowCatalogResponse',
@@ -2269,15 +2160,10 @@ class IamClient(Client):
         该接口可以用于查询终端节点详情。终端节点用来提供服务访问入口。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowEndpointRequest request
-        :return: tuple(KeystoneShowEndpointResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneShowEndpointResponse
         """
 
         all_params = ['endpoint_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2293,20 +2179,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/endpoints/{endpoint_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/endpoints/{endpoint_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneShowEndpointResponse',
@@ -2330,15 +2217,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询用户组详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowGroupRequest request
-        :return: tuple(KeystoneShowGroupResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneShowGroupResponse
         """
 
         all_params = ['group_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2354,20 +2236,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/groups/{group_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/groups/{group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneShowGroupResponse',
@@ -2391,15 +2274,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询权限详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowPermissionRequest request
-        :return: tuple(KeystoneShowPermissionResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneShowPermissionResponse
         """
 
         all_params = ['role_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2415,20 +2293,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/roles/{role_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/roles/{role_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneShowPermissionResponse',
@@ -2452,15 +2331,10 @@ class IamClient(Client):
         该接口可以用于查询项目详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowProjectRequest request
-        :return: tuple(KeystoneShowProjectResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneShowProjectResponse
         """
 
         all_params = ['project_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2476,20 +2350,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/projects/{project_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/projects/{project_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneShowProjectResponse',
@@ -2513,15 +2388,10 @@ class IamClient(Client):
         该接口可以用于查询区域详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowRegionRequest request
-        :return: tuple(KeystoneShowRegionResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneShowRegionResponse
         """
 
         all_params = ['region_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2537,20 +2407,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/regions/{region_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/regions/{region_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneShowRegionResponse',
@@ -2574,15 +2445,10 @@ class IamClient(Client):
         该接口可以用于查询账号密码强度策略，查询结果包括密码强度策略的正则表达式及其描述。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowSecurityComplianceRequest request
-        :return: tuple(KeystoneShowSecurityComplianceResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneShowSecurityComplianceResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2596,20 +2462,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/domains/{domain_id}/config/security_compliance', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/domains/{domain_id}/config/security_compliance',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneShowSecurityComplianceResponse',
@@ -2633,15 +2500,10 @@ class IamClient(Client):
         该接口可以用于按条件查询账号密码强度策略，查询结果包括密码强度策略的正则表达式及其描述。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowSecurityComplianceByOptionRequest request
-        :return: tuple(KeystoneShowSecurityComplianceByOptionResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneShowSecurityComplianceByOptionResponse
         """
 
         all_params = ['option']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2657,20 +2519,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json', 'application/json-1'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/domains/{domain_id}/config/security_compliance/{option}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/domains/{domain_id}/config/security_compliance/{option}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneShowSecurityComplianceByOptionResponse',
@@ -2694,15 +2557,10 @@ class IamClient(Client):
         该接口可以用于查询服务详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowServiceRequest request
-        :return: tuple(KeystoneShowServiceResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneShowServiceResponse
         """
 
         all_params = ['service_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2718,20 +2576,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/services/{service_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/services/{service_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneShowServiceResponse',
@@ -2755,15 +2614,10 @@ class IamClient(Client):
         该接口用于查询Keystone API的3.0版本的信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowVersionRequest request
-        :return: tuple(KeystoneShowVersionResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneShowVersionResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2777,20 +2631,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneShowVersionResponse',
@@ -2814,15 +2669,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)更新用户组信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateGroupRequest request
-        :return: tuple(KeystoneUpdateGroupResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneUpdateGroupResponse
         """
 
         all_params = ['group_id', 'keystone_update_group_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2838,24 +2688,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/groups/{group_id}', 'PATCH',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/groups/{group_id}',
+            method='PATCH',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneUpdateGroupResponse',
@@ -2879,15 +2730,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改项目信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateProjectRequest request
-        :return: tuple(KeystoneUpdateProjectResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneUpdateProjectResponse
         """
 
         all_params = ['project_id', 'keystone_update_project_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2903,24 +2749,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/projects/{project_id}', 'PATCH',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/projects/{project_id}',
+            method='PATCH',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneUpdateProjectResponse',
@@ -2944,15 +2791,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询指定条件下的委托列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListAgenciesRequest request
-        :return: tuple(ListAgenciesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListAgenciesResponse
         """
 
         all_params = ['trust_domain_id', 'name']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2970,20 +2812,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-AGENCY/agencies', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-AGENCY/agencies',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListAgenciesResponse',
@@ -3007,15 +2850,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询自定义策略列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListCustomPoliciesRequest request
-        :return: tuple(ListCustomPoliciesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListCustomPoliciesResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3029,20 +2867,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-ROLE/roles', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-ROLE/roles',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListCustomPoliciesResponse',
@@ -3066,15 +2905,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询全局服务中的委托权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListDomainPermissionsForAgencyRequest request
-        :return: tuple(ListDomainPermissionsForAgencyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListDomainPermissionsForAgencyResponse
         """
 
         all_params = ['agency_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3090,20 +2924,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-AGENCY/domains/{domain_id}/agencies/{agency_id}/roles', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-AGENCY/domains/{domain_id}/agencies/{agency_id}/roles',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListDomainPermissionsForAgencyResponse',
@@ -3127,15 +2962,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询项目服务中的委托权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListProjectPermissionsForAgencyRequest request
-        :return: tuple(ListProjectPermissionsForAgencyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListProjectPermissionsForAgencyResponse
         """
 
         all_params = ['project_id', 'agency_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3153,20 +2983,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-AGENCY/projects/{project_id}/agencies/{agency_id}/roles', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-AGENCY/projects/{project_id}/agencies/{agency_id}/roles',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListProjectPermissionsForAgencyResponse',
@@ -3180,7 +3011,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)移除委托的全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param RemoveDomainPermissionFromAgencyRequest request
-        :return: None
+        :return: RemoveDomainPermissionFromAgencyResponse
         """
         return self.remove_domain_permission_from_agency_with_http_info(request)
 
@@ -3190,15 +3021,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)移除委托的全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param RemoveDomainPermissionFromAgencyRequest request
-        :return: None
+        :return: RemoveDomainPermissionFromAgencyResponse
         """
 
         all_params = ['agency_id', 'role_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3216,21 +3042,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-AGENCY/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-AGENCY/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='RemoveDomainPermissionFromAgencyResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3241,7 +3070,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)移除委托的项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param RemoveProjectPermissionFromAgencyRequest request
-        :return: None
+        :return: RemoveProjectPermissionFromAgencyResponse
         """
         return self.remove_project_permission_from_agency_with_http_info(request)
 
@@ -3251,15 +3080,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)移除委托的项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param RemoveProjectPermissionFromAgencyRequest request
-        :return: None
+        :return: RemoveProjectPermissionFromAgencyResponse
         """
 
         all_params = ['project_id', 'agency_id', 'role_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3279,21 +3103,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-AGENCY/projects/{project_id}/agencies/{agency_id}/roles/{role_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-AGENCY/projects/{project_id}/agencies/{agency_id}/roles/{role_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='RemoveProjectPermissionFromAgencyResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3314,15 +3141,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询委托详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowAgencyRequest request
-        :return: tuple(ShowAgencyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowAgencyResponse
         """
 
         all_params = ['agency_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3338,20 +3160,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-AGENCY/agencies/{agency_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-AGENCY/agencies/{agency_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowAgencyResponse',
@@ -3375,15 +3198,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询自定义策略详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowCustomPolicyRequest request
-        :return: tuple(ShowCustomPolicyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowCustomPolicyResponse
         """
 
         all_params = ['role_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3399,20 +3217,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-ROLE/roles/{role_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-ROLE/roles/{role_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowCustomPolicyResponse',
@@ -3436,15 +3255,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询项目详情与状态。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowProjectDetailsAndStatusRequest request
-        :return: tuple(ShowProjectDetailsAndStatusResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowProjectDetailsAndStatusResponse
         """
 
         all_params = ['project_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3460,20 +3274,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3-ext/projects/{project_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3-ext/projects/{project_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowProjectDetailsAndStatusResponse',
@@ -3497,15 +3312,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)修改委托。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateAgencyRequest request
-        :return: tuple(UpdateAgencyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateAgencyResponse
         """
 
         all_params = ['agency_id', 'update_agency_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3521,24 +3331,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-AGENCY/agencies/{agency_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-AGENCY/agencies/{agency_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateAgencyResponse',
@@ -3562,15 +3373,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改委托自定义策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateAgencyCustomPolicyRequest request
-        :return: tuple(UpdateAgencyCustomPolicyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateAgencyCustomPolicyResponse
         """
 
         all_params = ['role_id', 'update_agency_custom_policy_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3586,24 +3392,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-ROLE/roles/{role_id}', 'PATCH',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-ROLE/roles/{role_id}',
+            method='PATCH',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateAgencyCustomPolicyResponse',
@@ -3627,15 +3434,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改云服务自定义策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateCloudServiceCustomPolicyRequest request
-        :return: tuple(UpdateCloudServiceCustomPolicyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateCloudServiceCustomPolicyResponse
         """
 
         all_params = ['role_id', 'update_cloud_service_custom_policy_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3651,24 +3453,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-ROLE/roles/{role_id}', 'PATCH',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-ROLE/roles/{role_id}',
+            method='PATCH',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateCloudServiceCustomPolicyResponse',
@@ -3682,7 +3485,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)设置项目状态。项目状态包括：正常、冻结。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateProjectStatusRequest request
-        :return: None
+        :return: UpdateProjectStatusResponse
         """
         return self.update_project_status_with_http_info(request)
 
@@ -3692,15 +3495,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)设置项目状态。项目状态包括：正常、冻结。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateProjectStatusRequest request
-        :return: None
+        :return: UpdateProjectStatusResponse
         """
 
         all_params = ['project_id', 'update_project_status_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3716,25 +3514,28 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3-ext/projects/{project_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3-ext/projects/{project_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateProjectStatusResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3756,15 +3557,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)给IAM用户创建永久访问密钥，或IAM用户给自己创建永久访问密钥。    访问密钥（Access Key ID/Secret Access Key，简称AK/SK），是您通过开发工具（API、CLI、SDK）访问华为云时的身份凭证，不用于登录控制台。系统通过AK识别访问用户的身份，通过SK进行签名验证，通过加密签名验证可以确保请求的机密性、完整性和请求者身份的正确性。在控制台创建访问密钥的方式请参见：[访问密钥](https://support.huaweicloud.com/usermanual-ca/zh-cn_topic_0046606340.html)  。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreatePermanentAccessKeyRequest request
-        :return: tuple(CreatePermanentAccessKeyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreatePermanentAccessKeyResponse
         """
 
         all_params = ['create_permanent_access_key_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3778,24 +3574,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-CREDENTIAL/credentials', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-CREDENTIAL/credentials',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreatePermanentAccessKeyResponse',
@@ -3819,15 +3616,10 @@ class IamClient(Client):
         该接口可以用于通过委托来获取临时访问密钥（临时AK/SK）和securitytoken。    临时AK/SK和securitytoken是系统颁发给IAM用户的临时访问令牌，有效期为15分钟至24小时，过期后需要重新获取。临时AK/SK和securitytoken遵循权限最小化原则。鉴权时，临时AK/SK和securitytoken必须同时使用，请求头中需要添加“x-security-token”字段，使用方法详情请参考：[API签名参考](https://support.huaweicloud.com/devg-apisign/api-sign-provide.html) 。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateTemporaryAccessKeyByAgencyRequest request
-        :return: tuple(CreateTemporaryAccessKeyByAgencyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateTemporaryAccessKeyByAgencyResponse
         """
 
         all_params = ['create_temporary_access_key_by_agency_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3841,24 +3633,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-CREDENTIAL/securitytokens', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-CREDENTIAL/securitytokens',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateTemporaryAccessKeyByAgencyResponse',
@@ -3882,15 +3675,10 @@ class IamClient(Client):
         该接口可以用于通过token来获取临时AK/SK和securitytoken。    临时AK/SK和securitytoken是系统颁发给IAM用户的临时访问令牌，有效期为15分钟至24小时，过期后需要重新获取。临时AK/SK和securitytoken遵循权限最小化原则。鉴权时，临时AK/SK和securitytoken必须同时使用，请求头中需要添加“x-security-token”字段，使用方法详情请参考：[API签名参考](https://support.huaweicloud.com/devg-apisign/api-sign-provide.html)。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateTemporaryAccessKeyByTokenRequest request
-        :return: tuple(CreateTemporaryAccessKeyByTokenResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateTemporaryAccessKeyByTokenResponse
         """
 
         all_params = ['create_temporary_access_key_by_token_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3904,24 +3692,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-CREDENTIAL/securitytokens', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-CREDENTIAL/securitytokens',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateTemporaryAccessKeyByTokenResponse',
@@ -3935,7 +3724,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除IAM用户的指定永久访问密钥，或IAM用户删除自己的指定永久访问密钥。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeletePermanentAccessKeyRequest request
-        :return: None
+        :return: DeletePermanentAccessKeyResponse
         """
         return self.delete_permanent_access_key_with_http_info(request)
 
@@ -3945,15 +3734,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除IAM用户的指定永久访问密钥，或IAM用户删除自己的指定永久访问密钥。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeletePermanentAccessKeyRequest request
-        :return: None
+        :return: DeletePermanentAccessKeyResponse
         """
 
         all_params = ['access_key']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3969,21 +3753,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-CREDENTIAL/credentials/{access_key}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-CREDENTIAL/credentials/{access_key}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='DeletePermanentAccessKeyResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4004,15 +3791,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的所有永久访问密钥，或IAM用户查询自己的所有永久访问密钥。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListPermanentAccessKeysRequest request
-        :return: tuple(ListPermanentAccessKeysResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListPermanentAccessKeysResponse
         """
 
         all_params = ['user_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4028,20 +3810,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-CREDENTIAL/credentials', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-CREDENTIAL/credentials',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListPermanentAccessKeysResponse',
@@ -4065,15 +3848,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的指定永久访问密钥，或IAM用户查询自己的指定永久访问密钥。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowPermanentAccessKeyRequest request
-        :return: tuple(ShowPermanentAccessKeyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowPermanentAccessKeyResponse
         """
 
         all_params = ['access_key']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4089,20 +3867,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-CREDENTIAL/credentials/{access_key}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-CREDENTIAL/credentials/{access_key}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowPermanentAccessKeyResponse',
@@ -4126,15 +3905,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户的指定永久访问密钥，或IAM用户修改自己的指定永久访问密钥。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdatePermanentAccessKeyRequest request
-        :return: tuple(UpdatePermanentAccessKeyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdatePermanentAccessKeyResponse
         """
 
         all_params = ['access_key', 'update_permanent_access_key_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4150,24 +3924,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-CREDENTIAL/credentials/{access_key}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-CREDENTIAL/credentials/{access_key}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdatePermanentAccessKeyResponse',
@@ -4192,15 +3967,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建IAM用户。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateUserRequest request
-        :return: tuple(CreateUserResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateUserResponse
         """
 
         all_params = ['create_user_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4214,24 +3984,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-USER/users', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-USER/users',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateUserResponse',
@@ -4255,15 +4026,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)创建IAM用户。IAM用户首次登录时需要修改密码。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateUserRequest request
-        :return: tuple(KeystoneCreateUserResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneCreateUserResponse
         """
 
         all_params = ['keystone_create_user_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4277,24 +4043,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/users', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/users',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneCreateUserResponse',
@@ -4308,7 +4075,7 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)删除指定IAM用户。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneDeleteUserRequest request
-        :return: None
+        :return: KeystoneDeleteUserResponse
         """
         return self.keystone_delete_user_with_http_info(request)
 
@@ -4318,15 +4085,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)删除指定IAM用户。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneDeleteUserRequest request
-        :return: None
+        :return: KeystoneDeleteUserResponse
         """
 
         all_params = ['user_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4342,21 +4104,24 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/users/{user_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/users/{user_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='KeystoneDeleteUserResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4377,15 +4142,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询IAM用户所属用户组，或IAM用户查询自己所属用户组。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListGroupsForUserRequest request
-        :return: tuple(KeystoneListGroupsForUserResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneListGroupsForUserResponse
         """
 
         all_params = ['user_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4401,20 +4161,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/users/{user_id}/groups', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/users/{user_id}/groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneListGroupsForUserResponse',
@@ -4438,15 +4199,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询IAM用户列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListUsersRequest request
-        :return: tuple(KeystoneListUsersResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneListUsersResponse
         """
 
         all_params = ['enabled', 'name', 'password_expires_at']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4466,20 +4222,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/users', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/users',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneListUsersResponse',
@@ -4503,15 +4260,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)查询IAM用户详情，或IAM用户查询自己的用户详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowUserRequest request
-        :return: tuple(KeystoneShowUserResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneShowUserResponse
         """
 
         all_params = ['user_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4527,20 +4279,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/users/{user_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/users/{user_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneShowUserResponse',
@@ -4564,15 +4317,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)修改IAM用户信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateUserByAdminRequest request
-        :return: tuple(KeystoneUpdateUserByAdminResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: KeystoneUpdateUserByAdminResponse
         """
 
         all_params = ['user_id', 'keystone_update_user_by_admin_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4588,24 +4336,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/users/{user_id}', 'PATCH',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/users/{user_id}',
+            method='PATCH',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='KeystoneUpdateUserByAdminResponse',
@@ -4619,7 +4368,7 @@ class IamClient(Client):
         该接口可以用于IAM用户修改自己的密码。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateUserPasswordRequest request
-        :return: None
+        :return: KeystoneUpdateUserPasswordResponse
         """
         return self.keystone_update_user_password_with_http_info(request)
 
@@ -4629,15 +4378,10 @@ class IamClient(Client):
         该接口可以用于IAM用户修改自己的密码。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateUserPasswordRequest request
-        :return: None
+        :return: KeystoneUpdateUserPasswordResponse
         """
 
         all_params = ['user_id', 'keystone_update_user_password_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4653,25 +4397,28 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/users/{user_id}/password', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/users/{user_id}/password',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='KeystoneUpdateUserPasswordResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4692,15 +4439,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户详情，或IAM用户查询自己的详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowUserRequest request
-        :return: tuple(ShowUserResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowUserResponse
         """
 
         all_params = ['user_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4716,20 +4458,21 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-USER/users/{user_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-USER/users/{user_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowUserResponse',
@@ -4753,15 +4496,10 @@ class IamClient(Client):
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户信息 。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateUserRequest request
-        :return: tuple(UpdateUserResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateUserResponse
         """
 
         all_params = ['user_id', 'update_user_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4777,24 +4515,25 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['*/*', 'application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-USER/users/{user_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-USER/users/{user_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateUserResponse',
@@ -4808,7 +4547,7 @@ class IamClient(Client):
         该接口可以用于IAM用户修改自己的用户信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateUserInformationRequest request
-        :return: None
+        :return: UpdateUserInformationResponse
         """
         return self.update_user_information_with_http_info(request)
 
@@ -4818,15 +4557,10 @@ class IamClient(Client):
         该接口可以用于IAM用户修改自己的用户信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateUserInformationRequest request
-        :return: None
+        :return: UpdateUserInformationResponse
         """
 
         all_params = ['user_id', 'update_user_information_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4842,25 +4576,28 @@ class IamClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3.0/OS-USER/users/{user_id}/info', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3.0/OS-USER/users/{user_id}/info',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='UpdateUserInformationResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4887,6 +4624,14 @@ class IamClient(Client):
         :return:
             Return the response directly.
         """
-        return self.do_http_request(method, resource_path, path_params,
-                                    query_params, header_params, body, post_params,
-                                    response_type, collection_formats, request_type)
+        return self.do_http_request(
+            method=method,
+            resource_path=resource_path,
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body,
+            post_params=post_params,
+            response_type=response_type,
+            collection_formats=collection_formats,
+            request_type=request_type)

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ImageTaggingReq(object):
+
+
+
+class ImageTaggingReq:
 
 
     """
@@ -35,8 +38,10 @@ class ImageTaggingReq(object):
         'limit': 'limit'
     }
 
-    def __init__(self, image=None, url=None, language=None, threshold=0.0, limit=None):  # noqa: E501
+    def __init__(self, image=None, url=None, language=None, threshold=0.0, limit=None):
         """ImageTaggingReq - a model defined in huaweicloud sdk"""
+        
+        
 
         self._image = None
         self._url = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowServerTagsRequest(object):
+
+
+
+class ShowServerTagsRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ShowServerTagsRequest(object):
         'server_id': 'server_id'
     }
 
-    def __init__(self, server_id=None):  # noqa: E501
+    def __init__(self, server_id=None):
         """ShowServerTagsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._server_id = None
         self.discriminator = None

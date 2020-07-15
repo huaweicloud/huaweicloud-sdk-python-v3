@@ -6,7 +6,10 @@ import re
 import six
 
 
-class InstanceReplicationListInfo(object):
+
+
+
+class InstanceReplicationListInfo:
 
 
     """
@@ -37,8 +40,10 @@ class InstanceReplicationListInfo(object):
         'status': 'status'
     }
 
-    def __init__(self, replication_role=None, replication_ip=None, is_replication=None, replication_id=None, node_id=None, status=None):  # noqa: E501
+    def __init__(self, replication_role=None, replication_ip=None, is_replication=None, replication_id=None, node_id=None, status=None):
         """InstanceReplicationListInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._replication_role = None
         self._replication_ip = None

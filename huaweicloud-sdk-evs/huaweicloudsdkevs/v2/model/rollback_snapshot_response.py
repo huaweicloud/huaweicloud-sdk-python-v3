@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RollbackSnapshotResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class RollbackSnapshotResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class RollbackSnapshotResponse(object):
         'rollback': 'rollback'
     }
 
-    def __init__(self, rollback=None):  # noqa: E501
+    def __init__(self, rollback=None):
         """RollbackSnapshotResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._rollback = None
         self.discriminator = None

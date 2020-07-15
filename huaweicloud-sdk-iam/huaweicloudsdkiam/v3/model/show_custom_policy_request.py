@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowCustomPolicyRequest(object):
+
+
+
+class ShowCustomPolicyRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ShowCustomPolicyRequest(object):
         'role_id': 'role_id'
     }
 
-    def __init__(self, role_id=None):  # noqa: E501
+    def __init__(self, role_id=None):
         """ShowCustomPolicyRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._role_id = None
         self.discriminator = None

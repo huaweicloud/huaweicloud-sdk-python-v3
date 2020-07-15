@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneGroupResult(object):
+
+
+
+class KeystoneGroupResult:
 
 
     """
@@ -37,8 +40,10 @@ class KeystoneGroupResult(object):
         'create_time': 'create_time'
     }
 
-    def __init__(self, description=None, id=None, domain_id=None, name=None, links=None, create_time=None):  # noqa: E501
+    def __init__(self, description=None, id=None, domain_id=None, name=None, links=None, create_time=None):
         """KeystoneGroupResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._description = None
         self._id = None

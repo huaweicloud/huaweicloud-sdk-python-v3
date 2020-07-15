@@ -6,7 +6,10 @@ import re
 import six
 
 
-class QuotaList(object):
+
+
+
+class QuotaList:
 
 
     """
@@ -20,25 +23,25 @@ class QuotaList(object):
     sensitive_list = []
 
     openapi_types = {
-        'backup_gigabytes': 'QuotaDetail',
-        'backups': 'QuotaDetail',
-        'gigabytes': 'QuotaDetail',
+        'backup_gigabytes': 'QuotaDetailBackupGigabytes',
+        'backups': 'QuotaDetailBackups',
+        'gigabytes': 'QuotaDetailGigabytes',
         'id': 'str',
-        'snapshots': 'QuotaDetail',
-        'volumes': 'QuotaDetail',
-        'gigabytes_sata': 'QuotaDetail',
-        'snapshots_sata': 'QuotaDetail',
-        'volumes_sata': 'QuotaDetail',
-        'gigabytes_sas': 'QuotaDetail',
-        'snapshots_sas': 'QuotaDetail',
-        'volumes_sas': 'QuotaDetail',
-        'gigabytes_ssd': 'QuotaDetail',
-        'snapshots_ssd': 'QuotaDetail',
-        'volumes_ssd': 'QuotaDetail',
-        'gigabytes_gpssd': 'QuotaDetail',
-        'snapshots_gpssd': 'QuotaDetail',
-        'volumes_gpssd': 'QuotaDetail',
-        'per_volume_gigabytes': 'QuotaDetail'
+        'snapshots': 'QuotaDetailSnapshots',
+        'volumes': 'QuotaDetailVolumes',
+        'gigabytes_sata': 'QuotaDetailGigabytesSATA',
+        'snapshots_sata': 'QuotaDetailSnapshotsSATA',
+        'volumes_sata': 'QuotaDetailVolumesSATA',
+        'gigabytes_sas': 'QuotaDetailGigabytesSAS',
+        'snapshots_sas': 'QuotaDetailSnapshotsSAS',
+        'volumes_sas': 'QuotaDetailVolumesSAS',
+        'gigabytes_ssd': 'QuotaDetailGigabytesSSD',
+        'snapshots_ssd': 'QuotaDetailSnapshotsSSD',
+        'volumes_ssd': 'QuotaDetailVolumesSSD',
+        'gigabytes_gpssd': 'QuotaDetailGigabytesGPSSD',
+        'snapshots_gpssd': 'QuotaDetailSnapshotsGPSSD',
+        'volumes_gpssd': 'QuotaDetailVolumesGPSSD',
+        'per_volume_gigabytes': 'QuotaDetailPerVolumeGigabytes'
     }
 
     attribute_map = {
@@ -63,8 +66,10 @@ class QuotaList(object):
         'per_volume_gigabytes': 'per_volume_gigabytes'
     }
 
-    def __init__(self, backup_gigabytes=None, backups=None, gigabytes=None, id=None, snapshots=None, volumes=None, gigabytes_sata=None, snapshots_sata=None, volumes_sata=None, gigabytes_sas=None, snapshots_sas=None, volumes_sas=None, gigabytes_ssd=None, snapshots_ssd=None, volumes_ssd=None, gigabytes_gpssd=None, snapshots_gpssd=None, volumes_gpssd=None, per_volume_gigabytes=None):  # noqa: E501
+    def __init__(self, backup_gigabytes=None, backups=None, gigabytes=None, id=None, snapshots=None, volumes=None, gigabytes_sata=None, snapshots_sata=None, volumes_sata=None, gigabytes_sas=None, snapshots_sas=None, volumes_sas=None, gigabytes_ssd=None, snapshots_ssd=None, volumes_ssd=None, gigabytes_gpssd=None, snapshots_gpssd=None, volumes_gpssd=None, per_volume_gigabytes=None):
         """QuotaList - a model defined in huaweicloud sdk"""
+        
+        
 
         self._backup_gigabytes = None
         self._backups = None
@@ -126,7 +131,7 @@ class QuotaList(object):
 
 
         :return: The backup_gigabytes of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailBackupGigabytes
         """
         return self._backup_gigabytes
 
@@ -136,7 +141,7 @@ class QuotaList(object):
 
 
         :param backup_gigabytes: The backup_gigabytes of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailBackupGigabytes
         """
         self._backup_gigabytes = backup_gigabytes
 
@@ -146,7 +151,7 @@ class QuotaList(object):
 
 
         :return: The backups of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailBackups
         """
         return self._backups
 
@@ -156,7 +161,7 @@ class QuotaList(object):
 
 
         :param backups: The backups of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailBackups
         """
         self._backups = backups
 
@@ -166,7 +171,7 @@ class QuotaList(object):
 
 
         :return: The gigabytes of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailGigabytes
         """
         return self._gigabytes
 
@@ -176,7 +181,7 @@ class QuotaList(object):
 
 
         :param gigabytes: The gigabytes of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailGigabytes
         """
         self._gigabytes = gigabytes
 
@@ -208,7 +213,7 @@ class QuotaList(object):
 
 
         :return: The snapshots of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailSnapshots
         """
         return self._snapshots
 
@@ -218,7 +223,7 @@ class QuotaList(object):
 
 
         :param snapshots: The snapshots of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailSnapshots
         """
         self._snapshots = snapshots
 
@@ -228,7 +233,7 @@ class QuotaList(object):
 
 
         :return: The volumes of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailVolumes
         """
         return self._volumes
 
@@ -238,7 +243,7 @@ class QuotaList(object):
 
 
         :param volumes: The volumes of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailVolumes
         """
         self._volumes = volumes
 
@@ -248,7 +253,7 @@ class QuotaList(object):
 
 
         :return: The gigabytes_sata of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailGigabytesSATA
         """
         return self._gigabytes_sata
 
@@ -258,7 +263,7 @@ class QuotaList(object):
 
 
         :param gigabytes_sata: The gigabytes_sata of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailGigabytesSATA
         """
         self._gigabytes_sata = gigabytes_sata
 
@@ -268,7 +273,7 @@ class QuotaList(object):
 
 
         :return: The snapshots_sata of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailSnapshotsSATA
         """
         return self._snapshots_sata
 
@@ -278,7 +283,7 @@ class QuotaList(object):
 
 
         :param snapshots_sata: The snapshots_sata of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailSnapshotsSATA
         """
         self._snapshots_sata = snapshots_sata
 
@@ -288,7 +293,7 @@ class QuotaList(object):
 
 
         :return: The volumes_sata of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailVolumesSATA
         """
         return self._volumes_sata
 
@@ -298,7 +303,7 @@ class QuotaList(object):
 
 
         :param volumes_sata: The volumes_sata of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailVolumesSATA
         """
         self._volumes_sata = volumes_sata
 
@@ -308,7 +313,7 @@ class QuotaList(object):
 
 
         :return: The gigabytes_sas of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailGigabytesSAS
         """
         return self._gigabytes_sas
 
@@ -318,7 +323,7 @@ class QuotaList(object):
 
 
         :param gigabytes_sas: The gigabytes_sas of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailGigabytesSAS
         """
         self._gigabytes_sas = gigabytes_sas
 
@@ -328,7 +333,7 @@ class QuotaList(object):
 
 
         :return: The snapshots_sas of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailSnapshotsSAS
         """
         return self._snapshots_sas
 
@@ -338,7 +343,7 @@ class QuotaList(object):
 
 
         :param snapshots_sas: The snapshots_sas of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailSnapshotsSAS
         """
         self._snapshots_sas = snapshots_sas
 
@@ -348,7 +353,7 @@ class QuotaList(object):
 
 
         :return: The volumes_sas of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailVolumesSAS
         """
         return self._volumes_sas
 
@@ -358,7 +363,7 @@ class QuotaList(object):
 
 
         :param volumes_sas: The volumes_sas of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailVolumesSAS
         """
         self._volumes_sas = volumes_sas
 
@@ -368,7 +373,7 @@ class QuotaList(object):
 
 
         :return: The gigabytes_ssd of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailGigabytesSSD
         """
         return self._gigabytes_ssd
 
@@ -378,7 +383,7 @@ class QuotaList(object):
 
 
         :param gigabytes_ssd: The gigabytes_ssd of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailGigabytesSSD
         """
         self._gigabytes_ssd = gigabytes_ssd
 
@@ -388,7 +393,7 @@ class QuotaList(object):
 
 
         :return: The snapshots_ssd of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailSnapshotsSSD
         """
         return self._snapshots_ssd
 
@@ -398,7 +403,7 @@ class QuotaList(object):
 
 
         :param snapshots_ssd: The snapshots_ssd of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailSnapshotsSSD
         """
         self._snapshots_ssd = snapshots_ssd
 
@@ -408,7 +413,7 @@ class QuotaList(object):
 
 
         :return: The volumes_ssd of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailVolumesSSD
         """
         return self._volumes_ssd
 
@@ -418,7 +423,7 @@ class QuotaList(object):
 
 
         :param volumes_ssd: The volumes_ssd of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailVolumesSSD
         """
         self._volumes_ssd = volumes_ssd
 
@@ -428,7 +433,7 @@ class QuotaList(object):
 
 
         :return: The gigabytes_gpssd of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailGigabytesGPSSD
         """
         return self._gigabytes_gpssd
 
@@ -438,7 +443,7 @@ class QuotaList(object):
 
 
         :param gigabytes_gpssd: The gigabytes_gpssd of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailGigabytesGPSSD
         """
         self._gigabytes_gpssd = gigabytes_gpssd
 
@@ -448,7 +453,7 @@ class QuotaList(object):
 
 
         :return: The snapshots_gpssd of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailSnapshotsGPSSD
         """
         return self._snapshots_gpssd
 
@@ -458,7 +463,7 @@ class QuotaList(object):
 
 
         :param snapshots_gpssd: The snapshots_gpssd of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailSnapshotsGPSSD
         """
         self._snapshots_gpssd = snapshots_gpssd
 
@@ -468,7 +473,7 @@ class QuotaList(object):
 
 
         :return: The volumes_gpssd of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailVolumesGPSSD
         """
         return self._volumes_gpssd
 
@@ -478,7 +483,7 @@ class QuotaList(object):
 
 
         :param volumes_gpssd: The volumes_gpssd of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailVolumesGPSSD
         """
         self._volumes_gpssd = volumes_gpssd
 
@@ -488,7 +493,7 @@ class QuotaList(object):
 
 
         :return: The per_volume_gigabytes of this QuotaList.
-        :rtype: QuotaDetail
+        :rtype: QuotaDetailPerVolumeGigabytes
         """
         return self._per_volume_gigabytes
 
@@ -498,7 +503,7 @@ class QuotaList(object):
 
 
         :param per_volume_gigabytes: The per_volume_gigabytes of this QuotaList.
-        :type: QuotaDetail
+        :type: QuotaDetailPerVolumeGigabytes
         """
         self._per_volume_gigabytes = per_volume_gigabytes
 

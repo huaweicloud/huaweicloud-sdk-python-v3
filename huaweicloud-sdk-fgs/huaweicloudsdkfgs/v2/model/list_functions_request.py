@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListFunctionsRequest(object):
+
+
+
+class ListFunctionsRequest:
 
 
     """
@@ -29,8 +32,10 @@ class ListFunctionsRequest(object):
         'maxitems': 'maxitems'
     }
 
-    def __init__(self, marker=None, maxitems=None):  # noqa: E501
+    def __init__(self, marker=None, maxitems=None):
         """ListFunctionsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._marker = None
         self._maxitems = None

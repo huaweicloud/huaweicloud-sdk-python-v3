@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowRuleRequest(object):
+
+
+
+class ShowRuleRequest:
 
 
     """
@@ -29,8 +32,10 @@ class ShowRuleRequest(object):
         'rule_id': 'rule_id'
     }
 
-    def __init__(self, instance_id=None, rule_id=None):  # noqa: E501
+    def __init__(self, instance_id=None, rule_id=None):
         """ShowRuleRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._rule_id = None

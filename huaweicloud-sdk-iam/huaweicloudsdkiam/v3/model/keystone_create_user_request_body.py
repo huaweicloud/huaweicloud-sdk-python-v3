@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneCreateUserRequestBody(object):
+
+
+
+class KeystoneCreateUserRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class KeystoneCreateUserRequestBody(object):
         'user': 'user'
     }
 
-    def __init__(self, user=None):  # noqa: E501
+    def __init__(self, user=None):
         """KeystoneCreateUserRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._user = None
         self.discriminator = None

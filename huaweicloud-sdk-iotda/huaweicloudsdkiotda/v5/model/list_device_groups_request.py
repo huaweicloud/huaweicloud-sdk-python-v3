@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListDeviceGroupsRequest(object):
+
+
+
+class ListDeviceGroupsRequest:
 
 
     """
@@ -37,8 +40,10 @@ class ListDeviceGroupsRequest(object):
         'app_id': 'app_id'
     }
 
-    def __init__(self, instance_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0, last_modified_time=None, app_id=None):  # noqa: E501
+    def __init__(self, instance_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0, last_modified_time=None, app_id=None):
         """ListDeviceGroupsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._limit = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteAlarmRequest(object):
+
+
+
+class DeleteAlarmRequest:
 
 
     """
@@ -27,8 +30,10 @@ class DeleteAlarmRequest(object):
         'alarm_id': 'alarm_id'
     }
 
-    def __init__(self, alarm_id=None):  # noqa: E501
+    def __init__(self, alarm_id=None):
         """DeleteAlarmRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._alarm_id = None
         self.discriminator = None

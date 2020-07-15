@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListDeviceMessagesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListDeviceMessagesResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class ListDeviceMessagesResponse(object):
         'messages': 'messages'
     }
 
-    def __init__(self, device_id=None, messages=None):  # noqa: E501
+    def __init__(self, device_id=None, messages=None):
         """ListDeviceMessagesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._device_id = None
         self._messages = None

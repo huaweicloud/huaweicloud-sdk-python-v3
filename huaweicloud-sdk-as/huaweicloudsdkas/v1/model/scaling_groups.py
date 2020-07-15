@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ScalingGroups(object):
+
+
+
+class ScalingGroups:
 
 
     """
@@ -79,8 +82,10 @@ class ScalingGroups(object):
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, scaling_group_name=None, scaling_group_id=None, scaling_group_status=None, scaling_configuration_id=None, scaling_configuration_name=None, current_instance_number=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, lb_listener_id=None, lbaas_listeners=None, available_zones=None, networks=None, security_groups=None, create_time=None, vpc_id=None, detail=None, is_scaling=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, notifications=None, delete_publicip=None, cloud_location_id=None, enterprise_project_id=None):  # noqa: E501
+    def __init__(self, scaling_group_name=None, scaling_group_id=None, scaling_group_status=None, scaling_configuration_id=None, scaling_configuration_name=None, current_instance_number=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, lb_listener_id=None, lbaas_listeners=None, available_zones=None, networks=None, security_groups=None, create_time=None, vpc_id=None, detail=None, is_scaling=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, notifications=None, delete_publicip=None, cloud_location_id=None, enterprise_project_id=None):
         """ScalingGroups - a model defined in huaweicloud sdk"""
+        
+        
 
         self._scaling_group_name = None
         self._scaling_group_id = None

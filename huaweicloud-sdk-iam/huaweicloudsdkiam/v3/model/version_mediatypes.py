@@ -6,7 +6,10 @@ import re
 import six
 
 
-class VersionMediatypes(object):
+
+
+
+class VersionMediatypes:
 
 
     """
@@ -29,8 +32,10 @@ class VersionMediatypes(object):
         'base': 'base'
     }
 
-    def __init__(self, type=None, base=None):  # noqa: E501
+    def __init__(self, type=None, base=None):
         """VersionMediatypes - a model defined in huaweicloud sdk"""
+        
+        
 
         self._type = None
         self._base = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateDCSInstanceResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CreateDCSInstanceResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class CreateDCSInstanceResponse(object):
         'instances': 'instances'
     }
 
-    def __init__(self, order_id=None, instances=None):  # noqa: E501
+    def __init__(self, order_id=None, instances=None):
         """CreateDCSInstanceResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._order_id = None
         self._instances = None

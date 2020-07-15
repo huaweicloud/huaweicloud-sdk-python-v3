@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BaseUser(object):
+
+
+
+class BaseUser:
 
 
     """
@@ -29,8 +32,10 @@ class BaseUser(object):
         'name': 'name'
     }
 
-    def __init__(self, id=None, name=None):  # noqa: E501
+    def __init__(self, id=None, name=None):
         """BaseUser - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._name = None

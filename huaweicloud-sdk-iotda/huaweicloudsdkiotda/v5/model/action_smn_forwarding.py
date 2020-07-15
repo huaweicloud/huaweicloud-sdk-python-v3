@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ActionSmnForwarding(object):
+
+
+
+class ActionSmnForwarding:
 
 
     """
@@ -37,8 +40,10 @@ class ActionSmnForwarding(object):
         'message_title': 'message_title'
     }
 
-    def __init__(self, region_name=None, project_id=None, theme_name=None, topic_urn=None, message_content=None, message_title=None):  # noqa: E501
+    def __init__(self, region_name=None, project_id=None, theme_name=None, topic_urn=None, message_content=None, message_title=None):
         """ActionSmnForwarding - a model defined in huaweicloud sdk"""
+        
+        
 
         self._region_name = None
         self._project_id = None

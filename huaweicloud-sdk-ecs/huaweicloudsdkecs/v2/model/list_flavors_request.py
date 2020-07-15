@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListFlavorsRequest(object):
+
+
+
+class ListFlavorsRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ListFlavorsRequest(object):
         'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, availability_zone=None):  # noqa: E501
+    def __init__(self, availability_zone=None):
         """ListFlavorsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._availability_zone = None
         self.discriminator = None

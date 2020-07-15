@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchListMetricDataRequestBody(object):
+
+
+
+class BatchListMetricDataRequestBody:
 
 
     """
@@ -35,8 +38,10 @@ class BatchListMetricDataRequestBody(object):
         'filter': 'filter'
     }
 
-    def __init__(self, metrics=None, _from=None, to=None, period=None, filter=None):  # noqa: E501
+    def __init__(self, metrics=None, _from=None, to=None, period=None, filter=None):
         """BatchListMetricDataRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._metrics = None
         self.__from = None

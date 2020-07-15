@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchDeleteDCSInstancesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class BatchDeleteDCSInstancesResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class BatchDeleteDCSInstancesResponse(object):
         'results': 'results'
     }
 
-    def __init__(self, results=None):  # noqa: E501
+    def __init__(self, results=None):
         """BatchDeleteDCSInstancesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._results = None
         self.discriminator = None

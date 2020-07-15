@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ServiceCommandPara(object):
+
+
+
+class ServiceCommandPara:
 
 
     """
@@ -45,8 +48,10 @@ class ServiceCommandPara(object):
         'description': 'description'
     }
 
-    def __init__(self, para_name=None, required=False, data_type=None, enum_list=None, min=None, max=None, max_length=None, step=None, unit=None, description=None):  # noqa: E501
+    def __init__(self, para_name=None, required=False, data_type=None, enum_list=None, min=None, max=None, max_length=None, step=None, unit=None, description=None):
         """ServiceCommandPara - a model defined in huaweicloud sdk"""
+        
+        
 
         self._para_name = None
         self._required = None

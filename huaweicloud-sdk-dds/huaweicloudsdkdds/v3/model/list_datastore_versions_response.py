@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListDatastoreVersionsResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListDatastoreVersionsResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ListDatastoreVersionsResponse(object):
         'versions': 'versions'
     }
 
-    def __init__(self, versions=None):  # noqa: E501
+    def __init__(self, versions=None):
         """ListDatastoreVersionsResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._versions = None
         self.discriminator = None

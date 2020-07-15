@@ -6,7 +6,10 @@ import re
 import six
 
 
-class IdentityAssumerole(object):
+
+
+
+class IdentityAssumerole:
 
 
     """
@@ -31,12 +34,14 @@ class IdentityAssumerole(object):
         'agency_name': 'agency_name',
         'domain_id': 'domain_id',
         'domain_name': 'domain_name',
-        'duration_seconds': 'duration-seconds',
+        'duration_seconds': 'duration_seconds',
         'session_user': 'session_user'
     }
 
-    def __init__(self, agency_name=None, domain_id=None, domain_name=None, duration_seconds=900, session_user=None):  # noqa: E501
+    def __init__(self, agency_name=None, domain_id=None, domain_name=None, duration_seconds=900, session_user=None):
         """IdentityAssumerole - a model defined in huaweicloud sdk"""
+        
+        
 
         self._agency_name = None
         self._domain_id = None

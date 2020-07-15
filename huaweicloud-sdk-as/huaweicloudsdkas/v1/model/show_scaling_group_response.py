@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowScalingGroupResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowScalingGroupResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ShowScalingGroupResponse(object):
         'scaling_group': 'scaling_group'
     }
 
-    def __init__(self, scaling_group=None):  # noqa: E501
+    def __init__(self, scaling_group=None):
         """ShowScalingGroupResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._scaling_group = None
         self.discriminator = None

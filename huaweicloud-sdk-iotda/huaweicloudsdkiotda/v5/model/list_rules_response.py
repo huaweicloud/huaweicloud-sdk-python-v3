@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListRulesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListRulesResponse(SdkResponse):
 
 
     """
@@ -31,8 +34,10 @@ class ListRulesResponse(object):
         'rules': 'rules'
     }
 
-    def __init__(self, marker=None, count=None, rules=None):  # noqa: E501
+    def __init__(self, marker=None, count=None, rules=None):
         """ListRulesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._marker = None
         self._count = None

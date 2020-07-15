@@ -6,7 +6,10 @@ import re
 import six
 
 
-class TagKeyValue(object):
+
+
+
+class TagKeyValue:
 
 
     """
@@ -29,8 +32,10 @@ class TagKeyValue(object):
         'value': 'value'
     }
 
-    def __init__(self, key=None, value=None):  # noqa: E501
+    def __init__(self, key=None, value=None):
         """TagKeyValue - a model defined in huaweicloud sdk"""
+        
+        
 
         self._key = None
         self._value = None

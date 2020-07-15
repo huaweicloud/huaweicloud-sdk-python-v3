@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ModPwdReqDTO(object):
+
+
+
+class ModPwdReqDTO:
 
 
     """
@@ -31,8 +34,10 @@ class ModPwdReqDTO(object):
         'new_pwd': 'newPwd'
     }
 
-    def __init__(self, account=None, old_pwd=None, new_pwd=None):  # noqa: E501
+    def __init__(self, account=None, old_pwd=None, new_pwd=None):
         """ModPwdReqDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._account = None
         self._old_pwd = None

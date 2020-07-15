@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UserFunctionDTO(object):
+
+
+
+class UserFunctionDTO:
 
 
     """
@@ -27,8 +30,10 @@ class UserFunctionDTO(object):
         'enable_room': 'enableRoom'
     }
 
-    def __init__(self, enable_room=False):  # noqa: E501
+    def __init__(self, enable_room=False):
         """UserFunctionDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._enable_room = None
         self.discriminator = None

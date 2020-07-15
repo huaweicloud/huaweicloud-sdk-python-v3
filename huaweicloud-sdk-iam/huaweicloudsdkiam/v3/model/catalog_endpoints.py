@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CatalogEndpoints(object):
+
+
+
+class CatalogEndpoints:
 
 
     """
@@ -35,8 +38,10 @@ class CatalogEndpoints(object):
         'url': 'url'
     }
 
-    def __init__(self, id=None, interface=None, region=None, region_id=None, url=None):  # noqa: E501
+    def __init__(self, id=None, interface=None, region=None, region_id=None, url=None):
         """CatalogEndpoints - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._interface = None

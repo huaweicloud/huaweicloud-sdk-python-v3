@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AdminDTO(object):
+
+
+
+class AdminDTO:
 
 
     """
@@ -39,8 +42,10 @@ class AdminDTO(object):
         'send_notify': 'sendNotify'
     }
 
-    def __init__(self, account=None, name=None, pwd=None, email=None, phone=None, country='chinaPR', send_notify=False):  # noqa: E501
+    def __init__(self, account=None, name=None, pwd=None, email=None, phone=None, country='chinaPR', send_notify=False):
         """AdminDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._account = None
         self._name = None

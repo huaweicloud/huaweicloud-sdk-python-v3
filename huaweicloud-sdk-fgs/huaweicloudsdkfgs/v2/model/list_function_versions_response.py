@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListFunctionVersionsResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListFunctionVersionsResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class ListFunctionVersionsResponse(object):
         'next_marker': 'next_marker'
     }
 
-    def __init__(self, versions=None, next_marker=None):  # noqa: E501
+    def __init__(self, versions=None, next_marker=None):
         """ListFunctionVersionsResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._versions = None
         self._next_marker = None

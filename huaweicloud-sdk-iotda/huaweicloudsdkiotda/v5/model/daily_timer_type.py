@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DailyTimerType(object):
+
+
+
+class DailyTimerType:
 
 
     """
@@ -29,8 +32,10 @@ class DailyTimerType(object):
         'days_of_week': 'days_of_week'
     }
 
-    def __init__(self, time=None, days_of_week=None):  # noqa: E501
+    def __init__(self, time=None, days_of_week=None):
         """DailyTimerType - a model defined in huaweicloud sdk"""
+        
+        
 
         self._time = None
         self._days_of_week = None

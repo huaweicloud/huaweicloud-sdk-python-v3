@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowDeptAndChildDeptRequest(object):
+
+
+
+class ShowDeptAndChildDeptRequest:
 
 
     """
@@ -31,8 +34,10 @@ class ShowDeptAndChildDeptRequest(object):
         'dept_code': 'dept_code'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, dept_code=None):  # noqa: E501
+    def __init__(self, x_request_id=None, accept_language=None, dept_code=None):
         """ShowDeptAndChildDeptRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_request_id = None
         self._accept_language = None

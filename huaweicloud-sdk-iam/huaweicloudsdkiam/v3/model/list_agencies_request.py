@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListAgenciesRequest(object):
+
+
+
+class ListAgenciesRequest:
 
 
     """
@@ -29,8 +32,10 @@ class ListAgenciesRequest(object):
         'name': 'name'
     }
 
-    def __init__(self, trust_domain_id=None, name=None):  # noqa: E501
+    def __init__(self, trust_domain_id=None, name=None):
         """ListAgenciesRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._trust_domain_id = None
         self._name = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListPublishedTemplatesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListPublishedTemplatesResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class ListPublishedTemplatesResponse(object):
         'templates': 'templates'
     }
 
-    def __init__(self, count=None, templates=None):  # noqa: E501
+    def __init__(self, count=None, templates=None):
         """ListPublishedTemplatesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._count = None
         self._templates = None

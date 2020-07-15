@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PriorityBody(object):
+
+
+
+class PriorityBody:
 
 
     """
@@ -27,8 +30,10 @@ class PriorityBody(object):
         'slave_priority_weight': 'slave_priority_weight'
     }
 
-    def __init__(self, slave_priority_weight=None):  # noqa: E501
+    def __init__(self, slave_priority_weight=None):
         """PriorityBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._slave_priority_weight = None
         self.discriminator = None

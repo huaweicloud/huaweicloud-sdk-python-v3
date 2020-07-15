@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateUserOption(object):
+
+
+
+class CreateUserOption:
 
 
     """
@@ -47,8 +50,10 @@ class CreateUserOption(object):
         'description': 'description'
     }
 
-    def __init__(self, name=None, domain_id=None, password=None, email=None, areacode=None, phone=None, enabled=None, pwd_status=None, xuser_type=None, xuser_id=None, description=None):  # noqa: E501
+    def __init__(self, name=None, domain_id=None, password=None, email=None, areacode=None, phone=None, enabled=None, pwd_status=None, xuser_type=None, xuser_id=None, description=None):
         """CreateUserOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._domain_id = None

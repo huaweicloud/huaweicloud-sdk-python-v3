@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SearchCorpDirRequest(object):
+
+
+
+class SearchCorpDirRequest:
 
 
     """
@@ -41,8 +44,10 @@ class SearchCorpDirRequest(object):
         'search_scope': 'searchScope'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, offset=0, limit=100, search_key=None, dept_code=None, query_sub_dept=True, search_scope='ALL'):  # noqa: E501
+    def __init__(self, x_request_id=None, accept_language=None, offset=0, limit=100, search_key=None, dept_code=None, query_sub_dept=True, search_scope='ALL'):
         """SearchCorpDirRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_request_id = None
         self._accept_language = None

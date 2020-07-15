@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ModAdminDTO(object):
+
+
+
+class ModAdminDTO:
 
 
     """
@@ -33,8 +36,10 @@ class ModAdminDTO(object):
         'country': 'country'
     }
 
-    def __init__(self, name=None, email=None, phone=None, country='chinaPR'):  # noqa: E501
+    def __init__(self, name=None, email=None, phone=None, country='chinaPR'):
         """ModAdminDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._email = None

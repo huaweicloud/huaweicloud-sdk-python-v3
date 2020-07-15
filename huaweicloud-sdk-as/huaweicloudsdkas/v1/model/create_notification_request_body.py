@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateNotificationRequestBody(object):
+
+
+
+class CreateNotificationRequestBody:
 
 
     """
@@ -29,8 +32,10 @@ class CreateNotificationRequestBody(object):
         'topic_scene': 'topic_scene'
     }
 
-    def __init__(self, topic_urn=None, topic_scene=None):  # noqa: E501
+    def __init__(self, topic_urn=None, topic_scene=None):
         """CreateNotificationRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._topic_urn = None
         self._topic_scene = None

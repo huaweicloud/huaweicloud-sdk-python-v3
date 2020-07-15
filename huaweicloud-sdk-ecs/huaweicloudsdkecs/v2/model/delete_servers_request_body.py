@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteServersRequestBody(object):
+
+
+
+class DeleteServersRequestBody:
 
 
     """
@@ -31,8 +34,10 @@ class DeleteServersRequestBody(object):
         'servers': 'servers'
     }
 
-    def __init__(self, delete_publicip=None, delete_volume=None, servers=None):  # noqa: E501
+    def __init__(self, delete_publicip=None, delete_volume=None, servers=None):
         """DeleteServersRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._delete_publicip = None
         self._delete_volume = None

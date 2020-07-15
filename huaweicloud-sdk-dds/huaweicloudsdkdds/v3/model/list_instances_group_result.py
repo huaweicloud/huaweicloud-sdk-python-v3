@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListInstancesGroupResult(object):
+
+
+
+class ListInstancesGroupResult:
 
 
     """
@@ -37,8 +40,10 @@ class ListInstancesGroupResult(object):
         'nodes': 'nodes'
     }
 
-    def __init__(self, type=None, id=None, name=None, status=None, volume=None, nodes=None):  # noqa: E501
+    def __init__(self, type=None, id=None, name=None, status=None, volume=None, nodes=None):
         """ListInstancesGroupResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._type = None
         self._id = None

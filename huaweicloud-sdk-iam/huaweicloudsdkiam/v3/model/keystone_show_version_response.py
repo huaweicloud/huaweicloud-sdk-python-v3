@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneShowVersionResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class KeystoneShowVersionResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class KeystoneShowVersionResponse(object):
         'version': 'version'
     }
 
-    def __init__(self, version=None):  # noqa: E501
+    def __init__(self, version=None):
         """KeystoneShowVersionResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._version = None
         self.discriminator = None

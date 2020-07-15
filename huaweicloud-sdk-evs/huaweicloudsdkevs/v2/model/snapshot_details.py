@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SnapshotDetails(object):
+
+
+
+class SnapshotDetails:
 
 
     """
@@ -47,8 +50,10 @@ class SnapshotDetails(object):
         'os_extended_snapshot_attributesprogress': 'os-extended-snapshot-attributes:progress'
     }
 
-    def __init__(self, id=None, status=None, name=None, description=None, created_at=None, updated_at=None, metadata=None, volume_id=None, size=None, os_extended_snapshot_attributesproject_id=None, os_extended_snapshot_attributesprogress=None):  # noqa: E501
+    def __init__(self, id=None, status=None, name=None, description=None, created_at=None, updated_at=None, metadata=None, volume_id=None, size=None, os_extended_snapshot_attributesproject_id=None, os_extended_snapshot_attributesprogress=None):
         """SnapshotDetails - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._status = None

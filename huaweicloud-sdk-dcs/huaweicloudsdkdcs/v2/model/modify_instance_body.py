@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ModifyInstanceBody(object):
+
+
+
+class ModifyInstanceBody:
 
 
     """
@@ -37,8 +40,10 @@ class ModifyInstanceBody(object):
         'instance_backup_policy': 'instance_backup_policy'
     }
 
-    def __init__(self, name=None, description=None, maintain_begin=None, maintain_end=None, security_group_id=None, instance_backup_policy=None):  # noqa: E501
+    def __init__(self, name=None, description=None, maintain_begin=None, maintain_end=None, security_group_id=None, instance_backup_policy=None):
         """ModifyInstanceBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._description = None

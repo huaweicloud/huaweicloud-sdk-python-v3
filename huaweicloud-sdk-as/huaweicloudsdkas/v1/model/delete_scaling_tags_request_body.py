@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteScalingTagsRequestBody(object):
+
+
+
+class DeleteScalingTagsRequestBody:
 
 
     """
@@ -29,8 +32,10 @@ class DeleteScalingTagsRequestBody(object):
         'action': 'action'
     }
 
-    def __init__(self, tags=None, action=None):  # noqa: E501
+    def __init__(self, tags=None, action='delete'):
         """DeleteScalingTagsRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._tags = None
         self._action = None
@@ -67,7 +72,7 @@ class DeleteScalingTagsRequestBody(object):
     def action(self):
         """Gets the action of this DeleteScalingTagsRequestBody.
 
-        操作标识（区分大小写）：delete：删除。create：创建。若已经存在相同的key值则会覆盖对应的value值。
+        操作标识（区分大小写）：delete：删除。
 
         :return: The action of this DeleteScalingTagsRequestBody.
         :rtype: str
@@ -78,7 +83,7 @@ class DeleteScalingTagsRequestBody(object):
     def action(self, action):
         """Sets the action of this DeleteScalingTagsRequestBody.
 
-        操作标识（区分大小写）：delete：删除。create：创建。若已经存在相同的key值则会覆盖对应的value值。
+        操作标识（区分大小写）：delete：删除。
 
         :param action: The action of this DeleteScalingTagsRequestBody.
         :type: str

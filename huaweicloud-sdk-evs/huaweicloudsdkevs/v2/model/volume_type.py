@@ -6,7 +6,10 @@ import re
 import six
 
 
-class VolumeType(object):
+
+
+
+class VolumeType:
 
 
     """
@@ -37,8 +40,10 @@ class VolumeType(object):
         'is_public': 'is_public'
     }
 
-    def __init__(self, id=None, name=None, extra_specs=None, description=None, qos_specs_id=None, is_public=None):  # noqa: E501
+    def __init__(self, id=None, name=None, extra_specs=None, description=None, qos_specs_id=None, is_public=None):
         """VolumeType - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._name = None

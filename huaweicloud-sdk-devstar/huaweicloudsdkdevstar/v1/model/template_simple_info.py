@@ -6,7 +6,10 @@ import re
 import six
 
 
-class TemplateSimpleInfo(object):
+
+
+
+class TemplateSimpleInfo:
 
 
     """
@@ -31,8 +34,10 @@ class TemplateSimpleInfo(object):
         'description': 'description'
     }
 
-    def __init__(self, id=None, title=None, description=None):  # noqa: E501
+    def __init__(self, id=None, title=None, description=None):
         """TemplateSimpleInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._title = None

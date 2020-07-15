@@ -6,7 +6,10 @@ import re
 import six
 
 
-class FuncCode(object):
+
+
+
+class FuncCode:
 
 
     """
@@ -29,8 +32,10 @@ class FuncCode(object):
         'link': 'link'
     }
 
-    def __init__(self, file=None, link=None):  # noqa: E501
+    def __init__(self, file=None, link=None):
         """FuncCode - a model defined in huaweicloud sdk"""
+        
+        
 
         self._file = None
         self._link = None

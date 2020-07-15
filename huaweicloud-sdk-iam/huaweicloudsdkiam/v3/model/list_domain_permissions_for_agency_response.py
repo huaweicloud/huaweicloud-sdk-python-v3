@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListDomainPermissionsForAgencyResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListDomainPermissionsForAgencyResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ListDomainPermissionsForAgencyResponse(object):
         'roles': 'roles'
     }
 
-    def __init__(self, roles=None):  # noqa: E501
+    def __init__(self, roles=None):
         """ListDomainPermissionsForAgencyResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._roles = None
         self.discriminator = None

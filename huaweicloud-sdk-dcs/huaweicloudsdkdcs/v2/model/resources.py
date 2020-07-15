@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Resources(object):
+
+
+
+class Resources:
 
 
     """
@@ -37,8 +40,10 @@ class Resources(object):
         'type': 'type'
     }
 
-    def __init__(self, unit=None, min=None, max=None, quota=None, used=None, type=None):  # noqa: E501
+    def __init__(self, unit=None, min=None, max=None, quota=None, used=None, type=None):
         """Resources - a model defined in huaweicloud sdk"""
+        
+        
 
         self._unit = None
         self._min = None

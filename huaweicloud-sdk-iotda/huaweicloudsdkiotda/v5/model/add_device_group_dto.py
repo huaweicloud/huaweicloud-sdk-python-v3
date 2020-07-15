@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AddDeviceGroupDTO(object):
+
+
+
+class AddDeviceGroupDTO:
 
 
     """
@@ -33,8 +36,10 @@ class AddDeviceGroupDTO(object):
         'app_id': 'app_id'
     }
 
-    def __init__(self, name=None, description=None, super_group_id=None, app_id=None):  # noqa: E501
+    def __init__(self, name=None, description=None, super_group_id=None, app_id=None):
         """AddDeviceGroupDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._description = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class PrePaidServerEip(object):
+
+
+
+class PrePaidServerEip:
 
 
     """
@@ -31,8 +34,10 @@ class PrePaidServerEip(object):
         'extendparam': 'extendparam'
     }
 
-    def __init__(self, iptype=None, bandwidth=None, extendparam=None):  # noqa: E501
+    def __init__(self, iptype=None, bandwidth=None, extendparam=None):
         """PrePaidServerEip - a model defined in huaweicloud sdk"""
+        
+        
 
         self._iptype = None
         self._bandwidth = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteLifecycleHookRequest(object):
+
+
+
+class DeleteLifecycleHookRequest:
 
 
     """
@@ -29,8 +32,10 @@ class DeleteLifecycleHookRequest(object):
         'lifecycle_hook_name': 'lifecycle_hook_name'
     }
 
-    def __init__(self, scaling_group_id=None, lifecycle_hook_name=None):  # noqa: E501
+    def __init__(self, scaling_group_id=None, lifecycle_hook_name=None):
         """DeleteLifecycleHookRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._scaling_group_id = None
         self._lifecycle_hook_name = None

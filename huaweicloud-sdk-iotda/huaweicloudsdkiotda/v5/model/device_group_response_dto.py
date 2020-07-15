@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeviceGroupResponseDTO(object):
+
+
+
+class DeviceGroupResponseDTO:
 
 
     """
@@ -33,8 +36,10 @@ class DeviceGroupResponseDTO(object):
         'super_group_id': 'super_group_id'
     }
 
-    def __init__(self, group_id=None, name=None, description=None, super_group_id=None):  # noqa: E501
+    def __init__(self, group_id=None, name=None, description=None, super_group_id=None):
         """DeviceGroupResponseDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._group_id = None
         self._name = None

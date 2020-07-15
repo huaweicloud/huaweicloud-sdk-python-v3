@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AgencyAuthIdentity(object):
+
+
+
+class AgencyAuthIdentity:
 
 
     """
@@ -31,8 +34,10 @@ class AgencyAuthIdentity(object):
         'policy': 'policy'
     }
 
-    def __init__(self, methods=None, assume_role=None, policy=None):  # noqa: E501
+    def __init__(self, methods=None, assume_role=None, policy=None):
         """AgencyAuthIdentity - a model defined in huaweicloud sdk"""
+        
+        
 
         self._methods = None
         self._assume_role = None

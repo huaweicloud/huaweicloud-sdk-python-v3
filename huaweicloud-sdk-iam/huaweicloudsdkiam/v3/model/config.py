@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Config(object):
+
+
+
+class Config:
 
 
     """
@@ -27,8 +30,10 @@ class Config(object):
         'security_compliance': 'security_compliance'
     }
 
-    def __init__(self, security_compliance=None):  # noqa: E501
+    def __init__(self, security_compliance=None):
         """Config - a model defined in huaweicloud sdk"""
+        
+        
 
         self._security_compliance = None
         self.discriminator = None

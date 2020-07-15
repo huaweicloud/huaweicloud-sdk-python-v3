@@ -11,6 +11,7 @@ import six
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class DdsAsyncClient(Client):
@@ -55,15 +56,10 @@ class DdsAsyncClient(Client):
         扩容指定集群实例的节点数量。
 
         :param AddShardingNodeRequest request
-        :return: tuple(AddShardingNodeResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: AddShardingNodeResponse
         """
 
         all_params = ['instance_id', 'add_sharding_node_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -79,24 +75,25 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/instances/{instance_id}/enlarge', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/instances/{instance_id}/enlarge',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='AddShardingNodeResponse',
@@ -110,7 +107,7 @@ class DdsAsyncClient(Client):
         批量添加指定实例的标签。
 
         :param BatchCreateInstanceTagsRequest request
-        :return: None
+        :return: BatchCreateInstanceTagsResponse
         """
         return self.batch_create_instance_tags_with_http_info(request)
 
@@ -120,15 +117,10 @@ class DdsAsyncClient(Client):
         批量添加指定实例的标签。
 
         :param BatchCreateInstanceTagsRequest request
-        :return: None
+        :return: BatchCreateInstanceTagsResponse
         """
 
         all_params = ['instance_id', 'batch_create_instance_tags_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -144,25 +136,28 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/instances/{instance_id}/tags/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/instances/{instance_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='BatchCreateInstanceTagsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -173,7 +168,7 @@ class DdsAsyncClient(Client):
         批量删除指定实例的标签。
 
         :param BatchDeleteInstanceTagsRequest request
-        :return: None
+        :return: BatchDeleteInstanceTagsResponse
         """
         return self.batch_delete_instance_tags_with_http_info(request)
 
@@ -183,15 +178,10 @@ class DdsAsyncClient(Client):
         批量删除指定实例的标签。
 
         :param BatchDeleteInstanceTagsRequest request
-        :return: None
+        :return: BatchDeleteInstanceTagsResponse
         """
 
         all_params = ['instance_id', 'batch_delete_instance_tags_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -207,25 +197,28 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/instances/{instance_id}/tags/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/instances/{instance_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='BatchDeleteInstanceTagsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -246,15 +239,10 @@ class DdsAsyncClient(Client):
         创建文档数据库实例，包括集群实例、副本集实例、以及单节点实例。
 
         :param CreateInstanceRequest request
-        :return: tuple(CreateInstanceResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateInstanceResponse
         """
 
         all_params = ['create_instance_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -268,24 +256,25 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/instances', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/instances',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateInstanceResponse',
@@ -309,15 +298,10 @@ class DdsAsyncClient(Client):
         创建数据库实例的手动备份。
 
         :param CreateManualBackupRequest request
-        :return: tuple(CreateManualBackupResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateManualBackupResponse
         """
 
         all_params = ['create_manual_backup_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -331,24 +315,25 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/backups', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/backups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateManualBackupResponse',
@@ -372,15 +357,10 @@ class DdsAsyncClient(Client):
         删除数据库实例。
 
         :param DeleteInstanceRequest request
-        :return: tuple(DeleteInstanceResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: DeleteInstanceResponse
         """
 
         all_params = ['instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -396,20 +376,21 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/instances/{instance_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/instances/{instance_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='DeleteInstanceResponse',
@@ -433,15 +414,10 @@ class DdsAsyncClient(Client):
         删除数据库实例的手动备份。
 
         :param DeleteManualBackupRequest request
-        :return: tuple(DeleteManualBackupResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: DeleteManualBackupResponse
         """
 
         all_params = ['backup_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -457,20 +433,21 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/backups/{backup_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/backups/{backup_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='DeleteManualBackupResponse',
@@ -494,15 +471,10 @@ class DdsAsyncClient(Client):
         根据指定条件查询备份列表。
 
         :param ListBackupsRequest request
-        :return: tuple(ListBackupsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListBackupsResponse
         """
 
         all_params = ['instance_id', 'backup_id', 'backup_type', 'offset', 'limit', 'begin_time', 'end_time', 'mode']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -532,20 +504,21 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/backups', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/backups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListBackupsResponse',
@@ -569,15 +542,10 @@ class DdsAsyncClient(Client):
         查询指定实例类型的数据库版本信息。
 
         :param ListDatastoreVersionsRequest request
-        :return: tuple(ListDatastoreVersionsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListDatastoreVersionsResponse
         """
 
         all_params = ['datastore_name']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -593,20 +561,21 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/datastores/{datastore_name}/versions', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/datastores/{datastore_name}/versions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListDatastoreVersionsResponse',
@@ -630,15 +599,10 @@ class DdsAsyncClient(Client):
         查询指定条件下的所有实例规格信息。
 
         :param ListFlavorsRequest request
-        :return: tuple(ListFlavorsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListFlavorsResponse
         """
 
         all_params = ['region', 'engine_name']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -656,20 +620,21 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/flavors', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/flavors',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListFlavorsResponse',
@@ -693,15 +658,10 @@ class DdsAsyncClient(Client):
         查询指定实例的标签信息。
 
         :param ListInstanceTagsRequest request
-        :return: tuple(ListInstanceTagsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListInstanceTagsResponse
         """
 
         all_params = ['instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -717,20 +677,21 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/instances/{instance_id}/tags', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/instances/{instance_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListInstanceTagsResponse',
@@ -754,15 +715,10 @@ class DdsAsyncClient(Client):
         根据指定条件查询实例列表。
 
         :param ListInstancesRequest request
-        :return: tuple(ListInstancesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListInstancesResponse
         """
 
         all_params = ['id', 'name', 'mode', 'datastore_type', 'vpc_id', 'subnet_id', 'offset', 'limit']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -792,20 +748,21 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/instances', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/instances',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListInstancesResponse',
@@ -829,15 +786,10 @@ class DdsAsyncClient(Client):
         根据标签查询指定的数据库实例。
 
         :param ListInstancesByTagsRequest request
-        :return: tuple(ListInstancesByTagsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListInstancesByTagsResponse
         """
 
         all_params = ['list_instances_by_tags_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -851,24 +803,25 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/instances/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/instances/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListInstancesByTagsResponse',
@@ -892,15 +845,10 @@ class DdsAsyncClient(Client):
         查询指定project ID下实例的所有标签集合。
 
         :param ListProjectTagsRequest request
-        :return: tuple(ListProjectTagsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListProjectTagsResponse
         """
 
         all_params = []
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -914,20 +862,21 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/tags', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListProjectTagsResponse',
@@ -951,15 +900,10 @@ class DdsAsyncClient(Client):
         变更实例的规格。
 
         :param ResizeInstanceRequest request
-        :return: tuple(ResizeInstanceResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ResizeInstanceResponse
         """
 
         all_params = ['instance_id', 'resize_instance_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -975,24 +919,25 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/instances/{instance_id}/resize', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/instances/{instance_id}/resize',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ResizeInstanceResponse',
@@ -1016,15 +961,10 @@ class DdsAsyncClient(Client):
         扩容实例相关的存储容量大小。
 
         :param ResizeInstanceVolumeRequest request
-        :return: tuple(ResizeInstanceVolumeResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ResizeInstanceVolumeResponse
         """
 
         all_params = ['instance_id', 'resize_instance_volume_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1040,24 +980,25 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/instances/{instance_id}/enlarge-volume', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/instances/{instance_id}/enlarge-volume',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ResizeInstanceVolumeResponse',
@@ -1081,15 +1022,10 @@ class DdsAsyncClient(Client):
         重启实例的数据库服务。
 
         :param RestartInstanceRequest request
-        :return: tuple(RestartInstanceResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: RestartInstanceResponse
         """
 
         all_params = ['instance_id', 'restart_instance_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1105,24 +1041,25 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/instances/{instance_id}/restart', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/instances/{instance_id}/restart',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='RestartInstanceResponse',
@@ -1136,7 +1073,7 @@ class DdsAsyncClient(Client):
         设置自动备份策略。 x-constraint: |- - 该接口支持DDS社区版和增强版。
 
         :param SetBackupPolicyRequest request
-        :return: None
+        :return: SetBackupPolicyResponse
         """
         return self.set_backup_policy_with_http_info(request)
 
@@ -1146,15 +1083,10 @@ class DdsAsyncClient(Client):
         设置自动备份策略。 x-constraint: |- - 该接口支持DDS社区版和增强版。
 
         :param SetBackupPolicyRequest request
-        :return: None
+        :return: SetBackupPolicyResponse
         """
 
         all_params = ['instance_id', 'set_backup_policy_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1170,25 +1102,28 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/instances/{instance_id}/backups/policy', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/instances/{instance_id}/backups/policy',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type=None,
+            response_type='SetBackupPolicyResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1209,15 +1144,10 @@ class DdsAsyncClient(Client):
         查询自动备份策略。
 
         :param ShowBackupPolicyRequest request
-        :return: tuple(ShowBackupPolicyResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowBackupPolicyResponse
         """
 
         all_params = ['instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1233,20 +1163,21 @@ class DdsAsyncClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v3/{project_id}/instances/{instance_id}/backups/policy', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v3/{project_id}/instances/{instance_id}/backups/policy',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowBackupPolicyResponse',
@@ -1276,6 +1207,15 @@ class DdsAsyncClient(Client):
         :return:
             Return the response directly.
         """
-        return self.do_http_request(method, resource_path, path_params,
-                                    query_params, header_params, body, post_params,
-                                    response_type, collection_formats, request_type, True)
+        return self.do_http_request(
+            method=method,
+            resource_path=resource_path,
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body,
+            post_params=post_params,
+            response_type=response_type,
+            collection_formats=collection_formats,
+            request_type=request_type,
+	    async_request=True)

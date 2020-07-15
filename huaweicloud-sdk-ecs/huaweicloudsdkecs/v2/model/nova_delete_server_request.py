@@ -6,7 +6,10 @@ import re
 import six
 
 
-class NovaDeleteServerRequest(object):
+
+
+
+class NovaDeleteServerRequest:
 
 
     """
@@ -27,8 +30,10 @@ class NovaDeleteServerRequest(object):
         'server_id': 'server_id'
     }
 
-    def __init__(self, server_id=None):  # noqa: E501
+    def __init__(self, server_id=None):
         """NovaDeleteServerRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._server_id = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class InstanceHangingInfos(object):
+
+
+
+class InstanceHangingInfos:
 
 
     """
@@ -39,8 +42,10 @@ class InstanceHangingInfos(object):
         'default_result': 'default_result'
     }
 
-    def __init__(self, lifecycle_hook_name=None, lifecycle_action_key=None, instance_id=None, scaling_group_id=None, lifecycle_hook_status=None, timeout=None, default_result=None):  # noqa: E501
+    def __init__(self, lifecycle_hook_name=None, lifecycle_action_key=None, instance_id=None, scaling_group_id=None, lifecycle_hook_status=None, timeout=None, default_result=None):
         """InstanceHangingInfos - a model defined in huaweicloud sdk"""
+        
+        
 
         self._lifecycle_hook_name = None
         self._lifecycle_action_key = None

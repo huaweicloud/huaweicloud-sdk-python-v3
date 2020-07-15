@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateProjectStatusRequest(object):
+
+
+
+class UpdateProjectStatusRequest:
 
 
     """
@@ -29,8 +32,10 @@ class UpdateProjectStatusRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, project_id=None, body=None):  # noqa: E501
+    def __init__(self, project_id=None, body=None):
         """UpdateProjectStatusRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._project_id = None
         self._body = None

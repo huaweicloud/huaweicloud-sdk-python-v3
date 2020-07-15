@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateTemporaryAccessKeyByTokenRequestBody(object):
+
+
+
+class CreateTemporaryAccessKeyByTokenRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class CreateTemporaryAccessKeyByTokenRequestBody(object):
         'auth': 'auth'
     }
 
-    def __init__(self, auth=None):  # noqa: E501
+    def __init__(self, auth=None):
         """CreateTemporaryAccessKeyByTokenRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._auth = None
         self.discriminator = None

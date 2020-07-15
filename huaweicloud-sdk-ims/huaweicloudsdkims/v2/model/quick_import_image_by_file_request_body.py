@@ -6,7 +6,10 @@ import re
 import six
 
 
-class QuickImportImageByFileRequestBody(object):
+
+
+
+class QuickImportImageByFileRequestBody:
 
 
     """
@@ -47,8 +50,10 @@ class QuickImportImageByFileRequestBody(object):
         'image_tags': 'image_tags'
     }
 
-    def __init__(self, name=None, description=None, os_version=None, image_url=None, min_disk=None, tags=None, type='ECS', enterprise_project_id='0', architecture='x86', os_type=None, image_tags=None):  # noqa: E501
+    def __init__(self, name=None, description=None, os_version=None, image_url=None, min_disk=None, tags=None, type='ECS', enterprise_project_id='0', architecture='x86', os_type=None, image_tags=None):
         """QuickImportImageByFileRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._description = None

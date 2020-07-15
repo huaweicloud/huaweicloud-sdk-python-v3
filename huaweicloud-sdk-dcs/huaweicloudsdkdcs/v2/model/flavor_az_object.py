@@ -6,7 +6,10 @@ import re
 import six
 
 
-class FlavorAzObject(object):
+
+
+
+class FlavorAzObject:
 
 
     """
@@ -29,8 +32,10 @@ class FlavorAzObject(object):
         'az_codes': 'az_codes'
     }
 
-    def __init__(self, capacity=None, az_codes=None):  # noqa: E501
+    def __init__(self, capacity=None, az_codes=None):
         """FlavorAzObject - a model defined in huaweicloud sdk"""
+        
+        
 
         self._capacity = None
         self._az_codes = None

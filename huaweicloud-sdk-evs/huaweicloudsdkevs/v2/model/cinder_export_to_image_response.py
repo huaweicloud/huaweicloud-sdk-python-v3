@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CinderExportToImageResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CinderExportToImageResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class CinderExportToImageResponse(object):
         'os_volume_upload_image': 'os-volume_upload_image'
     }
 
-    def __init__(self, os_volume_upload_image=None):  # noqa: E501
+    def __init__(self, os_volume_upload_image=None):
         """CinderExportToImageResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._os_volume_upload_image = None
         self.discriminator = None

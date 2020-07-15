@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListScalingActivityLogsResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListScalingActivityLogsResponse(SdkResponse):
 
 
     """
@@ -33,8 +36,10 @@ class ListScalingActivityLogsResponse(object):
         'scaling_activity_log': 'scaling_activity_log'
     }
 
-    def __init__(self, total_number=None, start_number=None, limit=None, scaling_activity_log=None):  # noqa: E501
+    def __init__(self, total_number=None, start_number=None, limit=None, scaling_activity_log=None):
         """ListScalingActivityLogsResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._total_number = None
         self._start_number = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateUserResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CreateUserResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class CreateUserResponse(object):
         'user': 'user'
     }
 
-    def __init__(self, user=None):  # noqa: E501
+    def __init__(self, user=None):
         """CreateUserResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._user = None
         self.discriminator = None

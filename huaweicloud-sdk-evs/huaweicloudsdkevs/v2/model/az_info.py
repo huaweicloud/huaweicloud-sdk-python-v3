@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AzInfo(object):
+
+
+
+class AzInfo:
 
 
     """
@@ -29,8 +32,10 @@ class AzInfo(object):
         'zone_state': 'zoneState'
     }
 
-    def __init__(self, zone_name=None, zone_state=None):  # noqa: E501
+    def __init__(self, zone_name=None, zone_state=None):
         """AzInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._zone_name = None
         self._zone_state = None

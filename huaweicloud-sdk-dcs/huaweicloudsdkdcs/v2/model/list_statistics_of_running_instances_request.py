@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListStatisticsOfRunningInstancesRequest(object):
+
+
+
+class ListStatisticsOfRunningInstancesRequest:
 
 
     """
@@ -25,8 +28,10 @@ class ListStatisticsOfRunningInstancesRequest(object):
     attribute_map = {
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self):
         """ListStatisticsOfRunningInstancesRequest - a model defined in huaweicloud sdk"""
+        
+        
         self.discriminator = None
 
     def to_dict(self):

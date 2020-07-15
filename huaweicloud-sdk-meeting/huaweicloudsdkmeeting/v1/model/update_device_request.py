@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateDeviceRequest(object):
+
+
+
+class UpdateDeviceRequest:
 
 
     """
@@ -33,8 +36,10 @@ class UpdateDeviceRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, sn=None, body=None):  # noqa: E501
+    def __init__(self, x_request_id=None, accept_language=None, sn=None, body=None):
         """UpdateDeviceRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_request_id = None
         self._accept_language = None

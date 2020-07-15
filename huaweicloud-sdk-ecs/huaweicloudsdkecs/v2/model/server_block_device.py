@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ServerBlockDevice(object):
+
+
+
+class ServerBlockDevice:
 
 
     """
@@ -41,8 +44,10 @@ class ServerBlockDevice(object):
         'bus': 'bus'
     }
 
-    def __init__(self, boot_index=None, pci_address=None, volume_id=None, device=None, server_id=None, id=None, size=None, bus=None):  # noqa: E501
+    def __init__(self, boot_index=None, pci_address=None, volume_id=None, device=None, server_id=None, id=None, size=None, bus=None):
         """ServerBlockDevice - a model defined in huaweicloud sdk"""
+        
+        
 
         self._boot_index = None
         self._pci_address = None

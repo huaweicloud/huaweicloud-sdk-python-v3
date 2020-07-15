@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Instances(object):
+
+
+
+class Instances:
 
 
     """
@@ -29,8 +32,10 @@ class Instances(object):
         'instance_name': 'instance_name'
     }
 
-    def __init__(self, instance_id=None, instance_name=None):  # noqa: E501
+    def __init__(self, instance_id=None, instance_name=None):
         """Instances - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._instance_name = None

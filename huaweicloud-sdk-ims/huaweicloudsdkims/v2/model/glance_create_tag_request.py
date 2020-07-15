@@ -6,7 +6,10 @@ import re
 import six
 
 
-class GlanceCreateTagRequest(object):
+
+
+
+class GlanceCreateTagRequest:
 
 
     """
@@ -29,8 +32,10 @@ class GlanceCreateTagRequest(object):
         'tag': 'tag'
     }
 
-    def __init__(self, image_id=None, tag=None):  # noqa: E501
+    def __init__(self, image_id=None, tag=None):
         """GlanceCreateTagRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._image_id = None
         self._tag = None

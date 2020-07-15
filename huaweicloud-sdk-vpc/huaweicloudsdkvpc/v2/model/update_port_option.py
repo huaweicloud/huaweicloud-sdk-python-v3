@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdatePortOption(object):
+
+
+
+class UpdatePortOption:
 
 
     """
@@ -33,8 +36,10 @@ class UpdatePortOption(object):
         'extra_dhcp_opts': 'extra_dhcp_opts'
     }
 
-    def __init__(self, name=None, security_groups=None, allowed_address_pairs=None, extra_dhcp_opts=None):  # noqa: E501
+    def __init__(self, name=None, security_groups=None, allowed_address_pairs=None, extra_dhcp_opts=None):
         """UpdatePortOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._security_groups = None

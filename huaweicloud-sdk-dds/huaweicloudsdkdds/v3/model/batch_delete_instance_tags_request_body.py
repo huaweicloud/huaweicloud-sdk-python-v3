@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BatchDeleteInstanceTagsRequestBody(object):
+
+
+
+class BatchDeleteInstanceTagsRequestBody:
 
 
     """
@@ -29,8 +32,10 @@ class BatchDeleteInstanceTagsRequestBody(object):
         'tags': 'tags'
     }
 
-    def __init__(self, action=None, tags=None):  # noqa: E501
+    def __init__(self, action='delete', tags=None):
         """BatchDeleteInstanceTagsRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._action = None
         self._tags = None

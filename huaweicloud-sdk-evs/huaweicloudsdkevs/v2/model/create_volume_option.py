@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateVolumeOption(object):
+
+
+
+class CreateVolumeOption:
 
 
     """
@@ -33,7 +36,7 @@ class CreateVolumeOption(object):
         'size': 'int',
         'snapshot_id': 'str',
         'volume_type': 'str',
-        'tags': 'list[Tag]'
+        'tags': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -53,8 +56,10 @@ class CreateVolumeOption(object):
         'tags': 'tags'
     }
 
-    def __init__(self, availability_zone=None, backup_id=None, count=None, description=None, enterprise_project_id=None, image_ref=None, metadata=None, multiattach=None, name=None, shareable=None, size=None, snapshot_id=None, volume_type=None, tags=None):  # noqa: E501
+    def __init__(self, availability_zone=None, backup_id=None, count=None, description=None, enterprise_project_id=None, image_ref=None, metadata=None, multiattach=None, name=None, shareable=None, size=None, snapshot_id=None, volume_type=None, tags=None):
         """CreateVolumeOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._availability_zone = None
         self._backup_id = None
@@ -392,7 +397,7 @@ class CreateVolumeOption(object):
         云硬盘标签信息。
 
         :return: The tags of this CreateVolumeOption.
-        :rtype: list[Tag]
+        :rtype: dict(str, str)
         """
         return self._tags
 
@@ -403,7 +408,7 @@ class CreateVolumeOption(object):
         云硬盘标签信息。
 
         :param tags: The tags of this CreateVolumeOption.
-        :type: list[Tag]
+        :type: dict(str, str)
         """
         self._tags = tags
 

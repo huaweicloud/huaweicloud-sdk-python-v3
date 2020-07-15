@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ScheduledPolicy(object):
+
+
+
+class ScheduledPolicy:
 
 
     """
@@ -35,8 +38,10 @@ class ScheduledPolicy(object):
         'end_time': 'end_time'
     }
 
-    def __init__(self, launch_time=None, recurrence_type=None, recurrence_value=None, start_time=None, end_time=None):  # noqa: E501
+    def __init__(self, launch_time=None, recurrence_type=None, recurrence_value=None, start_time=None, end_time=None):
         """ScheduledPolicy - a model defined in huaweicloud sdk"""
+        
+        
 
         self._launch_time = None
         self._recurrence_type = None

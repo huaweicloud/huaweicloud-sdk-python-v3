@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UserInfo(object):
+
+
+
+class UserInfo:
 
 
     """
@@ -51,8 +54,10 @@ class UserInfo(object):
         'name_en': 'nameEn'
     }
 
-    def __init__(self, user_id=None, uclogin_account=None, service_account=None, number_ha1=None, alias1=None, company_id=None, sp_id=None, company_domain=None, realm=None, user_type=None, admin_type=None, name=None, name_en=None):  # noqa: E501
+    def __init__(self, user_id=None, uclogin_account=None, service_account=None, number_ha1=None, alias1=None, company_id=None, sp_id=None, company_domain=None, realm=None, user_type=None, admin_type=None, name=None, name_en=None):
         """UserInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._user_id = None
         self._uclogin_account = None

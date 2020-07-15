@@ -6,7 +6,10 @@ import re
 import six
 
 
-class TokenAuth(object):
+
+
+
+class TokenAuth:
 
 
     """
@@ -27,8 +30,10 @@ class TokenAuth(object):
         'identity': 'identity'
     }
 
-    def __init__(self, identity=None):  # noqa: E501
+    def __init__(self, identity=None):
         """TokenAuth - a model defined in huaweicloud sdk"""
+        
+        
 
         self._identity = None
         self.discriminator = None

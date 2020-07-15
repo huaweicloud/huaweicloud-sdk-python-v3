@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListMemberJobRecordsRequest(object):
+
+
+
+class ListMemberJobRecordsRequest:
 
 
     """
@@ -35,8 +38,10 @@ class ListMemberJobRecordsRequest(object):
         'limit': 'limit'
     }
 
-    def __init__(self, job_id=None, exercise_id=None, member_id=None, offset=None, limit=None):  # noqa: E501
+    def __init__(self, job_id=None, exercise_id=None, member_id=None, offset=None, limit=None):
         """ListMemberJobRecordsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._job_id = None
         self._exercise_id = None

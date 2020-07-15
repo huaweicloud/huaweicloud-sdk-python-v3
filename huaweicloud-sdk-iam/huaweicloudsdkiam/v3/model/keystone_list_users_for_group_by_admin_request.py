@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneListUsersForGroupByAdminRequest(object):
+
+
+
+class KeystoneListUsersForGroupByAdminRequest:
 
 
     """
@@ -27,8 +30,10 @@ class KeystoneListUsersForGroupByAdminRequest(object):
         'group_id': 'group_id'
     }
 
-    def __init__(self, group_id=None):  # noqa: E501
+    def __init__(self, group_id=None):
         """KeystoneListUsersForGroupByAdminRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._group_id = None
         self.discriminator = None

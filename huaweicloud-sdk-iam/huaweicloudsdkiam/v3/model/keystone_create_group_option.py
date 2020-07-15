@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneCreateGroupOption(object):
+
+
+
+class KeystoneCreateGroupOption:
 
 
     """
@@ -31,8 +34,10 @@ class KeystoneCreateGroupOption(object):
         'name': 'name'
     }
 
-    def __init__(self, description=None, domain_id=None, name=None):  # noqa: E501
+    def __init__(self, description=None, domain_id=None, name=None):
         """KeystoneCreateGroupOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._description = None
         self._domain_id = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CinderExportToImageOption(object):
+
+
+
+class CinderExportToImageOption:
 
 
     """
@@ -35,8 +38,10 @@ class CinderExportToImageOption(object):
         'os_type': '__os_type'
     }
 
-    def __init__(self, container_format='bare', disk_format='vhd', force=None, image_name=None, os_type='linux'):  # noqa: E501
+    def __init__(self, container_format='bare', disk_format='vhd', force=None, image_name=None, os_type='linux'):
         """CinderExportToImageOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._container_format = None
         self._disk_format = None

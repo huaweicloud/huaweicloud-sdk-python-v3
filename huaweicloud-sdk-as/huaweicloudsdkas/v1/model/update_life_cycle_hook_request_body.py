@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateLifeCycleHookRequestBody(object):
+
+
+
+class UpdateLifeCycleHookRequestBody:
 
 
     """
@@ -35,8 +38,10 @@ class UpdateLifeCycleHookRequestBody(object):
         'notification_metadata': 'notification_metadata'
     }
 
-    def __init__(self, lifecycle_hook_type=None, default_result=None, default_timeout=None, notification_topic_urn=None, notification_metadata=None):  # noqa: E501
+    def __init__(self, lifecycle_hook_type=None, default_result=None, default_timeout=None, notification_topic_urn=None, notification_metadata=None):
         """UpdateLifeCycleHookRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._lifecycle_hook_type = None
         self._default_result = None

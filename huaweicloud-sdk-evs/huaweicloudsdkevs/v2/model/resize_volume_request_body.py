@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ResizeVolumeRequestBody(object):
+
+
+
+class ResizeVolumeRequestBody:
 
 
     """
@@ -29,8 +32,10 @@ class ResizeVolumeRequestBody(object):
         'os_extend': 'os-extend'
     }
 
-    def __init__(self, bss_param=None, os_extend=None):  # noqa: E501
+    def __init__(self, bss_param=None, os_extend=None):
         """ResizeVolumeRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._bss_param = None
         self._os_extend = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowPolicyAndInstanceQuotaRequest(object):
+
+
+
+class ShowPolicyAndInstanceQuotaRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ShowPolicyAndInstanceQuotaRequest(object):
         'scaling_group_id': 'scaling_group_id'
     }
 
-    def __init__(self, scaling_group_id=None):  # noqa: E501
+    def __init__(self, scaling_group_id=None):
         """ShowPolicyAndInstanceQuotaRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._scaling_group_id = None
         self.discriminator = None

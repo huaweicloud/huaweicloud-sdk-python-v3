@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListAlarmsResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListAlarmsResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class ListAlarmsResponse(object):
         'meta_data': 'meta_data'
     }
 
-    def __init__(self, metric_alarms=None, meta_data=None):  # noqa: E501
+    def __init__(self, metric_alarms=None, meta_data=None):
         """ListAlarmsResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._metric_alarms = None
         self._meta_data = None

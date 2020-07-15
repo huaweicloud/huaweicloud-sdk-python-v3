@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneAssociateGroupWithDomainPermissionRequest(object):
+
+
+
+class KeystoneAssociateGroupWithDomainPermissionRequest:
 
 
     """
@@ -29,8 +32,10 @@ class KeystoneAssociateGroupWithDomainPermissionRequest(object):
         'role_id': 'role_id'
     }
 
-    def __init__(self, group_id=None, role_id=None):  # noqa: E501
+    def __init__(self, group_id=None, role_id=None):
         """KeystoneAssociateGroupWithDomainPermissionRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._group_id = None
         self._role_id = None

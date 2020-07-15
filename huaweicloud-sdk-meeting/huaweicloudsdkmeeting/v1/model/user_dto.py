@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UserDTO(object):
+
+
+
+class UserDTO:
 
 
     """
@@ -59,8 +62,10 @@ class UserDTO(object):
         'type': 'type'
     }
 
-    def __init__(self, id=None, status_code=None, account=None, name=None, english_name=None, email=None, phone=None, dept_name=None, number=None, update_time=None, is_hard_terminal=None, vmr_id=None, signature=None, title=None, description=None, hide_phone=None, type=None):  # noqa: E501
+    def __init__(self, id=None, status_code=None, account=None, name=None, english_name=None, email=None, phone=None, dept_name=None, number=None, update_time=None, is_hard_terminal=None, vmr_id=None, signature=None, title=None, description=None, hide_phone=None, type=None):
         """UserDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._id = None
         self._status_code = None

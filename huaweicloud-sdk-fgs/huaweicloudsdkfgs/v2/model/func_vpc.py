@@ -6,7 +6,10 @@ import re
 import six
 
 
-class FuncVpc(object):
+
+
+
+class FuncVpc:
 
 
     """
@@ -37,8 +40,10 @@ class FuncVpc(object):
         'gateway': 'gateway'
     }
 
-    def __init__(self, vpc_name=None, vpc_id=None, subnet_name=None, subnet_id=None, cidr=None, gateway=None):  # noqa: E501
+    def __init__(self, vpc_name=None, vpc_id=None, subnet_name=None, subnet_id=None, cidr=None, gateway=None):
         """FuncVpc - a model defined in huaweicloud sdk"""
+        
+        
 
         self._vpc_name = None
         self._vpc_id = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListServerBlockDevicesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListServerBlockDevicesResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class ListServerBlockDevicesResponse(object):
         'volume_attachments': 'volumeAttachments'
     }
 
-    def __init__(self, attachable_quantity=None, volume_attachments=None):  # noqa: E501
+    def __init__(self, attachable_quantity=None, volume_attachments=None):
         """ListServerBlockDevicesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._attachable_quantity = None
         self._volume_attachments = None

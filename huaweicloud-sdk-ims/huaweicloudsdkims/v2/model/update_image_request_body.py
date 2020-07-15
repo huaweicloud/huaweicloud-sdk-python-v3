@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateImageRequestBody(object):
+
+
+
+class UpdateImageRequestBody:
 
 
     """
@@ -31,8 +34,10 @@ class UpdateImageRequestBody(object):
         'value': 'value'
     }
 
-    def __init__(self, op=None, path=None, value=None):  # noqa: E501
+    def __init__(self, op=None, path=None, value=None):
         """UpdateImageRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._op = None
         self._path = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class VersionLinks(object):
+
+
+
+class VersionLinks:
 
 
     """
@@ -29,8 +32,10 @@ class VersionLinks(object):
         'href': 'href'
     }
 
-    def __init__(self, rel=None, href=None):  # noqa: E501
+    def __init__(self, rel=None, href=None):
         """VersionLinks - a model defined in huaweicloud sdk"""
+        
+        
 
         self._rel = None
         self._href = None

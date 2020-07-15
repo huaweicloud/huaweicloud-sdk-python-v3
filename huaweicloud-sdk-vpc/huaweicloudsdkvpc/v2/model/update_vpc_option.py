@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateVpcOption(object):
+
+
+
+class UpdateVpcOption:
 
 
     """
@@ -33,8 +36,10 @@ class UpdateVpcOption(object):
         'routes': 'routes'
     }
 
-    def __init__(self, name=None, description=None, cidr=None, routes=None):  # noqa: E501
+    def __init__(self, name=None, description=None, cidr=None, routes=None):
         """UpdateVpcOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._description = None

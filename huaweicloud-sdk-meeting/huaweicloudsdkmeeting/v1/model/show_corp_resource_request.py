@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowCorpResourceRequest(object):
+
+
+
+class ShowCorpResourceRequest:
 
 
     """
@@ -29,8 +32,10 @@ class ShowCorpResourceRequest(object):
         'accept_language': 'Accept-Language'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None):  # noqa: E501
+    def __init__(self, x_request_id=None, accept_language=None):
         """ShowCorpResourceRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_request_id = None
         self._accept_language = None

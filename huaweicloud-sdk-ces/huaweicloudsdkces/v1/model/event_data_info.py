@@ -6,7 +6,10 @@ import re
 import six
 
 
-class EventDataInfo(object):
+
+
+
+class EventDataInfo:
 
 
     """
@@ -31,8 +34,10 @@ class EventDataInfo(object):
         'value': 'value'
     }
 
-    def __init__(self, type=None, timestamp=None, value=None):  # noqa: E501
+    def __init__(self, type=None, timestamp=None, value=None):
         """EventDataInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._type = None
         self._timestamp = None

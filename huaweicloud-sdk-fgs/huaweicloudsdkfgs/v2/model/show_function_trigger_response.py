@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowFunctionTriggerResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowFunctionTriggerResponse(SdkResponse):
 
 
     """
@@ -37,8 +40,10 @@ class ShowFunctionTriggerResponse(object):
         'created_time': 'created_time'
     }
 
-    def __init__(self, trigger_id=None, trigger_type_code=None, trigger_status=None, event_data=None, last_updated_time=None, created_time=None):  # noqa: E501
+    def __init__(self, trigger_id=None, trigger_type_code=None, trigger_status=None, event_data=None, last_updated_time=None, created_time=None):
         """ShowFunctionTriggerResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._trigger_id = None
         self._trigger_type_code = None

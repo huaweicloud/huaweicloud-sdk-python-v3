@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ActionDeviceCommand(object):
+
+
+
+class ActionDeviceCommand:
 
 
     """
@@ -29,8 +32,10 @@ class ActionDeviceCommand(object):
         'cmd': 'cmd'
     }
 
-    def __init__(self, device_id=None, cmd=None):  # noqa: E501
+    def __init__(self, device_id=None, cmd=None):
         """ActionDeviceCommand - a model defined in huaweicloud sdk"""
+        
+        
 
         self._device_id = None
         self._cmd = None

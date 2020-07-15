@@ -6,7 +6,10 @@ import re
 import six
 
 
-class NovaShowServerRequest(object):
+
+
+
+class NovaShowServerRequest:
 
 
     """
@@ -29,8 +32,10 @@ class NovaShowServerRequest(object):
         'open_stack_api_version': 'OpenStack-API-Version'
     }
 
-    def __init__(self, server_id=None, open_stack_api_version='compute 2.60'):  # noqa: E501
+    def __init__(self, server_id=None, open_stack_api_version='compute 2.60'):
         """NovaShowServerRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._server_id = None
         self._open_stack_api_version = None

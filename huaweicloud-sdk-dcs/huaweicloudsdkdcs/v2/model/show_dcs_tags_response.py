@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowDcsTagsResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowDcsTagsResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ShowDcsTagsResponse(object):
         'tags': 'tags'
     }
 
-    def __init__(self, tags=None):  # noqa: E501
+    def __init__(self, tags=None):
         """ShowDcsTagsResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._tags = None
         self.discriminator = None

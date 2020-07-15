@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RestartInstanceRequestBody(object):
+
+
+
+class RestartInstanceRequestBody:
 
 
     """
@@ -29,8 +32,10 @@ class RestartInstanceRequestBody(object):
         'target_id': 'target_id'
     }
 
-    def __init__(self, target_type=None, target_id=None):  # noqa: E501
+    def __init__(self, target_type=None, target_id=None):
         """RestartInstanceRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._target_type = None
         self._target_id = None

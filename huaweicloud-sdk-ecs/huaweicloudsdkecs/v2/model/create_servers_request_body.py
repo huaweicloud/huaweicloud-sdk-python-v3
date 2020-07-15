@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateServersRequestBody(object):
+
+
+
+class CreateServersRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class CreateServersRequestBody(object):
         'server': 'server'
     }
 
-    def __init__(self, server=None):  # noqa: E501
+    def __init__(self, server=None):
         """CreateServersRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._server = None
         self.discriminator = None

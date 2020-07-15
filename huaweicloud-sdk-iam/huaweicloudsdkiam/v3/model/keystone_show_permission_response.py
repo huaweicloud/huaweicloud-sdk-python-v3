@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneShowPermissionResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class KeystoneShowPermissionResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class KeystoneShowPermissionResponse(object):
         'role': 'role'
     }
 
-    def __init__(self, role=None):  # noqa: E501
+    def __init__(self, role=None):
         """KeystoneShowPermissionResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._role = None
         self.discriminator = None

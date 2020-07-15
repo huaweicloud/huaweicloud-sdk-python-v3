@@ -6,7 +6,10 @@ import re
 import six
 
 
-class NovaCreateServersRequestBody(object):
+
+
+
+class NovaCreateServersRequestBody:
 
 
     """
@@ -29,8 +32,10 @@ class NovaCreateServersRequestBody(object):
         'osscheduler_hints': 'os:scheduler_hints'
     }
 
-    def __init__(self, server=None, osscheduler_hints=None):  # noqa: E501
+    def __init__(self, server=None, osscheduler_hints=None):
         """NovaCreateServersRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._server = None
         self._osscheduler_hints = None

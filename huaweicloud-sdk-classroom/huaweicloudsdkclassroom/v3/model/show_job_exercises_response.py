@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowJobExercisesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowJobExercisesResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class ShowJobExercisesResponse(object):
         'total': 'total'
     }
 
-    def __init__(self, group_exercises=None, total=None):  # noqa: E501
+    def __init__(self, group_exercises=None, total=None):
         """ShowJobExercisesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._group_exercises = None
         self._total = None

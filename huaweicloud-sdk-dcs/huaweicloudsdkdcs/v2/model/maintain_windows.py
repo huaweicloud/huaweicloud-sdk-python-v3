@@ -6,7 +6,10 @@ import re
 import six
 
 
-class MaintainWindows(object):
+
+
+
+class MaintainWindows:
 
 
     """
@@ -33,8 +36,10 @@ class MaintainWindows(object):
         'end': 'end'
     }
 
-    def __init__(self, seq=None, default=None, begin=None, end=None):  # noqa: E501
+    def __init__(self, seq=None, default=None, begin=None, end=None):
         """MaintainWindows - a model defined in huaweicloud sdk"""
+        
+        
 
         self._seq = None
         self._default = None

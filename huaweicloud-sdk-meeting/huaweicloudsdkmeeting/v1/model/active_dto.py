@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ActiveDTO(object):
+
+
+
+class ActiveDTO:
 
 
     """
@@ -31,8 +34,10 @@ class ActiveDTO(object):
         'email_addr': 'emailAddr'
     }
 
-    def __init__(self, sms_number=None, country=None, email_addr=None):  # noqa: E501
+    def __init__(self, sms_number=None, country=None, email_addr=None):
         """ActiveDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._sms_number = None
         self._country = None

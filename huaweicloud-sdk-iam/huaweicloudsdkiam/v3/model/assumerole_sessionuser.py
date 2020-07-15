@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AssumeroleSessionuser(object):
+
+
+
+class AssumeroleSessionuser:
 
 
     """
@@ -27,8 +30,10 @@ class AssumeroleSessionuser(object):
         'name': 'name'
     }
 
-    def __init__(self, name=None):  # noqa: E501
+    def __init__(self, name=None):
         """AssumeroleSessionuser - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self.discriminator = None

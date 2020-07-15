@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateSubscriptionResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class UpdateSubscriptionResponse(SdkResponse):
 
 
     """
@@ -33,8 +36,10 @@ class UpdateSubscriptionResponse(object):
         'channel': 'channel'
     }
 
-    def __init__(self, subscription_id=None, subject=None, callbackurl=None, channel=None):  # noqa: E501
+    def __init__(self, subscription_id=None, subject=None, callbackurl=None, channel=None):
         """UpdateSubscriptionResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._subscription_id = None
         self._subject = None

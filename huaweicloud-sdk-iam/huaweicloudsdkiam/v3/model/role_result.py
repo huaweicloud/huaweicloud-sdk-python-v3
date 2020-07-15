@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RoleResult(object):
+
+
+
+class RoleResult:
 
 
     """
@@ -51,8 +54,10 @@ class RoleResult(object):
         'created_time': 'created_time'
     }
 
-    def __init__(self, domain_id=None, flag=None, description_cn=None, catalog=None, name=None, description=None, links=None, id=None, display_name=None, type=None, policy=None, updated_time=None, created_time=None):  # noqa: E501
+    def __init__(self, domain_id=None, flag=None, description_cn=None, catalog=None, name=None, description=None, links=None, id=None, display_name=None, type=None, policy=None, updated_time=None, created_time=None):
         """RoleResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._domain_id = None
         self._flag = None

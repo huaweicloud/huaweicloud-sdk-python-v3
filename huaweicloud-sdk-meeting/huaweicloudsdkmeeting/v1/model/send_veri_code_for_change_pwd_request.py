@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SendVeriCodeForChangePwdRequest(object):
+
+
+
+class SendVeriCodeForChangePwdRequest:
 
 
     """
@@ -31,8 +34,10 @@ class SendVeriCodeForChangePwdRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, body=None):  # noqa: E501
+    def __init__(self, x_request_id=None, accept_language=None, body=None):
         """SendVeriCodeForChangePwdRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_request_id = None
         self._accept_language = None

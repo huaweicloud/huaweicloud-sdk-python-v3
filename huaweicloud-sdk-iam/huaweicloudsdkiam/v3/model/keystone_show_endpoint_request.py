@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneShowEndpointRequest(object):
+
+
+
+class KeystoneShowEndpointRequest:
 
 
     """
@@ -27,8 +30,10 @@ class KeystoneShowEndpointRequest(object):
         'endpoint_id': 'endpoint_id'
     }
 
-    def __init__(self, endpoint_id=None):  # noqa: E501
+    def __init__(self, endpoint_id=None):
         """KeystoneShowEndpointRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._endpoint_id = None
         self.discriminator = None

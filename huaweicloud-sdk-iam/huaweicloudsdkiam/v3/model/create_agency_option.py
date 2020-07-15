@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateAgencyOption(object):
+
+
+
+class CreateAgencyOption:
 
 
     """
@@ -37,8 +40,10 @@ class CreateAgencyOption(object):
         'duration': 'duration'
     }
 
-    def __init__(self, name=None, domain_id=None, trust_domain_id=None, trust_domain_name=None, description=None, duration=None):  # noqa: E501
+    def __init__(self, name=None, domain_id=None, trust_domain_id=None, trust_domain_name=None, description=None, duration=None):
         """CreateAgencyOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._name = None
         self._domain_id = None

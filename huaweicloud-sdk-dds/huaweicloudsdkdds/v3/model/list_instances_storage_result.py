@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListInstancesStorageResult(object):
+
+
+
+class ListInstancesStorageResult:
 
 
     """
@@ -29,8 +32,10 @@ class ListInstancesStorageResult(object):
         'used': 'used'
     }
 
-    def __init__(self, size=None, used=None):  # noqa: E501
+    def __init__(self, size=None, used=None):
         """ListInstancesStorageResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._size = None
         self._used = None

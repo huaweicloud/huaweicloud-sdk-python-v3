@@ -65,7 +65,7 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
     config = HttpConfig.get_default_config()
     ```
 
-    2.2 Proxy
+    2.2 Proxy(Optional)
 
     ```python
     # Use Proxy if needed
@@ -76,14 +76,14 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
     config.proxy_password = 'password'
     ```
 
-    2.3 Connection
+    2.3 Connection(Optional)
 
     ```python
     # seconds to wait for the server to send data before giving up, as a float, or (connect timeout, read timeout)
     config.timeout = 3
     ```
 
-    2.4 SSL Certification
+    2.4 SSL Certification(Optional)
 
     ```python
     # Skip ssl certifaction checking while using https protocol if needed

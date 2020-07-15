@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteVpcResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class DeleteVpcResponse(SdkResponse):
 
 
     """
@@ -25,8 +28,10 @@ class DeleteVpcResponse(object):
     attribute_map = {
     }
 
-    def __init__(self):  # noqa: E501
+    def __init__(self):
         """DeleteVpcResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
         self.discriminator = None
 
     def to_dict(self):

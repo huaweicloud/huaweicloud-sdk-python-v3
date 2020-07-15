@@ -6,7 +6,10 @@ import re
 import six
 
 
-class NovaCreateServersSchedulerHint(object):
+
+
+
+class NovaCreateServersSchedulerHint:
 
 
     """
@@ -35,8 +38,10 @@ class NovaCreateServersSchedulerHint(object):
         'build_near_host_ip': 'build_near_host_ip'
     }
 
-    def __init__(self, group=None, different_host=None, same_host=None, cidr=None, build_near_host_ip=None):  # noqa: E501
+    def __init__(self, group=None, different_host=None, same_host=None, cidr=None, build_near_host_ip=None):
         """NovaCreateServersSchedulerHint - a model defined in huaweicloud sdk"""
+        
+        
 
         self._group = None
         self._different_host = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateOrDeleteDeviceInGroupRequest(object):
+
+
+
+class CreateOrDeleteDeviceInGroupRequest:
 
 
     """
@@ -33,8 +36,10 @@ class CreateOrDeleteDeviceInGroupRequest(object):
         'device_id': 'device_id'
     }
 
-    def __init__(self, instance_id=None, group_id=None, action_id=None, device_id=None):  # noqa: E501
+    def __init__(self, instance_id=None, group_id=None, action_id=None, device_id=None):
         """CreateOrDeleteDeviceInGroupRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._group_id = None

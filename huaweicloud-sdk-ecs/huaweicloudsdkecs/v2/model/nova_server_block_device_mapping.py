@@ -6,7 +6,10 @@ import re
 import six
 
 
-class NovaServerBlockDeviceMapping(object):
+
+
+
+class NovaServerBlockDeviceMapping:
 
 
     """
@@ -43,8 +46,10 @@ class NovaServerBlockDeviceMapping(object):
         'volume_type': 'volume_type'
     }
 
-    def __init__(self, source_type=None, destination_type=None, guest_format=None, device_name=None, delete_on_termination=False, boot_index=None, uuid=None, volume_size=None, volume_type=None):  # noqa: E501
+    def __init__(self, source_type=None, destination_type=None, guest_format=None, device_name=None, delete_on_termination=False, boot_index=None, uuid=None, volume_size=None, volume_type=None):
         """NovaServerBlockDeviceMapping - a model defined in huaweicloud sdk"""
+        
+        
 
         self._source_type = None
         self._destination_type = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UnbindTagsDTO(object):
+
+
+
+class UnbindTagsDTO:
 
 
     """
@@ -31,8 +34,10 @@ class UnbindTagsDTO(object):
         'tag_keys': 'tag_keys'
     }
 
-    def __init__(self, resource_type=None, resource_id=None, tag_keys=None):  # noqa: E501
+    def __init__(self, resource_type=None, resource_id=None, tag_keys=None):
         """UnbindTagsDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._resource_type = None
         self._resource_id = None

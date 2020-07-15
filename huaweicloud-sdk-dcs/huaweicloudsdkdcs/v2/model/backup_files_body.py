@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BackupFilesBody(object):
+
+
+
+class BackupFilesBody:
 
 
     """
@@ -31,8 +34,10 @@ class BackupFilesBody(object):
         'files': 'files'
     }
 
-    def __init__(self, file_source=None, bucket_name=None, files=None):  # noqa: E501
+    def __init__(self, file_source=None, bucket_name=None, files=None):
         """BackupFilesBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._file_source = None
         self._bucket_name = None

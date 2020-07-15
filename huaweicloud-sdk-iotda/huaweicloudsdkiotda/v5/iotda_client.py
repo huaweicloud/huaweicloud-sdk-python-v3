@@ -11,6 +11,7 @@ import six
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
 class IoTDAClient(Client):
@@ -39,6 +40,245 @@ class IoTDAClient(Client):
 
 
 
+    def add_application(self, request):
+        """创建资源空间
+
+        资源空间对应的是物联网平台原有的应用，在物联网平台的含义与应用一致，只是变更了名称。应用服务器可以调用此接口创建资源空间。
+
+        :param AddApplicationRequest request
+        :return: AddApplicationResponse
+        """
+        return self.add_application_with_http_info(request)
+
+    def add_application_with_http_info(self, request):
+        """创建资源空间
+
+        资源空间对应的是物联网平台原有的应用，在物联网平台的含义与应用一致，只是变更了名称。应用服务器可以调用此接口创建资源空间。
+
+        :param AddApplicationRequest request
+        :return: AddApplicationResponse
+        """
+
+        all_params = ['add_application_request_body', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/apps',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddApplicationResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_application(self, request):
+        """删除资源空间
+
+        删除指定资源空间。删除资源空间属于高危操作，删除资源空间后，该空间下的产品、设备等资源将不可用，同时影响其他引用其下设备资源的服务，请谨慎操作！
+
+        :param DeleteApplicationRequest request
+        :return: DeleteApplicationResponse
+        """
+        return self.delete_application_with_http_info(request)
+
+    def delete_application_with_http_info(self, request):
+        """删除资源空间
+
+        删除指定资源空间。删除资源空间属于高危操作，删除资源空间后，该空间下的产品、设备等资源将不可用，同时影响其他引用其下设备资源的服务，请谨慎操作！
+
+        :param DeleteApplicationRequest request
+        :return: DeleteApplicationResponse
+        """
+
+        all_params = ['app_id', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/apps/{app_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteApplicationResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_application(self, request):
+        """查询资源空间
+
+        资源空间对应的是物联网平台原有的应用，在物联网平台的含义与应用一致，只是变更了名称。应用服务器可以调用此接口查询指定资源空间详情。
+
+        :param ShowApplicationRequest request
+        :return: ShowApplicationResponse
+        """
+        return self.show_application_with_http_info(request)
+
+    def show_application_with_http_info(self, request):
+        """查询资源空间
+
+        资源空间对应的是物联网平台原有的应用，在物联网平台的含义与应用一致，只是变更了名称。应用服务器可以调用此接口查询指定资源空间详情。
+
+        :param ShowApplicationRequest request
+        :return: ShowApplicationResponse
+        """
+
+        all_params = ['app_id', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/apps/{app_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowApplicationResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_applications(self, request):
+        """查询资源空间列表
+
+        资源空间对应的是物联网平台原有的应用，在物联网平台的含义与应用一致，只是变更了名称。应用服务器可以调用此接口查询资源空间列表。
+
+        :param ShowApplicationsRequest request
+        :return: ShowApplicationsResponse
+        """
+        return self.show_applications_with_http_info(request)
+
+    def show_applications_with_http_info(self, request):
+        """查询资源空间列表
+
+        资源空间对应的是物联网平台原有的应用，在物联网平台的含义与应用一致，只是变更了名称。应用服务器可以调用此接口查询资源空间列表。
+
+        :param ShowApplicationsRequest request
+        :return: ShowApplicationsResponse
+        """
+
+        all_params = ['instance_id', 'default_app']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'default_app' in local_var_params:
+            query_params.append(('default_app', local_var_params['default_app']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/apps',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowApplicationsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_batch_task(self, request):
         """创建批量任务
 
@@ -55,15 +295,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口为创建批量处理任务，对多个设备进行批量操作。当前支持批量软固件升级、批量创建设备、批量删除设备、批量冻结设备、批量解冻设备。
 
         :param CreateBatchTaskRequest request
-        :return: tuple(CreateBatchTaskResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateBatchTaskResponse
         """
 
         all_params = ['create_batch_task_request_body', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -79,24 +314,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/batchtasks', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/batchtasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateBatchTaskResponse',
@@ -120,15 +356,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口查询物联网平台中批量任务列表，每一个任务又包括具体的任务内容、任务状态、任务完成情况统计等。
 
         :param ListBatchTasksRequest request
-        :return: tuple(ListBatchTasksResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListBatchTasksResponse
         """
 
         all_params = ['task_type', 'instance_id', 'app_id', 'status', 'limit', 'marker', 'offset']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -156,20 +387,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/batchtasks', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/batchtasks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListBatchTasksResponse',
@@ -193,15 +425,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口查询物联网平台中指定批量任务的信息，包括任务内容、任务状态、任务完成情况统计以及子任务列表等。
 
         :param ShowBatchTaskRequest request
-        :return: tuple(ShowBatchTaskResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowBatchTaskResponse
         """
 
         all_params = ['task_id', 'instance_id', 'limit', 'marker', 'offset']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -225,20 +452,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/batchtasks/{task_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/batchtasks/{task_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowBatchTaskResponse',
@@ -263,15 +491,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口在物联网平台上传设备的CA证书
 
         :param AddCertificateRequest request
-        :return: tuple(AddCertificateResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: AddCertificateResponse
         """
 
         all_params = ['add_certificate_request_body', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -287,24 +510,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/certificates', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/certificates',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='AddCertificateResponse',
@@ -318,7 +542,7 @@ class IoTDAClient(Client):
         应用服务器可调用此接口在物联网平台验证设备的CA证书，目的是为了验证用户持有设备CA证书的私钥
 
         :param CheckCertificateRequest request
-        :return: str
+        :return: CheckCertificateResponse
         """
         return self.check_certificate_with_http_info(request)
 
@@ -328,15 +552,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口在物联网平台验证设备的CA证书，目的是为了验证用户持有设备CA证书的私钥
 
         :param CheckCertificateRequest request
-        :return: tuple(str, status_code(int), headers(HTTPHeaderDict))
+        :return: CheckCertificateResponse
         """
 
         all_params = ['certificate_id', 'action_id', 'check_certificate_request_body', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -356,27 +575,28 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/certificates/{certificate_id}/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/certificates/{certificate_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='str',
+            response_type='CheckCertificateResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -387,7 +607,7 @@ class IoTDAClient(Client):
         应用服务器可调用此接口在物联网平台删除设备的CA证书
 
         :param DeleteCertificateRequest request
-        :return: str
+        :return: DeleteCertificateResponse
         """
         return self.delete_certificate_with_http_info(request)
 
@@ -397,15 +617,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口在物联网平台删除设备的CA证书
 
         :param DeleteCertificateRequest request
-        :return: tuple(str, status_code(int), headers(HTTPHeaderDict))
+        :return: DeleteCertificateResponse
         """
 
         all_params = ['certificate_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -423,23 +638,24 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/certificates/{certificate_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/certificates/{certificate_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='str',
+            response_type='DeleteCertificateResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -460,15 +676,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口在物联网平台获取设备的CA证书列表
 
         :param ListCertificatesRequest request
-        :return: tuple(ListCertificatesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListCertificatesResponse
         """
 
         all_params = ['instance_id', 'app_id', 'limit', 'marker', 'offset']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -492,20 +703,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/certificates', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/certificates',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListCertificatesResponse',
@@ -530,15 +742,10 @@ class IoTDAClient(Client):
         设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发命令，以实现对设备的同步控制。平台负责将命令以同步方式发送给设备，并将设备执行命令结果同步返回, 如果设备没有响应，平台会返回给应用服务器超时。注意：此接口适用于MQTT设备同步命令下发，暂不支持NB-IoT设备异步命令下发。 
 
         :param CreateCommandRequest request
-        :return: tuple(CreateCommandResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateCommandResponse
         """
 
         all_params = ['device_id', 'create_command_request_body', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -556,24 +763,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices/{device_id}/commands', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices/{device_id}/commands',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateCommandResponse',
@@ -597,15 +805,10 @@ class IoTDAClient(Client):
         查询设备下发的同步命令，每个设备最多支持查询20条最新下发的命令。 
 
         :param ListCommandsRequest request
-        :return: tuple(ListCommandsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListCommandsResponse
         """
 
         all_params = ['device_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -621,20 +824,21 @@ class IoTDAClient(Client):
 
         header_params = {}
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices/{device_id}/commands', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices/{device_id}/commands',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListCommandsResponse',
@@ -659,15 +863,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口新建设备组，一个华为云账号下最多可有1,000个分组，包括父分组和子分组。设备组的最大层级关系不超过5层，即群组形成的关系树最大深度不超过5。
 
         :param AddDeviceGroupRequest request
-        :return: tuple(AddDeviceGroupResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: AddDeviceGroupResponse
         """
 
         all_params = ['instance_id', 'add_device_group_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -683,24 +882,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/device-group', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/device-group',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='AddDeviceGroupResponse',
@@ -714,7 +914,7 @@ class IoTDAClient(Client):
         应用服务器可调用此接口管理设备组中的设备。单个设备组内最多添加20,000个设备，一个设备最多可以被添加到10个设备组中。
 
         :param CreateOrDeleteDeviceInGroupRequest request
-        :return: str
+        :return: CreateOrDeleteDeviceInGroupResponse
         """
         return self.create_or_delete_device_in_group_with_http_info(request)
 
@@ -724,15 +924,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口管理设备组中的设备。单个设备组内最多添加20,000个设备，一个设备最多可以被添加到10个设备组中。
 
         :param CreateOrDeleteDeviceInGroupRequest request
-        :return: tuple(str, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateOrDeleteDeviceInGroupResponse
         """
 
         all_params = ['group_id', 'action_id', 'device_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -754,23 +949,24 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/device-group/{group_id}/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/device-group/{group_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='str',
+            response_type='CreateOrDeleteDeviceInGroupResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -781,7 +977,7 @@ class IoTDAClient(Client):
         应用服务器可调用此接口删除指定设备组，如果该设备组存在子设备组或者该设备组中存在设备，必须先删除子设备组并将设备从该设备组移除，才能删除该设备组。
 
         :param DeleteDeviceGroupRequest request
-        :return: str
+        :return: DeleteDeviceGroupResponse
         """
         return self.delete_device_group_with_http_info(request)
 
@@ -791,15 +987,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口删除指定设备组，如果该设备组存在子设备组或者该设备组中存在设备，必须先删除子设备组并将设备从该设备组移除，才能删除该设备组。
 
         :param DeleteDeviceGroupRequest request
-        :return: tuple(str, status_code(int), headers(HTTPHeaderDict))
+        :return: DeleteDeviceGroupResponse
         """
 
         all_params = ['group_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -817,23 +1008,24 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/device-group/{group_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/device-group/{group_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='str',
+            response_type='DeleteDeviceGroupResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -854,15 +1046,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口查询物联网平台中的设备组信息列表。
 
         :param ListDeviceGroupsRequest request
-        :return: tuple(ListDeviceGroupsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListDeviceGroupsResponse
         """
 
         all_params = ['instance_id', 'limit', 'marker', 'offset', 'last_modified_time', 'app_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -888,20 +1075,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/device-group', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/device-group',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListDeviceGroupsResponse',
@@ -925,15 +1113,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口查询指定设备组详情。
 
         :param ShowDeviceGroupRequest request
-        :return: tuple(ShowDeviceGroupResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowDeviceGroupResponse
         """
 
         all_params = ['group_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -951,20 +1134,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/device-group/{group_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/device-group/{group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowDeviceGroupResponse',
@@ -988,15 +1172,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口查询指定设备组下的设备列表。
 
         :param ShowDevicesInGroupRequest request
-        :return: tuple(ShowDevicesInGroupResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowDevicesInGroupResponse
         """
 
         all_params = ['group_id', 'instance_id', 'limit', 'marker', 'offset']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1020,20 +1199,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/device-group/{group_id}/devices', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/device-group/{group_id}/devices',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowDevicesInGroupResponse',
@@ -1057,15 +1237,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口修改物联网平台中指定设备组。
 
         :param UpdateDeviceGroupRequest request
-        :return: tuple(UpdateDeviceGroupResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateDeviceGroupResponse
         """
 
         all_params = ['group_id', 'update_device_group_request_body', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1083,24 +1258,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/device-group/{group_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/device-group/{group_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateDeviceGroupResponse',
@@ -1125,15 +1301,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口在物联网平台创建一个设备，仅在创建后设备才可以接入物联网平台。  - 该接口支持使用gateway_id参数指定在父设备下创建一个子设备，并且支持多级子设备，当前最大支持二级子设备。 - 该接口同时还支持对设备进行初始配置，接口会读取创建设备请求参数product_id对应的产品详情，如果产品的属性有定义默认值，则会将该属性默认值写入该设备的设备影子中。 - 用户还可以使用创建设备请求参数shadow字段为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以shadow字段中设置的属性值为准写入到设备影子中。
 
         :param AddDeviceRequest request
-        :return: tuple(AddDeviceResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: AddDeviceResponse
         """
 
         all_params = ['add_device_request_body', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1149,24 +1320,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='AddDeviceResponse',
@@ -1180,7 +1352,7 @@ class IoTDAClient(Client):
         应用服务器可调用此接口在物联网平台上删除指定设备。若设备下连接了非直连设备，则必须把设备下的非直连设备都删除后，才能删除该设备。
 
         :param DeleteDeviceRequest request
-        :return: str
+        :return: DeleteDeviceResponse
         """
         return self.delete_device_with_http_info(request)
 
@@ -1190,15 +1362,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口在物联网平台上删除指定设备。若设备下连接了非直连设备，则必须把设备下的非直连设备都删除后，才能删除该设备。
 
         :param DeleteDeviceRequest request
-        :return: tuple(str, status_code(int), headers(HTTPHeaderDict))
+        :return: DeleteDeviceResponse
         """
 
         all_params = ['device_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1216,23 +1383,24 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices/{device_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices/{device_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='str',
+            response_type='DeleteDeviceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1243,7 +1411,7 @@ class IoTDAClient(Client):
         应用服务器可调用此接口冻结设备，设备冻结后不能再连接上线，可以通过解冻设备接口解除设备冻结。注意，当前仅支持冻结与平台直连的设备。
 
         :param FreezeDeviceRequest request
-        :return: str
+        :return: FreezeDeviceResponse
         """
         return self.freeze_device_with_http_info(request)
 
@@ -1253,15 +1421,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口冻结设备，设备冻结后不能再连接上线，可以通过解冻设备接口解除设备冻结。注意，当前仅支持冻结与平台直连的设备。
 
         :param FreezeDeviceRequest request
-        :return: tuple(str, status_code(int), headers(HTTPHeaderDict))
+        :return: FreezeDeviceResponse
         """
 
         all_params = ['device_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1279,23 +1442,24 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices/{device_id}/freeze', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices/{device_id}/freeze',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='str',
+            response_type='FreezeDeviceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1316,15 +1480,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口查询物联网平台中的设备信息列表。
 
         :param ListDevicesRequest request
-        :return: tuple(ListDevicesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListDevicesResponse
         """
 
         all_params = ['instance_id', 'product_id', 'gateway_id', 'is_cascade_query', 'node_id', 'device_name', 'limit', 'marker', 'offset', 'start_time', 'end_time', 'app_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1362,20 +1521,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListDevicesResponse',
@@ -1399,15 +1559,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口重置设备密钥，携带指定密钥时平台将设备密钥重置为指定的密钥，不携带密钥时平台将自动生成一个新的随机密钥返回。
 
         :param ResetDeviceSecretRequest request
-        :return: tuple(ResetDeviceSecretResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ResetDeviceSecretResponse
         """
 
         all_params = ['device_id', 'action_id', 'reset_device_secret_request_body', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1427,24 +1582,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices/{device_id}/action', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices/{device_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ResetDeviceSecretResponse',
@@ -1468,15 +1624,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口查询物联网平台中指定设备的详细信息。
 
         :param ShowDeviceRequest request
-        :return: tuple(ShowDeviceResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowDeviceResponse
         """
 
         all_params = ['device_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1494,20 +1645,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices/{device_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices/{device_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowDeviceResponse',
@@ -1521,7 +1673,7 @@ class IoTDAClient(Client):
         应用服务器可调用此接口解冻设备，解除冻结后，设备可以连接上线。
 
         :param UnfreezeDeviceRequest request
-        :return: str
+        :return: UnfreezeDeviceResponse
         """
         return self.unfreeze_device_with_http_info(request)
 
@@ -1531,15 +1683,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口解冻设备，解除冻结后，设备可以连接上线。
 
         :param UnfreezeDeviceRequest request
-        :return: tuple(str, status_code(int), headers(HTTPHeaderDict))
+        :return: UnfreezeDeviceResponse
         """
 
         all_params = ['device_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1557,23 +1704,24 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices/{device_id}/unfreeze', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices/{device_id}/unfreeze',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='str',
+            response_type='UnfreezeDeviceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1594,15 +1742,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口修改物联网平台中指定设备的基本信息。
 
         :param UpdateDeviceRequest request
-        :return: tuple(UpdateDeviceResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateDeviceResponse
         """
 
         all_params = ['device_id', 'update_device_request_body', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1620,24 +1763,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices/{device_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices/{device_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateDeviceResponse',
@@ -1662,15 +1806,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口查询指定设备的设备影子信息，包括对设备的期望属性信息（desired区）和设备最新上报的属性信息（reported区）。  设备影子介绍： 设备影子是一个用于存储和检索设备当前状态信息的JSON文档。 - 每个设备有且只有一个设备影子，由设备ID唯一标识 - 设备影子仅保存最近一次设备的上报数据和预期数据 - 无论该设备是否在线，都可以通过该影子获取和设置设备的属性 - 设备上线或者设备上报属性时，如果desired区和reported区存在差异，则将差异部分下发给设备，配置的预期属性需在产品模型中定义且method具有可写属性“W”才可下发 
 
         :param ShowDeviceShadowRequest request
-        :return: tuple(ShowDeviceShadowResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowDeviceShadowResponse
         """
 
         all_params = ['device_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1688,20 +1827,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices/{device_id}/shadow', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices/{device_id}/shadow',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowDeviceShadowResponse',
@@ -1725,15 +1865,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口配置设备影子的预期属性（desired区），当设备上线或者设备上报属性时把属性下发给设备。  设备影子介绍： 设备影子是一个用于存储和检索设备当前状态信息的JSON文档。 - 每个设备有且只有一个设备影子，由设备ID唯一标识 - 设备影子仅保存最近一次设备的上报数据和预期数据 - 无论该设备是否在线，都可以通过该影子获取和设置设备的属性 - 设备上线或者设备上报属性时，如果desired区和reported区存在差异，则将差异部分下发给设备，配置的预期属性需在产品模型中定义且method具有可写属性“W”才可下发 
 
         :param UpdateDeviceShadowDesiredDataRequest request
-        :return: tuple(UpdateDeviceShadowDesiredDataResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateDeviceShadowDesiredDataResponse
         """
 
         all_params = ['device_id', 'update_device_shadow_desired_data_request_body', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1751,24 +1886,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices/{device_id}/shadow', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices/{device_id}/shadow',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateDeviceShadowDesiredDataResponse',
@@ -1793,15 +1929,10 @@ class IoTDAClient(Client):
         物联网平台可向设备下发消息，应用服务器可调用此接口向指定设备下发消息，以实现对设备的控制。应用将消息下发给平台后，平台返回应用响应结果，平台再将消息发送给设备。 
 
         :param CreateMessageRequest request
-        :return: tuple(CreateMessageResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateMessageResponse
         """
 
         all_params = ['device_id', 'create_message_request_body', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1819,24 +1950,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices/{device_id}/messages', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices/{device_id}/messages',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateMessageResponse',
@@ -1860,15 +1992,10 @@ class IoTDAClient(Client):
         物联网平台可查询指定设备下的消息，平台为每个设备默认最多保存20条消息，超过20条后， 后续的消息会替换下发最早的消息。 
 
         :param ListDeviceMessagesRequest request
-        :return: tuple(ListDeviceMessagesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListDeviceMessagesResponse
         """
 
         all_params = ['device_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1886,20 +2013,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices/{device_id}/messages', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices/{device_id}/messages',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListDeviceMessagesResponse',
@@ -1923,15 +2051,10 @@ class IoTDAClient(Client):
         物联网平台可查询指定消息id的消息。 
 
         :param ShowDeviceMessageRequest request
-        :return: tuple(ShowDeviceMessageResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowDeviceMessageResponse
         """
 
         all_params = ['device_id', 'message_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1951,20 +2074,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices/{device_id}/messages/{message_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices/{device_id}/messages/{message_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowDeviceMessageResponse',
@@ -1989,15 +2113,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口创建产品。
 
         :param CreateProductRequest request
-        :return: tuple(CreateProductResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateProductResponse
         """
 
         all_params = ['instance_id', 'create_product_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2013,24 +2132,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/products', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/products',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateProductResponse',
@@ -2044,7 +2164,7 @@ class IoTDAClient(Client):
         应用服务器可调用此接口删除已导入物联网平台的指定产品模型。
 
         :param DeleteProductRequest request
-        :return: str
+        :return: DeleteProductResponse
         """
         return self.delete_product_with_http_info(request)
 
@@ -2054,15 +2174,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口删除已导入物联网平台的指定产品模型。
 
         :param DeleteProductRequest request
-        :return: tuple(str, status_code(int), headers(HTTPHeaderDict))
+        :return: DeleteProductResponse
         """
 
         all_params = ['product_id', 'instance_id', 'app_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2082,23 +2197,24 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/products/{product_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/products/{product_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='str',
+            response_type='DeleteProductResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2119,15 +2235,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口查询已导入物联网平台的产品模型信息列表，了解产品模型的概要信息。
 
         :param ListProductsRequest request
-        :return: tuple(ListProductsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListProductsResponse
         """
 
         all_params = ['instance_id', 'limit', 'marker', 'app_id', 'offset']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2151,20 +2262,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/products', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/products',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListProductsResponse',
@@ -2188,15 +2300,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口查询已导入物联网平台的指定产品模型详细信息，包括产品模型的服务、属性、命令等。
 
         :param ShowProductRequest request
-        :return: tuple(ShowProductResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowProductResponse
         """
 
         all_params = ['product_id', 'instance_id', 'app_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2216,20 +2323,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/products/{product_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/products/{product_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowProductResponse',
@@ -2253,15 +2361,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口修改已导入物联网平台的指定产品模型，包括产品模型的服务、属性、命令等。
 
         :param UpdateProductRequest request
-        :return: tuple(UpdateProductResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateProductResponse
         """
 
         all_params = ['product_id', 'update_product_request_body', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2279,24 +2382,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json;charset&#x3D;UTF-8'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/products/{product_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/products/{product_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateProductResponse',
@@ -2321,15 +2425,10 @@ class IoTDAClient(Client):
         设备的产品模型中定义了物联网平台可向设备下发的属性，应用服务器可调用此接口查询指定设备下属性。 
 
         :param ListPropertiesRequest request
-        :return: tuple(ListPropertiesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListPropertiesResponse
         """
 
         all_params = ['device_id', 'service_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2349,20 +2448,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices/{device_id}/properties', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices/{device_id}/properties',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListPropertiesResponse',
@@ -2386,15 +2486,10 @@ class IoTDAClient(Client):
         设备的产品模型中定义了物联网平台可向设备下发的属性，应用服务器可调用此接口向指定设备下属性。平台负责将属性以同步方式发送给设备，并将设备执行属性结果同步返回。 
 
         :param UpdatePropertiesRequest request
-        :return: tuple(UpdatePropertiesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdatePropertiesResponse
         """
 
         all_params = ['device_id', 'update_properties_request_body', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2412,24 +2507,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/devices/{device_id}/properties', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/devices/{device_id}/properties',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdatePropertiesResponse',
@@ -2454,15 +2550,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口修改物联网平台中指定规则的状态，激活或者去激活规则。
 
         :param ChangeRuleStatusRequest request
-        :return: tuple(ChangeRuleStatusResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ChangeRuleStatusResponse
         """
 
         all_params = ['rule_id', 'change_rule_status_request_body', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2480,24 +2571,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/rules/{rule_id}/status', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/rules/{rule_id}/status',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ChangeRuleStatusResponse',
@@ -2521,15 +2613,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口在物联网平台创建一条规则。
 
         :param CreateRuleRequest request
-        :return: tuple(CreateRuleResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateRuleResponse
         """
 
         all_params = ['create_rule_request_body', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2545,24 +2632,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/rules', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/rules',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateRuleResponse',
@@ -2576,7 +2664,7 @@ class IoTDAClient(Client):
         应用服务器可调用此接口删除物联网平台中的指定规则。
 
         :param DeleteRuleRequest request
-        :return: str
+        :return: DeleteRuleResponse
         """
         return self.delete_rule_with_http_info(request)
 
@@ -2586,15 +2674,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口删除物联网平台中的指定规则。
 
         :param DeleteRuleRequest request
-        :return: tuple(str, status_code(int), headers(HTTPHeaderDict))
+        :return: DeleteRuleResponse
         """
 
         all_params = ['rule_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2612,23 +2695,24 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/rules/{rule_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/rules/{rule_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='str',
+            response_type='DeleteRuleResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2649,15 +2733,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口查询物联网平台中设置的规则列表。
 
         :param ListRulesRequest request
-        :return: tuple(ListRulesResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListRulesResponse
         """
 
         all_params = ['instance_id', 'app_id', 'limit', 'marker', 'offset']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2681,20 +2760,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/rules', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/rules',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListRulesResponse',
@@ -2718,15 +2798,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口查询物联网平台中指定规则的配置信息。
 
         :param ShowRuleRequest request
-        :return: tuple(ShowRuleResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowRuleResponse
         """
 
         all_params = ['rule_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2744,20 +2819,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/rules/{rule_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/rules/{rule_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowRuleResponse',
@@ -2781,15 +2857,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口修改物联网平台中指定规则的配置。
 
         :param UpdateRuleRequest request
-        :return: tuple(UpdateRuleResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateRuleResponse
         """
 
         all_params = ['rule_id', 'update_rule_request_body', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2807,24 +2878,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/rules/{rule_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/rules/{rule_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateRuleResponse',
@@ -2849,15 +2921,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口订阅物联网平台资源的变化事件，当资源发生变化时（如设备激活，设备数据更新等），平台会向应用服务器发送通知消息。
 
         :param CreateSubscriptionRequest request
-        :return: tuple(CreateSubscriptionResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: CreateSubscriptionResponse
         """
 
         all_params = ['instance_id', 'create_subscription_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2873,24 +2940,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/subscriptions', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/subscriptions',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='CreateSubscriptionResponse',
@@ -2904,7 +2972,7 @@ class IoTDAClient(Client):
         应用服务器可调用此接口删除物联网平台中的指定订阅配置。
 
         :param DeleteSubscriptionRequest request
-        :return: str
+        :return: DeleteSubscriptionResponse
         """
         return self.delete_subscription_with_http_info(request)
 
@@ -2914,15 +2982,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口删除物联网平台中的指定订阅配置。
 
         :param DeleteSubscriptionRequest request
-        :return: tuple(str, status_code(int), headers(HTTPHeaderDict))
+        :return: DeleteSubscriptionResponse
         """
 
         all_params = ['subscription_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2940,23 +3003,24 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/subscriptions/{subscription_id}', 'DELETE',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/subscriptions/{subscription_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='str',
+            response_type='DeleteSubscriptionResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2977,15 +3041,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口查询物联网平台中的订阅配置信息列表。
 
         :param ListSubscriptionsRequest request
-        :return: tuple(ListSubscriptionsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListSubscriptionsResponse
         """
 
         all_params = ['instance_id', 'resource', 'event', 'callbackurl', 'app_id', 'channel', 'limit', 'marker', 'offset']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3017,20 +3076,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/subscriptions', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/subscriptions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListSubscriptionsResponse',
@@ -3054,15 +3114,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口查询物联网平台中指定订阅的配置信息。
 
         :param ShowSubscriptionRequest request
-        :return: tuple(ShowSubscriptionResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ShowSubscriptionResponse
         """
 
         all_params = ['subscription_id', 'instance_id']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3080,20 +3135,21 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
 
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/subscriptions/{subscription_id}', 'GET',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/subscriptions/{subscription_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ShowSubscriptionResponse',
@@ -3117,15 +3173,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口修改物联网平台中的指定订阅配置，当前仅支持修改订阅回调地址（callbackurl）。
 
         :param UpdateSubscriptionRequest request
-        :return: tuple(UpdateSubscriptionResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: UpdateSubscriptionResponse
         """
 
         all_params = ['subscription_id', 'instance_id', 'update_subscription_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3143,24 +3194,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/subscriptions/{subscription_id}', 'PUT',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/subscriptions/{subscription_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='UpdateSubscriptionResponse',
@@ -3185,15 +3237,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口查询绑定了指定标签的资源。当前支持标签的资源有Device(设备)。
 
         :param ListResourcesByTagsRequest request
-        :return: tuple(ListResourcesByTagsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: ListResourcesByTagsResponse
         """
 
         all_params = ['instance_id', 'limit', 'marker', 'offset', 'list_resources_by_tags_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3215,24 +3262,25 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/tags/query-resources', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/tags/query-resources',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
             response_type='ListResourcesByTagsResponse',
@@ -3246,7 +3294,7 @@ class IoTDAClient(Client):
         应用服务器可调用此接口为指定资源绑定标签。当前支持标签的资源有Device(设备)。
 
         :param TagDeviceRequest request
-        :return: str
+        :return: TagDeviceResponse
         """
         return self.tag_device_with_http_info(request)
 
@@ -3256,15 +3304,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口为指定资源绑定标签。当前支持标签的资源有Device(设备)。
 
         :param TagDeviceRequest request
-        :return: tuple(str, status_code(int), headers(HTTPHeaderDict))
+        :return: TagDeviceResponse
         """
 
         all_params = ['instance_id', 'tag_device_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3280,27 +3323,28 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/tags/bind-resource', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/tags/bind-resource',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='str',
+            response_type='TagDeviceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3311,7 +3355,7 @@ class IoTDAClient(Client):
         应用服务器可调用此接口为指定资源解绑标签。当前支持标签的资源有Device(设备)。
 
         :param UntagDeviceRequest request
-        :return: str
+        :return: UntagDeviceResponse
         """
         return self.untag_device_with_http_info(request)
 
@@ -3321,15 +3365,10 @@ class IoTDAClient(Client):
         应用服务器可调用此接口为指定资源解绑标签。当前支持标签的资源有Device(设备)。
 
         :param UntagDeviceRequest request
-        :return: tuple(str, status_code(int), headers(HTTPHeaderDict))
+        :return: UntagDeviceResponse
         """
 
         all_params = ['instance_id', 'untag_device_request_body']
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3345,27 +3384,28 @@ class IoTDAClient(Client):
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
-        form_params = []
+        form_params = {}
 
         body_params = None
         if 'body' in local_var_params:
             body_params = local_var_params['body']
-
-        header_params['Accept'] = http_utils.select_header_accept(
-            ['application/json'])
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
         auth_settings = []
 
         return self.call_api(
-            '/v5/iot/{project_id}/tags/unbind-resource', 'POST',
-            path_params,
-            query_params,
-            header_params,
+            resource_path='/v5/iot/{project_id}/tags/unbind-resource',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='str',
+            response_type='UntagDeviceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3392,6 +3432,14 @@ class IoTDAClient(Client):
         :return:
             Return the response directly.
         """
-        return self.do_http_request(method, resource_path, path_params,
-                                    query_params, header_params, body, post_params,
-                                    response_type, collection_formats, request_type)
+        return self.do_http_request(
+            method=method,
+            resource_path=resource_path,
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body,
+            post_params=post_params,
+            response_type=response_type,
+            collection_formats=collection_formats,
+            request_type=request_type)

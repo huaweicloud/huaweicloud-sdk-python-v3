@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdatePasswordResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class UpdatePasswordResponse(SdkResponse):
 
 
     """
@@ -35,8 +38,10 @@ class UpdatePasswordResponse(object):
         'message': 'message'
     }
 
-    def __init__(self, lock_time=None, result=None, lock_time_left=None, retry_times_left=None, message=None):  # noqa: E501
+    def __init__(self, lock_time=None, result=None, lock_time_left=None, retry_times_left=None, message=None):
         """UpdatePasswordResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._lock_time = None
         self._result = None

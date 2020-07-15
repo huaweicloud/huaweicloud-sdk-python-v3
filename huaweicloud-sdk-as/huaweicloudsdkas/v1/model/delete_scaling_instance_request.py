@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeleteScalingInstanceRequest(object):
+
+
+
+class DeleteScalingInstanceRequest:
 
 
     """
@@ -29,8 +32,10 @@ class DeleteScalingInstanceRequest(object):
         'instance_delete': 'instance_delete'
     }
 
-    def __init__(self, instance_id=None, instance_delete=None):  # noqa: E501
+    def __init__(self, instance_id=None, instance_delete=None):
         """DeleteScalingInstanceRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._instance_delete = None

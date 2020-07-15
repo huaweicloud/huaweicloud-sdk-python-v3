@@ -68,10 +68,10 @@
     config = HttpConfig.get_default_config()
     ```
 
-    2.2 代理配置
+    2.2 代理配置(可选)
 
     ```python
-    # 使用代理服务器
+    # 使用代理服务器（可选）
     config.proxy_protocol = 'http'
     config.proxy_host = 'proxy.huaweicloud.com'
     config.proxy_port = 80
@@ -79,17 +79,17 @@
     config.proxy_password = 'password'
     ```
 
-    2.3 连接配置
+    2.3 连接配置(可选)
 
     ```python
-    # 配置连接超时，支持统一指定超时时长timeout=timeout，或分别指定超时时长timeout=(connect timeout, read timeout)
+    # 配置连接超时（可选），支持统一指定超时时长timeout=timeout，或分别指定超时时长timeout=(connect timeout, read timeout)
     config.timeout = 3
     ```
 
-    2.4 SSL配置
+    2.4 SSL配置(可选)
 
     ```python
-    # 配置跳过服务端证书验证
+    # 配置跳过服务端证书验证（可选）
     config.ignore_ssl_verification = True
     # 配置服务器端CA证书，用于SDK验证服务端证书合法性
     config.ssl_ca_cert = ssl_ca_cert

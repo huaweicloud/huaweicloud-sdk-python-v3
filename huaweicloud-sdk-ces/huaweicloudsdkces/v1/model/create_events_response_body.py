@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateEventsResponseBody(object):
+
+
+
+class CreateEventsResponseBody:
 
 
     """
@@ -29,8 +32,10 @@ class CreateEventsResponseBody(object):
         'event_name': 'event_name'
     }
 
-    def __init__(self, event_id=None, event_name=None):  # noqa: E501
+    def __init__(self, event_id=None, event_name=None):
         """CreateEventsResponseBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._event_id = None
         self._event_name = None

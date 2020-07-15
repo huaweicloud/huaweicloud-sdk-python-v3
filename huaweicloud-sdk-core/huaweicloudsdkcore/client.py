@@ -27,6 +27,7 @@ import re
 import sys
 from concurrent.futures.thread import ThreadPoolExecutor
 from logging.handlers import RotatingFileHandler
+from typing import Mapping
 
 import six
 from six.moves.urllib.parse import quote, urlparse
@@ -38,7 +39,8 @@ from huaweicloudsdkcore.http.http_handler import HttpHandler
 from huaweicloudsdkcore.http.primitive_types import native_types_mapping
 from huaweicloudsdkcore.http.primitive_types import primitive_types
 from huaweicloudsdkcore.sdk_request import SdkRequest
-from huaweicloudsdkcore.sdk_response import SdkResponse, FutureSdkResponse
+from huaweicloudsdkcore.sdk_response import FutureSdkResponse, SdkResponse
+from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils import http_utils, core_utils
 
 
@@ -141,7 +143,7 @@ class Client:
 
     @classmethod
     def _init_logger(cls):
-        logger_name = 'HuaweiCloud-SDK'
+        logger_name = 'HuaweiCloud-SDK-%s' % cls.__name__
         logger = logging.getLogger(logger_name)
         logger.propagate = False
         return logger
@@ -224,20 +226,31 @@ class Client:
         return query_params
 
     def _parse_post_params(self, collection_formats, post_params):
-        post_params = self.post_process_params(post_params) if post_params else []
+        post_params = self.post_process_params(post_params) if post_params else {}
         if post_params:
             post_params = http_utils.sanitize_for_serialization(post_params)
             post_params = http_utils.parameters_to_tuples(post_params, collection_formats)
         return post_params
 
     @classmethod
-    def _parse_body(cls, body):
+    def _parse_body(cls, body, post_params):
         if body:
+            if all([hasattr(body, '__iter__'), not isinstance(body, (str, bytes, list, tuple, Mapping))]):
+                return body
             body = http_utils.sanitize_for_serialization(body)
             body = json.dumps(body)
+        elif len(post_params) != 0:
+            body = post_params
         else:
             body = ""
         return body
+
+    def _is_stream(self, response_type):
+        if type(response_type) == str and hasattr(self.model_package, response_type):
+            klass = getattr(self.model_package, response_type)
+            if issubclass(klass, SdkStreamResponse):
+                return True
+        return False
 
     @classmethod
     def post_process_params(cls, params):
@@ -262,11 +275,12 @@ class Client:
                                                 self._credentials.get_update_path_params())
         query_params = self._parse_query_params(collection_formats, query_params)
         post_params = self._parse_post_params(collection_formats, post_params)
-        body = self._parse_body(body)
+        body = self._parse_body(body, post_params)
 
-        sdk_request = SdkRequest(method, schema, host, resource_path, query_params, header_params, body, post_params)
+        stream = self._is_stream(response_type)
+        sdk_request = SdkRequest(method=method, schema=schema, host=host, resource_path=resource_path,
+                                 query_params=query_params, header_params=header_params, body=body, stream=stream)
         future_request = self._credentials.process_auth_request(sdk_request, self._http_client)
-
         if async_request:
             executor = ThreadPoolExecutor(max_workers=8)
             future_response = executor.submit(self._do_http_request_async, future_request, response_type)
@@ -283,35 +297,28 @@ class Client:
     def _do_http_request_async(self, future_request, response_type):
         request = future_request.result()
         future_response = self._http_client.do_request_async(
-            request=request, hooks=[self.async_response_hook_factory(response_type=response_type)]
+            request=request, hooks=[self.async_response_hook_factory(response_type)]
         )
         return future_response
 
     def sync_response_handler(self, response, response_type):
-        return_data = response
-        if self._config.preload_content:
-            if response_type:
-                return_data = self.deserialize(response, response_type)
-            else:
-                return_data = None
-
-        if self._config.return_http_data_only:
-            return return_data
-        else:
-            return SdkResponse(response.status_code, response.headers, return_data)
+        return_data = self.deserialize(response, response_type)
+        return_data.status_code = response.status_code
+        return_data.header_params = response.headers
+        return return_data
 
     def async_response_hook_factory(self, response_type):
         def response_hook(resp, *args, **kwargs):
-            resp.data = resp.text
-            if self._config.preload_content:
-                if response_type:
-                    resp.data = self.deserialize(resp, response_type)
-                else:
-                    resp.data = None
+            resp.data = self.sync_response_handler(resp, response_type)
 
         return response_hook
 
     def deserialize(self, response, response_type):
+        if type(response_type) == str and hasattr(self.model_package, response_type):
+            klass = getattr(self.model_package, response_type)
+            if issubclass(klass, SdkStreamResponse):
+                return klass(response)
+
         try:
             data = json.loads(response.text)
         except ValueError:
@@ -384,16 +391,17 @@ class Client:
 
     def _deserialize_model(self, data, klass):
         if not klass.openapi_types and not hasattr(klass, 'get_real_child_model'):
-            return data
+            return klass()
 
         kwargs = {}
         if klass.openapi_types is not None:
             for attr, attr_type in six.iteritems(klass.openapi_types):
-                if (data is not None and
-                        klass.attribute_map[attr] in data and
-                        isinstance(data, (list, dict))):
-                    value = data[klass.attribute_map[attr]]
-                    kwargs[attr] = self._deserialize(value, attr_type)
+                if (data is not None and isinstance(data, (list, dict))):
+                    if klass.attribute_map[attr] in data:
+                        value = data[klass.attribute_map[attr]]
+                        kwargs[attr] = self._deserialize(value, attr_type)
+                    if klass.attribute_map[attr] == "body":
+                        kwargs[attr] = self._deserialize(data, attr_type)
 
         instance = klass(**kwargs)
 

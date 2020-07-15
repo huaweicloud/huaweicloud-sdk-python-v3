@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowVolumeTagsRequest(object):
+
+
+
+class ShowVolumeTagsRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ShowVolumeTagsRequest(object):
         'volume_id': 'volume_id'
     }
 
-    def __init__(self, volume_id=None):  # noqa: E501
+    def __init__(self, volume_id=None):
         """ShowVolumeTagsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._volume_id = None
         self.discriminator = None

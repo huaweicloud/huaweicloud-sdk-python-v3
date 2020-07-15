@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ResetDeviceSecretResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ResetDeviceSecretResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class ResetDeviceSecretResponse(object):
         'secret': 'secret'
     }
 
-    def __init__(self, device_id=None, secret=None):  # noqa: E501
+    def __init__(self, device_id=None, secret=None):
         """ResetDeviceSecretResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._device_id = None
         self._secret = None

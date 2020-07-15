@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AttachServerVolumeRequestBody(object):
+
+
+
+class AttachServerVolumeRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class AttachServerVolumeRequestBody(object):
         'volume_attachment': 'volumeAttachment'
     }
 
-    def __init__(self, volume_attachment=None):  # noqa: E501
+    def __init__(self, volume_attachment=None):
         """AttachServerVolumeRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._volume_attachment = None
         self.discriminator = None

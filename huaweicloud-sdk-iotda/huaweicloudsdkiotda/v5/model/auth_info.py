@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AuthInfo(object):
+
+
+
+class AuthInfo:
 
 
     """
@@ -35,8 +38,10 @@ class AuthInfo(object):
         'timeout': 'timeout'
     }
 
-    def __init__(self, auth_type=None, secret=None, fingerprint=None, secure_access=True, timeout=0):  # noqa: E501
+    def __init__(self, auth_type=None, secret=None, fingerprint=None, secure_access=True, timeout=0):
         """AuthInfo - a model defined in huaweicloud sdk"""
+        
+        
 
         self._auth_type = None
         self._secret = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateSlavePriorityRequest(object):
+
+
+
+class UpdateSlavePriorityRequest:
 
 
     """
@@ -33,8 +36,10 @@ class UpdateSlavePriorityRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, instance_id=None, group_id=None, node_id=None, body=None):  # noqa: E501
+    def __init__(self, instance_id=None, group_id=None, node_id=None, body=None):
         """UpdateSlavePriorityRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._group_id = None

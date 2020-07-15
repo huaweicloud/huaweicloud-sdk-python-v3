@@ -6,7 +6,10 @@ import re
 import six
 
 
-class TaskDetail(object):
+
+
+
+class TaskDetail:
 
 
     """
@@ -33,8 +36,10 @@ class TaskDetail(object):
         'error': 'error'
     }
 
-    def __init__(self, target=None, status=None, output=None, error=None):  # noqa: E501
+    def __init__(self, target=None, status=None, output=None, error=None):
         """TaskDetail - a model defined in huaweicloud sdk"""
+        
+        
 
         self._target = None
         self._status = None

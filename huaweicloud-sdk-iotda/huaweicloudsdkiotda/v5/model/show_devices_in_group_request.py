@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowDevicesInGroupRequest(object):
+
+
+
+class ShowDevicesInGroupRequest:
 
 
     """
@@ -35,8 +38,10 @@ class ShowDevicesInGroupRequest(object):
         'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None, group_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):  # noqa: E501
+    def __init__(self, instance_id=None, group_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):
         """ShowDevicesInGroupRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._group_id = None

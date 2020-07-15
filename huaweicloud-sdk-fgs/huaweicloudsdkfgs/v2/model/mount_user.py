@@ -6,7 +6,10 @@ import re
 import six
 
 
-class MountUser(object):
+
+
+
+class MountUser:
 
 
     """
@@ -29,8 +32,10 @@ class MountUser(object):
         'user_group_id': 'user_group_id'
     }
 
-    def __init__(self, user_id=None, user_group_id=None):  # noqa: E501
+    def __init__(self, user_id=None, user_group_id=None):
         """MountUser - a model defined in huaweicloud sdk"""
+        
+        
 
         self._user_id = None
         self._user_group_id = None

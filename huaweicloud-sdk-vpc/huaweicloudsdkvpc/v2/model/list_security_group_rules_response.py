@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListSecurityGroupRulesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListSecurityGroupRulesResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ListSecurityGroupRulesResponse(object):
         'security_group_rules': 'security_group_rules'
     }
 
-    def __init__(self, security_group_rules=None):  # noqa: E501
+    def __init__(self, security_group_rules=None):
         """ListSecurityGroupRulesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._security_group_rules = None
         self.discriminator = None

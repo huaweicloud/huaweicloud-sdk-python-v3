@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowAgencyResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowAgencyResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ShowAgencyResponse(object):
         'agency': 'agency'
     }
 
-    def __init__(self, agency=None):  # noqa: E501
+    def __init__(self, agency=None):
         """ShowAgencyResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._agency = None
         self.discriminator = None

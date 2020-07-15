@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateDeviceShadowDesiredDataResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class UpdateDeviceShadowDesiredDataResponse(SdkResponse):
 
 
     """
@@ -29,8 +32,10 @@ class UpdateDeviceShadowDesiredDataResponse(object):
         'shadow': 'shadow'
     }
 
-    def __init__(self, device_id=None, shadow=None):  # noqa: E501
+    def __init__(self, device_id=None, shadow=None):
         """UpdateDeviceShadowDesiredDataResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._device_id = None
         self._shadow = None

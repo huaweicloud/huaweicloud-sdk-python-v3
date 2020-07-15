@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeviceCommandV5(object):
+
+
+
+class DeviceCommandV5:
 
 
     """
@@ -41,8 +44,10 @@ class DeviceCommandV5(object):
         'response': 'response'
     }
 
-    def __init__(self, command_id=None, command_name=None, service_id=None, paras=None, status=None, created_time=None, finished_time=None, response=None):  # noqa: E501
+    def __init__(self, command_id=None, command_name=None, service_id=None, paras=None, status=None, created_time=None, finished_time=None, response=None):
         """DeviceCommandV5 - a model defined in huaweicloud sdk"""
+        
+        
 
         self._command_id = None
         self._command_name = None

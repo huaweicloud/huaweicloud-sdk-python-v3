@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ExerciseGroup(object):
+
+
+
+class ExerciseGroup:
 
 
     """
@@ -29,8 +32,10 @@ class ExerciseGroup(object):
         'type': 'type'
     }
 
-    def __init__(self, exercises=None, type=None):  # noqa: E501
+    def __init__(self, exercises=None, type=None):
         """ExerciseGroup - a model defined in huaweicloud sdk"""
+        
+        
 
         self._exercises = None
         self._type = None

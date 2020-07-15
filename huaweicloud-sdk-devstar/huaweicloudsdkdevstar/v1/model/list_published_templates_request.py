@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListPublishedTemplatesRequest(object):
+
+
+
+class ListPublishedTemplatesRequest:
 
 
     """
@@ -33,8 +36,10 @@ class ListPublishedTemplatesRequest(object):
         'limit': 'limit'
     }
 
-    def __init__(self, x_language=None, keyword=None, offset=0, limit=10):  # noqa: E501
+    def __init__(self, x_language=None, keyword=None, offset=0, limit=10):
         """ListPublishedTemplatesRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._x_language = None
         self._keyword = None

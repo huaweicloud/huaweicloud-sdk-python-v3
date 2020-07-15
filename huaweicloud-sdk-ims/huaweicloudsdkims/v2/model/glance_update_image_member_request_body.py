@@ -6,7 +6,10 @@ import re
 import six
 
 
-class GlanceUpdateImageMemberRequestBody(object):
+
+
+
+class GlanceUpdateImageMemberRequestBody:
 
 
     """
@@ -29,8 +32,10 @@ class GlanceUpdateImageMemberRequestBody(object):
         'vault_id': 'vault_id'
     }
 
-    def __init__(self, status=None, vault_id=None):  # noqa: E501
+    def __init__(self, status=None, vault_id=None):
         """GlanceUpdateImageMemberRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._status = None
         self._vault_id = None

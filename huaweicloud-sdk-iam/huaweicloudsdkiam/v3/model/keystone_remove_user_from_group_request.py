@@ -6,7 +6,10 @@ import re
 import six
 
 
-class KeystoneRemoveUserFromGroupRequest(object):
+
+
+
+class KeystoneRemoveUserFromGroupRequest:
 
 
     """
@@ -29,8 +32,10 @@ class KeystoneRemoveUserFromGroupRequest(object):
         'user_id': 'user_id'
     }
 
-    def __init__(self, group_id=None, user_id=None):  # noqa: E501
+    def __init__(self, group_id=None, user_id=None):
         """KeystoneRemoveUserFromGroupRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._group_id = None
         self._user_id = None

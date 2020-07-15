@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateLifyCycleHookResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CreateLifyCycleHookResponse(SdkResponse):
 
 
     """
@@ -41,8 +44,10 @@ class CreateLifyCycleHookResponse(object):
         'create_time': 'create_time'
     }
 
-    def __init__(self, lifecycle_hook_name=None, lifecycle_hook_type=None, default_result=None, default_timeout=None, notification_topic_urn=None, notification_topic_name=None, notification_metadata=None, create_time=None):  # noqa: E501
+    def __init__(self, lifecycle_hook_name=None, lifecycle_hook_type=None, default_result=None, default_timeout=None, notification_topic_urn=None, notification_topic_name=None, notification_metadata=None, create_time=None):
         """CreateLifyCycleHookResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._lifecycle_hook_name = None
         self._lifecycle_hook_type = None

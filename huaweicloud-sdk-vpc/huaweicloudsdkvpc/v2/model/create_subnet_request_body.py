@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateSubnetRequestBody(object):
+
+
+
+class CreateSubnetRequestBody:
 
 
     """
@@ -27,8 +30,10 @@ class CreateSubnetRequestBody(object):
         'subnet': 'subnet'
     }
 
-    def __init__(self, subnet=None):  # noqa: E501
+    def __init__(self, subnet=None):
         """CreateSubnetRequestBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._subnet = None
         self.discriminator = None

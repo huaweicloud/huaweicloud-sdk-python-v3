@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ServerSystemTag(object):
+
+
+
+class ServerSystemTag:
 
 
     """
@@ -29,8 +32,10 @@ class ServerSystemTag(object):
         'value': 'value'
     }
 
-    def __init__(self, key=None, value=None):  # noqa: E501
+    def __init__(self, key=None, value=None):
         """ServerSystemTag - a model defined in huaweicloud sdk"""
+        
+        
 
         self._key = None
         self._value = None

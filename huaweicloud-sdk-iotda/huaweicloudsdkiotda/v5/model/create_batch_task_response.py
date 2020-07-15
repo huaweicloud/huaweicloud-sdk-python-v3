@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateBatchTaskResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CreateBatchTaskResponse(SdkResponse):
 
 
     """
@@ -47,8 +50,10 @@ class CreateBatchTaskResponse(object):
         'create_time': 'create_time'
     }
 
-    def __init__(self, task_id=None, task_name=None, task_type=None, targets=None, targets_filter=None, document=None, task_policy=None, status=None, status_desc=None, task_progress=None, create_time=None):  # noqa: E501
+    def __init__(self, task_id=None, task_name=None, task_type=None, targets=None, targets_filter=None, document=None, task_policy=None, status=None, status_desc=None, task_progress=None, create_time=None):
         """CreateBatchTaskResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._task_id = None
         self._task_name = None

@@ -75,7 +75,8 @@ class HttpClient:
                 proxies=self._proxy,
                 verify=self._verify,
                 cert=self._cert,
-                data=request.body
+                data=request.body,
+                stream=request.stream
             )
         except ConnectionError as connectionError:
             for each in connectionError.args:
@@ -103,6 +104,7 @@ class HttpClient:
             verify=self._verify,
             cert=self._cert,
             data=request.body,
+            stream=request.stream,
             hooks={'response': hooks}
         )
         return future

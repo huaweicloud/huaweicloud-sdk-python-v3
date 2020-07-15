@@ -6,7 +6,10 @@ import re
 import six
 
 
-class AgencyResult(object):
+
+
+
+class AgencyResult:
 
 
     """
@@ -43,8 +46,10 @@ class AgencyResult(object):
         'trust_domain_name': 'trust_domain_name'
     }
 
-    def __init__(self, create_time=None, description=None, domain_id=None, duration=None, expire_time=None, id=None, name=None, trust_domain_id=None, trust_domain_name=None):  # noqa: E501
+    def __init__(self, create_time=None, description=None, domain_id=None, duration=None, expire_time=None, id=None, name=None, trust_domain_id=None, trust_domain_name=None):
         """AgencyResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._create_time = None
         self._description = None

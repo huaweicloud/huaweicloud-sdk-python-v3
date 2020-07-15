@@ -6,7 +6,10 @@ import re
 import six
 
 
-class BackupInstanceBody(object):
+
+
+
+class BackupInstanceBody:
 
 
     """
@@ -27,8 +30,10 @@ class BackupInstanceBody(object):
         'remark': 'remark'
     }
 
-    def __init__(self, remark=None):  # noqa: E501
+    def __init__(self, remark=None):
         """BackupInstanceBody - a model defined in huaweicloud sdk"""
+        
+        
 
         self._remark = None
         self.discriminator = None

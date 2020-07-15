@@ -6,7 +6,10 @@ import re
 import six
 
 
-class DeviceShadowProperties(object):
+
+
+
+class DeviceShadowProperties:
 
 
     """
@@ -29,8 +32,10 @@ class DeviceShadowProperties(object):
         'event_time': 'event_time'
     }
 
-    def __init__(self, properties=None, event_time=None):  # noqa: E501
+    def __init__(self, properties=None, event_time=None):
         """DeviceShadowProperties - a model defined in huaweicloud sdk"""
+        
+        
 
         self._properties = None
         self._event_time = None

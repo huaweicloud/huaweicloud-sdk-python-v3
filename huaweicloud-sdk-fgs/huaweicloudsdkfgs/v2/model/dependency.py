@@ -6,7 +6,10 @@ import re
 import six
 
 
-class Dependency(object):
+
+
+
+class Dependency:
 
 
     """
@@ -41,8 +44,10 @@ class Dependency(object):
         'file_name': 'file_name'
     }
 
-    def __init__(self, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None):  # noqa: E501
+    def __init__(self, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None):
         """Dependency - a model defined in huaweicloud sdk"""
+        
+        
 
         self._owner = None
         self._link = None

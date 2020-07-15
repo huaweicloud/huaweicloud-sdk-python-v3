@@ -6,7 +6,10 @@ import re
 import six
 
 
-class QueryCorpResResultDTO(object):
+
+
+
+class QueryCorpResResultDTO:
 
 
     """
@@ -27,8 +30,10 @@ class QueryCorpResResultDTO(object):
         'corp_vc_res': 'corpVcRes'
     }
 
-    def __init__(self, corp_vc_res=None):  # noqa: E501
+    def __init__(self, corp_vc_res=None):
         """QueryCorpResResultDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._corp_vc_res = None
         self.discriminator = None

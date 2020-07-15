@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowJobRequest(object):
+
+
+
+class ShowJobRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ShowJobRequest(object):
         'job_id': 'job_id'
     }
 
-    def __init__(self, job_id=None):  # noqa: E501
+    def __init__(self, job_id=None):
         """ShowJobRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._job_id = None
         self.discriminator = None

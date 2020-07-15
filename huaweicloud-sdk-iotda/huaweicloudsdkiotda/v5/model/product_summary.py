@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ProductSummary(object):
+
+
+
+class ProductSummary:
 
 
     """
@@ -47,8 +50,10 @@ class ProductSummary(object):
         'create_time': 'create_time'
     }
 
-    def __init__(self, app_id=None, app_name=None, product_id=None, name=None, device_type=None, protocol_type=None, data_format=None, manufacturer_name=None, industry=None, description=None, create_time=None):  # noqa: E501
+    def __init__(self, app_id=None, app_name=None, product_id=None, name=None, device_type=None, protocol_type=None, data_format=None, manufacturer_name=None, industry=None, description=None, create_time=None):
         """ProductSummary - a model defined in huaweicloud sdk"""
+        
+        
 
         self._app_id = None
         self._app_name = None

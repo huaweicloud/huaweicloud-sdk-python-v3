@@ -6,7 +6,10 @@ import re
 import six
 
 
-class MetricAlarms(object):
+
+
+
+class MetricAlarms:
 
 
     """
@@ -51,8 +54,10 @@ class MetricAlarms(object):
         'alarm_state': 'alarm_state'
     }
 
-    def __init__(self, alarm_name=None, alarm_description=None, metric=None, condition=None, alarm_enabled=None, alarm_level=None, alarm_type=None, alarm_action_enabled=None, alarm_actions=None, ok_actions=None, alarm_id=None, update_time=None, alarm_state=None):  # noqa: E501
+    def __init__(self, alarm_name=None, alarm_description=None, metric=None, condition=None, alarm_enabled=None, alarm_level=None, alarm_type=None, alarm_action_enabled=None, alarm_actions=None, ok_actions=None, alarm_id=None, update_time=None, alarm_state=None):
         """MetricAlarms - a model defined in huaweicloud sdk"""
+        
+        
 
         self._alarm_name = None
         self._alarm_description = None

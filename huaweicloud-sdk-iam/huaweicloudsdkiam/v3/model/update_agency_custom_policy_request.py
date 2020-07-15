@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateAgencyCustomPolicyRequest(object):
+
+
+
+class UpdateAgencyCustomPolicyRequest:
 
 
     """
@@ -29,8 +32,10 @@ class UpdateAgencyCustomPolicyRequest(object):
         'body': 'body'
     }
 
-    def __init__(self, role_id=None, body=None):  # noqa: E501
+    def __init__(self, role_id=None, body=None):
         """UpdateAgencyCustomPolicyRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._role_id = None
         self._body = None

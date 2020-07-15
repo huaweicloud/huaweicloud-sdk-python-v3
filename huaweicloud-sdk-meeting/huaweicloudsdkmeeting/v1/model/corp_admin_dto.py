@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CorpAdminDTO(object):
+
+
+
+class CorpAdminDTO:
 
 
     """
@@ -29,8 +32,10 @@ class CorpAdminDTO(object):
         'menu_template_id': 'menuTemplateId'
     }
 
-    def __init__(self, account=None, menu_template_id=None):  # noqa: E501
+    def __init__(self, account=None, menu_template_id=None):
         """CorpAdminDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._account = None
         self._menu_template_id = None

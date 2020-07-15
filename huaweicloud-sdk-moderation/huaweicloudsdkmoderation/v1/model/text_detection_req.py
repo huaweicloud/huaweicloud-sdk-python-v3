@@ -6,7 +6,10 @@ import re
 import six
 
 
-class TextDetectionReq(object):
+
+
+
+class TextDetectionReq:
 
 
     """
@@ -29,8 +32,10 @@ class TextDetectionReq(object):
         'items': 'items'
     }
 
-    def __init__(self, categories=None, items=None):  # noqa: E501
+    def __init__(self, categories=None, items=None):
         """TextDetectionReq - a model defined in huaweicloud sdk"""
+        
+        
 
         self._categories = None
         self._items = None

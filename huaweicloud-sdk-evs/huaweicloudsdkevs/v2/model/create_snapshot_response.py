@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateSnapshotResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CreateSnapshotResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class CreateSnapshotResponse(object):
         'snapshot': 'snapshot'
     }
 
-    def __init__(self, snapshot=None):  # noqa: E501
+    def __init__(self, snapshot=None):
         """CreateSnapshotResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._snapshot = None
         self.discriminator = None

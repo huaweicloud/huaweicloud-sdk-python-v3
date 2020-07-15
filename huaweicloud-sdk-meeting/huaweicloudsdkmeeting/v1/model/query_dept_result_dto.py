@@ -6,7 +6,10 @@ import re
 import six
 
 
-class QueryDeptResultDTO(object):
+
+
+
+class QueryDeptResultDTO:
 
 
     """
@@ -49,8 +52,10 @@ class QueryDeptResultDTO(object):
         'designated_out_dept_codes': 'designatedOutDeptCodes'
     }
 
-    def __init__(self, dept_code=None, dept_level=None, dept_name=None, dept_name_path=None, is_leaf_node=None, parent_dept_code=None, dept_code_path=None, note=None, corp_id=None, in_permission=None, out_permission=None, designated_out_dept_codes=None):  # noqa: E501
+    def __init__(self, dept_code=None, dept_level=None, dept_name=None, dept_name_path=None, is_leaf_node=None, parent_dept_code=None, dept_code_path=None, note=None, corp_id=None, in_permission=None, out_permission=None, designated_out_dept_codes=None):
         """QueryDeptResultDTO - a model defined in huaweicloud sdk"""
+        
+        
 
         self._dept_code = None
         self._dept_level = None

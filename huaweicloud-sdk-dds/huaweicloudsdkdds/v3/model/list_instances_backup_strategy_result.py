@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListInstancesBackupStrategyResult(object):
+
+
+
+class ListInstancesBackupStrategyResult:
 
 
     """
@@ -29,8 +32,10 @@ class ListInstancesBackupStrategyResult(object):
         'keep_days': 'keep_days'
     }
 
-    def __init__(self, start_time=None, keep_days=None):  # noqa: E501
+    def __init__(self, start_time=None, keep_days=None):
         """ListInstancesBackupStrategyResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._start_time = None
         self._keep_days = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class NetAddress(object):
+
+
+
+class NetAddress:
 
 
     """
@@ -31,8 +34,10 @@ class NetAddress(object):
         'domain': 'domain'
     }
 
-    def __init__(self, ip=None, port=None, domain=None):  # noqa: E501
+    def __init__(self, ip=None, port=None, domain=None):
         """NetAddress - a model defined in huaweicloud sdk"""
+        
+        
 
         self._ip = None
         self._port = None

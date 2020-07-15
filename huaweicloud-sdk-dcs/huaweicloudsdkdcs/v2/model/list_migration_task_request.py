@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListMigrationTaskRequest(object):
+
+
+
+class ListMigrationTaskRequest:
 
 
     """
@@ -31,8 +34,10 @@ class ListMigrationTaskRequest(object):
         'name': 'name'
     }
 
-    def __init__(self, offset=None, limit=None, name=None):  # noqa: E501
+    def __init__(self, offset=None, limit=None, name=None):
         """ListMigrationTaskRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._offset = None
         self._limit = None

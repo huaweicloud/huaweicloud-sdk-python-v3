@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListRestoreRecordsRequest(object):
+
+
+
+class ListRestoreRecordsRequest:
 
 
     """
@@ -35,8 +38,10 @@ class ListRestoreRecordsRequest(object):
         'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None, begin_time=None, end_time=None, limit=None, offset=None):  # noqa: E501
+    def __init__(self, instance_id=None, begin_time=None, end_time=None, limit=None, offset=None):
         """ListRestoreRecordsRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._instance_id = None
         self._begin_time = None

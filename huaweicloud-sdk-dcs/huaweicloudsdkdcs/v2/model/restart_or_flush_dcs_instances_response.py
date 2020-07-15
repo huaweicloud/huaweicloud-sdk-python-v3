@@ -6,7 +6,10 @@ import re
 import six
 
 
-class RestartOrFlushDCSInstancesResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class RestartOrFlushDCSInstancesResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class RestartOrFlushDCSInstancesResponse(object):
         'results': 'results'
     }
 
-    def __init__(self, results=None):  # noqa: E501
+    def __init__(self, results=None):
         """RestartOrFlushDCSInstancesResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._results = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class CreateTemporaryAccessKeyByAgencyResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class CreateTemporaryAccessKeyByAgencyResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class CreateTemporaryAccessKeyByAgencyResponse(object):
         'credential': 'credential'
     }
 
-    def __init__(self, credential=None):  # noqa: E501
+    def __init__(self, credential=None):
         """CreateTemporaryAccessKeyByAgencyResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._credential = None
         self.discriminator = None

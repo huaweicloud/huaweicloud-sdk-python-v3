@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ShowSubnetRequest(object):
+
+
+
+class ShowSubnetRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ShowSubnetRequest(object):
         'subnet_id': 'subnet_id'
     }
 
-    def __init__(self, subnet_id=None):  # noqa: E501
+    def __init__(self, subnet_id=None):
         """ShowSubnetRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._subnet_id = None
         self.discriminator = None

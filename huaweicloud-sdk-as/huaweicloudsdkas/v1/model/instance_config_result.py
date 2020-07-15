@@ -6,7 +6,10 @@ import re
 import six
 
 
-class InstanceConfigResult(object):
+
+
+
+class InstanceConfigResult:
 
 
     """
@@ -55,8 +58,10 @@ class InstanceConfigResult(object):
         'dedicated_host_id': 'dedicated_host_id'
     }
 
-    def __init__(self, flavor_ref=None, image_ref=None, disk=None, key_name=None, instance_name=None, instance_id=None, admin_pass=None, personality=None, public_ip=None, user_data=None, metadata=None, security_groups=None, server_group_id=None, tenancy=None, dedicated_host_id=None):  # noqa: E501
+    def __init__(self, flavor_ref=None, image_ref=None, disk=None, key_name=None, instance_name=None, instance_id=None, admin_pass=None, personality=None, public_ip=None, user_data=None, metadata=None, security_groups=None, server_group_id=None, tenancy=None, dedicated_host_id=None):
         """InstanceConfigResult - a model defined in huaweicloud sdk"""
+        
+        
 
         self._flavor_ref = None
         self._image_ref = None

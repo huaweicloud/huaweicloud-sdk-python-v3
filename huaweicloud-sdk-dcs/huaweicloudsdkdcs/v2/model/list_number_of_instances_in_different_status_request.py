@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListNumberOfInstancesInDifferentStatusRequest(object):
+
+
+
+class ListNumberOfInstancesInDifferentStatusRequest:
 
 
     """
@@ -27,8 +30,10 @@ class ListNumberOfInstancesInDifferentStatusRequest(object):
         'include_failure': 'include_failure'
     }
 
-    def __init__(self, include_failure=None):  # noqa: E501
+    def __init__(self, include_failure=None):
         """ListNumberOfInstancesInDifferentStatusRequest - a model defined in huaweicloud sdk"""
+        
+        
 
         self._include_failure = None
         self.discriminator = None

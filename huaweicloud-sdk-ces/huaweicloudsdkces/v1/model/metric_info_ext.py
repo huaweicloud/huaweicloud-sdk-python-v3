@@ -6,7 +6,10 @@ import re
 import six
 
 
-class MetricInfoExt(object):
+
+
+
+class MetricInfoExt:
 
 
     """
@@ -31,8 +34,10 @@ class MetricInfoExt(object):
         'namespace': 'namespace'
     }
 
-    def __init__(self, dimensions=None, metric_name=None, namespace=None):  # noqa: E501
+    def __init__(self, dimensions=None, metric_name=None, namespace=None):
         """MetricInfoExt - a model defined in huaweicloud sdk"""
+        
+        
 
         self._dimensions = None
         self._metric_name = None

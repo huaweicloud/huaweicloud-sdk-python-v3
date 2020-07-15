@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ImageDetectionReq(object):
+
+
+
+class ImageDetectionReq:
 
 
     """
@@ -33,8 +36,10 @@ class ImageDetectionReq(object):
         'threshold': 'threshold'
     }
 
-    def __init__(self, url=None, image=None, categories=None, threshold=None):  # noqa: E501
+    def __init__(self, url=None, image=None, categories=None, threshold=None):
         """ImageDetectionReq - a model defined in huaweicloud sdk"""
+        
+        
 
         self._url = None
         self._image = None

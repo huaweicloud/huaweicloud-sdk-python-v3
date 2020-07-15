@@ -6,7 +6,10 @@ import re
 import six
 
 
-class UpdateVolumeOption(object):
+
+
+
+class UpdateVolumeOption:
 
 
     """
@@ -29,8 +32,10 @@ class UpdateVolumeOption(object):
         'name': 'name'
     }
 
-    def __init__(self, description=None, name=None):  # noqa: E501
+    def __init__(self, description=None, name=None):
         """UpdateVolumeOption - a model defined in huaweicloud sdk"""
+        
+        
 
         self._description = None
         self._name = None

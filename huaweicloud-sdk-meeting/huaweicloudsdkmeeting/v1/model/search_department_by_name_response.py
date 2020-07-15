@@ -6,7 +6,10 @@ import re
 import six
 
 
-class SearchDepartmentByNameResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class SearchDepartmentByNameResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class SearchDepartmentByNameResponse(object):
         'body': 'body'
     }
 
-    def __init__(self, body=None):  # noqa: E501
+    def __init__(self, body=None):
         """SearchDepartmentByNameResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._body = None
         self.discriminator = None

@@ -6,7 +6,10 @@ import re
 import six
 
 
-class ListScalingNotificationsResponse(object):
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListScalingNotificationsResponse(SdkResponse):
 
 
     """
@@ -27,8 +30,10 @@ class ListScalingNotificationsResponse(object):
         'topics': 'topics'
     }
 
-    def __init__(self, topics=None):  # noqa: E501
+    def __init__(self, topics=None):
         """ListScalingNotificationsResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
 
         self._topics = None
         self.discriminator = None
