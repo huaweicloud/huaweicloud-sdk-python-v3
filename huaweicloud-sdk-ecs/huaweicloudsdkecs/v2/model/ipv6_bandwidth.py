@@ -38,7 +38,8 @@ class Ipv6Bandwidth:
         self._id = None
         self.discriminator = None
 
-        self.id = id
+        if id is not None:
+            self.id = id
 
     @property
     def id(self):

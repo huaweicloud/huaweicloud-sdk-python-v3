@@ -8,7 +8,7 @@ import importlib
 
 import six
 
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
@@ -38,6 +38,66 @@ class VpcClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkvpc.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
+    @staticmethod
+    def new_builder(clazz):
+        return ClientBuilder(clazz)
+
+    def accept_vpc_peering(self, request):
+        """接受对等连接请求
+
+        租户A名下的VPC申请和租户B的VPC建立对等连接，需要等待租户B接受该请求。此接口用于租户接受其他租户发起的对等连接请求。
+
+        :param AcceptVpcPeeringRequest request
+        :return: AcceptVpcPeeringResponse
+        """
+        return self.accept_vpc_peering_with_http_info(request)
+
+    def accept_vpc_peering_with_http_info(self, request):
+        """接受对等连接请求
+
+        租户A名下的VPC申请和租户B的VPC建立对等连接，需要等待租户B接受该请求。此接口用于租户接受其他租户发起的对等连接请求。
+
+        :param AcceptVpcPeeringRequest request
+        :return: AcceptVpcPeeringResponse
+        """
+
+        all_params = ['peering_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'peering_id' in local_var_params:
+            path_params['peering_id'] = local_var_params['peering_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/vpc/peerings/{peering_id}/accept',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AcceptVpcPeeringResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
     def create_port(self, request):
@@ -99,6 +159,7 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_security_group(self, request):
         """创建安全组
 
@@ -157,6 +218,7 @@ class VpcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def create_security_group_rule(self, request):
         """创建安全组规则
@@ -217,6 +279,7 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_subnet(self, request):
         """创建子网
 
@@ -276,6 +339,67 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
+    def create_vpc_peering(self, request):
+        """创建对等连接
+
+        创建对等连接。
+
+        :param CreateVpcPeeringRequest request
+        :return: CreateVpcPeeringResponse
+        """
+        return self.create_vpc_peering_with_http_info(request)
+
+    def create_vpc_peering_with_http_info(self, request):
+        """创建对等连接
+
+        创建对等连接。
+
+        :param CreateVpcPeeringRequest request
+        :return: CreateVpcPeeringResponse
+        """
+
+        all_params = ['peering']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset&#x3D;UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/vpc/peerings',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateVpcPeeringResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_port(self, request):
         """删除端口
 
@@ -332,6 +456,7 @@ class VpcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def delete_security_group(self, request):
         """删除安全组
@@ -390,6 +515,7 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_security_group_rule(self, request):
         """删除安全组规则
 
@@ -446,6 +572,7 @@ class VpcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def delete_subnet(self, request):
         """删除子网
@@ -505,6 +632,65 @@ class VpcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
+
+    def delete_vpc_peering(self, request):
+        """删除对等连接
+
+        删除对等连接。 可以在在本端或对端任何一端删除对等连接。
+
+        :param DeleteVpcPeeringRequest request
+        :return: DeleteVpcPeeringResponse
+        """
+        return self.delete_vpc_peering_with_http_info(request)
+
+    def delete_vpc_peering_with_http_info(self, request):
+        """删除对等连接
+
+        删除对等连接。 可以在在本端或对端任何一端删除对等连接。
+
+        :param DeleteVpcPeeringRequest request
+        :return: DeleteVpcPeeringResponse
+        """
+
+        all_params = ['peering_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'peering_id' in local_var_params:
+            path_params['peering_id'] = local_var_params['peering_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/vpc/peerings/{peering_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteVpcPeeringResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
 
     def list_ports(self, request):
         """查询端口列表
@@ -585,6 +771,7 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_security_group_rules(self, request):
         """查询安全组规则列表
 
@@ -645,6 +832,7 @@ class VpcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_security_groups(self, request):
         """查询安全组列表
@@ -709,6 +897,7 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_subnets(self, request):
         """查询子网列表
 
@@ -770,6 +959,135 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
+    def list_vpc_peerings(self, request):
+        """查询对等连接列表
+
+        查询提交请求的租户的所有对等连接。根据过滤条件进行过滤。
+
+        :param ListVpcPeeringsRequest request
+        :return: ListVpcPeeringsResponse
+        """
+        return self.list_vpc_peerings_with_http_info(request)
+
+    def list_vpc_peerings_with_http_info(self, request):
+        """查询对等连接列表
+
+        查询提交请求的租户的所有对等连接。根据过滤条件进行过滤。
+
+        :param ListVpcPeeringsRequest request
+        :return: ListVpcPeeringsResponse
+        """
+
+        all_params = ['limit', 'marker', 'id', 'name', 'status', 'tenant_id', 'vpc_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/vpc/peerings',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListVpcPeeringsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def reject_vpc_peering(self, request):
+        """拒绝对等连接请求
+
+        租户A名下的VPC申请和租户B的VPC建立对等连接，需要等待租户B接受该请求。此接口用于租户拒绝其他租户发起的对等连接请求。
+
+        :param RejectVpcPeeringRequest request
+        :return: RejectVpcPeeringResponse
+        """
+        return self.reject_vpc_peering_with_http_info(request)
+
+    def reject_vpc_peering_with_http_info(self, request):
+        """拒绝对等连接请求
+
+        租户A名下的VPC申请和租户B的VPC建立对等连接，需要等待租户B接受该请求。此接口用于租户拒绝其他租户发起的对等连接请求。
+
+        :param RejectVpcPeeringRequest request
+        :return: RejectVpcPeeringResponse
+        """
+
+        all_params = ['peering_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'peering_id' in local_var_params:
+            path_params['peering_id'] = local_var_params['peering_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/vpc/peerings/{peering_id}/reject',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RejectVpcPeeringResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_port(self, request):
         """查询端口
 
@@ -826,6 +1144,7 @@ class VpcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_quota(self, request):
         """查询配额
@@ -884,6 +1203,7 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_security_group(self, request):
         """查询安全组
 
@@ -940,6 +1260,7 @@ class VpcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_security_group_rule(self, request):
         """查询安全组规则
@@ -998,6 +1319,7 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_subnet(self, request):
         """查询子网
 
@@ -1054,6 +1376,65 @@ class VpcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
+
+    def show_vpc_peering(self, request):
+        """查询对等连接
+
+        查询对等连接详情。
+
+        :param ShowVpcPeeringRequest request
+        :return: ShowVpcPeeringResponse
+        """
+        return self.show_vpc_peering_with_http_info(request)
+
+    def show_vpc_peering_with_http_info(self, request):
+        """查询对等连接
+
+        查询对等连接详情。
+
+        :param ShowVpcPeeringRequest request
+        :return: ShowVpcPeeringResponse
+        """
+
+        all_params = ['peering_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'peering_id' in local_var_params:
+            path_params['peering_id'] = local_var_params['peering_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/vpc/peerings/{peering_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowVpcPeeringResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
 
     def update_port(self, request):
         """更新端口
@@ -1115,6 +1496,7 @@ class VpcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_subnet(self, request):
         """更新子网
@@ -1180,6 +1562,68 @@ class VpcClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_vpc_peering(self, request):
+        """更新对等连接
+
+        更新对等连接。
+
+        :param UpdateVpcPeeringRequest request
+        :return: UpdateVpcPeeringResponse
+        """
+        return self.update_vpc_peering_with_http_info(request)
+
+    def update_vpc_peering_with_http_info(self, request):
+        """更新对等连接
+
+        更新对等连接。
+
+        :param UpdateVpcPeeringRequest request
+        :return: UpdateVpcPeeringResponse
+        """
+
+        all_params = ['peering_id', 'peering']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'peering_id' in local_var_params:
+            path_params['peering_id'] = local_var_params['peering_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset&#x3D;UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/vpc/peerings/{peering_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateVpcPeeringResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_privateip(self, request):
         """申请私有IP
 
@@ -1239,6 +1683,7 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_privateip(self, request):
         """删除私有IP
 
@@ -1295,6 +1740,7 @@ class VpcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_privateips(self, request):
         """查询私有IP列表
@@ -1356,6 +1802,7 @@ class VpcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_privateip(self, request):
         """查询私有IP
@@ -1474,6 +1921,67 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
+    def create_vpc_route(self, request):
+        """创建VPC路由
+
+        创建路由
+
+        :param CreateVpcRouteRequest request
+        :return: CreateVpcRouteResponse
+        """
+        return self.create_vpc_route_with_http_info(request)
+
+    def create_vpc_route_with_http_info(self, request):
+        """创建VPC路由
+
+        创建路由
+
+        :param CreateVpcRouteRequest request
+        :return: CreateVpcRouteResponse
+        """
+
+        all_params = ['route']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset&#x3D;UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/vpc/routes',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateVpcRouteResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_vpc(self, request):
         """删除VPC
 
@@ -1530,6 +2038,135 @@ class VpcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
+
+    def delete_vpc_route(self, request):
+        """删除VPC路由
+
+        删除路由
+
+        :param DeleteVpcRouteRequest request
+        :return: DeleteVpcRouteResponse
+        """
+        return self.delete_vpc_route_with_http_info(request)
+
+    def delete_vpc_route_with_http_info(self, request):
+        """删除VPC路由
+
+        删除路由
+
+        :param DeleteVpcRouteRequest request
+        :return: DeleteVpcRouteResponse
+        """
+
+        all_params = ['route_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'route_id' in local_var_params:
+            path_params['route_id'] = local_var_params['route_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/vpc/routes/{route_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteVpcRouteResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_vpc_routes(self, request):
+        """查询VPC路由列表
+
+        查询提交请求的租户的所有路由列表，并根据过滤条件进行过滤。
+
+        :param ListVpcRoutesRequest request
+        :return: ListVpcRoutesResponse
+        """
+        return self.list_vpc_routes_with_http_info(request)
+
+    def list_vpc_routes_with_http_info(self, request):
+        """查询VPC路由列表
+
+        查询提交请求的租户的所有路由列表，并根据过滤条件进行过滤。
+
+        :param ListVpcRoutesRequest request
+        :return: ListVpcRoutesResponse
+        """
+
+        all_params = ['limit', 'marker', 'id', 'type', 'vpc_id', 'destination', 'tenant_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+        if 'destination' in local_var_params:
+            query_params.append(('destination', local_var_params['destination']))
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/vpc/routes',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListVpcRoutesResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
 
     def list_vpcs(self, request):
         """查询VPC列表
@@ -1594,6 +2231,7 @@ class VpcClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_vpc(self, request):
         """查询VPC
 
@@ -1650,6 +2288,65 @@ class VpcClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
+
+    def show_vpc_route(self, request):
+        """查询VPC路由
+
+        查询路由详情
+
+        :param ShowVpcRouteRequest request
+        :return: ShowVpcRouteResponse
+        """
+        return self.show_vpc_route_with_http_info(request)
+
+    def show_vpc_route_with_http_info(self, request):
+        """查询VPC路由
+
+        查询路由详情
+
+        :param ShowVpcRouteRequest request
+        :return: ShowVpcRouteResponse
+        """
+
+        all_params = ['route_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'route_id' in local_var_params:
+            path_params['route_id'] = local_var_params['route_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/vpc/routes/{route_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowVpcRouteResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
 
     def update_vpc(self, request):
         """更新VPC

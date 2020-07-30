@@ -8,7 +8,7 @@ import importlib
 
 import six
 
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
@@ -38,7 +38,9 @@ class DdsClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkdds.v3.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-
+    @staticmethod
+    def new_builder(clazz):
+        return ClientBuilder(clazz)
 
     def add_sharding_node(self, request):
         """扩容指定集群实例的节点数量
@@ -101,6 +103,7 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def batch_create_instance_tags(self, request):
         """批量添加指定实例的标签
 
@@ -161,6 +164,7 @@ class DdsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def batch_delete_instance_tags(self, request):
         """批量删除指定实例的标签
@@ -223,6 +227,7 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_instance(self, request):
         """创建文档数据库实例，包括集群实例、副本集实例、以及单节点实例。
 
@@ -281,6 +286,7 @@ class DdsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def create_manual_backup(self, request):
         """创建数据库实例的手动备份
@@ -341,6 +347,7 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_instance(self, request):
         """删除数据库实例
 
@@ -398,6 +405,7 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_manual_backup(self, request):
         """删除数据库实例的手动备份
 
@@ -454,6 +462,7 @@ class DdsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_backups(self, request):
         """根据指定条件查询备份列表
@@ -526,6 +535,7 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_datastore_versions(self, request):
         """查询数据库版本信息
 
@@ -582,6 +592,7 @@ class DdsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_flavors(self, request):
         """查询指定条件下的所有实例规格信息
@@ -642,6 +653,7 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_instance_tags(self, request):
         """查询指定实例的标签信息
 
@@ -698,6 +710,7 @@ class DdsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_instances(self, request):
         """根据指定条件查询实例列表
@@ -770,6 +783,7 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_instances_by_tags(self, request):
         """根据标签查询指定的数据库实例
 
@@ -829,6 +843,7 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_project_tags(self, request):
         """查询指定project ID下实例的所有标签集合
 
@@ -883,6 +898,7 @@ class DdsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def resize_instance(self, request):
         """变更实例的规格
@@ -945,6 +961,7 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def resize_instance_volume(self, request):
         """扩容实例相关的存储容量大小
 
@@ -1005,6 +1022,7 @@ class DdsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def restart_instance(self, request):
         """重启实例的数据库服务
@@ -1067,6 +1085,7 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def set_backup_policy(self, request):
         """设置自动备份策略
 
@@ -1127,6 +1146,7 @@ class DdsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_backup_policy(self, request):
         """查询自动备份策略

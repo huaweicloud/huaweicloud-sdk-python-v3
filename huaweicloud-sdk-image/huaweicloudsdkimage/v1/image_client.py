@@ -8,7 +8,7 @@ import importlib
 
 import six
 
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
@@ -38,7 +38,9 @@ class ImageClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkimage.v1.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-
+    @staticmethod
+    def new_builder(clazz):
+        return ClientBuilder(clazz)
 
     def run_celebrity_recognition(self, request):
         """名人识别
@@ -98,6 +100,7 @@ class ImageClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def run_image_tagging(self, request):
         """图像标签

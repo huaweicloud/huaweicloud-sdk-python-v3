@@ -8,7 +8,7 @@ import importlib
 
 import six
 
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
@@ -38,7 +38,9 @@ class CesClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkces.v1.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-
+    @staticmethod
+    def new_builder(clazz):
+        return ClientBuilder(clazz)
 
     def batch_list_metric_data(self, request):
         """批量查询监控数据
@@ -99,6 +101,7 @@ class CesClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_alarm(self, request):
         """创建告警规则
 
@@ -157,6 +160,7 @@ class CesClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def create_events(self, request):
         """上报事件
@@ -217,6 +221,7 @@ class CesClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_metric_data(self, request):
         """添加监控数据
 
@@ -276,6 +281,7 @@ class CesClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_alarm(self, request):
         """删除告警规则
 
@@ -332,6 +338,7 @@ class CesClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_alarms(self, request):
         """查询告警规则列表
@@ -393,6 +400,7 @@ class CesClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_metrics(self, request):
         """查询指标列表
@@ -465,6 +473,7 @@ class CesClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_alarm(self, request):
         """查询单条告警规则信息
 
@@ -521,6 +530,7 @@ class CesClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_event_data(self, request):
         """查询主机配置数据
@@ -590,6 +600,7 @@ class CesClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_metric_data(self, request):
         """查询监控数据
@@ -664,6 +675,7 @@ class CesClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_quotas(self, request):
         """查询配额
 
@@ -718,6 +730,7 @@ class CesClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_alarm_action(self, request):
         """启停告警规则

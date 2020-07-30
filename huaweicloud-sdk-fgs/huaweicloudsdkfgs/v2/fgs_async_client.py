@@ -8,7 +8,7 @@ import importlib
 
 import six
 
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
@@ -38,7 +38,9 @@ class FgsAsyncClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkfgs.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-
+    @staticmethod
+    def new_builder(clazz):
+        return ClientBuilder(clazz)
 
     def async_invoke_function_async(self, request):
         """异步执行函数。
@@ -101,6 +103,7 @@ class FgsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_function_async(self, request):
         """创建函数。
 
@@ -159,6 +162,7 @@ class FgsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def create_function_version_async(self, request):
         """发布函数版本。
@@ -221,6 +225,7 @@ class FgsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_version_alias_async(self, request):
         """创建函数版本别名。
 
@@ -282,6 +287,7 @@ class FgsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_function_async(self, request):
         """删除函数/版本。
 
@@ -338,6 +344,7 @@ class FgsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def delete_version_alias_async(self, request):
         """删除函数版本别名。
@@ -397,6 +404,7 @@ class FgsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def invoke_function_async(self, request):
         """同步执行函数。
@@ -463,6 +471,7 @@ class FgsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_function_versions_async(self, request):
         """获取指定函数的版本列表。
 
@@ -524,6 +533,7 @@ class FgsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_functions_async(self, request):
         """获取函数列表
 
@@ -583,6 +593,7 @@ class FgsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_version_aliases_async(self, request):
         """获取指定函数所有版本别名列表。
 
@@ -639,6 +650,7 @@ class FgsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_function_code_async(self, request):
         """获取指定函数代码。
@@ -697,6 +709,7 @@ class FgsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_function_config_async(self, request):
         """获取函数的metadata。
 
@@ -753,6 +766,7 @@ class FgsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_version_alias_async(self, request):
         """获取函数版本的指定别名信息。
@@ -812,6 +826,7 @@ class FgsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_function_code_async(self, request):
         """修改函数代码。
@@ -874,6 +889,7 @@ class FgsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def update_function_config_async(self, request):
         """修改函数的metadata信息。
 
@@ -934,6 +950,7 @@ class FgsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_version_alias_async(self, request):
         """修改函数版本别名信息。
@@ -1056,6 +1073,7 @@ class FgsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_function_trigger_async(self, request):
         """创建触发器。
 
@@ -1116,6 +1134,7 @@ class FgsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def delete_function_trigger_async(self, request):
         """删除触发器。
@@ -1178,6 +1197,7 @@ class FgsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_function_triggers_async(self, request):
         """获取指定函数的所有触发器。
 
@@ -1234,6 +1254,7 @@ class FgsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_function_trigger_async(self, request):
         """获取指定触发器的信息。

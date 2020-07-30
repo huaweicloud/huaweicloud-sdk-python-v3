@@ -8,7 +8,7 @@ import importlib
 
 import six
 
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
@@ -38,7 +38,9 @@ class EvsClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkevs.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-
+    @staticmethod
+    def new_builder(clazz):
+        return ClientBuilder(clazz)
 
     def batch_create_volume_tags(self, request):
         """为指定云硬盘批量添加标签
@@ -101,6 +103,7 @@ class EvsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def batch_delete_volume_tags(self, request):
         """为指定云硬盘批量删除标签
 
@@ -161,6 +164,7 @@ class EvsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def cinder_export_to_image(self, request):
         """将云硬盘导出为镜像
@@ -223,6 +227,7 @@ class EvsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def cinder_list_availability_zones(self, request):
         """查询所有的可用分区信息
 
@@ -277,6 +282,7 @@ class EvsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def cinder_list_quotas(self, request):
         """查询租户的详细配额
@@ -337,6 +343,7 @@ class EvsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def cinder_list_volume_types(self, request):
         """查询云硬盘类型列表
 
@@ -391,6 +398,7 @@ class EvsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def create_snapshot(self, request):
         """创建云硬盘快照
@@ -451,6 +459,7 @@ class EvsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_volume(self, request):
         """创建云硬盘
 
@@ -510,6 +519,7 @@ class EvsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_snapshot(self, request):
         """删除云硬盘快照
 
@@ -567,6 +577,7 @@ class EvsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_volume(self, request):
         """删除云硬盘
 
@@ -623,6 +634,7 @@ class EvsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_snapshots_details(self, request):
         """查询云硬盘快照详细列表信息
@@ -701,6 +713,7 @@ class EvsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_volume_tags(self, request):
         """获取云硬盘资源的所有标签
 
@@ -755,6 +768,7 @@ class EvsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_volumes_by_tags(self, request):
         """通过标签查询云硬盘资源实例详情
@@ -814,6 +828,7 @@ class EvsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_volumes_details(self, request):
         """查询所有云硬盘详情
@@ -904,6 +919,7 @@ class EvsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def resize_volume(self, request):
         """扩容云硬盘
 
@@ -964,6 +980,7 @@ class EvsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def rollback_snapshot(self, request):
         """回滚快照到云硬盘
@@ -1026,6 +1043,7 @@ class EvsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_job(self, request):
         """查询job的状态
 
@@ -1082,6 +1100,7 @@ class EvsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_snapshot(self, request):
         """查询单个云硬盘快照详细信息
@@ -1140,6 +1159,7 @@ class EvsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_volume(self, request):
         """查询单个云硬盘详情
 
@@ -1197,6 +1217,7 @@ class EvsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_volume_tags(self, request):
         """查询云硬盘标签
 
@@ -1253,6 +1274,7 @@ class EvsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_snapshot(self, request):
         """更新云硬盘快照
@@ -1314,6 +1336,7 @@ class EvsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_volume(self, request):
         """更新云硬盘

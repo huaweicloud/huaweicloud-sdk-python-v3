@@ -8,7 +8,7 @@ import importlib
 
 import six
 
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
@@ -38,6 +38,70 @@ class EcsClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkecs.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
+    @staticmethod
+    def new_builder(clazz):
+        return ClientBuilder(clazz)
+
+    def add_server_group_member(self, request):
+        """云服务器组添加成员
+
+        将云服务器加入云服务器组。添加成功后，如果该云服务器组是反亲和性策略的，则该云服务器与云服务器组中的其他成员尽量分散地创建在不同主机上。如果该云服务器时故障域类型的，则该云服务器会拥有故障域属性。
+
+        :param AddServerGroupMemberRequest request
+        :return: AddServerGroupMemberResponse
+        """
+        return self.add_server_group_member_with_http_info(request)
+
+    def add_server_group_member_with_http_info(self, request):
+        """云服务器组添加成员
+
+        将云服务器加入云服务器组。添加成功后，如果该云服务器组是反亲和性策略的，则该云服务器与云服务器组中的其他成员尽量分散地创建在不同主机上。如果该云服务器时故障域类型的，则该云服务器会拥有故障域属性。
+
+        :param AddServerGroupMemberRequest request
+        :return: AddServerGroupMemberResponse
+        """
+
+        all_params = ['server_group_id', 'add_server_group_member_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_group_id' in local_var_params:
+            path_params['server_group_id'] = local_var_params['server_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset&#x3D;UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddServerGroupMemberResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
 
 
     def attach_server_volume(self, request):
@@ -101,6 +165,7 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def batch_add_server_nics(self, request):
         """批量添加云服务器网卡
 
@@ -161,6 +226,7 @@ class EcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def batch_create_server_tags(self, request):
         """批量添加云服务器标签
@@ -223,6 +289,7 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def batch_delete_server_nics(self, request):
         """批量删除云服务器网卡
 
@@ -283,6 +350,7 @@ class EcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def batch_delete_server_tags(self, request):
         """批量删除云服务器标签
@@ -345,6 +413,7 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def batch_reboot_servers(self, request):
         """批量重启云服务器
 
@@ -403,6 +472,7 @@ class EcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def batch_start_servers(self, request):
         """批量启动云服务器
@@ -463,6 +533,7 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def batch_stop_servers(self, request):
         """批量关闭云服务器
 
@@ -521,6 +592,69 @@ class EcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
+
+    def change_server_os_with_cloud_init(self, request):
+        """切换弹性云服务器操作系统(安装Cloud init)
+
+        切换弹性云服务器操作系统。支持弹性云服务器数据盘不变的情况下，使用新镜像重装系统盘。  调用该接口后，系统将卸载系统盘，然后使用新镜像重新创建系统盘，并挂载至弹性云服务器，实现切换操作系统功能。
+
+        :param ChangeServerOsWithCloudInitRequest request
+        :return: ChangeServerOsWithCloudInitResponse
+        """
+        return self.change_server_os_with_cloud_init_with_http_info(request)
+
+    def change_server_os_with_cloud_init_with_http_info(self, request):
+        """切换弹性云服务器操作系统(安装Cloud init)
+
+        切换弹性云服务器操作系统。支持弹性云服务器数据盘不变的情况下，使用新镜像重装系统盘。  调用该接口后，系统将卸载系统盘，然后使用新镜像重新创建系统盘，并挂载至弹性云服务器，实现切换操作系统功能。
+
+        :param ChangeServerOsWithCloudInitRequest request
+        :return: ChangeServerOsWithCloudInitResponse
+        """
+
+        all_params = ['server_id', 'change_server_os_with_cloud_init_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset&#x3D;UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/cloudservers/{server_id}/changeos',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ChangeServerOsWithCloudInitResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
 
     def create_post_paid_servers(self, request):
         """创建云服务器(按需)
@@ -581,6 +715,67 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
+    def create_server_group(self, request):
+        """创建云服务器组
+
+        创建弹性云服务器组。  与原生的创建云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
+
+        :param CreateServerGroupRequest request
+        :return: CreateServerGroupResponse
+        """
+        return self.create_server_group_with_http_info(request)
+
+    def create_server_group_with_http_info(self, request):
+        """创建云服务器组
+
+        创建弹性云服务器组。  与原生的创建云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
+
+        :param CreateServerGroupRequest request
+        :return: CreateServerGroupResponse
+        """
+
+        all_params = ['create_server_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset&#x3D;UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/os-server-groups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateServerGroupResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_servers(self, request):
         """创建云服务器
 
@@ -640,6 +835,187 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
+    def delete_server_group(self, request):
+        """删除云服务器组
+
+        删除云服务器组。  与原生的删除云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
+
+        :param DeleteServerGroupRequest request
+        :return: DeleteServerGroupResponse
+        """
+        return self.delete_server_group_with_http_info(request)
+
+    def delete_server_group_with_http_info(self, request):
+        """删除云服务器组
+
+        删除云服务器组。  与原生的删除云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
+
+        :param DeleteServerGroupRequest request
+        :return: DeleteServerGroupResponse
+        """
+
+        all_params = ['server_group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_group_id' in local_var_params:
+            path_params['server_group_id'] = local_var_params['server_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteServerGroupResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_server_group_member(self, request):
+        """云服务器组删除成员
+
+        将弹性云服务器移出云服务器组。移出后，该云服务器与云服务器组中的成员不再遵从反亲和策略。
+
+        :param DeleteServerGroupMemberRequest request
+        :return: DeleteServerGroupMemberResponse
+        """
+        return self.delete_server_group_member_with_http_info(request)
+
+    def delete_server_group_member_with_http_info(self, request):
+        """云服务器组删除成员
+
+        将弹性云服务器移出云服务器组。移出后，该云服务器与云服务器组中的成员不再遵从反亲和策略。
+
+        :param DeleteServerGroupMemberRequest request
+        :return: DeleteServerGroupMemberResponse
+        """
+
+        all_params = ['server_group_id', 'delete_server_group_member_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_group_id' in local_var_params:
+            path_params['server_group_id'] = local_var_params['server_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset&#x3D;UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteServerGroupMemberResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_server_metadata(self, request):
+        """删除云服务器指定元数据
+
+        删除云服务器指定元数据。
+
+        :param DeleteServerMetadataRequest request
+        :return: DeleteServerMetadataResponse
+        """
+        return self.delete_server_metadata_with_http_info(request)
+
+    def delete_server_metadata_with_http_info(self, request):
+        """删除云服务器指定元数据
+
+        删除云服务器指定元数据。
+
+        :param DeleteServerMetadataRequest request
+        :return: DeleteServerMetadataResponse
+        """
+
+        all_params = ['key', 'server_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'key' in local_var_params:
+            path_params['key'] = local_var_params['key']
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/metadata/{key}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteServerMetadataResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_servers(self, request):
         """删除云服务器
 
@@ -698,6 +1074,7 @@ class EcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def detach_server_volume(self, request):
         """弹性云服务器卸载磁盘
@@ -760,6 +1137,7 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_flavors(self, request):
         """查询规格详情和规格扩展信息列表
 
@@ -816,6 +1194,77 @@ class EcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
+
+    def list_resize_flavors(self, request):
+        """查询云服务器规格变更支持列表
+
+        变更规格时，部分规格的云服务器之间不能互相变更。您可以通过本接口，通过指定弹性云服务器规格，查询该规格可以变更的规格列表。
+
+        :param ListResizeFlavorsRequest request
+        :return: ListResizeFlavorsResponse
+        """
+        return self.list_resize_flavors_with_http_info(request)
+
+    def list_resize_flavors_with_http_info(self, request):
+        """查询云服务器规格变更支持列表
+
+        变更规格时，部分规格的云服务器之间不能互相变更。您可以通过本接口，通过指定弹性云服务器规格，查询该规格可以变更的规格列表。
+
+        :param ListResizeFlavorsRequest request
+        :return: ListResizeFlavorsResponse
+        """
+
+        all_params = ['instance_uuid', 'limit', 'marker', 'sort_dir', 'sort_key', 'source_flavor_id', 'source_flavor_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'instance_uuid' in local_var_params:
+            query_params.append(('instance_uuid', local_var_params['instance_uuid']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'source_flavor_id' in local_var_params:
+            query_params.append(('source_flavor_id', local_var_params['source_flavor_id']))
+        if 'source_flavor_name' in local_var_params:
+            query_params.append(('source_flavor_name', local_var_params['source_flavor_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/resize_flavors',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListResizeFlavorsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
 
     def list_server_block_devices(self, request):
         """查询弹性云服务器磁盘信息
@@ -874,6 +1323,7 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_server_interfaces(self, request):
         """查询云服务器网卡信息
 
@@ -931,6 +1381,7 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_servers_details(self, request):
         """查询云服务器详情列表
 
@@ -950,7 +1401,7 @@ class EcsClient(Client):
         :return: ListServersDetailsResponse
         """
 
-        all_params = ['offset', 'flavor', 'name', 'status', 'limit', 'not_tags', 'reservation_id', 'enterprise_project_id', 'tags', 'ip']
+        all_params = ['enterprise_project_id', 'flavor', 'ip', 'limit', 'name', 'not_tags', 'offset', 'reservation_id', 'status', 'tags']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -961,26 +1412,26 @@ class EcsClient(Client):
         path_params = {}
 
         query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'flavor' in local_var_params:
-            query_params.append(('flavor', local_var_params['flavor']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'not_tags' in local_var_params:
-            query_params.append(('not-tags', local_var_params['not_tags']))
-        if 'reservation_id' in local_var_params:
-            query_params.append(('reservation_id', local_var_params['reservation_id']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-        if 'tags' in local_var_params:
-            query_params.append(('tags', local_var_params['tags']))
+        if 'flavor' in local_var_params:
+            query_params.append(('flavor', local_var_params['flavor']))
         if 'ip' in local_var_params:
             query_params.append(('ip', local_var_params['ip']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'not_tags' in local_var_params:
+            query_params.append(('not-tags', local_var_params['not_tags']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'reservation_id' in local_var_params:
+            query_params.append(('reservation_id', local_var_params['reservation_id']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -1005,6 +1456,131 @@ class EcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
+
+    def nova_associate_security_group(self, request):
+        """添加安全组
+
+        为弹性云服务器添加一个安全组。  添加多个安全组时，建议最多为弹性云服务器添加5个安全组。
+
+        :param NovaAssociateSecurityGroupRequest request
+        :return: NovaAssociateSecurityGroupResponse
+        """
+        return self.nova_associate_security_group_with_http_info(request)
+
+    def nova_associate_security_group_with_http_info(self, request):
+        """添加安全组
+
+        为弹性云服务器添加一个安全组。  添加多个安全组时，建议最多为弹性云服务器添加5个安全组。
+
+        :param NovaAssociateSecurityGroupRequest request
+        :return: NovaAssociateSecurityGroupResponse
+        """
+
+        all_params = ['server_id', 'nova_associate_security_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset&#x3D;UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/{project_id}/servers/{server_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NovaAssociateSecurityGroupResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def nova_create_keypair(self, request):
+        """创建和导入SSH密钥
+
+        创建SSH密钥，或把公钥导入系统，生成密钥对。  创建SSH密钥成功后，请把响应数据中的私钥内容保存到本地文件，用户使用该私钥登录云服务器云主机。为保证云服务器云主机器安全，私钥数据只能读取一次，请妥善保管。
+
+        :param NovaCreateKeypairRequest request
+        :return: NovaCreateKeypairResponse
+        """
+        return self.nova_create_keypair_with_http_info(request)
+
+    def nova_create_keypair_with_http_info(self, request):
+        """创建和导入SSH密钥
+
+        创建SSH密钥，或把公钥导入系统，生成密钥对。  创建SSH密钥成功后，请把响应数据中的私钥内容保存到本地文件，用户使用该私钥登录云服务器云主机。为保证云服务器云主机器安全，私钥数据只能读取一次，请妥善保管。
+
+        :param NovaCreateKeypairRequest request
+        :return: NovaCreateKeypairResponse
+        """
+
+        all_params = ['nova_create_keypair_request_body', 'open_stack_api_version']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'open_stack_api_version' in local_var_params:
+            header_params['OpenStack-API-Version'] = local_var_params['open_stack_api_version']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset&#x3D;UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/{project_id}/os-keypairs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NovaCreateKeypairResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
 
     def nova_create_servers(self, request):
         """创建云服务器
@@ -1067,6 +1643,65 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
+    def nova_delete_keypair(self, request):
+        """删除SSH密钥
+
+        根据SSH密钥的名称，删除指定SSH密钥。
+
+        :param NovaDeleteKeypairRequest request
+        :return: NovaDeleteKeypairResponse
+        """
+        return self.nova_delete_keypair_with_http_info(request)
+
+    def nova_delete_keypair_with_http_info(self, request):
+        """删除SSH密钥
+
+        根据SSH密钥的名称，删除指定SSH密钥。
+
+        :param NovaDeleteKeypairRequest request
+        :return: NovaDeleteKeypairResponse
+        """
+
+        all_params = ['keypair_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'keypair_name' in local_var_params:
+            path_params['keypair_name'] = local_var_params['keypair_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/{project_id}/os-keypairs/{keypair_name}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NovaDeleteKeypairResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def nova_delete_server(self, request):
         """删除云服务器
 
@@ -1124,6 +1759,245 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
+    def nova_disassociate_security_group(self, request):
+        """移除安全组
+
+        移除弹性云服务器中的安全组。
+
+        :param NovaDisassociateSecurityGroupRequest request
+        :return: NovaDisassociateSecurityGroupResponse
+        """
+        return self.nova_disassociate_security_group_with_http_info(request)
+
+    def nova_disassociate_security_group_with_http_info(self, request):
+        """移除安全组
+
+        移除弹性云服务器中的安全组。
+
+        :param NovaDisassociateSecurityGroupRequest request
+        :return: NovaDisassociateSecurityGroupResponse
+        """
+
+        all_params = ['server_id', 'nova_disassociate_security_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset&#x3D;UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/{project_id}/servers/{server_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NovaDisassociateSecurityGroupResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def nova_list_availability_zones(self, request):
+        """查询可用区列表
+
+        查询可用域列表。
+
+        :param NovaListAvailabilityZonesRequest request
+        :return: NovaListAvailabilityZonesResponse
+        """
+        return self.nova_list_availability_zones_with_http_info(request)
+
+    def nova_list_availability_zones_with_http_info(self, request):
+        """查询可用区列表
+
+        查询可用域列表。
+
+        :param NovaListAvailabilityZonesRequest request
+        :return: NovaListAvailabilityZonesResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/{project_id}/os-availability-zone',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NovaListAvailabilityZonesResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def nova_list_keypairs(self, request):
+        """查询SSH密钥列表
+
+        查询SSH密钥信息列表。
+
+        :param NovaListKeypairsRequest request
+        :return: NovaListKeypairsResponse
+        """
+        return self.nova_list_keypairs_with_http_info(request)
+
+    def nova_list_keypairs_with_http_info(self, request):
+        """查询SSH密钥列表
+
+        查询SSH密钥信息列表。
+
+        :param NovaListKeypairsRequest request
+        :return: NovaListKeypairsResponse
+        """
+
+        all_params = ['limit', 'marker', 'open_stack_api_version']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+        if 'open_stack_api_version' in local_var_params:
+            header_params['OpenStack-API-Version'] = local_var_params['open_stack_api_version']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/{project_id}/os-keypairs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NovaListKeypairsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def nova_list_server_security_groups(self, request):
+        """查询指定云服务器安全组列表
+
+        查询指定弹性云服务器的安全组。
+
+        :param NovaListServerSecurityGroupsRequest request
+        :return: NovaListServerSecurityGroupsResponse
+        """
+        return self.nova_list_server_security_groups_with_http_info(request)
+
+    def nova_list_server_security_groups_with_http_info(self, request):
+        """查询指定云服务器安全组列表
+
+        查询指定弹性云服务器的安全组。
+
+        :param NovaListServerSecurityGroupsRequest request
+        :return: NovaListServerSecurityGroupsResponse
+        """
+
+        all_params = ['server_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/{project_id}/servers/{server_id}/os-security-groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NovaListServerSecurityGroupsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def nova_list_servers_details(self, request):
         """查询云服务器详情列表
 
@@ -1143,7 +2017,7 @@ class EcsClient(Client):
         :return: NovaListServersDetailsResponse
         """
 
-        all_params = ['open_stack_api_version', 'changes_since', 'ip', 'image', 'flavor', 'name', 'status', 'limit', 'marker', 'tags', 'not_tags', 'reservation_id', 'sort_key']
+        all_params = ['changes_since', 'flavor', 'image', 'ip', 'limit', 'marker', 'name', 'not_tags', 'reservation_id', 'sort_key', 'status', 'tags', 'open_stack_api_version']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1156,28 +2030,28 @@ class EcsClient(Client):
         query_params = []
         if 'changes_since' in local_var_params:
             query_params.append(('changes-since', local_var_params['changes_since']))
-        if 'ip' in local_var_params:
-            query_params.append(('ip', local_var_params['ip']))
-        if 'image' in local_var_params:
-            query_params.append(('image', local_var_params['image']))
         if 'flavor' in local_var_params:
             query_params.append(('flavor', local_var_params['flavor']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
+        if 'image' in local_var_params:
+            query_params.append(('image', local_var_params['image']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
-        if 'tags' in local_var_params:
-            query_params.append(('tags', local_var_params['tags']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
         if 'not_tags' in local_var_params:
             query_params.append(('not-tags', local_var_params['not_tags']))
         if 'reservation_id' in local_var_params:
             query_params.append(('reservation_id', local_var_params['reservation_id']))
         if 'sort_key' in local_var_params:
             query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
         if 'open_stack_api_version' in local_var_params:
@@ -1204,6 +2078,7 @@ class EcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def nova_show_server(self, request):
         """查询云服务器详情
@@ -1263,6 +2138,131 @@ class EcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
+
+    def reinstall_server_with_cloud_init(self, request):
+        """重装弹性云服务器操作系统(安装Cloud-init)
+
+        重装弹性云服务器的操作系统。支持弹性云服务器数据盘不变的情况下，使用原镜像重装系统盘。  调用该接口后，系统将卸载系统盘，然后使用原镜像重新创建系统盘，并挂载至弹性云服务器，实现重装操作系统功能。
+
+        :param ReinstallServerWithCloudInitRequest request
+        :return: ReinstallServerWithCloudInitResponse
+        """
+        return self.reinstall_server_with_cloud_init_with_http_info(request)
+
+    def reinstall_server_with_cloud_init_with_http_info(self, request):
+        """重装弹性云服务器操作系统(安装Cloud-init)
+
+        重装弹性云服务器的操作系统。支持弹性云服务器数据盘不变的情况下，使用原镜像重装系统盘。  调用该接口后，系统将卸载系统盘，然后使用原镜像重新创建系统盘，并挂载至弹性云服务器，实现重装操作系统功能。
+
+        :param ReinstallServerWithCloudInitRequest request
+        :return: ReinstallServerWithCloudInitResponse
+        """
+
+        all_params = ['server_id', 'reinstall_server_with_cloud_init_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset&#x3D;UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/cloudservers/{server_id}/reinstallos',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ReinstallServerWithCloudInitResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def reset_server_password(self, request):
+        """一键重置弹性云服务器密码(企业项目)
+
+        重置弹性云服务器管理帐号（root用户或Administrator用户）的密码。
+
+        :param ResetServerPasswordRequest request
+        :return: ResetServerPasswordResponse
+        """
+        return self.reset_server_password_with_http_info(request)
+
+    def reset_server_password_with_http_info(self, request):
+        """一键重置弹性云服务器密码(企业项目)
+
+        重置弹性云服务器管理帐号（root用户或Administrator用户）的密码。
+
+        :param ResetServerPasswordRequest request
+        :return: ResetServerPasswordResponse
+        """
+
+        all_params = ['server_id', 'reset_server_password_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset&#x3D;UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/os-reset-password',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ResetServerPasswordResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
 
     def resize_post_paid_server(self, request):
         """变更云服务器规格(按需)
@@ -1325,6 +2325,127 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
+    def resize_server(self, request):
+        """变更云服务器规格
+
+        变更云服务器规格。  v1.1版本：指该接口兼容v1接口的功能，同时合入新功能，支持变更包年/包月弹性云服务器的规格。  注意事项：  - 该接口可以使用合作伙伴自身的AK/SK或者token调用，也可以用合作伙伴子客户的AK/SK或者token来调用。 - 如果使用AK/SK认证方式，示例代码中region请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)中“弹性云服务 ECS”下“区域”的内容，，serviceName（英文服务名称缩写）请指定为ECS。 - Endpoint请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)中“弹性云服务 ECS”下“终端节点（Endpoint）”的内容。
+
+        :param ResizeServerRequest request
+        :return: ResizeServerResponse
+        """
+        return self.resize_server_with_http_info(request)
+
+    def resize_server_with_http_info(self, request):
+        """变更云服务器规格
+
+        变更云服务器规格。  v1.1版本：指该接口兼容v1接口的功能，同时合入新功能，支持变更包年/包月弹性云服务器的规格。  注意事项：  - 该接口可以使用合作伙伴自身的AK/SK或者token调用，也可以用合作伙伴子客户的AK/SK或者token来调用。 - 如果使用AK/SK认证方式，示例代码中region请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)中“弹性云服务 ECS”下“区域”的内容，，serviceName（英文服务名称缩写）请指定为ECS。 - Endpoint请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)中“弹性云服务 ECS”下“终端节点（Endpoint）”的内容。
+
+        :param ResizeServerRequest request
+        :return: ResizeServerResponse
+        """
+
+        all_params = ['server_id', 'resize_server_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset&#x3D;UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.1/{project_id}/cloudservers/{server_id}/resize',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ResizeServerResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_reset_password_flag(self, request):
+        """查询是否支持一键重置密码
+
+        查询弹性云服务器是否支持一键重置密码。
+
+        :param ShowResetPasswordFlagRequest request
+        :return: ShowResetPasswordFlagResponse
+        """
+        return self.show_reset_password_flag_with_http_info(request)
+
+    def show_reset_password_flag_with_http_info(self, request):
+        """查询是否支持一键重置密码
+
+        查询弹性云服务器是否支持一键重置密码。
+
+        :param ShowResetPasswordFlagRequest request
+        :return: ShowResetPasswordFlagResponse
+        """
+
+        all_params = ['server_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/os-resetpwd-flag',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowResetPasswordFlagResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_server(self, request):
         """查询云服务器详情
 
@@ -1381,6 +2502,125 @@ class EcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
+
+    def show_server_limits(self, request):
+        """查询租户配额
+
+        查询租户配额信息。
+
+        :param ShowServerLimitsRequest request
+        :return: ShowServerLimitsResponse
+        """
+        return self.show_server_limits_with_http_info(request)
+
+    def show_server_limits_with_http_info(self, request):
+        """查询租户配额
+
+        查询租户配额信息。
+
+        :param ShowServerLimitsRequest request
+        :return: ShowServerLimitsResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/limits',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowServerLimitsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_server_remote_console(self, request):
+        """获取VNC远程登录地址
+
+        获取弹性云服务器VNC远程登录地址。
+
+        :param ShowServerRemoteConsoleRequest request
+        :return: ShowServerRemoteConsoleResponse
+        """
+        return self.show_server_remote_console_with_http_info(request)
+
+    def show_server_remote_console_with_http_info(self, request):
+        """获取VNC远程登录地址
+
+        获取弹性云服务器VNC远程登录地址。
+
+        :param ShowServerRemoteConsoleRequest request
+        :return: ShowServerRemoteConsoleResponse
+        """
+
+        all_params = ['server_id', 'show_server_remote_console_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset&#x3D;UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/remote_console',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowServerRemoteConsoleResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
 
     def show_server_tags(self, request):
         """查询云服务器标签
@@ -1439,6 +2679,7 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def update_server(self, request):
         """修改云服务器
 
@@ -1496,6 +2737,68 @@ class EcsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateServerResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_server_metadata(self, request):
+        """更新云服务器元数据
+
+        更新云服务器元数据。  - 如果元数据中没有待更新字段，则自动添加该字段。  - 如果元数据中已存在待更新字段，则直接更新字段值。  - 如果元数据中的字段不再请求参数中，则保持不变
+
+        :param UpdateServerMetadataRequest request
+        :return: UpdateServerMetadataResponse
+        """
+        return self.update_server_metadata_with_http_info(request)
+
+    def update_server_metadata_with_http_info(self, request):
+        """更新云服务器元数据
+
+        更新云服务器元数据。  - 如果元数据中没有待更新字段，则自动添加该字段。  - 如果元数据中已存在待更新字段，则直接更新字段值。  - 如果元数据中的字段不再请求参数中，则保持不变
+
+        :param UpdateServerMetadataRequest request
+        :return: UpdateServerMetadataResponse
+        """
+
+        all_params = ['server_id', 'update_server_metadata_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset&#x3D;UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/metadata',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateServerMetadataResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)

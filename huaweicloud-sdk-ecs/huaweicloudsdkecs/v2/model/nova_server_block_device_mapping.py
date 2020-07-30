@@ -71,7 +71,8 @@ class NovaServerBlockDeviceMapping:
             self.device_name = device_name
         if delete_on_termination is not None:
             self.delete_on_termination = delete_on_termination
-        self.boot_index = boot_index
+        if boot_index is not None:
+            self.boot_index = boot_index
         if uuid is not None:
             self.uuid = uuid
         if volume_size is not None:

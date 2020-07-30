@@ -8,7 +8,7 @@ import importlib
 
 import six
 
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
@@ -38,7 +38,9 @@ class ClassroomClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkclassroom.v3.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-
+    @staticmethod
+    def new_builder(clazz):
+        return ClientBuilder(clazz)
 
     def list_classroom_members(self, request):
         """根据课堂ID获取指定课堂的课堂成员列表
@@ -103,6 +105,7 @@ class ClassroomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_classrooms(self, request):
         """获取当前用户的课堂列表
 
@@ -163,6 +166,7 @@ class ClassroomClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_classroom_detail(self, request):
         """根据课堂ID获取指定课堂的详细信息
@@ -285,6 +289,7 @@ class ClassroomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_jobs(self, request):
         """查询指定课堂下的作业列表信息
 
@@ -347,6 +352,7 @@ class ClassroomClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_member_job_records(self, request):
         """查询学生函数习题提交记录信息
@@ -413,6 +419,7 @@ class ClassroomClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_job_detail(self, request):
         """根据作业ID，查询指定作业的信息
 
@@ -469,6 +476,7 @@ class ClassroomClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_job_exercises(self, request):
         """查询指定作业下的习题信息

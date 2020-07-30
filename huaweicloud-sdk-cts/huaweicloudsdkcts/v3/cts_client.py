@@ -8,7 +8,7 @@ import importlib
 
 import six
 
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
@@ -38,7 +38,9 @@ class CtsClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkcts.v3.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-
+    @staticmethod
+    def new_builder(clazz):
+        return ClientBuilder(clazz)
 
     def create_tracker(self, request):
         """创建追踪器
@@ -99,6 +101,7 @@ class CtsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_tracker(self, request):
         """删除追踪器
 
@@ -157,6 +160,7 @@ class CtsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_traces(self, request):
         """查询事件列表
@@ -241,6 +245,7 @@ class CtsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_trackers(self, request):
         """查询追踪器
 
@@ -299,6 +304,7 @@ class CtsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_tracker(self, request):
         """修改追踪器

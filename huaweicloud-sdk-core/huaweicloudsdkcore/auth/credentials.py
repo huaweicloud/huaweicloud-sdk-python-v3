@@ -32,7 +32,7 @@ class Credentials:
 
 
 class BasicCredentials(Credentials):
-    def __init__(self, ak, sk, project_id, domain_id=None):
+    def __init__(self, ak, sk, project_id):
         if ak is None or ak == "":
             raise ApiValueError("AK can not be null.")
 
@@ -42,14 +42,11 @@ class BasicCredentials(Credentials):
         self.ak = ak
         self.sk = sk
         self.project_id = project_id
-        self.domain_id = domain_id
 
     def get_update_path_params(self):
         path_params = {}
         if self.project_id is not None:
             path_params["project_id"] = self.project_id
-        if self.domain_id is not None:
-            path_params["domain_id"] = self.domain_id
         return path_params
 
     def process_auth_request(self, request, http_client):
@@ -60,6 +57,38 @@ class BasicCredentials(Credentials):
     def sign_request(self, request):
         if self.project_id is not None:
             request.header_params["X-Project-Id"] = self.project_id
+
+        if "Content-Type" in request.header_params and not request.header_params["Content-Type"].startswith(
+                "application/json"):
+            request.header_params["X-Sdk-Content-Sha256"] = "UNSIGNED-PAYLOAD"
+
+        return signer.Signer(self).sign(request)
+
+
+class GlobalCredentials(Credentials):
+    def __init__(self, ak, sk, domain_id):
+        if ak is None or ak == "":
+            raise ApiValueError("AK can not be null.")
+
+        if sk is None or sk == "":
+            raise ApiValueError("SK can not be null.")
+
+        self.ak = ak
+        self.sk = sk
+        self.domain_id = domain_id
+
+    def get_update_path_params(self):
+        path_params = {}
+        if self.domain_id is not None:
+            path_params["domain_id"] = self.domain_id
+        return path_params
+
+    def process_auth_request(self, request, http_client):
+        executor = ThreadPoolExecutor(max_workers=8)
+        future = executor.submit(self.sign_request, request)
+        return future
+
+    def sign_request(self, request):
         if self.domain_id is not None:
             request.header_params["X-Domain-Id"] = self.domain_id
 

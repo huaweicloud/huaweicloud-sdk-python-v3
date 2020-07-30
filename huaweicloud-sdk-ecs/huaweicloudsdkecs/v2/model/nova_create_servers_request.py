@@ -32,7 +32,7 @@ class NovaCreateServersRequest:
         'body': 'body'
     }
 
-    def __init__(self, open_stack_api_version='compute 2.60', body=None):
+    def __init__(self, open_stack_api_version=None, body=None):
         """NovaCreateServersRequest - a model defined in huaweicloud sdk"""
         
         

@@ -8,7 +8,7 @@ import importlib
 
 import six
 
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
@@ -38,7 +38,9 @@ class ImsAsyncClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkims.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-
+    @staticmethod
+    def new_builder(clazz):
+        return ClientBuilder(clazz)
 
     def batch_add_members_async(self, request):
         """批量添加镜像成员
@@ -99,6 +101,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def batch_delete_members_async(self, request):
         """批量删除镜像成员
 
@@ -158,6 +161,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def batch_update_members_async(self, request):
         """批量更新镜像成员状态
 
@@ -216,6 +220,7 @@ class ImsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def copy_image_cross_region_async(self, request):
         """跨Region复制镜像
@@ -278,6 +283,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def copy_image_in_region_async(self, request):
         """Region内复制镜像
 
@@ -339,6 +345,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_data_image_async(self, request):
         """使用外部镜像文件制作数据镜像
 
@@ -397,6 +404,7 @@ class ImsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def create_image_async(self, request):
         """制作镜像
@@ -457,6 +465,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_or_update_tags_async(self, request):
         """增加或修改标签
 
@@ -516,6 +525,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_whole_image_async(self, request):
         """制作整机镜像
 
@@ -574,6 +584,7 @@ class ImsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def export_image_async(self, request):
         """导出镜像
@@ -636,6 +647,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def import_image_quick_async(self, request):
         """镜像文件快速导入
 
@@ -694,6 +706,7 @@ class ImsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_images_async(self, request):
         """查询镜像列表
@@ -824,6 +837,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_os_versions_async(self, request):
         """查询镜像支持的OS列表
 
@@ -880,6 +894,7 @@ class ImsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_tags_async(self, request):
         """按条件查询租户镜像标签列表
@@ -966,6 +981,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def register_image_async(self, request):
         """注册镜像
 
@@ -1027,6 +1043,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_image_quota_async(self, request):
         """查询镜像配额
 
@@ -1081,6 +1098,7 @@ class ImsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_image_async(self, request):
         """更新镜像信息
@@ -1205,6 +1223,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def glance_create_image_metadata_async(self, request):
         """创建镜像元数据（OpenStack原生）
 
@@ -1264,6 +1283,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def glance_create_tag_async(self, request):
         """增加标签（OpenStack原生）
 
@@ -1322,6 +1342,7 @@ class ImsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def glance_delete_image_async(self, request):
         """删除镜像（OpenStack原生）
@@ -1384,6 +1405,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def glance_delete_image_member_async(self, request):
         """删除指定的镜像成员（OpenStack原生）
 
@@ -1442,6 +1464,7 @@ class ImsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def glance_delete_tag_async(self, request):
         """删除标签（OpenStack原生）
@@ -1502,6 +1525,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def glance_list_image_member_schemas_async(self, request):
         """查询镜像成员列表视图（OpenStack原生）
 
@@ -1556,6 +1580,7 @@ class ImsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def glance_list_image_members_async(self, request):
         """获取镜像成员列表（OpenStack原生）
@@ -1614,6 +1639,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def glance_list_image_schemas_async(self, request):
         """查询镜像列表视图（OpenStack原生）
 
@@ -1668,6 +1694,7 @@ class ImsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def glance_list_images_async(self, request):
         """查询镜像列表（OpenStack原生）
@@ -1788,6 +1815,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def glance_show_image_async(self, request):
         """查询镜像详情（OpenStack原生）
 
@@ -1844,6 +1872,7 @@ class ImsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def glance_show_image_member_async(self, request):
         """获取镜像成员详情（OpenStack原生）
@@ -1904,6 +1933,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def glance_show_image_member_schemas_async(self, request):
         """查询镜像成员视图（OpenStack原生）
 
@@ -1959,6 +1989,7 @@ class ImsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def glance_show_image_schemas_async(self, request):
         """查询镜像视图（OpenStack原生）
 
@@ -2013,6 +2044,7 @@ class ImsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def glance_update_image_async(self, request):
         """更新镜像信息（OpenStack原生）
@@ -2074,6 +2106,7 @@ class ImsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def glance_update_image_member_async(self, request):
         """更新镜像成员状态（OpenStack原生）

@@ -8,7 +8,7 @@ This document introduces how to obtain and use HuaweiCloud Python SDK.
 
 - To use HuaweiCloud Python SDK, you must have Huawei Cloud account as well as the Access Key and Secret key of the HuaweiCloud account.
 
-	The accessKey is required when initializing `{Service}Client`. You can create an AccessKey in the Huawei Cloud console. For more information, see [My Credentials](https://support.huaweicloud.com/en-us/usermanual-ca/en-us_topic_0046606340.html).
+    The accessKey is required when initializing `{Service}Client`. You can create an AccessKey in the Huawei Cloud console. For more information, see [My Credentials](https://support.huaweicloud.com/en-us/usermanual-ca/en-us_topic_0046606340.html).
 
 - HuaweiCloud Python SDK requires python 3 or later.
 
@@ -19,36 +19,36 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
 
 - Use python pip
 
-	Run the following command to install the individual libraries of HuaweiCloud services:
+    Run the following command to install the individual libraries of HuaweiCloud services:
 
-	```bash
-	# Install the core library
-	pip install huaweicloudsdkcore
+    ```bash
+    # Install the core library
+    pip install huaweicloudsdkcore
  
-	# Install the VPC management library
-	pip install huaweicloudsdkvpc
-	```
+    # Install the VPC management library
+    pip install huaweicloudsdkvpc
+    ```
 
 - Install from [source](https://github.com/huaweicloud/huaweicloud-sdk-python-v3)
 
-	Run the following command to install the individual libraries of HuaweiCloud services:
+    Run the following command to install the individual libraries of HuaweiCloud services:
 
-	```bash
-	# Install the core library
-	cd huaweicloudsdkcore-${version}
-	python setup.py install
+    ```bash
+    # Install the core library
+    cd huaweicloudsdkcore-${version}
+    python setup.py install
  
-	# Install the VPC management library
-	cd huaweicloudsdkvpc-${version}
-	python setup.py install
-	```
+    # Install the VPC management library
+    cd huaweicloudsdkvpc-${version}
+    python setup.py install
+    ```
 
 ## Use Python SDK
 
 1. Import the required modules as follows:
 
     ```python
-    from huaweicloudsdkcore.auth.credentials import BasicCredentials
+    from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
     from huaweicloudsdkcore.exceptions import exceptions
     from huaweicloudsdkcore.http.http_config import HttpConfig
     from huaweicloudsdk{service}.v2 import *
@@ -93,19 +93,21 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
 3. Initialize Credentials
 
     ```python
-    credentials = BasicCredentials(ak, sk, project_id, domain_id)
+    # Project level service
+    credentials = BasicCredentials(ak, sk, project_id)
+   
+    # Global level service
+    credentials = GlobalCredentials(ak, sk, domain_id)
     ```
 
-	**where:**
-   	
-    For project services, only need to provide project_id, domain_id is optional.
-    For global services, project_id must be null, domain_id should be filled in according to the actual situation.
-    Global services currently only support Iam.
+    **where:**
+       
+    Global services currently only support IAM, TMS, EPS.
 
-	- `ak` is the access key id for your account.
-	- `sk` is the secret access key for your account.
-	- `project_id` is the id of the project.
-  	- `project_id` is the account ID of huawei cloud.
+    - `ak` is the access key id for your account.
+    - `sk` is the secret access key for your account.
+    - `project_id` is the id of the project.
+    - `domain_id` is the account ID of huawei cloud.
 
 4. Initialize the `{Service}Client` instance:
 
@@ -119,7 +121,7 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
         .build()
     ```
 
-	**where:**
+    **where:**
 
     - `endpoint`: service specific endpoints, see [Regions and Endpoints](https://developer.huaweicloud.com/intl/en-us/endpoint).
     - `with_file_log`:
@@ -139,11 +141,12 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
 
 5. Send a request and print response.
 
-	```python
-	# Initialize a request and set parameters
-	response = client.method()
-	print(respones)
-	```
+    ```python
+    # Initialize a request and set parameters
+        request = MethodRequest()
+    response = client.method(request)
+    print(respones)
+    ```
 
 6. Exceptions
 
@@ -159,6 +162,7 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
     ```python
     # handle exceptions
     try:
+        request = MethodRequest()
         response = client.method()
     except exception.ServiceResponseException as e:
         print(e.status_code)
@@ -178,7 +182,8 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
         .build()
 
     # send asynchronous request
-    response = client.method()
+    request = MethodRequest()
+    response = client.method(request)
 
     # get asynchronous response
     print(response.result())
@@ -221,6 +226,6 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
         .build()
     ```
 
-	**where:**
+    **where:**
 
     HttpHandler supports add_request_handler and add_response_handler.

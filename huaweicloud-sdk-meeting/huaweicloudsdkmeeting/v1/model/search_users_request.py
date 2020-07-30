@@ -34,6 +34,7 @@ class SearchUsersRequest:
         'enable_sub_dept': 'bool',
         'admin_type': 'int',
         'enable_room': 'bool',
+        'user_type': 'list[int]',
         'status': 'int'
     }
 
@@ -49,10 +50,11 @@ class SearchUsersRequest:
         'enable_sub_dept': 'enableSubDept',
         'admin_type': 'adminType',
         'enable_room': 'enableRoom',
+        'user_type': 'userType',
         'status': 'status'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=100, search_key=None, sort_field=None, is_asc=None, dept_code=None, enable_sub_dept=None, admin_type=None, enable_room=None, status=None):
+    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=100, search_key=None, sort_field=None, is_asc=None, dept_code=None, enable_sub_dept=None, admin_type=None, enable_room=None, user_type=None, status=None):
         """SearchUsersRequest - a model defined in huaweicloud sdk"""
         
         
@@ -68,6 +70,7 @@ class SearchUsersRequest:
         self._enable_sub_dept = None
         self._admin_type = None
         self._enable_room = None
+        self._user_type = None
         self._status = None
         self.discriminator = None
 
@@ -93,6 +96,8 @@ class SearchUsersRequest:
             self.admin_type = admin_type
         if enable_room is not None:
             self.enable_room = enable_room
+        if user_type is not None:
+            self.user_type = user_type
         if status is not None:
             self.status = status
 
@@ -315,6 +320,26 @@ class SearchUsersRequest:
         :type: bool
         """
         self._enable_room = enable_room
+
+    @property
+    def user_type(self):
+        """Gets the user_type of this SearchUsersRequest.
+
+
+        :return: The user_type of this SearchUsersRequest.
+        :rtype: list[int]
+        """
+        return self._user_type
+
+    @user_type.setter
+    def user_type(self, user_type):
+        """Sets the user_type of this SearchUsersRequest.
+
+
+        :param user_type: The user_type of this SearchUsersRequest.
+        :type: list[int]
+        """
+        self._user_type = user_type
 
     @property
     def status(self):

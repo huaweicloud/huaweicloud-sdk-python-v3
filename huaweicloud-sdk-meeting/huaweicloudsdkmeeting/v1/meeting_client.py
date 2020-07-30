@@ -8,7 +8,7 @@ import importlib
 
 import six
 
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
@@ -38,7 +38,9 @@ class MeetingClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkmeeting.v1.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-
+    @staticmethod
+    def new_builder(clazz):
+        return ClientBuilder(clazz, "MeetingCredentials")
 
     def add_corp(self, request):
         """SP管理员创建企业
@@ -103,6 +105,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def add_corp_admin(self, request):
         """添加企业管理员
 
@@ -165,6 +168,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def add_department(self, request):
         """添加部门
@@ -229,6 +233,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def add_device(self, request):
         """增加终端
 
@@ -291,6 +296,135 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
+
+    def add_program(self, request):
+        """新增全球窗节目
+
+        新增全球窗节目
+
+        :param AddProgramRequest request
+        :return: AddProgramResponse
+        """
+        return self.add_program_with_http_info(request)
+
+    def add_program_with_http_info(self, request):
+        """新增全球窗节目
+
+        新增全球窗节目
+
+        :param AddProgramRequest request
+        :return: AddProgramResponse
+        """
+
+        all_params = ['program_dto', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/programs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddProgramResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def add_publication(self, request):
+        """新增全球窗发布
+
+        新增全球窗发布
+
+        :param AddPublicationRequest request
+        :return: AddPublicationResponse
+        """
+        return self.add_publication_with_http_info(request)
+
+    def add_publication_with_http_info(self, request):
+        """新增全球窗发布
+
+        新增全球窗发布
+
+        :param AddPublicationRequest request
+        :return: AddPublicationResponse
+        """
+
+        all_params = ['publication_dto', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/publications',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddPublicationResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
 
     def add_resource(self, request):
         """分配企业资源
@@ -359,6 +493,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def add_user(self, request):
         """添加用户
 
@@ -422,6 +557,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def allow_guest_unmute(self, request):
         """与会者自己解除静音
 
@@ -484,6 +620,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def associate_vmr(self, request):
         """分配专用云会议室
@@ -550,6 +687,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def batch_delete_corp_admins(self, request):
         """批量删除企业管理员
 
@@ -612,6 +750,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def batch_delete_devices(self, request):
         """批量删除终端
@@ -676,6 +815,199 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
+    def batch_delete_materials(self, request):
+        """删除全球窗素材
+
+        删除全球窗素材
+
+        :param BatchDeleteMaterialsRequest request
+        :return: BatchDeleteMaterialsResponse
+        """
+        return self.batch_delete_materials_with_http_info(request)
+
+    def batch_delete_materials_with_http_info(self, request):
+        """删除全球窗素材
+
+        删除全球窗素材
+
+        :param BatchDeleteMaterialsRequest request
+        :return: BatchDeleteMaterialsResponse
+        """
+
+        all_params = ['ids_request_dto', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/materials/batch-delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteMaterialsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_delete_programs(self, request):
+        """删除全球窗节目
+
+        删除全球窗节目
+
+        :param BatchDeleteProgramsRequest request
+        :return: BatchDeleteProgramsResponse
+        """
+        return self.batch_delete_programs_with_http_info(request)
+
+    def batch_delete_programs_with_http_info(self, request):
+        """删除全球窗节目
+
+        删除全球窗节目
+
+        :param BatchDeleteProgramsRequest request
+        :return: BatchDeleteProgramsResponse
+        """
+
+        all_params = ['ids_request_dto', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/programs/batch-delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteProgramsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_delete_publications(self, request):
+        """删除全球窗发布
+
+        删除全球窗发布
+
+        :param BatchDeletePublicationsRequest request
+        :return: BatchDeletePublicationsResponse
+        """
+        return self.batch_delete_publications_with_http_info(request)
+
+    def batch_delete_publications_with_http_info(self, request):
+        """删除全球窗发布
+
+        删除全球窗发布
+
+        :param BatchDeletePublicationsRequest request
+        :return: BatchDeletePublicationsResponse
+        """
+
+        all_params = ['ids_request_dto', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/publications/batch-delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeletePublicationsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def batch_delete_users(self, request):
         """批量删除用户
 
@@ -738,6 +1070,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def batch_update_devices_status(self, request):
         """批量修改终端状态
@@ -804,6 +1137,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def batch_update_user_status(self, request):
         """批量修改用户状态
 
@@ -869,6 +1203,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def broadcast_participant(self, request):
         """广播会场
 
@@ -929,6 +1264,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def cancel_meeting(self, request):
         """取消预约会议
@@ -995,6 +1331,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def check_slide_verify_code(self, request):
         """校验滑块验证码
 
@@ -1057,6 +1394,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def check_token(self, request):
         """校验Token
@@ -1121,6 +1459,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def check_veri_code_for_update_user_info(self, request):
         """校验手机和邮箱对应的验证码
 
@@ -1183,6 +1522,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def check_verify_code(self, request):
         """校验验证码
@@ -1247,6 +1587,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_anonymous_auth_random(self, request):
         """匿名用户会议鉴权
 
@@ -1305,6 +1646,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def create_conf_token(self, request):
         """获取会控Token
@@ -1371,6 +1713,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_meeting(self, request):
         """创建会议
 
@@ -1436,6 +1779,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_attendees(self, request):
         """删除与会者
 
@@ -1498,6 +1842,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def delete_corp(self, request):
         """SP管理员删除企业
@@ -1562,6 +1907,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_corp_vmr(self, request):
         """删除专用云会议室
 
@@ -1625,6 +1971,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_department(self, request):
         """删除部门
 
@@ -1685,6 +2032,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def delete_recordings(self, request):
         """批量删除录制
@@ -1748,6 +2096,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def delete_resource(self, request):
         """删除企业资源
@@ -1816,6 +2165,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def disassociate_vmr(self, request):
         """从用户或终端回收企业专用VMR
 
@@ -1880,6 +2230,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def edit_meeting(self, request):
         """编辑预约会议
@@ -1948,6 +2299,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def hand(self, request):
         """举手
 
@@ -2013,6 +2365,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def hang_up(self, request):
         """挂断与会者
 
@@ -2075,6 +2428,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def invite_participant(self, request):
         """邀请与会者
@@ -2139,6 +2493,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def live(self, request):
         """启停会议直播
 
@@ -2202,6 +2557,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def lock_meeting(self, request):
         """锁定会议
 
@@ -2264,6 +2620,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def lock_view(self, request):
         """锁定会场视频源
@@ -2330,6 +2687,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def mute_meeting(self, request):
         """全场静音
 
@@ -2392,6 +2750,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def mute_participant(self, request):
         """静音与会者
@@ -2458,6 +2817,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def prolong_meeting(self, request):
         """延长会议
 
@@ -2520,6 +2880,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def record(self, request):
         """启停会议录制
@@ -2584,6 +2945,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def rename_participant(self, request):
         """重命名与会者
 
@@ -2646,6 +3008,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def reset_activecode(self, request):
         """重置激活码
@@ -2712,6 +3075,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def reset_pwd(self, request):
         """用户重置密码
 
@@ -2774,6 +3138,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def reset_pwd_by_admin(self, request):
         """企业管理员重置企业成员密码
@@ -2838,6 +3203,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def rollcall_participant(self, request):
         """点名会场
 
@@ -2898,6 +3264,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def search_attendance_records_of_his_meeting(self, request):
         """查询历史会议的与会者记录
@@ -2970,6 +3337,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def search_corp(self, request):
         """SP管理员分页搜索企业
 
@@ -3035,6 +3403,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def search_corp_admins(self, request):
         """分页查询企业管理员
 
@@ -3099,6 +3468,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def search_corp_dir(self, request):
         """查询企业通讯录
@@ -3171,6 +3541,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def search_corp_vmr(self, request):
         """分页查询专用云会议室
 
@@ -3237,6 +3608,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def search_ctl_records_of_his_meeting(self, request):
         """查询历史会议的会控记录
@@ -3307,6 +3679,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def search_department_by_name(self, request):
         """按名称查询所有的部门
 
@@ -3367,6 +3740,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def search_devices(self, request):
         """分页查询终端
@@ -3438,6 +3812,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def search_his_meetings(self, request):
         """查询历史会议列表
@@ -3514,6 +3889,73 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
+    def search_materials(self, request):
+        """分页查询全球窗素材
+
+        分页查询全球窗素材
+
+        :param SearchMaterialsRequest request
+        :return: SearchMaterialsResponse
+        """
+        return self.search_materials_with_http_info(request)
+
+    def search_materials_with_http_info(self, request):
+        """分页查询全球窗素材
+
+        分页查询全球窗素材
+
+        :param SearchMaterialsRequest request
+        :return: SearchMaterialsResponse
+        """
+
+        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/materials',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchMaterialsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def search_meetings(self, request):
         """查询会议列表
 
@@ -3587,6 +4029,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def search_member_vmr(self, request):
         """分页查询用户云会议室
 
@@ -3653,6 +4096,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def search_online_meetings(self, request):
         """查询在线会议列表
@@ -3722,6 +4166,139 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
+
+    def search_programs(self, request):
+        """查询全球窗节目
+
+        获取全球窗节目
+
+        :param SearchProgramsRequest request
+        :return: SearchProgramsResponse
+        """
+        return self.search_programs_with_http_info(request)
+
+    def search_programs_with_http_info(self, request):
+        """查询全球窗节目
+
+        获取全球窗节目
+
+        :param SearchProgramsRequest request
+        :return: SearchProgramsResponse
+        """
+
+        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/programs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchProgramsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def search_publications(self, request):
+        """查询全球窗发布
+
+        获取全球窗发布
+
+        :param SearchPublicationsRequest request
+        :return: SearchPublicationsResponse
+        """
+        return self.search_publications_with_http_info(request)
+
+    def search_publications_with_http_info(self, request):
+        """查询全球窗发布
+
+        获取全球窗发布
+
+        :param SearchPublicationsRequest request
+        :return: SearchPublicationsResponse
+        """
+
+        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/publications',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchPublicationsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
 
     def search_recordings(self, request):
         """查询录制列表
@@ -3797,6 +4374,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def search_resource(self, request):
         """分页查询企业资源
@@ -3874,6 +4452,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def search_resource_op_record(self, request):
         """分页查询企业资源操作记录
@@ -3956,6 +4535,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def search_users(self, request):
         """分页查询用户
 
@@ -3975,7 +4555,7 @@ class MeetingClient(Client):
         :return: SearchUsersResponse
         """
 
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'sort_field', 'is_asc', 'dept_code', 'enable_sub_dept', 'admin_type', 'enable_room', 'status']
+        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'sort_field', 'is_asc', 'dept_code', 'enable_sub_dept', 'admin_type', 'enable_room', 'user_type', 'status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4004,6 +4584,9 @@ class MeetingClient(Client):
             query_params.append(('adminType', local_var_params['admin_type']))
         if 'enable_room' in local_var_params:
             query_params.append(('enableRoom', local_var_params['enable_room']))
+        if 'user_type' in local_var_params:
+            query_params.append(('userType', local_var_params['user_type']))
+            collection_formats['userType'] = 'csv'
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
 
@@ -4034,6 +4617,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def send_slide_verify_code(self, request):
         """发送滑块验证码
@@ -4098,6 +4682,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def send_veri_code_for_change_pwd(self, request):
         """发送验证码
 
@@ -4160,6 +4745,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def send_veri_code_for_update_user_info(self, request):
         """获取验证码
@@ -4224,6 +4810,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def set_host_view(self, request):
         """主持人选看
 
@@ -4287,6 +4874,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def set_multi_picture(self, request):
         """设置多画面
 
@@ -4349,6 +4937,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def set_participant_view(self, request):
         """会场选看
@@ -4415,6 +5004,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def set_role(self, request):
         """申请主持人
 
@@ -4480,6 +5070,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_corp(self, request):
         """SP管理员查询企业
 
@@ -4540,6 +5131,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_corp_admin(self, request):
         """查询企业管理员
@@ -4602,6 +5194,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_corp_basic_info(self, request):
         """企业管理员查询企业注册信息
 
@@ -4661,6 +5254,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_corp_resource(self, request):
         """企业管理员查询企业内资源及业务权限
 
@@ -4719,6 +5313,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_dept_and_child_dept(self, request):
         """查询部门及其一级子部门列表
@@ -4781,6 +5376,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_device_detail(self, request):
         """查询终端详情
 
@@ -4841,6 +5437,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_device_status(self, request):
         """查询设备状态
@@ -4905,6 +5502,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_device_types(self, request):
         """获取所有终端类型
 
@@ -4963,6 +5561,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_his_meeting_detail(self, request):
         """查询历史会议详情
@@ -5037,6 +5636,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_meeting_detail(self, request):
         """查询会议详情
 
@@ -5110,6 +5710,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_my_info(self, request):
         """用户查询自己的信息
 
@@ -5168,6 +5769,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_online_meeting_detail(self, request):
         """查询在线会议详情
@@ -5242,6 +5844,131 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
+    def show_program(self, request):
+        """根据ID查询节目详情
+
+        根据ID获取节目详情
+
+        :param ShowProgramRequest request
+        :return: ShowProgramResponse
+        """
+        return self.show_program_with_http_info(request)
+
+    def show_program_with_http_info(self, request):
+        """根据ID查询节目详情
+
+        根据ID获取节目详情
+
+        :param ShowProgramRequest request
+        :return: ShowProgramResponse
+        """
+
+        all_params = ['id', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/programs/{id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowProgramResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_publication(self, request):
+        """根据ID查询全球窗发布详情
+
+        根据ID获取发布详情
+
+        :param ShowPublicationRequest request
+        :return: ShowPublicationResponse
+        """
+        return self.show_publication_with_http_info(request)
+
+    def show_publication_with_http_info(self, request):
+        """根据ID查询全球窗发布详情
+
+        根据ID获取发布详情
+
+        :param ShowPublicationRequest request
+        :return: ShowPublicationResponse
+        """
+
+        all_params = ['id', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/publications/{id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowPublicationResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_real_time_info_of_meeting(self, request):
         """查询会议实时信息
 
@@ -5300,6 +6027,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_recording_detail(self, request):
         """查询录制详情
@@ -5364,6 +6092,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_region_info_of_meeting(self, request):
         """查询会议所在区域信息
 
@@ -5420,6 +6149,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_user_detail(self, request):
         """查询用户详情
@@ -5482,6 +6212,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def stop_meeting(self, request):
         """结束会议
 
@@ -5540,6 +6271,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def switch_mode(self, request):
         """切换视频显示策略
@@ -5604,6 +6336,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def update_contact(self, request):
         """修改手机或邮箱
 
@@ -5666,6 +6399,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_corp(self, request):
         """SP管理员修改企业
@@ -5732,6 +6466,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def update_corp_basic_info(self, request):
         """企业管理员修改企业注册信息
 
@@ -5794,6 +6529,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_department(self, request):
         """修改部门
@@ -5860,6 +6596,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def update_device(self, request):
         """修改终端
 
@@ -5924,6 +6661,73 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
+
+    def update_material(self, request):
+        """更新全球窗素材
+
+        更新全球窗素材
+
+        :param UpdateMaterialRequest request
+        :return: UpdateMaterialResponse
+        """
+        return self.update_material_with_http_info(request)
+
+    def update_material_with_http_info(self, request):
+        """更新全球窗素材
+
+        更新全球窗素材
+
+        :param UpdateMaterialRequest request
+        :return: UpdateMaterialResponse
+        """
+
+        all_params = ['id', 'update_material_request_dto', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/materials/{id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateMaterialResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
 
     def update_member_vmr(self, request):
         """修改用户云会议室
@@ -5990,6 +6794,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def update_my_info(self, request):
         """用户修改自己的信息
 
@@ -6053,6 +6858,139 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
+    def update_program(self, request):
+        """更新全球窗节目
+
+        更新全球窗节目
+
+        :param UpdateProgramRequest request
+        :return: UpdateProgramResponse
+        """
+        return self.update_program_with_http_info(request)
+
+    def update_program_with_http_info(self, request):
+        """更新全球窗节目
+
+        更新全球窗节目
+
+        :param UpdateProgramRequest request
+        :return: UpdateProgramResponse
+        """
+
+        all_params = ['id', 'program_dto', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/programs/{id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateProgramResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_publication(self, request):
+        """修改全球窗发布
+
+        修改全球窗发布
+
+        :param UpdatePublicationRequest request
+        :return: UpdatePublicationResponse
+        """
+        return self.update_publication_with_http_info(request)
+
+    def update_publication_with_http_info(self, request):
+        """修改全球窗发布
+
+        修改全球窗发布
+
+        :param UpdatePublicationRequest request
+        :return: UpdatePublicationResponse
+        """
+
+        all_params = ['id', 'publication_dto', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/publications/{id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdatePublicationResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_pwd(self, request):
         """修改密码
 
@@ -6115,6 +7053,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_resource(self, request):
         """修改企业资源
@@ -6183,6 +7122,7 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def update_token(self, request):
         """刷新Token
 
@@ -6245,6 +7185,7 @@ class MeetingClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_user(self, request):
         """修改用户

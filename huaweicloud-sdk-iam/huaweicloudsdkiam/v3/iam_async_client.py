@@ -8,7 +8,7 @@ import importlib
 
 import six
 
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
@@ -38,7 +38,9 @@ class IamAsyncClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkiam.v3.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-
+    @staticmethod
+    def new_builder(clazz):
+        return ClientBuilder(clazz, "GlobalCredentials")
 
     def associate_agency_with_domain_permission_async(self, request):
         """为委托授予全局服务权限
@@ -98,6 +100,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def associate_agency_with_project_permission_async(self, request):
         """为委托授予项目服务权限
@@ -160,6 +163,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def check_domain_permission_for_agency_async(self, request):
         """查询委托是否拥有全局服务权限
 
@@ -218,6 +222,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def check_project_permission_for_agency_async(self, request):
         """查询委托是否拥有项目服务权限
@@ -280,6 +285,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_agency_async(self, request):
         """创建委托
 
@@ -338,6 +344,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def create_agency_custom_policy_async(self, request):
         """创建委托自定义策略
@@ -398,6 +405,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_cloud_service_custom_policy_async(self, request):
         """创建云服务自定义策略
 
@@ -457,6 +465,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_agency_async(self, request):
         """删除委托
 
@@ -514,6 +523,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_custom_policy_async(self, request):
         """删除自定义策略
 
@@ -570,6 +580,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_add_user_to_group_async(self, request):
         """添加IAM用户到用户组
@@ -630,6 +641,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_associate_group_with_all_project_permission_async(self, request):
         """为用户组授予所有项目服务权限
 
@@ -689,6 +701,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_associate_group_with_domain_permission_async(self, request):
         """为用户组授予全局服务权限
 
@@ -747,6 +760,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_associate_group_with_project_permission_async(self, request):
         """为用户组授予项目服务权限
@@ -809,6 +823,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_check_domain_permission_for_group_async(self, request):
         """查询用户组是否拥有全局服务权限
 
@@ -867,6 +882,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_check_project_permission_for_group_async(self, request):
         """查询用户组是否拥有项目服务权限
@@ -929,6 +945,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_check_user_in_group_async(self, request):
         """查询IAM用户是否在用户组中
 
@@ -987,6 +1004,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_create_group_async(self, request):
         """创建用户组
@@ -1047,6 +1065,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_create_project_async(self, request):
         """创建项目
 
@@ -1106,6 +1125,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_delete_group_async(self, request):
         """删除用户组
 
@@ -1163,6 +1183,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_list_auth_domains_async(self, request):
         """查询IAM用户可以访问的账号详情
 
@@ -1218,6 +1239,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_list_auth_projects_async(self, request):
         """查询IAM用户可以访问的项目列表
 
@@ -1272,6 +1294,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_list_domain_permissions_for_group_async(self, request):
         """查询全局服务中的用户组权限
@@ -1329,6 +1352,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_list_endpoints_async(self, request):
         """查询终端节点列表
@@ -1389,6 +1413,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_list_groups_async(self, request):
         """查询用户组列表
 
@@ -1446,6 +1471,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_list_permissions_async(self, request):
         """查询权限列表
 
@@ -1502,6 +1528,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_list_project_permissions_for_group_async(self, request):
         """查询项目服务中的用户组权限
@@ -1561,6 +1588,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_list_projects_async(self, request):
         """查询指定条件下的项目列表
@@ -1629,6 +1657,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_list_projects_for_user_async(self, request):
         """查询指定IAM用户的项目列表
 
@@ -1686,6 +1715,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_list_regions_async(self, request):
         """查询区域列表
 
@@ -1740,6 +1770,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_list_services_async(self, request):
         """查询服务列表
@@ -1798,6 +1829,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_list_users_for_group_by_admin_async(self, request):
         """管理员查询用户组所包含的IAM用户
 
@@ -1855,6 +1887,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_list_versions_async(self, request):
         """查询版本信息列表
 
@@ -1909,6 +1942,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_remove_domain_permission_from_group_async(self, request):
         """移除用户组的全局服务权限
@@ -1968,6 +2002,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_remove_project_permission_from_group_async(self, request):
         """移除用户组的项目服务权限
@@ -2030,6 +2065,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_remove_user_from_group_async(self, request):
         """移除用户组中的IAM用户
 
@@ -2089,6 +2125,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_show_catalog_async(self, request):
         """查询服务目录
 
@@ -2143,6 +2180,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_show_endpoint_async(self, request):
         """查询终端节点详情
@@ -2201,6 +2239,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_show_group_async(self, request):
         """查询用户组详情
 
@@ -2257,6 +2296,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_show_permission_async(self, request):
         """查询权限详情
@@ -2315,6 +2355,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_show_project_async(self, request):
         """查询项目详情
 
@@ -2371,6 +2412,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_show_region_async(self, request):
         """查询区域详情
@@ -2429,6 +2471,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_show_security_compliance_async(self, request):
         """查询账号密码强度策略
 
@@ -2483,6 +2526,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_show_security_compliance_by_option_async(self, request):
         """按条件查询账号密码强度策略
@@ -2541,6 +2585,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_show_service_async(self, request):
         """查询服务详情
 
@@ -2598,6 +2643,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_show_version_async(self, request):
         """查询版本信息
 
@@ -2652,6 +2698,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_update_group_async(self, request):
         """更新用户组
@@ -2714,6 +2761,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_update_project_async(self, request):
         """修改项目信息
 
@@ -2775,6 +2823,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_agencies_async(self, request):
         """查询指定条件下的委托列表
 
@@ -2834,6 +2883,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_custom_policies_async(self, request):
         """查询自定义策略列表
 
@@ -2888,6 +2938,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_domain_permissions_for_agency_async(self, request):
         """查询全局服务中的委托权限
@@ -2945,6 +2996,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_project_permissions_for_agency_async(self, request):
         """查询项目服务中的委托权限
@@ -3005,6 +3057,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def remove_domain_permission_from_agency_async(self, request):
         """移除委托的全局服务权限
 
@@ -3063,6 +3116,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def remove_project_permission_from_agency_async(self, request):
         """移除委托的项目服务权限
@@ -3125,6 +3179,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_agency_async(self, request):
         """查询委托详情
 
@@ -3181,6 +3236,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_custom_policy_async(self, request):
         """查询自定义策略详情
@@ -3239,6 +3295,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_project_details_and_status_async(self, request):
         """查询项目详情与状态
 
@@ -3295,6 +3352,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_agency_async(self, request):
         """修改委托
@@ -3357,6 +3415,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def update_agency_custom_policy_async(self, request):
         """修改委托自定义策略
 
@@ -3418,6 +3477,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def update_cloud_service_custom_policy_async(self, request):
         """修改云服务自定义策略
 
@@ -3478,6 +3538,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_project_status_async(self, request):
         """设置项目状态
@@ -3600,6 +3661,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_temporary_access_key_by_agency_async(self, request):
         """通过委托获取临时访问密钥
 
@@ -3658,6 +3720,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def create_temporary_access_key_by_token_async(self, request):
         """通过token获取临时访问密钥
@@ -3718,6 +3781,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_permanent_access_key_async(self, request):
         """删除指定永久访问密钥
 
@@ -3774,6 +3838,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_permanent_access_keys_async(self, request):
         """查询所有永久访问密钥
@@ -3832,6 +3897,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_permanent_access_key_async(self, request):
         """查询指定永久访问密钥
 
@@ -3888,6 +3954,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_permanent_access_key_async(self, request):
         """修改指定永久访问密钥
@@ -4010,6 +4077,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_create_user_async(self, request):
         """管理员创建IAM用户
 
@@ -4069,6 +4137,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_delete_user_async(self, request):
         """管理员删除IAM用户
 
@@ -4126,6 +4195,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_list_groups_for_user_async(self, request):
         """查询IAM用户所属用户组
 
@@ -4182,6 +4252,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_list_users_async(self, request):
         """管理员查询IAM用户列表
@@ -4244,6 +4315,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_show_user_async(self, request):
         """查询IAM用户详情
 
@@ -4300,6 +4372,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def keystone_update_user_by_admin_async(self, request):
         """管理员修改IAM用户信息
@@ -4362,6 +4435,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def keystone_update_user_password_async(self, request):
         """修改IAM用户密码
 
@@ -4423,6 +4497,7 @@ class IamAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_user_async(self, request):
         """查询IAM用户详情（推荐）
 
@@ -4479,6 +4554,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_user_async(self, request):
         """管理员修改IAM用户信息（推荐）
@@ -4540,6 +4616,7 @@ class IamAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_user_information_async(self, request):
         """修改IAM用户信息（推荐）

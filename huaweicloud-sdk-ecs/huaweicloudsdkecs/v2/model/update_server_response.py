@@ -23,7 +23,7 @@ class UpdateServerResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'server': 'ServerDetail'
+        'server': 'UpdateServerResult'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class UpdateServerResponse(SdkResponse):
 
 
         :return: The server of this UpdateServerResponse.
-        :rtype: ServerDetail
+        :rtype: UpdateServerResult
         """
         return self._server
 
@@ -57,7 +57,7 @@ class UpdateServerResponse(SdkResponse):
 
 
         :param server: The server of this UpdateServerResponse.
-        :type: ServerDetail
+        :type: UpdateServerResult
         """
         self._server = server
 

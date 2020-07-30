@@ -8,7 +8,7 @@ import importlib
 
 import six
 
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
@@ -38,7 +38,9 @@ class EpsAsyncClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkeps.v1.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-
+    @staticmethod
+    def new_builder(clazz):
+        return ClientBuilder(clazz, "GlobalCredentials")
 
     def create_ep_async(self, request):
         """创建企业项目
@@ -98,6 +100,7 @@ class EpsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def disable_ep_async(self, request):
         """停用企业项目
@@ -160,6 +163,7 @@ class EpsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def enable_ep_async(self, request):
         """启用企业项目
 
@@ -221,6 +225,7 @@ class EpsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_api_versions_async(self, request):
         """查询API版本列表
 
@@ -275,6 +280,7 @@ class EpsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_ep_async(self, request):
         """查询企业项目列表
@@ -345,6 +351,7 @@ class EpsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def migrate_resource_async(self, request):
         """迁移资源
 
@@ -405,6 +412,7 @@ class EpsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def modify_ep_async(self, request):
         """修改企业项目
@@ -467,6 +475,7 @@ class EpsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_api_version_async(self, request):
         """查询API版本号详情
 
@@ -523,6 +532,7 @@ class EpsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_ep_async(self, request):
         """查询企业项目详情
@@ -581,6 +591,7 @@ class EpsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_ep_quota_async(self, request):
         """查询企业项目配额
 
@@ -635,6 +646,7 @@ class EpsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_resource_bind_ep_async(self, request):
         """查询企业项目绑定的资源列表

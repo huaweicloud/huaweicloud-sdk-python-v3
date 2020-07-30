@@ -48,7 +48,7 @@ class PostPaidServerExtendParam:
         'spot_duration_count': 'spot_duration_count'
     }
 
-    def __init__(self, charging_mode=0, region_id=None, support_auto_recovery=False, enterprise_project_id='0', market_type=None, spot_price=None, disk_prior=None, spot_duration_hours=None, interruption_policy=None, spot_duration_count=None):
+    def __init__(self, charging_mode=0, region_id=None, support_auto_recovery=False, enterprise_project_id='0', market_type=None, spot_price=None, disk_prior=None, spot_duration_hours=None, interruption_policy='immediate', spot_duration_count=None):
         """PostPaidServerExtendParam - a model defined in huaweicloud sdk"""
         
         
@@ -244,7 +244,7 @@ class PostPaidServerExtendParam:
     def spot_duration_hours(self):
         """Gets the spot_duration_hours of this PostPaidServerExtendParam.
 
-        spot block时间。
+        购买的竞价实例时长。  - 仅interruption_policy=immediate 时该字段有效 。 - pot_duration_hours大于0。最大值由预测系统给出可以从flavor的extra_specs的cond:spot_block:operation:longest_duration_hours字段中查询。
 
         :return: The spot_duration_hours of this PostPaidServerExtendParam.
         :rtype: int
@@ -255,7 +255,7 @@ class PostPaidServerExtendParam:
     def spot_duration_hours(self, spot_duration_hours):
         """Sets the spot_duration_hours of this PostPaidServerExtendParam.
 
-        spot block时间。
+        购买的竞价实例时长。  - 仅interruption_policy=immediate 时该字段有效 。 - pot_duration_hours大于0。最大值由预测系统给出可以从flavor的extra_specs的cond:spot_block:operation:longest_duration_hours字段中查询。
 
         :param spot_duration_hours: The spot_duration_hours of this PostPaidServerExtendParam.
         :type: int
@@ -266,7 +266,7 @@ class PostPaidServerExtendParam:
     def interruption_policy(self):
         """Gets the interruption_policy of this PostPaidServerExtendParam.
 
-        spot实例中断策略，当前支持immediate和delay。    - immediate代表立即释放。   - delay代表延迟释放，当前延迟时间5分钟。 
+        竞价实例中断策略，当前支持immediate。  - 当interruption_policy=immediate时表示释放策略为立即释放。 
 
         :return: The interruption_policy of this PostPaidServerExtendParam.
         :rtype: str
@@ -277,7 +277,7 @@ class PostPaidServerExtendParam:
     def interruption_policy(self, interruption_policy):
         """Sets the interruption_policy of this PostPaidServerExtendParam.
 
-        spot实例中断策略，当前支持immediate和delay。    - immediate代表立即释放。   - delay代表延迟释放，当前延迟时间5分钟。 
+        竞价实例中断策略，当前支持immediate。  - 当interruption_policy=immediate时表示释放策略为立即释放。 
 
         :param interruption_policy: The interruption_policy of this PostPaidServerExtendParam.
         :type: str
@@ -288,7 +288,7 @@ class PostPaidServerExtendParam:
     def spot_duration_count(self):
         """Gets the spot_duration_count of this PostPaidServerExtendParam.
 
-        spot block时间个数。    - spot_duration_hours小于6时，spot_duration_count值必须为1。   - spot_duration_hours等于6时，spot_duration_count大于1，最大值由预测系统给出，可以从flavor的extra_specs中查询。   例如客户买5小时，就通过spot_duartion_hours=5，不传该值，默认为1.   例如客户买大于6小时，就只能买6小时倍数。spot_duartion_hours=6，spot_duartion_count=2，代表买12个小时。 
+        表示购买的“竞价实例时长”的个数。  - 仅spot_duration_hours>0 时该字段有效。 - spot_duration_hours小于6时，spot_duration_count值必须为1。 - spot_duration_hours等于6时，spot_duration_count大于等于1。  spot_duration_count的最大值由预测系统给出可以从flavor的extra_specs的cond:spot_block:operation:longest_duration_count字段中查询。
 
         :return: The spot_duration_count of this PostPaidServerExtendParam.
         :rtype: int
@@ -299,7 +299,7 @@ class PostPaidServerExtendParam:
     def spot_duration_count(self, spot_duration_count):
         """Sets the spot_duration_count of this PostPaidServerExtendParam.
 
-        spot block时间个数。    - spot_duration_hours小于6时，spot_duration_count值必须为1。   - spot_duration_hours等于6时，spot_duration_count大于1，最大值由预测系统给出，可以从flavor的extra_specs中查询。   例如客户买5小时，就通过spot_duartion_hours=5，不传该值，默认为1.   例如客户买大于6小时，就只能买6小时倍数。spot_duartion_hours=6，spot_duartion_count=2，代表买12个小时。 
+        表示购买的“竞价实例时长”的个数。  - 仅spot_duration_hours>0 时该字段有效。 - spot_duration_hours小于6时，spot_duration_count值必须为1。 - spot_duration_hours等于6时，spot_duration_count大于等于1。  spot_duration_count的最大值由预测系统给出可以从flavor的extra_specs的cond:spot_block:operation:longest_duration_count字段中查询。
 
         :param spot_duration_count: The spot_duration_count of this PostPaidServerExtendParam.
         :type: int

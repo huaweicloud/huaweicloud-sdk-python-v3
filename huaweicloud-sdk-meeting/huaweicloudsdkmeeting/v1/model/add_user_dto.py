@@ -31,7 +31,6 @@ class AddUserDTO:
         'country': 'str',
         'pwd': 'str',
         'email': 'str',
-        'vmr_id': 'str',
         'dept_code': 'str',
         'signature': 'str',
         'title': 'str',
@@ -52,7 +51,6 @@ class AddUserDTO:
         'country': 'country',
         'pwd': 'pwd',
         'email': 'email',
-        'vmr_id': 'vmrId',
         'dept_code': 'deptCode',
         'signature': 'signature',
         'title': 'title',
@@ -64,7 +62,7 @@ class AddUserDTO:
         'hide_phone': 'hidePhone'
     }
 
-    def __init__(self, id=None, name=None, english_name=None, account=None, phone=None, country=None, pwd=None, email=None, vmr_id=None, dept_code=None, signature=None, title=None, desc=None, status=None, function=None, send_notify=None, sort_level=None, hide_phone=None):
+    def __init__(self, id=None, name=None, english_name=None, account=None, phone=None, country=None, pwd=None, email=None, dept_code=None, signature=None, title=None, desc=None, status=None, function=None, send_notify=None, sort_level=None, hide_phone=None):
         """AddUserDTO - a model defined in huaweicloud sdk"""
         
         
@@ -77,7 +75,6 @@ class AddUserDTO:
         self._country = None
         self._pwd = None
         self._email = None
-        self._vmr_id = None
         self._dept_code = None
         self._signature = None
         self._title = None
@@ -104,8 +101,6 @@ class AddUserDTO:
             self.pwd = pwd
         if email is not None:
             self.email = email
-        if vmr_id is not None:
-            self.vmr_id = vmr_id
         if dept_code is not None:
             self.dept_code = dept_code
         if signature is not None:
@@ -300,28 +295,6 @@ class AddUserDTO:
         :type: str
         """
         self._email = email
-
-    @property
-    def vmr_id(self):
-        """Gets the vmr_id of this AddUserDTO.
-
-        虚拟会议室ID，若不携带则后台默认生成。 maxLength：32 minLength：0
-
-        :return: The vmr_id of this AddUserDTO.
-        :rtype: str
-        """
-        return self._vmr_id
-
-    @vmr_id.setter
-    def vmr_id(self, vmr_id):
-        """Sets the vmr_id of this AddUserDTO.
-
-        虚拟会议室ID，若不携带则后台默认生成。 maxLength：32 minLength：0
-
-        :param vmr_id: The vmr_id of this AddUserDTO.
-        :type: str
-        """
-        self._vmr_id = vmr_id
 
     @property
     def dept_code(self):

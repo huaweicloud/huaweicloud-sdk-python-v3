@@ -32,7 +32,7 @@ class NovaShowServerRequest:
         'open_stack_api_version': 'OpenStack-API-Version'
     }
 
-    def __init__(self, server_id=None, open_stack_api_version='compute 2.60'):
+    def __init__(self, server_id=None, open_stack_api_version=None):
         """NovaShowServerRequest - a model defined in huaweicloud sdk"""
         
         

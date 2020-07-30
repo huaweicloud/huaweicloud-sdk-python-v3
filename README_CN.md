@@ -53,7 +53,7 @@
 1. 导入依赖模块:
 
     ```python
-    from huaweicloudsdkcore.auth.credentials import BasicCredentials
+    from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
     from huaweicloudsdkcore.exceptions import exceptions
     from huaweicloudsdkcore.http.http_config import HttpConfig
     from huaweicloudsdkvpc.v2 import *
@@ -98,14 +98,18 @@
 3. 初始化认证信息
 
     ```python
-    credentials = BasicCredentials(ak, sk, project_id, domain_id)
+    # Region级服务
+    credentials = BasicCredentials(ak, sk, project_id)
+   
+    # Global级服务
+    credentials = GlobalCredentials(ak, sk, domain_id)
     ```
 
-	**说明:**
+    **说明:**
 
-   	非全局服务仅需要提供project_id，domain_id无需提供。
-    全局服务project_id必须为null，domain_id请按照实际情况填写。
-    全局服务当前仅支持IAM。
+    全局服务当前仅支持IAM, TMS, EPS。
+    
+    Region级服务仅需要提供 projectId。Global级服务需要提供domainId。
 
     - `ak` 华为云账号Access Key。
     - `sk` 华为云账号Secret Access Key。
@@ -124,7 +128,7 @@
         .build()
     ```
 
-	**说明:**
+    **说明:**
 
     - `endpoint` 华为云各服务应用区域和各服务的终端节点，详情请查看[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
     - `with_file_log` 支持如下配置：
@@ -144,11 +148,12 @@
 
 5. 发送请求并查看响应.
 
-	```python
-	# 初始化请求
-	response = client.list_vpcs()
-	print(respones)
-	```
+    ```python
+    # 初始化请求
+    request = ListVpcsRequest()
+    response = client.list_vpcs(request)
+    print(respones)
+    ```
 
 6. 异常处理
 
@@ -164,7 +169,8 @@
     ```python
     # 异常处理
     try:
-        response = client.list_vpcs()
+        request = ListVpcsRequest()
+        response = client.list_vpcs(request)
     except exception.ServiceResponseException as e:
         print(e.status_code)
         print(e.request_id)
@@ -228,7 +234,7 @@
         .build()
     ```
 
-   	**说明:**
+       **说明:**
 
     HttpHandler支持如下方法add_request_handler、add_response_handler。
 
@@ -243,12 +249,13 @@
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.http.http_config import HttpConfig
-from huaweicloudsdkvpc.v2 import VpcClient
+from huaweicloudsdkvpc.v2 import *
 
 
 def list_vpc(client):
     try:
-        response = client.list_vpcs()
+        request = ListVpcsRequest()
+        response = client.list_vpcs(request)
         print(response)
     except exceptions.ClientRequestException as e:
         print(e.status_code)
@@ -274,5 +281,4 @@ if __name__ == "__main__":
         .build()
 
     list_vpc(vpc_client)
-
 ```

@@ -1,3 +1,29 @@
+# __3.0.7-beta__ __2020-07-30__
+## __HuaweiCloud SDK CBR__
+ - ### Features
+    - Support Cloud Backup and Recovery Service.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## __HuaweiCloud SDK ECS__
+ - ### Features
+    - Publish new interfaces, such as ChangeServerOs and ResetServerPassword.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## __HuaweiCloud SDK VPC__
+ - ### Features
+    - Support interfaces of version v3.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+
 # __3.0.6-beta__ __2020-07-15__
 ## __HuaweiCloud SDK Core__
  - ### Features

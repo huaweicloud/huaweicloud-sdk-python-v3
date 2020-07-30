@@ -8,7 +8,7 @@ import importlib
 
 import six
 
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
@@ -38,7 +38,9 @@ class IoTDAClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkiotda.v5.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-
+    @staticmethod
+    def new_builder(clazz):
+        return ClientBuilder(clazz)
 
     def add_application(self, request):
         """创建资源空间
@@ -101,6 +103,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_application(self, request):
         """删除资源空间
 
@@ -160,6 +163,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_application(self, request):
         """查询资源空间
 
@@ -218,6 +222,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_applications(self, request):
         """查询资源空间列表
@@ -340,6 +345,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_batch_tasks(self, request):
         """查询批量任务列表
 
@@ -408,6 +414,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_batch_task(self, request):
         """查询批量任务
@@ -536,6 +543,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def check_certificate(self, request):
         """验证设备CA证书
 
@@ -601,6 +609,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_certificate(self, request):
         """删除设备CA证书
 
@@ -659,6 +668,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_certificates(self, request):
         """获取设备CA证书列表
@@ -789,6 +799,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_commands(self, request):
         """查询设备命令
 
@@ -908,6 +919,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_or_delete_device_in_group(self, request):
         """管理设备组中的设备
 
@@ -971,6 +983,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_device_group(self, request):
         """删除设备组
 
@@ -1029,6 +1042,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_device_groups(self, request):
         """查询设备组列表
@@ -1097,6 +1111,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_device_group(self, request):
         """查询设备组
 
@@ -1155,6 +1170,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_devices_in_group(self, request):
         """查询设备组设备列表
@@ -1220,6 +1236,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_device_group(self, request):
         """修改设备组
@@ -1346,6 +1363,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_device(self, request):
         """删除设备
 
@@ -1405,6 +1423,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def freeze_device(self, request):
         """冻结设备
 
@@ -1463,6 +1482,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_devices(self, request):
         """查询设备列表
@@ -1543,6 +1563,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def reset_device_secret(self, request):
         """重置设备密钥
 
@@ -1608,6 +1629,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_device(self, request):
         """查询设备
 
@@ -1667,6 +1689,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def unfreeze_device(self, request):
         """解冻设备
 
@@ -1725,6 +1748,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_device(self, request):
         """修改设备
@@ -1848,6 +1872,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_device_shadow_desired_data(self, request):
         """配置设备影子预期数据
@@ -1976,6 +2001,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_device_messages(self, request):
         """查询设备消息
 
@@ -2034,6 +2060,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_device_message(self, request):
         """查询指定消息id的消息
@@ -2158,6 +2185,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_product(self, request):
         """删除产品
 
@@ -2218,6 +2246,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_products(self, request):
         """查询产品列表
@@ -2284,6 +2313,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_product(self, request):
         """查询产品
 
@@ -2344,6 +2374,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_product(self, request):
         """修改产品
@@ -2469,6 +2500,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_properties(self, request):
         """修改设备属性
@@ -2597,6 +2629,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_rule(self, request):
         """创建规则
 
@@ -2658,6 +2691,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_rule(self, request):
         """删除规则
 
@@ -2716,6 +2750,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_rules(self, request):
         """查询规则列表
@@ -2782,6 +2817,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_rule(self, request):
         """查询规则
 
@@ -2840,6 +2876,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_rule(self, request):
         """修改规则
@@ -2966,6 +3003,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_subscription(self, request):
         """删除订阅
 
@@ -3024,6 +3062,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_subscriptions(self, request):
         """查询订阅列表
@@ -3098,6 +3137,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_subscription(self, request):
         """查询订阅
 
@@ -3156,6 +3196,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_subscription(self, request):
         """修改订阅
@@ -3288,6 +3329,7 @@ class IoTDAClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def tag_device(self, request):
         """绑定标签
 
@@ -3348,6 +3390,7 @@ class IoTDAClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def untag_device(self, request):
         """解绑标签

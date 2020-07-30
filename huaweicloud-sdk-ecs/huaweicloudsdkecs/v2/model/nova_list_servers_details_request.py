@@ -23,103 +23,83 @@ class NovaListServersDetailsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'open_stack_api_version': 'str',
         'changes_since': 'str',
-        'ip': 'str',
-        'image': 'str',
         'flavor': 'str',
-        'name': 'str',
-        'status': 'str',
+        'image': 'str',
+        'ip': 'str',
         'limit': 'int',
         'marker': 'str',
-        'tags': 'str',
+        'name': 'str',
         'not_tags': 'str',
         'reservation_id': 'str',
-        'sort_key': 'str'
+        'sort_key': 'str',
+        'status': 'str',
+        'tags': 'str',
+        'open_stack_api_version': 'str'
     }
 
     attribute_map = {
-        'open_stack_api_version': 'OpenStack-API-Version',
         'changes_since': 'changes-since',
-        'ip': 'ip',
-        'image': 'image',
         'flavor': 'flavor',
-        'name': 'name',
-        'status': 'status',
+        'image': 'image',
+        'ip': 'ip',
         'limit': 'limit',
         'marker': 'marker',
-        'tags': 'tags',
+        'name': 'name',
         'not_tags': 'not-tags',
         'reservation_id': 'reservation_id',
-        'sort_key': 'sort_key'
+        'sort_key': 'sort_key',
+        'status': 'status',
+        'tags': 'tags',
+        'open_stack_api_version': 'OpenStack-API-Version'
     }
 
-    def __init__(self, open_stack_api_version='compute 2.60', changes_since=None, ip=None, image=None, flavor=None, name=None, status=None, limit=25, marker=None, tags=None, not_tags=None, reservation_id=None, sort_key='created_at'):
+    def __init__(self, changes_since=None, flavor=None, image=None, ip=None, limit=25, marker=None, name=None, not_tags=None, reservation_id=None, sort_key='created_at', status=None, tags=None, open_stack_api_version=None):
         """NovaListServersDetailsRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._open_stack_api_version = None
         self._changes_since = None
-        self._ip = None
-        self._image = None
         self._flavor = None
-        self._name = None
-        self._status = None
+        self._image = None
+        self._ip = None
         self._limit = None
         self._marker = None
-        self._tags = None
+        self._name = None
         self._not_tags = None
         self._reservation_id = None
         self._sort_key = None
+        self._status = None
+        self._tags = None
+        self._open_stack_api_version = None
         self.discriminator = None
 
-        if open_stack_api_version is not None:
-            self.open_stack_api_version = open_stack_api_version
         if changes_since is not None:
             self.changes_since = changes_since
-        if ip is not None:
-            self.ip = ip
-        if image is not None:
-            self.image = image
         if flavor is not None:
             self.flavor = flavor
-        if name is not None:
-            self.name = name
-        if status is not None:
-            self.status = status
+        if image is not None:
+            self.image = image
+        if ip is not None:
+            self.ip = ip
         if limit is not None:
             self.limit = limit
         if marker is not None:
             self.marker = marker
-        if tags is not None:
-            self.tags = tags
+        if name is not None:
+            self.name = name
         if not_tags is not None:
             self.not_tags = not_tags
         if reservation_id is not None:
             self.reservation_id = reservation_id
         if sort_key is not None:
             self.sort_key = sort_key
-
-    @property
-    def open_stack_api_version(self):
-        """Gets the open_stack_api_version of this NovaListServersDetailsRequest.
-
-
-        :return: The open_stack_api_version of this NovaListServersDetailsRequest.
-        :rtype: str
-        """
-        return self._open_stack_api_version
-
-    @open_stack_api_version.setter
-    def open_stack_api_version(self, open_stack_api_version):
-        """Sets the open_stack_api_version of this NovaListServersDetailsRequest.
-
-
-        :param open_stack_api_version: The open_stack_api_version of this NovaListServersDetailsRequest.
-        :type: str
-        """
-        self._open_stack_api_version = open_stack_api_version
+        if status is not None:
+            self.status = status
+        if tags is not None:
+            self.tags = tags
+        if open_stack_api_version is not None:
+            self.open_stack_api_version = open_stack_api_version
 
     @property
     def changes_since(self):
@@ -142,24 +122,24 @@ class NovaListServersDetailsRequest:
         self._changes_since = changes_since
 
     @property
-    def ip(self):
-        """Gets the ip of this NovaListServersDetailsRequest.
+    def flavor(self):
+        """Gets the flavor of this NovaListServersDetailsRequest.
 
 
-        :return: The ip of this NovaListServersDetailsRequest.
+        :return: The flavor of this NovaListServersDetailsRequest.
         :rtype: str
         """
-        return self._ip
+        return self._flavor
 
-    @ip.setter
-    def ip(self, ip):
-        """Sets the ip of this NovaListServersDetailsRequest.
+    @flavor.setter
+    def flavor(self, flavor):
+        """Sets the flavor of this NovaListServersDetailsRequest.
 
 
-        :param ip: The ip of this NovaListServersDetailsRequest.
+        :param flavor: The flavor of this NovaListServersDetailsRequest.
         :type: str
         """
-        self._ip = ip
+        self._flavor = flavor
 
     @property
     def image(self):
@@ -182,64 +162,24 @@ class NovaListServersDetailsRequest:
         self._image = image
 
     @property
-    def flavor(self):
-        """Gets the flavor of this NovaListServersDetailsRequest.
+    def ip(self):
+        """Gets the ip of this NovaListServersDetailsRequest.
 
 
-        :return: The flavor of this NovaListServersDetailsRequest.
+        :return: The ip of this NovaListServersDetailsRequest.
         :rtype: str
         """
-        return self._flavor
+        return self._ip
 
-    @flavor.setter
-    def flavor(self, flavor):
-        """Sets the flavor of this NovaListServersDetailsRequest.
+    @ip.setter
+    def ip(self, ip):
+        """Sets the ip of this NovaListServersDetailsRequest.
 
 
-        :param flavor: The flavor of this NovaListServersDetailsRequest.
+        :param ip: The ip of this NovaListServersDetailsRequest.
         :type: str
         """
-        self._flavor = flavor
-
-    @property
-    def name(self):
-        """Gets the name of this NovaListServersDetailsRequest.
-
-
-        :return: The name of this NovaListServersDetailsRequest.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this NovaListServersDetailsRequest.
-
-
-        :param name: The name of this NovaListServersDetailsRequest.
-        :type: str
-        """
-        self._name = name
-
-    @property
-    def status(self):
-        """Gets the status of this NovaListServersDetailsRequest.
-
-
-        :return: The status of this NovaListServersDetailsRequest.
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this NovaListServersDetailsRequest.
-
-
-        :param status: The status of this NovaListServersDetailsRequest.
-        :type: str
-        """
-        self._status = status
+        self._ip = ip
 
     @property
     def limit(self):
@@ -282,24 +222,24 @@ class NovaListServersDetailsRequest:
         self._marker = marker
 
     @property
-    def tags(self):
-        """Gets the tags of this NovaListServersDetailsRequest.
+    def name(self):
+        """Gets the name of this NovaListServersDetailsRequest.
 
 
-        :return: The tags of this NovaListServersDetailsRequest.
+        :return: The name of this NovaListServersDetailsRequest.
         :rtype: str
         """
-        return self._tags
+        return self._name
 
-    @tags.setter
-    def tags(self, tags):
-        """Sets the tags of this NovaListServersDetailsRequest.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this NovaListServersDetailsRequest.
 
 
-        :param tags: The tags of this NovaListServersDetailsRequest.
+        :param name: The name of this NovaListServersDetailsRequest.
         :type: str
         """
-        self._tags = tags
+        self._name = name
 
     @property
     def not_tags(self):
@@ -360,6 +300,66 @@ class NovaListServersDetailsRequest:
         :type: str
         """
         self._sort_key = sort_key
+
+    @property
+    def status(self):
+        """Gets the status of this NovaListServersDetailsRequest.
+
+
+        :return: The status of this NovaListServersDetailsRequest.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this NovaListServersDetailsRequest.
+
+
+        :param status: The status of this NovaListServersDetailsRequest.
+        :type: str
+        """
+        self._status = status
+
+    @property
+    def tags(self):
+        """Gets the tags of this NovaListServersDetailsRequest.
+
+
+        :return: The tags of this NovaListServersDetailsRequest.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this NovaListServersDetailsRequest.
+
+
+        :param tags: The tags of this NovaListServersDetailsRequest.
+        :type: str
+        """
+        self._tags = tags
+
+    @property
+    def open_stack_api_version(self):
+        """Gets the open_stack_api_version of this NovaListServersDetailsRequest.
+
+
+        :return: The open_stack_api_version of this NovaListServersDetailsRequest.
+        :rtype: str
+        """
+        return self._open_stack_api_version
+
+    @open_stack_api_version.setter
+    def open_stack_api_version(self, open_stack_api_version):
+        """Sets the open_stack_api_version of this NovaListServersDetailsRequest.
+
+
+        :param open_stack_api_version: The open_stack_api_version of this NovaListServersDetailsRequest.
+        :type: str
+        """
+        self._open_stack_api_version = open_stack_api_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

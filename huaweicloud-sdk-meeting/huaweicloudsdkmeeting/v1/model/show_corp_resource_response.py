@@ -31,12 +31,17 @@ class ShowCorpResourceResponse(SdkResponse):
         'conf_call_count': 'ResDetailDTO',
         'live_count': 'ResDetailDTO',
         'third_party_hard_count': 'ResDetailDTO',
+        'hw_vision_count': 'ResDetailDTO',
+        'idea_hub_count': 'ResDetailDTO',
         'vmr': 'list[QueryVmrPkgResResultDTO]',
         'enable_pstn': 'bool',
         'enable_sms': 'bool',
         'enable_hybrid_cloud': 'bool',
         'enable_cloud_disk': 'bool',
-        'enable_uc': 'bool'
+        'enable_uc': 'bool',
+        'enable_ai_minutes': 'bool',
+        'single_conf_call_count': 'int',
+        'conf_length': 'int'
     }
 
     attribute_map = {
@@ -48,15 +53,20 @@ class ShowCorpResourceResponse(SdkResponse):
         'conf_call_count': 'confCallCount',
         'live_count': 'liveCount',
         'third_party_hard_count': 'thirdPartyHardCount',
+        'hw_vision_count': 'hwVisionCount',
+        'idea_hub_count': 'ideaHubCount',
         'vmr': 'vmr',
         'enable_pstn': 'enablePstn',
         'enable_sms': 'enableSMS',
         'enable_hybrid_cloud': 'enableHybridCloud',
         'enable_cloud_disk': 'enableCloudDisk',
-        'enable_uc': 'enableUc'
+        'enable_uc': 'enableUc',
+        'enable_ai_minutes': 'enableAiMinutes',
+        'single_conf_call_count': 'singleConfCallCount',
+        'conf_length': 'confLength'
     }
 
-    def __init__(self, te1080p_hard_count=None, te720p_hard_count=None, te_soft_count=None, room_count=None, record_capability=None, conf_call_count=None, live_count=None, third_party_hard_count=None, vmr=None, enable_pstn=None, enable_sms=None, enable_hybrid_cloud=None, enable_cloud_disk=None, enable_uc=None):
+    def __init__(self, te1080p_hard_count=None, te720p_hard_count=None, te_soft_count=None, room_count=None, record_capability=None, conf_call_count=None, live_count=None, third_party_hard_count=None, hw_vision_count=None, idea_hub_count=None, vmr=None, enable_pstn=None, enable_sms=None, enable_hybrid_cloud=None, enable_cloud_disk=None, enable_uc=None, enable_ai_minutes=None, single_conf_call_count=None, conf_length=None):
         """ShowCorpResourceResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
@@ -69,12 +79,17 @@ class ShowCorpResourceResponse(SdkResponse):
         self._conf_call_count = None
         self._live_count = None
         self._third_party_hard_count = None
+        self._hw_vision_count = None
+        self._idea_hub_count = None
         self._vmr = None
         self._enable_pstn = None
         self._enable_sms = None
         self._enable_hybrid_cloud = None
         self._enable_cloud_disk = None
         self._enable_uc = None
+        self._enable_ai_minutes = None
+        self._single_conf_call_count = None
+        self._conf_length = None
         self.discriminator = None
 
         if te1080p_hard_count is not None:
@@ -93,6 +108,10 @@ class ShowCorpResourceResponse(SdkResponse):
             self.live_count = live_count
         if third_party_hard_count is not None:
             self.third_party_hard_count = third_party_hard_count
+        if hw_vision_count is not None:
+            self.hw_vision_count = hw_vision_count
+        if idea_hub_count is not None:
+            self.idea_hub_count = idea_hub_count
         if vmr is not None:
             self.vmr = vmr
         if enable_pstn is not None:
@@ -105,6 +124,12 @@ class ShowCorpResourceResponse(SdkResponse):
             self.enable_cloud_disk = enable_cloud_disk
         if enable_uc is not None:
             self.enable_uc = enable_uc
+        if enable_ai_minutes is not None:
+            self.enable_ai_minutes = enable_ai_minutes
+        if single_conf_call_count is not None:
+            self.single_conf_call_count = single_conf_call_count
+        if conf_length is not None:
+            self.conf_length = conf_length
 
     @property
     def te1080p_hard_count(self):
@@ -267,6 +292,46 @@ class ShowCorpResourceResponse(SdkResponse):
         self._third_party_hard_count = third_party_hard_count
 
     @property
+    def hw_vision_count(self):
+        """Gets the hw_vision_count of this ShowCorpResourceResponse.
+
+
+        :return: The hw_vision_count of this ShowCorpResourceResponse.
+        :rtype: ResDetailDTO
+        """
+        return self._hw_vision_count
+
+    @hw_vision_count.setter
+    def hw_vision_count(self, hw_vision_count):
+        """Sets the hw_vision_count of this ShowCorpResourceResponse.
+
+
+        :param hw_vision_count: The hw_vision_count of this ShowCorpResourceResponse.
+        :type: ResDetailDTO
+        """
+        self._hw_vision_count = hw_vision_count
+
+    @property
+    def idea_hub_count(self):
+        """Gets the idea_hub_count of this ShowCorpResourceResponse.
+
+
+        :return: The idea_hub_count of this ShowCorpResourceResponse.
+        :rtype: ResDetailDTO
+        """
+        return self._idea_hub_count
+
+    @idea_hub_count.setter
+    def idea_hub_count(self, idea_hub_count):
+        """Sets the idea_hub_count of this ShowCorpResourceResponse.
+
+
+        :param idea_hub_count: The idea_hub_count of this ShowCorpResourceResponse.
+        :type: ResDetailDTO
+        """
+        self._idea_hub_count = idea_hub_count
+
+    @property
     def vmr(self):
         """Gets the vmr of this ShowCorpResourceResponse.
 
@@ -397,6 +462,72 @@ class ShowCorpResourceResponse(SdkResponse):
         :type: bool
         """
         self._enable_uc = enable_uc
+
+    @property
+    def enable_ai_minutes(self):
+        """Gets the enable_ai_minutes of this ShowCorpResourceResponse.
+
+        是否开启Ai会议纪要
+
+        :return: The enable_ai_minutes of this ShowCorpResourceResponse.
+        :rtype: bool
+        """
+        return self._enable_ai_minutes
+
+    @enable_ai_minutes.setter
+    def enable_ai_minutes(self, enable_ai_minutes):
+        """Sets the enable_ai_minutes of this ShowCorpResourceResponse.
+
+        是否开启Ai会议纪要
+
+        :param enable_ai_minutes: The enable_ai_minutes of this ShowCorpResourceResponse.
+        :type: bool
+        """
+        self._enable_ai_minutes = enable_ai_minutes
+
+    @property
+    def single_conf_call_count(self):
+        """Gets the single_conf_call_count of this ShowCorpResourceResponse.
+
+        单会议并发呼叫数
+
+        :return: The single_conf_call_count of this ShowCorpResourceResponse.
+        :rtype: int
+        """
+        return self._single_conf_call_count
+
+    @single_conf_call_count.setter
+    def single_conf_call_count(self, single_conf_call_count):
+        """Sets the single_conf_call_count of this ShowCorpResourceResponse.
+
+        单会议并发呼叫数
+
+        :param single_conf_call_count: The single_conf_call_count of this ShowCorpResourceResponse.
+        :type: int
+        """
+        self._single_conf_call_count = single_conf_call_count
+
+    @property
+    def conf_length(self):
+        """Gets the conf_length of this ShowCorpResourceResponse.
+
+        会议时长
+
+        :return: The conf_length of this ShowCorpResourceResponse.
+        :rtype: int
+        """
+        return self._conf_length
+
+    @conf_length.setter
+    def conf_length(self, conf_length):
+        """Sets the conf_length of this ShowCorpResourceResponse.
+
+        会议时长
+
+        :param conf_length: The conf_length of this ShowCorpResourceResponse.
+        :type: int
+        """
+        self._conf_length = conf_length
 
     def to_dict(self):
         """Returns the model properties as a dict"""

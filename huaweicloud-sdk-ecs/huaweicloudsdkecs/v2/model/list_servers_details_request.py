@@ -23,208 +23,68 @@ class ListServersDetailsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'offset': 'int',
-        'flavor': 'str',
-        'name': 'str',
-        'status': 'str',
-        'limit': 'int',
-        'not_tags': 'str',
-        'reservation_id': 'str',
         'enterprise_project_id': 'str',
-        'tags': 'str',
-        'ip': 'str'
+        'flavor': 'str',
+        'ip': 'str',
+        'limit': 'int',
+        'name': 'str',
+        'not_tags': 'str',
+        'offset': 'int',
+        'reservation_id': 'str',
+        'status': 'str',
+        'tags': 'str'
     }
 
     attribute_map = {
-        'offset': 'offset',
-        'flavor': 'flavor',
-        'name': 'name',
-        'status': 'status',
-        'limit': 'limit',
-        'not_tags': 'not-tags',
-        'reservation_id': 'reservation_id',
         'enterprise_project_id': 'enterprise_project_id',
-        'tags': 'tags',
-        'ip': 'ip'
+        'flavor': 'flavor',
+        'ip': 'ip',
+        'limit': 'limit',
+        'name': 'name',
+        'not_tags': 'not-tags',
+        'offset': 'offset',
+        'reservation_id': 'reservation_id',
+        'status': 'status',
+        'tags': 'tags'
     }
 
-    def __init__(self, offset=1, flavor=None, name=None, status=None, limit=25, not_tags=None, reservation_id=None, enterprise_project_id=None, tags=None, ip=None):
+    def __init__(self, enterprise_project_id=None, flavor=None, ip=None, limit=25, name=None, not_tags=None, offset=1, reservation_id=None, status=None, tags=None):
         """ListServersDetailsRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._offset = None
-        self._flavor = None
-        self._name = None
-        self._status = None
-        self._limit = None
-        self._not_tags = None
-        self._reservation_id = None
         self._enterprise_project_id = None
-        self._tags = None
+        self._flavor = None
         self._ip = None
+        self._limit = None
+        self._name = None
+        self._not_tags = None
+        self._offset = None
+        self._reservation_id = None
+        self._status = None
+        self._tags = None
         self.discriminator = None
 
-        if offset is not None:
-            self.offset = offset
-        if flavor is not None:
-            self.flavor = flavor
-        if name is not None:
-            self.name = name
-        if status is not None:
-            self.status = status
-        if limit is not None:
-            self.limit = limit
-        if not_tags is not None:
-            self.not_tags = not_tags
-        if reservation_id is not None:
-            self.reservation_id = reservation_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if tags is not None:
-            self.tags = tags
+        if flavor is not None:
+            self.flavor = flavor
         if ip is not None:
             self.ip = ip
-
-    @property
-    def offset(self):
-        """Gets the offset of this ListServersDetailsRequest.
-
-
-        :return: The offset of this ListServersDetailsRequest.
-        :rtype: int
-        """
-        return self._offset
-
-    @offset.setter
-    def offset(self, offset):
-        """Sets the offset of this ListServersDetailsRequest.
-
-
-        :param offset: The offset of this ListServersDetailsRequest.
-        :type: int
-        """
-        self._offset = offset
-
-    @property
-    def flavor(self):
-        """Gets the flavor of this ListServersDetailsRequest.
-
-
-        :return: The flavor of this ListServersDetailsRequest.
-        :rtype: str
-        """
-        return self._flavor
-
-    @flavor.setter
-    def flavor(self, flavor):
-        """Sets the flavor of this ListServersDetailsRequest.
-
-
-        :param flavor: The flavor of this ListServersDetailsRequest.
-        :type: str
-        """
-        self._flavor = flavor
-
-    @property
-    def name(self):
-        """Gets the name of this ListServersDetailsRequest.
-
-
-        :return: The name of this ListServersDetailsRequest.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ListServersDetailsRequest.
-
-
-        :param name: The name of this ListServersDetailsRequest.
-        :type: str
-        """
-        self._name = name
-
-    @property
-    def status(self):
-        """Gets the status of this ListServersDetailsRequest.
-
-
-        :return: The status of this ListServersDetailsRequest.
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this ListServersDetailsRequest.
-
-
-        :param status: The status of this ListServersDetailsRequest.
-        :type: str
-        """
-        self._status = status
-
-    @property
-    def limit(self):
-        """Gets the limit of this ListServersDetailsRequest.
-
-
-        :return: The limit of this ListServersDetailsRequest.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListServersDetailsRequest.
-
-
-        :param limit: The limit of this ListServersDetailsRequest.
-        :type: int
-        """
-        self._limit = limit
-
-    @property
-    def not_tags(self):
-        """Gets the not_tags of this ListServersDetailsRequest.
-
-
-        :return: The not_tags of this ListServersDetailsRequest.
-        :rtype: str
-        """
-        return self._not_tags
-
-    @not_tags.setter
-    def not_tags(self, not_tags):
-        """Sets the not_tags of this ListServersDetailsRequest.
-
-
-        :param not_tags: The not_tags of this ListServersDetailsRequest.
-        :type: str
-        """
-        self._not_tags = not_tags
-
-    @property
-    def reservation_id(self):
-        """Gets the reservation_id of this ListServersDetailsRequest.
-
-
-        :return: The reservation_id of this ListServersDetailsRequest.
-        :rtype: str
-        """
-        return self._reservation_id
-
-    @reservation_id.setter
-    def reservation_id(self, reservation_id):
-        """Sets the reservation_id of this ListServersDetailsRequest.
-
-
-        :param reservation_id: The reservation_id of this ListServersDetailsRequest.
-        :type: str
-        """
-        self._reservation_id = reservation_id
+        if limit is not None:
+            self.limit = limit
+        if name is not None:
+            self.name = name
+        if not_tags is not None:
+            self.not_tags = not_tags
+        if offset is not None:
+            self.offset = offset
+        if reservation_id is not None:
+            self.reservation_id = reservation_id
+        if status is not None:
+            self.status = status
+        if tags is not None:
+            self.tags = tags
 
     @property
     def enterprise_project_id(self):
@@ -247,24 +107,24 @@ class ListServersDetailsRequest:
         self._enterprise_project_id = enterprise_project_id
 
     @property
-    def tags(self):
-        """Gets the tags of this ListServersDetailsRequest.
+    def flavor(self):
+        """Gets the flavor of this ListServersDetailsRequest.
 
 
-        :return: The tags of this ListServersDetailsRequest.
+        :return: The flavor of this ListServersDetailsRequest.
         :rtype: str
         """
-        return self._tags
+        return self._flavor
 
-    @tags.setter
-    def tags(self, tags):
-        """Sets the tags of this ListServersDetailsRequest.
+    @flavor.setter
+    def flavor(self, flavor):
+        """Sets the flavor of this ListServersDetailsRequest.
 
 
-        :param tags: The tags of this ListServersDetailsRequest.
+        :param flavor: The flavor of this ListServersDetailsRequest.
         :type: str
         """
-        self._tags = tags
+        self._flavor = flavor
 
     @property
     def ip(self):
@@ -285,6 +145,146 @@ class ListServersDetailsRequest:
         :type: str
         """
         self._ip = ip
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListServersDetailsRequest.
+
+
+        :return: The limit of this ListServersDetailsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListServersDetailsRequest.
+
+
+        :param limit: The limit of this ListServersDetailsRequest.
+        :type: int
+        """
+        self._limit = limit
+
+    @property
+    def name(self):
+        """Gets the name of this ListServersDetailsRequest.
+
+
+        :return: The name of this ListServersDetailsRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListServersDetailsRequest.
+
+
+        :param name: The name of this ListServersDetailsRequest.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def not_tags(self):
+        """Gets the not_tags of this ListServersDetailsRequest.
+
+
+        :return: The not_tags of this ListServersDetailsRequest.
+        :rtype: str
+        """
+        return self._not_tags
+
+    @not_tags.setter
+    def not_tags(self, not_tags):
+        """Sets the not_tags of this ListServersDetailsRequest.
+
+
+        :param not_tags: The not_tags of this ListServersDetailsRequest.
+        :type: str
+        """
+        self._not_tags = not_tags
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListServersDetailsRequest.
+
+
+        :return: The offset of this ListServersDetailsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListServersDetailsRequest.
+
+
+        :param offset: The offset of this ListServersDetailsRequest.
+        :type: int
+        """
+        self._offset = offset
+
+    @property
+    def reservation_id(self):
+        """Gets the reservation_id of this ListServersDetailsRequest.
+
+
+        :return: The reservation_id of this ListServersDetailsRequest.
+        :rtype: str
+        """
+        return self._reservation_id
+
+    @reservation_id.setter
+    def reservation_id(self, reservation_id):
+        """Sets the reservation_id of this ListServersDetailsRequest.
+
+
+        :param reservation_id: The reservation_id of this ListServersDetailsRequest.
+        :type: str
+        """
+        self._reservation_id = reservation_id
+
+    @property
+    def status(self):
+        """Gets the status of this ListServersDetailsRequest.
+
+
+        :return: The status of this ListServersDetailsRequest.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListServersDetailsRequest.
+
+
+        :param status: The status of this ListServersDetailsRequest.
+        :type: str
+        """
+        self._status = status
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListServersDetailsRequest.
+
+
+        :return: The tags of this ListServersDetailsRequest.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListServersDetailsRequest.
+
+
+        :param tags: The tags of this ListServersDetailsRequest.
+        :type: str
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

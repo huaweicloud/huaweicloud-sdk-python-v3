@@ -32,21 +32,22 @@ from typing import Mapping
 import six
 from six.moves.urllib.parse import quote, urlparse
 
-from huaweicloudsdkcore.auth.credentials import BasicCredentials
+from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
 from huaweicloudsdkcore.http.http_client import HttpClient
 from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.http.http_handler import HttpHandler
 from huaweicloudsdkcore.http.primitive_types import native_types_mapping
 from huaweicloudsdkcore.http.primitive_types import primitive_types
 from huaweicloudsdkcore.sdk_request import SdkRequest
-from huaweicloudsdkcore.sdk_response import FutureSdkResponse, SdkResponse
+from huaweicloudsdkcore.sdk_response import FutureSdkResponse
 from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils import http_utils, core_utils
 
 
 class ClientBuilder:
-    def __init__(self, client_type):
+    def __init__(self, client_type, credential_type=BasicCredentials.__name__):
         self._client_class = client_type
+        self._credential_type = credential_type
         self._config = None
         self._credentials = None
         self._endpoint = None
@@ -93,6 +94,10 @@ class ClientBuilder:
         if self._credentials is None:
             self._credentials = self.get_credential_from_environment_variables()
 
+        if self._credentials.__class__.__name__ != self._credential_type:
+            raise TypeError("Need credential type is %s, actually is %s" % (
+                self._credential_type, self._credentials.__class__.__name__))
+
         client = self._client_class() \
             .with_endpoint(self._endpoint) \
             .with_credentials(self._credentials) \
@@ -107,20 +112,21 @@ class ClientBuilder:
         client.init_http_client()
         return client
 
-    @classmethod
-    def get_credential_from_environment_variables(cls):
+    def get_credential_from_environment_variables(self):
         ak = os.environ.get("HUAWEICLOUD_SDK_AK")
         sk = os.environ.get("HUAWEICLOUD_SDK_SK")
         project_id = os.environ.get("HUAWEICLOUD_SDK_PROJECT_ID")
         domain_id = os.environ.get("HUAWEICLOUD_SDK_DOMAIN_ID")
-        return BasicCredentials(ak, sk, project_id, domain_id)
+
+        if self._credential_type == BasicCredentials.__name__:
+            return BasicCredentials(ak, sk, project_id)
+        elif self._credential_type == GlobalCredentials.__name__:
+            return GlobalCredentials(ak, sk, domain_id)
+        else:
+            return None
 
 
 class Client:
-    @staticmethod
-    def new_builder(clazz):
-        return ClientBuilder(clazz)
-
     def __init__(self):
         self.preset_headers = {}
 
@@ -373,7 +379,7 @@ class Client:
     def _deserialize_date(cls, string):
         try:
             from dateutil.parser import parse
-            return parse(string).date()
+            return parse(string if string.endswith("Z") else string + "Z").date()
         except ImportError:
             return string
         except ValueError:
@@ -383,7 +389,7 @@ class Client:
     def _deserialize_data_time(cls, string):
         try:
             from dateutil.parser import parse
-            return parse(string)
+            return parse(string if string.endswith("Z") else string + "Z")
         except ImportError:
             return string
         except ValueError:
@@ -396,7 +402,7 @@ class Client:
         kwargs = {}
         if klass.openapi_types is not None:
             for attr, attr_type in six.iteritems(klass.openapi_types):
-                if (data is not None and isinstance(data, (list, dict))):
+                if data is not None and isinstance(data, (list, dict)):
                     if klass.attribute_map[attr] in data:
                         value = data[klass.attribute_map[attr]]
                         kwargs[attr] = self._deserialize(value, attr_type)

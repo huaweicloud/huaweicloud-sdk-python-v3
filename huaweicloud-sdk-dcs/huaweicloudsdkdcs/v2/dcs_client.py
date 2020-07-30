@@ -8,7 +8,7 @@ import importlib
 
 import six
 
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
@@ -38,7 +38,9 @@ class DcsClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkdcs.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-
+    @staticmethod
+    def new_builder(clazz):
+        return ClientBuilder(clazz)
 
     def batch_create_or_delete_dcs_tags(self, request):
         """批量添加或删除标签
@@ -101,6 +103,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def batch_delete_dcs_instances(self, request):
         """批量删除实例
 
@@ -161,6 +164,7 @@ class DcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def copy_instance(self, request):
         """备份指定实例
@@ -223,6 +227,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_dcs_instance(self, request):
         """创建缓存实例
 
@@ -282,6 +287,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def create_migration_task(self, request):
         """创建数据迁移任务
 
@@ -340,6 +346,7 @@ class DcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def create_replication(self, request):
         """添加副本
@@ -404,6 +411,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_backup_file(self, request):
         """删除备份文件
 
@@ -462,6 +470,7 @@ class DcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def delete_ip_from_domain_name(self, request):
         """域名摘除IP
@@ -524,6 +533,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_migration_task(self, request):
         """删除数据迁移任务
 
@@ -582,6 +592,7 @@ class DcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def delete_replication(self, request):
         """删除副本
@@ -644,6 +655,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def delete_single_dcs_instance(self, request):
         """删除实例
 
@@ -701,6 +713,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_available_zones(self, request):
         """查询可用区信息
 
@@ -755,6 +768,7 @@ class DcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_backup_file_links(self, request):
         """获取备份文件下载链接
@@ -818,6 +832,7 @@ class DcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_backup_records(self, request):
         """查询实例备份信息
@@ -884,6 +899,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_ces_monitored_objects(self, request):
         """查询主维度信息列表
 
@@ -945,6 +961,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_configurations(self, request):
         """查询实例配置参数
 
@@ -1002,6 +1019,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_dcs_tags_of_tenant(self, request):
         """查询租户所有标签
 
@@ -1056,6 +1074,7 @@ class DcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_flavors(self, request):
         """查询产品规格
@@ -1124,6 +1143,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_group_replication_info(self, request):
         """查询分片信息
 
@@ -1181,6 +1201,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_maintenance_windows(self, request):
         """查询维护时间窗时间段
 
@@ -1235,6 +1256,7 @@ class DcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_migration_task(self, request):
         """查询迁移任务列表
@@ -1297,6 +1319,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_monitored_objects_of_instance(self, request):
         """查询单个主维度下子维度监控对象列表
 
@@ -1356,6 +1379,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_number_of_instances_in_different_status(self, request):
         """查询实例状态
 
@@ -1412,6 +1436,7 @@ class DcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def list_restore_records(self, request):
         """查询实例恢复记录
@@ -1478,6 +1503,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def list_statistics_of_running_instances(self, request):
         """查询运行中实例的统计信息
 
@@ -1532,6 +1558,7 @@ class DcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def restart_or_flush_dcs_instances(self, request):
         """重启实例或清空数据
@@ -1591,6 +1618,7 @@ class DcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def restore_instance(self, request):
         """恢复指定实例
@@ -1653,6 +1681,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_dcs_tags(self, request):
         """查询单个实例标签
 
@@ -1709,6 +1738,7 @@ class DcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def show_migration_task(self, request):
         """查询迁移任务详情
@@ -1767,6 +1797,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def show_quota_of_tenant(self, request):
         """查询租户配额
 
@@ -1821,6 +1852,7 @@ class DcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def stop_migration_task(self, request):
         """停止数据迁移任务
@@ -1878,6 +1910,7 @@ class DcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_configurations(self, request):
         """修改实例配置参数
@@ -1940,6 +1973,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def update_dcs_instance(self, request):
         """修改实例信息
 
@@ -2001,6 +2035,7 @@ class DcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+
     def update_password(self, request):
         """修改密码
 
@@ -2061,6 +2096,7 @@ class DcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_slave_priority(self, request):
         """设置备节点优先级
@@ -2184,6 +2220,7 @@ class DcsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
+
 
     def update_ip_whitelist(self, request):
         """设置IP白名单分组

@@ -24,32 +24,32 @@ class ServerSchedulerHints:
 
     openapi_types = {
         'group': 'list[str]',
-        'different_host': 'list[str]',
-        'same_host': 'list[str]'
+        'tenancy': 'list[str]',
+        'dedicated_host_id': 'list[str]'
     }
 
     attribute_map = {
         'group': 'group',
-        'different_host': 'different_host',
-        'same_host': 'same_host'
+        'tenancy': 'tenancy',
+        'dedicated_host_id': 'dedicated_host_id'
     }
 
-    def __init__(self, group=None, different_host=None, same_host=None):
+    def __init__(self, group=None, tenancy=None, dedicated_host_id=None):
         """ServerSchedulerHints - a model defined in huaweicloud sdk"""
         
         
 
         self._group = None
-        self._different_host = None
-        self._same_host = None
+        self._tenancy = None
+        self._dedicated_host_id = None
         self.discriminator = None
 
         if group is not None:
             self.group = group
-        if different_host is not None:
-            self.different_host = different_host
-        if same_host is not None:
-            self.same_host = same_host
+        if tenancy is not None:
+            self.tenancy = tenancy
+        if dedicated_host_id is not None:
+            self.dedicated_host_id = dedicated_host_id
 
     @property
     def group(self):
@@ -74,48 +74,48 @@ class ServerSchedulerHints:
         self._group = group
 
     @property
-    def different_host(self):
-        """Gets the different_host of this ServerSchedulerHints.
+    def tenancy(self):
+        """Gets the tenancy of this ServerSchedulerHints.
 
-        与指定弹性云服务器满足反亲和性。当前不支持该功能。
+        在专属主机或共享池中创建弹性云服务器。默认为在共享池创建。值为： shared或dedicated。  - shared：表示共享池。 - dedicated:表示专属主机。  创建与查询此值均有效。
 
-        :return: The different_host of this ServerSchedulerHints.
+        :return: The tenancy of this ServerSchedulerHints.
         :rtype: list[str]
         """
-        return self._different_host
+        return self._tenancy
 
-    @different_host.setter
-    def different_host(self, different_host):
-        """Sets the different_host of this ServerSchedulerHints.
+    @tenancy.setter
+    def tenancy(self, tenancy):
+        """Sets the tenancy of this ServerSchedulerHints.
 
-        与指定弹性云服务器满足反亲和性。当前不支持该功能。
+        在专属主机或共享池中创建弹性云服务器。默认为在共享池创建。值为： shared或dedicated。  - shared：表示共享池。 - dedicated:表示专属主机。  创建与查询此值均有效。
 
-        :param different_host: The different_host of this ServerSchedulerHints.
+        :param tenancy: The tenancy of this ServerSchedulerHints.
         :type: list[str]
         """
-        self._different_host = different_host
+        self._tenancy = tenancy
 
     @property
-    def same_host(self):
-        """Gets the same_host of this ServerSchedulerHints.
+    def dedicated_host_id(self):
+        """Gets the dedicated_host_id of this ServerSchedulerHints.
 
-        与指定的弹性云服务器满足亲和性。当前不支持该功能。
+        专属主机ID。  此属性仅在tenancy值为dedicated时有效。  不指定此属性，系统将自动分配租户可自动放置弹性云服务器的专属主机。  创建与查询此值均有效。
 
-        :return: The same_host of this ServerSchedulerHints.
+        :return: The dedicated_host_id of this ServerSchedulerHints.
         :rtype: list[str]
         """
-        return self._same_host
+        return self._dedicated_host_id
 
-    @same_host.setter
-    def same_host(self, same_host):
-        """Sets the same_host of this ServerSchedulerHints.
+    @dedicated_host_id.setter
+    def dedicated_host_id(self, dedicated_host_id):
+        """Sets the dedicated_host_id of this ServerSchedulerHints.
 
-        与指定的弹性云服务器满足亲和性。当前不支持该功能。
+        专属主机ID。  此属性仅在tenancy值为dedicated时有效。  不指定此属性，系统将自动分配租户可自动放置弹性云服务器的专属主机。  创建与查询此值均有效。
 
-        :param same_host: The same_host of this ServerSchedulerHints.
+        :param dedicated_host_id: The dedicated_host_id of this ServerSchedulerHints.
         :type: list[str]
         """
-        self._same_host = same_host
+        self._dedicated_host_id = dedicated_host_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

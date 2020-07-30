@@ -26,7 +26,7 @@ class NovaCreateServersOption:
         'image_ref': 'str',
         'flavor_ref': 'str',
         'name': 'str',
-        'metadata': 'dict(str, object)',
+        'metadata': 'dict(str, str)',
         'admin_pass': 'str',
         'block_device_mapping_v2': 'list[NovaServerBlockDeviceMapping]',
         'config_drive': 'str',
@@ -191,7 +191,7 @@ class NovaCreateServersOption:
         用户自定义字段键值对。  > - key的长度大于0小于256字节 > - value的长度大于等于0小于256字节   系统预留字段  1. admin_pass：弹性云服务器密码        Windows弹性云服务器Administrator用户的密码。     > 说明：     > 创建密码方式鉴权的Windows弹性云服务器时为必选字段。
 
         :return: The metadata of this NovaCreateServersOption.
-        :rtype: dict(str, object)
+        :rtype: dict(str, str)
         """
         return self._metadata
 
@@ -202,7 +202,7 @@ class NovaCreateServersOption:
         用户自定义字段键值对。  > - key的长度大于0小于256字节 > - value的长度大于等于0小于256字节   系统预留字段  1. admin_pass：弹性云服务器密码        Windows弹性云服务器Administrator用户的密码。     > 说明：     > 创建密码方式鉴权的Windows弹性云服务器时为必选字段。
 
         :param metadata: The metadata of this NovaCreateServersOption.
-        :type: dict(str, object)
+        :type: dict(str, str)
         """
         self._metadata = metadata
 
