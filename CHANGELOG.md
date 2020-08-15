@@ -1,3 +1,61 @@
+# 3.0.8-beta 2020-8-14
+## HuaweiCloud SDK Core
+ - ### Features
+    - Support temporary AK/SK authentication mode.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK APIG
+ - ### Features
+    - Support API Gateway service.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK CloudIDE
+ - ### Features
+    - Support Cloud IDE service.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK KMS
+ - ### Features
+    - Support Key Management Service.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK Live
+ - ### Features
+    - Support Live Service.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK MPC
+ - ### Features
+    - Support Media Processing Center.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK ServiceStage
+ - ### Features
+    - Support ServiceStage.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+
 # __3.0.7-beta__ __2020-07-30__
 ## __HuaweiCloud SDK CBR__
  - ### Features

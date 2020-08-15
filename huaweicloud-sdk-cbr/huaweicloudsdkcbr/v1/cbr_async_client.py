@@ -905,7 +905,7 @@ class CbrAsyncClient(Client):
         :return: ListBackupsResponse
         """
 
-        all_params = ['checkpoint_id', 'dec', 'end_time', 'image_type', 'limit', 'marker', 'name', 'offset', 'resource_az', 'resource_id', 'resource_name', 'resource_type', 'sort', 'start_time', 'status', 'vault_id', 'enterprise_project_id', 'own_type', 'member_status', 'parent_id']
+        all_params = ['checkpoint_id', 'dec', 'end_time', 'image_type', 'limit', 'marker', 'name', 'offset', 'resource_az', 'resource_id', 'resource_name', 'resource_type', 'sort', 'start_time', 'status', 'vault_id', 'enterprise_project_id', 'own_type', 'member_status', 'parent_id', 'used_percent']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -956,6 +956,8 @@ class CbrAsyncClient(Client):
             query_params.append(('member_status', local_var_params['member_status']))
         if 'parent_id' in local_var_params:
             query_params.append(('parent_id', local_var_params['parent_id']))
+        if 'used_percent' in local_var_params:
+            query_params.append(('used_percent', local_var_params['used_percent']))
 
         header_params = {}
 

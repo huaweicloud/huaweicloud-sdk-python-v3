@@ -215,12 +215,15 @@ class Client:
 
     def _parse_path_params(self, collection_formats, path_params, resource_path, update_path_params):
         path_params = self.post_process_params(path_params) or {}
-        if update_path_params is not None:
-            path_params.update(update_path_params)
         if path_params:
             path_params = http_utils.sanitize_for_serialization(path_params)
             path_params = http_utils.parameters_to_tuples(path_params, collection_formats)
             for k, v in path_params:
+                resource_path = resource_path.replace('{%s}' % k, quote(str(v), safe=''))
+        if update_path_params:
+            update_path_params = http_utils.sanitize_for_serialization(update_path_params)
+            update_path_params = http_utils.parameters_to_tuples(update_path_params, collection_formats)
+            for k, v in update_path_params:
                 resource_path = resource_path.replace('{%s}' % k, quote(str(v), safe=''))
         return resource_path
 
@@ -397,6 +400,14 @@ class Client:
 
     def _deserialize_model(self, data, klass):
         if not klass.openapi_types and not hasattr(klass, 'get_real_child_model'):
+            if type(data) == int and hasattr(klass, "_%s" % data):
+                return getattr(klass, "_%s" % data)
+            if type(data) == str and hasattr(klass, re.sub(r'\W+', '_', data).upper()):
+                return getattr(klass, re.sub(r'\W+', '_', data).upper())
+            if type(data) == bool and hasattr(klass, str(data).upper()):
+                return getattr(klass, str(data).upper())
+            if type(data) == float and hasattr(klass, ("_%s" % data).replace('.', '_')):
+                return getattr(klass, ("_%s" % data).replace('.', '_'))
             return klass()
 
         kwargs = {}

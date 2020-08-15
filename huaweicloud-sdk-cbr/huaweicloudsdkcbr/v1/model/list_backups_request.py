@@ -42,7 +42,8 @@ class ListBackupsRequest:
         'enterprise_project_id': 'str',
         'own_type': 'str',
         'member_status': 'str',
-        'parent_id': 'str'
+        'parent_id': 'str',
+        'used_percent': 'str'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class ListBackupsRequest:
         'enterprise_project_id': 'enterprise_project_id',
         'own_type': 'own_type',
         'member_status': 'member_status',
-        'parent_id': 'parent_id'
+        'parent_id': 'parent_id',
+        'used_percent': 'used_percent'
     }
 
-    def __init__(self, checkpoint_id=None, dec=None, end_time=None, image_type=None, limit=None, marker=None, name=None, offset=None, resource_az=None, resource_id=None, resource_name=None, resource_type=None, sort=None, start_time=None, status=None, vault_id=None, enterprise_project_id=None, own_type='private', member_status=None, parent_id=None):
+    def __init__(self, checkpoint_id=None, dec=None, end_time=None, image_type=None, limit=None, marker=None, name=None, offset=None, resource_az=None, resource_id=None, resource_name=None, resource_type=None, sort=None, start_time=None, status=None, vault_id=None, enterprise_project_id=None, own_type='private', member_status=None, parent_id=None, used_percent=None):
         """ListBackupsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -93,6 +95,7 @@ class ListBackupsRequest:
         self._own_type = None
         self._member_status = None
         self._parent_id = None
+        self._used_percent = None
         self.discriminator = None
 
         if checkpoint_id is not None:
@@ -135,6 +138,8 @@ class ListBackupsRequest:
             self.member_status = member_status
         if parent_id is not None:
             self.parent_id = parent_id
+        if used_percent is not None:
+            self.used_percent = used_percent
 
     @property
     def checkpoint_id(self):
@@ -535,6 +540,26 @@ class ListBackupsRequest:
         :type: str
         """
         self._parent_id = parent_id
+
+    @property
+    def used_percent(self):
+        """Gets the used_percent of this ListBackupsRequest.
+
+
+        :return: The used_percent of this ListBackupsRequest.
+        :rtype: str
+        """
+        return self._used_percent
+
+    @used_percent.setter
+    def used_percent(self, used_percent):
+        """Sets the used_percent of this ListBackupsRequest.
+
+
+        :param used_percent: The used_percent of this ListBackupsRequest.
+        :type: str
+        """
+        self._used_percent = used_percent
 
     def to_dict(self):
         """Returns the model properties as a dict"""

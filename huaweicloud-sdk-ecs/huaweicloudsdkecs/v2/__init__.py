@@ -224,6 +224,7 @@ from huaweicloudsdkecs.v2.model.show_server_tags_response import ShowServerTagsR
 from huaweicloudsdkecs.v2.model.simple_flavor import SimpleFlavor
 from huaweicloudsdkecs.v2.model.sub_job import SubJob
 from huaweicloudsdkecs.v2.model.sub_job_entities import SubJobEntities
+from huaweicloudsdkecs.v2.model.update_server_address import UpdateServerAddress
 from huaweicloudsdkecs.v2.model.update_server_metadata_request import UpdateServerMetadataRequest
 from huaweicloudsdkecs.v2.model.update_server_metadata_request_body import UpdateServerMetadataRequestBody
 from huaweicloudsdkecs.v2.model.update_server_metadata_response import UpdateServerMetadataResponse

@@ -19,6 +19,8 @@ This document introduces how to obtain and use HuaweiCloud Python SDK.
 
 HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to check the version of Python.
 
+You must install `huaweicloudsdkcore` library no matter which product/service development kit you need to use. Take using VPC SDK for example, you need to install `huaweicloudsdkcore` library and `huaweicloudsdkvpc` library: 
+
 - Use python pip
 
     Run the following command to install the individual libraries of HuaweiCloud services:
@@ -53,6 +55,7 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
     from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
     from huaweicloudsdkcore.exceptions import exceptions
     from huaweicloudsdkcore.http.http_config import HttpConfig
+    # import specified service library huaweicloudsdk{service}, take vpc for example
     from huaweicloudsdkvpc.v2 import *
     ```
 
@@ -94,6 +97,21 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
 
 3. Initialize Credentials
 
+    **Notice:**
+    There are two types of HUAWEI CLOUD services, regional services and global services. 
+    Global services currently only support IAM, TMS, EPS.
+
+    For Regional services' authentication, projectId is required. 
+    For global services' authentication, domainId is required. 
+
+    - `ak` is the access key ID for your account.
+    - `sk` is the secret access key for your account.
+    - `project_id` is the ID of your project depending on your region which you want to operate.
+    - `domain_id` is the account ID of HUAWEI CLOUD.
+    - `security_token` is the security token when using temporary AK/SK.
+
+    3.1 Use permanent AK/SK
+    
     ```python
     # Region services
     credentials = BasicCredentials(ak, sk, project_id)
@@ -101,21 +119,27 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
     # Global services
     credentials = GlobalCredentials(ak, sk, domain_id)
     ```
-
-    **where:**
-       
-    Global services currently only support IAM, TMS, EPS.
-
-    For Region services need to provide projectId. For global services need to provide domainId. 
     
-    - `ak` is the access key id for your account.
-    - `sk` is the secret access key for your account.
-    - `project_id` is the id of the project.
-    - `domain_id` is the account ID of huaweicloud.
+    3.2 Use temporary AK/SK
+    
+    It's preferred to obtain temporary access key, security key and security token first, which could be obtained through permanent access key and security key or through an agency.
+    
+    Obtaining a temporary access key token through permanent access key and security key, you could refer to document: https://support.huaweicloud.com/en-us/api-iam/iam_04_0002.html . The API mentioned in the document above corresponds to the method of createTemporaryAccessKeyByToken in IAM SDK.
+    
+    Obtaining a temporary access key and security token through an agency, you could refer to document: https://support.huaweicloud.com/en-us/api-iam/iam_04_0101.html . The API mentioned in the document above corresponds to the method of createTemporaryAccessKeyByAgency in IAM SDK.
+    
+    ```python
+    # Region services
+    credentials = BasicCredentials(ak, sk, project_id).with_security_token(security_token)
+   
+    # Global services
+    credentials = GlobalCredentials(ak, sk, domain_id).with_security_token(security_token)
+    ```
 
 4. Initialize the `{Service}Client` instance:
 
     ```python
+    # Initialize specified service client instance, take VpcClient for example
     client = VpcClient.new_builder(VpcClient) \
         .with_http_config(config) \
         .with_credentials(credentials) \
@@ -146,7 +170,7 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
 5. Send a request and print response.
 
     ```python
-    # Initialize a request and set parameters
+    # Initialize a request and print response, take interface of ListVpcs for example
     request = ListVpcsRequest()
     response = client.list_vpcs(request)
     print(respones)
@@ -178,7 +202,7 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
 7. Asynchronous Requests
 
     ```python
-    # Initialize asynchronous client
+    # Initialize asynchronous client, take VpcAsyncClient for example
     vpc_client = VpcAsyncClient.new_builder(VpcAsyncClient) \
         .with_http_config(config) \
         .with_credentials(credentials) \
@@ -236,45 +260,46 @@ HuaweiCloud Python SDK supports Python 3 or later. Run ``python --version`` to c
 
 ## Code example
 
-The following example shows how to query a list of VPC in a specific region. Substitute the values for `{your ak string}`, `{your sk string}`, `{your endpoint}` and `{your project id}`.
+- The following example shows how to query a list of VPC in a specific region, you need to substitute your real `{Service}Client` for `VpcClient` in actual use.
+- Substitute the values for `{your ak string}`, `{your sk string}`, `{your endpoint string}` and `{your project id}`.
 
-```python
-# coding: utf-8
-
-
-from huaweicloudsdkcore.auth.credentials import BasicCredentials
-from huaweicloudsdkcore.exceptions import exceptions
-from huaweicloudsdkcore.http.http_config import HttpConfig
-from huaweicloudsdkvpc.v2 import *
+    ``` python
+    # coding: utf-8
 
 
-def list_vpc(client):
-    try:
-        request = ListVpcsRequest()
-        response = client.list_vpcs(request)
-        print(response)
-    except exceptions.ClientRequestException as e:
-        print(e.status_code)
-        print(e.request_id)
-        print(e.error_code)
-        print(e.error_msg)
+    from huaweicloudsdkcore.auth.credentials import BasicCredentials
+    from huaweicloudsdkcore.exceptions import exceptions
+    from huaweicloudsdkcore.http.http_config import HttpConfig
+    from huaweicloudsdkvpc.v2 import *
 
 
-if __name__ == "__main__":
-    ak = "{your ak string}"
-    sk = "{your sk string}"
-    endpoint = "{your endpoint}"
-    project_id = "{your project id}"
+    def list_vpc(client):
+        try:
+            request = ListVpcsRequest()
+            response = client.list_vpcs(request)
+            print(response)
+        except exceptions.ClientRequestException as e:
+            print(e.status_code)
+            print(e.request_id)
+            print(e.error_code)
+            print(e.error_msg)
 
-    config = HttpConfig.get_default_config()
-    config.ignore_ssl_verification = True
-    credentials = BasicCredentials(ak, sk, project_id)
 
-    vpc_client = VpcClient.new_builder(VpcClient) \
-        .with_http_config(config) \
-        .with_credentials(credentials) \
-        .with_endpoint(endpoint) \
-        .build()
+    if __name__ == "__main__":
+        ak = "{your ak string}"
+        sk = "{your sk string}"
+        endpoint = "{your endpoint}"
+        project_id = "{your project id}"
 
-    list_vpc(vpc_client)
-```
+        config = HttpConfig.get_default_config()
+        config.ignore_ssl_verification = True
+        credentials = BasicCredentials(ak, sk, project_id)
+
+        vpc_client = VpcClient.new_builder(VpcClient) \
+            .with_http_config(config) \
+            .with_credentials(credentials) \
+            .with_endpoint(endpoint) \
+            .build()
+
+        list_vpc(vpc_client)
+    ```

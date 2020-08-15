@@ -1,0 +1,160 @@
+# coding: utf-8
+
+import pprint
+import re
+
+import six
+
+
+
+
+
+class CreateExtractTaskReq:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'input': 'ObsObjInfo',
+        'output': 'ObsObjInfo',
+        'sync': 'int'
+    }
+
+    attribute_map = {
+        'input': 'input',
+        'output': 'output',
+        'sync': 'sync'
+    }
+
+    def __init__(self, input=None, output=None, sync=None):
+        """CreateExtractTaskReq - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._input = None
+        self._output = None
+        self._sync = None
+        self.discriminator = None
+
+        if input is not None:
+            self.input = input
+        if output is not None:
+            self.output = output
+        if sync is not None:
+            self.sync = sync
+
+    @property
+    def input(self):
+        """Gets the input of this CreateExtractTaskReq.
+
+
+        :return: The input of this CreateExtractTaskReq.
+        :rtype: ObsObjInfo
+        """
+        return self._input
+
+    @input.setter
+    def input(self, input):
+        """Sets the input of this CreateExtractTaskReq.
+
+
+        :param input: The input of this CreateExtractTaskReq.
+        :type: ObsObjInfo
+        """
+        self._input = input
+
+    @property
+    def output(self):
+        """Gets the output of this CreateExtractTaskReq.
+
+
+        :return: The output of this CreateExtractTaskReq.
+        :rtype: ObsObjInfo
+        """
+        return self._output
+
+    @output.setter
+    def output(self, output):
+        """Sets the output of this CreateExtractTaskReq.
+
+
+        :param output: The output of this CreateExtractTaskReq.
+        :type: ObsObjInfo
+        """
+        self._output = output
+
+    @property
+    def sync(self):
+        """Gets the sync of this CreateExtractTaskReq.
+
+        是否同步处理, - 0：排队处理 - 1：同步处理  默认值：0 
+
+        :return: The sync of this CreateExtractTaskReq.
+        :rtype: int
+        """
+        return self._sync
+
+    @sync.setter
+    def sync(self, sync):
+        """Sets the sync of this CreateExtractTaskReq.
+
+        是否同步处理, - 0：排队处理 - 1：同步处理  默认值：0 
+
+        :param sync: The sync of this CreateExtractTaskReq.
+        :type: int
+        """
+        self._sync = sync
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        return pprint.pformat(self.to_dict())
+
+    def __repr__(self):
+        """For `print` and `pprint`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, CreateExtractTaskReq):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

@@ -20,7 +20,9 @@
 
 ## SDK 获取和安装
 
-华为云 Python SDK 支持python3及以上版本。执行``python --version``检查当前python的版本信息.
+华为云 Python SDK 支持 python3 及以上版本。执行 ``python --version`` 检查当前python的版本信息。
+
+无论您要使用哪个产品/服务的开发工具包，都必须安装 `huaweicloudsdkcore` 。以使用虚拟私有云 VPC SDK 为例，您需要安装 `huaweicloudsdkcore` 和 `huaweicloudsdkvpc` ：
 
 - 使用 pip 安装
 
@@ -56,6 +58,7 @@
     from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
     from huaweicloudsdkcore.exceptions import exceptions
     from huaweicloudsdkcore.http.http_config import HttpConfig
+    # 导入指定云服务的库 huaweicloudsdk{service}
     from huaweicloudsdkvpc.v2 import *
     ```
 
@@ -97,6 +100,19 @@
 
 3. 初始化认证信息
 
+    **说明**：
+    华为云服务存在两种部署方式，Region级服务和Global级服务。Global级服务当前仅支持IAM, TMS, EPS。
+    
+    Region级服务仅需要提供 projectId。Global级服务需要提供domainId。
+
+    - `ak` 华为云账号 Access Key 。
+    - `sk` 华为云账号 Secret Access Key 。
+    - `project_id` 云服务所在项目 ID ，根据你想操作的项目所属区域选择对应的项目 ID 。
+    - `domain_id` 华为云账号ID 。
+    - `security_token` 采用临时AK/SK认证场景下的安全票据。
+
+    3.1 使用永久AK/SK
+    
     ```python
     # Region级服务
     credentials = BasicCredentials(ak, sk, project_id)
@@ -104,21 +120,27 @@
     # Global级服务
     credentials = GlobalCredentials(ak, sk, domain_id)
     ```
-
-    **说明:**
-
-    全局服务当前仅支持IAM, TMS, EPS。
     
-    Region级服务仅需要提供 projectId。Global级服务需要提供domainId。
-
-    - `ak` 华为云账号Access Key。
-    - `sk` 华为云账号Secret Access Key。
-    - `project_id` 云服务所在项目 ID。
-    - `domain_id` 华为云账号 ID。
+    3.2 使用临时AK/SK
+    
+    首选需要获得临时AK、SK和SecurityToken，获取可以从永久AK/SK获得，或者通过委托授权首选获得。
+    
+    通过永久AK/SK获得可以参考文档：https://support.huaweicloud.com/api-iam/iam_04_0002.html, 对应IAM SDK 中的createTemporaryAccessKeyByToken方法。
+    
+    通过委托授权获得可以参考文档：https://support.huaweicloud.com/api-iam/iam_04_0101.html, 对应IAM SDK 中的createTemporaryAccessKeyByAgency方法。
+    
+    ```python
+    # Region级服务
+    credentials = BasicCredentials(ak, sk, project_id).with_security_token(security_token)
+   
+    # Global级服务
+    credentials = GlobalCredentials(ak, sk, domain_id).with_security_token(security_token)
+    ```
 
 4. 初始化客户端:
 
     ```python
+    # 初始化指定云服务的客户端 {Service}Client ，以初始化 VpcClient 为例
     client = VpcClient.new_builder(VpcClient) \
         .with_http_config(config) \
         .with_credentials(credentials) \
@@ -149,7 +171,7 @@
 5. 发送请求并查看响应.
 
     ```python
-    # 初始化请求
+    # 初始化请求，以调用接口 ListVpcs 为例
     request = ListVpcsRequest()
     response = client.list_vpcs(request)
     print(respones)
@@ -181,7 +203,7 @@
 7. 异步场景
 
     ```python
-    # 初始化异步客户端
+    # 初始化异步客户端，以初始化 VpcAsyncClient 为例
     vpc_client = VpcAsyncClient.new_builder(VpcAsyncClient) \
         .with_http_config(config) \
         .with_credentials(credentials) \
@@ -240,7 +262,8 @@
 
 ## 代码实例
 
-使用如下代码同步查询特定Region下的VPC清单，调用前请根据实际情况替换如下变量：`{your ak string}`、 `{your sk string}`、 `{your endpoint}` 以及 `{your project id}`。
+- 使用如下代码同步查询特定 Region 下的 VPC 清单，实际使用中请将 `VpcClient` 替换为您使用的产品/服务相应的 `{Service}Client`。
+- 调用前请根据实际情况替换如下变量：`{your ak string}`、 `{your sk string}`、 `{your endpoint}` 以及 `{your project id}`。
 
 ```python
 # coding: utf-8

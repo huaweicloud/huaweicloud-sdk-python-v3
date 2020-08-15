@@ -23,7 +23,7 @@ class ServerAddress:
     sensitive_list = []
 
     openapi_types = {
-        'version': 'int',
+        'version': 'str',
         'addr': 'str',
         'os_ext_ip_stype': 'str',
         'os_ext_ips_ma_cmac_addr': 'str',
@@ -66,7 +66,7 @@ class ServerAddress:
         IP地址版本。  - “4”：代表IPv4。 - “6”：代表IPv6。
 
         :return: The version of this ServerAddress.
-        :rtype: int
+        :rtype: str
         """
         return self._version
 
@@ -77,7 +77,7 @@ class ServerAddress:
         IP地址版本。  - “4”：代表IPv4。 - “6”：代表IPv6。
 
         :param version: The version of this ServerAddress.
-        :type: int
+        :type: str
         """
         self._version = version
 

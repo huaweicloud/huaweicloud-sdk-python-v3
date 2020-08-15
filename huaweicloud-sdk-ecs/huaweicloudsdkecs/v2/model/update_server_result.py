@@ -28,7 +28,7 @@ class UpdateServerResult:
         'access_i_pv4': 'str',
         'access_i_pv6': 'str',
         'metadata': 'dict(str, str)',
-        'addresses': 'dict(str, list[ServerAddress])',
+        'addresses': 'dict(str, list[UpdateServerAddress])',
         'created': 'str',
         'host_id': 'str',
         'flavor': 'SimpleFlavor',
@@ -240,7 +240,7 @@ class UpdateServerResult:
         弹性云服务器的网络属性。
 
         :return: The addresses of this UpdateServerResult.
-        :rtype: dict(str, list[ServerAddress])
+        :rtype: dict(str, list[UpdateServerAddress])
         """
         return self._addresses
 
@@ -251,7 +251,7 @@ class UpdateServerResult:
         弹性云服务器的网络属性。
 
         :param addresses: The addresses of this UpdateServerResult.
-        :type: dict(str, list[ServerAddress])
+        :type: dict(str, list[UpdateServerAddress])
         """
         self._addresses = addresses
 

@@ -39,9 +39,17 @@ class BasicCredentials(Credentials):
         if sk is None or sk == "":
             raise ApiValueError("SK can not be null.")
 
+        if project_id is None or project_id == "":
+            raise ApiValueError("Project ID can not be null.")
+
         self.ak = ak
         self.sk = sk
         self.project_id = project_id
+        self.security_token = None
+
+    def with_security_token(self, token):
+        self.security_token = token
+        return self
 
     def get_update_path_params(self):
         path_params = {}
@@ -55,8 +63,9 @@ class BasicCredentials(Credentials):
         return future
 
     def sign_request(self, request):
-        if self.project_id is not None:
-            request.header_params["X-Project-Id"] = self.project_id
+        request.header_params["X-Project-Id"] = self.project_id
+        if self.security_token is not None:
+            request.header_params["X-Security-Token"] = self.security_token
 
         if "Content-Type" in request.header_params and not request.header_params["Content-Type"].startswith(
                 "application/json"):
@@ -73,9 +82,17 @@ class GlobalCredentials(Credentials):
         if sk is None or sk == "":
             raise ApiValueError("SK can not be null.")
 
+        if domain_id is None or domain_id == "":
+            raise ApiValueError("Domain ID can not be null.")
+
         self.ak = ak
         self.sk = sk
         self.domain_id = domain_id
+        self.security_token = None
+
+    def with_security_token(self, token):
+        self.security_token = token
+        return self
 
     def get_update_path_params(self):
         path_params = {}
@@ -89,8 +106,9 @@ class GlobalCredentials(Credentials):
         return future
 
     def sign_request(self, request):
-        if self.domain_id is not None:
-            request.header_params["X-Domain-Id"] = self.domain_id
+        request.header_params["X-Domain-Id"] = self.domain_id
+        if self.security_token is not None:
+            request.header_params["X-Security-Token"] = self.security_token
 
         if "Content-Type" in request.header_params and not request.header_params["Content-Type"].startswith(
                 "application/json"):
