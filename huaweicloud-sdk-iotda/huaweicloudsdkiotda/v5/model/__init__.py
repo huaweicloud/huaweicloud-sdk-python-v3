@@ -24,8 +24,10 @@ from huaweicloudsdkiotda.v5.model.add_device_request import AddDeviceRequest
 from huaweicloudsdkiotda.v5.model.add_device_response import AddDeviceResponse
 from huaweicloudsdkiotda.v5.model.add_product import AddProduct
 from huaweicloudsdkiotda.v5.model.application_dto import ApplicationDTO
+from huaweicloudsdkiotda.v5.model.async_device_command_request import AsyncDeviceCommandRequest
 from huaweicloudsdkiotda.v5.model.auth_info import AuthInfo
 from huaweicloudsdkiotda.v5.model.auth_info_without_secret import AuthInfoWithoutSecret
+from huaweicloudsdkiotda.v5.model.batch_task_file import BatchTaskFile
 from huaweicloudsdkiotda.v5.model.bind_tags_dto import BindTagsDTO
 from huaweicloudsdkiotda.v5.model.certificates_rsp_dto import CertificatesRspDTO
 from huaweicloudsdkiotda.v5.model.change_rule_status_request import ChangeRuleStatusRequest
@@ -34,6 +36,8 @@ from huaweicloudsdkiotda.v5.model.check_certificate_request import CheckCertific
 from huaweicloudsdkiotda.v5.model.check_certificate_response import CheckCertificateResponse
 from huaweicloudsdkiotda.v5.model.cmd import Cmd
 from huaweicloudsdkiotda.v5.model.condition_group import ConditionGroup
+from huaweicloudsdkiotda.v5.model.create_async_command_request import CreateAsyncCommandRequest
+from huaweicloudsdkiotda.v5.model.create_async_command_response import CreateAsyncCommandResponse
 from huaweicloudsdkiotda.v5.model.create_batch_task import CreateBatchTask
 from huaweicloudsdkiotda.v5.model.create_batch_task_request import CreateBatchTaskRequest
 from huaweicloudsdkiotda.v5.model.create_batch_task_response import CreateBatchTaskResponse
@@ -54,6 +58,8 @@ from huaweicloudsdkiotda.v5.model.create_subscription_response import CreateSubs
 from huaweicloudsdkiotda.v5.model.daily_timer_type import DailyTimerType
 from huaweicloudsdkiotda.v5.model.delete_application_request import DeleteApplicationRequest
 from huaweicloudsdkiotda.v5.model.delete_application_response import DeleteApplicationResponse
+from huaweicloudsdkiotda.v5.model.delete_batch_task_file_request import DeleteBatchTaskFileRequest
+from huaweicloudsdkiotda.v5.model.delete_batch_task_file_response import DeleteBatchTaskFileResponse
 from huaweicloudsdkiotda.v5.model.delete_certificate_request import DeleteCertificateRequest
 from huaweicloudsdkiotda.v5.model.delete_certificate_response import DeleteCertificateResponse
 from huaweicloudsdkiotda.v5.model.delete_device_group_request import DeleteDeviceGroupRequest
@@ -67,7 +73,6 @@ from huaweicloudsdkiotda.v5.model.delete_rule_response import DeleteRuleResponse
 from huaweicloudsdkiotda.v5.model.delete_subscription_request import DeleteSubscriptionRequest
 from huaweicloudsdkiotda.v5.model.delete_subscription_response import DeleteSubscriptionResponse
 from huaweicloudsdkiotda.v5.model.device_command_request import DeviceCommandRequest
-from huaweicloudsdkiotda.v5.model.device_command_v5 import DeviceCommandV5
 from huaweicloudsdkiotda.v5.model.device_data_condition import DeviceDataCondition
 from huaweicloudsdkiotda.v5.model.device_group_response_dto import DeviceGroupResponseDTO
 from huaweicloudsdkiotda.v5.model.device_message import DeviceMessage
@@ -81,12 +86,12 @@ from huaweicloudsdkiotda.v5.model.error_info import ErrorInfo
 from huaweicloudsdkiotda.v5.model.freeze_device_request import FreezeDeviceRequest
 from huaweicloudsdkiotda.v5.model.freeze_device_response import FreezeDeviceResponse
 from huaweicloudsdkiotda.v5.model.initial_desired import InitialDesired
+from huaweicloudsdkiotda.v5.model.list_batch_task_files_request import ListBatchTaskFilesRequest
+from huaweicloudsdkiotda.v5.model.list_batch_task_files_response import ListBatchTaskFilesResponse
 from huaweicloudsdkiotda.v5.model.list_batch_tasks_request import ListBatchTasksRequest
 from huaweicloudsdkiotda.v5.model.list_batch_tasks_response import ListBatchTasksResponse
 from huaweicloudsdkiotda.v5.model.list_certificates_request import ListCertificatesRequest
 from huaweicloudsdkiotda.v5.model.list_certificates_response import ListCertificatesResponse
-from huaweicloudsdkiotda.v5.model.list_commands_request import ListCommandsRequest
-from huaweicloudsdkiotda.v5.model.list_commands_response import ListCommandsResponse
 from huaweicloudsdkiotda.v5.model.list_device_groups_request import ListDeviceGroupsRequest
 from huaweicloudsdkiotda.v5.model.list_device_groups_response import ListDeviceGroupsResponse
 from huaweicloudsdkiotda.v5.model.list_device_messages_request import ListDeviceMessagesRequest
@@ -129,6 +134,8 @@ from huaweicloudsdkiotda.v5.model.show_application_request import ShowApplicatio
 from huaweicloudsdkiotda.v5.model.show_application_response import ShowApplicationResponse
 from huaweicloudsdkiotda.v5.model.show_applications_request import ShowApplicationsRequest
 from huaweicloudsdkiotda.v5.model.show_applications_response import ShowApplicationsResponse
+from huaweicloudsdkiotda.v5.model.show_async_device_command_request import ShowAsyncDeviceCommandRequest
+from huaweicloudsdkiotda.v5.model.show_async_device_command_response import ShowAsyncDeviceCommandResponse
 from huaweicloudsdkiotda.v5.model.show_batch_task_request import ShowBatchTaskRequest
 from huaweicloudsdkiotda.v5.model.show_batch_task_response import ShowBatchTaskResponse
 from huaweicloudsdkiotda.v5.model.show_device_group_request import ShowDeviceGroupRequest

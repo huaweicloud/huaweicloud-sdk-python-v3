@@ -74,6 +74,7 @@ from huaweicloudsdkvpc.v2.model.list_vpc_routes_request import ListVpcRoutesRequ
 from huaweicloudsdkvpc.v2.model.list_vpc_routes_response import ListVpcRoutesResponse
 from huaweicloudsdkvpc.v2.model.list_vpcs_request import ListVpcsRequest
 from huaweicloudsdkvpc.v2.model.list_vpcs_response import ListVpcsResponse
+from huaweicloudsdkvpc.v2.model.network_ip_availability import NetworkIpAvailability
 from huaweicloudsdkvpc.v2.model.neutron_page_link import NeutronPageLink
 from huaweicloudsdkvpc.v2.model.port import Port
 from huaweicloudsdkvpc.v2.model.privateip import Privateip
@@ -84,6 +85,8 @@ from huaweicloudsdkvpc.v2.model.resource_result import ResourceResult
 from huaweicloudsdkvpc.v2.model.route import Route
 from huaweicloudsdkvpc.v2.model.security_group import SecurityGroup
 from huaweicloudsdkvpc.v2.model.security_group_rule import SecurityGroupRule
+from huaweicloudsdkvpc.v2.model.show_network_ip_availabilities_request import ShowNetworkIpAvailabilitiesRequest
+from huaweicloudsdkvpc.v2.model.show_network_ip_availabilities_response import ShowNetworkIpAvailabilitiesResponse
 from huaweicloudsdkvpc.v2.model.show_port_request import ShowPortRequest
 from huaweicloudsdkvpc.v2.model.show_port_response import ShowPortResponse
 from huaweicloudsdkvpc.v2.model.show_privateip_request import ShowPrivateipRequest
@@ -103,6 +106,7 @@ from huaweicloudsdkvpc.v2.model.show_vpc_response import ShowVpcResponse
 from huaweicloudsdkvpc.v2.model.show_vpc_route_request import ShowVpcRouteRequest
 from huaweicloudsdkvpc.v2.model.show_vpc_route_response import ShowVpcRouteResponse
 from huaweicloudsdkvpc.v2.model.subnet import Subnet
+from huaweicloudsdkvpc.v2.model.subnet_ip_availability import SubnetIpAvailability
 from huaweicloudsdkvpc.v2.model.subnet_result import SubnetResult
 from huaweicloudsdkvpc.v2.model.update_port_option import UpdatePortOption
 from huaweicloudsdkvpc.v2.model.update_port_request import UpdatePortRequest

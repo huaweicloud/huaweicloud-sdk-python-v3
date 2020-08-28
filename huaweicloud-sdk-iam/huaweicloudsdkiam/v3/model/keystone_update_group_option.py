@@ -77,7 +77,7 @@ class KeystoneUpdateGroupOption:
     def domain_id(self):
         """Gets the domain_id of this KeystoneUpdateGroupOption.
 
-        用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/zh-cn_topic_0057845624.html)。
+        用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The domain_id of this KeystoneUpdateGroupOption.
         :rtype: str
@@ -88,7 +88,7 @@ class KeystoneUpdateGroupOption:
     def domain_id(self, domain_id):
         """Sets the domain_id of this KeystoneUpdateGroupOption.
 
-        用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/zh-cn_topic_0057845624.html)。
+        用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this KeystoneUpdateGroupOption.
         :type: str

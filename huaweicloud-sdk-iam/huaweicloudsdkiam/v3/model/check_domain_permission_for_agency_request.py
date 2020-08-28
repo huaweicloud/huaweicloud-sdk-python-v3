@@ -23,26 +23,50 @@ class CheckDomainPermissionForAgencyRequest:
     sensitive_list = []
 
     openapi_types = {
+        'domain_id': 'str',
         'agency_id': 'str',
         'role_id': 'str'
     }
 
     attribute_map = {
+        'domain_id': 'domain_id',
         'agency_id': 'agency_id',
         'role_id': 'role_id'
     }
 
-    def __init__(self, agency_id=None, role_id=None):
+    def __init__(self, domain_id=None, agency_id=None, role_id=None):
         """CheckDomainPermissionForAgencyRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._domain_id = None
         self._agency_id = None
         self._role_id = None
         self.discriminator = None
 
+        self.domain_id = domain_id
         self.agency_id = agency_id
         self.role_id = role_id
+
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this CheckDomainPermissionForAgencyRequest.
+
+
+        :return: The domain_id of this CheckDomainPermissionForAgencyRequest.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this CheckDomainPermissionForAgencyRequest.
+
+
+        :param domain_id: The domain_id of this CheckDomainPermissionForAgencyRequest.
+        :type: str
+        """
+        self._domain_id = domain_id
 
     @property
     def agency_id(self):

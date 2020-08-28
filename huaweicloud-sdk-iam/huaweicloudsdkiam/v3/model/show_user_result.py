@@ -27,14 +27,17 @@ class ShowUserResult:
         'id': 'str',
         'domain_id': 'str',
         'name': 'str',
-        'links': 'LinksSelf',
+        'links': 'Links',
         'xuser_id': 'str',
         'xuser_type': 'str',
         'areacode': 'str',
         'email': 'str',
         'phone': 'str',
         'pwd_status': 'bool',
-        'update_time': 'str'
+        'update_time': 'str',
+        'create_time': 'str',
+        'last_login_time': 'str',
+        'pwd_stength': 'str'
     }
 
     attribute_map = {
@@ -49,10 +52,13 @@ class ShowUserResult:
         'email': 'email',
         'phone': 'phone',
         'pwd_status': 'pwd_status',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'create_time': 'create_time',
+        'last_login_time': 'last_login_time',
+        'pwd_stength': 'pwd_stength'
     }
 
-    def __init__(self, enabled=None, id=None, domain_id=None, name=None, links=None, xuser_id=None, xuser_type=None, areacode=None, email=None, phone=None, pwd_status=None, update_time=None):
+    def __init__(self, enabled=None, id=None, domain_id=None, name=None, links=None, xuser_id=None, xuser_type=None, areacode=None, email=None, phone=None, pwd_status=None, update_time=None, create_time=None, last_login_time=None, pwd_stength=None):
         """ShowUserResult - a model defined in huaweicloud sdk"""
         
         
@@ -69,6 +75,9 @@ class ShowUserResult:
         self._phone = None
         self._pwd_status = None
         self._update_time = None
+        self._create_time = None
+        self._last_login_time = None
+        self._pwd_stength = None
         self.discriminator = None
 
         self.enabled = enabled
@@ -90,6 +99,12 @@ class ShowUserResult:
             self.pwd_status = pwd_status
         if update_time is not None:
             self.update_time = update_time
+        if create_time is not None:
+            self.create_time = create_time
+        if last_login_time is not None:
+            self.last_login_time = last_login_time
+        if pwd_stength is not None:
+            self.pwd_stength = pwd_stength
 
     @property
     def enabled(self):
@@ -185,7 +200,7 @@ class ShowUserResult:
 
 
         :return: The links of this ShowUserResult.
-        :rtype: LinksSelf
+        :rtype: Links
         """
         return self._links
 
@@ -195,7 +210,7 @@ class ShowUserResult:
 
 
         :param links: The links of this ShowUserResult.
-        :type: LinksSelf
+        :type: Links
         """
         self._links = links
 
@@ -352,6 +367,72 @@ class ShowUserResult:
         :type: str
         """
         self._update_time = update_time
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this ShowUserResult.
+
+        IAM用户创建时间。
+
+        :return: The create_time of this ShowUserResult.
+        :rtype: str
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this ShowUserResult.
+
+        IAM用户创建时间。
+
+        :param create_time: The create_time of this ShowUserResult.
+        :type: str
+        """
+        self._create_time = create_time
+
+    @property
+    def last_login_time(self):
+        """Gets the last_login_time of this ShowUserResult.
+
+        IAM用户最后登录时间。
+
+        :return: The last_login_time of this ShowUserResult.
+        :rtype: str
+        """
+        return self._last_login_time
+
+    @last_login_time.setter
+    def last_login_time(self, last_login_time):
+        """Sets the last_login_time of this ShowUserResult.
+
+        IAM用户最后登录时间。
+
+        :param last_login_time: The last_login_time of this ShowUserResult.
+        :type: str
+        """
+        self._last_login_time = last_login_time
+
+    @property
+    def pwd_stength(self):
+        """Gets the pwd_stength of this ShowUserResult.
+
+        IAM用户密码强度。结果为low/middle/high/none，分别表示密码强度低/中/高/无。
+
+        :return: The pwd_stength of this ShowUserResult.
+        :rtype: str
+        """
+        return self._pwd_stength
+
+    @pwd_stength.setter
+    def pwd_stength(self, pwd_stength):
+        """Sets the pwd_stength of this ShowUserResult.
+
+        IAM用户密码强度。结果为low/middle/high/none，分别表示密码强度低/中/高/无。
+
+        :param pwd_stength: The pwd_stength of this ShowUserResult.
+        :type: str
+        """
+        self._pwd_stength = pwd_stength
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -494,6 +494,70 @@ class MeetingClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def add_to_personal_space(self, request):
+        """保存会议纪要到个人云空间
+
+        用户使用手机扫码后，手机端请求服务端将当前会议纪要文件保存到个人云空间。二维码内容  cloudlink://cloudlink.huawei.com/h5page?action=SAVE_MEETING_FILE&key1=value1&key2=value2    key/value的个数可能变化，终端解析后，在发起后续请求时，将所有key/value存为map，作为入参即可。
+
+        :param AddToPersonalSpaceRequest request
+        :return: AddToPersonalSpaceResponse
+        """
+        return self.add_to_personal_space_with_http_info(request)
+
+    def add_to_personal_space_with_http_info(self, request):
+        """保存会议纪要到个人云空间
+
+        用户使用手机扫码后，手机端请求服务端将当前会议纪要文件保存到个人云空间。二维码内容  cloudlink://cloudlink.huawei.com/h5page?action=SAVE_MEETING_FILE&key1=value1&key2=value2    key/value的个数可能变化，终端解析后，在发起后续请求时，将所有key/value存为map，作为入参即可。
+
+        :param AddToPersonalSpaceRequest request
+        :return: AddToPersonalSpaceResponse
+        """
+
+        all_params = ['info', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/meeting-files/save-to-personal-space',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddToPersonalSpaceResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def add_user(self, request):
         """添加用户
 
@@ -3956,6 +4020,72 @@ class MeetingClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def search_meeting_file_list(self, request):
+        """查询会议纪要列表
+
+        用户查询自己的会议纪要列表
+
+        :param SearchMeetingFileListRequest request
+        :return: SearchMeetingFileListResponse
+        """
+        return self.search_meeting_file_list_with_http_info(request)
+
+    def search_meeting_file_list_with_http_info(self, request):
+        """查询会议纪要列表
+
+        用户查询自己的会议纪要列表
+
+        :param SearchMeetingFileListRequest request
+        :return: SearchMeetingFileListResponse
+        """
+
+        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/meeting-files',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchMeetingFileListResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def search_meetings(self, request):
         """查询会议列表
 
@@ -5706,6 +5836,132 @@ class MeetingClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowMeetingDetailResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_meeting_file(self, request):
+        """查询会议纪要详情
+
+        用户查询单个会议纪要详情（主要目的是为了得到外链）。 IdeaHub是使用fileCode来查，所以终端保持一致。
+
+        :param ShowMeetingFileRequest request
+        :return: ShowMeetingFileResponse
+        """
+        return self.show_meeting_file_with_http_info(request)
+
+    def show_meeting_file_with_http_info(self, request):
+        """查询会议纪要详情
+
+        用户查询单个会议纪要详情（主要目的是为了得到外链）。 IdeaHub是使用fileCode来查，所以终端保持一致。
+
+        :param ShowMeetingFileRequest request
+        :return: ShowMeetingFileResponse
+        """
+
+        all_params = ['file_code', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'file_code' in local_var_params:
+            path_params['file_code'] = local_var_params['file_code']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/meeting-files/{file_code}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowMeetingFileResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_meeting_file_list(self, request):
+        """打开会议纪要文件列表
+
+        用户使用手机扫码后，手机端请求服务端，让服务端通知指定IdeaHub打开指定用户的会议纪要文件列表。二维码内容  cloudlink://cloudlink.huawei.com/h5page?action=OPEN_MEETING_FILE_LIST&key1=value1&key2=value2    key/value的个数可能变化，终端解析后，在发起后续请求时，将所有key/value存为map，作为入参即可。
+
+        :param ShowMeetingFileListRequest request
+        :return: ShowMeetingFileListResponse
+        """
+        return self.show_meeting_file_list_with_http_info(request)
+
+    def show_meeting_file_list_with_http_info(self, request):
+        """打开会议纪要文件列表
+
+        用户使用手机扫码后，手机端请求服务端，让服务端通知指定IdeaHub打开指定用户的会议纪要文件列表。二维码内容  cloudlink://cloudlink.huawei.com/h5page?action=OPEN_MEETING_FILE_LIST&key1=value1&key2=value2    key/value的个数可能变化，终端解析后，在发起后续请求时，将所有key/value存为map，作为入参即可。
+
+        :param ShowMeetingFileListRequest request
+        :return: ShowMeetingFileListResponse
+        """
+
+        all_params = ['info', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/meeting-files/open-meeting-file-list',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowMeetingFileListResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)

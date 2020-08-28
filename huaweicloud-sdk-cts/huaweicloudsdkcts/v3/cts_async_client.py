@@ -84,7 +84,7 @@ class CtsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -249,7 +249,7 @@ class CtsAsyncClient(Client):
     def list_trackers_async(self, request):
         """查询追踪器
 
-        开通云审计服务成功后，您可以在追踪器信息页面查看系统自动创建的追踪器的详细信息。详细信息主要包括追踪器名称，用于存储操作事件的OBS桶名称和OBS桶中的事件文件前缀。
+        开通云审计服务成功后，您可以在追踪器信息页面查看追踪器的详细信息。详细信息主要包括追踪器名称，用于存储操作事件的OBS桶名称和OBS桶中的事件文件前缀。
 
         :param ListTrackersRequest request
         :return: ListTrackersResponse
@@ -259,7 +259,7 @@ class CtsAsyncClient(Client):
     def list_trackers_with_http_info(self, request):
         """查询追踪器
 
-        开通云审计服务成功后，您可以在追踪器信息页面查看系统自动创建的追踪器的详细信息。详细信息主要包括追踪器名称，用于存储操作事件的OBS桶名称和OBS桶中的事件文件前缀。
+        开通云审计服务成功后，您可以在追踪器信息页面查看追踪器的详细信息。详细信息主要包括追踪器名称，用于存储操作事件的OBS桶名称和OBS桶中的事件文件前缀。
 
         :param ListTrackersRequest request
         :return: ListTrackersResponse
@@ -348,7 +348,7 @@ class CtsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

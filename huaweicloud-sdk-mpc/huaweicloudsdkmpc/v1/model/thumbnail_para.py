@@ -144,7 +144,7 @@ class ThumbnailPara:
     def time(self):
         """Gets the time of this ThumbnailPara.
 
-        采样截图的时间间隔值。  默认值：12.  单位：秒 
+        采样截图的时间间隔值。  默认值：12。  单位：秒 
 
         :return: The time of this ThumbnailPara.
         :rtype: int
@@ -155,7 +155,7 @@ class ThumbnailPara:
     def time(self, time):
         """Sets the time of this ThumbnailPara.
 
-        采样截图的时间间隔值。  默认值：12.  单位：秒 
+        采样截图的时间间隔值。  默认值：12。  单位：秒 
 
         :param time: The time of this ThumbnailPara.
         :type: int

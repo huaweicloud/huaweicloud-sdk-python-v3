@@ -42,15 +42,15 @@ from huaweicloudsdkevs.v2.model.delete_volume_response import DeleteVolumeRespon
 from huaweicloudsdkevs.v2.model.image import Image
 from huaweicloudsdkevs.v2.model.job_entities import JobEntities
 from huaweicloudsdkevs.v2.model.link import Link
-from huaweicloudsdkevs.v2.model.list_snapshots_details_request import ListSnapshotsDetailsRequest
-from huaweicloudsdkevs.v2.model.list_snapshots_details_response import ListSnapshotsDetailsResponse
+from huaweicloudsdkevs.v2.model.list_snapshots_request import ListSnapshotsRequest
+from huaweicloudsdkevs.v2.model.list_snapshots_response import ListSnapshotsResponse
 from huaweicloudsdkevs.v2.model.list_volume_tags_request import ListVolumeTagsRequest
 from huaweicloudsdkevs.v2.model.list_volume_tags_response import ListVolumeTagsResponse
 from huaweicloudsdkevs.v2.model.list_volumes_by_tags_request import ListVolumesByTagsRequest
 from huaweicloudsdkevs.v2.model.list_volumes_by_tags_request_body import ListVolumesByTagsRequestBody
 from huaweicloudsdkevs.v2.model.list_volumes_by_tags_response import ListVolumesByTagsResponse
-from huaweicloudsdkevs.v2.model.list_volumes_details_request import ListVolumesDetailsRequest
-from huaweicloudsdkevs.v2.model.list_volumes_details_response import ListVolumesDetailsResponse
+from huaweicloudsdkevs.v2.model.list_volumes_request import ListVolumesRequest
+from huaweicloudsdkevs.v2.model.list_volumes_response import ListVolumesResponse
 from huaweicloudsdkevs.v2.model.match import Match
 from huaweicloudsdkevs.v2.model.os_extend import OsExtend
 from huaweicloudsdkevs.v2.model.quota_detail import QuotaDetail
@@ -105,6 +105,7 @@ from huaweicloudsdkevs.v2.model.update_volume_request import UpdateVolumeRequest
 from huaweicloudsdkevs.v2.model.update_volume_request_body import UpdateVolumeRequestBody
 from huaweicloudsdkevs.v2.model.update_volume_response import UpdateVolumeResponse
 from huaweicloudsdkevs.v2.model.volume_detail import VolumeDetail
+from huaweicloudsdkevs.v2.model.volume_detail_for_tag import VolumeDetailForTag
 from huaweicloudsdkevs.v2.model.volume_metadata import VolumeMetadata
 from huaweicloudsdkevs.v2.model.volume_type import VolumeType
 from huaweicloudsdkevs.v2.model.volume_type_extra_specs import VolumeTypeExtraSpecs

@@ -142,7 +142,7 @@ class VpcAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -202,7 +202,7 @@ class VpcAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -262,7 +262,7 @@ class VpcAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -322,7 +322,7 @@ class VpcAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -382,7 +382,7 @@ class VpcAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1480,7 +1480,7 @@ class VpcAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1544,7 +1544,7 @@ class VpcAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1606,7 +1606,7 @@ class VpcAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1666,7 +1666,7 @@ class VpcAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1804,6 +1804,64 @@ class VpcAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_network_ip_availabilities_async(self, request):
+        """查询网络IP使用情况
+
+        显示一个指定网络中的IPv4地址使用情况。 包括此网络中的IP总数以及已用IP总数，以及网络下每一个子网的IP地址总数和可用IP地址总数。  > 须知  - 系统预留地址指的是子网的第1个以及最后4个地址，一般用于网关、DHCP等服务。 - 这里以及下文描述的IP地址总数、已用IP地址总数不包含系统预留地址。 - 在分配IP时，用户可以指定系统预留的IP地址。但是不论IP是如何分配的，只要是处于系统预留IP地址段的IP均不会被统计到已用IP地址数目和IP地址总数中。
+
+        :param ShowNetworkIpAvailabilitiesRequest request
+        :return: ShowNetworkIpAvailabilitiesResponse
+        """
+        return self.show_network_ip_availabilities_with_http_info(request)
+
+    def show_network_ip_availabilities_with_http_info(self, request):
+        """查询网络IP使用情况
+
+        显示一个指定网络中的IPv4地址使用情况。 包括此网络中的IP总数以及已用IP总数，以及网络下每一个子网的IP地址总数和可用IP地址总数。  > 须知  - 系统预留地址指的是子网的第1个以及最后4个地址，一般用于网关、DHCP等服务。 - 这里以及下文描述的IP地址总数、已用IP地址总数不包含系统预留地址。 - 在分配IP时，用户可以指定系统预留的IP地址。但是不论IP是如何分配的，只要是处于系统预留IP地址段的IP均不会被统计到已用IP地址数目和IP地址总数中。
+
+        :param ShowNetworkIpAvailabilitiesRequest request
+        :return: ShowNetworkIpAvailabilitiesResponse
+        """
+
+        all_params = ['network_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'network_id' in local_var_params:
+            path_params['network_id'] = local_var_params['network_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/network-ip-availabilities/{network_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowNetworkIpAvailabilitiesResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_privateip_async(self, request):
         """查询私有IP
 
@@ -1904,7 +1962,7 @@ class VpcAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1964,7 +2022,7 @@ class VpcAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -2392,7 +2450,7 @@ class VpcAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

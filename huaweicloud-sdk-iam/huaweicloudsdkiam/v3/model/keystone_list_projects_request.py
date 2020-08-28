@@ -23,6 +23,7 @@ class KeystoneListProjectsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'domain_id': 'str',
         'name': 'str',
         'parent_id': 'str',
         'enabled': 'bool',
@@ -32,6 +33,7 @@ class KeystoneListProjectsRequest:
     }
 
     attribute_map = {
+        'domain_id': 'domain_id',
         'name': 'name',
         'parent_id': 'parent_id',
         'enabled': 'enabled',
@@ -40,11 +42,12 @@ class KeystoneListProjectsRequest:
         'per_page': 'per_page'
     }
 
-    def __init__(self, name=None, parent_id=None, enabled=None, is_domain=None, page=None, per_page=None):
+    def __init__(self, domain_id=None, name=None, parent_id=None, enabled=None, is_domain=None, page=None, per_page=None):
         """KeystoneListProjectsRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._domain_id = None
         self._name = None
         self._parent_id = None
         self._enabled = None
@@ -53,6 +56,8 @@ class KeystoneListProjectsRequest:
         self._per_page = None
         self.discriminator = None
 
+        if domain_id is not None:
+            self.domain_id = domain_id
         if name is not None:
             self.name = name
         if parent_id is not None:
@@ -65,6 +70,26 @@ class KeystoneListProjectsRequest:
             self.page = page
         if per_page is not None:
             self.per_page = per_page
+
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this KeystoneListProjectsRequest.
+
+
+        :return: The domain_id of this KeystoneListProjectsRequest.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this KeystoneListProjectsRequest.
+
+
+        :param domain_id: The domain_id of this KeystoneListProjectsRequest.
+        :type: str
+        """
+        self._domain_id = domain_id
 
     @property
     def name(self):

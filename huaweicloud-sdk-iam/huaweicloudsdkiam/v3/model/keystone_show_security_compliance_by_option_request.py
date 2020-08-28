@@ -23,22 +23,46 @@ class KeystoneShowSecurityComplianceByOptionRequest:
     sensitive_list = []
 
     openapi_types = {
+        'domain_id': 'str',
         'option': 'str'
     }
 
     attribute_map = {
+        'domain_id': 'domain_id',
         'option': 'option'
     }
 
-    def __init__(self, option=None):
+    def __init__(self, domain_id=None, option=None):
         """KeystoneShowSecurityComplianceByOptionRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._domain_id = None
         self._option = None
         self.discriminator = None
 
+        self.domain_id = domain_id
         self.option = option
+
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this KeystoneShowSecurityComplianceByOptionRequest.
+
+
+        :return: The domain_id of this KeystoneShowSecurityComplianceByOptionRequest.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this KeystoneShowSecurityComplianceByOptionRequest.
+
+
+        :param domain_id: The domain_id of this KeystoneShowSecurityComplianceByOptionRequest.
+        :type: str
+        """
+        self._domain_id = domain_id
 
     @property
     def option(self):

@@ -69,8 +69,7 @@ class CreateUserOption:
         self.discriminator = None
 
         self.name = name
-        if domain_id is not None:
-            self.domain_id = domain_id
+        self.domain_id = domain_id
         if password is not None:
             self.password = password
         if email is not None:

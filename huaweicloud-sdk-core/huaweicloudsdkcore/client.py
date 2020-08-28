@@ -22,7 +22,6 @@ import datetime
 import importlib
 import json
 import logging
-import os
 import re
 import sys
 from concurrent.futures.thread import ThreadPoolExecutor
@@ -32,7 +31,7 @@ from typing import Mapping
 import six
 from six.moves.urllib.parse import quote, urlparse
 
-from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
+from huaweicloudsdkcore.auth.credentials import BasicCredentials, get_credential_from_environment
 from huaweicloudsdkcore.http.http_client import HttpClient
 from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.http.http_handler import HttpHandler
@@ -46,8 +45,8 @@ from huaweicloudsdkcore.utils import http_utils, core_utils
 
 class ClientBuilder:
     def __init__(self, client_type, credential_type=BasicCredentials.__name__):
-        self._client_class = client_type
-        self._credential_type = credential_type
+        self._client_type = client_type
+        self._credential_type = credential_type.split(',')
         self._config = None
         self._credentials = None
         self._endpoint = None
@@ -92,18 +91,15 @@ class ClientBuilder:
 
     def build(self):
         if self._credentials is None:
-            self._credentials = self.get_credential_from_environment_variables()
+            self._credentials = get_credential_from_environment(self._client_type, self._credential_type[0])
+        if self._credentials.__class__.__name__ not in self._credential_type:
+            raise TypeError("credential type error, support credential type is %s" % ",".join(self._credential_type))
 
-        if self._credentials.__class__.__name__ != self._credential_type:
-            raise TypeError("Need credential type is %s, actually is %s" % (
-                self._credential_type, self._credentials.__class__.__name__))
-
-        client = self._client_class() \
+        client = self._client_type() \
             .with_endpoint(self._endpoint) \
             .with_credentials(self._credentials) \
             .with_config(self._config) \
             .with_http_handler(self._http_handler)
-
         if self._file_logger_handler is not None:
             client.add_file_logger(**self._file_logger_handler)
         if self._stream_logger_handler is not None:
@@ -111,19 +107,6 @@ class ClientBuilder:
 
         client.init_http_client()
         return client
-
-    def get_credential_from_environment_variables(self):
-        ak = os.environ.get("HUAWEICLOUD_SDK_AK")
-        sk = os.environ.get("HUAWEICLOUD_SDK_SK")
-        project_id = os.environ.get("HUAWEICLOUD_SDK_PROJECT_ID")
-        domain_id = os.environ.get("HUAWEICLOUD_SDK_DOMAIN_ID")
-
-        if self._credential_type == BasicCredentials.__name__:
-            return BasicCredentials(ak, sk, project_id)
-        elif self._credential_type == GlobalCredentials.__name__:
-            return GlobalCredentials(ak, sk, domain_id)
-        else:
-            return None
 
 
 class Client:

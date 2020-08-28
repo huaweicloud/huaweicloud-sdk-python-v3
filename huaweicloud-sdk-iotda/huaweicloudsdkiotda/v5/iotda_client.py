@@ -284,6 +284,136 @@ class IoTDAClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_async_command(self, request):
+        """下发异步设备命令
+
+        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发异步命令，以实现对设备的控制。平台负责将命令发送给设备，并将设备执行命令结果异步返回。注意：此接口适用于NB设备异步命令下发，暂不支持其他协议类型设备命令下发。 
+
+        :param CreateAsyncCommandRequest request
+        :return: CreateAsyncCommandResponse
+        """
+        return self.create_async_command_with_http_info(request)
+
+    def create_async_command_with_http_info(self, request):
+        """下发异步设备命令
+
+        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发异步命令，以实现对设备的控制。平台负责将命令发送给设备，并将设备执行命令结果异步返回。注意：此接口适用于NB设备异步命令下发，暂不支持其他协议类型设备命令下发。 
+
+        :param CreateAsyncCommandRequest request
+        :return: CreateAsyncCommandResponse
+        """
+
+        all_params = ['device_id', 'create_async_command_request_body', 'stage_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'device_id' in local_var_params:
+            path_params['device_id'] = local_var_params['device_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/devices/{device_id}/async-commands',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateAsyncCommandResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_async_device_command(self, request):
+        """查询指定id的命令
+
+        物联网平台可查询指定id的命令。 
+
+        :param ShowAsyncDeviceCommandRequest request
+        :return: ShowAsyncDeviceCommandResponse
+        """
+        return self.show_async_device_command_with_http_info(request)
+
+    def show_async_device_command_with_http_info(self, request):
+        """查询指定id的命令
+
+        物联网平台可查询指定id的命令。 
+
+        :param ShowAsyncDeviceCommandRequest request
+        :return: ShowAsyncDeviceCommandResponse
+        """
+
+        all_params = ['device_id', 'command_id', 'stage_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'device_id' in local_var_params:
+            path_params['device_id'] = local_var_params['device_id']
+        if 'command_id' in local_var_params:
+            path_params['command_id'] = local_var_params['command_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/devices/{device_id}/async-commands/{command_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowAsyncDeviceCommandResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_batch_task(self, request):
         """创建批量任务
 
@@ -477,6 +607,124 @@ class IoTDAClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowBatchTaskResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_batch_task_file(self, request):
+        """删除批量任务文件
+
+        应用服务器可调用此接口删除批量任务文件。
+
+        :param DeleteBatchTaskFileRequest request
+        :return: DeleteBatchTaskFileResponse
+        """
+        return self.delete_batch_task_file_with_http_info(request)
+
+    def delete_batch_task_file_with_http_info(self, request):
+        """删除批量任务文件
+
+        应用服务器可调用此接口删除批量任务文件。
+
+        :param DeleteBatchTaskFileRequest request
+        :return: DeleteBatchTaskFileResponse
+        """
+
+        all_params = ['file_id', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'file_id' in local_var_params:
+            path_params['file_id'] = local_var_params['file_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/batchtask-files/{file_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteBatchTaskFileResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_batch_task_files(self, request):
+        """查询批量任务文件列表
+
+        应用服务器可调用此接口查询批量任务文件列表。
+
+        :param ListBatchTaskFilesRequest request
+        :return: ListBatchTaskFilesResponse
+        """
+        return self.list_batch_task_files_with_http_info(request)
+
+    def list_batch_task_files_with_http_info(self, request):
+        """查询批量任务文件列表
+
+        应用服务器可调用此接口查询批量任务文件列表。
+
+        :param ListBatchTaskFilesRequest request
+        :return: ListBatchTaskFilesResponse
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/batchtask-files',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListBatchTaskFilesResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -795,64 +1043,6 @@ class IoTDAClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateCommandResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_commands(self, request):
-        """查询设备命令
-
-        查询设备下发的同步命令，每个设备最多支持查询20条最新下发的命令。 
-
-        :param ListCommandsRequest request
-        :return: ListCommandsResponse
-        """
-        return self.list_commands_with_http_info(request)
-
-    def list_commands_with_http_info(self, request):
-        """查询设备命令
-
-        查询设备下发的同步命令，每个设备最多支持查询20条最新下发的命令。 
-
-        :param ListCommandsRequest request
-        :return: ListCommandsResponse
-        """
-
-        all_params = ['device_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'device_id' in local_var_params:
-            path_params['device_id'] = local_var_params['device_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v5/iot/{project_id}/devices/{device_id}/commands',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListCommandsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2168,7 +2358,7 @@ class IoTDAClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -2422,7 +2612,7 @@ class IoTDAClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

@@ -86,7 +86,7 @@ class EvsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -148,7 +148,7 @@ class EvsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -210,7 +210,7 @@ class EvsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -442,7 +442,7 @@ class EvsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -502,7 +502,7 @@ class EvsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -636,23 +636,23 @@ class EvsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_snapshots_details_async(self, request):
+    def list_snapshots_async(self, request):
         """查询云硬盘快照详细列表信息
 
         查询云硬盘快照详细列表信息。
 
-        :param ListSnapshotsDetailsRequest request
-        :return: ListSnapshotsDetailsResponse
+        :param ListSnapshotsRequest request
+        :return: ListSnapshotsResponse
         """
-        return self.list_snapshots_details_with_http_info(request)
+        return self.list_snapshots_with_http_info(request)
 
-    def list_snapshots_details_with_http_info(self, request):
+    def list_snapshots_with_http_info(self, request):
         """查询云硬盘快照详细列表信息
 
         查询云硬盘快照详细列表信息。
 
-        :param ListSnapshotsDetailsRequest request
-        :return: ListSnapshotsDetailsResponse
+        :param ListSnapshotsRequest request
+        :return: ListSnapshotsResponse
         """
 
         all_params = ['offset', 'limit', 'name', 'status', 'volume_id', 'availability_zone', 'id', 'dedicated_storage_name', 'dedicated_storage_id', 'service_type', 'enterprise_project_id']
@@ -708,7 +708,7 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ListSnapshotsDetailsResponse',
+            response_type='ListSnapshotsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -770,83 +770,23 @@ class EvsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_volumes_by_tags_async(self, request):
-        """通过标签查询云硬盘资源实例详情
-
-        通过标签查询云硬盘资源实例详情。
-
-        :param ListVolumesByTagsRequest request
-        :return: ListVolumesByTagsResponse
-        """
-        return self.list_volumes_by_tags_with_http_info(request)
-
-    def list_volumes_by_tags_with_http_info(self, request):
-        """通过标签查询云硬盘资源实例详情
-
-        通过标签查询云硬盘资源实例详情。
-
-        :param ListVolumesByTagsRequest request
-        :return: ListVolumesByTagsResponse
-        """
-
-        all_params = ['list_volumes_by_tags_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudvolumes/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListVolumesByTagsResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_volumes_details_async(self, request):
+    def list_volumes_async(self, request):
         """查询所有云硬盘详情
 
         查询所有云硬盘的详细信息。
 
-        :param ListVolumesDetailsRequest request
-        :return: ListVolumesDetailsResponse
+        :param ListVolumesRequest request
+        :return: ListVolumesResponse
         """
-        return self.list_volumes_details_with_http_info(request)
+        return self.list_volumes_with_http_info(request)
 
-    def list_volumes_details_with_http_info(self, request):
+    def list_volumes_with_http_info(self, request):
         """查询所有云硬盘详情
 
         查询所有云硬盘的详细信息。
 
-        :param ListVolumesDetailsRequest request
-        :return: ListVolumesDetailsResponse
+        :param ListVolumesRequest request
+        :return: ListVolumesResponse
         """
 
         all_params = ['marker', 'name', 'limit', 'sort_key', 'offset', 'sort_dir', 'status', 'metadata', 'availability_zone', 'multiattach', 'service_type', 'dedicated_storage_id', 'dedicated_storage_name', 'volume_type_id', 'id', 'ids', 'enterprise_project_id']
@@ -914,7 +854,67 @@ class EvsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ListVolumesDetailsResponse',
+            response_type='ListVolumesResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_volumes_by_tags_async(self, request):
+        """通过标签查询云硬盘资源实例详情
+
+        通过标签查询云硬盘资源实例详情。
+
+        :param ListVolumesByTagsRequest request
+        :return: ListVolumesByTagsResponse
+        """
+        return self.list_volumes_by_tags_with_http_info(request)
+
+    def list_volumes_by_tags_with_http_info(self, request):
+        """通过标签查询云硬盘资源实例详情
+
+        通过标签查询云硬盘资源实例详情。
+
+        :param ListVolumesByTagsRequest request
+        :return: ListVolumesByTagsResponse
+        """
+
+        all_params = ['list_volumes_by_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/cloudvolumes/resource_instances/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListVolumesByTagsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -964,7 +964,7 @@ class EvsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1026,7 +1026,7 @@ class EvsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1320,7 +1320,7 @@ class EvsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1382,7 +1382,7 @@ class EvsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

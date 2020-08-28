@@ -21,6 +21,8 @@ from huaweicloudsdkmeeting.v1.model.add_publication_request import AddPublicatio
 from huaweicloudsdkmeeting.v1.model.add_publication_response import AddPublicationResponse
 from huaweicloudsdkmeeting.v1.model.add_resource_request import AddResourceRequest
 from huaweicloudsdkmeeting.v1.model.add_resource_response import AddResourceResponse
+from huaweicloudsdkmeeting.v1.model.add_to_personal_space_request import AddToPersonalSpaceRequest
+from huaweicloudsdkmeeting.v1.model.add_to_personal_space_response import AddToPersonalSpaceResponse
 from huaweicloudsdkmeeting.v1.model.add_user_dto import AddUserDTO
 from huaweicloudsdkmeeting.v1.model.add_user_request import AddUserRequest
 from huaweicloudsdkmeeting.v1.model.add_user_response import AddUserResponse
@@ -101,6 +103,7 @@ from huaweicloudsdkmeeting.v1.model.hang_up_response import HangUpResponse
 from huaweicloudsdkmeeting.v1.model.id_mark_dto import IdMarkDTO
 from huaweicloudsdkmeeting.v1.model.invite_participant_request import InviteParticipantRequest
 from huaweicloudsdkmeeting.v1.model.invite_participant_response import InviteParticipantResponse
+from huaweicloudsdkmeeting.v1.model.list_meeting_file_response_dto import ListMeetingFileResponseDTO
 from huaweicloudsdkmeeting.v1.model.live_request import LiveRequest
 from huaweicloudsdkmeeting.v1.model.live_response import LiveResponse
 from huaweicloudsdkmeeting.v1.model.lock_meeting_request import LockMeetingRequest
@@ -108,6 +111,7 @@ from huaweicloudsdkmeeting.v1.model.lock_meeting_response import LockMeetingResp
 from huaweicloudsdkmeeting.v1.model.lock_view_request import LockViewRequest
 from huaweicloudsdkmeeting.v1.model.lock_view_response import LockViewResponse
 from huaweicloudsdkmeeting.v1.model.material import Material
+from huaweicloudsdkmeeting.v1.model.meeting_file_base import MeetingFileBase
 from huaweicloudsdkmeeting.v1.model.mod_admin_dto import ModAdminDTO
 from huaweicloudsdkmeeting.v1.model.mod_corp_basic_dto import ModCorpBasicDTO
 from huaweicloudsdkmeeting.v1.model.mod_corp_basic_info_dto import ModCorpBasicInfoDTO
@@ -211,6 +215,8 @@ from huaweicloudsdkmeeting.v1.model.search_his_meetings_request import SearchHis
 from huaweicloudsdkmeeting.v1.model.search_his_meetings_response import SearchHisMeetingsResponse
 from huaweicloudsdkmeeting.v1.model.search_materials_request import SearchMaterialsRequest
 from huaweicloudsdkmeeting.v1.model.search_materials_response import SearchMaterialsResponse
+from huaweicloudsdkmeeting.v1.model.search_meeting_file_list_request import SearchMeetingFileListRequest
+from huaweicloudsdkmeeting.v1.model.search_meeting_file_list_response import SearchMeetingFileListResponse
 from huaweicloudsdkmeeting.v1.model.search_meetings_request import SearchMeetingsRequest
 from huaweicloudsdkmeeting.v1.model.search_meetings_response import SearchMeetingsResponse
 from huaweicloudsdkmeeting.v1.model.search_member_vmr_request import SearchMemberVmrRequest
@@ -264,6 +270,10 @@ from huaweicloudsdkmeeting.v1.model.show_his_meeting_detail_request import ShowH
 from huaweicloudsdkmeeting.v1.model.show_his_meeting_detail_response import ShowHisMeetingDetailResponse
 from huaweicloudsdkmeeting.v1.model.show_meeting_detail_request import ShowMeetingDetailRequest
 from huaweicloudsdkmeeting.v1.model.show_meeting_detail_response import ShowMeetingDetailResponse
+from huaweicloudsdkmeeting.v1.model.show_meeting_file_list_request import ShowMeetingFileListRequest
+from huaweicloudsdkmeeting.v1.model.show_meeting_file_list_response import ShowMeetingFileListResponse
+from huaweicloudsdkmeeting.v1.model.show_meeting_file_request import ShowMeetingFileRequest
+from huaweicloudsdkmeeting.v1.model.show_meeting_file_response import ShowMeetingFileResponse
 from huaweicloudsdkmeeting.v1.model.show_my_info_request import ShowMyInfoRequest
 from huaweicloudsdkmeeting.v1.model.show_my_info_response import ShowMyInfoResponse
 from huaweicloudsdkmeeting.v1.model.show_online_meeting_detail_request import ShowOnlineMeetingDetailRequest

@@ -35,25 +35,25 @@ class VolumeDetail:
         'description': 'str',
         'created_at': 'str',
         'os_vol_tenant_attrtenant_id': 'str',
-        'volume_image_metadata': 'object',
+        'volume_image_metadata': 'dict(str, object)',
         'volume_type': 'str',
-        'size': 'str',
+        'size': 'int',
         'consistencygroup_id': 'str',
         'bootable': 'str',
-        'metadata': 'object',
+        'metadata': 'VolumeMetadata',
         'updated_at': 'str',
-        'encrypted': 'str',
+        'encrypted': 'bool',
         'replication_status': 'str',
         'os_volume_replicationextended_status': 'str',
         'os_vol_mig_status_attrmigstat': 'str',
         'os_vol_mig_status_attrname_id': 'str',
-        'shareable': 'bool',
+        'shareable': 'str',
         'user_id': 'str',
         'service_type': 'str',
         'multiattach': 'bool',
         'dedicated_storage_id': 'str',
         'dedicated_storage_name': 'str',
-        'tags': 'object',
+        'tags': 'dict(str, str)',
         'wwn': 'str',
         'enterprise_project_id': 'str'
     }
@@ -446,7 +446,7 @@ class VolumeDetail:
         云硬盘镜像的元数据。 > 说明： >  > 关于“volume_image_metadata”字段的详细说明，具体请参见：\"[查询镜像详情](https://support.huaweicloud.com/api-ims/ims_03_0703.html)\"。
 
         :return: The volume_image_metadata of this VolumeDetail.
-        :rtype: object
+        :rtype: dict(str, object)
         """
         return self._volume_image_metadata
 
@@ -457,7 +457,7 @@ class VolumeDetail:
         云硬盘镜像的元数据。 > 说明： >  > 关于“volume_image_metadata”字段的详细说明，具体请参见：\"[查询镜像详情](https://support.huaweicloud.com/api-ims/ims_03_0703.html)\"。
 
         :param volume_image_metadata: The volume_image_metadata of this VolumeDetail.
-        :type: object
+        :type: dict(str, object)
         """
         self._volume_image_metadata = volume_image_metadata
 
@@ -490,7 +490,7 @@ class VolumeDetail:
         云硬盘大小，单位为GB。
 
         :return: The size of this VolumeDetail.
-        :rtype: str
+        :rtype: int
         """
         return self._size
 
@@ -501,7 +501,7 @@ class VolumeDetail:
         云硬盘大小，单位为GB。
 
         :param size: The size of this VolumeDetail.
-        :type: str
+        :type: int
         """
         self._size = size
 
@@ -553,10 +553,9 @@ class VolumeDetail:
     def metadata(self):
         """Gets the metadata of this VolumeDetail.
 
-        云硬盘的元数据。请参见•[metadata参数说明](https://support.huaweicloud.com/api-evs/evs_04_2006.html#evs_04_2006__evs_04_2010_li29114110314)。 如果元数据中不包含hw:passthrough字段，云硬盘默认为VBD类型。 如果元数据中不包含__system__encrypted字段，云硬盘默认为不加密。
 
         :return: The metadata of this VolumeDetail.
-        :rtype: object
+        :rtype: VolumeMetadata
         """
         return self._metadata
 
@@ -564,10 +563,9 @@ class VolumeDetail:
     def metadata(self, metadata):
         """Sets the metadata of this VolumeDetail.
 
-        云硬盘的元数据。请参见•[metadata参数说明](https://support.huaweicloud.com/api-evs/evs_04_2006.html#evs_04_2006__evs_04_2010_li29114110314)。 如果元数据中不包含hw:passthrough字段，云硬盘默认为VBD类型。 如果元数据中不包含__system__encrypted字段，云硬盘默认为不加密。
 
         :param metadata: The metadata of this VolumeDetail.
-        :type: object
+        :type: VolumeMetadata
         """
         self._metadata = metadata
 
@@ -600,7 +598,7 @@ class VolumeDetail:
         当前云硬盘服务不支持该字段。
 
         :return: The encrypted of this VolumeDetail.
-        :rtype: str
+        :rtype: bool
         """
         return self._encrypted
 
@@ -611,7 +609,7 @@ class VolumeDetail:
         当前云硬盘服务不支持该字段。
 
         :param encrypted: The encrypted of this VolumeDetail.
-        :type: str
+        :type: bool
         """
         self._encrypted = encrypted
 
@@ -707,10 +705,10 @@ class VolumeDetail:
     def shareable(self):
         """Gets the shareable of this VolumeDetail.
 
-        是否为共享云硬盘。
+        是否为共享云硬盘。true为共享盘，false为普通云硬盘。 该字段已经废弃，请使用multiattach。
 
         :return: The shareable of this VolumeDetail.
-        :rtype: bool
+        :rtype: str
         """
         return self._shareable
 
@@ -718,10 +716,10 @@ class VolumeDetail:
     def shareable(self, shareable):
         """Sets the shareable of this VolumeDetail.
 
-        是否为共享云硬盘。
+        是否为共享云硬盘。true为共享盘，false为普通云硬盘。 该字段已经废弃，请使用multiattach。
 
         :param shareable: The shareable of this VolumeDetail.
-        :type: bool
+        :type: str
         """
         self._shareable = shareable
 
@@ -842,7 +840,7 @@ class VolumeDetail:
         云硬盘的标签。 如果云硬盘有标签，则会有该字段，否则该字段为空。
 
         :return: The tags of this VolumeDetail.
-        :rtype: object
+        :rtype: dict(str, str)
         """
         return self._tags
 
@@ -853,7 +851,7 @@ class VolumeDetail:
         云硬盘的标签。 如果云硬盘有标签，则会有该字段，否则该字段为空。
 
         :param tags: The tags of this VolumeDetail.
-        :type: object
+        :type: dict(str, str)
         """
         self._tags = tags
 

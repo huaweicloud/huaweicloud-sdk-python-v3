@@ -23,22 +23,46 @@ class KeystoneListDomainPermissionsForGroupRequest:
     sensitive_list = []
 
     openapi_types = {
+        'domain_id': 'str',
         'group_id': 'str'
     }
 
     attribute_map = {
+        'domain_id': 'domain_id',
         'group_id': 'group_id'
     }
 
-    def __init__(self, group_id=None):
+    def __init__(self, domain_id=None, group_id=None):
         """KeystoneListDomainPermissionsForGroupRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._domain_id = None
         self._group_id = None
         self.discriminator = None
 
+        self.domain_id = domain_id
         self.group_id = group_id
+
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this KeystoneListDomainPermissionsForGroupRequest.
+
+
+        :return: The domain_id of this KeystoneListDomainPermissionsForGroupRequest.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this KeystoneListDomainPermissionsForGroupRequest.
+
+
+        :param domain_id: The domain_id of this KeystoneListDomainPermissionsForGroupRequest.
+        :type: str
+        """
+        self._domain_id = domain_id
 
     @property
     def group_id(self):

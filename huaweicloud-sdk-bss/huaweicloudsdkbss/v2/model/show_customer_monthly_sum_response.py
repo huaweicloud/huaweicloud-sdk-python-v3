@@ -1,0 +1,407 @@
+# coding: utf-8
+
+import pprint
+import re
+
+import six
+
+
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ShowCustomerMonthlySumResponse(SdkResponse):
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'bill_sums': 'list[BillSumRecordInfoV2]',
+        'cash_amount': 'float',
+        'consume_amount': 'float',
+        'coupon_amount': 'float',
+        'credit_amount': 'float',
+        'currency': 'str',
+        'debt_amount': 'float',
+        'flexipurchase_coupon_amount': 'float',
+        'measure_id': 'int',
+        'stored_value_card_amount': 'float',
+        'total_count': 'int',
+        'writeoff_amount': 'float'
+    }
+
+    attribute_map = {
+        'bill_sums': 'bill_sums',
+        'cash_amount': 'cash_amount',
+        'consume_amount': 'consume_amount',
+        'coupon_amount': 'coupon_amount',
+        'credit_amount': 'credit_amount',
+        'currency': 'currency',
+        'debt_amount': 'debt_amount',
+        'flexipurchase_coupon_amount': 'flexipurchase_coupon_amount',
+        'measure_id': 'measure_id',
+        'stored_value_card_amount': 'stored_value_card_amount',
+        'total_count': 'total_count',
+        'writeoff_amount': 'writeoff_amount'
+    }
+
+    def __init__(self, bill_sums=None, cash_amount=None, consume_amount=None, coupon_amount=None, credit_amount=None, currency=None, debt_amount=None, flexipurchase_coupon_amount=None, measure_id=None, stored_value_card_amount=None, total_count=None, writeoff_amount=None):
+        """ShowCustomerMonthlySumResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
+
+        self._bill_sums = None
+        self._cash_amount = None
+        self._consume_amount = None
+        self._coupon_amount = None
+        self._credit_amount = None
+        self._currency = None
+        self._debt_amount = None
+        self._flexipurchase_coupon_amount = None
+        self._measure_id = None
+        self._stored_value_card_amount = None
+        self._total_count = None
+        self._writeoff_amount = None
+        self.discriminator = None
+
+        if bill_sums is not None:
+            self.bill_sums = bill_sums
+        if cash_amount is not None:
+            self.cash_amount = cash_amount
+        if consume_amount is not None:
+            self.consume_amount = consume_amount
+        if coupon_amount is not None:
+            self.coupon_amount = coupon_amount
+        if credit_amount is not None:
+            self.credit_amount = credit_amount
+        if currency is not None:
+            self.currency = currency
+        if debt_amount is not None:
+            self.debt_amount = debt_amount
+        if flexipurchase_coupon_amount is not None:
+            self.flexipurchase_coupon_amount = flexipurchase_coupon_amount
+        if measure_id is not None:
+            self.measure_id = measure_id
+        if stored_value_card_amount is not None:
+            self.stored_value_card_amount = stored_value_card_amount
+        if total_count is not None:
+            self.total_count = total_count
+        if writeoff_amount is not None:
+            self.writeoff_amount = writeoff_amount
+
+    @property
+    def bill_sums(self):
+        """Gets the bill_sums of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：账单记录，具体参考表 BillSumRecordInfo。| |参数约束以及描述：账单记录，具体参考表 BillSumRecordInfo。|
+
+        :return: The bill_sums of this ShowCustomerMonthlySumResponse.
+        :rtype: list[BillSumRecordInfoV2]
+        """
+        return self._bill_sums
+
+    @bill_sums.setter
+    def bill_sums(self, bill_sums):
+        """Sets the bill_sums of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：账单记录，具体参考表 BillSumRecordInfo。| |参数约束以及描述：账单记录，具体参考表 BillSumRecordInfo。|
+
+        :param bill_sums: The bill_sums of this ShowCustomerMonthlySumResponse.
+        :type: list[BillSumRecordInfoV2]
+        """
+        self._bill_sums = bill_sums
+
+    @property
+    def cash_amount(self):
+        """Gets the cash_amount of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：现金账户金额。| |参数的约束及描述：现金账户金额。|
+
+        :return: The cash_amount of this ShowCustomerMonthlySumResponse.
+        :rtype: float
+        """
+        return self._cash_amount
+
+    @cash_amount.setter
+    def cash_amount(self, cash_amount):
+        """Sets the cash_amount of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：现金账户金额。| |参数的约束及描述：现金账户金额。|
+
+        :param cash_amount: The cash_amount of this ShowCustomerMonthlySumResponse.
+        :type: float
+        """
+        self._cash_amount = cash_amount
+
+    @property
+    def consume_amount(self):
+        """Gets the consume_amount of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：总金额（包含退订）。| |参数的约束及描述：总金额（包含退订）。|
+
+        :return: The consume_amount of this ShowCustomerMonthlySumResponse.
+        :rtype: float
+        """
+        return self._consume_amount
+
+    @consume_amount.setter
+    def consume_amount(self, consume_amount):
+        """Sets the consume_amount of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：总金额（包含退订）。| |参数的约束及描述：总金额（包含退订）。|
+
+        :param consume_amount: The consume_amount of this ShowCustomerMonthlySumResponse.
+        :type: float
+        """
+        self._consume_amount = consume_amount
+
+    @property
+    def coupon_amount(self):
+        """Gets the coupon_amount of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
+
+        :return: The coupon_amount of this ShowCustomerMonthlySumResponse.
+        :rtype: float
+        """
+        return self._coupon_amount
+
+    @coupon_amount.setter
+    def coupon_amount(self, coupon_amount):
+        """Sets the coupon_amount of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
+
+        :param coupon_amount: The coupon_amount of this ShowCustomerMonthlySumResponse.
+        :type: float
+        """
+        self._coupon_amount = coupon_amount
+
+    @property
+    def credit_amount(self):
+        """Gets the credit_amount of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：信用账户金额。| |参数的约束及描述：信用账户金额。|
+
+        :return: The credit_amount of this ShowCustomerMonthlySumResponse.
+        :rtype: float
+        """
+        return self._credit_amount
+
+    @credit_amount.setter
+    def credit_amount(self, credit_amount):
+        """Sets the credit_amount of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：信用账户金额。| |参数的约束及描述：信用账户金额。|
+
+        :param credit_amount: The credit_amount of this ShowCustomerMonthlySumResponse.
+        :type: float
+        """
+        self._credit_amount = credit_amount
+
+    @property
+    def currency(self):
+        """Gets the currency of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：币种。CNY：人民币。USD：美元。| |参数约束及描述：币种。CNY：人民币。USD：美元。|
+
+        :return: The currency of this ShowCustomerMonthlySumResponse.
+        :rtype: str
+        """
+        return self._currency
+
+    @currency.setter
+    def currency(self, currency):
+        """Sets the currency of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：币种。CNY：人民币。USD：美元。| |参数约束及描述：币种。CNY：人民币。USD：美元。|
+
+        :param currency: The currency of this ShowCustomerMonthlySumResponse.
+        :type: str
+        """
+        self._currency = currency
+
+    @property
+    def debt_amount(self):
+        """Gets the debt_amount of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：总欠费金额。| |参数的约束及描述：总欠费金额。|
+
+        :return: The debt_amount of this ShowCustomerMonthlySumResponse.
+        :rtype: float
+        """
+        return self._debt_amount
+
+    @debt_amount.setter
+    def debt_amount(self, debt_amount):
+        """Sets the debt_amount of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：总欠费金额。| |参数的约束及描述：总欠费金额。|
+
+        :param debt_amount: The debt_amount of this ShowCustomerMonthlySumResponse.
+        :type: float
+        """
+        self._debt_amount = debt_amount
+
+    @property
+    def flexipurchase_coupon_amount(self):
+        """Gets the flexipurchase_coupon_amount of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：现金券金额，预留。| |参数的约束及描述：现金券金额，预留。|
+
+        :return: The flexipurchase_coupon_amount of this ShowCustomerMonthlySumResponse.
+        :rtype: float
+        """
+        return self._flexipurchase_coupon_amount
+
+    @flexipurchase_coupon_amount.setter
+    def flexipurchase_coupon_amount(self, flexipurchase_coupon_amount):
+        """Sets the flexipurchase_coupon_amount of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：现金券金额，预留。| |参数的约束及描述：现金券金额，预留。|
+
+        :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this ShowCustomerMonthlySumResponse.
+        :type: float
+        """
+        self._flexipurchase_coupon_amount = flexipurchase_coupon_amount
+
+    @property
+    def measure_id(self):
+        """Gets the measure_id of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：金额单位。1：元2：角3：分| |参数的约束及描述：金额单位。1：元2：角3：分|
+
+        :return: The measure_id of this ShowCustomerMonthlySumResponse.
+        :rtype: int
+        """
+        return self._measure_id
+
+    @measure_id.setter
+    def measure_id(self, measure_id):
+        """Sets the measure_id of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：金额单位。1：元2：角3：分| |参数的约束及描述：金额单位。1：元2：角3：分|
+
+        :param measure_id: The measure_id of this ShowCustomerMonthlySumResponse.
+        :type: int
+        """
+        self._measure_id = measure_id
+
+    @property
+    def stored_value_card_amount(self):
+        """Gets the stored_value_card_amount of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：储值卡金额，预留。| |参数的约束及描述：储值卡金额，预留。|
+
+        :return: The stored_value_card_amount of this ShowCustomerMonthlySumResponse.
+        :rtype: float
+        """
+        return self._stored_value_card_amount
+
+    @stored_value_card_amount.setter
+    def stored_value_card_amount(self, stored_value_card_amount):
+        """Sets the stored_value_card_amount of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：储值卡金额，预留。| |参数的约束及描述：储值卡金额，预留。|
+
+        :param stored_value_card_amount: The stored_value_card_amount of this ShowCustomerMonthlySumResponse.
+        :type: float
+        """
+        self._stored_value_card_amount = stored_value_card_amount
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：总条数，必须大于等于0。| |参数的约束及描述：总条数，必须大于等于0。|
+
+        :return: The total_count of this ShowCustomerMonthlySumResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：总条数，必须大于等于0。| |参数的约束及描述：总条数，必须大于等于0。|
+
+        :param total_count: The total_count of this ShowCustomerMonthlySumResponse.
+        :type: int
+        """
+        self._total_count = total_count
+
+    @property
+    def writeoff_amount(self):
+        """Gets the writeoff_amount of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：欠费核销金额| |参数的约束及描述：欠费核销金额|
+
+        :return: The writeoff_amount of this ShowCustomerMonthlySumResponse.
+        :rtype: float
+        """
+        return self._writeoff_amount
+
+    @writeoff_amount.setter
+    def writeoff_amount(self, writeoff_amount):
+        """Sets the writeoff_amount of this ShowCustomerMonthlySumResponse.
+
+        |参数名称：欠费核销金额| |参数的约束及描述：欠费核销金额|
+
+        :param writeoff_amount: The writeoff_amount of this ShowCustomerMonthlySumResponse.
+        :type: float
+        """
+        self._writeoff_amount = writeoff_amount
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        return pprint.pformat(self.to_dict())
+
+    def __repr__(self):
+        """For `print` and `pprint`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ShowCustomerMonthlySumResponse):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

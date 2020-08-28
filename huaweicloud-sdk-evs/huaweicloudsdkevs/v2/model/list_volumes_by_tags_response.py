@@ -23,7 +23,7 @@ class ListVolumesByTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total_count': 'str',
+        'total_count': 'int',
         'resources': 'list[Resource]'
     }
 
@@ -53,7 +53,7 @@ class ListVolumesByTagsResponse(SdkResponse):
         符合查询条件的云硬盘资源个数
 
         :return: The total_count of this ListVolumesByTagsResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._total_count
 
@@ -64,7 +64,7 @@ class ListVolumesByTagsResponse(SdkResponse):
         符合查询条件的云硬盘资源个数
 
         :param total_count: The total_count of this ListVolumesByTagsResponse.
-        :type: str
+        :type: int
         """
         self._total_count = total_count
 

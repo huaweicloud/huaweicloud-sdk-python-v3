@@ -68,7 +68,7 @@ class UpdateVolumeResponse(SdkResponse):
         'os_volume_replicationextended_status': 'os-volume-replication:extended_status'
     }
 
-    def __init__(self, attachments=None, availability_zone=None, bootable=None, created_at=None, id=None, links=None, metadata=None, multiattach=None, name=None, os_vol_host_attrhost=None, os_vol_tenant_attrtenant_id=None, shareable='false', size=None, snapshot_id=None, source_volid=None, status=None, volume_image_metadata=None, volume_type=None, description=None, os_volume_replicationextended_status=None):
+    def __init__(self, attachments=None, availability_zone=None, bootable=None, created_at=None, id=None, links=None, metadata=None, multiattach=None, name=None, os_vol_host_attrhost=None, os_vol_tenant_attrtenant_id=None, shareable=None, size=None, snapshot_id=None, source_volid=None, status=None, volume_image_metadata=None, volume_type=None, description=None, os_volume_replicationextended_status=None):
         """UpdateVolumeResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()

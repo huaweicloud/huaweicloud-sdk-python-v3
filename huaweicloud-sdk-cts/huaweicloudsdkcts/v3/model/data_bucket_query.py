@@ -25,7 +25,7 @@ class DataBucketQuery:
     openapi_types = {
         'data_bucket_name': 'str',
         'search_enabled': 'bool',
-        'data_event': 'str'
+        'data_event': 'list[str]'
     }
 
     attribute_map = {
@@ -99,10 +99,9 @@ class DataBucketQuery:
     def data_event(self):
         """Gets the data_event of this DataBucketQuery.
 
-        追踪操作。
 
         :return: The data_event of this DataBucketQuery.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._data_event
 
@@ -110,10 +109,9 @@ class DataBucketQuery:
     def data_event(self, data_event):
         """Sets the data_event of this DataBucketQuery.
 
-        追踪操作。
 
         :param data_event: The data_event of this DataBucketQuery.
-        :type: str
+        :type: list[str]
         """
         self._data_event = data_event
 

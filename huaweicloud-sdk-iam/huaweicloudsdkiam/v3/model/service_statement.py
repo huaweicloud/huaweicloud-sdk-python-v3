@@ -25,7 +25,7 @@ class ServiceStatement:
     openapi_types = {
         'action': 'list[str]',
         'effect': 'str',
-        'condition': 'dict(str, dict(str, list))',
+        'condition': 'dict(str, dict(str, list[str]))',
         'resource': 'list[str]'
     }
 
@@ -105,7 +105,7 @@ class ServiceStatement:
         限制条件。不超过10个。
 
         :return: The condition of this ServiceStatement.
-        :rtype: dict(str, dict(str, list))
+        :rtype: dict(str, dict(str, list[str]))
         """
         return self._condition
 
@@ -116,7 +116,7 @@ class ServiceStatement:
         限制条件。不超过10个。
 
         :param condition: The condition of this ServiceStatement.
-        :type: dict(str, dict(str, list))
+        :type: dict(str, dict(str, list[str]))
         """
         self._condition = condition
 

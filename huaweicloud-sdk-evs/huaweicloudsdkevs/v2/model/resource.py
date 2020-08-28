@@ -25,7 +25,7 @@ class Resource:
     openapi_types = {
         'resource_id': 'str',
         'resource_name': 'str',
-        'resource_detail': 'VolumeDetail',
+        'resource_detail': 'VolumeDetailForTag',
         'tags': 'list[dict(str, str)]'
     }
 
@@ -103,7 +103,7 @@ class Resource:
 
 
         :return: The resource_detail of this Resource.
-        :rtype: VolumeDetail
+        :rtype: VolumeDetailForTag
         """
         return self._resource_detail
 
@@ -113,7 +113,7 @@ class Resource:
 
 
         :param resource_detail: The resource_detail of this Resource.
-        :type: VolumeDetail
+        :type: VolumeDetailForTag
         """
         self._resource_detail = resource_detail
 

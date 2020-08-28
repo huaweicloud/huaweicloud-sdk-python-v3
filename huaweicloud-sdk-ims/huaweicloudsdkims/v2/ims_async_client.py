@@ -84,7 +84,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -144,7 +144,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -204,7 +204,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -266,7 +266,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -328,7 +328,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -388,7 +388,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -448,7 +448,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -508,7 +508,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -568,7 +568,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -630,7 +630,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -690,7 +690,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1026,7 +1026,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1144,7 +1144,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1206,7 +1206,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1266,7 +1266,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -1388,7 +1388,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -2090,7 +2090,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -2154,7 +2154,7 @@ class ImsAsyncClient(Client):
             body_params = request.get_file_stream()
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset&#x3D;UTF-8'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

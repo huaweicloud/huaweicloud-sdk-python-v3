@@ -102,6 +102,126 @@ class VpcClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_security_group(self, request):
+        """创建安全组
+
+        创建安全组
+
+        :param CreateSecurityGroupRequest request
+        :return: CreateSecurityGroupResponse
+        """
+        return self.create_security_group_with_http_info(request)
+
+    def create_security_group_with_http_info(self, request):
+        """创建安全组
+
+        创建安全组
+
+        :param CreateSecurityGroupRequest request
+        :return: CreateSecurityGroupResponse
+        """
+
+        all_params = ['create_security_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/security-groups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateSecurityGroupResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_security_group_rule(self, request):
+        """创建安全组规则
+
+        创建安全组规则
+
+        :param CreateSecurityGroupRuleRequest request
+        :return: CreateSecurityGroupRuleResponse
+        """
+        return self.create_security_group_rule_with_http_info(request)
+
+    def create_security_group_rule_with_http_info(self, request):
+        """创建安全组规则
+
+        创建安全组规则
+
+        :param CreateSecurityGroupRuleRequest request
+        :return: CreateSecurityGroupRuleResponse
+        """
+
+        all_params = ['create_security_group_rule_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/security-group-rules',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateSecurityGroupRuleResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_sub_network_interface(self, request):
         """创建辅助弹性网卡
 
@@ -162,6 +282,122 @@ class VpcClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_security_group(self, request):
+        """删除安全组
+
+        删除安全组
+
+        :param DeleteSecurityGroupRequest request
+        :return: DeleteSecurityGroupResponse
+        """
+        return self.delete_security_group_with_http_info(request)
+
+    def delete_security_group_with_http_info(self, request):
+        """删除安全组
+
+        删除安全组
+
+        :param DeleteSecurityGroupRequest request
+        :return: DeleteSecurityGroupResponse
+        """
+
+        all_params = ['security_group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'security_group_id' in local_var_params:
+            path_params['security_group_id'] = local_var_params['security_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/security-groups/{security_group_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteSecurityGroupResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_security_group_rule(self, request):
+        """删除安全组规则
+
+        删除安全组规则
+
+        :param DeleteSecurityGroupRuleRequest request
+        :return: DeleteSecurityGroupRuleResponse
+        """
+        return self.delete_security_group_rule_with_http_info(request)
+
+    def delete_security_group_rule_with_http_info(self, request):
+        """删除安全组规则
+
+        删除安全组规则
+
+        :param DeleteSecurityGroupRuleRequest request
+        :return: DeleteSecurityGroupRuleResponse
+        """
+
+        all_params = ['security_group_rule_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'security_group_rule_id' in local_var_params:
+            path_params['security_group_rule_id'] = local_var_params['security_group_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/security-group-rules/{security_group_rule_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteSecurityGroupRuleResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_sub_network_interface(self, request):
         """删除辅助弹性网卡
 
@@ -215,6 +451,156 @@ class VpcClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteSubNetworkInterfaceResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_security_group_rules(self, request):
+        """查询安全组规则列表
+
+        查询安全组规则列表
+
+        :param ListSecurityGroupRulesRequest request
+        :return: ListSecurityGroupRulesResponse
+        """
+        return self.list_security_group_rules_with_http_info(request)
+
+    def list_security_group_rules_with_http_info(self, request):
+        """查询安全组规则列表
+
+        查询安全组规则列表
+
+        :param ListSecurityGroupRulesRequest request
+        :return: ListSecurityGroupRulesResponse
+        """
+
+        all_params = ['limit', 'marker', 'id', 'security_group_id', 'protocol', 'description', 'remote_group_id', 'direction', 'action']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'security_group_id' in local_var_params:
+            query_params.append(('security_group_id', local_var_params['security_group_id']))
+            collection_formats['security_group_id'] = 'multi'
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
+            collection_formats['protocol'] = 'multi'
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'multi'
+        if 'remote_group_id' in local_var_params:
+            query_params.append(('remote_group_id', local_var_params['remote_group_id']))
+            collection_formats['remote_group_id'] = 'multi'
+        if 'direction' in local_var_params:
+            query_params.append(('direction', local_var_params['direction']))
+        if 'action' in local_var_params:
+            query_params.append(('action', local_var_params['action']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/security-group-rules',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSecurityGroupRulesResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_security_groups(self, request):
+        """查询安全组列表
+
+        查询某租户下的安全组列表
+
+        :param ListSecurityGroupsRequest request
+        :return: ListSecurityGroupsResponse
+        """
+        return self.list_security_groups_with_http_info(request)
+
+    def list_security_groups_with_http_info(self, request):
+        """查询安全组列表
+
+        查询某租户下的安全组列表
+
+        :param ListSecurityGroupsRequest request
+        :return: ListSecurityGroupsResponse
+        """
+
+        all_params = ['limit', 'marker', 'id', 'name', 'description', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'multi'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/security-groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSecurityGroupsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -296,6 +682,122 @@ class VpcClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSubNetworkInterfacesResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_security_group(self, request):
+        """查询安全组
+
+        查询单个安全组详情
+
+        :param ShowSecurityGroupRequest request
+        :return: ShowSecurityGroupResponse
+        """
+        return self.show_security_group_with_http_info(request)
+
+    def show_security_group_with_http_info(self, request):
+        """查询安全组
+
+        查询单个安全组详情
+
+        :param ShowSecurityGroupRequest request
+        :return: ShowSecurityGroupResponse
+        """
+
+        all_params = ['security_group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'security_group_id' in local_var_params:
+            path_params['security_group_id'] = local_var_params['security_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/security-groups/{security_group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowSecurityGroupResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_security_group_rule(self, request):
+        """查询安全组规则
+
+        查询单个安全组规则
+
+        :param ShowSecurityGroupRuleRequest request
+        :return: ShowSecurityGroupRuleResponse
+        """
+        return self.show_security_group_rule_with_http_info(request)
+
+    def show_security_group_rule_with_http_info(self, request):
+        """查询安全组规则
+
+        查询单个安全组规则
+
+        :param ShowSecurityGroupRuleRequest request
+        :return: ShowSecurityGroupRuleResponse
+        """
+
+        all_params = ['security_group_rule_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'security_group_rule_id' in local_var_params:
+            path_params['security_group_rule_id'] = local_var_params['security_group_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/security-group-rules/{security_group_rule_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowSecurityGroupRuleResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -410,6 +912,68 @@ class VpcClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowSubNetworkInterfacesQuantityResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_security_group(self, request):
+        """更新安全组
+
+        更新安全组
+
+        :param UpdateSecurityGroupRequest request
+        :return: UpdateSecurityGroupResponse
+        """
+        return self.update_security_group_with_http_info(request)
+
+    def update_security_group_with_http_info(self, request):
+        """更新安全组
+
+        更新安全组
+
+        :param UpdateSecurityGroupRequest request
+        :return: UpdateSecurityGroupResponse
+        """
+
+        all_params = ['security_group_id', 'update_security_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'security_group_id' in local_var_params:
+            path_params['security_group_id'] = local_var_params['security_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/security-groups/{security_group_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateSecurityGroupResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
