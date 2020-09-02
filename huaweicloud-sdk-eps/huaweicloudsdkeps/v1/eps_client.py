@@ -96,7 +96,7 @@ class EpsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='CreateEpResponse',
+            response_type='CreateEPResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -158,7 +158,7 @@ class EpsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='DisableEpResponse',
+            response_type='DisableEPResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -220,7 +220,7 @@ class EpsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='EnableEpResponse',
+            response_type='EnableEPResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -346,7 +346,7 @@ class EpsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ListEpResponse',
+            response_type='ListEPResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -470,7 +470,7 @@ class EpsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ModifyEpResponse',
+            response_type='ModifyEPResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -586,7 +586,7 @@ class EpsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowEpResponse',
+            response_type='ShowEPResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -642,7 +642,7 @@ class EpsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowEpQuotaResponse',
+            response_type='ShowEPQuotaResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -704,7 +704,7 @@ class EpsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowResourceBindEpResponse',
+            response_type='ShowResourceBindEPResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
