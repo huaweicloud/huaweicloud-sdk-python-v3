@@ -23,7 +23,7 @@ class ShowVaultResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'vault': 'VaultGet'
+        'vault': 'Vault'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ShowVaultResponse(SdkResponse):
 
 
         :return: The vault of this ShowVaultResponse.
-        :rtype: VaultGet
+        :rtype: Vault
         """
         return self._vault
 
@@ -57,7 +57,7 @@ class ShowVaultResponse(SdkResponse):
 
 
         :param vault: The vault of this ShowVaultResponse.
-        :type: VaultGet
+        :type: Vault
         """
         self._vault = vault
 

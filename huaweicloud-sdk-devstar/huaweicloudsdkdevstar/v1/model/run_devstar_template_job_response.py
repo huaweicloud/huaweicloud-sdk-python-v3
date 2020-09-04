@@ -9,7 +9,7 @@ import six
 from huaweicloudsdkcore.sdk_response import SdkResponse
 
 
-class RunTemplateJobV2Response(SdkResponse):
+class RunDevstarTemplateJobResponse(SdkResponse):
 
 
     """
@@ -31,7 +31,7 @@ class RunTemplateJobV2Response(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """RunTemplateJobV2Response - a model defined in huaweicloud sdk"""
+        """RunDevstarTemplateJobResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
@@ -43,22 +43,22 @@ class RunTemplateJobV2Response(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RunTemplateJobV2Response.
+        """Gets the job_id of this RunDevstarTemplateJobResponse.
 
         任务id
 
-        :return: The job_id of this RunTemplateJobV2Response.
+        :return: The job_id of this RunDevstarTemplateJobResponse.
         :rtype: str
         """
         return self._job_id
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RunTemplateJobV2Response.
+        """Sets the job_id of this RunDevstarTemplateJobResponse.
 
         任务id
 
-        :param job_id: The job_id of this RunTemplateJobV2Response.
+        :param job_id: The job_id of this RunDevstarTemplateJobResponse.
         :type: str
         """
         self._job_id = job_id
@@ -100,7 +100,7 @@ class RunTemplateJobV2Response(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunTemplateJobV2Response):
+        if not isinstance(other, RunDevstarTemplateJobResponse):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,7 +27,7 @@ class BackupExtendInfo:
         'bootable': 'bool',
         'incremental': 'bool',
         'snapshot_id': 'str',
-        'support_lld': 'str',
+        'support_lld': 'bool',
         'supported_restore_mode': 'str',
         'os_images_data': 'list[str]',
         'contain_system_disk': 'bool',
@@ -181,7 +181,7 @@ class BackupExtendInfo:
         是否支持lazyloading快速恢复
 
         :return: The support_lld of this BackupExtendInfo.
-        :rtype: str
+        :rtype: bool
         """
         return self._support_lld
 
@@ -192,7 +192,7 @@ class BackupExtendInfo:
         是否支持lazyloading快速恢复
 
         :param support_lld: The support_lld of this BackupExtendInfo.
-        :type: str
+        :type: bool
         """
         self._support_lld = support_lld
 

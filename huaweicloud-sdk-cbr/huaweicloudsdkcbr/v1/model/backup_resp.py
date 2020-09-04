@@ -37,7 +37,7 @@ class BackupResp:
         'resource_az': 'str',
         'resource_id': 'str',
         'resource_name': 'str',
-        'resource_size': 'str',
+        'resource_size': 'int',
         'resource_type': 'str',
         'status': 'str',
         'updated_at': 'datetime',
@@ -434,7 +434,7 @@ class BackupResp:
         资源大小，单位为GB
 
         :return: The resource_size of this BackupResp.
-        :rtype: str
+        :rtype: int
         """
         return self._resource_size
 
@@ -445,7 +445,7 @@ class BackupResp:
         资源大小，单位为GB
 
         :param resource_size: The resource_size of this BackupResp.
-        :type: str
+        :type: int
         """
         self._resource_size = resource_size
 

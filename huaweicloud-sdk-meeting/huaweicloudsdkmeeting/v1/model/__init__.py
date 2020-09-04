@@ -95,7 +95,6 @@ from huaweicloudsdkmeeting.v1.model.disassociate_vmr_request import Disassociate
 from huaweicloudsdkmeeting.v1.model.disassociate_vmr_response import DisassociateVmrResponse
 from huaweicloudsdkmeeting.v1.model.edit_meeting_request import EditMeetingRequest
 from huaweicloudsdkmeeting.v1.model.edit_meeting_response import EditMeetingResponse
-from huaweicloudsdkmeeting.v1.model.empty_dto import EmptyDTO
 from huaweicloudsdkmeeting.v1.model.hand_request import HandRequest
 from huaweicloudsdkmeeting.v1.model.hand_response import HandResponse
 from huaweicloudsdkmeeting.v1.model.hang_up_request import HangUpRequest

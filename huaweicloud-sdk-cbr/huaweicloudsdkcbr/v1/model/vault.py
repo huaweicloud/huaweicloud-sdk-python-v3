@@ -32,8 +32,8 @@ class Vault:
         'resources': 'list[ResourceResp]',
         'tags': 'list[Tag]',
         'enterprise_project_id': 'str',
-        'auto_bind': 'str',
-        'bind_rules': 'str',
+        'auto_bind': 'bool',
+        'bind_rules': 'object',
         'user_id': 'str',
         'created_at': 'str'
     }
@@ -298,7 +298,7 @@ class Vault:
         是否自动绑定，默认为false，不支持。
 
         :return: The auto_bind of this Vault.
-        :rtype: str
+        :rtype: bool
         """
         return self._auto_bind
 
@@ -309,7 +309,7 @@ class Vault:
         是否自动绑定，默认为false，不支持。
 
         :param auto_bind: The auto_bind of this Vault.
-        :type: str
+        :type: bool
         """
         self._auto_bind = auto_bind
 
@@ -320,7 +320,7 @@ class Vault:
         绑定规则
 
         :return: The bind_rules of this Vault.
-        :rtype: str
+        :rtype: object
         """
         return self._bind_rules
 
@@ -331,7 +331,7 @@ class Vault:
         绑定规则
 
         :param bind_rules: The bind_rules of this Vault.
-        :type: str
+        :type: object
         """
         self._bind_rules = bind_rules
 

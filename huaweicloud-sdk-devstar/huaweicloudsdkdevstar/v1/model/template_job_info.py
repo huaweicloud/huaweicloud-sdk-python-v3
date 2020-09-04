@@ -53,7 +53,8 @@ class TemplateJobInfo:
         if application_name is not None:
             self.application_name = application_name
         self.template_id = template_id
-        self.repo_type = repo_type
+        if repo_type is not None:
+            self.repo_type = repo_type
         if properties is not None:
             self.properties = properties
         if repo_info is not None:

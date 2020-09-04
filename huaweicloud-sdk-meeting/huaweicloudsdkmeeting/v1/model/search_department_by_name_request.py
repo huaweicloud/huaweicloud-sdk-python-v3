@@ -48,8 +48,7 @@ class SearchDepartmentByNameRequest:
             self.x_request_id = x_request_id
         if accept_language is not None:
             self.accept_language = accept_language
-        if dept_name is not None:
-            self.dept_name = dept_name
+        self.dept_name = dept_name
 
     @property
     def x_request_id(self):

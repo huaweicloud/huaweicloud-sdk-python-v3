@@ -9,7 +9,7 @@ import six
 
 
 
-class RunTemplateJobV2Request:
+class RunDevstarTemplateJobRequest:
 
 
     """
@@ -33,7 +33,7 @@ class RunTemplateJobV2Request:
     }
 
     def __init__(self, x_language='zh-cn', body=None):
-        """RunTemplateJobV2Request - a model defined in huaweicloud sdk"""
+        """RunDevstarTemplateJobRequest - a model defined in huaweicloud sdk"""
         
         
 
@@ -48,40 +48,40 @@ class RunTemplateJobV2Request:
 
     @property
     def x_language(self):
-        """Gets the x_language of this RunTemplateJobV2Request.
+        """Gets the x_language of this RunDevstarTemplateJobRequest.
 
 
-        :return: The x_language of this RunTemplateJobV2Request.
+        :return: The x_language of this RunDevstarTemplateJobRequest.
         :rtype: str
         """
         return self._x_language
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this RunTemplateJobV2Request.
+        """Sets the x_language of this RunDevstarTemplateJobRequest.
 
 
-        :param x_language: The x_language of this RunTemplateJobV2Request.
+        :param x_language: The x_language of this RunDevstarTemplateJobRequest.
         :type: str
         """
         self._x_language = x_language
 
     @property
     def body(self):
-        """Gets the body of this RunTemplateJobV2Request.
+        """Gets the body of this RunDevstarTemplateJobRequest.
 
 
-        :return: The body of this RunTemplateJobV2Request.
+        :return: The body of this RunDevstarTemplateJobRequest.
         :rtype: TemplateJobInfo
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunTemplateJobV2Request.
+        """Sets the body of this RunDevstarTemplateJobRequest.
 
 
-        :param body: The body of this RunTemplateJobV2Request.
+        :param body: The body of this RunDevstarTemplateJobRequest.
         :type: TemplateJobInfo
         """
         self._body = body
@@ -123,7 +123,7 @@ class RunTemplateJobV2Request:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunTemplateJobV2Request):
+        if not isinstance(other, RunDevstarTemplateJobRequest):
             return False
 
         return self.__dict__ == other.__dict__

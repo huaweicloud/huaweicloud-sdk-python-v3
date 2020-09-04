@@ -9,7 +9,7 @@ import six
 
 
 
-class EmptyDTO:
+class DownloadApplicationCodeRequest:
 
 
     """
@@ -23,45 +23,67 @@ class EmptyDTO:
     sensitive_list = []
 
     openapi_types = {
-        'token': 'str'
+        'x_language': 'str',
+        'job_id': 'str'
     }
 
     attribute_map = {
-        'token': 'token'
+        'x_language': 'X-Language',
+        'job_id': 'job_id'
     }
 
-    def __init__(self, token=None):
-        """EmptyDTO - a model defined in huaweicloud sdk"""
+    def __init__(self, x_language='zh-cn', job_id=None):
+        """DownloadApplicationCodeRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._token = None
+        self._x_language = None
+        self._job_id = None
         self.discriminator = None
 
-        if token is not None:
-            self.token = token
+        if x_language is not None:
+            self.x_language = x_language
+        self.job_id = job_id
 
     @property
-    def token(self):
-        """Gets the token of this EmptyDTO.
+    def x_language(self):
+        """Gets the x_language of this DownloadApplicationCodeRequest.
 
-        登录用账号的token字符串
 
-        :return: The token of this EmptyDTO.
+        :return: The x_language of this DownloadApplicationCodeRequest.
         :rtype: str
         """
-        return self._token
+        return self._x_language
 
-    @token.setter
-    def token(self, token):
-        """Sets the token of this EmptyDTO.
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this DownloadApplicationCodeRequest.
 
-        登录用账号的token字符串
 
-        :param token: The token of this EmptyDTO.
+        :param x_language: The x_language of this DownloadApplicationCodeRequest.
         :type: str
         """
-        self._token = token
+        self._x_language = x_language
+
+    @property
+    def job_id(self):
+        """Gets the job_id of this DownloadApplicationCodeRequest.
+
+
+        :return: The job_id of this DownloadApplicationCodeRequest.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this DownloadApplicationCodeRequest.
+
+
+        :param job_id: The job_id of this DownloadApplicationCodeRequest.
+        :type: str
+        """
+        self._job_id = job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -100,7 +122,7 @@ class EmptyDTO:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, EmptyDTO):
+        if not isinstance(other, DownloadApplicationCodeRequest):
             return False
 
         return self.__dict__ == other.__dict__

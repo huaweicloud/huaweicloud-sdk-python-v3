@@ -23,33 +23,55 @@ class ListSecurityGroupsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'security_groups': 'list[SecurityGroup]',
         'request_id': 'str',
-        'security_group': 'list[SecurityGroup]',
-        'page_info': 'str'
+        'page_info': 'PageInfo'
     }
 
     attribute_map = {
+        'security_groups': 'security_groups',
         'request_id': 'request_id',
-        'security_group': 'security_group',
         'page_info': 'page_info'
     }
 
-    def __init__(self, request_id=None, security_group=None, page_info=None):
+    def __init__(self, security_groups=None, request_id=None, page_info=None):
         """ListSecurityGroupsResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
+        self._security_groups = None
         self._request_id = None
-        self._security_group = None
         self._page_info = None
         self.discriminator = None
 
+        if security_groups is not None:
+            self.security_groups = security_groups
         if request_id is not None:
             self.request_id = request_id
-        if security_group is not None:
-            self.security_group = security_group
         if page_info is not None:
             self.page_info = page_info
+
+    @property
+    def security_groups(self):
+        """Gets the security_groups of this ListSecurityGroupsResponse.
+
+        安全组列表响应体
+
+        :return: The security_groups of this ListSecurityGroupsResponse.
+        :rtype: list[SecurityGroup]
+        """
+        return self._security_groups
+
+    @security_groups.setter
+    def security_groups(self, security_groups):
+        """Sets the security_groups of this ListSecurityGroupsResponse.
+
+        安全组列表响应体
+
+        :param security_groups: The security_groups of this ListSecurityGroupsResponse.
+        :type: list[SecurityGroup]
+        """
+        self._security_groups = security_groups
 
     @property
     def request_id(self):
@@ -74,35 +96,12 @@ class ListSecurityGroupsResponse(SdkResponse):
         self._request_id = request_id
 
     @property
-    def security_group(self):
-        """Gets the security_group of this ListSecurityGroupsResponse.
-
-        安全组列表响应体
-
-        :return: The security_group of this ListSecurityGroupsResponse.
-        :rtype: list[SecurityGroup]
-        """
-        return self._security_group
-
-    @security_group.setter
-    def security_group(self, security_group):
-        """Sets the security_group of this ListSecurityGroupsResponse.
-
-        安全组列表响应体
-
-        :param security_group: The security_group of this ListSecurityGroupsResponse.
-        :type: list[SecurityGroup]
-        """
-        self._security_group = security_group
-
-    @property
     def page_info(self):
         """Gets the page_info of this ListSecurityGroupsResponse.
 
-        分页信息
 
         :return: The page_info of this ListSecurityGroupsResponse.
-        :rtype: str
+        :rtype: PageInfo
         """
         return self._page_info
 
@@ -110,10 +109,9 @@ class ListSecurityGroupsResponse(SdkResponse):
     def page_info(self, page_info):
         """Sets the page_info of this ListSecurityGroupsResponse.
 
-        分页信息
 
         :param page_info: The page_info of this ListSecurityGroupsResponse.
-        :type: str
+        :type: PageInfo
         """
         self._page_info = page_info
 

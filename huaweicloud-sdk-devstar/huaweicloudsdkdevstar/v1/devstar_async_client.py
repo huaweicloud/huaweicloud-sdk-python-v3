@@ -42,26 +42,86 @@ class DevstarAsyncClient(Client):
     def new_builder(clazz):
         return ClientBuilder(clazz)
 
-    def run_template_job_v2_async(self, request):
-        """通过DevStar模板创建生成应用代码任务
+    def download_application_code_async(self, request):
+        """下载模板产物
 
-        通过DevStar的模板进行应用代码创建  新建任务时会返回任务ID，通过任务ID可以查看任务的状态以及最终代码生成的地址  - 接口鉴权方式 通过华为云服务获取的用户token  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
+        下载模板产物
 
-        :param RunTemplateJobV2Request request
-        :return: RunTemplateJobV2Response
+        :param DownloadApplicationCodeRequest request
+        :return: DownloadApplicationCodeResponse
         """
-        return self.run_template_job_v2_with_http_info(request)
+        return self.download_application_code_with_http_info(request)
 
-    def run_template_job_v2_with_http_info(self, request):
-        """通过DevStar模板创建生成应用代码任务
+    def download_application_code_with_http_info(self, request):
+        """下载模板产物
 
-        通过DevStar的模板进行应用代码创建  新建任务时会返回任务ID，通过任务ID可以查看任务的状态以及最终代码生成的地址  - 接口鉴权方式 通过华为云服务获取的用户token  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
+        下载模板产物
 
-        :param RunTemplateJobV2Request request
-        :return: RunTemplateJobV2Response
+        :param DownloadApplicationCodeRequest request
+        :return: DownloadApplicationCodeResponse
         """
 
-        all_params = ['run_template_job_request_body', 'x_language']
+        all_params = ['job_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/application-codes',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DownloadApplicationCodeResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def run_devstar_template_job_async(self, request):
+        """Devstar 模板生成代码
+
+        通过DevStar的模板进行应用代码创建  通过 DevStar 模板创建生成应用代码的任务，并将应用代码存储于指定的 CodeHub 仓库中，可以通过返回的任务 ID 查询相关任务状态  - 接口鉴权方式 通过华为云服务获取的用户token  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
+
+        :param RunDevstarTemplateJobRequest request
+        :return: RunDevstarTemplateJobResponse
+        """
+        return self.run_devstar_template_job_with_http_info(request)
+
+    def run_devstar_template_job_with_http_info(self, request):
+        """Devstar 模板生成代码
+
+        通过DevStar的模板进行应用代码创建  通过 DevStar 模板创建生成应用代码的任务，并将应用代码存储于指定的 CodeHub 仓库中，可以通过返回的任务 ID 查询相关任务状态  - 接口鉴权方式 通过华为云服务获取的用户token  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
+
+        :param RunDevstarTemplateJobRequest request
+        :return: RunDevstarTemplateJobResponse
+        """
+
+        all_params = ['run_devstar_template_job_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -98,14 +158,14 @@ class DevstarAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='RunTemplateJobV2Response',
+            response_type='RunDevstarTemplateJobResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
     def show_job_detail_async(self, request):
-        """查询任务状态
+        """查询任务详情
 
         查询任务的详情  通过任务ID可以查看任务的状态 当任务结束时返回应用代码存放的位置  - 接口鉴权方式 通过华为云服务获取的用户token  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址
 
@@ -115,7 +175,7 @@ class DevstarAsyncClient(Client):
         return self.show_job_detail_with_http_info(request)
 
     def show_job_detail_with_http_info(self, request):
-        """查询任务状态
+        """查询任务详情
 
         查询任务的详情  通过任务ID可以查看任务的状态 当任务结束时返回应用代码存放的位置  - 接口鉴权方式 通过华为云服务获取的用户token  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址
 

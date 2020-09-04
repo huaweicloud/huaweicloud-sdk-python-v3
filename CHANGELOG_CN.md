@@ -1,3 +1,13 @@
+# 3.0.10-beta 2020-09-04
+## HuaweiCloud SDK Core
+ - ### 新增特性
+    - 无
+ - ### 解决问题
+    - 修复yaml中没有定义format的整型枚举参数无法生成枚举代码的问题
+ - ### 特性变更
+    - 调整Http请求头的User-Agent信息
+
+
 # 3.0.9-beta 2020-08-28
 ## HuaweiCloud SDK Core
  - ### 新增特性

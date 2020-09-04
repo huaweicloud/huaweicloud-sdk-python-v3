@@ -36,7 +36,7 @@ class ListPublishedTemplatesRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, x_language=None, keyword=None, offset=0, limit=10):
+    def __init__(self, x_language='zh-cn', keyword=None, offset=0, limit=10):
         """ListPublishedTemplatesRequest - a model defined in huaweicloud sdk"""
         
         

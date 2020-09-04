@@ -24,32 +24,27 @@ class UpdateTokenRequest:
 
     openapi_types = {
         'x_request_id': 'str',
-        'accept_language': 'str',
-        'body': 'EmptyDTO'
+        'accept_language': 'str'
     }
 
     attribute_map = {
         'x_request_id': 'X-Request-ID',
-        'accept_language': 'Accept-Language',
-        'body': 'body'
+        'accept_language': 'Accept-Language'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, body=None):
+    def __init__(self, x_request_id=None, accept_language=None):
         """UpdateTokenRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._x_request_id = None
         self._accept_language = None
-        self._body = None
         self.discriminator = None
 
         if x_request_id is not None:
             self.x_request_id = x_request_id
         if accept_language is not None:
             self.accept_language = accept_language
-        if body is not None:
-            self.body = body
 
     @property
     def x_request_id(self):
@@ -90,26 +85,6 @@ class UpdateTokenRequest:
         :type: str
         """
         self._accept_language = accept_language
-
-    @property
-    def body(self):
-        """Gets the body of this UpdateTokenRequest.
-
-
-        :return: The body of this UpdateTokenRequest.
-        :rtype: EmptyDTO
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        """Sets the body of this UpdateTokenRequest.
-
-
-        :param body: The body of this UpdateTokenRequest.
-        :type: EmptyDTO
-        """
-        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

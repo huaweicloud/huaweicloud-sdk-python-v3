@@ -3763,7 +3763,7 @@ class MeetingClient(Client):
         :return: SearchDepartmentByNameResponse
         """
 
-        all_params = ['x_request_id', 'accept_language', 'dept_name']
+        all_params = ['dept_name', 'x_request_id', 'accept_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -7398,7 +7398,7 @@ class MeetingClient(Client):
         :return: UpdateTokenResponse
         """
 
-        all_params = ['x_request_id', 'accept_language', 'empty_dto']
+        all_params = ['x_request_id', 'accept_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -7419,13 +7419,9 @@ class MeetingClient(Client):
         form_params = {}
 
         body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
 
         auth_settings = []
 

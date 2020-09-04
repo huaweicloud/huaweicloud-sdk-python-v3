@@ -113,7 +113,7 @@ class Client:
     def __init__(self):
         self.preset_headers = {}
 
-        self._agent = {"User-Agent": "huaweicloud-sdk-pythons/3.0"}
+        self._agent = {"User-Agent": "huaweicloud-usdk-python/3.0"}
         self._logger = self._init_logger()
 
         self._credentials = None

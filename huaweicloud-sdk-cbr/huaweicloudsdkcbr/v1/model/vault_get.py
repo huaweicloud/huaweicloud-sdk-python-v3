@@ -29,11 +29,11 @@ class VaultGet:
         'name': 'str',
         'project_id': 'str',
         'provider_id': 'str',
-        'resources': 'VaultResourceIntancesResp',
-        'tags': 'TagsResp',
+        'resources': 'list[VaultResourceIntancesResp]',
+        'tags': 'list[TagsResp]',
         'enterprise_project_id': 'str',
         'auto_bind': 'bool',
-        'bind_rules': 'str',
+        'bind_rules': 'object',
         'user_id': 'str',
         'created_at': 'str',
         'updated_at': 'str',
@@ -237,9 +237,10 @@ class VaultGet:
     def resources(self):
         """Gets the resources of this VaultGet.
 
+        资源
 
         :return: The resources of this VaultGet.
-        :rtype: VaultResourceIntancesResp
+        :rtype: list[VaultResourceIntancesResp]
         """
         return self._resources
 
@@ -247,9 +248,10 @@ class VaultGet:
     def resources(self, resources):
         """Sets the resources of this VaultGet.
 
+        资源
 
         :param resources: The resources of this VaultGet.
-        :type: VaultResourceIntancesResp
+        :type: list[VaultResourceIntancesResp]
         """
         self._resources = resources
 
@@ -257,9 +259,10 @@ class VaultGet:
     def tags(self):
         """Gets the tags of this VaultGet.
 
+        标签
 
         :return: The tags of this VaultGet.
-        :rtype: TagsResp
+        :rtype: list[TagsResp]
         """
         return self._tags
 
@@ -267,9 +270,10 @@ class VaultGet:
     def tags(self, tags):
         """Sets the tags of this VaultGet.
 
+        标签
 
         :param tags: The tags of this VaultGet.
-        :type: TagsResp
+        :type: list[TagsResp]
         """
         self._tags = tags
 
@@ -324,7 +328,7 @@ class VaultGet:
         绑定规则
 
         :return: The bind_rules of this VaultGet.
-        :rtype: str
+        :rtype: object
         """
         return self._bind_rules
 
@@ -335,7 +339,7 @@ class VaultGet:
         绑定规则
 
         :param bind_rules: The bind_rules of this VaultGet.
-        :type: str
+        :type: object
         """
         self._bind_rules = bind_rules
 

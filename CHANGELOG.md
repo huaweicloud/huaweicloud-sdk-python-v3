@@ -1,3 +1,13 @@
+# 3.0.10-beta 2020-09-04
+## HuaweiCloud SDK Core 
+ - ### Features
+    - None
+ - ### Bug Fix
+    - Fix the problem that the enumeration code cannot be generated for integer enumeration parameters without format defined in yaml.
+ - ### Change
+    - Modify User Agent of Http Request header.
+
+
 # 3.0.9-beta 2020-08-28
 ## HuaweiCloud SDK Core
  - ### Features

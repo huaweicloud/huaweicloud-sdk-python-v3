@@ -29,8 +29,8 @@ class ResourceResp:
         'protect_status': 'str',
         'size': 'int',
         'type': 'str',
-        'backup_size': 'str',
-        'backup_count': 'str'
+        'backup_size': 'int',
+        'backup_count': 'int'
     }
 
     attribute_map = {
@@ -210,7 +210,7 @@ class ResourceResp:
         副本大小
 
         :return: The backup_size of this ResourceResp.
-        :rtype: str
+        :rtype: int
         """
         return self._backup_size
 
@@ -221,7 +221,7 @@ class ResourceResp:
         副本大小
 
         :param backup_size: The backup_size of this ResourceResp.
-        :type: str
+        :type: int
         """
         self._backup_size = backup_size
 
@@ -232,7 +232,7 @@ class ResourceResp:
         副本数量
 
         :return: The backup_count of this ResourceResp.
-        :rtype: str
+        :rtype: int
         """
         return self._backup_count
 
@@ -243,7 +243,7 @@ class ResourceResp:
         副本数量
 
         :param backup_count: The backup_count of this ResourceResp.
-        :type: str
+        :type: int
         """
         self._backup_count = backup_count
 
