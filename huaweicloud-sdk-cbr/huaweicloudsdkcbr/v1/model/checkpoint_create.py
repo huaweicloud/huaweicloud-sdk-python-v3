@@ -28,7 +28,7 @@ class CheckpointCreate:
         'project_id': 'str',
         'status': 'str',
         'vault': 'CheckpointPlanCreate',
-        'extra_info': 'BackupExtendInfo'
+        'extra_info': 'CheckpointExtraInfoResp'
     }
 
     attribute_map = {
@@ -176,7 +176,7 @@ class CheckpointCreate:
 
 
         :return: The extra_info of this CheckpointCreate.
-        :rtype: BackupExtendInfo
+        :rtype: CheckpointExtraInfoResp
         """
         return self._extra_info
 
@@ -186,7 +186,7 @@ class CheckpointCreate:
 
 
         :param extra_info: The extra_info of this CheckpointCreate.
-        :type: BackupExtendInfo
+        :type: CheckpointExtraInfoResp
         """
         self._extra_info = extra_info
 

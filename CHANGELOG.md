@@ -1,3 +1,29 @@
+# 3.0.11-beta 2020-09-09
+## HuaweiCloud SDK DMS
+ - ### Features
+    - Support Distributed Message Services, provide Kafka premium instances and RabbitMQ premium instances with dedicated resources.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK Meeting
+ - ### Features
+    - Support more APIs: Meeting Control / Meeting Management.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK VPC
+ - ### Features
+    - None
+ - ### Bug Fix
+    - Fix the problem that security group related interfaces have wrong data type.
+ - ### Change
+    - None
+
+
 # 3.0.10-beta 2020-09-04
 ## HuaweiCloud SDK Core 
  - ### Features

@@ -29,7 +29,7 @@ class SecurityGroupRule:
         'direction': 'str',
         'protocol': 'str',
         'ethertype': 'str',
-        'multiport': 'int',
+        'multiport': 'str',
         'action': 'str',
         'priority': 'int',
         'remote_group_id': 'str',
@@ -235,7 +235,7 @@ class SecurityGroupRule:
         功能说明：端口取值范围 取值范围：支持单端口(80)，连续端口(1-30)以及不连续端口(22,3389,80)
 
         :return: The multiport of this SecurityGroupRule.
-        :rtype: int
+        :rtype: str
         """
         return self._multiport
 
@@ -246,7 +246,7 @@ class SecurityGroupRule:
         功能说明：端口取值范围 取值范围：支持单端口(80)，连续端口(1-30)以及不连续端口(22,3389,80)
 
         :param multiport: The multiport of this SecurityGroupRule.
-        :type: int
+        :type: str
         """
         self._multiport = multiport
 

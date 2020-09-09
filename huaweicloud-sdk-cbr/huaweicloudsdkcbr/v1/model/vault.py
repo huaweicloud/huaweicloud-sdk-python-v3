@@ -33,7 +33,8 @@ class Vault:
         'tags': 'list[Tag]',
         'enterprise_project_id': 'str',
         'auto_bind': 'bool',
-        'bind_rules': 'object',
+        'bind_rules': 'VaultBindRules',
+        'auto_expand': 'bool',
         'user_id': 'str',
         'created_at': 'str'
     }
@@ -50,11 +51,12 @@ class Vault:
         'enterprise_project_id': 'enterprise_project_id',
         'auto_bind': 'auto_bind',
         'bind_rules': 'bind_rules',
+        'auto_expand': 'auto_expand',
         'user_id': 'user_id',
         'created_at': 'created_at'
     }
 
-    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None):
+    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, auto_expand=None, user_id=None, created_at=None):
         """Vault - a model defined in huaweicloud sdk"""
         
         
@@ -70,6 +72,7 @@ class Vault:
         self._enterprise_project_id = None
         self._auto_bind = None
         self._bind_rules = None
+        self._auto_expand = None
         self._user_id = None
         self._created_at = None
         self.discriminator = None
@@ -90,6 +93,8 @@ class Vault:
             self.auto_bind = auto_bind
         if bind_rules is not None:
             self.bind_rules = bind_rules
+        if auto_expand is not None:
+            self.auto_expand = auto_expand
         if user_id is not None:
             self.user_id = user_id
         if created_at is not None:
@@ -317,10 +322,9 @@ class Vault:
     def bind_rules(self):
         """Gets the bind_rules of this Vault.
 
-        绑定规则
 
         :return: The bind_rules of this Vault.
-        :rtype: object
+        :rtype: VaultBindRules
         """
         return self._bind_rules
 
@@ -328,12 +332,33 @@ class Vault:
     def bind_rules(self, bind_rules):
         """Sets the bind_rules of this Vault.
 
-        绑定规则
 
         :param bind_rules: The bind_rules of this Vault.
-        :type: object
+        :type: VaultBindRules
         """
         self._bind_rules = bind_rules
+
+    @property
+    def auto_expand(self):
+        """Gets the auto_expand of this Vault.
+
+        是否开启存储库自动扩容能力（只支持按需存储库）。
+
+        :return: The auto_expand of this Vault.
+        :rtype: bool
+        """
+        return self._auto_expand
+
+    @auto_expand.setter
+    def auto_expand(self, auto_expand):
+        """Sets the auto_expand of this Vault.
+
+        是否开启存储库自动扩容能力（只支持按需存储库）。
+
+        :param auto_expand: The auto_expand of this Vault.
+        :type: bool
+        """
+        self._auto_expand = auto_expand
 
     @property
     def user_id(self):

@@ -23,71 +23,45 @@ class VaultBindRules:
     sensitive_list = []
 
     openapi_types = {
-        'key': 'str',
-        'value': 'str'
+        'tags': 'list[Tag]'
     }
 
     attribute_map = {
-        'key': 'key',
-        'value': 'value'
+        'tags': 'tags'
     }
 
-    def __init__(self, key=None, value=None):
+    def __init__(self, tags=None):
         """VaultBindRules - a model defined in huaweicloud sdk"""
         
         
 
-        self._key = None
-        self._value = None
+        self._tags = None
         self.discriminator = None
 
-        self.key = key
-        if value is not None:
-            self.value = value
+        if tags is not None:
+            self.tags = tags
 
     @property
-    def key(self):
-        """Gets the key of this VaultBindRules.
+    def tags(self):
+        """Gets the tags of this VaultBindRules.
 
-        字段key
+        按tags过滤自动绑定的资源
 
-        :return: The key of this VaultBindRules.
-        :rtype: str
+        :return: The tags of this VaultBindRules.
+        :rtype: list[Tag]
         """
-        return self._key
+        return self._tags
 
-    @key.setter
-    def key(self, key):
-        """Sets the key of this VaultBindRules.
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this VaultBindRules.
 
-        字段key
+        按tags过滤自动绑定的资源
 
-        :param key: The key of this VaultBindRules.
-        :type: str
+        :param tags: The tags of this VaultBindRules.
+        :type: list[Tag]
         """
-        self._key = key
-
-    @property
-    def value(self):
-        """Gets the value of this VaultBindRules.
-
-        字段的值
-
-        :return: The value of this VaultBindRules.
-        :rtype: str
-        """
-        return self._value
-
-    @value.setter
-    def value(self, value):
-        """Sets the value of this VaultBindRules.
-
-        字段的值
-
-        :param value: The value of this VaultBindRules.
-        :type: str
-        """
-        self._value = value
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

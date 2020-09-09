@@ -105,6 +105,8 @@ from huaweicloudsdkmeeting.v1.model.hang_up_response import HangUpResponse
 from huaweicloudsdkmeeting.v1.model.id_mark_dto import IdMarkDTO
 from huaweicloudsdkmeeting.v1.model.invite_participant_request import InviteParticipantRequest
 from huaweicloudsdkmeeting.v1.model.invite_participant_response import InviteParticipantResponse
+from huaweicloudsdkmeeting.v1.model.invite_with_pwd_request import InviteWithPwdRequest
+from huaweicloudsdkmeeting.v1.model.invite_with_pwd_response import InviteWithPwdResponse
 from huaweicloudsdkmeeting.v1.model.list_meeting_file_response_dto import ListMeetingFileResponseDTO
 from huaweicloudsdkmeeting.v1.model.live_request import LiveRequest
 from huaweicloudsdkmeeting.v1.model.live_response import LiveResponse
@@ -183,6 +185,7 @@ from huaweicloudsdkmeeting.v1.model.rest_chair_view_req_body import RestChairVie
 from huaweicloudsdkmeeting.v1.model.rest_conf_config_dto import RestConfConfigDTO
 from huaweicloudsdkmeeting.v1.model.rest_hands_up_req_body import RestHandsUpReqBody
 from huaweicloudsdkmeeting.v1.model.rest_invite_req_body import RestInviteReqBody
+from huaweicloudsdkmeeting.v1.model.rest_invite_with_pwd_req_body import RestInviteWithPwdReqBody
 from huaweicloudsdkmeeting.v1.model.rest_lock_req_body import RestLockReqBody
 from huaweicloudsdkmeeting.v1.model.rest_lock_site_view_req_body import RestLockSiteViewReqBody
 from huaweicloudsdkmeeting.v1.model.rest_mixed_picture_body import RestMixedPictureBody
@@ -252,6 +255,8 @@ from huaweicloudsdkmeeting.v1.model.set_participant_view_request import SetParti
 from huaweicloudsdkmeeting.v1.model.set_participant_view_response import SetParticipantViewResponse
 from huaweicloudsdkmeeting.v1.model.set_role_request import SetRoleRequest
 from huaweicloudsdkmeeting.v1.model.set_role_response import SetRoleResponse
+from huaweicloudsdkmeeting.v1.model.show_conf_org_request import ShowConfOrgRequest
+from huaweicloudsdkmeeting.v1.model.show_conf_org_response import ShowConfOrgResponse
 from huaweicloudsdkmeeting.v1.model.show_corp_admin_request import ShowCorpAdminRequest
 from huaweicloudsdkmeeting.v1.model.show_corp_admin_response import ShowCorpAdminResponse
 from huaweicloudsdkmeeting.v1.model.show_corp_basic_info_request import ShowCorpBasicInfoRequest
@@ -290,6 +295,8 @@ from huaweicloudsdkmeeting.v1.model.show_recording_detail_request import ShowRec
 from huaweicloudsdkmeeting.v1.model.show_recording_detail_response import ShowRecordingDetailResponse
 from huaweicloudsdkmeeting.v1.model.show_region_info_of_meeting_request import ShowRegionInfoOfMeetingRequest
 from huaweicloudsdkmeeting.v1.model.show_region_info_of_meeting_response import ShowRegionInfoOfMeetingResponse
+from huaweicloudsdkmeeting.v1.model.show_sp_res_request import ShowSpResRequest
+from huaweicloudsdkmeeting.v1.model.show_sp_res_response import ShowSpResResponse
 from huaweicloudsdkmeeting.v1.model.show_user_detail_request import ShowUserDetailRequest
 from huaweicloudsdkmeeting.v1.model.show_user_detail_response import ShowUserDetailResponse
 from huaweicloudsdkmeeting.v1.model.slide_verify_code_check_dto import SlideVerifyCodeCheckDTO

@@ -28,6 +28,7 @@ from huaweicloudsdkcbr.v1.model.billing_create import BillingCreate
 from huaweicloudsdkcbr.v1.model.billing_update import BillingUpdate
 from huaweicloudsdkcbr.v1.model.checkpoint_create import CheckpointCreate
 from huaweicloudsdkcbr.v1.model.checkpoint_create_skipped_resource import CheckpointCreateSkippedResource
+from huaweicloudsdkcbr.v1.model.checkpoint_extra_info_resp import CheckpointExtraInfoResp
 from huaweicloudsdkcbr.v1.model.checkpoint_param import CheckpointParam
 from huaweicloudsdkcbr.v1.model.checkpoint_plan_create import CheckpointPlanCreate
 from huaweicloudsdkcbr.v1.model.checkpoint_replicate_param import CheckpointReplicateParam

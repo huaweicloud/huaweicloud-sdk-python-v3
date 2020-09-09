@@ -30,7 +30,7 @@ class SecurityGroupInfo:
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'enterprise_project_id': 'str',
-        'security_group_rule': 'SecurityGroupRule'
+        'security_group_rules': 'list[SecurityGroupRule]'
     }
 
     attribute_map = {
@@ -41,10 +41,10 @@ class SecurityGroupInfo:
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'enterprise_project_id': 'enterprise_project_id',
-        'security_group_rule': 'security_group_rule'
+        'security_group_rules': 'security_group_rules'
     }
 
-    def __init__(self, id=None, name=None, description=None, project_id=None, created_at=None, updated_at=None, enterprise_project_id=None, security_group_rule=None):
+    def __init__(self, id=None, name=None, description=None, project_id=None, created_at=None, updated_at=None, enterprise_project_id=None, security_group_rules=None):
         """SecurityGroupInfo - a model defined in huaweicloud sdk"""
         
         
@@ -56,7 +56,7 @@ class SecurityGroupInfo:
         self._created_at = None
         self._updated_at = None
         self._enterprise_project_id = None
-        self._security_group_rule = None
+        self._security_group_rules = None
         self.discriminator = None
 
         self.id = id
@@ -66,7 +66,7 @@ class SecurityGroupInfo:
         self.created_at = created_at
         self.updated_at = updated_at
         self.enterprise_project_id = enterprise_project_id
-        self.security_group_rule = security_group_rule
+        self.security_group_rules = security_group_rules
 
     @property
     def id(self):
@@ -223,24 +223,26 @@ class SecurityGroupInfo:
         self._enterprise_project_id = enterprise_project_id
 
     @property
-    def security_group_rule(self):
-        """Gets the security_group_rule of this SecurityGroupInfo.
+    def security_group_rules(self):
+        """Gets the security_group_rules of this SecurityGroupInfo.
 
+        安全组规则
 
-        :return: The security_group_rule of this SecurityGroupInfo.
-        :rtype: SecurityGroupRule
+        :return: The security_group_rules of this SecurityGroupInfo.
+        :rtype: list[SecurityGroupRule]
         """
-        return self._security_group_rule
+        return self._security_group_rules
 
-    @security_group_rule.setter
-    def security_group_rule(self, security_group_rule):
-        """Sets the security_group_rule of this SecurityGroupInfo.
+    @security_group_rules.setter
+    def security_group_rules(self, security_group_rules):
+        """Sets the security_group_rules of this SecurityGroupInfo.
 
+        安全组规则
 
-        :param security_group_rule: The security_group_rule of this SecurityGroupInfo.
-        :type: SecurityGroupRule
+        :param security_group_rules: The security_group_rules of this SecurityGroupInfo.
+        :type: list[SecurityGroupRule]
         """
-        self._security_group_rule = security_group_rule
+        self._security_group_rules = security_group_rules
 
     def to_dict(self):
         """Returns the model properties as a dict"""

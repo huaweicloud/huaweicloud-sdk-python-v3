@@ -2558,6 +2558,68 @@ class MeetingAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def invite_with_pwd_async(self, request):
+        """通过会议ID和密码邀请与会者
+
+        通过会议ID和密码邀请与会者
+
+        :param InviteWithPwdRequest request
+        :return: InviteWithPwdResponse
+        """
+        return self.invite_with_pwd_with_http_info(request)
+
+    def invite_with_pwd_with_http_info(self, request):
+        """通过会议ID和密码邀请与会者
+
+        通过会议ID和密码邀请与会者
+
+        :param InviteWithPwdRequest request
+        :return: InviteWithPwdResponse
+        """
+
+        all_params = ['conference_id', 'req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/inviteWithPwd',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='InviteWithPwdResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def live_async(self, request):
         """启停会议直播
 
@@ -5201,6 +5263,64 @@ class MeetingAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_conf_org_async(self, request):
+        """通过会议ID查询企业ID
+
+        与某个会议在同一个SP下的用户，可以通过会议ID查询到该会议对应的企业ID。
+
+        :param ShowConfOrgRequest request
+        :return: ShowConfOrgResponse
+        """
+        return self.show_conf_org_with_http_info(request)
+
+    def show_conf_org_with_http_info(self, request):
+        """通过会议ID查询企业ID
+
+        与某个会议在同一个SP下的用户，可以通过会议ID查询到该会议对应的企业ID。
+
+        :param ShowConfOrgRequest request
+        :return: ShowConfOrgResponse
+        """
+
+        all_params = ['conference_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences/confOrg',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowConfOrgResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_corp_async(self, request):
         """SP管理员查询企业
 
@@ -6402,6 +6522,62 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowRegionInfoOfMeetingResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_sp_res_async(self, request):
+        """查询SP的共享资源使用信息
+
+        SP管理查询所属SP的共享资源使用信息
+
+        :param ShowSpResRequest request
+        :return: ShowSpResResponse
+        """
+        return self.show_sp_res_with_http_info(request)
+
+    def show_sp_res_with_http_info(self, request):
+        """查询SP的共享资源使用信息
+
+        SP管理查询所属SP的共享资源使用信息
+
+        :param ShowSpResRequest request
+        :return: ShowSpResResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/spRes',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowSpResResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)

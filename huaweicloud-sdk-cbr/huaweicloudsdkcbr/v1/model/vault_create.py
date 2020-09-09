@@ -31,7 +31,8 @@ class VaultCreate:
         'tags': 'list[Tag]',
         'enterprise_project_id': 'str',
         'auto_bind': 'bool',
-        'bind_rules': 'object'
+        'bind_rules': 'VaultBindRules',
+        'auto_expand': 'bool'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class VaultCreate:
         'tags': 'tags',
         'enterprise_project_id': 'enterprise_project_id',
         'auto_bind': 'auto_bind',
-        'bind_rules': 'bind_rules'
+        'bind_rules': 'bind_rules',
+        'auto_expand': 'auto_expand'
     }
 
-    def __init__(self, backup_policy_id=None, billing=None, description=None, name=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None):
+    def __init__(self, backup_policy_id=None, billing=None, description=None, name=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, auto_expand=None):
         """VaultCreate - a model defined in huaweicloud sdk"""
         
         
@@ -60,6 +62,7 @@ class VaultCreate:
         self._enterprise_project_id = None
         self._auto_bind = None
         self._bind_rules = None
+        self._auto_expand = None
         self.discriminator = None
 
         if backup_policy_id is not None:
@@ -77,6 +80,8 @@ class VaultCreate:
             self.auto_bind = auto_bind
         if bind_rules is not None:
             self.bind_rules = bind_rules
+        if auto_expand is not None:
+            self.auto_expand = auto_expand
 
     @property
     def backup_policy_id(self):
@@ -256,10 +261,9 @@ class VaultCreate:
     def bind_rules(self):
         """Gets the bind_rules of this VaultCreate.
 
-        
 
         :return: The bind_rules of this VaultCreate.
-        :rtype: object
+        :rtype: VaultBindRules
         """
         return self._bind_rules
 
@@ -267,12 +271,33 @@ class VaultCreate:
     def bind_rules(self, bind_rules):
         """Sets the bind_rules of this VaultCreate.
 
-        
 
         :param bind_rules: The bind_rules of this VaultCreate.
-        :type: object
+        :type: VaultBindRules
         """
         self._bind_rules = bind_rules
+
+    @property
+    def auto_expand(self):
+        """Gets the auto_expand of this VaultCreate.
+
+        是否自动扩容。按需存储库支持自动扩容，包周期存储库不支持扩容。
+
+        :return: The auto_expand of this VaultCreate.
+        :rtype: bool
+        """
+        return self._auto_expand
+
+    @auto_expand.setter
+    def auto_expand(self, auto_expand):
+        """Sets the auto_expand of this VaultCreate.
+
+        是否自动扩容。按需存储库支持自动扩容，包周期存储库不支持扩容。
+
+        :param auto_expand: The auto_expand of this VaultCreate.
+        :type: bool
+        """
+        self._auto_expand = auto_expand
 
     def to_dict(self):
         """Returns the model properties as a dict"""

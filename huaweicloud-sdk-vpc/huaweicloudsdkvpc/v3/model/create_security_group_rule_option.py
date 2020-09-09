@@ -28,7 +28,7 @@ class CreateSecurityGroupRuleOption:
         'direction': 'str',
         'ethertype': 'str',
         'protocol': 'str',
-        'multiport': 'int',
+        'multiport': 'str',
         'remote_ip_prefix': 'str',
         'remote_group_id': 'str',
         'remote_address_group_id': 'str',
@@ -206,7 +206,7 @@ class CreateSecurityGroupRuleOption:
         功能说明：端口取值范围 取值范围：支持单端口(80)，连续端口(1-30)以及不连续端口(22,3389,80) 约束：端口值的范围1~65535
 
         :return: The multiport of this CreateSecurityGroupRuleOption.
-        :rtype: int
+        :rtype: str
         """
         return self._multiport
 
@@ -217,7 +217,7 @@ class CreateSecurityGroupRuleOption:
         功能说明：端口取值范围 取值范围：支持单端口(80)，连续端口(1-30)以及不连续端口(22,3389,80) 约束：端口值的范围1~65535
 
         :param multiport: The multiport of this CreateSecurityGroupRuleOption.
-        :type: int
+        :type: str
         """
         self._multiport = multiport
 

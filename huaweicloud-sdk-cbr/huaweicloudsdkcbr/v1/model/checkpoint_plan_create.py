@@ -25,7 +25,7 @@ class CheckpointPlanCreate:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'resources': 'list[Resource]',
+        'resources': 'list[ResourceResp]',
         'skipped_resources': 'list[CheckpointCreateSkippedResource]'
     }
 
@@ -105,7 +105,7 @@ class CheckpointPlanCreate:
         备份对象
 
         :return: The resources of this CheckpointPlanCreate.
-        :rtype: list[Resource]
+        :rtype: list[ResourceResp]
         """
         return self._resources
 
@@ -116,7 +116,7 @@ class CheckpointPlanCreate:
         备份对象
 
         :param resources: The resources of this CheckpointPlanCreate.
-        :type: list[Resource]
+        :type: list[ResourceResp]
         """
         self._resources = resources
 

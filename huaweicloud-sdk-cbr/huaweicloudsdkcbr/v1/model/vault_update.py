@@ -26,17 +26,19 @@ class VaultUpdate:
         'billing': 'BillingUpdate',
         'name': 'str',
         'auto_bind': 'bool',
-        'bind_rules': 'list[VaultBindRules]'
+        'bind_rules': 'VaultBindRules',
+        'auto_expand': 'bool'
     }
 
     attribute_map = {
         'billing': 'billing',
         'name': 'name',
         'auto_bind': 'auto_bind',
-        'bind_rules': 'bind_rules'
+        'bind_rules': 'bind_rules',
+        'auto_expand': 'auto_expand'
     }
 
-    def __init__(self, billing=None, name=None, auto_bind=None, bind_rules=None):
+    def __init__(self, billing=None, name=None, auto_bind=None, bind_rules=None, auto_expand=None):
         """VaultUpdate - a model defined in huaweicloud sdk"""
         
         
@@ -45,6 +47,7 @@ class VaultUpdate:
         self._name = None
         self._auto_bind = None
         self._bind_rules = None
+        self._auto_expand = None
         self.discriminator = None
 
         if billing is not None:
@@ -55,6 +58,8 @@ class VaultUpdate:
             self.auto_bind = auto_bind
         if bind_rules is not None:
             self.bind_rules = bind_rules
+        if auto_expand is not None:
+            self.auto_expand = auto_expand
 
     @property
     def billing(self):
@@ -124,10 +129,9 @@ class VaultUpdate:
     def bind_rules(self):
         """Gets the bind_rules of this VaultUpdate.
 
-        
 
         :return: The bind_rules of this VaultUpdate.
-        :rtype: list[VaultBindRules]
+        :rtype: VaultBindRules
         """
         return self._bind_rules
 
@@ -135,12 +139,33 @@ class VaultUpdate:
     def bind_rules(self, bind_rules):
         """Sets the bind_rules of this VaultUpdate.
 
-        
 
         :param bind_rules: The bind_rules of this VaultUpdate.
-        :type: list[VaultBindRules]
+        :type: VaultBindRules
         """
         self._bind_rules = bind_rules
+
+    @property
+    def auto_expand(self):
+        """Gets the auto_expand of this VaultUpdate.
+
+        是否自动扩容。按需存储库支持自动扩容，包周期存储库不支持扩容。
+
+        :return: The auto_expand of this VaultUpdate.
+        :rtype: bool
+        """
+        return self._auto_expand
+
+    @auto_expand.setter
+    def auto_expand(self, auto_expand):
+        """Sets the auto_expand of this VaultUpdate.
+
+        是否自动扩容。按需存储库支持自动扩容，包周期存储库不支持扩容。
+
+        :param auto_expand: The auto_expand of this VaultUpdate.
+        :type: bool
+        """
+        self._auto_expand = auto_expand
 
     def to_dict(self):
         """Returns the model properties as a dict"""
