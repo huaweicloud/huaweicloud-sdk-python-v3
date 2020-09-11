@@ -38,6 +38,7 @@ from huaweicloudsdkcbr.v1.model.checkpoint_replicate_param import CheckpointRepl
 from huaweicloudsdkcbr.v1.model.checkpoint_replicate_req import CheckpointReplicateReq
 from huaweicloudsdkcbr.v1.model.checkpoint_replicate_resp_body import CheckpointReplicateRespBody
 from huaweicloudsdkcbr.v1.model.checkpoint_replicate_respbackups import CheckpointReplicateRespbackups
+from huaweicloudsdkcbr.v1.model.checkpoint_resource_resp import CheckpointResourceResp
 from huaweicloudsdkcbr.v1.model.copy_backup_request import CopyBackupRequest
 from huaweicloudsdkcbr.v1.model.copy_backup_response import CopyBackupResponse
 from huaweicloudsdkcbr.v1.model.copy_checkpoint_request import CopyCheckpointRequest

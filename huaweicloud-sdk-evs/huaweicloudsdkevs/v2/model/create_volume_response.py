@@ -24,27 +24,32 @@ class CreateVolumeResponse(SdkResponse):
 
     openapi_types = {
         'job_id': 'str',
-        'order_id': 'str'
+        'order_id': 'str',
+        'volume_ids': 'list[str]'
     }
 
     attribute_map = {
         'job_id': 'job_id',
-        'order_id': 'order_id'
+        'order_id': 'order_id',
+        'volume_ids': 'volume_ids'
     }
 
-    def __init__(self, job_id=None, order_id=None):
+    def __init__(self, job_id=None, order_id=None, volume_ids=None):
         """CreateVolumeResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
         self._job_id = None
         self._order_id = None
+        self._volume_ids = None
         self.discriminator = None
 
         if job_id is not None:
             self.job_id = job_id
         if order_id is not None:
             self.order_id = order_id
+        if volume_ids is not None:
+            self.volume_ids = volume_ids
 
     @property
     def job_id(self):
@@ -89,6 +94,28 @@ class CreateVolumeResponse(SdkResponse):
         :type: str
         """
         self._order_id = order_id
+
+    @property
+    def volume_ids(self):
+        """Gets the volume_ids of this CreateVolumeResponse.
+
+        待创建的磁盘ID列表。
+
+        :return: The volume_ids of this CreateVolumeResponse.
+        :rtype: list[str]
+        """
+        return self._volume_ids
+
+    @volume_ids.setter
+    def volume_ids(self, volume_ids):
+        """Sets the volume_ids of this CreateVolumeResponse.
+
+        待创建的磁盘ID列表。
+
+        :param volume_ids: The volume_ids of this CreateVolumeResponse.
+        :type: list[str]
+        """
+        self._volume_ids = volume_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

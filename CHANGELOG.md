@@ -1,3 +1,12 @@
+## 3.0.12-beta 2020-09-11
+## HuaweiCloud SDK Meeting
+ - ### Features
+    - None
+ - ### Bug Fix
+    - Fix failed to create credentials
+ - ### Change
+    - None
+
 # 3.0.11-beta 2020-09-09
 ## HuaweiCloud SDK DMS
  - ### Features

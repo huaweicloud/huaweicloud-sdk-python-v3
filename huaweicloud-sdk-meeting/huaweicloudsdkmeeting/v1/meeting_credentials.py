@@ -11,11 +11,18 @@ from huaweicloudsdkcore.sdk_request import SdkRequest
 
 
 class MeetingCredentials(Credentials):
-    def __init__(self):
+    def __init__(self, username, password):
         self._token = None
         self._last_token_date = None
-        self._username = None
-        self._password = None
+
+        if username is None or username == "":
+            raise ApiValueError("username can not be null.")
+
+        if password is None or password == "":
+            raise ApiValueError("password can not be null.")
+
+        self._username = username
+        self._password = password
 
     def get_update_path_params(self):
         pass
@@ -36,11 +43,11 @@ class MeetingCredentials(Credentials):
                                            'utf-8')
                                            
             body = {'account': self._username, 'clientType': 0}
-            sdk_request = SdkRequest('POST', 'https', request.host, '/v1/usg/acs/auth/account', [],
+            sdk_request = SdkRequest('POST', 'https', request.host, [], '/v1/usg/acs/auth/account', [],
                                      {'Authorization': authorization, 'Content-Type': 'application/json'},
-                                     json.dumps(body), [], '/v1/usg/acs/auth/account')
+                                     json.dumps(body), [])
 
-            response = http_client.do_request_sync(sdk_request, [], [])
+            response = http_client.do_request_sync(sdk_request)
             content = json.loads(response.content.decode())
             self._token = content['accessToken']
             self._last_token_date = datetime.datetime.now()

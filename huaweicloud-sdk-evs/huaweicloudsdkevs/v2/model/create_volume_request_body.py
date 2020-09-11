@@ -24,26 +24,31 @@ class CreateVolumeRequestBody:
 
     openapi_types = {
         'bss_param': 'BssParamForCreateVolume',
-        'volume': 'CreateVolumeOption'
+        'volume': 'CreateVolumeOption',
+        'server_id': 'str'
     }
 
     attribute_map = {
         'bss_param': 'bssParam',
-        'volume': 'volume'
+        'volume': 'volume',
+        'server_id': 'server_id'
     }
 
-    def __init__(self, bss_param=None, volume=None):
+    def __init__(self, bss_param=None, volume=None, server_id=None):
         """CreateVolumeRequestBody - a model defined in huaweicloud sdk"""
         
         
 
         self._bss_param = None
         self._volume = None
+        self._server_id = None
         self.discriminator = None
 
         if bss_param is not None:
             self.bss_param = bss_param
         self.volume = volume
+        if server_id is not None:
+            self.server_id = server_id
 
     @property
     def bss_param(self):
@@ -84,6 +89,28 @@ class CreateVolumeRequestBody:
         :type: CreateVolumeOption
         """
         self._volume = volume
+
+    @property
+    def server_id(self):
+        """Gets the server_id of this CreateVolumeRequestBody.
+
+        创建云硬盘并挂载到目标虚拟机。
+
+        :return: The server_id of this CreateVolumeRequestBody.
+        :rtype: str
+        """
+        return self._server_id
+
+    @server_id.setter
+    def server_id(self, server_id):
+        """Sets the server_id of this CreateVolumeRequestBody.
+
+        创建云硬盘并挂载到目标虚拟机。
+
+        :param server_id: The server_id of this CreateVolumeRequestBody.
+        :type: str
+        """
+        self._server_id = server_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
