@@ -25,37 +25,37 @@ class NewCustomerV2:
     openapi_types = {
         'customer_name': 'str',
         'mobile_phone': 'str',
-        'password': 'str',
         'use_pri_mobile_phone': 'str',
+        'password': 'str',
         'verification_code': 'str'
     }
 
     attribute_map = {
         'customer_name': 'customer_name',
         'mobile_phone': 'mobile_phone',
-        'password': 'password',
         'use_pri_mobile_phone': 'use_pri_mobile_phone',
+        'password': 'password',
         'verification_code': 'verification_code'
     }
 
-    def __init__(self, customer_name=None, mobile_phone=None, password=None, use_pri_mobile_phone=None, verification_code=None):
+    def __init__(self, customer_name=None, mobile_phone=None, use_pri_mobile_phone=None, password=None, verification_code=None):
         """NewCustomerV2 - a model defined in huaweicloud sdk"""
         
         
 
         self._customer_name = None
         self._mobile_phone = None
-        self._password = None
         self._use_pri_mobile_phone = None
+        self._password = None
         self._verification_code = None
         self.discriminator = None
 
         self.customer_name = customer_name
         if mobile_phone is not None:
             self.mobile_phone = mobile_phone
-        self.password = password
         if use_pri_mobile_phone is not None:
             self.use_pri_mobile_phone = use_pri_mobile_phone
+        self.password = password
         if verification_code is not None:
             self.verification_code = verification_code
 
@@ -104,28 +104,6 @@ class NewCustomerV2:
         self._mobile_phone = mobile_phone
 
     @property
-    def password(self):
-        """Gets the password of this NewCustomerV2.
-
-        |参数名称：客户登录密码。注：usePriMobilePhone为Y时才支持| |参数约束及描述：客户登录密码。注：usePriMobilePhone为Y时才支持|
-
-        :return: The password of this NewCustomerV2.
-        :rtype: str
-        """
-        return self._password
-
-    @password.setter
-    def password(self, password):
-        """Sets the password of this NewCustomerV2.
-
-        |参数名称：客户登录密码。注：usePriMobilePhone为Y时才支持| |参数约束及描述：客户登录密码。注：usePriMobilePhone为Y时才支持|
-
-        :param password: The password of this NewCustomerV2.
-        :type: str
-        """
-        self._password = password
-
-    @property
     def use_pri_mobile_phone(self):
         """Gets the use_pri_mobile_phone of this NewCustomerV2.
 
@@ -146,6 +124,28 @@ class NewCustomerV2:
         :type: str
         """
         self._use_pri_mobile_phone = use_pri_mobile_phone
+
+    @property
+    def password(self):
+        """Gets the password of this NewCustomerV2.
+
+        |参数名称：客户登录密码。注：usePriMobilePhone为Y时才支持| |参数约束及描述：客户登录密码。注：usePriMobilePhone为Y时才支持|
+
+        :return: The password of this NewCustomerV2.
+        :rtype: str
+        """
+        return self._password
+
+    @password.setter
+    def password(self, password):
+        """Sets the password of this NewCustomerV2.
+
+        |参数名称：客户登录密码。注：usePriMobilePhone为Y时才支持| |参数约束及描述：客户登录密码。注：usePriMobilePhone为Y时才支持|
+
+        :param password: The password of this NewCustomerV2.
+        :type: str
+        """
+        self._password = password
 
     @property
     def verification_code(self):

@@ -23,50 +23,28 @@ class DiscountEntry:
     sensitive_list = []
 
     openapi_types = {
-        'discount_amount': 'float',
-        'discount_type': 'str'
+        'discount_type': 'str',
+        'discount_amount': 'float'
     }
 
     attribute_map = {
-        'discount_amount': 'discount_amount',
-        'discount_type': 'discount_type'
+        'discount_type': 'discount_type',
+        'discount_amount': 'discount_amount'
     }
 
-    def __init__(self, discount_amount=None, discount_type=None):
+    def __init__(self, discount_type=None, discount_amount=None):
         """DiscountEntry - a model defined in huaweicloud sdk"""
         
         
 
-        self._discount_amount = None
         self._discount_type = None
+        self._discount_amount = None
         self.discriminator = None
 
-        if discount_amount is not None:
-            self.discount_amount = discount_amount
         if discount_type is not None:
             self.discount_type = discount_type
-
-    @property
-    def discount_amount(self):
-        """Gets the discount_amount of this DiscountEntry.
-
-        |参数名称：折扣金额| |参数的约束及描述：折扣金额|
-
-        :return: The discount_amount of this DiscountEntry.
-        :rtype: float
-        """
-        return self._discount_amount
-
-    @discount_amount.setter
-    def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this DiscountEntry.
-
-        |参数名称：折扣金额| |参数的约束及描述：折扣金额|
-
-        :param discount_amount: The discount_amount of this DiscountEntry.
-        :type: float
-        """
-        self._discount_amount = discount_amount
+        if discount_amount is not None:
+            self.discount_amount = discount_amount
 
     @property
     def discount_type(self):
@@ -89,6 +67,28 @@ class DiscountEntry:
         :type: str
         """
         self._discount_type = discount_type
+
+    @property
+    def discount_amount(self):
+        """Gets the discount_amount of this DiscountEntry.
+
+        |参数名称：折扣金额| |参数的约束及描述：折扣金额|
+
+        :return: The discount_amount of this DiscountEntry.
+        :rtype: float
+        """
+        return self._discount_amount
+
+    @discount_amount.setter
+    def discount_amount(self, discount_amount):
+        """Sets the discount_amount of this DiscountEntry.
+
+        |参数名称：折扣金额| |参数的约束及描述：折扣金额|
+
+        :param discount_amount: The discount_amount of this DiscountEntry.
+        :type: float
+        """
+        self._discount_amount = discount_amount
 
     def to_dict(self):
         """Returns the model properties as a dict"""

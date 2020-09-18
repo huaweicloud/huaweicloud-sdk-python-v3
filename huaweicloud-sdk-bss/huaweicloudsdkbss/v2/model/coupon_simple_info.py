@@ -23,48 +23,26 @@ class CouponSimpleInfo:
     sensitive_list = []
 
     openapi_types = {
-        'coupon_id': 'str',
-        'id': 'str'
+        'id': 'str',
+        'coupon_id': 'str'
     }
 
     attribute_map = {
-        'coupon_id': 'coupon_id',
-        'id': 'id'
+        'id': 'id',
+        'coupon_id': 'coupon_id'
     }
 
-    def __init__(self, coupon_id=None, id=None):
+    def __init__(self, id=None, coupon_id=None):
         """CouponSimpleInfo - a model defined in huaweicloud sdk"""
         
         
 
-        self._coupon_id = None
         self._id = None
+        self._coupon_id = None
         self.discriminator = None
 
-        self.coupon_id = coupon_id
         self.id = id
-
-    @property
-    def coupon_id(self):
-        """Gets the coupon_id of this CouponSimpleInfo.
-
-        |参数名称：发放成功的券ID| |参数约束及描述：发放成功的券ID|
-
-        :return: The coupon_id of this CouponSimpleInfo.
-        :rtype: str
-        """
-        return self._coupon_id
-
-    @coupon_id.setter
-    def coupon_id(self, coupon_id):
-        """Sets the coupon_id of this CouponSimpleInfo.
-
-        |参数名称：发放成功的券ID| |参数约束及描述：发放成功的券ID|
-
-        :param coupon_id: The coupon_id of this CouponSimpleInfo.
-        :type: str
-        """
-        self._coupon_id = coupon_id
+        self.coupon_id = coupon_id
 
     @property
     def id(self):
@@ -87,6 +65,28 @@ class CouponSimpleInfo:
         :type: str
         """
         self._id = id
+
+    @property
+    def coupon_id(self):
+        """Gets the coupon_id of this CouponSimpleInfo.
+
+        |参数名称：发放成功的券ID| |参数约束及描述：发放成功的券ID|
+
+        :return: The coupon_id of this CouponSimpleInfo.
+        :rtype: str
+        """
+        return self._coupon_id
+
+    @coupon_id.setter
+    def coupon_id(self, coupon_id):
+        """Sets the coupon_id of this CouponSimpleInfo.
+
+        |参数名称：发放成功的券ID| |参数约束及描述：发放成功的券ID|
+
+        :param coupon_id: The coupon_id of this CouponSimpleInfo.
+        :type: str
+        """
+        self._coupon_id = coupon_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -23,129 +23,63 @@ class AdjustRecordV2:
     sensitive_list = []
 
     openapi_types = {
-        'amount': 'float',
-        'apply_scene': 'str',
-        'currency': 'str',
         'customer_id': 'str',
         'customer_name': 'str',
-        'measure_id': 'int',
-        'operation_time': 'str',
         'operation_type': 'str',
+        'amount': 'float',
+        'currency': 'str',
+        'apply_scene': 'str',
+        'operation_time': 'str',
+        'measure_id': 'int',
         'trans_id': 'str'
     }
 
     attribute_map = {
-        'amount': 'amount',
-        'apply_scene': 'apply_scene',
-        'currency': 'currency',
         'customer_id': 'customer_id',
         'customer_name': 'customer_name',
-        'measure_id': 'measure_id',
-        'operation_time': 'operation_time',
         'operation_type': 'operation_type',
+        'amount': 'amount',
+        'currency': 'currency',
+        'apply_scene': 'apply_scene',
+        'operation_time': 'operation_time',
+        'measure_id': 'measure_id',
         'trans_id': 'trans_id'
     }
 
-    def __init__(self, amount=None, apply_scene=None, currency=None, customer_id=None, customer_name=None, measure_id=None, operation_time=None, operation_type=None, trans_id=None):
+    def __init__(self, customer_id=None, customer_name=None, operation_type=None, amount=None, currency=None, apply_scene=None, operation_time=None, measure_id=None, trans_id=None):
         """AdjustRecordV2 - a model defined in huaweicloud sdk"""
         
         
 
-        self._amount = None
-        self._apply_scene = None
-        self._currency = None
         self._customer_id = None
         self._customer_name = None
-        self._measure_id = None
-        self._operation_time = None
         self._operation_type = None
+        self._amount = None
+        self._currency = None
+        self._apply_scene = None
+        self._operation_time = None
+        self._measure_id = None
         self._trans_id = None
         self.discriminator = None
 
-        if amount is not None:
-            self.amount = amount
-        if apply_scene is not None:
-            self.apply_scene = apply_scene
-        if currency is not None:
-            self.currency = currency
         if customer_id is not None:
             self.customer_id = customer_id
         if customer_name is not None:
             self.customer_name = customer_name
-        if measure_id is not None:
-            self.measure_id = measure_id
-        if operation_time is not None:
-            self.operation_time = operation_time
         if operation_type is not None:
             self.operation_type = operation_type
+        if amount is not None:
+            self.amount = amount
+        if currency is not None:
+            self.currency = currency
+        if apply_scene is not None:
+            self.apply_scene = apply_scene
+        if operation_time is not None:
+            self.operation_time = operation_time
+        if measure_id is not None:
+            self.measure_id = measure_id
         if trans_id is not None:
             self.trans_id = trans_id
-
-    @property
-    def amount(self):
-        """Gets the amount of this AdjustRecordV2.
-
-        |参数名称：调账/回收总额。| |参数的约束及描述：调账/回收总额。|
-
-        :return: The amount of this AdjustRecordV2.
-        :rtype: float
-        """
-        return self._amount
-
-    @amount.setter
-    def amount(self, amount):
-        """Sets the amount of this AdjustRecordV2.
-
-        |参数名称：调账/回收总额。| |参数的约束及描述：调账/回收总额。|
-
-        :param amount: The amount of this AdjustRecordV2.
-        :type: float
-        """
-        self._amount = amount
-
-    @property
-    def apply_scene(self):
-        """Gets the apply_scene of this AdjustRecordV2.
-
-        |参数名称：使用场景。| |参数约束及描述：使用场景。|
-
-        :return: The apply_scene of this AdjustRecordV2.
-        :rtype: str
-        """
-        return self._apply_scene
-
-    @apply_scene.setter
-    def apply_scene(self, apply_scene):
-        """Sets the apply_scene of this AdjustRecordV2.
-
-        |参数名称：使用场景。| |参数约束及描述：使用场景。|
-
-        :param apply_scene: The apply_scene of this AdjustRecordV2.
-        :type: str
-        """
-        self._apply_scene = apply_scene
-
-    @property
-    def currency(self):
-        """Gets the currency of this AdjustRecordV2.
-
-        |参数名称：币种。当前固定为CNY。| |参数约束及描述：币种。当前固定为CNY。|
-
-        :return: The currency of this AdjustRecordV2.
-        :rtype: str
-        """
-        return self._currency
-
-    @currency.setter
-    def currency(self, currency):
-        """Sets the currency of this AdjustRecordV2.
-
-        |参数名称：币种。当前固定为CNY。| |参数约束及描述：币种。当前固定为CNY。|
-
-        :param currency: The currency of this AdjustRecordV2.
-        :type: str
-        """
-        self._currency = currency
 
     @property
     def customer_id(self):
@@ -192,26 +126,92 @@ class AdjustRecordV2:
         self._customer_name = customer_name
 
     @property
-    def measure_id(self):
-        """Gets the measure_id of this AdjustRecordV2.
+    def operation_type(self):
+        """Gets the operation_type of this AdjustRecordV2.
 
-        |参数名称：度量单位。1：元| |参数的约束及描述：度量单位。1：元|
+        |参数名称：调账类型。0：授信1：回收2：解绑回收| |参数约束及描述：调账类型。0：授信1：回收2：解绑回收|
 
-        :return: The measure_id of this AdjustRecordV2.
-        :rtype: int
+        :return: The operation_type of this AdjustRecordV2.
+        :rtype: str
         """
-        return self._measure_id
+        return self._operation_type
 
-    @measure_id.setter
-    def measure_id(self, measure_id):
-        """Sets the measure_id of this AdjustRecordV2.
+    @operation_type.setter
+    def operation_type(self, operation_type):
+        """Sets the operation_type of this AdjustRecordV2.
 
-        |参数名称：度量单位。1：元| |参数的约束及描述：度量单位。1：元|
+        |参数名称：调账类型。0：授信1：回收2：解绑回收| |参数约束及描述：调账类型。0：授信1：回收2：解绑回收|
 
-        :param measure_id: The measure_id of this AdjustRecordV2.
-        :type: int
+        :param operation_type: The operation_type of this AdjustRecordV2.
+        :type: str
         """
-        self._measure_id = measure_id
+        self._operation_type = operation_type
+
+    @property
+    def amount(self):
+        """Gets the amount of this AdjustRecordV2.
+
+        |参数名称：调账/回收总额。| |参数的约束及描述：调账/回收总额。|
+
+        :return: The amount of this AdjustRecordV2.
+        :rtype: float
+        """
+        return self._amount
+
+    @amount.setter
+    def amount(self, amount):
+        """Sets the amount of this AdjustRecordV2.
+
+        |参数名称：调账/回收总额。| |参数的约束及描述：调账/回收总额。|
+
+        :param amount: The amount of this AdjustRecordV2.
+        :type: float
+        """
+        self._amount = amount
+
+    @property
+    def currency(self):
+        """Gets the currency of this AdjustRecordV2.
+
+        |参数名称：币种。当前固定为CNY。| |参数约束及描述：币种。当前固定为CNY。|
+
+        :return: The currency of this AdjustRecordV2.
+        :rtype: str
+        """
+        return self._currency
+
+    @currency.setter
+    def currency(self, currency):
+        """Sets the currency of this AdjustRecordV2.
+
+        |参数名称：币种。当前固定为CNY。| |参数约束及描述：币种。当前固定为CNY。|
+
+        :param currency: The currency of this AdjustRecordV2.
+        :type: str
+        """
+        self._currency = currency
+
+    @property
+    def apply_scene(self):
+        """Gets the apply_scene of this AdjustRecordV2.
+
+        |参数名称：使用场景。| |参数约束及描述：使用场景。|
+
+        :return: The apply_scene of this AdjustRecordV2.
+        :rtype: str
+        """
+        return self._apply_scene
+
+    @apply_scene.setter
+    def apply_scene(self, apply_scene):
+        """Sets the apply_scene of this AdjustRecordV2.
+
+        |参数名称：使用场景。| |参数约束及描述：使用场景。|
+
+        :param apply_scene: The apply_scene of this AdjustRecordV2.
+        :type: str
+        """
+        self._apply_scene = apply_scene
 
     @property
     def operation_time(self):
@@ -236,26 +236,26 @@ class AdjustRecordV2:
         self._operation_time = operation_time
 
     @property
-    def operation_type(self):
-        """Gets the operation_type of this AdjustRecordV2.
+    def measure_id(self):
+        """Gets the measure_id of this AdjustRecordV2.
 
-        |参数名称：调账类型。0：授信1：回收2：解绑回收| |参数约束及描述：调账类型。0：授信1：回收2：解绑回收|
+        |参数名称：度量单位。1：元| |参数的约束及描述：度量单位。1：元|
 
-        :return: The operation_type of this AdjustRecordV2.
-        :rtype: str
+        :return: The measure_id of this AdjustRecordV2.
+        :rtype: int
         """
-        return self._operation_type
+        return self._measure_id
 
-    @operation_type.setter
-    def operation_type(self, operation_type):
-        """Sets the operation_type of this AdjustRecordV2.
+    @measure_id.setter
+    def measure_id(self, measure_id):
+        """Sets the measure_id of this AdjustRecordV2.
 
-        |参数名称：调账类型。0：授信1：回收2：解绑回收| |参数约束及描述：调账类型。0：授信1：回收2：解绑回收|
+        |参数名称：度量单位。1：元| |参数的约束及描述：度量单位。1：元|
 
-        :param operation_type: The operation_type of this AdjustRecordV2.
-        :type: str
+        :param measure_id: The measure_id of this AdjustRecordV2.
+        :type: int
         """
-        self._operation_type = operation_type
+        self._measure_id = measure_id
 
     @property
     def trans_id(self):

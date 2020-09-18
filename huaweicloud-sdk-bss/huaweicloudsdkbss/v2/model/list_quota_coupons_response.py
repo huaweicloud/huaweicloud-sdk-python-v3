@@ -23,50 +23,28 @@ class ListQuotaCouponsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'quotas': 'list[CouponQuotaV2]',
-        'total_count': 'int'
+        'total_count': 'int',
+        'quotas': 'list[CouponQuotaV2]'
     }
 
     attribute_map = {
-        'quotas': 'quotas',
-        'total_count': 'total_count'
+        'total_count': 'total_count',
+        'quotas': 'quotas'
     }
 
-    def __init__(self, quotas=None, total_count=None):
+    def __init__(self, total_count=None, quotas=None):
         """ListQuotaCouponsResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._quotas = None
         self._total_count = None
+        self._quotas = None
         self.discriminator = None
 
-        if quotas is not None:
-            self.quotas = quotas
         if total_count is not None:
             self.total_count = total_count
-
-    @property
-    def quotas(self):
-        """Gets the quotas of this ListQuotaCouponsResponse.
-
-        |参数名称：额度记录列表。具体请参见表2 IssuedCouponQuota。| |参数约束以及描述：额度记录列表。具体请参见表2 IssuedCouponQuota。|
-
-        :return: The quotas of this ListQuotaCouponsResponse.
-        :rtype: list[CouponQuotaV2]
-        """
-        return self._quotas
-
-    @quotas.setter
-    def quotas(self, quotas):
-        """Sets the quotas of this ListQuotaCouponsResponse.
-
-        |参数名称：额度记录列表。具体请参见表2 IssuedCouponQuota。| |参数约束以及描述：额度记录列表。具体请参见表2 IssuedCouponQuota。|
-
-        :param quotas: The quotas of this ListQuotaCouponsResponse.
-        :type: list[CouponQuotaV2]
-        """
-        self._quotas = quotas
+        if quotas is not None:
+            self.quotas = quotas
 
     @property
     def total_count(self):
@@ -89,6 +67,28 @@ class ListQuotaCouponsResponse(SdkResponse):
         :type: int
         """
         self._total_count = total_count
+
+    @property
+    def quotas(self):
+        """Gets the quotas of this ListQuotaCouponsResponse.
+
+        |参数名称：额度记录列表。具体请参见表2 IssuedCouponQuota。| |参数约束以及描述：额度记录列表。具体请参见表2 IssuedCouponQuota。|
+
+        :return: The quotas of this ListQuotaCouponsResponse.
+        :rtype: list[CouponQuotaV2]
+        """
+        return self._quotas
+
+    @quotas.setter
+    def quotas(self, quotas):
+        """Sets the quotas of this ListQuotaCouponsResponse.
+
+        |参数名称：额度记录列表。具体请参见表2 IssuedCouponQuota。| |参数约束以及描述：额度记录列表。具体请参见表2 IssuedCouponQuota。|
+
+        :param quotas: The quotas of this ListQuotaCouponsResponse.
+        :type: list[CouponQuotaV2]
+        """
+        self._quotas = quotas
 
     def to_dict(self):
         """Returns the model properties as a dict"""

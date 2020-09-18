@@ -23,56 +23,34 @@ class BankCardInfoV2:
     sensitive_list = []
 
     openapi_types = {
-        'areacode': 'str',
         'bank_account': 'str',
+        'areacode': 'str',
         'mobile': 'str',
         'verification_code': 'str'
     }
 
     attribute_map = {
-        'areacode': 'areacode',
         'bank_account': 'bank_account',
+        'areacode': 'areacode',
         'mobile': 'mobile',
         'verification_code': 'verification_code'
     }
 
-    def __init__(self, areacode=None, bank_account=None, mobile=None, verification_code=None):
+    def __init__(self, bank_account=None, areacode=None, mobile=None, verification_code=None):
         """BankCardInfoV2 - a model defined in huaweicloud sdk"""
         
         
 
-        self._areacode = None
         self._bank_account = None
+        self._areacode = None
         self._mobile = None
         self._verification_code = None
         self.discriminator = None
 
-        self.areacode = areacode
         self.bank_account = bank_account
+        self.areacode = areacode
         self.mobile = mobile
         self.verification_code = verification_code
-
-    @property
-    def areacode(self):
-        """Gets the areacode of this BankCardInfoV2.
-
-        |参数名称：国家/区号码。例如：0086：中国大陆区号码。| |参数约束及描述：国家/区号码。例如：0086：中国大陆区号码。|
-
-        :return: The areacode of this BankCardInfoV2.
-        :rtype: str
-        """
-        return self._areacode
-
-    @areacode.setter
-    def areacode(self, areacode):
-        """Sets the areacode of this BankCardInfoV2.
-
-        |参数名称：国家/区号码。例如：0086：中国大陆区号码。| |参数约束及描述：国家/区号码。例如：0086：中国大陆区号码。|
-
-        :param areacode: The areacode of this BankCardInfoV2.
-        :type: str
-        """
-        self._areacode = areacode
 
     @property
     def bank_account(self):
@@ -95,6 +73,28 @@ class BankCardInfoV2:
         :type: str
         """
         self._bank_account = bank_account
+
+    @property
+    def areacode(self):
+        """Gets the areacode of this BankCardInfoV2.
+
+        |参数名称：国家/区号码。例如：0086：中国大陆区号码。| |参数约束及描述：国家/区号码。例如：0086：中国大陆区号码。|
+
+        :return: The areacode of this BankCardInfoV2.
+        :rtype: str
+        """
+        return self._areacode
+
+    @areacode.setter
+    def areacode(self, areacode):
+        """Sets the areacode of this BankCardInfoV2.
+
+        |参数名称：国家/区号码。例如：0086：中国大陆区号码。| |参数约束及描述：国家/区号码。例如：0086：中国大陆区号码。|
+
+        :param areacode: The areacode of this BankCardInfoV2.
+        :type: str
+        """
+        self._areacode = areacode
 
     @property
     def mobile(self):

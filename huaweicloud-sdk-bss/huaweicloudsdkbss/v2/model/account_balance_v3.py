@@ -26,9 +26,9 @@ class AccountBalanceV3:
         'account_id': 'str',
         'account_type': 'int',
         'amount': 'float',
-        'credit_amount': 'float',
         'currency': 'str',
         'designated_amount': 'float',
+        'credit_amount': 'float',
         'measure_id': 'int'
     }
 
@@ -36,13 +36,13 @@ class AccountBalanceV3:
         'account_id': 'account_id',
         'account_type': 'account_type',
         'amount': 'amount',
-        'credit_amount': 'credit_amount',
         'currency': 'currency',
         'designated_amount': 'designated_amount',
+        'credit_amount': 'credit_amount',
         'measure_id': 'measure_id'
     }
 
-    def __init__(self, account_id=None, account_type=None, amount=None, credit_amount=None, currency='CNY', designated_amount=None, measure_id=None):
+    def __init__(self, account_id=None, account_type=None, amount=None, currency='CNY', designated_amount=None, credit_amount=None, measure_id=None):
         """AccountBalanceV3 - a model defined in huaweicloud sdk"""
         
         
@@ -50,20 +50,20 @@ class AccountBalanceV3:
         self._account_id = None
         self._account_type = None
         self._amount = None
-        self._credit_amount = None
         self._currency = None
         self._designated_amount = None
+        self._credit_amount = None
         self._measure_id = None
         self.discriminator = None
 
         self.account_id = account_id
         self.account_type = account_type
         self.amount = amount
-        if credit_amount is not None:
-            self.credit_amount = credit_amount
         self.currency = currency
         if designated_amount is not None:
             self.designated_amount = designated_amount
+        if credit_amount is not None:
+            self.credit_amount = credit_amount
         self.measure_id = measure_id
 
     @property
@@ -133,28 +133,6 @@ class AccountBalanceV3:
         self._amount = amount
 
     @property
-    def credit_amount(self):
-        """Gets the credit_amount of this AccountBalanceV3.
-
-        |参数名称：总信用额度。只有账户类型是2:信用的时候才有该字段| |参数的约束及描述：总信用额度。只有账户类型是2:信用的时候才有该字段|
-
-        :return: The credit_amount of this AccountBalanceV3.
-        :rtype: float
-        """
-        return self._credit_amount
-
-    @credit_amount.setter
-    def credit_amount(self, credit_amount):
-        """Sets the credit_amount of this AccountBalanceV3.
-
-        |参数名称：总信用额度。只有账户类型是2:信用的时候才有该字段| |参数的约束及描述：总信用额度。只有账户类型是2:信用的时候才有该字段|
-
-        :param credit_amount: The credit_amount of this AccountBalanceV3.
-        :type: float
-        """
-        self._credit_amount = credit_amount
-
-    @property
     def currency(self):
         """Gets the currency of this AccountBalanceV3.
 
@@ -197,6 +175,28 @@ class AccountBalanceV3:
         :type: float
         """
         self._designated_amount = designated_amount
+
+    @property
+    def credit_amount(self):
+        """Gets the credit_amount of this AccountBalanceV3.
+
+        |参数名称：总信用额度。只有账户类型是2:信用的时候才有该字段| |参数的约束及描述：总信用额度。只有账户类型是2:信用的时候才有该字段|
+
+        :return: The credit_amount of this AccountBalanceV3.
+        :rtype: float
+        """
+        return self._credit_amount
+
+    @credit_amount.setter
+    def credit_amount(self, credit_amount):
+        """Sets the credit_amount of this AccountBalanceV3.
+
+        |参数名称：总信用额度。只有账户类型是2:信用的时候才有该字段| |参数的约束及描述：总信用额度。只有账户类型是2:信用的时候才有该字段|
+
+        :param credit_amount: The credit_amount of this AccountBalanceV3.
+        :type: float
+        """
+        self._credit_amount = credit_amount
 
     @property
     def measure_id(self):

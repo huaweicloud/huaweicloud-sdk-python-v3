@@ -23,23 +23,48 @@ class ListCustomerOnDemandResourcesRequest:
     sensitive_list = []
 
     openapi_types = {
+        'x_language': 'str',
         'body': 'QueryCustomerOnDemandResourcesReq'
     }
 
     attribute_map = {
+        'x_language': 'X-Language',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, x_language='zh_CN', body=None):
         """ListCustomerOnDemandResourcesRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._x_language = None
         self._body = None
         self.discriminator = None
 
+        if x_language is not None:
+            self.x_language = x_language
         if body is not None:
             self.body = body
+
+    @property
+    def x_language(self):
+        """Gets the x_language of this ListCustomerOnDemandResourcesRequest.
+
+
+        :return: The x_language of this ListCustomerOnDemandResourcesRequest.
+        :rtype: str
+        """
+        return self._x_language
+
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this ListCustomerOnDemandResourcesRequest.
+
+
+        :param x_language: The x_language of this ListCustomerOnDemandResourcesRequest.
+        :type: str
+        """
+        self._x_language = x_language
 
     @property
     def body(self):

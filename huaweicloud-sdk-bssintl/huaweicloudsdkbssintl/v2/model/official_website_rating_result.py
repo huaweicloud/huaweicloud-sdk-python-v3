@@ -23,55 +23,33 @@ class OfficialWebsiteRatingResult:
     sensitive_list = []
 
     openapi_types = {
-        'measure_id': 'int',
         'official_website_amount': 'float',
+        'measure_id': 'int',
         'product_rating_results': 'list[PeriodProductOfficialRatingResult]'
     }
 
     attribute_map = {
-        'measure_id': 'measure_id',
         'official_website_amount': 'official_website_amount',
+        'measure_id': 'measure_id',
         'product_rating_results': 'product_rating_results'
     }
 
-    def __init__(self, measure_id=None, official_website_amount=None, product_rating_results=None):
+    def __init__(self, official_website_amount=None, measure_id=None, product_rating_results=None):
         """OfficialWebsiteRatingResult - a model defined in huaweicloud sdk"""
         
         
 
-        self._measure_id = None
         self._official_website_amount = None
+        self._measure_id = None
         self._product_rating_results = None
         self.discriminator = None
 
-        if measure_id is not None:
-            self.measure_id = measure_id
         if official_website_amount is not None:
             self.official_website_amount = official_website_amount
+        if measure_id is not None:
+            self.measure_id = measure_id
         if product_rating_results is not None:
             self.product_rating_results = product_rating_results
-
-    @property
-    def measure_id(self):
-        """Gets the measure_id of this OfficialWebsiteRatingResult.
-
-        |参数名称：度量单位标识1：元|
-
-        :return: The measure_id of this OfficialWebsiteRatingResult.
-        :rtype: int
-        """
-        return self._measure_id
-
-    @measure_id.setter
-    def measure_id(self, measure_id):
-        """Sets the measure_id of this OfficialWebsiteRatingResult.
-
-        |参数名称：度量单位标识1：元|
-
-        :param measure_id: The measure_id of this OfficialWebsiteRatingResult.
-        :type: int
-        """
-        self._measure_id = measure_id
 
     @property
     def official_website_amount(self):
@@ -94,6 +72,28 @@ class OfficialWebsiteRatingResult:
         :type: float
         """
         self._official_website_amount = official_website_amount
+
+    @property
+    def measure_id(self):
+        """Gets the measure_id of this OfficialWebsiteRatingResult.
+
+        |参数名称：度量单位标识1：元|
+
+        :return: The measure_id of this OfficialWebsiteRatingResult.
+        :rtype: int
+        """
+        return self._measure_id
+
+    @measure_id.setter
+    def measure_id(self, measure_id):
+        """Sets the measure_id of this OfficialWebsiteRatingResult.
+
+        |参数名称：度量单位标识1：元|
+
+        :param measure_id: The measure_id of this OfficialWebsiteRatingResult.
+        :type: int
+        """
+        self._measure_id = measure_id
 
     @property
     def product_rating_results(self):

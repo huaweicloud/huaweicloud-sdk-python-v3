@@ -23,50 +23,28 @@ class ShowRealnameAuthenticationReviewResultResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'opinion': 'str',
-        'review_result': 'int'
+        'review_result': 'int',
+        'opinion': 'str'
     }
 
     attribute_map = {
-        'opinion': 'opinion',
-        'review_result': 'review_result'
+        'review_result': 'review_result',
+        'opinion': 'opinion'
     }
 
-    def __init__(self, opinion=None, review_result=None):
+    def __init__(self, review_result=None, opinion=None):
         """ShowRealnameAuthenticationReviewResultResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._opinion = None
         self._review_result = None
+        self._opinion = None
         self.discriminator = None
 
-        if opinion is not None:
-            self.opinion = opinion
         if review_result is not None:
             self.review_result = review_result
-
-    @property
-    def opinion(self):
-        """Gets the opinion of this ShowRealnameAuthenticationReviewResultResponse.
-
-        |参数名称：审批意见，只有状态码为200并且审核不通过才返回。| |参数约束及描述：审批意见，只有状态码为200并且审核不通过才返回。|
-
-        :return: The opinion of this ShowRealnameAuthenticationReviewResultResponse.
-        :rtype: str
-        """
-        return self._opinion
-
-    @opinion.setter
-    def opinion(self, opinion):
-        """Sets the opinion of this ShowRealnameAuthenticationReviewResultResponse.
-
-        |参数名称：审批意见，只有状态码为200并且审核不通过才返回。| |参数约束及描述：审批意见，只有状态码为200并且审核不通过才返回。|
-
-        :param opinion: The opinion of this ShowRealnameAuthenticationReviewResultResponse.
-        :type: str
-        """
-        self._opinion = opinion
+        if opinion is not None:
+            self.opinion = opinion
 
     @property
     def review_result(self):
@@ -89,6 +67,28 @@ class ShowRealnameAuthenticationReviewResultResponse(SdkResponse):
         :type: int
         """
         self._review_result = review_result
+
+    @property
+    def opinion(self):
+        """Gets the opinion of this ShowRealnameAuthenticationReviewResultResponse.
+
+        |参数名称：审批意见，只有状态码为200并且审核不通过才返回。| |参数约束及描述：审批意见，只有状态码为200并且审核不通过才返回。|
+
+        :return: The opinion of this ShowRealnameAuthenticationReviewResultResponse.
+        :rtype: str
+        """
+        return self._opinion
+
+    @opinion.setter
+    def opinion(self, opinion):
+        """Sets the opinion of this ShowRealnameAuthenticationReviewResultResponse.
+
+        |参数名称：审批意见，只有状态码为200并且审核不通过才返回。| |参数约束及描述：审批意见，只有状态码为200并且审核不通过才返回。|
+
+        :param opinion: The opinion of this ShowRealnameAuthenticationReviewResultResponse.
+        :type: str
+        """
+        self._opinion = opinion
 
     def to_dict(self):
         """Returns the model properties as a dict"""

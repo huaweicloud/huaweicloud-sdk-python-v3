@@ -23,114 +23,48 @@ class IndirectPartnerInfo:
     sensitive_list = []
 
     openapi_types = {
-        'account_name': 'str',
-        'associated_on': 'str',
-        'email': 'str',
         'indirect_partner_id': 'str',
         'mobile_phone': 'str',
-        'name': 'str'
+        'email': 'str',
+        'account_name': 'str',
+        'name': 'str',
+        'associated_on': 'str'
     }
 
     attribute_map = {
-        'account_name': 'account_name',
-        'associated_on': 'associated_on',
-        'email': 'email',
         'indirect_partner_id': 'indirect_partner_id',
         'mobile_phone': 'mobile_phone',
-        'name': 'name'
+        'email': 'email',
+        'account_name': 'account_name',
+        'name': 'name',
+        'associated_on': 'associated_on'
     }
 
-    def __init__(self, account_name=None, associated_on=None, email=None, indirect_partner_id=None, mobile_phone=None, name=None):
+    def __init__(self, indirect_partner_id=None, mobile_phone=None, email=None, account_name=None, name=None, associated_on=None):
         """IndirectPartnerInfo - a model defined in huaweicloud sdk"""
         
         
 
-        self._account_name = None
-        self._associated_on = None
-        self._email = None
         self._indirect_partner_id = None
         self._mobile_phone = None
+        self._email = None
+        self._account_name = None
         self._name = None
+        self._associated_on = None
         self.discriminator = None
 
-        if account_name is not None:
-            self.account_name = account_name
-        if associated_on is not None:
-            self.associated_on = associated_on
-        if email is not None:
-            self.email = email
         if indirect_partner_id is not None:
             self.indirect_partner_id = indirect_partner_id
         if mobile_phone is not None:
             self.mobile_phone = mobile_phone
+        if email is not None:
+            self.email = email
+        if account_name is not None:
+            self.account_name = account_name
         if name is not None:
             self.name = name
-
-    @property
-    def account_name(self):
-        """Gets the account_name of this IndirectPartnerInfo.
-
-        |参数名称：二级经销商的账户名| |参数约束及描述：二级经销商的账户名|
-
-        :return: The account_name of this IndirectPartnerInfo.
-        :rtype: str
-        """
-        return self._account_name
-
-    @account_name.setter
-    def account_name(self, account_name):
-        """Sets the account_name of this IndirectPartnerInfo.
-
-        |参数名称：二级经销商的账户名| |参数约束及描述：二级经销商的账户名|
-
-        :param account_name: The account_name of this IndirectPartnerInfo.
-        :type: str
-        """
-        self._account_name = account_name
-
-    @property
-    def associated_on(self):
-        """Gets the associated_on of this IndirectPartnerInfo.
-
-        |参数名称：关联时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z| |参数约束及描述：关联时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z|
-
-        :return: The associated_on of this IndirectPartnerInfo.
-        :rtype: str
-        """
-        return self._associated_on
-
-    @associated_on.setter
-    def associated_on(self, associated_on):
-        """Sets the associated_on of this IndirectPartnerInfo.
-
-        |参数名称：关联时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z| |参数约束及描述：关联时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z|
-
-        :param associated_on: The associated_on of this IndirectPartnerInfo.
-        :type: str
-        """
-        self._associated_on = associated_on
-
-    @property
-    def email(self):
-        """Gets the email of this IndirectPartnerInfo.
-
-        |参数名称：邮箱| |参数约束及描述：邮箱|
-
-        :return: The email of this IndirectPartnerInfo.
-        :rtype: str
-        """
-        return self._email
-
-    @email.setter
-    def email(self, email):
-        """Sets the email of this IndirectPartnerInfo.
-
-        |参数名称：邮箱| |参数约束及描述：邮箱|
-
-        :param email: The email of this IndirectPartnerInfo.
-        :type: str
-        """
-        self._email = email
+        if associated_on is not None:
+            self.associated_on = associated_on
 
     @property
     def indirect_partner_id(self):
@@ -177,6 +111,50 @@ class IndirectPartnerInfo:
         self._mobile_phone = mobile_phone
 
     @property
+    def email(self):
+        """Gets the email of this IndirectPartnerInfo.
+
+        |参数名称：邮箱| |参数约束及描述：邮箱|
+
+        :return: The email of this IndirectPartnerInfo.
+        :rtype: str
+        """
+        return self._email
+
+    @email.setter
+    def email(self, email):
+        """Sets the email of this IndirectPartnerInfo.
+
+        |参数名称：邮箱| |参数约束及描述：邮箱|
+
+        :param email: The email of this IndirectPartnerInfo.
+        :type: str
+        """
+        self._email = email
+
+    @property
+    def account_name(self):
+        """Gets the account_name of this IndirectPartnerInfo.
+
+        |参数名称：二级经销商的账户名| |参数约束及描述：二级经销商的账户名|
+
+        :return: The account_name of this IndirectPartnerInfo.
+        :rtype: str
+        """
+        return self._account_name
+
+    @account_name.setter
+    def account_name(self, account_name):
+        """Sets the account_name of this IndirectPartnerInfo.
+
+        |参数名称：二级经销商的账户名| |参数约束及描述：二级经销商的账户名|
+
+        :param account_name: The account_name of this IndirectPartnerInfo.
+        :type: str
+        """
+        self._account_name = account_name
+
+    @property
     def name(self):
         """Gets the name of this IndirectPartnerInfo.
 
@@ -197,6 +175,28 @@ class IndirectPartnerInfo:
         :type: str
         """
         self._name = name
+
+    @property
+    def associated_on(self):
+        """Gets the associated_on of this IndirectPartnerInfo.
+
+        |参数名称：关联时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z| |参数约束及描述：关联时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z|
+
+        :return: The associated_on of this IndirectPartnerInfo.
+        :rtype: str
+        """
+        return self._associated_on
+
+    @associated_on.setter
+    def associated_on(self, associated_on):
+        """Sets the associated_on of this IndirectPartnerInfo.
+
+        |参数名称：关联时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z| |参数约束及描述：关联时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z|
+
+        :param associated_on: The associated_on of this IndirectPartnerInfo.
+        :type: str
+        """
+        self._associated_on = associated_on
 
     def to_dict(self):
         """Returns the model properties as a dict"""

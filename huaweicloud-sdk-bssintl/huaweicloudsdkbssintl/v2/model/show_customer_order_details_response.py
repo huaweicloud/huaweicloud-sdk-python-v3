@@ -23,33 +23,55 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'total_count': 'int',
         'order_info': 'CustomerOrderV2',
-        'order_line_items': 'list[OrderLineItemEntityV2]',
-        'total_count': 'int'
+        'order_line_items': 'list[OrderLineItemEntityV2]'
     }
 
     attribute_map = {
+        'total_count': 'total_count',
         'order_info': 'order_info',
-        'order_line_items': 'order_line_items',
-        'total_count': 'total_count'
+        'order_line_items': 'order_line_items'
     }
 
-    def __init__(self, order_info=None, order_line_items=None, total_count=None):
+    def __init__(self, total_count=None, order_info=None, order_line_items=None):
         """ShowCustomerOrderDetailsResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
+        self._total_count = None
         self._order_info = None
         self._order_line_items = None
-        self._total_count = None
         self.discriminator = None
 
+        if total_count is not None:
+            self.total_count = total_count
         if order_info is not None:
             self.order_info = order_info
         if order_line_items is not None:
             self.order_line_items = order_line_items
-        if total_count is not None:
-            self.total_count = total_count
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ShowCustomerOrderDetailsResponse.
+
+        |参数名称：符合条件的记录总数。| |参数的约束及描述：符合条件的记录总数。|
+
+        :return: The total_count of this ShowCustomerOrderDetailsResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ShowCustomerOrderDetailsResponse.
+
+        |参数名称：符合条件的记录总数。| |参数的约束及描述：符合条件的记录总数。|
+
+        :param total_count: The total_count of this ShowCustomerOrderDetailsResponse.
+        :type: int
+        """
+        self._total_count = total_count
 
     @property
     def order_info(self):
@@ -92,28 +114,6 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
         :type: list[OrderLineItemEntityV2]
         """
         self._order_line_items = order_line_items
-
-    @property
-    def total_count(self):
-        """Gets the total_count of this ShowCustomerOrderDetailsResponse.
-
-        |参数名称：符合条件的记录总数。| |参数的约束及描述：符合条件的记录总数。|
-
-        :return: The total_count of this ShowCustomerOrderDetailsResponse.
-        :rtype: int
-        """
-        return self._total_count
-
-    @total_count.setter
-    def total_count(self, total_count):
-        """Sets the total_count of this ShowCustomerOrderDetailsResponse.
-
-        |参数名称：符合条件的记录总数。| |参数的约束及描述：符合条件的记录总数。|
-
-        :param total_count: The total_count of this ShowCustomerOrderDetailsResponse.
-        :type: int
-        """
-        self._total_count = total_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

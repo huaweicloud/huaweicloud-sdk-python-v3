@@ -23,109 +23,65 @@ class PeriodProductInfo:
     sensitive_list = []
 
     openapi_types = {
-        'available_zone': 'str',
-        'cloud_service_type': 'str',
         'id': 'str',
-        'period_num': 'int',
-        'period_type': 'int',
-        'region': 'str',
-        'resource_size': 'int',
-        'resource_spec': 'str',
+        'cloud_service_type': 'str',
         'resource_type': 'str',
+        'resource_spec': 'str',
+        'region': 'str',
+        'available_zone': 'str',
+        'resource_size': 'int',
         'size_measure_id': 'int',
+        'period_type': 'int',
+        'period_num': 'int',
         'subscription_num': 'int'
     }
 
     attribute_map = {
-        'available_zone': 'available_zone',
-        'cloud_service_type': 'cloud_service_type',
         'id': 'id',
-        'period_num': 'period_num',
-        'period_type': 'period_type',
-        'region': 'region',
-        'resource_size': 'resource_size',
-        'resource_spec': 'resource_spec',
+        'cloud_service_type': 'cloud_service_type',
         'resource_type': 'resource_type',
+        'resource_spec': 'resource_spec',
+        'region': 'region',
+        'available_zone': 'available_zone',
+        'resource_size': 'resource_size',
         'size_measure_id': 'size_measure_id',
+        'period_type': 'period_type',
+        'period_num': 'period_num',
         'subscription_num': 'subscription_num'
     }
 
-    def __init__(self, available_zone=None, cloud_service_type=None, id=None, period_num=None, period_type=None, region=None, resource_size=None, resource_spec=None, resource_type=None, size_measure_id=None, subscription_num=None):
+    def __init__(self, id=None, cloud_service_type=None, resource_type=None, resource_spec=None, region=None, available_zone=None, resource_size=None, size_measure_id=None, period_type=None, period_num=None, subscription_num=None):
         """PeriodProductInfo - a model defined in huaweicloud sdk"""
         
         
 
-        self._available_zone = None
-        self._cloud_service_type = None
         self._id = None
-        self._period_num = None
-        self._period_type = None
-        self._region = None
-        self._resource_size = None
-        self._resource_spec = None
+        self._cloud_service_type = None
         self._resource_type = None
+        self._resource_spec = None
+        self._region = None
+        self._available_zone = None
+        self._resource_size = None
         self._size_measure_id = None
+        self._period_type = None
+        self._period_num = None
         self._subscription_num = None
         self.discriminator = None
 
+        self.id = id
+        self.cloud_service_type = cloud_service_type
+        self.resource_type = resource_type
+        self.resource_spec = resource_spec
+        self.region = region
         if available_zone is not None:
             self.available_zone = available_zone
-        self.cloud_service_type = cloud_service_type
-        self.id = id
-        self.period_num = period_num
-        self.period_type = period_type
-        self.region = region
         if resource_size is not None:
             self.resource_size = resource_size
-        self.resource_spec = resource_spec
-        self.resource_type = resource_type
         if size_measure_id is not None:
             self.size_measure_id = size_measure_id
+        self.period_type = period_type
+        self.period_num = period_num
         self.subscription_num = subscription_num
-
-    @property
-    def available_zone(self):
-        """Gets the available_zone of this PeriodProductInfo.
-
-        |参数名称：可用区标识| |参数约束及描述：可用区标识|
-
-        :return: The available_zone of this PeriodProductInfo.
-        :rtype: str
-        """
-        return self._available_zone
-
-    @available_zone.setter
-    def available_zone(self, available_zone):
-        """Sets the available_zone of this PeriodProductInfo.
-
-        |参数名称：可用区标识| |参数约束及描述：可用区标识|
-
-        :param available_zone: The available_zone of this PeriodProductInfo.
-        :type: str
-        """
-        self._available_zone = available_zone
-
-    @property
-    def cloud_service_type(self):
-        """Gets the cloud_service_type of this PeriodProductInfo.
-
-        |参数名称：用户购买云服务产品的云服务类型| |参数约束及描述：例如EC2，云服务类型为hws.service.type.ec2|
-
-        :return: The cloud_service_type of this PeriodProductInfo.
-        :rtype: str
-        """
-        return self._cloud_service_type
-
-    @cloud_service_type.setter
-    def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this PeriodProductInfo.
-
-        |参数名称：用户购买云服务产品的云服务类型| |参数约束及描述：例如EC2，云服务类型为hws.service.type.ec2|
-
-        :param cloud_service_type: The cloud_service_type of this PeriodProductInfo.
-        :type: str
-        """
-        self._cloud_service_type = cloud_service_type
 
     @property
     def id(self):
@@ -150,114 +106,26 @@ class PeriodProductInfo:
         self._id = id
 
     @property
-    def period_num(self):
-        """Gets the period_num of this PeriodProductInfo.
+    def cloud_service_type(self):
+        """Gets the cloud_service_type of this PeriodProductInfo.
 
-        |参数名称：订购周期数| |参数约束及描述：订购周期数|
+        |参数名称：用户购买云服务产品的云服务类型| |参数约束及描述：例如EC2，云服务类型为hws.service.type.ec2|
 
-        :return: The period_num of this PeriodProductInfo.
-        :rtype: int
-        """
-        return self._period_num
-
-    @period_num.setter
-    def period_num(self, period_num):
-        """Sets the period_num of this PeriodProductInfo.
-
-        |参数名称：订购周期数| |参数约束及描述：订购周期数|
-
-        :param period_num: The period_num of this PeriodProductInfo.
-        :type: int
-        """
-        self._period_num = period_num
-
-    @property
-    def period_type(self):
-        """Gets the period_type of this PeriodProductInfo.
-
-        |参数名称：订购周期类型| |参数约束及描述：0：天；1：周；2：月；3：年；4：小时；|
-
-        :return: The period_type of this PeriodProductInfo.
-        :rtype: int
-        """
-        return self._period_type
-
-    @period_type.setter
-    def period_type(self, period_type):
-        """Sets the period_type of this PeriodProductInfo.
-
-        |参数名称：订购周期类型| |参数约束及描述：0：天；1：周；2：月；3：年；4：小时；|
-
-        :param period_type: The period_type of this PeriodProductInfo.
-        :type: int
-        """
-        self._period_type = period_type
-
-    @property
-    def region(self):
-        """Gets the region of this PeriodProductInfo.
-
-        |参数名称：云服务区编码| |参数约束及描述：云服务区编码|
-
-        :return: The region of this PeriodProductInfo.
+        :return: The cloud_service_type of this PeriodProductInfo.
         :rtype: str
         """
-        return self._region
+        return self._cloud_service_type
 
-    @region.setter
-    def region(self, region):
-        """Sets the region of this PeriodProductInfo.
+    @cloud_service_type.setter
+    def cloud_service_type(self, cloud_service_type):
+        """Sets the cloud_service_type of this PeriodProductInfo.
 
-        |参数名称：云服务区编码| |参数约束及描述：云服务区编码|
+        |参数名称：用户购买云服务产品的云服务类型| |参数约束及描述：例如EC2，云服务类型为hws.service.type.ec2|
 
-        :param region: The region of this PeriodProductInfo.
+        :param cloud_service_type: The cloud_service_type of this PeriodProductInfo.
         :type: str
         """
-        self._region = region
-
-    @property
-    def resource_size(self):
-        """Gets the resource_size of this PeriodProductInfo.
-
-        |参数名称：资源容量大小| |参数约束及描述：例如购买的卷大小或带宽大小，只有线性产品才有这个字段|
-
-        :return: The resource_size of this PeriodProductInfo.
-        :rtype: int
-        """
-        return self._resource_size
-
-    @resource_size.setter
-    def resource_size(self, resource_size):
-        """Sets the resource_size of this PeriodProductInfo.
-
-        |参数名称：资源容量大小| |参数约束及描述：例如购买的卷大小或带宽大小，只有线性产品才有这个字段|
-
-        :param resource_size: The resource_size of this PeriodProductInfo.
-        :type: int
-        """
-        self._resource_size = resource_size
-
-    @property
-    def resource_spec(self):
-        """Gets the resource_spec of this PeriodProductInfo.
-
-        |参数名称：用户购买云服务产品的资源规格| |参数约束及描述：例如VM的小型规格，资源规格为m1.tiny|
-
-        :return: The resource_spec of this PeriodProductInfo.
-        :rtype: str
-        """
-        return self._resource_spec
-
-    @resource_spec.setter
-    def resource_spec(self, resource_spec):
-        """Sets the resource_spec of this PeriodProductInfo.
-
-        |参数名称：用户购买云服务产品的资源规格| |参数约束及描述：例如VM的小型规格，资源规格为m1.tiny|
-
-        :param resource_spec: The resource_spec of this PeriodProductInfo.
-        :type: str
-        """
-        self._resource_spec = resource_spec
+        self._cloud_service_type = cloud_service_type
 
     @property
     def resource_type(self):
@@ -282,6 +150,94 @@ class PeriodProductInfo:
         self._resource_type = resource_type
 
     @property
+    def resource_spec(self):
+        """Gets the resource_spec of this PeriodProductInfo.
+
+        |参数名称：用户购买云服务产品的资源规格| |参数约束及描述：例如VM的小型规格，资源规格为m1.tiny|
+
+        :return: The resource_spec of this PeriodProductInfo.
+        :rtype: str
+        """
+        return self._resource_spec
+
+    @resource_spec.setter
+    def resource_spec(self, resource_spec):
+        """Sets the resource_spec of this PeriodProductInfo.
+
+        |参数名称：用户购买云服务产品的资源规格| |参数约束及描述：例如VM的小型规格，资源规格为m1.tiny|
+
+        :param resource_spec: The resource_spec of this PeriodProductInfo.
+        :type: str
+        """
+        self._resource_spec = resource_spec
+
+    @property
+    def region(self):
+        """Gets the region of this PeriodProductInfo.
+
+        |参数名称：云服务区编码| |参数约束及描述：云服务区编码|
+
+        :return: The region of this PeriodProductInfo.
+        :rtype: str
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        """Sets the region of this PeriodProductInfo.
+
+        |参数名称：云服务区编码| |参数约束及描述：云服务区编码|
+
+        :param region: The region of this PeriodProductInfo.
+        :type: str
+        """
+        self._region = region
+
+    @property
+    def available_zone(self):
+        """Gets the available_zone of this PeriodProductInfo.
+
+        |参数名称：可用区标识| |参数约束及描述：可用区标识|
+
+        :return: The available_zone of this PeriodProductInfo.
+        :rtype: str
+        """
+        return self._available_zone
+
+    @available_zone.setter
+    def available_zone(self, available_zone):
+        """Sets the available_zone of this PeriodProductInfo.
+
+        |参数名称：可用区标识| |参数约束及描述：可用区标识|
+
+        :param available_zone: The available_zone of this PeriodProductInfo.
+        :type: str
+        """
+        self._available_zone = available_zone
+
+    @property
+    def resource_size(self):
+        """Gets the resource_size of this PeriodProductInfo.
+
+        |参数名称：资源容量大小| |参数约束及描述：例如购买的卷大小或带宽大小，只有线性产品才有这个字段|
+
+        :return: The resource_size of this PeriodProductInfo.
+        :rtype: int
+        """
+        return self._resource_size
+
+    @resource_size.setter
+    def resource_size(self, resource_size):
+        """Sets the resource_size of this PeriodProductInfo.
+
+        |参数名称：资源容量大小| |参数约束及描述：例如购买的卷大小或带宽大小，只有线性产品才有这个字段|
+
+        :param resource_size: The resource_size of this PeriodProductInfo.
+        :type: int
+        """
+        self._resource_size = resource_size
+
+    @property
     def size_measure_id(self):
         """Gets the size_measure_id of this PeriodProductInfo.
 
@@ -302,6 +258,50 @@ class PeriodProductInfo:
         :type: int
         """
         self._size_measure_id = size_measure_id
+
+    @property
+    def period_type(self):
+        """Gets the period_type of this PeriodProductInfo.
+
+        |参数名称：订购周期类型| |参数约束及描述：0：天；1：周；2：月；3：年；4：小时；|
+
+        :return: The period_type of this PeriodProductInfo.
+        :rtype: int
+        """
+        return self._period_type
+
+    @period_type.setter
+    def period_type(self, period_type):
+        """Sets the period_type of this PeriodProductInfo.
+
+        |参数名称：订购周期类型| |参数约束及描述：0：天；1：周；2：月；3：年；4：小时；|
+
+        :param period_type: The period_type of this PeriodProductInfo.
+        :type: int
+        """
+        self._period_type = period_type
+
+    @property
+    def period_num(self):
+        """Gets the period_num of this PeriodProductInfo.
+
+        |参数名称：订购周期数| |参数约束及描述：订购周期数|
+
+        :return: The period_num of this PeriodProductInfo.
+        :rtype: int
+        """
+        return self._period_num
+
+    @period_num.setter
+    def period_num(self, period_num):
+        """Sets the period_num of this PeriodProductInfo.
+
+        |参数名称：订购周期数| |参数约束及描述：订购周期数|
+
+        :param period_num: The period_num of this PeriodProductInfo.
+        :type: int
+        """
+        self._period_num = period_num
 
     @property
     def subscription_num(self):

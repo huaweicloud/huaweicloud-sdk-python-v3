@@ -23,59 +23,37 @@ class SendSmVerificationCodeReq:
     sensitive_list = []
 
     openapi_types = {
-        'language': 'str',
         'mobile_phone': 'str',
-        'sm_template_args': 'list[TemplateArgs]',
-        'timeout': 'int'
+        'timeout': 'int',
+        'language': 'str',
+        'sm_template_args': 'list[TemplateArgs]'
     }
 
     attribute_map = {
-        'language': 'language',
         'mobile_phone': 'mobile_phone',
-        'sm_template_args': 'sm_template_args',
-        'timeout': 'timeout'
+        'timeout': 'timeout',
+        'language': 'language',
+        'sm_template_args': 'sm_template_args'
     }
 
-    def __init__(self, language=None, mobile_phone=None, sm_template_args=None, timeout=10):
+    def __init__(self, mobile_phone=None, timeout=10, language=None, sm_template_args=None):
         """SendSmVerificationCodeReq - a model defined in huaweicloud sdk"""
         
         
 
-        self._language = None
         self._mobile_phone = None
-        self._sm_template_args = None
         self._timeout = None
+        self._language = None
+        self._sm_template_args = None
         self.discriminator = None
 
-        if language is not None:
-            self.language = language
         self.mobile_phone = mobile_phone
-        if sm_template_args is not None:
-            self.sm_template_args = sm_template_args
         if timeout is not None:
             self.timeout = timeout
-
-    @property
-    def language(self):
-        """Gets the language of this SendSmVerificationCodeReq.
-
-        |参数名称：发送的短信的语言zh-cn: 中文en-us: 英语| |参数约束及描述：发送的短信的语言zh-cn: 中文en-us: 英语|
-
-        :return: The language of this SendSmVerificationCodeReq.
-        :rtype: str
-        """
-        return self._language
-
-    @language.setter
-    def language(self, language):
-        """Sets the language of this SendSmVerificationCodeReq.
-
-        |参数名称：发送的短信的语言zh-cn: 中文en-us: 英语| |参数约束及描述：发送的短信的语言zh-cn: 中文en-us: 英语|
-
-        :param language: The language of this SendSmVerificationCodeReq.
-        :type: str
-        """
-        self._language = language
+        if language is not None:
+            self.language = language
+        if sm_template_args is not None:
+            self.sm_template_args = sm_template_args
 
     @property
     def mobile_phone(self):
@@ -100,28 +78,6 @@ class SendSmVerificationCodeReq:
         self._mobile_phone = mobile_phone
 
     @property
-    def sm_template_args(self):
-        """Gets the sm_template_args of this SendSmVerificationCodeReq.
-
-        |参数名称：短信模板参数| |参数约束以及描述：短信模板参数|
-
-        :return: The sm_template_args of this SendSmVerificationCodeReq.
-        :rtype: list[TemplateArgs]
-        """
-        return self._sm_template_args
-
-    @sm_template_args.setter
-    def sm_template_args(self, sm_template_args):
-        """Sets the sm_template_args of this SendSmVerificationCodeReq.
-
-        |参数名称：短信模板参数| |参数约束以及描述：短信模板参数|
-
-        :param sm_template_args: The sm_template_args of this SendSmVerificationCodeReq.
-        :type: list[TemplateArgs]
-        """
-        self._sm_template_args = sm_template_args
-
-    @property
     def timeout(self):
         """Gets the timeout of this SendSmVerificationCodeReq.
 
@@ -142,6 +98,50 @@ class SendSmVerificationCodeReq:
         :type: int
         """
         self._timeout = timeout
+
+    @property
+    def language(self):
+        """Gets the language of this SendSmVerificationCodeReq.
+
+        |参数名称：发送的短信的语言zh-cn: 中文en-us: 英语| |参数约束及描述：发送的短信的语言zh-cn: 中文en-us: 英语|
+
+        :return: The language of this SendSmVerificationCodeReq.
+        :rtype: str
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this SendSmVerificationCodeReq.
+
+        |参数名称：发送的短信的语言zh-cn: 中文en-us: 英语| |参数约束及描述：发送的短信的语言zh-cn: 中文en-us: 英语|
+
+        :param language: The language of this SendSmVerificationCodeReq.
+        :type: str
+        """
+        self._language = language
+
+    @property
+    def sm_template_args(self):
+        """Gets the sm_template_args of this SendSmVerificationCodeReq.
+
+        |参数名称：短信模板参数| |参数约束以及描述：短信模板参数|
+
+        :return: The sm_template_args of this SendSmVerificationCodeReq.
+        :rtype: list[TemplateArgs]
+        """
+        return self._sm_template_args
+
+    @sm_template_args.setter
+    def sm_template_args(self, sm_template_args):
+        """Sets the sm_template_args of this SendSmVerificationCodeReq.
+
+        |参数名称：短信模板参数| |参数约束以及描述：短信模板参数|
+
+        :param sm_template_args: The sm_template_args of this SendSmVerificationCodeReq.
+        :type: list[TemplateArgs]
+        """
+        self._sm_template_args = sm_template_args
 
     def to_dict(self):
         """Returns the model properties as a dict"""

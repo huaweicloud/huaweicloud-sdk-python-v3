@@ -24,37 +24,37 @@ class PeriodProductOfficialRatingResult:
 
     openapi_types = {
         'id': 'str',
-        'measure_id': 'int',
+        'product_id': 'str',
         'official_website_amount': 'float',
-        'product_id': 'str'
+        'measure_id': 'int'
     }
 
     attribute_map = {
         'id': 'id',
-        'measure_id': 'measure_id',
+        'product_id': 'product_id',
         'official_website_amount': 'official_website_amount',
-        'product_id': 'product_id'
+        'measure_id': 'measure_id'
     }
 
-    def __init__(self, id=None, measure_id=None, official_website_amount=None, product_id=None):
+    def __init__(self, id=None, product_id=None, official_website_amount=None, measure_id=None):
         """PeriodProductOfficialRatingResult - a model defined in huaweicloud sdk"""
         
         
 
         self._id = None
-        self._measure_id = None
-        self._official_website_amount = None
         self._product_id = None
+        self._official_website_amount = None
+        self._measure_id = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
-        if measure_id is not None:
-            self.measure_id = measure_id
-        if official_website_amount is not None:
-            self.official_website_amount = official_website_amount
         if product_id is not None:
             self.product_id = product_id
+        if official_website_amount is not None:
+            self.official_website_amount = official_website_amount
+        if measure_id is not None:
+            self.measure_id = measure_id
 
     @property
     def id(self):
@@ -79,26 +79,26 @@ class PeriodProductOfficialRatingResult:
         self._id = id
 
     @property
-    def measure_id(self):
-        """Gets the measure_id of this PeriodProductOfficialRatingResult.
+    def product_id(self):
+        """Gets the product_id of this PeriodProductOfficialRatingResult.
 
-        |参数名称：度量单位标识1：元|
+        |参数名称：产品ID| |参数约束及描述：产品ID|
 
-        :return: The measure_id of this PeriodProductOfficialRatingResult.
-        :rtype: int
+        :return: The product_id of this PeriodProductOfficialRatingResult.
+        :rtype: str
         """
-        return self._measure_id
+        return self._product_id
 
-    @measure_id.setter
-    def measure_id(self, measure_id):
-        """Sets the measure_id of this PeriodProductOfficialRatingResult.
+    @product_id.setter
+    def product_id(self, product_id):
+        """Sets the product_id of this PeriodProductOfficialRatingResult.
 
-        |参数名称：度量单位标识1：元|
+        |参数名称：产品ID| |参数约束及描述：产品ID|
 
-        :param measure_id: The measure_id of this PeriodProductOfficialRatingResult.
-        :type: int
+        :param product_id: The product_id of this PeriodProductOfficialRatingResult.
+        :type: str
         """
-        self._measure_id = measure_id
+        self._product_id = product_id
 
     @property
     def official_website_amount(self):
@@ -123,26 +123,26 @@ class PeriodProductOfficialRatingResult:
         self._official_website_amount = official_website_amount
 
     @property
-    def product_id(self):
-        """Gets the product_id of this PeriodProductOfficialRatingResult.
+    def measure_id(self):
+        """Gets the measure_id of this PeriodProductOfficialRatingResult.
 
-        |参数名称：产品ID| |参数约束及描述：产品ID|
+        |参数名称：度量单位标识1：元|
 
-        :return: The product_id of this PeriodProductOfficialRatingResult.
-        :rtype: str
+        :return: The measure_id of this PeriodProductOfficialRatingResult.
+        :rtype: int
         """
-        return self._product_id
+        return self._measure_id
 
-    @product_id.setter
-    def product_id(self, product_id):
-        """Sets the product_id of this PeriodProductOfficialRatingResult.
+    @measure_id.setter
+    def measure_id(self, measure_id):
+        """Sets the measure_id of this PeriodProductOfficialRatingResult.
 
-        |参数名称：产品ID| |参数约束及描述：产品ID|
+        |参数名称：度量单位标识1：元|
 
-        :param product_id: The product_id of this PeriodProductOfficialRatingResult.
-        :type: str
+        :param measure_id: The measure_id of this PeriodProductOfficialRatingResult.
+        :type: int
         """
-        self._product_id = product_id
+        self._measure_id = measure_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -24,45 +24,45 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
 
     openapi_types = {
         'amount': 'float',
-        'currency': 'str',
         'discount_amount': 'float',
-        'measure_id': 'int',
         'official_website_amount': 'float',
+        'measure_id': 'int',
+        'currency': 'str',
         'product_rating_results': 'list[DemandProductRatingResult]'
     }
 
     attribute_map = {
         'amount': 'amount',
-        'currency': 'currency',
         'discount_amount': 'discount_amount',
-        'measure_id': 'measure_id',
         'official_website_amount': 'official_website_amount',
+        'measure_id': 'measure_id',
+        'currency': 'currency',
         'product_rating_results': 'product_rating_results'
     }
 
-    def __init__(self, amount=None, currency=None, discount_amount=None, measure_id=None, official_website_amount=None, product_rating_results=None):
+    def __init__(self, amount=None, discount_amount=None, official_website_amount=None, measure_id=None, currency=None, product_rating_results=None):
         """ListOnDemandResourceRatingsResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
         self._amount = None
-        self._currency = None
         self._discount_amount = None
-        self._measure_id = None
         self._official_website_amount = None
+        self._measure_id = None
+        self._currency = None
         self._product_rating_results = None
         self.discriminator = None
 
         if amount is not None:
             self.amount = amount
-        if currency is not None:
-            self.currency = currency
         if discount_amount is not None:
             self.discount_amount = discount_amount
-        if measure_id is not None:
-            self.measure_id = measure_id
         if official_website_amount is not None:
             self.official_website_amount = official_website_amount
+        if measure_id is not None:
+            self.measure_id = measure_id
+        if currency is not None:
+            self.currency = currency
         if product_rating_results is not None:
             self.product_rating_results = product_rating_results
 
@@ -89,28 +89,6 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
         self._amount = amount
 
     @property
-    def currency(self):
-        """Gets the currency of this ListOnDemandResourceRatingsResponse.
-
-        |参数名称：币种| |参数约束及描述：比如CNY|
-
-        :return: The currency of this ListOnDemandResourceRatingsResponse.
-        :rtype: str
-        """
-        return self._currency
-
-    @currency.setter
-    def currency(self, currency):
-        """Sets the currency of this ListOnDemandResourceRatingsResponse.
-
-        |参数名称：币种| |参数约束及描述：比如CNY|
-
-        :param currency: The currency of this ListOnDemandResourceRatingsResponse.
-        :type: str
-        """
-        self._currency = currency
-
-    @property
     def discount_amount(self):
         """Gets the discount_amount of this ListOnDemandResourceRatingsResponse.
 
@@ -131,6 +109,28 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
         :type: float
         """
         self._discount_amount = discount_amount
+
+    @property
+    def official_website_amount(self):
+        """Gets the official_website_amount of this ListOnDemandResourceRatingsResponse.
+
+        |参数名称：官网价| |参数约束及描述：官网价|
+
+        :return: The official_website_amount of this ListOnDemandResourceRatingsResponse.
+        :rtype: float
+        """
+        return self._official_website_amount
+
+    @official_website_amount.setter
+    def official_website_amount(self, official_website_amount):
+        """Sets the official_website_amount of this ListOnDemandResourceRatingsResponse.
+
+        |参数名称：官网价| |参数约束及描述：官网价|
+
+        :param official_website_amount: The official_website_amount of this ListOnDemandResourceRatingsResponse.
+        :type: float
+        """
+        self._official_website_amount = official_website_amount
 
     @property
     def measure_id(self):
@@ -155,26 +155,26 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
         self._measure_id = measure_id
 
     @property
-    def official_website_amount(self):
-        """Gets the official_website_amount of this ListOnDemandResourceRatingsResponse.
+    def currency(self):
+        """Gets the currency of this ListOnDemandResourceRatingsResponse.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        |参数名称：币种| |参数约束及描述：比如CNY|
 
-        :return: The official_website_amount of this ListOnDemandResourceRatingsResponse.
-        :rtype: float
+        :return: The currency of this ListOnDemandResourceRatingsResponse.
+        :rtype: str
         """
-        return self._official_website_amount
+        return self._currency
 
-    @official_website_amount.setter
-    def official_website_amount(self, official_website_amount):
-        """Sets the official_website_amount of this ListOnDemandResourceRatingsResponse.
+    @currency.setter
+    def currency(self, currency):
+        """Sets the currency of this ListOnDemandResourceRatingsResponse.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        |参数名称：币种| |参数约束及描述：比如CNY|
 
-        :param official_website_amount: The official_website_amount of this ListOnDemandResourceRatingsResponse.
-        :type: float
+        :param currency: The currency of this ListOnDemandResourceRatingsResponse.
+        :type: str
         """
-        self._official_website_amount = official_website_amount
+        self._currency = currency
 
     @property
     def product_rating_results(self):

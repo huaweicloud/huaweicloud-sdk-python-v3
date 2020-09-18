@@ -23,139 +23,73 @@ class PackageUsageInfo:
     sensitive_list = []
 
     openapi_types = {
-        'balance': 'float',
-        'end_time': 'str',
-        'measurement_name': 'str',
         'order_instance_id': 'str',
+        'resource_type_name': 'str',
+        'quota_reuse_mode': 'int',
         'quota_reuse_cycle': 'int',
         'quota_reuse_cycle_type': 'int',
-        'quota_reuse_mode': 'int',
-        'region_code': 'str',
-        'resource_type_name': 'str',
         'start_time': 'str',
-        'total': 'float'
+        'end_time': 'str',
+        'balance': 'float',
+        'total': 'float',
+        'measurement_name': 'str',
+        'region_code': 'str'
     }
 
     attribute_map = {
-        'balance': 'balance',
-        'end_time': 'end_time',
-        'measurement_name': 'measurement_name',
         'order_instance_id': 'order_instance_id',
+        'resource_type_name': 'resource_type_name',
+        'quota_reuse_mode': 'quota_reuse_mode',
         'quota_reuse_cycle': 'quota_reuse_cycle',
         'quota_reuse_cycle_type': 'quota_reuse_cycle_type',
-        'quota_reuse_mode': 'quota_reuse_mode',
-        'region_code': 'region_code',
-        'resource_type_name': 'resource_type_name',
         'start_time': 'start_time',
-        'total': 'total'
+        'end_time': 'end_time',
+        'balance': 'balance',
+        'total': 'total',
+        'measurement_name': 'measurement_name',
+        'region_code': 'region_code'
     }
 
-    def __init__(self, balance=None, end_time=None, measurement_name=None, order_instance_id=None, quota_reuse_cycle=None, quota_reuse_cycle_type=None, quota_reuse_mode=None, region_code=None, resource_type_name=None, start_time=None, total=None):
+    def __init__(self, order_instance_id=None, resource_type_name=None, quota_reuse_mode=None, quota_reuse_cycle=None, quota_reuse_cycle_type=None, start_time=None, end_time=None, balance=None, total=None, measurement_name=None, region_code=None):
         """PackageUsageInfo - a model defined in huaweicloud sdk"""
         
         
 
-        self._balance = None
-        self._end_time = None
-        self._measurement_name = None
         self._order_instance_id = None
+        self._resource_type_name = None
+        self._quota_reuse_mode = None
         self._quota_reuse_cycle = None
         self._quota_reuse_cycle_type = None
-        self._quota_reuse_mode = None
-        self._region_code = None
-        self._resource_type_name = None
         self._start_time = None
+        self._end_time = None
+        self._balance = None
         self._total = None
+        self._measurement_name = None
+        self._region_code = None
         self.discriminator = None
 
-        if balance is not None:
-            self.balance = balance
-        if end_time is not None:
-            self.end_time = end_time
-        if measurement_name is not None:
-            self.measurement_name = measurement_name
         if order_instance_id is not None:
             self.order_instance_id = order_instance_id
+        if resource_type_name is not None:
+            self.resource_type_name = resource_type_name
+        if quota_reuse_mode is not None:
+            self.quota_reuse_mode = quota_reuse_mode
         if quota_reuse_cycle is not None:
             self.quota_reuse_cycle = quota_reuse_cycle
         if quota_reuse_cycle_type is not None:
             self.quota_reuse_cycle_type = quota_reuse_cycle_type
-        if quota_reuse_mode is not None:
-            self.quota_reuse_mode = quota_reuse_mode
-        if region_code is not None:
-            self.region_code = region_code
-        if resource_type_name is not None:
-            self.resource_type_name = resource_type_name
         if start_time is not None:
             self.start_time = start_time
+        if end_time is not None:
+            self.end_time = end_time
+        if balance is not None:
+            self.balance = balance
         if total is not None:
             self.total = total
-
-    @property
-    def balance(self):
-        """Gets the balance of this PackageUsageInfo.
-
-        |参数名称：套餐包内资源剩余量| |参数的约束及描述：套餐包内资源剩余量|
-
-        :return: The balance of this PackageUsageInfo.
-        :rtype: float
-        """
-        return self._balance
-
-    @balance.setter
-    def balance(self, balance):
-        """Sets the balance of this PackageUsageInfo.
-
-        |参数名称：套餐包内资源剩余量| |参数的约束及描述：套餐包内资源剩余量|
-
-        :param balance: The balance of this PackageUsageInfo.
-        :type: float
-        """
-        self._balance = balance
-
-    @property
-    def end_time(self):
-        """Gets the end_time of this PackageUsageInfo.
-
-        |参数名称：结束时间，格式UTC| |参数的约束及描述：1）如果quotaReuseMode为可重用，则此时间为当前时间所在的重用周期的结束时间2）如果quotaReuseMode为不可重用，则此时间为订购实例的失效时间|
-
-        :return: The end_time of this PackageUsageInfo.
-        :rtype: str
-        """
-        return self._end_time
-
-    @end_time.setter
-    def end_time(self, end_time):
-        """Sets the end_time of this PackageUsageInfo.
-
-        |参数名称：结束时间，格式UTC| |参数的约束及描述：1）如果quotaReuseMode为可重用，则此时间为当前时间所在的重用周期的结束时间2）如果quotaReuseMode为不可重用，则此时间为订购实例的失效时间|
-
-        :param end_time: The end_time of this PackageUsageInfo.
-        :type: str
-        """
-        self._end_time = end_time
-
-    @property
-    def measurement_name(self):
-        """Gets the measurement_name of this PackageUsageInfo.
-
-        |参数名称：套餐包资源的度量单位名称| |参数的约束及描述：套餐包资源的度量单位名称|
-
-        :return: The measurement_name of this PackageUsageInfo.
-        :rtype: str
-        """
-        return self._measurement_name
-
-    @measurement_name.setter
-    def measurement_name(self, measurement_name):
-        """Sets the measurement_name of this PackageUsageInfo.
-
-        |参数名称：套餐包资源的度量单位名称| |参数的约束及描述：套餐包资源的度量单位名称|
-
-        :param measurement_name: The measurement_name of this PackageUsageInfo.
-        :type: str
-        """
-        self._measurement_name = measurement_name
+        if measurement_name is not None:
+            self.measurement_name = measurement_name
+        if region_code is not None:
+            self.region_code = region_code
 
     @property
     def order_instance_id(self):
@@ -178,6 +112,50 @@ class PackageUsageInfo:
         :type: str
         """
         self._order_instance_id = order_instance_id
+
+    @property
+    def resource_type_name(self):
+        """Gets the resource_type_name of this PackageUsageInfo.
+
+        |参数名称：资源类型名称| |参数的约束及描述：资源类型名称|
+
+        :return: The resource_type_name of this PackageUsageInfo.
+        :rtype: str
+        """
+        return self._resource_type_name
+
+    @resource_type_name.setter
+    def resource_type_name(self, resource_type_name):
+        """Sets the resource_type_name of this PackageUsageInfo.
+
+        |参数名称：资源类型名称| |参数的约束及描述：资源类型名称|
+
+        :param resource_type_name: The resource_type_name of this PackageUsageInfo.
+        :type: str
+        """
+        self._resource_type_name = resource_type_name
+
+    @property
+    def quota_reuse_mode(self):
+        """Gets the quota_reuse_mode of this PackageUsageInfo.
+
+        |参数名称：重用模式| |参数的约束及描述：重用模式: 1：可重用2：不可重用|
+
+        :return: The quota_reuse_mode of this PackageUsageInfo.
+        :rtype: int
+        """
+        return self._quota_reuse_mode
+
+    @quota_reuse_mode.setter
+    def quota_reuse_mode(self, quota_reuse_mode):
+        """Sets the quota_reuse_mode of this PackageUsageInfo.
+
+        |参数名称：重用模式| |参数的约束及描述：重用模式: 1：可重用2：不可重用|
+
+        :param quota_reuse_mode: The quota_reuse_mode of this PackageUsageInfo.
+        :type: int
+        """
+        self._quota_reuse_mode = quota_reuse_mode
 
     @property
     def quota_reuse_cycle(self):
@@ -224,72 +202,6 @@ class PackageUsageInfo:
         self._quota_reuse_cycle_type = quota_reuse_cycle_type
 
     @property
-    def quota_reuse_mode(self):
-        """Gets the quota_reuse_mode of this PackageUsageInfo.
-
-        |参数名称：重用模式| |参数的约束及描述：重用模式: 1：可重用2：不可重用|
-
-        :return: The quota_reuse_mode of this PackageUsageInfo.
-        :rtype: int
-        """
-        return self._quota_reuse_mode
-
-    @quota_reuse_mode.setter
-    def quota_reuse_mode(self, quota_reuse_mode):
-        """Sets the quota_reuse_mode of this PackageUsageInfo.
-
-        |参数名称：重用模式| |参数的约束及描述：重用模式: 1：可重用2：不可重用|
-
-        :param quota_reuse_mode: The quota_reuse_mode of this PackageUsageInfo.
-        :type: int
-        """
-        self._quota_reuse_mode = quota_reuse_mode
-
-    @property
-    def region_code(self):
-        """Gets the region_code of this PackageUsageInfo.
-
-        |参数名称：区域编码| |参数的约束及描述：区域编码|
-
-        :return: The region_code of this PackageUsageInfo.
-        :rtype: str
-        """
-        return self._region_code
-
-    @region_code.setter
-    def region_code(self, region_code):
-        """Sets the region_code of this PackageUsageInfo.
-
-        |参数名称：区域编码| |参数的约束及描述：区域编码|
-
-        :param region_code: The region_code of this PackageUsageInfo.
-        :type: str
-        """
-        self._region_code = region_code
-
-    @property
-    def resource_type_name(self):
-        """Gets the resource_type_name of this PackageUsageInfo.
-
-        |参数名称：资源类型名称| |参数的约束及描述：资源类型名称|
-
-        :return: The resource_type_name of this PackageUsageInfo.
-        :rtype: str
-        """
-        return self._resource_type_name
-
-    @resource_type_name.setter
-    def resource_type_name(self, resource_type_name):
-        """Sets the resource_type_name of this PackageUsageInfo.
-
-        |参数名称：资源类型名称| |参数的约束及描述：资源类型名称|
-
-        :param resource_type_name: The resource_type_name of this PackageUsageInfo.
-        :type: str
-        """
-        self._resource_type_name = resource_type_name
-
-    @property
     def start_time(self):
         """Gets the start_time of this PackageUsageInfo.
 
@@ -312,6 +224,50 @@ class PackageUsageInfo:
         self._start_time = start_time
 
     @property
+    def end_time(self):
+        """Gets the end_time of this PackageUsageInfo.
+
+        |参数名称：结束时间，格式UTC| |参数的约束及描述：1）如果quotaReuseMode为可重用，则此时间为当前时间所在的重用周期的结束时间2）如果quotaReuseMode为不可重用，则此时间为订购实例的失效时间|
+
+        :return: The end_time of this PackageUsageInfo.
+        :rtype: str
+        """
+        return self._end_time
+
+    @end_time.setter
+    def end_time(self, end_time):
+        """Sets the end_time of this PackageUsageInfo.
+
+        |参数名称：结束时间，格式UTC| |参数的约束及描述：1）如果quotaReuseMode为可重用，则此时间为当前时间所在的重用周期的结束时间2）如果quotaReuseMode为不可重用，则此时间为订购实例的失效时间|
+
+        :param end_time: The end_time of this PackageUsageInfo.
+        :type: str
+        """
+        self._end_time = end_time
+
+    @property
+    def balance(self):
+        """Gets the balance of this PackageUsageInfo.
+
+        |参数名称：套餐包内资源剩余量| |参数的约束及描述：套餐包内资源剩余量|
+
+        :return: The balance of this PackageUsageInfo.
+        :rtype: float
+        """
+        return self._balance
+
+    @balance.setter
+    def balance(self, balance):
+        """Sets the balance of this PackageUsageInfo.
+
+        |参数名称：套餐包内资源剩余量| |参数的约束及描述：套餐包内资源剩余量|
+
+        :param balance: The balance of this PackageUsageInfo.
+        :type: float
+        """
+        self._balance = balance
+
+    @property
     def total(self):
         """Gets the total of this PackageUsageInfo.
 
@@ -332,6 +288,50 @@ class PackageUsageInfo:
         :type: float
         """
         self._total = total
+
+    @property
+    def measurement_name(self):
+        """Gets the measurement_name of this PackageUsageInfo.
+
+        |参数名称：套餐包资源的度量单位名称| |参数的约束及描述：套餐包资源的度量单位名称|
+
+        :return: The measurement_name of this PackageUsageInfo.
+        :rtype: str
+        """
+        return self._measurement_name
+
+    @measurement_name.setter
+    def measurement_name(self, measurement_name):
+        """Sets the measurement_name of this PackageUsageInfo.
+
+        |参数名称：套餐包资源的度量单位名称| |参数的约束及描述：套餐包资源的度量单位名称|
+
+        :param measurement_name: The measurement_name of this PackageUsageInfo.
+        :type: str
+        """
+        self._measurement_name = measurement_name
+
+    @property
+    def region_code(self):
+        """Gets the region_code of this PackageUsageInfo.
+
+        |参数名称：区域编码| |参数的约束及描述：区域编码|
+
+        :return: The region_code of this PackageUsageInfo.
+        :rtype: str
+        """
+        return self._region_code
+
+    @region_code.setter
+    def region_code(self, region_code):
+        """Sets the region_code of this PackageUsageInfo.
+
+        |参数名称：区域编码| |参数的约束及描述：区域编码|
+
+        :param region_code: The region_code of this PackageUsageInfo.
+        :type: str
+        """
+        self._region_code = region_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -14,7 +14,7 @@ from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
-class BssintlAsyncClient(Client):
+class CSBPartnerOpenAPIClient(Client):
     """
     :param configuration: .Configuration object for this client
     :param pool_threads: The number of threads to use for async requests
@@ -34,7 +34,7 @@ class BssintlAsyncClient(Client):
     }
 
     def __init__(self):
-        super(BssintlAsyncClient, self).__init__()
+        super(CSBPartnerOpenAPIClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkbssintl.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
@@ -42,7 +42,7 @@ class BssintlAsyncClient(Client):
     def new_builder(clazz):
         return ClientBuilder(clazz, "GlobalCredentials")
 
-    def auto_renewal_resources_async(self, request):
+    def auto_renewal_resources(self, request):
         """设置包年包月资源自动续费
 
         功能描述：设置包周期资源自动续费
@@ -100,7 +100,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def cancel_auto_renewal_resources_async(self, request):
+    def cancel_auto_renewal_resources(self, request):
         """取消包年包月资源自动续费
 
         功能描述：取消包年/包月资源自动续费
@@ -158,7 +158,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def cancel_customer_order_async(self, request):
+    def cancel_customer_order(self, request):
         """取消包周期订单
 
         功能描述：取消包周期订单
@@ -218,7 +218,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def cancel_resources_subscription_async(self, request):
+    def cancel_resources_subscription(self, request):
         """退订包周期资源
 
         功能描述：退订包周期资源
@@ -278,7 +278,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def change_enterprise_realname_authentication_async(self, request):
+    def change_enterprise_realname_authentication(self, request):
         """实名认证变更申请
 
         功能描述：实名认证变更申请
@@ -338,7 +338,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def check_user_identity_async(self, request):
+    def check_user_identity(self, request):
         """校验客户的注册信息
 
         功能描述：校验客户的注册信息
@@ -398,7 +398,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def create_enterprise_realname_authentication_async(self, request):
+    def create_enterprise_realname_authentication(self, request):
         """企业实名认证申请
 
         功能描述：企业实名认证申请V2
@@ -458,7 +458,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def create_personal_realname_auth_async(self, request):
+    def create_personal_realname_auth(self, request):
         """个人实名认证申请
 
         功能描述：个人实名认证申请
@@ -518,7 +518,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def create_sub_customer_async(self, request):
+    def create_sub_customer(self, request):
         """创建客户（V2）
 
         功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。
@@ -578,23 +578,23 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_customer_on_demand_resources_async(self, request):
-        """查询客户按需资源列表
+    def freeze_sub_customers(self, request):
+        """冻结伙伴子客户
 
-        功能描述：查询客户按需资源列表
+        功能描述：冻结伙伴子客户
 
-        :param ListCustomerOnDemandResourcesRequest request
-        :return: ListCustomerOnDemandResourcesResponse
+        :param FreezeSubCustomersRequest request
+        :return: FreezeSubCustomersResponse
         """
-        return self.list_customer_on_demand_resources_with_http_info(request)
+        return self.freeze_sub_customers_with_http_info(request)
 
-    def list_customer_on_demand_resources_with_http_info(self, request):
-        """查询客户按需资源列表
+    def freeze_sub_customers_with_http_info(self, request):
+        """冻结伙伴子客户
 
-        功能描述：查询客户按需资源列表
+        功能描述：冻结伙伴子客户
 
-        :param ListCustomerOnDemandResourcesRequest request
-        :return: ListCustomerOnDemandResourcesResponse
+        :param FreezeSubCustomersRequest request
+        :return: FreezeSubCustomersResponse
         """
 
         all_params = ['req']
@@ -625,6 +625,68 @@ class BssintlAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
+            resource_path='/v2/partners/sub-customers/freeze',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='FreezeSubCustomersResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_customer_on_demand_resources(self, request):
+        """查询客户按需资源列表
+
+        功能描述：查询客户按需资源列表
+
+        :param ListCustomerOnDemandResourcesRequest request
+        :return: ListCustomerOnDemandResourcesResponse
+        """
+        return self.list_customer_on_demand_resources_with_http_info(request)
+
+    def list_customer_on_demand_resources_with_http_info(self, request):
+        """查询客户按需资源列表
+
+        功能描述：查询客户按需资源列表
+
+        :param ListCustomerOnDemandResourcesRequest request
+        :return: ListCustomerOnDemandResourcesResponse
+        """
+
+        all_params = ['req', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
             resource_path='/v2/partners/sub-customers/on-demand-resources/query',
             method='POST',
             path_params=path_params,
@@ -638,7 +700,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_customer_orders_async(self, request):
+    def list_customer_orders(self, request):
         """查询订单列表V2
 
         功能描述：查询订单列表
@@ -720,7 +782,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_customerself_resource_record_details_async(self, request):
+    def list_customerself_resource_record_details(self, request):
         """查询资源详单V2（客户）
 
         功能描述：客户在客户自建平台查询自己的资源详单，用于反映各类资源的消耗情况。资源详单数据有延迟，最大延迟24小时。
@@ -780,7 +842,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_customerself_resource_records_async(self, request):
+    def list_customerself_resource_records(self, request):
         """查询资源消费记录（客户）
 
         功能描述：查询资源消费记录（客户）
@@ -799,7 +861,7 @@ class BssintlAsyncClient(Client):
         :return: ListCustomerselfResourceRecordsResponse
         """
 
-        all_params = ['cycle', 'charge_mode', 'cloud_service_type', 'region', 'bill_type', 'offset', 'limit', 'resource_id', 'enterprise_project_id', 'include_zero_record']
+        all_params = ['cycle', 'charge_mode', 'x_language', 'cloud_service_type', 'region', 'bill_type', 'offset', 'limit', 'resource_id', 'enterprise_project_id', 'include_zero_record', 'method', 'sub_customer_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -830,8 +892,14 @@ class BssintlAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'include_zero_record' in local_var_params:
             query_params.append(('include_zero_record', local_var_params['include_zero_record']))
+        if 'method' in local_var_params:
+            query_params.append(('method', local_var_params['method']))
+        if 'sub_customer_id' in local_var_params:
+            query_params.append(('sub_customer_id', local_var_params['sub_customer_id']))
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -856,7 +924,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_on_demand_resource_ratings_async(self, request):
+    def list_on_demand_resource_ratings(self, request):
         """查询按需产品价格
 
         功能描述：按需资源询价
@@ -916,7 +984,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_order_coupons_by_order_id_async(self, request):
+    def list_order_coupons_by_order_id(self, request):
         """查询订单可用优惠券
 
         功能描述：查询订单详情
@@ -974,7 +1042,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_pay_per_use_customer_resources_async(self, request):
+    def list_pay_per_use_customer_resources(self, request):
         """查询客户包年包月资源列表
 
         功能描述：查询客户包年/包月资源列表
@@ -1034,7 +1102,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_rate_on_period_detail_async(self, request):
+    def list_rate_on_period_detail(self, request):
         """包周期资源订购询价
 
         功能描述：包周期资源订购询价
@@ -1094,7 +1162,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_resource_usages_async(self, request):
+    def list_resource_usages(self, request):
         """查询套餐内使用量
 
         功能描述：查询套餐内使用量
@@ -1152,7 +1220,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_sub_customer_coupons_async(self, request):
+    def list_sub_customer_coupons(self, request):
         """查询优惠券列表
 
         功能描述：查询优惠券列表
@@ -1230,7 +1298,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_sub_customers_async(self, request):
+    def list_sub_customers(self, request):
         """查询客户列表
 
         功能描述：查询客户列表
@@ -1290,7 +1358,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def pay_orders_async(self, request):
+    def pay_orders(self, request):
         """支付包周期订单
 
         功能描述：支付包周期订单
@@ -1350,7 +1418,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def renewal_resources_async(self, request):
+    def renewal_resources(self, request):
         """续订包周期资源
 
         功能描述：续订包周期资源
@@ -1410,7 +1478,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def send_verification_message_code_async(self, request):
+    def send_verification_message_code(self, request):
         """短信验证码
 
         功能描述：发送验证码
@@ -1470,7 +1538,77 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_customer_order_details_async(self, request):
+    def show_customer_monthly_sum(self, request):
+        """查询客户消费汇总
+
+        功能描述：客户可以查询自身的消费汇总单的功能，消费按月汇总。每天刷新一次，更新前一天的数据。
+
+        :param ShowCustomerMonthlySumRequest request
+        :return: ShowCustomerMonthlySumResponse
+        """
+        return self.show_customer_monthly_sum_with_http_info(request)
+
+    def show_customer_monthly_sum_with_http_info(self, request):
+        """查询客户消费汇总
+
+        功能描述：客户可以查询自身的消费汇总单的功能，消费按月汇总。每天刷新一次，更新前一天的数据。
+
+        :param ShowCustomerMonthlySumRequest request
+        :return: ShowCustomerMonthlySumResponse
+        """
+
+        all_params = ['bill_cycle', 'service_type_code', 'enterprise_project_id', 'offset', 'limit', 'method', 'sub_customer_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bill_cycle' in local_var_params:
+            query_params.append(('bill_cycle', local_var_params['bill_cycle']))
+        if 'service_type_code' in local_var_params:
+            query_params.append(('service_type_code', local_var_params['service_type_code']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'method' in local_var_params:
+            query_params.append(('method', local_var_params['method']))
+        if 'sub_customer_id' in local_var_params:
+            query_params.append(('sub_customer_id', local_var_params['sub_customer_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bills/customer-bills/monthly-sum',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowCustomerMonthlySumResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_customer_order_details(self, request):
         """查询订单详情V2
 
         功能描述：查询订单详情
@@ -1534,7 +1672,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_realname_authentication_review_result_async(self, request):
+    def show_realname_authentication_review_result(self, request):
         """查询实名认证审核结果
 
         功能描述：查询实名认证审核结果
@@ -1592,7 +1730,7 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_refund_order_details_async(self, request):
+    def show_refund_order_details(self, request):
         """查询退款订单的金额详情V2
 
         功能描述：查询退款订单的金额详情
@@ -1650,6 +1788,184 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_sub_customer_budget(self, request):
+        """查询客户预算
+
+        功能描述：查询客户预算
+
+        :param ShowSubCustomerBudgetRequest request
+        :return: ShowSubCustomerBudgetResponse
+        """
+        return self.show_sub_customer_budget_with_http_info(request)
+
+    def show_sub_customer_budget_with_http_info(self, request):
+        """查询客户预算
+
+        功能描述：查询客户预算
+
+        :param ShowSubCustomerBudgetRequest request
+        :return: ShowSubCustomerBudgetResponse
+        """
+
+        all_params = ['customer_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'customer_id' in local_var_params:
+            query_params.append(('customer_id', local_var_params['customer_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/sub-customers/budget',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowSubCustomerBudgetResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def unfreeze_sub_customers(self, request):
+        """解冻伙伴子客户
+
+        功能描述：解冻伙伴子客户
+
+        :param UnfreezeSubCustomersRequest request
+        :return: UnfreezeSubCustomersResponse
+        """
+        return self.unfreeze_sub_customers_with_http_info(request)
+
+    def unfreeze_sub_customers_with_http_info(self, request):
+        """解冻伙伴子客户
+
+        功能描述：解冻伙伴子客户
+
+        :param UnfreezeSubCustomersRequest request
+        :return: UnfreezeSubCustomersResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/sub-customers/unfreeze',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UnfreezeSubCustomersResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_sub_customer_budget(self, request):
+        """设置客户预算
+
+        功能描述：设置客户预算
+
+        :param UpdateSubCustomerBudgetRequest request
+        :return: UpdateSubCustomerBudgetResponse
+        """
+        return self.update_sub_customer_budget_with_http_info(request)
+
+    def update_sub_customer_budget_with_http_info(self, request):
+        """设置客户预算
+
+        功能描述：设置客户预算
+
+        :param UpdateSubCustomerBudgetRequest request
+        :return: UpdateSubCustomerBudgetResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/sub-customers/budget',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateSubCustomerBudgetResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
                  body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
                  request_type=None):
@@ -1681,5 +1997,4 @@ class BssintlAsyncClient(Client):
             post_params=post_params,
             response_type=response_type,
             collection_formats=collection_formats,
-            request_type=request_type,
-	    async_request=True)
+            request_type=request_type)

@@ -24,29 +24,29 @@ class SkuInventory:
 
     openapi_types = {
         'product_id': 'str',
-        'saleable_quantity': 'int',
-        'sku_code': 'str'
+        'sku_code': 'str',
+        'saleable_quantity': 'int'
     }
 
     attribute_map = {
         'product_id': 'product_id',
-        'saleable_quantity': 'saleable_quantity',
-        'sku_code': 'sku_code'
+        'sku_code': 'sku_code',
+        'saleable_quantity': 'saleable_quantity'
     }
 
-    def __init__(self, product_id=None, saleable_quantity=None, sku_code=None):
+    def __init__(self, product_id=None, sku_code=None, saleable_quantity=None):
         """SkuInventory - a model defined in huaweicloud sdk"""
         
         
 
         self._product_id = None
-        self._saleable_quantity = None
         self._sku_code = None
+        self._saleable_quantity = None
         self.discriminator = None
 
         self.product_id = product_id
-        self.saleable_quantity = saleable_quantity
         self.sku_code = sku_code
+        self.saleable_quantity = saleable_quantity
 
     @property
     def product_id(self):
@@ -71,28 +71,6 @@ class SkuInventory:
         self._product_id = product_id
 
     @property
-    def saleable_quantity(self):
-        """Gets the saleable_quantity of this SkuInventory.
-
-        |参数名称：可售库存数| |参数的约束及描述：可售库存数|
-
-        :return: The saleable_quantity of this SkuInventory.
-        :rtype: int
-        """
-        return self._saleable_quantity
-
-    @saleable_quantity.setter
-    def saleable_quantity(self, saleable_quantity):
-        """Sets the saleable_quantity of this SkuInventory.
-
-        |参数名称：可售库存数| |参数的约束及描述：可售库存数|
-
-        :param saleable_quantity: The saleable_quantity of this SkuInventory.
-        :type: int
-        """
-        self._saleable_quantity = saleable_quantity
-
-    @property
     def sku_code(self):
         """Gets the sku_code of this SkuInventory.
 
@@ -113,6 +91,28 @@ class SkuInventory:
         :type: str
         """
         self._sku_code = sku_code
+
+    @property
+    def saleable_quantity(self):
+        """Gets the saleable_quantity of this SkuInventory.
+
+        |参数名称：可售库存数| |参数的约束及描述：可售库存数|
+
+        :return: The saleable_quantity of this SkuInventory.
+        :rtype: int
+        """
+        return self._saleable_quantity
+
+    @saleable_quantity.setter
+    def saleable_quantity(self, saleable_quantity):
+        """Sets the saleable_quantity of this SkuInventory.
+
+        |参数名称：可售库存数| |参数的约束及描述：可售库存数|
+
+        :param saleable_quantity: The saleable_quantity of this SkuInventory.
+        :type: int
+        """
+        self._saleable_quantity = saleable_quantity
 
     def to_dict(self):
         """Returns the model properties as a dict"""

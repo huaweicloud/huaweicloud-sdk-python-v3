@@ -23,50 +23,28 @@ class ListCitiesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'cities': 'list[City]',
-        'count': 'int'
+        'count': 'int',
+        'cities': 'list[City]'
     }
 
     attribute_map = {
-        'cities': 'cities',
-        'count': 'count'
+        'count': 'count',
+        'cities': 'cities'
     }
 
-    def __init__(self, cities=None, count=None):
+    def __init__(self, count=None, cities=None):
         """ListCitiesResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._cities = None
         self._count = None
+        self._cities = None
         self.discriminator = None
 
-        if cities is not None:
-            self.cities = cities
         if count is not None:
             self.count = count
-
-    @property
-    def cities(self):
-        """Gets the cities of this ListCitiesResponse.
-
-        |参数名称：城市信息列表，成功的时候返回| |参数约束以及描述：城市信息列表，成功的时候返回|
-
-        :return: The cities of this ListCitiesResponse.
-        :rtype: list[City]
-        """
-        return self._cities
-
-    @cities.setter
-    def cities(self, cities):
-        """Sets the cities of this ListCitiesResponse.
-
-        |参数名称：城市信息列表，成功的时候返回| |参数约束以及描述：城市信息列表，成功的时候返回|
-
-        :param cities: The cities of this ListCitiesResponse.
-        :type: list[City]
-        """
-        self._cities = cities
+        if cities is not None:
+            self.cities = cities
 
     @property
     def count(self):
@@ -89,6 +67,28 @@ class ListCitiesResponse(SdkResponse):
         :type: int
         """
         self._count = count
+
+    @property
+    def cities(self):
+        """Gets the cities of this ListCitiesResponse.
+
+        |参数名称：城市信息列表，成功的时候返回| |参数约束以及描述：城市信息列表，成功的时候返回|
+
+        :return: The cities of this ListCitiesResponse.
+        :rtype: list[City]
+        """
+        return self._cities
+
+    @cities.setter
+    def cities(self, cities):
+        """Sets the cities of this ListCitiesResponse.
+
+        |参数名称：城市信息列表，成功的时候返回| |参数约束以及描述：城市信息列表，成功的时候返回|
+
+        :param cities: The cities of this ListCitiesResponse.
+        :type: list[City]
+        """
+        self._cities = cities
 
     def to_dict(self):
         """Returns the model properties as a dict"""

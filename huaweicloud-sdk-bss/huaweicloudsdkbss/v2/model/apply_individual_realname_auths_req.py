@@ -23,99 +23,57 @@ class ApplyIndividualRealnameAuthsReq:
     sensitive_list = []
 
     openapi_types = {
-        'bank_card_info': 'BankCardInfoV2',
-        'change_type': 'int',
         'customer_id': 'str',
         'identify_type': 'int',
-        'name': 'str',
-        'verified_file_url': 'list[str]',
-        'verified_number': 'str',
         'verified_type': 'int',
-        'xaccount_type': 'str'
+        'verified_file_url': 'list[str]',
+        'name': 'str',
+        'verified_number': 'str',
+        'change_type': 'int',
+        'xaccount_type': 'str',
+        'bank_card_info': 'BankCardInfoV2'
     }
 
     attribute_map = {
-        'bank_card_info': 'bank_card_info',
-        'change_type': 'change_type',
         'customer_id': 'customer_id',
         'identify_type': 'identify_type',
-        'name': 'name',
-        'verified_file_url': 'verified_file_url',
-        'verified_number': 'verified_number',
         'verified_type': 'verified_type',
-        'xaccount_type': 'xaccount_type'
+        'verified_file_url': 'verified_file_url',
+        'name': 'name',
+        'verified_number': 'verified_number',
+        'change_type': 'change_type',
+        'xaccount_type': 'xaccount_type',
+        'bank_card_info': 'bank_card_info'
     }
 
-    def __init__(self, bank_card_info=None, change_type=None, customer_id=None, identify_type=None, name=None, verified_file_url=None, verified_number=None, verified_type=None, xaccount_type=None):
+    def __init__(self, customer_id=None, identify_type=None, verified_type=None, verified_file_url=None, name=None, verified_number=None, change_type=None, xaccount_type=None, bank_card_info=None):
         """ApplyIndividualRealnameAuthsReq - a model defined in huaweicloud sdk"""
         
         
 
-        self._bank_card_info = None
-        self._change_type = None
         self._customer_id = None
         self._identify_type = None
-        self._name = None
-        self._verified_file_url = None
-        self._verified_number = None
         self._verified_type = None
+        self._verified_file_url = None
+        self._name = None
+        self._verified_number = None
+        self._change_type = None
         self._xaccount_type = None
+        self._bank_card_info = None
         self.discriminator = None
 
-        if bank_card_info is not None:
-            self.bank_card_info = bank_card_info
-        if change_type is not None:
-            self.change_type = change_type
         self.customer_id = customer_id
         self.identify_type = identify_type
-        self.name = name
-        self.verified_file_url = verified_file_url
-        self.verified_number = verified_number
         if verified_type is not None:
             self.verified_type = verified_type
+        self.verified_file_url = verified_file_url
+        self.name = name
+        self.verified_number = verified_number
+        if change_type is not None:
+            self.change_type = change_type
         self.xaccount_type = xaccount_type
-
-    @property
-    def bank_card_info(self):
-        """Gets the bank_card_info of this ApplyIndividualRealnameAuthsReq.
-
-
-        :return: The bank_card_info of this ApplyIndividualRealnameAuthsReq.
-        :rtype: BankCardInfoV2
-        """
-        return self._bank_card_info
-
-    @bank_card_info.setter
-    def bank_card_info(self, bank_card_info):
-        """Sets the bank_card_info of this ApplyIndividualRealnameAuthsReq.
-
-
-        :param bank_card_info: The bank_card_info of this ApplyIndividualRealnameAuthsReq.
-        :type: BankCardInfoV2
-        """
-        self._bank_card_info = bank_card_info
-
-    @property
-    def change_type(self):
-        """Gets the change_type of this ApplyIndividualRealnameAuthsReq.
-
-        |参数名称：变更类型：-1：首次实名认证| |参数的约束及描述：变更类型：-1：首次实名认证|
-
-        :return: The change_type of this ApplyIndividualRealnameAuthsReq.
-        :rtype: int
-        """
-        return self._change_type
-
-    @change_type.setter
-    def change_type(self, change_type):
-        """Sets the change_type of this ApplyIndividualRealnameAuthsReq.
-
-        |参数名称：变更类型：-1：首次实名认证| |参数的约束及描述：变更类型：-1：首次实名认证|
-
-        :param change_type: The change_type of this ApplyIndividualRealnameAuthsReq.
-        :type: int
-        """
-        self._change_type = change_type
+        if bank_card_info is not None:
+            self.bank_card_info = bank_card_info
 
     @property
     def customer_id(self):
@@ -162,26 +120,26 @@ class ApplyIndividualRealnameAuthsReq:
         self._identify_type = identify_type
 
     @property
-    def name(self):
-        """Gets the name of this ApplyIndividualRealnameAuthsReq.
+    def verified_type(self):
+        """Gets the verified_type of this ApplyIndividualRealnameAuthsReq.
 
-        |参数名称：姓名。| |参数约束及描述：姓名。|
+        |参数名称：证件类型：0：身份证，上传的附件为3张，第1张是身份证人像面，第2张是身份证国徽面，第3张是个人手持身份证人像面；3：护照，上传的附件为3张，第1张是护照个人资料页，第2张是，护照入境盖章页，第3张是手持护照个人资料页；3：护照，上传的附件为2张，第1张是护照个人资料页，第2张是手持护照个人资料页；5：港澳通行证，上传的附件为3张，第1张是港澳居民来往内地通行证正面（人像面），第2张是港澳居民来往内地通行证反面，第3张是手持港澳居民来往内地通行证人像面；6：台湾通行证，上传的附件为3张，第1张是台湾居民来往大陆通行证正面（人像面），第2张是台湾居民来往大陆通行证反面，第3张是手持台湾居民来往大陆通行证人像面；7：海外驾照，上传的附件为2张，第1张是中国以外驾照正面照片（人像面），第2张是手持中国以外驾照人像面照片；9：港澳居民居住证，上传的附件为3张，第1张是港澳居民居住证人像面，第2张是，港澳居民居住证国徽面，第3张是手持港澳居民居住证人像面照片；10：台湾居民居住证，上传的附件为3张，第1张是台湾居民居住证人像面，第2张是台湾居民居住证国徽面，第3张是手持台湾居民居住证人像面照片。当identifyType=0的时候，该字段需要填写，否则忽略该字段的取值。| |参数的约束及描述：证件类型：0：身份证，上传的附件为3张，第1张是身份证人像面，第2张是身份证国徽面，第3张是个人手持身份证人像面；3：护照，上传的附件为3张，第1张是护照个人资料页，第2张是，护照入境盖章页，第3张是手持护照个人资料页；3：护照，上传的附件为2张，第1张是护照个人资料页，第2张是手持护照个人资料页；5：港澳通行证，上传的附件为3张，第1张是港澳居民来往内地通行证正面（人像面），第2张是港澳居民来往内地通行证反面，第3张是手持港澳居民来往内地通行证人像面；6：台湾通行证，上传的附件为3张，第1张是台湾居民来往大陆通行证正面（人像面），第2张是台湾居民来往大陆通行证反面，第3张是手持台湾居民来往大陆通行证人像面；7：海外驾照，上传的附件为2张，第1张是中国以外驾照正面照片（人像面），第2张是手持中国以外驾照人像面照片；9：港澳居民居住证，上传的附件为3张，第1张是港澳居民居住证人像面，第2张是，港澳居民居住证国徽面，第3张是手持港澳居民居住证人像面照片；10：台湾居民居住证，上传的附件为3张，第1张是台湾居民居住证人像面，第2张是台湾居民居住证国徽面，第3张是手持台湾居民居住证人像面照片。当identifyType=0的时候，该字段需要填写，否则忽略该字段的取值。|
 
-        :return: The name of this ApplyIndividualRealnameAuthsReq.
-        :rtype: str
+        :return: The verified_type of this ApplyIndividualRealnameAuthsReq.
+        :rtype: int
         """
-        return self._name
+        return self._verified_type
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ApplyIndividualRealnameAuthsReq.
+    @verified_type.setter
+    def verified_type(self, verified_type):
+        """Sets the verified_type of this ApplyIndividualRealnameAuthsReq.
 
-        |参数名称：姓名。| |参数约束及描述：姓名。|
+        |参数名称：证件类型：0：身份证，上传的附件为3张，第1张是身份证人像面，第2张是身份证国徽面，第3张是个人手持身份证人像面；3：护照，上传的附件为3张，第1张是护照个人资料页，第2张是，护照入境盖章页，第3张是手持护照个人资料页；3：护照，上传的附件为2张，第1张是护照个人资料页，第2张是手持护照个人资料页；5：港澳通行证，上传的附件为3张，第1张是港澳居民来往内地通行证正面（人像面），第2张是港澳居民来往内地通行证反面，第3张是手持港澳居民来往内地通行证人像面；6：台湾通行证，上传的附件为3张，第1张是台湾居民来往大陆通行证正面（人像面），第2张是台湾居民来往大陆通行证反面，第3张是手持台湾居民来往大陆通行证人像面；7：海外驾照，上传的附件为2张，第1张是中国以外驾照正面照片（人像面），第2张是手持中国以外驾照人像面照片；9：港澳居民居住证，上传的附件为3张，第1张是港澳居民居住证人像面，第2张是，港澳居民居住证国徽面，第3张是手持港澳居民居住证人像面照片；10：台湾居民居住证，上传的附件为3张，第1张是台湾居民居住证人像面，第2张是台湾居民居住证国徽面，第3张是手持台湾居民居住证人像面照片。当identifyType=0的时候，该字段需要填写，否则忽略该字段的取值。| |参数的约束及描述：证件类型：0：身份证，上传的附件为3张，第1张是身份证人像面，第2张是身份证国徽面，第3张是个人手持身份证人像面；3：护照，上传的附件为3张，第1张是护照个人资料页，第2张是，护照入境盖章页，第3张是手持护照个人资料页；3：护照，上传的附件为2张，第1张是护照个人资料页，第2张是手持护照个人资料页；5：港澳通行证，上传的附件为3张，第1张是港澳居民来往内地通行证正面（人像面），第2张是港澳居民来往内地通行证反面，第3张是手持港澳居民来往内地通行证人像面；6：台湾通行证，上传的附件为3张，第1张是台湾居民来往大陆通行证正面（人像面），第2张是台湾居民来往大陆通行证反面，第3张是手持台湾居民来往大陆通行证人像面；7：海外驾照，上传的附件为2张，第1张是中国以外驾照正面照片（人像面），第2张是手持中国以外驾照人像面照片；9：港澳居民居住证，上传的附件为3张，第1张是港澳居民居住证人像面，第2张是，港澳居民居住证国徽面，第3张是手持港澳居民居住证人像面照片；10：台湾居民居住证，上传的附件为3张，第1张是台湾居民居住证人像面，第2张是台湾居民居住证国徽面，第3张是手持台湾居民居住证人像面照片。当identifyType=0的时候，该字段需要填写，否则忽略该字段的取值。|
 
-        :param name: The name of this ApplyIndividualRealnameAuthsReq.
-        :type: str
+        :param verified_type: The verified_type of this ApplyIndividualRealnameAuthsReq.
+        :type: int
         """
-        self._name = name
+        self._verified_type = verified_type
 
     @property
     def verified_file_url(self):
@@ -206,6 +164,28 @@ class ApplyIndividualRealnameAuthsReq:
         self._verified_file_url = verified_file_url
 
     @property
+    def name(self):
+        """Gets the name of this ApplyIndividualRealnameAuthsReq.
+
+        |参数名称：姓名。| |参数约束及描述：姓名。|
+
+        :return: The name of this ApplyIndividualRealnameAuthsReq.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ApplyIndividualRealnameAuthsReq.
+
+        |参数名称：姓名。| |参数约束及描述：姓名。|
+
+        :param name: The name of this ApplyIndividualRealnameAuthsReq.
+        :type: str
+        """
+        self._name = name
+
+    @property
     def verified_number(self):
         """Gets the verified_number of this ApplyIndividualRealnameAuthsReq.
 
@@ -228,26 +208,26 @@ class ApplyIndividualRealnameAuthsReq:
         self._verified_number = verified_number
 
     @property
-    def verified_type(self):
-        """Gets the verified_type of this ApplyIndividualRealnameAuthsReq.
+    def change_type(self):
+        """Gets the change_type of this ApplyIndividualRealnameAuthsReq.
 
-        |参数名称：证件类型：0：身份证，上传的附件为3张，第1张是身份证人像面，第2张是身份证国徽面，第3张是个人手持身份证人像面；3：护照，上传的附件为3张，第1张是护照个人资料页，第2张是，护照入境盖章页，第3张是手持护照个人资料页；3：护照，上传的附件为2张，第1张是护照个人资料页，第2张是手持护照个人资料页；5：港澳通行证，上传的附件为3张，第1张是港澳居民来往内地通行证正面（人像面），第2张是港澳居民来往内地通行证反面，第3张是手持港澳居民来往内地通行证人像面；6：台湾通行证，上传的附件为3张，第1张是台湾居民来往大陆通行证正面（人像面），第2张是台湾居民来往大陆通行证反面，第3张是手持台湾居民来往大陆通行证人像面；7：海外驾照，上传的附件为2张，第1张是中国以外驾照正面照片（人像面），第2张是手持中国以外驾照人像面照片；9：港澳居民居住证，上传的附件为3张，第1张是港澳居民居住证人像面，第2张是，港澳居民居住证国徽面，第3张是手持港澳居民居住证人像面照片；10：台湾居民居住证，上传的附件为3张，第1张是台湾居民居住证人像面，第2张是台湾居民居住证国徽面，第3张是手持台湾居民居住证人像面照片。当identifyType=0的时候，该字段需要填写，否则忽略该字段的取值。| |参数的约束及描述：证件类型：0：身份证，上传的附件为3张，第1张是身份证人像面，第2张是身份证国徽面，第3张是个人手持身份证人像面；3：护照，上传的附件为3张，第1张是护照个人资料页，第2张是，护照入境盖章页，第3张是手持护照个人资料页；3：护照，上传的附件为2张，第1张是护照个人资料页，第2张是手持护照个人资料页；5：港澳通行证，上传的附件为3张，第1张是港澳居民来往内地通行证正面（人像面），第2张是港澳居民来往内地通行证反面，第3张是手持港澳居民来往内地通行证人像面；6：台湾通行证，上传的附件为3张，第1张是台湾居民来往大陆通行证正面（人像面），第2张是台湾居民来往大陆通行证反面，第3张是手持台湾居民来往大陆通行证人像面；7：海外驾照，上传的附件为2张，第1张是中国以外驾照正面照片（人像面），第2张是手持中国以外驾照人像面照片；9：港澳居民居住证，上传的附件为3张，第1张是港澳居民居住证人像面，第2张是，港澳居民居住证国徽面，第3张是手持港澳居民居住证人像面照片；10：台湾居民居住证，上传的附件为3张，第1张是台湾居民居住证人像面，第2张是台湾居民居住证国徽面，第3张是手持台湾居民居住证人像面照片。当identifyType=0的时候，该字段需要填写，否则忽略该字段的取值。|
+        |参数名称：变更类型：-1：首次实名认证| |参数的约束及描述：变更类型：-1：首次实名认证|
 
-        :return: The verified_type of this ApplyIndividualRealnameAuthsReq.
+        :return: The change_type of this ApplyIndividualRealnameAuthsReq.
         :rtype: int
         """
-        return self._verified_type
+        return self._change_type
 
-    @verified_type.setter
-    def verified_type(self, verified_type):
-        """Sets the verified_type of this ApplyIndividualRealnameAuthsReq.
+    @change_type.setter
+    def change_type(self, change_type):
+        """Sets the change_type of this ApplyIndividualRealnameAuthsReq.
 
-        |参数名称：证件类型：0：身份证，上传的附件为3张，第1张是身份证人像面，第2张是身份证国徽面，第3张是个人手持身份证人像面；3：护照，上传的附件为3张，第1张是护照个人资料页，第2张是，护照入境盖章页，第3张是手持护照个人资料页；3：护照，上传的附件为2张，第1张是护照个人资料页，第2张是手持护照个人资料页；5：港澳通行证，上传的附件为3张，第1张是港澳居民来往内地通行证正面（人像面），第2张是港澳居民来往内地通行证反面，第3张是手持港澳居民来往内地通行证人像面；6：台湾通行证，上传的附件为3张，第1张是台湾居民来往大陆通行证正面（人像面），第2张是台湾居民来往大陆通行证反面，第3张是手持台湾居民来往大陆通行证人像面；7：海外驾照，上传的附件为2张，第1张是中国以外驾照正面照片（人像面），第2张是手持中国以外驾照人像面照片；9：港澳居民居住证，上传的附件为3张，第1张是港澳居民居住证人像面，第2张是，港澳居民居住证国徽面，第3张是手持港澳居民居住证人像面照片；10：台湾居民居住证，上传的附件为3张，第1张是台湾居民居住证人像面，第2张是台湾居民居住证国徽面，第3张是手持台湾居民居住证人像面照片。当identifyType=0的时候，该字段需要填写，否则忽略该字段的取值。| |参数的约束及描述：证件类型：0：身份证，上传的附件为3张，第1张是身份证人像面，第2张是身份证国徽面，第3张是个人手持身份证人像面；3：护照，上传的附件为3张，第1张是护照个人资料页，第2张是，护照入境盖章页，第3张是手持护照个人资料页；3：护照，上传的附件为2张，第1张是护照个人资料页，第2张是手持护照个人资料页；5：港澳通行证，上传的附件为3张，第1张是港澳居民来往内地通行证正面（人像面），第2张是港澳居民来往内地通行证反面，第3张是手持港澳居民来往内地通行证人像面；6：台湾通行证，上传的附件为3张，第1张是台湾居民来往大陆通行证正面（人像面），第2张是台湾居民来往大陆通行证反面，第3张是手持台湾居民来往大陆通行证人像面；7：海外驾照，上传的附件为2张，第1张是中国以外驾照正面照片（人像面），第2张是手持中国以外驾照人像面照片；9：港澳居民居住证，上传的附件为3张，第1张是港澳居民居住证人像面，第2张是，港澳居民居住证国徽面，第3张是手持港澳居民居住证人像面照片；10：台湾居民居住证，上传的附件为3张，第1张是台湾居民居住证人像面，第2张是台湾居民居住证国徽面，第3张是手持台湾居民居住证人像面照片。当identifyType=0的时候，该字段需要填写，否则忽略该字段的取值。|
+        |参数名称：变更类型：-1：首次实名认证| |参数的约束及描述：变更类型：-1：首次实名认证|
 
-        :param verified_type: The verified_type of this ApplyIndividualRealnameAuthsReq.
+        :param change_type: The change_type of this ApplyIndividualRealnameAuthsReq.
         :type: int
         """
-        self._verified_type = verified_type
+        self._change_type = change_type
 
     @property
     def xaccount_type(self):
@@ -270,6 +250,26 @@ class ApplyIndividualRealnameAuthsReq:
         :type: str
         """
         self._xaccount_type = xaccount_type
+
+    @property
+    def bank_card_info(self):
+        """Gets the bank_card_info of this ApplyIndividualRealnameAuthsReq.
+
+
+        :return: The bank_card_info of this ApplyIndividualRealnameAuthsReq.
+        :rtype: BankCardInfoV2
+        """
+        return self._bank_card_info
+
+    @bank_card_info.setter
+    def bank_card_info(self, bank_card_info):
+        """Sets the bank_card_info of this ApplyIndividualRealnameAuthsReq.
+
+
+        :param bank_card_info: The bank_card_info of this ApplyIndividualRealnameAuthsReq.
+        :type: BankCardInfoV2
+        """
+        self._bank_card_info = bank_card_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

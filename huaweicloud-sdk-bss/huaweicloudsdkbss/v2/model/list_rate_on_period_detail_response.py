@@ -23,55 +23,33 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'currency': 'str',
         'official_website_rating_result': 'OfficialWebsiteRatingResult',
-        'optional_discount_rating_results': 'list[OptionalDiscountRatingResult]'
+        'optional_discount_rating_results': 'list[OptionalDiscountRatingResult]',
+        'currency': 'str'
     }
 
     attribute_map = {
-        'currency': 'currency',
         'official_website_rating_result': 'official_website_rating_result',
-        'optional_discount_rating_results': 'optional_discount_rating_results'
+        'optional_discount_rating_results': 'optional_discount_rating_results',
+        'currency': 'currency'
     }
 
-    def __init__(self, currency=None, official_website_rating_result=None, optional_discount_rating_results=None):
+    def __init__(self, official_website_rating_result=None, optional_discount_rating_results=None, currency=None):
         """ListRateOnPeriodDetailResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._currency = None
         self._official_website_rating_result = None
         self._optional_discount_rating_results = None
+        self._currency = None
         self.discriminator = None
 
-        if currency is not None:
-            self.currency = currency
         if official_website_rating_result is not None:
             self.official_website_rating_result = official_website_rating_result
         if optional_discount_rating_results is not None:
             self.optional_discount_rating_results = optional_discount_rating_results
-
-    @property
-    def currency(self):
-        """Gets the currency of this ListRateOnPeriodDetailResponse.
-
-        |参数名称：币种| |参数约束及描述：比如CNY|
-
-        :return: The currency of this ListRateOnPeriodDetailResponse.
-        :rtype: str
-        """
-        return self._currency
-
-    @currency.setter
-    def currency(self, currency):
-        """Sets the currency of this ListRateOnPeriodDetailResponse.
-
-        |参数名称：币种| |参数约束及描述：比如CNY|
-
-        :param currency: The currency of this ListRateOnPeriodDetailResponse.
-        :type: str
-        """
-        self._currency = currency
+        if currency is not None:
+            self.currency = currency
 
     @property
     def official_website_rating_result(self):
@@ -114,6 +92,28 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
         :type: list[OptionalDiscountRatingResult]
         """
         self._optional_discount_rating_results = optional_discount_rating_results
+
+    @property
+    def currency(self):
+        """Gets the currency of this ListRateOnPeriodDetailResponse.
+
+        |参数名称：币种| |参数约束及描述：比如CNY|
+
+        :return: The currency of this ListRateOnPeriodDetailResponse.
+        :rtype: str
+        """
+        return self._currency
+
+    @currency.setter
+    def currency(self, currency):
+        """Sets the currency of this ListRateOnPeriodDetailResponse.
+
+        |参数名称：币种| |参数约束及描述：比如CNY|
+
+        :param currency: The currency of this ListRateOnPeriodDetailResponse.
+        :type: str
+        """
+        self._currency = currency
 
     def to_dict(self):
         """Returns the model properties as a dict"""

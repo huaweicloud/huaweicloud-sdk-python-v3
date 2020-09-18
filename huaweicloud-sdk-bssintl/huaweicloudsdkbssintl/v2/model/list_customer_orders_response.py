@@ -23,50 +23,28 @@ class ListCustomerOrdersResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'order_infos': 'list[CustomerOrderV2]',
-        'total_count': 'int'
+        'total_count': 'int',
+        'order_infos': 'list[CustomerOrderV2]'
     }
 
     attribute_map = {
-        'order_infos': 'order_infos',
-        'total_count': 'total_count'
+        'total_count': 'total_count',
+        'order_infos': 'order_infos'
     }
 
-    def __init__(self, order_infos=None, total_count=None):
+    def __init__(self, total_count=None, order_infos=None):
         """ListCustomerOrdersResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._order_infos = None
         self._total_count = None
+        self._order_infos = None
         self.discriminator = None
 
-        if order_infos is not None:
-            self.order_infos = order_infos
         if total_count is not None:
             self.total_count = total_count
-
-    @property
-    def order_infos(self):
-        """Gets the order_infos of this ListCustomerOrdersResponse.
-
-        |参数名称：客户订单详情信息。具体请参见表 CustomerOrderV2| |参数约束以及描述：客户订单详情信息。具体请参见表 CustomerOrderV2|
-
-        :return: The order_infos of this ListCustomerOrdersResponse.
-        :rtype: list[CustomerOrderV2]
-        """
-        return self._order_infos
-
-    @order_infos.setter
-    def order_infos(self, order_infos):
-        """Sets the order_infos of this ListCustomerOrdersResponse.
-
-        |参数名称：客户订单详情信息。具体请参见表 CustomerOrderV2| |参数约束以及描述：客户订单详情信息。具体请参见表 CustomerOrderV2|
-
-        :param order_infos: The order_infos of this ListCustomerOrdersResponse.
-        :type: list[CustomerOrderV2]
-        """
-        self._order_infos = order_infos
+        if order_infos is not None:
+            self.order_infos = order_infos
 
     @property
     def total_count(self):
@@ -89,6 +67,28 @@ class ListCustomerOrdersResponse(SdkResponse):
         :type: int
         """
         self._total_count = total_count
+
+    @property
+    def order_infos(self):
+        """Gets the order_infos of this ListCustomerOrdersResponse.
+
+        |参数名称：客户订单详情信息。具体请参见表 CustomerOrderV2| |参数约束以及描述：客户订单详情信息。具体请参见表 CustomerOrderV2|
+
+        :return: The order_infos of this ListCustomerOrdersResponse.
+        :rtype: list[CustomerOrderV2]
+        """
+        return self._order_infos
+
+    @order_infos.setter
+    def order_infos(self, order_infos):
+        """Sets the order_infos of this ListCustomerOrdersResponse.
+
+        |参数名称：客户订单详情信息。具体请参见表 CustomerOrderV2| |参数约束以及描述：客户订单详情信息。具体请参见表 CustomerOrderV2|
+
+        :param order_infos: The order_infos of this ListCustomerOrdersResponse.
+        :type: list[CustomerOrderV2]
+        """
+        self._order_infos = order_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

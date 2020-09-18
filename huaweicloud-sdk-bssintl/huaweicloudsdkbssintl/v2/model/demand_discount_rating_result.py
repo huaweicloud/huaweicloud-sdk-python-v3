@@ -23,65 +23,43 @@ class DemandDiscountRatingResult:
     sensitive_list = []
 
     openapi_types = {
-        'amount': 'float',
         'discount_id': 'str',
-        'discount_name': 'str',
         'discount_type': 'int',
-        'measure_id': 'int'
+        'amount': 'float',
+        'measure_id': 'int',
+        'discount_name': 'str'
     }
 
     attribute_map = {
-        'amount': 'amount',
         'discount_id': 'discount_id',
-        'discount_name': 'discount_name',
         'discount_type': 'discount_type',
-        'measure_id': 'measure_id'
+        'amount': 'amount',
+        'measure_id': 'measure_id',
+        'discount_name': 'discount_name'
     }
 
-    def __init__(self, amount=None, discount_id=None, discount_name=None, discount_type=None, measure_id=None):
+    def __init__(self, discount_id=None, discount_type=None, amount=None, measure_id=None, discount_name=None):
         """DemandDiscountRatingResult - a model defined in huaweicloud sdk"""
         
         
 
-        self._amount = None
         self._discount_id = None
-        self._discount_name = None
         self._discount_type = None
+        self._amount = None
         self._measure_id = None
+        self._discount_name = None
         self.discriminator = None
 
-        if amount is not None:
-            self.amount = amount
         if discount_id is not None:
             self.discount_id = discount_id
-        if discount_name is not None:
-            self.discount_name = discount_name
         if discount_type is not None:
             self.discount_type = discount_type
+        if amount is not None:
+            self.amount = amount
         if measure_id is not None:
             self.measure_id = measure_id
-
-    @property
-    def amount(self):
-        """Gets the amount of this DemandDiscountRatingResult.
-
-        优惠金额
-
-        :return: The amount of this DemandDiscountRatingResult.
-        :rtype: float
-        """
-        return self._amount
-
-    @amount.setter
-    def amount(self, amount):
-        """Sets the amount of this DemandDiscountRatingResult.
-
-        优惠金额
-
-        :param amount: The amount of this DemandDiscountRatingResult.
-        :type: float
-        """
-        self._amount = amount
+        if discount_name is not None:
+            self.discount_name = discount_name
 
     @property
     def discount_id(self):
@@ -106,28 +84,6 @@ class DemandDiscountRatingResult:
         self._discount_id = discount_id
 
     @property
-    def discount_name(self):
-        """Gets the discount_name of this DemandDiscountRatingResult.
-
-        |参数名称：折扣名称| |参数约束及描述：折扣名称|
-
-        :return: The discount_name of this DemandDiscountRatingResult.
-        :rtype: str
-        """
-        return self._discount_name
-
-    @discount_name.setter
-    def discount_name(self, discount_name):
-        """Sets the discount_name of this DemandDiscountRatingResult.
-
-        |参数名称：折扣名称| |参数约束及描述：折扣名称|
-
-        :param discount_name: The discount_name of this DemandDiscountRatingResult.
-        :type: str
-        """
-        self._discount_name = discount_name
-
-    @property
     def discount_type(self):
         """Gets the discount_type of this DemandDiscountRatingResult.
 
@@ -150,6 +106,28 @@ class DemandDiscountRatingResult:
         self._discount_type = discount_type
 
     @property
+    def amount(self):
+        """Gets the amount of this DemandDiscountRatingResult.
+
+        优惠金额
+
+        :return: The amount of this DemandDiscountRatingResult.
+        :rtype: float
+        """
+        return self._amount
+
+    @amount.setter
+    def amount(self, amount):
+        """Sets the amount of this DemandDiscountRatingResult.
+
+        优惠金额
+
+        :param amount: The amount of this DemandDiscountRatingResult.
+        :type: float
+        """
+        self._amount = amount
+
+    @property
     def measure_id(self):
         """Gets the measure_id of this DemandDiscountRatingResult.
 
@@ -170,6 +148,28 @@ class DemandDiscountRatingResult:
         :type: int
         """
         self._measure_id = measure_id
+
+    @property
+    def discount_name(self):
+        """Gets the discount_name of this DemandDiscountRatingResult.
+
+        |参数名称：折扣名称| |参数约束及描述：折扣名称|
+
+        :return: The discount_name of this DemandDiscountRatingResult.
+        :rtype: str
+        """
+        return self._discount_name
+
+    @discount_name.setter
+    def discount_name(self, discount_name):
+        """Sets the discount_name of this DemandDiscountRatingResult.
+
+        |参数名称：折扣名称| |参数约束及描述：折扣名称|
+
+        :param discount_name: The discount_name of this DemandDiscountRatingResult.
+        :type: str
+        """
+        self._discount_name = discount_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

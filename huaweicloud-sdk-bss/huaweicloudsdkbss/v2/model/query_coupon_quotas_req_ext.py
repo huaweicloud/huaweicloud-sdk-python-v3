@@ -23,54 +23,60 @@ class QueryCouponQuotasReqExt:
     sensitive_list = []
 
     openapi_types = {
+        'quota_ids': 'list[str]',
+        'quota_status_list': 'list[int]',
+        'quota_type': 'int',
         'create_time_begin': 'str',
         'create_time_end': 'str',
         'effective_time_begin': 'str',
         'effective_time_end': 'str',
         'expire_time_begin': 'str',
         'expire_time_end': 'str',
-        'indirect_partner_id': 'str',
-        'limit': 'int',
         'offset': 'int',
-        'quota_ids': 'list[str]',
-        'quota_status_list': 'list[int]',
-        'quota_type': 'int'
+        'limit': 'int',
+        'indirect_partner_id': 'str'
     }
 
     attribute_map = {
+        'quota_ids': 'quota_ids',
+        'quota_status_list': 'quota_status_list',
+        'quota_type': 'quota_type',
         'create_time_begin': 'create_time_begin',
         'create_time_end': 'create_time_end',
         'effective_time_begin': 'effective_time_begin',
         'effective_time_end': 'effective_time_end',
         'expire_time_begin': 'expire_time_begin',
         'expire_time_end': 'expire_time_end',
-        'indirect_partner_id': 'indirect_partner_id',
-        'limit': 'limit',
         'offset': 'offset',
-        'quota_ids': 'quota_ids',
-        'quota_status_list': 'quota_status_list',
-        'quota_type': 'quota_type'
+        'limit': 'limit',
+        'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, create_time_begin=None, create_time_end=None, effective_time_begin=None, effective_time_end=None, expire_time_begin=None, expire_time_end=None, indirect_partner_id=None, limit=10, offset=0, quota_ids=None, quota_status_list=None, quota_type=None):
+    def __init__(self, quota_ids=None, quota_status_list=None, quota_type=None, create_time_begin=None, create_time_end=None, effective_time_begin=None, effective_time_end=None, expire_time_begin=None, expire_time_end=None, offset=0, limit=10, indirect_partner_id=None):
         """QueryCouponQuotasReqExt - a model defined in huaweicloud sdk"""
         
         
 
+        self._quota_ids = None
+        self._quota_status_list = None
+        self._quota_type = None
         self._create_time_begin = None
         self._create_time_end = None
         self._effective_time_begin = None
         self._effective_time_end = None
         self._expire_time_begin = None
         self._expire_time_end = None
-        self._indirect_partner_id = None
-        self._limit = None
         self._offset = None
-        self._quota_ids = None
-        self._quota_status_list = None
-        self._quota_type = None
+        self._limit = None
+        self._indirect_partner_id = None
         self.discriminator = None
 
+        if quota_ids is not None:
+            self.quota_ids = quota_ids
+        if quota_status_list is not None:
+            self.quota_status_list = quota_status_list
+        if quota_type is not None:
+            self.quota_type = quota_type
         if create_time_begin is not None:
             self.create_time_begin = create_time_begin
         if create_time_end is not None:
@@ -83,18 +89,78 @@ class QueryCouponQuotasReqExt:
             self.expire_time_begin = expire_time_begin
         if expire_time_end is not None:
             self.expire_time_end = expire_time_end
-        if indirect_partner_id is not None:
-            self.indirect_partner_id = indirect_partner_id
-        if limit is not None:
-            self.limit = limit
         if offset is not None:
             self.offset = offset
-        if quota_ids is not None:
-            self.quota_ids = quota_ids
-        if quota_status_list is not None:
-            self.quota_status_list = quota_status_list
-        if quota_type is not None:
-            self.quota_type = quota_type
+        if limit is not None:
+            self.limit = limit
+        if indirect_partner_id is not None:
+            self.indirect_partner_id = indirect_partner_id
+
+    @property
+    def quota_ids(self):
+        """Gets the quota_ids of this QueryCouponQuotasReqExt.
+
+        |参数名称：额度ID列表。| |参数约束以及描述：额度ID列表。|
+
+        :return: The quota_ids of this QueryCouponQuotasReqExt.
+        :rtype: list[str]
+        """
+        return self._quota_ids
+
+    @quota_ids.setter
+    def quota_ids(self, quota_ids):
+        """Sets the quota_ids of this QueryCouponQuotasReqExt.
+
+        |参数名称：额度ID列表。| |参数约束以及描述：额度ID列表。|
+
+        :param quota_ids: The quota_ids of this QueryCouponQuotasReqExt.
+        :type: list[str]
+        """
+        self._quota_ids = quota_ids
+
+    @property
+    def quota_status_list(self):
+        """Gets the quota_status_list of this QueryCouponQuotasReqExt.
+
+        |参数名称：额度状态列表。| |参数约束以及描述：额度状态列表。|
+
+        :return: The quota_status_list of this QueryCouponQuotasReqExt.
+        :rtype: list[int]
+        """
+        return self._quota_status_list
+
+    @quota_status_list.setter
+    def quota_status_list(self, quota_status_list):
+        """Sets the quota_status_list of this QueryCouponQuotasReqExt.
+
+        |参数名称：额度状态列表。| |参数约束以及描述：额度状态列表。|
+
+        :param quota_status_list: The quota_status_list of this QueryCouponQuotasReqExt.
+        :type: list[int]
+        """
+        self._quota_status_list = quota_status_list
+
+    @property
+    def quota_type(self):
+        """Gets the quota_type of this QueryCouponQuotasReqExt.
+
+        |参数名称：额度类型：0：代金券额度；1：现金券额度。| |参数的约束及描述：额度类型：0：代金券额度；1：现金券额度。|
+
+        :return: The quota_type of this QueryCouponQuotasReqExt.
+        :rtype: int
+        """
+        return self._quota_type
+
+    @quota_type.setter
+    def quota_type(self, quota_type):
+        """Sets the quota_type of this QueryCouponQuotasReqExt.
+
+        |参数名称：额度类型：0：代金券额度；1：现金券额度。| |参数的约束及描述：额度类型：0：代金券额度；1：现金券额度。|
+
+        :param quota_type: The quota_type of this QueryCouponQuotasReqExt.
+        :type: int
+        """
+        self._quota_type = quota_type
 
     @property
     def create_time_begin(self):
@@ -229,26 +295,26 @@ class QueryCouponQuotasReqExt:
         self._expire_time_end = expire_time_end
 
     @property
-    def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this QueryCouponQuotasReqExt.
+    def offset(self):
+        """Gets the offset of this QueryCouponQuotasReqExt.
 
-        |参数名称：精英服务商（二级经销商）ID，如果要查询二级经销商的额度，需要输入这个参数，否则查询的是一级经销商本人的。| |参数的约束及描述：精英服务商（二级经销商）ID，如果要查询二级经销商的额度，需要输入这个参数，否则查询的是一级经销商本人的。|
+        |参数名称：偏移量，从0开始默认取值为0。| |参数的约束及描述：偏移量，从0开始默认取值为0。|
 
-        :return: The indirect_partner_id of this QueryCouponQuotasReqExt.
-        :rtype: str
+        :return: The offset of this QueryCouponQuotasReqExt.
+        :rtype: int
         """
-        return self._indirect_partner_id
+        return self._offset
 
-    @indirect_partner_id.setter
-    def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this QueryCouponQuotasReqExt.
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this QueryCouponQuotasReqExt.
 
-        |参数名称：精英服务商（二级经销商）ID，如果要查询二级经销商的额度，需要输入这个参数，否则查询的是一级经销商本人的。| |参数的约束及描述：精英服务商（二级经销商）ID，如果要查询二级经销商的额度，需要输入这个参数，否则查询的是一级经销商本人的。|
+        |参数名称：偏移量，从0开始默认取值为0。| |参数的约束及描述：偏移量，从0开始默认取值为0。|
 
-        :param indirect_partner_id: The indirect_partner_id of this QueryCouponQuotasReqExt.
-        :type: str
+        :param offset: The offset of this QueryCouponQuotasReqExt.
+        :type: int
         """
-        self._indirect_partner_id = indirect_partner_id
+        self._offset = offset
 
     @property
     def limit(self):
@@ -273,92 +339,26 @@ class QueryCouponQuotasReqExt:
         self._limit = limit
 
     @property
-    def offset(self):
-        """Gets the offset of this QueryCouponQuotasReqExt.
+    def indirect_partner_id(self):
+        """Gets the indirect_partner_id of this QueryCouponQuotasReqExt.
 
-        |参数名称：偏移量，从0开始默认取值为0。| |参数的约束及描述：偏移量，从0开始默认取值为0。|
+        |参数名称：精英服务商（二级经销商）ID，如果要查询二级经销商的额度，需要输入这个参数，否则查询的是一级经销商本人的。| |参数的约束及描述：精英服务商（二级经销商）ID，如果要查询二级经销商的额度，需要输入这个参数，否则查询的是一级经销商本人的。|
 
-        :return: The offset of this QueryCouponQuotasReqExt.
-        :rtype: int
+        :return: The indirect_partner_id of this QueryCouponQuotasReqExt.
+        :rtype: str
         """
-        return self._offset
+        return self._indirect_partner_id
 
-    @offset.setter
-    def offset(self, offset):
-        """Sets the offset of this QueryCouponQuotasReqExt.
+    @indirect_partner_id.setter
+    def indirect_partner_id(self, indirect_partner_id):
+        """Sets the indirect_partner_id of this QueryCouponQuotasReqExt.
 
-        |参数名称：偏移量，从0开始默认取值为0。| |参数的约束及描述：偏移量，从0开始默认取值为0。|
+        |参数名称：精英服务商（二级经销商）ID，如果要查询二级经销商的额度，需要输入这个参数，否则查询的是一级经销商本人的。| |参数的约束及描述：精英服务商（二级经销商）ID，如果要查询二级经销商的额度，需要输入这个参数，否则查询的是一级经销商本人的。|
 
-        :param offset: The offset of this QueryCouponQuotasReqExt.
-        :type: int
+        :param indirect_partner_id: The indirect_partner_id of this QueryCouponQuotasReqExt.
+        :type: str
         """
-        self._offset = offset
-
-    @property
-    def quota_ids(self):
-        """Gets the quota_ids of this QueryCouponQuotasReqExt.
-
-        |参数名称：额度ID列表。| |参数约束以及描述：额度ID列表。|
-
-        :return: The quota_ids of this QueryCouponQuotasReqExt.
-        :rtype: list[str]
-        """
-        return self._quota_ids
-
-    @quota_ids.setter
-    def quota_ids(self, quota_ids):
-        """Sets the quota_ids of this QueryCouponQuotasReqExt.
-
-        |参数名称：额度ID列表。| |参数约束以及描述：额度ID列表。|
-
-        :param quota_ids: The quota_ids of this QueryCouponQuotasReqExt.
-        :type: list[str]
-        """
-        self._quota_ids = quota_ids
-
-    @property
-    def quota_status_list(self):
-        """Gets the quota_status_list of this QueryCouponQuotasReqExt.
-
-        |参数名称：额度状态列表。| |参数约束以及描述：额度状态列表。|
-
-        :return: The quota_status_list of this QueryCouponQuotasReqExt.
-        :rtype: list[int]
-        """
-        return self._quota_status_list
-
-    @quota_status_list.setter
-    def quota_status_list(self, quota_status_list):
-        """Sets the quota_status_list of this QueryCouponQuotasReqExt.
-
-        |参数名称：额度状态列表。| |参数约束以及描述：额度状态列表。|
-
-        :param quota_status_list: The quota_status_list of this QueryCouponQuotasReqExt.
-        :type: list[int]
-        """
-        self._quota_status_list = quota_status_list
-
-    @property
-    def quota_type(self):
-        """Gets the quota_type of this QueryCouponQuotasReqExt.
-
-        |参数名称：额度类型：0：代金券额度；1：现金券额度。| |参数的约束及描述：额度类型：0：代金券额度；1：现金券额度。|
-
-        :return: The quota_type of this QueryCouponQuotasReqExt.
-        :rtype: int
-        """
-        return self._quota_type
-
-    @quota_type.setter
-    def quota_type(self, quota_type):
-        """Sets the quota_type of this QueryCouponQuotasReqExt.
-
-        |参数名称：额度类型：0：代金券额度；1：现金券额度。| |参数的约束及描述：额度类型：0：代金券额度；1：现金券额度。|
-
-        :param quota_type: The quota_type of this QueryCouponQuotasReqExt.
-        :type: int
-        """
-        self._quota_type = quota_type
+        self._indirect_partner_id = indirect_partner_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

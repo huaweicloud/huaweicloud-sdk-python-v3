@@ -23,114 +23,48 @@ class AmountInfomationV2:
     sensitive_list = []
 
     openapi_types = {
-        'commission_amount': 'float',
-        'consumed_amount': 'float',
-        'coupon_amount': 'float',
         'discounts': 'list[DiscountItemV2]',
         'flexipurchase_coupon_amount': 'float',
-        'stored_card_amount': 'float'
+        'coupon_amount': 'float',
+        'stored_card_amount': 'float',
+        'commission_amount': 'float',
+        'consumed_amount': 'float'
     }
 
     attribute_map = {
-        'commission_amount': 'commission_amount',
-        'consumed_amount': 'consumed_amount',
-        'coupon_amount': 'coupon_amount',
         'discounts': 'discounts',
         'flexipurchase_coupon_amount': 'flexipurchase_coupon_amount',
-        'stored_card_amount': 'stored_card_amount'
+        'coupon_amount': 'coupon_amount',
+        'stored_card_amount': 'stored_card_amount',
+        'commission_amount': 'commission_amount',
+        'consumed_amount': 'consumed_amount'
     }
 
-    def __init__(self, commission_amount=None, consumed_amount=None, coupon_amount=None, discounts=None, flexipurchase_coupon_amount=None, stored_card_amount=None):
+    def __init__(self, discounts=None, flexipurchase_coupon_amount=None, coupon_amount=None, stored_card_amount=None, commission_amount=None, consumed_amount=None):
         """AmountInfomationV2 - a model defined in huaweicloud sdk"""
         
         
 
-        self._commission_amount = None
-        self._consumed_amount = None
-        self._coupon_amount = None
         self._discounts = None
         self._flexipurchase_coupon_amount = None
+        self._coupon_amount = None
         self._stored_card_amount = None
+        self._commission_amount = None
+        self._consumed_amount = None
         self.discriminator = None
 
-        if commission_amount is not None:
-            self.commission_amount = commission_amount
-        if consumed_amount is not None:
-            self.consumed_amount = consumed_amount
-        if coupon_amount is not None:
-            self.coupon_amount = coupon_amount
         if discounts is not None:
             self.discounts = discounts
         if flexipurchase_coupon_amount is not None:
             self.flexipurchase_coupon_amount = flexipurchase_coupon_amount
+        if coupon_amount is not None:
+            self.coupon_amount = coupon_amount
         if stored_card_amount is not None:
             self.stored_card_amount = stored_card_amount
-
-    @property
-    def commission_amount(self):
-        """Gets the commission_amount of this AmountInfomationV2.
-
-        |参数名称：手续费（仅退订订单存在）。| |参数的约束及描述：手续费（仅退订订单存在）。|
-
-        :return: The commission_amount of this AmountInfomationV2.
-        :rtype: float
-        """
-        return self._commission_amount
-
-    @commission_amount.setter
-    def commission_amount(self, commission_amount):
-        """Sets the commission_amount of this AmountInfomationV2.
-
-        |参数名称：手续费（仅退订订单存在）。| |参数的约束及描述：手续费（仅退订订单存在）。|
-
-        :param commission_amount: The commission_amount of this AmountInfomationV2.
-        :type: float
-        """
-        self._commission_amount = commission_amount
-
-    @property
-    def consumed_amount(self):
-        """Gets the consumed_amount of this AmountInfomationV2.
-
-        |参数名称：消费金额（仅退订订单存在）。| |参数的约束及描述：消费金额（仅退订订单存在）。|
-
-        :return: The consumed_amount of this AmountInfomationV2.
-        :rtype: float
-        """
-        return self._consumed_amount
-
-    @consumed_amount.setter
-    def consumed_amount(self, consumed_amount):
-        """Sets the consumed_amount of this AmountInfomationV2.
-
-        |参数名称：消费金额（仅退订订单存在）。| |参数的约束及描述：消费金额（仅退订订单存在）。|
-
-        :param consumed_amount: The consumed_amount of this AmountInfomationV2.
-        :type: float
-        """
-        self._consumed_amount = consumed_amount
-
-    @property
-    def coupon_amount(self):
-        """Gets the coupon_amount of this AmountInfomationV2.
-
-        |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
-
-        :return: The coupon_amount of this AmountInfomationV2.
-        :rtype: float
-        """
-        return self._coupon_amount
-
-    @coupon_amount.setter
-    def coupon_amount(self, coupon_amount):
-        """Sets the coupon_amount of this AmountInfomationV2.
-
-        |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
-
-        :param coupon_amount: The coupon_amount of this AmountInfomationV2.
-        :type: float
-        """
-        self._coupon_amount = coupon_amount
+        if commission_amount is not None:
+            self.commission_amount = commission_amount
+        if consumed_amount is not None:
+            self.consumed_amount = consumed_amount
 
     @property
     def discounts(self):
@@ -177,6 +111,28 @@ class AmountInfomationV2:
         self._flexipurchase_coupon_amount = flexipurchase_coupon_amount
 
     @property
+    def coupon_amount(self):
+        """Gets the coupon_amount of this AmountInfomationV2.
+
+        |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
+
+        :return: The coupon_amount of this AmountInfomationV2.
+        :rtype: float
+        """
+        return self._coupon_amount
+
+    @coupon_amount.setter
+    def coupon_amount(self, coupon_amount):
+        """Sets the coupon_amount of this AmountInfomationV2.
+
+        |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
+
+        :param coupon_amount: The coupon_amount of this AmountInfomationV2.
+        :type: float
+        """
+        self._coupon_amount = coupon_amount
+
+    @property
     def stored_card_amount(self):
         """Gets the stored_card_amount of this AmountInfomationV2.
 
@@ -197,6 +153,50 @@ class AmountInfomationV2:
         :type: float
         """
         self._stored_card_amount = stored_card_amount
+
+    @property
+    def commission_amount(self):
+        """Gets the commission_amount of this AmountInfomationV2.
+
+        |参数名称：手续费（仅退订订单存在）。| |参数的约束及描述：手续费（仅退订订单存在）。|
+
+        :return: The commission_amount of this AmountInfomationV2.
+        :rtype: float
+        """
+        return self._commission_amount
+
+    @commission_amount.setter
+    def commission_amount(self, commission_amount):
+        """Sets the commission_amount of this AmountInfomationV2.
+
+        |参数名称：手续费（仅退订订单存在）。| |参数的约束及描述：手续费（仅退订订单存在）。|
+
+        :param commission_amount: The commission_amount of this AmountInfomationV2.
+        :type: float
+        """
+        self._commission_amount = commission_amount
+
+    @property
+    def consumed_amount(self):
+        """Gets the consumed_amount of this AmountInfomationV2.
+
+        |参数名称：消费金额（仅退订订单存在）。| |参数的约束及描述：消费金额（仅退订订单存在）。|
+
+        :return: The consumed_amount of this AmountInfomationV2.
+        :rtype: float
+        """
+        return self._consumed_amount
+
+    @consumed_amount.setter
+    def consumed_amount(self, consumed_amount):
+        """Sets the consumed_amount of this AmountInfomationV2.
+
+        |参数名称：消费金额（仅退订订单存在）。| |参数的约束及描述：消费金额（仅退订订单存在）。|
+
+        :param consumed_amount: The consumed_amount of this AmountInfomationV2.
+        :type: float
+        """
+        self._consumed_amount = consumed_amount
 
     def to_dict(self):
         """Returns the model properties as a dict"""

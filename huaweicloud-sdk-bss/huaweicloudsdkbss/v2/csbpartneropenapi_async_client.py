@@ -14,7 +14,7 @@ from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
-class BssAsyncClient(Client):
+class CSBPartnerOpenAPIAsyncClient(Client):
     """
     :param configuration: .Configuration object for this client
     :param pool_threads: The number of threads to use for async requests
@@ -34,7 +34,7 @@ class BssAsyncClient(Client):
     }
 
     def __init__(self):
-        super(BssAsyncClient, self).__init__()
+        super(CSBPartnerOpenAPIAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkbss.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
@@ -453,6 +453,62 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CheckUserIdentityResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_enterprise_project_auth_async(self, request):
+        """开通企业项目
+
+        功能描述：客户开通自身的企业项目功能
+
+        :param CreateEnterpriseProjectAuthRequest request
+        :return: CreateEnterpriseProjectAuthResponse
+        """
+        return self.create_enterprise_project_auth_with_http_info(request)
+
+    def create_enterprise_project_auth_with_http_info(self, request):
+        """开通企业项目
+
+        功能描述：客户开通自身的企业项目功能
+
+        :param CreateEnterpriseProjectAuthRequest request
+        :return: CreateEnterpriseProjectAuthResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/enterprises/enterprise-projects/authority',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateEnterpriseProjectAuthResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1097,7 +1153,7 @@ class BssAsyncClient(Client):
         :return: ListCustomerOnDemandResourcesResponse
         """
 
-        all_params = ['req']
+        all_params = ['req', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1110,6 +1166,8 @@ class BssAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -1359,7 +1417,7 @@ class BssAsyncClient(Client):
         :return: ListCustomerselfResourceRecordsResponse
         """
 
-        all_params = ['cycle', 'charge_mode', 'cloud_service_type', 'region', 'bill_type', 'offset', 'limit', 'resource_id', 'enterprise_project_id', 'include_zero_record']
+        all_params = ['cycle', 'charge_mode', 'x_language', 'cloud_service_type', 'region', 'bill_type', 'offset', 'limit', 'resource_id', 'enterprise_project_id', 'include_zero_record', 'method', 'sub_customer_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1390,8 +1448,14 @@ class BssAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'include_zero_record' in local_var_params:
             query_params.append(('include_zero_record', local_var_params['include_zero_record']))
+        if 'method' in local_var_params:
+            query_params.append(('method', local_var_params['method']))
+        if 'sub_customer_id' in local_var_params:
+            query_params.append(('sub_customer_id', local_var_params['sub_customer_id']))
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -1411,6 +1475,70 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCustomerselfResourceRecordsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_enterprise_multi_account_async(self, request):
+        """查询企业子可回收余额
+
+        功能描述：查询企业子可回收余额
+
+        :param ListEnterpriseMultiAccountRequest request
+        :return: ListEnterpriseMultiAccountResponse
+        """
+        return self.list_enterprise_multi_account_with_http_info(request)
+
+    def list_enterprise_multi_account_with_http_info(self, request):
+        """查询企业子可回收余额
+
+        功能描述：查询企业子可回收余额
+
+        :param ListEnterpriseMultiAccountRequest request
+        :return: ListEnterpriseMultiAccountResponse
+        """
+
+        all_params = ['sub_customer_id', 'balance_type', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'sub_customer_id' in local_var_params:
+            query_params.append(('sub_customer_id', local_var_params['sub_customer_id']))
+        if 'balance_type' in local_var_params:
+            query_params.append(('balance_type', local_var_params['balance_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/enterprises/multi-accounts/retrieve-amount',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEnterpriseMultiAccountResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2077,6 +2205,66 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListPayPerUseCustomerResourcesResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_postal_address_async(self, request):
+        """查询邮寄地址
+
+        功能描述：查询邮寄地址
+
+        :param ListPostalAddressRequest request
+        :return: ListPostalAddressResponse
+        """
+        return self.list_postal_address_with_http_info(request)
+
+    def list_postal_address_with_http_info(self, request):
+        """查询邮寄地址
+
+        功能描述：查询邮寄地址
+
+        :param ListPostalAddressRequest request
+        :return: ListPostalAddressResponse
+        """
+
+        all_params = ['offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/customers/postal-addresses',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListPostalAddressResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3345,7 +3533,7 @@ class BssAsyncClient(Client):
         :return: ShowCustomerMonthlySumResponse
         """
 
-        all_params = ['bill_cycle', 'service_type_code', 'enterprise_project_id', 'offset', 'limit']
+        all_params = ['bill_cycle', 'service_type_code', 'enterprise_project_id', 'offset', 'limit', 'method', 'sub_customer_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3366,6 +3554,10 @@ class BssAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'method' in local_var_params:
+            query_params.append(('method', local_var_params['method']))
+        if 'sub_customer_id' in local_var_params:
+            query_params.append(('sub_customer_id', local_var_params['sub_customer_id']))
 
         header_params = {}
 
@@ -3451,6 +3643,68 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowCustomerOrderDetailsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_multi_account_transfer_amount_async(self, request):
+        """查询企业主的可拨款余额
+
+        功能描述：查询企业主的可拨款余额
+
+        :param ShowMultiAccountTransferAmountRequest request
+        :return: ShowMultiAccountTransferAmountResponse
+        """
+        return self.show_multi_account_transfer_amount_with_http_info(request)
+
+    def show_multi_account_transfer_amount_with_http_info(self, request):
+        """查询企业主的可拨款余额
+
+        功能描述：查询企业主的可拨款余额
+
+        :param ShowMultiAccountTransferAmountRequest request
+        :return: ShowMultiAccountTransferAmountResponse
+        """
+
+        all_params = ['balance_type', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'balance_type' in local_var_params:
+            query_params.append(('balance_type', local_var_params['balance_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/enterprises/multi-accounts/transfer-amount',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowMultiAccountTransferAmountResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)

@@ -23,53 +23,97 @@ class DemandProductRatingResult:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
+        'product_id': 'str',
         'amount': 'float',
         'discount_amount': 'float',
-        'discount_rating_results': 'list[DemandDiscountRatingResult]',
-        'id': 'str',
-        'measure_id': 'int',
         'official_website_amount': 'float',
-        'product_id': 'str'
+        'measure_id': 'int',
+        'discount_rating_results': 'list[DemandDiscountRatingResult]'
     }
 
     attribute_map = {
+        'id': 'id',
+        'product_id': 'product_id',
         'amount': 'amount',
         'discount_amount': 'discount_amount',
-        'discount_rating_results': 'discount_rating_results',
-        'id': 'id',
-        'measure_id': 'measure_id',
         'official_website_amount': 'official_website_amount',
-        'product_id': 'product_id'
+        'measure_id': 'measure_id',
+        'discount_rating_results': 'discount_rating_results'
     }
 
-    def __init__(self, amount=None, discount_amount=None, discount_rating_results=None, id=None, measure_id=None, official_website_amount=None, product_id=None):
+    def __init__(self, id=None, product_id=None, amount=None, discount_amount=None, official_website_amount=None, measure_id=None, discount_rating_results=None):
         """DemandProductRatingResult - a model defined in huaweicloud sdk"""
         
         
 
+        self._id = None
+        self._product_id = None
         self._amount = None
         self._discount_amount = None
-        self._discount_rating_results = None
-        self._id = None
-        self._measure_id = None
         self._official_website_amount = None
-        self._product_id = None
+        self._measure_id = None
+        self._discount_rating_results = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
+        if product_id is not None:
+            self.product_id = product_id
         if amount is not None:
             self.amount = amount
         if discount_amount is not None:
             self.discount_amount = discount_amount
-        if discount_rating_results is not None:
-            self.discount_rating_results = discount_rating_results
-        if id is not None:
-            self.id = id
-        if measure_id is not None:
-            self.measure_id = measure_id
         if official_website_amount is not None:
             self.official_website_amount = official_website_amount
-        if product_id is not None:
-            self.product_id = product_id
+        if measure_id is not None:
+            self.measure_id = measure_id
+        if discount_rating_results is not None:
+            self.discount_rating_results = discount_rating_results
+
+    @property
+    def id(self):
+        """Gets the id of this DemandProductRatingResult.
+
+        |参数名称：ID标识| |参数约束及描述：同一次询价中不能重复，用于标识返回询价结果和请求的映射关系|
+
+        :return: The id of this DemandProductRatingResult.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this DemandProductRatingResult.
+
+        |参数名称：ID标识| |参数约束及描述：同一次询价中不能重复，用于标识返回询价结果和请求的映射关系|
+
+        :param id: The id of this DemandProductRatingResult.
+        :type: str
+        """
+        self._id = id
+
+    @property
+    def product_id(self):
+        """Gets the product_id of this DemandProductRatingResult.
+
+        |参数名称：寻到的产品ID| |参数约束及描述：寻到的产品ID|
+
+        :return: The product_id of this DemandProductRatingResult.
+        :rtype: str
+        """
+        return self._product_id
+
+    @product_id.setter
+    def product_id(self, product_id):
+        """Sets the product_id of this DemandProductRatingResult.
+
+        |参数名称：寻到的产品ID| |参数约束及描述：寻到的产品ID|
+
+        :param product_id: The product_id of this DemandProductRatingResult.
+        :type: str
+        """
+        self._product_id = product_id
 
     @property
     def amount(self):
@@ -116,48 +160,26 @@ class DemandProductRatingResult:
         self._discount_amount = discount_amount
 
     @property
-    def discount_rating_results(self):
-        """Gets the discount_rating_results of this DemandProductRatingResult.
+    def official_website_amount(self):
+        """Gets the official_website_amount of this DemandProductRatingResult.
 
-        |参数名称：折扣优惠明细| |参数的约束及描述：包含产品本身的促销信息，同时包含商务或者伙伴折扣的优惠信息|
+        |参数名称：官网价| |参数约束及描述：官网价|
 
-        :return: The discount_rating_results of this DemandProductRatingResult.
-        :rtype: list[DemandDiscountRatingResult]
+        :return: The official_website_amount of this DemandProductRatingResult.
+        :rtype: float
         """
-        return self._discount_rating_results
+        return self._official_website_amount
 
-    @discount_rating_results.setter
-    def discount_rating_results(self, discount_rating_results):
-        """Sets the discount_rating_results of this DemandProductRatingResult.
+    @official_website_amount.setter
+    def official_website_amount(self, official_website_amount):
+        """Sets the official_website_amount of this DemandProductRatingResult.
 
-        |参数名称：折扣优惠明细| |参数的约束及描述：包含产品本身的促销信息，同时包含商务或者伙伴折扣的优惠信息|
+        |参数名称：官网价| |参数约束及描述：官网价|
 
-        :param discount_rating_results: The discount_rating_results of this DemandProductRatingResult.
-        :type: list[DemandDiscountRatingResult]
+        :param official_website_amount: The official_website_amount of this DemandProductRatingResult.
+        :type: float
         """
-        self._discount_rating_results = discount_rating_results
-
-    @property
-    def id(self):
-        """Gets the id of this DemandProductRatingResult.
-
-        |参数名称：ID标识| |参数约束及描述：同一次询价中不能重复，用于标识返回询价结果和请求的映射关系|
-
-        :return: The id of this DemandProductRatingResult.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this DemandProductRatingResult.
-
-        |参数名称：ID标识| |参数约束及描述：同一次询价中不能重复，用于标识返回询价结果和请求的映射关系|
-
-        :param id: The id of this DemandProductRatingResult.
-        :type: str
-        """
-        self._id = id
+        self._official_website_amount = official_website_amount
 
     @property
     def measure_id(self):
@@ -182,48 +204,26 @@ class DemandProductRatingResult:
         self._measure_id = measure_id
 
     @property
-    def official_website_amount(self):
-        """Gets the official_website_amount of this DemandProductRatingResult.
+    def discount_rating_results(self):
+        """Gets the discount_rating_results of this DemandProductRatingResult.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        |参数名称：折扣优惠明细| |参数的约束及描述：包含产品本身的促销信息，同时包含商务或者伙伴折扣的优惠信息|
 
-        :return: The official_website_amount of this DemandProductRatingResult.
-        :rtype: float
+        :return: The discount_rating_results of this DemandProductRatingResult.
+        :rtype: list[DemandDiscountRatingResult]
         """
-        return self._official_website_amount
+        return self._discount_rating_results
 
-    @official_website_amount.setter
-    def official_website_amount(self, official_website_amount):
-        """Sets the official_website_amount of this DemandProductRatingResult.
+    @discount_rating_results.setter
+    def discount_rating_results(self, discount_rating_results):
+        """Sets the discount_rating_results of this DemandProductRatingResult.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        |参数名称：折扣优惠明细| |参数的约束及描述：包含产品本身的促销信息，同时包含商务或者伙伴折扣的优惠信息|
 
-        :param official_website_amount: The official_website_amount of this DemandProductRatingResult.
-        :type: float
+        :param discount_rating_results: The discount_rating_results of this DemandProductRatingResult.
+        :type: list[DemandDiscountRatingResult]
         """
-        self._official_website_amount = official_website_amount
-
-    @property
-    def product_id(self):
-        """Gets the product_id of this DemandProductRatingResult.
-
-        |参数名称：寻到的产品ID| |参数约束及描述：寻到的产品ID|
-
-        :return: The product_id of this DemandProductRatingResult.
-        :rtype: str
-        """
-        return self._product_id
-
-    @product_id.setter
-    def product_id(self, product_id):
-        """Sets the product_id of this DemandProductRatingResult.
-
-        |参数名称：寻到的产品ID| |参数约束及描述：寻到的产品ID|
-
-        :param product_id: The product_id of this DemandProductRatingResult.
-        :type: str
-        """
-        self._product_id = product_id
+        self._discount_rating_results = discount_rating_results
 
     def to_dict(self):
         """Returns the model properties as a dict"""

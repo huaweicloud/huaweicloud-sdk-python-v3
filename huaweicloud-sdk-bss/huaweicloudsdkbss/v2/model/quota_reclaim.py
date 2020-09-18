@@ -23,50 +23,28 @@ class QuotaReclaim:
     sensitive_list = []
 
     openapi_types = {
-        'quota_balance': 'float',
-        'quota_id': 'str'
+        'quota_id': 'str',
+        'quota_balance': 'float'
     }
 
     attribute_map = {
-        'quota_balance': 'quota_balance',
-        'quota_id': 'quota_id'
+        'quota_id': 'quota_id',
+        'quota_balance': 'quota_balance'
     }
 
-    def __init__(self, quota_balance=None, quota_id=None):
+    def __init__(self, quota_id=None, quota_balance=None):
         """QuotaReclaim - a model defined in huaweicloud sdk"""
         
         
 
-        self._quota_balance = None
         self._quota_id = None
+        self._quota_balance = None
         self.discriminator = None
 
-        if quota_balance is not None:
-            self.quota_balance = quota_balance
         if quota_id is not None:
             self.quota_id = quota_id
-
-    @property
-    def quota_balance(self):
-        """Gets the quota_balance of this QuotaReclaim.
-
-        |参数名称：被回收的代金券的余额| |参数的约束及描述：被回收的代金券的余额|
-
-        :return: The quota_balance of this QuotaReclaim.
-        :rtype: float
-        """
-        return self._quota_balance
-
-    @quota_balance.setter
-    def quota_balance(self, quota_balance):
-        """Sets the quota_balance of this QuotaReclaim.
-
-        |参数名称：被回收的代金券的余额| |参数的约束及描述：被回收的代金券的余额|
-
-        :param quota_balance: The quota_balance of this QuotaReclaim.
-        :type: float
-        """
-        self._quota_balance = quota_balance
+        if quota_balance is not None:
+            self.quota_balance = quota_balance
 
     @property
     def quota_id(self):
@@ -89,6 +67,28 @@ class QuotaReclaim:
         :type: str
         """
         self._quota_id = quota_id
+
+    @property
+    def quota_balance(self):
+        """Gets the quota_balance of this QuotaReclaim.
+
+        |参数名称：被回收的代金券的余额| |参数的约束及描述：被回收的代金券的余额|
+
+        :return: The quota_balance of this QuotaReclaim.
+        :rtype: float
+        """
+        return self._quota_balance
+
+    @quota_balance.setter
+    def quota_balance(self, quota_balance):
+        """Sets the quota_balance of this QuotaReclaim.
+
+        |参数名称：被回收的代金券的余额| |参数的约束及描述：被回收的代金券的余额|
+
+        :param quota_balance: The quota_balance of this QuotaReclaim.
+        :type: float
+        """
+        self._quota_balance = quota_balance
 
     def to_dict(self):
         """Returns the model properties as a dict"""

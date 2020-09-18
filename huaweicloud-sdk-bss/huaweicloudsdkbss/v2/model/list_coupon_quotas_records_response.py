@@ -23,50 +23,28 @@ class ListCouponQuotasRecordsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'records': 'list[QuotaRecord]',
-        'total_count': 'int'
+        'total_count': 'int',
+        'records': 'list[QuotaRecord]'
     }
 
     attribute_map = {
-        'records': 'records',
-        'total_count': 'total_count'
+        'total_count': 'total_count',
+        'records': 'records'
     }
 
-    def __init__(self, records=None, total_count=None):
+    def __init__(self, total_count=None, records=None):
         """ListCouponQuotasRecordsResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._records = None
         self._total_count = None
+        self._records = None
         self.discriminator = None
 
-        if records is not None:
-            self.records = records
         if total_count is not None:
             self.total_count = total_count
-
-    @property
-    def records(self):
-        """Gets the records of this ListCouponQuotasRecordsResponse.
-
-        |参数名称：记录列表。具体请参见表 QuotaRecord。| |参数约束以及描述：记录列表。具体请参见表 QuotaRecord。|
-
-        :return: The records of this ListCouponQuotasRecordsResponse.
-        :rtype: list[QuotaRecord]
-        """
-        return self._records
-
-    @records.setter
-    def records(self, records):
-        """Sets the records of this ListCouponQuotasRecordsResponse.
-
-        |参数名称：记录列表。具体请参见表 QuotaRecord。| |参数约束以及描述：记录列表。具体请参见表 QuotaRecord。|
-
-        :param records: The records of this ListCouponQuotasRecordsResponse.
-        :type: list[QuotaRecord]
-        """
-        self._records = records
+        if records is not None:
+            self.records = records
 
     @property
     def total_count(self):
@@ -89,6 +67,28 @@ class ListCouponQuotasRecordsResponse(SdkResponse):
         :type: int
         """
         self._total_count = total_count
+
+    @property
+    def records(self):
+        """Gets the records of this ListCouponQuotasRecordsResponse.
+
+        |参数名称：记录列表。具体请参见表 QuotaRecord。| |参数约束以及描述：记录列表。具体请参见表 QuotaRecord。|
+
+        :return: The records of this ListCouponQuotasRecordsResponse.
+        :rtype: list[QuotaRecord]
+        """
+        return self._records
+
+    @records.setter
+    def records(self, records):
+        """Sets the records of this ListCouponQuotasRecordsResponse.
+
+        |参数名称：记录列表。具体请参见表 QuotaRecord。| |参数约束以及描述：记录列表。具体请参见表 QuotaRecord。|
+
+        :param records: The records of this ListCouponQuotasRecordsResponse.
+        :type: list[QuotaRecord]
+        """
+        self._records = records
 
     def to_dict(self):
         """Returns the model properties as a dict"""

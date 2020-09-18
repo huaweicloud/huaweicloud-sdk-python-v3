@@ -23,55 +23,33 @@ class ListCustomerselfResourceRecordsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'currency': 'str',
         'fee_records': 'list[ResFeeRecordV2]',
-        'total_count': 'int'
+        'total_count': 'int',
+        'currency': 'str'
     }
 
     attribute_map = {
-        'currency': 'currency',
         'fee_records': 'fee_records',
-        'total_count': 'total_count'
+        'total_count': 'total_count',
+        'currency': 'currency'
     }
 
-    def __init__(self, currency=None, fee_records=None, total_count=None):
+    def __init__(self, fee_records=None, total_count=None, currency=None):
         """ListCustomerselfResourceRecordsResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._currency = None
         self._fee_records = None
         self._total_count = None
+        self._currency = None
         self.discriminator = None
 
-        if currency is not None:
-            self.currency = currency
         if fee_records is not None:
             self.fee_records = fee_records
         if total_count is not None:
             self.total_count = total_count
-
-    @property
-    def currency(self):
-        """Gets the currency of this ListCustomerselfResourceRecordsResponse.
-
-        |参数名称：货币单位代码：CNY：人民币USD：美元| |参数约束及描述：货币单位代码：CNY：人民币USD：美元|
-
-        :return: The currency of this ListCustomerselfResourceRecordsResponse.
-        :rtype: str
-        """
-        return self._currency
-
-    @currency.setter
-    def currency(self, currency):
-        """Sets the currency of this ListCustomerselfResourceRecordsResponse.
-
-        |参数名称：货币单位代码：CNY：人民币USD：美元| |参数约束及描述：货币单位代码：CNY：人民币USD：美元|
-
-        :param currency: The currency of this ListCustomerselfResourceRecordsResponse.
-        :type: str
-        """
-        self._currency = currency
+        if currency is not None:
+            self.currency = currency
 
     @property
     def fee_records(self):
@@ -116,6 +94,28 @@ class ListCustomerselfResourceRecordsResponse(SdkResponse):
         :type: int
         """
         self._total_count = total_count
+
+    @property
+    def currency(self):
+        """Gets the currency of this ListCustomerselfResourceRecordsResponse.
+
+        |参数名称：货币单位代码：CNY：人民币USD：美元| |参数约束及描述：货币单位代码：CNY：人民币USD：美元|
+
+        :return: The currency of this ListCustomerselfResourceRecordsResponse.
+        :rtype: str
+        """
+        return self._currency
+
+    @currency.setter
+    def currency(self, currency):
+        """Sets the currency of this ListCustomerselfResourceRecordsResponse.
+
+        |参数名称：货币单位代码：CNY：人民币USD：美元| |参数约束及描述：货币单位代码：CNY：人民币USD：美元|
+
+        :param currency: The currency of this ListCustomerselfResourceRecordsResponse.
+        :type: str
+        """
+        self._currency = currency
 
     def to_dict(self):
         """Returns the model properties as a dict"""

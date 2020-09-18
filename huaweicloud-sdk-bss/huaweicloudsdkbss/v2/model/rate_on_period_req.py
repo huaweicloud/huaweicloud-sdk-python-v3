@@ -23,48 +23,26 @@ class RateOnPeriodReq:
     sensitive_list = []
 
     openapi_types = {
-        'product_infos': 'list[PeriodProductInfo]',
-        'project_id': 'str'
+        'project_id': 'str',
+        'product_infos': 'list[PeriodProductInfo]'
     }
 
     attribute_map = {
-        'product_infos': 'product_infos',
-        'project_id': 'project_id'
+        'project_id': 'project_id',
+        'product_infos': 'product_infos'
     }
 
-    def __init__(self, product_infos=None, project_id=None):
+    def __init__(self, project_id=None, product_infos=None):
         """RateOnPeriodReq - a model defined in huaweicloud sdk"""
         
         
 
-        self._product_infos = None
         self._project_id = None
+        self._product_infos = None
         self.discriminator = None
 
-        self.product_infos = product_infos
         self.project_id = project_id
-
-    @property
-    def product_infos(self):
-        """Gets the product_infos of this RateOnPeriodReq.
-
-        |参数名称：产品信息列表| |参数的约束及描述：询价时要询价产品的信息的列表|
-
-        :return: The product_infos of this RateOnPeriodReq.
-        :rtype: list[PeriodProductInfo]
-        """
-        return self._product_infos
-
-    @product_infos.setter
-    def product_infos(self, product_infos):
-        """Sets the product_infos of this RateOnPeriodReq.
-
-        |参数名称：产品信息列表| |参数的约束及描述：询价时要询价产品的信息的列表|
-
-        :param product_infos: The product_infos of this RateOnPeriodReq.
-        :type: list[PeriodProductInfo]
-        """
-        self._product_infos = product_infos
+        self.product_infos = product_infos
 
     @property
     def project_id(self):
@@ -87,6 +65,28 @@ class RateOnPeriodReq:
         :type: str
         """
         self._project_id = project_id
+
+    @property
+    def product_infos(self):
+        """Gets the product_infos of this RateOnPeriodReq.
+
+        |参数名称：产品信息列表| |参数的约束及描述：询价时要询价产品的信息的列表|
+
+        :return: The product_infos of this RateOnPeriodReq.
+        :rtype: list[PeriodProductInfo]
+        """
+        return self._product_infos
+
+    @product_infos.setter
+    def product_infos(self, product_infos):
+        """Sets the product_infos of this RateOnPeriodReq.
+
+        |参数名称：产品信息列表| |参数的约束及描述：询价时要询价产品的信息的列表|
+
+        :param product_infos: The product_infos of this RateOnPeriodReq.
+        :type: list[PeriodProductInfo]
+        """
+        self._product_infos = product_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

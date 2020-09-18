@@ -23,110 +23,66 @@ class CreateCustomerV2Req:
     sensitive_list = []
 
     openapi_types = {
-        'cooperation_type': 'str',
-        'domain_area': 'str',
         'domain_name': 'str',
         'email': 'str',
-        'indirect_partner_id': 'str',
-        'is_close_market_ms': 'str',
-        'password': 'str',
         'verification_code': 'str',
+        'domain_area': 'str',
         'xaccount_id': 'str',
-        'xaccount_type': 'str'
+        'xaccount_type': 'str',
+        'password': 'str',
+        'is_close_market_ms': 'str',
+        'cooperation_type': 'str',
+        'indirect_partner_id': 'str'
     }
 
     attribute_map = {
-        'cooperation_type': 'cooperation_type',
-        'domain_area': 'domain_area',
         'domain_name': 'domain_name',
         'email': 'email',
-        'indirect_partner_id': 'indirect_partner_id',
-        'is_close_market_ms': 'is_close_market_ms',
-        'password': 'password',
         'verification_code': 'verification_code',
+        'domain_area': 'domain_area',
         'xaccount_id': 'xaccount_id',
-        'xaccount_type': 'xaccount_type'
+        'xaccount_type': 'xaccount_type',
+        'password': 'password',
+        'is_close_market_ms': 'is_close_market_ms',
+        'cooperation_type': 'cooperation_type',
+        'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, cooperation_type=None, domain_area=None, domain_name=None, email=None, indirect_partner_id=None, is_close_market_ms='false', password=None, verification_code=None, xaccount_id=None, xaccount_type=None):
+    def __init__(self, domain_name=None, email=None, verification_code=None, domain_area=None, xaccount_id=None, xaccount_type=None, password=None, is_close_market_ms='false', cooperation_type=None, indirect_partner_id=None):
         """CreateCustomerV2Req - a model defined in huaweicloud sdk"""
         
         
 
-        self._cooperation_type = None
-        self._domain_area = None
         self._domain_name = None
         self._email = None
-        self._indirect_partner_id = None
-        self._is_close_market_ms = None
-        self._password = None
         self._verification_code = None
+        self._domain_area = None
         self._xaccount_id = None
         self._xaccount_type = None
+        self._password = None
+        self._is_close_market_ms = None
+        self._cooperation_type = None
+        self._indirect_partner_id = None
         self.discriminator = None
 
-        if cooperation_type is not None:
-            self.cooperation_type = cooperation_type
-        if domain_area is not None:
-            self.domain_area = domain_area
         if domain_name is not None:
             self.domain_name = domain_name
         if email is not None:
             self.email = email
-        if indirect_partner_id is not None:
-            self.indirect_partner_id = indirect_partner_id
-        if is_close_market_ms is not None:
-            self.is_close_market_ms = is_close_market_ms
-        if password is not None:
-            self.password = password
         if verification_code is not None:
             self.verification_code = verification_code
+        if domain_area is not None:
+            self.domain_area = domain_area
         self.xaccount_id = xaccount_id
         self.xaccount_type = xaccount_type
-
-    @property
-    def cooperation_type(self):
-        """Gets the cooperation_type of this CreateCustomerV2Req.
-
-        |合作类型| |参数的约束及描述：该参数选填。1：推荐。仅仅支持1|
-
-        :return: The cooperation_type of this CreateCustomerV2Req.
-        :rtype: str
-        """
-        return self._cooperation_type
-
-    @cooperation_type.setter
-    def cooperation_type(self, cooperation_type):
-        """Sets the cooperation_type of this CreateCustomerV2Req.
-
-        |合作类型| |参数的约束及描述：该参数选填。1：推荐。仅仅支持1|
-
-        :param cooperation_type: The cooperation_type of this CreateCustomerV2Req.
-        :type: str
-        """
-        self._cooperation_type = cooperation_type
-
-    @property
-    def domain_area(self):
-        """Gets the domain_area of this CreateCustomerV2Req.
-
-        |国家地区编码| |2位字母|
-
-        :return: The domain_area of this CreateCustomerV2Req.
-        :rtype: str
-        """
-        return self._domain_area
-
-    @domain_area.setter
-    def domain_area(self, domain_area):
-        """Sets the domain_area of this CreateCustomerV2Req.
-
-        |国家地区编码| |2位字母|
-
-        :param domain_area: The domain_area of this CreateCustomerV2Req.
-        :type: str
-        """
-        self._domain_area = domain_area
+        if password is not None:
+            self.password = password
+        if is_close_market_ms is not None:
+            self.is_close_market_ms = is_close_market_ms
+        if cooperation_type is not None:
+            self.cooperation_type = cooperation_type
+        if indirect_partner_id is not None:
+            self.indirect_partner_id = indirect_partner_id
 
     @property
     def domain_name(self):
@@ -173,72 +129,6 @@ class CreateCustomerV2Req:
         self._email = email
 
     @property
-    def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this CreateCustomerV2Req.
-
-        |参数名称：二级渠道ID| |参数的约束及描述：该参数非必填，二级渠道ID，最大长度64|
-
-        :return: The indirect_partner_id of this CreateCustomerV2Req.
-        :rtype: str
-        """
-        return self._indirect_partner_id
-
-    @indirect_partner_id.setter
-    def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this CreateCustomerV2Req.
-
-        |参数名称：二级渠道ID| |参数的约束及描述：该参数非必填，二级渠道ID，最大长度64|
-
-        :param indirect_partner_id: The indirect_partner_id of this CreateCustomerV2Req.
-        :type: str
-        """
-        self._indirect_partner_id = indirect_partner_id
-
-    @property
-    def is_close_market_ms(self):
-        """Gets the is_close_market_ms of this CreateCustomerV2Req.
-
-        |是否关闭营销消息| |参数的约束及描述：该参数选填。false：不关闭，True：关闭，默认不关闭|
-
-        :return: The is_close_market_ms of this CreateCustomerV2Req.
-        :rtype: str
-        """
-        return self._is_close_market_ms
-
-    @is_close_market_ms.setter
-    def is_close_market_ms(self, is_close_market_ms):
-        """Sets the is_close_market_ms of this CreateCustomerV2Req.
-
-        |是否关闭营销消息| |参数的约束及描述：该参数选填。false：不关闭，True：关闭，默认不关闭|
-
-        :param is_close_market_ms: The is_close_market_ms of this CreateCustomerV2Req.
-        :type: str
-        """
-        self._is_close_market_ms = is_close_market_ms
-
-    @property
-    def password(self):
-        """Gets the password of this CreateCustomerV2Req.
-
-        |参数名称：密码| |参数的约束及描述：该参数选填，长度6~32位字符，至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符，不能和账号名或倒序的账号名相同，不能包含手机号，不能包含邮箱|
-
-        :return: The password of this CreateCustomerV2Req.
-        :rtype: str
-        """
-        return self._password
-
-    @password.setter
-    def password(self, password):
-        """Sets the password of this CreateCustomerV2Req.
-
-        |参数名称：密码| |参数的约束及描述：该参数选填，长度6~32位字符，至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符，不能和账号名或倒序的账号名相同，不能包含手机号，不能包含邮箱|
-
-        :param password: The password of this CreateCustomerV2Req.
-        :type: str
-        """
-        self._password = password
-
-    @property
     def verification_code(self):
         """Gets the verification_code of this CreateCustomerV2Req.
 
@@ -259,6 +149,28 @@ class CreateCustomerV2Req:
         :type: str
         """
         self._verification_code = verification_code
+
+    @property
+    def domain_area(self):
+        """Gets the domain_area of this CreateCustomerV2Req.
+
+        |国家地区编码| |2位字母|
+
+        :return: The domain_area of this CreateCustomerV2Req.
+        :rtype: str
+        """
+        return self._domain_area
+
+    @domain_area.setter
+    def domain_area(self, domain_area):
+        """Sets the domain_area of this CreateCustomerV2Req.
+
+        |国家地区编码| |2位字母|
+
+        :param domain_area: The domain_area of this CreateCustomerV2Req.
+        :type: str
+        """
+        self._domain_area = domain_area
 
     @property
     def xaccount_id(self):
@@ -303,6 +215,94 @@ class CreateCustomerV2Req:
         :type: str
         """
         self._xaccount_type = xaccount_type
+
+    @property
+    def password(self):
+        """Gets the password of this CreateCustomerV2Req.
+
+        |参数名称：密码| |参数的约束及描述：该参数选填，长度6~32位字符，至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符，不能和账号名或倒序的账号名相同，不能包含手机号，不能包含邮箱|
+
+        :return: The password of this CreateCustomerV2Req.
+        :rtype: str
+        """
+        return self._password
+
+    @password.setter
+    def password(self, password):
+        """Sets the password of this CreateCustomerV2Req.
+
+        |参数名称：密码| |参数的约束及描述：该参数选填，长度6~32位字符，至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符，不能和账号名或倒序的账号名相同，不能包含手机号，不能包含邮箱|
+
+        :param password: The password of this CreateCustomerV2Req.
+        :type: str
+        """
+        self._password = password
+
+    @property
+    def is_close_market_ms(self):
+        """Gets the is_close_market_ms of this CreateCustomerV2Req.
+
+        |是否关闭营销消息| |参数的约束及描述：该参数选填。false：不关闭，True：关闭，默认不关闭|
+
+        :return: The is_close_market_ms of this CreateCustomerV2Req.
+        :rtype: str
+        """
+        return self._is_close_market_ms
+
+    @is_close_market_ms.setter
+    def is_close_market_ms(self, is_close_market_ms):
+        """Sets the is_close_market_ms of this CreateCustomerV2Req.
+
+        |是否关闭营销消息| |参数的约束及描述：该参数选填。false：不关闭，True：关闭，默认不关闭|
+
+        :param is_close_market_ms: The is_close_market_ms of this CreateCustomerV2Req.
+        :type: str
+        """
+        self._is_close_market_ms = is_close_market_ms
+
+    @property
+    def cooperation_type(self):
+        """Gets the cooperation_type of this CreateCustomerV2Req.
+
+        |合作类型| |参数的约束及描述：该参数选填。1：推荐。仅仅支持1|
+
+        :return: The cooperation_type of this CreateCustomerV2Req.
+        :rtype: str
+        """
+        return self._cooperation_type
+
+    @cooperation_type.setter
+    def cooperation_type(self, cooperation_type):
+        """Sets the cooperation_type of this CreateCustomerV2Req.
+
+        |合作类型| |参数的约束及描述：该参数选填。1：推荐。仅仅支持1|
+
+        :param cooperation_type: The cooperation_type of this CreateCustomerV2Req.
+        :type: str
+        """
+        self._cooperation_type = cooperation_type
+
+    @property
+    def indirect_partner_id(self):
+        """Gets the indirect_partner_id of this CreateCustomerV2Req.
+
+        |参数名称：二级渠道ID| |参数的约束及描述：该参数非必填，二级渠道ID，最大长度64|
+
+        :return: The indirect_partner_id of this CreateCustomerV2Req.
+        :rtype: str
+        """
+        return self._indirect_partner_id
+
+    @indirect_partner_id.setter
+    def indirect_partner_id(self, indirect_partner_id):
+        """Sets the indirect_partner_id of this CreateCustomerV2Req.
+
+        |参数名称：二级渠道ID| |参数的约束及描述：该参数非必填，二级渠道ID，最大长度64|
+
+        :param indirect_partner_id: The indirect_partner_id of this CreateCustomerV2Req.
+        :type: str
+        """
+        self._indirect_partner_id = indirect_partner_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

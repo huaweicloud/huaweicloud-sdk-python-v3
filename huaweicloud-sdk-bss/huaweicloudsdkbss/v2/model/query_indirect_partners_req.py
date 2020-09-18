@@ -26,21 +26,21 @@ class QueryIndirectPartnersReq:
         'account_name': 'str',
         'associated_on_begin': 'str',
         'associated_on_end': 'str',
-        'indirect_partner_id': 'str',
+        'offset': 'int',
         'limit': 'int',
-        'offset': 'int'
+        'indirect_partner_id': 'str'
     }
 
     attribute_map = {
         'account_name': 'account_name',
         'associated_on_begin': 'associated_on_begin',
         'associated_on_end': 'associated_on_end',
-        'indirect_partner_id': 'indirect_partner_id',
+        'offset': 'offset',
         'limit': 'limit',
-        'offset': 'offset'
+        'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, account_name=None, associated_on_begin=None, associated_on_end=None, indirect_partner_id=None, limit=10, offset=0):
+    def __init__(self, account_name=None, associated_on_begin=None, associated_on_end=None, offset=0, limit=10, indirect_partner_id=None):
         """QueryIndirectPartnersReq - a model defined in huaweicloud sdk"""
         
         
@@ -48,9 +48,9 @@ class QueryIndirectPartnersReq:
         self._account_name = None
         self._associated_on_begin = None
         self._associated_on_end = None
-        self._indirect_partner_id = None
-        self._limit = None
         self._offset = None
+        self._limit = None
+        self._indirect_partner_id = None
         self.discriminator = None
 
         if account_name is not None:
@@ -59,12 +59,12 @@ class QueryIndirectPartnersReq:
             self.associated_on_begin = associated_on_begin
         if associated_on_end is not None:
             self.associated_on_end = associated_on_end
-        if indirect_partner_id is not None:
-            self.indirect_partner_id = indirect_partner_id
-        if limit is not None:
-            self.limit = limit
         if offset is not None:
             self.offset = offset
+        if limit is not None:
+            self.limit = limit
+        if indirect_partner_id is not None:
+            self.indirect_partner_id = indirect_partner_id
 
     @property
     def account_name(self):
@@ -133,26 +133,26 @@ class QueryIndirectPartnersReq:
         self._associated_on_end = associated_on_end
 
     @property
-    def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this QueryIndirectPartnersReq.
+    def offset(self):
+        """Gets the offset of this QueryIndirectPartnersReq.
 
-        |参数名称：二级经销商ID| |参数约束及描述：二级经销商ID|
+        |参数名称：偏移量，从0开始，默认是0| |参数的约束及描述：偏移量，从0开始，默认是0|
 
-        :return: The indirect_partner_id of this QueryIndirectPartnersReq.
-        :rtype: str
+        :return: The offset of this QueryIndirectPartnersReq.
+        :rtype: int
         """
-        return self._indirect_partner_id
+        return self._offset
 
-    @indirect_partner_id.setter
-    def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this QueryIndirectPartnersReq.
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this QueryIndirectPartnersReq.
 
-        |参数名称：二级经销商ID| |参数约束及描述：二级经销商ID|
+        |参数名称：偏移量，从0开始，默认是0| |参数的约束及描述：偏移量，从0开始，默认是0|
 
-        :param indirect_partner_id: The indirect_partner_id of this QueryIndirectPartnersReq.
-        :type: str
+        :param offset: The offset of this QueryIndirectPartnersReq.
+        :type: int
         """
-        self._indirect_partner_id = indirect_partner_id
+        self._offset = offset
 
     @property
     def limit(self):
@@ -177,26 +177,26 @@ class QueryIndirectPartnersReq:
         self._limit = limit
 
     @property
-    def offset(self):
-        """Gets the offset of this QueryIndirectPartnersReq.
+    def indirect_partner_id(self):
+        """Gets the indirect_partner_id of this QueryIndirectPartnersReq.
 
-        |参数名称：偏移量，从0开始，默认是0| |参数的约束及描述：偏移量，从0开始，默认是0|
+        |参数名称：二级经销商ID| |参数约束及描述：二级经销商ID|
 
-        :return: The offset of this QueryIndirectPartnersReq.
-        :rtype: int
+        :return: The indirect_partner_id of this QueryIndirectPartnersReq.
+        :rtype: str
         """
-        return self._offset
+        return self._indirect_partner_id
 
-    @offset.setter
-    def offset(self, offset):
-        """Sets the offset of this QueryIndirectPartnersReq.
+    @indirect_partner_id.setter
+    def indirect_partner_id(self, indirect_partner_id):
+        """Sets the indirect_partner_id of this QueryIndirectPartnersReq.
 
-        |参数名称：偏移量，从0开始，默认是0| |参数的约束及描述：偏移量，从0开始，默认是0|
+        |参数名称：二级经销商ID| |参数约束及描述：二级经销商ID|
 
-        :param offset: The offset of this QueryIndirectPartnersReq.
-        :type: int
+        :param indirect_partner_id: The indirect_partner_id of this QueryIndirectPartnersReq.
+        :type: str
         """
-        self._offset = offset
+        self._indirect_partner_id = indirect_partner_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

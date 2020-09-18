@@ -23,55 +23,33 @@ class BalanceTypeDeductSumV2:
     sensitive_list = []
 
     openapi_types = {
-        'amount': 'float',
         'balance_type': 'str',
+        'amount': 'float',
         'bill_type': 'str'
     }
 
     attribute_map = {
-        'amount': 'amount',
         'balance_type': 'balance_type',
+        'amount': 'amount',
         'bill_type': 'bill_type'
     }
 
-    def __init__(self, amount=None, balance_type=None, bill_type=None):
+    def __init__(self, balance_type=None, amount=None, bill_type=None):
         """BalanceTypeDeductSumV2 - a model defined in huaweicloud sdk"""
         
         
 
-        self._amount = None
         self._balance_type = None
+        self._amount = None
         self._bill_type = None
         self.discriminator = None
 
-        if amount is not None:
-            self.amount = amount
         if balance_type is not None:
             self.balance_type = balance_type
+        if amount is not None:
+            self.amount = amount
         if bill_type is not None:
             self.bill_type = bill_type
-
-    @property
-    def amount(self):
-        """Gets the amount of this BalanceTypeDeductSumV2.
-
-        |参数名称：金额。对于billType=1或者2的账单，该金额为负值。| |参数的约束及描述：金额。对于billType=1或者2的账单，该金额为负值。|
-
-        :return: The amount of this BalanceTypeDeductSumV2.
-        :rtype: float
-        """
-        return self._amount
-
-    @amount.setter
-    def amount(self, amount):
-        """Sets the amount of this BalanceTypeDeductSumV2.
-
-        |参数名称：金额。对于billType=1或者2的账单，该金额为负值。| |参数的约束及描述：金额。对于billType=1或者2的账单，该金额为负值。|
-
-        :param amount: The amount of this BalanceTypeDeductSumV2.
-        :type: float
-        """
-        self._amount = amount
 
     @property
     def balance_type(self):
@@ -94,6 +72,28 @@ class BalanceTypeDeductSumV2:
         :type: str
         """
         self._balance_type = balance_type
+
+    @property
+    def amount(self):
+        """Gets the amount of this BalanceTypeDeductSumV2.
+
+        |参数名称：金额。对于billType=1或者2的账单，该金额为负值。| |参数的约束及描述：金额。对于billType=1或者2的账单，该金额为负值。|
+
+        :return: The amount of this BalanceTypeDeductSumV2.
+        :rtype: float
+        """
+        return self._amount
+
+    @amount.setter
+    def amount(self, amount):
+        """Sets the amount of this BalanceTypeDeductSumV2.
+
+        |参数名称：金额。对于billType=1或者2的账单，该金额为负值。| |参数的约束及描述：金额。对于billType=1或者2的账单，该金额为负值。|
+
+        :param amount: The amount of this BalanceTypeDeductSumV2.
+        :type: float
+        """
+        self._amount = amount
 
     @property
     def bill_type(self):

@@ -23,113 +23,47 @@ class SendVerificationCodeV2Req:
     sensitive_list = []
 
     openapi_types = {
-        'customer_id': 'str',
-        'lang': 'str',
-        'mobile_phone': 'str',
         'receiver_type': 'int',
+        'timeout': 'int',
+        'mobile_phone': 'str',
+        'lang': 'str',
         'scene': 'int',
-        'timeout': 'int'
+        'customer_id': 'str'
     }
 
     attribute_map = {
-        'customer_id': 'customer_id',
-        'lang': 'lang',
-        'mobile_phone': 'mobile_phone',
         'receiver_type': 'receiver_type',
+        'timeout': 'timeout',
+        'mobile_phone': 'mobile_phone',
+        'lang': 'lang',
         'scene': 'scene',
-        'timeout': 'timeout'
+        'customer_id': 'customer_id'
     }
 
-    def __init__(self, customer_id=None, lang=None, mobile_phone=None, receiver_type=None, scene=29, timeout=None):
+    def __init__(self, receiver_type=None, timeout=None, mobile_phone=None, lang=None, scene=29, customer_id=None):
         """SendVerificationCodeV2Req - a model defined in huaweicloud sdk"""
         
         
 
-        self._customer_id = None
-        self._lang = None
-        self._mobile_phone = None
         self._receiver_type = None
-        self._scene = None
         self._timeout = None
+        self._mobile_phone = None
+        self._lang = None
+        self._scene = None
+        self._customer_id = None
         self.discriminator = None
 
-        if customer_id is not None:
-            self.customer_id = customer_id
-        if lang is not None:
-            self.lang = lang
-        if mobile_phone is not None:
-            self.mobile_phone = mobile_phone
         self.receiver_type = receiver_type
-        if scene is not None:
-            self.scene = scene
         if timeout is not None:
             self.timeout = timeout
-
-    @property
-    def customer_id(self):
-        """Gets the customer_id of this SendVerificationCodeV2Req.
-
-        |参数名称：客户ID，如果scene=18的时候必填。| |参数约束及描述：客户ID，如果scene=18的时候必填。|
-
-        :return: The customer_id of this SendVerificationCodeV2Req.
-        :rtype: str
-        """
-        return self._customer_id
-
-    @customer_id.setter
-    def customer_id(self, customer_id):
-        """Sets the customer_id of this SendVerificationCodeV2Req.
-
-        |参数名称：客户ID，如果scene=18的时候必填。| |参数约束及描述：客户ID，如果scene=18的时候必填。|
-
-        :param customer_id: The customer_id of this SendVerificationCodeV2Req.
-        :type: str
-        """
-        self._customer_id = customer_id
-
-    @property
-    def lang(self):
-        """Gets the lang of this SendVerificationCodeV2Req.
-
-        |参数名称：根据语言如果查询不到对应模板信息，就取系统默认语言对应的模板信息。zh-cn：中文；en-us：英文。| |参数约束及描述：根据语言如果查询不到对应模板信息，就取系统默认语言对应的模板信息。zh-cn：中文；en-us：英文。|
-
-        :return: The lang of this SendVerificationCodeV2Req.
-        :rtype: str
-        """
-        return self._lang
-
-    @lang.setter
-    def lang(self, lang):
-        """Sets the lang of this SendVerificationCodeV2Req.
-
-        |参数名称：根据语言如果查询不到对应模板信息，就取系统默认语言对应的模板信息。zh-cn：中文；en-us：英文。| |参数约束及描述：根据语言如果查询不到对应模板信息，就取系统默认语言对应的模板信息。zh-cn：中文；en-us：英文。|
-
-        :param lang: The lang of this SendVerificationCodeV2Req.
-        :type: str
-        """
-        self._lang = lang
-
-    @property
-    def mobile_phone(self):
-        """Gets the mobile_phone of this SendVerificationCodeV2Req.
-
-        |参数名称：手机号。目前系统只支持中国手机，必须全部是数字。示例：13XXXXXXXXX| |参数约束及描述：手机号。目前系统只支持中国手机，必须全部是数字。示例：13XXXXXXXXX|
-
-        :return: The mobile_phone of this SendVerificationCodeV2Req.
-        :rtype: str
-        """
-        return self._mobile_phone
-
-    @mobile_phone.setter
-    def mobile_phone(self, mobile_phone):
-        """Sets the mobile_phone of this SendVerificationCodeV2Req.
-
-        |参数名称：手机号。目前系统只支持中国手机，必须全部是数字。示例：13XXXXXXXXX| |参数约束及描述：手机号。目前系统只支持中国手机，必须全部是数字。示例：13XXXXXXXXX|
-
-        :param mobile_phone: The mobile_phone of this SendVerificationCodeV2Req.
-        :type: str
-        """
-        self._mobile_phone = mobile_phone
+        if mobile_phone is not None:
+            self.mobile_phone = mobile_phone
+        if lang is not None:
+            self.lang = lang
+        if scene is not None:
+            self.scene = scene
+        if customer_id is not None:
+            self.customer_id = customer_id
 
     @property
     def receiver_type(self):
@@ -154,6 +88,72 @@ class SendVerificationCodeV2Req:
         self._receiver_type = receiver_type
 
     @property
+    def timeout(self):
+        """Gets the timeout of this SendVerificationCodeV2Req.
+
+        |参数名称：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟| |参数的约束及描述：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟|
+
+        :return: The timeout of this SendVerificationCodeV2Req.
+        :rtype: int
+        """
+        return self._timeout
+
+    @timeout.setter
+    def timeout(self, timeout):
+        """Sets the timeout of this SendVerificationCodeV2Req.
+
+        |参数名称：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟| |参数的约束及描述：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟|
+
+        :param timeout: The timeout of this SendVerificationCodeV2Req.
+        :type: int
+        """
+        self._timeout = timeout
+
+    @property
+    def mobile_phone(self):
+        """Gets the mobile_phone of this SendVerificationCodeV2Req.
+
+        |参数名称：手机号。目前系统只支持中国手机，必须全部是数字。示例：13XXXXXXXXX| |参数约束及描述：手机号。目前系统只支持中国手机，必须全部是数字。示例：13XXXXXXXXX|
+
+        :return: The mobile_phone of this SendVerificationCodeV2Req.
+        :rtype: str
+        """
+        return self._mobile_phone
+
+    @mobile_phone.setter
+    def mobile_phone(self, mobile_phone):
+        """Sets the mobile_phone of this SendVerificationCodeV2Req.
+
+        |参数名称：手机号。目前系统只支持中国手机，必须全部是数字。示例：13XXXXXXXXX| |参数约束及描述：手机号。目前系统只支持中国手机，必须全部是数字。示例：13XXXXXXXXX|
+
+        :param mobile_phone: The mobile_phone of this SendVerificationCodeV2Req.
+        :type: str
+        """
+        self._mobile_phone = mobile_phone
+
+    @property
+    def lang(self):
+        """Gets the lang of this SendVerificationCodeV2Req.
+
+        |参数名称：根据语言如果查询不到对应模板信息，就取系统默认语言对应的模板信息。zh-cn：中文；en-us：英文。| |参数约束及描述：根据语言如果查询不到对应模板信息，就取系统默认语言对应的模板信息。zh-cn：中文；en-us：英文。|
+
+        :return: The lang of this SendVerificationCodeV2Req.
+        :rtype: str
+        """
+        return self._lang
+
+    @lang.setter
+    def lang(self, lang):
+        """Sets the lang of this SendVerificationCodeV2Req.
+
+        |参数名称：根据语言如果查询不到对应模板信息，就取系统默认语言对应的模板信息。zh-cn：中文；en-us：英文。| |参数约束及描述：根据语言如果查询不到对应模板信息，就取系统默认语言对应的模板信息。zh-cn：中文；en-us：英文。|
+
+        :param lang: The lang of this SendVerificationCodeV2Req.
+        :type: str
+        """
+        self._lang = lang
+
+    @property
     def scene(self):
         """Gets the scene of this SendVerificationCodeV2Req.
 
@@ -176,26 +176,26 @@ class SendVerificationCodeV2Req:
         self._scene = scene
 
     @property
-    def timeout(self):
-        """Gets the timeout of this SendVerificationCodeV2Req.
+    def customer_id(self):
+        """Gets the customer_id of this SendVerificationCodeV2Req.
 
-        |参数名称：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟| |参数的约束及描述：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟|
+        |参数名称：客户ID，如果scene=18的时候必填。| |参数约束及描述：客户ID，如果scene=18的时候必填。|
 
-        :return: The timeout of this SendVerificationCodeV2Req.
-        :rtype: int
+        :return: The customer_id of this SendVerificationCodeV2Req.
+        :rtype: str
         """
-        return self._timeout
+        return self._customer_id
 
-    @timeout.setter
-    def timeout(self, timeout):
-        """Sets the timeout of this SendVerificationCodeV2Req.
+    @customer_id.setter
+    def customer_id(self, customer_id):
+        """Sets the customer_id of this SendVerificationCodeV2Req.
 
-        |参数名称：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟| |参数的约束及描述：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟|
+        |参数名称：客户ID，如果scene=18的时候必填。| |参数约束及描述：客户ID，如果scene=18的时候必填。|
 
-        :param timeout: The timeout of this SendVerificationCodeV2Req.
-        :type: int
+        :param customer_id: The customer_id of this SendVerificationCodeV2Req.
+        :type: str
         """
-        self._timeout = timeout
+        self._customer_id = customer_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

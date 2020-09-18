@@ -23,69 +23,91 @@ class SendVerificationCodeV2Req:
     sensitive_list = []
 
     openapi_types = {
-        'customer_id': 'str',
+        'receiver_type': 'int',
+        'timeout': 'int',
         'email': 'str',
         'lang': 'str',
-        'receiver_type': 'int',
         'scene': 'int',
-        'timeout': 'int'
+        'customer_id': 'str'
     }
 
     attribute_map = {
-        'customer_id': 'customer_id',
+        'receiver_type': 'receiver_type',
+        'timeout': 'timeout',
         'email': 'email',
         'lang': 'lang',
-        'receiver_type': 'receiver_type',
         'scene': 'scene',
-        'timeout': 'timeout'
+        'customer_id': 'customer_id'
     }
 
-    def __init__(self, customer_id=None, email=None, lang=None, receiver_type=None, scene=29, timeout=None):
+    def __init__(self, receiver_type=None, timeout=None, email=None, lang=None, scene=29, customer_id=None):
         """SendVerificationCodeV2Req - a model defined in huaweicloud sdk"""
         
         
 
-        self._customer_id = None
+        self._receiver_type = None
+        self._timeout = None
         self._email = None
         self._lang = None
-        self._receiver_type = None
         self._scene = None
-        self._timeout = None
+        self._customer_id = None
         self.discriminator = None
 
-        if customer_id is not None:
-            self.customer_id = customer_id
+        self.receiver_type = receiver_type
+        if timeout is not None:
+            self.timeout = timeout
         if email is not None:
             self.email = email
         if lang is not None:
             self.lang = lang
-        self.receiver_type = receiver_type
         if scene is not None:
             self.scene = scene
-        if timeout is not None:
-            self.timeout = timeout
+        if customer_id is not None:
+            self.customer_id = customer_id
 
     @property
-    def customer_id(self):
-        """Gets the customer_id of this SendVerificationCodeV2Req.
+    def receiver_type(self):
+        """Gets the receiver_type of this SendVerificationCodeV2Req.
 
-        |参数名称：客户ID，如果scene=18的时候必填。| |参数约束及描述：客户ID，如果scene=18的时候必填。|
+        |参数名称：发送类型：1：发送短信验证码。2：发送邮件验证码。| |参数的约束及描述：发送类型：1：发送短信验证码。2：发送邮件验证码。|
 
-        :return: The customer_id of this SendVerificationCodeV2Req.
-        :rtype: str
+        :return: The receiver_type of this SendVerificationCodeV2Req.
+        :rtype: int
         """
-        return self._customer_id
+        return self._receiver_type
 
-    @customer_id.setter
-    def customer_id(self, customer_id):
-        """Sets the customer_id of this SendVerificationCodeV2Req.
+    @receiver_type.setter
+    def receiver_type(self, receiver_type):
+        """Sets the receiver_type of this SendVerificationCodeV2Req.
 
-        |参数名称：客户ID，如果scene=18的时候必填。| |参数约束及描述：客户ID，如果scene=18的时候必填。|
+        |参数名称：发送类型：1：发送短信验证码。2：发送邮件验证码。| |参数的约束及描述：发送类型：1：发送短信验证码。2：发送邮件验证码。|
 
-        :param customer_id: The customer_id of this SendVerificationCodeV2Req.
-        :type: str
+        :param receiver_type: The receiver_type of this SendVerificationCodeV2Req.
+        :type: int
         """
-        self._customer_id = customer_id
+        self._receiver_type = receiver_type
+
+    @property
+    def timeout(self):
+        """Gets the timeout of this SendVerificationCodeV2Req.
+
+        |参数名称：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟| |参数的约束及描述：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟|
+
+        :return: The timeout of this SendVerificationCodeV2Req.
+        :rtype: int
+        """
+        return self._timeout
+
+    @timeout.setter
+    def timeout(self, timeout):
+        """Sets the timeout of this SendVerificationCodeV2Req.
+
+        |参数名称：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟| |参数的约束及描述：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟|
+
+        :param timeout: The timeout of this SendVerificationCodeV2Req.
+        :type: int
+        """
+        self._timeout = timeout
 
     @property
     def email(self):
@@ -132,28 +154,6 @@ class SendVerificationCodeV2Req:
         self._lang = lang
 
     @property
-    def receiver_type(self):
-        """Gets the receiver_type of this SendVerificationCodeV2Req.
-
-        |参数名称：发送类型：1：发送短信验证码。2：发送邮件验证码。| |参数的约束及描述：发送类型：1：发送短信验证码。2：发送邮件验证码。|
-
-        :return: The receiver_type of this SendVerificationCodeV2Req.
-        :rtype: int
-        """
-        return self._receiver_type
-
-    @receiver_type.setter
-    def receiver_type(self, receiver_type):
-        """Sets the receiver_type of this SendVerificationCodeV2Req.
-
-        |参数名称：发送类型：1：发送短信验证码。2：发送邮件验证码。| |参数的约束及描述：发送类型：1：发送短信验证码。2：发送邮件验证码。|
-
-        :param receiver_type: The receiver_type of this SendVerificationCodeV2Req.
-        :type: int
-        """
-        self._receiver_type = receiver_type
-
-    @property
     def scene(self):
         """Gets the scene of this SendVerificationCodeV2Req.
 
@@ -176,26 +176,26 @@ class SendVerificationCodeV2Req:
         self._scene = scene
 
     @property
-    def timeout(self):
-        """Gets the timeout of this SendVerificationCodeV2Req.
+    def customer_id(self):
+        """Gets the customer_id of this SendVerificationCodeV2Req.
 
-        |参数名称：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟| |参数的约束及描述：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟|
+        |参数名称：客户ID，如果scene=18的时候必填。| |参数约束及描述：客户ID，如果scene=18的时候必填。|
 
-        :return: The timeout of this SendVerificationCodeV2Req.
-        :rtype: int
+        :return: The customer_id of this SendVerificationCodeV2Req.
+        :rtype: str
         """
-        return self._timeout
+        return self._customer_id
 
-    @timeout.setter
-    def timeout(self, timeout):
-        """Sets the timeout of this SendVerificationCodeV2Req.
+    @customer_id.setter
+    def customer_id(self, customer_id):
+        """Sets the customer_id of this SendVerificationCodeV2Req.
 
-        |参数名称：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟| |参数的约束及描述：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟|
+        |参数名称：客户ID，如果scene=18的时候必填。| |参数约束及描述：客户ID，如果scene=18的时候必填。|
 
-        :param timeout: The timeout of this SendVerificationCodeV2Req.
-        :type: int
+        :param customer_id: The customer_id of this SendVerificationCodeV2Req.
+        :type: str
         """
-        self._timeout = timeout
+        self._customer_id = customer_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

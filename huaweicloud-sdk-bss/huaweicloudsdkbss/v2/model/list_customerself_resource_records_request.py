@@ -23,6 +23,7 @@ class ListCustomerselfResourceRecordsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'x_language': 'str',
         'cycle': 'str',
         'cloud_service_type': 'str',
         'region': 'str',
@@ -32,10 +33,13 @@ class ListCustomerselfResourceRecordsRequest:
         'limit': 'int',
         'resource_id': 'str',
         'enterprise_project_id': 'str',
-        'include_zero_record': 'bool'
+        'include_zero_record': 'bool',
+        'method': 'str',
+        'sub_customer_id': 'str'
     }
 
     attribute_map = {
+        'x_language': 'X-Language',
         'cycle': 'cycle',
         'cloud_service_type': 'cloud_service_type',
         'region': 'region',
@@ -45,14 +49,17 @@ class ListCustomerselfResourceRecordsRequest:
         'limit': 'limit',
         'resource_id': 'resource_id',
         'enterprise_project_id': 'enterprise_project_id',
-        'include_zero_record': 'include_zero_record'
+        'include_zero_record': 'include_zero_record',
+        'method': 'method',
+        'sub_customer_id': 'sub_customer_id'
     }
 
-    def __init__(self, cycle=None, cloud_service_type=None, region=None, charge_mode=None, bill_type=None, offset=0, limit=10, resource_id=None, enterprise_project_id=None, include_zero_record=None):
+    def __init__(self, x_language=None, cycle=None, cloud_service_type=None, region=None, charge_mode=None, bill_type=None, offset=0, limit=10, resource_id=None, enterprise_project_id=None, include_zero_record=None, method=None, sub_customer_id=None):
         """ListCustomerselfResourceRecordsRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._x_language = None
         self._cycle = None
         self._cloud_service_type = None
         self._region = None
@@ -63,8 +70,12 @@ class ListCustomerselfResourceRecordsRequest:
         self._resource_id = None
         self._enterprise_project_id = None
         self._include_zero_record = None
+        self._method = None
+        self._sub_customer_id = None
         self.discriminator = None
 
+        if x_language is not None:
+            self.x_language = x_language
         self.cycle = cycle
         if cloud_service_type is not None:
             self.cloud_service_type = cloud_service_type
@@ -83,6 +94,30 @@ class ListCustomerselfResourceRecordsRequest:
             self.enterprise_project_id = enterprise_project_id
         if include_zero_record is not None:
             self.include_zero_record = include_zero_record
+        if method is not None:
+            self.method = method
+        if sub_customer_id is not None:
+            self.sub_customer_id = sub_customer_id
+
+    @property
+    def x_language(self):
+        """Gets the x_language of this ListCustomerselfResourceRecordsRequest.
+
+
+        :return: The x_language of this ListCustomerselfResourceRecordsRequest.
+        :rtype: str
+        """
+        return self._x_language
+
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this ListCustomerselfResourceRecordsRequest.
+
+
+        :param x_language: The x_language of this ListCustomerselfResourceRecordsRequest.
+        :type: str
+        """
+        self._x_language = x_language
 
     @property
     def cycle(self):
@@ -283,6 +318,46 @@ class ListCustomerselfResourceRecordsRequest:
         :type: bool
         """
         self._include_zero_record = include_zero_record
+
+    @property
+    def method(self):
+        """Gets the method of this ListCustomerselfResourceRecordsRequest.
+
+
+        :return: The method of this ListCustomerselfResourceRecordsRequest.
+        :rtype: str
+        """
+        return self._method
+
+    @method.setter
+    def method(self, method):
+        """Sets the method of this ListCustomerselfResourceRecordsRequest.
+
+
+        :param method: The method of this ListCustomerselfResourceRecordsRequest.
+        :type: str
+        """
+        self._method = method
+
+    @property
+    def sub_customer_id(self):
+        """Gets the sub_customer_id of this ListCustomerselfResourceRecordsRequest.
+
+
+        :return: The sub_customer_id of this ListCustomerselfResourceRecordsRequest.
+        :rtype: str
+        """
+        return self._sub_customer_id
+
+    @sub_customer_id.setter
+    def sub_customer_id(self, sub_customer_id):
+        """Sets the sub_customer_id of this ListCustomerselfResourceRecordsRequest.
+
+
+        :param sub_customer_id: The sub_customer_id of this ListCustomerselfResourceRecordsRequest.
+        :type: str
+        """
+        self._sub_customer_id = sub_customer_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

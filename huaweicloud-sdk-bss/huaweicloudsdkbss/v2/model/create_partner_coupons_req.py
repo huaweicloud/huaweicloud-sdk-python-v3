@@ -23,214 +23,60 @@ class CreatePartnerCouponsReq:
     sensitive_list = []
 
     openapi_types = {
-        'cloud_service_types': 'list[str]',
-        'customer_ids': 'list[str]',
-        'expire_time': 'str',
-        'face_value': 'float',
-        'indirect_partner_id': 'str',
-        'memo': 'str',
-        'product_ids': 'list[str]',
         'quota_id': 'str',
-        'valid_time': 'str'
+        'customer_ids': 'list[str]',
+        'face_value': 'float',
+        'valid_time': 'str',
+        'expire_time': 'str',
+        'cloud_service_types': 'list[str]',
+        'product_ids': 'list[str]',
+        'memo': 'str',
+        'indirect_partner_id': 'str'
     }
 
     attribute_map = {
-        'cloud_service_types': 'cloud_service_types',
-        'customer_ids': 'customer_ids',
-        'expire_time': 'expire_time',
-        'face_value': 'face_value',
-        'indirect_partner_id': 'indirect_partner_id',
-        'memo': 'memo',
-        'product_ids': 'product_ids',
         'quota_id': 'quota_id',
-        'valid_time': 'valid_time'
+        'customer_ids': 'customer_ids',
+        'face_value': 'face_value',
+        'valid_time': 'valid_time',
+        'expire_time': 'expire_time',
+        'cloud_service_types': 'cloud_service_types',
+        'product_ids': 'product_ids',
+        'memo': 'memo',
+        'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, cloud_service_types=None, customer_ids=None, expire_time=None, face_value=None, indirect_partner_id=None, memo=None, product_ids=None, quota_id=None, valid_time=None):
+    def __init__(self, quota_id=None, customer_ids=None, face_value=None, valid_time=None, expire_time=None, cloud_service_types=None, product_ids=None, memo=None, indirect_partner_id=None):
         """CreatePartnerCouponsReq - a model defined in huaweicloud sdk"""
         
         
 
-        self._cloud_service_types = None
-        self._customer_ids = None
-        self._expire_time = None
-        self._face_value = None
-        self._indirect_partner_id = None
-        self._memo = None
-        self._product_ids = None
         self._quota_id = None
+        self._customer_ids = None
+        self._face_value = None
         self._valid_time = None
+        self._expire_time = None
+        self._cloud_service_types = None
+        self._product_ids = None
+        self._memo = None
+        self._indirect_partner_id = None
         self.discriminator = None
 
-        if cloud_service_types is not None:
-            self.cloud_service_types = cloud_service_types
-        self.customer_ids = customer_ids
-        if expire_time is not None:
-            self.expire_time = expire_time
-        self.face_value = face_value
-        if indirect_partner_id is not None:
-            self.indirect_partner_id = indirect_partner_id
-        if memo is not None:
-            self.memo = memo
-        if product_ids is not None:
-            self.product_ids = product_ids
         self.quota_id = quota_id
+        self.customer_ids = customer_ids
+        self.face_value = face_value
         if valid_time is not None:
             self.valid_time = valid_time
-
-    @property
-    def cloud_service_types(self):
-        """Gets the cloud_service_types of this CreatePartnerCouponsReq.
-
-        |参数名称：云服务限制| |参数约束以及描述：云服务限制|
-
-        :return: The cloud_service_types of this CreatePartnerCouponsReq.
-        :rtype: list[str]
-        """
-        return self._cloud_service_types
-
-    @cloud_service_types.setter
-    def cloud_service_types(self, cloud_service_types):
-        """Sets the cloud_service_types of this CreatePartnerCouponsReq.
-
-        |参数名称：云服务限制| |参数约束以及描述：云服务限制|
-
-        :param cloud_service_types: The cloud_service_types of this CreatePartnerCouponsReq.
-        :type: list[str]
-        """
-        self._cloud_service_types = cloud_service_types
-
-    @property
-    def customer_ids(self):
-        """Gets the customer_ids of this CreatePartnerCouponsReq.
-
-        |参数名称：客户ID列表| |参数约束以及描述：客户ID列表|
-
-        :return: The customer_ids of this CreatePartnerCouponsReq.
-        :rtype: list[str]
-        """
-        return self._customer_ids
-
-    @customer_ids.setter
-    def customer_ids(self, customer_ids):
-        """Sets the customer_ids of this CreatePartnerCouponsReq.
-
-        |参数名称：客户ID列表| |参数约束以及描述：客户ID列表|
-
-        :param customer_ids: The customer_ids of this CreatePartnerCouponsReq.
-        :type: list[str]
-        """
-        self._customer_ids = customer_ids
-
-    @property
-    def expire_time(self):
-        """Gets the expire_time of this CreatePartnerCouponsReq.
-
-        |参数名称：优惠券的失效时间,UTC格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：优惠券的失效时间,UTC格式：yyyy-MM-ddTHH:mm:ssZ|
-
-        :return: The expire_time of this CreatePartnerCouponsReq.
-        :rtype: str
-        """
-        return self._expire_time
-
-    @expire_time.setter
-    def expire_time(self, expire_time):
-        """Sets the expire_time of this CreatePartnerCouponsReq.
-
-        |参数名称：优惠券的失效时间,UTC格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：优惠券的失效时间,UTC格式：yyyy-MM-ddTHH:mm:ssZ|
-
-        :param expire_time: The expire_time of this CreatePartnerCouponsReq.
-        :type: str
-        """
-        self._expire_time = expire_time
-
-    @property
-    def face_value(self):
-        """Gets the face_value of this CreatePartnerCouponsReq.
-
-        |参数名称：优惠券的面值：小数点后2位。浮点数精度为：小数点后两位| |参数的约束及描述：优惠券的面值：小数点后2位|
-
-        :return: The face_value of this CreatePartnerCouponsReq.
-        :rtype: float
-        """
-        return self._face_value
-
-    @face_value.setter
-    def face_value(self, face_value):
-        """Sets the face_value of this CreatePartnerCouponsReq.
-
-        |参数名称：优惠券的面值：小数点后2位。浮点数精度为：小数点后两位| |参数的约束及描述：优惠券的面值：小数点后2位|
-
-        :param face_value: The face_value of this CreatePartnerCouponsReq.
-        :type: float
-        """
-        self._face_value = face_value
-
-    @property
-    def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this CreatePartnerCouponsReq.
-
-        |参数名称：二级经销商ID| |参数约束及描述：如果一级经销商要给二级经销商的子客户设置折扣，需要携带这个字段|
-
-        :return: The indirect_partner_id of this CreatePartnerCouponsReq.
-        :rtype: str
-        """
-        return self._indirect_partner_id
-
-    @indirect_partner_id.setter
-    def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this CreatePartnerCouponsReq.
-
-        |参数名称：二级经销商ID| |参数约束及描述：如果一级经销商要给二级经销商的子客户设置折扣，需要携带这个字段|
-
-        :param indirect_partner_id: The indirect_partner_id of this CreatePartnerCouponsReq.
-        :type: str
-        """
-        self._indirect_partner_id = indirect_partner_id
-
-    @property
-    def memo(self):
-        """Gets the memo of this CreatePartnerCouponsReq.
-
-        |参数名称：发券时的备注信息| |参数约束及描述：发券时的备注信息|
-
-        :return: The memo of this CreatePartnerCouponsReq.
-        :rtype: str
-        """
-        return self._memo
-
-    @memo.setter
-    def memo(self, memo):
-        """Sets the memo of this CreatePartnerCouponsReq.
-
-        |参数名称：发券时的备注信息| |参数约束及描述：发券时的备注信息|
-
-        :param memo: The memo of this CreatePartnerCouponsReq.
-        :type: str
-        """
-        self._memo = memo
-
-    @property
-    def product_ids(self):
-        """Gets the product_ids of this CreatePartnerCouponsReq.
-
-        |参数名称：产品限制| |参数约束以及描述：产品限制|
-
-        :return: The product_ids of this CreatePartnerCouponsReq.
-        :rtype: list[str]
-        """
-        return self._product_ids
-
-    @product_ids.setter
-    def product_ids(self, product_ids):
-        """Sets the product_ids of this CreatePartnerCouponsReq.
-
-        |参数名称：产品限制| |参数约束以及描述：产品限制|
-
-        :param product_ids: The product_ids of this CreatePartnerCouponsReq.
-        :type: list[str]
-        """
-        self._product_ids = product_ids
+        if expire_time is not None:
+            self.expire_time = expire_time
+        if cloud_service_types is not None:
+            self.cloud_service_types = cloud_service_types
+        if product_ids is not None:
+            self.product_ids = product_ids
+        if memo is not None:
+            self.memo = memo
+        if indirect_partner_id is not None:
+            self.indirect_partner_id = indirect_partner_id
 
     @property
     def quota_id(self):
@@ -255,6 +101,50 @@ class CreatePartnerCouponsReq:
         self._quota_id = quota_id
 
     @property
+    def customer_ids(self):
+        """Gets the customer_ids of this CreatePartnerCouponsReq.
+
+        |参数名称：客户ID列表| |参数约束以及描述：客户ID列表|
+
+        :return: The customer_ids of this CreatePartnerCouponsReq.
+        :rtype: list[str]
+        """
+        return self._customer_ids
+
+    @customer_ids.setter
+    def customer_ids(self, customer_ids):
+        """Sets the customer_ids of this CreatePartnerCouponsReq.
+
+        |参数名称：客户ID列表| |参数约束以及描述：客户ID列表|
+
+        :param customer_ids: The customer_ids of this CreatePartnerCouponsReq.
+        :type: list[str]
+        """
+        self._customer_ids = customer_ids
+
+    @property
+    def face_value(self):
+        """Gets the face_value of this CreatePartnerCouponsReq.
+
+        |参数名称：优惠券的面值：小数点后2位。浮点数精度为：小数点后两位| |参数的约束及描述：优惠券的面值：小数点后2位|
+
+        :return: The face_value of this CreatePartnerCouponsReq.
+        :rtype: float
+        """
+        return self._face_value
+
+    @face_value.setter
+    def face_value(self, face_value):
+        """Sets the face_value of this CreatePartnerCouponsReq.
+
+        |参数名称：优惠券的面值：小数点后2位。浮点数精度为：小数点后两位| |参数的约束及描述：优惠券的面值：小数点后2位|
+
+        :param face_value: The face_value of this CreatePartnerCouponsReq.
+        :type: float
+        """
+        self._face_value = face_value
+
+    @property
     def valid_time(self):
         """Gets the valid_time of this CreatePartnerCouponsReq.
 
@@ -275,6 +165,116 @@ class CreatePartnerCouponsReq:
         :type: str
         """
         self._valid_time = valid_time
+
+    @property
+    def expire_time(self):
+        """Gets the expire_time of this CreatePartnerCouponsReq.
+
+        |参数名称：优惠券的失效时间,UTC格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：优惠券的失效时间,UTC格式：yyyy-MM-ddTHH:mm:ssZ|
+
+        :return: The expire_time of this CreatePartnerCouponsReq.
+        :rtype: str
+        """
+        return self._expire_time
+
+    @expire_time.setter
+    def expire_time(self, expire_time):
+        """Sets the expire_time of this CreatePartnerCouponsReq.
+
+        |参数名称：优惠券的失效时间,UTC格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：优惠券的失效时间,UTC格式：yyyy-MM-ddTHH:mm:ssZ|
+
+        :param expire_time: The expire_time of this CreatePartnerCouponsReq.
+        :type: str
+        """
+        self._expire_time = expire_time
+
+    @property
+    def cloud_service_types(self):
+        """Gets the cloud_service_types of this CreatePartnerCouponsReq.
+
+        |参数名称：云服务限制| |参数约束以及描述：云服务限制|
+
+        :return: The cloud_service_types of this CreatePartnerCouponsReq.
+        :rtype: list[str]
+        """
+        return self._cloud_service_types
+
+    @cloud_service_types.setter
+    def cloud_service_types(self, cloud_service_types):
+        """Sets the cloud_service_types of this CreatePartnerCouponsReq.
+
+        |参数名称：云服务限制| |参数约束以及描述：云服务限制|
+
+        :param cloud_service_types: The cloud_service_types of this CreatePartnerCouponsReq.
+        :type: list[str]
+        """
+        self._cloud_service_types = cloud_service_types
+
+    @property
+    def product_ids(self):
+        """Gets the product_ids of this CreatePartnerCouponsReq.
+
+        |参数名称：产品限制| |参数约束以及描述：产品限制|
+
+        :return: The product_ids of this CreatePartnerCouponsReq.
+        :rtype: list[str]
+        """
+        return self._product_ids
+
+    @product_ids.setter
+    def product_ids(self, product_ids):
+        """Sets the product_ids of this CreatePartnerCouponsReq.
+
+        |参数名称：产品限制| |参数约束以及描述：产品限制|
+
+        :param product_ids: The product_ids of this CreatePartnerCouponsReq.
+        :type: list[str]
+        """
+        self._product_ids = product_ids
+
+    @property
+    def memo(self):
+        """Gets the memo of this CreatePartnerCouponsReq.
+
+        |参数名称：发券时的备注信息| |参数约束及描述：发券时的备注信息|
+
+        :return: The memo of this CreatePartnerCouponsReq.
+        :rtype: str
+        """
+        return self._memo
+
+    @memo.setter
+    def memo(self, memo):
+        """Sets the memo of this CreatePartnerCouponsReq.
+
+        |参数名称：发券时的备注信息| |参数约束及描述：发券时的备注信息|
+
+        :param memo: The memo of this CreatePartnerCouponsReq.
+        :type: str
+        """
+        self._memo = memo
+
+    @property
+    def indirect_partner_id(self):
+        """Gets the indirect_partner_id of this CreatePartnerCouponsReq.
+
+        |参数名称：二级经销商ID| |参数约束及描述：如果一级经销商要给二级经销商的子客户设置折扣，需要携带这个字段|
+
+        :return: The indirect_partner_id of this CreatePartnerCouponsReq.
+        :rtype: str
+        """
+        return self._indirect_partner_id
+
+    @indirect_partner_id.setter
+    def indirect_partner_id(self, indirect_partner_id):
+        """Sets the indirect_partner_id of this CreatePartnerCouponsReq.
+
+        |参数名称：二级经销商ID| |参数约束及描述：如果一级经销商要给二级经销商的子客户设置折扣，需要携带这个字段|
+
+        :param indirect_partner_id: The indirect_partner_id of this CreatePartnerCouponsReq.
+        :type: str
+        """
+        self._indirect_partner_id = indirect_partner_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

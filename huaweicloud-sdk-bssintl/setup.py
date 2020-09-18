@@ -4,12 +4,12 @@ from os import path
 from setuptools import setup, find_packages
 
 NAME = "huaweicloudsdkbssintl"
-VERSION = "3.0.12-beta"
+VERSION = "3.0.13-beta"
 AUTHOR = "HuaweiCloud SDK"
 AUTHOR_EMAIL = "hwcloudsdk@huawei.com"
 URL = "https://github.com/huaweicloud/huaweicloud-sdk-python-v3"
 
-DESCRIPTION = "Bssintl"
+DESCRIPTION = "CSBPartnerOpenAPI"
 this_directory = path.abspath(path.dirname(__file__))
 with open(path.join(this_directory, 'README_PYPI.md'), encoding='utf-8') as f:
     LONG_DESCRIPTION = f.read()
@@ -26,7 +26,7 @@ setup(
     author_email=AUTHOR_EMAIL,
     license="Apache LICENSE 2.0",
     url=URL,
-    keywords=["huaweicloud", "sdk", "Bssintl"],
+    keywords=["huaweicloud", "sdk", "CSBPartnerOpenAPI"],
     packages=find_packages(exclude=["tests*"]),
     install_requires=REQUIRES,
     include_package_data=True,

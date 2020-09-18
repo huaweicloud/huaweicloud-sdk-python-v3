@@ -23,132 +23,66 @@ class ChangeEnterpriseRealnameAuthsReq:
     sensitive_list = []
 
     openapi_types = {
-        'certificate_type': 'int',
-        'change_type': 'int',
-        'corp_name': 'str',
         'customer_id': 'str',
-        'enterprise_person': 'EnterprisePersonNew',
         'identify_type': 'int',
-        'reg_address': 'str',
-        'reg_country': 'str',
+        'certificate_type': 'int',
         'verified_file_url': 'list[str]',
+        'corp_name': 'str',
         'verified_number': 'str',
-        'xaccount_type': 'str'
+        'reg_country': 'str',
+        'reg_address': 'str',
+        'change_type': 'int',
+        'xaccount_type': 'str',
+        'enterprise_person': 'EnterprisePersonNew'
     }
 
     attribute_map = {
-        'certificate_type': 'certificate_type',
-        'change_type': 'change_type',
-        'corp_name': 'corp_name',
         'customer_id': 'customer_id',
-        'enterprise_person': 'enterprise_person',
         'identify_type': 'identify_type',
-        'reg_address': 'reg_address',
-        'reg_country': 'reg_country',
+        'certificate_type': 'certificate_type',
         'verified_file_url': 'verified_file_url',
+        'corp_name': 'corp_name',
         'verified_number': 'verified_number',
-        'xaccount_type': 'xaccount_type'
+        'reg_country': 'reg_country',
+        'reg_address': 'reg_address',
+        'change_type': 'change_type',
+        'xaccount_type': 'xaccount_type',
+        'enterprise_person': 'enterprise_person'
     }
 
-    def __init__(self, certificate_type=None, change_type=None, corp_name=None, customer_id=None, enterprise_person=None, identify_type=None, reg_address=None, reg_country=None, verified_file_url=None, verified_number=None, xaccount_type=None):
+    def __init__(self, customer_id=None, identify_type=None, certificate_type=None, verified_file_url=None, corp_name=None, verified_number=None, reg_country=None, reg_address=None, change_type=None, xaccount_type=None, enterprise_person=None):
         """ChangeEnterpriseRealnameAuthsReq - a model defined in huaweicloud sdk"""
         
         
 
-        self._certificate_type = None
-        self._change_type = None
-        self._corp_name = None
         self._customer_id = None
-        self._enterprise_person = None
         self._identify_type = None
-        self._reg_address = None
-        self._reg_country = None
+        self._certificate_type = None
         self._verified_file_url = None
+        self._corp_name = None
         self._verified_number = None
+        self._reg_country = None
+        self._reg_address = None
+        self._change_type = None
         self._xaccount_type = None
+        self._enterprise_person = None
         self.discriminator = None
 
+        self.customer_id = customer_id
+        self.identify_type = identify_type
         if certificate_type is not None:
             self.certificate_type = certificate_type
-        self.change_type = change_type
+        self.verified_file_url = verified_file_url
         self.corp_name = corp_name
-        self.customer_id = customer_id
-        if enterprise_person is not None:
-            self.enterprise_person = enterprise_person
-        self.identify_type = identify_type
-        if reg_address is not None:
-            self.reg_address = reg_address
+        self.verified_number = verified_number
         if reg_country is not None:
             self.reg_country = reg_country
-        self.verified_file_url = verified_file_url
-        self.verified_number = verified_number
+        if reg_address is not None:
+            self.reg_address = reg_address
+        self.change_type = change_type
         self.xaccount_type = xaccount_type
-
-    @property
-    def certificate_type(self):
-        """Gets the certificate_type of this ChangeEnterpriseRealnameAuthsReq.
-
-        |参数名称：企业证件类型：0：企业营业执照1：事业单位法人证书2：社会团体法人登记证书3：行政执法主体资格证4：组织机构代码证99：其他| |参数的约束及描述：企业证件类型：0：企业营业执照1：事业单位法人证书2：社会团体法人登记证书3：行政执法主体资格证4：组织机构代码证99：其他|
-
-        :return: The certificate_type of this ChangeEnterpriseRealnameAuthsReq.
-        :rtype: int
-        """
-        return self._certificate_type
-
-    @certificate_type.setter
-    def certificate_type(self, certificate_type):
-        """Sets the certificate_type of this ChangeEnterpriseRealnameAuthsReq.
-
-        |参数名称：企业证件类型：0：企业营业执照1：事业单位法人证书2：社会团体法人登记证书3：行政执法主体资格证4：组织机构代码证99：其他| |参数的约束及描述：企业证件类型：0：企业营业执照1：事业单位法人证书2：社会团体法人登记证书3：行政执法主体资格证4：组织机构代码证99：其他|
-
-        :param certificate_type: The certificate_type of this ChangeEnterpriseRealnameAuthsReq.
-        :type: int
-        """
-        self._certificate_type = certificate_type
-
-    @property
-    def change_type(self):
-        """Gets the change_type of this ChangeEnterpriseRealnameAuthsReq.
-
-        |参数名称：变更类型：1：个人变企业| |参数的约束及描述：变更类型：1：个人变企业|
-
-        :return: The change_type of this ChangeEnterpriseRealnameAuthsReq.
-        :rtype: int
-        """
-        return self._change_type
-
-    @change_type.setter
-    def change_type(self, change_type):
-        """Sets the change_type of this ChangeEnterpriseRealnameAuthsReq.
-
-        |参数名称：变更类型：1：个人变企业| |参数的约束及描述：变更类型：1：个人变企业|
-
-        :param change_type: The change_type of this ChangeEnterpriseRealnameAuthsReq.
-        :type: int
-        """
-        self._change_type = change_type
-
-    @property
-    def corp_name(self):
-        """Gets the corp_name of this ChangeEnterpriseRealnameAuthsReq.
-
-        |参数名称：单位名称。不能全是数字、特殊字符、空格。| |参数约束及描述：单位名称。不能全是数字、特殊字符、空格。|
-
-        :return: The corp_name of this ChangeEnterpriseRealnameAuthsReq.
-        :rtype: str
-        """
-        return self._corp_name
-
-    @corp_name.setter
-    def corp_name(self, corp_name):
-        """Sets the corp_name of this ChangeEnterpriseRealnameAuthsReq.
-
-        |参数名称：单位名称。不能全是数字、特殊字符、空格。| |参数约束及描述：单位名称。不能全是数字、特殊字符、空格。|
-
-        :param corp_name: The corp_name of this ChangeEnterpriseRealnameAuthsReq.
-        :type: str
-        """
-        self._corp_name = corp_name
+        if enterprise_person is not None:
+            self.enterprise_person = enterprise_person
 
     @property
     def customer_id(self):
@@ -173,26 +107,6 @@ class ChangeEnterpriseRealnameAuthsReq:
         self._customer_id = customer_id
 
     @property
-    def enterprise_person(self):
-        """Gets the enterprise_person of this ChangeEnterpriseRealnameAuthsReq.
-
-
-        :return: The enterprise_person of this ChangeEnterpriseRealnameAuthsReq.
-        :rtype: EnterprisePersonNew
-        """
-        return self._enterprise_person
-
-    @enterprise_person.setter
-    def enterprise_person(self, enterprise_person):
-        """Sets the enterprise_person of this ChangeEnterpriseRealnameAuthsReq.
-
-
-        :param enterprise_person: The enterprise_person of this ChangeEnterpriseRealnameAuthsReq.
-        :type: EnterprisePersonNew
-        """
-        self._enterprise_person = enterprise_person
-
-    @property
     def identify_type(self):
         """Gets the identify_type of this ChangeEnterpriseRealnameAuthsReq.
 
@@ -215,48 +129,26 @@ class ChangeEnterpriseRealnameAuthsReq:
         self._identify_type = identify_type
 
     @property
-    def reg_address(self):
-        """Gets the reg_address of this ChangeEnterpriseRealnameAuthsReq.
+    def certificate_type(self):
+        """Gets the certificate_type of this ChangeEnterpriseRealnameAuthsReq.
 
-        |参数名称：实名认证企业注册地址。| |参数约束及描述：实名认证企业注册地址。|
+        |参数名称：企业证件类型：0：企业营业执照1：事业单位法人证书2：社会团体法人登记证书3：行政执法主体资格证4：组织机构代码证99：其他| |参数的约束及描述：企业证件类型：0：企业营业执照1：事业单位法人证书2：社会团体法人登记证书3：行政执法主体资格证4：组织机构代码证99：其他|
 
-        :return: The reg_address of this ChangeEnterpriseRealnameAuthsReq.
-        :rtype: str
+        :return: The certificate_type of this ChangeEnterpriseRealnameAuthsReq.
+        :rtype: int
         """
-        return self._reg_address
+        return self._certificate_type
 
-    @reg_address.setter
-    def reg_address(self, reg_address):
-        """Sets the reg_address of this ChangeEnterpriseRealnameAuthsReq.
+    @certificate_type.setter
+    def certificate_type(self, certificate_type):
+        """Sets the certificate_type of this ChangeEnterpriseRealnameAuthsReq.
 
-        |参数名称：实名认证企业注册地址。| |参数约束及描述：实名认证企业注册地址。|
+        |参数名称：企业证件类型：0：企业营业执照1：事业单位法人证书2：社会团体法人登记证书3：行政执法主体资格证4：组织机构代码证99：其他| |参数的约束及描述：企业证件类型：0：企业营业执照1：事业单位法人证书2：社会团体法人登记证书3：行政执法主体资格证4：组织机构代码证99：其他|
 
-        :param reg_address: The reg_address of this ChangeEnterpriseRealnameAuthsReq.
-        :type: str
+        :param certificate_type: The certificate_type of this ChangeEnterpriseRealnameAuthsReq.
+        :type: int
         """
-        self._reg_address = reg_address
-
-    @property
-    def reg_country(self):
-        """Gets the reg_country of this ChangeEnterpriseRealnameAuthsReq.
-
-        |参数名称：实名认证填写的注册国家。国家的两位字母简码。例如：注册国家为“中国”请填写“CN”。| |参数约束及描述：实名认证填写的注册国家。国家的两位字母简码。例如：注册国家为“中国”请填写“CN”。|
-
-        :return: The reg_country of this ChangeEnterpriseRealnameAuthsReq.
-        :rtype: str
-        """
-        return self._reg_country
-
-    @reg_country.setter
-    def reg_country(self, reg_country):
-        """Sets the reg_country of this ChangeEnterpriseRealnameAuthsReq.
-
-        |参数名称：实名认证填写的注册国家。国家的两位字母简码。例如：注册国家为“中国”请填写“CN”。| |参数约束及描述：实名认证填写的注册国家。国家的两位字母简码。例如：注册国家为“中国”请填写“CN”。|
-
-        :param reg_country: The reg_country of this ChangeEnterpriseRealnameAuthsReq.
-        :type: str
-        """
-        self._reg_country = reg_country
+        self._certificate_type = certificate_type
 
     @property
     def verified_file_url(self):
@@ -281,6 +173,28 @@ class ChangeEnterpriseRealnameAuthsReq:
         self._verified_file_url = verified_file_url
 
     @property
+    def corp_name(self):
+        """Gets the corp_name of this ChangeEnterpriseRealnameAuthsReq.
+
+        |参数名称：单位名称。不能全是数字、特殊字符、空格。| |参数约束及描述：单位名称。不能全是数字、特殊字符、空格。|
+
+        :return: The corp_name of this ChangeEnterpriseRealnameAuthsReq.
+        :rtype: str
+        """
+        return self._corp_name
+
+    @corp_name.setter
+    def corp_name(self, corp_name):
+        """Sets the corp_name of this ChangeEnterpriseRealnameAuthsReq.
+
+        |参数名称：单位名称。不能全是数字、特殊字符、空格。| |参数约束及描述：单位名称。不能全是数字、特殊字符、空格。|
+
+        :param corp_name: The corp_name of this ChangeEnterpriseRealnameAuthsReq.
+        :type: str
+        """
+        self._corp_name = corp_name
+
+    @property
     def verified_number(self):
         """Gets the verified_number of this ChangeEnterpriseRealnameAuthsReq.
 
@@ -303,6 +217,72 @@ class ChangeEnterpriseRealnameAuthsReq:
         self._verified_number = verified_number
 
     @property
+    def reg_country(self):
+        """Gets the reg_country of this ChangeEnterpriseRealnameAuthsReq.
+
+        |参数名称：实名认证填写的注册国家。国家的两位字母简码。例如：注册国家为“中国”请填写“CN”。| |参数约束及描述：实名认证填写的注册国家。国家的两位字母简码。例如：注册国家为“中国”请填写“CN”。|
+
+        :return: The reg_country of this ChangeEnterpriseRealnameAuthsReq.
+        :rtype: str
+        """
+        return self._reg_country
+
+    @reg_country.setter
+    def reg_country(self, reg_country):
+        """Sets the reg_country of this ChangeEnterpriseRealnameAuthsReq.
+
+        |参数名称：实名认证填写的注册国家。国家的两位字母简码。例如：注册国家为“中国”请填写“CN”。| |参数约束及描述：实名认证填写的注册国家。国家的两位字母简码。例如：注册国家为“中国”请填写“CN”。|
+
+        :param reg_country: The reg_country of this ChangeEnterpriseRealnameAuthsReq.
+        :type: str
+        """
+        self._reg_country = reg_country
+
+    @property
+    def reg_address(self):
+        """Gets the reg_address of this ChangeEnterpriseRealnameAuthsReq.
+
+        |参数名称：实名认证企业注册地址。| |参数约束及描述：实名认证企业注册地址。|
+
+        :return: The reg_address of this ChangeEnterpriseRealnameAuthsReq.
+        :rtype: str
+        """
+        return self._reg_address
+
+    @reg_address.setter
+    def reg_address(self, reg_address):
+        """Sets the reg_address of this ChangeEnterpriseRealnameAuthsReq.
+
+        |参数名称：实名认证企业注册地址。| |参数约束及描述：实名认证企业注册地址。|
+
+        :param reg_address: The reg_address of this ChangeEnterpriseRealnameAuthsReq.
+        :type: str
+        """
+        self._reg_address = reg_address
+
+    @property
+    def change_type(self):
+        """Gets the change_type of this ChangeEnterpriseRealnameAuthsReq.
+
+        |参数名称：变更类型：1：个人变企业| |参数的约束及描述：变更类型：1：个人变企业|
+
+        :return: The change_type of this ChangeEnterpriseRealnameAuthsReq.
+        :rtype: int
+        """
+        return self._change_type
+
+    @change_type.setter
+    def change_type(self, change_type):
+        """Sets the change_type of this ChangeEnterpriseRealnameAuthsReq.
+
+        |参数名称：变更类型：1：个人变企业| |参数的约束及描述：变更类型：1：个人变企业|
+
+        :param change_type: The change_type of this ChangeEnterpriseRealnameAuthsReq.
+        :type: int
+        """
+        self._change_type = change_type
+
+    @property
     def xaccount_type(self):
         """Gets the xaccount_type of this ChangeEnterpriseRealnameAuthsReq.
 
@@ -323,6 +303,26 @@ class ChangeEnterpriseRealnameAuthsReq:
         :type: str
         """
         self._xaccount_type = xaccount_type
+
+    @property
+    def enterprise_person(self):
+        """Gets the enterprise_person of this ChangeEnterpriseRealnameAuthsReq.
+
+
+        :return: The enterprise_person of this ChangeEnterpriseRealnameAuthsReq.
+        :rtype: EnterprisePersonNew
+        """
+        return self._enterprise_person
+
+    @enterprise_person.setter
+    def enterprise_person(self, enterprise_person):
+        """Sets the enterprise_person of this ChangeEnterpriseRealnameAuthsReq.
+
+
+        :param enterprise_person: The enterprise_person of this ChangeEnterpriseRealnameAuthsReq.
+        :type: EnterprisePersonNew
+        """
+        self._enterprise_person = enterprise_person
 
     def to_dict(self):
         """Returns the model properties as a dict"""

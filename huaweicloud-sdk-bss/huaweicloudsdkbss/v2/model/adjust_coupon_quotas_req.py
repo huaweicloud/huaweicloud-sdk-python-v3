@@ -23,30 +23,52 @@ class AdjustCouponQuotasReq:
     sensitive_list = []
 
     openapi_types = {
+        'quota_id': 'str',
         'indirect_partner_ids': 'list[str]',
-        'quota_amount': 'float',
-        'quota_id': 'str'
+        'quota_amount': 'float'
     }
 
     attribute_map = {
+        'quota_id': 'quota_id',
         'indirect_partner_ids': 'indirect_partner_ids',
-        'quota_amount': 'quota_amount',
-        'quota_id': 'quota_id'
+        'quota_amount': 'quota_amount'
     }
 
-    def __init__(self, indirect_partner_ids=None, quota_amount=None, quota_id=None):
+    def __init__(self, quota_id=None, indirect_partner_ids=None, quota_amount=None):
         """AdjustCouponQuotasReq - a model defined in huaweicloud sdk"""
         
         
 
+        self._quota_id = None
         self._indirect_partner_ids = None
         self._quota_amount = None
-        self._quota_id = None
         self.discriminator = None
 
+        self.quota_id = quota_id
         self.indirect_partner_ids = indirect_partner_ids
         self.quota_amount = quota_amount
-        self.quota_id = quota_id
+
+    @property
+    def quota_id(self):
+        """Gets the quota_id of this AdjustCouponQuotasReq.
+
+        |参数名称：优惠券额度ID。| |参数约束及描述：优惠券额度ID。|
+
+        :return: The quota_id of this AdjustCouponQuotasReq.
+        :rtype: str
+        """
+        return self._quota_id
+
+    @quota_id.setter
+    def quota_id(self, quota_id):
+        """Sets the quota_id of this AdjustCouponQuotasReq.
+
+        |参数名称：优惠券额度ID。| |参数约束及描述：优惠券额度ID。|
+
+        :param quota_id: The quota_id of this AdjustCouponQuotasReq.
+        :type: str
+        """
+        self._quota_id = quota_id
 
     @property
     def indirect_partner_ids(self):
@@ -91,28 +113,6 @@ class AdjustCouponQuotasReq:
         :type: float
         """
         self._quota_amount = quota_amount
-
-    @property
-    def quota_id(self):
-        """Gets the quota_id of this AdjustCouponQuotasReq.
-
-        |参数名称：优惠券额度ID。| |参数约束及描述：优惠券额度ID。|
-
-        :return: The quota_id of this AdjustCouponQuotasReq.
-        :rtype: str
-        """
-        return self._quota_id
-
-    @quota_id.setter
-    def quota_id(self, quota_id):
-        """Sets the quota_id of this AdjustCouponQuotasReq.
-
-        |参数名称：优惠券额度ID。| |参数约束及描述：优惠券额度ID。|
-
-        :param quota_id: The quota_id of this AdjustCouponQuotasReq.
-        :type: str
-        """
-        self._quota_id = quota_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

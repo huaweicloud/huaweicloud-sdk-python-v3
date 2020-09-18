@@ -23,139 +23,117 @@ class BillSumInfoV2:
     sensitive_list = []
 
     openapi_types = {
-        'account_details': 'list[BalanceTypeDeductSumV2]',
-        'adjustment_amount': 'float',
-        'amount': 'float',
+        'customer_id': 'str',
+        'cloud_service_type': 'str',
         'bill_type': 'str',
         'charge_mode': 'str',
-        'cloud_service_type': 'str',
-        'customer_id': 'str',
+        'amount': 'float',
         'debt_amount': 'float',
+        'adjustment_amount': 'float',
         'discount_amount': 'float',
         'measure_id': 'int',
+        'account_details': 'list[BalanceTypeDeductSumV2]',
         'resource_type_code': 'str'
     }
 
     attribute_map = {
-        'account_details': 'account_details',
-        'adjustment_amount': 'adjustment_amount',
-        'amount': 'amount',
+        'customer_id': 'customer_id',
+        'cloud_service_type': 'cloud_service_type',
         'bill_type': 'bill_type',
         'charge_mode': 'charge_mode',
-        'cloud_service_type': 'cloud_service_type',
-        'customer_id': 'customer_id',
+        'amount': 'amount',
         'debt_amount': 'debt_amount',
+        'adjustment_amount': 'adjustment_amount',
         'discount_amount': 'discount_amount',
         'measure_id': 'measure_id',
+        'account_details': 'account_details',
         'resource_type_code': 'resource_type_code'
     }
 
-    def __init__(self, account_details=None, adjustment_amount=None, amount=None, bill_type=None, charge_mode=None, cloud_service_type=None, customer_id=None, debt_amount=None, discount_amount=None, measure_id=None, resource_type_code=None):
+    def __init__(self, customer_id=None, cloud_service_type=None, bill_type=None, charge_mode=None, amount=None, debt_amount=None, adjustment_amount=None, discount_amount=None, measure_id=None, account_details=None, resource_type_code=None):
         """BillSumInfoV2 - a model defined in huaweicloud sdk"""
         
         
 
-        self._account_details = None
-        self._adjustment_amount = None
-        self._amount = None
+        self._customer_id = None
+        self._cloud_service_type = None
         self._bill_type = None
         self._charge_mode = None
-        self._cloud_service_type = None
-        self._customer_id = None
+        self._amount = None
         self._debt_amount = None
+        self._adjustment_amount = None
         self._discount_amount = None
         self._measure_id = None
+        self._account_details = None
         self._resource_type_code = None
         self.discriminator = None
 
-        if account_details is not None:
-            self.account_details = account_details
-        if adjustment_amount is not None:
-            self.adjustment_amount = adjustment_amount
-        if amount is not None:
-            self.amount = amount
+        if customer_id is not None:
+            self.customer_id = customer_id
+        if cloud_service_type is not None:
+            self.cloud_service_type = cloud_service_type
         if bill_type is not None:
             self.bill_type = bill_type
         if charge_mode is not None:
             self.charge_mode = charge_mode
-        if cloud_service_type is not None:
-            self.cloud_service_type = cloud_service_type
-        if customer_id is not None:
-            self.customer_id = customer_id
+        if amount is not None:
+            self.amount = amount
         if debt_amount is not None:
             self.debt_amount = debt_amount
+        if adjustment_amount is not None:
+            self.adjustment_amount = adjustment_amount
         if discount_amount is not None:
             self.discount_amount = discount_amount
         if measure_id is not None:
             self.measure_id = measure_id
+        if account_details is not None:
+            self.account_details = account_details
         if resource_type_code is not None:
             self.resource_type_code = resource_type_code
 
     @property
-    def account_details(self):
-        """Gets the account_details of this BillSumInfoV2.
+    def customer_id(self):
+        """Gets the customer_id of this BillSumInfoV2.
 
-        |参数名称：按不同账户消费类型和付费方式区分的支付总金额。具体请参见表 BalanceTypeDeductSum。| |参数约束以及描述：按不同账户消费类型和付费方式区分的支付总金额。具体请参见表 BalanceTypeDeductSum。|
+        |参数名称：客户ID。| |参数约束及描述：客户ID。|
 
-        :return: The account_details of this BillSumInfoV2.
-        :rtype: list[BalanceTypeDeductSumV2]
+        :return: The customer_id of this BillSumInfoV2.
+        :rtype: str
         """
-        return self._account_details
+        return self._customer_id
 
-    @account_details.setter
-    def account_details(self, account_details):
-        """Sets the account_details of this BillSumInfoV2.
+    @customer_id.setter
+    def customer_id(self, customer_id):
+        """Sets the customer_id of this BillSumInfoV2.
 
-        |参数名称：按不同账户消费类型和付费方式区分的支付总金额。具体请参见表 BalanceTypeDeductSum。| |参数约束以及描述：按不同账户消费类型和付费方式区分的支付总金额。具体请参见表 BalanceTypeDeductSum。|
+        |参数名称：客户ID。| |参数约束及描述：客户ID。|
 
-        :param account_details: The account_details of this BillSumInfoV2.
-        :type: list[BalanceTypeDeductSumV2]
+        :param customer_id: The customer_id of this BillSumInfoV2.
+        :type: str
         """
-        self._account_details = account_details
+        self._customer_id = customer_id
 
     @property
-    def adjustment_amount(self):
-        """Gets the adjustment_amount of this BillSumInfoV2.
+    def cloud_service_type(self):
+        """Gets the cloud_service_type of this BillSumInfoV2.
 
-        |参数名称：核销欠款，华为核销或者退订的时候没有该字段。| |参数的约束及描述：核销欠款，华为核销或者退订的时候没有该字段。|
+        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型。|
 
-        :return: The adjustment_amount of this BillSumInfoV2.
-        :rtype: float
+        :return: The cloud_service_type of this BillSumInfoV2.
+        :rtype: str
         """
-        return self._adjustment_amount
+        return self._cloud_service_type
 
-    @adjustment_amount.setter
-    def adjustment_amount(self, adjustment_amount):
-        """Sets the adjustment_amount of this BillSumInfoV2.
+    @cloud_service_type.setter
+    def cloud_service_type(self, cloud_service_type):
+        """Sets the cloud_service_type of this BillSumInfoV2.
 
-        |参数名称：核销欠款，华为核销或者退订的时候没有该字段。| |参数的约束及描述：核销欠款，华为核销或者退订的时候没有该字段。|
+        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型。|
 
-        :param adjustment_amount: The adjustment_amount of this BillSumInfoV2.
-        :type: float
+        :param cloud_service_type: The cloud_service_type of this BillSumInfoV2.
+        :type: str
         """
-        self._adjustment_amount = adjustment_amount
-
-    @property
-    def amount(self):
-        """Gets the amount of this BillSumInfoV2.
-
-        |参数名称：消费的金额，即从客户账户实际扣除的金额。对于billType=1或者2的账单，该金额为负值。| |参数的约束及描述：消费的金额，即从客户账户实际扣除的金额。对于billType=1或者2的账单，该金额为负值。|
-
-        :return: The amount of this BillSumInfoV2.
-        :rtype: float
-        """
-        return self._amount
-
-    @amount.setter
-    def amount(self, amount):
-        """Sets the amount of this BillSumInfoV2.
-
-        |参数名称：消费的金额，即从客户账户实际扣除的金额。对于billType=1或者2的账单，该金额为负值。| |参数的约束及描述：消费的金额，即从客户账户实际扣除的金额。对于billType=1或者2的账单，该金额为负值。|
-
-        :param amount: The amount of this BillSumInfoV2.
-        :type: float
-        """
-        self._amount = amount
+        self._cloud_service_type = cloud_service_type
 
     @property
     def bill_type(self):
@@ -202,48 +180,26 @@ class BillSumInfoV2:
         self._charge_mode = charge_mode
 
     @property
-    def cloud_service_type(self):
-        """Gets the cloud_service_type of this BillSumInfoV2.
+    def amount(self):
+        """Gets the amount of this BillSumInfoV2.
 
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型。|
+        |参数名称：消费的金额，即从客户账户实际扣除的金额。对于billType=1或者2的账单，该金额为负值。| |参数的约束及描述：消费的金额，即从客户账户实际扣除的金额。对于billType=1或者2的账单，该金额为负值。|
 
-        :return: The cloud_service_type of this BillSumInfoV2.
-        :rtype: str
+        :return: The amount of this BillSumInfoV2.
+        :rtype: float
         """
-        return self._cloud_service_type
+        return self._amount
 
-    @cloud_service_type.setter
-    def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this BillSumInfoV2.
+    @amount.setter
+    def amount(self, amount):
+        """Sets the amount of this BillSumInfoV2.
 
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型。|
+        |参数名称：消费的金额，即从客户账户实际扣除的金额。对于billType=1或者2的账单，该金额为负值。| |参数的约束及描述：消费的金额，即从客户账户实际扣除的金额。对于billType=1或者2的账单，该金额为负值。|
 
-        :param cloud_service_type: The cloud_service_type of this BillSumInfoV2.
-        :type: str
+        :param amount: The amount of this BillSumInfoV2.
+        :type: float
         """
-        self._cloud_service_type = cloud_service_type
-
-    @property
-    def customer_id(self):
-        """Gets the customer_id of this BillSumInfoV2.
-
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
-
-        :return: The customer_id of this BillSumInfoV2.
-        :rtype: str
-        """
-        return self._customer_id
-
-    @customer_id.setter
-    def customer_id(self, customer_id):
-        """Sets the customer_id of this BillSumInfoV2.
-
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
-
-        :param customer_id: The customer_id of this BillSumInfoV2.
-        :type: str
-        """
-        self._customer_id = customer_id
+        self._amount = amount
 
     @property
     def debt_amount(self):
@@ -266,6 +222,28 @@ class BillSumInfoV2:
         :type: float
         """
         self._debt_amount = debt_amount
+
+    @property
+    def adjustment_amount(self):
+        """Gets the adjustment_amount of this BillSumInfoV2.
+
+        |参数名称：核销欠款，华为核销或者退订的时候没有该字段。| |参数的约束及描述：核销欠款，华为核销或者退订的时候没有该字段。|
+
+        :return: The adjustment_amount of this BillSumInfoV2.
+        :rtype: float
+        """
+        return self._adjustment_amount
+
+    @adjustment_amount.setter
+    def adjustment_amount(self, adjustment_amount):
+        """Sets the adjustment_amount of this BillSumInfoV2.
+
+        |参数名称：核销欠款，华为核销或者退订的时候没有该字段。| |参数的约束及描述：核销欠款，华为核销或者退订的时候没有该字段。|
+
+        :param adjustment_amount: The adjustment_amount of this BillSumInfoV2.
+        :type: float
+        """
+        self._adjustment_amount = adjustment_amount
 
     @property
     def discount_amount(self):
@@ -310,6 +288,28 @@ class BillSumInfoV2:
         :type: int
         """
         self._measure_id = measure_id
+
+    @property
+    def account_details(self):
+        """Gets the account_details of this BillSumInfoV2.
+
+        |参数名称：按不同账户消费类型和付费方式区分的支付总金额。具体请参见表 BalanceTypeDeductSum。| |参数约束以及描述：按不同账户消费类型和付费方式区分的支付总金额。具体请参见表 BalanceTypeDeductSum。|
+
+        :return: The account_details of this BillSumInfoV2.
+        :rtype: list[BalanceTypeDeductSumV2]
+        """
+        return self._account_details
+
+    @account_details.setter
+    def account_details(self, account_details):
+        """Sets the account_details of this BillSumInfoV2.
+
+        |参数名称：按不同账户消费类型和付费方式区分的支付总金额。具体请参见表 BalanceTypeDeductSum。| |参数约束以及描述：按不同账户消费类型和付费方式区分的支付总金额。具体请参见表 BalanceTypeDeductSum。|
+
+        :param account_details: The account_details of this BillSumInfoV2.
+        :type: list[BalanceTypeDeductSumV2]
+        """
+        self._account_details = account_details
 
     @property
     def resource_type_code(self):

@@ -51,8 +51,6 @@ class UpdateImageResponse(SdkResponse):
         'checksum': 'str',
         'container_format': 'str',
         'created_at': 'str',
-        'deleted': 'bool',
-        'deleted_at': 'str',
         'disk_format': 'str',
         'enterprise_project_id': 'str',
         'file': 'str',
@@ -74,7 +72,12 @@ class UpdateImageResponse(SdkResponse):
         'architecture': 'str',
         'support_fc_inject': 'str',
         'hw_firmware_type': 'str',
-        'support_arm': 'str'
+        'support_arm': 'str',
+        'max_ram': 'str',
+        'system_cmkid': 'str',
+        'os_feature_list': 'str',
+        'account_code': 'str',
+        'hw_vif_multiqueue_enabled': 'str'
     }
 
     attribute_map = {
@@ -106,8 +109,6 @@ class UpdateImageResponse(SdkResponse):
         'checksum': 'checksum',
         'container_format': 'container_format',
         'created_at': 'created_at',
-        'deleted': 'deleted',
-        'deleted_at': 'deleted_at',
         'disk_format': 'disk_format',
         'enterprise_project_id': 'enterprise_project_id',
         'file': 'file',
@@ -129,10 +130,15 @@ class UpdateImageResponse(SdkResponse):
         'architecture': 'architecture',
         'support_fc_inject': '__support_fc_inject',
         'hw_firmware_type': 'hw_firmware_type',
-        'support_arm': '__support_arm'
+        'support_arm': '__support_arm',
+        'max_ram': 'max_ram',
+        'system_cmkid': '__system__cmkid',
+        'os_feature_list': '__os_feature_list',
+        'account_code': '__account_code',
+        'hw_vif_multiqueue_enabled': 'hw_vif_multiqueue_enabled'
     }
 
-    def __init__(self, backup_id=None, data_origin=None, description=None, image_location=None, image_size=None, image_source_type=None, imagetype=None, is_config_init=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, deleted=None, deleted_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, architecture=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None):
+    def __init__(self, backup_id=None, data_origin=None, description=None, image_location=None, image_size=None, image_source_type=None, imagetype=None, is_config_init=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, architecture=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None, max_ram=None, system_cmkid=None, os_feature_list=None, account_code=None, hw_vif_multiqueue_enabled=None):
         """UpdateImageResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
@@ -165,8 +171,6 @@ class UpdateImageResponse(SdkResponse):
         self._checksum = None
         self._container_format = None
         self._created_at = None
-        self._deleted = None
-        self._deleted_at = None
         self._disk_format = None
         self._enterprise_project_id = None
         self._file = None
@@ -189,6 +193,11 @@ class UpdateImageResponse(SdkResponse):
         self._support_fc_inject = None
         self._hw_firmware_type = None
         self._support_arm = None
+        self._max_ram = None
+        self._system_cmkid = None
+        self._os_feature_list = None
+        self._account_code = None
+        self._hw_vif_multiqueue_enabled = None
         self.discriminator = None
 
         if backup_id is not None:
@@ -247,10 +256,6 @@ class UpdateImageResponse(SdkResponse):
             self.container_format = container_format
         if created_at is not None:
             self.created_at = created_at
-        if deleted is not None:
-            self.deleted = deleted
-        if deleted_at is not None:
-            self.deleted_at = deleted_at
         if disk_format is not None:
             self.disk_format = disk_format
         if enterprise_project_id is not None:
@@ -295,6 +300,16 @@ class UpdateImageResponse(SdkResponse):
             self.hw_firmware_type = hw_firmware_type
         if support_arm is not None:
             self.support_arm = support_arm
+        if max_ram is not None:
+            self.max_ram = max_ram
+        if system_cmkid is not None:
+            self.system_cmkid = system_cmkid
+        if os_feature_list is not None:
+            self.os_feature_list = os_feature_list
+        if account_code is not None:
+            self.account_code = account_code
+        if hw_vif_multiqueue_enabled is not None:
+            self.hw_vif_multiqueue_enabled = hw_vif_multiqueue_enabled
 
     @property
     def backup_id(self):
@@ -454,7 +469,7 @@ class UpdateImageResponse(SdkResponse):
     def is_config_init(self):
         """Gets the is_config_init of this UpdateImageResponse.
 
-        是否完成了初始化配置。取值为true或false。如果用户确定完成了初始化配置，则可以设置为true，否            则设置为false。默认为false。
+        是否完成了初始化配置。取值为true或false。如果用户确定完成了初始化配置，则可以设置为true，否则设置为false。默认为false。
 
         :return: The is_config_init of this UpdateImageResponse.
         :rtype: str
@@ -465,7 +480,7 @@ class UpdateImageResponse(SdkResponse):
     def is_config_init(self, is_config_init):
         """Sets the is_config_init of this UpdateImageResponse.
 
-        是否完成了初始化配置。取值为true或false。如果用户确定完成了初始化配置，则可以设置为true，否            则设置为false。默认为false。
+        是否完成了初始化配置。取值为true或false。如果用户确定完成了初始化配置，则可以设置为true，否则设置为false。默认为false。
 
         :param is_config_init: The is_config_init of this UpdateImageResponse.
         :type: str
@@ -913,50 +928,6 @@ class UpdateImageResponse(SdkResponse):
         self._created_at = created_at
 
     @property
-    def deleted(self):
-        """Gets the deleted of this UpdateImageResponse.
-
-        是否是删除的镜像，取值为true或者false
-
-        :return: The deleted of this UpdateImageResponse.
-        :rtype: bool
-        """
-        return self._deleted
-
-    @deleted.setter
-    def deleted(self, deleted):
-        """Sets the deleted of this UpdateImageResponse.
-
-        是否是删除的镜像，取值为true或者false
-
-        :param deleted: The deleted of this UpdateImageResponse.
-        :type: bool
-        """
-        self._deleted = deleted
-
-    @property
-    def deleted_at(self):
-        """Gets the deleted_at of this UpdateImageResponse.
-
-        删除时间。格式为UTC时间
-
-        :return: The deleted_at of this UpdateImageResponse.
-        :rtype: str
-        """
-        return self._deleted_at
-
-    @deleted_at.setter
-    def deleted_at(self, deleted_at):
-        """Sets the deleted_at of this UpdateImageResponse.
-
-        删除时间。格式为UTC时间
-
-        :param deleted_at: The deleted_at of this UpdateImageResponse.
-        :type: str
-        """
-        self._deleted_at = deleted_at
-
-    @property
     def disk_format(self):
         """Gets the disk_format of this UpdateImageResponse.
 
@@ -982,7 +953,7 @@ class UpdateImageResponse(SdkResponse):
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this UpdateImageResponse.
 
-        表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目，取值为UUID，表示属于             该UUID对应的企业项目。
+        表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目，取值为UUID，表示属于该UUID对应的企业项目。
 
         :return: The enterprise_project_id of this UpdateImageResponse.
         :rtype: str
@@ -993,7 +964,7 @@ class UpdateImageResponse(SdkResponse):
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this UpdateImageResponse.
 
-        表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目，取值为UUID，表示属于             该UUID对应的企业项目。
+        表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目，取值为UUID，表示属于该UUID对应的企业项目。
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateImageResponse.
         :type: str
@@ -1439,6 +1410,116 @@ class UpdateImageResponse(SdkResponse):
         :type: str
         """
         self._support_arm = support_arm
+
+    @property
+    def max_ram(self):
+        """Gets the max_ram of this UpdateImageResponse.
+
+        镜像支持的最大内存，单位为MB。取值可以参考云服务器规格限制，一般不设置。
+
+        :return: The max_ram of this UpdateImageResponse.
+        :rtype: str
+        """
+        return self._max_ram
+
+    @max_ram.setter
+    def max_ram(self, max_ram):
+        """Sets the max_ram of this UpdateImageResponse.
+
+        镜像支持的最大内存，单位为MB。取值可以参考云服务器规格限制，一般不设置。
+
+        :param max_ram: The max_ram of this UpdateImageResponse.
+        :type: str
+        """
+        self._max_ram = max_ram
+
+    @property
+    def system_cmkid(self):
+        """Gets the system_cmkid of this UpdateImageResponse.
+
+        加密镜像所使用的密钥ID。
+
+        :return: The system_cmkid of this UpdateImageResponse.
+        :rtype: str
+        """
+        return self._system_cmkid
+
+    @system_cmkid.setter
+    def system_cmkid(self, system_cmkid):
+        """Sets the system_cmkid of this UpdateImageResponse.
+
+        加密镜像所使用的密钥ID。
+
+        :param system_cmkid: The system_cmkid of this UpdateImageResponse.
+        :type: str
+        """
+        self._system_cmkid = system_cmkid
+
+    @property
+    def os_feature_list(self):
+        """Gets the os_feature_list of this UpdateImageResponse.
+
+        镜像附加属性。该属性采用JSON格式来标识镜像支持的高级特性清单。
+
+        :return: The os_feature_list of this UpdateImageResponse.
+        :rtype: str
+        """
+        return self._os_feature_list
+
+    @os_feature_list.setter
+    def os_feature_list(self, os_feature_list):
+        """Sets the os_feature_list of this UpdateImageResponse.
+
+        镜像附加属性。该属性采用JSON格式来标识镜像支持的高级特性清单。
+
+        :param os_feature_list: The os_feature_list of this UpdateImageResponse.
+        :type: str
+        """
+        self._os_feature_list = os_feature_list
+
+    @property
+    def account_code(self):
+        """Gets the account_code of this UpdateImageResponse.
+
+        收费镜像标识。
+
+        :return: The account_code of this UpdateImageResponse.
+        :rtype: str
+        """
+        return self._account_code
+
+    @account_code.setter
+    def account_code(self, account_code):
+        """Sets the account_code of this UpdateImageResponse.
+
+        收费镜像标识。
+
+        :param account_code: The account_code of this UpdateImageResponse.
+        :type: str
+        """
+        self._account_code = account_code
+
+    @property
+    def hw_vif_multiqueue_enabled(self):
+        """Gets the hw_vif_multiqueue_enabled of this UpdateImageResponse.
+
+        镜像是否支持网卡多队列。取值为“true”或者“false”。
+
+        :return: The hw_vif_multiqueue_enabled of this UpdateImageResponse.
+        :rtype: str
+        """
+        return self._hw_vif_multiqueue_enabled
+
+    @hw_vif_multiqueue_enabled.setter
+    def hw_vif_multiqueue_enabled(self, hw_vif_multiqueue_enabled):
+        """Sets the hw_vif_multiqueue_enabled of this UpdateImageResponse.
+
+        镜像是否支持网卡多队列。取值为“true”或者“false”。
+
+        :param hw_vif_multiqueue_enabled: The hw_vif_multiqueue_enabled of this UpdateImageResponse.
+        :type: str
+        """
+        self._hw_vif_multiqueue_enabled = hw_vif_multiqueue_enabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

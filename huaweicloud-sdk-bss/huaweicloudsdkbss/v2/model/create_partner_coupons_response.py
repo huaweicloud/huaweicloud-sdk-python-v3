@@ -23,50 +23,28 @@ class CreatePartnerCouponsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'coupon_infos': 'list[CouponSimpleInfo]',
-        'error_details': 'list[ErrorDetail]'
+        'error_details': 'list[ErrorDetail]',
+        'coupon_infos': 'list[CouponSimpleInfo]'
     }
 
     attribute_map = {
-        'coupon_infos': 'coupon_infos',
-        'error_details': 'error_details'
+        'error_details': 'error_details',
+        'coupon_infos': 'coupon_infos'
     }
 
-    def __init__(self, coupon_infos=None, error_details=None):
+    def __init__(self, error_details=None, coupon_infos=None):
         """CreatePartnerCouponsResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._coupon_infos = None
         self._error_details = None
+        self._coupon_infos = None
         self.discriminator = None
 
-        if coupon_infos is not None:
-            self.coupon_infos = coupon_infos
         if error_details is not None:
             self.error_details = error_details
-
-    @property
-    def coupon_infos(self):
-        """Gets the coupon_infos of this CreatePartnerCouponsResponse.
-
-        |参数名称：成功的客户ID和对应的券ID列表| |参数约束以及描述：成功的客户ID和对应的券ID列表|
-
-        :return: The coupon_infos of this CreatePartnerCouponsResponse.
-        :rtype: list[CouponSimpleInfo]
-        """
-        return self._coupon_infos
-
-    @coupon_infos.setter
-    def coupon_infos(self, coupon_infos):
-        """Sets the coupon_infos of this CreatePartnerCouponsResponse.
-
-        |参数名称：成功的客户ID和对应的券ID列表| |参数约束以及描述：成功的客户ID和对应的券ID列表|
-
-        :param coupon_infos: The coupon_infos of this CreatePartnerCouponsResponse.
-        :type: list[CouponSimpleInfo]
-        """
-        self._coupon_infos = coupon_infos
+        if coupon_infos is not None:
+            self.coupon_infos = coupon_infos
 
     @property
     def error_details(self):
@@ -89,6 +67,28 @@ class CreatePartnerCouponsResponse(SdkResponse):
         :type: list[ErrorDetail]
         """
         self._error_details = error_details
+
+    @property
+    def coupon_infos(self):
+        """Gets the coupon_infos of this CreatePartnerCouponsResponse.
+
+        |参数名称：成功的客户ID和对应的券ID列表| |参数约束以及描述：成功的客户ID和对应的券ID列表|
+
+        :return: The coupon_infos of this CreatePartnerCouponsResponse.
+        :rtype: list[CouponSimpleInfo]
+        """
+        return self._coupon_infos
+
+    @coupon_infos.setter
+    def coupon_infos(self, coupon_infos):
+        """Sets the coupon_infos of this CreatePartnerCouponsResponse.
+
+        |参数名称：成功的客户ID和对应的券ID列表| |参数约束以及描述：成功的客户ID和对应的券ID列表|
+
+        :param coupon_infos: The coupon_infos of this CreatePartnerCouponsResponse.
+        :type: list[CouponSimpleInfo]
+        """
+        self._coupon_infos = coupon_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

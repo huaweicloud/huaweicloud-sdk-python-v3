@@ -23,86 +23,42 @@ class CustomerBalancesV2:
     sensitive_list = []
 
     openapi_types = {
-        'amount': 'float',
-        'currency': 'str',
         'customer_id': 'str',
         'debt_amount': 'float',
+        'amount': 'float',
+        'currency': 'str',
         'measure_id': 'int'
     }
 
     attribute_map = {
-        'amount': 'amount',
-        'currency': 'currency',
         'customer_id': 'customer_id',
         'debt_amount': 'debt_amount',
+        'amount': 'amount',
+        'currency': 'currency',
         'measure_id': 'measure_id'
     }
 
-    def __init__(self, amount=None, currency=None, customer_id=None, debt_amount=None, measure_id=None):
+    def __init__(self, customer_id=None, debt_amount=None, amount=None, currency=None, measure_id=None):
         """CustomerBalancesV2 - a model defined in huaweicloud sdk"""
         
         
 
-        self._amount = None
-        self._currency = None
         self._customer_id = None
         self._debt_amount = None
+        self._amount = None
+        self._currency = None
         self._measure_id = None
         self.discriminator = None
 
+        self.customer_id = customer_id
+        if debt_amount is not None:
+            self.debt_amount = debt_amount
         if amount is not None:
             self.amount = amount
         if currency is not None:
             self.currency = currency
-        self.customer_id = customer_id
-        if debt_amount is not None:
-            self.debt_amount = debt_amount
         if measure_id is not None:
             self.measure_id = measure_id
-
-    @property
-    def amount(self):
-        """Gets the amount of this CustomerBalancesV2.
-
-        |参数名称：客户可用总额度。| |参数约束及描述： 客户可用总额度。|
-
-        :return: The amount of this CustomerBalancesV2.
-        :rtype: float
-        """
-        return self._amount
-
-    @amount.setter
-    def amount(self, amount):
-        """Sets the amount of this CustomerBalancesV2.
-
-        |参数名称：客户可用总额度。| |参数约束及描述： 客户可用总额度。|
-
-        :param amount: The amount of this CustomerBalancesV2.
-        :type: float
-        """
-        self._amount = amount
-
-    @property
-    def currency(self):
-        """Gets the currency of this CustomerBalancesV2.
-
-        |参数名称：币种。| |参数约束及描述：币种。|
-
-        :return: The currency of this CustomerBalancesV2.
-        :rtype: str
-        """
-        return self._currency
-
-    @currency.setter
-    def currency(self, currency):
-        """Sets the currency of this CustomerBalancesV2.
-
-        |参数名称：币种。| |参数约束及描述：币种。|
-
-        :param currency: The currency of this CustomerBalancesV2.
-        :type: str
-        """
-        self._currency = currency
 
     @property
     def customer_id(self):
@@ -147,6 +103,50 @@ class CustomerBalancesV2:
         :type: float
         """
         self._debt_amount = debt_amount
+
+    @property
+    def amount(self):
+        """Gets the amount of this CustomerBalancesV2.
+
+        |参数名称：客户可用总额度。| |参数约束及描述： 客户可用总额度。|
+
+        :return: The amount of this CustomerBalancesV2.
+        :rtype: float
+        """
+        return self._amount
+
+    @amount.setter
+    def amount(self, amount):
+        """Sets the amount of this CustomerBalancesV2.
+
+        |参数名称：客户可用总额度。| |参数约束及描述： 客户可用总额度。|
+
+        :param amount: The amount of this CustomerBalancesV2.
+        :type: float
+        """
+        self._amount = amount
+
+    @property
+    def currency(self):
+        """Gets the currency of this CustomerBalancesV2.
+
+        |参数名称：币种。| |参数约束及描述：币种。|
+
+        :return: The currency of this CustomerBalancesV2.
+        :rtype: str
+        """
+        return self._currency
+
+    @currency.setter
+    def currency(self, currency):
+        """Sets the currency of this CustomerBalancesV2.
+
+        |参数名称：币种。| |参数约束及描述：币种。|
+
+        :param currency: The currency of this CustomerBalancesV2.
+        :type: str
+        """
+        self._currency = currency
 
     @property
     def measure_id(self):

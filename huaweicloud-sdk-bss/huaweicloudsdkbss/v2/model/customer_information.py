@@ -23,98 +23,98 @@ class CustomerInformation:
     sensitive_list = []
 
     openapi_types = {
-        'account_managers': 'list[AccountManager]',
+        'customer': 'str',
         'account_name': 'str',
+        'customer_id': 'str',
         'associated_on': 'str',
         'association_type': 'str',
-        'country_code': 'str',
-        'customer': 'str',
-        'customer_id': 'str',
-        'customer_type': 'int',
-        'is_frozen': 'int',
         'label': 'str',
         'telephone': 'str',
-        'verified_status': 'str'
+        'verified_status': 'str',
+        'country_code': 'str',
+        'customer_type': 'int',
+        'is_frozen': 'int',
+        'account_managers': 'list[AccountManager]'
     }
 
     attribute_map = {
-        'account_managers': 'account_managers',
+        'customer': 'customer',
         'account_name': 'account_name',
+        'customer_id': 'customer_id',
         'associated_on': 'associated_on',
         'association_type': 'association_type',
-        'country_code': 'country_code',
-        'customer': 'customer',
-        'customer_id': 'customer_id',
-        'customer_type': 'customer_type',
-        'is_frozen': 'is_frozen',
         'label': 'label',
         'telephone': 'telephone',
-        'verified_status': 'verified_status'
+        'verified_status': 'verified_status',
+        'country_code': 'country_code',
+        'customer_type': 'customer_type',
+        'is_frozen': 'is_frozen',
+        'account_managers': 'account_managers'
     }
 
-    def __init__(self, account_managers=None, account_name=None, associated_on=None, association_type=None, country_code=None, customer=None, customer_id=None, customer_type=None, is_frozen=None, label=None, telephone=None, verified_status=None):
+    def __init__(self, customer=None, account_name=None, customer_id=None, associated_on=None, association_type=None, label=None, telephone=None, verified_status=None, country_code=None, customer_type=None, is_frozen=None, account_managers=None):
         """CustomerInformation - a model defined in huaweicloud sdk"""
         
         
 
-        self._account_managers = None
+        self._customer = None
         self._account_name = None
+        self._customer_id = None
         self._associated_on = None
         self._association_type = None
-        self._country_code = None
-        self._customer = None
-        self._customer_id = None
-        self._customer_type = None
-        self._is_frozen = None
         self._label = None
         self._telephone = None
         self._verified_status = None
+        self._country_code = None
+        self._customer_type = None
+        self._is_frozen = None
+        self._account_managers = None
         self.discriminator = None
 
-        if account_managers is not None:
-            self.account_managers = account_managers
+        if customer is not None:
+            self.customer = customer
         self.account_name = account_name
+        self.customer_id = customer_id
         if associated_on is not None:
             self.associated_on = associated_on
         if association_type is not None:
             self.association_type = association_type
-        if country_code is not None:
-            self.country_code = country_code
-        if customer is not None:
-            self.customer = customer
-        self.customer_id = customer_id
-        if customer_type is not None:
-            self.customer_type = customer_type
-        if is_frozen is not None:
-            self.is_frozen = is_frozen
         if label is not None:
             self.label = label
         if telephone is not None:
             self.telephone = telephone
         if verified_status is not None:
             self.verified_status = verified_status
+        if country_code is not None:
+            self.country_code = country_code
+        if customer_type is not None:
+            self.customer_type = customer_type
+        if is_frozen is not None:
+            self.is_frozen = is_frozen
+        if account_managers is not None:
+            self.account_managers = account_managers
 
     @property
-    def account_managers(self):
-        """Gets the account_managers of this CustomerInformation.
+    def customer(self):
+        """Gets the customer of this CustomerInformation.
 
-        |参数名称：客户经理名称列表，目前只支持1个| |参数约束以及描述：客户经理名称列表，目前只支持1个|
+        |参数名称：实名认证名称。虚拟账号下，该字段无效。| |参数约束及描述：实名认证名称。虚拟账号下，该字段无效。|
 
-        :return: The account_managers of this CustomerInformation.
-        :rtype: list[AccountManager]
+        :return: The customer of this CustomerInformation.
+        :rtype: str
         """
-        return self._account_managers
+        return self._customer
 
-    @account_managers.setter
-    def account_managers(self, account_managers):
-        """Sets the account_managers of this CustomerInformation.
+    @customer.setter
+    def customer(self, customer):
+        """Sets the customer of this CustomerInformation.
 
-        |参数名称：客户经理名称列表，目前只支持1个| |参数约束以及描述：客户经理名称列表，目前只支持1个|
+        |参数名称：实名认证名称。虚拟账号下，该字段无效。| |参数约束及描述：实名认证名称。虚拟账号下，该字段无效。|
 
-        :param account_managers: The account_managers of this CustomerInformation.
-        :type: list[AccountManager]
+        :param customer: The customer of this CustomerInformation.
+        :type: str
         """
-        self._account_managers = account_managers
+        self._customer = customer
 
     @property
     def account_name(self):
@@ -137,6 +137,28 @@ class CustomerInformation:
         :type: str
         """
         self._account_name = account_name
+
+    @property
+    def customer_id(self):
+        """Gets the customer_id of this CustomerInformation.
+
+        |参数名称：客户ID。| |参数约束及描述：客户ID。|
+
+        :return: The customer_id of this CustomerInformation.
+        :rtype: str
+        """
+        return self._customer_id
+
+    @customer_id.setter
+    def customer_id(self, customer_id):
+        """Sets the customer_id of this CustomerInformation.
+
+        |参数名称：客户ID。| |参数约束及描述：客户ID。|
+
+        :param customer_id: The customer_id of this CustomerInformation.
+        :type: str
+        """
+        self._customer_id = customer_id
 
     @property
     def associated_on(self):
@@ -181,116 +203,6 @@ class CustomerInformation:
         :type: str
         """
         self._association_type = association_type
-
-    @property
-    def country_code(self):
-        """Gets the country_code of this CustomerInformation.
-
-        |参数名称：国家码，电话号码的国家码前缀。虚拟账号下，该字段无效。例如：中国 0086。| |参数约束及描述：国家码，电话号码的国家码前缀。虚拟账号下，该字段无效。例如：中国 0086。|
-
-        :return: The country_code of this CustomerInformation.
-        :rtype: str
-        """
-        return self._country_code
-
-    @country_code.setter
-    def country_code(self, country_code):
-        """Sets the country_code of this CustomerInformation.
-
-        |参数名称：国家码，电话号码的国家码前缀。虚拟账号下，该字段无效。例如：中国 0086。| |参数约束及描述：国家码，电话号码的国家码前缀。虚拟账号下，该字段无效。例如：中国 0086。|
-
-        :param country_code: The country_code of this CustomerInformation.
-        :type: str
-        """
-        self._country_code = country_code
-
-    @property
-    def customer(self):
-        """Gets the customer of this CustomerInformation.
-
-        |参数名称：实名认证名称。虚拟账号下，该字段无效。| |参数约束及描述：实名认证名称。虚拟账号下，该字段无效。|
-
-        :return: The customer of this CustomerInformation.
-        :rtype: str
-        """
-        return self._customer
-
-    @customer.setter
-    def customer(self, customer):
-        """Sets the customer of this CustomerInformation.
-
-        |参数名称：实名认证名称。虚拟账号下，该字段无效。| |参数约束及描述：实名认证名称。虚拟账号下，该字段无效。|
-
-        :param customer: The customer of this CustomerInformation.
-        :type: str
-        """
-        self._customer = customer
-
-    @property
-    def customer_id(self):
-        """Gets the customer_id of this CustomerInformation.
-
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
-
-        :return: The customer_id of this CustomerInformation.
-        :rtype: str
-        """
-        return self._customer_id
-
-    @customer_id.setter
-    def customer_id(self, customer_id):
-        """Sets the customer_id of this CustomerInformation.
-
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
-
-        :param customer_id: The customer_id of this CustomerInformation.
-        :type: str
-        """
-        self._customer_id = customer_id
-
-    @property
-    def customer_type(self):
-        """Gets the customer_type of this CustomerInformation.
-
-        |参数名称：客户类型，虚拟账号下，该字段无效。：-1：无类型0：个人1：企业客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。| |参数的约束及描述：客户类型，虚拟账号下，该字段无效。：-1：无类型0：个人1：企业客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。|
-
-        :return: The customer_type of this CustomerInformation.
-        :rtype: int
-        """
-        return self._customer_type
-
-    @customer_type.setter
-    def customer_type(self, customer_type):
-        """Sets the customer_type of this CustomerInformation.
-
-        |参数名称：客户类型，虚拟账号下，该字段无效。：-1：无类型0：个人1：企业客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。| |参数的约束及描述：客户类型，虚拟账号下，该字段无效。：-1：无类型0：个人1：企业客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。|
-
-        :param customer_type: The customer_type of this CustomerInformation.
-        :type: int
-        """
-        self._customer_type = customer_type
-
-    @property
-    def is_frozen(self):
-        """Gets the is_frozen of this CustomerInformation.
-
-        |参数名称：是否伙伴冻结，注意，只有转售子客户才能被伙伴冻结：0：否1：是| |参数的约束及描述：是否伙伴冻结，注意，只有转售子客户才能被伙伴冻结：0：否1：是|
-
-        :return: The is_frozen of this CustomerInformation.
-        :rtype: int
-        """
-        return self._is_frozen
-
-    @is_frozen.setter
-    def is_frozen(self, is_frozen):
-        """Sets the is_frozen of this CustomerInformation.
-
-        |参数名称：是否伙伴冻结，注意，只有转售子客户才能被伙伴冻结：0：否1：是| |参数的约束及描述：是否伙伴冻结，注意，只有转售子客户才能被伙伴冻结：0：否1：是|
-
-        :param is_frozen: The is_frozen of this CustomerInformation.
-        :type: int
-        """
-        self._is_frozen = is_frozen
 
     @property
     def label(self):
@@ -357,6 +269,94 @@ class CustomerInformation:
         :type: str
         """
         self._verified_status = verified_status
+
+    @property
+    def country_code(self):
+        """Gets the country_code of this CustomerInformation.
+
+        |参数名称：国家码，电话号码的国家码前缀。虚拟账号下，该字段无效。例如：中国 0086。| |参数约束及描述：国家码，电话号码的国家码前缀。虚拟账号下，该字段无效。例如：中国 0086。|
+
+        :return: The country_code of this CustomerInformation.
+        :rtype: str
+        """
+        return self._country_code
+
+    @country_code.setter
+    def country_code(self, country_code):
+        """Sets the country_code of this CustomerInformation.
+
+        |参数名称：国家码，电话号码的国家码前缀。虚拟账号下，该字段无效。例如：中国 0086。| |参数约束及描述：国家码，电话号码的国家码前缀。虚拟账号下，该字段无效。例如：中国 0086。|
+
+        :param country_code: The country_code of this CustomerInformation.
+        :type: str
+        """
+        self._country_code = country_code
+
+    @property
+    def customer_type(self):
+        """Gets the customer_type of this CustomerInformation.
+
+        |参数名称：客户类型，虚拟账号下，该字段无效。：-1：无类型0：个人1：企业客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。| |参数的约束及描述：客户类型，虚拟账号下，该字段无效。：-1：无类型0：个人1：企业客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。|
+
+        :return: The customer_type of this CustomerInformation.
+        :rtype: int
+        """
+        return self._customer_type
+
+    @customer_type.setter
+    def customer_type(self, customer_type):
+        """Sets the customer_type of this CustomerInformation.
+
+        |参数名称：客户类型，虚拟账号下，该字段无效。：-1：无类型0：个人1：企业客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。| |参数的约束及描述：客户类型，虚拟账号下，该字段无效。：-1：无类型0：个人1：企业客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。|
+
+        :param customer_type: The customer_type of this CustomerInformation.
+        :type: int
+        """
+        self._customer_type = customer_type
+
+    @property
+    def is_frozen(self):
+        """Gets the is_frozen of this CustomerInformation.
+
+        |参数名称：是否伙伴冻结，注意，只有转售子客户才能被伙伴冻结：0：否1：是| |参数的约束及描述：是否伙伴冻结，注意，只有转售子客户才能被伙伴冻结：0：否1：是|
+
+        :return: The is_frozen of this CustomerInformation.
+        :rtype: int
+        """
+        return self._is_frozen
+
+    @is_frozen.setter
+    def is_frozen(self, is_frozen):
+        """Sets the is_frozen of this CustomerInformation.
+
+        |参数名称：是否伙伴冻结，注意，只有转售子客户才能被伙伴冻结：0：否1：是| |参数的约束及描述：是否伙伴冻结，注意，只有转售子客户才能被伙伴冻结：0：否1：是|
+
+        :param is_frozen: The is_frozen of this CustomerInformation.
+        :type: int
+        """
+        self._is_frozen = is_frozen
+
+    @property
+    def account_managers(self):
+        """Gets the account_managers of this CustomerInformation.
+
+        |参数名称：客户经理名称列表，目前只支持1个| |参数约束以及描述：客户经理名称列表，目前只支持1个|
+
+        :return: The account_managers of this CustomerInformation.
+        :rtype: list[AccountManager]
+        """
+        return self._account_managers
+
+    @account_managers.setter
+    def account_managers(self, account_managers):
+        """Sets the account_managers of this CustomerInformation.
+
+        |参数名称：客户经理名称列表，目前只支持1个| |参数约束以及描述：客户经理名称列表，目前只支持1个|
+
+        :param account_managers: The account_managers of this CustomerInformation.
+        :type: list[AccountManager]
+        """
+        self._account_managers = account_managers
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -23,240 +23,98 @@ class OrderLineItemEntityV2:
     sensitive_list = []
 
     openapi_types = {
-        'amount_after_discount': 'float',
-        'amount_info': 'AmountInfomationV2',
-        'category_code': 'str',
-        'currency': 'str',
-        'effective_time': 'str',
-        'expire_time': 'str',
-        'official_amount': 'float',
         'order_line_item_id': 'str',
-        'period_num': 'int',
-        'period_type': 'int',
+        'service_type_code': 'str',
         'product_id': 'str',
         'product_spec_desc': 'str',
-        'service_type_code': 'str',
-        'subscription_num': 'int'
+        'period_type': 'int',
+        'period_num': 'int',
+        'effective_time': 'str',
+        'expire_time': 'str',
+        'subscription_num': 'int',
+        'amount_after_discount': 'float',
+        'official_amount': 'float',
+        'amount_info': 'AmountInfomationV2',
+        'currency': 'str',
+        'category_code': 'str',
+        'product_owner_service': 'str',
+        'commercial_resource': 'str'
     }
 
     attribute_map = {
-        'amount_after_discount': 'amount_after_discount',
-        'amount_info': 'amount_info',
-        'category_code': 'category_code',
-        'currency': 'currency',
-        'effective_time': 'effective_time',
-        'expire_time': 'expire_time',
-        'official_amount': 'official_amount',
         'order_line_item_id': 'order_line_item_id',
-        'period_num': 'period_num',
-        'period_type': 'period_type',
+        'service_type_code': 'service_type_code',
         'product_id': 'product_id',
         'product_spec_desc': 'product_spec_desc',
-        'service_type_code': 'service_type_code',
-        'subscription_num': 'subscription_num'
+        'period_type': 'period_type',
+        'period_num': 'period_num',
+        'effective_time': 'effective_time',
+        'expire_time': 'expire_time',
+        'subscription_num': 'subscription_num',
+        'amount_after_discount': 'amount_after_discount',
+        'official_amount': 'official_amount',
+        'amount_info': 'amount_info',
+        'currency': 'currency',
+        'category_code': 'category_code',
+        'product_owner_service': 'product_owner_service',
+        'commercial_resource': 'commercial_resource'
     }
 
-    def __init__(self, amount_after_discount=None, amount_info=None, category_code=None, currency=None, effective_time=None, expire_time=None, official_amount=None, order_line_item_id=None, period_num=None, period_type=None, product_id=None, product_spec_desc=None, service_type_code=None, subscription_num=None):
+    def __init__(self, order_line_item_id=None, service_type_code=None, product_id=None, product_spec_desc=None, period_type=None, period_num=None, effective_time=None, expire_time=None, subscription_num=None, amount_after_discount=None, official_amount=None, amount_info=None, currency=None, category_code=None, product_owner_service=None, commercial_resource=None):
         """OrderLineItemEntityV2 - a model defined in huaweicloud sdk"""
         
         
 
-        self._amount_after_discount = None
-        self._amount_info = None
-        self._category_code = None
-        self._currency = None
-        self._effective_time = None
-        self._expire_time = None
-        self._official_amount = None
         self._order_line_item_id = None
-        self._period_num = None
-        self._period_type = None
+        self._service_type_code = None
         self._product_id = None
         self._product_spec_desc = None
-        self._service_type_code = None
+        self._period_type = None
+        self._period_num = None
+        self._effective_time = None
+        self._expire_time = None
         self._subscription_num = None
+        self._amount_after_discount = None
+        self._official_amount = None
+        self._amount_info = None
+        self._currency = None
+        self._category_code = None
+        self._product_owner_service = None
+        self._commercial_resource = None
         self.discriminator = None
 
-        if amount_after_discount is not None:
-            self.amount_after_discount = amount_after_discount
-        if amount_info is not None:
-            self.amount_info = amount_info
-        if category_code is not None:
-            self.category_code = category_code
-        if currency is not None:
-            self.currency = currency
-        if effective_time is not None:
-            self.effective_time = effective_time
-        if expire_time is not None:
-            self.expire_time = expire_time
-        if official_amount is not None:
-            self.official_amount = official_amount
         if order_line_item_id is not None:
             self.order_line_item_id = order_line_item_id
-        if period_num is not None:
-            self.period_num = period_num
-        if period_type is not None:
-            self.period_type = period_type
+        if service_type_code is not None:
+            self.service_type_code = service_type_code
         if product_id is not None:
             self.product_id = product_id
         if product_spec_desc is not None:
             self.product_spec_desc = product_spec_desc
-        if service_type_code is not None:
-            self.service_type_code = service_type_code
+        if period_type is not None:
+            self.period_type = period_type
+        if period_num is not None:
+            self.period_num = period_num
+        if effective_time is not None:
+            self.effective_time = effective_time
+        if expire_time is not None:
+            self.expire_time = expire_time
         if subscription_num is not None:
             self.subscription_num = subscription_num
-
-    @property
-    def amount_after_discount(self):
-        """Gets the amount_after_discount of this OrderLineItemEntityV2.
-
-        |参数名称：订单优惠后金额（实付价格，不含券不含卡）。| |参数的约束及描述：订单优惠后金额（实付价格，不含券不含卡）。|
-
-        :return: The amount_after_discount of this OrderLineItemEntityV2.
-        :rtype: float
-        """
-        return self._amount_after_discount
-
-    @amount_after_discount.setter
-    def amount_after_discount(self, amount_after_discount):
-        """Sets the amount_after_discount of this OrderLineItemEntityV2.
-
-        |参数名称：订单优惠后金额（实付价格，不含券不含卡）。| |参数的约束及描述：订单优惠后金额（实付价格，不含券不含卡）。|
-
-        :param amount_after_discount: The amount_after_discount of this OrderLineItemEntityV2.
-        :type: float
-        """
-        self._amount_after_discount = amount_after_discount
-
-    @property
-    def amount_info(self):
-        """Gets the amount_info of this OrderLineItemEntityV2.
-
-
-        :return: The amount_info of this OrderLineItemEntityV2.
-        :rtype: AmountInfomationV2
-        """
-        return self._amount_info
-
-    @amount_info.setter
-    def amount_info(self, amount_info):
-        """Sets the amount_info of this OrderLineItemEntityV2.
-
-
-        :param amount_info: The amount_info of this OrderLineItemEntityV2.
-        :type: AmountInfomationV2
-        """
-        self._amount_info = amount_info
-
-    @property
-    def category_code(self):
-        """Gets the category_code of this OrderLineItemEntityV2.
-
-        |参数名称：产品目录编码。| |参数约束及描述：产品目录编码。|
-
-        :return: The category_code of this OrderLineItemEntityV2.
-        :rtype: str
-        """
-        return self._category_code
-
-    @category_code.setter
-    def category_code(self, category_code):
-        """Sets the category_code of this OrderLineItemEntityV2.
-
-        |参数名称：产品目录编码。| |参数约束及描述：产品目录编码。|
-
-        :param category_code: The category_code of this OrderLineItemEntityV2.
-        :type: str
-        """
-        self._category_code = category_code
-
-    @property
-    def currency(self):
-        """Gets the currency of this OrderLineItemEntityV2.
-
-        |参数名称：货币编码。| |参数约束及描述：货币编码。如CNY|
-
-        :return: The currency of this OrderLineItemEntityV2.
-        :rtype: str
-        """
-        return self._currency
-
-    @currency.setter
-    def currency(self, currency):
-        """Sets the currency of this OrderLineItemEntityV2.
-
-        |参数名称：货币编码。| |参数约束及描述：货币编码。如CNY|
-
-        :param currency: The currency of this OrderLineItemEntityV2.
-        :type: str
-        """
-        self._currency = currency
-
-    @property
-    def effective_time(self):
-        """Gets the effective_time of this OrderLineItemEntityV2.
-
-        |参数名称：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
-
-        :return: The effective_time of this OrderLineItemEntityV2.
-        :rtype: str
-        """
-        return self._effective_time
-
-    @effective_time.setter
-    def effective_time(self, effective_time):
-        """Sets the effective_time of this OrderLineItemEntityV2.
-
-        |参数名称：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
-
-        :param effective_time: The effective_time of this OrderLineItemEntityV2.
-        :type: str
-        """
-        self._effective_time = effective_time
-
-    @property
-    def expire_time(self):
-        """Gets the expire_time of this OrderLineItemEntityV2.
-
-        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
-
-        :return: The expire_time of this OrderLineItemEntityV2.
-        :rtype: str
-        """
-        return self._expire_time
-
-    @expire_time.setter
-    def expire_time(self, expire_time):
-        """Sets the expire_time of this OrderLineItemEntityV2.
-
-        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
-
-        :param expire_time: The expire_time of this OrderLineItemEntityV2.
-        :type: str
-        """
-        self._expire_time = expire_time
-
-    @property
-    def official_amount(self):
-        """Gets the official_amount of this OrderLineItemEntityV2.
-
-        |参数名称：订单金额（官网价）。退订订单中，该金额等于currencyAfterDiscount。| |参数的约束及描述：订单金额（官网价）。退订订单中，该金额等于currencyAfterDiscount。|
-
-        :return: The official_amount of this OrderLineItemEntityV2.
-        :rtype: float
-        """
-        return self._official_amount
-
-    @official_amount.setter
-    def official_amount(self, official_amount):
-        """Sets the official_amount of this OrderLineItemEntityV2.
-
-        |参数名称：订单金额（官网价）。退订订单中，该金额等于currencyAfterDiscount。| |参数的约束及描述：订单金额（官网价）。退订订单中，该金额等于currencyAfterDiscount。|
-
-        :param official_amount: The official_amount of this OrderLineItemEntityV2.
-        :type: float
-        """
-        self._official_amount = official_amount
+        if amount_after_discount is not None:
+            self.amount_after_discount = amount_after_discount
+        if official_amount is not None:
+            self.official_amount = official_amount
+        if amount_info is not None:
+            self.amount_info = amount_info
+        if currency is not None:
+            self.currency = currency
+        if category_code is not None:
+            self.category_code = category_code
+        if product_owner_service is not None:
+            self.product_owner_service = product_owner_service
+        if commercial_resource is not None:
+            self.commercial_resource = commercial_resource
 
     @property
     def order_line_item_id(self):
@@ -281,48 +139,26 @@ class OrderLineItemEntityV2:
         self._order_line_item_id = order_line_item_id
 
     @property
-    def period_num(self):
-        """Gets the period_num of this OrderLineItemEntityV2.
+    def service_type_code(self):
+        """Gets the service_type_code of this OrderLineItemEntityV2.
 
-        |参数名称：周期数量。| |参数的约束及描述：周期数量。|
+        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
 
-        :return: The period_num of this OrderLineItemEntityV2.
-        :rtype: int
+        :return: The service_type_code of this OrderLineItemEntityV2.
+        :rtype: str
         """
-        return self._period_num
+        return self._service_type_code
 
-    @period_num.setter
-    def period_num(self, period_num):
-        """Sets the period_num of this OrderLineItemEntityV2.
+    @service_type_code.setter
+    def service_type_code(self, service_type_code):
+        """Sets the service_type_code of this OrderLineItemEntityV2.
 
-        |参数名称：周期数量。| |参数的约束及描述：周期数量。|
+        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
 
-        :param period_num: The period_num of this OrderLineItemEntityV2.
-        :type: int
+        :param service_type_code: The service_type_code of this OrderLineItemEntityV2.
+        :type: str
         """
-        self._period_num = period_num
-
-    @property
-    def period_type(self):
-        """Gets the period_type of this OrderLineItemEntityV2.
-
-        |参数名称：周期类型。0：天；1：周；2：月；3：年；4：小时；5：一次性；6：按需（预留）；7：按用量报表使用（预留）。| |参数的约束及描述：周期类型。0：天；1：周；2：月；3：年；4：小时；5：一次性；6：按需（预留）；7：按用量报表使用（预留）。|
-
-        :return: The period_type of this OrderLineItemEntityV2.
-        :rtype: int
-        """
-        return self._period_type
-
-    @period_type.setter
-    def period_type(self, period_type):
-        """Sets the period_type of this OrderLineItemEntityV2.
-
-        |参数名称：周期类型。0：天；1：周；2：月；3：年；4：小时；5：一次性；6：按需（预留）；7：按用量报表使用（预留）。| |参数的约束及描述：周期类型。0：天；1：周；2：月；3：年；4：小时；5：一次性；6：按需（预留）；7：按用量报表使用（预留）。|
-
-        :param period_type: The period_type of this OrderLineItemEntityV2.
-        :type: int
-        """
-        self._period_type = period_type
+        self._service_type_code = service_type_code
 
     @property
     def product_id(self):
@@ -369,26 +205,92 @@ class OrderLineItemEntityV2:
         self._product_spec_desc = product_spec_desc
 
     @property
-    def service_type_code(self):
-        """Gets the service_type_code of this OrderLineItemEntityV2.
+    def period_type(self):
+        """Gets the period_type of this OrderLineItemEntityV2.
 
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        |参数名称：周期类型。0：天；1：周；2：月；3：年；4：小时；5：一次性；6：按需（预留）；7：按用量报表使用（预留）。| |参数的约束及描述：周期类型。0：天；1：周；2：月；3：年；4：小时；5：一次性；6：按需（预留）；7：按用量报表使用（预留）。|
 
-        :return: The service_type_code of this OrderLineItemEntityV2.
+        :return: The period_type of this OrderLineItemEntityV2.
+        :rtype: int
+        """
+        return self._period_type
+
+    @period_type.setter
+    def period_type(self, period_type):
+        """Sets the period_type of this OrderLineItemEntityV2.
+
+        |参数名称：周期类型。0：天；1：周；2：月；3：年；4：小时；5：一次性；6：按需（预留）；7：按用量报表使用（预留）。| |参数的约束及描述：周期类型。0：天；1：周；2：月；3：年；4：小时；5：一次性；6：按需（预留）；7：按用量报表使用（预留）。|
+
+        :param period_type: The period_type of this OrderLineItemEntityV2.
+        :type: int
+        """
+        self._period_type = period_type
+
+    @property
+    def period_num(self):
+        """Gets the period_num of this OrderLineItemEntityV2.
+
+        |参数名称：周期数量。| |参数的约束及描述：周期数量。|
+
+        :return: The period_num of this OrderLineItemEntityV2.
+        :rtype: int
+        """
+        return self._period_num
+
+    @period_num.setter
+    def period_num(self, period_num):
+        """Sets the period_num of this OrderLineItemEntityV2.
+
+        |参数名称：周期数量。| |参数的约束及描述：周期数量。|
+
+        :param period_num: The period_num of this OrderLineItemEntityV2.
+        :type: int
+        """
+        self._period_num = period_num
+
+    @property
+    def effective_time(self):
+        """Gets the effective_time of this OrderLineItemEntityV2.
+
+        |参数名称：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+
+        :return: The effective_time of this OrderLineItemEntityV2.
         :rtype: str
         """
-        return self._service_type_code
+        return self._effective_time
 
-    @service_type_code.setter
-    def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this OrderLineItemEntityV2.
+    @effective_time.setter
+    def effective_time(self, effective_time):
+        """Sets the effective_time of this OrderLineItemEntityV2.
 
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        |参数名称：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
 
-        :param service_type_code: The service_type_code of this OrderLineItemEntityV2.
+        :param effective_time: The effective_time of this OrderLineItemEntityV2.
         :type: str
         """
-        self._service_type_code = service_type_code
+        self._effective_time = effective_time
+
+    @property
+    def expire_time(self):
+        """Gets the expire_time of this OrderLineItemEntityV2.
+
+        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+
+        :return: The expire_time of this OrderLineItemEntityV2.
+        :rtype: str
+        """
+        return self._expire_time
+
+    @expire_time.setter
+    def expire_time(self, expire_time):
+        """Sets the expire_time of this OrderLineItemEntityV2.
+
+        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+
+        :param expire_time: The expire_time of this OrderLineItemEntityV2.
+        :type: str
+        """
+        self._expire_time = expire_time
 
     @property
     def subscription_num(self):
@@ -411,6 +313,158 @@ class OrderLineItemEntityV2:
         :type: int
         """
         self._subscription_num = subscription_num
+
+    @property
+    def amount_after_discount(self):
+        """Gets the amount_after_discount of this OrderLineItemEntityV2.
+
+        |参数名称：订单优惠后金额（实付价格，不含券不含卡）。| |参数的约束及描述：订单优惠后金额（实付价格，不含券不含卡）。|
+
+        :return: The amount_after_discount of this OrderLineItemEntityV2.
+        :rtype: float
+        """
+        return self._amount_after_discount
+
+    @amount_after_discount.setter
+    def amount_after_discount(self, amount_after_discount):
+        """Sets the amount_after_discount of this OrderLineItemEntityV2.
+
+        |参数名称：订单优惠后金额（实付价格，不含券不含卡）。| |参数的约束及描述：订单优惠后金额（实付价格，不含券不含卡）。|
+
+        :param amount_after_discount: The amount_after_discount of this OrderLineItemEntityV2.
+        :type: float
+        """
+        self._amount_after_discount = amount_after_discount
+
+    @property
+    def official_amount(self):
+        """Gets the official_amount of this OrderLineItemEntityV2.
+
+        |参数名称：订单金额（官网价）。退订订单中，该金额等于currencyAfterDiscount。| |参数的约束及描述：订单金额（官网价）。退订订单中，该金额等于currencyAfterDiscount。|
+
+        :return: The official_amount of this OrderLineItemEntityV2.
+        :rtype: float
+        """
+        return self._official_amount
+
+    @official_amount.setter
+    def official_amount(self, official_amount):
+        """Sets the official_amount of this OrderLineItemEntityV2.
+
+        |参数名称：订单金额（官网价）。退订订单中，该金额等于currencyAfterDiscount。| |参数的约束及描述：订单金额（官网价）。退订订单中，该金额等于currencyAfterDiscount。|
+
+        :param official_amount: The official_amount of this OrderLineItemEntityV2.
+        :type: float
+        """
+        self._official_amount = official_amount
+
+    @property
+    def amount_info(self):
+        """Gets the amount_info of this OrderLineItemEntityV2.
+
+
+        :return: The amount_info of this OrderLineItemEntityV2.
+        :rtype: AmountInfomationV2
+        """
+        return self._amount_info
+
+    @amount_info.setter
+    def amount_info(self, amount_info):
+        """Sets the amount_info of this OrderLineItemEntityV2.
+
+
+        :param amount_info: The amount_info of this OrderLineItemEntityV2.
+        :type: AmountInfomationV2
+        """
+        self._amount_info = amount_info
+
+    @property
+    def currency(self):
+        """Gets the currency of this OrderLineItemEntityV2.
+
+        |参数名称：货币编码。| |参数约束及描述：货币编码。如CNY|
+
+        :return: The currency of this OrderLineItemEntityV2.
+        :rtype: str
+        """
+        return self._currency
+
+    @currency.setter
+    def currency(self, currency):
+        """Sets the currency of this OrderLineItemEntityV2.
+
+        |参数名称：货币编码。| |参数约束及描述：货币编码。如CNY|
+
+        :param currency: The currency of this OrderLineItemEntityV2.
+        :type: str
+        """
+        self._currency = currency
+
+    @property
+    def category_code(self):
+        """Gets the category_code of this OrderLineItemEntityV2.
+
+        |参数名称：产品目录编码。| |参数约束及描述：产品目录编码。|
+
+        :return: The category_code of this OrderLineItemEntityV2.
+        :rtype: str
+        """
+        return self._category_code
+
+    @category_code.setter
+    def category_code(self, category_code):
+        """Sets the category_code of this OrderLineItemEntityV2.
+
+        |参数名称：产品目录编码。| |参数约束及描述：产品目录编码。|
+
+        :param category_code: The category_code of this OrderLineItemEntityV2.
+        :type: str
+        """
+        self._category_code = category_code
+
+    @property
+    def product_owner_service(self):
+        """Gets the product_owner_service of this OrderLineItemEntityV2.
+
+        |参数名称：产品归属的云服务类型编码。| |参数约束及描述：产品归属的云服务类型编码。|
+
+        :return: The product_owner_service of this OrderLineItemEntityV2.
+        :rtype: str
+        """
+        return self._product_owner_service
+
+    @product_owner_service.setter
+    def product_owner_service(self, product_owner_service):
+        """Sets the product_owner_service of this OrderLineItemEntityV2.
+
+        |参数名称：产品归属的云服务类型编码。| |参数约束及描述：产品归属的云服务类型编码。|
+
+        :param product_owner_service: The product_owner_service of this OrderLineItemEntityV2.
+        :type: str
+        """
+        self._product_owner_service = product_owner_service
+
+    @property
+    def commercial_resource(self):
+        """Gets the commercial_resource of this OrderLineItemEntityV2.
+
+        |参数名称：商务归属的资源类型编码。| |参数约束及描述：商务归属的资源类型编码。|
+
+        :return: The commercial_resource of this OrderLineItemEntityV2.
+        :rtype: str
+        """
+        return self._commercial_resource
+
+    @commercial_resource.setter
+    def commercial_resource(self, commercial_resource):
+        """Sets the commercial_resource of this OrderLineItemEntityV2.
+
+        |参数名称：商务归属的资源类型编码。| |参数约束及描述：商务归属的资源类型编码。|
+
+        :param commercial_resource: The commercial_resource of this OrderLineItemEntityV2.
+        :type: str
+        """
+        self._commercial_resource = commercial_resource
 
     def to_dict(self):
         """Returns the model properties as a dict"""

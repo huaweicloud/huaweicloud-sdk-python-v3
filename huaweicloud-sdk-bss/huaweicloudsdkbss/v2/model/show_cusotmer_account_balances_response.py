@@ -24,37 +24,37 @@ class ShowCusotmerAccountBalancesResponse(SdkResponse):
 
     openapi_types = {
         'account_balances': 'list[AccountBalanceV3]',
-        'currency': 'str',
         'debt_amount': 'float',
-        'measure_id': 'int'
+        'measure_id': 'int',
+        'currency': 'str'
     }
 
     attribute_map = {
         'account_balances': 'account_balances',
-        'currency': 'currency',
         'debt_amount': 'debt_amount',
-        'measure_id': 'measure_id'
+        'measure_id': 'measure_id',
+        'currency': 'currency'
     }
 
-    def __init__(self, account_balances=None, currency=None, debt_amount=None, measure_id=None):
+    def __init__(self, account_balances=None, debt_amount=None, measure_id=None, currency=None):
         """ShowCusotmerAccountBalancesResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
         self._account_balances = None
-        self._currency = None
         self._debt_amount = None
         self._measure_id = None
+        self._currency = None
         self.discriminator = None
 
         if account_balances is not None:
             self.account_balances = account_balances
-        if currency is not None:
-            self.currency = currency
         if debt_amount is not None:
             self.debt_amount = debt_amount
         if measure_id is not None:
             self.measure_id = measure_id
+        if currency is not None:
+            self.currency = currency
 
     @property
     def account_balances(self):
@@ -77,28 +77,6 @@ class ShowCusotmerAccountBalancesResponse(SdkResponse):
         :type: list[AccountBalanceV3]
         """
         self._account_balances = account_balances
-
-    @property
-    def currency(self):
-        """Gets the currency of this ShowCusotmerAccountBalancesResponse.
-
-        |参数名称：币种。CNY：人民币。USD：美元。| |参数约束及描述：币种。CNY：人民币。USD：美元。|
-
-        :return: The currency of this ShowCusotmerAccountBalancesResponse.
-        :rtype: str
-        """
-        return self._currency
-
-    @currency.setter
-    def currency(self, currency):
-        """Sets the currency of this ShowCusotmerAccountBalancesResponse.
-
-        |参数名称：币种。CNY：人民币。USD：美元。| |参数约束及描述：币种。CNY：人民币。USD：美元。|
-
-        :param currency: The currency of this ShowCusotmerAccountBalancesResponse.
-        :type: str
-        """
-        self._currency = currency
 
     @property
     def debt_amount(self):
@@ -143,6 +121,28 @@ class ShowCusotmerAccountBalancesResponse(SdkResponse):
         :type: int
         """
         self._measure_id = measure_id
+
+    @property
+    def currency(self):
+        """Gets the currency of this ShowCusotmerAccountBalancesResponse.
+
+        |参数名称：币种。CNY：人民币。USD：美元。| |参数约束及描述：币种。CNY：人民币。USD：美元。|
+
+        :return: The currency of this ShowCusotmerAccountBalancesResponse.
+        :rtype: str
+        """
+        return self._currency
+
+    @currency.setter
+    def currency(self, currency):
+        """Sets the currency of this ShowCusotmerAccountBalancesResponse.
+
+        |参数名称：币种。CNY：人民币。USD：美元。| |参数约束及描述：币种。CNY：人民币。USD：美元。|
+
+        :param currency: The currency of this ShowCusotmerAccountBalancesResponse.
+        :type: str
+        """
+        self._currency = currency
 
     def to_dict(self):
         """Returns the model properties as a dict"""

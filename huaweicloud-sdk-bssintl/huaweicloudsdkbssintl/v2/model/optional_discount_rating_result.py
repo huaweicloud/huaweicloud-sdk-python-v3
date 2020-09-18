@@ -23,129 +23,63 @@ class OptionalDiscountRatingResult:
     sensitive_list = []
 
     openapi_types = {
-        'amount': 'float',
-        'best_offer': 'int',
-        'discount_amount': 'float',
         'discount_id': 'str',
-        'discount_name': 'str',
-        'discount_type': 'int',
-        'measure_id': 'int',
+        'amount': 'float',
         'official_website_amount': 'float',
+        'discount_amount': 'float',
+        'measure_id': 'int',
+        'discount_type': 'int',
+        'discount_name': 'str',
+        'best_offer': 'int',
         'product_rating_results': 'list[PeriodProductRatingResult]'
     }
 
     attribute_map = {
-        'amount': 'amount',
-        'best_offer': 'best_offer',
-        'discount_amount': 'discount_amount',
         'discount_id': 'discount_id',
-        'discount_name': 'discount_name',
-        'discount_type': 'discount_type',
-        'measure_id': 'measure_id',
+        'amount': 'amount',
         'official_website_amount': 'official_website_amount',
+        'discount_amount': 'discount_amount',
+        'measure_id': 'measure_id',
+        'discount_type': 'discount_type',
+        'discount_name': 'discount_name',
+        'best_offer': 'best_offer',
         'product_rating_results': 'product_rating_results'
     }
 
-    def __init__(self, amount=None, best_offer=None, discount_amount=None, discount_id=None, discount_name=None, discount_type=None, measure_id=None, official_website_amount=None, product_rating_results=None):
+    def __init__(self, discount_id=None, amount=None, official_website_amount=None, discount_amount=None, measure_id=None, discount_type=None, discount_name=None, best_offer=None, product_rating_results=None):
         """OptionalDiscountRatingResult - a model defined in huaweicloud sdk"""
         
         
 
-        self._amount = None
-        self._best_offer = None
-        self._discount_amount = None
         self._discount_id = None
-        self._discount_name = None
-        self._discount_type = None
-        self._measure_id = None
+        self._amount = None
         self._official_website_amount = None
+        self._discount_amount = None
+        self._measure_id = None
+        self._discount_type = None
+        self._discount_name = None
+        self._best_offer = None
         self._product_rating_results = None
         self.discriminator = None
 
-        if amount is not None:
-            self.amount = amount
-        if best_offer is not None:
-            self.best_offer = best_offer
-        if discount_amount is not None:
-            self.discount_amount = discount_amount
         if discount_id is not None:
             self.discount_id = discount_id
-        if discount_name is not None:
-            self.discount_name = discount_name
-        if discount_type is not None:
-            self.discount_type = discount_type
-        if measure_id is not None:
-            self.measure_id = measure_id
+        if amount is not None:
+            self.amount = amount
         if official_website_amount is not None:
             self.official_website_amount = official_website_amount
+        if discount_amount is not None:
+            self.discount_amount = discount_amount
+        if measure_id is not None:
+            self.measure_id = measure_id
+        if discount_type is not None:
+            self.discount_type = discount_type
+        if discount_name is not None:
+            self.discount_name = discount_name
+        if best_offer is not None:
+            self.best_offer = best_offer
         if product_rating_results is not None:
             self.product_rating_results = product_rating_results
-
-    @property
-    def amount(self):
-        """Gets the amount of this OptionalDiscountRatingResult.
-
-        |参数名称：总额，即最终优惠后的金额，amount= official_website_amount - discountAmount|
-
-        :return: The amount of this OptionalDiscountRatingResult.
-        :rtype: float
-        """
-        return self._amount
-
-    @amount.setter
-    def amount(self, amount):
-        """Sets the amount of this OptionalDiscountRatingResult.
-
-        |参数名称：总额，即最终优惠后的金额，amount= official_website_amount - discountAmount|
-
-        :param amount: The amount of this OptionalDiscountRatingResult.
-        :type: float
-        """
-        self._amount = amount
-
-    @property
-    def best_offer(self):
-        """Gets the best_offer of this OptionalDiscountRatingResult.
-
-        |参数名称：是否为最优折扣| |参数约束及描述：0：不是最优折扣；为缺省值。1：是最优折扣；最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算|
-
-        :return: The best_offer of this OptionalDiscountRatingResult.
-        :rtype: int
-        """
-        return self._best_offer
-
-    @best_offer.setter
-    def best_offer(self, best_offer):
-        """Sets the best_offer of this OptionalDiscountRatingResult.
-
-        |参数名称：是否为最优折扣| |参数约束及描述：0：不是最优折扣；为缺省值。1：是最优折扣；最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算|
-
-        :param best_offer: The best_offer of this OptionalDiscountRatingResult.
-        :type: int
-        """
-        self._best_offer = best_offer
-
-    @property
-    def discount_amount(self):
-        """Gets the discount_amount of this OptionalDiscountRatingResult.
-
-        |参数名称：优惠额| |参数约束及描述：（官网价和总价的差）|
-
-        :return: The discount_amount of this OptionalDiscountRatingResult.
-        :rtype: float
-        """
-        return self._discount_amount
-
-    @discount_amount.setter
-    def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this OptionalDiscountRatingResult.
-
-        |参数名称：优惠额| |参数约束及描述：（官网价和总价的差）|
-
-        :param discount_amount: The discount_amount of this OptionalDiscountRatingResult.
-        :type: float
-        """
-        self._discount_amount = discount_amount
 
     @property
     def discount_id(self):
@@ -170,48 +104,70 @@ class OptionalDiscountRatingResult:
         self._discount_id = discount_id
 
     @property
-    def discount_name(self):
-        """Gets the discount_name of this OptionalDiscountRatingResult.
+    def amount(self):
+        """Gets the amount of this OptionalDiscountRatingResult.
 
-        |参数名称：折扣名称| |参数约束及描述：折扣名称|
+        |参数名称：总额，即最终优惠后的金额，amount= official_website_amount - discountAmount|
 
-        :return: The discount_name of this OptionalDiscountRatingResult.
-        :rtype: str
+        :return: The amount of this OptionalDiscountRatingResult.
+        :rtype: float
         """
-        return self._discount_name
+        return self._amount
 
-    @discount_name.setter
-    def discount_name(self, discount_name):
-        """Sets the discount_name of this OptionalDiscountRatingResult.
+    @amount.setter
+    def amount(self, amount):
+        """Sets the amount of this OptionalDiscountRatingResult.
 
-        |参数名称：折扣名称| |参数约束及描述：折扣名称|
+        |参数名称：总额，即最终优惠后的金额，amount= official_website_amount - discountAmount|
 
-        :param discount_name: The discount_name of this OptionalDiscountRatingResult.
-        :type: str
+        :param amount: The amount of this OptionalDiscountRatingResult.
+        :type: float
         """
-        self._discount_name = discount_name
+        self._amount = amount
 
     @property
-    def discount_type(self):
-        """Gets the discount_type of this OptionalDiscountRatingResult.
+    def official_website_amount(self):
+        """Gets the official_website_amount of this OptionalDiscountRatingResult.
 
-        |参数名称：折扣优惠类型：合同商务折扣：605(华为云BE场景下的合同商务折扣)、606(分销商BE场景下的合同商务折扣)伙伴授予折扣：607|
+        |参数名称：官网价| |参数约束及描述：官网价|
 
-        :return: The discount_type of this OptionalDiscountRatingResult.
-        :rtype: int
+        :return: The official_website_amount of this OptionalDiscountRatingResult.
+        :rtype: float
         """
-        return self._discount_type
+        return self._official_website_amount
 
-    @discount_type.setter
-    def discount_type(self, discount_type):
-        """Sets the discount_type of this OptionalDiscountRatingResult.
+    @official_website_amount.setter
+    def official_website_amount(self, official_website_amount):
+        """Sets the official_website_amount of this OptionalDiscountRatingResult.
 
-        |参数名称：折扣优惠类型：合同商务折扣：605(华为云BE场景下的合同商务折扣)、606(分销商BE场景下的合同商务折扣)伙伴授予折扣：607|
+        |参数名称：官网价| |参数约束及描述：官网价|
 
-        :param discount_type: The discount_type of this OptionalDiscountRatingResult.
-        :type: int
+        :param official_website_amount: The official_website_amount of this OptionalDiscountRatingResult.
+        :type: float
         """
-        self._discount_type = discount_type
+        self._official_website_amount = official_website_amount
+
+    @property
+    def discount_amount(self):
+        """Gets the discount_amount of this OptionalDiscountRatingResult.
+
+        |参数名称：优惠额| |参数约束及描述：（官网价和总价的差）|
+
+        :return: The discount_amount of this OptionalDiscountRatingResult.
+        :rtype: float
+        """
+        return self._discount_amount
+
+    @discount_amount.setter
+    def discount_amount(self, discount_amount):
+        """Sets the discount_amount of this OptionalDiscountRatingResult.
+
+        |参数名称：优惠额| |参数约束及描述：（官网价和总价的差）|
+
+        :param discount_amount: The discount_amount of this OptionalDiscountRatingResult.
+        :type: float
+        """
+        self._discount_amount = discount_amount
 
     @property
     def measure_id(self):
@@ -236,26 +192,70 @@ class OptionalDiscountRatingResult:
         self._measure_id = measure_id
 
     @property
-    def official_website_amount(self):
-        """Gets the official_website_amount of this OptionalDiscountRatingResult.
+    def discount_type(self):
+        """Gets the discount_type of this OptionalDiscountRatingResult.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        |参数名称：折扣优惠类型：合同商务折扣：605(华为云BE场景下的合同商务折扣)、606(分销商BE场景下的合同商务折扣)伙伴授予折扣：607|
 
-        :return: The official_website_amount of this OptionalDiscountRatingResult.
-        :rtype: float
+        :return: The discount_type of this OptionalDiscountRatingResult.
+        :rtype: int
         """
-        return self._official_website_amount
+        return self._discount_type
 
-    @official_website_amount.setter
-    def official_website_amount(self, official_website_amount):
-        """Sets the official_website_amount of this OptionalDiscountRatingResult.
+    @discount_type.setter
+    def discount_type(self, discount_type):
+        """Sets the discount_type of this OptionalDiscountRatingResult.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        |参数名称：折扣优惠类型：合同商务折扣：605(华为云BE场景下的合同商务折扣)、606(分销商BE场景下的合同商务折扣)伙伴授予折扣：607|
 
-        :param official_website_amount: The official_website_amount of this OptionalDiscountRatingResult.
-        :type: float
+        :param discount_type: The discount_type of this OptionalDiscountRatingResult.
+        :type: int
         """
-        self._official_website_amount = official_website_amount
+        self._discount_type = discount_type
+
+    @property
+    def discount_name(self):
+        """Gets the discount_name of this OptionalDiscountRatingResult.
+
+        |参数名称：折扣名称| |参数约束及描述：折扣名称|
+
+        :return: The discount_name of this OptionalDiscountRatingResult.
+        :rtype: str
+        """
+        return self._discount_name
+
+    @discount_name.setter
+    def discount_name(self, discount_name):
+        """Sets the discount_name of this OptionalDiscountRatingResult.
+
+        |参数名称：折扣名称| |参数约束及描述：折扣名称|
+
+        :param discount_name: The discount_name of this OptionalDiscountRatingResult.
+        :type: str
+        """
+        self._discount_name = discount_name
+
+    @property
+    def best_offer(self):
+        """Gets the best_offer of this OptionalDiscountRatingResult.
+
+        |参数名称：是否为最优折扣| |参数约束及描述：0：不是最优折扣；为缺省值。1：是最优折扣；最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算|
+
+        :return: The best_offer of this OptionalDiscountRatingResult.
+        :rtype: int
+        """
+        return self._best_offer
+
+    @best_offer.setter
+    def best_offer(self, best_offer):
+        """Sets the best_offer of this OptionalDiscountRatingResult.
+
+        |参数名称：是否为最优折扣| |参数约束及描述：0：不是最优折扣；为缺省值。1：是最优折扣；最优折扣：在商务折扣、伙伴折扣中选择（优惠金额最大的折扣为最优，优惠金额相等则按此顺序排优先级），促销折扣，折扣券不参与最优折扣的计算|
+
+        :param best_offer: The best_offer of this OptionalDiscountRatingResult.
+        :type: int
+        """
+        self._best_offer = best_offer
 
     @property
     def product_rating_results(self):

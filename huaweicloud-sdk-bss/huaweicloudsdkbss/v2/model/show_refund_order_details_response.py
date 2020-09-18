@@ -23,50 +23,28 @@ class ShowRefundOrderDetailsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'refund_infos': 'list[OrderRefundInfoV2]',
-        'total_count': 'int'
+        'total_count': 'int',
+        'refund_infos': 'list[OrderRefundInfoV2]'
     }
 
     attribute_map = {
-        'refund_infos': 'refund_infos',
-        'total_count': 'total_count'
+        'total_count': 'total_count',
+        'refund_infos': 'refund_infos'
     }
 
-    def __init__(self, refund_infos=None, total_count=None):
+    def __init__(self, total_count=None, refund_infos=None):
         """ShowRefundOrderDetailsResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._refund_infos = None
         self._total_count = None
+        self._refund_infos = None
         self.discriminator = None
 
-        if refund_infos is not None:
-            self.refund_infos = refund_infos
         if total_count is not None:
             self.total_count = total_count
-
-    @property
-    def refund_infos(self):
-        """Gets the refund_infos of this ShowRefundOrderDetailsResponse.
-
-        |参数名称：资源信息列表。具体请参见表2 OrderRefundInfoV2。| |参数约束以及描述：资源信息列表。具体请参见表2 OrderRefundInfoV2。|
-
-        :return: The refund_infos of this ShowRefundOrderDetailsResponse.
-        :rtype: list[OrderRefundInfoV2]
-        """
-        return self._refund_infos
-
-    @refund_infos.setter
-    def refund_infos(self, refund_infos):
-        """Sets the refund_infos of this ShowRefundOrderDetailsResponse.
-
-        |参数名称：资源信息列表。具体请参见表2 OrderRefundInfoV2。| |参数约束以及描述：资源信息列表。具体请参见表2 OrderRefundInfoV2。|
-
-        :param refund_infos: The refund_infos of this ShowRefundOrderDetailsResponse.
-        :type: list[OrderRefundInfoV2]
-        """
-        self._refund_infos = refund_infos
+        if refund_infos is not None:
+            self.refund_infos = refund_infos
 
     @property
     def total_count(self):
@@ -89,6 +67,28 @@ class ShowRefundOrderDetailsResponse(SdkResponse):
         :type: int
         """
         self._total_count = total_count
+
+    @property
+    def refund_infos(self):
+        """Gets the refund_infos of this ShowRefundOrderDetailsResponse.
+
+        |参数名称：资源信息列表。具体请参见表2 OrderRefundInfoV2。| |参数约束以及描述：资源信息列表。具体请参见表2 OrderRefundInfoV2。|
+
+        :return: The refund_infos of this ShowRefundOrderDetailsResponse.
+        :rtype: list[OrderRefundInfoV2]
+        """
+        return self._refund_infos
+
+    @refund_infos.setter
+    def refund_infos(self, refund_infos):
+        """Sets the refund_infos of this ShowRefundOrderDetailsResponse.
+
+        |参数名称：资源信息列表。具体请参见表2 OrderRefundInfoV2。| |参数约束以及描述：资源信息列表。具体请参见表2 OrderRefundInfoV2。|
+
+        :param refund_infos: The refund_infos of this ShowRefundOrderDetailsResponse.
+        :type: list[OrderRefundInfoV2]
+        """
+        self._refund_infos = refund_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

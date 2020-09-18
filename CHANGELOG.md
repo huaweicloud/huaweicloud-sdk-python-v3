@@ -1,3 +1,29 @@
+## 3.0.13-beta 2020-09-16
+## HuaweiCloud SDK ECS
+ - ### Features
+    - None
+ - ### Bug Fix
+    - Fix parameter type of interfaces.
+ - ### Change
+    - None
+
+## HuaweiCloud SDK BSS
+ - ### Features
+    - None
+ - ### Bug Fix
+    - None
+ - ### Change
+    - Update interfaces.
+
+## HuaweiCloud SDK Live
+ - ### Features
+    - None
+ - ### Bug Fix
+    - None
+ - ### Change
+    - Adjust descriptions of banned interface.
+
+
 ## 3.0.12-beta 2020-09-11
 ## HuaweiCloud SDK Meeting
  - ### Features

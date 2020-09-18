@@ -24,66 +24,66 @@ class QueryCustomerOnDemandResourcesReq:
 
     openapi_types = {
         'customer_id': 'str',
+        'region_code': 'str',
+        'service_type_code': 'str',
+        'resource_ids': 'list[str]',
         'effective_time_begin': 'str',
         'effective_time_end': 'str',
-        'indirect_partner_id': 'str',
-        'limit': 'int',
         'offset': 'int',
-        'region_code': 'str',
-        'resource_ids': 'list[str]',
-        'service_type_code': 'str',
-        'status': 'int'
+        'limit': 'int',
+        'status': 'int',
+        'indirect_partner_id': 'str'
     }
 
     attribute_map = {
         'customer_id': 'customer_id',
+        'region_code': 'region_code',
+        'service_type_code': 'service_type_code',
+        'resource_ids': 'resource_ids',
         'effective_time_begin': 'effective_time_begin',
         'effective_time_end': 'effective_time_end',
-        'indirect_partner_id': 'indirect_partner_id',
-        'limit': 'limit',
         'offset': 'offset',
-        'region_code': 'region_code',
-        'resource_ids': 'resource_ids',
-        'service_type_code': 'service_type_code',
-        'status': 'status'
+        'limit': 'limit',
+        'status': 'status',
+        'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, customer_id=None, effective_time_begin=None, effective_time_end=None, indirect_partner_id=None, limit=10, offset=0, region_code=None, resource_ids=None, service_type_code=None, status=None):
+    def __init__(self, customer_id=None, region_code=None, service_type_code=None, resource_ids=None, effective_time_begin=None, effective_time_end=None, offset=0, limit=10, status=None, indirect_partner_id=None):
         """QueryCustomerOnDemandResourcesReq - a model defined in huaweicloud sdk"""
         
         
 
         self._customer_id = None
+        self._region_code = None
+        self._service_type_code = None
+        self._resource_ids = None
         self._effective_time_begin = None
         self._effective_time_end = None
-        self._indirect_partner_id = None
-        self._limit = None
         self._offset = None
-        self._region_code = None
-        self._resource_ids = None
-        self._service_type_code = None
+        self._limit = None
         self._status = None
+        self._indirect_partner_id = None
         self.discriminator = None
 
         self.customer_id = customer_id
+        if region_code is not None:
+            self.region_code = region_code
+        if service_type_code is not None:
+            self.service_type_code = service_type_code
+        if resource_ids is not None:
+            self.resource_ids = resource_ids
         if effective_time_begin is not None:
             self.effective_time_begin = effective_time_begin
         if effective_time_end is not None:
             self.effective_time_end = effective_time_end
-        if indirect_partner_id is not None:
-            self.indirect_partner_id = indirect_partner_id
-        if limit is not None:
-            self.limit = limit
         if offset is not None:
             self.offset = offset
-        if region_code is not None:
-            self.region_code = region_code
-        if resource_ids is not None:
-            self.resource_ids = resource_ids
-        if service_type_code is not None:
-            self.service_type_code = service_type_code
+        if limit is not None:
+            self.limit = limit
         if status is not None:
             self.status = status
+        if indirect_partner_id is not None:
+            self.indirect_partner_id = indirect_partner_id
 
     @property
     def customer_id(self):
@@ -106,6 +106,72 @@ class QueryCustomerOnDemandResourcesReq:
         :type: str
         """
         self._customer_id = customer_id
+
+    @property
+    def region_code(self):
+        """Gets the region_code of this QueryCustomerOnDemandResourcesReq.
+
+        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
+
+        :return: The region_code of this QueryCustomerOnDemandResourcesReq.
+        :rtype: str
+        """
+        return self._region_code
+
+    @region_code.setter
+    def region_code(self, region_code):
+        """Sets the region_code of this QueryCustomerOnDemandResourcesReq.
+
+        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
+
+        :param region_code: The region_code of this QueryCustomerOnDemandResourcesReq.
+        :type: str
+        """
+        self._region_code = region_code
+
+    @property
+    def service_type_code(self):
+        """Gets the service_type_code of this QueryCustomerOnDemandResourcesReq.
+
+        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+
+        :return: The service_type_code of this QueryCustomerOnDemandResourcesReq.
+        :rtype: str
+        """
+        return self._service_type_code
+
+    @service_type_code.setter
+    def service_type_code(self, service_type_code):
+        """Sets the service_type_code of this QueryCustomerOnDemandResourcesReq.
+
+        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+
+        :param service_type_code: The service_type_code of this QueryCustomerOnDemandResourcesReq.
+        :type: str
+        """
+        self._service_type_code = service_type_code
+
+    @property
+    def resource_ids(self):
+        """Gets the resource_ids of this QueryCustomerOnDemandResourcesReq.
+
+        |参数名称：资源ID批量查询| |参数约束以及描述：用于查询指定资源ID对应的资源。最多支持同时传递50个Id的列表。|
+
+        :return: The resource_ids of this QueryCustomerOnDemandResourcesReq.
+        :rtype: list[str]
+        """
+        return self._resource_ids
+
+    @resource_ids.setter
+    def resource_ids(self, resource_ids):
+        """Sets the resource_ids of this QueryCustomerOnDemandResourcesReq.
+
+        |参数名称：资源ID批量查询| |参数约束以及描述：用于查询指定资源ID对应的资源。最多支持同时传递50个Id的列表。|
+
+        :param resource_ids: The resource_ids of this QueryCustomerOnDemandResourcesReq.
+        :type: list[str]
+        """
+        self._resource_ids = resource_ids
 
     @property
     def effective_time_begin(self):
@@ -152,26 +218,26 @@ class QueryCustomerOnDemandResourcesReq:
         self._effective_time_end = effective_time_end
 
     @property
-    def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
+    def offset(self):
+        """Gets the offset of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：二级经销商ID，如果想查询二级经销商的子客户的资源列表，必须携带该字段，否则只能查询自己的子客户的按需资源| |参数约束及描述：二级经销商ID，如果想查询二级经销商的子客户的资源列表，必须携带该字段，否则只能查询自己的子客户的按需资源|
+        |参数名称：偏移量，从0开始。默认值：0| |参数的约束及描述：偏移量，从0开始。默认值：0|
 
-        :return: The indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
-        :rtype: str
+        :return: The offset of this QueryCustomerOnDemandResourcesReq.
+        :rtype: int
         """
-        return self._indirect_partner_id
+        return self._offset
 
-    @indirect_partner_id.setter
-    def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：二级经销商ID，如果想查询二级经销商的子客户的资源列表，必须携带该字段，否则只能查询自己的子客户的按需资源| |参数约束及描述：二级经销商ID，如果想查询二级经销商的子客户的资源列表，必须携带该字段，否则只能查询自己的子客户的按需资源|
+        |参数名称：偏移量，从0开始。默认值：0| |参数的约束及描述：偏移量，从0开始。默认值：0|
 
-        :param indirect_partner_id: The indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
-        :type: str
+        :param offset: The offset of this QueryCustomerOnDemandResourcesReq.
+        :type: int
         """
-        self._indirect_partner_id = indirect_partner_id
+        self._offset = offset
 
     @property
     def limit(self):
@@ -196,94 +262,6 @@ class QueryCustomerOnDemandResourcesReq:
         self._limit = limit
 
     @property
-    def offset(self):
-        """Gets the offset of this QueryCustomerOnDemandResourcesReq.
-
-        |参数名称：偏移量，从0开始。默认值：0| |参数的约束及描述：偏移量，从0开始。默认值：0|
-
-        :return: The offset of this QueryCustomerOnDemandResourcesReq.
-        :rtype: int
-        """
-        return self._offset
-
-    @offset.setter
-    def offset(self, offset):
-        """Sets the offset of this QueryCustomerOnDemandResourcesReq.
-
-        |参数名称：偏移量，从0开始。默认值：0| |参数的约束及描述：偏移量，从0开始。默认值：0|
-
-        :param offset: The offset of this QueryCustomerOnDemandResourcesReq.
-        :type: int
-        """
-        self._offset = offset
-
-    @property
-    def region_code(self):
-        """Gets the region_code of this QueryCustomerOnDemandResourcesReq.
-
-        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
-
-        :return: The region_code of this QueryCustomerOnDemandResourcesReq.
-        :rtype: str
-        """
-        return self._region_code
-
-    @region_code.setter
-    def region_code(self, region_code):
-        """Sets the region_code of this QueryCustomerOnDemandResourcesReq.
-
-        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
-
-        :param region_code: The region_code of this QueryCustomerOnDemandResourcesReq.
-        :type: str
-        """
-        self._region_code = region_code
-
-    @property
-    def resource_ids(self):
-        """Gets the resource_ids of this QueryCustomerOnDemandResourcesReq.
-
-        |参数名称：资源ID批量查询| |参数约束以及描述：用于查询指定资源ID对应的资源。最多支持同时传递50个Id的列表。|
-
-        :return: The resource_ids of this QueryCustomerOnDemandResourcesReq.
-        :rtype: list[str]
-        """
-        return self._resource_ids
-
-    @resource_ids.setter
-    def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this QueryCustomerOnDemandResourcesReq.
-
-        |参数名称：资源ID批量查询| |参数约束以及描述：用于查询指定资源ID对应的资源。最多支持同时传递50个Id的列表。|
-
-        :param resource_ids: The resource_ids of this QueryCustomerOnDemandResourcesReq.
-        :type: list[str]
-        """
-        self._resource_ids = resource_ids
-
-    @property
-    def service_type_code(self):
-        """Gets the service_type_code of this QueryCustomerOnDemandResourcesReq.
-
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
-
-        :return: The service_type_code of this QueryCustomerOnDemandResourcesReq.
-        :rtype: str
-        """
-        return self._service_type_code
-
-    @service_type_code.setter
-    def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this QueryCustomerOnDemandResourcesReq.
-
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
-
-        :param service_type_code: The service_type_code of this QueryCustomerOnDemandResourcesReq.
-        :type: str
-        """
-        self._service_type_code = service_type_code
-
-    @property
     def status(self):
         """Gets the status of this QueryCustomerOnDemandResourcesReq.
 
@@ -304,6 +282,28 @@ class QueryCustomerOnDemandResourcesReq:
         :type: int
         """
         self._status = status
+
+    @property
+    def indirect_partner_id(self):
+        """Gets the indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
+
+        |参数名称：二级经销商ID，如果想查询二级经销商的子客户的资源列表，必须携带该字段，否则只能查询自己的子客户的按需资源| |参数约束及描述：二级经销商ID，如果想查询二级经销商的子客户的资源列表，必须携带该字段，否则只能查询自己的子客户的按需资源|
+
+        :return: The indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
+        :rtype: str
+        """
+        return self._indirect_partner_id
+
+    @indirect_partner_id.setter
+    def indirect_partner_id(self, indirect_partner_id):
+        """Sets the indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
+
+        |参数名称：二级经销商ID，如果想查询二级经销商的子客户的资源列表，必须携带该字段，否则只能查询自己的子客户的按需资源| |参数约束及描述：二级经销商ID，如果想查询二级经销商的子客户的资源列表，必须携带该字段，否则只能查询自己的子客户的按需资源|
+
+        :param indirect_partner_id: The indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
+        :type: str
+        """
+        self._indirect_partner_id = indirect_partner_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

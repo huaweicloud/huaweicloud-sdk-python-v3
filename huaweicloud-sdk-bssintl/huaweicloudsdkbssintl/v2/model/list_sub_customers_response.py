@@ -23,50 +23,28 @@ class ListSubCustomersResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'count': 'int',
-        'customer_infos': 'list[CustomerInformation]'
+        'customer_infos': 'list[CustomerInformation]',
+        'count': 'int'
     }
 
     attribute_map = {
-        'count': 'count',
-        'customer_infos': 'customer_infos'
+        'customer_infos': 'customer_infos',
+        'count': 'count'
     }
 
-    def __init__(self, count=None, customer_infos=None):
+    def __init__(self, customer_infos=None, count=None):
         """ListSubCustomersResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._count = None
         self._customer_infos = None
+        self._count = None
         self.discriminator = None
 
-        if count is not None:
-            self.count = count
         if customer_infos is not None:
             self.customer_infos = customer_infos
-
-    @property
-    def count(self):
-        """Gets the count of this ListSubCustomersResponse.
-
-        |参数名称：总记录数。| |参数的约束及描述：总记录数。|
-
-        :return: The count of this ListSubCustomersResponse.
-        :rtype: int
-        """
-        return self._count
-
-    @count.setter
-    def count(self, count):
-        """Sets the count of this ListSubCustomersResponse.
-
-        |参数名称：总记录数。| |参数的约束及描述：总记录数。|
-
-        :param count: The count of this ListSubCustomersResponse.
-        :type: int
-        """
-        self._count = count
+        if count is not None:
+            self.count = count
 
     @property
     def customer_infos(self):
@@ -89,6 +67,28 @@ class ListSubCustomersResponse(SdkResponse):
         :type: list[CustomerInformation]
         """
         self._customer_infos = customer_infos
+
+    @property
+    def count(self):
+        """Gets the count of this ListSubCustomersResponse.
+
+        |参数名称：总记录数。| |参数的约束及描述：总记录数。|
+
+        :return: The count of this ListSubCustomersResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListSubCustomersResponse.
+
+        |参数名称：总记录数。| |参数的约束及描述：总记录数。|
+
+        :param count: The count of this ListSubCustomersResponse.
+        :type: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

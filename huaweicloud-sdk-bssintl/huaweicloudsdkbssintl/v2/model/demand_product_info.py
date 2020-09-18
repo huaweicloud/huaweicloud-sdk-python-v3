@@ -23,113 +23,69 @@ class DemandProductInfo:
     sensitive_list = []
 
     openapi_types = {
-        'available_zone': 'str',
-        'cloud_service_type': 'str',
         'id': 'str',
-        'region': 'str',
-        'resource_size': 'int',
-        'resource_spec': 'str',
+        'cloud_service_type': 'str',
         'resource_type': 'str',
+        'resource_spec': 'str',
+        'region': 'str',
+        'available_zone': 'str',
+        'resource_size': 'int',
         'size_measure_id': 'int',
-        'subscription_num': 'int',
         'usage_factor': 'str',
+        'usage_value': 'float',
         'usage_measure_id': 'int',
-        'usage_value': 'float'
+        'subscription_num': 'int'
     }
 
     attribute_map = {
-        'available_zone': 'available_zone',
-        'cloud_service_type': 'cloud_service_type',
         'id': 'id',
-        'region': 'region',
-        'resource_size': 'resource_size',
-        'resource_spec': 'resource_spec',
+        'cloud_service_type': 'cloud_service_type',
         'resource_type': 'resource_type',
+        'resource_spec': 'resource_spec',
+        'region': 'region',
+        'available_zone': 'available_zone',
+        'resource_size': 'resource_size',
         'size_measure_id': 'size_measure_id',
-        'subscription_num': 'subscription_num',
         'usage_factor': 'usage_factor',
+        'usage_value': 'usage_value',
         'usage_measure_id': 'usage_measure_id',
-        'usage_value': 'usage_value'
+        'subscription_num': 'subscription_num'
     }
 
-    def __init__(self, available_zone=None, cloud_service_type=None, id=None, region=None, resource_size=None, resource_spec=None, resource_type=None, size_measure_id=None, subscription_num=None, usage_factor=None, usage_measure_id=None, usage_value=None):
+    def __init__(self, id=None, cloud_service_type=None, resource_type=None, resource_spec=None, region=None, available_zone=None, resource_size=None, size_measure_id=None, usage_factor=None, usage_value=None, usage_measure_id=None, subscription_num=None):
         """DemandProductInfo - a model defined in huaweicloud sdk"""
         
         
 
-        self._available_zone = None
-        self._cloud_service_type = None
         self._id = None
-        self._region = None
-        self._resource_size = None
-        self._resource_spec = None
+        self._cloud_service_type = None
         self._resource_type = None
+        self._resource_spec = None
+        self._region = None
+        self._available_zone = None
+        self._resource_size = None
         self._size_measure_id = None
-        self._subscription_num = None
         self._usage_factor = None
-        self._usage_measure_id = None
         self._usage_value = None
+        self._usage_measure_id = None
+        self._subscription_num = None
         self.discriminator = None
 
+        self.id = id
+        self.cloud_service_type = cloud_service_type
+        self.resource_type = resource_type
+        self.resource_spec = resource_spec
+        self.region = region
         if available_zone is not None:
             self.available_zone = available_zone
-        self.cloud_service_type = cloud_service_type
-        self.id = id
-        self.region = region
         if resource_size is not None:
             self.resource_size = resource_size
-        self.resource_spec = resource_spec
-        self.resource_type = resource_type
         if size_measure_id is not None:
             self.size_measure_id = size_measure_id
-        self.subscription_num = subscription_num
         self.usage_factor = usage_factor
-        self.usage_measure_id = usage_measure_id
         self.usage_value = usage_value
-
-    @property
-    def available_zone(self):
-        """Gets the available_zone of this DemandProductInfo.
-
-        |参数名称：可用区标识| |参数约束及描述：可用区标识|
-
-        :return: The available_zone of this DemandProductInfo.
-        :rtype: str
-        """
-        return self._available_zone
-
-    @available_zone.setter
-    def available_zone(self, available_zone):
-        """Sets the available_zone of this DemandProductInfo.
-
-        |参数名称：可用区标识| |参数约束及描述：可用区标识|
-
-        :param available_zone: The available_zone of this DemandProductInfo.
-        :type: str
-        """
-        self._available_zone = available_zone
-
-    @property
-    def cloud_service_type(self):
-        """Gets the cloud_service_type of this DemandProductInfo.
-
-        |参数名称：用户购买云服务产品的云服务类型| |参数约束及描述：例如EC2，云服务类型为hws.service.type.ec2|
-
-        :return: The cloud_service_type of this DemandProductInfo.
-        :rtype: str
-        """
-        return self._cloud_service_type
-
-    @cloud_service_type.setter
-    def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this DemandProductInfo.
-
-        |参数名称：用户购买云服务产品的云服务类型| |参数约束及描述：例如EC2，云服务类型为hws.service.type.ec2|
-
-        :param cloud_service_type: The cloud_service_type of this DemandProductInfo.
-        :type: str
-        """
-        self._cloud_service_type = cloud_service_type
+        self.usage_measure_id = usage_measure_id
+        self.subscription_num = subscription_num
 
     @property
     def id(self):
@@ -154,70 +110,26 @@ class DemandProductInfo:
         self._id = id
 
     @property
-    def region(self):
-        """Gets the region of this DemandProductInfo.
+    def cloud_service_type(self):
+        """Gets the cloud_service_type of this DemandProductInfo.
 
-        |参数名称：云服务区编码| |参数约束及描述：云服务区编码|
+        |参数名称：用户购买云服务产品的云服务类型| |参数约束及描述：例如EC2，云服务类型为hws.service.type.ec2|
 
-        :return: The region of this DemandProductInfo.
+        :return: The cloud_service_type of this DemandProductInfo.
         :rtype: str
         """
-        return self._region
+        return self._cloud_service_type
 
-    @region.setter
-    def region(self, region):
-        """Sets the region of this DemandProductInfo.
+    @cloud_service_type.setter
+    def cloud_service_type(self, cloud_service_type):
+        """Sets the cloud_service_type of this DemandProductInfo.
 
-        |参数名称：云服务区编码| |参数约束及描述：云服务区编码|
+        |参数名称：用户购买云服务产品的云服务类型| |参数约束及描述：例如EC2，云服务类型为hws.service.type.ec2|
 
-        :param region: The region of this DemandProductInfo.
+        :param cloud_service_type: The cloud_service_type of this DemandProductInfo.
         :type: str
         """
-        self._region = region
-
-    @property
-    def resource_size(self):
-        """Gets the resource_size of this DemandProductInfo.
-
-        |参数名称：资源容量大小| |参数约束及描述：例如购买的卷大小或带宽大小，只有线性产品才有这个字段|
-
-        :return: The resource_size of this DemandProductInfo.
-        :rtype: int
-        """
-        return self._resource_size
-
-    @resource_size.setter
-    def resource_size(self, resource_size):
-        """Sets the resource_size of this DemandProductInfo.
-
-        |参数名称：资源容量大小| |参数约束及描述：例如购买的卷大小或带宽大小，只有线性产品才有这个字段|
-
-        :param resource_size: The resource_size of this DemandProductInfo.
-        :type: int
-        """
-        self._resource_size = resource_size
-
-    @property
-    def resource_spec(self):
-        """Gets the resource_spec of this DemandProductInfo.
-
-        |参数名称：用户购买云服务产品的资源规格| |参数约束及描述：例如VM的小型规格，资源规格为m1.tiny|
-
-        :return: The resource_spec of this DemandProductInfo.
-        :rtype: str
-        """
-        return self._resource_spec
-
-    @resource_spec.setter
-    def resource_spec(self, resource_spec):
-        """Sets the resource_spec of this DemandProductInfo.
-
-        |参数名称：用户购买云服务产品的资源规格| |参数约束及描述：例如VM的小型规格，资源规格为m1.tiny|
-
-        :param resource_spec: The resource_spec of this DemandProductInfo.
-        :type: str
-        """
-        self._resource_spec = resource_spec
+        self._cloud_service_type = cloud_service_type
 
     @property
     def resource_type(self):
@@ -242,6 +154,94 @@ class DemandProductInfo:
         self._resource_type = resource_type
 
     @property
+    def resource_spec(self):
+        """Gets the resource_spec of this DemandProductInfo.
+
+        |参数名称：用户购买云服务产品的资源规格| |参数约束及描述：例如VM的小型规格，资源规格为m1.tiny|
+
+        :return: The resource_spec of this DemandProductInfo.
+        :rtype: str
+        """
+        return self._resource_spec
+
+    @resource_spec.setter
+    def resource_spec(self, resource_spec):
+        """Sets the resource_spec of this DemandProductInfo.
+
+        |参数名称：用户购买云服务产品的资源规格| |参数约束及描述：例如VM的小型规格，资源规格为m1.tiny|
+
+        :param resource_spec: The resource_spec of this DemandProductInfo.
+        :type: str
+        """
+        self._resource_spec = resource_spec
+
+    @property
+    def region(self):
+        """Gets the region of this DemandProductInfo.
+
+        |参数名称：云服务区编码| |参数约束及描述：云服务区编码|
+
+        :return: The region of this DemandProductInfo.
+        :rtype: str
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        """Sets the region of this DemandProductInfo.
+
+        |参数名称：云服务区编码| |参数约束及描述：云服务区编码|
+
+        :param region: The region of this DemandProductInfo.
+        :type: str
+        """
+        self._region = region
+
+    @property
+    def available_zone(self):
+        """Gets the available_zone of this DemandProductInfo.
+
+        |参数名称：可用区标识| |参数约束及描述：可用区标识|
+
+        :return: The available_zone of this DemandProductInfo.
+        :rtype: str
+        """
+        return self._available_zone
+
+    @available_zone.setter
+    def available_zone(self, available_zone):
+        """Sets the available_zone of this DemandProductInfo.
+
+        |参数名称：可用区标识| |参数约束及描述：可用区标识|
+
+        :param available_zone: The available_zone of this DemandProductInfo.
+        :type: str
+        """
+        self._available_zone = available_zone
+
+    @property
+    def resource_size(self):
+        """Gets the resource_size of this DemandProductInfo.
+
+        |参数名称：资源容量大小| |参数约束及描述：例如购买的卷大小或带宽大小，只有线性产品才有这个字段|
+
+        :return: The resource_size of this DemandProductInfo.
+        :rtype: int
+        """
+        return self._resource_size
+
+    @resource_size.setter
+    def resource_size(self, resource_size):
+        """Sets the resource_size of this DemandProductInfo.
+
+        |参数名称：资源容量大小| |参数约束及描述：例如购买的卷大小或带宽大小，只有线性产品才有这个字段|
+
+        :param resource_size: The resource_size of this DemandProductInfo.
+        :type: int
+        """
+        self._resource_size = resource_size
+
+    @property
     def size_measure_id(self):
         """Gets the size_measure_id of this DemandProductInfo.
 
@@ -262,28 +262,6 @@ class DemandProductInfo:
         :type: int
         """
         self._size_measure_id = size_measure_id
-
-    @property
-    def subscription_num(self):
-        """Gets the subscription_num of this DemandProductInfo.
-
-        |参数名称：订购数量| |参数约束及描述：订购数量,有值时不能小于0，默认为1|
-
-        :return: The subscription_num of this DemandProductInfo.
-        :rtype: int
-        """
-        return self._subscription_num
-
-    @subscription_num.setter
-    def subscription_num(self, subscription_num):
-        """Sets the subscription_num of this DemandProductInfo.
-
-        |参数名称：订购数量| |参数约束及描述：订购数量,有值时不能小于0，默认为1|
-
-        :param subscription_num: The subscription_num of this DemandProductInfo.
-        :type: int
-        """
-        self._subscription_num = subscription_num
 
     @property
     def usage_factor(self):
@@ -308,6 +286,28 @@ class DemandProductInfo:
         self._usage_factor = usage_factor
 
     @property
+    def usage_value(self):
+        """Gets the usage_value of this DemandProductInfo.
+
+        |参数名称：使用量值| |参数约束及描述：例如按小时询价，使用量值为1，使用量单位为小时|
+
+        :return: The usage_value of this DemandProductInfo.
+        :rtype: float
+        """
+        return self._usage_value
+
+    @usage_value.setter
+    def usage_value(self, usage_value):
+        """Sets the usage_value of this DemandProductInfo.
+
+        |参数名称：使用量值| |参数约束及描述：例如按小时询价，使用量值为1，使用量单位为小时|
+
+        :param usage_value: The usage_value of this DemandProductInfo.
+        :type: float
+        """
+        self._usage_value = usage_value
+
+    @property
     def usage_measure_id(self):
         """Gets the usage_measure_id of this DemandProductInfo.
 
@@ -330,26 +330,26 @@ class DemandProductInfo:
         self._usage_measure_id = usage_measure_id
 
     @property
-    def usage_value(self):
-        """Gets the usage_value of this DemandProductInfo.
+    def subscription_num(self):
+        """Gets the subscription_num of this DemandProductInfo.
 
-        |参数名称：使用量值| |参数约束及描述：例如按小时询价，使用量值为1，使用量单位为小时|
+        |参数名称：订购数量| |参数约束及描述：订购数量,有值时不能小于0，默认为1|
 
-        :return: The usage_value of this DemandProductInfo.
-        :rtype: float
+        :return: The subscription_num of this DemandProductInfo.
+        :rtype: int
         """
-        return self._usage_value
+        return self._subscription_num
 
-    @usage_value.setter
-    def usage_value(self, usage_value):
-        """Sets the usage_value of this DemandProductInfo.
+    @subscription_num.setter
+    def subscription_num(self, subscription_num):
+        """Sets the subscription_num of this DemandProductInfo.
 
-        |参数名称：使用量值| |参数约束及描述：例如按小时询价，使用量值为1，使用量单位为小时|
+        |参数名称：订购数量| |参数约束及描述：订购数量,有值时不能小于0，默认为1|
 
-        :param usage_value: The usage_value of this DemandProductInfo.
-        :type: float
+        :param subscription_num: The subscription_num of this DemandProductInfo.
+        :type: int
         """
-        self._usage_value = usage_value
+        self._subscription_num = subscription_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

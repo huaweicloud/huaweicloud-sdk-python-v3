@@ -23,55 +23,33 @@ class CheckUserIdentityResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'check_result': 'str',
         'error_code': 'str',
-        'error_msg': 'str'
+        'error_msg': 'str',
+        'check_result': 'str'
     }
 
     attribute_map = {
-        'check_result': 'check_result',
         'error_code': 'error_code',
-        'error_msg': 'error_msg'
+        'error_msg': 'error_msg',
+        'check_result': 'check_result'
     }
 
-    def __init__(self, check_result=None, error_code='CBC.0000', error_msg='success'):
+    def __init__(self, error_code='CBC.0000', error_msg='success', check_result=None):
         """CheckUserIdentityResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._check_result = None
         self._error_code = None
         self._error_msg = None
+        self._check_result = None
         self.discriminator = None
 
-        if check_result is not None:
-            self.check_result = check_result
         if error_code is not None:
             self.error_code = error_code
         if error_msg is not None:
             self.error_msg = error_msg
-
-    @property
-    def check_result(self):
-        """Gets the check_result of this CheckUserIdentityResponse.
-
-        |参数名称：是否可以继续注册| |参数的约束及描述：该参数非必填，且只允许字符串,available: 该登录名称/手机号/邮箱可以继续注册,used_by_user: 该登录名称/手机号/邮箱不可以继续注册|
-
-        :return: The check_result of this CheckUserIdentityResponse.
-        :rtype: str
-        """
-        return self._check_result
-
-    @check_result.setter
-    def check_result(self, check_result):
-        """Sets the check_result of this CheckUserIdentityResponse.
-
-        |参数名称：是否可以继续注册| |参数的约束及描述：该参数非必填，且只允许字符串,available: 该登录名称/手机号/邮箱可以继续注册,used_by_user: 该登录名称/手机号/邮箱不可以继续注册|
-
-        :param check_result: The check_result of this CheckUserIdentityResponse.
-        :type: str
-        """
-        self._check_result = check_result
+        if check_result is not None:
+            self.check_result = check_result
 
     @property
     def error_code(self):
@@ -116,6 +94,28 @@ class CheckUserIdentityResponse(SdkResponse):
         :type: str
         """
         self._error_msg = error_msg
+
+    @property
+    def check_result(self):
+        """Gets the check_result of this CheckUserIdentityResponse.
+
+        |参数名称：是否可以继续注册| |参数的约束及描述：该参数非必填，且只允许字符串,available: 该登录名称/手机号/邮箱可以继续注册,used_by_user: 该登录名称/手机号/邮箱不可以继续注册|
+
+        :return: The check_result of this CheckUserIdentityResponse.
+        :rtype: str
+        """
+        return self._check_result
+
+    @check_result.setter
+    def check_result(self, check_result):
+        """Sets the check_result of this CheckUserIdentityResponse.
+
+        |参数名称：是否可以继续注册| |参数的约束及描述：该参数非必填，且只允许字符串,available: 该登录名称/手机号/邮箱可以继续注册,used_by_user: 该登录名称/手机号/邮箱不可以继续注册|
+
+        :param check_result: The check_result of this CheckUserIdentityResponse.
+        :type: str
+        """
+        self._check_result = check_result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

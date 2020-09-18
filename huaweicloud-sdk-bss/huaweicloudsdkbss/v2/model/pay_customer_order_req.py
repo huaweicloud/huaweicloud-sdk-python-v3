@@ -23,49 +23,27 @@ class PayCustomerOrderReq:
     sensitive_list = []
 
     openapi_types = {
-        'coupon_infos': 'list[CouponSimpleInfoOrderPay]',
-        'order_id': 'str'
+        'order_id': 'str',
+        'coupon_infos': 'list[CouponSimpleInfoOrderPay]'
     }
 
     attribute_map = {
-        'coupon_infos': 'coupon_infos',
-        'order_id': 'order_id'
+        'order_id': 'order_id',
+        'coupon_infos': 'coupon_infos'
     }
 
-    def __init__(self, coupon_infos=None, order_id=None):
+    def __init__(self, order_id=None, coupon_infos=None):
         """PayCustomerOrderReq - a model defined in huaweicloud sdk"""
         
         
 
-        self._coupon_infos = None
         self._order_id = None
+        self._coupon_infos = None
         self.discriminator = None
 
+        self.order_id = order_id
         if coupon_infos is not None:
             self.coupon_infos = coupon_infos
-        self.order_id = order_id
-
-    @property
-    def coupon_infos(self):
-        """Gets the coupon_infos of this PayCustomerOrderReq.
-
-        |参数名称：字段预留。优惠券列表，目前仅支持传递一个优惠券ID。请从“1.3-查询订单可用优惠券”接口的响应参数中获取。| |参数约束以及描述：字段预留。优惠券列表，目前仅支持传递一个优惠券ID。请从“1.3-查询订单可用优惠券”接口的响应参数中获取。|
-
-        :return: The coupon_infos of this PayCustomerOrderReq.
-        :rtype: list[CouponSimpleInfoOrderPay]
-        """
-        return self._coupon_infos
-
-    @coupon_infos.setter
-    def coupon_infos(self, coupon_infos):
-        """Sets the coupon_infos of this PayCustomerOrderReq.
-
-        |参数名称：字段预留。优惠券列表，目前仅支持传递一个优惠券ID。请从“1.3-查询订单可用优惠券”接口的响应参数中获取。| |参数约束以及描述：字段预留。优惠券列表，目前仅支持传递一个优惠券ID。请从“1.3-查询订单可用优惠券”接口的响应参数中获取。|
-
-        :param coupon_infos: The coupon_infos of this PayCustomerOrderReq.
-        :type: list[CouponSimpleInfoOrderPay]
-        """
-        self._coupon_infos = coupon_infos
 
     @property
     def order_id(self):
@@ -88,6 +66,28 @@ class PayCustomerOrderReq:
         :type: str
         """
         self._order_id = order_id
+
+    @property
+    def coupon_infos(self):
+        """Gets the coupon_infos of this PayCustomerOrderReq.
+
+        |参数名称：字段预留。优惠券列表，目前仅支持传递一个优惠券ID。请从“1.3-查询订单可用优惠券”接口的响应参数中获取。| |参数约束以及描述：字段预留。优惠券列表，目前仅支持传递一个优惠券ID。请从“1.3-查询订单可用优惠券”接口的响应参数中获取。|
+
+        :return: The coupon_infos of this PayCustomerOrderReq.
+        :rtype: list[CouponSimpleInfoOrderPay]
+        """
+        return self._coupon_infos
+
+    @coupon_infos.setter
+    def coupon_infos(self, coupon_infos):
+        """Sets the coupon_infos of this PayCustomerOrderReq.
+
+        |参数名称：字段预留。优惠券列表，目前仅支持传递一个优惠券ID。请从“1.3-查询订单可用优惠券”接口的响应参数中获取。| |参数约束以及描述：字段预留。优惠券列表，目前仅支持传递一个优惠券ID。请从“1.3-查询订单可用优惠券”接口的响应参数中获取。|
+
+        :param coupon_infos: The coupon_infos of this PayCustomerOrderReq.
+        :type: list[CouponSimpleInfoOrderPay]
+        """
+        self._coupon_infos = coupon_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

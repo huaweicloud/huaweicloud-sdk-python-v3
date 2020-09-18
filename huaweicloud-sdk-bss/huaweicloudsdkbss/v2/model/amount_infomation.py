@@ -23,60 +23,38 @@ class AmountInfomation:
     sensitive_list = []
 
     openapi_types = {
-        'coupon_amount': 'float',
         'discounts': 'list[DiscountEntry]',
         'flexipurchase_coupon_amount': 'float',
+        'coupon_amount': 'float',
         'stored_card_amount': 'float'
     }
 
     attribute_map = {
-        'coupon_amount': 'coupon_amount',
         'discounts': 'discounts',
         'flexipurchase_coupon_amount': 'flexipurchase_coupon_amount',
+        'coupon_amount': 'coupon_amount',
         'stored_card_amount': 'stored_card_amount'
     }
 
-    def __init__(self, coupon_amount=None, discounts=None, flexipurchase_coupon_amount=None, stored_card_amount=None):
+    def __init__(self, discounts=None, flexipurchase_coupon_amount=None, coupon_amount=None, stored_card_amount=None):
         """AmountInfomation - a model defined in huaweicloud sdk"""
         
         
 
-        self._coupon_amount = None
         self._discounts = None
         self._flexipurchase_coupon_amount = None
+        self._coupon_amount = None
         self._stored_card_amount = None
         self.discriminator = None
 
-        if coupon_amount is not None:
-            self.coupon_amount = coupon_amount
         if discounts is not None:
             self.discounts = discounts
         if flexipurchase_coupon_amount is not None:
             self.flexipurchase_coupon_amount = flexipurchase_coupon_amount
+        if coupon_amount is not None:
+            self.coupon_amount = coupon_amount
         if stored_card_amount is not None:
             self.stored_card_amount = stored_card_amount
-
-    @property
-    def coupon_amount(self):
-        """Gets the coupon_amount of this AmountInfomation.
-
-        |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
-
-        :return: The coupon_amount of this AmountInfomation.
-        :rtype: float
-        """
-        return self._coupon_amount
-
-    @coupon_amount.setter
-    def coupon_amount(self, coupon_amount):
-        """Sets the coupon_amount of this AmountInfomation.
-
-        |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
-
-        :param coupon_amount: The coupon_amount of this AmountInfomation.
-        :type: float
-        """
-        self._coupon_amount = coupon_amount
 
     @property
     def discounts(self):
@@ -121,6 +99,28 @@ class AmountInfomation:
         :type: float
         """
         self._flexipurchase_coupon_amount = flexipurchase_coupon_amount
+
+    @property
+    def coupon_amount(self):
+        """Gets the coupon_amount of this AmountInfomation.
+
+        |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
+
+        :return: The coupon_amount of this AmountInfomation.
+        :rtype: float
+        """
+        return self._coupon_amount
+
+    @coupon_amount.setter
+    def coupon_amount(self, coupon_amount):
+        """Sets the coupon_amount of this AmountInfomation.
+
+        |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
+
+        :param coupon_amount: The coupon_amount of this AmountInfomation.
+        :type: float
+        """
+        self._coupon_amount = coupon_amount
 
     @property
     def stored_card_amount(self):

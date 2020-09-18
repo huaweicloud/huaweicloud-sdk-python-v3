@@ -29,7 +29,7 @@ class FlavorExtraSpec:
         'quotanvme_ssd': 'str',
         'ecsgeneration': 'str',
         'ecsvirtualization_env_types': 'str',
-        'pci_passthroughenable_gpu': 'bool',
+        'pci_passthroughenable_gpu': 'str',
         'pci_passthroughgpu_specs': 'str',
         'pci_passthroughalias': 'str',
         'condoperationstatus': 'str',
@@ -245,7 +245,7 @@ class FlavorExtraSpec:
         显卡是否直通。  值为“true”，表示GPU直通。
 
         :return: The pci_passthroughenable_gpu of this FlavorExtraSpec.
-        :rtype: bool
+        :rtype: str
         """
         return self._pci_passthroughenable_gpu
 
@@ -256,7 +256,7 @@ class FlavorExtraSpec:
         显卡是否直通。  值为“true”，表示GPU直通。
 
         :param pci_passthroughenable_gpu: The pci_passthroughenable_gpu of this FlavorExtraSpec.
-        :type: bool
+        :type: str
         """
         self._pci_passthroughenable_gpu = pci_passthroughenable_gpu
 

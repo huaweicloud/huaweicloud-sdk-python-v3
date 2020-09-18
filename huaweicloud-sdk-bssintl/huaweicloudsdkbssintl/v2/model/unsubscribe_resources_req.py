@@ -24,35 +24,35 @@ class UnsubscribeResourcesReq:
 
     openapi_types = {
         'resource_ids': 'list[str]',
-        'unsubscribe_reason': 'str',
+        'unsubscribe_type': 'int',
         'unsubscribe_reason_type': 'int',
-        'unsubscribe_type': 'int'
+        'unsubscribe_reason': 'str'
     }
 
     attribute_map = {
         'resource_ids': 'resource_ids',
-        'unsubscribe_reason': 'unsubscribe_reason',
+        'unsubscribe_type': 'unsubscribe_type',
         'unsubscribe_reason_type': 'unsubscribe_reason_type',
-        'unsubscribe_type': 'unsubscribe_type'
+        'unsubscribe_reason': 'unsubscribe_reason'
     }
 
-    def __init__(self, resource_ids=None, unsubscribe_reason=None, unsubscribe_reason_type=None, unsubscribe_type=None):
+    def __init__(self, resource_ids=None, unsubscribe_type=None, unsubscribe_reason_type=None, unsubscribe_reason=None):
         """UnsubscribeResourcesReq - a model defined in huaweicloud sdk"""
         
         
 
         self._resource_ids = None
-        self._unsubscribe_reason = None
-        self._unsubscribe_reason_type = None
         self._unsubscribe_type = None
+        self._unsubscribe_reason_type = None
+        self._unsubscribe_reason = None
         self.discriminator = None
 
         self.resource_ids = resource_ids
-        if unsubscribe_reason is not None:
-            self.unsubscribe_reason = unsubscribe_reason
+        self.unsubscribe_type = unsubscribe_type
         if unsubscribe_reason_type is not None:
             self.unsubscribe_reason_type = unsubscribe_reason_type
-        self.unsubscribe_type = unsubscribe_type
+        if unsubscribe_reason is not None:
+            self.unsubscribe_reason = unsubscribe_reason
 
     @property
     def resource_ids(self):
@@ -77,26 +77,26 @@ class UnsubscribeResourcesReq:
         self._resource_ids = resource_ids
 
     @property
-    def unsubscribe_reason(self):
-        """Gets the unsubscribe_reason of this UnsubscribeResourcesReq.
+    def unsubscribe_type(self):
+        """Gets the unsubscribe_type of this UnsubscribeResourcesReq.
 
-        |参数名称：退订原因，一般由客户输入。| |参数约束及描述：退订原因，一般由客户输入。|
+        |参数名称：退订类型，取值如下：1：退订资源及其已续费周期。2：只退订资源已续费周期，不退订资源。| |参数的约束及描述：退订类型，取值如下：1：退订资源及其已续费周期。2：只退订资源已续费周期，不退订资源。|
 
-        :return: The unsubscribe_reason of this UnsubscribeResourcesReq.
-        :rtype: str
+        :return: The unsubscribe_type of this UnsubscribeResourcesReq.
+        :rtype: int
         """
-        return self._unsubscribe_reason
+        return self._unsubscribe_type
 
-    @unsubscribe_reason.setter
-    def unsubscribe_reason(self, unsubscribe_reason):
-        """Sets the unsubscribe_reason of this UnsubscribeResourcesReq.
+    @unsubscribe_type.setter
+    def unsubscribe_type(self, unsubscribe_type):
+        """Sets the unsubscribe_type of this UnsubscribeResourcesReq.
 
-        |参数名称：退订原因，一般由客户输入。| |参数约束及描述：退订原因，一般由客户输入。|
+        |参数名称：退订类型，取值如下：1：退订资源及其已续费周期。2：只退订资源已续费周期，不退订资源。| |参数的约束及描述：退订类型，取值如下：1：退订资源及其已续费周期。2：只退订资源已续费周期，不退订资源。|
 
-        :param unsubscribe_reason: The unsubscribe_reason of this UnsubscribeResourcesReq.
-        :type: str
+        :param unsubscribe_type: The unsubscribe_type of this UnsubscribeResourcesReq.
+        :type: int
         """
-        self._unsubscribe_reason = unsubscribe_reason
+        self._unsubscribe_type = unsubscribe_type
 
     @property
     def unsubscribe_reason_type(self):
@@ -121,26 +121,26 @@ class UnsubscribeResourcesReq:
         self._unsubscribe_reason_type = unsubscribe_reason_type
 
     @property
-    def unsubscribe_type(self):
-        """Gets the unsubscribe_type of this UnsubscribeResourcesReq.
+    def unsubscribe_reason(self):
+        """Gets the unsubscribe_reason of this UnsubscribeResourcesReq.
 
-        |参数名称：退订类型，取值如下：1：退订资源及其已续费周期。2：只退订资源已续费周期，不退订资源。| |参数的约束及描述：退订类型，取值如下：1：退订资源及其已续费周期。2：只退订资源已续费周期，不退订资源。|
+        |参数名称：退订原因，一般由客户输入。| |参数约束及描述：退订原因，一般由客户输入。|
 
-        :return: The unsubscribe_type of this UnsubscribeResourcesReq.
-        :rtype: int
+        :return: The unsubscribe_reason of this UnsubscribeResourcesReq.
+        :rtype: str
         """
-        return self._unsubscribe_type
+        return self._unsubscribe_reason
 
-    @unsubscribe_type.setter
-    def unsubscribe_type(self, unsubscribe_type):
-        """Sets the unsubscribe_type of this UnsubscribeResourcesReq.
+    @unsubscribe_reason.setter
+    def unsubscribe_reason(self, unsubscribe_reason):
+        """Sets the unsubscribe_reason of this UnsubscribeResourcesReq.
 
-        |参数名称：退订类型，取值如下：1：退订资源及其已续费周期。2：只退订资源已续费周期，不退订资源。| |参数的约束及描述：退订类型，取值如下：1：退订资源及其已续费周期。2：只退订资源已续费周期，不退订资源。|
+        |参数名称：退订原因，一般由客户输入。| |参数约束及描述：退订原因，一般由客户输入。|
 
-        :param unsubscribe_type: The unsubscribe_type of this UnsubscribeResourcesReq.
-        :type: int
+        :param unsubscribe_reason: The unsubscribe_reason of this UnsubscribeResourcesReq.
+        :type: str
         """
-        self._unsubscribe_type = unsubscribe_type
+        self._unsubscribe_reason = unsubscribe_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

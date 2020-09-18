@@ -23,33 +23,55 @@ class ListSubCustomerResFeeRecordsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'fee_records': 'list[SubCustomerResFeeRecordV2]',
         'count': 'int',
-        'currency': 'str',
-        'fee_records': 'list[SubCustomerResFeeRecordV2]'
+        'currency': 'str'
     }
 
     attribute_map = {
+        'fee_records': 'fee_records',
         'count': 'count',
-        'currency': 'currency',
-        'fee_records': 'fee_records'
+        'currency': 'currency'
     }
 
-    def __init__(self, count=None, currency=None, fee_records=None):
+    def __init__(self, fee_records=None, count=None, currency=None):
         """ListSubCustomerResFeeRecordsResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
+        self._fee_records = None
         self._count = None
         self._currency = None
-        self._fee_records = None
         self.discriminator = None
 
+        if fee_records is not None:
+            self.fee_records = fee_records
         if count is not None:
             self.count = count
         if currency is not None:
             self.currency = currency
-        if fee_records is not None:
-            self.fee_records = fee_records
+
+    @property
+    def fee_records(self):
+        """Gets the fee_records of this ListSubCustomerResFeeRecordsResponse.
+
+        |参数名称：资源费用记录数据。具体请参见表 ResFeeRecordV2。| |参数约束以及描述：资源费用记录数据。具体请参见表 ResFeeRecordV2。|
+
+        :return: The fee_records of this ListSubCustomerResFeeRecordsResponse.
+        :rtype: list[SubCustomerResFeeRecordV2]
+        """
+        return self._fee_records
+
+    @fee_records.setter
+    def fee_records(self, fee_records):
+        """Sets the fee_records of this ListSubCustomerResFeeRecordsResponse.
+
+        |参数名称：资源费用记录数据。具体请参见表 ResFeeRecordV2。| |参数约束以及描述：资源费用记录数据。具体请参见表 ResFeeRecordV2。|
+
+        :param fee_records: The fee_records of this ListSubCustomerResFeeRecordsResponse.
+        :type: list[SubCustomerResFeeRecordV2]
+        """
+        self._fee_records = fee_records
 
     @property
     def count(self):
@@ -94,28 +116,6 @@ class ListSubCustomerResFeeRecordsResponse(SdkResponse):
         :type: str
         """
         self._currency = currency
-
-    @property
-    def fee_records(self):
-        """Gets the fee_records of this ListSubCustomerResFeeRecordsResponse.
-
-        |参数名称：资源费用记录数据。具体请参见表 ResFeeRecordV2。| |参数约束以及描述：资源费用记录数据。具体请参见表 ResFeeRecordV2。|
-
-        :return: The fee_records of this ListSubCustomerResFeeRecordsResponse.
-        :rtype: list[SubCustomerResFeeRecordV2]
-        """
-        return self._fee_records
-
-    @fee_records.setter
-    def fee_records(self, fee_records):
-        """Sets the fee_records of this ListSubCustomerResFeeRecordsResponse.
-
-        |参数名称：资源费用记录数据。具体请参见表 ResFeeRecordV2。| |参数约束以及描述：资源费用记录数据。具体请参见表 ResFeeRecordV2。|
-
-        :param fee_records: The fee_records of this ListSubCustomerResFeeRecordsResponse.
-        :type: list[SubCustomerResFeeRecordV2]
-        """
-        self._fee_records = fee_records
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -23,53 +23,31 @@ class ReclaimToPartnerAccountBalancesReq:
     sensitive_list = []
 
     openapi_types = {
-        'amount': 'float',
         'customer_id': 'str',
+        'amount': 'float',
         'indirect_partner_id': 'str'
     }
 
     attribute_map = {
-        'amount': 'amount',
         'customer_id': 'customer_id',
+        'amount': 'amount',
         'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, amount=None, customer_id=None, indirect_partner_id=None):
+    def __init__(self, customer_id=None, amount=None, indirect_partner_id=None):
         """ReclaimToPartnerAccountBalancesReq - a model defined in huaweicloud sdk"""
         
         
 
-        self._amount = None
         self._customer_id = None
+        self._amount = None
         self._indirect_partner_id = None
         self.discriminator = None
 
-        self.amount = amount
         self.customer_id = customer_id
+        self.amount = amount
         if indirect_partner_id is not None:
             self.indirect_partner_id = indirect_partner_id
-
-    @property
-    def amount(self):
-        """Gets the amount of this ReclaimToPartnerAccountBalancesReq.
-
-        |参数名称：回收金额。| |参数的约束及描述：单位为元不能为负数，精确到小数点后两位。|
-
-        :return: The amount of this ReclaimToPartnerAccountBalancesReq.
-        :rtype: float
-        """
-        return self._amount
-
-    @amount.setter
-    def amount(self, amount):
-        """Sets the amount of this ReclaimToPartnerAccountBalancesReq.
-
-        |参数名称：回收金额。| |参数的约束及描述：单位为元不能为负数，精确到小数点后两位。|
-
-        :param amount: The amount of this ReclaimToPartnerAccountBalancesReq.
-        :type: float
-        """
-        self._amount = amount
 
     @property
     def customer_id(self):
@@ -92,6 +70,28 @@ class ReclaimToPartnerAccountBalancesReq:
         :type: str
         """
         self._customer_id = customer_id
+
+    @property
+    def amount(self):
+        """Gets the amount of this ReclaimToPartnerAccountBalancesReq.
+
+        |参数名称：回收金额。| |参数的约束及描述：单位为元不能为负数，精确到小数点后两位。|
+
+        :return: The amount of this ReclaimToPartnerAccountBalancesReq.
+        :rtype: float
+        """
+        return self._amount
+
+    @amount.setter
+    def amount(self, amount):
+        """Sets the amount of this ReclaimToPartnerAccountBalancesReq.
+
+        |参数名称：回收金额。| |参数的约束及描述：单位为元不能为负数，精确到小数点后两位。|
+
+        :param amount: The amount of this ReclaimToPartnerAccountBalancesReq.
+        :type: float
+        """
+        self._amount = amount
 
     @property
     def indirect_partner_id(self):

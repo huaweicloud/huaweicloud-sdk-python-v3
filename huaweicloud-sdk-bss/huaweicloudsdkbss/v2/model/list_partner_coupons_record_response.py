@@ -23,50 +23,28 @@ class ListPartnerCouponsRecordResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'records': 'list[CouponRecordV2]',
-        'total_count': 'int'
+        'total_count': 'int',
+        'records': 'list[CouponRecordV2]'
     }
 
     attribute_map = {
-        'records': 'records',
-        'total_count': 'total_count'
+        'total_count': 'total_count',
+        'records': 'records'
     }
 
-    def __init__(self, records=None, total_count=None):
+    def __init__(self, total_count=None, records=None):
         """ListPartnerCouponsRecordResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._records = None
         self._total_count = None
+        self._records = None
         self.discriminator = None
 
-        if records is not None:
-            self.records = records
         if total_count is not None:
             self.total_count = total_count
-
-    @property
-    def records(self):
-        """Gets the records of this ListPartnerCouponsRecordResponse.
-
-        |参数名称：日志记录列表。具体请参见表2 CouponRecordV2。| |参数约束以及描述：日志记录列表。具体请参见表2 CouponRecordV2。|
-
-        :return: The records of this ListPartnerCouponsRecordResponse.
-        :rtype: list[CouponRecordV2]
-        """
-        return self._records
-
-    @records.setter
-    def records(self, records):
-        """Sets the records of this ListPartnerCouponsRecordResponse.
-
-        |参数名称：日志记录列表。具体请参见表2 CouponRecordV2。| |参数约束以及描述：日志记录列表。具体请参见表2 CouponRecordV2。|
-
-        :param records: The records of this ListPartnerCouponsRecordResponse.
-        :type: list[CouponRecordV2]
-        """
-        self._records = records
+        if records is not None:
+            self.records = records
 
     @property
     def total_count(self):
@@ -89,6 +67,28 @@ class ListPartnerCouponsRecordResponse(SdkResponse):
         :type: int
         """
         self._total_count = total_count
+
+    @property
+    def records(self):
+        """Gets the records of this ListPartnerCouponsRecordResponse.
+
+        |参数名称：日志记录列表。具体请参见表2 CouponRecordV2。| |参数约束以及描述：日志记录列表。具体请参见表2 CouponRecordV2。|
+
+        :return: The records of this ListPartnerCouponsRecordResponse.
+        :rtype: list[CouponRecordV2]
+        """
+        return self._records
+
+    @records.setter
+    def records(self, records):
+        """Sets the records of this ListPartnerCouponsRecordResponse.
+
+        |参数名称：日志记录列表。具体请参见表2 CouponRecordV2。| |参数约束以及描述：日志记录列表。具体请参见表2 CouponRecordV2。|
+
+        :param records: The records of this ListPartnerCouponsRecordResponse.
+        :type: list[CouponRecordV2]
+        """
+        self._records = records
 
     def to_dict(self):
         """Returns the model properties as a dict"""

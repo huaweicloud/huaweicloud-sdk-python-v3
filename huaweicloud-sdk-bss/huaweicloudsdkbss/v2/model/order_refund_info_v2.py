@@ -23,117 +23,51 @@ class OrderRefundInfoV2:
     sensitive_list = []
 
     openapi_types = {
-        'amount': 'float',
-        'base_order_id': 'str',
-        'customer_id': 'str',
         'id': 'str',
+        'amount': 'float',
         'measure_id': 'str',
-        'region_code': 'str',
+        'customer_id': 'str',
         'resource_type_code': 'str',
-        'service_type_code': 'str'
+        'service_type_code': 'str',
+        'region_code': 'str',
+        'base_order_id': 'str'
     }
 
     attribute_map = {
-        'amount': 'amount',
-        'base_order_id': 'base_order_id',
-        'customer_id': 'customer_id',
         'id': 'id',
+        'amount': 'amount',
         'measure_id': 'measure_id',
-        'region_code': 'region_code',
+        'customer_id': 'customer_id',
         'resource_type_code': 'resource_type_code',
-        'service_type_code': 'service_type_code'
+        'service_type_code': 'service_type_code',
+        'region_code': 'region_code',
+        'base_order_id': 'base_order_id'
     }
 
-    def __init__(self, amount=None, base_order_id=None, customer_id=None, id=None, measure_id=None, region_code=None, resource_type_code=None, service_type_code=None):
+    def __init__(self, id=None, amount=None, measure_id=None, customer_id=None, resource_type_code=None, service_type_code=None, region_code=None, base_order_id=None):
         """OrderRefundInfoV2 - a model defined in huaweicloud sdk"""
         
         
 
-        self._amount = None
-        self._base_order_id = None
-        self._customer_id = None
         self._id = None
+        self._amount = None
         self._measure_id = None
-        self._region_code = None
+        self._customer_id = None
         self._resource_type_code = None
         self._service_type_code = None
+        self._region_code = None
+        self._base_order_id = None
         self.discriminator = None
 
-        self.amount = amount
-        if base_order_id is not None:
-            self.base_order_id = base_order_id
-        self.customer_id = customer_id
         self.id = id
+        self.amount = amount
         self.measure_id = measure_id
-        self.region_code = region_code
+        self.customer_id = customer_id
         self.resource_type_code = resource_type_code
         self.service_type_code = service_type_code
-
-    @property
-    def amount(self):
-        """Gets the amount of this OrderRefundInfoV2.
-
-        |参数名称：金额。金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。| |参数的约束及描述：金额。金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。|
-
-        :return: The amount of this OrderRefundInfoV2.
-        :rtype: float
-        """
-        return self._amount
-
-    @amount.setter
-    def amount(self, amount):
-        """Sets the amount of this OrderRefundInfoV2.
-
-        |参数名称：金额。金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。| |参数的约束及描述：金额。金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。|
-
-        :param amount: The amount of this OrderRefundInfoV2.
-        :type: float
-        """
-        self._amount = amount
-
-    @property
-    def base_order_id(self):
-        """Gets the base_order_id of this OrderRefundInfoV2.
-
-        |参数名称：退订金额、已消费金额或收取退订手续费对应的原订单ID。| |参数约束及描述：退订金额、已消费金额或收取退订手续费对应的原订单ID。|
-
-        :return: The base_order_id of this OrderRefundInfoV2.
-        :rtype: str
-        """
-        return self._base_order_id
-
-    @base_order_id.setter
-    def base_order_id(self, base_order_id):
-        """Sets the base_order_id of this OrderRefundInfoV2.
-
-        |参数名称：退订金额、已消费金额或收取退订手续费对应的原订单ID。| |参数约束及描述：退订金额、已消费金额或收取退订手续费对应的原订单ID。|
-
-        :param base_order_id: The base_order_id of this OrderRefundInfoV2.
-        :type: str
-        """
-        self._base_order_id = base_order_id
-
-    @property
-    def customer_id(self):
-        """Gets the customer_id of this OrderRefundInfoV2.
-
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
-
-        :return: The customer_id of this OrderRefundInfoV2.
-        :rtype: str
-        """
-        return self._customer_id
-
-    @customer_id.setter
-    def customer_id(self, customer_id):
-        """Sets the customer_id of this OrderRefundInfoV2.
-
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
-
-        :param customer_id: The customer_id of this OrderRefundInfoV2.
-        :type: str
-        """
-        self._customer_id = customer_id
+        self.region_code = region_code
+        if base_order_id is not None:
+            self.base_order_id = base_order_id
 
     @property
     def id(self):
@@ -158,6 +92,28 @@ class OrderRefundInfoV2:
         self._id = id
 
     @property
+    def amount(self):
+        """Gets the amount of this OrderRefundInfoV2.
+
+        |参数名称：金额。金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。| |参数的约束及描述：金额。金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。|
+
+        :return: The amount of this OrderRefundInfoV2.
+        :rtype: float
+        """
+        return self._amount
+
+    @amount.setter
+    def amount(self, amount):
+        """Sets the amount of this OrderRefundInfoV2.
+
+        |参数名称：金额。金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。| |参数的约束及描述：金额。金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。|
+
+        :param amount: The amount of this OrderRefundInfoV2.
+        :type: float
+        """
+        self._amount = amount
+
+    @property
     def measure_id(self):
         """Gets the measure_id of this OrderRefundInfoV2.
 
@@ -180,26 +136,26 @@ class OrderRefundInfoV2:
         self._measure_id = measure_id
 
     @property
-    def region_code(self):
-        """Gets the region_code of this OrderRefundInfoV2.
+    def customer_id(self):
+        """Gets the customer_id of this OrderRefundInfoV2.
 
-        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
+        |参数名称：客户ID。| |参数约束及描述：客户ID。|
 
-        :return: The region_code of this OrderRefundInfoV2.
+        :return: The customer_id of this OrderRefundInfoV2.
         :rtype: str
         """
-        return self._region_code
+        return self._customer_id
 
-    @region_code.setter
-    def region_code(self, region_code):
-        """Sets the region_code of this OrderRefundInfoV2.
+    @customer_id.setter
+    def customer_id(self, customer_id):
+        """Sets the customer_id of this OrderRefundInfoV2.
 
-        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
+        |参数名称：客户ID。| |参数约束及描述：客户ID。|
 
-        :param region_code: The region_code of this OrderRefundInfoV2.
+        :param customer_id: The customer_id of this OrderRefundInfoV2.
         :type: str
         """
-        self._region_code = region_code
+        self._customer_id = customer_id
 
     @property
     def resource_type_code(self):
@@ -244,6 +200,50 @@ class OrderRefundInfoV2:
         :type: str
         """
         self._service_type_code = service_type_code
+
+    @property
+    def region_code(self):
+        """Gets the region_code of this OrderRefundInfoV2.
+
+        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
+
+        :return: The region_code of this OrderRefundInfoV2.
+        :rtype: str
+        """
+        return self._region_code
+
+    @region_code.setter
+    def region_code(self, region_code):
+        """Sets the region_code of this OrderRefundInfoV2.
+
+        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
+
+        :param region_code: The region_code of this OrderRefundInfoV2.
+        :type: str
+        """
+        self._region_code = region_code
+
+    @property
+    def base_order_id(self):
+        """Gets the base_order_id of this OrderRefundInfoV2.
+
+        |参数名称：退订金额、已消费金额或收取退订手续费对应的原订单ID。| |参数约束及描述：退订金额、已消费金额或收取退订手续费对应的原订单ID。|
+
+        :return: The base_order_id of this OrderRefundInfoV2.
+        :rtype: str
+        """
+        return self._base_order_id
+
+    @base_order_id.setter
+    def base_order_id(self, base_order_id):
+        """Sets the base_order_id of this OrderRefundInfoV2.
+
+        |参数名称：退订金额、已消费金额或收取退订手续费对应的原订单ID。| |参数约束及描述：退订金额、已消费金额或收取退订手续费对应的原订单ID。|
+
+        :param base_order_id: The base_order_id of this OrderRefundInfoV2.
+        :type: str
+        """
+        self._base_order_id = base_order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -23,84 +23,62 @@ class UpdatePostalReq:
     sensitive_list = []
 
     openapi_types = {
-        'address': 'str',
         'address_id': 'str',
+        'recipient': 'str',
+        'province': 'str',
         'city': 'str',
         'district': 'str',
-        'is_default': 'int',
+        'address': 'str',
+        'zipcode': 'str',
         'mobile_phone': 'str',
-        'province': 'str',
-        'recipient': 'str',
-        'zipcode': 'str'
+        'is_default': 'int'
     }
 
     attribute_map = {
-        'address': 'address',
         'address_id': 'address_id',
+        'recipient': 'recipient',
+        'province': 'province',
         'city': 'city',
         'district': 'district',
-        'is_default': 'is_default',
+        'address': 'address',
+        'zipcode': 'zipcode',
         'mobile_phone': 'mobile_phone',
-        'province': 'province',
-        'recipient': 'recipient',
-        'zipcode': 'zipcode'
+        'is_default': 'is_default'
     }
 
-    def __init__(self, address=None, address_id=None, city=None, district=None, is_default=0, mobile_phone=None, province=None, recipient=None, zipcode=None):
+    def __init__(self, address_id=None, recipient=None, province=None, city=None, district=None, address=None, zipcode=None, mobile_phone=None, is_default=0):
         """UpdatePostalReq - a model defined in huaweicloud sdk"""
         
         
 
-        self._address = None
         self._address_id = None
+        self._recipient = None
+        self._province = None
         self._city = None
         self._district = None
-        self._is_default = None
-        self._mobile_phone = None
-        self._province = None
-        self._recipient = None
+        self._address = None
         self._zipcode = None
+        self._mobile_phone = None
+        self._is_default = None
         self.discriminator = None
 
-        if address is not None:
-            self.address = address
         self.address_id = address_id
+        if recipient is not None:
+            self.recipient = recipient
+        if province is not None:
+            self.province = province
         if city is not None:
             self.city = city
         if district is not None:
             self.district = district
-        if is_default is not None:
-            self.is_default = is_default
-        if mobile_phone is not None:
-            self.mobile_phone = mobile_phone
-        if province is not None:
-            self.province = province
-        if recipient is not None:
-            self.recipient = recipient
+        if address is not None:
+            self.address = address
         if zipcode is not None:
             self.zipcode = zipcode
-
-    @property
-    def address(self):
-        """Gets the address of this UpdatePostalReq.
-
-        |参数名称：邮寄详细地址。| |参数约束及描述：邮寄详细地址。|
-
-        :return: The address of this UpdatePostalReq.
-        :rtype: str
-        """
-        return self._address
-
-    @address.setter
-    def address(self, address):
-        """Sets the address of this UpdatePostalReq.
-
-        |参数名称：邮寄详细地址。| |参数约束及描述：邮寄详细地址。|
-
-        :param address: The address of this UpdatePostalReq.
-        :type: str
-        """
-        self._address = address
+        if mobile_phone is not None:
+            self.mobile_phone = mobile_phone
+        if is_default is not None:
+            self.is_default = is_default
 
     @property
     def address_id(self):
@@ -123,6 +101,50 @@ class UpdatePostalReq:
         :type: str
         """
         self._address_id = address_id
+
+    @property
+    def recipient(self):
+        """Gets the recipient of this UpdatePostalReq.
+
+        |参数名称：收件人姓名| |参数约束及描述：收件人姓名|
+
+        :return: The recipient of this UpdatePostalReq.
+        :rtype: str
+        """
+        return self._recipient
+
+    @recipient.setter
+    def recipient(self, recipient):
+        """Sets the recipient of this UpdatePostalReq.
+
+        |参数名称：收件人姓名| |参数约束及描述：收件人姓名|
+
+        :param recipient: The recipient of this UpdatePostalReq.
+        :type: str
+        """
+        self._recipient = recipient
+
+    @property
+    def province(self):
+        """Gets the province of this UpdatePostalReq.
+
+        |参数名称：省/自治区/直辖市。例如：江苏，不要写成：江苏省| |参数约束及描述：省/自治区/直辖市。例如：江苏，不要写成：江苏省|
+
+        :return: The province of this UpdatePostalReq.
+        :rtype: str
+        """
+        return self._province
+
+    @province.setter
+    def province(self, province):
+        """Sets the province of this UpdatePostalReq.
+
+        |参数名称：省/自治区/直辖市。例如：江苏，不要写成：江苏省| |参数约束及描述：省/自治区/直辖市。例如：江苏，不要写成：江苏省|
+
+        :param province: The province of this UpdatePostalReq.
+        :type: str
+        """
+        self._province = province
 
     @property
     def city(self):
@@ -169,26 +191,48 @@ class UpdatePostalReq:
         self._district = district
 
     @property
-    def is_default(self):
-        """Gets the is_default of this UpdatePostalReq.
+    def address(self):
+        """Gets the address of this UpdatePostalReq.
 
-        |参数名称：是否默认地址| |参数约束及描述：是否默认地址，默认为0。1：默认地址0：非默认地址|
+        |参数名称：邮寄详细地址。| |参数约束及描述：邮寄详细地址。|
 
-        :return: The is_default of this UpdatePostalReq.
-        :rtype: int
+        :return: The address of this UpdatePostalReq.
+        :rtype: str
         """
-        return self._is_default
+        return self._address
 
-    @is_default.setter
-    def is_default(self, is_default):
-        """Sets the is_default of this UpdatePostalReq.
+    @address.setter
+    def address(self, address):
+        """Sets the address of this UpdatePostalReq.
 
-        |参数名称：是否默认地址| |参数约束及描述：是否默认地址，默认为0。1：默认地址0：非默认地址|
+        |参数名称：邮寄详细地址。| |参数约束及描述：邮寄详细地址。|
 
-        :param is_default: The is_default of this UpdatePostalReq.
-        :type: int
+        :param address: The address of this UpdatePostalReq.
+        :type: str
         """
-        self._is_default = is_default
+        self._address = address
+
+    @property
+    def zipcode(self):
+        """Gets the zipcode of this UpdatePostalReq.
+
+        |参数名称：邮编| |参数约束及描述：邮编|
+
+        :return: The zipcode of this UpdatePostalReq.
+        :rtype: str
+        """
+        return self._zipcode
+
+    @zipcode.setter
+    def zipcode(self, zipcode):
+        """Sets the zipcode of this UpdatePostalReq.
+
+        |参数名称：邮编| |参数约束及描述：邮编|
+
+        :param zipcode: The zipcode of this UpdatePostalReq.
+        :type: str
+        """
+        self._zipcode = zipcode
 
     @property
     def mobile_phone(self):
@@ -213,70 +257,26 @@ class UpdatePostalReq:
         self._mobile_phone = mobile_phone
 
     @property
-    def province(self):
-        """Gets the province of this UpdatePostalReq.
+    def is_default(self):
+        """Gets the is_default of this UpdatePostalReq.
 
-        |参数名称：省/自治区/直辖市。例如：江苏，不要写成：江苏省| |参数约束及描述：省/自治区/直辖市。例如：江苏，不要写成：江苏省|
+        |参数名称：是否默认地址| |参数约束及描述：是否默认地址，默认为0。1：默认地址0：非默认地址|
 
-        :return: The province of this UpdatePostalReq.
-        :rtype: str
+        :return: The is_default of this UpdatePostalReq.
+        :rtype: int
         """
-        return self._province
+        return self._is_default
 
-    @province.setter
-    def province(self, province):
-        """Sets the province of this UpdatePostalReq.
+    @is_default.setter
+    def is_default(self, is_default):
+        """Sets the is_default of this UpdatePostalReq.
 
-        |参数名称：省/自治区/直辖市。例如：江苏，不要写成：江苏省| |参数约束及描述：省/自治区/直辖市。例如：江苏，不要写成：江苏省|
+        |参数名称：是否默认地址| |参数约束及描述：是否默认地址，默认为0。1：默认地址0：非默认地址|
 
-        :param province: The province of this UpdatePostalReq.
-        :type: str
+        :param is_default: The is_default of this UpdatePostalReq.
+        :type: int
         """
-        self._province = province
-
-    @property
-    def recipient(self):
-        """Gets the recipient of this UpdatePostalReq.
-
-        |参数名称：收件人姓名| |参数约束及描述：收件人姓名|
-
-        :return: The recipient of this UpdatePostalReq.
-        :rtype: str
-        """
-        return self._recipient
-
-    @recipient.setter
-    def recipient(self, recipient):
-        """Sets the recipient of this UpdatePostalReq.
-
-        |参数名称：收件人姓名| |参数约束及描述：收件人姓名|
-
-        :param recipient: The recipient of this UpdatePostalReq.
-        :type: str
-        """
-        self._recipient = recipient
-
-    @property
-    def zipcode(self):
-        """Gets the zipcode of this UpdatePostalReq.
-
-        |参数名称：邮编| |参数约束及描述：邮编|
-
-        :return: The zipcode of this UpdatePostalReq.
-        :rtype: str
-        """
-        return self._zipcode
-
-    @zipcode.setter
-    def zipcode(self, zipcode):
-        """Sets the zipcode of this UpdatePostalReq.
-
-        |参数名称：邮编| |参数约束及描述：邮编|
-
-        :param zipcode: The zipcode of this UpdatePostalReq.
-        :type: str
-        """
-        self._zipcode = zipcode
+        self._is_default = is_default
 
     def to_dict(self):
         """Returns the model properties as a dict"""

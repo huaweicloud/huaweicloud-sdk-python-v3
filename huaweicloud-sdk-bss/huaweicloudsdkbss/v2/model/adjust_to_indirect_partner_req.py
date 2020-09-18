@@ -23,48 +23,26 @@ class AdjustToIndirectPartnerReq:
     sensitive_list = []
 
     openapi_types = {
-        'amount': 'float',
-        'indirect_partner_id': 'str'
+        'indirect_partner_id': 'str',
+        'amount': 'float'
     }
 
     attribute_map = {
-        'amount': 'amount',
-        'indirect_partner_id': 'indirect_partner_id'
+        'indirect_partner_id': 'indirect_partner_id',
+        'amount': 'amount'
     }
 
-    def __init__(self, amount=None, indirect_partner_id=None):
+    def __init__(self, indirect_partner_id=None, amount=None):
         """AdjustToIndirectPartnerReq - a model defined in huaweicloud sdk"""
         
         
 
-        self._amount = None
         self._indirect_partner_id = None
+        self._amount = None
         self.discriminator = None
 
-        self.amount = amount
         self.indirect_partner_id = indirect_partner_id
-
-    @property
-    def amount(self):
-        """Gets the amount of this AdjustToIndirectPartnerReq.
-
-        |参数名称：授信金额。单位为元不能为负数，精确到小数点后两位。| |参数的约束及描述：授信金额。单位为元不能为负数，精确到小数点后两位。|
-
-        :return: The amount of this AdjustToIndirectPartnerReq.
-        :rtype: float
-        """
-        return self._amount
-
-    @amount.setter
-    def amount(self, amount):
-        """Sets the amount of this AdjustToIndirectPartnerReq.
-
-        |参数名称：授信金额。单位为元不能为负数，精确到小数点后两位。| |参数的约束及描述：授信金额。单位为元不能为负数，精确到小数点后两位。|
-
-        :param amount: The amount of this AdjustToIndirectPartnerReq.
-        :type: float
-        """
-        self._amount = amount
+        self.amount = amount
 
     @property
     def indirect_partner_id(self):
@@ -87,6 +65,28 @@ class AdjustToIndirectPartnerReq:
         :type: str
         """
         self._indirect_partner_id = indirect_partner_id
+
+    @property
+    def amount(self):
+        """Gets the amount of this AdjustToIndirectPartnerReq.
+
+        |参数名称：授信金额。单位为元不能为负数，精确到小数点后两位。| |参数的约束及描述：授信金额。单位为元不能为负数，精确到小数点后两位。|
+
+        :return: The amount of this AdjustToIndirectPartnerReq.
+        :rtype: float
+        """
+        return self._amount
+
+    @amount.setter
+    def amount(self, amount):
+        """Sets the amount of this AdjustToIndirectPartnerReq.
+
+        |参数名称：授信金额。单位为元不能为负数，精确到小数点后两位。| |参数的约束及描述：授信金额。单位为元不能为负数，精确到小数点后两位。|
+
+        :param amount: The amount of this AdjustToIndirectPartnerReq.
+        :type: float
+        """
+        self._amount = amount
 
     def to_dict(self):
         """Returns the model properties as a dict"""
