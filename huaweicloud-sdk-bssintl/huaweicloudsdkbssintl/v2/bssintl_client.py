@@ -14,7 +14,7 @@ from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
-class CSBPartnerOpenAPIClient(Client):
+class BssintlClient(Client):
     """
     :param configuration: .Configuration object for this client
     :param pool_threads: The number of threads to use for async requests
@@ -34,7 +34,7 @@ class CSBPartnerOpenAPIClient(Client):
     }
 
     def __init__(self):
-        super(CSBPartnerOpenAPIClient, self).__init__()
+        super(BssintlClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkbssintl.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 

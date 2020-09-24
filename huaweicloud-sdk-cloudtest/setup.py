@@ -3,8 +3,8 @@ from os import path
 
 from setuptools import setup, find_packages
 
-NAME = "huaweicloudsdktesthub"
-VERSION = "3.0.13-beta"
+NAME = "huaweicloudsdkcloudtest"
+VERSION = "3.0.14-beta"
 AUTHOR = "HuaweiCloud SDK"
 AUTHOR_EMAIL = "hwcloudsdk@huawei.com"
 URL = "https://github.com/huaweicloud/huaweicloud-sdk-python-v3"

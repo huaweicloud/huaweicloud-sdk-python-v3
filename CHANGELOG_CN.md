@@ -1,3 +1,21 @@
+## 3.0.14-beta 2020-09-24
+## HuaweiCloud SDK BSS
+ - ### 新增特性
+    - 无
+ - ### 解决问题
+    - 修复BssClient类无法加载的问题
+ - ### 特性变更
+    - 无
+
+## HuaweiCloud SDK TestHub
+ - ### 新增特性
+    - 无
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 原TestHub服务名变更为CloudTest，原命名无法正常上线SDK中心。 
+
+
 ## 3.0.13-beta 2020-09-16
 ## HuaweiCloud SDK ECS
  - ### 新增特性

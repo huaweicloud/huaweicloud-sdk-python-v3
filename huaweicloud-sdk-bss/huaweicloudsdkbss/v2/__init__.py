@@ -2,9 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CSBPartnerOpenAPIClient
-from huaweicloudsdkbss.v2.csbpartneropenapi_client import CSBPartnerOpenAPIClient
-from huaweicloudsdkbss.v2.csbpartneropenapi_async_client import CSBPartnerOpenAPIAsyncClient
+# import BssClient
+from huaweicloudsdkbss.v2.bss_client import BssClient
+from huaweicloudsdkbss.v2.bss_async_client import BssAsyncClient
 # import models into sdk package
 from huaweicloudsdkbss.v2.model.account_balance_v2 import AccountBalanceV2
 from huaweicloudsdkbss.v2.model.account_balance_v3 import AccountBalanceV3

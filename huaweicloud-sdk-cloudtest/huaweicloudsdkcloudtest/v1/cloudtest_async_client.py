@@ -14,7 +14,7 @@ from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
-class CloudtestClient(Client):
+class CloudtestAsyncClient(Client):
     """
     :param configuration: .Configuration object for this client
     :param pool_threads: The number of threads to use for async requests
@@ -34,15 +34,15 @@ class CloudtestClient(Client):
     }
 
     def __init__(self):
-        super(CloudtestClient, self).__init__()
-        self.model_package = importlib.import_module("huaweicloudsdktesthub.v1.model")
+        super(CloudtestAsyncClient, self).__init__()
+        self.model_package = importlib.import_module("huaweicloudsdkcloudtest.v1.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
     @staticmethod
     def new_builder(clazz):
         return ClientBuilder(clazz)
 
-    def create_plan(self, request):
+    def create_plan_async(self, request):
         """项目下创建计划
 
         项目下创建计划
@@ -104,7 +104,7 @@ class CloudtestClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def create_test_case_in_plan(self, request):
+    def create_test_case_in_plan_async(self, request):
         """计划中批量添加测试用例
 
         计划中批量添加测试用例
@@ -168,7 +168,7 @@ class CloudtestClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def create_service(self, request):
+    def create_service_async(self, request):
         """新测试类型服务注册到云测
 
         新测试类型服务注册到云测
@@ -228,7 +228,7 @@ class CloudtestClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def delete_service(self, request):
+    def delete_service_async(self, request):
         """删除已注册服务
 
         删除已注册服务
@@ -286,7 +286,7 @@ class CloudtestClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_register_service(self, request):
+    def show_register_service_async(self, request):
         """用户获取自己当前已经注册的服务
 
         用户获取自己当前已经注册的服务
@@ -342,7 +342,7 @@ class CloudtestClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def update_service(self, request):
+    def update_service_async(self, request):
         """更新已注册服务
 
         更新已注册服务
@@ -404,7 +404,7 @@ class CloudtestClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def batch_delete_test_case(self, request):
+    def batch_delete_test_case_async(self, request):
         """批量删除测试用例
 
         批量删除测试用例
@@ -466,7 +466,7 @@ class CloudtestClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def create_test_case(self, request):
+    def create_test_case_async(self, request):
         """创建测试用例
 
         创建测试用例
@@ -528,7 +528,7 @@ class CloudtestClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def run_test_case(self, request):
+    def run_test_case_async(self, request):
         """批量执行测试用例
 
         批量执行测试用例
@@ -590,7 +590,7 @@ class CloudtestClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_test_case_detail(self, request):
+    def show_test_case_detail_async(self, request):
         """获取测试用例详情
 
         获取测试用例详情
@@ -650,7 +650,7 @@ class CloudtestClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_test_case_detail_v2(self, request):
+    def show_test_case_detail_v2_async(self, request):
         """通过用例编号或用例ID获取测试用例详情
 
         通过用例编号或用例ID获取测试用例详情
@@ -712,7 +712,7 @@ class CloudtestClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def update_test_case(self, request):
+    def update_test_case_async(self, request):
         """更新测试用例接口
 
         更新测试用例接口
@@ -776,7 +776,7 @@ class CloudtestClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def update_test_case_result(self, request):
+    def update_test_case_result_async(self, request):
         """批量更新测试用例结果
 
         批量更新测试用例结果
@@ -869,4 +869,5 @@ class CloudtestClient(Client):
             post_params=post_params,
             response_type=response_type,
             collection_formats=collection_formats,
-            request_type=request_type)
+            request_type=request_type,
+	    async_request=True)

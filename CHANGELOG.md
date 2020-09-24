@@ -1,3 +1,21 @@
+## 3.0.14-beta 2020-09-24
+## HuaweiCloud SDK BSS
+ - ### Features
+    - None
+ - ### Bug Fix
+    - Fix the problem that the class `BssClient` cannot be loaded.
+ - ### Change
+    - None
+
+## HuaweiCloud SDK TestHub
+ - ### Features
+    - None
+ - ### Bug Fix
+    - None
+ - ### Change
+    - The original service name `TestHub` has been changed to `CloudTest`, because `TestHub` couldn't be published in SDK Center successfully. 
+
+
 ## 3.0.13-beta 2020-09-16
 ## HuaweiCloud SDK ECS
  - ### Features
