@@ -24,7 +24,7 @@ class BatchMetricData:
 
     openapi_types = {
         'unit': 'str',
-        'datapoints': 'list[Datapoint]',
+        'datapoints': 'list[DatapointForBatchMetric]',
         'namespace': 'str',
         'metric_name': 'str',
         'dimensions': 'list[MetricsDimension]'
@@ -85,10 +85,10 @@ class BatchMetricData:
     def datapoints(self):
         """Gets the datapoints of this BatchMetricData.
 
-          指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
+        指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
 
         :return: The datapoints of this BatchMetricData.
-        :rtype: list[Datapoint]
+        :rtype: list[DatapointForBatchMetric]
         """
         return self._datapoints
 
@@ -96,10 +96,10 @@ class BatchMetricData:
     def datapoints(self, datapoints):
         """Sets the datapoints of this BatchMetricData.
 
-          指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
+        指标数据列表。由于查询数据时，云监控会根据所选择的聚合粒度向前取整from参数，所以datapoints中包含的数据点有可能会多于预期。
 
         :param datapoints: The datapoints of this BatchMetricData.
-        :type: list[Datapoint]
+        :type: list[DatapointForBatchMetric]
         """
         self._datapoints = datapoints
 

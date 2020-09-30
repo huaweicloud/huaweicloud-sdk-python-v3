@@ -23,8 +23,6 @@ class Resource:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
-        'value': 'str',
         'type': 'str',
         'used': 'int',
         'unit': 'str',
@@ -32,79 +30,27 @@ class Resource:
     }
 
     attribute_map = {
-        'name': 'name',
-        'value': 'value',
         'type': 'type',
         'used': 'used',
         'unit': 'unit',
         'quota': 'quota'
     }
 
-    def __init__(self, name=None, value=None, type=None, used=None, unit=None, quota=None):
+    def __init__(self, type=None, used=None, unit=None, quota=None):
         """Resource - a model defined in huaweicloud sdk"""
         
         
 
-        self._name = None
-        self._value = None
         self._type = None
         self._used = None
         self._unit = None
         self._quota = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if value is not None:
-            self.value = value
         self.type = type
         self.used = used
         self.unit = unit
         self.quota = quota
-
-    @property
-    def name(self):
-        """Gets the name of this Resource.
-
-        名称
-
-        :return: The name of this Resource.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this Resource.
-
-        名称
-
-        :param name: The name of this Resource.
-        :type: str
-        """
-        self._name = name
-
-    @property
-    def value(self):
-        """Gets the value of this Resource.
-
-        值
-
-        :return: The value of this Resource.
-        :rtype: str
-        """
-        return self._value
-
-    @value.setter
-    def value(self, value):
-        """Sets the value of this Resource.
-
-        值
-
-        :param value: The value of this Resource.
-        :type: str
-        """
-        self._value = value
 
     @property
     def type(self):

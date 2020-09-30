@@ -44,7 +44,7 @@ class Quotas:
     def resources(self):
         """Gets the resources of this Quotas.
 
-        
+        资源配额列表。
 
         :return: The resources of this Quotas.
         :rtype: list[Resource]
@@ -55,7 +55,7 @@ class Quotas:
     def resources(self, resources):
         """Sets the resources of this Quotas.
 
-        
+        资源配额列表。
 
         :param resources: The resources of this Quotas.
         :type: list[Resource]

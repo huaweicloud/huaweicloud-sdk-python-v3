@@ -45,7 +45,7 @@ class ShowAlarmResponse(SdkResponse):
     def metric_alarms(self):
         """Gets the metric_alarms of this ShowAlarmResponse.
 
-        
+        告警对象列表。
 
         :return: The metric_alarms of this ShowAlarmResponse.
         :rtype: list[MetricAlarms]
@@ -56,7 +56,7 @@ class ShowAlarmResponse(SdkResponse):
     def metric_alarms(self, metric_alarms):
         """Sets the metric_alarms of this ShowAlarmResponse.
 
-        
+        告警对象列表。
 
         :param metric_alarms: The metric_alarms of this ShowAlarmResponse.
         :type: list[MetricAlarms]

@@ -45,7 +45,7 @@ class ShowEventDataResponse(SdkResponse):
     def datapoints(self):
         """Gets the datapoints of this ShowEventDataResponse.
 
-        
+        配置信息列表。如果不存在对应的配置信息，则datapoints为空数组[]。
 
         :return: The datapoints of this ShowEventDataResponse.
         :rtype: list[EventDataInfo]
@@ -56,7 +56,7 @@ class ShowEventDataResponse(SdkResponse):
     def datapoints(self, datapoints):
         """Sets the datapoints of this ShowEventDataResponse.
 
-        
+        配置信息列表。如果不存在对应的配置信息，则datapoints为空数组[]。
 
         :param datapoints: The datapoints of this ShowEventDataResponse.
         :type: list[EventDataInfo]

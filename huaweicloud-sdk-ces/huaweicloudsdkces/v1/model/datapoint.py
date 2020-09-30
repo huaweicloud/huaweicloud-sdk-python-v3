@@ -53,7 +53,7 @@ class Datapoint:
     def average(self):
         """Gets the average of this Datapoint.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同。
+        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
 
         :return: The average of this Datapoint.
         :rtype: float
@@ -64,7 +64,7 @@ class Datapoint:
     def average(self, average):
         """Sets the average of this Datapoint.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同。
+        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
 
         :param average: The average of this Datapoint.
         :type: float

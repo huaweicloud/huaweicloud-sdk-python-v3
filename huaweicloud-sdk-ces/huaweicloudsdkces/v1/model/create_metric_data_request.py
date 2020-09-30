@@ -45,6 +45,7 @@ class CreateMetricDataRequest:
     def body(self):
         """Gets the body of this CreateMetricDataRequest.
 
+        添加一条或多条自定义指标监控数据，请求参数。
 
         :return: The body of this CreateMetricDataRequest.
         :rtype: list[MetricDataItem]
@@ -55,6 +56,7 @@ class CreateMetricDataRequest:
     def body(self, body):
         """Sets the body of this CreateMetricDataRequest.
 
+        添加一条或多条自定义指标监控数据，请求参数。
 
         :param body: The body of this CreateMetricDataRequest.
         :type: list[MetricDataItem]

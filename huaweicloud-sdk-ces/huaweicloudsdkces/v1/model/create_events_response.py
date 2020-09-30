@@ -45,6 +45,7 @@ class CreateEventsResponse(SdkResponse):
     def body(self):
         """Gets the body of this CreateEventsResponse.
 
+        响应参数。
 
         :return: The body of this CreateEventsResponse.
         :rtype: list[CreateEventsResponseBody]
@@ -55,6 +56,7 @@ class CreateEventsResponse(SdkResponse):
     def body(self, body):
         """Sets the body of this CreateEventsResponse.
 
+        响应参数。
 
         :param body: The body of this CreateEventsResponse.
         :type: list[CreateEventsResponseBody]

@@ -33,9 +33,13 @@ class MetricAlarms:
         'alarm_action_enabled': 'bool',
         'alarm_actions': 'list[AlarmActions]',
         'ok_actions': 'list[AlarmActions]',
+        'insufficientdata_actions': 'list[AlarmActions]',
+        'alarm_action_begin_time': 'str',
+        'alarm_action_end_time': 'str',
         'alarm_id': 'str',
         'update_time': 'int',
-        'alarm_state': 'str'
+        'alarm_state': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -49,12 +53,16 @@ class MetricAlarms:
         'alarm_action_enabled': 'alarm_action_enabled',
         'alarm_actions': 'alarm_actions',
         'ok_actions': 'ok_actions',
+        'insufficientdata_actions': 'insufficientdata_actions',
+        'alarm_action_begin_time': 'alarm_action_begin_time',
+        'alarm_action_end_time': 'alarm_action_end_time',
         'alarm_id': 'alarm_id',
         'update_time': 'update_time',
-        'alarm_state': 'alarm_state'
+        'alarm_state': 'alarm_state',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, alarm_name=None, alarm_description=None, metric=None, condition=None, alarm_enabled=None, alarm_level=None, alarm_type=None, alarm_action_enabled=None, alarm_actions=None, ok_actions=None, alarm_id=None, update_time=None, alarm_state=None):
+    def __init__(self, alarm_name=None, alarm_description=None, metric=None, condition=None, alarm_enabled=None, alarm_level=None, alarm_type=None, alarm_action_enabled=None, alarm_actions=None, ok_actions=None, insufficientdata_actions=None, alarm_action_begin_time=None, alarm_action_end_time=None, alarm_id=None, update_time=None, alarm_state=None, enterprise_project_id=None):
         """MetricAlarms - a model defined in huaweicloud sdk"""
         
         
@@ -69,9 +77,13 @@ class MetricAlarms:
         self._alarm_action_enabled = None
         self._alarm_actions = None
         self._ok_actions = None
+        self._insufficientdata_actions = None
+        self._alarm_action_begin_time = None
+        self._alarm_action_end_time = None
         self._alarm_id = None
         self._update_time = None
         self._alarm_state = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.alarm_name = alarm_name
@@ -91,9 +103,17 @@ class MetricAlarms:
             self.alarm_actions = alarm_actions
         if ok_actions is not None:
             self.ok_actions = ok_actions
+        if insufficientdata_actions is not None:
+            self.insufficientdata_actions = insufficientdata_actions
+        if alarm_action_begin_time is not None:
+            self.alarm_action_begin_time = alarm_action_begin_time
+        if alarm_action_end_time is not None:
+            self.alarm_action_end_time = alarm_action_end_time
         self.alarm_id = alarm_id
         self.update_time = update_time
         self.alarm_state = alarm_state
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def alarm_name(self):
@@ -312,6 +332,72 @@ class MetricAlarms:
         self._ok_actions = ok_actions
 
     @property
+    def insufficientdata_actions(self):
+        """Gets the insufficientdata_actions of this MetricAlarms.
+
+        数据不足触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： 数据不足触发告警通知类型，取值为notification。 notificationList：数据不足触发告警通知时，被通知对象的ID列表。
+
+        :return: The insufficientdata_actions of this MetricAlarms.
+        :rtype: list[AlarmActions]
+        """
+        return self._insufficientdata_actions
+
+    @insufficientdata_actions.setter
+    def insufficientdata_actions(self, insufficientdata_actions):
+        """Sets the insufficientdata_actions of this MetricAlarms.
+
+        数据不足触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： 数据不足触发告警通知类型，取值为notification。 notificationList：数据不足触发告警通知时，被通知对象的ID列表。
+
+        :param insufficientdata_actions: The insufficientdata_actions of this MetricAlarms.
+        :type: list[AlarmActions]
+        """
+        self._insufficientdata_actions = insufficientdata_actions
+
+    @property
+    def alarm_action_begin_time(self):
+        """Gets the alarm_action_begin_time of this MetricAlarms.
+
+        告警规则生效的开始时间，告警规则仅在生效时间内发送通知消息。例如alarm_action_begin_time为8:00，alarm_action_end_time为20:00时，则对应的告警规则仅在08:00-20:00发送通知消息。
+
+        :return: The alarm_action_begin_time of this MetricAlarms.
+        :rtype: str
+        """
+        return self._alarm_action_begin_time
+
+    @alarm_action_begin_time.setter
+    def alarm_action_begin_time(self, alarm_action_begin_time):
+        """Sets the alarm_action_begin_time of this MetricAlarms.
+
+        告警规则生效的开始时间，告警规则仅在生效时间内发送通知消息。例如alarm_action_begin_time为8:00，alarm_action_end_time为20:00时，则对应的告警规则仅在08:00-20:00发送通知消息。
+
+        :param alarm_action_begin_time: The alarm_action_begin_time of this MetricAlarms.
+        :type: str
+        """
+        self._alarm_action_begin_time = alarm_action_begin_time
+
+    @property
+    def alarm_action_end_time(self):
+        """Gets the alarm_action_end_time of this MetricAlarms.
+
+        告警规则生效的结束时间，告警规则仅在生效时间内发送通知消息。例如alarm_action_begin_time为8:00，alarm_action_end_time为20:00时，则对应的告警规则仅在08:00-20:00发送通知消息。
+
+        :return: The alarm_action_end_time of this MetricAlarms.
+        :rtype: str
+        """
+        return self._alarm_action_end_time
+
+    @alarm_action_end_time.setter
+    def alarm_action_end_time(self, alarm_action_end_time):
+        """Sets the alarm_action_end_time of this MetricAlarms.
+
+        告警规则生效的结束时间，告警规则仅在生效时间内发送通知消息。例如alarm_action_begin_time为8:00，alarm_action_end_time为20:00时，则对应的告警规则仅在08:00-20:00发送通知消息。
+
+        :param alarm_action_end_time: The alarm_action_end_time of this MetricAlarms.
+        :type: str
+        """
+        self._alarm_action_end_time = alarm_action_end_time
+
+    @property
     def alarm_id(self):
         """Gets the alarm_id of this MetricAlarms.
 
@@ -376,6 +462,28 @@ class MetricAlarms:
         :type: str
         """
         self._alarm_state = alarm_state
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this MetricAlarms.
+
+        企业项目ID。 取值为all_granted_eps时，表示所有企业项目; 取值为0时，表示默认的企业项目default。
+
+        :return: The enterprise_project_id of this MetricAlarms.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this MetricAlarms.
+
+        企业项目ID。 取值为all_granted_eps时，表示所有企业项目; 取值为0时，表示默认的企业项目default。
+
+        :param enterprise_project_id: The enterprise_project_id of this MetricAlarms.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

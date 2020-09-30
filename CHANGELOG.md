@@ -1,3 +1,21 @@
+## 3.0.15-beta 2020-09-30
+## HuaweiCloud SDK ELB
+ - ### Features
+    - Support Elastic Load Balance service.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK EIP
+ - ### Features
+    - Support Elastic IP service.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+
 ## 3.0.14-beta 2020-09-24
 ## HuaweiCloud SDK BSS
  - ### Features

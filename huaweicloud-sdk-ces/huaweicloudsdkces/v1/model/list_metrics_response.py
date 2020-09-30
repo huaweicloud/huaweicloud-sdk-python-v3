@@ -23,7 +23,7 @@ class ListMetricsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'metrics': 'list[MetricInfo]',
+        'metrics': 'list[MetricInfoList]',
         'meta_data': 'MetaData'
     }
 
@@ -53,7 +53,7 @@ class ListMetricsResponse(SdkResponse):
         指标信息列表
 
         :return: The metrics of this ListMetricsResponse.
-        :rtype: list[MetricInfo]
+        :rtype: list[MetricInfoList]
         """
         return self._metrics
 
@@ -64,7 +64,7 @@ class ListMetricsResponse(SdkResponse):
         指标信息列表
 
         :param metrics: The metrics of this ListMetricsResponse.
-        :type: list[MetricInfo]
+        :type: list[MetricInfoList]
         """
         self._metrics = metrics
 

@@ -25,18 +25,16 @@ class MetricInfo:
     openapi_types = {
         'dimensions': 'list[MetricsDimension]',
         'metric_name': 'str',
-        'namespace': 'str',
-        'unit': 'str'
+        'namespace': 'str'
     }
 
     attribute_map = {
         'dimensions': 'dimensions',
         'metric_name': 'metric_name',
-        'namespace': 'namespace',
-        'unit': 'unit'
+        'namespace': 'namespace'
     }
 
-    def __init__(self, dimensions=None, metric_name=None, namespace=None, unit=None):
+    def __init__(self, dimensions=None, metric_name=None, namespace=None):
         """MetricInfo - a model defined in huaweicloud sdk"""
         
         
@@ -44,14 +42,11 @@ class MetricInfo:
         self._dimensions = None
         self._metric_name = None
         self._namespace = None
-        self._unit = None
         self.discriminator = None
 
         self.dimensions = dimensions
         self.metric_name = metric_name
         self.namespace = namespace
-        if unit is not None:
-            self.unit = unit
 
     @property
     def dimensions(self):
@@ -118,28 +113,6 @@ class MetricInfo:
         :type: str
         """
         self._namespace = namespace
-
-    @property
-    def unit(self):
-        """Gets the unit of this MetricInfo.
-
-        指标单位
-
-        :return: The unit of this MetricInfo.
-        :rtype: str
-        """
-        return self._unit
-
-    @unit.setter
-    def unit(self, unit):
-        """Sets the unit of this MetricInfo.
-
-        指标单位
-
-        :param unit: The unit of this MetricInfo.
-        :type: str
-        """
-        self._unit = unit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -45,7 +45,7 @@ class BatchListMetricDataResponse(SdkResponse):
     def metrics(self):
         """Gets the metrics of this BatchListMetricDataResponse.
 
-        
+        监控指标。
 
         :return: The metrics of this BatchListMetricDataResponse.
         :rtype: list[BatchMetricData]
@@ -56,7 +56,7 @@ class BatchListMetricDataResponse(SdkResponse):
     def metrics(self, metrics):
         """Sets the metrics of this BatchListMetricDataResponse.
 
-        
+        监控指标。
 
         :param metrics: The metrics of this BatchListMetricDataResponse.
         :type: list[BatchMetricData]

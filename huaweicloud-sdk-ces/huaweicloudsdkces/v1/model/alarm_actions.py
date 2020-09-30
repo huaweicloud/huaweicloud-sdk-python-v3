@@ -48,6 +48,7 @@ class AlarmActions:
     def type(self):
         """Gets the type of this AlarmActions.
 
+        告警通知类型，取值如下： notification：通知； autoscaling：弹性伸缩。
 
         :return: The type of this AlarmActions.
         :rtype: str
@@ -58,6 +59,7 @@ class AlarmActions:
     def type(self, type):
         """Sets the type of this AlarmActions.
 
+        告警通知类型，取值如下： notification：通知； autoscaling：弹性伸缩。
 
         :param type: The type of this AlarmActions.
         :type: str
@@ -68,7 +70,7 @@ class AlarmActions:
     def notification_list(self):
         """Gets the notification_list of this AlarmActions.
 
-        
+        告警状态发生变化时，被通知对象的列表。通知对象ID最多可以配置5个。topicUrn可从SMN获取，具体操作请参考查询Topic列表。当type为notification时，notificationList列表不能为空；当type为autoscaling时，列表必须为[]。 说明：若alarm_action_enabled为true，对应的alarm_actions、insufficientdata_actions（该参数已废弃，建议无需配置）、ok_actions至少有一个不能为空。若alarm_actions、insufficientdata_actions（该参数已废弃，建议无需配置）、ok_actions同时存在时，notificationList值保持一致。
 
         :return: The notification_list of this AlarmActions.
         :rtype: list[str]
@@ -79,7 +81,7 @@ class AlarmActions:
     def notification_list(self, notification_list):
         """Sets the notification_list of this AlarmActions.
 
-        
+        告警状态发生变化时，被通知对象的列表。通知对象ID最多可以配置5个。topicUrn可从SMN获取，具体操作请参考查询Topic列表。当type为notification时，notificationList列表不能为空；当type为autoscaling时，列表必须为[]。 说明：若alarm_action_enabled为true，对应的alarm_actions、insufficientdata_actions（该参数已废弃，建议无需配置）、ok_actions至少有一个不能为空。若alarm_actions、insufficientdata_actions（该参数已废弃，建议无需配置）、ok_actions同时存在时，notificationList值保持一致。
 
         :param notification_list: The notification_list of this AlarmActions.
         :type: list[str]

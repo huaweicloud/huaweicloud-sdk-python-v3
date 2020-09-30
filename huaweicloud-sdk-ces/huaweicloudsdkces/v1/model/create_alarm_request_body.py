@@ -33,7 +33,8 @@ class CreateAlarmRequestBody:
         'alarm_type': 'str',
         'alarm_actions': 'list[AlarmActions]',
         'insufficientdata_actions': 'list[AlarmActions]',
-        'ok_actions': 'list[AlarmActions]'
+        'ok_actions': 'list[AlarmActions]',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class CreateAlarmRequestBody:
         'alarm_type': 'alarm_type',
         'alarm_actions': 'alarm_actions',
         'insufficientdata_actions': 'insufficientdata_actions',
-        'ok_actions': 'ok_actions'
+        'ok_actions': 'ok_actions',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, alarm_name=None, alarm_description=None, metric=None, condition=None, alarm_enabled=True, alarm_action_enabled=True, alarm_level=None, alarm_type=None, alarm_actions=None, insufficientdata_actions=None, ok_actions=None):
+    def __init__(self, alarm_name=None, alarm_description=None, metric=None, condition=None, alarm_enabled=True, alarm_action_enabled=True, alarm_level=None, alarm_type=None, alarm_actions=None, insufficientdata_actions=None, ok_actions=None, enterprise_project_id=None):
         """CreateAlarmRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -66,6 +68,7 @@ class CreateAlarmRequestBody:
         self._alarm_actions = None
         self._insufficientdata_actions = None
         self._ok_actions = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.alarm_name = alarm_name
@@ -87,6 +90,8 @@ class CreateAlarmRequestBody:
             self.insufficientdata_actions = insufficientdata_actions
         if ok_actions is not None:
             self.ok_actions = ok_actions
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def alarm_name(self):
@@ -114,7 +119,7 @@ class CreateAlarmRequestBody:
     def alarm_description(self):
         """Gets the alarm_description of this CreateAlarmRequestBody.
 
-        
+        告警描述，长度0-256。
 
         :return: The alarm_description of this CreateAlarmRequestBody.
         :rtype: str
@@ -125,7 +130,7 @@ class CreateAlarmRequestBody:
     def alarm_description(self, alarm_description):
         """Sets the alarm_description of this CreateAlarmRequestBody.
 
-        
+        告警描述，长度0-256。
 
         :param alarm_description: The alarm_description of this CreateAlarmRequestBody.
         :type: str
@@ -325,6 +330,28 @@ class CreateAlarmRequestBody:
         :type: list[AlarmActions]
         """
         self._ok_actions = ok_actions
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CreateAlarmRequestBody.
+
+        企业项目ID。默认值为0，表示默认的企业项目default。说明：此参数在“华东-上海一”区域上线。
+
+        :return: The enterprise_project_id of this CreateAlarmRequestBody.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CreateAlarmRequestBody.
+
+        企业项目ID。默认值为0，表示默认的企业项目default。说明：此参数在“华东-上海一”区域上线。
+
+        :param enterprise_project_id: The enterprise_project_id of this CreateAlarmRequestBody.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

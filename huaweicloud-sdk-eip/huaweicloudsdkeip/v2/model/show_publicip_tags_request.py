@@ -9,7 +9,7 @@ import six
 
 
 
-class ResourcesItems:
+class ShowPublicipTagsRequest:
 
 
     """
@@ -23,16 +23,42 @@ class ResourcesItems:
     sensitive_list = []
 
     openapi_types = {
+        'publicip_id': 'str'
     }
 
     attribute_map = {
+        'publicip_id': 'publicip_id'
     }
 
-    def __init__(self):
-        """ResourcesItems - a model defined in huaweicloud sdk"""
+    def __init__(self, publicip_id=None):
+        """ShowPublicipTagsRequest - a model defined in huaweicloud sdk"""
         
         
+
+        self._publicip_id = None
         self.discriminator = None
+
+        self.publicip_id = publicip_id
+
+    @property
+    def publicip_id(self):
+        """Gets the publicip_id of this ShowPublicipTagsRequest.
+
+
+        :return: The publicip_id of this ShowPublicipTagsRequest.
+        :rtype: str
+        """
+        return self._publicip_id
+
+    @publicip_id.setter
+    def publicip_id(self, publicip_id):
+        """Sets the publicip_id of this ShowPublicipTagsRequest.
+
+
+        :param publicip_id: The publicip_id of this ShowPublicipTagsRequest.
+        :type: str
+        """
+        self._publicip_id = publicip_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -71,7 +97,7 @@ class ResourcesItems:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ResourcesItems):
+        if not isinstance(other, ShowPublicipTagsRequest):
             return False
 
         return self.__dict__ == other.__dict__

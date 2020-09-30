@@ -18,6 +18,7 @@ from huaweicloudsdkces.v1.model.create_events_response_body import CreateEventsR
 from huaweicloudsdkces.v1.model.create_metric_data_request import CreateMetricDataRequest
 from huaweicloudsdkces.v1.model.create_metric_data_response import CreateMetricDataResponse
 from huaweicloudsdkces.v1.model.datapoint import Datapoint
+from huaweicloudsdkces.v1.model.datapoint_for_batch_metric import DatapointForBatchMetric
 from huaweicloudsdkces.v1.model.delete_alarm_request import DeleteAlarmRequest
 from huaweicloudsdkces.v1.model.delete_alarm_response import DeleteAlarmResponse
 from huaweicloudsdkces.v1.model.event_data_info import EventDataInfo
@@ -32,11 +33,11 @@ from huaweicloudsdkces.v1.model.metric_alarms import MetricAlarms
 from huaweicloudsdkces.v1.model.metric_data_item import MetricDataItem
 from huaweicloudsdkces.v1.model.metric_info import MetricInfo
 from huaweicloudsdkces.v1.model.metric_info_ext import MetricInfoExt
+from huaweicloudsdkces.v1.model.metric_info_list import MetricInfoList
 from huaweicloudsdkces.v1.model.metrics_dimension import MetricsDimension
 from huaweicloudsdkces.v1.model.modify_alarm_action_req import ModifyAlarmActionReq
 from huaweicloudsdkces.v1.model.quotas import Quotas
 from huaweicloudsdkces.v1.model.resource import Resource
-from huaweicloudsdkces.v1.model.resources_items import ResourcesItems
 from huaweicloudsdkces.v1.model.show_alarm_request import ShowAlarmRequest
 from huaweicloudsdkces.v1.model.show_alarm_response import ShowAlarmResponse
 from huaweicloudsdkces.v1.model.show_event_data_request import ShowEventDataRequest
