@@ -1,3 +1,21 @@
+## 3.0.16-beta 2020-10-12
+## HuaweiCloud SDK CTS
+ - ### Features
+    - None
+ - ### Bug Fix
+    - None
+ - ### Change
+    - Delete deprecated interfaces of version v1.
+
+## HuaweiCloud SDK DevStar
+ - ### Features
+    - None
+ - ### Bug Fix
+    - Modify the credential type of DevStarClient: the correct credential type is GlobalCredentials.
+ - ### Change
+    - None
+
+
 ## 3.0.15-beta 2020-09-30
 ## HuaweiCloud SDK ELB
  - ### Features

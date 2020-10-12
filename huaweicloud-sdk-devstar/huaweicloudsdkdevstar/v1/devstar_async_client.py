@@ -40,7 +40,7 @@ class DevstarAsyncClient(Client):
 
     @staticmethod
     def new_builder(clazz):
-        return ClientBuilder(clazz)
+        return ClientBuilder(clazz, "GlobalCredentials")
 
     def download_application_code_async(self, request):
         """下载模板产物

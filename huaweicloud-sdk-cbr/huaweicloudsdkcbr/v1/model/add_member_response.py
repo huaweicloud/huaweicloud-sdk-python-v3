@@ -23,23 +23,28 @@ class AddMemberResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'members': 'list[Member]'
+        'members': 'list[Member]',
+        'count': 'int'
     }
 
     attribute_map = {
-        'members': 'members'
+        'members': 'members',
+        'count': 'count'
     }
 
-    def __init__(self, members=None):
+    def __init__(self, members=None, count=None):
         """AddMemberResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
         self._members = None
+        self._count = None
         self.discriminator = None
 
         if members is not None:
             self.members = members
+        if count is not None:
+            self.count = count
 
     @property
     def members(self):
@@ -62,6 +67,28 @@ class AddMemberResponse(SdkResponse):
         :type: list[Member]
         """
         self._members = members
+
+    @property
+    def count(self):
+        """Gets the count of this AddMemberResponse.
+
+        
+
+        :return: The count of this AddMemberResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this AddMemberResponse.
+
+        
+
+        :param count: The count of this AddMemberResponse.
+        :type: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

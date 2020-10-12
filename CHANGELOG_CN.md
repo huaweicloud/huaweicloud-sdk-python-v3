@@ -1,3 +1,21 @@
+## 3.0.16-beta 2020-10-12
+## HuaweiCloud SDK CTS
+ - ### 新增特性
+    - 无
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 删除v1版本废弃接口
+
+## HuaweiCloud SDK DevStar
+ - ### 新增特性
+    - 无
+ - ### 解决问题
+    - 服务客户端认证类型调整为全局认证，即GlobalCredentials
+ - ### 特性变更
+    - 无
+
+
 ## 3.0.15-beta 2020-09-30
 ## Huaweicloud SDK ELB
  - ### 新增特性

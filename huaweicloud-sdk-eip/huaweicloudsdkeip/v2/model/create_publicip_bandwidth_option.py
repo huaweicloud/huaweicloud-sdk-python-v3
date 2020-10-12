@@ -130,7 +130,7 @@ class CreatePublicipBandwidthOption:
     def share_type(self):
         """Gets the share_type of this CreatePublicipBandwidthOption.
 
-        功能说明：带宽类型 取值范围：PER，WHOLE。 约束：其中IPv6暂不支持WHOLE类型带宽，该字段为WHOLE时，必须指定带宽ID。
+        功能说明：带宽类型 取值范围：PER，WHOLE。 约束：该字段为WHOLE时，必须指定带宽ID。
 
         :return: The share_type of this CreatePublicipBandwidthOption.
         :rtype: str
@@ -141,7 +141,7 @@ class CreatePublicipBandwidthOption:
     def share_type(self, share_type):
         """Sets the share_type of this CreatePublicipBandwidthOption.
 
-        功能说明：带宽类型 取值范围：PER，WHOLE。 约束：其中IPv6暂不支持WHOLE类型带宽，该字段为WHOLE时，必须指定带宽ID。
+        功能说明：带宽类型 取值范围：PER，WHOLE。 约束：该字段为WHOLE时，必须指定带宽ID。
 
         :param share_type: The share_type of this CreatePublicipBandwidthOption.
         :type: str

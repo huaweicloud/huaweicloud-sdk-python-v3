@@ -23,23 +23,28 @@ class ListPoliciesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'policies': 'list[Policy]'
+        'policies': 'list[Policy]',
+        'count': 'int'
     }
 
     attribute_map = {
-        'policies': 'policies'
+        'policies': 'policies',
+        'count': 'count'
     }
 
-    def __init__(self, policies=None):
+    def __init__(self, policies=None, count=None):
         """ListPoliciesResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
         self._policies = None
+        self._count = None
         self.discriminator = None
 
         if policies is not None:
             self.policies = policies
+        if count is not None:
+            self.count = count
 
     @property
     def policies(self):
@@ -62,6 +67,28 @@ class ListPoliciesResponse(SdkResponse):
         :type: list[Policy]
         """
         self._policies = policies
+
+    @property
+    def count(self):
+        """Gets the count of this ListPoliciesResponse.
+
+        
+
+        :return: The count of this ListPoliciesResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListPoliciesResponse.
+
+        
+
+        :param count: The count of this ListPoliciesResponse.
+        :type: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""
