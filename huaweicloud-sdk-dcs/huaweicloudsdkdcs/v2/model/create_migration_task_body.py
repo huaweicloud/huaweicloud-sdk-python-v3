@@ -184,7 +184,7 @@ class CreateMigrationTaskBody:
     def network_type(self):
         """Gets the network_type of this CreateMigrationTaskBody.
 
-        迁移任务类型为在线迁移时，表示源Redis和目标Redis联通的网络类型，包括vpc和vpn两种类型。 取值范围： - vpc - vpn 
+        迁移任务类型为在线迁移时，表示源Redis和目标Redis联通的网络类型，包括vpc和vpn两种类型。 
 
         :return: The network_type of this CreateMigrationTaskBody.
         :rtype: str
@@ -195,7 +195,7 @@ class CreateMigrationTaskBody:
     def network_type(self, network_type):
         """Sets the network_type of this CreateMigrationTaskBody.
 
-        迁移任务类型为在线迁移时，表示源Redis和目标Redis联通的网络类型，包括vpc和vpn两种类型。 取值范围： - vpc - vpn 
+        迁移任务类型为在线迁移时，表示源Redis和目标Redis联通的网络类型，包括vpc和vpn两种类型。 
 
         :param network_type: The network_type of this CreateMigrationTaskBody.
         :type: str

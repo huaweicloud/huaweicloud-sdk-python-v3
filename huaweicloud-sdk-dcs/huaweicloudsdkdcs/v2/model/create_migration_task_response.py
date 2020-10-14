@@ -99,7 +99,7 @@ class CreateMigrationTaskResponse(SdkResponse):
     def status(self):
         """Gets the status of this CreateMigrationTaskResponse.
 
-        迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING
+        迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED
 
         :return: The status of this CreateMigrationTaskResponse.
         :rtype: str
@@ -110,7 +110,7 @@ class CreateMigrationTaskResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this CreateMigrationTaskResponse.
 
-        迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING
+        迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED
 
         :param status: The status of this CreateMigrationTaskResponse.
         :type: str

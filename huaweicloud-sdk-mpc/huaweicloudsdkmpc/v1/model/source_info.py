@@ -24,6 +24,7 @@ class SourceInfo:
 
     openapi_types = {
         'duration': 'int',
+        'duration_ms': 'int',
         'format': 'str',
         'size': 'int',
         'video_info': 'VideoInfo',
@@ -32,18 +33,20 @@ class SourceInfo:
 
     attribute_map = {
         'duration': 'duration',
+        'duration_ms': 'duration_ms',
         'format': 'format',
         'size': 'size',
         'video_info': 'video_info',
         'audio_info': 'audio_info'
     }
 
-    def __init__(self, duration=None, format=None, size=None, video_info=None, audio_info=None):
+    def __init__(self, duration=None, duration_ms=None, format=None, size=None, video_info=None, audio_info=None):
         """SourceInfo - a model defined in huaweicloud sdk"""
         
         
 
         self._duration = None
+        self._duration_ms = None
         self._format = None
         self._size = None
         self._video_info = None
@@ -52,6 +55,8 @@ class SourceInfo:
 
         if duration is not None:
             self.duration = duration
+        if duration_ms is not None:
+            self.duration_ms = duration_ms
         if format is not None:
             self.format = format
         if size is not None:
@@ -65,7 +70,7 @@ class SourceInfo:
     def duration(self):
         """Gets the duration of this SourceInfo.
 
-        片源时长
+        片源时长，单位：秒
 
         :return: The duration of this SourceInfo.
         :rtype: int
@@ -76,12 +81,34 @@ class SourceInfo:
     def duration(self, duration):
         """Sets the duration of this SourceInfo.
 
-        片源时长
+        片源时长，单位：秒
 
         :param duration: The duration of this SourceInfo.
         :type: int
         """
         self._duration = duration
+
+    @property
+    def duration_ms(self):
+        """Gets the duration_ms of this SourceInfo.
+
+        片源时长，单位：毫秒
+
+        :return: The duration_ms of this SourceInfo.
+        :rtype: int
+        """
+        return self._duration_ms
+
+    @duration_ms.setter
+    def duration_ms(self, duration_ms):
+        """Sets the duration_ms of this SourceInfo.
+
+        片源时长，单位：毫秒
+
+        :param duration_ms: The duration_ms of this SourceInfo.
+        :type: int
+        """
+        self._duration_ms = duration_ms
 
     @property
     def format(self):

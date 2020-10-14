@@ -25,22 +25,25 @@ class CommonCreateTaskReq:
     openapi_types = {
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
+        'user_data': 'str',
         'sync': 'int'
     }
 
     attribute_map = {
         'input': 'input',
         'output': 'output',
+        'user_data': 'user_data',
         'sync': 'sync'
     }
 
-    def __init__(self, input=None, output=None, sync=None):
+    def __init__(self, input=None, output=None, user_data=None, sync=0):
         """CommonCreateTaskReq - a model defined in huaweicloud sdk"""
         
         
 
         self._input = None
         self._output = None
+        self._user_data = None
         self._sync = None
         self.discriminator = None
 
@@ -48,6 +51,8 @@ class CommonCreateTaskReq:
             self.input = input
         if output is not None:
             self.output = output
+        if user_data is not None:
+            self.user_data = user_data
         if sync is not None:
             self.sync = sync
 
@@ -90,6 +95,28 @@ class CommonCreateTaskReq:
         :type: ObsObjInfo
         """
         self._output = output
+
+    @property
+    def user_data(self):
+        """Gets the user_data of this CommonCreateTaskReq.
+
+        用户自定义数据。 
+
+        :return: The user_data of this CommonCreateTaskReq.
+        :rtype: str
+        """
+        return self._user_data
+
+    @user_data.setter
+    def user_data(self, user_data):
+        """Sets the user_data of this CommonCreateTaskReq.
+
+        用户自定义数据。 
+
+        :param user_data: The user_data of this CommonCreateTaskReq.
+        :type: str
+        """
+        self._user_data = user_data
 
     @property
     def sync(self):

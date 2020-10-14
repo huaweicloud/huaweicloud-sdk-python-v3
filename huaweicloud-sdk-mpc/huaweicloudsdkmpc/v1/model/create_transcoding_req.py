@@ -27,11 +27,11 @@ class CreateTranscodingReq:
         'output': 'ObsObjInfo',
         'trans_template_id': 'list[int]',
         'output_filenames': 'list[str]',
+        'user_data': 'str',
         'watermarks': 'list[WatermarkRequest]',
         'thumbnail': 'Thumbnail',
         'digital_watermark': 'DigitalWatermark',
         'project_id': 'str',
-        'canonical_grant_id': 'str',
         'vip_user': 'bool',
         'task_id': 'str',
         'domain_name': 'str',
@@ -48,7 +48,8 @@ class CreateTranscodingReq:
         'audio_process': 'AudioProcess',
         'quality_enhance': 'QualityEnhance',
         'system_process': 'SystemProcess',
-        'av_parameters': 'list[AvParameters]'
+        'av_parameters': 'list[AvParameters]',
+        'template_extend': 'TemplateExtend'
     }
 
     attribute_map = {
@@ -56,11 +57,11 @@ class CreateTranscodingReq:
         'output': 'output',
         'trans_template_id': 'trans_template_id',
         'output_filenames': 'output_filenames',
+        'user_data': 'user_data',
         'watermarks': 'watermarks',
         'thumbnail': 'thumbnail',
         'digital_watermark': 'digital_watermark',
         'project_id': 'project_id',
-        'canonical_grant_id': 'canonicalGrant_id',
         'vip_user': 'vip_user',
         'task_id': 'task_id',
         'domain_name': 'domain_name',
@@ -77,10 +78,11 @@ class CreateTranscodingReq:
         'audio_process': 'audio_process',
         'quality_enhance': 'quality_enhance',
         'system_process': 'system_process',
-        'av_parameters': 'av_parameters'
+        'av_parameters': 'av_parameters',
+        'template_extend': 'template_extend'
     }
 
-    def __init__(self, input=None, output=None, trans_template_id=None, output_filenames=None, watermarks=None, thumbnail=None, digital_watermark=None, project_id=None, canonical_grant_id=None, vip_user=None, task_id=None, domain_name=None, tenant_project_id=None, priority=6, audit=None, subtitle=None, special_effect=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None, quality_enhance=None, system_process=None, av_parameters=None):
+    def __init__(self, input=None, output=None, trans_template_id=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, digital_watermark=None, project_id=None, vip_user=None, task_id=None, domain_name=None, tenant_project_id=None, priority=6, audit=None, subtitle=None, special_effect=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None, quality_enhance=None, system_process=None, av_parameters=None, template_extend=None):
         """CreateTranscodingReq - a model defined in huaweicloud sdk"""
         
         
@@ -89,11 +91,11 @@ class CreateTranscodingReq:
         self._output = None
         self._trans_template_id = None
         self._output_filenames = None
+        self._user_data = None
         self._watermarks = None
         self._thumbnail = None
         self._digital_watermark = None
         self._project_id = None
-        self._canonical_grant_id = None
         self._vip_user = None
         self._task_id = None
         self._domain_name = None
@@ -111,6 +113,7 @@ class CreateTranscodingReq:
         self._quality_enhance = None
         self._system_process = None
         self._av_parameters = None
+        self._template_extend = None
         self.discriminator = None
 
         if input is not None:
@@ -121,6 +124,8 @@ class CreateTranscodingReq:
             self.trans_template_id = trans_template_id
         if output_filenames is not None:
             self.output_filenames = output_filenames
+        if user_data is not None:
+            self.user_data = user_data
         if watermarks is not None:
             self.watermarks = watermarks
         if thumbnail is not None:
@@ -129,8 +134,6 @@ class CreateTranscodingReq:
             self.digital_watermark = digital_watermark
         if project_id is not None:
             self.project_id = project_id
-        if canonical_grant_id is not None:
-            self.canonical_grant_id = canonical_grant_id
         if vip_user is not None:
             self.vip_user = vip_user
         if task_id is not None:
@@ -165,6 +168,8 @@ class CreateTranscodingReq:
             self.system_process = system_process
         if av_parameters is not None:
             self.av_parameters = av_parameters
+        if template_extend is not None:
+            self.template_extend = template_extend
 
     @property
     def input(self):
@@ -251,6 +256,28 @@ class CreateTranscodingReq:
         self._output_filenames = output_filenames
 
     @property
+    def user_data(self):
+        """Gets the user_data of this CreateTranscodingReq.
+
+        用户自定义数据。 
+
+        :return: The user_data of this CreateTranscodingReq.
+        :rtype: str
+        """
+        return self._user_data
+
+    @user_data.setter
+    def user_data(self, user_data):
+        """Sets the user_data of this CreateTranscodingReq.
+
+        用户自定义数据。 
+
+        :param user_data: The user_data of this CreateTranscodingReq.
+        :type: str
+        """
+        self._user_data = user_data
+
+    @property
     def watermarks(self):
         """Gets the watermarks of this CreateTranscodingReq.
 
@@ -333,28 +360,6 @@ class CreateTranscodingReq:
         :type: str
         """
         self._project_id = project_id
-
-    @property
-    def canonical_grant_id(self):
-        """Gets the canonical_grant_id of this CreateTranscodingReq.
-
-        项目ID
-
-        :return: The canonical_grant_id of this CreateTranscodingReq.
-        :rtype: str
-        """
-        return self._canonical_grant_id
-
-    @canonical_grant_id.setter
-    def canonical_grant_id(self, canonical_grant_id):
-        """Sets the canonical_grant_id of this CreateTranscodingReq.
-
-        项目ID
-
-        :param canonical_grant_id: The canonical_grant_id of this CreateTranscodingReq.
-        :type: str
-        """
-        self._canonical_grant_id = canonical_grant_id
 
     @property
     def vip_user(self):
@@ -707,6 +712,26 @@ class CreateTranscodingReq:
         :type: list[AvParameters]
         """
         self._av_parameters = av_parameters
+
+    @property
+    def template_extend(self):
+        """Gets the template_extend of this CreateTranscodingReq.
+
+
+        :return: The template_extend of this CreateTranscodingReq.
+        :rtype: TemplateExtend
+        """
+        return self._template_extend
+
+    @template_extend.setter
+    def template_extend(self, template_extend):
+        """Sets the template_extend of this CreateTranscodingReq.
+
+
+        :param template_extend: The template_extend of this CreateTranscodingReq.
+        :type: TemplateExtend
+        """
+        self._template_extend = template_extend
 
     def to_dict(self):
         """Returns the model properties as a dict"""

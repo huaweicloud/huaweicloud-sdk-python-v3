@@ -41,10 +41,8 @@ class Whitelist:
         self._ip_list = None
         self.discriminator = None
 
-        if group_name is not None:
-            self.group_name = group_name
-        if ip_list is not None:
-            self.ip_list = ip_list
+        self.group_name = group_name
+        self.ip_list = ip_list
 
     @property
     def group_name(self):

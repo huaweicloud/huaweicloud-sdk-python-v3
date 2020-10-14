@@ -109,7 +109,7 @@ class CreatePrePaidPublicipExtendParamOption:
     def period_num(self):
         """Gets the period_num of this CreatePrePaidPublicipExtendParamOption.
 
-        功能说明：订购周期数  取值范围：(后续会随运营策略变化)  period_type为month时，为[1,9]  period_type为year时，为[1,1]  约束：同period_type约束。
+        功能说明：订购周期数  取值范围：(后续会随运营策略变化)  period_type为month时，为[1,9]  period_type为year时，为[1,3]  约束：同period_type约束。
 
         :return: The period_num of this CreatePrePaidPublicipExtendParamOption.
         :rtype: int
@@ -120,7 +120,7 @@ class CreatePrePaidPublicipExtendParamOption:
     def period_num(self, period_num):
         """Sets the period_num of this CreatePrePaidPublicipExtendParamOption.
 
-        功能说明：订购周期数  取值范围：(后续会随运营策略变化)  period_type为month时，为[1,9]  period_type为year时，为[1,1]  约束：同period_type约束。
+        功能说明：订购周期数  取值范围：(后续会随运营策略变化)  period_type为month时，为[1,9]  period_type为year时，为[1,3]  约束：同period_type约束。
 
         :param period_num: The period_num of this CreatePrePaidPublicipExtendParamOption.
         :type: int

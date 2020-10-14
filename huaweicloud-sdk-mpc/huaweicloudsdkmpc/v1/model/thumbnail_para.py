@@ -52,7 +52,7 @@ class ThumbnailPara:
         'max_length': 'max_length'
     }
 
-    def __init__(self, type='TIME', percent=None, time=12, start_time=0, duration=None, dots=None, output_filename=None, format=None, aspect_ratio=None, width=None, height=None, max_length=None):
+    def __init__(self, type='TIME', percent=None, time=12, start_time=0, duration=None, dots=None, output_filename=None, format=1, aspect_ratio=0, width=None, height=None, max_length=480):
         """ThumbnailPara - a model defined in huaweicloud sdk"""
         
         

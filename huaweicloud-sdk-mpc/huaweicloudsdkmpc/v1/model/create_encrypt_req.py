@@ -25,16 +25,18 @@ class CreateEncryptReq:
     openapi_types = {
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
-        'encryption': 'Encryption'
+        'encryption': 'Encryption',
+        'user_data': 'str'
     }
 
     attribute_map = {
         'input': 'input',
         'output': 'output',
-        'encryption': 'encryption'
+        'encryption': 'encryption',
+        'user_data': 'user_data'
     }
 
-    def __init__(self, input=None, output=None, encryption=None):
+    def __init__(self, input=None, output=None, encryption=None, user_data=None):
         """CreateEncryptReq - a model defined in huaweicloud sdk"""
         
         
@@ -42,6 +44,7 @@ class CreateEncryptReq:
         self._input = None
         self._output = None
         self._encryption = None
+        self._user_data = None
         self.discriminator = None
 
         if input is not None:
@@ -50,6 +53,8 @@ class CreateEncryptReq:
             self.output = output
         if encryption is not None:
             self.encryption = encryption
+        if user_data is not None:
+            self.user_data = user_data
 
     @property
     def input(self):
@@ -110,6 +115,28 @@ class CreateEncryptReq:
         :type: Encryption
         """
         self._encryption = encryption
+
+    @property
+    def user_data(self):
+        """Gets the user_data of this CreateEncryptReq.
+
+        用户自定义数据。 
+
+        :return: The user_data of this CreateEncryptReq.
+        :rtype: str
+        """
+        return self._user_data
+
+    @user_data.setter
+    def user_data(self, user_data):
+        """Sets the user_data of this CreateEncryptReq.
+
+        用户自定义数据。 
+
+        :param user_data: The user_data of this CreateEncryptReq.
+        :type: str
+        """
+        self._user_data = user_data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

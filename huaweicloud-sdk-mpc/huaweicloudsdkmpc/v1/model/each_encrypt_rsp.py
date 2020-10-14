@@ -30,6 +30,7 @@ class EachEncryptRsp:
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
         'output_file_name': 'list[str]',
+        'user_data': 'str',
         'description': 'str'
     }
 
@@ -41,10 +42,11 @@ class EachEncryptRsp:
         'input': 'input',
         'output': 'output',
         'output_file_name': 'output_file_name',
+        'user_data': 'user_data',
         'description': 'description'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, end_time=None, input=None, output=None, output_file_name=None, description=None):
+    def __init__(self, task_id=None, status=None, create_time=None, end_time=None, input=None, output=None, output_file_name=None, user_data=None, description=None):
         """EachEncryptRsp - a model defined in huaweicloud sdk"""
         
         
@@ -56,6 +58,7 @@ class EachEncryptRsp:
         self._input = None
         self._output = None
         self._output_file_name = None
+        self._user_data = None
         self._description = None
         self.discriminator = None
 
@@ -73,6 +76,8 @@ class EachEncryptRsp:
             self.output = output
         if output_file_name is not None:
             self.output_file_name = output_file_name
+        if user_data is not None:
+            self.user_data = user_data
         if description is not None:
             self.description = description
 
@@ -225,6 +230,28 @@ class EachEncryptRsp:
         :type: list[str]
         """
         self._output_file_name = output_file_name
+
+    @property
+    def user_data(self):
+        """Gets the user_data of this EachEncryptRsp.
+
+        用户数据。 
+
+        :return: The user_data of this EachEncryptRsp.
+        :rtype: str
+        """
+        return self._user_data
+
+    @user_data.setter
+    def user_data(self, user_data):
+        """Sets the user_data of this EachEncryptRsp.
+
+        用户数据。 
+
+        :param user_data: The user_data of this EachEncryptRsp.
+        :type: str
+        """
+        self._user_data = user_data
 
     @property
     def description(self):

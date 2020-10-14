@@ -123,7 +123,7 @@ class ObsObjInfo:
     def file_name(self):
         """Gets the file_name of this ObsObjInfo.
 
-        文件名，仅用于输出。  - 当指定了此参数时，输出的对象名为object/file_name 。 - 当不指定此参数时，输出的对象名为object/xxx，其中xxx由MPC指定。 
+        文件名，仅用于转封装指定输出名称。  - 当指定了此参数时，输出的对象名为object/file_name 。 - 当不指定此参数时，输出的对象名为object/xxx，其中xxx由MPC指定。 
 
         :return: The file_name of this ObsObjInfo.
         :rtype: str
@@ -134,7 +134,7 @@ class ObsObjInfo:
     def file_name(self, file_name):
         """Sets the file_name of this ObsObjInfo.
 
-        文件名，仅用于输出。  - 当指定了此参数时，输出的对象名为object/file_name 。 - 当不指定此参数时，输出的对象名为object/xxx，其中xxx由MPC指定。 
+        文件名，仅用于转封装指定输出名称。  - 当指定了此参数时，输出的对象名为object/file_name 。 - 当不指定此参数时，输出的对象名为object/xxx，其中xxx由MPC指定。 
 
         :param file_name: The file_name of this ObsObjInfo.
         :type: str

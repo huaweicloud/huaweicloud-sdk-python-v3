@@ -61,7 +61,8 @@ class ResFeeRecordV2:
         'adjustment_amount': 'float',
         'spec_size': 'float',
         'spec_size_measure_id': 'int',
-        'customer_id': 'str'
+        'customer_id': 'str',
+        'trade_id': 'str'
     }
 
     attribute_map = {
@@ -103,10 +104,11 @@ class ResFeeRecordV2:
         'adjustment_amount': 'adjustment_amount',
         'spec_size': 'spec_size',
         'spec_size_measure_id': 'spec_size_measure_id',
-        'customer_id': 'customer_id'
+        'customer_id': 'customer_id',
+        'trade_id': 'trade_id'
     }
 
-    def __init__(self, effective_time=None, expire_time=None, product_id=None, product_name=None, product_spec_desc=None, order_id=None, amount=None, measure_id=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, cloud_service_type=None, region=None, resource_type=None, charge_mode=None, resource_tag=None, resource_name=None, resource_id=None, bill_type=None, enterprise_project_id=None, enterprise_project_name=None, period_type=None, ri_usage=None, ri_usage_measure_id=None, official_amount=None, discount_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, spec_size=None, spec_size_measure_id=None, customer_id=None):
+    def __init__(self, effective_time=None, expire_time=None, product_id=None, product_name=None, product_spec_desc=None, order_id=None, amount=None, measure_id=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, cloud_service_type=None, region=None, resource_type=None, charge_mode=None, resource_tag=None, resource_name=None, resource_id=None, bill_type=None, enterprise_project_id=None, enterprise_project_name=None, period_type=None, ri_usage=None, ri_usage_measure_id=None, official_amount=None, discount_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, spec_size=None, spec_size_measure_id=None, customer_id=None, trade_id=None):
         """ResFeeRecordV2 - a model defined in huaweicloud sdk"""
         
         
@@ -150,6 +152,7 @@ class ResFeeRecordV2:
         self._spec_size = None
         self._spec_size_measure_id = None
         self._customer_id = None
+        self._trade_id = None
         self.discriminator = None
 
         if effective_time is not None:
@@ -230,6 +233,8 @@ class ResFeeRecordV2:
             self.spec_size_measure_id = spec_size_measure_id
         if customer_id is not None:
             self.customer_id = customer_id
+        if trade_id is not None:
+            self.trade_id = trade_id
 
     @property
     def effective_time(self):
@@ -1088,6 +1093,28 @@ class ResFeeRecordV2:
         :type: str
         """
         self._customer_id = customer_id
+
+    @property
+    def trade_id(self):
+        """Gets the trade_id of this ResFeeRecordV2.
+
+        |参数名称：订单ID 或 交易ID，扣费维度的唯一标识| |参数约束及描述：订单ID 或 交易ID，扣费维度的唯一标识|
+
+        :return: The trade_id of this ResFeeRecordV2.
+        :rtype: str
+        """
+        return self._trade_id
+
+    @trade_id.setter
+    def trade_id(self, trade_id):
+        """Sets the trade_id of this ResFeeRecordV2.
+
+        |参数名称：订单ID 或 交易ID，扣费维度的唯一标识| |参数约束及描述：订单ID 或 交易ID，扣费维度的唯一标识|
+
+        :param trade_id: The trade_id of this ResFeeRecordV2.
+        :type: str
+        """
+        self._trade_id = trade_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

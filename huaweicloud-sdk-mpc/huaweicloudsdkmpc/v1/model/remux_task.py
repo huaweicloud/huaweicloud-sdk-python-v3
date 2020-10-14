@@ -31,8 +31,8 @@ class RemuxTask:
         'description': 'str',
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
-        'output_param': 'RemuxOutputParam',
         'user_data': 'str',
+        'output_param': 'RemuxOutputParam',
         'complete_ratio': 'int'
     }
 
@@ -45,12 +45,12 @@ class RemuxTask:
         'description': 'description',
         'input': 'input',
         'output': 'output',
-        'output_param': 'output_param',
         'user_data': 'user_data',
+        'output_param': 'output_param',
         'complete_ratio': 'complete_ratio'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, description=None, input=None, output=None, output_param=None, user_data=None, complete_ratio=None):
+    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, description=None, input=None, output=None, user_data=None, output_param=None, complete_ratio=None):
         """RemuxTask - a model defined in huaweicloud sdk"""
         
         
@@ -63,8 +63,8 @@ class RemuxTask:
         self._description = None
         self._input = None
         self._output = None
-        self._output_param = None
         self._user_data = None
+        self._output_param = None
         self._complete_ratio = None
         self.discriminator = None
 
@@ -84,10 +84,10 @@ class RemuxTask:
             self.input = input
         if output is not None:
             self.output = output
-        if output_param is not None:
-            self.output_param = output_param
         if user_data is not None:
             self.user_data = user_data
+        if output_param is not None:
+            self.output_param = output_param
         if complete_ratio is not None:
             self.complete_ratio = complete_ratio
 
@@ -264,26 +264,6 @@ class RemuxTask:
         self._output = output
 
     @property
-    def output_param(self):
-        """Gets the output_param of this RemuxTask.
-
-
-        :return: The output_param of this RemuxTask.
-        :rtype: RemuxOutputParam
-        """
-        return self._output_param
-
-    @output_param.setter
-    def output_param(self, output_param):
-        """Sets the output_param of this RemuxTask.
-
-
-        :param output_param: The output_param of this RemuxTask.
-        :type: RemuxOutputParam
-        """
-        self._output_param = output_param
-
-    @property
     def user_data(self):
         """Gets the user_data of this RemuxTask.
 
@@ -304,6 +284,26 @@ class RemuxTask:
         :type: str
         """
         self._user_data = user_data
+
+    @property
+    def output_param(self):
+        """Gets the output_param of this RemuxTask.
+
+
+        :return: The output_param of this RemuxTask.
+        :rtype: RemuxOutputParam
+        """
+        return self._output_param
+
+    @output_param.setter
+    def output_param(self, output_param):
+        """Sets the output_param of this RemuxTask.
+
+
+        :param output_param: The output_param of this RemuxTask.
+        :type: RemuxOutputParam
+        """
+        self._output_param = output_param
 
     @property
     def complete_ratio(self):

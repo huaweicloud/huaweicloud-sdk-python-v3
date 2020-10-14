@@ -1134,6 +1134,94 @@ class BssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_customer_bills_fee_records_async(self, request):
+        """查询流水账单
+
+        功能描述：客户在客户自建平台查询自己的流水账单
+
+        :param ListCustomerBillsFeeRecordsRequest request
+        :return: ListCustomerBillsFeeRecordsResponse
+        """
+        return self.list_customer_bills_fee_records_with_http_info(request)
+
+    def list_customer_bills_fee_records_with_http_info(self, request):
+        """查询流水账单
+
+        功能描述：客户在客户自建平台查询自己的流水账单
+
+        :param ListCustomerBillsFeeRecordsRequest request
+        :return: ListCustomerBillsFeeRecordsResponse
+        """
+
+        all_params = ['bill_cycle', 'x_language', 'provider_type', 'service_type_code', 'resource_type_code', 'region_code', 'charging_mode', 'bill_type', 'trade_id', 'enterprise_project_id', 'include_zero_record', 'status', 'method', 'sub_customer_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bill_cycle' in local_var_params:
+            query_params.append(('bill_cycle', local_var_params['bill_cycle']))
+        if 'provider_type' in local_var_params:
+            query_params.append(('provider_type', local_var_params['provider_type']))
+        if 'service_type_code' in local_var_params:
+            query_params.append(('service_type_code', local_var_params['service_type_code']))
+        if 'resource_type_code' in local_var_params:
+            query_params.append(('resource_type_code', local_var_params['resource_type_code']))
+        if 'region_code' in local_var_params:
+            query_params.append(('region_code', local_var_params['region_code']))
+        if 'charging_mode' in local_var_params:
+            query_params.append(('charging_mode', local_var_params['charging_mode']))
+        if 'bill_type' in local_var_params:
+            query_params.append(('bill_type', local_var_params['bill_type']))
+        if 'trade_id' in local_var_params:
+            query_params.append(('trade_id', local_var_params['trade_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'include_zero_record' in local_var_params:
+            query_params.append(('include_zero_record', local_var_params['include_zero_record']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'method' in local_var_params:
+            query_params.append(('method', local_var_params['method']))
+        if 'sub_customer_id' in local_var_params:
+            query_params.append(('sub_customer_id', local_var_params['sub_customer_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bills/customer-bills/fee-records',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListCustomerBillsFeeRecordsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_customer_on_demand_resources_async(self, request):
         """查询客户按需资源列表
 
@@ -1417,7 +1505,7 @@ class BssAsyncClient(Client):
         :return: ListCustomerselfResourceRecordsResponse
         """
 
-        all_params = ['cycle', 'charge_mode', 'x_language', 'cloud_service_type', 'region', 'bill_type', 'offset', 'limit', 'resource_id', 'enterprise_project_id', 'include_zero_record', 'method', 'sub_customer_id']
+        all_params = ['cycle', 'charge_mode', 'x_language', 'cloud_service_type', 'region', 'bill_type', 'offset', 'limit', 'resource_id', 'enterprise_project_id', 'include_zero_record', 'method', 'sub_customer_id', 'trade_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1452,6 +1540,8 @@ class BssAsyncClient(Client):
             query_params.append(('method', local_var_params['method']))
         if 'sub_customer_id' in local_var_params:
             query_params.append(('sub_customer_id', local_var_params['sub_customer_id']))
+        if 'trade_id' in local_var_params:
+            query_params.append(('trade_id', local_var_params['trade_id']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -1539,6 +1629,134 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListEnterpriseMultiAccountResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_enterprise_organizations_async(self, request):
+        """查询企业组织结构
+
+        功能描述：企业主账号在客户自建平台查询企业组织结构
+
+        :param ListEnterpriseOrganizationsRequest request
+        :return: ListEnterpriseOrganizationsResponse
+        """
+        return self.list_enterprise_organizations_with_http_info(request)
+
+    def list_enterprise_organizations_with_http_info(self, request):
+        """查询企业组织结构
+
+        功能描述：企业主账号在客户自建平台查询企业组织结构
+
+        :param ListEnterpriseOrganizationsRequest request
+        :return: ListEnterpriseOrganizationsResponse
+        """
+
+        all_params = ['recursive_query', 'parent_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'recursive_query' in local_var_params:
+            query_params.append(('recursive_query', local_var_params['recursive_query']))
+        if 'parent_id' in local_var_params:
+            query_params.append(('parent_id', local_var_params['parent_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/enterprises/multi-accounts/enterprise-organizations',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEnterpriseOrganizationsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_enterprise_sub_customers_async(self, request):
+        """查询企业子账号列表
+
+        功能描述：企业主账号在客户自建平台查询企业子账号信息列表
+
+        :param ListEnterpriseSubCustomersRequest request
+        :return: ListEnterpriseSubCustomersResponse
+        """
+        return self.list_enterprise_sub_customers_with_http_info(request)
+
+    def list_enterprise_sub_customers_with_http_info(self, request):
+        """查询企业子账号列表
+
+        功能描述：企业主账号在客户自建平台查询企业子账号信息列表
+
+        :param ListEnterpriseSubCustomersRequest request
+        :return: ListEnterpriseSubCustomersResponse
+        """
+
+        all_params = ['sub_customer_account_name', 'sub_customer_display_name', 'fuzzy_query', 'offset', 'limit', 'org_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'sub_customer_account_name' in local_var_params:
+            query_params.append(('sub_customer_account_name', local_var_params['sub_customer_account_name']))
+        if 'sub_customer_display_name' in local_var_params:
+            query_params.append(('sub_customer_display_name', local_var_params['sub_customer_display_name']))
+        if 'fuzzy_query' in local_var_params:
+            query_params.append(('fuzzy_query', local_var_params['fuzzy_query']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'org_id' in local_var_params:
+            query_params.append(('org_id', local_var_params['org_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/enterprises/multi-accounts/sub-customers',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEnterpriseSubCustomersResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)

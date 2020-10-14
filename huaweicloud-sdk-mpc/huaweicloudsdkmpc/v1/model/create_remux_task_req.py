@@ -25,31 +25,31 @@ class CreateRemuxTaskReq:
     openapi_types = {
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
+        'user_data': 'str',
         'sync': 'int',
         'output_param': 'RemuxOutputParam',
-        'user_data': 'str',
         'notify_url': 'str'
     }
 
     attribute_map = {
         'input': 'input',
         'output': 'output',
+        'user_data': 'user_data',
         'sync': 'sync',
         'output_param': 'output_param',
-        'user_data': 'user_data',
         'notify_url': 'notify_url'
     }
 
-    def __init__(self, input=None, output=None, sync=None, output_param=None, user_data=None, notify_url=None):
+    def __init__(self, input=None, output=None, user_data=None, sync=0, output_param=None, notify_url=None):
         """CreateRemuxTaskReq - a model defined in huaweicloud sdk"""
         
         
 
         self._input = None
         self._output = None
+        self._user_data = None
         self._sync = None
         self._output_param = None
-        self._user_data = None
         self._notify_url = None
         self.discriminator = None
 
@@ -57,12 +57,12 @@ class CreateRemuxTaskReq:
             self.input = input
         if output is not None:
             self.output = output
+        if user_data is not None:
+            self.user_data = user_data
         if sync is not None:
             self.sync = sync
         if output_param is not None:
             self.output_param = output_param
-        if user_data is not None:
-            self.user_data = user_data
         if notify_url is not None:
             self.notify_url = notify_url
 
@@ -107,6 +107,28 @@ class CreateRemuxTaskReq:
         self._output = output
 
     @property
+    def user_data(self):
+        """Gets the user_data of this CreateRemuxTaskReq.
+
+        用户自定义数据。 
+
+        :return: The user_data of this CreateRemuxTaskReq.
+        :rtype: str
+        """
+        return self._user_data
+
+    @user_data.setter
+    def user_data(self, user_data):
+        """Sets the user_data of this CreateRemuxTaskReq.
+
+        用户自定义数据。 
+
+        :param user_data: The user_data of this CreateRemuxTaskReq.
+        :type: str
+        """
+        self._user_data = user_data
+
+    @property
     def sync(self):
         """Gets the sync of this CreateRemuxTaskReq.
 
@@ -147,28 +169,6 @@ class CreateRemuxTaskReq:
         :type: RemuxOutputParam
         """
         self._output_param = output_param
-
-    @property
-    def user_data(self):
-        """Gets the user_data of this CreateRemuxTaskReq.
-
-        用户自定义数据。 
-
-        :return: The user_data of this CreateRemuxTaskReq.
-        :rtype: str
-        """
-        return self._user_data
-
-    @user_data.setter
-    def user_data(self, user_data):
-        """Sets the user_data of this CreateRemuxTaskReq.
-
-        用户自定义数据。 
-
-        :param user_data: The user_data of this CreateRemuxTaskReq.
-        :type: str
-        """
-        self._user_data = user_data
 
     @property
     def notify_url(self):

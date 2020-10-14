@@ -45,7 +45,7 @@ class AddReplicationBody:
     def az_code(self):
         """Gets the az_code of this AddReplicationBody.
 
-        表示指定副本所在的可用区编码。 可用区编码可通过[查询可用区信息](https://support.huaweicloud.com/api-dcs/dcs-api-0514010.html)接口查询，可用区必须是有资源的，否则添加失败。 
+        表示指定副本所在的可用区编码。 可用区编码可通过[查询可用区信息](https://support.huaweicloud.com/api-dcs/ListAvailableZones.html)接口查询，可用区必须是有资源的，否则添加失败。 
 
         :return: The az_code of this AddReplicationBody.
         :rtype: str
@@ -56,7 +56,7 @@ class AddReplicationBody:
     def az_code(self, az_code):
         """Sets the az_code of this AddReplicationBody.
 
-        表示指定副本所在的可用区编码。 可用区编码可通过[查询可用区信息](https://support.huaweicloud.com/api-dcs/dcs-api-0514010.html)接口查询，可用区必须是有资源的，否则添加失败。 
+        表示指定副本所在的可用区编码。 可用区编码可通过[查询可用区信息](https://support.huaweicloud.com/api-dcs/ListAvailableZones.html)接口查询，可用区必须是有资源的，否则添加失败。 
 
         :param az_code: The az_code of this AddReplicationBody.
         :type: str

@@ -295,8 +295,8 @@ class Client:
 
     def sync_response_handler(self, response, response_type):
         return_data = self.deserialize(response, response_type)
-        return_data.status_code = response.status_code
-        return_data.header_params = response.headers
+        self.set_response_status_code(return_data, response)
+        self.set_response_headers(return_data, response)
         return return_data
 
     def async_response_hook_factory(self, response_type):
@@ -304,6 +304,20 @@ class Client:
             resp.data = self.sync_response_handler(resp, response_type)
 
         return response_hook
+
+    @classmethod
+    def set_response_status_code(cls, return_data, response):
+        setattr(return_data, "status_code", response.status_code)
+
+    @classmethod
+    def set_response_headers(cls, return_data, response):
+        if not hasattr(return_data, "attribute_map"):
+            return
+
+        for attr in return_data.attribute_map:
+            key_in_response_headers = return_data.attribute_map[attr]
+            if key_in_response_headers in response.headers:
+                setattr(return_data, attr, response.headers[key_in_response_headers])
 
     def deserialize(self, response, response_type):
         if type(response_type) == str and hasattr(self.model_package, response_type):

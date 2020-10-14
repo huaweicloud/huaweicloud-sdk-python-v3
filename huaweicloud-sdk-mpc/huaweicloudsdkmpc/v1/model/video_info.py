@@ -26,19 +26,23 @@ class VideoInfo:
         'width': 'int',
         'height': 'int',
         'bitrate': 'int',
+        'bitrate_bps': 'int',
         'frame_rate': 'int',
-        'codec': 'str'
+        'codec': 'str',
+        'dynamic_range': 'str'
     }
 
     attribute_map = {
         'width': 'width',
         'height': 'height',
         'bitrate': 'bitrate',
+        'bitrate_bps': 'bitrate_bps',
         'frame_rate': 'frame_rate',
-        'codec': 'codec'
+        'codec': 'codec',
+        'dynamic_range': 'dynamic_range'
     }
 
-    def __init__(self, width=None, height=None, bitrate=None, frame_rate=None, codec=None):
+    def __init__(self, width=None, height=None, bitrate=None, bitrate_bps=None, frame_rate=None, codec=None, dynamic_range=None):
         """VideoInfo - a model defined in huaweicloud sdk"""
         
         
@@ -46,8 +50,10 @@ class VideoInfo:
         self._width = None
         self._height = None
         self._bitrate = None
+        self._bitrate_bps = None
         self._frame_rate = None
         self._codec = None
+        self._dynamic_range = None
         self.discriminator = None
 
         if width is not None:
@@ -56,10 +62,14 @@ class VideoInfo:
             self.height = height
         if bitrate is not None:
             self.bitrate = bitrate
+        if bitrate_bps is not None:
+            self.bitrate_bps = bitrate_bps
         if frame_rate is not None:
             self.frame_rate = frame_rate
         if codec is not None:
             self.codec = codec
+        if dynamic_range is not None:
+            self.dynamic_range = dynamic_range
 
     @property
     def width(self):
@@ -109,7 +119,7 @@ class VideoInfo:
     def bitrate(self):
         """Gets the bitrate of this VideoInfo.
 
-        视频码率 
+        视频码率，单位: kbit/s 
 
         :return: The bitrate of this VideoInfo.
         :rtype: int
@@ -120,12 +130,34 @@ class VideoInfo:
     def bitrate(self, bitrate):
         """Sets the bitrate of this VideoInfo.
 
-        视频码率 
+        视频码率，单位: kbit/s 
 
         :param bitrate: The bitrate of this VideoInfo.
         :type: int
         """
         self._bitrate = bitrate
+
+    @property
+    def bitrate_bps(self):
+        """Gets the bitrate_bps of this VideoInfo.
+
+        视频码率，单位: bit/s 
+
+        :return: The bitrate_bps of this VideoInfo.
+        :rtype: int
+        """
+        return self._bitrate_bps
+
+    @bitrate_bps.setter
+    def bitrate_bps(self, bitrate_bps):
+        """Sets the bitrate_bps of this VideoInfo.
+
+        视频码率，单位: bit/s 
+
+        :param bitrate_bps: The bitrate_bps of this VideoInfo.
+        :type: int
+        """
+        self._bitrate_bps = bitrate_bps
 
     @property
     def frame_rate(self):
@@ -170,6 +202,28 @@ class VideoInfo:
         :type: str
         """
         self._codec = codec
+
+    @property
+    def dynamic_range(self):
+        """Gets the dynamic_range of this VideoInfo.
+
+        片源动态范围类型。  取值如下： - SDR - HDR10 - CUVA_HDR 
+
+        :return: The dynamic_range of this VideoInfo.
+        :rtype: str
+        """
+        return self._dynamic_range
+
+    @dynamic_range.setter
+    def dynamic_range(self, dynamic_range):
+        """Sets the dynamic_range of this VideoInfo.
+
+        片源动态范围类型。  取值如下： - SDR - HDR10 - CUVA_HDR 
+
+        :param dynamic_range: The dynamic_range of this VideoInfo.
+        :type: str
+        """
+        self._dynamic_range = dynamic_range
 
     def to_dict(self):
         """Returns the model properties as a dict"""

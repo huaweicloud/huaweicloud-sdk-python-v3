@@ -179,7 +179,7 @@ class MpcAsyncClient(Client):
         :return: ListAnimatedGraphicsTaskResponse
         """
 
-        all_params = ['task_id', 'status', 'start_time', 'end_time', 'page', 'size']
+        all_params = ['x_language', 'task_id', 'status', 'start_time', 'end_time', 'page', 'size']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -205,6 +205,8 @@ class MpcAsyncClient(Client):
             query_params.append(('size', local_var_params['size']))
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -553,7 +555,7 @@ class MpcAsyncClient(Client):
         :return: ListExtractTaskResponse
         """
 
-        all_params = ['task_id', 'status', 'start_time', 'end_time', 'page', 'size']
+        all_params = ['x_language', 'task_id', 'status', 'start_time', 'end_time', 'page', 'size']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -579,6 +581,8 @@ class MpcAsyncClient(Client):
             query_params.append(('size', local_var_params['size']))
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -1352,7 +1356,7 @@ class MpcAsyncClient(Client):
         :return: ListThumbnailsTaskResponse
         """
 
-        all_params = ['task_id', 'status', 'start_time', 'end_time', 'page', 'size']
+        all_params = ['x_language', 'task_id', 'status', 'start_time', 'end_time', 'page', 'size']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1378,6 +1382,8 @@ class MpcAsyncClient(Client):
             query_params.append(('size', local_var_params['size']))
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -1539,7 +1545,7 @@ class MpcAsyncClient(Client):
         :return: ListTranscodingTaskResponse
         """
 
-        all_params = ['task_id', 'status', 'start_time', 'end_time', 'page', 'size']
+        all_params = ['x_language', 'task_id', 'status', 'start_time', 'end_time', 'page', 'size']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1565,6 +1571,8 @@ class MpcAsyncClient(Client):
             query_params.append(('size', local_var_params['size']))
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
 
         form_params = {}
 

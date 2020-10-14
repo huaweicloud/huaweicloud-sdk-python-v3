@@ -28,7 +28,9 @@ class InstanceReplicationListInfo:
         'is_replication': 'bool',
         'replication_id': 'str',
         'node_id': 'str',
-        'status': 'str'
+        'status': 'str',
+        'az_code': 'str',
+        'dimensions': 'list[InstanceReplicationDimensionsInfo]'
     }
 
     attribute_map = {
@@ -37,10 +39,12 @@ class InstanceReplicationListInfo:
         'is_replication': 'is_replication',
         'replication_id': 'replication_id',
         'node_id': 'node_id',
-        'status': 'status'
+        'status': 'status',
+        'az_code': 'az_code',
+        'dimensions': 'dimensions'
     }
 
-    def __init__(self, replication_role=None, replication_ip=None, is_replication=None, replication_id=None, node_id=None, status=None):
+    def __init__(self, replication_role=None, replication_ip=None, is_replication=None, replication_id=None, node_id=None, status=None, az_code=None, dimensions=None):
         """InstanceReplicationListInfo - a model defined in huaweicloud sdk"""
         
         
@@ -51,6 +55,8 @@ class InstanceReplicationListInfo:
         self._replication_id = None
         self._node_id = None
         self._status = None
+        self._az_code = None
+        self._dimensions = None
         self.discriminator = None
 
         if replication_role is not None:
@@ -65,6 +71,10 @@ class InstanceReplicationListInfo:
             self.node_id = node_id
         if status is not None:
             self.status = status
+        if az_code is not None:
+            self.az_code = az_code
+        if dimensions is not None:
+            self.dimensions = dimensions
 
     @property
     def replication_role(self):
@@ -197,6 +207,50 @@ class InstanceReplicationListInfo:
         :type: str
         """
         self._status = status
+
+    @property
+    def az_code(self):
+        """Gets the az_code of this InstanceReplicationListInfo.
+
+        副本所在的可用区
+
+        :return: The az_code of this InstanceReplicationListInfo.
+        :rtype: str
+        """
+        return self._az_code
+
+    @az_code.setter
+    def az_code(self, az_code):
+        """Sets the az_code of this InstanceReplicationListInfo.
+
+        副本所在的可用区
+
+        :param az_code: The az_code of this InstanceReplicationListInfo.
+        :type: str
+        """
+        self._az_code = az_code
+
+    @property
+    def dimensions(self):
+        """Gets the dimensions of this InstanceReplicationListInfo.
+
+        副本对应的监控指标维度信息。可用于调用云监控服务的查询监控数据指标相关接口 - 副本的监控维度为多维度，返回数组中包含两个维度信息。从云监控查询监控数据时，要按多维度传递指标维度参数，才能查询到监控指标值 - 第一个维度为副本父维度信息，维度名称为dcs_instance_id，维度值对应副本所在的实例ID - 第二个维度，维度名称为dcs_cluster_redis_node,维度值为副本的监控对象ID，与副本ID和节点ID不同。 
+
+        :return: The dimensions of this InstanceReplicationListInfo.
+        :rtype: list[InstanceReplicationDimensionsInfo]
+        """
+        return self._dimensions
+
+    @dimensions.setter
+    def dimensions(self, dimensions):
+        """Sets the dimensions of this InstanceReplicationListInfo.
+
+        副本对应的监控指标维度信息。可用于调用云监控服务的查询监控数据指标相关接口 - 副本的监控维度为多维度，返回数组中包含两个维度信息。从云监控查询监控数据时，要按多维度传递指标维度参数，才能查询到监控指标值 - 第一个维度为副本父维度信息，维度名称为dcs_instance_id，维度值对应副本所在的实例ID - 第二个维度，维度名称为dcs_cluster_redis_node,维度值为副本的监控对象ID，与副本ID和节点ID不同。 
+
+        :param dimensions: The dimensions of this InstanceReplicationListInfo.
+        :type: list[InstanceReplicationDimensionsInfo]
+        """
+        self._dimensions = dimensions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

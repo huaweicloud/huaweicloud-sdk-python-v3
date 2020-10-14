@@ -23,6 +23,7 @@ class ListThumbnailsTaskRequest:
     sensitive_list = []
 
     openapi_types = {
+        'x_language': 'str',
         'task_id': 'list[str]',
         'status': 'str',
         'start_time': 'str',
@@ -32,6 +33,7 @@ class ListThumbnailsTaskRequest:
     }
 
     attribute_map = {
+        'x_language': 'x-language',
         'task_id': 'task_id',
         'status': 'status',
         'start_time': 'start_time',
@@ -40,11 +42,12 @@ class ListThumbnailsTaskRequest:
         'size': 'size'
     }
 
-    def __init__(self, task_id=None, status=None, start_time=None, end_time=None, page=0, size=10):
+    def __init__(self, x_language=None, task_id=None, status=None, start_time=None, end_time=None, page=0, size=10):
         """ListThumbnailsTaskRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._x_language = None
         self._task_id = None
         self._status = None
         self._start_time = None
@@ -53,6 +56,8 @@ class ListThumbnailsTaskRequest:
         self._size = None
         self.discriminator = None
 
+        if x_language is not None:
+            self.x_language = x_language
         if task_id is not None:
             self.task_id = task_id
         if status is not None:
@@ -65,6 +70,26 @@ class ListThumbnailsTaskRequest:
             self.page = page
         if size is not None:
             self.size = size
+
+    @property
+    def x_language(self):
+        """Gets the x_language of this ListThumbnailsTaskRequest.
+
+
+        :return: The x_language of this ListThumbnailsTaskRequest.
+        :rtype: str
+        """
+        return self._x_language
+
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this ListThumbnailsTaskRequest.
+
+
+        :param x_language: The x_language of this ListThumbnailsTaskRequest.
+        :type: str
+        """
+        self._x_language = x_language
 
     @property
     def task_id(self):

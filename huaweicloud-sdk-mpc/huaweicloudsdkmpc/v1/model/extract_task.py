@@ -31,6 +31,7 @@ class ExtractTask:
         'description': 'str',
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
+        'user_data': 'str',
         'metadata': 'MetaData'
     }
 
@@ -43,10 +44,11 @@ class ExtractTask:
         'description': 'description',
         'input': 'input',
         'output': 'output',
+        'user_data': 'user_data',
         'metadata': 'metadata'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, description=None, input=None, output=None, metadata=None):
+    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, description=None, input=None, output=None, user_data=None, metadata=None):
         """ExtractTask - a model defined in huaweicloud sdk"""
         
         
@@ -59,6 +61,7 @@ class ExtractTask:
         self._description = None
         self._input = None
         self._output = None
+        self._user_data = None
         self._metadata = None
         self.discriminator = None
 
@@ -78,6 +81,8 @@ class ExtractTask:
             self.input = input
         if output is not None:
             self.output = output
+        if user_data is not None:
+            self.user_data = user_data
         if metadata is not None:
             self.metadata = metadata
 
@@ -252,6 +257,28 @@ class ExtractTask:
         :type: ObsObjInfo
         """
         self._output = output
+
+    @property
+    def user_data(self):
+        """Gets the user_data of this ExtractTask.
+
+        用户数据。 
+
+        :return: The user_data of this ExtractTask.
+        :rtype: str
+        """
+        return self._user_data
+
+    @user_data.setter
+    def user_data(self, user_data):
+        """Sets the user_data of this ExtractTask.
+
+        用户数据。 
+
+        :param user_data: The user_data of this ExtractTask.
+        :type: str
+        """
+        self._user_data = user_data
 
     @property
     def metadata(self):

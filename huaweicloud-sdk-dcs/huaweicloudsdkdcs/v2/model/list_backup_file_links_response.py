@@ -77,7 +77,7 @@ class ListBackupFileLinksResponse(SdkResponse):
     def bucket_name(self):
         """Gets the bucket_name of this ListBackupFileLinksResponse.
 
-        OBS桶名
+        OBS桶名。
 
         :return: The bucket_name of this ListBackupFileLinksResponse.
         :rtype: str
@@ -88,7 +88,7 @@ class ListBackupFileLinksResponse(SdkResponse):
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this ListBackupFileLinksResponse.
 
-        OBS桶名
+        OBS桶名。
 
         :param bucket_name: The bucket_name of this ListBackupFileLinksResponse.
         :type: str

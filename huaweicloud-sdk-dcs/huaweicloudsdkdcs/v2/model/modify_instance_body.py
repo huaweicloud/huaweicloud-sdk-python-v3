@@ -158,7 +158,7 @@ class ModifyInstanceBody:
     def security_group_id(self):
         """Gets the security_group_id of this ModifyInstanceBody.
 
-        安全组ID 可从虚拟私有云服务的控制台界面或者API接口查询得到。 
+        安全组ID  可从虚拟私有云服务的控制台界面或者API接口查询得到。  约束：只有Redis 3.0支持 
 
         :return: The security_group_id of this ModifyInstanceBody.
         :rtype: str
@@ -169,7 +169,7 @@ class ModifyInstanceBody:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this ModifyInstanceBody.
 
-        安全组ID 可从虚拟私有云服务的控制台界面或者API接口查询得到。 
+        安全组ID  可从虚拟私有云服务的控制台界面或者API接口查询得到。  约束：只有Redis 3.0支持 
 
         :param security_group_id: The security_group_id of this ModifyInstanceBody.
         :type: str

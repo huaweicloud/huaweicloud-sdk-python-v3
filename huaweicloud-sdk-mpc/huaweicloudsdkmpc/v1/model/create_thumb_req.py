@@ -25,6 +25,7 @@ class CreateThumbReq:
     openapi_types = {
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
+        'user_data': 'str',
         'thumbnail_para': 'ThumbnailPara',
         'tar': 'int',
         'sync': 'int',
@@ -38,6 +39,7 @@ class CreateThumbReq:
     attribute_map = {
         'input': 'input',
         'output': 'output',
+        'user_data': 'user_data',
         'thumbnail_para': 'thumbnail_para',
         'tar': 'tar',
         'sync': 'sync',
@@ -48,13 +50,14 @@ class CreateThumbReq:
         'canonical_grant_id': 'canonical_grant_id'
     }
 
-    def __init__(self, input=None, output=None, thumbnail_para=None, tar=1, sync=0, original_dir=0, project_id=None, tenant_project_id=None, domain_name=None, canonical_grant_id=None):
+    def __init__(self, input=None, output=None, user_data=None, thumbnail_para=None, tar=1, sync=0, original_dir=0, project_id=None, tenant_project_id=None, domain_name=None, canonical_grant_id=None):
         """CreateThumbReq - a model defined in huaweicloud sdk"""
         
         
 
         self._input = None
         self._output = None
+        self._user_data = None
         self._thumbnail_para = None
         self._tar = None
         self._sync = None
@@ -67,6 +70,8 @@ class CreateThumbReq:
 
         self.input = input
         self.output = output
+        if user_data is not None:
+            self.user_data = user_data
         self.thumbnail_para = thumbnail_para
         if tar is not None:
             self.tar = tar
@@ -122,6 +127,28 @@ class CreateThumbReq:
         :type: ObsObjInfo
         """
         self._output = output
+
+    @property
+    def user_data(self):
+        """Gets the user_data of this CreateThumbReq.
+
+        用户自定义数据。 
+
+        :return: The user_data of this CreateThumbReq.
+        :rtype: str
+        """
+        return self._user_data
+
+    @user_data.setter
+    def user_data(self, user_data):
+        """Sets the user_data of this CreateThumbReq.
+
+        用户自定义数据。 
+
+        :param user_data: The user_data of this CreateThumbReq.
+        :type: str
+        """
+        self._user_data = user_data
 
     @property
     def thumbnail_para(self):

@@ -30,6 +30,7 @@ class ThumbTask:
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
         'output_file_name': 'str',
+        'user_data': 'str',
         'description': 'str',
         'thumbnail_info': 'list[PicInfo]'
     }
@@ -42,11 +43,12 @@ class ThumbTask:
         'input': 'input',
         'output': 'output',
         'output_file_name': 'output_file_name',
+        'user_data': 'user_data',
         'description': 'description',
         'thumbnail_info': 'thumbnail_info'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, end_time=None, input=None, output=None, output_file_name=None, description=None, thumbnail_info=None):
+    def __init__(self, task_id=None, status=None, create_time=None, end_time=None, input=None, output=None, output_file_name=None, user_data=None, description=None, thumbnail_info=None):
         """ThumbTask - a model defined in huaweicloud sdk"""
         
         
@@ -58,6 +60,7 @@ class ThumbTask:
         self._input = None
         self._output = None
         self._output_file_name = None
+        self._user_data = None
         self._description = None
         self._thumbnail_info = None
         self.discriminator = None
@@ -76,6 +79,8 @@ class ThumbTask:
             self.output = output
         if output_file_name is not None:
             self.output_file_name = output_file_name
+        if user_data is not None:
+            self.user_data = user_data
         if description is not None:
             self.description = description
         if thumbnail_info is not None:
@@ -230,6 +235,28 @@ class ThumbTask:
         :type: str
         """
         self._output_file_name = output_file_name
+
+    @property
+    def user_data(self):
+        """Gets the user_data of this ThumbTask.
+
+        用户数据。 
+
+        :return: The user_data of this ThumbTask.
+        :rtype: str
+        """
+        return self._user_data
+
+    @user_data.setter
+    def user_data(self, user_data):
+        """Sets the user_data of this ThumbTask.
+
+        用户数据。 
+
+        :param user_data: The user_data of this ThumbTask.
+        :type: str
+        """
+        self._user_data = user_data
 
     @property
     def description(self):

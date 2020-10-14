@@ -166,6 +166,64 @@ class DcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def change_master_standby_async(self, request):
+        """主备切换
+
+        切换实例主备节点，只有主备实例支持该操作。
+
+        :param ChangeMasterStandbyRequest request
+        :return: ChangeMasterStandbyResponse
+        """
+        return self.change_master_standby_with_http_info(request)
+
+    def change_master_standby_with_http_info(self, request):
+        """主备切换
+
+        切换实例主备节点，只有主备实例支持该操作。
+
+        :param ChangeMasterStandbyRequest request
+        :return: ChangeMasterStandbyResponse
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/swap',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ChangeMasterStandbyResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def copy_instance_async(self, request):
         """备份指定实例
 
@@ -228,6 +286,64 @@ class DcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_bigkey_scan_task_async(self, request):
+        """创建大key分析任务
+
+        为Redis实例创建大key分析任务。
+
+        :param CreateBigkeyScanTaskRequest request
+        :return: CreateBigkeyScanTaskResponse
+        """
+        return self.create_bigkey_scan_task_with_http_info(request)
+
+    def create_bigkey_scan_task_with_http_info(self, request):
+        """创建大key分析任务
+
+        为Redis实例创建大key分析任务。
+
+        :param CreateBigkeyScanTaskRequest request
+        :return: CreateBigkeyScanTaskResponse
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/bigkey-task',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateBigkeyScanTaskResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_dcs_instance_async(self, request):
         """创建缓存实例
 
@@ -283,6 +399,64 @@ class DcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateDcsInstanceResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_hotkey_scan_task_async(self, request):
+        """创建热key分析任务
+
+        创建热key分析任务，Redis 3.0 不支持热key分析。  热key分析需要将缓存实例配置参数maxmemory-policy设置为allkeys-lfu或volatile-lfu。 
+
+        :param CreateHotkeyScanTaskRequest request
+        :return: CreateHotkeyScanTaskResponse
+        """
+        return self.create_hotkey_scan_task_with_http_info(request)
+
+    def create_hotkey_scan_task_with_http_info(self, request):
+        """创建热key分析任务
+
+        创建热key分析任务，Redis 3.0 不支持热key分析。  热key分析需要将缓存实例配置参数maxmemory-policy设置为allkeys-lfu或volatile-lfu。 
+
+        :param CreateHotkeyScanTaskRequest request
+        :return: CreateHotkeyScanTaskResponse
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/hotkey-task',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateHotkeyScanTaskResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -412,6 +586,66 @@ class DcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_background_task_async(self, request):
+        """删除后台任务
+
+        删除后台任务
+
+        :param DeleteBackgroundTaskRequest request
+        :return: DeleteBackgroundTaskResponse
+        """
+        return self.delete_background_task_with_http_info(request)
+
+    def delete_background_task_with_http_info(self, request):
+        """删除后台任务
+
+        删除后台任务
+
+        :param DeleteBackgroundTaskRequest request
+        :return: DeleteBackgroundTaskResponse
+        """
+
+        all_params = ['instance_id', 'task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/tasks/{task_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteBackgroundTaskResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_backup_file_async(self, request):
         """删除备份文件
 
@@ -467,6 +701,126 @@ class DcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteBackupFileResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_bigkey_scan_task_async(self, request):
+        """删除大key分析记录
+
+        删除大key分析记录。
+
+        :param DeleteBigkeyScanTaskRequest request
+        :return: DeleteBigkeyScanTaskResponse
+        """
+        return self.delete_bigkey_scan_task_with_http_info(request)
+
+    def delete_bigkey_scan_task_with_http_info(self, request):
+        """删除大key分析记录
+
+        删除大key分析记录。
+
+        :param DeleteBigkeyScanTaskRequest request
+        :return: DeleteBigkeyScanTaskResponse
+        """
+
+        all_params = ['instance_id', 'bigkey_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'bigkey_id' in local_var_params:
+            path_params['bigkey_id'] = local_var_params['bigkey_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/bigkey-task/{bigkey_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteBigkeyScanTaskResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_hotkey_scan_task_async(self, request):
+        """删除热key分析任务
+
+        删除热key分析任务。
+
+        :param DeleteHotkeyScanTaskRequest request
+        :return: DeleteHotkeyScanTaskResponse
+        """
+        return self.delete_hotkey_scan_task_with_http_info(request)
+
+    def delete_hotkey_scan_task_with_http_info(self, request):
+        """删除热key分析任务
+
+        删除热key分析任务。
+
+        :param DeleteHotkeyScanTaskRequest request
+        :return: DeleteHotkeyScanTaskResponse
+        """
+
+        all_params = ['instance_id', 'hotkey_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'hotkey_id' in local_var_params:
+            path_params['hotkey_id'] = local_var_params['hotkey_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/hotkey-task/{hotkey_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteHotkeyScanTaskResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -714,6 +1068,80 @@ class DcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_all_dcs_instances_async(self, request):
+        """查询所有实例列表
+
+        查询租户的缓存实例列表，支持按照条件查询。
+
+        :param ListAllDcsInstancesRequest request
+        :return: ListAllDcsInstancesResponse
+        """
+        return self.list_all_dcs_instances_with_http_info(request)
+
+    def list_all_dcs_instances_with_http_info(self, request):
+        """查询所有实例列表
+
+        查询租户的缓存实例列表，支持按照条件查询。
+
+        :param ListAllDcsInstancesRequest request
+        :return: ListAllDcsInstancesResponse
+        """
+
+        all_params = ['id', 'include_failure', 'name', 'offset', 'limit', 'status', 'name_equal', 'tags', 'ip']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'include_failure' in local_var_params:
+            query_params.append(('include_failure', local_var_params['include_failure']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'name_equal' in local_var_params:
+            query_params.append(('name_equal', local_var_params['name_equal']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAllDcsInstancesResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_available_zones_async(self, request):
         """查询可用区信息
 
@@ -765,6 +1193,72 @@ class DcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListAvailableZonesResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_background_task_async(self, request):
+        """查询后台任务列表
+
+        查询后台任务列表
+
+        :param ListBackgroundTaskRequest request
+        :return: ListBackgroundTaskResponse
+        """
+        return self.list_background_task_with_http_info(request)
+
+    def list_background_task_with_http_info(self, request):
+        """查询后台任务列表
+
+        查询后台任务列表
+
+        :param ListBackgroundTaskRequest request
+        :return: ListBackgroundTaskResponse
+        """
+
+        all_params = ['instance_id', 'offset', 'limit', 'start_time', 'end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/tasks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListBackgroundTaskResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -895,6 +1389,70 @@ class DcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListBackupRecordsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_bigkey_scan_tasks_async(self, request):
+        """查询大key分析任务列表
+
+        查询大key分析任务列表。
+
+        :param ListBigkeyScanTasksRequest request
+        :return: ListBigkeyScanTasksResponse
+        """
+        return self.list_bigkey_scan_tasks_with_http_info(request)
+
+    def list_bigkey_scan_tasks_with_http_info(self, request):
+        """查询大key分析任务列表
+
+        查询大key分析任务列表。
+
+        :param ListBigkeyScanTasksRequest request
+        :return: ListBigkeyScanTasksResponse
+        """
+
+        all_params = ['instance_id', 'offset', 'limit', 'status']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/bigkey-tasks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListBigkeyScanTasksResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1202,6 +1760,70 @@ class DcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_hot_key_scan_tasks_async(self, request):
+        """查询热key分析任务列表
+
+        查询热key分析历史记录。
+
+        :param ListHotKeyScanTasksRequest request
+        :return: ListHotKeyScanTasksResponse
+        """
+        return self.list_hot_key_scan_tasks_with_http_info(request)
+
+    def list_hot_key_scan_tasks_with_http_info(self, request):
+        """查询热key分析任务列表
+
+        查询热key分析历史记录。
+
+        :param ListHotKeyScanTasksRequest request
+        :return: ListHotKeyScanTasksResponse
+        """
+
+        all_params = ['instance_id', 'offset', 'limit', 'status']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/hotkey-tasks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListHotKeyScanTasksResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_maintenance_windows_async(self, request):
         """查询维护时间窗时间段
 
@@ -1504,6 +2126,76 @@ class DcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_slowlog_async(self, request):
+        """查询慢日志
+
+        查询慢日志。
+
+        :param ListSlowlogRequest request
+        :return: ListSlowlogResponse
+        """
+        return self.list_slowlog_with_http_info(request)
+
+    def list_slowlog_with_http_info(self, request):
+        """查询慢日志
+
+        查询慢日志。
+
+        :param ListSlowlogRequest request
+        :return: ListSlowlogResponse
+        """
+
+        all_params = ['instance_id', 'start_time', 'end_time', 'offset', 'limit', 'sort_key', 'sort_dir']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/slowlog',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSlowlogResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_statistics_of_running_instances_async(self, request):
         """查询运行中实例的统计信息
 
@@ -1682,10 +2374,186 @@ class DcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_bigkey_autoscan_config_async(self, request):
+        """查询大key自动分析配置
+
+        查询大key自动分析配置。
+
+        :param ShowBigkeyAutoscanConfigRequest request
+        :return: ShowBigkeyAutoscanConfigResponse
+        """
+        return self.show_bigkey_autoscan_config_with_http_info(request)
+
+    def show_bigkey_autoscan_config_with_http_info(self, request):
+        """查询大key自动分析配置
+
+        查询大key自动分析配置。
+
+        :param ShowBigkeyAutoscanConfigRequest request
+        :return: ShowBigkeyAutoscanConfigResponse
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/bigkey/autoscan',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowBigkeyAutoscanConfigResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_bigkey_scan_task_details_async(self, request):
+        """查询大key分析详情
+
+        查询大key分析详情。
+
+        :param ShowBigkeyScanTaskDetailsRequest request
+        :return: ShowBigkeyScanTaskDetailsResponse
+        """
+        return self.show_bigkey_scan_task_details_with_http_info(request)
+
+    def show_bigkey_scan_task_details_with_http_info(self, request):
+        """查询大key分析详情
+
+        查询大key分析详情。
+
+        :param ShowBigkeyScanTaskDetailsRequest request
+        :return: ShowBigkeyScanTaskDetailsResponse
+        """
+
+        all_params = ['instance_id', 'bigkey_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'bigkey_id' in local_var_params:
+            path_params['bigkey_id'] = local_var_params['bigkey_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/bigkey-task/{bigkey_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowBigkeyScanTaskDetailsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_dcs_instance_async(self, request):
+        """查询指定实例
+
+        通过实例ID查询实例的详细信息。
+
+        :param ShowDcsInstanceRequest request
+        :return: ShowDcsInstanceResponse
+        """
+        return self.show_dcs_instance_with_http_info(request)
+
+    def show_dcs_instance_with_http_info(self, request):
+        """查询指定实例
+
+        通过实例ID查询实例的详细信息。
+
+        :param ShowDcsInstanceRequest request
+        :return: ShowDcsInstanceResponse
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDcsInstanceResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_dcs_tags_async(self, request):
         """查询单个实例标签
 
-        通过实例id查询标签。
+        通过实例ID查询标签。
 
         :param ShowDcsTagsRequest request
         :return: ShowDcsTagsResponse
@@ -1695,7 +2563,7 @@ class DcsAsyncClient(Client):
     def show_dcs_tags_with_http_info(self, request):
         """查询单个实例标签
 
-        通过实例id查询标签。
+        通过实例ID查询标签。
 
         :param ShowDcsTagsRequest request
         :return: ShowDcsTagsResponse
@@ -1735,6 +2603,124 @@ class DcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowDcsTagsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_hotkey_autoscan_config_async(self, request):
+        """查询热key自动分析配置
+
+        查询热key自动分析配置。
+
+        :param ShowHotkeyAutoscanConfigRequest request
+        :return: ShowHotkeyAutoscanConfigResponse
+        """
+        return self.show_hotkey_autoscan_config_with_http_info(request)
+
+    def show_hotkey_autoscan_config_with_http_info(self, request):
+        """查询热key自动分析配置
+
+        查询热key自动分析配置。
+
+        :param ShowHotkeyAutoscanConfigRequest request
+        :return: ShowHotkeyAutoscanConfigResponse
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/hotkey/autoscan',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowHotkeyAutoscanConfigResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_hotkey_task_details_async(self, request):
+        """查询热key分析详情
+
+        查询热key分析详情。
+
+        :param ShowHotkeyTaskDetailsRequest request
+        :return: ShowHotkeyTaskDetailsResponse
+        """
+        return self.show_hotkey_task_details_with_http_info(request)
+
+    def show_hotkey_task_details_with_http_info(self, request):
+        """查询热key分析详情
+
+        查询热key分析详情。
+
+        :param ShowHotkeyTaskDetailsRequest request
+        :return: ShowHotkeyTaskDetailsResponse
+        """
+
+        all_params = ['instance_id', 'hotkey_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'hotkey_id' in local_var_params:
+            path_params['hotkey_id'] = local_var_params['hotkey_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/hotkey-task/{hotkey_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowHotkeyTaskDetailsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1793,6 +2779,64 @@ class DcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowMigrationTaskResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_migration_task_stats_async(self, request):
+        """查询在线迁移进度明细
+
+        查询在线迁移进度明细。
+
+        :param ShowMigrationTaskStatsRequest request
+        :return: ShowMigrationTaskStatsResponse
+        """
+        return self.show_migration_task_stats_with_http_info(request)
+
+    def show_migration_task_stats_with_http_info(self, request):
+        """查询在线迁移进度明细
+
+        查询在线迁移进度明细。
+
+        :param ShowMigrationTaskStatsRequest request
+        :return: ShowMigrationTaskStatsResponse
+        """
+
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/migration-task/{task_id}/stats',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowMigrationTaskStatsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1907,6 +2951,68 @@ class DcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='StopMigrationTaskResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_bigkey_autoscan_config_async(self, request):
+        """设置大key自动分析配置
+
+        设置大key自动分析配置。
+
+        :param UpdateBigkeyAutoscanConfigRequest request
+        :return: UpdateBigkeyAutoscanConfigResponse
+        """
+        return self.update_bigkey_autoscan_config_with_http_info(request)
+
+    def update_bigkey_autoscan_config_with_http_info(self, request):
+        """设置大key自动分析配置
+
+        设置大key自动分析配置。
+
+        :param UpdateBigkeyAutoscanConfigRequest request
+        :return: UpdateBigkeyAutoscanConfigResponse
+        """
+
+        all_params = ['instance_id', 'update_bigkey_autoscan_config_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/bigkey/autoscan',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateBigkeyAutoscanConfigResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2031,6 +3137,68 @@ class DcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateDcsInstanceResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_hotkey_auto_scan_config_async(self, request):
+        """设置热key自动分析配置
+
+        设置热key自动分析配置。
+
+        :param UpdateHotkeyAutoScanConfigRequest request
+        :return: UpdateHotkeyAutoScanConfigResponse
+        """
+        return self.update_hotkey_auto_scan_config_with_http_info(request)
+
+    def update_hotkey_auto_scan_config_with_http_info(self, request):
+        """设置热key自动分析配置
+
+        设置热key自动分析配置。
+
+        :param UpdateHotkeyAutoScanConfigRequest request
+        :return: UpdateHotkeyAutoScanConfigResponse
+        """
+
+        all_params = ['instance_id', 'update_hotkey_autoscan_config_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/hotkey/autoscan',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateHotkeyAutoScanConfigResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2225,7 +3393,7 @@ class DcsAsyncClient(Client):
     def update_ip_whitelist_async(self, request):
         """设置IP白名单分组
 
-        为指定实例设置IP白名单分组
+        为指定实例设置IP白名单分组，包含创建、停用、编辑、删除白名单四个功能
 
         :param UpdateIpWhitelistRequest request
         :return: UpdateIpWhitelistResponse
@@ -2235,7 +3403,7 @@ class DcsAsyncClient(Client):
     def update_ip_whitelist_with_http_info(self, request):
         """设置IP白名单分组
 
-        为指定实例设置IP白名单分组
+        为指定实例设置IP白名单分组，包含创建、停用、编辑、删除白名单四个功能
 
         :param UpdateIpWhitelistRequest request
         :return: UpdateIpWhitelistResponse

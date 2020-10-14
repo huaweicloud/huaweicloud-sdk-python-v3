@@ -166,7 +166,7 @@ class StopMigrationTaskResponse(SdkResponse):
     def status(self):
         """Gets the status of this StopMigrationTaskResponse.
 
-        迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING。
+        迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED。
 
         :return: The status of this StopMigrationTaskResponse.
         :rtype: str
@@ -177,7 +177,7 @@ class StopMigrationTaskResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this StopMigrationTaskResponse.
 
-        迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING。
+        迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED。
 
         :param status: The status of this StopMigrationTaskResponse.
         :type: str

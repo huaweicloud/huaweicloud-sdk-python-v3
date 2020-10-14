@@ -23,7 +23,7 @@ class ListNumberOfInstancesInDifferentStatusRequest:
     sensitive_list = []
 
     openapi_types = {
-        'include_failure': 'bool'
+        'include_failure': 'str'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ListNumberOfInstancesInDifferentStatusRequest:
 
 
         :return: The include_failure of this ListNumberOfInstancesInDifferentStatusRequest.
-        :rtype: bool
+        :rtype: str
         """
         return self._include_failure
 
@@ -57,7 +57,7 @@ class ListNumberOfInstancesInDifferentStatusRequest:
 
 
         :param include_failure: The include_failure of this ListNumberOfInstancesInDifferentStatusRequest.
-        :type: bool
+        :type: str
         """
         self._include_failure = include_failure
 

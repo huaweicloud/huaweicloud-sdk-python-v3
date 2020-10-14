@@ -56,7 +56,7 @@ class PrePaidServerExtendParam:
         'spot_duration_count': 'spot_duration_count'
     }
 
-    def __init__(self, charging_mode=None, region_id=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, enterprise_project_id='0', support_auto_recovery=False, market_type=None, spot_price=None, disk_prior=None, spot_duration_hours=None, interruption_policy='immediate', spot_duration_count=None):
+    def __init__(self, charging_mode=None, region_id=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, enterprise_project_id='0', support_auto_recovery=False, market_type=None, spot_price=None, disk_prior=None, spot_duration_hours=None, interruption_policy=None, spot_duration_count=None):
         """PrePaidServerExtendParam - a model defined in huaweicloud sdk"""
         
         

@@ -26,17 +26,19 @@ class AudioInfo:
         'codec': 'str',
         'sample': 'int',
         'channels': 'int',
-        'bitrate': 'int'
+        'bitrate': 'int',
+        'bitrate_bps': 'int'
     }
 
     attribute_map = {
         'codec': 'codec',
         'sample': 'sample',
         'channels': 'channels',
-        'bitrate': 'bitrate'
+        'bitrate': 'bitrate',
+        'bitrate_bps': 'bitrate_bps'
     }
 
-    def __init__(self, codec=None, sample=None, channels=None, bitrate=None):
+    def __init__(self, codec=None, sample=None, channels=None, bitrate=None, bitrate_bps=None):
         """AudioInfo - a model defined in huaweicloud sdk"""
         
         
@@ -45,6 +47,7 @@ class AudioInfo:
         self._sample = None
         self._channels = None
         self._bitrate = None
+        self._bitrate_bps = None
         self.discriminator = None
 
         if codec is not None:
@@ -55,6 +58,8 @@ class AudioInfo:
             self.channels = channels
         if bitrate is not None:
             self.bitrate = bitrate
+        if bitrate_bps is not None:
+            self.bitrate_bps = bitrate_bps
 
     @property
     def codec(self):
@@ -126,7 +131,7 @@ class AudioInfo:
     def bitrate(self):
         """Gets the bitrate of this AudioInfo.
 
-        音频码率
+        音频码率，单位: kbit/s 
 
         :return: The bitrate of this AudioInfo.
         :rtype: int
@@ -137,12 +142,34 @@ class AudioInfo:
     def bitrate(self, bitrate):
         """Sets the bitrate of this AudioInfo.
 
-        音频码率
+        音频码率，单位: kbit/s 
 
         :param bitrate: The bitrate of this AudioInfo.
         :type: int
         """
         self._bitrate = bitrate
+
+    @property
+    def bitrate_bps(self):
+        """Gets the bitrate_bps of this AudioInfo.
+
+        音频码率，单位: bit/s 
+
+        :return: The bitrate_bps of this AudioInfo.
+        :rtype: int
+        """
+        return self._bitrate_bps
+
+    @bitrate_bps.setter
+    def bitrate_bps(self, bitrate_bps):
+        """Sets the bitrate_bps of this AudioInfo.
+
+        音频码率，单位: bit/s 
+
+        :param bitrate_bps: The bitrate_bps of this AudioInfo.
+        :type: int
+        """
+        self._bitrate_bps = bitrate_bps
 
     def to_dict(self):
         """Returns the model properties as a dict"""

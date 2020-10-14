@@ -23,114 +23,121 @@ class CreateInstanceBody:
     sensitive_list = []
 
     openapi_types = {
+        'name': 'str',
+        'engine': 'str',
+        'engine_version': 'str',
+        'capacity': 'float',
+        'spec_code': 'str',
+        'az_codes': 'list[str]',
+        'vpc_id': 'str',
+        'subnet_id': 'str',
+        'security_group_id': 'str',
         'publicip_id': 'str',
         'enterprise_project_id': 'str',
         'enterprise_project_name': 'str',
-        'vpc_id': 'str',
         'description': 'str',
-        'security_group_id': 'str',
         'enable_ssl': 'bool',
         'private_ip': 'str',
-        'capacity': 'float',
         'instance_num': 'int',
         'maintain_begin': 'str',
         'maintain_end': 'str',
         'password': 'str',
-        'engine': 'str',
-        'engine_version': 'str',
-        'spec_code': 'str',
         'no_password_access': 'bool',
         'bss_param': 'BssParam',
         'instance_backup_policy': 'BackupPolicy',
-        'az_codes': 'list[str]',
         'tags': 'list[ResourceTag]',
         'access_user': 'str',
         'enable_publicip': 'bool',
-        'name': 'str',
-        'subnet_id': 'str',
         'port': 'int',
         'rename_commands': 'object'
     }
 
     attribute_map = {
+        'name': 'name',
+        'engine': 'engine',
+        'engine_version': 'engine_version',
+        'capacity': 'capacity',
+        'spec_code': 'spec_code',
+        'az_codes': 'az_codes',
+        'vpc_id': 'vpc_id',
+        'subnet_id': 'subnet_id',
+        'security_group_id': 'security_group_id',
         'publicip_id': 'publicip_id',
         'enterprise_project_id': 'enterprise_project_id',
         'enterprise_project_name': 'enterprise_project_name',
-        'vpc_id': 'vpc_id',
         'description': 'description',
-        'security_group_id': 'security_group_id',
         'enable_ssl': 'enable_ssl',
         'private_ip': 'private_ip',
-        'capacity': 'capacity',
         'instance_num': 'instance_num',
         'maintain_begin': 'maintain_begin',
         'maintain_end': 'maintain_end',
         'password': 'password',
-        'engine': 'engine',
-        'engine_version': 'engine_version',
-        'spec_code': 'spec_code',
         'no_password_access': 'no_password_access',
         'bss_param': 'bss_param',
         'instance_backup_policy': 'instance_backup_policy',
-        'az_codes': 'az_codes',
         'tags': 'tags',
         'access_user': 'access_user',
         'enable_publicip': 'enable_publicip',
-        'name': 'name',
-        'subnet_id': 'subnet_id',
         'port': 'port',
         'rename_commands': 'rename_commands'
     }
 
-    def __init__(self, publicip_id='false', enterprise_project_id=None, enterprise_project_name=None, vpc_id=None, description=None, security_group_id=None, enable_ssl=None, private_ip=None, capacity=None, instance_num=1, maintain_begin=None, maintain_end=None, password=None, engine=None, engine_version=None, spec_code=None, no_password_access=False, bss_param=None, instance_backup_policy=None, az_codes=None, tags=None, access_user=None, enable_publicip=False, name=None, subnet_id=None, port=None, rename_commands=None):
+    def __init__(self, name=None, engine=None, engine_version=None, capacity=None, spec_code=None, az_codes=None, vpc_id=None, subnet_id=None, security_group_id=None, publicip_id='false', enterprise_project_id=None, enterprise_project_name=None, description=None, enable_ssl=None, private_ip=None, instance_num=1, maintain_begin=None, maintain_end=None, password=None, no_password_access=False, bss_param=None, instance_backup_policy=None, tags=None, access_user=None, enable_publicip=False, port=None, rename_commands=None):
         """CreateInstanceBody - a model defined in huaweicloud sdk"""
         
         
 
+        self._name = None
+        self._engine = None
+        self._engine_version = None
+        self._capacity = None
+        self._spec_code = None
+        self._az_codes = None
+        self._vpc_id = None
+        self._subnet_id = None
+        self._security_group_id = None
         self._publicip_id = None
         self._enterprise_project_id = None
         self._enterprise_project_name = None
-        self._vpc_id = None
         self._description = None
-        self._security_group_id = None
         self._enable_ssl = None
         self._private_ip = None
-        self._capacity = None
         self._instance_num = None
         self._maintain_begin = None
         self._maintain_end = None
         self._password = None
-        self._engine = None
-        self._engine_version = None
-        self._spec_code = None
         self._no_password_access = None
         self._bss_param = None
         self._instance_backup_policy = None
-        self._az_codes = None
         self._tags = None
         self._access_user = None
         self._enable_publicip = None
-        self._name = None
-        self._subnet_id = None
         self._port = None
         self._rename_commands = None
         self.discriminator = None
 
+        self.name = name
+        self.engine = engine
+        self.engine_version = engine_version
+        self.capacity = capacity
+        self.spec_code = spec_code
+        self.az_codes = az_codes
+        self.vpc_id = vpc_id
+        self.subnet_id = subnet_id
+        if security_group_id is not None:
+            self.security_group_id = security_group_id
         if publicip_id is not None:
             self.publicip_id = publicip_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if enterprise_project_name is not None:
             self.enterprise_project_name = enterprise_project_name
-        self.vpc_id = vpc_id
         if description is not None:
             self.description = description
-        self.security_group_id = security_group_id
         if enable_ssl is not None:
             self.enable_ssl = enable_ssl
         if private_ip is not None:
             self.private_ip = private_ip
-        self.capacity = capacity
         if instance_num is not None:
             self.instance_num = instance_num
         if maintain_begin is not None:
@@ -139,29 +146,220 @@ class CreateInstanceBody:
             self.maintain_end = maintain_end
         if password is not None:
             self.password = password
-        self.engine = engine
-        self.engine_version = engine_version
-        self.spec_code = spec_code
         if no_password_access is not None:
             self.no_password_access = no_password_access
         if bss_param is not None:
             self.bss_param = bss_param
         if instance_backup_policy is not None:
             self.instance_backup_policy = instance_backup_policy
-        if az_codes is not None:
-            self.az_codes = az_codes
         if tags is not None:
             self.tags = tags
         if access_user is not None:
             self.access_user = access_user
         if enable_publicip is not None:
             self.enable_publicip = enable_publicip
-        self.name = name
-        self.subnet_id = subnet_id
         if port is not None:
             self.port = port
         if rename_commands is not None:
             self.rename_commands = rename_commands
+
+    @property
+    def name(self):
+        """Gets the name of this CreateInstanceBody.
+
+        实例名称。  由英文字符开头，只能由英文字母、数字、中划线和下划线组成。  创建单个实例时，名称长度为4到64位的字符串。批量创建实例时，名称长度为4到56位的字符串，且实例名称格式为“自定义名称-n”，其中n从000开始，依次递增。例如，批量创建两个实例，自定义名称为dcs_demo，则两个实例的名称为dcs_demo-000和dcs_demo-001。 
+
+        :return: The name of this CreateInstanceBody.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this CreateInstanceBody.
+
+        实例名称。  由英文字符开头，只能由英文字母、数字、中划线和下划线组成。  创建单个实例时，名称长度为4到64位的字符串。批量创建实例时，名称长度为4到56位的字符串，且实例名称格式为“自定义名称-n”，其中n从000开始，依次递增。例如，批量创建两个实例，自定义名称为dcs_demo，则两个实例的名称为dcs_demo-000和dcs_demo-001。 
+
+        :param name: The name of this CreateInstanceBody.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def engine(self):
+        """Gets the engine of this CreateInstanceBody.
+
+        缓存引擎：Redis和Memcached。
+
+        :return: The engine of this CreateInstanceBody.
+        :rtype: str
+        """
+        return self._engine
+
+    @engine.setter
+    def engine(self, engine):
+        """Sets the engine of this CreateInstanceBody.
+
+        缓存引擎：Redis和Memcached。
+
+        :param engine: The engine of this CreateInstanceBody.
+        :type: str
+        """
+        self._engine = engine
+
+    @property
+    def engine_version(self):
+        """Gets the engine_version of this CreateInstanceBody.
+
+        缓存版本，当缓存引擎为Redis时，取值为3.0、4.0或5.0。
+
+        :return: The engine_version of this CreateInstanceBody.
+        :rtype: str
+        """
+        return self._engine_version
+
+    @engine_version.setter
+    def engine_version(self, engine_version):
+        """Sets the engine_version of this CreateInstanceBody.
+
+        缓存版本，当缓存引擎为Redis时，取值为3.0、4.0或5.0。
+
+        :param engine_version: The engine_version of this CreateInstanceBody.
+        :type: str
+        """
+        self._engine_version = engine_version
+
+    @property
+    def capacity(self):
+        """Gets the capacity of this CreateInstanceBody.
+
+        缓存容量（G Byte） - Redis3.0：单机和主备类型实例取值：2、4、8、16、32、64。Proxy集群实例规格支持64、128、256、512和1024。 - Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 - Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
+
+        :return: The capacity of this CreateInstanceBody.
+        :rtype: float
+        """
+        return self._capacity
+
+    @capacity.setter
+    def capacity(self, capacity):
+        """Sets the capacity of this CreateInstanceBody.
+
+        缓存容量（G Byte） - Redis3.0：单机和主备类型实例取值：2、4、8、16、32、64。Proxy集群实例规格支持64、128、256、512和1024。 - Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 - Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
+
+        :param capacity: The capacity of this CreateInstanceBody.
+        :type: float
+        """
+        self._capacity = capacity
+
+    @property
+    def spec_code(self):
+        """Gets the spec_code of this CreateInstanceBody.
+
+        产品规格编码。具体查询方法，请参考[查询产品规格](https://support.huaweicloud.com/api-dcs/ListFlavors.html)。 
+
+        :return: The spec_code of this CreateInstanceBody.
+        :rtype: str
+        """
+        return self._spec_code
+
+    @spec_code.setter
+    def spec_code(self, spec_code):
+        """Sets the spec_code of this CreateInstanceBody.
+
+        产品规格编码。具体查询方法，请参考[查询产品规格](https://support.huaweicloud.com/api-dcs/ListFlavors.html)。 
+
+        :param spec_code: The spec_code of this CreateInstanceBody.
+        :type: str
+        """
+        self._spec_code = spec_code
+
+    @property
+    def az_codes(self):
+        """Gets the az_codes of this CreateInstanceBody.
+
+        创建缓存节点到指定且有资源的可用区Code。创建缓存节点到指定且有资源的可用区Code。具体查询方法，请参考[查询可用区信息](https://support.huaweicloud.com/api-dcs/ListAvailableZones.html)，在查询时，请注意查看该可用区是否有资源。  如果是创建主备、Proxy集群、Cluster集群实例，支持跨可用区部署，可以为备节点指定备可用区。在为节点指定可用区时，用逗号分隔开，具体请查看示例。 
+
+        :return: The az_codes of this CreateInstanceBody.
+        :rtype: list[str]
+        """
+        return self._az_codes
+
+    @az_codes.setter
+    def az_codes(self, az_codes):
+        """Sets the az_codes of this CreateInstanceBody.
+
+        创建缓存节点到指定且有资源的可用区Code。创建缓存节点到指定且有资源的可用区Code。具体查询方法，请参考[查询可用区信息](https://support.huaweicloud.com/api-dcs/ListAvailableZones.html)，在查询时，请注意查看该可用区是否有资源。  如果是创建主备、Proxy集群、Cluster集群实例，支持跨可用区部署，可以为备节点指定备可用区。在为节点指定可用区时，用逗号分隔开，具体请查看示例。 
+
+        :param az_codes: The az_codes of this CreateInstanceBody.
+        :type: list[str]
+        """
+        self._az_codes = az_codes
+
+    @property
+    def vpc_id(self):
+        """Gets the vpc_id of this CreateInstanceBody.
+
+        虚拟私有云ID。  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。 
+
+        :return: The vpc_id of this CreateInstanceBody.
+        :rtype: str
+        """
+        return self._vpc_id
+
+    @vpc_id.setter
+    def vpc_id(self, vpc_id):
+        """Sets the vpc_id of this CreateInstanceBody.
+
+        虚拟私有云ID。  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。 
+
+        :param vpc_id: The vpc_id of this CreateInstanceBody.
+        :type: str
+        """
+        self._vpc_id = vpc_id
+
+    @property
+    def subnet_id(self):
+        """Gets the subnet_id of this CreateInstanceBody.
+
+        子网的网络ID。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。 
+
+        :return: The subnet_id of this CreateInstanceBody.
+        :rtype: str
+        """
+        return self._subnet_id
+
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        """Sets the subnet_id of this CreateInstanceBody.
+
+        子网的网络ID。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。 
+
+        :param subnet_id: The subnet_id of this CreateInstanceBody.
+        :type: str
+        """
+        self._subnet_id = subnet_id
+
+    @property
+    def security_group_id(self):
+        """Gets the security_group_id of this CreateInstanceBody.
+
+        指定实例所属的安全组。  当前仅Redis3.0支持安全组访问控制，Redis4.0和Redis5.0版本实例不支持安全组控制访问，只支持白名单控制，在创建Redis4.0/5.0实例时，不支持配置该参数。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0002.html)。 
+
+        :return: The security_group_id of this CreateInstanceBody.
+        :rtype: str
+        """
+        return self._security_group_id
+
+    @security_group_id.setter
+    def security_group_id(self, security_group_id):
+        """Sets the security_group_id of this CreateInstanceBody.
+
+        指定实例所属的安全组。  当前仅Redis3.0支持安全组访问控制，Redis4.0和Redis5.0版本实例不支持安全组控制访问，只支持白名单控制，在创建Redis4.0/5.0实例时，不支持配置该参数。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0002.html)。 
+
+        :param security_group_id: The security_group_id of this CreateInstanceBody.
+        :type: str
+        """
+        self._security_group_id = security_group_id
 
     @property
     def publicip_id(self):
@@ -230,28 +428,6 @@ class CreateInstanceBody:
         self._enterprise_project_name = enterprise_project_name
 
     @property
-    def vpc_id(self):
-        """Gets the vpc_id of this CreateInstanceBody.
-
-        虚拟私有云ID。  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html) 
-
-        :return: The vpc_id of this CreateInstanceBody.
-        :rtype: str
-        """
-        return self._vpc_id
-
-    @vpc_id.setter
-    def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateInstanceBody.
-
-        虚拟私有云ID。  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html) 
-
-        :param vpc_id: The vpc_id of this CreateInstanceBody.
-        :type: str
-        """
-        self._vpc_id = vpc_id
-
-    @property
     def description(self):
         """Gets the description of this CreateInstanceBody.
 
@@ -272,28 +448,6 @@ class CreateInstanceBody:
         :type: str
         """
         self._description = description
-
-    @property
-    def security_group_id(self):
-        """Gets the security_group_id of this CreateInstanceBody.
-
-        指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0002.html) 
-
-        :return: The security_group_id of this CreateInstanceBody.
-        :rtype: str
-        """
-        return self._security_group_id
-
-    @security_group_id.setter
-    def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CreateInstanceBody.
-
-        指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0002.html) 
-
-        :param security_group_id: The security_group_id of this CreateInstanceBody.
-        :type: str
-        """
-        self._security_group_id = security_group_id
 
     @property
     def enable_ssl(self):
@@ -340,28 +494,6 @@ class CreateInstanceBody:
         self._private_ip = private_ip
 
     @property
-    def capacity(self):
-        """Gets the capacity of this CreateInstanceBody.
-
-        缓存容量（G Byte） - Redis3.0：单机和主备类型实例取值：2、4、8、16、32、64。Proxy集群实例规格支持64、128、256、512和1024。 - Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 - Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
-
-        :return: The capacity of this CreateInstanceBody.
-        :rtype: float
-        """
-        return self._capacity
-
-    @capacity.setter
-    def capacity(self, capacity):
-        """Sets the capacity of this CreateInstanceBody.
-
-        缓存容量（G Byte） - Redis3.0：单机和主备类型实例取值：2、4、8、16、32、64。Proxy集群实例规格支持64、128、256、512和1024。 - Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 - Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
-
-        :param capacity: The capacity of this CreateInstanceBody.
-        :type: float
-        """
-        self._capacity = capacity
-
-    @property
     def instance_num(self):
         """Gets the instance_num of this CreateInstanceBody.
 
@@ -387,7 +519,7 @@ class CreateInstanceBody:
     def maintain_begin(self):
         """Gets the maintain_begin of this CreateInstanceBody.
 
-        维护时间窗开始时间，格式为HH:mm:ss - 维护时间窗开始和结束时间必须为指定的时间段，可参考[查询维护时间窗时间段](https://support.huaweicloud.com/api-dcs/ListMaintenanceWindows.html)获取 - 开始时间必须为22:00:00、02:00:00、06:00:00、10:00:00、14:00:00和18:00:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00:00。 
+        维护时间窗开始时间，格式为HH:mm:ss - 维护时间窗开始和结束时间必须为指定的时间段，可参考[查询维护时间窗时间段](https://support.huaweicloud.com/api-dcs/ListMaintenanceWindows.html)获取。 - 开始时间必须为22:00:00、02:00:00、06:00:00、10:00:00、14:00:00和18:00:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00:00。 
 
         :return: The maintain_begin of this CreateInstanceBody.
         :rtype: str
@@ -398,7 +530,7 @@ class CreateInstanceBody:
     def maintain_begin(self, maintain_begin):
         """Sets the maintain_begin of this CreateInstanceBody.
 
-        维护时间窗开始时间，格式为HH:mm:ss - 维护时间窗开始和结束时间必须为指定的时间段，可参考[查询维护时间窗时间段](https://support.huaweicloud.com/api-dcs/ListMaintenanceWindows.html)获取 - 开始时间必须为22:00:00、02:00:00、06:00:00、10:00:00、14:00:00和18:00:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00:00。 
+        维护时间窗开始时间，格式为HH:mm:ss - 维护时间窗开始和结束时间必须为指定的时间段，可参考[查询维护时间窗时间段](https://support.huaweicloud.com/api-dcs/ListMaintenanceWindows.html)获取。 - 开始时间必须为22:00:00、02:00:00、06:00:00、10:00:00、14:00:00和18:00:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00:00。 
 
         :param maintain_begin: The maintain_begin of this CreateInstanceBody.
         :type: str
@@ -409,7 +541,7 @@ class CreateInstanceBody:
     def maintain_end(self):
         """Gets the maintain_end of this CreateInstanceBody.
 
-        维护时间窗结束时间，格式为HH:mm:ss。 - 维护时间窗开始和结束时间必须为指定的时间段，可参考[查询维护时间窗时间段](https://support.huaweicloud.com/api-dcs/ListMaintenanceWindows.html)获取 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00:00时，结束时间为02:00:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00:00。 
+        维护时间窗结束时间，格式为HH:mm:ss。 - 维护时间窗开始和结束时间必须为指定的时间段，可参考[查询维护时间窗时间段](https://support.huaweicloud.com/api-dcs/ListMaintenanceWindows.html)获取。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00:00时，结束时间为02:00:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00:00。 
 
         :return: The maintain_end of this CreateInstanceBody.
         :rtype: str
@@ -420,7 +552,7 @@ class CreateInstanceBody:
     def maintain_end(self, maintain_end):
         """Sets the maintain_end of this CreateInstanceBody.
 
-        维护时间窗结束时间，格式为HH:mm:ss。 - 维护时间窗开始和结束时间必须为指定的时间段，可参考[查询维护时间窗时间段](https://support.huaweicloud.com/api-dcs/ListMaintenanceWindows.html)获取 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00:00时，结束时间为02:00:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00:00。 
+        维护时间窗结束时间，格式为HH:mm:ss。 - 维护时间窗开始和结束时间必须为指定的时间段，可参考[查询维护时间窗时间段](https://support.huaweicloud.com/api-dcs/ListMaintenanceWindows.html)获取。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00:00时，结束时间为02:00:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00:00。 
 
         :param maintain_end: The maintain_end of this CreateInstanceBody.
         :type: str
@@ -448,72 +580,6 @@ class CreateInstanceBody:
         :type: str
         """
         self._password = password
-
-    @property
-    def engine(self):
-        """Gets the engine of this CreateInstanceBody.
-
-        缓存引擎：Redis和Memcached。
-
-        :return: The engine of this CreateInstanceBody.
-        :rtype: str
-        """
-        return self._engine
-
-    @engine.setter
-    def engine(self, engine):
-        """Sets the engine of this CreateInstanceBody.
-
-        缓存引擎：Redis和Memcached。
-
-        :param engine: The engine of this CreateInstanceBody.
-        :type: str
-        """
-        self._engine = engine
-
-    @property
-    def engine_version(self):
-        """Gets the engine_version of this CreateInstanceBody.
-
-        缓存版本，当缓存引擎为Redis时，取值为3.0、4.0或5.0。
-
-        :return: The engine_version of this CreateInstanceBody.
-        :rtype: str
-        """
-        return self._engine_version
-
-    @engine_version.setter
-    def engine_version(self, engine_version):
-        """Sets the engine_version of this CreateInstanceBody.
-
-        缓存版本，当缓存引擎为Redis时，取值为3.0、4.0或5.0。
-
-        :param engine_version: The engine_version of this CreateInstanceBody.
-        :type: str
-        """
-        self._engine_version = engine_version
-
-    @property
-    def spec_code(self):
-        """Gets the spec_code of this CreateInstanceBody.
-
-        产品规格编码。
-
-        :return: The spec_code of this CreateInstanceBody.
-        :rtype: str
-        """
-        return self._spec_code
-
-    @spec_code.setter
-    def spec_code(self, spec_code):
-        """Sets the spec_code of this CreateInstanceBody.
-
-        产品规格编码。
-
-        :param spec_code: The spec_code of this CreateInstanceBody.
-        :type: str
-        """
-        self._spec_code = spec_code
 
     @property
     def no_password_access(self):
@@ -576,28 +642,6 @@ class CreateInstanceBody:
         :type: BackupPolicy
         """
         self._instance_backup_policy = instance_backup_policy
-
-    @property
-    def az_codes(self):
-        """Gets the az_codes of this CreateInstanceBody.
-
-        创建缓存节点到指定且有资源的可用区Code。创建缓存节点到指定且有资源的可用区Code。具体查询方法，请参考[查询可用区信息](https://support.huaweicloud.com/api-dcs/ListAvailableZones.html),，在查询时，请注意查看该可用区是否有资源。  如果是创建主备、Proxy集群、Cluster集群实例，支持跨可用区部署，可以为备节点指定备可用区。在为节点指定可用区时，用逗号分隔开，具体请查看示例。 
-
-        :return: The az_codes of this CreateInstanceBody.
-        :rtype: list[str]
-        """
-        return self._az_codes
-
-    @az_codes.setter
-    def az_codes(self, az_codes):
-        """Sets the az_codes of this CreateInstanceBody.
-
-        创建缓存节点到指定且有资源的可用区Code。创建缓存节点到指定且有资源的可用区Code。具体查询方法，请参考[查询可用区信息](https://support.huaweicloud.com/api-dcs/ListAvailableZones.html),，在查询时，请注意查看该可用区是否有资源。  如果是创建主备、Proxy集群、Cluster集群实例，支持跨可用区部署，可以为备节点指定备可用区。在为节点指定可用区时，用逗号分隔开，具体请查看示例。 
-
-        :param az_codes: The az_codes of this CreateInstanceBody.
-        :type: list[str]
-        """
-        self._az_codes = az_codes
 
     @property
     def tags(self):
@@ -664,50 +708,6 @@ class CreateInstanceBody:
         :type: bool
         """
         self._enable_publicip = enable_publicip
-
-    @property
-    def name(self):
-        """Gets the name of this CreateInstanceBody.
-
-        实例名称。 由英文字符开头，只能由英文字母、数字、中划线和下划线组成。 创建单个实例时，名称长度为4到64位的字符串。批量创建实例时，名称长度为4到56位的字符串，且实例名称格式为“自定义名称-n”，其中n从000开始，依次递增。例如，批量创建两个实例，自定义名称为dcs_demo，则两个实例的名称为dcs_demo-000和dcs_demo-001。 
-
-        :return: The name of this CreateInstanceBody.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this CreateInstanceBody.
-
-        实例名称。 由英文字符开头，只能由英文字母、数字、中划线和下划线组成。 创建单个实例时，名称长度为4到64位的字符串。批量创建实例时，名称长度为4到56位的字符串，且实例名称格式为“自定义名称-n”，其中n从000开始，依次递增。例如，批量创建两个实例，自定义名称为dcs_demo，则两个实例的名称为dcs_demo-000和dcs_demo-001。 
-
-        :param name: The name of this CreateInstanceBody.
-        :type: str
-        """
-        self._name = name
-
-    @property
-    def subnet_id(self):
-        """Gets the subnet_id of this CreateInstanceBody.
-
-        子网的网络ID。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html) 
-
-        :return: The subnet_id of this CreateInstanceBody.
-        :rtype: str
-        """
-        return self._subnet_id
-
-    @subnet_id.setter
-    def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateInstanceBody.
-
-        子网的网络ID。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html) 
-
-        :param subnet_id: The subnet_id of this CreateInstanceBody.
-        :type: str
-        """
-        self._subnet_id = subnet_id
 
     @property
     def port(self):

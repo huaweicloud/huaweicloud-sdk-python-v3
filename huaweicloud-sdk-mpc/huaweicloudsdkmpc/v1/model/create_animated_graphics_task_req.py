@@ -25,6 +25,7 @@ class CreateAnimatedGraphicsTaskReq:
     openapi_types = {
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
+        'user_data': 'str',
         'sync': 'int',
         'output_param': 'AnimatedGraphicsOutputParam'
     }
@@ -32,17 +33,19 @@ class CreateAnimatedGraphicsTaskReq:
     attribute_map = {
         'input': 'input',
         'output': 'output',
+        'user_data': 'user_data',
         'sync': 'sync',
         'output_param': 'output_param'
     }
 
-    def __init__(self, input=None, output=None, sync=None, output_param=None):
+    def __init__(self, input=None, output=None, user_data=None, sync=0, output_param=None):
         """CreateAnimatedGraphicsTaskReq - a model defined in huaweicloud sdk"""
         
         
 
         self._input = None
         self._output = None
+        self._user_data = None
         self._sync = None
         self._output_param = None
         self.discriminator = None
@@ -51,6 +54,8 @@ class CreateAnimatedGraphicsTaskReq:
             self.input = input
         if output is not None:
             self.output = output
+        if user_data is not None:
+            self.user_data = user_data
         if sync is not None:
             self.sync = sync
         if output_param is not None:
@@ -95,6 +100,28 @@ class CreateAnimatedGraphicsTaskReq:
         :type: ObsObjInfo
         """
         self._output = output
+
+    @property
+    def user_data(self):
+        """Gets the user_data of this CreateAnimatedGraphicsTaskReq.
+
+        用户自定义数据。 
+
+        :return: The user_data of this CreateAnimatedGraphicsTaskReq.
+        :rtype: str
+        """
+        return self._user_data
+
+    @user_data.setter
+    def user_data(self, user_data):
+        """Sets the user_data of this CreateAnimatedGraphicsTaskReq.
+
+        用户自定义数据。 
+
+        :param user_data: The user_data of this CreateAnimatedGraphicsTaskReq.
+        :type: str
+        """
+        self._user_data = user_data
 
     @property
     def sync(self):

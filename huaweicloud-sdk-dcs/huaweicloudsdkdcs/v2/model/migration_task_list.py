@@ -124,7 +124,7 @@ class MigrationTaskList:
     def status(self):
         """Gets the status of this MigrationTaskList.
 
-        迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING
+        迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED
 
         :return: The status of this MigrationTaskList.
         :rtype: str
@@ -135,7 +135,7 @@ class MigrationTaskList:
     def status(self, status):
         """Sets the status of this MigrationTaskList.
 
-        迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING
+        迁移任务状态，这个字段的值包括：SUCCESS, FAILED, MIGRATING，TERMINATED
 
         :param status: The status of this MigrationTaskList.
         :type: str

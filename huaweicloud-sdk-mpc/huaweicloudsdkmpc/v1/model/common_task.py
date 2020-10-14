@@ -30,7 +30,8 @@ class CommonTask:
         'end_time': 'str',
         'description': 'str',
         'input': 'ObsObjInfo',
-        'output': 'ObsObjInfo'
+        'output': 'ObsObjInfo',
+        'user_data': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class CommonTask:
         'end_time': 'end_time',
         'description': 'description',
         'input': 'input',
-        'output': 'output'
+        'output': 'output',
+        'user_data': 'user_data'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, description=None, input=None, output=None):
+    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, description=None, input=None, output=None, user_data=None):
         """CommonTask - a model defined in huaweicloud sdk"""
         
         
@@ -57,6 +59,7 @@ class CommonTask:
         self._description = None
         self._input = None
         self._output = None
+        self._user_data = None
         self.discriminator = None
 
         if task_id is not None:
@@ -75,6 +78,8 @@ class CommonTask:
             self.input = input
         if output is not None:
             self.output = output
+        if user_data is not None:
+            self.user_data = user_data
 
     @property
     def task_id(self):
@@ -247,6 +252,28 @@ class CommonTask:
         :type: ObsObjInfo
         """
         self._output = output
+
+    @property
+    def user_data(self):
+        """Gets the user_data of this CommonTask.
+
+        用户数据。 
+
+        :return: The user_data of this CommonTask.
+        :rtype: str
+        """
+        return self._user_data
+
+    @user_data.setter
+    def user_data(self, user_data):
+        """Sets the user_data of this CommonTask.
+
+        用户数据。 
+
+        :param user_data: The user_data of this CommonTask.
+        :type: str
+        """
+        self._user_data = user_data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

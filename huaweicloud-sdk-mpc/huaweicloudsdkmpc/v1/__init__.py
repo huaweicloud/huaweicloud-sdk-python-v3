@@ -123,6 +123,7 @@ from huaweicloudsdkmpc.v1.model.special_effect import SpecialEffect
 from huaweicloudsdkmpc.v1.model.subtitle import Subtitle
 from huaweicloudsdkmpc.v1.model.system_process import SystemProcess
 from huaweicloudsdkmpc.v1.model.task_detail_info import TaskDetailInfo
+from huaweicloudsdkmpc.v1.model.template_extend import TemplateExtend
 from huaweicloudsdkmpc.v1.model.template_group import TemplateGroup
 from huaweicloudsdkmpc.v1.model.template_info import TemplateInfo
 from huaweicloudsdkmpc.v1.model.text_watermark import TextWatermark

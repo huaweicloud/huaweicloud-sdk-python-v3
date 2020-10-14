@@ -86,7 +86,7 @@ class BssParam:
     def charging_mode(self):
         """Gets the charging_mode of this BssParam.
 
-        功能说明：付费方式（预付费、按需付费；预付费，即包周期付费）。 取值范围： - prePaid -预付费，即包年包月； - postPaid -后付费，即按需付费； 默认值是postPaid。 后付费的场景下，bss_param参数的其他字段都会被忽略。 
+        功能说明：付费方式（预付费、按需付费；预付费，即包周期付费）。 取值范围： - prePaid：预付费，即包年包月； - postPaid：后付费，即按需付费； 默认值是postPaid。 后付费的场景下，bss_param参数的其他字段都会被忽略。 
 
         :return: The charging_mode of this BssParam.
         :rtype: str
@@ -97,7 +97,7 @@ class BssParam:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this BssParam.
 
-        功能说明：付费方式（预付费、按需付费；预付费，即包周期付费）。 取值范围： - prePaid -预付费，即包年包月； - postPaid -后付费，即按需付费； 默认值是postPaid。 后付费的场景下，bss_param参数的其他字段都会被忽略。 
+        功能说明：付费方式（预付费、按需付费；预付费，即包周期付费）。 取值范围： - prePaid：预付费，即包年包月； - postPaid：后付费，即按需付费； 默认值是postPaid。 后付费的场景下，bss_param参数的其他字段都会被忽略。 
 
         :param charging_mode: The charging_mode of this BssParam.
         :type: str
@@ -152,7 +152,7 @@ class BssParam:
     def period_num(self):
         """Gets the period_num of this BssParam.
 
-        功能说明：订购周期数 取值范围：(后续会随运营策略变化) - period_type为month时，为[1,9]， - period_type为year时，为[1,3] 约束：同period_type约束。 
+        功能说明：订购周期数 取值范围：(后续会随运营策略变化) - period_type为month时，为[1,9]， - period_type为year时，为[1,3]  约束：同period_type约束。 
 
         :return: The period_num of this BssParam.
         :rtype: int
@@ -163,7 +163,7 @@ class BssParam:
     def period_num(self, period_num):
         """Sets the period_num of this BssParam.
 
-        功能说明：订购周期数 取值范围：(后续会随运营策略变化) - period_type为month时，为[1,9]， - period_type为year时，为[1,3] 约束：同period_type约束。 
+        功能说明：订购周期数 取值范围：(后续会随运营策略变化) - period_type为month时，为[1,9]， - period_type为year时，为[1,3]  约束：同period_type约束。 
 
         :param period_num: The period_num of this BssParam.
         :type: int

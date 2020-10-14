@@ -31,6 +31,7 @@ class QueryTranscodingsTaskResponse:
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
         'output_file_name': 'list[str]',
+        'user_data': 'str',
         'error_code': 'str',
         'description': 'str',
         'tips': 'str',
@@ -51,6 +52,7 @@ class QueryTranscodingsTaskResponse:
         'input': 'input',
         'output': 'output',
         'output_file_name': 'output_file_name',
+        'user_data': 'user_data',
         'error_code': 'error_code',
         'description': 'description',
         'tips': 'tips',
@@ -62,7 +64,7 @@ class QueryTranscodingsTaskResponse:
         'audit_report': 'audit_report'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, error_code=None, description=None, tips=None, output_url=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None, audit_report=None):
+    def __init__(self, task_id=None, status=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, output_url=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None, audit_report=None):
         """QueryTranscodingsTaskResponse - a model defined in huaweicloud sdk"""
         
         
@@ -75,6 +77,7 @@ class QueryTranscodingsTaskResponse:
         self._input = None
         self._output = None
         self._output_file_name = None
+        self._user_data = None
         self._error_code = None
         self._description = None
         self._tips = None
@@ -102,6 +105,8 @@ class QueryTranscodingsTaskResponse:
             self.output = output
         if output_file_name is not None:
             self.output_file_name = output_file_name
+        if user_data is not None:
+            self.user_data = user_data
         if error_code is not None:
             self.error_code = error_code
         if description is not None:
@@ -292,6 +297,28 @@ class QueryTranscodingsTaskResponse:
         :type: list[str]
         """
         self._output_file_name = output_file_name
+
+    @property
+    def user_data(self):
+        """Gets the user_data of this QueryTranscodingsTaskResponse.
+
+        用户自定义数据。 
+
+        :return: The user_data of this QueryTranscodingsTaskResponse.
+        :rtype: str
+        """
+        return self._user_data
+
+    @user_data.setter
+    def user_data(self, user_data):
+        """Sets the user_data of this QueryTranscodingsTaskResponse.
+
+        用户自定义数据。 
+
+        :param user_data: The user_data of this QueryTranscodingsTaskResponse.
+        :type: str
+        """
+        self._user_data = user_data
 
     @property
     def error_code(self):
