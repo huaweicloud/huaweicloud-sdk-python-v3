@@ -315,6 +315,8 @@ class Client:
             return
 
         for attr in return_data.attribute_map:
+            if getattr(return_data, attr) is not None:
+                continue
             key_in_response_headers = return_data.attribute_map[attr]
             if key_in_response_headers in response.headers:
                 setattr(return_data, attr, response.headers[key_in_response_headers])

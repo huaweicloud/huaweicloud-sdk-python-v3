@@ -136,6 +136,7 @@ from huaweicloudsdkmeeting.v1.model.pages import Pages
 from huaweicloudsdkmeeting.v1.model.part_attendee import PartAttendee
 from huaweicloudsdkmeeting.v1.model.participant_info import ParticipantInfo
 from huaweicloudsdkmeeting.v1.model.password_entry import PasswordEntry
+from huaweicloudsdkmeeting.v1.model.pic_layout_info import PicLayoutInfo
 from huaweicloudsdkmeeting.v1.model.program_item_request_base import ProgramItemRequestBase
 from huaweicloudsdkmeeting.v1.model.program_item_response_base import ProgramItemResponseBase
 from huaweicloudsdkmeeting.v1.model.program_request_base import ProgramRequestBase
@@ -183,6 +184,7 @@ from huaweicloudsdkmeeting.v1.model.rest_bulk_hang_up_req_body import RestBulkHa
 from huaweicloudsdkmeeting.v1.model.rest_chair_token_req_body import RestChairTokenReqBody
 from huaweicloudsdkmeeting.v1.model.rest_chair_view_req_body import RestChairViewReqBody
 from huaweicloudsdkmeeting.v1.model.rest_conf_config_dto import RestConfConfigDTO
+from huaweicloudsdkmeeting.v1.model.rest_custom_multi_picture_body import RestCustomMultiPictureBody
 from huaweicloudsdkmeeting.v1.model.rest_hands_up_req_body import RestHandsUpReqBody
 from huaweicloudsdkmeeting.v1.model.rest_invite_req_body import RestInviteReqBody
 from huaweicloudsdkmeeting.v1.model.rest_invite_with_pwd_req_body import RestInviteWithPwdReqBody
@@ -197,6 +199,7 @@ from huaweicloudsdkmeeting.v1.model.rest_rename_part_req_body import RestRenameP
 from huaweicloudsdkmeeting.v1.model.rest_schedule_conf_dto import RestScheduleConfDTO
 from huaweicloudsdkmeeting.v1.model.rest_set_live_req_body import RestSetLiveReqBody
 from huaweicloudsdkmeeting.v1.model.rest_set_record_req_body import RestSetRecordReqBody
+from huaweicloudsdkmeeting.v1.model.rest_subscriber_in_pic import RestSubscriberInPic
 from huaweicloudsdkmeeting.v1.model.rest_switch_mode_req_body import RestSwitchModeReqBody
 from huaweicloudsdkmeeting.v1.model.rollcall_participant_request import RollcallParticipantRequest
 from huaweicloudsdkmeeting.v1.model.rollcall_participant_response import RollcallParticipantResponse
@@ -247,6 +250,8 @@ from huaweicloudsdkmeeting.v1.model.send_veri_code_for_change_pwd_request import
 from huaweicloudsdkmeeting.v1.model.send_veri_code_for_change_pwd_response import SendVeriCodeForChangePwdResponse
 from huaweicloudsdkmeeting.v1.model.send_veri_code_for_update_user_info_request import SendVeriCodeForUpdateUserInfoRequest
 from huaweicloudsdkmeeting.v1.model.send_veri_code_for_update_user_info_response import SendVeriCodeForUpdateUserInfoResponse
+from huaweicloudsdkmeeting.v1.model.set_custom_multi_picture_request import SetCustomMultiPictureRequest
+from huaweicloudsdkmeeting.v1.model.set_custom_multi_picture_response import SetCustomMultiPictureResponse
 from huaweicloudsdkmeeting.v1.model.set_host_view_request import SetHostViewRequest
 from huaweicloudsdkmeeting.v1.model.set_host_view_response import SetHostViewResponse
 from huaweicloudsdkmeeting.v1.model.set_multi_picture_request import SetMultiPictureRequest
@@ -303,6 +308,7 @@ from huaweicloudsdkmeeting.v1.model.slide_verify_code_check_dto import SlideVeri
 from huaweicloudsdkmeeting.v1.model.slide_verify_code_send_dto import SlideVerifyCodeSendDTO
 from huaweicloudsdkmeeting.v1.model.stop_meeting_request import StopMeetingRequest
 from huaweicloudsdkmeeting.v1.model.stop_meeting_response import StopMeetingResponse
+from huaweicloudsdkmeeting.v1.model.sub_pic_layout_info import SubPicLayoutInfo
 from huaweicloudsdkmeeting.v1.model.subscriber_in_pic import SubscriberInPic
 from huaweicloudsdkmeeting.v1.model.switch_mode_request import SwitchModeRequest
 from huaweicloudsdkmeeting.v1.model.switch_mode_response import SwitchModeResponse

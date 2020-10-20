@@ -2479,8 +2479,8 @@ class KafkaClient(Client):
 
         修改实例跨VPC访问的内网IP。
 
-        :param UpdateInstanceCrossVpcipRequest request
-        :return: UpdateInstanceCrossVpcipResponse
+        :param UpdateInstanceCrossVPCIPRequest request
+        :return: UpdateInstanceCrossVPCIPResponse
         """
         return self.update_instance_cross_vpcip_with_http_info(request)
 
@@ -2489,8 +2489,8 @@ class KafkaClient(Client):
 
         修改实例跨VPC访问的内网IP。
 
-        :param UpdateInstanceCrossVpcipRequest request
-        :return: UpdateInstanceCrossVpcipResponse
+        :param UpdateInstanceCrossVPCIPRequest request
+        :return: UpdateInstanceCrossVPCIPResponse
         """
 
         all_params = ['instance_id', 'update_instance_cross_vpcip_request_body']
@@ -2530,7 +2530,7 @@ class KafkaClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='UpdateInstanceCrossVpcipResponse',
+            response_type='UpdateInstanceCrossVPCIPResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)

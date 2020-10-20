@@ -26,7 +26,7 @@ from logging.handlers import RotatingFileHandler
 import pytest
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.http.http_client import HttpClient
 from huaweicloudsdkcore.http.http_config import HttpConfig
 
@@ -41,25 +41,24 @@ credentials = BasicCredentials(ak, sk, project_id)
 
 
 def test_build_client_by_client_builder():
-    client = Client.new_builder(Client) \
+    client = ClientBuilder(Client) \
         .with_http_config(config) \
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \
         .build()
 
     assert isinstance(client, Client)
-    assert client.get_agent() == {"User-Agent": "huaweicloud-sdk-pythons/3.0"}
+    assert client.get_agent() == {"User-Agent": "huaweicloud-usdk-python/3.0"}
     assert client.get_credentials().ak == "my ak"
     assert client.get_credentials().sk == "my sk"
-    assert client.get_credentials().domain_id is None
 
     assert isinstance(client.get_http_client(), HttpClient)
     assert client.get_http_client()._timeout == (3, 10)
-    assert client.get_http_client()._verify == False
+    assert client.get_http_client()._verify is False
 
 
 def test_default_sdk_logger():
-    Client.new_builder(Client) \
+    ClientBuilder(Client) \
         .with_http_config(config) \
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \
@@ -71,7 +70,7 @@ def test_default_sdk_logger():
 
 
 def test_add_rotating_file_handler_to_sdk_logger():
-    Client.new_builder(Client) \
+    ClientBuilder(Client) \
         .with_http_config(config) \
         .with_credentials(credentials) \
         .with_file_log(path="tests.log", log_level=logging.DEBUG, max_bytes=1024, backup_count=1) \
@@ -90,7 +89,7 @@ def test_add_rotating_file_handler_to_sdk_logger():
 
 
 def test_add_stream_handler_to_sdk_logger():
-    Client.new_builder(Client) \
+    ClientBuilder(Client) \
         .with_http_config(config) \
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \

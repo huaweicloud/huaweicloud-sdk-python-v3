@@ -2,9 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DevstarClient
-from huaweicloudsdkdevstar.v1.devstar_client import DevstarClient
-from huaweicloudsdkdevstar.v1.devstar_async_client import DevstarAsyncClient
+# import DevStarClient
+from huaweicloudsdkdevstar.v1.devstar_client import DevStarClient
+from huaweicloudsdkdevstar.v1.devstar_async_client import DevStarAsyncClient
 # import models into sdk package
 from huaweicloudsdkdevstar.v1.model.download_application_code_request import DownloadApplicationCodeRequest
 from huaweicloudsdkdevstar.v1.model.download_application_code_response import DownloadApplicationCodeResponse

@@ -14,7 +14,7 @@ from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
-class DevstarClient(Client):
+class DevStarClient(Client):
     """
     :param configuration: .Configuration object for this client
     :param pool_threads: The number of threads to use for async requests
@@ -34,7 +34,7 @@ class DevstarClient(Client):
     }
 
     def __init__(self):
-        super(DevstarClient, self).__init__()
+        super(DevStarClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdevstar.v1.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 

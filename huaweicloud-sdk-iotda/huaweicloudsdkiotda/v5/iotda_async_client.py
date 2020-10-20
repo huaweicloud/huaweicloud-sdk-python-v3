@@ -42,6 +42,320 @@ class IoTDAAsyncClient(Client):
     def new_builder(clazz):
         return ClientBuilder(clazz)
 
+    def create_access_code_async(self, request):
+        """生成接入凭证
+
+        接入凭证是用于客户端使用AMQP等协议与平台建链的一个认证凭据。只保留一条记录，如果重复调用只会重置接入凭证，使得之前的失效。
+
+        :param CreateAccessCodeRequest request
+        :return: CreateAccessCodeResponse
+        """
+        return self.create_access_code_with_http_info(request)
+
+    def create_access_code_with_http_info(self, request):
+        """生成接入凭证
+
+        接入凭证是用于客户端使用AMQP等协议与平台建链的一个认证凭据。只保留一条记录，如果重复调用只会重置接入凭证，使得之前的失效。
+
+        :param CreateAccessCodeRequest request
+        :return: CreateAccessCodeResponse
+        """
+
+        all_params = ['create_access_code_request_body', 'sp_auth_token', 'stage_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/auth/accesscode',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateAccessCodeResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def add_queue_async(self, request):
+        """创建AMQP队列
+
+        应用服务器可调用此接口在物联网平台创建一个AMQP队列。每个租户只能创建100个队列，若超过规格，则创建失败，若队列名称与已有的队列名称相同，则创建失败。
+
+        :param AddQueueRequest request
+        :return: AddQueueResponse
+        """
+        return self.add_queue_with_http_info(request)
+
+    def add_queue_with_http_info(self, request):
+        """创建AMQP队列
+
+        应用服务器可调用此接口在物联网平台创建一个AMQP队列。每个租户只能创建100个队列，若超过规格，则创建失败，若队列名称与已有的队列名称相同，则创建失败。
+
+        :param AddQueueRequest request
+        :return: AddQueueResponse
+        """
+
+        all_params = ['add_queue_re_quest_body', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/amqp-queues',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddQueueResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_show_queue_async(self, request):
+        """查询AMQP列表
+
+        应用服务器可调用此接口查询物联网平台中的AMQP队列信息列表。可通过队列名称作模糊查询，支持分页。
+
+        :param BatchShowQueueRequest request
+        :return: BatchShowQueueResponse
+        """
+        return self.batch_show_queue_with_http_info(request)
+
+    def batch_show_queue_with_http_info(self, request):
+        """查询AMQP列表
+
+        应用服务器可调用此接口查询物联网平台中的AMQP队列信息列表。可通过队列名称作模糊查询，支持分页。
+
+        :param BatchShowQueueRequest request
+        :return: BatchShowQueueResponse
+        """
+
+        all_params = ['instance_id', 'queue_name', 'limit', 'marker', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'queue_name' in local_var_params:
+            query_params.append(('queue_name', local_var_params['queue_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/amqp-queues',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchShowQueueResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_queue_async(self, request):
+        """删除AMQP队列
+
+        应用服务器可调用此接口在物联网平台上删除指定AMQP队列。若当前队列正在使用，则会删除失败。
+
+        :param DeleteQueueRequest request
+        :return: DeleteQueueResponse
+        """
+        return self.delete_queue_with_http_info(request)
+
+    def delete_queue_with_http_info(self, request):
+        """删除AMQP队列
+
+        应用服务器可调用此接口在物联网平台上删除指定AMQP队列。若当前队列正在使用，则会删除失败。
+
+        :param DeleteQueueRequest request
+        :return: DeleteQueueResponse
+        """
+
+        all_params = ['queue_id', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'queue_id' in local_var_params:
+            path_params['queue_id'] = local_var_params['queue_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/amqp-queues/{queue_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteQueueResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_queue_async(self, request):
+        """查询单个AMQP队列
+
+        应用服务器可调用此接口查询物联网平台中指定队列的详细信息。
+
+        :param ShowQueueRequest request
+        :return: ShowQueueResponse
+        """
+        return self.show_queue_with_http_info(request)
+
+    def show_queue_with_http_info(self, request):
+        """查询单个AMQP队列
+
+        应用服务器可调用此接口查询物联网平台中指定队列的详细信息。
+
+        :param ShowQueueRequest request
+        :return: ShowQueueResponse
+        """
+
+        all_params = ['queue_id', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'queue_id' in local_var_params:
+            path_params['queue_id'] = local_var_params['queue_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/amqp-queues/{queue_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowQueueResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def add_application_async(self, request):
         """创建资源空间
 
@@ -2751,6 +3065,664 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdatePropertiesResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_routing_rule_async(self, request):
+        """创建规则触发条件
+
+        应用服务器可调用此接口在物联网平台创建一条规则触发条件。
+
+        :param CreateRoutingRuleRequest request
+        :return: CreateRoutingRuleResponse
+        """
+        return self.create_routing_rule_with_http_info(request)
+
+    def create_routing_rule_with_http_info(self, request):
+        """创建规则触发条件
+
+        应用服务器可调用此接口在物联网平台创建一条规则触发条件。
+
+        :param CreateRoutingRuleRequest request
+        :return: CreateRoutingRuleResponse
+        """
+
+        all_params = ['create_routing_rule_request_body', 'stage_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/routing-rule/rules',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateRoutingRuleResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_rule_action_async(self, request):
+        """创建规则动作
+
+        应用服务器可调用此接口在物联网平台创建一条规则动作。
+
+        :param CreateRuleActionRequest request
+        :return: CreateRuleActionResponse
+        """
+        return self.create_rule_action_with_http_info(request)
+
+    def create_rule_action_with_http_info(self, request):
+        """创建规则动作
+
+        应用服务器可调用此接口在物联网平台创建一条规则动作。
+
+        :param CreateRuleActionRequest request
+        :return: CreateRuleActionResponse
+        """
+
+        all_params = ['create_rule_action_request_body', 'stage_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/routing-rule/actions',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateRuleActionResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_routing_rule_async(self, request):
+        """删除规则触发条件
+
+        应用服务器可调用此接口删除物联网平台中的指定规则条件。
+
+        :param DeleteRoutingRuleRequest request
+        :return: DeleteRoutingRuleResponse
+        """
+        return self.delete_routing_rule_with_http_info(request)
+
+    def delete_routing_rule_with_http_info(self, request):
+        """删除规则触发条件
+
+        应用服务器可调用此接口删除物联网平台中的指定规则条件。
+
+        :param DeleteRoutingRuleRequest request
+        :return: DeleteRoutingRuleResponse
+        """
+
+        all_params = ['rule_id', 'stage_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/routing-rule/rules/{rule_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteRoutingRuleResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_rule_action_async(self, request):
+        """删除规则动作
+
+        应用服务器可调用此接口删除物联网平台中的指定规则动作。
+
+        :param DeleteRuleActionRequest request
+        :return: DeleteRuleActionResponse
+        """
+        return self.delete_rule_action_with_http_info(request)
+
+    def delete_rule_action_with_http_info(self, request):
+        """删除规则动作
+
+        应用服务器可调用此接口删除物联网平台中的指定规则动作。
+
+        :param DeleteRuleActionRequest request
+        :return: DeleteRuleActionResponse
+        """
+
+        all_params = ['action_id', 'stage_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'action_id' in local_var_params:
+            path_params['action_id'] = local_var_params['action_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/routing-rule/actions/{action_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteRuleActionResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_routing_rules_async(self, request):
+        """查询规则条件列表
+
+        应用服务器可调用此接口查询物联网平台中设置的规则条件列表。
+
+        :param ListRoutingRulesRequest request
+        :return: ListRoutingRulesResponse
+        """
+        return self.list_routing_rules_with_http_info(request)
+
+    def list_routing_rules_with_http_info(self, request):
+        """查询规则条件列表
+
+        应用服务器可调用此接口查询物联网平台中设置的规则条件列表。
+
+        :param ListRoutingRulesRequest request
+        :return: ListRoutingRulesResponse
+        """
+
+        all_params = ['stage_auth_token', 'instance_id', 'resource', 'event', 'app_type', 'app_id', 'rule_name', 'limit', 'marker', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource' in local_var_params:
+            query_params.append(('resource', local_var_params['resource']))
+        if 'event' in local_var_params:
+            query_params.append(('event', local_var_params['event']))
+        if 'app_type' in local_var_params:
+            query_params.append(('app_type', local_var_params['app_type']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if 'rule_name' in local_var_params:
+            query_params.append(('rule_name', local_var_params['rule_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/routing-rule/rules',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListRoutingRulesResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_rule_actions_async(self, request):
+        """查询规则动作列表
+
+        应用服务器可调用此接口查询物联网平台中设置的规则动作列表。
+
+        :param ListRuleActionsRequest request
+        :return: ListRuleActionsResponse
+        """
+        return self.list_rule_actions_with_http_info(request)
+
+    def list_rule_actions_with_http_info(self, request):
+        """查询规则动作列表
+
+        应用服务器可调用此接口查询物联网平台中设置的规则动作列表。
+
+        :param ListRuleActionsRequest request
+        :return: ListRuleActionsResponse
+        """
+
+        all_params = ['stage_auth_token', 'instance_id', 'rule_id', 'channel', 'app_type', 'app_id', 'limit', 'marker', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'rule_id' in local_var_params:
+            query_params.append(('rule_id', local_var_params['rule_id']))
+        if 'channel' in local_var_params:
+            query_params.append(('channel', local_var_params['channel']))
+        if 'app_type' in local_var_params:
+            query_params.append(('app_type', local_var_params['app_type']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/routing-rule/actions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListRuleActionsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_routing_rule_async(self, request):
+        """查询规则条件
+
+        应用服务器可调用此接口查询物联网平台中指定规则条件的配置信息。
+
+        :param ShowRoutingRuleRequest request
+        :return: ShowRoutingRuleResponse
+        """
+        return self.show_routing_rule_with_http_info(request)
+
+    def show_routing_rule_with_http_info(self, request):
+        """查询规则条件
+
+        应用服务器可调用此接口查询物联网平台中指定规则条件的配置信息。
+
+        :param ShowRoutingRuleRequest request
+        :return: ShowRoutingRuleResponse
+        """
+
+        all_params = ['rule_id', 'stage_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/routing-rule/rules/{rule_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowRoutingRuleResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_rule_action_async(self, request):
+        """查询规则动作
+
+        应用服务器可调用此接口查询物联网平台中指定规则动作的配置信息。
+
+        :param ShowRuleActionRequest request
+        :return: ShowRuleActionResponse
+        """
+        return self.show_rule_action_with_http_info(request)
+
+    def show_rule_action_with_http_info(self, request):
+        """查询规则动作
+
+        应用服务器可调用此接口查询物联网平台中指定规则动作的配置信息。
+
+        :param ShowRuleActionRequest request
+        :return: ShowRuleActionResponse
+        """
+
+        all_params = ['action_id', 'stage_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'action_id' in local_var_params:
+            path_params['action_id'] = local_var_params['action_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/routing-rule/actions/{action_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowRuleActionResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_routing_rule_async(self, request):
+        """修改规则触发条件
+
+        应用服务器可调用此接口修改物联网平台中指定规则条件的配置参数。
+
+        :param UpdateRoutingRuleRequest request
+        :return: UpdateRoutingRuleResponse
+        """
+        return self.update_routing_rule_with_http_info(request)
+
+    def update_routing_rule_with_http_info(self, request):
+        """修改规则触发条件
+
+        应用服务器可调用此接口修改物联网平台中指定规则条件的配置参数。
+
+        :param UpdateRoutingRuleRequest request
+        :return: UpdateRoutingRuleResponse
+        """
+
+        all_params = ['rule_id', 'update_routing_rule_request_body', 'stage_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/routing-rule/rules/{rule_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateRoutingRuleResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_rule_action_async(self, request):
+        """修改规则动作
+
+        应用服务器可调用此接口修改物联网平台中指定规则动作的配置。
+
+        :param UpdateRuleActionRequest request
+        :return: UpdateRuleActionResponse
+        """
+        return self.update_rule_action_with_http_info(request)
+
+    def update_rule_action_with_http_info(self, request):
+        """修改规则动作
+
+        应用服务器可调用此接口修改物联网平台中指定规则动作的配置。
+
+        :param UpdateRuleActionRequest request
+        :return: UpdateRuleActionResponse
+        """
+
+        all_params = ['action_id', 'update_rule_action_request_body', 'stage_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'action_id' in local_var_params:
+            path_params['action_id'] = local_var_params['action_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/routing-rule/actions/{action_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateRuleActionResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)

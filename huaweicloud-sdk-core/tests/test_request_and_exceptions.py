@@ -23,7 +23,7 @@ import pytest
 from requests import Response, Request
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
-from huaweicloudsdkcore.client import Client
+from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.exceptions.exceptions import ClientRequestException, ServerResponseException
 from huaweicloudsdkcore.http.http_config import HttpConfig
 from tests.model.vpc import ListVpcsResponse
@@ -40,7 +40,7 @@ def client():
     config.ignore_ssl_verification = True
     credentials = BasicCredentials(ak, sk, project_id)
 
-    client = Client().new_builder(Client) \
+    client = ClientBuilder(Client) \
         .with_http_config(config) \
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \

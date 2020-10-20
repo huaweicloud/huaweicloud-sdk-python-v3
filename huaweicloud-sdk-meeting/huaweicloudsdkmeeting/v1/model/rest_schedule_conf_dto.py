@@ -42,7 +42,8 @@ class RestScheduleConfDTO:
         'record_auth_type': 'int',
         'vmr_flag': 'int',
         'cycle_params': 'CycleParams',
-        'vmr_id': 'str'
+        'vmr_id': 'str',
+        'concurrent_participants': 'int'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class RestScheduleConfDTO:
         'record_auth_type': 'recordAuthType',
         'vmr_flag': 'vmrFlag',
         'cycle_params': 'cycleParams',
-        'vmr_id': 'vmrID'
+        'vmr_id': 'vmrID',
+        'concurrent_participants': 'concurrentParticipants'
     }
 
-    def __init__(self, conference_type=0, start_time=None, length=30, subject=None, media_types=None, groupuri=None, attendees=None, is_auto_record=0, encrypt_mode=None, language=None, time_zone_id=None, record_type=0, live_address=None, aux_address=None, record_aux_stream=None, conf_config_info=None, record_auth_type=None, vmr_flag=0, cycle_params=None, vmr_id=None):
+    def __init__(self, conference_type=0, start_time=None, length=30, subject=None, media_types=None, groupuri=None, attendees=None, is_auto_record=0, encrypt_mode=None, language=None, time_zone_id=None, record_type=0, live_address=None, aux_address=None, record_aux_stream=None, conf_config_info=None, record_auth_type=None, vmr_flag=0, cycle_params=None, vmr_id=None, concurrent_participants=None):
         """RestScheduleConfDTO - a model defined in huaweicloud sdk"""
         
         
@@ -93,6 +95,7 @@ class RestScheduleConfDTO:
         self._vmr_flag = None
         self._cycle_params = None
         self._vmr_id = None
+        self._concurrent_participants = None
         self.discriminator = None
 
         if conference_type is not None:
@@ -134,6 +137,8 @@ class RestScheduleConfDTO:
             self.cycle_params = cycle_params
         if vmr_id is not None:
             self.vmr_id = vmr_id
+        if concurrent_participants is not None:
+            self.concurrent_participants = concurrent_participants
 
     @property
     def conference_type(self):
@@ -570,6 +575,28 @@ class RestScheduleConfDTO:
         :type: str
         """
         self._vmr_id = vmr_id
+
+    @property
+    def concurrent_participants(self):
+        """Gets the concurrent_participants of this RestScheduleConfDTO.
+
+        会议方数，会议最大与会人数限制
+
+        :return: The concurrent_participants of this RestScheduleConfDTO.
+        :rtype: int
+        """
+        return self._concurrent_participants
+
+    @concurrent_participants.setter
+    def concurrent_participants(self, concurrent_participants):
+        """Sets the concurrent_participants of this RestScheduleConfDTO.
+
+        会议方数，会议最大与会人数限制
+
+        :param concurrent_participants: The concurrent_participants of this RestScheduleConfDTO.
+        :type: int
+        """
+        self._concurrent_participants = concurrent_participants
 
     def to_dict(self):
         """Returns the model properties as a dict"""

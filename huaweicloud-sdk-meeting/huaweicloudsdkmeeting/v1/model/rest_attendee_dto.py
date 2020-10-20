@@ -37,7 +37,8 @@ class RestAttendeeDTO:
         'type': 'str',
         'address': 'str',
         'dept_uuid': 'str',
-        'dept_name': 'str'
+        'dept_name': 'str',
+        'app_id': 'str'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class RestAttendeeDTO:
         'type': 'type',
         'address': 'address',
         'dept_uuid': 'deptUUID',
-        'dept_name': 'deptName'
+        'dept_name': 'deptName',
+        'app_id': 'appId'
     }
 
-    def __init__(self, user_uuid=None, account_id=None, name=None, role=0, phone=None, phone2=None, phone3=None, email=None, sms=None, is_mute=0, is_auto_invite=1, type=None, address=None, dept_uuid=None, dept_name=None):
+    def __init__(self, user_uuid=None, account_id=None, name=None, role=0, phone=None, phone2=None, phone3=None, email=None, sms=None, is_mute=0, is_auto_invite=1, type=None, address=None, dept_uuid=None, dept_name=None, app_id=None):
         """RestAttendeeDTO - a model defined in huaweicloud sdk"""
         
         
@@ -78,6 +80,7 @@ class RestAttendeeDTO:
         self._address = None
         self._dept_uuid = None
         self._dept_name = None
+        self._app_id = None
         self.discriminator = None
 
         if user_uuid is not None:
@@ -110,6 +113,8 @@ class RestAttendeeDTO:
             self.dept_uuid = dept_uuid
         if dept_name is not None:
             self.dept_name = dept_name
+        if app_id is not None:
+            self.app_id = app_id
 
     @property
     def user_uuid(self):
@@ -440,6 +445,28 @@ class RestAttendeeDTO:
         :type: str
         """
         self._dept_name = dept_name
+
+    @property
+    def app_id(self):
+        """Gets the app_id of this RestAttendeeDTO.
+
+        会议Paas服务APPID。
+
+        :return: The app_id of this RestAttendeeDTO.
+        :rtype: str
+        """
+        return self._app_id
+
+    @app_id.setter
+    def app_id(self, app_id):
+        """Sets the app_id of this RestAttendeeDTO.
+
+        会议Paas服务APPID。
+
+        :param app_id: The app_id of this RestAttendeeDTO.
+        :type: str
+        """
+        self._app_id = app_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -59,7 +59,8 @@ class ConferenceInfo:
         'terminl_count': 'int',
         'normal_count': 'int',
         'dept_name': 'str',
-        'vmr_id': 'str'
+        'vmr_id': 'str',
+        'concurrent_participants': 'int'
     }
 
     attribute_map = {
@@ -99,10 +100,11 @@ class ConferenceInfo:
         'terminl_count': 'terminlCount',
         'normal_count': 'normalCount',
         'dept_name': 'deptName',
-        'vmr_id': 'vmrID'
+        'vmr_id': 'vmrID',
+        'concurrent_participants': 'concurrentParticipants'
     }
 
-    def __init__(self, conference_id=None, subject=None, size=None, time_zone_id=None, start_time=None, end_time=None, media_types=None, conference_state=None, language=None, access_number=None, password_entry=None, user_uuid=None, scheduser_name=None, conference_type=None, conf_type=None, cycle_params=None, is_auto_mute=None, is_auto_record=None, chair_join_uri=None, guest_join_uri=None, audience_join_uri=None, record_type=None, aux_address=None, live_address=None, record_aux_stream=None, record_auth_type=None, live_url=None, conf_config_info=None, vmr_flag=None, is_has_record_file=False, vmr_conference_id=None, conf_uuid=None, part_attendee_info=None, terminl_count=None, normal_count=None, dept_name=None, vmr_id=None):
+    def __init__(self, conference_id=None, subject=None, size=None, time_zone_id=None, start_time=None, end_time=None, media_types=None, conference_state=None, language=None, access_number=None, password_entry=None, user_uuid=None, scheduser_name=None, conference_type=None, conf_type=None, cycle_params=None, is_auto_mute=None, is_auto_record=None, chair_join_uri=None, guest_join_uri=None, audience_join_uri=None, record_type=None, aux_address=None, live_address=None, record_aux_stream=None, record_auth_type=None, live_url=None, conf_config_info=None, vmr_flag=None, is_has_record_file=False, vmr_conference_id=None, conf_uuid=None, part_attendee_info=None, terminl_count=None, normal_count=None, dept_name=None, vmr_id=None, concurrent_participants=None):
         """ConferenceInfo - a model defined in huaweicloud sdk"""
         
         
@@ -144,6 +146,7 @@ class ConferenceInfo:
         self._normal_count = None
         self._dept_name = None
         self._vmr_id = None
+        self._concurrent_participants = None
         self.discriminator = None
 
         if conference_id is not None:
@@ -220,6 +223,8 @@ class ConferenceInfo:
             self.dept_name = dept_name
         if vmr_id is not None:
             self.vmr_id = vmr_id
+        if concurrent_participants is not None:
+            self.concurrent_participants = concurrent_participants
 
     @property
     def conference_id(self):
@@ -1030,6 +1035,28 @@ class ConferenceInfo:
         :type: str
         """
         self._vmr_id = vmr_id
+
+    @property
+    def concurrent_participants(self):
+        """Gets the concurrent_participants of this ConferenceInfo.
+
+        会议方数，会议最大与会人数限制
+
+        :return: The concurrent_participants of this ConferenceInfo.
+        :rtype: int
+        """
+        return self._concurrent_participants
+
+    @concurrent_participants.setter
+    def concurrent_participants(self, concurrent_participants):
+        """Sets the concurrent_participants of this ConferenceInfo.
+
+        会议方数，会议最大与会人数限制
+
+        :param concurrent_participants: The concurrent_participants of this ConferenceInfo.
+        :type: int
+        """
+        self._concurrent_participants = concurrent_participants
 
     def to_dict(self):
         """Returns the model properties as a dict"""

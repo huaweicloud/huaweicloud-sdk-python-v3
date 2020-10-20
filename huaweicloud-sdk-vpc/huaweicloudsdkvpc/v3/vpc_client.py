@@ -47,8 +47,8 @@ class VpcClient(Client):
 
         批量创建辅助弹性网卡
 
-        :param BatchCreateSubNetworkInterfaceV3Request request
-        :return: BatchCreateSubNetworkInterfaceV3Response
+        :param BatchCreateSubNetworkInterface_v3Request request
+        :return: BatchCreateSubNetworkInterface_v3Response
         """
         return self.batch_create_sub_network_interface_v3_with_http_info(request)
 
@@ -57,8 +57,8 @@ class VpcClient(Client):
 
         批量创建辅助弹性网卡
 
-        :param BatchCreateSubNetworkInterfaceV3Request request
-        :return: BatchCreateSubNetworkInterfaceV3Response
+        :param BatchCreateSubNetworkInterface_v3Request request
+        :return: BatchCreateSubNetworkInterface_v3Response
         """
 
         all_params = ['batch_create_sub_network_interface_v3_request_body']
@@ -96,7 +96,7 @@ class VpcClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='BatchCreateSubNetworkInterfaceV3Response',
+            response_type='BatchCreateSubNetworkInterface_v3Response',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)

@@ -1,5 +1,39 @@
+## 3.0.18-beta 2020-10-20
+## HuaweiCloud SDK DCS
+ - ### Features
+    - None
+ - ### Bug Fix
+    - None
+ - ### Change
+    - Remove redundant `Dcs` in interfaces.
+
+## HuaweiCloud SDK ELB
+ - ### Features
+    - Support more interfaces of version v2.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK IoTDA
+ - ### Features
+    - Support more interfaces related to rules.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK Meeting
+ - ### Features
+    - Support more interfaces.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+
 ## 3.0.17-beta 2020-10-14
-## HuaweiCloud SDK Bss
+## HuaweiCloud SDK BSS
  - ### Features
     - Partner center supports exporting product catalog prices.
  - ### Bug Fix
@@ -7,7 +41,7 @@
  - ### Change
     - None
 
-## HuaweiCloud SDK Dcs
+## HuaweiCloud SDK DCS
  - ### Features
     - Support more interfaces.
  - ### Bug Fix
@@ -427,4 +461,14 @@
   - ### Bug Fix
     - None
   - ### Change
+    - None 
+    
+# 3.0.17-beta 2020-10-16
+## HuaweiCloud SDK DevStar
+ - ### Features
+    - Change of title from Devstar to DevStar.
+    - Supplemental DevStar Automation Test Cases.
+ - ### Bug Fix
+    - None
+ - ### Change
     - None    

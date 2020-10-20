@@ -47,8 +47,8 @@ class EpsClient(Client):
 
         创建企业项目。
 
-        :param CreateEpRequest request
-        :return: CreateEpResponse
+        :param CreateEPRequest request
+        :return: CreateEPResponse
         """
         return self.create_ep_with_http_info(request)
 
@@ -57,8 +57,8 @@ class EpsClient(Client):
 
         创建企业项目。
 
-        :param CreateEpRequest request
-        :return: CreateEpResponse
+        :param CreateEPRequest request
+        :return: CreateEPResponse
         """
 
         all_params = ['create_ep']
@@ -96,7 +96,7 @@ class EpsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='CreateEpResponse',
+            response_type='CreateEPResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -107,8 +107,8 @@ class EpsClient(Client):
 
         停用企业项目。
 
-        :param DisableEpRequest request
-        :return: DisableEpResponse
+        :param DisableEPRequest request
+        :return: DisableEPResponse
         """
         return self.disable_ep_with_http_info(request)
 
@@ -117,8 +117,8 @@ class EpsClient(Client):
 
         停用企业项目。
 
-        :param DisableEpRequest request
-        :return: DisableEpResponse
+        :param DisableEPRequest request
+        :return: DisableEPResponse
         """
 
         all_params = ['enterprise_project_id', 'action']
@@ -158,7 +158,7 @@ class EpsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='DisableEpResponse',
+            response_type='DisableEPResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -169,8 +169,8 @@ class EpsClient(Client):
 
         启用企业项目。
 
-        :param EnableEpRequest request
-        :return: EnableEpResponse
+        :param EnableEPRequest request
+        :return: EnableEPResponse
         """
         return self.enable_ep_with_http_info(request)
 
@@ -179,8 +179,8 @@ class EpsClient(Client):
 
         启用企业项目。
 
-        :param EnableEpRequest request
-        :return: EnableEpResponse
+        :param EnableEPRequest request
+        :return: EnableEPResponse
         """
 
         all_params = ['enterprise_project_id', 'action']
@@ -220,7 +220,7 @@ class EpsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='EnableEpResponse',
+            response_type='EnableEPResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -287,8 +287,8 @@ class EpsClient(Client):
 
         查询当前用户已授权的企业项目列表，用户可以使用企业项目绑定资源。
 
-        :param ListEpRequest request
-        :return: ListEpResponse
+        :param ListEPRequest request
+        :return: ListEPResponse
         """
         return self.list_ep_with_http_info(request)
 
@@ -297,8 +297,8 @@ class EpsClient(Client):
 
         查询当前用户已授权的企业项目列表，用户可以使用企业项目绑定资源。
 
-        :param ListEpRequest request
-        :return: ListEpResponse
+        :param ListEPRequest request
+        :return: ListEPResponse
         """
 
         all_params = ['offset', 'id', 'name', 'status', 'limit', 'sort_key', 'sort_dir']
@@ -346,7 +346,7 @@ class EpsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ListEpResponse',
+            response_type='ListEPResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -419,8 +419,8 @@ class EpsClient(Client):
 
         修改企业项目。当前仅支持修改名称和描述。
 
-        :param ModifyEpRequest request
-        :return: ModifyEpResponse
+        :param ModifyEPRequest request
+        :return: ModifyEPResponse
         """
         return self.modify_ep_with_http_info(request)
 
@@ -429,8 +429,8 @@ class EpsClient(Client):
 
         修改企业项目。当前仅支持修改名称和描述。
 
-        :param ModifyEpRequest request
-        :return: ModifyEpResponse
+        :param ModifyEPRequest request
+        :return: ModifyEPResponse
         """
 
         all_params = ['enterprise_project_id', 'modify_ep']
@@ -470,7 +470,7 @@ class EpsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ModifyEpResponse',
+            response_type='ModifyEPResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -539,8 +539,8 @@ class EpsClient(Client):
 
         查询企业项目详情。
 
-        :param ShowEpRequest request
-        :return: ShowEpResponse
+        :param ShowEPRequest request
+        :return: ShowEPResponse
         """
         return self.show_ep_with_http_info(request)
 
@@ -549,8 +549,8 @@ class EpsClient(Client):
 
         查询企业项目详情。
 
-        :param ShowEpRequest request
-        :return: ShowEpResponse
+        :param ShowEPRequest request
+        :return: ShowEPResponse
         """
 
         all_params = ['enterprise_project_id']
@@ -586,7 +586,7 @@ class EpsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowEpResponse',
+            response_type='ShowEPResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -597,8 +597,8 @@ class EpsClient(Client):
 
         查询企业项目的配额信息。
 
-        :param ShowEpQuotaRequest request
-        :return: ShowEpQuotaResponse
+        :param ShowEPQuotaRequest request
+        :return: ShowEPQuotaResponse
         """
         return self.show_ep_quota_with_http_info(request)
 
@@ -607,8 +607,8 @@ class EpsClient(Client):
 
         查询企业项目的配额信息。
 
-        :param ShowEpQuotaRequest request
-        :return: ShowEpQuotaResponse
+        :param ShowEPQuotaRequest request
+        :return: ShowEPQuotaResponse
         """
 
         all_params = []
@@ -642,7 +642,7 @@ class EpsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowEpQuotaResponse',
+            response_type='ShowEPQuotaResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -653,8 +653,8 @@ class EpsClient(Client):
 
         查询企业项目下绑定的资源详情。
 
-        :param ShowResourceBindEpRequest request
-        :return: ShowResourceBindEpResponse
+        :param ShowResourceBindEPRequest request
+        :return: ShowResourceBindEPResponse
         """
         return self.show_resource_bind_ep_with_http_info(request)
 
@@ -663,8 +663,8 @@ class EpsClient(Client):
 
         查询企业项目下绑定的资源详情。
 
-        :param ShowResourceBindEpRequest request
-        :return: ShowResourceBindEpResponse
+        :param ShowResourceBindEPRequest request
+        :return: ShowResourceBindEPResponse
         """
 
         all_params = ['enterprise_project_id', 'req_ep_resouce']
@@ -704,7 +704,7 @@ class EpsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowResourceBindEpResponse',
+            response_type='ShowResourceBindEPResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)

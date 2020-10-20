@@ -42,26 +42,26 @@ class DcsClient(Client):
     def new_builder(clazz):
         return ClientBuilder(clazz)
 
-    def batch_create_or_delete_dcs_tags(self, request):
+    def batch_create_or_delete_tags(self, request):
         """批量添加或删除标签
 
         为指定实例批量添加标签，或批量删除标签。
 
-        :param BatchCreateOrDeleteDcsTagsRequest request
-        :return: BatchCreateOrDeleteDcsTagsResponse
+        :param BatchCreateOrDeleteTagsRequest request
+        :return: BatchCreateOrDeleteTagsResponse
         """
-        return self.batch_create_or_delete_dcs_tags_with_http_info(request)
+        return self.batch_create_or_delete_tags_with_http_info(request)
 
-    def batch_create_or_delete_dcs_tags_with_http_info(self, request):
+    def batch_create_or_delete_tags_with_http_info(self, request):
         """批量添加或删除标签
 
         为指定实例批量添加标签，或批量删除标签。
 
-        :param BatchCreateOrDeleteDcsTagsRequest request
-        :return: BatchCreateOrDeleteDcsTagsResponse
+        :param BatchCreateOrDeleteTagsRequest request
+        :return: BatchCreateOrDeleteTagsResponse
         """
 
-        all_params = ['instance_id', 'batch_create_or_delete_dcs_tags_request_body']
+        all_params = ['instance_id', 'batch_create_or_delete_tags_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -98,32 +98,32 @@ class DcsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='BatchCreateOrDeleteDcsTagsResponse',
+            response_type='BatchCreateOrDeleteTagsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def batch_delete_dcs_instances(self, request):
+    def batch_delete_instances(self, request):
         """批量删除实例
 
         批量删除多个缓存实例。
 
-        :param BatchDeleteDcsInstancesRequest request
-        :return: BatchDeleteDcsInstancesResponse
+        :param BatchDeleteInstancesRequest request
+        :return: BatchDeleteInstancesResponse
         """
-        return self.batch_delete_dcs_instances_with_http_info(request)
+        return self.batch_delete_instances_with_http_info(request)
 
-    def batch_delete_dcs_instances_with_http_info(self, request):
+    def batch_delete_instances_with_http_info(self, request):
         """批量删除实例
 
         批量删除多个缓存实例。
 
-        :param BatchDeleteDcsInstancesRequest request
-        :return: BatchDeleteDcsInstancesResponse
+        :param BatchDeleteInstancesRequest request
+        :return: BatchDeleteInstancesResponse
         """
 
-        all_params = ['all_failure', 'batch_delete_dcs_instances_request_body']
+        all_params = ['all_failure', 'batch_delete_instances_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -160,7 +160,7 @@ class DcsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='BatchDeleteDcsInstancesResponse',
+            response_type='BatchDeleteInstancesResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -344,66 +344,6 @@ class DcsClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def create_dcs_instance(self, request):
-        """创建缓存实例
-
-        创建缓存实例，该接口创建的缓存实例支持按需计费和包周期两种方式。
-
-        :param CreateDcsInstanceRequest request
-        :return: CreateDcsInstanceResponse
-        """
-        return self.create_dcs_instance_with_http_info(request)
-
-    def create_dcs_instance_with_http_info(self, request):
-        """创建缓存实例
-
-        创建缓存实例，该接口创建的缓存实例支持按需计费和包周期两种方式。
-
-        :param CreateDcsInstanceRequest request
-        :return: CreateDcsInstanceResponse
-        """
-
-        all_params = ['create_dcs_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreateDcsInstanceResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def create_hotkey_scan_task(self, request):
         """创建热key分析任务
 
@@ -457,6 +397,66 @@ class DcsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateHotkeyScanTaskResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_instance(self, request):
+        """创建缓存实例
+
+        创建缓存实例，该接口创建的缓存实例支持按需计费和包周期两种方式。
+
+        :param CreateInstanceRequest request
+        :return: CreateInstanceResponse
+        """
+        return self.create_instance_with_http_info(request)
+
+    def create_instance_with_http_info(self, request):
+        """创建缓存实例
+
+        创建缓存实例，该接口创建的缓存实例支持按需计费和包周期两种方式。
+
+        :param CreateInstanceRequest request
+        :return: CreateInstanceResponse
+        """
+
+        all_params = ['create_instance_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateInstanceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1010,23 +1010,23 @@ class DcsClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def delete_single_dcs_instance(self, request):
+    def delete_single_instance(self, request):
         """删除实例
 
         删除指定的缓存实例，释放该实例的所有资源。  > 如果是删除按需资源，请按照本章节执行；如果是删除包周期资源，即退订，请参考[退订包周期资源](https://support.huaweicloud.com/api-oce/zh-cn_topic_0082522030.html#section2)。 
 
-        :param DeleteSingleDcsInstanceRequest request
-        :return: DeleteSingleDcsInstanceResponse
+        :param DeleteSingleInstanceRequest request
+        :return: DeleteSingleInstanceResponse
         """
-        return self.delete_single_dcs_instance_with_http_info(request)
+        return self.delete_single_instance_with_http_info(request)
 
-    def delete_single_dcs_instance_with_http_info(self, request):
+    def delete_single_instance_with_http_info(self, request):
         """删除实例
 
         删除指定的缓存实例，释放该实例的所有资源。  > 如果是删除按需资源，请按照本章节执行；如果是删除包周期资源，即退订，请参考[退订包周期资源](https://support.huaweicloud.com/api-oce/zh-cn_topic_0082522030.html#section2)。 
 
-        :param DeleteSingleDcsInstanceRequest request
-        :return: DeleteSingleDcsInstanceResponse
+        :param DeleteSingleInstanceRequest request
+        :return: DeleteSingleInstanceResponse
         """
 
         all_params = ['instance_id']
@@ -1062,81 +1062,7 @@ class DcsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='DeleteSingleDcsInstanceResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_all_dcs_instances(self, request):
-        """查询所有实例列表
-
-        查询租户的缓存实例列表，支持按照条件查询。
-
-        :param ListAllDcsInstancesRequest request
-        :return: ListAllDcsInstancesResponse
-        """
-        return self.list_all_dcs_instances_with_http_info(request)
-
-    def list_all_dcs_instances_with_http_info(self, request):
-        """查询所有实例列表
-
-        查询租户的缓存实例列表，支持按照条件查询。
-
-        :param ListAllDcsInstancesRequest request
-        :return: ListAllDcsInstancesResponse
-        """
-
-        all_params = ['id', 'include_failure', 'name', 'offset', 'limit', 'status', 'name_equal', 'tags', 'ip']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-        if 'include_failure' in local_var_params:
-            query_params.append(('include_failure', local_var_params['include_failure']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'name_equal' in local_var_params:
-            query_params.append(('name_equal', local_var_params['name_equal']))
-        if 'tags' in local_var_params:
-            query_params.append(('tags', local_var_params['tags']))
-        if 'ip' in local_var_params:
-            query_params.append(('ip', local_var_params['ip']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListAllDcsInstancesResponse',
+            response_type='DeleteSingleInstanceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1463,8 +1389,8 @@ class DcsClient(Client):
 
         查询主维度对象列表，主维度ID当前支持dcs_instance_id，dcs_memcached_instance_id。 > 该接口当前仅在中国华南区开放。 
 
-        :param ListCesMonitoredObjectsRequest request
-        :return: ListCesMonitoredObjectsResponse
+        :param ListCESMonitoredObjectsRequest request
+        :return: ListCESMonitoredObjectsResponse
         """
         return self.list_ces_monitored_objects_with_http_info(request)
 
@@ -1473,8 +1399,8 @@ class DcsClient(Client):
 
         查询主维度对象列表，主维度ID当前支持dcs_instance_id，dcs_memcached_instance_id。 > 该接口当前仅在中国华南区开放。 
 
-        :param ListCesMonitoredObjectsRequest request
-        :return: ListCesMonitoredObjectsResponse
+        :param ListCESMonitoredObjectsRequest request
+        :return: ListCESMonitoredObjectsResponse
         """
 
         all_params = ['dim_name', 'offset', 'limit']
@@ -1514,7 +1440,7 @@ class DcsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ListCesMonitoredObjectsResponse',
+            response_type='ListCESMonitoredObjectsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1573,62 +1499,6 @@ class DcsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListConfigurationsResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_dcs_tags_of_tenant(self, request):
-        """查询租户所有标签
-
-        查询租户在指定Project中实例类型的所有资源标签集合。
-
-        :param ListDcsTagsOfTenantRequest request
-        :return: ListDcsTagsOfTenantResponse
-        """
-        return self.list_dcs_tags_of_tenant_with_http_info(request)
-
-    def list_dcs_tags_of_tenant_with_http_info(self, request):
-        """查询租户所有标签
-
-        查询租户在指定Project中实例类型的所有资源标签集合。
-
-        :param ListDcsTagsOfTenantRequest request
-        :return: ListDcsTagsOfTenantResponse
-        """
-
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/dcs/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListDcsTagsOfTenantResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1819,6 +1689,80 @@ class DcsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListHotKeyScanTasksResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_instances(self, request):
+        """查询所有实例列表
+
+        查询租户的缓存实例列表，支持按照条件查询。
+
+        :param ListInstancesRequest request
+        :return: ListInstancesResponse
+        """
+        return self.list_instances_with_http_info(request)
+
+    def list_instances_with_http_info(self, request):
+        """查询所有实例列表
+
+        查询租户的缓存实例列表，支持按照条件查询。
+
+        :param ListInstancesRequest request
+        :return: ListInstancesResponse
+        """
+
+        all_params = ['id', 'include_failure', 'name', 'offset', 'limit', 'status', 'name_equal', 'tags', 'ip']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'include_failure' in local_var_params:
+            query_params.append(('include_failure', local_var_params['include_failure']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'name_equal' in local_var_params:
+            query_params.append(('name_equal', local_var_params['name_equal']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListInstancesResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2252,26 +2196,82 @@ class DcsClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def restart_or_flush_dcs_instances(self, request):
+    def list_tags_of_tenant(self, request):
+        """查询租户所有标签
+
+        查询租户在指定Project中实例类型的所有资源标签集合。
+
+        :param ListTagsOfTenantRequest request
+        :return: ListTagsOfTenantResponse
+        """
+        return self.list_tags_of_tenant_with_http_info(request)
+
+    def list_tags_of_tenant_with_http_info(self, request):
+        """查询租户所有标签
+
+        查询租户在指定Project中实例类型的所有资源标签集合。
+
+        :param ListTagsOfTenantRequest request
+        :return: ListTagsOfTenantResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/dcs/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListTagsOfTenantResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def restart_or_flush_instances(self, request):
         """重启实例或清空数据
 
         重启运行中的DCS缓存实例。  清空Redis4.0/Redis5.0的实例数据，数据清空后，无法撤销，且无法恢复，请谨慎操作。 
 
-        :param RestartOrFlushDcsInstancesRequest request
-        :return: RestartOrFlushDcsInstancesResponse
+        :param RestartOrFlushInstancesRequest request
+        :return: RestartOrFlushInstancesResponse
         """
-        return self.restart_or_flush_dcs_instances_with_http_info(request)
+        return self.restart_or_flush_instances_with_http_info(request)
 
-    def restart_or_flush_dcs_instances_with_http_info(self, request):
+    def restart_or_flush_instances_with_http_info(self, request):
         """重启实例或清空数据
 
         重启运行中的DCS缓存实例。  清空Redis4.0/Redis5.0的实例数据，数据清空后，无法撤销，且无法恢复，请谨慎操作。 
 
-        :param RestartOrFlushDcsInstancesRequest request
-        :return: RestartOrFlushDcsInstancesResponse
+        :param RestartOrFlushInstancesRequest request
+        :return: RestartOrFlushInstancesResponse
         """
 
-        all_params = ['restart_or_flush_dcs_instances_request_body']
+        all_params = ['restart_or_flush_instances_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2306,7 +2306,7 @@ class DcsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='RestartOrFlushDcsInstancesResponse',
+            response_type='RestartOrFlushInstancesResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2492,122 +2492,6 @@ class DcsClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_dcs_instance(self, request):
-        """查询指定实例
-
-        通过实例ID查询实例的详细信息。
-
-        :param ShowDcsInstanceRequest request
-        :return: ShowDcsInstanceResponse
-        """
-        return self.show_dcs_instance_with_http_info(request)
-
-    def show_dcs_instance_with_http_info(self, request):
-        """查询指定实例
-
-        通过实例ID查询实例的详细信息。
-
-        :param ShowDcsInstanceRequest request
-        :return: ShowDcsInstanceResponse
-        """
-
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowDcsInstanceResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def show_dcs_tags(self, request):
-        """查询单个实例标签
-
-        通过实例ID查询标签。
-
-        :param ShowDcsTagsRequest request
-        :return: ShowDcsTagsResponse
-        """
-        return self.show_dcs_tags_with_http_info(request)
-
-    def show_dcs_tags_with_http_info(self, request):
-        """查询单个实例标签
-
-        通过实例ID查询标签。
-
-        :param ShowDcsTagsRequest request
-        :return: ShowDcsTagsResponse
-        """
-
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowDcsTagsResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def show_hotkey_autoscan_config(self, request):
         """查询热key自动分析配置
 
@@ -2721,6 +2605,64 @@ class DcsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowHotkeyTaskDetailsResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_instance(self, request):
+        """查询指定实例
+
+        通过实例ID查询实例的详细信息。
+
+        :param ShowInstanceRequest request
+        :return: ShowInstanceResponse
+        """
+        return self.show_instance_with_http_info(request)
+
+    def show_instance_with_http_info(self, request):
+        """查询指定实例
+
+        通过实例ID查询实例的详细信息。
+
+        :param ShowInstanceRequest request
+        :return: ShowInstanceResponse
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowInstanceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2893,6 +2835,64 @@ class DcsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowQuotaOfTenantResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_tags(self, request):
+        """查询单个实例标签
+
+        通过实例ID查询标签。
+
+        :param ShowTagsRequest request
+        :return: ShowTagsResponse
+        """
+        return self.show_tags_with_http_info(request)
+
+    def show_tags_with_http_info(self, request):
+        """查询单个实例标签
+
+        通过实例ID查询标签。
+
+        :param ShowTagsRequest request
+        :return: ShowTagsResponse
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowTagsResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3080,68 +3080,6 @@ class DcsClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def update_dcs_instance(self, request):
-        """修改实例信息
-
-        修改缓存实例的信息，可修改信息包括实例名称、描述、备份策略、维护时间窗开始和结束时间以及安全组。
-
-        :param UpdateDcsInstanceRequest request
-        :return: UpdateDcsInstanceResponse
-        """
-        return self.update_dcs_instance_with_http_info(request)
-
-    def update_dcs_instance_with_http_info(self, request):
-        """修改实例信息
-
-        修改缓存实例的信息，可修改信息包括实例名称、描述、备份策略、维护时间窗开始和结束时间以及安全组。
-
-        :param UpdateDcsInstanceRequest request
-        :return: UpdateDcsInstanceResponse
-        """
-
-        all_params = ['instance_id', 'update_dcs_instance_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='UpdateDcsInstanceResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def update_hotkey_auto_scan_config(self, request):
         """设置热key自动分析配置
 
@@ -3199,6 +3137,68 @@ class DcsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateHotkeyAutoScanConfigResponse',
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_instance(self, request):
+        """修改实例信息
+
+        修改缓存实例的信息，可修改信息包括实例名称、描述、备份策略、维护时间窗开始和结束时间以及安全组。
+
+        :param UpdateInstanceRequest request
+        :return: UpdateInstanceResponse
+        """
+        return self.update_instance_with_http_info(request)
+
+    def update_instance_with_http_info(self, request):
+        """修改实例信息
+
+        修改缓存实例的信息，可修改信息包括实例名称、描述、备份策略、维护时间窗开始和结束时间以及安全组。
+
+        :param UpdateInstanceRequest request
+        :return: UpdateInstanceResponse
+        """
+
+        all_params = ['instance_id', 'update_instance_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateInstanceResponse',
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)

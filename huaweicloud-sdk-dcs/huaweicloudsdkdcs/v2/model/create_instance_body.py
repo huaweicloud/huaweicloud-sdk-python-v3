@@ -118,7 +118,8 @@ class CreateInstanceBody:
 
         self.name = name
         self.engine = engine
-        self.engine_version = engine_version
+        if engine_version is not None:
+            self.engine_version = engine_version
         self.capacity = capacity
         self.spec_code = spec_code
         self.az_codes = az_codes
@@ -211,7 +212,7 @@ class CreateInstanceBody:
     def engine_version(self):
         """Gets the engine_version of this CreateInstanceBody.
 
-        缓存版本，当缓存引擎为Redis时，取值为3.0、4.0或5.0。
+        缓存版本。  当缓存引擎为Redis时，取值为3.0、4.0或5.0。  当缓存引擎为Memcached时，该字段为可选，取值为空。 
 
         :return: The engine_version of this CreateInstanceBody.
         :rtype: str
@@ -222,7 +223,7 @@ class CreateInstanceBody:
     def engine_version(self, engine_version):
         """Sets the engine_version of this CreateInstanceBody.
 
-        缓存版本，当缓存引擎为Redis时，取值为3.0、4.0或5.0。
+        缓存版本。  当缓存引擎为Redis时，取值为3.0、4.0或5.0。  当缓存引擎为Memcached时，该字段为可选，取值为空。 
 
         :param engine_version: The engine_version of this CreateInstanceBody.
         :type: str
