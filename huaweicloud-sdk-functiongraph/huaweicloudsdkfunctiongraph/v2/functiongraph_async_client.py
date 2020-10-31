@@ -85,6 +85,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -99,6 +101,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='AsyncInvokeFunctionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -145,6 +148,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -159,6 +164,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateFunctionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -207,6 +213,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -221,6 +229,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateFunctionVersionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -269,6 +278,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -283,6 +294,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateVersionAliasResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -329,6 +341,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -341,6 +355,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteFunctionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -389,6 +404,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -401,6 +418,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteVersionAliasResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -453,6 +471,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -467,6 +487,70 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='InvokeFunctionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_function_statistics_async(self, request):
+        """获取指定时间段的函数运行指标
+
+        获取指定时间段的函数运行指标。
+
+        :param ListFunctionStatisticsRequest request
+        :return: ListFunctionStatisticsResponse
+        """
+        return self.list_function_statistics_with_http_info(request)
+
+    def list_function_statistics_with_http_info(self, request):
+        """获取指定时间段的函数运行指标
+
+        获取指定时间段的函数运行指标。
+
+        :param ListFunctionStatisticsRequest request
+        :return: ListFunctionStatisticsResponse
+        """
+
+        all_params = ['func_urn', 'period']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'func_urn' in local_var_params:
+            path_params['func_urn'] = local_var_params['func_urn']
+        if 'period' in local_var_params:
+            path_params['period'] = local_var_params['period']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{func_urn}/statistics/{period}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListFunctionStatisticsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -517,6 +601,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -529,6 +615,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListFunctionVersionsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -577,6 +664,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -589,6 +678,131 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListFunctionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_quotas_async(self, request):
+        """查询租户配额
+
+        查询租户配额
+
+        :param ListQuotasRequest request
+        :return: ListQuotasResponse
+        """
+        return self.list_quotas_with_http_info(request)
+
+    def list_quotas_with_http_info(self, request):
+        """查询租户配额
+
+        查询租户配额
+
+        :param ListQuotasRequest request
+        :return: ListQuotasResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/quotas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListQuotasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_statistics_async(self, request):
+        """租户函数统计信息
+
+        租户函数统计信息。  返回三类的统计信息，函数格式和大小使用情况包括配额和使用量，流量报告。 通过查询参数filter可以进行过滤，查询参数period可以指定返回的时间段。
+
+        :param ListStatisticsRequest request
+        :return: ListStatisticsResponse
+        """
+        return self.list_statistics_with_http_info(request)
+
+    def list_statistics_with_http_info(self, request):
+        """租户函数统计信息
+
+        租户函数统计信息。  返回三类的统计信息，函数格式和大小使用情况包括配额和使用量，流量报告。 通过查询参数filter可以进行过滤，查询参数period可以指定返回的时间段。
+
+        :param ListStatisticsRequest request
+        :return: ListStatisticsResponse
+        """
+
+        all_params = ['filter', 'month_code', 'period']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+        if 'month_code' in local_var_params:
+            query_params.append(('month_code', local_var_params['month_code']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/statistics',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListStatisticsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -635,6 +849,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -647,6 +863,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListVersionAliasesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -693,6 +910,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -705,6 +924,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowFunctionCodeResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -751,6 +971,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -763,6 +985,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowFunctionConfigResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -811,6 +1034,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -823,6 +1048,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowVersionAliasResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -871,6 +1097,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -885,6 +1113,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateFunctionCodeResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -933,6 +1162,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -947,6 +1178,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateFunctionConfigResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -997,6 +1229,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1011,6 +1245,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateVersionAliasResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1057,6 +1292,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1069,6 +1306,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='BatchDeleteFunctionTriggersResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1117,6 +1355,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1131,6 +1371,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateFunctionTriggerResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1181,6 +1422,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1193,6 +1436,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteFunctionTriggerResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1239,6 +1483,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1251,6 +1497,7 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListFunctionTriggersResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1301,6 +1548,8 @@ class FunctionGraphAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1313,14 +1562,84 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowFunctionTriggerResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
-                 request_type=None):
+    def update_trigger_async(self, request):
+        """更新触发器
+
+        更新触发器
+
+        :param UpdateTriggerRequest request
+        :return: UpdateTriggerResponse
+        """
+        return self.update_trigger_with_http_info(request)
+
+    def update_trigger_with_http_info(self, request):
+        """更新触发器
+
+        更新触发器
+
+        :param UpdateTriggerRequest request
+        :return: UpdateTriggerResponse
+        """
+
+        all_params = ['function_urn', 'trigger_type_code', 'trigger_id', 'update_trigger_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+        if 'trigger_type_code' in local_var_params:
+            path_params['trigger_type_code'] = local_var_params['trigger_type_code']
+        if 'trigger_id' in local_var_params:
+            path_params['triggerId'] = local_var_params['trigger_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}/{trigger_type_code}/{triggerId}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateTriggerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
+                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -1334,8 +1653,10 @@ class FunctionGraphAsyncClient(Client):
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
         :param auth_settings list: Auth Settings names for the request.
         :param response_type: Response data type.
+        :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
             header, and post parameters.
+        :param request_type: Request data type.
         :return:
             Return the response directly.
         """
@@ -1348,6 +1669,7 @@ class FunctionGraphAsyncClient(Client):
             body=body,
             post_params=post_params,
             response_type=response_type,
+            response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
 	    async_request=True)

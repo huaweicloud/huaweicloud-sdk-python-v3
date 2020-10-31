@@ -85,6 +85,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -99,6 +101,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='AddMemberResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -147,6 +150,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -161,6 +166,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='AddVaultResourceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -209,6 +215,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -223,6 +231,72 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='AssociateVaultPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_create_and_delete_vault_tags(self, request):
+        """批量添加删除存储库资源标签
+
+        为指定实例批量添加或删除标签 标签管理服务需要使用该接口批量管理实例的标签。 一个资源上最多有10个标签。 此接口为幂等接口：     创建时如果请求体中存在重复key则报错。     创建时，不允许重复key，如果数据库存在就覆盖。     删除时，允许重复key。     删除时，如果删除的标签不存在，默认处理成功,删除时不对标签字符集范围做校验。key长度127个字符，value为255个字符。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+
+        :param BatchCreateAndDeleteVaultTagsRequest request
+        :return: BatchCreateAndDeleteVaultTagsResponse
+        """
+        return self.batch_create_and_delete_vault_tags_with_http_info(request)
+
+    def batch_create_and_delete_vault_tags_with_http_info(self, request):
+        """批量添加删除存储库资源标签
+
+        为指定实例批量添加或删除标签 标签管理服务需要使用该接口批量管理实例的标签。 一个资源上最多有10个标签。 此接口为幂等接口：     创建时如果请求体中存在重复key则报错。     创建时，不允许重复key，如果数据库存在就覆盖。     删除时，允许重复key。     删除时，如果删除的标签不存在，默认处理成功,删除时不对标签字符集范围做校验。key长度127个字符，value为255个字符。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+
+        :param BatchCreateAndDeleteVaultTagsRequest request
+        :return: BatchCreateAndDeleteVaultTagsResponse
+        """
+
+        all_params = ['vault_id', 'batch_create_and_delete_vault_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vault_id' in local_var_params:
+            path_params['vault_id'] = local_var_params['vault_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vault/{vault_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchCreateAndDeleteVaultTagsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -271,6 +345,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -285,6 +361,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CopyBackupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -331,6 +408,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -345,6 +424,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CopyCheckpointResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -391,6 +471,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -405,6 +487,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateCheckpointResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -451,6 +534,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -465,6 +550,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreatePolicyResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -511,6 +597,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -525,6 +613,72 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateVaultResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_vault_tags(self, request):
+        """添加存储库资源标签
+
+        一个资源上最多有10个标签。 此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
+
+        :param CreateVaultTagsRequest request
+        :return: CreateVaultTagsResponse
+        """
+        return self.create_vault_tags_with_http_info(request)
+
+    def create_vault_tags_with_http_info(self, request):
+        """添加存储库资源标签
+
+        一个资源上最多有10个标签。 此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
+
+        :param CreateVaultTagsRequest request
+        :return: CreateVaultTagsResponse
+        """
+
+        all_params = ['vault_id', 'create_vault_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vault_id' in local_var_params:
+            path_params['vault_id'] = local_var_params['vault_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vault/{vault_id}/tags',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateVaultTagsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -571,6 +725,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -583,6 +739,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteBackupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -631,6 +788,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -643,6 +802,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteMemberResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -689,6 +849,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -701,6 +863,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeletePolicyResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -747,6 +910,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -759,6 +924,70 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteVaultResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_vault_tag(self, request):
+        """删除存储库资源标签
+
+        幂等接口：删除时，如果删除的标签不存在，返回404。Key不能为空或者空字符串。
+
+        :param DeleteVaultTagRequest request
+        :return: DeleteVaultTagResponse
+        """
+        return self.delete_vault_tag_with_http_info(request)
+
+    def delete_vault_tag_with_http_info(self, request):
+        """删除存储库资源标签
+
+        幂等接口：删除时，如果删除的标签不存在，返回404。Key不能为空或者空字符串。
+
+        :param DeleteVaultTagRequest request
+        :return: DeleteVaultTagResponse
+        """
+
+        all_params = ['key', 'vault_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'key' in local_var_params:
+            path_params['key'] = local_var_params['key']
+        if 'vault_id' in local_var_params:
+            path_params['vault_id'] = local_var_params['vault_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vault/{vault_id}/tags/{key}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteVaultTagResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -807,6 +1036,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -821,6 +1052,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DisassociateVaultPolicyResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -867,6 +1099,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -881,6 +1115,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ImportBackupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -967,6 +1202,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -979,6 +1216,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListBackupsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1047,6 +1285,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1059,6 +1299,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListOpLogsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1107,6 +1348,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1119,6 +1362,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListPoliciesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1179,6 +1423,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1191,6 +1437,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListProtectableResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1257,6 +1504,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1269,6 +1518,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListVaultResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1317,6 +1567,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -1331,6 +1583,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='RemoveVaultResourceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1379,6 +1632,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -1393,6 +1648,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='RestoreBackupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1439,6 +1695,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1451,6 +1709,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowBackupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1497,6 +1756,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1509,6 +1770,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowCheckpointResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1557,6 +1819,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1569,6 +1833,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowMemberDetailResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1631,6 +1896,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1643,6 +1910,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowMembersDetailResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1689,6 +1957,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1701,6 +1971,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowOpLogResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1747,6 +2018,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1759,6 +2032,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowPolicyResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1807,6 +2081,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1819,6 +2095,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowProtectableResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1863,6 +2140,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1875,6 +2154,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowReplicationCapabilitiesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1921,6 +2201,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1933,6 +2215,190 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowVaultResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_vault_project_tag(self, request):
+        """查询存储库项目标签
+
+        查询租户在指定Region和实例类型的所有标签集合 标签管理服务需要能够列出当前租户全部已使用的标签集合，为各服务Console打标签和过滤实例时提供标签联想功能
+
+        :param ShowVaultProjectTagRequest request
+        :return: ShowVaultProjectTagResponse
+        """
+        return self.show_vault_project_tag_with_http_info(request)
+
+    def show_vault_project_tag_with_http_info(self, request):
+        """查询存储库项目标签
+
+        查询租户在指定Region和实例类型的所有标签集合 标签管理服务需要能够列出当前租户全部已使用的标签集合，为各服务Console打标签和过滤实例时提供标签联想功能
+
+        :param ShowVaultProjectTagRequest request
+        :return: ShowVaultProjectTagResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vault/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowVaultProjectTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_vault_resource_instances(self, request):
+        """查询存储库资源实例
+
+        使用标签过滤实例 标签管理服务需要提供按标签过滤各服务实例并汇总显示在列表中，需要各服务提供查询能力
+
+        :param ShowVaultResourceInstancesRequest request
+        :return: ShowVaultResourceInstancesResponse
+        """
+        return self.show_vault_resource_instances_with_http_info(request)
+
+    def show_vault_resource_instances_with_http_info(self, request):
+        """查询存储库资源实例
+
+        使用标签过滤实例 标签管理服务需要提供按标签过滤各服务实例并汇总显示在列表中，需要各服务提供查询能力
+
+        :param ShowVaultResourceInstancesRequest request
+        :return: ShowVaultResourceInstancesResponse
+        """
+
+        all_params = ['show_vault_resource_instances_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vault/resource_instances/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowVaultResourceInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_vault_tag(self, request):
+        """查询存储库资源标签
+
+        查询指定实例的标签信息 标签管理服务需要使用该接口查询指定实例的全部标签数据
+
+        :param ShowVaultTagRequest request
+        :return: ShowVaultTagResponse
+        """
+        return self.show_vault_tag_with_http_info(request)
+
+    def show_vault_tag_with_http_info(self, request):
+        """查询存储库资源标签
+
+        查询指定实例的标签信息 标签管理服务需要使用该接口查询指定实例的全部标签数据
+
+        :param ShowVaultTagRequest request
+        :return: ShowVaultTagResponse
+        """
+
+        all_params = ['vault_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vault_id' in local_var_params:
+            path_params['vault_id'] = local_var_params['vault_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vault/{vault_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowVaultTagResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1983,6 +2449,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -1997,6 +2465,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateMemberStatusResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2045,6 +2514,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2059,6 +2530,7 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdatePolicyResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2107,6 +2579,8 @@ class CbrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2121,29 +2595,31 @@ class CbrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateVaultResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
-                 request_type=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
+                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
         :param method: Method to call.
         :param path_params: Path parameters in the url.
         :param query_params: Query parameters in the url.
-        :param header_params: Header parameters to be
-            placed in the request header.
+        :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
         :param post_params dict: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
         :param auth_settings list: Auth Settings names for the request.
         :param response_type: Response data type.
+        :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
             header, and post parameters.
+        :param request_type: Request data type.
         :return:
             Return the response directly.
         """
@@ -2156,5 +2632,6 @@ class CbrClient(Client):
             body=body,
             post_params=post_params,
             response_type=response_type,
+            response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type)

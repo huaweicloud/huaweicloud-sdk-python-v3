@@ -11,6 +11,8 @@ from huaweicloudsdkcts.v3.model.data_bucket import DataBucket
 from huaweicloudsdkcts.v3.model.data_bucket_query import DataBucketQuery
 from huaweicloudsdkcts.v3.model.delete_tracker_request import DeleteTrackerRequest
 from huaweicloudsdkcts.v3.model.delete_tracker_response import DeleteTrackerResponse
+from huaweicloudsdkcts.v3.model.list_quotas_request import ListQuotasRequest
+from huaweicloudsdkcts.v3.model.list_quotas_response import ListQuotasResponse
 from huaweicloudsdkcts.v3.model.list_traces_request import ListTracesRequest
 from huaweicloudsdkcts.v3.model.list_traces_response import ListTracesResponse
 from huaweicloudsdkcts.v3.model.list_trackers_request import ListTrackersRequest
@@ -18,6 +20,7 @@ from huaweicloudsdkcts.v3.model.list_trackers_response import ListTrackersRespon
 from huaweicloudsdkcts.v3.model.lts import Lts
 from huaweicloudsdkcts.v3.model.meta_data import MetaData
 from huaweicloudsdkcts.v3.model.obs_info import ObsInfo
+from huaweicloudsdkcts.v3.model.quota import Quota
 from huaweicloudsdkcts.v3.model.traces import Traces
 from huaweicloudsdkcts.v3.model.tracker_obs_info import TrackerObsInfo
 from huaweicloudsdkcts.v3.model.tracker_response_body import TrackerResponseBody

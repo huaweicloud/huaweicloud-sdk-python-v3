@@ -23,26 +23,91 @@ class DatapointForBatchMetric:
     sensitive_list = []
 
     openapi_types = {
+        'max': 'float',
+        'min': 'float',
         'average': 'float',
+        'sum': 'float',
+        'variance': 'str',
         'timestamp': 'int'
     }
 
     attribute_map = {
+        'max': 'max',
+        'min': 'min',
         'average': 'average',
+        'sum': 'sum',
+        'variance': 'variance',
         'timestamp': 'timestamp'
     }
 
-    def __init__(self, average=None, timestamp=None):
+    def __init__(self, max=None, min=None, average=None, sum=None, variance=None, timestamp=None):
         """DatapointForBatchMetric - a model defined in huaweicloud sdk"""
         
         
 
+        self._max = None
+        self._min = None
         self._average = None
+        self._sum = None
+        self._variance = None
         self._timestamp = None
         self.discriminator = None
 
-        self.average = average
+        if max is not None:
+            self.max = max
+        if min is not None:
+            self.min = min
+        if average is not None:
+            self.average = average
+        if sum is not None:
+            self.sum = sum
+        if variance is not None:
+            self.variance = variance
         self.timestamp = timestamp
+
+    @property
+    def max(self):
+        """Gets the max of this DatapointForBatchMetric.
+
+        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+
+        :return: The max of this DatapointForBatchMetric.
+        :rtype: float
+        """
+        return self._max
+
+    @max.setter
+    def max(self, max):
+        """Sets the max of this DatapointForBatchMetric.
+
+        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+
+        :param max: The max of this DatapointForBatchMetric.
+        :type: float
+        """
+        self._max = max
+
+    @property
+    def min(self):
+        """Gets the min of this DatapointForBatchMetric.
+
+        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+
+        :return: The min of this DatapointForBatchMetric.
+        :rtype: float
+        """
+        return self._min
+
+    @min.setter
+    def min(self, min):
+        """Sets the min of this DatapointForBatchMetric.
+
+        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+
+        :param min: The min of this DatapointForBatchMetric.
+        :type: float
+        """
+        self._min = min
 
     @property
     def average(self):
@@ -65,6 +130,50 @@ class DatapointForBatchMetric:
         :type: float
         """
         self._average = average
+
+    @property
+    def sum(self):
+        """Gets the sum of this DatapointForBatchMetric.
+
+        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+
+        :return: The sum of this DatapointForBatchMetric.
+        :rtype: float
+        """
+        return self._sum
+
+    @sum.setter
+    def sum(self, sum):
+        """Sets the sum of this DatapointForBatchMetric.
+
+        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+
+        :param sum: The sum of this DatapointForBatchMetric.
+        :type: float
+        """
+        self._sum = sum
+
+    @property
+    def variance(self):
+        """Gets the variance of this DatapointForBatchMetric.
+
+        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+
+        :return: The variance of this DatapointForBatchMetric.
+        :rtype: str
+        """
+        return self._variance
+
+    @variance.setter
+    def variance(self, variance):
+        """Sets the variance of this DatapointForBatchMetric.
+
+        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+
+        :param variance: The variance of this DatapointForBatchMetric.
+        :type: str
+        """
+        self._variance = variance
 
     @property
     def timestamp(self):

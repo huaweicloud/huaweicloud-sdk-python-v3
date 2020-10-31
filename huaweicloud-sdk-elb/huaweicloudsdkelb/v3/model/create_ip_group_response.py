@@ -70,7 +70,7 @@ class CreateIpGroupResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this CreateIpGroupResponse.
 
-        请求id
+        请求ID。  注：自动生成 。
 
         :return: The request_id of this CreateIpGroupResponse.
         :rtype: str
@@ -81,7 +81,7 @@ class CreateIpGroupResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this CreateIpGroupResponse.
 
-        请求id
+        请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this CreateIpGroupResponse.
         :type: str

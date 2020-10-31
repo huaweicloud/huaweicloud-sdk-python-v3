@@ -29,8 +29,8 @@ class ListProjectWorkHoursRequestBody:
         'work_hours_dates': 'str',
         'begin_time': 'str',
         'end_time': 'str',
-        'offset': 'str',
-        'limit': 'str'
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
@@ -213,7 +213,7 @@ class ListProjectWorkHoursRequestBody:
         偏移量
 
         :return: The offset of this ListProjectWorkHoursRequestBody.
-        :rtype: str
+        :rtype: int
         """
         return self._offset
 
@@ -224,7 +224,7 @@ class ListProjectWorkHoursRequestBody:
         偏移量
 
         :param offset: The offset of this ListProjectWorkHoursRequestBody.
-        :type: str
+        :type: int
         """
         self._offset = offset
 
@@ -235,7 +235,7 @@ class ListProjectWorkHoursRequestBody:
         每页显示数量，每页最多显示100条
 
         :return: The limit of this ListProjectWorkHoursRequestBody.
-        :rtype: str
+        :rtype: int
         """
         return self._limit
 
@@ -246,7 +246,7 @@ class ListProjectWorkHoursRequestBody:
         每页显示数量，每页最多显示100条
 
         :param limit: The limit of this ListProjectWorkHoursRequestBody.
-        :type: str
+        :type: int
         """
         self._limit = limit
 

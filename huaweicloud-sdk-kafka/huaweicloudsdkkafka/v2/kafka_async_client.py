@@ -85,6 +85,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -99,6 +101,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='BatchCreateOrDeleteInstanceTagResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -147,6 +150,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -161,6 +166,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='BatchDeleteInstanceTopicResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -207,6 +213,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -221,6 +229,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='BatchRestartOrDeleteInstancesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -269,6 +278,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -283,6 +294,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateConnectorResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -331,6 +343,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -345,6 +359,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateInstanceTopicResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -395,6 +410,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -409,6 +426,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreatePartitionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -455,6 +473,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -469,6 +489,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreatePostPaidInstanceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -517,6 +538,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -531,6 +554,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateSinkTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -579,6 +603,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -591,6 +617,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteBackgroundTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -637,6 +664,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -649,6 +678,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteInstanceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -697,6 +727,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -709,6 +741,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteSinkTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -753,6 +786,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -765,6 +800,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListAvailableZonesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -819,6 +855,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -831,6 +869,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListBackgroundTasksResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -877,6 +916,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -889,6 +930,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListInstanceTopicsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -947,6 +989,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -959,6 +1003,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListInstancesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1005,6 +1050,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1017,6 +1064,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListProductsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1063,6 +1111,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1075,6 +1125,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSinkTasksResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1123,6 +1174,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1137,6 +1190,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ResetManagerPasswordResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1187,6 +1241,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1201,6 +1257,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ResetMessageOffsetResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1249,6 +1306,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1263,6 +1322,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ResetPasswordResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1311,6 +1371,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1325,6 +1387,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ResizeInstanceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1371,6 +1434,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1383,6 +1448,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='RestartManagerResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1431,6 +1497,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1443,6 +1511,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowBackgroundTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1489,6 +1558,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1501,6 +1572,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowCesHierarchyResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1547,6 +1619,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1559,6 +1633,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowClusterResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1605,6 +1680,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1617,6 +1694,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowCoordinatorsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1665,6 +1743,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1677,6 +1757,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowGroupsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1723,6 +1804,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1735,6 +1818,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowInstanceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1785,6 +1869,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1797,6 +1883,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowInstanceExtendProductInfoResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1843,6 +1930,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1855,6 +1944,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowInstanceTagsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1903,6 +1993,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1915,6 +2007,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowInstanceTopicDetailResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1959,6 +2052,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1971,6 +2066,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowMaintainWindowsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2029,6 +2125,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2041,6 +2139,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowMessagesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2091,6 +2190,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2103,6 +2204,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowPartitionBeginningMessageResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2153,6 +2255,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2165,6 +2269,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowPartitionEndMessageResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2217,6 +2322,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2229,6 +2336,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowPartitionMessageResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2273,6 +2381,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2285,6 +2395,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowProjectTagsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2333,6 +2444,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2345,6 +2458,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowSinkTaskDetailResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2393,6 +2507,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2407,6 +2523,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateInstanceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2455,6 +2572,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2469,6 +2588,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateInstanceAutoCreateTopicResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2479,8 +2599,8 @@ class KafkaAsyncClient(Client):
 
         修改实例跨VPC访问的内网IP。
 
-        :param UpdateInstanceCrossVpcipRequest request
-        :return: UpdateInstanceCrossVpcipResponse
+        :param UpdateInstanceCrossVPCIPRequest request
+        :return: UpdateInstanceCrossVPCIPResponse
         """
         return self.update_instance_cross_vpcip_with_http_info(request)
 
@@ -2489,8 +2609,8 @@ class KafkaAsyncClient(Client):
 
         修改实例跨VPC访问的内网IP。
 
-        :param UpdateInstanceCrossVpcipRequest request
-        :return: UpdateInstanceCrossVpcipResponse
+        :param UpdateInstanceCrossVPCIPRequest request
+        :return: UpdateInstanceCrossVPCIPResponse
         """
 
         all_params = ['instance_id', 'update_instance_cross_vpcip_request_body']
@@ -2517,6 +2637,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2530,7 +2652,8 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='UpdateInstanceCrossVpcipResponse',
+            response_type='UpdateInstanceCrossVPCIPResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2579,6 +2702,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2593,6 +2718,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateInstanceTopicResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2641,6 +2767,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2655,6 +2783,7 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateSinkTaskQuotaResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2705,6 +2834,8 @@ class KafkaAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2719,14 +2850,15 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateTopicReplicaResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
-                 request_type=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
+                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -2740,8 +2872,10 @@ class KafkaAsyncClient(Client):
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
         :param auth_settings list: Auth Settings names for the request.
         :param response_type: Response data type.
+        :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
             header, and post parameters.
+        :param request_type: Request data type.
         :return:
             Return the response directly.
         """
@@ -2754,6 +2888,7 @@ class KafkaAsyncClient(Client):
             body=body,
             post_params=post_params,
             response_type=response_type,
+            response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
 	    async_request=True)

@@ -82,7 +82,7 @@ class BatchListMetricDataRequestBody:
     def _from(self):
         """Gets the _from of this BatchListMetricDataRequestBody.
 
-        查询数据起始时间，UNIX时间戳，单位毫秒。建议from的值相对于当前时间向前偏移至少1个周期。由于聚合运算的过程是将一个聚合周期范围内的数据点聚合到周期起始边界上，如果将from和to的范围设置在聚合周期内，会因为聚合未完成而造成查询数据为空，所以建议from参数相对于当前时间向前偏移至少1个周期。以5分钟聚合周期为例：假设当前时间点为10:35，10:30~10:35之间的原始数据会被聚合到10:30这个点上，所以查询5分钟数据点时from参数应为10:30或之前。  说明： 云监控会根据所选择的聚合粒度向前取整from参数。
+        查询数据起始时间，UNIX时间戳，单位毫秒。建议from的值相对于当前时间向前偏移至少1个周期。由于聚合运算的过程是将一个聚合周期范围内的数据点聚合到周期起始边界上，如果将from和to的范围设置在聚合周期内，会因为聚合未完成而造成查询数据为空，所以建议from参数相对于当前时间向前偏移至少1个周期。以5分钟聚合周期为例：假设当前时间点为10:35，10:30~10:35之间的原始数据会被聚合到10:30这个点上，所以查询5分钟数据点时from参数应为10:30或之前。 说明： 云监控会根据所选择的聚合粒度向前取整from参数。
 
         :return: The _from of this BatchListMetricDataRequestBody.
         :rtype: int
@@ -93,7 +93,7 @@ class BatchListMetricDataRequestBody:
     def _from(self, _from):
         """Sets the _from of this BatchListMetricDataRequestBody.
 
-        查询数据起始时间，UNIX时间戳，单位毫秒。建议from的值相对于当前时间向前偏移至少1个周期。由于聚合运算的过程是将一个聚合周期范围内的数据点聚合到周期起始边界上，如果将from和to的范围设置在聚合周期内，会因为聚合未完成而造成查询数据为空，所以建议from参数相对于当前时间向前偏移至少1个周期。以5分钟聚合周期为例：假设当前时间点为10:35，10:30~10:35之间的原始数据会被聚合到10:30这个点上，所以查询5分钟数据点时from参数应为10:30或之前。  说明： 云监控会根据所选择的聚合粒度向前取整from参数。
+        查询数据起始时间，UNIX时间戳，单位毫秒。建议from的值相对于当前时间向前偏移至少1个周期。由于聚合运算的过程是将一个聚合周期范围内的数据点聚合到周期起始边界上，如果将from和to的范围设置在聚合周期内，会因为聚合未完成而造成查询数据为空，所以建议from参数相对于当前时间向前偏移至少1个周期。以5分钟聚合周期为例：假设当前时间点为10:35，10:30~10:35之间的原始数据会被聚合到10:30这个点上，所以查询5分钟数据点时from参数应为10:30或之前。 说明： 云监控会根据所选择的聚合粒度向前取整from参数。
 
         :param _from: The _from of this BatchListMetricDataRequestBody.
         :type: int
@@ -148,7 +148,7 @@ class BatchListMetricDataRequestBody:
     def filter(self):
         """Gets the filter of this BatchListMetricDataRequestBody.
 
-        数据聚合方式。  支持的值为max, min, average, sum, variance。  filter参数的值不会影响原始数据（period为1）的查询结果。
+        数据聚合方式。  支持的值为max, min, average, sum, variance。 filter参数的值不会影响原始数据（period为1）的查询结果。
 
         :return: The filter of this BatchListMetricDataRequestBody.
         :rtype: str
@@ -159,7 +159,7 @@ class BatchListMetricDataRequestBody:
     def filter(self, filter):
         """Sets the filter of this BatchListMetricDataRequestBody.
 
-        数据聚合方式。  支持的值为max, min, average, sum, variance。  filter参数的值不会影响原始数据（period为1）的查询结果。
+        数据聚合方式。  支持的值为max, min, average, sum, variance。 filter参数的值不会影响原始数据（period为1）的查询结果。
 
         :param filter: The filter of this BatchListMetricDataRequestBody.
         :type: str

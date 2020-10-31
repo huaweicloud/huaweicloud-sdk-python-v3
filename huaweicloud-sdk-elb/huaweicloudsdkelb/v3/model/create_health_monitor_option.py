@@ -237,7 +237,7 @@ class CreateHealthMonitorOption:
     def max_retries_down(self):
         """Gets the max_retries_down of this CreateHealthMonitorOption.
 
-        健康检查连续失败多少次后，将后端服务器的健康检查状态由online判定为offline，取值范围[1，10]。 默认值：3
+        健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE
 
         :return: The max_retries_down of this CreateHealthMonitorOption.
         :rtype: int
@@ -248,7 +248,7 @@ class CreateHealthMonitorOption:
     def max_retries_down(self, max_retries_down):
         """Sets the max_retries_down of this CreateHealthMonitorOption.
 
-        健康检查连续失败多少次后，将后端服务器的健康检查状态由online判定为offline，取值范围[1，10]。 默认值：3
+        健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE
 
         :param max_retries_down: The max_retries_down of this CreateHealthMonitorOption.
         :type: int

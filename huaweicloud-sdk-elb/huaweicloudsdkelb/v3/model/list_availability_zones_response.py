@@ -50,7 +50,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
     def availability_zones(self):
         """Gets the availability_zones of this ListAvailabilityZonesResponse.
 
-        可用区列表  > 获取可用区列表后，在（如创建LB时）设置可用区，选择的多个可用区必须同时在同一个子集中
+        可用区列表。  > 获取可用区集合列表后，在（如创建LB时）设置可用区，选择的多个可用区必须同时在同一个集合中。
 
         :return: The availability_zones of this ListAvailabilityZonesResponse.
         :rtype: list[list[AvailabilityZone]]
@@ -61,7 +61,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
     def availability_zones(self, availability_zones):
         """Sets the availability_zones of this ListAvailabilityZonesResponse.
 
-        可用区列表  > 获取可用区列表后，在（如创建LB时）设置可用区，选择的多个可用区必须同时在同一个子集中
+        可用区列表。  > 获取可用区集合列表后，在（如创建LB时）设置可用区，选择的多个可用区必须同时在同一个集合中。
 
         :param availability_zones: The availability_zones of this ListAvailabilityZonesResponse.
         :type: list[list[AvailabilityZone]]
@@ -72,7 +72,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this ListAvailabilityZonesResponse.
 
-        请求ID。 注：自动生成
+        请求ID。  注：自动生成。
 
         :return: The request_id of this ListAvailabilityZonesResponse.
         :rtype: str
@@ -83,7 +83,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this ListAvailabilityZonesResponse.
 
-        请求ID。 注：自动生成
+        请求ID。  注：自动生成。
 
         :param request_id: The request_id of this ListAvailabilityZonesResponse.
         :type: str

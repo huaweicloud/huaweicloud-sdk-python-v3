@@ -42,422 +42,6 @@ class BssAsyncClient(Client):
     def new_builder(clazz):
         return ClientBuilder(clazz, "GlobalCredentials")
 
-    def auto_renewal_resources_async(self, request):
-        """设置包年包月资源自动续费
-
-        功能描述：设置包周期资源自动续费
-
-        :param AutoRenewalResourcesRequest request
-        :return: AutoRenewalResourcesResponse
-        """
-        return self.auto_renewal_resources_with_http_info(request)
-
-    def auto_renewal_resources_with_http_info(self, request):
-        """设置包年包月资源自动续费
-
-        功能描述：设置包周期资源自动续费
-
-        :param AutoRenewalResourcesRequest request
-        :return: AutoRenewalResourcesResponse
-        """
-
-        all_params = ['resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'resource_id' in local_var_params:
-            path_params['resource_id'] = local_var_params['resource_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/orders/subscriptions/resources/autorenew/{resource_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='AutoRenewalResourcesResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def batch_set_sub_customer_discount_async(self, request):
-        """设置伙伴折扣
-
-        功能描述：设置伙伴折扣
-
-        :param BatchSetSubCustomerDiscountRequest request
-        :return: BatchSetSubCustomerDiscountResponse
-        """
-        return self.batch_set_sub_customer_discount_with_http_info(request)
-
-    def batch_set_sub_customer_discount_with_http_info(self, request):
-        """设置伙伴折扣
-
-        功能描述：设置伙伴折扣
-
-        :param BatchSetSubCustomerDiscountRequest request
-        :return: BatchSetSubCustomerDiscountResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/discounts',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='BatchSetSubCustomerDiscountResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def cancel_auto_renewal_resources_async(self, request):
-        """取消包年包月资源自动续费
-
-        功能描述：取消包年/包月资源自动续费
-
-        :param CancelAutoRenewalResourcesRequest request
-        :return: CancelAutoRenewalResourcesResponse
-        """
-        return self.cancel_auto_renewal_resources_with_http_info(request)
-
-    def cancel_auto_renewal_resources_with_http_info(self, request):
-        """取消包年包月资源自动续费
-
-        功能描述：取消包年/包月资源自动续费
-
-        :param CancelAutoRenewalResourcesRequest request
-        :return: CancelAutoRenewalResourcesResponse
-        """
-
-        all_params = ['resource_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'resource_id' in local_var_params:
-            path_params['resource_id'] = local_var_params['resource_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/orders/subscriptions/resources/autorenew/{resource_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CancelAutoRenewalResourcesResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def cancel_customer_order_async(self, request):
-        """取消包周期订单
-
-        功能描述：取消包周期订单
-
-        :param CancelCustomerOrderRequest request
-        :return: CancelCustomerOrderResponse
-        """
-        return self.cancel_customer_order_with_http_info(request)
-
-    def cancel_customer_order_with_http_info(self, request):
-        """取消包周期订单
-
-        功能描述：取消包周期订单
-
-        :param CancelCustomerOrderRequest request
-        :return: CancelCustomerOrderResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/orders/customer-orders/cancel',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CancelCustomerOrderResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def cancel_resources_subscription_async(self, request):
-        """退订包周期资源
-
-        功能描述：退订包周期资源
-
-        :param CancelResourcesSubscriptionRequest request
-        :return: CancelResourcesSubscriptionResponse
-        """
-        return self.cancel_resources_subscription_with_http_info(request)
-
-    def cancel_resources_subscription_with_http_info(self, request):
-        """退订包周期资源
-
-        功能描述：退订包周期资源
-
-        :param CancelResourcesSubscriptionRequest request
-        :return: CancelResourcesSubscriptionResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/orders/subscriptions/resources/unsubscribe',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CancelResourcesSubscriptionResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def change_enterprise_realname_authentication_async(self, request):
-        """实名认证变更申请
-
-        功能描述：实名认证变更申请
-
-        :param ChangeEnterpriseRealnameAuthenticationRequest request
-        :return: ChangeEnterpriseRealnameAuthenticationResponse
-        """
-        return self.change_enterprise_realname_authentication_with_http_info(request)
-
-    def change_enterprise_realname_authentication_with_http_info(self, request):
-        """实名认证变更申请
-
-        功能描述：实名认证变更申请
-
-        :param ChangeEnterpriseRealnameAuthenticationRequest request
-        :return: ChangeEnterpriseRealnameAuthenticationResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/realname-auths/enterprise',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ChangeEnterpriseRealnameAuthenticationResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def check_user_identity_async(self, request):
-        """校验客户的注册信息
-
-        功能描述：校验客户的注册信息
-
-        :param CheckUserIdentityRequest request
-        :return: CheckUserIdentityResponse
-        """
-        return self.check_user_identity_with_http_info(request)
-
-    def check_user_identity_with_http_info(self, request):
-        """校验客户的注册信息
-
-        功能描述：校验客户的注册信息
-
-        :param CheckUserIdentityRequest request
-        :return: CheckUserIdentityResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/sub-customers/users/check-identity',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CheckUserIdentityResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def create_enterprise_project_auth_async(self, request):
         """开通企业项目
 
@@ -497,6 +81,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -509,66 +95,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateEnterpriseProjectAuthResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def create_enterprise_realname_authentication_async(self, request):
-        """企业实名认证申请
-
-        功能描述：企业实名认证申请V2
-
-        :param CreateEnterpriseRealnameAuthenticationRequest request
-        :return: CreateEnterpriseRealnameAuthenticationResponse
-        """
-        return self.create_enterprise_realname_authentication_with_http_info(request)
-
-    def create_enterprise_realname_authentication_with_http_info(self, request):
-        """企业实名认证申请
-
-        功能描述：企业实名认证申请V2
-
-        :param CreateEnterpriseRealnameAuthenticationRequest request
-        :return: CreateEnterpriseRealnameAuthenticationResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/realname-auths/enterprise',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreateEnterpriseRealnameAuthenticationResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -615,6 +142,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -629,188 +158,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreatePartnerCouponsResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def create_personal_realname_auth_async(self, request):
-        """个人实名认证申请
-
-        功能描述：个人实名认证申请
-
-        :param CreatePersonalRealnameAuthRequest request
-        :return: CreatePersonalRealnameAuthResponse
-        """
-        return self.create_personal_realname_auth_with_http_info(request)
-
-    def create_personal_realname_auth_with_http_info(self, request):
-        """个人实名认证申请
-
-        功能描述：个人实名认证申请
-
-        :param CreatePersonalRealnameAuthRequest request
-        :return: CreatePersonalRealnameAuthResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/realname-auths/individual',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreatePersonalRealnameAuthResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def create_postal_async(self, request):
-        """新增邮寄地址
-
-        功能描述：新增邮寄地址
-
-        :param CreatePostalRequest request
-        :return: CreatePostalResponse
-        """
-        return self.create_postal_with_http_info(request)
-
-    def create_postal_with_http_info(self, request):
-        """新增邮寄地址
-
-        功能描述：新增邮寄地址
-
-        :param CreatePostalRequest request
-        :return: CreatePostalResponse
-        """
-
-        all_params = ['req', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/postal-addresses',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreatePostalResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def create_sub_customer_async(self, request):
-        """创建客户（V2）
-
-        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。
-
-        :param CreateSubCustomerRequest request
-        :return: CreateSubCustomerResponse
-        """
-        return self.create_sub_customer_with_http_info(request)
-
-    def create_sub_customer_with_http_info(self, request):
-        """创建客户（V2）
-
-        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。
-
-        :param CreateSubCustomerRequest request
-        :return: CreateSubCustomerResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/sub-customers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreateSubCustomerResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -857,6 +205,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -871,64 +221,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateSubEnterpriseAccountResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def delete_postal_async(self, request):
-        """删除邮寄地址
-
-        功能描述：删除邮寄地址
-
-        :param DeletePostalRequest request
-        :return: DeletePostalResponse
-        """
-        return self.delete_postal_with_http_info(request)
-
-    def delete_postal_with_http_info(self, request):
-        """删除邮寄地址
-
-        功能描述：删除邮寄地址
-
-        :param DeletePostalRequest request
-        :return: DeletePostalResponse
-        """
-
-        all_params = ['address_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'address_id' in local_var_params:
-            path_params['address_id'] = local_var_params['address_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/postal-addresses/{address_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='DeletePostalResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -981,6 +274,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -993,6 +288,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCitiesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1045,6 +341,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1057,6 +355,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCountiesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1117,6 +416,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1129,6 +430,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCouponQuotasRecordsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1205,6 +507,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1217,6 +521,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCustomerBillsFeeRecordsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1265,6 +570,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1279,88 +586,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCustomerOnDemandResourcesResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_customer_orders_async(self, request):
-        """查询订单列表V2
-
-        功能描述：查询订单列表
-
-        :param ListCustomerOrdersRequest request
-        :return: ListCustomerOrdersResponse
-        """
-        return self.list_customer_orders_with_http_info(request)
-
-    def list_customer_orders_with_http_info(self, request):
-        """查询订单列表V2
-
-        功能描述：查询订单列表
-
-        :param ListCustomerOrdersRequest request
-        :return: ListCustomerOrdersResponse
-        """
-
-        all_params = ['order_id', 'customer_id', 'create_time_begin', 'create_time_end', 'service_type_code', 'status', 'order_type', 'limit', 'offset', 'order_by', 'payment_time_begin', 'payment_time_end', 'indirect_partner_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'order_id' in local_var_params:
-            query_params.append(('order_id', local_var_params['order_id']))
-        if 'customer_id' in local_var_params:
-            query_params.append(('customer_id', local_var_params['customer_id']))
-        if 'create_time_begin' in local_var_params:
-            query_params.append(('create_time_begin', local_var_params['create_time_begin']))
-        if 'create_time_end' in local_var_params:
-            query_params.append(('create_time_end', local_var_params['create_time_end']))
-        if 'service_type_code' in local_var_params:
-            query_params.append(('service_type_code', local_var_params['service_type_code']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'order_type' in local_var_params:
-            query_params.append(('order_type', local_var_params['order_type']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'order_by' in local_var_params:
-            query_params.append(('order_by', local_var_params['order_by']))
-        if 'payment_time_begin' in local_var_params:
-            query_params.append(('payment_time_begin', local_var_params['payment_time_begin']))
-        if 'payment_time_end' in local_var_params:
-            query_params.append(('payment_time_end', local_var_params['payment_time_end']))
-        if 'indirect_partner_id' in local_var_params:
-            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/orders/customer-orders',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListCustomerOrdersResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1407,6 +633,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1421,6 +649,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCustomersBalancesDetailResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1467,6 +696,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1481,6 +712,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCustomerselfResourceRecordDetailsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1553,6 +785,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1565,6 +799,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCustomerselfResourceRecordsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1617,6 +852,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1629,6 +866,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListEnterpriseMultiAccountResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1677,6 +915,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1689,6 +929,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListEnterpriseOrganizationsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1745,6 +986,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1757,66 +1000,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListEnterpriseSubCustomersResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_indirect_partners_async(self, request):
-        """查询精英服务商列表
-
-        功能描述：查询精英服务商列表
-
-        :param ListIndirectPartnersRequest request
-        :return: ListIndirectPartnersResponse
-        """
-        return self.list_indirect_partners_with_http_info(request)
-
-    def list_indirect_partners_with_http_info(self, request):
-        """查询精英服务商列表
-
-        功能描述：查询精英服务商列表
-
-        :param ListIndirectPartnersRequest request
-        :return: ListIndirectPartnersResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/indirect-partners/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListIndirectPartnersResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1871,6 +1055,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1883,6 +1069,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListIssuedCouponQuotasResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1955,6 +1142,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1967,6 +1156,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListIssuedPartnerCouponsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2013,6 +1203,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2027,64 +1219,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListOnDemandResourceRatingsResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_order_coupons_by_order_id_async(self, request):
-        """查询订单可用优惠券
-
-        功能描述：查询订单详情
-
-        :param ListOrderCouponsByOrderIdRequest request
-        :return: ListOrderCouponsByOrderIdResponse
-        """
-        return self.list_order_coupons_by_order_id_with_http_info(request)
-
-    def list_order_coupons_by_order_id_with_http_info(self, request):
-        """查询订单可用优惠券
-
-        功能描述：查询订单详情
-
-        :param ListOrderCouponsByOrderIdRequest request
-        :return: ListOrderCouponsByOrderIdResponse
-        """
-
-        all_params = ['order_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'order_id' in local_var_params:
-            query_params.append(('order_id', local_var_params['order_id']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/orders/customer-orders/order-coupons',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListOrderCouponsByOrderIdResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2145,6 +1280,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2157,6 +1294,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListPartnerAdjustRecordsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2203,6 +1341,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2215,6 +1355,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListPartnerBalancesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2283,6 +1424,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2295,256 +1438,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListPartnerCouponsRecordResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_partner_pay_orders_async(self, request):
-        """查询伙伴代付订单列表
-
-        功能描述：查询伙伴代付订单列表
-
-        :param ListPartnerPayOrdersRequest request
-        :return: ListPartnerPayOrdersResponse
-        """
-        return self.list_partner_pay_orders_with_http_info(request)
-
-    def list_partner_pay_orders_with_http_info(self, request):
-        """查询伙伴代付订单列表
-
-        功能描述：查询伙伴代付订单列表
-
-        :param ListPartnerPayOrdersRequest request
-        :return: ListPartnerPayOrdersResponse
-        """
-
-        all_params = ['order_id', 'customer_id', 'limit', 'offset', 'status', 'indirect_partner_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'order_id' in local_var_params:
-            query_params.append(('order_id', local_var_params['order_id']))
-        if 'customer_id' in local_var_params:
-            query_params.append(('customer_id', local_var_params['customer_id']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'indirect_partner_id' in local_var_params:
-            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/orders/customer-orders/partner-pay-orders',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListPartnerPayOrdersResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_pay_per_use_customer_resources_async(self, request):
-        """查询客户包年包月资源列表
-
-        功能描述：查询客户包年/包月资源列表
-
-        :param ListPayPerUseCustomerResourcesRequest request
-        :return: ListPayPerUseCustomerResourcesResponse
-        """
-        return self.list_pay_per_use_customer_resources_with_http_info(request)
-
-    def list_pay_per_use_customer_resources_with_http_info(self, request):
-        """查询客户包年包月资源列表
-
-        功能描述：查询客户包年/包月资源列表
-
-        :param ListPayPerUseCustomerResourcesRequest request
-        :return: ListPayPerUseCustomerResourcesResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/orders/suscriptions/resources/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListPayPerUseCustomerResourcesResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_postal_address_async(self, request):
-        """查询邮寄地址
-
-        功能描述：查询邮寄地址
-
-        :param ListPostalAddressRequest request
-        :return: ListPostalAddressResponse
-        """
-        return self.list_postal_address_with_http_info(request)
-
-    def list_postal_address_with_http_info(self, request):
-        """查询邮寄地址
-
-        功能描述：查询邮寄地址
-
-        :param ListPostalAddressRequest request
-        :return: ListPostalAddressResponse
-        """
-
-        all_params = ['offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/postal-addresses',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListPostalAddressResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_provinces_async(self, request):
-        """根据国家查询省份信息
-
-        功能描述：根据国家查询省份列表
-
-        :param ListProvincesRequest request
-        :return: ListProvincesResponse
-        """
-        return self.list_provinces_with_http_info(request)
-
-    def list_provinces_with_http_info(self, request):
-        """根据国家查询省份信息
-
-        功能描述：根据国家查询省份列表
-
-        :param ListProvincesRequest request
-        :return: ListProvincesResponse
-        """
-
-        all_params = ['x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/systems/configs/provinces',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListProvincesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2591,6 +1485,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2605,6 +1501,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListQuotaCouponsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2651,6 +1548,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2665,64 +1564,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListRateOnPeriodDetailResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_resource_usages_async(self, request):
-        """查询套餐内使用量
-
-        功能描述：查询套餐内使用量
-
-        :param ListResourceUsagesRequest request
-        :return: ListResourceUsagesResponse
-        """
-        return self.list_resource_usages_with_http_info(request)
-
-    def list_resource_usages_with_http_info(self, request):
-        """查询套餐内使用量
-
-        功能描述：查询套餐内使用量
-
-        :param ListResourceUsagesRequest request
-        :return: ListResourceUsagesResponse
-        """
-
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/payments/free-resources/usages/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListResourceUsagesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2769,6 +1611,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2783,6 +1627,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSkuInventoriesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2849,6 +1694,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2861,66 +1708,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSubCustomerCouponsResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_sub_customer_discounts_async(self, request):
-        """查询伙伴折扣
-
-        功能描述：查询伙伴折扣
-
-        :param ListSubCustomerDiscountsRequest request
-        :return: ListSubCustomerDiscountsResponse
-        """
-        return self.list_sub_customer_discounts_with_http_info(request)
-
-    def list_sub_customer_discounts_with_http_info(self, request):
-        """查询伙伴折扣
-
-        功能描述：查询伙伴折扣
-
-        :param ListSubCustomerDiscountsRequest request
-        :return: ListSubCustomerDiscountsResponse
-        """
-
-        all_params = ['customer_id', 'indirect_partner_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'customer_id' in local_var_params:
-            query_params.append(('customer_id', local_var_params['customer_id']))
-        if 'indirect_partner_id' in local_var_params:
-            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/discounts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListSubCustomerDiscountsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2987,6 +1775,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2999,66 +1789,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSubCustomerResFeeRecordsResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_sub_customers_async(self, request):
-        """查询客户列表
-
-        功能描述：查询客户列表
-
-        :param ListSubCustomersRequest request
-        :return: ListSubCustomersResponse
-        """
-        return self.list_sub_customers_with_http_info(request)
-
-    def list_sub_customers_with_http_info(self, request):
-        """查询客户列表
-
-        功能描述：查询客户列表
-
-        :param ListSubCustomersRequest request
-        :return: ListSubCustomersResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/sub-customers/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListSubCustomersResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3119,6 +1850,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3131,66 +1864,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSubcustomerMonthlyBillsResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def pay_orders_async(self, request):
-        """支付包周期订单
-
-        功能描述：支付包周期订单
-
-        :param PayOrdersRequest request
-        :return: PayOrdersResponse
-        """
-        return self.pay_orders_with_http_info(request)
-
-    def pay_orders_with_http_info(self, request):
-        """支付包周期订单
-
-        功能描述：支付包周期订单
-
-        :param PayOrdersRequest request
-        :return: PayOrdersResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/orders/customer-orders/pay',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='PayOrdersResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3237,6 +1911,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -3251,66 +1927,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ReclaimCouponQuotasResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def reclaim_indirect_partner_account_async(self, request):
-        """回收精英服务商账户拨款
-
-        功能描述：合作伙伴可以回收二级渠道账户余额
-
-        :param ReclaimIndirectPartnerAccountRequest request
-        :return: ReclaimIndirectPartnerAccountResponse
-        """
-        return self.reclaim_indirect_partner_account_with_http_info(request)
-
-    def reclaim_indirect_partner_account_with_http_info(self, request):
-        """回收精英服务商账户拨款
-
-        功能描述：合作伙伴可以回收二级渠道账户余额
-
-        :param ReclaimIndirectPartnerAccountRequest request
-        :return: ReclaimIndirectPartnerAccountResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/accounts/partner-accounts/indirect-partner-reclaim',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ReclaimIndirectPartnerAccountResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3357,6 +1974,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -3371,6 +1990,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ReclaimPartnerCouponsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3417,6 +2037,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -3431,6 +2053,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ReclaimSubEnterpriseAmountResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3477,6 +2100,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -3491,66 +2116,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ReclaimToPartnerAccountResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def renewal_resources_async(self, request):
-        """续订包周期资源
-
-        功能描述：续订包周期资源
-
-        :param RenewalResourcesRequest request
-        :return: RenewalResourcesResponse
-        """
-        return self.renewal_resources_with_http_info(request)
-
-    def renewal_resources_with_http_info(self, request):
-        """续订包周期资源
-
-        功能描述：续订包周期资源
-
-        :param RenewalResourcesRequest request
-        :return: RenewalResourcesResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/orders/subscriptions/resources/renew',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='RenewalResourcesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3597,6 +2163,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -3611,66 +2179,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='SendSmsVerificationCodeResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def send_verification_message_code_async(self, request):
-        """短信验证码
-
-        功能描述：发送验证码
-
-        :param SendVerificationMessageCodeRequest request
-        :return: SendVerificationMessageCodeResponse
-        """
-        return self.send_verification_message_code_with_http_info(request)
-
-    def send_verification_message_code_with_http_info(self, request):
-        """短信验证码
-
-        功能描述：发送验证码
-
-        :param SendVerificationMessageCodeRequest request
-        :return: SendVerificationMessageCodeResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/bases/verificationcode/send',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='SendVerificationMessageCodeResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3715,6 +2224,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3727,6 +2238,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowCusotmerAccountBalancesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3785,6 +2297,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3797,6 +2311,1669 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowCustomerMonthlySumResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_multi_account_transfer_amount_async(self, request):
+        """查询企业主的可拨款余额
+
+        功能描述：查询企业主的可拨款余额
+
+        :param ShowMultiAccountTransferAmountRequest request
+        :return: ShowMultiAccountTransferAmountResponse
+        """
+        return self.show_multi_account_transfer_amount_with_http_info(request)
+
+    def show_multi_account_transfer_amount_with_http_info(self, request):
+        """查询企业主的可拨款余额
+
+        功能描述：查询企业主的可拨款余额
+
+        :param ShowMultiAccountTransferAmountRequest request
+        :return: ShowMultiAccountTransferAmountResponse
+        """
+
+        all_params = ['balance_type', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'balance_type' in local_var_params:
+            query_params.append(('balance_type', local_var_params['balance_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/enterprises/multi-accounts/transfer-amount',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowMultiAccountTransferAmountResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_coupon_quotas_async(self, request):
+        """向精英服务商发放代金券额度
+
+        功能描述：向精英服务商发放代金券额度
+
+        :param UpdateCouponQuotasRequest request
+        :return: UpdateCouponQuotasResponse
+        """
+        return self.update_coupon_quotas_with_http_info(request)
+
+    def update_coupon_quotas_with_http_info(self, request):
+        """向精英服务商发放代金券额度
+
+        功能描述：向精英服务商发放代金券额度
+
+        :param UpdateCouponQuotasRequest request
+        :return: UpdateCouponQuotasResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/coupon-quotas/indirect-partner-adjust',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateCouponQuotasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_customer_account_amount_async(self, request):
+        """调账
+
+        功能描述：从伙伴账户调账给子客户
+
+        :param UpdateCustomerAccountAmountRequest request
+        :return: UpdateCustomerAccountAmountResponse
+        """
+        return self.update_customer_account_amount_with_http_info(request)
+
+    def update_customer_account_amount_with_http_info(self, request):
+        """调账
+
+        功能描述：从伙伴账户调账给子客户
+
+        :param UpdateCustomerAccountAmountRequest request
+        :return: UpdateCustomerAccountAmountResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/accounts/partner-accounts/adjust-amount',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateCustomerAccountAmountResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_sub_enterprise_amount_async(self, request):
+        """企业主账号向企业子账号拨款
+
+        功能描述：企业主账号向企业子账号拨款
+
+        :param UpdateSubEnterpriseAmountRequest request
+        :return: UpdateSubEnterpriseAmountResponse
+        """
+        return self.update_sub_enterprise_amount_with_http_info(request)
+
+    def update_sub_enterprise_amount_with_http_info(self, request):
+        """企业主账号向企业子账号拨款
+
+        功能描述：企业主账号向企业子账号拨款
+
+        :param UpdateSubEnterpriseAmountRequest request
+        :return: UpdateSubEnterpriseAmountResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/enterprises/multi-accounts/transfer-amount',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateSubEnterpriseAmountResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def auto_renewal_resources_async(self, request):
+        """设置包年包月资源自动续费
+
+        功能描述：设置包周期资源自动续费
+
+        :param AutoRenewalResourcesRequest request
+        :return: AutoRenewalResourcesResponse
+        """
+        return self.auto_renewal_resources_with_http_info(request)
+
+    def auto_renewal_resources_with_http_info(self, request):
+        """设置包年包月资源自动续费
+
+        功能描述：设置包周期资源自动续费
+
+        :param AutoRenewalResourcesRequest request
+        :return: AutoRenewalResourcesResponse
+        """
+
+        all_params = ['resource_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/orders/subscriptions/resources/autorenew/{resource_id}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AutoRenewalResourcesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_set_sub_customer_discount_async(self, request):
+        """设置伙伴折扣
+
+        功能描述：设置伙伴折扣
+
+        :param BatchSetSubCustomerDiscountRequest request
+        :return: BatchSetSubCustomerDiscountResponse
+        """
+        return self.batch_set_sub_customer_discount_with_http_info(request)
+
+    def batch_set_sub_customer_discount_with_http_info(self, request):
+        """设置伙伴折扣
+
+        功能描述：设置伙伴折扣
+
+        :param BatchSetSubCustomerDiscountRequest request
+        :return: BatchSetSubCustomerDiscountResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/discounts',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchSetSubCustomerDiscountResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def cancel_auto_renewal_resources_async(self, request):
+        """取消包年包月资源自动续费
+
+        功能描述：取消包年/包月资源自动续费
+
+        :param CancelAutoRenewalResourcesRequest request
+        :return: CancelAutoRenewalResourcesResponse
+        """
+        return self.cancel_auto_renewal_resources_with_http_info(request)
+
+    def cancel_auto_renewal_resources_with_http_info(self, request):
+        """取消包年包月资源自动续费
+
+        功能描述：取消包年/包月资源自动续费
+
+        :param CancelAutoRenewalResourcesRequest request
+        :return: CancelAutoRenewalResourcesResponse
+        """
+
+        all_params = ['resource_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/orders/subscriptions/resources/autorenew/{resource_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CancelAutoRenewalResourcesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def cancel_customer_order_async(self, request):
+        """取消包周期订单
+
+        功能描述：取消包周期订单
+
+        :param CancelCustomerOrderRequest request
+        :return: CancelCustomerOrderResponse
+        """
+        return self.cancel_customer_order_with_http_info(request)
+
+    def cancel_customer_order_with_http_info(self, request):
+        """取消包周期订单
+
+        功能描述：取消包周期订单
+
+        :param CancelCustomerOrderRequest request
+        :return: CancelCustomerOrderResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/orders/customer-orders/cancel',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CancelCustomerOrderResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def cancel_resources_subscription_async(self, request):
+        """退订包周期资源
+
+        功能描述：退订包周期资源
+
+        :param CancelResourcesSubscriptionRequest request
+        :return: CancelResourcesSubscriptionResponse
+        """
+        return self.cancel_resources_subscription_with_http_info(request)
+
+    def cancel_resources_subscription_with_http_info(self, request):
+        """退订包周期资源
+
+        功能描述：退订包周期资源
+
+        :param CancelResourcesSubscriptionRequest request
+        :return: CancelResourcesSubscriptionResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/orders/subscriptions/resources/unsubscribe',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CancelResourcesSubscriptionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def change_enterprise_realname_authentication_async(self, request):
+        """实名认证变更申请
+
+        功能描述：实名认证变更申请
+
+        :param ChangeEnterpriseRealnameAuthenticationRequest request
+        :return: ChangeEnterpriseRealnameAuthenticationResponse
+        """
+        return self.change_enterprise_realname_authentication_with_http_info(request)
+
+    def change_enterprise_realname_authentication_with_http_info(self, request):
+        """实名认证变更申请
+
+        功能描述：实名认证变更申请
+
+        :param ChangeEnterpriseRealnameAuthenticationRequest request
+        :return: ChangeEnterpriseRealnameAuthenticationResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/customers/realname-auths/enterprise',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ChangeEnterpriseRealnameAuthenticationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def check_user_identity_async(self, request):
+        """校验客户的注册信息
+
+        功能描述：校验客户的注册信息
+
+        :param CheckUserIdentityRequest request
+        :return: CheckUserIdentityResponse
+        """
+        return self.check_user_identity_with_http_info(request)
+
+    def check_user_identity_with_http_info(self, request):
+        """校验客户的注册信息
+
+        功能描述：校验客户的注册信息
+
+        :param CheckUserIdentityRequest request
+        :return: CheckUserIdentityResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/sub-customers/users/check-identity',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CheckUserIdentityResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_enterprise_realname_authentication_async(self, request):
+        """企业实名认证申请
+
+        功能描述：企业实名认证申请V2
+
+        :param CreateEnterpriseRealnameAuthenticationRequest request
+        :return: CreateEnterpriseRealnameAuthenticationResponse
+        """
+        return self.create_enterprise_realname_authentication_with_http_info(request)
+
+    def create_enterprise_realname_authentication_with_http_info(self, request):
+        """企业实名认证申请
+
+        功能描述：企业实名认证申请V2
+
+        :param CreateEnterpriseRealnameAuthenticationRequest request
+        :return: CreateEnterpriseRealnameAuthenticationResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/customers/realname-auths/enterprise',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateEnterpriseRealnameAuthenticationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_personal_realname_auth_async(self, request):
+        """个人实名认证申请
+
+        功能描述：个人实名认证申请
+
+        :param CreatePersonalRealnameAuthRequest request
+        :return: CreatePersonalRealnameAuthResponse
+        """
+        return self.create_personal_realname_auth_with_http_info(request)
+
+    def create_personal_realname_auth_with_http_info(self, request):
+        """个人实名认证申请
+
+        功能描述：个人实名认证申请
+
+        :param CreatePersonalRealnameAuthRequest request
+        :return: CreatePersonalRealnameAuthResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/customers/realname-auths/individual',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreatePersonalRealnameAuthResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_sub_customer_async(self, request):
+        """创建客户（V2）
+
+        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。
+
+        :param CreateSubCustomerRequest request
+        :return: CreateSubCustomerResponse
+        """
+        return self.create_sub_customer_with_http_info(request)
+
+    def create_sub_customer_with_http_info(self, request):
+        """创建客户（V2）
+
+        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。
+
+        :param CreateSubCustomerRequest request
+        :return: CreateSubCustomerResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/sub-customers',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateSubCustomerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_customer_orders_async(self, request):
+        """查询订单列表V2
+
+        功能描述：查询订单列表
+
+        :param ListCustomerOrdersRequest request
+        :return: ListCustomerOrdersResponse
+        """
+        return self.list_customer_orders_with_http_info(request)
+
+    def list_customer_orders_with_http_info(self, request):
+        """查询订单列表V2
+
+        功能描述：查询订单列表
+
+        :param ListCustomerOrdersRequest request
+        :return: ListCustomerOrdersResponse
+        """
+
+        all_params = ['order_id', 'customer_id', 'create_time_begin', 'create_time_end', 'service_type_code', 'status', 'order_type', 'limit', 'offset', 'order_by', 'payment_time_begin', 'payment_time_end', 'indirect_partner_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'order_id' in local_var_params:
+            query_params.append(('order_id', local_var_params['order_id']))
+        if 'customer_id' in local_var_params:
+            query_params.append(('customer_id', local_var_params['customer_id']))
+        if 'create_time_begin' in local_var_params:
+            query_params.append(('create_time_begin', local_var_params['create_time_begin']))
+        if 'create_time_end' in local_var_params:
+            query_params.append(('create_time_end', local_var_params['create_time_end']))
+        if 'service_type_code' in local_var_params:
+            query_params.append(('service_type_code', local_var_params['service_type_code']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'order_type' in local_var_params:
+            query_params.append(('order_type', local_var_params['order_type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'payment_time_begin' in local_var_params:
+            query_params.append(('payment_time_begin', local_var_params['payment_time_begin']))
+        if 'payment_time_end' in local_var_params:
+            query_params.append(('payment_time_end', local_var_params['payment_time_end']))
+        if 'indirect_partner_id' in local_var_params:
+            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/orders/customer-orders',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListCustomerOrdersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_indirect_partners_async(self, request):
+        """查询精英服务商列表
+
+        功能描述：查询精英服务商列表
+
+        :param ListIndirectPartnersRequest request
+        :return: ListIndirectPartnersResponse
+        """
+        return self.list_indirect_partners_with_http_info(request)
+
+    def list_indirect_partners_with_http_info(self, request):
+        """查询精英服务商列表
+
+        功能描述：查询精英服务商列表
+
+        :param ListIndirectPartnersRequest request
+        :return: ListIndirectPartnersResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/indirect-partners/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListIndirectPartnersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_order_coupons_by_order_id_async(self, request):
+        """查询订单可用优惠券
+
+        功能描述：查询订单详情
+
+        :param ListOrderCouponsByOrderIdRequest request
+        :return: ListOrderCouponsByOrderIdResponse
+        """
+        return self.list_order_coupons_by_order_id_with_http_info(request)
+
+    def list_order_coupons_by_order_id_with_http_info(self, request):
+        """查询订单可用优惠券
+
+        功能描述：查询订单详情
+
+        :param ListOrderCouponsByOrderIdRequest request
+        :return: ListOrderCouponsByOrderIdResponse
+        """
+
+        all_params = ['order_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'order_id' in local_var_params:
+            query_params.append(('order_id', local_var_params['order_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/orders/customer-orders/order-coupons',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListOrderCouponsByOrderIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_partner_pay_orders_async(self, request):
+        """查询伙伴代付订单列表
+
+        功能描述：查询伙伴代付订单列表
+
+        :param ListPartnerPayOrdersRequest request
+        :return: ListPartnerPayOrdersResponse
+        """
+        return self.list_partner_pay_orders_with_http_info(request)
+
+    def list_partner_pay_orders_with_http_info(self, request):
+        """查询伙伴代付订单列表
+
+        功能描述：查询伙伴代付订单列表
+
+        :param ListPartnerPayOrdersRequest request
+        :return: ListPartnerPayOrdersResponse
+        """
+
+        all_params = ['order_id', 'customer_id', 'limit', 'offset', 'status', 'indirect_partner_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'order_id' in local_var_params:
+            query_params.append(('order_id', local_var_params['order_id']))
+        if 'customer_id' in local_var_params:
+            query_params.append(('customer_id', local_var_params['customer_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'indirect_partner_id' in local_var_params:
+            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/orders/customer-orders/partner-pay-orders',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListPartnerPayOrdersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_pay_per_use_customer_resources_async(self, request):
+        """查询客户包年包月资源列表
+
+        功能描述：查询客户包年/包月资源列表
+
+        :param ListPayPerUseCustomerResourcesRequest request
+        :return: ListPayPerUseCustomerResourcesResponse
+        """
+        return self.list_pay_per_use_customer_resources_with_http_info(request)
+
+    def list_pay_per_use_customer_resources_with_http_info(self, request):
+        """查询客户包年包月资源列表
+
+        功能描述：查询客户包年/包月资源列表
+
+        :param ListPayPerUseCustomerResourcesRequest request
+        :return: ListPayPerUseCustomerResourcesResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/orders/suscriptions/resources/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListPayPerUseCustomerResourcesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_resource_usages_async(self, request):
+        """查询套餐内使用量
+
+        功能描述：查询套餐内使用量
+
+        :param ListResourceUsagesRequest request
+        :return: ListResourceUsagesResponse
+        """
+        return self.list_resource_usages_with_http_info(request)
+
+    def list_resource_usages_with_http_info(self, request):
+        """查询套餐内使用量
+
+        功能描述：查询套餐内使用量
+
+        :param ListResourceUsagesRequest request
+        :return: ListResourceUsagesResponse
+        """
+
+        all_params = ['x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/payments/free-resources/usages/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListResourceUsagesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_sub_customer_discounts_async(self, request):
+        """查询伙伴折扣
+
+        功能描述：查询伙伴折扣
+
+        :param ListSubCustomerDiscountsRequest request
+        :return: ListSubCustomerDiscountsResponse
+        """
+        return self.list_sub_customer_discounts_with_http_info(request)
+
+    def list_sub_customer_discounts_with_http_info(self, request):
+        """查询伙伴折扣
+
+        功能描述：查询伙伴折扣
+
+        :param ListSubCustomerDiscountsRequest request
+        :return: ListSubCustomerDiscountsResponse
+        """
+
+        all_params = ['customer_id', 'indirect_partner_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'customer_id' in local_var_params:
+            query_params.append(('customer_id', local_var_params['customer_id']))
+        if 'indirect_partner_id' in local_var_params:
+            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/discounts',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSubCustomerDiscountsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_sub_customers_async(self, request):
+        """查询客户列表
+
+        功能描述：查询客户列表
+
+        :param ListSubCustomersRequest request
+        :return: ListSubCustomersResponse
+        """
+        return self.list_sub_customers_with_http_info(request)
+
+    def list_sub_customers_with_http_info(self, request):
+        """查询客户列表
+
+        功能描述：查询客户列表
+
+        :param ListSubCustomersRequest request
+        :return: ListSubCustomersResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/sub-customers/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSubCustomersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def pay_orders_async(self, request):
+        """支付包周期订单
+
+        功能描述：支付包周期订单
+
+        :param PayOrdersRequest request
+        :return: PayOrdersResponse
+        """
+        return self.pay_orders_with_http_info(request)
+
+    def pay_orders_with_http_info(self, request):
+        """支付包周期订单
+
+        功能描述：支付包周期订单
+
+        :param PayOrdersRequest request
+        :return: PayOrdersResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/orders/customer-orders/pay',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='PayOrdersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def reclaim_indirect_partner_account_async(self, request):
+        """回收精英服务商账户拨款
+
+        功能描述：合作伙伴可以回收二级渠道账户余额
+
+        :param ReclaimIndirectPartnerAccountRequest request
+        :return: ReclaimIndirectPartnerAccountResponse
+        """
+        return self.reclaim_indirect_partner_account_with_http_info(request)
+
+    def reclaim_indirect_partner_account_with_http_info(self, request):
+        """回收精英服务商账户拨款
+
+        功能描述：合作伙伴可以回收二级渠道账户余额
+
+        :param ReclaimIndirectPartnerAccountRequest request
+        :return: ReclaimIndirectPartnerAccountResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/accounts/partner-accounts/indirect-partner-reclaim',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ReclaimIndirectPartnerAccountResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def renewal_resources_async(self, request):
+        """续订包周期资源
+
+        功能描述：续订包周期资源
+
+        :param RenewalResourcesRequest request
+        :return: RenewalResourcesResponse
+        """
+        return self.renewal_resources_with_http_info(request)
+
+    def renewal_resources_with_http_info(self, request):
+        """续订包周期资源
+
+        功能描述：续订包周期资源
+
+        :param RenewalResourcesRequest request
+        :return: RenewalResourcesResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/orders/subscriptions/resources/renew',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RenewalResourcesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def send_verification_message_code_async(self, request):
+        """短信验证码
+
+        功能描述：发送验证码
+
+        :param SendVerificationMessageCodeRequest request
+        :return: SendVerificationMessageCodeResponse
+        """
+        return self.send_verification_message_code_with_http_info(request)
+
+    def send_verification_message_code_with_http_info(self, request):
+        """短信验证码
+
+        功能描述：发送验证码
+
+        :param SendVerificationMessageCodeRequest request
+        :return: SendVerificationMessageCodeResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bases/verificationcode/send',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SendVerificationMessageCodeResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3849,6 +4026,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3861,68 +4040,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowCustomerOrderDetailsResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def show_multi_account_transfer_amount_async(self, request):
-        """查询企业主的可拨款余额
-
-        功能描述：查询企业主的可拨款余额
-
-        :param ShowMultiAccountTransferAmountRequest request
-        :return: ShowMultiAccountTransferAmountResponse
-        """
-        return self.show_multi_account_transfer_amount_with_http_info(request)
-
-    def show_multi_account_transfer_amount_with_http_info(self, request):
-        """查询企业主的可拨款余额
-
-        功能描述：查询企业主的可拨款余额
-
-        :param ShowMultiAccountTransferAmountRequest request
-        :return: ShowMultiAccountTransferAmountResponse
-        """
-
-        all_params = ['balance_type', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'balance_type' in local_var_params:
-            query_params.append(('balance_type', local_var_params['balance_type']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/enterprises/multi-accounts/transfer-amount',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowMultiAccountTransferAmountResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3969,6 +4087,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3981,6 +4101,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowRealnameAuthenticationReviewResultResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4027,6 +4148,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -4039,126 +4162,7 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowRefundOrderDetailsResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def update_coupon_quotas_async(self, request):
-        """向精英服务商发放代金券额度
-
-        功能描述：向精英服务商发放代金券额度
-
-        :param UpdateCouponQuotasRequest request
-        :return: UpdateCouponQuotasResponse
-        """
-        return self.update_coupon_quotas_with_http_info(request)
-
-    def update_coupon_quotas_with_http_info(self, request):
-        """向精英服务商发放代金券额度
-
-        功能描述：向精英服务商发放代金券额度
-
-        :param UpdateCouponQuotasRequest request
-        :return: UpdateCouponQuotasResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/coupon-quotas/indirect-partner-adjust',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='UpdateCouponQuotasResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def update_customer_account_amount_async(self, request):
-        """调账
-
-        功能描述：从伙伴账户调账给子客户
-
-        :param UpdateCustomerAccountAmountRequest request
-        :return: UpdateCustomerAccountAmountResponse
-        """
-        return self.update_customer_account_amount_with_http_info(request)
-
-    def update_customer_account_amount_with_http_info(self, request):
-        """调账
-
-        功能描述：从伙伴账户调账给子客户
-
-        :param UpdateCustomerAccountAmountRequest request
-        :return: UpdateCustomerAccountAmountResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/accounts/partner-accounts/adjust-amount',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='UpdateCustomerAccountAmountResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4205,6 +4209,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -4219,6 +4225,454 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateIndirectPartnerAccountResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_postal_async(self, request):
+        """新增邮寄地址
+
+        功能描述：新增邮寄地址
+
+        :param CreatePostalRequest request
+        :return: CreatePostalResponse
+        """
+        return self.create_postal_with_http_info(request)
+
+    def create_postal_with_http_info(self, request):
+        """新增邮寄地址
+
+        功能描述：新增邮寄地址
+
+        :param CreatePostalRequest request
+        :return: CreatePostalResponse
+        """
+
+        all_params = ['req', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/customers/postal-addresses',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreatePostalResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_postal_async(self, request):
+        """删除邮寄地址
+
+        功能描述：删除邮寄地址
+
+        :param DeletePostalRequest request
+        :return: DeletePostalResponse
+        """
+        return self.delete_postal_with_http_info(request)
+
+    def delete_postal_with_http_info(self, request):
+        """删除邮寄地址
+
+        功能描述：删除邮寄地址
+
+        :param DeletePostalRequest request
+        :return: DeletePostalResponse
+        """
+
+        all_params = ['address_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'address_id' in local_var_params:
+            path_params['address_id'] = local_var_params['address_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/customers/postal-addresses/{address_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeletePostalResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_postal_address_async(self, request):
+        """查询邮寄地址
+
+        功能描述：查询邮寄地址
+
+        :param ListPostalAddressRequest request
+        :return: ListPostalAddressResponse
+        """
+        return self.list_postal_address_with_http_info(request)
+
+    def list_postal_address_with_http_info(self, request):
+        """查询邮寄地址
+
+        功能描述：查询邮寄地址
+
+        :param ListPostalAddressRequest request
+        :return: ListPostalAddressResponse
+        """
+
+        all_params = ['offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/customers/postal-addresses',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListPostalAddressResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_provinces_async(self, request):
+        """根据国家查询省份信息
+
+        功能描述：根据国家查询省份列表
+
+        :param ListProvincesRequest request
+        :return: ListProvincesResponse
+        """
+        return self.list_provinces_with_http_info(request)
+
+    def list_provinces_with_http_info(self, request):
+        """根据国家查询省份信息
+
+        功能描述：根据国家查询省份列表
+
+        :param ListProvincesRequest request
+        :return: ListProvincesResponse
+        """
+
+        all_params = ['x_language', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/systems/configs/provinces',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListProvincesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_resource_types_async(self, request):
+        """查询资源类型
+
+        功能描述：查询资源类型
+
+        :param ListResourceTypesRequest request
+        :return: ListResourceTypesResponse
+        """
+        return self.list_resource_types_with_http_info(request)
+
+    def list_resource_types_with_http_info(self, request):
+        """查询资源类型
+
+        功能描述：查询资源类型
+
+        :param ListResourceTypesRequest request
+        :return: ListResourceTypesResponse
+        """
+
+        all_params = ['x_language', 'resource_type_code']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource_type_code' in local_var_params:
+            query_params.append(('resource_type_code', local_var_params['resource_type_code']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bases/resource-types',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListResourceTypesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_service_resources_async(self, request):
+        """根据云服务类型查询资源列表
+
+        功能描述：根据云服务类型查询资源列表
+
+        :param ListServiceResourcesRequest request
+        :return: ListServiceResourcesResponse
+        """
+        return self.list_service_resources_with_http_info(request)
+
+    def list_service_resources_with_http_info(self, request):
+        """根据云服务类型查询资源列表
+
+        功能描述：根据云服务类型查询资源列表
+
+        :param ListServiceResourcesRequest request
+        :return: ListServiceResourcesResponse
+        """
+
+        all_params = ['service_type_code', 'x_language', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'service_type_code' in local_var_params:
+            query_params.append(('service_type_code', local_var_params['service_type_code']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/products/service-resources',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListServiceResourcesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_service_types_async(self, request):
+        """查询云服务类型列表
+
+        功能描述：查询云服务类型列表
+
+        :param ListServiceTypesRequest request
+        :return: ListServiceTypesResponse
+        """
+        return self.list_service_types_with_http_info(request)
+
+    def list_service_types_with_http_info(self, request):
+        """查询云服务类型列表
+
+        功能描述：查询云服务类型列表
+
+        :param ListServiceTypesRequest request
+        :return: ListServiceTypesResponse
+        """
+
+        all_params = ['x_language', 'service_type_code']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'service_type_code' in local_var_params:
+            query_params.append(('service_type_code', local_var_params['service_type_code']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bases/service-types',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListServiceTypesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4267,6 +4721,8 @@ class BssAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -4281,74 +4737,15 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdatePostalResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def update_sub_enterprise_amount_async(self, request):
-        """企业主账号向企业子账号拨款
-
-        功能描述：企业主账号向企业子账号拨款
-
-        :param UpdateSubEnterpriseAmountRequest request
-        :return: UpdateSubEnterpriseAmountResponse
-        """
-        return self.update_sub_enterprise_amount_with_http_info(request)
-
-    def update_sub_enterprise_amount_with_http_info(self, request):
-        """企业主账号向企业子账号拨款
-
-        功能描述：企业主账号向企业子账号拨款
-
-        :param UpdateSubEnterpriseAmountRequest request
-        :return: UpdateSubEnterpriseAmountResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/enterprises/multi-accounts/transfer-amount',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='UpdateSubEnterpriseAmountResponse',
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
-                 request_type=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
+                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -4362,8 +4759,10 @@ class BssAsyncClient(Client):
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
         :param auth_settings list: Auth Settings names for the request.
         :param response_type: Response data type.
+        :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
             header, and post parameters.
+        :param request_type: Request data type.
         :return:
             Return the response directly.
         """
@@ -4376,6 +4775,7 @@ class BssAsyncClient(Client):
             body=body,
             post_params=post_params,
             response_type=response_type,
+            response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
 	    async_request=True)

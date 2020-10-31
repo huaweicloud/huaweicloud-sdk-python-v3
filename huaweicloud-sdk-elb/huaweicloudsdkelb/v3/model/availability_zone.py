@@ -48,7 +48,7 @@ class AvailabilityZone:
     def code(self):
         """Gets the code of this AvailabilityZone.
 
-        可用区code
+        可用区code。
 
         :return: The code of this AvailabilityZone.
         :rtype: str
@@ -59,7 +59,7 @@ class AvailabilityZone:
     def code(self, code):
         """Sets the code of this AvailabilityZone.
 
-        可用区code
+        可用区code。
 
         :param code: The code of this AvailabilityZone.
         :type: str
@@ -70,7 +70,7 @@ class AvailabilityZone:
     def state(self):
         """Gets the state of this AvailabilityZone.
 
-        az状态.取值：  ACTIVE
+        az状态。  取值：ACTIVE
 
         :return: The state of this AvailabilityZone.
         :rtype: str
@@ -81,7 +81,7 @@ class AvailabilityZone:
     def state(self, state):
         """Sets the state of this AvailabilityZone.
 
-        az状态.取值：  ACTIVE
+        az状态。  取值：ACTIVE
 
         :param state: The state of this AvailabilityZone.
         :type: str

@@ -42,23 +42,23 @@ class EpsAsyncClient(Client):
     def new_builder(clazz):
         return ClientBuilder(clazz, "GlobalCredentials")
 
-    def create_ep_async(self, request):
+    def create_enterprise_project_async(self, request):
         """创建企业项目
 
         创建企业项目。
 
-        :param CreateEpRequest request
-        :return: CreateEpResponse
+        :param CreateEnterpriseProjectRequest request
+        :return: CreateEnterpriseProjectResponse
         """
-        return self.create_ep_with_http_info(request)
+        return self.create_enterprise_project_with_http_info(request)
 
-    def create_ep_with_http_info(self, request):
+    def create_enterprise_project_with_http_info(self, request):
         """创建企业项目
 
         创建企业项目。
 
-        :param CreateEpRequest request
-        :return: CreateEpResponse
+        :param CreateEnterpriseProjectRequest request
+        :return: CreateEnterpriseProjectResponse
         """
 
         all_params = ['create_ep']
@@ -83,6 +83,8 @@ class EpsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -96,29 +98,30 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='CreateEpResponse',
+            response_type='CreateEnterpriseProjectResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def disable_ep_async(self, request):
+    def disable_enterprise_project_async(self, request):
         """停用企业项目
 
         停用企业项目。
 
-        :param DisableEpRequest request
-        :return: DisableEpResponse
+        :param DisableEnterpriseProjectRequest request
+        :return: DisableEnterpriseProjectResponse
         """
-        return self.disable_ep_with_http_info(request)
+        return self.disable_enterprise_project_with_http_info(request)
 
-    def disable_ep_with_http_info(self, request):
+    def disable_enterprise_project_with_http_info(self, request):
         """停用企业项目
 
         停用企业项目。
 
-        :param DisableEpRequest request
-        :return: DisableEpResponse
+        :param DisableEnterpriseProjectRequest request
+        :return: DisableEnterpriseProjectResponse
         """
 
         all_params = ['enterprise_project_id', 'action']
@@ -145,6 +148,8 @@ class EpsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -158,29 +163,30 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='DisableEpResponse',
+            response_type='DisableEnterpriseProjectResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def enable_ep_async(self, request):
+    def enable_enterprise_project_async(self, request):
         """启用企业项目
 
         启用企业项目。
 
-        :param EnableEpRequest request
-        :return: EnableEpResponse
+        :param EnableEnterpriseProjectRequest request
+        :return: EnableEnterpriseProjectResponse
         """
-        return self.enable_ep_with_http_info(request)
+        return self.enable_enterprise_project_with_http_info(request)
 
-    def enable_ep_with_http_info(self, request):
+    def enable_enterprise_project_with_http_info(self, request):
         """启用企业项目
 
         启用企业项目。
 
-        :param EnableEpRequest request
-        :return: EnableEpResponse
+        :param EnableEnterpriseProjectRequest request
+        :return: EnableEnterpriseProjectResponse
         """
 
         all_params = ['enterprise_project_id', 'action']
@@ -207,6 +213,8 @@ class EpsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -220,7 +228,8 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='EnableEpResponse',
+            response_type='EnableEnterpriseProjectResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -265,6 +274,8 @@ class EpsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -277,31 +288,32 @@ class EpsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListApiVersionsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def list_ep_async(self, request):
+    def list_enterprise_project_async(self, request):
         """查询企业项目列表
 
         查询当前用户已授权的企业项目列表，用户可以使用企业项目绑定资源。
 
-        :param ListEpRequest request
-        :return: ListEpResponse
+        :param ListEnterpriseProjectRequest request
+        :return: ListEnterpriseProjectResponse
         """
-        return self.list_ep_with_http_info(request)
+        return self.list_enterprise_project_with_http_info(request)
 
-    def list_ep_with_http_info(self, request):
+    def list_enterprise_project_with_http_info(self, request):
         """查询企业项目列表
 
         查询当前用户已授权的企业项目列表，用户可以使用企业项目绑定资源。
 
-        :param ListEpRequest request
-        :return: ListEpResponse
+        :param ListEnterpriseProjectRequest request
+        :return: ListEnterpriseProjectResponse
         """
 
-        all_params = ['offset', 'id', 'name', 'status', 'limit', 'sort_key', 'sort_dir']
+        all_params = ['offset', 'id', 'limit', 'name', 'sort_dir', 'sort_key', 'status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -314,18 +326,18 @@ class EpsAsyncClient(Client):
         query_params = []
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
-        if 'sort_key' in local_var_params:
-            query_params.append(('sort_key', local_var_params['sort_key']))
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
 
         header_params = {}
 
@@ -334,6 +346,8 @@ class EpsAsyncClient(Client):
         body_params = None
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
+
+        response_headers = []
 
 
         auth_settings = []
@@ -346,7 +360,8 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ListEpResponse',
+            response_type='ListEnterpriseProjectResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -395,6 +410,8 @@ class EpsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -409,28 +426,29 @@ class EpsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='MigrateResourceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def modify_ep_async(self, request):
+    def modify_enterprise_project_async(self, request):
         """修改企业项目
 
         修改企业项目。当前仅支持修改名称和描述。
 
-        :param ModifyEpRequest request
-        :return: ModifyEpResponse
+        :param ModifyEnterpriseProjectRequest request
+        :return: ModifyEnterpriseProjectResponse
         """
-        return self.modify_ep_with_http_info(request)
+        return self.modify_enterprise_project_with_http_info(request)
 
-    def modify_ep_with_http_info(self, request):
+    def modify_enterprise_project_with_http_info(self, request):
         """修改企业项目
 
         修改企业项目。当前仅支持修改名称和描述。
 
-        :param ModifyEpRequest request
-        :return: ModifyEpResponse
+        :param ModifyEnterpriseProjectRequest request
+        :return: ModifyEnterpriseProjectResponse
         """
 
         all_params = ['enterprise_project_id', 'modify_ep']
@@ -457,6 +475,8 @@ class EpsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -470,7 +490,8 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ModifyEpResponse',
+            response_type='ModifyEnterpriseProjectResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -517,6 +538,8 @@ class EpsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -529,28 +552,29 @@ class EpsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowApiVersionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def show_ep_async(self, request):
+    def show_enterprise_project_async(self, request):
         """查询企业项目详情
 
         查询企业项目详情。
 
-        :param ShowEpRequest request
-        :return: ShowEpResponse
+        :param ShowEnterpriseProjectRequest request
+        :return: ShowEnterpriseProjectResponse
         """
-        return self.show_ep_with_http_info(request)
+        return self.show_enterprise_project_with_http_info(request)
 
-    def show_ep_with_http_info(self, request):
+    def show_enterprise_project_with_http_info(self, request):
         """查询企业项目详情
 
         查询企业项目详情。
 
-        :param ShowEpRequest request
-        :return: ShowEpResponse
+        :param ShowEnterpriseProjectRequest request
+        :return: ShowEnterpriseProjectResponse
         """
 
         all_params = ['enterprise_project_id']
@@ -575,6 +599,8 @@ class EpsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -586,29 +612,30 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowEpResponse',
+            response_type='ShowEnterpriseProjectResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def show_ep_quota_async(self, request):
+    def show_enterprise_project_quota_async(self, request):
         """查询企业项目配额
 
         查询企业项目的配额信息。
 
-        :param ShowEpQuotaRequest request
-        :return: ShowEpQuotaResponse
+        :param ShowEnterpriseProjectQuotaRequest request
+        :return: ShowEnterpriseProjectQuotaResponse
         """
-        return self.show_ep_quota_with_http_info(request)
+        return self.show_enterprise_project_quota_with_http_info(request)
 
-    def show_ep_quota_with_http_info(self, request):
+    def show_enterprise_project_quota_with_http_info(self, request):
         """查询企业项目配额
 
         查询企业项目的配额信息。
 
-        :param ShowEpQuotaRequest request
-        :return: ShowEpQuotaResponse
+        :param ShowEnterpriseProjectQuotaRequest request
+        :return: ShowEnterpriseProjectQuotaResponse
         """
 
         all_params = []
@@ -631,6 +658,8 @@ class EpsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -642,29 +671,30 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowEpQuotaResponse',
+            response_type='ShowEnterpriseProjectQuotaResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def show_resource_bind_ep_async(self, request):
+    def show_resource_bind_enterprise_project_async(self, request):
         """查询企业项目绑定的资源列表
 
         查询企业项目下绑定的资源详情。
 
-        :param ShowResourceBindEpRequest request
-        :return: ShowResourceBindEpResponse
+        :param ShowResourceBindEnterpriseProjectRequest request
+        :return: ShowResourceBindEnterpriseProjectResponse
         """
-        return self.show_resource_bind_ep_with_http_info(request)
+        return self.show_resource_bind_enterprise_project_with_http_info(request)
 
-    def show_resource_bind_ep_with_http_info(self, request):
+    def show_resource_bind_enterprise_project_with_http_info(self, request):
         """查询企业项目绑定的资源列表
 
         查询企业项目下绑定的资源详情。
 
-        :param ShowResourceBindEpRequest request
-        :return: ShowResourceBindEpResponse
+        :param ShowResourceBindEnterpriseProjectRequest request
+        :return: ShowResourceBindEnterpriseProjectResponse
         """
 
         all_params = ['enterprise_project_id', 'req_ep_resouce']
@@ -691,6 +721,8 @@ class EpsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -704,15 +736,16 @@ class EpsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowResourceBindEpResponse',
+            response_type='ShowResourceBindEnterpriseProjectResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
-                 request_type=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
+                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -726,8 +759,10 @@ class EpsAsyncClient(Client):
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
         :param auth_settings list: Auth Settings names for the request.
         :param response_type: Response data type.
+        :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
             header, and post parameters.
+        :param request_type: Request data type.
         :return:
             Return the response directly.
         """
@@ -740,6 +775,7 @@ class EpsAsyncClient(Client):
             body=body,
             post_params=post_params,
             response_type=response_type,
+            response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
 	    async_request=True)

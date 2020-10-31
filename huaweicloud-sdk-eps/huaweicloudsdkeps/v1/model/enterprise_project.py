@@ -24,26 +24,31 @@ class EnterpriseProject:
 
     openapi_types = {
         'name': 'str',
-        'description': 'str'
+        'description': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
         'name': 'name',
-        'description': 'description'
+        'description': 'description',
+        'type': 'type'
     }
 
-    def __init__(self, name=None, description=None):
+    def __init__(self, name=None, description=None, type='prod'):
         """EnterpriseProject - a model defined in huaweicloud sdk"""
         
         
 
         self._name = None
         self._description = None
+        self._type = None
         self.discriminator = None
 
         self.name = name
         if description is not None:
             self.description = description
+        if type is not None:
+            self.type = type
 
     @property
     def name(self):
@@ -88,6 +93,28 @@ class EnterpriseProject:
         :type: str
         """
         self._description = description
+
+    @property
+    def type(self):
+        """Gets the type of this EnterpriseProject.
+
+        企业项目类型
+
+        :return: The type of this EnterpriseProject.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this EnterpriseProject.
+
+        企业项目类型
+
+        :param type: The type of this EnterpriseProject.
+        :type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

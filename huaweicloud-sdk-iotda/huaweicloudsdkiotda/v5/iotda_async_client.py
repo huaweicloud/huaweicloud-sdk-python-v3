@@ -89,6 +89,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -103,6 +105,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateAccessCodeResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -151,6 +154,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -165,6 +170,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='AddQueueResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -219,6 +225,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -231,6 +239,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='BatchShowQueueResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -279,6 +288,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -291,6 +302,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteQueueResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -339,6 +351,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -351,6 +365,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowQueueResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -399,6 +414,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -413,6 +430,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='AddApplicationResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -461,6 +479,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -473,6 +493,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteApplicationResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -521,6 +542,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -533,6 +556,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowApplicationResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -581,6 +605,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -593,6 +619,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowApplicationsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -645,6 +672,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -659,6 +688,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateAsyncCommandResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -711,6 +741,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -723,6 +755,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowAsyncDeviceCommandResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -771,6 +804,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -785,6 +820,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateBatchTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -843,6 +879,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -855,6 +893,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListBatchTasksResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -909,6 +948,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -921,6 +962,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowBatchTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -969,6 +1011,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -981,6 +1025,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteBatchTaskFileResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1027,6 +1072,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1039,6 +1086,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListBatchTaskFilesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1087,6 +1135,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1101,6 +1151,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='AddCertificateResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1153,6 +1204,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1167,6 +1220,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CheckCertificateResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1215,6 +1269,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1227,6 +1283,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteCertificateResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1281,6 +1338,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1293,6 +1352,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCertificatesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1343,6 +1403,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1357,6 +1419,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateCommandResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1405,6 +1468,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1419,6 +1484,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='AddDeviceGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1471,6 +1537,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1483,6 +1551,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateOrDeleteDeviceInGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1531,6 +1600,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1543,6 +1614,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteDeviceGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1599,6 +1671,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1611,6 +1685,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListDeviceGroupsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1659,6 +1734,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1671,6 +1748,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowDeviceGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1725,6 +1803,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1737,6 +1817,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowDevicesInGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1787,6 +1868,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1801,6 +1884,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateDeviceGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1849,6 +1933,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1863,6 +1949,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='AddDeviceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1911,6 +1998,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1923,6 +2012,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteDeviceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1971,6 +2061,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1983,6 +2075,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='FreezeDeviceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2051,6 +2144,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2063,6 +2158,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListDevicesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2115,6 +2211,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2129,6 +2227,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ResetDeviceSecretResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2177,6 +2276,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2189,6 +2290,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowDeviceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2237,6 +2339,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2249,6 +2353,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UnfreezeDeviceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2299,6 +2404,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2313,6 +2420,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateDeviceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2361,6 +2469,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2373,6 +2483,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowDeviceShadowResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2423,6 +2534,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2437,6 +2550,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateDeviceShadowDesiredDataResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2487,6 +2601,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2501,6 +2617,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateMessageResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2549,6 +2666,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2561,6 +2680,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListDeviceMessagesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2611,6 +2731,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2623,6 +2745,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowDeviceMessageResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2671,6 +2794,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2685,6 +2810,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateProductResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2735,6 +2861,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2747,6 +2875,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteProductResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2801,6 +2930,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2813,6 +2944,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListProductsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2863,6 +2995,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2875,6 +3009,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowProductResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2925,6 +3060,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2939,6 +3076,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateProductResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2989,6 +3127,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3001,6 +3141,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListPropertiesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3051,6 +3192,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -3065,6 +3208,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdatePropertiesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3115,6 +3259,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -3129,6 +3275,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateRoutingRuleResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3179,6 +3326,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -3193,6 +3342,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateRuleActionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3243,6 +3393,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3255,6 +3407,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteRoutingRuleResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3305,6 +3458,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3317,6 +3472,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteRuleActionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3381,6 +3537,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3393,6 +3551,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListRoutingRulesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3455,6 +3614,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3467,6 +3628,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListRuleActionsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3517,6 +3679,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3529,6 +3693,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowRoutingRuleResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3579,6 +3744,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3591,6 +3758,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowRuleActionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3643,6 +3811,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -3657,6 +3827,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateRoutingRuleResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3709,6 +3880,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -3723,6 +3896,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateRuleActionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3773,6 +3947,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -3787,6 +3963,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ChangeRuleStatusResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3835,6 +4012,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -3849,6 +4028,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateRuleResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3897,6 +4077,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3909,6 +4091,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteRuleResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3963,6 +4146,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3975,6 +4160,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListRulesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4023,6 +4209,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -4035,6 +4223,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowRuleResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4085,6 +4274,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -4099,6 +4290,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateRuleResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4147,6 +4339,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -4161,6 +4355,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateSubscriptionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4209,6 +4404,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -4221,6 +4418,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteSubscriptionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4283,6 +4481,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -4295,6 +4495,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSubscriptionsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4343,6 +4544,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -4355,6 +4558,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowSubscriptionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4405,6 +4609,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -4419,6 +4625,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateSubscriptionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4473,6 +4680,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -4487,6 +4696,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListResourcesByTagsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4535,6 +4745,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -4549,6 +4761,7 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='TagDeviceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4597,6 +4810,8 @@ class IoTDAAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -4611,14 +4826,15 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UntagDeviceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
-                 request_type=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
+                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -4632,8 +4848,10 @@ class IoTDAAsyncClient(Client):
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
         :param auth_settings list: Auth Settings names for the request.
         :param response_type: Response data type.
+        :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
             header, and post parameters.
+        :param request_type: Request data type.
         :return:
             Return the response directly.
         """
@@ -4646,6 +4864,7 @@ class IoTDAAsyncClient(Client):
             body=body,
             post_params=post_params,
             response_type=response_type,
+            response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
 	    async_request=True)

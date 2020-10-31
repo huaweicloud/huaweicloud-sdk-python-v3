@@ -256,7 +256,7 @@ class Client:
             return [i for i in list_filter]
 
     def do_http_request(self, method, resource_path, path_params=None, query_params=None, header_params=None, body=None,
-                        post_params=None, response_type=None, collection_formats=None, request_type=None,
+                        post_params=None, response_type=None, response_headers=None, collection_formats=None, request_type=None,
                         async_request=False):
         url_parse_result = urlparse(self._endpoint)
         schema = url_parse_result.scheme
@@ -275,33 +275,35 @@ class Client:
         future_request = self._credentials.process_auth_request(sdk_request, self._http_client)
         if async_request:
             executor = ThreadPoolExecutor(max_workers=8)
-            future_response = executor.submit(self._do_http_request_async, future_request, response_type)
+            future_response = executor.submit(self._do_http_request_async, future_request, response_type,
+                                              response_headers)
             return FutureSdkResponse(future_response, self._logger)
         else:
             request = future_request.result()
             response = self._do_http_request_sync(request)
-            return self.sync_response_handler(response, response_type)
+            return self.sync_response_handler(response, response_type, response_headers)
 
     def _do_http_request_sync(self, request):
         response = self._http_client.do_request_sync(request)
         return response
 
-    def _do_http_request_async(self, future_request, response_type):
+    def _do_http_request_async(self, future_request, response_type, response_headers):
         request = future_request.result()
         future_response = self._http_client.do_request_async(
-            request=request, hooks=[self.async_response_hook_factory(response_type)]
+            request=request, hooks=[self.async_response_hook_factory(response_type, response_headers)]
         )
         return future_response
 
-    def sync_response_handler(self, response, response_type):
+    def sync_response_handler(self, response, response_type, response_headers):
         return_data = self.deserialize(response, response_type)
         self.set_response_status_code(return_data, response)
-        self.set_response_headers(return_data, response)
+        if response_headers is not None and len(response_headers) > 0:
+            self.set_response_headers(return_data, response, response_headers)
         return return_data
 
-    def async_response_hook_factory(self, response_type):
+    def async_response_hook_factory(self, response_type, response_headers):
         def response_hook(resp, *args, **kwargs):
-            resp.data = self.sync_response_handler(resp, response_type)
+            resp.data = self.sync_response_handler(resp, response_type, response_headers)
 
         return response_hook
 
@@ -310,7 +312,7 @@ class Client:
         setattr(return_data, "status_code", response.status_code)
 
     @classmethod
-    def set_response_headers(cls, return_data, response):
+    def set_response_headers(cls, return_data, response, response_headers):
         if not hasattr(return_data, "attribute_map"):
             return
 
@@ -318,7 +320,7 @@ class Client:
             if getattr(return_data, attr) is not None:
                 continue
             key_in_response_headers = return_data.attribute_map[attr]
-            if key_in_response_headers in response.headers:
+            if key_in_response_headers in response_headers:
                 setattr(return_data, attr, response.headers[key_in_response_headers])
 
     def deserialize(self, response, response_type):

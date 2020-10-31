@@ -85,6 +85,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -99,6 +101,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ChangeApplicationResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -147,6 +150,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -161,6 +166,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ChangeApplicationConfigurationResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -211,6 +217,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -225,6 +233,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ChangeComponentResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -273,6 +282,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -287,6 +298,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ChangeEnvironmentResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -339,6 +351,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -353,6 +367,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ChangeInstanceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -401,6 +416,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -415,6 +432,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ChangeResourceInEnvironmentResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -461,6 +479,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -475,6 +495,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateApplicationResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -523,6 +544,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -537,6 +560,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateComponentResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -583,6 +607,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -597,6 +623,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateEnvironmentResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -647,6 +674,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -661,6 +690,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateInstanceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -707,6 +737,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -719,6 +751,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteApplicationResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -767,6 +800,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -779,6 +814,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteApplicationConfigurationResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -829,6 +865,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -841,6 +879,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteComponentResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -887,6 +926,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -899,6 +940,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteEnvironmentResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -951,6 +993,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -963,6 +1007,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteInstanceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1015,6 +1060,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1027,6 +1074,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListApplicationsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1081,6 +1129,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1093,6 +1143,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListComponentsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1145,6 +1196,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1157,6 +1210,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListEnvironmentsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1215,6 +1269,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1227,6 +1283,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListInstanceSnapshotsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1283,6 +1340,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1295,6 +1354,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListInstancesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1343,6 +1403,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1355,6 +1417,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowApplicationConfigurationResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1401,6 +1464,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1413,6 +1478,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowApplicationDetailResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1461,6 +1527,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1473,6 +1541,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowComponentDetailResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1519,6 +1588,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1531,6 +1602,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowEnvironmentDetailResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1581,6 +1653,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1593,6 +1667,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowInstanceDetailResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1647,6 +1722,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1659,6 +1736,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowJobDetailResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1711,6 +1789,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1725,6 +1805,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateInstanceActionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1781,6 +1862,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1795,6 +1878,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateFileResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1847,6 +1931,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1861,6 +1947,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateHookResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1911,6 +1998,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1925,6 +2014,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateOAuthResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1973,6 +2063,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1987,6 +2079,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreatePasswordAuthResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2035,6 +2128,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2049,6 +2144,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreatePersonalAuthResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2099,6 +2195,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2113,6 +2211,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateProjectResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2167,6 +2266,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2181,6 +2282,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateTagResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2227,6 +2329,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2239,6 +2343,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteAuthorizeResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2297,6 +2402,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2309,6 +2416,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteFileResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2361,6 +2469,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2373,6 +2483,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteHookResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2425,6 +2536,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2437,6 +2550,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteTagResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2481,6 +2595,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2493,6 +2609,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListAuthorizationsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2543,6 +2660,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2555,6 +2674,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListBranchesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2607,6 +2727,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2619,6 +2741,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCommitsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2669,6 +2792,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2681,6 +2806,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListHooksResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2727,6 +2853,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2739,6 +2867,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListNamespacesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2787,6 +2916,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2799,6 +2930,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListProjectsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2849,6 +2981,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2861,6 +2995,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListTagsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2913,6 +3048,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2925,6 +3062,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListTreesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2979,6 +3117,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2991,6 +3131,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowContentResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3039,6 +3180,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3051,6 +3194,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowProjectDetailResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3099,6 +3243,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3111,6 +3257,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowRedirectUrlResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3167,6 +3314,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -3181,6 +3330,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateFileResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3225,6 +3375,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3237,6 +3389,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListFlavorsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3281,6 +3434,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3293,6 +3448,7 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListRuntimesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3337,6 +3493,8 @@ class ServiceStageClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3349,29 +3507,31 @@ class ServiceStageClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListTemplatesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
-                 request_type=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
+                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
         :param method: Method to call.
         :param path_params: Path parameters in the url.
         :param query_params: Query parameters in the url.
-        :param header_params: Header parameters to be
-            placed in the request header.
+        :param header_params: Header parameters to be placed in the request header.
         :param body: Request body.
         :param post_params dict: Request post form parameters,
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
         :param auth_settings list: Auth Settings names for the request.
         :param response_type: Response data type.
+        :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
             header, and post parameters.
+        :param request_type: Request data type.
         :return:
             Return the response directly.
         """
@@ -3384,5 +3544,6 @@ class ServiceStageClient(Client):
             body=body,
             post_params=post_params,
             response_type=response_type,
+            response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type)

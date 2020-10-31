@@ -23,158 +23,118 @@ class ListPoolsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'marker': 'str',
-        'limit': 'int',
-        'page_reverse': 'bool',
-        'description': 'list[str]',
         'admin_state_up': 'bool',
+        'description': 'list[str]',
+        'enterprise_project_id': 'list[str]',
         'healthmonitor_id': 'list[str]',
         'id': 'list[str]',
-        'name': 'list[str]',
-        'loadbalancer_id': 'list[str]',
-        'protocol': 'list[str]',
-        'lb_algorithm': 'list[str]',
-        'enterprise_project_id': 'list[str]',
         'ip_version': 'list[str]',
+        'lb_algorithm': 'list[str]',
+        'limit': 'int',
+        'loadbalancer_id': 'list[str]',
+        'marker': 'str',
         'member_address': 'list[str]',
+        'member_deletion_protection_enable': 'bool',
         'member_device_id': 'list[str]',
-        'member_deletion_protection_enable': 'bool'
+        'name': 'list[str]',
+        'page_reverse': 'bool',
+        'protocol': 'list[str]'
     }
 
     attribute_map = {
-        'marker': 'marker',
-        'limit': 'limit',
-        'page_reverse': 'page_reverse',
-        'description': 'description',
         'admin_state_up': 'admin_state_up',
+        'description': 'description',
+        'enterprise_project_id': 'enterprise_project_id',
         'healthmonitor_id': 'healthmonitor_id',
         'id': 'id',
-        'name': 'name',
-        'loadbalancer_id': 'loadbalancer_id',
-        'protocol': 'protocol',
-        'lb_algorithm': 'lb_algorithm',
-        'enterprise_project_id': 'enterprise_project_id',
         'ip_version': 'ip_version',
+        'lb_algorithm': 'lb_algorithm',
+        'limit': 'limit',
+        'loadbalancer_id': 'loadbalancer_id',
+        'marker': 'marker',
         'member_address': 'member_address',
+        'member_deletion_protection_enable': 'member_deletion_protection_enable',
         'member_device_id': 'member_device_id',
-        'member_deletion_protection_enable': 'member_deletion_protection_enable'
+        'name': 'name',
+        'page_reverse': 'page_reverse',
+        'protocol': 'protocol'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, description=None, admin_state_up=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, member_deletion_protection_enable=None):
+    def __init__(self, admin_state_up=None, description=None, enterprise_project_id=None, healthmonitor_id=None, id=None, ip_version=None, lb_algorithm=None, limit=None, loadbalancer_id=None, marker=None, member_address=None, member_deletion_protection_enable=None, member_device_id=None, name=None, page_reverse=None, protocol=None):
         """ListPoolsRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._marker = None
-        self._limit = None
-        self._page_reverse = None
-        self._description = None
         self._admin_state_up = None
+        self._description = None
+        self._enterprise_project_id = None
         self._healthmonitor_id = None
         self._id = None
-        self._name = None
-        self._loadbalancer_id = None
-        self._protocol = None
-        self._lb_algorithm = None
-        self._enterprise_project_id = None
         self._ip_version = None
+        self._lb_algorithm = None
+        self._limit = None
+        self._loadbalancer_id = None
+        self._marker = None
         self._member_address = None
-        self._member_device_id = None
         self._member_deletion_protection_enable = None
+        self._member_device_id = None
+        self._name = None
+        self._page_reverse = None
+        self._protocol = None
         self.discriminator = None
 
-        if marker is not None:
-            self.marker = marker
-        if limit is not None:
-            self.limit = limit
-        if page_reverse is not None:
-            self.page_reverse = page_reverse
-        if description is not None:
-            self.description = description
         if admin_state_up is not None:
             self.admin_state_up = admin_state_up
+        if description is not None:
+            self.description = description
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if healthmonitor_id is not None:
             self.healthmonitor_id = healthmonitor_id
         if id is not None:
             self.id = id
-        if name is not None:
-            self.name = name
-        if loadbalancer_id is not None:
-            self.loadbalancer_id = loadbalancer_id
-        if protocol is not None:
-            self.protocol = protocol
-        if lb_algorithm is not None:
-            self.lb_algorithm = lb_algorithm
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
         if ip_version is not None:
             self.ip_version = ip_version
+        if lb_algorithm is not None:
+            self.lb_algorithm = lb_algorithm
+        if limit is not None:
+            self.limit = limit
+        if loadbalancer_id is not None:
+            self.loadbalancer_id = loadbalancer_id
+        if marker is not None:
+            self.marker = marker
         if member_address is not None:
             self.member_address = member_address
-        if member_device_id is not None:
-            self.member_device_id = member_device_id
         if member_deletion_protection_enable is not None:
             self.member_deletion_protection_enable = member_deletion_protection_enable
+        if member_device_id is not None:
+            self.member_device_id = member_device_id
+        if name is not None:
+            self.name = name
+        if page_reverse is not None:
+            self.page_reverse = page_reverse
+        if protocol is not None:
+            self.protocol = protocol
 
     @property
-    def marker(self):
-        """Gets the marker of this ListPoolsRequest.
+    def admin_state_up(self):
+        """Gets the admin_state_up of this ListPoolsRequest.
 
 
-        :return: The marker of this ListPoolsRequest.
-        :rtype: str
-        """
-        return self._marker
-
-    @marker.setter
-    def marker(self, marker):
-        """Sets the marker of this ListPoolsRequest.
-
-
-        :param marker: The marker of this ListPoolsRequest.
-        :type: str
-        """
-        self._marker = marker
-
-    @property
-    def limit(self):
-        """Gets the limit of this ListPoolsRequest.
-
-
-        :return: The limit of this ListPoolsRequest.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListPoolsRequest.
-
-
-        :param limit: The limit of this ListPoolsRequest.
-        :type: int
-        """
-        self._limit = limit
-
-    @property
-    def page_reverse(self):
-        """Gets the page_reverse of this ListPoolsRequest.
-
-
-        :return: The page_reverse of this ListPoolsRequest.
+        :return: The admin_state_up of this ListPoolsRequest.
         :rtype: bool
         """
-        return self._page_reverse
+        return self._admin_state_up
 
-    @page_reverse.setter
-    def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListPoolsRequest.
+    @admin_state_up.setter
+    def admin_state_up(self, admin_state_up):
+        """Sets the admin_state_up of this ListPoolsRequest.
 
 
-        :param page_reverse: The page_reverse of this ListPoolsRequest.
+        :param admin_state_up: The admin_state_up of this ListPoolsRequest.
         :type: bool
         """
-        self._page_reverse = page_reverse
+        self._admin_state_up = admin_state_up
 
     @property
     def description(self):
@@ -197,24 +157,24 @@ class ListPoolsRequest:
         self._description = description
 
     @property
-    def admin_state_up(self):
-        """Gets the admin_state_up of this ListPoolsRequest.
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListPoolsRequest.
 
 
-        :return: The admin_state_up of this ListPoolsRequest.
-        :rtype: bool
+        :return: The enterprise_project_id of this ListPoolsRequest.
+        :rtype: list[str]
         """
-        return self._admin_state_up
+        return self._enterprise_project_id
 
-    @admin_state_up.setter
-    def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListPoolsRequest.
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListPoolsRequest.
 
 
-        :param admin_state_up: The admin_state_up of this ListPoolsRequest.
-        :type: bool
+        :param enterprise_project_id: The enterprise_project_id of this ListPoolsRequest.
+        :type: list[str]
         """
-        self._admin_state_up = admin_state_up
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def healthmonitor_id(self):
@@ -257,64 +217,24 @@ class ListPoolsRequest:
         self._id = id
 
     @property
-    def name(self):
-        """Gets the name of this ListPoolsRequest.
+    def ip_version(self):
+        """Gets the ip_version of this ListPoolsRequest.
 
 
-        :return: The name of this ListPoolsRequest.
+        :return: The ip_version of this ListPoolsRequest.
         :rtype: list[str]
         """
-        return self._name
+        return self._ip_version
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ListPoolsRequest.
+    @ip_version.setter
+    def ip_version(self, ip_version):
+        """Sets the ip_version of this ListPoolsRequest.
 
 
-        :param name: The name of this ListPoolsRequest.
+        :param ip_version: The ip_version of this ListPoolsRequest.
         :type: list[str]
         """
-        self._name = name
-
-    @property
-    def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this ListPoolsRequest.
-
-
-        :return: The loadbalancer_id of this ListPoolsRequest.
-        :rtype: list[str]
-        """
-        return self._loadbalancer_id
-
-    @loadbalancer_id.setter
-    def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this ListPoolsRequest.
-
-
-        :param loadbalancer_id: The loadbalancer_id of this ListPoolsRequest.
-        :type: list[str]
-        """
-        self._loadbalancer_id = loadbalancer_id
-
-    @property
-    def protocol(self):
-        """Gets the protocol of this ListPoolsRequest.
-
-
-        :return: The protocol of this ListPoolsRequest.
-        :rtype: list[str]
-        """
-        return self._protocol
-
-    @protocol.setter
-    def protocol(self, protocol):
-        """Sets the protocol of this ListPoolsRequest.
-
-
-        :param protocol: The protocol of this ListPoolsRequest.
-        :type: list[str]
-        """
-        self._protocol = protocol
+        self._ip_version = ip_version
 
     @property
     def lb_algorithm(self):
@@ -337,44 +257,64 @@ class ListPoolsRequest:
         self._lb_algorithm = lb_algorithm
 
     @property
-    def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPoolsRequest.
+    def limit(self):
+        """Gets the limit of this ListPoolsRequest.
 
 
-        :return: The enterprise_project_id of this ListPoolsRequest.
-        :rtype: list[str]
+        :return: The limit of this ListPoolsRequest.
+        :rtype: int
         """
-        return self._enterprise_project_id
+        return self._limit
 
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPoolsRequest.
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListPoolsRequest.
 
 
-        :param enterprise_project_id: The enterprise_project_id of this ListPoolsRequest.
-        :type: list[str]
+        :param limit: The limit of this ListPoolsRequest.
+        :type: int
         """
-        self._enterprise_project_id = enterprise_project_id
+        self._limit = limit
 
     @property
-    def ip_version(self):
-        """Gets the ip_version of this ListPoolsRequest.
+    def loadbalancer_id(self):
+        """Gets the loadbalancer_id of this ListPoolsRequest.
 
 
-        :return: The ip_version of this ListPoolsRequest.
+        :return: The loadbalancer_id of this ListPoolsRequest.
         :rtype: list[str]
         """
-        return self._ip_version
+        return self._loadbalancer_id
 
-    @ip_version.setter
-    def ip_version(self, ip_version):
-        """Sets the ip_version of this ListPoolsRequest.
+    @loadbalancer_id.setter
+    def loadbalancer_id(self, loadbalancer_id):
+        """Sets the loadbalancer_id of this ListPoolsRequest.
 
 
-        :param ip_version: The ip_version of this ListPoolsRequest.
+        :param loadbalancer_id: The loadbalancer_id of this ListPoolsRequest.
         :type: list[str]
         """
-        self._ip_version = ip_version
+        self._loadbalancer_id = loadbalancer_id
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListPoolsRequest.
+
+
+        :return: The marker of this ListPoolsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListPoolsRequest.
+
+
+        :param marker: The marker of this ListPoolsRequest.
+        :type: str
+        """
+        self._marker = marker
 
     @property
     def member_address(self):
@@ -397,6 +337,26 @@ class ListPoolsRequest:
         self._member_address = member_address
 
     @property
+    def member_deletion_protection_enable(self):
+        """Gets the member_deletion_protection_enable of this ListPoolsRequest.
+
+
+        :return: The member_deletion_protection_enable of this ListPoolsRequest.
+        :rtype: bool
+        """
+        return self._member_deletion_protection_enable
+
+    @member_deletion_protection_enable.setter
+    def member_deletion_protection_enable(self, member_deletion_protection_enable):
+        """Sets the member_deletion_protection_enable of this ListPoolsRequest.
+
+
+        :param member_deletion_protection_enable: The member_deletion_protection_enable of this ListPoolsRequest.
+        :type: bool
+        """
+        self._member_deletion_protection_enable = member_deletion_protection_enable
+
+    @property
     def member_device_id(self):
         """Gets the member_device_id of this ListPoolsRequest.
 
@@ -417,24 +377,64 @@ class ListPoolsRequest:
         self._member_device_id = member_device_id
 
     @property
-    def member_deletion_protection_enable(self):
-        """Gets the member_deletion_protection_enable of this ListPoolsRequest.
+    def name(self):
+        """Gets the name of this ListPoolsRequest.
 
 
-        :return: The member_deletion_protection_enable of this ListPoolsRequest.
+        :return: The name of this ListPoolsRequest.
+        :rtype: list[str]
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListPoolsRequest.
+
+
+        :param name: The name of this ListPoolsRequest.
+        :type: list[str]
+        """
+        self._name = name
+
+    @property
+    def page_reverse(self):
+        """Gets the page_reverse of this ListPoolsRequest.
+
+
+        :return: The page_reverse of this ListPoolsRequest.
         :rtype: bool
         """
-        return self._member_deletion_protection_enable
+        return self._page_reverse
 
-    @member_deletion_protection_enable.setter
-    def member_deletion_protection_enable(self, member_deletion_protection_enable):
-        """Sets the member_deletion_protection_enable of this ListPoolsRequest.
+    @page_reverse.setter
+    def page_reverse(self, page_reverse):
+        """Sets the page_reverse of this ListPoolsRequest.
 
 
-        :param member_deletion_protection_enable: The member_deletion_protection_enable of this ListPoolsRequest.
+        :param page_reverse: The page_reverse of this ListPoolsRequest.
         :type: bool
         """
-        self._member_deletion_protection_enable = member_deletion_protection_enable
+        self._page_reverse = page_reverse
+
+    @property
+    def protocol(self):
+        """Gets the protocol of this ListPoolsRequest.
+
+
+        :return: The protocol of this ListPoolsRequest.
+        :rtype: list[str]
+        """
+        return self._protocol
+
+    @protocol.setter
+    def protocol(self, protocol):
+        """Sets the protocol of this ListPoolsRequest.
+
+
+        :param protocol: The protocol of this ListPoolsRequest.
+        :type: list[str]
+        """
+        self._protocol = protocol
 
     def to_dict(self):
         """Returns the model properties as a dict"""

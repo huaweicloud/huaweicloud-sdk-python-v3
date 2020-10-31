@@ -55,7 +55,7 @@ class ListCertificatesResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this ListCertificatesResponse.
 
-        请求ID。 注：自动生成 。
+        请求ID。  注：自动生成 。
 
         :return: The request_id of this ListCertificatesResponse.
         :rtype: str
@@ -66,7 +66,7 @@ class ListCertificatesResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this ListCertificatesResponse.
 
-        请求ID。 注：自动生成 。
+        请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListCertificatesResponse.
         :type: str

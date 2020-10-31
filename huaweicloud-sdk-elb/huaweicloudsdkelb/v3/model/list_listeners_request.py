@@ -23,278 +23,158 @@ class ListListenersRequest:
     sensitive_list = []
 
     openapi_types = {
-        'limit': 'int',
-        'marker': 'str',
-        'page_reverse': 'bool',
-        'protocol_port': 'list[str]',
-        'protocol': 'list[str]',
-        'description': 'list[str]',
-        'default_tls_container_ref': 'list[str]',
-        'client_ca_tls_container_ref': 'list[str]',
         'admin_state_up': 'bool',
+        'client_ca_tls_container_ref': 'list[str]',
+        'client_timeout': 'list[int]',
         'connection_limit': 'list[int]',
         'default_pool_id': 'list[str]',
-        'id': 'list[str]',
-        'name': 'list[str]',
+        'default_tls_container_ref': 'list[str]',
+        'description': 'list[str]',
+        'enable_member_retry': 'bool',
+        'enterprise_project_id': 'list[str]',
         'http2_enable': 'bool',
+        'id': 'list[str]',
+        'keepalive_timeout': 'list[int]',
+        'limit': 'int',
         'loadbalancer_id': 'list[str]',
-        'tls_ciphers_policy': 'list[str]',
+        'marker': 'str',
         'member_address': 'list[str]',
         'member_device_id': 'list[str]',
-        'enterprise_project_id': 'list[str]',
-        'enable_member_retry': 'bool',
         'member_timeout': 'list[int]',
-        'client_timeout': 'list[int]',
-        'keepalive_timeout': 'list[int]',
+        'name': 'list[str]',
+        'page_reverse': 'bool',
+        'protocol': 'list[str]',
+        'protocol_port': 'list[str]',
+        'tls_ciphers_policy': 'list[str]',
         'transparent_client_ip_enable': 'bool'
     }
 
     attribute_map = {
-        'limit': 'limit',
-        'marker': 'marker',
-        'page_reverse': 'page_reverse',
-        'protocol_port': 'protocol_port',
-        'protocol': 'protocol',
-        'description': 'description',
-        'default_tls_container_ref': 'default_tls_container_ref',
-        'client_ca_tls_container_ref': 'client_ca_tls_container_ref',
         'admin_state_up': 'admin_state_up',
+        'client_ca_tls_container_ref': 'client_ca_tls_container_ref',
+        'client_timeout': 'client_timeout',
         'connection_limit': 'connection_limit',
         'default_pool_id': 'default_pool_id',
-        'id': 'id',
-        'name': 'name',
+        'default_tls_container_ref': 'default_tls_container_ref',
+        'description': 'description',
+        'enable_member_retry': 'enable_member_retry',
+        'enterprise_project_id': 'enterprise_project_id',
         'http2_enable': 'http2_enable',
+        'id': 'id',
+        'keepalive_timeout': 'keepalive_timeout',
+        'limit': 'limit',
         'loadbalancer_id': 'loadbalancer_id',
-        'tls_ciphers_policy': 'tls_ciphers_policy',
+        'marker': 'marker',
         'member_address': 'member_address',
         'member_device_id': 'member_device_id',
-        'enterprise_project_id': 'enterprise_project_id',
-        'enable_member_retry': 'enable_member_retry',
         'member_timeout': 'member_timeout',
-        'client_timeout': 'client_timeout',
-        'keepalive_timeout': 'keepalive_timeout',
+        'name': 'name',
+        'page_reverse': 'page_reverse',
+        'protocol': 'protocol',
+        'protocol_port': 'protocol_port',
+        'tls_ciphers_policy': 'tls_ciphers_policy',
         'transparent_client_ip_enable': 'transparent_client_ip_enable'
     }
 
-    def __init__(self, limit=None, marker=None, page_reverse=None, protocol_port=None, protocol=None, description=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, admin_state_up=None, connection_limit=None, default_pool_id=None, id=None, name=None, http2_enable=None, loadbalancer_id=None, tls_ciphers_policy=None, member_address=None, member_device_id=None, enterprise_project_id=None, enable_member_retry=None, member_timeout=None, client_timeout=None, keepalive_timeout=None, transparent_client_ip_enable=None):
+    def __init__(self, admin_state_up=None, client_ca_tls_container_ref=None, client_timeout=None, connection_limit=None, default_pool_id=None, default_tls_container_ref=None, description=None, enable_member_retry=None, enterprise_project_id=None, http2_enable=None, id=None, keepalive_timeout=None, limit=None, loadbalancer_id=None, marker=None, member_address=None, member_device_id=None, member_timeout=None, name=None, page_reverse=None, protocol=None, protocol_port=None, tls_ciphers_policy=None, transparent_client_ip_enable=None):
         """ListListenersRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._limit = None
-        self._marker = None
-        self._page_reverse = None
-        self._protocol_port = None
-        self._protocol = None
-        self._description = None
-        self._default_tls_container_ref = None
-        self._client_ca_tls_container_ref = None
         self._admin_state_up = None
+        self._client_ca_tls_container_ref = None
+        self._client_timeout = None
         self._connection_limit = None
         self._default_pool_id = None
-        self._id = None
-        self._name = None
+        self._default_tls_container_ref = None
+        self._description = None
+        self._enable_member_retry = None
+        self._enterprise_project_id = None
         self._http2_enable = None
+        self._id = None
+        self._keepalive_timeout = None
+        self._limit = None
         self._loadbalancer_id = None
-        self._tls_ciphers_policy = None
+        self._marker = None
         self._member_address = None
         self._member_device_id = None
-        self._enterprise_project_id = None
-        self._enable_member_retry = None
         self._member_timeout = None
-        self._client_timeout = None
-        self._keepalive_timeout = None
+        self._name = None
+        self._page_reverse = None
+        self._protocol = None
+        self._protocol_port = None
+        self._tls_ciphers_policy = None
         self._transparent_client_ip_enable = None
         self.discriminator = None
 
-        if limit is not None:
-            self.limit = limit
-        if marker is not None:
-            self.marker = marker
-        if page_reverse is not None:
-            self.page_reverse = page_reverse
-        if protocol_port is not None:
-            self.protocol_port = protocol_port
-        if protocol is not None:
-            self.protocol = protocol
-        if description is not None:
-            self.description = description
-        if default_tls_container_ref is not None:
-            self.default_tls_container_ref = default_tls_container_ref
-        if client_ca_tls_container_ref is not None:
-            self.client_ca_tls_container_ref = client_ca_tls_container_ref
         if admin_state_up is not None:
             self.admin_state_up = admin_state_up
+        if client_ca_tls_container_ref is not None:
+            self.client_ca_tls_container_ref = client_ca_tls_container_ref
+        if client_timeout is not None:
+            self.client_timeout = client_timeout
         if connection_limit is not None:
             self.connection_limit = connection_limit
         if default_pool_id is not None:
             self.default_pool_id = default_pool_id
-        if id is not None:
-            self.id = id
-        if name is not None:
-            self.name = name
+        if default_tls_container_ref is not None:
+            self.default_tls_container_ref = default_tls_container_ref
+        if description is not None:
+            self.description = description
+        if enable_member_retry is not None:
+            self.enable_member_retry = enable_member_retry
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if http2_enable is not None:
             self.http2_enable = http2_enable
+        if id is not None:
+            self.id = id
+        if keepalive_timeout is not None:
+            self.keepalive_timeout = keepalive_timeout
+        if limit is not None:
+            self.limit = limit
         if loadbalancer_id is not None:
             self.loadbalancer_id = loadbalancer_id
-        if tls_ciphers_policy is not None:
-            self.tls_ciphers_policy = tls_ciphers_policy
+        if marker is not None:
+            self.marker = marker
         if member_address is not None:
             self.member_address = member_address
         if member_device_id is not None:
             self.member_device_id = member_device_id
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
-        if enable_member_retry is not None:
-            self.enable_member_retry = enable_member_retry
         if member_timeout is not None:
             self.member_timeout = member_timeout
-        if client_timeout is not None:
-            self.client_timeout = client_timeout
-        if keepalive_timeout is not None:
-            self.keepalive_timeout = keepalive_timeout
+        if name is not None:
+            self.name = name
+        if page_reverse is not None:
+            self.page_reverse = page_reverse
+        if protocol is not None:
+            self.protocol = protocol
+        if protocol_port is not None:
+            self.protocol_port = protocol_port
+        if tls_ciphers_policy is not None:
+            self.tls_ciphers_policy = tls_ciphers_policy
         if transparent_client_ip_enable is not None:
             self.transparent_client_ip_enable = transparent_client_ip_enable
 
     @property
-    def limit(self):
-        """Gets the limit of this ListListenersRequest.
+    def admin_state_up(self):
+        """Gets the admin_state_up of this ListListenersRequest.
 
 
-        :return: The limit of this ListListenersRequest.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListListenersRequest.
-
-
-        :param limit: The limit of this ListListenersRequest.
-        :type: int
-        """
-        self._limit = limit
-
-    @property
-    def marker(self):
-        """Gets the marker of this ListListenersRequest.
-
-
-        :return: The marker of this ListListenersRequest.
-        :rtype: str
-        """
-        return self._marker
-
-    @marker.setter
-    def marker(self, marker):
-        """Sets the marker of this ListListenersRequest.
-
-
-        :param marker: The marker of this ListListenersRequest.
-        :type: str
-        """
-        self._marker = marker
-
-    @property
-    def page_reverse(self):
-        """Gets the page_reverse of this ListListenersRequest.
-
-
-        :return: The page_reverse of this ListListenersRequest.
+        :return: The admin_state_up of this ListListenersRequest.
         :rtype: bool
         """
-        return self._page_reverse
+        return self._admin_state_up
 
-    @page_reverse.setter
-    def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListListenersRequest.
+    @admin_state_up.setter
+    def admin_state_up(self, admin_state_up):
+        """Sets the admin_state_up of this ListListenersRequest.
 
 
-        :param page_reverse: The page_reverse of this ListListenersRequest.
+        :param admin_state_up: The admin_state_up of this ListListenersRequest.
         :type: bool
         """
-        self._page_reverse = page_reverse
-
-    @property
-    def protocol_port(self):
-        """Gets the protocol_port of this ListListenersRequest.
-
-
-        :return: The protocol_port of this ListListenersRequest.
-        :rtype: list[str]
-        """
-        return self._protocol_port
-
-    @protocol_port.setter
-    def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this ListListenersRequest.
-
-
-        :param protocol_port: The protocol_port of this ListListenersRequest.
-        :type: list[str]
-        """
-        self._protocol_port = protocol_port
-
-    @property
-    def protocol(self):
-        """Gets the protocol of this ListListenersRequest.
-
-
-        :return: The protocol of this ListListenersRequest.
-        :rtype: list[str]
-        """
-        return self._protocol
-
-    @protocol.setter
-    def protocol(self, protocol):
-        """Sets the protocol of this ListListenersRequest.
-
-
-        :param protocol: The protocol of this ListListenersRequest.
-        :type: list[str]
-        """
-        self._protocol = protocol
-
-    @property
-    def description(self):
-        """Gets the description of this ListListenersRequest.
-
-
-        :return: The description of this ListListenersRequest.
-        :rtype: list[str]
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this ListListenersRequest.
-
-
-        :param description: The description of this ListListenersRequest.
-        :type: list[str]
-        """
-        self._description = description
-
-    @property
-    def default_tls_container_ref(self):
-        """Gets the default_tls_container_ref of this ListListenersRequest.
-
-
-        :return: The default_tls_container_ref of this ListListenersRequest.
-        :rtype: list[str]
-        """
-        return self._default_tls_container_ref
-
-    @default_tls_container_ref.setter
-    def default_tls_container_ref(self, default_tls_container_ref):
-        """Sets the default_tls_container_ref of this ListListenersRequest.
-
-
-        :param default_tls_container_ref: The default_tls_container_ref of this ListListenersRequest.
-        :type: list[str]
-        """
-        self._default_tls_container_ref = default_tls_container_ref
+        self._admin_state_up = admin_state_up
 
     @property
     def client_ca_tls_container_ref(self):
@@ -317,24 +197,24 @@ class ListListenersRequest:
         self._client_ca_tls_container_ref = client_ca_tls_container_ref
 
     @property
-    def admin_state_up(self):
-        """Gets the admin_state_up of this ListListenersRequest.
+    def client_timeout(self):
+        """Gets the client_timeout of this ListListenersRequest.
 
 
-        :return: The admin_state_up of this ListListenersRequest.
-        :rtype: bool
+        :return: The client_timeout of this ListListenersRequest.
+        :rtype: list[int]
         """
-        return self._admin_state_up
+        return self._client_timeout
 
-    @admin_state_up.setter
-    def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListListenersRequest.
+    @client_timeout.setter
+    def client_timeout(self, client_timeout):
+        """Sets the client_timeout of this ListListenersRequest.
 
 
-        :param admin_state_up: The admin_state_up of this ListListenersRequest.
-        :type: bool
+        :param client_timeout: The client_timeout of this ListListenersRequest.
+        :type: list[int]
         """
-        self._admin_state_up = admin_state_up
+        self._client_timeout = client_timeout
 
     @property
     def connection_limit(self):
@@ -377,44 +257,84 @@ class ListListenersRequest:
         self._default_pool_id = default_pool_id
 
     @property
-    def id(self):
-        """Gets the id of this ListListenersRequest.
+    def default_tls_container_ref(self):
+        """Gets the default_tls_container_ref of this ListListenersRequest.
 
 
-        :return: The id of this ListListenersRequest.
+        :return: The default_tls_container_ref of this ListListenersRequest.
         :rtype: list[str]
         """
-        return self._id
+        return self._default_tls_container_ref
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ListListenersRequest.
+    @default_tls_container_ref.setter
+    def default_tls_container_ref(self, default_tls_container_ref):
+        """Sets the default_tls_container_ref of this ListListenersRequest.
 
 
-        :param id: The id of this ListListenersRequest.
+        :param default_tls_container_ref: The default_tls_container_ref of this ListListenersRequest.
         :type: list[str]
         """
-        self._id = id
+        self._default_tls_container_ref = default_tls_container_ref
 
     @property
-    def name(self):
-        """Gets the name of this ListListenersRequest.
+    def description(self):
+        """Gets the description of this ListListenersRequest.
 
 
-        :return: The name of this ListListenersRequest.
+        :return: The description of this ListListenersRequest.
         :rtype: list[str]
         """
-        return self._name
+        return self._description
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ListListenersRequest.
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ListListenersRequest.
 
 
-        :param name: The name of this ListListenersRequest.
+        :param description: The description of this ListListenersRequest.
         :type: list[str]
         """
-        self._name = name
+        self._description = description
+
+    @property
+    def enable_member_retry(self):
+        """Gets the enable_member_retry of this ListListenersRequest.
+
+
+        :return: The enable_member_retry of this ListListenersRequest.
+        :rtype: bool
+        """
+        return self._enable_member_retry
+
+    @enable_member_retry.setter
+    def enable_member_retry(self, enable_member_retry):
+        """Sets the enable_member_retry of this ListListenersRequest.
+
+
+        :param enable_member_retry: The enable_member_retry of this ListListenersRequest.
+        :type: bool
+        """
+        self._enable_member_retry = enable_member_retry
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListListenersRequest.
+
+
+        :return: The enterprise_project_id of this ListListenersRequest.
+        :rtype: list[str]
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListListenersRequest.
+
+
+        :param enterprise_project_id: The enterprise_project_id of this ListListenersRequest.
+        :type: list[str]
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def http2_enable(self):
@@ -437,6 +357,66 @@ class ListListenersRequest:
         self._http2_enable = http2_enable
 
     @property
+    def id(self):
+        """Gets the id of this ListListenersRequest.
+
+
+        :return: The id of this ListListenersRequest.
+        :rtype: list[str]
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ListListenersRequest.
+
+
+        :param id: The id of this ListListenersRequest.
+        :type: list[str]
+        """
+        self._id = id
+
+    @property
+    def keepalive_timeout(self):
+        """Gets the keepalive_timeout of this ListListenersRequest.
+
+
+        :return: The keepalive_timeout of this ListListenersRequest.
+        :rtype: list[int]
+        """
+        return self._keepalive_timeout
+
+    @keepalive_timeout.setter
+    def keepalive_timeout(self, keepalive_timeout):
+        """Sets the keepalive_timeout of this ListListenersRequest.
+
+
+        :param keepalive_timeout: The keepalive_timeout of this ListListenersRequest.
+        :type: list[int]
+        """
+        self._keepalive_timeout = keepalive_timeout
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListListenersRequest.
+
+
+        :return: The limit of this ListListenersRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListListenersRequest.
+
+
+        :param limit: The limit of this ListListenersRequest.
+        :type: int
+        """
+        self._limit = limit
+
+    @property
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this ListListenersRequest.
 
@@ -457,24 +437,24 @@ class ListListenersRequest:
         self._loadbalancer_id = loadbalancer_id
 
     @property
-    def tls_ciphers_policy(self):
-        """Gets the tls_ciphers_policy of this ListListenersRequest.
+    def marker(self):
+        """Gets the marker of this ListListenersRequest.
 
 
-        :return: The tls_ciphers_policy of this ListListenersRequest.
-        :rtype: list[str]
+        :return: The marker of this ListListenersRequest.
+        :rtype: str
         """
-        return self._tls_ciphers_policy
+        return self._marker
 
-    @tls_ciphers_policy.setter
-    def tls_ciphers_policy(self, tls_ciphers_policy):
-        """Sets the tls_ciphers_policy of this ListListenersRequest.
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListListenersRequest.
 
 
-        :param tls_ciphers_policy: The tls_ciphers_policy of this ListListenersRequest.
-        :type: list[str]
+        :param marker: The marker of this ListListenersRequest.
+        :type: str
         """
-        self._tls_ciphers_policy = tls_ciphers_policy
+        self._marker = marker
 
     @property
     def member_address(self):
@@ -517,46 +497,6 @@ class ListListenersRequest:
         self._member_device_id = member_device_id
 
     @property
-    def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListListenersRequest.
-
-
-        :return: The enterprise_project_id of this ListListenersRequest.
-        :rtype: list[str]
-        """
-        return self._enterprise_project_id
-
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListListenersRequest.
-
-
-        :param enterprise_project_id: The enterprise_project_id of this ListListenersRequest.
-        :type: list[str]
-        """
-        self._enterprise_project_id = enterprise_project_id
-
-    @property
-    def enable_member_retry(self):
-        """Gets the enable_member_retry of this ListListenersRequest.
-
-
-        :return: The enable_member_retry of this ListListenersRequest.
-        :rtype: bool
-        """
-        return self._enable_member_retry
-
-    @enable_member_retry.setter
-    def enable_member_retry(self, enable_member_retry):
-        """Sets the enable_member_retry of this ListListenersRequest.
-
-
-        :param enable_member_retry: The enable_member_retry of this ListListenersRequest.
-        :type: bool
-        """
-        self._enable_member_retry = enable_member_retry
-
-    @property
     def member_timeout(self):
         """Gets the member_timeout of this ListListenersRequest.
 
@@ -577,44 +517,104 @@ class ListListenersRequest:
         self._member_timeout = member_timeout
 
     @property
-    def client_timeout(self):
-        """Gets the client_timeout of this ListListenersRequest.
+    def name(self):
+        """Gets the name of this ListListenersRequest.
 
 
-        :return: The client_timeout of this ListListenersRequest.
-        :rtype: list[int]
+        :return: The name of this ListListenersRequest.
+        :rtype: list[str]
         """
-        return self._client_timeout
+        return self._name
 
-    @client_timeout.setter
-    def client_timeout(self, client_timeout):
-        """Sets the client_timeout of this ListListenersRequest.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListListenersRequest.
 
 
-        :param client_timeout: The client_timeout of this ListListenersRequest.
-        :type: list[int]
+        :param name: The name of this ListListenersRequest.
+        :type: list[str]
         """
-        self._client_timeout = client_timeout
+        self._name = name
 
     @property
-    def keepalive_timeout(self):
-        """Gets the keepalive_timeout of this ListListenersRequest.
+    def page_reverse(self):
+        """Gets the page_reverse of this ListListenersRequest.
 
 
-        :return: The keepalive_timeout of this ListListenersRequest.
-        :rtype: list[int]
+        :return: The page_reverse of this ListListenersRequest.
+        :rtype: bool
         """
-        return self._keepalive_timeout
+        return self._page_reverse
 
-    @keepalive_timeout.setter
-    def keepalive_timeout(self, keepalive_timeout):
-        """Sets the keepalive_timeout of this ListListenersRequest.
+    @page_reverse.setter
+    def page_reverse(self, page_reverse):
+        """Sets the page_reverse of this ListListenersRequest.
 
 
-        :param keepalive_timeout: The keepalive_timeout of this ListListenersRequest.
-        :type: list[int]
+        :param page_reverse: The page_reverse of this ListListenersRequest.
+        :type: bool
         """
-        self._keepalive_timeout = keepalive_timeout
+        self._page_reverse = page_reverse
+
+    @property
+    def protocol(self):
+        """Gets the protocol of this ListListenersRequest.
+
+
+        :return: The protocol of this ListListenersRequest.
+        :rtype: list[str]
+        """
+        return self._protocol
+
+    @protocol.setter
+    def protocol(self, protocol):
+        """Sets the protocol of this ListListenersRequest.
+
+
+        :param protocol: The protocol of this ListListenersRequest.
+        :type: list[str]
+        """
+        self._protocol = protocol
+
+    @property
+    def protocol_port(self):
+        """Gets the protocol_port of this ListListenersRequest.
+
+
+        :return: The protocol_port of this ListListenersRequest.
+        :rtype: list[str]
+        """
+        return self._protocol_port
+
+    @protocol_port.setter
+    def protocol_port(self, protocol_port):
+        """Sets the protocol_port of this ListListenersRequest.
+
+
+        :param protocol_port: The protocol_port of this ListListenersRequest.
+        :type: list[str]
+        """
+        self._protocol_port = protocol_port
+
+    @property
+    def tls_ciphers_policy(self):
+        """Gets the tls_ciphers_policy of this ListListenersRequest.
+
+
+        :return: The tls_ciphers_policy of this ListListenersRequest.
+        :rtype: list[str]
+        """
+        return self._tls_ciphers_policy
+
+    @tls_ciphers_policy.setter
+    def tls_ciphers_policy(self, tls_ciphers_policy):
+        """Sets the tls_ciphers_policy of this ListListenersRequest.
+
+
+        :param tls_ciphers_policy: The tls_ciphers_policy of this ListListenersRequest.
+        :type: list[str]
+        """
+        self._tls_ciphers_policy = tls_ciphers_policy
 
     @property
     def transparent_client_ip_enable(self):

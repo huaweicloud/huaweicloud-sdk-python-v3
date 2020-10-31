@@ -23,45 +23,45 @@ class ShowCurUserRoleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'role_id': 'str'
+        'user_role': 'int'
     }
 
     attribute_map = {
-        'role_id': 'role_id'
+        'user_role': 'user_role'
     }
 
-    def __init__(self, role_id=None):
+    def __init__(self, user_role=None):
         """ShowCurUserRoleResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._role_id = None
+        self._user_role = None
         self.discriminator = None
 
-        if role_id is not None:
-            self.role_id = role_id
+        if user_role is not None:
+            self.user_role = user_role
 
     @property
-    def role_id(self):
-        """Gets the role_id of this ShowCurUserRoleResponse.
+    def user_role(self):
+        """Gets the user_role of this ShowCurUserRoleResponse.
 
-        用户角色id
+        成员角色 -1 项目创建者 3 项目经理 4 开发人员 5 测试经理 6 测试人员 7 参与者 8 浏览
 
-        :return: The role_id of this ShowCurUserRoleResponse.
-        :rtype: str
+        :return: The user_role of this ShowCurUserRoleResponse.
+        :rtype: int
         """
-        return self._role_id
+        return self._user_role
 
-    @role_id.setter
-    def role_id(self, role_id):
-        """Sets the role_id of this ShowCurUserRoleResponse.
+    @user_role.setter
+    def user_role(self, user_role):
+        """Sets the user_role of this ShowCurUserRoleResponse.
 
-        用户角色id
+        成员角色 -1 项目创建者 3 项目经理 4 开发人员 5 测试经理 6 测试人员 7 参与者 8 浏览
 
-        :param role_id: The role_id of this ShowCurUserRoleResponse.
-        :type: str
+        :param user_role: The user_role of this ShowCurUserRoleResponse.
+        :type: int
         """
-        self._role_id = role_id
+        self._user_role = user_role
 
     def to_dict(self):
         """Returns the model properties as a dict"""

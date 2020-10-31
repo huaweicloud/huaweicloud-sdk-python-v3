@@ -79,7 +79,7 @@ class EventItem:
     def event_source(self):
         """Gets the event_source of this EventItem.
 
-        事件来源。  格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32。
+        事件来源。 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32。
 
         :return: The event_source of this EventItem.
         :rtype: str
@@ -90,7 +90,7 @@ class EventItem:
     def event_source(self, event_source):
         """Sets the event_source of this EventItem.
 
-        事件来源。  格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32。
+        事件来源。 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32。
 
         :param event_source: The event_source of this EventItem.
         :type: str

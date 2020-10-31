@@ -83,6 +83,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -97,6 +99,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateAnimatedGraphicsTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -143,6 +146,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -155,6 +160,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteAnimatedGraphicsTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -214,6 +220,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -226,6 +234,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListAnimatedGraphicsTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -272,6 +281,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -286,6 +297,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateEncryptTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -332,6 +344,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -344,6 +358,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteEncryptTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -401,6 +416,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -413,6 +430,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListEncryptTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -459,6 +477,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -473,6 +493,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateExtractTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -519,6 +540,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -531,6 +554,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteExtractTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -590,6 +614,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -602,6 +628,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListExtractTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -649,6 +676,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -661,6 +690,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListTranscodeDetailResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -707,6 +737,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -719,6 +751,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CancelRemuxTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -765,6 +798,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -779,6 +814,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateRemuxTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -825,6 +861,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -839,6 +877,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateRetryRemuxTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -885,6 +924,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -897,6 +938,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteRemuxTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -958,6 +1000,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -970,6 +1014,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListRemuxTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1016,6 +1061,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1030,6 +1077,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateTemplateGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1076,6 +1124,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1088,6 +1138,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteTemplateGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1142,6 +1193,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1154,6 +1207,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListTemplateGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1200,6 +1254,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1214,6 +1270,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateTemplateGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1260,6 +1317,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1274,6 +1333,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateThumbnailsTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1320,6 +1380,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1332,6 +1394,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteThumbnailsTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1391,6 +1454,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1403,6 +1468,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListThumbnailsTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1449,6 +1515,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1463,6 +1531,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateTranscodingTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1509,6 +1578,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1521,6 +1592,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteTranscodingTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1580,6 +1652,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1592,6 +1666,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListTranscodingTaskResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1638,6 +1713,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1652,6 +1729,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateTransTemplateResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1698,6 +1776,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1710,6 +1790,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteTemplateResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1761,6 +1842,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1773,6 +1856,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListTemplateResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1819,6 +1903,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1833,6 +1919,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateTransTemplateResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1879,6 +1966,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1893,6 +1982,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateWatermarkTemplateResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1939,6 +2029,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1951,6 +2043,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteWatermarkTemplateResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2002,6 +2095,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2014,6 +2109,7 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListWatermarkTemplateResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2060,6 +2156,8 @@ class MpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -2074,14 +2172,15 @@ class MpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateWatermarkTemplateResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
-                 request_type=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
+                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -2095,8 +2194,10 @@ class MpcAsyncClient(Client):
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
         :param auth_settings list: Auth Settings names for the request.
         :param response_type: Response data type.
+        :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
             header, and post parameters.
+        :param request_type: Request data type.
         :return:
             Return the response directly.
         """
@@ -2109,6 +2210,7 @@ class MpcAsyncClient(Client):
             body=body,
             post_params=post_params,
             response_type=response_type,
+            response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
 	    async_request=True)

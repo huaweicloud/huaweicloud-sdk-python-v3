@@ -83,6 +83,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -97,6 +99,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateCertificateResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -143,6 +146,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -157,6 +162,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateHealthMonitorResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -203,6 +209,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -217,6 +225,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateL7PolicyResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -265,6 +274,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -279,6 +290,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateL7RuleResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -325,6 +337,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -339,6 +353,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateListenerResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -363,7 +378,7 @@ class ElbAsyncClient(Client):
         :return: CreateLoadBalancerResponse
         """
 
-        all_params = ['create_load_balancer_request_body', 'x_auth_project_token']
+        all_params = ['create_load_balancer_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -376,8 +391,6 @@ class ElbAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'x_auth_project_token' in local_var_params:
-            header_params['X-Auth-Project-Token'] = local_var_params['x_auth_project_token']
 
         form_params = {}
 
@@ -386,6 +399,8 @@ class ElbAsyncClient(Client):
             body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
@@ -401,6 +416,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateLoadBalancerResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -449,6 +465,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -463,6 +481,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateMemberResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -509,6 +528,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -523,6 +544,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreatePoolResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -569,6 +591,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -581,6 +605,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteCertificateResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -627,6 +652,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -639,6 +666,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteHealthMonitorResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -685,6 +713,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -697,6 +727,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteL7PolicyResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -745,6 +776,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -757,6 +790,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteL7RuleResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -803,6 +837,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -815,6 +851,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteListenerResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -861,6 +898,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -873,6 +912,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteLoadBalancerResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -897,7 +937,7 @@ class ElbAsyncClient(Client):
         :return: DeleteMemberResponse
         """
 
-        all_params = ['pool_id', 'member_id']
+        all_params = ['member_id', 'pool_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -906,10 +946,10 @@ class ElbAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'pool_id' in local_var_params:
-            path_params['pool_id'] = local_var_params['pool_id']
         if 'member_id' in local_var_params:
             path_params['member_id'] = local_var_params['member_id']
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
 
         query_params = []
 
@@ -920,6 +960,8 @@ class ElbAsyncClient(Client):
         body_params = None
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
+
+        response_headers = []
 
 
         auth_settings = []
@@ -933,6 +975,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteMemberResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -979,6 +1022,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -991,15 +1036,16 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeletePoolResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
     def list_availability_zones_async(self, request):
-        """查询创建LB可用的可用区
+        """查询可用区列表
 
-        返回用户可使用的可用区的列表情况
+        返回租户创建LB时可使用的可用区列表情况。  返回的数据类型是可用区集合的列表，比如列表 [ [az1,az2],  [az2, az3] ] ，有两个可用区集合。在创建负载均衡器时，可以选择创建在多个可用区，但所选的多个可用区必须同属于其中一个可用区集合，如可以选择 az2和az3，但不能选择 az1和az3。
 
         :param ListAvailabilityZonesRequest request
         :return: ListAvailabilityZonesResponse
@@ -1007,9 +1053,9 @@ class ElbAsyncClient(Client):
         return self.list_availability_zones_with_http_info(request)
 
     def list_availability_zones_with_http_info(self, request):
-        """查询创建LB可用的可用区
+        """查询可用区列表
 
-        返回用户可使用的可用区的列表情况
+        返回租户创建LB时可使用的可用区列表情况。  返回的数据类型是可用区集合的列表，比如列表 [ [az1,az2],  [az2, az3] ] ，有两个可用区集合。在创建负载均衡器时，可以选择创建在多个可用区，但所选的多个可用区必须同属于其中一个可用区集合，如可以选择 az2和az3，但不能选择 az1和az3。
 
         :param ListAvailabilityZonesRequest request
         :return: ListAvailabilityZonesResponse
@@ -1035,6 +1081,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1047,6 +1095,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListAvailabilityZonesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1071,7 +1120,7 @@ class ElbAsyncClient(Client):
         :return: ListCertificatesResponse
         """
 
-        all_params = ['marker', 'limit', 'page_reverse', 'id', 'name', 'description', 'admin_state_up', 'domain', 'type']
+        all_params = ['admin_state_up', 'description', 'domain', 'id', 'limit', 'marker', 'name', 'page_reverse', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1082,26 +1131,26 @@ class ElbAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'page_reverse' in local_var_params:
-            query_params.append(('page_reverse', local_var_params['page_reverse']))
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-            collection_formats['id'] = 'multi'
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-            collection_formats['name'] = 'multi'
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
         if 'description' in local_var_params:
             query_params.append(('description', local_var_params['description']))
             collection_formats['description'] = 'multi'
-        if 'admin_state_up' in local_var_params:
-            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
         if 'domain' in local_var_params:
             query_params.append(('domain', local_var_params['domain']))
             collection_formats['domain'] = 'multi'
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
             collection_formats['type'] = 'multi'
@@ -1113,6 +1162,8 @@ class ElbAsyncClient(Client):
         body_params = None
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
+
+        response_headers = []
 
 
         auth_settings = []
@@ -1126,6 +1177,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCertificatesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1150,7 +1202,7 @@ class ElbAsyncClient(Client):
         :return: ListFlavorsResponse
         """
 
-        all_params = ['marker', 'limit', 'page_reverse', 'id', 'name', 'type', 'shared']
+        all_params = ['id', 'limit', 'marker', 'name', 'page_reverse', 'shared', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1161,23 +1213,23 @@ class ElbAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'page_reverse' in local_var_params:
-            query_params.append(('page_reverse', local_var_params['page_reverse']))
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
             collection_formats['id'] = 'multi'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
             collection_formats['name'] = 'multi'
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'shared' in local_var_params:
+            query_params.append(('shared', local_var_params['shared']))
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
             collection_formats['type'] = 'multi'
-        if 'shared' in local_var_params:
-            query_params.append(('shared', local_var_params['shared']))
 
         header_params = {}
 
@@ -1186,6 +1238,8 @@ class ElbAsyncClient(Client):
         body_params = None
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
+
+        response_headers = []
 
 
         auth_settings = []
@@ -1199,6 +1253,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListFlavorsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1223,7 +1278,7 @@ class ElbAsyncClient(Client):
         :return: ListHealthMonitorsResponse
         """
 
-        all_params = ['marker', 'limit', 'page_reverse', 'id', 'monitor_port', 'domain_name', 'name', 'delay', 'max_retries', 'admin_state_up', 'max_retries_down', 'timeout', 'type', 'expected_codes', 'url_path', 'http_method', 'enterprise_project_id']
+        all_params = ['admin_state_up', 'delay', 'domain_name', 'enterprise_project_id', 'expected_codes', 'http_method', 'id', 'limit', 'marker', 'max_retries', 'max_retries_down', 'monitor_port', 'name', 'page_reverse', 'timeout', 'type', 'url_path']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1234,52 +1289,52 @@ class ElbAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'page_reverse' in local_var_params:
-            query_params.append(('page_reverse', local_var_params['page_reverse']))
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-            collection_formats['id'] = 'multi'
-        if 'monitor_port' in local_var_params:
-            query_params.append(('monitor_port', local_var_params['monitor_port']))
-            collection_formats['monitor_port'] = 'multi'
-        if 'domain_name' in local_var_params:
-            query_params.append(('domain_name', local_var_params['domain_name']))
-            collection_formats['domain_name'] = 'multi'
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-            collection_formats['name'] = 'multi'
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
         if 'delay' in local_var_params:
             query_params.append(('delay', local_var_params['delay']))
             collection_formats['delay'] = 'multi'
+        if 'domain_name' in local_var_params:
+            query_params.append(('domain_name', local_var_params['domain_name']))
+            collection_formats['domain_name'] = 'multi'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'multi'
+        if 'expected_codes' in local_var_params:
+            query_params.append(('expected_codes', local_var_params['expected_codes']))
+            collection_formats['expected_codes'] = 'multi'
+        if 'http_method' in local_var_params:
+            query_params.append(('http_method', local_var_params['http_method']))
+            collection_formats['http_method'] = 'multi'
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
         if 'max_retries' in local_var_params:
             query_params.append(('max_retries', local_var_params['max_retries']))
             collection_formats['max_retries'] = 'multi'
-        if 'admin_state_up' in local_var_params:
-            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
         if 'max_retries_down' in local_var_params:
             query_params.append(('max_retries_down', local_var_params['max_retries_down']))
             collection_formats['max_retries_down'] = 'multi'
+        if 'monitor_port' in local_var_params:
+            query_params.append(('monitor_port', local_var_params['monitor_port']))
+            collection_formats['monitor_port'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
         if 'timeout' in local_var_params:
             query_params.append(('timeout', local_var_params['timeout']))
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
             collection_formats['type'] = 'multi'
-        if 'expected_codes' in local_var_params:
-            query_params.append(('expected_codes', local_var_params['expected_codes']))
-            collection_formats['expected_codes'] = 'multi'
         if 'url_path' in local_var_params:
             query_params.append(('url_path', local_var_params['url_path']))
             collection_formats['url_path'] = 'multi'
-        if 'http_method' in local_var_params:
-            query_params.append(('http_method', local_var_params['http_method']))
-            collection_formats['http_method'] = 'multi'
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-            collection_formats['enterprise_project_id'] = 'multi'
 
         header_params = {}
 
@@ -1288,6 +1343,8 @@ class ElbAsyncClient(Client):
         body_params = None
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
+
+        response_headers = []
 
 
         auth_settings = []
@@ -1301,6 +1358,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListHealthMonitorsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1325,7 +1383,7 @@ class ElbAsyncClient(Client):
         :return: ListL7PoliciesResponse
         """
 
-        all_params = ['marker', 'limit', 'page_reverse', 'enterprise_project_id', 'id', 'name', 'description', 'admin_state_up', 'listener_id', 'position', 'action', 'redirect_url', 'redirect_pool_id', 'redirect_listener_id', 'provisioning_status', 'display_all_rules']
+        all_params = ['action', 'admin_state_up', 'description', 'display_all_rules', 'enterprise_project_id', 'id', 'limit', 'listener_id', 'marker', 'name', 'page_reverse', 'position', 'provisioning_status', 'redirect_listener_id', 'redirect_pool_id', 'redirect_url']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1336,49 +1394,49 @@ class ElbAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'page_reverse' in local_var_params:
-            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'action' in local_var_params:
+            query_params.append(('action', local_var_params['action']))
+            collection_formats['action'] = 'multi'
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'multi'
+        if 'display_all_rules' in local_var_params:
+            query_params.append(('display_all_rules', local_var_params['display_all_rules']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
             collection_formats['enterprise_project_id'] = 'multi'
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
             collection_formats['id'] = 'multi'
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-            collection_formats['name'] = 'multi'
-        if 'description' in local_var_params:
-            query_params.append(('description', local_var_params['description']))
-            collection_formats['description'] = 'multi'
-        if 'admin_state_up' in local_var_params:
-            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
         if 'listener_id' in local_var_params:
             query_params.append(('listener_id', local_var_params['listener_id']))
             collection_formats['listener_id'] = 'multi'
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
         if 'position' in local_var_params:
             query_params.append(('position', local_var_params['position']))
             collection_formats['position'] = 'multi'
-        if 'action' in local_var_params:
-            query_params.append(('action', local_var_params['action']))
-            collection_formats['action'] = 'multi'
-        if 'redirect_url' in local_var_params:
-            query_params.append(('redirect_url', local_var_params['redirect_url']))
-            collection_formats['redirect_url'] = 'multi'
-        if 'redirect_pool_id' in local_var_params:
-            query_params.append(('redirect_pool_id', local_var_params['redirect_pool_id']))
-            collection_formats['redirect_pool_id'] = 'multi'
-        if 'redirect_listener_id' in local_var_params:
-            query_params.append(('redirect_listener_id', local_var_params['redirect_listener_id']))
-            collection_formats['redirect_listener_id'] = 'multi'
         if 'provisioning_status' in local_var_params:
             query_params.append(('provisioning_status', local_var_params['provisioning_status']))
             collection_formats['provisioning_status'] = 'multi'
-        if 'display_all_rules' in local_var_params:
-            query_params.append(('display_all_rules', local_var_params['display_all_rules']))
+        if 'redirect_listener_id' in local_var_params:
+            query_params.append(('redirect_listener_id', local_var_params['redirect_listener_id']))
+            collection_formats['redirect_listener_id'] = 'multi'
+        if 'redirect_pool_id' in local_var_params:
+            query_params.append(('redirect_pool_id', local_var_params['redirect_pool_id']))
+            collection_formats['redirect_pool_id'] = 'multi'
+        if 'redirect_url' in local_var_params:
+            query_params.append(('redirect_url', local_var_params['redirect_url']))
+            collection_formats['redirect_url'] = 'multi'
 
         header_params = {}
 
@@ -1387,6 +1445,8 @@ class ElbAsyncClient(Client):
         body_params = None
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
+
+        response_headers = []
 
 
         auth_settings = []
@@ -1400,6 +1460,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListL7PoliciesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1424,7 +1485,7 @@ class ElbAsyncClient(Client):
         :return: ListL7RulesResponse
         """
 
-        all_params = ['l7policy_id', 'limit', 'marker', 'page_reverse', 'id', 'compare_type', 'provisioning_status', 'invert', 'admin_state_up', 'value', 'key', 'type', 'enterprise_project_id']
+        all_params = ['l7policy_id', 'admin_state_up', 'compare_type', 'enterprise_project_id', 'id', 'invert', 'key', 'limit', 'marker', 'page_reverse', 'provisioning_status', 'type', 'value']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1437,37 +1498,37 @@ class ElbAsyncClient(Client):
             path_params['l7policy_id'] = local_var_params['l7policy_id']
 
         query_params = []
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
+        if 'compare_type' in local_var_params:
+            query_params.append(('compare_type', local_var_params['compare_type']))
+            collection_formats['compare_type'] = 'multi'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'multi'
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'invert' in local_var_params:
+            query_params.append(('invert', local_var_params['invert']))
+        if 'key' in local_var_params:
+            query_params.append(('key', local_var_params['key']))
+            collection_formats['key'] = 'multi'
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
         if 'page_reverse' in local_var_params:
             query_params.append(('page_reverse', local_var_params['page_reverse']))
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-            collection_formats['id'] = 'multi'
-        if 'compare_type' in local_var_params:
-            query_params.append(('compare_type', local_var_params['compare_type']))
-            collection_formats['compare_type'] = 'multi'
         if 'provisioning_status' in local_var_params:
             query_params.append(('provisioning_status', local_var_params['provisioning_status']))
             collection_formats['provisioning_status'] = 'multi'
-        if 'invert' in local_var_params:
-            query_params.append(('invert', local_var_params['invert']))
-        if 'admin_state_up' in local_var_params:
-            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
-        if 'value' in local_var_params:
-            query_params.append(('value', local_var_params['value']))
-            collection_formats['value'] = 'multi'
-        if 'key' in local_var_params:
-            query_params.append(('key', local_var_params['key']))
-            collection_formats['key'] = 'multi'
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
             collection_formats['type'] = 'multi'
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-            collection_formats['enterprise_project_id'] = 'multi'
+        if 'value' in local_var_params:
+            query_params.append(('value', local_var_params['value']))
+            collection_formats['value'] = 'multi'
 
         header_params = {}
 
@@ -1476,6 +1537,8 @@ class ElbAsyncClient(Client):
         body_params = None
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
+
+        response_headers = []
 
 
         auth_settings = []
@@ -1489,6 +1552,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListL7RulesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1513,7 +1577,7 @@ class ElbAsyncClient(Client):
         :return: ListListenersResponse
         """
 
-        all_params = ['limit', 'marker', 'page_reverse', 'protocol_port', 'protocol', 'description', 'default_tls_container_ref', 'client_ca_tls_container_ref', 'admin_state_up', 'connection_limit', 'default_pool_id', 'id', 'name', 'http2_enable', 'loadbalancer_id', 'tls_ciphers_policy', 'member_address', 'member_device_id', 'enterprise_project_id', 'enable_member_retry', 'member_timeout', 'client_timeout', 'keepalive_timeout', 'transparent_client_ip_enable']
+        all_params = ['admin_state_up', 'client_ca_tls_container_ref', 'client_timeout', 'connection_limit', 'default_pool_id', 'default_tls_container_ref', 'description', 'enable_member_retry', 'enterprise_project_id', 'http2_enable', 'id', 'keepalive_timeout', 'limit', 'loadbalancer_id', 'marker', 'member_address', 'member_device_id', 'member_timeout', 'name', 'page_reverse', 'protocol', 'protocol_port', 'tls_ciphers_policy', 'transparent_client_ip_enable']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1524,69 +1588,69 @@ class ElbAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'page_reverse' in local_var_params:
-            query_params.append(('page_reverse', local_var_params['page_reverse']))
-        if 'protocol_port' in local_var_params:
-            query_params.append(('protocol_port', local_var_params['protocol_port']))
-            collection_formats['protocol_port'] = 'multi'
-        if 'protocol' in local_var_params:
-            query_params.append(('protocol', local_var_params['protocol']))
-            collection_formats['protocol'] = 'multi'
-        if 'description' in local_var_params:
-            query_params.append(('description', local_var_params['description']))
-            collection_formats['description'] = 'multi'
-        if 'default_tls_container_ref' in local_var_params:
-            query_params.append(('default_tls_container_ref', local_var_params['default_tls_container_ref']))
-            collection_formats['default_tls_container_ref'] = 'multi'
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
         if 'client_ca_tls_container_ref' in local_var_params:
             query_params.append(('client_ca_tls_container_ref', local_var_params['client_ca_tls_container_ref']))
             collection_formats['client_ca_tls_container_ref'] = 'multi'
-        if 'admin_state_up' in local_var_params:
-            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
+        if 'client_timeout' in local_var_params:
+            query_params.append(('client_timeout', local_var_params['client_timeout']))
+            collection_formats['client_timeout'] = 'multi'
         if 'connection_limit' in local_var_params:
             query_params.append(('connection_limit', local_var_params['connection_limit']))
             collection_formats['connection_limit'] = 'multi'
         if 'default_pool_id' in local_var_params:
             query_params.append(('default_pool_id', local_var_params['default_pool_id']))
             collection_formats['default_pool_id'] = 'multi'
+        if 'default_tls_container_ref' in local_var_params:
+            query_params.append(('default_tls_container_ref', local_var_params['default_tls_container_ref']))
+            collection_formats['default_tls_container_ref'] = 'multi'
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'multi'
+        if 'enable_member_retry' in local_var_params:
+            query_params.append(('enable_member_retry', local_var_params['enable_member_retry']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'multi'
+        if 'http2_enable' in local_var_params:
+            query_params.append(('http2_enable', local_var_params['http2_enable']))
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
             collection_formats['id'] = 'multi'
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-            collection_formats['name'] = 'multi'
-        if 'http2_enable' in local_var_params:
-            query_params.append(('http2_enable', local_var_params['http2_enable']))
+        if 'keepalive_timeout' in local_var_params:
+            query_params.append(('keepalive_timeout', local_var_params['keepalive_timeout']))
+            collection_formats['keepalive_timeout'] = 'multi'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
         if 'loadbalancer_id' in local_var_params:
             query_params.append(('loadbalancer_id', local_var_params['loadbalancer_id']))
             collection_formats['loadbalancer_id'] = 'multi'
-        if 'tls_ciphers_policy' in local_var_params:
-            query_params.append(('tls_ciphers_policy', local_var_params['tls_ciphers_policy']))
-            collection_formats['tls_ciphers_policy'] = 'multi'
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
         if 'member_address' in local_var_params:
             query_params.append(('member_address', local_var_params['member_address']))
             collection_formats['member_address'] = 'multi'
         if 'member_device_id' in local_var_params:
             query_params.append(('member_device_id', local_var_params['member_device_id']))
             collection_formats['member_device_id'] = 'multi'
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-            collection_formats['enterprise_project_id'] = 'multi'
-        if 'enable_member_retry' in local_var_params:
-            query_params.append(('enable_member_retry', local_var_params['enable_member_retry']))
         if 'member_timeout' in local_var_params:
             query_params.append(('member_timeout', local_var_params['member_timeout']))
             collection_formats['member_timeout'] = 'multi'
-        if 'client_timeout' in local_var_params:
-            query_params.append(('client_timeout', local_var_params['client_timeout']))
-            collection_formats['client_timeout'] = 'multi'
-        if 'keepalive_timeout' in local_var_params:
-            query_params.append(('keepalive_timeout', local_var_params['keepalive_timeout']))
-            collection_formats['keepalive_timeout'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
+            collection_formats['protocol'] = 'multi'
+        if 'protocol_port' in local_var_params:
+            query_params.append(('protocol_port', local_var_params['protocol_port']))
+            collection_formats['protocol_port'] = 'multi'
+        if 'tls_ciphers_policy' in local_var_params:
+            query_params.append(('tls_ciphers_policy', local_var_params['tls_ciphers_policy']))
+            collection_formats['tls_ciphers_policy'] = 'multi'
         if 'transparent_client_ip_enable' in local_var_params:
             query_params.append(('transparent_client_ip_enable', local_var_params['transparent_client_ip_enable']))
 
@@ -1597,6 +1661,8 @@ class ElbAsyncClient(Client):
         body_params = None
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
+
+        response_headers = []
 
 
         auth_settings = []
@@ -1610,6 +1676,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListListenersResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1634,7 +1701,7 @@ class ElbAsyncClient(Client):
         :return: ListLoadBalancersResponse
         """
 
-        all_params = ['marker', 'limit', 'page_reverse', 'id', 'name', 'description', 'admin_state_up', 'provisioning_status', 'operating_status', 'guaranteed', 'vpc_id', 'vip_port_id', 'vip_address', 'vip_subnet_cidr_id', 'l4_flavor_id', 'l4_scale_flavor_id', 'ipv6_vip_address', 'ipv6_vip_virsubnet_id', 'ipv6_vip_port_id', 'availability_zone_list', 'eips', 'l7_flavor_id', 'l7_scale_flavor_id', 'billing_info', 'member_device_id', 'member_address', 'enterprise_project_id', 'publicips', 'ip_version', 'deletion_protection_enable']
+        all_params = ['admin_state_up', 'availability_zone_list', 'billing_info', 'deletion_protection_enable', 'description', 'eips', 'enterprise_project_id', 'guaranteed', 'id', 'ip_version', 'ipv6_vip_address', 'ipv6_vip_port_id', 'ipv6_vip_virsubnet_id', 'l4_flavor_id', 'l4_scale_flavor_id', 'l7_flavor_id', 'l7_scale_flavor_id', 'limit', 'marker', 'member_address', 'member_device_id', 'name', 'operating_status', 'page_reverse', 'provisioning_status', 'publicips', 'vip_address', 'vip_port_id', 'vip_subnet_cidr_id', 'vpc_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1645,90 +1712,90 @@ class ElbAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'page_reverse' in local_var_params:
-            query_params.append(('page_reverse', local_var_params['page_reverse']))
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-            collection_formats['id'] = 'multi'
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-            collection_formats['name'] = 'multi'
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
+        if 'availability_zone_list' in local_var_params:
+            query_params.append(('availability_zone_list', local_var_params['availability_zone_list']))
+            collection_formats['availability_zone_list'] = 'multi'
+        if 'billing_info' in local_var_params:
+            query_params.append(('billing_info', local_var_params['billing_info']))
+            collection_formats['billing_info'] = 'multi'
+        if 'deletion_protection_enable' in local_var_params:
+            query_params.append(('deletion_protection_enable', local_var_params['deletion_protection_enable']))
         if 'description' in local_var_params:
             query_params.append(('description', local_var_params['description']))
             collection_formats['description'] = 'multi'
-        if 'admin_state_up' in local_var_params:
-            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
-        if 'provisioning_status' in local_var_params:
-            query_params.append(('provisioning_status', local_var_params['provisioning_status']))
-            collection_formats['provisioning_status'] = 'multi'
-        if 'operating_status' in local_var_params:
-            query_params.append(('operating_status', local_var_params['operating_status']))
-            collection_formats['operating_status'] = 'multi'
+        if 'eips' in local_var_params:
+            query_params.append(('eips', local_var_params['eips']))
+            collection_formats['eips'] = 'multi'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'multi'
         if 'guaranteed' in local_var_params:
             query_params.append(('guaranteed', local_var_params['guaranteed']))
-        if 'vpc_id' in local_var_params:
-            query_params.append(('vpc_id', local_var_params['vpc_id']))
-            collection_formats['vpc_id'] = 'multi'
-        if 'vip_port_id' in local_var_params:
-            query_params.append(('vip_port_id', local_var_params['vip_port_id']))
-            collection_formats['vip_port_id'] = 'multi'
-        if 'vip_address' in local_var_params:
-            query_params.append(('vip_address', local_var_params['vip_address']))
-            collection_formats['vip_address'] = 'multi'
-        if 'vip_subnet_cidr_id' in local_var_params:
-            query_params.append(('vip_subnet_cidr_id', local_var_params['vip_subnet_cidr_id']))
-            collection_formats['vip_subnet_cidr_id'] = 'multi'
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'ip_version' in local_var_params:
+            query_params.append(('ip_version', local_var_params['ip_version']))
+            collection_formats['ip_version'] = 'multi'
+        if 'ipv6_vip_address' in local_var_params:
+            query_params.append(('ipv6_vip_address', local_var_params['ipv6_vip_address']))
+            collection_formats['ipv6_vip_address'] = 'multi'
+        if 'ipv6_vip_port_id' in local_var_params:
+            query_params.append(('ipv6_vip_port_id', local_var_params['ipv6_vip_port_id']))
+            collection_formats['ipv6_vip_port_id'] = 'multi'
+        if 'ipv6_vip_virsubnet_id' in local_var_params:
+            query_params.append(('ipv6_vip_virsubnet_id', local_var_params['ipv6_vip_virsubnet_id']))
+            collection_formats['ipv6_vip_virsubnet_id'] = 'multi'
         if 'l4_flavor_id' in local_var_params:
             query_params.append(('l4_flavor_id', local_var_params['l4_flavor_id']))
             collection_formats['l4_flavor_id'] = 'multi'
         if 'l4_scale_flavor_id' in local_var_params:
             query_params.append(('l4_scale_flavor_id', local_var_params['l4_scale_flavor_id']))
             collection_formats['l4_scale_flavor_id'] = 'multi'
-        if 'ipv6_vip_address' in local_var_params:
-            query_params.append(('ipv6_vip_address', local_var_params['ipv6_vip_address']))
-            collection_formats['ipv6_vip_address'] = 'multi'
-        if 'ipv6_vip_virsubnet_id' in local_var_params:
-            query_params.append(('ipv6_vip_virsubnet_id', local_var_params['ipv6_vip_virsubnet_id']))
-            collection_formats['ipv6_vip_virsubnet_id'] = 'multi'
-        if 'ipv6_vip_port_id' in local_var_params:
-            query_params.append(('ipv6_vip_port_id', local_var_params['ipv6_vip_port_id']))
-            collection_formats['ipv6_vip_port_id'] = 'multi'
-        if 'availability_zone_list' in local_var_params:
-            query_params.append(('availability_zone_list', local_var_params['availability_zone_list']))
-            collection_formats['availability_zone_list'] = 'multi'
-        if 'eips' in local_var_params:
-            query_params.append(('eips', local_var_params['eips']))
-            collection_formats['eips'] = 'multi'
         if 'l7_flavor_id' in local_var_params:
             query_params.append(('l7_flavor_id', local_var_params['l7_flavor_id']))
             collection_formats['l7_flavor_id'] = 'multi'
         if 'l7_scale_flavor_id' in local_var_params:
             query_params.append(('l7_scale_flavor_id', local_var_params['l7_scale_flavor_id']))
             collection_formats['l7_scale_flavor_id'] = 'multi'
-        if 'billing_info' in local_var_params:
-            query_params.append(('billing_info', local_var_params['billing_info']))
-            collection_formats['billing_info'] = 'multi'
-        if 'member_device_id' in local_var_params:
-            query_params.append(('member_device_id', local_var_params['member_device_id']))
-            collection_formats['member_device_id'] = 'multi'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
         if 'member_address' in local_var_params:
             query_params.append(('member_address', local_var_params['member_address']))
             collection_formats['member_address'] = 'multi'
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-            collection_formats['enterprise_project_id'] = 'multi'
+        if 'member_device_id' in local_var_params:
+            query_params.append(('member_device_id', local_var_params['member_device_id']))
+            collection_formats['member_device_id'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'operating_status' in local_var_params:
+            query_params.append(('operating_status', local_var_params['operating_status']))
+            collection_formats['operating_status'] = 'multi'
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'provisioning_status' in local_var_params:
+            query_params.append(('provisioning_status', local_var_params['provisioning_status']))
+            collection_formats['provisioning_status'] = 'multi'
         if 'publicips' in local_var_params:
             query_params.append(('publicips', local_var_params['publicips']))
             collection_formats['publicips'] = 'multi'
-        if 'ip_version' in local_var_params:
-            query_params.append(('ip_version', local_var_params['ip_version']))
-            collection_formats['ip_version'] = 'multi'
-        if 'deletion_protection_enable' in local_var_params:
-            query_params.append(('deletion_protection_enable', local_var_params['deletion_protection_enable']))
+        if 'vip_address' in local_var_params:
+            query_params.append(('vip_address', local_var_params['vip_address']))
+            collection_formats['vip_address'] = 'multi'
+        if 'vip_port_id' in local_var_params:
+            query_params.append(('vip_port_id', local_var_params['vip_port_id']))
+            collection_formats['vip_port_id'] = 'multi'
+        if 'vip_subnet_cidr_id' in local_var_params:
+            query_params.append(('vip_subnet_cidr_id', local_var_params['vip_subnet_cidr_id']))
+            collection_formats['vip_subnet_cidr_id'] = 'multi'
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+            collection_formats['vpc_id'] = 'multi'
 
         header_params = {}
 
@@ -1737,6 +1804,8 @@ class ElbAsyncClient(Client):
         body_params = None
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
+
+        response_headers = []
 
 
         auth_settings = []
@@ -1750,6 +1819,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListLoadBalancersResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1774,7 +1844,7 @@ class ElbAsyncClient(Client):
         :return: ListMembersResponse
         """
 
-        all_params = ['pool_id', 'marker', 'limit', 'page_reverse', 'name', 'weight', 'admin_state_up', 'subnet_cidr_id', 'address', 'protocol_port', 'id', 'operating_status', 'enterprise_project_id']
+        all_params = ['pool_id', 'address', 'admin_state_up', 'enterprise_project_id', 'id', 'limit', 'marker', 'name', 'operating_status', 'page_reverse', 'protocol_port', 'subnet_cidr_id', 'weight']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1787,38 +1857,38 @@ class ElbAsyncClient(Client):
             path_params['pool_id'] = local_var_params['pool_id']
 
         query_params = []
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'page_reverse' in local_var_params:
-            query_params.append(('page_reverse', local_var_params['page_reverse']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-            collection_formats['name'] = 'multi'
-        if 'weight' in local_var_params:
-            query_params.append(('weight', local_var_params['weight']))
-            collection_formats['weight'] = 'multi'
-        if 'admin_state_up' in local_var_params:
-            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
-        if 'subnet_cidr_id' in local_var_params:
-            query_params.append(('subnet_cidr_id', local_var_params['subnet_cidr_id']))
-            collection_formats['subnet_cidr_id'] = 'multi'
         if 'address' in local_var_params:
             query_params.append(('address', local_var_params['address']))
             collection_formats['address'] = 'multi'
-        if 'protocol_port' in local_var_params:
-            query_params.append(('protocol_port', local_var_params['protocol_port']))
-            collection_formats['protocol_port'] = 'multi'
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-            collection_formats['id'] = 'multi'
-        if 'operating_status' in local_var_params:
-            query_params.append(('operating_status', local_var_params['operating_status']))
-            collection_formats['operating_status'] = 'multi'
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
             collection_formats['enterprise_project_id'] = 'multi'
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'operating_status' in local_var_params:
+            query_params.append(('operating_status', local_var_params['operating_status']))
+            collection_formats['operating_status'] = 'multi'
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'protocol_port' in local_var_params:
+            query_params.append(('protocol_port', local_var_params['protocol_port']))
+            collection_formats['protocol_port'] = 'multi'
+        if 'subnet_cidr_id' in local_var_params:
+            query_params.append(('subnet_cidr_id', local_var_params['subnet_cidr_id']))
+            collection_formats['subnet_cidr_id'] = 'multi'
+        if 'weight' in local_var_params:
+            query_params.append(('weight', local_var_params['weight']))
+            collection_formats['weight'] = 'multi'
 
         header_params = {}
 
@@ -1827,6 +1897,8 @@ class ElbAsyncClient(Client):
         body_params = None
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
+
+        response_headers = []
 
 
         auth_settings = []
@@ -1840,6 +1912,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListMembersResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1864,7 +1937,7 @@ class ElbAsyncClient(Client):
         :return: ListPoolsResponse
         """
 
-        all_params = ['marker', 'limit', 'page_reverse', 'description', 'admin_state_up', 'healthmonitor_id', 'id', 'name', 'loadbalancer_id', 'protocol', 'lb_algorithm', 'enterprise_project_id', 'ip_version', 'member_address', 'member_device_id', 'member_deletion_protection_enable']
+        all_params = ['admin_state_up', 'description', 'enterprise_project_id', 'healthmonitor_id', 'id', 'ip_version', 'lb_algorithm', 'limit', 'loadbalancer_id', 'marker', 'member_address', 'member_deletion_protection_enable', 'member_device_id', 'name', 'page_reverse', 'protocol']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1875,49 +1948,49 @@ class ElbAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'page_reverse' in local_var_params:
-            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
         if 'description' in local_var_params:
             query_params.append(('description', local_var_params['description']))
             collection_formats['description'] = 'multi'
-        if 'admin_state_up' in local_var_params:
-            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'multi'
         if 'healthmonitor_id' in local_var_params:
             query_params.append(('healthmonitor_id', local_var_params['healthmonitor_id']))
             collection_formats['healthmonitor_id'] = 'multi'
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
             collection_formats['id'] = 'multi'
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-            collection_formats['name'] = 'multi'
-        if 'loadbalancer_id' in local_var_params:
-            query_params.append(('loadbalancer_id', local_var_params['loadbalancer_id']))
-            collection_formats['loadbalancer_id'] = 'multi'
-        if 'protocol' in local_var_params:
-            query_params.append(('protocol', local_var_params['protocol']))
-            collection_formats['protocol'] = 'multi'
-        if 'lb_algorithm' in local_var_params:
-            query_params.append(('lb_algorithm', local_var_params['lb_algorithm']))
-            collection_formats['lb_algorithm'] = 'multi'
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-            collection_formats['enterprise_project_id'] = 'multi'
         if 'ip_version' in local_var_params:
             query_params.append(('ip_version', local_var_params['ip_version']))
             collection_formats['ip_version'] = 'multi'
+        if 'lb_algorithm' in local_var_params:
+            query_params.append(('lb_algorithm', local_var_params['lb_algorithm']))
+            collection_formats['lb_algorithm'] = 'multi'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'loadbalancer_id' in local_var_params:
+            query_params.append(('loadbalancer_id', local_var_params['loadbalancer_id']))
+            collection_formats['loadbalancer_id'] = 'multi'
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
         if 'member_address' in local_var_params:
             query_params.append(('member_address', local_var_params['member_address']))
             collection_formats['member_address'] = 'multi'
+        if 'member_deletion_protection_enable' in local_var_params:
+            query_params.append(('member_deletion_protection_enable', local_var_params['member_deletion_protection_enable']))
         if 'member_device_id' in local_var_params:
             query_params.append(('member_device_id', local_var_params['member_device_id']))
             collection_formats['member_device_id'] = 'multi'
-        if 'member_deletion_protection_enable' in local_var_params:
-            query_params.append(('member_deletion_protection_enable', local_var_params['member_deletion_protection_enable']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
+            collection_formats['protocol'] = 'multi'
 
         header_params = {}
 
@@ -1926,6 +1999,8 @@ class ElbAsyncClient(Client):
         body_params = None
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
+
+        response_headers = []
 
 
         auth_settings = []
@@ -1939,6 +2014,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListPoolsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1985,6 +2061,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1997,6 +2075,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowCertificateResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2043,6 +2122,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2055,6 +2136,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowFlavorResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2101,6 +2183,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2113,6 +2197,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowHealthMonitorResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2159,6 +2244,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2171,6 +2258,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowL7PolicyResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2219,6 +2307,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2231,6 +2321,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowL7RuleResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2277,6 +2368,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2289,6 +2382,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowListenerResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2335,6 +2429,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2347,6 +2443,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowLoadBalancerResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2393,6 +2490,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2405,6 +2504,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowLoadBalancerStatusResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2429,7 +2529,7 @@ class ElbAsyncClient(Client):
         :return: ShowMemberResponse
         """
 
-        all_params = ['pool_id', 'member_id']
+        all_params = ['member_id', 'pool_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2438,10 +2538,10 @@ class ElbAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'pool_id' in local_var_params:
-            path_params['pool_id'] = local_var_params['pool_id']
         if 'member_id' in local_var_params:
             path_params['member_id'] = local_var_params['member_id']
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
 
         query_params = []
 
@@ -2452,6 +2552,8 @@ class ElbAsyncClient(Client):
         body_params = None
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
+
+        response_headers = []
 
 
         auth_settings = []
@@ -2465,6 +2567,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowMemberResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2511,6 +2614,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2523,6 +2628,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowPoolResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2567,6 +2673,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2579,6 +2687,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowQuotaResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2623,6 +2732,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2635,6 +2746,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowQuotaDefaultsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2683,6 +2795,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2697,6 +2811,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateCertificateResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2745,6 +2860,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2759,6 +2876,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateHealthMonitorResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2807,6 +2925,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2821,6 +2941,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateL7PolicyResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2871,6 +2992,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2885,6 +3008,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateL7RuleResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2933,6 +3057,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2947,6 +3073,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateListenerResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2995,6 +3122,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -3009,6 +3138,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateLoadBalancerResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3059,6 +3189,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -3073,6 +3205,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateMemberResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3121,6 +3254,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -3135,6 +3270,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdatePoolResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3159,7 +3295,7 @@ class ElbAsyncClient(Client):
         :return: CountPreoccupyIpNumResponse
         """
 
-        all_params = ['l7_flavor_id', 'ip_target_enable', 'ip_version', 'loadbalancer_id', 'availability_zone_id']
+        all_params = ['availability_zone_id', 'ip_target_enable', 'ip_version', 'l7_flavor_id', 'loadbalancer_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3170,17 +3306,17 @@ class ElbAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'l7_flavor_id' in local_var_params:
-            query_params.append(('l7_flavor_id', local_var_params['l7_flavor_id']))
+        if 'availability_zone_id' in local_var_params:
+            query_params.append(('availability_zone_id', local_var_params['availability_zone_id']))
+            collection_formats['availability_zone_id'] = 'multi'
         if 'ip_target_enable' in local_var_params:
             query_params.append(('ip_target_enable', local_var_params['ip_target_enable']))
         if 'ip_version' in local_var_params:
             query_params.append(('ip_version', local_var_params['ip_version']))
+        if 'l7_flavor_id' in local_var_params:
+            query_params.append(('l7_flavor_id', local_var_params['l7_flavor_id']))
         if 'loadbalancer_id' in local_var_params:
             query_params.append(('loadbalancer_id', local_var_params['loadbalancer_id']))
-        if 'availability_zone_id' in local_var_params:
-            query_params.append(('availability_zone_id', local_var_params['availability_zone_id']))
-            collection_formats['availability_zone_id'] = 'multi'
 
         header_params = {}
 
@@ -3189,6 +3325,8 @@ class ElbAsyncClient(Client):
         body_params = None
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
+
+        response_headers = []
 
 
         auth_settings = []
@@ -3202,6 +3340,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CountPreoccupyIpNumResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3248,6 +3387,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -3262,6 +3403,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateIpGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3308,6 +3450,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3320,6 +3464,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteIpGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3344,7 +3489,7 @@ class ElbAsyncClient(Client):
         :return: ListIpGroupsResponse
         """
 
-        all_params = ['marker', 'limit', 'page_reverse', 'id', 'name', 'description', 'ip_list']
+        all_params = ['description', 'id', 'ip_list', 'limit', 'marker', 'name', 'page_reverse']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3355,24 +3500,24 @@ class ElbAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'page_reverse' in local_var_params:
-            query_params.append(('page_reverse', local_var_params['page_reverse']))
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-            collection_formats['id'] = 'multi'
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-            collection_formats['name'] = 'multi'
         if 'description' in local_var_params:
             query_params.append(('description', local_var_params['description']))
             collection_formats['description'] = 'multi'
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
         if 'ip_list' in local_var_params:
             query_params.append(('ip_list', local_var_params['ip_list']))
             collection_formats['ip_list'] = 'multi'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
 
         header_params = {}
 
@@ -3381,6 +3526,8 @@ class ElbAsyncClient(Client):
         body_params = None
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
+
+        response_headers = []
 
 
         auth_settings = []
@@ -3394,6 +3541,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListIpGroupsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3440,6 +3588,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3452,6 +3602,7 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowIpGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3500,6 +3651,8 @@ class ElbAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -3514,14 +3667,15 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateIpGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
-                 request_type=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
+                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -3535,8 +3689,10 @@ class ElbAsyncClient(Client):
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
         :param auth_settings list: Auth Settings names for the request.
         :param response_type: Response data type.
+        :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
             header, and post parameters.
+        :param request_type: Request data type.
         :return:
             Return the response directly.
         """
@@ -3549,6 +3705,7 @@ class ElbAsyncClient(Client):
             body=body,
             post_params=post_params,
             response_type=response_type,
+            response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
 	    async_request=True)

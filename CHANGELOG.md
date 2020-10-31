@@ -1,3 +1,63 @@
+## 3.0.19-beta 2020-10-31
+## HuaweiCloud SDK CBR
+ - ### Features
+    - Support more interfaces: interfaces related to `TAG`.
+ - ### Bug Fix
+    - [Issue 17](https://github.com/huaweicloud/huaweicloud-sdk-java-v3/issues/17) fix the problem of interface: ListBackups.
+ - ### Change
+    - None
+
+## HuaweiCloud SDK CTS
+ - ### Features
+    - Support more interface: ListQuotas
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK EPS
+ - ### Features
+    - None
+ - ### Bug Fix
+    - None
+ - ### Change
+    - Adjust interfaces' names, replace abbreviations of `EP` with `EnterpriseProject`, the involved interfaces are:
+     1. ListEP → ListEnterpriseProject
+     2. CreateEP → CreateEnterpriseProject
+     3. ShowEP → ShowEnterpriseProject
+     4. ModifyEP → ModifyEnterpriseProject
+     5. EnableEP → EnableEnterpriseProject
+     6. ShowEPQuota → ShowEnterpriseProjectQuota
+     7. ShowResourceBindEP → ShowResourceBindEnterpriseProject
+     8. DisableEP → DisableEnterpriseProject
+
+## HuaweiCloud SDK FunctionGraph
+ - ### Features
+    - Support more interfaces: UpdateTrigger, ListFunctionStatistics, ListStatistics, ListQuotas
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK Iam
+ - ### Features
+    - None
+ - ### Bug Fix
+    - None
+ - ### Change
+    - Adjust interfaces' names, the involved interfaces are:
+     1. KeystoneCreateUserTokenByPasswordAndMFA → KeystoneCreateUserTokenByPasswordAndMfa
+     2. CreateUnscopeTokenByIDPInitiated → CreateUnscopeTokenByIdpInitiated
+
+## HuaweiCloud SDK ProjectMan
+ - ### Features
+    - Support more interfaces: iteration information, user information, project members, project information, project indicators, project statistics, etc.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+
 ## 3.0.18-beta 2020-10-20
 ## HuaweiCloud SDK DCS
  - ### Features
@@ -451,24 +511,3 @@
     - None
   - ### Change
     - None
-
-## __HuaweiCloud SDK DevStar__
-  - ### Features
-    - Support query template list.
-    - Support query template details.
-    - Support query task status.
-    - Support creating and generating application code tasks through DevStar template.
-  - ### Bug Fix
-    - None
-  - ### Change
-    - None 
-    
-# 3.0.17-beta 2020-10-16
-## HuaweiCloud SDK DevStar
- - ### Features
-    - Change of title from Devstar to DevStar.
-    - Supplemental DevStar Automation Test Cases.
- - ### Bug Fix
-    - None
- - ### Change
-    - None    

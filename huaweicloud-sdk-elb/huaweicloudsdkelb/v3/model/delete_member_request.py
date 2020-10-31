@@ -23,46 +23,26 @@ class DeleteMemberRequest:
     sensitive_list = []
 
     openapi_types = {
-        'pool_id': 'str',
-        'member_id': 'str'
+        'member_id': 'str',
+        'pool_id': 'str'
     }
 
     attribute_map = {
-        'pool_id': 'pool_id',
-        'member_id': 'member_id'
+        'member_id': 'member_id',
+        'pool_id': 'pool_id'
     }
 
-    def __init__(self, pool_id=None, member_id=None):
+    def __init__(self, member_id=None, pool_id=None):
         """DeleteMemberRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._pool_id = None
         self._member_id = None
+        self._pool_id = None
         self.discriminator = None
 
-        self.pool_id = pool_id
         self.member_id = member_id
-
-    @property
-    def pool_id(self):
-        """Gets the pool_id of this DeleteMemberRequest.
-
-
-        :return: The pool_id of this DeleteMemberRequest.
-        :rtype: str
-        """
-        return self._pool_id
-
-    @pool_id.setter
-    def pool_id(self, pool_id):
-        """Sets the pool_id of this DeleteMemberRequest.
-
-
-        :param pool_id: The pool_id of this DeleteMemberRequest.
-        :type: str
-        """
-        self._pool_id = pool_id
+        self.pool_id = pool_id
 
     @property
     def member_id(self):
@@ -83,6 +63,26 @@ class DeleteMemberRequest:
         :type: str
         """
         self._member_id = member_id
+
+    @property
+    def pool_id(self):
+        """Gets the pool_id of this DeleteMemberRequest.
+
+
+        :return: The pool_id of this DeleteMemberRequest.
+        :rtype: str
+        """
+        return self._pool_id
+
+    @pool_id.setter
+    def pool_id(self, pool_id):
+        """Sets the pool_id of this DeleteMemberRequest.
+
+
+        :param pool_id: The pool_id of this DeleteMemberRequest.
+        :type: str
+        """
+        self._pool_id = pool_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

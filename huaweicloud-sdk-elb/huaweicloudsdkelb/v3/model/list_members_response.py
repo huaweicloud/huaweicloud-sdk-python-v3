@@ -55,7 +55,7 @@ class ListMembersResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this ListMembersResponse.
 
-        请求ID。 注：自动生成 。
+        请求ID。  注：自动生成 。
 
         :return: The request_id of this ListMembersResponse.
         :rtype: str
@@ -66,7 +66,7 @@ class ListMembersResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this ListMembersResponse.
 
-        请求ID。 注：自动生成 。
+        请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListMembersResponse.
         :type: str

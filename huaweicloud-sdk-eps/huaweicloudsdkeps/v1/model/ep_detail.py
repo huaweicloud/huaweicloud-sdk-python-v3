@@ -28,7 +28,8 @@ class EpDetail:
         'description': 'str',
         'status': 'int',
         'created_at': 'datetime',
-        'updated_at': 'datetime'
+        'updated_at': 'datetime',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class EpDetail:
         'description': 'description',
         'status': 'status',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'type': 'type'
     }
 
-    def __init__(self, id=None, name=None, description=None, status=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, description=None, status=None, created_at=None, updated_at=None, type=None):
         """EpDetail - a model defined in huaweicloud sdk"""
         
         
@@ -51,6 +53,7 @@ class EpDetail:
         self._status = None
         self._created_at = None
         self._updated_at = None
+        self._type = None
         self.discriminator = None
 
         self.id = id
@@ -59,6 +62,7 @@ class EpDetail:
         self.status = status
         self.created_at = created_at
         self.updated_at = updated_at
+        self.type = type
 
     @property
     def id(self):
@@ -191,6 +195,28 @@ class EpDetail:
         :type: datetime
         """
         self._updated_at = updated_at
+
+    @property
+    def type(self):
+        """Gets the type of this EpDetail.
+
+        项目类型。prod-商用项目；poc-测试项目
+
+        :return: The type of this EpDetail.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this EpDetail.
+
+        项目类型。prod-商用项目；poc-测试项目
+
+        :param type: The type of this EpDetail.
+        :type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

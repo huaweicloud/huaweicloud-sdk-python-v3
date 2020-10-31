@@ -32,7 +32,8 @@ class CreateCustomerV2Req:
         'password': 'str',
         'is_close_market_ms': 'str',
         'cooperation_type': 'str',
-        'indirect_partner_id': 'str'
+        'indirect_partner_id': 'str',
+        'include_association_result': 'bool'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class CreateCustomerV2Req:
         'password': 'password',
         'is_close_market_ms': 'is_close_market_ms',
         'cooperation_type': 'cooperation_type',
-        'indirect_partner_id': 'indirect_partner_id'
+        'indirect_partner_id': 'indirect_partner_id',
+        'include_association_result': 'include_association_result'
     }
 
-    def __init__(self, domain_name=None, email=None, verification_code=None, domain_area=None, xaccount_id=None, xaccount_type=None, password=None, is_close_market_ms='false', cooperation_type=None, indirect_partner_id=None):
+    def __init__(self, domain_name=None, email=None, verification_code=None, domain_area=None, xaccount_id=None, xaccount_type=None, password=None, is_close_market_ms='false', cooperation_type=None, indirect_partner_id=None, include_association_result=None):
         """CreateCustomerV2Req - a model defined in huaweicloud sdk"""
         
         
@@ -63,6 +65,7 @@ class CreateCustomerV2Req:
         self._is_close_market_ms = None
         self._cooperation_type = None
         self._indirect_partner_id = None
+        self._include_association_result = None
         self.discriminator = None
 
         if domain_name is not None:
@@ -83,6 +86,8 @@ class CreateCustomerV2Req:
             self.cooperation_type = cooperation_type
         if indirect_partner_id is not None:
             self.indirect_partner_id = indirect_partner_id
+        if include_association_result is not None:
+            self.include_association_result = include_association_result
 
     @property
     def domain_name(self):
@@ -303,6 +308,28 @@ class CreateCustomerV2Req:
         :type: str
         """
         self._indirect_partner_id = indirect_partner_id
+
+    @property
+    def include_association_result(self):
+        """Gets the include_association_result of this CreateCustomerV2Req.
+
+        |参数名称：是否返回关联结果| |参数的约束及描述：该参数非必填|
+
+        :return: The include_association_result of this CreateCustomerV2Req.
+        :rtype: bool
+        """
+        return self._include_association_result
+
+    @include_association_result.setter
+    def include_association_result(self, include_association_result):
+        """Sets the include_association_result of this CreateCustomerV2Req.
+
+        |参数名称：是否返回关联结果| |参数的约束及描述：该参数非必填|
+
+        :param include_association_result: The include_association_result of this CreateCustomerV2Req.
+        :type: bool
+        """
+        self._include_association_result = include_association_result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

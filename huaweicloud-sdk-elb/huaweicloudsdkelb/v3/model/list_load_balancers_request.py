@@ -23,288 +23,168 @@ class ListLoadBalancersRequest:
     sensitive_list = []
 
     openapi_types = {
-        'marker': 'str',
-        'limit': 'int',
-        'page_reverse': 'bool',
-        'id': 'list[str]',
-        'name': 'list[str]',
-        'description': 'list[str]',
         'admin_state_up': 'bool',
-        'provisioning_status': 'list[str]',
-        'operating_status': 'list[str]',
+        'availability_zone_list': 'list[str]',
+        'billing_info': 'list[str]',
+        'deletion_protection_enable': 'bool',
+        'description': 'list[str]',
+        'eips': 'list[str]',
+        'enterprise_project_id': 'list[str]',
         'guaranteed': 'bool',
-        'vpc_id': 'list[str]',
-        'vip_port_id': 'list[str]',
-        'vip_address': 'list[str]',
-        'vip_subnet_cidr_id': 'list[str]',
+        'id': 'list[str]',
+        'ip_version': 'list[int]',
+        'ipv6_vip_address': 'list[str]',
+        'ipv6_vip_port_id': 'list[str]',
+        'ipv6_vip_virsubnet_id': 'list[str]',
         'l4_flavor_id': 'list[str]',
         'l4_scale_flavor_id': 'list[str]',
-        'ipv6_vip_address': 'list[str]',
-        'ipv6_vip_virsubnet_id': 'list[str]',
-        'ipv6_vip_port_id': 'list[str]',
-        'availability_zone_list': 'list[str]',
-        'eips': 'list[str]',
         'l7_flavor_id': 'list[str]',
         'l7_scale_flavor_id': 'list[str]',
-        'billing_info': 'list[str]',
-        'member_device_id': 'list[str]',
+        'limit': 'int',
+        'marker': 'str',
         'member_address': 'list[str]',
-        'enterprise_project_id': 'list[str]',
+        'member_device_id': 'list[str]',
+        'name': 'list[str]',
+        'operating_status': 'list[str]',
+        'page_reverse': 'bool',
+        'provisioning_status': 'list[str]',
         'publicips': 'list[str]',
-        'ip_version': 'list[int]',
-        'deletion_protection_enable': 'bool'
+        'vip_address': 'list[str]',
+        'vip_port_id': 'list[str]',
+        'vip_subnet_cidr_id': 'list[str]',
+        'vpc_id': 'list[str]'
     }
 
     attribute_map = {
-        'marker': 'marker',
-        'limit': 'limit',
-        'page_reverse': 'page_reverse',
-        'id': 'id',
-        'name': 'name',
-        'description': 'description',
         'admin_state_up': 'admin_state_up',
-        'provisioning_status': 'provisioning_status',
-        'operating_status': 'operating_status',
+        'availability_zone_list': 'availability_zone_list',
+        'billing_info': 'billing_info',
+        'deletion_protection_enable': 'deletion_protection_enable',
+        'description': 'description',
+        'eips': 'eips',
+        'enterprise_project_id': 'enterprise_project_id',
         'guaranteed': 'guaranteed',
-        'vpc_id': 'vpc_id',
-        'vip_port_id': 'vip_port_id',
-        'vip_address': 'vip_address',
-        'vip_subnet_cidr_id': 'vip_subnet_cidr_id',
+        'id': 'id',
+        'ip_version': 'ip_version',
+        'ipv6_vip_address': 'ipv6_vip_address',
+        'ipv6_vip_port_id': 'ipv6_vip_port_id',
+        'ipv6_vip_virsubnet_id': 'ipv6_vip_virsubnet_id',
         'l4_flavor_id': 'l4_flavor_id',
         'l4_scale_flavor_id': 'l4_scale_flavor_id',
-        'ipv6_vip_address': 'ipv6_vip_address',
-        'ipv6_vip_virsubnet_id': 'ipv6_vip_virsubnet_id',
-        'ipv6_vip_port_id': 'ipv6_vip_port_id',
-        'availability_zone_list': 'availability_zone_list',
-        'eips': 'eips',
         'l7_flavor_id': 'l7_flavor_id',
         'l7_scale_flavor_id': 'l7_scale_flavor_id',
-        'billing_info': 'billing_info',
-        'member_device_id': 'member_device_id',
+        'limit': 'limit',
+        'marker': 'marker',
         'member_address': 'member_address',
-        'enterprise_project_id': 'enterprise_project_id',
+        'member_device_id': 'member_device_id',
+        'name': 'name',
+        'operating_status': 'operating_status',
+        'page_reverse': 'page_reverse',
+        'provisioning_status': 'provisioning_status',
         'publicips': 'publicips',
-        'ip_version': 'ip_version',
-        'deletion_protection_enable': 'deletion_protection_enable'
+        'vip_address': 'vip_address',
+        'vip_port_id': 'vip_port_id',
+        'vip_subnet_cidr_id': 'vip_subnet_cidr_id',
+        'vpc_id': 'vpc_id'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, admin_state_up=None, provisioning_status=None, operating_status=None, guaranteed=None, vpc_id=None, vip_port_id=None, vip_address=None, vip_subnet_cidr_id=None, l4_flavor_id=None, l4_scale_flavor_id=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, eips=None, l7_flavor_id=None, l7_scale_flavor_id=None, billing_info=None, member_device_id=None, member_address=None, enterprise_project_id=None, publicips=None, ip_version=None, deletion_protection_enable=None):
+    def __init__(self, admin_state_up=None, availability_zone_list=None, billing_info=None, deletion_protection_enable=None, description=None, eips=None, enterprise_project_id=None, guaranteed=None, id=None, ip_version=None, ipv6_vip_address=None, ipv6_vip_port_id=None, ipv6_vip_virsubnet_id=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, limit=None, marker=None, member_address=None, member_device_id=None, name=None, operating_status=None, page_reverse=None, provisioning_status=None, publicips=None, vip_address=None, vip_port_id=None, vip_subnet_cidr_id=None, vpc_id=None):
         """ListLoadBalancersRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._marker = None
-        self._limit = None
-        self._page_reverse = None
-        self._id = None
-        self._name = None
-        self._description = None
         self._admin_state_up = None
-        self._provisioning_status = None
-        self._operating_status = None
+        self._availability_zone_list = None
+        self._billing_info = None
+        self._deletion_protection_enable = None
+        self._description = None
+        self._eips = None
+        self._enterprise_project_id = None
         self._guaranteed = None
-        self._vpc_id = None
-        self._vip_port_id = None
-        self._vip_address = None
-        self._vip_subnet_cidr_id = None
+        self._id = None
+        self._ip_version = None
+        self._ipv6_vip_address = None
+        self._ipv6_vip_port_id = None
+        self._ipv6_vip_virsubnet_id = None
         self._l4_flavor_id = None
         self._l4_scale_flavor_id = None
-        self._ipv6_vip_address = None
-        self._ipv6_vip_virsubnet_id = None
-        self._ipv6_vip_port_id = None
-        self._availability_zone_list = None
-        self._eips = None
         self._l7_flavor_id = None
         self._l7_scale_flavor_id = None
-        self._billing_info = None
-        self._member_device_id = None
+        self._limit = None
+        self._marker = None
         self._member_address = None
-        self._enterprise_project_id = None
+        self._member_device_id = None
+        self._name = None
+        self._operating_status = None
+        self._page_reverse = None
+        self._provisioning_status = None
         self._publicips = None
-        self._ip_version = None
-        self._deletion_protection_enable = None
+        self._vip_address = None
+        self._vip_port_id = None
+        self._vip_subnet_cidr_id = None
+        self._vpc_id = None
         self.discriminator = None
 
-        if marker is not None:
-            self.marker = marker
-        if limit is not None:
-            self.limit = limit
-        if page_reverse is not None:
-            self.page_reverse = page_reverse
-        if id is not None:
-            self.id = id
-        if name is not None:
-            self.name = name
-        if description is not None:
-            self.description = description
         if admin_state_up is not None:
             self.admin_state_up = admin_state_up
-        if provisioning_status is not None:
-            self.provisioning_status = provisioning_status
-        if operating_status is not None:
-            self.operating_status = operating_status
+        if availability_zone_list is not None:
+            self.availability_zone_list = availability_zone_list
+        if billing_info is not None:
+            self.billing_info = billing_info
+        if deletion_protection_enable is not None:
+            self.deletion_protection_enable = deletion_protection_enable
+        if description is not None:
+            self.description = description
+        if eips is not None:
+            self.eips = eips
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if guaranteed is not None:
             self.guaranteed = guaranteed
-        if vpc_id is not None:
-            self.vpc_id = vpc_id
-        if vip_port_id is not None:
-            self.vip_port_id = vip_port_id
-        if vip_address is not None:
-            self.vip_address = vip_address
-        if vip_subnet_cidr_id is not None:
-            self.vip_subnet_cidr_id = vip_subnet_cidr_id
+        if id is not None:
+            self.id = id
+        if ip_version is not None:
+            self.ip_version = ip_version
+        if ipv6_vip_address is not None:
+            self.ipv6_vip_address = ipv6_vip_address
+        if ipv6_vip_port_id is not None:
+            self.ipv6_vip_port_id = ipv6_vip_port_id
+        if ipv6_vip_virsubnet_id is not None:
+            self.ipv6_vip_virsubnet_id = ipv6_vip_virsubnet_id
         if l4_flavor_id is not None:
             self.l4_flavor_id = l4_flavor_id
         if l4_scale_flavor_id is not None:
             self.l4_scale_flavor_id = l4_scale_flavor_id
-        if ipv6_vip_address is not None:
-            self.ipv6_vip_address = ipv6_vip_address
-        if ipv6_vip_virsubnet_id is not None:
-            self.ipv6_vip_virsubnet_id = ipv6_vip_virsubnet_id
-        if ipv6_vip_port_id is not None:
-            self.ipv6_vip_port_id = ipv6_vip_port_id
-        if availability_zone_list is not None:
-            self.availability_zone_list = availability_zone_list
-        if eips is not None:
-            self.eips = eips
         if l7_flavor_id is not None:
             self.l7_flavor_id = l7_flavor_id
         if l7_scale_flavor_id is not None:
             self.l7_scale_flavor_id = l7_scale_flavor_id
-        if billing_info is not None:
-            self.billing_info = billing_info
-        if member_device_id is not None:
-            self.member_device_id = member_device_id
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
         if member_address is not None:
             self.member_address = member_address
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
+        if member_device_id is not None:
+            self.member_device_id = member_device_id
+        if name is not None:
+            self.name = name
+        if operating_status is not None:
+            self.operating_status = operating_status
+        if page_reverse is not None:
+            self.page_reverse = page_reverse
+        if provisioning_status is not None:
+            self.provisioning_status = provisioning_status
         if publicips is not None:
             self.publicips = publicips
-        if ip_version is not None:
-            self.ip_version = ip_version
-        if deletion_protection_enable is not None:
-            self.deletion_protection_enable = deletion_protection_enable
-
-    @property
-    def marker(self):
-        """Gets the marker of this ListLoadBalancersRequest.
-
-
-        :return: The marker of this ListLoadBalancersRequest.
-        :rtype: str
-        """
-        return self._marker
-
-    @marker.setter
-    def marker(self, marker):
-        """Sets the marker of this ListLoadBalancersRequest.
-
-
-        :param marker: The marker of this ListLoadBalancersRequest.
-        :type: str
-        """
-        self._marker = marker
-
-    @property
-    def limit(self):
-        """Gets the limit of this ListLoadBalancersRequest.
-
-
-        :return: The limit of this ListLoadBalancersRequest.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListLoadBalancersRequest.
-
-
-        :param limit: The limit of this ListLoadBalancersRequest.
-        :type: int
-        """
-        self._limit = limit
-
-    @property
-    def page_reverse(self):
-        """Gets the page_reverse of this ListLoadBalancersRequest.
-
-
-        :return: The page_reverse of this ListLoadBalancersRequest.
-        :rtype: bool
-        """
-        return self._page_reverse
-
-    @page_reverse.setter
-    def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListLoadBalancersRequest.
-
-
-        :param page_reverse: The page_reverse of this ListLoadBalancersRequest.
-        :type: bool
-        """
-        self._page_reverse = page_reverse
-
-    @property
-    def id(self):
-        """Gets the id of this ListLoadBalancersRequest.
-
-
-        :return: The id of this ListLoadBalancersRequest.
-        :rtype: list[str]
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ListLoadBalancersRequest.
-
-
-        :param id: The id of this ListLoadBalancersRequest.
-        :type: list[str]
-        """
-        self._id = id
-
-    @property
-    def name(self):
-        """Gets the name of this ListLoadBalancersRequest.
-
-
-        :return: The name of this ListLoadBalancersRequest.
-        :rtype: list[str]
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ListLoadBalancersRequest.
-
-
-        :param name: The name of this ListLoadBalancersRequest.
-        :type: list[str]
-        """
-        self._name = name
-
-    @property
-    def description(self):
-        """Gets the description of this ListLoadBalancersRequest.
-
-
-        :return: The description of this ListLoadBalancersRequest.
-        :rtype: list[str]
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this ListLoadBalancersRequest.
-
-
-        :param description: The description of this ListLoadBalancersRequest.
-        :type: list[str]
-        """
-        self._description = description
+        if vip_address is not None:
+            self.vip_address = vip_address
+        if vip_port_id is not None:
+            self.vip_port_id = vip_port_id
+        if vip_subnet_cidr_id is not None:
+            self.vip_subnet_cidr_id = vip_subnet_cidr_id
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
 
     @property
     def admin_state_up(self):
@@ -327,44 +207,124 @@ class ListLoadBalancersRequest:
         self._admin_state_up = admin_state_up
 
     @property
-    def provisioning_status(self):
-        """Gets the provisioning_status of this ListLoadBalancersRequest.
+    def availability_zone_list(self):
+        """Gets the availability_zone_list of this ListLoadBalancersRequest.
 
 
-        :return: The provisioning_status of this ListLoadBalancersRequest.
+        :return: The availability_zone_list of this ListLoadBalancersRequest.
         :rtype: list[str]
         """
-        return self._provisioning_status
+        return self._availability_zone_list
 
-    @provisioning_status.setter
-    def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this ListLoadBalancersRequest.
+    @availability_zone_list.setter
+    def availability_zone_list(self, availability_zone_list):
+        """Sets the availability_zone_list of this ListLoadBalancersRequest.
 
 
-        :param provisioning_status: The provisioning_status of this ListLoadBalancersRequest.
+        :param availability_zone_list: The availability_zone_list of this ListLoadBalancersRequest.
         :type: list[str]
         """
-        self._provisioning_status = provisioning_status
+        self._availability_zone_list = availability_zone_list
 
     @property
-    def operating_status(self):
-        """Gets the operating_status of this ListLoadBalancersRequest.
+    def billing_info(self):
+        """Gets the billing_info of this ListLoadBalancersRequest.
 
 
-        :return: The operating_status of this ListLoadBalancersRequest.
+        :return: The billing_info of this ListLoadBalancersRequest.
         :rtype: list[str]
         """
-        return self._operating_status
+        return self._billing_info
 
-    @operating_status.setter
-    def operating_status(self, operating_status):
-        """Sets the operating_status of this ListLoadBalancersRequest.
+    @billing_info.setter
+    def billing_info(self, billing_info):
+        """Sets the billing_info of this ListLoadBalancersRequest.
 
 
-        :param operating_status: The operating_status of this ListLoadBalancersRequest.
+        :param billing_info: The billing_info of this ListLoadBalancersRequest.
         :type: list[str]
         """
-        self._operating_status = operating_status
+        self._billing_info = billing_info
+
+    @property
+    def deletion_protection_enable(self):
+        """Gets the deletion_protection_enable of this ListLoadBalancersRequest.
+
+
+        :return: The deletion_protection_enable of this ListLoadBalancersRequest.
+        :rtype: bool
+        """
+        return self._deletion_protection_enable
+
+    @deletion_protection_enable.setter
+    def deletion_protection_enable(self, deletion_protection_enable):
+        """Sets the deletion_protection_enable of this ListLoadBalancersRequest.
+
+
+        :param deletion_protection_enable: The deletion_protection_enable of this ListLoadBalancersRequest.
+        :type: bool
+        """
+        self._deletion_protection_enable = deletion_protection_enable
+
+    @property
+    def description(self):
+        """Gets the description of this ListLoadBalancersRequest.
+
+
+        :return: The description of this ListLoadBalancersRequest.
+        :rtype: list[str]
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ListLoadBalancersRequest.
+
+
+        :param description: The description of this ListLoadBalancersRequest.
+        :type: list[str]
+        """
+        self._description = description
+
+    @property
+    def eips(self):
+        """Gets the eips of this ListLoadBalancersRequest.
+
+
+        :return: The eips of this ListLoadBalancersRequest.
+        :rtype: list[str]
+        """
+        return self._eips
+
+    @eips.setter
+    def eips(self, eips):
+        """Sets the eips of this ListLoadBalancersRequest.
+
+
+        :param eips: The eips of this ListLoadBalancersRequest.
+        :type: list[str]
+        """
+        self._eips = eips
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListLoadBalancersRequest.
+
+
+        :return: The enterprise_project_id of this ListLoadBalancersRequest.
+        :rtype: list[str]
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListLoadBalancersRequest.
+
+
+        :param enterprise_project_id: The enterprise_project_id of this ListLoadBalancersRequest.
+        :type: list[str]
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def guaranteed(self):
@@ -387,84 +347,104 @@ class ListLoadBalancersRequest:
         self._guaranteed = guaranteed
 
     @property
-    def vpc_id(self):
-        """Gets the vpc_id of this ListLoadBalancersRequest.
+    def id(self):
+        """Gets the id of this ListLoadBalancersRequest.
 
 
-        :return: The vpc_id of this ListLoadBalancersRequest.
+        :return: The id of this ListLoadBalancersRequest.
         :rtype: list[str]
         """
-        return self._vpc_id
+        return self._id
 
-    @vpc_id.setter
-    def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListLoadBalancersRequest.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ListLoadBalancersRequest.
 
 
-        :param vpc_id: The vpc_id of this ListLoadBalancersRequest.
+        :param id: The id of this ListLoadBalancersRequest.
         :type: list[str]
         """
-        self._vpc_id = vpc_id
+        self._id = id
 
     @property
-    def vip_port_id(self):
-        """Gets the vip_port_id of this ListLoadBalancersRequest.
+    def ip_version(self):
+        """Gets the ip_version of this ListLoadBalancersRequest.
 
 
-        :return: The vip_port_id of this ListLoadBalancersRequest.
-        :rtype: list[str]
+        :return: The ip_version of this ListLoadBalancersRequest.
+        :rtype: list[int]
         """
-        return self._vip_port_id
+        return self._ip_version
 
-    @vip_port_id.setter
-    def vip_port_id(self, vip_port_id):
-        """Sets the vip_port_id of this ListLoadBalancersRequest.
+    @ip_version.setter
+    def ip_version(self, ip_version):
+        """Sets the ip_version of this ListLoadBalancersRequest.
 
 
-        :param vip_port_id: The vip_port_id of this ListLoadBalancersRequest.
-        :type: list[str]
+        :param ip_version: The ip_version of this ListLoadBalancersRequest.
+        :type: list[int]
         """
-        self._vip_port_id = vip_port_id
+        self._ip_version = ip_version
 
     @property
-    def vip_address(self):
-        """Gets the vip_address of this ListLoadBalancersRequest.
+    def ipv6_vip_address(self):
+        """Gets the ipv6_vip_address of this ListLoadBalancersRequest.
 
 
-        :return: The vip_address of this ListLoadBalancersRequest.
+        :return: The ipv6_vip_address of this ListLoadBalancersRequest.
         :rtype: list[str]
         """
-        return self._vip_address
+        return self._ipv6_vip_address
 
-    @vip_address.setter
-    def vip_address(self, vip_address):
-        """Sets the vip_address of this ListLoadBalancersRequest.
+    @ipv6_vip_address.setter
+    def ipv6_vip_address(self, ipv6_vip_address):
+        """Sets the ipv6_vip_address of this ListLoadBalancersRequest.
 
 
-        :param vip_address: The vip_address of this ListLoadBalancersRequest.
+        :param ipv6_vip_address: The ipv6_vip_address of this ListLoadBalancersRequest.
         :type: list[str]
         """
-        self._vip_address = vip_address
+        self._ipv6_vip_address = ipv6_vip_address
 
     @property
-    def vip_subnet_cidr_id(self):
-        """Gets the vip_subnet_cidr_id of this ListLoadBalancersRequest.
+    def ipv6_vip_port_id(self):
+        """Gets the ipv6_vip_port_id of this ListLoadBalancersRequest.
 
 
-        :return: The vip_subnet_cidr_id of this ListLoadBalancersRequest.
+        :return: The ipv6_vip_port_id of this ListLoadBalancersRequest.
         :rtype: list[str]
         """
-        return self._vip_subnet_cidr_id
+        return self._ipv6_vip_port_id
 
-    @vip_subnet_cidr_id.setter
-    def vip_subnet_cidr_id(self, vip_subnet_cidr_id):
-        """Sets the vip_subnet_cidr_id of this ListLoadBalancersRequest.
+    @ipv6_vip_port_id.setter
+    def ipv6_vip_port_id(self, ipv6_vip_port_id):
+        """Sets the ipv6_vip_port_id of this ListLoadBalancersRequest.
 
 
-        :param vip_subnet_cidr_id: The vip_subnet_cidr_id of this ListLoadBalancersRequest.
+        :param ipv6_vip_port_id: The ipv6_vip_port_id of this ListLoadBalancersRequest.
         :type: list[str]
         """
-        self._vip_subnet_cidr_id = vip_subnet_cidr_id
+        self._ipv6_vip_port_id = ipv6_vip_port_id
+
+    @property
+    def ipv6_vip_virsubnet_id(self):
+        """Gets the ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
+
+
+        :return: The ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
+        :rtype: list[str]
+        """
+        return self._ipv6_vip_virsubnet_id
+
+    @ipv6_vip_virsubnet_id.setter
+    def ipv6_vip_virsubnet_id(self, ipv6_vip_virsubnet_id):
+        """Sets the ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
+
+
+        :param ipv6_vip_virsubnet_id: The ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
+        :type: list[str]
+        """
+        self._ipv6_vip_virsubnet_id = ipv6_vip_virsubnet_id
 
     @property
     def l4_flavor_id(self):
@@ -507,106 +487,6 @@ class ListLoadBalancersRequest:
         self._l4_scale_flavor_id = l4_scale_flavor_id
 
     @property
-    def ipv6_vip_address(self):
-        """Gets the ipv6_vip_address of this ListLoadBalancersRequest.
-
-
-        :return: The ipv6_vip_address of this ListLoadBalancersRequest.
-        :rtype: list[str]
-        """
-        return self._ipv6_vip_address
-
-    @ipv6_vip_address.setter
-    def ipv6_vip_address(self, ipv6_vip_address):
-        """Sets the ipv6_vip_address of this ListLoadBalancersRequest.
-
-
-        :param ipv6_vip_address: The ipv6_vip_address of this ListLoadBalancersRequest.
-        :type: list[str]
-        """
-        self._ipv6_vip_address = ipv6_vip_address
-
-    @property
-    def ipv6_vip_virsubnet_id(self):
-        """Gets the ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
-
-
-        :return: The ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
-        :rtype: list[str]
-        """
-        return self._ipv6_vip_virsubnet_id
-
-    @ipv6_vip_virsubnet_id.setter
-    def ipv6_vip_virsubnet_id(self, ipv6_vip_virsubnet_id):
-        """Sets the ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
-
-
-        :param ipv6_vip_virsubnet_id: The ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
-        :type: list[str]
-        """
-        self._ipv6_vip_virsubnet_id = ipv6_vip_virsubnet_id
-
-    @property
-    def ipv6_vip_port_id(self):
-        """Gets the ipv6_vip_port_id of this ListLoadBalancersRequest.
-
-
-        :return: The ipv6_vip_port_id of this ListLoadBalancersRequest.
-        :rtype: list[str]
-        """
-        return self._ipv6_vip_port_id
-
-    @ipv6_vip_port_id.setter
-    def ipv6_vip_port_id(self, ipv6_vip_port_id):
-        """Sets the ipv6_vip_port_id of this ListLoadBalancersRequest.
-
-
-        :param ipv6_vip_port_id: The ipv6_vip_port_id of this ListLoadBalancersRequest.
-        :type: list[str]
-        """
-        self._ipv6_vip_port_id = ipv6_vip_port_id
-
-    @property
-    def availability_zone_list(self):
-        """Gets the availability_zone_list of this ListLoadBalancersRequest.
-
-
-        :return: The availability_zone_list of this ListLoadBalancersRequest.
-        :rtype: list[str]
-        """
-        return self._availability_zone_list
-
-    @availability_zone_list.setter
-    def availability_zone_list(self, availability_zone_list):
-        """Sets the availability_zone_list of this ListLoadBalancersRequest.
-
-
-        :param availability_zone_list: The availability_zone_list of this ListLoadBalancersRequest.
-        :type: list[str]
-        """
-        self._availability_zone_list = availability_zone_list
-
-    @property
-    def eips(self):
-        """Gets the eips of this ListLoadBalancersRequest.
-
-
-        :return: The eips of this ListLoadBalancersRequest.
-        :rtype: list[str]
-        """
-        return self._eips
-
-    @eips.setter
-    def eips(self, eips):
-        """Sets the eips of this ListLoadBalancersRequest.
-
-
-        :param eips: The eips of this ListLoadBalancersRequest.
-        :type: list[str]
-        """
-        self._eips = eips
-
-    @property
     def l7_flavor_id(self):
         """Gets the l7_flavor_id of this ListLoadBalancersRequest.
 
@@ -647,44 +527,44 @@ class ListLoadBalancersRequest:
         self._l7_scale_flavor_id = l7_scale_flavor_id
 
     @property
-    def billing_info(self):
-        """Gets the billing_info of this ListLoadBalancersRequest.
+    def limit(self):
+        """Gets the limit of this ListLoadBalancersRequest.
 
 
-        :return: The billing_info of this ListLoadBalancersRequest.
-        :rtype: list[str]
+        :return: The limit of this ListLoadBalancersRequest.
+        :rtype: int
         """
-        return self._billing_info
+        return self._limit
 
-    @billing_info.setter
-    def billing_info(self, billing_info):
-        """Sets the billing_info of this ListLoadBalancersRequest.
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListLoadBalancersRequest.
 
 
-        :param billing_info: The billing_info of this ListLoadBalancersRequest.
-        :type: list[str]
+        :param limit: The limit of this ListLoadBalancersRequest.
+        :type: int
         """
-        self._billing_info = billing_info
+        self._limit = limit
 
     @property
-    def member_device_id(self):
-        """Gets the member_device_id of this ListLoadBalancersRequest.
+    def marker(self):
+        """Gets the marker of this ListLoadBalancersRequest.
 
 
-        :return: The member_device_id of this ListLoadBalancersRequest.
-        :rtype: list[str]
+        :return: The marker of this ListLoadBalancersRequest.
+        :rtype: str
         """
-        return self._member_device_id
+        return self._marker
 
-    @member_device_id.setter
-    def member_device_id(self, member_device_id):
-        """Sets the member_device_id of this ListLoadBalancersRequest.
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListLoadBalancersRequest.
 
 
-        :param member_device_id: The member_device_id of this ListLoadBalancersRequest.
-        :type: list[str]
+        :param marker: The marker of this ListLoadBalancersRequest.
+        :type: str
         """
-        self._member_device_id = member_device_id
+        self._marker = marker
 
     @property
     def member_address(self):
@@ -707,24 +587,104 @@ class ListLoadBalancersRequest:
         self._member_address = member_address
 
     @property
-    def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListLoadBalancersRequest.
+    def member_device_id(self):
+        """Gets the member_device_id of this ListLoadBalancersRequest.
 
 
-        :return: The enterprise_project_id of this ListLoadBalancersRequest.
+        :return: The member_device_id of this ListLoadBalancersRequest.
         :rtype: list[str]
         """
-        return self._enterprise_project_id
+        return self._member_device_id
 
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListLoadBalancersRequest.
+    @member_device_id.setter
+    def member_device_id(self, member_device_id):
+        """Sets the member_device_id of this ListLoadBalancersRequest.
 
 
-        :param enterprise_project_id: The enterprise_project_id of this ListLoadBalancersRequest.
+        :param member_device_id: The member_device_id of this ListLoadBalancersRequest.
         :type: list[str]
         """
-        self._enterprise_project_id = enterprise_project_id
+        self._member_device_id = member_device_id
+
+    @property
+    def name(self):
+        """Gets the name of this ListLoadBalancersRequest.
+
+
+        :return: The name of this ListLoadBalancersRequest.
+        :rtype: list[str]
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListLoadBalancersRequest.
+
+
+        :param name: The name of this ListLoadBalancersRequest.
+        :type: list[str]
+        """
+        self._name = name
+
+    @property
+    def operating_status(self):
+        """Gets the operating_status of this ListLoadBalancersRequest.
+
+
+        :return: The operating_status of this ListLoadBalancersRequest.
+        :rtype: list[str]
+        """
+        return self._operating_status
+
+    @operating_status.setter
+    def operating_status(self, operating_status):
+        """Sets the operating_status of this ListLoadBalancersRequest.
+
+
+        :param operating_status: The operating_status of this ListLoadBalancersRequest.
+        :type: list[str]
+        """
+        self._operating_status = operating_status
+
+    @property
+    def page_reverse(self):
+        """Gets the page_reverse of this ListLoadBalancersRequest.
+
+
+        :return: The page_reverse of this ListLoadBalancersRequest.
+        :rtype: bool
+        """
+        return self._page_reverse
+
+    @page_reverse.setter
+    def page_reverse(self, page_reverse):
+        """Sets the page_reverse of this ListLoadBalancersRequest.
+
+
+        :param page_reverse: The page_reverse of this ListLoadBalancersRequest.
+        :type: bool
+        """
+        self._page_reverse = page_reverse
+
+    @property
+    def provisioning_status(self):
+        """Gets the provisioning_status of this ListLoadBalancersRequest.
+
+
+        :return: The provisioning_status of this ListLoadBalancersRequest.
+        :rtype: list[str]
+        """
+        return self._provisioning_status
+
+    @provisioning_status.setter
+    def provisioning_status(self, provisioning_status):
+        """Sets the provisioning_status of this ListLoadBalancersRequest.
+
+
+        :param provisioning_status: The provisioning_status of this ListLoadBalancersRequest.
+        :type: list[str]
+        """
+        self._provisioning_status = provisioning_status
 
     @property
     def publicips(self):
@@ -747,44 +707,84 @@ class ListLoadBalancersRequest:
         self._publicips = publicips
 
     @property
-    def ip_version(self):
-        """Gets the ip_version of this ListLoadBalancersRequest.
+    def vip_address(self):
+        """Gets the vip_address of this ListLoadBalancersRequest.
 
 
-        :return: The ip_version of this ListLoadBalancersRequest.
-        :rtype: list[int]
+        :return: The vip_address of this ListLoadBalancersRequest.
+        :rtype: list[str]
         """
-        return self._ip_version
+        return self._vip_address
 
-    @ip_version.setter
-    def ip_version(self, ip_version):
-        """Sets the ip_version of this ListLoadBalancersRequest.
+    @vip_address.setter
+    def vip_address(self, vip_address):
+        """Sets the vip_address of this ListLoadBalancersRequest.
 
 
-        :param ip_version: The ip_version of this ListLoadBalancersRequest.
-        :type: list[int]
+        :param vip_address: The vip_address of this ListLoadBalancersRequest.
+        :type: list[str]
         """
-        self._ip_version = ip_version
+        self._vip_address = vip_address
 
     @property
-    def deletion_protection_enable(self):
-        """Gets the deletion_protection_enable of this ListLoadBalancersRequest.
+    def vip_port_id(self):
+        """Gets the vip_port_id of this ListLoadBalancersRequest.
 
 
-        :return: The deletion_protection_enable of this ListLoadBalancersRequest.
-        :rtype: bool
+        :return: The vip_port_id of this ListLoadBalancersRequest.
+        :rtype: list[str]
         """
-        return self._deletion_protection_enable
+        return self._vip_port_id
 
-    @deletion_protection_enable.setter
-    def deletion_protection_enable(self, deletion_protection_enable):
-        """Sets the deletion_protection_enable of this ListLoadBalancersRequest.
+    @vip_port_id.setter
+    def vip_port_id(self, vip_port_id):
+        """Sets the vip_port_id of this ListLoadBalancersRequest.
 
 
-        :param deletion_protection_enable: The deletion_protection_enable of this ListLoadBalancersRequest.
-        :type: bool
+        :param vip_port_id: The vip_port_id of this ListLoadBalancersRequest.
+        :type: list[str]
         """
-        self._deletion_protection_enable = deletion_protection_enable
+        self._vip_port_id = vip_port_id
+
+    @property
+    def vip_subnet_cidr_id(self):
+        """Gets the vip_subnet_cidr_id of this ListLoadBalancersRequest.
+
+
+        :return: The vip_subnet_cidr_id of this ListLoadBalancersRequest.
+        :rtype: list[str]
+        """
+        return self._vip_subnet_cidr_id
+
+    @vip_subnet_cidr_id.setter
+    def vip_subnet_cidr_id(self, vip_subnet_cidr_id):
+        """Sets the vip_subnet_cidr_id of this ListLoadBalancersRequest.
+
+
+        :param vip_subnet_cidr_id: The vip_subnet_cidr_id of this ListLoadBalancersRequest.
+        :type: list[str]
+        """
+        self._vip_subnet_cidr_id = vip_subnet_cidr_id
+
+    @property
+    def vpc_id(self):
+        """Gets the vpc_id of this ListLoadBalancersRequest.
+
+
+        :return: The vpc_id of this ListLoadBalancersRequest.
+        :rtype: list[str]
+        """
+        return self._vpc_id
+
+    @vpc_id.setter
+    def vpc_id(self, vpc_id):
+        """Sets the vpc_id of this ListLoadBalancersRequest.
+
+
+        :param vpc_id: The vpc_id of this ListLoadBalancersRequest.
+        :type: list[str]
+        """
+        self._vpc_id = vpc_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

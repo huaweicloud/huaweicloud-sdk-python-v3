@@ -42,26 +42,26 @@ class VpcAsyncClient(Client):
     def new_builder(clazz):
         return ClientBuilder(clazz)
 
-    def batch_create_sub_network_interface_v3_async(self, request):
+    def batch_create_sub_network_interface_async(self, request):
         """批量创建辅助弹性网卡
 
         批量创建辅助弹性网卡
 
-        :param BatchCreateSubNetworkInterfaceV3Request request
-        :return: BatchCreateSubNetworkInterfaceV3Response
+        :param BatchCreateSubNetworkInterfaceRequest request
+        :return: BatchCreateSubNetworkInterfaceResponse
         """
-        return self.batch_create_sub_network_interface_v3_with_http_info(request)
+        return self.batch_create_sub_network_interface_with_http_info(request)
 
-    def batch_create_sub_network_interface_v3_with_http_info(self, request):
+    def batch_create_sub_network_interface_with_http_info(self, request):
         """批量创建辅助弹性网卡
 
         批量创建辅助弹性网卡
 
-        :param BatchCreateSubNetworkInterfaceV3Request request
-        :return: BatchCreateSubNetworkInterfaceV3Response
+        :param BatchCreateSubNetworkInterfaceRequest request
+        :return: BatchCreateSubNetworkInterfaceResponse
         """
 
-        all_params = ['batch_create_sub_network_interface_v3_request_body']
+        all_params = ['batch_create_sub_network_interface_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -83,6 +83,8 @@ class VpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -96,7 +98,8 @@ class VpcAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='BatchCreateSubNetworkInterfaceV3Response',
+            response_type='BatchCreateSubNetworkInterfaceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -143,6 +146,8 @@ class VpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -157,6 +162,7 @@ class VpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateSecurityGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -203,6 +209,8 @@ class VpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -217,6 +225,7 @@ class VpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateSecurityGroupRuleResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -263,6 +272,8 @@ class VpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -277,6 +288,7 @@ class VpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateSubNetworkInterfaceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -323,6 +335,8 @@ class VpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -335,6 +349,7 @@ class VpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteSecurityGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -381,6 +396,8 @@ class VpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -393,6 +410,7 @@ class VpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteSecurityGroupRuleResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -439,6 +457,8 @@ class VpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -451,6 +471,7 @@ class VpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteSubNetworkInterfaceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -518,6 +539,8 @@ class VpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -530,6 +553,7 @@ class VpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSecurityGroupRulesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -589,6 +613,8 @@ class VpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -601,6 +627,7 @@ class VpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSecurityGroupsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -670,6 +697,8 @@ class VpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -682,6 +711,7 @@ class VpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSubNetworkInterfacesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -728,6 +758,8 @@ class VpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -740,6 +772,7 @@ class VpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowSecurityGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -786,6 +819,8 @@ class VpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -798,6 +833,7 @@ class VpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowSecurityGroupRuleResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -844,6 +880,8 @@ class VpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -856,6 +894,7 @@ class VpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowSubNetworkInterfaceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -900,6 +939,8 @@ class VpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -912,6 +953,7 @@ class VpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowSubNetworkInterfacesQuantityResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -960,6 +1002,8 @@ class VpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -974,6 +1018,7 @@ class VpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateSecurityGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1022,6 +1067,8 @@ class VpcAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
@@ -1036,14 +1083,15 @@ class VpcAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateSubNetworkInterfaceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
-                 request_type=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
+                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -1057,8 +1105,10 @@ class VpcAsyncClient(Client):
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
         :param auth_settings list: Auth Settings names for the request.
         :param response_type: Response data type.
+        :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
             header, and post parameters.
+        :param request_type: Request data type.
         :return:
             Return the response directly.
         """
@@ -1071,6 +1121,7 @@ class VpcAsyncClient(Client):
             body=body,
             post_params=post_params,
             response_type=response_type,
+            response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
 	    async_request=True)

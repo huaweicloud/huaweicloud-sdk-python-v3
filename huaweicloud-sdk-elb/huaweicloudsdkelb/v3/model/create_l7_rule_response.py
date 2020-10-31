@@ -50,7 +50,7 @@ class CreateL7RuleResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this CreateL7RuleResponse.
 
-        请求ID。 注：自动生成 。
+        请求ID。  注：自动生成 。
 
         :return: The request_id of this CreateL7RuleResponse.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateL7RuleResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this CreateL7RuleResponse.
 
-        请求ID。 注：自动生成 。
+        请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this CreateL7RuleResponse.
         :type: str

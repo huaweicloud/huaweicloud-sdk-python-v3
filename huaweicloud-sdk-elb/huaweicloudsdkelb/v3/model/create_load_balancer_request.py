@@ -21,51 +21,25 @@ class CreateLoadBalancerRequest:
     """
 
     sensitive_list = []
-    sensitive_list.append('x_auth_project_token')
 
     openapi_types = {
-        'x_auth_project_token': 'str',
         'body': 'CreateLoadBalancerRequestBody'
     }
 
     attribute_map = {
-        'x_auth_project_token': 'X-Auth-Project-Token',
         'body': 'body'
     }
 
-    def __init__(self, x_auth_project_token=None, body=None):
+    def __init__(self, body=None):
         """CreateLoadBalancerRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._x_auth_project_token = None
         self._body = None
         self.discriminator = None
 
-        if x_auth_project_token is not None:
-            self.x_auth_project_token = x_auth_project_token
         if body is not None:
             self.body = body
-
-    @property
-    def x_auth_project_token(self):
-        """Gets the x_auth_project_token of this CreateLoadBalancerRequest.
-
-
-        :return: The x_auth_project_token of this CreateLoadBalancerRequest.
-        :rtype: str
-        """
-        return self._x_auth_project_token
-
-    @x_auth_project_token.setter
-    def x_auth_project_token(self, x_auth_project_token):
-        """Sets the x_auth_project_token of this CreateLoadBalancerRequest.
-
-
-        :param x_auth_project_token: The x_auth_project_token of this CreateLoadBalancerRequest.
-        :type: str
-        """
-        self._x_auth_project_token = x_auth_project_token
 
     @property
     def body(self):

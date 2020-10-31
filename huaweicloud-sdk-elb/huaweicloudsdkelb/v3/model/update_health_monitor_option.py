@@ -232,7 +232,7 @@ class UpdateHealthMonitorOption:
     def max_retries_down(self):
         """Gets the max_retries_down of this UpdateHealthMonitorOption.
 
-        健康检查连续成功多少次后，将后端服务器的健康检查状态由online判定为offline，取值范围[1，10]。
+        健康检查连续成功多少次后，将后端服务器的健康检查状态由ONLIEN判定为OFFLINE
 
         :return: The max_retries_down of this UpdateHealthMonitorOption.
         :rtype: int
@@ -243,7 +243,7 @@ class UpdateHealthMonitorOption:
     def max_retries_down(self, max_retries_down):
         """Sets the max_retries_down of this UpdateHealthMonitorOption.
 
-        健康检查连续成功多少次后，将后端服务器的健康检查状态由online判定为offline，取值范围[1，10]。
+        健康检查连续成功多少次后，将后端服务器的健康检查状态由ONLIEN判定为OFFLINE
 
         :param max_retries_down: The max_retries_down of this UpdateHealthMonitorOption.
         :type: int

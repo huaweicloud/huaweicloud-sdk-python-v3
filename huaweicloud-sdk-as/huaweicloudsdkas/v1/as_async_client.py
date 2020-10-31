@@ -83,6 +83,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -97,6 +99,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='BatchDeleteScalingConfigsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -145,6 +148,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -159,6 +164,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CompleteLifecycleActionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -207,6 +213,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -221,6 +229,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateLifyCycleHookResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -267,6 +276,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -281,6 +292,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateScalingConfigResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -327,6 +339,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -341,6 +355,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateScalingGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -389,6 +404,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -403,6 +420,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateScalingNotificationResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -449,6 +467,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -463,6 +483,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateScalingPolicyResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -513,6 +534,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -527,6 +550,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateScalingTagsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -575,6 +599,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -587,6 +613,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteLifecycleHookResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -633,6 +660,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -645,6 +674,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteScalingConfigResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -693,6 +723,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -705,6 +737,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteScalingGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -753,6 +786,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -765,6 +800,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteScalingInstanceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -813,6 +849,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -825,6 +863,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteScalingNotificationResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -871,6 +910,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -883,6 +924,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteScalingPolicyResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -933,6 +975,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -947,6 +991,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteScalingTagsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -995,6 +1040,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -1009,6 +1056,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='EnableOrDisableScalingGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1057,6 +1105,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -1071,6 +1121,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ExecuteScalingPolicyResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1119,6 +1170,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1131,6 +1184,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListHookInstancesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1177,6 +1231,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1189,6 +1245,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListLifeCycleHooksResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1237,6 +1294,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -1251,6 +1310,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListResourceInstancesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1305,6 +1365,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1317,6 +1379,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListScalingActivityLogsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1369,6 +1432,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1381,6 +1446,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListScalingConfigsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1435,6 +1501,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1447,6 +1515,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListScalingGroupsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1503,6 +1572,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1515,6 +1586,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListScalingInstancesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1561,6 +1633,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1573,6 +1647,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListScalingNotificationsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1629,6 +1704,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1641,6 +1718,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListScalingPoliciesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1703,6 +1781,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1715,6 +1795,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListScalingPolicyExecuteLogsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1763,6 +1844,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1775,6 +1858,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListScalingTagInfosByResourceIdResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1821,6 +1905,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1833,6 +1919,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListScalingTagInfosByTenantIdResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1881,6 +1968,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1893,6 +1982,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowLifeCycleHookResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1939,6 +2029,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1951,6 +2043,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowPolicyAndInstanceQuotaResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1995,6 +2088,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2007,6 +2102,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowResourceQuotaResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2053,6 +2149,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2065,6 +2163,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowScalingConfigResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2111,6 +2210,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2123,6 +2224,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowScalingGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2169,6 +2271,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2181,6 +2285,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowScalingPolicyResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2231,6 +2336,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2245,6 +2352,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateLifeCycleHookResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2293,6 +2401,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2307,6 +2417,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateScalingGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2355,6 +2466,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2369,6 +2482,7 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateScalingGroupInstanceResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2417,6 +2531,8 @@ class AsAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2431,14 +2547,15 @@ class AsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateScalingPolicyResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
-                 request_type=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
+                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -2452,8 +2569,10 @@ class AsAsyncClient(Client):
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
         :param auth_settings list: Auth Settings names for the request.
         :param response_type: Response data type.
+        :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
             header, and post parameters.
+        :param request_type: Request data type.
         :return:
             Return the response directly.
         """
@@ -2466,6 +2585,7 @@ class AsAsyncClient(Client):
             body=body,
             post_params=post_params,
             response_type=response_type,
+            response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
 	    async_request=True)

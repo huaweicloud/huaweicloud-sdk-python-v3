@@ -155,7 +155,7 @@ class Flavor:
     def project_id(self):
         """Gets the project_id of this Flavor.
 
-        项目ID。包括flavor所属的项目ID及其共享型的项目ID。
+        项目ID
 
         :return: The project_id of this Flavor.
         :rtype: str
@@ -166,7 +166,7 @@ class Flavor:
     def project_id(self, project_id):
         """Sets the project_id of this Flavor.
 
-        项目ID。包括flavor所属的项目ID及其共享型的项目ID。
+        项目ID
 
         :param project_id: The project_id of this Flavor.
         :type: str

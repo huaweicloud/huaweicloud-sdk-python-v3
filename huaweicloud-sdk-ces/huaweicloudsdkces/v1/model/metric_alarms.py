@@ -25,7 +25,7 @@ class MetricAlarms:
     openapi_types = {
         'alarm_name': 'str',
         'alarm_description': 'str',
-        'metric': 'MetricInfo',
+        'metric': 'MetricInfoForAlarm',
         'condition': 'Condition',
         'alarm_enabled': 'bool',
         'alarm_level': 'int',
@@ -165,7 +165,7 @@ class MetricAlarms:
 
 
         :return: The metric of this MetricAlarms.
-        :rtype: MetricInfo
+        :rtype: MetricInfoForAlarm
         """
         return self._metric
 
@@ -175,7 +175,7 @@ class MetricAlarms:
 
 
         :param metric: The metric of this MetricAlarms.
-        :type: MetricInfo
+        :type: MetricInfoForAlarm
         """
         self._metric = metric
 
@@ -313,7 +313,7 @@ class MetricAlarms:
     def ok_actions(self):
         """Gets the ok_actions of this MetricAlarms.
 
-        告警恢复触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值：  notification：通知。  notificationList：告警状态发生变化时，被通知对象的列表。
+        告警恢复触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：  notification：通知。  notificationList：告警状态发生变化时，被通知对象的列表。
 
         :return: The ok_actions of this MetricAlarms.
         :rtype: list[AlarmActions]
@@ -324,7 +324,7 @@ class MetricAlarms:
     def ok_actions(self, ok_actions):
         """Sets the ok_actions of this MetricAlarms.
 
-        告警恢复触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值：  notification：通知。  notificationList：告警状态发生变化时，被通知对象的列表。
+        告警恢复触发的动作。  结构如下：  {  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：  notification：通知。  notificationList：告警状态发生变化时，被通知对象的列表。
 
         :param ok_actions: The ok_actions of this MetricAlarms.
         :type: list[AlarmActions]

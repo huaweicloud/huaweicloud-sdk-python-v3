@@ -28,7 +28,7 @@ class CreateProjectV4RequestBody:
         'source': 'str',
         'project_type': 'str',
         'enterprise_id': 'str',
-        'template_id': 'str'
+        'template_id': 'int'
     }
 
     attribute_map = {
@@ -181,7 +181,7 @@ class CreateProjectV4RequestBody:
         用户创建的项目模板id
 
         :return: The template_id of this CreateProjectV4RequestBody.
-        :rtype: str
+        :rtype: int
         """
         return self._template_id
 
@@ -192,7 +192,7 @@ class CreateProjectV4RequestBody:
         用户创建的项目模板id
 
         :param template_id: The template_id of this CreateProjectV4RequestBody.
-        :type: str
+        :type: int
         """
         self._template_id = template_id
 

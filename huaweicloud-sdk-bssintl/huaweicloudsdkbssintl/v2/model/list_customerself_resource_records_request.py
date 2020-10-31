@@ -35,7 +35,8 @@ class ListCustomerselfResourceRecordsRequest:
         'enterprise_project_id': 'str',
         'include_zero_record': 'bool',
         'method': 'str',
-        'sub_customer_id': 'str'
+        'sub_customer_id': 'str',
+        'trade_id': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class ListCustomerselfResourceRecordsRequest:
         'enterprise_project_id': 'enterprise_project_id',
         'include_zero_record': 'include_zero_record',
         'method': 'method',
-        'sub_customer_id': 'sub_customer_id'
+        'sub_customer_id': 'sub_customer_id',
+        'trade_id': 'trade_id'
     }
 
-    def __init__(self, x_language=None, cycle=None, cloud_service_type=None, region=None, charge_mode=None, bill_type=None, offset=0, limit=10, resource_id=None, enterprise_project_id=None, include_zero_record=None, method=None, sub_customer_id=None):
+    def __init__(self, x_language=None, cycle=None, cloud_service_type=None, region=None, charge_mode=None, bill_type=None, offset=0, limit=10, resource_id=None, enterprise_project_id=None, include_zero_record=None, method=None, sub_customer_id=None, trade_id=None):
         """ListCustomerselfResourceRecordsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -72,6 +74,7 @@ class ListCustomerselfResourceRecordsRequest:
         self._include_zero_record = None
         self._method = None
         self._sub_customer_id = None
+        self._trade_id = None
         self.discriminator = None
 
         if x_language is not None:
@@ -98,6 +101,8 @@ class ListCustomerselfResourceRecordsRequest:
             self.method = method
         if sub_customer_id is not None:
             self.sub_customer_id = sub_customer_id
+        if trade_id is not None:
+            self.trade_id = trade_id
 
     @property
     def x_language(self):
@@ -358,6 +363,26 @@ class ListCustomerselfResourceRecordsRequest:
         :type: str
         """
         self._sub_customer_id = sub_customer_id
+
+    @property
+    def trade_id(self):
+        """Gets the trade_id of this ListCustomerselfResourceRecordsRequest.
+
+
+        :return: The trade_id of this ListCustomerselfResourceRecordsRequest.
+        :rtype: str
+        """
+        return self._trade_id
+
+    @trade_id.setter
+    def trade_id(self, trade_id):
+        """Sets the trade_id of this ListCustomerselfResourceRecordsRequest.
+
+
+        :param trade_id: The trade_id of this ListCustomerselfResourceRecordsRequest.
+        :type: str
+        """
+        self._trade_id = trade_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

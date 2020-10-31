@@ -89,6 +89,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -103,6 +105,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='AssociateCertificateV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -153,6 +156,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -167,6 +172,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='AssociateDomainV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -215,6 +221,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -229,6 +237,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='AssociateSignatureKeyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -277,6 +286,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -291,6 +302,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateEnvironmentV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -339,6 +351,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -353,6 +367,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateEnvironmentVariableV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -401,6 +416,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -415,6 +432,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateRequestThrottlingPolicyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -463,6 +481,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -477,6 +497,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateSignatureKeyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -527,6 +548,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -541,6 +564,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateSpecialThrottlingConfigurationV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -589,6 +613,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -601,6 +627,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteEnvironmentV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -649,6 +676,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -661,6 +690,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteEnvironmentVariableV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -709,6 +739,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -721,6 +753,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteRequestThrottlingPolicyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -769,6 +802,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -781,6 +816,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteSignatureKeyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -831,6 +867,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -843,6 +881,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteSpecialThrottlingConfigurationV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -895,6 +934,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -907,6 +948,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DisassociateCertificateV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -957,6 +999,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -969,6 +1013,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DisassociateDomainV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1017,6 +1062,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1029,6 +1076,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DisassociateSignatureKeyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1075,6 +1123,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1087,6 +1137,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListApiGroupsQuantitiesV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1133,6 +1184,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1145,6 +1198,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListApiQuantitiesV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1205,6 +1259,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1217,6 +1273,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListApisBindedToSignatureKeyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1277,6 +1334,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1289,6 +1348,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListApisNotBoundWithSignatureKeyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1335,6 +1395,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1347,6 +1409,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListAppQuantitiesV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1405,6 +1468,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1417,6 +1482,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListEnvironmentVariablesV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1469,6 +1535,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1481,6 +1549,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListEnvironmentsV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1537,6 +1606,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1549,6 +1620,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListRequestThrottlingPolicyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1607,6 +1679,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1619,6 +1693,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSignatureKeysBindedToApiV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1675,6 +1750,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1687,6 +1764,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSignatureKeysV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1743,6 +1821,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1755,6 +1835,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSpecialThrottlingConfigurationsV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1807,6 +1888,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1819,6 +1902,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowDetailsOfDomainNameCertificateV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1867,6 +1951,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1879,6 +1965,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowDetailsOfEnvironmentVariableV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1927,6 +2014,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -1939,6 +2028,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowDetailsOfRequestThrottlingPolicyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -1989,6 +2079,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2003,6 +2095,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateEnvironmentV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2053,6 +2146,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2067,6 +2162,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateRequestThrottlingPolicyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2117,6 +2213,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2131,6 +2229,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateSignatureKeyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2183,6 +2282,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2197,6 +2298,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateSpecialThrottlingConfigurationV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2245,6 +2347,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2259,6 +2363,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='AssociateRequestThrottlingPolicyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2309,6 +2414,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2323,6 +2430,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='BatchDisassociateThrottlingPolicyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2371,6 +2479,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2385,6 +2495,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateApiGroupV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2433,6 +2544,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2447,6 +2560,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateApiV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2495,6 +2609,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -2509,6 +2625,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateOrDeletePublishRecordForApiV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2557,6 +2674,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2569,6 +2688,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteApiGroupV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2617,6 +2737,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2629,6 +2751,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteApiV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2677,6 +2800,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2689,6 +2814,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DisassociateRequestThrottlingPolicyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2745,6 +2871,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2757,6 +2885,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListApiGroupsV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2817,6 +2946,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2829,6 +2960,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListApisBindedToRequestThrottlingPolicyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2889,6 +3021,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2901,6 +3035,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListApisUnbindedToRequestThrottlingPolicyV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -2971,6 +3106,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -2983,6 +3120,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListApisV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3041,6 +3179,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3053,6 +3193,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListRequestThrottlingPoliciesBindedToApiV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3101,6 +3242,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3113,6 +3256,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowDetailsOfApiGroupV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3161,6 +3305,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3173,6 +3319,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowDetailsOfApiV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3223,6 +3370,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -3237,6 +3386,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateApiGroupV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3287,6 +3437,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -3301,6 +3453,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateApiV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3349,6 +3502,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3361,6 +3516,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CancelingAuthorizationV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3409,6 +3565,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3421,6 +3579,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CheckAppV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3469,6 +3628,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -3483,6 +3644,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateAnAppV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3531,6 +3693,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -3545,6 +3709,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateAuthorizingAppsV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3593,6 +3758,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3605,6 +3772,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteAppV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3667,6 +3835,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3679,6 +3849,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListApisBindedToAppV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3739,6 +3910,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3751,6 +3924,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListApisUnbindedToAppV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3809,6 +3983,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3821,6 +3997,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListAppsBindedToApiV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3883,6 +4060,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -3895,6 +4074,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListAppsV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -3945,6 +4125,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -3959,6 +4141,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ResettingAppSecretV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4007,6 +4190,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -4019,6 +4204,7 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowDetailsOfAppV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -4069,6 +4255,8 @@ class ApigAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -4083,14 +4271,15 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateAppV2Response',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
-                 request_type=None):
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
+                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -4104,8 +4293,10 @@ class ApigAsyncClient(Client):
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
         :param auth_settings list: Auth Settings names for the request.
         :param response_type: Response data type.
+        :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
             header, and post parameters.
+        :param request_type: Request data type.
         :return:
             Return the response directly.
         """
@@ -4118,6 +4309,7 @@ class ApigAsyncClient(Client):
             body=body,
             post_params=post_params,
             response_type=response_type,
+            response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
 	    async_request=True)

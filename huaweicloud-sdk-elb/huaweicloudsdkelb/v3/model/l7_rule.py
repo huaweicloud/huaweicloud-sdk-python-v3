@@ -230,7 +230,7 @@ class L7Rule:
     def invert(self):
         """Gets the invert of this L7Rule.
 
-        是否反向匹配，true/false。 使用说明：固定为false。该字段能更新但不会生效。
+        是否反向匹配。 使用说明：固定为false。该字段能更新但不会生效。
 
         :return: The invert of this L7Rule.
         :rtype: bool
@@ -241,7 +241,7 @@ class L7Rule:
     def invert(self, invert):
         """Sets the invert of this L7Rule.
 
-        是否反向匹配，true/false。 使用说明：固定为false。该字段能更新但不会生效。
+        是否反向匹配。 使用说明：固定为false。该字段能更新但不会生效。
 
         :param invert: The invert of this L7Rule.
         :type: bool

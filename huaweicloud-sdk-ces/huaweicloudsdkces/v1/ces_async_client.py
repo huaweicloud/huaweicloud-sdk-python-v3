@@ -83,6 +83,8 @@ class CesAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -97,6 +99,7 @@ class CesAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='BatchListMetricDataResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -143,6 +146,8 @@ class CesAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -157,6 +162,70 @@ class CesAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateAlarmResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_alarm_template_async(self, request):
+        """创建自定义告警模板
+
+        批量查询指定时间范围内指定指标的指定粒度的监控数据，目前最多支持10指标的批量查询。
+
+        :param CreateAlarmTemplateRequest request
+        :return: CreateAlarmTemplateResponse
+        """
+        return self.create_alarm_template_with_http_info(request)
+
+    def create_alarm_template_with_http_info(self, request):
+        """创建自定义告警模板
+
+        批量查询指定时间范围内指定指标的指定粒度的监控数据，目前最多支持10指标的批量查询。
+
+        :param CreateAlarmTemplateRequest request
+        :return: CreateAlarmTemplateResponse
+        """
+
+        all_params = ['create_alarm_template_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/V1.0/{project_id}/alarm-template',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateAlarmTemplateResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -203,6 +272,8 @@ class CesAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -217,6 +288,7 @@ class CesAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateEventsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -263,6 +335,8 @@ class CesAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -277,6 +351,7 @@ class CesAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateMetricDataResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -323,6 +398,8 @@ class CesAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -335,6 +412,216 @@ class CesAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteAlarmResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_alarm_template_async(self, request):
+        """删除自定义告警模板
+
+        根据ID删除自定义告警模板。
+
+        :param DeleteAlarmTemplateRequest request
+        :return: DeleteAlarmTemplateResponse
+        """
+        return self.delete_alarm_template_with_http_info(request)
+
+    def delete_alarm_template_with_http_info(self, request):
+        """删除自定义告警模板
+
+        根据ID删除自定义告警模板。
+
+        :param DeleteAlarmTemplateRequest request
+        :return: DeleteAlarmTemplateResponse
+        """
+
+        all_params = ['template_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/V1.0/{project_id}/alarm-template/{template_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteAlarmTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_alarm_histories_async(self, request):
+        """查询告警历史
+
+        查询告警历史列表。
+
+        :param ListAlarmHistoriesRequest request
+        :return: ListAlarmHistoriesResponse
+        """
+        return self.list_alarm_histories_with_http_info(request)
+
+    def list_alarm_histories_with_http_info(self, request):
+        """查询告警历史
+
+        查询告警历史列表。
+
+        :param ListAlarmHistoriesRequest request
+        :return: ListAlarmHistoriesResponse
+        """
+
+        all_params = ['group_id', 'alarm_id', 'alarm_name', 'alarm_status', 'alarm_level', 'namespace', '_from', 'to', 'start', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'alarm_id' in local_var_params:
+            query_params.append(('alarm_id', local_var_params['alarm_id']))
+        if 'alarm_name' in local_var_params:
+            query_params.append(('alarm_name', local_var_params['alarm_name']))
+        if 'alarm_status' in local_var_params:
+            query_params.append(('alarm_status', local_var_params['alarm_status']))
+        if 'alarm_level' in local_var_params:
+            query_params.append(('alarm_level', local_var_params['alarm_level']))
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'start' in local_var_params:
+            query_params.append(('start', local_var_params['start']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/V1.0/{project_id}/alarm-histories',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAlarmHistoriesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_alarm_templates_async(self, request):
+        """查询自定义告警模板列表
+
+        查询自定义告警模板列表
+
+        :param ListAlarmTemplatesRequest request
+        :return: ListAlarmTemplatesResponse
+        """
+        return self.list_alarm_templates_with_http_info(request)
+
+    def list_alarm_templates_with_http_info(self, request):
+        """查询自定义告警模板列表
+
+        查询自定义告警模板列表
+
+        :param ListAlarmTemplatesRequest request
+        :return: ListAlarmTemplatesResponse
+        """
+
+        all_params = ['alarm_template_id', 'namespace', 'dname', 'start', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'alarm_template_id' in local_var_params:
+            query_params.append(('alarmTemplateId', local_var_params['alarm_template_id']))
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
+        if 'dname' in local_var_params:
+            query_params.append(('dname', local_var_params['dname']))
+        if 'start' in local_var_params:
+            query_params.append(('start', local_var_params['start']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/V1.0/{project_id}/alarm-template',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAlarmTemplatesResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -385,6 +672,8 @@ class CesAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -397,6 +686,7 @@ class CesAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListAlarmsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -457,6 +747,8 @@ class CesAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -469,6 +761,7 @@ class CesAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListMetricsResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -515,6 +808,8 @@ class CesAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -527,6 +822,7 @@ class CesAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowAlarmResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -585,6 +881,8 @@ class CesAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -597,6 +895,7 @@ class CesAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowEventDataResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -659,6 +958,8 @@ class CesAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -671,6 +972,7 @@ class CesAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowMetricDataResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -715,6 +1017,8 @@ class CesAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
 
         auth_settings = []
 
@@ -727,6 +1031,78 @@ class CesAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowQuotasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_resource_group_async(self, request):
+        """查询资源分组下的资源
+
+        根据资源分组ID查询资源分组下的资源。
+
+        :param ShowResourceGroupRequest request
+        :return: ShowResourceGroupResponse
+        """
+        return self.show_resource_group_with_http_info(request)
+
+    def show_resource_group_with_http_info(self, request):
+        """查询资源分组下的资源
+
+        根据资源分组ID查询资源分组下的资源。
+
+        :param ShowResourceGroupRequest request
+        :return: ShowResourceGroupResponse
+        """
+
+        all_params = ['group_id', 'status', 'namespace', 'dname', 'start', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
+        if 'dname' in local_var_params:
+            query_params.append(('dname', local_var_params['dname']))
+        if 'start' in local_var_params:
+            query_params.append(('start', local_var_params['start']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/V1.0/{project_id}/resource-groups/{group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowResourceGroupResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
@@ -775,6 +1151,8 @@ class CesAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
+        response_headers = []
+
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
 
@@ -789,14 +1167,80 @@ class CesAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateAlarmActionResponse',
+            response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None,
-                 body=None, post_params=None, response_type=None, auth_settings=None, collection_formats=None,
-                 request_type=None):
+    def update_alarm_template_async(self, request):
+        """更新自定义告警模板
+
+        更新自定义告警模板。
+
+        :param UpdateAlarmTemplateRequest request
+        :return: UpdateAlarmTemplateResponse
+        """
+        return self.update_alarm_template_with_http_info(request)
+
+    def update_alarm_template_with_http_info(self, request):
+        """更新自定义告警模板
+
+        更新自定义告警模板。
+
+        :param UpdateAlarmTemplateRequest request
+        :return: UpdateAlarmTemplateResponse
+        """
+
+        all_params = ['template_id', 'update_alarm_template_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/V1.0/{project_id}/alarm-template/{template_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateAlarmTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
+                 post_params=None, response_type=None, response_headers=None, auth_settings=None,
+                 collection_formats=None, request_type=None):
         """Makes the HTTP request and returns deserialized data.
 
         :param resource_path: Path to method endpoint.
@@ -810,8 +1254,10 @@ class CesAsyncClient(Client):
             for `application/x-www-form-urlencoded`, `multipart/form-data`.
         :param auth_settings list: Auth Settings names for the request.
         :param response_type: Response data type.
+        :param response_headers: Header should be added to response data.
         :param collection_formats: dict of collection formats for path, query,
             header, and post parameters.
+        :param request_type: Request data type.
         :return:
             Return the response directly.
         """
@@ -824,6 +1270,7 @@ class CesAsyncClient(Client):
             body=body,
             post_params=post_params,
             response_type=response_type,
+            response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
 	    async_request=True)

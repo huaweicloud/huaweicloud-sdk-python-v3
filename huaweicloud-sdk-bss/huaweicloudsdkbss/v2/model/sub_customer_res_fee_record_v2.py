@@ -44,6 +44,7 @@ class SubCustomerResFeeRecordV2:
         'resource_id': 'str',
         'bill_type': 'int',
         'period_type': 'str',
+        'product_spec_desc': 'str',
         'ri_usage': 'float',
         'ri_usage_measure_id': 'int',
         'official_amount': 'float',
@@ -82,6 +83,7 @@ class SubCustomerResFeeRecordV2:
         'resource_id': 'resource_id',
         'bill_type': 'bill_type',
         'period_type': 'period_type',
+        'product_spec_desc': 'product_spec_desc',
         'ri_usage': 'ri_usage',
         'ri_usage_measure_id': 'ri_usage_measure_id',
         'official_amount': 'official_amount',
@@ -98,7 +100,7 @@ class SubCustomerResFeeRecordV2:
         'spec_size_measure_id': 'spec_size_measure_id'
     }
 
-    def __init__(self, effective_time=None, expire_time=None, product_id=None, product_name=None, order_id=None, amount=None, measure_id=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, cloud_service_type=None, region=None, resource_type=None, charge_mode=None, resource_tag=None, resource_name=None, resource_id=None, bill_type=None, period_type=None, ri_usage=None, ri_usage_measure_id=None, official_amount=None, discount_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, spec_size=None, spec_size_measure_id=None):
+    def __init__(self, effective_time=None, expire_time=None, product_id=None, product_name=None, order_id=None, amount=None, measure_id=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, cloud_service_type=None, region=None, resource_type=None, charge_mode=None, resource_tag=None, resource_name=None, resource_id=None, bill_type=None, period_type=None, product_spec_desc=None, ri_usage=None, ri_usage_measure_id=None, official_amount=None, discount_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, spec_size=None, spec_size_measure_id=None):
         """SubCustomerResFeeRecordV2 - a model defined in huaweicloud sdk"""
         
         
@@ -124,6 +126,7 @@ class SubCustomerResFeeRecordV2:
         self._resource_id = None
         self._bill_type = None
         self._period_type = None
+        self._product_spec_desc = None
         self._ri_usage = None
         self._ri_usage_measure_id = None
         self._official_amount = None
@@ -182,6 +185,8 @@ class SubCustomerResFeeRecordV2:
             self.bill_type = bill_type
         if period_type is not None:
             self.period_type = period_type
+        if product_spec_desc is not None:
+            self.product_spec_desc = product_spec_desc
         if ri_usage is not None:
             self.ri_usage = ri_usage
         if ri_usage_measure_id is not None:
@@ -672,6 +677,28 @@ class SubCustomerResFeeRecordV2:
         :type: str
         """
         self._period_type = period_type
+
+    @property
+    def product_spec_desc(self):
+        """Gets the product_spec_desc of this SubCustomerResFeeRecordV2.
+
+        |参数名称：产品规格描述。| |参数约束及描述：产品规格描述，举例为：普通IO|100.0GB。|
+
+        :return: The product_spec_desc of this SubCustomerResFeeRecordV2.
+        :rtype: str
+        """
+        return self._product_spec_desc
+
+    @product_spec_desc.setter
+    def product_spec_desc(self, product_spec_desc):
+        """Sets the product_spec_desc of this SubCustomerResFeeRecordV2.
+
+        |参数名称：产品规格描述。| |参数约束及描述：产品规格描述，举例为：普通IO|100.0GB。|
+
+        :param product_spec_desc: The product_spec_desc of this SubCustomerResFeeRecordV2.
+        :type: str
+        """
+        self._product_spec_desc = product_spec_desc
 
     @property
     def ri_usage(self):

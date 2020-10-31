@@ -50,7 +50,7 @@ class ShowFlavorResponse(SdkResponse):
     def request_id(self):
         """Gets the request_id of this ShowFlavorResponse.
 
-        请求ID。 注：自动生成
+        请求ID。  注：自动生成 。
 
         :return: The request_id of this ShowFlavorResponse.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowFlavorResponse(SdkResponse):
     def request_id(self, request_id):
         """Sets the request_id of this ShowFlavorResponse.
 
-        请求ID。 注：自动生成
+        请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ShowFlavorResponse.
         :type: str

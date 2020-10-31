@@ -29,7 +29,7 @@ class BackupExtendInfo:
         'snapshot_id': 'str',
         'support_lld': 'bool',
         'supported_restore_mode': 'str',
-        'os_images_data': 'list[str]',
+        'os_images_data': 'list[ImageData]',
         'contain_system_disk': 'bool',
         'encrypted': 'bool',
         'system_disk': 'bool'
@@ -225,7 +225,7 @@ class BackupExtendInfo:
         备份注册镜像ID列表
 
         :return: The os_images_data of this BackupExtendInfo.
-        :rtype: list[str]
+        :rtype: list[ImageData]
         """
         return self._os_images_data
 
@@ -236,7 +236,7 @@ class BackupExtendInfo:
         备份注册镜像ID列表
 
         :param os_images_data: The os_images_data of this BackupExtendInfo.
-        :type: list[str]
+        :type: list[ImageData]
         """
         self._os_images_data = os_images_data
 

@@ -23,63 +23,63 @@ class CountPreoccupyIpNumRequest:
     sensitive_list = []
 
     openapi_types = {
-        'l7_flavor_id': 'str',
+        'availability_zone_id': 'list[str]',
         'ip_target_enable': 'bool',
         'ip_version': 'int',
-        'loadbalancer_id': 'str',
-        'availability_zone_id': 'list[str]'
+        'l7_flavor_id': 'str',
+        'loadbalancer_id': 'str'
     }
 
     attribute_map = {
-        'l7_flavor_id': 'l7_flavor_id',
+        'availability_zone_id': 'availability_zone_id',
         'ip_target_enable': 'ip_target_enable',
         'ip_version': 'ip_version',
-        'loadbalancer_id': 'loadbalancer_id',
-        'availability_zone_id': 'availability_zone_id'
+        'l7_flavor_id': 'l7_flavor_id',
+        'loadbalancer_id': 'loadbalancer_id'
     }
 
-    def __init__(self, l7_flavor_id=None, ip_target_enable=False, ip_version=None, loadbalancer_id=None, availability_zone_id=None):
+    def __init__(self, availability_zone_id=None, ip_target_enable=False, ip_version=None, l7_flavor_id=None, loadbalancer_id=None):
         """CountPreoccupyIpNumRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._l7_flavor_id = None
+        self._availability_zone_id = None
         self._ip_target_enable = None
         self._ip_version = None
+        self._l7_flavor_id = None
         self._loadbalancer_id = None
-        self._availability_zone_id = None
         self.discriminator = None
 
-        if l7_flavor_id is not None:
-            self.l7_flavor_id = l7_flavor_id
+        if availability_zone_id is not None:
+            self.availability_zone_id = availability_zone_id
         if ip_target_enable is not None:
             self.ip_target_enable = ip_target_enable
         if ip_version is not None:
             self.ip_version = ip_version
+        if l7_flavor_id is not None:
+            self.l7_flavor_id = l7_flavor_id
         if loadbalancer_id is not None:
             self.loadbalancer_id = loadbalancer_id
-        if availability_zone_id is not None:
-            self.availability_zone_id = availability_zone_id
 
     @property
-    def l7_flavor_id(self):
-        """Gets the l7_flavor_id of this CountPreoccupyIpNumRequest.
+    def availability_zone_id(self):
+        """Gets the availability_zone_id of this CountPreoccupyIpNumRequest.
 
 
-        :return: The l7_flavor_id of this CountPreoccupyIpNumRequest.
-        :rtype: str
+        :return: The availability_zone_id of this CountPreoccupyIpNumRequest.
+        :rtype: list[str]
         """
-        return self._l7_flavor_id
+        return self._availability_zone_id
 
-    @l7_flavor_id.setter
-    def l7_flavor_id(self, l7_flavor_id):
-        """Sets the l7_flavor_id of this CountPreoccupyIpNumRequest.
+    @availability_zone_id.setter
+    def availability_zone_id(self, availability_zone_id):
+        """Sets the availability_zone_id of this CountPreoccupyIpNumRequest.
 
 
-        :param l7_flavor_id: The l7_flavor_id of this CountPreoccupyIpNumRequest.
-        :type: str
+        :param availability_zone_id: The availability_zone_id of this CountPreoccupyIpNumRequest.
+        :type: list[str]
         """
-        self._l7_flavor_id = l7_flavor_id
+        self._availability_zone_id = availability_zone_id
 
     @property
     def ip_target_enable(self):
@@ -122,6 +122,26 @@ class CountPreoccupyIpNumRequest:
         self._ip_version = ip_version
 
     @property
+    def l7_flavor_id(self):
+        """Gets the l7_flavor_id of this CountPreoccupyIpNumRequest.
+
+
+        :return: The l7_flavor_id of this CountPreoccupyIpNumRequest.
+        :rtype: str
+        """
+        return self._l7_flavor_id
+
+    @l7_flavor_id.setter
+    def l7_flavor_id(self, l7_flavor_id):
+        """Sets the l7_flavor_id of this CountPreoccupyIpNumRequest.
+
+
+        :param l7_flavor_id: The l7_flavor_id of this CountPreoccupyIpNumRequest.
+        :type: str
+        """
+        self._l7_flavor_id = l7_flavor_id
+
+    @property
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this CountPreoccupyIpNumRequest.
 
@@ -140,26 +160,6 @@ class CountPreoccupyIpNumRequest:
         :type: str
         """
         self._loadbalancer_id = loadbalancer_id
-
-    @property
-    def availability_zone_id(self):
-        """Gets the availability_zone_id of this CountPreoccupyIpNumRequest.
-
-
-        :return: The availability_zone_id of this CountPreoccupyIpNumRequest.
-        :rtype: list[str]
-        """
-        return self._availability_zone_id
-
-    @availability_zone_id.setter
-    def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this CountPreoccupyIpNumRequest.
-
-
-        :param availability_zone_id: The availability_zone_id of this CountPreoccupyIpNumRequest.
-        :type: list[str]
-        """
-        self._availability_zone_id = availability_zone_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

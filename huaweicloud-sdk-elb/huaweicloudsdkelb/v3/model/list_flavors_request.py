@@ -23,113 +23,53 @@ class ListFlavorsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'marker': 'str',
-        'limit': 'int',
-        'page_reverse': 'bool',
         'id': 'list[str]',
+        'limit': 'int',
+        'marker': 'str',
         'name': 'list[str]',
-        'type': 'list[str]',
-        'shared': 'bool'
+        'page_reverse': 'bool',
+        'shared': 'bool',
+        'type': 'list[str]'
     }
 
     attribute_map = {
-        'marker': 'marker',
-        'limit': 'limit',
-        'page_reverse': 'page_reverse',
         'id': 'id',
+        'limit': 'limit',
+        'marker': 'marker',
         'name': 'name',
-        'type': 'type',
-        'shared': 'shared'
+        'page_reverse': 'page_reverse',
+        'shared': 'shared',
+        'type': 'type'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, type=None, shared=None):
+    def __init__(self, id=None, limit=None, marker=None, name=None, page_reverse=None, shared=None, type=None):
         """ListFlavorsRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._marker = None
-        self._limit = None
-        self._page_reverse = None
         self._id = None
+        self._limit = None
+        self._marker = None
         self._name = None
-        self._type = None
+        self._page_reverse = None
         self._shared = None
+        self._type = None
         self.discriminator = None
 
-        if marker is not None:
-            self.marker = marker
-        if limit is not None:
-            self.limit = limit
-        if page_reverse is not None:
-            self.page_reverse = page_reverse
         if id is not None:
             self.id = id
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
         if name is not None:
             self.name = name
-        if type is not None:
-            self.type = type
+        if page_reverse is not None:
+            self.page_reverse = page_reverse
         if shared is not None:
             self.shared = shared
-
-    @property
-    def marker(self):
-        """Gets the marker of this ListFlavorsRequest.
-
-
-        :return: The marker of this ListFlavorsRequest.
-        :rtype: str
-        """
-        return self._marker
-
-    @marker.setter
-    def marker(self, marker):
-        """Sets the marker of this ListFlavorsRequest.
-
-
-        :param marker: The marker of this ListFlavorsRequest.
-        :type: str
-        """
-        self._marker = marker
-
-    @property
-    def limit(self):
-        """Gets the limit of this ListFlavorsRequest.
-
-
-        :return: The limit of this ListFlavorsRequest.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListFlavorsRequest.
-
-
-        :param limit: The limit of this ListFlavorsRequest.
-        :type: int
-        """
-        self._limit = limit
-
-    @property
-    def page_reverse(self):
-        """Gets the page_reverse of this ListFlavorsRequest.
-
-
-        :return: The page_reverse of this ListFlavorsRequest.
-        :rtype: bool
-        """
-        return self._page_reverse
-
-    @page_reverse.setter
-    def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListFlavorsRequest.
-
-
-        :param page_reverse: The page_reverse of this ListFlavorsRequest.
-        :type: bool
-        """
-        self._page_reverse = page_reverse
+        if type is not None:
+            self.type = type
 
     @property
     def id(self):
@@ -152,6 +92,46 @@ class ListFlavorsRequest:
         self._id = id
 
     @property
+    def limit(self):
+        """Gets the limit of this ListFlavorsRequest.
+
+
+        :return: The limit of this ListFlavorsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListFlavorsRequest.
+
+
+        :param limit: The limit of this ListFlavorsRequest.
+        :type: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListFlavorsRequest.
+
+
+        :return: The marker of this ListFlavorsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListFlavorsRequest.
+
+
+        :param marker: The marker of this ListFlavorsRequest.
+        :type: str
+        """
+        self._marker = marker
+
+    @property
     def name(self):
         """Gets the name of this ListFlavorsRequest.
 
@@ -172,24 +152,24 @@ class ListFlavorsRequest:
         self._name = name
 
     @property
-    def type(self):
-        """Gets the type of this ListFlavorsRequest.
+    def page_reverse(self):
+        """Gets the page_reverse of this ListFlavorsRequest.
 
 
-        :return: The type of this ListFlavorsRequest.
-        :rtype: list[str]
+        :return: The page_reverse of this ListFlavorsRequest.
+        :rtype: bool
         """
-        return self._type
+        return self._page_reverse
 
-    @type.setter
-    def type(self, type):
-        """Sets the type of this ListFlavorsRequest.
+    @page_reverse.setter
+    def page_reverse(self, page_reverse):
+        """Sets the page_reverse of this ListFlavorsRequest.
 
 
-        :param type: The type of this ListFlavorsRequest.
-        :type: list[str]
+        :param page_reverse: The page_reverse of this ListFlavorsRequest.
+        :type: bool
         """
-        self._type = type
+        self._page_reverse = page_reverse
 
     @property
     def shared(self):
@@ -210,6 +190,26 @@ class ListFlavorsRequest:
         :type: bool
         """
         self._shared = shared
+
+    @property
+    def type(self):
+        """Gets the type of this ListFlavorsRequest.
+
+
+        :return: The type of this ListFlavorsRequest.
+        :rtype: list[str]
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ListFlavorsRequest.
+
+
+        :param type: The type of this ListFlavorsRequest.
+        :type: list[str]
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""
