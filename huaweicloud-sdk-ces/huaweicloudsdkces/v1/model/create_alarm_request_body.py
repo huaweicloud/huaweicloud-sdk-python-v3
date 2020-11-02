@@ -25,7 +25,7 @@ class CreateAlarmRequestBody:
     openapi_types = {
         'alarm_name': 'str',
         'alarm_description': 'str',
-        'metric': 'MetricInfoExt',
+        'metric': 'MetricInfoForAlarm',
         'condition': 'Condition',
         'alarm_enabled': 'bool',
         'alarm_action_enabled': 'bool',
@@ -143,7 +143,7 @@ class CreateAlarmRequestBody:
 
 
         :return: The metric of this CreateAlarmRequestBody.
-        :rtype: MetricInfoExt
+        :rtype: MetricInfoForAlarm
         """
         return self._metric
 
@@ -153,7 +153,7 @@ class CreateAlarmRequestBody:
 
 
         :param metric: The metric of this CreateAlarmRequestBody.
-        :type: MetricInfoExt
+        :type: MetricInfoForAlarm
         """
         self._metric = metric
 
@@ -247,7 +247,7 @@ class CreateAlarmRequestBody:
     def alarm_type(self):
         """Gets the alarm_type of this CreateAlarmRequestBody.
 
-        告警类型。 仅针对事件告警的参数，枚举类型：EVENT.SYS或者EVENT.CUSTOM
+        告警类型，支持的枚举类型：EVENT.SYS：针对系统事件的告警规则；EVENT.CUSTOM：针对自定义事件的告警规则；RESOURCE_GROUP：针对资源分组的告警规则。
 
         :return: The alarm_type of this CreateAlarmRequestBody.
         :rtype: str
@@ -258,7 +258,7 @@ class CreateAlarmRequestBody:
     def alarm_type(self, alarm_type):
         """Sets the alarm_type of this CreateAlarmRequestBody.
 
-        告警类型。 仅针对事件告警的参数，枚举类型：EVENT.SYS或者EVENT.CUSTOM
+        告警类型，支持的枚举类型：EVENT.SYS：针对系统事件的告警规则；EVENT.CUSTOM：针对自定义事件的告警规则；RESOURCE_GROUP：针对资源分组的告警规则。
 
         :param alarm_type: The alarm_type of this CreateAlarmRequestBody.
         :type: str

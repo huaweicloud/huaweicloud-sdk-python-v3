@@ -23,7 +23,7 @@ class UpdateListenerResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'listener': 'ListenerV2Resp'
+        'listener': 'ListenerResp'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class UpdateListenerResponse(SdkResponse):
 
 
         :return: The listener of this UpdateListenerResponse.
-        :rtype: ListenerV2Resp
+        :rtype: ListenerResp
         """
         return self._listener
 
@@ -57,7 +57,7 @@ class UpdateListenerResponse(SdkResponse):
 
 
         :param listener: The listener of this UpdateListenerResponse.
-        :type: ListenerV2Resp
+        :type: ListenerResp
         """
         self._listener = listener
 

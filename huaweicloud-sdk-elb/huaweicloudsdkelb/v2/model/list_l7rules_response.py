@@ -23,7 +23,7 @@ class ListL7rulesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'rules': 'list[L7ruleV2Resp]'
+        'rules': 'list[L7ruleResp]'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class ListL7rulesResponse(SdkResponse):
         转发规则对象的列表
 
         :return: The rules of this ListL7rulesResponse.
-        :rtype: list[L7ruleV2Resp]
+        :rtype: list[L7ruleResp]
         """
         return self._rules
 
@@ -59,7 +59,7 @@ class ListL7rulesResponse(SdkResponse):
         转发规则对象的列表
 
         :param rules: The rules of this ListL7rulesResponse.
-        :type: list[L7ruleV2Resp]
+        :type: list[L7ruleResp]
         """
         self._rules = rules
 

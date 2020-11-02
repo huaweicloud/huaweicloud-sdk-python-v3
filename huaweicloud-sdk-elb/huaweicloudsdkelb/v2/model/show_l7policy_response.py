@@ -23,7 +23,7 @@ class ShowL7policyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'l7policy': 'L7policyV2Resp'
+        'l7policy': 'L7policyResp'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ShowL7policyResponse(SdkResponse):
 
 
         :return: The l7policy of this ShowL7policyResponse.
-        :rtype: L7policyV2Resp
+        :rtype: L7policyResp
         """
         return self._l7policy
 
@@ -57,7 +57,7 @@ class ShowL7policyResponse(SdkResponse):
 
 
         :param l7policy: The l7policy of this ShowL7policyResponse.
-        :type: L7policyV2Resp
+        :type: L7policyResp
         """
         self._l7policy = l7policy
 

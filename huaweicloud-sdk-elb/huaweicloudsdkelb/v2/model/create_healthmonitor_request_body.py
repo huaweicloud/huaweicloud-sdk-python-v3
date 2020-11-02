@@ -23,7 +23,7 @@ class CreateHealthmonitorRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'healthmonitor': 'CreateHealthmonitorV2Req'
+        'healthmonitor': 'CreateHealthmonitorReq'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class CreateHealthmonitorRequestBody:
 
 
         :return: The healthmonitor of this CreateHealthmonitorRequestBody.
-        :rtype: CreateHealthmonitorV2Req
+        :rtype: CreateHealthmonitorReq
         """
         return self._healthmonitor
 
@@ -56,7 +56,7 @@ class CreateHealthmonitorRequestBody:
 
 
         :param healthmonitor: The healthmonitor of this CreateHealthmonitorRequestBody.
-        :type: CreateHealthmonitorV2Req
+        :type: CreateHealthmonitorReq
         """
         self._healthmonitor = healthmonitor
 

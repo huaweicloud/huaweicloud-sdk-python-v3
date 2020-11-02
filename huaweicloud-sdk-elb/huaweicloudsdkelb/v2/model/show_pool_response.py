@@ -23,7 +23,7 @@ class ShowPoolResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'pool': 'PoolV2Resp'
+        'pool': 'PoolResp'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ShowPoolResponse(SdkResponse):
 
 
         :return: The pool of this ShowPoolResponse.
-        :rtype: PoolV2Resp
+        :rtype: PoolResp
         """
         return self._pool
 
@@ -57,7 +57,7 @@ class ShowPoolResponse(SdkResponse):
 
 
         :param pool: The pool of this ShowPoolResponse.
-        :type: PoolV2Resp
+        :type: PoolResp
         """
         self._pool = pool
 

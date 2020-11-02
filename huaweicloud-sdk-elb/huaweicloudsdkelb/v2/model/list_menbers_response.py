@@ -23,7 +23,7 @@ class ListMenbersResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'members': 'list[MemberV2Resp]'
+        'members': 'list[MemberResp]'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class ListMenbersResponse(SdkResponse):
         后端云服务器对象的列表
 
         :return: The members of this ListMenbersResponse.
-        :rtype: list[MemberV2Resp]
+        :rtype: list[MemberResp]
         """
         return self._members
 
@@ -59,7 +59,7 @@ class ListMenbersResponse(SdkResponse):
         后端云服务器对象的列表
 
         :param members: The members of this ListMenbersResponse.
-        :type: list[MemberV2Resp]
+        :type: list[MemberResp]
         """
         self._members = members
 

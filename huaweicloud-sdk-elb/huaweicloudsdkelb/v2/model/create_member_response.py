@@ -23,7 +23,7 @@ class CreateMemberResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'member': 'MemberV2Resp'
+        'member': 'MemberResp'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class CreateMemberResponse(SdkResponse):
 
 
         :return: The member of this CreateMemberResponse.
-        :rtype: MemberV2Resp
+        :rtype: MemberResp
         """
         return self._member
 
@@ -57,7 +57,7 @@ class CreateMemberResponse(SdkResponse):
 
 
         :param member: The member of this CreateMemberResponse.
-        :type: MemberV2Resp
+        :type: MemberResp
         """
         self._member = member
 

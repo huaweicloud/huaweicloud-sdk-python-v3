@@ -23,7 +23,7 @@ class ShowLoadbalancersStatusResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'statuses': 'StatusV2Resp'
+        'statuses': 'StatusResp'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ShowLoadbalancersStatusResponse(SdkResponse):
 
 
         :return: The statuses of this ShowLoadbalancersStatusResponse.
-        :rtype: StatusV2Resp
+        :rtype: StatusResp
         """
         return self._statuses
 
@@ -57,7 +57,7 @@ class ShowLoadbalancersStatusResponse(SdkResponse):
 
 
         :param statuses: The statuses of this ShowLoadbalancersStatusResponse.
-        :type: StatusV2Resp
+        :type: StatusResp
         """
         self._statuses = statuses
 

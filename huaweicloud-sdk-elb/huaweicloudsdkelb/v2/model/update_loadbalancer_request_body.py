@@ -23,7 +23,7 @@ class UpdateLoadbalancerRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'loadbalancer': 'UpdateLoadbalancerV2Req'
+        'loadbalancer': 'UpdateLoadbalancerReq'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class UpdateLoadbalancerRequestBody:
 
 
         :return: The loadbalancer of this UpdateLoadbalancerRequestBody.
-        :rtype: UpdateLoadbalancerV2Req
+        :rtype: UpdateLoadbalancerReq
         """
         return self._loadbalancer
 
@@ -56,7 +56,7 @@ class UpdateLoadbalancerRequestBody:
 
 
         :param loadbalancer: The loadbalancer of this UpdateLoadbalancerRequestBody.
-        :type: UpdateLoadbalancerV2Req
+        :type: UpdateLoadbalancerReq
         """
         self._loadbalancer = loadbalancer
 

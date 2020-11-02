@@ -23,7 +23,7 @@ class CreateHealthmonitorResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'healthmonitor': 'HealthmonitorV2Resp'
+        'healthmonitor': 'HealthmonitorResp'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class CreateHealthmonitorResponse(SdkResponse):
 
 
         :return: The healthmonitor of this CreateHealthmonitorResponse.
-        :rtype: HealthmonitorV2Resp
+        :rtype: HealthmonitorResp
         """
         return self._healthmonitor
 
@@ -57,7 +57,7 @@ class CreateHealthmonitorResponse(SdkResponse):
 
 
         :param healthmonitor: The healthmonitor of this CreateHealthmonitorResponse.
-        :type: HealthmonitorV2Resp
+        :type: HealthmonitorResp
         """
         self._healthmonitor = healthmonitor
 

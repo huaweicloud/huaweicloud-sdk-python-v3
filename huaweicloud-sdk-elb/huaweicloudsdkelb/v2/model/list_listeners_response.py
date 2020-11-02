@@ -23,7 +23,7 @@ class ListListenersResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'listeners': 'list[ListenerV2Resp]'
+        'listeners': 'list[ListenerResp]'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class ListListenersResponse(SdkResponse):
         监听器对象列表
 
         :return: The listeners of this ListListenersResponse.
-        :rtype: list[ListenerV2Resp]
+        :rtype: list[ListenerResp]
         """
         return self._listeners
 
@@ -59,7 +59,7 @@ class ListListenersResponse(SdkResponse):
         监听器对象列表
 
         :param listeners: The listeners of this ListListenersResponse.
-        :type: list[ListenerV2Resp]
+        :type: list[ListenerResp]
         """
         self._listeners = listeners
 

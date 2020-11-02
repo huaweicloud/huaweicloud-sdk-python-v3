@@ -23,7 +23,7 @@ class UpdatePoolRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'pool': 'UpdatePoolV2Req'
+        'pool': 'UpdatePoolReq'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class UpdatePoolRequestBody:
 
 
         :return: The pool of this UpdatePoolRequestBody.
-        :rtype: UpdatePoolV2Req
+        :rtype: UpdatePoolReq
         """
         return self._pool
 
@@ -56,7 +56,7 @@ class UpdatePoolRequestBody:
 
 
         :param pool: The pool of this UpdatePoolRequestBody.
-        :type: UpdatePoolV2Req
+        :type: UpdatePoolReq
         """
         self._pool = pool
 

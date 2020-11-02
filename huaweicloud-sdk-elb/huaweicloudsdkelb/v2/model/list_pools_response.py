@@ -23,7 +23,7 @@ class ListPoolsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'pools': 'list[PoolV2Resp]'
+        'pools': 'list[PoolResp]'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class ListPoolsResponse(SdkResponse):
         后端云服务器对象组列表
 
         :return: The pools of this ListPoolsResponse.
-        :rtype: list[PoolV2Resp]
+        :rtype: list[PoolResp]
         """
         return self._pools
 
@@ -59,7 +59,7 @@ class ListPoolsResponse(SdkResponse):
         后端云服务器对象组列表
 
         :param pools: The pools of this ListPoolsResponse.
-        :type: list[PoolV2Resp]
+        :type: list[PoolResp]
         """
         self._pools = pools
 

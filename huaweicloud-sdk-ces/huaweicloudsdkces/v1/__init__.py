@@ -46,10 +46,10 @@ from huaweicloudsdkces.v1.model.list_alarms_response import ListAlarmsResponse
 from huaweicloudsdkces.v1.model.list_metrics_request import ListMetricsRequest
 from huaweicloudsdkces.v1.model.list_metrics_response import ListMetricsResponse
 from huaweicloudsdkces.v1.model.meta_data import MetaData
+from huaweicloudsdkces.v1.model.meta_data_for_alarm_history import MetaDataForAlarmHistory
 from huaweicloudsdkces.v1.model.metric_alarms import MetricAlarms
 from huaweicloudsdkces.v1.model.metric_data_item import MetricDataItem
 from huaweicloudsdkces.v1.model.metric_info import MetricInfo
-from huaweicloudsdkces.v1.model.metric_info_ext import MetricInfoExt
 from huaweicloudsdkces.v1.model.metric_info_for_alarm import MetricInfoForAlarm
 from huaweicloudsdkces.v1.model.metric_info_list import MetricInfoList
 from huaweicloudsdkces.v1.model.metrics_dimension import MetricsDimension

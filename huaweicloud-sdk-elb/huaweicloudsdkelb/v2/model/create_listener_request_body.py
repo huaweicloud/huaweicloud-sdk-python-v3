@@ -23,7 +23,7 @@ class CreateListenerRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'listener': 'CreateListenerV2Req'
+        'listener': 'CreateListenerReq'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class CreateListenerRequestBody:
 
 
         :return: The listener of this CreateListenerRequestBody.
-        :rtype: CreateListenerV2Req
+        :rtype: CreateListenerReq
         """
         return self._listener
 
@@ -56,7 +56,7 @@ class CreateListenerRequestBody:
 
 
         :param listener: The listener of this CreateListenerRequestBody.
-        :type: CreateListenerV2Req
+        :type: CreateListenerReq
         """
         self._listener = listener
 

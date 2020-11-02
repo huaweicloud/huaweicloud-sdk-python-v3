@@ -23,7 +23,7 @@ class ListCertificatesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'certificates': 'CertificateV2Resp',
+        'certificates': 'CertificateResp',
         'instance_num': 'int'
     }
 
@@ -52,7 +52,7 @@ class ListCertificatesResponse(SdkResponse):
 
 
         :return: The certificates of this ListCertificatesResponse.
-        :rtype: CertificateV2Resp
+        :rtype: CertificateResp
         """
         return self._certificates
 
@@ -62,7 +62,7 @@ class ListCertificatesResponse(SdkResponse):
 
 
         :param certificates: The certificates of this ListCertificatesResponse.
-        :type: CertificateV2Resp
+        :type: CertificateResp
         """
         self._certificates = certificates
 

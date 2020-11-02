@@ -23,7 +23,7 @@ class UpdateL7ruleRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'rule': 'UpdateL7ruleV2Req'
+        'rule': 'UpdateL7ruleReq'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class UpdateL7ruleRequestBody:
 
 
         :return: The rule of this UpdateL7ruleRequestBody.
-        :rtype: UpdateL7ruleV2Req
+        :rtype: UpdateL7ruleReq
         """
         return self._rule
 
@@ -56,7 +56,7 @@ class UpdateL7ruleRequestBody:
 
 
         :param rule: The rule of this UpdateL7ruleRequestBody.
-        :type: UpdateL7ruleV2Req
+        :type: UpdateL7ruleReq
         """
         self._rule = rule
 

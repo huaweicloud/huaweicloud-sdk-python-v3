@@ -24,7 +24,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
 
     openapi_types = {
         'alarm_histories': 'list[AlarmHistoryInfo]',
-        'meta_data': 'MetaData'
+        'meta_data': 'MetaDataForAlarmHistory'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
 
 
         :return: The meta_data of this ListAlarmHistoriesResponse.
-        :rtype: MetaData
+        :rtype: MetaDataForAlarmHistory
         """
         return self._meta_data
 
@@ -84,7 +84,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
 
 
         :param meta_data: The meta_data of this ListAlarmHistoriesResponse.
-        :type: MetaData
+        :type: MetaDataForAlarmHistory
         """
         self._meta_data = meta_data
 

@@ -23,7 +23,7 @@ class ListLoadbalancersResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'loadbalancers': 'list[LoadbalancerV2Resp]'
+        'loadbalancers': 'list[LoadbalancerResp]'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class ListLoadbalancersResponse(SdkResponse):
         负载均衡器对象列表
 
         :return: The loadbalancers of this ListLoadbalancersResponse.
-        :rtype: list[LoadbalancerV2Resp]
+        :rtype: list[LoadbalancerResp]
         """
         return self._loadbalancers
 
@@ -59,7 +59,7 @@ class ListLoadbalancersResponse(SdkResponse):
         负载均衡器对象列表
 
         :param loadbalancers: The loadbalancers of this ListLoadbalancersResponse.
-        :type: list[LoadbalancerV2Resp]
+        :type: list[LoadbalancerResp]
         """
         self._loadbalancers = loadbalancers
 

@@ -23,42 +23,42 @@ class CreateL7ruleRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'l7rule': 'CreateL7ruleV2Req'
+        'rule': 'CreateL7ruleReq'
     }
 
     attribute_map = {
-        'l7rule': 'l7rule'
+        'rule': 'rule'
     }
 
-    def __init__(self, l7rule=None):
+    def __init__(self, rule=None):
         """CreateL7ruleRequestBody - a model defined in huaweicloud sdk"""
         
         
 
-        self._l7rule = None
+        self._rule = None
         self.discriminator = None
 
-        self.l7rule = l7rule
+        self.rule = rule
 
     @property
-    def l7rule(self):
-        """Gets the l7rule of this CreateL7ruleRequestBody.
+    def rule(self):
+        """Gets the rule of this CreateL7ruleRequestBody.
 
 
-        :return: The l7rule of this CreateL7ruleRequestBody.
-        :rtype: CreateL7ruleV2Req
+        :return: The rule of this CreateL7ruleRequestBody.
+        :rtype: CreateL7ruleReq
         """
-        return self._l7rule
+        return self._rule
 
-    @l7rule.setter
-    def l7rule(self, l7rule):
-        """Sets the l7rule of this CreateL7ruleRequestBody.
+    @rule.setter
+    def rule(self, rule):
+        """Sets the rule of this CreateL7ruleRequestBody.
 
 
-        :param l7rule: The l7rule of this CreateL7ruleRequestBody.
-        :type: CreateL7ruleV2Req
+        :param rule: The rule of this CreateL7ruleRequestBody.
+        :type: CreateL7ruleReq
         """
-        self._l7rule = l7rule
+        self._rule = rule
 
     def to_dict(self):
         """Returns the model properties as a dict"""

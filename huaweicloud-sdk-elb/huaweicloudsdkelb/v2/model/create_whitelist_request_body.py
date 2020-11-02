@@ -23,7 +23,7 @@ class CreateWhitelistRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'whitelist': 'CreateWhitelistV2Req'
+        'whitelist': 'CreateWhitelistReq'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class CreateWhitelistRequestBody:
 
 
         :return: The whitelist of this CreateWhitelistRequestBody.
-        :rtype: CreateWhitelistV2Req
+        :rtype: CreateWhitelistReq
         """
         return self._whitelist
 
@@ -56,7 +56,7 @@ class CreateWhitelistRequestBody:
 
 
         :param whitelist: The whitelist of this CreateWhitelistRequestBody.
-        :type: CreateWhitelistV2Req
+        :type: CreateWhitelistReq
         """
         self._whitelist = whitelist
 

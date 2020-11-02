@@ -23,7 +23,7 @@ class ListHealthmonitorsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'healthmonitors': 'list[HealthmonitorV2Resp]'
+        'healthmonitors': 'list[HealthmonitorResp]'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class ListHealthmonitorsResponse(SdkResponse):
         健康检查对象的列表
 
         :return: The healthmonitors of this ListHealthmonitorsResponse.
-        :rtype: list[HealthmonitorV2Resp]
+        :rtype: list[HealthmonitorResp]
         """
         return self._healthmonitors
 
@@ -59,7 +59,7 @@ class ListHealthmonitorsResponse(SdkResponse):
         健康检查对象的列表
 
         :param healthmonitors: The healthmonitors of this ListHealthmonitorsResponse.
-        :type: list[HealthmonitorV2Resp]
+        :type: list[HealthmonitorResp]
         """
         self._healthmonitors = healthmonitors
 

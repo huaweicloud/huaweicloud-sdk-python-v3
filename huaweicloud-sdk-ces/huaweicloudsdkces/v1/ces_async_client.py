@@ -171,7 +171,7 @@ class CesAsyncClient(Client):
     def create_alarm_template_async(self, request):
         """创建自定义告警模板
 
-        批量查询指定时间范围内指定指标的指定粒度的监控数据，目前最多支持10指标的批量查询。
+        创建自定义告警模板。
 
         :param CreateAlarmTemplateRequest request
         :return: CreateAlarmTemplateResponse
@@ -181,7 +181,7 @@ class CesAsyncClient(Client):
     def create_alarm_template_with_http_info(self, request):
         """创建自定义告警模板
 
-        批量查询指定时间范围内指定指标的指定粒度的监控数据，目前最多支持10指标的批量查询。
+        创建自定义告警模板。
 
         :param CreateAlarmTemplateRequest request
         :return: CreateAlarmTemplateResponse

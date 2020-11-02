@@ -23,7 +23,7 @@ class ShowWhitelistResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'whitelist': 'WhitelistV2Resp'
+        'whitelist': 'WhitelistResp'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ShowWhitelistResponse(SdkResponse):
 
 
         :return: The whitelist of this ShowWhitelistResponse.
-        :rtype: WhitelistV2Resp
+        :rtype: WhitelistResp
         """
         return self._whitelist
 
@@ -57,7 +57,7 @@ class ShowWhitelistResponse(SdkResponse):
 
 
         :param whitelist: The whitelist of this ShowWhitelistResponse.
-        :type: WhitelistV2Resp
+        :type: WhitelistResp
         """
         self._whitelist = whitelist
 

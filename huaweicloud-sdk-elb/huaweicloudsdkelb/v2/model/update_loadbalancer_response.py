@@ -23,7 +23,7 @@ class UpdateLoadbalancerResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'loadbalancer': 'LoadbalancerV2Resp'
+        'loadbalancer': 'LoadbalancerResp'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class UpdateLoadbalancerResponse(SdkResponse):
 
 
         :return: The loadbalancer of this UpdateLoadbalancerResponse.
-        :rtype: LoadbalancerV2Resp
+        :rtype: LoadbalancerResp
         """
         return self._loadbalancer
 
@@ -57,7 +57,7 @@ class UpdateLoadbalancerResponse(SdkResponse):
 
 
         :param loadbalancer: The loadbalancer of this UpdateLoadbalancerResponse.
-        :type: LoadbalancerV2Resp
+        :type: LoadbalancerResp
         """
         self._loadbalancer = loadbalancer
 

@@ -23,7 +23,7 @@ class CreateMemberRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'member': 'CreateMemberV2Req'
+        'member': 'CreateMemberReq'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class CreateMemberRequestBody:
 
 
         :return: The member of this CreateMemberRequestBody.
-        :rtype: CreateMemberV2Req
+        :rtype: CreateMemberReq
         """
         return self._member
 
@@ -56,7 +56,7 @@ class CreateMemberRequestBody:
 
 
         :param member: The member of this CreateMemberRequestBody.
-        :type: CreateMemberV2Req
+        :type: CreateMemberReq
         """
         self._member = member
 

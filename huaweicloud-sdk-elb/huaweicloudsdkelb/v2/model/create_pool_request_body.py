@@ -23,7 +23,7 @@ class CreatePoolRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'pool': 'CreatePoolV2Req'
+        'pool': 'CreatePoolReq'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class CreatePoolRequestBody:
 
 
         :return: The pool of this CreatePoolRequestBody.
-        :rtype: CreatePoolV2Req
+        :rtype: CreatePoolReq
         """
         return self._pool
 
@@ -56,7 +56,7 @@ class CreatePoolRequestBody:
 
 
         :param pool: The pool of this CreatePoolRequestBody.
-        :type: CreatePoolV2Req
+        :type: CreatePoolReq
         """
         self._pool = pool
 

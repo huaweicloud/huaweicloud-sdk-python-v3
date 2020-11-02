@@ -23,7 +23,7 @@ class UpdateMemberRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'member': 'UpdateMemberV2Req'
+        'member': 'UpdateMemberReq'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class UpdateMemberRequestBody:
 
 
         :return: The member of this UpdateMemberRequestBody.
-        :rtype: UpdateMemberV2Req
+        :rtype: UpdateMemberReq
         """
         return self._member
 
@@ -56,7 +56,7 @@ class UpdateMemberRequestBody:
 
 
         :param member: The member of this UpdateMemberRequestBody.
-        :type: UpdateMemberV2Req
+        :type: UpdateMemberReq
         """
         self._member = member
 

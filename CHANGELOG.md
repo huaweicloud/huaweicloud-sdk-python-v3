@@ -1,3 +1,22 @@
+## 3.0.20-beta 2020-11-02
+## HuaweiCloud SDK CES
+ - ### Features
+    - None
+ - ### Bug Fix
+    - None
+ - ### Change
+    - Interface adjustment: property `alarm_type` in class `CreateAlarmRequestBody` support key `RESOURCE_GROUP`.
+    - Interface adjustment: property `meta_data` in class `ListAlarmHistoriesResponse` only returns total number of alarm histories.
+
+## HuaweiCloud SDK ELB
+ - ### Features
+    - None
+ - ### Bug Fix
+    - Modify wrong parameter in class `CreateL7ruleRequestBody`.
+ - ### Change
+    - None
+
+
 ## 3.0.19-beta 2020-10-31
 ## HuaweiCloud SDK CBR
  - ### Features

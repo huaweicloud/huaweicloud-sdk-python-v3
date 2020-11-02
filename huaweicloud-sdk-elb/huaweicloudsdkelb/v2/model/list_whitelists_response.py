@@ -23,7 +23,7 @@ class ListWhitelistsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'whitelists': 'list[WhitelistV2Resp]'
+        'whitelists': 'list[WhitelistResp]'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class ListWhitelistsResponse(SdkResponse):
         白名单对象的列表
 
         :return: The whitelists of this ListWhitelistsResponse.
-        :rtype: list[WhitelistV2Resp]
+        :rtype: list[WhitelistResp]
         """
         return self._whitelists
 
@@ -59,7 +59,7 @@ class ListWhitelistsResponse(SdkResponse):
         白名单对象的列表
 
         :param whitelists: The whitelists of this ListWhitelistsResponse.
-        :type: list[WhitelistV2Resp]
+        :type: list[WhitelistResp]
         """
         self._whitelists = whitelists
 

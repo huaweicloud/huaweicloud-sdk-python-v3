@@ -23,7 +23,7 @@ class ListL7policiesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'l7policies': 'list[L7policyV2Resp]'
+        'l7policies': 'list[L7policyResp]'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class ListL7policiesResponse(SdkResponse):
         转发策略对象的列表
 
         :return: The l7policies of this ListL7policiesResponse.
-        :rtype: list[L7policyV2Resp]
+        :rtype: list[L7policyResp]
         """
         return self._l7policies
 
@@ -59,7 +59,7 @@ class ListL7policiesResponse(SdkResponse):
         转发策略对象的列表
 
         :param l7policies: The l7policies of this ListL7policiesResponse.
-        :type: list[L7policyV2Resp]
+        :type: list[L7policyResp]
         """
         self._l7policies = l7policies
 

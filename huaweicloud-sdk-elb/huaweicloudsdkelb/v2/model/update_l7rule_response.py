@@ -23,7 +23,7 @@ class UpdateL7ruleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'rule': 'L7ruleV2Resp'
+        'rule': 'L7ruleResp'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class UpdateL7ruleResponse(SdkResponse):
 
 
         :return: The rule of this UpdateL7ruleResponse.
-        :rtype: L7ruleV2Resp
+        :rtype: L7ruleResp
         """
         return self._rule
 
@@ -57,7 +57,7 @@ class UpdateL7ruleResponse(SdkResponse):
 
 
         :param rule: The rule of this UpdateL7ruleResponse.
-        :type: L7ruleV2Resp
+        :type: L7ruleResp
         """
         self._rule = rule
 

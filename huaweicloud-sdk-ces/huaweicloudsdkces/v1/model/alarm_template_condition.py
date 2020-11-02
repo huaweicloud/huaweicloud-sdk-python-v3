@@ -28,7 +28,7 @@ class AlarmTemplateCondition:
         'filter': 'str',
         'period': 'int',
         'unit': 'str',
-        'value': 'int',
+        'value': 'float',
         'suppress_duration': 'int'
     }
 
@@ -183,7 +183,7 @@ class AlarmTemplateCondition:
         告警阈值，取值范围[0, Number.MAX_VALUE]，Number.MAX_VALUE值为1.7976931348623157e+108。具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。
 
         :return: The value of this AlarmTemplateCondition.
-        :rtype: int
+        :rtype: float
         """
         return self._value
 
@@ -194,7 +194,7 @@ class AlarmTemplateCondition:
         告警阈值，取值范围[0, Number.MAX_VALUE]，Number.MAX_VALUE值为1.7976931348623157e+108。具体阈值取值请参见附录中各服务监控指标中取值范围，如支持监控的服务列表中ECS的CPU使用率cpu_util取值范围可配置80。
 
         :param value: The value of this AlarmTemplateCondition.
-        :type: int
+        :type: float
         """
         self._value = value
 

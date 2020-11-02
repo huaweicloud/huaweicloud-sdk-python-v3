@@ -23,7 +23,7 @@ class UpdateListenerRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'listener': 'UpdateListenerV2Req'
+        'listener': 'UpdateListenerReq'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class UpdateListenerRequestBody:
 
 
         :return: The listener of this UpdateListenerRequestBody.
-        :rtype: UpdateListenerV2Req
+        :rtype: UpdateListenerReq
         """
         return self._listener
 
@@ -56,7 +56,7 @@ class UpdateListenerRequestBody:
 
 
         :param listener: The listener of this UpdateListenerRequestBody.
-        :type: UpdateListenerV2Req
+        :type: UpdateListenerReq
         """
         self._listener = listener
 
