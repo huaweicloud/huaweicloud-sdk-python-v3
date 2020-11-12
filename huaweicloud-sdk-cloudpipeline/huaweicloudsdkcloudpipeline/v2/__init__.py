@@ -2,9 +2,9 @@
 
 from __future__ import absolute_import
 
-# import DevcloudpipelineClient
-from huaweicloudsdkcloudpipeline.v2.devcloudpipeline_client import DevcloudpipelineClient
-from huaweicloudsdkcloudpipeline.v2.devcloudpipeline_async_client import DevcloudpipelineAsyncClient
+# import CloudPipelineClient
+from huaweicloudsdkcloudpipeline.v2.cloudpipeline_client import CloudPipelineClient
+from huaweicloudsdkcloudpipeline.v2.cloudpipeline_async_client import CloudPipelineAsyncClient
 # import models into sdk package
 from huaweicloudsdkcloudpipeline.v2.model.batch_show_pipelines_status_request import BatchShowPipelinesStatusRequest
 from huaweicloudsdkcloudpipeline.v2.model.batch_show_pipelines_status_response import BatchShowPipelinesStatusResponse

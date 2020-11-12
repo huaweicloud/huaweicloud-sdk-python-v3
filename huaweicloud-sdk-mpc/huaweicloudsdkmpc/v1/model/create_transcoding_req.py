@@ -26,6 +26,7 @@ class CreateTranscodingReq:
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
         'trans_template_id': 'list[int]',
+        'av_parameters': 'list[AvParameters]',
         'output_filenames': 'list[str]',
         'user_data': 'str',
         'watermarks': 'list[WatermarkRequest]',
@@ -48,7 +49,6 @@ class CreateTranscodingReq:
         'audio_process': 'AudioProcess',
         'quality_enhance': 'QualityEnhance',
         'system_process': 'SystemProcess',
-        'av_parameters': 'list[AvParameters]',
         'template_extend': 'TemplateExtend'
     }
 
@@ -56,6 +56,7 @@ class CreateTranscodingReq:
         'input': 'input',
         'output': 'output',
         'trans_template_id': 'trans_template_id',
+        'av_parameters': 'av_parameters',
         'output_filenames': 'output_filenames',
         'user_data': 'user_data',
         'watermarks': 'watermarks',
@@ -78,11 +79,10 @@ class CreateTranscodingReq:
         'audio_process': 'audio_process',
         'quality_enhance': 'quality_enhance',
         'system_process': 'system_process',
-        'av_parameters': 'av_parameters',
         'template_extend': 'template_extend'
     }
 
-    def __init__(self, input=None, output=None, trans_template_id=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, digital_watermark=None, project_id=None, vip_user=None, task_id=None, domain_name=None, tenant_project_id=None, priority=6, audit=None, subtitle=None, special_effect=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None, quality_enhance=None, system_process=None, av_parameters=None, template_extend=None):
+    def __init__(self, input=None, output=None, trans_template_id=None, av_parameters=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, digital_watermark=None, project_id=None, vip_user=None, task_id=None, domain_name=None, tenant_project_id=None, priority=6, audit=None, subtitle=None, special_effect=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None, quality_enhance=None, system_process=None, template_extend=None):
         """CreateTranscodingReq - a model defined in huaweicloud sdk"""
         
         
@@ -90,6 +90,7 @@ class CreateTranscodingReq:
         self._input = None
         self._output = None
         self._trans_template_id = None
+        self._av_parameters = None
         self._output_filenames = None
         self._user_data = None
         self._watermarks = None
@@ -112,16 +113,16 @@ class CreateTranscodingReq:
         self._audio_process = None
         self._quality_enhance = None
         self._system_process = None
-        self._av_parameters = None
         self._template_extend = None
         self.discriminator = None
 
         if input is not None:
             self.input = input
-        if output is not None:
-            self.output = output
+        self.output = output
         if trans_template_id is not None:
             self.trans_template_id = trans_template_id
+        if av_parameters is not None:
+            self.av_parameters = av_parameters
         if output_filenames is not None:
             self.output_filenames = output_filenames
         if user_data is not None:
@@ -166,8 +167,6 @@ class CreateTranscodingReq:
             self.quality_enhance = quality_enhance
         if system_process is not None:
             self.system_process = system_process
-        if av_parameters is not None:
-            self.av_parameters = av_parameters
         if template_extend is not None:
             self.template_extend = template_extend
 
@@ -215,7 +214,7 @@ class CreateTranscodingReq:
     def trans_template_id(self):
         """Gets the trans_template_id of this CreateTranscodingReq.
 
-        转码模板ID，数组，每一路转码输出对应一个转码配置模板ID，最多支持9个模板ID。  多个转码模板中如下参数可变，其他都必须一致：  - 视频bitrate，height，width。 
+        转码模板ID，没带av_parameter参数时，必须带该参数，数组，每一路转码输出对应一个转码配置模板ID，最多支持9个模板ID。  多个转码模板中如下参数可变，其他都必须一致：  - 视频bitrate，height，width。 
 
         :return: The trans_template_id of this CreateTranscodingReq.
         :rtype: list[int]
@@ -226,12 +225,34 @@ class CreateTranscodingReq:
     def trans_template_id(self, trans_template_id):
         """Sets the trans_template_id of this CreateTranscodingReq.
 
-        转码模板ID，数组，每一路转码输出对应一个转码配置模板ID，最多支持9个模板ID。  多个转码模板中如下参数可变，其他都必须一致：  - 视频bitrate，height，width。 
+        转码模板ID，没带av_parameter参数时，必须带该参数，数组，每一路转码输出对应一个转码配置模板ID，最多支持9个模板ID。  多个转码模板中如下参数可变，其他都必须一致：  - 视频bitrate，height，width。 
 
         :param trans_template_id: The trans_template_id of this CreateTranscodingReq.
         :type: list[int]
         """
         self._trans_template_id = trans_template_id
+
+    @property
+    def av_parameters(self):
+        """Gets the av_parameters of this CreateTranscodingReq.
+
+        转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码，不带trans_template_id时，该参数必选。 
+
+        :return: The av_parameters of this CreateTranscodingReq.
+        :rtype: list[AvParameters]
+        """
+        return self._av_parameters
+
+    @av_parameters.setter
+    def av_parameters(self, av_parameters):
+        """Sets the av_parameters of this CreateTranscodingReq.
+
+        转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码，不带trans_template_id时，该参数必选。 
+
+        :param av_parameters: The av_parameters of this CreateTranscodingReq.
+        :type: list[AvParameters]
+        """
+        self._av_parameters = av_parameters
 
     @property
     def output_filenames(self):
@@ -259,7 +280,7 @@ class CreateTranscodingReq:
     def user_data(self):
         """Gets the user_data of this CreateTranscodingReq.
 
-        用户自定义数据。 
+        用户自定义数据，该字段可在查询接口或消息通知中按原内容透传给用户。 
 
         :return: The user_data of this CreateTranscodingReq.
         :rtype: str
@@ -270,7 +291,7 @@ class CreateTranscodingReq:
     def user_data(self, user_data):
         """Sets the user_data of this CreateTranscodingReq.
 
-        用户自定义数据。 
+        用户自定义数据，该字段可在查询接口或消息通知中按原内容透传给用户。 
 
         :param user_data: The user_data of this CreateTranscodingReq.
         :type: str
@@ -690,28 +711,6 @@ class CreateTranscodingReq:
         :type: SystemProcess
         """
         self._system_process = system_process
-
-    @property
-    def av_parameters(self):
-        """Gets the av_parameters of this CreateTranscodingReq.
-
-        转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码。 
-
-        :return: The av_parameters of this CreateTranscodingReq.
-        :rtype: list[AvParameters]
-        """
-        return self._av_parameters
-
-    @av_parameters.setter
-    def av_parameters(self, av_parameters):
-        """Sets the av_parameters of this CreateTranscodingReq.
-
-        转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码。 
-
-        :param av_parameters: The av_parameters of this CreateTranscodingReq.
-        :type: list[AvParameters]
-        """
-        self._av_parameters = av_parameters
 
     @property
     def template_extend(self):

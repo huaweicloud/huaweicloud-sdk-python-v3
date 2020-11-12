@@ -149,7 +149,7 @@ class CreateAlarmTemplateRequestBody:
     def template_items(self):
         """Gets the template_items of this CreateAlarmTemplateRequestBody.
 
-        创建自定义告警模板添加添加一个或者多个指标的告警规则；目前最多可增加30组告警规则策略。
+        创建自定义告警模板添加一个或者多个指标的告警规则；目前最多可增加30组告警规则策略。
 
         :return: The template_items of this CreateAlarmTemplateRequestBody.
         :rtype: list[TemplateItem]
@@ -160,7 +160,7 @@ class CreateAlarmTemplateRequestBody:
     def template_items(self, template_items):
         """Sets the template_items of this CreateAlarmTemplateRequestBody.
 
-        创建自定义告警模板添加添加一个或者多个指标的告警规则；目前最多可增加30组告警规则策略。
+        创建自定义告警模板添加一个或者多个指标的告警规则；目前最多可增加30组告警规则策略。
 
         :param template_items: The template_items of this CreateAlarmTemplateRequestBody.
         :type: list[TemplateItem]

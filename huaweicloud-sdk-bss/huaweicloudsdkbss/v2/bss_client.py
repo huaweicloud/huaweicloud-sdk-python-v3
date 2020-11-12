@@ -42,6 +42,195 @@ class BssClient(Client):
     def new_builder(clazz):
         return ClientBuilder(clazz, "GlobalCredentials")
 
+    def batch_set_sub_customer_discount(self, request):
+        """设置伙伴折扣
+
+        功能描述：设置伙伴折扣
+
+        :param BatchSetSubCustomerDiscountRequest request
+        :return: BatchSetSubCustomerDiscountResponse
+        """
+        return self.batch_set_sub_customer_discount_with_http_info(request)
+
+    def batch_set_sub_customer_discount_with_http_info(self, request):
+        """设置伙伴折扣
+
+        功能描述：设置伙伴折扣
+
+        :param BatchSetSubCustomerDiscountRequest request
+        :return: BatchSetSubCustomerDiscountResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/discounts',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchSetSubCustomerDiscountResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def change_enterprise_realname_authentication(self, request):
+        """实名认证变更申请
+
+        功能描述：实名认证变更申请
+
+        :param ChangeEnterpriseRealnameAuthenticationRequest request
+        :return: ChangeEnterpriseRealnameAuthenticationResponse
+        """
+        return self.change_enterprise_realname_authentication_with_http_info(request)
+
+    def change_enterprise_realname_authentication_with_http_info(self, request):
+        """实名认证变更申请
+
+        功能描述：实名认证变更申请
+
+        :param ChangeEnterpriseRealnameAuthenticationRequest request
+        :return: ChangeEnterpriseRealnameAuthenticationResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/customers/realname-auths/enterprise',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ChangeEnterpriseRealnameAuthenticationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def check_user_identity(self, request):
+        """校验客户的注册信息
+
+        功能描述：校验客户的注册信息
+
+        :param CheckUserIdentityRequest request
+        :return: CheckUserIdentityResponse
+        """
+        return self.check_user_identity_with_http_info(request)
+
+    def check_user_identity_with_http_info(self, request):
+        """校验客户的注册信息
+
+        功能描述：校验客户的注册信息
+
+        :param CheckUserIdentityRequest request
+        :return: CheckUserIdentityResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/sub-customers/users/check-identity',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CheckUserIdentityResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_enterprise_project_auth(self, request):
         """开通企业项目
 
@@ -95,6 +284,69 @@ class BssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateEnterpriseProjectAuthResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_enterprise_realname_authentication(self, request):
+        """企业实名认证申请
+
+        功能描述：企业实名认证申请V2
+
+        :param CreateEnterpriseRealnameAuthenticationRequest request
+        :return: CreateEnterpriseRealnameAuthenticationResponse
+        """
+        return self.create_enterprise_realname_authentication_with_http_info(request)
+
+    def create_enterprise_realname_authentication_with_http_info(self, request):
+        """企业实名认证申请
+
+        功能描述：企业实名认证申请V2
+
+        :param CreateEnterpriseRealnameAuthenticationRequest request
+        :return: CreateEnterpriseRealnameAuthenticationResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/customers/realname-auths/enterprise',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateEnterpriseRealnameAuthenticationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -158,6 +410,132 @@ class BssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreatePartnerCouponsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_personal_realname_auth(self, request):
+        """个人实名认证申请
+
+        功能描述：个人实名认证申请
+
+        :param CreatePersonalRealnameAuthRequest request
+        :return: CreatePersonalRealnameAuthResponse
+        """
+        return self.create_personal_realname_auth_with_http_info(request)
+
+    def create_personal_realname_auth_with_http_info(self, request):
+        """个人实名认证申请
+
+        功能描述：个人实名认证申请
+
+        :param CreatePersonalRealnameAuthRequest request
+        :return: CreatePersonalRealnameAuthResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/customers/realname-auths/individual',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreatePersonalRealnameAuthResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_sub_customer(self, request):
+        """创建客户（V2）
+
+        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。
+
+        :param CreateSubCustomerRequest request
+        :return: CreateSubCustomerResponse
+        """
+        return self.create_sub_customer_with_http_info(request)
+
+    def create_sub_customer_with_http_info(self, request):
+        """创建客户（V2）
+
+        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。
+
+        :param CreateSubCustomerRequest request
+        :return: CreateSubCustomerResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/sub-customers',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateSubCustomerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1006,6 +1384,69 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_indirect_partners(self, request):
+        """查询精英服务商列表
+
+        功能描述：查询精英服务商列表
+
+        :param ListIndirectPartnersRequest request
+        :return: ListIndirectPartnersResponse
+        """
+        return self.list_indirect_partners_with_http_info(request)
+
+    def list_indirect_partners_with_http_info(self, request):
+        """查询精英服务商列表
+
+        功能描述：查询精英服务商列表
+
+        :param ListIndirectPartnersRequest request
+        :return: ListIndirectPartnersResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/indirect-partners/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListIndirectPartnersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_issued_coupon_quotas(self, request):
         """查询已发放优惠券额度
 
@@ -1444,6 +1885,142 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_partner_pay_orders(self, request):
+        """查询伙伴代付订单列表
+
+        功能描述：查询伙伴代付订单列表
+
+        :param ListPartnerPayOrdersRequest request
+        :return: ListPartnerPayOrdersResponse
+        """
+        return self.list_partner_pay_orders_with_http_info(request)
+
+    def list_partner_pay_orders_with_http_info(self, request):
+        """查询伙伴代付订单列表
+
+        功能描述：查询伙伴代付订单列表
+
+        :param ListPartnerPayOrdersRequest request
+        :return: ListPartnerPayOrdersResponse
+        """
+
+        all_params = ['order_id', 'customer_id', 'limit', 'offset', 'status', 'indirect_partner_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'order_id' in local_var_params:
+            query_params.append(('order_id', local_var_params['order_id']))
+        if 'customer_id' in local_var_params:
+            query_params.append(('customer_id', local_var_params['customer_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'indirect_partner_id' in local_var_params:
+            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/orders/customer-orders/partner-pay-orders',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListPartnerPayOrdersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_provinces(self, request):
+        """根据国家查询省份信息
+
+        功能描述：根据国家查询省份列表
+
+        :param ListProvincesRequest request
+        :return: ListProvincesResponse
+        """
+        return self.list_provinces_with_http_info(request)
+
+    def list_provinces_with_http_info(self, request):
+        """根据国家查询省份信息
+
+        功能描述：根据国家查询省份列表
+
+        :param ListProvincesRequest request
+        :return: ListProvincesResponse
+        """
+
+        all_params = ['x_language', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/systems/configs/provinces',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListProvincesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_quota_coupons(self, request):
         """查询优惠券额度列表
 
@@ -1714,6 +2291,69 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_sub_customer_discounts(self, request):
+        """查询伙伴折扣
+
+        功能描述：查询伙伴折扣
+
+        :param ListSubCustomerDiscountsRequest request
+        :return: ListSubCustomerDiscountsResponse
+        """
+        return self.list_sub_customer_discounts_with_http_info(request)
+
+    def list_sub_customer_discounts_with_http_info(self, request):
+        """查询伙伴折扣
+
+        功能描述：查询伙伴折扣
+
+        :param ListSubCustomerDiscountsRequest request
+        :return: ListSubCustomerDiscountsResponse
+        """
+
+        all_params = ['customer_id', 'indirect_partner_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'customer_id' in local_var_params:
+            query_params.append(('customer_id', local_var_params['customer_id']))
+        if 'indirect_partner_id' in local_var_params:
+            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/discounts',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSubCustomerDiscountsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_sub_customer_res_fee_records(self, request):
         """查询客户消费记录
 
@@ -1789,6 +2429,69 @@ class BssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSubCustomerResFeeRecordsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_sub_customers(self, request):
+        """查询客户列表
+
+        功能描述：查询客户列表
+
+        :param ListSubCustomersRequest request
+        :return: ListSubCustomersResponse
+        """
+        return self.list_sub_customers_with_http_info(request)
+
+    def list_sub_customers_with_http_info(self, request):
+        """查询客户列表
+
+        功能描述：查询客户列表
+
+        :param ListSubCustomersRequest request
+        :return: ListSubCustomersResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/sub-customers/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSubCustomersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1927,6 +2630,69 @@ class BssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ReclaimCouponQuotasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def reclaim_indirect_partner_account(self, request):
+        """回收精英服务商账户拨款
+
+        功能描述：合作伙伴可以回收二级渠道账户余额
+
+        :param ReclaimIndirectPartnerAccountRequest request
+        :return: ReclaimIndirectPartnerAccountResponse
+        """
+        return self.reclaim_indirect_partner_account_with_http_info(request)
+
+    def reclaim_indirect_partner_account_with_http_info(self, request):
+        """回收精英服务商账户拨款
+
+        功能描述：合作伙伴可以回收二级渠道账户余额
+
+        :param ReclaimIndirectPartnerAccountRequest request
+        :return: ReclaimIndirectPartnerAccountResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/accounts/partner-accounts/indirect-partner-reclaim',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ReclaimIndirectPartnerAccountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2185,6 +2951,69 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def send_verification_message_code(self, request):
+        """短信验证码
+
+        功能描述：发送验证码
+
+        :param SendVerificationMessageCodeRequest request
+        :return: SendVerificationMessageCodeResponse
+        """
+        return self.send_verification_message_code_with_http_info(request)
+
+    def send_verification_message_code_with_http_info(self, request):
+        """短信验证码
+
+        功能描述：发送验证码
+
+        :param SendVerificationMessageCodeRequest request
+        :return: SendVerificationMessageCodeResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bases/verificationcode/send',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SendVerificationMessageCodeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_cusotmer_account_balances(self, request):
         """查询客户账户余额
 
@@ -2382,6 +3211,67 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_realname_authentication_review_result(self, request):
+        """查询实名认证审核结果
+
+        功能描述：查询实名认证审核结果
+
+        :param ShowRealnameAuthenticationReviewResultRequest request
+        :return: ShowRealnameAuthenticationReviewResultResponse
+        """
+        return self.show_realname_authentication_review_result_with_http_info(request)
+
+    def show_realname_authentication_review_result_with_http_info(self, request):
+        """查询实名认证审核结果
+
+        功能描述：查询实名认证审核结果
+
+        :param ShowRealnameAuthenticationReviewResultRequest request
+        :return: ShowRealnameAuthenticationReviewResultResponse
+        """
+
+        all_params = ['customer_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'customer_id' in local_var_params:
+            query_params.append(('customer_id', local_var_params['customer_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/customers/realname-auths/result',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowRealnameAuthenticationReviewResultResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_coupon_quotas(self, request):
         """向精英服务商发放代金券额度
 
@@ -2508,6 +3398,69 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_indirect_partner_account(self, request):
+        """向二级渠道账户拨款
+
+        功能描述：从伙伴账户调账给二级渠道
+
+        :param UpdateIndirectPartnerAccountRequest request
+        :return: UpdateIndirectPartnerAccountResponse
+        """
+        return self.update_indirect_partner_account_with_http_info(request)
+
+    def update_indirect_partner_account_with_http_info(self, request):
+        """向二级渠道账户拨款
+
+        功能描述：从伙伴账户调账给二级渠道
+
+        :param UpdateIndirectPartnerAccountRequest request
+        :return: UpdateIndirectPartnerAccountResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/accounts/partner-accounts/indirect-partner-adjust',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateIndirectPartnerAccountResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_sub_enterprise_amount(self, request):
         """企业主账号向企业子账号拨款
 
@@ -2626,69 +3579,6 @@ class BssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='AutoRenewalResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def batch_set_sub_customer_discount(self, request):
-        """设置伙伴折扣
-
-        功能描述：设置伙伴折扣
-
-        :param BatchSetSubCustomerDiscountRequest request
-        :return: BatchSetSubCustomerDiscountResponse
-        """
-        return self.batch_set_sub_customer_discount_with_http_info(request)
-
-    def batch_set_sub_customer_discount_with_http_info(self, request):
-        """设置伙伴折扣
-
-        功能描述：设置伙伴折扣
-
-        :param BatchSetSubCustomerDiscountRequest request
-        :return: BatchSetSubCustomerDiscountResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/discounts',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='BatchSetSubCustomerDiscountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2882,321 +3772,6 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def change_enterprise_realname_authentication(self, request):
-        """实名认证变更申请
-
-        功能描述：实名认证变更申请
-
-        :param ChangeEnterpriseRealnameAuthenticationRequest request
-        :return: ChangeEnterpriseRealnameAuthenticationResponse
-        """
-        return self.change_enterprise_realname_authentication_with_http_info(request)
-
-    def change_enterprise_realname_authentication_with_http_info(self, request):
-        """实名认证变更申请
-
-        功能描述：实名认证变更申请
-
-        :param ChangeEnterpriseRealnameAuthenticationRequest request
-        :return: ChangeEnterpriseRealnameAuthenticationResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/realname-auths/enterprise',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ChangeEnterpriseRealnameAuthenticationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def check_user_identity(self, request):
-        """校验客户的注册信息
-
-        功能描述：校验客户的注册信息
-
-        :param CheckUserIdentityRequest request
-        :return: CheckUserIdentityResponse
-        """
-        return self.check_user_identity_with_http_info(request)
-
-    def check_user_identity_with_http_info(self, request):
-        """校验客户的注册信息
-
-        功能描述：校验客户的注册信息
-
-        :param CheckUserIdentityRequest request
-        :return: CheckUserIdentityResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/sub-customers/users/check-identity',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CheckUserIdentityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def create_enterprise_realname_authentication(self, request):
-        """企业实名认证申请
-
-        功能描述：企业实名认证申请V2
-
-        :param CreateEnterpriseRealnameAuthenticationRequest request
-        :return: CreateEnterpriseRealnameAuthenticationResponse
-        """
-        return self.create_enterprise_realname_authentication_with_http_info(request)
-
-    def create_enterprise_realname_authentication_with_http_info(self, request):
-        """企业实名认证申请
-
-        功能描述：企业实名认证申请V2
-
-        :param CreateEnterpriseRealnameAuthenticationRequest request
-        :return: CreateEnterpriseRealnameAuthenticationResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/realname-auths/enterprise',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreateEnterpriseRealnameAuthenticationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def create_personal_realname_auth(self, request):
-        """个人实名认证申请
-
-        功能描述：个人实名认证申请
-
-        :param CreatePersonalRealnameAuthRequest request
-        :return: CreatePersonalRealnameAuthResponse
-        """
-        return self.create_personal_realname_auth_with_http_info(request)
-
-    def create_personal_realname_auth_with_http_info(self, request):
-        """个人实名认证申请
-
-        功能描述：个人实名认证申请
-
-        :param CreatePersonalRealnameAuthRequest request
-        :return: CreatePersonalRealnameAuthResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/realname-auths/individual',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreatePersonalRealnameAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def create_sub_customer(self, request):
-        """创建客户（V2）
-
-        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。
-
-        :param CreateSubCustomerRequest request
-        :return: CreateSubCustomerResponse
-        """
-        return self.create_sub_customer_with_http_info(request)
-
-    def create_sub_customer_with_http_info(self, request):
-        """创建客户（V2）
-
-        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。
-
-        :param CreateSubCustomerRequest request
-        :return: CreateSubCustomerResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/sub-customers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreateSubCustomerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def list_customer_orders(self, request):
         """查询订单列表V2
 
@@ -3282,69 +3857,6 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_indirect_partners(self, request):
-        """查询精英服务商列表
-
-        功能描述：查询精英服务商列表
-
-        :param ListIndirectPartnersRequest request
-        :return: ListIndirectPartnersResponse
-        """
-        return self.list_indirect_partners_with_http_info(request)
-
-    def list_indirect_partners_with_http_info(self, request):
-        """查询精英服务商列表
-
-        功能描述：查询精英服务商列表
-
-        :param ListIndirectPartnersRequest request
-        :return: ListIndirectPartnersResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/indirect-partners/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListIndirectPartnersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def list_order_coupons_by_order_id(self, request):
         """查询订单可用优惠券
 
@@ -3400,77 +3912,6 @@ class BssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListOrderCouponsByOrderIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_partner_pay_orders(self, request):
-        """查询伙伴代付订单列表
-
-        功能描述：查询伙伴代付订单列表
-
-        :param ListPartnerPayOrdersRequest request
-        :return: ListPartnerPayOrdersResponse
-        """
-        return self.list_partner_pay_orders_with_http_info(request)
-
-    def list_partner_pay_orders_with_http_info(self, request):
-        """查询伙伴代付订单列表
-
-        功能描述：查询伙伴代付订单列表
-
-        :param ListPartnerPayOrdersRequest request
-        :return: ListPartnerPayOrdersResponse
-        """
-
-        all_params = ['order_id', 'customer_id', 'limit', 'offset', 'status', 'indirect_partner_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'order_id' in local_var_params:
-            query_params.append(('order_id', local_var_params['order_id']))
-        if 'customer_id' in local_var_params:
-            query_params.append(('customer_id', local_var_params['customer_id']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'indirect_partner_id' in local_var_params:
-            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/orders/customer-orders/partner-pay-orders',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListPartnerPayOrdersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3601,132 +4042,6 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_sub_customer_discounts(self, request):
-        """查询伙伴折扣
-
-        功能描述：查询伙伴折扣
-
-        :param ListSubCustomerDiscountsRequest request
-        :return: ListSubCustomerDiscountsResponse
-        """
-        return self.list_sub_customer_discounts_with_http_info(request)
-
-    def list_sub_customer_discounts_with_http_info(self, request):
-        """查询伙伴折扣
-
-        功能描述：查询伙伴折扣
-
-        :param ListSubCustomerDiscountsRequest request
-        :return: ListSubCustomerDiscountsResponse
-        """
-
-        all_params = ['customer_id', 'indirect_partner_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'customer_id' in local_var_params:
-            query_params.append(('customer_id', local_var_params['customer_id']))
-        if 'indirect_partner_id' in local_var_params:
-            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/discounts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListSubCustomerDiscountsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_sub_customers(self, request):
-        """查询客户列表
-
-        功能描述：查询客户列表
-
-        :param ListSubCustomersRequest request
-        :return: ListSubCustomersResponse
-        """
-        return self.list_sub_customers_with_http_info(request)
-
-    def list_sub_customers_with_http_info(self, request):
-        """查询客户列表
-
-        功能描述：查询客户列表
-
-        :param ListSubCustomersRequest request
-        :return: ListSubCustomersResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/sub-customers/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListSubCustomersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def pay_orders(self, request):
         """支付包周期订单
 
@@ -3790,69 +4105,6 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def reclaim_indirect_partner_account(self, request):
-        """回收精英服务商账户拨款
-
-        功能描述：合作伙伴可以回收二级渠道账户余额
-
-        :param ReclaimIndirectPartnerAccountRequest request
-        :return: ReclaimIndirectPartnerAccountResponse
-        """
-        return self.reclaim_indirect_partner_account_with_http_info(request)
-
-    def reclaim_indirect_partner_account_with_http_info(self, request):
-        """回收精英服务商账户拨款
-
-        功能描述：合作伙伴可以回收二级渠道账户余额
-
-        :param ReclaimIndirectPartnerAccountRequest request
-        :return: ReclaimIndirectPartnerAccountResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/accounts/partner-accounts/indirect-partner-reclaim',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ReclaimIndirectPartnerAccountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def renewal_resources(self, request):
         """续订包周期资源
 
@@ -3910,69 +4162,6 @@ class BssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='RenewalResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def send_verification_message_code(self, request):
-        """短信验证码
-
-        功能描述：发送验证码
-
-        :param SendVerificationMessageCodeRequest request
-        :return: SendVerificationMessageCodeResponse
-        """
-        return self.send_verification_message_code_with_http_info(request)
-
-    def send_verification_message_code_with_http_info(self, request):
-        """短信验证码
-
-        功能描述：发送验证码
-
-        :param SendVerificationMessageCodeRequest request
-        :return: SendVerificationMessageCodeResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/bases/verificationcode/send',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='SendVerificationMessageCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4046,67 +4235,6 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_realname_authentication_review_result(self, request):
-        """查询实名认证审核结果
-
-        功能描述：查询实名认证审核结果
-
-        :param ShowRealnameAuthenticationReviewResultRequest request
-        :return: ShowRealnameAuthenticationReviewResultResponse
-        """
-        return self.show_realname_authentication_review_result_with_http_info(request)
-
-    def show_realname_authentication_review_result_with_http_info(self, request):
-        """查询实名认证审核结果
-
-        功能描述：查询实名认证审核结果
-
-        :param ShowRealnameAuthenticationReviewResultRequest request
-        :return: ShowRealnameAuthenticationReviewResultResponse
-        """
-
-        all_params = ['customer_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'customer_id' in local_var_params:
-            query_params.append(('customer_id', local_var_params['customer_id']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/realname-auths/result',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowRealnameAuthenticationReviewResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def show_refund_order_details(self, request):
         """查询退款订单的金额详情V2
 
@@ -4162,69 +4290,6 @@ class BssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowRefundOrderDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def update_indirect_partner_account(self, request):
-        """向二级渠道账户拨款
-
-        功能描述：从伙伴账户调账给二级渠道
-
-        :param UpdateIndirectPartnerAccountRequest request
-        :return: UpdateIndirectPartnerAccountResponse
-        """
-        return self.update_indirect_partner_account_with_http_info(request)
-
-    def update_indirect_partner_account_with_http_info(self, request):
-        """向二级渠道账户拨款
-
-        功能描述：从伙伴账户调账给二级渠道
-
-        :param UpdateIndirectPartnerAccountRequest request
-        :return: UpdateIndirectPartnerAccountResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/accounts/partner-accounts/indirect-partner-adjust',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='UpdateIndirectPartnerAccountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4414,71 +4479,6 @@ class BssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListPostalAddressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_provinces(self, request):
-        """根据国家查询省份信息
-
-        功能描述：根据国家查询省份列表
-
-        :param ListProvincesRequest request
-        :return: ListProvincesResponse
-        """
-        return self.list_provinces_with_http_info(request)
-
-    def list_provinces_with_http_info(self, request):
-        """根据国家查询省份信息
-
-        功能描述：根据国家查询省份列表
-
-        :param ListProvincesRequest request
-        :return: ListProvincesResponse
-        """
-
-        all_params = ['x_language', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/systems/configs/provinces',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListProvincesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

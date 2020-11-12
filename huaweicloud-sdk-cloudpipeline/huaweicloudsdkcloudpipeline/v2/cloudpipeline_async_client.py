@@ -14,7 +14,7 @@ from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 
 
-class DevcloudpipelineAsyncClient(Client):
+class CloudPipelineAsyncClient(Client):
     """
     :param configuration: .Configuration object for this client
     :param pool_threads: The number of threads to use for async requests
@@ -34,7 +34,7 @@ class DevcloudpipelineAsyncClient(Client):
     }
 
     def __init__(self):
-        super(DevcloudpipelineAsyncClient, self).__init__()
+        super(CloudPipelineAsyncClient, self).__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcloudpipeline.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 

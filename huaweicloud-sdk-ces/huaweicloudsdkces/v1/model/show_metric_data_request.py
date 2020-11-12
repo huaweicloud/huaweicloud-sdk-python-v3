@@ -23,9 +23,9 @@ class ShowMetricDataRequest:
     sensitive_list = []
 
     openapi_types = {
-        'dim0': 'str',
-        'dim1': 'str',
-        'dim2': 'str',
+        'dim_0': 'str',
+        'dim_1': 'str',
+        'dim_2': 'str',
         'filter': 'str',
         '_from': 'int',
         'metric_name': 'str',
@@ -35,9 +35,9 @@ class ShowMetricDataRequest:
     }
 
     attribute_map = {
-        'dim0': 'dim.0',
-        'dim1': 'dim.1',
-        'dim2': 'dim.2',
+        'dim_0': 'dim.0',
+        'dim_1': 'dim.1',
+        'dim_2': 'dim.2',
         'filter': 'filter',
         '_from': 'from',
         'metric_name': 'metric_name',
@@ -46,14 +46,14 @@ class ShowMetricDataRequest:
         'to': 'to'
     }
 
-    def __init__(self, dim0=None, dim1=None, dim2=None, filter=None, _from=None, metric_name=None, namespace=None, period=None, to=None):
+    def __init__(self, dim_0=None, dim_1=None, dim_2=None, filter=None, _from=None, metric_name=None, namespace=None, period=None, to=None):
         """ShowMetricDataRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._dim0 = None
-        self._dim1 = None
-        self._dim2 = None
+        self._dim_0 = None
+        self._dim_1 = None
+        self._dim_2 = None
         self._filter = None
         self.__from = None
         self._metric_name = None
@@ -62,11 +62,11 @@ class ShowMetricDataRequest:
         self._to = None
         self.discriminator = None
 
-        self.dim0 = dim0
-        if dim1 is not None:
-            self.dim1 = dim1
-        if dim2 is not None:
-            self.dim2 = dim2
+        self.dim_0 = dim_0
+        if dim_1 is not None:
+            self.dim_1 = dim_1
+        if dim_2 is not None:
+            self.dim_2 = dim_2
         self.filter = filter
         self._from = _from
         self.metric_name = metric_name
@@ -75,64 +75,64 @@ class ShowMetricDataRequest:
         self.to = to
 
     @property
-    def dim0(self):
-        """Gets the dim0 of this ShowMetricDataRequest.
+    def dim_0(self):
+        """Gets the dim_0 of this ShowMetricDataRequest.
 
 
-        :return: The dim0 of this ShowMetricDataRequest.
+        :return: The dim_0 of this ShowMetricDataRequest.
         :rtype: str
         """
-        return self._dim0
+        return self._dim_0
 
-    @dim0.setter
-    def dim0(self, dim0):
-        """Sets the dim0 of this ShowMetricDataRequest.
+    @dim_0.setter
+    def dim_0(self, dim_0):
+        """Sets the dim_0 of this ShowMetricDataRequest.
 
 
-        :param dim0: The dim0 of this ShowMetricDataRequest.
+        :param dim_0: The dim_0 of this ShowMetricDataRequest.
         :type: str
         """
-        self._dim0 = dim0
+        self._dim_0 = dim_0
 
     @property
-    def dim1(self):
-        """Gets the dim1 of this ShowMetricDataRequest.
+    def dim_1(self):
+        """Gets the dim_1 of this ShowMetricDataRequest.
 
 
-        :return: The dim1 of this ShowMetricDataRequest.
+        :return: The dim_1 of this ShowMetricDataRequest.
         :rtype: str
         """
-        return self._dim1
+        return self._dim_1
 
-    @dim1.setter
-    def dim1(self, dim1):
-        """Sets the dim1 of this ShowMetricDataRequest.
+    @dim_1.setter
+    def dim_1(self, dim_1):
+        """Sets the dim_1 of this ShowMetricDataRequest.
 
 
-        :param dim1: The dim1 of this ShowMetricDataRequest.
+        :param dim_1: The dim_1 of this ShowMetricDataRequest.
         :type: str
         """
-        self._dim1 = dim1
+        self._dim_1 = dim_1
 
     @property
-    def dim2(self):
-        """Gets the dim2 of this ShowMetricDataRequest.
+    def dim_2(self):
+        """Gets the dim_2 of this ShowMetricDataRequest.
 
 
-        :return: The dim2 of this ShowMetricDataRequest.
+        :return: The dim_2 of this ShowMetricDataRequest.
         :rtype: str
         """
-        return self._dim2
+        return self._dim_2
 
-    @dim2.setter
-    def dim2(self, dim2):
-        """Sets the dim2 of this ShowMetricDataRequest.
+    @dim_2.setter
+    def dim_2(self, dim_2):
+        """Sets the dim_2 of this ShowMetricDataRequest.
 
 
-        :param dim2: The dim2 of this ShowMetricDataRequest.
+        :param dim_2: The dim_2 of this ShowMetricDataRequest.
         :type: str
         """
-        self._dim2 = dim2
+        self._dim_2 = dim_2
 
     @property
     def filter(self):

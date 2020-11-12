@@ -48,8 +48,7 @@ class Thumbnail:
             self.tar = tar
         if out is not None:
             self.out = out
-        if params is not None:
-            self.params = params
+        self.params = params
 
     @property
     def tar(self):

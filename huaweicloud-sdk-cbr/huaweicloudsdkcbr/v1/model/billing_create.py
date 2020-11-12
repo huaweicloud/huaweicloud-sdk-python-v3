@@ -140,7 +140,7 @@ class BillingCreate:
     def object_type(self):
         """Gets the object_type of this BillingCreate.
 
-        对象类型：云服务器（server），云硬盘（disk）。
+        对象类型：云服务器（server），云硬盘（disk），文件系统（turbo）。
 
         :return: The object_type of this BillingCreate.
         :rtype: str
@@ -151,7 +151,7 @@ class BillingCreate:
     def object_type(self, object_type):
         """Sets the object_type of this BillingCreate.
 
-        对象类型：云服务器（server），云硬盘（disk）。
+        对象类型：云服务器（server），云硬盘（disk），文件系统（turbo）。
 
         :param object_type: The object_type of this BillingCreate.
         :type: str

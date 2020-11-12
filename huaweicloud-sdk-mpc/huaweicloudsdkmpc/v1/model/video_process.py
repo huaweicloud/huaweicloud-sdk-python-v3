@@ -124,7 +124,7 @@ class VideoProcess:
     def upsample(self):
         """Gets the upsample of this VideoProcess.
 
-        是否开启上采样，可取值为0,1: 0表示上采样关闭， 1表示上采样开启. 
+        是否开启上采样，如支持从480P的片源转为720P，可取值为:  - 0：表示上采样关闭， - 1：表示上采样开启. 
 
         :return: The upsample of this VideoProcess.
         :rtype: int
@@ -135,7 +135,7 @@ class VideoProcess:
     def upsample(self, upsample):
         """Sets the upsample of this VideoProcess.
 
-        是否开启上采样，可取值为0,1: 0表示上采样关闭， 1表示上采样开启. 
+        是否开启上采样，如支持从480P的片源转为720P，可取值为:  - 0：表示上采样关闭， - 1：表示上采样开启. 
 
         :param upsample: The upsample of this VideoProcess.
         :type: int

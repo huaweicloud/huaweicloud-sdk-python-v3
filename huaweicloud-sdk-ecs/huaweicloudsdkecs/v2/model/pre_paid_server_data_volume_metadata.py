@@ -23,72 +23,72 @@ class PrePaidServerDataVolumeMetadata:
     sensitive_list = []
 
     openapi_types = {
-        'system_encrypted': 'str',
-        'system_cmkid': 'str'
+        'system__encrypted': 'str',
+        'system__cmkid': 'str'
     }
 
     attribute_map = {
-        'system_encrypted': '__system__encrypted',
-        'system_cmkid': '__system__cmkid'
+        'system__encrypted': '__system__encrypted',
+        'system__cmkid': '__system__cmkid'
     }
 
-    def __init__(self, system_encrypted='0', system_cmkid=None):
+    def __init__(self, system__encrypted='0', system__cmkid=None):
         """PrePaidServerDataVolumeMetadata - a model defined in huaweicloud sdk"""
         
         
 
-        self._system_encrypted = None
-        self._system_cmkid = None
+        self._system__encrypted = None
+        self._system__cmkid = None
         self.discriminator = None
 
-        if system_encrypted is not None:
-            self.system_encrypted = system_encrypted
-        if system_cmkid is not None:
-            self.system_cmkid = system_cmkid
+        if system__encrypted is not None:
+            self.system__encrypted = system__encrypted
+        if system__cmkid is not None:
+            self.system__cmkid = system__cmkid
 
     @property
-    def system_encrypted(self):
-        """Gets the system_encrypted of this PrePaidServerDataVolumeMetadata.
+    def system__encrypted(self):
+        """Gets the system__encrypted of this PrePaidServerDataVolumeMetadata.
 
         metadata中的表示加密功能的字段，0代表不加密，1代表加密。  该字段不存在时，云硬盘默认为不加密。
 
-        :return: The system_encrypted of this PrePaidServerDataVolumeMetadata.
+        :return: The system__encrypted of this PrePaidServerDataVolumeMetadata.
         :rtype: str
         """
-        return self._system_encrypted
+        return self._system__encrypted
 
-    @system_encrypted.setter
-    def system_encrypted(self, system_encrypted):
-        """Sets the system_encrypted of this PrePaidServerDataVolumeMetadata.
+    @system__encrypted.setter
+    def system__encrypted(self, system__encrypted):
+        """Sets the system__encrypted of this PrePaidServerDataVolumeMetadata.
 
         metadata中的表示加密功能的字段，0代表不加密，1代表加密。  该字段不存在时，云硬盘默认为不加密。
 
-        :param system_encrypted: The system_encrypted of this PrePaidServerDataVolumeMetadata.
+        :param system__encrypted: The system__encrypted of this PrePaidServerDataVolumeMetadata.
         :type: str
         """
-        self._system_encrypted = system_encrypted
+        self._system__encrypted = system__encrypted
 
     @property
-    def system_cmkid(self):
-        """Gets the system_cmkid of this PrePaidServerDataVolumeMetadata.
+    def system__cmkid(self):
+        """Gets the system__cmkid of this PrePaidServerDataVolumeMetadata.
 
         metadata中的加密cmkid字段，与__system__encrypted配合表示需要加密，cmkid长度固定为36个字节。
 
-        :return: The system_cmkid of this PrePaidServerDataVolumeMetadata.
+        :return: The system__cmkid of this PrePaidServerDataVolumeMetadata.
         :rtype: str
         """
-        return self._system_cmkid
+        return self._system__cmkid
 
-    @system_cmkid.setter
-    def system_cmkid(self, system_cmkid):
-        """Sets the system_cmkid of this PrePaidServerDataVolumeMetadata.
+    @system__cmkid.setter
+    def system__cmkid(self, system__cmkid):
+        """Sets the system__cmkid of this PrePaidServerDataVolumeMetadata.
 
         metadata中的加密cmkid字段，与__system__encrypted配合表示需要加密，cmkid长度固定为36个字节。
 
-        :param system_cmkid: The system_cmkid of this PrePaidServerDataVolumeMetadata.
+        :param system__cmkid: The system__cmkid of this PrePaidServerDataVolumeMetadata.
         :type: str
         """
-        self._system_cmkid = system_cmkid
+        self._system__cmkid = system__cmkid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

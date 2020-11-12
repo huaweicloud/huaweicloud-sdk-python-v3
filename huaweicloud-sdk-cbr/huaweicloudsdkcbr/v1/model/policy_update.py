@@ -23,7 +23,6 @@ class PolicyUpdate:
     sensitive_list = []
 
     openapi_types = {
-        'description': 'str',
         'enabled': 'bool',
         'name': 'str',
         'operation_definition': 'PolicyoODCreate',
@@ -31,27 +30,23 @@ class PolicyUpdate:
     }
 
     attribute_map = {
-        'description': 'description',
         'enabled': 'enabled',
         'name': 'name',
         'operation_definition': 'operation_definition',
         'trigger': 'trigger'
     }
 
-    def __init__(self, description=None, enabled=True, name=None, operation_definition=None, trigger=None):
+    def __init__(self, enabled=True, name=None, operation_definition=None, trigger=None):
         """PolicyUpdate - a model defined in huaweicloud sdk"""
         
         
 
-        self._description = None
         self._enabled = None
         self._name = None
         self._operation_definition = None
         self._trigger = None
         self.discriminator = None
 
-        if description is not None:
-            self.description = description
         if enabled is not None:
             self.enabled = enabled
         if name is not None:
@@ -60,28 +55,6 @@ class PolicyUpdate:
             self.operation_definition = operation_definition
         if trigger is not None:
             self.trigger = trigger
-
-    @property
-    def description(self):
-        """Gets the description of this PolicyUpdate.
-
-        描述
-
-        :return: The description of this PolicyUpdate.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this PolicyUpdate.
-
-        描述
-
-        :param description: The description of this PolicyUpdate.
-        :type: str
-        """
-        self._description = description
 
     @property
     def enabled(self):

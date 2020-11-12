@@ -74,7 +74,7 @@ class ImageInfo:
         'hw_firmware_type': 'str',
         'support_arm': 'str',
         'max_ram': 'str',
-        'system_cmkid': 'str',
+        'system__cmkid': 'str',
         'os_feature_list': 'str',
         'account_code': 'str',
         'hw_vif_multiqueue_enabled': 'str'
@@ -132,13 +132,13 @@ class ImageInfo:
         'hw_firmware_type': 'hw_firmware_type',
         'support_arm': '__support_arm',
         'max_ram': 'max_ram',
-        'system_cmkid': '__system__cmkid',
+        'system__cmkid': '__system__cmkid',
         'os_feature_list': '__os_feature_list',
         'account_code': '__account_code',
         'hw_vif_multiqueue_enabled': 'hw_vif_multiqueue_enabled'
     }
 
-    def __init__(self, backup_id=None, data_origin=None, description=None, image_location=None, image_size=None, image_source_type=None, imagetype=None, is_config_init=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, architecture=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None, max_ram=None, system_cmkid=None, os_feature_list=None, account_code=None, hw_vif_multiqueue_enabled=None):
+    def __init__(self, backup_id=None, data_origin=None, description=None, image_location=None, image_size=None, image_source_type=None, imagetype=None, is_config_init=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, architecture=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None, max_ram=None, system__cmkid=None, os_feature_list=None, account_code=None, hw_vif_multiqueue_enabled=None):
         """ImageInfo - a model defined in huaweicloud sdk"""
         
         
@@ -194,7 +194,7 @@ class ImageInfo:
         self._hw_firmware_type = None
         self._support_arm = None
         self._max_ram = None
-        self._system_cmkid = None
+        self._system__cmkid = None
         self._os_feature_list = None
         self._account_code = None
         self._hw_vif_multiqueue_enabled = None
@@ -271,8 +271,8 @@ class ImageInfo:
             self.support_arm = support_arm
         if max_ram is not None:
             self.max_ram = max_ram
-        if system_cmkid is not None:
-            self.system_cmkid = system_cmkid
+        if system__cmkid is not None:
+            self.system__cmkid = system__cmkid
         if os_feature_list is not None:
             self.os_feature_list = os_feature_list
         if account_code is not None:
@@ -1403,26 +1403,26 @@ class ImageInfo:
         self._max_ram = max_ram
 
     @property
-    def system_cmkid(self):
-        """Gets the system_cmkid of this ImageInfo.
+    def system__cmkid(self):
+        """Gets the system__cmkid of this ImageInfo.
 
         加密镜像所使用的密钥ID。
 
-        :return: The system_cmkid of this ImageInfo.
+        :return: The system__cmkid of this ImageInfo.
         :rtype: str
         """
-        return self._system_cmkid
+        return self._system__cmkid
 
-    @system_cmkid.setter
-    def system_cmkid(self, system_cmkid):
-        """Sets the system_cmkid of this ImageInfo.
+    @system__cmkid.setter
+    def system__cmkid(self, system__cmkid):
+        """Sets the system__cmkid of this ImageInfo.
 
         加密镜像所使用的密钥ID。
 
-        :param system_cmkid: The system_cmkid of this ImageInfo.
+        :param system__cmkid: The system__cmkid of this ImageInfo.
         :type: str
         """
-        self._system_cmkid = system_cmkid
+        self._system__cmkid = system__cmkid
 
     @property
     def os_feature_list(self):

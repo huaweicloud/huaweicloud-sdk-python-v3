@@ -23,37 +23,37 @@ class VolumeMetadata:
     sensitive_list = []
 
     openapi_types = {
-        'system_cmkid': 'str',
-        'system_encrypted': 'str',
+        'system__cmkid': 'str',
+        'system__encrypted': 'str',
         'full_clone': 'str',
         'hwpassthrough': 'str',
         'order_id': 'str'
     }
 
     attribute_map = {
-        'system_cmkid': '__system__cmkid',
-        'system_encrypted': '__system__encrypted',
+        'system__cmkid': '__system__cmkid',
+        'system__encrypted': '__system__encrypted',
         'full_clone': 'full_clone',
         'hwpassthrough': 'hw:passthrough',
         'order_id': 'orderID'
     }
 
-    def __init__(self, system_cmkid=None, system_encrypted=None, full_clone=None, hwpassthrough=None, order_id=None):
+    def __init__(self, system__cmkid=None, system__encrypted=None, full_clone=None, hwpassthrough=None, order_id=None):
         """VolumeMetadata - a model defined in huaweicloud sdk"""
         
         
 
-        self._system_cmkid = None
-        self._system_encrypted = None
+        self._system__cmkid = None
+        self._system__encrypted = None
         self._full_clone = None
         self._hwpassthrough = None
         self._order_id = None
         self.discriminator = None
 
-        if system_cmkid is not None:
-            self.system_cmkid = system_cmkid
-        if system_encrypted is not None:
-            self.system_encrypted = system_encrypted
+        if system__cmkid is not None:
+            self.system__cmkid = system__cmkid
+        if system__encrypted is not None:
+            self.system__encrypted = system__encrypted
         if full_clone is not None:
             self.full_clone = full_clone
         if hwpassthrough is not None:
@@ -62,48 +62,48 @@ class VolumeMetadata:
             self.order_id = order_id
 
     @property
-    def system_cmkid(self):
-        """Gets the system_cmkid of this VolumeMetadata.
+    def system__cmkid(self):
+        """Gets the system__cmkid of this VolumeMetadata.
 
         metadata中的加密cmkid字段，与__system__encrypted配合表示需要加密，cmkid长度固定为36个字节。 > 说明： >  > 请求获取密钥ID的方法请参考：\"[查询密钥列表](https://support.huaweicloud.com/api-dew/dew_02_0017.html)\"。
 
-        :return: The system_cmkid of this VolumeMetadata.
+        :return: The system__cmkid of this VolumeMetadata.
         :rtype: str
         """
-        return self._system_cmkid
+        return self._system__cmkid
 
-    @system_cmkid.setter
-    def system_cmkid(self, system_cmkid):
-        """Sets the system_cmkid of this VolumeMetadata.
+    @system__cmkid.setter
+    def system__cmkid(self, system__cmkid):
+        """Sets the system__cmkid of this VolumeMetadata.
 
         metadata中的加密cmkid字段，与__system__encrypted配合表示需要加密，cmkid长度固定为36个字节。 > 说明： >  > 请求获取密钥ID的方法请参考：\"[查询密钥列表](https://support.huaweicloud.com/api-dew/dew_02_0017.html)\"。
 
-        :param system_cmkid: The system_cmkid of this VolumeMetadata.
+        :param system__cmkid: The system__cmkid of this VolumeMetadata.
         :type: str
         """
-        self._system_cmkid = system_cmkid
+        self._system__cmkid = system__cmkid
 
     @property
-    def system_encrypted(self):
-        """Gets the system_encrypted of this VolumeMetadata.
+    def system__encrypted(self):
+        """Gets the system__encrypted of this VolumeMetadata.
 
         metadata中的表示加密功能的字段，0代表不加密，1代表加密。 不指定该字段时，云硬盘的加密属性与数据源保持一致，如果不是从数据源创建的场景，则默认不加密。
 
-        :return: The system_encrypted of this VolumeMetadata.
+        :return: The system__encrypted of this VolumeMetadata.
         :rtype: str
         """
-        return self._system_encrypted
+        return self._system__encrypted
 
-    @system_encrypted.setter
-    def system_encrypted(self, system_encrypted):
-        """Sets the system_encrypted of this VolumeMetadata.
+    @system__encrypted.setter
+    def system__encrypted(self, system__encrypted):
+        """Sets the system__encrypted of this VolumeMetadata.
 
         metadata中的表示加密功能的字段，0代表不加密，1代表加密。 不指定该字段时，云硬盘的加密属性与数据源保持一致，如果不是从数据源创建的场景，则默认不加密。
 
-        :param system_encrypted: The system_encrypted of this VolumeMetadata.
+        :param system__encrypted: The system__encrypted of this VolumeMetadata.
         :type: str
         """
-        self._system_encrypted = system_encrypted
+        self._system__encrypted = system__encrypted
 
     @property
     def full_clone(self):
