@@ -2594,26 +2594,26 @@ class KafkaAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def update_instance_cross_vpcip_async(self, request):
+    def update_instance_cross_vpc_ip_async(self, request):
         """修改实例跨VPC访问的内网IP
 
         修改实例跨VPC访问的内网IP。
 
-        :param UpdateInstanceCrossVPCIPRequest request
-        :return: UpdateInstanceCrossVPCIPResponse
+        :param UpdateInstanceCrossVpcIpRequest request
+        :return: UpdateInstanceCrossVpcIpResponse
         """
-        return self.update_instance_cross_vpcip_with_http_info(request)
+        return self.update_instance_cross_vpc_ip_with_http_info(request)
 
-    def update_instance_cross_vpcip_with_http_info(self, request):
+    def update_instance_cross_vpc_ip_with_http_info(self, request):
         """修改实例跨VPC访问的内网IP
 
         修改实例跨VPC访问的内网IP。
 
-        :param UpdateInstanceCrossVPCIPRequest request
-        :return: UpdateInstanceCrossVPCIPResponse
+        :param UpdateInstanceCrossVpcIpRequest request
+        :return: UpdateInstanceCrossVpcIpResponse
         """
 
-        all_params = ['instance_id', 'update_instance_cross_vpcip_request_body']
+        all_params = ['instance_id', 'update_instance_cross_vpc_ip_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2652,7 +2652,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='UpdateInstanceCrossVPCIPResponse',
+            response_type='UpdateInstanceCrossVpcIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

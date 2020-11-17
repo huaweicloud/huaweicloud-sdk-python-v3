@@ -23,11 +23,11 @@ class ScheduledPolicy:
     sensitive_list = []
 
     openapi_types = {
-        'launch_time': 'datetime',
+        'launch_time': 'str',
         'recurrence_type': 'str',
         'recurrence_value': 'str',
-        'start_time': 'datetime',
-        'end_time': 'datetime'
+        'start_time': 'str',
+        'end_time': 'str'
     }
 
     attribute_map = {
@@ -68,7 +68,7 @@ class ScheduledPolicy:
         触发时间，遵循UTC时间。如果scaling_policy_type为SCHEDULED，则格式为：YYYY-MM-DDThh:mmZ。如果scaling_policy_type为RECURRENCE，则格式为：hh:mm。
 
         :return: The launch_time of this ScheduledPolicy.
-        :rtype: datetime
+        :rtype: str
         """
         return self._launch_time
 
@@ -79,7 +79,7 @@ class ScheduledPolicy:
         触发时间，遵循UTC时间。如果scaling_policy_type为SCHEDULED，则格式为：YYYY-MM-DDThh:mmZ。如果scaling_policy_type为RECURRENCE，则格式为：hh:mm。
 
         :param launch_time: The launch_time of this ScheduledPolicy.
-        :type: datetime
+        :type: str
         """
         self._launch_time = launch_time
 
@@ -134,7 +134,7 @@ class ScheduledPolicy:
         周期策略重复执行开始时间，遵循UTC时间。默认为当前时间，格式为：YYYY-MM-DDThh：mZ
 
         :return: The start_time of this ScheduledPolicy.
-        :rtype: datetime
+        :rtype: str
         """
         return self._start_time
 
@@ -145,7 +145,7 @@ class ScheduledPolicy:
         周期策略重复执行开始时间，遵循UTC时间。默认为当前时间，格式为：YYYY-MM-DDThh：mZ
 
         :param start_time: The start_time of this ScheduledPolicy.
-        :type: datetime
+        :type: str
         """
         self._start_time = start_time
 
@@ -156,7 +156,7 @@ class ScheduledPolicy:
         周期策略重复执行结束时间，遵循UTC时间，scaling_policy_type为RECURRENCE时该项必选。当为周期类型策略时，不得早于当前时间和开始时间。格式为：YYYY-MM-DDThh：mmZ
 
         :return: The end_time of this ScheduledPolicy.
-        :rtype: datetime
+        :rtype: str
         """
         return self._end_time
 
@@ -167,7 +167,7 @@ class ScheduledPolicy:
         周期策略重复执行结束时间，遵循UTC时间，scaling_policy_type为RECURRENCE时该项必选。当为周期类型策略时，不得早于当前时间和开始时间。格式为：YYYY-MM-DDThh：mmZ
 
         :param end_time: The end_time of this ScheduledPolicy.
-        :type: datetime
+        :type: str
         """
         self._end_time = end_time
 

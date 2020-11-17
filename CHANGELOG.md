@@ -1,3 +1,53 @@
+## 3.0.22-beta 2020-11-17
+## HuaweiCloud SDK DMS
+ - ### Features
+    - None
+ - ### Bug Fix
+    - None
+ - ### Change
+    - Type of property adjustment: type of property `created` and type of `eff_date` are changed from `string` to `integer64`.  
+
+## HuaweiCloud SDK ECS
+ - ### Features
+    - None
+ - ### Bug Fix
+    - None
+ - ### Change
+    - Property adjustment:  increase property `dry_run` in interfaces `CreatePostPaidServers` and `CreateServers` which means whether parameters will be checked before sending real requests. 
+
+## HuaweiCloud SDK NAT
+ - ### Features
+    - Support NAT Gateway service.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None 
+
+## HuaweiCloud SDK Kafka
+ - ### Features
+    - None
+ - ### Bug Fix
+    - None
+ - ### Change
+    - Name of interface adjustment: UpdateInstanceCrossVPCIP → UpdateInstanceCrossVpcIp
+
+## HuaweiCloud SDK RMS
+ - ### Features
+    - Support Resource Manager Service.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None 
+
+## HuaweiCloud SDK VPC
+ - ### Features
+    - Support more interfaces: interfaces related to Network ACLs. 
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+
 ## 3.0.21-beta 2020-11-11
 ## HuaweiCloud SDK Core
  - ### Features

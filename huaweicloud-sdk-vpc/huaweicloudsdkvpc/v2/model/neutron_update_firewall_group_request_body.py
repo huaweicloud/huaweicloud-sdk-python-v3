@@ -6,10 +6,10 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
 
 
-class UpdateInstanceCrossVPCIPResponse(SdkResponse):
+
+class NeutronUpdateFirewallGroupRequestBody:
 
 
     """
@@ -23,72 +23,42 @@ class UpdateInstanceCrossVPCIPResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'success': 'str',
-        'results': 'list[UpdateInstanceCrossVPCIPRespResults]'
+        'firewall_group': 'NeutronUpdateFirewallGroupOption'
     }
 
     attribute_map = {
-        'success': 'success',
-        'results': 'results'
+        'firewall_group': 'firewall_group'
     }
 
-    def __init__(self, success=None, results=None):
-        """UpdateInstanceCrossVPCIPResponse - a model defined in huaweicloud sdk"""
+    def __init__(self, firewall_group=None):
+        """NeutronUpdateFirewallGroupRequestBody - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        
 
-        self._success = None
-        self._results = None
+        self._firewall_group = None
         self.discriminator = None
 
-        if success is not None:
-            self.success = success
-        if results is not None:
-            self.results = results
+        self.firewall_group = firewall_group
 
     @property
-    def success(self):
-        """Gets the success of this UpdateInstanceCrossVPCIPResponse.
+    def firewall_group(self):
+        """Gets the firewall_group of this NeutronUpdateFirewallGroupRequestBody.
 
-        修改跨VPC访问结果。
 
-        :return: The success of this UpdateInstanceCrossVPCIPResponse.
-        :rtype: str
+        :return: The firewall_group of this NeutronUpdateFirewallGroupRequestBody.
+        :rtype: NeutronUpdateFirewallGroupOption
         """
-        return self._success
+        return self._firewall_group
 
-    @success.setter
-    def success(self, success):
-        """Sets the success of this UpdateInstanceCrossVPCIPResponse.
+    @firewall_group.setter
+    def firewall_group(self, firewall_group):
+        """Sets the firewall_group of this NeutronUpdateFirewallGroupRequestBody.
 
-        修改跨VPC访问结果。
 
-        :param success: The success of this UpdateInstanceCrossVPCIPResponse.
-        :type: str
+        :param firewall_group: The firewall_group of this NeutronUpdateFirewallGroupRequestBody.
+        :type: NeutronUpdateFirewallGroupOption
         """
-        self._success = success
-
-    @property
-    def results(self):
-        """Gets the results of this UpdateInstanceCrossVPCIPResponse.
-
-        修改broker跨VPC访问的结果列表。
-
-        :return: The results of this UpdateInstanceCrossVPCIPResponse.
-        :rtype: list[UpdateInstanceCrossVPCIPRespResults]
-        """
-        return self._results
-
-    @results.setter
-    def results(self, results):
-        """Sets the results of this UpdateInstanceCrossVPCIPResponse.
-
-        修改broker跨VPC访问的结果列表。
-
-        :param results: The results of this UpdateInstanceCrossVPCIPResponse.
-        :type: list[UpdateInstanceCrossVPCIPRespResults]
-        """
-        self._results = results
+        self._firewall_group = firewall_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -127,7 +97,7 @@ class UpdateInstanceCrossVPCIPResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdateInstanceCrossVPCIPResponse):
+        if not isinstance(other, NeutronUpdateFirewallGroupRequestBody):
             return False
 
         return self.__dict__ == other.__dict__

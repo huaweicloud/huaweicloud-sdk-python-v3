@@ -232,7 +232,7 @@ class CreatePostPaidInstanceReq:
     def engine_version(self):
         """Gets the engine_version of this CreatePostPaidInstanceReq.
 
-        消息引擎的版本。取值填写为：1.1.0。
+        消息引擎的版本。取值填写为：1.1.0和2.3.0。
 
         :return: The engine_version of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -243,7 +243,7 @@ class CreatePostPaidInstanceReq:
     def engine_version(self, engine_version):
         """Sets the engine_version of this CreatePostPaidInstanceReq.
 
-        消息引擎的版本。取值填写为：1.1.0。
+        消息引擎的版本。取值填写为：1.1.0和2.3.0。
 
         :param engine_version: The engine_version of this CreatePostPaidInstanceReq.
         :type: str

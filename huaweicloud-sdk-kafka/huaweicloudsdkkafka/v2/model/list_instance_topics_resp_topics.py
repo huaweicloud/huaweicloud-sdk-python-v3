@@ -23,7 +23,7 @@ class ListInstanceTopicsRespTopics:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
+        'name': 'str',
         'replication': 'int',
         'partition': 'int',
         'retention_time': 'int',
@@ -32,7 +32,7 @@ class ListInstanceTopicsRespTopics:
     }
 
     attribute_map = {
-        'id': 'id',
+        'name': 'name',
         'replication': 'replication',
         'partition': 'partition',
         'retention_time': 'retention_time',
@@ -40,12 +40,12 @@ class ListInstanceTopicsRespTopics:
         'sync_message_flush': 'sync_message_flush'
     }
 
-    def __init__(self, id=None, replication=None, partition=None, retention_time=None, sync_replication=None, sync_message_flush=None):
+    def __init__(self, name=None, replication=None, partition=None, retention_time=None, sync_replication=None, sync_message_flush=None):
         """ListInstanceTopicsRespTopics - a model defined in huaweicloud sdk"""
         
         
 
-        self._id = None
+        self._name = None
         self._replication = None
         self._partition = None
         self._retention_time = None
@@ -53,8 +53,8 @@ class ListInstanceTopicsRespTopics:
         self._sync_message_flush = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
+        if name is not None:
+            self.name = name
         if replication is not None:
             self.replication = replication
         if partition is not None:
@@ -67,26 +67,26 @@ class ListInstanceTopicsRespTopics:
             self.sync_message_flush = sync_message_flush
 
     @property
-    def id(self):
-        """Gets the id of this ListInstanceTopicsRespTopics.
+    def name(self):
+        """Gets the name of this ListInstanceTopicsRespTopics.
 
         topic名称。
 
-        :return: The id of this ListInstanceTopicsRespTopics.
+        :return: The name of this ListInstanceTopicsRespTopics.
         :rtype: str
         """
-        return self._id
+        return self._name
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ListInstanceTopicsRespTopics.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListInstanceTopicsRespTopics.
 
         topic名称。
 
-        :param id: The id of this ListInstanceTopicsRespTopics.
+        :param name: The name of this ListInstanceTopicsRespTopics.
         :type: str
         """
-        self._id = id
+        self._name = name
 
     @property
     def replication(self):

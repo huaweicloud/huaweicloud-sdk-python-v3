@@ -2013,6 +2013,1112 @@ class VpcAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def neutron_add_firewall_rule_async(self, request):
+        """插入网络ACL规则
+
+        插入一条网络ACL规则到某一网络ACL策略中。
+
+        :param NeutronAddFirewallRuleRequest request
+        :return: NeutronAddFirewallRuleResponse
+        """
+        return self.neutron_add_firewall_rule_with_http_info(request)
+
+    def neutron_add_firewall_rule_with_http_info(self, request):
+        """插入网络ACL规则
+
+        插入一条网络ACL规则到某一网络ACL策略中。
+
+        :param NeutronAddFirewallRuleRequest request
+        :return: NeutronAddFirewallRuleResponse
+        """
+
+        all_params = ['firewall_policy_id', 'insert_firewall_rule']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_policy_id' in local_var_params:
+            path_params['firewall_policy_id'] = local_var_params['firewall_policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_policies/{firewall_policy_id}/insert_rule',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronAddFirewallRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_create_firewall_group_async(self, request):
+        """创建网络ACL组
+
+        创建网络ACL组
+
+        :param NeutronCreateFirewallGroupRequest request
+        :return: NeutronCreateFirewallGroupResponse
+        """
+        return self.neutron_create_firewall_group_with_http_info(request)
+
+    def neutron_create_firewall_group_with_http_info(self, request):
+        """创建网络ACL组
+
+        创建网络ACL组
+
+        :param NeutronCreateFirewallGroupRequest request
+        :return: NeutronCreateFirewallGroupResponse
+        """
+
+        all_params = ['firewall_group']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_groups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronCreateFirewallGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_create_firewall_policy_async(self, request):
+        """创建网络ACL策略
+
+        创建网络ACL策略。
+
+        :param NeutronCreateFirewallPolicyRequest request
+        :return: NeutronCreateFirewallPolicyResponse
+        """
+        return self.neutron_create_firewall_policy_with_http_info(request)
+
+    def neutron_create_firewall_policy_with_http_info(self, request):
+        """创建网络ACL策略
+
+        创建网络ACL策略。
+
+        :param NeutronCreateFirewallPolicyRequest request
+        :return: NeutronCreateFirewallPolicyResponse
+        """
+
+        all_params = ['firewall_policy']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_policies',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronCreateFirewallPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_create_firewall_rule_async(self, request):
+        """创建网络ACL规则
+
+        创建网络ACL规则。
+
+        :param NeutronCreateFirewallRuleRequest request
+        :return: NeutronCreateFirewallRuleResponse
+        """
+        return self.neutron_create_firewall_rule_with_http_info(request)
+
+    def neutron_create_firewall_rule_with_http_info(self, request):
+        """创建网络ACL规则
+
+        创建网络ACL规则。
+
+        :param NeutronCreateFirewallRuleRequest request
+        :return: NeutronCreateFirewallRuleResponse
+        """
+
+        all_params = ['firewall_rule']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_rules',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronCreateFirewallRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_delete_firewall_group_async(self, request):
+        """删除网络ACL组
+
+        删除网络ACL组
+
+        :param NeutronDeleteFirewallGroupRequest request
+        :return: NeutronDeleteFirewallGroupResponse
+        """
+        return self.neutron_delete_firewall_group_with_http_info(request)
+
+    def neutron_delete_firewall_group_with_http_info(self, request):
+        """删除网络ACL组
+
+        删除网络ACL组
+
+        :param NeutronDeleteFirewallGroupRequest request
+        :return: NeutronDeleteFirewallGroupResponse
+        """
+
+        all_params = ['firewall_group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_group_id' in local_var_params:
+            path_params['firewall_group_id'] = local_var_params['firewall_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_groups/{firewall_group_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronDeleteFirewallGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_delete_firewall_policy_async(self, request):
+        """删除网络ACL策略
+
+        删除网络ACL策略。
+
+        :param NeutronDeleteFirewallPolicyRequest request
+        :return: NeutronDeleteFirewallPolicyResponse
+        """
+        return self.neutron_delete_firewall_policy_with_http_info(request)
+
+    def neutron_delete_firewall_policy_with_http_info(self, request):
+        """删除网络ACL策略
+
+        删除网络ACL策略。
+
+        :param NeutronDeleteFirewallPolicyRequest request
+        :return: NeutronDeleteFirewallPolicyResponse
+        """
+
+        all_params = ['firewall_policy_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_policy_id' in local_var_params:
+            path_params['firewall_policy_id'] = local_var_params['firewall_policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_policies/{firewall_policy_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronDeleteFirewallPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_delete_firewall_rule_async(self, request):
+        """删除网络ACL规则
+
+        删除网络ACL规则。
+
+        :param NeutronDeleteFirewallRuleRequest request
+        :return: NeutronDeleteFirewallRuleResponse
+        """
+        return self.neutron_delete_firewall_rule_with_http_info(request)
+
+    def neutron_delete_firewall_rule_with_http_info(self, request):
+        """删除网络ACL规则
+
+        删除网络ACL规则。
+
+        :param NeutronDeleteFirewallRuleRequest request
+        :return: NeutronDeleteFirewallRuleResponse
+        """
+
+        all_params = ['firewall_rule_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_rule_id' in local_var_params:
+            path_params['firewall_rule_id'] = local_var_params['firewall_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_rules/{firewall_rule_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronDeleteFirewallRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_list_firewall_groups_async(self, request):
+        """查询所有网络ACL组
+
+        查询提交请求的租户有权限操作的所有网络ACL组信息。单次查询最多返回2000条数据，超过2000后会返回分页标记。
+
+        :param NeutronListFirewallGroupsRequest request
+        :return: NeutronListFirewallGroupsResponse
+        """
+        return self.neutron_list_firewall_groups_with_http_info(request)
+
+    def neutron_list_firewall_groups_with_http_info(self, request):
+        """查询所有网络ACL组
+
+        查询提交请求的租户有权限操作的所有网络ACL组信息。单次查询最多返回2000条数据，超过2000后会返回分页标记。
+
+        :param NeutronListFirewallGroupsRequest request
+        :return: NeutronListFirewallGroupsResponse
+        """
+
+        all_params = ['marker', 'limit', 'id', 'name', 'description', 'ingress_firewall_policy_id', 'egress_firewall_policy_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'multi'
+        if 'ingress_firewall_policy_id' in local_var_params:
+            query_params.append(('ingress_firewall_policy_id', local_var_params['ingress_firewall_policy_id']))
+        if 'egress_firewall_policy_id' in local_var_params:
+            query_params.append(('egress_firewall_policy_id', local_var_params['egress_firewall_policy_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronListFirewallGroupsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_list_firewall_policies_async(self, request):
+        """查询所有网络ACL策略
+
+        查询提交请求的租户有权限操作的所有网络ACL策略信息。单次查询最多返回2000条数据，超过2000后会返回分页标记。
+
+        :param NeutronListFirewallPoliciesRequest request
+        :return: NeutronListFirewallPoliciesResponse
+        """
+        return self.neutron_list_firewall_policies_with_http_info(request)
+
+    def neutron_list_firewall_policies_with_http_info(self, request):
+        """查询所有网络ACL策略
+
+        查询提交请求的租户有权限操作的所有网络ACL策略信息。单次查询最多返回2000条数据，超过2000后会返回分页标记。
+
+        :param NeutronListFirewallPoliciesRequest request
+        :return: NeutronListFirewallPoliciesResponse
+        """
+
+        all_params = ['limit', 'marker', 'id', 'name', 'description', 'tenant_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'multi'
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_policies',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronListFirewallPoliciesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_list_firewall_rules_async(self, request):
+        """查询所有网络ACL规则
+
+        查询提交请求的租户有权限操作的所有网络ACL规则信息。单次查询最多返回2000条数据，超过2000后会返回分页标记。
+
+        :param NeutronListFirewallRulesRequest request
+        :return: NeutronListFirewallRulesResponse
+        """
+        return self.neutron_list_firewall_rules_with_http_info(request)
+
+    def neutron_list_firewall_rules_with_http_info(self, request):
+        """查询所有网络ACL规则
+
+        查询提交请求的租户有权限操作的所有网络ACL规则信息。单次查询最多返回2000条数据，超过2000后会返回分页标记。
+
+        :param NeutronListFirewallRulesRequest request
+        :return: NeutronListFirewallRulesResponse
+        """
+
+        all_params = ['marker', 'limit', 'id', 'name', 'description', 'action', 'tenant_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'multi'
+        if 'action' in local_var_params:
+            query_params.append(('action', local_var_params['action']))
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_rules',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronListFirewallRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_remove_firewall_rule_async(self, request):
+        """移除网络ACL规则
+
+        从某一网络ACL策略中移除一条网络ACL规则。
+
+        :param NeutronRemoveFirewallRuleRequest request
+        :return: NeutronRemoveFirewallRuleResponse
+        """
+        return self.neutron_remove_firewall_rule_with_http_info(request)
+
+    def neutron_remove_firewall_rule_with_http_info(self, request):
+        """移除网络ACL规则
+
+        从某一网络ACL策略中移除一条网络ACL规则。
+
+        :param NeutronRemoveFirewallRuleRequest request
+        :return: NeutronRemoveFirewallRuleResponse
+        """
+
+        all_params = ['firewall_policy_id', 'remove_firewall_rule']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_policy_id' in local_var_params:
+            path_params['firewall_policy_id'] = local_var_params['firewall_policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_policies/{firewall_policy_id}/remove_rule',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronRemoveFirewallRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_show_firewall_group_async(self, request):
+        """查询特定网络ACL组详情
+
+        查询特定网络ACL组详情。
+
+        :param NeutronShowFirewallGroupRequest request
+        :return: NeutronShowFirewallGroupResponse
+        """
+        return self.neutron_show_firewall_group_with_http_info(request)
+
+    def neutron_show_firewall_group_with_http_info(self, request):
+        """查询特定网络ACL组详情
+
+        查询特定网络ACL组详情。
+
+        :param NeutronShowFirewallGroupRequest request
+        :return: NeutronShowFirewallGroupResponse
+        """
+
+        all_params = ['firewall_group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_group_id' in local_var_params:
+            path_params['firewall_group_id'] = local_var_params['firewall_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_groups/{firewall_group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronShowFirewallGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_show_firewall_policy_async(self, request):
+        """查询特定网络ACL策略详情
+
+        查询特定网络ACL策略详情。
+
+        :param NeutronShowFirewallPolicyRequest request
+        :return: NeutronShowFirewallPolicyResponse
+        """
+        return self.neutron_show_firewall_policy_with_http_info(request)
+
+    def neutron_show_firewall_policy_with_http_info(self, request):
+        """查询特定网络ACL策略详情
+
+        查询特定网络ACL策略详情。
+
+        :param NeutronShowFirewallPolicyRequest request
+        :return: NeutronShowFirewallPolicyResponse
+        """
+
+        all_params = ['firewall_policy_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_policy_id' in local_var_params:
+            path_params['firewall_policy_id'] = local_var_params['firewall_policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_policies/{firewall_policy_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronShowFirewallPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_show_firewall_rule_async(self, request):
+        """查询特定网络ACL规则
+
+        查询特定网络ACL规则。
+
+        :param NeutronShowFirewallRuleRequest request
+        :return: NeutronShowFirewallRuleResponse
+        """
+        return self.neutron_show_firewall_rule_with_http_info(request)
+
+    def neutron_show_firewall_rule_with_http_info(self, request):
+        """查询特定网络ACL规则
+
+        查询特定网络ACL规则。
+
+        :param NeutronShowFirewallRuleRequest request
+        :return: NeutronShowFirewallRuleResponse
+        """
+
+        all_params = ['firewall_rule_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_rule_id' in local_var_params:
+            path_params['firewall_rule_id'] = local_var_params['firewall_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_rules/{firewall_rule_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronShowFirewallRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_update_firewall_group_async(self, request):
+        """更新网络ACL组
+
+        更新网络ACL组。
+
+        :param NeutronUpdateFirewallGroupRequest request
+        :return: NeutronUpdateFirewallGroupResponse
+        """
+        return self.neutron_update_firewall_group_with_http_info(request)
+
+    def neutron_update_firewall_group_with_http_info(self, request):
+        """更新网络ACL组
+
+        更新网络ACL组。
+
+        :param NeutronUpdateFirewallGroupRequest request
+        :return: NeutronUpdateFirewallGroupResponse
+        """
+
+        all_params = ['firewall_group_id', 'firewall_group']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_group_id' in local_var_params:
+            path_params['firewall_group_id'] = local_var_params['firewall_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_groups/{firewall_group_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronUpdateFirewallGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_update_firewall_policy_async(self, request):
+        """更新网络ACL策略
+
+        更新网络ACL策略。
+
+        :param NeutronUpdateFirewallPolicyRequest request
+        :return: NeutronUpdateFirewallPolicyResponse
+        """
+        return self.neutron_update_firewall_policy_with_http_info(request)
+
+    def neutron_update_firewall_policy_with_http_info(self, request):
+        """更新网络ACL策略
+
+        更新网络ACL策略。
+
+        :param NeutronUpdateFirewallPolicyRequest request
+        :return: NeutronUpdateFirewallPolicyResponse
+        """
+
+        all_params = ['firewall_policy_id', 'firewall_policy']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_policy_id' in local_var_params:
+            path_params['firewall_policy_id'] = local_var_params['firewall_policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_policies/{firewall_policy_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronUpdateFirewallPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_update_firewall_rule_async(self, request):
+        """更新网络ACL规则
+
+        更新网络ACL规则。
+
+        :param NeutronUpdateFirewallRuleRequest request
+        :return: NeutronUpdateFirewallRuleResponse
+        """
+        return self.neutron_update_firewall_rule_with_http_info(request)
+
+    def neutron_update_firewall_rule_with_http_info(self, request):
+        """更新网络ACL规则
+
+        更新网络ACL规则。
+
+        :param NeutronUpdateFirewallRuleRequest request
+        :return: NeutronUpdateFirewallRuleResponse
+        """
+
+        all_params = ['firewall_rule_id', 'firewall_rule']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'firewall_rule_id' in local_var_params:
+            path_params['firewall_rule_id'] = local_var_params['firewall_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/fwaas/firewall_rules/{firewall_rule_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronUpdateFirewallRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_vpc_async(self, request):
         """创建VPC
 

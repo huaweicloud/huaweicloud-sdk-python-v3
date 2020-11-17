@@ -28,7 +28,7 @@ class ListInstancesRespInstances:
         'engine_version': 'str',
         'specification': 'str',
         'storage_space': 'int',
-        'partition_num': 'int',
+        'partition_num': 'str',
         'used_storage_space': 'int',
         'connect_address': 'str',
         'port': 'int',
@@ -453,7 +453,7 @@ class ListInstancesRespInstances:
         Kafka实例的最大topic数。
 
         :return: The partition_num of this ListInstancesRespInstances.
-        :rtype: int
+        :rtype: str
         """
         return self._partition_num
 
@@ -464,7 +464,7 @@ class ListInstancesRespInstances:
         Kafka实例的最大topic数。
 
         :param partition_num: The partition_num of this ListInstancesRespInstances.
-        :type: int
+        :type: str
         """
         self._partition_num = partition_num
 

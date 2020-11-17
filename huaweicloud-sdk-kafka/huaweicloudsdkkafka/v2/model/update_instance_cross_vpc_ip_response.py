@@ -6,10 +6,10 @@ import re
 import six
 
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 
 
-
-class UpdateInstanceCrossVPCIPRespResults:
+class UpdateInstanceCrossVpcIpResponse(SdkResponse):
 
 
     """
@@ -23,99 +23,72 @@ class UpdateInstanceCrossVPCIPRespResults:
     sensitive_list = []
 
     openapi_types = {
-        'advertised_ip': 'str',
         'success': 'str',
-        'ip': 'str'
+        'results': 'list[UpdateInstanceCrossVpcIpRespResults]'
     }
 
     attribute_map = {
-        'advertised_ip': 'advertised_ip',
         'success': 'success',
-        'ip': 'ip'
+        'results': 'results'
     }
 
-    def __init__(self, advertised_ip=None, success=None, ip=None):
-        """UpdateInstanceCrossVPCIPRespResults - a model defined in huaweicloud sdk"""
+    def __init__(self, success=None, results=None):
+        """UpdateInstanceCrossVpcIpResponse - a model defined in huaweicloud sdk"""
         
-        
+        super().__init__()
 
-        self._advertised_ip = None
         self._success = None
-        self._ip = None
+        self._results = None
         self.discriminator = None
 
-        if advertised_ip is not None:
-            self.advertised_ip = advertised_ip
         if success is not None:
             self.success = success
-        if ip is not None:
-            self.ip = ip
-
-    @property
-    def advertised_ip(self):
-        """Gets the advertised_ip of this UpdateInstanceCrossVPCIPRespResults.
-
-        advertised.listeners IP/域名。
-
-        :return: The advertised_ip of this UpdateInstanceCrossVPCIPRespResults.
-        :rtype: str
-        """
-        return self._advertised_ip
-
-    @advertised_ip.setter
-    def advertised_ip(self, advertised_ip):
-        """Sets the advertised_ip of this UpdateInstanceCrossVPCIPRespResults.
-
-        advertised.listeners IP/域名。
-
-        :param advertised_ip: The advertised_ip of this UpdateInstanceCrossVPCIPRespResults.
-        :type: str
-        """
-        self._advertised_ip = advertised_ip
+        if results is not None:
+            self.results = results
 
     @property
     def success(self):
-        """Gets the success of this UpdateInstanceCrossVPCIPRespResults.
+        """Gets the success of this UpdateInstanceCrossVpcIpResponse.
 
-        修改broker跨VPC访问的状态。
+        修改跨VPC访问结果。
 
-        :return: The success of this UpdateInstanceCrossVPCIPRespResults.
+        :return: The success of this UpdateInstanceCrossVpcIpResponse.
         :rtype: str
         """
         return self._success
 
     @success.setter
     def success(self, success):
-        """Sets the success of this UpdateInstanceCrossVPCIPRespResults.
+        """Sets the success of this UpdateInstanceCrossVpcIpResponse.
 
-        修改broker跨VPC访问的状态。
+        修改跨VPC访问结果。
 
-        :param success: The success of this UpdateInstanceCrossVPCIPRespResults.
+        :param success: The success of this UpdateInstanceCrossVpcIpResponse.
         :type: str
         """
         self._success = success
 
     @property
-    def ip(self):
-        """Gets the ip of this UpdateInstanceCrossVPCIPRespResults.
+    def results(self):
+        """Gets the results of this UpdateInstanceCrossVpcIpResponse.
 
-        listeners IP。
+        修改broker跨VPC访问的结果列表。
 
-        :return: The ip of this UpdateInstanceCrossVPCIPRespResults.
-        :rtype: str
+        :return: The results of this UpdateInstanceCrossVpcIpResponse.
+        :rtype: list[UpdateInstanceCrossVpcIpRespResults]
         """
-        return self._ip
+        return self._results
 
-    @ip.setter
-    def ip(self, ip):
-        """Sets the ip of this UpdateInstanceCrossVPCIPRespResults.
+    @results.setter
+    def results(self, results):
+        """Sets the results of this UpdateInstanceCrossVpcIpResponse.
 
-        listeners IP。
+        修改broker跨VPC访问的结果列表。
 
-        :param ip: The ip of this UpdateInstanceCrossVPCIPRespResults.
-        :type: str
+        :param results: The results of this UpdateInstanceCrossVpcIpResponse.
+        :type: list[UpdateInstanceCrossVpcIpRespResults]
         """
-        self._ip = ip
+        self._results = results
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -154,7 +127,7 @@ class UpdateInstanceCrossVPCIPRespResults:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdateInstanceCrossVPCIPRespResults):
+        if not isinstance(other, UpdateInstanceCrossVpcIpResponse):
             return False
 
         return self.__dict__ == other.__dict__

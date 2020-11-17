@@ -6,10 +6,10 @@ import re
 import six
 
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 
 
-
-class UpdateInstanceCrossVPCIPRequest:
+class NeutronUpdateFirewallRuleResponse(SdkResponse):
 
 
     """
@@ -23,67 +23,43 @@ class UpdateInstanceCrossVPCIPRequest:
     sensitive_list = []
 
     openapi_types = {
-        'instance_id': 'str',
-        'body': 'UpdateInstanceCrossVPCIPReq'
+        'firewall_rule': 'NeutronFirewallRule'
     }
 
     attribute_map = {
-        'instance_id': 'instance_id',
-        'body': 'body'
+        'firewall_rule': 'firewall_rule'
     }
 
-    def __init__(self, instance_id=None, body=None):
-        """UpdateInstanceCrossVPCIPRequest - a model defined in huaweicloud sdk"""
+    def __init__(self, firewall_rule=None):
+        """NeutronUpdateFirewallRuleResponse - a model defined in huaweicloud sdk"""
         
-        
+        super().__init__()
 
-        self._instance_id = None
-        self._body = None
+        self._firewall_rule = None
         self.discriminator = None
 
-        self.instance_id = instance_id
-        if body is not None:
-            self.body = body
+        if firewall_rule is not None:
+            self.firewall_rule = firewall_rule
 
     @property
-    def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceCrossVPCIPRequest.
+    def firewall_rule(self):
+        """Gets the firewall_rule of this NeutronUpdateFirewallRuleResponse.
 
 
-        :return: The instance_id of this UpdateInstanceCrossVPCIPRequest.
-        :rtype: str
+        :return: The firewall_rule of this NeutronUpdateFirewallRuleResponse.
+        :rtype: NeutronFirewallRule
         """
-        return self._instance_id
+        return self._firewall_rule
 
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceCrossVPCIPRequest.
+    @firewall_rule.setter
+    def firewall_rule(self, firewall_rule):
+        """Sets the firewall_rule of this NeutronUpdateFirewallRuleResponse.
 
 
-        :param instance_id: The instance_id of this UpdateInstanceCrossVPCIPRequest.
-        :type: str
+        :param firewall_rule: The firewall_rule of this NeutronUpdateFirewallRuleResponse.
+        :type: NeutronFirewallRule
         """
-        self._instance_id = instance_id
-
-    @property
-    def body(self):
-        """Gets the body of this UpdateInstanceCrossVPCIPRequest.
-
-
-        :return: The body of this UpdateInstanceCrossVPCIPRequest.
-        :rtype: UpdateInstanceCrossVPCIPReq
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        """Sets the body of this UpdateInstanceCrossVPCIPRequest.
-
-
-        :param body: The body of this UpdateInstanceCrossVPCIPRequest.
-        :type: UpdateInstanceCrossVPCIPReq
-        """
-        self._body = body
+        self._firewall_rule = firewall_rule
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -122,7 +98,7 @@ class UpdateInstanceCrossVPCIPRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdateInstanceCrossVPCIPRequest):
+        if not isinstance(other, NeutronUpdateFirewallRuleResponse):
             return False
 
         return self.__dict__ == other.__dict__

@@ -77,7 +77,7 @@ class ListProductsRespHourly:
     def version(self):
         """Gets the version of this ListProductsRespHourly.
 
-        消息引擎的版本，当前仅支持1.1.0。
+        消息引擎的版本，当前仅支持1.1.0和2.3.0。
 
         :return: The version of this ListProductsRespHourly.
         :rtype: str
@@ -88,7 +88,7 @@ class ListProductsRespHourly:
     def version(self, version):
         """Sets the version of this ListProductsRespHourly.
 
-        消息引擎的版本，当前仅支持1.1.0。
+        消息引擎的版本，当前仅支持1.1.0和2.3.0。
 
         :param version: The version of this ListProductsRespHourly.
         :type: str

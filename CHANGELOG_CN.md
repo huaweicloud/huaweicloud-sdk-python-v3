@@ -1,3 +1,53 @@
+## 3.0.22-beta 2020-11-17
+## HuaweiCloud SDK DMS
+ - ### 新增特性
+    - 无
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 属性类型调整：属性 `创建队列的时间` 由 `string` 类型调整为 `integer64` 类型
+
+## HuaweiCloud SDK ECS
+ - ### 新增特性
+    - 无
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 创建虚拟机接口（按需和包周期）增加 `dry_run` 属性，表示是否预检此次请求
+
+## HuaweiCloud SDK NAT
+ - ### 新增特性
+    - 支持NAT网关服务
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 无
+
+## HuaweiCloud SDK Kafka
+ - ### 新增特性
+    - 无
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 接口名调整：UpdateInstanceCrossVPCIP → UpdateInstanceCrossVpcIp
+
+## HuaweiCloud SDK RMS
+ - ### 新增特性
+    - 支持资源管理服务
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 无
+
+## HuaweiCloud SDK VPC
+ - ### 新增特性
+    - 支持网络ACL相关接口
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 无
+
+
 ## 3.0.21-beta 2020-11-11
 ## HuaweiCloud SDK Core
  - ### 新增特性

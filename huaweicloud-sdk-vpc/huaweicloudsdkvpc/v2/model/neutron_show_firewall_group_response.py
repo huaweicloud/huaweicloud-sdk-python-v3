@@ -6,10 +6,10 @@ import re
 import six
 
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 
 
-
-class UpdateInstanceCrossVPCIPReq:
+class NeutronShowFirewallGroupResponse(SdkResponse):
 
 
     """
@@ -23,44 +23,43 @@ class UpdateInstanceCrossVPCIPReq:
     sensitive_list = []
 
     openapi_types = {
-        'advertised_ip_contents': 'dict(str, str)'
+        'firewall_group': 'NeutronFirewallGroup'
     }
 
     attribute_map = {
-        'advertised_ip_contents': 'advertised_ip_contents'
+        'firewall_group': 'firewall_group'
     }
 
-    def __init__(self, advertised_ip_contents=None):
-        """UpdateInstanceCrossVPCIPReq - a model defined in huaweicloud sdk"""
+    def __init__(self, firewall_group=None):
+        """NeutronShowFirewallGroupResponse - a model defined in huaweicloud sdk"""
         
-        
+        super().__init__()
 
-        self._advertised_ip_contents = None
+        self._firewall_group = None
         self.discriminator = None
 
-        self.advertised_ip_contents = advertised_ip_contents
+        if firewall_group is not None:
+            self.firewall_group = firewall_group
 
     @property
-    def advertised_ip_contents(self):
-        """Gets the advertised_ip_contents of this UpdateInstanceCrossVPCIPReq.
+    def firewall_group(self):
+        """Gets the firewall_group of this NeutronShowFirewallGroupResponse.
 
-        用户自定义的advertised_ip_contents键值对。  键是listeners IP。  值是advertised.listeners IP，或者域名。  > IP修改未修改项也需填上。
 
-        :return: The advertised_ip_contents of this UpdateInstanceCrossVPCIPReq.
-        :rtype: dict(str, str)
+        :return: The firewall_group of this NeutronShowFirewallGroupResponse.
+        :rtype: NeutronFirewallGroup
         """
-        return self._advertised_ip_contents
+        return self._firewall_group
 
-    @advertised_ip_contents.setter
-    def advertised_ip_contents(self, advertised_ip_contents):
-        """Sets the advertised_ip_contents of this UpdateInstanceCrossVPCIPReq.
+    @firewall_group.setter
+    def firewall_group(self, firewall_group):
+        """Sets the firewall_group of this NeutronShowFirewallGroupResponse.
 
-        用户自定义的advertised_ip_contents键值对。  键是listeners IP。  值是advertised.listeners IP，或者域名。  > IP修改未修改项也需填上。
 
-        :param advertised_ip_contents: The advertised_ip_contents of this UpdateInstanceCrossVPCIPReq.
-        :type: dict(str, str)
+        :param firewall_group: The firewall_group of this NeutronShowFirewallGroupResponse.
+        :type: NeutronFirewallGroup
         """
-        self._advertised_ip_contents = advertised_ip_contents
+        self._firewall_group = firewall_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -99,7 +98,7 @@ class UpdateInstanceCrossVPCIPReq:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdateInstanceCrossVPCIPReq):
+        if not isinstance(other, NeutronShowFirewallGroupResponse):
             return False
 
         return self.__dict__ == other.__dict__

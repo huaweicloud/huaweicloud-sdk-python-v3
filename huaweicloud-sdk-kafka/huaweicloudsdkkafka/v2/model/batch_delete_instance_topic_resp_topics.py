@@ -24,7 +24,7 @@ class BatchDeleteInstanceTopicRespTopics:
 
     openapi_types = {
         'id': 'str',
-        'success': 'str'
+        'success': 'bool'
     }
 
     attribute_map = {
@@ -75,7 +75,7 @@ class BatchDeleteInstanceTopicRespTopics:
         topic名称。
 
         :return: The success of this BatchDeleteInstanceTopicRespTopics.
-        :rtype: str
+        :rtype: bool
         """
         return self._success
 
@@ -86,7 +86,7 @@ class BatchDeleteInstanceTopicRespTopics:
         topic名称。
 
         :param success: The success of this BatchDeleteInstanceTopicRespTopics.
-        :type: str
+        :type: bool
         """
         self._success = success
 

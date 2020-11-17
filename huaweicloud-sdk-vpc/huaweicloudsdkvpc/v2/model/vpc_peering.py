@@ -28,8 +28,8 @@ class VpcPeering:
         'status': 'str',
         'request_vpc_info': 'VpcInfo',
         'accept_vpc_info': 'VpcInfo',
-        'created_at': 'str',
-        'updated_at': 'str',
+        'created_at': 'datetime',
+        'updated_at': 'datetime',
         'description': 'str'
     }
 
@@ -181,7 +181,7 @@ class VpcPeering:
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
         :return: The created_at of this VpcPeering.
-        :rtype: str
+        :rtype: datetime
         """
         return self._created_at
 
@@ -192,7 +192,7 @@ class VpcPeering:
         功能说明：资源创建UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
         :param created_at: The created_at of this VpcPeering.
-        :type: str
+        :type: datetime
         """
         self._created_at = created_at
 
@@ -203,7 +203,7 @@ class VpcPeering:
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
         :return: The updated_at of this VpcPeering.
-        :rtype: str
+        :rtype: datetime
         """
         return self._updated_at
 
@@ -214,7 +214,7 @@ class VpcPeering:
         功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
         :param updated_at: The updated_at of this VpcPeering.
-        :type: str
+        :type: datetime
         """
         self._updated_at = updated_at
 

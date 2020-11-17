@@ -23,45 +23,45 @@ class CreateInstanceTopicResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str'
+        'name': 'str'
     }
 
     attribute_map = {
-        'id': 'id'
+        'name': 'name'
     }
 
-    def __init__(self, id=None):
+    def __init__(self, name=None):
         """CreateInstanceTopicResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._id = None
+        self._name = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
+        if name is not None:
+            self.name = name
 
     @property
-    def id(self):
-        """Gets the id of this CreateInstanceTopicResponse.
+    def name(self):
+        """Gets the name of this CreateInstanceTopicResponse.
 
         topic名称。
 
-        :return: The id of this CreateInstanceTopicResponse.
+        :return: The name of this CreateInstanceTopicResponse.
         :rtype: str
         """
-        return self._id
+        return self._name
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this CreateInstanceTopicResponse.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this CreateInstanceTopicResponse.
 
         topic名称。
 
-        :param id: The id of this CreateInstanceTopicResponse.
+        :param name: The name of this CreateInstanceTopicResponse.
         :type: str
         """
-        self._id = id
+        self._name = name
 
     def to_dict(self):
         """Returns the model properties as a dict"""
