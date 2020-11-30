@@ -37,7 +37,9 @@ class ShowUserResult:
         'update_time': 'str',
         'create_time': 'str',
         'last_login_time': 'str',
-        'pwd_stength': 'str'
+        'pwd_stength': 'str',
+        'is_domain_owner': 'bool',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -55,10 +57,12 @@ class ShowUserResult:
         'update_time': 'update_time',
         'create_time': 'create_time',
         'last_login_time': 'last_login_time',
-        'pwd_stength': 'pwd_stength'
+        'pwd_stength': 'pwd_stength',
+        'is_domain_owner': 'is_domain_owner',
+        'description': 'description'
     }
 
-    def __init__(self, enabled=None, id=None, domain_id=None, name=None, links=None, xuser_id=None, xuser_type=None, areacode=None, email=None, phone=None, pwd_status=None, update_time=None, create_time=None, last_login_time=None, pwd_stength=None):
+    def __init__(self, enabled=None, id=None, domain_id=None, name=None, links=None, xuser_id=None, xuser_type=None, areacode=None, email=None, phone=None, pwd_status=None, update_time=None, create_time=None, last_login_time=None, pwd_stength=None, is_domain_owner=None, description=None):
         """ShowUserResult - a model defined in huaweicloud sdk"""
         
         
@@ -78,6 +82,8 @@ class ShowUserResult:
         self._create_time = None
         self._last_login_time = None
         self._pwd_stength = None
+        self._is_domain_owner = None
+        self._description = None
         self.discriminator = None
 
         self.enabled = enabled
@@ -105,6 +111,8 @@ class ShowUserResult:
             self.last_login_time = last_login_time
         if pwd_stength is not None:
             self.pwd_stength = pwd_stength
+        self.is_domain_owner = is_domain_owner
+        self.description = description
 
     @property
     def enabled(self):
@@ -433,6 +441,50 @@ class ShowUserResult:
         :type: str
         """
         self._pwd_stength = pwd_stength
+
+    @property
+    def is_domain_owner(self):
+        """Gets the is_domain_owner of this ShowUserResult.
+
+        IAM用户是否为根用户。
+
+        :return: The is_domain_owner of this ShowUserResult.
+        :rtype: bool
+        """
+        return self._is_domain_owner
+
+    @is_domain_owner.setter
+    def is_domain_owner(self, is_domain_owner):
+        """Sets the is_domain_owner of this ShowUserResult.
+
+        IAM用户是否为根用户。
+
+        :param is_domain_owner: The is_domain_owner of this ShowUserResult.
+        :type: bool
+        """
+        self._is_domain_owner = is_domain_owner
+
+    @property
+    def description(self):
+        """Gets the description of this ShowUserResult.
+
+        IAM用户描述信息
+
+        :return: The description of this ShowUserResult.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ShowUserResult.
+
+        IAM用户描述信息
+
+        :param description: The description of this ShowUserResult.
+        :type: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

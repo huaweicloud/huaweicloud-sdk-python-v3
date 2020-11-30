@@ -33,7 +33,7 @@ class PipelineStateStatus:
         'outcome': 'str',
         'error_code': 'str',
         'error_msg': 'str',
-        'children': 'PipelineStateStatus',
+        'children': 'list[PipelineStateStatus]',
         'detail_url': 'str'
     }
 
@@ -308,9 +308,10 @@ class PipelineStateStatus:
     def children(self):
         """Gets the children of this PipelineStateStatus.
 
+        子任务运行信息(对任务来说是空的)
 
         :return: The children of this PipelineStateStatus.
-        :rtype: PipelineStateStatus
+        :rtype: list[PipelineStateStatus]
         """
         return self._children
 
@@ -318,9 +319,10 @@ class PipelineStateStatus:
     def children(self, children):
         """Sets the children of this PipelineStateStatus.
 
+        子任务运行信息(对任务来说是空的)
 
         :param children: The children of this PipelineStateStatus.
-        :type: PipelineStateStatus
+        :type: list[PipelineStateStatus]
         """
         self._children = children
 

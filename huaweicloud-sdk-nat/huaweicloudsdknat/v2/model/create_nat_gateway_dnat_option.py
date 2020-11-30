@@ -71,16 +71,11 @@ class CreateNatGatewayDnatOption:
             self.port_id = port_id
         if private_ip is not None:
             self.private_ip = private_ip
-        if nat_gateway_id is not None:
-            self.nat_gateway_id = nat_gateway_id
-        if internal_service_port is not None:
-            self.internal_service_port = internal_service_port
-        if floating_ip_id is not None:
-            self.floating_ip_id = floating_ip_id
-        if external_service_port is not None:
-            self.external_service_port = external_service_port
-        if protocol is not None:
-            self.protocol = protocol
+        self.nat_gateway_id = nat_gateway_id
+        self.internal_service_port = internal_service_port
+        self.floating_ip_id = floating_ip_id
+        self.external_service_port = external_service_port
+        self.protocol = protocol
         if internal_service_port_range is not None:
             self.internal_service_port_range = internal_service_port_range
         if external_service_port_range is not None:
@@ -90,7 +85,7 @@ class CreateNatGatewayDnatOption:
     def description(self):
         """Gets the description of this CreateNatGatewayDnatOption.
 
-        DNAT规则的描述。
+        DNAT规则的描述，长度限制为255。
 
         :return: The description of this CreateNatGatewayDnatOption.
         :rtype: str
@@ -101,7 +96,7 @@ class CreateNatGatewayDnatOption:
     def description(self, description):
         """Sets the description of this CreateNatGatewayDnatOption.
 
-        DNAT规则的描述。
+        DNAT规则的描述，长度限制为255。
 
         :param description: The description of this CreateNatGatewayDnatOption.
         :type: str

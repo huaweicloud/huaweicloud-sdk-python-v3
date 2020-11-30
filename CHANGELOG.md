@@ -1,3 +1,85 @@
+## 3.0.23-beta 2020-11-30
+## HuaweiCloud SDK BCS
+ - ### Features
+    - Support BlockChain Service.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None 
+
+## HuaweiCloud SDK BMS
+ - ### Features
+    - Support Bare Metal Server service.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK BSS
+ - ### Features
+    - Support more interfaces: ListUsageTypes, ModPeriodToOnDemand.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None 
+
+## HuaweiCloud SDK CBR
+ - ### Features
+    - Support more interfaces: MigrateVaultResource.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK CES
+ - ### Features
+    - Support more interfaces: 
+     - ListEvents
+     - ListEventDetail
+     - CreateResourceGroup
+     - UpdateResourceGroup
+     - DeleteResourceGroup
+     - ListResourceGroup
+     - UpdateAlarm
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK ECS
+ - ### Features
+    - None 
+ - ### Bug Fix
+    - None
+ - ### Change
+    - [Issue 21](https://github.com/huaweicloud/huaweicloud-sdk-java-v3/issues/21) Open related interface.
+
+## HuaweiCloud SDK IAM
+ - ### Features
+    - Support more interfaces.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK Live
+ - ### Features
+    - None
+ - ### Bug Fix
+    - None
+ - ### Change
+    - Name of service client modification: LiveAPIClient → LiveClient.
+
+## HuaweiCloud SDK Meeting
+ - ### Features
+    - None
+ - ### Bug Fix
+    - None
+ - ### Change
+    - Property of interface `CreateMeeting` adjustment: increase property `callInRestriction`.
+    - Property of interface `EditMeeting` adjustment: increase property `callInRestriction`.
+
+
 ## 3.0.22-beta 2020-11-17
 ## HuaweiCloud SDK DMS
  - ### Features

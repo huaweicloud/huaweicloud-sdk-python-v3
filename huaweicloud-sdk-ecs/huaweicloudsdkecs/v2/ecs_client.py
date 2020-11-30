@@ -2179,6 +2179,69 @@ class EcsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def nova_show_keypair(self, request):
+        """查询SSH密钥详情
+
+        根据SSH密钥名称查询指定SSH密钥。
+
+        :param NovaShowKeypairRequest request
+        :return: NovaShowKeypairResponse
+        """
+        return self.nova_show_keypair_with_http_info(request)
+
+    def nova_show_keypair_with_http_info(self, request):
+        """查询SSH密钥详情
+
+        根据SSH密钥名称查询指定SSH密钥。
+
+        :param NovaShowKeypairRequest request
+        :return: NovaShowKeypairResponse
+        """
+
+        all_params = ['keypair_name', 'open_stack_api_version']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'keypair_name' in local_var_params:
+            path_params['keypair_name'] = local_var_params['keypair_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'open_stack_api_version' in local_var_params:
+            header_params['OpenStack-API-Version'] = local_var_params['open_stack_api_version']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/{project_id}/os-keypairs/{keypair_name}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NovaShowKeypairResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def nova_show_server(self, request):
         """查询云服务器详情
 

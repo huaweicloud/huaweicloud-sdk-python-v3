@@ -494,7 +494,7 @@ class RestScheduleConfDTO:
     def record_auth_type(self):
         """Gets the record_auth_type of this RestScheduleConfDTO.
 
-        录播鉴权方式，在录播类型为:录播、直播+录播时有效。 - 0: 老的鉴权方式，url中携带token鉴权。 - 1: 企业内会议用户鉴权。 - 2: 会议内会议用户鉴权。
+        录播鉴权方式，在录播类型为:录播、直播+录播时有效。 - 0: 可通过链接观看/下载。 - 1: 企业用户可观看/下载。 - 2: 与会者可观看/下载。
 
         :return: The record_auth_type of this RestScheduleConfDTO.
         :rtype: int
@@ -505,7 +505,7 @@ class RestScheduleConfDTO:
     def record_auth_type(self, record_auth_type):
         """Sets the record_auth_type of this RestScheduleConfDTO.
 
-        录播鉴权方式，在录播类型为:录播、直播+录播时有效。 - 0: 老的鉴权方式，url中携带token鉴权。 - 1: 企业内会议用户鉴权。 - 2: 会议内会议用户鉴权。
+        录播鉴权方式，在录播类型为:录播、直播+录播时有效。 - 0: 可通过链接观看/下载。 - 1: 企业用户可观看/下载。 - 2: 与会者可观看/下载。
 
         :param record_auth_type: The record_auth_type of this RestScheduleConfDTO.
         :type: int

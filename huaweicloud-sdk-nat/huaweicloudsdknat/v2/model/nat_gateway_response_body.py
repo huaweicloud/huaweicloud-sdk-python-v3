@@ -68,28 +68,17 @@ class NatGatewayResponseBody:
         self._enterprise_project_id = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if tenant_id is not None:
-            self.tenant_id = tenant_id
-        if name is not None:
-            self.name = name
-        if description is not None:
-            self.description = description
-        if spec is not None:
-            self.spec = spec
-        if status is not None:
-            self.status = status
-        if admin_state_up is not None:
-            self.admin_state_up = admin_state_up
-        if created_at is not None:
-            self.created_at = created_at
-        if router_id is not None:
-            self.router_id = router_id
-        if internal_network_id is not None:
-            self.internal_network_id = internal_network_id
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
+        self.id = id
+        self.tenant_id = tenant_id
+        self.name = name
+        self.description = description
+        self.spec = spec
+        self.status = status
+        self.admin_state_up = admin_state_up
+        self.created_at = created_at
+        self.router_id = router_id
+        self.internal_network_id = internal_network_id
+        self.enterprise_project_id = enterprise_project_id
 
     @property
     def id(self):
@@ -139,7 +128,7 @@ class NatGatewayResponseBody:
     def name(self):
         """Gets the name of this NatGatewayResponseBody.
 
-        公网NAT网关实例的名字。
+        公网NAT网关实例的名字，长度限制为64。
 
         :return: The name of this NatGatewayResponseBody.
         :rtype: str
@@ -150,7 +139,7 @@ class NatGatewayResponseBody:
     def name(self, name):
         """Sets the name of this NatGatewayResponseBody.
 
-        公网NAT网关实例的名字。
+        公网NAT网关实例的名字，长度限制为64。
 
         :param name: The name of this NatGatewayResponseBody.
         :type: str
@@ -161,7 +150,7 @@ class NatGatewayResponseBody:
     def description(self):
         """Gets the description of this NatGatewayResponseBody.
 
-        公网NAT网关实例的描述。
+        公网NAT网关实例的描述，长度限制为255。
 
         :return: The description of this NatGatewayResponseBody.
         :rtype: str
@@ -172,7 +161,7 @@ class NatGatewayResponseBody:
     def description(self, description):
         """Sets the description of this NatGatewayResponseBody.
 
-        公网NAT网关实例的描述。
+        公网NAT网关实例的描述，长度限制为255。
 
         :param description: The description of this NatGatewayResponseBody.
         :type: str
@@ -293,7 +282,7 @@ class NatGatewayResponseBody:
     def internal_network_id(self):
         """Gets the internal_network_id of this NatGatewayResponseBody.
 
-        NAT网关下行口（DVR的下一跳）所属的network id。
+        公网NAT网关下行口（DVR的下一跳）所属的network id。
 
         :return: The internal_network_id of this NatGatewayResponseBody.
         :rtype: str
@@ -304,7 +293,7 @@ class NatGatewayResponseBody:
     def internal_network_id(self, internal_network_id):
         """Sets the internal_network_id of this NatGatewayResponseBody.
 
-        NAT网关下行口（DVR的下一跳）所属的network id。
+        公网NAT网关下行口（DVR的下一跳）所属的network id。
 
         :param internal_network_id: The internal_network_id of this NatGatewayResponseBody.
         :type: str

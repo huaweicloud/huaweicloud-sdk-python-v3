@@ -29,8 +29,8 @@ class ShowPipleineStatusResponse(SdkResponse):
         'build_id': 'str',
         'start_time': 'str',
         'end_time': 'str',
-        'parameters': 'PipelineParameter',
-        'states': 'PipelineStateStatus',
+        'parameters': 'list[PipelineParameter]',
+        'states': 'list[PipelineStateStatus]',
         'elapsed_time': 'str',
         'status': 'str',
         'outcome': 'str',
@@ -232,9 +232,10 @@ class ShowPipleineStatusResponse(SdkResponse):
     def parameters(self):
         """Gets the parameters of this ShowPipleineStatusResponse.
 
+        流水线参数
 
         :return: The parameters of this ShowPipleineStatusResponse.
-        :rtype: PipelineParameter
+        :rtype: list[PipelineParameter]
         """
         return self._parameters
 
@@ -242,9 +243,10 @@ class ShowPipleineStatusResponse(SdkResponse):
     def parameters(self, parameters):
         """Sets the parameters of this ShowPipleineStatusResponse.
 
+        流水线参数
 
         :param parameters: The parameters of this ShowPipleineStatusResponse.
-        :type: PipelineParameter
+        :type: list[PipelineParameter]
         """
         self._parameters = parameters
 
@@ -252,9 +254,10 @@ class ShowPipleineStatusResponse(SdkResponse):
     def states(self):
         """Gets the states of this ShowPipleineStatusResponse.
 
+        流水线执行情况
 
         :return: The states of this ShowPipleineStatusResponse.
-        :rtype: PipelineStateStatus
+        :rtype: list[PipelineStateStatus]
         """
         return self._states
 
@@ -262,9 +265,10 @@ class ShowPipleineStatusResponse(SdkResponse):
     def states(self, states):
         """Sets the states of this ShowPipleineStatusResponse.
 
+        流水线执行情况
 
         :param states: The states of this ShowPipleineStatusResponse.
-        :type: PipelineStateStatus
+        :type: list[PipelineStateStatus]
         """
         self._states = states
 

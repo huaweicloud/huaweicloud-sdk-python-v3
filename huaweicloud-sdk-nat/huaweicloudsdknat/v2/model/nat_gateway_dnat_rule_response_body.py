@@ -83,38 +83,26 @@ class NatGatewayDnatRuleResponseBody:
         self._created_at = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if tenant_id is not None:
-            self.tenant_id = tenant_id
-        if description is not None:
-            self.description = description
+        self.id = id
+        self.tenant_id = tenant_id
+        self.description = description
         if port_id is not None:
             self.port_id = port_id
         if private_ip is not None:
             self.private_ip = private_ip
-        if internal_service_port is not None:
-            self.internal_service_port = internal_service_port
-        if nat_gateway_id is not None:
-            self.nat_gateway_id = nat_gateway_id
-        if floating_ip_id is not None:
-            self.floating_ip_id = floating_ip_id
-        if floating_ip_address is not None:
-            self.floating_ip_address = floating_ip_address
-        if external_service_port is not None:
-            self.external_service_port = external_service_port
-        if status is not None:
-            self.status = status
-        if admin_state_up is not None:
-            self.admin_state_up = admin_state_up
+        self.internal_service_port = internal_service_port
+        self.nat_gateway_id = nat_gateway_id
+        self.floating_ip_id = floating_ip_id
+        self.floating_ip_address = floating_ip_address
+        self.external_service_port = external_service_port
+        self.status = status
+        self.admin_state_up = admin_state_up
         if internal_service_port_range is not None:
             self.internal_service_port_range = internal_service_port_range
         if external_service_port_range is not None:
             self.external_service_port_range = external_service_port_range
-        if protocol is not None:
-            self.protocol = protocol
-        if created_at is not None:
-            self.created_at = created_at
+        self.protocol = protocol
+        self.created_at = created_at
 
     @property
     def id(self):
@@ -164,7 +152,7 @@ class NatGatewayDnatRuleResponseBody:
     def description(self):
         """Gets the description of this NatGatewayDnatRuleResponseBody.
 
-        DNAT规则的描述。
+        DNAT规则的描述。长度限制为255。
 
         :return: The description of this NatGatewayDnatRuleResponseBody.
         :rtype: str
@@ -175,7 +163,7 @@ class NatGatewayDnatRuleResponseBody:
     def description(self, description):
         """Sets the description of this NatGatewayDnatRuleResponseBody.
 
-        DNAT规则的描述。
+        DNAT规则的描述。长度限制为255。
 
         :param description: The description of this NatGatewayDnatRuleResponseBody.
         :type: str

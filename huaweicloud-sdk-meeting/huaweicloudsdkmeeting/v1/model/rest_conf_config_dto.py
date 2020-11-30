@@ -23,6 +23,7 @@ class RestConfConfigDTO:
     sensitive_list = []
 
     openapi_types = {
+        'call_in_restriction': 'int',
         'is_send_notify': 'bool',
         'is_send_sms': 'bool',
         'is_send_calendar': 'bool',
@@ -31,6 +32,7 @@ class RestConfConfigDTO:
     }
 
     attribute_map = {
+        'call_in_restriction': 'callInRestriction',
         'is_send_notify': 'isSendNotify',
         'is_send_sms': 'isSendSms',
         'is_send_calendar': 'isSendCalendar',
@@ -38,11 +40,12 @@ class RestConfConfigDTO:
         'is_guest_free_pwd': 'isGuestFreePwd'
     }
 
-    def __init__(self, is_send_notify=None, is_send_sms=None, is_send_calendar=None, is_auto_mute=None, is_guest_free_pwd=None):
+    def __init__(self, call_in_restriction=0, is_send_notify=None, is_send_sms=None, is_send_calendar=None, is_auto_mute=None, is_guest_free_pwd=None):
         """RestConfConfigDTO - a model defined in huaweicloud sdk"""
         
         
 
+        self._call_in_restriction = None
         self._is_send_notify = None
         self._is_send_sms = None
         self._is_send_calendar = None
@@ -50,6 +53,8 @@ class RestConfConfigDTO:
         self._is_guest_free_pwd = None
         self.discriminator = None
 
+        if call_in_restriction is not None:
+            self.call_in_restriction = call_in_restriction
         if is_send_notify is not None:
             self.is_send_notify = is_send_notify
         if is_send_sms is not None:
@@ -60,6 +65,28 @@ class RestConfConfigDTO:
             self.is_auto_mute = is_auto_mute
         if is_guest_free_pwd is not None:
             self.is_guest_free_pwd = is_guest_free_pwd
+
+    @property
+    def call_in_restriction(self):
+        """Gets the call_in_restriction of this RestConfConfigDTO.
+
+        允许呼入的范围。 - 0: 所有用户。 - 2: 企业内用户。 - 3: 被邀请用户。
+
+        :return: The call_in_restriction of this RestConfConfigDTO.
+        :rtype: int
+        """
+        return self._call_in_restriction
+
+    @call_in_restriction.setter
+    def call_in_restriction(self, call_in_restriction):
+        """Sets the call_in_restriction of this RestConfConfigDTO.
+
+        允许呼入的范围。 - 0: 所有用户。 - 2: 企业内用户。 - 3: 被邀请用户。
+
+        :param call_in_restriction: The call_in_restriction of this RestConfConfigDTO.
+        :type: int
+        """
+        self._call_in_restriction = call_in_restriction
 
     @property
     def is_send_notify(self):

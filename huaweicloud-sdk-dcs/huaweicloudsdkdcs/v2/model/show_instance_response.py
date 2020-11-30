@@ -41,7 +41,7 @@ class ShowInstanceResponse(SdkResponse):
         'no_password_access': 'str',
         'ip': 'str',
         'instance_backup_policy': 'BackupPolicy',
-        'az_codes': 'str',
+        'az_codes': 'list[str]',
         'access_user': 'str',
         'instance_id': 'str',
         'port': 'int',
@@ -637,7 +637,7 @@ class ShowInstanceResponse(SdkResponse):
         实例所在的可用区。返回“可用区Code”
 
         :return: The az_codes of this ShowInstanceResponse.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._az_codes
 
@@ -648,7 +648,7 @@ class ShowInstanceResponse(SdkResponse):
         实例所在的可用区。返回“可用区Code”
 
         :param az_codes: The az_codes of this ShowInstanceResponse.
-        :type: str
+        :type: list[str]
         """
         self._az_codes = az_codes
 

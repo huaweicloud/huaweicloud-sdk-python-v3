@@ -74,32 +74,19 @@ class NatGatewaySnatRuleResponseBody:
         self._freezed_ip_address = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if tenant_id is not None:
-            self.tenant_id = tenant_id
-        if nat_gateway_id is not None:
-            self.nat_gateway_id = nat_gateway_id
-        if cidr is not None:
-            self.cidr = cidr
-        if source_type is not None:
-            self.source_type = source_type
-        if floating_ip_id is not None:
-            self.floating_ip_id = floating_ip_id
-        if description is not None:
-            self.description = description
-        if status is not None:
-            self.status = status
-        if created_at is not None:
-            self.created_at = created_at
-        if network_id is not None:
-            self.network_id = network_id
-        if admin_state_up is not None:
-            self.admin_state_up = admin_state_up
-        if floating_ip_address is not None:
-            self.floating_ip_address = floating_ip_address
-        if freezed_ip_address is not None:
-            self.freezed_ip_address = freezed_ip_address
+        self.id = id
+        self.tenant_id = tenant_id
+        self.nat_gateway_id = nat_gateway_id
+        self.cidr = cidr
+        self.source_type = source_type
+        self.floating_ip_id = floating_ip_id
+        self.description = description
+        self.status = status
+        self.created_at = created_at
+        self.network_id = network_id
+        self.admin_state_up = admin_state_up
+        self.floating_ip_address = floating_ip_address
+        self.freezed_ip_address = freezed_ip_address
 
     @property
     def id(self):
@@ -237,7 +224,7 @@ class NatGatewaySnatRuleResponseBody:
     def description(self):
         """Gets the description of this NatGatewaySnatRuleResponseBody.
 
-        SNAT规则的描述。
+        SNAT规则的描述，长度限制为255。
 
         :return: The description of this NatGatewaySnatRuleResponseBody.
         :rtype: str
@@ -248,7 +235,7 @@ class NatGatewaySnatRuleResponseBody:
     def description(self, description):
         """Sets the description of this NatGatewaySnatRuleResponseBody.
 
-        SNAT规则的描述。
+        SNAT规则的描述，长度限制为255。
 
         :param description: The description of this NatGatewaySnatRuleResponseBody.
         :type: str

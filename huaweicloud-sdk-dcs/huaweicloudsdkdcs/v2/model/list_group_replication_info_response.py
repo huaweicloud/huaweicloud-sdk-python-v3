@@ -24,7 +24,7 @@ class ListGroupReplicationInfoResponse(SdkResponse):
 
     openapi_types = {
         'group_list': 'list[InstanceGroupListInfo]',
-        'group_count': 'str'
+        'group_count': 'int'
     }
 
     attribute_map = {
@@ -75,7 +75,7 @@ class ListGroupReplicationInfoResponse(SdkResponse):
         实例分片总数。
 
         :return: The group_count of this ListGroupReplicationInfoResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._group_count
 
@@ -86,7 +86,7 @@ class ListGroupReplicationInfoResponse(SdkResponse):
         实例分片总数。
 
         :param group_count: The group_count of this ListGroupReplicationInfoResponse.
-        :type: str
+        :type: int
         """
         self._group_count = group_count
 

@@ -29,7 +29,7 @@ class QueryRedisConfig:
         'description': 'str',
         'default_value': 'str',
         'param_name': 'str',
-        'param_id': 'int'
+        'param_id': 'str'
     }
 
     attribute_map = {
@@ -210,7 +210,7 @@ class QueryRedisConfig:
         配置参数ID。
 
         :return: The param_id of this QueryRedisConfig.
-        :rtype: int
+        :rtype: str
         """
         return self._param_id
 
@@ -221,7 +221,7 @@ class QueryRedisConfig:
         配置参数ID。
 
         :param param_id: The param_id of this QueryRedisConfig.
-        :type: int
+        :type: str
         """
         self._param_id = param_id
 

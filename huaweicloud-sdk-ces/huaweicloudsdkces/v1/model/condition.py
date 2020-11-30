@@ -28,7 +28,8 @@ class Condition:
         'filter': 'str',
         'period': 'int',
         'unit': 'str',
-        'value': 'float'
+        'value': 'float',
+        'suppress_duration': 'int'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class Condition:
         'filter': 'filter',
         'period': 'period',
         'unit': 'unit',
-        'value': 'value'
+        'value': 'value',
+        'suppress_duration': 'suppress_duration'
     }
 
-    def __init__(self, comparison_operator=None, count=None, filter=None, period=None, unit=None, value=None):
+    def __init__(self, comparison_operator=None, count=None, filter=None, period=None, unit=None, value=None, suppress_duration=None):
         """Condition - a model defined in huaweicloud sdk"""
         
         
@@ -51,6 +53,7 @@ class Condition:
         self._period = None
         self._unit = None
         self._value = None
+        self._suppress_duration = None
         self.discriminator = None
 
         self.comparison_operator = comparison_operator
@@ -60,6 +63,8 @@ class Condition:
         if unit is not None:
             self.unit = unit
         self.value = value
+        if suppress_duration is not None:
+            self.suppress_duration = suppress_duration
 
     @property
     def comparison_operator(self):
@@ -192,6 +197,28 @@ class Condition:
         :type: float
         """
         self._value = value
+
+    @property
+    def suppress_duration(self):
+        """Gets the suppress_duration of this Condition.
+
+        发送告警的周期，值可为0, 300, 600, 900, 1800, 3600, 10800, 21600, 43200, 86400；0表示只告警一次，300表示每5分钟告警一次，600表示每10分钟告警一次，900表示每15分钟告警一次，1800表示每30分钟告警一次，3600表示每1小时告警一次，10800表示每3小时告警一次，21600表示每6小时告警一次，43200表示每12小时告警一次，86400表示每1天告警一次。
+
+        :return: The suppress_duration of this Condition.
+        :rtype: int
+        """
+        return self._suppress_duration
+
+    @suppress_duration.setter
+    def suppress_duration(self, suppress_duration):
+        """Sets the suppress_duration of this Condition.
+
+        发送告警的周期，值可为0, 300, 600, 900, 1800, 3600, 10800, 21600, 43200, 86400；0表示只告警一次，300表示每5分钟告警一次，600表示每10分钟告警一次，900表示每15分钟告警一次，1800表示每30分钟告警一次，3600表示每1小时告警一次，10800表示每3小时告警一次，21600表示每6小时告警一次，43200表示每12小时告警一次，86400表示每1天告警一次。
+
+        :param suppress_duration: The suppress_duration of this Condition.
+        :type: int
+        """
+        self._suppress_duration = suppress_duration
 
     def to_dict(self):
         """Returns the model properties as a dict"""

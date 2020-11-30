@@ -24,7 +24,7 @@ class ListFunctionVersionsResponse(SdkResponse):
 
     openapi_types = {
         'versions': 'list[ListFunctionVersionResult]',
-        'next_marker': 'str'
+        'next_marker': 'int'
     }
 
     attribute_map = {
@@ -75,7 +75,7 @@ class ListFunctionVersionsResponse(SdkResponse):
         下一次记录位置
 
         :return: The next_marker of this ListFunctionVersionsResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._next_marker
 
@@ -86,7 +86,7 @@ class ListFunctionVersionsResponse(SdkResponse):
         下一次记录位置
 
         :param next_marker: The next_marker of this ListFunctionVersionsResponse.
-        :type: str
+        :type: int
         """
         self._next_marker = next_marker
 

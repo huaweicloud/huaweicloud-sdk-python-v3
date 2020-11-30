@@ -938,6 +938,71 @@ class IamAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_domain_group_inherited_role_async(self, request):
+        """移除用户组的所有项目服务权限
+
+        该接口可以用于移除用户组的所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param DeleteDomainGroupInheritedRoleRequest request
+        :return: DeleteDomainGroupInheritedRoleResponse
+        """
+        return self.delete_domain_group_inherited_role_with_http_info(request)
+
+    def delete_domain_group_inherited_role_with_http_info(self, request):
+        """移除用户组的所有项目服务权限
+
+        该接口可以用于移除用户组的所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param DeleteDomainGroupInheritedRoleRequest request
+        :return: DeleteDomainGroupInheritedRoleResponse
+        """
+
+        all_params = ['domain_id', 'group_id', 'role_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'role_id' in local_var_params:
+            path_params['role_id'] = local_var_params['role_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/{role_id}/inherited_to_projects',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteDomainGroupInheritedRoleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def keystone_add_user_to_group_async(self, request):
         """添加IAM用户到用户组
 
@@ -995,71 +1060,6 @@ class IamAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='KeystoneAddUserToGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def keystone_associate_group_with_all_project_permission_async(self, request):
-        """为用户组授予所有项目服务权限
-
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为用户组授予所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
-
-        :param KeystoneAssociateGroupWithAllProjectPermissionRequest request
-        :return: KeystoneAssociateGroupWithAllProjectPermissionResponse
-        """
-        return self.keystone_associate_group_with_all_project_permission_with_http_info(request)
-
-    def keystone_associate_group_with_all_project_permission_with_http_info(self, request):
-        """为用户组授予所有项目服务权限
-
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为用户组授予所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
-
-        :param KeystoneAssociateGroupWithAllProjectPermissionRequest request
-        :return: KeystoneAssociateGroupWithAllProjectPermissionResponse
-        """
-
-        all_params = ['domain_id', 'group_id', 'role_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'domain_id' in local_var_params:
-            path_params['domain_id'] = local_var_params['domain_id']
-        if 'group_id' in local_var_params:
-            path_params['group_id'] = local_var_params['group_id']
-        if 'role_id' in local_var_params:
-            path_params['role_id'] = local_var_params['role_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/{role_id}/inherited_to_projects',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='KeystoneAssociateGroupWithAllProjectPermissionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1383,6 +1383,71 @@ class IamAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='KeystoneCheckUserInGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def keystone_checkrole_for_group_async(self, request):
+        """查询用户组是否拥有所有项目指定权限
+
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组是否拥有所有项目指定权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param KeystoneCheckroleForGroupRequest request
+        :return: KeystoneCheckroleForGroupResponse
+        """
+        return self.keystone_checkrole_for_group_with_http_info(request)
+
+    def keystone_checkrole_for_group_with_http_info(self, request):
+        """查询用户组是否拥有所有项目指定权限
+
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组是否拥有所有项目指定权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param KeystoneCheckroleForGroupRequest request
+        :return: KeystoneCheckroleForGroupResponse
+        """
+
+        all_params = ['domain_id', 'group_id', 'role_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'role_id' in local_var_params:
+            path_params['role_id'] = local_var_params['role_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/{role_id}/inherited_to_projects',
+            method='HEAD',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='KeystoneCheckroleForGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2021,6 +2086,69 @@ class IamAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def keystone_list_all_project_permissions_for_group_async(self, request):
+        """查询用户组的所有项目权限列表
+
+        该接口可以用于管理员查询用户组所有项目服务权限列表。  \\n\\n该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param KeystoneListAllProjectPermissionsForGroupRequest request
+        :return: KeystoneListAllProjectPermissionsForGroupResponse
+        """
+        return self.keystone_list_all_project_permissions_for_group_with_http_info(request)
+
+    def keystone_list_all_project_permissions_for_group_with_http_info(self, request):
+        """查询用户组的所有项目权限列表
+
+        该接口可以用于管理员查询用户组所有项目服务权限列表。  \\n\\n该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param KeystoneListAllProjectPermissionsForGroupRequest request
+        :return: KeystoneListAllProjectPermissionsForGroupResponse
+        """
+
+        all_params = ['domain_id', 'group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/inherited_to_projects',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='KeystoneListAllProjectPermissionsForGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def keystone_list_auth_domains_async(self, request):
         """查询IAM用户可以访问的账号详情
 
@@ -2465,7 +2593,7 @@ class IamAsyncClient(Client):
         :return: KeystoneListPermissionsResponse
         """
 
-        all_params = ['name', 'domain_id']
+        all_params = ['name', 'domain_id', 'page', 'per_page']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2480,6 +2608,10 @@ class IamAsyncClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'domain_id' in local_var_params:
             query_params.append(('domain_id', local_var_params['domain_id']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'per_page' in local_var_params:
+            query_params.append(('per_page', local_var_params['per_page']))
 
         header_params = {}
 
@@ -4467,7 +4599,7 @@ class IamAsyncClient(Client):
         :return: ListCustomPoliciesResponse
         """
 
-        all_params = []
+        all_params = ['page', 'per_page']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4478,6 +4610,10 @@ class IamAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'per_page' in local_var_params:
+            query_params.append(('per_page', local_var_params['per_page']))
 
         header_params = {}
 
@@ -5828,6 +5964,71 @@ class IamAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_domain_group_inherit_role_async(self, request):
+        """为用户组授予所有项目服务权限
+
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)为用户组授予所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param UpdateDomainGroupInheritRoleRequest request
+        :return: UpdateDomainGroupInheritRoleResponse
+        """
+        return self.update_domain_group_inherit_role_with_http_info(request)
+
+    def update_domain_group_inherit_role_with_http_info(self, request):
+        """为用户组授予所有项目服务权限
+
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)为用户组授予所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param UpdateDomainGroupInheritRoleRequest request
+        :return: UpdateDomainGroupInheritRoleResponse
+        """
+
+        all_params = ['domain_id', 'group_id', 'role_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'role_id' in local_var_params:
+            path_params['role_id'] = local_var_params['role_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/{role_id}/inherited_to_projects',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateDomainGroupInheritRoleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_domain_login_policy_async(self, request):
         """修改账号登录策略
 
@@ -6525,6 +6726,132 @@ class IamAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_binding_device_async(self, request):
+        """绑定MFA设备
+
+        该接口可以用于绑定MFA设备。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param CreateBindingDeviceRequest request
+        :return: CreateBindingDeviceResponse
+        """
+        return self.create_binding_device_with_http_info(request)
+
+    def create_binding_device_with_http_info(self, request):
+        """绑定MFA设备
+
+        该接口可以用于绑定MFA设备。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param CreateBindingDeviceRequest request
+        :return: CreateBindingDeviceResponse
+        """
+
+        all_params = ['create_binding_device_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-MFA/mfa-devices/bind',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateBindingDeviceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_mfa_device_async(self, request):
+        """创建MFA设备
+
+        该接口可以用于创建MFA设备。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param CreateMfaDeviceRequest request
+        :return: CreateMfaDeviceResponse
+        """
+        return self.create_mfa_device_with_http_info(request)
+
+    def create_mfa_device_with_http_info(self, request):
+        """创建MFA设备
+
+        该接口可以用于创建MFA设备。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param CreateMfaDeviceRequest request
+        :return: CreateMfaDeviceResponse
+        """
+
+        all_params = ['create_mfa_device_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-MFA/virtual-mfa-devices',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateMfaDeviceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_user_async(self, request):
         """管理员创建IAM用户（推荐）
 
@@ -6582,6 +6909,132 @@ class IamAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateUserResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_binding_device_async(self, request):
+        """解绑MFA设备
+
+        该接口可以用于解绑MFA设备   该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param DeleteBindingDeviceRequest request
+        :return: DeleteBindingDeviceResponse
+        """
+        return self.delete_binding_device_with_http_info(request)
+
+    def delete_binding_device_with_http_info(self, request):
+        """解绑MFA设备
+
+        该接口可以用于解绑MFA设备   该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param DeleteBindingDeviceRequest request
+        :return: DeleteBindingDeviceResponse
+        """
+
+        all_params = ['delete_binding_device_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-MFA/mfa-devices/unbind',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteBindingDeviceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_mfa_device_async(self, request):
+        """删除MFA设备
+
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除MFA设备。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param DeleteMfaDeviceRequest request
+        :return: DeleteMfaDeviceResponse
+        """
+        return self.delete_mfa_device_with_http_info(request)
+
+    def delete_mfa_device_with_http_info(self, request):
+        """删除MFA设备
+
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除MFA设备。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param DeleteMfaDeviceRequest request
+        :return: DeleteMfaDeviceResponse
+        """
+
+        all_params = ['user_id', 'serial_number']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_id' in local_var_params:
+            query_params.append(('user_id', local_var_params['user_id']))
+        if 'serial_number' in local_var_params:
+            query_params.append(('serial_number', local_var_params['serial_number']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-MFA/virtual-mfa-devices',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteMfaDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -7091,7 +7544,7 @@ class IamAsyncClient(Client):
 
 
     def list_user_mfa_devices_async(self, request):
-        """查询IAM用户的MFA绑定信息列表
+        """该接口可以用于获取MFA设备。
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的MFA绑定信息列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
@@ -7101,7 +7554,7 @@ class IamAsyncClient(Client):
         return self.list_user_mfa_devices_with_http_info(request)
 
     def list_user_mfa_devices_with_http_info(self, request):
-        """查询IAM用户的MFA绑定信息列表
+        """该接口可以用于获取MFA设备。
 
         该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的MFA绑定信息列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
@@ -7326,6 +7779,71 @@ class IamAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowUserMfaDeviceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_login_protect_async(self, request):
+        """修改IAM用户登录保护状态信息
+
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号操作保护。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param UpdateLoginProtectRequest request
+        :return: UpdateLoginProtectResponse
+        """
+        return self.update_login_protect_with_http_info(request)
+
+    def update_login_protect_with_http_info(self, request):
+        """修改IAM用户登录保护状态信息
+
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号操作保护。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param UpdateLoginProtectRequest request
+        :return: UpdateLoginProtectResponse
+        """
+
+        all_params = ['user_id', 'update_login_protect_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-USER/users/{user_id}/login-protect',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateLoginProtectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

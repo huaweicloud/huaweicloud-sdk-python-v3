@@ -58,7 +58,7 @@ class CreateListenerReq:
         'tls_ciphers_policy': 'tls_ciphers_policy'
     }
 
-    def __init__(self, loadbalancer_id=None, protocol=None, protocol_port=None, tenant_id=None, name=None, description=None, admin_state_up=None, connection_limit=-1, http2_enable=False, default_pool_id='null', default_tls_container_ref=None, client_ca_tls_container_ref='null', sni_container_refs=None, insert_headers=None, tls_ciphers_policy='tls-1-0'):
+    def __init__(self, loadbalancer_id=None, protocol=None, protocol_port=None, tenant_id=None, name=None, description=None, admin_state_up=None, connection_limit=-1, http2_enable=False, default_pool_id=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, sni_container_refs=None, insert_headers=None, tls_ciphers_policy='tls-1-0'):
         """CreateListenerReq - a model defined in huaweicloud sdk"""
         
         

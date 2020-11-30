@@ -30,7 +30,7 @@ class CreateBigkeyScanTaskResponse(SdkResponse):
         'created_at': 'str',
         'started_at': 'str',
         'finished_at': 'str',
-        'num': 'str',
+        'num': 'int',
         'keys': 'list[BigkeysBody]'
     }
 
@@ -242,7 +242,7 @@ class CreateBigkeyScanTaskResponse(SdkResponse):
         大key的数量
 
         :return: The num of this CreateBigkeyScanTaskResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._num
 
@@ -253,7 +253,7 @@ class CreateBigkeyScanTaskResponse(SdkResponse):
         大key的数量
 
         :param num: The num of this CreateBigkeyScanTaskResponse.
-        :type: str
+        :type: int
         """
         self._num = num
 

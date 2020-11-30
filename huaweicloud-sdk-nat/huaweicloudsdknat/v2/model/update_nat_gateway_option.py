@@ -55,7 +55,7 @@ class UpdateNatGatewayOption:
     def name(self):
         """Gets the name of this UpdateNatGatewayOption.
 
-        公网NAT网关实例的名字。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
+        公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
 
         :return: The name of this UpdateNatGatewayOption.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateNatGatewayOption:
     def name(self, name):
         """Sets the name of this UpdateNatGatewayOption.
 
-        公网NAT网关实例的名字。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
+        公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
 
         :param name: The name of this UpdateNatGatewayOption.
         :type: str
@@ -77,7 +77,7 @@ class UpdateNatGatewayOption:
     def description(self):
         """Gets the description of this UpdateNatGatewayOption.
 
-        公网NAT网关的描述。
+        公网NAT网关的描述，长度限制为255。
 
         :return: The description of this UpdateNatGatewayOption.
         :rtype: str
@@ -88,7 +88,7 @@ class UpdateNatGatewayOption:
     def description(self, description):
         """Sets the description of this UpdateNatGatewayOption.
 
-        公网NAT网关的描述。
+        公网NAT网关的描述，长度限制为255。
 
         :param description: The description of this UpdateNatGatewayOption.
         :type: str

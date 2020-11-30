@@ -37,9 +37,9 @@ class ShowTemplateDetailResponse(SdkResponse):
         'project_name': 'str',
         'is_watch': 'bool',
         'description': 'str',
-        'parameter': 'TemplateParam',
-        'flow': 'FlowItem',
-        'states': 'StateItem'
+        'parameter': 'list[TemplateParam]',
+        'flow': 'object',
+        'states': 'object'
     }
 
     attribute_map = {
@@ -433,9 +433,10 @@ class ShowTemplateDetailResponse(SdkResponse):
     def parameter(self):
         """Gets the parameter of this ShowTemplateDetailResponse.
 
+        模板参数
 
         :return: The parameter of this ShowTemplateDetailResponse.
-        :rtype: TemplateParam
+        :rtype: list[TemplateParam]
         """
         return self._parameter
 
@@ -443,9 +444,10 @@ class ShowTemplateDetailResponse(SdkResponse):
     def parameter(self, parameter):
         """Sets the parameter of this ShowTemplateDetailResponse.
 
+        模板参数
 
         :param parameter: The parameter of this ShowTemplateDetailResponse.
-        :type: TemplateParam
+        :type: list[TemplateParam]
         """
         self._parameter = parameter
 
@@ -453,9 +455,10 @@ class ShowTemplateDetailResponse(SdkResponse):
     def flow(self):
         """Gets the flow of this ShowTemplateDetailResponse.
 
+        编排flow，map类型数据
 
         :return: The flow of this ShowTemplateDetailResponse.
-        :rtype: FlowItem
+        :rtype: object
         """
         return self._flow
 
@@ -463,9 +466,10 @@ class ShowTemplateDetailResponse(SdkResponse):
     def flow(self, flow):
         """Sets the flow of this ShowTemplateDetailResponse.
 
+        编排flow，map类型数据
 
         :param flow: The flow of this ShowTemplateDetailResponse.
-        :type: FlowItem
+        :type: object
         """
         self._flow = flow
 
@@ -473,9 +477,10 @@ class ShowTemplateDetailResponse(SdkResponse):
     def states(self):
         """Gets the states of this ShowTemplateDetailResponse.
 
+        子任务states，map类型数据
 
         :return: The states of this ShowTemplateDetailResponse.
-        :rtype: StateItem
+        :rtype: object
         """
         return self._states
 
@@ -483,9 +488,10 @@ class ShowTemplateDetailResponse(SdkResponse):
     def states(self, states):
         """Sets the states of this ShowTemplateDetailResponse.
 
+        子任务states，map类型数据
 
         :param states: The states of this ShowTemplateDetailResponse.
-        :type: StateItem
+        :type: object
         """
         self._states = states
 

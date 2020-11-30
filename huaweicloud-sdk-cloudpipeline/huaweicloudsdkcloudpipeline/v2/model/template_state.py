@@ -29,7 +29,7 @@ class TemplateState:
         'module_or_template_name': 'str',
         'display_name': 'str',
         'dsl_method': 'str',
-        'parameters': 'ExtendedProps',
+        'parameters': 'object',
         'is_manual_execution': 'bool',
         'job_parameter_validate': 'bool',
         'is_show_codehub_url': 'bool',
@@ -232,9 +232,10 @@ class TemplateState:
     def parameters(self):
         """Gets the parameters of this TemplateState.
 
+        任务参数,map类型数据
 
         :return: The parameters of this TemplateState.
-        :rtype: ExtendedProps
+        :rtype: object
         """
         return self._parameters
 
@@ -242,9 +243,10 @@ class TemplateState:
     def parameters(self, parameters):
         """Sets the parameters of this TemplateState.
 
+        任务参数,map类型数据
 
         :param parameters: The parameters of this TemplateState.
-        :type: ExtendedProps
+        :type: object
         """
         self._parameters = parameters
 

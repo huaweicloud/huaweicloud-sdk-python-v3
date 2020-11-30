@@ -26,19 +26,17 @@ class ResourceProviderResponse:
         'provider': 'str',
         'display_name': 'str',
         'category_display_name': 'str',
-        'resource_types': 'list[ResourceTypeResponse]',
-        'order': 'int'
+        'resource_types': 'list[ResourceTypeResponse]'
     }
 
     attribute_map = {
         'provider': 'provider',
         'display_name': 'display_name',
         'category_display_name': 'category_display_name',
-        'resource_types': 'resource_types',
-        'order': 'order'
+        'resource_types': 'resource_types'
     }
 
-    def __init__(self, provider=None, display_name=None, category_display_name=None, resource_types=None, order=None):
+    def __init__(self, provider=None, display_name=None, category_display_name=None, resource_types=None):
         """ResourceProviderResponse - a model defined in huaweicloud sdk"""
         
         
@@ -47,7 +45,6 @@ class ResourceProviderResponse:
         self._display_name = None
         self._category_display_name = None
         self._resource_types = None
-        self._order = None
         self.discriminator = None
 
         if provider is not None:
@@ -58,8 +55,6 @@ class ResourceProviderResponse:
             self.category_display_name = category_display_name
         if resource_types is not None:
             self.resource_types = resource_types
-        if order is not None:
-            self.order = order
 
     @property
     def provider(self):
@@ -148,28 +143,6 @@ class ResourceProviderResponse:
         :type: list[ResourceTypeResponse]
         """
         self._resource_types = resource_types
-
-    @property
-    def order(self):
-        """Gets the order of this ResourceProviderResponse.
-
-        排序序号
-
-        :return: The order of this ResourceProviderResponse.
-        :rtype: int
-        """
-        return self._order
-
-    @order.setter
-    def order(self, order):
-        """Sets the order of this ResourceProviderResponse.
-
-        排序序号
-
-        :param order: The order of this ResourceProviderResponse.
-        :type: int
-        """
-        self._order = order
 
     def to_dict(self):
         """Returns the model properties as a dict"""

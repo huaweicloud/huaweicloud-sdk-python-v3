@@ -48,8 +48,7 @@ class KeystoneCreateProjectOption:
         self.discriminator = None
 
         self.name = name
-        if parent_id is not None:
-            self.parent_id = parent_id
+        self.parent_id = parent_id
         if domain_id is not None:
             self.domain_id = domain_id
         if description is not None:

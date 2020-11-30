@@ -24,26 +24,31 @@ class StartPipelineRequest:
 
     openapi_types = {
         'x_language': 'str',
-        'pipeline_id': 'str'
+        'pipeline_id': 'str',
+        'body': 'StartPipelineParameters'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
-        'pipeline_id': 'pipeline_id'
+        'pipeline_id': 'pipeline_id',
+        'body': 'body'
     }
 
-    def __init__(self, x_language=None, pipeline_id=None):
+    def __init__(self, x_language=None, pipeline_id=None, body=None):
         """StartPipelineRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._x_language = None
         self._pipeline_id = None
+        self._body = None
         self.discriminator = None
 
         if x_language is not None:
             self.x_language = x_language
         self.pipeline_id = pipeline_id
+        if body is not None:
+            self.body = body
 
     @property
     def x_language(self):
@@ -84,6 +89,26 @@ class StartPipelineRequest:
         :type: str
         """
         self._pipeline_id = pipeline_id
+
+    @property
+    def body(self):
+        """Gets the body of this StartPipelineRequest.
+
+
+        :return: The body of this StartPipelineRequest.
+        :rtype: StartPipelineParameters
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this StartPipelineRequest.
+
+
+        :param body: The body of this StartPipelineRequest.
+        :type: StartPipelineParameters
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -15,6 +15,7 @@ from huaweicloudsdkcloudide.v2.model.delete_instance_response import DeleteInsta
 from huaweicloudsdkcloudide.v2.model.instance_edge_param import InstanceEdgeParam
 from huaweicloudsdkcloudide.v2.model.instance_param import InstanceParam
 from huaweicloudsdkcloudide.v2.model.instance_update_param import InstanceUpdateParam
+from huaweicloudsdkcloudide.v2.model.instances_response_instances_vo_result import InstancesResponseInstancesVOResult
 from huaweicloudsdkcloudide.v2.model.instances_vo import InstancesVO
 from huaweicloudsdkcloudide.v2.model.list_instances_request import ListInstancesRequest
 from huaweicloudsdkcloudide.v2.model.list_instances_response import ListInstancesResponse

@@ -50,7 +50,7 @@ class UpdateListenerReq:
         'admin_state_up': 'admin_state_up'
     }
 
-    def __init__(self, name=None, description=None, connection_limit=-1, http2_enable=False, default_pool_id='null', default_tls_container_ref=None, client_ca_tls_container_ref=None, sni_container_refs=None, insert_headers=None, tls_ciphers_policy=None, admin_state_up=None):
+    def __init__(self, name=None, description=None, connection_limit=-1, http2_enable=False, default_pool_id=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, sni_container_refs=None, insert_headers=None, tls_ciphers_policy=None, admin_state_up=None):
         """UpdateListenerReq - a model defined in huaweicloud sdk"""
         
         

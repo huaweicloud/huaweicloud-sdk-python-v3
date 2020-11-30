@@ -2,9 +2,9 @@
 
 from __future__ import absolute_import
 
-# import CloudideClient
-from huaweicloudsdkcloudide.v2.cloudide_client import CloudideClient
-from huaweicloudsdkcloudide.v2.cloudide_async_client import CloudideAsyncClient
+# import CloudIDEClient
+from huaweicloudsdkcloudide.v2.cloudide_client import CloudIDEClient
+from huaweicloudsdkcloudide.v2.cloudide_async_client import CloudIDEAsyncClient
 # import models into sdk package
 from huaweicloudsdkcloudide.v2.model.attributes import Attributes
 from huaweicloudsdkcloudide.v2.model.check_name_request import CheckNameRequest
@@ -18,6 +18,7 @@ from huaweicloudsdkcloudide.v2.model.delete_instance_response import DeleteInsta
 from huaweicloudsdkcloudide.v2.model.instance_edge_param import InstanceEdgeParam
 from huaweicloudsdkcloudide.v2.model.instance_param import InstanceParam
 from huaweicloudsdkcloudide.v2.model.instance_update_param import InstanceUpdateParam
+from huaweicloudsdkcloudide.v2.model.instances_response_instances_vo_result import InstancesResponseInstancesVOResult
 from huaweicloudsdkcloudide.v2.model.instances_vo import InstancesVO
 from huaweicloudsdkcloudide.v2.model.list_instances_request import ListInstancesRequest
 from huaweicloudsdkcloudide.v2.model.list_instances_response import ListInstancesResponse

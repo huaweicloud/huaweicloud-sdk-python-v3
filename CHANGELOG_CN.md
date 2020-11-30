@@ -1,3 +1,85 @@
+## 3.0.23-beta 2020-11-30
+## HuaweiCloud SDK BCS
+ - ### 新增特性
+    - 支持区块链服务
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 无
+
+## HuaweiCloud SDK BMS
+ - ### 新增特性
+    - 支持裸金属服务器
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 无
+
+## HuaweiCloud SDK BSS
+ - ### 新增特性
+    - 新增支持接口：查询使用量列表，设置/取消包周期资源到期转按需
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 无
+
+## HuaweiCloud SDK CBR
+ - ### 新增特性
+    - 新增支持接口：迁移资源接口
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 无
+
+## HuaweiCloud SDK CES
+ - ### 新增特性
+    - 新增支持接口：
+     - 查询事件监控列表
+     - 查询某一个事件监控详情
+     - 创建资源分组
+     - 更新资源分组
+     - 删除资源分组
+     - 查询所有资源分组
+     - 修改告警规则
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 无
+
+## HuaweiCloud SDK ECS
+ - ### 新增特性
+    - 无
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - [Issue 21](https://github.com/huaweicloud/huaweicloud-sdk-java-v3/issues/21) 开放查询SSH密钥详情接口
+
+## HuaweiCloud SDK IAM
+ - ### 新增特性
+    - 新增支持接口
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 无
+
+## HuaweiCloud SDK Live
+ - ### 新增特性
+    - 无
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - Live服务客户端名字修正：LiveAPIClient → LiveClient
+
+## HuaweiCloud SDK Meeting
+ - ### 新增特性
+    - 无
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 创建会议接口增加字段 `callInRestriction`
+    - 编辑预约会议接口增加字段 `callInRestriction`
+
+
 ## 3.0.22-beta 2020-11-17
 ## HuaweiCloud SDK DMS
  - ### 新增特性

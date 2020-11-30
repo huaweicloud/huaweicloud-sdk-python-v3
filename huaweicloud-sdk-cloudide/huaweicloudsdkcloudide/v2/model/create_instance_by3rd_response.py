@@ -23,7 +23,7 @@ class CreateInstanceBy3rdResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'InstancesVO',
+        'result': 'InstancesResponseInstancesVOResult',
         'status': 'str'
     }
 
@@ -52,7 +52,7 @@ class CreateInstanceBy3rdResponse(SdkResponse):
 
 
         :return: The result of this CreateInstanceBy3rdResponse.
-        :rtype: InstancesVO
+        :rtype: InstancesResponseInstancesVOResult
         """
         return self._result
 
@@ -62,7 +62,7 @@ class CreateInstanceBy3rdResponse(SdkResponse):
 
 
         :param result: The result of this CreateInstanceBy3rdResponse.
-        :type: InstancesVO
+        :type: InstancesResponseInstancesVOResult
         """
         self._result = result
 

@@ -111,6 +111,7 @@ from huaweicloudsdkecs.v2.model.nova_disassociate_security_group_request import 
 from huaweicloudsdkecs.v2.model.nova_disassociate_security_group_request_body import NovaDisassociateSecurityGroupRequestBody
 from huaweicloudsdkecs.v2.model.nova_disassociate_security_group_response import NovaDisassociateSecurityGroupResponse
 from huaweicloudsdkecs.v2.model.nova_keypair import NovaKeypair
+from huaweicloudsdkecs.v2.model.nova_keypair_detail import NovaKeypairDetail
 from huaweicloudsdkecs.v2.model.nova_link import NovaLink
 from huaweicloudsdkecs.v2.model.nova_list_availability_zones_request import NovaListAvailabilityZonesRequest
 from huaweicloudsdkecs.v2.model.nova_list_availability_zones_response import NovaListAvailabilityZonesResponse
@@ -135,6 +136,8 @@ from huaweicloudsdkecs.v2.model.nova_server_image import NovaServerImage
 from huaweicloudsdkecs.v2.model.nova_server_network import NovaServerNetwork
 from huaweicloudsdkecs.v2.model.nova_server_security_group import NovaServerSecurityGroup
 from huaweicloudsdkecs.v2.model.nova_server_volume import NovaServerVolume
+from huaweicloudsdkecs.v2.model.nova_show_keypair_request import NovaShowKeypairRequest
+from huaweicloudsdkecs.v2.model.nova_show_keypair_response import NovaShowKeypairResponse
 from huaweicloudsdkecs.v2.model.nova_show_server_request import NovaShowServerRequest
 from huaweicloudsdkecs.v2.model.nova_show_server_response import NovaShowServerResponse
 from huaweicloudsdkecs.v2.model.nova_simple_keypair import NovaSimpleKeypair

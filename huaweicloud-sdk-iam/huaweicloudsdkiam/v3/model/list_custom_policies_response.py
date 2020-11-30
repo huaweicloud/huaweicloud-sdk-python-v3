@@ -24,27 +24,32 @@ class ListCustomPoliciesResponse(SdkResponse):
 
     openapi_types = {
         'links': 'Links',
-        'roles': 'list[PolicyRoleResult]'
+        'roles': 'list[PolicyRoleResult]',
+        'total_number': 'int'
     }
 
     attribute_map = {
         'links': 'links',
-        'roles': 'roles'
+        'roles': 'roles',
+        'total_number': 'total_number'
     }
 
-    def __init__(self, links=None, roles=None):
+    def __init__(self, links=None, roles=None, total_number=None):
         """ListCustomPoliciesResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
         self._links = None
         self._roles = None
+        self._total_number = None
         self.discriminator = None
 
         if links is not None:
             self.links = links
         if roles is not None:
             self.roles = roles
+        if total_number is not None:
+            self.total_number = total_number
 
     @property
     def links(self):
@@ -87,6 +92,28 @@ class ListCustomPoliciesResponse(SdkResponse):
         :type: list[PolicyRoleResult]
         """
         self._roles = roles
+
+    @property
+    def total_number(self):
+        """Gets the total_number of this ListCustomPoliciesResponse.
+
+        返回自定义策略的总条数
+
+        :return: The total_number of this ListCustomPoliciesResponse.
+        :rtype: int
+        """
+        return self._total_number
+
+    @total_number.setter
+    def total_number(self, total_number):
+        """Sets the total_number of this ListCustomPoliciesResponse.
+
+        返回自定义策略的总条数
+
+        :param total_number: The total_number of this ListCustomPoliciesResponse.
+        :type: int
+        """
+        self._total_number = total_number
 
     def to_dict(self):
         """Returns the model properties as a dict"""

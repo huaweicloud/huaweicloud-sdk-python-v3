@@ -23,8 +23,8 @@ class Workflow:
     sensitive_list = []
 
     openapi_types = {
-        'parameter': 'PipelineParam',
-        'source': 'Source',
+        'parameter': 'list[PipelineParam]',
+        'source': 'list[Source]',
         'name': 'str',
         'project_id': 'str',
         'project_name': 'str'
@@ -60,9 +60,10 @@ class Workflow:
     def parameter(self):
         """Gets the parameter of this Workflow.
 
+        任务类型,list类型数据
 
         :return: The parameter of this Workflow.
-        :rtype: PipelineParam
+        :rtype: list[PipelineParam]
         """
         return self._parameter
 
@@ -70,9 +71,10 @@ class Workflow:
     def parameter(self, parameter):
         """Sets the parameter of this Workflow.
 
+        任务类型,list类型数据
 
         :param parameter: The parameter of this Workflow.
-        :type: PipelineParam
+        :type: list[PipelineParam]
         """
         self._parameter = parameter
 
@@ -80,9 +82,10 @@ class Workflow:
     def source(self):
         """Gets the source of this Workflow.
 
+        源码仓,list类型数据
 
         :return: The source of this Workflow.
-        :rtype: Source
+        :rtype: list[Source]
         """
         return self._source
 
@@ -90,9 +93,10 @@ class Workflow:
     def source(self, source):
         """Sets the source of this Workflow.
 
+        源码仓,list类型数据
 
         :param source: The source of this Workflow.
-        :type: Source
+        :type: list[Source]
         """
         self._source = source
 

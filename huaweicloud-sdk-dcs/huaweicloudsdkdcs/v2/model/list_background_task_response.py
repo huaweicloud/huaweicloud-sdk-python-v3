@@ -23,259 +23,72 @@ class ListBackgroundTaskResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
-        'name': 'str',
-        'details': 'DetailsBody',
-        'user_name': 'str',
-        'user_id': 'str',
-        'params': 'str',
-        'status': 'str',
-        'created_at': 'str',
-        'updated_at': 'str'
+        'task_count': 'str',
+        'tasks': 'list[SingleBackgroundTask]'
     }
 
     attribute_map = {
-        'id': 'id',
-        'name': 'name',
-        'details': 'details',
-        'user_name': 'user_name',
-        'user_id': 'user_id',
-        'params': 'params',
-        'status': 'status',
-        'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'task_count': 'task_count',
+        'tasks': 'tasks'
     }
 
-    def __init__(self, id=None, name=None, details=None, user_name=None, user_id=None, params=None, status=None, created_at=None, updated_at=None):
+    def __init__(self, task_count=None, tasks=None):
         """ListBackgroundTaskResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._id = None
-        self._name = None
-        self._details = None
-        self._user_name = None
-        self._user_id = None
-        self._params = None
-        self._status = None
-        self._created_at = None
-        self._updated_at = None
+        self._task_count = None
+        self._tasks = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if name is not None:
-            self.name = name
-        if details is not None:
-            self.details = details
-        if user_name is not None:
-            self.user_name = user_name
-        if user_id is not None:
-            self.user_id = user_id
-        if params is not None:
-            self.params = params
-        if status is not None:
-            self.status = status
-        if created_at is not None:
-            self.created_at = created_at
-        if updated_at is not None:
-            self.updated_at = updated_at
+        if task_count is not None:
+            self.task_count = task_count
+        if tasks is not None:
+            self.tasks = tasks
 
     @property
-    def id(self):
-        """Gets the id of this ListBackgroundTaskResponse.
+    def task_count(self):
+        """Gets the task_count of this ListBackgroundTaskResponse.
 
-        后台任务ID
+        任务个数
 
-        :return: The id of this ListBackgroundTaskResponse.
+        :return: The task_count of this ListBackgroundTaskResponse.
         :rtype: str
         """
-        return self._id
+        return self._task_count
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ListBackgroundTaskResponse.
+    @task_count.setter
+    def task_count(self, task_count):
+        """Sets the task_count of this ListBackgroundTaskResponse.
 
-        后台任务ID
+        任务个数
 
-        :param id: The id of this ListBackgroundTaskResponse.
+        :param task_count: The task_count of this ListBackgroundTaskResponse.
         :type: str
         """
-        self._id = id
+        self._task_count = task_count
 
     @property
-    def name(self):
-        """Gets the name of this ListBackgroundTaskResponse.
+    def tasks(self):
+        """Gets the tasks of this ListBackgroundTaskResponse.
 
-        后台任务名，目前支持以下取值：  ChangeInstanceSpec：变更规格  BindEip：开启公网访问  UnBindEip：关闭公网访问  AddReplica：添加副本  DelReplica：删除副本  AddWhitelist：设置IP白名单  UpdatePort：修改端口  RemoveIpFromDns：域名摘除IP 
+        任务详情数组
 
-        :return: The name of this ListBackgroundTaskResponse.
-        :rtype: str
+        :return: The tasks of this ListBackgroundTaskResponse.
+        :rtype: list[SingleBackgroundTask]
         """
-        return self._name
+        return self._tasks
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ListBackgroundTaskResponse.
+    @tasks.setter
+    def tasks(self, tasks):
+        """Sets the tasks of this ListBackgroundTaskResponse.
 
-        后台任务名，目前支持以下取值：  ChangeInstanceSpec：变更规格  BindEip：开启公网访问  UnBindEip：关闭公网访问  AddReplica：添加副本  DelReplica：删除副本  AddWhitelist：设置IP白名单  UpdatePort：修改端口  RemoveIpFromDns：域名摘除IP 
+        任务详情数组
 
-        :param name: The name of this ListBackgroundTaskResponse.
-        :type: str
+        :param tasks: The tasks of this ListBackgroundTaskResponse.
+        :type: list[SingleBackgroundTask]
         """
-        self._name = name
-
-    @property
-    def details(self):
-        """Gets the details of this ListBackgroundTaskResponse.
-
-
-        :return: The details of this ListBackgroundTaskResponse.
-        :rtype: DetailsBody
-        """
-        return self._details
-
-    @details.setter
-    def details(self, details):
-        """Sets the details of this ListBackgroundTaskResponse.
-
-
-        :param details: The details of this ListBackgroundTaskResponse.
-        :type: DetailsBody
-        """
-        self._details = details
-
-    @property
-    def user_name(self):
-        """Gets the user_name of this ListBackgroundTaskResponse.
-
-        用户名
-
-        :return: The user_name of this ListBackgroundTaskResponse.
-        :rtype: str
-        """
-        return self._user_name
-
-    @user_name.setter
-    def user_name(self, user_name):
-        """Sets the user_name of this ListBackgroundTaskResponse.
-
-        用户名
-
-        :param user_name: The user_name of this ListBackgroundTaskResponse.
-        :type: str
-        """
-        self._user_name = user_name
-
-    @property
-    def user_id(self):
-        """Gets the user_id of this ListBackgroundTaskResponse.
-
-        用户ID
-
-        :return: The user_id of this ListBackgroundTaskResponse.
-        :rtype: str
-        """
-        return self._user_id
-
-    @user_id.setter
-    def user_id(self, user_id):
-        """Sets the user_id of this ListBackgroundTaskResponse.
-
-        用户ID
-
-        :param user_id: The user_id of this ListBackgroundTaskResponse.
-        :type: str
-        """
-        self._user_id = user_id
-
-    @property
-    def params(self):
-        """Gets the params of this ListBackgroundTaskResponse.
-
-        任务相关参数
-
-        :return: The params of this ListBackgroundTaskResponse.
-        :rtype: str
-        """
-        return self._params
-
-    @params.setter
-    def params(self, params):
-        """Sets the params of this ListBackgroundTaskResponse.
-
-        任务相关参数
-
-        :param params: The params of this ListBackgroundTaskResponse.
-        :type: str
-        """
-        self._params = params
-
-    @property
-    def status(self):
-        """Gets the status of this ListBackgroundTaskResponse.
-
-        任务状态
-
-        :return: The status of this ListBackgroundTaskResponse.
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this ListBackgroundTaskResponse.
-
-        任务状态
-
-        :param status: The status of this ListBackgroundTaskResponse.
-        :type: str
-        """
-        self._status = status
-
-    @property
-    def created_at(self):
-        """Gets the created_at of this ListBackgroundTaskResponse.
-
-        任务启动时间，格式为2020-06-17T07:38:42.503Z
-
-        :return: The created_at of this ListBackgroundTaskResponse.
-        :rtype: str
-        """
-        return self._created_at
-
-    @created_at.setter
-    def created_at(self, created_at):
-        """Sets the created_at of this ListBackgroundTaskResponse.
-
-        任务启动时间，格式为2020-06-17T07:38:42.503Z
-
-        :param created_at: The created_at of this ListBackgroundTaskResponse.
-        :type: str
-        """
-        self._created_at = created_at
-
-    @property
-    def updated_at(self):
-        """Gets the updated_at of this ListBackgroundTaskResponse.
-
-        任务结束时间，格式为2020-06-17T07:38:42.503Z
-
-        :return: The updated_at of this ListBackgroundTaskResponse.
-        :rtype: str
-        """
-        return self._updated_at
-
-    @updated_at.setter
-    def updated_at(self, updated_at):
-        """Sets the updated_at of this ListBackgroundTaskResponse.
-
-        任务结束时间，格式为2020-06-17T07:38:42.503Z
-
-        :param updated_at: The updated_at of this ListBackgroundTaskResponse.
-        :type: str
-        """
-        self._updated_at = updated_at
+        self._tasks = tasks
 
     def to_dict(self):
         """Returns the model properties as a dict"""

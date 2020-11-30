@@ -1450,71 +1450,6 @@ class DcsClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_ces_monitored_objects(self, request):
-        """查询主维度信息列表
-
-        查询主维度对象列表，主维度ID当前支持dcs_instance_id，dcs_memcached_instance_id。 > 该接口当前仅在中国华南区开放。 
-
-        :param ListCESMonitoredObjectsRequest request
-        :return: ListCESMonitoredObjectsResponse
-        """
-        return self.list_ces_monitored_objects_with_http_info(request)
-
-    def list_ces_monitored_objects_with_http_info(self, request):
-        """查询主维度信息列表
-
-        查询主维度对象列表，主维度ID当前支持dcs_instance_id，dcs_memcached_instance_id。 > 该接口当前仅在中国华南区开放。 
-
-        :param ListCESMonitoredObjectsRequest request
-        :return: ListCESMonitoredObjectsResponse
-        """
-
-        all_params = ['dim_name', 'offset', 'limit']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'dim_name' in local_var_params:
-            query_params.append(('dim_name', local_var_params['dim_name']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/dims/monitored-objects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListCESMonitoredObjectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def list_configurations(self, request):
         """查询实例配置参数
 
@@ -1970,6 +1905,71 @@ class DcsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListMigrationTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_monitored_objects(self, request):
+        """查询主维度信息列表
+
+        查询主维度对象列表，主维度ID当前支持dcs_instance_id，dcs_memcached_instance_id。 > 该接口当前仅在中国华南区开放。 
+
+        :param ListMonitoredObjectsRequest request
+        :return: ListMonitoredObjectsResponse
+        """
+        return self.list_monitored_objects_with_http_info(request)
+
+    def list_monitored_objects_with_http_info(self, request):
+        """查询主维度信息列表
+
+        查询主维度对象列表，主维度ID当前支持dcs_instance_id，dcs_memcached_instance_id。 > 该接口当前仅在中国华南区开放。 
+
+        :param ListMonitoredObjectsRequest request
+        :return: ListMonitoredObjectsResponse
+        """
+
+        all_params = ['dim_name', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'dim_name' in local_var_params:
+            query_params.append(('dim_name', local_var_params['dim_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/dims/monitored-objects',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListMonitoredObjectsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

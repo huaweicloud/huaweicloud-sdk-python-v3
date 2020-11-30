@@ -4296,6 +4296,69 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_period_to_on_demand(self, request):
+        """设置或者取消包周期资源到期转按需
+
+        功能描述：设置或者取消包周期资源到期转按需
+
+        :param UpdatePeriodToOnDemandRequest request
+        :return: UpdatePeriodToOnDemandResponse
+        """
+        return self.update_period_to_on_demand_with_http_info(request)
+
+    def update_period_to_on_demand_with_http_info(self, request):
+        """设置或者取消包周期资源到期转按需
+
+        功能描述：设置或者取消包周期资源到期转按需
+
+        :param UpdatePeriodToOnDemandRequest request
+        :return: UpdatePeriodToOnDemandResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/orders/subscriptions/resources/to-on-demand',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdatePeriodToOnDemandResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_postal(self, request):
         """新增邮寄地址
 
@@ -4672,6 +4735,73 @@ class BssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListServiceTypesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_usage_types(self, request):
+        """查询使用量列表
+
+        功能描述：客户在伙伴销售平台或自建平台查询包年/包月或按需产品的列表
+
+        :param ListUsageTypesRequest request
+        :return: ListUsageTypesResponse
+        """
+        return self.list_usage_types_with_http_info(request)
+
+    def list_usage_types_with_http_info(self, request):
+        """查询使用量列表
+
+        功能描述：客户在伙伴销售平台或自建平台查询包年/包月或按需产品的列表
+
+        :param ListUsageTypesRequest request
+        :return: ListUsageTypesResponse
+        """
+
+        all_params = ['x_language', 'resource_type_code', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource_type_code' in local_var_params:
+            query_params.append(('resource_type_code', local_var_params['resource_type_code']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/products/usage-types',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListUsageTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

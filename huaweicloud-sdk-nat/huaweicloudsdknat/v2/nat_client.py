@@ -42,26 +42,26 @@ class NatClient(Client):
     def new_builder(clazz):
         return ClientBuilder(clazz)
 
-    def batch_create_dnat_rules(self, request):
+    def batch_create_nat_gateway_dnat_rules(self, request):
         """批量创建DNAT规则
 
         批量创建DNAT规则。
 
-        :param BatchCreateDnatRulesRequest request
-        :return: BatchCreateDnatRulesResponse
+        :param BatchCreateNatGatewayDnatRulesRequest request
+        :return: BatchCreateNatGatewayDnatRulesResponse
         """
-        return self.batch_create_dnat_rules_with_http_info(request)
+        return self.batch_create_nat_gateway_dnat_rules_with_http_info(request)
 
-    def batch_create_dnat_rules_with_http_info(self, request):
+    def batch_create_nat_gateway_dnat_rules_with_http_info(self, request):
         """批量创建DNAT规则
 
         批量创建DNAT规则。
 
-        :param BatchCreateDnatRulesRequest request
-        :return: BatchCreateDnatRulesResponse
+        :param BatchCreateNatGatewayDnatRulesRequest request
+        :return: BatchCreateNatGatewayDnatRulesResponse
         """
 
-        all_params = ['batch_create_dnat_rules_request_body']
+        all_params = ['batch_create_nat_gateway_dnat_rules_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -98,7 +98,7 @@ class NatClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='BatchCreateDnatRulesResponse',
+            response_type='BatchCreateNatGatewayDnatRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

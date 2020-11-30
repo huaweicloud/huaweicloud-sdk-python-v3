@@ -33,8 +33,8 @@ class TemplateParam:
         'display_name': 'str',
         'is_static': 'bool',
         'is_default': 'bool',
-        'limits': 'ParamTypeLimits',
-        'constraints': 'Constraint'
+        'limits': 'list[ParamTypeLimits]',
+        'constraints': 'list[Constraint]'
     }
 
     attribute_map = {
@@ -308,9 +308,10 @@ class TemplateParam:
     def limits(self):
         """Gets the limits of this TemplateParam.
 
+        array类型数据
 
         :return: The limits of this TemplateParam.
-        :rtype: ParamTypeLimits
+        :rtype: list[ParamTypeLimits]
         """
         return self._limits
 
@@ -318,9 +319,10 @@ class TemplateParam:
     def limits(self, limits):
         """Sets the limits of this TemplateParam.
 
+        array类型数据
 
         :param limits: The limits of this TemplateParam.
-        :type: ParamTypeLimits
+        :type: list[ParamTypeLimits]
         """
         self._limits = limits
 
@@ -328,9 +330,10 @@ class TemplateParam:
     def constraints(self):
         """Gets the constraints of this TemplateParam.
 
+        array类型数据
 
         :return: The constraints of this TemplateParam.
-        :rtype: Constraint
+        :rtype: list[Constraint]
         """
         return self._constraints
 
@@ -338,9 +341,10 @@ class TemplateParam:
     def constraints(self, constraints):
         """Sets the constraints of this TemplateParam.
 
+        array类型数据
 
         :param constraints: The constraints of this TemplateParam.
-        :type: Constraint
+        :type: list[Constraint]
         """
         self._constraints = constraints
 

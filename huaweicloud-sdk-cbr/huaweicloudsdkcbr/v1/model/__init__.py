@@ -78,6 +78,8 @@ from huaweicloudsdkcbr.v1.model.list_vault_request import ListVaultRequest
 from huaweicloudsdkcbr.v1.model.list_vault_response import ListVaultResponse
 from huaweicloudsdkcbr.v1.model.match import Match
 from huaweicloudsdkcbr.v1.model.member import Member
+from huaweicloudsdkcbr.v1.model.migrate_vault_resource_request import MigrateVaultResourceRequest
+from huaweicloudsdkcbr.v1.model.migrate_vault_resource_response import MigrateVaultResourceResponse
 from huaweicloudsdkcbr.v1.model.op_error_info import OpErrorInfo
 from huaweicloudsdkcbr.v1.model.op_extend_info_bckup import OpExtendInfoBckup
 from huaweicloudsdkcbr.v1.model.op_extend_info_common import OpExtendInfoCommon
@@ -160,6 +162,7 @@ from huaweicloudsdkcbr.v1.model.vault_create import VaultCreate
 from huaweicloudsdkcbr.v1.model.vault_create_req import VaultCreateReq
 from huaweicloudsdkcbr.v1.model.vault_dissociate import VaultDissociate
 from huaweicloudsdkcbr.v1.model.vault_get import VaultGet
+from huaweicloudsdkcbr.v1.model.vault_migrate_resource_req import VaultMigrateResourceReq
 from huaweicloudsdkcbr.v1.model.vault_policy_resp import VaultPolicyResp
 from huaweicloudsdkcbr.v1.model.vault_remove_resource_req import VaultRemoveResourceReq
 from huaweicloudsdkcbr.v1.model.vault_resource_instances_req import VaultResourceInstancesReq

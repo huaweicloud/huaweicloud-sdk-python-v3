@@ -357,6 +357,69 @@ class CesClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_resource_group(self, request):
+        """创建资源分组
+
+        创建资源分组，资源分组支持将各类资源按照业务集中进行分组管理，可以从分组角度查看监控与告警信息，以提升运维效率。
+
+        :param CreateResourceGroupRequest request
+        :return: CreateResourceGroupResponse
+        """
+        return self.create_resource_group_with_http_info(request)
+
+    def create_resource_group_with_http_info(self, request):
+        """创建资源分组
+
+        创建资源分组，资源分组支持将各类资源按照业务集中进行分组管理，可以从分组角度查看监控与告警信息，以提升运维效率。
+
+        :param CreateResourceGroupRequest request
+        :return: CreateResourceGroupResponse
+        """
+
+        all_params = ['create_resource_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/V1.0/{project_id}/resource-groups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateResourceGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_alarm(self, request):
         """删除告警规则
 
@@ -473,6 +536,67 @@ class CesClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteAlarmTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_resource_group(self, request):
+        """删除资源分组
+
+        删除一条资源分组。
+
+        :param DeleteResourceGroupRequest request
+        :return: DeleteResourceGroupResponse
+        """
+        return self.delete_resource_group_with_http_info(request)
+
+    def delete_resource_group_with_http_info(self, request):
+        """删除资源分组
+
+        删除一条资源分组。
+
+        :param DeleteResourceGroupRequest request
+        :return: DeleteResourceGroupResponse
+        """
+
+        all_params = ['group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/V1.0/{project_id}/resource-groups/{group_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteResourceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -692,6 +816,160 @@ class CesClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_event_detail(self, request):
+        """查询某一事件监控详情
+
+        根据事件监控名称，查询该事件发生的详细信息。
+
+        :param ListEventDetailRequest request
+        :return: ListEventDetailResponse
+        """
+        return self.list_event_detail_with_http_info(request)
+
+    def list_event_detail_with_http_info(self, request):
+        """查询某一事件监控详情
+
+        根据事件监控名称，查询该事件发生的详细信息。
+
+        :param ListEventDetailRequest request
+        :return: ListEventDetailResponse
+        """
+
+        all_params = ['event_name', 'event_type', 'event_items', 'event_source', 'event_level', 'event_user', 'event_state', '_from', 'to', 'start', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'event_name' in local_var_params:
+            path_params['event_name'] = local_var_params['event_name']
+
+        query_params = []
+        if 'event_type' in local_var_params:
+            query_params.append(('event_type', local_var_params['event_type']))
+        if 'event_source' in local_var_params:
+            query_params.append(('event_source', local_var_params['event_source']))
+        if 'event_level' in local_var_params:
+            query_params.append(('event_level', local_var_params['event_level']))
+        if 'event_user' in local_var_params:
+            query_params.append(('event_user', local_var_params['event_user']))
+        if 'event_state' in local_var_params:
+            query_params.append(('event_state', local_var_params['event_state']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'start' in local_var_params:
+            query_params.append(('start', local_var_params['start']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/V1.0/{project_id}/events/{event_name}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEventDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_events(self, request):
+        """查询事件监控列表
+
+        查询事件监控列表，包括系统事件和自定义事件。
+
+        :param ListEventsRequest request
+        :return: ListEventsResponse
+        """
+        return self.list_events_with_http_info(request)
+
+    def list_events_with_http_info(self, request):
+        """查询事件监控列表
+
+        查询事件监控列表，包括系统事件和自定义事件。
+
+        :param ListEventsRequest request
+        :return: ListEventsResponse
+        """
+
+        all_params = ['event_type', 'event_name', '_from', 'to', 'start', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'event_type' in local_var_params:
+            query_params.append(('event_type', local_var_params['event_type']))
+        if 'event_name' in local_var_params:
+            query_params.append(('event_name', local_var_params['event_name']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'start' in local_var_params:
+            query_params.append(('start', local_var_params['start']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/V1.0/{project_id}/events',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEventsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_metrics(self, request):
         """查询指标列表
 
@@ -761,6 +1039,75 @@ class CesClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListMetricsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_resource_group(self, request):
+        """查询所有资源分组
+
+        查询所创建的所有资源分组。
+
+        :param ListResourceGroupRequest request
+        :return: ListResourceGroupResponse
+        """
+        return self.list_resource_group_with_http_info(request)
+
+    def list_resource_group_with_http_info(self, request):
+        """查询所有资源分组
+
+        查询所创建的所有资源分组。
+
+        :param ListResourceGroupRequest request
+        :return: ListResourceGroupResponse
+        """
+
+        all_params = ['group_name', 'group_id', 'status', 'start', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'group_name' in local_var_params:
+            query_params.append(('group_name', local_var_params['group_name']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'start' in local_var_params:
+            query_params.append(('start', local_var_params['start']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/V1.0/{project_id}/resource-groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListResourceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1108,6 +1455,71 @@ class CesClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_alarm(self, request):
+        """修改告警规则
+
+        修改告警规则。
+
+        :param UpdateAlarmRequest request
+        :return: UpdateAlarmResponse
+        """
+        return self.update_alarm_with_http_info(request)
+
+    def update_alarm_with_http_info(self, request):
+        """修改告警规则
+
+        修改告警规则。
+
+        :param UpdateAlarmRequest request
+        :return: UpdateAlarmResponse
+        """
+
+        all_params = ['alarm_id', 'update_alarm_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'alarm_id' in local_var_params:
+            path_params['alarm_id'] = local_var_params['alarm_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/V1.0/{project_id}/alarms/{alarm_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateAlarmResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_alarm_action(self, request):
         """启停告警规则
 
@@ -1232,6 +1644,71 @@ class CesClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateAlarmTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_resource_group(self, request):
+        """更新资源分组
+
+        更新资源分组，资源分组支持将各类资源按照业务集中进行分组管理，可以从分组角度查看监控与告警信息，以提升运维效率。
+
+        :param UpdateResourceGroupRequest request
+        :return: UpdateResourceGroupResponse
+        """
+        return self.update_resource_group_with_http_info(request)
+
+    def update_resource_group_with_http_info(self, request):
+        """更新资源分组
+
+        更新资源分组，资源分组支持将各类资源按照业务集中进行分组管理，可以从分组角度查看监控与告警信息，以提升运维效率。
+
+        :param UpdateResourceGroupRequest request
+        :return: UpdateResourceGroupResponse
+        """
+
+        all_params = ['group_id', 'update_resource_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/V1.0/{project_id}/resource-groups/{group_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateResourceGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -30,7 +30,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
         'created_at': 'str',
         'started_at': 'str',
         'finished_at': 'str',
-        'num': 'str',
+        'num': 'int',
         'keys': 'list[HotkeysBody]'
     }
 
@@ -242,7 +242,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
         热key的数量
 
         :return: The num of this ShowHotkeyTaskDetailsResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._num
 
@@ -253,7 +253,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
         热key的数量
 
         :param num: The num of this ShowHotkeyTaskDetailsResponse.
-        :type: str
+        :type: int
         """
         self._num = num
 

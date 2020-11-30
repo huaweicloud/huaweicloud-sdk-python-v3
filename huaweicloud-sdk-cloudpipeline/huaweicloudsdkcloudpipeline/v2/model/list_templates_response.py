@@ -26,7 +26,7 @@ class ListTemplatesResponse(SdkResponse):
         'total': 'int',
         'page_number': 'int',
         'page_size': 'int',
-        'content': 'TemplateView'
+        'content': 'list[TemplateView]'
     }
 
     attribute_map = {
@@ -126,9 +126,10 @@ class ListTemplatesResponse(SdkResponse):
     def content(self):
         """Gets the content of this ListTemplatesResponse.
 
+        模板数据,list类型数据
 
         :return: The content of this ListTemplatesResponse.
-        :rtype: TemplateView
+        :rtype: list[TemplateView]
         """
         return self._content
 
@@ -136,9 +137,10 @@ class ListTemplatesResponse(SdkResponse):
     def content(self, content):
         """Sets the content of this ListTemplatesResponse.
 
+        模板数据,list类型数据
 
         :param content: The content of this ListTemplatesResponse.
-        :type: TemplateView
+        :type: list[TemplateView]
         """
         self._content = content
 

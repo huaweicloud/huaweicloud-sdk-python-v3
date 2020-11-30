@@ -42,6 +42,321 @@ class BssintlClient(Client):
     def new_builder(clazz):
         return ClientBuilder(clazz, "GlobalCredentials")
 
+    def change_enterprise_realname_authentication(self, request):
+        """实名认证变更申请
+
+        功能描述：实名认证变更申请
+
+        :param ChangeEnterpriseRealnameAuthenticationRequest request
+        :return: ChangeEnterpriseRealnameAuthenticationResponse
+        """
+        return self.change_enterprise_realname_authentication_with_http_info(request)
+
+    def change_enterprise_realname_authentication_with_http_info(self, request):
+        """实名认证变更申请
+
+        功能描述：实名认证变更申请
+
+        :param ChangeEnterpriseRealnameAuthenticationRequest request
+        :return: ChangeEnterpriseRealnameAuthenticationResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/customers/realname-auths/enterprise',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ChangeEnterpriseRealnameAuthenticationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def check_user_identity(self, request):
+        """校验客户的注册信息
+
+        功能描述：校验客户的注册信息
+
+        :param CheckUserIdentityRequest request
+        :return: CheckUserIdentityResponse
+        """
+        return self.check_user_identity_with_http_info(request)
+
+    def check_user_identity_with_http_info(self, request):
+        """校验客户的注册信息
+
+        功能描述：校验客户的注册信息
+
+        :param CheckUserIdentityRequest request
+        :return: CheckUserIdentityResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/sub-customers/users/check-identity',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CheckUserIdentityResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_enterprise_realname_authentication(self, request):
+        """企业实名认证申请
+
+        功能描述：企业实名认证申请V2
+
+        :param CreateEnterpriseRealnameAuthenticationRequest request
+        :return: CreateEnterpriseRealnameAuthenticationResponse
+        """
+        return self.create_enterprise_realname_authentication_with_http_info(request)
+
+    def create_enterprise_realname_authentication_with_http_info(self, request):
+        """企业实名认证申请
+
+        功能描述：企业实名认证申请V2
+
+        :param CreateEnterpriseRealnameAuthenticationRequest request
+        :return: CreateEnterpriseRealnameAuthenticationResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/customers/realname-auths/enterprise',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateEnterpriseRealnameAuthenticationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_personal_realname_auth(self, request):
+        """个人实名认证申请
+
+        功能描述：个人实名认证申请
+
+        :param CreatePersonalRealnameAuthRequest request
+        :return: CreatePersonalRealnameAuthResponse
+        """
+        return self.create_personal_realname_auth_with_http_info(request)
+
+    def create_personal_realname_auth_with_http_info(self, request):
+        """个人实名认证申请
+
+        功能描述：个人实名认证申请
+
+        :param CreatePersonalRealnameAuthRequest request
+        :return: CreatePersonalRealnameAuthResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/customers/realname-auths/individual',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreatePersonalRealnameAuthResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_sub_customer(self, request):
+        """创建客户（V2）
+
+        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。
+
+        :param CreateSubCustomerRequest request
+        :return: CreateSubCustomerResponse
+        """
+        return self.create_sub_customer_with_http_info(request)
+
+    def create_sub_customer_with_http_info(self, request):
+        """创建客户（V2）
+
+        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。
+
+        :param CreateSubCustomerRequest request
+        :return: CreateSubCustomerResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/sub-customers',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateSubCustomerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def freeze_sub_customers(self, request):
         """冻结伙伴子客户
 
@@ -527,6 +842,132 @@ class BssintlClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_sub_customers(self, request):
+        """查询客户列表
+
+        功能描述：查询客户列表
+
+        :param ListSubCustomersRequest request
+        :return: ListSubCustomersResponse
+        """
+        return self.list_sub_customers_with_http_info(request)
+
+    def list_sub_customers_with_http_info(self, request):
+        """查询客户列表
+
+        功能描述：查询客户列表
+
+        :param ListSubCustomersRequest request
+        :return: ListSubCustomersResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/sub-customers/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSubCustomersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def send_verification_message_code(self, request):
+        """短信验证码
+
+        功能描述：发送验证码
+
+        :param SendVerificationMessageCodeRequest request
+        :return: SendVerificationMessageCodeResponse
+        """
+        return self.send_verification_message_code_with_http_info(request)
+
+    def send_verification_message_code_with_http_info(self, request):
+        """短信验证码
+
+        功能描述：发送验证码
+
+        :param SendVerificationMessageCodeRequest request
+        :return: SendVerificationMessageCodeResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bases/verificationcode/send',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SendVerificationMessageCodeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_customer_monthly_sum(self, request):
         """查询客户消费汇总
 
@@ -594,6 +1035,67 @@ class BssintlClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowCustomerMonthlySumResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_realname_authentication_review_result(self, request):
+        """查询实名认证审核结果
+
+        功能描述：查询实名认证审核结果
+
+        :param ShowRealnameAuthenticationReviewResultRequest request
+        :return: ShowRealnameAuthenticationReviewResultResponse
+        """
+        return self.show_realname_authentication_review_result_with_http_info(request)
+
+    def show_realname_authentication_review_result_with_http_info(self, request):
+        """查询实名认证审核结果
+
+        功能描述：查询实名认证审核结果
+
+        :param ShowRealnameAuthenticationReviewResultRequest request
+        :return: ShowRealnameAuthenticationReviewResultResponse
+        """
+
+        all_params = ['customer_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'customer_id' in local_var_params:
+            query_params.append(('customer_id', local_var_params['customer_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/customers/realname-auths/result',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowRealnameAuthenticationReviewResultResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1035,321 +1537,6 @@ class BssintlClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def change_enterprise_realname_authentication(self, request):
-        """实名认证变更申请
-
-        功能描述：实名认证变更申请
-
-        :param ChangeEnterpriseRealnameAuthenticationRequest request
-        :return: ChangeEnterpriseRealnameAuthenticationResponse
-        """
-        return self.change_enterprise_realname_authentication_with_http_info(request)
-
-    def change_enterprise_realname_authentication_with_http_info(self, request):
-        """实名认证变更申请
-
-        功能描述：实名认证变更申请
-
-        :param ChangeEnterpriseRealnameAuthenticationRequest request
-        :return: ChangeEnterpriseRealnameAuthenticationResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/realname-auths/enterprise',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ChangeEnterpriseRealnameAuthenticationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def check_user_identity(self, request):
-        """校验客户的注册信息
-
-        功能描述：校验客户的注册信息
-
-        :param CheckUserIdentityRequest request
-        :return: CheckUserIdentityResponse
-        """
-        return self.check_user_identity_with_http_info(request)
-
-    def check_user_identity_with_http_info(self, request):
-        """校验客户的注册信息
-
-        功能描述：校验客户的注册信息
-
-        :param CheckUserIdentityRequest request
-        :return: CheckUserIdentityResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/sub-customers/users/check-identity',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CheckUserIdentityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def create_enterprise_realname_authentication(self, request):
-        """企业实名认证申请
-
-        功能描述：企业实名认证申请V2
-
-        :param CreateEnterpriseRealnameAuthenticationRequest request
-        :return: CreateEnterpriseRealnameAuthenticationResponse
-        """
-        return self.create_enterprise_realname_authentication_with_http_info(request)
-
-    def create_enterprise_realname_authentication_with_http_info(self, request):
-        """企业实名认证申请
-
-        功能描述：企业实名认证申请V2
-
-        :param CreateEnterpriseRealnameAuthenticationRequest request
-        :return: CreateEnterpriseRealnameAuthenticationResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/realname-auths/enterprise',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreateEnterpriseRealnameAuthenticationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def create_personal_realname_auth(self, request):
-        """个人实名认证申请
-
-        功能描述：个人实名认证申请
-
-        :param CreatePersonalRealnameAuthRequest request
-        :return: CreatePersonalRealnameAuthResponse
-        """
-        return self.create_personal_realname_auth_with_http_info(request)
-
-    def create_personal_realname_auth_with_http_info(self, request):
-        """个人实名认证申请
-
-        功能描述：个人实名认证申请
-
-        :param CreatePersonalRealnameAuthRequest request
-        :return: CreatePersonalRealnameAuthResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/realname-auths/individual',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreatePersonalRealnameAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def create_sub_customer(self, request):
-        """创建客户（V2）
-
-        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。
-
-        :param CreateSubCustomerRequest request
-        :return: CreateSubCustomerResponse
-        """
-        return self.create_sub_customer_with_http_info(request)
-
-    def create_sub_customer_with_http_info(self, request):
-        """创建客户（V2）
-
-        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。
-
-        :param CreateSubCustomerRequest request
-        :return: CreateSubCustomerResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/sub-customers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreateSubCustomerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def list_customer_orders(self, request):
         """查询订单列表V2
 
@@ -1620,69 +1807,6 @@ class BssintlClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_sub_customers(self, request):
-        """查询客户列表
-
-        功能描述：查询客户列表
-
-        :param ListSubCustomersRequest request
-        :return: ListSubCustomersResponse
-        """
-        return self.list_sub_customers_with_http_info(request)
-
-    def list_sub_customers_with_http_info(self, request):
-        """查询客户列表
-
-        功能描述：查询客户列表
-
-        :param ListSubCustomersRequest request
-        :return: ListSubCustomersResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/sub-customers/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListSubCustomersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def pay_orders(self, request):
         """支付包周期订单
 
@@ -1809,69 +1933,6 @@ class BssintlClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def send_verification_message_code(self, request):
-        """短信验证码
-
-        功能描述：发送验证码
-
-        :param SendVerificationMessageCodeRequest request
-        :return: SendVerificationMessageCodeResponse
-        """
-        return self.send_verification_message_code_with_http_info(request)
-
-    def send_verification_message_code_with_http_info(self, request):
-        """短信验证码
-
-        功能描述：发送验证码
-
-        :param SendVerificationMessageCodeRequest request
-        :return: SendVerificationMessageCodeResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/bases/verificationcode/send',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='SendVerificationMessageCodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def show_customer_order_details(self, request):
         """查询订单详情V2
 
@@ -1939,67 +2000,6 @@ class BssintlClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_realname_authentication_review_result(self, request):
-        """查询实名认证审核结果
-
-        功能描述：查询实名认证审核结果
-
-        :param ShowRealnameAuthenticationReviewResultRequest request
-        :return: ShowRealnameAuthenticationReviewResultResponse
-        """
-        return self.show_realname_authentication_review_result_with_http_info(request)
-
-    def show_realname_authentication_review_result_with_http_info(self, request):
-        """查询实名认证审核结果
-
-        功能描述：查询实名认证审核结果
-
-        :param ShowRealnameAuthenticationReviewResultRequest request
-        :return: ShowRealnameAuthenticationReviewResultResponse
-        """
-
-        all_params = ['customer_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'customer_id' in local_var_params:
-            query_params.append(('customer_id', local_var_params['customer_id']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/customers/realname-auths/result',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowRealnameAuthenticationReviewResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def show_refund_order_details(self, request):
         """查询退款订单的金额详情V2
 
@@ -2055,6 +2055,69 @@ class BssintlClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowRefundOrderDetailsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_period_to_on_demand(self, request):
+        """设置或者取消包周期资源到期转按需
+
+        功能描述：设置或者取消包周期资源到期转按需
+
+        :param UpdatePeriodToOnDemandRequest request
+        :return: UpdatePeriodToOnDemandResponse
+        """
+        return self.update_period_to_on_demand_with_http_info(request)
+
+    def update_period_to_on_demand_with_http_info(self, request):
+        """设置或者取消包周期资源到期转按需
+
+        功能描述：设置或者取消包周期资源到期转按需
+
+        :param UpdatePeriodToOnDemandRequest request
+        :return: UpdatePeriodToOnDemandResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/orders/subscriptions/resources/to-on-demand',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdatePeriodToOnDemandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2248,6 +2311,73 @@ class BssintlClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListServiceTypesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_usage_types(self, request):
+        """查询使用量列表
+
+        功能描述：客户在伙伴销售平台或自建平台查询包年/包月或按需产品的列表
+
+        :param ListUsageTypesRequest request
+        :return: ListUsageTypesResponse
+        """
+        return self.list_usage_types_with_http_info(request)
+
+    def list_usage_types_with_http_info(self, request):
+        """查询使用量列表
+
+        功能描述：客户在伙伴销售平台或自建平台查询包年/包月或按需产品的列表
+
+        :param ListUsageTypesRequest request
+        :return: ListUsageTypesResponse
+        """
+
+        all_params = ['x_language', 'resource_type_code', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource_type_code' in local_var_params:
+            query_params.append(('resource_type_code', local_var_params['resource_type_code']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/products/usage-types',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListUsageTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -40,7 +40,7 @@ class CreateL7PolicyRuleOption:
         'value': 'value'
     }
 
-    def __init__(self, admin_state_up=True, type=None, compare_type=None, invert=False, key='null', value=None):
+    def __init__(self, admin_state_up=True, type=None, compare_type=None, invert=False, key=None, value=None):
         """CreateL7PolicyRuleOption - a model defined in huaweicloud sdk"""
         
         

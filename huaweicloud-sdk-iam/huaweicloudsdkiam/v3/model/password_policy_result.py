@@ -30,7 +30,8 @@ class PasswordPolicyResult:
         'number_of_recent_passwords_disallowed': 'int',
         'password_not_username_or_invert': 'bool',
         'password_requirements': 'str',
-        'password_validity_period': 'int'
+        'password_validity_period': 'int',
+        'password_char_combination': 'int'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class PasswordPolicyResult:
         'number_of_recent_passwords_disallowed': 'number_of_recent_passwords_disallowed',
         'password_not_username_or_invert': 'password_not_username_or_invert',
         'password_requirements': 'password_requirements',
-        'password_validity_period': 'password_validity_period'
+        'password_validity_period': 'password_validity_period',
+        'password_char_combination': 'password_char_combination'
     }
 
-    def __init__(self, maximum_consecutive_identical_chars=None, maximum_password_length=None, minimum_password_age=None, minimum_password_length=None, number_of_recent_passwords_disallowed=None, password_not_username_or_invert=None, password_requirements=None, password_validity_period=None):
+    def __init__(self, maximum_consecutive_identical_chars=None, maximum_password_length=None, minimum_password_age=None, minimum_password_length=None, number_of_recent_passwords_disallowed=None, password_not_username_or_invert=None, password_requirements=None, password_validity_period=None, password_char_combination=None):
         """PasswordPolicyResult - a model defined in huaweicloud sdk"""
         
         
@@ -57,6 +59,7 @@ class PasswordPolicyResult:
         self._password_not_username_or_invert = None
         self._password_requirements = None
         self._password_validity_period = None
+        self._password_char_combination = None
         self.discriminator = None
 
         self.maximum_consecutive_identical_chars = maximum_consecutive_identical_chars
@@ -67,6 +70,7 @@ class PasswordPolicyResult:
         self.password_not_username_or_invert = password_not_username_or_invert
         self.password_requirements = password_requirements
         self.password_validity_period = password_validity_period
+        self.password_char_combination = password_char_combination
 
     @property
     def maximum_consecutive_identical_chars(self):
@@ -243,6 +247,28 @@ class PasswordPolicyResult:
         :type: int
         """
         self._password_validity_period = password_validity_period
+
+    @property
+    def password_char_combination(self):
+        """Gets the password_char_combination of this PasswordPolicyResult.
+
+        至少包含字符种类的个数，取值区间[2,4]。
+
+        :return: The password_char_combination of this PasswordPolicyResult.
+        :rtype: int
+        """
+        return self._password_char_combination
+
+    @password_char_combination.setter
+    def password_char_combination(self, password_char_combination):
+        """Sets the password_char_combination of this PasswordPolicyResult.
+
+        至少包含字符种类的个数，取值区间[2,4]。
+
+        :param password_char_combination: The password_char_combination of this PasswordPolicyResult.
+        :type: int
+        """
+        self._password_char_combination = password_char_combination
 
     def to_dict(self):
         """Returns the model properties as a dict"""

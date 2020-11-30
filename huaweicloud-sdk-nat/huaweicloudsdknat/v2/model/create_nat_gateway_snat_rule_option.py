@@ -134,7 +134,7 @@ class CreateNatGatewaySnatRuleOption:
     def description(self):
         """Gets the description of this CreateNatGatewaySnatRuleOption.
 
-        SNAT规则的描述。
+        SNAT规则的描述，长度限制为255。
 
         :return: The description of this CreateNatGatewaySnatRuleOption.
         :rtype: str
@@ -145,7 +145,7 @@ class CreateNatGatewaySnatRuleOption:
     def description(self, description):
         """Sets the description of this CreateNatGatewaySnatRuleOption.
 
-        SNAT规则的描述。
+        SNAT规则的描述，长度限制为255。
 
         :param description: The description of this CreateNatGatewaySnatRuleOption.
         :type: str

@@ -111,7 +111,7 @@ class UpdateNatGatewayDnatRuleOption:
     def description(self):
         """Gets the description of this UpdateNatGatewayDnatRuleOption.
 
-        DNAT规则的描述。
+        DNAT规则的描述，长度限制为255。
 
         :return: The description of this UpdateNatGatewayDnatRuleOption.
         :rtype: str
@@ -122,7 +122,7 @@ class UpdateNatGatewayDnatRuleOption:
     def description(self, description):
         """Sets the description of this UpdateNatGatewayDnatRuleOption.
 
-        DNAT规则的描述。
+        DNAT规则的描述，长度限制为255。
 
         :param description: The description of this UpdateNatGatewayDnatRuleOption.
         :type: str
