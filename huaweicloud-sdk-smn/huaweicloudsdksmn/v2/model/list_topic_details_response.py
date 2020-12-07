@@ -1,0 +1,299 @@
+# coding: utf-8
+
+import pprint
+import re
+
+import six
+
+
+from huaweicloudsdkcore.sdk_response import SdkResponse
+
+
+class ListTopicDetailsResponse(SdkResponse):
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'update_time': 'str',
+        'push_policy': 'int',
+        'create_time': 'str',
+        'name': 'str',
+        'topic_urn': 'str',
+        'display_name': 'str',
+        'request_id': 'str',
+        'enterprise_project_id': 'str'
+    }
+
+    attribute_map = {
+        'update_time': 'update_time',
+        'push_policy': 'push_policy',
+        'create_time': 'create_time',
+        'name': 'name',
+        'topic_urn': 'topic_urn',
+        'display_name': 'display_name',
+        'request_id': 'request_id',
+        'enterprise_project_id': 'enterprise_project_id'
+    }
+
+    def __init__(self, update_time=None, push_policy=None, create_time=None, name=None, topic_urn=None, display_name=None, request_id=None, enterprise_project_id=None):
+        """ListTopicDetailsResponse - a model defined in huaweicloud sdk"""
+        
+        super().__init__()
+
+        self._update_time = None
+        self._push_policy = None
+        self._create_time = None
+        self._name = None
+        self._topic_urn = None
+        self._display_name = None
+        self._request_id = None
+        self._enterprise_project_id = None
+        self.discriminator = None
+
+        if update_time is not None:
+            self.update_time = update_time
+        if push_policy is not None:
+            self.push_policy = push_policy
+        if create_time is not None:
+            self.create_time = create_time
+        if name is not None:
+            self.name = name
+        if topic_urn is not None:
+            self.topic_urn = topic_urn
+        if display_name is not None:
+            self.display_name = display_name
+        if request_id is not None:
+            self.request_id = request_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+
+    @property
+    def update_time(self):
+        """Gets the update_time of this ListTopicDetailsResponse.
+
+        更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+
+        :return: The update_time of this ListTopicDetailsResponse.
+        :rtype: str
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        """Sets the update_time of this ListTopicDetailsResponse.
+
+        更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+
+        :param update_time: The update_time of this ListTopicDetailsResponse.
+        :type: str
+        """
+        self._update_time = update_time
+
+    @property
+    def push_policy(self):
+        """Gets the push_policy of this ListTopicDetailsResponse.
+
+        消息推送的策略。0表示发送失败，保留到失败队列，1表示直接丢弃发送失败的消息。
+
+        :return: The push_policy of this ListTopicDetailsResponse.
+        :rtype: int
+        """
+        return self._push_policy
+
+    @push_policy.setter
+    def push_policy(self, push_policy):
+        """Sets the push_policy of this ListTopicDetailsResponse.
+
+        消息推送的策略。0表示发送失败，保留到失败队列，1表示直接丢弃发送失败的消息。
+
+        :param push_policy: The push_policy of this ListTopicDetailsResponse.
+        :type: int
+        """
+        self._push_policy = push_policy
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this ListTopicDetailsResponse.
+
+        创建时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+
+        :return: The create_time of this ListTopicDetailsResponse.
+        :rtype: str
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this ListTopicDetailsResponse.
+
+        创建时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+
+        :param create_time: The create_time of this ListTopicDetailsResponse.
+        :type: str
+        """
+        self._create_time = create_time
+
+    @property
+    def name(self):
+        """Gets the name of this ListTopicDetailsResponse.
+
+        创建Topic的名字。
+
+        :return: The name of this ListTopicDetailsResponse.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListTopicDetailsResponse.
+
+        创建Topic的名字。
+
+        :param name: The name of this ListTopicDetailsResponse.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def topic_urn(self):
+        """Gets the topic_urn of this ListTopicDetailsResponse.
+
+        Topic的唯一的资源标识。可以通过[查看主题列表获](https://support.huaweicloud.com/api-smn/smn_api_51004.html)取该标识。
+
+        :return: The topic_urn of this ListTopicDetailsResponse.
+        :rtype: str
+        """
+        return self._topic_urn
+
+    @topic_urn.setter
+    def topic_urn(self, topic_urn):
+        """Sets the topic_urn of this ListTopicDetailsResponse.
+
+        Topic的唯一的资源标识。可以通过[查看主题列表获](https://support.huaweicloud.com/api-smn/smn_api_51004.html)取该标识。
+
+        :param topic_urn: The topic_urn of this ListTopicDetailsResponse.
+        :type: str
+        """
+        self._topic_urn = topic_urn
+
+    @property
+    def display_name(self):
+        """Gets the display_name of this ListTopicDetailsResponse.
+
+        Topic的显示名，推送邮件消息时，作为邮件发件人显示。
+
+        :return: The display_name of this ListTopicDetailsResponse.
+        :rtype: str
+        """
+        return self._display_name
+
+    @display_name.setter
+    def display_name(self, display_name):
+        """Sets the display_name of this ListTopicDetailsResponse.
+
+        Topic的显示名，推送邮件消息时，作为邮件发件人显示。
+
+        :param display_name: The display_name of this ListTopicDetailsResponse.
+        :type: str
+        """
+        self._display_name = display_name
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this ListTopicDetailsResponse.
+
+        请求的唯一标识ID。
+
+        :return: The request_id of this ListTopicDetailsResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ListTopicDetailsResponse.
+
+        请求的唯一标识ID。
+
+        :param request_id: The request_id of this ListTopicDetailsResponse.
+        :type: str
+        """
+        self._request_id = request_id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListTopicDetailsResponse.
+
+        企业项目ID。
+
+        :return: The enterprise_project_id of this ListTopicDetailsResponse.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListTopicDetailsResponse.
+
+        企业项目ID。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListTopicDetailsResponse.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        return pprint.pformat(self.to_dict())
+
+    def __repr__(self):
+        """For `print` and `pprint`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ListTopicDetailsResponse):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

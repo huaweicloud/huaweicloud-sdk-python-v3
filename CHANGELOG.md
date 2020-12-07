@@ -1,3 +1,13 @@
+## 3.0.24-beta 2020-12-04
+## HuaweiCloud SDK SMN
+ - ### Features
+    - Support Simple Message Notification service.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+
 ## 3.0.23-beta 2020-11-30
 ## HuaweiCloud SDK BCS
  - ### Features

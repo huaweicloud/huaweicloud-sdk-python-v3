@@ -1002,7 +1002,7 @@ class EipClient(Client):
     def delete_publicip(self, request):
         """删除弹性公网IP
 
-        删除弹性公网IP。
+        删除弹性公网IP,绑定状态eip不允许直接删除。
 
         :param DeletePublicipRequest request
         :return: DeletePublicipResponse
@@ -1012,7 +1012,7 @@ class EipClient(Client):
     def delete_publicip_with_http_info(self, request):
         """删除弹性公网IP
 
-        删除弹性公网IP。
+        删除弹性公网IP,绑定状态eip不允许直接删除。
 
         :param DeletePublicipRequest request
         :return: DeletePublicipResponse
