@@ -60,7 +60,7 @@ class UpdateListenerOption:
         'transparent_client_ip_enable': 'transparent_client_ip_enable'
     }
 
-    def __init__(self, admin_state_up=None, client_ca_tls_container_ref=None, default_pool_id=None, default_tls_container_ref=None, description=None, http2_enable=True, insert_headers=None, name=None, sni_container_refs=None, tls_ciphers_policy=None, enable_member_retry=False, member_timeout=60, client_timeout=60, keepalive_timeout=None, ipgroup=None, transparent_client_ip_enable=None):
+    def __init__(self, admin_state_up=None, client_ca_tls_container_ref=None, default_pool_id=None, default_tls_container_ref=None, description=None, http2_enable=None, insert_headers=None, name=None, sni_container_refs=None, tls_ciphers_policy=None, enable_member_retry=None, member_timeout=None, client_timeout=None, keepalive_timeout=None, ipgroup=None, transparent_client_ip_enable=None):
         """UpdateListenerOption - a model defined in huaweicloud sdk"""
         
         

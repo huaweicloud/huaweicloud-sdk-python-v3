@@ -463,6 +463,8 @@ class CesClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -524,6 +526,8 @@ class CesClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -585,6 +589,8 @@ class CesClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -664,6 +670,8 @@ class CesClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -733,6 +741,8 @@ class CesClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -798,6 +808,8 @@ class CesClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -835,7 +847,7 @@ class CesClient(Client):
         :return: ListEventDetailResponse
         """
 
-        all_params = ['event_name', 'event_type', 'event_items', 'event_source', 'event_level', 'event_user', 'event_state', '_from', 'to', 'start', 'limit']
+        all_params = ['event_name', 'event_type', 'event_source', 'event_level', 'event_user', 'event_state', '_from', 'to', 'start', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -872,8 +884,6 @@ class CesClient(Client):
         form_params = {}
 
         body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
@@ -885,7 +895,7 @@ class CesClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/V1.0/{project_id}/events/{event_name}',
+            resource_path='/V1.0/{project_id}/event/{event_name}',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -952,6 +962,8 @@ class CesClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1027,6 +1039,8 @@ class CesClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1096,6 +1110,8 @@ class CesClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1157,6 +1173,8 @@ class CesClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1194,7 +1212,7 @@ class CesClient(Client):
         :return: ShowEventDataResponse
         """
 
-        all_params = ['dim_0', '_from', 'namespace', 'to', 'type', 'dim_1', 'dim_2']
+        all_params = ['namespace', 'dim_0', 'type', '_from', 'to', 'dim_1', 'dim_2', 'dim_3']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1205,20 +1223,22 @@ class CesClient(Client):
         path_params = {}
 
         query_params = []
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
         if 'dim_0' in local_var_params:
             query_params.append(('dim.0', local_var_params['dim_0']))
         if 'dim_1' in local_var_params:
             query_params.append(('dim.1', local_var_params['dim_1']))
         if 'dim_2' in local_var_params:
             query_params.append(('dim.2', local_var_params['dim_2']))
-        if '_from' in local_var_params:
-            query_params.append(('from', local_var_params['_from']))
-        if 'namespace' in local_var_params:
-            query_params.append(('namespace', local_var_params['namespace']))
-        if 'to' in local_var_params:
-            query_params.append(('to', local_var_params['to']))
+        if 'dim_3' in local_var_params:
+            query_params.append(('dim.3', local_var_params['dim_3']))
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
 
         header_params = {}
 
@@ -1230,6 +1250,8 @@ class CesClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1267,7 +1289,7 @@ class CesClient(Client):
         :return: ShowMetricDataResponse
         """
 
-        all_params = ['dim_0', 'filter', '_from', 'metric_name', 'namespace', 'period', 'to', 'dim_1', 'dim_2']
+        all_params = ['namespace', 'metric_name', 'dim_0', 'filter', 'period', '_from', 'to', 'dim_1', 'dim_2', 'dim_3']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1278,22 +1300,24 @@ class CesClient(Client):
         path_params = {}
 
         query_params = []
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
+        if 'metric_name' in local_var_params:
+            query_params.append(('metric_name', local_var_params['metric_name']))
         if 'dim_0' in local_var_params:
             query_params.append(('dim.0', local_var_params['dim_0']))
         if 'dim_1' in local_var_params:
             query_params.append(('dim.1', local_var_params['dim_1']))
         if 'dim_2' in local_var_params:
             query_params.append(('dim.2', local_var_params['dim_2']))
+        if 'dim_3' in local_var_params:
+            query_params.append(('dim.3', local_var_params['dim_3']))
         if 'filter' in local_var_params:
             query_params.append(('filter', local_var_params['filter']))
-        if '_from' in local_var_params:
-            query_params.append(('from', local_var_params['_from']))
-        if 'metric_name' in local_var_params:
-            query_params.append(('metric_name', local_var_params['metric_name']))
-        if 'namespace' in local_var_params:
-            query_params.append(('namespace', local_var_params['namespace']))
         if 'period' in local_var_params:
             query_params.append(('period', local_var_params['period']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
         if 'to' in local_var_params:
             query_params.append(('to', local_var_params['to']))
 
@@ -1307,6 +1331,8 @@ class CesClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1366,6 +1392,8 @@ class CesClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1437,6 +1465,8 @@ class CesClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

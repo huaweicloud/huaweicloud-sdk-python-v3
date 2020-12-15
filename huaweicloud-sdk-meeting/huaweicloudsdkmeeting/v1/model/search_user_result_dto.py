@@ -40,7 +40,14 @@ class SearchUserResultDTO:
         'desc': 'str',
         'status': 'int',
         'sort_level': 'int',
-        'hide_phone': 'bool'
+        'hide_phone': 'bool',
+        'third_account': 'str',
+        'vision_account': 'str',
+        'license': 'int',
+        'active_time': 'int',
+        'active_code_expire_time': 'int',
+        'expire_time': 'int',
+        'active_code': 'str'
     }
 
     attribute_map = {
@@ -61,10 +68,17 @@ class SearchUserResultDTO:
         'desc': 'desc',
         'status': 'status',
         'sort_level': 'sortLevel',
-        'hide_phone': 'hidePhone'
+        'hide_phone': 'hidePhone',
+        'third_account': 'thirdAccount',
+        'vision_account': 'visionAccount',
+        'license': 'license',
+        'active_time': 'activeTime',
+        'active_code_expire_time': 'activeCodeExpireTime',
+        'expire_time': 'expireTime',
+        'active_code': 'activeCode'
     }
 
-    def __init__(self, id=None, user_account=None, name=None, english_name=None, phone=None, country=None, email=None, vmr_id=None, dept_code=None, dept_name_path=None, user_type=None, admin_type=None, signature=None, title=None, desc=None, status=None, sort_level=None, hide_phone=None):
+    def __init__(self, id=None, user_account=None, name=None, english_name=None, phone=None, country=None, email=None, vmr_id=None, dept_code=None, dept_name_path=None, user_type=None, admin_type=None, signature=None, title=None, desc=None, status=None, sort_level=None, hide_phone=None, third_account=None, vision_account=None, license=None, active_time=None, active_code_expire_time=None, expire_time=None, active_code=None):
         """SearchUserResultDTO - a model defined in huaweicloud sdk"""
         
         
@@ -87,6 +101,13 @@ class SearchUserResultDTO:
         self._status = None
         self._sort_level = None
         self._hide_phone = None
+        self._third_account = None
+        self._vision_account = None
+        self._license = None
+        self._active_time = None
+        self._active_code_expire_time = None
+        self._expire_time = None
+        self._active_code = None
         self.discriminator = None
 
         if id is not None:
@@ -125,6 +146,20 @@ class SearchUserResultDTO:
             self.sort_level = sort_level
         if hide_phone is not None:
             self.hide_phone = hide_phone
+        if third_account is not None:
+            self.third_account = third_account
+        if vision_account is not None:
+            self.vision_account = vision_account
+        if license is not None:
+            self.license = license
+        if active_time is not None:
+            self.active_time = active_time
+        if active_code_expire_time is not None:
+            self.active_code_expire_time = active_code_expire_time
+        if expire_time is not None:
+            self.expire_time = expire_time
+        if active_code is not None:
+            self.active_code = active_code
 
     @property
     def id(self):
@@ -460,7 +495,7 @@ class SearchUserResultDTO:
     def status(self):
         """Gets the status of this SearchUserResultDTO.
 
-        用户状态，0、正常，1、停用
+        用户状态 * 0：正常 * 1：停用 
 
         :return: The status of this SearchUserResultDTO.
         :rtype: int
@@ -471,7 +506,7 @@ class SearchUserResultDTO:
     def status(self, status):
         """Sets the status of this SearchUserResultDTO.
 
-        用户状态，0、正常，1、停用
+        用户状态 * 0：正常 * 1：停用 
 
         :param status: The status of this SearchUserResultDTO.
         :type: int
@@ -521,6 +556,160 @@ class SearchUserResultDTO:
         :type: bool
         """
         self._hide_phone = hide_phone
+
+    @property
+    def third_account(self):
+        """Gets the third_account of this SearchUserResultDTO.
+
+        第三方账号自动开户的第三方账号、Ideahub账号的sn等
+
+        :return: The third_account of this SearchUserResultDTO.
+        :rtype: str
+        """
+        return self._third_account
+
+    @third_account.setter
+    def third_account(self, third_account):
+        """Sets the third_account of this SearchUserResultDTO.
+
+        第三方账号自动开户的第三方账号、Ideahub账号的sn等
+
+        :param third_account: The third_account of this SearchUserResultDTO.
+        :type: str
+        """
+        self._third_account = third_account
+
+    @property
+    def vision_account(self):
+        """Gets the vision_account of this SearchUserResultDTO.
+
+        智慧屏账号
+
+        :return: The vision_account of this SearchUserResultDTO.
+        :rtype: str
+        """
+        return self._vision_account
+
+    @vision_account.setter
+    def vision_account(self, vision_account):
+        """Sets the vision_account of this SearchUserResultDTO.
+
+        智慧屏账号
+
+        :param vision_account: The vision_account of this SearchUserResultDTO.
+        :type: str
+        """
+        self._vision_account = vision_account
+
+    @property
+    def license(self):
+        """Gets the license of this SearchUserResultDTO.
+
+        许可证 * 0：商用 * 1：免费试用 
+
+        :return: The license of this SearchUserResultDTO.
+        :rtype: int
+        """
+        return self._license
+
+    @license.setter
+    def license(self, license):
+        """Sets the license of this SearchUserResultDTO.
+
+        许可证 * 0：商用 * 1：免费试用 
+
+        :param license: The license of this SearchUserResultDTO.
+        :type: int
+        """
+        self._license = license
+
+    @property
+    def active_time(self):
+        """Gets the active_time of this SearchUserResultDTO.
+
+        激活时间，utc时间戳
+
+        :return: The active_time of this SearchUserResultDTO.
+        :rtype: int
+        """
+        return self._active_time
+
+    @active_time.setter
+    def active_time(self, active_time):
+        """Sets the active_time of this SearchUserResultDTO.
+
+        激活时间，utc时间戳
+
+        :param active_time: The active_time of this SearchUserResultDTO.
+        :type: int
+        """
+        self._active_time = active_time
+
+    @property
+    def active_code_expire_time(self):
+        """Gets the active_code_expire_time of this SearchUserResultDTO.
+
+        激活码到期时间,utc时间戳
+
+        :return: The active_code_expire_time of this SearchUserResultDTO.
+        :rtype: int
+        """
+        return self._active_code_expire_time
+
+    @active_code_expire_time.setter
+    def active_code_expire_time(self, active_code_expire_time):
+        """Sets the active_code_expire_time of this SearchUserResultDTO.
+
+        激活码到期时间,utc时间戳
+
+        :param active_code_expire_time: The active_code_expire_time of this SearchUserResultDTO.
+        :type: int
+        """
+        self._active_code_expire_time = active_code_expire_time
+
+    @property
+    def expire_time(self):
+        """Gets the expire_time of this SearchUserResultDTO.
+
+        已激活的终端到期时间,utc时间戳
+
+        :return: The expire_time of this SearchUserResultDTO.
+        :rtype: int
+        """
+        return self._expire_time
+
+    @expire_time.setter
+    def expire_time(self, expire_time):
+        """Sets the expire_time of this SearchUserResultDTO.
+
+        已激活的终端到期时间,utc时间戳
+
+        :param expire_time: The expire_time of this SearchUserResultDTO.
+        :type: int
+        """
+        self._expire_time = expire_time
+
+    @property
+    def active_code(self):
+        """Gets the active_code of this SearchUserResultDTO.
+
+        激活码
+
+        :return: The active_code of this SearchUserResultDTO.
+        :rtype: str
+        """
+        return self._active_code
+
+    @active_code.setter
+    def active_code(self, active_code):
+        """Sets the active_code of this SearchUserResultDTO.
+
+        激活码
+
+        :param active_code: The active_code of this SearchUserResultDTO.
+        :type: str
+        """
+        self._active_code = active_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

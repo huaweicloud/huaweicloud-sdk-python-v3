@@ -128,7 +128,7 @@ class MeetingAsyncClient(Client):
         :return: AddCorpAdminResponse
         """
 
-        all_params = ['admin_dto', 'x_request_id', 'accept_language']
+        all_params = ['admin_dto', 'x_request_id', 'accept_language', 'account_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -139,6 +139,8 @@ class MeetingAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'account_type' in local_var_params:
+            query_params.append(('accountType', local_var_params['account_type']))
 
         header_params = {}
         if 'x_request_id' in local_var_params:
@@ -735,7 +737,7 @@ class MeetingAsyncClient(Client):
         :return: AssociateVmrResponse
         """
 
-        all_params = ['account', 'assign_list', 'x_request_id', 'accept_language']
+        all_params = ['account', 'assign_list', 'x_request_id', 'accept_language', 'account_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -748,6 +750,8 @@ class MeetingAsyncClient(Client):
             path_params['account'] = local_var_params['account']
 
         query_params = []
+        if 'account_type' in local_var_params:
+            query_params.append(('accountType', local_var_params['account_type']))
 
         header_params = {}
         if 'x_request_id' in local_var_params:
@@ -804,7 +808,7 @@ class MeetingAsyncClient(Client):
         :return: BatchDeleteCorpAdminsResponse
         """
 
-        all_params = ['del_list', 'x_request_id', 'accept_language']
+        all_params = ['del_list', 'x_request_id', 'accept_language', 'account_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -815,6 +819,8 @@ class MeetingAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'account_type' in local_var_params:
+            query_params.append(('accountType', local_var_params['account_type']))
 
         header_params = {}
         if 'x_request_id' in local_var_params:
@@ -1139,7 +1145,7 @@ class MeetingAsyncClient(Client):
         :return: BatchDeleteUsersResponse
         """
 
-        all_params = ['del_list', 'x_request_id', 'accept_language']
+        all_params = ['del_list', 'x_request_id', 'accept_language', 'account_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1150,6 +1156,8 @@ class MeetingAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'account_type' in local_var_params:
+            query_params.append(('accountType', local_var_params['account_type']))
 
         header_params = {}
         if 'x_request_id' in local_var_params:
@@ -1275,7 +1283,7 @@ class MeetingAsyncClient(Client):
         :return: BatchUpdateUserStatusResponse
         """
 
-        all_params = ['value', 'account_list', 'x_request_id', 'accept_language']
+        all_params = ['value', 'account_list', 'x_request_id', 'accept_language', 'account_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1288,6 +1296,8 @@ class MeetingAsyncClient(Client):
             path_params['value'] = local_var_params['value']
 
         query_params = []
+        if 'account_type' in local_var_params:
+            query_params.append(('accountType', local_var_params['account_type']))
 
         header_params = {}
         if 'x_request_id' in local_var_params:
@@ -1372,6 +1382,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1441,6 +1453,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1772,6 +1786,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1841,6 +1857,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1922,6 +1940,71 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateMeetingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_portal_ref_nonce_async(self, request):
+        """获取页面免登陆跳转的nonce信息
+
+        通过token生成页面免登陆跳转到华为云会议的Portal的nonce信息。获取到nonce信息后，通过链接https://bmeeting.huaweicloud.com/?lang=zh-CN&nonce=xxxxxxxxxxxxx#/login进行免登陆跳转。
+
+        :param CreatePortalRefNonceRequest request
+        :return: CreatePortalRefNonceResponse
+        """
+        return self.create_portal_ref_nonce_with_http_info(request)
+
+    def create_portal_ref_nonce_with_http_info(self, request):
+        """获取页面免登陆跳转的nonce信息
+
+        通过token生成页面免登陆跳转到华为云会议的Portal的nonce信息。获取到nonce信息后，通过链接https://bmeeting.huaweicloud.com/?lang=zh-CN&nonce=xxxxxxxxxxxxx#/login进行免登陆跳转。
+
+        :param CreatePortalRefNonceRequest request
+        :return: CreatePortalRefNonceResponse
+        """
+
+        all_params = ['x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/acs/auth/portal-ref-nonce',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreatePortalRefNonceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2044,6 +2127,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -2176,6 +2261,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -2243,6 +2330,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -2351,7 +2440,7 @@ class MeetingAsyncClient(Client):
         :return: DisassociateVmrResponse
         """
 
-        all_params = ['account', 'recycle_list', 'x_request_id', 'accept_language']
+        all_params = ['account', 'recycle_list', 'x_request_id', 'accept_language', 'account_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2364,6 +2453,8 @@ class MeetingAsyncClient(Client):
             path_params['account'] = local_var_params['account']
 
         query_params = []
+        if 'account_type' in local_var_params:
+            query_params.append(('accountType', local_var_params['account_type']))
 
         header_params = {}
         if 'x_request_id' in local_var_params:
@@ -3530,6 +3621,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -3605,6 +3698,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -3674,6 +3769,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -3743,6 +3840,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -3818,6 +3917,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -3889,6 +3990,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -3962,6 +4065,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -4027,6 +4132,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -4102,6 +4209,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -4181,6 +4290,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -4250,6 +4361,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -4319,6 +4432,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -4396,6 +4511,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -4467,6 +4584,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -4540,6 +4659,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -4609,6 +4730,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -4678,6 +4801,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -4757,6 +4882,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -4838,6 +4965,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -4923,6 +5052,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -5009,6 +5140,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -5610,6 +5743,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -5675,6 +5810,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -5712,7 +5849,7 @@ class MeetingAsyncClient(Client):
         :return: ShowCorpAdminResponse
         """
 
-        all_params = ['account', 'x_request_id', 'accept_language']
+        all_params = ['account', 'x_request_id', 'accept_language', 'account_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -5725,6 +5862,8 @@ class MeetingAsyncClient(Client):
             path_params['account'] = local_var_params['account']
 
         query_params = []
+        if 'account_type' in local_var_params:
+            query_params.append(('accountType', local_var_params['account_type']))
 
         header_params = {}
         if 'x_request_id' in local_var_params:
@@ -5740,6 +5879,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -5803,6 +5944,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -5866,6 +6009,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -5931,6 +6076,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -5996,6 +6143,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -6126,6 +6275,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -6203,6 +6354,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -6280,6 +6433,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -6345,6 +6500,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -6475,6 +6632,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -6552,6 +6711,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -6617,6 +6778,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -6682,6 +6845,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -6745,6 +6910,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -6812,6 +6979,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -6873,6 +7042,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -6932,6 +7103,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -6969,7 +7142,7 @@ class MeetingAsyncClient(Client):
         :return: ShowUserDetailResponse
         """
 
-        all_params = ['account', 'x_request_id', 'accept_language']
+        all_params = ['account', 'x_request_id', 'accept_language', 'account_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -6982,6 +7155,8 @@ class MeetingAsyncClient(Client):
             path_params['account'] = local_var_params['account']
 
         query_params = []
+        if 'account_type' in local_var_params:
+            query_params.append(('accountType', local_var_params['account_type']))
 
         header_params = {}
         if 'x_request_id' in local_var_params:
@@ -6997,6 +7172,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -7060,6 +7237,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -8012,6 +8191,8 @@ class MeetingAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -8049,7 +8230,7 @@ class MeetingAsyncClient(Client):
         :return: UpdateUserResponse
         """
 
-        all_params = ['account', 'user_dto', 'x_request_id', 'accept_language']
+        all_params = ['account', 'user_dto', 'x_request_id', 'accept_language', 'account_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -8062,6 +8243,8 @@ class MeetingAsyncClient(Client):
             path_params['account'] = local_var_params['account']
 
         query_params = []
+        if 'account_type' in local_var_params:
+            query_params.append(('accountType', local_var_params['account_type']))
 
         header_params = {}
         if 'x_request_id' in local_var_params:

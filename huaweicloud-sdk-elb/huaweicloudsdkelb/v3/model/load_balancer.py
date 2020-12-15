@@ -98,7 +98,7 @@ class LoadBalancer:
         'ipv6_bandwidth': 'ipv6_bandwidth'
     }
 
-    def __init__(self, id=' 自动生成 ', description=None, provisioning_status=None, admin_state_up=True, provider='vlb', pools=None, listeners=None, operating_status='ONLINE', vip_address=None, vip_subnet_cidr_id=None, name=None, project_id=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=True, vpc_id=None, eips=None, ipv6_vip_address='空', ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, publicips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=False, deletion_protection_enable=None, frozen_scene=None, ipv6_bandwidth=None):
+    def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, vip_address=None, vip_subnet_cidr_id=None, name=None, project_id=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, publicips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, deletion_protection_enable=None, frozen_scene=None, ipv6_bandwidth=None):
         """LoadBalancer - a model defined in huaweicloud sdk"""
         
         

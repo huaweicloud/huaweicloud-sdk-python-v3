@@ -27,6 +27,7 @@ class AddUserDTO:
         'name': 'str',
         'english_name': 'str',
         'account': 'str',
+        'third_account': 'str',
         'phone': 'str',
         'country': 'str',
         'pwd': 'str',
@@ -47,6 +48,7 @@ class AddUserDTO:
         'name': 'name',
         'english_name': 'englishName',
         'account': 'account',
+        'third_account': 'thirdAccount',
         'phone': 'phone',
         'country': 'country',
         'pwd': 'pwd',
@@ -62,7 +64,7 @@ class AddUserDTO:
         'hide_phone': 'hidePhone'
     }
 
-    def __init__(self, id=None, name=None, english_name=None, account=None, phone=None, country=None, pwd=None, email=None, dept_code=None, signature=None, title=None, desc=None, status=None, function=None, send_notify=None, sort_level=None, hide_phone=None):
+    def __init__(self, id=None, name=None, english_name=None, account=None, third_account=None, phone=None, country=None, pwd=None, email=None, dept_code=None, signature=None, title=None, desc=None, status=None, function=None, send_notify=None, sort_level=None, hide_phone=None):
         """AddUserDTO - a model defined in huaweicloud sdk"""
         
         
@@ -71,6 +73,7 @@ class AddUserDTO:
         self._name = None
         self._english_name = None
         self._account = None
+        self._third_account = None
         self._phone = None
         self._country = None
         self._pwd = None
@@ -93,6 +96,8 @@ class AddUserDTO:
             self.english_name = english_name
         if account is not None:
             self.account = account
+        if third_account is not None:
+            self.third_account = third_account
         if phone is not None:
             self.phone = phone
         if country is not None:
@@ -207,6 +212,28 @@ class AddUserDTO:
         :type: str
         """
         self._account = account
+
+    @property
+    def third_account(self):
+        """Gets the third_account of this AddUserDTO.
+
+        指定第三方账号开户
+
+        :return: The third_account of this AddUserDTO.
+        :rtype: str
+        """
+        return self._third_account
+
+    @third_account.setter
+    def third_account(self, third_account):
+        """Sets the third_account of this AddUserDTO.
+
+        指定第三方账号开户
+
+        :param third_account: The third_account of this AddUserDTO.
+        :type: str
+        """
+        self._third_account = third_account
 
     @property
     def phone(self):

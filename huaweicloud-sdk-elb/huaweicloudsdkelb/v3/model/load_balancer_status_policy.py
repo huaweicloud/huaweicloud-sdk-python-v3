@@ -38,7 +38,7 @@ class LoadBalancerStatusPolicy:
         'rules': 'rules'
     }
 
-    def __init__(self, action=None, id=None, provisioning_status='ACTIVE', name=None, rules=None):
+    def __init__(self, action=None, id=None, provisioning_status=None, name=None, rules=None):
         """LoadBalancerStatusPolicy - a model defined in huaweicloud sdk"""
         
         

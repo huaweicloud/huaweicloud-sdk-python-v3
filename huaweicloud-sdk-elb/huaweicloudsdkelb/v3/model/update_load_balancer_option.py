@@ -52,7 +52,7 @@ class UpdateLoadBalancerOption:
         'elb_virsubnet_ids': 'elb_virsubnet_ids'
     }
 
-    def __init__(self, name=None, admin_state_up=True, description=None, ipv6_vip_virsubnet_id=None, vip_subnet_cidr_id=None, vip_address=None, l4_flavor_id=None, l7_flavor_id=None, ipv6_bandwidth=None, ip_target_enable=None, deletion_protection_enable=False, elb_virsubnet_ids=None):
+    def __init__(self, name=None, admin_state_up=None, description=None, ipv6_vip_virsubnet_id=None, vip_subnet_cidr_id=None, vip_address=None, l4_flavor_id=None, l7_flavor_id=None, ipv6_bandwidth=None, ip_target_enable=None, deletion_protection_enable=None, elb_virsubnet_ids=None):
         """UpdateLoadBalancerOption - a model defined in huaweicloud sdk"""
         
         

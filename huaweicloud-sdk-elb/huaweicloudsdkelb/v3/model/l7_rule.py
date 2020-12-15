@@ -46,7 +46,7 @@ class L7Rule:
         'id': 'id'
     }
 
-    def __init__(self, admin_state_up=None, compare_type=None, key=None, project_id=None, type=None, value=None, provisioning_status=None, invert=False, id=None):
+    def __init__(self, admin_state_up=None, compare_type=None, key=None, project_id=None, type=None, value=None, provisioning_status=None, invert=None, id=None):
         """L7Rule - a model defined in huaweicloud sdk"""
         
         

@@ -102,6 +102,8 @@ class LiveAsyncClient(Client):
 
         response_headers = ["X-request-id"]
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -178,6 +180,8 @@ class LiveAsyncClient(Client):
 
         response_headers = ["X-request-id"]
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -256,6 +260,8 @@ class LiveAsyncClient(Client):
 
         response_headers = ["X-request-id"]
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -332,6 +338,8 @@ class LiveAsyncClient(Client):
 
         response_headers = ["X-request-id"]
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -399,6 +407,8 @@ class LiveAsyncClient(Client):
 
         response_headers = ["X-request-id"]
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -474,6 +484,8 @@ class LiveAsyncClient(Client):
 
         response_headers = ["X-request-id"]
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -537,6 +549,8 @@ class LiveAsyncClient(Client):
 
         response_headers = ["X-request-id"]
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -602,6 +616,8 @@ class LiveAsyncClient(Client):
 
         response_headers = ["X-request-id"]
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -667,6 +683,8 @@ class LiveAsyncClient(Client):
 
         response_headers = ["X-request-id"]
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -744,6 +762,8 @@ class LiveAsyncClient(Client):
 
         response_headers = ["X-request-id"]
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -810,6 +830,8 @@ class LiveAsyncClient(Client):
 
         response_headers = ["X-request-id"]
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -888,6 +910,8 @@ class LiveAsyncClient(Client):
 
         response_headers = ["X-request-id"]
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -957,6 +981,8 @@ class LiveAsyncClient(Client):
 
         response_headers = ["X-request-id"]
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1026,6 +1052,8 @@ class LiveAsyncClient(Client):
 
         response_headers = ["X-request-id"]
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

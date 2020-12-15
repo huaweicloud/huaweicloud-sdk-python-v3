@@ -42,7 +42,7 @@ class UpdatePoolOption:
         'member_deletion_protection_enable': 'member_deletion_protection_enable'
     }
 
-    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, name=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=False):
+    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, name=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None):
         """UpdatePoolOption - a model defined in huaweicloud sdk"""
         
         

@@ -50,16 +50,11 @@ class PublicationRequestBase:
         self._device_list = None
         self.discriminator = None
 
-        if publish_name is not None:
-            self.publish_name = publish_name
-        if start_time is not None:
-            self.start_time = start_time
-        if end_time is not None:
-            self.end_time = end_time
-        if dept_list is not None:
-            self.dept_list = dept_list
-        if device_list is not None:
-            self.device_list = device_list
+        self.publish_name = publish_name
+        self.start_time = start_time
+        self.end_time = end_time
+        self.dept_list = dept_list
+        self.device_list = device_list
 
     @property
     def publish_name(self):

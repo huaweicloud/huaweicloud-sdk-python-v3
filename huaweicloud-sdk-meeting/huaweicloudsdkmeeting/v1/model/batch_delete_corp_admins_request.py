@@ -25,22 +25,25 @@ class BatchDeleteCorpAdminsRequest:
     openapi_types = {
         'x_request_id': 'str',
         'accept_language': 'str',
+        'account_type': 'int',
         'body': 'list[str]'
     }
 
     attribute_map = {
         'x_request_id': 'X-Request-Id',
         'accept_language': 'Accept-Language',
+        'account_type': 'accountType',
         'body': 'body'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, body=None):
+    def __init__(self, x_request_id=None, accept_language=None, account_type=None, body=None):
         """BatchDeleteCorpAdminsRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._x_request_id = None
         self._accept_language = None
+        self._account_type = None
         self._body = None
         self.discriminator = None
 
@@ -48,6 +51,8 @@ class BatchDeleteCorpAdminsRequest:
             self.x_request_id = x_request_id
         if accept_language is not None:
             self.accept_language = accept_language
+        if account_type is not None:
+            self.account_type = account_type
         if body is not None:
             self.body = body
 
@@ -90,6 +95,26 @@ class BatchDeleteCorpAdminsRequest:
         :type: str
         """
         self._accept_language = accept_language
+
+    @property
+    def account_type(self):
+        """Gets the account_type of this BatchDeleteCorpAdminsRequest.
+
+
+        :return: The account_type of this BatchDeleteCorpAdminsRequest.
+        :rtype: int
+        """
+        return self._account_type
+
+    @account_type.setter
+    def account_type(self, account_type):
+        """Sets the account_type of this BatchDeleteCorpAdminsRequest.
+
+
+        :param account_type: The account_type of this BatchDeleteCorpAdminsRequest.
+        :type: int
+        """
+        self._account_type = account_type
 
     @property
     def body(self):

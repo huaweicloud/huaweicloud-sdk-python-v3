@@ -1,3 +1,46 @@
+## 3.0.25-beta 2020-12-15
+## HuaweiCloud SDK CCE
+ - ### Features
+    - Support Cloud Container Engine service.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK ELB
+ - ### Features
+    - None
+ - ### Bug Fix
+    - Fix the problem that sending request to interface `CreateListener` returns empty response.
+    - Fix the problem that sending request to interface `CreateListener` returns response with wrong type. 
+ - ### Change
+    - None
+
+## HuaweiCloud SDK FunctionGraph
+ - ### Features
+    - Support more interfaces: UpdateFunctionReservedInstances.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK Meeting
+ - ### Features
+    - Support more interfaces: CreatePortalRefNonce.
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+## HuaweiCloud SDK NAT
+ - ### Features
+    - None
+ - ### Bug Fix
+    - Fix the problem that using interface `BatchCreateNatGatewayDnatRules` failed. 
+ - ### Change
+    - None
+
+
 ## 3.0.24-beta 2020-12-04
 ## HuaweiCloud SDK SMN
  - ### Features

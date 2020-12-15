@@ -54,7 +54,7 @@ class L7Policy:
         'rules': 'rules'
     }
 
-    def __init__(self, action=None, admin_state_up=True, description=None, id=None, listener_id=None, name=None, position=None, project_id=None, provisioning_status='ACTIVE', redirect_listener_id=None, redirect_pool_id=None, redirect_url=None, rules=None):
+    def __init__(self, action=None, admin_state_up=None, description=None, id=None, listener_id=None, name=None, position=None, project_id=None, provisioning_status=None, redirect_listener_id=None, redirect_pool_id=None, redirect_url=None, rules=None):
         """L7Policy - a model defined in huaweicloud sdk"""
         
         

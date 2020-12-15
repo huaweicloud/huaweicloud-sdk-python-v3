@@ -58,7 +58,7 @@ class HealthMonitor:
         'url_path': 'url_path'
     }
 
-    def __init__(self, admin_state_up=True, delay=None, domain_name=None, expected_codes='200', http_method='GET', id=None, max_retries=None, max_retries_down=None, monitor_port=None, name=None, pools=None, project_id=None, timeout=None, type=None, url_path='/'):
+    def __init__(self, admin_state_up=None, delay=None, domain_name=None, expected_codes=None, http_method=None, id=None, max_retries=None, max_retries_down=None, monitor_port=None, name=None, pools=None, project_id=None, timeout=None, type=None, url_path=None):
         """HealthMonitor - a model defined in huaweicloud sdk"""
         
         
@@ -100,7 +100,7 @@ class HealthMonitor:
     def admin_state_up(self):
         """Gets the admin_state_up of this HealthMonitor.
 
-        功能说明：管理状态true/false。使用说明：默认为true，true表示开启健康检查，false表示关闭健康检查。
+        功能说明：管理状态true/false。true表示开启健康检查，false表示关闭健康检查。
 
         :return: The admin_state_up of this HealthMonitor.
         :rtype: bool
@@ -111,7 +111,7 @@ class HealthMonitor:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this HealthMonitor.
 
-        功能说明：管理状态true/false。使用说明：默认为true，true表示开启健康检查，false表示关闭健康检查。
+        功能说明：管理状态true/false。true表示开启健康检查，false表示关闭健康检查。
 
         :param admin_state_up: The admin_state_up of this HealthMonitor.
         :type: bool
@@ -408,7 +408,7 @@ class HealthMonitor:
     def url_path(self):
         """Gets the url_path of this HealthMonitor.
 
-        功能说明：健康检查测试member健康时发送的http请求路径。默认为“/”。使用说明：以“/”开头。仅当type为HTTP时生效。
+        功能说明：健康检查测试member健康时发送的http请求路径。使用说明：以“/”开头。仅当type为HTTP时生效。
 
         :return: The url_path of this HealthMonitor.
         :rtype: str
@@ -419,7 +419,7 @@ class HealthMonitor:
     def url_path(self, url_path):
         """Sets the url_path of this HealthMonitor.
 
-        功能说明：健康检查测试member健康时发送的http请求路径。默认为“/”。使用说明：以“/”开头。仅当type为HTTP时生效。
+        功能说明：健康检查测试member健康时发送的http请求路径。使用说明：以“/”开头。仅当type为HTTP时生效。
 
         :param url_path: The url_path of this HealthMonitor.
         :type: str

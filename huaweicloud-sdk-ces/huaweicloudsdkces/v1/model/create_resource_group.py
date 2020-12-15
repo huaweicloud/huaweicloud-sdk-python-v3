@@ -48,7 +48,7 @@ class CreateResourceGroup:
     def namespace(self):
         """Gets the namespace of this CreateResourceGroup.
 
-        资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html
+        资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :return: The namespace of this CreateResourceGroup.
         :rtype: str
@@ -59,7 +59,7 @@ class CreateResourceGroup:
     def namespace(self, namespace):
         """Sets the namespace of this CreateResourceGroup.
 
-        资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html
+        资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param namespace: The namespace of this CreateResourceGroup.
         :type: str

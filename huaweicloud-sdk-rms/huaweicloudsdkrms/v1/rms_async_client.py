@@ -95,6 +95,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -219,6 +221,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -280,6 +284,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -341,6 +347,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -402,6 +410,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -461,6 +471,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -532,6 +544,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -601,6 +615,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -668,6 +684,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -729,6 +747,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -792,6 +812,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -853,6 +875,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -914,6 +938,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -1046,6 +1072,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -1111,6 +1139,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -1132,7 +1162,7 @@ class RmsAsyncClient(Client):
     def list_resources_async(self, request):
         """列举指定类型的资源
 
-        返回当前租户下特定资源类型的资源，需要当前用户需要有rms:resources:list权限
+        返回当前租户下特定资源类型的资源，需要当前用户有rms:resources:list权限。比如查询云服务器，对应的RMS资源类型是ecs.cloudservers，其中provider为ecs，type为cloudservers。RMS支持的服务和资源类型参见[支持的服务和区域](https://console.huaweicloud.com/eps/#/resources/supported)。
 
         :param ListResourcesRequest request
         :return: ListResourcesResponse
@@ -1142,7 +1172,7 @@ class RmsAsyncClient(Client):
     def list_resources_with_http_info(self, request):
         """列举指定类型的资源
 
-        返回当前租户下特定资源类型的资源，需要当前用户需要有rms:resources:list权限
+        返回当前租户下特定资源类型的资源，需要当前用户有rms:resources:list权限。比如查询云服务器，对应的RMS资源类型是ecs.cloudservers，其中provider为ecs，type为cloudservers。RMS支持的服务和资源类型参见[支持的服务和区域](https://console.huaweicloud.com/eps/#/resources/supported)。
 
         :param ListResourcesRequest request
         :return: ListResourcesResponse
@@ -1182,6 +1212,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -1203,7 +1235,7 @@ class RmsAsyncClient(Client):
     def show_resource_by_id_async(self, request):
         """查询单个资源
 
-        指定资源ID，返回该资源的详细信息
+        指定资源ID，返回该资源的详细信息，需要当前用户有rms:resources:get权限。比如查询云服务器，对应的RMS资源类型是ecs.cloudservers，其中provider为ecs，type为cloudservers。RMS支持的服务和资源类型参见[支持的服务和区域](https://console.huaweicloud.com/eps/#/resources/supported)。
 
         :param ShowResourceByIdRequest request
         :return: ShowResourceByIdResponse
@@ -1213,7 +1245,7 @@ class RmsAsyncClient(Client):
     def show_resource_by_id_with_http_info(self, request):
         """查询单个资源
 
-        指定资源ID，返回该资源的详细信息
+        指定资源ID，返回该资源的详细信息，需要当前用户有rms:resources:get权限。比如查询云服务器，对应的RMS资源类型是ecs.cloudservers，其中provider为ecs，type为cloudservers。RMS支持的服务和资源类型参见[支持的服务和区域](https://console.huaweicloud.com/eps/#/resources/supported)。
 
         :param ShowResourceByIdRequest request
         :return: ShowResourceByIdResponse
@@ -1247,6 +1279,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -1369,6 +1403,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 
@@ -1428,6 +1464,8 @@ class RmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = ['PkiTokenAuth']
 

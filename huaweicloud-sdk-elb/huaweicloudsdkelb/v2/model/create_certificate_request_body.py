@@ -44,7 +44,7 @@ class CreateCertificateRequestBody:
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, certificate=None, private_key=None, description=None, domain=None, name=None, admin_state_up=True, type=None, enterprise_project_id='0'):
+    def __init__(self, certificate=None, private_key=None, description=None, domain=None, name=None, admin_state_up=None, type=None, enterprise_project_id=None):
         """CreateCertificateRequestBody - a model defined in huaweicloud sdk"""
         
         

@@ -33,7 +33,8 @@ class RemuxTask:
         'output': 'ObsObjInfo',
         'user_data': 'str',
         'output_param': 'RemuxOutputParam',
-        'complete_ratio': 'int'
+        'complete_ratio': 'int',
+        'output_metadata': 'MetaData'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class RemuxTask:
         'output': 'output',
         'user_data': 'user_data',
         'output_param': 'output_param',
-        'complete_ratio': 'complete_ratio'
+        'complete_ratio': 'complete_ratio',
+        'output_metadata': 'output_metadata'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, description=None, input=None, output=None, user_data=None, output_param=None, complete_ratio=None):
+    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, description=None, input=None, output=None, user_data=None, output_param=None, complete_ratio=None, output_metadata=None):
         """RemuxTask - a model defined in huaweicloud sdk"""
         
         
@@ -66,6 +68,7 @@ class RemuxTask:
         self._user_data = None
         self._output_param = None
         self._complete_ratio = None
+        self._output_metadata = None
         self.discriminator = None
 
         if task_id is not None:
@@ -90,6 +93,8 @@ class RemuxTask:
             self.output_param = output_param
         if complete_ratio is not None:
             self.complete_ratio = complete_ratio
+        if output_metadata is not None:
+            self.output_metadata = output_metadata
 
     @property
     def task_id(self):
@@ -326,6 +331,26 @@ class RemuxTask:
         :type: int
         """
         self._complete_ratio = complete_ratio
+
+    @property
+    def output_metadata(self):
+        """Gets the output_metadata of this RemuxTask.
+
+
+        :return: The output_metadata of this RemuxTask.
+        :rtype: MetaData
+        """
+        return self._output_metadata
+
+    @output_metadata.setter
+    def output_metadata(self, output_metadata):
+        """Sets the output_metadata of this RemuxTask.
+
+
+        :param output_metadata: The output_metadata of this RemuxTask.
+        :type: MetaData
+        """
+        self._output_metadata = output_metadata
 
     def to_dict(self):
         """Returns the model properties as a dict"""

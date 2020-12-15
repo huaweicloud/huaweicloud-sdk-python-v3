@@ -41,8 +41,7 @@ class CreateProgramRequestDTO:
         self._program_item_list = None
         self.discriminator = None
 
-        if program_name is not None:
-            self.program_name = program_name
+        self.program_name = program_name
         if program_item_list is not None:
             self.program_item_list = program_item_list
 

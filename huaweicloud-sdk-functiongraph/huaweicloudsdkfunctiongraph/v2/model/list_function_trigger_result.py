@@ -108,7 +108,7 @@ class ListFunctionTriggerResult:
     def trigger_status(self):
         """Gets the trigger_status of this ListFunctionTriggerResult.
 
-        \"触发器状态\"  - ACTIVE: 启用状态。 - DISABLE: 禁用状态。
+        \"触发器状态\"  - ACTIVE: 启用状态。 - DISABLED: 禁用状态。
 
         :return: The trigger_status of this ListFunctionTriggerResult.
         :rtype: str
@@ -119,7 +119,7 @@ class ListFunctionTriggerResult:
     def trigger_status(self, trigger_status):
         """Sets the trigger_status of this ListFunctionTriggerResult.
 
-        \"触发器状态\"  - ACTIVE: 启用状态。 - DISABLE: 禁用状态。
+        \"触发器状态\"  - ACTIVE: 启用状态。 - DISABLED: 禁用状态。
 
         :param trigger_status: The trigger_status of this ListFunctionTriggerResult.
         :type: str

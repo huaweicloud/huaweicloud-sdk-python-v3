@@ -48,7 +48,7 @@ class Member:
         'ip_version': 'ip_version'
     }
 
-    def __init__(self, address=None, admin_state_up=True, id=None, name=None, operating_status=None, project_id=None, protocol_port=None, subnet_cidr_id=None, weight=1, ip_version='v4'):
+    def __init__(self, address=None, admin_state_up=None, id=None, name=None, operating_status=None, project_id=None, protocol_port=None, subnet_cidr_id=None, weight=None, ip_version=None):
         """Member - a model defined in huaweicloud sdk"""
         
         

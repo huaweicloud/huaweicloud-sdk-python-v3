@@ -55,7 +55,7 @@ class RemuxOutputParam:
     def format(self):
         """Gets the format of this RemuxOutputParam.
 
-        输出格式。 
+        输出格式。取值范围： - HLS - MP4 
 
         :return: The format of this RemuxOutputParam.
         :rtype: str
@@ -66,7 +66,7 @@ class RemuxOutputParam:
     def format(self, format):
         """Sets the format of this RemuxOutputParam.
 
-        输出格式。 
+        输出格式。取值范围： - HLS - MP4 
 
         :param format: The format of this RemuxOutputParam.
         :type: str

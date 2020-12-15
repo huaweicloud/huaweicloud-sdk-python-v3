@@ -24,6 +24,7 @@ class OriginPara:
 
     openapi_types = {
         'duration': 'int',
+        'duration_ms': 'int',
         'file_format': 'str',
         'video': 'VideoInfo',
         'audio': 'AudioInfo'
@@ -31,17 +32,19 @@ class OriginPara:
 
     attribute_map = {
         'duration': 'duration',
+        'duration_ms': 'duration_ms',
         'file_format': 'file_format',
         'video': 'video',
         'audio': 'audio'
     }
 
-    def __init__(self, duration=None, file_format=None, video=None, audio=None):
+    def __init__(self, duration=None, duration_ms=None, file_format=None, video=None, audio=None):
         """OriginPara - a model defined in huaweicloud sdk"""
         
         
 
         self._duration = None
+        self._duration_ms = None
         self._file_format = None
         self._video = None
         self._audio = None
@@ -49,6 +52,8 @@ class OriginPara:
 
         if duration is not None:
             self.duration = duration
+        if duration_ms is not None:
+            self.duration_ms = duration_ms
         if file_format is not None:
             self.file_format = file_format
         if video is not None:
@@ -60,7 +65,7 @@ class OriginPara:
     def duration(self):
         """Gets the duration of this OriginPara.
 
-        片源时长 
+        片源时长，单位：秒
 
         :return: The duration of this OriginPara.
         :rtype: int
@@ -71,12 +76,34 @@ class OriginPara:
     def duration(self, duration):
         """Sets the duration of this OriginPara.
 
-        片源时长 
+        片源时长，单位：秒
 
         :param duration: The duration of this OriginPara.
         :type: int
         """
         self._duration = duration
+
+    @property
+    def duration_ms(self):
+        """Gets the duration_ms of this OriginPara.
+
+        片源时长，单位：毫秒
+
+        :return: The duration_ms of this OriginPara.
+        :rtype: int
+        """
+        return self._duration_ms
+
+    @duration_ms.setter
+    def duration_ms(self, duration_ms):
+        """Sets the duration_ms of this OriginPara.
+
+        片源时长，单位：毫秒
+
+        :param duration_ms: The duration_ms of this OriginPara.
+        :type: int
+        """
+        self._duration_ms = duration_ms
 
     @property
     def file_format(self):

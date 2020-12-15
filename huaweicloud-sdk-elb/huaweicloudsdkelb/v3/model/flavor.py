@@ -42,7 +42,7 @@ class Flavor:
         'availability_zone_ids': 'availability_zone_ids'
     }
 
-    def __init__(self, id=None, info=None, name=None, shared=True, project_id=None, type=None, availability_zone_ids=None):
+    def __init__(self, id=None, info=None, name=None, shared=None, project_id=None, type=None, availability_zone_ids=None):
         """Flavor - a model defined in huaweicloud sdk"""
         
         

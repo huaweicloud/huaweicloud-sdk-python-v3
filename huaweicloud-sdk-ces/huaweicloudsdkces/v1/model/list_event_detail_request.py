@@ -32,8 +32,7 @@ class ListEventDetailRequest:
         '_from': 'int',
         'to': 'int',
         'start': 'int',
-        'limit': 'int',
-        'body': 'list[EventItem]'
+        'limit': 'int'
     }
 
     attribute_map = {
@@ -46,11 +45,10 @@ class ListEventDetailRequest:
         '_from': 'from',
         'to': 'to',
         'start': 'start',
-        'limit': 'limit',
-        'body': 'body'
+        'limit': 'limit'
     }
 
-    def __init__(self, event_name=None, event_type=None, event_source=None, event_level=None, event_user=None, event_state=None, _from=None, to=None, start=None, limit=None, body=None):
+    def __init__(self, event_name=None, event_type=None, event_source=None, event_level=None, event_user=None, event_state=None, _from=None, to=None, start=None, limit=None):
         """ListEventDetailRequest - a model defined in huaweicloud sdk"""
         
         
@@ -65,7 +63,6 @@ class ListEventDetailRequest:
         self._to = None
         self._start = None
         self._limit = None
-        self._body = None
         self.discriminator = None
 
         self.event_name = event_name
@@ -86,8 +83,6 @@ class ListEventDetailRequest:
             self.start = start
         if limit is not None:
             self.limit = limit
-        if body is not None:
-            self.body = body
 
     @property
     def event_name(self):
@@ -288,28 +283,6 @@ class ListEventDetailRequest:
         :type: int
         """
         self._limit = limit
-
-    @property
-    def body(self):
-        """Gets the body of this ListEventDetailRequest.
-
-        上报自定义事件。请求参数。
-
-        :return: The body of this ListEventDetailRequest.
-        :rtype: list[EventItem]
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        """Sets the body of this ListEventDetailRequest.
-
-        上报自定义事件。请求参数。
-
-        :param body: The body of this ListEventDetailRequest.
-        :type: list[EventItem]
-        """
-        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

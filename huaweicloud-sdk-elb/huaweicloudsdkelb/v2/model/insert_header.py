@@ -32,7 +32,7 @@ class InsertHeader:
         'x_forwarded_host': 'X-Forwarded-Host'
     }
 
-    def __init__(self, x_forwarded_elb_ip=None, x_forwarded_host=True):
+    def __init__(self, x_forwarded_elb_ip=None, x_forwarded_host=None):
         """InsertHeader - a model defined in huaweicloud sdk"""
         
         

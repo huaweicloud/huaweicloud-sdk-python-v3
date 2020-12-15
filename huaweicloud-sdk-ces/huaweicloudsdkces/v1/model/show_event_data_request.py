@@ -23,48 +23,73 @@ class ShowEventDataRequest:
     sensitive_list = []
 
     openapi_types = {
+        'namespace': 'str',
         'dim_0': 'str',
         'dim_1': 'str',
         'dim_2': 'str',
+        'dim_3': 'str',
+        'type': 'str',
         '_from': 'int',
-        'namespace': 'str',
-        'to': 'int',
-        'type': 'str'
+        'to': 'int'
     }
 
     attribute_map = {
+        'namespace': 'namespace',
         'dim_0': 'dim.0',
         'dim_1': 'dim.1',
         'dim_2': 'dim.2',
+        'dim_3': 'dim.3',
+        'type': 'type',
         '_from': 'from',
-        'namespace': 'namespace',
-        'to': 'to',
-        'type': 'type'
+        'to': 'to'
     }
 
-    def __init__(self, dim_0=None, dim_1=None, dim_2=None, _from=None, namespace=None, to=None, type=None):
+    def __init__(self, namespace=None, dim_0=None, dim_1=None, dim_2=None, dim_3=None, type=None, _from=None, to=None):
         """ShowEventDataRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._namespace = None
         self._dim_0 = None
         self._dim_1 = None
         self._dim_2 = None
-        self.__from = None
-        self._namespace = None
-        self._to = None
+        self._dim_3 = None
         self._type = None
+        self.__from = None
+        self._to = None
         self.discriminator = None
 
+        self.namespace = namespace
         self.dim_0 = dim_0
         if dim_1 is not None:
             self.dim_1 = dim_1
         if dim_2 is not None:
             self.dim_2 = dim_2
-        self._from = _from
-        self.namespace = namespace
-        self.to = to
+        if dim_3 is not None:
+            self.dim_3 = dim_3
         self.type = type
+        self._from = _from
+        self.to = to
+
+    @property
+    def namespace(self):
+        """Gets the namespace of this ShowEventDataRequest.
+
+
+        :return: The namespace of this ShowEventDataRequest.
+        :rtype: str
+        """
+        return self._namespace
+
+    @namespace.setter
+    def namespace(self, namespace):
+        """Sets the namespace of this ShowEventDataRequest.
+
+
+        :param namespace: The namespace of this ShowEventDataRequest.
+        :type: str
+        """
+        self._namespace = namespace
 
     @property
     def dim_0(self):
@@ -127,64 +152,24 @@ class ShowEventDataRequest:
         self._dim_2 = dim_2
 
     @property
-    def _from(self):
-        """Gets the _from of this ShowEventDataRequest.
+    def dim_3(self):
+        """Gets the dim_3 of this ShowEventDataRequest.
 
 
-        :return: The _from of this ShowEventDataRequest.
-        :rtype: int
-        """
-        return self.__from
-
-    @_from.setter
-    def _from(self, _from):
-        """Sets the _from of this ShowEventDataRequest.
-
-
-        :param _from: The _from of this ShowEventDataRequest.
-        :type: int
-        """
-        self.__from = _from
-
-    @property
-    def namespace(self):
-        """Gets the namespace of this ShowEventDataRequest.
-
-
-        :return: The namespace of this ShowEventDataRequest.
+        :return: The dim_3 of this ShowEventDataRequest.
         :rtype: str
         """
-        return self._namespace
+        return self._dim_3
 
-    @namespace.setter
-    def namespace(self, namespace):
-        """Sets the namespace of this ShowEventDataRequest.
+    @dim_3.setter
+    def dim_3(self, dim_3):
+        """Sets the dim_3 of this ShowEventDataRequest.
 
 
-        :param namespace: The namespace of this ShowEventDataRequest.
+        :param dim_3: The dim_3 of this ShowEventDataRequest.
         :type: str
         """
-        self._namespace = namespace
-
-    @property
-    def to(self):
-        """Gets the to of this ShowEventDataRequest.
-
-
-        :return: The to of this ShowEventDataRequest.
-        :rtype: int
-        """
-        return self._to
-
-    @to.setter
-    def to(self, to):
-        """Sets the to of this ShowEventDataRequest.
-
-
-        :param to: The to of this ShowEventDataRequest.
-        :type: int
-        """
-        self._to = to
+        self._dim_3 = dim_3
 
     @property
     def type(self):
@@ -205,6 +190,46 @@ class ShowEventDataRequest:
         :type: str
         """
         self._type = type
+
+    @property
+    def _from(self):
+        """Gets the _from of this ShowEventDataRequest.
+
+
+        :return: The _from of this ShowEventDataRequest.
+        :rtype: int
+        """
+        return self.__from
+
+    @_from.setter
+    def _from(self, _from):
+        """Sets the _from of this ShowEventDataRequest.
+
+
+        :param _from: The _from of this ShowEventDataRequest.
+        :type: int
+        """
+        self.__from = _from
+
+    @property
+    def to(self):
+        """Gets the to of this ShowEventDataRequest.
+
+
+        :return: The to of this ShowEventDataRequest.
+        :rtype: int
+        """
+        return self._to
+
+    @to.setter
+    def to(self, to):
+        """Sets the to of this ShowEventDataRequest.
+
+
+        :param to: The to of this ShowEventDataRequest.
+        :type: int
+        """
+        self._to = to
 
     def to_dict(self):
         """Returns the model properties as a dict"""

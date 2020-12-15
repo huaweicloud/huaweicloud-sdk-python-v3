@@ -32,7 +32,7 @@ class UpdateWhitelistReq:
         'whitelist': 'whitelist'
     }
 
-    def __init__(self, enable_whitelist=True, whitelist='""'):
+    def __init__(self, enable_whitelist=None, whitelist=None):
         """UpdateWhitelistReq - a model defined in huaweicloud sdk"""
         
         

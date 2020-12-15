@@ -23,90 +23,46 @@ class MetricInfoForAlarm:
     sensitive_list = []
 
     openapi_types = {
-        'dimensions': 'list[MetricsDimension]',
-        'metric_name': 'str',
         'namespace': 'str',
+        'metric_name': 'str',
+        'dimensions': 'list[MetricsDimension]',
         'resource_group_id': 'str',
         'resource_group_name': 'str'
     }
 
     attribute_map = {
-        'dimensions': 'dimensions',
-        'metric_name': 'metric_name',
         'namespace': 'namespace',
+        'metric_name': 'metric_name',
+        'dimensions': 'dimensions',
         'resource_group_id': 'resource_group_id',
         'resource_group_name': 'resource_group_name'
     }
 
-    def __init__(self, dimensions=None, metric_name=None, namespace=None, resource_group_id=None, resource_group_name=None):
+    def __init__(self, namespace=None, metric_name=None, dimensions=None, resource_group_id=None, resource_group_name=None):
         """MetricInfoForAlarm - a model defined in huaweicloud sdk"""
         
         
 
-        self._dimensions = None
-        self._metric_name = None
         self._namespace = None
+        self._metric_name = None
+        self._dimensions = None
         self._resource_group_id = None
         self._resource_group_name = None
         self.discriminator = None
 
-        self.dimensions = dimensions
-        self.metric_name = metric_name
         self.namespace = namespace
+        self.metric_name = metric_name
+        self.dimensions = dimensions
         if resource_group_id is not None:
             self.resource_group_id = resource_group_id
         if resource_group_name is not None:
             self.resource_group_name = resource_group_name
 
     @property
-    def dimensions(self):
-        """Gets the dimensions of this MetricInfoForAlarm.
-
-        指标维度
-
-        :return: The dimensions of this MetricInfoForAlarm.
-        :rtype: list[MetricsDimension]
-        """
-        return self._dimensions
-
-    @dimensions.setter
-    def dimensions(self, dimensions):
-        """Sets the dimensions of this MetricInfoForAlarm.
-
-        指标维度
-
-        :param dimensions: The dimensions of this MetricInfoForAlarm.
-        :type: list[MetricsDimension]
-        """
-        self._dimensions = dimensions
-
-    @property
-    def metric_name(self):
-        """Gets the metric_name of this MetricInfoForAlarm.
-
-        指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，长度最短为1，最大为64。  具体指标名请参见查询指标列表中查询出的指标名。
-
-        :return: The metric_name of this MetricInfoForAlarm.
-        :rtype: str
-        """
-        return self._metric_name
-
-    @metric_name.setter
-    def metric_name(self, metric_name):
-        """Sets the metric_name of this MetricInfoForAlarm.
-
-        指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，长度最短为1，最大为64。  具体指标名请参见查询指标列表中查询出的指标名。
-
-        :param metric_name: The metric_name of this MetricInfoForAlarm.
-        :type: str
-        """
-        self._metric_name = metric_name
-
-    @property
     def namespace(self):
         """Gets the namespace of this MetricInfoForAlarm.
 
-        指标命名空间，，例如弹性云服务器命名空间。格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32。说明： 当alarm_type为（EVENT.SYS| EVENT.CUSTOM）时允许为空。
+        服务指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符总长度最短为3，最大为32。说明： 当alarm_type为（EVENT.SYS| EVENT.CUSTOM）时允许为空；如：弹性云服务器的命名空间为SYS.ECS，文档数据库的命名空间为SYS.DDS，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :return: The namespace of this MetricInfoForAlarm.
         :rtype: str
@@ -117,12 +73,56 @@ class MetricInfoForAlarm:
     def namespace(self, namespace):
         """Sets the namespace of this MetricInfoForAlarm.
 
-        指标命名空间，，例如弹性云服务器命名空间。格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32。说明： 当alarm_type为（EVENT.SYS| EVENT.CUSTOM）时允许为空。
+        服务指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符总长度最短为3，最大为32。说明： 当alarm_type为（EVENT.SYS| EVENT.CUSTOM）时允许为空；如：弹性云服务器的命名空间为SYS.ECS，文档数据库的命名空间为SYS.DDS，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param namespace: The namespace of this MetricInfoForAlarm.
         :type: str
         """
         self._namespace = namespace
+
+    @property
+    def metric_name(self):
+        """Gets the metric_name of this MetricInfoForAlarm.
+
+        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+
+        :return: The metric_name of this MetricInfoForAlarm.
+        :rtype: str
+        """
+        return self._metric_name
+
+    @metric_name.setter
+    def metric_name(self, metric_name):
+        """Sets the metric_name of this MetricInfoForAlarm.
+
+        资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+
+        :param metric_name: The metric_name of this MetricInfoForAlarm.
+        :type: str
+        """
+        self._metric_name = metric_name
+
+    @property
+    def dimensions(self):
+        """Gets the dimensions of this MetricInfoForAlarm.
+
+        指标维度，目前最大可添加4个维度。
+
+        :return: The dimensions of this MetricInfoForAlarm.
+        :rtype: list[MetricsDimension]
+        """
+        return self._dimensions
+
+    @dimensions.setter
+    def dimensions(self, dimensions):
+        """Sets the dimensions of this MetricInfoForAlarm.
+
+        指标维度，目前最大可添加4个维度。
+
+        :param dimensions: The dimensions of this MetricInfoForAlarm.
+        :type: list[MetricsDimension]
+        """
+        self._dimensions = dimensions
 
     @property
     def resource_group_id(self):

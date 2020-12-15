@@ -58,7 +58,7 @@ class Pool:
         'member_deletion_protection_enable': 'member_deletion_protection_enable'
     }
 
-    def __init__(self, admin_state_up=True, description=None, healthmonitor_id=None, id=None, lb_algorithm=None, listeners=None, loadbalancers=None, members=None, name=None, project_id=None, protocol=None, session_persistence=None, ip_version='dualstack', slow_start=None, member_deletion_protection_enable=False):
+    def __init__(self, admin_state_up=None, description=None, healthmonitor_id=None, id=None, lb_algorithm=None, listeners=None, loadbalancers=None, members=None, name=None, project_id=None, protocol=None, session_persistence=None, ip_version=None, slow_start=None, member_deletion_protection_enable=None):
         """Pool - a model defined in huaweicloud sdk"""
         
         

@@ -23,7 +23,7 @@ class BatchCreateNatGatewayDnatRulesRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'dnat_rules': 'list[CreateNatGatewayDnatRuleOption]'
+        'dnat_rules': 'list[CreateNatGatewayDnatOption]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class BatchCreateNatGatewayDnatRulesRequestBody:
         DNAT规则批量创建对象的请求体。
 
         :return: The dnat_rules of this BatchCreateNatGatewayDnatRulesRequestBody.
-        :rtype: list[CreateNatGatewayDnatRuleOption]
+        :rtype: list[CreateNatGatewayDnatOption]
         """
         return self._dnat_rules
 
@@ -58,7 +58,7 @@ class BatchCreateNatGatewayDnatRulesRequestBody:
         DNAT规则批量创建对象的请求体。
 
         :param dnat_rules: The dnat_rules of this BatchCreateNatGatewayDnatRulesRequestBody.
-        :type: list[CreateNatGatewayDnatRuleOption]
+        :type: list[CreateNatGatewayDnatOption]
         """
         self._dnat_rules = dnat_rules
 

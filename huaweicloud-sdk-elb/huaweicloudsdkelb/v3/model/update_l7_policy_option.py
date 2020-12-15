@@ -38,7 +38,7 @@ class UpdateL7PolicyOption:
         'redirect_pool_id': 'redirect_pool_id'
     }
 
-    def __init__(self, admin_state_up=True, description=None, name=None, redirect_listener_id=None, redirect_pool_id=None):
+    def __init__(self, admin_state_up=None, description=None, name=None, redirect_listener_id=None, redirect_pool_id=None):
         """UpdateL7PolicyOption - a model defined in huaweicloud sdk"""
         
         

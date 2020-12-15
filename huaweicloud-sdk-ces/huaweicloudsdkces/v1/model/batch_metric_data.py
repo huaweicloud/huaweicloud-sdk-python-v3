@@ -107,7 +107,7 @@ class BatchMetricData:
     def namespace(self):
         """Gets the namespace of this BatchMetricData.
 
-        指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32
+        指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :return: The namespace of this BatchMetricData.
         :rtype: str
@@ -118,7 +118,7 @@ class BatchMetricData:
     def namespace(self, namespace):
         """Sets the namespace of this BatchMetricData.
 
-        指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32
+        指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param namespace: The namespace of this BatchMetricData.
         :type: str
@@ -129,7 +129,7 @@ class BatchMetricData:
     def metric_name(self):
         """Gets the metric_name of this BatchMetricData.
 
-        指标名称，例如弹性云服务器监控指标中的cpu_util。
+        指标名称，例如弹性云服务器监控指标中的cpu_util；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :return: The metric_name of this BatchMetricData.
         :rtype: str
@@ -140,7 +140,7 @@ class BatchMetricData:
     def metric_name(self, metric_name):
         """Sets the metric_name of this BatchMetricData.
 
-        指标名称，例如弹性云服务器监控指标中的cpu_util。
+        指标名称，例如弹性云服务器监控指标中的cpu_util；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param metric_name: The metric_name of this BatchMetricData.
         :type: str

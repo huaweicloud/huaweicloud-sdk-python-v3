@@ -38,7 +38,7 @@ class LoadBalancerStatusMember:
         'operating_status': 'operating_status'
     }
 
-    def __init__(self, provisioning_status='ACTIVE', address=None, protocol_port=None, id=None, operating_status=None):
+    def __init__(self, provisioning_status=None, address=None, protocol_port=None, id=None, operating_status=None):
         """LoadBalancerStatusMember - a model defined in huaweicloud sdk"""
         
         

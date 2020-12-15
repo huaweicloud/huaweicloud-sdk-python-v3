@@ -50,7 +50,7 @@ class UpdateHealthmonitorReq:
         'type': 'type'
     }
 
-    def __init__(self, name=None, admin_state_up=True, monitor_port=None, timeout=None, expected_codes=None, domain_name=None, url_path=None, http_method=None, delay=None, max_retries=None, type=None):
+    def __init__(self, name=None, admin_state_up=None, monitor_port=None, timeout=None, expected_codes=None, domain_name=None, url_path=None, http_method=None, delay=None, max_retries=None, type=None):
         """UpdateHealthmonitorReq - a model defined in huaweicloud sdk"""
         
         

@@ -26,6 +26,7 @@ class DisassociateVmrRequest:
         'x_request_id': 'str',
         'accept_language': 'str',
         'account': 'str',
+        'account_type': 'int',
         'body': 'list[str]'
     }
 
@@ -33,10 +34,11 @@ class DisassociateVmrRequest:
         'x_request_id': 'X-Request-Id',
         'accept_language': 'Accept-Language',
         'account': 'account',
+        'account_type': 'accountType',
         'body': 'body'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, account=None, body=None):
+    def __init__(self, x_request_id=None, accept_language=None, account=None, account_type=None, body=None):
         """DisassociateVmrRequest - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +46,7 @@ class DisassociateVmrRequest:
         self._x_request_id = None
         self._accept_language = None
         self._account = None
+        self._account_type = None
         self._body = None
         self.discriminator = None
 
@@ -52,6 +55,8 @@ class DisassociateVmrRequest:
         if accept_language is not None:
             self.accept_language = accept_language
         self.account = account
+        if account_type is not None:
+            self.account_type = account_type
         if body is not None:
             self.body = body
 
@@ -114,6 +119,26 @@ class DisassociateVmrRequest:
         :type: str
         """
         self._account = account
+
+    @property
+    def account_type(self):
+        """Gets the account_type of this DisassociateVmrRequest.
+
+
+        :return: The account_type of this DisassociateVmrRequest.
+        :rtype: int
+        """
+        return self._account_type
+
+    @account_type.setter
+    def account_type(self, account_type):
+        """Sets the account_type of this DisassociateVmrRequest.
+
+
+        :param account_type: The account_type of this DisassociateVmrRequest.
+        :type: int
+        """
+        self._account_type = account_type
 
     @property
     def body(self):

@@ -42,7 +42,7 @@ class CreateMemberReq:
         'weight': 'weight'
     }
 
-    def __init__(self, tenant_id=None, name=None, admin_state_up=True, protocol_port=None, subnet_id=None, address=None, weight=1):
+    def __init__(self, tenant_id=None, name=None, admin_state_up=None, protocol_port=None, subnet_id=None, address=None, weight=None):
         """CreateMemberReq - a model defined in huaweicloud sdk"""
         
         

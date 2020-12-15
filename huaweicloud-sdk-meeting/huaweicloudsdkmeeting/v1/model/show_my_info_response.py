@@ -42,9 +42,14 @@ class ShowMyInfoResponse(SdkResponse):
         'desc': 'str',
         'corp': 'CorpBasicInfoDTO',
         'function': 'UserFunctionDTO',
+        'dev_type': 'QueryDeviceInfoResultDTO',
         'status': 'int',
         'sort_level': 'int',
-        'hide_phone': 'bool'
+        'hide_phone': 'bool',
+        'vision_account': 'str',
+        'third_account': 'str',
+        'license': 'int',
+        'active_time': 'int'
     }
 
     attribute_map = {
@@ -67,12 +72,17 @@ class ShowMyInfoResponse(SdkResponse):
         'desc': 'desc',
         'corp': 'corp',
         'function': 'function',
+        'dev_type': 'devType',
         'status': 'status',
         'sort_level': 'sortLevel',
-        'hide_phone': 'hidePhone'
+        'hide_phone': 'hidePhone',
+        'vision_account': 'visionAccount',
+        'third_account': 'thirdAccount',
+        'license': 'license',
+        'active_time': 'activeTime'
     }
 
-    def __init__(self, id=None, user_account=None, name=None, english_name=None, phone=None, country=None, email=None, sip_num=None, vmr_list=None, dept_code=None, dept_name=None, dept_name_path=None, user_type=None, admin_type=None, signature=None, title=None, desc=None, corp=None, function=None, status=None, sort_level=None, hide_phone=None):
+    def __init__(self, id=None, user_account=None, name=None, english_name=None, phone=None, country=None, email=None, sip_num=None, vmr_list=None, dept_code=None, dept_name=None, dept_name_path=None, user_type=None, admin_type=None, signature=None, title=None, desc=None, corp=None, function=None, dev_type=None, status=None, sort_level=None, hide_phone=None, vision_account=None, third_account=None, license=None, active_time=None):
         """ShowMyInfoResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
@@ -96,9 +106,14 @@ class ShowMyInfoResponse(SdkResponse):
         self._desc = None
         self._corp = None
         self._function = None
+        self._dev_type = None
         self._status = None
         self._sort_level = None
         self._hide_phone = None
+        self._vision_account = None
+        self._third_account = None
+        self._license = None
+        self._active_time = None
         self.discriminator = None
 
         if id is not None:
@@ -139,12 +154,22 @@ class ShowMyInfoResponse(SdkResponse):
             self.corp = corp
         if function is not None:
             self.function = function
+        if dev_type is not None:
+            self.dev_type = dev_type
         if status is not None:
             self.status = status
         if sort_level is not None:
             self.sort_level = sort_level
         if hide_phone is not None:
             self.hide_phone = hide_phone
+        if vision_account is not None:
+            self.vision_account = vision_account
+        if third_account is not None:
+            self.third_account = third_account
+        if license is not None:
+            self.license = license
+        if active_time is not None:
+            self.active_time = active_time
 
     @property
     def id(self):
@@ -561,6 +586,26 @@ class ShowMyInfoResponse(SdkResponse):
         self._function = function
 
     @property
+    def dev_type(self):
+        """Gets the dev_type of this ShowMyInfoResponse.
+
+
+        :return: The dev_type of this ShowMyInfoResponse.
+        :rtype: QueryDeviceInfoResultDTO
+        """
+        return self._dev_type
+
+    @dev_type.setter
+    def dev_type(self, dev_type):
+        """Sets the dev_type of this ShowMyInfoResponse.
+
+
+        :param dev_type: The dev_type of this ShowMyInfoResponse.
+        :type: QueryDeviceInfoResultDTO
+        """
+        self._dev_type = dev_type
+
+    @property
     def status(self):
         """Gets the status of this ShowMyInfoResponse.
 
@@ -625,6 +670,94 @@ class ShowMyInfoResponse(SdkResponse):
         :type: bool
         """
         self._hide_phone = hide_phone
+
+    @property
+    def vision_account(self):
+        """Gets the vision_account of this ShowMyInfoResponse.
+
+        智慧屏唯一账号
+
+        :return: The vision_account of this ShowMyInfoResponse.
+        :rtype: str
+        """
+        return self._vision_account
+
+    @vision_account.setter
+    def vision_account(self, vision_account):
+        """Sets the vision_account of this ShowMyInfoResponse.
+
+        智慧屏唯一账号
+
+        :param vision_account: The vision_account of this ShowMyInfoResponse.
+        :type: str
+        """
+        self._vision_account = vision_account
+
+    @property
+    def third_account(self):
+        """Gets the third_account of this ShowMyInfoResponse.
+
+        第三方账号，自动开户的第三方账号、Ideahub账号的sn等
+
+        :return: The third_account of this ShowMyInfoResponse.
+        :rtype: str
+        """
+        return self._third_account
+
+    @third_account.setter
+    def third_account(self, third_account):
+        """Sets the third_account of this ShowMyInfoResponse.
+
+        第三方账号，自动开户的第三方账号、Ideahub账号的sn等
+
+        :param third_account: The third_account of this ShowMyInfoResponse.
+        :type: str
+        """
+        self._third_account = third_account
+
+    @property
+    def license(self):
+        """Gets the license of this ShowMyInfoResponse.
+
+        许可证 * 0：商用； * 1：免费试用。 
+
+        :return: The license of this ShowMyInfoResponse.
+        :rtype: int
+        """
+        return self._license
+
+    @license.setter
+    def license(self, license):
+        """Sets the license of this ShowMyInfoResponse.
+
+        许可证 * 0：商用； * 1：免费试用。 
+
+        :param license: The license of this ShowMyInfoResponse.
+        :type: int
+        """
+        self._license = license
+
+    @property
+    def active_time(self):
+        """Gets the active_time of this ShowMyInfoResponse.
+
+        激活时间，utc时间戳
+
+        :return: The active_time of this ShowMyInfoResponse.
+        :rtype: int
+        """
+        return self._active_time
+
+    @active_time.setter
+    def active_time(self, active_time):
+        """Sets the active_time of this ShowMyInfoResponse.
+
+        激活时间，utc时间戳
+
+        :param active_time: The active_time of this ShowMyInfoResponse.
+        :type: int
+        """
+        self._active_time = active_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

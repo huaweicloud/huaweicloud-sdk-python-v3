@@ -53,7 +53,7 @@ class TemplateItem:
     def metric_name(self):
         """Gets the metric_name of this TemplateItem.
 
-        告警模板添加的监控指标，如弹性云服务器可添加的监控指标为cpu_util等，各资源的监控指标名称可查看https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html。
+        告警模板添加的监控指标，如弹性云服务器可添加的监控指标为cpu_util等；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :return: The metric_name of this TemplateItem.
         :rtype: str
@@ -64,7 +64,7 @@ class TemplateItem:
     def metric_name(self, metric_name):
         """Sets the metric_name of this TemplateItem.
 
-        告警模板添加的监控指标，如弹性云服务器可添加的监控指标为cpu_util等，各资源的监控指标名称可查看https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html。
+        告警模板添加的监控指标，如弹性云服务器可添加的监控指标为cpu_util等；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param metric_name: The metric_name of this TemplateItem.
         :type: str

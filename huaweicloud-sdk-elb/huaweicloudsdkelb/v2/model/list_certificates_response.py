@@ -23,7 +23,7 @@ class ListCertificatesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'certificates': 'CertificateResp',
+        'certificates': 'list[CertificateResp]',
         'instance_num': 'int'
     }
 
@@ -50,9 +50,10 @@ class ListCertificatesResponse(SdkResponse):
     def certificates(self):
         """Gets the certificates of this ListCertificatesResponse.
 
+        SSL证书列表对象
 
         :return: The certificates of this ListCertificatesResponse.
-        :rtype: CertificateResp
+        :rtype: list[CertificateResp]
         """
         return self._certificates
 
@@ -60,9 +61,10 @@ class ListCertificatesResponse(SdkResponse):
     def certificates(self, certificates):
         """Sets the certificates of this ListCertificatesResponse.
 
+        SSL证书列表对象
 
         :param certificates: The certificates of this ListCertificatesResponse.
-        :type: CertificateResp
+        :type: list[CertificateResp]
         """
         self._certificates = certificates
 

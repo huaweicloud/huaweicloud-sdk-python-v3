@@ -54,7 +54,7 @@ class CreateHealthmonitorReq:
         'pool_id': 'pool_id'
     }
 
-    def __init__(self, tenant_id=None, name=None, admin_state_up=True, monitor_port=None, timeout=None, type=None, expected_codes=None, domain_name=None, url_path=None, http_method=None, delay=None, max_retries=None, pool_id=None):
+    def __init__(self, tenant_id=None, name=None, admin_state_up=None, monitor_port=None, timeout=None, type=None, expected_codes=None, domain_name=None, url_path=None, http_method=None, delay=None, max_retries=None, pool_id=None):
         """CreateHealthmonitorReq - a model defined in huaweicloud sdk"""
         
         

@@ -52,6 +52,41 @@ def sanitize_for_serialization(obj):
             for key, val in six.iteritems(obj_dict)}
 
 
+def dict_params_to_tuple(k, v):
+    tuple_list = []
+    if isinstance(v, list):
+        if len(v) == 0:
+            tuple_list.append((k, []))
+        else:
+            for value in v:
+                list_value_to_tuple(tuple_list, k, value)
+    elif isinstance(v, dict):
+        for key, value in v.items():
+            temp = dict_params_to_tuple(k + '[' + str(key) + ']', value)
+            if isinstance(temp, list):
+                for i in temp:
+                    tuple_list.append(i)
+            else:
+                tuple_list.append(temp)
+    else:
+        tuple_list.append((k, v))
+    return tuple_list
+
+
+def list_value_to_tuple(tuple_list, key, value):
+    if isinstance(value, dict):
+        for kk, vv in value.items():
+            tuple_list.append(dict_params_to_tuple(key + '[' + str(kk) + ']', vv))
+    elif isinstance(value, list):
+        if len(value) == 0:
+            tuple_list.append((key, []))
+        else:
+            for i in value:
+                tuple_list.append((key, value[i]))
+    else:
+        tuple_list.append((key, value))
+
+
 def parameters_to_tuples(params, collection_formats):
     new_params = []
     if collection_formats is None:
@@ -65,7 +100,12 @@ def parameters_to_tuples(params, collection_formats):
                 new_params.append(
                     (k, ','.join(str(value) for value in v)))
         else:
-            new_params.append((k, v))
+            if isinstance(v, dict):
+                dict_params = get_dict_params(k, v)
+                for dict_param in dict_params:
+                    new_params.append(dict_param)
+            else:
+                new_params.append((k, v))
     return new_params
 
 

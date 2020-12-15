@@ -23,56 +23,101 @@ class ShowMetricDataRequest:
     sensitive_list = []
 
     openapi_types = {
+        'namespace': 'str',
+        'metric_name': 'str',
         'dim_0': 'str',
         'dim_1': 'str',
         'dim_2': 'str',
+        'dim_3': 'str',
         'filter': 'str',
-        '_from': 'int',
-        'metric_name': 'str',
-        'namespace': 'str',
         'period': 'int',
+        '_from': 'int',
         'to': 'int'
     }
 
     attribute_map = {
+        'namespace': 'namespace',
+        'metric_name': 'metric_name',
         'dim_0': 'dim.0',
         'dim_1': 'dim.1',
         'dim_2': 'dim.2',
+        'dim_3': 'dim.3',
         'filter': 'filter',
-        '_from': 'from',
-        'metric_name': 'metric_name',
-        'namespace': 'namespace',
         'period': 'period',
+        '_from': 'from',
         'to': 'to'
     }
 
-    def __init__(self, dim_0=None, dim_1=None, dim_2=None, filter=None, _from=None, metric_name=None, namespace=None, period=None, to=None):
+    def __init__(self, namespace=None, metric_name=None, dim_0=None, dim_1=None, dim_2=None, dim_3=None, filter=None, period=None, _from=None, to=None):
         """ShowMetricDataRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._namespace = None
+        self._metric_name = None
         self._dim_0 = None
         self._dim_1 = None
         self._dim_2 = None
+        self._dim_3 = None
         self._filter = None
-        self.__from = None
-        self._metric_name = None
-        self._namespace = None
         self._period = None
+        self.__from = None
         self._to = None
         self.discriminator = None
 
+        self.namespace = namespace
+        self.metric_name = metric_name
         self.dim_0 = dim_0
         if dim_1 is not None:
             self.dim_1 = dim_1
         if dim_2 is not None:
             self.dim_2 = dim_2
+        if dim_3 is not None:
+            self.dim_3 = dim_3
         self.filter = filter
-        self._from = _from
-        self.metric_name = metric_name
-        self.namespace = namespace
         self.period = period
+        self._from = _from
         self.to = to
+
+    @property
+    def namespace(self):
+        """Gets the namespace of this ShowMetricDataRequest.
+
+
+        :return: The namespace of this ShowMetricDataRequest.
+        :rtype: str
+        """
+        return self._namespace
+
+    @namespace.setter
+    def namespace(self, namespace):
+        """Sets the namespace of this ShowMetricDataRequest.
+
+
+        :param namespace: The namespace of this ShowMetricDataRequest.
+        :type: str
+        """
+        self._namespace = namespace
+
+    @property
+    def metric_name(self):
+        """Gets the metric_name of this ShowMetricDataRequest.
+
+
+        :return: The metric_name of this ShowMetricDataRequest.
+        :rtype: str
+        """
+        return self._metric_name
+
+    @metric_name.setter
+    def metric_name(self, metric_name):
+        """Sets the metric_name of this ShowMetricDataRequest.
+
+
+        :param metric_name: The metric_name of this ShowMetricDataRequest.
+        :type: str
+        """
+        self._metric_name = metric_name
 
     @property
     def dim_0(self):
@@ -135,6 +180,26 @@ class ShowMetricDataRequest:
         self._dim_2 = dim_2
 
     @property
+    def dim_3(self):
+        """Gets the dim_3 of this ShowMetricDataRequest.
+
+
+        :return: The dim_3 of this ShowMetricDataRequest.
+        :rtype: str
+        """
+        return self._dim_3
+
+    @dim_3.setter
+    def dim_3(self, dim_3):
+        """Sets the dim_3 of this ShowMetricDataRequest.
+
+
+        :param dim_3: The dim_3 of this ShowMetricDataRequest.
+        :type: str
+        """
+        self._dim_3 = dim_3
+
+    @property
     def filter(self):
         """Gets the filter of this ShowMetricDataRequest.
 
@@ -155,66 +220,6 @@ class ShowMetricDataRequest:
         self._filter = filter
 
     @property
-    def _from(self):
-        """Gets the _from of this ShowMetricDataRequest.
-
-
-        :return: The _from of this ShowMetricDataRequest.
-        :rtype: int
-        """
-        return self.__from
-
-    @_from.setter
-    def _from(self, _from):
-        """Sets the _from of this ShowMetricDataRequest.
-
-
-        :param _from: The _from of this ShowMetricDataRequest.
-        :type: int
-        """
-        self.__from = _from
-
-    @property
-    def metric_name(self):
-        """Gets the metric_name of this ShowMetricDataRequest.
-
-
-        :return: The metric_name of this ShowMetricDataRequest.
-        :rtype: str
-        """
-        return self._metric_name
-
-    @metric_name.setter
-    def metric_name(self, metric_name):
-        """Sets the metric_name of this ShowMetricDataRequest.
-
-
-        :param metric_name: The metric_name of this ShowMetricDataRequest.
-        :type: str
-        """
-        self._metric_name = metric_name
-
-    @property
-    def namespace(self):
-        """Gets the namespace of this ShowMetricDataRequest.
-
-
-        :return: The namespace of this ShowMetricDataRequest.
-        :rtype: str
-        """
-        return self._namespace
-
-    @namespace.setter
-    def namespace(self, namespace):
-        """Sets the namespace of this ShowMetricDataRequest.
-
-
-        :param namespace: The namespace of this ShowMetricDataRequest.
-        :type: str
-        """
-        self._namespace = namespace
-
-    @property
     def period(self):
         """Gets the period of this ShowMetricDataRequest.
 
@@ -233,6 +238,26 @@ class ShowMetricDataRequest:
         :type: int
         """
         self._period = period
+
+    @property
+    def _from(self):
+        """Gets the _from of this ShowMetricDataRequest.
+
+
+        :return: The _from of this ShowMetricDataRequest.
+        :rtype: int
+        """
+        return self.__from
+
+    @_from.setter
+    def _from(self, _from):
+        """Sets the _from of this ShowMetricDataRequest.
+
+
+        :param _from: The _from of this ShowMetricDataRequest.
+        :type: int
+        """
+        self.__from = _from
 
     @property
     def to(self):

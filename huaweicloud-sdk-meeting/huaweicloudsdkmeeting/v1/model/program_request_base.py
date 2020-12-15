@@ -38,8 +38,7 @@ class ProgramRequestBase:
         self._program_name = None
         self.discriminator = None
 
-        if program_name is not None:
-            self.program_name = program_name
+        self.program_name = program_name
 
     @property
     def program_name(self):

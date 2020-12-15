@@ -136,7 +136,7 @@ class ListEventDetailResponse(SdkResponse):
     def event_sources(self):
         """Gets the event_sources of this ListEventDetailResponse.
 
-        事件来源，如果是系统事件则值为各服务的命名空间，可查看https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html；如果是自定义事件，则为用户自定义上报定义。
+        事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
 
         :return: The event_sources of this ListEventDetailResponse.
         :rtype: str
@@ -147,7 +147,7 @@ class ListEventDetailResponse(SdkResponse):
     def event_sources(self, event_sources):
         """Sets the event_sources of this ListEventDetailResponse.
 
-        事件来源，如果是系统事件则值为各服务的命名空间，可查看https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html；如果是自定义事件，则为用户自定义上报定义。
+        事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
 
         :param event_sources: The event_sources of this ListEventDetailResponse.
         :type: str

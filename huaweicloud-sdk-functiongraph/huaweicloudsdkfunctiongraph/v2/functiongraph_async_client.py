@@ -107,6 +107,134 @@ class FunctionGraphAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_dependency_async(self, request):
+        """创建依赖包
+
+        创建依赖包。
+
+        :param CreateDependencyRequest request
+        :return: CreateDependencyResponse
+        """
+        return self.create_dependency_with_http_info(request)
+
+    def create_dependency_with_http_info(self, request):
+        """创建依赖包
+
+        创建依赖包。
+
+        :param CreateDependencyRequest request
+        :return: CreateDependencyResponse
+        """
+
+        all_params = ['create_dependency_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/dependencies',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateDependencyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_event_async(self, request):
+        """创建测试事件
+
+        创建测试事件。
+
+        :param CreateEventRequest request
+        :return: CreateEventResponse
+        """
+        return self.create_event_with_http_info(request)
+
+    def create_event_with_http_info(self, request):
+        """创建测试事件
+
+        创建测试事件。
+
+        :param CreateEventRequest request
+        :return: CreateEventResponse
+        """
+
+        all_params = ['function_urn', 'create_event_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/events',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateEventResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_function_async(self, request):
         """创建函数。
 
@@ -300,6 +428,134 @@ class FunctionGraphAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_dependency_async(self, request):
+        """删除依赖包
+
+        删除指定的依赖包。
+
+        :param DeleteDependencyRequest request
+        :return: DeleteDependencyResponse
+        """
+        return self.delete_dependency_with_http_info(request)
+
+    def delete_dependency_with_http_info(self, request):
+        """删除依赖包
+
+        删除指定的依赖包。
+
+        :param DeleteDependencyRequest request
+        :return: DeleteDependencyResponse
+        """
+
+        all_params = ['depend_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'depend_id' in local_var_params:
+            path_params['depend_id'] = local_var_params['depend_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/dependencies/{depend_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteDependencyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_event_async(self, request):
+        """删除测试事件
+
+        删除测试事件。
+
+        :param DeleteEventRequest request
+        :return: DeleteEventResponse
+        """
+        return self.delete_event_with_http_info(request)
+
+    def delete_event_with_http_info(self, request):
+        """删除测试事件
+
+        删除测试事件。
+
+        :param DeleteEventRequest request
+        :return: DeleteEventResponse
+        """
+
+        all_params = ['event_id', 'function_urn']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'event_id' in local_var_params:
+            path_params['event_id'] = local_var_params['event_id']
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/events/{event_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteEventResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_function_async(self, request):
         """删除函数/版本。
 
@@ -343,6 +599,8 @@ class FunctionGraphAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -406,6 +664,8 @@ class FunctionGraphAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -493,6 +753,140 @@ class FunctionGraphAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_dependencies_async(self, request):
+        """获取依赖包列表
+
+        获取依赖包列表。
+
+        :param ListDependenciesRequest request
+        :return: ListDependenciesResponse
+        """
+        return self.list_dependencies_with_http_info(request)
+
+    def list_dependencies_with_http_info(self, request):
+        """获取依赖包列表
+
+        获取依赖包列表。
+
+        :param ListDependenciesRequest request
+        :return: ListDependenciesResponse
+        """
+
+        all_params = ['dependency_type', 'runtime', 'name', 'marker', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'dependency_type' in local_var_params:
+            query_params.append(('dependency_type', local_var_params['dependency_type']))
+        if 'runtime' in local_var_params:
+            query_params.append(('runtime', local_var_params['runtime']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/dependencies',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListDependenciesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_events_async(self, request):
+        """获取测试事件列表
+
+        获取指定函数的测试事件列表。
+
+        :param ListEventsRequest request
+        :return: ListEventsResponse
+        """
+        return self.list_events_with_http_info(request)
+
+    def list_events_with_http_info(self, request):
+        """获取测试事件列表
+
+        获取指定函数的测试事件列表。
+
+        :param ListEventsRequest request
+        :return: ListEventsResponse
+        """
+
+        all_params = ['function_urn']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/events',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEventsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_function_statistics_async(self, request):
         """获取指定时间段的函数运行指标
 
@@ -538,6 +932,8 @@ class FunctionGraphAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -603,6 +999,8 @@ class FunctionGraphAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -666,6 +1064,8 @@ class FunctionGraphAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -725,6 +1125,8 @@ class FunctionGraphAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -790,6 +1192,8 @@ class FunctionGraphAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -851,6 +1255,8 @@ class FunctionGraphAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -863,6 +1269,134 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListVersionAliasesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_dependency_async(self, request):
+        """获取指定依赖包
+
+        获取指定依赖包。
+
+        :param ShowDependencyRequest request
+        :return: ShowDependencyResponse
+        """
+        return self.show_dependency_with_http_info(request)
+
+    def show_dependency_with_http_info(self, request):
+        """获取指定依赖包
+
+        获取指定依赖包。
+
+        :param ShowDependencyRequest request
+        :return: ShowDependencyResponse
+        """
+
+        all_params = ['depend_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'depend_id' in local_var_params:
+            path_params['depend_id'] = local_var_params['depend_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/dependencies/{depend_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDependencyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_event_async(self, request):
+        """获取测试事件详细信息
+
+        获取测试事件详细信息。
+
+        :param ShowEventRequest request
+        :return: ShowEventResponse
+        """
+        return self.show_event_with_http_info(request)
+
+    def show_event_with_http_info(self, request):
+        """获取测试事件详细信息
+
+        获取测试事件详细信息。
+
+        :param ShowEventRequest request
+        :return: ShowEventResponse
+        """
+
+        all_params = ['event_id', 'function_urn']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'event_id' in local_var_params:
+            path_params['event_id'] = local_var_params['event_id']
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/events/{event_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -912,6 +1446,8 @@ class FunctionGraphAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -973,6 +1509,8 @@ class FunctionGraphAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1036,6 +1574,8 @@ class FunctionGraphAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1048,6 +1588,138 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowVersionAliasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_dependency_async(self, request):
+        """更新依赖包指定依赖包
+
+        更新依赖包指定依赖包。
+
+        :param UpdateDependencyRequest request
+        :return: UpdateDependencyResponse
+        """
+        return self.update_dependency_with_http_info(request)
+
+    def update_dependency_with_http_info(self, request):
+        """更新依赖包指定依赖包
+
+        更新依赖包指定依赖包。
+
+        :param UpdateDependencyRequest request
+        :return: UpdateDependencyResponse
+        """
+
+        all_params = ['depend_id', 'update_dependency_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'depend_id' in local_var_params:
+            path_params['depend_id'] = local_var_params['depend_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/dependencies/{depend_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateDependencyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_event_async(self, request):
+        """更新测试事件
+
+        更新测试事件。
+
+        :param UpdateEventRequest request
+        :return: UpdateEventResponse
+        """
+        return self.update_event_with_http_info(request)
+
+    def update_event_with_http_info(self, request):
+        """更新测试事件
+
+        更新测试事件。
+
+        :param UpdateEventRequest request
+        :return: UpdateEventResponse
+        """
+
+        all_params = ['event_id', 'function_urn', 'update_event_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'event_id' in local_var_params:
+            path_params['event_id'] = local_var_params['event_id']
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/events/{event_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateEventResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1184,6 +1856,71 @@ class FunctionGraphAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_function_reserved_instances_async(self, request):
+        """更新函数预留实例个数
+
+        为函数绑定预留实例
+
+        :param UpdateFunctionReservedInstancesRequest request
+        :return: UpdateFunctionReservedInstancesResponse
+        """
+        return self.update_function_reserved_instances_with_http_info(request)
+
+    def update_function_reserved_instances_with_http_info(self, request):
+        """更新函数预留实例个数
+
+        为函数绑定预留实例
+
+        :param UpdateFunctionReservedInstancesRequest request
+        :return: UpdateFunctionReservedInstancesResponse
+        """
+
+        all_params = ['function_urn', 'update_function_reserved_instances_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/reservedinstances',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateFunctionReservedInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_version_alias_async(self, request):
         """修改函数版本别名信息。
 
@@ -1294,6 +2031,8 @@ class FunctionGraphAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1315,7 +2054,7 @@ class FunctionGraphAsyncClient(Client):
     def create_function_trigger_async(self, request):
         """创建触发器。
 
-        创建触发器。  - 可以创建的触发器类型包括TIMER、APIG、CTS、DDS、DMS、DIS、LTS、OBS、SMN、KAFKA。 - DDS和KAFKA触发器创建时默认为DISABLE状态，其他触发器默认为ACTIVE状态。 - TIMER、DDS、DMS、KAFKA、LTS触发器支持禁用，其他触发器不支持。
+        创建触发器。  - 可以创建的触发器类型包括TIMER、APIG、CTS、DDS、DMS、DIS、LTS、OBS、SMN、KAFKA。 - DDS和KAFKA触发器创建时默认为DISABLED状态，其他触发器默认为ACTIVE状态。 - TIMER、DDS、DMS、KAFKA、LTS触发器支持禁用，其他触发器不支持。
 
         :param CreateFunctionTriggerRequest request
         :return: CreateFunctionTriggerResponse
@@ -1325,7 +2064,7 @@ class FunctionGraphAsyncClient(Client):
     def create_function_trigger_with_http_info(self, request):
         """创建触发器。
 
-        创建触发器。  - 可以创建的触发器类型包括TIMER、APIG、CTS、DDS、DMS、DIS、LTS、OBS、SMN、KAFKA。 - DDS和KAFKA触发器创建时默认为DISABLE状态，其他触发器默认为ACTIVE状态。 - TIMER、DDS、DMS、KAFKA、LTS触发器支持禁用，其他触发器不支持。
+        创建触发器。  - 可以创建的触发器类型包括TIMER、APIG、CTS、DDS、DMS、DIS、LTS、OBS、SMN、KAFKA。 - DDS和KAFKA触发器创建时默认为DISABLED状态，其他触发器默认为ACTIVE状态。 - TIMER、DDS、DMS、KAFKA、LTS触发器支持禁用，其他触发器不支持。
 
         :param CreateFunctionTriggerRequest request
         :return: CreateFunctionTriggerResponse
@@ -1424,6 +2163,8 @@ class FunctionGraphAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1485,6 +2226,8 @@ class FunctionGraphAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1550,6 +2293,8 @@ class FunctionGraphAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

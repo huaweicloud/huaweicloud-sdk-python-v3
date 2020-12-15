@@ -34,7 +34,7 @@ class UpdateMemberOption:
         'weight': 'weight'
     }
 
-    def __init__(self, admin_state_up=None, name=None, weight=1):
+    def __init__(self, admin_state_up=None, name=None, weight=None):
         """UpdateMemberOption - a model defined in huaweicloud sdk"""
         
         

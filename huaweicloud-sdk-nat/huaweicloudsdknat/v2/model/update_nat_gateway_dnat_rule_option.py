@@ -133,7 +133,7 @@ class UpdateNatGatewayDnatRuleOption:
     def port_id(self):
         """Gets the port_id of this UpdateNatGatewayDnatRuleOption.
 
-        虚拟机或者裸机的Port ID，与private_ip参数二选一。
+        虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
 
         :return: The port_id of this UpdateNatGatewayDnatRuleOption.
         :rtype: str
@@ -144,7 +144,7 @@ class UpdateNatGatewayDnatRuleOption:
     def port_id(self, port_id):
         """Sets the port_id of this UpdateNatGatewayDnatRuleOption.
 
-        虚拟机或者裸机的Port ID，与private_ip参数二选一。
+        虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
 
         :param port_id: The port_id of this UpdateNatGatewayDnatRuleOption.
         :type: str
@@ -155,7 +155,7 @@ class UpdateNatGatewayDnatRuleOption:
     def private_ip(self):
         """Gets the private_ip of this UpdateNatGatewayDnatRuleOption.
 
-        用户私有IP地址，例如专线连接的私有云地址，与port_id参数二选一。
+        用户私有IP地址，对应专线、云连接场景，与port_id参数二选一。
 
         :return: The private_ip of this UpdateNatGatewayDnatRuleOption.
         :rtype: str
@@ -166,7 +166,7 @@ class UpdateNatGatewayDnatRuleOption:
     def private_ip(self, private_ip):
         """Sets the private_ip of this UpdateNatGatewayDnatRuleOption.
 
-        用户私有IP地址，例如专线连接的私有云地址，与port_id参数二选一。
+        用户私有IP地址，对应专线、云连接场景，与port_id参数二选一。
 
         :param private_ip: The private_ip of this UpdateNatGatewayDnatRuleOption.
         :type: str

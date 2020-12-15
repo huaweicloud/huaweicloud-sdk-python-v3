@@ -36,7 +36,7 @@ class CreateWhitelistReq:
         'whitelist': 'whitelist'
     }
 
-    def __init__(self, tenant_id=None, listener_id=None, enable_whitelist=True, whitelist='""'):
+    def __init__(self, tenant_id=None, listener_id=None, enable_whitelist=None, whitelist=None):
         """CreateWhitelistReq - a model defined in huaweicloud sdk"""
         
         

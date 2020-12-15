@@ -292,6 +292,8 @@ class DmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -365,6 +367,8 @@ class DmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -554,6 +558,8 @@ class DmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -617,6 +623,8 @@ class DmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -686,6 +694,8 @@ class DmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -747,6 +757,8 @@ class DmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -871,6 +883,8 @@ class DmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -934,6 +948,8 @@ class DmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -995,6 +1011,8 @@ class DmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1054,6 +1072,8 @@ class DmsAsyncClient(Client):
 
         response_headers = []
 
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

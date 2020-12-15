@@ -41,10 +41,8 @@ class ProgramItemRequestBase:
         self._play_time = None
         self.discriminator = None
 
-        if material_id is not None:
-            self.material_id = material_id
-        if play_time is not None:
-            self.play_time = play_time
+        self.material_id = material_id
+        self.play_time = play_time
 
     @property
     def material_id(self):

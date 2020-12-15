@@ -79,7 +79,7 @@ class ObsObjInfo:
     def location(self):
         """Gets the location of this ObsObjInfo.
 
-        输入OBS Bucket所在数据中心（OBS Location）。 
+        OBS桶所在的区域，且必须与使用的MPC区域保持一致。 
 
         :return: The location of this ObsObjInfo.
         :rtype: str
@@ -90,7 +90,7 @@ class ObsObjInfo:
     def location(self, location):
         """Sets the location of this ObsObjInfo.
 
-        输入OBS Bucket所在数据中心（OBS Location）。 
+        OBS桶所在的区域，且必须与使用的MPC区域保持一致。 
 
         :param location: The location of this ObsObjInfo.
         :type: str

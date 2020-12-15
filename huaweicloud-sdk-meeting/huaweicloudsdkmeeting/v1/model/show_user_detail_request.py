@@ -25,16 +25,18 @@ class ShowUserDetailRequest:
     openapi_types = {
         'x_request_id': 'str',
         'accept_language': 'str',
-        'account': 'str'
+        'account': 'str',
+        'account_type': 'int'
     }
 
     attribute_map = {
         'x_request_id': 'X-Request-Id',
         'accept_language': 'Accept-Language',
-        'account': 'account'
+        'account': 'account',
+        'account_type': 'accountType'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, account=None):
+    def __init__(self, x_request_id=None, accept_language=None, account=None, account_type=None):
         """ShowUserDetailRequest - a model defined in huaweicloud sdk"""
         
         
@@ -42,6 +44,7 @@ class ShowUserDetailRequest:
         self._x_request_id = None
         self._accept_language = None
         self._account = None
+        self._account_type = None
         self.discriminator = None
 
         if x_request_id is not None:
@@ -49,6 +52,8 @@ class ShowUserDetailRequest:
         if accept_language is not None:
             self.accept_language = accept_language
         self.account = account
+        if account_type is not None:
+            self.account_type = account_type
 
     @property
     def x_request_id(self):
@@ -109,6 +114,26 @@ class ShowUserDetailRequest:
         :type: str
         """
         self._account = account
+
+    @property
+    def account_type(self):
+        """Gets the account_type of this ShowUserDetailRequest.
+
+
+        :return: The account_type of this ShowUserDetailRequest.
+        :rtype: int
+        """
+        return self._account_type
+
+    @account_type.setter
+    def account_type(self, account_type):
+        """Sets the account_type of this ShowUserDetailRequest.
+
+
+        :param account_type: The account_type of this ShowUserDetailRequest.
+        :type: int
+        """
+        self._account_type = account_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

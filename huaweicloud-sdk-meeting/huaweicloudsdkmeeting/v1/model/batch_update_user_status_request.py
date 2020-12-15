@@ -26,6 +26,7 @@ class BatchUpdateUserStatusRequest:
         'x_request_id': 'str',
         'accept_language': 'str',
         'value': 'int',
+        'account_type': 'int',
         'body': 'list[str]'
     }
 
@@ -33,10 +34,11 @@ class BatchUpdateUserStatusRequest:
         'x_request_id': 'X-Request-Id',
         'accept_language': 'Accept-Language',
         'value': 'value',
+        'account_type': 'accountType',
         'body': 'body'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, value=None, body=None):
+    def __init__(self, x_request_id=None, accept_language=None, value=None, account_type=None, body=None):
         """BatchUpdateUserStatusRequest - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +46,7 @@ class BatchUpdateUserStatusRequest:
         self._x_request_id = None
         self._accept_language = None
         self._value = None
+        self._account_type = None
         self._body = None
         self.discriminator = None
 
@@ -52,6 +55,8 @@ class BatchUpdateUserStatusRequest:
         if accept_language is not None:
             self.accept_language = accept_language
         self.value = value
+        if account_type is not None:
+            self.account_type = account_type
         if body is not None:
             self.body = body
 
@@ -114,6 +119,26 @@ class BatchUpdateUserStatusRequest:
         :type: int
         """
         self._value = value
+
+    @property
+    def account_type(self):
+        """Gets the account_type of this BatchUpdateUserStatusRequest.
+
+
+        :return: The account_type of this BatchUpdateUserStatusRequest.
+        :rtype: int
+        """
+        return self._account_type
+
+    @account_type.setter
+    def account_type(self, account_type):
+        """Sets the account_type of this BatchUpdateUserStatusRequest.
+
+
+        :param account_type: The account_type of this BatchUpdateUserStatusRequest.
+        :type: int
+        """
+        self._account_type = account_type
 
     @property
     def body(self):
