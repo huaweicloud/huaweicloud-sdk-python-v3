@@ -850,6 +850,73 @@ class LiveAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_stream_portrait_async(self, request):
+        """查询播放画像信息接口
+
+        查询播放画像信息。  最大查询跨度1天，最大查询周期31天。
+
+        :param ShowStreamPortraitRequest request
+        :return: ShowStreamPortraitResponse
+        """
+        return self.show_stream_portrait_with_http_info(request)
+
+    def show_stream_portrait_with_http_info(self, request):
+        """查询播放画像信息接口
+
+        查询播放画像信息。  最大查询跨度1天，最大查询周期31天。
+
+        :param ShowStreamPortraitRequest request
+        :return: ShowStreamPortraitResponse
+        """
+
+        all_params = ['play_domain', 'time', 'stream']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'play_domain' in local_var_params:
+            query_params.append(('play_domain', local_var_params['play_domain']))
+        if 'stream' in local_var_params:
+            query_params.append(('stream', local_var_params['stream']))
+        if 'time' in local_var_params:
+            query_params.append(('time', local_var_params['time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/stats/stream-portraits',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowStreamPortraitResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_up_bandwidth_async(self, request):
         """查询上行带宽数据接口
 

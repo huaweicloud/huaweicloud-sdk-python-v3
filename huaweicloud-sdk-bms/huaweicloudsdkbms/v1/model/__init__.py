@@ -79,7 +79,6 @@ from huaweicloudsdkbms.v1.model.scheduler_hints import SchedulerHints
 from huaweicloudsdkbms.v1.model.security_groups import SecurityGroups
 from huaweicloudsdkbms.v1.model.security_groups_info import SecurityGroupsInfo
 from huaweicloudsdkbms.v1.model.security_groups_list import SecurityGroupsList
-from huaweicloudsdkbms.v1.model.server_attachable_quantity import ServerAttachableQuantity
 from huaweicloudsdkbms.v1.model.server_details import ServerDetails
 from huaweicloudsdkbms.v1.model.servers_info_type import ServersInfoType
 from huaweicloudsdkbms.v1.model.servers_list import ServersList

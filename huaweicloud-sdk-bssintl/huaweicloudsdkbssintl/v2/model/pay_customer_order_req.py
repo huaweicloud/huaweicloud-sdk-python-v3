@@ -24,26 +24,31 @@ class PayCustomerOrderReq:
 
     openapi_types = {
         'order_id': 'str',
-        'coupon_infos': 'list[CouponSimpleInfoOrderPay]'
+        'coupon_infos': 'list[CouponSimpleInfoOrderPay]',
+        'discount_infos': 'list[DiscountSimpleInfo]'
     }
 
     attribute_map = {
         'order_id': 'order_id',
-        'coupon_infos': 'coupon_infos'
+        'coupon_infos': 'coupon_infos',
+        'discount_infos': 'discount_infos'
     }
 
-    def __init__(self, order_id=None, coupon_infos=None):
+    def __init__(self, order_id=None, coupon_infos=None, discount_infos=None):
         """PayCustomerOrderReq - a model defined in huaweicloud sdk"""
         
         
 
         self._order_id = None
         self._coupon_infos = None
+        self._discount_infos = None
         self.discriminator = None
 
         self.order_id = order_id
         if coupon_infos is not None:
             self.coupon_infos = coupon_infos
+        if discount_infos is not None:
+            self.discount_infos = discount_infos
 
     @property
     def order_id(self):
@@ -88,6 +93,28 @@ class PayCustomerOrderReq:
         :type: list[CouponSimpleInfoOrderPay]
         """
         self._coupon_infos = coupon_infos
+
+    @property
+    def discount_infos(self):
+        """Gets the discount_infos of this PayCustomerOrderReq.
+
+        |参数名称：折扣ID列表，目前仅支持传递一个折扣ID。请从“1.9-查询订单可用折扣”接口的响应参数中获取。具体参见表 DiscountSimpleInfo。| |参数约束以及描述：折扣ID列表，目前仅支持传递一个折扣ID。请从“1.9-查询订单可用折扣”接口的响应参数中获取。具体参见表 DiscountSimpleInfo。|
+
+        :return: The discount_infos of this PayCustomerOrderReq.
+        :rtype: list[DiscountSimpleInfo]
+        """
+        return self._discount_infos
+
+    @discount_infos.setter
+    def discount_infos(self, discount_infos):
+        """Sets the discount_infos of this PayCustomerOrderReq.
+
+        |参数名称：折扣ID列表，目前仅支持传递一个折扣ID。请从“1.9-查询订单可用折扣”接口的响应参数中获取。具体参见表 DiscountSimpleInfo。| |参数约束以及描述：折扣ID列表，目前仅支持传递一个折扣ID。请从“1.9-查询订单可用折扣”接口的响应参数中获取。具体参见表 DiscountSimpleInfo。|
+
+        :param discount_infos: The discount_infos of this PayCustomerOrderReq.
+        :type: list[DiscountSimpleInfo]
+        """
+        self._discount_infos = discount_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

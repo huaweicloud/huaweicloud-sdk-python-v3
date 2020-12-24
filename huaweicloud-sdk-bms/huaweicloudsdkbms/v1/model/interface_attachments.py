@@ -27,7 +27,9 @@ class InterfaceAttachments:
         'fixed_ips': 'list[FixedIps]',
         'net_id': 'str',
         'port_id': 'str',
-        'mac_addr': 'str'
+        'mac_addr': 'str',
+        'driver_mode': 'str',
+        'pci_address': 'str'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class InterfaceAttachments:
         'fixed_ips': 'fixed_ips',
         'net_id': 'net_id',
         'port_id': 'port_id',
-        'mac_addr': 'mac_addr'
+        'mac_addr': 'mac_addr',
+        'driver_mode': 'driver_mode',
+        'pci_address': 'pci_address'
     }
 
-    def __init__(self, port_state=None, fixed_ips=None, net_id=None, port_id=None, mac_addr=None):
+    def __init__(self, port_state=None, fixed_ips=None, net_id=None, port_id=None, mac_addr=None, driver_mode=None, pci_address=None):
         """InterfaceAttachments - a model defined in huaweicloud sdk"""
         
         
@@ -48,6 +52,8 @@ class InterfaceAttachments:
         self._net_id = None
         self._port_id = None
         self._mac_addr = None
+        self._driver_mode = None
+        self._pci_address = None
         self.discriminator = None
 
         if port_state is not None:
@@ -60,6 +66,10 @@ class InterfaceAttachments:
             self.port_id = port_id
         if mac_addr is not None:
             self.mac_addr = mac_addr
+        if driver_mode is not None:
+            self.driver_mode = driver_mode
+        if pci_address is not None:
+            self.pci_address = pci_address
 
     @property
     def port_state(self):
@@ -170,6 +180,50 @@ class InterfaceAttachments:
         :type: str
         """
         self._mac_addr = mac_addr
+
+    @property
+    def driver_mode(self):
+        """Gets the driver_mode of this InterfaceAttachments.
+
+        从guest os中，网卡的驱动类型
+
+        :return: The driver_mode of this InterfaceAttachments.
+        :rtype: str
+        """
+        return self._driver_mode
+
+    @driver_mode.setter
+    def driver_mode(self, driver_mode):
+        """Sets the driver_mode of this InterfaceAttachments.
+
+        从guest os中，网卡的驱动类型
+
+        :param driver_mode: The driver_mode of this InterfaceAttachments.
+        :type: str
+        """
+        self._driver_mode = driver_mode
+
+    @property
+    def pci_address(self):
+        """Gets the pci_address of this InterfaceAttachments.
+
+        弹性网卡在Linux GuestOS里的BDF号
+
+        :return: The pci_address of this InterfaceAttachments.
+        :rtype: str
+        """
+        return self._pci_address
+
+    @pci_address.setter
+    def pci_address(self, pci_address):
+        """Sets the pci_address of this InterfaceAttachments.
+
+        弹性网卡在Linux GuestOS里的BDF号
+
+        :param pci_address: The pci_address of this InterfaceAttachments.
+        :type: str
+        """
+        self._pci_address = pci_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

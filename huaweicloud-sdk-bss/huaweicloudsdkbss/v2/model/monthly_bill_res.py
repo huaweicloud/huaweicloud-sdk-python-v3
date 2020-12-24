@@ -46,7 +46,9 @@ class MonthlyBillRes:
         'enterprise_project_name': 'str',
         'charge_mode': 'int',
         'bill_type': 'int',
-        'customer_id': 'str'
+        'customer_id': 'str',
+        'sku_code': 'str',
+        'region_name': 'str'
     }
 
     attribute_map = {
@@ -73,10 +75,12 @@ class MonthlyBillRes:
         'enterprise_project_name': 'enterprise_project_name',
         'charge_mode': 'charge_mode',
         'bill_type': 'bill_type',
-        'customer_id': 'customer_id'
+        'customer_id': 'customer_id',
+        'sku_code': 'sku_code',
+        'region_name': 'region_name'
     }
 
-    def __init__(self, cycle=None, cloud_service_type=None, region=None, resource_type_code=None, res_instance_id=None, resource_name=None, resource_tag=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, bill_type=None, customer_id=None):
+    def __init__(self, cycle=None, cloud_service_type=None, region=None, resource_type_code=None, res_instance_id=None, resource_name=None, resource_tag=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, bill_type=None, customer_id=None, sku_code=None, region_name=None):
         """MonthlyBillRes - a model defined in huaweicloud sdk"""
         
         
@@ -105,6 +109,8 @@ class MonthlyBillRes:
         self._charge_mode = None
         self._bill_type = None
         self._customer_id = None
+        self._sku_code = None
+        self._region_name = None
         self.discriminator = None
 
         if cycle is not None:
@@ -155,6 +161,10 @@ class MonthlyBillRes:
             self.bill_type = bill_type
         if customer_id is not None:
             self.customer_id = customer_id
+        if sku_code is not None:
+            self.sku_code = sku_code
+        if region_name is not None:
+            self.region_name = region_name
 
     @property
     def cycle(self):
@@ -683,6 +693,50 @@ class MonthlyBillRes:
         :type: str
         """
         self._customer_id = customer_id
+
+    @property
+    def sku_code(self):
+        """Gets the sku_code of this MonthlyBillRes.
+
+        |参数名称：SKU编码| |参数的约束及描述：sku编码|
+
+        :return: The sku_code of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._sku_code
+
+    @sku_code.setter
+    def sku_code(self, sku_code):
+        """Sets the sku_code of this MonthlyBillRes.
+
+        |参数名称：SKU编码| |参数的约束及描述：sku编码|
+
+        :param sku_code: The sku_code of this MonthlyBillRes.
+        :type: str
+        """
+        self._sku_code = sku_code
+
+    @property
+    def region_name(self):
+        """Gets the region_name of this MonthlyBillRes.
+
+        |参数名称：云服务区名称| |参数的约束及描述：云服务区名称|
+
+        :return: The region_name of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._region_name
+
+    @region_name.setter
+    def region_name(self, region_name):
+        """Sets the region_name of this MonthlyBillRes.
+
+        |参数名称：云服务区名称| |参数的约束及描述：云服务区名称|
+
+        :param region_name: The region_name of this MonthlyBillRes.
+        :type: str
+        """
+        self._region_name = region_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

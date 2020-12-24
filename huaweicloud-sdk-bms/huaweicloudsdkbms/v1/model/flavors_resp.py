@@ -36,8 +36,7 @@ class FlavorsResp:
         'rxtx_cap': 'str',
         'os_flavor_accessis_public': 'bool',
         'links': 'list[LinksInfo]',
-        'os_extra_specs': 'OsExtraSpecs',
-        'attachable_quantity': 'ServerAttachableQuantity'
+        'os_extra_specs': 'OsExtraSpecs'
     }
 
     attribute_map = {
@@ -54,11 +53,10 @@ class FlavorsResp:
         'rxtx_cap': 'rxtx_cap',
         'os_flavor_accessis_public': 'os-flavor-access:is_public',
         'links': 'links',
-        'os_extra_specs': 'os_extra_specs',
-        'attachable_quantity': 'attachableQuantity'
+        'os_extra_specs': 'os_extra_specs'
     }
 
-    def __init__(self, id=None, name=None, vcpus=None, ram=None, disk=None, swap=None, os_flv_ext_dat_aephemeral=None, os_flv_disable_ddisabled=None, rxtx_factor=None, rxtx_quota=None, rxtx_cap=None, os_flavor_accessis_public=None, links=None, os_extra_specs=None, attachable_quantity=None):
+    def __init__(self, id=None, name=None, vcpus=None, ram=None, disk=None, swap=None, os_flv_ext_dat_aephemeral=None, os_flv_disable_ddisabled=None, rxtx_factor=None, rxtx_quota=None, rxtx_cap=None, os_flavor_accessis_public=None, links=None, os_extra_specs=None):
         """FlavorsResp - a model defined in huaweicloud sdk"""
         
         
@@ -77,7 +75,6 @@ class FlavorsResp:
         self._os_flavor_accessis_public = None
         self._links = None
         self._os_extra_specs = None
-        self._attachable_quantity = None
         self.discriminator = None
 
         self.id = id
@@ -105,8 +102,6 @@ class FlavorsResp:
         if links is not None:
             self.links = links
         self.os_extra_specs = os_extra_specs
-        if attachable_quantity is not None:
-            self.attachable_quantity = attachable_quantity
 
     @property
     def id(self):
@@ -413,26 +408,6 @@ class FlavorsResp:
         :type: OsExtraSpecs
         """
         self._os_extra_specs = os_extra_specs
-
-    @property
-    def attachable_quantity(self):
-        """Gets the attachable_quantity of this FlavorsResp.
-
-
-        :return: The attachable_quantity of this FlavorsResp.
-        :rtype: ServerAttachableQuantity
-        """
-        return self._attachable_quantity
-
-    @attachable_quantity.setter
-    def attachable_quantity(self, attachable_quantity):
-        """Sets the attachable_quantity of this FlavorsResp.
-
-
-        :param attachable_quantity: The attachable_quantity of this FlavorsResp.
-        :type: ServerAttachableQuantity
-        """
-        self._attachable_quantity = attachable_quantity
 
     def to_dict(self):
         """Returns the model properties as a dict"""

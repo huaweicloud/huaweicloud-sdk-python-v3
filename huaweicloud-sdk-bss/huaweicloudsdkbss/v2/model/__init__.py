@@ -38,6 +38,7 @@ from huaweicloudsdkbss.v2.model.check_subcustomer_user_req import CheckSubcustom
 from huaweicloudsdkbss.v2.model.check_user_identity_request import CheckUserIdentityRequest
 from huaweicloudsdkbss.v2.model.check_user_identity_response import CheckUserIdentityResponse
 from huaweicloudsdkbss.v2.model.city import City
+from huaweicloudsdkbss.v2.model.conversion import Conversion
 from huaweicloudsdkbss.v2.model.county import County
 from huaweicloudsdkbss.v2.model.coupon_info_v2 import CouponInfoV2
 from huaweicloudsdkbss.v2.model.coupon_quota_v2 import CouponQuotaV2
@@ -75,6 +76,7 @@ from huaweicloudsdkbss.v2.model.demand_product_info import DemandProductInfo
 from huaweicloudsdkbss.v2.model.demand_product_rating_result import DemandProductRatingResult
 from huaweicloudsdkbss.v2.model.discount_entry import DiscountEntry
 from huaweicloudsdkbss.v2.model.discount_item_v2 import DiscountItemV2
+from huaweicloudsdkbss.v2.model.discount_simple_info import DiscountSimpleInfo
 from huaweicloudsdkbss.v2.model.em_child_node_v2 import EmChildNodeV2
 from huaweicloudsdkbss.v2.model.enterprise_person_new import EnterprisePersonNew
 from huaweicloudsdkbss.v2.model.error_detail import ErrorDetail
@@ -87,6 +89,8 @@ from huaweicloudsdkbss.v2.model.limit_info_v2 import LimitInfoV2
 from huaweicloudsdkbss.v2.model.limit_value import LimitValue
 from huaweicloudsdkbss.v2.model.list_cities_request import ListCitiesRequest
 from huaweicloudsdkbss.v2.model.list_cities_response import ListCitiesResponse
+from huaweicloudsdkbss.v2.model.list_conversions_request import ListConversionsRequest
+from huaweicloudsdkbss.v2.model.list_conversions_response import ListConversionsResponse
 from huaweicloudsdkbss.v2.model.list_counties_request import ListCountiesRequest
 from huaweicloudsdkbss.v2.model.list_counties_response import ListCountiesResponse
 from huaweicloudsdkbss.v2.model.list_coupon_quotas_records_request import ListCouponQuotasRecordsRequest
@@ -115,6 +119,8 @@ from huaweicloudsdkbss.v2.model.list_issued_coupon_quotas_request import ListIss
 from huaweicloudsdkbss.v2.model.list_issued_coupon_quotas_response import ListIssuedCouponQuotasResponse
 from huaweicloudsdkbss.v2.model.list_issued_partner_coupons_request import ListIssuedPartnerCouponsRequest
 from huaweicloudsdkbss.v2.model.list_issued_partner_coupons_response import ListIssuedPartnerCouponsResponse
+from huaweicloudsdkbss.v2.model.list_measure_units_request import ListMeasureUnitsRequest
+from huaweicloudsdkbss.v2.model.list_measure_units_response import ListMeasureUnitsResponse
 from huaweicloudsdkbss.v2.model.list_on_demand_resource_ratings_request import ListOnDemandResourceRatingsRequest
 from huaweicloudsdkbss.v2.model.list_on_demand_resource_ratings_response import ListOnDemandResourceRatingsResponse
 from huaweicloudsdkbss.v2.model.list_order_coupons_by_order_id_request import ListOrderCouponsByOrderIdRequest
@@ -159,6 +165,7 @@ from huaweicloudsdkbss.v2.model.list_subcustomer_monthly_bills_request import Li
 from huaweicloudsdkbss.v2.model.list_subcustomer_monthly_bills_response import ListSubcustomerMonthlyBillsResponse
 from huaweicloudsdkbss.v2.model.list_usage_types_request import ListUsageTypesRequest
 from huaweicloudsdkbss.v2.model.list_usage_types_response import ListUsageTypesResponse
+from huaweicloudsdkbss.v2.model.measure_unit_rest import MeasureUnitRest
 from huaweicloudsdkbss.v2.model.monthly_bill_record import MonthlyBillRecord
 from huaweicloudsdkbss.v2.model.monthly_bill_res import MonthlyBillRes
 from huaweicloudsdkbss.v2.model.new_customer_v2 import NewCustomerV2

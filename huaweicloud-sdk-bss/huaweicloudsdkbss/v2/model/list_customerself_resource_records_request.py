@@ -84,7 +84,8 @@ class ListCustomerselfResourceRecordsRequest:
             self.cloud_service_type = cloud_service_type
         if region is not None:
             self.region = region
-        self.charge_mode = charge_mode
+        if charge_mode is not None:
+            self.charge_mode = charge_mode
         if bill_type is not None:
             self.bill_type = bill_type
         if offset is not None:

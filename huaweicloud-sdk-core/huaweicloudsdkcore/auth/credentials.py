@@ -17,11 +17,14 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
+
 import importlib
 import inspect
 import os
 from concurrent.futures.thread import ThreadPoolExecutor
 
+from huaweicloudsdkcore.auth.iam import get_keystone_list_projects_request, keystone_list_projects, \
+    get_keystone_list_auth_domains_request, keystone_list_auth_domains, DEFAULT_IAM_ENDPOINT
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError
 from huaweicloudsdkcore.signer import signer
 from huaweicloudsdkcore.utils.string_utils import camel_to_underline
@@ -31,25 +34,30 @@ class Credentials:
     def get_update_path_params(self):
         pass
 
+    def process_auth_params(self, http_client, region_id):
+        pass
+
     def process_auth_request(self, request, http_client):
         pass
 
 
 class BasicCredentials(Credentials):
-    def __init__(self, ak, sk, project_id):
+    def __init__(self, ak, sk, project_id=None):
         if ak is None or ak == "":
             raise ApiValueError("AK can not be null.")
 
         if sk is None or sk == "":
             raise ApiValueError("SK can not be null.")
 
-        if project_id is None or project_id == "":
-            raise ApiValueError("Project ID can not be null.")
-
         self.ak = ak
         self.sk = sk
         self.project_id = project_id
+        self.iam_endpoint = None
         self.security_token = None
+
+    def with_iam_endpoint(self, endpoint):
+        self.iam_endpoint = endpoint
+        return self
 
     def with_security_token(self, token):
         self.security_token = token
@@ -61,13 +69,25 @@ class BasicCredentials(Credentials):
             path_params["project_id"] = self.project_id
         return path_params
 
+    def process_auth_params(self, http_client, region_id):
+        if self.project_id is not None:
+            return self
+        if self.iam_endpoint is None:
+            self.iam_endpoint = DEFAULT_IAM_ENDPOINT
+        future_request = self.process_auth_request(
+            get_keystone_list_projects_request(self.iam_endpoint, region_id=region_id), http_client)
+        request = future_request.result()
+        self.project_id = keystone_list_projects(http_client, request)
+        return self
+
     def process_auth_request(self, request, http_client):
         executor = ThreadPoolExecutor(max_workers=8)
         future = executor.submit(self.sign_request, request)
         return future
 
     def sign_request(self, request):
-        request.header_params["X-Project-Id"] = self.project_id
+        if self.project_id is not None:
+            request.header_params["X-Project-Id"] = self.project_id
         if self.security_token is not None:
             request.header_params["X-Security-Token"] = self.security_token
 
@@ -79,20 +99,22 @@ class BasicCredentials(Credentials):
 
 
 class GlobalCredentials(Credentials):
-    def __init__(self, ak, sk, domain_id):
+    def __init__(self, ak, sk, domain_id=None):
         if ak is None or ak == "":
             raise ApiValueError("AK can not be null.")
 
         if sk is None or sk == "":
             raise ApiValueError("SK can not be null.")
 
-        if domain_id is None or domain_id == "":
-            raise ApiValueError("Domain ID can not be null.")
-
         self.ak = ak
         self.sk = sk
         self.domain_id = domain_id
+        self.iam_endpoint = None
         self.security_token = None
+
+    def with_iam_endpoint(self, endpoint):
+        self.iam_endpoint = endpoint
+        return self
 
     def with_security_token(self, token):
         self.security_token = token
@@ -104,13 +126,25 @@ class GlobalCredentials(Credentials):
             path_params["domain_id"] = self.domain_id
         return path_params
 
+    def process_auth_params(self, http_client, region_id):
+        if self.domain_id is not None:
+            return self
+        if self.iam_endpoint is None:
+            self.iam_endpoint = DEFAULT_IAM_ENDPOINT
+        future_request = self.process_auth_request(get_keystone_list_auth_domains_request(self.iam_endpoint),
+                                                   http_client)
+        request = future_request.result()
+        self.domain_id = keystone_list_auth_domains(http_client, request)
+        return self
+
     def process_auth_request(self, request, http_client):
         executor = ThreadPoolExecutor(max_workers=8)
         future = executor.submit(self.sign_request, request)
         return future
 
     def sign_request(self, request):
-        request.header_params["X-Domain-Id"] = self.domain_id
+        if self.domain_id is not None:
+            request.header_params["X-Domain-Id"] = self.domain_id
         if self.security_token is not None:
             request.header_params["X-Security-Token"] = self.security_token
 

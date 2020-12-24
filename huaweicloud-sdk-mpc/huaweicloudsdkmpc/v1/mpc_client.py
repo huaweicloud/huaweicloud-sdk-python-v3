@@ -646,6 +646,982 @@ class MpcClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_mb_tasks_report(self, request):
+        """合并多声道任务、重置声轨任务上报接口
+
+        ## 典型场景 ##   合并音频多声道文件任务、重置音频文件声轨任务上报结果接口。 ## 接口功能 ##   合并音频多声道文件任务、重置音频文件声轨任务上报结果接口。 ## 接口约束 ##   无。 
+
+        :param CreateMbTasksReportRequest request
+        :return: CreateMbTasksReportResponse
+        """
+        return self.create_mb_tasks_report_with_http_info(request)
+
+    def create_mb_tasks_report_with_http_info(self, request):
+        """合并多声道任务、重置声轨任务上报接口
+
+        ## 典型场景 ##   合并音频多声道文件任务、重置音频文件声轨任务上报结果接口。 ## 接口功能 ##   合并音频多声道文件任务、重置音频文件声轨任务上报结果接口。 ## 接口约束 ##   无。 
+
+        :param CreateMbTasksReportRequest request
+        :return: CreateMbTasksReportResponse
+        """
+
+        all_params = ['create_mb_tasks_report_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mediabox/tasks/report',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateMbTasksReportResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_merge_channels_task(self, request):
+        """创建声道合并任务
+
+        创建声道合并任务，合并声道任务支持将每个声道各放一个文件中的片源，合并为单个音频文件。 执行合并声道的源音频文件需要存储在与媒体处理服务同区域的OBS桶中，且该OBS桶已授权。 
+
+        :param CreateMergeChannelsTaskRequest request
+        :return: CreateMergeChannelsTaskResponse
+        """
+        return self.create_merge_channels_task_with_http_info(request)
+
+    def create_merge_channels_task_with_http_info(self, request):
+        """创建声道合并任务
+
+        创建声道合并任务，合并声道任务支持将每个声道各放一个文件中的片源，合并为单个音频文件。 执行合并声道的源音频文件需要存储在与媒体处理服务同区域的OBS桶中，且该OBS桶已授权。 
+
+        :param CreateMergeChannelsTaskRequest request
+        :return: CreateMergeChannelsTaskResponse
+        """
+
+        all_params = ['create_merge_channels_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/audio/services/merge_channels/task',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateMergeChannelsTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_reset_tracks_task(self, request):
+        """创建音轨重置任务
+
+        创建音轨重置任务，重置音轨任务支持按人工指定关系声道layout，语言标签，转封装片源，使其满足转码输入。 执行音轨重置的源音频文件需要存储在与媒体处理服务同区域的OBS桶中，且该OBS桶已授权。 
+
+        :param CreateResetTracksTaskRequest request
+        :return: CreateResetTracksTaskResponse
+        """
+        return self.create_reset_tracks_task_with_http_info(request)
+
+    def create_reset_tracks_task_with_http_info(self, request):
+        """创建音轨重置任务
+
+        创建音轨重置任务，重置音轨任务支持按人工指定关系声道layout，语言标签，转封装片源，使其满足转码输入。 执行音轨重置的源音频文件需要存储在与媒体处理服务同区域的OBS桶中，且该OBS桶已授权。 
+
+        :param CreateResetTracksTaskRequest request
+        :return: CreateResetTracksTaskResponse
+        """
+
+        all_params = ['create_reset_tracks_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/audio/services/reset_tracks/task',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateResetTracksTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_merge_channels_task(self, request):
+        """取消声道合并任务
+
+        取消合并音频多声道文件。 
+
+        :param DeleteMergeChannelsTaskRequest request
+        :return: DeleteMergeChannelsTaskResponse
+        """
+        return self.delete_merge_channels_task_with_http_info(request)
+
+    def delete_merge_channels_task_with_http_info(self, request):
+        """取消声道合并任务
+
+        取消合并音频多声道文件。 
+
+        :param DeleteMergeChannelsTaskRequest request
+        :return: DeleteMergeChannelsTaskResponse
+        """
+
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/audio/services/merge_channels/task',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteMergeChannelsTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_reset_tracks_task(self, request):
+        """取消音轨重置任务
+
+        取消重置音频文件声轨任务。 
+
+        :param DeleteResetTracksTaskRequest request
+        :return: DeleteResetTracksTaskResponse
+        """
+        return self.delete_reset_tracks_task_with_http_info(request)
+
+    def delete_reset_tracks_task_with_http_info(self, request):
+        """取消音轨重置任务
+
+        取消重置音频文件声轨任务。 
+
+        :param DeleteResetTracksTaskRequest request
+        :return: DeleteResetTracksTaskResponse
+        """
+
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/audio/services/reset_tracks/task',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteResetTracksTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_merge_channels_task(self, request):
+        """查询声道合并任务
+
+        查询声道合并任务的状态。 
+
+        :param ListMergeChannelsTaskRequest request
+        :return: ListMergeChannelsTaskResponse
+        """
+        return self.list_merge_channels_task_with_http_info(request)
+
+    def list_merge_channels_task_with_http_info(self, request):
+        """查询声道合并任务
+
+        查询声道合并任务的状态。 
+
+        :param ListMergeChannelsTaskRequest request
+        :return: ListMergeChannelsTaskResponse
+        """
+
+        all_params = ['task_id', 'status', 'start_time', 'end_time', 'page', 'size']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+            collection_formats['task_id'] = 'multi'
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/audio/services/merge_channels/task',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListMergeChannelsTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_reset_tracks_task(self, request):
+        """查询音轨重置任务
+
+        查询音轨重置任务的状态。 
+
+        :param ListResetTracksTaskRequest request
+        :return: ListResetTracksTaskResponse
+        """
+        return self.list_reset_tracks_task_with_http_info(request)
+
+    def list_reset_tracks_task_with_http_info(self, request):
+        """查询音轨重置任务
+
+        查询音轨重置任务的状态。 
+
+        :param ListResetTracksTaskRequest request
+        :return: ListResetTracksTaskResponse
+        """
+
+        all_params = ['task_id', 'status', 'start_time', 'end_time', 'page', 'size']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+            collection_formats['task_id'] = 'multi'
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/audio/services/reset_tracks/task',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListResetTracksTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_media_process_task(self, request):
+        """创建视频增强任务
+
+        ## 典型场景 ##   创建视频增强任务。  ## 接口功能 ##   创建视频增强任务。  ## 接口约束 ##   无。 
+
+        :param CreateMediaProcessTaskRequest request
+        :return: CreateMediaProcessTaskResponse
+        """
+        return self.create_media_process_task_with_http_info(request)
+
+    def create_media_process_task_with_http_info(self, request):
+        """创建视频增强任务
+
+        ## 典型场景 ##   创建视频增强任务。  ## 接口功能 ##   创建视频增强任务。  ## 接口约束 ##   无。 
+
+        :param CreateMediaProcessTaskRequest request
+        :return: CreateMediaProcessTaskResponse
+        """
+
+        all_params = ['create_media_process_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/enhancements',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateMediaProcessTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_media_process_task(self, request):
+        """取消视频增强任务
+
+        ## 典型场景 ##   取消视频增强任务。  ## 接口功能 ##   取消视频增强任务。  ## 接口约束 ##   仅可删除正在排队中的任务。 
+
+        :param DeleteMediaProcessTaskRequest request
+        :return: DeleteMediaProcessTaskResponse
+        """
+        return self.delete_media_process_task_with_http_info(request)
+
+    def delete_media_process_task_with_http_info(self, request):
+        """取消视频增强任务
+
+        ## 典型场景 ##   取消视频增强任务。  ## 接口功能 ##   取消视频增强任务。  ## 接口约束 ##   仅可删除正在排队中的任务。 
+
+        :param DeleteMediaProcessTaskRequest request
+        :return: DeleteMediaProcessTaskResponse
+        """
+
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/enhancements',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteMediaProcessTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_media_process_task(self, request):
+        """查询视频增强任务
+
+        ## 典型场景 ##   查询视频增强任务。  ## 接口功能 ##   查询视频增强任务。  ## 接口约束 ##   无。 
+
+        :param ListMediaProcessTaskRequest request
+        :return: ListMediaProcessTaskResponse
+        """
+        return self.list_media_process_task_with_http_info(request)
+
+    def list_media_process_task_with_http_info(self, request):
+        """查询视频增强任务
+
+        ## 典型场景 ##   查询视频增强任务。  ## 接口功能 ##   查询视频增强任务。  ## 接口约束 ##   无。 
+
+        :param ListMediaProcessTaskRequest request
+        :return: ListMediaProcessTaskResponse
+        """
+
+        all_params = ['task_id', 'status', 'start_time', 'end_time', 'page', 'size']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+            collection_formats['task_id'] = 'multi'
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/enhancements',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListMediaProcessTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_mpe_call_back(self, request):
+        """mpe通知mpc
+
+        ## 典型场景 ##   mpe通知mpc。 ## 接口功能 ##   mpe调用此接口通知mpc转封装等结果。 ## 接口约束 ##   无。 
+
+        :param CreateMpeCallBackRequest request
+        :return: CreateMpeCallBackResponse
+        """
+        return self.create_mpe_call_back_with_http_info(request)
+
+    def create_mpe_call_back_with_http_info(self, request):
+        """mpe通知mpc
+
+        ## 典型场景 ##   mpe通知mpc。 ## 接口功能 ##   mpe调用此接口通知mpc转封装等结果。 ## 接口约束 ##   无。 
+
+        :param CreateMpeCallBackRequest request
+        :return: CreateMpeCallBackResponse
+        """
+
+        all_params = ['create_mpe_call_back_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mpe/notification',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateMpeCallBackResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_quality_enhance_template(self, request):
+        """创建视频增强模板
+
+        创建视频增强模板
+
+        :param CreateQualityEnhanceTemplateRequest request
+        :return: CreateQualityEnhanceTemplateResponse
+        """
+        return self.create_quality_enhance_template_with_http_info(request)
+
+    def create_quality_enhance_template_with_http_info(self, request):
+        """创建视频增强模板
+
+        创建视频增强模板
+
+        :param CreateQualityEnhanceTemplateRequest request
+        :return: CreateQualityEnhanceTemplateResponse
+        """
+
+        all_params = ['create_quality_enhance_template_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/template/qualityenhance',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateQualityEnhanceTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_quality_enhance_template(self, request):
+        """删除用户视频增强模板
+
+        删除用户视频增强模板。
+
+        :param DeleteQualityEnhanceTemplateRequest request
+        :return: DeleteQualityEnhanceTemplateResponse
+        """
+        return self.delete_quality_enhance_template_with_http_info(request)
+
+    def delete_quality_enhance_template_with_http_info(self, request):
+        """删除用户视频增强模板
+
+        删除用户视频增强模板。
+
+        :param DeleteQualityEnhanceTemplateRequest request
+        :return: DeleteQualityEnhanceTemplateResponse
+        """
+
+        all_params = ['template_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'template_id' in local_var_params:
+            query_params.append(('template_id', local_var_params['template_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/template/qualityenhance',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteQualityEnhanceTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_quality_enhance_default_template(self, request):
+        """查询视频增强预置模板
+
+        查询视频增强预置模板，返回所有结果。 
+
+        :param ListQualityEnhanceDefaultTemplateRequest request
+        :return: ListQualityEnhanceDefaultTemplateResponse
+        """
+        return self.list_quality_enhance_default_template_with_http_info(request)
+
+    def list_quality_enhance_default_template_with_http_info(self, request):
+        """查询视频增强预置模板
+
+        查询视频增强预置模板，返回所有结果。 
+
+        :param ListQualityEnhanceDefaultTemplateRequest request
+        :return: ListQualityEnhanceDefaultTemplateResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/template/qualityenhance/default',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListQualityEnhanceDefaultTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_quality_enhance_template(self, request):
+        """更新视频增强模板
+
+        更新视频增强模板。
+
+        :param UpdateQualityEnhanceTemplateRequest request
+        :return: UpdateQualityEnhanceTemplateResponse
+        """
+        return self.update_quality_enhance_template_with_http_info(request)
+
+    def update_quality_enhance_template_with_http_info(self, request):
+        """更新视频增强模板
+
+        更新视频增强模板。
+
+        :param UpdateQualityEnhanceTemplateRequest request
+        :return: UpdateQualityEnhanceTemplateResponse
+        """
+
+        all_params = ['update_quality_enhance_template_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/template/qualityenhance',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateQualityEnhanceTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_transcode_detail(self, request):
         """查询媒资转码详情
 

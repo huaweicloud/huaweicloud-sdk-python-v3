@@ -42,10 +42,201 @@ class BssintlClient(Client):
     def new_builder(clazz):
         return ClientBuilder(clazz, "GlobalCredentials")
 
-    def change_enterprise_realname_authentication(self, request):
-        """实名认证变更申请
+    def list_conversions(self, request):
+        """查询用量单位进制
 
-        功能描述：实名认证变更申请
+        功能描述：查询用量单位进制
+
+        :param ListConversionsRequest request
+        :return: ListConversionsResponse
+        """
+        return self.list_conversions_with_http_info(request)
+
+    def list_conversions_with_http_info(self, request):
+        """查询用量单位进制
+
+        功能描述：查询用量单位进制
+
+        :param ListConversionsRequest request
+        :return: ListConversionsResponse
+        """
+
+        all_params = ['x_language', 'measure_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'measure_type' in local_var_params:
+            query_params.append(('measure_type', local_var_params['measure_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bases/conversions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListConversionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_measure_units(self, request):
+        """查询用量单位列表
+
+        功能描述：查询用量单位列表
+
+        :param ListMeasureUnitsRequest request
+        :return: ListMeasureUnitsResponse
+        """
+        return self.list_measure_units_with_http_info(request)
+
+    def list_measure_units_with_http_info(self, request):
+        """查询用量单位列表
+
+        功能描述：查询用量单位列表
+
+        :param ListMeasureUnitsRequest request
+        :return: ListMeasureUnitsResponse
+        """
+
+        all_params = ['x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bases/measurements',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListMeasureUnitsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_postpaid_bill_sum(self, request):
+        """查询伙伴月度消费账单
+
+        功能描述：伙伴可以查询伙伴月度消费账单
+
+        :param ListPostpaidBillSumRequest request
+        :return: ListPostpaidBillSumResponse
+        """
+        return self.list_postpaid_bill_sum_with_http_info(request)
+
+    def list_postpaid_bill_sum_with_http_info(self, request):
+        """查询伙伴月度消费账单
+
+        功能描述：伙伴可以查询伙伴月度消费账单
+
+        :param ListPostpaidBillSumRequest request
+        :return: ListPostpaidBillSumResponse
+        """
+
+        all_params = ['bill_cycle']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'bill_cycle' in local_var_params:
+            query_params.append(('bill_cycle', local_var_params['bill_cycle']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bills/partner-bills/postpaid-bill-summary',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListPostpaidBillSumResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def change_enterprise_realname_authentication(self, request):
+        """申请实名认证变更
+
+        功能描述：客户可以进行实名认证变更申请。
 
         :param ChangeEnterpriseRealnameAuthenticationRequest request
         :return: ChangeEnterpriseRealnameAuthenticationResponse
@@ -53,9 +244,9 @@ class BssintlClient(Client):
         return self.change_enterprise_realname_authentication_with_http_info(request)
 
     def change_enterprise_realname_authentication_with_http_info(self, request):
-        """实名认证变更申请
+        """申请实名认证变更
 
-        功能描述：实名认证变更申请
+        功能描述：客户可以进行实名认证变更申请。
 
         :param ChangeEnterpriseRealnameAuthenticationRequest request
         :return: ChangeEnterpriseRealnameAuthenticationResponse
@@ -106,9 +297,9 @@ class BssintlClient(Client):
 
 
     def check_user_identity(self, request):
-        """校验客户的注册信息
+        """校验客户注册信息
 
-        功能描述：校验客户的注册信息
+        功能描述：客户注册时可检查客户的登录名称、手机号或者邮箱是否可以用于注册。
 
         :param CheckUserIdentityRequest request
         :return: CheckUserIdentityResponse
@@ -116,9 +307,9 @@ class BssintlClient(Client):
         return self.check_user_identity_with_http_info(request)
 
     def check_user_identity_with_http_info(self, request):
-        """校验客户的注册信息
+        """校验客户注册信息
 
-        功能描述：校验客户的注册信息
+        功能描述：客户注册时可检查客户的登录名称、手机号或者邮箱是否可以用于注册。
 
         :param CheckUserIdentityRequest request
         :return: CheckUserIdentityResponse
@@ -169,9 +360,9 @@ class BssintlClient(Client):
 
 
     def create_enterprise_realname_authentication(self, request):
-        """企业实名认证申请
+        """申请企业实名认证
 
-        功能描述：企业实名认证申请V2
+        功能描述：企业客户可以进行企业实名认证申请。
 
         :param CreateEnterpriseRealnameAuthenticationRequest request
         :return: CreateEnterpriseRealnameAuthenticationResponse
@@ -179,9 +370,9 @@ class BssintlClient(Client):
         return self.create_enterprise_realname_authentication_with_http_info(request)
 
     def create_enterprise_realname_authentication_with_http_info(self, request):
-        """企业实名认证申请
+        """申请企业实名认证
 
-        功能描述：企业实名认证申请V2
+        功能描述：企业客户可以进行企业实名认证申请。
 
         :param CreateEnterpriseRealnameAuthenticationRequest request
         :return: CreateEnterpriseRealnameAuthenticationResponse
@@ -232,9 +423,9 @@ class BssintlClient(Client):
 
 
     def create_personal_realname_auth(self, request):
-        """个人实名认证申请
+        """申请个人实名认证
 
-        功能描述：个人实名认证申请
+        功能描述：个人客户可以进行个人实名认证申请。
 
         :param CreatePersonalRealnameAuthRequest request
         :return: CreatePersonalRealnameAuthResponse
@@ -242,9 +433,9 @@ class BssintlClient(Client):
         return self.create_personal_realname_auth_with_http_info(request)
 
     def create_personal_realname_auth_with_http_info(self, request):
-        """个人实名认证申请
+        """申请个人实名认证
 
-        功能描述：个人实名认证申请
+        功能描述：个人客户可以进行个人实名认证申请。
 
         :param CreatePersonalRealnameAuthRequest request
         :return: CreatePersonalRealnameAuthResponse
@@ -295,9 +486,9 @@ class BssintlClient(Client):
 
 
     def create_sub_customer(self, request):
-        """创建客户（V2）
+        """创建客户
 
-        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。
+        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。华为云伙伴能力中心（一级经销商）可以注册精英服务商伙伴（二级经销商）的子客户。注册完成后，子客户可以自动和精英服务商伙伴绑定。
 
         :param CreateSubCustomerRequest request
         :return: CreateSubCustomerResponse
@@ -305,9 +496,9 @@ class BssintlClient(Client):
         return self.create_sub_customer_with_http_info(request)
 
     def create_sub_customer_with_http_info(self, request):
-        """创建客户（V2）
+        """创建客户
 
-        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。
+        功能描述：在伙伴销售平台创建客户时同步创建华为云账号，并将客户在伙伴销售平台上的账号与华为云账号进行映射。同时，创建的华为云账号与伙伴账号关联绑定。华为云伙伴能力中心（一级经销商）可以注册精英服务商伙伴（二级经销商）的子客户。注册完成后，子客户可以自动和精英服务商伙伴绑定。
 
         :param CreateSubCustomerRequest request
         :return: CreateSubCustomerResponse
@@ -423,7 +614,7 @@ class BssintlClient(Client):
     def list_customer_on_demand_resources(self, request):
         """查询客户按需资源列表
 
-        功能描述：查询客户按需资源列表
+        功能描述：客户在伙伴销售平台查询已开通的按需资源
 
         :param ListCustomerOnDemandResourcesRequest request
         :return: ListCustomerOnDemandResourcesResponse
@@ -433,7 +624,7 @@ class BssintlClient(Client):
     def list_customer_on_demand_resources_with_http_info(self, request):
         """查询客户按需资源列表
 
-        功能描述：查询客户按需资源列表
+        功能描述：客户在伙伴销售平台查询已开通的按需资源
 
         :param ListCustomerOnDemandResourcesRequest request
         :return: ListCustomerOnDemandResourcesResponse
@@ -486,7 +677,7 @@ class BssintlClient(Client):
 
 
     def list_customerself_resource_record_details(self, request):
-        """查询资源详单V2（客户）
+        """查询资源详单
 
         功能描述：客户在客户自建平台查询自己的资源详单，用于反映各类资源的消耗情况。资源详单数据有延迟，最大延迟24小时。
 
@@ -496,7 +687,7 @@ class BssintlClient(Client):
         return self.list_customerself_resource_record_details_with_http_info(request)
 
     def list_customerself_resource_record_details_with_http_info(self, request):
-        """查询资源详单V2（客户）
+        """查询资源详单
 
         功能描述：客户在客户自建平台查询自己的资源详单，用于反映各类资源的消耗情况。资源详单数据有延迟，最大延迟24小时。
 
@@ -549,9 +740,9 @@ class BssintlClient(Client):
 
 
     def list_customerself_resource_records(self, request):
-        """查询资源消费记录（客户）
+        """查询资源消费记录
 
-        功能描述：查询资源消费记录（客户）
+        功能描述：客户在客户自建平台查询每个资源的消费明细数据
 
         :param ListCustomerselfResourceRecordsRequest request
         :return: ListCustomerselfResourceRecordsResponse
@@ -559,15 +750,15 @@ class BssintlClient(Client):
         return self.list_customerself_resource_records_with_http_info(request)
 
     def list_customerself_resource_records_with_http_info(self, request):
-        """查询资源消费记录（客户）
+        """查询资源消费记录
 
-        功能描述：查询资源消费记录（客户）
+        功能描述：客户在客户自建平台查询每个资源的消费明细数据
 
         :param ListCustomerselfResourceRecordsRequest request
         :return: ListCustomerselfResourceRecordsResponse
         """
 
-        all_params = ['cycle', 'charge_mode', 'x_language', 'cloud_service_type', 'region', 'bill_type', 'offset', 'limit', 'resource_id', 'enterprise_project_id', 'include_zero_record', 'method', 'sub_customer_id', 'trade_id']
+        all_params = ['cycle', 'x_language', 'cloud_service_type', 'region', 'charge_mode', 'bill_type', 'offset', 'limit', 'resource_id', 'enterprise_project_id', 'include_zero_record', 'method', 'sub_customer_id', 'trade_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -766,7 +957,7 @@ class BssintlClient(Client):
     def list_sub_customer_coupons(self, request):
         """查询优惠券列表
 
-        功能描述：查询优惠券列表
+        功能描述：伙伴可以查询自身的优惠券信息。
 
         :param ListSubCustomerCouponsRequest request
         :return: ListSubCustomerCouponsResponse
@@ -776,7 +967,7 @@ class BssintlClient(Client):
     def list_sub_customer_coupons_with_http_info(self, request):
         """查询优惠券列表
 
-        功能描述：查询优惠券列表
+        功能描述：伙伴可以查询自身的优惠券信息。
 
         :param ListSubCustomerCouponsRequest request
         :return: ListSubCustomerCouponsResponse
@@ -849,7 +1040,7 @@ class BssintlClient(Client):
     def list_sub_customers(self, request):
         """查询客户列表
 
-        功能描述：查询客户列表
+        功能描述：伙伴可以查询合作伙伴的客户信息列表。
 
         :param ListSubCustomersRequest request
         :return: ListSubCustomersResponse
@@ -859,7 +1050,7 @@ class BssintlClient(Client):
     def list_sub_customers_with_http_info(self, request):
         """查询客户列表
 
-        功能描述：查询客户列表
+        功能描述：伙伴可以查询合作伙伴的客户信息列表。
 
         :param ListSubCustomersRequest request
         :return: ListSubCustomersResponse
@@ -910,9 +1101,9 @@ class BssintlClient(Client):
 
 
     def send_verification_message_code(self, request):
-        """短信验证码
+        """发送验证码
 
-        功能描述：发送验证码
+        功能描述：客户注册时，如果填写了手机号，可以向对应的手机发送注册验证码，校验信息的正确性。使用个人银行卡方式进行实名认证时，通过该接口向指定的手机发送验证码。
 
         :param SendVerificationMessageCodeRequest request
         :return: SendVerificationMessageCodeResponse
@@ -920,9 +1111,9 @@ class BssintlClient(Client):
         return self.send_verification_message_code_with_http_info(request)
 
     def send_verification_message_code_with_http_info(self, request):
-        """短信验证码
+        """发送验证码
 
-        功能描述：发送验证码
+        功能描述：客户注册时，如果填写了手机号，可以向对应的手机发送注册验证码，校验信息的正确性。使用个人银行卡方式进行实名认证时，通过该接口向指定的手机发送验证码。
 
         :param SendVerificationMessageCodeRequest request
         :return: SendVerificationMessageCodeResponse
@@ -973,9 +1164,9 @@ class BssintlClient(Client):
 
 
     def show_customer_monthly_sum(self, request):
-        """查询客户消费汇总
+        """查询汇总账单
 
-        功能描述：客户可以查询自身的消费汇总单的功能，消费按月汇总。每天刷新一次，更新前一天的数据。
+        功能描述：客户在客户自建平台查询自身的消费汇总账单，此账单按月汇总消费数据。消费汇总账单数据仅包含前一天24点前的数据
 
         :param ShowCustomerMonthlySumRequest request
         :return: ShowCustomerMonthlySumResponse
@@ -983,9 +1174,9 @@ class BssintlClient(Client):
         return self.show_customer_monthly_sum_with_http_info(request)
 
     def show_customer_monthly_sum_with_http_info(self, request):
-        """查询客户消费汇总
+        """查询汇总账单
 
-        功能描述：客户可以查询自身的消费汇总单的功能，消费按月汇总。每天刷新一次，更新前一天的数据。
+        功能描述：客户在客户自建平台查询自身的消费汇总账单，此账单按月汇总消费数据。消费汇总账单数据仅包含前一天24点前的数据
 
         :param ShowCustomerMonthlySumRequest request
         :return: ShowCustomerMonthlySumResponse
@@ -1050,7 +1241,7 @@ class BssintlClient(Client):
     def show_realname_authentication_review_result(self, request):
         """查询实名认证审核结果
 
-        功能描述：查询实名认证审核结果
+        功能描述：如果实名认证申请或实名认证变更申请的响应中，显示需要人工审核，使用该接口查询审核结果。
 
         :param ShowRealnameAuthenticationReviewResultRequest request
         :return: ShowRealnameAuthenticationReviewResultResponse
@@ -1060,7 +1251,7 @@ class BssintlClient(Client):
     def show_realname_authentication_review_result_with_http_info(self, request):
         """查询实名认证审核结果
 
-        功能描述：查询实名认证审核结果
+        功能描述：如果实名认证申请或实名认证变更申请的响应中，显示需要人工审核，使用该接口查询审核结果。
 
         :param ShowRealnameAuthenticationReviewResultRequest request
         :return: ShowRealnameAuthenticationReviewResultResponse
@@ -1426,9 +1617,9 @@ class BssintlClient(Client):
 
 
     def cancel_customer_order(self, request):
-        """取消包周期订单
+        """取消待支付订单
 
-        功能描述：取消包周期订单
+        功能描述：客户可以对待支付的订单进行取消操作
 
         :param CancelCustomerOrderRequest request
         :return: CancelCustomerOrderResponse
@@ -1436,9 +1627,9 @@ class BssintlClient(Client):
         return self.cancel_customer_order_with_http_info(request)
 
     def cancel_customer_order_with_http_info(self, request):
-        """取消包周期订单
+        """取消待支付订单
 
-        功能描述：取消包周期订单
+        功能描述：客户可以对待支付的订单进行取消操作
 
         :param CancelCustomerOrderRequest request
         :return: CancelCustomerOrderResponse
@@ -1489,9 +1680,9 @@ class BssintlClient(Client):
 
 
     def cancel_resources_subscription(self, request):
-        """退订包周期资源
+        """退订包年包月资源
 
-        功能描述：退订包周期资源
+        功能描述：客户购买包年包月资源后，支持客户退订包年包月实例。退订资源实例包括资源续费部分和当前正在使用的部分，退订后资源将无法使用
 
         :param CancelResourcesSubscriptionRequest request
         :return: CancelResourcesSubscriptionResponse
@@ -1499,9 +1690,9 @@ class BssintlClient(Client):
         return self.cancel_resources_subscription_with_http_info(request)
 
     def cancel_resources_subscription_with_http_info(self, request):
-        """退订包周期资源
+        """退订包年包月资源
 
-        功能描述：退订包周期资源
+        功能描述：客户购买包年包月资源后，支持客户退订包年包月实例。退订资源实例包括资源续费部分和当前正在使用的部分，退订后资源将无法使用
 
         :param CancelResourcesSubscriptionRequest request
         :return: CancelResourcesSubscriptionResponse
@@ -1552,9 +1743,9 @@ class BssintlClient(Client):
 
 
     def list_customer_orders(self, request):
-        """查询订单列表V2
+        """查询订单列表
 
-        功能描述：查询订单列表
+        功能描述：客户购买包年包月资源后，可以查看待审核、处理中、已取消、已完成和待支付等状态的订单
 
         :param ListCustomerOrdersRequest request
         :return: ListCustomerOrdersResponse
@@ -1562,9 +1753,9 @@ class BssintlClient(Client):
         return self.list_customer_orders_with_http_info(request)
 
     def list_customer_orders_with_http_info(self, request):
-        """查询订单列表V2
+        """查询订单列表
 
-        功能描述：查询订单列表
+        功能描述：客户购买包年包月资源后，可以查看待审核、处理中、已取消、已完成和待支付等状态的订单
 
         :param ListCustomerOrdersRequest request
         :return: ListCustomerOrdersResponse
@@ -1641,7 +1832,7 @@ class BssintlClient(Client):
     def list_order_coupons_by_order_id(self, request):
         """查询订单可用优惠券
 
-        功能描述：查询订单详情
+        功能描述：客户在客户自建平台查看订单可用的优惠券列表
 
         :param ListOrderCouponsByOrderIdRequest request
         :return: ListOrderCouponsByOrderIdResponse
@@ -1651,7 +1842,7 @@ class BssintlClient(Client):
     def list_order_coupons_by_order_id_with_http_info(self, request):
         """查询订单可用优惠券
 
-        功能描述：查询订单详情
+        功能描述：客户在客户自建平台查看订单可用的优惠券列表
 
         :param ListOrderCouponsByOrderIdRequest request
         :return: ListOrderCouponsByOrderIdResponse
@@ -1704,7 +1895,7 @@ class BssintlClient(Client):
     def list_pay_per_use_customer_resources(self, request):
         """查询客户包年包月资源列表
 
-        功能描述：查询客户包年/包月资源列表
+        功能描述：客户在客户自建平台查询某个或所有的包年包月资源
 
         :param ListPayPerUseCustomerResourcesRequest request
         :return: ListPayPerUseCustomerResourcesResponse
@@ -1714,7 +1905,7 @@ class BssintlClient(Client):
     def list_pay_per_use_customer_resources_with_http_info(self, request):
         """查询客户包年包月资源列表
 
-        功能描述：查询客户包年/包月资源列表
+        功能描述：客户在客户自建平台查询某个或所有的包年包月资源
 
         :param ListPayPerUseCustomerResourcesRequest request
         :return: ListPayPerUseCustomerResourcesResponse
@@ -1767,7 +1958,7 @@ class BssintlClient(Client):
     def list_resource_usages(self, request):
         """查询套餐内使用量
 
-        功能描述：查询套餐内使用量
+        功能描述：客户在客户自建平台查询套餐内的使用量
 
         :param ListResourceUsagesRequest request
         :return: ListResourceUsagesResponse
@@ -1777,7 +1968,7 @@ class BssintlClient(Client):
     def list_resource_usages_with_http_info(self, request):
         """查询套餐内使用量
 
-        功能描述：查询套餐内使用量
+        功能描述：客户在客户自建平台查询套餐内的使用量
 
         :param ListResourceUsagesRequest request
         :return: ListResourceUsagesResponse
@@ -1828,9 +2019,9 @@ class BssintlClient(Client):
 
 
     def pay_orders(self, request):
-        """支付包周期订单
+        """支付包年包月产品订单
 
-        功能描述：支付包周期订单
+        功能描述：客户可以对待支付状态的包年包月产品订单进行支付
 
         :param PayOrdersRequest request
         :return: PayOrdersResponse
@@ -1838,9 +2029,9 @@ class BssintlClient(Client):
         return self.pay_orders_with_http_info(request)
 
     def pay_orders_with_http_info(self, request):
-        """支付包周期订单
+        """支付包年包月产品订单
 
-        功能描述：支付包周期订单
+        功能描述：客户可以对待支付状态的包年包月产品订单进行支付
 
         :param PayOrdersRequest request
         :return: PayOrdersResponse
@@ -1891,9 +2082,9 @@ class BssintlClient(Client):
 
 
     def renewal_resources(self, request):
-        """续订包周期资源
+        """续订包年包月资源
 
-        功能描述：续订包周期资源
+        功能描述：客户的包年包月资源即将到期时，可进行包年包月资源的续订
 
         :param RenewalResourcesRequest request
         :return: RenewalResourcesResponse
@@ -1901,9 +2092,9 @@ class BssintlClient(Client):
         return self.renewal_resources_with_http_info(request)
 
     def renewal_resources_with_http_info(self, request):
-        """续订包周期资源
+        """续订包年包月资源
 
-        功能描述：续订包周期资源
+        功能描述：客户的包年包月资源即将到期时，可进行包年包月资源的续订
 
         :param RenewalResourcesRequest request
         :return: RenewalResourcesResponse
@@ -1954,9 +2145,9 @@ class BssintlClient(Client):
 
 
     def show_customer_order_details(self, request):
-        """查询订单详情V2
+        """查询订单详情
 
-        功能描述：查询订单详情
+        功能描述：客户可以查看订单详情
 
         :param ShowCustomerOrderDetailsRequest request
         :return: ShowCustomerOrderDetailsResponse
@@ -1964,9 +2155,9 @@ class BssintlClient(Client):
         return self.show_customer_order_details_with_http_info(request)
 
     def show_customer_order_details_with_http_info(self, request):
-        """查询订单详情V2
+        """查询订单详情
 
-        功能描述：查询订单详情
+        功能描述：客户可以查看订单详情
 
         :param ShowCustomerOrderDetailsRequest request
         :return: ShowCustomerOrderDetailsResponse
@@ -2023,9 +2214,9 @@ class BssintlClient(Client):
 
 
     def show_refund_order_details(self, request):
-        """查询退款订单的金额详情V2
+        """查询退款订单的金额详情
 
-        功能描述：查询退款订单的金额详情
+        功能描述：客户在伙伴销售平台查询某次退订订单或者降配订单的退款金额来自哪些资源和对应订单
 
         :param ShowRefundOrderDetailsRequest request
         :return: ShowRefundOrderDetailsResponse
@@ -2033,9 +2224,9 @@ class BssintlClient(Client):
         return self.show_refund_order_details_with_http_info(request)
 
     def show_refund_order_details_with_http_info(self, request):
-        """查询退款订单的金额详情V2
+        """查询退款订单的金额详情
 
-        功能描述：查询退款订单的金额详情
+        功能描述：客户在伙伴销售平台查询某次退订订单或者降配订单的退款金额来自哪些资源和对应订单
 
         :param ShowRefundOrderDetailsRequest request
         :return: ShowRefundOrderDetailsResponse
@@ -2086,9 +2277,9 @@ class BssintlClient(Client):
 
 
     def update_period_to_on_demand(self, request):
-        """设置或者取消包周期资源到期转按需
+        """设置或者取消包年包月资源到期转按需
 
-        功能描述：设置或者取消包周期资源到期转按需
+        功能描述：客户可以设置包年包月资源到期后转为按需资源计费。包年包月计费模式到期后，按需的计费模式即生效
 
         :param UpdatePeriodToOnDemandRequest request
         :return: UpdatePeriodToOnDemandResponse
@@ -2096,9 +2287,9 @@ class BssintlClient(Client):
         return self.update_period_to_on_demand_with_http_info(request)
 
     def update_period_to_on_demand_with_http_info(self, request):
-        """设置或者取消包周期资源到期转按需
+        """设置或者取消包年包月资源到期转按需
 
-        功能描述：设置或者取消包周期资源到期转按需
+        功能描述：客户可以设置包年包月资源到期后转为按需资源计费。包年包月计费模式到期后，按需的计费模式即生效
 
         :param UpdatePeriodToOnDemandRequest request
         :return: UpdatePeriodToOnDemandResponse
@@ -2149,9 +2340,9 @@ class BssintlClient(Client):
 
 
     def list_resource_types(self, request):
-        """查询资源类型
+        """查询资源类型列表
 
-        功能描述：查询资源类型
+        功能描述：客户在客户自建平台查询资源类型的列表。
 
         :param ListResourceTypesRequest request
         :return: ListResourceTypesResponse
@@ -2159,9 +2350,9 @@ class BssintlClient(Client):
         return self.list_resource_types_with_http_info(request)
 
     def list_resource_types_with_http_info(self, request):
-        """查询资源类型
+        """查询资源类型列表
 
-        功能描述：查询资源类型
+        功能描述：客户在客户自建平台查询资源类型的列表。
 
         :param ListResourceTypesRequest request
         :return: ListResourceTypesResponse
@@ -2216,7 +2407,7 @@ class BssintlClient(Client):
     def list_service_resources(self, request):
         """根据云服务类型查询资源列表
 
-        功能描述：根据云服务类型查询资源列表
+        功能描述：伙伴在伙伴销售平台根据云服务类型查询关联的资源类型编码和名称，用于查询按需产品的价格或包年/包月产品的价格。
 
         :param ListServiceResourcesRequest request
         :return: ListServiceResourcesResponse
@@ -2226,7 +2417,7 @@ class BssintlClient(Client):
     def list_service_resources_with_http_info(self, request):
         """根据云服务类型查询资源列表
 
-        功能描述：根据云服务类型查询资源列表
+        功能描述：伙伴在伙伴销售平台根据云服务类型查询关联的资源类型编码和名称，用于查询按需产品的价格或包年/包月产品的价格。
 
         :param ListServiceResourcesRequest request
         :return: ListServiceResourcesResponse
@@ -2285,7 +2476,7 @@ class BssintlClient(Client):
     def list_service_types(self, request):
         """查询云服务类型列表
 
-        功能描述：查询云服务类型列表
+        功能描述：伙伴在伙伴销售平台查询云服务类型的列表。
 
         :param ListServiceTypesRequest request
         :return: ListServiceTypesResponse
@@ -2295,7 +2486,7 @@ class BssintlClient(Client):
     def list_service_types_with_http_info(self, request):
         """查询云服务类型列表
 
-        功能描述：查询云服务类型列表
+        功能描述：伙伴在伙伴销售平台查询云服务类型的列表。
 
         :param ListServiceTypesRequest request
         :return: ListServiceTypesResponse
@@ -2348,9 +2539,9 @@ class BssintlClient(Client):
 
 
     def list_usage_types(self, request):
-        """查询使用量列表
+        """查询使用量类型列表
 
-        功能描述：客户在伙伴销售平台或自建平台查询包年/包月或按需产品的列表
+        功能描述：伙伴在伙伴销售平台查询资源的使用量类型列表。
 
         :param ListUsageTypesRequest request
         :return: ListUsageTypesResponse
@@ -2358,9 +2549,9 @@ class BssintlClient(Client):
         return self.list_usage_types_with_http_info(request)
 
     def list_usage_types_with_http_info(self, request):
-        """查询使用量列表
+        """查询使用量类型列表
 
-        功能描述：客户在伙伴销售平台或自建平台查询包年/包月或按需产品的列表
+        功能描述：伙伴在伙伴销售平台查询资源的使用量类型列表。
 
         :param ListUsageTypesRequest request
         :return: ListUsageTypesResponse

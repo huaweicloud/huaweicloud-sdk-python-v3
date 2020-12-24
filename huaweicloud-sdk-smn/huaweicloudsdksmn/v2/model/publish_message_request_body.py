@@ -27,7 +27,7 @@ class PublishMessageRequestBody:
         'message': 'str',
         'message_structure': 'str',
         'message_template_name': 'str',
-        'tags': 'list[str]',
+        'tags': 'object',
         'time_to_live': 'str'
     }
 
@@ -156,10 +156,10 @@ class PublishMessageRequestBody:
     def tags(self):
         """Gets the tags of this PublishMessageRequestBody.
 
-        tag以及替换tag的参数组成的字典。消息模板中的标签对应的值。使用消息模板方式的消息发布必须携带该参数。
+        tag以及替换tag的参数组成的字典。消息模板中的标签对应的值。使用消息模板方式的消息发布必须携带该参数。字典中的key为消息模板中的参数名称，不超过21个字符。字典中的value为消息模板中的参数被替换后的值，不超过1KB。
 
         :return: The tags of this PublishMessageRequestBody.
-        :rtype: list[str]
+        :rtype: object
         """
         return self._tags
 
@@ -167,10 +167,10 @@ class PublishMessageRequestBody:
     def tags(self, tags):
         """Sets the tags of this PublishMessageRequestBody.
 
-        tag以及替换tag的参数组成的字典。消息模板中的标签对应的值。使用消息模板方式的消息发布必须携带该参数。
+        tag以及替换tag的参数组成的字典。消息模板中的标签对应的值。使用消息模板方式的消息发布必须携带该参数。字典中的key为消息模板中的参数名称，不超过21个字符。字典中的value为消息模板中的参数被替换后的值，不超过1KB。
 
         :param tags: The tags of this PublishMessageRequestBody.
-        :type: list[str]
+        :type: object
         """
         self._tags = tags
 

@@ -236,7 +236,7 @@ class QueryResRecordsDetailReq:
     def bill_type(self):
         """Gets the bill_type of this QueryResRecordsDetailReq.
 
-        |参数名称：账单类型| |参数的约束及描述：该参数非必填，且只允许整数,1：消费-新购；2：消费-续订；3：消费-变更；4：退款-退订；5：消费-使用；8：消费-自动续订；9：调账-补偿；12：消费-按时计费；13：消费-退订手续费；14：消费-服务支持计划月末扣费；16：调账-扣费|
+        |参数名称：账单类型| |参数的约束及描述：该参数非必填，且只允许整数,1：消费-新购；2：消费-续订；3：消费-变更；4：退款-退订；5：消费-使用；8：消费-自动续订；9：调账-补偿；12：消费-按时计费；13：消费-退订手续费；14：消费-服务支持计划月末扣费；16：调账-扣费; 17：消费-保底差额 |
 
         :return: The bill_type of this QueryResRecordsDetailReq.
         :rtype: int
@@ -247,7 +247,7 @@ class QueryResRecordsDetailReq:
     def bill_type(self, bill_type):
         """Sets the bill_type of this QueryResRecordsDetailReq.
 
-        |参数名称：账单类型| |参数的约束及描述：该参数非必填，且只允许整数,1：消费-新购；2：消费-续订；3：消费-变更；4：退款-退订；5：消费-使用；8：消费-自动续订；9：调账-补偿；12：消费-按时计费；13：消费-退订手续费；14：消费-服务支持计划月末扣费；16：调账-扣费|
+        |参数名称：账单类型| |参数的约束及描述：该参数非必填，且只允许整数,1：消费-新购；2：消费-续订；3：消费-变更；4：退款-退订；5：消费-使用；8：消费-自动续订；9：调账-补偿；12：消费-按时计费；13：消费-退订手续费；14：消费-服务支持计划月末扣费；16：调账-扣费; 17：消费-保底差额 |
 
         :param bill_type: The bill_type of this QueryResRecordsDetailReq.
         :type: int

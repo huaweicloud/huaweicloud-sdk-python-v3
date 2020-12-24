@@ -51,26 +51,28 @@ You must install `huaweicloudsdkcore` library no matter which product/service de
 
 1. Import the required modules as follows:
 
-    ```python
+    ``` python
     from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
     from huaweicloudsdkcore.exceptions import exceptions
     from huaweicloudsdkcore.http.http_config import HttpConfig
     # import specified service library huaweicloudsdk{service}, take vpc for example
     from huaweicloudsdkvpc.v2 import *
+    # import specified service region file, take vpc for example
+    from huaweicloudsdkvpc.v2.region.vpc_region import VpcRegion
     ```
 
 2. Config `{Service}Client` Configurations
 
     2.1 Use default configuration
 
-    ```python
+    ``` python
     #  Use default configuration
     config = HttpConfig.get_default_config()
     ```
 
     2.2 Proxy(Optional)
 
-    ```python
+    ``` python
     # Use Proxy if needed
     config.proxy_protocol = 'http'
     config.proxy_host = 'proxy.huaweicloud.com'
@@ -81,14 +83,14 @@ You must install `huaweicloudsdkcore` library no matter which product/service de
 
     2.3 Connection(Optional)
 
-    ```python
+    ``` python
     # seconds to wait for the server to send data before giving up, as a float, or (connect timeout, read timeout)
     config.timeout = 3
     ```
 
     2.4 SSL Certification(Optional)
 
-    ```python
+    ``` python
     # Skip ssl certifaction checking while using https protocol if needed
     config.ignore_ssl_verification = True
     # Server ca certification if needed
@@ -99,10 +101,12 @@ You must install `huaweicloudsdkcore` library no matter which product/service de
 
     **Notice:**
     There are two types of HUAWEI CLOUD services, regional services and global services. 
-    Global services currently only support IAM, TMS, EPS.
+    Global services currently only support BSS, DevStar, EPS, IAM, RMS, TMS.
 
     For Regional services' authentication, projectId is required. 
     For global services' authentication, domainId is required. 
+
+    If you use {Service}Region to initialize {Service}Client, projectId/domainId supports automatic acquisition, you don't need to configure it when initializing Credentials.
 
     - `ak` is the access key ID for your account.
     - `sk` is the secret access key for your account.
@@ -112,7 +116,7 @@ You must install `huaweicloudsdkcore` library no matter which product/service de
 
     3.1 Use permanent AK/SK
     
-    ```python
+    ``` python
     # Region services
     credentials = BasicCredentials(ak, sk, project_id)
    
@@ -128,7 +132,7 @@ You must install `huaweicloudsdkcore` library no matter which product/service de
     
     Obtaining a temporary access key and security token through an agency, you could refer to document: https://support.huaweicloud.com/en-us/api-iam/iam_04_0101.html . The API mentioned in the document above corresponds to the method of createTemporaryAccessKeyByAgency in IAM SDK.
     
-    ```python
+    ``` python
     # Region services
     credentials = BasicCredentials(ak, sk, project_id).with_security_token(security_token)
    
@@ -136,9 +140,13 @@ You must install `huaweicloudsdkcore` library no matter which product/service de
     credentials = GlobalCredentials(ak, sk, domain_id).with_security_token(security_token)
     ```
 
-4. Initialize the `{Service}Client` instance:
+4. Initialize the `{Service}Client` instance (Two ways)
 
-    ```python
+    There are two ways to initialize the instance of {Service}Client.
+
+    4.1 Specify Endpoint when initializing {Service}Client
+
+    ``` python
     # Initialize specified service client instance, take VpcClient for example
     client = VpcClient.new_builder(VpcClient) \
         .with_http_config(config) \
@@ -167,9 +175,28 @@ You must install `huaweicloudsdkcore` library no matter which product/service de
     2020-06-16 10:44:02,019 4568 HuaweiCloud-SDK http_handler.py 28 INFO "GET https://vpc.cn-north-1.myhuaweicloud.com/v1/0904f9e1f100d2932f94c01f9aa1cfd7/vpcs" 200 11 0:00:00.543430 b5c927ffdab8401e772e70aa49972037
     ```
 
+    4.2 Specify Region when initializing {Service}Client **(Recommended)**
+
+    ``` python
+    # Initialize specified service client instance, take IamClient for example
+    client = IamClient.new_builder(IamClient) \
+        .with_http_config(config) \
+        .with_credentials(credentials) \
+        .with_region(IamRegion.CN_NORTH_4) \
+        .with_file_log(path="test.log", log_level=logging.INFO) \  # Write log files
+        .with_stream_log(log_level=logging.INFO) \                 # Write log to console
+        .build()
+    ```
+
+    **where:**
+
+    - If you use {Service}Region to initialize {Service}Client, projectId/domainId supports automatic acquisition, you don't need to configure it when initializing Credentials.
+    - Multiple ProjectId situation is not supported.
+
+
 5. Send a request and print response.
 
-    ```python
+    ``` python
     # Initialize a request and print response, take interface of ListVpcs for example
     request = ListVpcsRequest()
     response = client.list_vpcs(request)
@@ -187,7 +214,7 @@ You must install `huaweicloudsdkcore` library no matter which product/service de
     | ServiceResponseException | service response error | ServerResponseException | server inner error, http status code: [500,] |
     | | | ClientRequestException | invalid request, http status code: [400? 500) |
     
-    ```python
+    ``` python
     # handle exceptions
     try:
        request = ListVpcsRequest()
@@ -201,7 +228,7 @@ You must install `huaweicloudsdkcore` library no matter which product/service de
 
 7. Asynchronous Requests
 
-    ```python
+    ``` python
     # Initialize asynchronous client, take VpcAsyncClient for example
     vpc_client = VpcAsyncClient.new_builder(VpcAsyncClient) \
         .with_http_config(config) \
@@ -223,7 +250,7 @@ You must install `huaweicloudsdkcore` library no matter which product/service de
 
     **Warning:** The original http log can only be used in troubleshooting scenarios, please do not print the original http header or body in the production environment. The log content is not encrypted and may contain sensitive information such as the password of your ECS or the password of your IAM user account, etc. When the response body is binary content, the body will be printed as "***" without detailed information.
 
-    ```python
+    ``` python
     def response_handler(**kwargs):
         logger = kwargs.get("logger")
         response = kwargs.get("response")

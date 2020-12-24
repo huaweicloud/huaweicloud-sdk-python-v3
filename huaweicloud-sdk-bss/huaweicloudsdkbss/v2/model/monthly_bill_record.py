@@ -48,7 +48,8 @@ class MonthlyBillRecord:
         'stored_value_card_amount': 'float',
         'bonus_amount': 'float',
         'debt_amount': 'float',
-        'writeoff_amount': 'float'
+        'writeoff_amount': 'float',
+        'region_name': 'str'
     }
 
     attribute_map = {
@@ -77,10 +78,11 @@ class MonthlyBillRecord:
         'stored_value_card_amount': 'stored_value_card_amount',
         'bonus_amount': 'bonus_amount',
         'debt_amount': 'debt_amount',
-        'writeoff_amount': 'writeoff_amount'
+        'writeoff_amount': 'writeoff_amount',
+        'region_name': 'region_name'
     }
 
-    def __init__(self, bill_cycle=None, customer_id=None, service_type_code=None, resource_type_code=None, region_code=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, consume_time=None, trade_time=None, provider_type=None, trade_id=None, bill_type=None, status=None, official_amount=None, official_discount_amount=None, erase_amount=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, bonus_amount=None, debt_amount=None, writeoff_amount=None):
+    def __init__(self, bill_cycle=None, customer_id=None, service_type_code=None, resource_type_code=None, region_code=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, consume_time=None, trade_time=None, provider_type=None, trade_id=None, bill_type=None, status=None, official_amount=None, official_discount_amount=None, erase_amount=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, bonus_amount=None, debt_amount=None, writeoff_amount=None, region_name=None):
         """MonthlyBillRecord - a model defined in huaweicloud sdk"""
         
         
@@ -111,6 +113,7 @@ class MonthlyBillRecord:
         self._bonus_amount = None
         self._debt_amount = None
         self._writeoff_amount = None
+        self._region_name = None
         self.discriminator = None
 
         if bill_cycle is not None:
@@ -165,6 +168,8 @@ class MonthlyBillRecord:
             self.debt_amount = debt_amount
         if writeoff_amount is not None:
             self.writeoff_amount = writeoff_amount
+        if region_name is not None:
+            self.region_name = region_name
 
     @property
     def bill_cycle(self):
@@ -737,6 +742,28 @@ class MonthlyBillRecord:
         :type: float
         """
         self._writeoff_amount = writeoff_amount
+
+    @property
+    def region_name(self):
+        """Gets the region_name of this MonthlyBillRecord.
+
+        |参数名称：云服务区名称| |参数的约束及描述：云服务区名称|
+
+        :return: The region_name of this MonthlyBillRecord.
+        :rtype: str
+        """
+        return self._region_name
+
+    @region_name.setter
+    def region_name(self, region_name):
+        """Sets the region_name of this MonthlyBillRecord.
+
+        |参数名称：云服务区名称| |参数的约束及描述：云服务区名称|
+
+        :param region_name: The region_name of this MonthlyBillRecord.
+        :type: str
+        """
+        self._region_name = region_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

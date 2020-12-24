@@ -1,0 +1,233 @@
+# coding: utf-8
+
+import pprint
+import re
+
+import six
+
+
+
+
+
+class QualityEnhanceVideo:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'video_denoise': 'VideoDenoise',
+        'video_sharp': 'VideoSharp',
+        'video_contrast': 'VideoContrast',
+        'video_superresolution': 'VideoSuperresolution',
+        'video_deblock': 'VideoDeblock',
+        'video_saturation': 'VideoSaturation'
+    }
+
+    attribute_map = {
+        'video_denoise': 'video_denoise',
+        'video_sharp': 'video_sharp',
+        'video_contrast': 'video_contrast',
+        'video_superresolution': 'video_superresolution',
+        'video_deblock': 'video_deblock',
+        'video_saturation': 'video_saturation'
+    }
+
+    def __init__(self, video_denoise=None, video_sharp=None, video_contrast=None, video_superresolution=None, video_deblock=None, video_saturation=None):
+        """QualityEnhanceVideo - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._video_denoise = None
+        self._video_sharp = None
+        self._video_contrast = None
+        self._video_superresolution = None
+        self._video_deblock = None
+        self._video_saturation = None
+        self.discriminator = None
+
+        if video_denoise is not None:
+            self.video_denoise = video_denoise
+        if video_sharp is not None:
+            self.video_sharp = video_sharp
+        if video_contrast is not None:
+            self.video_contrast = video_contrast
+        if video_superresolution is not None:
+            self.video_superresolution = video_superresolution
+        if video_deblock is not None:
+            self.video_deblock = video_deblock
+        if video_saturation is not None:
+            self.video_saturation = video_saturation
+
+    @property
+    def video_denoise(self):
+        """Gets the video_denoise of this QualityEnhanceVideo.
+
+
+        :return: The video_denoise of this QualityEnhanceVideo.
+        :rtype: VideoDenoise
+        """
+        return self._video_denoise
+
+    @video_denoise.setter
+    def video_denoise(self, video_denoise):
+        """Sets the video_denoise of this QualityEnhanceVideo.
+
+
+        :param video_denoise: The video_denoise of this QualityEnhanceVideo.
+        :type: VideoDenoise
+        """
+        self._video_denoise = video_denoise
+
+    @property
+    def video_sharp(self):
+        """Gets the video_sharp of this QualityEnhanceVideo.
+
+
+        :return: The video_sharp of this QualityEnhanceVideo.
+        :rtype: VideoSharp
+        """
+        return self._video_sharp
+
+    @video_sharp.setter
+    def video_sharp(self, video_sharp):
+        """Sets the video_sharp of this QualityEnhanceVideo.
+
+
+        :param video_sharp: The video_sharp of this QualityEnhanceVideo.
+        :type: VideoSharp
+        """
+        self._video_sharp = video_sharp
+
+    @property
+    def video_contrast(self):
+        """Gets the video_contrast of this QualityEnhanceVideo.
+
+
+        :return: The video_contrast of this QualityEnhanceVideo.
+        :rtype: VideoContrast
+        """
+        return self._video_contrast
+
+    @video_contrast.setter
+    def video_contrast(self, video_contrast):
+        """Sets the video_contrast of this QualityEnhanceVideo.
+
+
+        :param video_contrast: The video_contrast of this QualityEnhanceVideo.
+        :type: VideoContrast
+        """
+        self._video_contrast = video_contrast
+
+    @property
+    def video_superresolution(self):
+        """Gets the video_superresolution of this QualityEnhanceVideo.
+
+
+        :return: The video_superresolution of this QualityEnhanceVideo.
+        :rtype: VideoSuperresolution
+        """
+        return self._video_superresolution
+
+    @video_superresolution.setter
+    def video_superresolution(self, video_superresolution):
+        """Sets the video_superresolution of this QualityEnhanceVideo.
+
+
+        :param video_superresolution: The video_superresolution of this QualityEnhanceVideo.
+        :type: VideoSuperresolution
+        """
+        self._video_superresolution = video_superresolution
+
+    @property
+    def video_deblock(self):
+        """Gets the video_deblock of this QualityEnhanceVideo.
+
+
+        :return: The video_deblock of this QualityEnhanceVideo.
+        :rtype: VideoDeblock
+        """
+        return self._video_deblock
+
+    @video_deblock.setter
+    def video_deblock(self, video_deblock):
+        """Sets the video_deblock of this QualityEnhanceVideo.
+
+
+        :param video_deblock: The video_deblock of this QualityEnhanceVideo.
+        :type: VideoDeblock
+        """
+        self._video_deblock = video_deblock
+
+    @property
+    def video_saturation(self):
+        """Gets the video_saturation of this QualityEnhanceVideo.
+
+
+        :return: The video_saturation of this QualityEnhanceVideo.
+        :rtype: VideoSaturation
+        """
+        return self._video_saturation
+
+    @video_saturation.setter
+    def video_saturation(self, video_saturation):
+        """Sets the video_saturation of this QualityEnhanceVideo.
+
+
+        :param video_saturation: The video_saturation of this QualityEnhanceVideo.
+        :type: VideoSaturation
+        """
+        self._video_saturation = video_saturation
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        return pprint.pformat(self.to_dict())
+
+    def __repr__(self):
+        """For `print` and `pprint`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, QualityEnhanceVideo):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

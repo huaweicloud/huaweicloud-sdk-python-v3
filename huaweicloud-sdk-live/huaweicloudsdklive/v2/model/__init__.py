@@ -34,10 +34,13 @@ from huaweicloudsdklive.v2.model.peak_bandwidth_data import PeakBandwidthData
 from huaweicloudsdklive.v2.model.record_data import RecordData
 from huaweicloudsdklive.v2.model.show_stream_count_request import ShowStreamCountRequest
 from huaweicloudsdklive.v2.model.show_stream_count_response import ShowStreamCountResponse
+from huaweicloudsdklive.v2.model.show_stream_portrait_request import ShowStreamPortraitRequest
+from huaweicloudsdklive.v2.model.show_stream_portrait_response import ShowStreamPortraitResponse
 from huaweicloudsdklive.v2.model.show_up_bandwidth_request import ShowUpBandwidthRequest
 from huaweicloudsdklive.v2.model.show_up_bandwidth_response import ShowUpBandwidthResponse
 from huaweicloudsdklive.v2.model.snapshot_data import SnapshotData
 from huaweicloudsdklive.v2.model.stream_count_data import StreamCountData
+from huaweicloudsdklive.v2.model.stream_portrait import StreamPortrait
 from huaweicloudsdklive.v2.model.traffic_data import TrafficData
 from huaweicloudsdklive.v2.model.traffic_summary_data import TrafficSummaryData
 from huaweicloudsdklive.v2.model.transcode_data import TranscodeData

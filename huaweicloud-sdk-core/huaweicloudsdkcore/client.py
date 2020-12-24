@@ -37,6 +37,7 @@ from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.http.http_handler import HttpHandler
 from huaweicloudsdkcore.http.primitive_types import native_types_mapping
 from huaweicloudsdkcore.http.primitive_types import primitive_types
+from huaweicloudsdkcore.region.region import Region
 from huaweicloudsdkcore.sdk_request import SdkRequest
 from huaweicloudsdkcore.sdk_response import FutureSdkResponse
 from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
@@ -49,6 +50,7 @@ class ClientBuilder:
         self._credential_type = credential_type.split(',')
         self._config = None
         self._credentials = None
+        self._region = None
         self._endpoint = None
 
         self._http_handler = None
@@ -61,6 +63,10 @@ class ClientBuilder:
 
     def with_credentials(self, credentials):
         self._credentials = credentials
+        return self
+
+    def with_region(self, region: Region):
+        self._region = region
         return self
 
     def with_endpoint(self, endpoint):
@@ -96,10 +102,14 @@ class ClientBuilder:
             raise TypeError("credential type error, support credential type is %s" % ",".join(self._credential_type))
 
         client = self._client_type() \
-            .with_endpoint(self._endpoint) \
             .with_credentials(self._credentials) \
             .with_config(self._config) \
             .with_http_handler(self._http_handler)
+        if self._region is not None:
+            client.with_region(self._region)
+        else:
+            client.with_endpoint(self._endpoint)
+
         if self._file_logger_handler is not None:
             client.add_file_logger(**self._file_logger_handler)
         if self._stream_logger_handler is not None:
@@ -118,6 +128,7 @@ class Client:
 
         self._credentials = None
         self._config = None
+        self._region = None
         self._endpoint = None
 
         self._http_client = None
@@ -143,6 +154,10 @@ class Client:
 
     def with_credentials(self, credentials):
         self._credentials = credentials
+        return self
+
+    def with_region(self, region: Region):
+        self._region = region
         return self
 
     def with_endpoint(self, endpoint):
@@ -258,7 +273,11 @@ class Client:
     def do_http_request(self, method, resource_path, path_params=None, query_params=None, header_params=None, body=None,
                         post_params=None, response_type=None, response_headers=None, collection_formats=None, request_type=None,
                         async_request=False):
-        url_parse_result = urlparse(self._endpoint)
+        if self._region is not None:
+            url_parse_result = urlparse(self._region.endpoint)
+            self._credentials = self._credentials.process_auth_params(self._http_client, self._region.id)
+        else:
+            url_parse_result = urlparse(self._endpoint)
         schema = url_parse_result.scheme
         host = url_parse_result.netloc
 
