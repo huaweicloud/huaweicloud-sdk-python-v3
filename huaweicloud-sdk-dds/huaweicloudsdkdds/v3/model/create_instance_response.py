@@ -24,7 +24,7 @@ class CreateInstanceResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
-        'datastore': 'CreateInstanceDatastoreResult',
+        'datastore': 'Datastore',
         'name': 'str',
         'created': 'str',
         'status': 'str',
@@ -35,11 +35,11 @@ class CreateInstanceResponse(SdkResponse):
         'security_group_id': 'str',
         'disk_encryption_id': 'str',
         'mode': 'str',
-        'flavor': 'list[CreateInstanceFlavorResult]',
-        'storage': 'CreateInstanceStorageResult',
-        'backup_strategy': 'CreateInstanceBackupStrategyResult',
+        'flavor': 'list[CreateInstanceFlavorOption]',
+        'backup_strategy': 'BackupStrategy',
         'enterprise_project_id': 'str',
         'ssl_option': 'str',
+        'dss_pool_id': 'str',
         'job_id': 'str'
     }
 
@@ -57,14 +57,14 @@ class CreateInstanceResponse(SdkResponse):
         'disk_encryption_id': 'disk_encryption_id',
         'mode': 'mode',
         'flavor': 'flavor',
-        'storage': 'storage',
         'backup_strategy': 'backup_strategy',
         'enterprise_project_id': 'enterprise_project_id',
         'ssl_option': 'ssl_option',
+        'dss_pool_id': 'dss_pool_id',
         'job_id': 'job_id'
     }
 
-    def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, disk_encryption_id=None, mode=None, flavor=None, storage=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, job_id=None):
+    def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, job_id=None):
         """CreateInstanceResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
@@ -82,10 +82,10 @@ class CreateInstanceResponse(SdkResponse):
         self._disk_encryption_id = None
         self._mode = None
         self._flavor = None
-        self._storage = None
         self._backup_strategy = None
         self._enterprise_project_id = None
         self._ssl_option = None
+        self._dss_pool_id = None
         self._job_id = None
         self.discriminator = None
 
@@ -115,14 +115,14 @@ class CreateInstanceResponse(SdkResponse):
             self.mode = mode
         if flavor is not None:
             self.flavor = flavor
-        if storage is not None:
-            self.storage = storage
         if backup_strategy is not None:
             self.backup_strategy = backup_strategy
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if ssl_option is not None:
             self.ssl_option = ssl_option
+        if dss_pool_id is not None:
+            self.dss_pool_id = dss_pool_id
         if job_id is not None:
             self.job_id = job_id
 
@@ -154,7 +154,7 @@ class CreateInstanceResponse(SdkResponse):
 
 
         :return: The datastore of this CreateInstanceResponse.
-        :rtype: CreateInstanceDatastoreResult
+        :rtype: Datastore
         """
         return self._datastore
 
@@ -164,7 +164,7 @@ class CreateInstanceResponse(SdkResponse):
 
 
         :param datastore: The datastore of this CreateInstanceResponse.
-        :type: CreateInstanceDatastoreResult
+        :type: Datastore
         """
         self._datastore = datastore
 
@@ -395,7 +395,7 @@ class CreateInstanceResponse(SdkResponse):
         实例规格详情，与请求参数相同。
 
         :return: The flavor of this CreateInstanceResponse.
-        :rtype: list[CreateInstanceFlavorResult]
+        :rtype: list[CreateInstanceFlavorOption]
         """
         return self._flavor
 
@@ -406,29 +406,9 @@ class CreateInstanceResponse(SdkResponse):
         实例规格详情，与请求参数相同。
 
         :param flavor: The flavor of this CreateInstanceResponse.
-        :type: list[CreateInstanceFlavorResult]
+        :type: list[CreateInstanceFlavorOption]
         """
         self._flavor = flavor
-
-    @property
-    def storage(self):
-        """Gets the storage of this CreateInstanceResponse.
-
-
-        :return: The storage of this CreateInstanceResponse.
-        :rtype: CreateInstanceStorageResult
-        """
-        return self._storage
-
-    @storage.setter
-    def storage(self, storage):
-        """Sets the storage of this CreateInstanceResponse.
-
-
-        :param storage: The storage of this CreateInstanceResponse.
-        :type: CreateInstanceStorageResult
-        """
-        self._storage = storage
 
     @property
     def backup_strategy(self):
@@ -436,7 +416,7 @@ class CreateInstanceResponse(SdkResponse):
 
 
         :return: The backup_strategy of this CreateInstanceResponse.
-        :rtype: CreateInstanceBackupStrategyResult
+        :rtype: BackupStrategy
         """
         return self._backup_strategy
 
@@ -446,7 +426,7 @@ class CreateInstanceResponse(SdkResponse):
 
 
         :param backup_strategy: The backup_strategy of this CreateInstanceResponse.
-        :type: CreateInstanceBackupStrategyResult
+        :type: BackupStrategy
         """
         self._backup_strategy = backup_strategy
 
@@ -493,6 +473,28 @@ class CreateInstanceResponse(SdkResponse):
         :type: str
         """
         self._ssl_option = ssl_option
+
+    @property
+    def dss_pool_id(self):
+        """Gets the dss_pool_id of this CreateInstanceResponse.
+
+        专属存储池ID。
+
+        :return: The dss_pool_id of this CreateInstanceResponse.
+        :rtype: str
+        """
+        return self._dss_pool_id
+
+    @dss_pool_id.setter
+    def dss_pool_id(self, dss_pool_id):
+        """Sets the dss_pool_id of this CreateInstanceResponse.
+
+        专属存储池ID。
+
+        :param dss_pool_id: The dss_pool_id of this CreateInstanceResponse.
+        :type: str
+        """
+        self._dss_pool_id = dss_pool_id
 
     @property
     def job_id(self):

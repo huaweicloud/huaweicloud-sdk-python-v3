@@ -24,7 +24,7 @@ class CreateInstanceRequestBody:
 
     openapi_types = {
         'name': 'str',
-        'datastore': 'CreateInstanceDatastoreOption',
+        'datastore': 'Datastore',
         'region': 'str',
         'availability_zone': 'str',
         'vpc_id': 'str',
@@ -34,10 +34,12 @@ class CreateInstanceRequestBody:
         'disk_encryption_id': 'str',
         'mode': 'str',
         'flavor': 'list[CreateInstanceFlavorOption]',
-        'storage': 'CreateInstanceStorageOption',
-        'backup_strategy': 'CreateInstanceBackupStrategyOption',
+        'backup_strategy': 'BackupStrategy',
         'enterprise_project_id': 'str',
-        'ssl_option': 'str'
+        'ssl_option': 'str',
+        'dss_pool_id': 'str',
+        'server_group_policies': 'list[str]',
+        'restore_point': 'RestorePoint'
     }
 
     attribute_map = {
@@ -52,13 +54,15 @@ class CreateInstanceRequestBody:
         'disk_encryption_id': 'disk_encryption_id',
         'mode': 'mode',
         'flavor': 'flavor',
-        'storage': 'storage',
         'backup_strategy': 'backup_strategy',
         'enterprise_project_id': 'enterprise_project_id',
-        'ssl_option': 'ssl_option'
+        'ssl_option': 'ssl_option',
+        'dss_pool_id': 'dss_pool_id',
+        'server_group_policies': 'server_group_policies',
+        'restore_point': 'restore_point'
     }
 
-    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, disk_encryption_id=None, mode=None, flavor=None, storage=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None):
+    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, server_group_policies=None, restore_point=None):
         """CreateInstanceRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -74,10 +78,12 @@ class CreateInstanceRequestBody:
         self._disk_encryption_id = None
         self._mode = None
         self._flavor = None
-        self._storage = None
         self._backup_strategy = None
         self._enterprise_project_id = None
         self._ssl_option = None
+        self._dss_pool_id = None
+        self._server_group_policies = None
+        self._restore_point = None
         self.discriminator = None
 
         self.name = name
@@ -87,19 +93,24 @@ class CreateInstanceRequestBody:
         self.vpc_id = vpc_id
         self.subnet_id = subnet_id
         self.security_group_id = security_group_id
-        self.password = password
+        if password is not None:
+            self.password = password
         if disk_encryption_id is not None:
             self.disk_encryption_id = disk_encryption_id
         self.mode = mode
         self.flavor = flavor
-        if storage is not None:
-            self.storage = storage
         if backup_strategy is not None:
             self.backup_strategy = backup_strategy
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if ssl_option is not None:
             self.ssl_option = ssl_option
+        if dss_pool_id is not None:
+            self.dss_pool_id = dss_pool_id
+        if server_group_policies is not None:
+            self.server_group_policies = server_group_policies
+        if restore_point is not None:
+            self.restore_point = restore_point
 
     @property
     def name(self):
@@ -129,7 +140,7 @@ class CreateInstanceRequestBody:
 
 
         :return: The datastore of this CreateInstanceRequestBody.
-        :rtype: CreateInstanceDatastoreOption
+        :rtype: Datastore
         """
         return self._datastore
 
@@ -139,7 +150,7 @@ class CreateInstanceRequestBody:
 
 
         :param datastore: The datastore of this CreateInstanceRequestBody.
-        :type: CreateInstanceDatastoreOption
+        :type: Datastore
         """
         self._datastore = datastore
 
@@ -147,7 +158,7 @@ class CreateInstanceRequestBody:
     def region(self):
         """Gets the region of this CreateInstanceRequestBody.
 
-        区域ID。
+        区域ID，恢复到新实例时不可选。
 
         :return: The region of this CreateInstanceRequestBody.
         :rtype: str
@@ -158,7 +169,7 @@ class CreateInstanceRequestBody:
     def region(self, region):
         """Sets the region of this CreateInstanceRequestBody.
 
-        区域ID。
+        区域ID，恢复到新实例时不可选。
 
         :param region: The region of this CreateInstanceRequestBody.
         :type: str
@@ -279,7 +290,7 @@ class CreateInstanceRequestBody:
     def disk_encryption_id(self):
         """Gets the disk_encryption_id of this CreateInstanceRequestBody.
 
-        磁盘加密时的密钥ID，严格UUID正则校验。仅支持社区版引擎。 不传该参数时，表示不进行磁盘加密。
+        磁盘加密时的密钥ID，严格UUID正则校验。 不传该参数时，表示不进行磁盘加密。
 
         :return: The disk_encryption_id of this CreateInstanceRequestBody.
         :rtype: str
@@ -290,7 +301,7 @@ class CreateInstanceRequestBody:
     def disk_encryption_id(self, disk_encryption_id):
         """Sets the disk_encryption_id of this CreateInstanceRequestBody.
 
-        磁盘加密时的密钥ID，严格UUID正则校验。仅支持社区版引擎。 不传该参数时，表示不进行磁盘加密。
+        磁盘加密时的密钥ID，严格UUID正则校验。 不传该参数时，表示不进行磁盘加密。
 
         :param disk_encryption_id: The disk_encryption_id of this CreateInstanceRequestBody.
         :type: str
@@ -342,32 +353,12 @@ class CreateInstanceRequestBody:
         self._flavor = flavor
 
     @property
-    def storage(self):
-        """Gets the storage of this CreateInstanceRequestBody.
-
-
-        :return: The storage of this CreateInstanceRequestBody.
-        :rtype: CreateInstanceStorageOption
-        """
-        return self._storage
-
-    @storage.setter
-    def storage(self, storage):
-        """Sets the storage of this CreateInstanceRequestBody.
-
-
-        :param storage: The storage of this CreateInstanceRequestBody.
-        :type: CreateInstanceStorageOption
-        """
-        self._storage = storage
-
-    @property
     def backup_strategy(self):
         """Gets the backup_strategy of this CreateInstanceRequestBody.
 
 
         :return: The backup_strategy of this CreateInstanceRequestBody.
-        :rtype: CreateInstanceBackupStrategyOption
+        :rtype: BackupStrategy
         """
         return self._backup_strategy
 
@@ -377,7 +368,7 @@ class CreateInstanceRequestBody:
 
 
         :param backup_strategy: The backup_strategy of this CreateInstanceRequestBody.
-        :type: CreateInstanceBackupStrategyOption
+        :type: BackupStrategy
         """
         self._backup_strategy = backup_strategy
 
@@ -424,6 +415,70 @@ class CreateInstanceRequestBody:
         :type: str
         """
         self._ssl_option = ssl_option
+
+    @property
+    def dss_pool_id(self):
+        """Gets the dss_pool_id of this CreateInstanceRequestBody.
+
+        创建新实例所在专属存储池ID，仅专属云创建实例时有效。
+
+        :return: The dss_pool_id of this CreateInstanceRequestBody.
+        :rtype: str
+        """
+        return self._dss_pool_id
+
+    @dss_pool_id.setter
+    def dss_pool_id(self, dss_pool_id):
+        """Sets the dss_pool_id of this CreateInstanceRequestBody.
+
+        创建新实例所在专属存储池ID，仅专属云创建实例时有效。
+
+        :param dss_pool_id: The dss_pool_id of this CreateInstanceRequestBody.
+        :type: str
+        """
+        self._dss_pool_id = dss_pool_id
+
+    @property
+    def server_group_policies(self):
+        """Gets the server_group_policies of this CreateInstanceRequestBody.
+
+        创建新实例设置云服务器组关联的策略名称列表，仅专属云创建实例时有效。 取值    - 取“anti-affinity”，表示DDS实例开启反亲和部署，反亲和部署是出于高可用性考虑，将您的Primary、Secondary和Hidden节点分别创建在不同的物理机上。当前仅支持该值，不传该值默认不开启反亲和部署。
+
+        :return: The server_group_policies of this CreateInstanceRequestBody.
+        :rtype: list[str]
+        """
+        return self._server_group_policies
+
+    @server_group_policies.setter
+    def server_group_policies(self, server_group_policies):
+        """Sets the server_group_policies of this CreateInstanceRequestBody.
+
+        创建新实例设置云服务器组关联的策略名称列表，仅专属云创建实例时有效。 取值    - 取“anti-affinity”，表示DDS实例开启反亲和部署，反亲和部署是出于高可用性考虑，将您的Primary、Secondary和Hidden节点分别创建在不同的物理机上。当前仅支持该值，不传该值默认不开启反亲和部署。
+
+        :param server_group_policies: The server_group_policies of this CreateInstanceRequestBody.
+        :type: list[str]
+        """
+        self._server_group_policies = server_group_policies
+
+    @property
+    def restore_point(self):
+        """Gets the restore_point of this CreateInstanceRequestBody.
+
+
+        :return: The restore_point of this CreateInstanceRequestBody.
+        :rtype: RestorePoint
+        """
+        return self._restore_point
+
+    @restore_point.setter
+    def restore_point(self, restore_point):
+        """Sets the restore_point of this CreateInstanceRequestBody.
+
+
+        :param restore_point: The restore_point of this CreateInstanceRequestBody.
+        :type: RestorePoint
+        """
+        self._restore_point = restore_point
 
     def to_dict(self):
         """Returns the model properties as a dict"""

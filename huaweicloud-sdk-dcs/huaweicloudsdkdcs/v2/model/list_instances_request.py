@@ -23,7 +23,7 @@ class ListInstancesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
+        'instance_id': 'str',
         'include_failure': 'str',
         'name': 'str',
         'offset': 'int',
@@ -35,7 +35,7 @@ class ListInstancesRequest:
     }
 
     attribute_map = {
-        'id': 'id',
+        'instance_id': 'instance_id',
         'include_failure': 'include_failure',
         'name': 'name',
         'offset': 'offset',
@@ -46,12 +46,12 @@ class ListInstancesRequest:
         'ip': 'ip'
     }
 
-    def __init__(self, id=None, include_failure=None, name=None, offset=None, limit=None, status=None, name_equal=None, tags=None, ip=None):
+    def __init__(self, instance_id=None, include_failure=None, name=None, offset=None, limit=None, status=None, name_equal=None, tags=None, ip=None):
         """ListInstancesRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._id = None
+        self._instance_id = None
         self._include_failure = None
         self._name = None
         self._offset = None
@@ -62,8 +62,8 @@ class ListInstancesRequest:
         self._ip = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
+        if instance_id is not None:
+            self.instance_id = instance_id
         if include_failure is not None:
             self.include_failure = include_failure
         if name is not None:
@@ -82,24 +82,24 @@ class ListInstancesRequest:
             self.ip = ip
 
     @property
-    def id(self):
-        """Gets the id of this ListInstancesRequest.
+    def instance_id(self):
+        """Gets the instance_id of this ListInstancesRequest.
 
 
-        :return: The id of this ListInstancesRequest.
+        :return: The instance_id of this ListInstancesRequest.
         :rtype: str
         """
-        return self._id
+        return self._instance_id
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ListInstancesRequest.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ListInstancesRequest.
 
 
-        :param id: The id of this ListInstancesRequest.
+        :param instance_id: The instance_id of this ListInstancesRequest.
         :type: str
         """
-        self._id = id
+        self._instance_id = instance_id
 
     @property
     def include_failure(self):

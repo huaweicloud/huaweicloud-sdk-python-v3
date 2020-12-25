@@ -23,7 +23,7 @@ class ListMaintenanceWindowsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'maintain_windows': 'list[MaintainWindows]'
+        'maintain_windows': 'list[MaintainWindowsEntity]'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class ListMaintenanceWindowsResponse(SdkResponse):
         支持的维护时间窗列表。
 
         :return: The maintain_windows of this ListMaintenanceWindowsResponse.
-        :rtype: list[MaintainWindows]
+        :rtype: list[MaintainWindowsEntity]
         """
         return self._maintain_windows
 
@@ -59,7 +59,7 @@ class ListMaintenanceWindowsResponse(SdkResponse):
         支持的维护时间窗列表。
 
         :param maintain_windows: The maintain_windows of this ListMaintenanceWindowsResponse.
-        :type: list[MaintainWindows]
+        :type: list[MaintainWindowsEntity]
         """
         self._maintain_windows = maintain_windows
 

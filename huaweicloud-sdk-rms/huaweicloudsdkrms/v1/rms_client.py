@@ -1023,6 +1023,69 @@ class RmsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_regions(self, request):
+        """查询租户可见的区域
+
+        Returns a list of domain-visible regions
+
+        :param ListRegionsRequest request
+        :return: ListRegionsResponse
+        """
+        return self.list_regions_with_http_info(request)
+
+    def list_regions_with_http_info(self, request):
+        """查询租户可见的区域
+
+        Returns a list of domain-visible regions
+
+        :param ListRegionsRequest request
+        :return: ListRegionsResponse
+        """
+
+        all_params = ['x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/regions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListRegionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_resource_relations(self, request):
         """列举资源关系
 
@@ -1086,6 +1149,77 @@ class RmsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowResourceRelationsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_all_resources(self, request):
+        """列举所有资源
+
+        返回当前租户下所有资源，需要当前用户有rms:resources:list权限。
+
+        :param ListAllResourcesRequest request
+        :return: ListAllResourcesResponse
+        """
+        return self.list_all_resources_with_http_info(request)
+
+    def list_all_resources_with_http_info(self, request):
+        """列举所有资源
+
+        返回当前租户下所有资源，需要当前用户有rms:resources:list权限。
+
+        :param ListAllResourcesRequest request
+        :return: ListAllResourcesResponse
+        """
+
+        all_params = ['region_id', 'ep_id', 'type', 'limit', 'marker']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'ep_id' in local_var_params:
+            query_params.append(('ep_id', local_var_params['ep_id']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/all-resources',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAllResourcesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -23,7 +23,7 @@ class ShowBackupPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'backup_policy': 'ShowBackupPolicyResult'
+        'backup_policy': 'BackupPolicyItem'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ShowBackupPolicyResponse(SdkResponse):
 
 
         :return: The backup_policy of this ShowBackupPolicyResponse.
-        :rtype: ShowBackupPolicyResult
+        :rtype: BackupPolicyItem
         """
         return self._backup_policy
 
@@ -57,7 +57,7 @@ class ShowBackupPolicyResponse(SdkResponse):
 
 
         :param backup_policy: The backup_policy of this ShowBackupPolicyResponse.
-        :type: ShowBackupPolicyResult
+        :type: BackupPolicyItem
         """
         self._backup_policy = backup_policy
 

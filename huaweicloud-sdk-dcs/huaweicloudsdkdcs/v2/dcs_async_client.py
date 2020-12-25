@@ -1765,7 +1765,7 @@ class DcsAsyncClient(Client):
         :return: ListInstancesResponse
         """
 
-        all_params = ['id', 'include_failure', 'name', 'offset', 'limit', 'status', 'name_equal', 'tags', 'ip']
+        all_params = ['instance_id', 'include_failure', 'name', 'offset', 'limit', 'status', 'name_equal', 'tags', 'ip']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1776,8 +1776,8 @@ class DcsAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
         if 'include_failure' in local_var_params:
             query_params.append(('include_failure', local_var_params['include_failure']))
         if 'name' in local_var_params:

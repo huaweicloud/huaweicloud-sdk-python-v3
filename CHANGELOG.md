@@ -1,3 +1,21 @@
+## 3.0.27-beta 2020-12-25
+## HuaweiCloud SDK DCS
+ - ### Features
+    - None
+ - ### Bug Fix
+    - None
+ - ### Change
+    - Query parameter in interface `ListInstances` modification: id → instance_id.
+
+## HuaweiCloud SDK RMS
+ - ### Features
+    - Support more interfaces: `Resources` related interfaces and `Region` related interfaces. 
+ - ### Bug Fix
+    - None
+ - ### Change
+    - None
+
+
 ## 3.0.26-beta 2020-12-23
 ## HuaweiCloud SDK Core
  - ### Features

@@ -23,7 +23,7 @@ class SetBackupPolicyRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'backup_policy': 'SetBackupPolicyOption'
+        'backup_policy': 'BackupPolicy'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class SetBackupPolicyRequestBody:
 
 
         :return: The backup_policy of this SetBackupPolicyRequestBody.
-        :rtype: SetBackupPolicyOption
+        :rtype: BackupPolicy
         """
         return self._backup_policy
 
@@ -56,7 +56,7 @@ class SetBackupPolicyRequestBody:
 
 
         :param backup_policy: The backup_policy of this SetBackupPolicyRequestBody.
-        :type: SetBackupPolicyOption
+        :type: BackupPolicy
         """
         self._backup_policy = backup_policy
 

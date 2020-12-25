@@ -24,7 +24,7 @@ class AddShardingNodeRequest:
 
     openapi_types = {
         'instance_id': 'str',
-        'body': 'AddShardingNodeRequestBody'
+        'body': 'EnlargeInstanceRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class AddShardingNodeRequest:
 
 
         :return: The body of this AddShardingNodeRequest.
-        :rtype: AddShardingNodeRequestBody
+        :rtype: EnlargeInstanceRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class AddShardingNodeRequest:
 
 
         :param body: The body of this AddShardingNodeRequest.
-        :type: AddShardingNodeRequestBody
+        :type: EnlargeInstanceRequestBody
         """
         self._body = body
 

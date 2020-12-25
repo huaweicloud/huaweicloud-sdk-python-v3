@@ -23,7 +23,7 @@ class ListInstanceTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[ListInstanceTagsResult]'
+        'tags': 'list[QueryResourceTagItem]'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class ListInstanceTagsResponse(SdkResponse):
         标签列表。
 
         :return: The tags of this ListInstanceTagsResponse.
-        :rtype: list[ListInstanceTagsResult]
+        :rtype: list[QueryResourceTagItem]
         """
         return self._tags
 
@@ -59,7 +59,7 @@ class ListInstanceTagsResponse(SdkResponse):
         标签列表。
 
         :param tags: The tags of this ListInstanceTagsResponse.
-        :type: list[ListInstanceTagsResult]
+        :type: list[QueryResourceTagItem]
         """
         self._tags = tags
 

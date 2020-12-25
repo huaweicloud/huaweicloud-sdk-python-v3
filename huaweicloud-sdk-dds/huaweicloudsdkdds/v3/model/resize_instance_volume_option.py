@@ -49,7 +49,7 @@ class ResizeInstanceVolumeOption:
     def group_id(self):
         """Gets the group_id of this ResizeInstanceVolumeOption.
 
-        角色组ID。 - 对于集群实例，该参数为shard组ID。 - 对于副本集实例，不传该参数。 - 对于副本集和单节点实例，不传该参数。
+        角色组ID。 - 对于集群实例，该参数为shard组ID。 - 对于副本集和单节点实例，不传该参数。
 
         :return: The group_id of this ResizeInstanceVolumeOption.
         :rtype: str
@@ -60,7 +60,7 @@ class ResizeInstanceVolumeOption:
     def group_id(self, group_id):
         """Sets the group_id of this ResizeInstanceVolumeOption.
 
-        角色组ID。 - 对于集群实例，该参数为shard组ID。 - 对于副本集实例，不传该参数。 - 对于副本集和单节点实例，不传该参数。
+        角色组ID。 - 对于集群实例，该参数为shard组ID。 - 对于副本集和单节点实例，不传该参数。
 
         :param group_id: The group_id of this ResizeInstanceVolumeOption.
         :type: str

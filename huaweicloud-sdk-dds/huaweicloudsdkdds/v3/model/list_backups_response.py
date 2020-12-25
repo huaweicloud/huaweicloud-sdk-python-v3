@@ -23,7 +23,7 @@ class ListBackupsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'backups': 'list[ListBackupsResult]',
+        'backups': 'list[BackupForList]',
         'total_count': 'int'
     }
 
@@ -53,7 +53,7 @@ class ListBackupsResponse(SdkResponse):
         备份列表。
 
         :return: The backups of this ListBackupsResponse.
-        :rtype: list[ListBackupsResult]
+        :rtype: list[BackupForList]
         """
         return self._backups
 
@@ -64,7 +64,7 @@ class ListBackupsResponse(SdkResponse):
         备份列表。
 
         :param backups: The backups of this ListBackupsResponse.
-        :type: list[ListBackupsResult]
+        :type: list[BackupForList]
         """
         self._backups = backups
 

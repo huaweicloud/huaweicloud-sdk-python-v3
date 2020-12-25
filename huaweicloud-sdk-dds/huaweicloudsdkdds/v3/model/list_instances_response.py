@@ -23,7 +23,7 @@ class ListInstancesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'instances': 'list[ListInstancesResult]',
+        'instances': 'list[QueryInstanceResponse]',
         'total_count': 'int'
     }
 
@@ -53,7 +53,7 @@ class ListInstancesResponse(SdkResponse):
         实例信息。
 
         :return: The instances of this ListInstancesResponse.
-        :rtype: list[ListInstancesResult]
+        :rtype: list[QueryInstanceResponse]
         """
         return self._instances
 
@@ -64,7 +64,7 @@ class ListInstancesResponse(SdkResponse):
         实例信息。
 
         :param instances: The instances of this ListInstancesResponse.
-        :type: list[ListInstancesResult]
+        :type: list[QueryInstanceResponse]
         """
         self._instances = instances
 

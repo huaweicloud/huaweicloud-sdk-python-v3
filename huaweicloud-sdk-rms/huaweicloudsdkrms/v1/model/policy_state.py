@@ -24,46 +24,54 @@ class PolicyState:
 
     openapi_types = {
         'domain_id': 'str',
+        'region_id': 'str',
         'resource_id': 'str',
         'resource_name': 'str',
         'resource_provider': 'str',
         'resource_type': 'str',
         'compliance_state': 'str',
         'policy_assignment_id': 'str',
+        'policy_assignment_name': 'str',
         'policy_definition_id': 'str',
         'evaluation_time': 'str'
     }
 
     attribute_map = {
         'domain_id': 'domain_id',
+        'region_id': 'region_id',
         'resource_id': 'resource_id',
         'resource_name': 'resource_name',
         'resource_provider': 'resource_provider',
         'resource_type': 'resource_type',
         'compliance_state': 'compliance_state',
         'policy_assignment_id': 'policy_assignment_id',
+        'policy_assignment_name': 'policy_assignment_name',
         'policy_definition_id': 'policy_definition_id',
         'evaluation_time': 'evaluation_time'
     }
 
-    def __init__(self, domain_id=None, resource_id=None, resource_name=None, resource_provider=None, resource_type=None, compliance_state=None, policy_assignment_id=None, policy_definition_id=None, evaluation_time=None):
+    def __init__(self, domain_id=None, region_id=None, resource_id=None, resource_name=None, resource_provider=None, resource_type=None, compliance_state=None, policy_assignment_id=None, policy_assignment_name=None, policy_definition_id=None, evaluation_time=None):
         """PolicyState - a model defined in huaweicloud sdk"""
         
         
 
         self._domain_id = None
+        self._region_id = None
         self._resource_id = None
         self._resource_name = None
         self._resource_provider = None
         self._resource_type = None
         self._compliance_state = None
         self._policy_assignment_id = None
+        self._policy_assignment_name = None
         self._policy_definition_id = None
         self._evaluation_time = None
         self.discriminator = None
 
         if domain_id is not None:
             self.domain_id = domain_id
+        if region_id is not None:
+            self.region_id = region_id
         if resource_id is not None:
             self.resource_id = resource_id
         if resource_name is not None:
@@ -76,6 +84,8 @@ class PolicyState:
             self.compliance_state = compliance_state
         if policy_assignment_id is not None:
             self.policy_assignment_id = policy_assignment_id
+        if policy_assignment_name is not None:
+            self.policy_assignment_name = policy_assignment_name
         if policy_definition_id is not None:
             self.policy_definition_id = policy_definition_id
         if evaluation_time is not None:
@@ -102,6 +112,28 @@ class PolicyState:
         :type: str
         """
         self._domain_id = domain_id
+
+    @property
+    def region_id(self):
+        """Gets the region_id of this PolicyState.
+
+        合规状态所属资源区域ID
+
+        :return: The region_id of this PolicyState.
+        :rtype: str
+        """
+        return self._region_id
+
+    @region_id.setter
+    def region_id(self, region_id):
+        """Sets the region_id of this PolicyState.
+
+        合规状态所属资源区域ID
+
+        :param region_id: The region_id of this PolicyState.
+        :type: str
+        """
+        self._region_id = region_id
 
     @property
     def resource_id(self):
@@ -234,6 +266,28 @@ class PolicyState:
         :type: str
         """
         self._policy_assignment_id = policy_assignment_id
+
+    @property
+    def policy_assignment_name(self):
+        """Gets the policy_assignment_name of this PolicyState.
+
+        合规状态所属规则名字
+
+        :return: The policy_assignment_name of this PolicyState.
+        :rtype: str
+        """
+        return self._policy_assignment_name
+
+    @policy_assignment_name.setter
+    def policy_assignment_name(self, policy_assignment_name):
+        """Sets the policy_assignment_name of this PolicyState.
+
+        合规状态所属规则名字
+
+        :param policy_assignment_name: The policy_assignment_name of this PolicyState.
+        :type: str
+        """
+        self._policy_assignment_name = policy_assignment_name
 
     @property
     def policy_definition_id(self):

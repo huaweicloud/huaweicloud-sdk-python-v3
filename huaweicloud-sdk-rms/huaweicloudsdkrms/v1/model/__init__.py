@@ -17,6 +17,8 @@ from huaweicloudsdkrms.v1.model.disable_policy_assignment_response import Disabl
 from huaweicloudsdkrms.v1.model.enable_policy_assignment_request import EnablePolicyAssignmentRequest
 from huaweicloudsdkrms.v1.model.enable_policy_assignment_response import EnablePolicyAssignmentResponse
 from huaweicloudsdkrms.v1.model.history_item import HistoryItem
+from huaweicloudsdkrms.v1.model.list_all_resources_request import ListAllResourcesRequest
+from huaweicloudsdkrms.v1.model.list_all_resources_response import ListAllResourcesResponse
 from huaweicloudsdkrms.v1.model.list_built_in_policy_definitions_request import ListBuiltInPolicyDefinitionsRequest
 from huaweicloudsdkrms.v1.model.list_built_in_policy_definitions_response import ListBuiltInPolicyDefinitionsResponse
 from huaweicloudsdkrms.v1.model.list_policy_assignments_request import ListPolicyAssignmentsRequest
@@ -29,6 +31,8 @@ from huaweicloudsdkrms.v1.model.list_policy_states_by_resource_id_request import
 from huaweicloudsdkrms.v1.model.list_policy_states_by_resource_id_response import ListPolicyStatesByResourceIdResponse
 from huaweicloudsdkrms.v1.model.list_providers_request import ListProvidersRequest
 from huaweicloudsdkrms.v1.model.list_providers_response import ListProvidersResponse
+from huaweicloudsdkrms.v1.model.list_regions_request import ListRegionsRequest
+from huaweicloudsdkrms.v1.model.list_regions_response import ListRegionsResponse
 from huaweicloudsdkrms.v1.model.list_resources_request import ListResourcesRequest
 from huaweicloudsdkrms.v1.model.list_resources_response import ListResourcesResponse
 from huaweicloudsdkrms.v1.model.page_info import PageInfo
@@ -39,6 +43,7 @@ from huaweicloudsdkrms.v1.model.policy_filter_definition import PolicyFilterDefi
 from huaweicloudsdkrms.v1.model.policy_parameter_definition import PolicyParameterDefinition
 from huaweicloudsdkrms.v1.model.policy_parameter_value import PolicyParameterValue
 from huaweicloudsdkrms.v1.model.policy_state import PolicyState
+from huaweicloudsdkrms.v1.model.region import Region
 from huaweicloudsdkrms.v1.model.resource_entity import ResourceEntity
 from huaweicloudsdkrms.v1.model.resource_provider_response import ResourceProviderResponse
 from huaweicloudsdkrms.v1.model.resource_relation import ResourceRelation

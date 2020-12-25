@@ -26,8 +26,8 @@ class ListInstancesByTagsRequestBody:
         'offset': 'str',
         'limit': 'str',
         'action': 'str',
-        'matches': 'list[Match]',
-        'tags': 'list[ListInstancesTagOption]'
+        'matches': 'list[QueryMatchItem]',
+        'tags': 'list[QueryTagItem]'
     }
 
     attribute_map = {
@@ -133,7 +133,7 @@ class ListInstancesByTagsRequestBody:
         搜索字段。   - 该字段值为空，表示不按照实例名称或实例ID查询。   - 该字段值不为空
 
         :return: The matches of this ListInstancesByTagsRequestBody.
-        :rtype: list[Match]
+        :rtype: list[QueryMatchItem]
         """
         return self._matches
 
@@ -144,7 +144,7 @@ class ListInstancesByTagsRequestBody:
         搜索字段。   - 该字段值为空，表示不按照实例名称或实例ID查询。   - 该字段值不为空
 
         :param matches: The matches of this ListInstancesByTagsRequestBody.
-        :type: list[Match]
+        :type: list[QueryMatchItem]
         """
         self._matches = matches
 
@@ -155,7 +155,7 @@ class ListInstancesByTagsRequestBody:
         包含标签，最多包含10个key。
 
         :return: The tags of this ListInstancesByTagsRequestBody.
-        :rtype: list[ListInstancesTagOption]
+        :rtype: list[QueryTagItem]
         """
         return self._tags
 
@@ -166,7 +166,7 @@ class ListInstancesByTagsRequestBody:
         包含标签，最多包含10个key。
 
         :param tags: The tags of this ListInstancesByTagsRequestBody.
-        :type: list[ListInstancesTagOption]
+        :type: list[QueryTagItem]
         """
         self._tags = tags
 

@@ -23,7 +23,7 @@ class ListFlavorsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'flavors': 'list[ListFlavorsResult]'
+        'flavors': 'list[Flavor]'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class ListFlavorsResponse(SdkResponse):
         实例规格信息列表。
 
         :return: The flavors of this ListFlavorsResponse.
-        :rtype: list[ListFlavorsResult]
+        :rtype: list[Flavor]
         """
         return self._flavors
 
@@ -59,7 +59,7 @@ class ListFlavorsResponse(SdkResponse):
         实例规格信息列表。
 
         :param flavors: The flavors of this ListFlavorsResponse.
-        :type: list[ListFlavorsResult]
+        :type: list[Flavor]
         """
         self._flavors = flavors
 
