@@ -45,6 +45,7 @@ class InstanceRequest:
         'dsspool_id': 'str',
         'replica_of_id': 'str',
         'restore_point': 'RestorePoint',
+        'collation': 'str',
         'tags': 'list[InstanceRequestTags]'
     }
 
@@ -71,10 +72,11 @@ class InstanceRequest:
         'dsspool_id': 'dsspool_id',
         'replica_of_id': 'replica_of_id',
         'restore_point': 'restore_point',
+        'collation': 'collation',
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, replica_of_id=None, restore_point=None, tags=None):
+    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, replica_of_id=None, restore_point=None, collation=None, tags=None):
         """InstanceRequest - a model defined in huaweicloud sdk"""
         
         
@@ -101,6 +103,7 @@ class InstanceRequest:
         self._dsspool_id = None
         self._replica_of_id = None
         self._restore_point = None
+        self._collation = None
         self._tags = None
         self.discriminator = None
 
@@ -139,6 +142,8 @@ class InstanceRequest:
             self.replica_of_id = replica_of_id
         if restore_point is not None:
             self.restore_point = restore_point
+        if collation is not None:
+            self.collation = collation
         if tags is not None:
             self.tags = tags
 
@@ -613,6 +618,28 @@ class InstanceRequest:
         :type: RestorePoint
         """
         self._restore_point = restore_point
+
+    @property
+    def collation(self):
+        """Gets the collation of this InstanceRequest.
+
+        仅限Microsoft SQL Server实例使用。取值范围：根据查询SQL Server可用字符集的字符集查询列表查询可设置的字符集。
+
+        :return: The collation of this InstanceRequest.
+        :rtype: str
+        """
+        return self._collation
+
+    @collation.setter
+    def collation(self, collation):
+        """Sets the collation of this InstanceRequest.
+
+        仅限Microsoft SQL Server实例使用。取值范围：根据查询SQL Server可用字符集的字符集查询列表查询可设置的字符集。
+
+        :param collation: The collation of this InstanceRequest.
+        :type: str
+        """
+        self._collation = collation
 
     @property
     def tags(self):

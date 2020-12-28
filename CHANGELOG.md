@@ -1,3 +1,13 @@
+## 3.0.28-beta 2020-12-28
+## HuaweiCloud SDK DCS
+ - ### Features
+    - None
+ - ### Bug Fix
+    - Change property type of `port` from string to integer.
+ - ### Change
+    - None
+
+
 ## 3.0.27-beta 2020-12-25
 ## HuaweiCloud SDK DCS
  - ### Features

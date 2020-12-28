@@ -47,7 +47,7 @@ class InstanceListInfo:
         'access_user': 'str',
         'instance_id': 'str',
         'enable_publicip': 'bool',
-        'port': 'str',
+        'port': 'int',
         'user_id': 'str',
         'user_name': 'str',
         'domain_name': 'str',
@@ -736,7 +736,7 @@ class InstanceListInfo:
         缓存的端口。
 
         :return: The port of this InstanceListInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._port
 
@@ -747,7 +747,7 @@ class InstanceListInfo:
         缓存的端口。
 
         :param port: The port of this InstanceListInfo.
-        :type: str
+        :type: int
         """
         self._port = port
 

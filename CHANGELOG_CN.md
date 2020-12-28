@@ -1,3 +1,13 @@
+## 3.0.28-beta 2020-12-28
+## HuaweiCloud SDK DCS
+ - ### 新增特性
+    - 无
+ - ### 解决问题
+    - 修改缓存接口port类型为integer
+ - ### 特性变更
+    - 无
+
+
 ## 3.0.27-beta 2020-12-25
 ## HuaweiCloud SDK DCS
  - ### 新增特性
