@@ -38,8 +38,14 @@ class EcsAsyncClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkecs.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls)
+
+        if clazz.__name__ != "EcsClient":
+            raise TypeError("client type error, support client type is EcsClient")
+
         return ClientBuilder(clazz)
 
     def add_server_group_member_async(self, request):

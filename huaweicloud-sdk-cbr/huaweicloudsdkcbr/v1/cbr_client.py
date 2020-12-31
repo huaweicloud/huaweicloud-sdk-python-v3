@@ -38,8 +38,14 @@ class CbrClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkcbr.v1.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls)
+
+        if clazz.__name__ != "CbrClient":
+            raise TypeError("client type error, support client type is CbrClient")
+
         return ClientBuilder(clazz)
 
     def add_member(self, request):

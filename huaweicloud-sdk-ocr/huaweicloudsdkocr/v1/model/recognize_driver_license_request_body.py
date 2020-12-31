@@ -25,16 +25,18 @@ class RecognizeDriverLicenseRequestBody:
     openapi_types = {
         'url': 'str',
         'image': 'str',
-        'side': 'str'
+        'side': 'str',
+        'return_issuing_authority': 'bool'
     }
 
     attribute_map = {
         'url': 'url',
         'image': 'image',
-        'side': 'side'
+        'side': 'side',
+        'return_issuing_authority': 'return_issuing_authority'
     }
 
-    def __init__(self, url=None, image=None, side=None):
+    def __init__(self, url=None, image=None, side=None, return_issuing_authority=None):
         """RecognizeDriverLicenseRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -42,6 +44,7 @@ class RecognizeDriverLicenseRequestBody:
         self._url = None
         self._image = None
         self._side = None
+        self._return_issuing_authority = None
         self.discriminator = None
 
         if url is not None:
@@ -50,6 +53,8 @@ class RecognizeDriverLicenseRequestBody:
             self.image = image
         if side is not None:
             self.side = side
+        if return_issuing_authority is not None:
+            self.return_issuing_authority = return_issuing_authority
 
     @property
     def url(self):
@@ -77,7 +82,7 @@ class RecognizeDriverLicenseRequestBody:
     def image(self):
         """Gets the image of this RecognizeDriverLicenseRequestBody.
 
-        图片文件Base64编码字符串。要求base64编码后大小不超过10M。  图片最小边不小于100像素，最长边不超过8000像素。  支持JPEG/JPG/PNG/BMP/TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。 
+        图像数据, Base64编码字符串。要求base64编码后大小不超过10M。  图片最小边不小于100像素，最长边不超过8000像素。  支持JPEG/JPG/PNG/BMP/TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
 
         :return: The image of this RecognizeDriverLicenseRequestBody.
         :rtype: str
@@ -88,7 +93,7 @@ class RecognizeDriverLicenseRequestBody:
     def image(self, image):
         """Sets the image of this RecognizeDriverLicenseRequestBody.
 
-        图片文件Base64编码字符串。要求base64编码后大小不超过10M。  图片最小边不小于100像素，最长边不超过8000像素。  支持JPEG/JPG/PNG/BMP/TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。 
+        图像数据, Base64编码字符串。要求base64编码后大小不超过10M。  图片最小边不小于100像素，最长边不超过8000像素。  支持JPEG/JPG/PNG/BMP/TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
 
         :param image: The image of this RecognizeDriverLicenseRequestBody.
         :type: str
@@ -116,6 +121,28 @@ class RecognizeDriverLicenseRequestBody:
         :type: str
         """
         self._side = side
+
+    @property
+    def return_issuing_authority(self):
+        """Gets the return_issuing_authority of this RecognizeDriverLicenseRequestBody.
+
+        是否返回发证机关的开关，可选值包括：  true：返回发证机关  false：不返回发证机关  如果无该参数，系统默认不返回发证机关。如果输入参数不是Boolean类型，则会报非法参数错误。 
+
+        :return: The return_issuing_authority of this RecognizeDriverLicenseRequestBody.
+        :rtype: bool
+        """
+        return self._return_issuing_authority
+
+    @return_issuing_authority.setter
+    def return_issuing_authority(self, return_issuing_authority):
+        """Sets the return_issuing_authority of this RecognizeDriverLicenseRequestBody.
+
+        是否返回发证机关的开关，可选值包括：  true：返回发证机关  false：不返回发证机关  如果无该参数，系统默认不返回发证机关。如果输入参数不是Boolean类型，则会报非法参数错误。 
+
+        :param return_issuing_authority: The return_issuing_authority of this RecognizeDriverLicenseRequestBody.
+        :type: bool
+        """
+        self._return_issuing_authority = return_issuing_authority
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -38,8 +38,14 @@ class DmsAsyncClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkdms.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls)
+
+        if clazz.__name__ != "DmsClient":
+            raise TypeError("client type error, support client type is DmsClient")
+
         return ClientBuilder(clazz)
 
     def batch_create_or_delete_queue_tag_async(self, request):

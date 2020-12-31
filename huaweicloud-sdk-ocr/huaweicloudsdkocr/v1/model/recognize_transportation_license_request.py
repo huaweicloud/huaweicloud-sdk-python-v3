@@ -23,23 +23,47 @@ class RecognizeTransportationLicenseRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'RecognizeTransportationLicenseRequestBody'
+        'project_id': 'str',
+        'body': 'TransportationLicenseReq'
     }
 
     attribute_map = {
+        'project_id': 'project_id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, project_id=None, body=None):
         """RecognizeTransportationLicenseRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._project_id = None
         self._body = None
         self.discriminator = None
 
+        self.project_id = project_id
         if body is not None:
             self.body = body
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this RecognizeTransportationLicenseRequest.
+
+
+        :return: The project_id of this RecognizeTransportationLicenseRequest.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this RecognizeTransportationLicenseRequest.
+
+
+        :param project_id: The project_id of this RecognizeTransportationLicenseRequest.
+        :type: str
+        """
+        self._project_id = project_id
 
     @property
     def body(self):
@@ -47,7 +71,7 @@ class RecognizeTransportationLicenseRequest:
 
 
         :return: The body of this RecognizeTransportationLicenseRequest.
-        :rtype: RecognizeTransportationLicenseRequestBody
+        :rtype: TransportationLicenseReq
         """
         return self._body
 
@@ -57,7 +81,7 @@ class RecognizeTransportationLicenseRequest:
 
 
         :param body: The body of this RecognizeTransportationLicenseRequest.
-        :type: RecognizeTransportationLicenseRequestBody
+        :type: TransportationLicenseReq
         """
         self._body = body
 

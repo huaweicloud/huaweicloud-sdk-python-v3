@@ -23,23 +23,47 @@ class RecognizeWebImageRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'RecognizeWebImageRequestBody'
+        'project_id': 'str',
+        'body': 'WebImageReq'
     }
 
     attribute_map = {
+        'project_id': 'project_id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, project_id=None, body=None):
         """RecognizeWebImageRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._project_id = None
         self._body = None
         self.discriminator = None
 
+        self.project_id = project_id
         if body is not None:
             self.body = body
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this RecognizeWebImageRequest.
+
+
+        :return: The project_id of this RecognizeWebImageRequest.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this RecognizeWebImageRequest.
+
+
+        :param project_id: The project_id of this RecognizeWebImageRequest.
+        :type: str
+        """
+        self._project_id = project_id
 
     @property
     def body(self):
@@ -47,7 +71,7 @@ class RecognizeWebImageRequest:
 
 
         :return: The body of this RecognizeWebImageRequest.
-        :rtype: RecognizeWebImageRequestBody
+        :rtype: WebImageReq
         """
         return self._body
 
@@ -57,7 +81,7 @@ class RecognizeWebImageRequest:
 
 
         :param body: The body of this RecognizeWebImageRequest.
-        :type: RecognizeWebImageRequestBody
+        :type: WebImageReq
         """
         self._body = body
 

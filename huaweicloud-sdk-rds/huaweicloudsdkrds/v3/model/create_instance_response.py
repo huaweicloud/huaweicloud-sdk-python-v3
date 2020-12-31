@@ -23,7 +23,7 @@ class CreateInstanceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'instance': 'InstanceRequest',
+        'instance': 'CreateInstanceRespItem',
         'job_id': 'str',
         'order_id': 'str'
     }
@@ -57,7 +57,7 @@ class CreateInstanceResponse(SdkResponse):
 
 
         :return: The instance of this CreateInstanceResponse.
-        :rtype: InstanceRequest
+        :rtype: CreateInstanceRespItem
         """
         return self._instance
 
@@ -67,7 +67,7 @@ class CreateInstanceResponse(SdkResponse):
 
 
         :param instance: The instance of this CreateInstanceResponse.
-        :type: InstanceRequest
+        :type: CreateInstanceRespItem
         """
         self._instance = instance
 

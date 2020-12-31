@@ -122,7 +122,7 @@ class RecognizeGeneralTableItems2Response:
     def confidence(self):
         """Gets the confidence of this RecognizeGeneralTableItems2Response.
 
-        字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
+        字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。    
 
         :return: The confidence of this RecognizeGeneralTableItems2Response.
         :rtype: float
@@ -133,7 +133,7 @@ class RecognizeGeneralTableItems2Response:
     def confidence(self, confidence):
         """Sets the confidence of this RecognizeGeneralTableItems2Response.
 
-        字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
+        字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。    
 
         :param confidence: The confidence of this RecognizeGeneralTableItems2Response.
         :type: float

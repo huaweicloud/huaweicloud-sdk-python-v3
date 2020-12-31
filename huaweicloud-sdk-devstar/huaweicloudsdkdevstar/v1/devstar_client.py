@@ -38,8 +38,14 @@ class DevStarClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkdevstar.v1.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls, "GlobalCredentials")
+
+        if clazz.__name__ != "DevStarClient":
+            raise TypeError("client type error, support client type is DevStarClient")
+
         return ClientBuilder(clazz, "GlobalCredentials")
 
     def download_application_code(self, request):

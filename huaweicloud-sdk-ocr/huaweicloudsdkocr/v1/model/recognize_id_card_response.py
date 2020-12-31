@@ -9,7 +9,7 @@ import six
 from huaweicloudsdkcore.sdk_response import SdkResponse
 
 
-class RecognizeIdCardResponse(SdkResponse):
+class RecognizeIDCardResponse(SdkResponse):
 
 
     """
@@ -23,7 +23,7 @@ class RecognizeIdCardResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'RecognizeIdCardResultResponse'
+        'result': 'IDCardResultBody'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class RecognizeIdCardResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeIdCardResponse - a model defined in huaweicloud sdk"""
+        """RecognizeIDCardResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
@@ -43,21 +43,21 @@ class RecognizeIdCardResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeIdCardResponse.
+        """Gets the result of this RecognizeIDCardResponse.
 
 
-        :return: The result of this RecognizeIdCardResponse.
-        :rtype: RecognizeIdCardResultResponse
+        :return: The result of this RecognizeIDCardResponse.
+        :rtype: IDCardResultBody
         """
         return self._result
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeIdCardResponse.
+        """Sets the result of this RecognizeIDCardResponse.
 
 
-        :param result: The result of this RecognizeIdCardResponse.
-        :type: RecognizeIdCardResultResponse
+        :param result: The result of this RecognizeIDCardResponse.
+        :type: IDCardResultBody
         """
         self._result = result
 
@@ -98,7 +98,7 @@ class RecognizeIdCardResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RecognizeIdCardResponse):
+        if not isinstance(other, RecognizeIDCardResponse):
             return False
 
         return self.__dict__ == other.__dict__

@@ -147,7 +147,7 @@
 
     ``` python
     # 初始化指定云服务的客户端 {Service}Client ，以初始化 VpcClient 为例
-    client = VpcClient.new_builder(VpcClient) \
+    client = VpcClient.new_builder() \
         .with_http_config(config) \
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \
@@ -178,7 +178,7 @@
 
     ``` python
     # 初始化指定云服务的客户端 {Service}Client ，以初始化 IamClient 为例
-    client = IamClient.new_builder(IamClient) \
+    client = IamClient.new_builder() \
         .with_http_config(config) \
         .with_credentials(credentials) \
         .with_region(IamRegion.CN_NORTH_4) \
@@ -228,7 +228,7 @@
 
     ``` python
     # 初始化异步客户端，以初始化 VpcAsyncClient 为例
-    vpc_client = VpcAsyncClient.new_builder(VpcAsyncClient) \
+    vpc_client = VpcAsyncClient.new_builder() \
         .with_http_config(config) \
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \
@@ -270,7 +270,7 @@
         base = base + "< Body: %s" % response.content
         logger.debug(base)
     
-    client = VpcClient.new_builder(VpcClient) \
+    client = VpcClient.new_builder() \
         .with_http_config(config) \
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \
@@ -321,7 +321,7 @@ if __name__ == "__main__":
     config.ignore_ssl_verification = True
     credentials = BasicCredentials(ak, sk, project_id)
 
-    vpc_client = VpcClient.new_builder(VpcClient) \
+    vpc_client = VpcClient.new_builder() \
         .with_http_config(config) \
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \

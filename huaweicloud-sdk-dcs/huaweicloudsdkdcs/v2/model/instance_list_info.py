@@ -54,7 +54,7 @@ class InstanceListInfo:
         'name': 'str',
         'spec_code': 'str',
         'status': 'str',
-        'tags': 'list[Tag]',
+        'tags': 'list[ResourceTag]',
         'enterprise_project_id': 'str'
     }
 
@@ -890,7 +890,7 @@ class InstanceListInfo:
         实例标签键值。
 
         :return: The tags of this InstanceListInfo.
-        :rtype: list[Tag]
+        :rtype: list[ResourceTag]
         """
         return self._tags
 
@@ -901,7 +901,7 @@ class InstanceListInfo:
         实例标签键值。
 
         :param tags: The tags of this InstanceListInfo.
-        :type: list[Tag]
+        :type: list[ResourceTag]
         """
         self._tags = tags
 

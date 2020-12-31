@@ -25,6 +25,8 @@ class ListInstancesRequest:
     openapi_types = {
         'limit': 'int',
         'offset': 'int',
+        'is_temporary': 'bool',
+        'label': 'str',
         'search': 'str',
         'sort_dir': 'str',
         'sort_key': 'str'
@@ -33,18 +35,22 @@ class ListInstancesRequest:
     attribute_map = {
         'limit': 'limit',
         'offset': 'offset',
+        'is_temporary': 'is_temporary',
+        'label': 'label',
         'search': 'search',
         'sort_dir': 'sort_dir',
         'sort_key': 'sort_key'
     }
 
-    def __init__(self, limit=30, offset=0, search=None, sort_dir='desc', sort_key='created_time'):
+    def __init__(self, limit=30, offset=0, is_temporary=None, label=None, search=None, sort_dir='desc', sort_key='created_time'):
         """ListInstancesRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._limit = None
         self._offset = None
+        self._is_temporary = None
+        self._label = None
         self._search = None
         self._sort_dir = None
         self._sort_key = None
@@ -54,6 +60,10 @@ class ListInstancesRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        if is_temporary is not None:
+            self.is_temporary = is_temporary
+        if label is not None:
+            self.label = label
         if search is not None:
             self.search = search
         if sort_dir is not None:
@@ -100,6 +110,46 @@ class ListInstancesRequest:
         :type: int
         """
         self._offset = offset
+
+    @property
+    def is_temporary(self):
+        """Gets the is_temporary of this ListInstancesRequest.
+
+
+        :return: The is_temporary of this ListInstancesRequest.
+        :rtype: bool
+        """
+        return self._is_temporary
+
+    @is_temporary.setter
+    def is_temporary(self, is_temporary):
+        """Sets the is_temporary of this ListInstancesRequest.
+
+
+        :param is_temporary: The is_temporary of this ListInstancesRequest.
+        :type: bool
+        """
+        self._is_temporary = is_temporary
+
+    @property
+    def label(self):
+        """Gets the label of this ListInstancesRequest.
+
+
+        :return: The label of this ListInstancesRequest.
+        :rtype: str
+        """
+        return self._label
+
+    @label.setter
+    def label(self, label):
+        """Sets the label of this ListInstancesRequest.
+
+
+        :param label: The label of this ListInstancesRequest.
+        :type: str
+        """
+        self._label = label
 
     @property
     def search(self):

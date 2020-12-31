@@ -33,6 +33,7 @@ class RecognizeDriverLicenseResultResponse:
         '_class': 'str',
         'valid_from': 'str',
         'valid_to': 'str',
+        'issuing_authority': 'str',
         'file_number': 'str',
         'record': 'str'
     }
@@ -48,11 +49,12 @@ class RecognizeDriverLicenseResultResponse:
         '_class': 'class',
         'valid_from': 'valid_from',
         'valid_to': 'valid_to',
+        'issuing_authority': 'issuing_authority',
         'file_number': 'file_number',
         'record': 'record'
     }
 
-    def __init__(self, number=None, name=None, sex=None, nationality=None, address=None, birth=None, issue_date=None, _class=None, valid_from=None, valid_to=None, file_number=None, record=None):
+    def __init__(self, number=None, name=None, sex=None, nationality=None, address=None, birth=None, issue_date=None, _class=None, valid_from=None, valid_to=None, issuing_authority=None, file_number=None, record=None):
         """RecognizeDriverLicenseResultResponse - a model defined in huaweicloud sdk"""
         
         
@@ -67,6 +69,7 @@ class RecognizeDriverLicenseResultResponse:
         self.__class = None
         self._valid_from = None
         self._valid_to = None
+        self._issuing_authority = None
         self._file_number = None
         self._record = None
         self.discriminator = None
@@ -91,6 +94,8 @@ class RecognizeDriverLicenseResultResponse:
             self.valid_from = valid_from
         if valid_to is not None:
             self.valid_to = valid_to
+        if issuing_authority is not None:
+            self.issuing_authority = issuing_authority
         if file_number is not None:
             self.file_number = file_number
         if record is not None:
@@ -315,6 +320,28 @@ class RecognizeDriverLicenseResultResponse:
         :type: str
         """
         self._valid_to = valid_to
+
+    @property
+    def issuing_authority(self):
+        """Gets the issuing_authority of this RecognizeDriverLicenseResultResponse.
+
+        发证机关。 
+
+        :return: The issuing_authority of this RecognizeDriverLicenseResultResponse.
+        :rtype: str
+        """
+        return self._issuing_authority
+
+    @issuing_authority.setter
+    def issuing_authority(self, issuing_authority):
+        """Sets the issuing_authority of this RecognizeDriverLicenseResultResponse.
+
+        发证机关。 
+
+        :param issuing_authority: The issuing_authority of this RecognizeDriverLicenseResultResponse.
+        :type: str
+        """
+        self._issuing_authority = issuing_authority
 
     @property
     def file_number(self):

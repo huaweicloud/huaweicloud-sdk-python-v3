@@ -9,7 +9,7 @@ import six
 
 
 
-class RecognizeVinRequest:
+class RecognizeVINRequest:
 
 
     """
@@ -23,41 +23,65 @@ class RecognizeVinRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'RecognizeVinRequestBody'
+        'project_id': 'str',
+        'body': 'VINReq'
     }
 
     attribute_map = {
+        'project_id': 'project_id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
-        """RecognizeVinRequest - a model defined in huaweicloud sdk"""
+    def __init__(self, project_id=None, body=None):
+        """RecognizeVINRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._project_id = None
         self._body = None
         self.discriminator = None
 
+        self.project_id = project_id
         if body is not None:
             self.body = body
 
     @property
+    def project_id(self):
+        """Gets the project_id of this RecognizeVINRequest.
+
+
+        :return: The project_id of this RecognizeVINRequest.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this RecognizeVINRequest.
+
+
+        :param project_id: The project_id of this RecognizeVINRequest.
+        :type: str
+        """
+        self._project_id = project_id
+
+    @property
     def body(self):
-        """Gets the body of this RecognizeVinRequest.
+        """Gets the body of this RecognizeVINRequest.
 
 
-        :return: The body of this RecognizeVinRequest.
-        :rtype: RecognizeVinRequestBody
+        :return: The body of this RecognizeVINRequest.
+        :rtype: VINReq
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RecognizeVinRequest.
+        """Sets the body of this RecognizeVINRequest.
 
 
-        :param body: The body of this RecognizeVinRequest.
-        :type: RecognizeVinRequestBody
+        :param body: The body of this RecognizeVINRequest.
+        :type: VINReq
         """
         self._body = body
 
@@ -98,7 +122,7 @@ class RecognizeVinRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RecognizeVinRequest):
+        if not isinstance(other, RecognizeVINRequest):
             return False
 
         return self.__dict__ == other.__dict__

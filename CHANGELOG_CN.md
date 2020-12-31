@@ -1,3 +1,49 @@
+## 3.0.29-beta 2020-12-31
+## HuaweiCloud SDK CloudIDE
+ - ### 新增特性
+    - 新增支持接口：查询当前账号访问权限（ShowAccountStatus）
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 无
+
+## HuaweiCloud SDK DCS
+ - ### 新增特性
+    - 无
+ - ### 解决问题
+    - 修正接口返回数据类型避免反序列化失败：
+        - 查询所有实例列表接口：响应参数`Tags`类型调整 Tag → ResourceTag
+        - 查询慢日志接口：响应参数`duration`类型调整 int32 → string
+        - 查询大key分析详情接口：响应参数`db`类型调整 int32 → string
+        - 查询热key分析详情接口：响应参数`db`类型调整 int32 → string
+ - ### 特性变更
+    - 无
+
+## HuaweiCloud SDK DGC
+ - ### 新增特性
+    - 支持数据湖治理中心服务
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 无
+
+## HuaweiCloud SDK RDS
+ - ### 新增特性
+    - 无
+ - ### 解决问题
+    - 无
+ - ### 特性变更
+    - 创建实例接口响应类型调整
+
+## HuaweiCloud SDK SMN
+ - ### 新增特性
+    - 无
+ - ### 解决问题
+    - 修正消息发布接口请求参数：Object → Map<String, String>
+ - ### 特性变更
+    - 无
+
+
 ## 3.0.28-beta 2020-12-28
 ## HuaweiCloud SDK DCS
  - ### 新增特性

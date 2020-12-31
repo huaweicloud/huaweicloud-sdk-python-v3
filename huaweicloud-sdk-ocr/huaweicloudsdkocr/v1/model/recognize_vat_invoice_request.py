@@ -23,23 +23,47 @@ class RecognizeVatInvoiceRequest:
     sensitive_list = []
 
     openapi_types = {
+        'project_id': 'str',
         'body': 'RecognizeVatInvoiceRequestBody'
     }
 
     attribute_map = {
+        'project_id': 'project_id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, project_id=None, body=None):
         """RecognizeVatInvoiceRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._project_id = None
         self._body = None
         self.discriminator = None
 
+        self.project_id = project_id
         if body is not None:
             self.body = body
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this RecognizeVatInvoiceRequest.
+
+
+        :return: The project_id of this RecognizeVatInvoiceRequest.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this RecognizeVatInvoiceRequest.
+
+
+        :param project_id: The project_id of this RecognizeVatInvoiceRequest.
+        :type: str
+        """
+        self._project_id = project_id
 
     @property
     def body(self):

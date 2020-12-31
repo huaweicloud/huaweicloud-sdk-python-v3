@@ -23,7 +23,7 @@ class RecognizeBankcardResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'RecognizeBankcardResultResponse'
+        'result': 'BankcardResultBody'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeBankcardResponse(SdkResponse):
 
 
         :return: The result of this RecognizeBankcardResponse.
-        :rtype: RecognizeBankcardResultResponse
+        :rtype: BankcardResultBody
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeBankcardResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeBankcardResponse.
-        :type: RecognizeBankcardResultResponse
+        :type: BankcardResultBody
         """
         self._result = result
 

@@ -23,23 +23,47 @@ class RecognizeFlightItineraryRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'RecognizeFlightItineraryRequestBody'
+        'project_id': 'str',
+        'body': 'FlightItineraryReq'
     }
 
     attribute_map = {
+        'project_id': 'project_id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, project_id=None, body=None):
         """RecognizeFlightItineraryRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._project_id = None
         self._body = None
         self.discriminator = None
 
+        self.project_id = project_id
         if body is not None:
             self.body = body
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this RecognizeFlightItineraryRequest.
+
+
+        :return: The project_id of this RecognizeFlightItineraryRequest.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this RecognizeFlightItineraryRequest.
+
+
+        :param project_id: The project_id of this RecognizeFlightItineraryRequest.
+        :type: str
+        """
+        self._project_id = project_id
 
     @property
     def body(self):
@@ -47,7 +71,7 @@ class RecognizeFlightItineraryRequest:
 
 
         :return: The body of this RecognizeFlightItineraryRequest.
-        :rtype: RecognizeFlightItineraryRequestBody
+        :rtype: FlightItineraryReq
         """
         return self._body
 
@@ -57,7 +81,7 @@ class RecognizeFlightItineraryRequest:
 
 
         :param body: The body of this RecognizeFlightItineraryRequest.
-        :type: RecognizeFlightItineraryRequestBody
+        :type: FlightItineraryReq
         """
         self._body = body
 

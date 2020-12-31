@@ -23,7 +23,7 @@ class RecognizeTrainTicketResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'RecognizeTrainTicketResultResponse'
+        'result': 'TrainTicketResultBody'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeTrainTicketResponse(SdkResponse):
 
 
         :return: The result of this RecognizeTrainTicketResponse.
-        :rtype: RecognizeTrainTicketResultResponse
+        :rtype: TrainTicketResultBody
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeTrainTicketResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeTrainTicketResponse.
-        :type: RecognizeTrainTicketResultResponse
+        :type: TrainTicketResultBody
         """
         self._result = result
 

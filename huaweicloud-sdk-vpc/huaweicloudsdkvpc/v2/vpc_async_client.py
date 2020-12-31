@@ -38,8 +38,14 @@ class VpcAsyncClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkvpc.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls)
+
+        if clazz.__name__ != "VpcClient":
+            raise TypeError("client type error, support client type is VpcClient")
+
         return ClientBuilder(clazz)
 
     def accept_vpc_peering_async(self, request):

@@ -38,8 +38,14 @@ class RdsClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkrds.v3.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls)
+
+        if clazz.__name__ != "RdsClient":
+            raise TypeError("client type error, support client type is RdsClient")
+
         return ClientBuilder(clazz)
 
     def attach_eip(self, request):

@@ -38,8 +38,14 @@ class BssAsyncClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkbss.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls, "GlobalCredentials")
+
+        if clazz.__name__ != "BssClient":
+            raise TypeError("client type error, support client type is BssClient")
+
         return ClientBuilder(clazz, "GlobalCredentials")
 
     def list_conversions_async(self, request):

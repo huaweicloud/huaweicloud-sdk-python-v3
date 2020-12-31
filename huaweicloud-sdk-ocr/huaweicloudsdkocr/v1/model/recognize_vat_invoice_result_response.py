@@ -24,9 +24,15 @@ class RecognizeVatInvoiceResultResponse:
 
     openapi_types = {
         'type': 'str',
+        'serial_number': 'str',
+        'attribution': 'str',
+        'supervision_seal': 'list[str]',
         'code': 'str',
+        'machine_number': 'str',
+        'print_number': 'str',
         'check_code': 'str',
         'number': 'str',
+        'issue_id': 'str',
         'issue_date': 'str',
         'encryption_block': 'str',
         'buyer_name': 'str',
@@ -40,14 +46,26 @@ class RecognizeVatInvoiceResultResponse:
         'subtotal_amount': 'str',
         'subtotal_tax': 'str',
         'total': 'str',
+        'total_in_words': 'str',
+        'remarks': 'str',
+        'receiver': 'str',
+        'reviewer': 'str',
+        'issuer': 'str',
+        'seller_seal': 'str',
         'item_list': 'list[RecognizeVatInvoiceItemsResponse]'
     }
 
     attribute_map = {
         'type': 'type',
+        'serial_number': 'serial_number',
+        'attribution': 'attribution',
+        'supervision_seal': 'supervision_seal',
         'code': 'code',
+        'machine_number': 'machine_number',
+        'print_number': 'print_number',
         'check_code': 'check_code',
         'number': 'number',
+        'issue_id': 'issue_id',
         'issue_date': 'issue_date',
         'encryption_block': 'encryption_block',
         'buyer_name': 'buyer_name',
@@ -61,18 +79,30 @@ class RecognizeVatInvoiceResultResponse:
         'subtotal_amount': 'subtotal_amount',
         'subtotal_tax': 'subtotal_tax',
         'total': 'total',
+        'total_in_words': 'total_in_words',
+        'remarks': 'remarks',
+        'receiver': 'receiver',
+        'reviewer': 'reviewer',
+        'issuer': 'issuer',
+        'seller_seal': 'seller_seal',
         'item_list': 'item_list'
     }
 
-    def __init__(self, type=None, code=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, item_list=None):
+    def __init__(self, type=None, serial_number=None, attribution=None, supervision_seal=None, code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_id=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None):
         """RecognizeVatInvoiceResultResponse - a model defined in huaweicloud sdk"""
         
         
 
         self._type = None
+        self._serial_number = None
+        self._attribution = None
+        self._supervision_seal = None
         self._code = None
+        self._machine_number = None
+        self._print_number = None
         self._check_code = None
         self._number = None
+        self._issue_id = None
         self._issue_date = None
         self._encryption_block = None
         self._buyer_name = None
@@ -86,17 +116,35 @@ class RecognizeVatInvoiceResultResponse:
         self._subtotal_amount = None
         self._subtotal_tax = None
         self._total = None
+        self._total_in_words = None
+        self._remarks = None
+        self._receiver = None
+        self._reviewer = None
+        self._issuer = None
+        self._seller_seal = None
         self._item_list = None
         self.discriminator = None
 
         if type is not None:
             self.type = type
+        if serial_number is not None:
+            self.serial_number = serial_number
+        if attribution is not None:
+            self.attribution = attribution
+        if supervision_seal is not None:
+            self.supervision_seal = supervision_seal
         if code is not None:
             self.code = code
+        if machine_number is not None:
+            self.machine_number = machine_number
+        if print_number is not None:
+            self.print_number = print_number
         if check_code is not None:
             self.check_code = check_code
         if number is not None:
             self.number = number
+        if issue_id is not None:
+            self.issue_id = issue_id
         if issue_date is not None:
             self.issue_date = issue_date
         if encryption_block is not None:
@@ -123,6 +171,18 @@ class RecognizeVatInvoiceResultResponse:
             self.subtotal_tax = subtotal_tax
         if total is not None:
             self.total = total
+        if total_in_words is not None:
+            self.total_in_words = total_in_words
+        if remarks is not None:
+            self.remarks = remarks
+        if receiver is not None:
+            self.receiver = receiver
+        if reviewer is not None:
+            self.reviewer = reviewer
+        if issuer is not None:
+            self.issuer = issuer
+        if seller_seal is not None:
+            self.seller_seal = seller_seal
         if item_list is not None:
             self.item_list = item_list
 
@@ -149,6 +209,72 @@ class RecognizeVatInvoiceResultResponse:
         self._type = type
 
     @property
+    def serial_number(self):
+        """Gets the serial_number of this RecognizeVatInvoiceResultResponse.
+
+        发票联次。 当“advanced_mode”设置为“true”时才返回。 
+
+        :return: The serial_number of this RecognizeVatInvoiceResultResponse.
+        :rtype: str
+        """
+        return self._serial_number
+
+    @serial_number.setter
+    def serial_number(self, serial_number):
+        """Sets the serial_number of this RecognizeVatInvoiceResultResponse.
+
+        发票联次。 当“advanced_mode”设置为“true”时才返回。 
+
+        :param serial_number: The serial_number of this RecognizeVatInvoiceResultResponse.
+        :type: str
+        """
+        self._serial_number = serial_number
+
+    @property
+    def attribution(self):
+        """Gets the attribution of this RecognizeVatInvoiceResultResponse.
+
+        发票归属地。 当“advanced_mode”设置为“true”时才返回。 
+
+        :return: The attribution of this RecognizeVatInvoiceResultResponse.
+        :rtype: str
+        """
+        return self._attribution
+
+    @attribution.setter
+    def attribution(self, attribution):
+        """Sets the attribution of this RecognizeVatInvoiceResultResponse.
+
+        发票归属地。 当“advanced_mode”设置为“true”时才返回。 
+
+        :param attribution: The attribution of this RecognizeVatInvoiceResultResponse.
+        :type: str
+        """
+        self._attribution = attribution
+
+    @property
+    def supervision_seal(self):
+        """Gets the supervision_seal of this RecognizeVatInvoiceResultResponse.
+
+        发票监制章。 当“advanced_mode”设置为“true”时才返回。 
+
+        :return: The supervision_seal of this RecognizeVatInvoiceResultResponse.
+        :rtype: list[str]
+        """
+        return self._supervision_seal
+
+    @supervision_seal.setter
+    def supervision_seal(self, supervision_seal):
+        """Sets the supervision_seal of this RecognizeVatInvoiceResultResponse.
+
+        发票监制章。 当“advanced_mode”设置为“true”时才返回。 
+
+        :param supervision_seal: The supervision_seal of this RecognizeVatInvoiceResultResponse.
+        :type: list[str]
+        """
+        self._supervision_seal = supervision_seal
+
+    @property
     def code(self):
         """Gets the code of this RecognizeVatInvoiceResultResponse.
 
@@ -169,6 +295,50 @@ class RecognizeVatInvoiceResultResponse:
         :type: str
         """
         self._code = code
+
+    @property
+    def machine_number(self):
+        """Gets the machine_number of this RecognizeVatInvoiceResultResponse.
+
+        机器编号。 当“advanced_mode”设置为“true”时才返回。 
+
+        :return: The machine_number of this RecognizeVatInvoiceResultResponse.
+        :rtype: str
+        """
+        return self._machine_number
+
+    @machine_number.setter
+    def machine_number(self, machine_number):
+        """Sets the machine_number of this RecognizeVatInvoiceResultResponse.
+
+        机器编号。 当“advanced_mode”设置为“true”时才返回。 
+
+        :param machine_number: The machine_number of this RecognizeVatInvoiceResultResponse.
+        :type: str
+        """
+        self._machine_number = machine_number
+
+    @property
+    def print_number(self):
+        """Gets the print_number of this RecognizeVatInvoiceResultResponse.
+
+        机打号码。 当“advanced_mode”设置为“true”时才返回 
+
+        :return: The print_number of this RecognizeVatInvoiceResultResponse.
+        :rtype: str
+        """
+        return self._print_number
+
+    @print_number.setter
+    def print_number(self, print_number):
+        """Sets the print_number of this RecognizeVatInvoiceResultResponse.
+
+        机打号码。 当“advanced_mode”设置为“true”时才返回 
+
+        :param print_number: The print_number of this RecognizeVatInvoiceResultResponse.
+        :type: str
+        """
+        self._print_number = print_number
 
     @property
     def check_code(self):
@@ -213,6 +383,28 @@ class RecognizeVatInvoiceResultResponse:
         :type: str
         """
         self._number = number
+
+    @property
+    def issue_id(self):
+        """Gets the issue_id of this RecognizeVatInvoiceResultResponse.
+
+        发票号码。 
+
+        :return: The issue_id of this RecognizeVatInvoiceResultResponse.
+        :rtype: str
+        """
+        return self._issue_id
+
+    @issue_id.setter
+    def issue_id(self, issue_id):
+        """Sets the issue_id of this RecognizeVatInvoiceResultResponse.
+
+        发票号码。 
+
+        :param issue_id: The issue_id of this RecognizeVatInvoiceResultResponse.
+        :type: str
+        """
+        self._issue_id = issue_id
 
     @property
     def issue_date(self):
@@ -499,6 +691,138 @@ class RecognizeVatInvoiceResultResponse:
         :type: str
         """
         self._total = total
+
+    @property
+    def total_in_words(self):
+        """Gets the total_in_words of this RecognizeVatInvoiceResultResponse.
+
+        价税合计（大写）。 当“advanced_mode”设置为“true”时才返回。 
+
+        :return: The total_in_words of this RecognizeVatInvoiceResultResponse.
+        :rtype: str
+        """
+        return self._total_in_words
+
+    @total_in_words.setter
+    def total_in_words(self, total_in_words):
+        """Sets the total_in_words of this RecognizeVatInvoiceResultResponse.
+
+        价税合计（大写）。 当“advanced_mode”设置为“true”时才返回。 
+
+        :param total_in_words: The total_in_words of this RecognizeVatInvoiceResultResponse.
+        :type: str
+        """
+        self._total_in_words = total_in_words
+
+    @property
+    def remarks(self):
+        """Gets the remarks of this RecognizeVatInvoiceResultResponse.
+
+        备注。 当“advanced_mode”设置为“true”时才返回。 
+
+        :return: The remarks of this RecognizeVatInvoiceResultResponse.
+        :rtype: str
+        """
+        return self._remarks
+
+    @remarks.setter
+    def remarks(self, remarks):
+        """Sets the remarks of this RecognizeVatInvoiceResultResponse.
+
+        备注。 当“advanced_mode”设置为“true”时才返回。 
+
+        :param remarks: The remarks of this RecognizeVatInvoiceResultResponse.
+        :type: str
+        """
+        self._remarks = remarks
+
+    @property
+    def receiver(self):
+        """Gets the receiver of this RecognizeVatInvoiceResultResponse.
+
+        收款人。 当“advanced_mode”设置为“true”时才返回。 
+
+        :return: The receiver of this RecognizeVatInvoiceResultResponse.
+        :rtype: str
+        """
+        return self._receiver
+
+    @receiver.setter
+    def receiver(self, receiver):
+        """Sets the receiver of this RecognizeVatInvoiceResultResponse.
+
+        收款人。 当“advanced_mode”设置为“true”时才返回。 
+
+        :param receiver: The receiver of this RecognizeVatInvoiceResultResponse.
+        :type: str
+        """
+        self._receiver = receiver
+
+    @property
+    def reviewer(self):
+        """Gets the reviewer of this RecognizeVatInvoiceResultResponse.
+
+        复核。 当“advanced_mode”设置为“true”时才返回。 
+
+        :return: The reviewer of this RecognizeVatInvoiceResultResponse.
+        :rtype: str
+        """
+        return self._reviewer
+
+    @reviewer.setter
+    def reviewer(self, reviewer):
+        """Sets the reviewer of this RecognizeVatInvoiceResultResponse.
+
+        复核。 当“advanced_mode”设置为“true”时才返回。 
+
+        :param reviewer: The reviewer of this RecognizeVatInvoiceResultResponse.
+        :type: str
+        """
+        self._reviewer = reviewer
+
+    @property
+    def issuer(self):
+        """Gets the issuer of this RecognizeVatInvoiceResultResponse.
+
+        开票人。 当“advanced_mode”设置为“true”时才返回。 
+
+        :return: The issuer of this RecognizeVatInvoiceResultResponse.
+        :rtype: str
+        """
+        return self._issuer
+
+    @issuer.setter
+    def issuer(self, issuer):
+        """Sets the issuer of this RecognizeVatInvoiceResultResponse.
+
+        开票人。 当“advanced_mode”设置为“true”时才返回。 
+
+        :param issuer: The issuer of this RecognizeVatInvoiceResultResponse.
+        :type: str
+        """
+        self._issuer = issuer
+
+    @property
+    def seller_seal(self):
+        """Gets the seller_seal of this RecognizeVatInvoiceResultResponse.
+
+        销售方发票专用章。 当“advanced_mode”设置为“true”时才返回。 
+
+        :return: The seller_seal of this RecognizeVatInvoiceResultResponse.
+        :rtype: str
+        """
+        return self._seller_seal
+
+    @seller_seal.setter
+    def seller_seal(self, seller_seal):
+        """Sets the seller_seal of this RecognizeVatInvoiceResultResponse.
+
+        销售方发票专用章。 当“advanced_mode”设置为“true”时才返回。 
+
+        :param seller_seal: The seller_seal of this RecognizeVatInvoiceResultResponse.
+        :type: str
+        """
+        self._seller_seal = seller_seal
 
     @property
     def item_list(self):

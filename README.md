@@ -148,7 +148,7 @@ You must install `huaweicloudsdkcore` library no matter which product/service de
 
     ``` python
     # Initialize specified service client instance, take VpcClient for example
-    client = VpcClient.new_builder(VpcClient) \
+    client = VpcClient.new_builder() \
         .with_http_config(config) \
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \
@@ -179,7 +179,7 @@ You must install `huaweicloudsdkcore` library no matter which product/service de
 
     ``` python
     # Initialize specified service client instance, take IamClient for example
-    client = IamClient.new_builder(IamClient) \
+    client = IamClient.new_builder() \
         .with_http_config(config) \
         .with_credentials(credentials) \
         .with_region(IamRegion.CN_NORTH_4) \
@@ -230,7 +230,7 @@ You must install `huaweicloudsdkcore` library no matter which product/service de
 
     ``` python
     # Initialize asynchronous client, take VpcAsyncClient for example
-    vpc_client = VpcAsyncClient.new_builder(VpcAsyncClient) \
+    vpc_client = VpcAsyncClient.new_builder() \
         .with_http_config(config) \
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \
@@ -271,7 +271,7 @@ You must install `huaweicloudsdkcore` library no matter which product/service de
         base = base + "< Body: %s" % response.content
         logger.debug(base)
     
-    client = VpcClient.new_builder(VpcClient) \
+    client = VpcClient.new_builder() \
         .with_http_config(config) \
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \
@@ -322,7 +322,7 @@ You must install `huaweicloudsdkcore` library no matter which product/service de
         config.ignore_ssl_verification = True
         credentials = BasicCredentials(ak, sk, project_id)
 
-        vpc_client = VpcClient.new_builder(VpcClient) \
+        vpc_client = VpcClient.new_builder() \
             .with_http_config(config) \
             .with_credentials(credentials) \
             .with_endpoint(endpoint) \

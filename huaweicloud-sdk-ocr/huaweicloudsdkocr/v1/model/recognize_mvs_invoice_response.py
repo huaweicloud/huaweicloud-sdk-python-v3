@@ -23,7 +23,7 @@ class RecognizeMvsInvoiceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'RecognizeMvsInvoiceResultResponse'
+        'result': 'MvsInvoiceResultBody'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeMvsInvoiceResponse(SdkResponse):
 
 
         :return: The result of this RecognizeMvsInvoiceResponse.
-        :rtype: RecognizeMvsInvoiceResultResponse
+        :rtype: MvsInvoiceResultBody
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeMvsInvoiceResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeMvsInvoiceResponse.
-        :type: RecognizeMvsInvoiceResultResponse
+        :type: MvsInvoiceResultBody
         """
         self._result = result
 

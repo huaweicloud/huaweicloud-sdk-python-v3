@@ -38,8 +38,14 @@ class BmsClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkbms.v1.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls)
+
+        if clazz.__name__ != "BmsClient":
+            raise TypeError("client type error, support client type is BmsClient")
+
         return ClientBuilder(clazz)
 
     def attach_baremetal_server_volume(self, request):

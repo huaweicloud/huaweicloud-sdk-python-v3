@@ -23,23 +23,47 @@ class RecognizeMvsInvoiceRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'RecognizeMvsInvoiceRequestBody'
+        'project_id': 'str',
+        'body': 'MvsInvoiceReq'
     }
 
     attribute_map = {
+        'project_id': 'project_id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, project_id=None, body=None):
         """RecognizeMvsInvoiceRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._project_id = None
         self._body = None
         self.discriminator = None
 
+        self.project_id = project_id
         if body is not None:
             self.body = body
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this RecognizeMvsInvoiceRequest.
+
+
+        :return: The project_id of this RecognizeMvsInvoiceRequest.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this RecognizeMvsInvoiceRequest.
+
+
+        :param project_id: The project_id of this RecognizeMvsInvoiceRequest.
+        :type: str
+        """
+        self._project_id = project_id
 
     @property
     def body(self):
@@ -47,7 +71,7 @@ class RecognizeMvsInvoiceRequest:
 
 
         :return: The body of this RecognizeMvsInvoiceRequest.
-        :rtype: RecognizeMvsInvoiceRequestBody
+        :rtype: MvsInvoiceReq
         """
         return self._body
 
@@ -57,7 +81,7 @@ class RecognizeMvsInvoiceRequest:
 
 
         :param body: The body of this RecognizeMvsInvoiceRequest.
-        :type: RecognizeMvsInvoiceRequestBody
+        :type: MvsInvoiceReq
         """
         self._body = body
 

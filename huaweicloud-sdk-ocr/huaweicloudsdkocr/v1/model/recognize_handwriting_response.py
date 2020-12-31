@@ -23,7 +23,7 @@ class RecognizeHandwritingResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'RecognizeHandwritingResultResponse'
+        'result': 'HandwritingResponseBodyItem'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeHandwritingResponse(SdkResponse):
 
 
         :return: The result of this RecognizeHandwritingResponse.
-        :rtype: RecognizeHandwritingResultResponse
+        :rtype: HandwritingResponseBodyItem
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeHandwritingResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeHandwritingResponse.
-        :type: RecognizeHandwritingResultResponse
+        :type: HandwritingResponseBodyItem
         """
         self._result = result
 

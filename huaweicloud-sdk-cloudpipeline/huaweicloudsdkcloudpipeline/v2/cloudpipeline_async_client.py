@@ -38,8 +38,14 @@ class CloudPipelineAsyncClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkcloudpipeline.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls)
+
+        if clazz.__name__ != "CloudPipelineClient":
+            raise TypeError("client type error, support client type is CloudPipelineClient")
+
         return ClientBuilder(clazz)
 
     def batch_show_pipelines_status_async(self, request):

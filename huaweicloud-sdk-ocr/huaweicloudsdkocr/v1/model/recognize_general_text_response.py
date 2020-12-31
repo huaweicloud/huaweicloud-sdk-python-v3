@@ -23,7 +23,7 @@ class RecognizeGeneralTextResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'RecognizeGeneralTextResultResponse'
+        'result': 'GeneralTextResponseBodyItems'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeGeneralTextResponse(SdkResponse):
 
 
         :return: The result of this RecognizeGeneralTextResponse.
-        :rtype: RecognizeGeneralTextResultResponse
+        :rtype: GeneralTextResponseBodyItems
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeGeneralTextResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeGeneralTextResponse.
-        :type: RecognizeGeneralTextResultResponse
+        :type: GeneralTextResponseBodyItems
         """
         self._result = result
 

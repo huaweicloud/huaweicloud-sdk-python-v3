@@ -38,8 +38,14 @@ class ApigClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkapig.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls)
+
+        if clazz.__name__ != "ApigClient":
+            raise TypeError("client type error, support client type is ApigClient")
+
         return ClientBuilder(clazz)
 
     def associate_certificate_v2(self, request):

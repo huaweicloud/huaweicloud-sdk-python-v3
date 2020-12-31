@@ -38,8 +38,14 @@ class NatAsyncClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdknat.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls)
+
+        if clazz.__name__ != "NatClient":
+            raise TypeError("client type error, support client type is NatClient")
+
         return ClientBuilder(clazz)
 
     def batch_create_nat_gateway_dnat_rules_async(self, request):

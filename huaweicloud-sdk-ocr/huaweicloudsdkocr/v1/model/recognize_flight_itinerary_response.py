@@ -23,7 +23,7 @@ class RecognizeFlightItineraryResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'RecognizeFlightItineraryResultResponse'
+        'result': 'FlightItineraryResponseBodyItem'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeFlightItineraryResponse(SdkResponse):
 
 
         :return: The result of this RecognizeFlightItineraryResponse.
-        :rtype: RecognizeFlightItineraryResultResponse
+        :rtype: FlightItineraryResponseBodyItem
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeFlightItineraryResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeFlightItineraryResponse.
-        :type: RecognizeFlightItineraryResultResponse
+        :type: FlightItineraryResponseBodyItem
         """
         self._result = result
 

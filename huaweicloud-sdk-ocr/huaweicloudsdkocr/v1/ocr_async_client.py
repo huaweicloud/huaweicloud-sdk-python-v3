@@ -38,14 +38,20 @@ class OcrAsyncClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkocr.v1.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls)
+
+        if clazz.__name__ != "OcrClient":
+            raise TypeError("client type error, support client type is OcrClient")
+
         return ClientBuilder(clazz)
 
     def recognize_auto_classification_async(self, request):
         """智能分类识别
 
-        检测定位图片上指定要识别的票证（票据、证件或其他文字载体），并对其进行结构化识别。接口以列表形式返回图片上要识别票证的位置坐标、结构化识别的内容以及对应的类别。 计费次数说明： 只对识别成功的票证进行计费，识别失败的票证不计费。例如图片中包含三张票证，有两张识别成功，一张识别失败，此时接口计费两次。 
+        检测定位图片上指定要识别的票证（票据、证件或其他文字载体），并对其进行结构化识别。接口以列表形式返回图片上要识别票证的位置坐标、结构化识别的内容以及对应的类别。  计费次数说明：  只对识别成功的票证进行计费，识别失败的票证不计费。例如图片中包含三张票证，有两张识别成功，一张识别失败，此时接口计费两次。 
 
         :param RecognizeAutoClassificationRequest request
         :return: RecognizeAutoClassificationResponse
@@ -55,13 +61,13 @@ class OcrAsyncClient(Client):
     def recognize_auto_classification_with_http_info(self, request):
         """智能分类识别
 
-        检测定位图片上指定要识别的票证（票据、证件或其他文字载体），并对其进行结构化识别。接口以列表形式返回图片上要识别票证的位置坐标、结构化识别的内容以及对应的类别。 计费次数说明： 只对识别成功的票证进行计费，识别失败的票证不计费。例如图片中包含三张票证，有两张识别成功，一张识别失败，此时接口计费两次。 
+        检测定位图片上指定要识别的票证（票据、证件或其他文字载体），并对其进行结构化识别。接口以列表形式返回图片上要识别票证的位置坐标、结构化识别的内容以及对应的类别。  计费次数说明：  只对识别成功的票证进行计费，识别失败的票证不计费。例如图片中包含三张票证，有两张识别成功，一张识别失败，此时接口计费两次。 
 
         :param RecognizeAutoClassificationRequest request
         :return: RecognizeAutoClassificationResponse
         """
 
-        all_params = ['recognize_auto_classification_request_body']
+        all_params = ['project_id', 'auto_classification_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -70,6 +76,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -91,7 +99,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/auto-classification',
+            resource_path='/v2/{project_id}/ocr/auto-classification',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -108,7 +116,7 @@ class OcrAsyncClient(Client):
     def recognize_bankcard_async(self, request):
         """银行卡识别
 
-        识别银行卡上的关键文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
+        识别银行卡上的关键文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
 
         :param RecognizeBankcardRequest request
         :return: RecognizeBankcardResponse
@@ -118,13 +126,13 @@ class OcrAsyncClient(Client):
     def recognize_bankcard_with_http_info(self, request):
         """银行卡识别
 
-        识别银行卡上的关键文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
+        识别银行卡上的关键文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
 
         :param RecognizeBankcardRequest request
         :return: RecognizeBankcardResponse
         """
 
-        all_params = ['recognize_bankcard_request_body']
+        all_params = ['project_id', 'bank_card_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -133,6 +141,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -154,7 +164,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/bankcard',
+            resource_path='/v2/{project_id}/ocr/bankcard',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -187,196 +197,7 @@ class OcrAsyncClient(Client):
         :return: RecognizeBusinessCardResponse
         """
 
-        all_params = ['recognize_business_card_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1.0/ocr/business-card',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='RecognizeBusinessCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def recognize_business_license_async(self, request):
-        """营业执照识别
-
-        识别用户上传的营业执照首页图片中的文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
-
-        :param RecognizeBusinessLicenseRequest request
-        :return: RecognizeBusinessLicenseResponse
-        """
-        return self.recognize_business_license_with_http_info(request)
-
-    def recognize_business_license_with_http_info(self, request):
-        """营业执照识别
-
-        识别用户上传的营业执照首页图片中的文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
-
-        :param RecognizeBusinessLicenseRequest request
-        :return: RecognizeBusinessLicenseResponse
-        """
-
-        all_params = ['recognize_business_license_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1.0/ocr/business-license',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='RecognizeBusinessLicenseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def recognize_driver_license_async(self, request):
-        """驾驶证识别
-
-        识别用户上传的驾驶证图片（或者用户提供的华为云上OBS的驾驶证图片文件的URL）中主页与副页的文字内容，并将识别的结果返回给用户。  说明：  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
-
-        :param RecognizeDriverLicenseRequest request
-        :return: RecognizeDriverLicenseResponse
-        """
-        return self.recognize_driver_license_with_http_info(request)
-
-    def recognize_driver_license_with_http_info(self, request):
-        """驾驶证识别
-
-        识别用户上传的驾驶证图片（或者用户提供的华为云上OBS的驾驶证图片文件的URL）中主页与副页的文字内容，并将识别的结果返回给用户。  说明：  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
-
-        :param RecognizeDriverLicenseRequest request
-        :return: RecognizeDriverLicenseResponse
-        """
-
-        all_params = ['recognize_driver_license_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1.0/ocr/driver-license',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='RecognizeDriverLicenseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def recognize_financial_statement_async(self, request):
-        """财务报表识别
-
-        识别用户上传的表格图片中的文字内容，并将识别的结果返回给用户。
-
-        :param RecognizeFinancialStatementRequest request
-        :return: RecognizeFinancialStatementResponse
-        """
-        return self.recognize_financial_statement_with_http_info(request)
-
-    def recognize_financial_statement_with_http_info(self, request):
-        """财务报表识别
-
-        识别用户上传的表格图片中的文字内容，并将识别的结果返回给用户。
-
-        :param RecognizeFinancialStatementRequest request
-        :return: RecognizeFinancialStatementResponse
-        """
-
-        all_params = ['project_id', 'recognize_financial_statement']
+        all_params = ['project_id', 'business_card_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -408,14 +229,144 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{project_id}/ocr/financial-statement',
+            resource_path='/v2/{project_id}/ocr/business-card',
             method='POST',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='RecognizeFinancialStatementResponse',
+            response_type='RecognizeBusinessCardResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def recognize_business_license_async(self, request):
+        """营业执照识别
+
+        识别营业执照首页图片中的文字信息，并返回识别的结构化结果。  说明：   如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
+
+        :param RecognizeBusinessLicenseRequest request
+        :return: RecognizeBusinessLicenseResponse
+        """
+        return self.recognize_business_license_with_http_info(request)
+
+    def recognize_business_license_with_http_info(self, request):
+        """营业执照识别
+
+        识别营业执照首页图片中的文字信息，并返回识别的结构化结果。  说明：   如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
+
+        :param RecognizeBusinessLicenseRequest request
+        :return: RecognizeBusinessLicenseResponse
+        """
+
+        all_params = ['project_id', 'bankcard_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/business-license',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeBusinessLicenseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def recognize_driver_license_async(self, request):
+        """驾驶证识别
+
+        识别用户上传的驾驶证图片（或者用户提供的华为云上OBS的驾驶证图片文件的URL）中主页与副页的文字内容，并将识别的结果返回给用户。  说明：   如果图片中包含多张卡证票据，请调用智能分类识别服务。 
+
+        :param RecognizeDriverLicenseRequest request
+        :return: RecognizeDriverLicenseResponse
+        """
+        return self.recognize_driver_license_with_http_info(request)
+
+    def recognize_driver_license_with_http_info(self, request):
+        """驾驶证识别
+
+        识别用户上传的驾驶证图片（或者用户提供的华为云上OBS的驾驶证图片文件的URL）中主页与副页的文字内容，并将识别的结果返回给用户。  说明：   如果图片中包含多张卡证票据，请调用智能分类识别服务。 
+
+        :param RecognizeDriverLicenseRequest request
+        :return: RecognizeDriverLicenseResponse
+        """
+
+        all_params = ['project_id', 'driver_license_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/driver-license',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeDriverLicenseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -441,7 +392,7 @@ class OcrAsyncClient(Client):
         :return: RecognizeFlightItineraryResponse
         """
 
-        all_params = ['recognize_flight_itinerary_request_body']
+        all_params = ['project_id', 'flight_itinerary_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -450,6 +401,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -471,7 +424,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/flight-itinerary',
+            resource_path='/v2/{project_id}/ocr/flight-itinerary',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -504,7 +457,7 @@ class OcrAsyncClient(Client):
         :return: RecognizeGeneralTableResponse
         """
 
-        all_params = ['recognize_general_table_request_body']
+        all_params = ['project_id', 'general_table_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -513,6 +466,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -534,7 +489,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/general-table',
+            resource_path='/v2/{project_id}/ocr/general-table',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -567,7 +522,7 @@ class OcrAsyncClient(Client):
         :return: RecognizeGeneralTextResponse
         """
 
-        all_params = ['recognize_general_text_request_body']
+        all_params = ['project_id', 'general_text_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -576,6 +531,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -597,7 +554,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/general-text',
+            resource_path='/v2/{project_id}/ocr/general-text',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -612,9 +569,9 @@ class OcrAsyncClient(Client):
 
 
     def recognize_handwriting_async(self, request):
-        """手写字母数字识别
+        """手写文字识别
 
-        识别用户上传的手写字母数字图片（或者用户提供的华为云上OBS的手写字母数字图片文件的URL）中的字母数字内容，并将识别的结果返回给用户。
+        识别文档中的手写文字信息，并将识别的结构化结果返回给用户。
 
         :param RecognizeHandwritingRequest request
         :return: RecognizeHandwritingResponse
@@ -622,15 +579,15 @@ class OcrAsyncClient(Client):
         return self.recognize_handwriting_with_http_info(request)
 
     def recognize_handwriting_with_http_info(self, request):
-        """手写字母数字识别
+        """手写文字识别
 
-        识别用户上传的手写字母数字图片（或者用户提供的华为云上OBS的手写字母数字图片文件的URL）中的字母数字内容，并将识别的结果返回给用户。
+        识别文档中的手写文字信息，并将识别的结构化结果返回给用户。
 
         :param RecognizeHandwritingRequest request
         :return: RecognizeHandwritingResponse
         """
 
-        all_params = ['recognize_handwriting_request_body']
+        all_params = ['project_id', 'handwriting_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -639,6 +596,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -660,7 +619,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/handwriting',
+            resource_path='/v2/{project_id}/ocr/handwriting',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -677,23 +636,23 @@ class OcrAsyncClient(Client):
     def recognize_id_card_async(self, request):
         """身份证识别
 
-        识别用户上传的身份证图片（或者用户提供的华为云上OBS的身份证图片文件的URL）中的文字内容，并将识别的结果返回给用户。  说明：  身份证识别只支持中国大陆汉族身份证识别。  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
+        识别身份证图片中的文字内容，并将识别的结果返回给用户。  说明：   身份证识别只支持中国大陆汉族身份证识别。  如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
 
-        :param RecognizeIdCardRequest request
-        :return: RecognizeIdCardResponse
+        :param RecognizeIDCardRequest request
+        :return: RecognizeIDCardResponse
         """
         return self.recognize_id_card_with_http_info(request)
 
     def recognize_id_card_with_http_info(self, request):
         """身份证识别
 
-        识别用户上传的身份证图片（或者用户提供的华为云上OBS的身份证图片文件的URL）中的文字内容，并将识别的结果返回给用户。  说明：  身份证识别只支持中国大陆汉族身份证识别。  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
+        识别身份证图片中的文字内容，并将识别的结果返回给用户。  说明：   身份证识别只支持中国大陆汉族身份证识别。  如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
 
-        :param RecognizeIdCardRequest request
-        :return: RecognizeIdCardResponse
+        :param RecognizeIDCardRequest request
+        :return: RecognizeIDCardResponse
         """
 
-        all_params = ['recognize_id_card_request_body']
+        all_params = ['project_id', 'id_card_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -702,6 +661,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -723,14 +684,14 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/id-card',
+            resource_path='/v2/{project_id}/ocr/id-card',
             method='POST',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='RecognizeIdCardResponse',
+            response_type='RecognizeIDCardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -740,7 +701,7 @@ class OcrAsyncClient(Client):
     def recognize_license_plate_async(self, request):
         """车牌识别
 
-        识别用户上传的车牌图片（或者用户提供的华为云上OBS的车牌图片文件的URL）中的文字内容，并将识别的结果返回给用户。  注意：  车牌识别服务由于内部原因，暂不支持用户调用，调用入口改为VCR服务（车辆识别功能），后续使用敬请关注上线通知。 
+        识别输入图片中的车牌信息，并返回其坐标和内容。 
 
         :param RecognizeLicensePlateRequest request
         :return: RecognizeLicensePlateResponse
@@ -750,13 +711,13 @@ class OcrAsyncClient(Client):
     def recognize_license_plate_with_http_info(self, request):
         """车牌识别
 
-        识别用户上传的车牌图片（或者用户提供的华为云上OBS的车牌图片文件的URL）中的文字内容，并将识别的结果返回给用户。  注意：  车牌识别服务由于内部原因，暂不支持用户调用，调用入口改为VCR服务（车辆识别功能），后续使用敬请关注上线通知。 
+        识别输入图片中的车牌信息，并返回其坐标和内容。 
 
         :param RecognizeLicensePlateRequest request
         :return: RecognizeLicensePlateResponse
         """
 
-        all_params = ['recognize_license_plate_request_body']
+        all_params = ['project_id', 'license_plate_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -765,6 +726,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -786,7 +749,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/license-plate',
+            resource_path='/v2/{project_id}/ocr/license-plate',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -803,7 +766,7 @@ class OcrAsyncClient(Client):
     def recognize_mvs_invoice_async(self, request):
         """机动车销售发票识别
 
-        识别用户上传的机动车销售发票图片（或者用户提供的华为云上OBS的机动车销售发票图片文件的URL）中的文字内容，并将识别的结果返回给用户。  说明：  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
+        识别机动车销售发票图片中的文字内容，并将识别的结果返回给用户。  说明：  该增值税发票仅限于中华人民共和国境内使用的增值税发票。  如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
 
         :param RecognizeMvsInvoiceRequest request
         :return: RecognizeMvsInvoiceResponse
@@ -813,13 +776,13 @@ class OcrAsyncClient(Client):
     def recognize_mvs_invoice_with_http_info(self, request):
         """机动车销售发票识别
 
-        识别用户上传的机动车销售发票图片（或者用户提供的华为云上OBS的机动车销售发票图片文件的URL）中的文字内容，并将识别的结果返回给用户。  说明：  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
+        识别机动车销售发票图片中的文字内容，并将识别的结果返回给用户。  说明：  该增值税发票仅限于中华人民共和国境内使用的增值税发票。  如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
 
         :param RecognizeMvsInvoiceRequest request
         :return: RecognizeMvsInvoiceResponse
         """
 
-        all_params = ['recognize_mvs_invoice_request_body']
+        all_params = ['project_id', 'mvs_invoice_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -828,6 +791,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -849,7 +814,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/mvs-invoice',
+            resource_path='/v2/{project_id}/ocr/mvs-invoice',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -866,7 +831,7 @@ class OcrAsyncClient(Client):
     def recognize_passport_async(self, request):
         """护照识别
 
-        识别用户上传的护照首页图片中的文字信息，并返回识别的结构化结果。当前版本支持中国护照的全字段识别。外国护照支持护照下方两行国际标准化的机读码识别，并可从中提取6-7个关键字段信息。  说明：  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
+        识别用户上传的护照首页图片中的文字信息，并返回识别的结构化结果。当前版本支持中国护照的全字段识别。外国护照支持护照下方两行国际标准化的机读码识别，并可从中提取6-7个关键字段信息。  说明：  如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
 
         :param RecognizePassportRequest request
         :return: RecognizePassportResponse
@@ -876,13 +841,13 @@ class OcrAsyncClient(Client):
     def recognize_passport_with_http_info(self, request):
         """护照识别
 
-        识别用户上传的护照首页图片中的文字信息，并返回识别的结构化结果。当前版本支持中国护照的全字段识别。外国护照支持护照下方两行国际标准化的机读码识别，并可从中提取6-7个关键字段信息。  说明：  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
+        识别用户上传的护照首页图片中的文字信息，并返回识别的结构化结果。当前版本支持中国护照的全字段识别。外国护照支持护照下方两行国际标准化的机读码识别，并可从中提取6-7个关键字段信息。  说明：  如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
 
         :param RecognizePassportRequest request
         :return: RecognizePassportResponse
         """
 
-        all_params = ['recognize_passport_request_body']
+        all_params = ['project_id', 'passport_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -891,6 +856,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -912,7 +879,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/passport',
+            resource_path='/v2/{project_id}/ocr/passport',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -929,7 +896,7 @@ class OcrAsyncClient(Client):
     def recognize_quota_invoice_async(self, request):
         """定额发票识别
 
-        识别定额发票中的文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
+        识别定额发票中的文字信息，并返回识别的结构化结果。  说明：   如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
 
         :param RecognizeQuotaInvoiceRequest request
         :return: RecognizeQuotaInvoiceResponse
@@ -939,13 +906,13 @@ class OcrAsyncClient(Client):
     def recognize_quota_invoice_with_http_info(self, request):
         """定额发票识别
 
-        识别定额发票中的文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
+        识别定额发票中的文字信息，并返回识别的结构化结果。  说明：   如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
 
         :param RecognizeQuotaInvoiceRequest request
         :return: RecognizeQuotaInvoiceResponse
         """
 
-        all_params = ['recognize_quota_invoice_request_body']
+        all_params = ['project_id', 'train_ticket_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -954,6 +921,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -975,7 +944,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/quota-invoice',
+            resource_path='/v2/{project_id}/ocr/quota-invoice',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -1008,7 +977,7 @@ class OcrAsyncClient(Client):
         :return: RecognizeTaxiInvoiceResponse
         """
 
-        all_params = ['recognize_taxi_invoice_request_body']
+        all_params = ['project_id', 'taxi_invoice_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1017,6 +986,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -1038,7 +1009,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/taxi-invoice',
+            resource_path='/v2/{project_id}/ocr/taxi-invoice',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -1055,7 +1026,7 @@ class OcrAsyncClient(Client):
     def recognize_toll_invoice_async(self, request):
         """车辆通行费发票识别
 
-        识别车辆通行费发票中的文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
+        识别车辆通行费发票中的文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
 
         :param RecognizeTollInvoiceRequest request
         :return: RecognizeTollInvoiceResponse
@@ -1065,13 +1036,13 @@ class OcrAsyncClient(Client):
     def recognize_toll_invoice_with_http_info(self, request):
         """车辆通行费发票识别
 
-        识别车辆通行费发票中的文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
+        识别车辆通行费发票中的文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
 
         :param RecognizeTollInvoiceRequest request
         :return: RecognizeTollInvoiceResponse
         """
 
-        all_params = ['recognize_toll_invoice_request_body']
+        all_params = ['project_id', 'recognize_toll_invoice_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1080,6 +1051,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -1101,7 +1074,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/toll-invoice',
+            resource_path='/v2/{project_id}/ocr/toll-invoice',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -1118,7 +1091,7 @@ class OcrAsyncClient(Client):
     def recognize_train_ticket_async(self, request):
         """火车票识别
 
-        识别火车票中的文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
+        识别火车票中的文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
 
         :param RecognizeTrainTicketRequest request
         :return: RecognizeTrainTicketResponse
@@ -1128,13 +1101,13 @@ class OcrAsyncClient(Client):
     def recognize_train_ticket_with_http_info(self, request):
         """火车票识别
 
-        识别火车票中的文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用智能分类识别服务。 
+        识别火车票中的文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
 
         :param RecognizeTrainTicketRequest request
         :return: RecognizeTrainTicketResponse
         """
 
-        all_params = ['recognize_train_ticket_request_body']
+        all_params = ['project_id', 'train_ticket_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1143,6 +1116,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -1164,7 +1139,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/train-ticket',
+            resource_path='/v2/{project_id}/ocr/train-ticket',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -1197,7 +1172,7 @@ class OcrAsyncClient(Client):
         :return: RecognizeTransportationLicenseResponse
         """
 
-        all_params = ['recognize_transportation_license_request_body']
+        all_params = ['project_id', 'transportation_license_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1206,6 +1181,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -1227,7 +1204,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/transportation-license',
+            resource_path='/v2/{project_id}/ocr/transportation-license',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -1260,7 +1237,7 @@ class OcrAsyncClient(Client):
         :return: RecognizeVatInvoiceResponse
         """
 
-        all_params = ['recognize_vat_invoice_request_body']
+        all_params = ['project_id', 'recognize_vat_invoice_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1269,6 +1246,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -1290,7 +1269,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/vat-invoice',
+            resource_path='/v2/{project_id}/ocr/vat-invoice',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -1323,7 +1302,7 @@ class OcrAsyncClient(Client):
         :return: RecognizeVehicleLicenseResponse
         """
 
-        all_params = ['recognize_vehicle_license_request_body']
+        all_params = ['project_id', 'recognize_vehicle_license_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1332,6 +1311,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -1353,7 +1334,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/vehicle-license',
+            resource_path='/v2/{project_id}/ocr/vehicle-license',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -1370,7 +1351,7 @@ class OcrAsyncClient(Client):
     def recognize_web_image_async(self, request):
         """网络图片识别
 
-        识别用户上传的网络图片中的文字内容，并返回识别的结构化结果。
+        识别网络图片中的文字内容，并返回识别的结构化结果。
 
         :param RecognizeWebImageRequest request
         :return: RecognizeWebImageResponse
@@ -1380,13 +1361,13 @@ class OcrAsyncClient(Client):
     def recognize_web_image_with_http_info(self, request):
         """网络图片识别
 
-        识别用户上传的网络图片中的文字内容，并返回识别的结构化结果。
+        识别网络图片中的文字内容，并返回识别的结构化结果。
 
         :param RecognizeWebImageRequest request
         :return: RecognizeWebImageResponse
         """
 
-        all_params = ['recognize_web_image_request_body']
+        all_params = ['project_id', 'recognize_web_image_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1395,6 +1376,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -1416,7 +1399,7 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/web-image',
+            resource_path='/v2/{project_id}/ocr/web-image',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -1435,8 +1418,8 @@ class OcrAsyncClient(Client):
 
         识别图片中的车架号信息，并将识别结果返回给用户。 
 
-        :param RecognizeVinRequest request
-        :return: RecognizeVinResponse
+        :param RecognizeVINRequest request
+        :return: RecognizeVINResponse
         """
         return self.recognize_vin_with_http_info(request)
 
@@ -1445,11 +1428,11 @@ class OcrAsyncClient(Client):
 
         识别图片中的车架号信息，并将识别结果返回给用户。 
 
-        :param RecognizeVinRequest request
-        :return: RecognizeVinResponse
+        :param RecognizeVINRequest request
+        :return: RecognizeVINResponse
         """
 
-        all_params = ['recognize_vin_request_body']
+        all_params = ['project_id', 'recognize_vin_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1458,6 +1441,8 @@ class OcrAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -1479,14 +1464,14 @@ class OcrAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/ocr/vin',
+            resource_path='/v2/{project_id}/ocr/vin',
             method='POST',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='RecognizeVinResponse',
+            response_type='RecognizeVINResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

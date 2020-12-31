@@ -38,8 +38,14 @@ class EipClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkeip.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls)
+
+        if clazz.__name__ != "EipClient":
+            raise TypeError("client type error, support client type is EipClient")
+
         return ClientBuilder(clazz)
 
     def add_publicips_into_shared_bandwidth(self, request):

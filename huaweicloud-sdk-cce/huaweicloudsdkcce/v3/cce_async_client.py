@@ -38,8 +38,14 @@ class CceAsyncClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkcce.v3.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls)
+
+        if clazz.__name__ != "CceClient":
+            raise TypeError("client type error, support client type is CceClient")
+
         return ClientBuilder(clazz)
 
     def awake_cluster_async(self, request):

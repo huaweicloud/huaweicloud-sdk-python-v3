@@ -32,12 +32,15 @@ class InstanceParam:
         'label_tag': 'str',
         'plugin_enable_list': 'list[str]',
         'plugin_vars': 'dict(str, str)',
+        'port_id': 'str',
+        'private_ip': 'str',
         'pvc_quantity': 'str',
         'refresh_interval': 'str',
         'repository_id': 'int',
         'stack_id': 'str',
         'task_type': 'str',
-        'token': 'str'
+        'token': 'str',
+        'vpc_id': 'str'
     }
 
     attribute_map = {
@@ -50,15 +53,18 @@ class InstanceParam:
         'label_tag': 'label_tag',
         'plugin_enable_list': 'plugin_enable_list',
         'plugin_vars': 'plugin_vars',
+        'port_id': 'port_id',
+        'private_ip': 'private_ip',
         'pvc_quantity': 'pvc_quantity',
         'refresh_interval': 'refresh_interval',
         'repository_id': 'repository_id',
         'stack_id': 'stack_id',
         'task_type': 'task_type',
-        'token': 'token'
+        'token': 'token',
+        'vpc_id': 'vpc_id'
     }
 
-    def __init__(self, agent_id=None, arch=None, cpu_memory=None, description=None, display_name=None, is_temporary=None, label_tag=None, plugin_enable_list=None, plugin_vars=None, pvc_quantity=None, refresh_interval=None, repository_id=None, stack_id=None, task_type=None, token=None):
+    def __init__(self, agent_id=None, arch=None, cpu_memory=None, description=None, display_name=None, is_temporary=None, label_tag=None, plugin_enable_list=None, plugin_vars=None, port_id=None, private_ip=None, pvc_quantity=None, refresh_interval=None, repository_id=None, stack_id=None, task_type=None, token=None, vpc_id=None):
         """InstanceParam - a model defined in huaweicloud sdk"""
         
         
@@ -72,12 +78,15 @@ class InstanceParam:
         self._label_tag = None
         self._plugin_enable_list = None
         self._plugin_vars = None
+        self._port_id = None
+        self._private_ip = None
         self._pvc_quantity = None
         self._refresh_interval = None
         self._repository_id = None
         self._stack_id = None
         self._task_type = None
         self._token = None
+        self._vpc_id = None
         self.discriminator = None
 
         if agent_id is not None:
@@ -96,6 +105,10 @@ class InstanceParam:
             self.plugin_enable_list = plugin_enable_list
         if plugin_vars is not None:
             self.plugin_vars = plugin_vars
+        if port_id is not None:
+            self.port_id = port_id
+        if private_ip is not None:
+            self.private_ip = private_ip
         self.pvc_quantity = pvc_quantity
         self.refresh_interval = refresh_interval
         if repository_id is not None:
@@ -105,6 +118,8 @@ class InstanceParam:
             self.task_type = task_type
         if token is not None:
             self.token = token
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
 
     @property
     def agent_id(self):
@@ -305,6 +320,50 @@ class InstanceParam:
         self._plugin_vars = plugin_vars
 
     @property
+    def port_id(self):
+        """Gets the port_id of this InstanceParam.
+
+        云服务器对应的portId，标签为webshell-internal时使用
+
+        :return: The port_id of this InstanceParam.
+        :rtype: str
+        """
+        return self._port_id
+
+    @port_id.setter
+    def port_id(self, port_id):
+        """Sets the port_id of this InstanceParam.
+
+        云服务器对应的portId，标签为webshell-internal时使用
+
+        :param port_id: The port_id of this InstanceParam.
+        :type: str
+        """
+        self._port_id = port_id
+
+    @property
+    def private_ip(self):
+        """Gets the private_ip of this InstanceParam.
+
+        云服务器ip，标签为webshell-internal时使用
+
+        :return: The private_ip of this InstanceParam.
+        :rtype: str
+        """
+        return self._private_ip
+
+    @private_ip.setter
+    def private_ip(self, private_ip):
+        """Sets the private_ip of this InstanceParam.
+
+        云服务器ip，标签为webshell-internal时使用
+
+        :param private_ip: The private_ip of this InstanceParam.
+        :type: str
+        """
+        self._private_ip = private_ip
+
+    @property
     def pvc_quantity(self):
         """Gets the pvc_quantity of this InstanceParam.
 
@@ -435,6 +494,28 @@ class InstanceParam:
         :type: str
         """
         self._token = token
+
+    @property
+    def vpc_id(self):
+        """Gets the vpc_id of this InstanceParam.
+
+        云服务器对应的vpcId，标签为webshell-internal时使用
+
+        :return: The vpc_id of this InstanceParam.
+        :rtype: str
+        """
+        return self._vpc_id
+
+    @vpc_id.setter
+    def vpc_id(self, vpc_id):
+        """Sets the vpc_id of this InstanceParam.
+
+        云服务器对应的vpcId，标签为webshell-internal时使用
+
+        :param vpc_id: The vpc_id of this InstanceParam.
+        :type: str
+        """
+        self._vpc_id = vpc_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

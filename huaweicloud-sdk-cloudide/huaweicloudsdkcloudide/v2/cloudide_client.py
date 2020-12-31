@@ -38,8 +38,14 @@ class CloudIDEClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkcloudide.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls)
+
+        if clazz.__name__ != "CloudIDEClient":
+            raise TypeError("client type error, support client type is CloudIDEClient")
+
         return ClientBuilder(clazz)
 
     def list_project_templates(self, request):
@@ -165,6 +171,67 @@ class CloudIDEClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListStacksByTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_account_status(self, request):
+        """查询当前账号访问权限
+
+        查询当前账号访问权限
+
+        :param ShowAccountStatusRequest request
+        :return: ShowAccountStatusResponse
+        """
+        return self.show_account_status_with_http_info(request)
+
+    def show_account_status_with_http_info(self, request):
+        """查询当前账号访问权限
+
+        查询当前账号访问权限
+
+        :param ShowAccountStatusRequest request
+        :return: ShowAccountStatusResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/permission/account/status',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowAccountStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -507,7 +574,7 @@ class CloudIDEClient(Client):
         :return: ListInstancesResponse
         """
 
-        all_params = ['limit', 'offset', 'search', 'sort_dir', 'sort_key']
+        all_params = ['limit', 'offset', 'is_temporary', 'label', 'search', 'sort_dir', 'sort_key']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -522,6 +589,10 @@ class CloudIDEClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'is_temporary' in local_var_params:
+            query_params.append(('is_temporary', local_var_params['is_temporary']))
+        if 'label' in local_var_params:
+            query_params.append(('label', local_var_params['label']))
         if 'search' in local_var_params:
             query_params.append(('search', local_var_params['search']))
         if 'sort_dir' in local_var_params:
@@ -712,7 +783,7 @@ class CloudIDEClient(Client):
         :return: StartInstanceResponse
         """
 
-        all_params = ['instance_id']
+        all_params = ['instance_id', 'start_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -731,6 +802,8 @@ class CloudIDEClient(Client):
         form_params = {}
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 

@@ -26,7 +26,7 @@ class HotkeysBody:
         'name': 'str',
         'type': 'str',
         'shard': 'str',
-        'db': 'str',
+        'db': 'int',
         'size': 'int',
         'unit': 'str',
         'freq': 'int'
@@ -119,7 +119,7 @@ class HotkeysBody:
     def shard(self):
         """Gets the shard of this HotkeysBody.
 
-        大key所在的分片，仅在实例类型为集群时支持,格式为ip:port
+        热key所在的分片，仅在实例类型为集群时支持,格式为ip:port
 
         :return: The shard of this HotkeysBody.
         :rtype: str
@@ -130,7 +130,7 @@ class HotkeysBody:
     def shard(self, shard):
         """Sets the shard of this HotkeysBody.
 
-        大key所在的分片，仅在实例类型为集群时支持,格式为ip:port
+        热key所在的分片，仅在实例类型为集群时支持,格式为ip:port
 
         :param shard: The shard of this HotkeysBody.
         :type: str
@@ -141,10 +141,10 @@ class HotkeysBody:
     def db(self):
         """Gets the db of this HotkeysBody.
 
-        大key所在的db
+        热key所在的db
 
         :return: The db of this HotkeysBody.
-        :rtype: str
+        :rtype: int
         """
         return self._db
 
@@ -152,10 +152,10 @@ class HotkeysBody:
     def db(self, db):
         """Sets the db of this HotkeysBody.
 
-        大key所在的db
+        热key所在的db
 
         :param db: The db of this HotkeysBody.
-        :type: str
+        :type: int
         """
         self._db = db
 

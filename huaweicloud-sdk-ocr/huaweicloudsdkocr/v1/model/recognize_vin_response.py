@@ -9,7 +9,7 @@ import six
 from huaweicloudsdkcore.sdk_response import SdkResponse
 
 
-class RecognizeVinResponse(SdkResponse):
+class RecognizeVINResponse(SdkResponse):
 
 
     """
@@ -23,7 +23,7 @@ class RecognizeVinResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'RecognizeVinResultResponse'
+        'result': 'VINResponseBodyItem'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class RecognizeVinResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeVinResponse - a model defined in huaweicloud sdk"""
+        """RecognizeVINResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
@@ -43,21 +43,21 @@ class RecognizeVinResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeVinResponse.
+        """Gets the result of this RecognizeVINResponse.
 
 
-        :return: The result of this RecognizeVinResponse.
-        :rtype: RecognizeVinResultResponse
+        :return: The result of this RecognizeVINResponse.
+        :rtype: VINResponseBodyItem
         """
         return self._result
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeVinResponse.
+        """Sets the result of this RecognizeVINResponse.
 
 
-        :param result: The result of this RecognizeVinResponse.
-        :type: RecognizeVinResultResponse
+        :param result: The result of this RecognizeVINResponse.
+        :type: VINResponseBodyItem
         """
         self._result = result
 
@@ -98,7 +98,7 @@ class RecognizeVinResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RecognizeVinResponse):
+        if not isinstance(other, RecognizeVINResponse):
             return False
 
         return self.__dict__ == other.__dict__

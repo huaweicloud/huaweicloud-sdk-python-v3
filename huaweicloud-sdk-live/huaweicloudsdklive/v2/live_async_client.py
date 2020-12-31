@@ -38,8 +38,14 @@ class LiveAsyncClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdklive.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls)
+
+        if clazz.__name__ != "LiveClient":
+            raise TypeError("client type error, support client type is LiveClient")
+
         return ClientBuilder(clazz)
 
     def list_bandwidth_detail_async(self, request):

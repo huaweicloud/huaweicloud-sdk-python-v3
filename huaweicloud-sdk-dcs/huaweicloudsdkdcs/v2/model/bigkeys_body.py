@@ -26,7 +26,7 @@ class BigkeysBody:
         'name': 'str',
         'type': 'str',
         'shard': 'str',
-        'db': 'str',
+        'db': 'int',
         'size': 'int',
         'unit': 'str'
     }
@@ -139,7 +139,7 @@ class BigkeysBody:
         大key所在的db
 
         :return: The db of this BigkeysBody.
-        :rtype: str
+        :rtype: int
         """
         return self._db
 
@@ -150,7 +150,7 @@ class BigkeysBody:
         大key所在的db
 
         :param db: The db of this BigkeysBody.
-        :type: str
+        :type: int
         """
         self._db = db
 

@@ -38,8 +38,14 @@ class EvsAsyncClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkevs.v2.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls)
+
+        if clazz.__name__ != "EvsClient":
+            raise TypeError("client type error, support client type is EvsClient")
+
         return ClientBuilder(clazz)
 
     def batch_create_volume_tags_async(self, request):

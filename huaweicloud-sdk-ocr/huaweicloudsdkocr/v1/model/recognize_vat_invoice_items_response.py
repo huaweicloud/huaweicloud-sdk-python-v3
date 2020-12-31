@@ -28,9 +28,13 @@ class RecognizeVatInvoiceItemsResponse:
         'unit': 'str',
         'quantity': 'str',
         'unit_price': 'str',
+        'license_plate_number': 'str',
         'amount': 'str',
         'tax_rate': 'str',
-        'tax': 'str'
+        'tax': 'str',
+        'end_date': 'str',
+        'start_date': 'str',
+        'vehicle_type': 'str'
     }
 
     attribute_map = {
@@ -39,12 +43,16 @@ class RecognizeVatInvoiceItemsResponse:
         'unit': 'unit',
         'quantity': 'quantity',
         'unit_price': 'unit_price',
+        'license_plate_number': 'license_plate_number',
         'amount': 'amount',
         'tax_rate': 'tax_rate',
-        'tax': 'tax'
+        'tax': 'tax',
+        'end_date': 'end_date',
+        'start_date': 'start_date',
+        'vehicle_type': 'vehicle_type'
     }
 
-    def __init__(self, name=None, specification=None, unit=None, quantity=None, unit_price=None, amount=None, tax_rate=None, tax=None):
+    def __init__(self, name=None, specification=None, unit=None, quantity=None, unit_price=None, license_plate_number=None, amount=None, tax_rate=None, tax=None, end_date=None, start_date=None, vehicle_type=None):
         """RecognizeVatInvoiceItemsResponse - a model defined in huaweicloud sdk"""
         
         
@@ -54,9 +62,13 @@ class RecognizeVatInvoiceItemsResponse:
         self._unit = None
         self._quantity = None
         self._unit_price = None
+        self._license_plate_number = None
         self._amount = None
         self._tax_rate = None
         self._tax = None
+        self._end_date = None
+        self._start_date = None
+        self._vehicle_type = None
         self.discriminator = None
 
         if name is not None:
@@ -69,12 +81,20 @@ class RecognizeVatInvoiceItemsResponse:
             self.quantity = quantity
         if unit_price is not None:
             self.unit_price = unit_price
+        if license_plate_number is not None:
+            self.license_plate_number = license_plate_number
         if amount is not None:
             self.amount = amount
         if tax_rate is not None:
             self.tax_rate = tax_rate
         if tax is not None:
             self.tax = tax
+        if end_date is not None:
+            self.end_date = end_date
+        if start_date is not None:
+            self.start_date = start_date
+        if vehicle_type is not None:
+            self.vehicle_type = vehicle_type
 
     @property
     def name(self):
@@ -187,6 +207,28 @@ class RecognizeVatInvoiceItemsResponse:
         self._unit_price = unit_price
 
     @property
+    def license_plate_number(self):
+        """Gets the license_plate_number of this RecognizeVatInvoiceItemsResponse.
+
+        车牌号码。 当“advanced_mode”设置为“true”时才返回。 
+
+        :return: The license_plate_number of this RecognizeVatInvoiceItemsResponse.
+        :rtype: str
+        """
+        return self._license_plate_number
+
+    @license_plate_number.setter
+    def license_plate_number(self, license_plate_number):
+        """Sets the license_plate_number of this RecognizeVatInvoiceItemsResponse.
+
+        车牌号码。 当“advanced_mode”设置为“true”时才返回。 
+
+        :param license_plate_number: The license_plate_number of this RecognizeVatInvoiceItemsResponse.
+        :type: str
+        """
+        self._license_plate_number = license_plate_number
+
+    @property
     def amount(self):
         """Gets the amount of this RecognizeVatInvoiceItemsResponse.
 
@@ -251,6 +293,72 @@ class RecognizeVatInvoiceItemsResponse:
         :type: str
         """
         self._tax = tax
+
+    @property
+    def end_date(self):
+        """Gets the end_date of this RecognizeVatInvoiceItemsResponse.
+
+        通行日期止。 当“advanced_mode”设置为“true”时才返回。 
+
+        :return: The end_date of this RecognizeVatInvoiceItemsResponse.
+        :rtype: str
+        """
+        return self._end_date
+
+    @end_date.setter
+    def end_date(self, end_date):
+        """Sets the end_date of this RecognizeVatInvoiceItemsResponse.
+
+        通行日期止。 当“advanced_mode”设置为“true”时才返回。 
+
+        :param end_date: The end_date of this RecognizeVatInvoiceItemsResponse.
+        :type: str
+        """
+        self._end_date = end_date
+
+    @property
+    def start_date(self):
+        """Gets the start_date of this RecognizeVatInvoiceItemsResponse.
+
+        通行日期起。 当“advanced_mode”设置为“true”时才返回。 
+
+        :return: The start_date of this RecognizeVatInvoiceItemsResponse.
+        :rtype: str
+        """
+        return self._start_date
+
+    @start_date.setter
+    def start_date(self, start_date):
+        """Sets the start_date of this RecognizeVatInvoiceItemsResponse.
+
+        通行日期起。 当“advanced_mode”设置为“true”时才返回。 
+
+        :param start_date: The start_date of this RecognizeVatInvoiceItemsResponse.
+        :type: str
+        """
+        self._start_date = start_date
+
+    @property
+    def vehicle_type(self):
+        """Gets the vehicle_type of this RecognizeVatInvoiceItemsResponse.
+
+        车辆类型。 当“advanced_mode”设置为“true”时才返回。 
+
+        :return: The vehicle_type of this RecognizeVatInvoiceItemsResponse.
+        :rtype: str
+        """
+        return self._vehicle_type
+
+    @vehicle_type.setter
+    def vehicle_type(self, vehicle_type):
+        """Sets the vehicle_type of this RecognizeVatInvoiceItemsResponse.
+
+        车辆类型。 当“advanced_mode”设置为“true”时才返回。 
+
+        :param vehicle_type: The vehicle_type of this RecognizeVatInvoiceItemsResponse.
+        :type: str
+        """
+        self._vehicle_type = vehicle_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

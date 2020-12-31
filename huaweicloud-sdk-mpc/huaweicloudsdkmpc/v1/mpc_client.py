@@ -38,8 +38,14 @@ class MpcClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkmpc.v1.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls)
+
+        if clazz.__name__ != "MpcClient":
+            raise TypeError("client type error, support client type is MpcClient")
+
         return ClientBuilder(clazz)
 
     def create_animated_graphics_task(self, request):

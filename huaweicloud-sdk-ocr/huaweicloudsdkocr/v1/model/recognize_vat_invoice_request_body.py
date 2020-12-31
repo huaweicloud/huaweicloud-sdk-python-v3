@@ -24,27 +24,32 @@ class RecognizeVatInvoiceRequestBody:
 
     openapi_types = {
         'url': 'str',
-        'image': 'str'
+        'image': 'str',
+        'advanced_mode': 'bool'
     }
 
     attribute_map = {
         'url': 'url',
-        'image': 'image'
+        'image': 'image',
+        'advanced_mode': 'advanced_mode'
     }
 
-    def __init__(self, url=None, image=None):
+    def __init__(self, url=None, image=None, advanced_mode=None):
         """RecognizeVatInvoiceRequestBody - a model defined in huaweicloud sdk"""
         
         
 
         self._url = None
         self._image = None
+        self._advanced_mode = None
         self.discriminator = None
 
         if url is not None:
             self.url = url
         if image is not None:
             self.image = image
+        if advanced_mode is not None:
+            self.advanced_mode = advanced_mode
 
     @property
     def url(self):
@@ -72,7 +77,7 @@ class RecognizeVatInvoiceRequestBody:
     def image(self):
         """Gets the image of this RecognizeVatInvoiceRequestBody.
 
-        图片文件Base64编码字符串。要求base64编码后大小不超过10M。  图片最小边不小于100像素，最长边不超过8192像素。  支持JPEG/JPG/PNG/BMP/TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。 
+        图片文件Base64编码字符串。要求base64编码后大小不超过10M。  图片最小边不小于100像素，最长边不超过8192像素。  支持JPEG/JPG/PNG/BMP/TIFF格式。 
 
         :return: The image of this RecognizeVatInvoiceRequestBody.
         :rtype: str
@@ -83,12 +88,34 @@ class RecognizeVatInvoiceRequestBody:
     def image(self, image):
         """Sets the image of this RecognizeVatInvoiceRequestBody.
 
-        图片文件Base64编码字符串。要求base64编码后大小不超过10M。  图片最小边不小于100像素，最长边不超过8192像素。  支持JPEG/JPG/PNG/BMP/TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。 
+        图片文件Base64编码字符串。要求base64编码后大小不超过10M。  图片最小边不小于100像素，最长边不超过8192像素。  支持JPEG/JPG/PNG/BMP/TIFF格式。 
 
         :param image: The image of this RecognizeVatInvoiceRequestBody.
         :type: str
         """
         self._image = image
+
+    @property
+    def advanced_mode(self):
+        """Gets the advanced_mode of this RecognizeVatInvoiceRequestBody.
+
+        默认为false，如果传参为true，则返回更多字段 
+
+        :return: The advanced_mode of this RecognizeVatInvoiceRequestBody.
+        :rtype: bool
+        """
+        return self._advanced_mode
+
+    @advanced_mode.setter
+    def advanced_mode(self, advanced_mode):
+        """Sets the advanced_mode of this RecognizeVatInvoiceRequestBody.
+
+        默认为false，如果传参为true，则返回更多字段 
+
+        :param advanced_mode: The advanced_mode of this RecognizeVatInvoiceRequestBody.
+        :type: bool
+        """
+        self._advanced_mode = advanced_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

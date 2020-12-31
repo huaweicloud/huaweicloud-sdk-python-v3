@@ -23,23 +23,47 @@ class RecognizePassportRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'RecognizePassportRequestBody'
+        'project_id': 'str',
+        'body': 'PassportReq'
     }
 
     attribute_map = {
+        'project_id': 'project_id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, project_id=None, body=None):
         """RecognizePassportRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._project_id = None
         self._body = None
         self.discriminator = None
 
+        self.project_id = project_id
         if body is not None:
             self.body = body
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this RecognizePassportRequest.
+
+
+        :return: The project_id of this RecognizePassportRequest.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this RecognizePassportRequest.
+
+
+        :param project_id: The project_id of this RecognizePassportRequest.
+        :type: str
+        """
+        self._project_id = project_id
 
     @property
     def body(self):
@@ -47,7 +71,7 @@ class RecognizePassportRequest:
 
 
         :return: The body of this RecognizePassportRequest.
-        :rtype: RecognizePassportRequestBody
+        :rtype: PassportReq
         """
         return self._body
 
@@ -57,7 +81,7 @@ class RecognizePassportRequest:
 
 
         :param body: The body of this RecognizePassportRequest.
-        :type: RecognizePassportRequestBody
+        :type: PassportReq
         """
         self._body = body
 

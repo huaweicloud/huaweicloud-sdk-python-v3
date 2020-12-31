@@ -38,8 +38,14 @@ class RmsAsyncClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkrms.v1.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls, "GlobalCredentials")
+
+        if clazz.__name__ != "RmsClient":
+            raise TypeError("client type error, support client type is RmsClient")
+
         return ClientBuilder(clazz, "GlobalCredentials")
 
     def show_resource_history_async(self, request):

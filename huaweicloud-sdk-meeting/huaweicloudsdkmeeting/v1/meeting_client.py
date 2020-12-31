@@ -38,8 +38,14 @@ class MeetingClient(Client):
         self.model_package = importlib.import_module("huaweicloudsdkmeeting.v1.model")
         self.preset_headers = {'User-Agent': 'HuaweiCloud-SDK-Python'}
 
-    @staticmethod
-    def new_builder(clazz):
+    @classmethod
+    def new_builder(cls, clazz=None):
+        if clazz is None:
+            return ClientBuilder(cls, "MeetingCredentials")
+
+        if clazz.__name__ != "MeetingClient":
+            raise TypeError("client type error, support client type is MeetingClient")
+
         return ClientBuilder(clazz, "MeetingCredentials")
 
     def add_corp(self, request):

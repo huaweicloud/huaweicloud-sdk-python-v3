@@ -43,6 +43,7 @@ from huaweicloudsdkrds.v3.model.create_database_response import CreateDatabaseRe
 from huaweicloudsdkrds.v3.model.create_db_user_request import CreateDbUserRequest
 from huaweicloudsdkrds.v3.model.create_db_user_response import CreateDbUserResponse
 from huaweicloudsdkrds.v3.model.create_instance_request import CreateInstanceRequest
+from huaweicloudsdkrds.v3.model.create_instance_resp_item import CreateInstanceRespItem
 from huaweicloudsdkrds.v3.model.create_instance_response import CreateInstanceResponse
 from huaweicloudsdkrds.v3.model.data_ip_request import DataIpRequest
 from huaweicloudsdkrds.v3.model.database_for_creation import DatabaseForCreation

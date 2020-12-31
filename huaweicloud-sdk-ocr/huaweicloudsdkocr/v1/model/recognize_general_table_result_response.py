@@ -48,7 +48,7 @@ class RecognizeGeneralTableResultResponse:
     def words_region_count(self):
         """Gets the words_region_count of this RecognizeGeneralTableResultResponse.
 
-        文字区域数目。 
+        文字区域数目。          
 
         :return: The words_region_count of this RecognizeGeneralTableResultResponse.
         :rtype: int
@@ -59,7 +59,7 @@ class RecognizeGeneralTableResultResponse:
     def words_region_count(self, words_region_count):
         """Sets the words_region_count of this RecognizeGeneralTableResultResponse.
 
-        文字区域数目。 
+        文字区域数目。          
 
         :param words_region_count: The words_region_count of this RecognizeGeneralTableResultResponse.
         :type: int

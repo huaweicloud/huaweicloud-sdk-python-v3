@@ -33,6 +33,7 @@ class RecognizeVehicleLicenseResultResponse:
         'vin': 'str',
         'register_date': 'str',
         'issue_date': 'str',
+        'issuing_authority': 'str',
         'file_no': 'str',
         'approved_passengers': 'str',
         'gross_mass': 'str',
@@ -56,6 +57,7 @@ class RecognizeVehicleLicenseResultResponse:
         'vin': 'vin',
         'register_date': 'register_date',
         'issue_date': 'issue_date',
+        'issuing_authority': 'issuing_authority',
         'file_no': 'file_no',
         'approved_passengers': 'approved_passengers',
         'gross_mass': 'gross_mass',
@@ -68,7 +70,7 @@ class RecognizeVehicleLicenseResultResponse:
         'code_number': 'code_number'
     }
 
-    def __init__(self, number=None, vehicle_type=None, name=None, address=None, use_character=None, model=None, engine_no=None, vin=None, register_date=None, issue_date=None, file_no=None, approved_passengers=None, gross_mass=None, unladen_mass=None, approved_load=None, dimension=None, traction_mass=None, remarks=None, inspection_record=None, code_number=None):
+    def __init__(self, number=None, vehicle_type=None, name=None, address=None, use_character=None, model=None, engine_no=None, vin=None, register_date=None, issue_date=None, issuing_authority=None, file_no=None, approved_passengers=None, gross_mass=None, unladen_mass=None, approved_load=None, dimension=None, traction_mass=None, remarks=None, inspection_record=None, code_number=None):
         """RecognizeVehicleLicenseResultResponse - a model defined in huaweicloud sdk"""
         
         
@@ -83,6 +85,7 @@ class RecognizeVehicleLicenseResultResponse:
         self._vin = None
         self._register_date = None
         self._issue_date = None
+        self._issuing_authority = None
         self._file_no = None
         self._approved_passengers = None
         self._gross_mass = None
@@ -115,6 +118,8 @@ class RecognizeVehicleLicenseResultResponse:
             self.register_date = register_date
         if issue_date is not None:
             self.issue_date = issue_date
+        if issuing_authority is not None:
+            self.issuing_authority = issuing_authority
         if file_no is not None:
             self.file_no = file_no
         if approved_passengers is not None:
@@ -355,6 +360,28 @@ class RecognizeVehicleLicenseResultResponse:
         :type: str
         """
         self._issue_date = issue_date
+
+    @property
+    def issuing_authority(self):
+        """Gets the issuing_authority of this RecognizeVehicleLicenseResultResponse.
+
+        发证机关。 
+
+        :return: The issuing_authority of this RecognizeVehicleLicenseResultResponse.
+        :rtype: str
+        """
+        return self._issuing_authority
+
+    @issuing_authority.setter
+    def issuing_authority(self, issuing_authority):
+        """Sets the issuing_authority of this RecognizeVehicleLicenseResultResponse.
+
+        发证机关。 
+
+        :param issuing_authority: The issuing_authority of this RecognizeVehicleLicenseResultResponse.
+        :type: str
+        """
+        self._issuing_authority = issuing_authority
 
     @property
     def file_no(self):

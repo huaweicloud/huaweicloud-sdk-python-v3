@@ -26,7 +26,7 @@ class SlowlogItem:
         'id': 'int',
         'command': 'str',
         'start_time': 'str',
-        'duration': 'int',
+        'duration': 'str',
         'shard_name': 'str'
     }
 
@@ -134,7 +134,7 @@ class SlowlogItem:
         持续时间，单位是ms
 
         :return: The duration of this SlowlogItem.
-        :rtype: int
+        :rtype: str
         """
         return self._duration
 
@@ -145,7 +145,7 @@ class SlowlogItem:
         持续时间，单位是ms
 
         :param duration: The duration of this SlowlogItem.
-        :type: int
+        :type: str
         """
         self._duration = duration
 

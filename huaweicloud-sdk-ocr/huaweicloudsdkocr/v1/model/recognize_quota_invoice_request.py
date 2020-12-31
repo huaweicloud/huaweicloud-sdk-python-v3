@@ -23,23 +23,47 @@ class RecognizeQuotaInvoiceRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'RecognizeQuotaInvoiceRequestBody'
+        'project_id': 'str',
+        'body': 'QuotaInvoiceReq'
     }
 
     attribute_map = {
+        'project_id': 'project_id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, project_id=None, body=None):
         """RecognizeQuotaInvoiceRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._project_id = None
         self._body = None
         self.discriminator = None
 
+        self.project_id = project_id
         if body is not None:
             self.body = body
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this RecognizeQuotaInvoiceRequest.
+
+
+        :return: The project_id of this RecognizeQuotaInvoiceRequest.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this RecognizeQuotaInvoiceRequest.
+
+
+        :param project_id: The project_id of this RecognizeQuotaInvoiceRequest.
+        :type: str
+        """
+        self._project_id = project_id
 
     @property
     def body(self):
@@ -47,7 +71,7 @@ class RecognizeQuotaInvoiceRequest:
 
 
         :return: The body of this RecognizeQuotaInvoiceRequest.
-        :rtype: RecognizeQuotaInvoiceRequestBody
+        :rtype: QuotaInvoiceReq
         """
         return self._body
 
@@ -57,7 +81,7 @@ class RecognizeQuotaInvoiceRequest:
 
 
         :param body: The body of this RecognizeQuotaInvoiceRequest.
-        :type: RecognizeQuotaInvoiceRequestBody
+        :type: QuotaInvoiceReq
         """
         self._body = body
 
