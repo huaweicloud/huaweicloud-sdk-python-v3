@@ -36,7 +36,10 @@ class ParticipantInfo:
         'email': 'str',
         'sms': 'str',
         'dept_name': 'str',
-        'user_uuid': 'str'
+        'user_uuid': 'str',
+        'app_id': 'str',
+        'is_auto_invite': 'int',
+        'is_not_overlay_pid_name': 'bool'
     }
 
     attribute_map = {
@@ -53,10 +56,13 @@ class ParticipantInfo:
         'email': 'email',
         'sms': 'sms',
         'dept_name': 'deptName',
-        'user_uuid': 'userUUID'
+        'user_uuid': 'userUUID',
+        'app_id': 'appId',
+        'is_auto_invite': 'isAutoInvite',
+        'is_not_overlay_pid_name': 'isNotOverlayPidName'
     }
 
-    def __init__(self, participant_id=None, name=None, subscriber_id=None, role=None, state=None, address=None, attendee_type=None, account_id=None, phone2=None, phone3=None, email=None, sms=None, dept_name=None, user_uuid=None):
+    def __init__(self, participant_id=None, name=None, subscriber_id=None, role=None, state=None, address=None, attendee_type=None, account_id=None, phone2=None, phone3=None, email=None, sms=None, dept_name=None, user_uuid=None, app_id=None, is_auto_invite=None, is_not_overlay_pid_name=None):
         """ParticipantInfo - a model defined in huaweicloud sdk"""
         
         
@@ -75,6 +81,9 @@ class ParticipantInfo:
         self._sms = None
         self._dept_name = None
         self._user_uuid = None
+        self._app_id = None
+        self._is_auto_invite = None
+        self._is_not_overlay_pid_name = None
         self.discriminator = None
 
         if participant_id is not None:
@@ -105,6 +114,12 @@ class ParticipantInfo:
             self.dept_name = dept_name
         if user_uuid is not None:
             self.user_uuid = user_uuid
+        if app_id is not None:
+            self.app_id = app_id
+        if is_auto_invite is not None:
+            self.is_auto_invite = is_auto_invite
+        if is_not_overlay_pid_name is not None:
+            self.is_not_overlay_pid_name = is_not_overlay_pid_name
 
     @property
     def participant_id(self):
@@ -413,6 +428,72 @@ class ParticipantInfo:
         :type: str
         """
         self._user_uuid = user_uuid
+
+    @property
+    def app_id(self):
+        """Gets the app_id of this ParticipantInfo.
+
+        第三方应用ID。
+
+        :return: The app_id of this ParticipantInfo.
+        :rtype: str
+        """
+        return self._app_id
+
+    @app_id.setter
+    def app_id(self, app_id):
+        """Sets the app_id of this ParticipantInfo.
+
+        第三方应用ID。
+
+        :param app_id: The app_id of this ParticipantInfo.
+        :type: str
+        """
+        self._app_id = app_id
+
+    @property
+    def is_auto_invite(self):
+        """Gets the is_auto_invite of this ParticipantInfo.
+
+        会议开始时是否自动邀请该与会者。
+
+        :return: The is_auto_invite of this ParticipantInfo.
+        :rtype: int
+        """
+        return self._is_auto_invite
+
+    @is_auto_invite.setter
+    def is_auto_invite(self, is_auto_invite):
+        """Sets the is_auto_invite of this ParticipantInfo.
+
+        会议开始时是否自动邀请该与会者。
+
+        :param is_auto_invite: The is_auto_invite of this ParticipantInfo.
+        :type: int
+        """
+        self._is_auto_invite = is_auto_invite
+
+    @property
+    def is_not_overlay_pid_name(self):
+        """Gets the is_not_overlay_pid_name of this ParticipantInfo.
+
+        是否不叠加会场名。
+
+        :return: The is_not_overlay_pid_name of this ParticipantInfo.
+        :rtype: bool
+        """
+        return self._is_not_overlay_pid_name
+
+    @is_not_overlay_pid_name.setter
+    def is_not_overlay_pid_name(self, is_not_overlay_pid_name):
+        """Sets the is_not_overlay_pid_name of this ParticipantInfo.
+
+        是否不叠加会场名。
+
+        :param is_not_overlay_pid_name: The is_not_overlay_pid_name of this ParticipantInfo.
+        :type: bool
+        """
+        self._is_not_overlay_pid_name = is_not_overlay_pid_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

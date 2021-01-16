@@ -48,134 +48,6 @@ class BssintlAsyncClient(Client):
 
         return ClientBuilder(clazz, "GlobalCredentials")
 
-    def list_conversions_async(self, request):
-        """查询用量单位进制
-
-        功能描述：查询用量单位进制
-
-        :param ListConversionsRequest request
-        :return: ListConversionsResponse
-        """
-        return self.list_conversions_with_http_info(request)
-
-    def list_conversions_with_http_info(self, request):
-        """查询用量单位进制
-
-        功能描述：查询用量单位进制
-
-        :param ListConversionsRequest request
-        :return: ListConversionsResponse
-        """
-
-        all_params = ['x_language', 'measure_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'measure_type' in local_var_params:
-            query_params.append(('measure_type', local_var_params['measure_type']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/bases/conversions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListConversionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_measure_units_async(self, request):
-        """查询用量单位列表
-
-        功能描述：查询用量单位列表
-
-        :param ListMeasureUnitsRequest request
-        :return: ListMeasureUnitsResponse
-        """
-        return self.list_measure_units_with_http_info(request)
-
-    def list_measure_units_with_http_info(self, request):
-        """查询用量单位列表
-
-        功能描述：查询用量单位列表
-
-        :param ListMeasureUnitsRequest request
-        :return: ListMeasureUnitsResponse
-        """
-
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/bases/measurements',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListMeasureUnitsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def list_postpaid_bill_sum_async(self, request):
         """查询伙伴月度消费账单
 
@@ -764,7 +636,7 @@ class BssintlAsyncClient(Client):
         :return: ListCustomerselfResourceRecordsResponse
         """
 
-        all_params = ['cycle', 'x_language', 'cloud_service_type', 'region', 'charge_mode', 'bill_type', 'offset', 'limit', 'resource_id', 'enterprise_project_id', 'include_zero_record', 'method', 'sub_customer_id', 'trade_id']
+        all_params = ['cycle', 'x_language', 'cloud_service_type', 'region', 'charge_mode', 'bill_type', 'offset', 'limit', 'resource_id', 'enterprise_project_id', 'include_zero_record', 'method', 'sub_customer_id', 'trade_id', 'bill_date_begin', 'bill_date_end']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -801,6 +673,10 @@ class BssintlAsyncClient(Client):
             query_params.append(('sub_customer_id', local_var_params['sub_customer_id']))
         if 'trade_id' in local_var_params:
             query_params.append(('trade_id', local_var_params['trade_id']))
+        if 'bill_date_begin' in local_var_params:
+            query_params.append(('bill_date_begin', local_var_params['bill_date_begin']))
+        if 'bill_date_end' in local_var_params:
+            query_params.append(('bill_date_end', local_var_params['bill_date_end']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -898,9 +774,9 @@ class BssintlAsyncClient(Client):
 
 
     def list_rate_on_period_detail_async(self, request):
-        """包周期资源订购询价
+        """查询包年/包月产品价格
 
-        功能描述：包周期资源订购询价
+        功能描述：客户在自建平台按照条件查询包年/包月产品开通时候的价格
 
         :param ListRateOnPeriodDetailRequest request
         :return: ListRateOnPeriodDetailResponse
@@ -908,9 +784,9 @@ class BssintlAsyncClient(Client):
         return self.list_rate_on_period_detail_with_http_info(request)
 
     def list_rate_on_period_detail_with_http_info(self, request):
-        """包周期资源订购询价
+        """查询包年/包月产品价格
 
-        功能描述：包周期资源订购询价
+        功能描述：客户在自建平台按照条件查询包年/包月产品开通时候的价格
 
         :param ListRateOnPeriodDetailRequest request
         :return: ListRateOnPeriodDetailResponse
@@ -1497,9 +1373,9 @@ class BssintlAsyncClient(Client):
 
 
     def auto_renewal_resources_async(self, request):
-        """设置包年包月资源自动续费
+        """设置包年/包月资源自动续费
 
-        功能描述：设置包周期资源自动续费
+        功能描述：客户可以设置包年/包月资源到期后转为按需资源计费
 
         :param AutoRenewalResourcesRequest request
         :return: AutoRenewalResourcesResponse
@@ -1507,9 +1383,9 @@ class BssintlAsyncClient(Client):
         return self.auto_renewal_resources_with_http_info(request)
 
     def auto_renewal_resources_with_http_info(self, request):
-        """设置包年包月资源自动续费
+        """设置包年/包月资源自动续费
 
-        功能描述：设置包周期资源自动续费
+        功能描述：客户可以设置包年/包月资源到期后转为按需资源计费
 
         :param AutoRenewalResourcesRequest request
         :return: AutoRenewalResourcesResponse
@@ -1560,7 +1436,7 @@ class BssintlAsyncClient(Client):
 
 
     def cancel_auto_renewal_resources_async(self, request):
-        """取消包年包月资源自动续费
+        """取消包年/包月资源自动续费
 
         功能描述：取消包年/包月资源自动续费
 
@@ -1570,7 +1446,7 @@ class BssintlAsyncClient(Client):
         return self.cancel_auto_renewal_resources_with_http_info(request)
 
     def cancel_auto_renewal_resources_with_http_info(self, request):
-        """取消包年包月资源自动续费
+        """取消包年/包月资源自动续费
 
         功能描述：取消包年/包月资源自动续费
 
@@ -1686,9 +1562,9 @@ class BssintlAsyncClient(Client):
 
 
     def cancel_resources_subscription_async(self, request):
-        """退订包年包月资源
+        """退订包年/包月资源
 
-        功能描述：客户购买包年包月资源后，支持客户退订包年包月实例。退订资源实例包括资源续费部分和当前正在使用的部分，退订后资源将无法使用
+        功能描述：客户购买包年/包月资源后，支持客户退订包年/包月实例。退订资源实例包括资源续费部分和当前正在使用的部分，退订后资源将无法使用
 
         :param CancelResourcesSubscriptionRequest request
         :return: CancelResourcesSubscriptionResponse
@@ -1696,9 +1572,9 @@ class BssintlAsyncClient(Client):
         return self.cancel_resources_subscription_with_http_info(request)
 
     def cancel_resources_subscription_with_http_info(self, request):
-        """退订包年包月资源
+        """退订包年/包月资源
 
-        功能描述：客户购买包年包月资源后，支持客户退订包年包月实例。退订资源实例包括资源续费部分和当前正在使用的部分，退订后资源将无法使用
+        功能描述：客户购买包年/包月资源后，支持客户退订包年/包月实例。退订资源实例包括资源续费部分和当前正在使用的部分，退订后资源将无法使用
 
         :param CancelResourcesSubscriptionRequest request
         :return: CancelResourcesSubscriptionResponse
@@ -1899,9 +1775,9 @@ class BssintlAsyncClient(Client):
 
 
     def list_pay_per_use_customer_resources_async(self, request):
-        """查询客户包年包月资源列表
+        """查询客户包年/包月资源列表
 
-        功能描述：客户在客户自建平台查询某个或所有的包年包月资源
+        功能描述：客户在客户自建平台查询某个或所有的包年/包月资源
 
         :param ListPayPerUseCustomerResourcesRequest request
         :return: ListPayPerUseCustomerResourcesResponse
@@ -1909,9 +1785,9 @@ class BssintlAsyncClient(Client):
         return self.list_pay_per_use_customer_resources_with_http_info(request)
 
     def list_pay_per_use_customer_resources_with_http_info(self, request):
-        """查询客户包年包月资源列表
+        """查询客户包年/包月资源列表
 
-        功能描述：客户在客户自建平台查询某个或所有的包年包月资源
+        功能描述：客户在客户自建平台查询某个或所有的包年/包月资源
 
         :param ListPayPerUseCustomerResourcesRequest request
         :return: ListPayPerUseCustomerResourcesResponse
@@ -2025,9 +1901,9 @@ class BssintlAsyncClient(Client):
 
 
     def pay_orders_async(self, request):
-        """支付包年包月产品订单
+        """支付包年/包月产品订单
 
-        功能描述：客户可以对待支付状态的包年包月产品订单进行支付
+        功能描述：客户可以对待支付状态的包年/包月产品订单进行支付
 
         :param PayOrdersRequest request
         :return: PayOrdersResponse
@@ -2035,9 +1911,9 @@ class BssintlAsyncClient(Client):
         return self.pay_orders_with_http_info(request)
 
     def pay_orders_with_http_info(self, request):
-        """支付包年包月产品订单
+        """支付包年/包月产品订单
 
-        功能描述：客户可以对待支付状态的包年包月产品订单进行支付
+        功能描述：客户可以对待支付状态的包年/包月产品订单进行支付
 
         :param PayOrdersRequest request
         :return: PayOrdersResponse
@@ -2088,9 +1964,9 @@ class BssintlAsyncClient(Client):
 
 
     def renewal_resources_async(self, request):
-        """续订包年包月资源
+        """续订包年/包月资源
 
-        功能描述：客户的包年包月资源即将到期时，可进行包年包月资源的续订
+        功能描述：客户的包年包/月资源即将到期时，可进行包年/包月资源的续订
 
         :param RenewalResourcesRequest request
         :return: RenewalResourcesResponse
@@ -2098,9 +1974,9 @@ class BssintlAsyncClient(Client):
         return self.renewal_resources_with_http_info(request)
 
     def renewal_resources_with_http_info(self, request):
-        """续订包年包月资源
+        """续订包年/包月资源
 
-        功能描述：客户的包年包月资源即将到期时，可进行包年包月资源的续订
+        功能描述：客户的包年包/月资源即将到期时，可进行包年/包月资源的续订
 
         :param RenewalResourcesRequest request
         :return: RenewalResourcesResponse
@@ -2283,9 +2159,9 @@ class BssintlAsyncClient(Client):
 
 
     def update_period_to_on_demand_async(self, request):
-        """设置或者取消包年包月资源到期转按需
+        """设置或者取消包年/包月资源到期转按需
 
-        功能描述：客户可以设置包年包月资源到期后转为按需资源计费。包年包月计费模式到期后，按需的计费模式即生效
+        功能描述：客户可以设置包年/包月资源到期后转为按需资源计费。包年/包月计费模式到期后，按需的计费模式即生效
 
         :param UpdatePeriodToOnDemandRequest request
         :return: UpdatePeriodToOnDemandResponse
@@ -2293,9 +2169,9 @@ class BssintlAsyncClient(Client):
         return self.update_period_to_on_demand_with_http_info(request)
 
     def update_period_to_on_demand_with_http_info(self, request):
-        """设置或者取消包年包月资源到期转按需
+        """设置或者取消包年/包月资源到期转按需
 
-        功能描述：客户可以设置包年包月资源到期后转为按需资源计费。包年包月计费模式到期后，按需的计费模式即生效
+        功能描述：客户可以设置包年/包月资源到期后转为按需资源计费。包年/包月计费模式到期后，按需的计费模式即生效
 
         :param UpdatePeriodToOnDemandRequest request
         :return: UpdatePeriodToOnDemandResponse
@@ -2339,6 +2215,134 @@ class BssintlAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdatePeriodToOnDemandResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_conversions_async(self, request):
+        """查询使用量单位进制
+
+        功能描述：伙伴在伙伴销售平台上查询使用量单位的进制转换信息，用于不同度量单位之间的转换。
+
+        :param ListConversionsRequest request
+        :return: ListConversionsResponse
+        """
+        return self.list_conversions_with_http_info(request)
+
+    def list_conversions_with_http_info(self, request):
+        """查询使用量单位进制
+
+        功能描述：伙伴在伙伴销售平台上查询使用量单位的进制转换信息，用于不同度量单位之间的转换。
+
+        :param ListConversionsRequest request
+        :return: ListConversionsResponse
+        """
+
+        all_params = ['x_language', 'measure_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'measure_type' in local_var_params:
+            query_params.append(('measure_type', local_var_params['measure_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bases/conversions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListConversionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_measure_units_async(self, request):
+        """查询使用量单位列表
+
+        功能描述：伙伴在伙伴销售平台上查询资源使用量的度量单位及名称，度量单位类型等。
+
+        :param ListMeasureUnitsRequest request
+        :return: ListMeasureUnitsResponse
+        """
+        return self.list_measure_units_with_http_info(request)
+
+    def list_measure_units_with_http_info(self, request):
+        """查询使用量单位列表
+
+        功能描述：伙伴在伙伴销售平台上查询资源使用量的度量单位及名称，度量单位类型等。
+
+        :param ListMeasureUnitsRequest request
+        :return: ListMeasureUnitsResponse
+        """
+
+        all_params = ['x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bases/measurements',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListMeasureUnitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

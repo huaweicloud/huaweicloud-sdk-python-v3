@@ -24,12 +24,19 @@ class MonthlyBillRes:
 
     openapi_types = {
         'cycle': 'str',
-        'cloud_service_type': 'str',
+        'bill_type': 'int',
+        'customer_id': 'str',
         'region': 'str',
+        'region_name': 'str',
+        'cloud_service_type': 'str',
         'resource_type_code': 'str',
         'res_instance_id': 'str',
         'resource_name': 'str',
         'resource_tag': 'str',
+        'sku_code': 'str',
+        'enterprise_project_id': 'str',
+        'enterprise_project_name': 'str',
+        'charge_mode': 'int',
         'consume_amount': 'float',
         'cash_amount': 'float',
         'credit_amount': 'float',
@@ -41,24 +48,24 @@ class MonthlyBillRes:
         'adjustment_amount': 'float',
         'official_amount': 'float',
         'discount_amount': 'float',
-        'measure_id': 'int',
-        'enterprise_project_id': 'str',
-        'enterprise_project_name': 'str',
-        'charge_mode': 'int',
-        'bill_type': 'int',
-        'customer_id': 'str',
-        'sku_code': 'str',
-        'region_name': 'str'
+        'measure_id': 'int'
     }
 
     attribute_map = {
         'cycle': 'cycle',
-        'cloud_service_type': 'cloud_service_type',
+        'bill_type': 'bill_type',
+        'customer_id': 'customer_id',
         'region': 'region',
+        'region_name': 'region_name',
+        'cloud_service_type': 'cloud_service_type',
         'resource_type_code': 'resource_Type_code',
         'res_instance_id': 'res_instance_id',
         'resource_name': 'resource_name',
         'resource_tag': 'resource_tag',
+        'sku_code': 'sku_code',
+        'enterprise_project_id': 'enterprise_project_id',
+        'enterprise_project_name': 'enterprise_project_name',
+        'charge_mode': 'charge_mode',
         'consume_amount': 'consume_amount',
         'cash_amount': 'cash_amount',
         'credit_amount': 'credit_amount',
@@ -70,28 +77,28 @@ class MonthlyBillRes:
         'adjustment_amount': 'adjustment_amount',
         'official_amount': 'official_amount',
         'discount_amount': 'discount_amount',
-        'measure_id': 'measure_id',
-        'enterprise_project_id': 'enterprise_project_id',
-        'enterprise_project_name': 'enterprise_project_name',
-        'charge_mode': 'charge_mode',
-        'bill_type': 'bill_type',
-        'customer_id': 'customer_id',
-        'sku_code': 'sku_code',
-        'region_name': 'region_name'
+        'measure_id': 'measure_id'
     }
 
-    def __init__(self, cycle=None, cloud_service_type=None, region=None, resource_type_code=None, res_instance_id=None, resource_name=None, resource_tag=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, bill_type=None, customer_id=None, sku_code=None, region_name=None):
+    def __init__(self, cycle=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None):
         """MonthlyBillRes - a model defined in huaweicloud sdk"""
         
         
 
         self._cycle = None
-        self._cloud_service_type = None
+        self._bill_type = None
+        self._customer_id = None
         self._region = None
+        self._region_name = None
+        self._cloud_service_type = None
         self._resource_type_code = None
         self._res_instance_id = None
         self._resource_name = None
         self._resource_tag = None
+        self._sku_code = None
+        self._enterprise_project_id = None
+        self._enterprise_project_name = None
+        self._charge_mode = None
         self._consume_amount = None
         self._cash_amount = None
         self._credit_amount = None
@@ -104,21 +111,20 @@ class MonthlyBillRes:
         self._official_amount = None
         self._discount_amount = None
         self._measure_id = None
-        self._enterprise_project_id = None
-        self._enterprise_project_name = None
-        self._charge_mode = None
-        self._bill_type = None
-        self._customer_id = None
-        self._sku_code = None
-        self._region_name = None
         self.discriminator = None
 
         if cycle is not None:
             self.cycle = cycle
-        if cloud_service_type is not None:
-            self.cloud_service_type = cloud_service_type
+        if bill_type is not None:
+            self.bill_type = bill_type
+        if customer_id is not None:
+            self.customer_id = customer_id
         if region is not None:
             self.region = region
+        if region_name is not None:
+            self.region_name = region_name
+        if cloud_service_type is not None:
+            self.cloud_service_type = cloud_service_type
         if resource_type_code is not None:
             self.resource_type_code = resource_type_code
         if res_instance_id is not None:
@@ -127,6 +133,14 @@ class MonthlyBillRes:
             self.resource_name = resource_name
         if resource_tag is not None:
             self.resource_tag = resource_tag
+        if sku_code is not None:
+            self.sku_code = sku_code
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if enterprise_project_name is not None:
+            self.enterprise_project_name = enterprise_project_name
+        if charge_mode is not None:
+            self.charge_mode = charge_mode
         if consume_amount is not None:
             self.consume_amount = consume_amount
         if cash_amount is not None:
@@ -151,26 +165,12 @@ class MonthlyBillRes:
             self.discount_amount = discount_amount
         if measure_id is not None:
             self.measure_id = measure_id
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
-        if enterprise_project_name is not None:
-            self.enterprise_project_name = enterprise_project_name
-        if charge_mode is not None:
-            self.charge_mode = charge_mode
-        if bill_type is not None:
-            self.bill_type = bill_type
-        if customer_id is not None:
-            self.customer_id = customer_id
-        if sku_code is not None:
-            self.sku_code = sku_code
-        if region_name is not None:
-            self.region_name = region_name
 
     @property
     def cycle(self):
         """Gets the cycle of this MonthlyBillRes.
 
-        |参数名称：消费月份| |参数的约束及描述：该参数非必填|
+        |参数名称：消费月份| |参数的约束及描述：格式为YYYY-MM|
 
         :return: The cycle of this MonthlyBillRes.
         :rtype: str
@@ -181,7 +181,7 @@ class MonthlyBillRes:
     def cycle(self, cycle):
         """Sets the cycle of this MonthlyBillRes.
 
-        |参数名称：消费月份| |参数的约束及描述：该参数非必填|
+        |参数名称：消费月份| |参数的约束及描述：格式为YYYY-MM|
 
         :param cycle: The cycle of this MonthlyBillRes.
         :type: str
@@ -189,26 +189,48 @@ class MonthlyBillRes:
         self._cycle = cycle
 
     @property
-    def cloud_service_type(self):
-        """Gets the cloud_service_type of this MonthlyBillRes.
+    def bill_type(self):
+        """Gets the bill_type of this MonthlyBillRes.
 
-        |参数名称：云服务类型编码| |参数的约束及描述：该参数非必填,，例如ECS的云服务类型编码为“hws.service.type.ec2”|
+        |参数名称：账单类型| |参数的约束及描述：该参数非必填，1：消费-新购；2：消费-续订；3：消费-变更；4：退款-退订；5：消费-使用；8：消费-自动续订；9：调账-补偿；12：消费-按时计费；13：消费-退订手续费； 15消费-税金；14：消费-服务支持计划月末扣费；16：调账-扣费 100：退款-退订税金 101：调账-补偿税金 102：调账-扣费税金|
 
-        :return: The cloud_service_type of this MonthlyBillRes.
+        :return: The bill_type of this MonthlyBillRes.
+        :rtype: int
+        """
+        return self._bill_type
+
+    @bill_type.setter
+    def bill_type(self, bill_type):
+        """Sets the bill_type of this MonthlyBillRes.
+
+        |参数名称：账单类型| |参数的约束及描述：该参数非必填，1：消费-新购；2：消费-续订；3：消费-变更；4：退款-退订；5：消费-使用；8：消费-自动续订；9：调账-补偿；12：消费-按时计费；13：消费-退订手续费； 15消费-税金；14：消费-服务支持计划月末扣费；16：调账-扣费 100：退款-退订税金 101：调账-补偿税金 102：调账-扣费税金|
+
+        :param bill_type: The bill_type of this MonthlyBillRes.
+        :type: int
+        """
+        self._bill_type = bill_type
+
+    @property
+    def customer_id(self):
+        """Gets the customer_id of this MonthlyBillRes.
+
+        |参数名称：消费的客户账号ID。| |参数约束及描述：如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID; 如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。|
+
+        :return: The customer_id of this MonthlyBillRes.
         :rtype: str
         """
-        return self._cloud_service_type
+        return self._customer_id
 
-    @cloud_service_type.setter
-    def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this MonthlyBillRes.
+    @customer_id.setter
+    def customer_id(self, customer_id):
+        """Sets the customer_id of this MonthlyBillRes.
 
-        |参数名称：云服务类型编码| |参数的约束及描述：该参数非必填,，例如ECS的云服务类型编码为“hws.service.type.ec2”|
+        |参数名称：消费的客户账号ID。| |参数约束及描述：如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID; 如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。|
 
-        :param cloud_service_type: The cloud_service_type of this MonthlyBillRes.
+        :param customer_id: The customer_id of this MonthlyBillRes.
         :type: str
         """
-        self._cloud_service_type = cloud_service_type
+        self._customer_id = customer_id
 
     @property
     def region(self):
@@ -231,6 +253,50 @@ class MonthlyBillRes:
         :type: str
         """
         self._region = region
+
+    @property
+    def region_name(self):
+        """Gets the region_name of this MonthlyBillRes.
+
+        |参数名称：云服务区名称| |参数的约束及描述：云服务区名称|
+
+        :return: The region_name of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._region_name
+
+    @region_name.setter
+    def region_name(self, region_name):
+        """Sets the region_name of this MonthlyBillRes.
+
+        |参数名称：云服务区名称| |参数的约束及描述：云服务区名称|
+
+        :param region_name: The region_name of this MonthlyBillRes.
+        :type: str
+        """
+        self._region_name = region_name
+
+    @property
+    def cloud_service_type(self):
+        """Gets the cloud_service_type of this MonthlyBillRes.
+
+        |参数名称：云服务类型编码| |参数的约束及描述：该参数非必填,，例如ECS的云服务类型编码为“hws.service.type.ec2”|
+
+        :return: The cloud_service_type of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._cloud_service_type
+
+    @cloud_service_type.setter
+    def cloud_service_type(self, cloud_service_type):
+        """Sets the cloud_service_type of this MonthlyBillRes.
+
+        |参数名称：云服务类型编码| |参数的约束及描述：该参数非必填,，例如ECS的云服务类型编码为“hws.service.type.ec2”|
+
+        :param cloud_service_type: The cloud_service_type of this MonthlyBillRes.
+        :type: str
+        """
+        self._cloud_service_type = cloud_service_type
 
     @property
     def resource_type_code(self):
@@ -280,7 +346,7 @@ class MonthlyBillRes:
     def resource_name(self):
         """Gets the resource_name of this MonthlyBillRes.
 
-        |参数名称：资源名称| |参数的约束及描述：该参数非必填|
+        |参数名称：资源名称| |参数的约束及描述：客户在创建资源的时候，可以输入资源名称，有些资源也可以在管理资源时，修改资源名称|
 
         :return: The resource_name of this MonthlyBillRes.
         :rtype: str
@@ -291,7 +357,7 @@ class MonthlyBillRes:
     def resource_name(self, resource_name):
         """Sets the resource_name of this MonthlyBillRes.
 
-        |参数名称：资源名称| |参数的约束及描述：该参数非必填|
+        |参数名称：资源名称| |参数的约束及描述：客户在创建资源的时候，可以输入资源名称，有些资源也可以在管理资源时，修改资源名称|
 
         :param resource_name: The resource_name of this MonthlyBillRes.
         :type: str
@@ -302,7 +368,7 @@ class MonthlyBillRes:
     def resource_tag(self):
         """Gets the resource_tag of this MonthlyBillRes.
 
-        |参数名称：资源标签| |参数的约束及描述：该参数非必填|
+        |参数名称：资源标签| |参数的约束及描述：客户在创建资源的时候，可以输入资源名称，有些资源也可以在管理资源时，修改资源名称|
 
         :return: The resource_tag of this MonthlyBillRes.
         :rtype: str
@@ -313,12 +379,100 @@ class MonthlyBillRes:
     def resource_tag(self, resource_tag):
         """Sets the resource_tag of this MonthlyBillRes.
 
-        |参数名称：资源标签| |参数的约束及描述：该参数非必填|
+        |参数名称：资源标签| |参数的约束及描述：客户在创建资源的时候，可以输入资源名称，有些资源也可以在管理资源时，修改资源名称|
 
         :param resource_tag: The resource_tag of this MonthlyBillRes.
         :type: str
         """
         self._resource_tag = resource_tag
+
+    @property
+    def sku_code(self):
+        """Gets the sku_code of this MonthlyBillRes.
+
+        |参数名称：SKU编码| |参数的约束及描述：SKU（Stock Keeping Unit，库存量单元）编码，产品下的SKU分类属性|
+
+        :return: The sku_code of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._sku_code
+
+    @sku_code.setter
+    def sku_code(self, sku_code):
+        """Sets the sku_code of this MonthlyBillRes.
+
+        |参数名称：SKU编码| |参数的约束及描述：SKU（Stock Keeping Unit，库存量单元）编码，产品下的SKU分类属性|
+
+        :param sku_code: The sku_code of this MonthlyBillRes.
+        :type: str
+        """
+        self._sku_code = sku_code
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this MonthlyBillRes.
+
+        |参数名称：企业项目ID| |参数的约束及描述：该参数非必填|
+
+        :return: The enterprise_project_id of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this MonthlyBillRes.
+
+        |参数名称：企业项目ID| |参数的约束及描述：该参数非必填|
+
+        :param enterprise_project_id: The enterprise_project_id of this MonthlyBillRes.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def enterprise_project_name(self):
+        """Gets the enterprise_project_name of this MonthlyBillRes.
+
+        |参数名称：企业项目名称| |参数的约束及描述：该参数非必填|
+
+        :return: The enterprise_project_name of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._enterprise_project_name
+
+    @enterprise_project_name.setter
+    def enterprise_project_name(self, enterprise_project_name):
+        """Sets the enterprise_project_name of this MonthlyBillRes.
+
+        |参数名称：企业项目名称| |参数的约束及描述：该参数非必填|
+
+        :param enterprise_project_name: The enterprise_project_name of this MonthlyBillRes.
+        :type: str
+        """
+        self._enterprise_project_name = enterprise_project_name
+
+    @property
+    def charge_mode(self):
+        """Gets the charge_mode of this MonthlyBillRes.
+
+        |参数名称：计费模式| |参数的约束及描述：1 : 包年/包月；3: 按需。10: 预留实例|
+
+        :return: The charge_mode of this MonthlyBillRes.
+        :rtype: int
+        """
+        return self._charge_mode
+
+    @charge_mode.setter
+    def charge_mode(self, charge_mode):
+        """Sets the charge_mode of this MonthlyBillRes.
+
+        |参数名称：计费模式| |参数的约束及描述：1 : 包年/包月；3: 按需。10: 预留实例|
+
+        :param charge_mode: The charge_mode of this MonthlyBillRes.
+        :type: int
+        """
+        self._charge_mode = charge_mode
 
     @property
     def consume_amount(self):
@@ -566,7 +720,7 @@ class MonthlyBillRes:
     def measure_id(self):
         """Gets the measure_id of this MonthlyBillRes.
 
-        |参数名称：金额单位。枚举型1、元;2、角;3、分| |参数的约束及描述：该参数非必填|
+        |参数名称：金额单位。1:元| |参数的约束及描述：该参数非必填|
 
         :return: The measure_id of this MonthlyBillRes.
         :rtype: int
@@ -577,166 +731,12 @@ class MonthlyBillRes:
     def measure_id(self, measure_id):
         """Sets the measure_id of this MonthlyBillRes.
 
-        |参数名称：金额单位。枚举型1、元;2、角;3、分| |参数的约束及描述：该参数非必填|
+        |参数名称：金额单位。1:元| |参数的约束及描述：该参数非必填|
 
         :param measure_id: The measure_id of this MonthlyBillRes.
         :type: int
         """
         self._measure_id = measure_id
-
-    @property
-    def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this MonthlyBillRes.
-
-        |参数名称：企业项目ID| |参数的约束及描述：该参数非必填|
-
-        :return: The enterprise_project_id of this MonthlyBillRes.
-        :rtype: str
-        """
-        return self._enterprise_project_id
-
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this MonthlyBillRes.
-
-        |参数名称：企业项目ID| |参数的约束及描述：该参数非必填|
-
-        :param enterprise_project_id: The enterprise_project_id of this MonthlyBillRes.
-        :type: str
-        """
-        self._enterprise_project_id = enterprise_project_id
-
-    @property
-    def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this MonthlyBillRes.
-
-        |参数名称：企业项目名称| |参数的约束及描述：该参数非必填|
-
-        :return: The enterprise_project_name of this MonthlyBillRes.
-        :rtype: str
-        """
-        return self._enterprise_project_name
-
-    @enterprise_project_name.setter
-    def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this MonthlyBillRes.
-
-        |参数名称：企业项目名称| |参数的约束及描述：该参数非必填|
-
-        :param enterprise_project_name: The enterprise_project_name of this MonthlyBillRes.
-        :type: str
-        """
-        self._enterprise_project_name = enterprise_project_name
-
-    @property
-    def charge_mode(self):
-        """Gets the charge_mode of this MonthlyBillRes.
-
-        |参数名称：支付方式：1 : 包周期；3: 按需。10: 预留实例| |参数的约束及描述：该参数非必填|
-
-        :return: The charge_mode of this MonthlyBillRes.
-        :rtype: int
-        """
-        return self._charge_mode
-
-    @charge_mode.setter
-    def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this MonthlyBillRes.
-
-        |参数名称：支付方式：1 : 包周期；3: 按需。10: 预留实例| |参数的约束及描述：该参数非必填|
-
-        :param charge_mode: The charge_mode of this MonthlyBillRes.
-        :type: int
-        """
-        self._charge_mode = charge_mode
-
-    @property
-    def bill_type(self):
-        """Gets the bill_type of this MonthlyBillRes.
-
-        |参数名称：账单类型| |参数的约束及描述：该参数非必填，1：消费-新购；2：消费-续订；3：消费-变更；4：退款-退订；5：消费-使用；8：消费-自动续订；9：调账-补偿；12：消费-按时计费；13：消费-退订手续费；14：消费-服务支持计划月末扣费；16：调账-扣费|
-
-        :return: The bill_type of this MonthlyBillRes.
-        :rtype: int
-        """
-        return self._bill_type
-
-    @bill_type.setter
-    def bill_type(self, bill_type):
-        """Sets the bill_type of this MonthlyBillRes.
-
-        |参数名称：账单类型| |参数的约束及描述：该参数非必填，1：消费-新购；2：消费-续订；3：消费-变更；4：退款-退订；5：消费-使用；8：消费-自动续订；9：调账-补偿；12：消费-按时计费；13：消费-退订手续费；14：消费-服务支持计划月末扣费；16：调账-扣费|
-
-        :param bill_type: The bill_type of this MonthlyBillRes.
-        :type: int
-        """
-        self._bill_type = bill_type
-
-    @property
-    def customer_id(self):
-        """Gets the customer_id of this MonthlyBillRes.
-
-        |参数名称：消费的客户账号ID。| |参数约束及描述：如果是查询自己，这个地方是自身的ID; 如果是查询某个企业子客户，这个地方是企业子客户ID如果是查询以及下面的所有子客户，这个地方是消费的实际客户ID; 如果是企业主自身消费，为企业主ID，如果这条消费记录是某个企业子客户的消费，这个地方的ID是企业子账号ID。|
-
-        :return: The customer_id of this MonthlyBillRes.
-        :rtype: str
-        """
-        return self._customer_id
-
-    @customer_id.setter
-    def customer_id(self, customer_id):
-        """Sets the customer_id of this MonthlyBillRes.
-
-        |参数名称：消费的客户账号ID。| |参数约束及描述：如果是查询自己，这个地方是自身的ID; 如果是查询某个企业子客户，这个地方是企业子客户ID如果是查询以及下面的所有子客户，这个地方是消费的实际客户ID; 如果是企业主自身消费，为企业主ID，如果这条消费记录是某个企业子客户的消费，这个地方的ID是企业子账号ID。|
-
-        :param customer_id: The customer_id of this MonthlyBillRes.
-        :type: str
-        """
-        self._customer_id = customer_id
-
-    @property
-    def sku_code(self):
-        """Gets the sku_code of this MonthlyBillRes.
-
-        |参数名称：SKU编码| |参数的约束及描述：sku编码|
-
-        :return: The sku_code of this MonthlyBillRes.
-        :rtype: str
-        """
-        return self._sku_code
-
-    @sku_code.setter
-    def sku_code(self, sku_code):
-        """Sets the sku_code of this MonthlyBillRes.
-
-        |参数名称：SKU编码| |参数的约束及描述：sku编码|
-
-        :param sku_code: The sku_code of this MonthlyBillRes.
-        :type: str
-        """
-        self._sku_code = sku_code
-
-    @property
-    def region_name(self):
-        """Gets the region_name of this MonthlyBillRes.
-
-        |参数名称：云服务区名称| |参数的约束及描述：云服务区名称|
-
-        :return: The region_name of this MonthlyBillRes.
-        :rtype: str
-        """
-        return self._region_name
-
-    @region_name.setter
-    def region_name(self, region_name):
-        """Sets the region_name of this MonthlyBillRes.
-
-        |参数名称：云服务区名称| |参数的约束及描述：云服务区名称|
-
-        :param region_name: The region_name of this MonthlyBillRes.
-        :type: str
-        """
-        self._region_name = region_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

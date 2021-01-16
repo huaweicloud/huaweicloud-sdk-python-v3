@@ -504,7 +504,7 @@ class ShowInstanceResponse(SdkResponse):
     def maintain_begin(self):
         """Gets the maintain_begin of this ShowInstanceResponse.
 
-        维护时间窗开始时间，格式为HH:mm:ss
+        维护时间窗开始时间，为UTC时间，格式为HH:mm:ss
 
         :return: The maintain_begin of this ShowInstanceResponse.
         :rtype: str
@@ -515,7 +515,7 @@ class ShowInstanceResponse(SdkResponse):
     def maintain_begin(self, maintain_begin):
         """Sets the maintain_begin of this ShowInstanceResponse.
 
-        维护时间窗开始时间，格式为HH:mm:ss
+        维护时间窗开始时间，为UTC时间，格式为HH:mm:ss
 
         :param maintain_begin: The maintain_begin of this ShowInstanceResponse.
         :type: str
@@ -526,7 +526,7 @@ class ShowInstanceResponse(SdkResponse):
     def maintain_end(self):
         """Gets the maintain_end of this ShowInstanceResponse.
 
-        维护时间窗结束时间，格式为HH:mm:ss
+        维护时间窗结束时间，为UTC时间，格式为HH:mm:ss
 
         :return: The maintain_end of this ShowInstanceResponse.
         :rtype: str
@@ -537,7 +537,7 @@ class ShowInstanceResponse(SdkResponse):
     def maintain_end(self, maintain_end):
         """Sets the maintain_end of this ShowInstanceResponse.
 
-        维护时间窗结束时间，格式为HH:mm:ss
+        维护时间窗结束时间，为UTC时间，格式为HH:mm:ss
 
         :param maintain_end: The maintain_end of this ShowInstanceResponse.
         :type: str

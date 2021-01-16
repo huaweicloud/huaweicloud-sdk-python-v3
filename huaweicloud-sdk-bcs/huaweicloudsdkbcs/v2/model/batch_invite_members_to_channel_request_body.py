@@ -47,14 +47,11 @@ class BatchInviteMembersToChannelRequestBody:
         self._invited_userinfo = None
         self.discriminator = None
 
-        if bcs_id is not None:
-            self.bcs_id = bcs_id
-        if channel_name is not None:
-            self.channel_name = channel_name
+        self.bcs_id = bcs_id
+        self.channel_name = channel_name
         if invitor_username is not None:
             self.invitor_username = invitor_username
-        if invited_userinfo is not None:
-            self.invited_userinfo = invited_userinfo
+        self.invited_userinfo = invited_userinfo
 
     @property
     def bcs_id(self):

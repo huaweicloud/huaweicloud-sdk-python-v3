@@ -50,7 +50,7 @@ class PageInfo:
     def current_count(self):
         """Gets the current_count of this PageInfo.
 
-        当前页数量
+        当前页的资源数量
 
         :return: The current_count of this PageInfo.
         :rtype: int
@@ -61,7 +61,7 @@ class PageInfo:
     def current_count(self, current_count):
         """Sets the current_count of this PageInfo.
 
-        当前页数量
+        当前页的资源数量
 
         :param current_count: The current_count of this PageInfo.
         :type: int
@@ -72,7 +72,7 @@ class PageInfo:
     def next_marker(self):
         """Gets the next_marker of this PageInfo.
 
-        下一页地址marker
+        下一页的marker
 
         :return: The next_marker of this PageInfo.
         :rtype: str
@@ -83,7 +83,7 @@ class PageInfo:
     def next_marker(self, next_marker):
         """Sets the next_marker of this PageInfo.
 
-        下一页地址marker
+        下一页的marker
 
         :param next_marker: The next_marker of this PageInfo.
         :type: str

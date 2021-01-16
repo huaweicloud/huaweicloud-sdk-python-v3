@@ -50,7 +50,7 @@ class StartInstanceParam:
     def plugin_enable_list(self):
         """Gets the plugin_enable_list of this StartInstanceParam.
 
-        场景插件列表
+        插件列表
 
         :return: The plugin_enable_list of this StartInstanceParam.
         :rtype: list[str]
@@ -61,7 +61,7 @@ class StartInstanceParam:
     def plugin_enable_list(self, plugin_enable_list):
         """Sets the plugin_enable_list of this StartInstanceParam.
 
-        场景插件列表
+        插件列表
 
         :param plugin_enable_list: The plugin_enable_list of this StartInstanceParam.
         :type: list[str]
@@ -72,7 +72,7 @@ class StartInstanceParam:
     def plugin_vars(self):
         """Gets the plugin_vars of this StartInstanceParam.
 
-        场景插件参数
+        插件参数
 
         :return: The plugin_vars of this StartInstanceParam.
         :rtype: dict(str, str)
@@ -83,7 +83,7 @@ class StartInstanceParam:
     def plugin_vars(self, plugin_vars):
         """Sets the plugin_vars of this StartInstanceParam.
 
-        场景插件参数
+        插件参数
 
         :param plugin_vars: The plugin_vars of this StartInstanceParam.
         :type: dict(str, str)

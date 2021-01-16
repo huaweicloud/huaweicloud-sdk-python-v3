@@ -323,7 +323,7 @@ class BcsClient(Client):
         :return: DeleteBlockchainResponse
         """
 
-        all_params = ['blockchain_id', 'is_delete_storage', 'is_delete_obs']
+        all_params = ['blockchain_id', 'is_delete_storage', 'is_delete_obs', 'is_delete_resource']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -340,6 +340,8 @@ class BcsClient(Client):
             query_params.append(('is_delete_storage', local_var_params['is_delete_storage']))
         if 'is_delete_obs' in local_var_params:
             query_params.append(('is_delete_obs', local_var_params['is_delete_obs']))
+        if 'is_delete_resource' in local_var_params:
+            query_params.append(('is_delete_resource', local_var_params['is_delete_resource']))
 
         header_params = {}
 
@@ -569,7 +571,7 @@ class BcsClient(Client):
     def list_bcs_metric(self, request):
         """查询BCS服务实例监控数据
 
-        该接口用于查询BCS服务的监控数据，可以指定相应的指标名称。
+        [该接口用于查询BCS服务的监控数据，可以指定相应的指标名称,目前不支持IEF节点](tag:online)[该接口用于查询BCS服务的监控数据，可以指定相应的指标名称](tag:hcs)
 
         :param ListBcsMetricRequest request
         :return: ListBcsMetricResponse
@@ -579,7 +581,7 @@ class BcsClient(Client):
     def list_bcs_metric_with_http_info(self, request):
         """查询BCS服务实例监控数据
 
-        该接口用于查询BCS服务的监控数据，可以指定相应的指标名称。
+        [该接口用于查询BCS服务的监控数据，可以指定相应的指标名称,目前不支持IEF节点](tag:online)[该接口用于查询BCS服务的监控数据，可以指定相应的指标名称](tag:hcs)
 
         :param ListBcsMetricRequest request
         :return: ListBcsMetricResponse

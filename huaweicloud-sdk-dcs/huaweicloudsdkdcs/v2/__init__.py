@@ -6,7 +6,6 @@ from __future__ import absolute_import
 from huaweicloudsdkdcs.v2.dcs_client import DcsClient
 from huaweicloudsdkdcs.v2.dcs_async_client import DcsAsyncClient
 # import models into sdk package
-from huaweicloudsdkdcs.v2.model.add_replication_body import AddReplicationBody
 from huaweicloudsdkdcs.v2.model.attrs_object import AttrsObject
 from huaweicloudsdkdcs.v2.model.autoscan_config_request import AutoscanConfigRequest
 from huaweicloudsdkdcs.v2.model.available_zones import AvailableZones
@@ -40,8 +39,6 @@ from huaweicloudsdkdcs.v2.model.create_migration_task_body import CreateMigratio
 from huaweicloudsdkdcs.v2.model.create_migration_task_request import CreateMigrationTaskRequest
 from huaweicloudsdkdcs.v2.model.create_migration_task_response import CreateMigrationTaskResponse
 from huaweicloudsdkdcs.v2.model.create_or_delete_instance_tags import CreateOrDeleteInstanceTags
-from huaweicloudsdkdcs.v2.model.create_replication_request import CreateReplicationRequest
-from huaweicloudsdkdcs.v2.model.create_replication_response import CreateReplicationResponse
 from huaweicloudsdkdcs.v2.model.delete_background_task_request import DeleteBackgroundTaskRequest
 from huaweicloudsdkdcs.v2.model.delete_background_task_response import DeleteBackgroundTaskResponse
 from huaweicloudsdkdcs.v2.model.delete_backup_file_request import DeleteBackupFileRequest
@@ -55,8 +52,6 @@ from huaweicloudsdkdcs.v2.model.delete_ip_from_domain_name_response import Delet
 from huaweicloudsdkdcs.v2.model.delete_migrate_task_request import DeleteMigrateTaskRequest
 from huaweicloudsdkdcs.v2.model.delete_migration_task_request import DeleteMigrationTaskRequest
 from huaweicloudsdkdcs.v2.model.delete_migration_task_response import DeleteMigrationTaskResponse
-from huaweicloudsdkdcs.v2.model.delete_replication_request import DeleteReplicationRequest
-from huaweicloudsdkdcs.v2.model.delete_replication_response import DeleteReplicationResponse
 from huaweicloudsdkdcs.v2.model.delete_single_instance_request import DeleteSingleInstanceRequest
 from huaweicloudsdkdcs.v2.model.delete_single_instance_response import DeleteSingleInstanceResponse
 from huaweicloudsdkdcs.v2.model.details_body import DetailsBody

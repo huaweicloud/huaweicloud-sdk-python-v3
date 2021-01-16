@@ -44,10 +44,8 @@ class NodeOrgs:
         self._pvc_name = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if node_count is not None:
-            self.node_count = node_count
+        self.name = name
+        self.node_count = node_count
         if pvc_name is not None:
             self.pvc_name = pvc_name
 
@@ -99,7 +97,7 @@ class NodeOrgs:
     def pvc_name(self):
         """Gets the pvc_name of this NodeOrgs.
 
-        pvc名称
+        pvc名称，添加组织时需要提供pvc_name
 
         :return: The pvc_name of this NodeOrgs.
         :rtype: str
@@ -110,7 +108,7 @@ class NodeOrgs:
     def pvc_name(self, pvc_name):
         """Sets the pvc_name of this NodeOrgs.
 
-        pvc名称
+        pvc名称，添加组织时需要提供pvc_name
 
         :param pvc_name: The pvc_name of this NodeOrgs.
         :type: str

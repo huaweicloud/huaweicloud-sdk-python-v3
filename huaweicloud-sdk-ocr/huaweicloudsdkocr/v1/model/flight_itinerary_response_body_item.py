@@ -40,7 +40,7 @@ class FlightItineraryResponseBodyItem:
         'agent_code': 'str',
         'issue_organization': 'str',
         'issue_date': 'str',
-        'itinerary_list': 'list[FlightItineraryItemsResponse]',
+        'itinerary_list': 'list[ItineraryList]',
         'confidence': 'object'
     }
 
@@ -512,7 +512,7 @@ class FlightItineraryResponseBodyItem:
         机票行程列表。 
 
         :return: The itinerary_list of this FlightItineraryResponseBodyItem.
-        :rtype: list[FlightItineraryItemsResponse]
+        :rtype: list[ItineraryList]
         """
         return self._itinerary_list
 
@@ -523,7 +523,7 @@ class FlightItineraryResponseBodyItem:
         机票行程列表。 
 
         :param itinerary_list: The itinerary_list of this FlightItineraryResponseBodyItem.
-        :type: list[FlightItineraryItemsResponse]
+        :type: list[ItineraryList]
         """
         self._itinerary_list = itinerary_list
 

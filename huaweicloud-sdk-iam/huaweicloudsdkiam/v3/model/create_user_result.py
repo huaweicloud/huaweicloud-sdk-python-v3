@@ -30,7 +30,7 @@ class CreateUserResult:
         'description': 'str',
         'name': 'str',
         'phone': 'str',
-        'is_domain_owner': 'str',
+        'is_domain_owner': 'bool',
         'domain_id': 'str',
         'enabled': 'bool',
         'areacode': 'str',
@@ -278,7 +278,7 @@ class CreateUserResult:
         IAM用户是否为账号管理员。
 
         :return: The is_domain_owner of this CreateUserResult.
-        :rtype: str
+        :rtype: bool
         """
         return self._is_domain_owner
 
@@ -289,7 +289,7 @@ class CreateUserResult:
         IAM用户是否为账号管理员。
 
         :param is_domain_owner: The is_domain_owner of this CreateUserResult.
-        :type: str
+        :type: bool
         """
         self._is_domain_owner = is_domain_owner
 

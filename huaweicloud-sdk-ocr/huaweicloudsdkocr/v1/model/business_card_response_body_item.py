@@ -33,7 +33,7 @@ class BusinessCardResponseBodyItem:
         'fax': 'list[str]',
         'postcode': 'list[str]',
         'website': 'list[str]',
-        'extra_info_list': 'list[BusinessCardItemsResponse]',
+        'extra_info_list': 'list[ExtraInfoList]',
         'adjusted_image': 'str'
     }
 
@@ -323,7 +323,7 @@ class BusinessCardResponseBodyItem:
         其余信息列表。 
 
         :return: The extra_info_list of this BusinessCardResponseBodyItem.
-        :rtype: list[BusinessCardItemsResponse]
+        :rtype: list[ExtraInfoList]
         """
         return self._extra_info_list
 
@@ -334,7 +334,7 @@ class BusinessCardResponseBodyItem:
         其余信息列表。 
 
         :param extra_info_list: The extra_info_list of this BusinessCardResponseBodyItem.
-        :type: list[BusinessCardItemsResponse]
+        :type: list[ExtraInfoList]
         """
         self._extra_info_list = extra_info_list
 

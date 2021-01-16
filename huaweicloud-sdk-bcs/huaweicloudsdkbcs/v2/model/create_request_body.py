@@ -38,8 +38,6 @@ class CreateRequestBody:
         'orderer_node_number': 'int',
         'use_eip': 'bool',
         'bandwidth_size': 'int',
-        'tc3_need': 'bool',
-        'restful_api_support': 'bool',
         'cluster_type': 'str',
         'create_new_cluster': 'bool',
         'cce_cluster_info': 'CreateRequestBodyCceClusterInfo',
@@ -51,7 +49,11 @@ class CreateRequestBody:
         'couchdb_info': 'CreateRequestBodyCouchdbInfo',
         'turbo_info': 'CreateRequestBodyTurboInfo',
         'block_info': 'CreateRequestBodyBlockInfo',
-        'kafka_create_info': 'CreateRequestBodyKafkaCreateInfo'
+        'kafka_create_info': 'CreateRequestBodyKafkaCreateInfo',
+        'tc3_need': 'bool',
+        'restful_api_support': 'bool',
+        'is_invitee': 'bool',
+        'invitor_infos': 'CreateRequestBodyInvitorInfos'
     }
 
     attribute_map = {
@@ -70,8 +72,6 @@ class CreateRequestBody:
         'orderer_node_number': 'orderer_node_number',
         'use_eip': 'use_eip',
         'bandwidth_size': 'bandwidth_size',
-        'tc3_need': 'tc3_need',
-        'restful_api_support': 'restful_api_support',
         'cluster_type': 'cluster_type',
         'create_new_cluster': 'create_new_cluster',
         'cce_cluster_info': 'cce_cluster_info',
@@ -83,10 +83,14 @@ class CreateRequestBody:
         'couchdb_info': 'couchdb_info',
         'turbo_info': 'turbo_info',
         'block_info': 'block_info',
-        'kafka_create_info': 'kafka_create_info'
+        'kafka_create_info': 'kafka_create_info',
+        'tc3_need': 'tc3_need',
+        'restful_api_support': 'restful_api_support',
+        'is_invitee': 'is_invitee',
+        'invitor_infos': 'invitor_infos'
     }
 
-    def __init__(self, name=None, version_type=None, fabric_version=None, blockchain_type=None, consensus=None, sign_algorithm=None, enterprise_project_id=None, volume_type=None, evs_disk_type=None, org_disk_size=None, database_type=None, resource_password=None, orderer_node_number=None, use_eip=None, bandwidth_size=None, tc3_need=None, restful_api_support=None, cluster_type=None, create_new_cluster=None, cce_cluster_info=None, cce_create_info=None, ief_deploy_mode=None, ief_nodes_info=None, peer_orgs=None, channels=None, couchdb_info=None, turbo_info=None, block_info=None, kafka_create_info=None):
+    def __init__(self, name=None, version_type=None, fabric_version=None, blockchain_type=None, consensus=None, sign_algorithm=None, enterprise_project_id=None, volume_type=None, evs_disk_type=None, org_disk_size=None, database_type=None, resource_password=None, orderer_node_number=None, use_eip=None, bandwidth_size=None, cluster_type=None, create_new_cluster=None, cce_cluster_info=None, cce_create_info=None, ief_deploy_mode=None, ief_nodes_info=None, peer_orgs=None, channels=None, couchdb_info=None, turbo_info=None, block_info=None, kafka_create_info=None, tc3_need=None, restful_api_support=None, is_invitee=None, invitor_infos=None):
         """CreateRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -106,8 +110,6 @@ class CreateRequestBody:
         self._orderer_node_number = None
         self._use_eip = None
         self._bandwidth_size = None
-        self._tc3_need = None
-        self._restful_api_support = None
         self._cluster_type = None
         self._create_new_cluster = None
         self._cce_cluster_info = None
@@ -120,6 +122,10 @@ class CreateRequestBody:
         self._turbo_info = None
         self._block_info = None
         self._kafka_create_info = None
+        self._tc3_need = None
+        self._restful_api_support = None
+        self._is_invitee = None
+        self._invitor_infos = None
         self.discriminator = None
 
         self.name = name
@@ -149,10 +155,6 @@ class CreateRequestBody:
             self.use_eip = use_eip
         if bandwidth_size is not None:
             self.bandwidth_size = bandwidth_size
-        if tc3_need is not None:
-            self.tc3_need = tc3_need
-        if restful_api_support is not None:
-            self.restful_api_support = restful_api_support
         if cluster_type is not None:
             self.cluster_type = cluster_type
         self.create_new_cluster = create_new_cluster
@@ -174,6 +176,14 @@ class CreateRequestBody:
             self.block_info = block_info
         if kafka_create_info is not None:
             self.kafka_create_info = kafka_create_info
+        if tc3_need is not None:
+            self.tc3_need = tc3_need
+        if restful_api_support is not None:
+            self.restful_api_support = restful_api_support
+        if is_invitee is not None:
+            self.is_invitee = is_invitee
+        if invitor_infos is not None:
+            self.invitor_infos = invitor_infos
 
     @property
     def name(self):
@@ -223,7 +233,7 @@ class CreateRequestBody:
     def fabric_version(self):
         """Gets the fabric_version of this CreateRequestBody.
 
-        Fabric版本，可选：“1.4”，“2.0”
+        Fabric版本，可选：\"1.4\"，\"2.0\"。目前HCS只支持1.4
 
         :return: The fabric_version of this CreateRequestBody.
         :rtype: str
@@ -234,7 +244,7 @@ class CreateRequestBody:
     def fabric_version(self, fabric_version):
         """Sets the fabric_version of this CreateRequestBody.
 
-        Fabric版本，可选：“1.4”，“2.0”
+        Fabric版本，可选：\"1.4\"，\"2.0\"。目前HCS只支持1.4
 
         :param fabric_version: The fabric_version of this CreateRequestBody.
         :type: str
@@ -267,7 +277,7 @@ class CreateRequestBody:
     def consensus(self):
         """Gets the consensus of this CreateRequestBody.
 
-        BCS服务的共识策略，可选：（etcdraft）、快速拜占庭容错算法（SFLIC）、测试策略（solo）、Kafka共识（kafka）
+        BCS服务的共识策略，可选：（etcdraft,1.4版本不支持raft共识算法）、快速拜占庭容错算法（SFLIC）、测试策略（solo）、Kafka共识（kafka）
 
         :return: The consensus of this CreateRequestBody.
         :rtype: str
@@ -278,7 +288,7 @@ class CreateRequestBody:
     def consensus(self, consensus):
         """Sets the consensus of this CreateRequestBody.
 
-        BCS服务的共识策略，可选：（etcdraft）、快速拜占庭容错算法（SFLIC）、测试策略（solo）、Kafka共识（kafka）
+        BCS服务的共识策略，可选：（etcdraft,1.4版本不支持raft共识算法）、快速拜占庭容错算法（SFLIC）、测试策略（solo）、Kafka共识（kafka）
 
         :param consensus: The consensus of this CreateRequestBody.
         :type: str
@@ -333,7 +343,7 @@ class CreateRequestBody:
     def volume_type(self):
         """Gets the volume_type of this CreateRequestBody.
 
-        CCE集群存储卷类型，可选：云硬盘存储卷（evs），文件存储卷（nfs）, 极速文件存储卷（efs）
+        CCE集群存储卷类型，根据实际环境可选：云硬盘存储卷（evs），文件存储卷（nfs）, 极速文件存储卷（efs）
 
         :return: The volume_type of this CreateRequestBody.
         :rtype: str
@@ -344,7 +354,7 @@ class CreateRequestBody:
     def volume_type(self, volume_type):
         """Sets the volume_type of this CreateRequestBody.
 
-        CCE集群存储卷类型，可选：云硬盘存储卷（evs），文件存储卷（nfs）, 极速文件存储卷（efs）
+        CCE集群存储卷类型，根据实际环境可选：云硬盘存储卷（evs），文件存储卷（nfs）, 极速文件存储卷（efs）
 
         :param volume_type: The volume_type of this CreateRequestBody.
         :type: str
@@ -355,7 +365,7 @@ class CreateRequestBody:
     def evs_disk_type(self):
         """Gets the evs_disk_type of this CreateRequestBody.
 
-        云硬盘存储卷类型，可选：普通I/O（SATA），高I/O（SAS），超高I/O（SSD）
+        云硬盘存储卷类型，volume_type选择evs时必填，可选：普通I/O（SATA），高I/O（SAS），超高I/O（SSD）
 
         :return: The evs_disk_type of this CreateRequestBody.
         :rtype: str
@@ -366,7 +376,7 @@ class CreateRequestBody:
     def evs_disk_type(self, evs_disk_type):
         """Sets the evs_disk_type of this CreateRequestBody.
 
-        云硬盘存储卷类型，可选：普通I/O（SATA），高I/O（SAS），超高I/O（SSD）
+        云硬盘存储卷类型，volume_type选择evs时必填，可选：普通I/O（SATA），高I/O（SAS），超高I/O（SSD）
 
         :param evs_disk_type: The evs_disk_type of this CreateRequestBody.
         :type: str
@@ -377,7 +387,7 @@ class CreateRequestBody:
     def org_disk_size(self):
         """Gets the org_disk_size of this CreateRequestBody.
 
-        节点组织存储容量(GB),基础版至少40GB，专业版和企业版至少100GB，铂金版至少500GB
+        [节点组织存储容量，基础版至少40GB，专业版和企业版至少100GB，铂金版至少500GB](tag:online)[节点组织存储容量GB，至少为100GB](tag:hcs)
 
         :return: The org_disk_size of this CreateRequestBody.
         :rtype: int
@@ -388,7 +398,7 @@ class CreateRequestBody:
     def org_disk_size(self, org_disk_size):
         """Sets the org_disk_size of this CreateRequestBody.
 
-        节点组织存储容量(GB),基础版至少40GB，专业版和企业版至少100GB，铂金版至少500GB
+        [节点组织存储容量，基础版至少40GB，专业版和企业版至少100GB，铂金版至少500GB](tag:online)[节点组织存储容量GB，至少为100GB](tag:hcs)
 
         :param org_disk_size: The org_disk_size of this CreateRequestBody.
         :type: int
@@ -443,7 +453,7 @@ class CreateRequestBody:
     def orderer_node_number(self):
         """Gets the orderer_node_number of this CreateRequestBody.
 
-        共识组织节点数
+        共识组织节点数，被邀请方创实例时可不填
 
         :return: The orderer_node_number of this CreateRequestBody.
         :rtype: int
@@ -454,7 +464,7 @@ class CreateRequestBody:
     def orderer_node_number(self, orderer_node_number):
         """Sets the orderer_node_number of this CreateRequestBody.
 
-        共识组织节点数
+        共识组织节点数，被邀请方创实例时可不填
 
         :param orderer_node_number: The orderer_node_number of this CreateRequestBody.
         :type: int
@@ -506,54 +516,10 @@ class CreateRequestBody:
         self._bandwidth_size = bandwidth_size
 
     @property
-    def tc3_need(self):
-        """Gets the tc3_need of this CreateRequestBody.
-
-        是否添加可信计算平台
-
-        :return: The tc3_need of this CreateRequestBody.
-        :rtype: bool
-        """
-        return self._tc3_need
-
-    @tc3_need.setter
-    def tc3_need(self, tc3_need):
-        """Sets the tc3_need of this CreateRequestBody.
-
-        是否添加可信计算平台
-
-        :param tc3_need: The tc3_need of this CreateRequestBody.
-        :type: bool
-        """
-        self._tc3_need = tc3_need
-
-    @property
-    def restful_api_support(self):
-        """Gets the restful_api_support of this CreateRequestBody.
-
-        是否添加restful API支持
-
-        :return: The restful_api_support of this CreateRequestBody.
-        :rtype: bool
-        """
-        return self._restful_api_support
-
-    @restful_api_support.setter
-    def restful_api_support(self, restful_api_support):
-        """Sets the restful_api_support of this CreateRequestBody.
-
-        是否添加restful API支持
-
-        :param restful_api_support: The restful_api_support of this CreateRequestBody.
-        :type: bool
-        """
-        self._restful_api_support = restful_api_support
-
-    @property
     def cluster_type(self):
         """Gets the cluster_type of this CreateRequestBody.
 
-        集群类型，可选：CCE集群（cce），边缘集群（ief）
+        集群类型，[可选：CCE集群（cce），边缘集群（ief）](tag:online)[目前线下混合云模式下只支持CCE集群](tag:hcs)
 
         :return: The cluster_type of this CreateRequestBody.
         :rtype: str
@@ -564,7 +530,7 @@ class CreateRequestBody:
     def cluster_type(self, cluster_type):
         """Sets the cluster_type of this CreateRequestBody.
 
-        集群类型，可选：CCE集群（cce），边缘集群（ief）
+        集群类型，[可选：CCE集群（cce），边缘集群（ief）](tag:online)[目前线下混合云模式下只支持CCE集群](tag:hcs)
 
         :param cluster_type: The cluster_type of this CreateRequestBody.
         :type: str
@@ -800,6 +766,92 @@ class CreateRequestBody:
         :type: CreateRequestBodyKafkaCreateInfo
         """
         self._kafka_create_info = kafka_create_info
+
+    @property
+    def tc3_need(self):
+        """Gets the tc3_need of this CreateRequestBody.
+
+        是否添加可信计算平台
+
+        :return: The tc3_need of this CreateRequestBody.
+        :rtype: bool
+        """
+        return self._tc3_need
+
+    @tc3_need.setter
+    def tc3_need(self, tc3_need):
+        """Sets the tc3_need of this CreateRequestBody.
+
+        是否添加可信计算平台
+
+        :param tc3_need: The tc3_need of this CreateRequestBody.
+        :type: bool
+        """
+        self._tc3_need = tc3_need
+
+    @property
+    def restful_api_support(self):
+        """Gets the restful_api_support of this CreateRequestBody.
+
+        是否添加restful API支持
+
+        :return: The restful_api_support of this CreateRequestBody.
+        :rtype: bool
+        """
+        return self._restful_api_support
+
+    @restful_api_support.setter
+    def restful_api_support(self, restful_api_support):
+        """Sets the restful_api_support of this CreateRequestBody.
+
+        是否添加restful API支持
+
+        :param restful_api_support: The restful_api_support of this CreateRequestBody.
+        :type: bool
+        """
+        self._restful_api_support = restful_api_support
+
+    @property
+    def is_invitee(self):
+        """Gets the is_invitee of this CreateRequestBody.
+
+        是否是被邀请方创建实例
+
+        :return: The is_invitee of this CreateRequestBody.
+        :rtype: bool
+        """
+        return self._is_invitee
+
+    @is_invitee.setter
+    def is_invitee(self, is_invitee):
+        """Sets the is_invitee of this CreateRequestBody.
+
+        是否是被邀请方创建实例
+
+        :param is_invitee: The is_invitee of this CreateRequestBody.
+        :type: bool
+        """
+        self._is_invitee = is_invitee
+
+    @property
+    def invitor_infos(self):
+        """Gets the invitor_infos of this CreateRequestBody.
+
+
+        :return: The invitor_infos of this CreateRequestBody.
+        :rtype: CreateRequestBodyInvitorInfos
+        """
+        return self._invitor_infos
+
+    @invitor_infos.setter
+    def invitor_infos(self, invitor_infos):
+        """Sets the invitor_infos of this CreateRequestBody.
+
+
+        :param invitor_infos: The invitor_infos of this CreateRequestBody.
+        :type: CreateRequestBodyInvitorInfos
+        """
+        self._invitor_infos = invitor_infos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

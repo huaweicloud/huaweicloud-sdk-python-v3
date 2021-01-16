@@ -49,9 +49,9 @@ class DevStarAsyncClient(Client):
         return ClientBuilder(clazz, "GlobalCredentials")
 
     def download_application_code_async(self, request):
-        """下载模板产物
+        """下载代码工程
 
-        下载模板产物
+        通过任务ID下载ZIP格式的代码工程。
 
         :param DownloadApplicationCodeRequest request
         :return: DownloadApplicationCodeResponse
@@ -59,9 +59,9 @@ class DevStarAsyncClient(Client):
         return self.download_application_code_with_http_info(request)
 
     def download_application_code_with_http_info(self, request):
-        """下载模板产物
+        """下载代码工程
 
-        下载模板产物
+        通过任务ID下载ZIP格式的代码工程。
 
         :param DownloadApplicationCodeRequest request
         :return: DownloadApplicationCodeResponse

@@ -313,7 +313,7 @@ class ShowResourceByIdResponse(SdkResponse):
     def checksum(self):
         """Gets the checksum of this ShowResourceByIdResponse.
 
-        资源详情摘要
+        资源详情校验码
 
         :return: The checksum of this ShowResourceByIdResponse.
         :rtype: str
@@ -324,7 +324,7 @@ class ShowResourceByIdResponse(SdkResponse):
     def checksum(self, checksum):
         """Sets the checksum of this ShowResourceByIdResponse.
 
-        资源详情摘要
+        资源详情校验码
 
         :param checksum: The checksum of this ShowResourceByIdResponse.
         :type: str
@@ -379,7 +379,7 @@ class ShowResourceByIdResponse(SdkResponse):
     def provisioning_state(self):
         """Gets the provisioning_state of this ShowResourceByIdResponse.
 
-        资源发放状态
+        资源操作状态
 
         :return: The provisioning_state of this ShowResourceByIdResponse.
         :rtype: str
@@ -390,7 +390,7 @@ class ShowResourceByIdResponse(SdkResponse):
     def provisioning_state(self, provisioning_state):
         """Sets the provisioning_state of this ShowResourceByIdResponse.
 
-        资源发放状态
+        资源操作状态
 
         :param provisioning_state: The provisioning_state of this ShowResourceByIdResponse.
         :type: str

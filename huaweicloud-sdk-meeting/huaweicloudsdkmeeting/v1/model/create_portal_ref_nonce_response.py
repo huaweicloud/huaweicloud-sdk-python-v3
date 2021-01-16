@@ -45,7 +45,7 @@ class CreatePortalRefNonceResponse(SdkResponse):
     def nonce(self):
         """Gets the nonce of this CreatePortalRefNonceResponse.
 
-        用于跳转登录的nonce信息。 说明： 通过链接https://bmeeting.huaweicloud.com/?lang=zh-CN&nonce=xxxxxxxxxxxxx#/login进行免登陆跳转。
+        用于跳转登录的nonce信息。 说明： 通过链接https://bmeeting.huaweicloud.com/?lang=zh-CN&nonce=xxxxxxxxxxxxx#/login进行免登陆跳转。 
 
         :return: The nonce of this CreatePortalRefNonceResponse.
         :rtype: str
@@ -56,7 +56,7 @@ class CreatePortalRefNonceResponse(SdkResponse):
     def nonce(self, nonce):
         """Sets the nonce of this CreatePortalRefNonceResponse.
 
-        用于跳转登录的nonce信息。 说明： 通过链接https://bmeeting.huaweicloud.com/?lang=zh-CN&nonce=xxxxxxxxxxxxx#/login进行免登陆跳转。
+        用于跳转登录的nonce信息。 说明： 通过链接https://bmeeting.huaweicloud.com/?lang=zh-CN&nonce=xxxxxxxxxxxxx#/login进行免登陆跳转。 
 
         :param nonce: The nonce of this CreatePortalRefNonceResponse.
         :type: str

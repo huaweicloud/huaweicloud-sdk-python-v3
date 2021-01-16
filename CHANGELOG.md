@@ -1,3 +1,46 @@
+## 3.0.30-rc 2021-01-15
+## HuaweiCloud SDK Core
+- ### Features
+    - Support function `value_of` to get region information.
+- ### Bug Fix
+    - Fix response exception when using temporary AK/SK.
+- ### Change
+    - None
+
+## HuaweiCloud SDK IAM
+- ### Features
+    - None
+- ### Bug Fix
+    - None
+- ### Change
+    - Modify the data type of response field `is_domain_owner` from string to boolean of interface `ShowUser` and `CreateUser`.
+
+## HuaweiCloud SDK Meeting
+- ### Features
+    - Support more interface: ShowOrgRes
+- ### Bug Fix
+    - None
+- ### Change
+    - Interface `CreateMeeting` supports parameter `allowGuestStartConf`.
+    - Add response fields of `ShowMeetingDetail`: `appId`, `isAutoInvite`, `isNotOverlayPidName`.
+
+## HuaweiCloud SDK RDS
+- ### Features
+    - Support more interfaces: ShowOffSiteBackupPolicy, SetOffSiteBackupPolicy, ListOffSiteBackups, ListOffSiteRestoreTimes, ListOffSiteRestoreTimes
+- ### Bug Fix
+    - None
+- ### Change
+    - None
+
+## HuaweiCloud SDK SWR
+- ### Features
+    - Support `Software Repository for Container` service.
+- ### Bug Fix
+    - None
+- ### Change
+    - None
+
+
 ## 3.0.29-beta 2020-12-31
 ## HuaweiCloud SDK CloudIDE
  - ### Features

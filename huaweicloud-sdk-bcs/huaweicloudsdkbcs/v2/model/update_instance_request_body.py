@@ -38,8 +38,7 @@ class UpdateInstanceRequestBody:
         self._node_orgs = None
         self.discriminator = None
 
-        if node_orgs is not None:
-            self.node_orgs = node_orgs
+        self.node_orgs = node_orgs
 
     @property
     def node_orgs(self):

@@ -27,7 +27,8 @@ class CreateRequestBodyCceCreateInfo:
         'node_flavor': 'str',
         'cce_flavor': 'str',
         'init_node_pwd': 'str',
-        'az': 'str'
+        'az': 'str',
+        'cluster_platform_type': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class CreateRequestBodyCceCreateInfo:
         'node_flavor': 'node_flavor',
         'cce_flavor': 'cce_flavor',
         'init_node_pwd': 'init_node_pwd',
-        'az': 'az'
+        'az': 'az',
+        'cluster_platform_type': 'cluster_platform_type'
     }
 
-    def __init__(self, node_num=None, node_flavor=None, cce_flavor=None, init_node_pwd=None, az=None):
+    def __init__(self, node_num=None, node_flavor=None, cce_flavor=None, init_node_pwd=None, az=None, cluster_platform_type=None):
         """CreateRequestBodyCceCreateInfo - a model defined in huaweicloud sdk"""
         
         
@@ -48,6 +50,7 @@ class CreateRequestBodyCceCreateInfo:
         self._cce_flavor = None
         self._init_node_pwd = None
         self._az = None
+        self._cluster_platform_type = None
         self.discriminator = None
 
         if node_num is not None:
@@ -60,6 +63,8 @@ class CreateRequestBodyCceCreateInfo:
             self.init_node_pwd = init_node_pwd
         if az is not None:
             self.az = az
+        if cluster_platform_type is not None:
+            self.cluster_platform_type = cluster_platform_type
 
     @property
     def node_num(self):
@@ -170,6 +175,28 @@ class CreateRequestBodyCceCreateInfo:
         :type: str
         """
         self._az = az
+
+    @property
+    def cluster_platform_type(self):
+        """Gets the cluster_platform_type of this CreateRequestBodyCceCreateInfo.
+
+        集群CPU架构类型：X86（VirtualMachine），ARM（ARM64）
+
+        :return: The cluster_platform_type of this CreateRequestBodyCceCreateInfo.
+        :rtype: str
+        """
+        return self._cluster_platform_type
+
+    @cluster_platform_type.setter
+    def cluster_platform_type(self, cluster_platform_type):
+        """Sets the cluster_platform_type of this CreateRequestBodyCceCreateInfo.
+
+        集群CPU架构类型：X86（VirtualMachine），ARM（ARM64）
+
+        :param cluster_platform_type: The cluster_platform_type of this CreateRequestBodyCceCreateInfo.
+        :type: str
+        """
+        self._cluster_platform_type = cluster_platform_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -105,17 +105,21 @@ class ClientBuilder:
             .with_credentials(self._credentials) \
             .with_config(self._config) \
             .with_http_handler(self._http_handler)
+
+        client.init_http_client()
+
         if self._region is not None:
-            client.with_region(self._region)
-        else:
-            client.with_endpoint(self._endpoint)
+            self._endpoint = self._region.endpoint
+            self._credentials = self._credentials.process_auth_params(client.get_http_client(), self._region.id)
+
+        client.with_endpoint(self._endpoint) \
+            .with_credentials(self._credentials)
 
         if self._file_logger_handler is not None:
             client.add_file_logger(**self._file_logger_handler)
         if self._stream_logger_handler is not None:
             client.add_stream_logger(**self._stream_logger_handler)
 
-        client.init_http_client()
         return client
 
 
@@ -128,7 +132,6 @@ class Client:
 
         self._credentials = None
         self._config = None
-        self._region = None
         self._endpoint = None
 
         self._http_client = None
@@ -154,10 +157,6 @@ class Client:
 
     def with_credentials(self, credentials):
         self._credentials = credentials
-        return self
-
-    def with_region(self, region: Region):
-        self._region = region
         return self
 
     def with_endpoint(self, endpoint):
@@ -273,11 +272,7 @@ class Client:
     def do_http_request(self, method, resource_path, path_params=None, query_params=None, header_params=None, body=None,
                         post_params=None, response_type=None, response_headers=None, collection_formats=None, request_type=None,
                         async_request=False):
-        if self._region is not None:
-            url_parse_result = urlparse(self._region.endpoint)
-            self._credentials = self._credentials.process_auth_params(self._http_client, self._region.id)
-        else:
-            url_parse_result = urlparse(self._endpoint)
+        url_parse_result = urlparse(self._endpoint)
         schema = url_parse_result.scheme
         host = url_parse_result.netloc
 

@@ -381,7 +381,7 @@ class InstancesVO:
     def is_temporary(self):
         """Gets the is_temporary of this InstancesVO.
 
-        是否临时实例。 false页面会显示
+        是否页面显示（以标签配置为准）
 
         :return: The is_temporary of this InstancesVO.
         :rtype: bool
@@ -392,7 +392,7 @@ class InstancesVO:
     def is_temporary(self, is_temporary):
         """Sets the is_temporary of this InstancesVO.
 
-        是否临时实例。 false页面会显示
+        是否页面显示（以标签配置为准）
 
         :param is_temporary: The is_temporary of this InstancesVO.
         :type: bool
@@ -601,7 +601,7 @@ class InstancesVO:
     def refresh_interval(self):
         """Gets the refresh_interval of this InstancesVO.
 
-        实例的生命周期 arm架构,生命周期只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例在到达生命周期后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止。
+        实例的生命周期。 arm架构,生命周期只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例在到达生命周期后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止。
 
         :return: The refresh_interval of this InstancesVO.
         :rtype: int
@@ -612,7 +612,7 @@ class InstancesVO:
     def refresh_interval(self, refresh_interval):
         """Sets the refresh_interval of this InstancesVO.
 
-        实例的生命周期 arm架构,生命周期只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例在到达生命周期后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止。
+        实例的生命周期。 arm架构,生命周期只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例在到达生命周期后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止。
 
         :param refresh_interval: The refresh_interval of this InstancesVO.
         :type: int
@@ -731,7 +731,7 @@ class InstancesVO:
     def stack_id(self):
         """Gets the stack_id of this InstancesVO.
 
-        技术栈ID 目前可取值all，java，go，python，cpp，nodejs，quantum，blockchain，dcn，vue，ruby。
+        技术栈ID，通过技术栈管理ListStacksByTag接口获取。
 
         :return: The stack_id of this InstancesVO.
         :rtype: str
@@ -742,7 +742,7 @@ class InstancesVO:
     def stack_id(self, stack_id):
         """Sets the stack_id of this InstancesVO.
 
-        技术栈ID 目前可取值all，java，go，python，cpp，nodejs，quantum，blockchain，dcn，vue，ruby。
+        技术栈ID，通过技术栈管理ListStacksByTag接口获取。
 
         :param stack_id: The stack_id of this InstancesVO.
         :type: str

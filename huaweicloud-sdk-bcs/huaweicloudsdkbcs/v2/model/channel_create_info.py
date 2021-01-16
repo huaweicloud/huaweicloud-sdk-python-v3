@@ -49,7 +49,7 @@ class ChannelCreateInfo:
     def channel_name(self):
         """Gets the channel_name of this ChannelCreateInfo.
 
-        通道名称
+        通道名称，字符串长度4-24，必须包含a-z，0-9，以小写字母开头，以小写字母或者数字结尾
 
         :return: The channel_name of this ChannelCreateInfo.
         :rtype: str
@@ -60,7 +60,7 @@ class ChannelCreateInfo:
     def channel_name(self, channel_name):
         """Sets the channel_name of this ChannelCreateInfo.
 
-        通道名称
+        通道名称，字符串长度4-24，必须包含a-z，0-9，以小写字母开头，以小写字母或者数字结尾
 
         :param channel_name: The channel_name of this ChannelCreateInfo.
         :type: str

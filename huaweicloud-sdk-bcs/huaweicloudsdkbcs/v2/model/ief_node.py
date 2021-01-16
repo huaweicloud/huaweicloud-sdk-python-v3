@@ -44,12 +44,9 @@ class IEFNode:
         self._public_ip_address = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if status is not None:
-            self.status = status
-        if public_ip_address is not None:
-            self.public_ip_address = public_ip_address
+        self.id = id
+        self.status = status
+        self.public_ip_address = public_ip_address
 
     @property
     def id(self):
@@ -77,7 +74,7 @@ class IEFNode:
     def status(self):
         """Gets the status of this IEFNode.
 
-        节点状态
+        节点状态:\"ACTIVE\"
 
         :return: The status of this IEFNode.
         :rtype: str
@@ -88,7 +85,7 @@ class IEFNode:
     def status(self, status):
         """Sets the status of this IEFNode.
 
-        节点状态
+        节点状态:\"ACTIVE\"
 
         :param status: The status of this IEFNode.
         :type: str

@@ -38,8 +38,7 @@ class BatchCreateChannelsRequestBody:
         self._channels = None
         self.discriminator = None
 
-        if channels is not None:
-            self.channels = channels
+        self.channels = channels
 
     @property
     def channels(self):

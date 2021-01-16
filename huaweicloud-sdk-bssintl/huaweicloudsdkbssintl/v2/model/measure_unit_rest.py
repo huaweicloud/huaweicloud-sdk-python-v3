@@ -24,37 +24,37 @@ class MeasureUnitRest:
 
     openapi_types = {
         'measure_id': 'int',
-        'measure_type': 'int',
         'measure_name': 'str',
-        'abbreviation': 'str'
+        'abbreviation': 'str',
+        'measure_type': 'int'
     }
 
     attribute_map = {
         'measure_id': 'measure_id',
-        'measure_type': 'measure_type',
         'measure_name': 'measure_name',
-        'abbreviation': 'abbreviation'
+        'abbreviation': 'abbreviation',
+        'measure_type': 'measure_type'
     }
 
-    def __init__(self, measure_id=None, measure_type=None, measure_name=None, abbreviation=None):
+    def __init__(self, measure_id=None, measure_name=None, abbreviation=None, measure_type=None):
         """MeasureUnitRest - a model defined in huaweicloud sdk"""
         
         
 
         self._measure_id = None
-        self._measure_type = None
         self._measure_name = None
         self._abbreviation = None
+        self._measure_type = None
         self.discriminator = None
 
         if measure_id is not None:
             self.measure_id = measure_id
-        if measure_type is not None:
-            self.measure_type = measure_type
         if measure_name is not None:
             self.measure_name = measure_name
         if abbreviation is not None:
             self.abbreviation = abbreviation
+        if measure_type is not None:
+            self.measure_type = measure_type
 
     @property
     def measure_id(self):
@@ -77,28 +77,6 @@ class MeasureUnitRest:
         :type: int
         """
         self._measure_id = measure_id
-
-    @property
-    def measure_type(self):
-        """Gets the measure_type of this MeasureUnitRest.
-
-        |参数名称：度量类型| |参数的约束及描述：度量类型|
-
-        :return: The measure_type of this MeasureUnitRest.
-        :rtype: int
-        """
-        return self._measure_type
-
-    @measure_type.setter
-    def measure_type(self, measure_type):
-        """Sets the measure_type of this MeasureUnitRest.
-
-        |参数名称：度量类型| |参数的约束及描述：度量类型|
-
-        :param measure_type: The measure_type of this MeasureUnitRest.
-        :type: int
-        """
-        self._measure_type = measure_type
 
     @property
     def measure_name(self):
@@ -143,6 +121,28 @@ class MeasureUnitRest:
         :type: str
         """
         self._abbreviation = abbreviation
+
+    @property
+    def measure_type(self):
+        """Gets the measure_type of this MeasureUnitRest.
+
+        |参数名称：度量类型| |参数的约束及描述：度量类型|
+
+        :return: The measure_type of this MeasureUnitRest.
+        :rtype: int
+        """
+        return self._measure_type
+
+    @measure_type.setter
+    def measure_type(self, measure_type):
+        """Sets the measure_type of this MeasureUnitRest.
+
+        |参数名称：度量类型| |参数的约束及描述：度量类型|
+
+        :param measure_type: The measure_type of this MeasureUnitRest.
+        :type: int
+        """
+        self._measure_type = measure_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

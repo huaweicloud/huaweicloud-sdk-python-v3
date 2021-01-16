@@ -38,8 +38,7 @@ class BatchAddPeersToChannelRequestBody:
         self._channel_peers = None
         self.discriminator = None
 
-        if channel_peers is not None:
-            self.channel_peers = channel_peers
+        self.channel_peers = channel_peers
 
     @property
     def channel_peers(self):

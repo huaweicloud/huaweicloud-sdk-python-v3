@@ -24,7 +24,7 @@ class RecognizeGeneralTableResultResponse:
 
     openapi_types = {
         'words_region_count': 'int',
-        'words_region_list': 'list[RecognizeGeneralTableItemsResponse]'
+        'words_region_list': 'list[WordsRegionList]'
     }
 
     attribute_map = {
@@ -73,7 +73,7 @@ class RecognizeGeneralTableResultResponse:
         文字区域识别结果列表，输出顺序从左到右，先上后下。 
 
         :return: The words_region_list of this RecognizeGeneralTableResultResponse.
-        :rtype: list[RecognizeGeneralTableItemsResponse]
+        :rtype: list[WordsRegionList]
         """
         return self._words_region_list
 
@@ -84,7 +84,7 @@ class RecognizeGeneralTableResultResponse:
         文字区域识别结果列表，输出顺序从左到右，先上后下。 
 
         :param words_region_list: The words_region_list of this RecognizeGeneralTableResultResponse.
-        :type: list[RecognizeGeneralTableItemsResponse]
+        :type: list[WordsRegionList]
         """
         self._words_region_list = words_region_list
 

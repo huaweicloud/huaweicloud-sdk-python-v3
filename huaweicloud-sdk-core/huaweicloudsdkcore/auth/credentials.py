@@ -23,9 +23,9 @@ import inspect
 import os
 from concurrent.futures.thread import ThreadPoolExecutor
 
-from huaweicloudsdkcore.auth.iam import get_keystone_list_projects_request, keystone_list_projects, \
+from huaweicloudsdkcore.auth.iam_service import get_keystone_list_projects_request, keystone_list_projects, \
     get_keystone_list_auth_domains_request, keystone_list_auth_domains, DEFAULT_IAM_ENDPOINT
-from huaweicloudsdkcore.exceptions.exceptions import ApiValueError
+from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException
 from huaweicloudsdkcore.signer import signer
 from huaweicloudsdkcore.utils.string_utils import camel_to_underline
 
@@ -77,7 +77,11 @@ class BasicCredentials(Credentials):
         future_request = self.process_auth_request(
             get_keystone_list_projects_request(self.iam_endpoint, region_id=region_id), http_client)
         request = future_request.result()
-        self.project_id = keystone_list_projects(http_client, request)
+        try:
+            self.project_id = keystone_list_projects(http_client, request)
+        except ServiceResponseException as e:
+            err_msg = e.error_msg if hasattr(e, "error_msg") else "unknown exception."
+            raise ApiValueError("Failed to get project id, " + err_msg)
         return self
 
     def process_auth_request(self, request, http_client):
@@ -134,7 +138,11 @@ class GlobalCredentials(Credentials):
         future_request = self.process_auth_request(get_keystone_list_auth_domains_request(self.iam_endpoint),
                                                    http_client)
         request = future_request.result()
-        self.domain_id = keystone_list_auth_domains(http_client, request)
+        try:
+            self.domain_id = keystone_list_auth_domains(http_client, request)
+        except ServiceResponseException as e:
+            err_msg = e.error_msg if hasattr(e, "error_msg") else "unknown exception."
+            raise ApiValueError("Failed to get domain id, " + err_msg)
         return self
 
     def process_auth_request(self, request, http_client):

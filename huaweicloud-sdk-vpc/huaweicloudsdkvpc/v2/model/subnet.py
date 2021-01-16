@@ -41,7 +41,8 @@ class Subnet:
         'neutron_network_id': 'str',
         'neutron_subnet_id': 'str',
         'neutron_subnet_id_v6': 'str',
-        'extra_dhcp_opts': 'list[ExtraDhcpOption]'
+        'extra_dhcp_opts': 'list[ExtraDhcpOption]',
+        'scope': 'str'
     }
 
     attribute_map = {
@@ -63,10 +64,11 @@ class Subnet:
         'neutron_network_id': 'neutron_network_id',
         'neutron_subnet_id': 'neutron_subnet_id',
         'neutron_subnet_id_v6': 'neutron_subnet_id_v6',
-        'extra_dhcp_opts': 'extra_dhcp_opts'
+        'extra_dhcp_opts': 'extra_dhcp_opts',
+        'scope': 'scope'
     }
 
-    def __init__(self, id=None, name=None, description=None, cidr=None, gateway_ip=None, ipv6_enable=None, cidr_v6=None, gateway_ip_v6=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, availability_zone=None, vpc_id=None, status=None, neutron_network_id=None, neutron_subnet_id=None, neutron_subnet_id_v6=None, extra_dhcp_opts=None):
+    def __init__(self, id=None, name=None, description=None, cidr=None, gateway_ip=None, ipv6_enable=None, cidr_v6=None, gateway_ip_v6=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, availability_zone=None, vpc_id=None, status=None, neutron_network_id=None, neutron_subnet_id=None, neutron_subnet_id_v6=None, extra_dhcp_opts=None, scope=None):
         """Subnet - a model defined in huaweicloud sdk"""
         
         
@@ -90,6 +92,7 @@ class Subnet:
         self._neutron_subnet_id = None
         self._neutron_subnet_id_v6 = None
         self._extra_dhcp_opts = None
+        self._scope = None
         self.discriminator = None
 
         self.id = id
@@ -111,6 +114,8 @@ class Subnet:
         self.neutron_subnet_id = neutron_subnet_id
         self.neutron_subnet_id_v6 = neutron_subnet_id_v6
         self.extra_dhcp_opts = extra_dhcp_opts
+        if scope is not None:
+            self.scope = scope
 
     @property
     def id(self):
@@ -529,6 +534,28 @@ class Subnet:
         :type: list[ExtraDhcpOption]
         """
         self._extra_dhcp_opts = extra_dhcp_opts
+
+    @property
+    def scope(self):
+        """Gets the scope of this Subnet.
+
+        功能说明：子网作用域 取值范围：center-表示作用域为中心；{azId}表示作用域为具体的AZ
+
+        :return: The scope of this Subnet.
+        :rtype: str
+        """
+        return self._scope
+
+    @scope.setter
+    def scope(self, scope):
+        """Sets the scope of this Subnet.
+
+        功能说明：子网作用域 取值范围：center-表示作用域为中心；{azId}表示作用域为具体的AZ
+
+        :param scope: The scope of this Subnet.
+        :type: str
+        """
+        self._scope = scope
 
     def to_dict(self):
         """Returns the model properties as a dict"""

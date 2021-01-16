@@ -45,10 +45,8 @@ class ListInstanceMetricRequestBody:
         self.discriminator = None
 
         self.type = type
-        if entity_name is not None:
-            self.entity_name = entity_name
-        if instance_name is not None:
-            self.instance_name = instance_name
+        self.entity_name = entity_name
+        self.instance_name = instance_name
 
     @property
     def type(self):

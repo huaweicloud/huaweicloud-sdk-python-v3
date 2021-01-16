@@ -36,7 +36,9 @@ class ListCustomerselfResourceRecordsRequest:
         'include_zero_record': 'bool',
         'method': 'str',
         'sub_customer_id': 'str',
-        'trade_id': 'str'
+        'trade_id': 'str',
+        'bill_date_begin': 'str',
+        'bill_date_end': 'str'
     }
 
     attribute_map = {
@@ -53,10 +55,12 @@ class ListCustomerselfResourceRecordsRequest:
         'include_zero_record': 'include_zero_record',
         'method': 'method',
         'sub_customer_id': 'sub_customer_id',
-        'trade_id': 'trade_id'
+        'trade_id': 'trade_id',
+        'bill_date_begin': 'bill_date_begin',
+        'bill_date_end': 'bill_date_end'
     }
 
-    def __init__(self, x_language=None, cycle=None, cloud_service_type=None, region=None, charge_mode=None, bill_type=None, offset=0, limit=10, resource_id=None, enterprise_project_id=None, include_zero_record=None, method=None, sub_customer_id=None, trade_id=None):
+    def __init__(self, x_language=None, cycle=None, cloud_service_type=None, region=None, charge_mode=None, bill_type=None, offset=0, limit=10, resource_id=None, enterprise_project_id=None, include_zero_record=None, method=None, sub_customer_id=None, trade_id=None, bill_date_begin=None, bill_date_end=None):
         """ListCustomerselfResourceRecordsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -75,6 +79,8 @@ class ListCustomerselfResourceRecordsRequest:
         self._method = None
         self._sub_customer_id = None
         self._trade_id = None
+        self._bill_date_begin = None
+        self._bill_date_end = None
         self.discriminator = None
 
         if x_language is not None:
@@ -104,6 +110,10 @@ class ListCustomerselfResourceRecordsRequest:
             self.sub_customer_id = sub_customer_id
         if trade_id is not None:
             self.trade_id = trade_id
+        if bill_date_begin is not None:
+            self.bill_date_begin = bill_date_begin
+        if bill_date_end is not None:
+            self.bill_date_end = bill_date_end
 
     @property
     def x_language(self):
@@ -384,6 +394,46 @@ class ListCustomerselfResourceRecordsRequest:
         :type: str
         """
         self._trade_id = trade_id
+
+    @property
+    def bill_date_begin(self):
+        """Gets the bill_date_begin of this ListCustomerselfResourceRecordsRequest.
+
+
+        :return: The bill_date_begin of this ListCustomerselfResourceRecordsRequest.
+        :rtype: str
+        """
+        return self._bill_date_begin
+
+    @bill_date_begin.setter
+    def bill_date_begin(self, bill_date_begin):
+        """Sets the bill_date_begin of this ListCustomerselfResourceRecordsRequest.
+
+
+        :param bill_date_begin: The bill_date_begin of this ListCustomerselfResourceRecordsRequest.
+        :type: str
+        """
+        self._bill_date_begin = bill_date_begin
+
+    @property
+    def bill_date_end(self):
+        """Gets the bill_date_end of this ListCustomerselfResourceRecordsRequest.
+
+
+        :return: The bill_date_end of this ListCustomerselfResourceRecordsRequest.
+        :rtype: str
+        """
+        return self._bill_date_end
+
+    @bill_date_end.setter
+    def bill_date_end(self, bill_date_end):
+        """Sets the bill_date_end of this ListCustomerselfResourceRecordsRequest.
+
+
+        :param bill_date_end: The bill_date_end of this ListCustomerselfResourceRecordsRequest.
+        :type: str
+        """
+        self._bill_date_end = bill_date_end
 
     def to_dict(self):
         """Returns the model properties as a dict"""

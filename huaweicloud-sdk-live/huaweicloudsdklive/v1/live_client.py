@@ -438,6 +438,77 @@ class LiveClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_live_streams_online(self, request):
+        """查询直播中的流信息
+
+        查询直播中的流信息
+
+        :param ListLiveStreamsOnlineRequest request
+        :return: ListLiveStreamsOnlineResponse
+        """
+        return self.list_live_streams_online_with_http_info(request)
+
+    def list_live_streams_online_with_http_info(self, request):
+        """查询直播中的流信息
+
+        查询直播中的流信息
+
+        :param ListLiveStreamsOnlineRequest request
+        :return: ListLiveStreamsOnlineResponse
+        """
+
+        all_params = ['publish_domain', 'app', 'offset', 'limit', 'stream']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'publish_domain' in local_var_params:
+            query_params.append(('publish_domain', local_var_params['publish_domain']))
+        if 'app' in local_var_params:
+            query_params.append(('app', local_var_params['app']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'stream' in local_var_params:
+            query_params.append(('stream', local_var_params['stream']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/realtime/streams',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListLiveStreamsOnlineResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_record_configs(self, request):
         """查询录制配置
 

@@ -25,7 +25,7 @@ class GeneralTextResponseBodyItems:
     openapi_types = {
         'direction': 'int',
         'words_block_count': 'int',
-        'words_block_list': 'list[GeneralTextItemsResponse]'
+        'words_block_list': 'list[GeneralTextWordsBlockList]'
     }
 
     attribute_map = {
@@ -99,7 +99,7 @@ class GeneralTextResponseBodyItems:
         识别文字块列表，输出顺序从左到右，先上后下。 
 
         :return: The words_block_list of this GeneralTextResponseBodyItems.
-        :rtype: list[GeneralTextItemsResponse]
+        :rtype: list[GeneralTextWordsBlockList]
         """
         return self._words_block_list
 
@@ -110,7 +110,7 @@ class GeneralTextResponseBodyItems:
         识别文字块列表，输出顺序从左到右，先上后下。 
 
         :param words_block_list: The words_block_list of this GeneralTextResponseBodyItems.
-        :type: list[GeneralTextItemsResponse]
+        :type: list[GeneralTextWordsBlockList]
         """
         self._words_block_list = words_block_list
 

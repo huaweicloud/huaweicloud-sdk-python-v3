@@ -320,7 +320,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def measure_id(self):
         """Gets the measure_id of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：金额单位。1：元2：角3：分| |参数的约束及描述：金额单位。1：元2：角3：分|
+        |参数名称：金额单位。1：元| |参数的约束及描述：金额单位。1：元|
 
         :return: The measure_id of this ShowCustomerMonthlySumResponse.
         :rtype: int
@@ -331,7 +331,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def measure_id(self, measure_id):
         """Sets the measure_id of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：金额单位。1：元2：角3：分| |参数的约束及描述：金额单位。1：元2：角3：分|
+        |参数名称：金额单位。1：元| |参数的约束及描述：金额单位。1：元|
 
         :param measure_id: The measure_id of this ShowCustomerMonthlySumResponse.
         :type: int

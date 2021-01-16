@@ -167,7 +167,7 @@ class UpdateSubnetOption:
     def primary_dns(self):
         """Gets the primary_dns of this UpdateSubnetOption.
 
-        功能说明：子网dns服务器地址1 约束：ip格式
+        功能说明：子网dns服务器地址1 约束：ip格式 默认值：不填时为空 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
         :return: The primary_dns of this UpdateSubnetOption.
         :rtype: str
@@ -178,7 +178,7 @@ class UpdateSubnetOption:
     def primary_dns(self, primary_dns):
         """Sets the primary_dns of this UpdateSubnetOption.
 
-        功能说明：子网dns服务器地址1 约束：ip格式
+        功能说明：子网dns服务器地址1 约束：ip格式 默认值：不填时为空 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
         :param primary_dns: The primary_dns of this UpdateSubnetOption.
         :type: str
@@ -189,7 +189,7 @@ class UpdateSubnetOption:
     def secondary_dns(self):
         """Gets the secondary_dns of this UpdateSubnetOption.
 
-        功能说明：子网dns服务器地址2 约束：ip格式
+        功能说明：子网dns服务器地址2 约束：ip格式 默认值：不填时为空 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
         :return: The secondary_dns of this UpdateSubnetOption.
         :rtype: str
@@ -200,7 +200,7 @@ class UpdateSubnetOption:
     def secondary_dns(self, secondary_dns):
         """Sets the secondary_dns of this UpdateSubnetOption.
 
-        功能说明：子网dns服务器地址2 约束：ip格式
+        功能说明：子网dns服务器地址2 约束：ip格式 默认值：不填时为空 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
         :param secondary_dns: The secondary_dns of this UpdateSubnetOption.
         :type: str
@@ -211,7 +211,7 @@ class UpdateSubnetOption:
     def dns_list(self):
         """Gets the dns_list of this UpdateSubnetOption.
 
-        功能说明：子网dns服务器地址的集合；如果想使用两个以上dns服务器，请使用该字段。 约束：是子网dns服务器地址1跟子网dns服务器地址2的合集的父集
+        功能说明：子网dns服务器地址的集合；如果想使用两个以上dns服务器，请使用该字段。 约束：是子网dns服务器地址1跟子网dns服务器地址2的合集的父集 默认值：不填时为空，无法使用云内网DNS功能 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
         :return: The dns_list of this UpdateSubnetOption.
         :rtype: list[str]
@@ -222,7 +222,7 @@ class UpdateSubnetOption:
     def dns_list(self, dns_list):
         """Sets the dns_list of this UpdateSubnetOption.
 
-        功能说明：子网dns服务器地址的集合；如果想使用两个以上dns服务器，请使用该字段。 约束：是子网dns服务器地址1跟子网dns服务器地址2的合集的父集
+        功能说明：子网dns服务器地址的集合；如果想使用两个以上dns服务器，请使用该字段。 约束：是子网dns服务器地址1跟子网dns服务器地址2的合集的父集 默认值：不填时为空，无法使用云内网DNS功能 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
         :param dns_list: The dns_list of this UpdateSubnetOption.
         :type: list[str]

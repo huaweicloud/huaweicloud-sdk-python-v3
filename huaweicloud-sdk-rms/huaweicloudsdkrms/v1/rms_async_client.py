@@ -1032,7 +1032,7 @@ class RmsAsyncClient(Client):
     def list_regions_async(self, request):
         """查询租户可见的区域
 
-        Returns a list of domain-visible regions
+        查询租户可见的区域
 
         :param ListRegionsRequest request
         :return: ListRegionsResponse
@@ -1042,7 +1042,7 @@ class RmsAsyncClient(Client):
     def list_regions_with_http_info(self, request):
         """查询租户可见的区域
 
-        Returns a list of domain-visible regions
+        查询租户可见的区域
 
         :param ListRegionsRequest request
         :return: ListRegionsResponse
@@ -1302,7 +1302,7 @@ class RmsAsyncClient(Client):
     def list_resources_async(self, request):
         """列举指定类型的资源
 
-        返回当前租户下特定资源类型的资源，需要当前用户有rms:resources:list权限。比如查询云服务器，对应的RMS资源类型是ecs.cloudservers，其中provider为ecs，type为cloudservers。RMS支持的服务和资源类型参见[支持的服务和区域](https://console.huaweicloud.com/eps/#/resources/supported)。
+        返回当前租户下特定资源类型的资源，需要当前用户有rms:resources:list权限。比如查询云服务器，对应的RMS资源类型是ecs.cloudservers，其中provider为ecs，type为cloudservers。 RMS支持的服务和资源类型参见[支持的服务和区域](https://console.huaweicloud.com/eps/#/resources/supported)。
 
         :param ListResourcesRequest request
         :return: ListResourcesResponse
@@ -1312,7 +1312,7 @@ class RmsAsyncClient(Client):
     def list_resources_with_http_info(self, request):
         """列举指定类型的资源
 
-        返回当前租户下特定资源类型的资源，需要当前用户有rms:resources:list权限。比如查询云服务器，对应的RMS资源类型是ecs.cloudservers，其中provider为ecs，type为cloudservers。RMS支持的服务和资源类型参见[支持的服务和区域](https://console.huaweicloud.com/eps/#/resources/supported)。
+        返回当前租户下特定资源类型的资源，需要当前用户有rms:resources:list权限。比如查询云服务器，对应的RMS资源类型是ecs.cloudservers，其中provider为ecs，type为cloudservers。 RMS支持的服务和资源类型参见[支持的服务和区域](https://console.huaweicloud.com/eps/#/resources/supported)。
 
         :param ListResourcesRequest request
         :return: ListResourcesResponse

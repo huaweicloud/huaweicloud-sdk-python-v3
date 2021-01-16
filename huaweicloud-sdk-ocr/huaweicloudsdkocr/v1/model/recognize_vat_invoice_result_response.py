@@ -52,7 +52,8 @@ class RecognizeVatInvoiceResultResponse:
         'reviewer': 'str',
         'issuer': 'str',
         'seller_seal': 'str',
-        'item_list': 'list[RecognizeVatInvoiceItemsResponse]'
+        'item_list': 'list[ItemList]',
+        'confidence': 'object'
     }
 
     attribute_map = {
@@ -85,10 +86,11 @@ class RecognizeVatInvoiceResultResponse:
         'reviewer': 'reviewer',
         'issuer': 'issuer',
         'seller_seal': 'seller_seal',
-        'item_list': 'item_list'
+        'item_list': 'item_list',
+        'confidence': 'confidence'
     }
 
-    def __init__(self, type=None, serial_number=None, attribution=None, supervision_seal=None, code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_id=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None):
+    def __init__(self, type=None, serial_number=None, attribution=None, supervision_seal=None, code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_id=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, confidence=None):
         """RecognizeVatInvoiceResultResponse - a model defined in huaweicloud sdk"""
         
         
@@ -123,6 +125,7 @@ class RecognizeVatInvoiceResultResponse:
         self._issuer = None
         self._seller_seal = None
         self._item_list = None
+        self._confidence = None
         self.discriminator = None
 
         if type is not None:
@@ -185,6 +188,8 @@ class RecognizeVatInvoiceResultResponse:
             self.seller_seal = seller_seal
         if item_list is not None:
             self.item_list = item_list
+        if confidence is not None:
+            self.confidence = confidence
 
     @property
     def type(self):
@@ -831,7 +836,7 @@ class RecognizeVatInvoiceResultResponse:
         货物或应税劳务列表。 
 
         :return: The item_list of this RecognizeVatInvoiceResultResponse.
-        :rtype: list[RecognizeVatInvoiceItemsResponse]
+        :rtype: list[ItemList]
         """
         return self._item_list
 
@@ -842,9 +847,31 @@ class RecognizeVatInvoiceResultResponse:
         货物或应税劳务列表。 
 
         :param item_list: The item_list of this RecognizeVatInvoiceResultResponse.
-        :type: list[RecognizeVatInvoiceItemsResponse]
+        :type: list[ItemList]
         """
         self._item_list = item_list
+
+    @property
+    def confidence(self):
+        """Gets the confidence of this RecognizeVatInvoiceResultResponse.
+
+        各个字段的置信度。 当“advanced_mode”设置为“true”时才返回。 
+
+        :return: The confidence of this RecognizeVatInvoiceResultResponse.
+        :rtype: object
+        """
+        return self._confidence
+
+    @confidence.setter
+    def confidence(self, confidence):
+        """Sets the confidence of this RecognizeVatInvoiceResultResponse.
+
+        各个字段的置信度。 当“advanced_mode”设置为“true”时才返回。 
+
+        :param confidence: The confidence of this RecognizeVatInvoiceResultResponse.
+        :type: object
+        """
+        self._confidence = confidence
 
     def to_dict(self):
         """Returns the model properties as a dict"""

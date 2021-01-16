@@ -24,8 +24,8 @@ class HandwritingResponseBodyItem:
 
     openapi_types = {
         'words_block_count': 'int',
-        'words_block_list': 'list[HandwritingItemsResponse]',
-        'extracted_data': 'HandwritingItems2Response'
+        'words_block_list': 'list[HandwritingWordsBlockList]',
+        'extracted_data': 'ExtractedData'
     }
 
     attribute_map = {
@@ -78,7 +78,7 @@ class HandwritingResponseBodyItem:
         识别文字块列表，输出顺序从左到右，从上到下。 
 
         :return: The words_block_list of this HandwritingResponseBodyItem.
-        :rtype: list[HandwritingItemsResponse]
+        :rtype: list[HandwritingWordsBlockList]
         """
         return self._words_block_list
 
@@ -89,7 +89,7 @@ class HandwritingResponseBodyItem:
         识别文字块列表，输出顺序从左到右，从上到下。 
 
         :param words_block_list: The words_block_list of this HandwritingResponseBodyItem.
-        :type: list[HandwritingItemsResponse]
+        :type: list[HandwritingWordsBlockList]
         """
         self._words_block_list = words_block_list
 
@@ -99,7 +99,7 @@ class HandwritingResponseBodyItem:
 
 
         :return: The extracted_data of this HandwritingResponseBodyItem.
-        :rtype: HandwritingItems2Response
+        :rtype: ExtractedData
         """
         return self._extracted_data
 
@@ -109,7 +109,7 @@ class HandwritingResponseBodyItem:
 
 
         :param extracted_data: The extracted_data of this HandwritingResponseBodyItem.
-        :type: HandwritingItems2Response
+        :type: ExtractedData
         """
         self._extracted_data = extracted_data
 

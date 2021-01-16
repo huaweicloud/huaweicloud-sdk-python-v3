@@ -163,7 +163,7 @@ class ResourceTypeResponse:
     def console_endpoint_id(self):
         """Gets the console_endpoint_id of this ResourceTypeResponse.
 
-        console对应的地址
+        console终端id
 
         :return: The console_endpoint_id of this ResourceTypeResponse.
         :rtype: str
@@ -174,7 +174,7 @@ class ResourceTypeResponse:
     def console_endpoint_id(self, console_endpoint_id):
         """Sets the console_endpoint_id of this ResourceTypeResponse.
 
-        console对应的地址
+        console终端id
 
         :param console_endpoint_id: The console_endpoint_id of this ResourceTypeResponse.
         :type: str

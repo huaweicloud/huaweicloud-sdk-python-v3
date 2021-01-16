@@ -24,32 +24,27 @@ class CreateRequestBodyCceClusterInfo:
 
     openapi_types = {
         'cluster_id': 'str',
-        'cluster_name': 'str',
-        'cluster_platform_type': 'str'
+        'cluster_name': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'cluster_name': 'cluster_name',
-        'cluster_platform_type': 'cluster_platform_type'
+        'cluster_name': 'cluster_name'
     }
 
-    def __init__(self, cluster_id=None, cluster_name=None, cluster_platform_type=None):
+    def __init__(self, cluster_id=None, cluster_name=None):
         """CreateRequestBodyCceClusterInfo - a model defined in huaweicloud sdk"""
         
         
 
         self._cluster_id = None
         self._cluster_name = None
-        self._cluster_platform_type = None
         self.discriminator = None
 
         if cluster_id is not None:
             self.cluster_id = cluster_id
         if cluster_name is not None:
             self.cluster_name = cluster_name
-        if cluster_platform_type is not None:
-            self.cluster_platform_type = cluster_platform_type
 
     @property
     def cluster_id(self):
@@ -94,28 +89,6 @@ class CreateRequestBodyCceClusterInfo:
         :type: str
         """
         self._cluster_name = cluster_name
-
-    @property
-    def cluster_platform_type(self):
-        """Gets the cluster_platform_type of this CreateRequestBodyCceClusterInfo.
-
-        集群架构类型：X86（VirtualMachine），ARM（ARM64）
-
-        :return: The cluster_platform_type of this CreateRequestBodyCceClusterInfo.
-        :rtype: str
-        """
-        return self._cluster_platform_type
-
-    @cluster_platform_type.setter
-    def cluster_platform_type(self, cluster_platform_type):
-        """Sets the cluster_platform_type of this CreateRequestBodyCceClusterInfo.
-
-        集群架构类型：X86（VirtualMachine），ARM（ARM64）
-
-        :param cluster_platform_type: The cluster_platform_type of this CreateRequestBodyCceClusterInfo.
-        :type: str
-        """
-        self._cluster_platform_type = cluster_platform_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

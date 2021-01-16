@@ -316,7 +316,7 @@ class Stacks:
     def stack_id(self):
         """Gets the stack_id of this Stacks.
 
-        技术栈ID 目前可取值all，java，go，python，cpp，nodejs，quantum，blockchain，dcn，vue，ruby。
+        技术栈ID，通过技术栈管理ListStacksByTag接口获取。
 
         :return: The stack_id of this Stacks.
         :rtype: str
@@ -327,7 +327,7 @@ class Stacks:
     def stack_id(self, stack_id):
         """Sets the stack_id of this Stacks.
 
-        技术栈ID 目前可取值all，java，go，python，cpp，nodejs，quantum，blockchain，dcn，vue，ruby。
+        技术栈ID，通过技术栈管理ListStacksByTag接口获取。
 
         :param stack_id: The stack_id of this Stacks.
         :type: str

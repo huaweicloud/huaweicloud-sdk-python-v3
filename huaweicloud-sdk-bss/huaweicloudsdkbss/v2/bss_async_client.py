@@ -48,134 +48,6 @@ class BssAsyncClient(Client):
 
         return ClientBuilder(clazz, "GlobalCredentials")
 
-    def list_conversions_async(self, request):
-        """查询用量单位进制
-
-        功能描述：查询用量单位进制
-
-        :param ListConversionsRequest request
-        :return: ListConversionsResponse
-        """
-        return self.list_conversions_with_http_info(request)
-
-    def list_conversions_with_http_info(self, request):
-        """查询用量单位进制
-
-        功能描述：查询用量单位进制
-
-        :param ListConversionsRequest request
-        :return: ListConversionsResponse
-        """
-
-        all_params = ['x_language', 'measure_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'measure_type' in local_var_params:
-            query_params.append(('measure_type', local_var_params['measure_type']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/bases/conversions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListConversionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_measure_units_async(self, request):
-        """查询用量单位列表
-
-        功能描述：查询用量单位列表
-
-        :param ListMeasureUnitsRequest request
-        :return: ListMeasureUnitsResponse
-        """
-        return self.list_measure_units_with_http_info(request)
-
-    def list_measure_units_with_http_info(self, request):
-        """查询用量单位列表
-
-        功能描述：查询用量单位列表
-
-        :param ListMeasureUnitsRequest request
-        :return: ListMeasureUnitsResponse
-        """
-
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/bases/measurements',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListMeasureUnitsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def batch_set_sub_customer_discount_async(self, request):
         """设置伙伴折扣
 
@@ -492,7 +364,7 @@ class BssAsyncClient(Client):
     def create_partner_coupons_async(self, request):
         """发放优惠券
 
-        功能描述：伙伴在伙伴销售平台使用额度为客户发放优惠券。
+        功能描述：合作伙伴可以在拥有的代金券额度范围内为客户下发优惠券。
 
         :param CreatePartnerCouponsRequest request
         :return: CreatePartnerCouponsResponse
@@ -502,7 +374,7 @@ class BssAsyncClient(Client):
     def create_partner_coupons_with_http_info(self, request):
         """发放优惠券
 
-        功能描述：伙伴在伙伴销售平台使用额度为客户发放优惠券。
+        功能描述：合作伙伴可以在拥有的代金券额度范围内为客户下发优惠券。
 
         :param CreatePartnerCouponsRequest request
         :return: CreatePartnerCouponsResponse
@@ -880,9 +752,9 @@ class BssAsyncClient(Client):
 
 
     def list_coupon_quotas_records_async(self, request):
-        """查询优惠券额度发放回收记录
+        """查询代金券额度的发放回收记录
 
-        功能描述：查询优惠券额度发放回收记录
+        功能描述：华为云伙伴能力中心（一级经销商）可以在伙伴中心查看给精英服务商（二级经销商）发放或回收代金券额度的操作记录。
 
         :param ListCouponQuotasRecordsRequest request
         :return: ListCouponQuotasRecordsResponse
@@ -890,9 +762,9 @@ class BssAsyncClient(Client):
         return self.list_coupon_quotas_records_with_http_info(request)
 
     def list_coupon_quotas_records_with_http_info(self, request):
-        """查询优惠券额度发放回收记录
+        """查询代金券额度的发放回收记录
 
-        功能描述：查询优惠券额度发放回收记录
+        功能描述：华为云伙伴能力中心（一级经销商）可以在伙伴中心查看给精英服务商（二级经销商）发放或回收代金券额度的操作记录。
 
         :param ListCouponQuotasRecordsRequest request
         :return: ListCouponQuotasRecordsResponse
@@ -1259,7 +1131,7 @@ class BssAsyncClient(Client):
         :return: ListCustomerselfResourceRecordsResponse
         """
 
-        all_params = ['cycle', 'x_language', 'cloud_service_type', 'region', 'charge_mode', 'bill_type', 'offset', 'limit', 'resource_id', 'enterprise_project_id', 'include_zero_record', 'method', 'sub_customer_id', 'trade_id']
+        all_params = ['cycle', 'x_language', 'cloud_service_type', 'region', 'charge_mode', 'bill_type', 'offset', 'limit', 'resource_id', 'enterprise_project_id', 'include_zero_record', 'method', 'sub_customer_id', 'trade_id', 'bill_date_begin', 'bill_date_end']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1296,6 +1168,10 @@ class BssAsyncClient(Client):
             query_params.append(('sub_customer_id', local_var_params['sub_customer_id']))
         if 'trade_id' in local_var_params:
             query_params.append(('trade_id', local_var_params['trade_id']))
+        if 'bill_date_begin' in local_var_params:
+            query_params.append(('bill_date_begin', local_var_params['bill_date_begin']))
+        if 'bill_date_end' in local_var_params:
+            query_params.append(('bill_date_end', local_var_params['bill_date_end']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -1600,9 +1476,9 @@ class BssAsyncClient(Client):
 
 
     def list_issued_coupon_quotas_async(self, request):
-        """查询已发放优惠券额度
+        """查询已发放的代金券额度
 
-        功能描述：一级经销商查询发给二级经销商的额度
+        功能描述：华为云伙伴能力中心（一级经销商）可以在伙伴中心查看发放给精英服务商（二级经销商）的代金券额度列表。
 
         :param ListIssuedCouponQuotasRequest request
         :return: ListIssuedCouponQuotasResponse
@@ -1610,9 +1486,9 @@ class BssAsyncClient(Client):
         return self.list_issued_coupon_quotas_with_http_info(request)
 
     def list_issued_coupon_quotas_with_http_info(self, request):
-        """查询已发放优惠券额度
+        """查询已发放的代金券额度
 
-        功能描述：一级经销商查询发给二级经销商的额度
+        功能描述：华为云伙伴能力中心（一级经销商）可以在伙伴中心查看发放给精英服务商（二级经销商）的代金券额度列表。
 
         :param ListIssuedCouponQuotasRequest request
         :return: ListIssuedCouponQuotasResponse
@@ -1823,9 +1699,9 @@ class BssAsyncClient(Client):
 
 
     def list_partner_adjust_records_async(self, request):
-        """查询调账回收记录
+        """查询调账记录
 
-        功能描述：查询调账回收记录
+        功能描述：伙伴在伙伴销售平台查询向客户及关联的精英服务商（二级经销商）拨款或回收的调账记录
 
         :param ListPartnerAdjustRecordsRequest request
         :return: ListPartnerAdjustRecordsResponse
@@ -1833,9 +1709,9 @@ class BssAsyncClient(Client):
         return self.list_partner_adjust_records_with_http_info(request)
 
     def list_partner_adjust_records_with_http_info(self, request):
-        """查询调账回收记录
+        """查询调账记录
 
-        功能描述：查询调账回收记录
+        功能描述：伙伴在伙伴销售平台查询向客户及关联的精英服务商（二级经销商）拨款或回收的调账记录
 
         :param ListPartnerAdjustRecordsRequest request
         :return: ListPartnerAdjustRecordsResponse
@@ -1900,9 +1776,9 @@ class BssAsyncClient(Client):
 
 
     def list_partner_balances_async(self, request):
-        """查询账户余额
+        """查询伙伴/精英服务商账户余额
 
-        功能描述：查询伙伴账户余额
+        功能描述：合作伙伴可以查询自己及关联的精英服务商的账户余额。
 
         :param ListPartnerBalancesRequest request
         :return: ListPartnerBalancesResponse
@@ -1910,9 +1786,9 @@ class BssAsyncClient(Client):
         return self.list_partner_balances_with_http_info(request)
 
     def list_partner_balances_with_http_info(self, request):
-        """查询账户余额
+        """查询伙伴/精英服务商账户余额
 
-        功能描述：查询伙伴账户余额
+        功能描述：合作伙伴可以查询自己及关联的精英服务商的账户余额。
 
         :param ListPartnerBalancesRequest request
         :return: ListPartnerBalancesResponse
@@ -2251,9 +2127,9 @@ class BssAsyncClient(Client):
 
 
     def list_rate_on_period_detail_async(self, request):
-        """包周期资源订购询价
+        """查询包年/包月产品价格
 
-        功能描述：包周期资源订购询价
+        功能描述：客户在自建平台按照条件查询包年/包月产品开通时候的价格
 
         :param ListRateOnPeriodDetailRequest request
         :return: ListRateOnPeriodDetailResponse
@@ -2261,9 +2137,9 @@ class BssAsyncClient(Client):
         return self.list_rate_on_period_detail_with_http_info(request)
 
     def list_rate_on_period_detail_with_http_info(self, request):
-        """包周期资源订购询价
+        """查询包年/包月产品价格
 
-        功能描述：包周期资源订购询价
+        功能描述：客户在自建平台按照条件查询包年/包月产品开通时候的价格
 
         :param ListRateOnPeriodDetailRequest request
         :return: ListRateOnPeriodDetailResponse
@@ -2314,9 +2190,9 @@ class BssAsyncClient(Client):
 
 
     def list_sku_inventories_async(self, request):
-        """库存查询
+        """查询硬件库存
 
-        功能描述：查询硬件库存
+        功能描述：客户在购买硬件产品时，可以在客户自建平台上查询硬件产品的库存
 
         :param ListSkuInventoriesRequest request
         :return: ListSkuInventoriesResponse
@@ -2324,9 +2200,9 @@ class BssAsyncClient(Client):
         return self.list_sku_inventories_with_http_info(request)
 
     def list_sku_inventories_with_http_info(self, request):
-        """库存查询
+        """查询硬件库存
 
-        功能描述：查询硬件库存
+        功能描述：客户在购买硬件产品时，可以在客户自建平台上查询硬件产品的库存
 
         :param ListSkuInventoriesRequest request
         :return: ListSkuInventoriesResponse
@@ -2748,9 +2624,9 @@ class BssAsyncClient(Client):
 
 
     def reclaim_coupon_quotas_async(self, request):
-        """回收优惠券额度
+        """回收代金券额度
 
-        功能描述：一级经销商给二级经销商回收额度
+        功能描述：华为云伙伴能力中心（一级经销商）可以在伙伴中心回收已发放给精英服务商（二级经销商）的代金券额度。
 
         :param ReclaimCouponQuotasRequest request
         :return: ReclaimCouponQuotasResponse
@@ -2758,9 +2634,9 @@ class BssAsyncClient(Client):
         return self.reclaim_coupon_quotas_with_http_info(request)
 
     def reclaim_coupon_quotas_with_http_info(self, request):
-        """回收优惠券额度
+        """回收代金券额度
 
-        功能描述：一级经销商给二级经销商回收额度
+        功能描述：华为云伙伴能力中心（一级经销商）可以在伙伴中心回收已发放给精英服务商（二级经销商）的代金券额度。
 
         :param ReclaimCouponQuotasRequest request
         :return: ReclaimCouponQuotasResponse
@@ -3000,9 +2876,9 @@ class BssAsyncClient(Client):
 
 
     def reclaim_to_partner_account_async(self, request):
-        """回收子客户余额（支持一级回收二级的子客户余额）
+        """回收客户账户余额
 
-        功能描述：回收子客户余额（支持一级回收二级的子客户余额）
+        功能描述：当客户不再使用华为云产品时，合作伙伴可以回收垫付类客户账户余额。（支持一级回收二级的子客户余额）
 
         :param ReclaimToPartnerAccountRequest request
         :return: ReclaimToPartnerAccountResponse
@@ -3010,9 +2886,9 @@ class BssAsyncClient(Client):
         return self.reclaim_to_partner_account_with_http_info(request)
 
     def reclaim_to_partner_account_with_http_info(self, request):
-        """回收子客户余额（支持一级回收二级的子客户余额）
+        """回收客户账户余额
 
-        功能描述：回收子客户余额（支持一级回收二级的子客户余额）
+        功能描述：当客户不再使用华为云产品时，合作伙伴可以回收垫付类客户账户余额。（支持一级回收二级的子客户余额）
 
         :param ReclaimToPartnerAccountRequest request
         :return: ReclaimToPartnerAccountResponse
@@ -3188,23 +3064,23 @@ class BssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_cusotmer_account_balances_async(self, request):
-        """查询客户账户余额
+    def show_customer_account_balances_async(self, request):
+        """查询账户余额
 
-        功能描述：查询客户账户余额
+        功能描述：查询账户余额
 
-        :param ShowCusotmerAccountBalancesRequest request
-        :return: ShowCusotmerAccountBalancesResponse
+        :param ShowCustomerAccountBalancesRequest request
+        :return: ShowCustomerAccountBalancesResponse
         """
-        return self.show_cusotmer_account_balances_with_http_info(request)
+        return self.show_customer_account_balances_with_http_info(request)
 
-    def show_cusotmer_account_balances_with_http_info(self, request):
-        """查询客户账户余额
+    def show_customer_account_balances_with_http_info(self, request):
+        """查询账户余额
 
-        功能描述：查询客户账户余额
+        功能描述：查询账户余额
 
-        :param ShowCusotmerAccountBalancesRequest request
-        :return: ShowCusotmerAccountBalancesResponse
+        :param ShowCustomerAccountBalancesRequest request
+        :return: ShowCustomerAccountBalancesResponse
         """
 
         all_params = []
@@ -3242,7 +3118,7 @@ class BssAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowCusotmerAccountBalancesResponse',
+            response_type='ShowCustomerAccountBalancesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3457,7 +3333,7 @@ class BssAsyncClient(Client):
     def update_coupon_quotas_async(self, request):
         """向精英服务商发放代金券额度
 
-        功能描述：向精英服务商发放代金券额度
+        功能描述：华为云伙伴能力中心（一级经销商）可以在伙伴中心向精英服务商（二级经销商）发放代金券额度。
 
         :param UpdateCouponQuotasRequest request
         :return: UpdateCouponQuotasResponse
@@ -3467,7 +3343,7 @@ class BssAsyncClient(Client):
     def update_coupon_quotas_with_http_info(self, request):
         """向精英服务商发放代金券额度
 
-        功能描述：向精英服务商发放代金券额度
+        功能描述：华为云伙伴能力中心（一级经销商）可以在伙伴中心向精英服务商（二级经销商）发放代金券额度。
 
         :param UpdateCouponQuotasRequest request
         :return: UpdateCouponQuotasResponse
@@ -3518,9 +3394,9 @@ class BssAsyncClient(Client):
 
 
     def update_customer_account_amount_async(self, request):
-        """调账
+        """向客户账户拨款
 
-        功能描述：从伙伴账户调账给子客户
+        功能描述：合作伙伴可以为垫付类客户账户拨款。
 
         :param UpdateCustomerAccountAmountRequest request
         :return: UpdateCustomerAccountAmountResponse
@@ -3528,9 +3404,9 @@ class BssAsyncClient(Client):
         return self.update_customer_account_amount_with_http_info(request)
 
     def update_customer_account_amount_with_http_info(self, request):
-        """调账
+        """向客户账户拨款
 
-        功能描述：从伙伴账户调账给子客户
+        功能描述：合作伙伴可以为垫付类客户账户拨款。
 
         :param UpdateCustomerAccountAmountRequest request
         :return: UpdateCustomerAccountAmountResponse
@@ -3581,9 +3457,9 @@ class BssAsyncClient(Client):
 
 
     def update_indirect_partner_account_async(self, request):
-        """向二级渠道账户拨款
+        """向精英服务商账户拨款
 
-        功能描述：从伙伴账户调账给二级渠道
+        功能描述：华为云伙伴能力中心（一级经销商）可以向精英服务商（二级经销商）账户拨款
 
         :param UpdateIndirectPartnerAccountRequest request
         :return: UpdateIndirectPartnerAccountResponse
@@ -3591,9 +3467,9 @@ class BssAsyncClient(Client):
         return self.update_indirect_partner_account_with_http_info(request)
 
     def update_indirect_partner_account_with_http_info(self, request):
-        """向二级渠道账户拨款
+        """向精英服务商账户拨款
 
-        功能描述：从伙伴账户调账给二级渠道
+        功能描述：华为云伙伴能力中心（一级经销商）可以向精英服务商（二级经销商）账户拨款
 
         :param UpdateIndirectPartnerAccountRequest request
         :return: UpdateIndirectPartnerAccountResponse
@@ -3707,9 +3583,9 @@ class BssAsyncClient(Client):
 
 
     def auto_renewal_resources_async(self, request):
-        """设置包年包月资源自动续费
+        """设置包年/包月资源自动续费
 
-        功能描述：设置包周期资源自动续费
+        功能描述：客户可以设置包年/包月资源到期后转为按需资源计费
 
         :param AutoRenewalResourcesRequest request
         :return: AutoRenewalResourcesResponse
@@ -3717,9 +3593,9 @@ class BssAsyncClient(Client):
         return self.auto_renewal_resources_with_http_info(request)
 
     def auto_renewal_resources_with_http_info(self, request):
-        """设置包年包月资源自动续费
+        """设置包年/包月资源自动续费
 
-        功能描述：设置包周期资源自动续费
+        功能描述：客户可以设置包年/包月资源到期后转为按需资源计费
 
         :param AutoRenewalResourcesRequest request
         :return: AutoRenewalResourcesResponse
@@ -3770,7 +3646,7 @@ class BssAsyncClient(Client):
 
 
     def cancel_auto_renewal_resources_async(self, request):
-        """取消包年包月资源自动续费
+        """取消包年/包月资源自动续费
 
         功能描述：取消包年/包月资源自动续费
 
@@ -3780,7 +3656,7 @@ class BssAsyncClient(Client):
         return self.cancel_auto_renewal_resources_with_http_info(request)
 
     def cancel_auto_renewal_resources_with_http_info(self, request):
-        """取消包年包月资源自动续费
+        """取消包年/包月资源自动续费
 
         功能描述：取消包年/包月资源自动续费
 
@@ -3896,9 +3772,9 @@ class BssAsyncClient(Client):
 
 
     def cancel_resources_subscription_async(self, request):
-        """退订包年包月资源
+        """退订包年/包月资源
 
-        功能描述：客户购买包年包月资源后，支持客户退订包年包月实例。退订资源实例包括资源续费部分和当前正在使用的部分，退订后资源将无法使用
+        功能描述：客户购买包年/包月资源后，支持客户退订包年/包月实例。退订资源实例包括资源续费部分和当前正在使用的部分，退订后资源将无法使用
 
         :param CancelResourcesSubscriptionRequest request
         :return: CancelResourcesSubscriptionResponse
@@ -3906,9 +3782,9 @@ class BssAsyncClient(Client):
         return self.cancel_resources_subscription_with_http_info(request)
 
     def cancel_resources_subscription_with_http_info(self, request):
-        """退订包年包月资源
+        """退订包年/包月资源
 
-        功能描述：客户购买包年包月资源后，支持客户退订包年包月实例。退订资源实例包括资源续费部分和当前正在使用的部分，退订后资源将无法使用
+        功能描述：客户购买包年/包月资源后，支持客户退订包年/包月实例。退订资源实例包括资源续费部分和当前正在使用的部分，退订后资源将无法使用
 
         :param CancelResourcesSubscriptionRequest request
         :return: CancelResourcesSubscriptionResponse
@@ -4109,9 +3985,9 @@ class BssAsyncClient(Client):
 
 
     def list_pay_per_use_customer_resources_async(self, request):
-        """查询客户包年包月资源列表
+        """查询客户包年/包月资源列表
 
-        功能描述：客户在客户自建平台查询某个或所有的包年包月资源
+        功能描述：客户在客户自建平台查询某个或所有的包年/包月资源
 
         :param ListPayPerUseCustomerResourcesRequest request
         :return: ListPayPerUseCustomerResourcesResponse
@@ -4119,9 +3995,9 @@ class BssAsyncClient(Client):
         return self.list_pay_per_use_customer_resources_with_http_info(request)
 
     def list_pay_per_use_customer_resources_with_http_info(self, request):
-        """查询客户包年包月资源列表
+        """查询客户包年/包月资源列表
 
-        功能描述：客户在客户自建平台查询某个或所有的包年包月资源
+        功能描述：客户在客户自建平台查询某个或所有的包年/包月资源
 
         :param ListPayPerUseCustomerResourcesRequest request
         :return: ListPayPerUseCustomerResourcesResponse
@@ -4235,9 +4111,9 @@ class BssAsyncClient(Client):
 
 
     def pay_orders_async(self, request):
-        """支付包年包月产品订单
+        """支付包年/包月产品订单
 
-        功能描述：客户可以对待支付状态的包年包月产品订单进行支付
+        功能描述：客户可以对待支付状态的包年/包月产品订单进行支付
 
         :param PayOrdersRequest request
         :return: PayOrdersResponse
@@ -4245,9 +4121,9 @@ class BssAsyncClient(Client):
         return self.pay_orders_with_http_info(request)
 
     def pay_orders_with_http_info(self, request):
-        """支付包年包月产品订单
+        """支付包年/包月产品订单
 
-        功能描述：客户可以对待支付状态的包年包月产品订单进行支付
+        功能描述：客户可以对待支付状态的包年/包月产品订单进行支付
 
         :param PayOrdersRequest request
         :return: PayOrdersResponse
@@ -4298,9 +4174,9 @@ class BssAsyncClient(Client):
 
 
     def renewal_resources_async(self, request):
-        """续订包年包月资源
+        """续订包年/包月资源
 
-        功能描述：客户的包年包月资源即将到期时，可进行包年包月资源的续订
+        功能描述：客户的包年包/月资源即将到期时，可进行包年/包月资源的续订
 
         :param RenewalResourcesRequest request
         :return: RenewalResourcesResponse
@@ -4308,9 +4184,9 @@ class BssAsyncClient(Client):
         return self.renewal_resources_with_http_info(request)
 
     def renewal_resources_with_http_info(self, request):
-        """续订包年包月资源
+        """续订包年/包月资源
 
-        功能描述：客户的包年包月资源即将到期时，可进行包年包月资源的续订
+        功能描述：客户的包年包/月资源即将到期时，可进行包年/包月资源的续订
 
         :param RenewalResourcesRequest request
         :return: RenewalResourcesResponse
@@ -4493,9 +4369,9 @@ class BssAsyncClient(Client):
 
 
     def update_period_to_on_demand_async(self, request):
-        """设置或者取消包年包月资源到期转按需
+        """设置或者取消包年/包月资源到期转按需
 
-        功能描述：客户可以设置包年包月资源到期后转为按需资源计费。包年包月计费模式到期后，按需的计费模式即生效
+        功能描述：客户可以设置包年/包月资源到期后转为按需资源计费。包年/包月计费模式到期后，按需的计费模式即生效
 
         :param UpdatePeriodToOnDemandRequest request
         :return: UpdatePeriodToOnDemandResponse
@@ -4503,9 +4379,9 @@ class BssAsyncClient(Client):
         return self.update_period_to_on_demand_with_http_info(request)
 
     def update_period_to_on_demand_with_http_info(self, request):
-        """设置或者取消包年包月资源到期转按需
+        """设置或者取消包年/包月资源到期转按需
 
-        功能描述：客户可以设置包年包月资源到期后转为按需资源计费。包年包月计费模式到期后，按需的计费模式即生效
+        功能描述：客户可以设置包年/包月资源到期后转为按需资源计费。包年/包月计费模式到期后，按需的计费模式即生效
 
         :param UpdatePeriodToOnDemandRequest request
         :return: UpdatePeriodToOnDemandResponse
@@ -4677,6 +4553,134 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeletePostalResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_conversions_async(self, request):
+        """查询使用量单位进制
+
+        功能描述：伙伴在伙伴销售平台上查询使用量单位的进制转换信息，用于不同度量单位之间的转换。
+
+        :param ListConversionsRequest request
+        :return: ListConversionsResponse
+        """
+        return self.list_conversions_with_http_info(request)
+
+    def list_conversions_with_http_info(self, request):
+        """查询使用量单位进制
+
+        功能描述：伙伴在伙伴销售平台上查询使用量单位的进制转换信息，用于不同度量单位之间的转换。
+
+        :param ListConversionsRequest request
+        :return: ListConversionsResponse
+        """
+
+        all_params = ['x_language', 'measure_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'measure_type' in local_var_params:
+            query_params.append(('measure_type', local_var_params['measure_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bases/conversions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListConversionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_measure_units_async(self, request):
+        """查询使用量单位列表
+
+        功能描述：伙伴在伙伴销售平台上查询资源使用量的度量单位及名称，度量单位类型等。
+
+        :param ListMeasureUnitsRequest request
+        :return: ListMeasureUnitsResponse
+        """
+        return self.list_measure_units_with_http_info(request)
+
+    def list_measure_units_with_http_info(self, request):
+        """查询使用量单位列表
+
+        功能描述：伙伴在伙伴销售平台上查询资源使用量的度量单位及名称，度量单位类型等。
+
+        :param ListMeasureUnitsRequest request
+        :return: ListMeasureUnitsResponse
+        """
+
+        all_params = ['x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bases/measurements',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListMeasureUnitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

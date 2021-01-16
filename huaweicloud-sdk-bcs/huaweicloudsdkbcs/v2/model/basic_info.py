@@ -363,7 +363,7 @@ class BasicInfo:
     def database_type(self):
         """Gets the database_type of this BasicInfo.
 
-        BCS服务数据库类型，包括文件数据库（goleveldb），关系数据库（MySQL），NoSQL（couchdb）
+        BCS服务数据库类型，包括文件数据库（goleveldb），NoSQL（couchdb）
 
         :return: The database_type of this BasicInfo.
         :rtype: str
@@ -374,7 +374,7 @@ class BasicInfo:
     def database_type(self, database_type):
         """Sets the database_type of this BasicInfo.
 
-        BCS服务数据库类型，包括文件数据库（goleveldb），关系数据库（MySQL），NoSQL（couchdb）
+        BCS服务数据库类型，包括文件数据库（goleveldb），NoSQL（couchdb）
 
         :param database_type: The database_type of this BasicInfo.
         :type: str

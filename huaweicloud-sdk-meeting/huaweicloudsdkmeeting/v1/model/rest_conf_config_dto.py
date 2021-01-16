@@ -28,7 +28,8 @@ class RestConfConfigDTO:
         'is_send_sms': 'bool',
         'is_send_calendar': 'bool',
         'is_auto_mute': 'bool',
-        'is_guest_free_pwd': 'bool'
+        'is_guest_free_pwd': 'bool',
+        'allow_guest_start_conf': 'bool'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class RestConfConfigDTO:
         'is_send_sms': 'isSendSms',
         'is_send_calendar': 'isSendCalendar',
         'is_auto_mute': 'isAutoMute',
-        'is_guest_free_pwd': 'isGuestFreePwd'
+        'is_guest_free_pwd': 'isGuestFreePwd',
+        'allow_guest_start_conf': 'allowGuestStartConf'
     }
 
-    def __init__(self, call_in_restriction=0, is_send_notify=None, is_send_sms=None, is_send_calendar=None, is_auto_mute=None, is_guest_free_pwd=None):
+    def __init__(self, call_in_restriction=0, is_send_notify=None, is_send_sms=None, is_send_calendar=None, is_auto_mute=None, is_guest_free_pwd=None, allow_guest_start_conf=None):
         """RestConfConfigDTO - a model defined in huaweicloud sdk"""
         
         
@@ -51,6 +53,7 @@ class RestConfConfigDTO:
         self._is_send_calendar = None
         self._is_auto_mute = None
         self._is_guest_free_pwd = None
+        self._allow_guest_start_conf = None
         self.discriminator = None
 
         if call_in_restriction is not None:
@@ -65,6 +68,8 @@ class RestConfConfigDTO:
             self.is_auto_mute = is_auto_mute
         if is_guest_free_pwd is not None:
             self.is_guest_free_pwd = is_guest_free_pwd
+        if allow_guest_start_conf is not None:
+            self.allow_guest_start_conf = allow_guest_start_conf
 
     @property
     def call_in_restriction(self):
@@ -197,6 +202,28 @@ class RestConfConfigDTO:
         :type: bool
         """
         self._is_guest_free_pwd = is_guest_free_pwd
+
+    @property
+    def allow_guest_start_conf(self):
+        """Gets the allow_guest_start_conf of this RestConfConfigDTO.
+
+        是否允许来宾启动会议(随机会议)。 - True: 允许来宾启动会议。 - False: 禁止来宾启动会议。
+
+        :return: The allow_guest_start_conf of this RestConfConfigDTO.
+        :rtype: bool
+        """
+        return self._allow_guest_start_conf
+
+    @allow_guest_start_conf.setter
+    def allow_guest_start_conf(self, allow_guest_start_conf):
+        """Sets the allow_guest_start_conf of this RestConfConfigDTO.
+
+        是否允许来宾启动会议(随机会议)。 - True: 允许来宾启动会议。 - False: 禁止来宾启动会议。
+
+        :param allow_guest_start_conf: The allow_guest_start_conf of this RestConfConfigDTO.
+        :type: bool
+        """
+        self._allow_guest_start_conf = allow_guest_start_conf
 
     def to_dict(self):
         """Returns the model properties as a dict"""

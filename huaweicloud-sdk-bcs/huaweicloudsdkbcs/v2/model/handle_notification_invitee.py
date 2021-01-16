@@ -24,31 +24,33 @@ class HandleNotificationInvitee:
 
     openapi_types = {
         'invitee_bcs_id': 'str',
+        'invitee_bcs_name': 'str',
         'invitee_project_id': 'str',
         'invitee_user_id': 'str'
     }
 
     attribute_map = {
         'invitee_bcs_id': 'invitee_bcs_id',
+        'invitee_bcs_name': 'invitee_bcs_name',
         'invitee_project_id': 'invitee_project_id',
         'invitee_user_id': 'invitee_user_id'
     }
 
-    def __init__(self, invitee_bcs_id=None, invitee_project_id=None, invitee_user_id=None):
+    def __init__(self, invitee_bcs_id=None, invitee_bcs_name=None, invitee_project_id=None, invitee_user_id=None):
         """HandleNotificationInvitee - a model defined in huaweicloud sdk"""
         
         
 
         self._invitee_bcs_id = None
+        self._invitee_bcs_name = None
         self._invitee_project_id = None
         self._invitee_user_id = None
         self.discriminator = None
 
         self.invitee_bcs_id = invitee_bcs_id
-        if invitee_project_id is not None:
-            self.invitee_project_id = invitee_project_id
-        if invitee_user_id is not None:
-            self.invitee_user_id = invitee_user_id
+        self.invitee_bcs_name = invitee_bcs_name
+        self.invitee_project_id = invitee_project_id
+        self.invitee_user_id = invitee_user_id
 
     @property
     def invitee_bcs_id(self):
@@ -71,6 +73,28 @@ class HandleNotificationInvitee:
         :type: str
         """
         self._invitee_bcs_id = invitee_bcs_id
+
+    @property
+    def invitee_bcs_name(self):
+        """Gets the invitee_bcs_name of this HandleNotificationInvitee.
+
+        被邀请方服务实例名称，同意联盟邀请时比填
+
+        :return: The invitee_bcs_name of this HandleNotificationInvitee.
+        :rtype: str
+        """
+        return self._invitee_bcs_name
+
+    @invitee_bcs_name.setter
+    def invitee_bcs_name(self, invitee_bcs_name):
+        """Sets the invitee_bcs_name of this HandleNotificationInvitee.
+
+        被邀请方服务实例名称，同意联盟邀请时比填
+
+        :param invitee_bcs_name: The invitee_bcs_name of this HandleNotificationInvitee.
+        :type: str
+        """
+        self._invitee_bcs_name = invitee_bcs_name
 
     @property
     def invitee_project_id(self):

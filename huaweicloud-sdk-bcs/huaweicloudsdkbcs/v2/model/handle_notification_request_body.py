@@ -50,12 +50,9 @@ class HandleNotificationRequestBody:
         self._invited_orgs = None
         self.discriminator = None
 
-        if channel_name is not None:
-            self.channel_name = channel_name
-        if status is not None:
-            self.status = status
-        if invitor_info is not None:
-            self.invitor_info = invitor_info
+        self.channel_name = channel_name
+        self.status = status
+        self.invitor_info = invitor_info
         if invitee_info is not None:
             self.invitee_info = invitee_info
         if invited_orgs is not None:
@@ -149,7 +146,7 @@ class HandleNotificationRequestBody:
     def invited_orgs(self):
         """Gets the invited_orgs of this HandleNotificationRequestBody.
 
-        加入联盟的组织
+        加入联盟的组织，同意加入时必填
 
         :return: The invited_orgs of this HandleNotificationRequestBody.
         :rtype: list[HandleNotificationOrg]
@@ -160,7 +157,7 @@ class HandleNotificationRequestBody:
     def invited_orgs(self, invited_orgs):
         """Sets the invited_orgs of this HandleNotificationRequestBody.
 
-        加入联盟的组织
+        加入联盟的组织，同意加入时必填
 
         :param invited_orgs: The invited_orgs of this HandleNotificationRequestBody.
         :type: list[HandleNotificationOrg]

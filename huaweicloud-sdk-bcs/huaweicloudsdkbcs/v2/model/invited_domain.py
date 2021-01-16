@@ -23,45 +23,44 @@ class InvitedDomain:
     sensitive_list = []
 
     openapi_types = {
-        'invited_username': 'str'
+        'invited_user': 'str'
     }
 
     attribute_map = {
-        'invited_username': 'invited_username'
+        'invited_user': 'invited_user'
     }
 
-    def __init__(self, invited_username=None):
+    def __init__(self, invited_user=None):
         """InvitedDomain - a model defined in huaweicloud sdk"""
         
         
 
-        self._invited_username = None
+        self._invited_user = None
         self.discriminator = None
 
-        if invited_username is not None:
-            self.invited_username = invited_username
+        self.invited_user = invited_user
 
     @property
-    def invited_username(self):
-        """Gets the invited_username of this InvitedDomain.
+    def invited_user(self):
+        """Gets the invited_user of this InvitedDomain.
 
-        被邀请方租户名
+        被邀请方租户，hcs模式下是邀请方的租户ID
 
-        :return: The invited_username of this InvitedDomain.
+        :return: The invited_user of this InvitedDomain.
         :rtype: str
         """
-        return self._invited_username
+        return self._invited_user
 
-    @invited_username.setter
-    def invited_username(self, invited_username):
-        """Sets the invited_username of this InvitedDomain.
+    @invited_user.setter
+    def invited_user(self, invited_user):
+        """Sets the invited_user of this InvitedDomain.
 
-        被邀请方租户名
+        被邀请方租户，hcs模式下是邀请方的租户ID
 
-        :param invited_username: The invited_username of this InvitedDomain.
+        :param invited_user: The invited_user of this InvitedDomain.
         :type: str
         """
-        self._invited_username = invited_username
+        self._invited_user = invited_user
 
     def to_dict(self):
         """Returns the model properties as a dict"""

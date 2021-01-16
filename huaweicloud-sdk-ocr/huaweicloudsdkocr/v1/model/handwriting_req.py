@@ -26,7 +26,7 @@ class HandwritingReq:
         'image': 'str',
         'url': 'str',
         'quick_mode': 'bool',
-        'char_set': 'list[str]',
+        'char_set': 'str',
         'detect_direction': 'bool'
     }
 
@@ -131,10 +131,10 @@ class HandwritingReq:
     def char_set(self):
         """Gets the char_set of this HandwritingReq.
 
-        字符集设置，用户可以根据实际需要限定输出字符集范围。可选值包括： 
+        字符集设置，用户可以根据实际需要限定输出字符集范围。可选值如下所示。  - \"digit\": 数字模式；  - \"letter\": 大小写字母模式；  - \"digit_letter\": 数字+字母模式；  - \"general\": 数字+字母+中文模式；  > 说明：  - 未传入该参数时，默认为“general”模式。 
 
         :return: The char_set of this HandwritingReq.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._char_set
 
@@ -142,10 +142,10 @@ class HandwritingReq:
     def char_set(self, char_set):
         """Sets the char_set of this HandwritingReq.
 
-        字符集设置，用户可以根据实际需要限定输出字符集范围。可选值包括： 
+        字符集设置，用户可以根据实际需要限定输出字符集范围。可选值如下所示。  - \"digit\": 数字模式；  - \"letter\": 大小写字母模式；  - \"digit_letter\": 数字+字母模式；  - \"general\": 数字+字母+中文模式；  > 说明：  - 未传入该参数时，默认为“general”模式。 
 
         :param char_set: The char_set of this HandwritingReq.
-        :type: list[str]
+        :type: str
         """
         self._char_set = char_set
 
@@ -153,7 +153,7 @@ class HandwritingReq:
     def detect_direction(self):
         """Gets the detect_direction of this HandwritingReq.
 
-        为Boolean类型，若不传该字段，默认不检测图像倾斜角度文字方向，为True时，支持任意角度的旋转倾斜（建议在场景内有大量倾斜图片时才开启以减少性能损失）。 
+        校正图片的倾斜角度开关，可选值如下所示。  - true：校正图片的倾斜角度；  - false：不校正图片的倾斜角度。  > 说明：  - 支持任意角度的校正，未传入该参数时默认为“false”。 
 
         :return: The detect_direction of this HandwritingReq.
         :rtype: bool
@@ -164,7 +164,7 @@ class HandwritingReq:
     def detect_direction(self, detect_direction):
         """Sets the detect_direction of this HandwritingReq.
 
-        为Boolean类型，若不传该字段，默认不检测图像倾斜角度文字方向，为True时，支持任意角度的旋转倾斜（建议在场景内有大量倾斜图片时才开启以减少性能损失）。 
+        校正图片的倾斜角度开关，可选值如下所示。  - true：校正图片的倾斜角度；  - false：不校正图片的倾斜角度。  > 说明：  - 支持任意角度的校正，未传入该参数时默认为“false”。 
 
         :param detect_direction: The detect_direction of this HandwritingReq.
         :type: bool

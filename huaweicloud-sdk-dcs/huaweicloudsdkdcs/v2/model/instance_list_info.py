@@ -491,7 +491,7 @@ class InstanceListInfo:
     def maintain_begin(self):
         """Gets the maintain_begin of this InstanceListInfo.
 
-        维护时间窗开始时间，格式为HH:mm:ss。
+        维护时间窗开始时间，为UTC时间，格式为HH:mm:ss。
 
         :return: The maintain_begin of this InstanceListInfo.
         :rtype: str
@@ -502,7 +502,7 @@ class InstanceListInfo:
     def maintain_begin(self, maintain_begin):
         """Sets the maintain_begin of this InstanceListInfo.
 
-        维护时间窗开始时间，格式为HH:mm:ss。
+        维护时间窗开始时间，为UTC时间，格式为HH:mm:ss。
 
         :param maintain_begin: The maintain_begin of this InstanceListInfo.
         :type: str
@@ -513,7 +513,7 @@ class InstanceListInfo:
     def maintain_end(self):
         """Gets the maintain_end of this InstanceListInfo.
 
-        维护时间窗结束时间，格式为HH:mm:ss。
+        维护时间窗结束时间，为UTC时间，格式为HH:mm:ss。
 
         :return: The maintain_end of this InstanceListInfo.
         :rtype: str
@@ -524,7 +524,7 @@ class InstanceListInfo:
     def maintain_end(self, maintain_end):
         """Sets the maintain_end of this InstanceListInfo.
 
-        维护时间窗结束时间，格式为HH:mm:ss。
+        维护时间窗结束时间，为UTC时间，格式为HH:mm:ss。
 
         :param maintain_end: The maintain_end of this InstanceListInfo.
         :type: str

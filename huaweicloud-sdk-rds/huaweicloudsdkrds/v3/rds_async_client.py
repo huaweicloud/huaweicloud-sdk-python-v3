@@ -1607,6 +1607,213 @@ class RdsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_off_site_backups_async(self, request):
+        """获取跨区域备份列表
+
+        获取跨区域备份列表。
+
+        :param ListOffSiteBackupsRequest request
+        :return: ListOffSiteBackupsResponse
+        """
+        return self.list_off_site_backups_with_http_info(request)
+
+    def list_off_site_backups_with_http_info(self, request):
+        """获取跨区域备份列表
+
+        获取跨区域备份列表。
+
+        :param ListOffSiteBackupsRequest request
+        :return: ListOffSiteBackupsResponse
+        """
+
+        all_params = ['instance_id', 'x_language', 'backup_id', 'backup_type', 'offset', 'limit', 'begin_time', 'end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'backup_id' in local_var_params:
+            query_params.append(('backup_id', local_var_params['backup_id']))
+        if 'backup_type' in local_var_params:
+            query_params.append(('backup_type', local_var_params['backup_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'begin_time' in local_var_params:
+            query_params.append(('begin_time', local_var_params['begin_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/offsite-backups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListOffSiteBackupsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_off_site_instances_async(self, request):
+        """查询跨区域备份实例列表
+
+        查询跨区域备份实例列表。
+
+        :param ListOffSiteInstancesRequest request
+        :return: ListOffSiteInstancesResponse
+        """
+        return self.list_off_site_instances_with_http_info(request)
+
+    def list_off_site_instances_with_http_info(self, request):
+        """查询跨区域备份实例列表
+
+        查询跨区域备份实例列表。
+
+        :param ListOffSiteInstancesRequest request
+        :return: ListOffSiteInstancesResponse
+        """
+
+        all_params = ['x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/backups/offsite-backup-instance',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListOffSiteInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_off_site_restore_times_async(self, request):
+        """查询跨区域可恢复时间段
+
+        查询跨区域可恢复时间段。 如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
+
+        :param ListOffSiteRestoreTimesRequest request
+        :return: ListOffSiteRestoreTimesResponse
+        """
+        return self.list_off_site_restore_times_with_http_info(request)
+
+    def list_off_site_restore_times_with_http_info(self, request):
+        """查询跨区域可恢复时间段
+
+        查询跨区域可恢复时间段。 如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
+
+        :param ListOffSiteRestoreTimesRequest request
+        :return: ListOffSiteRestoreTimesResponse
+        """
+
+        all_params = ['instance_id', 'x_language', 'date']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'date' in local_var_params:
+            query_params.append(('date', local_var_params['date']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/offsite-restore-time',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListOffSiteRestoreTimesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_project_tags_async(self, request):
         """查询项目标签
 
@@ -2490,6 +2697,73 @@ class RdsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def set_off_site_backup_policy_async(self, request):
+        """设置跨区域备份策略
+
+        设置跨区域备份策略。
+
+        :param SetOffSiteBackupPolicyRequest request
+        :return: SetOffSiteBackupPolicyResponse
+        """
+        return self.set_off_site_backup_policy_with_http_info(request)
+
+    def set_off_site_backup_policy_with_http_info(self, request):
+        """设置跨区域备份策略
+
+        设置跨区域备份策略。
+
+        :param SetOffSiteBackupPolicyRequest request
+        :return: SetOffSiteBackupPolicyResponse
+        """
+
+        all_params = ['instance_id', 'set_off_site_backup_policy_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/backups/offsite-policy',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetOffSiteBackupPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def set_security_group_async(self, request):
         """修改安全组
 
@@ -2943,6 +3217,71 @@ class RdsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowInstanceConfigurationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_off_site_backup_policy_async(self, request):
+        """查询跨区域备份策略
+
+        查询跨区域备份策略。
+
+        :param ShowOffSiteBackupPolicyRequest request
+        :return: ShowOffSiteBackupPolicyResponse
+        """
+        return self.show_off_site_backup_policy_with_http_info(request)
+
+    def show_off_site_backup_policy_with_http_info(self, request):
+        """查询跨区域备份策略
+
+        查询跨区域备份策略。
+
+        :param ShowOffSiteBackupPolicyRequest request
+        :return: ShowOffSiteBackupPolicyResponse
+        """
+
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/backups/offsite-policy',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowOffSiteBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

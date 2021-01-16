@@ -25,16 +25,18 @@ class ListSubnetsRequest:
     openapi_types = {
         'limit': 'int',
         'marker': 'str',
-        'vpc_id': 'str'
+        'vpc_id': 'str',
+        'scope': 'str'
     }
 
     attribute_map = {
         'limit': 'limit',
         'marker': 'marker',
-        'vpc_id': 'vpc_id'
+        'vpc_id': 'vpc_id',
+        'scope': 'scope'
     }
 
-    def __init__(self, limit=2000, marker=None, vpc_id=None):
+    def __init__(self, limit=2000, marker=None, vpc_id=None, scope=None):
         """ListSubnetsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -42,6 +44,7 @@ class ListSubnetsRequest:
         self._limit = None
         self._marker = None
         self._vpc_id = None
+        self._scope = None
         self.discriminator = None
 
         if limit is not None:
@@ -50,6 +53,8 @@ class ListSubnetsRequest:
             self.marker = marker
         if vpc_id is not None:
             self.vpc_id = vpc_id
+        if scope is not None:
+            self.scope = scope
 
     @property
     def limit(self):
@@ -110,6 +115,26 @@ class ListSubnetsRequest:
         :type: str
         """
         self._vpc_id = vpc_id
+
+    @property
+    def scope(self):
+        """Gets the scope of this ListSubnetsRequest.
+
+
+        :return: The scope of this ListSubnetsRequest.
+        :rtype: str
+        """
+        return self._scope
+
+    @scope.setter
+    def scope(self, scope):
+        """Sets the scope of this ListSubnetsRequest.
+
+
+        :param scope: The scope of this ListSubnetsRequest.
+        :type: str
+        """
+        self._scope = scope
 
     def to_dict(self):
         """Returns the model properties as a dict"""

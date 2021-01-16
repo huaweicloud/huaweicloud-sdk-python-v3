@@ -24,32 +24,33 @@ class HandleNotificationInvitor:
 
     openapi_types = {
         'invitor_bcs_id': 'str',
+        'invitor_bcs_name': 'str',
         'invitor_project_id': 'str',
-        'invitor_username': 'str'
+        'invitor_user_id': 'str'
     }
 
     attribute_map = {
         'invitor_bcs_id': 'invitor_bcs_id',
+        'invitor_bcs_name': 'invitor_bcs_name',
         'invitor_project_id': 'invitor_project_id',
-        'invitor_username': 'invitor_username'
+        'invitor_user_id': 'invitor_user_id'
     }
 
-    def __init__(self, invitor_bcs_id=None, invitor_project_id=None, invitor_username=None):
+    def __init__(self, invitor_bcs_id=None, invitor_bcs_name=None, invitor_project_id=None, invitor_user_id=None):
         """HandleNotificationInvitor - a model defined in huaweicloud sdk"""
         
         
 
         self._invitor_bcs_id = None
+        self._invitor_bcs_name = None
         self._invitor_project_id = None
-        self._invitor_username = None
+        self._invitor_user_id = None
         self.discriminator = None
 
-        if invitor_bcs_id is not None:
-            self.invitor_bcs_id = invitor_bcs_id
-        if invitor_project_id is not None:
-            self.invitor_project_id = invitor_project_id
-        if invitor_username is not None:
-            self.invitor_username = invitor_username
+        self.invitor_bcs_id = invitor_bcs_id
+        self.invitor_bcs_name = invitor_bcs_name
+        self.invitor_project_id = invitor_project_id
+        self.invitor_user_id = invitor_user_id
 
     @property
     def invitor_bcs_id(self):
@@ -74,6 +75,28 @@ class HandleNotificationInvitor:
         self._invitor_bcs_id = invitor_bcs_id
 
     @property
+    def invitor_bcs_name(self):
+        """Gets the invitor_bcs_name of this HandleNotificationInvitor.
+
+        邀请方实例名称，同意联盟邀请时比填
+
+        :return: The invitor_bcs_name of this HandleNotificationInvitor.
+        :rtype: str
+        """
+        return self._invitor_bcs_name
+
+    @invitor_bcs_name.setter
+    def invitor_bcs_name(self, invitor_bcs_name):
+        """Sets the invitor_bcs_name of this HandleNotificationInvitor.
+
+        邀请方实例名称，同意联盟邀请时比填
+
+        :param invitor_bcs_name: The invitor_bcs_name of this HandleNotificationInvitor.
+        :type: str
+        """
+        self._invitor_bcs_name = invitor_bcs_name
+
+    @property
     def invitor_project_id(self):
         """Gets the invitor_project_id of this HandleNotificationInvitor.
 
@@ -96,26 +119,26 @@ class HandleNotificationInvitor:
         self._invitor_project_id = invitor_project_id
 
     @property
-    def invitor_username(self):
-        """Gets the invitor_username of this HandleNotificationInvitor.
+    def invitor_user_id(self):
+        """Gets the invitor_user_id of this HandleNotificationInvitor.
 
-        邀请方租户名
+        邀请方租户,hcs模式下是邀请方租户id
 
-        :return: The invitor_username of this HandleNotificationInvitor.
+        :return: The invitor_user_id of this HandleNotificationInvitor.
         :rtype: str
         """
-        return self._invitor_username
+        return self._invitor_user_id
 
-    @invitor_username.setter
-    def invitor_username(self, invitor_username):
-        """Sets the invitor_username of this HandleNotificationInvitor.
+    @invitor_user_id.setter
+    def invitor_user_id(self, invitor_user_id):
+        """Sets the invitor_user_id of this HandleNotificationInvitor.
 
-        邀请方租户名
+        邀请方租户,hcs模式下是邀请方租户id
 
-        :param invitor_username: The invitor_username of this HandleNotificationInvitor.
+        :param invitor_user_id: The invitor_user_id of this HandleNotificationInvitor.
         :type: str
         """
-        self._invitor_username = invitor_username
+        self._invitor_user_id = invitor_user_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

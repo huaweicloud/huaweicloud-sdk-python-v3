@@ -40,7 +40,9 @@ class InstanceParam:
         'stack_id': 'str',
         'task_type': 'str',
         'token': 'str',
-        'vpc_id': 'str'
+        'vpc_id': 'str',
+        'instance_user_domain_name': 'str',
+        'instance_user_name': 'str'
     }
 
     attribute_map = {
@@ -61,10 +63,12 @@ class InstanceParam:
         'stack_id': 'stack_id',
         'task_type': 'task_type',
         'token': 'token',
-        'vpc_id': 'vpc_id'
+        'vpc_id': 'vpc_id',
+        'instance_user_domain_name': 'instance_user_domain_name',
+        'instance_user_name': 'instance_user_name'
     }
 
-    def __init__(self, agent_id=None, arch=None, cpu_memory=None, description=None, display_name=None, is_temporary=None, label_tag=None, plugin_enable_list=None, plugin_vars=None, port_id=None, private_ip=None, pvc_quantity=None, refresh_interval=None, repository_id=None, stack_id=None, task_type=None, token=None, vpc_id=None):
+    def __init__(self, agent_id=None, arch=None, cpu_memory=None, description=None, display_name=None, is_temporary=None, label_tag=None, plugin_enable_list=None, plugin_vars=None, port_id=None, private_ip=None, pvc_quantity=None, refresh_interval=None, repository_id=None, stack_id=None, task_type=None, token=None, vpc_id=None, instance_user_domain_name=None, instance_user_name=None):
         """InstanceParam - a model defined in huaweicloud sdk"""
         
         
@@ -87,6 +91,8 @@ class InstanceParam:
         self._task_type = None
         self._token = None
         self._vpc_id = None
+        self._instance_user_domain_name = None
+        self._instance_user_name = None
         self.discriminator = None
 
         if agent_id is not None:
@@ -120,12 +126,16 @@ class InstanceParam:
             self.token = token
         if vpc_id is not None:
             self.vpc_id = vpc_id
+        if instance_user_domain_name is not None:
+            self.instance_user_domain_name = instance_user_domain_name
+        if instance_user_name is not None:
+            self.instance_user_name = instance_user_name
 
     @property
     def agent_id(self):
         """Gets the agent_id of this InstanceParam.
 
-        代理商id，标签为tutorial时使用
+        代理商id，教程活动场景下使用
 
         :return: The agent_id of this InstanceParam.
         :rtype: str
@@ -136,7 +146,7 @@ class InstanceParam:
     def agent_id(self, agent_id):
         """Sets the agent_id of this InstanceParam.
 
-        代理商id，标签为tutorial时使用
+        代理商id，教程活动场景下使用
 
         :param agent_id: The agent_id of this InstanceParam.
         :type: str
@@ -235,7 +245,7 @@ class InstanceParam:
     def is_temporary(self):
         """Gets the is_temporary of this InstanceParam.
 
-        是否临时实例。 false页面会显示
+        是否页面显示（以标签配置为准）
 
         :return: The is_temporary of this InstanceParam.
         :rtype: bool
@@ -246,7 +256,7 @@ class InstanceParam:
     def is_temporary(self, is_temporary):
         """Sets the is_temporary of this InstanceParam.
 
-        是否临时实例。 false页面会显示
+        是否页面显示（以标签配置为准）
 
         :param is_temporary: The is_temporary of this InstanceParam.
         :type: bool
@@ -257,7 +267,7 @@ class InstanceParam:
     def label_tag(self):
         """Gets the label_tag of this InstanceParam.
 
-        场景标签
+        实例标签（不同的第三方需要和CloudIDE服务共同设定标签），不传默认为default
 
         :return: The label_tag of this InstanceParam.
         :rtype: str
@@ -268,7 +278,7 @@ class InstanceParam:
     def label_tag(self, label_tag):
         """Sets the label_tag of this InstanceParam.
 
-        场景标签
+        实例标签（不同的第三方需要和CloudIDE服务共同设定标签），不传默认为default
 
         :param label_tag: The label_tag of this InstanceParam.
         :type: str
@@ -279,7 +289,7 @@ class InstanceParam:
     def plugin_enable_list(self):
         """Gets the plugin_enable_list of this InstanceParam.
 
-        场景插件列表
+        预装插件列表
 
         :return: The plugin_enable_list of this InstanceParam.
         :rtype: list[str]
@@ -290,7 +300,7 @@ class InstanceParam:
     def plugin_enable_list(self, plugin_enable_list):
         """Sets the plugin_enable_list of this InstanceParam.
 
-        场景插件列表
+        预装插件列表
 
         :param plugin_enable_list: The plugin_enable_list of this InstanceParam.
         :type: list[str]
@@ -301,7 +311,7 @@ class InstanceParam:
     def plugin_vars(self):
         """Gets the plugin_vars of this InstanceParam.
 
-        场景插件参数
+        预装插件参数
 
         :return: The plugin_vars of this InstanceParam.
         :rtype: dict(str, str)
@@ -312,7 +322,7 @@ class InstanceParam:
     def plugin_vars(self, plugin_vars):
         """Sets the plugin_vars of this InstanceParam.
 
-        场景插件参数
+        预装插件参数
 
         :param plugin_vars: The plugin_vars of this InstanceParam.
         :type: dict(str, str)
@@ -323,7 +333,7 @@ class InstanceParam:
     def port_id(self):
         """Gets the port_id of this InstanceParam.
 
-        云服务器对应的portId，标签为webshell-internal时使用
+        云服务器对应的portId，小网连接ecs的场景下使用
 
         :return: The port_id of this InstanceParam.
         :rtype: str
@@ -334,7 +344,7 @@ class InstanceParam:
     def port_id(self, port_id):
         """Sets the port_id of this InstanceParam.
 
-        云服务器对应的portId，标签为webshell-internal时使用
+        云服务器对应的portId，小网连接ecs的场景下使用
 
         :param port_id: The port_id of this InstanceParam.
         :type: str
@@ -345,7 +355,7 @@ class InstanceParam:
     def private_ip(self):
         """Gets the private_ip of this InstanceParam.
 
-        云服务器ip，标签为webshell-internal时使用
+        云服务器ip，小网连接ecs的场景下使用
 
         :return: The private_ip of this InstanceParam.
         :rtype: str
@@ -356,7 +366,7 @@ class InstanceParam:
     def private_ip(self, private_ip):
         """Sets the private_ip of this InstanceParam.
 
-        云服务器ip，标签为webshell-internal时使用
+        云服务器ip，小网连接ecs的场景下使用
 
         :param private_ip: The private_ip of this InstanceParam.
         :type: str
@@ -389,7 +399,7 @@ class InstanceParam:
     def refresh_interval(self):
         """Gets the refresh_interval of this InstanceParam.
 
-        实例的生命周期 arm架构,生命周期只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例在到达生命周期后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止。
+        实例的生命周期。 arm架构,生命周期只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例在到达生命周期后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止。
 
         :return: The refresh_interval of this InstanceParam.
         :rtype: str
@@ -400,7 +410,7 @@ class InstanceParam:
     def refresh_interval(self, refresh_interval):
         """Sets the refresh_interval of this InstanceParam.
 
-        实例的生命周期 arm架构,生命周期只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例在到达生命周期后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止。
+        实例的生命周期。 arm架构,生命周期只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例在到达生命周期后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止。
 
         :param refresh_interval: The refresh_interval of this InstanceParam.
         :type: str
@@ -411,7 +421,7 @@ class InstanceParam:
     def repository_id(self):
         """Gets the repository_id of this InstanceParam.
 
-        解放号的仓库id，标签为jfh时使用
+        解放号的仓库id，解放号场景下使用
 
         :return: The repository_id of this InstanceParam.
         :rtype: int
@@ -422,7 +432,7 @@ class InstanceParam:
     def repository_id(self, repository_id):
         """Sets the repository_id of this InstanceParam.
 
-        解放号的仓库id，标签为jfh时使用
+        解放号的仓库id，解放号场景下使用
 
         :param repository_id: The repository_id of this InstanceParam.
         :type: int
@@ -433,7 +443,7 @@ class InstanceParam:
     def stack_id(self):
         """Gets the stack_id of this InstanceParam.
 
-        技术栈ID 目前可取值all，java，go，python，cpp，nodejs，quantum，blockchain，dcn，vue，ruby。
+        技术栈ID，通过技术栈管理ListStacksByTag接口获取。
 
         :return: The stack_id of this InstanceParam.
         :rtype: str
@@ -444,7 +454,7 @@ class InstanceParam:
     def stack_id(self, stack_id):
         """Sets the stack_id of this InstanceParam.
 
-        技术栈ID 目前可取值all，java，go，python，cpp，nodejs，quantum，blockchain，dcn，vue，ruby。
+        技术栈ID，通过技术栈管理ListStacksByTag接口获取。
 
         :param stack_id: The stack_id of this InstanceParam.
         :type: str
@@ -455,7 +465,7 @@ class InstanceParam:
     def task_type(self):
         """Gets the task_type of this InstanceParam.
 
-        任务类型，标签为tutorial时使用
+        任务类型，教程活动场景下使用
 
         :return: The task_type of this InstanceParam.
         :rtype: str
@@ -466,7 +476,7 @@ class InstanceParam:
     def task_type(self, task_type):
         """Sets the task_type of this InstanceParam.
 
-        任务类型，标签为tutorial时使用
+        任务类型，教程活动场景下使用
 
         :param task_type: The task_type of this InstanceParam.
         :type: str
@@ -477,7 +487,7 @@ class InstanceParam:
     def token(self):
         """Gets the token of this InstanceParam.
 
-        解放号的token，标签为jfh时使用
+        解放号的token，解放号场景下使用
 
         :return: The token of this InstanceParam.
         :rtype: str
@@ -488,7 +498,7 @@ class InstanceParam:
     def token(self, token):
         """Sets the token of this InstanceParam.
 
-        解放号的token，标签为jfh时使用
+        解放号的token，解放号场景下使用
 
         :param token: The token of this InstanceParam.
         :type: str
@@ -499,7 +509,7 @@ class InstanceParam:
     def vpc_id(self):
         """Gets the vpc_id of this InstanceParam.
 
-        云服务器对应的vpcId，标签为webshell-internal时使用
+        云服务器对应的vpcId，小网连接ecs的场景下使用
 
         :return: The vpc_id of this InstanceParam.
         :rtype: str
@@ -510,12 +520,56 @@ class InstanceParam:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this InstanceParam.
 
-        云服务器对应的vpcId，标签为webshell-internal时使用
+        云服务器对应的vpcId，小网连接ecs的场景下使用
 
         :param vpc_id: The vpc_id of this InstanceParam.
         :type: str
         """
         self._vpc_id = vpc_id
+
+    @property
+    def instance_user_domain_name(self):
+        """Gets the instance_user_domain_name of this InstanceParam.
+
+        实例授权用户组织名
+
+        :return: The instance_user_domain_name of this InstanceParam.
+        :rtype: str
+        """
+        return self._instance_user_domain_name
+
+    @instance_user_domain_name.setter
+    def instance_user_domain_name(self, instance_user_domain_name):
+        """Sets the instance_user_domain_name of this InstanceParam.
+
+        实例授权用户组织名
+
+        :param instance_user_domain_name: The instance_user_domain_name of this InstanceParam.
+        :type: str
+        """
+        self._instance_user_domain_name = instance_user_domain_name
+
+    @property
+    def instance_user_name(self):
+        """Gets the instance_user_name of this InstanceParam.
+
+        实例授权用户名
+
+        :return: The instance_user_name of this InstanceParam.
+        :rtype: str
+        """
+        return self._instance_user_name
+
+    @instance_user_name.setter
+    def instance_user_name(self, instance_user_name):
+        """Sets the instance_user_name of this InstanceParam.
+
+        实例授权用户名
+
+        :param instance_user_name: The instance_user_name of this InstanceParam.
+        :type: str
+        """
+        self._instance_user_name = instance_user_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

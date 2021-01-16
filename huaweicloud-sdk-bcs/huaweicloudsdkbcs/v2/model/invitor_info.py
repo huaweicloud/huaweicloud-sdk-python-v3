@@ -28,6 +28,7 @@ class InvitorInfo:
         'invitor_bcs_id': 'str',
         'invitor_bcs_name': 'str',
         'invitor_consensus': 'str',
+        'invitor_project_id': 'str',
         'invitor_cluster_type': 'str',
         'invitor_database_type': 'str',
         'invitor_signature_algorithm': 'str',
@@ -42,6 +43,7 @@ class InvitorInfo:
         'invitor_bcs_id': 'invitor_bcs_id',
         'invitor_bcs_name': 'invitor_bcs_name',
         'invitor_consensus': 'invitor_consensus',
+        'invitor_project_id': 'invitor_project_id',
         'invitor_cluster_type': 'invitor_cluster_type',
         'invitor_database_type': 'invitor_database_type',
         'invitor_signature_algorithm': 'invitor_signature_algorithm',
@@ -50,7 +52,7 @@ class InvitorInfo:
         'order_fade_cache': 'order_fade_cache'
     }
 
-    def __init__(self, invitor_id=None, invitor_name=None, invitor_bcs_id=None, invitor_bcs_name=None, invitor_consensus=None, invitor_cluster_type=None, invitor_database_type=None, invitor_signature_algorithm=None, invitor_fabric_version=None, order_fade_enabled=None, order_fade_cache=None):
+    def __init__(self, invitor_id=None, invitor_name=None, invitor_bcs_id=None, invitor_bcs_name=None, invitor_consensus=None, invitor_project_id=None, invitor_cluster_type=None, invitor_database_type=None, invitor_signature_algorithm=None, invitor_fabric_version=None, order_fade_enabled=None, order_fade_cache=None):
         """InvitorInfo - a model defined in huaweicloud sdk"""
         
         
@@ -60,6 +62,7 @@ class InvitorInfo:
         self._invitor_bcs_id = None
         self._invitor_bcs_name = None
         self._invitor_consensus = None
+        self._invitor_project_id = None
         self._invitor_cluster_type = None
         self._invitor_database_type = None
         self._invitor_signature_algorithm = None
@@ -78,6 +81,8 @@ class InvitorInfo:
             self.invitor_bcs_name = invitor_bcs_name
         if invitor_consensus is not None:
             self.invitor_consensus = invitor_consensus
+        if invitor_project_id is not None:
+            self.invitor_project_id = invitor_project_id
         if invitor_cluster_type is not None:
             self.invitor_cluster_type = invitor_cluster_type
         if invitor_database_type is not None:
@@ -200,6 +205,28 @@ class InvitorInfo:
         :type: str
         """
         self._invitor_consensus = invitor_consensus
+
+    @property
+    def invitor_project_id(self):
+        """Gets the invitor_project_id of this InvitorInfo.
+
+        邀请方的projectID
+
+        :return: The invitor_project_id of this InvitorInfo.
+        :rtype: str
+        """
+        return self._invitor_project_id
+
+    @invitor_project_id.setter
+    def invitor_project_id(self, invitor_project_id):
+        """Sets the invitor_project_id of this InvitorInfo.
+
+        邀请方的projectID
+
+        :param invitor_project_id: The invitor_project_id of this InvitorInfo.
+        :type: str
+        """
+        self._invitor_project_id = invitor_project_id
 
     @property
     def invitor_cluster_type(self):

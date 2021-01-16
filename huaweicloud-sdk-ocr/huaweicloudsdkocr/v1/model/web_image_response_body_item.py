@@ -24,7 +24,7 @@ class WebImageResponseBodyItem:
 
     openapi_types = {
         'words_block_count': 'int',
-        'words_block_list': 'list[WebImageItemsResponse]'
+        'words_block_list': 'list[WebImageWordsBlockList]'
     }
 
     attribute_map = {
@@ -73,7 +73,7 @@ class WebImageResponseBodyItem:
         识别文字块列表，输出顺序从左到右，从上到下。 
 
         :return: The words_block_list of this WebImageResponseBodyItem.
-        :rtype: list[WebImageItemsResponse]
+        :rtype: list[WebImageWordsBlockList]
         """
         return self._words_block_list
 
@@ -84,7 +84,7 @@ class WebImageResponseBodyItem:
         识别文字块列表，输出顺序从左到右，从上到下。 
 
         :param words_block_list: The words_block_list of this WebImageResponseBodyItem.
-        :type: list[WebImageItemsResponse]
+        :type: list[WebImageWordsBlockList]
         """
         self._words_block_list = words_block_list
 

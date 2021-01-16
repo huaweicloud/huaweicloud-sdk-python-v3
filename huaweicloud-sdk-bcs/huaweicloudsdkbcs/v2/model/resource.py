@@ -75,7 +75,7 @@ class Resource:
     def type(self):
         """Gets the type of this Resource.
 
-        资源类型
+        资源类型，包含instance（服务实例数）和peers（总peer数）两种
 
         :return: The type of this Resource.
         :rtype: str
@@ -86,7 +86,7 @@ class Resource:
     def type(self, type):
         """Sets the type of this Resource.
 
-        资源类型
+        资源类型，包含instance（服务实例数）和peers（总peer数）两种
 
         :param type: The type of this Resource.
         :type: str
