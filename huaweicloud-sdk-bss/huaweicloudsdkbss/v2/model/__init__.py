@@ -75,6 +75,7 @@ from huaweicloudsdkbss.v2.model.demand_discount_rating_result import DemandDisco
 from huaweicloudsdkbss.v2.model.demand_product_info import DemandProductInfo
 from huaweicloudsdkbss.v2.model.demand_product_rating_result import DemandProductRatingResult
 from huaweicloudsdkbss.v2.model.discount_entry import DiscountEntry
+from huaweicloudsdkbss.v2.model.discount_info_v3 import DiscountInfoV3
 from huaweicloudsdkbss.v2.model.discount_item_v2 import DiscountItemV2
 from huaweicloudsdkbss.v2.model.discount_simple_info import DiscountSimpleInfo
 from huaweicloudsdkbss.v2.model.em_child_node_v2 import EmChildNodeV2
@@ -125,6 +126,8 @@ from huaweicloudsdkbss.v2.model.list_on_demand_resource_ratings_request import L
 from huaweicloudsdkbss.v2.model.list_on_demand_resource_ratings_response import ListOnDemandResourceRatingsResponse
 from huaweicloudsdkbss.v2.model.list_order_coupons_by_order_id_request import ListOrderCouponsByOrderIdRequest
 from huaweicloudsdkbss.v2.model.list_order_coupons_by_order_id_response import ListOrderCouponsByOrderIdResponse
+from huaweicloudsdkbss.v2.model.list_order_discounts_request import ListOrderDiscountsRequest
+from huaweicloudsdkbss.v2.model.list_order_discounts_response import ListOrderDiscountsResponse
 from huaweicloudsdkbss.v2.model.list_partner_adjust_records_request import ListPartnerAdjustRecordsRequest
 from huaweicloudsdkbss.v2.model.list_partner_adjust_records_response import ListPartnerAdjustRecordsResponse
 from huaweicloudsdkbss.v2.model.list_partner_balances_request import ListPartnerBalancesRequest
@@ -173,7 +176,9 @@ from huaweicloudsdkbss.v2.model.official_website_rating_result import OfficialWe
 from huaweicloudsdkbss.v2.model.optional_discount_rating_result import OptionalDiscountRatingResult
 from huaweicloudsdkbss.v2.model.order_instance_v2 import OrderInstanceV2
 from huaweicloudsdkbss.v2.model.order_line_item_entity_v2 import OrderLineItemEntityV2
+from huaweicloudsdkbss.v2.model.order_line_item_v3 import OrderLineItemV3
 from huaweicloudsdkbss.v2.model.order_refund_info_v2 import OrderRefundInfoV2
+from huaweicloudsdkbss.v2.model.order_v3 import OrderV3
 from huaweicloudsdkbss.v2.model.package_usage_info import PackageUsageInfo
 from huaweicloudsdkbss.v2.model.pay_customer_order_req import PayCustomerOrderReq
 from huaweicloudsdkbss.v2.model.pay_orders_request import PayOrdersRequest

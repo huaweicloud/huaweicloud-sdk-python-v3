@@ -198,7 +198,7 @@ def test_server_response_exception2(client, server_err_response_type2):
 
 def test_response_deserialization(client, list_vpc_response):
     client.model_package = importlib.import_module("tests.model.vpc")
-    response = client.sync_response_handler(list_vpc_response, "ListVpcsResponse")
+    response = client.sync_response_handler(list_vpc_response, "ListVpcsResponse", None)
 
     assert isinstance(response, ListVpcsResponse)
     assert len(response.vpcs) == 2

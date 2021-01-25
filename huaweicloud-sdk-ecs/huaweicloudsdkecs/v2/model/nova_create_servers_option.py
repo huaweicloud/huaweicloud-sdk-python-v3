@@ -23,6 +23,7 @@ class NovaCreateServersOption:
     sensitive_list = []
 
     openapi_types = {
+        'auto_terminate_time': 'str',
         'image_ref': 'str',
         'flavor_ref': 'str',
         'name': 'str',
@@ -43,6 +44,7 @@ class NovaCreateServersOption:
     }
 
     attribute_map = {
+        'auto_terminate_time': 'auto_terminate_time',
         'image_ref': 'imageRef',
         'flavor_ref': 'flavorRef',
         'name': 'name',
@@ -62,11 +64,12 @@ class NovaCreateServersOption:
         'description': 'description'
     }
 
-    def __init__(self, image_ref=None, flavor_ref=None, name=None, metadata=None, admin_pass=None, block_device_mapping_v2=None, config_drive=None, security_groups=None, networks=None, key_name=None, user_data=None, availability_zone=None, return_reservation_id=None, min_count=1, max_count=None, os_dc_fdisk_config=None, description=None):
+    def __init__(self, auto_terminate_time=None, image_ref=None, flavor_ref=None, name=None, metadata=None, admin_pass=None, block_device_mapping_v2=None, config_drive=None, security_groups=None, networks=None, key_name=None, user_data=None, availability_zone=None, return_reservation_id=None, min_count=1, max_count=None, os_dc_fdisk_config=None, description=None):
         """NovaCreateServersOption - a model defined in huaweicloud sdk"""
         
         
 
+        self._auto_terminate_time = None
         self._image_ref = None
         self._flavor_ref = None
         self._name = None
@@ -86,6 +89,8 @@ class NovaCreateServersOption:
         self._description = None
         self.discriminator = None
 
+        if auto_terminate_time is not None:
+            self.auto_terminate_time = auto_terminate_time
         if image_ref is not None:
             self.image_ref = image_ref
         self.flavor_ref = flavor_ref
@@ -117,6 +122,28 @@ class NovaCreateServersOption:
             self.os_dc_fdisk_config = os_dc_fdisk_config
         if description is not None:
             self.description = description
+
+    @property
+    def auto_terminate_time(self):
+        """Gets the auto_terminate_time of this NovaCreateServersOption.
+
+        弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+
+        :return: The auto_terminate_time of this NovaCreateServersOption.
+        :rtype: str
+        """
+        return self._auto_terminate_time
+
+    @auto_terminate_time.setter
+    def auto_terminate_time(self, auto_terminate_time):
+        """Sets the auto_terminate_time of this NovaCreateServersOption.
+
+        弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+
+        :param auto_terminate_time: The auto_terminate_time of this NovaCreateServersOption.
+        :type: str
+        """
+        self._auto_terminate_time = auto_terminate_time
 
     @property
     def image_ref(self):

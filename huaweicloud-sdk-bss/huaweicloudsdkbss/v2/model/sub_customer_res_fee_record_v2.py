@@ -357,7 +357,7 @@ class SubCustomerResFeeRecordV2:
     def measure_id(self):
         """Gets the measure_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：金额单位：1：元；2：角；3：分。| |参数的约束及描述：金额单位：1：元；2：角；3：分。|
+        |参数名称：金额单位：1：元| |参数的约束及描述：金额单位：1：元|
 
         :return: The measure_id of this SubCustomerResFeeRecordV2.
         :rtype: int
@@ -368,7 +368,7 @@ class SubCustomerResFeeRecordV2:
     def measure_id(self, measure_id):
         """Sets the measure_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：金额单位：1：元；2：角；3：分。| |参数的约束及描述：金额单位：1：元；2：角；3：分。|
+        |参数名称：金额单位：1：元| |参数的约束及描述：金额单位：1：元|
 
         :param measure_id: The measure_id of this SubCustomerResFeeRecordV2.
         :type: int

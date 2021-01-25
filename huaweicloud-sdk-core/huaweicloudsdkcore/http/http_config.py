@@ -21,7 +21,7 @@
 
 class HttpConfig:
     def __init__(self, proxy_protocol=None, proxy_host=None, proxy_port=None, proxy_user=None, proxy_password=None,
-                 ignore_ssl_verification=False, ssl_ca_cert=None, cert_file=None, key_file=None, timeout=(3, 10),
+                 ignore_ssl_verification=False, ssl_ca_cert=None, cert_file=None, key_file=None, timeout=(60, 120),
                  retry_times=0, pool_connections=1, pool_maxsize=1):
         """
         :param proxy_protocol(optional) : proxy protocol, http or https

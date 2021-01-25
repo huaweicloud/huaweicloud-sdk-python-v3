@@ -429,11 +429,11 @@ class Client:
         if klass.openapi_types is not None:
             for attr, attr_type in six.iteritems(klass.openapi_types):
                 if data is not None and isinstance(data, (list, dict)):
+                    if klass.attribute_map[attr] == "body":
+                        kwargs[attr] = self._deserialize(data, attr_type)
                     if klass.attribute_map[attr] in data:
                         value = data[klass.attribute_map[attr]]
                         kwargs[attr] = self._deserialize(value, attr_type)
-                    if klass.attribute_map[attr] == "body":
-                        kwargs[attr] = self._deserialize(data, attr_type)
 
         instance = klass(**kwargs)
 

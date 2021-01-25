@@ -1,3 +1,30 @@
+## 3.0.31-rc 2021-01-25
+## HuaweiCloud SDK Core
+- ### 新增特性
+    - 无
+- ### 解决问题
+    - 无
+- ### 特性变更
+    - 设置默认ConnectionTimeout为60秒
+    - 设置默认ReadTimeout为120秒
+
+## HuaweiCloud SDK BSS
+- ### 新增特性
+    - 新增支持接口：查询订单可用折扣
+- ### 解决问题
+    - 无
+- ### 特性变更
+    - 无
+
+## HuaweiCloud SDK ECS
+- ### 新增特性
+    - 新增支持接口：修改云服务器云主机销毁时间
+- ### 解决问题
+    - 无
+- ### 特性变更
+    - 无
+
+
 ## 3.0.30-rc 2021-01-15
 ## HuaweiCloud SDK Core
 - ### 新增特性

@@ -1,3 +1,30 @@
+## 3.0.31-rc 2021-01-25
+## HuaweiCloud SDK Core
+- ### Features
+    - None
+- ### Bug Fix
+    - None
+- ### Change
+    - The default value of `ConnectionTimeout` is set to 60 seconds.
+    - The default value of `ReadTimeout` is set to 120 seconds.
+
+## HuaweiCloud SDK BSS
+- ### Features
+    - Support more interface: ListOrderDiscounts.
+- ### Bug Fix
+    - None
+- ### Change
+    - None
+
+## HuaweiCloud SDK ECS
+- ### Features
+    - Support more interface: UpdateAutoTerminateTimeServer.
+- ### Bug Fix
+    - None
+- ### Change
+    - None
+
+
 ## 3.0.30-rc 2021-01-15
 ## HuaweiCloud SDK Core
 - ### Features

@@ -23,6 +23,7 @@ class PrePaidServer:
     sensitive_list = []
 
     openapi_types = {
+        'auto_terminate_time': 'str',
         'image_ref': 'str',
         'flavor_ref': 'str',
         'name': 'str',
@@ -47,6 +48,7 @@ class PrePaidServer:
     }
 
     attribute_map = {
+        'auto_terminate_time': 'auto_terminate_time',
         'image_ref': 'imageRef',
         'flavor_ref': 'flavorRef',
         'name': 'name',
@@ -70,11 +72,12 @@ class PrePaidServer:
         'description': 'description'
     }
 
-    def __init__(self, image_ref=None, flavor_ref=None, name=None, user_data=None, admin_pass=None, key_name=None, vpcid=None, nics=None, publicip=None, count=1, is_auto_rename=None, root_volume=None, data_volumes=None, security_groups=None, availability_zone=None, extendparam=None, metadata=None, osscheduler_hints=None, tags=None, server_tags=None, description=None):
+    def __init__(self, auto_terminate_time=None, image_ref=None, flavor_ref=None, name=None, user_data=None, admin_pass=None, key_name=None, vpcid=None, nics=None, publicip=None, count=1, is_auto_rename=None, root_volume=None, data_volumes=None, security_groups=None, availability_zone=None, extendparam=None, metadata=None, osscheduler_hints=None, tags=None, server_tags=None, description=None):
         """PrePaidServer - a model defined in huaweicloud sdk"""
         
         
 
+        self._auto_terminate_time = None
         self._image_ref = None
         self._flavor_ref = None
         self._name = None
@@ -98,6 +101,8 @@ class PrePaidServer:
         self._description = None
         self.discriminator = None
 
+        if auto_terminate_time is not None:
+            self.auto_terminate_time = auto_terminate_time
         self.image_ref = image_ref
         self.flavor_ref = flavor_ref
         self.name = name
@@ -133,6 +138,28 @@ class PrePaidServer:
             self.server_tags = server_tags
         if description is not None:
             self.description = description
+
+    @property
+    def auto_terminate_time(self):
+        """Gets the auto_terminate_time of this PrePaidServer.
+
+        弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+
+        :return: The auto_terminate_time of this PrePaidServer.
+        :rtype: str
+        """
+        return self._auto_terminate_time
+
+    @auto_terminate_time.setter
+    def auto_terminate_time(self, auto_terminate_time):
+        """Sets the auto_terminate_time of this PrePaidServer.
+
+        弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+
+        :param auto_terminate_time: The auto_terminate_time of this PrePaidServer.
+        :type: str
+        """
+        self._auto_terminate_time = auto_terminate_time
 
     @property
     def image_ref(self):

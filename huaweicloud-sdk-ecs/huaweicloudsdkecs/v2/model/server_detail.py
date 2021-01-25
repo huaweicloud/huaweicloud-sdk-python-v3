@@ -25,6 +25,7 @@ class ServerDetail:
     openapi_types = {
         'status': 'str',
         'updated': 'str',
+        'auto_terminate_time': 'str',
         'host_id': 'str',
         'os_ext_srv_att_rhost': 'str',
         'addresses': 'dict(str, list[ServerAddress])',
@@ -72,6 +73,7 @@ class ServerDetail:
     attribute_map = {
         'status': 'status',
         'updated': 'updated',
+        'auto_terminate_time': 'auto_terminate_time',
         'host_id': 'hostId',
         'os_ext_srv_att_rhost': 'OS-EXT-SRV-ATTR:host',
         'addresses': 'addresses',
@@ -116,13 +118,14 @@ class ServerDetail:
         'sys_tags': 'sys_tags'
     }
 
-    def __init__(self, status=None, updated=None, host_id=None, os_ext_srv_att_rhost=None, addresses=None, key_name=None, image=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_ext_srv_att_rinstance_name=None, os_ext_srv_att_rhypervisor_hostname=None, flavor=None, id=None, security_groups=None, os_ext_a_zavailability_zone=None, user_id=None, name=None, created=None, tenant_id=None, os_dc_fdisk_config=None, access_i_pv4=None, access_i_pv6=None, fault=None, progress=None, os_ext_st_spower_state=None, config_drive=None, metadata=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, osscheduler_hints=None, enterprise_project_id=None, sys_tags=None):
+    def __init__(self, status=None, updated=None, auto_terminate_time=None, host_id=None, os_ext_srv_att_rhost=None, addresses=None, key_name=None, image=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_ext_srv_att_rinstance_name=None, os_ext_srv_att_rhypervisor_hostname=None, flavor=None, id=None, security_groups=None, os_ext_a_zavailability_zone=None, user_id=None, name=None, created=None, tenant_id=None, os_dc_fdisk_config=None, access_i_pv4=None, access_i_pv6=None, fault=None, progress=None, os_ext_st_spower_state=None, config_drive=None, metadata=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, osscheduler_hints=None, enterprise_project_id=None, sys_tags=None):
         """ServerDetail - a model defined in huaweicloud sdk"""
         
         
 
         self._status = None
         self._updated = None
+        self._auto_terminate_time = None
         self._host_id = None
         self._os_ext_srv_att_rhost = None
         self._addresses = None
@@ -169,6 +172,7 @@ class ServerDetail:
 
         self.status = status
         self.updated = updated
+        self.auto_terminate_time = auto_terminate_time
         self.host_id = host_id
         self.os_ext_srv_att_rhost = os_ext_srv_att_rhost
         self.addresses = addresses
@@ -265,6 +269,28 @@ class ServerDetail:
         :type: str
         """
         self._updated = updated
+
+    @property
+    def auto_terminate_time(self):
+        """Gets the auto_terminate_time of this ServerDetail.
+
+        弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+
+        :return: The auto_terminate_time of this ServerDetail.
+        :rtype: str
+        """
+        return self._auto_terminate_time
+
+    @auto_terminate_time.setter
+    def auto_terminate_time(self, auto_terminate_time):
+        """Sets the auto_terminate_time of this ServerDetail.
+
+        弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+
+        :param auto_terminate_time: The auto_terminate_time of this ServerDetail.
+        :type: str
+        """
+        self._auto_terminate_time = auto_terminate_time
 
     @property
     def host_id(self):

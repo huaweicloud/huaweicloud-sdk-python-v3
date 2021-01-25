@@ -34,7 +34,10 @@ class CustomerInformation:
         'country_code': 'str',
         'customer_type': 'int',
         'is_frozen': 'int',
-        'account_managers': 'list[AccountManager]'
+        'account_managers': 'list[AccountManager]',
+        'xaccount_id': 'str',
+        'xaccount_type': 'str',
+        'customer_level': 'str'
     }
 
     attribute_map = {
@@ -49,10 +52,13 @@ class CustomerInformation:
         'country_code': 'country_code',
         'customer_type': 'customer_type',
         'is_frozen': 'is_frozen',
-        'account_managers': 'account_managers'
+        'account_managers': 'account_managers',
+        'xaccount_id': 'xaccount_id',
+        'xaccount_type': 'xaccount_type',
+        'customer_level': 'customer_level'
     }
 
-    def __init__(self, customer=None, account_name=None, customer_id=None, associated_on=None, association_type=None, label=None, telephone=None, verified_status=None, country_code=None, customer_type=None, is_frozen=None, account_managers=None):
+    def __init__(self, customer=None, account_name=None, customer_id=None, associated_on=None, association_type=None, label=None, telephone=None, verified_status=None, country_code=None, customer_type=None, is_frozen=None, account_managers=None, xaccount_id=None, xaccount_type=None, customer_level=None):
         """CustomerInformation - a model defined in huaweicloud sdk"""
         
         
@@ -69,6 +75,9 @@ class CustomerInformation:
         self._customer_type = None
         self._is_frozen = None
         self._account_managers = None
+        self._xaccount_id = None
+        self._xaccount_type = None
+        self._customer_level = None
         self.discriminator = None
 
         if customer is not None:
@@ -93,6 +102,12 @@ class CustomerInformation:
             self.is_frozen = is_frozen
         if account_managers is not None:
             self.account_managers = account_managers
+        if xaccount_id is not None:
+            self.xaccount_id = xaccount_id
+        if xaccount_type is not None:
+            self.xaccount_type = xaccount_type
+        if customer_level is not None:
+            self.customer_level = customer_level
 
     @property
     def customer(self):
@@ -357,6 +372,72 @@ class CustomerInformation:
         :type: list[AccountManager]
         """
         self._account_managers = account_managers
+
+    @property
+    def xaccount_id(self):
+        """Gets the xaccount_id of this CustomerInformation.
+
+        |参数名称：伙伴销售平台的用户唯一标识| |参数的约束及描述：该标识的具体值由伙伴分配|
+
+        :return: The xaccount_id of this CustomerInformation.
+        :rtype: str
+        """
+        return self._xaccount_id
+
+    @xaccount_id.setter
+    def xaccount_id(self, xaccount_id):
+        """Sets the xaccount_id of this CustomerInformation.
+
+        |参数名称：伙伴销售平台的用户唯一标识| |参数的约束及描述：该标识的具体值由伙伴分配|
+
+        :param xaccount_id: The xaccount_id of this CustomerInformation.
+        :type: str
+        """
+        self._xaccount_id = xaccount_id
+
+    @property
+    def xaccount_type(self):
+        """Gets the xaccount_type of this CustomerInformation.
+
+        |参数名称：华为分给合作伙伴的平台标识| |参数的约束及描述：该标识的具体值由华为分配|
+
+        :return: The xaccount_type of this CustomerInformation.
+        :rtype: str
+        """
+        return self._xaccount_type
+
+    @xaccount_type.setter
+    def xaccount_type(self, xaccount_type):
+        """Sets the xaccount_type of this CustomerInformation.
+
+        |参数名称：华为分给合作伙伴的平台标识| |参数的约束及描述：该标识的具体值由华为分配|
+
+        :param xaccount_type: The xaccount_type of this CustomerInformation.
+        :type: str
+        """
+        self._xaccount_type = xaccount_type
+
+    @property
+    def customer_level(self):
+        """Gets the customer_level of this CustomerInformation.
+
+        |参数名称：客户等级| |参数的约束及描述：V0、V1、V2、V3、V4、V5|
+
+        :return: The customer_level of this CustomerInformation.
+        :rtype: str
+        """
+        return self._customer_level
+
+    @customer_level.setter
+    def customer_level(self, customer_level):
+        """Sets the customer_level of this CustomerInformation.
+
+        |参数名称：客户等级| |参数的约束及描述：V0、V1、V2、V3、V4、V5|
+
+        :param customer_level: The customer_level of this CustomerInformation.
+        :type: str
+        """
+        self._customer_level = customer_level
 
     def to_dict(self):
         """Returns the model properties as a dict"""

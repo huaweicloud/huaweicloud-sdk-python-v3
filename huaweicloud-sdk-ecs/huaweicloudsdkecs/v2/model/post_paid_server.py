@@ -23,6 +23,7 @@ class PostPaidServer:
     sensitive_list = []
 
     openapi_types = {
+        'auto_terminate_time': 'str',
         'admin_pass': 'str',
         'availability_zone': 'str',
         'count': 'int',
@@ -47,6 +48,7 @@ class PostPaidServer:
     }
 
     attribute_map = {
+        'auto_terminate_time': 'auto_terminate_time',
         'admin_pass': 'adminPass',
         'availability_zone': 'availability_zone',
         'count': 'count',
@@ -70,11 +72,12 @@ class PostPaidServer:
         'description': 'description'
     }
 
-    def __init__(self, admin_pass=None, availability_zone=None, count=1, data_volumes=None, extendparam=None, flavor_ref=None, image_ref=None, is_auto_rename=True, key_name=None, metadata=None, name=None, nics=None, osscheduler_hints=None, publicip=None, root_volume=None, security_groups=None, server_tags=None, tags=None, user_data=None, vpcid=None, description=None):
+    def __init__(self, auto_terminate_time=None, admin_pass=None, availability_zone=None, count=1, data_volumes=None, extendparam=None, flavor_ref=None, image_ref=None, is_auto_rename=True, key_name=None, metadata=None, name=None, nics=None, osscheduler_hints=None, publicip=None, root_volume=None, security_groups=None, server_tags=None, tags=None, user_data=None, vpcid=None, description=None):
         """PostPaidServer - a model defined in huaweicloud sdk"""
         
         
 
+        self._auto_terminate_time = None
         self._admin_pass = None
         self._availability_zone = None
         self._count = None
@@ -98,6 +101,8 @@ class PostPaidServer:
         self._description = None
         self.discriminator = None
 
+        if auto_terminate_time is not None:
+            self.auto_terminate_time = auto_terminate_time
         if admin_pass is not None:
             self.admin_pass = admin_pass
         self.availability_zone = availability_zone
@@ -133,6 +138,28 @@ class PostPaidServer:
         self.vpcid = vpcid
         if description is not None:
             self.description = description
+
+    @property
+    def auto_terminate_time(self):
+        """Gets the auto_terminate_time of this PostPaidServer.
+
+        弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+
+        :return: The auto_terminate_time of this PostPaidServer.
+        :rtype: str
+        """
+        return self._auto_terminate_time
+
+    @auto_terminate_time.setter
+    def auto_terminate_time(self, auto_terminate_time):
+        """Sets the auto_terminate_time of this PostPaidServer.
+
+        弹性云服务器自动释放时间。  时间格式例如：2020-01-19T03:30:52Z
+
+        :param auto_terminate_time: The auto_terminate_time of this PostPaidServer.
+        :type: str
+        """
+        self._auto_terminate_time = auto_terminate_time
 
     @property
     def admin_pass(self):

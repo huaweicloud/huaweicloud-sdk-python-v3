@@ -720,7 +720,7 @@ class MonthlyBillRes:
     def measure_id(self):
         """Gets the measure_id of this MonthlyBillRes.
 
-        |参数名称：金额单位。1:元| |参数的约束及描述：该参数非必填|
+        |参数名称：金额单位。1: 元| |参数的约束及描述：该参数非必填|
 
         :return: The measure_id of this MonthlyBillRes.
         :rtype: int
@@ -731,7 +731,7 @@ class MonthlyBillRes:
     def measure_id(self, measure_id):
         """Sets the measure_id of this MonthlyBillRes.
 
-        |参数名称：金额单位。1:元| |参数的约束及描述：该参数非必填|
+        |参数名称：金额单位。1: 元| |参数的约束及描述：该参数非必填|
 
         :param measure_id: The measure_id of this MonthlyBillRes.
         :type: int

@@ -286,7 +286,7 @@ class CustomerOrderV2:
     def measure_id(self):
         """Gets the measure_id of this CustomerOrderV2.
 
-        |参数名称：订单金额度量单位：1：元2：角3：分| |参数的约束及描述：订单金额度量单位：1：元2：角3：分|
+        |参数名称：订单金额度量单位：1：元| |参数的约束及描述：订单金额度量单位：1：元|
 
         :return: The measure_id of this CustomerOrderV2.
         :rtype: int
@@ -297,7 +297,7 @@ class CustomerOrderV2:
     def measure_id(self, measure_id):
         """Sets the measure_id of this CustomerOrderV2.
 
-        |参数名称：订单金额度量单位：1：元2：角3：分| |参数的约束及描述：订单金额度量单位：1：元2：角3：分|
+        |参数名称：订单金额度量单位：1：元| |参数的约束及描述：订单金额度量单位：1：元|
 
         :param measure_id: The measure_id of this CustomerOrderV2.
         :type: int
