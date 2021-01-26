@@ -1,3 +1,13 @@
+## 3.0.31-rc.1 2021-01-26
+## HuaweiCloud SDK CCE
+- ### 新增特性
+    - 无
+- ### 解决问题
+    - 修正文件`cce_region.py`
+- ### 特性变更
+    - 无
+
+
 ## 3.0.31-rc 2021-01-25
 ## HuaweiCloud SDK Core
 - ### 新增特性

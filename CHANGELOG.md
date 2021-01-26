@@ -1,3 +1,13 @@
+## 3.0.31-rc.1 2021-01-26
+## HuaweiCloud SDK CCE
+- ### Features
+    - None
+- ### Bug Fix
+    - Modify file `cce_region.py`.
+- ### Change
+    - None
+
+
 ## 3.0.31-rc 2021-01-25
 ## HuaweiCloud SDK Core
 - ### Features
