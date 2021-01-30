@@ -39,6 +39,7 @@ class ShowUserResult:
         'last_login_time': 'str',
         'pwd_stength': 'str',
         'is_domain_owner': 'bool',
+        'access_mode': 'str',
         'description': 'str'
     }
 
@@ -59,10 +60,11 @@ class ShowUserResult:
         'last_login_time': 'last_login_time',
         'pwd_stength': 'pwd_stength',
         'is_domain_owner': 'is_domain_owner',
+        'access_mode': 'access_mode',
         'description': 'description'
     }
 
-    def __init__(self, enabled=None, id=None, domain_id=None, name=None, links=None, xuser_id=None, xuser_type=None, areacode=None, email=None, phone=None, pwd_status=None, update_time=None, create_time=None, last_login_time=None, pwd_stength=None, is_domain_owner=None, description=None):
+    def __init__(self, enabled=None, id=None, domain_id=None, name=None, links=None, xuser_id=None, xuser_type=None, areacode=None, email=None, phone=None, pwd_status=None, update_time=None, create_time=None, last_login_time=None, pwd_stength=None, is_domain_owner=None, access_mode=None, description=None):
         """ShowUserResult - a model defined in huaweicloud sdk"""
         
         
@@ -83,6 +85,7 @@ class ShowUserResult:
         self._last_login_time = None
         self._pwd_stength = None
         self._is_domain_owner = None
+        self._access_mode = None
         self._description = None
         self.discriminator = None
 
@@ -112,6 +115,7 @@ class ShowUserResult:
         if pwd_stength is not None:
             self.pwd_stength = pwd_stength
         self.is_domain_owner = is_domain_owner
+        self.access_mode = access_mode
         self.description = description
 
     @property
@@ -463,6 +467,28 @@ class ShowUserResult:
         :type: bool
         """
         self._is_domain_owner = is_domain_owner
+
+    @property
+    def access_mode(self):
+        """Gets the access_mode of this ShowUserResult.
+
+        IAM用户访问模式。
+
+        :return: The access_mode of this ShowUserResult.
+        :rtype: str
+        """
+        return self._access_mode
+
+    @access_mode.setter
+    def access_mode(self, access_mode):
+        """Sets the access_mode of this ShowUserResult.
+
+        IAM用户访问模式。
+
+        :param access_mode: The access_mode of this ShowUserResult.
+        :type: str
+        """
+        self._access_mode = access_mode
 
     @property
     def description(self):

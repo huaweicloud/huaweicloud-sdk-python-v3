@@ -2918,71 +2918,6 @@ class EcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def update_auto_terminate_time_server_async(self, request):
-        """修改云服务器云主机销毁时间
-
-        修改按需服务器，设置定时销毁时间。如果设置的销毁时间为空，表示取消销毁时间。  该接口支持企业项目细粒度权限的校验，具体细粒度请参见 ecs:cloudServers:put。
-
-        :param UpdateAutoTerminateTimeServerRequest request
-        :return: UpdateAutoTerminateTimeServerResponse
-        """
-        return self.update_auto_terminate_time_server_with_http_info(request)
-
-    def update_auto_terminate_time_server_with_http_info(self, request):
-        """修改云服务器云主机销毁时间
-
-        修改按需服务器，设置定时销毁时间。如果设置的销毁时间为空，表示取消销毁时间。  该接口支持企业项目细粒度权限的校验，具体细粒度请参见 ecs:cloudServers:put。
-
-        :param UpdateAutoTerminateTimeServerRequest request
-        :return: UpdateAutoTerminateTimeServerResponse
-        """
-
-        all_params = ['server_id', 'update_auto_terminate_time_server_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'server_id' in local_var_params:
-            path_params['server_id'] = local_var_params['server_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/actions/update-auto-terminate-time',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='UpdateAutoTerminateTimeServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def update_server_async(self, request):
         """修改云服务器
 
@@ -3042,6 +2977,71 @@ class EcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateServerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_server_auto_terminate_time_async(self, request):
+        """修改云服务器销毁时间
+
+        修改按需服务器，设置定时销毁时间。如果设置的销毁时间为空，表示取消销毁时间。  该接口支持企业项目细粒度权限的校验，具体细粒度请参见 ecs:cloudServers:put。
+
+        :param UpdateServerAutoTerminateTimeRequest request
+        :return: UpdateServerAutoTerminateTimeResponse
+        """
+        return self.update_server_auto_terminate_time_with_http_info(request)
+
+    def update_server_auto_terminate_time_with_http_info(self, request):
+        """修改云服务器销毁时间
+
+        修改按需服务器，设置定时销毁时间。如果设置的销毁时间为空，表示取消销毁时间。  该接口支持企业项目细粒度权限的校验，具体细粒度请参见 ecs:cloudServers:put。
+
+        :param UpdateServerAutoTerminateTimeRequest request
+        :return: UpdateServerAutoTerminateTimeResponse
+        """
+
+        all_params = ['server_id', 'update_server_auto_terminate_time_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/actions/update-auto-terminate-time',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateServerAutoTerminateTimeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

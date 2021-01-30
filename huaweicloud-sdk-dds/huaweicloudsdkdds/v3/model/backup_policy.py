@@ -23,7 +23,7 @@ class BackupPolicy:
     sensitive_list = []
 
     openapi_types = {
-        'keep_days': 'int',
+        'keep_days': 'str',
         'start_time': 'str',
         'period': 'str'
     }
@@ -57,7 +57,7 @@ class BackupPolicy:
         指定已生成的备份文件可以保存的天数。 取值范围：0～732。取0值，表示关闭自动备份策略。
 
         :return: The keep_days of this BackupPolicy.
-        :rtype: int
+        :rtype: str
         """
         return self._keep_days
 
@@ -68,7 +68,7 @@ class BackupPolicy:
         指定已生成的备份文件可以保存的天数。 取值范围：0～732。取0值，表示关闭自动备份策略。
 
         :param keep_days: The keep_days of this BackupPolicy.
-        :type: int
+        :type: str
         """
         self._keep_days = keep_days
 

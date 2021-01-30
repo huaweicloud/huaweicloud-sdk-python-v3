@@ -24,7 +24,7 @@ class ResizeInstanceVolumeOption:
 
     openapi_types = {
         'group_id': 'str',
-        'size': 'int'
+        'size': 'str'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class ResizeInstanceVolumeOption:
         待扩容到的磁盘容量。取值为10的整数倍，并且大于当前磁盘容量。 - 对于集群实例，表示扩容到的单个shard组的磁盘容量。取值范围：10GB~2000GB。 - 对于副本集实例，表示扩容到的实例的磁盘容量，取值范围：10GB~2000GB。 - 对于单节点实例，表示扩容到的实例的磁盘容量，取值范围：10GB~1000GB。
 
         :return: The size of this ResizeInstanceVolumeOption.
-        :rtype: int
+        :rtype: str
         """
         return self._size
 
@@ -85,7 +85,7 @@ class ResizeInstanceVolumeOption:
         待扩容到的磁盘容量。取值为10的整数倍，并且大于当前磁盘容量。 - 对于集群实例，表示扩容到的单个shard组的磁盘容量。取值范围：10GB~2000GB。 - 对于副本集实例，表示扩容到的实例的磁盘容量，取值范围：10GB~2000GB。 - 对于单节点实例，表示扩容到的实例的磁盘容量，取值范围：10GB~1000GB。
 
         :param size: The size of this ResizeInstanceVolumeOption.
-        :type: int
+        :type: str
         """
         self._size = size
 

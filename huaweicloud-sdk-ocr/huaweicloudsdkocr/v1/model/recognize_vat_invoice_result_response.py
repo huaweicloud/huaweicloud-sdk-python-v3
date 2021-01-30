@@ -32,7 +32,6 @@ class RecognizeVatInvoiceResultResponse:
         'print_number': 'str',
         'check_code': 'str',
         'number': 'str',
-        'issue_id': 'str',
         'issue_date': 'str',
         'encryption_block': 'str',
         'buyer_name': 'str',
@@ -51,7 +50,7 @@ class RecognizeVatInvoiceResultResponse:
         'receiver': 'str',
         'reviewer': 'str',
         'issuer': 'str',
-        'seller_seal': 'str',
+        'seller_seal': 'list[str]',
         'item_list': 'list[ItemList]',
         'confidence': 'object'
     }
@@ -66,7 +65,6 @@ class RecognizeVatInvoiceResultResponse:
         'print_number': 'print_number',
         'check_code': 'check_code',
         'number': 'number',
-        'issue_id': 'issue_id',
         'issue_date': 'issue_date',
         'encryption_block': 'encryption_block',
         'buyer_name': 'buyer_name',
@@ -90,7 +88,7 @@ class RecognizeVatInvoiceResultResponse:
         'confidence': 'confidence'
     }
 
-    def __init__(self, type=None, serial_number=None, attribution=None, supervision_seal=None, code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_id=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, confidence=None):
+    def __init__(self, type=None, serial_number=None, attribution=None, supervision_seal=None, code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, confidence=None):
         """RecognizeVatInvoiceResultResponse - a model defined in huaweicloud sdk"""
         
         
@@ -104,7 +102,6 @@ class RecognizeVatInvoiceResultResponse:
         self._print_number = None
         self._check_code = None
         self._number = None
-        self._issue_id = None
         self._issue_date = None
         self._encryption_block = None
         self._buyer_name = None
@@ -146,8 +143,6 @@ class RecognizeVatInvoiceResultResponse:
             self.check_code = check_code
         if number is not None:
             self.number = number
-        if issue_id is not None:
-            self.issue_id = issue_id
         if issue_date is not None:
             self.issue_date = issue_date
         if encryption_block is not None:
@@ -388,28 +383,6 @@ class RecognizeVatInvoiceResultResponse:
         :type: str
         """
         self._number = number
-
-    @property
-    def issue_id(self):
-        """Gets the issue_id of this RecognizeVatInvoiceResultResponse.
-
-        发票号码。 
-
-        :return: The issue_id of this RecognizeVatInvoiceResultResponse.
-        :rtype: str
-        """
-        return self._issue_id
-
-    @issue_id.setter
-    def issue_id(self, issue_id):
-        """Sets the issue_id of this RecognizeVatInvoiceResultResponse.
-
-        发票号码。 
-
-        :param issue_id: The issue_id of this RecognizeVatInvoiceResultResponse.
-        :type: str
-        """
-        self._issue_id = issue_id
 
     @property
     def issue_date(self):
@@ -814,7 +787,7 @@ class RecognizeVatInvoiceResultResponse:
         销售方发票专用章。 当“advanced_mode”设置为“true”时才返回。 
 
         :return: The seller_seal of this RecognizeVatInvoiceResultResponse.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._seller_seal
 
@@ -825,7 +798,7 @@ class RecognizeVatInvoiceResultResponse:
         销售方发票专用章。 当“advanced_mode”设置为“true”时才返回。 
 
         :param seller_seal: The seller_seal of this RecognizeVatInvoiceResultResponse.
-        :type: str
+        :type: list[str]
         """
         self._seller_seal = seller_seal
 

@@ -25,16 +25,18 @@ class CreateVolumeRequestBody:
     openapi_types = {
         'bss_param': 'BssParamForCreateVolume',
         'volume': 'CreateVolumeOption',
-        'server_id': 'str'
+        'server_id': 'str',
+        'os_sch_hn_tscheduler_hints': 'CreateVolumeSchedulerHints'
     }
 
     attribute_map = {
         'bss_param': 'bssParam',
         'volume': 'volume',
-        'server_id': 'server_id'
+        'server_id': 'server_id',
+        'os_sch_hn_tscheduler_hints': 'OS-SCH-HNT:scheduler_hints'
     }
 
-    def __init__(self, bss_param=None, volume=None, server_id=None):
+    def __init__(self, bss_param=None, volume=None, server_id=None, os_sch_hn_tscheduler_hints=None):
         """CreateVolumeRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -42,6 +44,7 @@ class CreateVolumeRequestBody:
         self._bss_param = None
         self._volume = None
         self._server_id = None
+        self._os_sch_hn_tscheduler_hints = None
         self.discriminator = None
 
         if bss_param is not None:
@@ -49,6 +52,8 @@ class CreateVolumeRequestBody:
         self.volume = volume
         if server_id is not None:
             self.server_id = server_id
+        if os_sch_hn_tscheduler_hints is not None:
+            self.os_sch_hn_tscheduler_hints = os_sch_hn_tscheduler_hints
 
     @property
     def bss_param(self):
@@ -111,6 +116,26 @@ class CreateVolumeRequestBody:
         :type: str
         """
         self._server_id = server_id
+
+    @property
+    def os_sch_hn_tscheduler_hints(self):
+        """Gets the os_sch_hn_tscheduler_hints of this CreateVolumeRequestBody.
+
+
+        :return: The os_sch_hn_tscheduler_hints of this CreateVolumeRequestBody.
+        :rtype: CreateVolumeSchedulerHints
+        """
+        return self._os_sch_hn_tscheduler_hints
+
+    @os_sch_hn_tscheduler_hints.setter
+    def os_sch_hn_tscheduler_hints(self, os_sch_hn_tscheduler_hints):
+        """Sets the os_sch_hn_tscheduler_hints of this CreateVolumeRequestBody.
+
+
+        :param os_sch_hn_tscheduler_hints: The os_sch_hn_tscheduler_hints of this CreateVolumeRequestBody.
+        :type: CreateVolumeSchedulerHints
+        """
+        self._os_sch_hn_tscheduler_hints = os_sch_hn_tscheduler_hints
 
     def to_dict(self):
         """Returns the model properties as a dict"""

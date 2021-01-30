@@ -1,0 +1,283 @@
+# coding: utf-8
+
+import pprint
+import re
+
+import six
+
+
+
+
+
+class ListPublicZonesRequest:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'type': 'str',
+        'limit': 'int',
+        'marker': 'str',
+        'offset': 'int',
+        'tags': 'str',
+        'name': 'str',
+        'status': 'str',
+        'enterprise_project_id': 'str'
+    }
+
+    attribute_map = {
+        'type': 'type',
+        'limit': 'limit',
+        'marker': 'marker',
+        'offset': 'offset',
+        'tags': 'tags',
+        'name': 'name',
+        'status': 'status',
+        'enterprise_project_id': 'enterprise_project_id'
+    }
+
+    def __init__(self, type=None, limit=None, marker=None, offset=None, tags=None, name=None, status=None, enterprise_project_id=None):
+        """ListPublicZonesRequest - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._type = None
+        self._limit = None
+        self._marker = None
+        self._offset = None
+        self._tags = None
+        self._name = None
+        self._status = None
+        self._enterprise_project_id = None
+        self.discriminator = None
+
+        if type is not None:
+            self.type = type
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
+        if offset is not None:
+            self.offset = offset
+        if tags is not None:
+            self.tags = tags
+        if name is not None:
+            self.name = name
+        if status is not None:
+            self.status = status
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+
+    @property
+    def type(self):
+        """Gets the type of this ListPublicZonesRequest.
+
+
+        :return: The type of this ListPublicZonesRequest.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ListPublicZonesRequest.
+
+
+        :param type: The type of this ListPublicZonesRequest.
+        :type: str
+        """
+        self._type = type
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListPublicZonesRequest.
+
+
+        :return: The limit of this ListPublicZonesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListPublicZonesRequest.
+
+
+        :param limit: The limit of this ListPublicZonesRequest.
+        :type: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListPublicZonesRequest.
+
+
+        :return: The marker of this ListPublicZonesRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListPublicZonesRequest.
+
+
+        :param marker: The marker of this ListPublicZonesRequest.
+        :type: str
+        """
+        self._marker = marker
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListPublicZonesRequest.
+
+
+        :return: The offset of this ListPublicZonesRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListPublicZonesRequest.
+
+
+        :param offset: The offset of this ListPublicZonesRequest.
+        :type: int
+        """
+        self._offset = offset
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListPublicZonesRequest.
+
+
+        :return: The tags of this ListPublicZonesRequest.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListPublicZonesRequest.
+
+
+        :param tags: The tags of this ListPublicZonesRequest.
+        :type: str
+        """
+        self._tags = tags
+
+    @property
+    def name(self):
+        """Gets the name of this ListPublicZonesRequest.
+
+
+        :return: The name of this ListPublicZonesRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListPublicZonesRequest.
+
+
+        :param name: The name of this ListPublicZonesRequest.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def status(self):
+        """Gets the status of this ListPublicZonesRequest.
+
+
+        :return: The status of this ListPublicZonesRequest.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListPublicZonesRequest.
+
+
+        :param status: The status of this ListPublicZonesRequest.
+        :type: str
+        """
+        self._status = status
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListPublicZonesRequest.
+
+
+        :return: The enterprise_project_id of this ListPublicZonesRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListPublicZonesRequest.
+
+
+        :param enterprise_project_id: The enterprise_project_id of this ListPublicZonesRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        return pprint.pformat(self.to_dict())
+
+    def __repr__(self):
+        """For `print` and `pprint`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ListPublicZonesRequest):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

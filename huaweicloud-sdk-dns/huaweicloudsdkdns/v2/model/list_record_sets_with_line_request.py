@@ -1,0 +1,458 @@
+# coding: utf-8
+
+import pprint
+import re
+
+import six
+
+
+
+
+
+class ListRecordSetsWithLineRequest:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'zone_type': 'str',
+        'marker': 'str',
+        'limit': 'str',
+        'offset': 'str',
+        'line_id': 'str',
+        'tags': 'str',
+        'status': 'str',
+        'type': 'str',
+        'name': 'str',
+        'id': 'str',
+        'records': 'str',
+        'sort_key': 'str',
+        'sort_dir': 'str',
+        'health_check_id': 'str',
+        'search_mode': 'str'
+    }
+
+    attribute_map = {
+        'zone_type': 'zone_type',
+        'marker': 'marker',
+        'limit': 'limit',
+        'offset': 'offset',
+        'line_id': 'line_id',
+        'tags': 'tags',
+        'status': 'status',
+        'type': 'type',
+        'name': 'name',
+        'id': 'id',
+        'records': 'records',
+        'sort_key': 'sort_key',
+        'sort_dir': 'sort_dir',
+        'health_check_id': 'health_check_id',
+        'search_mode': 'search_mode'
+    }
+
+    def __init__(self, zone_type=None, marker=None, limit=None, offset=None, line_id=None, tags=None, status=None, type=None, name=None, id=None, records=None, sort_key=None, sort_dir=None, health_check_id=None, search_mode=None):
+        """ListRecordSetsWithLineRequest - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._zone_type = None
+        self._marker = None
+        self._limit = None
+        self._offset = None
+        self._line_id = None
+        self._tags = None
+        self._status = None
+        self._type = None
+        self._name = None
+        self._id = None
+        self._records = None
+        self._sort_key = None
+        self._sort_dir = None
+        self._health_check_id = None
+        self._search_mode = None
+        self.discriminator = None
+
+        if zone_type is not None:
+            self.zone_type = zone_type
+        if marker is not None:
+            self.marker = marker
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if line_id is not None:
+            self.line_id = line_id
+        if tags is not None:
+            self.tags = tags
+        if status is not None:
+            self.status = status
+        if type is not None:
+            self.type = type
+        if name is not None:
+            self.name = name
+        if id is not None:
+            self.id = id
+        if records is not None:
+            self.records = records
+        if sort_key is not None:
+            self.sort_key = sort_key
+        if sort_dir is not None:
+            self.sort_dir = sort_dir
+        if health_check_id is not None:
+            self.health_check_id = health_check_id
+        if search_mode is not None:
+            self.search_mode = search_mode
+
+    @property
+    def zone_type(self):
+        """Gets the zone_type of this ListRecordSetsWithLineRequest.
+
+
+        :return: The zone_type of this ListRecordSetsWithLineRequest.
+        :rtype: str
+        """
+        return self._zone_type
+
+    @zone_type.setter
+    def zone_type(self, zone_type):
+        """Sets the zone_type of this ListRecordSetsWithLineRequest.
+
+
+        :param zone_type: The zone_type of this ListRecordSetsWithLineRequest.
+        :type: str
+        """
+        self._zone_type = zone_type
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListRecordSetsWithLineRequest.
+
+
+        :return: The marker of this ListRecordSetsWithLineRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListRecordSetsWithLineRequest.
+
+
+        :param marker: The marker of this ListRecordSetsWithLineRequest.
+        :type: str
+        """
+        self._marker = marker
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListRecordSetsWithLineRequest.
+
+
+        :return: The limit of this ListRecordSetsWithLineRequest.
+        :rtype: str
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListRecordSetsWithLineRequest.
+
+
+        :param limit: The limit of this ListRecordSetsWithLineRequest.
+        :type: str
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListRecordSetsWithLineRequest.
+
+
+        :return: The offset of this ListRecordSetsWithLineRequest.
+        :rtype: str
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListRecordSetsWithLineRequest.
+
+
+        :param offset: The offset of this ListRecordSetsWithLineRequest.
+        :type: str
+        """
+        self._offset = offset
+
+    @property
+    def line_id(self):
+        """Gets the line_id of this ListRecordSetsWithLineRequest.
+
+
+        :return: The line_id of this ListRecordSetsWithLineRequest.
+        :rtype: str
+        """
+        return self._line_id
+
+    @line_id.setter
+    def line_id(self, line_id):
+        """Sets the line_id of this ListRecordSetsWithLineRequest.
+
+
+        :param line_id: The line_id of this ListRecordSetsWithLineRequest.
+        :type: str
+        """
+        self._line_id = line_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListRecordSetsWithLineRequest.
+
+
+        :return: The tags of this ListRecordSetsWithLineRequest.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListRecordSetsWithLineRequest.
+
+
+        :param tags: The tags of this ListRecordSetsWithLineRequest.
+        :type: str
+        """
+        self._tags = tags
+
+    @property
+    def status(self):
+        """Gets the status of this ListRecordSetsWithLineRequest.
+
+
+        :return: The status of this ListRecordSetsWithLineRequest.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListRecordSetsWithLineRequest.
+
+
+        :param status: The status of this ListRecordSetsWithLineRequest.
+        :type: str
+        """
+        self._status = status
+
+    @property
+    def type(self):
+        """Gets the type of this ListRecordSetsWithLineRequest.
+
+
+        :return: The type of this ListRecordSetsWithLineRequest.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ListRecordSetsWithLineRequest.
+
+
+        :param type: The type of this ListRecordSetsWithLineRequest.
+        :type: str
+        """
+        self._type = type
+
+    @property
+    def name(self):
+        """Gets the name of this ListRecordSetsWithLineRequest.
+
+
+        :return: The name of this ListRecordSetsWithLineRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListRecordSetsWithLineRequest.
+
+
+        :param name: The name of this ListRecordSetsWithLineRequest.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def id(self):
+        """Gets the id of this ListRecordSetsWithLineRequest.
+
+
+        :return: The id of this ListRecordSetsWithLineRequest.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ListRecordSetsWithLineRequest.
+
+
+        :param id: The id of this ListRecordSetsWithLineRequest.
+        :type: str
+        """
+        self._id = id
+
+    @property
+    def records(self):
+        """Gets the records of this ListRecordSetsWithLineRequest.
+
+
+        :return: The records of this ListRecordSetsWithLineRequest.
+        :rtype: str
+        """
+        return self._records
+
+    @records.setter
+    def records(self, records):
+        """Sets the records of this ListRecordSetsWithLineRequest.
+
+
+        :param records: The records of this ListRecordSetsWithLineRequest.
+        :type: str
+        """
+        self._records = records
+
+    @property
+    def sort_key(self):
+        """Gets the sort_key of this ListRecordSetsWithLineRequest.
+
+
+        :return: The sort_key of this ListRecordSetsWithLineRequest.
+        :rtype: str
+        """
+        return self._sort_key
+
+    @sort_key.setter
+    def sort_key(self, sort_key):
+        """Sets the sort_key of this ListRecordSetsWithLineRequest.
+
+
+        :param sort_key: The sort_key of this ListRecordSetsWithLineRequest.
+        :type: str
+        """
+        self._sort_key = sort_key
+
+    @property
+    def sort_dir(self):
+        """Gets the sort_dir of this ListRecordSetsWithLineRequest.
+
+
+        :return: The sort_dir of this ListRecordSetsWithLineRequest.
+        :rtype: str
+        """
+        return self._sort_dir
+
+    @sort_dir.setter
+    def sort_dir(self, sort_dir):
+        """Sets the sort_dir of this ListRecordSetsWithLineRequest.
+
+
+        :param sort_dir: The sort_dir of this ListRecordSetsWithLineRequest.
+        :type: str
+        """
+        self._sort_dir = sort_dir
+
+    @property
+    def health_check_id(self):
+        """Gets the health_check_id of this ListRecordSetsWithLineRequest.
+
+
+        :return: The health_check_id of this ListRecordSetsWithLineRequest.
+        :rtype: str
+        """
+        return self._health_check_id
+
+    @health_check_id.setter
+    def health_check_id(self, health_check_id):
+        """Sets the health_check_id of this ListRecordSetsWithLineRequest.
+
+
+        :param health_check_id: The health_check_id of this ListRecordSetsWithLineRequest.
+        :type: str
+        """
+        self._health_check_id = health_check_id
+
+    @property
+    def search_mode(self):
+        """Gets the search_mode of this ListRecordSetsWithLineRequest.
+
+
+        :return: The search_mode of this ListRecordSetsWithLineRequest.
+        :rtype: str
+        """
+        return self._search_mode
+
+    @search_mode.setter
+    def search_mode(self, search_mode):
+        """Sets the search_mode of this ListRecordSetsWithLineRequest.
+
+
+        :param search_mode: The search_mode of this ListRecordSetsWithLineRequest.
+        :type: str
+        """
+        self._search_mode = search_mode
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        return pprint.pformat(self.to_dict())
+
+    def __repr__(self):
+        """For `print` and `pprint`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ListRecordSetsWithLineRequest):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

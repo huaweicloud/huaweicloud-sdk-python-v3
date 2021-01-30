@@ -26,7 +26,7 @@ class QuotaDetailGigabytesSATA:
         'in_use': 'int',
         'limit': 'int',
         'reserved': 'int',
-        'allocated': 'str'
+        'allocated': 'int'
     }
 
     attribute_map = {
@@ -125,7 +125,7 @@ class QuotaDetailGigabytesSATA:
         预留属性。
 
         :return: The allocated of this QuotaDetailGigabytesSATA.
-        :rtype: str
+        :rtype: int
         """
         return self._allocated
 
@@ -136,7 +136,7 @@ class QuotaDetailGigabytesSATA:
         预留属性。
 
         :param allocated: The allocated of this QuotaDetailGigabytesSATA.
-        :type: str
+        :type: int
         """
         self._allocated = allocated
 

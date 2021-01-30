@@ -24,7 +24,7 @@ class ListSlowLogsResponse(SdkResponse):
 
     openapi_types = {
         'slow_log_list': 'list[SlowlogResult]',
-        'total_record': 'str'
+        'total_record': 'int'
     }
 
     attribute_map = {
@@ -75,7 +75,7 @@ class ListSlowLogsResponse(SdkResponse):
         数据库版本总记录数。
 
         :return: The total_record of this ListSlowLogsResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._total_record
 
@@ -86,7 +86,7 @@ class ListSlowLogsResponse(SdkResponse):
         数据库版本总记录数。
 
         :param total_record: The total_record of this ListSlowLogsResponse.
-        :type: str
+        :type: int
         """
         self._total_record = total_record
 
