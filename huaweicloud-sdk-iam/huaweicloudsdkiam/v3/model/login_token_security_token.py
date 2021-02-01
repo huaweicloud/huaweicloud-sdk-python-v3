@@ -25,16 +25,18 @@ class LoginTokenSecurityToken:
     openapi_types = {
         'access': 'str',
         'secret': 'str',
-        'id': 'str'
+        'id': 'str',
+        'duration_seconds': 'int'
     }
 
     attribute_map = {
         'access': 'access',
         'secret': 'secret',
-        'id': 'id'
+        'id': 'id',
+        'duration_seconds': 'duration_seconds'
     }
 
-    def __init__(self, access=None, secret=None, id=None):
+    def __init__(self, access=None, secret=None, id=None, duration_seconds=600):
         """LoginTokenSecurityToken - a model defined in huaweicloud sdk"""
         
         
@@ -42,11 +44,14 @@ class LoginTokenSecurityToken:
         self._access = None
         self._secret = None
         self._id = None
+        self._duration_seconds = None
         self.discriminator = None
 
         self.access = access
         self.secret = secret
         self.id = id
+        if duration_seconds is not None:
+            self.duration_seconds = duration_seconds
 
     @property
     def access(self):
@@ -113,6 +118,28 @@ class LoginTokenSecurityToken:
         :type: str
         """
         self._id = id
+
+    @property
+    def duration_seconds(self):
+        """Gets the duration_seconds of this LoginTokenSecurityToken.
+
+        自定义代理登录票据logintoken的有效时间，时间单位为秒。默认10分钟，取值范围10min~12h，且取值不能大于临时安全凭证securitytoken的过期时间。
+
+        :return: The duration_seconds of this LoginTokenSecurityToken.
+        :rtype: int
+        """
+        return self._duration_seconds
+
+    @duration_seconds.setter
+    def duration_seconds(self, duration_seconds):
+        """Sets the duration_seconds of this LoginTokenSecurityToken.
+
+        自定义代理登录票据logintoken的有效时间，时间单位为秒。默认10分钟，取值范围10min~12h，且取值不能大于临时安全凭证securitytoken的过期时间。
+
+        :param duration_seconds: The duration_seconds of this LoginTokenSecurityToken.
+        :type: int
+        """
+        self._duration_seconds = duration_seconds
 
     def to_dict(self):
         """Returns the model properties as a dict"""

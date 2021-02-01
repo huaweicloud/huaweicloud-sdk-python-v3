@@ -23,7 +23,7 @@ class RecognizeGeneralTableResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'RecognizeGeneralTableResultResponse'
+        'result': 'GeneralTableResult'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeGeneralTableResponse(SdkResponse):
 
 
         :return: The result of this RecognizeGeneralTableResponse.
-        :rtype: RecognizeGeneralTableResultResponse
+        :rtype: GeneralTableResult
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeGeneralTableResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeGeneralTableResponse.
-        :type: RecognizeGeneralTableResultResponse
+        :type: GeneralTableResult
         """
         self._result = result
 

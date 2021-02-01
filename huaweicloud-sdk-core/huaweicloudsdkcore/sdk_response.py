@@ -18,10 +18,10 @@
  under the LICENSE.
 """
 
+import json
+from huaweicloudsdkcore.exceptions import exceptions
 from requests.exceptions import ConnectionError
 from urllib3.exceptions import SSLError, NewConnectionError
-
-from huaweicloudsdkcore.exceptions import exceptions
 
 
 class SdkResponse:
@@ -29,6 +29,10 @@ class SdkResponse:
         self.status_code = None
         self.header_params = None
         self.body = None
+
+    def to_json_object(self):
+        if self.body is not None:
+            return json.loads(self.body.decode("utf-8"))
 
 
 class FutureSdkResponse:

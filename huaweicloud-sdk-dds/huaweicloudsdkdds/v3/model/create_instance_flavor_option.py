@@ -24,9 +24,9 @@ class CreateInstanceFlavorOption:
 
     openapi_types = {
         'type': 'str',
-        'num': 'int',
+        'num': 'str',
         'storage': 'str',
-        'size': 'int',
+        'size': 'str',
         'spec_code': 'str'
     }
 
@@ -87,7 +87,7 @@ class CreateInstanceFlavorOption:
         节点数量。 取值：   - 集群实例下“mongos”类型的节点数量可取2~16。   - 集群实例下“shard”类型的组数量可取2~16。   - “shard”类型的组数量可取2~16，恢复到新实例不传该参数。   - “config”类型的组数量只能取1。   - “replica”类型的组数量只能取1。   - “single”类型的节点数量只能取1。
 
         :return: The num of this CreateInstanceFlavorOption.
-        :rtype: int
+        :rtype: str
         """
         return self._num
 
@@ -98,7 +98,7 @@ class CreateInstanceFlavorOption:
         节点数量。 取值：   - 集群实例下“mongos”类型的节点数量可取2~16。   - 集群实例下“shard”类型的组数量可取2~16。   - “shard”类型的组数量可取2~16，恢复到新实例不传该参数。   - “config”类型的组数量只能取1。   - “replica”类型的组数量只能取1。   - “single”类型的节点数量只能取1。
 
         :param num: The num of this CreateInstanceFlavorOption.
-        :type: int
+        :type: str
         """
         self._num = num
 
@@ -131,7 +131,7 @@ class CreateInstanceFlavorOption:
         磁盘大小。 取值：必须为10的整数倍。单位为GB。   - 对于集群实例，shard组可取10GB~2000GB，config组仅可取20GB。mongos节点不涉及选择磁盘，该参数无意义。   - 对于副本集实例，可取10GB~2000GB。   - 对于单节点实例，可取10GB~1000GB。
 
         :return: The size of this CreateInstanceFlavorOption.
-        :rtype: int
+        :rtype: str
         """
         return self._size
 
@@ -142,7 +142,7 @@ class CreateInstanceFlavorOption:
         磁盘大小。 取值：必须为10的整数倍。单位为GB。   - 对于集群实例，shard组可取10GB~2000GB，config组仅可取20GB。mongos节点不涉及选择磁盘，该参数无意义。   - 对于副本集实例，可取10GB~2000GB。   - 对于单节点实例，可取10GB~1000GB。
 
         :param size: The size of this CreateInstanceFlavorOption.
-        :type: int
+        :type: str
         """
         self._size = size
 

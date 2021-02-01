@@ -29,6 +29,12 @@ class DdsRegion:
 
     AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://dds.ap-southeast-3.myhuaweicloud.com")
 
+    RU_NORTHWEST_2 = Region(id="ru-northwest-2", endpoint="https://dds.ru-northwest-2.myhuaweicloud.com")
+
+    CN_SOUTH_2 = Region(id="cn-south-2", endpoint="https://dds.cn-south-2.myhuaweicloud.com")
+
+    CN_NORTH_2 = Region(id="cn-north-2", endpoint="https://dds.cn-north-2.myhuaweicloud.com")
+
     static_fields = types.MappingProxyType({
         "af-south-1": AF_SOUTH_1,
         "cn-north-4": CN_NORTH_4,
@@ -40,6 +46,9 @@ class DdsRegion:
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-3": AP_SOUTHEAST_3,
+        "ru-northwest-2": RU_NORTHWEST_2,
+        "cn-south-2": CN_SOUTH_2,
+        "cn-north-2": CN_NORTH_2,
     })
 
     @staticmethod

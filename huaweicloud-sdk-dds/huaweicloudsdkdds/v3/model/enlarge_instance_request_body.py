@@ -25,7 +25,7 @@ class EnlargeInstanceRequestBody:
     openapi_types = {
         'type': 'str',
         'spec_code': 'str',
-        'num': 'int',
+        'num': 'str',
         'volume': 'AddShardingNodeVolumeOption'
     }
 
@@ -104,7 +104,7 @@ class EnlargeInstanceRequestBody:
         一个集群实例下，最多支持16个mongos节点和16个shard组。
 
         :return: The num of this EnlargeInstanceRequestBody.
-        :rtype: int
+        :rtype: str
         """
         return self._num
 
@@ -115,7 +115,7 @@ class EnlargeInstanceRequestBody:
         一个集群实例下，最多支持16个mongos节点和16个shard组。
 
         :param num: The num of this EnlargeInstanceRequestBody.
-        :type: int
+        :type: str
         """
         self._num = num
 

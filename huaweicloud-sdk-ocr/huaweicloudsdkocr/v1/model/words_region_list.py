@@ -25,7 +25,7 @@ class WordsRegionList:
     openapi_types = {
         'type': 'str',
         'words_block_count': 'str',
-        'words_block_list': 'list[WordsBlockList]'
+        'words_block_list': 'list[GeneralTableWordsBlockList]'
     }
 
     attribute_map = {
@@ -99,7 +99,7 @@ class WordsRegionList:
         子区域识别文字块列表，输出顺序从左到右，先上后下。 
 
         :return: The words_block_list of this WordsRegionList.
-        :rtype: list[WordsBlockList]
+        :rtype: list[GeneralTableWordsBlockList]
         """
         return self._words_block_list
 
@@ -110,7 +110,7 @@ class WordsRegionList:
         子区域识别文字块列表，输出顺序从左到右，先上后下。 
 
         :param words_block_list: The words_block_list of this WordsRegionList.
-        :type: list[WordsBlockList]
+        :type: list[GeneralTableWordsBlockList]
         """
         self._words_block_list = words_block_list
 

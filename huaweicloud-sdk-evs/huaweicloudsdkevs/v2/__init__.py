@@ -34,6 +34,7 @@ from huaweicloudsdkevs.v2.model.create_volume_option import CreateVolumeOption
 from huaweicloudsdkevs.v2.model.create_volume_request import CreateVolumeRequest
 from huaweicloudsdkevs.v2.model.create_volume_request_body import CreateVolumeRequestBody
 from huaweicloudsdkevs.v2.model.create_volume_response import CreateVolumeResponse
+from huaweicloudsdkevs.v2.model.create_volume_scheduler_hints import CreateVolumeSchedulerHints
 from huaweicloudsdkevs.v2.model.delete_snapshot_request import DeleteSnapshotRequest
 from huaweicloudsdkevs.v2.model.delete_snapshot_response import DeleteSnapshotResponse
 from huaweicloudsdkevs.v2.model.delete_tags_option import DeleteTagsOption

@@ -241,7 +241,7 @@ class MonthlyBillRecord:
     def resource_type_code(self):
         """Gets the resource_type_code of this MonthlyBillRecord.
 
-        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
+        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型| |参数约束及描述：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型|
 
         :return: The resource_type_code of this MonthlyBillRecord.
         :rtype: str
@@ -252,7 +252,7 @@ class MonthlyBillRecord:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this MonthlyBillRecord.
 
-        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
+        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型| |参数约束及描述：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型|
 
         :param resource_type_code: The resource_type_code of this MonthlyBillRecord.
         :type: str
@@ -263,7 +263,7 @@ class MonthlyBillRecord:
     def region_code(self):
         """Gets the region_code of this MonthlyBillRecord.
 
-        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型| |参数约束及描述：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型|
+        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
 
         :return: The region_code of this MonthlyBillRecord.
         :rtype: str
@@ -274,7 +274,7 @@ class MonthlyBillRecord:
     def region_code(self, region_code):
         """Sets the region_code of this MonthlyBillRecord.
 
-        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型| |参数约束及描述：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型|
+        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
 
         :param region_code: The region_code of this MonthlyBillRecord.
         :type: str

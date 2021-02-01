@@ -23,7 +23,7 @@ class AddShardingNodeVolumeOption:
     sensitive_list = []
 
     openapi_types = {
-        'size': 'int'
+        'size': 'str'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class AddShardingNodeVolumeOption:
         指定新增的所有shard组的磁盘容量。取值范围：10GB~2000GB。
 
         :return: The size of this AddShardingNodeVolumeOption.
-        :rtype: int
+        :rtype: str
         """
         return self._size
 
@@ -58,7 +58,7 @@ class AddShardingNodeVolumeOption:
         指定新增的所有shard组的磁盘容量。取值范围：10GB~2000GB。
 
         :param size: The size of this AddShardingNodeVolumeOption.
-        :type: int
+        :type: str
         """
         self._size = size
 

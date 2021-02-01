@@ -115,6 +115,73 @@ class SwrAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_manual_image_sync_repo_async(self, request):
+        """手动同步镜像
+
+        手动同步镜像
+
+        :param CreateManualImageSyncRepoRequest request
+        :return: CreateManualImageSyncRepoResponse
+        """
+        return self.create_manual_image_sync_repo_with_http_info(request)
+
+    def create_manual_image_sync_repo_with_http_info(self, request):
+        """手动同步镜像
+
+        手动同步镜像
+
+        :param CreateManualImageSyncRepoRequest request
+        :return: CreateManualImageSyncRepoResponse
+        """
+
+        all_params = ['namespace', 'repository', 'body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'namespace' in local_var_params:
+            path_params['namespace'] = local_var_params['namespace']
+        if 'repository' in local_var_params:
+            path_params['repository'] = local_var_params['repository']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/sync_images',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateManualImageSyncRepoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_namespace_async(self, request):
         """创建组织
 
@@ -237,6 +304,71 @@ class SwrAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateNamespaceAuthResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_repo_async(self, request):
+        """在组织下创建镜像仓库
+
+        在组织下创建镜像仓库。
+
+        :param CreateRepoRequest request
+        :return: CreateRepoResponse
+        """
+        return self.create_repo_with_http_info(request)
+
+    def create_repo_with_http_info(self, request):
+        """在组织下创建镜像仓库
+
+        在组织下创建镜像仓库。
+
+        :param CreateRepoRequest request
+        :return: CreateRepoResponse
+        """
+
+        all_params = ['namespace', 'create_repo_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'namespace' in local_var_params:
+            path_params['namespace'] = local_var_params['namespace']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/manage/namespaces/{namespace}/repos',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateRepoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1362,6 +1494,75 @@ class SwrAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_repos_details_async(self, request):
+        """查询镜像列表
+
+        查询镜像列表
+
+        :param ListReposDetailsRequest request
+        :return: ListReposDetailsResponse
+        """
+        return self.list_repos_details_with_http_info(request)
+
+    def list_repos_details_with_http_info(self, request):
+        """查询镜像列表
+
+        查询镜像列表
+
+        :param ListReposDetailsRequest request
+        :return: ListReposDetailsResponse
+        """
+
+        all_params = ['namespace', 'name', 'category', 'filter']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["Content-Range"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/manage/repos',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListReposDetailsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_repository_tags_async(self, request):
         """查询镜像tag列表
 
@@ -1565,6 +1766,69 @@ class SwrAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListRetentionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_shared_repos_details_async(self, request):
+        """查询共享镜像列表
+
+        查询共享镜像列表
+
+        :param ListSharedReposDetailsRequest request
+        :return: ListSharedReposDetailsResponse
+        """
+        return self.list_shared_repos_details_with_http_info(request)
+
+    def list_shared_repos_details_with_http_info(self, request):
+        """查询共享镜像列表
+
+        查询共享镜像列表
+
+        :param ListSharedReposDetailsRequest request
+        :return: ListSharedReposDetailsResponse
+        """
+
+        all_params = ['filter']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["Content-Range"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/manage/shared-repositories',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSharedReposDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1961,6 +2225,73 @@ class SwrAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_sync_job_async(self, request):
+        """获取镜像同步任务信息
+
+        获取镜像同步任务信息
+
+        :param ShowSyncJobRequest request
+        :return: ShowSyncJobResponse
+        """
+        return self.show_sync_job_with_http_info(request)
+
+    def show_sync_job_with_http_info(self, request):
+        """获取镜像同步任务信息
+
+        获取镜像同步任务信息
+
+        :param ShowSyncJobRequest request
+        :return: ShowSyncJobResponse
+        """
+
+        all_params = ['namespace', 'repository', 'filter']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'namespace' in local_var_params:
+            path_params['namespace'] = local_var_params['namespace']
+        if 'repository' in local_var_params:
+            path_params['repository'] = local_var_params['repository']
+
+        query_params = []
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/sync_job',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowSyncJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_trigger_async(self, request):
         """获取触发器详情
 
@@ -2087,6 +2418,138 @@ class SwrAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowUserRepositoryAuthResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_namespace_auth_async(self, request):
+        """更新组织权限
+
+        更新组织权限
+
+        :param UpdateNamespaceAuthRequest request
+        :return: UpdateNamespaceAuthResponse
+        """
+        return self.update_namespace_auth_with_http_info(request)
+
+    def update_namespace_auth_with_http_info(self, request):
+        """更新组织权限
+
+        更新组织权限
+
+        :param UpdateNamespaceAuthRequest request
+        :return: UpdateNamespaceAuthResponse
+        """
+
+        all_params = ['namespace', 'update_namespace_auth_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'namespace' in local_var_params:
+            path_params['namespace'] = local_var_params['namespace']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/manage/namespaces/{namespace}/access',
+            method='PATCH',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateNamespaceAuthResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_repo_async(self, request):
+        """更新镜像仓库的概要信息
+
+        更新租户命名空间下的镜像概要信息，包括镜像类型、是否公有、描述信息
+
+        :param UpdateRepoRequest request
+        :return: UpdateRepoResponse
+        """
+        return self.update_repo_with_http_info(request)
+
+    def update_repo_with_http_info(self, request):
+        """更新镜像仓库的概要信息
+
+        更新租户命名空间下的镜像概要信息，包括镜像类型、是否公有、描述信息
+
+        :param UpdateRepoRequest request
+        :return: UpdateRepoResponse
+        """
+
+        all_params = ['namespace', 'repository', 'update_repo_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'namespace' in local_var_params:
+            path_params['namespace'] = local_var_params['namespace']
+        if 'repository' in local_var_params:
+            path_params['repository'] = local_var_params['repository']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}',
+            method='PATCH',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateRepoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2361,6 +2824,67 @@ class SwrAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateUserRepositoryAuthResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_api_versions_async(self, request):
+        """查询所有API版本信息
+
+        查询所有API版本信息
+
+        :param ListApiVersionsRequest request
+        :return: ListApiVersionsResponse
+        """
+        return self.list_api_versions_with_http_info(request)
+
+    def list_api_versions_with_http_info(self, request):
+        """查询所有API版本信息
+
+        查询所有API版本信息
+
+        :param ListApiVersionsRequest request
+        :return: ListApiVersionsResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListApiVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

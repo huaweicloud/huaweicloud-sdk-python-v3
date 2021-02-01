@@ -19,6 +19,8 @@ from huaweicloudsdkocr.v1.model.extra_info_list import ExtraInfoList
 from huaweicloudsdkocr.v1.model.extracted_data import ExtractedData
 from huaweicloudsdkocr.v1.model.flight_itinerary_req import FlightItineraryReq
 from huaweicloudsdkocr.v1.model.flight_itinerary_response_body_item import FlightItineraryResponseBodyItem
+from huaweicloudsdkocr.v1.model.general_table_result import GeneralTableResult
+from huaweicloudsdkocr.v1.model.general_table_words_block_list import GeneralTableWordsBlockList
 from huaweicloudsdkocr.v1.model.general_text_req import GeneralTextReq
 from huaweicloudsdkocr.v1.model.general_text_response_body_items import GeneralTextResponseBodyItems
 from huaweicloudsdkocr.v1.model.general_text_words_block_list import GeneralTextWordsBlockList
@@ -55,7 +57,6 @@ from huaweicloudsdkocr.v1.model.recognize_flight_itinerary_response import Recog
 from huaweicloudsdkocr.v1.model.recognize_general_table_request import RecognizeGeneralTableRequest
 from huaweicloudsdkocr.v1.model.recognize_general_table_request_body import RecognizeGeneralTableRequestBody
 from huaweicloudsdkocr.v1.model.recognize_general_table_response import RecognizeGeneralTableResponse
-from huaweicloudsdkocr.v1.model.recognize_general_table_result_response import RecognizeGeneralTableResultResponse
 from huaweicloudsdkocr.v1.model.recognize_general_text_request import RecognizeGeneralTextRequest
 from huaweicloudsdkocr.v1.model.recognize_general_text_response import RecognizeGeneralTextResponse
 from huaweicloudsdkocr.v1.model.recognize_handwriting_request import RecognizeHandwritingRequest
@@ -103,6 +104,5 @@ from huaweicloudsdkocr.v1.model.vin_response_body_item import VINResponseBodyIte
 from huaweicloudsdkocr.v1.model.web_image_req import WebImageReq
 from huaweicloudsdkocr.v1.model.web_image_response_body_item import WebImageResponseBodyItem
 from huaweicloudsdkocr.v1.model.web_image_words_block_list import WebImageWordsBlockList
-from huaweicloudsdkocr.v1.model.words_block_list import WordsBlockList
 from huaweicloudsdkocr.v1.model.words_region_list import WordsRegionList
 

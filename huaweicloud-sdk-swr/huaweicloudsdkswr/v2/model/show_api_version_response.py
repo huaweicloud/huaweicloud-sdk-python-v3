@@ -23,7 +23,7 @@ class ShowApiVersionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'version': 'VersionsDetail'
+        'version': 'VersionDetail'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ShowApiVersionResponse(SdkResponse):
 
 
         :return: The version of this ShowApiVersionResponse.
-        :rtype: VersionsDetail
+        :rtype: VersionDetail
         """
         return self._version
 
@@ -57,7 +57,7 @@ class ShowApiVersionResponse(SdkResponse):
 
 
         :param version: The version of this ShowApiVersionResponse.
-        :type: VersionsDetail
+        :type: VersionDetail
         """
         self._version = version
 

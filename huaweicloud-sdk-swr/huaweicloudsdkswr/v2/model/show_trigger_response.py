@@ -35,7 +35,7 @@ class ShowTriggerResponse(SdkResponse):
         'creator_name': 'str',
         'enable': 'str',
         'name': 'str',
-        'trigger_history': 'list[TriggerHistorys]',
+        'trigger_history': 'list[TriggerHistories]',
         'trigger_mode': 'str',
         'trigger_type': 'str'
     }
@@ -382,7 +382,7 @@ class ShowTriggerResponse(SdkResponse):
         触发器历史
 
         :return: The trigger_history of this ShowTriggerResponse.
-        :rtype: list[TriggerHistorys]
+        :rtype: list[TriggerHistories]
         """
         return self._trigger_history
 
@@ -393,7 +393,7 @@ class ShowTriggerResponse(SdkResponse):
         触发器历史
 
         :param trigger_history: The trigger_history of this ShowTriggerResponse.
-        :type: list[TriggerHistorys]
+        :type: list[TriggerHistories]
         """
         self._trigger_history = trigger_history
 

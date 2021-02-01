@@ -31,7 +31,7 @@ from typing import Mapping
 import six
 from six.moves.urllib.parse import quote, urlparse
 
-from huaweicloudsdkcore.auth.credentials import BasicCredentials, get_credential_from_environment
+from huaweicloudsdkcore.auth.credentials import BasicCredentials, EnvCredentials
 from huaweicloudsdkcore.http.http_client import HttpClient
 from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.http.http_handler import HttpHandler
@@ -97,9 +97,12 @@ class ClientBuilder:
 
     def build(self):
         if self._credentials is None:
-            self._credentials = get_credential_from_environment(self._client_type, self._credential_type[0])
+            self._credentials = EnvCredentials.load_credential_from_env(self._credential_type[0])
+        if self._credentials is None:
+            raise ValueError("credential can not be None, %s credential objects are required"
+                             % ",".join(self._credential_type))
         if self._credentials.__class__.__name__ not in self._credential_type:
-            raise TypeError("credential type error, support credential type is %s" % ",".join(self._credential_type))
+            raise TypeError("credential type error, supported credential type is %s" % ",".join(self._credential_type))
 
         client = self._client_type() \
             .with_credentials(self._credentials) \
@@ -270,8 +273,8 @@ class Client:
             return [i for i in list_filter]
 
     def do_http_request(self, method, resource_path, path_params=None, query_params=None, header_params=None, body=None,
-                        post_params=None, response_type=None, response_headers=None, collection_formats=None, request_type=None,
-                        async_request=False):
+                        post_params=None, response_type=None, response_headers=None, collection_formats=None,
+                        request_type=None, async_request=False):
         url_parse_result = urlparse(self._endpoint)
         schema = url_parse_result.scheme
         host = url_parse_result.netloc
@@ -313,6 +316,7 @@ class Client:
         self.set_response_status_code(return_data, response)
         if response_headers is not None and len(response_headers) > 0:
             self.set_response_headers(return_data, response, response_headers)
+
         return return_data
 
     def async_response_hook_factory(self, response_type, response_headers):

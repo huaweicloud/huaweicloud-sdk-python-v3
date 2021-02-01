@@ -26,7 +26,7 @@ class QueryInstanceResponse:
         'id': 'str',
         'name': 'str',
         'status': 'str',
-        'port': 'int',
+        'port': 'str',
         'mode': 'str',
         'region': 'str',
         'datastore': 'DatastoreItem',
@@ -207,7 +207,7 @@ class QueryInstanceResponse:
         数据库端口号。文档数据库实例支持的端口号范围为2100～9500。
 
         :return: The port of this QueryInstanceResponse.
-        :rtype: int
+        :rtype: str
         """
         return self._port
 
@@ -218,7 +218,7 @@ class QueryInstanceResponse:
         数据库端口号。文档数据库实例支持的端口号范围为2100～9500。
 
         :param port: The port of this QueryInstanceResponse.
-        :type: int
+        :type: str
         """
         self._port = port
 
