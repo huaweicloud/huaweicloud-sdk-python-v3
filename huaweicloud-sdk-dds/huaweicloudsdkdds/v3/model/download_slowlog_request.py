@@ -9,7 +9,7 @@ import six
 
 
 
-class AddShardingNodeVolumeOption:
+class DownloadSlowlogRequest:
 
 
     """
@@ -23,44 +23,67 @@ class AddShardingNodeVolumeOption:
     sensitive_list = []
 
     openapi_types = {
-        'size': 'int'
+        'instance_id': 'str',
+        'body': 'DownloadSlowlogRequestBody'
     }
 
     attribute_map = {
-        'size': 'size'
+        'instance_id': 'instance_id',
+        'body': 'body'
     }
 
-    def __init__(self, size=None):
-        """AddShardingNodeVolumeOption - a model defined in huaweicloud sdk"""
+    def __init__(self, instance_id=None, body=None):
+        """DownloadSlowlogRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._size = None
+        self._instance_id = None
+        self._body = None
         self.discriminator = None
 
-        self.size = size
+        self.instance_id = instance_id
+        if body is not None:
+            self.body = body
 
     @property
-    def size(self):
-        """Gets the size of this AddShardingNodeVolumeOption.
+    def instance_id(self):
+        """Gets the instance_id of this DownloadSlowlogRequest.
 
-        指定新增的所有shard组的磁盘容量。取值范围：10GB~2000GB。
 
-        :return: The size of this AddShardingNodeVolumeOption.
-        :rtype: int
+        :return: The instance_id of this DownloadSlowlogRequest.
+        :rtype: str
         """
-        return self._size
+        return self._instance_id
 
-    @size.setter
-    def size(self, size):
-        """Sets the size of this AddShardingNodeVolumeOption.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this DownloadSlowlogRequest.
 
-        指定新增的所有shard组的磁盘容量。取值范围：10GB~2000GB。
 
-        :param size: The size of this AddShardingNodeVolumeOption.
-        :type: int
+        :param instance_id: The instance_id of this DownloadSlowlogRequest.
+        :type: str
         """
-        self._size = size
+        self._instance_id = instance_id
+
+    @property
+    def body(self):
+        """Gets the body of this DownloadSlowlogRequest.
+
+
+        :return: The body of this DownloadSlowlogRequest.
+        :rtype: DownloadSlowlogRequestBody
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this DownloadSlowlogRequest.
+
+
+        :param body: The body of this DownloadSlowlogRequest.
+        :type: DownloadSlowlogRequestBody
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -99,7 +122,7 @@ class AddShardingNodeVolumeOption:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AddShardingNodeVolumeOption):
+        if not isinstance(other, DownloadSlowlogRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -18,6 +18,8 @@
  under the LICENSE.
 """
 
+import importlib
+import inspect
 import os
 from concurrent.futures.thread import ThreadPoolExecutor
 
@@ -25,6 +27,7 @@ from huaweicloudsdkcore.auth.iam_service import get_keystone_list_projects_reque
     get_keystone_list_auth_domains_request, keystone_list_auth_domains, DEFAULT_IAM_ENDPOINT
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException
 from huaweicloudsdkcore.signer import signer
+from huaweicloudsdkcore.utils.string_utils import camel_to_underline
 
 
 class Credentials:
@@ -160,17 +163,46 @@ class GlobalCredentials(Credentials):
         return signer.Signer(self).sign(request)
 
 
-class EnvCredentials(Credentials):
-    @staticmethod
-    def load_credential_from_env(default_type):
-        ak = os.environ.get("HUAWEICLOUD_SDK_AK")
-        sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+def get_credential_from_environment(client_type, default_credentials):
+    credential_type = os.environ.get("HUAWEICLOUD_SDK_TYPE")
+    if not credential_type:
+        credential_type = default_credentials
 
-        if default_type == "BasicCredentials":
-            project_id = os.environ.get("HUAWEICLOUD_SDK_PROJECT_ID")
-            return BasicCredentials(ak, sk, project_id)
-        elif default_type == "GlobalCredentials":
-            domain_id = os.environ.get("HUAWEICLOUD_SDK_DOMAIN_ID")
-            return GlobalCredentials(ak, sk, domain_id)
-        else:
-            return None
+    credentials_clazz = _get_credentials_clazz(credential_type, client_type)
+    if not credentials_clazz:
+        return None
+
+    credentials = _initialize_credentials(credentials_clazz)
+    credentials = _load_optional_params(credentials)
+
+    return credentials
+
+
+def _get_credentials_clazz(credential_type, client_type):
+    core_credentials_module = importlib.import_module("huaweicloudsdkcore.auth.credentials")
+    if hasattr(core_credentials_module, credential_type):
+        return getattr(core_credentials_module, credential_type)
+    else:
+        credentials_clazz_name = "%s.%s" % (client_type.__module__[:client_type.__module__.rindex('.')],
+                                            camel_to_underline(credential_type))
+        credentials_module = importlib.import_module(credentials_clazz_name)
+        if hasattr(credentials_module, credential_type):
+            return getattr(credentials_module, credential_type)
+    return None
+
+
+def _initialize_credentials(credentials_clazz):
+    args_map = {}
+    init_method = getattr(credentials_clazz, "__init__")
+    args = inspect.getfullargspec(init_method).args
+    for each in args:
+        if each != "self":
+            args_map[each] = os.environ.get("HUAWEICLOUD_SDK_%s" % each.upper())
+    return credentials_clazz(**args_map)
+
+
+def _load_optional_params(credentials):
+    for item in credentials.__dict__:
+        if getattr(credentials, item) is None:
+            setattr(credentials, item, os.environ.get("HUAWEICLOUD_SDK_%s" % item.strip('_').upper()))
+    return credentials

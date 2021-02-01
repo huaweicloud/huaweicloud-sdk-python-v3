@@ -9,7 +9,7 @@ import six
 
 
 
-class AddShardingNodeVolumeOption:
+class UpdateAutoTerminateTimeServerRequestBody:
 
 
     """
@@ -23,44 +23,44 @@ class AddShardingNodeVolumeOption:
     sensitive_list = []
 
     openapi_types = {
-        'size': 'int'
+        'auto_terminate_time': 'str'
     }
 
     attribute_map = {
-        'size': 'size'
+        'auto_terminate_time': 'auto_terminate_time'
     }
 
-    def __init__(self, size=None):
-        """AddShardingNodeVolumeOption - a model defined in huaweicloud sdk"""
+    def __init__(self, auto_terminate_time=None):
+        """UpdateAutoTerminateTimeServerRequestBody - a model defined in huaweicloud sdk"""
         
         
 
-        self._size = None
+        self._auto_terminate_time = None
         self.discriminator = None
 
-        self.size = size
+        self.auto_terminate_time = auto_terminate_time
 
     @property
-    def size(self):
-        """Gets the size of this AddShardingNodeVolumeOption.
+    def auto_terminate_time(self):
+        """Gets the auto_terminate_time of this UpdateAutoTerminateTimeServerRequestBody.
 
-        指定新增的所有shard组的磁盘容量。取值范围：10GB~2000GB。
+        销毁时间
 
-        :return: The size of this AddShardingNodeVolumeOption.
-        :rtype: int
+        :return: The auto_terminate_time of this UpdateAutoTerminateTimeServerRequestBody.
+        :rtype: str
         """
-        return self._size
+        return self._auto_terminate_time
 
-    @size.setter
-    def size(self, size):
-        """Sets the size of this AddShardingNodeVolumeOption.
+    @auto_terminate_time.setter
+    def auto_terminate_time(self, auto_terminate_time):
+        """Sets the auto_terminate_time of this UpdateAutoTerminateTimeServerRequestBody.
 
-        指定新增的所有shard组的磁盘容量。取值范围：10GB~2000GB。
+        销毁时间
 
-        :param size: The size of this AddShardingNodeVolumeOption.
-        :type: int
+        :param auto_terminate_time: The auto_terminate_time of this UpdateAutoTerminateTimeServerRequestBody.
+        :type: str
         """
-        self._size = size
+        self._auto_terminate_time = auto_terminate_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -99,7 +99,7 @@ class AddShardingNodeVolumeOption:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AddShardingNodeVolumeOption):
+        if not isinstance(other, UpdateAutoTerminateTimeServerRequestBody):
             return False
 
         return self.__dict__ == other.__dict__

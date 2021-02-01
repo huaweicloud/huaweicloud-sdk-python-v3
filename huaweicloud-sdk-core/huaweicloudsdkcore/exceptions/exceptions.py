@@ -37,9 +37,6 @@ class ConnectionException(SdkException):
         super(ConnectionException, self).__init__()
         self.err_message = err_message
 
-    def __str__(self):
-        return "ConnectionException - %s" % self.err_message
-
 
 class HostUnreachableException(ConnectionException):
     def __init__(self, err_message):
@@ -49,9 +46,6 @@ class HostUnreachableException(ConnectionException):
         super(HostUnreachableException, self).__init__(err_message)
         self.err_message = err_message
 
-    def __str__(self):
-        return "HostUnreachableException - %s" % self.err_message
-
 
 class SslHandShakeException(ConnectionException):
     def __init__(self, err_message):
@@ -60,9 +54,6 @@ class SslHandShakeException(ConnectionException):
         """
         super(SslHandShakeException, self).__init__(err_message)
         self.err_message = err_message
-
-    def __str__(self):
-        return "SslHandShakeException - %s" % self.err_message
 
 
 def render_path(path_to_item):
@@ -150,10 +141,6 @@ class ServiceResponseException(SdkException):
         self.error_code = sdk_error.error_code
         self.request_id = sdk_error.request_id
 
-    def __str__(self):
-        return "ServiceResponseException - {status_code:%s,request_id:%s,error_code:%s,error_msg:%s }" % (
-            self.status_code, self.request_id, self.error_code, self.error_msg)
-
 
 class ClientRequestException(ServiceResponseException):
     def __init__(self, status_code, sdk_error):
@@ -165,10 +152,6 @@ class ClientRequestException(ServiceResponseException):
         self.error_msg = sdk_error.error_msg
         self.error_code = sdk_error.error_code
         self.request_id = sdk_error.request_id
-
-    def __str__(self):
-        return "ClientRequestException - {status_code:%s,request_id:%s,error_code:%s,error_msg:%s }" % (
-            self.status_code, self.request_id, self.error_code, self.error_msg)
 
 
 class ServerResponseException(ServiceResponseException):
@@ -182,10 +165,6 @@ class ServerResponseException(ServiceResponseException):
         self.error_code = sdk_error.error_code
         self.request_id = sdk_error.request_id
 
-    def __str__(self):
-        return "ServerResponseException - {status_code:%s,request_id:%s,error_code:%s,error_msg:%s }" % (
-            self.status_code, self.request_id, self.error_code, self.error_msg)
-
 
 class RequestTimeoutException(SdkException):
     def __init__(self, err_message):
@@ -194,9 +173,6 @@ class RequestTimeoutException(SdkException):
         """
         super(self)
         self.err_message = err_message
-
-    def __str__(self):
-        return "RequestTimeoutException - %s" % self.err_message
 
 
 class CallTimeoutException(RequestTimeoutException):
@@ -207,9 +183,6 @@ class CallTimeoutException(RequestTimeoutException):
         super(CallTimeoutException, self).__init__(err_message)
         self.err_message = err_message
 
-    def __str__(self):
-        return "CallTimeoutException - %s" % self.err_message
-
 
 class RetryOutageException(RequestTimeoutException):
     def __init__(self, err_message):
@@ -218,9 +191,6 @@ class RetryOutageException(RequestTimeoutException):
         """
         super(RetryOutageException, self).__init__(err_message)
         self.err_message = err_message
-
-    def __str__(self):
-        return "RetryOutageException - %s" % self.err_message
 
 
 class SdkError:

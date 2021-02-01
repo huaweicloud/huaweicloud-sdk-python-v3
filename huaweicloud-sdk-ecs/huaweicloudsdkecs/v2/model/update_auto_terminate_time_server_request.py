@@ -9,7 +9,7 @@ import six
 
 
 
-class AddShardingNodeVolumeOption:
+class UpdateAutoTerminateTimeServerRequest:
 
 
     """
@@ -23,44 +23,67 @@ class AddShardingNodeVolumeOption:
     sensitive_list = []
 
     openapi_types = {
-        'size': 'int'
+        'server_id': 'str',
+        'body': 'UpdateAutoTerminateTimeServerRequestBody'
     }
 
     attribute_map = {
-        'size': 'size'
+        'server_id': 'server_id',
+        'body': 'body'
     }
 
-    def __init__(self, size=None):
-        """AddShardingNodeVolumeOption - a model defined in huaweicloud sdk"""
+    def __init__(self, server_id=None, body=None):
+        """UpdateAutoTerminateTimeServerRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._size = None
+        self._server_id = None
+        self._body = None
         self.discriminator = None
 
-        self.size = size
+        self.server_id = server_id
+        if body is not None:
+            self.body = body
 
     @property
-    def size(self):
-        """Gets the size of this AddShardingNodeVolumeOption.
+    def server_id(self):
+        """Gets the server_id of this UpdateAutoTerminateTimeServerRequest.
 
-        指定新增的所有shard组的磁盘容量。取值范围：10GB~2000GB。
 
-        :return: The size of this AddShardingNodeVolumeOption.
-        :rtype: int
+        :return: The server_id of this UpdateAutoTerminateTimeServerRequest.
+        :rtype: str
         """
-        return self._size
+        return self._server_id
 
-    @size.setter
-    def size(self, size):
-        """Sets the size of this AddShardingNodeVolumeOption.
+    @server_id.setter
+    def server_id(self, server_id):
+        """Sets the server_id of this UpdateAutoTerminateTimeServerRequest.
 
-        指定新增的所有shard组的磁盘容量。取值范围：10GB~2000GB。
 
-        :param size: The size of this AddShardingNodeVolumeOption.
-        :type: int
+        :param server_id: The server_id of this UpdateAutoTerminateTimeServerRequest.
+        :type: str
         """
-        self._size = size
+        self._server_id = server_id
+
+    @property
+    def body(self):
+        """Gets the body of this UpdateAutoTerminateTimeServerRequest.
+
+
+        :return: The body of this UpdateAutoTerminateTimeServerRequest.
+        :rtype: UpdateAutoTerminateTimeServerRequestBody
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this UpdateAutoTerminateTimeServerRequest.
+
+
+        :param body: The body of this UpdateAutoTerminateTimeServerRequest.
+        :type: UpdateAutoTerminateTimeServerRequestBody
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -99,7 +122,7 @@ class AddShardingNodeVolumeOption:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AddShardingNodeVolumeOption):
+        if not isinstance(other, UpdateAutoTerminateTimeServerRequest):
             return False
 
         return self.__dict__ == other.__dict__

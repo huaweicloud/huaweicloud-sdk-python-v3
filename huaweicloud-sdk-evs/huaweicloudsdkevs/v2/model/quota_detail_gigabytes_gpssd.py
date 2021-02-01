@@ -26,7 +26,7 @@ class QuotaDetailGigabytesGPSSD:
         'in_use': 'int',
         'limit': 'int',
         'reserved': 'int',
-        'allocated': 'int'
+        'allocated': 'str'
     }
 
     attribute_map = {
@@ -125,7 +125,7 @@ class QuotaDetailGigabytesGPSSD:
         预留属性。
 
         :return: The allocated of this QuotaDetailGigabytesGPSSD.
-        :rtype: int
+        :rtype: str
         """
         return self._allocated
 
@@ -136,7 +136,7 @@ class QuotaDetailGigabytesGPSSD:
         预留属性。
 
         :param allocated: The allocated of this QuotaDetailGigabytesGPSSD.
-        :type: int
+        :type: str
         """
         self._allocated = allocated
 

@@ -9,7 +9,7 @@ import six
 from huaweicloudsdkcore.sdk_response import SdkResponse
 
 
-class ListSlowLogsResponse(SdkResponse):
+class DownloadSlowlogResponse(SdkResponse):
 
 
     """
@@ -23,69 +23,96 @@ class ListSlowLogsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'slow_log_list': 'list[SlowlogResult]',
+        'list': 'list[DownloadSlowlogResult]',
+        'status': 'str',
         'total_record': 'str'
     }
 
     attribute_map = {
-        'slow_log_list': 'slow_log_list',
+        'list': 'list',
+        'status': 'status',
         'total_record': 'total_record'
     }
 
-    def __init__(self, slow_log_list=None, total_record=None):
-        """ListSlowLogsResponse - a model defined in huaweicloud sdk"""
+    def __init__(self, list=None, status=None, total_record=None):
+        """DownloadSlowlogResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._slow_log_list = None
+        self._list = None
+        self._status = None
         self._total_record = None
         self.discriminator = None
 
-        if slow_log_list is not None:
-            self.slow_log_list = slow_log_list
+        if list is not None:
+            self.list = list
+        if status is not None:
+            self.status = status
         if total_record is not None:
             self.total_record = total_record
 
     @property
-    def slow_log_list(self):
-        """Gets the slow_log_list of this ListSlowLogsResponse.
+    def list(self):
+        """Gets the list of this DownloadSlowlogResponse.
 
         具体信息。
 
-        :return: The slow_log_list of this ListSlowLogsResponse.
-        :rtype: list[SlowlogResult]
+        :return: The list of this DownloadSlowlogResponse.
+        :rtype: list[DownloadSlowlogResult]
         """
-        return self._slow_log_list
+        return self._list
 
-    @slow_log_list.setter
-    def slow_log_list(self, slow_log_list):
-        """Sets the slow_log_list of this ListSlowLogsResponse.
+    @list.setter
+    def list(self, list):
+        """Sets the list of this DownloadSlowlogResponse.
 
         具体信息。
 
-        :param slow_log_list: The slow_log_list of this ListSlowLogsResponse.
-        :type: list[SlowlogResult]
+        :param list: The list of this DownloadSlowlogResponse.
+        :type: list[DownloadSlowlogResult]
         """
-        self._slow_log_list = slow_log_list
+        self._list = list
+
+    @property
+    def status(self):
+        """Gets the status of this DownloadSlowlogResponse.
+
+        查询状态。
+
+        :return: The status of this DownloadSlowlogResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this DownloadSlowlogResponse.
+
+        查询状态。
+
+        :param status: The status of this DownloadSlowlogResponse.
+        :type: str
+        """
+        self._status = status
 
     @property
     def total_record(self):
-        """Gets the total_record of this ListSlowLogsResponse.
+        """Gets the total_record of this DownloadSlowlogResponse.
 
-        数据库版本总记录数。
+        总记录数。
 
-        :return: The total_record of this ListSlowLogsResponse.
+        :return: The total_record of this DownloadSlowlogResponse.
         :rtype: str
         """
         return self._total_record
 
     @total_record.setter
     def total_record(self, total_record):
-        """Sets the total_record of this ListSlowLogsResponse.
+        """Sets the total_record of this DownloadSlowlogResponse.
 
-        数据库版本总记录数。
+        总记录数。
 
-        :param total_record: The total_record of this ListSlowLogsResponse.
+        :param total_record: The total_record of this DownloadSlowlogResponse.
         :type: str
         """
         self._total_record = total_record
@@ -127,7 +154,7 @@ class ListSlowLogsResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListSlowLogsResponse):
+        if not isinstance(other, DownloadSlowlogResponse):
             return False
 
         return self.__dict__ == other.__dict__

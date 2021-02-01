@@ -25,7 +25,7 @@ class CreateDatabaseRoleRequestBody:
     openapi_types = {
         'role_name': 'str',
         'db_name': 'str',
-        'roles': 'list[RolesOption]'
+        'roles': 'RolesOption'
     }
 
     attribute_map = {
@@ -98,10 +98,9 @@ class CreateDatabaseRoleRequestBody:
     def roles(self):
         """Gets the roles of this CreateDatabaseRoleRequestBody.
 
-        新用户所拥有的角色。
 
         :return: The roles of this CreateDatabaseRoleRequestBody.
-        :rtype: list[RolesOption]
+        :rtype: RolesOption
         """
         return self._roles
 
@@ -109,10 +108,9 @@ class CreateDatabaseRoleRequestBody:
     def roles(self, roles):
         """Sets the roles of this CreateDatabaseRoleRequestBody.
 
-        新用户所拥有的角色。
 
         :param roles: The roles of this CreateDatabaseRoleRequestBody.
-        :type: list[RolesOption]
+        :type: RolesOption
         """
         self._roles = roles
 

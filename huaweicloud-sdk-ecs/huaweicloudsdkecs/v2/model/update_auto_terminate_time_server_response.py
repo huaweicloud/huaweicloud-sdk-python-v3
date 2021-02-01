@@ -6,10 +6,10 @@ import re
 import six
 
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 
 
-
-class AddShardingNodeVolumeOption:
+class UpdateAutoTerminateTimeServerResponse(SdkResponse):
 
 
     """
@@ -23,44 +23,16 @@ class AddShardingNodeVolumeOption:
     sensitive_list = []
 
     openapi_types = {
-        'size': 'int'
     }
 
     attribute_map = {
-        'size': 'size'
     }
 
-    def __init__(self, size=None):
-        """AddShardingNodeVolumeOption - a model defined in huaweicloud sdk"""
+    def __init__(self):
+        """UpdateAutoTerminateTimeServerResponse - a model defined in huaweicloud sdk"""
         
-        
-
-        self._size = None
+        super().__init__()
         self.discriminator = None
-
-        self.size = size
-
-    @property
-    def size(self):
-        """Gets the size of this AddShardingNodeVolumeOption.
-
-        指定新增的所有shard组的磁盘容量。取值范围：10GB~2000GB。
-
-        :return: The size of this AddShardingNodeVolumeOption.
-        :rtype: int
-        """
-        return self._size
-
-    @size.setter
-    def size(self, size):
-        """Sets the size of this AddShardingNodeVolumeOption.
-
-        指定新增的所有shard组的磁盘容量。取值范围：10GB~2000GB。
-
-        :param size: The size of this AddShardingNodeVolumeOption.
-        :type: int
-        """
-        self._size = size
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -99,7 +71,7 @@ class AddShardingNodeVolumeOption:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AddShardingNodeVolumeOption):
+        if not isinstance(other, UpdateAutoTerminateTimeServerResponse):
             return False
 
         return self.__dict__ == other.__dict__

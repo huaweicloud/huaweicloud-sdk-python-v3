@@ -26,7 +26,7 @@ class QuotaDetailSnapshotsSAS:
         'in_use': 'int',
         'limit': 'int',
         'reserved': 'int',
-        'allocated': 'int'
+        'allocated': 'str'
     }
 
     attribute_map = {
@@ -125,7 +125,7 @@ class QuotaDetailSnapshotsSAS:
         预留属性。
 
         :return: The allocated of this QuotaDetailSnapshotsSAS.
-        :rtype: int
+        :rtype: str
         """
         return self._allocated
 
@@ -136,7 +136,7 @@ class QuotaDetailSnapshotsSAS:
         预留属性。
 
         :param allocated: The allocated of this QuotaDetailSnapshotsSAS.
-        :type: int
+        :type: str
         """
         self._allocated = allocated
 
