@@ -23,7 +23,7 @@ class RecognizeVINResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'VINResponseBodyItem'
+        'result': 'VINResult'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeVINResponse(SdkResponse):
 
 
         :return: The result of this RecognizeVINResponse.
-        :rtype: VINResponseBodyItem
+        :rtype: VINResult
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeVINResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeVINResponse.
-        :type: VINResponseBodyItem
+        :type: VINResult
         """
         self._result = result
 

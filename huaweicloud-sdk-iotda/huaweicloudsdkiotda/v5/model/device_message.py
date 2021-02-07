@@ -25,7 +25,9 @@ class DeviceMessage:
     openapi_types = {
         'message_id': 'str',
         'name': 'str',
-        'message': 'str',
+        'message': 'object',
+        'encoding': 'str',
+        'payload_format': 'str',
         'topic': 'str',
         'status': 'str',
         'created_time': 'str',
@@ -36,13 +38,15 @@ class DeviceMessage:
         'message_id': 'message_id',
         'name': 'name',
         'message': 'message',
+        'encoding': 'encoding',
+        'payload_format': 'payload_format',
         'topic': 'topic',
         'status': 'status',
         'created_time': 'created_time',
         'finished_time': 'finished_time'
     }
 
-    def __init__(self, message_id=None, name=None, message=None, topic=None, status=None, created_time=None, finished_time=None):
+    def __init__(self, message_id=None, name=None, message=None, encoding=None, payload_format=None, topic=None, status=None, created_time=None, finished_time=None):
         """DeviceMessage - a model defined in huaweicloud sdk"""
         
         
@@ -50,6 +54,8 @@ class DeviceMessage:
         self._message_id = None
         self._name = None
         self._message = None
+        self._encoding = None
+        self._payload_format = None
         self._topic = None
         self._status = None
         self._created_time = None
@@ -62,6 +68,10 @@ class DeviceMessage:
             self.name = name
         if message is not None:
             self.message = message
+        if encoding is not None:
+            self.encoding = encoding
+        if payload_format is not None:
+            self.payload_format = payload_format
         if topic is not None:
             self.topic = topic
         if status is not None:
@@ -119,10 +129,10 @@ class DeviceMessage:
     def message(self):
         """Gets the message of this DeviceMessage.
 
-        消息内容
+        消息内容。 
 
         :return: The message of this DeviceMessage.
-        :rtype: str
+        :rtype: object
         """
         return self._message
 
@@ -130,12 +140,56 @@ class DeviceMessage:
     def message(self, message):
         """Sets the message of this DeviceMessage.
 
-        消息内容
+        消息内容。 
 
         :param message: The message of this DeviceMessage.
-        :type: str
+        :type: object
         """
         self._message = message
+
+    @property
+    def encoding(self):
+        """Gets the encoding of this DeviceMessage.
+
+        消息内容编码格式，取值范围none|base64,默认值none, base64格式仅支持透传。 
+
+        :return: The encoding of this DeviceMessage.
+        :rtype: str
+        """
+        return self._encoding
+
+    @encoding.setter
+    def encoding(self, encoding):
+        """Sets the encoding of this DeviceMessage.
+
+        消息内容编码格式，取值范围none|base64,默认值none, base64格式仅支持透传。 
+
+        :param encoding: The encoding of this DeviceMessage.
+        :type: str
+        """
+        self._encoding = encoding
+
+    @property
+    def payload_format(self):
+        """Gets the payload_format of this DeviceMessage.
+
+        有效负载格式，在消息内容编码格式为none时有效，取值范围standard|raw，默认值standard（平台封装的标准格式），取值为raw时直接将消息内容作为有效负载下发。 
+
+        :return: The payload_format of this DeviceMessage.
+        :rtype: str
+        """
+        return self._payload_format
+
+    @payload_format.setter
+    def payload_format(self, payload_format):
+        """Sets the payload_format of this DeviceMessage.
+
+        有效负载格式，在消息内容编码格式为none时有效，取值范围standard|raw，默认值standard（平台封装的标准格式），取值为raw时直接将消息内容作为有效负载下发。 
+
+        :param payload_format: The payload_format of this DeviceMessage.
+        :type: str
+        """
+        self._payload_format = payload_format
 
     @property
     def topic(self):

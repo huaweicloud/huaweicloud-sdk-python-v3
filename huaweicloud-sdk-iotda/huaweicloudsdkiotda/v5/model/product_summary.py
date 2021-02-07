@@ -205,7 +205,7 @@ class ProductSummary:
     def protocol_type(self):
         """Gets the protocol_type of this ProductSummary.
 
-        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF。
+        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA。
 
         :return: The protocol_type of this ProductSummary.
         :rtype: str
@@ -216,7 +216,7 @@ class ProductSummary:
     def protocol_type(self, protocol_type):
         """Sets the protocol_type of this ProductSummary.
 
-        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF。
+        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA。
 
         :param protocol_type: The protocol_type of this ProductSummary.
         :type: str

@@ -23,6 +23,7 @@ class UpdateProduct:
     sensitive_list = []
 
     openapi_types = {
+        'service_capabilities': 'list[ServiceCapability]',
         'app_id': 'str',
         'name': 'str',
         'device_type': 'str',
@@ -30,11 +31,11 @@ class UpdateProduct:
         'data_format': 'str',
         'manufacturer_name': 'str',
         'industry': 'str',
-        'description': 'str',
-        'service_capabilities': 'list[ServiceCapability]'
+        'description': 'str'
     }
 
     attribute_map = {
+        'service_capabilities': 'service_capabilities',
         'app_id': 'app_id',
         'name': 'name',
         'device_type': 'device_type',
@@ -42,15 +43,15 @@ class UpdateProduct:
         'data_format': 'data_format',
         'manufacturer_name': 'manufacturer_name',
         'industry': 'industry',
-        'description': 'description',
-        'service_capabilities': 'service_capabilities'
+        'description': 'description'
     }
 
-    def __init__(self, app_id=None, name=None, device_type=None, protocol_type=None, data_format=None, manufacturer_name=None, industry=None, description=None, service_capabilities=None):
+    def __init__(self, service_capabilities=None, app_id=None, name=None, device_type=None, protocol_type=None, data_format=None, manufacturer_name=None, industry=None, description=None):
         """UpdateProduct - a model defined in huaweicloud sdk"""
         
         
 
+        self._service_capabilities = None
         self._app_id = None
         self._name = None
         self._device_type = None
@@ -59,9 +60,10 @@ class UpdateProduct:
         self._manufacturer_name = None
         self._industry = None
         self._description = None
-        self._service_capabilities = None
         self.discriminator = None
 
+        if service_capabilities is not None:
+            self.service_capabilities = service_capabilities
         if app_id is not None:
             self.app_id = app_id
         if name is not None:
@@ -78,8 +80,28 @@ class UpdateProduct:
             self.industry = industry
         if description is not None:
             self.description = description
-        if service_capabilities is not None:
-            self.service_capabilities = service_capabilities
+
+    @property
+    def service_capabilities(self):
+        """Gets the service_capabilities of this UpdateProduct.
+
+        设备的服务能力列表。
+
+        :return: The service_capabilities of this UpdateProduct.
+        :rtype: list[ServiceCapability]
+        """
+        return self._service_capabilities
+
+    @service_capabilities.setter
+    def service_capabilities(self, service_capabilities):
+        """Sets the service_capabilities of this UpdateProduct.
+
+        设备的服务能力列表。
+
+        :param service_capabilities: The service_capabilities of this UpdateProduct.
+        :type: list[ServiceCapability]
+        """
+        self._service_capabilities = service_capabilities
 
     @property
     def app_id(self):
@@ -151,7 +173,7 @@ class UpdateProduct:
     def protocol_type(self):
         """Gets the protocol_type of this UpdateProduct.
 
-        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF。
+        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA。
 
         :return: The protocol_type of this UpdateProduct.
         :rtype: str
@@ -162,7 +184,7 @@ class UpdateProduct:
     def protocol_type(self, protocol_type):
         """Sets the protocol_type of this UpdateProduct.
 
-        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF。
+        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA。
 
         :param protocol_type: The protocol_type of this UpdateProduct.
         :type: str
@@ -256,28 +278,6 @@ class UpdateProduct:
         :type: str
         """
         self._description = description
-
-    @property
-    def service_capabilities(self):
-        """Gets the service_capabilities of this UpdateProduct.
-
-        设备的服务能力列表。
-
-        :return: The service_capabilities of this UpdateProduct.
-        :rtype: list[ServiceCapability]
-        """
-        return self._service_capabilities
-
-    @service_capabilities.setter
-    def service_capabilities(self, service_capabilities):
-        """Sets the service_capabilities of this UpdateProduct.
-
-        设备的服务能力列表。
-
-        :param service_capabilities: The service_capabilities of this UpdateProduct.
-        :type: list[ServiceCapability]
-        """
-        self._service_capabilities = service_capabilities
 
     def to_dict(self):
         """Returns the model properties as a dict"""

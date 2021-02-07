@@ -26,22 +26,25 @@ class CreateRuleActionRequest:
     openapi_types = {
         'stage_auth_token': 'str',
         'instance_id': 'str',
+        'x_lb_service': 'str',
         'body': 'AddActionReq'
     }
 
     attribute_map = {
         'stage_auth_token': 'Stage-Auth-Token',
         'instance_id': 'Instance-Id',
+        'x_lb_service': 'x-LB-Service',
         'body': 'body'
     }
 
-    def __init__(self, stage_auth_token=None, instance_id=None, body=None):
+    def __init__(self, stage_auth_token=None, instance_id=None, x_lb_service='L7Adapt4Out', body=None):
         """CreateRuleActionRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._stage_auth_token = None
         self._instance_id = None
+        self._x_lb_service = None
         self._body = None
         self.discriminator = None
 
@@ -49,6 +52,8 @@ class CreateRuleActionRequest:
             self.stage_auth_token = stage_auth_token
         if instance_id is not None:
             self.instance_id = instance_id
+        if x_lb_service is not None:
+            self.x_lb_service = x_lb_service
         if body is not None:
             self.body = body
 
@@ -91,6 +96,26 @@ class CreateRuleActionRequest:
         :type: str
         """
         self._instance_id = instance_id
+
+    @property
+    def x_lb_service(self):
+        """Gets the x_lb_service of this CreateRuleActionRequest.
+
+
+        :return: The x_lb_service of this CreateRuleActionRequest.
+        :rtype: str
+        """
+        return self._x_lb_service
+
+    @x_lb_service.setter
+    def x_lb_service(self, x_lb_service):
+        """Sets the x_lb_service of this CreateRuleActionRequest.
+
+
+        :param x_lb_service: The x_lb_service of this CreateRuleActionRequest.
+        :type: str
+        """
+        self._x_lb_service = x_lb_service
 
     @property
     def body(self):

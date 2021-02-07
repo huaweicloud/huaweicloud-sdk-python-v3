@@ -24,33 +24,38 @@ class UpdateActionReq:
 
     openapi_types = {
         'channel': 'str',
-        'channel_detail': 'ChannelDetail'
+        'channel_detail': 'ChannelDetail',
+        'batch': 'bool'
     }
 
     attribute_map = {
         'channel': 'channel',
-        'channel_detail': 'channel_detail'
+        'channel_detail': 'channel_detail',
+        'batch': 'batch'
     }
 
-    def __init__(self, channel=None, channel_detail=None):
+    def __init__(self, channel=None, channel_detail=None, batch=None):
         """UpdateActionReq - a model defined in huaweicloud sdk"""
         
         
 
         self._channel = None
         self._channel_detail = None
+        self._batch = None
         self.discriminator = None
 
         if channel is not None:
             self.channel = channel
         if channel_detail is not None:
             self.channel_detail = channel_detail
+        if batch is not None:
+            self.batch = batch
 
     @property
     def channel(self):
         """Gets the channel of this UpdateActionReq.
 
-        规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 
+        规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。 
 
         :return: The channel of this UpdateActionReq.
         :rtype: str
@@ -61,7 +66,7 @@ class UpdateActionReq:
     def channel(self, channel):
         """Sets the channel of this UpdateActionReq.
 
-        规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 
+        规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。 
 
         :param channel: The channel of this UpdateActionReq.
         :type: str
@@ -87,6 +92,28 @@ class UpdateActionReq:
         :type: ChannelDetail
         """
         self._channel_detail = channel_detail
+
+    @property
+    def batch(self):
+        """Gets the batch of this UpdateActionReq.
+
+        是否支持批量接收推送消息。
+
+        :return: The batch of this UpdateActionReq.
+        :rtype: bool
+        """
+        return self._batch
+
+    @batch.setter
+    def batch(self, batch):
+        """Sets the batch of this UpdateActionReq.
+
+        是否支持批量接收推送消息。
+
+        :param batch: The batch of this UpdateActionReq.
+        :type: bool
+        """
+        self._batch = batch
 
     def to_dict(self):
         """Returns the model properties as a dict"""

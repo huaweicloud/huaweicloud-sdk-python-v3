@@ -21,8 +21,12 @@ class ShowBatchTaskRequest:
     """
 
     sensitive_list = []
+    sensitive_list.append('sp_auth_token')
+    sensitive_list.append('stage_auth_token')
 
     openapi_types = {
+        'sp_auth_token': 'str',
+        'stage_auth_token': 'str',
         'instance_id': 'str',
         'task_id': 'str',
         'limit': 'int',
@@ -31,6 +35,8 @@ class ShowBatchTaskRequest:
     }
 
     attribute_map = {
+        'sp_auth_token': 'Sp-Auth-Token',
+        'stage_auth_token': 'Stage-Auth-Token',
         'instance_id': 'Instance-Id',
         'task_id': 'task_id',
         'limit': 'limit',
@@ -38,11 +44,13 @@ class ShowBatchTaskRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None, task_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):
+    def __init__(self, sp_auth_token=None, stage_auth_token=None, instance_id=None, task_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):
         """ShowBatchTaskRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._sp_auth_token = None
+        self._stage_auth_token = None
         self._instance_id = None
         self._task_id = None
         self._limit = None
@@ -50,6 +58,10 @@ class ShowBatchTaskRequest:
         self._offset = None
         self.discriminator = None
 
+        if sp_auth_token is not None:
+            self.sp_auth_token = sp_auth_token
+        if stage_auth_token is not None:
+            self.stage_auth_token = stage_auth_token
         if instance_id is not None:
             self.instance_id = instance_id
         self.task_id = task_id
@@ -59,6 +71,46 @@ class ShowBatchTaskRequest:
             self.marker = marker
         if offset is not None:
             self.offset = offset
+
+    @property
+    def sp_auth_token(self):
+        """Gets the sp_auth_token of this ShowBatchTaskRequest.
+
+
+        :return: The sp_auth_token of this ShowBatchTaskRequest.
+        :rtype: str
+        """
+        return self._sp_auth_token
+
+    @sp_auth_token.setter
+    def sp_auth_token(self, sp_auth_token):
+        """Sets the sp_auth_token of this ShowBatchTaskRequest.
+
+
+        :param sp_auth_token: The sp_auth_token of this ShowBatchTaskRequest.
+        :type: str
+        """
+        self._sp_auth_token = sp_auth_token
+
+    @property
+    def stage_auth_token(self):
+        """Gets the stage_auth_token of this ShowBatchTaskRequest.
+
+
+        :return: The stage_auth_token of this ShowBatchTaskRequest.
+        :rtype: str
+        """
+        return self._stage_auth_token
+
+    @stage_auth_token.setter
+    def stage_auth_token(self, stage_auth_token):
+        """Sets the stage_auth_token of this ShowBatchTaskRequest.
+
+
+        :param stage_auth_token: The stage_auth_token of this ShowBatchTaskRequest.
+        :type: str
+        """
+        self._stage_auth_token = stage_auth_token
 
     @property
     def instance_id(self):

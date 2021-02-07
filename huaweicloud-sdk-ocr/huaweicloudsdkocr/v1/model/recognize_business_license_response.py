@@ -23,7 +23,7 @@ class RecognizeBusinessLicenseResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'BusinessLicenseResultBody'
+        'result': 'BusinessLicenseResult'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeBusinessLicenseResponse(SdkResponse):
 
 
         :return: The result of this RecognizeBusinessLicenseResponse.
-        :rtype: BusinessLicenseResultBody
+        :rtype: BusinessLicenseResult
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeBusinessLicenseResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeBusinessLicenseResponse.
-        :type: BusinessLicenseResultBody
+        :type: BusinessLicenseResult
         """
         self._result = result
 

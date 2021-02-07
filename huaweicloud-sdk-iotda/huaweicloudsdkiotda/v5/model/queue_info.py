@@ -44,7 +44,7 @@ class QueueInfo:
     def queue_name(self):
         """Gets the queue_name of this QueueInfo.
 
-        队列名称，同一租户不允许生重复。
+        队列名称，同一租户不允许重复。
 
         :return: The queue_name of this QueueInfo.
         :rtype: str
@@ -55,7 +55,7 @@ class QueueInfo:
     def queue_name(self, queue_name):
         """Sets the queue_name of this QueueInfo.
 
-        队列名称，同一租户不允许生重复。
+        队列名称，同一租户不允许重复。
 
         :param queue_name: The queue_name of this QueueInfo.
         :type: str

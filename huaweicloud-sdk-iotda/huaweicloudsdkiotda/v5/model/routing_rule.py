@@ -171,7 +171,7 @@ class RoutingRule:
     def app_type(self):
         """Gets the app_type of this RoutingRule.
 
-        租户规则的生效范围，默认GLOBAL，取值如下： - GLOBAL：生效范围为租户级 - APP：生效范围为资源空间级。 
+        租户规则的生效范围，取值如下： - GLOBAL：生效范围为租户级 - APP：生效范围为资源空间级。 
 
         :return: The app_type of this RoutingRule.
         :rtype: str
@@ -182,7 +182,7 @@ class RoutingRule:
     def app_type(self, app_type):
         """Sets the app_type of this RoutingRule.
 
-        租户规则的生效范围，默认GLOBAL，取值如下： - GLOBAL：生效范围为租户级 - APP：生效范围为资源空间级。 
+        租户规则的生效范围，取值如下： - GLOBAL：生效范围为租户级 - APP：生效范围为资源空间级。 
 
         :param app_type: The app_type of this RoutingRule.
         :type: str

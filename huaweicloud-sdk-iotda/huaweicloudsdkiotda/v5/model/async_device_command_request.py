@@ -63,7 +63,7 @@ class AsyncDeviceCommandRequest:
     def service_id(self):
         """Gets the service_id of this AsyncDeviceCommandRequest.
 
-        设备命令所属的设备服务ID，在设备关联的产品模型中定义。
+        设备命令所属的设备服务ID，在设备关联的产品模型中定义。如设备需要编解码插件来解析命令，此参数为必填项。
 
         :return: The service_id of this AsyncDeviceCommandRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class AsyncDeviceCommandRequest:
     def service_id(self, service_id):
         """Sets the service_id of this AsyncDeviceCommandRequest.
 
-        设备命令所属的设备服务ID，在设备关联的产品模型中定义。
+        设备命令所属的设备服务ID，在设备关联的产品模型中定义。如设备需要编解码插件来解析命令，此参数为必填项。
 
         :param service_id: The service_id of this AsyncDeviceCommandRequest.
         :type: str
@@ -85,7 +85,7 @@ class AsyncDeviceCommandRequest:
     def command_name(self):
         """Gets the command_name of this AsyncDeviceCommandRequest.
 
-        设备命令名称，在设备关联的产品模型中定义。
+        设备命令名称，在设备关联的产品模型中定义。如设备需要编解码插件来解析命令，此参数为必填项。
 
         :return: The command_name of this AsyncDeviceCommandRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class AsyncDeviceCommandRequest:
     def command_name(self, command_name):
         """Sets the command_name of this AsyncDeviceCommandRequest.
 
-        设备命令名称，在设备关联的产品模型中定义。
+        设备命令名称，在设备关联的产品模型中定义。如设备需要编解码插件来解析命令，此参数为必填项。
 
         :param command_name: The command_name of this AsyncDeviceCommandRequest.
         :type: str
@@ -151,7 +151,7 @@ class AsyncDeviceCommandRequest:
     def send_strategy(self):
         """Gets the send_strategy of this AsyncDeviceCommandRequest.
 
-        下发策略， immediately表示立即下发，此时expire_time无效；delay表示缓存起来，等数据上报或者设备上线之后下发，默认缓存下发。
+        下发策略， immediately表示立即下发，此时expire_time无效；delay表示缓存下发，等数据上报或者设备上线之后下发，默认缓存下发。delay策略下，expire_time为0或空时，命令会默认缓存24小时。
 
         :return: The send_strategy of this AsyncDeviceCommandRequest.
         :rtype: str
@@ -162,7 +162,7 @@ class AsyncDeviceCommandRequest:
     def send_strategy(self, send_strategy):
         """Sets the send_strategy of this AsyncDeviceCommandRequest.
 
-        下发策略， immediately表示立即下发，此时expire_time无效；delay表示缓存起来，等数据上报或者设备上线之后下发，默认缓存下发。
+        下发策略， immediately表示立即下发，此时expire_time无效；delay表示缓存下发，等数据上报或者设备上线之后下发，默认缓存下发。delay策略下，expire_time为0或空时，命令会默认缓存24小时。
 
         :param send_strategy: The send_strategy of this AsyncDeviceCommandRequest.
         :type: str

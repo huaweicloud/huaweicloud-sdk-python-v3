@@ -21,30 +21,36 @@ class ShowDeviceMessageRequest:
     """
 
     sensitive_list = []
+    sensitive_list.append('stage_auth_token')
 
     openapi_types = {
         'device_id': 'str',
+        'stage_auth_token': 'str',
         'instance_id': 'str',
         'message_id': 'str'
     }
 
     attribute_map = {
         'device_id': 'device_id',
+        'stage_auth_token': 'Stage-Auth-Token',
         'instance_id': 'Instance-Id',
         'message_id': 'message_id'
     }
 
-    def __init__(self, device_id=None, instance_id=None, message_id=None):
+    def __init__(self, device_id=None, stage_auth_token=None, instance_id=None, message_id=None):
         """ShowDeviceMessageRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._device_id = None
+        self._stage_auth_token = None
         self._instance_id = None
         self._message_id = None
         self.discriminator = None
 
         self.device_id = device_id
+        if stage_auth_token is not None:
+            self.stage_auth_token = stage_auth_token
         if instance_id is not None:
             self.instance_id = instance_id
         self.message_id = message_id
@@ -68,6 +74,26 @@ class ShowDeviceMessageRequest:
         :type: str
         """
         self._device_id = device_id
+
+    @property
+    def stage_auth_token(self):
+        """Gets the stage_auth_token of this ShowDeviceMessageRequest.
+
+
+        :return: The stage_auth_token of this ShowDeviceMessageRequest.
+        :rtype: str
+        """
+        return self._stage_auth_token
+
+    @stage_auth_token.setter
+    def stage_auth_token(self, stage_auth_token):
+        """Sets the stage_auth_token of this ShowDeviceMessageRequest.
+
+
+        :param stage_auth_token: The stage_auth_token of this ShowDeviceMessageRequest.
+        :type: str
+        """
+        self._stage_auth_token = stage_auth_token
 
     @property
     def instance_id(self):

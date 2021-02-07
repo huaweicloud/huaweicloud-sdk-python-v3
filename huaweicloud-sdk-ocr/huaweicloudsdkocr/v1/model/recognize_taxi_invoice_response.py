@@ -23,7 +23,7 @@ class RecognizeTaxiInvoiceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'TaxiInvoiceResultBody'
+        'result': 'TaxiInvoiceResult'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeTaxiInvoiceResponse(SdkResponse):
 
 
         :return: The result of this RecognizeTaxiInvoiceResponse.
-        :rtype: TaxiInvoiceResultBody
+        :rtype: TaxiInvoiceResult
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeTaxiInvoiceResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeTaxiInvoiceResponse.
-        :type: TaxiInvoiceResultBody
+        :type: TaxiInvoiceResult
         """
         self._result = result
 

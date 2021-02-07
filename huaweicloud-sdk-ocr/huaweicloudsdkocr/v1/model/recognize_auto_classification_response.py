@@ -23,7 +23,7 @@ class RecognizeAutoClassificationResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'AutoClassificationResponseBodyItem'
+        'result': 'AutoClassificationResult'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeAutoClassificationResponse(SdkResponse):
 
 
         :return: The result of this RecognizeAutoClassificationResponse.
-        :rtype: AutoClassificationResponseBodyItem
+        :rtype: AutoClassificationResult
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeAutoClassificationResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeAutoClassificationResponse.
-        :type: AutoClassificationResponseBodyItem
+        :type: AutoClassificationResult
         """
         self._result = result
 

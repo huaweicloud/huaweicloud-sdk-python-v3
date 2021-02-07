@@ -23,7 +23,7 @@ class RecognizeVehicleLicenseResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'RecognizeVehicleLicenseResultResponse'
+        'result': 'VehicleLicenseResult'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeVehicleLicenseResponse(SdkResponse):
 
 
         :return: The result of this RecognizeVehicleLicenseResponse.
-        :rtype: RecognizeVehicleLicenseResultResponse
+        :rtype: VehicleLicenseResult
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeVehicleLicenseResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeVehicleLicenseResponse.
-        :type: RecognizeVehicleLicenseResultResponse
+        :type: VehicleLicenseResult
         """
         self._result = result
 

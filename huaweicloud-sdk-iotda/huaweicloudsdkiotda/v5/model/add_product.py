@@ -28,10 +28,10 @@ class AddProduct:
         'device_type': 'str',
         'protocol_type': 'str',
         'data_format': 'str',
+        'service_capabilities': 'list[ServiceCapability]',
         'manufacturer_name': 'str',
         'industry': 'str',
         'description': 'str',
-        'service_capabilities': 'list[ServiceCapability]',
         'app_id': 'str'
     }
 
@@ -41,14 +41,14 @@ class AddProduct:
         'device_type': 'device_type',
         'protocol_type': 'protocol_type',
         'data_format': 'data_format',
+        'service_capabilities': 'service_capabilities',
         'manufacturer_name': 'manufacturer_name',
         'industry': 'industry',
         'description': 'description',
-        'service_capabilities': 'service_capabilities',
         'app_id': 'app_id'
     }
 
-    def __init__(self, product_id=None, name=None, device_type=None, protocol_type=None, data_format=None, manufacturer_name=None, industry=None, description=None, service_capabilities=None, app_id=None):
+    def __init__(self, product_id=None, name=None, device_type=None, protocol_type=None, data_format='json', service_capabilities=None, manufacturer_name=None, industry=None, description=None, app_id=None):
         """AddProduct - a model defined in huaweicloud sdk"""
         
         
@@ -58,10 +58,10 @@ class AddProduct:
         self._device_type = None
         self._protocol_type = None
         self._data_format = None
+        self._service_capabilities = None
         self._manufacturer_name = None
         self._industry = None
         self._description = None
-        self._service_capabilities = None
         self._app_id = None
         self.discriminator = None
 
@@ -71,13 +71,13 @@ class AddProduct:
         self.device_type = device_type
         self.protocol_type = protocol_type
         self.data_format = data_format
+        self.service_capabilities = service_capabilities
         if manufacturer_name is not None:
             self.manufacturer_name = manufacturer_name
         if industry is not None:
             self.industry = industry
         if description is not None:
             self.description = description
-        self.service_capabilities = service_capabilities
         if app_id is not None:
             self.app_id = app_id
 
@@ -151,7 +151,7 @@ class AddProduct:
     def protocol_type(self):
         """Gets the protocol_type of this AddProduct.
 
-        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF。
+        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA。
 
         :return: The protocol_type of this AddProduct.
         :rtype: str
@@ -162,7 +162,7 @@ class AddProduct:
     def protocol_type(self, protocol_type):
         """Sets the protocol_type of this AddProduct.
 
-        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF。
+        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA。
 
         :param protocol_type: The protocol_type of this AddProduct.
         :type: str
@@ -173,7 +173,7 @@ class AddProduct:
     def data_format(self):
         """Gets the data_format of this AddProduct.
 
-        设备上报数据的格式，取值范围：json，binary。
+        设备上报数据的格式，取值范围：json，binary。默认值json。
 
         :return: The data_format of this AddProduct.
         :rtype: str
@@ -184,12 +184,34 @@ class AddProduct:
     def data_format(self, data_format):
         """Sets the data_format of this AddProduct.
 
-        设备上报数据的格式，取值范围：json，binary。
+        设备上报数据的格式，取值范围：json，binary。默认值json。
 
         :param data_format: The data_format of this AddProduct.
         :type: str
         """
         self._data_format = data_format
+
+    @property
+    def service_capabilities(self):
+        """Gets the service_capabilities of this AddProduct.
+
+        设备的服务能力列表。
+
+        :return: The service_capabilities of this AddProduct.
+        :rtype: list[ServiceCapability]
+        """
+        return self._service_capabilities
+
+    @service_capabilities.setter
+    def service_capabilities(self, service_capabilities):
+        """Sets the service_capabilities of this AddProduct.
+
+        设备的服务能力列表。
+
+        :param service_capabilities: The service_capabilities of this AddProduct.
+        :type: list[ServiceCapability]
+        """
+        self._service_capabilities = service_capabilities
 
     @property
     def manufacturer_name(self):
@@ -256,28 +278,6 @@ class AddProduct:
         :type: str
         """
         self._description = description
-
-    @property
-    def service_capabilities(self):
-        """Gets the service_capabilities of this AddProduct.
-
-        设备的服务能力列表。
-
-        :return: The service_capabilities of this AddProduct.
-        :rtype: list[ServiceCapability]
-        """
-        return self._service_capabilities
-
-    @service_capabilities.setter
-    def service_capabilities(self, service_capabilities):
-        """Sets the service_capabilities of this AddProduct.
-
-        设备的服务能力列表。
-
-        :param service_capabilities: The service_capabilities of this AddProduct.
-        :type: list[ServiceCapability]
-        """
-        self._service_capabilities = service_capabilities
 
     @property
     def app_id(self):

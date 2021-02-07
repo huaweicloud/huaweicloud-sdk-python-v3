@@ -23,7 +23,7 @@ class RecognizeTollInvoiceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'TollInvoiceResultBody'
+        'result': 'TollInvoiceResult'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeTollInvoiceResponse(SdkResponse):
 
 
         :return: The result of this RecognizeTollInvoiceResponse.
-        :rtype: TollInvoiceResultBody
+        :rtype: TollInvoiceResult
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeTollInvoiceResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeTollInvoiceResponse.
-        :type: TollInvoiceResultBody
+        :type: TollInvoiceResult
         """
         self._result = result
 

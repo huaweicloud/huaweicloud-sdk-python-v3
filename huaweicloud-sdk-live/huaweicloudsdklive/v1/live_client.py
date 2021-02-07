@@ -48,6 +48,134 @@ class LiveClient(Client):
 
         return ClientBuilder(clazz)
 
+    def create_domain(self, request):
+        """创建直播域名
+
+        可单独创建直播播放域名或推流域名，每个租户最多可配置64条域名记录。 
+
+        :param CreateDomainRequest request
+        :return: CreateDomainResponse
+        """
+        return self.create_domain_with_http_info(request)
+
+    def create_domain_with_http_info(self, request):
+        """创建直播域名
+
+        可单独创建直播播放域名或推流域名，每个租户最多可配置64条域名记录。 
+
+        :param CreateDomainRequest request
+        :return: CreateDomainResponse
+        """
+
+        all_params = ['create_domain_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/domain',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateDomainResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_domain_mapping(self, request):
+        """域名映射
+
+        将用户已创建的播放域名和推流域名建立域名映射关系
+
+        :param CreateDomainMappingRequest request
+        :return: CreateDomainMappingResponse
+        """
+        return self.create_domain_mapping_with_http_info(request)
+
+    def create_domain_mapping_with_http_info(self, request):
+        """域名映射
+
+        将用户已创建的播放域名和推流域名建立域名映射关系
+
+        :param CreateDomainMappingRequest request
+        :return: CreateDomainMappingResponse
+        """
+
+        all_params = ['create_domain_mapping_request_body', 'specify_project']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'specify_project' in local_var_params:
+            query_params.append(('specify_project', local_var_params['specify_project']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/domains_mapping',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateDomainMappingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_record_config(self, request):
         """创建录制配置
 
@@ -233,6 +361,136 @@ class LiveClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateTranscodingsTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_domain(self, request):
+        """删除直播域名
+
+        删除域名。只有在域名停用（off）状态时才能删除。
+
+        :param DeleteDomainRequest request
+        :return: DeleteDomainResponse
+        """
+        return self.delete_domain_with_http_info(request)
+
+    def delete_domain_with_http_info(self, request):
+        """删除直播域名
+
+        删除域名。只有在域名停用（off）状态时才能删除。
+
+        :param DeleteDomainRequest request
+        :return: DeleteDomainResponse
+        """
+
+        all_params = ['domain']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/domain',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteDomainResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_domain_mapping(self, request):
+        """删除直播域名映射关系
+
+        将播放域名和推流域名的域名映射关系删除
+
+        :param DeleteDomainMappingRequest request
+        :return: DeleteDomainMappingResponse
+        """
+        return self.delete_domain_mapping_with_http_info(request)
+
+    def delete_domain_mapping_with_http_info(self, request):
+        """删除直播域名映射关系
+
+        将播放域名和推流域名的域名映射关系删除
+
+        :param DeleteDomainMappingRequest request
+        :return: DeleteDomainMappingResponse
+        """
+
+        all_params = ['pull_domain', 'push_domain', 'specify_project']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'specify_project' in local_var_params:
+            query_params.append(('specify_project', local_var_params['specify_project']))
+        if 'pull_domain' in local_var_params:
+            query_params.append(('pull_domain', local_var_params['pull_domain']))
+        if 'push_domain' in local_var_params:
+            query_params.append(('push_domain', local_var_params['push_domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/domains_mapping',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteDomainMappingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -432,6 +690,73 @@ class LiveClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteTranscodingsTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_live_sample_logs(self, request):
+        """获取直播播放日志
+
+        获取直播播放日志，基于域名以5分钟粒度进行打包，日志内容以 \"|\" 进行分隔。 
+
+        :param ListLiveSampleLogsRequest request
+        :return: ListLiveSampleLogsResponse
+        """
+        return self.list_live_sample_logs_with_http_info(request)
+
+    def list_live_sample_logs_with_http_info(self, request):
+        """获取直播播放日志
+
+        获取直播播放日志，基于域名以5分钟粒度进行打包，日志内容以 \"|\" 进行分隔。 
+
+        :param ListLiveSampleLogsRequest request
+        :return: ListLiveSampleLogsResponse
+        """
+
+        all_params = ['play_domain', 'start_time', 'end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'play_domain' in local_var_params:
+            query_params.append(('play_domain', local_var_params['play_domain']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/logs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListLiveSampleLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -724,6 +1049,69 @@ class LiveClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_domain(self, request):
+        """查询直播域名
+
+        查询直播域名
+
+        :param ShowDomainRequest request
+        :return: ShowDomainResponse
+        """
+        return self.show_domain_with_http_info(request)
+
+    def show_domain_with_http_info(self, request):
+        """查询直播域名
+
+        查询直播域名
+
+        :param ShowDomainRequest request
+        :return: ShowDomainResponse
+        """
+
+        all_params = ['domain']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/domain',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDomainResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_online_users(self, request):
         """查询直播播放在线人数
 
@@ -929,6 +1317,69 @@ class LiveClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowTranscodingsTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_domain(self, request):
+        """修改直播域名
+
+        修改直播播放、RTMP推流加速域名相关信息
+
+        :param UpdateDomainRequest request
+        :return: UpdateDomainResponse
+        """
+        return self.update_domain_with_http_info(request)
+
+    def update_domain_with_http_info(self, request):
+        """修改直播域名
+
+        修改直播播放、RTMP推流加速域名相关信息
+
+        :param UpdateDomainRequest request
+        :return: UpdateDomainResponse
+        """
+
+        all_params = ['update_domain_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/domain',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateDomainResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

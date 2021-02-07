@@ -25,16 +25,18 @@ class ActionDisForwarding:
     openapi_types = {
         'region_name': 'str',
         'project_id': 'str',
-        'stream_name': 'str'
+        'stream_name': 'str',
+        'stream_id': 'str'
     }
 
     attribute_map = {
         'region_name': 'region_name',
         'project_id': 'project_id',
-        'stream_name': 'stream_name'
+        'stream_name': 'stream_name',
+        'stream_id': 'stream_id'
     }
 
-    def __init__(self, region_name=None, project_id=None, stream_name=None):
+    def __init__(self, region_name=None, project_id=None, stream_name=None, stream_id=None):
         """ActionDisForwarding - a model defined in huaweicloud sdk"""
         
         
@@ -42,11 +44,15 @@ class ActionDisForwarding:
         self._region_name = None
         self._project_id = None
         self._stream_name = None
+        self._stream_id = None
         self.discriminator = None
 
         self.region_name = region_name
         self.project_id = project_id
-        self.stream_name = stream_name
+        if stream_name is not None:
+            self.stream_name = stream_name
+        if stream_id is not None:
+            self.stream_id = stream_id
 
     @property
     def region_name(self):
@@ -96,7 +102,7 @@ class ActionDisForwarding:
     def stream_name(self):
         """Gets the stream_name of this ActionDisForwarding.
 
-        DIS服务对应的通道名称
+        DIS服务对应的通道名称，和通道ID参数中至少一个不为空，和通道ID参数都存在时，以通道ID参数值为准。通过调用DIS服务 [查询通道列表](https://support.huaweicloud.com/api-dis/dis_02_0024.html)接口获取。
 
         :return: The stream_name of this ActionDisForwarding.
         :rtype: str
@@ -107,12 +113,34 @@ class ActionDisForwarding:
     def stream_name(self, stream_name):
         """Sets the stream_name of this ActionDisForwarding.
 
-        DIS服务对应的通道名称
+        DIS服务对应的通道名称，和通道ID参数中至少一个不为空，和通道ID参数都存在时，以通道ID参数值为准。通过调用DIS服务 [查询通道列表](https://support.huaweicloud.com/api-dis/dis_02_0024.html)接口获取。
 
         :param stream_name: The stream_name of this ActionDisForwarding.
         :type: str
         """
         self._stream_name = stream_name
+
+    @property
+    def stream_id(self):
+        """Gets the stream_id of this ActionDisForwarding.
+
+        DIS服务对应的通道ID，和通道名称参数中至少一个不为空，和通道名称参数都存在时，以本参数值为准。通过调用DIS服务 [查询通道详情](https://support.huaweicloud.com/api-dis/dis_02_0025.html)接口获取。
+
+        :return: The stream_id of this ActionDisForwarding.
+        :rtype: str
+        """
+        return self._stream_id
+
+    @stream_id.setter
+    def stream_id(self, stream_id):
+        """Sets the stream_id of this ActionDisForwarding.
+
+        DIS服务对应的通道ID，和通道名称参数中至少一个不为空，和通道名称参数都存在时，以本参数值为准。通过调用DIS服务 [查询通道详情](https://support.huaweicloud.com/api-dis/dis_02_0025.html)接口获取。
+
+        :param stream_id: The stream_id of this ActionDisForwarding.
+        :type: str
+        """
+        self._stream_id = stream_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

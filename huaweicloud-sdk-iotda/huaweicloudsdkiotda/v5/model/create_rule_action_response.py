@@ -27,7 +27,8 @@ class CreateRuleActionResponse(SdkResponse):
         'rule_id': 'str',
         'app_id': 'str',
         'channel': 'str',
-        'channel_detail': 'ChannelDetail'
+        'channel_detail': 'ChannelDetail',
+        'batch': 'bool'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class CreateRuleActionResponse(SdkResponse):
         'rule_id': 'rule_id',
         'app_id': 'app_id',
         'channel': 'channel',
-        'channel_detail': 'channel_detail'
+        'channel_detail': 'channel_detail',
+        'batch': 'batch'
     }
 
-    def __init__(self, action_id=None, rule_id=None, app_id=None, channel=None, channel_detail=None):
+    def __init__(self, action_id=None, rule_id=None, app_id=None, channel=None, channel_detail=None, batch=None):
         """CreateRuleActionResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
@@ -48,6 +50,7 @@ class CreateRuleActionResponse(SdkResponse):
         self._app_id = None
         self._channel = None
         self._channel_detail = None
+        self._batch = None
         self.discriminator = None
 
         if action_id is not None:
@@ -60,6 +63,8 @@ class CreateRuleActionResponse(SdkResponse):
             self.channel = channel
         if channel_detail is not None:
             self.channel_detail = channel_detail
+        if batch is not None:
+            self.batch = batch
 
     @property
     def action_id(self):
@@ -131,7 +136,7 @@ class CreateRuleActionResponse(SdkResponse):
     def channel(self):
         """Gets the channel of this CreateRuleActionResponse.
 
-        规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 
+        规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。 
 
         :return: The channel of this CreateRuleActionResponse.
         :rtype: str
@@ -142,7 +147,7 @@ class CreateRuleActionResponse(SdkResponse):
     def channel(self, channel):
         """Sets the channel of this CreateRuleActionResponse.
 
-        规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 
+        规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。 
 
         :param channel: The channel of this CreateRuleActionResponse.
         :type: str
@@ -168,6 +173,28 @@ class CreateRuleActionResponse(SdkResponse):
         :type: ChannelDetail
         """
         self._channel_detail = channel_detail
+
+    @property
+    def batch(self):
+        """Gets the batch of this CreateRuleActionResponse.
+
+        是否支持批量接收推送消息。
+
+        :return: The batch of this CreateRuleActionResponse.
+        :rtype: bool
+        """
+        return self._batch
+
+    @batch.setter
+    def batch(self, batch):
+        """Sets the batch of this CreateRuleActionResponse.
+
+        是否支持批量接收推送消息。
+
+        :param batch: The batch of this CreateRuleActionResponse.
+        :type: bool
+        """
+        self._batch = batch
 
     def to_dict(self):
         """Returns the model properties as a dict"""

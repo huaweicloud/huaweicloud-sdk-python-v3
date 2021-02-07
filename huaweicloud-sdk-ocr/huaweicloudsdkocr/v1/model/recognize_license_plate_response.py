@@ -23,7 +23,7 @@ class RecognizeLicensePlateResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'LicensePlateResponseBodyItem'
+        'result': 'LicensePlateResult'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeLicensePlateResponse(SdkResponse):
 
 
         :return: The result of this RecognizeLicensePlateResponse.
-        :rtype: LicensePlateResponseBodyItem
+        :rtype: LicensePlateResult
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeLicensePlateResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeLicensePlateResponse.
-        :type: LicensePlateResponseBodyItem
+        :type: LicensePlateResult
         """
         self._result = result
 

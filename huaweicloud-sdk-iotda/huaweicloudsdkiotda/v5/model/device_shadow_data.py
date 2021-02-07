@@ -121,7 +121,7 @@ class DeviceShadowData:
     def version(self):
         """Gets the version of this DeviceShadowData.
 
-        设备影子的版本，携带改参数时平台会校验值必须等于当前影子版本，初始从0开始。
+        设备影子的版本，携带该参数时平台会校验值必须等于当前影子版本，初始从0开始。
 
         :return: The version of this DeviceShadowData.
         :rtype: int
@@ -132,7 +132,7 @@ class DeviceShadowData:
     def version(self, version):
         """Sets the version of this DeviceShadowData.
 
-        设备影子的版本，携带改参数时平台会校验值必须等于当前影子版本，初始从0开始。
+        设备影子的版本，携带该参数时平台会校验值必须等于当前影子版本，初始从0开始。
 
         :param version: The version of this DeviceShadowData.
         :type: int

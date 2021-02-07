@@ -23,22 +23,37 @@ class HttpForwarding:
     sensitive_list = []
 
     openapi_types = {
-        'url': 'str'
+        'url': 'str',
+        'cert_id': 'str',
+        'cn_name': 'str',
+        'sni_enable': 'bool'
     }
 
     attribute_map = {
-        'url': 'url'
+        'url': 'url',
+        'cert_id': 'cert_id',
+        'cn_name': 'cn_name',
+        'sni_enable': 'sni_enable'
     }
 
-    def __init__(self, url=None):
+    def __init__(self, url=None, cert_id=None, cn_name=None, sni_enable=None):
         """HttpForwarding - a model defined in huaweicloud sdk"""
         
         
 
         self._url = None
+        self._cert_id = None
+        self._cn_name = None
+        self._sni_enable = None
         self.discriminator = None
 
         self.url = url
+        if cert_id is not None:
+            self.cert_id = cert_id
+        if cn_name is not None:
+            self.cn_name = cn_name
+        if sni_enable is not None:
+            self.sni_enable = sni_enable
 
     @property
     def url(self):
@@ -61,6 +76,72 @@ class HttpForwarding:
         :type: str
         """
         self._url = url
+
+    @property
+    def cert_id(self):
+        """Gets the cert_id of this HttpForwarding.
+
+        证书id，通过证书上传接口上传证书获取Id
+
+        :return: The cert_id of this HttpForwarding.
+        :rtype: str
+        """
+        return self._cert_id
+
+    @cert_id.setter
+    def cert_id(self, cert_id):
+        """Sets the cert_id of this HttpForwarding.
+
+        证书id，通过证书上传接口上传证书获取Id
+
+        :param cert_id: The cert_id of this HttpForwarding.
+        :type: str
+        """
+        self._cert_id = cert_id
+
+    @property
+    def cn_name(self):
+        """Gets the cn_name of this HttpForwarding.
+
+        当sni_enable为true时，此字段需要填写，当sni_enbale为false时，此字段默认为*
+
+        :return: The cn_name of this HttpForwarding.
+        :rtype: str
+        """
+        return self._cn_name
+
+    @cn_name.setter
+    def cn_name(self, cn_name):
+        """Sets the cn_name of this HttpForwarding.
+
+        当sni_enable为true时，此字段需要填写，当sni_enbale为false时，此字段默认为*
+
+        :param cn_name: The cn_name of this HttpForwarding.
+        :type: str
+        """
+        self._cn_name = cn_name
+
+    @property
+    def sni_enable(self):
+        """Gets the sni_enable of this HttpForwarding.
+
+        需要https服务端和客户端都支持此功能，默认为false，设成true表明Https的客户端在发起请求时，需要携带cn_name；https服务端根据cn_name返回对应的证书；设为false可关闭此功能
+
+        :return: The sni_enable of this HttpForwarding.
+        :rtype: bool
+        """
+        return self._sni_enable
+
+    @sni_enable.setter
+    def sni_enable(self, sni_enable):
+        """Sets the sni_enable of this HttpForwarding.
+
+        需要https服务端和客户端都支持此功能，默认为false，设成true表明Https的客户端在发起请求时，需要携带cn_name；https服务端根据cn_name返回对应的证书；设为false可关闭此功能
+
+        :param sni_enable: The sni_enable of this HttpForwarding.
+        :type: bool
+        """
+        self._sni_enable = sni_enable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

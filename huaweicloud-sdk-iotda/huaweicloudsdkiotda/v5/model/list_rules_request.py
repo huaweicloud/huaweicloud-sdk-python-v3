@@ -25,6 +25,7 @@ class ListRulesRequest:
     openapi_types = {
         'instance_id': 'str',
         'app_id': 'str',
+        'rule_type': 'str',
         'limit': 'int',
         'marker': 'str',
         'offset': 'int'
@@ -33,18 +34,20 @@ class ListRulesRequest:
     attribute_map = {
         'instance_id': 'Instance-Id',
         'app_id': 'app_id',
+        'rule_type': 'rule_type',
         'limit': 'limit',
         'marker': 'marker',
         'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None, app_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):
+    def __init__(self, instance_id=None, app_id=None, rule_type=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):
         """ListRulesRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._instance_id = None
         self._app_id = None
+        self._rule_type = None
         self._limit = None
         self._marker = None
         self._offset = None
@@ -54,6 +57,8 @@ class ListRulesRequest:
             self.instance_id = instance_id
         if app_id is not None:
             self.app_id = app_id
+        if rule_type is not None:
+            self.rule_type = rule_type
         if limit is not None:
             self.limit = limit
         if marker is not None:
@@ -100,6 +105,26 @@ class ListRulesRequest:
         :type: str
         """
         self._app_id = app_id
+
+    @property
+    def rule_type(self):
+        """Gets the rule_type of this ListRulesRequest.
+
+
+        :return: The rule_type of this ListRulesRequest.
+        :rtype: str
+        """
+        return self._rule_type
+
+    @rule_type.setter
+    def rule_type(self, rule_type):
+        """Sets the rule_type of this ListRulesRequest.
+
+
+        :param rule_type: The rule_type of this ListRulesRequest.
+        :type: str
+        """
+        self._rule_type = rule_type
 
     @property
     def limit(self):

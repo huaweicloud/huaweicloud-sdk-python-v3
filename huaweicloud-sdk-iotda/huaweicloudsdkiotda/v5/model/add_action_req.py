@@ -25,16 +25,18 @@ class AddActionReq:
     openapi_types = {
         'rule_id': 'str',
         'channel': 'str',
-        'channel_detail': 'ChannelDetail'
+        'channel_detail': 'ChannelDetail',
+        'batch': 'bool'
     }
 
     attribute_map = {
         'rule_id': 'rule_id',
         'channel': 'channel',
-        'channel_detail': 'channel_detail'
+        'channel_detail': 'channel_detail',
+        'batch': 'batch'
     }
 
-    def __init__(self, rule_id=None, channel=None, channel_detail=None):
+    def __init__(self, rule_id=None, channel=None, channel_detail=None, batch=False):
         """AddActionReq - a model defined in huaweicloud sdk"""
         
         
@@ -42,11 +44,14 @@ class AddActionReq:
         self._rule_id = None
         self._channel = None
         self._channel_detail = None
+        self._batch = None
         self.discriminator = None
 
         self.rule_id = rule_id
         self.channel = channel
         self.channel_detail = channel_detail
+        if batch is not None:
+            self.batch = batch
 
     @property
     def rule_id(self):
@@ -74,7 +79,7 @@ class AddActionReq:
     def channel(self):
         """Gets the channel of this AddActionReq.
 
-        规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 
+        规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。 
 
         :return: The channel of this AddActionReq.
         :rtype: str
@@ -85,7 +90,7 @@ class AddActionReq:
     def channel(self, channel):
         """Sets the channel of this AddActionReq.
 
-        规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 
+        规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。 
 
         :param channel: The channel of this AddActionReq.
         :type: str
@@ -111,6 +116,28 @@ class AddActionReq:
         :type: ChannelDetail
         """
         self._channel_detail = channel_detail
+
+    @property
+    def batch(self):
+        """Gets the batch of this AddActionReq.
+
+        是否支持批量接收推送消息。
+
+        :return: The batch of this AddActionReq.
+        :rtype: bool
+        """
+        return self._batch
+
+    @batch.setter
+    def batch(self, batch):
+        """Sets the batch of this AddActionReq.
+
+        是否支持批量接收推送消息。
+
+        :param batch: The batch of this AddActionReq.
+        :type: bool
+        """
+        self._batch = batch
 
     def to_dict(self):
         """Returns the model properties as a dict"""

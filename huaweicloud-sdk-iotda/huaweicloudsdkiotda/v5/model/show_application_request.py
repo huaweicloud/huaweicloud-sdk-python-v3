@@ -21,29 +21,55 @@ class ShowApplicationRequest:
     """
 
     sensitive_list = []
+    sensitive_list.append('sp_auth_token')
 
     openapi_types = {
+        'sp_auth_token': 'str',
         'instance_id': 'str',
         'app_id': 'str'
     }
 
     attribute_map = {
+        'sp_auth_token': 'Sp-Auth-Token',
         'instance_id': 'Instance-Id',
         'app_id': 'app_id'
     }
 
-    def __init__(self, instance_id=None, app_id=None):
+    def __init__(self, sp_auth_token=None, instance_id=None, app_id=None):
         """ShowApplicationRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._sp_auth_token = None
         self._instance_id = None
         self._app_id = None
         self.discriminator = None
 
+        if sp_auth_token is not None:
+            self.sp_auth_token = sp_auth_token
         if instance_id is not None:
             self.instance_id = instance_id
         self.app_id = app_id
+
+    @property
+    def sp_auth_token(self):
+        """Gets the sp_auth_token of this ShowApplicationRequest.
+
+
+        :return: The sp_auth_token of this ShowApplicationRequest.
+        :rtype: str
+        """
+        return self._sp_auth_token
+
+    @sp_auth_token.setter
+    def sp_auth_token(self, sp_auth_token):
+        """Sets the sp_auth_token of this ShowApplicationRequest.
+
+
+        :param sp_auth_token: The sp_auth_token of this ShowApplicationRequest.
+        :type: str
+        """
+        self._sp_auth_token = sp_auth_token
 
     @property
     def instance_id(self):

@@ -23,7 +23,7 @@ class RecognizeVatInvoiceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'RecognizeVatInvoiceResultResponse'
+        'result': 'VatInvoiceResult'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeVatInvoiceResponse(SdkResponse):
 
 
         :return: The result of this RecognizeVatInvoiceResponse.
-        :rtype: RecognizeVatInvoiceResultResponse
+        :rtype: VatInvoiceResult
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeVatInvoiceResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeVatInvoiceResponse.
-        :type: RecognizeVatInvoiceResultResponse
+        :type: VatInvoiceResult
         """
         self._result = result
 

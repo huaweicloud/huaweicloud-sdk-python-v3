@@ -59,7 +59,7 @@ class OffSiteBackupPolicy:
     def keep_days(self):
         """Gets the keep_days of this OffSiteBackupPolicy.
 
-        指定已生成的备份文件可以保存的天数。  取值范围：0～732。取0值，表示关闭自动备份策略。如果需要延长保留时间请联系客服人员申请，自动备份最长可以保留2562天。  注意： 关闭备份策略后，备份任务将立即停止，所有增量备份任务将立即删除，使用增量备份的相关操作可能失败，相关操作不限于下载、复制、恢复、重建等，请谨慎操作。
+        指定已生成的备份文件可以保存的天数。  取值范围：0～1825。保存天数设置为0时，表示关闭跨区域备份策略。  注意： 关闭备份策略后，备份任务将立即停止，如果有增量备份，所有增量备份任务将立即删除，使用增量备份的相关操作可能失败，相关操作不限于下载、复制、恢复、重建等，请谨慎操作。
 
         :return: The keep_days of this OffSiteBackupPolicy.
         :rtype: int
@@ -70,7 +70,7 @@ class OffSiteBackupPolicy:
     def keep_days(self, keep_days):
         """Sets the keep_days of this OffSiteBackupPolicy.
 
-        指定已生成的备份文件可以保存的天数。  取值范围：0～732。取0值，表示关闭自动备份策略。如果需要延长保留时间请联系客服人员申请，自动备份最长可以保留2562天。  注意： 关闭备份策略后，备份任务将立即停止，所有增量备份任务将立即删除，使用增量备份的相关操作可能失败，相关操作不限于下载、复制、恢复、重建等，请谨慎操作。
+        指定已生成的备份文件可以保存的天数。  取值范围：0～1825。保存天数设置为0时，表示关闭跨区域备份策略。  注意： 关闭备份策略后，备份任务将立即停止，如果有增量备份，所有增量备份任务将立即删除，使用增量备份的相关操作可能失败，相关操作不限于下载、复制、恢复、重建等，请谨慎操作。
 
         :param keep_days: The keep_days of this OffSiteBackupPolicy.
         :type: int
@@ -81,7 +81,7 @@ class OffSiteBackupPolicy:
     def backup_type(self):
         """Gets the backup_type of this OffSiteBackupPolicy.
 
-        备份类型，取值：  - “auto”: 自动全量备份 - “incremental”: 自动增量备份 - “all”: 同时设置自动全量和自动增量备份
+        备份类型，取值： - SQL Server仅支持设置为“all” - “auto”: 自动全量备份 - “incremental”: 自动增量备份 - “manual“: 手动备份，仅SQL Server返回该备份类型 - “all”: 同时设置自动全量和自动增量备份。MySQL: 同时设置自动全量和自动增量备份。SQL Server: 同时设置自动全量、自动增量备份和手动备份。
 
         :return: The backup_type of this OffSiteBackupPolicy.
         :rtype: object
@@ -92,7 +92,7 @@ class OffSiteBackupPolicy:
     def backup_type(self, backup_type):
         """Sets the backup_type of this OffSiteBackupPolicy.
 
-        备份类型，取值：  - “auto”: 自动全量备份 - “incremental”: 自动增量备份 - “all”: 同时设置自动全量和自动增量备份
+        备份类型，取值： - SQL Server仅支持设置为“all” - “auto”: 自动全量备份 - “incremental”: 自动增量备份 - “manual“: 手动备份，仅SQL Server返回该备份类型 - “all”: 同时设置自动全量和自动增量备份。MySQL: 同时设置自动全量和自动增量备份。SQL Server: 同时设置自动全量、自动增量备份和手动备份。
 
         :param backup_type: The backup_type of this OffSiteBackupPolicy.
         :type: object

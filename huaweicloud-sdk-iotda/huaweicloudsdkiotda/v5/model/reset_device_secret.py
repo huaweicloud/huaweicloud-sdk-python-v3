@@ -21,6 +21,7 @@ class ResetDeviceSecret:
     """
 
     sensitive_list = []
+    sensitive_list.append('secret')
 
     openapi_types = {
         'secret': 'str',
@@ -72,7 +73,7 @@ class ResetDeviceSecret:
     def force_disconnect(self):
         """Gets the force_disconnect of this ResetDeviceSecret.
 
-        是否强制断开设备的连接，当前仅限长连接。
+        是否强制断开设备的连接，当前仅限长连接。默认值false。
 
         :return: The force_disconnect of this ResetDeviceSecret.
         :rtype: bool
@@ -83,7 +84,7 @@ class ResetDeviceSecret:
     def force_disconnect(self, force_disconnect):
         """Sets the force_disconnect of this ResetDeviceSecret.
 
-        是否强制断开设备的连接，当前仅限长连接。
+        是否强制断开设备的连接，当前仅限长连接。默认值false。
 
         :param force_disconnect: The force_disconnect of this ResetDeviceSecret.
         :type: bool

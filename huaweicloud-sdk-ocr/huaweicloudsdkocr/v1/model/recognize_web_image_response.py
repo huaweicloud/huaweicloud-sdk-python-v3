@@ -23,7 +23,7 @@ class RecognizeWebImageResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'WebImageResponseBodyItem'
+        'result': 'WebImageResult'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeWebImageResponse(SdkResponse):
 
 
         :return: The result of this RecognizeWebImageResponse.
-        :rtype: WebImageResponseBodyItem
+        :rtype: WebImageResult
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeWebImageResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeWebImageResponse.
-        :type: WebImageResponseBodyItem
+        :type: WebImageResult
         """
         self._result = result
 

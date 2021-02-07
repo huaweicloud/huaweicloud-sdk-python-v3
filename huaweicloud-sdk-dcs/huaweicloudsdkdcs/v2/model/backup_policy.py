@@ -44,11 +44,11 @@ class BackupPolicy:
         self._periodical_backup_plan = None
         self.discriminator = None
 
-        if backup_type is not None:
-            self.backup_type = backup_type
+        self.backup_type = backup_type
         if save_days is not None:
             self.save_days = save_days
-        self.periodical_backup_plan = periodical_backup_plan
+        if periodical_backup_plan is not None:
+            self.periodical_backup_plan = periodical_backup_plan
 
     @property
     def backup_type(self):
@@ -76,7 +76,7 @@ class BackupPolicy:
     def save_days(self):
         """Gets the save_days of this BackupPolicy.
 
-        当backup_type设置为manual时，该参数为必填。 保留天数，单位：天，取值范围：1-7。 
+        当backup_type设置为auto时，该参数为必填。 保留天数，单位：天，取值范围：1-7。 
 
         :return: The save_days of this BackupPolicy.
         :rtype: int
@@ -87,7 +87,7 @@ class BackupPolicy:
     def save_days(self, save_days):
         """Sets the save_days of this BackupPolicy.
 
-        当backup_type设置为manual时，该参数为必填。 保留天数，单位：天，取值范围：1-7。 
+        当backup_type设置为auto时，该参数为必填。 保留天数，单位：天，取值范围：1-7。 
 
         :param save_days: The save_days of this BackupPolicy.
         :type: int

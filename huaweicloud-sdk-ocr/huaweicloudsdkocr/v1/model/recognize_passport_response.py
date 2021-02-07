@@ -23,7 +23,7 @@ class RecognizePassportResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'PassportResultBody'
+        'result': 'PassportResult'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizePassportResponse(SdkResponse):
 
 
         :return: The result of this RecognizePassportResponse.
-        :rtype: PassportResultBody
+        :rtype: PassportResult
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizePassportResponse(SdkResponse):
 
 
         :param result: The result of this RecognizePassportResponse.
-        :type: PassportResultBody
+        :type: PassportResult
         """
         self._result = result
 

@@ -173,7 +173,7 @@ class CreateAsyncCommandResponse(SdkResponse):
     def paras(self):
         """Gets the paras of this CreateAsyncCommandResponse.
 
-        设备执行的命令，Json格式，里面是一个个健值对，如果serviceId不为空，每个健都是profile中命令的参数名（paraName）;如果serviceId为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。 
+        设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。 
 
         :return: The paras of this CreateAsyncCommandResponse.
         :rtype: object
@@ -184,7 +184,7 @@ class CreateAsyncCommandResponse(SdkResponse):
     def paras(self, paras):
         """Sets the paras of this CreateAsyncCommandResponse.
 
-        设备执行的命令，Json格式，里面是一个个健值对，如果serviceId不为空，每个健都是profile中命令的参数名（paraName）;如果serviceId为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。 
+        设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。 
 
         :param paras: The paras of this CreateAsyncCommandResponse.
         :type: object

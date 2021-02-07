@@ -1,3 +1,45 @@
+## 3.0.33-rc 2021-02-07
+## HuaweiCloud SDK Core
+- ### Features
+    - None
+- ### Bug Fix
+    - Add default config of `HttpConfig` when initialing a service client using function `build()`. 
+- ### Change
+    - None
+
+## HuaweiCloud SDK IMS
+- ### Features
+    - None
+- ### Bug Fix
+    - None
+- ### Change
+    - Interface `ListOsVersions` adjustment: change the data type of `os_bit` which is the property of response of the interface from string to integer.
+
+## HuaweiCloud SDK IoTDA
+- ### Features
+    - Support more interfaces: ListAsyncCommands, ListAsyncHistoryCommands, CreateAppCertificate, ListAppCertificates, ShowAppCertificate, UpdateAppCertificate, DeleteAppCertificate
+- ### Bug Fix
+    - None
+- ### Change
+    - SDK of interface `DeviceManagement` deprecated.(It's not supported any more in SDK, but you can also using it by customized coding using API.)
+
+## HuaweiCloud SDK Live
+- ### Features
+    - Support more interfaces: ListLiveSampleLogs, CreateDomain, DeleteDomain, UpdateDomain, ShowDomain, CreateDomainMapping, DeleteDomainMapping
+- ### Bug Fix
+    - None
+- ### Change
+    - None
+
+## HuaweiCloud SDK OCR
+- ### Features
+    - None
+- ### Bug Fix
+    - None
+- ### Change
+    - Interfaces adjustment: change the class name of response of all interfaces from `xxResultBody` or `xxResultResponse` or `xxResponseBodyItems` to `xxResult`.
+
+
 ## 3.0.32-rc 2021-01-30
 ## HuaweiCloud SDK DNS
 - ### Features

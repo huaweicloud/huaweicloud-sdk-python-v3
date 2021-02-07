@@ -23,49 +23,27 @@ class ServiceCommandResponse:
     sensitive_list = []
 
     openapi_types = {
-        'paras': 'list[ServiceCommandPara]',
-        'response_name': 'str'
+        'response_name': 'str',
+        'paras': 'list[ServiceCommandPara]'
     }
 
     attribute_map = {
-        'paras': 'paras',
-        'response_name': 'response_name'
+        'response_name': 'response_name',
+        'paras': 'paras'
     }
 
-    def __init__(self, paras=None, response_name=None):
+    def __init__(self, response_name=None, paras=None):
         """ServiceCommandResponse - a model defined in huaweicloud sdk"""
         
         
 
-        self._paras = None
         self._response_name = None
+        self._paras = None
         self.discriminator = None
 
+        self.response_name = response_name
         if paras is not None:
             self.paras = paras
-        self.response_name = response_name
-
-    @property
-    def paras(self):
-        """Gets the paras of this ServiceCommandResponse.
-
-        设备命令响应的参数列表。
-
-        :return: The paras of this ServiceCommandResponse.
-        :rtype: list[ServiceCommandPara]
-        """
-        return self._paras
-
-    @paras.setter
-    def paras(self, paras):
-        """Sets the paras of this ServiceCommandResponse.
-
-        设备命令响应的参数列表。
-
-        :param paras: The paras of this ServiceCommandResponse.
-        :type: list[ServiceCommandPara]
-        """
-        self._paras = paras
 
     @property
     def response_name(self):
@@ -88,6 +66,28 @@ class ServiceCommandResponse:
         :type: str
         """
         self._response_name = response_name
+
+    @property
+    def paras(self):
+        """Gets the paras of this ServiceCommandResponse.
+
+        设备命令响应的参数列表。
+
+        :return: The paras of this ServiceCommandResponse.
+        :rtype: list[ServiceCommandPara]
+        """
+        return self._paras
+
+    @paras.setter
+    def paras(self, paras):
+        """Sets the paras of this ServiceCommandResponse.
+
+        设备命令响应的参数列表。
+
+        :param paras: The paras of this ServiceCommandResponse.
+        :type: list[ServiceCommandPara]
+        """
+        self._paras = paras
 
     def to_dict(self):
         """Returns the model properties as a dict"""

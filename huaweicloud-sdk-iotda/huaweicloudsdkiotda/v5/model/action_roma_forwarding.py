@@ -53,7 +53,7 @@ class ActionRomaForwarding:
     def region_name(self):
         """Gets the region_name of this ActionRomaForwarding.
 
-        ROMA服务对应的region区域
+        ROMA Connect服务对应的region区域
 
         :return: The region_name of this ActionRomaForwarding.
         :rtype: str
@@ -64,7 +64,7 @@ class ActionRomaForwarding:
     def region_name(self, region_name):
         """Sets the region_name of this ActionRomaForwarding.
 
-        ROMA服务对应的region区域
+        ROMA Connect服务对应的region区域
 
         :param region_name: The region_name of this ActionRomaForwarding.
         :type: str
@@ -75,7 +75,7 @@ class ActionRomaForwarding:
     def project_id(self):
         """Gets the project_id of this ActionRomaForwarding.
 
-        ROMA服务对应的projectId信息
+        ROMA Connect服务对应的projectId信息
 
         :return: The project_id of this ActionRomaForwarding.
         :rtype: str
@@ -86,7 +86,7 @@ class ActionRomaForwarding:
     def project_id(self, project_id):
         """Sets the project_id of this ActionRomaForwarding.
 
-        ROMA服务对应的projectId信息
+        ROMA Connect服务对应的projectId信息
 
         :param project_id: The project_id of this ActionRomaForwarding.
         :type: str
@@ -97,7 +97,7 @@ class ActionRomaForwarding:
     def roma_push_type(self):
         """Gets the roma_push_type of this ActionRomaForwarding.
 
-        ROMA服务对应参数类型
+        ROMA Connect服务对应参数类型
 
         :return: The roma_push_type of this ActionRomaForwarding.
         :rtype: str
@@ -108,7 +108,7 @@ class ActionRomaForwarding:
     def roma_push_type(self, roma_push_type):
         """Sets the roma_push_type of this ActionRomaForwarding.
 
-        ROMA服务对应参数类型
+        ROMA Connect服务对应参数类型
 
         :param roma_push_type: The roma_push_type of this ActionRomaForwarding.
         :type: str

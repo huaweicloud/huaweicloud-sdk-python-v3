@@ -26,7 +26,7 @@ class OsVersionInfo:
         'platform': 'str',
         'os_version_key': 'str',
         'os_version': 'str',
-        'os_bit': 'str',
+        'os_bit': 'int',
         'os_type': 'str'
     }
 
@@ -129,7 +129,7 @@ class OsVersionInfo:
         操作系统的位数
 
         :return: The os_bit of this OsVersionInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._os_bit
 
@@ -140,7 +140,7 @@ class OsVersionInfo:
         操作系统的位数
 
         :param os_bit: The os_bit of this OsVersionInfo.
-        :type: str
+        :type: int
         """
         self._os_bit = os_bit
 

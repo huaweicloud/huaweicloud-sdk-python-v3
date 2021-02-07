@@ -25,18 +25,24 @@ class DeviceMessageRequest:
     openapi_types = {
         'message_id': 'str',
         'name': 'str',
-        'message': 'str',
-        'topic': 'str'
+        'message': 'object',
+        'encoding': 'str',
+        'payload_format': 'str',
+        'topic': 'str',
+        'topic_full_name': 'str'
     }
 
     attribute_map = {
         'message_id': 'message_id',
         'name': 'name',
         'message': 'message',
-        'topic': 'topic'
+        'encoding': 'encoding',
+        'payload_format': 'payload_format',
+        'topic': 'topic',
+        'topic_full_name': 'topic_full_name'
     }
 
-    def __init__(self, message_id=None, name=None, message=None, topic=None):
+    def __init__(self, message_id=None, name=None, message=None, encoding='none', payload_format='standard', topic=None, topic_full_name=None):
         """DeviceMessageRequest - a model defined in huaweicloud sdk"""
         
         
@@ -44,7 +50,10 @@ class DeviceMessageRequest:
         self._message_id = None
         self._name = None
         self._message = None
+        self._encoding = None
+        self._payload_format = None
         self._topic = None
+        self._topic_full_name = None
         self.discriminator = None
 
         if message_id is not None:
@@ -52,8 +61,14 @@ class DeviceMessageRequest:
         if name is not None:
             self.name = name
         self.message = message
+        if encoding is not None:
+            self.encoding = encoding
+        if payload_format is not None:
+            self.payload_format = payload_format
         if topic is not None:
             self.topic = topic
+        if topic_full_name is not None:
+            self.topic_full_name = topic_full_name
 
     @property
     def message_id(self):
@@ -103,10 +118,10 @@ class DeviceMessageRequest:
     def message(self):
         """Gets the message of this DeviceMessageRequest.
 
-        设备执行的消息，字符串，具体格式需要应用和设备约定。 
+        消息内容，支持string和json格式。 
 
         :return: The message of this DeviceMessageRequest.
-        :rtype: str
+        :rtype: object
         """
         return self._message
 
@@ -114,18 +129,62 @@ class DeviceMessageRequest:
     def message(self, message):
         """Sets the message of this DeviceMessageRequest.
 
-        设备执行的消息，字符串，具体格式需要应用和设备约定。 
+        消息内容，支持string和json格式。 
 
         :param message: The message of this DeviceMessageRequest.
-        :type: str
+        :type: object
         """
         self._message = message
+
+    @property
+    def encoding(self):
+        """Gets the encoding of this DeviceMessageRequest.
+
+        消息内容编码格式，取值范围none|base64,默认值none。 
+
+        :return: The encoding of this DeviceMessageRequest.
+        :rtype: str
+        """
+        return self._encoding
+
+    @encoding.setter
+    def encoding(self, encoding):
+        """Sets the encoding of this DeviceMessageRequest.
+
+        消息内容编码格式，取值范围none|base64,默认值none。 
+
+        :param encoding: The encoding of this DeviceMessageRequest.
+        :type: str
+        """
+        self._encoding = encoding
+
+    @property
+    def payload_format(self):
+        """Gets the payload_format of this DeviceMessageRequest.
+
+        有效负载格式，在消息内容编码格式为none时有效，取值范围standard|raw，默认值standard（平台封装的标准格式），取值为raw时直接将消息内容作为有效负载下发。 
+
+        :return: The payload_format of this DeviceMessageRequest.
+        :rtype: str
+        """
+        return self._payload_format
+
+    @payload_format.setter
+    def payload_format(self, payload_format):
+        """Sets the payload_format of this DeviceMessageRequest.
+
+        有效负载格式，在消息内容编码格式为none时有效，取值范围standard|raw，默认值standard（平台封装的标准格式），取值为raw时直接将消息内容作为有效负载下发。 
+
+        :param payload_format: The payload_format of this DeviceMessageRequest.
+        :type: str
+        """
+        self._payload_format = payload_format
 
     @property
     def topic(self):
         """Gets the topic of this DeviceMessageRequest.
 
-        消息下行到设备的topic, 可选， 仅适用于MQTT协议接入的设备。 用户只能填写在租户产品界面配置的topic, 否则会校验不通过。 平台给消息topic添加的前缀为$oc/devices/{device_id}/user/， 用户可以在前缀的基础上增加自定义部分， 如增加messageDown，则平台拼接前缀后完整的topic为 $oc/devices/{device_id}/user/messageDown，其中device_id以实际设备的网关id替代。 如果用户指定该topic，消息会通过该topic下行到设备，如果用户不指定， 则消息通过系统默认的topic下行到设备,系统默认的topic格式为： $oc/devices/{device_id}/sys/messages/down。 
+        消息下行到设备的topic, 可选， 仅适用于MQTT协议接入的设备。 用户只能填写在租户产品界面配置的topic, 否则会校验不通过。 平台给消息topic添加的前缀为$oc/devices/{device_id}/user/， 用户可以在前缀的基础上增加自定义部分， 如增加messageDown，则平台拼接前缀后完整的topic为 $oc/devices/{device_id}/user/messageDown，其中device_id以实际设备的网关id替代。 如果用户指定该topic，消息会通过该topic下行到设备，如果用户不指定， 则消息通过系统默认的topic下行到设备,系统默认的topic格式为： $oc/devices/{device_id}/sys/messages/down。此字段与topic_full_name字段只可填写一个。 
 
         :return: The topic of this DeviceMessageRequest.
         :rtype: str
@@ -136,12 +195,34 @@ class DeviceMessageRequest:
     def topic(self, topic):
         """Sets the topic of this DeviceMessageRequest.
 
-        消息下行到设备的topic, 可选， 仅适用于MQTT协议接入的设备。 用户只能填写在租户产品界面配置的topic, 否则会校验不通过。 平台给消息topic添加的前缀为$oc/devices/{device_id}/user/， 用户可以在前缀的基础上增加自定义部分， 如增加messageDown，则平台拼接前缀后完整的topic为 $oc/devices/{device_id}/user/messageDown，其中device_id以实际设备的网关id替代。 如果用户指定该topic，消息会通过该topic下行到设备，如果用户不指定， 则消息通过系统默认的topic下行到设备,系统默认的topic格式为： $oc/devices/{device_id}/sys/messages/down。 
+        消息下行到设备的topic, 可选， 仅适用于MQTT协议接入的设备。 用户只能填写在租户产品界面配置的topic, 否则会校验不通过。 平台给消息topic添加的前缀为$oc/devices/{device_id}/user/， 用户可以在前缀的基础上增加自定义部分， 如增加messageDown，则平台拼接前缀后完整的topic为 $oc/devices/{device_id}/user/messageDown，其中device_id以实际设备的网关id替代。 如果用户指定该topic，消息会通过该topic下行到设备，如果用户不指定， 则消息通过系统默认的topic下行到设备,系统默认的topic格式为： $oc/devices/{device_id}/sys/messages/down。此字段与topic_full_name字段只可填写一个。 
 
         :param topic: The topic of this DeviceMessageRequest.
         :type: str
         """
         self._topic = topic
+
+    @property
+    def topic_full_name(self):
+        """Gets the topic_full_name of this DeviceMessageRequest.
+
+        消息下行到设备的完整topic名称, 可选。用户需要下发用户自定义的topic给设备时，可以使用该参数指定完整的topic名称，物联网平台不校验该topic是否在平台定义，直接透传给设备。设备需要提前订阅该topic。此字段与topic字段只可填写一个。 
+
+        :return: The topic_full_name of this DeviceMessageRequest.
+        :rtype: str
+        """
+        return self._topic_full_name
+
+    @topic_full_name.setter
+    def topic_full_name(self, topic_full_name):
+        """Sets the topic_full_name of this DeviceMessageRequest.
+
+        消息下行到设备的完整topic名称, 可选。用户需要下发用户自定义的topic给设备时，可以使用该参数指定完整的topic名称，物联网平台不校验该topic是否在平台定义，直接透传给设备。设备需要提前订阅该topic。此字段与topic字段只可填写一个。 
+
+        :param topic_full_name: The topic_full_name of this DeviceMessageRequest.
+        :type: str
+        """
+        self._topic_full_name = topic_full_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -26,17 +26,31 @@ class ApplicationDTO:
         'app_id': 'str',
         'app_name': 'str',
         'create_time': 'str',
-        'default_app': 'bool'
+        'default_app': 'bool',
+        'app_type': 'str',
+        'username': 'str',
+        'permission': 'str',
+        'last_instance_id': 'str',
+        'current_instance_id': 'str',
+        'service_name': 'str',
+        'freezed': 'bool'
     }
 
     attribute_map = {
         'app_id': 'app_id',
         'app_name': 'app_name',
         'create_time': 'create_time',
-        'default_app': 'default_app'
+        'default_app': 'default_app',
+        'app_type': 'app_type',
+        'username': 'username',
+        'permission': 'permission',
+        'last_instance_id': 'last_instance_id',
+        'current_instance_id': 'current_instance_id',
+        'service_name': 'service_name',
+        'freezed': 'freezed'
     }
 
-    def __init__(self, app_id=None, app_name=None, create_time=None, default_app=None):
+    def __init__(self, app_id=None, app_name=None, create_time=None, default_app=None, app_type=None, username=None, permission=None, last_instance_id=None, current_instance_id=None, service_name=None, freezed=None):
         """ApplicationDTO - a model defined in huaweicloud sdk"""
         
         
@@ -45,6 +59,13 @@ class ApplicationDTO:
         self._app_name = None
         self._create_time = None
         self._default_app = None
+        self._app_type = None
+        self._username = None
+        self._permission = None
+        self._last_instance_id = None
+        self._current_instance_id = None
+        self._service_name = None
+        self._freezed = None
         self.discriminator = None
 
         if app_id is not None:
@@ -55,6 +76,20 @@ class ApplicationDTO:
             self.create_time = create_time
         if default_app is not None:
             self.default_app = default_app
+        if app_type is not None:
+            self.app_type = app_type
+        if username is not None:
+            self.username = username
+        if permission is not None:
+            self.permission = permission
+        if last_instance_id is not None:
+            self.last_instance_id = last_instance_id
+        if current_instance_id is not None:
+            self.current_instance_id = current_instance_id
+        if service_name is not None:
+            self.service_name = service_name
+        if freezed is not None:
+            self.freezed = freezed
 
     @property
     def app_id(self):
@@ -143,6 +178,160 @@ class ApplicationDTO:
         :type: bool
         """
         self._default_app = default_app
+
+    @property
+    def app_type(self):
+        """Gets the app_type of this ApplicationDTO.
+
+        app的类型，标准版：Junior | 高级版：Normal
+
+        :return: The app_type of this ApplicationDTO.
+        :rtype: str
+        """
+        return self._app_type
+
+    @app_type.setter
+    def app_type(self, app_type):
+        """Sets the app_type of this ApplicationDTO.
+
+        app的类型，标准版：Junior | 高级版：Normal
+
+        :param app_type: The app_type of this ApplicationDTO.
+        :type: str
+        """
+        self._app_type = app_type
+
+    @property
+    def username(self):
+        """Gets the username of this ApplicationDTO.
+
+        用户名。
+
+        :return: The username of this ApplicationDTO.
+        :rtype: str
+        """
+        return self._username
+
+    @username.setter
+    def username(self, username):
+        """Sets the username of this ApplicationDTO.
+
+        用户名。
+
+        :param username: The username of this ApplicationDTO.
+        :type: str
+        """
+        self._username = username
+
+    @property
+    def permission(self):
+        """Gets the permission of this ApplicationDTO.
+
+        app与用户的授权关系时，响应为：all | bind | edit | query ，其中bind权限类似于ALL权限，属于子用户权限。
+
+        :return: The permission of this ApplicationDTO.
+        :rtype: str
+        """
+        return self._permission
+
+    @permission.setter
+    def permission(self, permission):
+        """Sets the permission of this ApplicationDTO.
+
+        app与用户的授权关系时，响应为：all | bind | edit | query ，其中bind权限类似于ALL权限，属于子用户权限。
+
+        :param permission: The permission of this ApplicationDTO.
+        :type: str
+        """
+        self._permission = permission
+
+    @property
+    def last_instance_id(self):
+        """Gets the last_instance_id of this ApplicationDTO.
+
+        迁移前实例ID。
+
+        :return: The last_instance_id of this ApplicationDTO.
+        :rtype: str
+        """
+        return self._last_instance_id
+
+    @last_instance_id.setter
+    def last_instance_id(self, last_instance_id):
+        """Sets the last_instance_id of this ApplicationDTO.
+
+        迁移前实例ID。
+
+        :param last_instance_id: The last_instance_id of this ApplicationDTO.
+        :type: str
+        """
+        self._last_instance_id = last_instance_id
+
+    @property
+    def current_instance_id(self):
+        """Gets the current_instance_id of this ApplicationDTO.
+
+        当前实例ID。
+
+        :return: The current_instance_id of this ApplicationDTO.
+        :rtype: str
+        """
+        return self._current_instance_id
+
+    @current_instance_id.setter
+    def current_instance_id(self, current_instance_id):
+        """Sets the current_instance_id of this ApplicationDTO.
+
+        当前实例ID。
+
+        :param current_instance_id: The current_instance_id of this ApplicationDTO.
+        :type: str
+        """
+        self._current_instance_id = current_instance_id
+
+    @property
+    def service_name(self):
+        """Gets the service_name of this ApplicationDTO.
+
+        对接的服务名
+
+        :return: The service_name of this ApplicationDTO.
+        :rtype: str
+        """
+        return self._service_name
+
+    @service_name.setter
+    def service_name(self, service_name):
+        """Sets the service_name of this ApplicationDTO.
+
+        对接的服务名
+
+        :param service_name: The service_name of this ApplicationDTO.
+        :type: str
+        """
+        self._service_name = service_name
+
+    @property
+    def freezed(self):
+        """Gets the freezed of this ApplicationDTO.
+
+        是否冻结
+
+        :return: The freezed of this ApplicationDTO.
+        :rtype: bool
+        """
+        return self._freezed
+
+    @freezed.setter
+    def freezed(self, freezed):
+        """Sets the freezed of this ApplicationDTO.
+
+        是否冻结
+
+        :param freezed: The freezed of this ApplicationDTO.
+        :type: bool
+        """
+        self._freezed = freezed
 
     def to_dict(self):
         """Returns the model properties as a dict"""

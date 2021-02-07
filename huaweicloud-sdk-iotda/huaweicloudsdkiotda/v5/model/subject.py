@@ -48,7 +48,7 @@ class Subject:
     def resource(self):
         """Gets the resource of this Subject.
 
-        订阅的资源名称。 - device：设备。 - device.data：设备数据。 - device.message.status：设备消息状态。 - device.status：设备状态。 - batchtask.status：批量任务状态。 
+        订阅的资源名称。 - device：设备。 - device.data：设备数据。 - device.message.status：设备消息状态。 - device.message：设备消息。 - device.status：设备状态。 - batchtask.status：批量任务状态。 
 
         :return: The resource of this Subject.
         :rtype: str
@@ -59,7 +59,7 @@ class Subject:
     def resource(self, resource):
         """Sets the resource of this Subject.
 
-        订阅的资源名称。 - device：设备。 - device.data：设备数据。 - device.message.status：设备消息状态。 - device.status：设备状态。 - batchtask.status：批量任务状态。 
+        订阅的资源名称。 - device：设备。 - device.data：设备数据。 - device.message.status：设备消息状态。 - device.message：设备消息。 - device.status：设备状态。 - batchtask.status：批量任务状态。 
 
         :param resource: The resource of this Subject.
         :type: str
@@ -70,7 +70,7 @@ class Subject:
     def event(self):
         """Gets the event of this Subject.
 
-        订阅的资源事件，取值范围：activate、update、up。 event需要与resource关联使用，具体的“resource：event”映射关系如下： - device：activate（设备激活） - device.data：update（设备数据变化） - device.message.status：update（设备消息状态） - device.status：update （设备状态变化） - batchtask.status：update （批量任务状态变化） 
+        订阅的资源事件，取值范围：activate、update、up。 event需要与resource关联使用，具体的“resource：event”映射关系如下： - device：activate（设备激活） - device.data：update（设备数据变化） - device.message.status：update（设备消息状态） - device.message：report（设备消息上报） - device.status：update （设备状态变化） - batchtask.status：update （批量任务状态变化） 
 
         :return: The event of this Subject.
         :rtype: str
@@ -81,7 +81,7 @@ class Subject:
     def event(self, event):
         """Sets the event of this Subject.
 
-        订阅的资源事件，取值范围：activate、update、up。 event需要与resource关联使用，具体的“resource：event”映射关系如下： - device：activate（设备激活） - device.data：update（设备数据变化） - device.message.status：update（设备消息状态） - device.status：update （设备状态变化） - batchtask.status：update （批量任务状态变化） 
+        订阅的资源事件，取值范围：activate、update、up。 event需要与resource关联使用，具体的“resource：event”映射关系如下： - device：activate（设备激活） - device.data：update（设备数据变化） - device.message.status：update（设备消息状态） - device.message：report（设备消息上报） - device.status：update （设备状态变化） - batchtask.status：update （批量任务状态变化） 
 
         :param event: The event of this Subject.
         :type: str

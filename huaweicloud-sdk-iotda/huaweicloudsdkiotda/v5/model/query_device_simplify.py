@@ -374,7 +374,7 @@ class QueryDeviceSimplify:
     def status(self):
         """Gets the status of this QueryDeviceSimplify.
 
-        设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FREEZED：设备冻结。 
+        设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。 
 
         :return: The status of this QueryDeviceSimplify.
         :rtype: str
@@ -385,7 +385,7 @@ class QueryDeviceSimplify:
     def status(self, status):
         """Sets the status of this QueryDeviceSimplify.
 
-        设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FREEZED：设备冻结。 
+        设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。 
 
         :param status: The status of this QueryDeviceSimplify.
         :type: str

@@ -96,6 +96,9 @@ class ClientBuilder:
         return self
 
     def build(self):
+        if self._config is None:
+            self._config = HttpConfig.get_default_config()
+
         if self._credentials is None:
             self._credentials = EnvCredentials.load_credential_from_env(self._credential_type[0])
         if self._credentials is None:

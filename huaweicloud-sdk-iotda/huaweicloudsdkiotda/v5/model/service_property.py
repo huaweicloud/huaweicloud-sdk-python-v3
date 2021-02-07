@@ -24,8 +24,8 @@ class ServiceProperty:
 
     openapi_types = {
         'property_name': 'str',
-        'required': 'bool',
         'data_type': 'str',
+        'required': 'bool',
         'enum_list': 'list[str]',
         'min': 'str',
         'max': 'str',
@@ -39,8 +39,8 @@ class ServiceProperty:
 
     attribute_map = {
         'property_name': 'property_name',
-        'required': 'required',
         'data_type': 'data_type',
+        'required': 'required',
         'enum_list': 'enum_list',
         'min': 'min',
         'max': 'max',
@@ -52,14 +52,14 @@ class ServiceProperty:
         'default_value': 'default_value'
     }
 
-    def __init__(self, property_name=None, required=False, data_type=None, enum_list=None, min=None, max=None, max_length=None, step=None, unit=None, method=None, description=None, default_value=None):
+    def __init__(self, property_name=None, data_type=None, required=False, enum_list=None, min=None, max=None, max_length=None, step=None, unit=None, method=None, description=None, default_value=None):
         """ServiceProperty - a model defined in huaweicloud sdk"""
         
         
 
         self._property_name = None
-        self._required = None
         self._data_type = None
+        self._required = None
         self._enum_list = None
         self._min = None
         self._max = None
@@ -72,9 +72,9 @@ class ServiceProperty:
         self.discriminator = None
 
         self.property_name = property_name
+        self.data_type = data_type
         if required is not None:
             self.required = required
-        self.data_type = data_type
         if enum_list is not None:
             self.enum_list = enum_list
         if min is not None:
@@ -116,28 +116,6 @@ class ServiceProperty:
         self._property_name = property_name
 
     @property
-    def required(self):
-        """Gets the required of this ServiceProperty.
-
-        设备属性是否必选。默认为false。
-
-        :return: The required of this ServiceProperty.
-        :rtype: bool
-        """
-        return self._required
-
-    @required.setter
-    def required(self, required):
-        """Sets the required of this ServiceProperty.
-
-        设备属性是否必选。默认为false。
-
-        :param required: The required of this ServiceProperty.
-        :type: bool
-        """
-        self._required = required
-
-    @property
     def data_type(self):
         """Gets the data_type of this ServiceProperty.
 
@@ -158,6 +136,28 @@ class ServiceProperty:
         :type: str
         """
         self._data_type = data_type
+
+    @property
+    def required(self):
+        """Gets the required of this ServiceProperty.
+
+        设备属性是否必选。默认为false。
+
+        :return: The required of this ServiceProperty.
+        :rtype: bool
+        """
+        return self._required
+
+    @required.setter
+    def required(self, required):
+        """Sets the required of this ServiceProperty.
+
+        设备属性是否必选。默认为false。
+
+        :param required: The required of this ServiceProperty.
+        :type: bool
+        """
+        self._required = required
 
     @property
     def enum_list(self):

@@ -402,7 +402,7 @@ class IoTDAAsyncClient(Client):
         :return: AddApplicationResponse
         """
 
-        all_params = ['add_application_request_body', 'instance_id']
+        all_params = ['add_application_request_body', 'sp_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -415,6 +415,8 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -451,7 +453,7 @@ class IoTDAAsyncClient(Client):
     def delete_application_async(self, request):
         """删除资源空间
 
-        删除指定资源空间。删除资源空间属于高危操作，删除资源空间后，该空间下的产品、设备等资源将不可用，同时影响其他引用其下设备资源的服务，请谨慎操作！
+        删除指定资源空间。删除资源空间属于高危操作，删除资源空间后，该空间下的产品、设备等资源将不可用，请谨慎操作！
 
         :param DeleteApplicationRequest request
         :return: DeleteApplicationResponse
@@ -461,13 +463,13 @@ class IoTDAAsyncClient(Client):
     def delete_application_with_http_info(self, request):
         """删除资源空间
 
-        删除指定资源空间。删除资源空间属于高危操作，删除资源空间后，该空间下的产品、设备等资源将不可用，同时影响其他引用其下设备资源的服务，请谨慎操作！
+        删除指定资源空间。删除资源空间属于高危操作，删除资源空间后，该空间下的产品、设备等资源将不可用，请谨慎操作！
 
         :param DeleteApplicationRequest request
         :return: DeleteApplicationResponse
         """
 
-        all_params = ['app_id', 'instance_id']
+        all_params = ['app_id', 'sp_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -482,6 +484,8 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -532,7 +536,7 @@ class IoTDAAsyncClient(Client):
         :return: ShowApplicationResponse
         """
 
-        all_params = ['app_id', 'instance_id']
+        all_params = ['app_id', 'sp_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -547,6 +551,8 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -597,7 +603,7 @@ class IoTDAAsyncClient(Client):
         :return: ShowApplicationsResponse
         """
 
-        all_params = ['instance_id', 'default_app']
+        all_params = ['sp_auth_token', 'instance_id', 'default_app']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -612,6 +618,8 @@ class IoTDAAsyncClient(Client):
             query_params.append(('default_app', local_var_params['default_app']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -646,7 +654,7 @@ class IoTDAAsyncClient(Client):
     def create_async_command_async(self, request):
         """下发异步设备命令
 
-        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发异步命令，以实现对设备的控制。平台负责将命令发送给设备，并将设备执行命令结果异步返回。注意：此接口适用于NB设备异步命令下发，暂不支持其他协议类型设备命令下发。 
+        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发异步命令，以实现对设备的控制。平台负责将命令发送给设备，并将设备执行命令结果异步通知应用服务器。 命令执行结果支持灵活的数据流转，应用服务器通过调用物联网平台的创建规则触发条件（Resource:device.command.status，Event:update）、创建规则动作并激活规则后，当命令状态变更时，物联网平台会根据规则将结果发送到规则指定的服务器，如用户自定义的HTTP服务器，AMQP服务器，以及华为云的其他储存服务器等, 详情参考[设备命令状态变更通知](https://support.huaweicloud.com/api-iothub/iot_06_v5_01212.html)。注意：此接口适用于NB设备异步命令下发，暂不支持其他协议类型设备命令下发。 
 
         :param CreateAsyncCommandRequest request
         :return: CreateAsyncCommandResponse
@@ -656,7 +664,7 @@ class IoTDAAsyncClient(Client):
     def create_async_command_with_http_info(self, request):
         """下发异步设备命令
 
-        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发异步命令，以实现对设备的控制。平台负责将命令发送给设备，并将设备执行命令结果异步返回。注意：此接口适用于NB设备异步命令下发，暂不支持其他协议类型设备命令下发。 
+        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发异步命令，以实现对设备的控制。平台负责将命令发送给设备，并将设备执行命令结果异步通知应用服务器。 命令执行结果支持灵活的数据流转，应用服务器通过调用物联网平台的创建规则触发条件（Resource:device.command.status，Event:update）、创建规则动作并激活规则后，当命令状态变更时，物联网平台会根据规则将结果发送到规则指定的服务器，如用户自定义的HTTP服务器，AMQP服务器，以及华为云的其他储存服务器等, 详情参考[设备命令状态变更通知](https://support.huaweicloud.com/api-iothub/iot_06_v5_01212.html)。注意：此接口适用于NB设备异步命令下发，暂不支持其他协议类型设备命令下发。 
 
         :param CreateAsyncCommandRequest request
         :return: CreateAsyncCommandResponse
@@ -706,6 +714,172 @@ class IoTDAAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateAsyncCommandResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_async_commands_async(self, request):
+        """查询设备下队列中的命令
+
+        查询设备下队列中的命（处理中的命令），包含PENDING,SENT,DELIVERED三种状态，注意：DELIVERED状态的命令经过系统设定的一段时间（具体以系统配置为准）仍然没有更新，就会从队列中移除，变为历史命令。 
+
+        :param ListAsyncCommandsRequest request
+        :return: ListAsyncCommandsResponse
+        """
+        return self.list_async_commands_with_http_info(request)
+
+    def list_async_commands_with_http_info(self, request):
+        """查询设备下队列中的命令
+
+        查询设备下队列中的命（处理中的命令），包含PENDING,SENT,DELIVERED三种状态，注意：DELIVERED状态的命令经过系统设定的一段时间（具体以系统配置为准）仍然没有更新，就会从队列中移除，变为历史命令。 
+
+        :param ListAsyncCommandsRequest request
+        :return: ListAsyncCommandsResponse
+        """
+
+        all_params = ['device_id', 'stage_auth_token', 'instance_id', 'limit', 'marker', 'offset', 'start_time', 'end_time', 'status', 'command_id', 'command_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'device_id' in local_var_params:
+            path_params['device_id'] = local_var_params['device_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'command_id' in local_var_params:
+            query_params.append(('command_id', local_var_params['command_id']))
+        if 'command_name' in local_var_params:
+            query_params.append(('command_name', local_var_params['command_name']))
+
+        header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/devices/{device_id}/async-commands',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAsyncCommandsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_async_history_commands_async(self, request):
+        """查询设备下的历史命令
+
+        查询设备下发的历史异步命令。 
+
+        :param ListAsyncHistoryCommandsRequest request
+        :return: ListAsyncHistoryCommandsResponse
+        """
+        return self.list_async_history_commands_with_http_info(request)
+
+    def list_async_history_commands_with_http_info(self, request):
+        """查询设备下的历史命令
+
+        查询设备下发的历史异步命令。 
+
+        :param ListAsyncHistoryCommandsRequest request
+        :return: ListAsyncHistoryCommandsResponse
+        """
+
+        all_params = ['device_id', 'stage_auth_token', 'instance_id', 'limit', 'marker', 'offset', 'start_time', 'end_time', 'status', 'command_id', 'command_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'device_id' in local_var_params:
+            path_params['device_id'] = local_var_params['device_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'command_id' in local_var_params:
+            query_params.append(('command_id', local_var_params['command_id']))
+        if 'command_name' in local_var_params:
+            query_params.append(('command_name', local_var_params['command_name']))
+
+        header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/devices/{device_id}/async-commands-history',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAsyncHistoryCommandsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -784,7 +958,7 @@ class IoTDAAsyncClient(Client):
     def create_batch_task_async(self, request):
         """创建批量任务
 
-        应用服务器可调用此接口为创建批量处理任务，对多个设备进行批量操作。当前支持批量软固件升级、批量创建设备、批量删除设备、批量冻结设备、批量解冻设备。
+        应用服务器可调用此接口为创建批量处理任务，对多个设备进行批量操作。当前支持批量软固件升级、批量创建设备、批量删除设备、批量冻结设备、批量解冻设备、批量创建命令任务。
 
         :param CreateBatchTaskRequest request
         :return: CreateBatchTaskResponse
@@ -794,13 +968,13 @@ class IoTDAAsyncClient(Client):
     def create_batch_task_with_http_info(self, request):
         """创建批量任务
 
-        应用服务器可调用此接口为创建批量处理任务，对多个设备进行批量操作。当前支持批量软固件升级、批量创建设备、批量删除设备、批量冻结设备、批量解冻设备。
+        应用服务器可调用此接口为创建批量处理任务，对多个设备进行批量操作。当前支持批量软固件升级、批量创建设备、批量删除设备、批量冻结设备、批量解冻设备、批量创建命令任务。
 
         :param CreateBatchTaskRequest request
         :return: CreateBatchTaskResponse
         """
 
-        all_params = ['create_batch_task_request_body', 'instance_id']
+        all_params = ['create_batch_task_request_body', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -813,6 +987,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -865,7 +1043,7 @@ class IoTDAAsyncClient(Client):
         :return: ListBatchTasksResponse
         """
 
-        all_params = ['task_type', 'instance_id', 'app_id', 'status', 'limit', 'marker', 'offset']
+        all_params = ['task_type', 'sp_auth_token', 'stage_auth_token', 'instance_id', 'app_id', 'status', 'limit', 'marker', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -890,6 +1068,10 @@ class IoTDAAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -940,7 +1122,7 @@ class IoTDAAsyncClient(Client):
         :return: ShowBatchTaskResponse
         """
 
-        all_params = ['task_id', 'instance_id', 'limit', 'marker', 'offset']
+        all_params = ['task_id', 'sp_auth_token', 'stage_auth_token', 'instance_id', 'limit', 'marker', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -961,6 +1143,10 @@ class IoTDAAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1011,7 +1197,7 @@ class IoTDAAsyncClient(Client):
         :return: DeleteBatchTaskFileResponse
         """
 
-        all_params = ['file_id', 'instance_id']
+        all_params = ['file_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1026,6 +1212,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1076,7 +1266,7 @@ class IoTDAAsyncClient(Client):
         :return: ListBatchTaskFilesResponse
         """
 
-        all_params = ['instance_id']
+        all_params = ['sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1089,6 +1279,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1139,7 +1333,7 @@ class IoTDAAsyncClient(Client):
         :return: AddCertificateResponse
         """
 
-        all_params = ['add_certificate_request_body', 'instance_id']
+        all_params = ['add_certificate_request_body', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1152,6 +1346,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1204,7 +1402,7 @@ class IoTDAAsyncClient(Client):
         :return: CheckCertificateResponse
         """
 
-        all_params = ['certificate_id', 'action_id', 'check_certificate_request_body', 'instance_id']
+        all_params = ['certificate_id', 'action_id', 'check_certificate_request_body', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1221,6 +1419,10 @@ class IoTDAAsyncClient(Client):
             query_params.append(('action_id', local_var_params['action_id']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1273,7 +1475,7 @@ class IoTDAAsyncClient(Client):
         :return: DeleteCertificateResponse
         """
 
-        all_params = ['certificate_id', 'instance_id']
+        all_params = ['certificate_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1288,6 +1490,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1338,7 +1544,7 @@ class IoTDAAsyncClient(Client):
         :return: ListCertificatesResponse
         """
 
-        all_params = ['instance_id', 'app_id', 'limit', 'marker', 'offset']
+        all_params = ['sp_auth_token', 'stage_auth_token', 'instance_id', 'app_id', 'limit', 'marker', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1359,6 +1565,10 @@ class IoTDAAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1390,10 +1600,361 @@ class IoTDAAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_app_certificate_async(self, request):
+        """上传应用侧CA证书
+
+        上传应用侧CA证书
+
+        :param CreateAppCertificateRequest request
+        :return: CreateAppCertificateResponse
+        """
+        return self.create_app_certificate_with_http_info(request)
+
+    def create_app_certificate_with_http_info(self, request):
+        """上传应用侧CA证书
+
+        上传应用侧CA证书
+
+        :param CreateAppCertificateRequest request
+        :return: CreateAppCertificateResponse
+        """
+
+        all_params = ['name', 'cacert', 'sp_auth_token', 'stage_auth_token', 'instance_id', 'host']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+        if 'name' in local_var_params:
+            form_params['name'] =  local_var_params['name']
+        if 'cacert' in local_var_params:
+            form_params['cacert'] =  local_var_params['cacert']
+        if 'host' in local_var_params:
+            form_params['host'] =  local_var_params['host']
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/certificates/app-cert/',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateAppCertificateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_app_certificate_async(self, request):
+        """删除应用侧CA证书
+
+        删除应用侧CA证书
+
+        :param DeleteAppCertificateRequest request
+        :return: DeleteAppCertificateResponse
+        """
+        return self.delete_app_certificate_with_http_info(request)
+
+    def delete_app_certificate_with_http_info(self, request):
+        """删除应用侧CA证书
+
+        删除应用侧CA证书
+
+        :param DeleteAppCertificateRequest request
+        :return: DeleteAppCertificateResponse
+        """
+
+        all_params = ['cert_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cert_id' in local_var_params:
+            path_params['cert_id'] = local_var_params['cert_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/certificates/app-cert/{cert_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteAppCertificateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_app_certificates_async(self, request):
+        """查询应用侧CA证书列表
+
+        查询应用侧CA证书列表
+
+        :param ListAppCertificatesRequest request
+        :return: ListAppCertificatesResponse
+        """
+        return self.list_app_certificates_with_http_info(request)
+
+    def list_app_certificates_with_http_info(self, request):
+        """查询应用侧CA证书列表
+
+        查询应用侧CA证书列表
+
+        :param ListAppCertificatesRequest request
+        :return: ListAppCertificatesResponse
+        """
+
+        all_params = ['sp_auth_token', 'stage_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/certificates/app-cert/',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAppCertificatesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_app_certificate_async(self, request):
+        """查询应用侧CA证书
+
+        查询应用侧CA证书
+
+        :param ShowAppCertificateRequest request
+        :return: ShowAppCertificateResponse
+        """
+        return self.show_app_certificate_with_http_info(request)
+
+    def show_app_certificate_with_http_info(self, request):
+        """查询应用侧CA证书
+
+        查询应用侧CA证书
+
+        :param ShowAppCertificateRequest request
+        :return: ShowAppCertificateResponse
+        """
+
+        all_params = ['cert_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cert_id' in local_var_params:
+            path_params['cert_id'] = local_var_params['cert_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/certificates/{cert_id}/',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowAppCertificateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_app_certificate_async(self, request):
+        """更新应用侧CA证书
+
+        更新应用侧CA证书
+
+        :param UpdateAppCertificateRequest request
+        :return: UpdateAppCertificateResponse
+        """
+        return self.update_app_certificate_with_http_info(request)
+
+    def update_app_certificate_with_http_info(self, request):
+        """更新应用侧CA证书
+
+        更新应用侧CA证书
+
+        :param UpdateAppCertificateRequest request
+        :return: UpdateAppCertificateResponse
+        """
+
+        all_params = ['cert_id', 'sp_auth_token', 'stage_auth_token', 'instance_id', 'cacert', 'host']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cert_id' in local_var_params:
+            path_params['cert_id'] = local_var_params['cert_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+        if 'cacert' in local_var_params:
+            form_params['cacert'] =  local_var_params['cacert']
+        if 'host' in local_var_params:
+            form_params['host'] =  local_var_params['host']
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/iot/{project_id}/certificates/app-cert/{cert_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateAppCertificateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_command_async(self, request):
         """下发设备命令
 
-        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发命令，以实现对设备的同步控制。平台负责将命令以同步方式发送给设备，并将设备执行命令结果同步返回, 如果设备没有响应，平台会返回给应用服务器超时。注意：此接口适用于MQTT设备同步命令下发，暂不支持NB-IoT设备异步命令下发。 
+        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发命令，以实现对设备的同步控制。平台负责将命令以同步方式发送给设备，并将设备执行命令结果同步返回, 如果设备没有响应，平台会返回给应用服务器超时，平台超时间是25秒。注意：此接口适用于MQTT设备同步命令下发，暂不支持NB-IoT设备命令下发。 
 
         :param CreateCommandRequest request
         :return: CreateCommandResponse
@@ -1403,13 +1964,13 @@ class IoTDAAsyncClient(Client):
     def create_command_with_http_info(self, request):
         """下发设备命令
 
-        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发命令，以实现对设备的同步控制。平台负责将命令以同步方式发送给设备，并将设备执行命令结果同步返回, 如果设备没有响应，平台会返回给应用服务器超时。注意：此接口适用于MQTT设备同步命令下发，暂不支持NB-IoT设备异步命令下发。 
+        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发命令，以实现对设备的同步控制。平台负责将命令以同步方式发送给设备，并将设备执行命令结果同步返回, 如果设备没有响应，平台会返回给应用服务器超时，平台超时间是25秒。注意：此接口适用于MQTT设备同步命令下发，暂不支持NB-IoT设备命令下发。 
 
         :param CreateCommandRequest request
         :return: CreateCommandResponse
         """
 
-        all_params = ['device_id', 'create_command_request_body', 'instance_id']
+        all_params = ['device_id', 'create_command_request_body', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1424,6 +1985,8 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1476,7 +2039,7 @@ class IoTDAAsyncClient(Client):
         :return: AddDeviceGroupResponse
         """
 
-        all_params = ['instance_id', 'add_device_group_request_body']
+        all_params = ['sp_auth_token', 'stage_auth_token', 'instance_id', 'add_device_group_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1489,6 +2052,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1541,7 +2108,7 @@ class IoTDAAsyncClient(Client):
         :return: CreateOrDeleteDeviceInGroupResponse
         """
 
-        all_params = ['group_id', 'action_id', 'device_id', 'instance_id']
+        all_params = ['group_id', 'action_id', 'device_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1560,6 +2127,10 @@ class IoTDAAsyncClient(Client):
             query_params.append(('device_id', local_var_params['device_id']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1610,7 +2181,7 @@ class IoTDAAsyncClient(Client):
         :return: DeleteDeviceGroupResponse
         """
 
-        all_params = ['group_id', 'instance_id']
+        all_params = ['group_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1625,6 +2196,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1675,7 +2250,7 @@ class IoTDAAsyncClient(Client):
         :return: ListDeviceGroupsResponse
         """
 
-        all_params = ['instance_id', 'limit', 'marker', 'offset', 'last_modified_time', 'app_id']
+        all_params = ['sp_auth_token', 'stage_auth_token', 'instance_id', 'limit', 'marker', 'offset', 'last_modified_time', 'app_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1698,6 +2273,10 @@ class IoTDAAsyncClient(Client):
             query_params.append(('app_id', local_var_params['app_id']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1748,7 +2327,7 @@ class IoTDAAsyncClient(Client):
         :return: ShowDeviceGroupResponse
         """
 
-        all_params = ['group_id', 'instance_id']
+        all_params = ['group_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1763,6 +2342,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1813,7 +2396,7 @@ class IoTDAAsyncClient(Client):
         :return: ShowDevicesInGroupResponse
         """
 
-        all_params = ['group_id', 'instance_id', 'limit', 'marker', 'offset']
+        all_params = ['group_id', 'sp_auth_token', 'stage_auth_token', 'instance_id', 'limit', 'marker', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1834,6 +2417,10 @@ class IoTDAAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1884,7 +2471,7 @@ class IoTDAAsyncClient(Client):
         :return: UpdateDeviceGroupResponse
         """
 
-        all_params = ['group_id', 'update_device_group_request_body', 'instance_id']
+        all_params = ['group_id', 'update_device_group_request_body', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1899,6 +2486,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1951,7 +2542,7 @@ class IoTDAAsyncClient(Client):
         :return: AddDeviceResponse
         """
 
-        all_params = ['add_device_request_body', 'instance_id']
+        all_params = ['add_device_request_body', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1964,6 +2555,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -2016,7 +2611,7 @@ class IoTDAAsyncClient(Client):
         :return: DeleteDeviceResponse
         """
 
-        all_params = ['device_id', 'instance_id']
+        all_params = ['device_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2031,6 +2626,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -2081,7 +2680,7 @@ class IoTDAAsyncClient(Client):
         :return: FreezeDeviceResponse
         """
 
-        all_params = ['device_id', 'instance_id']
+        all_params = ['device_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2096,6 +2695,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -2146,7 +2749,7 @@ class IoTDAAsyncClient(Client):
         :return: ListDevicesResponse
         """
 
-        all_params = ['instance_id', 'product_id', 'gateway_id', 'is_cascade_query', 'node_id', 'device_name', 'limit', 'marker', 'offset', 'start_time', 'end_time', 'app_id']
+        all_params = ['sp_auth_token', 'stage_auth_token', 'instance_id', 'product_id', 'gateway_id', 'is_cascade_query', 'node_id', 'device_name', 'limit', 'marker', 'offset', 'start_time', 'end_time', 'app_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2181,6 +2784,10 @@ class IoTDAAsyncClient(Client):
             query_params.append(('app_id', local_var_params['app_id']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -2231,7 +2838,7 @@ class IoTDAAsyncClient(Client):
         :return: ResetDeviceSecretResponse
         """
 
-        all_params = ['device_id', 'action_id', 'reset_device_secret_request_body', 'instance_id']
+        all_params = ['device_id', 'action_id', 'reset_device_secret_request_body', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2248,6 +2855,10 @@ class IoTDAAsyncClient(Client):
             query_params.append(('action_id', local_var_params['action_id']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -2300,7 +2911,7 @@ class IoTDAAsyncClient(Client):
         :return: ShowDeviceResponse
         """
 
-        all_params = ['device_id', 'instance_id']
+        all_params = ['device_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2315,6 +2926,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -2365,7 +2980,7 @@ class IoTDAAsyncClient(Client):
         :return: UnfreezeDeviceResponse
         """
 
-        all_params = ['device_id', 'instance_id']
+        all_params = ['device_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2380,6 +2995,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -2430,7 +3049,7 @@ class IoTDAAsyncClient(Client):
         :return: UpdateDeviceResponse
         """
 
-        all_params = ['device_id', 'update_device_request_body', 'instance_id']
+        all_params = ['device_id', 'update_device_request_body', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2445,6 +3064,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -2497,7 +3120,7 @@ class IoTDAAsyncClient(Client):
         :return: ShowDeviceShadowResponse
         """
 
-        all_params = ['device_id', 'instance_id']
+        all_params = ['device_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2512,6 +3135,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -2562,7 +3189,7 @@ class IoTDAAsyncClient(Client):
         :return: UpdateDeviceShadowDesiredDataResponse
         """
 
-        all_params = ['device_id', 'update_device_shadow_desired_data_request_body', 'instance_id']
+        all_params = ['device_id', 'update_device_shadow_desired_data_request_body', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2577,6 +3204,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -2613,7 +3244,7 @@ class IoTDAAsyncClient(Client):
     def create_message_async(self, request):
         """下发设备消息
 
-        物联网平台可向设备下发消息，应用服务器可调用此接口向指定设备下发消息，以实现对设备的控制。应用将消息下发给平台后，平台返回应用响应结果，平台再将消息发送给设备。 
+        物联网平台可向设备下发消息，应用服务器可调用此接口向指定设备下发消息，以实现对设备的控制。应用将消息下发给平台后，平台返回应用响应结果，平台再将消息发送给设备。注意：此接口适用于MQTT设备消息下发，暂不支持其他协议接入的设备消息下发。 
 
         :param CreateMessageRequest request
         :return: CreateMessageResponse
@@ -2623,13 +3254,13 @@ class IoTDAAsyncClient(Client):
     def create_message_with_http_info(self, request):
         """下发设备消息
 
-        物联网平台可向设备下发消息，应用服务器可调用此接口向指定设备下发消息，以实现对设备的控制。应用将消息下发给平台后，平台返回应用响应结果，平台再将消息发送给设备。 
+        物联网平台可向设备下发消息，应用服务器可调用此接口向指定设备下发消息，以实现对设备的控制。应用将消息下发给平台后，平台返回应用响应结果，平台再将消息发送给设备。注意：此接口适用于MQTT设备消息下发，暂不支持其他协议接入的设备消息下发。 
 
         :param CreateMessageRequest request
         :return: CreateMessageResponse
         """
 
-        all_params = ['device_id', 'create_message_request_body', 'instance_id']
+        all_params = ['device_id', 'create_message_request_body', 'stage_auth_token', 'sp_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2644,6 +3275,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -2696,7 +3331,7 @@ class IoTDAAsyncClient(Client):
         :return: ListDeviceMessagesResponse
         """
 
-        all_params = ['device_id', 'instance_id']
+        all_params = ['device_id', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2711,6 +3346,8 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -2761,7 +3398,7 @@ class IoTDAAsyncClient(Client):
         :return: ShowDeviceMessageResponse
         """
 
-        all_params = ['device_id', 'message_id', 'instance_id']
+        all_params = ['device_id', 'message_id', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2778,6 +3415,8 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -2828,7 +3467,7 @@ class IoTDAAsyncClient(Client):
         :return: CreateProductResponse
         """
 
-        all_params = ['instance_id', 'create_product_request_body']
+        all_params = ['sp_auth_token', 'stage_auth_token', 'instance_id', 'create_product_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2841,6 +3480,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -2893,7 +3536,7 @@ class IoTDAAsyncClient(Client):
         :return: DeleteProductResponse
         """
 
-        all_params = ['product_id', 'instance_id', 'app_id']
+        all_params = ['product_id', 'sp_auth_token', 'stage_auth_token', 'instance_id', 'app_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2910,6 +3553,10 @@ class IoTDAAsyncClient(Client):
             query_params.append(('app_id', local_var_params['app_id']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -2960,7 +3607,7 @@ class IoTDAAsyncClient(Client):
         :return: ListProductsResponse
         """
 
-        all_params = ['instance_id', 'limit', 'marker', 'app_id', 'offset']
+        all_params = ['sp_auth_token', 'stage_auth_token', 'instance_id', 'limit', 'marker', 'app_id', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2981,6 +3628,10 @@ class IoTDAAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -3031,7 +3682,7 @@ class IoTDAAsyncClient(Client):
         :return: ShowProductResponse
         """
 
-        all_params = ['product_id', 'instance_id', 'app_id']
+        all_params = ['product_id', 'sp_auth_token', 'stage_auth_token', 'instance_id', 'app_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3048,6 +3699,10 @@ class IoTDAAsyncClient(Client):
             query_params.append(('app_id', local_var_params['app_id']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -3098,7 +3753,7 @@ class IoTDAAsyncClient(Client):
         :return: UpdateProductResponse
         """
 
-        all_params = ['product_id', 'update_product_request_body', 'instance_id']
+        all_params = ['product_id', 'update_product_request_body', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3113,6 +3768,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -3149,7 +3808,7 @@ class IoTDAAsyncClient(Client):
     def list_properties_async(self, request):
         """查询设备属性
 
-        设备的产品模型中定义了物联网平台可向设备下发的属性，应用服务器可调用此接口查询指定设备下属性。 
+        设备的产品模型中定义了物联网平台可向设备下发的属性，应用服务器可调用此接口查询指定设备下属性。注意：此接口适用于MQTT设备，暂不支持NB-IoT设备。 
 
         :param ListPropertiesRequest request
         :return: ListPropertiesResponse
@@ -3159,13 +3818,13 @@ class IoTDAAsyncClient(Client):
     def list_properties_with_http_info(self, request):
         """查询设备属性
 
-        设备的产品模型中定义了物联网平台可向设备下发的属性，应用服务器可调用此接口查询指定设备下属性。 
+        设备的产品模型中定义了物联网平台可向设备下发的属性，应用服务器可调用此接口查询指定设备下属性。注意：此接口适用于MQTT设备，暂不支持NB-IoT设备。 
 
         :param ListPropertiesRequest request
         :return: ListPropertiesResponse
         """
 
-        all_params = ['device_id', 'service_id', 'instance_id']
+        all_params = ['device_id', 'service_id', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3182,6 +3841,8 @@ class IoTDAAsyncClient(Client):
             query_params.append(('service_id', local_var_params['service_id']))
 
         header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -3216,7 +3877,7 @@ class IoTDAAsyncClient(Client):
     def update_properties_async(self, request):
         """修改设备属性
 
-        设备的产品模型中定义了物联网平台可向设备下发的属性，应用服务器可调用此接口向指定设备下属性。平台负责将属性以同步方式发送给设备，并将设备执行属性结果同步返回。 
+        设备的产品模型中定义了物联网平台可向设备下发的属性，应用服务器可调用此接口向指定设备下属性。平台负责将属性以同步方式发送给设备，并将设备执行属性结果同步返回。注意：此接口适用于MQTT设备，暂不支持NB-IoT设备。 
 
         :param UpdatePropertiesRequest request
         :return: UpdatePropertiesResponse
@@ -3226,13 +3887,13 @@ class IoTDAAsyncClient(Client):
     def update_properties_with_http_info(self, request):
         """修改设备属性
 
-        设备的产品模型中定义了物联网平台可向设备下发的属性，应用服务器可调用此接口向指定设备下属性。平台负责将属性以同步方式发送给设备，并将设备执行属性结果同步返回。 
+        设备的产品模型中定义了物联网平台可向设备下发的属性，应用服务器可调用此接口向指定设备下属性。平台负责将属性以同步方式发送给设备，并将设备执行属性结果同步返回。注意：此接口适用于MQTT设备，暂不支持NB-IoT设备。 
 
         :param UpdatePropertiesRequest request
         :return: UpdatePropertiesResponse
         """
 
-        all_params = ['device_id', 'update_properties_request_body', 'instance_id']
+        all_params = ['device_id', 'update_properties_request_body', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3247,6 +3908,8 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -3366,7 +4029,7 @@ class IoTDAAsyncClient(Client):
         :return: CreateRuleActionResponse
         """
 
-        all_params = ['create_rule_action_request_body', 'stage_auth_token', 'instance_id']
+        all_params = ['create_rule_action_request_body', 'stage_auth_token', 'instance_id', 'x_lb_service']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3383,6 +4046,8 @@ class IoTDAAsyncClient(Client):
             header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
+        if 'x_lb_service' in local_var_params:
+            header_params['x-LB-Service'] = local_var_params['x_lb_service']
 
         form_params = {}
 
@@ -4196,7 +4861,7 @@ class IoTDAAsyncClient(Client):
         :return: ListRulesResponse
         """
 
-        all_params = ['instance_id', 'app_id', 'limit', 'marker', 'offset']
+        all_params = ['instance_id', 'app_id', 'rule_type', 'limit', 'marker', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4209,6 +4874,8 @@ class IoTDAAsyncClient(Client):
         query_params = []
         if 'app_id' in local_var_params:
             query_params.append(('app_id', local_var_params['app_id']))
+        if 'rule_type' in local_var_params:
+            query_params.append(('rule_type', local_var_params['rule_type']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'marker' in local_var_params:
@@ -4399,7 +5066,7 @@ class IoTDAAsyncClient(Client):
         :return: CreateSubscriptionResponse
         """
 
-        all_params = ['instance_id', 'create_subscription_request_body']
+        all_params = ['sp_auth_token', 'stage_auth_token', 'instance_id', 'create_subscription_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4412,6 +5079,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -4464,7 +5135,7 @@ class IoTDAAsyncClient(Client):
         :return: DeleteSubscriptionResponse
         """
 
-        all_params = ['subscription_id', 'instance_id']
+        all_params = ['subscription_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4479,6 +5150,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -4529,7 +5204,7 @@ class IoTDAAsyncClient(Client):
         :return: ListSubscriptionsResponse
         """
 
-        all_params = ['instance_id', 'resource', 'event', 'callbackurl', 'app_id', 'channel', 'limit', 'marker', 'offset']
+        all_params = ['sp_auth_token', 'stage_auth_token', 'instance_id', 'resource', 'event', 'callbackurl', 'app_id', 'channel', 'limit', 'marker', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4558,6 +5233,10 @@ class IoTDAAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -4608,7 +5287,7 @@ class IoTDAAsyncClient(Client):
         :return: ShowSubscriptionResponse
         """
 
-        all_params = ['subscription_id', 'instance_id']
+        all_params = ['subscription_id', 'sp_auth_token', 'stage_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4623,6 +5302,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -4673,7 +5356,7 @@ class IoTDAAsyncClient(Client):
         :return: UpdateSubscriptionResponse
         """
 
-        all_params = ['subscription_id', 'instance_id', 'update_subscription_request_body']
+        all_params = ['subscription_id', 'sp_auth_token', 'stage_auth_token', 'instance_id', 'update_subscription_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4688,6 +5371,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -4740,7 +5427,7 @@ class IoTDAAsyncClient(Client):
         :return: ListResourcesByTagsResponse
         """
 
-        all_params = ['instance_id', 'limit', 'marker', 'offset', 'list_resources_by_tags_request_body']
+        all_params = ['sp_auth_token', 'stage_auth_token', 'instance_id', 'limit', 'marker', 'offset', 'list_resources_by_tags_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4759,6 +5446,10 @@ class IoTDAAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -4811,7 +5502,7 @@ class IoTDAAsyncClient(Client):
         :return: TagDeviceResponse
         """
 
-        all_params = ['instance_id', 'tag_device_request_body']
+        all_params = ['sp_auth_token', 'stage_auth_token', 'instance_id', 'tag_device_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4824,6 +5515,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -4876,7 +5571,7 @@ class IoTDAAsyncClient(Client):
         :return: UntagDeviceResponse
         """
 
-        all_params = ['instance_id', 'untag_device_request_body']
+        all_params = ['sp_auth_token', 'stage_auth_token', 'instance_id', 'untag_device_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4889,6 +5584,10 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 

@@ -23,7 +23,7 @@ class RecognizeBusinessCardResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'BusinessCardResponseBodyItem'
+        'result': 'BusinessCardResult'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeBusinessCardResponse(SdkResponse):
 
 
         :return: The result of this RecognizeBusinessCardResponse.
-        :rtype: BusinessCardResponseBodyItem
+        :rtype: BusinessCardResult
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeBusinessCardResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeBusinessCardResponse.
-        :type: BusinessCardResponseBodyItem
+        :type: BusinessCardResult
         """
         self._result = result
 

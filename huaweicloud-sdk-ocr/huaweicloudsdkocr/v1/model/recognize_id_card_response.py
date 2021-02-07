@@ -23,7 +23,7 @@ class RecognizeIDCardResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'IDCardResultBody'
+        'result': 'IDCardResult'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeIDCardResponse(SdkResponse):
 
 
         :return: The result of this RecognizeIDCardResponse.
-        :rtype: IDCardResultBody
+        :rtype: IDCardResult
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeIDCardResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeIDCardResponse.
-        :type: IDCardResultBody
+        :type: IDCardResult
         """
         self._result = result
 

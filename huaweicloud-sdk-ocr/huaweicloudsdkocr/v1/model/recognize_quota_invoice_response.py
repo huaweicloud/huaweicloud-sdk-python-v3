@@ -23,7 +23,7 @@ class RecognizeQuotaInvoiceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'QuotaInvoiceResultBody'
+        'result': 'QuotaInvoiceResult'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RecognizeQuotaInvoiceResponse(SdkResponse):
 
 
         :return: The result of this RecognizeQuotaInvoiceResponse.
-        :rtype: QuotaInvoiceResultBody
+        :rtype: QuotaInvoiceResult
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RecognizeQuotaInvoiceResponse(SdkResponse):
 
 
         :param result: The result of this RecognizeQuotaInvoiceResponse.
-        :type: QuotaInvoiceResultBody
+        :type: QuotaInvoiceResult
         """
         self._result = result
 
