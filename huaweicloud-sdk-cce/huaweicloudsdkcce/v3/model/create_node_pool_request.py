@@ -23,51 +23,27 @@ class CreateNodePoolRequest:
     sensitive_list = []
 
     openapi_types = {
-        'content_type': 'str',
         'cluster_id': 'str',
         'body': 'NodePool'
     }
 
     attribute_map = {
-        'content_type': 'Content-Type',
         'cluster_id': 'cluster_id',
         'body': 'body'
     }
 
-    def __init__(self, content_type='application/json', cluster_id=None, body=None):
+    def __init__(self, cluster_id=None, body=None):
         """CreateNodePoolRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._content_type = None
         self._cluster_id = None
         self._body = None
         self.discriminator = None
 
-        self.content_type = content_type
         self.cluster_id = cluster_id
         if body is not None:
             self.body = body
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this CreateNodePoolRequest.
-
-
-        :return: The content_type of this CreateNodePoolRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this CreateNodePoolRequest.
-
-
-        :param content_type: The content_type of this CreateNodePoolRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def cluster_id(self):

@@ -70,7 +70,7 @@ class QueryIndirectPartnersReq:
     def account_name(self):
         """Gets the account_name of this QueryIndirectPartnersReq.
 
-        |参数名称：登录名称| |参数约束及描述：登录名称|
+        精英服务商伙伴的账号名。
 
         :return: The account_name of this QueryIndirectPartnersReq.
         :rtype: str
@@ -81,7 +81,7 @@ class QueryIndirectPartnersReq:
     def account_name(self, account_name):
         """Sets the account_name of this QueryIndirectPartnersReq.
 
-        |参数名称：登录名称| |参数约束及描述：登录名称|
+        精英服务商伙伴的账号名。
 
         :param account_name: The account_name of this QueryIndirectPartnersReq.
         :type: str
@@ -92,7 +92,7 @@ class QueryIndirectPartnersReq:
     def associated_on_begin(self):
         """Gets the associated_on_begin of this QueryIndirectPartnersReq.
 
-        |参数名称：关联开始时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z| |参数约束及描述：关联开始时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z|
+        精英服务商关联华为云伙伴能力中心的开始时间。 UTC时间（包括时区），比如2016-03-28T00:00:00Z
 
         :return: The associated_on_begin of this QueryIndirectPartnersReq.
         :rtype: str
@@ -103,7 +103,7 @@ class QueryIndirectPartnersReq:
     def associated_on_begin(self, associated_on_begin):
         """Sets the associated_on_begin of this QueryIndirectPartnersReq.
 
-        |参数名称：关联开始时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z| |参数约束及描述：关联开始时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z|
+        精英服务商关联华为云伙伴能力中心的开始时间。 UTC时间（包括时区），比如2016-03-28T00:00:00Z
 
         :param associated_on_begin: The associated_on_begin of this QueryIndirectPartnersReq.
         :type: str
@@ -114,7 +114,7 @@ class QueryIndirectPartnersReq:
     def associated_on_end(self):
         """Gets the associated_on_end of this QueryIndirectPartnersReq.
 
-        |参数名称：关联结束时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z| |参数约束及描述：关联结束时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z|
+        精英服务商关联华为云伙伴能力中心的结束时间。 UTC时间（包括时区），比如2016-03-28T00:00:00Z
 
         :return: The associated_on_end of this QueryIndirectPartnersReq.
         :rtype: str
@@ -125,7 +125,7 @@ class QueryIndirectPartnersReq:
     def associated_on_end(self, associated_on_end):
         """Sets the associated_on_end of this QueryIndirectPartnersReq.
 
-        |参数名称：关联结束时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z| |参数约束及描述：关联结束时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z|
+        精英服务商关联华为云伙伴能力中心的结束时间。 UTC时间（包括时区），比如2016-03-28T00:00:00Z
 
         :param associated_on_end: The associated_on_end of this QueryIndirectPartnersReq.
         :type: str
@@ -136,7 +136,7 @@ class QueryIndirectPartnersReq:
     def offset(self):
         """Gets the offset of this QueryIndirectPartnersReq.
 
-        |参数名称：偏移量，从0开始，默认是0| |参数的约束及描述：偏移量，从0开始，默认是0|
+        偏移量，从0开始。默认值为0。
 
         :return: The offset of this QueryIndirectPartnersReq.
         :rtype: int
@@ -147,7 +147,7 @@ class QueryIndirectPartnersReq:
     def offset(self, offset):
         """Sets the offset of this QueryIndirectPartnersReq.
 
-        |参数名称：偏移量，从0开始，默认是0| |参数的约束及描述：偏移量，从0开始，默认是0|
+        偏移量，从0开始。默认值为0。
 
         :param offset: The offset of this QueryIndirectPartnersReq.
         :type: int
@@ -158,7 +158,7 @@ class QueryIndirectPartnersReq:
     def limit(self):
         """Gets the limit of this QueryIndirectPartnersReq.
 
-        |参数名称：最大100，默认为10| |参数的约束及描述：最大100，默认为10|
+        每次查询的数量限制。默认值为10。
 
         :return: The limit of this QueryIndirectPartnersReq.
         :rtype: int
@@ -169,7 +169,7 @@ class QueryIndirectPartnersReq:
     def limit(self, limit):
         """Sets the limit of this QueryIndirectPartnersReq.
 
-        |参数名称：最大100，默认为10| |参数的约束及描述：最大100，默认为10|
+        每次查询的数量限制。默认值为10。
 
         :param limit: The limit of this QueryIndirectPartnersReq.
         :type: int
@@ -180,7 +180,7 @@ class QueryIndirectPartnersReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this QueryIndirectPartnersReq.
 
-        |参数名称：二级经销商ID| |参数约束及描述：二级经销商ID|
+        精英服务商ID。
 
         :return: The indirect_partner_id of this QueryIndirectPartnersReq.
         :rtype: str
@@ -191,7 +191,7 @@ class QueryIndirectPartnersReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this QueryIndirectPartnersReq.
 
-        |参数名称：二级经销商ID| |参数约束及描述：二级经销商ID|
+        精英服务商ID。
 
         :param indirect_partner_id: The indirect_partner_id of this QueryIndirectPartnersReq.
         :type: str

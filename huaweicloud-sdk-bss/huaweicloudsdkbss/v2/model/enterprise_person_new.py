@@ -53,7 +53,7 @@ class EnterprisePersonNew:
     def legel_name(self):
         """Gets the legel_name of this EnterprisePersonNew.
 
-        |参数名称：法人姓名| |参数的约束及描述：该参数必填，且只允许字符串|
+        法人姓名。
 
         :return: The legel_name of this EnterprisePersonNew.
         :rtype: str
@@ -64,7 +64,7 @@ class EnterprisePersonNew:
     def legel_name(self, legel_name):
         """Sets the legel_name of this EnterprisePersonNew.
 
-        |参数名称：法人姓名| |参数的约束及描述：该参数必填，且只允许字符串|
+        法人姓名。
 
         :param legel_name: The legel_name of this EnterprisePersonNew.
         :type: str
@@ -75,7 +75,7 @@ class EnterprisePersonNew:
     def legel_id_number(self):
         """Gets the legel_id_number of this EnterprisePersonNew.
 
-        |参数名称：法人身份证号| |参数的约束及描述：该参数必填，且只允许字符串|
+        法人身份证号。
 
         :return: The legel_id_number of this EnterprisePersonNew.
         :rtype: str
@@ -86,7 +86,7 @@ class EnterprisePersonNew:
     def legel_id_number(self, legel_id_number):
         """Sets the legel_id_number of this EnterprisePersonNew.
 
-        |参数名称：法人身份证号| |参数的约束及描述：该参数必填，且只允许字符串|
+        法人身份证号。
 
         :param legel_id_number: The legel_id_number of this EnterprisePersonNew.
         :type: str
@@ -97,7 +97,7 @@ class EnterprisePersonNew:
     def certifier_role(self):
         """Gets the certifier_role of this EnterprisePersonNew.
 
-        |参数名称：认证人角色| |参数的约束及描述：该参数非必填，legalPerson ：法人代表 authorizedPerson：授权人|
+        认证人角色。 legalPerson ：法人代表。
 
         :return: The certifier_role of this EnterprisePersonNew.
         :rtype: str
@@ -108,7 +108,7 @@ class EnterprisePersonNew:
     def certifier_role(self, certifier_role):
         """Sets the certifier_role of this EnterprisePersonNew.
 
-        |参数名称：认证人角色| |参数的约束及描述：该参数非必填，legalPerson ：法人代表 authorizedPerson：授权人|
+        认证人角色。 legalPerson ：法人代表。
 
         :param certifier_role: The certifier_role of this EnterprisePersonNew.
         :type: str

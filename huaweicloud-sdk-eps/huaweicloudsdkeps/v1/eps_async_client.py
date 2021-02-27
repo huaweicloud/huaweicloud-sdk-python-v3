@@ -442,71 +442,6 @@ class EpsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def modify_enterprise_project_async(self, request):
-        """修改企业项目
-
-        修改企业项目。当前仅支持修改名称和描述。
-
-        :param ModifyEnterpriseProjectRequest request
-        :return: ModifyEnterpriseProjectResponse
-        """
-        return self.modify_enterprise_project_with_http_info(request)
-
-    def modify_enterprise_project_with_http_info(self, request):
-        """修改企业项目
-
-        修改企业项目。当前仅支持修改名称和描述。
-
-        :param ModifyEnterpriseProjectRequest request
-        :return: ModifyEnterpriseProjectResponse
-        """
-
-        all_params = ['enterprise_project_id', 'modify_ep']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'enterprise_project_id' in local_var_params:
-            path_params['enterprise_project_id'] = local_var_params['enterprise_project_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1.0/enterprise-projects/{enterprise_project_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ModifyEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def show_api_version_async(self, request):
         """查询API版本号详情
 
@@ -753,6 +688,71 @@ class EpsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowResourceBindEnterpriseProjectResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_enterprise_project_async(self, request):
+        """修改企业项目
+
+        修改企业项目。当前仅支持修改名称和描述。
+
+        :param UpdateEnterpriseProjectRequest request
+        :return: UpdateEnterpriseProjectResponse
+        """
+        return self.update_enterprise_project_with_http_info(request)
+
+    def update_enterprise_project_with_http_info(self, request):
+        """修改企业项目
+
+        修改企业项目。当前仅支持修改名称和描述。
+
+        :param UpdateEnterpriseProjectRequest request
+        :return: UpdateEnterpriseProjectResponse
+        """
+
+        all_params = ['enterprise_project_id', 'modify_ep']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            path_params['enterprise_project_id'] = local_var_params['enterprise_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/enterprise-projects/{enterprise_project_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateEnterpriseProjectResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

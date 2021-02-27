@@ -178,9 +178,9 @@ class CloudIDEAsyncClient(Client):
 
 
     def show_account_status_async(self, request):
-        """查询当前账号访问权限
+        """查询当前帐号访问权限
 
-        查询当前账号访问权限
+        查询当前帐号访问权限
 
         :param ShowAccountStatusRequest request
         :return: ShowAccountStatusResponse
@@ -188,9 +188,9 @@ class CloudIDEAsyncClient(Client):
         return self.show_account_status_with_http_info(request)
 
     def show_account_status_with_http_info(self, request):
-        """查询当前账号访问权限
+        """查询当前帐号访问权限
 
-        查询当前账号访问权限
+        查询当前帐号访问权限
 
         :param ShowAccountStatusRequest request
         :return: ShowAccountStatusResponse

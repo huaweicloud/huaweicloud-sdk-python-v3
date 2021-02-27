@@ -50,7 +50,7 @@ class ShowRealnameAuthenticationReviewResultResponse(SdkResponse):
     def review_result(self):
         """Gets the review_result of this ShowRealnameAuthenticationReviewResultResponse.
 
-        |参数名称：实名认证审核结果，只有状态码为200并且已经提交过实名认证请求才返回：0：审核中1：不通过2：通过| |参数的约束及描述：实名认证审核结果，只有状态码为200并且已经提交过实名认证请求才返回：0：审核中1：不通过2：通过|
+        实名认证审核结果，只有状态码为200并且已经提交过实名认证请求才返回： 0：审核中1：不通过2：通过
 
         :return: The review_result of this ShowRealnameAuthenticationReviewResultResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ShowRealnameAuthenticationReviewResultResponse(SdkResponse):
     def review_result(self, review_result):
         """Sets the review_result of this ShowRealnameAuthenticationReviewResultResponse.
 
-        |参数名称：实名认证审核结果，只有状态码为200并且已经提交过实名认证请求才返回：0：审核中1：不通过2：通过| |参数的约束及描述：实名认证审核结果，只有状态码为200并且已经提交过实名认证请求才返回：0：审核中1：不通过2：通过|
+        实名认证审核结果，只有状态码为200并且已经提交过实名认证请求才返回： 0：审核中1：不通过2：通过
 
         :param review_result: The review_result of this ShowRealnameAuthenticationReviewResultResponse.
         :type: int
@@ -72,7 +72,7 @@ class ShowRealnameAuthenticationReviewResultResponse(SdkResponse):
     def opinion(self):
         """Gets the opinion of this ShowRealnameAuthenticationReviewResultResponse.
 
-        |参数名称：审批意见，只有状态码为200并且审核不通过才返回。| |参数约束及描述：审批意见，只有状态码为200并且审核不通过才返回。|
+        审批意见，只有状态码为200并且审核不通过才返回。
 
         :return: The opinion of this ShowRealnameAuthenticationReviewResultResponse.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowRealnameAuthenticationReviewResultResponse(SdkResponse):
     def opinion(self, opinion):
         """Sets the opinion of this ShowRealnameAuthenticationReviewResultResponse.
 
-        |参数名称：审批意见，只有状态码为200并且审核不通过才返回。| |参数约束及描述：审批意见，只有状态码为200并且审核不通过才返回。|
+        审批意见，只有状态码为200并且审核不通过才返回。
 
         :param opinion: The opinion of this ShowRealnameAuthenticationReviewResultResponse.
         :type: str

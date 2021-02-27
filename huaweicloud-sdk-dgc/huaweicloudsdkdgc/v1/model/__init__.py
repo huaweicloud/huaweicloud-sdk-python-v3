@@ -64,12 +64,6 @@ from huaweicloudsdkdgc.v1.model.list_scripts_response import ListScriptsResponse
 from huaweicloudsdkdgc.v1.model.list_system_tasks_request import ListSystemTasksRequest
 from huaweicloudsdkdgc.v1.model.list_system_tasks_response import ListSystemTasksResponse
 from huaweicloudsdkdgc.v1.model.location import Location
-from huaweicloudsdkdgc.v1.model.modify_job_request import ModifyJobRequest
-from huaweicloudsdkdgc.v1.model.modify_job_response import ModifyJobResponse
-from huaweicloudsdkdgc.v1.model.modify_resource_request import ModifyResourceRequest
-from huaweicloudsdkdgc.v1.model.modify_resource_response import ModifyResourceResponse
-from huaweicloudsdkdgc.v1.model.modify_script_request import ModifyScriptRequest
-from huaweicloudsdkdgc.v1.model.modify_script_response import ModifyScriptResponse
 from huaweicloudsdkdgc.v1.model.node import Node
 from huaweicloudsdkdgc.v1.model.node_instance import NodeInstance
 from huaweicloudsdkdgc.v1.model.real_time_node_status import RealTimeNodeStatus
@@ -106,3 +100,9 @@ from huaweicloudsdkdgc.v1.model.stop_job_response import StopJobResponse
 from huaweicloudsdkdgc.v1.model.sub_task_status import SubTaskStatus
 from huaweicloudsdkdgc.v1.model.update_connection_request import UpdateConnectionRequest
 from huaweicloudsdkdgc.v1.model.update_connection_response import UpdateConnectionResponse
+from huaweicloudsdkdgc.v1.model.update_job_request import UpdateJobRequest
+from huaweicloudsdkdgc.v1.model.update_job_response import UpdateJobResponse
+from huaweicloudsdkdgc.v1.model.update_resource_request import UpdateResourceRequest
+from huaweicloudsdkdgc.v1.model.update_resource_response import UpdateResourceResponse
+from huaweicloudsdkdgc.v1.model.update_script_request import UpdateScriptRequest
+from huaweicloudsdkdgc.v1.model.update_script_response import UpdateScriptResponse

@@ -100,7 +100,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：总条数，必须大于等于0。| |参数的约束及描述：总条数，必须大于等于0。|
+        总条数，必须大于等于0。
 
         :return: The total_count of this ShowCustomerMonthlySumResponse.
         :rtype: int
@@ -111,7 +111,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：总条数，必须大于等于0。| |参数的约束及描述：总条数，必须大于等于0。|
+        总条数，必须大于等于0。
 
         :param total_count: The total_count of this ShowCustomerMonthlySumResponse.
         :type: int
@@ -122,7 +122,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def bill_sums(self):
         """Gets the bill_sums of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：账单记录，具体参考表 BillSumRecordInfo。| |参数约束以及描述：账单记录，具体参考表 BillSumRecordInfo。|
+        账单记录，具体参考表2。
 
         :return: The bill_sums of this ShowCustomerMonthlySumResponse.
         :rtype: list[BillSumRecordInfoV2]
@@ -133,7 +133,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def bill_sums(self, bill_sums):
         """Sets the bill_sums of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：账单记录，具体参考表 BillSumRecordInfo。| |参数约束以及描述：账单记录，具体参考表 BillSumRecordInfo。|
+        账单记录，具体参考表2。
 
         :param bill_sums: The bill_sums of this ShowCustomerMonthlySumResponse.
         :type: list[BillSumRecordInfoV2]
@@ -144,7 +144,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def consume_amount(self):
         """Gets the consume_amount of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：总金额（包含退订）。| |参数的约束及描述：总金额（包含退订）。|
+        总金额（包含退订）。
 
         :return: The consume_amount of this ShowCustomerMonthlySumResponse.
         :rtype: float
@@ -155,7 +155,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def consume_amount(self, consume_amount):
         """Sets the consume_amount of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：总金额（包含退订）。| |参数的约束及描述：总金额（包含退订）。|
+        总金额（包含退订）。
 
         :param consume_amount: The consume_amount of this ShowCustomerMonthlySumResponse.
         :type: float
@@ -166,7 +166,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def debt_amount(self):
         """Gets the debt_amount of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：总欠费金额。| |参数的约束及描述：总欠费金额。|
+        总欠费金额。
 
         :return: The debt_amount of this ShowCustomerMonthlySumResponse.
         :rtype: float
@@ -177,7 +177,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def debt_amount(self, debt_amount):
         """Sets the debt_amount of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：总欠费金额。| |参数的约束及描述：总欠费金额。|
+        总欠费金额。
 
         :param debt_amount: The debt_amount of this ShowCustomerMonthlySumResponse.
         :type: float
@@ -188,7 +188,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def coupon_amount(self):
         """Gets the coupon_amount of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
+        代金券金额。
 
         :return: The coupon_amount of this ShowCustomerMonthlySumResponse.
         :rtype: float
@@ -199,7 +199,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def coupon_amount(self, coupon_amount):
         """Sets the coupon_amount of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
+        代金券金额。
 
         :param coupon_amount: The coupon_amount of this ShowCustomerMonthlySumResponse.
         :type: float
@@ -210,7 +210,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def flexipurchase_coupon_amount(self):
         """Gets the flexipurchase_coupon_amount of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：现金券金额，预留。| |参数的约束及描述：现金券金额，预留。|
+        现金券金额，预留。
 
         :return: The flexipurchase_coupon_amount of this ShowCustomerMonthlySumResponse.
         :rtype: float
@@ -221,7 +221,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def flexipurchase_coupon_amount(self, flexipurchase_coupon_amount):
         """Sets the flexipurchase_coupon_amount of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：现金券金额，预留。| |参数的约束及描述：现金券金额，预留。|
+        现金券金额，预留。
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this ShowCustomerMonthlySumResponse.
         :type: float
@@ -232,7 +232,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def stored_value_card_amount(self):
         """Gets the stored_value_card_amount of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：储值卡金额，预留。| |参数的约束及描述：储值卡金额，预留。|
+        储值卡金额，预留。
 
         :return: The stored_value_card_amount of this ShowCustomerMonthlySumResponse.
         :rtype: float
@@ -243,7 +243,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def stored_value_card_amount(self, stored_value_card_amount):
         """Sets the stored_value_card_amount of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：储值卡金额，预留。| |参数的约束及描述：储值卡金额，预留。|
+        储值卡金额，预留。
 
         :param stored_value_card_amount: The stored_value_card_amount of this ShowCustomerMonthlySumResponse.
         :type: float
@@ -254,7 +254,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def cash_amount(self):
         """Gets the cash_amount of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：现金账户金额。| |参数的约束及描述：现金账户金额。|
+        现金账户金额。
 
         :return: The cash_amount of this ShowCustomerMonthlySumResponse.
         :rtype: float
@@ -265,7 +265,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def cash_amount(self, cash_amount):
         """Sets the cash_amount of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：现金账户金额。| |参数的约束及描述：现金账户金额。|
+        现金账户金额。
 
         :param cash_amount: The cash_amount of this ShowCustomerMonthlySumResponse.
         :type: float
@@ -276,7 +276,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def credit_amount(self):
         """Gets the credit_amount of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：信用账户金额。| |参数的约束及描述：信用账户金额。|
+        信用账户金额。
 
         :return: The credit_amount of this ShowCustomerMonthlySumResponse.
         :rtype: float
@@ -287,7 +287,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def credit_amount(self, credit_amount):
         """Sets the credit_amount of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：信用账户金额。| |参数的约束及描述：信用账户金额。|
+        信用账户金额。
 
         :param credit_amount: The credit_amount of this ShowCustomerMonthlySumResponse.
         :type: float
@@ -298,7 +298,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def writeoff_amount(self):
         """Gets the writeoff_amount of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：欠费核销金额| |参数的约束及描述：欠费核销金额|
+        欠费核销金额。
 
         :return: The writeoff_amount of this ShowCustomerMonthlySumResponse.
         :rtype: float
@@ -309,7 +309,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def writeoff_amount(self, writeoff_amount):
         """Sets the writeoff_amount of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：欠费核销金额| |参数的约束及描述：欠费核销金额|
+        欠费核销金额。
 
         :param writeoff_amount: The writeoff_amount of this ShowCustomerMonthlySumResponse.
         :type: float
@@ -320,7 +320,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def measure_id(self):
         """Gets the measure_id of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：金额单位。1：元| |参数的约束及描述：金额单位。1：元|
+        金额单位。 1：元
 
         :return: The measure_id of this ShowCustomerMonthlySumResponse.
         :rtype: int
@@ -331,7 +331,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def measure_id(self, measure_id):
         """Sets the measure_id of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：金额单位。1：元| |参数的约束及描述：金额单位。1：元|
+        金额单位。 1：元
 
         :param measure_id: The measure_id of this ShowCustomerMonthlySumResponse.
         :type: int
@@ -342,7 +342,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def currency(self):
         """Gets the currency of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：币种。CNY：人民币。USD：美元。| |参数约束及描述：币种。CNY：人民币。USD：美元。|
+        币种。 CNY：人民币。
 
         :return: The currency of this ShowCustomerMonthlySumResponse.
         :rtype: str
@@ -353,7 +353,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def currency(self, currency):
         """Sets the currency of this ShowCustomerMonthlySumResponse.
 
-        |参数名称：币种。CNY：人民币。USD：美元。| |参数约束及描述：币种。CNY：人民币。USD：美元。|
+        币种。 CNY：人民币。
 
         :param currency: The currency of this ShowCustomerMonthlySumResponse.
         :type: str

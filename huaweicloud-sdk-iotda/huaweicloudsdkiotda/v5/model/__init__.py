@@ -37,7 +37,6 @@ from huaweicloudsdkiotda.v5.model.batch_show_queue_request import BatchShowQueue
 from huaweicloudsdkiotda.v5.model.batch_show_queue_response import BatchShowQueueResponse
 from huaweicloudsdkiotda.v5.model.batch_task_file import BatchTaskFile
 from huaweicloudsdkiotda.v5.model.bind_tags_dto import BindTagsDTO
-from huaweicloudsdkiotda.v5.model.certificate_rsp_dto import CertificateRspDTO
 from huaweicloudsdkiotda.v5.model.certificates_rsp_dto import CertificatesRspDTO
 from huaweicloudsdkiotda.v5.model.change_rule_status_request import ChangeRuleStatusRequest
 from huaweicloudsdkiotda.v5.model.change_rule_status_response import ChangeRuleStatusResponse
@@ -50,8 +49,6 @@ from huaweicloudsdkiotda.v5.model.condition_group import ConditionGroup
 from huaweicloudsdkiotda.v5.model.create_access_code_request import CreateAccessCodeRequest
 from huaweicloudsdkiotda.v5.model.create_access_code_request_body import CreateAccessCodeRequestBody
 from huaweicloudsdkiotda.v5.model.create_access_code_response import CreateAccessCodeResponse
-from huaweicloudsdkiotda.v5.model.create_app_certificate_request import CreateAppCertificateRequest
-from huaweicloudsdkiotda.v5.model.create_app_certificate_response import CreateAppCertificateResponse
 from huaweicloudsdkiotda.v5.model.create_async_command_request import CreateAsyncCommandRequest
 from huaweicloudsdkiotda.v5.model.create_async_command_response import CreateAsyncCommandResponse
 from huaweicloudsdkiotda.v5.model.create_batch_task import CreateBatchTask
@@ -76,8 +73,6 @@ from huaweicloudsdkiotda.v5.model.create_sub_req import CreateSubReq
 from huaweicloudsdkiotda.v5.model.create_subscription_request import CreateSubscriptionRequest
 from huaweicloudsdkiotda.v5.model.create_subscription_response import CreateSubscriptionResponse
 from huaweicloudsdkiotda.v5.model.daily_timer_type import DailyTimerType
-from huaweicloudsdkiotda.v5.model.delete_app_certificate_request import DeleteAppCertificateRequest
-from huaweicloudsdkiotda.v5.model.delete_app_certificate_response import DeleteAppCertificateResponse
 from huaweicloudsdkiotda.v5.model.delete_application_request import DeleteApplicationRequest
 from huaweicloudsdkiotda.v5.model.delete_application_response import DeleteApplicationResponse
 from huaweicloudsdkiotda.v5.model.delete_batch_task_file_request import DeleteBatchTaskFileRequest
@@ -120,8 +115,6 @@ from huaweicloudsdkiotda.v5.model.http_forwarding import HttpForwarding
 from huaweicloudsdkiotda.v5.model.influx_db_forwarding import InfluxDBForwarding
 from huaweicloudsdkiotda.v5.model.initial_desired import InitialDesired
 from huaweicloudsdkiotda.v5.model.io_ta_forwarding import IoTAForwarding
-from huaweicloudsdkiotda.v5.model.list_app_certificates_request import ListAppCertificatesRequest
-from huaweicloudsdkiotda.v5.model.list_app_certificates_response import ListAppCertificatesResponse
 from huaweicloudsdkiotda.v5.model.list_async_commands_request import ListAsyncCommandsRequest
 from huaweicloudsdkiotda.v5.model.list_async_commands_response import ListAsyncCommandsResponse
 from huaweicloudsdkiotda.v5.model.list_async_history_commands_request import ListAsyncHistoryCommandsRequest
@@ -186,8 +179,6 @@ from huaweicloudsdkiotda.v5.model.service_command_para import ServiceCommandPara
 from huaweicloudsdkiotda.v5.model.service_command_response import ServiceCommandResponse
 from huaweicloudsdkiotda.v5.model.service_event import ServiceEvent
 from huaweicloudsdkiotda.v5.model.service_property import ServiceProperty
-from huaweicloudsdkiotda.v5.model.show_app_certificate_request import ShowAppCertificateRequest
-from huaweicloudsdkiotda.v5.model.show_app_certificate_response import ShowAppCertificateResponse
 from huaweicloudsdkiotda.v5.model.show_application_request import ShowApplicationRequest
 from huaweicloudsdkiotda.v5.model.show_application_response import ShowApplicationResponse
 from huaweicloudsdkiotda.v5.model.show_applications_request import ShowApplicationsRequest
@@ -237,8 +228,6 @@ from huaweicloudsdkiotda.v5.model.unfreeze_device_response import UnfreezeDevice
 from huaweicloudsdkiotda.v5.model.untag_device_request import UntagDeviceRequest
 from huaweicloudsdkiotda.v5.model.untag_device_response import UntagDeviceResponse
 from huaweicloudsdkiotda.v5.model.update_action_req import UpdateActionReq
-from huaweicloudsdkiotda.v5.model.update_app_certificate_request import UpdateAppCertificateRequest
-from huaweicloudsdkiotda.v5.model.update_app_certificate_response import UpdateAppCertificateResponse
 from huaweicloudsdkiotda.v5.model.update_desired import UpdateDesired
 from huaweicloudsdkiotda.v5.model.update_desireds import UpdateDesireds
 from huaweicloudsdkiotda.v5.model.update_device import UpdateDevice

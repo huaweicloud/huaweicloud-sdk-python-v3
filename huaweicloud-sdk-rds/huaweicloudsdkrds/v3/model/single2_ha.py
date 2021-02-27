@@ -25,16 +25,18 @@ class Single2Ha:
     openapi_types = {
         'az_code_new_node': 'str',
         'password': 'str',
-        'dsspool_id': 'str'
+        'dsspool_id': 'str',
+        'is_auto_pay': 'bool'
     }
 
     attribute_map = {
         'az_code_new_node': 'az_code_new_node',
         'password': 'password',
-        'dsspool_id': 'dsspool_id'
+        'dsspool_id': 'dsspool_id',
+        'is_auto_pay': 'is_auto_pay'
     }
 
-    def __init__(self, az_code_new_node=None, password=None, dsspool_id=None):
+    def __init__(self, az_code_new_node=None, password=None, dsspool_id=None, is_auto_pay=None):
         """Single2Ha - a model defined in huaweicloud sdk"""
         
         
@@ -42,6 +44,7 @@ class Single2Ha:
         self._az_code_new_node = None
         self._password = None
         self._dsspool_id = None
+        self._is_auto_pay = None
         self.discriminator = None
 
         self.az_code_new_node = az_code_new_node
@@ -49,6 +52,8 @@ class Single2Ha:
             self.password = password
         if dsspool_id is not None:
             self.dsspool_id = dsspool_id
+        if is_auto_pay is not None:
+            self.is_auto_pay = is_auto_pay
 
     @property
     def az_code_new_node(self):
@@ -115,6 +120,28 @@ class Single2Ha:
         :type: str
         """
         self._dsspool_id = dsspool_id
+
+    @property
+    def is_auto_pay(self):
+        """Gets the is_auto_pay of this Single2Ha.
+
+        包周期实例单转主备时可指定，表示是否自动从客户的账户中支付。
+
+        :return: The is_auto_pay of this Single2Ha.
+        :rtype: bool
+        """
+        return self._is_auto_pay
+
+    @is_auto_pay.setter
+    def is_auto_pay(self, is_auto_pay):
+        """Sets the is_auto_pay of this Single2Ha.
+
+        包周期实例单转主备时可指定，表示是否自动从客户的账户中支付。
+
+        :param is_auto_pay: The is_auto_pay of this Single2Ha.
+        :type: bool
+        """
+        self._is_auto_pay = is_auto_pay
 
     def to_dict(self):
         """Returns the model properties as a dict"""

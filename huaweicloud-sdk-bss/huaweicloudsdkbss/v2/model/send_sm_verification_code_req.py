@@ -59,7 +59,7 @@ class SendSmVerificationCodeReq:
     def mobile_phone(self):
         """Gets the mobile_phone of this SendSmVerificationCodeReq.
 
-        |参数名称：手机号| |参数约束及描述：手机号|
+        接受短信验证码的手机号码。
 
         :return: The mobile_phone of this SendSmVerificationCodeReq.
         :rtype: str
@@ -70,7 +70,7 @@ class SendSmVerificationCodeReq:
     def mobile_phone(self, mobile_phone):
         """Sets the mobile_phone of this SendSmVerificationCodeReq.
 
-        |参数名称：手机号| |参数约束及描述：手机号|
+        接受短信验证码的手机号码。
 
         :param mobile_phone: The mobile_phone of this SendSmVerificationCodeReq.
         :type: str
@@ -81,7 +81,7 @@ class SendSmVerificationCodeReq:
     def timeout(self):
         """Gets the timeout of this SendSmVerificationCodeReq.
 
-        |参数名称：超时时间，单位是分钟| |参数的约束及描述：超时时间，单位是分钟，短信传递10，邮箱传递60|
+        超时时间，不指定时默认为10分钟。 单位：分钟
 
         :return: The timeout of this SendSmVerificationCodeReq.
         :rtype: int
@@ -92,7 +92,7 @@ class SendSmVerificationCodeReq:
     def timeout(self, timeout):
         """Sets the timeout of this SendSmVerificationCodeReq.
 
-        |参数名称：超时时间，单位是分钟| |参数的约束及描述：超时时间，单位是分钟，短信传递10，邮箱传递60|
+        超时时间，不指定时默认为10分钟。 单位：分钟
 
         :param timeout: The timeout of this SendSmVerificationCodeReq.
         :type: int
@@ -103,7 +103,7 @@ class SendSmVerificationCodeReq:
     def language(self):
         """Gets the language of this SendSmVerificationCodeReq.
 
-        |参数名称：发送的短信的语言zh-cn: 中文en-us: 英语| |参数约束及描述：发送的短信的语言zh-cn: 中文en-us: 英语|
+        发送的短信的语言。 zh-cn: 中文en-us: 英语 不设置默认为偏好设置的默认语言。
 
         :return: The language of this SendSmVerificationCodeReq.
         :rtype: str
@@ -114,7 +114,7 @@ class SendSmVerificationCodeReq:
     def language(self, language):
         """Sets the language of this SendSmVerificationCodeReq.
 
-        |参数名称：发送的短信的语言zh-cn: 中文en-us: 英语| |参数约束及描述：发送的短信的语言zh-cn: 中文en-us: 英语|
+        发送的短信的语言。 zh-cn: 中文en-us: 英语 不设置默认为偏好设置的默认语言。
 
         :param language: The language of this SendSmVerificationCodeReq.
         :type: str
@@ -125,7 +125,7 @@ class SendSmVerificationCodeReq:
     def sm_template_args(self):
         """Gets the sm_template_args of this SendSmVerificationCodeReq.
 
-        |参数名称：短信模板参数| |参数约束以及描述：短信模板参数|
+        短信发送模板中的变量，具体参见表1。
 
         :return: The sm_template_args of this SendSmVerificationCodeReq.
         :rtype: list[TemplateArgs]
@@ -136,7 +136,7 @@ class SendSmVerificationCodeReq:
     def sm_template_args(self, sm_template_args):
         """Sets the sm_template_args of this SendSmVerificationCodeReq.
 
-        |参数名称：短信模板参数| |参数约束以及描述：短信模板参数|
+        短信发送模板中的变量，具体参见表1。
 
         :param sm_template_args: The sm_template_args of this SendSmVerificationCodeReq.
         :type: list[TemplateArgs]

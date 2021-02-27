@@ -50,7 +50,7 @@ class ListProvincesResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListProvincesResponse.
 
-        |参数名称：查询个数，成功的时候返回| |参数的约束及描述：查询个数，成功的时候返回|
+        查询个数，成功的时候返回。
 
         :return: The count of this ListProvincesResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ListProvincesResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListProvincesResponse.
 
-        |参数名称：查询个数，成功的时候返回| |参数的约束及描述：查询个数，成功的时候返回|
+        查询个数，成功的时候返回。
 
         :param count: The count of this ListProvincesResponse.
         :type: int
@@ -72,7 +72,7 @@ class ListProvincesResponse(SdkResponse):
     def provinces(self):
         """Gets the provinces of this ListProvincesResponse.
 
-        |参数名称：省份信息列表，成功的时候返回| |参数约束以及描述：省份信息列表，成功的时候返回|
+        省份信息列表，成功的时候返回，具体参见表3。
 
         :return: The provinces of this ListProvincesResponse.
         :rtype: list[Province]
@@ -83,7 +83,7 @@ class ListProvincesResponse(SdkResponse):
     def provinces(self, provinces):
         """Sets the provinces of this ListProvincesResponse.
 
-        |参数名称：省份信息列表，成功的时候返回| |参数约束以及描述：省份信息列表，成功的时候返回|
+        省份信息列表，成功的时候返回，具体参见表3。
 
         :param provinces: The provinces of this ListProvincesResponse.
         :type: list[Province]

@@ -50,7 +50,7 @@ class LimitValue:
     def value1(self):
         """Gets the value1 of this LimitValue.
 
-        |参数名称：属性值1| |参数约束及描述：属性值1|
+        属性值1。
 
         :return: The value1 of this LimitValue.
         :rtype: str
@@ -61,7 +61,7 @@ class LimitValue:
     def value1(self, value1):
         """Sets the value1 of this LimitValue.
 
-        |参数名称：属性值1| |参数约束及描述：属性值1|
+        属性值1。
 
         :param value1: The value1 of this LimitValue.
         :type: str
@@ -72,7 +72,7 @@ class LimitValue:
     def value2(self):
         """Gets the value2 of this LimitValue.
 
-        |参数名称：属性值2| |参数约束及描述：属性值2|
+        属性值2。
 
         :return: The value2 of this LimitValue.
         :rtype: str
@@ -83,7 +83,7 @@ class LimitValue:
     def value2(self, value2):
         """Sets the value2 of this LimitValue.
 
-        |参数名称：属性值2| |参数约束及描述：属性值2|
+        属性值2。
 
         :param value2: The value2 of this LimitValue.
         :type: str

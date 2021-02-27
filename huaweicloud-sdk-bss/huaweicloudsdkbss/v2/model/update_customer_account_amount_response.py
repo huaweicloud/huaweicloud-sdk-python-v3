@@ -45,7 +45,7 @@ class UpdateCustomerAccountAmountResponse(SdkResponse):
     def transfer_id(self):
         """Gets the transfer_id of this UpdateCustomerAccountAmountResponse.
 
-        |参数名称：总额，即最终优惠后的金额，| |参数约束及描述：总额，即最终优惠后的金额，|
+        事务流水ID，只有成功响应才会返回。
 
         :return: The transfer_id of this UpdateCustomerAccountAmountResponse.
         :rtype: str
@@ -56,7 +56,7 @@ class UpdateCustomerAccountAmountResponse(SdkResponse):
     def transfer_id(self, transfer_id):
         """Sets the transfer_id of this UpdateCustomerAccountAmountResponse.
 
-        |参数名称：总额，即最终优惠后的金额，| |参数约束及描述：总额，即最终优惠后的金额，|
+        事务流水ID，只有成功响应才会返回。
 
         :param transfer_id: The transfer_id of this UpdateCustomerAccountAmountResponse.
         :type: str

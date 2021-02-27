@@ -24,28 +24,24 @@ class UpdateAddonInstanceRequest:
 
     openapi_types = {
         'id': 'str',
-        'content_type': 'str',
         'body': 'InstanceRequest'
     }
 
     attribute_map = {
         'id': 'id',
-        'content_type': 'Content-Type',
         'body': 'body'
     }
 
-    def __init__(self, id=None, content_type='application/json', body=None):
+    def __init__(self, id=None, body=None):
         """UpdateAddonInstanceRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._id = None
-        self._content_type = None
         self._body = None
         self.discriminator = None
 
         self.id = id
-        self.content_type = content_type
         if body is not None:
             self.body = body
 
@@ -68,26 +64,6 @@ class UpdateAddonInstanceRequest:
         :type: str
         """
         self._id = id
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this UpdateAddonInstanceRequest.
-
-
-        :return: The content_type of this UpdateAddonInstanceRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this UpdateAddonInstanceRequest.
-
-
-        :param content_type: The content_type of this UpdateAddonInstanceRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def body(self):

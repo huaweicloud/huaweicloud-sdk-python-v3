@@ -50,7 +50,7 @@ class ListPayPerUseCustomerResourcesResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListPayPerUseCustomerResourcesResponse.
 
-        |参数名称：资源列表。具体请参见表2 OrderInstanceV2。| |参数约束以及描述：资源列表。具体请参见表2 OrderInstanceV2。|
+        资源列表。 具体请参见表2。
 
         :return: The data of this ListPayPerUseCustomerResourcesResponse.
         :rtype: list[OrderInstanceV2]
@@ -61,7 +61,7 @@ class ListPayPerUseCustomerResourcesResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListPayPerUseCustomerResourcesResponse.
 
-        |参数名称：资源列表。具体请参见表2 OrderInstanceV2。| |参数约束以及描述：资源列表。具体请参见表2 OrderInstanceV2。|
+        资源列表。 具体请参见表2。
 
         :param data: The data of this ListPayPerUseCustomerResourcesResponse.
         :type: list[OrderInstanceV2]
@@ -72,7 +72,7 @@ class ListPayPerUseCustomerResourcesResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListPayPerUseCustomerResourcesResponse.
 
-        |参数名称：总记录数。| |参数的约束及描述：总记录数。|
+        总记录数。
 
         :return: The total_count of this ListPayPerUseCustomerResourcesResponse.
         :rtype: int
@@ -83,7 +83,7 @@ class ListPayPerUseCustomerResourcesResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListPayPerUseCustomerResourcesResponse.
 
-        |参数名称：总记录数。| |参数的约束及描述：总记录数。|
+        总记录数。
 
         :param total_count: The total_count of this ListPayPerUseCustomerResourcesResponse.
         :type: int

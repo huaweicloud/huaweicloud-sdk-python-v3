@@ -90,7 +90,7 @@ class QuerySubCustomerListReq:
     def account_name(self):
         """Gets the account_name of this QuerySubCustomerListReq.
 
-        |参数名称：客户登录名称（如果客户创建了子用户，此处需要填写主账号登录名称。关于主账号和子用户的具体介绍请参见身份管理身份管理中“账号”和“IAM用户”的描述）。支持模糊查询。| |参数约束及描述：客户登录名称（如果客户创建了子用户，此处需要填写主账号登录名称。关于主账号和子用户的具体介绍请参见身份管理身份管理中“账号”和“IAM用户”的描述）。支持模糊查询。|
+        客户登录名称（如果客户创建了IAM用户，此处需要填写主账号登录名称。关于主账号和IAM用户的具体介绍请参见身份管理中“账号”和“IAM用户”的描述）。 支持模糊查询。
 
         :return: The account_name of this QuerySubCustomerListReq.
         :rtype: str
@@ -101,7 +101,7 @@ class QuerySubCustomerListReq:
     def account_name(self, account_name):
         """Sets the account_name of this QuerySubCustomerListReq.
 
-        |参数名称：客户登录名称（如果客户创建了子用户，此处需要填写主账号登录名称。关于主账号和子用户的具体介绍请参见身份管理身份管理中“账号”和“IAM用户”的描述）。支持模糊查询。| |参数约束及描述：客户登录名称（如果客户创建了子用户，此处需要填写主账号登录名称。关于主账号和子用户的具体介绍请参见身份管理身份管理中“账号”和“IAM用户”的描述）。支持模糊查询。|
+        客户登录名称（如果客户创建了IAM用户，此处需要填写主账号登录名称。关于主账号和IAM用户的具体介绍请参见身份管理中“账号”和“IAM用户”的描述）。 支持模糊查询。
 
         :param account_name: The account_name of this QuerySubCustomerListReq.
         :type: str
@@ -112,7 +112,7 @@ class QuerySubCustomerListReq:
     def customer(self):
         """Gets the customer of this QuerySubCustomerListReq.
 
-        |参数名称：实名认证名称。支持模糊查询。| |参数约束及描述：实名认证名称。支持模糊查询。|
+        客户的实名认证名称，支持模糊查询。
 
         :return: The customer of this QuerySubCustomerListReq.
         :rtype: str
@@ -123,7 +123,7 @@ class QuerySubCustomerListReq:
     def customer(self, customer):
         """Sets the customer of this QuerySubCustomerListReq.
 
-        |参数名称：实名认证名称。支持模糊查询。| |参数约束及描述：实名认证名称。支持模糊查询。|
+        客户的实名认证名称，支持模糊查询。
 
         :param customer: The customer of this QuerySubCustomerListReq.
         :type: str
@@ -134,7 +134,7 @@ class QuerySubCustomerListReq:
     def offset(self):
         """Gets the offset of this QuerySubCustomerListReq.
 
-        |参数名称：偏移量，从0开始| |参数约束及描述： 偏移量，从0开始|
+        偏移量，从0开始。默认值为0。
 
         :return: The offset of this QuerySubCustomerListReq.
         :rtype: int
@@ -145,7 +145,7 @@ class QuerySubCustomerListReq:
     def offset(self, offset):
         """Sets the offset of this QuerySubCustomerListReq.
 
-        |参数名称：偏移量，从0开始| |参数约束及描述： 偏移量，从0开始|
+        偏移量，从0开始。默认值为0。
 
         :param offset: The offset of this QuerySubCustomerListReq.
         :type: int
@@ -156,7 +156,7 @@ class QuerySubCustomerListReq:
     def limit(self):
         """Gets the limit of this QuerySubCustomerListReq.
 
-        |参数名称：每次查询的数量。默认10，最多100。| |参数约束及描述： 每次查询的数量。默认10，最多100。|
+        每次查询的客户数量。默认值为10。
 
         :return: The limit of this QuerySubCustomerListReq.
         :rtype: int
@@ -167,7 +167,7 @@ class QuerySubCustomerListReq:
     def limit(self, limit):
         """Sets the limit of this QuerySubCustomerListReq.
 
-        |参数名称：每次查询的数量。默认10，最多100。| |参数约束及描述： 每次查询的数量。默认10，最多100。|
+        每次查询的客户数量。默认值为10。
 
         :param limit: The limit of this QuerySubCustomerListReq.
         :type: int
@@ -178,7 +178,7 @@ class QuerySubCustomerListReq:
     def label(self):
         """Gets the label of this QuerySubCustomerListReq.
 
-        |参数名称：标签，支持模糊查找。| |参数约束及描述：非必填，最大长度64|
+        标签，支持模糊查找。
 
         :return: The label of this QuerySubCustomerListReq.
         :rtype: str
@@ -189,7 +189,7 @@ class QuerySubCustomerListReq:
     def label(self, label):
         """Sets the label of this QuerySubCustomerListReq.
 
-        |参数名称：标签，支持模糊查找。| |参数约束及描述：非必填，最大长度64|
+        标签，支持模糊查找。
 
         :param label: The label of this QuerySubCustomerListReq.
         :type: str
@@ -200,7 +200,7 @@ class QuerySubCustomerListReq:
     def association_type(self):
         """Gets the association_type of this QuerySubCustomerListReq.
 
-        |参数名称：关联类型1.推荐，2.垫付，3.转售| |参数约束及描述：非必填，最大长度2|
+        关联类型： 1：推荐2：垫付
 
         :return: The association_type of this QuerySubCustomerListReq.
         :rtype: str
@@ -211,7 +211,7 @@ class QuerySubCustomerListReq:
     def association_type(self, association_type):
         """Sets the association_type of this QuerySubCustomerListReq.
 
-        |参数名称：关联类型1.推荐，2.垫付，3.转售| |参数约束及描述：非必填，最大长度2|
+        关联类型： 1：推荐2：垫付
 
         :param association_type: The association_type of this QuerySubCustomerListReq.
         :type: str
@@ -222,7 +222,7 @@ class QuerySubCustomerListReq:
     def associated_on_begin(self):
         """Gets the associated_on_begin of this QuerySubCustomerListReq.
 
-        |参数名称：关联时间区间段开始，UTC时间。| |参数约束及描述：格式为：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。|
+        关联时间区间段开始，UTC时间。 格式：YYYY-MM-DD'T'hh:mm:ss'Z'，例如“2019-05-06T08:05:01Z”。
 
         :return: The associated_on_begin of this QuerySubCustomerListReq.
         :rtype: str
@@ -233,7 +233,7 @@ class QuerySubCustomerListReq:
     def associated_on_begin(self, associated_on_begin):
         """Sets the associated_on_begin of this QuerySubCustomerListReq.
 
-        |参数名称：关联时间区间段开始，UTC时间。| |参数约束及描述：格式为：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。|
+        关联时间区间段开始，UTC时间。 格式：YYYY-MM-DD'T'hh:mm:ss'Z'，例如“2019-05-06T08:05:01Z”。
 
         :param associated_on_begin: The associated_on_begin of this QuerySubCustomerListReq.
         :type: str
@@ -244,7 +244,7 @@ class QuerySubCustomerListReq:
     def associated_on_end(self):
         """Gets the associated_on_end of this QuerySubCustomerListReq.
 
-        |参数名称：关联时间区间段结束，UTC时间| |参数约束及描述：格式为：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。|
+        关联时间区间段结束，UTC时间。 格式：YYYY-MM-DD'T'hh:mm:ss'Z'，例如“2019-05-06T08:05:01Z”。
 
         :return: The associated_on_end of this QuerySubCustomerListReq.
         :rtype: str
@@ -255,7 +255,7 @@ class QuerySubCustomerListReq:
     def associated_on_end(self, associated_on_end):
         """Sets the associated_on_end of this QuerySubCustomerListReq.
 
-        |参数名称：关联时间区间段结束，UTC时间| |参数约束及描述：格式为：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。|
+        关联时间区间段结束，UTC时间。 格式：YYYY-MM-DD'T'hh:mm:ss'Z'，例如“2019-05-06T08:05:01Z”。
 
         :param associated_on_end: The associated_on_end of this QuerySubCustomerListReq.
         :type: str
@@ -266,7 +266,7 @@ class QuerySubCustomerListReq:
     def customer_id(self):
         """Gets the customer_id of this QuerySubCustomerListReq.
 
-        |参数名称：子客户ID| |参数约束及描述：非必填，最大长度64|
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :return: The customer_id of this QuerySubCustomerListReq.
         :rtype: str
@@ -277,7 +277,7 @@ class QuerySubCustomerListReq:
     def customer_id(self, customer_id):
         """Sets the customer_id of this QuerySubCustomerListReq.
 
-        |参数名称：子客户ID| |参数约束及描述：非必填，最大长度64|
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this QuerySubCustomerListReq.
         :type: str
@@ -288,7 +288,7 @@ class QuerySubCustomerListReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this QuerySubCustomerListReq.
 
-        |参数名称：二级渠道商ID| |参数约束及描述：如果想查询二级渠道子客户的列表，该字段必须携带，最大长度64|
+        精英服务商ID。如果需要查询精英服务商伙伴的子客户列表，必须携带该字段。
 
         :return: The indirect_partner_id of this QuerySubCustomerListReq.
         :rtype: str
@@ -299,7 +299,7 @@ class QuerySubCustomerListReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this QuerySubCustomerListReq.
 
-        |参数名称：二级渠道商ID| |参数约束及描述：如果想查询二级渠道子客户的列表，该字段必须携带，最大长度64|
+        精英服务商ID。如果需要查询精英服务商伙伴的子客户列表，必须携带该字段。
 
         :param indirect_partner_id: The indirect_partner_id of this QuerySubCustomerListReq.
         :type: str

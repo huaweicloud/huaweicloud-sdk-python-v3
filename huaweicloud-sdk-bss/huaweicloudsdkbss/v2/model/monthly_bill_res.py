@@ -170,7 +170,7 @@ class MonthlyBillRes:
     def cycle(self):
         """Gets the cycle of this MonthlyBillRes.
 
-        |参数名称：消费月份| |参数的约束及描述：格式为YYYY-MM|
+        资源详单数据所在账期，格式为YYYY-MM。 例如2020-01。
 
         :return: The cycle of this MonthlyBillRes.
         :rtype: str
@@ -181,7 +181,7 @@ class MonthlyBillRes:
     def cycle(self, cycle):
         """Sets the cycle of this MonthlyBillRes.
 
-        |参数名称：消费月份| |参数的约束及描述：格式为YYYY-MM|
+        资源详单数据所在账期，格式为YYYY-MM。 例如2020-01。
 
         :param cycle: The cycle of this MonthlyBillRes.
         :type: str
@@ -192,7 +192,7 @@ class MonthlyBillRes:
     def bill_type(self):
         """Gets the bill_type of this MonthlyBillRes.
 
-        |参数名称：账单类型| |参数的约束及描述：该参数非必填，1：消费-新购；2：消费-续订；3：消费-变更；4：退款-退订；5：消费-使用；8：消费-自动续订；9：调账-补偿；12：消费-按时计费；13：消费-退订手续费； 15消费-税金；14：消费-服务支持计划月末扣费；16：调账-扣费 100：退款-退订税金 101：调账-补偿税金 102：调账-扣费税金|
+        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费
 
         :return: The bill_type of this MonthlyBillRes.
         :rtype: int
@@ -203,7 +203,7 @@ class MonthlyBillRes:
     def bill_type(self, bill_type):
         """Sets the bill_type of this MonthlyBillRes.
 
-        |参数名称：账单类型| |参数的约束及描述：该参数非必填，1：消费-新购；2：消费-续订；3：消费-变更；4：退款-退订；5：消费-使用；8：消费-自动续订；9：调账-补偿；12：消费-按时计费；13：消费-退订手续费； 15消费-税金；14：消费-服务支持计划月末扣费；16：调账-扣费 100：退款-退订税金 101：调账-补偿税金 102：调账-扣费税金|
+        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费
 
         :param bill_type: The bill_type of this MonthlyBillRes.
         :type: int
@@ -214,7 +214,7 @@ class MonthlyBillRes:
     def customer_id(self):
         """Gets the customer_id of this MonthlyBillRes.
 
-        |参数名称：消费的客户账号ID。| |参数约束及描述：如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID; 如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。|
+        消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
 
         :return: The customer_id of this MonthlyBillRes.
         :rtype: str
@@ -225,7 +225,7 @@ class MonthlyBillRes:
     def customer_id(self, customer_id):
         """Sets the customer_id of this MonthlyBillRes.
 
-        |参数名称：消费的客户账号ID。| |参数约束及描述：如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID; 如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。|
+        消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
 
         :param customer_id: The customer_id of this MonthlyBillRes.
         :type: str
@@ -236,7 +236,7 @@ class MonthlyBillRes:
     def region(self):
         """Gets the region of this MonthlyBillRes.
 
-        |参数名称：云服务区编码| |参数的约束及描述：该参数非必填，例如：“cn-north-1”。|
+        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :return: The region of this MonthlyBillRes.
         :rtype: str
@@ -247,7 +247,7 @@ class MonthlyBillRes:
     def region(self, region):
         """Sets the region of this MonthlyBillRes.
 
-        |参数名称：云服务区编码| |参数的约束及描述：该参数非必填，例如：“cn-north-1”。|
+        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region: The region of this MonthlyBillRes.
         :type: str
@@ -258,7 +258,7 @@ class MonthlyBillRes:
     def region_name(self):
         """Gets the region_name of this MonthlyBillRes.
 
-        |参数名称：云服务区名称| |参数的约束及描述：云服务区名称|
+        云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 
         :return: The region_name of this MonthlyBillRes.
         :rtype: str
@@ -269,7 +269,7 @@ class MonthlyBillRes:
     def region_name(self, region_name):
         """Sets the region_name of this MonthlyBillRes.
 
-        |参数名称：云服务区名称| |参数的约束及描述：云服务区名称|
+        云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 
         :param region_name: The region_name of this MonthlyBillRes.
         :type: str
@@ -280,7 +280,7 @@ class MonthlyBillRes:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this MonthlyBillRes.
 
-        |参数名称：云服务类型编码| |参数的约束及描述：该参数非必填,，例如ECS的云服务类型编码为“hws.service.type.ec2”|
+        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
 
         :return: The cloud_service_type of this MonthlyBillRes.
         :rtype: str
@@ -291,7 +291,7 @@ class MonthlyBillRes:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this MonthlyBillRes.
 
-        |参数名称：云服务类型编码| |参数的约束及描述：该参数非必填,，例如ECS的云服务类型编码为“hws.service.type.ec2”|
+        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
 
         :param cloud_service_type: The cloud_service_type of this MonthlyBillRes.
         :type: str
@@ -302,7 +302,7 @@ class MonthlyBillRes:
     def resource_type_code(self):
         """Gets the resource_type_code of this MonthlyBillRes.
 
-        |参数名称：资源类型编码| |参数的约束及描述：该参数非必填，例如ECS的VM为“hws.resource.type.vm”。|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :return: The resource_type_code of this MonthlyBillRes.
         :rtype: str
@@ -313,7 +313,7 @@ class MonthlyBillRes:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this MonthlyBillRes.
 
-        |参数名称：资源类型编码| |参数的约束及描述：该参数非必填，例如ECS的VM为“hws.resource.type.vm”。|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type_code: The resource_type_code of this MonthlyBillRes.
         :type: str
@@ -324,7 +324,7 @@ class MonthlyBillRes:
     def res_instance_id(self):
         """Gets the res_instance_id of this MonthlyBillRes.
 
-        |参数名称：资源实例ID| |参数的约束及描述：该参数非必填|
+        资源实例ID。
 
         :return: The res_instance_id of this MonthlyBillRes.
         :rtype: str
@@ -335,7 +335,7 @@ class MonthlyBillRes:
     def res_instance_id(self, res_instance_id):
         """Sets the res_instance_id of this MonthlyBillRes.
 
-        |参数名称：资源实例ID| |参数的约束及描述：该参数非必填|
+        资源实例ID。
 
         :param res_instance_id: The res_instance_id of this MonthlyBillRes.
         :type: str
@@ -346,7 +346,7 @@ class MonthlyBillRes:
     def resource_name(self):
         """Gets the resource_name of this MonthlyBillRes.
 
-        |参数名称：资源名称| |参数的约束及描述：客户在创建资源的时候，可以输入资源名称，有些资源也可以在管理资源时，修改资源名称|
+        资源名称。客户在创建资源的时候，可以输入资源名称，有些资源也可以在管理资源时，修改资源名称。
 
         :return: The resource_name of this MonthlyBillRes.
         :rtype: str
@@ -357,7 +357,7 @@ class MonthlyBillRes:
     def resource_name(self, resource_name):
         """Sets the resource_name of this MonthlyBillRes.
 
-        |参数名称：资源名称| |参数的约束及描述：客户在创建资源的时候，可以输入资源名称，有些资源也可以在管理资源时，修改资源名称|
+        资源名称。客户在创建资源的时候，可以输入资源名称，有些资源也可以在管理资源时，修改资源名称。
 
         :param resource_name: The resource_name of this MonthlyBillRes.
         :type: str
@@ -368,7 +368,7 @@ class MonthlyBillRes:
     def resource_tag(self):
         """Gets the resource_tag of this MonthlyBillRes.
 
-        |参数名称：资源标签| |参数的约束及描述：客户在创建资源的时候，可以输入资源名称，有些资源也可以在管理资源时，修改资源名称|
+        资源标签。客户在管理资源的时候，可以设置资源标签。
 
         :return: The resource_tag of this MonthlyBillRes.
         :rtype: str
@@ -379,7 +379,7 @@ class MonthlyBillRes:
     def resource_tag(self, resource_tag):
         """Sets the resource_tag of this MonthlyBillRes.
 
-        |参数名称：资源标签| |参数的约束及描述：客户在创建资源的时候，可以输入资源名称，有些资源也可以在管理资源时，修改资源名称|
+        资源标签。客户在管理资源的时候，可以设置资源标签。
 
         :param resource_tag: The resource_tag of this MonthlyBillRes.
         :type: str
@@ -390,7 +390,7 @@ class MonthlyBillRes:
     def sku_code(self):
         """Gets the sku_code of this MonthlyBillRes.
 
-        |参数名称：SKU编码| |参数的约束及描述：SKU（Stock Keeping Unit，库存量单元）编码，产品下的SKU分类属性|
+        SKU编码，在账单中唯一标识一个资源的规格。
 
         :return: The sku_code of this MonthlyBillRes.
         :rtype: str
@@ -401,7 +401,7 @@ class MonthlyBillRes:
     def sku_code(self, sku_code):
         """Sets the sku_code of this MonthlyBillRes.
 
-        |参数名称：SKU编码| |参数的约束及描述：SKU（Stock Keeping Unit，库存量单元）编码，产品下的SKU分类属性|
+        SKU编码，在账单中唯一标识一个资源的规格。
 
         :param sku_code: The sku_code of this MonthlyBillRes.
         :type: str
@@ -412,7 +412,7 @@ class MonthlyBillRes:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this MonthlyBillRes.
 
-        |参数名称：企业项目ID| |参数的约束及描述：该参数非必填|
+        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :return: The enterprise_project_id of this MonthlyBillRes.
         :rtype: str
@@ -423,7 +423,7 @@ class MonthlyBillRes:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this MonthlyBillRes.
 
-        |参数名称：企业项目ID| |参数的约束及描述：该参数非必填|
+        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this MonthlyBillRes.
         :type: str
@@ -434,7 +434,7 @@ class MonthlyBillRes:
     def enterprise_project_name(self):
         """Gets the enterprise_project_name of this MonthlyBillRes.
 
-        |参数名称：企业项目名称| |参数的约束及描述：该参数非必填|
+        企业项目名称。
 
         :return: The enterprise_project_name of this MonthlyBillRes.
         :rtype: str
@@ -445,7 +445,7 @@ class MonthlyBillRes:
     def enterprise_project_name(self, enterprise_project_name):
         """Sets the enterprise_project_name of this MonthlyBillRes.
 
-        |参数名称：企业项目名称| |参数的约束及描述：该参数非必填|
+        企业项目名称。
 
         :param enterprise_project_name: The enterprise_project_name of this MonthlyBillRes.
         :type: str
@@ -456,7 +456,7 @@ class MonthlyBillRes:
     def charge_mode(self):
         """Gets the charge_mode of this MonthlyBillRes.
 
-        |参数名称：计费模式| |参数的约束及描述：1 : 包年/包月；3: 按需。10: 预留实例|
+        计费模式。 1 : 包年/包月3：按需10：预留实例
 
         :return: The charge_mode of this MonthlyBillRes.
         :rtype: int
@@ -467,7 +467,7 @@ class MonthlyBillRes:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this MonthlyBillRes.
 
-        |参数名称：计费模式| |参数的约束及描述：1 : 包年/包月；3: 按需。10: 预留实例|
+        计费模式。 1 : 包年/包月3：按需10：预留实例
 
         :param charge_mode: The charge_mode of this MonthlyBillRes.
         :type: int
@@ -478,7 +478,7 @@ class MonthlyBillRes:
     def consume_amount(self):
         """Gets the consume_amount of this MonthlyBillRes.
 
-        |参数名称：客户购买云服务类型的消费金额| |参数的约束及描述：该参数非必填，包含代金券，大陆站还包含现金券，大陆站精确到小数点后8位，国际站精确到小数点后2位。|
+        客户购买云服务类型的消费金额，包含代金券、现金券，精确到小数点后2位。
 
         :return: The consume_amount of this MonthlyBillRes.
         :rtype: float
@@ -489,7 +489,7 @@ class MonthlyBillRes:
     def consume_amount(self, consume_amount):
         """Sets the consume_amount of this MonthlyBillRes.
 
-        |参数名称：客户购买云服务类型的消费金额| |参数的约束及描述：该参数非必填，包含代金券，大陆站还包含现金券，大陆站精确到小数点后8位，国际站精确到小数点后2位。|
+        客户购买云服务类型的消费金额，包含代金券、现金券，精确到小数点后2位。
 
         :param consume_amount: The consume_amount of this MonthlyBillRes.
         :type: float
@@ -500,7 +500,7 @@ class MonthlyBillRes:
     def cash_amount(self):
         """Gets the cash_amount of this MonthlyBillRes.
 
-        |参数名称：现金支付金额| |参数的约束及描述：该参数非必填|
+        现金支付金额。
 
         :return: The cash_amount of this MonthlyBillRes.
         :rtype: float
@@ -511,7 +511,7 @@ class MonthlyBillRes:
     def cash_amount(self, cash_amount):
         """Sets the cash_amount of this MonthlyBillRes.
 
-        |参数名称：现金支付金额| |参数的约束及描述：该参数非必填|
+        现金支付金额。
 
         :param cash_amount: The cash_amount of this MonthlyBillRes.
         :type: float
@@ -522,7 +522,7 @@ class MonthlyBillRes:
     def credit_amount(self):
         """Gets the credit_amount of this MonthlyBillRes.
 
-        |参数名称：信用额度支付金额| |参数的约束及描述：该参数非必填|
+        信用额度支付金额。
 
         :return: The credit_amount of this MonthlyBillRes.
         :rtype: float
@@ -533,7 +533,7 @@ class MonthlyBillRes:
     def credit_amount(self, credit_amount):
         """Sets the credit_amount of this MonthlyBillRes.
 
-        |参数名称：信用额度支付金额| |参数的约束及描述：该参数非必填|
+        信用额度支付金额。
 
         :param credit_amount: The credit_amount of this MonthlyBillRes.
         :type: float
@@ -544,7 +544,7 @@ class MonthlyBillRes:
     def coupon_amount(self):
         """Gets the coupon_amount of this MonthlyBillRes.
 
-        |参数名称：代金券支付金额| |参数的约束及描述：该参数非必填。|
+        代金券支付金额。
 
         :return: The coupon_amount of this MonthlyBillRes.
         :rtype: float
@@ -555,7 +555,7 @@ class MonthlyBillRes:
     def coupon_amount(self, coupon_amount):
         """Sets the coupon_amount of this MonthlyBillRes.
 
-        |参数名称：代金券支付金额| |参数的约束及描述：该参数非必填。|
+        代金券支付金额。
 
         :param coupon_amount: The coupon_amount of this MonthlyBillRes.
         :type: float
@@ -566,7 +566,7 @@ class MonthlyBillRes:
     def flexipurchase_coupon_amount(self):
         """Gets the flexipurchase_coupon_amount of this MonthlyBillRes.
 
-        |参数名称：现金券支付金额| |参数的约束及描述：该参数非必填。|
+        现金券支付金额。
 
         :return: The flexipurchase_coupon_amount of this MonthlyBillRes.
         :rtype: float
@@ -577,7 +577,7 @@ class MonthlyBillRes:
     def flexipurchase_coupon_amount(self, flexipurchase_coupon_amount):
         """Sets the flexipurchase_coupon_amount of this MonthlyBillRes.
 
-        |参数名称：现金券支付金额| |参数的约束及描述：该参数非必填。|
+        现金券支付金额。
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this MonthlyBillRes.
         :type: float
@@ -588,7 +588,7 @@ class MonthlyBillRes:
     def stored_card_amount(self):
         """Gets the stored_card_amount of this MonthlyBillRes.
 
-        |参数名称：储值卡支付金额| |参数的约束及描述：该参数非必填。|
+        储值卡支付金额。
 
         :return: The stored_card_amount of this MonthlyBillRes.
         :rtype: float
@@ -599,7 +599,7 @@ class MonthlyBillRes:
     def stored_card_amount(self, stored_card_amount):
         """Sets the stored_card_amount of this MonthlyBillRes.
 
-        |参数名称：储值卡支付金额| |参数的约束及描述：该参数非必填。|
+        储值卡支付金额。
 
         :param stored_card_amount: The stored_card_amount of this MonthlyBillRes.
         :type: float
@@ -610,7 +610,7 @@ class MonthlyBillRes:
     def bonus_amount(self):
         """Gets the bonus_amount of this MonthlyBillRes.
 
-        |参数名称：奖励金支付金额（用于现网未清干净的奖励金）| |参数的约束及描述：该参数非必填。|
+        奖励金支付金额（用于现网客户未使用完的奖励金）。
 
         :return: The bonus_amount of this MonthlyBillRes.
         :rtype: float
@@ -621,7 +621,7 @@ class MonthlyBillRes:
     def bonus_amount(self, bonus_amount):
         """Sets the bonus_amount of this MonthlyBillRes.
 
-        |参数名称：奖励金支付金额（用于现网未清干净的奖励金）| |参数的约束及描述：该参数非必填。|
+        奖励金支付金额（用于现网客户未使用完的奖励金）。
 
         :param bonus_amount: The bonus_amount of this MonthlyBillRes.
         :type: float
@@ -632,7 +632,7 @@ class MonthlyBillRes:
     def debt_amount(self):
         """Gets the debt_amount of this MonthlyBillRes.
 
-        |参数名称：欠费金额| |参数的约束及描述：该参数非必填。|
+        欠费金额。
 
         :return: The debt_amount of this MonthlyBillRes.
         :rtype: float
@@ -643,7 +643,7 @@ class MonthlyBillRes:
     def debt_amount(self, debt_amount):
         """Sets the debt_amount of this MonthlyBillRes.
 
-        |参数名称：欠费金额| |参数的约束及描述：该参数非必填。|
+        欠费金额。
 
         :param debt_amount: The debt_amount of this MonthlyBillRes.
         :type: float
@@ -654,7 +654,7 @@ class MonthlyBillRes:
     def adjustment_amount(self):
         """Gets the adjustment_amount of this MonthlyBillRes.
 
-        |参数名称：欠费核销金额| |参数的约束及描述：该参数非必填。|
+        欠费核销金额。
 
         :return: The adjustment_amount of this MonthlyBillRes.
         :rtype: float
@@ -665,7 +665,7 @@ class MonthlyBillRes:
     def adjustment_amount(self, adjustment_amount):
         """Sets the adjustment_amount of this MonthlyBillRes.
 
-        |参数名称：欠费核销金额| |参数的约束及描述：该参数非必填。|
+        欠费核销金额。
 
         :param adjustment_amount: The adjustment_amount of this MonthlyBillRes.
         :type: float
@@ -676,7 +676,7 @@ class MonthlyBillRes:
     def official_amount(self):
         """Gets the official_amount of this MonthlyBillRes.
 
-        |参数名称：官网价| |参数的约束及描述：该参数非必填。|
+        官网价。
 
         :return: The official_amount of this MonthlyBillRes.
         :rtype: float
@@ -687,7 +687,7 @@ class MonthlyBillRes:
     def official_amount(self, official_amount):
         """Sets the official_amount of this MonthlyBillRes.
 
-        |参数名称：官网价| |参数的约束及描述：该参数非必填。|
+        官网价。
 
         :param official_amount: The official_amount of this MonthlyBillRes.
         :type: float
@@ -698,7 +698,7 @@ class MonthlyBillRes:
     def discount_amount(self):
         """Gets the discount_amount of this MonthlyBillRes.
 
-        |参数名称：对应官网价折扣金额| |参数的约束及描述：该参数非必填。|
+        对应官网价折扣金额。
 
         :return: The discount_amount of this MonthlyBillRes.
         :rtype: float
@@ -709,7 +709,7 @@ class MonthlyBillRes:
     def discount_amount(self, discount_amount):
         """Sets the discount_amount of this MonthlyBillRes.
 
-        |参数名称：对应官网价折扣金额| |参数的约束及描述：该参数非必填。|
+        对应官网价折扣金额。
 
         :param discount_amount: The discount_amount of this MonthlyBillRes.
         :type: float
@@ -720,7 +720,7 @@ class MonthlyBillRes:
     def measure_id(self):
         """Gets the measure_id of this MonthlyBillRes.
 
-        |参数名称：金额单位。1: 元| |参数的约束及描述：该参数非必填|
+        金额单位： 1：元
 
         :return: The measure_id of this MonthlyBillRes.
         :rtype: int
@@ -731,7 +731,7 @@ class MonthlyBillRes:
     def measure_id(self, measure_id):
         """Sets the measure_id of this MonthlyBillRes.
 
-        |参数名称：金额单位。1: 元| |参数的约束及描述：该参数非必填|
+        金额单位： 1：元
 
         :param measure_id: The measure_id of this MonthlyBillRes.
         :type: int

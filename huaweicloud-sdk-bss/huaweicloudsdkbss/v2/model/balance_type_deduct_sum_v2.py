@@ -55,7 +55,7 @@ class BalanceTypeDeductSumV2:
     def balance_type(self):
         """Gets the balance_type of this BalanceTypeDeductSumV2.
 
-        |参数名称：账户类型。BALANCE_TYPE_DEBIT：余额BALANCE_TYPE_CREDIT：信用BALANCE_TYPE_BONUS：奖励BALANCE_TYPE_COUPON：代金券BALANCE_TYPE_RCASH_COUPON 现金券。BALANCE_TYPE_STORED_VALUE_CARD：储值卡消费| |参数约束及描述：账户类型。BALANCE_TYPE_DEBIT：余额BALANCE_TYPE_CREDIT：信用BALANCE_TYPE_BONUS：奖励BALANCE_TYPE_COUPON：代金券BALANCE_TYPE_RCASH_COUPON 现金券。BALANCE_TYPE_STORED_VALUE_CARD：储值卡消费|
+        账户类型。 BALANCE_TYPE_DEBIT：现金BALANCE_TYPE_CREDIT：信用BALANCE_TYPE_BONUS：奖励BALANCE_TYPE_COUPON：代金券BALANCE_TYPE_RCASH_COUPON 现金券。BALANCE_TYPE_STORED_VALUE_CARD：储值卡消费
 
         :return: The balance_type of this BalanceTypeDeductSumV2.
         :rtype: str
@@ -66,7 +66,7 @@ class BalanceTypeDeductSumV2:
     def balance_type(self, balance_type):
         """Sets the balance_type of this BalanceTypeDeductSumV2.
 
-        |参数名称：账户类型。BALANCE_TYPE_DEBIT：余额BALANCE_TYPE_CREDIT：信用BALANCE_TYPE_BONUS：奖励BALANCE_TYPE_COUPON：代金券BALANCE_TYPE_RCASH_COUPON 现金券。BALANCE_TYPE_STORED_VALUE_CARD：储值卡消费| |参数约束及描述：账户类型。BALANCE_TYPE_DEBIT：余额BALANCE_TYPE_CREDIT：信用BALANCE_TYPE_BONUS：奖励BALANCE_TYPE_COUPON：代金券BALANCE_TYPE_RCASH_COUPON 现金券。BALANCE_TYPE_STORED_VALUE_CARD：储值卡消费|
+        账户类型。 BALANCE_TYPE_DEBIT：现金BALANCE_TYPE_CREDIT：信用BALANCE_TYPE_BONUS：奖励BALANCE_TYPE_COUPON：代金券BALANCE_TYPE_RCASH_COUPON 现金券。BALANCE_TYPE_STORED_VALUE_CARD：储值卡消费
 
         :param balance_type: The balance_type of this BalanceTypeDeductSumV2.
         :type: str
@@ -77,7 +77,7 @@ class BalanceTypeDeductSumV2:
     def amount(self):
         """Gets the amount of this BalanceTypeDeductSumV2.
 
-        |参数名称：金额。对于billType=1或者2的账单，该金额为负值。| |参数的约束及描述：金额。对于billType=1或者2的账单，该金额为负值。|
+        金额。 对于billType=1或者2的账单，该金额为负值。
 
         :return: The amount of this BalanceTypeDeductSumV2.
         :rtype: float
@@ -88,7 +88,7 @@ class BalanceTypeDeductSumV2:
     def amount(self, amount):
         """Sets the amount of this BalanceTypeDeductSumV2.
 
-        |参数名称：金额。对于billType=1或者2的账单，该金额为负值。| |参数的约束及描述：金额。对于billType=1或者2的账单，该金额为负值。|
+        金额。 对于billType=1或者2的账单，该金额为负值。
 
         :param amount: The amount of this BalanceTypeDeductSumV2.
         :type: float
@@ -99,7 +99,7 @@ class BalanceTypeDeductSumV2:
     def bill_type(self):
         """Gets the bill_type of this BalanceTypeDeductSumV2.
 
-        |参数名称：费用类型。0：正常；1：退订；2：华为核销。| |参数约束及描述：费用类型。0：正常；1：退订；2：华为核销。|
+        账单类型。 0：正常1：退订2：华为核销
 
         :return: The bill_type of this BalanceTypeDeductSumV2.
         :rtype: str
@@ -110,7 +110,7 @@ class BalanceTypeDeductSumV2:
     def bill_type(self, bill_type):
         """Sets the bill_type of this BalanceTypeDeductSumV2.
 
-        |参数名称：费用类型。0：正常；1：退订；2：华为核销。| |参数约束及描述：费用类型。0：正常；1：退订；2：华为核销。|
+        账单类型。 0：正常1：退订2：华为核销
 
         :param bill_type: The bill_type of this BalanceTypeDeductSumV2.
         :type: str

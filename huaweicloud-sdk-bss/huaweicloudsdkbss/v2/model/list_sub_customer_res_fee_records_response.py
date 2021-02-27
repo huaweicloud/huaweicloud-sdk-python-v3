@@ -55,7 +55,7 @@ class ListSubCustomerResFeeRecordsResponse(SdkResponse):
     def fee_records(self):
         """Gets the fee_records of this ListSubCustomerResFeeRecordsResponse.
 
-        |参数名称：资源费用记录数据。具体请参见表 ResFeeRecordV2。| |参数约束以及描述：资源费用记录数据。具体请参见表 ResFeeRecordV2。|
+        客户的消费记录数据。 具体请参见表2。
 
         :return: The fee_records of this ListSubCustomerResFeeRecordsResponse.
         :rtype: list[SubCustomerResFeeRecordV2]
@@ -66,7 +66,7 @@ class ListSubCustomerResFeeRecordsResponse(SdkResponse):
     def fee_records(self, fee_records):
         """Sets the fee_records of this ListSubCustomerResFeeRecordsResponse.
 
-        |参数名称：资源费用记录数据。具体请参见表 ResFeeRecordV2。| |参数约束以及描述：资源费用记录数据。具体请参见表 ResFeeRecordV2。|
+        客户的消费记录数据。 具体请参见表2。
 
         :param fee_records: The fee_records of this ListSubCustomerResFeeRecordsResponse.
         :type: list[SubCustomerResFeeRecordV2]
@@ -77,7 +77,7 @@ class ListSubCustomerResFeeRecordsResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListSubCustomerResFeeRecordsResponse.
 
-        |参数名称：结果集数量，只有成功才返回这个参数。| |参数的约束及描述：结果集数量，只有成功才返回这个参数。|
+        结果集数量，只有成功才返回这个参数。
 
         :return: The count of this ListSubCustomerResFeeRecordsResponse.
         :rtype: int
@@ -88,7 +88,7 @@ class ListSubCustomerResFeeRecordsResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListSubCustomerResFeeRecordsResponse.
 
-        |参数名称：结果集数量，只有成功才返回这个参数。| |参数的约束及描述：结果集数量，只有成功才返回这个参数。|
+        结果集数量，只有成功才返回这个参数。
 
         :param count: The count of this ListSubCustomerResFeeRecordsResponse.
         :type: int
@@ -99,7 +99,7 @@ class ListSubCustomerResFeeRecordsResponse(SdkResponse):
     def currency(self):
         """Gets the currency of this ListSubCustomerResFeeRecordsResponse.
 
-        |参数名称：货币单位代码：CNY：人民币USD：美元| |参数约束及描述：货币单位代码：CNY：人民币USD：美元|
+        币种。 CNY：人民币
 
         :return: The currency of this ListSubCustomerResFeeRecordsResponse.
         :rtype: str
@@ -110,7 +110,7 @@ class ListSubCustomerResFeeRecordsResponse(SdkResponse):
     def currency(self, currency):
         """Sets the currency of this ListSubCustomerResFeeRecordsResponse.
 
-        |参数名称：货币单位代码：CNY：人民币USD：美元| |参数约束及描述：货币单位代码：CNY：人民币USD：美元|
+        币种。 CNY：人民币
 
         :param currency: The currency of this ListSubCustomerResFeeRecordsResponse.
         :type: str

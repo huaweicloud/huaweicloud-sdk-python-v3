@@ -48,7 +48,7 @@ class City:
     def code(self):
         """Gets the code of this City.
 
-        |参数名称：城市的编码。| |参数约束及描述：城市的编码。|
+        城市的编码。
 
         :return: The code of this City.
         :rtype: str
@@ -59,7 +59,7 @@ class City:
     def code(self, code):
         """Sets the code of this City.
 
-        |参数名称：城市的编码。| |参数约束及描述：城市的编码。|
+        城市的编码。
 
         :param code: The code of this City.
         :type: str
@@ -70,7 +70,7 @@ class City:
     def name(self):
         """Gets the name of this City.
 
-        |参数名称：城市的名称，根据请求的语言会传递回对应的语言的名称，目前仅支持中文。| |参数约束及描述：城市的名称，根据请求的语言会传递回对应的语言的名称，目前仅支持中文。|
+        城市的名称，根据请求参数X-Language的取值返回对应语言的名称，目前仅支持中文。
 
         :return: The name of this City.
         :rtype: str
@@ -81,7 +81,7 @@ class City:
     def name(self, name):
         """Sets the name of this City.
 
-        |参数名称：城市的名称，根据请求的语言会传递回对应的语言的名称，目前仅支持中文。| |参数约束及描述：城市的名称，根据请求的语言会传递回对应的语言的名称，目前仅支持中文。|
+        城市的名称，根据请求参数X-Language的取值返回对应语言的名称，目前仅支持中文。
 
         :param name: The name of this City.
         :type: str

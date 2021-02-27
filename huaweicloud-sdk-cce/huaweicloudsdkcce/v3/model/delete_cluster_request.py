@@ -24,7 +24,6 @@ class DeleteClusterRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'content_type': 'str',
         'error_status': 'str',
         'delete_efs': 'str',
         'delete_eni': 'str',
@@ -36,7 +35,6 @@ class DeleteClusterRequest:
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'content_type': 'Content-Type',
         'error_status': 'errorStatus',
         'delete_efs': 'delete_efs',
         'delete_eni': 'delete_eni',
@@ -46,13 +44,12 @@ class DeleteClusterRequest:
         'delete_sfs': 'delete_sfs'
     }
 
-    def __init__(self, cluster_id=None, content_type='application/json', error_status=None, delete_efs='false', delete_eni='false', delete_evs='false', delete_net='false', delete_obs='false', delete_sfs='false'):
+    def __init__(self, cluster_id=None, error_status=None, delete_efs='false', delete_eni='false', delete_evs='false', delete_net='false', delete_obs='false', delete_sfs='false'):
         """DeleteClusterRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._cluster_id = None
-        self._content_type = None
         self._error_status = None
         self._delete_efs = None
         self._delete_eni = None
@@ -63,7 +60,6 @@ class DeleteClusterRequest:
         self.discriminator = None
 
         self.cluster_id = cluster_id
-        self.content_type = content_type
         if error_status is not None:
             self.error_status = error_status
         if delete_efs is not None:
@@ -98,26 +94,6 @@ class DeleteClusterRequest:
         :type: str
         """
         self._cluster_id = cluster_id
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this DeleteClusterRequest.
-
-
-        :return: The content_type of this DeleteClusterRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this DeleteClusterRequest.
-
-
-        :param content_type: The content_type of this DeleteClusterRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def error_status(self):

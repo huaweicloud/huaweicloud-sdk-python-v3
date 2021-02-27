@@ -24,31 +24,27 @@ class CreateCloudPersistentVolumeClaimsRequest:
 
     openapi_types = {
         'namespace': 'str',
-        'content_type': 'str',
         'x_cluster_id': 'str',
         'body': 'PersistentVolumeClaim'
     }
 
     attribute_map = {
         'namespace': 'namespace',
-        'content_type': 'Content-Type',
         'x_cluster_id': 'X-Cluster-ID',
         'body': 'body'
     }
 
-    def __init__(self, namespace=None, content_type='application/json', x_cluster_id=None, body=None):
+    def __init__(self, namespace=None, x_cluster_id=None, body=None):
         """CreateCloudPersistentVolumeClaimsRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._namespace = None
-        self._content_type = None
         self._x_cluster_id = None
         self._body = None
         self.discriminator = None
 
         self.namespace = namespace
-        self.content_type = content_type
         if x_cluster_id is not None:
             self.x_cluster_id = x_cluster_id
         if body is not None:
@@ -73,26 +69,6 @@ class CreateCloudPersistentVolumeClaimsRequest:
         :type: str
         """
         self._namespace = namespace
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this CreateCloudPersistentVolumeClaimsRequest.
-
-
-        :return: The content_type of this CreateCloudPersistentVolumeClaimsRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this CreateCloudPersistentVolumeClaimsRequest.
-
-
-        :param content_type: The content_type of this CreateCloudPersistentVolumeClaimsRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def x_cluster_id(self):

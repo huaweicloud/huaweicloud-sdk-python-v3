@@ -63,7 +63,7 @@ class RetrieveEnterpriseMultiAccountReq:
     def customer_id(self):
         """Gets the customer_id of this RetrieveEnterpriseMultiAccountReq.
 
-        |参数名称：企业子账号的客户ID。| |参数约束及描述：企业子账号的客户ID。|
+        企业子账号的客户ID。
 
         :return: The customer_id of this RetrieveEnterpriseMultiAccountReq.
         :rtype: str
@@ -74,7 +74,7 @@ class RetrieveEnterpriseMultiAccountReq:
     def customer_id(self, customer_id):
         """Sets the customer_id of this RetrieveEnterpriseMultiAccountReq.
 
-        |参数名称：企业子账号的客户ID。| |参数约束及描述：企业子账号的客户ID。|
+        企业子账号的客户ID。
 
         :param customer_id: The customer_id of this RetrieveEnterpriseMultiAccountReq.
         :type: str
@@ -85,7 +85,7 @@ class RetrieveEnterpriseMultiAccountReq:
     def amount(self):
         """Gets the amount of this RetrieveEnterpriseMultiAccountReq.
 
-        |参数名称：总回收金额。金额单位为货币标准单位，如人民币则单位为元。| |参数约束及描述：总回收金额。金额单位为货币标准单位，如人民币则单位为元。|
+        总回收金额。 金额单位为货币标准单位，如人民币则单位为元。取值大于0且精确到小数点后2位。
 
         :return: The amount of this RetrieveEnterpriseMultiAccountReq.
         :rtype: str
@@ -96,7 +96,7 @@ class RetrieveEnterpriseMultiAccountReq:
     def amount(self, amount):
         """Sets the amount of this RetrieveEnterpriseMultiAccountReq.
 
-        |参数名称：总回收金额。金额单位为货币标准单位，如人民币则单位为元。| |参数约束及描述：总回收金额。金额单位为货币标准单位，如人民币则单位为元。|
+        总回收金额。 金额单位为货币标准单位，如人民币则单位为元。取值大于0且精确到小数点后2位。
 
         :param amount: The amount of this RetrieveEnterpriseMultiAccountReq.
         :type: str
@@ -107,7 +107,7 @@ class RetrieveEnterpriseMultiAccountReq:
     def trans_id(self):
         """Gets the trans_id of this RetrieveEnterpriseMultiAccountReq.
 
-        |参数名称：交易序列号，用于防止重复提交。如果接口调用方不传，则企业管理微服务后台生成。如果接口调用方传入，则请采用UUID保证全局唯一。| |参数约束及描述：交易序列号，用于防止重复提交。如果接口调用方不传，则企业管理微服务后台生成。如果接口调用方传入，则请采用UUID保证全局唯一。|
+        交易序列号，用于防止重复提交。 如果接口调用方不传，则企业管理微服务后台生成如果接口调用方传入，则请采用UUID保证全局唯一
 
         :return: The trans_id of this RetrieveEnterpriseMultiAccountReq.
         :rtype: str
@@ -118,7 +118,7 @@ class RetrieveEnterpriseMultiAccountReq:
     def trans_id(self, trans_id):
         """Sets the trans_id of this RetrieveEnterpriseMultiAccountReq.
 
-        |参数名称：交易序列号，用于防止重复提交。如果接口调用方不传，则企业管理微服务后台生成。如果接口调用方传入，则请采用UUID保证全局唯一。| |参数约束及描述：交易序列号，用于防止重复提交。如果接口调用方不传，则企业管理微服务后台生成。如果接口调用方传入，则请采用UUID保证全局唯一。|
+        交易序列号，用于防止重复提交。 如果接口调用方不传，则企业管理微服务后台生成如果接口调用方传入，则请采用UUID保证全局唯一
 
         :param trans_id: The trans_id of this RetrieveEnterpriseMultiAccountReq.
         :type: str
@@ -129,7 +129,7 @@ class RetrieveEnterpriseMultiAccountReq:
     def balance_type(self):
         """Gets the balance_type of this RetrieveEnterpriseMultiAccountReq.
 
-        |参数名称：账户类型：BALANCE_TYPE_DEBIT：余额账户（默认）；BALANCE_TYPE_CREDIT：信用账户。| |参数约束及描述：账户类型：BALANCE_TYPE_DEBIT：余额账户（默认）；BALANCE_TYPE_CREDIT：信用账户。|
+        账户类型： BALANCE_TYPE_DEBIT：余额账户（默认）BALANCE_TYPE_CREDIT：信用账户
 
         :return: The balance_type of this RetrieveEnterpriseMultiAccountReq.
         :rtype: str
@@ -140,7 +140,7 @@ class RetrieveEnterpriseMultiAccountReq:
     def balance_type(self, balance_type):
         """Sets the balance_type of this RetrieveEnterpriseMultiAccountReq.
 
-        |参数名称：账户类型：BALANCE_TYPE_DEBIT：余额账户（默认）；BALANCE_TYPE_CREDIT：信用账户。| |参数约束及描述：账户类型：BALANCE_TYPE_DEBIT：余额账户（默认）；BALANCE_TYPE_CREDIT：信用账户。|
+        账户类型： BALANCE_TYPE_DEBIT：余额账户（默认）BALANCE_TYPE_CREDIT：信用账户
 
         :param balance_type: The balance_type of this RetrieveEnterpriseMultiAccountReq.
         :type: str
@@ -151,7 +151,7 @@ class RetrieveEnterpriseMultiAccountReq:
     def expire_time(self):
         """Gets the expire_time of this RetrieveEnterpriseMultiAccountReq.
 
-        |参数名称：账户到期时间，UTC时间，格式为：2016-03-28T14:45:38Z。暂只对信用账户有效，用于限制针对有效期到期时间等于该时间的信用账户余额进行回收。如果查询信用账户可回收余额的查询结果没有失效时间，表示永久有效，对于这种账本的回收的时候不用填写| |参数约束及描述：账户到期时间，UTC时间，格式为：2016-03-28T14:45:38Z。暂只对信用账户有效，用于限制针对有效期到期时间等于该时间的信用账户余额进行回收。如果查询信用账户可回收余额的查询结果没有失效时间，表示永久有效，对于这种账本的回收的时候不用填写|
+        账户到期时间，UTC时间，格式为：2016-03-28T14:45:38Z。 暂只对信用账户有效，用于限制针对有效期到期时间等于该时间的信用账户余额进行回收。如果查询信用账户可回收余额的查询结果没有失效时间，表示永久有效，对于这种账本回收的情况无需填写。
 
         :return: The expire_time of this RetrieveEnterpriseMultiAccountReq.
         :rtype: str
@@ -162,7 +162,7 @@ class RetrieveEnterpriseMultiAccountReq:
     def expire_time(self, expire_time):
         """Sets the expire_time of this RetrieveEnterpriseMultiAccountReq.
 
-        |参数名称：账户到期时间，UTC时间，格式为：2016-03-28T14:45:38Z。暂只对信用账户有效，用于限制针对有效期到期时间等于该时间的信用账户余额进行回收。如果查询信用账户可回收余额的查询结果没有失效时间，表示永久有效，对于这种账本的回收的时候不用填写| |参数约束及描述：账户到期时间，UTC时间，格式为：2016-03-28T14:45:38Z。暂只对信用账户有效，用于限制针对有效期到期时间等于该时间的信用账户余额进行回收。如果查询信用账户可回收余额的查询结果没有失效时间，表示永久有效，对于这种账本的回收的时候不用填写|
+        账户到期时间，UTC时间，格式为：2016-03-28T14:45:38Z。 暂只对信用账户有效，用于限制针对有效期到期时间等于该时间的信用账户余额进行回收。如果查询信用账户可回收余额的查询结果没有失效时间，表示永久有效，对于这种账本回收的情况无需填写。
 
         :param expire_time: The expire_time of this RetrieveEnterpriseMultiAccountReq.
         :type: str

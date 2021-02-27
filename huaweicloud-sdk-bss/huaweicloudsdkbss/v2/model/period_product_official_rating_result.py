@@ -60,7 +60,7 @@ class PeriodProductOfficialRatingResult:
     def id(self):
         """Gets the id of this PeriodProductOfficialRatingResult.
 
-        |参数名称：ID标识，来源于请求中的ID| |参数约束及描述：ID标识，来源于请求中的ID|
+        ID标识，来源于请求中的ID。
 
         :return: The id of this PeriodProductOfficialRatingResult.
         :rtype: str
@@ -71,7 +71,7 @@ class PeriodProductOfficialRatingResult:
     def id(self, id):
         """Sets the id of this PeriodProductOfficialRatingResult.
 
-        |参数名称：ID标识，来源于请求中的ID| |参数约束及描述：ID标识，来源于请求中的ID|
+        ID标识，来源于请求中的ID。
 
         :param id: The id of this PeriodProductOfficialRatingResult.
         :type: str
@@ -82,7 +82,7 @@ class PeriodProductOfficialRatingResult:
     def product_id(self):
         """Gets the product_id of this PeriodProductOfficialRatingResult.
 
-        |参数名称：产品ID| |参数约束及描述：产品ID|
+        包年/包月产品的ID。
 
         :return: The product_id of this PeriodProductOfficialRatingResult.
         :rtype: str
@@ -93,7 +93,7 @@ class PeriodProductOfficialRatingResult:
     def product_id(self, product_id):
         """Sets the product_id of this PeriodProductOfficialRatingResult.
 
-        |参数名称：产品ID| |参数约束及描述：产品ID|
+        包年/包月产品的ID。
 
         :param product_id: The product_id of this PeriodProductOfficialRatingResult.
         :type: str
@@ -104,7 +104,7 @@ class PeriodProductOfficialRatingResult:
     def official_website_amount(self):
         """Gets the official_website_amount of this PeriodProductOfficialRatingResult.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        包年/包月产品的官网价。
 
         :return: The official_website_amount of this PeriodProductOfficialRatingResult.
         :rtype: float
@@ -115,7 +115,7 @@ class PeriodProductOfficialRatingResult:
     def official_website_amount(self, official_website_amount):
         """Sets the official_website_amount of this PeriodProductOfficialRatingResult.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        包年/包月产品的官网价。
 
         :param official_website_amount: The official_website_amount of this PeriodProductOfficialRatingResult.
         :type: float
@@ -126,7 +126,7 @@ class PeriodProductOfficialRatingResult:
     def measure_id(self):
         """Gets the measure_id of this PeriodProductOfficialRatingResult.
 
-        |参数名称：度量单位标识1：元|
+        价格度量单位标识。 1：元
 
         :return: The measure_id of this PeriodProductOfficialRatingResult.
         :rtype: int
@@ -137,7 +137,7 @@ class PeriodProductOfficialRatingResult:
     def measure_id(self, measure_id):
         """Sets the measure_id of this PeriodProductOfficialRatingResult.
 
-        |参数名称：度量单位标识1：元|
+        价格度量单位标识。 1：元
 
         :param measure_id: The measure_id of this PeriodProductOfficialRatingResult.
         :type: int

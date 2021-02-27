@@ -21,12 +21,8 @@ class ListResourcesByTagsRequest:
     """
 
     sensitive_list = []
-    sensitive_list.append('sp_auth_token')
-    sensitive_list.append('stage_auth_token')
 
     openapi_types = {
-        'sp_auth_token': 'str',
-        'stage_auth_token': 'str',
         'instance_id': 'str',
         'limit': 'int',
         'marker': 'str',
@@ -35,8 +31,6 @@ class ListResourcesByTagsRequest:
     }
 
     attribute_map = {
-        'sp_auth_token': 'Sp-Auth-Token',
-        'stage_auth_token': 'Stage-Auth-Token',
         'instance_id': 'Instance-Id',
         'limit': 'limit',
         'marker': 'marker',
@@ -44,13 +38,11 @@ class ListResourcesByTagsRequest:
         'body': 'body'
     }
 
-    def __init__(self, sp_auth_token=None, stage_auth_token=None, instance_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0, body=None):
+    def __init__(self, instance_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0, body=None):
         """ListResourcesByTagsRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._sp_auth_token = None
-        self._stage_auth_token = None
         self._instance_id = None
         self._limit = None
         self._marker = None
@@ -58,10 +50,6 @@ class ListResourcesByTagsRequest:
         self._body = None
         self.discriminator = None
 
-        if sp_auth_token is not None:
-            self.sp_auth_token = sp_auth_token
-        if stage_auth_token is not None:
-            self.stage_auth_token = stage_auth_token
         if instance_id is not None:
             self.instance_id = instance_id
         if limit is not None:
@@ -72,46 +60,6 @@ class ListResourcesByTagsRequest:
             self.offset = offset
         if body is not None:
             self.body = body
-
-    @property
-    def sp_auth_token(self):
-        """Gets the sp_auth_token of this ListResourcesByTagsRequest.
-
-
-        :return: The sp_auth_token of this ListResourcesByTagsRequest.
-        :rtype: str
-        """
-        return self._sp_auth_token
-
-    @sp_auth_token.setter
-    def sp_auth_token(self, sp_auth_token):
-        """Sets the sp_auth_token of this ListResourcesByTagsRequest.
-
-
-        :param sp_auth_token: The sp_auth_token of this ListResourcesByTagsRequest.
-        :type: str
-        """
-        self._sp_auth_token = sp_auth_token
-
-    @property
-    def stage_auth_token(self):
-        """Gets the stage_auth_token of this ListResourcesByTagsRequest.
-
-
-        :return: The stage_auth_token of this ListResourcesByTagsRequest.
-        :rtype: str
-        """
-        return self._stage_auth_token
-
-    @stage_auth_token.setter
-    def stage_auth_token(self, stage_auth_token):
-        """Sets the stage_auth_token of this ListResourcesByTagsRequest.
-
-
-        :param stage_auth_token: The stage_auth_token of this ListResourcesByTagsRequest.
-        :type: str
-        """
-        self._stage_auth_token = stage_auth_token
 
     @property
     def instance_id(self):

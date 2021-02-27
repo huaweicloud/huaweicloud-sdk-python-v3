@@ -50,7 +50,7 @@ class ListCountiesResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListCountiesResponse.
 
-        |参数名称：查询个数，成功的时候返回| |参数的约束及描述：查询个数，成功的时候返回|
+        查询个数，成功的时候返回。
 
         :return: The count of this ListCountiesResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ListCountiesResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListCountiesResponse.
 
-        |参数名称：查询个数，成功的时候返回| |参数的约束及描述：查询个数，成功的时候返回|
+        查询个数，成功的时候返回。
 
         :param count: The count of this ListCountiesResponse.
         :type: int
@@ -72,7 +72,7 @@ class ListCountiesResponse(SdkResponse):
     def counties(self):
         """Gets the counties of this ListCountiesResponse.
 
-        |参数名称：区县信息列表，成功的时候返回| |参数约束以及描述：区县信息列表，成功的时候返回|
+        区县信息列表，成功的时候返回，具体参见表2。
 
         :return: The counties of this ListCountiesResponse.
         :rtype: list[County]
@@ -83,7 +83,7 @@ class ListCountiesResponse(SdkResponse):
     def counties(self, counties):
         """Sets the counties of this ListCountiesResponse.
 
-        |参数名称：区县信息列表，成功的时候返回| |参数约束以及描述：区县信息列表，成功的时候返回|
+        区县信息列表，成功的时候返回，具体参见表2。
 
         :param counties: The counties of this ListCountiesResponse.
         :type: list[County]

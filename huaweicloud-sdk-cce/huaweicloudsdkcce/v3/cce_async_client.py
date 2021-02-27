@@ -67,7 +67,7 @@ class CceAsyncClient(Client):
         :return: AwakeClusterResponse
         """
 
-        all_params = ['cluster_id', 'content_type']
+        all_params = ['cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -82,8 +82,6 @@ class CceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -132,7 +130,7 @@ class CceAsyncClient(Client):
         :return: CreateAddonInstanceResponse
         """
 
-        all_params = ['content_type', 'create_addon_instance_request_body']
+        all_params = ['create_addon_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -145,8 +143,6 @@ class CceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -197,7 +193,7 @@ class CceAsyncClient(Client):
         :return: CreateCloudPersistentVolumeClaimsResponse
         """
 
-        all_params = ['namespace', 'content_type', 'create_cloud_persistent_volume_claims_request_body', 'x_cluster_id']
+        all_params = ['namespace', 'create_cloud_persistent_volume_claims_request_body', 'x_cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -212,8 +208,6 @@ class CceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
         if 'x_cluster_id' in local_var_params:
             header_params['X-Cluster-ID'] = local_var_params['x_cluster_id']
 
@@ -266,7 +260,7 @@ class CceAsyncClient(Client):
         :return: CreateClusterResponse
         """
 
-        all_params = ['content_type', 'create_cluster_request_body']
+        all_params = ['create_cluster_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -279,8 +273,6 @@ class CceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -331,7 +323,7 @@ class CceAsyncClient(Client):
         :return: CreateKubernetesClusterCertResponse
         """
 
-        all_params = ['cluster_id', 'content_type', 'create_kubernetes_cluster_cert_request_body']
+        all_params = ['cluster_id', 'create_kubernetes_cluster_cert_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -346,8 +338,6 @@ class CceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -398,7 +388,7 @@ class CceAsyncClient(Client):
         :return: CreateNodeResponse
         """
 
-        all_params = ['cluster_id', 'content_type', 'create_node_request_body', 'nodepool_scale_up']
+        all_params = ['cluster_id', 'create_node_request_body', 'nodepool_scale_up']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -415,8 +405,6 @@ class CceAsyncClient(Client):
             query_params.append(('nodepoolScaleUp', local_var_params['nodepool_scale_up']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -467,7 +455,7 @@ class CceAsyncClient(Client):
         :return: CreateNodePoolResponse
         """
 
-        all_params = ['content_type', 'cluster_id', 'create_node_pool_request_body']
+        all_params = ['cluster_id', 'create_node_pool_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -482,8 +470,6 @@ class CceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -534,7 +520,7 @@ class CceAsyncClient(Client):
         :return: DeleteAddonInstanceResponse
         """
 
-        all_params = ['content_type', 'id', 'cluster_id']
+        all_params = ['id', 'cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -551,8 +537,6 @@ class CceAsyncClient(Client):
             query_params.append(('cluster_id', local_var_params['cluster_id']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -601,7 +585,7 @@ class CceAsyncClient(Client):
         :return: DeleteCloudPersistentVolumeClaimsResponse
         """
 
-        all_params = ['name', 'namespace', 'content_type', 'x_cluster_id']
+        all_params = ['name', 'namespace', 'x_cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -618,8 +602,6 @@ class CceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
         if 'x_cluster_id' in local_var_params:
             header_params['X-Cluster-ID'] = local_var_params['x_cluster_id']
 
@@ -670,7 +652,7 @@ class CceAsyncClient(Client):
         :return: DeleteClusterResponse
         """
 
-        all_params = ['cluster_id', 'content_type', 'error_status', 'delete_efs', 'delete_eni', 'delete_evs', 'delete_net', 'delete_obs', 'delete_sfs']
+        all_params = ['cluster_id', 'error_status', 'delete_efs', 'delete_eni', 'delete_evs', 'delete_net', 'delete_obs', 'delete_sfs']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -699,8 +681,6 @@ class CceAsyncClient(Client):
             query_params.append(('delete_sfs', local_var_params['delete_sfs']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -749,7 +729,7 @@ class CceAsyncClient(Client):
         :return: DeleteNodeResponse
         """
 
-        all_params = ['cluster_id', 'node_id', 'content_type', 'error_status', 'nodepool_scale_down']
+        all_params = ['cluster_id', 'node_id', 'error_status', 'nodepool_scale_down']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -770,8 +750,6 @@ class CceAsyncClient(Client):
             query_params.append(('nodepoolScaleDown', local_var_params['nodepool_scale_down']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -820,7 +798,7 @@ class CceAsyncClient(Client):
         :return: DeleteNodePoolResponse
         """
 
-        all_params = ['cluster_id', 'nodepool_id', 'content_type', 'error_status']
+        all_params = ['cluster_id', 'nodepool_id', 'error_status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -839,8 +817,6 @@ class CceAsyncClient(Client):
             query_params.append(('errorStatus', local_var_params['error_status']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -889,7 +865,7 @@ class CceAsyncClient(Client):
         :return: HibernateClusterResponse
         """
 
-        all_params = ['cluster_id', 'content_type']
+        all_params = ['cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -904,8 +880,6 @@ class CceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -954,7 +928,7 @@ class CceAsyncClient(Client):
         :return: ListAddonInstancesResponse
         """
 
-        all_params = ['content_type', 'cluster_id']
+        all_params = ['cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -969,8 +943,6 @@ class CceAsyncClient(Client):
             query_params.append(('cluster_id', local_var_params['cluster_id']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -1019,7 +991,7 @@ class CceAsyncClient(Client):
         :return: ListAddonTemplatesResponse
         """
 
-        all_params = ['content_type', 'addon_template_name']
+        all_params = ['addon_template_name']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1034,8 +1006,6 @@ class CceAsyncClient(Client):
             query_params.append(('addon_template_name', local_var_params['addon_template_name']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -1084,7 +1054,7 @@ class CceAsyncClient(Client):
         :return: ListClustersResponse
         """
 
-        all_params = ['content_type', 'error_status', 'detail', 'status', 'type', 'version']
+        all_params = ['error_status', 'detail', 'status', 'type', 'version']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1107,8 +1077,6 @@ class CceAsyncClient(Client):
             query_params.append(('version', local_var_params['version']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -1157,7 +1125,7 @@ class CceAsyncClient(Client):
         :return: ListNodePoolsResponse
         """
 
-        all_params = ['cluster_id', 'content_type', 'error_status', 'show_default_node_pool']
+        all_params = ['cluster_id', 'error_status', 'show_default_node_pool']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1176,8 +1144,6 @@ class CceAsyncClient(Client):
             query_params.append(('showDefaultNodePool', local_var_params['show_default_node_pool']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -1226,7 +1192,7 @@ class CceAsyncClient(Client):
         :return: ListNodesResponse
         """
 
-        all_params = ['cluster_id', 'content_type', 'error_status']
+        all_params = ['cluster_id', 'error_status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1243,8 +1209,6 @@ class CceAsyncClient(Client):
             query_params.append(('errorStatus', local_var_params['error_status']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -1293,7 +1257,7 @@ class CceAsyncClient(Client):
         :return: ShowAddonInstanceResponse
         """
 
-        all_params = ['content_type', 'id', 'cluster_id']
+        all_params = ['id', 'cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1310,8 +1274,6 @@ class CceAsyncClient(Client):
             query_params.append(('cluster_id', local_var_params['cluster_id']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -1360,7 +1322,7 @@ class CceAsyncClient(Client):
         :return: ShowClusterResponse
         """
 
-        all_params = ['cluster_id', 'content_type', 'error_status', 'detail']
+        all_params = ['cluster_id', 'error_status', 'detail']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1379,8 +1341,6 @@ class CceAsyncClient(Client):
             query_params.append(('detail', local_var_params['detail']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -1429,7 +1389,7 @@ class CceAsyncClient(Client):
         :return: ShowJobResponse
         """
 
-        all_params = ['job_id', 'content_type']
+        all_params = ['job_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1444,8 +1404,6 @@ class CceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -1494,7 +1452,7 @@ class CceAsyncClient(Client):
         :return: ShowNodeResponse
         """
 
-        all_params = ['cluster_id', 'node_id', 'content_type', 'error_status']
+        all_params = ['cluster_id', 'node_id', 'error_status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1513,8 +1471,6 @@ class CceAsyncClient(Client):
             query_params.append(('errorStatus', local_var_params['error_status']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -1563,7 +1519,7 @@ class CceAsyncClient(Client):
         :return: ShowNodePoolResponse
         """
 
-        all_params = ['cluster_id', 'nodepool_id', 'content_type', 'error_status']
+        all_params = ['cluster_id', 'nodepool_id', 'error_status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1582,8 +1538,6 @@ class CceAsyncClient(Client):
             query_params.append(('errorStatus', local_var_params['error_status']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -1632,7 +1586,7 @@ class CceAsyncClient(Client):
         :return: UpdateAddonInstanceResponse
         """
 
-        all_params = ['id', 'content_type', 'update_addon_instance_request_body']
+        all_params = ['id', 'update_addon_instance_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1647,8 +1601,6 @@ class CceAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -1699,7 +1651,7 @@ class CceAsyncClient(Client):
         :return: UpdateClusterResponse
         """
 
-        all_params = ['cluster_id', 'content_type', 'update_cluster_request_body', 'error_status']
+        all_params = ['cluster_id', 'update_cluster_request_body', 'error_status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1716,8 +1668,6 @@ class CceAsyncClient(Client):
             query_params.append(('errorStatus', local_var_params['error_status']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -1768,7 +1718,7 @@ class CceAsyncClient(Client):
         :return: UpdateNodeResponse
         """
 
-        all_params = ['cluster_id', 'node_id', 'content_type', 'update_node_request_body', 'error_status']
+        all_params = ['cluster_id', 'node_id', 'update_node_request_body', 'error_status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1787,8 +1737,6 @@ class CceAsyncClient(Client):
             query_params.append(('errorStatus', local_var_params['error_status']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 
@@ -1839,7 +1787,7 @@ class CceAsyncClient(Client):
         :return: UpdateNodePoolResponse
         """
 
-        all_params = ['cluster_id', 'nodepool_id', 'content_type', 'update_node_pool_request_body', 'error_status']
+        all_params = ['cluster_id', 'nodepool_id', 'update_node_pool_request_body', 'error_status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1858,8 +1806,6 @@ class CceAsyncClient(Client):
             query_params.append(('errorStatus', local_var_params['error_status']))
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
 
         form_params = {}
 

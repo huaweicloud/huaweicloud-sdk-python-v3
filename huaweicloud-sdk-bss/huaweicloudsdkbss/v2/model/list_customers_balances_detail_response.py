@@ -45,7 +45,7 @@ class ListCustomersBalancesDetailResponse(SdkResponse):
     def customer_balances(self):
         """Gets the customer_balances of this ListCustomersBalancesDetailResponse.
 
-        |参数名称：总额，即最终优惠后的金额，| |参数约束以及描述：总额，即最终优惠后的金额，|
+        账户余额列表。只有成功的时候才返回。 具体请参见表2。
 
         :return: The customer_balances of this ListCustomersBalancesDetailResponse.
         :rtype: list[CustomerBalancesV2]
@@ -56,7 +56,7 @@ class ListCustomersBalancesDetailResponse(SdkResponse):
     def customer_balances(self, customer_balances):
         """Sets the customer_balances of this ListCustomersBalancesDetailResponse.
 
-        |参数名称：总额，即最终优惠后的金额，| |参数约束以及描述：总额，即最终优惠后的金额，|
+        账户余额列表。只有成功的时候才返回。 具体请参见表2。
 
         :param customer_balances: The customer_balances of this ListCustomersBalancesDetailResponse.
         :type: list[CustomerBalancesV2]

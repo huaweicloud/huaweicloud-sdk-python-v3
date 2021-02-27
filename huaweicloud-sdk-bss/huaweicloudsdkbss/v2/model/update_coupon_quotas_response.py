@@ -50,7 +50,7 @@ class UpdateCouponQuotasResponse(SdkResponse):
     def error_details(self):
         """Gets the error_details of this UpdateCouponQuotasResponse.
 
-        |参数名称：错误的客户列表和错误信息| |参数约束以及描述：错误的客户列表和错误信息|
+        发放失败的精英服务商额度信息，具体参见表1，只有HTTP STATUS 200的时候才有这个结构体。
 
         :return: The error_details of this UpdateCouponQuotasResponse.
         :rtype: list[ErrorDetail]
@@ -61,7 +61,7 @@ class UpdateCouponQuotasResponse(SdkResponse):
     def error_details(self, error_details):
         """Sets the error_details of this UpdateCouponQuotasResponse.
 
-        |参数名称：错误的客户列表和错误信息| |参数约束以及描述：错误的客户列表和错误信息|
+        发放失败的精英服务商额度信息，具体参见表1，只有HTTP STATUS 200的时候才有这个结构体。
 
         :param error_details: The error_details of this UpdateCouponQuotasResponse.
         :type: list[ErrorDetail]
@@ -72,7 +72,7 @@ class UpdateCouponQuotasResponse(SdkResponse):
     def simple_quota_infos(self):
         """Gets the simple_quota_infos of this UpdateCouponQuotasResponse.
 
-        |参数名称：成功的客户ID和对应的券ID列表| |参数约束以及描述：成功的客户ID和对应的券ID列表|
+        发放成功的精英服务商额度信息，具体参见表2，只有HTTP STATUS 200的时候才有这个结构体。
 
         :return: The simple_quota_infos of this UpdateCouponQuotasResponse.
         :rtype: list[QuotaSimpleInfo]
@@ -83,7 +83,7 @@ class UpdateCouponQuotasResponse(SdkResponse):
     def simple_quota_infos(self, simple_quota_infos):
         """Sets the simple_quota_infos of this UpdateCouponQuotasResponse.
 
-        |参数名称：成功的客户ID和对应的券ID列表| |参数约束以及描述：成功的客户ID和对应的券ID列表|
+        发放成功的精英服务商额度信息，具体参见表2，只有HTTP STATUS 200的时候才有这个结构体。
 
         :param simple_quota_infos: The simple_quota_infos of this UpdateCouponQuotasResponse.
         :type: list[QuotaSimpleInfo]

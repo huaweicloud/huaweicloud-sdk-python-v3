@@ -130,7 +130,7 @@ class CouponInfoV2:
     def coupon_id(self):
         """Gets the coupon_id of this CouponInfoV2.
 
-        |参数名称：优惠券实例ID。| |参数约束及描述：优惠券实例ID。|
+        优惠券实例ID。
 
         :return: The coupon_id of this CouponInfoV2.
         :rtype: str
@@ -141,7 +141,7 @@ class CouponInfoV2:
     def coupon_id(self, coupon_id):
         """Sets the coupon_id of this CouponInfoV2.
 
-        |参数名称：优惠券实例ID。| |参数约束及描述：优惠券实例ID。|
+        优惠券实例ID。
 
         :param coupon_id: The coupon_id of this CouponInfoV2.
         :type: str
@@ -152,7 +152,7 @@ class CouponInfoV2:
     def coupon_code(self):
         """Gets the coupon_code of this CouponInfoV2.
 
-        |参数名称：优惠券编码。| |参数约束及描述：优惠券编码。|
+        优惠券编码。
 
         :return: The coupon_code of this CouponInfoV2.
         :rtype: str
@@ -163,7 +163,7 @@ class CouponInfoV2:
     def coupon_code(self, coupon_code):
         """Sets the coupon_code of this CouponInfoV2.
 
-        |参数名称：优惠券编码。| |参数约束及描述：优惠券编码。|
+        优惠券编码。
 
         :param coupon_code: The coupon_code of this CouponInfoV2.
         :type: str
@@ -174,7 +174,7 @@ class CouponInfoV2:
     def status(self):
         """Gets the status of this CouponInfoV2.
 
-        |参数名称：优惠券状态：2：待使用。| |参数的约束及描述：优惠券状态：2：待使用。|
+        优惠券状态： 1：未激活2：待使用
 
         :return: The status of this CouponInfoV2.
         :rtype: int
@@ -185,7 +185,7 @@ class CouponInfoV2:
     def status(self, status):
         """Sets the status of this CouponInfoV2.
 
-        |参数名称：优惠券状态：2：待使用。| |参数的约束及描述：优惠券状态：2：待使用。|
+        优惠券状态： 1：未激活2：待使用
 
         :param status: The status of this CouponInfoV2.
         :type: int
@@ -196,7 +196,7 @@ class CouponInfoV2:
     def coupon_type(self):
         """Gets the coupon_type of this CouponInfoV2.
 
-        |参数名称：优惠券类型：301：代金券；302：现金券。| |参数的约束及描述：优惠券类型：301：代金券；302：现金券。|
+        优惠券类型： 300：折扣券301：代金券302：现金券303：储值卡
 
         :return: The coupon_type of this CouponInfoV2.
         :rtype: int
@@ -207,7 +207,7 @@ class CouponInfoV2:
     def coupon_type(self, coupon_type):
         """Sets the coupon_type of this CouponInfoV2.
 
-        |参数名称：优惠券类型：301：代金券；302：现金券。| |参数的约束及描述：优惠券类型：301：代金券；302：现金券。|
+        优惠券类型： 300：折扣券301：代金券302：现金券303：储值卡
 
         :param coupon_type: The coupon_type of this CouponInfoV2.
         :type: int
@@ -218,7 +218,7 @@ class CouponInfoV2:
     def measure_id(self):
         """Gets the measure_id of this CouponInfoV2.
 
-        |参数名称：面额单位：1：元。| |参数的约束及描述：面额单位：1：元。|
+        面额单位： 1：元。
 
         :return: The measure_id of this CouponInfoV2.
         :rtype: int
@@ -229,7 +229,7 @@ class CouponInfoV2:
     def measure_id(self, measure_id):
         """Sets the measure_id of this CouponInfoV2.
 
-        |参数名称：面额单位：1：元。| |参数的约束及描述：面额单位：1：元。|
+        面额单位： 1：元。
 
         :param measure_id: The measure_id of this CouponInfoV2.
         :type: int
@@ -240,7 +240,7 @@ class CouponInfoV2:
     def face_value(self):
         """Gets the face_value of this CouponInfoV2.
 
-        |参数名称：优惠券金额。| |参数的约束及描述：优惠券金额。|
+        面值。
 
         :return: The face_value of this CouponInfoV2.
         :rtype: float
@@ -251,7 +251,7 @@ class CouponInfoV2:
     def face_value(self, face_value):
         """Sets the face_value of this CouponInfoV2.
 
-        |参数名称：优惠券金额。| |参数的约束及描述：优惠券金额。|
+        面值。
 
         :param face_value: The face_value of this CouponInfoV2.
         :type: float
@@ -262,7 +262,7 @@ class CouponInfoV2:
     def effective_time(self):
         """Gets the effective_time of this CouponInfoV2.
 
-        |参数名称：生效时间。UTC时间，格式：yyyy-MM-dTHH:mm:ssZ，如2019-05-06T08:05:01Z。| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-dTHH:mm:ssZ，如2019-05-06T08:05:01Z。|
+        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The effective_time of this CouponInfoV2.
         :rtype: str
@@ -273,7 +273,7 @@ class CouponInfoV2:
     def effective_time(self, effective_time):
         """Sets the effective_time of this CouponInfoV2.
 
-        |参数名称：生效时间。UTC时间，格式：yyyy-MM-dTHH:mm:ssZ，如2019-05-06T08:05:01Z。| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-dTHH:mm:ssZ，如2019-05-06T08:05:01Z。|
+        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param effective_time: The effective_time of this CouponInfoV2.
         :type: str
@@ -284,7 +284,7 @@ class CouponInfoV2:
     def expire_time(self):
         """Gets the expire_time of this CouponInfoV2.
 
-        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如2019-05-06T08:05:01Z。| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如2019-05-06T08:05:01Z。|
+        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The expire_time of this CouponInfoV2.
         :rtype: str
@@ -295,7 +295,7 @@ class CouponInfoV2:
     def expire_time(self, expire_time):
         """Sets the expire_time of this CouponInfoV2.
 
-        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如2019-05-06T08:05:01Z。| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如2019-05-06T08:05:01Z。|
+        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param expire_time: The expire_time of this CouponInfoV2.
         :type: str
@@ -306,7 +306,7 @@ class CouponInfoV2:
     def plan_name(self):
         """Gets the plan_name of this CouponInfoV2.
 
-        |参数名称：促销计划名称。| |参数约束及描述：促销计划名称。|
+        促销计划名称。
 
         :return: The plan_name of this CouponInfoV2.
         :rtype: str
@@ -317,7 +317,7 @@ class CouponInfoV2:
     def plan_name(self, plan_name):
         """Sets the plan_name of this CouponInfoV2.
 
-        |参数名称：促销计划名称。| |参数约束及描述：促销计划名称。|
+        促销计划名称。
 
         :param plan_name: The plan_name of this CouponInfoV2.
         :type: str
@@ -328,7 +328,7 @@ class CouponInfoV2:
     def plan_desc(self):
         """Gets the plan_desc of this CouponInfoV2.
 
-        |参数名称：促销计划描述。| |参数约束及描述：促销计划描述。|
+        促销计划描述。
 
         :return: The plan_desc of this CouponInfoV2.
         :rtype: str
@@ -339,7 +339,7 @@ class CouponInfoV2:
     def plan_desc(self, plan_desc):
         """Sets the plan_desc of this CouponInfoV2.
 
-        |参数名称：促销计划描述。| |参数约束及描述：促销计划描述。|
+        促销计划描述。
 
         :param plan_desc: The plan_desc of this CouponInfoV2.
         :type: str
@@ -350,7 +350,7 @@ class CouponInfoV2:
     def use_limits(self):
         """Gets the use_limits of this CouponInfoV2.
 
-        |参数名称：优惠券限制。具体请参见表 LimitInfo。| |参数约束以及描述：优惠券限制。具体请参见表 LimitInfo。|
+        优惠券限制。 具体请参见表3。
 
         :return: The use_limits of this CouponInfoV2.
         :rtype: list[LimitInfoV2]
@@ -361,7 +361,7 @@ class CouponInfoV2:
     def use_limits(self, use_limits):
         """Sets the use_limits of this CouponInfoV2.
 
-        |参数名称：优惠券限制。具体请参见表 LimitInfo。| |参数约束以及描述：优惠券限制。具体请参见表 LimitInfo。|
+        优惠券限制。 具体请参见表3。
 
         :param use_limits: The use_limits of this CouponInfoV2.
         :type: list[LimitInfoV2]
@@ -372,7 +372,7 @@ class CouponInfoV2:
     def active_time(self):
         """Gets the active_time of this CouponInfoV2.
 
-        |参数名称：激活时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如2019-05-06T08:05:01Z。| |参数约束及描述：激活时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如2019-05-06T08:05:01Z。|
+        激活时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The active_time of this CouponInfoV2.
         :rtype: str
@@ -383,7 +383,7 @@ class CouponInfoV2:
     def active_time(self, active_time):
         """Sets the active_time of this CouponInfoV2.
 
-        |参数名称：激活时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如2019-05-06T08:05:01Z。| |参数约束及描述：激活时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如2019-05-06T08:05:01Z。|
+        激活时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param active_time: The active_time of this CouponInfoV2.
         :type: str
@@ -394,7 +394,7 @@ class CouponInfoV2:
     def last_used_time(self):
         """Gets the last_used_time of this CouponInfoV2.
 
-        |参数名称：上一次使用时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如2019-05-06T08:05:01Z。| |参数约束及描述：上一次使用时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如2019-05-06T08:05:01Z。|
+        上一次使用时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The last_used_time of this CouponInfoV2.
         :rtype: str
@@ -405,7 +405,7 @@ class CouponInfoV2:
     def last_used_time(self, last_used_time):
         """Sets the last_used_time of this CouponInfoV2.
 
-        |参数名称：上一次使用时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如2019-05-06T08:05:01Z。| |参数约束及描述：上一次使用时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如2019-05-06T08:05:01Z。|
+        上一次使用时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param last_used_time: The last_used_time of this CouponInfoV2.
         :type: str
@@ -416,7 +416,7 @@ class CouponInfoV2:
     def create_time(self):
         """Gets the create_time of this CouponInfoV2.
 
-        |参数名称：创建时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如2019-05-06T08:05:01Z。| |参数约束及描述：创建时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如2019-05-06T08:05:01Z。|
+        创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The create_time of this CouponInfoV2.
         :rtype: str
@@ -427,7 +427,7 @@ class CouponInfoV2:
     def create_time(self, create_time):
         """Sets the create_time of this CouponInfoV2.
 
-        |参数名称：创建时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如2019-05-06T08:05:01Z。| |参数约束及描述：创建时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如2019-05-06T08:05:01Z。|
+        创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param create_time: The create_time of this CouponInfoV2.
         :type: str
@@ -438,7 +438,7 @@ class CouponInfoV2:
     def coupon_version(self):
         """Gets the coupon_version of this CouponInfoV2.
 
-        |参数名称：优惠券版本。1：老版本（原本分为三种：代金券/折扣券/奖金券）；2：新版本（只有代金券）。| |参数的约束及描述：优惠券版本。1：老版本（原本分为三种：代金券/折扣券/奖金券）；2：新版本（只有代金券）。|
+        优惠券版本。 1：老版本（包含三种：代金券、折扣券和奖金券）2：新版本（只有代金券）
 
         :return: The coupon_version of this CouponInfoV2.
         :rtype: int
@@ -449,7 +449,7 @@ class CouponInfoV2:
     def coupon_version(self, coupon_version):
         """Sets the coupon_version of this CouponInfoV2.
 
-        |参数名称：优惠券版本。1：老版本（原本分为三种：代金券/折扣券/奖金券）；2：新版本（只有代金券）。| |参数的约束及描述：优惠券版本。1：老版本（原本分为三种：代金券/折扣券/奖金券）；2：新版本（只有代金券）。|
+        优惠券版本。 1：老版本（包含三种：代金券、折扣券和奖金券）2：新版本（只有代金券）
 
         :param coupon_version: The coupon_version of this CouponInfoV2.
         :type: int
@@ -460,7 +460,7 @@ class CouponInfoV2:
     def balance(self):
         """Gets the balance of this CouponInfoV2.
 
-        |参数名称：余额。| |参数约束及描述： 余额。|
+        余额。
 
         :return: The balance of this CouponInfoV2.
         :rtype: float
@@ -471,7 +471,7 @@ class CouponInfoV2:
     def balance(self, balance):
         """Sets the balance of this CouponInfoV2.
 
-        |参数名称：余额。| |参数约束及描述： 余额。|
+        余额。
 
         :param balance: The balance of this CouponInfoV2.
         :type: float
@@ -482,7 +482,7 @@ class CouponInfoV2:
     def used_by_order_id(self):
         """Gets the used_by_order_id of this CouponInfoV2.
 
-        |参数名称：使用优惠券的订单ID，表示正在有另外一张订单正在使用这个优惠券。正在锁定的时候，只有锁定优惠券的订单才能使用这个优惠券，其他订单不能使用该优惠券。| |参数约束及描述：使用优惠券的订单ID，表示正在有另外一张订单正在使用这个优惠券。正在锁定的时候，只有锁定优惠券的订单才能使用这个优惠券，其他订单不能使用该优惠券。|
+        使用优惠券的订单ID，表示正在有另外一张订单正在使用这个优惠券。正在锁定的时候，只有锁定优惠券的订单才能使用这个优惠券，其他订单不能使用该优惠券。
 
         :return: The used_by_order_id of this CouponInfoV2.
         :rtype: str
@@ -493,7 +493,7 @@ class CouponInfoV2:
     def used_by_order_id(self, used_by_order_id):
         """Sets the used_by_order_id of this CouponInfoV2.
 
-        |参数名称：使用优惠券的订单ID，表示正在有另外一张订单正在使用这个优惠券。正在锁定的时候，只有锁定优惠券的订单才能使用这个优惠券，其他订单不能使用该优惠券。| |参数约束及描述：使用优惠券的订单ID，表示正在有另外一张订单正在使用这个优惠券。正在锁定的时候，只有锁定优惠券的订单才能使用这个优惠券，其他订单不能使用该优惠券。|
+        使用优惠券的订单ID，表示正在有另外一张订单正在使用这个优惠券。正在锁定的时候，只有锁定优惠券的订单才能使用这个优惠券，其他订单不能使用该优惠券。
 
         :param used_by_order_id: The used_by_order_id of this CouponInfoV2.
         :type: str
@@ -504,7 +504,7 @@ class CouponInfoV2:
     def coupon_usage(self):
         """Gets the coupon_usage of this CouponInfoV2.
 
-        |参数名称：优惠券用途。| |参数约束及描述：优惠券用途。|
+        优惠券用途。
 
         :return: The coupon_usage of this CouponInfoV2.
         :rtype: str
@@ -515,7 +515,7 @@ class CouponInfoV2:
     def coupon_usage(self, coupon_usage):
         """Sets the coupon_usage of this CouponInfoV2.
 
-        |参数名称：优惠券用途。| |参数约束及描述：优惠券用途。|
+        优惠券用途。
 
         :param coupon_usage: The coupon_usage of this CouponInfoV2.
         :type: str

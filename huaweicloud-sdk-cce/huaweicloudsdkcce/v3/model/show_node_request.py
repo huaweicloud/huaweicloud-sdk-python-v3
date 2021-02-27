@@ -25,31 +25,27 @@ class ShowNodeRequest:
     openapi_types = {
         'cluster_id': 'str',
         'node_id': 'str',
-        'content_type': 'str',
         'error_status': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
         'node_id': 'node_id',
-        'content_type': 'Content-Type',
         'error_status': 'errorStatus'
     }
 
-    def __init__(self, cluster_id=None, node_id=None, content_type='application/json', error_status=None):
+    def __init__(self, cluster_id=None, node_id=None, error_status=None):
         """ShowNodeRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._cluster_id = None
         self._node_id = None
-        self._content_type = None
         self._error_status = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
         self.node_id = node_id
-        self.content_type = content_type
         if error_status is not None:
             self.error_status = error_status
 
@@ -92,26 +88,6 @@ class ShowNodeRequest:
         :type: str
         """
         self._node_id = node_id
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this ShowNodeRequest.
-
-
-        :return: The content_type of this ShowNodeRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this ShowNodeRequest.
-
-
-        :param content_type: The content_type of this ShowNodeRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def error_status(self):

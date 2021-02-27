@@ -50,7 +50,7 @@ class ListCustomerOrdersResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListCustomerOrdersResponse.
 
-        |参数名称：符合条件的记录总数。| |参数的约束及描述：符合条件的记录总数。|
+        大于等于0的整数 符合条件的记录总数。
 
         :return: The total_count of this ListCustomerOrdersResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ListCustomerOrdersResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListCustomerOrdersResponse.
 
-        |参数名称：符合条件的记录总数。| |参数的约束及描述：符合条件的记录总数。|
+        大于等于0的整数 符合条件的记录总数。
 
         :param total_count: The total_count of this ListCustomerOrdersResponse.
         :type: int
@@ -72,7 +72,7 @@ class ListCustomerOrdersResponse(SdkResponse):
     def order_infos(self):
         """Gets the order_infos of this ListCustomerOrdersResponse.
 
-        |参数名称：客户订单详情信息。具体请参见表 CustomerOrderV2| |参数约束以及描述：客户订单详情信息。具体请参见表 CustomerOrderV2|
+        - 客户订单详情信息。 具体请参见表2
 
         :return: The order_infos of this ListCustomerOrdersResponse.
         :rtype: list[CustomerOrderV2]
@@ -83,7 +83,7 @@ class ListCustomerOrdersResponse(SdkResponse):
     def order_infos(self, order_infos):
         """Sets the order_infos of this ListCustomerOrdersResponse.
 
-        |参数名称：客户订单详情信息。具体请参见表 CustomerOrderV2| |参数约束以及描述：客户订单详情信息。具体请参见表 CustomerOrderV2|
+        - 客户订单详情信息。 具体请参见表2
 
         :param order_infos: The order_infos of this ListCustomerOrdersResponse.
         :type: list[CustomerOrderV2]

@@ -48,7 +48,7 @@ class TemplateArgs:
     def key(self):
         """Gets the key of this TemplateArgs.
 
-        |参数名称：模板参数名目前仅仅支持sub_customer_name：表明企业主创建企业子的名字| |参数约束及描述：模板参数名目前仅仅支持sub_customer_name：表明企业主创建企业子的名字|
+        模板参数名。 目前仅支持sub_customer_name：表明企业主创建企业子的名字
 
         :return: The key of this TemplateArgs.
         :rtype: str
@@ -59,7 +59,7 @@ class TemplateArgs:
     def key(self, key):
         """Sets the key of this TemplateArgs.
 
-        |参数名称：模板参数名目前仅仅支持sub_customer_name：表明企业主创建企业子的名字| |参数约束及描述：模板参数名目前仅仅支持sub_customer_name：表明企业主创建企业子的名字|
+        模板参数名。 目前仅支持sub_customer_name：表明企业主创建企业子的名字
 
         :param key: The key of this TemplateArgs.
         :type: str
@@ -70,7 +70,7 @@ class TemplateArgs:
     def value(self):
         """Gets the value of this TemplateArgs.
 
-        |参数名称：模板参数值key对应的取值| |参数约束及描述：模板参数值key对应的取值|
+        模板参数值。 key对应的取值。
 
         :return: The value of this TemplateArgs.
         :rtype: str
@@ -81,7 +81,7 @@ class TemplateArgs:
     def value(self, value):
         """Sets the value of this TemplateArgs.
 
-        |参数名称：模板参数值key对应的取值| |参数约束及描述：模板参数值key对应的取值|
+        模板参数值。 key对应的取值。
 
         :param value: The value of this TemplateArgs.
         :type: str

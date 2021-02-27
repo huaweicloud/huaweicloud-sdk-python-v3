@@ -55,7 +55,7 @@ class CheckUserIdentityResponse(SdkResponse):
     def error_code(self):
         """Gets the error_code of this CheckUserIdentityResponse.
 
-        |参数名称：返回码| |参数的约束及描述：该参数必填，且只允许字符串|
+        状态码。具体请参考状态码。只有失败才会返回这个参数。
 
         :return: The error_code of this CheckUserIdentityResponse.
         :rtype: str
@@ -66,7 +66,7 @@ class CheckUserIdentityResponse(SdkResponse):
     def error_code(self, error_code):
         """Sets the error_code of this CheckUserIdentityResponse.
 
-        |参数名称：返回码| |参数的约束及描述：该参数必填，且只允许字符串|
+        状态码。具体请参考状态码。只有失败才会返回这个参数。
 
         :param error_code: The error_code of this CheckUserIdentityResponse.
         :type: str
@@ -77,7 +77,7 @@ class CheckUserIdentityResponse(SdkResponse):
     def error_msg(self):
         """Gets the error_msg of this CheckUserIdentityResponse.
 
-        |参数名称：返回码描述| |参数的约束及描述：该参数必填，且只允许字符串|
+        错误描述信息。只有失败才会返回这个参数。
 
         :return: The error_msg of this CheckUserIdentityResponse.
         :rtype: str
@@ -88,7 +88,7 @@ class CheckUserIdentityResponse(SdkResponse):
     def error_msg(self, error_msg):
         """Sets the error_msg of this CheckUserIdentityResponse.
 
-        |参数名称：返回码描述| |参数的约束及描述：该参数必填，且只允许字符串|
+        错误描述信息。只有失败才会返回这个参数。
 
         :param error_msg: The error_msg of this CheckUserIdentityResponse.
         :type: str
@@ -99,7 +99,7 @@ class CheckUserIdentityResponse(SdkResponse):
     def check_result(self):
         """Gets the check_result of this CheckUserIdentityResponse.
 
-        |参数名称：是否可以继续注册| |参数的约束及描述：该参数非必填，且只允许字符串,available: 该登录名称/手机号/邮箱可以继续注册,used_by_user: 该登录名称/手机号/邮箱不可以继续注册|
+        available：该登录名称/手机号/邮箱有效。used_by_user：该登录名称/手机号/邮箱已被占用。
 
         :return: The check_result of this CheckUserIdentityResponse.
         :rtype: str
@@ -110,7 +110,7 @@ class CheckUserIdentityResponse(SdkResponse):
     def check_result(self, check_result):
         """Sets the check_result of this CheckUserIdentityResponse.
 
-        |参数名称：是否可以继续注册| |参数的约束及描述：该参数非必填，且只允许字符串,available: 该登录名称/手机号/邮箱可以继续注册,used_by_user: 该登录名称/手机号/邮箱不可以继续注册|
+        available：该登录名称/手机号/邮箱有效。used_by_user：该登录名称/手机号/邮箱已被占用。
 
         :param check_result: The check_result of this CheckUserIdentityResponse.
         :type: str

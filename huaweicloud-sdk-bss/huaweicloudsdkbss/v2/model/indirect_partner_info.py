@@ -70,7 +70,7 @@ class IndirectPartnerInfo:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this IndirectPartnerInfo.
 
-        |参数名称：二级经销商ID| |参数约束及描述：二级经销商ID|
+        精英服务商ID。
 
         :return: The indirect_partner_id of this IndirectPartnerInfo.
         :rtype: str
@@ -81,7 +81,7 @@ class IndirectPartnerInfo:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this IndirectPartnerInfo.
 
-        |参数名称：二级经销商ID| |参数约束及描述：二级经销商ID|
+        精英服务商ID。
 
         :param indirect_partner_id: The indirect_partner_id of this IndirectPartnerInfo.
         :type: str
@@ -92,7 +92,7 @@ class IndirectPartnerInfo:
     def mobile_phone(self):
         """Gets the mobile_phone of this IndirectPartnerInfo.
 
-        |参数名称：手机号码| |参数约束及描述：手机号码|
+        精英服务商的手机号码。
 
         :return: The mobile_phone of this IndirectPartnerInfo.
         :rtype: str
@@ -103,7 +103,7 @@ class IndirectPartnerInfo:
     def mobile_phone(self, mobile_phone):
         """Sets the mobile_phone of this IndirectPartnerInfo.
 
-        |参数名称：手机号码| |参数约束及描述：手机号码|
+        精英服务商的手机号码。
 
         :param mobile_phone: The mobile_phone of this IndirectPartnerInfo.
         :type: str
@@ -114,7 +114,7 @@ class IndirectPartnerInfo:
     def email(self):
         """Gets the email of this IndirectPartnerInfo.
 
-        |参数名称：邮箱| |参数约束及描述：邮箱|
+        精英服务商的邮箱。
 
         :return: The email of this IndirectPartnerInfo.
         :rtype: str
@@ -125,7 +125,7 @@ class IndirectPartnerInfo:
     def email(self, email):
         """Sets the email of this IndirectPartnerInfo.
 
-        |参数名称：邮箱| |参数约束及描述：邮箱|
+        精英服务商的邮箱。
 
         :param email: The email of this IndirectPartnerInfo.
         :type: str
@@ -136,7 +136,7 @@ class IndirectPartnerInfo:
     def account_name(self):
         """Gets the account_name of this IndirectPartnerInfo.
 
-        |参数名称：二级经销商的账户名| |参数约束及描述：二级经销商的账户名|
+        精英服务商的账户名。
 
         :return: The account_name of this IndirectPartnerInfo.
         :rtype: str
@@ -147,7 +147,7 @@ class IndirectPartnerInfo:
     def account_name(self, account_name):
         """Sets the account_name of this IndirectPartnerInfo.
 
-        |参数名称：二级经销商的账户名| |参数约束及描述：二级经销商的账户名|
+        精英服务商的账户名。
 
         :param account_name: The account_name of this IndirectPartnerInfo.
         :type: str
@@ -158,7 +158,7 @@ class IndirectPartnerInfo:
     def name(self):
         """Gets the name of this IndirectPartnerInfo.
 
-        |参数名称：二级经销商名称| |参数约束及描述：二级经销商名称|
+        精英服务商的名称。
 
         :return: The name of this IndirectPartnerInfo.
         :rtype: str
@@ -169,7 +169,7 @@ class IndirectPartnerInfo:
     def name(self, name):
         """Sets the name of this IndirectPartnerInfo.
 
-        |参数名称：二级经销商名称| |参数约束及描述：二级经销商名称|
+        精英服务商的名称。
 
         :param name: The name of this IndirectPartnerInfo.
         :type: str
@@ -180,7 +180,7 @@ class IndirectPartnerInfo:
     def associated_on(self):
         """Gets the associated_on of this IndirectPartnerInfo.
 
-        |参数名称：关联时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z| |参数约束及描述：关联时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z|
+        精英服务商关联华为云伙伴能力中心的时间。 UTC时间（包括时区），比如2016-03-28T00:00:00Z
 
         :return: The associated_on of this IndirectPartnerInfo.
         :rtype: str
@@ -191,7 +191,7 @@ class IndirectPartnerInfo:
     def associated_on(self, associated_on):
         """Sets the associated_on of this IndirectPartnerInfo.
 
-        |参数名称：关联时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z| |参数约束及描述：关联时间，UTC时间（包括时区），比如2016-03-28T00:00:00Z|
+        精英服务商关联华为云伙伴能力中心的时间。 UTC时间（包括时区），比如2016-03-28T00:00:00Z
 
         :param associated_on: The associated_on of this IndirectPartnerInfo.
         :type: str

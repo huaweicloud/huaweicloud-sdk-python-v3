@@ -469,7 +469,7 @@ class InstancesVO:
     def organization_id(self):
         """Gets the organization_id of this InstancesVO.
 
-        组织id（对应华为云账号的domainId）
+        组织id（对应华为云帐号的domainId）
 
         :return: The organization_id of this InstancesVO.
         :rtype: str
@@ -480,7 +480,7 @@ class InstancesVO:
     def organization_id(self, organization_id):
         """Sets the organization_id of this InstancesVO.
 
-        组织id（对应华为云账号的domainId）
+        组织id（对应华为云帐号的domainId）
 
         :param organization_id: The organization_id of this InstancesVO.
         :type: str

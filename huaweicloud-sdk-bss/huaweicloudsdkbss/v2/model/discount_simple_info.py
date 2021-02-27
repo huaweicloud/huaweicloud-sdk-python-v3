@@ -48,7 +48,7 @@ class DiscountSimpleInfo:
     def id(self):
         """Gets the id of this DiscountSimpleInfo.
 
-        |参数名称：折扣ID| |参数约束及描述：折扣ID|
+        折扣ID。
 
         :return: The id of this DiscountSimpleInfo.
         :rtype: str
@@ -59,7 +59,7 @@ class DiscountSimpleInfo:
     def id(self, id):
         """Sets the id of this DiscountSimpleInfo.
 
-        |参数名称：折扣ID| |参数约束及描述：折扣ID|
+        折扣ID。
 
         :param id: The id of this DiscountSimpleInfo.
         :type: str
@@ -70,7 +70,7 @@ class DiscountSimpleInfo:
     def type(self):
         """Gets the type of this DiscountSimpleInfo.
 
-        |参数名称：折扣类型：取值为1：合同折扣（可以有多组）2：商务优惠（仅有一组）3：合作伙伴授予折扣（仅有一组）609：订单调价折扣| |参数的约束及描述：折扣类型：取值为1：合同折扣（可以有多组）2：商务优惠（仅有一组）3：合作伙伴授予折扣（仅有一组）609：订单调价折扣|
+        折扣类型： 1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣
 
         :return: The type of this DiscountSimpleInfo.
         :rtype: int
@@ -81,7 +81,7 @@ class DiscountSimpleInfo:
     def type(self, type):
         """Sets the type of this DiscountSimpleInfo.
 
-        |参数名称：折扣类型：取值为1：合同折扣（可以有多组）2：商务优惠（仅有一组）3：合作伙伴授予折扣（仅有一组）609：订单调价折扣| |参数的约束及描述：折扣类型：取值为1：合同折扣（可以有多组）2：商务优惠（仅有一组）3：合作伙伴授予折扣（仅有一组）609：订单调价折扣|
+        折扣类型： 1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣
 
         :param type: The type of this DiscountSimpleInfo.
         :type: int

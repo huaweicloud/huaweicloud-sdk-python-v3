@@ -74,7 +74,7 @@ class AddPostalReq:
     def recipient(self):
         """Gets the recipient of this AddPostalReq.
 
-        |参数名称：收件人姓名| |参数约束及描述：收件人姓名|
+        收件人姓名。
 
         :return: The recipient of this AddPostalReq.
         :rtype: str
@@ -85,7 +85,7 @@ class AddPostalReq:
     def recipient(self, recipient):
         """Sets the recipient of this AddPostalReq.
 
-        |参数名称：收件人姓名| |参数约束及描述：收件人姓名|
+        收件人姓名。
 
         :param recipient: The recipient of this AddPostalReq.
         :type: str
@@ -96,7 +96,7 @@ class AddPostalReq:
     def province(self):
         """Gets the province of this AddPostalReq.
 
-        |参数名称：省/自治区/直辖市。例如：江苏，不要写成：江苏省| |参数约束及描述：省/自治区/直辖市。例如：江苏，不要写成：江苏省|
+        省、自治区或直辖市。例如：江苏省。
 
         :return: The province of this AddPostalReq.
         :rtype: str
@@ -107,7 +107,7 @@ class AddPostalReq:
     def province(self, province):
         """Sets the province of this AddPostalReq.
 
-        |参数名称：省/自治区/直辖市。例如：江苏，不要写成：江苏省| |参数约束及描述：省/自治区/直辖市。例如：江苏，不要写成：江苏省|
+        省、自治区或直辖市。例如：江苏省。
 
         :param province: The province of this AddPostalReq.
         :type: str
@@ -118,7 +118,7 @@ class AddPostalReq:
     def city(self):
         """Gets the city of this AddPostalReq.
 
-        |参数名称：市/区。例如：南京。| |参数约束及描述：市/区。例如：南京。|
+        市/区。例如：南京市。
 
         :return: The city of this AddPostalReq.
         :rtype: str
@@ -129,7 +129,7 @@ class AddPostalReq:
     def city(self, city):
         """Sets the city of this AddPostalReq.
 
-        |参数名称：市/区。例如：南京。| |参数约束及描述：市/区。例如：南京。|
+        市/区。例如：南京市。
 
         :param city: The city of this AddPostalReq.
         :type: str
@@ -140,7 +140,7 @@ class AddPostalReq:
     def district(self):
         """Gets the district of this AddPostalReq.
 
-        |参数名称：区。例如：雨花。| |参数约束及描述：区。例如：雨花。|
+        区。例如：雨花台区。
 
         :return: The district of this AddPostalReq.
         :rtype: str
@@ -151,7 +151,7 @@ class AddPostalReq:
     def district(self, district):
         """Sets the district of this AddPostalReq.
 
-        |参数名称：区。例如：雨花。| |参数约束及描述：区。例如：雨花。|
+        区。例如：雨花台区。
 
         :param district: The district of this AddPostalReq.
         :type: str
@@ -162,7 +162,7 @@ class AddPostalReq:
     def address(self):
         """Gets the address of this AddPostalReq.
 
-        |参数名称：邮寄详细地址。| |参数约束及描述：邮寄详细地址。|
+        邮寄详细地址。
 
         :return: The address of this AddPostalReq.
         :rtype: str
@@ -173,7 +173,7 @@ class AddPostalReq:
     def address(self, address):
         """Sets the address of this AddPostalReq.
 
-        |参数名称：邮寄详细地址。| |参数约束及描述：邮寄详细地址。|
+        邮寄详细地址。
 
         :param address: The address of this AddPostalReq.
         :type: str
@@ -184,7 +184,7 @@ class AddPostalReq:
     def zipcode(self):
         """Gets the zipcode of this AddPostalReq.
 
-        |参数名称：邮编| |参数约束及描述：邮编|
+        邮寄地址所在邮编。
 
         :return: The zipcode of this AddPostalReq.
         :rtype: str
@@ -195,7 +195,7 @@ class AddPostalReq:
     def zipcode(self, zipcode):
         """Sets the zipcode of this AddPostalReq.
 
-        |参数名称：邮编| |参数约束及描述：邮编|
+        邮寄地址所在邮编。
 
         :param zipcode: The zipcode of this AddPostalReq.
         :type: str
@@ -206,7 +206,7 @@ class AddPostalReq:
     def mobile_phone(self):
         """Gets the mobile_phone of this AddPostalReq.
 
-        |参数名称：手机号码，不带国家码| |参数约束及描述：手机号码，不带国家码|
+        手机号码，不带国家码。
 
         :return: The mobile_phone of this AddPostalReq.
         :rtype: str
@@ -217,7 +217,7 @@ class AddPostalReq:
     def mobile_phone(self, mobile_phone):
         """Sets the mobile_phone of this AddPostalReq.
 
-        |参数名称：手机号码，不带国家码| |参数约束及描述：手机号码，不带国家码|
+        手机号码，不带国家码。
 
         :param mobile_phone: The mobile_phone of this AddPostalReq.
         :type: str
@@ -228,7 +228,7 @@ class AddPostalReq:
     def is_default(self):
         """Gets the is_default of this AddPostalReq.
 
-        |参数名称：是否默认地址| |参数约束及描述：是否默认地址，默认为0。1：默认地址0：非默认地址|
+        是否默认地址，默认为0。 1：默认地址0：非默认地址
 
         :return: The is_default of this AddPostalReq.
         :rtype: int
@@ -239,7 +239,7 @@ class AddPostalReq:
     def is_default(self, is_default):
         """Sets the is_default of this AddPostalReq.
 
-        |参数名称：是否默认地址| |参数约束及描述：是否默认地址，默认为0。1：默认地址0：非默认地址|
+        是否默认地址，默认为0。 1：默认地址0：非默认地址
 
         :param is_default: The is_default of this AddPostalReq.
         :type: int

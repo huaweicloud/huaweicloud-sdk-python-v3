@@ -430,6 +430,69 @@ class BmsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_windows_bare_metal_server_password(self, request):
+        """Windows裸金属服务器清除密码
+
+        清除Windows裸金属服务器初始安装时系统生成的密码记录。清除密码后，不影响裸金属服务器密码登录功能，但不能再使用获取密码功能来查询该裸金属服务器密码。如果裸金属服务器是通过私有镜像创建的，请确保已安装Cloudbase-init。公共镜像默认已安装该软件
+
+        :param DeleteWindowsBareMetalServerPasswordRequest request
+        :return: DeleteWindowsBareMetalServerPasswordResponse
+        """
+        return self.delete_windows_bare_metal_server_password_with_http_info(request)
+
+    def delete_windows_bare_metal_server_password_with_http_info(self, request):
+        """Windows裸金属服务器清除密码
+
+        清除Windows裸金属服务器初始安装时系统生成的密码记录。清除密码后，不影响裸金属服务器密码登录功能，但不能再使用获取密码功能来查询该裸金属服务器密码。如果裸金属服务器是通过私有镜像创建的，请确保已安装Cloudbase-init。公共镜像默认已安装该软件
+
+        :param DeleteWindowsBareMetalServerPasswordRequest request
+        :return: DeleteWindowsBareMetalServerPasswordResponse
+        """
+
+        all_params = ['server_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/baremetalservers/{server_id}/os-server-password',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteWindowsBareMetalServerPasswordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def detach_baremetal_server_volume(self, request):
         """裸金属服务器卸载云磁盘
 
@@ -1202,69 +1265,6 @@ class BmsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateBaremetalServerMetadataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def windows_baremetal_server_clean_pwd(self, request):
-        """Windows裸金属服务器清除密码
-
-        清除Windows裸金属服务器初始安装时系统生成的密码记录。清除密码后，不影响裸金属服务器密码登录功能，但不能再使用获取密码功能来查询该裸金属服务器密码。如果裸金属服务器是通过私有镜像创建的，请确保已安装Cloudbase-init。公共镜像默认已安装该软件
-
-        :param WindowsBaremetalServerCleanPwdRequest request
-        :return: WindowsBaremetalServerCleanPwdResponse
-        """
-        return self.windows_baremetal_server_clean_pwd_with_http_info(request)
-
-    def windows_baremetal_server_clean_pwd_with_http_info(self, request):
-        """Windows裸金属服务器清除密码
-
-        清除Windows裸金属服务器初始安装时系统生成的密码记录。清除密码后，不影响裸金属服务器密码登录功能，但不能再使用获取密码功能来查询该裸金属服务器密码。如果裸金属服务器是通过私有镜像创建的，请确保已安装Cloudbase-init。公共镜像默认已安装该软件
-
-        :param WindowsBaremetalServerCleanPwdRequest request
-        :return: WindowsBaremetalServerCleanPwdResponse
-        """
-
-        all_params = ['server_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'server_id' in local_var_params:
-            path_params['server_id'] = local_var_params['server_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/os-server-password',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='WindowsBaremetalServerCleanPwdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

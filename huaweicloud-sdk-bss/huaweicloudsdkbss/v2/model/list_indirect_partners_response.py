@@ -50,7 +50,7 @@ class ListIndirectPartnersResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListIndirectPartnersResponse.
 
-        |参数名称：符合条件的记录个数，只有成功的时候出现| |参数的约束及描述：符合条件的记录个数，只有成功的时候出现|
+        符合条件的记录个数，只有成功的时候出现。
 
         :return: The count of this ListIndirectPartnersResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ListIndirectPartnersResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListIndirectPartnersResponse.
 
-        |参数名称：符合条件的记录个数，只有成功的时候出现| |参数的约束及描述：符合条件的记录个数，只有成功的时候出现|
+        符合条件的记录个数，只有成功的时候出现。
 
         :param count: The count of this ListIndirectPartnersResponse.
         :type: int
@@ -72,7 +72,7 @@ class ListIndirectPartnersResponse(SdkResponse):
     def indirect_partners(self):
         """Gets the indirect_partners of this ListIndirectPartnersResponse.
 
-        |参数名称：二级渠道邀请记录列表| |参数约束以及描述：二级渠道邀请记录列表|
+        精英服务商列表，具体参见表1。
 
         :return: The indirect_partners of this ListIndirectPartnersResponse.
         :rtype: list[IndirectPartnerInfo]
@@ -83,7 +83,7 @@ class ListIndirectPartnersResponse(SdkResponse):
     def indirect_partners(self, indirect_partners):
         """Sets the indirect_partners of this ListIndirectPartnersResponse.
 
-        |参数名称：二级渠道邀请记录列表| |参数约束以及描述：二级渠道邀请记录列表|
+        精英服务商列表，具体参见表1。
 
         :param indirect_partners: The indirect_partners of this ListIndirectPartnersResponse.
         :type: list[IndirectPartnerInfo]

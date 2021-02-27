@@ -58,7 +58,7 @@ class SetSubCustomerDiscountV2:
     def customer_id(self):
         """Gets the customer_id of this SetSubCustomerDiscountV2.
 
-        |参数名称：客户ID| |参数约束及描述：客户ID|
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :return: The customer_id of this SetSubCustomerDiscountV2.
         :rtype: str
@@ -69,7 +69,7 @@ class SetSubCustomerDiscountV2:
     def customer_id(self, customer_id):
         """Sets the customer_id of this SetSubCustomerDiscountV2.
 
-        |参数名称：客户ID| |参数约束及描述：客户ID|
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this SetSubCustomerDiscountV2.
         :type: str
@@ -80,7 +80,7 @@ class SetSubCustomerDiscountV2:
     def discount(self):
         """Gets the discount of this SetSubCustomerDiscountV2.
 
-        |参数名称：折扣率，最高精确到4位小数。折扣范围：0.8~1。如果折扣率是85%，则折扣率写成0.85。注意：折扣为1表示不打折，相当于删除伙伴折扣。| |参数的约束及描述：折扣率，最高精确到4位小数。折扣范围：0.8~1。如果折扣率是85%，则折扣率写成0.85。注意：折扣为1表示不打折，相当于删除伙伴折扣。|
+        折扣率，最高精确到2位小数。 折扣范围：0.8~1。 如果折扣率是85%，则折扣率写成0.85。 说明： 折扣为1表示不打折，相当于删除伙伴折扣。
 
         :return: The discount of this SetSubCustomerDiscountV2.
         :rtype: float
@@ -91,7 +91,7 @@ class SetSubCustomerDiscountV2:
     def discount(self, discount):
         """Sets the discount of this SetSubCustomerDiscountV2.
 
-        |参数名称：折扣率，最高精确到4位小数。折扣范围：0.8~1。如果折扣率是85%，则折扣率写成0.85。注意：折扣为1表示不打折，相当于删除伙伴折扣。| |参数的约束及描述：折扣率，最高精确到4位小数。折扣范围：0.8~1。如果折扣率是85%，则折扣率写成0.85。注意：折扣为1表示不打折，相当于删除伙伴折扣。|
+        折扣率，最高精确到2位小数。 折扣范围：0.8~1。 如果折扣率是85%，则折扣率写成0.85。 说明： 折扣为1表示不打折，相当于删除伙伴折扣。
 
         :param discount: The discount of this SetSubCustomerDiscountV2.
         :type: float
@@ -102,7 +102,7 @@ class SetSubCustomerDiscountV2:
     def effective_time(self):
         """Gets the effective_time of this SetSubCustomerDiscountV2.
 
-        |参数名称：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
+        生效时间。discount=1时无需填写。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The effective_time of this SetSubCustomerDiscountV2.
         :rtype: str
@@ -113,7 +113,7 @@ class SetSubCustomerDiscountV2:
     def effective_time(self, effective_time):
         """Sets the effective_time of this SetSubCustomerDiscountV2.
 
-        |参数名称：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
+        生效时间。discount=1时无需填写。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param effective_time: The effective_time of this SetSubCustomerDiscountV2.
         :type: str
@@ -124,7 +124,7 @@ class SetSubCustomerDiscountV2:
     def expire_time(self):
         """Gets the expire_time of this SetSubCustomerDiscountV2.
 
-        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
+        失效时间。discount=1时无需填写。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The expire_time of this SetSubCustomerDiscountV2.
         :rtype: str
@@ -135,7 +135,7 @@ class SetSubCustomerDiscountV2:
     def expire_time(self, expire_time):
         """Sets the expire_time of this SetSubCustomerDiscountV2.
 
-        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
+        失效时间。discount=1时无需填写。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param expire_time: The expire_time of this SetSubCustomerDiscountV2.
         :type: str

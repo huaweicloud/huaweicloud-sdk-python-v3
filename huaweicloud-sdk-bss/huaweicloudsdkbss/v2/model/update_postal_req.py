@@ -84,7 +84,7 @@ class UpdatePostalReq:
     def address_id(self):
         """Gets the address_id of this UpdatePostalReq.
 
-        |参数名称：地址ID，地址的唯一索引| |参数约束及描述：地址ID，地址的唯一索引|
+        地址ID，地址的唯一索引。
 
         :return: The address_id of this UpdatePostalReq.
         :rtype: str
@@ -95,7 +95,7 @@ class UpdatePostalReq:
     def address_id(self, address_id):
         """Sets the address_id of this UpdatePostalReq.
 
-        |参数名称：地址ID，地址的唯一索引| |参数约束及描述：地址ID，地址的唯一索引|
+        地址ID，地址的唯一索引。
 
         :param address_id: The address_id of this UpdatePostalReq.
         :type: str
@@ -106,7 +106,7 @@ class UpdatePostalReq:
     def recipient(self):
         """Gets the recipient of this UpdatePostalReq.
 
-        |参数名称：收件人姓名| |参数约束及描述：收件人姓名|
+        收件人姓名。
 
         :return: The recipient of this UpdatePostalReq.
         :rtype: str
@@ -117,7 +117,7 @@ class UpdatePostalReq:
     def recipient(self, recipient):
         """Sets the recipient of this UpdatePostalReq.
 
-        |参数名称：收件人姓名| |参数约束及描述：收件人姓名|
+        收件人姓名。
 
         :param recipient: The recipient of this UpdatePostalReq.
         :type: str
@@ -128,7 +128,7 @@ class UpdatePostalReq:
     def province(self):
         """Gets the province of this UpdatePostalReq.
 
-        |参数名称：省/自治区/直辖市。例如：江苏，不要写成：江苏省| |参数约束及描述：省/自治区/直辖市。例如：江苏，不要写成：江苏省|
+        省/自治区/直辖市。例如：江苏省。
 
         :return: The province of this UpdatePostalReq.
         :rtype: str
@@ -139,7 +139,7 @@ class UpdatePostalReq:
     def province(self, province):
         """Sets the province of this UpdatePostalReq.
 
-        |参数名称：省/自治区/直辖市。例如：江苏，不要写成：江苏省| |参数约束及描述：省/自治区/直辖市。例如：江苏，不要写成：江苏省|
+        省/自治区/直辖市。例如：江苏省。
 
         :param province: The province of this UpdatePostalReq.
         :type: str
@@ -150,7 +150,7 @@ class UpdatePostalReq:
     def city(self):
         """Gets the city of this UpdatePostalReq.
 
-        |参数名称：市/区。例如：南京。| |参数约束及描述：市/区。例如：南京。|
+        市/区。例如：南京市。
 
         :return: The city of this UpdatePostalReq.
         :rtype: str
@@ -161,7 +161,7 @@ class UpdatePostalReq:
     def city(self, city):
         """Sets the city of this UpdatePostalReq.
 
-        |参数名称：市/区。例如：南京。| |参数约束及描述：市/区。例如：南京。|
+        市/区。例如：南京市。
 
         :param city: The city of this UpdatePostalReq.
         :type: str
@@ -172,7 +172,7 @@ class UpdatePostalReq:
     def district(self):
         """Gets the district of this UpdatePostalReq.
 
-        |参数名称：区。例如：雨花。| |参数约束及描述：区。例如：雨花。|
+        区。例如：雨花区。
 
         :return: The district of this UpdatePostalReq.
         :rtype: str
@@ -183,7 +183,7 @@ class UpdatePostalReq:
     def district(self, district):
         """Sets the district of this UpdatePostalReq.
 
-        |参数名称：区。例如：雨花。| |参数约束及描述：区。例如：雨花。|
+        区。例如：雨花区。
 
         :param district: The district of this UpdatePostalReq.
         :type: str
@@ -194,7 +194,7 @@ class UpdatePostalReq:
     def address(self):
         """Gets the address of this UpdatePostalReq.
 
-        |参数名称：邮寄详细地址。| |参数约束及描述：邮寄详细地址。|
+        邮寄详细地址。
 
         :return: The address of this UpdatePostalReq.
         :rtype: str
@@ -205,7 +205,7 @@ class UpdatePostalReq:
     def address(self, address):
         """Sets the address of this UpdatePostalReq.
 
-        |参数名称：邮寄详细地址。| |参数约束及描述：邮寄详细地址。|
+        邮寄详细地址。
 
         :param address: The address of this UpdatePostalReq.
         :type: str
@@ -216,7 +216,7 @@ class UpdatePostalReq:
     def zipcode(self):
         """Gets the zipcode of this UpdatePostalReq.
 
-        |参数名称：邮编| |参数约束及描述：邮编|
+        邮寄地址所在邮编。
 
         :return: The zipcode of this UpdatePostalReq.
         :rtype: str
@@ -227,7 +227,7 @@ class UpdatePostalReq:
     def zipcode(self, zipcode):
         """Sets the zipcode of this UpdatePostalReq.
 
-        |参数名称：邮编| |参数约束及描述：邮编|
+        邮寄地址所在邮编。
 
         :param zipcode: The zipcode of this UpdatePostalReq.
         :type: str
@@ -238,7 +238,7 @@ class UpdatePostalReq:
     def mobile_phone(self):
         """Gets the mobile_phone of this UpdatePostalReq.
 
-        |参数名称：手机号码，不带国家码| |参数约束及描述：手机号码，不带国家码|
+        手机号码，不带国家码。
 
         :return: The mobile_phone of this UpdatePostalReq.
         :rtype: str
@@ -249,7 +249,7 @@ class UpdatePostalReq:
     def mobile_phone(self, mobile_phone):
         """Sets the mobile_phone of this UpdatePostalReq.
 
-        |参数名称：手机号码，不带国家码| |参数约束及描述：手机号码，不带国家码|
+        手机号码，不带国家码。
 
         :param mobile_phone: The mobile_phone of this UpdatePostalReq.
         :type: str
@@ -260,7 +260,7 @@ class UpdatePostalReq:
     def is_default(self):
         """Gets the is_default of this UpdatePostalReq.
 
-        |参数名称：是否默认地址| |参数约束及描述：是否默认地址，默认为0。1：默认地址0：非默认地址|
+        是否默认地址，默认为0。 1：默认地址0：非默认地址
 
         :return: The is_default of this UpdatePostalReq.
         :rtype: int
@@ -271,7 +271,7 @@ class UpdatePostalReq:
     def is_default(self, is_default):
         """Sets the is_default of this UpdatePostalReq.
 
-        |参数名称：是否默认地址| |参数约束及描述：是否默认地址，默认为0。1：默认地址0：非默认地址|
+        是否默认地址，默认为0。 1：默认地址0：非默认地址
 
         :param is_default: The is_default of this UpdatePostalReq.
         :type: int

@@ -23,26 +23,22 @@ class ShowJobRequest:
     sensitive_list = []
 
     openapi_types = {
-        'job_id': 'str',
-        'content_type': 'str'
+        'job_id': 'str'
     }
 
     attribute_map = {
-        'job_id': 'job_id',
-        'content_type': 'Content-Type'
+        'job_id': 'job_id'
     }
 
-    def __init__(self, job_id=None, content_type='application/json'):
+    def __init__(self, job_id=None):
         """ShowJobRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._job_id = None
-        self._content_type = None
         self.discriminator = None
 
         self.job_id = job_id
-        self.content_type = content_type
 
     @property
     def job_id(self):
@@ -63,26 +59,6 @@ class ShowJobRequest:
         :type: str
         """
         self._job_id = job_id
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this ShowJobRequest.
-
-
-        :return: The content_type of this ShowJobRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this ShowJobRequest.
-
-
-        :param content_type: The content_type of this ShowJobRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

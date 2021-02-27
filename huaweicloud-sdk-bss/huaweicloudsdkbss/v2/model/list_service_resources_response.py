@@ -50,7 +50,7 @@ class ListServiceResourcesResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListServiceResourcesResponse.
 
-        |参数名称：总数| |参数的约束及描述：总数|
+        总数。
 
         :return: The total_count of this ListServiceResourcesResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ListServiceResourcesResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListServiceResourcesResponse.
 
-        |参数名称：总数| |参数的约束及描述：总数|
+        总数。
 
         :param total_count: The total_count of this ListServiceResourcesResponse.
         :type: int
@@ -72,7 +72,7 @@ class ListServiceResourcesResponse(SdkResponse):
     def infos(self):
         """Gets the infos of this ListServiceResourcesResponse.
 
-        |参数名称：资源基本信息列表| |参数约束以及描述：资源基本信息列表|
+        资源基本信息列表，具体请参见表3。
 
         :return: The infos of this ListServiceResourcesResponse.
         :rtype: list[ServiceResourceInfo]
@@ -83,7 +83,7 @@ class ListServiceResourcesResponse(SdkResponse):
     def infos(self, infos):
         """Sets the infos of this ListServiceResourcesResponse.
 
-        |参数名称：资源基本信息列表| |参数约束以及描述：资源基本信息列表|
+        资源基本信息列表，具体请参见表3。
 
         :param infos: The infos of this ListServiceResourcesResponse.
         :type: list[ServiceResourceInfo]

@@ -82,7 +82,7 @@ class CreatePartnerCouponsReq:
     def quota_id(self):
         """Gets the quota_id of this CreatePartnerCouponsReq.
 
-        |参数名称：优惠券额度ID优惠券的类型跟随额度中的类型。| |参数约束及描述：优惠券额度ID优惠券的类型跟随额度中的类型。|
+        优惠券额度ID。该值在查询优惠券额度接口的响应参数中获取。
 
         :return: The quota_id of this CreatePartnerCouponsReq.
         :rtype: str
@@ -93,7 +93,7 @@ class CreatePartnerCouponsReq:
     def quota_id(self, quota_id):
         """Sets the quota_id of this CreatePartnerCouponsReq.
 
-        |参数名称：优惠券额度ID优惠券的类型跟随额度中的类型。| |参数约束及描述：优惠券额度ID优惠券的类型跟随额度中的类型。|
+        优惠券额度ID。该值在查询优惠券额度接口的响应参数中获取。
 
         :param quota_id: The quota_id of this CreatePartnerCouponsReq.
         :type: str
@@ -104,7 +104,7 @@ class CreatePartnerCouponsReq:
     def customer_ids(self):
         """Gets the customer_ids of this CreatePartnerCouponsReq.
 
-        |参数名称：客户ID列表| |参数约束以及描述：客户ID列表|
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :return: The customer_ids of this CreatePartnerCouponsReq.
         :rtype: list[str]
@@ -115,7 +115,7 @@ class CreatePartnerCouponsReq:
     def customer_ids(self, customer_ids):
         """Sets the customer_ids of this CreatePartnerCouponsReq.
 
-        |参数名称：客户ID列表| |参数约束以及描述：客户ID列表|
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_ids: The customer_ids of this CreatePartnerCouponsReq.
         :type: list[str]
@@ -126,7 +126,7 @@ class CreatePartnerCouponsReq:
     def face_value(self):
         """Gets the face_value of this CreatePartnerCouponsReq.
 
-        |参数名称：优惠券的面值：小数点后2位。浮点数精度为：小数点后两位| |参数的约束及描述：优惠券的面值：小数点后2位|
+        代金券面值。 单位：元。取值大于0且精确到小数点后2位。
 
         :return: The face_value of this CreatePartnerCouponsReq.
         :rtype: float
@@ -137,7 +137,7 @@ class CreatePartnerCouponsReq:
     def face_value(self, face_value):
         """Sets the face_value of this CreatePartnerCouponsReq.
 
-        |参数名称：优惠券的面值：小数点后2位。浮点数精度为：小数点后两位| |参数的约束及描述：优惠券的面值：小数点后2位|
+        代金券面值。 单位：元。取值大于0且精确到小数点后2位。
 
         :param face_value: The face_value of this CreatePartnerCouponsReq.
         :type: float
@@ -148,7 +148,7 @@ class CreatePartnerCouponsReq:
     def valid_time(self):
         """Gets the valid_time of this CreatePartnerCouponsReq.
 
-        |参数名称：优惠券的生效时间,UTC格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：优惠券的生效时间,UTC格式：yyyy-MM-ddTHH:mm:ssZ|
+        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The valid_time of this CreatePartnerCouponsReq.
         :rtype: str
@@ -159,7 +159,7 @@ class CreatePartnerCouponsReq:
     def valid_time(self, valid_time):
         """Sets the valid_time of this CreatePartnerCouponsReq.
 
-        |参数名称：优惠券的生效时间,UTC格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：优惠券的生效时间,UTC格式：yyyy-MM-ddTHH:mm:ssZ|
+        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param valid_time: The valid_time of this CreatePartnerCouponsReq.
         :type: str
@@ -170,7 +170,7 @@ class CreatePartnerCouponsReq:
     def expire_time(self):
         """Gets the expire_time of this CreatePartnerCouponsReq.
 
-        |参数名称：优惠券的失效时间,UTC格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：优惠券的失效时间,UTC格式：yyyy-MM-ddTHH:mm:ssZ|
+        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The expire_time of this CreatePartnerCouponsReq.
         :rtype: str
@@ -181,7 +181,7 @@ class CreatePartnerCouponsReq:
     def expire_time(self, expire_time):
         """Sets the expire_time of this CreatePartnerCouponsReq.
 
-        |参数名称：优惠券的失效时间,UTC格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：优惠券的失效时间,UTC格式：yyyy-MM-ddTHH:mm:ssZ|
+        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param expire_time: The expire_time of this CreatePartnerCouponsReq.
         :type: str
@@ -192,7 +192,7 @@ class CreatePartnerCouponsReq:
     def cloud_service_types(self):
         """Gets the cloud_service_types of this CreatePartnerCouponsReq.
 
-        |参数名称：云服务限制| |参数约束以及描述：云服务限制|
+        允许使用的云服务列表，您可以调用查询云服务类型列表接口获取。 多个云服务产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制） 说明： 如果额度上有限制云服务类型列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定云服务类型。
 
         :return: The cloud_service_types of this CreatePartnerCouponsReq.
         :rtype: list[str]
@@ -203,7 +203,7 @@ class CreatePartnerCouponsReq:
     def cloud_service_types(self, cloud_service_types):
         """Sets the cloud_service_types of this CreatePartnerCouponsReq.
 
-        |参数名称：云服务限制| |参数约束以及描述：云服务限制|
+        允许使用的云服务列表，您可以调用查询云服务类型列表接口获取。 多个云服务产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制） 说明： 如果额度上有限制云服务类型列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定云服务类型。
 
         :param cloud_service_types: The cloud_service_types of this CreatePartnerCouponsReq.
         :type: list[str]
@@ -214,7 +214,7 @@ class CreatePartnerCouponsReq:
     def product_ids(self):
         """Gets the product_ids of this CreatePartnerCouponsReq.
 
-        |参数名称：产品限制| |参数约束以及描述：产品限制|
+        允许使用的产品列表。 多个产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制） 说明： 如果额度上有限制产品列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定产品ID。 产品ID需要合作伙伴通过线下获得。
 
         :return: The product_ids of this CreatePartnerCouponsReq.
         :rtype: list[str]
@@ -225,7 +225,7 @@ class CreatePartnerCouponsReq:
     def product_ids(self, product_ids):
         """Sets the product_ids of this CreatePartnerCouponsReq.
 
-        |参数名称：产品限制| |参数约束以及描述：产品限制|
+        允许使用的产品列表。 多个产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制） 说明： 如果额度上有限制产品列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定产品ID。 产品ID需要合作伙伴通过线下获得。
 
         :param product_ids: The product_ids of this CreatePartnerCouponsReq.
         :type: list[str]
@@ -236,7 +236,7 @@ class CreatePartnerCouponsReq:
     def memo(self):
         """Gets the memo of this CreatePartnerCouponsReq.
 
-        |参数名称：发券时的备注信息| |参数约束及描述：发券时的备注信息|
+        发券时的备注信息。
 
         :return: The memo of this CreatePartnerCouponsReq.
         :rtype: str
@@ -247,7 +247,7 @@ class CreatePartnerCouponsReq:
     def memo(self, memo):
         """Sets the memo of this CreatePartnerCouponsReq.
 
-        |参数名称：发券时的备注信息| |参数约束及描述：发券时的备注信息|
+        发券时的备注信息。
 
         :param memo: The memo of this CreatePartnerCouponsReq.
         :type: str
@@ -258,7 +258,7 @@ class CreatePartnerCouponsReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this CreatePartnerCouponsReq.
 
-        |参数名称：二级经销商ID| |参数约束及描述：如果一级经销商要给二级经销商的子客户设置折扣，需要携带这个字段|
+        精英服务商ID。 精英服务商给子客户发放优惠券时，需要携带该参数。
 
         :return: The indirect_partner_id of this CreatePartnerCouponsReq.
         :rtype: str
@@ -269,7 +269,7 @@ class CreatePartnerCouponsReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this CreatePartnerCouponsReq.
 
-        |参数名称：二级经销商ID| |参数约束及描述：如果一级经销商要给二级经销商的子客户设置折扣，需要携带这个字段|
+        精英服务商ID。 精英服务商给子客户发放优惠券时，需要携带该参数。
 
         :param indirect_partner_id: The indirect_partner_id of this CreatePartnerCouponsReq.
         :type: str

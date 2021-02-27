@@ -28,11 +28,11 @@ class SdkResponse:
     def __init__(self):
         self.status_code = None
         self.header_params = None
-        self.body = None
+        self.raw_content = None
 
     def to_json_object(self):
-        if self.body is not None:
-            return json.loads(self.body.decode("utf-8"))
+        if self.raw_content is not None:
+            return json.loads(self.raw_content.decode("utf-8"))
 
 
 class FutureSdkResponse:

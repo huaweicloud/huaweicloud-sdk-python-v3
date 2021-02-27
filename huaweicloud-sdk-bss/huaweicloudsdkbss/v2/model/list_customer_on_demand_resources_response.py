@@ -50,7 +50,7 @@ class ListCustomerOnDemandResourcesResponse(SdkResponse):
     def resources(self):
         """Gets the resources of this ListCustomerOnDemandResourcesResponse.
 
-        |参数名称：客户按需资源列表。CustomerOnDemandResource| |参数约束以及描述：客户按需资源列表。CustomerOnDemandResource|
+        客户资源列表。 具体参见表2。
 
         :return: The resources of this ListCustomerOnDemandResourcesResponse.
         :rtype: list[CustomerOnDemandResource]
@@ -61,7 +61,7 @@ class ListCustomerOnDemandResourcesResponse(SdkResponse):
     def resources(self, resources):
         """Sets the resources of this ListCustomerOnDemandResourcesResponse.
 
-        |参数名称：客户按需资源列表。CustomerOnDemandResource| |参数约束以及描述：客户按需资源列表。CustomerOnDemandResource|
+        客户资源列表。 具体参见表2。
 
         :param resources: The resources of this ListCustomerOnDemandResourcesResponse.
         :type: list[CustomerOnDemandResource]
@@ -72,7 +72,7 @@ class ListCustomerOnDemandResourcesResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListCustomerOnDemandResourcesResponse.
 
-        |参数名称：查询总数| |参数的约束及描述：查询总数|
+        查询总数。
 
         :return: The total_count of this ListCustomerOnDemandResourcesResponse.
         :rtype: int
@@ -83,7 +83,7 @@ class ListCustomerOnDemandResourcesResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListCustomerOnDemandResourcesResponse.
 
-        |参数名称：查询总数| |参数的约束及描述：查询总数|
+        查询总数。
 
         :param total_count: The total_count of this ListCustomerOnDemandResourcesResponse.
         :type: int

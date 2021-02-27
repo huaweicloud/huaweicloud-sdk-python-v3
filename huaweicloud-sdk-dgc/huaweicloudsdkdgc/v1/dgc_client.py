@@ -1384,195 +1384,6 @@ class DgcClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def modify_job(self, request):
-        """修改作业
-
-
-        :param ModifyJobRequest request
-        :return: ModifyJobResponse
-        """
-        return self.modify_job_with_http_info(request)
-
-    def modify_job_with_http_info(self, request):
-        """修改作业
-
-
-        :param ModifyJobRequest request
-        :return: ModifyJobResponse
-        """
-
-        all_params = ['job_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'job_name' in local_var_params:
-            path_params['job_name'] = local_var_params['job_name']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ModifyJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def modify_resource(self, request):
-        """修改资源
-
-
-        :param ModifyResourceRequest request
-        :return: ModifyResourceResponse
-        """
-        return self.modify_resource_with_http_info(request)
-
-    def modify_resource_with_http_info(self, request):
-        """修改资源
-
-
-        :param ModifyResourceRequest request
-        :return: ModifyResourceResponse
-        """
-
-        all_params = ['resource_id', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'resource_id' in local_var_params:
-            path_params['resource_id'] = local_var_params['resource_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/resources/{resource_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ModifyResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def modify_script(self, request):
-        """修改脚本内容
-
-
-        :param ModifyScriptRequest request
-        :return: ModifyScriptResponse
-        """
-        return self.modify_script_with_http_info(request)
-
-    def modify_script_with_http_info(self, request):
-        """修改脚本内容
-
-
-        :param ModifyScriptRequest request
-        :return: ModifyScriptResponse
-        """
-
-        all_params = ['script_name', 'body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'script_name' in local_var_params:
-            path_params['script_name'] = local_var_params['script_name']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/scripts/{script_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ModifyScriptResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def restore_job_instance(self, request):
         """重跑作业实例
 
@@ -2372,6 +2183,195 @@ class DgcClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateConnectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_job(self, request):
+        """修改作业
+
+
+        :param UpdateJobRequest request
+        :return: UpdateJobResponse
+        """
+        return self.update_job_with_http_info(request)
+
+    def update_job_with_http_info(self, request):
+        """修改作业
+
+
+        :param UpdateJobRequest request
+        :return: UpdateJobResponse
+        """
+
+        all_params = ['job_name', 'body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_name' in local_var_params:
+            path_params['job_name'] = local_var_params['job_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/jobs/{job_name}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_resource(self, request):
+        """修改资源
+
+
+        :param UpdateResourceRequest request
+        :return: UpdateResourceResponse
+        """
+        return self.update_resource_with_http_info(request)
+
+    def update_resource_with_http_info(self, request):
+        """修改资源
+
+
+        :param UpdateResourceRequest request
+        :return: UpdateResourceResponse
+        """
+
+        all_params = ['resource_id', 'body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/resources/{resource_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateResourceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_script(self, request):
+        """修改脚本内容
+
+
+        :param UpdateScriptRequest request
+        :return: UpdateScriptResponse
+        """
+        return self.update_script_with_http_info(request)
+
+    def update_script_with_http_info(self, request):
+        """修改脚本内容
+
+
+        :param UpdateScriptRequest request
+        :return: UpdateScriptResponse
+        """
+
+        all_params = ['script_name', 'body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'script_name' in local_var_params:
+            path_params['script_name'] = local_var_params['script_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/scripts/{script_name}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateScriptResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

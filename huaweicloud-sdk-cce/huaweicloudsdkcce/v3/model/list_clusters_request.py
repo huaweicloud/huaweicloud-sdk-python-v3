@@ -23,7 +23,6 @@ class ListClustersRequest:
     sensitive_list = []
 
     openapi_types = {
-        'content_type': 'str',
         'error_status': 'str',
         'detail': 'str',
         'status': 'str',
@@ -32,7 +31,6 @@ class ListClustersRequest:
     }
 
     attribute_map = {
-        'content_type': 'Content-Type',
         'error_status': 'errorStatus',
         'detail': 'detail',
         'status': 'status',
@@ -40,12 +38,11 @@ class ListClustersRequest:
         'version': 'version'
     }
 
-    def __init__(self, content_type='application/json', error_status=None, detail=None, status=None, type=None, version=None):
+    def __init__(self, error_status=None, detail=None, status=None, type=None, version=None):
         """ListClustersRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._content_type = None
         self._error_status = None
         self._detail = None
         self._status = None
@@ -53,7 +50,6 @@ class ListClustersRequest:
         self._version = None
         self.discriminator = None
 
-        self.content_type = content_type
         if error_status is not None:
             self.error_status = error_status
         if detail is not None:
@@ -64,26 +60,6 @@ class ListClustersRequest:
             self.type = type
         if version is not None:
             self.version = version
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this ListClustersRequest.
-
-
-        :return: The content_type of this ListClustersRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this ListClustersRequest.
-
-
-        :param content_type: The content_type of this ListClustersRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def error_status(self):

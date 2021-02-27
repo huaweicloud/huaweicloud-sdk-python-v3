@@ -23,26 +23,22 @@ class AwakeClusterRequest:
     sensitive_list = []
 
     openapi_types = {
-        'cluster_id': 'str',
-        'content_type': 'str'
+        'cluster_id': 'str'
     }
 
     attribute_map = {
-        'cluster_id': 'cluster_id',
-        'content_type': 'Content-Type'
+        'cluster_id': 'cluster_id'
     }
 
-    def __init__(self, cluster_id=None, content_type='application/json'):
+    def __init__(self, cluster_id=None):
         """AwakeClusterRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._cluster_id = None
-        self._content_type = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
-        self.content_type = content_type
 
     @property
     def cluster_id(self):
@@ -63,26 +59,6 @@ class AwakeClusterRequest:
         :type: str
         """
         self._cluster_id = cluster_id
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this AwakeClusterRequest.
-
-
-        :return: The content_type of this AwakeClusterRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this AwakeClusterRequest.
-
-
-        :param content_type: The content_type of this AwakeClusterRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

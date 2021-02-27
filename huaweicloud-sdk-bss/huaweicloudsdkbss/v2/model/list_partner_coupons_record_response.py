@@ -50,7 +50,7 @@ class ListPartnerCouponsRecordResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListPartnerCouponsRecordResponse.
 
-        |参数名称：查询记录总数。| |参数的约束及描述：查询记录总数。|
+        查询记录总数。
 
         :return: The total_count of this ListPartnerCouponsRecordResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ListPartnerCouponsRecordResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListPartnerCouponsRecordResponse.
 
-        |参数名称：查询记录总数。| |参数的约束及描述：查询记录总数。|
+        查询记录总数。
 
         :param total_count: The total_count of this ListPartnerCouponsRecordResponse.
         :type: int
@@ -72,7 +72,7 @@ class ListPartnerCouponsRecordResponse(SdkResponse):
     def records(self):
         """Gets the records of this ListPartnerCouponsRecordResponse.
 
-        |参数名称：日志记录列表。具体请参见表2 CouponRecordV2。| |参数约束以及描述：日志记录列表。具体请参见表2 CouponRecordV2。|
+        日志记录列表。 具体请参见表2。
 
         :return: The records of this ListPartnerCouponsRecordResponse.
         :rtype: list[CouponRecordV2]
@@ -83,7 +83,7 @@ class ListPartnerCouponsRecordResponse(SdkResponse):
     def records(self, records):
         """Sets the records of this ListPartnerCouponsRecordResponse.
 
-        |参数名称：日志记录列表。具体请参见表2 CouponRecordV2。| |参数约束以及描述：日志记录列表。具体请参见表2 CouponRecordV2。|
+        日志记录列表。 具体请参见表2。
 
         :param records: The records of this ListPartnerCouponsRecordResponse.
         :type: list[CouponRecordV2]

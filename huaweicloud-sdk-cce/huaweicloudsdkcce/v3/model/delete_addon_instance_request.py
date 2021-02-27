@@ -23,50 +23,26 @@ class DeleteAddonInstanceRequest:
     sensitive_list = []
 
     openapi_types = {
-        'content_type': 'str',
         'id': 'str',
         'cluster_id': 'str'
     }
 
     attribute_map = {
-        'content_type': 'Content-Type',
         'id': 'id',
         'cluster_id': 'cluster_id'
     }
 
-    def __init__(self, content_type='application/json', id=None, cluster_id=None):
+    def __init__(self, id=None, cluster_id=None):
         """DeleteAddonInstanceRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._content_type = None
         self._id = None
         self._cluster_id = None
         self.discriminator = None
 
-        self.content_type = content_type
         self.id = id
         self.cluster_id = cluster_id
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this DeleteAddonInstanceRequest.
-
-
-        :return: The content_type of this DeleteAddonInstanceRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this DeleteAddonInstanceRequest.
-
-
-        :param content_type: The content_type of this DeleteAddonInstanceRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def id(self):

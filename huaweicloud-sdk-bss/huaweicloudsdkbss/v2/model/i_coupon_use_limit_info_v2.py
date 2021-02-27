@@ -75,7 +75,7 @@ class ICouponUseLimitInfoV2:
     def use_limiti_info_id(self):
         """Gets the use_limiti_info_id of this ICouponUseLimitInfoV2.
 
-        |参数名称：使用限制ID，主键。| |参数约束及描述：使用限制ID，主键。|
+        使用限制ID，主键。
 
         :return: The use_limiti_info_id of this ICouponUseLimitInfoV2.
         :rtype: str
@@ -86,7 +86,7 @@ class ICouponUseLimitInfoV2:
     def use_limiti_info_id(self, use_limiti_info_id):
         """Sets the use_limiti_info_id of this ICouponUseLimitInfoV2.
 
-        |参数名称：使用限制ID，主键。| |参数约束及描述：使用限制ID，主键。|
+        使用限制ID，主键。
 
         :param use_limiti_info_id: The use_limiti_info_id of this ICouponUseLimitInfoV2.
         :type: str
@@ -97,7 +97,7 @@ class ICouponUseLimitInfoV2:
     def limit_key(self):
         """Gets the limit_key of this ICouponUseLimitInfoV2.
 
-        |参数名称：折扣限制，key的取值请参考表ICouponUseLimitInfo的limit_key要求。| |参数约束及描述：折扣限制，key的取值请参考表 ICouponUseLimitInfo的limit_key要求。|
+        折扣限制，key的取值请参考表4。
 
         :return: The limit_key of this ICouponUseLimitInfoV2.
         :rtype: str
@@ -108,7 +108,7 @@ class ICouponUseLimitInfoV2:
     def limit_key(self, limit_key):
         """Sets the limit_key of this ICouponUseLimitInfoV2.
 
-        |参数名称：折扣限制，key的取值请参考表ICouponUseLimitInfo的limit_key要求。| |参数约束及描述：折扣限制，key的取值请参考表 ICouponUseLimitInfo的limit_key要求。|
+        折扣限制，key的取值请参考表4。
 
         :param limit_key: The limit_key of this ICouponUseLimitInfoV2.
         :type: str
@@ -119,7 +119,7 @@ class ICouponUseLimitInfoV2:
     def value1(self):
         """Gets the value1 of this ICouponUseLimitInfoV2.
 
-        |参数名称：value1。| |参数约束及描述：value1。|
+        value1。
 
         :return: The value1 of this ICouponUseLimitInfoV2.
         :rtype: str
@@ -130,7 +130,7 @@ class ICouponUseLimitInfoV2:
     def value1(self, value1):
         """Sets the value1 of this ICouponUseLimitInfoV2.
 
-        |参数名称：value1。| |参数约束及描述：value1。|
+        value1。
 
         :param value1: The value1 of this ICouponUseLimitInfoV2.
         :type: str
@@ -141,7 +141,7 @@ class ICouponUseLimitInfoV2:
     def value2(self):
         """Gets the value2 of this ICouponUseLimitInfoV2.
 
-        |参数名称：value2。| |参数约束及描述：value2。|
+        value2。
 
         :return: The value2 of this ICouponUseLimitInfoV2.
         :rtype: str
@@ -152,7 +152,7 @@ class ICouponUseLimitInfoV2:
     def value2(self, value2):
         """Sets the value2 of this ICouponUseLimitInfoV2.
 
-        |参数名称：value2。| |参数约束及描述：value2。|
+        value2。
 
         :param value2: The value2 of this ICouponUseLimitInfoV2.
         :type: str
@@ -163,7 +163,7 @@ class ICouponUseLimitInfoV2:
     def value_unit(self):
         """Gets the value_unit of this ICouponUseLimitInfoV2.
 
-        |参数名称：value单位。| |参数约束及描述：value单位。|
+        value单位。
 
         :return: The value_unit of this ICouponUseLimitInfoV2.
         :rtype: str
@@ -174,7 +174,7 @@ class ICouponUseLimitInfoV2:
     def value_unit(self, value_unit):
         """Sets the value_unit of this ICouponUseLimitInfoV2.
 
-        |参数名称：value单位。| |参数约束及描述：value单位。|
+        value单位。
 
         :param value_unit: The value_unit of this ICouponUseLimitInfoV2.
         :type: str
@@ -185,7 +185,7 @@ class ICouponUseLimitInfoV2:
     def limit_type(self):
         """Gets the limit_type of this ICouponUseLimitInfoV2.
 
-        |参数名称：限制类型。| |参数约束及描述：限制类型。|
+        限制类型。
 
         :return: The limit_type of this ICouponUseLimitInfoV2.
         :rtype: str
@@ -196,7 +196,7 @@ class ICouponUseLimitInfoV2:
     def limit_type(self, limit_type):
         """Sets the limit_type of this ICouponUseLimitInfoV2.
 
-        |参数名称：限制类型。| |参数约束及描述：限制类型。|
+        限制类型。
 
         :param limit_type: The limit_type of this ICouponUseLimitInfoV2.
         :type: str
@@ -207,7 +207,7 @@ class ICouponUseLimitInfoV2:
     def promotion_plan_id(self):
         """Gets the promotion_plan_id of this ICouponUseLimitInfoV2.
 
-        |参数名称：促销计划ID。| |参数约束及描述：促销计划ID。|
+        促销计划ID。
 
         :return: The promotion_plan_id of this ICouponUseLimitInfoV2.
         :rtype: str
@@ -218,7 +218,7 @@ class ICouponUseLimitInfoV2:
     def promotion_plan_id(self, promotion_plan_id):
         """Sets the promotion_plan_id of this ICouponUseLimitInfoV2.
 
-        |参数名称：促销计划ID。| |参数约束及描述：促销计划ID。|
+        促销计划ID。
 
         :param promotion_plan_id: The promotion_plan_id of this ICouponUseLimitInfoV2.
         :type: str

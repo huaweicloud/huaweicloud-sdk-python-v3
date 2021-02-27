@@ -23,47 +23,45 @@ class UpdateProduct:
     sensitive_list = []
 
     openapi_types = {
-        'service_capabilities': 'list[ServiceCapability]',
         'app_id': 'str',
         'name': 'str',
         'device_type': 'str',
         'protocol_type': 'str',
         'data_format': 'str',
+        'service_capabilities': 'list[ServiceCapability]',
         'manufacturer_name': 'str',
         'industry': 'str',
         'description': 'str'
     }
 
     attribute_map = {
-        'service_capabilities': 'service_capabilities',
         'app_id': 'app_id',
         'name': 'name',
         'device_type': 'device_type',
         'protocol_type': 'protocol_type',
         'data_format': 'data_format',
+        'service_capabilities': 'service_capabilities',
         'manufacturer_name': 'manufacturer_name',
         'industry': 'industry',
         'description': 'description'
     }
 
-    def __init__(self, service_capabilities=None, app_id=None, name=None, device_type=None, protocol_type=None, data_format=None, manufacturer_name=None, industry=None, description=None):
+    def __init__(self, app_id=None, name=None, device_type=None, protocol_type=None, data_format=None, service_capabilities=None, manufacturer_name=None, industry=None, description=None):
         """UpdateProduct - a model defined in huaweicloud sdk"""
         
         
 
-        self._service_capabilities = None
         self._app_id = None
         self._name = None
         self._device_type = None
         self._protocol_type = None
         self._data_format = None
+        self._service_capabilities = None
         self._manufacturer_name = None
         self._industry = None
         self._description = None
         self.discriminator = None
 
-        if service_capabilities is not None:
-            self.service_capabilities = service_capabilities
         if app_id is not None:
             self.app_id = app_id
         if name is not None:
@@ -74,34 +72,14 @@ class UpdateProduct:
             self.protocol_type = protocol_type
         if data_format is not None:
             self.data_format = data_format
+        if service_capabilities is not None:
+            self.service_capabilities = service_capabilities
         if manufacturer_name is not None:
             self.manufacturer_name = manufacturer_name
         if industry is not None:
             self.industry = industry
         if description is not None:
             self.description = description
-
-    @property
-    def service_capabilities(self):
-        """Gets the service_capabilities of this UpdateProduct.
-
-        设备的服务能力列表。
-
-        :return: The service_capabilities of this UpdateProduct.
-        :rtype: list[ServiceCapability]
-        """
-        return self._service_capabilities
-
-    @service_capabilities.setter
-    def service_capabilities(self, service_capabilities):
-        """Sets the service_capabilities of this UpdateProduct.
-
-        设备的服务能力列表。
-
-        :param service_capabilities: The service_capabilities of this UpdateProduct.
-        :type: list[ServiceCapability]
-        """
-        self._service_capabilities = service_capabilities
 
     @property
     def app_id(self):
@@ -212,6 +190,28 @@ class UpdateProduct:
         :type: str
         """
         self._data_format = data_format
+
+    @property
+    def service_capabilities(self):
+        """Gets the service_capabilities of this UpdateProduct.
+
+        设备的服务能力列表。
+
+        :return: The service_capabilities of this UpdateProduct.
+        :rtype: list[ServiceCapability]
+        """
+        return self._service_capabilities
+
+    @service_capabilities.setter
+    def service_capabilities(self, service_capabilities):
+        """Sets the service_capabilities of this UpdateProduct.
+
+        设备的服务能力列表。
+
+        :param service_capabilities: The service_capabilities of this UpdateProduct.
+        :type: list[ServiceCapability]
+        """
+        self._service_capabilities = service_capabilities
 
     @property
     def manufacturer_name(self):

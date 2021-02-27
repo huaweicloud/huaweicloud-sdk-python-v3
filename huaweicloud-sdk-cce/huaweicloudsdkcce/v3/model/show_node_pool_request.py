@@ -25,31 +25,27 @@ class ShowNodePoolRequest:
     openapi_types = {
         'cluster_id': 'str',
         'nodepool_id': 'str',
-        'content_type': 'str',
         'error_status': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
         'nodepool_id': 'nodepool_id',
-        'content_type': 'Content-Type',
         'error_status': 'errorStatus'
     }
 
-    def __init__(self, cluster_id=None, nodepool_id=None, content_type='application/json', error_status=None):
+    def __init__(self, cluster_id=None, nodepool_id=None, error_status=None):
         """ShowNodePoolRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._cluster_id = None
         self._nodepool_id = None
-        self._content_type = None
         self._error_status = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
         self.nodepool_id = nodepool_id
-        self.content_type = content_type
         if error_status is not None:
             self.error_status = error_status
 
@@ -92,26 +88,6 @@ class ShowNodePoolRequest:
         :type: str
         """
         self._nodepool_id = nodepool_id
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this ShowNodePoolRequest.
-
-
-        :return: The content_type of this ShowNodePoolRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this ShowNodePoolRequest.
-
-
-        :param content_type: The content_type of this ShowNodePoolRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def error_status(self):

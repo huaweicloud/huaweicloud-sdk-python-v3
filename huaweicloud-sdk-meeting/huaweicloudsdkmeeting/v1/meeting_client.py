@@ -2498,77 +2498,6 @@ class MeetingClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def edit_meeting(self, request):
-        """编辑预约会议
-
-        编辑预约会议。会议开始后，不能被编辑。
-
-        :param EditMeetingRequest request
-        :return: EditMeetingResponse
-        """
-        return self.edit_meeting_with_http_info(request)
-
-    def edit_meeting_with_http_info(self, request):
-        """编辑预约会议
-
-        编辑预约会议。会议开始后，不能被编辑。
-
-        :param EditMeetingRequest request
-        :return: EditMeetingResponse
-        """
-
-        all_params = ['conference_id', 'req_body', 'user_uuid', 'x_authorization_type', 'x_site_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'conference_id' in local_var_params:
-            query_params.append(('conferenceID', local_var_params['conference_id']))
-        if 'user_uuid' in local_var_params:
-            query_params.append(('userUUID', local_var_params['user_uuid']))
-
-        header_params = {}
-        if 'x_authorization_type' in local_var_params:
-            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
-        if 'x_site_id' in local_var_params:
-            header_params['X-Site-Id'] = local_var_params['x_site_id']
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='EditMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def hand(self, request):
         """举手
 
@@ -7795,6 +7724,77 @@ class MeetingClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateMaterialResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_meeting(self, request):
+        """编辑预约会议
+
+        编辑预约会议。会议开始后，不能被编辑。
+
+        :param UpdateMeetingRequest request
+        :return: UpdateMeetingResponse
+        """
+        return self.update_meeting_with_http_info(request)
+
+    def update_meeting_with_http_info(self, request):
+        """编辑预约会议
+
+        编辑预约会议。会议开始后，不能被编辑。
+
+        :param UpdateMeetingRequest request
+        :return: UpdateMeetingResponse
+        """
+
+        all_params = ['conference_id', 'req_body', 'user_uuid', 'x_authorization_type', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

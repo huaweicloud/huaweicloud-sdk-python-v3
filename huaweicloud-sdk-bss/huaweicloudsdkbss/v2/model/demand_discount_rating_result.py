@@ -65,7 +65,7 @@ class DemandDiscountRatingResult:
     def discount_id(self):
         """Gets the discount_id of this DemandDiscountRatingResult.
 
-        |参数名称：优惠标识ID| |参数约束及描述：优惠标识ID|
+        优惠标识ID。
 
         :return: The discount_id of this DemandDiscountRatingResult.
         :rtype: str
@@ -76,7 +76,7 @@ class DemandDiscountRatingResult:
     def discount_id(self, discount_id):
         """Sets the discount_id of this DemandDiscountRatingResult.
 
-        |参数名称：优惠标识ID| |参数约束及描述：优惠标识ID|
+        优惠标识ID。
 
         :param discount_id: The discount_id of this DemandDiscountRatingResult.
         :type: str
@@ -87,7 +87,7 @@ class DemandDiscountRatingResult:
     def discount_type(self):
         """Gets the discount_type of this DemandDiscountRatingResult.
 
-        |参数名称：合同商务优惠类型：基于官网价计算优惠605 华为云商务-折扣率，一口价，华为云用户606 渠道商务-折扣率，一口价，BP用户伙伴折扣优惠类型：基于官网价计算优惠607 合作伙伴授予折扣-折扣率|
+        折扣优惠类型。 合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣 伙伴授予折扣：607：合作伙伴授予折扣-折扣率
 
         :return: The discount_type of this DemandDiscountRatingResult.
         :rtype: int
@@ -98,7 +98,7 @@ class DemandDiscountRatingResult:
     def discount_type(self, discount_type):
         """Sets the discount_type of this DemandDiscountRatingResult.
 
-        |参数名称：合同商务优惠类型：基于官网价计算优惠605 华为云商务-折扣率，一口价，华为云用户606 渠道商务-折扣率，一口价，BP用户伙伴折扣优惠类型：基于官网价计算优惠607 合作伙伴授予折扣-折扣率|
+        折扣优惠类型。 合同商务折扣：605：华为云BE场景下的合同商务折扣606：分销商BE场景下的合同商务折扣 伙伴授予折扣：607：合作伙伴授予折扣-折扣率
 
         :param discount_type: The discount_type of this DemandDiscountRatingResult.
         :type: int
@@ -109,7 +109,7 @@ class DemandDiscountRatingResult:
     def amount(self):
         """Gets the amount of this DemandDiscountRatingResult.
 
-        优惠金额
+        折扣的金额。
 
         :return: The amount of this DemandDiscountRatingResult.
         :rtype: float
@@ -120,7 +120,7 @@ class DemandDiscountRatingResult:
     def amount(self, amount):
         """Sets the amount of this DemandDiscountRatingResult.
 
-        优惠金额
+        折扣的金额。
 
         :param amount: The amount of this DemandDiscountRatingResult.
         :type: float
@@ -131,7 +131,7 @@ class DemandDiscountRatingResult:
     def measure_id(self):
         """Gets the measure_id of this DemandDiscountRatingResult.
 
-        |参数名称：度量单位标识| |参数约束及描述：1：元|
+        度量单位标识。 1：元
 
         :return: The measure_id of this DemandDiscountRatingResult.
         :rtype: int
@@ -142,7 +142,7 @@ class DemandDiscountRatingResult:
     def measure_id(self, measure_id):
         """Sets the measure_id of this DemandDiscountRatingResult.
 
-        |参数名称：度量单位标识| |参数约束及描述：1：元|
+        度量单位标识。 1：元
 
         :param measure_id: The measure_id of this DemandDiscountRatingResult.
         :type: int
@@ -153,7 +153,7 @@ class DemandDiscountRatingResult:
     def discount_name(self):
         """Gets the discount_name of this DemandDiscountRatingResult.
 
-        |参数名称：折扣名称| |参数约束及描述：折扣名称|
+        折扣名称。
 
         :return: The discount_name of this DemandDiscountRatingResult.
         :rtype: str
@@ -164,7 +164,7 @@ class DemandDiscountRatingResult:
     def discount_name(self, discount_name):
         """Sets the discount_name of this DemandDiscountRatingResult.
 
-        |参数名称：折扣名称| |参数约束及描述：折扣名称|
+        折扣名称。
 
         :param discount_name: The discount_name of this DemandDiscountRatingResult.
         :type: str

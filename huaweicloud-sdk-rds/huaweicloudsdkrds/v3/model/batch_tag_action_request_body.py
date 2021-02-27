@@ -24,7 +24,7 @@ class BatchTagActionRequestBody:
 
     openapi_types = {
         'action': 'str',
-        'tags': 'list[InstanceRequestTags]'
+        'tags': 'list[TagWithKeyValue]'
     }
 
     attribute_map = {
@@ -73,7 +73,7 @@ class BatchTagActionRequestBody:
         标签列表。单个实例总标签数上限10个。
 
         :return: The tags of this BatchTagActionRequestBody.
-        :rtype: list[InstanceRequestTags]
+        :rtype: list[TagWithKeyValue]
         """
         return self._tags
 
@@ -84,7 +84,7 @@ class BatchTagActionRequestBody:
         标签列表。单个实例总标签数上限10个。
 
         :param tags: The tags of this BatchTagActionRequestBody.
-        :type: list[InstanceRequestTags]
+        :type: list[TagWithKeyValue]
         """
         self._tags = tags
 

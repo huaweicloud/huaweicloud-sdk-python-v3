@@ -55,7 +55,7 @@ class ResourceType:
     def resource_type_code(self):
         """Gets the resource_type_code of this ResourceType.
 
-        |参数名称：资源类型编码| |参数约束及描述：资源类型编码|
+        资源类型的编码。例如ECS的VM为“hws.resource.type.vm”。
 
         :return: The resource_type_code of this ResourceType.
         :rtype: str
@@ -66,7 +66,7 @@ class ResourceType:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this ResourceType.
 
-        |参数名称：资源类型编码| |参数约束及描述：资源类型编码|
+        资源类型的编码。例如ECS的VM为“hws.resource.type.vm”。
 
         :param resource_type_code: The resource_type_code of this ResourceType.
         :type: str
@@ -77,7 +77,7 @@ class ResourceType:
     def resource_type_name(self):
         """Gets the resource_type_name of this ResourceType.
 
-        |参数名称：资源类型名称| |参数约束及描述：资源类型名称|
+        资源类型的名称。
 
         :return: The resource_type_name of this ResourceType.
         :rtype: str
@@ -88,7 +88,7 @@ class ResourceType:
     def resource_type_name(self, resource_type_name):
         """Sets the resource_type_name of this ResourceType.
 
-        |参数名称：资源类型名称| |参数约束及描述：资源类型名称|
+        资源类型的名称。
 
         :param resource_type_name: The resource_type_name of this ResourceType.
         :type: str
@@ -99,7 +99,7 @@ class ResourceType:
     def resource_type_desc(self):
         """Gets the resource_type_desc of this ResourceType.
 
-        |参数名称：资源类型描述| |参数约束及描述：资源类型描述|
+        资源类型的描述。
 
         :return: The resource_type_desc of this ResourceType.
         :rtype: str
@@ -110,7 +110,7 @@ class ResourceType:
     def resource_type_desc(self, resource_type_desc):
         """Sets the resource_type_desc of this ResourceType.
 
-        |参数名称：资源类型描述| |参数约束及描述：资源类型描述|
+        资源类型的描述。
 
         :param resource_type_desc: The resource_type_desc of this ResourceType.
         :type: str

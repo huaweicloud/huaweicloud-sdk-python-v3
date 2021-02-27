@@ -56,7 +56,7 @@ class BankCardInfoV2:
     def bank_account(self):
         """Gets the bank_account of this BankCardInfoV2.
 
-        |参数名称：银行卡账号。当identifyType为4时，不能为空。银行账号输入规则：^[0-9a-zA-Z]，可以包含特殊横杠（-）字符。| |参数约束及描述：银行卡账号。当identifyType为4时，不能为空。银行账号输入规则：^[0-9a-zA-Z]，可以包含特殊横杠（-）字符。|
+        银行卡账号。 当identifyType为4时，不能为空。 银行账号输入规则：^[0-9a-zA-Z]，可以包含特殊横杠（-）字符。
 
         :return: The bank_account of this BankCardInfoV2.
         :rtype: str
@@ -67,7 +67,7 @@ class BankCardInfoV2:
     def bank_account(self, bank_account):
         """Sets the bank_account of this BankCardInfoV2.
 
-        |参数名称：银行卡账号。当identifyType为4时，不能为空。银行账号输入规则：^[0-9a-zA-Z]，可以包含特殊横杠（-）字符。| |参数约束及描述：银行卡账号。当identifyType为4时，不能为空。银行账号输入规则：^[0-9a-zA-Z]，可以包含特殊横杠（-）字符。|
+        银行卡账号。 当identifyType为4时，不能为空。 银行账号输入规则：^[0-9a-zA-Z]，可以包含特殊横杠（-）字符。
 
         :param bank_account: The bank_account of this BankCardInfoV2.
         :type: str
@@ -78,7 +78,7 @@ class BankCardInfoV2:
     def areacode(self):
         """Gets the areacode of this BankCardInfoV2.
 
-        |参数名称：国家/区号码。例如：0086：中国大陆区号码。| |参数约束及描述：国家/区号码。例如：0086：中国大陆区号码。|
+        国家/区号码。 例如：0086：中国大陆区号码。
 
         :return: The areacode of this BankCardInfoV2.
         :rtype: str
@@ -89,7 +89,7 @@ class BankCardInfoV2:
     def areacode(self, areacode):
         """Sets the areacode of this BankCardInfoV2.
 
-        |参数名称：国家/区号码。例如：0086：中国大陆区号码。| |参数约束及描述：国家/区号码。例如：0086：中国大陆区号码。|
+        国家/区号码。 例如：0086：中国大陆区号码。
 
         :param areacode: The areacode of this BankCardInfoV2.
         :type: str
@@ -100,7 +100,7 @@ class BankCardInfoV2:
     def mobile(self):
         """Gets the mobile of this BankCardInfoV2.
 
-        |参数名称：手机号码。| |参数约束及描述：手机号码。|
+        手机号码。
 
         :return: The mobile of this BankCardInfoV2.
         :rtype: str
@@ -111,7 +111,7 @@ class BankCardInfoV2:
     def mobile(self, mobile):
         """Sets the mobile of this BankCardInfoV2.
 
-        |参数名称：手机号码。| |参数约束及描述：手机号码。|
+        手机号码。
 
         :param mobile: The mobile of this BankCardInfoV2.
         :type: str
@@ -122,7 +122,7 @@ class BankCardInfoV2:
     def verification_code(self):
         """Gets the verification_code of this BankCardInfoV2.
 
-        |参数名称：验证码。| |参数约束及描述：验证码。|
+        验证码。 请调用“发送验证码”接口获取。 如果手机号不存在，则不需要输入验证码。
 
         :return: The verification_code of this BankCardInfoV2.
         :rtype: str
@@ -133,7 +133,7 @@ class BankCardInfoV2:
     def verification_code(self, verification_code):
         """Sets the verification_code of this BankCardInfoV2.
 
-        |参数名称：验证码。| |参数约束及描述：验证码。|
+        验证码。 请调用“发送验证码”接口获取。 如果手机号不存在，则不需要输入验证码。
 
         :param verification_code: The verification_code of this BankCardInfoV2.
         :type: str

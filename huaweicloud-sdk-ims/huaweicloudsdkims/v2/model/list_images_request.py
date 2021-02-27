@@ -102,7 +102,7 @@ class ListImagesRequest:
         'architecture': 'architecture'
     }
 
-    def __init__(self, imagetype=None, isregistered='true', os_bit=None, os_type=None, platform=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, container_format=None, disk_format='vhd', enterprise_project_id='0', id=None, limit=500, marker=None, member_status=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, sort_dir='desc', sort_key='created_at', status=None, tag=None, virtual_env_type=None, visibility=None, x_sdk_date=None, flavor_id=None, created_at=None, updated_at=None, architecture=None):
+    def __init__(self, imagetype=None, isregistered='true', os_bit=None, os_type=None, platform=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, container_format=None, disk_format=None, enterprise_project_id='0', id=None, limit=500, marker=None, member_status=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, sort_dir='desc', sort_key='created_at', status=None, tag=None, virtual_env_type=None, visibility=None, x_sdk_date=None, flavor_id=None, created_at=None, updated_at=None, architecture=None):
         """ListImagesRequest - a model defined in huaweicloud sdk"""
         
         

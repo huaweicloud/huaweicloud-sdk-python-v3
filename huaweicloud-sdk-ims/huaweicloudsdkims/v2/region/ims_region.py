@@ -29,6 +29,10 @@ class ImsRegion:
 
     AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://ims.ap-southeast-3.myhuaweicloud.com")
 
+    CN_NORTH_2 = Region(id="cn-north-2", endpoint="https://ims.cn-north-2.myhuaweicloud.com")
+
+    CN_SOUTH_2 = Region(id="cn-south-2", endpoint="https://ims.cn-south-2.myhuaweicloud.com")
+
     static_fields = types.MappingProxyType({
         "af-south-1": AF_SOUTH_1,
         "cn-north-4": CN_NORTH_4,
@@ -40,6 +44,8 @@ class ImsRegion:
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-3": AP_SOUTHEAST_3,
+        "cn-north-2": CN_NORTH_2,
+        "cn-south-2": CN_SOUTH_2,
     })
 
     @staticmethod

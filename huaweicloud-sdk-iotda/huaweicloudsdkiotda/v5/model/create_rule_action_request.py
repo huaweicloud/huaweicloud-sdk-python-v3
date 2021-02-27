@@ -21,61 +21,35 @@ class CreateRuleActionRequest:
     """
 
     sensitive_list = []
-    sensitive_list.append('stage_auth_token')
 
     openapi_types = {
-        'stage_auth_token': 'str',
         'instance_id': 'str',
         'x_lb_service': 'str',
         'body': 'AddActionReq'
     }
 
     attribute_map = {
-        'stage_auth_token': 'Stage-Auth-Token',
         'instance_id': 'Instance-Id',
         'x_lb_service': 'x-LB-Service',
         'body': 'body'
     }
 
-    def __init__(self, stage_auth_token=None, instance_id=None, x_lb_service='L7Adapt4Out', body=None):
+    def __init__(self, instance_id=None, x_lb_service='L7Adapt4Out', body=None):
         """CreateRuleActionRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._stage_auth_token = None
         self._instance_id = None
         self._x_lb_service = None
         self._body = None
         self.discriminator = None
 
-        if stage_auth_token is not None:
-            self.stage_auth_token = stage_auth_token
         if instance_id is not None:
             self.instance_id = instance_id
         if x_lb_service is not None:
             self.x_lb_service = x_lb_service
         if body is not None:
             self.body = body
-
-    @property
-    def stage_auth_token(self):
-        """Gets the stage_auth_token of this CreateRuleActionRequest.
-
-
-        :return: The stage_auth_token of this CreateRuleActionRequest.
-        :rtype: str
-        """
-        return self._stage_auth_token
-
-    @stage_auth_token.setter
-    def stage_auth_token(self, stage_auth_token):
-        """Sets the stage_auth_token of this CreateRuleActionRequest.
-
-
-        :param stage_auth_token: The stage_auth_token of this CreateRuleActionRequest.
-        :type: str
-        """
-        self._stage_auth_token = stage_auth_token
 
     @property
     def instance_id(self):

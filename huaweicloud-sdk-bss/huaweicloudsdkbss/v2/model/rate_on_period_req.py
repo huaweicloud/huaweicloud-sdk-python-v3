@@ -48,7 +48,7 @@ class RateOnPeriodReq:
     def project_id(self):
         """Gets the project_id of this RateOnPeriodReq.
 
-        |参数名称：项目ID| |参数约束及描述：如果使用客户AK/SK或者Token，可以调用“通过assume_role方式获取用户token”接口获取“regionId”取值对应的project id。|
+        项目ID。 调用通过assume_role方式获取用户token接口获取客户Token后，参见如何将合作伙伴Token置换为客户Token的步骤2获取项目ID。
 
         :return: The project_id of this RateOnPeriodReq.
         :rtype: str
@@ -59,7 +59,7 @@ class RateOnPeriodReq:
     def project_id(self, project_id):
         """Sets the project_id of this RateOnPeriodReq.
 
-        |参数名称：项目ID| |参数约束及描述：如果使用客户AK/SK或者Token，可以调用“通过assume_role方式获取用户token”接口获取“regionId”取值对应的project id。|
+        项目ID。 调用通过assume_role方式获取用户token接口获取客户Token后，参见如何将合作伙伴Token置换为客户Token的步骤2获取项目ID。
 
         :param project_id: The project_id of this RateOnPeriodReq.
         :type: str
@@ -70,7 +70,7 @@ class RateOnPeriodReq:
     def product_infos(self):
         """Gets the product_infos of this RateOnPeriodReq.
 
-        |参数名称：产品信息列表| |参数的约束及描述：询价时要询价产品的信息的列表|
+        产品信息列表，询价时要询价产品的信息的列表，具体参见表1。
 
         :return: The product_infos of this RateOnPeriodReq.
         :rtype: list[PeriodProductInfo]
@@ -81,7 +81,7 @@ class RateOnPeriodReq:
     def product_infos(self, product_infos):
         """Sets the product_infos of this RateOnPeriodReq.
 
-        |参数名称：产品信息列表| |参数的约束及描述：询价时要询价产品的信息的列表|
+        产品信息列表，询价时要询价产品的信息的列表，具体参见表1。
 
         :param product_infos: The product_infos of this RateOnPeriodReq.
         :type: list[PeriodProductInfo]

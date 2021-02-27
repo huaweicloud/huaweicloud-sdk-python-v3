@@ -55,7 +55,7 @@ class OfficialWebsiteRatingResult:
     def official_website_amount(self):
         """Gets the official_website_amount of this OfficialWebsiteRatingResult.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        包年/包月产品的官网价。
 
         :return: The official_website_amount of this OfficialWebsiteRatingResult.
         :rtype: float
@@ -66,7 +66,7 @@ class OfficialWebsiteRatingResult:
     def official_website_amount(self, official_website_amount):
         """Sets the official_website_amount of this OfficialWebsiteRatingResult.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        包年/包月产品的官网价。
 
         :param official_website_amount: The official_website_amount of this OfficialWebsiteRatingResult.
         :type: float
@@ -77,7 +77,7 @@ class OfficialWebsiteRatingResult:
     def measure_id(self):
         """Gets the measure_id of this OfficialWebsiteRatingResult.
 
-        |参数名称：度量单位标识1：元|
+        价格度量单位标识。 1：元
 
         :return: The measure_id of this OfficialWebsiteRatingResult.
         :rtype: int
@@ -88,7 +88,7 @@ class OfficialWebsiteRatingResult:
     def measure_id(self, measure_id):
         """Sets the measure_id of this OfficialWebsiteRatingResult.
 
-        |参数名称：度量单位标识1：元|
+        价格度量单位标识。 1：元
 
         :param measure_id: The measure_id of this OfficialWebsiteRatingResult.
         :type: int
@@ -99,7 +99,7 @@ class OfficialWebsiteRatingResult:
     def product_rating_results(self):
         """Gets the product_rating_results of this OfficialWebsiteRatingResult.
 
-        |参数名称：产品询价结果| |参数的约束及描述：产品询价结果|
+        产品询价结果，具体参见表5。
 
         :return: The product_rating_results of this OfficialWebsiteRatingResult.
         :rtype: list[PeriodProductOfficialRatingResult]
@@ -110,7 +110,7 @@ class OfficialWebsiteRatingResult:
     def product_rating_results(self, product_rating_results):
         """Sets the product_rating_results of this OfficialWebsiteRatingResult.
 
-        |参数名称：产品询价结果| |参数的约束及描述：产品询价结果|
+        产品询价结果，具体参见表5。
 
         :param product_rating_results: The product_rating_results of this OfficialWebsiteRatingResult.
         :type: list[PeriodProductOfficialRatingResult]

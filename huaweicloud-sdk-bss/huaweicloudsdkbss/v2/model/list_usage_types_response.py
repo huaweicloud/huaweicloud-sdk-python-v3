@@ -50,7 +50,7 @@ class ListUsageTypesResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListUsageTypesResponse.
 
-        |参数名称：总条数，必须大于等于0。| |参数的约束及描述：总条数，必须大于等于0。|
+        总数。
 
         :return: The total_count of this ListUsageTypesResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ListUsageTypesResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListUsageTypesResponse.
 
-        |参数名称：总条数，必须大于等于0。| |参数的约束及描述：总条数，必须大于等于0。|
+        总数。
 
         :param total_count: The total_count of this ListUsageTypesResponse.
         :type: int
@@ -72,7 +72,7 @@ class ListUsageTypesResponse(SdkResponse):
     def usage_types(self):
         """Gets the usage_types of this ListUsageTypesResponse.
 
-        |参数名称：用量类型列表| |参数约束以及描述：用量类型列表|
+        使用量类型列表，具体请参见表3。
 
         :return: The usage_types of this ListUsageTypesResponse.
         :rtype: list[UsageType]
@@ -83,7 +83,7 @@ class ListUsageTypesResponse(SdkResponse):
     def usage_types(self, usage_types):
         """Sets the usage_types of this ListUsageTypesResponse.
 
-        |参数名称：用量类型列表| |参数约束以及描述：用量类型列表|
+        使用量类型列表，具体请参见表3。
 
         :param usage_types: The usage_types of this ListUsageTypesResponse.
         :type: list[UsageType]

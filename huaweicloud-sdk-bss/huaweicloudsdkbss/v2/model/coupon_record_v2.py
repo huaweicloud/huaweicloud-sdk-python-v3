@@ -90,7 +90,7 @@ class CouponRecordV2:
     def id(self):
         """Gets the id of this CouponRecordV2.
 
-        |参数名称：唯一ID。| |参数约束及描述：唯一ID。|
+        该记录的ID。
 
         :return: The id of this CouponRecordV2.
         :rtype: str
@@ -101,7 +101,7 @@ class CouponRecordV2:
     def id(self, id):
         """Sets the id of this CouponRecordV2.
 
-        |参数名称：唯一ID。| |参数约束及描述：唯一ID。|
+        该记录的ID。
 
         :param id: The id of this CouponRecordV2.
         :type: str
@@ -112,7 +112,7 @@ class CouponRecordV2:
     def operation_type(self):
         """Gets the operation_type of this CouponRecordV2.
 
-        |参数名称：操作类型：1：发放；2：手动回收；3：解绑自动回收| |参数约束及描述：操作类型：1：发放；2：手动回收；3：解绑自动回收|
+        操作类型。 1：发放2：手动回收3：解绑自动回收
 
         :return: The operation_type of this CouponRecordV2.
         :rtype: str
@@ -123,7 +123,7 @@ class CouponRecordV2:
     def operation_type(self, operation_type):
         """Sets the operation_type of this CouponRecordV2.
 
-        |参数名称：操作类型：1：发放；2：手动回收；3：解绑自动回收| |参数约束及描述：操作类型：1：发放；2：手动回收；3：解绑自动回收|
+        操作类型。 1：发放2：手动回收3：解绑自动回收
 
         :param operation_type: The operation_type of this CouponRecordV2.
         :type: str
@@ -134,7 +134,7 @@ class CouponRecordV2:
     def quota_id(self):
         """Gets the quota_id of this CouponRecordV2.
 
-        |参数名称：额度ID。| |参数约束及描述：额度ID。|
+        额度ID。
 
         :return: The quota_id of this CouponRecordV2.
         :rtype: str
@@ -145,7 +145,7 @@ class CouponRecordV2:
     def quota_id(self, quota_id):
         """Sets the quota_id of this CouponRecordV2.
 
-        |参数名称：额度ID。| |参数约束及描述：额度ID。|
+        额度ID。
 
         :param quota_id: The quota_id of this CouponRecordV2.
         :type: str
@@ -156,7 +156,7 @@ class CouponRecordV2:
     def quota_type(self):
         """Gets the quota_type of this CouponRecordV2.
 
-        |参数名称：操作类型：1：发放；2：手动回收；3：解绑自动回收。| |参数的约束及描述：操作类型：1：发放；2：手动回收；3：解绑自动回收。|
+        额度类型。 0：代金券额度1：现金券额度
 
         :return: The quota_type of this CouponRecordV2.
         :rtype: int
@@ -167,7 +167,7 @@ class CouponRecordV2:
     def quota_type(self, quota_type):
         """Sets the quota_type of this CouponRecordV2.
 
-        |参数名称：操作类型：1：发放；2：手动回收；3：解绑自动回收。| |参数的约束及描述：操作类型：1：发放；2：手动回收；3：解绑自动回收。|
+        额度类型。 0：代金券额度1：现金券额度
 
         :param quota_type: The quota_type of this CouponRecordV2.
         :type: int
@@ -178,7 +178,7 @@ class CouponRecordV2:
     def coupon_id(self):
         """Gets the coupon_id of this CouponRecordV2.
 
-        |参数名称：代金券ID。| |参数约束及描述：代金券ID。|
+        代金券ID。
 
         :return: The coupon_id of this CouponRecordV2.
         :rtype: str
@@ -189,7 +189,7 @@ class CouponRecordV2:
     def coupon_id(self, coupon_id):
         """Sets the coupon_id of this CouponRecordV2.
 
-        |参数名称：代金券ID。| |参数约束及描述：代金券ID。|
+        代金券ID。
 
         :param coupon_id: The coupon_id of this CouponRecordV2.
         :type: str
@@ -200,7 +200,7 @@ class CouponRecordV2:
     def customer_id(self):
         """Gets the customer_id of this CouponRecordV2.
 
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
+        客户账号ID。
 
         :return: The customer_id of this CouponRecordV2.
         :rtype: str
@@ -211,7 +211,7 @@ class CouponRecordV2:
     def customer_id(self, customer_id):
         """Sets the customer_id of this CouponRecordV2.
 
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
+        客户账号ID。
 
         :param customer_id: The customer_id of this CouponRecordV2.
         :type: str
@@ -222,7 +222,7 @@ class CouponRecordV2:
     def operation_amount(self):
         """Gets the operation_amount of this CouponRecordV2.
 
-        |参数名称：操作的面额值。发放时，等于面额值；回收时，指每次回收的具体值。| |参数的约束及描述：操作的面额值。发放时，等于面额值；回收时，指每次回收的具体值。|
+        操作的面额值。单位：元。 发放时，等于面额值；回收时，指每次回收的具体值。
 
         :return: The operation_amount of this CouponRecordV2.
         :rtype: float
@@ -233,7 +233,7 @@ class CouponRecordV2:
     def operation_amount(self, operation_amount):
         """Sets the operation_amount of this CouponRecordV2.
 
-        |参数名称：操作的面额值。发放时，等于面额值；回收时，指每次回收的具体值。| |参数的约束及描述：操作的面额值。发放时，等于面额值；回收时，指每次回收的具体值。|
+        操作的面额值。单位：元。 发放时，等于面额值；回收时，指每次回收的具体值。
 
         :param operation_amount: The operation_amount of this CouponRecordV2.
         :type: float
@@ -244,7 +244,7 @@ class CouponRecordV2:
     def operation_time(self):
         """Gets the operation_time of this CouponRecordV2.
 
-        |参数名称：操作时间。| |参数约束及描述：操作时间。|
+        操作时间。
 
         :return: The operation_time of this CouponRecordV2.
         :rtype: str
@@ -255,7 +255,7 @@ class CouponRecordV2:
     def operation_time(self, operation_time):
         """Sets the operation_time of this CouponRecordV2.
 
-        |参数名称：操作时间。| |参数约束及描述：操作时间。|
+        操作时间。
 
         :param operation_time: The operation_time of this CouponRecordV2.
         :type: str
@@ -266,7 +266,7 @@ class CouponRecordV2:
     def result(self):
         """Gets the result of this CouponRecordV2.
 
-        |参数名称：操作结果：0：成功；其他：失败（直接记录错误码）。|参数约束及描述：操作结果：0：成功；其他：失败（直接记录错误码）。|
+        操作结果。 0：成功-1：失败
 
         :return: The result of this CouponRecordV2.
         :rtype: str
@@ -277,7 +277,7 @@ class CouponRecordV2:
     def result(self, result):
         """Sets the result of this CouponRecordV2.
 
-        |参数名称：操作结果：0：成功；其他：失败（直接记录错误码）。|参数约束及描述：操作结果：0：成功；其他：失败（直接记录错误码）。|
+        操作结果。 0：成功-1：失败
 
         :param result: The result of this CouponRecordV2.
         :type: str
@@ -288,7 +288,7 @@ class CouponRecordV2:
     def remark(self):
         """Gets the remark of this CouponRecordV2.
 
-        |参数名称：操作记录中的备注| |参数约束及描述：操作记录中的备注|
+        操作记录中的备注。
 
         :return: The remark of this CouponRecordV2.
         :rtype: str
@@ -299,7 +299,7 @@ class CouponRecordV2:
     def remark(self, remark):
         """Sets the remark of this CouponRecordV2.
 
-        |参数名称：操作记录中的备注| |参数约束及描述：操作记录中的备注|
+        操作记录中的备注。
 
         :param remark: The remark of this CouponRecordV2.
         :type: str

@@ -21,86 +21,34 @@ class DeleteProductRequest:
     """
 
     sensitive_list = []
-    sensitive_list.append('sp_auth_token')
-    sensitive_list.append('stage_auth_token')
 
     openapi_types = {
-        'sp_auth_token': 'str',
-        'stage_auth_token': 'str',
         'instance_id': 'str',
         'product_id': 'str',
         'app_id': 'str'
     }
 
     attribute_map = {
-        'sp_auth_token': 'Sp-Auth-Token',
-        'stage_auth_token': 'Stage-Auth-Token',
         'instance_id': 'Instance-Id',
         'product_id': 'product_id',
         'app_id': 'app_id'
     }
 
-    def __init__(self, sp_auth_token=None, stage_auth_token=None, instance_id=None, product_id=None, app_id=None):
+    def __init__(self, instance_id=None, product_id=None, app_id=None):
         """DeleteProductRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._sp_auth_token = None
-        self._stage_auth_token = None
         self._instance_id = None
         self._product_id = None
         self._app_id = None
         self.discriminator = None
 
-        if sp_auth_token is not None:
-            self.sp_auth_token = sp_auth_token
-        if stage_auth_token is not None:
-            self.stage_auth_token = stage_auth_token
         if instance_id is not None:
             self.instance_id = instance_id
         self.product_id = product_id
         if app_id is not None:
             self.app_id = app_id
-
-    @property
-    def sp_auth_token(self):
-        """Gets the sp_auth_token of this DeleteProductRequest.
-
-
-        :return: The sp_auth_token of this DeleteProductRequest.
-        :rtype: str
-        """
-        return self._sp_auth_token
-
-    @sp_auth_token.setter
-    def sp_auth_token(self, sp_auth_token):
-        """Sets the sp_auth_token of this DeleteProductRequest.
-
-
-        :param sp_auth_token: The sp_auth_token of this DeleteProductRequest.
-        :type: str
-        """
-        self._sp_auth_token = sp_auth_token
-
-    @property
-    def stage_auth_token(self):
-        """Gets the stage_auth_token of this DeleteProductRequest.
-
-
-        :return: The stage_auth_token of this DeleteProductRequest.
-        :rtype: str
-        """
-        return self._stage_auth_token
-
-    @stage_auth_token.setter
-    def stage_auth_token(self, stage_auth_token):
-        """Sets the stage_auth_token of this DeleteProductRequest.
-
-
-        :param stage_auth_token: The stage_auth_token of this DeleteProductRequest.
-        :type: str
-        """
-        self._stage_auth_token = stage_auth_token
 
     @property
     def instance_id(self):

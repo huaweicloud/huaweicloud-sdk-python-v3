@@ -88,7 +88,7 @@ class CreateCustomerV2Req:
     def domain_name(self):
         """Gets the domain_name of this CreateCustomerV2Req.
 
-        |参数名称：客户的华为云账号名| |参数的约束及描述：该参数非必填，不能以“op_”或“shadow_”开头且不能全为数字。且只允许最大长度64的字符串,如果为空，随机生成。校验规则^[a-zA-Z0-9\\u00c0-\\u00ff-._ ]{0,64}$|
+        客户的华为云账号名。 如果为空，随机生成。 不能以“op_”或“shadow_”开头且不能全为数字。 校验长度（5到32位）和规则^([a-zA-Z_-]([a-zA-Z0-9_-])*)$。
 
         :return: The domain_name of this CreateCustomerV2Req.
         :rtype: str
@@ -99,7 +99,7 @@ class CreateCustomerV2Req:
     def domain_name(self, domain_name):
         """Sets the domain_name of this CreateCustomerV2Req.
 
-        |参数名称：客户的华为云账号名| |参数的约束及描述：该参数非必填，不能以“op_”或“shadow_”开头且不能全为数字。且只允许最大长度64的字符串,如果为空，随机生成。校验规则^[a-zA-Z0-9\\u00c0-\\u00ff-._ ]{0,64}$|
+        客户的华为云账号名。 如果为空，随机生成。 不能以“op_”或“shadow_”开头且不能全为数字。 校验长度（5到32位）和规则^([a-zA-Z_-]([a-zA-Z0-9_-])*)$。
 
         :param domain_name: The domain_name of this CreateCustomerV2Req.
         :type: str
@@ -110,7 +110,7 @@ class CreateCustomerV2Req:
     def mobile_phone(self):
         """Gets the mobile_phone of this CreateCustomerV2Req.
 
-        |参数名称：手机号| |参数的约束及描述：如果接入的是华北站点，该字段必填，否则该字段忽略目前系统只支持中国手机，必须全部是数字。示例：13XXXXXXXXX|
+        手机号。 目前系统只支持中国的手机号。 示例：13XXXXXXXXX
 
         :return: The mobile_phone of this CreateCustomerV2Req.
         :rtype: str
@@ -121,7 +121,7 @@ class CreateCustomerV2Req:
     def mobile_phone(self, mobile_phone):
         """Sets the mobile_phone of this CreateCustomerV2Req.
 
-        |参数名称：手机号| |参数的约束及描述：如果接入的是华北站点，该字段必填，否则该字段忽略目前系统只支持中国手机，必须全部是数字。示例：13XXXXXXXXX|
+        手机号。 目前系统只支持中国的手机号。 示例：13XXXXXXXXX
 
         :param mobile_phone: The mobile_phone of this CreateCustomerV2Req.
         :type: str
@@ -132,7 +132,7 @@ class CreateCustomerV2Req:
     def verification_code(self):
         """Gets the verification_code of this CreateCustomerV2Req.
 
-        |参数名称：验证码| |参数的约束及描述：该参数必填，如果输入的是手机，就是手机验证码，如果输入的是邮箱，就是邮箱验证码|
+        验证码。 请调用“发送验证码”接口获取。 如果手机号不存在，则不需要输入验证码。
 
         :return: The verification_code of this CreateCustomerV2Req.
         :rtype: str
@@ -143,7 +143,7 @@ class CreateCustomerV2Req:
     def verification_code(self, verification_code):
         """Sets the verification_code of this CreateCustomerV2Req.
 
-        |参数名称：验证码| |参数的约束及描述：该参数必填，如果输入的是手机，就是手机验证码，如果输入的是邮箱，就是邮箱验证码|
+        验证码。 请调用“发送验证码”接口获取。 如果手机号不存在，则不需要输入验证码。
 
         :param verification_code: The verification_code of this CreateCustomerV2Req.
         :type: str
@@ -154,7 +154,7 @@ class CreateCustomerV2Req:
     def xaccount_id(self):
         """Gets the xaccount_id of this CreateCustomerV2Req.
 
-        |参数名称：第3方系统的用户唯一标识| |参数的约束及描述：该参数必填，且只允许最大长度128的字符串|
+        伙伴销售平台的用户唯一标识，该标识的具体值由伙伴分配。
 
         :return: The xaccount_id of this CreateCustomerV2Req.
         :rtype: str
@@ -165,7 +165,7 @@ class CreateCustomerV2Req:
     def xaccount_id(self, xaccount_id):
         """Sets the xaccount_id of this CreateCustomerV2Req.
 
-        |参数名称：第3方系统的用户唯一标识| |参数的约束及描述：该参数必填，且只允许最大长度128的字符串|
+        伙伴销售平台的用户唯一标识，该标识的具体值由伙伴分配。
 
         :param xaccount_id: The xaccount_id of this CreateCustomerV2Req.
         :type: str
@@ -176,7 +176,7 @@ class CreateCustomerV2Req:
     def xaccount_type(self):
         """Gets the xaccount_type of this CreateCustomerV2Req.
 
-        |参数名称：华为分给合作伙伴的平台标识| |参数的约束及描述：该参数必填，且只允许最大长度30的字符串,该标识的具体值由华为分配|
+        华为分给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见如何获取xaccountType的取值。
 
         :return: The xaccount_type of this CreateCustomerV2Req.
         :rtype: str
@@ -187,7 +187,7 @@ class CreateCustomerV2Req:
     def xaccount_type(self, xaccount_type):
         """Sets the xaccount_type of this CreateCustomerV2Req.
 
-        |参数名称：华为分给合作伙伴的平台标识| |参数的约束及描述：该参数必填，且只允许最大长度30的字符串,该标识的具体值由华为分配|
+        华为分给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见如何获取xaccountType的取值。
 
         :param xaccount_type: The xaccount_type of this CreateCustomerV2Req.
         :type: str
@@ -198,7 +198,7 @@ class CreateCustomerV2Req:
     def password(self):
         """Gets the password of this CreateCustomerV2Req.
 
-        |参数名称：密码| |参数的约束及描述：该参数选填，长度6~32位字符，至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符，不能和账号名或倒序的账号名相同，不能包含手机号，不能包含邮箱|
+        密码规则如下： 至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符；不能和账号名或倒序的账号名相同；不能包含手机号。 如果为空，用户没有密码，则不能直接在华为云登录，只能通过伙伴系统SSO方式跳转到华为云。
 
         :return: The password of this CreateCustomerV2Req.
         :rtype: str
@@ -209,7 +209,7 @@ class CreateCustomerV2Req:
     def password(self, password):
         """Sets the password of this CreateCustomerV2Req.
 
-        |参数名称：密码| |参数的约束及描述：该参数选填，长度6~32位字符，至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符，不能和账号名或倒序的账号名相同，不能包含手机号，不能包含邮箱|
+        密码规则如下： 至少包含以下四种字符中的两种： 大写字母、小写字母、数字、特殊字符；不能和账号名或倒序的账号名相同；不能包含手机号。 如果为空，用户没有密码，则不能直接在华为云登录，只能通过伙伴系统SSO方式跳转到华为云。
 
         :param password: The password of this CreateCustomerV2Req.
         :type: str
@@ -220,7 +220,7 @@ class CreateCustomerV2Req:
     def is_close_market_ms(self):
         """Gets the is_close_market_ms of this CreateCustomerV2Req.
 
-        |是否关闭营销消息| |参数的约束及描述：该参数选填。false：不关闭，True：关闭，默认不关闭|
+        是否关闭营销消息的发送： true：关闭false：不关闭（默认）
 
         :return: The is_close_market_ms of this CreateCustomerV2Req.
         :rtype: str
@@ -231,7 +231,7 @@ class CreateCustomerV2Req:
     def is_close_market_ms(self, is_close_market_ms):
         """Sets the is_close_market_ms of this CreateCustomerV2Req.
 
-        |是否关闭营销消息| |参数的约束及描述：该参数选填。false：不关闭，True：关闭，默认不关闭|
+        是否关闭营销消息的发送： true：关闭false：不关闭（默认）
 
         :param is_close_market_ms: The is_close_market_ms of this CreateCustomerV2Req.
         :type: str
@@ -242,7 +242,7 @@ class CreateCustomerV2Req:
     def cooperation_type(self):
         """Gets the cooperation_type of this CreateCustomerV2Req.
 
-        |合作类型| |参数的约束及描述：该参数选填。1：推荐。仅仅支持1|
+        合作类型。 1：推荐。 仅仅支持1，如果不传递，默认会创建成垫付模式的客户。
 
         :return: The cooperation_type of this CreateCustomerV2Req.
         :rtype: str
@@ -253,7 +253,7 @@ class CreateCustomerV2Req:
     def cooperation_type(self, cooperation_type):
         """Sets the cooperation_type of this CreateCustomerV2Req.
 
-        |合作类型| |参数的约束及描述：该参数选填。1：推荐。仅仅支持1|
+        合作类型。 1：推荐。 仅仅支持1，如果不传递，默认会创建成垫付模式的客户。
 
         :param cooperation_type: The cooperation_type of this CreateCustomerV2Req.
         :type: str
@@ -264,7 +264,7 @@ class CreateCustomerV2Req:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this CreateCustomerV2Req.
 
-        |参数名称：二级渠道ID| |参数的约束及描述：该参数非必填，二级渠道ID，最大长度64|
+        精英服务商ID。
 
         :return: The indirect_partner_id of this CreateCustomerV2Req.
         :rtype: str
@@ -275,7 +275,7 @@ class CreateCustomerV2Req:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this CreateCustomerV2Req.
 
-        |参数名称：二级渠道ID| |参数的约束及描述：该参数非必填，二级渠道ID，最大长度64|
+        精英服务商ID。
 
         :param indirect_partner_id: The indirect_partner_id of this CreateCustomerV2Req.
         :type: str
@@ -286,7 +286,7 @@ class CreateCustomerV2Req:
     def include_association_result(self):
         """Gets the include_association_result of this CreateCustomerV2Req.
 
-        |参数名称：是否返回关联结果| |参数的约束及描述：该参数非必填|
+        是否返回子客户的关联结果。 true：返回子客户和伙伴的关联结果false：不返回子客户和伙伴的关联结果 默认值为false。
 
         :return: The include_association_result of this CreateCustomerV2Req.
         :rtype: bool
@@ -297,7 +297,7 @@ class CreateCustomerV2Req:
     def include_association_result(self, include_association_result):
         """Sets the include_association_result of this CreateCustomerV2Req.
 
-        |参数名称：是否返回关联结果| |参数的约束及描述：该参数非必填|
+        是否返回子客户的关联结果。 true：返回子客户和伙伴的关联结果false：不返回子客户和伙伴的关联结果 默认值为false。
 
         :param include_association_result: The include_association_result of this CreateCustomerV2Req.
         :type: bool

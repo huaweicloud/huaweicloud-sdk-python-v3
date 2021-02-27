@@ -50,7 +50,7 @@ class ListIssuedPartnerCouponsResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListIssuedPartnerCouponsResponse.
 
-        |参数名称：个数| |参数的约束及描述：个数|
+        总数。
 
         :return: The total_count of this ListIssuedPartnerCouponsResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ListIssuedPartnerCouponsResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListIssuedPartnerCouponsResponse.
 
-        |参数名称：个数| |参数的约束及描述：个数|
+        总数。
 
         :param total_count: The total_count of this ListIssuedPartnerCouponsResponse.
         :type: int
@@ -72,7 +72,7 @@ class ListIssuedPartnerCouponsResponse(SdkResponse):
     def user_coupons(self):
         """Gets the user_coupons of this ListIssuedPartnerCouponsResponse.
 
-        |参数名称：优惠券记录。具体请参见表 IQueryUserCouponsResult。| |参数约束以及描述：优惠券记录。具体请参见表 IQueryUserCouponsResult。|
+        发放的优惠券记录。 具体请参见表2。
 
         :return: The user_coupons of this ListIssuedPartnerCouponsResponse.
         :rtype: list[IQueryUserPartnerCouponsResultV2]
@@ -83,7 +83,7 @@ class ListIssuedPartnerCouponsResponse(SdkResponse):
     def user_coupons(self, user_coupons):
         """Sets the user_coupons of this ListIssuedPartnerCouponsResponse.
 
-        |参数名称：优惠券记录。具体请参见表 IQueryUserCouponsResult。| |参数约束以及描述：优惠券记录。具体请参见表 IQueryUserCouponsResult。|
+        发放的优惠券记录。 具体请参见表2。
 
         :param user_coupons: The user_coupons of this ListIssuedPartnerCouponsResponse.
         :type: list[IQueryUserPartnerCouponsResultV2]

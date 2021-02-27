@@ -50,7 +50,7 @@ class ListCouponQuotasRecordsResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListCouponQuotasRecordsResponse.
 
-        |参数名称：查询总数。| |参数的约束及描述：查询总数。|
+        返回总条数。
 
         :return: The total_count of this ListCouponQuotasRecordsResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ListCouponQuotasRecordsResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListCouponQuotasRecordsResponse.
 
-        |参数名称：查询总数。| |参数的约束及描述：查询总数。|
+        返回总条数。
 
         :param total_count: The total_count of this ListCouponQuotasRecordsResponse.
         :type: int
@@ -72,7 +72,7 @@ class ListCouponQuotasRecordsResponse(SdkResponse):
     def records(self):
         """Gets the records of this ListCouponQuotasRecordsResponse.
 
-        |参数名称：记录列表。具体请参见表 QuotaRecord。| |参数约束以及描述：记录列表。具体请参见表 QuotaRecord。|
+        记录列表。 具体请参见表2。
 
         :return: The records of this ListCouponQuotasRecordsResponse.
         :rtype: list[QuotaRecord]
@@ -83,7 +83,7 @@ class ListCouponQuotasRecordsResponse(SdkResponse):
     def records(self, records):
         """Sets the records of this ListCouponQuotasRecordsResponse.
 
-        |参数名称：记录列表。具体请参见表 QuotaRecord。| |参数约束以及描述：记录列表。具体请参见表 QuotaRecord。|
+        记录列表。 具体请参见表2。
 
         :param records: The records of this ListCouponQuotasRecordsResponse.
         :type: list[QuotaRecord]

@@ -45,7 +45,7 @@ class CreatePostalResponse(SdkResponse):
     def address_id(self):
         """Gets the address_id of this CreatePostalResponse.
 
-        |参数名称：邮寄地址ID| |参数约束及描述：邮寄地址ID|
+        邮寄地址ID。
 
         :return: The address_id of this CreatePostalResponse.
         :rtype: str
@@ -56,7 +56,7 @@ class CreatePostalResponse(SdkResponse):
     def address_id(self, address_id):
         """Sets the address_id of this CreatePostalResponse.
 
-        |参数名称：邮寄地址ID| |参数约束及描述：邮寄地址ID|
+        邮寄地址ID。
 
         :param address_id: The address_id of this CreatePostalResponse.
         :type: str

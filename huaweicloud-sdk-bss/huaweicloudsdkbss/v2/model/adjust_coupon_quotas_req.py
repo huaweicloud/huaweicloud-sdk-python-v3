@@ -52,7 +52,7 @@ class AdjustCouponQuotasReq:
     def quota_id(self):
         """Gets the quota_id of this AdjustCouponQuotasReq.
 
-        |参数名称：优惠券额度ID。| |参数约束及描述：优惠券额度ID。|
+        华为云伙伴能力中心发放的代金券额度的ID。
 
         :return: The quota_id of this AdjustCouponQuotasReq.
         :rtype: str
@@ -63,7 +63,7 @@ class AdjustCouponQuotasReq:
     def quota_id(self, quota_id):
         """Sets the quota_id of this AdjustCouponQuotasReq.
 
-        |参数名称：优惠券额度ID。| |参数约束及描述：优惠券额度ID。|
+        华为云伙伴能力中心发放的代金券额度的ID。
 
         :param quota_id: The quota_id of this AdjustCouponQuotasReq.
         :type: str
@@ -74,7 +74,7 @@ class AdjustCouponQuotasReq:
     def indirect_partner_ids(self):
         """Gets the indirect_partner_ids of this AdjustCouponQuotasReq.
 
-        |参数名称：二级分销商伙伴id列表。最大100条| |参数约束以及描述：二级分销商伙伴id列表。最大100条|
+        精英服务商ID列表。
 
         :return: The indirect_partner_ids of this AdjustCouponQuotasReq.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class AdjustCouponQuotasReq:
     def indirect_partner_ids(self, indirect_partner_ids):
         """Sets the indirect_partner_ids of this AdjustCouponQuotasReq.
 
-        |参数名称：二级分销商伙伴id列表。最大100条| |参数约束以及描述：二级分销商伙伴id列表。最大100条|
+        精英服务商ID列表。
 
         :param indirect_partner_ids: The indirect_partner_ids of this AdjustCouponQuotasReq.
         :type: list[str]
@@ -96,7 +96,7 @@ class AdjustCouponQuotasReq:
     def quota_amount(self):
         """Gets the quota_amount of this AdjustCouponQuotasReq.
 
-        |参数名称：额度值。保留小数点后2位| |参数的约束及描述：额度值。保留小数点后2位|
+        华为云伙伴能力中心向精英服务商发放的代金券额度值。 单位：元。取值大于0且精确到小数点后2位。
 
         :return: The quota_amount of this AdjustCouponQuotasReq.
         :rtype: float
@@ -107,7 +107,7 @@ class AdjustCouponQuotasReq:
     def quota_amount(self, quota_amount):
         """Sets the quota_amount of this AdjustCouponQuotasReq.
 
-        |参数名称：额度值。保留小数点后2位| |参数的约束及描述：额度值。保留小数点后2位|
+        华为云伙伴能力中心向精英服务商发放的代金券额度值。 单位：元。取值大于0且精确到小数点后2位。
 
         :param quota_amount: The quota_amount of this AdjustCouponQuotasReq.
         :type: float

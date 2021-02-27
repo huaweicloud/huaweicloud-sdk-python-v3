@@ -70,7 +70,7 @@ class PeriodProductRatingResult:
     def id(self):
         """Gets the id of this PeriodProductRatingResult.
 
-        |参数名称：ID标识| |参数约束及描述：ID标识，来源于请求中的ID|
+        ID标识，来源于请求中的ID。
 
         :return: The id of this PeriodProductRatingResult.
         :rtype: str
@@ -81,7 +81,7 @@ class PeriodProductRatingResult:
     def id(self, id):
         """Sets the id of this PeriodProductRatingResult.
 
-        |参数名称：ID标识| |参数约束及描述：ID标识，来源于请求中的ID|
+        ID标识，来源于请求中的ID。
 
         :param id: The id of this PeriodProductRatingResult.
         :type: str
@@ -92,7 +92,7 @@ class PeriodProductRatingResult:
     def product_id(self):
         """Gets the product_id of this PeriodProductRatingResult.
 
-        |参数名称：产品ID| |参数约束及描述：产品ID|
+        包年/包月产品的ID。
 
         :return: The product_id of this PeriodProductRatingResult.
         :rtype: str
@@ -103,7 +103,7 @@ class PeriodProductRatingResult:
     def product_id(self, product_id):
         """Sets the product_id of this PeriodProductRatingResult.
 
-        |参数名称：产品ID| |参数约束及描述：产品ID|
+        包年/包月产品的ID。
 
         :param product_id: The product_id of this PeriodProductRatingResult.
         :type: str
@@ -114,7 +114,7 @@ class PeriodProductRatingResult:
     def amount(self):
         """Gets the amount of this PeriodProductRatingResult.
 
-        |参数名称：总额| |参数约束及描述：即最终优惠的金额|
+        总额，即最终优惠后的金额。 amount= official_website_amount - discountAmount。
 
         :return: The amount of this PeriodProductRatingResult.
         :rtype: float
@@ -125,7 +125,7 @@ class PeriodProductRatingResult:
     def amount(self, amount):
         """Sets the amount of this PeriodProductRatingResult.
 
-        |参数名称：总额| |参数约束及描述：即最终优惠的金额|
+        总额，即最终优惠后的金额。 amount= official_website_amount - discountAmount。
 
         :param amount: The amount of this PeriodProductRatingResult.
         :type: float
@@ -136,7 +136,7 @@ class PeriodProductRatingResult:
     def official_website_amount(self):
         """Gets the official_website_amount of this PeriodProductRatingResult.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        包年/包月产品的官网价。
 
         :return: The official_website_amount of this PeriodProductRatingResult.
         :rtype: float
@@ -147,7 +147,7 @@ class PeriodProductRatingResult:
     def official_website_amount(self, official_website_amount):
         """Sets the official_website_amount of this PeriodProductRatingResult.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        包年/包月产品的官网价。
 
         :param official_website_amount: The official_website_amount of this PeriodProductRatingResult.
         :type: float
@@ -158,7 +158,7 @@ class PeriodProductRatingResult:
     def discount_amount(self):
         """Gets the discount_amount of this PeriodProductRatingResult.
 
-        |参数名称：优惠额（官网价和总价的差）| |参数约束及描述：优惠额（官网价和总价的差）|
+        可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。
 
         :return: The discount_amount of this PeriodProductRatingResult.
         :rtype: float
@@ -169,7 +169,7 @@ class PeriodProductRatingResult:
     def discount_amount(self, discount_amount):
         """Sets the discount_amount of this PeriodProductRatingResult.
 
-        |参数名称：优惠额（官网价和总价的差）| |参数约束及描述：优惠额（官网价和总价的差）|
+        可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。
 
         :param discount_amount: The discount_amount of this PeriodProductRatingResult.
         :type: float
@@ -180,7 +180,7 @@ class PeriodProductRatingResult:
     def measure_id(self):
         """Gets the measure_id of this PeriodProductRatingResult.
 
-        |参数名称：度量单位标识| |参数约束及描述：1：元|
+        价格度量单位标识。 1：元
 
         :return: The measure_id of this PeriodProductRatingResult.
         :rtype: int
@@ -191,7 +191,7 @@ class PeriodProductRatingResult:
     def measure_id(self, measure_id):
         """Sets the measure_id of this PeriodProductRatingResult.
 
-        |参数名称：度量单位标识| |参数约束及描述：1：元|
+        价格度量单位标识。 1：元
 
         :param measure_id: The measure_id of this PeriodProductRatingResult.
         :type: int

@@ -320,6 +320,9 @@ class Client:
         if response_headers is not None and len(response_headers) > 0:
             self.set_response_headers(return_data, response, response_headers)
 
+        if not issubclass(return_data.__class__, SdkStreamResponse):
+            return_data.raw_content = response.content
+
         return return_data
 
     def async_response_hook_factory(self, response_type, response_headers):

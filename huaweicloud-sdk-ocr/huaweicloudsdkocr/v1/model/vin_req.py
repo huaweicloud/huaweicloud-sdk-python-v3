@@ -9,7 +9,7 @@ import six
 
 
 
-class VINReq:
+class VinReq:
 
 
     """
@@ -33,7 +33,7 @@ class VINReq:
     }
 
     def __init__(self, image=None, url=None):
-        """VINReq - a model defined in huaweicloud sdk"""
+        """VinReq - a model defined in huaweicloud sdk"""
         
         
 
@@ -48,44 +48,44 @@ class VINReq:
 
     @property
     def image(self):
-        """Gets the image of this VINReq.
+        """Gets the image of this VinReq.
 
         与url二选一  图像数据，base64编码，要求base64编码后大小不超过10M。  图片最小边不小于15像素，最长边不超过8192像素。  支持JPEG/JPG/PNG/BMP/TIFF/GIF/WEBP格式  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。 
 
-        :return: The image of this VINReq.
+        :return: The image of this VinReq.
         :rtype: str
         """
         return self._image
 
     @image.setter
     def image(self, image):
-        """Sets the image of this VINReq.
+        """Sets the image of this VinReq.
 
         与url二选一  图像数据，base64编码，要求base64编码后大小不超过10M。  图片最小边不小于15像素，最长边不超过8192像素。  支持JPEG/JPG/PNG/BMP/TIFF/GIF/WEBP格式  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。 
 
-        :param image: The image of this VINReq.
+        :param image: The image of this VinReq.
         :type: str
         """
         self._image = image
 
     @property
     def url(self):
-        """Gets the url of this VINReq.
+        """Gets the url of this VinReq.
 
         与image二选一  图片的URL路径，目前仅支持华为云OBS提供的匿名公开授权访问的URL以及公网URL。 
 
-        :return: The url of this VINReq.
+        :return: The url of this VinReq.
         :rtype: str
         """
         return self._url
 
     @url.setter
     def url(self, url):
-        """Sets the url of this VINReq.
+        """Sets the url of this VinReq.
 
         与image二选一  图片的URL路径，目前仅支持华为云OBS提供的匿名公开授权访问的URL以及公网URL。 
 
-        :param url: The url of this VINReq.
+        :param url: The url of this VinReq.
         :type: str
         """
         self._url = url
@@ -127,7 +127,7 @@ class VINReq:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, VINReq):
+        if not isinstance(other, VinReq):
             return False
 
         return self.__dict__ == other.__dict__

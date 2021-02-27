@@ -44,7 +44,7 @@ class CustomerInfoV2:
     def customer_id(self):
         """Gets the customer_id of this CustomerInfoV2.
 
-        |参数名称：客户的客户ID。| |参数约束及描述：客户的客户ID。|
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :return: The customer_id of this CustomerInfoV2.
         :rtype: str
@@ -55,7 +55,7 @@ class CustomerInfoV2:
     def customer_id(self, customer_id):
         """Sets the customer_id of this CustomerInfoV2.
 
-        |参数名称：客户的客户ID。| |参数约束及描述：客户的客户ID。|
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this CustomerInfoV2.
         :type: str

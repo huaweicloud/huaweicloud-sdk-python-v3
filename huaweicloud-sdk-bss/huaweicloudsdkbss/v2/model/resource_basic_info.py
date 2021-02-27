@@ -60,7 +60,7 @@ class ResourceBasicInfo:
     def resource_type_code(self):
         """Gets the resource_type_code of this ResourceBasicInfo.
 
-        |参数名称：资源类型编码| |参数约束及描述：资源类型编码|
+        资源类型编码。例如：hws.resource.type.general。
 
         :return: The resource_type_code of this ResourceBasicInfo.
         :rtype: str
@@ -71,7 +71,7 @@ class ResourceBasicInfo:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this ResourceBasicInfo.
 
-        |参数名称：资源类型编码| |参数约束及描述：资源类型编码|
+        资源类型编码。例如：hws.resource.type.general。
 
         :param resource_type_code: The resource_type_code of this ResourceBasicInfo.
         :type: str
@@ -82,7 +82,7 @@ class ResourceBasicInfo:
     def product_owner_service(self):
         """Gets the product_owner_service of this ResourceBasicInfo.
 
-        |参数名称：资源类型归属的服务类型编码| |参数约束及描述：资源类型归属的服务类型编码|
+        资源类型归属的服务类型编码。例如：hws.service.type.offline。
 
         :return: The product_owner_service of this ResourceBasicInfo.
         :rtype: str
@@ -93,7 +93,7 @@ class ResourceBasicInfo:
     def product_owner_service(self, product_owner_service):
         """Sets the product_owner_service of this ResourceBasicInfo.
 
-        |参数名称：资源类型归属的服务类型编码| |参数约束及描述：资源类型归属的服务类型编码|
+        资源类型归属的服务类型编码。例如：hws.service.type.offline。
 
         :param product_owner_service: The product_owner_service of this ResourceBasicInfo.
         :type: str
@@ -104,7 +104,7 @@ class ResourceBasicInfo:
     def name(self):
         """Gets the name of this ResourceBasicInfo.
 
-        |参数名称：资源名称，按照请求的X-Language返回对应语言的名称| |参数约束及描述：资源名称，按照请求的X-Language返回对应语言的名称|
+        资源类型名称。例如：通用规格。
 
         :return: The name of this ResourceBasicInfo.
         :rtype: str
@@ -115,7 +115,7 @@ class ResourceBasicInfo:
     def name(self, name):
         """Sets the name of this ResourceBasicInfo.
 
-        |参数名称：资源名称，按照请求的X-Language返回对应语言的名称| |参数约束及描述：资源名称，按照请求的X-Language返回对应语言的名称|
+        资源类型名称。例如：通用规格。
 
         :param name: The name of this ResourceBasicInfo.
         :type: str
@@ -126,7 +126,7 @@ class ResourceBasicInfo:
     def description(self):
         """Gets the description of this ResourceBasicInfo.
 
-        |参数名称：资源描述，按照请求的X-Language返回对应语言的描述| |参数约束及描述：资源描述，按照请求的X-Language返回对应语言的描述|
+        资源类型描述。
 
         :return: The description of this ResourceBasicInfo.
         :rtype: str
@@ -137,7 +137,7 @@ class ResourceBasicInfo:
     def description(self, description):
         """Sets the description of this ResourceBasicInfo.
 
-        |参数名称：资源描述，按照请求的X-Language返回对应语言的描述| |参数约束及描述：资源描述，按照请求的X-Language返回对应语言的描述|
+        资源类型描述。
 
         :param description: The description of this ResourceBasicInfo.
         :type: str

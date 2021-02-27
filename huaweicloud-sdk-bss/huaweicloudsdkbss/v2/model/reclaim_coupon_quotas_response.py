@@ -50,7 +50,7 @@ class ReclaimCouponQuotasResponse(SdkResponse):
     def error_details(self):
         """Gets the error_details of this ReclaimCouponQuotasResponse.
 
-        |参数名称：响应信息| |参数约束以及描述：响应信息|
+        回收失败的精英服务商额度信息，具体参见表1，只有HTTP STATUS 200的时候才有这个结构体。
 
         :return: The error_details of this ReclaimCouponQuotasResponse.
         :rtype: list[ErrorDetail]
@@ -61,7 +61,7 @@ class ReclaimCouponQuotasResponse(SdkResponse):
     def error_details(self, error_details):
         """Sets the error_details of this ReclaimCouponQuotasResponse.
 
-        |参数名称：响应信息| |参数约束以及描述：响应信息|
+        回收失败的精英服务商额度信息，具体参见表1，只有HTTP STATUS 200的时候才有这个结构体。
 
         :param error_details: The error_details of this ReclaimCouponQuotasResponse.
         :type: list[ErrorDetail]
@@ -72,7 +72,7 @@ class ReclaimCouponQuotasResponse(SdkResponse):
     def simple_quota_infos(self):
         """Gets the simple_quota_infos of this ReclaimCouponQuotasResponse.
 
-        |参数名称：响应信息| |参数约束以及描述：响应信息|
+        回收成功的精英服务商额度信息，具体参见表2，只有HTTP STATUS 200的时候才有这个结构体。
 
         :return: The simple_quota_infos of this ReclaimCouponQuotasResponse.
         :rtype: list[QuotaReclaim]
@@ -83,7 +83,7 @@ class ReclaimCouponQuotasResponse(SdkResponse):
     def simple_quota_infos(self, simple_quota_infos):
         """Sets the simple_quota_infos of this ReclaimCouponQuotasResponse.
 
-        |参数名称：响应信息| |参数约束以及描述：响应信息|
+        回收成功的精英服务商额度信息，具体参见表2，只有HTTP STATUS 200的时候才有这个结构体。
 
         :param simple_quota_infos: The simple_quota_infos of this ReclaimCouponQuotasResponse.
         :type: list[QuotaReclaim]

@@ -49,7 +49,7 @@ class SetPartnerDiscountsReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this SetPartnerDiscountsReq.
 
-        |参数名称：二级经销商ID| |参数约束及描述：一级经销商给二级经销商的子客户设置折扣时需要携带这个字段。|
+        精英服务商（二级经销商）ID。 精英服务商（二级经销商）给子客户设置折扣时需要携带这个字段。
 
         :return: The indirect_partner_id of this SetPartnerDiscountsReq.
         :rtype: str
@@ -60,7 +60,7 @@ class SetPartnerDiscountsReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this SetPartnerDiscountsReq.
 
-        |参数名称：二级经销商ID| |参数约束及描述：一级经销商给二级经销商的子客户设置折扣时需要携带这个字段。|
+        精英服务商（二级经销商）ID。 精英服务商（二级经销商）给子客户设置折扣时需要携带这个字段。
 
         :param indirect_partner_id: The indirect_partner_id of this SetPartnerDiscountsReq.
         :type: str
@@ -71,7 +71,7 @@ class SetPartnerDiscountsReq:
     def sub_customer_discounts(self):
         """Gets the sub_customer_discounts of this SetPartnerDiscountsReq.
 
-        |参数名称：客户折扣信息列表，最大支持10个。| |参数约束以及描述：客户折扣信息列表，最大支持10个。|
+        客户折扣信息列表，最大支持10个。 具体请参见表1。
 
         :return: The sub_customer_discounts of this SetPartnerDiscountsReq.
         :rtype: list[SetSubCustomerDiscountV2]
@@ -82,7 +82,7 @@ class SetPartnerDiscountsReq:
     def sub_customer_discounts(self, sub_customer_discounts):
         """Sets the sub_customer_discounts of this SetPartnerDiscountsReq.
 
-        |参数名称：客户折扣信息列表，最大支持10个。| |参数约束以及描述：客户折扣信息列表，最大支持10个。|
+        客户折扣信息列表，最大支持10个。 具体请参见表1。
 
         :param sub_customer_discounts: The sub_customer_discounts of this SetPartnerDiscountsReq.
         :type: list[SetSubCustomerDiscountV2]

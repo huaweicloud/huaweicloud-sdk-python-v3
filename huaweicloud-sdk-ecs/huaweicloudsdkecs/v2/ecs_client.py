@@ -1405,6 +1405,71 @@ class EcsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_server_groups(self, request):
+        """查询云服务器组列表
+
+        查询弹性云服务器组。  与原生的创建云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
+
+        :param ListServerGroupsRequest request
+        :return: ListServerGroupsResponse
+        """
+        return self.list_server_groups_with_http_info(request)
+
+    def list_server_groups_with_http_info(self, request):
+        """查询云服务器组列表
+
+        查询弹性云服务器组。  与原生的创建云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
+
+        :param ListServerGroupsRequest request
+        :return: ListServerGroupsResponse
+        """
+
+        all_params = ['limit', 'marker']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/os-server-groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListServerGroupsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_server_interfaces(self, request):
         """查询云服务器网卡信息
 
@@ -2723,6 +2788,69 @@ class EcsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowServerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_server_group(self, request):
+        """查询云服务器组详情
+
+        查询弹性云服务器组详情。  与原生的创建云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
+
+        :param ShowServerGroupRequest request
+        :return: ShowServerGroupResponse
+        """
+        return self.show_server_group_with_http_info(request)
+
+    def show_server_group_with_http_info(self, request):
+        """查询云服务器组详情
+
+        查询弹性云服务器组详情。  与原生的创建云服务器组接口不同之处在于该接口支持企业项目细粒度权限的校验。
+
+        :param ShowServerGroupRequest request
+        :return: ShowServerGroupResponse
+        """
+
+        all_params = ['server_group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_group_id' in local_var_params:
+            path_params['server_group_id'] = local_var_params['server_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowServerGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

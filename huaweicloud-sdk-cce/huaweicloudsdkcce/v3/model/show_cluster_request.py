@@ -24,31 +24,27 @@ class ShowClusterRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'content_type': 'str',
         'error_status': 'str',
         'detail': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'content_type': 'Content-Type',
         'error_status': 'errorStatus',
         'detail': 'detail'
     }
 
-    def __init__(self, cluster_id=None, content_type='application/json', error_status=None, detail=None):
+    def __init__(self, cluster_id=None, error_status=None, detail=None):
         """ShowClusterRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._cluster_id = None
-        self._content_type = None
         self._error_status = None
         self._detail = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
-        self.content_type = content_type
         if error_status is not None:
             self.error_status = error_status
         if detail is not None:
@@ -73,26 +69,6 @@ class ShowClusterRequest:
         :type: str
         """
         self._cluster_id = cluster_id
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this ShowClusterRequest.
-
-
-        :return: The content_type of this ShowClusterRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this ShowClusterRequest.
-
-
-        :param content_type: The content_type of this ShowClusterRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def error_status(self):

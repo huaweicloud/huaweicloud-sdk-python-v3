@@ -513,6 +513,71 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_manual_backup(self, request):
+        """创建手动备份
+
+        创建手动备份。
+
+        :param CreateManualBackupRequest request
+        :return: CreateManualBackupResponse
+        """
+        return self.create_manual_backup_with_http_info(request)
+
+    def create_manual_backup_with_http_info(self, request):
+        """创建手动备份
+
+        创建手动备份。
+
+        :param CreateManualBackupRequest request
+        :return: CreateManualBackupResponse
+        """
+
+        all_params = ['create_manual_backup_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/backups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateManualBackupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_configuration(self, request):
         """删除参数模板
 
@@ -702,71 +767,6 @@ class RdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteManualBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def do_manual_backup(self, request):
-        """创建手动备份
-
-        创建手动备份。
-
-        :param DoManualBackupRequest request
-        :return: DoManualBackupResponse
-        """
-        return self.do_manual_backup_with_http_info(request)
-
-    def do_manual_backup_with_http_info(self, request):
-        """创建手动备份
-
-        创建手动备份。
-
-        :param DoManualBackupRequest request
-        :return: DoManualBackupResponse
-        """
-
-        all_params = ['do_manual_backup_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='DoManualBackupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2230,140 +2230,6 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def modify_configuration(self, request):
-        """修改参数模板参数
-
-        修改参数模板参数。
-
-        :param ModifyConfigurationRequest request
-        :return: ModifyConfigurationResponse
-        """
-        return self.modify_configuration_with_http_info(request)
-
-    def modify_configuration_with_http_info(self, request):
-        """修改参数模板参数
-
-        修改参数模板参数。
-
-        :param ModifyConfigurationRequest request
-        :return: ModifyConfigurationResponse
-        """
-
-        all_params = ['config_id', 'modify_configuration_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'config_id' in local_var_params:
-            path_params['config_id'] = local_var_params['config_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ModifyConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def modify_instance_configuration(self, request):
-        """修改指定实例的参数
-
-        修改指定实例的参数。
-
-        :param ModifyInstanceConfigurationRequest request
-        :return: ModifyInstanceConfigurationResponse
-        """
-        return self.modify_instance_configuration_with_http_info(request)
-
-    def modify_instance_configuration_with_http_info(self, request):
-        """修改指定实例的参数
-
-        修改指定实例的参数。
-
-        :param ModifyInstanceConfigurationRequest request
-        :return: ModifyInstanceConfigurationResponse
-        """
-
-        all_params = ['instance_id', 'modify_instance_configuration_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/configurations',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ModifyInstanceConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def reset_pwd(self, request):
         """重置数据库密码
 
@@ -3487,6 +3353,73 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_configuration(self, request):
+        """修改参数模板参数
+
+        修改参数模板参数。
+
+        :param UpdateConfigurationRequest request
+        :return: UpdateConfigurationResponse
+        """
+        return self.update_configuration_with_http_info(request)
+
+    def update_configuration_with_http_info(self, request):
+        """修改参数模板参数
+
+        修改参数模板参数。
+
+        :param UpdateConfigurationRequest request
+        :return: UpdateConfigurationResponse
+        """
+
+        all_params = ['config_id', 'update_configuration_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'config_id' in local_var_params:
+            path_params['config_id'] = local_var_params['config_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/configurations/{config_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateConfigurationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_data_ip(self, request):
         """修改内网地址
 
@@ -3548,6 +3481,73 @@ class RdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateDataIpResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_instance_configuration(self, request):
+        """修改指定实例的参数
+
+        修改指定实例的参数。
+
+        :param UpdateInstanceConfigurationRequest request
+        :return: UpdateInstanceConfigurationResponse
+        """
+        return self.update_instance_configuration_with_http_info(request)
+
+    def update_instance_configuration_with_http_info(self, request):
+        """修改指定实例的参数
+
+        修改指定实例的参数。
+
+        :param UpdateInstanceConfigurationRequest request
+        :return: UpdateInstanceConfigurationResponse
+        """
+
+        all_params = ['instance_id', 'update_instance_configuration_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/configurations',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateInstanceConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

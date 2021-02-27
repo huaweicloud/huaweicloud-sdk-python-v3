@@ -70,7 +70,7 @@ class AccountBalanceV3:
     def account_id(self):
         """Gets the account_id of this AccountBalanceV3.
 
-        |参数名称：账户标识。| |参数约束及描述：账户标识。|
+        账户标识。
 
         :return: The account_id of this AccountBalanceV3.
         :rtype: str
@@ -81,7 +81,7 @@ class AccountBalanceV3:
     def account_id(self, account_id):
         """Sets the account_id of this AccountBalanceV3.
 
-        |参数名称：账户标识。| |参数约束及描述：账户标识。|
+        账户标识。
 
         :param account_id: The account_id of this AccountBalanceV3.
         :type: str
@@ -92,7 +92,7 @@ class AccountBalanceV3:
     def account_type(self):
         """Gets the account_type of this AccountBalanceV3.
 
-        |参数名称：账户类型：1：余额2：信用5：奖励7：保证金8：可拨款| |参数的约束及描述：账户类型：1：余额2：信用5：奖励7：保证金8：可拨款|
+        账户类型。 1：余额2：信用5：奖励金
 
         :return: The account_type of this AccountBalanceV3.
         :rtype: int
@@ -103,7 +103,7 @@ class AccountBalanceV3:
     def account_type(self, account_type):
         """Sets the account_type of this AccountBalanceV3.
 
-        |参数名称：账户类型：1：余额2：信用5：奖励7：保证金8：可拨款| |参数的约束及描述：账户类型：1：余额2：信用5：奖励7：保证金8：可拨款|
+        账户类型。 1：余额2：信用5：奖励金
 
         :param account_type: The account_type of this AccountBalanceV3.
         :type: int
@@ -114,7 +114,7 @@ class AccountBalanceV3:
     def amount(self):
         """Gets the amount of this AccountBalanceV3.
 
-        |参数名称：余额。| |参数的约束及描述：余额。|
+        账户余额。
 
         :return: The amount of this AccountBalanceV3.
         :rtype: float
@@ -125,7 +125,7 @@ class AccountBalanceV3:
     def amount(self, amount):
         """Sets the amount of this AccountBalanceV3.
 
-        |参数名称：余额。| |参数的约束及描述：余额。|
+        账户余额。
 
         :param amount: The amount of this AccountBalanceV3.
         :type: float
@@ -136,7 +136,7 @@ class AccountBalanceV3:
     def currency(self):
         """Gets the currency of this AccountBalanceV3.
 
-        |参数名称：币种。当前固定为CNY。| |参数约束及描述：币种。当前固定为CNY。|
+        币种。 CNY：人民币。
 
         :return: The currency of this AccountBalanceV3.
         :rtype: str
@@ -147,7 +147,7 @@ class AccountBalanceV3:
     def currency(self, currency):
         """Sets the currency of this AccountBalanceV3.
 
-        |参数名称：币种。当前固定为CNY。| |参数约束及描述：币种。当前固定为CNY。|
+        币种。 CNY：人民币。
 
         :param currency: The currency of this AccountBalanceV3.
         :type: str
@@ -158,7 +158,7 @@ class AccountBalanceV3:
     def designated_amount(self):
         """Gets the designated_amount of this AccountBalanceV3.
 
-        |参数名称：专款专用余额。| |参数的约束及描述：专款专用余额。|
+        专款专用余额。
 
         :return: The designated_amount of this AccountBalanceV3.
         :rtype: float
@@ -169,7 +169,7 @@ class AccountBalanceV3:
     def designated_amount(self, designated_amount):
         """Sets the designated_amount of this AccountBalanceV3.
 
-        |参数名称：专款专用余额。| |参数的约束及描述：专款专用余额。|
+        专款专用余额。
 
         :param designated_amount: The designated_amount of this AccountBalanceV3.
         :type: float
@@ -180,7 +180,7 @@ class AccountBalanceV3:
     def credit_amount(self):
         """Gets the credit_amount of this AccountBalanceV3.
 
-        |参数名称：总信用额度。只有账户类型是2:信用的时候才有该字段| |参数的约束及描述：总信用额度。只有账户类型是2:信用的时候才有该字段|
+        总信用额度，仅信用账户存在该字段。
 
         :return: The credit_amount of this AccountBalanceV3.
         :rtype: float
@@ -191,7 +191,7 @@ class AccountBalanceV3:
     def credit_amount(self, credit_amount):
         """Sets the credit_amount of this AccountBalanceV3.
 
-        |参数名称：总信用额度。只有账户类型是2:信用的时候才有该字段| |参数的约束及描述：总信用额度。只有账户类型是2:信用的时候才有该字段|
+        总信用额度，仅信用账户存在该字段。
 
         :param credit_amount: The credit_amount of this AccountBalanceV3.
         :type: float
@@ -202,7 +202,7 @@ class AccountBalanceV3:
     def measure_id(self):
         """Gets the measure_id of this AccountBalanceV3.
 
-        |参数名称：度量单位。1：元。| |参数的约束及描述：度量单位。1：元。|
+        度量单位。 1：元
 
         :return: The measure_id of this AccountBalanceV3.
         :rtype: int
@@ -213,7 +213,7 @@ class AccountBalanceV3:
     def measure_id(self, measure_id):
         """Sets the measure_id of this AccountBalanceV3.
 
-        |参数名称：度量单位。1：元。| |参数的约束及描述：度量单位。1：元。|
+        度量单位。 1：元
 
         :param measure_id: The measure_id of this AccountBalanceV3.
         :type: int

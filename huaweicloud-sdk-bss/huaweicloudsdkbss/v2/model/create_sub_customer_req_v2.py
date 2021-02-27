@@ -63,7 +63,7 @@ class CreateSubCustomerReqV2:
     def party_id(self):
         """Gets the party_id of this CreateSubCustomerReqV2.
 
-        |参数名称：子账号挂载的组织单元，填写组织单元的Party ID，通过查询企业组织结构接口的响应获得。| |参数约束及描述：子账号挂载的组织单元，填写组织单元的Party ID，通过查询企业组织结构接口的响应获得。|
+        企业子账号挂载的组织单元。 组织单元的Party ID，通过查询企业组织结构接口的响应获得。
 
         :return: The party_id of this CreateSubCustomerReqV2.
         :rtype: str
@@ -74,7 +74,7 @@ class CreateSubCustomerReqV2:
     def party_id(self, party_id):
         """Sets the party_id of this CreateSubCustomerReqV2.
 
-        |参数名称：子账号挂载的组织单元，填写组织单元的Party ID，通过查询企业组织结构接口的响应获得。| |参数约束及描述：子账号挂载的组织单元，填写组织单元的Party ID，通过查询企业组织结构接口的响应获得。|
+        企业子账号挂载的组织单元。 组织单元的Party ID，通过查询企业组织结构接口的响应获得。
 
         :param party_id: The party_id of this CreateSubCustomerReqV2.
         :type: str
@@ -85,7 +85,7 @@ class CreateSubCustomerReqV2:
     def display_name(self):
         """Gets the display_name of this CreateSubCustomerReqV2.
 
-        |参数名称：企业子账号的显示名称不限制特殊字符。| |参数约束及描述：企业子账号的显示名称不限制特殊字符。|
+        企业子账号的显示名称，不限制特殊字符。
 
         :return: The display_name of this CreateSubCustomerReqV2.
         :rtype: str
@@ -96,7 +96,7 @@ class CreateSubCustomerReqV2:
     def display_name(self, display_name):
         """Sets the display_name of this CreateSubCustomerReqV2.
 
-        |参数名称：企业子账号的显示名称不限制特殊字符。| |参数约束及描述：企业子账号的显示名称不限制特殊字符。|
+        企业子账号的显示名称，不限制特殊字符。
 
         :param display_name: The display_name of this CreateSubCustomerReqV2.
         :type: str
@@ -107,7 +107,7 @@ class CreateSubCustomerReqV2:
     def sub_customer_association_type(self):
         """Gets the sub_customer_association_type of this CreateSubCustomerReqV2.
 
-        |参数名称：子账号关联类型：1：同一法人。注：关联类型目前只能是同一法人。| |参数的约束及描述：子账号关联类型：1：同一法人。注：关联类型目前只能是同一法人。|
+        子账号关联类型：1：同一法人。 关联类型目前只能是同一法人。
 
         :return: The sub_customer_association_type of this CreateSubCustomerReqV2.
         :rtype: int
@@ -118,7 +118,7 @@ class CreateSubCustomerReqV2:
     def sub_customer_association_type(self, sub_customer_association_type):
         """Sets the sub_customer_association_type of this CreateSubCustomerReqV2.
 
-        |参数名称：子账号关联类型：1：同一法人。注：关联类型目前只能是同一法人。| |参数的约束及描述：子账号关联类型：1：同一法人。注：关联类型目前只能是同一法人。|
+        子账号关联类型：1：同一法人。 关联类型目前只能是同一法人。
 
         :param sub_customer_association_type: The sub_customer_association_type of this CreateSubCustomerReqV2.
         :type: int
@@ -129,7 +129,7 @@ class CreateSubCustomerReqV2:
     def permission_ids(self):
         """Gets the permission_ids of this CreateSubCustomerReqV2.
 
-        |参数名称：申请的权限列表。支持的权限项参见表 权限项定义列表| |参数约束以及描述：申请的权限列表。支持的权限项参见表 权限项定义列表|
+        申请的权限列表。 支持的权限项参见表2。
 
         :return: The permission_ids of this CreateSubCustomerReqV2.
         :rtype: list[str]
@@ -140,7 +140,7 @@ class CreateSubCustomerReqV2:
     def permission_ids(self, permission_ids):
         """Sets the permission_ids of this CreateSubCustomerReqV2.
 
-        |参数名称：申请的权限列表。支持的权限项参见表 权限项定义列表| |参数约束以及描述：申请的权限列表。支持的权限项参见表 权限项定义列表|
+        申请的权限列表。 支持的权限项参见表2。
 
         :param permission_ids: The permission_ids of this CreateSubCustomerReqV2.
         :type: list[str]

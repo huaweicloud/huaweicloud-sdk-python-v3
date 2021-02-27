@@ -49,7 +49,7 @@ class ReclaimCouponQuotasReq:
     def quota_ids(self):
         """Gets the quota_ids of this ReclaimCouponQuotasReq.
 
-        |参数名称：被回收的代金券额度的ID。| |参数约束以及描述：被回收的代金券额度的ID。|
+        被回收的精英服务商的代金券额度ID。
 
         :return: The quota_ids of this ReclaimCouponQuotasReq.
         :rtype: list[str]
@@ -60,7 +60,7 @@ class ReclaimCouponQuotasReq:
     def quota_ids(self, quota_ids):
         """Sets the quota_ids of this ReclaimCouponQuotasReq.
 
-        |参数名称：被回收的代金券额度的ID。| |参数约束以及描述：被回收的代金券额度的ID。|
+        被回收的精英服务商的代金券额度ID。
 
         :param quota_ids: The quota_ids of this ReclaimCouponQuotasReq.
         :type: list[str]
@@ -71,7 +71,7 @@ class ReclaimCouponQuotasReq:
     def remark(self):
         """Gets the remark of this ReclaimCouponQuotasReq.
 
-        |参数名称：回收时候的备注| |参数约束及描述：回收时候的备注|
+        回收时的备注。
 
         :return: The remark of this ReclaimCouponQuotasReq.
         :rtype: str
@@ -82,7 +82,7 @@ class ReclaimCouponQuotasReq:
     def remark(self, remark):
         """Sets the remark of this ReclaimCouponQuotasReq.
 
-        |参数名称：回收时候的备注| |参数约束及描述：回收时候的备注|
+        回收时的备注。
 
         :param remark: The remark of this ReclaimCouponQuotasReq.
         :type: str

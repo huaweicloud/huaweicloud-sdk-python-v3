@@ -130,7 +130,7 @@ class BillSumRecordInfoV2:
     def bill_cycle(self):
         """Gets the bill_cycle of this BillSumRecordInfoV2.
 
-        |参数名称：账期，格式为YYYY-MM| |参数约束及描述：账期，格式为YYYY-MM|
+        消费汇总数据所在账期，格式：YYYY-MM。
 
         :return: The bill_cycle of this BillSumRecordInfoV2.
         :rtype: str
@@ -141,7 +141,7 @@ class BillSumRecordInfoV2:
     def bill_cycle(self, bill_cycle):
         """Sets the bill_cycle of this BillSumRecordInfoV2.
 
-        |参数名称：账期，格式为YYYY-MM| |参数约束及描述：账期，格式为YYYY-MM|
+        消费汇总数据所在账期，格式：YYYY-MM。
 
         :param bill_cycle: The bill_cycle of this BillSumRecordInfoV2.
         :type: str
@@ -152,7 +152,7 @@ class BillSumRecordInfoV2:
     def resource_type_code(self):
         """Gets the resource_type_code of this BillSumRecordInfoV2.
 
-        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。| |参数约束及描述：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :return: The resource_type_code of this BillSumRecordInfoV2.
         :rtype: str
@@ -163,7 +163,7 @@ class BillSumRecordInfoV2:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this BillSumRecordInfoV2.
 
-        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。| |参数约束及描述：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type_code: The resource_type_code of this BillSumRecordInfoV2.
         :type: str
@@ -174,7 +174,7 @@ class BillSumRecordInfoV2:
     def service_type_code(self):
         """Gets the service_type_code of this BillSumRecordInfoV2.
 
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型|
+        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
 
         :return: The service_type_code of this BillSumRecordInfoV2.
         :rtype: str
@@ -185,7 +185,7 @@ class BillSumRecordInfoV2:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this BillSumRecordInfoV2.
 
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型|
+        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this BillSumRecordInfoV2.
         :type: str
@@ -196,7 +196,7 @@ class BillSumRecordInfoV2:
     def charging_mode(self):
         """Gets the charging_mode of this BillSumRecordInfoV2.
 
-        |参数名称：计费模式1：包周期；3：按需；10：预留实例| |参数约束及描述：计费模式1：包周期；3：按需；10：预留实例|
+        计费模式。 1：包年/包月3：按需10：预留实例
 
         :return: The charging_mode of this BillSumRecordInfoV2.
         :rtype: int
@@ -207,7 +207,7 @@ class BillSumRecordInfoV2:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this BillSumRecordInfoV2.
 
-        |参数名称：计费模式1：包周期；3：按需；10：预留实例| |参数约束及描述：计费模式1：包周期；3：按需；10：预留实例|
+        计费模式。 1：包年/包月3：按需10：预留实例
 
         :param charging_mode: The charging_mode of this BillSumRecordInfoV2.
         :type: int
@@ -218,7 +218,7 @@ class BillSumRecordInfoV2:
     def official_amount(self):
         """Gets the official_amount of this BillSumRecordInfoV2.
 
-        |参数名称：官网价| |参数的约束及描述：官网价|
+        官网价。
 
         :return: The official_amount of this BillSumRecordInfoV2.
         :rtype: float
@@ -229,7 +229,7 @@ class BillSumRecordInfoV2:
     def official_amount(self, official_amount):
         """Sets the official_amount of this BillSumRecordInfoV2.
 
-        |参数名称：官网价| |参数的约束及描述：官网价|
+        官网价。
 
         :param official_amount: The official_amount of this BillSumRecordInfoV2.
         :type: float
@@ -240,7 +240,7 @@ class BillSumRecordInfoV2:
     def official_discount_amount(self):
         """Gets the official_discount_amount of this BillSumRecordInfoV2.
 
-        |参数名称：折扣金额| |参数的约束及描述：折扣金额|
+        折扣金额。
 
         :return: The official_discount_amount of this BillSumRecordInfoV2.
         :rtype: float
@@ -251,7 +251,7 @@ class BillSumRecordInfoV2:
     def official_discount_amount(self, official_discount_amount):
         """Sets the official_discount_amount of this BillSumRecordInfoV2.
 
-        |参数名称：折扣金额| |参数的约束及描述：折扣金额|
+        折扣金额。
 
         :param official_discount_amount: The official_discount_amount of this BillSumRecordInfoV2.
         :type: float
@@ -262,7 +262,7 @@ class BillSumRecordInfoV2:
     def truncated_amount(self):
         """Gets the truncated_amount of this BillSumRecordInfoV2.
 
-        |参数名称：抹零金额| |参数的约束及描述：抹零金额|
+        抹零金额。
 
         :return: The truncated_amount of this BillSumRecordInfoV2.
         :rtype: float
@@ -273,7 +273,7 @@ class BillSumRecordInfoV2:
     def truncated_amount(self, truncated_amount):
         """Sets the truncated_amount of this BillSumRecordInfoV2.
 
-        |参数名称：抹零金额| |参数的约束及描述：抹零金额|
+        抹零金额。
 
         :param truncated_amount: The truncated_amount of this BillSumRecordInfoV2.
         :type: float
@@ -284,7 +284,7 @@ class BillSumRecordInfoV2:
     def consume_amount(self):
         """Gets the consume_amount of this BillSumRecordInfoV2.
 
-        |参数名称：应付金额，应付金额 = 官网价-折扣金额-抹零金额| |参数的约束及描述：应付金额，应付金额 = 官网价-折扣金额-抹零金额|
+        应付金额。 应付金额=官网价-折扣金额-抹零金额
 
         :return: The consume_amount of this BillSumRecordInfoV2.
         :rtype: float
@@ -295,7 +295,7 @@ class BillSumRecordInfoV2:
     def consume_amount(self, consume_amount):
         """Sets the consume_amount of this BillSumRecordInfoV2.
 
-        |参数名称：应付金额，应付金额 = 官网价-折扣金额-抹零金额| |参数的约束及描述：应付金额，应付金额 = 官网价-折扣金额-抹零金额|
+        应付金额。 应付金额=官网价-折扣金额-抹零金额
 
         :param consume_amount: The consume_amount of this BillSumRecordInfoV2.
         :type: float
@@ -306,7 +306,7 @@ class BillSumRecordInfoV2:
     def coupon_amount(self):
         """Gets the coupon_amount of this BillSumRecordInfoV2.
 
-        |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
+        代金券金额。
 
         :return: The coupon_amount of this BillSumRecordInfoV2.
         :rtype: float
@@ -317,7 +317,7 @@ class BillSumRecordInfoV2:
     def coupon_amount(self, coupon_amount):
         """Sets the coupon_amount of this BillSumRecordInfoV2.
 
-        |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
+        代金券金额。
 
         :param coupon_amount: The coupon_amount of this BillSumRecordInfoV2.
         :type: float
@@ -328,7 +328,7 @@ class BillSumRecordInfoV2:
     def flexipurchase_coupon_amount(self):
         """Gets the flexipurchase_coupon_amount of this BillSumRecordInfoV2.
 
-        |参数名称：现金券金额，预留。| |参数的约束及描述：现金券金额，预留。|
+        现金券金额，预留。
 
         :return: The flexipurchase_coupon_amount of this BillSumRecordInfoV2.
         :rtype: float
@@ -339,7 +339,7 @@ class BillSumRecordInfoV2:
     def flexipurchase_coupon_amount(self, flexipurchase_coupon_amount):
         """Sets the flexipurchase_coupon_amount of this BillSumRecordInfoV2.
 
-        |参数名称：现金券金额，预留。| |参数的约束及描述：现金券金额，预留。|
+        现金券金额，预留。
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this BillSumRecordInfoV2.
         :type: float
@@ -350,7 +350,7 @@ class BillSumRecordInfoV2:
     def stored_value_card_amount(self):
         """Gets the stored_value_card_amount of this BillSumRecordInfoV2.
 
-        |参数名称：储值卡金额，预留。| |参数的约束及描述：储值卡金额，预留。|
+        储值卡金额，预留。
 
         :return: The stored_value_card_amount of this BillSumRecordInfoV2.
         :rtype: float
@@ -361,7 +361,7 @@ class BillSumRecordInfoV2:
     def stored_value_card_amount(self, stored_value_card_amount):
         """Sets the stored_value_card_amount of this BillSumRecordInfoV2.
 
-        |参数名称：储值卡金额，预留。| |参数的约束及描述：储值卡金额，预留。|
+        储值卡金额，预留。
 
         :param stored_value_card_amount: The stored_value_card_amount of this BillSumRecordInfoV2.
         :type: float
@@ -372,7 +372,7 @@ class BillSumRecordInfoV2:
     def debt_amount(self):
         """Gets the debt_amount of this BillSumRecordInfoV2.
 
-        |参数名称：欠费金额，即从客户账户扣费的时候，客户账户金额不足，欠费的金额。| |参数的约束及描述：欠费金额，即从客户账户扣费的时候，客户账户金额不足，欠费的金额。|
+        欠费金额。即伙伴从客户账户扣费时，客户账户金额不足，欠费的金额。
 
         :return: The debt_amount of this BillSumRecordInfoV2.
         :rtype: float
@@ -383,7 +383,7 @@ class BillSumRecordInfoV2:
     def debt_amount(self, debt_amount):
         """Sets the debt_amount of this BillSumRecordInfoV2.
 
-        |参数名称：欠费金额，即从客户账户扣费的时候，客户账户金额不足，欠费的金额。| |参数的约束及描述：欠费金额，即从客户账户扣费的时候，客户账户金额不足，欠费的金额。|
+        欠费金额。即伙伴从客户账户扣费时，客户账户金额不足，欠费的金额。
 
         :param debt_amount: The debt_amount of this BillSumRecordInfoV2.
         :type: float
@@ -394,7 +394,7 @@ class BillSumRecordInfoV2:
     def writeoff_amount(self):
         """Gets the writeoff_amount of this BillSumRecordInfoV2.
 
-        |参数名称：欠费核销金额| |参数的约束及描述：欠费核销金额|
+        欠费核销金额。
 
         :return: The writeoff_amount of this BillSumRecordInfoV2.
         :rtype: float
@@ -405,7 +405,7 @@ class BillSumRecordInfoV2:
     def writeoff_amount(self, writeoff_amount):
         """Sets the writeoff_amount of this BillSumRecordInfoV2.
 
-        |参数名称：欠费核销金额| |参数的约束及描述：欠费核销金额|
+        欠费核销金额。
 
         :param writeoff_amount: The writeoff_amount of this BillSumRecordInfoV2.
         :type: float
@@ -416,7 +416,7 @@ class BillSumRecordInfoV2:
     def cash_amount(self):
         """Gets the cash_amount of this BillSumRecordInfoV2.
 
-        |参数名称：现金账户金额。| |参数的约束及描述：现金账户金额。|
+        现金账户金额。
 
         :return: The cash_amount of this BillSumRecordInfoV2.
         :rtype: float
@@ -427,7 +427,7 @@ class BillSumRecordInfoV2:
     def cash_amount(self, cash_amount):
         """Sets the cash_amount of this BillSumRecordInfoV2.
 
-        |参数名称：现金账户金额。| |参数的约束及描述：现金账户金额。|
+        现金账户金额。
 
         :param cash_amount: The cash_amount of this BillSumRecordInfoV2.
         :type: float
@@ -438,7 +438,7 @@ class BillSumRecordInfoV2:
     def credit_amount(self):
         """Gets the credit_amount of this BillSumRecordInfoV2.
 
-        |参数名称：信用账户金额。| |参数的约束及描述：信用账户金额。|
+        信用账户金额。
 
         :return: The credit_amount of this BillSumRecordInfoV2.
         :rtype: float
@@ -449,7 +449,7 @@ class BillSumRecordInfoV2:
     def credit_amount(self, credit_amount):
         """Sets the credit_amount of this BillSumRecordInfoV2.
 
-        |参数名称：信用账户金额。| |参数的约束及描述：信用账户金额。|
+        信用账户金额。
 
         :param credit_amount: The credit_amount of this BillSumRecordInfoV2.
         :type: float
@@ -460,7 +460,7 @@ class BillSumRecordInfoV2:
     def measure_id(self):
         """Gets the measure_id of this BillSumRecordInfoV2.
 
-        |参数名称：金额单位。1：元| |参数的约束及描述：金额单位。1：元|
+        金额单位。 1：元
 
         :return: The measure_id of this BillSumRecordInfoV2.
         :rtype: int
@@ -471,7 +471,7 @@ class BillSumRecordInfoV2:
     def measure_id(self, measure_id):
         """Sets the measure_id of this BillSumRecordInfoV2.
 
-        |参数名称：金额单位。1：元| |参数的约束及描述：金额单位。1：元|
+        金额单位。 1：元
 
         :param measure_id: The measure_id of this BillSumRecordInfoV2.
         :type: int
@@ -482,7 +482,7 @@ class BillSumRecordInfoV2:
     def bill_type(self):
         """Gets the bill_type of this BillSumRecordInfoV2.
 
-        |参数名称：消费类型：1：消费2：退款3：调账| |参数的约束及描述：消费类型：1：消费2：退款3：调账|
+        账单类型。 1：消费2：退款3：调账
 
         :return: The bill_type of this BillSumRecordInfoV2.
         :rtype: int
@@ -493,7 +493,7 @@ class BillSumRecordInfoV2:
     def bill_type(self, bill_type):
         """Sets the bill_type of this BillSumRecordInfoV2.
 
-        |参数名称：消费类型：1：消费2：退款3：调账| |参数的约束及描述：消费类型：1：消费2：退款3：调账|
+        账单类型。 1：消费2：退款3：调账
 
         :param bill_type: The bill_type of this BillSumRecordInfoV2.
         :type: int
@@ -504,7 +504,7 @@ class BillSumRecordInfoV2:
     def customer_id(self):
         """Gets the customer_id of this BillSumRecordInfoV2.
 
-        |参数名称：消费的客户账号ID。| |参数约束及描述：如果是查询自己，这个地方是自身的ID; 如果是查询某个企业子客户，这个地方是企业子客户ID如果是查询以及下面的所有子客户，这个地方是消费的实际客户ID; 如果是企业主自身消费，为企业主ID，如果这条消费记录是某个企业子客户的消费，这个地方的ID是企业子账号ID。|
+        消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
 
         :return: The customer_id of this BillSumRecordInfoV2.
         :rtype: str
@@ -515,7 +515,7 @@ class BillSumRecordInfoV2:
     def customer_id(self, customer_id):
         """Sets the customer_id of this BillSumRecordInfoV2.
 
-        |参数名称：消费的客户账号ID。| |参数约束及描述：如果是查询自己，这个地方是自身的ID; 如果是查询某个企业子客户，这个地方是企业子客户ID如果是查询以及下面的所有子客户，这个地方是消费的实际客户ID; 如果是企业主自身消费，为企业主ID，如果这条消费记录是某个企业子客户的消费，这个地方的ID是企业子账号ID。|
+        消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
 
         :param customer_id: The customer_id of this BillSumRecordInfoV2.
         :type: str

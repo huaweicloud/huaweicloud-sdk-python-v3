@@ -883,6 +883,136 @@ class DdsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def download_errorlog_async(self, request):
+        """获取错误日志下载链接
+
+        获取错误日志下载链接。
+
+        :param DownloadErrorlogRequest request
+        :return: DownloadErrorlogResponse
+        """
+        return self.download_errorlog_with_http_info(request)
+
+    def download_errorlog_with_http_info(self, request):
+        """获取错误日志下载链接
+
+        获取错误日志下载链接。
+
+        :param DownloadErrorlogRequest request
+        :return: DownloadErrorlogResponse
+        """
+
+        all_params = ['instance_id', 'download_errorlog_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/errorlog-download',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DownloadErrorlogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def download_slowlog_async(self, request):
+        """获取慢日志下载链接
+
+        获取慢日志下载链接。
+
+        :param DownloadSlowlogRequest request
+        :return: DownloadSlowlogResponse
+        """
+        return self.download_slowlog_with_http_info(request)
+
+    def download_slowlog_with_http_info(self, request):
+        """获取慢日志下载链接
+
+        获取慢日志下载链接。
+
+        :param DownloadSlowlogRequest request
+        :return: DownloadSlowlogResponse
+        """
+
+        all_params = ['instance_id', 'download_slowlog_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/slowlog-download',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DownloadSlowlogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_auditlog_links_async(self, request):
         """生成审计日志下载链接
 

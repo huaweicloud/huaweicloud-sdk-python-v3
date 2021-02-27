@@ -50,7 +50,7 @@ class ListPostalAddressResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListPostalAddressResponse.
 
-        |参数名称：查询个数，成功的时候返回| |参数的约束及描述：查询个数，成功的时候返回|
+        邮寄地址的个数，只有成功的时候才返回。
 
         :return: The total_count of this ListPostalAddressResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ListPostalAddressResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListPostalAddressResponse.
 
-        |参数名称：查询个数，成功的时候返回| |参数的约束及描述：查询个数，成功的时候返回|
+        邮寄地址的个数，只有成功的时候才返回。
 
         :param total_count: The total_count of this ListPostalAddressResponse.
         :type: int
@@ -72,7 +72,7 @@ class ListPostalAddressResponse(SdkResponse):
     def postal_address(self):
         """Gets the postal_address of this ListPostalAddressResponse.
 
-        |参数名称：邮寄地址| |参数约束以及描述：邮寄地址|
+        邮寄地址，具体参见表2。
 
         :return: The postal_address of this ListPostalAddressResponse.
         :rtype: list[CustomerPostalAddressV2]
@@ -83,7 +83,7 @@ class ListPostalAddressResponse(SdkResponse):
     def postal_address(self, postal_address):
         """Sets the postal_address of this ListPostalAddressResponse.
 
-        |参数名称：邮寄地址| |参数约束以及描述：邮寄地址|
+        邮寄地址，具体参见表2。
 
         :param postal_address: The postal_address of this ListPostalAddressResponse.
         :type: list[CustomerPostalAddressV2]

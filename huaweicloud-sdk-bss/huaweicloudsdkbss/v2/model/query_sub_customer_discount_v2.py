@@ -60,7 +60,7 @@ class QuerySubCustomerDiscountV2:
     def discount_id(self):
         """Gets the discount_id of this QuerySubCustomerDiscountV2.
 
-        |参数名称：折扣ID，唯一的表示一条折扣信息。| |参数约束及描述：折扣ID，唯一的表示一条折扣信息。|
+        折扣ID，唯一表示一条折扣信息。
 
         :return: The discount_id of this QuerySubCustomerDiscountV2.
         :rtype: str
@@ -71,7 +71,7 @@ class QuerySubCustomerDiscountV2:
     def discount_id(self, discount_id):
         """Sets the discount_id of this QuerySubCustomerDiscountV2.
 
-        |参数名称：折扣ID，唯一的表示一条折扣信息。| |参数约束及描述：折扣ID，唯一的表示一条折扣信息。|
+        折扣ID，唯一表示一条折扣信息。
 
         :param discount_id: The discount_id of this QuerySubCustomerDiscountV2.
         :type: str
@@ -82,7 +82,7 @@ class QuerySubCustomerDiscountV2:
     def discount(self):
         """Gets the discount of this QuerySubCustomerDiscountV2.
 
-        |参数名称：折扣率，精确到4位小数。如果折扣率是22%，则折扣率写成0.22。| |参数的约束及描述：折扣率，精确到4位小数。如果折扣率是22%，则折扣率写成0.22。|
+        折扣率，精确到2位小数。 如果折扣率是85%，则折扣率写成0.85。
 
         :return: The discount of this QuerySubCustomerDiscountV2.
         :rtype: float
@@ -93,7 +93,7 @@ class QuerySubCustomerDiscountV2:
     def discount(self, discount):
         """Sets the discount of this QuerySubCustomerDiscountV2.
 
-        |参数名称：折扣率，精确到4位小数。如果折扣率是22%，则折扣率写成0.22。| |参数的约束及描述：折扣率，精确到4位小数。如果折扣率是22%，则折扣率写成0.22。|
+        折扣率，精确到2位小数。 如果折扣率是85%，则折扣率写成0.85。
 
         :param discount: The discount of this QuerySubCustomerDiscountV2.
         :type: float
@@ -104,7 +104,7 @@ class QuerySubCustomerDiscountV2:
     def effective_time(self):
         """Gets the effective_time of this QuerySubCustomerDiscountV2.
 
-        |参数名称：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”|
+        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The effective_time of this QuerySubCustomerDiscountV2.
         :rtype: str
@@ -115,7 +115,7 @@ class QuerySubCustomerDiscountV2:
     def effective_time(self, effective_time):
         """Sets the effective_time of this QuerySubCustomerDiscountV2.
 
-        |参数名称：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”|
+        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param effective_time: The effective_time of this QuerySubCustomerDiscountV2.
         :type: str
@@ -126,7 +126,7 @@ class QuerySubCustomerDiscountV2:
     def expire_time(self):
         """Gets the expire_time of this QuerySubCustomerDiscountV2.
 
-        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”|
+        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The expire_time of this QuerySubCustomerDiscountV2.
         :rtype: str
@@ -137,7 +137,7 @@ class QuerySubCustomerDiscountV2:
     def expire_time(self, expire_time):
         """Sets the expire_time of this QuerySubCustomerDiscountV2.
 
-        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”|
+        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param expire_time: The expire_time of this QuerySubCustomerDiscountV2.
         :type: str

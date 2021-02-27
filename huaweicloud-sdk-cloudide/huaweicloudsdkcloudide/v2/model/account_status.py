@@ -82,7 +82,7 @@ class AccountStatus:
     def cur_org_open(self):
         """Gets the cur_org_open of this AccountStatus.
 
-        账号所属租户是否开通服务
+        帐号所属租户是否开通服务
 
         :return: The cur_org_open of this AccountStatus.
         :rtype: bool
@@ -93,7 +93,7 @@ class AccountStatus:
     def cur_org_open(self, cur_org_open):
         """Sets the cur_org_open of this AccountStatus.
 
-        账号所属租户是否开通服务
+        帐号所属租户是否开通服务
 
         :param cur_org_open: The cur_org_open of this AccountStatus.
         :type: bool

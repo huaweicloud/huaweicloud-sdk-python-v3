@@ -1,1057 +1,1323 @@
-## 3.0.33-rc 2021-02-07
-## HuaweiCloud SDK Core
-- ### Features
+# 3.0.34-rc 2021-02-27
+
+### HuaweiCloud SDK Core
+
+- _Features_
     - None
-- ### Bug Fix
-    - Add default config of `HttpConfig` when initialing a service client using function `build()`. 
-- ### Change
+- _Bug Fix_
+    - None
+- _Change_
+    - Optimize the description of `README` and the format of `CHANGELOG`.
+    - Support to use method `to_json_object()` to get response object of your requests.
+
+### HuaweiCloud SDK BMS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - Correct operation name from `WindowsBaremetalServerCleanPwd` to `DeleteWindowsBareMetalServerPassword`.
+- _Change_
     - None
 
-## HuaweiCloud SDK IMS
-- ### Features
-    - None
-- ### Bug Fix
-    - None
-- ### Change
-    - Interface `ListOsVersions` adjustment: change the data type of `os_bit` which is the property of response of the interface from string to integer.
+### HuaweiCloud SDK CES
 
-## HuaweiCloud SDK IoTDA
-- ### Features
-    - Support more interfaces: ListAsyncCommands, ListAsyncHistoryCommands, CreateAppCertificate, ListAppCertificates, ShowAppCertificate, UpdateAppCertificate, DeleteAppCertificate
-- ### Bug Fix
+- _Features_
     - None
-- ### Change
-    - SDK of interface `DeviceManagement` deprecated.(It's not supported any more in SDK, but you can also using it by customized coding using API.)
-
-## HuaweiCloud SDK Live
-- ### Features
-    - Support more interfaces: ListLiveSampleLogs, CreateDomain, DeleteDomain, UpdateDomain, ShowDomain, CreateDomainMapping, DeleteDomainMapping
-- ### Bug Fix
-    - None
-- ### Change
+- _Bug Fix_
+    - Fix the problem of circular dependency in the `CreateAlarmResponse` class.
+- _Change_
     - None
 
-## HuaweiCloud SDK OCR
-- ### Features
-    - None
-- ### Bug Fix
-    - None
-- ### Change
-    - Interfaces adjustment: change the class name of response of all interfaces from `xxResultBody` or `xxResultResponse` or `xxResponseBodyItems` to `xxResult`.
+### HuaweiCloud SDK DDS
 
+- _Features_
+    - Support more interfaces: `DownloadSlowlog` and `DownloadErrorlog`.
+- _Bug Fix_
+    - Correct operation name from `ModifyConfigurationParameter` to `UpdateConfigurationParameter`, change the class name of this operation from `ModifyConfigurationParameterRequestBody` to `UpdateConfigurationParameterRequestBody`.
+- _Change_
+    - None
 
-## 3.0.32-rc 2021-01-30
-## HuaweiCloud SDK DNS
-- ### Features
+### HuaweiCloud SDK DGC
+
+- _Features_
+    - None
+- _Bug Fix_
+    - Correct operation name from `ModifyJob` to `UpdateJob`.
+    - Correct operation name from `ModifyScript` to `UpdateScript`.
+    - Correct operation name from `ModifyResource` to `UpdateResource`.
+- _Change_
+    - None
+
+### HuaweiCloud SDK ELB
+
+- _Features_
+    - None
+- _Bug Fix_
+    - Correct operation name from `ListMenbers` to `ListMembers`.
+- _Change_
+    - None
+
+### HuaweiCloud SDK EPS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - Correct operation name from `ModifyEnterpriseProject` to `UpdateEnterpriseProject`.
+- _Change_
+    - None
+
+### HuaweiCloud SDK IAM
+
+- _Features_
+    - None
+- _Bug Fix_
+    - Correct property from `pwd_stength` to `pwd_strength` in class `KeystoneUserResult`.
+- _Change_
+    - None
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+    - Offline the following interfaces:
+        - CreateAppCertificate
+        - ListAppCertificates
+        - ShowAppCertificate
+        - UpdateAppCertificate
+        - DeleteAppCertificate
+- _Bug Fix_
+    - None
+- _Change_
+    - Hide the internal fields `Sp-Auth-Token` and `Stage-Auth-Token` of all interfaces which doesn't affect actual use in SDK.
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Delete the default value `disk_format='vhd'` in the class `ListImagesRequest`.
+    - Delete the default value `disk_format='vhd'` in the class `GlanceListImagesRequest`.
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+    - None
+- _Bug Fix_
+    - Correct operation name from `EditMeeting` to `UpdateMeeting`.
+- _Change_
+    - None
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - Correct operation name from `DoManualBackup` to `CreateManualBackup`.
+    - Correct operation name from `ModifyConfiguration` to `UpdateConfiguration`.
+    - Correct operation name from `ModifyInstanceConfiguration` to `UpdateInstanceConfiguration`.
+    - Fix the problem of circular dependency in the classes of `CreateInstanceResponse` and `CreateConfigurationResponse`.
+- _Change_
+    - Add property `is_auto_pay` to the operation `StartInstanceAction` in the scenario of changing a single-node system to a primary/standby mode.
+
+# 3.0.33-rc 2021-02-07
+
+### HuaweiCloud SDK Core
+
+- _Features_
+    - None
+- _Bug Fix_
+    - Add default config of `HttpConfig` when initialing a service client using function `build()`.
+- _Change_
+    - None
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Interface `ListOsVersions` adjustment: change the data type of `os_bit` which is the property of response of the
+      interface from string to integer.
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+    - Support more interfaces: ListAsyncCommands, ListAsyncHistoryCommands, CreateAppCertificate, ListAppCertificates,
+      ShowAppCertificate, UpdateAppCertificate, DeleteAppCertificate
+- _Bug Fix_
+    - None
+- _Change_
+    - SDK of interface `DeviceManagement` deprecated.(It's not supported any more in SDK, but you can also using it by
+      customized coding using API.)
+
+### HuaweiCloud SDK Live
+
+- _Features_
+    - Support more interfaces: ListLiveSampleLogs, CreateDomain, DeleteDomain, UpdateDomain, ShowDomain,
+      CreateDomainMapping, DeleteDomainMapping
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Interfaces adjustment: change the class name of response of all interfaces from `xxResultBody`
+      or `xxResultResponse`
+      or `xxResponseBodyItems` to `xxResult`.
+
+# 3.0.32-rc 2021-01-30
+
+### HuaweiCloud SDK DNS
+
+- _Features_
     - Support `Domain Name Service`.
-- ### Bug Fix
+- _Bug Fix_
     - None
-- ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK ECS
-- ### Features
+### HuaweiCloud SDK ECS
+
+- _Features_
     - None
-- ### Bug Fix
+- _Bug Fix_
     - None
-- ### Change
+- _Change_
     - Change interface name from `UpdateAutoTerminateTimeServer` to `UpdateServerAutoTerminateTime`.
 
-## HuaweiCloud SDK EVS
-- ### Features
+### HuaweiCloud SDK EVS
+
+- _Features_
     - None
-- ### Bug Fix
+- _Bug Fix_
     - None
-- ### Change
-    - Interface `CinderCreateVolume` is supported to specify the id of dedicated storage pool using property `OS-SCH-HNT:scheduler_hints`.
+- _Change_
+    - Interface `CinderCreateVolume` is supported to specify the id of dedicated storage pool using
+      property `OS-SCH-HNT:scheduler_hints`.
     - Modify property type of `allocated` of class `QuotaDetails` from `String` to `Integer`.
 
-## HuaweiCloud SDK IAM
-- ### Features
+### HuaweiCloud SDK IAM
+
+- _Features_
     - None
-- ### Bug Fix
+- _Bug Fix_
     - None
-- ### Change
+- _Change_
     - Increases the property `access_mode` of response class of interface `ShowUser`.
 
+# 3.0.31-rc.1 2021-01-26
 
-## 3.0.31-rc.1 2021-01-26
-## HuaweiCloud SDK CCE
-- ### Features
+### HuaweiCloud SDK CCE
+
+- _Features_
     - None
-- ### Bug Fix
+- _Bug Fix_
     - Modify file `cce_region.py`.
-- ### Change
+- _Change_
     - None
 
+# 3.0.31-rc 2021-01-25
 
-## 3.0.31-rc 2021-01-25
-## HuaweiCloud SDK Core
-- ### Features
+### HuaweiCloud SDK Core
+
+- _Features_
     - None
-- ### Bug Fix
+- _Bug Fix_
     - None
-- ### Change
+- _Change_
     - The default value of `ConnectionTimeout` is set to 60 seconds.
     - The default value of `ReadTimeout` is set to 120 seconds.
 
-## HuaweiCloud SDK BSS
-- ### Features
+### HuaweiCloud SDK BSS
+
+- _Features_
     - Support more interface: ListOrderDiscounts.
-- ### Bug Fix
+- _Bug Fix_
     - None
-- ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK ECS
-- ### Features
+### HuaweiCloud SDK ECS
+
+- _Features_
     - Support more interface: UpdateAutoTerminateTimeServer.
-- ### Bug Fix
+- _Bug Fix_
     - None
-- ### Change
+- _Change_
     - None
 
+# 3.0.30-rc 2021-01-15
 
-## 3.0.30-rc 2021-01-15
-## HuaweiCloud SDK Core
-- ### Features
+### HuaweiCloud SDK Core
+
+- _Features_
     - Support function `value_of` to get region information.
-- ### Bug Fix
+- _Bug Fix_
     - Fix response exception when using temporary AK/SK.
-- ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK IAM
-- ### Features
-    - None
-- ### Bug Fix
-    - None
-- ### Change
-    - Modify the data type of response field `is_domain_owner` from string to boolean of interface `ShowUser` and `CreateUser`.
+### HuaweiCloud SDK IAM
 
-## HuaweiCloud SDK Meeting
-- ### Features
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the data type of response field `is_domain_owner` from string to boolean of interface `ShowUser`
+      and `CreateUser`.
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
     - Support more interface: ShowOrgRes
-- ### Bug Fix
+- _Bug Fix_
     - None
-- ### Change
+- _Change_
     - Interface `CreateMeeting` supports parameter `allowGuestStartConf`.
     - Add response fields of `ShowMeetingDetail`: `appId`, `isAutoInvite`, `isNotOverlayPidName`.
 
-## HuaweiCloud SDK RDS
-- ### Features
-    - Support more interfaces: ShowOffSiteBackupPolicy, SetOffSiteBackupPolicy, ListOffSiteBackups, ListOffSiteRestoreTimes, ListOffSiteRestoreTimes
-- ### Bug Fix
+### HuaweiCloud SDK RDS
+
+- _Features_
+    - Support more interfaces: ShowOffSiteBackupPolicy, SetOffSiteBackupPolicy, ListOffSiteBackups,
+      ListOffSiteRestoreTimes, ListOffSiteRestoreTimes
+- _Bug Fix_
     - None
-- ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK SWR
-- ### Features
+### HuaweiCloud SDK SWR
+
+- _Features_
     - Support `Software Repository for Container` service.
-- ### Bug Fix
+- _Bug Fix_
     - None
-- ### Change
+- _Change_
     - None
 
+# 3.0.29-beta 2020-12-31
 
-## 3.0.29-beta 2020-12-31
-## HuaweiCloud SDK CloudIDE
- - ### Features
+### HuaweiCloud SDK CloudIDE
+
+- _Features_
     - Support more interface: ShowAccountStatus
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK DCS
- - ### Features
+### HuaweiCloud SDK DCS
+
+- _Features_
     - None
- - ### Bug Fix
-    - Modify the interface return data type to prevent deserialization failure: 
+- _Bug Fix_
+    - Modify the interface return data type to prevent deserialization failure:
         - ListSlowlog: change data type of `Tags` from Tag to ResourceTag.
         - ListInstances: change data type of `duration` from int32 to string.
         - ShowBigkeyScanTaskDetails: change data type of `db` from int32 to string.
         - ShowHotkeyTaskDetails: change data type of `db` from int32 to string.
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK DGC
- - ### Features
+### HuaweiCloud SDK DGC
+
+- _Features_
     - Support `Data Lake Governance Center` service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK RDS
- - ### Features
+### HuaweiCloud SDK RDS
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - Interface modification: response type of interface `CreateInstance` adjustment.
 
-## HuaweiCloud SDK SMN
- - ### Features
+### HuaweiCloud SDK SMN
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - Modify the request parameters of interface `PublishMessage` from Object to Map<String, String>
- - ### Change
+- _Change_
     - None
 
+# 3.0.28-beta 2020-12-28
 
-## 3.0.28-beta 2020-12-28
-## HuaweiCloud SDK DCS
- - ### Features
+### HuaweiCloud SDK DCS
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - Change property type of `port` from string to integer.
- - ### Change
+- _Change_
     - None
 
+# 3.0.27-beta 2020-12-25
 
-## 3.0.27-beta 2020-12-25
-## HuaweiCloud SDK DCS
- - ### Features
+### HuaweiCloud SDK DCS
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - Query parameter in interface `ListInstances` modification: id → instance_id.
 
-## HuaweiCloud SDK RMS
- - ### Features
-    - Support more interfaces: `Resources` related interfaces and `Region` related interfaces. 
- - ### Bug Fix
+### HuaweiCloud SDK RMS
+
+- _Features_
+    - Support more interfaces: `Resources` related interfaces and `Region` related interfaces.
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
+# 3.0.26-beta 2020-12-23
 
-## 3.0.26-beta 2020-12-23
-## HuaweiCloud SDK Core
- - ### Features
-    - Support Endpoint Resolver: it's supported to use {Service}Region when initializing {ServiceClient} which can automatically backfill endpoint. After choosing a region, the projectId/domainId will be backfilled automatically.
- - ### Bug Fix
+### HuaweiCloud SDK Core
+
+- _Features_
+    - Support Endpoint Resolver: it's supported to use {Service}Region when initializing {ServiceClient} which can
+      automatically backfill endpoint. After choosing a region, the projectId/domainId will be backfilled automatically.
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK BSS
- - ### Features
+### HuaweiCloud SDK BSS
+
+- _Features_
     - Support more interfaces: ListMeasureUnits.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK CES
- - ### Features
+### HuaweiCloud SDK CES
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - Update interface: ShowMetricData
 
-## HuaweiCloud SDK DLI
- - ### Features
+### HuaweiCloud SDK DLI
+
+- _Features_
     - Support Data Lake Insight service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK Live
- - ### Features
+### HuaweiCloud SDK Live
+
+- _Features_
     - Support more interfaces: ShowStreamPortrait.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK MPC
- - ### Features
+### HuaweiCloud SDK MPC
+
+- _Features_
     - Support more interfaces: QualityEnhanceTemplate related interfaces and MergeChannelsTask related interfaces.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK RDS
- - ### Features
+### HuaweiCloud SDK RDS
+
+- _Features_
     - Support Relational Database Service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK SMN
- - ### Features
+### HuaweiCloud SDK SMN
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - Update field type in message_template_name.
 
+# 3.0.25-beta 2020-12-15
 
-## 3.0.25-beta 2020-12-15
-## HuaweiCloud SDK CCE
- - ### Features
+### HuaweiCloud SDK CCE
+
+- _Features_
     - Support Cloud Container Engine service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK ELB
- - ### Features
+### HuaweiCloud SDK ELB
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - Fix the problem that sending request to interface `CreateListener` returns empty response.
-    - Fix the problem that sending request to interface `CreateListener` returns response with wrong type. 
- - ### Change
+    - Fix the problem that sending request to interface `CreateListener` returns response with wrong type.
+- _Change_
     - None
 
-## HuaweiCloud SDK FunctionGraph
- - ### Features
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
     - Support more interfaces: UpdateFunctionReservedInstances.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK Meeting
- - ### Features
+### HuaweiCloud SDK Meeting
+
+- _Features_
     - Support more interfaces: CreatePortalRefNonce.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
-    - None
-
-## HuaweiCloud SDK NAT
- - ### Features
-    - None
- - ### Bug Fix
-    - Fix the problem that using interface `BatchCreateNatGatewayDnatRules` failed. 
- - ### Change
+- _Change_
     - None
 
+### HuaweiCloud SDK NAT
 
-## 3.0.24-beta 2020-12-04
-## HuaweiCloud SDK SMN
- - ### Features
+- _Features_
+    - None
+- _Bug Fix_
+    - Fix the problem that using interface `BatchCreateNatGatewayDnatRules` failed.
+- _Change_
+    - None
+
+# 3.0.24-beta 2020-12-04
+
+### HuaweiCloud SDK SMN
+
+- _Features_
     - Support Simple Message Notification service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
+# 3.0.23-beta 2020-11-30
 
-## 3.0.23-beta 2020-11-30
-## HuaweiCloud SDK BCS
- - ### Features
+### HuaweiCloud SDK BCS
+
+- _Features_
     - Support BlockChain Service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
-    - None 
+- _Change_
+    - None
 
-## HuaweiCloud SDK BMS
- - ### Features
+### HuaweiCloud SDK BMS
+
+- _Features_
     - Support Bare Metal Server service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK BSS
- - ### Features
+### HuaweiCloud SDK BSS
+
+- _Features_
     - Support more interfaces: ListUsageTypes, ModPeriodToOnDemand.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
-    - None 
+- _Change_
+    - None
 
-## HuaweiCloud SDK CBR
- - ### Features
+### HuaweiCloud SDK CBR
+
+- _Features_
     - Support more interfaces: MigrateVaultResource.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
-    - None
-
-## HuaweiCloud SDK CES
- - ### Features
-    - Support more interfaces: 
-     - ListEvents
-     - ListEventDetail
-     - CreateResourceGroup
-     - UpdateResourceGroup
-     - DeleteResourceGroup
-     - ListResourceGroup
-     - UpdateAlarm
- - ### Bug Fix
-    - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK ECS
- - ### Features
-    - None 
- - ### Bug Fix
+### HuaweiCloud SDK CES
+
+- _Features_
+    - Support more interfaces:
+        - ListEvents
+        - ListEventDetail
+        - CreateResourceGroup
+        - UpdateResourceGroup
+        - DeleteResourceGroup
+        - ListResourceGroup
+        - UpdateAlarm
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
+    - None
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
     - [Issue 21](https://github.com/huaweicloud/huaweicloud-sdk-java-v3/issues/21) Open related interface.
 
-## HuaweiCloud SDK IAM
- - ### Features
+### HuaweiCloud SDK IAM
+
+- _Features_
     - Support more interfaces.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK Live
- - ### Features
+### HuaweiCloud SDK Live
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - Name of service client modification: LiveAPIClient → LiveClient.
 
-## HuaweiCloud SDK Meeting
- - ### Features
+### HuaweiCloud SDK Meeting
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - Property of interface `CreateMeeting` adjustment: increase property `callInRestriction`.
     - Property of interface `EditMeeting` adjustment: increase property `callInRestriction`.
 
+# 3.0.22-beta 2020-11-17
 
-## 3.0.22-beta 2020-11-17
-## HuaweiCloud SDK DMS
- - ### Features
-    - None
- - ### Bug Fix
-    - None
- - ### Change
-    - Type of property adjustment: type of property `created` and type of `eff_date` are changed from `string` to `integer64`.  
+### HuaweiCloud SDK DMS
 
-## HuaweiCloud SDK ECS
- - ### Features
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
-    - Property adjustment:  increase property `dry_run` in interfaces `CreatePostPaidServers` and `CreateServers` which means whether parameters will be checked before sending real requests. 
+- _Change_
+    - Type of property adjustment: type of property `created` and type of `eff_date` are changed from `string`
+      to `integer64`.
 
-## HuaweiCloud SDK NAT
- - ### Features
+### HuaweiCloud SDK ECS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Property adjustment:  increase property `dry_run` in interfaces `CreatePostPaidServers` and `CreateServers` which
+      means whether parameters will be checked before sending real requests.
+
+### HuaweiCloud SDK NAT
+
+- _Features_
     - Support NAT Gateway service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
-    - None 
+- _Change_
+    - None
 
-## HuaweiCloud SDK Kafka
- - ### Features
+### HuaweiCloud SDK Kafka
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - Name of interface adjustment: UpdateInstanceCrossVPCIP → UpdateInstanceCrossVpcIp
 
-## HuaweiCloud SDK RMS
- - ### Features
+### HuaweiCloud SDK RMS
+
+- _Features_
     - Support Resource Manager Service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
-    - None 
-
-## HuaweiCloud SDK VPC
- - ### Features
-    - Support more interfaces: interfaces related to Network ACLs. 
- - ### Bug Fix
-    - None
- - ### Change
+- _Change_
     - None
 
+### HuaweiCloud SDK VPC
 
-## 3.0.21-beta 2020-11-11
-## HuaweiCloud SDK Core
- - ### Features
+- _Features_
+    - Support more interfaces: interfaces related to Network ACLs.
+- _Bug Fix_
     - None
- - ### Bug Fix
+- _Change_
+    - None
+
+# 3.0.21-beta 2020-11-11
+
+### HuaweiCloud SDK Core
+
+- _Features_
+    - None
+- _Bug Fix_
     - Fix the problem of parameter conversion error when special characters exclude `-` and `_` are in query paramters.
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK CBR
- - ### Features
+### HuaweiCloud SDK CBR
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - Interface adjustment: property `object_type` in interface `CreateVault` support key `turbo`.
     - Interface adjustment: property `description` in interface `UpdatePolicy` is removed.
 
-## HuaweiCloud SDK CES
- - ### Features
+### HuaweiCloud SDK CES
+
+- _Features_
     - Add examples of interface response and adjust some filed description.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK CloudPipeline
- - ### Features
-    - None
- - ### Bug Fix
-    - None
- - ### Change
-    - Modify the name of generated Client class: devcloudpipeline_client → cloudpipeline_client, devcloudpipeline_async_client → cloudpipeline_async_client
+### HuaweiCloud SDK CloudPipeline
 
-## HuaweiCloud SDK DevStar
- - ### Features
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
+    - Modify the name of generated Client class: devcloudpipeline_client → cloudpipeline_client,
+      devcloudpipeline_async_client → cloudpipeline_async_client
+
+### HuaweiCloud SDK DevStar
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
     - Modify interface parameters and adjust sample code.
 
+# 3.0.20-beta 2020-11-02
 
-## 3.0.20-beta 2020-11-02
-## HuaweiCloud SDK CES
- - ### Features
+### HuaweiCloud SDK CES
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - Interface adjustment: property `alarm_type` in class `CreateAlarmRequestBody` support key `RESOURCE_GROUP`.
-    - Interface adjustment: property `meta_data` in class `ListAlarmHistoriesResponse` only returns total number of alarm histories.
+    - Interface adjustment: property `meta_data` in class `ListAlarmHistoriesResponse` only returns total number of
+      alarm histories.
 
-## HuaweiCloud SDK ELB
- - ### Features
+### HuaweiCloud SDK ELB
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - Modify wrong parameter in class `CreateL7ruleRequestBody`.
- - ### Change
+- _Change_
     - None
 
+# 3.0.19-beta 2020-10-31
 
-## 3.0.19-beta 2020-10-31
-## HuaweiCloud SDK CBR
- - ### Features
+### HuaweiCloud SDK CBR
+
+- _Features_
     - Support more interfaces: interfaces related to `TAG`.
- - ### Bug Fix
-    - [Issue 17](https://github.com/huaweicloud/huaweicloud-sdk-java-v3/issues/17) fix the problem of interface: ListBackups.
- - ### Change
+- _Bug Fix_
+    - [Issue 17](https://github.com/huaweicloud/huaweicloud-sdk-java-v3/issues/17) fix the problem of interface:
+      ListBackups.
+- _Change_
     - None
 
-## HuaweiCloud SDK CTS
- - ### Features
+### HuaweiCloud SDK CTS
+
+- _Features_
     - Support more interface: ListQuotas
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK EPS
- - ### Features
+### HuaweiCloud SDK EPS
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - Adjust interfaces' names, replace abbreviations of `EP` with `EnterpriseProject`, the involved interfaces are:
-     1. ListEP → ListEnterpriseProject
-     2. CreateEP → CreateEnterpriseProject
-     3. ShowEP → ShowEnterpriseProject
-     4. ModifyEP → ModifyEnterpriseProject
-     5. EnableEP → EnableEnterpriseProject
-     6. ShowEPQuota → ShowEnterpriseProjectQuota
-     7. ShowResourceBindEP → ShowResourceBindEnterpriseProject
-     8. DisableEP → DisableEnterpriseProject
+        1. ListEP → ListEnterpriseProject
+        2. CreateEP → CreateEnterpriseProject
+        3. ShowEP → ShowEnterpriseProject
+        4. ModifyEP → ModifyEnterpriseProject
+        5. EnableEP → EnableEnterpriseProject
+        6. ShowEPQuota → ShowEnterpriseProjectQuota
+        7. ShowResourceBindEP → ShowResourceBindEnterpriseProject
+        8. DisableEP → DisableEnterpriseProject
 
-## HuaweiCloud SDK FunctionGraph
- - ### Features
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
     - Support more interfaces: UpdateTrigger, ListFunctionStatistics, ListStatistics, ListQuotas
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK Iam
- - ### Features
+### HuaweiCloud SDK IAM
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - Adjust interfaces' names, the involved interfaces are:
-     1. KeystoneCreateUserTokenByPasswordAndMFA → KeystoneCreateUserTokenByPasswordAndMfa
-     2. CreateUnscopeTokenByIDPInitiated → CreateUnscopeTokenByIdpInitiated
+        1. KeystoneCreateUserTokenByPasswordAndMFA → KeystoneCreateUserTokenByPasswordAndMfa
+        2. CreateUnscopeTokenByIDPInitiated → CreateUnscopeTokenByIdpInitiated
 
-## HuaweiCloud SDK ProjectMan
- - ### Features
-    - Support more interfaces: iteration information, user information, project members, project information, project indicators, project statistics, etc.
- - ### Bug Fix
+### HuaweiCloud SDK ProjectMan
+
+- _Features_
+    - Support more interfaces: iteration information, user information, project members, project information, project
+      indicators, project statistics, etc.
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
+# 3.0.18-beta 2020-10-20
 
-## 3.0.18-beta 2020-10-20
-## HuaweiCloud SDK DCS
- - ### Features
+### HuaweiCloud SDK DCS
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - Remove redundant `Dcs` in interfaces.
 
-## HuaweiCloud SDK ELB
- - ### Features
+### HuaweiCloud SDK ELB
+
+- _Features_
     - Support more interfaces of version v2.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK IoTDA
- - ### Features
+### HuaweiCloud SDK IoTDA
+
+- _Features_
     - Support more interfaces related to rules.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK Meeting
- - ### Features
+### HuaweiCloud SDK Meeting
+
+- _Features_
     - Support more interfaces.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
+# 3.0.17-beta 2020-10-14
 
-## 3.0.17-beta 2020-10-14
-## HuaweiCloud SDK BSS
- - ### Features
+### HuaweiCloud SDK BSS
+
+- _Features_
     - Partner center supports exporting product catalog prices.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK DCS
- - ### Features
+### HuaweiCloud SDK DCS
+
+- _Features_
     - Support more interfaces.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK Live
- - ### Features
+### HuaweiCloud SDK Live
+
+- _Features_
     - Support more interfaces of version v2 of Live.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
+# 3.0.16-beta 2020-10-12
 
-## 3.0.16-beta 2020-10-12
-## HuaweiCloud SDK CTS
- - ### Features
+### HuaweiCloud SDK CTS
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - Delete deprecated interfaces of version v1.
 
-## HuaweiCloud SDK DevStar
- - ### Features
+### HuaweiCloud SDK DevStar
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - Modify the credential type of DevStarClient: the correct credential type is GlobalCredentials.
- - ### Change
+- _Change_
     - None
 
+# 3.0.15-beta 2020-09-30
 
-## 3.0.15-beta 2020-09-30
-## HuaweiCloud SDK ELB
- - ### Features
+### HuaweiCloud SDK ELB
+
+- _Features_
     - Support Elastic Load Balance service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK EIP
- - ### Features
+### HuaweiCloud SDK EIP
+
+- _Features_
     - Support Elastic IP service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
+# 3.0.14-beta 2020-09-24
 
-## 3.0.14-beta 2020-09-24
-## HuaweiCloud SDK BSS
- - ### Features
+### HuaweiCloud SDK BSS
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - Fix the problem that the class `BssClient` cannot be loaded.
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK TestHub
- - ### Features
-    - None
- - ### Bug Fix
-    - None
- - ### Change
-    - The original service name `TestHub` has been changed to `CloudTest`, because `TestHub` couldn't be published in SDK Center successfully. 
+### HuaweiCloud SDK TestHub
 
-
-## 3.0.13-beta 2020-09-16
-## HuaweiCloud SDK ECS
- - ### Features
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
+    - None
+- _Change_
+    - The original service name `TestHub` has been changed to `CloudTest`, because `TestHub` couldn't be published in
+      SDK Center successfully.
+
+# 3.0.13-beta 2020-09-16
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+    - None
+- _Bug Fix_
     - Fix parameter type of interfaces.
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK BSS
- - ### Features
+### HuaweiCloud SDK BSS
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - Update interfaces.
 
-## HuaweiCloud SDK Live
- - ### Features
+### HuaweiCloud SDK Live
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - Adjust descriptions of banned interface.
 
+# 3.0.12-beta 2020-09-11
 
-## 3.0.12-beta 2020-09-11
-## HuaweiCloud SDK Meeting
- - ### Features
+### HuaweiCloud SDK Meeting
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - Fix failed to create credentials
- - ### Change
+- _Change_
     - None
 
 # 3.0.11-beta 2020-09-09
-## HuaweiCloud SDK DMS
- - ### Features
-    - Support Distributed Message Services, provide Kafka premium instances and RabbitMQ premium instances with dedicated resources.
- - ### Bug Fix
+
+### HuaweiCloud SDK DMS
+
+- _Features_
+    - Support Distributed Message Services, provide Kafka premium instances and RabbitMQ premium instances with
+      dedicated resources.
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK Meeting
- - ### Features
+### HuaweiCloud SDK Meeting
+
+- _Features_
     - Support more APIs: Meeting Control / Meeting Management.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK VPC
- - ### Features
+### HuaweiCloud SDK VPC
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - Fix the problem that security group related interfaces have wrong data type.
- - ### Change
+- _Change_
     - None
-
 
 # 3.0.10-beta 2020-09-04
-## HuaweiCloud SDK Core 
- - ### Features
+
+### HuaweiCloud SDK Core
+
+- _Features_
     - None
- - ### Bug Fix
-    - Fix the problem that the enumeration code cannot be generated for integer enumeration parameters without format defined in yaml.
- - ### Change
+- _Bug Fix_
+    - Fix the problem that the enumeration code cannot be generated for integer enumeration parameters without format
+      defined in yaml.
+- _Change_
     - Modify User Agent of Http Request header.
 
-
 # 3.0.9-beta 2020-08-28
-## HuaweiCloud SDK Core
- - ### Features
+
+### HuaweiCloud SDK Core
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - Solve the problem of losing innermost type when data types are nested in multiple layers.
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK BSS
- - ### Features
+### HuaweiCloud SDK BSS
+
+- _Features_
     - Support Business Support System service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK CloudPipeline
- - ### Features
+### HuaweiCloud SDK CloudPipeline
+
+- _Features_
     - Support CloudPipeline service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK FunctionGraph
- - ### Features
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - Modify service name, change abbreviation FGS to full name FunctionGraph.
 
-## HuaweiCloud SDK IAM
- - ### Features
+### HuaweiCloud SDK IAM
+
+- _Features_
     - Support more APIs: consistency of console related APIs.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK IoTDA
- - ### Features
+### HuaweiCloud SDK IoTDA
+
+- _Features_
     - Support more APIs: batch operation related APIs and asynchronous related APIs.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK Meeting
- - ### Features
+### HuaweiCloud SDK Meeting
+
+- _Features_
     - Support more APIs: meeting minutes related APIs.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
-    
-## HuaweiCloud SDK ProjectMan
- - ### Features
+
+### HuaweiCloud SDK ProjectMan
+
+- _Features_
     - Support Project Management service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK VPC
- - ### Features
+### HuaweiCloud SDK VPC
+
+- _Features_
     - Support more APIs: security group, security group rules, available IP count related APIs.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
-
 
 # 3.0.8-beta 2020-8-14
-## HuaweiCloud SDK Core
- - ### Features
+
+### HuaweiCloud SDK Core
+
+- _Features_
     - Support temporary AK/SK authentication mode.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK APIG
- - ### Features
+### HuaweiCloud SDK APIG
+
+- _Features_
     - Support API Gateway service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK CloudIDE
- - ### Features
+### HuaweiCloud SDK CloudIDE
+
+- _Features_
     - Support Cloud IDE service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK KMS
- - ### Features
+### HuaweiCloud SDK KMS
+
+- _Features_
     - Support Key Management Service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK Live
- - ### Features
+### HuaweiCloud SDK Live
+
+- _Features_
     - Support Live Service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK MPC
- - ### Features
+### HuaweiCloud SDK MPC
+
+- _Features_
     - Support Media Processing Center.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK ServiceStage
- - ### Features
+### HuaweiCloud SDK ServiceStage
+
+- _Features_
     - Support ServiceStage.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
+# 3.0.7-beta 2020-07-30
 
-# __3.0.7-beta__ __2020-07-30__
-## __HuaweiCloud SDK CBR__
- - ### Features
+### HuaweiCloud SDK CBR
+
+- _Features_
     - Support Cloud Backup and Recovery Service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## __HuaweiCloud SDK ECS__
- - ### Features
+### HuaweiCloud SDK ECS
+
+- _Features_
     - Publish new interfaces, such as ChangeServerOs and ResetServerPassword.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## __HuaweiCloud SDK VPC__
- - ### Features
+### HuaweiCloud SDK VPC
+
+- _Features_
     - Support interfaces of version v3.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
+# 3.0.6-beta 2020-07-15
 
-# __3.0.6-beta__ __2020-07-15__
-## __HuaweiCloud SDK Core__
- - ### Features
+### HuaweiCloud SDK Core
+
+- _Features_
     - Support file upload and download.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
-## __Example__
- - ### Features
+## Example
+
+- _Features_
     - None
- - ### Bug Fix
+- _Bug Fix_
     - [Issue #1](https://github.com/huaweicloud/huaweicloud-sdk-python-v3/issues/1): Fix test vpc example.
- - ### Change
+- _Change_
     - None
 
-## __HuaweiCloud SDK IAM__
-  - ### Features
+### HuaweiCloud SDK IAM
+
+- _Features_
     - None
-  - ### Bug Fix
+- _Bug Fix_
     - Fix parsing failure of response body of interface keystoneListVersions.
-  - ### Change
+- _Change_
     - None
- 
- ## __HuaweiCloud SDK IoTDA__
-  - ### Features
-     - None
-  - ### Bug Fix
-     - None
-  - ### Change
-     - Support related interfaces of application management.
-    
-## __HuaweiCloud SDK Meeting__
-  - ### Features
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Support related interfaces of application management.
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
     - Support cloud meeting management and control services.
-  - ### Bug Fix
+- _Bug Fix_
     - None
-  - ### Change
+- _Change_
     - None
 
-## __HuaweiCloud SDK EPS__
- - ### Features
+### HuaweiCloud SDK EPS
+
+- _Features_
     - Support Enterprise Project Management Service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
-    - None
-
-## __HuaweiCloud SDK EVS__
- - ### Features
-    - None
- - ### Bug Fix
-    - [Issue #3](https://github.com/huaweicloud/huaweicloud-sdk-java-v3/issues/3): Fix call error of interface ShowVolume.
- - ### Change
+- _Change_
     - None
 
-## HuaweiCloud SDK TMS
- - ### Features
+### HuaweiCloud SDK EVS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - [Issue #3](https://github.com/huaweicloud/huaweicloud-sdk-java-v3/issues/3): Fix call error of interface
+      ShowVolume.
+- _Change_
+    - None
+
+### HuaweiCloud SDK TMS
+
+- _Features_
     - Support Tag Management Service.
- - ### Bug Fix
+- _Bug Fix_
     - None
- - ### Change
+- _Change_
     - None
 
+# 3.0.5-beta 2020-6-30
 
-# __3.0.5-beta__ __2020-6-30__
-## __HuaweiCloud SDK Core__
-  - ### Features
-    - None
-  - ### Bug Fix
-    - None
-  - ### Change
-    - Use with_http_handler to replace with_enable_http_log to support users to customize the request log output in the troubleshooting scenario.
+### HuaweiCloud SDK Core
 
-## __HuaweiCloud SDK CTS__
-  - ### Features
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Use with_http_handler to replace with_enable_http_log to support users to customize the request log output in the
+      troubleshooting scenario.
+
+### HuaweiCloud SDK CTS
+
+- _Features_
     - Support Cloud Trace Service.
-  - ### Bug Fix
+- _Bug Fix_
     - None
-  - ### Change
+- _Change_
     - None
-    
-## __HuaweiCloud SDK EVS__
-  - ### Features
+
+### HuaweiCloud SDK EVS
+
+- _Features_
     - None
-  - ### Bug Fix
+- _Bug Fix_
     - None
-  - ### Change
+- _Change_
     - Support full service interface.
 
-## __HuaweiCloud SDK IoTDA__
-  - ### Features
+### HuaweiCloud SDK IoTDA
+
+- _Features_
     - Support IoT Device Access Service.
-  - ### Bug Fix
+- _Bug Fix_
     - None
-  - ### Change
+- _Change_
     - None
 
+# 3.0.3-beta 2020-06-15
 
-# __3.0.3-beta__ __2020-06-15__
-## __HuaweiCloud SDK Core__
-  - ### Features
+### HuaweiCloud SDK Core
+
+- _Features_
     - Support async client.
     - Support logs.
     - Support enable http logs for troubleshooting.
-  - ### Bug Fix
+- _Bug Fix_
     - None
-  - ### Change
+- _Change_
     - None

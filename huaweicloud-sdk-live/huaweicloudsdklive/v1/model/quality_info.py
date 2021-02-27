@@ -52,7 +52,7 @@ class QualityInfo:
         'gop': 'gop'
     }
 
-    def __init__(self, template_name=None, quality=None, pvc='on', hdlb='off', codec='H264', width=None, height=None, bitrate=None, video_frame_rate=None, protocol='RTMP', i_frame_interval=None, gop=None):
+    def __init__(self, template_name=None, quality=None, pvc='on', hdlb='off', codec='H264', width=None, height=None, bitrate=None, video_frame_rate=0, protocol='RTMP', i_frame_interval=0, gop=0):
         """QualityInfo - a model defined in huaweicloud sdk"""
         
         

@@ -63,7 +63,7 @@ class NewCustomerV2:
     def customer_name(self):
         """Gets the customer_name of this NewCustomerV2.
 
-        |参数名称：客户主账号登录名。| |参数约束及描述：客户主账号登录名。|
+        企业子账号登录名。
 
         :return: The customer_name of this NewCustomerV2.
         :rtype: str
@@ -74,7 +74,7 @@ class NewCustomerV2:
     def customer_name(self, customer_name):
         """Sets the customer_name of this NewCustomerV2.
 
-        |参数名称：客户主账号登录名。| |参数约束及描述：客户主账号登录名。|
+        企业子账号登录名。
 
         :param customer_name: The customer_name of this NewCustomerV2.
         :type: str
@@ -85,7 +85,7 @@ class NewCustomerV2:
     def mobile_phone(self):
         """Gets the mobile_phone of this NewCustomerV2.
 
-        |参数名称：管理员手机号码。如果usePriMobilePhone为Y，则这个参数无效，否则必选。| |参数约束及描述：管理员手机号码。如果usePriMobilePhone为Y，则这个参数无效，否则必选。|
+        企业管理员的手机号码。如果use_pri_mobile_phone取值为Y，则这个参数无效，否则必选。
 
         :return: The mobile_phone of this NewCustomerV2.
         :rtype: str
@@ -96,7 +96,7 @@ class NewCustomerV2:
     def mobile_phone(self, mobile_phone):
         """Sets the mobile_phone of this NewCustomerV2.
 
-        |参数名称：管理员手机号码。如果usePriMobilePhone为Y，则这个参数无效，否则必选。| |参数约束及描述：管理员手机号码。如果usePriMobilePhone为Y，则这个参数无效，否则必选。|
+        企业管理员的手机号码。如果use_pri_mobile_phone取值为Y，则这个参数无效，否则必选。
 
         :param mobile_phone: The mobile_phone of this NewCustomerV2.
         :type: str
@@ -107,7 +107,7 @@ class NewCustomerV2:
     def use_pri_mobile_phone(self):
         """Gets the use_pri_mobile_phone of this NewCustomerV2.
 
-        |参数名称：是否使用企业主账号手机号码作为子账号手机号码：Y：是；N：否（默认值）。注：当为Y时，mobilePhone输入无效。| |参数约束及描述：是否使用企业主账号手机号码作为子账号手机号码：Y：是；N：否（默认值）。注：当为Y时，mobilePhone输入无效。|
+        是否使用企业主账号手机号码作为子账号手机号码： Y：是N：否（默认值） 当为Y时，mobile_phone输入无效。
 
         :return: The use_pri_mobile_phone of this NewCustomerV2.
         :rtype: str
@@ -118,7 +118,7 @@ class NewCustomerV2:
     def use_pri_mobile_phone(self, use_pri_mobile_phone):
         """Sets the use_pri_mobile_phone of this NewCustomerV2.
 
-        |参数名称：是否使用企业主账号手机号码作为子账号手机号码：Y：是；N：否（默认值）。注：当为Y时，mobilePhone输入无效。| |参数约束及描述：是否使用企业主账号手机号码作为子账号手机号码：Y：是；N：否（默认值）。注：当为Y时，mobilePhone输入无效。|
+        是否使用企业主账号手机号码作为子账号手机号码： Y：是N：否（默认值） 当为Y时，mobile_phone输入无效。
 
         :param use_pri_mobile_phone: The use_pri_mobile_phone of this NewCustomerV2.
         :type: str
@@ -129,7 +129,7 @@ class NewCustomerV2:
     def password(self):
         """Gets the password of this NewCustomerV2.
 
-        |参数名称：客户登录密码。注：usePriMobilePhone为Y时才支持| |参数约束及描述：客户登录密码。注：usePriMobilePhone为Y时才支持|
+        企业子账号的登录密码。
 
         :return: The password of this NewCustomerV2.
         :rtype: str
@@ -140,7 +140,7 @@ class NewCustomerV2:
     def password(self, password):
         """Sets the password of this NewCustomerV2.
 
-        |参数名称：客户登录密码。注：usePriMobilePhone为Y时才支持| |参数约束及描述：客户登录密码。注：usePriMobilePhone为Y时才支持|
+        企业子账号的登录密码。
 
         :param password: The password of this NewCustomerV2.
         :type: str
@@ -151,7 +151,7 @@ class NewCustomerV2:
     def verification_code(self):
         """Gets the verification_code of this NewCustomerV2.
 
-        |参数名称：验证码，只有输入企业子客户的手机号邮箱的情况下，才需要填写该字段| |参数约束及描述：验证码，只有输入企业子客户的手机号邮箱的情况下，才需要填写该字段|
+        验证码，只有输入企业子账号的手机号的情况下，才需要填写该字段。 具体请参见发送短信验证码。
 
         :return: The verification_code of this NewCustomerV2.
         :rtype: str
@@ -162,7 +162,7 @@ class NewCustomerV2:
     def verification_code(self, verification_code):
         """Sets the verification_code of this NewCustomerV2.
 
-        |参数名称：验证码，只有输入企业子客户的手机号邮箱的情况下，才需要填写该字段| |参数约束及描述：验证码，只有输入企业子客户的手机号邮箱的情况下，才需要填写该字段|
+        验证码，只有输入企业子账号的手机号的情况下，才需要填写该字段。 具体请参见发送短信验证码。
 
         :param verification_code: The verification_code of this NewCustomerV2.
         :type: str

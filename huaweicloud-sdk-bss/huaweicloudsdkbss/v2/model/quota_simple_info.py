@@ -48,7 +48,7 @@ class QuotaSimpleInfo:
     def id(self):
         """Gets the id of this QuotaSimpleInfo.
 
-        |参数名称：批量发放成功客户ID。| |参数约束及描述：批量发放成功客户ID。|
+        精英服务商ID。
 
         :return: The id of this QuotaSimpleInfo.
         :rtype: str
@@ -59,7 +59,7 @@ class QuotaSimpleInfo:
     def id(self, id):
         """Sets the id of this QuotaSimpleInfo.
 
-        |参数名称：批量发放成功客户ID。| |参数约束及描述：批量发放成功客户ID。|
+        精英服务商ID。
 
         :param id: The id of this QuotaSimpleInfo.
         :type: str
@@ -70,7 +70,7 @@ class QuotaSimpleInfo:
     def quota_id(self):
         """Gets the quota_id of this QuotaSimpleInfo.
 
-        |参数名称：发放成功的券ID| |参数约束及描述：发放成功的券ID|
+        分配给精英服务商的代金券额度ID。
 
         :return: The quota_id of this QuotaSimpleInfo.
         :rtype: str
@@ -81,7 +81,7 @@ class QuotaSimpleInfo:
     def quota_id(self, quota_id):
         """Sets the quota_id of this QuotaSimpleInfo.
 
-        |参数名称：发放成功的券ID| |参数约束及描述：发放成功的券ID|
+        分配给精英服务商的代金券额度ID。
 
         :param quota_id: The quota_id of this QuotaSimpleInfo.
         :type: str

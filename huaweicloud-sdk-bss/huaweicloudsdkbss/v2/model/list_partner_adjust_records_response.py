@@ -50,7 +50,7 @@ class ListPartnerAdjustRecordsResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListPartnerAdjustRecordsResponse.
 
-        |参数名称：返回总条数。| |参数的约束及描述：返回总条数。|
+        返回总条数。
 
         :return: The total_count of this ListPartnerAdjustRecordsResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ListPartnerAdjustRecordsResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListPartnerAdjustRecordsResponse.
 
-        |参数名称：返回总条数。| |参数的约束及描述：返回总条数。|
+        返回总条数。
 
         :param total_count: The total_count of this ListPartnerAdjustRecordsResponse.
         :type: int
@@ -72,7 +72,7 @@ class ListPartnerAdjustRecordsResponse(SdkResponse):
     def records(self):
         """Gets the records of this ListPartnerAdjustRecordsResponse.
 
-        |参数名称：调账记录列表。具体请参见表 AdjustRecordV2。| |参数约束以及描述：调账记录列表。具体请参见表 AdjustRecordV2。|
+        调账记录列表。 具体请参见表2。
 
         :return: The records of this ListPartnerAdjustRecordsResponse.
         :rtype: list[AdjustRecordV2]
@@ -83,7 +83,7 @@ class ListPartnerAdjustRecordsResponse(SdkResponse):
     def records(self, records):
         """Sets the records of this ListPartnerAdjustRecordsResponse.
 
-        |参数名称：调账记录列表。具体请参见表 AdjustRecordV2。| |参数约束以及描述：调账记录列表。具体请参见表 AdjustRecordV2。|
+        调账记录列表。 具体请参见表2。
 
         :param records: The records of this ListPartnerAdjustRecordsResponse.
         :type: list[AdjustRecordV2]

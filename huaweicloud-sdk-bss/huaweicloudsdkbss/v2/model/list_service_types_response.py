@@ -45,7 +45,7 @@ class ListServiceTypesResponse(SdkResponse):
     def service_types(self):
         """Gets the service_types of this ListServiceTypesResponse.
 
-        |参数名称：返回数据| |参数约束以及描述：返回数据|
+        返回的云服务类型信息，具体参见表3。
 
         :return: The service_types of this ListServiceTypesResponse.
         :rtype: list[ServiceType]
@@ -56,7 +56,7 @@ class ListServiceTypesResponse(SdkResponse):
     def service_types(self, service_types):
         """Sets the service_types of this ListServiceTypesResponse.
 
-        |参数名称：返回数据| |参数约束以及描述：返回数据|
+        返回的云服务类型信息，具体参见表3。
 
         :param service_types: The service_types of this ListServiceTypesResponse.
         :type: list[ServiceType]

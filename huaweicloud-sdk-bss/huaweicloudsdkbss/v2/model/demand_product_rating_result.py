@@ -75,7 +75,7 @@ class DemandProductRatingResult:
     def id(self):
         """Gets the id of this DemandProductRatingResult.
 
-        |参数名称：ID标识| |参数约束及描述：同一次询价中不能重复，用于标识返回询价结果和请求的映射关系|
+        同一次询价中不能重复，用于标识返回询价结果和请求的映射关系。
 
         :return: The id of this DemandProductRatingResult.
         :rtype: str
@@ -86,7 +86,7 @@ class DemandProductRatingResult:
     def id(self, id):
         """Sets the id of this DemandProductRatingResult.
 
-        |参数名称：ID标识| |参数约束及描述：同一次询价中不能重复，用于标识返回询价结果和请求的映射关系|
+        同一次询价中不能重复，用于标识返回询价结果和请求的映射关系。
 
         :param id: The id of this DemandProductRatingResult.
         :type: str
@@ -97,7 +97,7 @@ class DemandProductRatingResult:
     def product_id(self):
         """Gets the product_id of this DemandProductRatingResult.
 
-        |参数名称：寻到的产品ID| |参数约束及描述：寻到的产品ID|
+        按需产品的ID。
 
         :return: The product_id of this DemandProductRatingResult.
         :rtype: str
@@ -108,7 +108,7 @@ class DemandProductRatingResult:
     def product_id(self, product_id):
         """Sets the product_id of this DemandProductRatingResult.
 
-        |参数名称：寻到的产品ID| |参数约束及描述：寻到的产品ID|
+        按需产品的ID。
 
         :param product_id: The product_id of this DemandProductRatingResult.
         :type: str
@@ -119,7 +119,7 @@ class DemandProductRatingResult:
     def amount(self):
         """Gets the amount of this DemandProductRatingResult.
 
-        |参数名称：总额| |参数约束及描述：即最终优惠的金额|
+        折扣的金额。
 
         :return: The amount of this DemandProductRatingResult.
         :rtype: float
@@ -130,7 +130,7 @@ class DemandProductRatingResult:
     def amount(self, amount):
         """Sets the amount of this DemandProductRatingResult.
 
-        |参数名称：总额| |参数约束及描述：即最终优惠的金额|
+        折扣的金额。
 
         :param amount: The amount of this DemandProductRatingResult.
         :type: float
@@ -141,7 +141,7 @@ class DemandProductRatingResult:
     def discount_amount(self):
         """Gets the discount_amount of this DemandProductRatingResult.
 
-        |参数名称：优惠额（官网价和总价的差）| |参数约束及描述：优惠额（官网价和总价的差）|
+        优惠额（官网价和总价的差）。
 
         :return: The discount_amount of this DemandProductRatingResult.
         :rtype: float
@@ -152,7 +152,7 @@ class DemandProductRatingResult:
     def discount_amount(self, discount_amount):
         """Sets the discount_amount of this DemandProductRatingResult.
 
-        |参数名称：优惠额（官网价和总价的差）| |参数约束及描述：优惠额（官网价和总价的差）|
+        优惠额（官网价和总价的差）。
 
         :param discount_amount: The discount_amount of this DemandProductRatingResult.
         :type: float
@@ -163,7 +163,7 @@ class DemandProductRatingResult:
     def official_website_amount(self):
         """Gets the official_website_amount of this DemandProductRatingResult.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        按需产品的官网价。
 
         :return: The official_website_amount of this DemandProductRatingResult.
         :rtype: float
@@ -174,7 +174,7 @@ class DemandProductRatingResult:
     def official_website_amount(self, official_website_amount):
         """Sets the official_website_amount of this DemandProductRatingResult.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        按需产品的官网价。
 
         :param official_website_amount: The official_website_amount of this DemandProductRatingResult.
         :type: float
@@ -185,7 +185,7 @@ class DemandProductRatingResult:
     def measure_id(self):
         """Gets the measure_id of this DemandProductRatingResult.
 
-        |参数名称：度量单位标识| |参数约束及描述：1：元|
+        度量单位标识。 1：元
 
         :return: The measure_id of this DemandProductRatingResult.
         :rtype: int
@@ -196,7 +196,7 @@ class DemandProductRatingResult:
     def measure_id(self, measure_id):
         """Sets the measure_id of this DemandProductRatingResult.
 
-        |参数名称：度量单位标识| |参数约束及描述：1：元|
+        度量单位标识。 1：元
 
         :param measure_id: The measure_id of this DemandProductRatingResult.
         :type: int
@@ -207,7 +207,7 @@ class DemandProductRatingResult:
     def discount_rating_results(self):
         """Gets the discount_rating_results of this DemandProductRatingResult.
 
-        |参数名称：折扣优惠明细| |参数的约束及描述：包含产品本身的促销信息，同时包含商务或者伙伴折扣的优惠信息|
+        折扣优惠明细，包含产品本身的促销信息，同时包含商务或者伙伴折扣的优惠信息，具体参见表3。
 
         :return: The discount_rating_results of this DemandProductRatingResult.
         :rtype: list[DemandDiscountRatingResult]
@@ -218,7 +218,7 @@ class DemandProductRatingResult:
     def discount_rating_results(self, discount_rating_results):
         """Sets the discount_rating_results of this DemandProductRatingResult.
 
-        |参数名称：折扣优惠明细| |参数的约束及描述：包含产品本身的促销信息，同时包含商务或者伙伴折扣的优惠信息|
+        折扣优惠明细，包含产品本身的促销信息，同时包含商务或者伙伴折扣的优惠信息，具体参见表3。
 
         :param discount_rating_results: The discount_rating_results of this DemandProductRatingResult.
         :type: list[DemandDiscountRatingResult]

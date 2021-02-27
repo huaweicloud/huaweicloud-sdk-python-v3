@@ -50,7 +50,7 @@ class ShowMultiAccountTransferAmountResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ShowMultiAccountTransferAmountResponse.
 
-        |参数名称：记录条数。| |参数的约束及描述：记录条数。|
+        记录条数。
 
         :return: The total_count of this ShowMultiAccountTransferAmountResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ShowMultiAccountTransferAmountResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ShowMultiAccountTransferAmountResponse.
 
-        |参数名称：记录条数。| |参数的约束及描述：记录条数。|
+        记录条数。
 
         :param total_count: The total_count of this ShowMultiAccountTransferAmountResponse.
         :type: int
@@ -72,7 +72,7 @@ class ShowMultiAccountTransferAmountResponse(SdkResponse):
     def amount_infos(self):
         """Gets the amount_infos of this ShowMultiAccountTransferAmountResponse.
 
-        |参数名称：可拨款余额信息，如果是余额账户，只会有一条记录。具体请参见表 TransferAmountInfoV2。| |参数约束以及描述：可拨款余额信息，如果是余额账户，只会有一条记录。具体请参见表 TransferAmountInfoV2。|
+        可拨款余额信息，如果是余额账户，只会有一条记录。 具体请参见表2。
 
         :return: The amount_infos of this ShowMultiAccountTransferAmountResponse.
         :rtype: list[TransferAmountInfoV2]
@@ -83,7 +83,7 @@ class ShowMultiAccountTransferAmountResponse(SdkResponse):
     def amount_infos(self, amount_infos):
         """Sets the amount_infos of this ShowMultiAccountTransferAmountResponse.
 
-        |参数名称：可拨款余额信息，如果是余额账户，只会有一条记录。具体请参见表 TransferAmountInfoV2。| |参数约束以及描述：可拨款余额信息，如果是余额账户，只会有一条记录。具体请参见表 TransferAmountInfoV2。|
+        可拨款余额信息，如果是余额账户，只会有一条记录。 具体请参见表2。
 
         :param amount_infos: The amount_infos of this ShowMultiAccountTransferAmountResponse.
         :type: list[TransferAmountInfoV2]

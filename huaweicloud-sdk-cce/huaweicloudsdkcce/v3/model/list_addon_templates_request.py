@@ -23,47 +23,23 @@ class ListAddonTemplatesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'content_type': 'str',
         'addon_template_name': 'str'
     }
 
     attribute_map = {
-        'content_type': 'Content-Type',
         'addon_template_name': 'addon_template_name'
     }
 
-    def __init__(self, content_type='application/json', addon_template_name=None):
+    def __init__(self, addon_template_name=None):
         """ListAddonTemplatesRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._content_type = None
         self._addon_template_name = None
         self.discriminator = None
 
-        self.content_type = content_type
         if addon_template_name is not None:
             self.addon_template_name = addon_template_name
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this ListAddonTemplatesRequest.
-
-
-        :return: The content_type of this ListAddonTemplatesRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this ListAddonTemplatesRequest.
-
-
-        :param content_type: The content_type of this ListAddonTemplatesRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def addon_template_name(self):

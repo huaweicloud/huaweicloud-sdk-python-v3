@@ -50,7 +50,7 @@ class ListSubCustomersResponse(SdkResponse):
     def customer_infos(self):
         """Gets the customer_infos of this ListSubCustomersResponse.
 
-        |参数名称：客户信息列表。具体请参见表 CustomerInfo| |参数约束以及描述：客户信息列表。具体请参见表 CustomerInfo|
+        客户信息列表。 具体请参见表1。
 
         :return: The customer_infos of this ListSubCustomersResponse.
         :rtype: list[CustomerInformation]
@@ -61,7 +61,7 @@ class ListSubCustomersResponse(SdkResponse):
     def customer_infos(self, customer_infos):
         """Sets the customer_infos of this ListSubCustomersResponse.
 
-        |参数名称：客户信息列表。具体请参见表 CustomerInfo| |参数约束以及描述：客户信息列表。具体请参见表 CustomerInfo|
+        客户信息列表。 具体请参见表1。
 
         :param customer_infos: The customer_infos of this ListSubCustomersResponse.
         :type: list[CustomerInformation]
@@ -72,7 +72,7 @@ class ListSubCustomersResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListSubCustomersResponse.
 
-        |参数名称：总记录数。| |参数的约束及描述：总记录数。|
+        总记录数。
 
         :return: The count of this ListSubCustomersResponse.
         :rtype: int
@@ -83,7 +83,7 @@ class ListSubCustomersResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListSubCustomersResponse.
 
-        |参数名称：总记录数。| |参数的约束及描述：总记录数。|
+        总记录数。
 
         :param count: The count of this ListSubCustomersResponse.
         :type: int

@@ -120,7 +120,7 @@ class OrderLineItemEntityV2:
     def order_line_item_id(self):
         """Gets the order_line_item_id of this OrderLineItemEntityV2.
 
-        |参数名称：订单项Id。| |参数约束及描述：订单项Id。|
+        订单项Id。
 
         :return: The order_line_item_id of this OrderLineItemEntityV2.
         :rtype: str
@@ -131,7 +131,7 @@ class OrderLineItemEntityV2:
     def order_line_item_id(self, order_line_item_id):
         """Sets the order_line_item_id of this OrderLineItemEntityV2.
 
-        |参数名称：订单项Id。| |参数约束及描述：订单项Id。|
+        订单项Id。
 
         :param order_line_item_id: The order_line_item_id of this OrderLineItemEntityV2.
         :type: str
@@ -142,7 +142,7 @@ class OrderLineItemEntityV2:
     def service_type_code(self):
         """Gets the service_type_code of this OrderLineItemEntityV2.
 
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
 
         :return: The service_type_code of this OrderLineItemEntityV2.
         :rtype: str
@@ -153,7 +153,7 @@ class OrderLineItemEntityV2:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this OrderLineItemEntityV2.
 
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this OrderLineItemEntityV2.
         :type: str
@@ -164,7 +164,7 @@ class OrderLineItemEntityV2:
     def product_id(self):
         """Gets the product_id of this OrderLineItemEntityV2.
 
-        |参数名称：产品ID。| |参数约束及描述：产品ID。|
+        产品ID。
 
         :return: The product_id of this OrderLineItemEntityV2.
         :rtype: str
@@ -175,7 +175,7 @@ class OrderLineItemEntityV2:
     def product_id(self, product_id):
         """Sets the product_id of this OrderLineItemEntityV2.
 
-        |参数名称：产品ID。| |参数约束及描述：产品ID。|
+        产品ID。
 
         :param product_id: The product_id of this OrderLineItemEntityV2.
         :type: str
@@ -186,7 +186,7 @@ class OrderLineItemEntityV2:
     def product_spec_desc(self):
         """Gets the product_spec_desc of this OrderLineItemEntityV2.
 
-        |参数名称：产品规格描述。| |参数约束及描述：产品规格描述。|
+        产品规格描述。
 
         :return: The product_spec_desc of this OrderLineItemEntityV2.
         :rtype: str
@@ -197,7 +197,7 @@ class OrderLineItemEntityV2:
     def product_spec_desc(self, product_spec_desc):
         """Sets the product_spec_desc of this OrderLineItemEntityV2.
 
-        |参数名称：产品规格描述。| |参数约束及描述：产品规格描述。|
+        产品规格描述。
 
         :param product_spec_desc: The product_spec_desc of this OrderLineItemEntityV2.
         :type: str
@@ -208,7 +208,7 @@ class OrderLineItemEntityV2:
     def period_type(self):
         """Gets the period_type of this OrderLineItemEntityV2.
 
-        |参数名称：周期类型。0：天；1：周；2：月；3：年；4：小时；5：一次性；6：按需（预留）；7：按用量报表使用（预留）。| |参数的约束及描述：周期类型。0：天；1：周；2：月；3：年；4：小时；5：一次性；6：按需（预留）；7：按用量报表使用（预留）。|
+        周期类型。 0：天1：周2：月3：年4：小时5：一次性6：按需（预留）7：按用量报表使用（预留）
 
         :return: The period_type of this OrderLineItemEntityV2.
         :rtype: int
@@ -219,7 +219,7 @@ class OrderLineItemEntityV2:
     def period_type(self, period_type):
         """Sets the period_type of this OrderLineItemEntityV2.
 
-        |参数名称：周期类型。0：天；1：周；2：月；3：年；4：小时；5：一次性；6：按需（预留）；7：按用量报表使用（预留）。| |参数的约束及描述：周期类型。0：天；1：周；2：月；3：年；4：小时；5：一次性；6：按需（预留）；7：按用量报表使用（预留）。|
+        周期类型。 0：天1：周2：月3：年4：小时5：一次性6：按需（预留）7：按用量报表使用（预留）
 
         :param period_type: The period_type of this OrderLineItemEntityV2.
         :type: int
@@ -230,7 +230,7 @@ class OrderLineItemEntityV2:
     def period_num(self):
         """Gets the period_num of this OrderLineItemEntityV2.
 
-        |参数名称：周期数量。| |参数的约束及描述：周期数量。|
+        周期数量。
 
         :return: The period_num of this OrderLineItemEntityV2.
         :rtype: int
@@ -241,7 +241,7 @@ class OrderLineItemEntityV2:
     def period_num(self, period_num):
         """Sets the period_num of this OrderLineItemEntityV2.
 
-        |参数名称：周期数量。| |参数的约束及描述：周期数量。|
+        周期数量。
 
         :param period_num: The period_num of this OrderLineItemEntityV2.
         :type: int
@@ -252,7 +252,7 @@ class OrderLineItemEntityV2:
     def effective_time(self):
         """Gets the effective_time of this OrderLineItemEntityV2.
 
-        |参数名称：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :return: The effective_time of this OrderLineItemEntityV2.
         :rtype: str
@@ -263,7 +263,7 @@ class OrderLineItemEntityV2:
     def effective_time(self, effective_time):
         """Sets the effective_time of this OrderLineItemEntityV2.
 
-        |参数名称：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param effective_time: The effective_time of this OrderLineItemEntityV2.
         :type: str
@@ -274,7 +274,7 @@ class OrderLineItemEntityV2:
     def expire_time(self):
         """Gets the expire_time of this OrderLineItemEntityV2.
 
-        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :return: The expire_time of this OrderLineItemEntityV2.
         :rtype: str
@@ -285,7 +285,7 @@ class OrderLineItemEntityV2:
     def expire_time(self, expire_time):
         """Sets the expire_time of this OrderLineItemEntityV2.
 
-        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param expire_time: The expire_time of this OrderLineItemEntityV2.
         :type: str
@@ -296,7 +296,7 @@ class OrderLineItemEntityV2:
     def subscription_num(self):
         """Gets the subscription_num of this OrderLineItemEntityV2.
 
-        |参数名称：订购数量。| |参数的约束及描述：订购数量。|
+        订购数量。
 
         :return: The subscription_num of this OrderLineItemEntityV2.
         :rtype: int
@@ -307,7 +307,7 @@ class OrderLineItemEntityV2:
     def subscription_num(self, subscription_num):
         """Sets the subscription_num of this OrderLineItemEntityV2.
 
-        |参数名称：订购数量。| |参数的约束及描述：订购数量。|
+        订购数量。
 
         :param subscription_num: The subscription_num of this OrderLineItemEntityV2.
         :type: int
@@ -318,7 +318,7 @@ class OrderLineItemEntityV2:
     def amount_after_discount(self):
         """Gets the amount_after_discount of this OrderLineItemEntityV2.
 
-        |参数名称：订单优惠后金额（实付价格，不含券不含卡）。| |参数的约束及描述：订单优惠后金额（实付价格，不含券不含卡）。|
+        订单优惠后金额（实付价格，不含券不含卡）。
 
         :return: The amount_after_discount of this OrderLineItemEntityV2.
         :rtype: float
@@ -329,7 +329,7 @@ class OrderLineItemEntityV2:
     def amount_after_discount(self, amount_after_discount):
         """Sets the amount_after_discount of this OrderLineItemEntityV2.
 
-        |参数名称：订单优惠后金额（实付价格，不含券不含卡）。| |参数的约束及描述：订单优惠后金额（实付价格，不含券不含卡）。|
+        订单优惠后金额（实付价格，不含券不含卡）。
 
         :param amount_after_discount: The amount_after_discount of this OrderLineItemEntityV2.
         :type: float
@@ -340,7 +340,7 @@ class OrderLineItemEntityV2:
     def official_amount(self):
         """Gets the official_amount of this OrderLineItemEntityV2.
 
-        |参数名称：订单金额（官网价）。退订订单中，该金额等于currencyAfterDiscount。| |参数的约束及描述：订单金额（官网价）。退订订单中，该金额等于currencyAfterDiscount。|
+        订单金额（官网价）。 退订订单中，该金额等于currencyAfterDiscount。
 
         :return: The official_amount of this OrderLineItemEntityV2.
         :rtype: float
@@ -351,7 +351,7 @@ class OrderLineItemEntityV2:
     def official_amount(self, official_amount):
         """Sets the official_amount of this OrderLineItemEntityV2.
 
-        |参数名称：订单金额（官网价）。退订订单中，该金额等于currencyAfterDiscount。| |参数的约束及描述：订单金额（官网价）。退订订单中，该金额等于currencyAfterDiscount。|
+        订单金额（官网价）。 退订订单中，该金额等于currencyAfterDiscount。
 
         :param official_amount: The official_amount of this OrderLineItemEntityV2.
         :type: float
@@ -382,7 +382,7 @@ class OrderLineItemEntityV2:
     def currency(self):
         """Gets the currency of this OrderLineItemEntityV2.
 
-        |参数名称：货币编码。| |参数约束及描述：货币编码。如CNY|
+        货币编码。
 
         :return: The currency of this OrderLineItemEntityV2.
         :rtype: str
@@ -393,7 +393,7 @@ class OrderLineItemEntityV2:
     def currency(self, currency):
         """Sets the currency of this OrderLineItemEntityV2.
 
-        |参数名称：货币编码。| |参数约束及描述：货币编码。如CNY|
+        货币编码。
 
         :param currency: The currency of this OrderLineItemEntityV2.
         :type: str
@@ -404,7 +404,7 @@ class OrderLineItemEntityV2:
     def category_code(self):
         """Gets the category_code of this OrderLineItemEntityV2.
 
-        |参数名称：产品目录编码。| |参数约束及描述：产品目录编码。|
+        产品目录编码。
 
         :return: The category_code of this OrderLineItemEntityV2.
         :rtype: str
@@ -415,7 +415,7 @@ class OrderLineItemEntityV2:
     def category_code(self, category_code):
         """Sets the category_code of this OrderLineItemEntityV2.
 
-        |参数名称：产品目录编码。| |参数约束及描述：产品目录编码。|
+        产品目录编码。
 
         :param category_code: The category_code of this OrderLineItemEntityV2.
         :type: str
@@ -426,7 +426,7 @@ class OrderLineItemEntityV2:
     def product_owner_service(self):
         """Gets the product_owner_service of this OrderLineItemEntityV2.
 
-        |参数名称：产品归属的云服务类型编码。| |参数约束及描述：产品归属的云服务类型编码。|
+        产品归属的云服务类型编码。 云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
 
         :return: The product_owner_service of this OrderLineItemEntityV2.
         :rtype: str
@@ -437,7 +437,7 @@ class OrderLineItemEntityV2:
     def product_owner_service(self, product_owner_service):
         """Sets the product_owner_service of this OrderLineItemEntityV2.
 
-        |参数名称：产品归属的云服务类型编码。| |参数约束及描述：产品归属的云服务类型编码。|
+        产品归属的云服务类型编码。 云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
 
         :param product_owner_service: The product_owner_service of this OrderLineItemEntityV2.
         :type: str
@@ -448,7 +448,7 @@ class OrderLineItemEntityV2:
     def commercial_resource(self):
         """Gets the commercial_resource of this OrderLineItemEntityV2.
 
-        |参数名称：商务归属的资源类型编码。| |参数约束及描述：商务归属的资源类型编码。|
+        商务归属的资源类型编码。 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :return: The commercial_resource of this OrderLineItemEntityV2.
         :rtype: str
@@ -459,7 +459,7 @@ class OrderLineItemEntityV2:
     def commercial_resource(self, commercial_resource):
         """Sets the commercial_resource of this OrderLineItemEntityV2.
 
-        |参数名称：商务归属的资源类型编码。| |参数约束及描述：商务归属的资源类型编码。|
+        商务归属的资源类型编码。 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param commercial_resource: The commercial_resource of this OrderLineItemEntityV2.
         :type: str

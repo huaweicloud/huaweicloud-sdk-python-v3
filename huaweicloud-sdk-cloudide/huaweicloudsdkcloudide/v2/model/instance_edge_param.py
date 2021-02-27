@@ -187,7 +187,7 @@ class InstanceEdgeParam:
     def instance_user_domain_id(self):
         """Gets the instance_user_domain_id of this InstanceEdgeParam.
 
-        组织id（对应华为云账号的domainId）
+        组织id（对应华为云帐号的domainId）
 
         :return: The instance_user_domain_id of this InstanceEdgeParam.
         :rtype: str
@@ -198,7 +198,7 @@ class InstanceEdgeParam:
     def instance_user_domain_id(self, instance_user_domain_id):
         """Sets the instance_user_domain_id of this InstanceEdgeParam.
 
-        组织id（对应华为云账号的domainId）
+        组织id（对应华为云帐号的domainId）
 
         :param instance_user_domain_id: The instance_user_domain_id of this InstanceEdgeParam.
         :type: str

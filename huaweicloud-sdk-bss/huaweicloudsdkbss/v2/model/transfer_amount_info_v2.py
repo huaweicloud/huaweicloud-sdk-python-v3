@@ -70,7 +70,7 @@ class TransferAmountInfoV2:
     def avail_transfer_amount(self):
         """Gets the avail_transfer_amount of this TransferAmountInfoV2.
 
-        |参数名称：可拨款的金额。| |参数的约束及描述：可拨款的金额。|
+        可拨款的金额。
 
         :return: The avail_transfer_amount of this TransferAmountInfoV2.
         :rtype: float
@@ -81,7 +81,7 @@ class TransferAmountInfoV2:
     def avail_transfer_amount(self, avail_transfer_amount):
         """Sets the avail_transfer_amount of this TransferAmountInfoV2.
 
-        |参数名称：可拨款的金额。| |参数的约束及描述：可拨款的金额。|
+        可拨款的金额。
 
         :param avail_transfer_amount: The avail_transfer_amount of this TransferAmountInfoV2.
         :type: float
@@ -92,7 +92,7 @@ class TransferAmountInfoV2:
     def measure_id(self):
         """Gets the measure_id of this TransferAmountInfoV2.
 
-        |参数名称：金额单位。1：元| |参数的约束及描述：金额单位。1：元|
+        金额单位。 1：元
 
         :return: The measure_id of this TransferAmountInfoV2.
         :rtype: int
@@ -103,7 +103,7 @@ class TransferAmountInfoV2:
     def measure_id(self, measure_id):
         """Sets the measure_id of this TransferAmountInfoV2.
 
-        |参数名称：金额单位。1：元| |参数的约束及描述：金额单位。1：元|
+        金额单位。 1：元
 
         :param measure_id: The measure_id of this TransferAmountInfoV2.
         :type: int
@@ -114,7 +114,7 @@ class TransferAmountInfoV2:
     def currency(self):
         """Gets the currency of this TransferAmountInfoV2.
 
-        |参数名称：币种。CNY：人民币USD：美金| |参数约束及描述：币种。CNY：人民币USD：美金|
+        币种。 CNY：人民币
 
         :return: The currency of this TransferAmountInfoV2.
         :rtype: str
@@ -125,7 +125,7 @@ class TransferAmountInfoV2:
     def currency(self, currency):
         """Sets the currency of this TransferAmountInfoV2.
 
-        |参数名称：币种。CNY：人民币USD：美金| |参数约束及描述：币种。CNY：人民币USD：美金|
+        币种。 CNY：人民币
 
         :param currency: The currency of this TransferAmountInfoV2.
         :type: str
@@ -136,7 +136,7 @@ class TransferAmountInfoV2:
     def amount(self):
         """Gets the amount of this TransferAmountInfoV2.
 
-        |参数名称：账户余额（仅balance_type=信用账户时才有这个字段）。| |参数的约束及描述：账户余额（仅balance_type=信用账户时才有这个字段）。|
+        账户余额（仅balance_type=信用账户时才有这个字段）。
 
         :return: The amount of this TransferAmountInfoV2.
         :rtype: float
@@ -147,7 +147,7 @@ class TransferAmountInfoV2:
     def amount(self, amount):
         """Sets the amount of this TransferAmountInfoV2.
 
-        |参数名称：账户余额（仅balance_type=信用账户时才有这个字段）。| |参数的约束及描述：账户余额（仅balance_type=信用账户时才有这个字段）。|
+        账户余额（仅balance_type=信用账户时才有这个字段）。
 
         :param amount: The amount of this TransferAmountInfoV2.
         :type: float
@@ -158,7 +158,7 @@ class TransferAmountInfoV2:
     def credit_amount(self):
         """Gets the credit_amount of this TransferAmountInfoV2.
 
-        |参数名称：信用额度（仅balance_type=信用账户时才有这个字段）。| |参数的约束及描述：信用额度（仅balance_type=信用账户时才有这个字段）。|
+        信用额度（仅balance_type=信用账户时才有这个字段）。
 
         :return: The credit_amount of this TransferAmountInfoV2.
         :rtype: float
@@ -169,7 +169,7 @@ class TransferAmountInfoV2:
     def credit_amount(self, credit_amount):
         """Sets the credit_amount of this TransferAmountInfoV2.
 
-        |参数名称：信用额度（仅balance_type=信用账户时才有这个字段）。| |参数的约束及描述：信用额度（仅balance_type=信用账户时才有这个字段）。|
+        信用额度（仅balance_type=信用账户时才有这个字段）。
 
         :param credit_amount: The credit_amount of this TransferAmountInfoV2.
         :type: float
@@ -180,7 +180,7 @@ class TransferAmountInfoV2:
     def expire_time(self):
         """Gets the expire_time of this TransferAmountInfoV2.
 
-        |参数名称：信用额度过期时间。UTC时间，格式为：2016-03-28T14:45:38Z。（仅balance_type=信用账户时才有这个字段）。如果查询信用账户可拨款余额的查询结果没有失效时间，表示永久有效。| |参数约束及描述：信用额度过期时间。UTC时间，格式为：2016-03-28T14:45:38Z。（仅balance_type=信用账户时才有这个字段）。如果查询信用账户可拨款余额的查询结果没有失效时间，表示永久有效。|
+        信用额度过期时间。 UTC时间，格式为：2016-03-28T14:45:38Z。 （仅balance_type=信用账户时才有这个字段）。 如果查询信用账户可拨款余额的查询结果没有失效时间，表示永久有效。
 
         :return: The expire_time of this TransferAmountInfoV2.
         :rtype: str
@@ -191,7 +191,7 @@ class TransferAmountInfoV2:
     def expire_time(self, expire_time):
         """Sets the expire_time of this TransferAmountInfoV2.
 
-        |参数名称：信用额度过期时间。UTC时间，格式为：2016-03-28T14:45:38Z。（仅balance_type=信用账户时才有这个字段）。如果查询信用账户可拨款余额的查询结果没有失效时间，表示永久有效。| |参数约束及描述：信用额度过期时间。UTC时间，格式为：2016-03-28T14:45:38Z。（仅balance_type=信用账户时才有这个字段）。如果查询信用账户可拨款余额的查询结果没有失效时间，表示永久有效。|
+        信用额度过期时间。 UTC时间，格式为：2016-03-28T14:45:38Z。 （仅balance_type=信用账户时才有这个字段）。 如果查询信用账户可拨款余额的查询结果没有失效时间，表示永久有效。
 
         :param expire_time: The expire_time of this TransferAmountInfoV2.
         :type: str

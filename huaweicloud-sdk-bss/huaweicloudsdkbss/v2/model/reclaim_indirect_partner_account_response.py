@@ -45,7 +45,7 @@ class ReclaimIndirectPartnerAccountResponse(SdkResponse):
     def trans_id(self):
         """Gets the trans_id of this ReclaimIndirectPartnerAccountResponse.
 
-        |参数名称：回收流水| |参数约束及描述：回收流水|
+        事务流水ID，只有成功响应才会返回。
 
         :return: The trans_id of this ReclaimIndirectPartnerAccountResponse.
         :rtype: str
@@ -56,7 +56,7 @@ class ReclaimIndirectPartnerAccountResponse(SdkResponse):
     def trans_id(self, trans_id):
         """Sets the trans_id of this ReclaimIndirectPartnerAccountResponse.
 
-        |参数名称：回收流水| |参数约束及描述：回收流水|
+        事务流水ID，只有成功响应才会返回。
 
         :param trans_id: The trans_id of this ReclaimIndirectPartnerAccountResponse.
         :type: str

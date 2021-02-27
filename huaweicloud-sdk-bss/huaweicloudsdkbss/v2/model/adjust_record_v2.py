@@ -85,7 +85,7 @@ class AdjustRecordV2:
     def customer_id(self):
         """Gets the customer_id of this AdjustRecordV2.
 
-        |参数名称：合作伙伴关联的客户的客户ID。| |参数约束及描述：合作伙伴关联的客户的客户ID。|
+        客户账号ID。
 
         :return: The customer_id of this AdjustRecordV2.
         :rtype: str
@@ -96,7 +96,7 @@ class AdjustRecordV2:
     def customer_id(self, customer_id):
         """Sets the customer_id of this AdjustRecordV2.
 
-        |参数名称：合作伙伴关联的客户的客户ID。| |参数约束及描述：合作伙伴关联的客户的客户ID。|
+        客户账号ID。
 
         :param customer_id: The customer_id of this AdjustRecordV2.
         :type: str
@@ -107,7 +107,7 @@ class AdjustRecordV2:
     def customer_name(self):
         """Gets the customer_name of this AdjustRecordV2.
 
-        |参数名称：合作伙伴关联的客户的客户名。| |参数约束及描述：合作伙伴关联的客户的客户名。|
+        客户名称。
 
         :return: The customer_name of this AdjustRecordV2.
         :rtype: str
@@ -118,7 +118,7 @@ class AdjustRecordV2:
     def customer_name(self, customer_name):
         """Sets the customer_name of this AdjustRecordV2.
 
-        |参数名称：合作伙伴关联的客户的客户名。| |参数约束及描述：合作伙伴关联的客户的客户名。|
+        客户名称。
 
         :param customer_name: The customer_name of this AdjustRecordV2.
         :type: str
@@ -129,7 +129,7 @@ class AdjustRecordV2:
     def operation_type(self):
         """Gets the operation_type of this AdjustRecordV2.
 
-        |参数名称：调账类型。0：授信1：回收2：解绑回收| |参数约束及描述：调账类型。0：授信1：回收2：解绑回收|
+        调账类型。 SOURCE_OPERATION_BEADJUST：拨款SOURCE_OPERATION_BERETRIEVE：回收SOURCE_OPERATION_BEUNBIND：解绑回收
 
         :return: The operation_type of this AdjustRecordV2.
         :rtype: str
@@ -140,7 +140,7 @@ class AdjustRecordV2:
     def operation_type(self, operation_type):
         """Sets the operation_type of this AdjustRecordV2.
 
-        |参数名称：调账类型。0：授信1：回收2：解绑回收| |参数约束及描述：调账类型。0：授信1：回收2：解绑回收|
+        调账类型。 SOURCE_OPERATION_BEADJUST：拨款SOURCE_OPERATION_BERETRIEVE：回收SOURCE_OPERATION_BEUNBIND：解绑回收
 
         :param operation_type: The operation_type of this AdjustRecordV2.
         :type: str
@@ -151,7 +151,7 @@ class AdjustRecordV2:
     def amount(self):
         """Gets the amount of this AdjustRecordV2.
 
-        |参数名称：调账/回收总额。| |参数的约束及描述：调账/回收总额。|
+        调账的总金额。
 
         :return: The amount of this AdjustRecordV2.
         :rtype: float
@@ -162,7 +162,7 @@ class AdjustRecordV2:
     def amount(self, amount):
         """Sets the amount of this AdjustRecordV2.
 
-        |参数名称：调账/回收总额。| |参数的约束及描述：调账/回收总额。|
+        调账的总金额。
 
         :param amount: The amount of this AdjustRecordV2.
         :type: float
@@ -173,7 +173,7 @@ class AdjustRecordV2:
     def currency(self):
         """Gets the currency of this AdjustRecordV2.
 
-        |参数名称：币种。当前固定为CNY。| |参数约束及描述：币种。当前固定为CNY。|
+        币种。 CNY：人民币
 
         :return: The currency of this AdjustRecordV2.
         :rtype: str
@@ -184,7 +184,7 @@ class AdjustRecordV2:
     def currency(self, currency):
         """Sets the currency of this AdjustRecordV2.
 
-        |参数名称：币种。当前固定为CNY。| |参数约束及描述：币种。当前固定为CNY。|
+        币种。 CNY：人民币
 
         :param currency: The currency of this AdjustRecordV2.
         :type: str
@@ -195,7 +195,7 @@ class AdjustRecordV2:
     def apply_scene(self):
         """Gets the apply_scene of this AdjustRecordV2.
 
-        |参数名称：使用场景。| |参数约束及描述：使用场景。|
+        使用场景。
 
         :return: The apply_scene of this AdjustRecordV2.
         :rtype: str
@@ -206,7 +206,7 @@ class AdjustRecordV2:
     def apply_scene(self, apply_scene):
         """Sets the apply_scene of this AdjustRecordV2.
 
-        |参数名称：使用场景。| |参数约束及描述：使用场景。|
+        使用场景。
 
         :param apply_scene: The apply_scene of this AdjustRecordV2.
         :type: str
@@ -217,7 +217,7 @@ class AdjustRecordV2:
     def operation_time(self):
         """Gets the operation_time of this AdjustRecordV2.
 
-        |参数名称：调账时间。UTC时间，格式为：2016-03-28T14:45:38Z| |参数约束及描述：调账时间。UTC时间，格式为：2016-03-28T14:45:38Z|
+        调账操作的时间。 UTC时间，格式为：2016-03-28T14:45:38Z
 
         :return: The operation_time of this AdjustRecordV2.
         :rtype: str
@@ -228,7 +228,7 @@ class AdjustRecordV2:
     def operation_time(self, operation_time):
         """Sets the operation_time of this AdjustRecordV2.
 
-        |参数名称：调账时间。UTC时间，格式为：2016-03-28T14:45:38Z| |参数约束及描述：调账时间。UTC时间，格式为：2016-03-28T14:45:38Z|
+        调账操作的时间。 UTC时间，格式为：2016-03-28T14:45:38Z
 
         :param operation_time: The operation_time of this AdjustRecordV2.
         :type: str
@@ -239,7 +239,7 @@ class AdjustRecordV2:
     def measure_id(self):
         """Gets the measure_id of this AdjustRecordV2.
 
-        |参数名称：度量单位。1：元| |参数的约束及描述：度量单位。1：元|
+        调账单位。 1：元
 
         :return: The measure_id of this AdjustRecordV2.
         :rtype: int
@@ -250,7 +250,7 @@ class AdjustRecordV2:
     def measure_id(self, measure_id):
         """Sets the measure_id of this AdjustRecordV2.
 
-        |参数名称：度量单位。1：元| |参数的约束及描述：度量单位。1：元|
+        调账单位。 1：元
 
         :param measure_id: The measure_id of this AdjustRecordV2.
         :type: int
@@ -261,7 +261,7 @@ class AdjustRecordV2:
     def trans_id(self):
         """Gets the trans_id of this AdjustRecordV2.
 
-        |参数名称：事务ID，只有在调用3-向客户账户拨款或4-回收客户账户余额接口时，响应消息中返回的该记录存在事务ID“trans_id”字段，这个地方才可能有值。| |参数约束及描述：事务ID，只有在调用3-向客户账户拨款或4-回收客户账户余额接口时，响应消息中返回的该记录存在事务ID“trans_id”字段，这个地方才可能有值。|
+        事务ID。
 
         :return: The trans_id of this AdjustRecordV2.
         :rtype: str
@@ -272,7 +272,7 @@ class AdjustRecordV2:
     def trans_id(self, trans_id):
         """Sets the trans_id of this AdjustRecordV2.
 
-        |参数名称：事务ID，只有在调用3-向客户账户拨款或4-回收客户账户余额接口时，响应消息中返回的该记录存在事务ID“trans_id”字段，这个地方才可能有值。| |参数约束及描述：事务ID，只有在调用3-向客户账户拨款或4-回收客户账户余额接口时，响应消息中返回的该记录存在事务ID“trans_id”字段，这个地方才可能有值。|
+        事务ID。
 
         :param trans_id: The trans_id of this AdjustRecordV2.
         :type: str

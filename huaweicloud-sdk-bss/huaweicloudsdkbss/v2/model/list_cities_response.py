@@ -50,7 +50,7 @@ class ListCitiesResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListCitiesResponse.
 
-        |参数名称：查询个数，成功的时候返回| |参数的约束及描述：查询个数，成功的时候返回|
+        查询个数，成功的时候返回。
 
         :return: The count of this ListCitiesResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ListCitiesResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListCitiesResponse.
 
-        |参数名称：查询个数，成功的时候返回| |参数的约束及描述：查询个数，成功的时候返回|
+        查询个数，成功的时候返回。
 
         :param count: The count of this ListCitiesResponse.
         :type: int
@@ -72,7 +72,7 @@ class ListCitiesResponse(SdkResponse):
     def cities(self):
         """Gets the cities of this ListCitiesResponse.
 
-        |参数名称：城市信息列表，成功的时候返回| |参数约束以及描述：城市信息列表，成功的时候返回|
+        城市信息列表，成功的时候返回，具体参见表2。
 
         :return: The cities of this ListCitiesResponse.
         :rtype: list[City]
@@ -83,7 +83,7 @@ class ListCitiesResponse(SdkResponse):
     def cities(self, cities):
         """Sets the cities of this ListCitiesResponse.
 
-        |参数名称：城市信息列表，成功的时候返回| |参数约束以及描述：城市信息列表，成功的时候返回|
+        城市信息列表，成功的时候返回，具体参见表2。
 
         :param cities: The cities of this ListCitiesResponse.
         :type: list[City]

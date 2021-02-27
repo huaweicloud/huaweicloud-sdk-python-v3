@@ -37,7 +37,7 @@ class ShowUserResult:
         'update_time': 'str',
         'create_time': 'str',
         'last_login_time': 'str',
-        'pwd_stength': 'str',
+        'pwd_strength': 'str',
         'is_domain_owner': 'bool',
         'access_mode': 'str',
         'description': 'str'
@@ -58,13 +58,13 @@ class ShowUserResult:
         'update_time': 'update_time',
         'create_time': 'create_time',
         'last_login_time': 'last_login_time',
-        'pwd_stength': 'pwd_stength',
+        'pwd_strength': 'pwd_strength',
         'is_domain_owner': 'is_domain_owner',
         'access_mode': 'access_mode',
         'description': 'description'
     }
 
-    def __init__(self, enabled=None, id=None, domain_id=None, name=None, links=None, xuser_id=None, xuser_type=None, areacode=None, email=None, phone=None, pwd_status=None, update_time=None, create_time=None, last_login_time=None, pwd_stength=None, is_domain_owner=None, access_mode=None, description=None):
+    def __init__(self, enabled=None, id=None, domain_id=None, name=None, links=None, xuser_id=None, xuser_type=None, areacode=None, email=None, phone=None, pwd_status=None, update_time=None, create_time=None, last_login_time=None, pwd_strength=None, is_domain_owner=None, access_mode=None, description=None):
         """ShowUserResult - a model defined in huaweicloud sdk"""
         
         
@@ -83,7 +83,7 @@ class ShowUserResult:
         self._update_time = None
         self._create_time = None
         self._last_login_time = None
-        self._pwd_stength = None
+        self._pwd_strength = None
         self._is_domain_owner = None
         self._access_mode = None
         self._description = None
@@ -112,8 +112,8 @@ class ShowUserResult:
             self.create_time = create_time
         if last_login_time is not None:
             self.last_login_time = last_login_time
-        if pwd_stength is not None:
-            self.pwd_stength = pwd_stength
+        if pwd_strength is not None:
+            self.pwd_strength = pwd_strength
         self.is_domain_owner = is_domain_owner
         self.access_mode = access_mode
         self.description = description
@@ -425,26 +425,26 @@ class ShowUserResult:
         self._last_login_time = last_login_time
 
     @property
-    def pwd_stength(self):
-        """Gets the pwd_stength of this ShowUserResult.
+    def pwd_strength(self):
+        """Gets the pwd_strength of this ShowUserResult.
 
         IAM用户密码强度。结果为low/middle/high/none，分别表示密码强度低/中/高/无。
 
-        :return: The pwd_stength of this ShowUserResult.
+        :return: The pwd_strength of this ShowUserResult.
         :rtype: str
         """
-        return self._pwd_stength
+        return self._pwd_strength
 
-    @pwd_stength.setter
-    def pwd_stength(self, pwd_stength):
-        """Sets the pwd_stength of this ShowUserResult.
+    @pwd_strength.setter
+    def pwd_strength(self, pwd_strength):
+        """Sets the pwd_strength of this ShowUserResult.
 
         IAM用户密码强度。结果为low/middle/high/none，分别表示密码强度低/中/高/无。
 
-        :param pwd_stength: The pwd_stength of this ShowUserResult.
+        :param pwd_strength: The pwd_strength of this ShowUserResult.
         :type: str
         """
-        self._pwd_stength = pwd_stength
+        self._pwd_strength = pwd_strength
 
     @property
     def is_domain_owner(self):

@@ -55,7 +55,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListCustomerBillsFeeRecordsResponse.
 
-        |参数名称：总条数，必须大于等于0。| |参数的约束及描述：总条数，必须大于等于0。|
+        结果集数量，只有成功才返回这个参数。
 
         :return: The total_count of this ListCustomerBillsFeeRecordsResponse.
         :rtype: int
@@ -66,7 +66,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListCustomerBillsFeeRecordsResponse.
 
-        |参数名称：总条数，必须大于等于0。| |参数的约束及描述：总条数，必须大于等于0。|
+        结果集数量，只有成功才返回这个参数。
 
         :param total_count: The total_count of this ListCustomerBillsFeeRecordsResponse.
         :type: int
@@ -77,7 +77,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
     def records(self):
         """Gets the records of this ListCustomerBillsFeeRecordsResponse.
 
-        |参数名称：资源费用记录数据。具体请参见表 MonthlyBillRes。| |参数约束以及描述：资源费用记录数据。具体请参见表 MonthlyBillRes。|
+        资源费用记录数据。 具体请参见表2。
 
         :return: The records of this ListCustomerBillsFeeRecordsResponse.
         :rtype: list[MonthlyBillRecord]
@@ -88,7 +88,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
     def records(self, records):
         """Sets the records of this ListCustomerBillsFeeRecordsResponse.
 
-        |参数名称：资源费用记录数据。具体请参见表 MonthlyBillRes。| |参数约束以及描述：资源费用记录数据。具体请参见表 MonthlyBillRes。|
+        资源费用记录数据。 具体请参见表2。
 
         :param records: The records of this ListCustomerBillsFeeRecordsResponse.
         :type: list[MonthlyBillRecord]
@@ -99,7 +99,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
     def currency(self):
         """Gets the currency of this ListCustomerBillsFeeRecordsResponse.
 
-        |参数名称：币种。| |参数约束及描述：币种。|
+        币种。 CNY：人民币
 
         :return: The currency of this ListCustomerBillsFeeRecordsResponse.
         :rtype: str
@@ -110,7 +110,7 @@ class ListCustomerBillsFeeRecordsResponse(SdkResponse):
     def currency(self, currency):
         """Sets the currency of this ListCustomerBillsFeeRecordsResponse.
 
-        |参数名称：币种。| |参数约束及描述：币种。|
+        币种。 CNY：人民币
 
         :param currency: The currency of this ListCustomerBillsFeeRecordsResponse.
         :type: str

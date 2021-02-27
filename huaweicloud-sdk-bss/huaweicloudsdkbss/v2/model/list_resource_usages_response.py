@@ -45,7 +45,7 @@ class ListResourceUsagesResponse(SdkResponse):
     def package_usage_infos(self):
         """Gets the package_usage_infos of this ListResourceUsagesResponse.
 
-        |参数名称：套餐包使用量信息| |参数的约束及描述：套餐包使用量信息|
+        套餐包使用量信息，具体请参见表2。
 
         :return: The package_usage_infos of this ListResourceUsagesResponse.
         :rtype: list[PackageUsageInfo]
@@ -56,7 +56,7 @@ class ListResourceUsagesResponse(SdkResponse):
     def package_usage_infos(self, package_usage_infos):
         """Sets the package_usage_infos of this ListResourceUsagesResponse.
 
-        |参数名称：套餐包使用量信息| |参数的约束及描述：套餐包使用量信息|
+        套餐包使用量信息，具体请参见表2。
 
         :param package_usage_infos: The package_usage_infos of this ListResourceUsagesResponse.
         :type: list[PackageUsageInfo]

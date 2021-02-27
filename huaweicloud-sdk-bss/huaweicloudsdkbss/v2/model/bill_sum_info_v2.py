@@ -95,7 +95,7 @@ class BillSumInfoV2:
     def customer_id(self):
         """Gets the customer_id of this BillSumInfoV2.
 
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
+        客户账号ID。
 
         :return: The customer_id of this BillSumInfoV2.
         :rtype: str
@@ -106,7 +106,7 @@ class BillSumInfoV2:
     def customer_id(self, customer_id):
         """Sets the customer_id of this BillSumInfoV2.
 
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
+        客户账号ID。
 
         :param customer_id: The customer_id of this BillSumInfoV2.
         :type: str
@@ -117,7 +117,7 @@ class BillSumInfoV2:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this BillSumInfoV2.
 
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型。|
+        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
 
         :return: The cloud_service_type of this BillSumInfoV2.
         :rtype: str
@@ -128,7 +128,7 @@ class BillSumInfoV2:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this BillSumInfoV2.
 
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型。|
+        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
 
         :param cloud_service_type: The cloud_service_type of this BillSumInfoV2.
         :type: str
@@ -139,7 +139,7 @@ class BillSumInfoV2:
     def bill_type(self):
         """Gets the bill_type of this BillSumInfoV2.
 
-        |参数名称：费用类型。0：消费；1：退订；2：华为核销。| |参数约束及描述：费用类型。0：消费；1：退订；2：华为核销。|
+        账单类型。 0：正常1：退订2：华为核销
 
         :return: The bill_type of this BillSumInfoV2.
         :rtype: str
@@ -150,7 +150,7 @@ class BillSumInfoV2:
     def bill_type(self, bill_type):
         """Sets the bill_type of this BillSumInfoV2.
 
-        |参数名称：费用类型。0：消费；1：退订；2：华为核销。| |参数约束及描述：费用类型。0：消费；1：退订；2：华为核销。|
+        账单类型。 0：正常1：退订2：华为核销
 
         :param bill_type: The bill_type of this BillSumInfoV2.
         :type: str
@@ -161,7 +161,7 @@ class BillSumInfoV2:
     def charge_mode(self):
         """Gets the charge_mode of this BillSumInfoV2.
 
-        |参数名称：消费类型。1：包周期；3: 按需。| |参数约束及描述：消费类型。1：包周期；3: 按需。|
+        计费模式。 1：包年/包月3: 按需
 
         :return: The charge_mode of this BillSumInfoV2.
         :rtype: str
@@ -172,7 +172,7 @@ class BillSumInfoV2:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this BillSumInfoV2.
 
-        |参数名称：消费类型。1：包周期；3: 按需。| |参数约束及描述：消费类型。1：包周期；3: 按需。|
+        计费模式。 1：包年/包月3: 按需
 
         :param charge_mode: The charge_mode of this BillSumInfoV2.
         :type: str
@@ -183,7 +183,7 @@ class BillSumInfoV2:
     def amount(self):
         """Gets the amount of this BillSumInfoV2.
 
-        |参数名称：消费的金额，即从客户账户实际扣除的金额。对于billType=1或者2的账单，该金额为负值。| |参数的约束及描述：消费的金额，即从客户账户实际扣除的金额。对于billType=1或者2的账单，该金额为负值。|
+        金额。 对于billType=1或者2的账单，该金额为负值。
 
         :return: The amount of this BillSumInfoV2.
         :rtype: float
@@ -194,7 +194,7 @@ class BillSumInfoV2:
     def amount(self, amount):
         """Sets the amount of this BillSumInfoV2.
 
-        |参数名称：消费的金额，即从客户账户实际扣除的金额。对于billType=1或者2的账单，该金额为负值。| |参数的约束及描述：消费的金额，即从客户账户实际扣除的金额。对于billType=1或者2的账单，该金额为负值。|
+        金额。 对于billType=1或者2的账单，该金额为负值。
 
         :param amount: The amount of this BillSumInfoV2.
         :type: float
@@ -205,7 +205,7 @@ class BillSumInfoV2:
     def debt_amount(self):
         """Gets the debt_amount of this BillSumInfoV2.
 
-        |参数名称：欠费金额，指从客户账户扣费的时候，客户账户金额不足，欠费的金额，华为核销或者退订的时候没有该字段。| |参数的约束及描述：欠费金额，指从客户账户扣费的时候，客户账户金额不足，欠费的金额，华为核销或者退订的时候没有该字段。|
+        欠费金额，指从客户账户扣费的时候，客户账户金额不足，欠费的金额，华为核销或者退订的时候没有该字段。
 
         :return: The debt_amount of this BillSumInfoV2.
         :rtype: float
@@ -216,7 +216,7 @@ class BillSumInfoV2:
     def debt_amount(self, debt_amount):
         """Sets the debt_amount of this BillSumInfoV2.
 
-        |参数名称：欠费金额，指从客户账户扣费的时候，客户账户金额不足，欠费的金额，华为核销或者退订的时候没有该字段。| |参数的约束及描述：欠费金额，指从客户账户扣费的时候，客户账户金额不足，欠费的金额，华为核销或者退订的时候没有该字段。|
+        欠费金额，指从客户账户扣费的时候，客户账户金额不足，欠费的金额，华为核销或者退订的时候没有该字段。
 
         :param debt_amount: The debt_amount of this BillSumInfoV2.
         :type: float
@@ -227,7 +227,7 @@ class BillSumInfoV2:
     def adjustment_amount(self):
         """Gets the adjustment_amount of this BillSumInfoV2.
 
-        |参数名称：核销欠款，华为核销或者退订的时候没有该字段。| |参数的约束及描述：核销欠款，华为核销或者退订的时候没有该字段。|
+        核销欠款，华为核销或者退订的时候没有该字段。
 
         :return: The adjustment_amount of this BillSumInfoV2.
         :rtype: float
@@ -238,7 +238,7 @@ class BillSumInfoV2:
     def adjustment_amount(self, adjustment_amount):
         """Sets the adjustment_amount of this BillSumInfoV2.
 
-        |参数名称：核销欠款，华为核销或者退订的时候没有该字段。| |参数的约束及描述：核销欠款，华为核销或者退订的时候没有该字段。|
+        核销欠款，华为核销或者退订的时候没有该字段。
 
         :param adjustment_amount: The adjustment_amount of this BillSumInfoV2.
         :type: float
@@ -249,7 +249,7 @@ class BillSumInfoV2:
     def discount_amount(self):
         """Gets the discount_amount of this BillSumInfoV2.
 
-        |参数名称：折扣金额，华为核销或者退订的时候没有该字段。| |参数的约束及描述：折扣金额，华为核销或者退订的时候没有该字段。|
+        折扣金额，华为核销或者退订的时候没有该字段。
 
         :return: The discount_amount of this BillSumInfoV2.
         :rtype: float
@@ -260,7 +260,7 @@ class BillSumInfoV2:
     def discount_amount(self, discount_amount):
         """Sets the discount_amount of this BillSumInfoV2.
 
-        |参数名称：折扣金额，华为核销或者退订的时候没有该字段。| |参数的约束及描述：折扣金额，华为核销或者退订的时候没有该字段。|
+        折扣金额，华为核销或者退订的时候没有该字段。
 
         :param discount_amount: The discount_amount of this BillSumInfoV2.
         :type: float
@@ -271,7 +271,7 @@ class BillSumInfoV2:
     def measure_id(self):
         """Gets the measure_id of this BillSumInfoV2.
 
-        |参数名称：金额单位。1：元| |参数的约束及描述：金额单位。1：元|
+        金额单位。 1：元
 
         :return: The measure_id of this BillSumInfoV2.
         :rtype: int
@@ -282,7 +282,7 @@ class BillSumInfoV2:
     def measure_id(self, measure_id):
         """Sets the measure_id of this BillSumInfoV2.
 
-        |参数名称：金额单位。1：元| |参数的约束及描述：金额单位。1：元|
+        金额单位。 1：元
 
         :param measure_id: The measure_id of this BillSumInfoV2.
         :type: int
@@ -293,7 +293,7 @@ class BillSumInfoV2:
     def account_details(self):
         """Gets the account_details of this BillSumInfoV2.
 
-        |参数名称：按不同账户消费类型和付费方式区分的支付总金额。具体请参见表 BalanceTypeDeductSum。| |参数约束以及描述：按不同账户消费类型和付费方式区分的支付总金额。具体请参见表 BalanceTypeDeductSum。|
+        按不同账户消费类型和付费方式区分的支付总金额。 具体请参见表3。
 
         :return: The account_details of this BillSumInfoV2.
         :rtype: list[BalanceTypeDeductSumV2]
@@ -304,7 +304,7 @@ class BillSumInfoV2:
     def account_details(self, account_details):
         """Sets the account_details of this BillSumInfoV2.
 
-        |参数名称：按不同账户消费类型和付费方式区分的支付总金额。具体请参见表 BalanceTypeDeductSum。| |参数约束以及描述：按不同账户消费类型和付费方式区分的支付总金额。具体请参见表 BalanceTypeDeductSum。|
+        按不同账户消费类型和付费方式区分的支付总金额。 具体请参见表3。
 
         :param account_details: The account_details of this BillSumInfoV2.
         :type: list[BalanceTypeDeductSumV2]
@@ -315,7 +315,7 @@ class BillSumInfoV2:
     def resource_type_code(self):
         """Gets the resource_type_code of this BillSumInfoV2.
 
-        |参数名称：资源类型编码| |参数约束及描述：资源类型编码|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :return: The resource_type_code of this BillSumInfoV2.
         :rtype: str
@@ -326,7 +326,7 @@ class BillSumInfoV2:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this BillSumInfoV2.
 
-        |参数名称：资源类型编码| |参数约束及描述：资源类型编码|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type_code: The resource_type_code of this BillSumInfoV2.
         :type: str

@@ -100,7 +100,7 @@ class QuotaRecord:
     def id(self):
         """Gets the id of this QuotaRecord.
 
-        |参数名称：记录ID| |参数约束及描述：记录ID|
+        记录ID。
 
         :return: The id of this QuotaRecord.
         :rtype: str
@@ -111,7 +111,7 @@ class QuotaRecord:
     def id(self, id):
         """Sets the id of this QuotaRecord.
 
-        |参数名称：记录ID| |参数约束及描述：记录ID|
+        记录ID。
 
         :param id: The id of this QuotaRecord.
         :type: str
@@ -122,7 +122,7 @@ class QuotaRecord:
     def operator(self):
         """Gets the operator of this QuotaRecord.
 
-        |参数名称：操作员额账号名称| |参数约束及描述：操作员额账号名称|
+        操作员的账号名称。
 
         :return: The operator of this QuotaRecord.
         :rtype: str
@@ -133,7 +133,7 @@ class QuotaRecord:
     def operator(self, operator):
         """Sets the operator of this QuotaRecord.
 
-        |参数名称：操作员额账号名称| |参数约束及描述：操作员额账号名称|
+        操作员的账号名称。
 
         :param operator: The operator of this QuotaRecord.
         :type: str
@@ -144,7 +144,7 @@ class QuotaRecord:
     def operation_type(self):
         """Gets the operation_type of this QuotaRecord.
 
-        |参数名称：操作类型10：发放额度11：回收额度| |参数约束及描述：操作类型10：发放额度11：回收额度|
+        操作类型。 10：发放额度11：回收额度
 
         :return: The operation_type of this QuotaRecord.
         :rtype: str
@@ -155,7 +155,7 @@ class QuotaRecord:
     def operation_type(self, operation_type):
         """Sets the operation_type of this QuotaRecord.
 
-        |参数名称：操作类型10：发放额度11：回收额度| |参数约束及描述：操作类型10：发放额度11：回收额度|
+        操作类型。 10：发放额度11：回收额度
 
         :param operation_type: The operation_type of this QuotaRecord.
         :type: str
@@ -166,7 +166,7 @@ class QuotaRecord:
     def quota_id(self):
         """Gets the quota_id of this QuotaRecord.
 
-        |参数名称：额度ID，这里指的是一级经销商发给二级经销商额度时，产生的二级经销商的额度ID，或者从二级经销商回收的时候，二级经销商的额度ID| |参数约束及描述：额度ID，这里指的是一级经销商发给二级经销商额度时，产生的二级经销商的额度ID，或者从二级经销商回收的时候，二级经销商的额度ID|
+        精英服务商的代金券额度ID。 即华为云伙伴能力中心给精英服务商发放代金券额度时，产生的精英服务商的代金券额度ID，或者从精英服务商回收代金券额度时，精英服务商的代金券额度ID。
 
         :return: The quota_id of this QuotaRecord.
         :rtype: str
@@ -177,7 +177,7 @@ class QuotaRecord:
     def quota_id(self, quota_id):
         """Sets the quota_id of this QuotaRecord.
 
-        |参数名称：额度ID，这里指的是一级经销商发给二级经销商额度时，产生的二级经销商的额度ID，或者从二级经销商回收的时候，二级经销商的额度ID| |参数约束及描述：额度ID，这里指的是一级经销商发给二级经销商额度时，产生的二级经销商的额度ID，或者从二级经销商回收的时候，二级经销商的额度ID|
+        精英服务商的代金券额度ID。 即华为云伙伴能力中心给精英服务商发放代金券额度时，产生的精英服务商的代金券额度ID，或者从精英服务商回收代金券额度时，精英服务商的代金券额度ID。
 
         :param quota_id: The quota_id of this QuotaRecord.
         :type: str
@@ -188,7 +188,7 @@ class QuotaRecord:
     def parent_quota_id(self):
         """Gets the parent_quota_id of this QuotaRecord.
 
-        |参数名称：父额度ID，这里指的是一级经销商发给二级经销商额度时，一级经销商的额度ID，或者从二级经销商回收的时候，回收到的一级经销商的额度ID| |参数约束及描述：父额度ID，这里指的是一级经销商发给二级经销商额度时，一级经销商的额度ID，或者从二级经销商回收的时候，回收到的一级经销商的额度ID|
+        父额度ID。 这即华为云伙伴能力中心给精英服务商发放代金券额度时，华为云伙伴能力中心的额度ID，或者从精英服务商回收代金券额度时，回收的华为云伙伴能力中心的额度ID。
 
         :return: The parent_quota_id of this QuotaRecord.
         :rtype: str
@@ -199,7 +199,7 @@ class QuotaRecord:
     def parent_quota_id(self, parent_quota_id):
         """Sets the parent_quota_id of this QuotaRecord.
 
-        |参数名称：父额度ID，这里指的是一级经销商发给二级经销商额度时，一级经销商的额度ID，或者从二级经销商回收的时候，回收到的一级经销商的额度ID| |参数约束及描述：父额度ID，这里指的是一级经销商发给二级经销商额度时，一级经销商的额度ID，或者从二级经销商回收的时候，回收到的一级经销商的额度ID|
+        父额度ID。 这即华为云伙伴能力中心给精英服务商发放代金券额度时，华为云伙伴能力中心的额度ID，或者从精英服务商回收代金券额度时，回收的华为云伙伴能力中心的额度ID。
 
         :param parent_quota_id: The parent_quota_id of this QuotaRecord.
         :type: str
@@ -210,7 +210,7 @@ class QuotaRecord:
     def amount(self):
         """Gets the amount of this QuotaRecord.
 
-        |参数名称：发放回收的金额，小数点后2位，单位元| |参数的约束及描述：发放回收的金额，小数点后2位，单位元|
+        发放回收的金额。 取值大于0且精确到小数点后2位，单位：元。
 
         :return: The amount of this QuotaRecord.
         :rtype: float
@@ -221,7 +221,7 @@ class QuotaRecord:
     def amount(self, amount):
         """Sets the amount of this QuotaRecord.
 
-        |参数名称：发放回收的金额，小数点后2位，单位元| |参数的约束及描述：发放回收的金额，小数点后2位，单位元|
+        发放回收的金额。 取值大于0且精确到小数点后2位，单位：元。
 
         :param amount: The amount of this QuotaRecord.
         :type: float
@@ -232,7 +232,7 @@ class QuotaRecord:
     def operation_time(self):
         """Gets the operation_time of this QuotaRecord.
 
-        |参数名称：操作时间，UTC时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：操作时间，UTC时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        操作时间，UTC时间，UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
         :return: The operation_time of this QuotaRecord.
         :rtype: str
@@ -243,7 +243,7 @@ class QuotaRecord:
     def operation_time(self, operation_time):
         """Sets the operation_time of this QuotaRecord.
 
-        |参数名称：操作时间，UTC时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：操作时间，UTC时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        操作时间，UTC时间，UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param operation_time: The operation_time of this QuotaRecord.
         :type: str
@@ -254,7 +254,7 @@ class QuotaRecord:
     def result(self):
         """Gets the result of this QuotaRecord.
 
-        |参数名称：操作结果0：成功-1：失败| |参数约束及描述：操作结果0：成功-1：失败|
+        操作结果。 0：成功-1：失败
 
         :return: The result of this QuotaRecord.
         :rtype: str
@@ -265,7 +265,7 @@ class QuotaRecord:
     def result(self, result):
         """Sets the result of this QuotaRecord.
 
-        |参数名称：操作结果0：成功-1：失败| |参数约束及描述：操作结果0：成功-1：失败|
+        操作结果。 0：成功-1：失败
 
         :param result: The result of this QuotaRecord.
         :type: str
@@ -276,7 +276,7 @@ class QuotaRecord:
     def indirect_partner_account_name(self):
         """Gets the indirect_partner_account_name of this QuotaRecord.
 
-        |参数名称：二级经销商的管理员账号名| |参数约束及描述：二级经销商的管理员账号名|
+        精英服务商的账号名。
 
         :return: The indirect_partner_account_name of this QuotaRecord.
         :rtype: str
@@ -287,7 +287,7 @@ class QuotaRecord:
     def indirect_partner_account_name(self, indirect_partner_account_name):
         """Sets the indirect_partner_account_name of this QuotaRecord.
 
-        |参数名称：二级经销商的管理员账号名| |参数约束及描述：二级经销商的管理员账号名|
+        精英服务商的账号名。
 
         :param indirect_partner_account_name: The indirect_partner_account_name of this QuotaRecord.
         :type: str
@@ -298,7 +298,7 @@ class QuotaRecord:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this QuotaRecord.
 
-        |参数名称：二级经销商ID| |参数约束及描述：二级经销商ID|
+        精英服务商ID。
 
         :return: The indirect_partner_id of this QuotaRecord.
         :rtype: str
@@ -309,7 +309,7 @@ class QuotaRecord:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this QuotaRecord.
 
-        |参数名称：二级经销商ID| |参数约束及描述：二级经销商ID|
+        精英服务商ID。
 
         :param indirect_partner_id: The indirect_partner_id of this QuotaRecord.
         :type: str
@@ -320,7 +320,7 @@ class QuotaRecord:
     def indirect_partner_name(self):
         """Gets the indirect_partner_name of this QuotaRecord.
 
-        |参数名称：二级经销商的公司名称| |参数约束及描述：二级经销商的公司名称|
+        精英服务商的公司名称。
 
         :return: The indirect_partner_name of this QuotaRecord.
         :rtype: str
@@ -331,7 +331,7 @@ class QuotaRecord:
     def indirect_partner_name(self, indirect_partner_name):
         """Sets the indirect_partner_name of this QuotaRecord.
 
-        |参数名称：二级经销商的公司名称| |参数约束及描述：二级经销商的公司名称|
+        精英服务商的公司名称。
 
         :param indirect_partner_name: The indirect_partner_name of this QuotaRecord.
         :type: str
@@ -342,7 +342,7 @@ class QuotaRecord:
     def remark(self):
         """Gets the remark of this QuotaRecord.
 
-        |参数名称：备注| |参数约束及描述：备注|
+        备注。
 
         :return: The remark of this QuotaRecord.
         :rtype: str
@@ -353,7 +353,7 @@ class QuotaRecord:
     def remark(self, remark):
         """Sets the remark of this QuotaRecord.
 
-        |参数名称：备注| |参数约束及描述：备注|
+        备注。
 
         :param remark: The remark of this QuotaRecord.
         :type: str

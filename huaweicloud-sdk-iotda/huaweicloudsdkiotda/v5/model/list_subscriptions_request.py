@@ -21,12 +21,8 @@ class ListSubscriptionsRequest:
     """
 
     sensitive_list = []
-    sensitive_list.append('sp_auth_token')
-    sensitive_list.append('stage_auth_token')
 
     openapi_types = {
-        'sp_auth_token': 'str',
-        'stage_auth_token': 'str',
         'instance_id': 'str',
         'resource': 'str',
         'event': 'str',
@@ -39,8 +35,6 @@ class ListSubscriptionsRequest:
     }
 
     attribute_map = {
-        'sp_auth_token': 'Sp-Auth-Token',
-        'stage_auth_token': 'Stage-Auth-Token',
         'instance_id': 'Instance-Id',
         'resource': 'resource',
         'event': 'event',
@@ -52,13 +46,11 @@ class ListSubscriptionsRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, sp_auth_token=None, stage_auth_token=None, instance_id=None, resource=None, event=None, callbackurl=None, app_id=None, channel=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):
+    def __init__(self, instance_id=None, resource=None, event=None, callbackurl=None, app_id=None, channel=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):
         """ListSubscriptionsRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._sp_auth_token = None
-        self._stage_auth_token = None
         self._instance_id = None
         self._resource = None
         self._event = None
@@ -70,10 +62,6 @@ class ListSubscriptionsRequest:
         self._offset = None
         self.discriminator = None
 
-        if sp_auth_token is not None:
-            self.sp_auth_token = sp_auth_token
-        if stage_auth_token is not None:
-            self.stage_auth_token = stage_auth_token
         if instance_id is not None:
             self.instance_id = instance_id
         if resource is not None:
@@ -92,46 +80,6 @@ class ListSubscriptionsRequest:
             self.marker = marker
         if offset is not None:
             self.offset = offset
-
-    @property
-    def sp_auth_token(self):
-        """Gets the sp_auth_token of this ListSubscriptionsRequest.
-
-
-        :return: The sp_auth_token of this ListSubscriptionsRequest.
-        :rtype: str
-        """
-        return self._sp_auth_token
-
-    @sp_auth_token.setter
-    def sp_auth_token(self, sp_auth_token):
-        """Sets the sp_auth_token of this ListSubscriptionsRequest.
-
-
-        :param sp_auth_token: The sp_auth_token of this ListSubscriptionsRequest.
-        :type: str
-        """
-        self._sp_auth_token = sp_auth_token
-
-    @property
-    def stage_auth_token(self):
-        """Gets the stage_auth_token of this ListSubscriptionsRequest.
-
-
-        :return: The stage_auth_token of this ListSubscriptionsRequest.
-        :rtype: str
-        """
-        return self._stage_auth_token
-
-    @stage_auth_token.setter
-    def stage_auth_token(self, stage_auth_token):
-        """Sets the stage_auth_token of this ListSubscriptionsRequest.
-
-
-        :param stage_auth_token: The stage_auth_token of this ListSubscriptionsRequest.
-        :type: str
-        """
-        self._stage_auth_token = stage_auth_token
 
     @property
     def instance_id(self):

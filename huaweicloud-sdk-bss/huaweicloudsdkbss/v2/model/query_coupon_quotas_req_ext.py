@@ -100,7 +100,7 @@ class QueryCouponQuotasReqExt:
     def quota_ids(self):
         """Gets the quota_ids of this QueryCouponQuotasReqExt.
 
-        |参数名称：额度ID列表。| |参数约束以及描述：额度ID列表。|
+        优惠券额度ID列表。
 
         :return: The quota_ids of this QueryCouponQuotasReqExt.
         :rtype: list[str]
@@ -111,7 +111,7 @@ class QueryCouponQuotasReqExt:
     def quota_ids(self, quota_ids):
         """Sets the quota_ids of this QueryCouponQuotasReqExt.
 
-        |参数名称：额度ID列表。| |参数约束以及描述：额度ID列表。|
+        优惠券额度ID列表。
 
         :param quota_ids: The quota_ids of this QueryCouponQuotasReqExt.
         :type: list[str]
@@ -122,7 +122,7 @@ class QueryCouponQuotasReqExt:
     def quota_status_list(self):
         """Gets the quota_status_list of this QueryCouponQuotasReqExt.
 
-        |参数名称：额度状态列表。| |参数约束以及描述：额度状态列表。|
+        优惠券额度状态列表。 0：正常3：失效（过期失效和人工设置失效）4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放优惠券）5：冻结
 
         :return: The quota_status_list of this QueryCouponQuotasReqExt.
         :rtype: list[int]
@@ -133,7 +133,7 @@ class QueryCouponQuotasReqExt:
     def quota_status_list(self, quota_status_list):
         """Sets the quota_status_list of this QueryCouponQuotasReqExt.
 
-        |参数名称：额度状态列表。| |参数约束以及描述：额度状态列表。|
+        优惠券额度状态列表。 0：正常3：失效（过期失效和人工设置失效）4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放优惠券）5：冻结
 
         :param quota_status_list: The quota_status_list of this QueryCouponQuotasReqExt.
         :type: list[int]
@@ -144,7 +144,7 @@ class QueryCouponQuotasReqExt:
     def quota_type(self):
         """Gets the quota_type of this QueryCouponQuotasReqExt.
 
-        |参数名称：额度类型：0：代金券额度；1：现金券额度。| |参数的约束及描述：额度类型：0：代金券额度；1：现金券额度。|
+        优惠券额度的类型： 0：代金券额度1：现金券额度
 
         :return: The quota_type of this QueryCouponQuotasReqExt.
         :rtype: int
@@ -155,7 +155,7 @@ class QueryCouponQuotasReqExt:
     def quota_type(self, quota_type):
         """Sets the quota_type of this QueryCouponQuotasReqExt.
 
-        |参数名称：额度类型：0：代金券额度；1：现金券额度。| |参数的约束及描述：额度类型：0：代金券额度；1：现金券额度。|
+        优惠券额度的类型： 0：代金券额度1：现金券额度
 
         :param quota_type: The quota_type of this QueryCouponQuotasReqExt.
         :type: int
@@ -166,7 +166,7 @@ class QueryCouponQuotasReqExt:
     def create_time_begin(self):
         """Gets the create_time_begin of this QueryCouponQuotasReqExt.
 
-        |参数名称：创建时间（开始）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出创建时间大于这个时间的记录。| |参数约束及描述：创建时间（开始）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出创建时间大于这个时间的记录。|
+        创建时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出创建时间大于这个时间的记录。
 
         :return: The create_time_begin of this QueryCouponQuotasReqExt.
         :rtype: str
@@ -177,7 +177,7 @@ class QueryCouponQuotasReqExt:
     def create_time_begin(self, create_time_begin):
         """Sets the create_time_begin of this QueryCouponQuotasReqExt.
 
-        |参数名称：创建时间（开始）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出创建时间大于这个时间的记录。| |参数约束及描述：创建时间（开始）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出创建时间大于这个时间的记录。|
+        创建时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出创建时间大于这个时间的记录。
 
         :param create_time_begin: The create_time_begin of this QueryCouponQuotasReqExt.
         :type: str
@@ -188,7 +188,7 @@ class QueryCouponQuotasReqExt:
     def create_time_end(self):
         """Gets the create_time_end of this QueryCouponQuotasReqExt.
 
-        |参数名称：创建时间（结束）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出创建时间小于这个时间的记录。| |参数约束及描述：创建时间（结束）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出创建时间小于这个时间的记录。|
+        创建时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出创建时间小于这个时间的记录。
 
         :return: The create_time_end of this QueryCouponQuotasReqExt.
         :rtype: str
@@ -199,7 +199,7 @@ class QueryCouponQuotasReqExt:
     def create_time_end(self, create_time_end):
         """Sets the create_time_end of this QueryCouponQuotasReqExt.
 
-        |参数名称：创建时间（结束）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出创建时间小于这个时间的记录。| |参数约束及描述：创建时间（结束）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出创建时间小于这个时间的记录。|
+        创建时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出创建时间小于这个时间的记录。
 
         :param create_time_end: The create_time_end of this QueryCouponQuotasReqExt.
         :type: str
@@ -210,7 +210,7 @@ class QueryCouponQuotasReqExt:
     def effective_time_begin(self):
         """Gets the effective_time_begin of this QueryCouponQuotasReqExt.
 
-        |参数名称：生效时间（开始）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出生效时间大于这个时间的记录。| |参数约束及描述：生效时间（开始）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出生效时间大于这个时间的记录。|
+        生效时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出生效时间大于这个时间的记录。
 
         :return: The effective_time_begin of this QueryCouponQuotasReqExt.
         :rtype: str
@@ -221,7 +221,7 @@ class QueryCouponQuotasReqExt:
     def effective_time_begin(self, effective_time_begin):
         """Sets the effective_time_begin of this QueryCouponQuotasReqExt.
 
-        |参数名称：生效时间（开始）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出生效时间大于这个时间的记录。| |参数约束及描述：生效时间（开始）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出生效时间大于这个时间的记录。|
+        生效时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出生效时间大于这个时间的记录。
 
         :param effective_time_begin: The effective_time_begin of this QueryCouponQuotasReqExt.
         :type: str
@@ -232,7 +232,7 @@ class QueryCouponQuotasReqExt:
     def effective_time_end(self):
         """Gets the effective_time_end of this QueryCouponQuotasReqExt.
 
-        |参数名称：生效时间（结束）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出生效时间小于这个时间的记录。| |参数约束及描述：生效时间（结束）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出生效时间小于这个时间的记录。|
+        生效时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出生效时间小于这个时间的记录。
 
         :return: The effective_time_end of this QueryCouponQuotasReqExt.
         :rtype: str
@@ -243,7 +243,7 @@ class QueryCouponQuotasReqExt:
     def effective_time_end(self, effective_time_end):
         """Sets the effective_time_end of this QueryCouponQuotasReqExt.
 
-        |参数名称：生效时间（结束）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出生效时间小于这个时间的记录。| |参数约束及描述：生效时间（结束）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出生效时间小于这个时间的记录。|
+        生效时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出生效时间小于这个时间的记录。
 
         :param effective_time_end: The effective_time_end of this QueryCouponQuotasReqExt.
         :type: str
@@ -254,7 +254,7 @@ class QueryCouponQuotasReqExt:
     def expire_time_begin(self):
         """Gets the expire_time_begin of this QueryCouponQuotasReqExt.
 
-        |参数名称：失效时间（开始）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出失效时间大于这个时间的记录。| |参数约束及描述：失效时间（开始）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出失效时间大于这个时间的记录。|
+        失效时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出失效时间大于这个时间的记录。
 
         :return: The expire_time_begin of this QueryCouponQuotasReqExt.
         :rtype: str
@@ -265,7 +265,7 @@ class QueryCouponQuotasReqExt:
     def expire_time_begin(self, expire_time_begin):
         """Sets the expire_time_begin of this QueryCouponQuotasReqExt.
 
-        |参数名称：失效时间（开始）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出失效时间大于这个时间的记录。| |参数约束及描述：失效时间（开始）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出失效时间大于这个时间的记录。|
+        失效时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出失效时间大于这个时间的记录。
 
         :param expire_time_begin: The expire_time_begin of this QueryCouponQuotasReqExt.
         :type: str
@@ -276,7 +276,7 @@ class QueryCouponQuotasReqExt:
     def expire_time_end(self):
         """Gets the expire_time_end of this QueryCouponQuotasReqExt.
 
-        |参数名称：失效时间（结束）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出失效时间小于这个时间的记录。| |参数约束及描述：失效时间（结束）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出失效时间小于这个时间的记录。|
+        失效时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出失效时间小于这个时间的记录。
 
         :return: The expire_time_end of this QueryCouponQuotasReqExt.
         :rtype: str
@@ -287,7 +287,7 @@ class QueryCouponQuotasReqExt:
     def expire_time_end(self, expire_time_end):
         """Sets the expire_time_end of this QueryCouponQuotasReqExt.
 
-        |参数名称：失效时间（结束）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出失效时间小于这个时间的记录。| |参数约束及描述：失效时间（结束）。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出失效时间小于这个时间的记录。|
+        失效时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出失效时间小于这个时间的记录。
 
         :param expire_time_end: The expire_time_end of this QueryCouponQuotasReqExt.
         :type: str
@@ -298,7 +298,7 @@ class QueryCouponQuotasReqExt:
     def offset(self):
         """Gets the offset of this QueryCouponQuotasReqExt.
 
-        |参数名称：偏移量，从0开始默认取值为0。| |参数的约束及描述：偏移量，从0开始默认取值为0。|
+        偏移量，从0开始。默认值为0。
 
         :return: The offset of this QueryCouponQuotasReqExt.
         :rtype: int
@@ -309,7 +309,7 @@ class QueryCouponQuotasReqExt:
     def offset(self, offset):
         """Sets the offset of this QueryCouponQuotasReqExt.
 
-        |参数名称：偏移量，从0开始默认取值为0。| |参数的约束及描述：偏移量，从0开始默认取值为0。|
+        偏移量，从0开始。默认值为0。
 
         :param offset: The offset of this QueryCouponQuotasReqExt.
         :type: int
@@ -320,7 +320,7 @@ class QueryCouponQuotasReqExt:
     def limit(self):
         """Gets the limit of this QueryCouponQuotasReqExt.
 
-        |参数名称：每次查询记录数。默认取值为10。| |参数的约束及描述：每次查询记录数。默认取值为10。|
+        每次查询记录数。默认值为10。
 
         :return: The limit of this QueryCouponQuotasReqExt.
         :rtype: int
@@ -331,7 +331,7 @@ class QueryCouponQuotasReqExt:
     def limit(self, limit):
         """Sets the limit of this QueryCouponQuotasReqExt.
 
-        |参数名称：每次查询记录数。默认取值为10。| |参数的约束及描述：每次查询记录数。默认取值为10。|
+        每次查询记录数。默认值为10。
 
         :param limit: The limit of this QueryCouponQuotasReqExt.
         :type: int
@@ -342,7 +342,7 @@ class QueryCouponQuotasReqExt:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this QueryCouponQuotasReqExt.
 
-        |参数名称：精英服务商（二级经销商）ID，如果要查询二级经销商的额度，需要输入这个参数，否则查询的是一级经销商本人的。| |参数的约束及描述：精英服务商（二级经销商）ID，如果要查询二级经销商的额度，需要输入这个参数，否则查询的是一级经销商本人的。|
+        精英服务商（二级经销商）ID。 华为云伙伴能力中心（一级经销商）查询精英服务商的优惠券额度时，需要携带该参数；否则只能查询自己的优惠券额度。
 
         :return: The indirect_partner_id of this QueryCouponQuotasReqExt.
         :rtype: str
@@ -353,7 +353,7 @@ class QueryCouponQuotasReqExt:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this QueryCouponQuotasReqExt.
 
-        |参数名称：精英服务商（二级经销商）ID，如果要查询二级经销商的额度，需要输入这个参数，否则查询的是一级经销商本人的。| |参数的约束及描述：精英服务商（二级经销商）ID，如果要查询二级经销商的额度，需要输入这个参数，否则查询的是一级经销商本人的。|
+        精英服务商（二级经销商）ID。 华为云伙伴能力中心（一级经销商）查询精英服务商的优惠券额度时，需要携带该参数；否则只能查询自己的优惠券额度。
 
         :param indirect_partner_id: The indirect_partner_id of this QueryCouponQuotasReqExt.
         :type: str

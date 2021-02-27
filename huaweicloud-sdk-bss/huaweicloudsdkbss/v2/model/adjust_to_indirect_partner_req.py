@@ -48,7 +48,7 @@ class AdjustToIndirectPartnerReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this AdjustToIndirectPartnerReq.
 
-        |参数名称：合作伙伴关联的二级经销商伙伴ID。| |参数约束及描述：必填，最大长度64，合作伙伴关联的二级经销商伙伴ID。|
+        精英服务商ID。您可以调用查询精英服务商列表接口获取。
 
         :return: The indirect_partner_id of this AdjustToIndirectPartnerReq.
         :rtype: str
@@ -59,7 +59,7 @@ class AdjustToIndirectPartnerReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this AdjustToIndirectPartnerReq.
 
-        |参数名称：合作伙伴关联的二级经销商伙伴ID。| |参数约束及描述：必填，最大长度64，合作伙伴关联的二级经销商伙伴ID。|
+        精英服务商ID。您可以调用查询精英服务商列表接口获取。
 
         :param indirect_partner_id: The indirect_partner_id of this AdjustToIndirectPartnerReq.
         :type: str
@@ -70,7 +70,7 @@ class AdjustToIndirectPartnerReq:
     def amount(self):
         """Gets the amount of this AdjustToIndirectPartnerReq.
 
-        |参数名称：授信金额。单位为元不能为负数，精确到小数点后两位。| |参数的约束及描述：授信金额。单位为元不能为负数，精确到小数点后两位。|
+        华为云伙伴能力中心向精英服务商拨款的金额。 单位：元。取值大于0且精确到小数点后2位。
 
         :return: The amount of this AdjustToIndirectPartnerReq.
         :rtype: float
@@ -81,7 +81,7 @@ class AdjustToIndirectPartnerReq:
     def amount(self, amount):
         """Sets the amount of this AdjustToIndirectPartnerReq.
 
-        |参数名称：授信金额。单位为元不能为负数，精确到小数点后两位。| |参数的约束及描述：授信金额。单位为元不能为负数，精确到小数点后两位。|
+        华为云伙伴能力中心向精英服务商拨款的金额。 单位：元。取值大于0且精确到小数点后2位。
 
         :param amount: The amount of this AdjustToIndirectPartnerReq.
         :type: float

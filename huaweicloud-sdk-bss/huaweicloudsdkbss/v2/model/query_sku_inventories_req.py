@@ -44,7 +44,7 @@ class QuerySkuInventoriesReq:
     def sku_items(self):
         """Gets the sku_items of this QuerySkuInventoriesReq.
 
-        |参数名称：待查询库存项| |参数约束以及描述：待查询库存项|
+        待查询库存项，参见表1。
 
         :return: The sku_items of this QuerySkuInventoriesReq.
         :rtype: list[SkuItem]
@@ -55,7 +55,7 @@ class QuerySkuInventoriesReq:
     def sku_items(self, sku_items):
         """Sets the sku_items of this QuerySkuInventoriesReq.
 
-        |参数名称：待查询库存项| |参数约束以及描述：待查询库存项|
+        待查询库存项，参见表1。
 
         :param sku_items: The sku_items of this QuerySkuInventoriesReq.
         :type: list[SkuItem]

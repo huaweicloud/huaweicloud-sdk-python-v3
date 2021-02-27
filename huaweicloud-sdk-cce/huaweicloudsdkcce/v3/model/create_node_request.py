@@ -24,31 +24,27 @@ class CreateNodeRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'content_type': 'str',
         'nodepool_scale_up': 'str',
         'body': 'V3NodeCreateRequest'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'content_type': 'Content-Type',
         'nodepool_scale_up': 'nodepoolScaleUp',
         'body': 'body'
     }
 
-    def __init__(self, cluster_id=None, content_type='application/json', nodepool_scale_up=None, body=None):
+    def __init__(self, cluster_id=None, nodepool_scale_up=None, body=None):
         """CreateNodeRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._cluster_id = None
-        self._content_type = None
         self._nodepool_scale_up = None
         self._body = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
-        self.content_type = content_type
         if nodepool_scale_up is not None:
             self.nodepool_scale_up = nodepool_scale_up
         if body is not None:
@@ -73,26 +69,6 @@ class CreateNodeRequest:
         :type: str
         """
         self._cluster_id = cluster_id
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this CreateNodeRequest.
-
-
-        :return: The content_type of this CreateNodeRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this CreateNodeRequest.
-
-
-        :param content_type: The content_type of this CreateNodeRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def nodepool_scale_up(self):

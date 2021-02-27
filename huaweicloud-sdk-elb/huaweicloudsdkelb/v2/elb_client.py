@@ -1523,23 +1523,23 @@ class ElbClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_menbers(self, request):
+    def list_members(self, request):
         """查询后端云服务器列表
 
         添加属于某个后端云服务器组的后端云服务器。
 
-        :param ListMenbersRequest request
-        :return: ListMenbersResponse
+        :param ListMembersRequest request
+        :return: ListMembersResponse
         """
-        return self.list_menbers_with_http_info(request)
+        return self.list_members_with_http_info(request)
 
-    def list_menbers_with_http_info(self, request):
+    def list_members_with_http_info(self, request):
         """查询后端云服务器列表
 
         添加属于某个后端云服务器组的后端云服务器。
 
-        :param ListMenbersRequest request
-        :return: ListMenbersResponse
+        :param ListMembersRequest request
+        :return: ListMembersResponse
         """
 
         all_params = ['pool_id', 'limit', 'marker', 'page_reverse', 'id', 'name', 'address', 'protocol_port', 'subnet_id', 'admin_state_up', 'weight']
@@ -1599,7 +1599,7 @@ class ElbClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ListMenbersResponse',
+            response_type='ListMembersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

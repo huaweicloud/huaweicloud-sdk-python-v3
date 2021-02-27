@@ -64,7 +64,7 @@ class CustomerBalancesV2:
     def customer_id(self):
         """Gets the customer_id of this CustomerBalancesV2.
 
-        |参数名称：客户的客户ID。| |参数约束及描述：客户的客户ID。|
+        客户账号ID。
 
         :return: The customer_id of this CustomerBalancesV2.
         :rtype: str
@@ -75,7 +75,7 @@ class CustomerBalancesV2:
     def customer_id(self, customer_id):
         """Sets the customer_id of this CustomerBalancesV2.
 
-        |参数名称：客户的客户ID。| |参数约束及描述：客户的客户ID。|
+        客户账号ID。
 
         :param customer_id: The customer_id of this CustomerBalancesV2.
         :type: str
@@ -86,7 +86,7 @@ class CustomerBalancesV2:
     def debt_amount(self):
         """Gets the debt_amount of this CustomerBalancesV2.
 
-        |参数名称：客户欠款总额度。| |参数约束及描述： 客户欠款总额度。|
+        客户欠款总额度。
 
         :return: The debt_amount of this CustomerBalancesV2.
         :rtype: float
@@ -97,7 +97,7 @@ class CustomerBalancesV2:
     def debt_amount(self, debt_amount):
         """Sets the debt_amount of this CustomerBalancesV2.
 
-        |参数名称：客户欠款总额度。| |参数约束及描述： 客户欠款总额度。|
+        客户欠款总额度。
 
         :param debt_amount: The debt_amount of this CustomerBalancesV2.
         :type: float
@@ -108,7 +108,7 @@ class CustomerBalancesV2:
     def amount(self):
         """Gets the amount of this CustomerBalancesV2.
 
-        |参数名称：客户可用总额度。| |参数约束及描述： 客户可用总额度。|
+        客户可用总额度。
 
         :return: The amount of this CustomerBalancesV2.
         :rtype: float
@@ -119,7 +119,7 @@ class CustomerBalancesV2:
     def amount(self, amount):
         """Sets the amount of this CustomerBalancesV2.
 
-        |参数名称：客户可用总额度。| |参数约束及描述： 客户可用总额度。|
+        客户可用总额度。
 
         :param amount: The amount of this CustomerBalancesV2.
         :type: float
@@ -130,7 +130,7 @@ class CustomerBalancesV2:
     def currency(self):
         """Gets the currency of this CustomerBalancesV2.
 
-        |参数名称：币种。| |参数约束及描述：币种。|
+        币种。 CNY：人民币。
 
         :return: The currency of this CustomerBalancesV2.
         :rtype: str
@@ -141,7 +141,7 @@ class CustomerBalancesV2:
     def currency(self, currency):
         """Sets the currency of this CustomerBalancesV2.
 
-        |参数名称：币种。| |参数约束及描述：币种。|
+        币种。 CNY：人民币。
 
         :param currency: The currency of this CustomerBalancesV2.
         :type: str
@@ -152,7 +152,7 @@ class CustomerBalancesV2:
     def measure_id(self):
         """Gets the measure_id of this CustomerBalancesV2.
 
-        |参数名称：度量单位：1：元；2：角；3：分。| |参数的约束及描述：度量单位：1：元；2：角；3：分。|
+        度量单位： 1：元
 
         :return: The measure_id of this CustomerBalancesV2.
         :rtype: int
@@ -163,7 +163,7 @@ class CustomerBalancesV2:
     def measure_id(self, measure_id):
         """Sets the measure_id of this CustomerBalancesV2.
 
-        |参数名称：度量单位：1：元；2：角；3：分。| |参数的约束及描述：度量单位：1：元；2：角；3：分。|
+        度量单位： 1：元
 
         :param measure_id: The measure_id of this CustomerBalancesV2.
         :type: int

@@ -45,7 +45,7 @@ class ListSkuInventoriesResponse(SdkResponse):
     def sku_inventories(self):
         """Gets the sku_inventories of this ListSkuInventoriesResponse.
 
-        |参数名称：总记录数| |参数约束以及描述：总记录数|
+        库存的查询结果详情，具体参见表2。
 
         :return: The sku_inventories of this ListSkuInventoriesResponse.
         :rtype: list[SkuInventory]
@@ -56,7 +56,7 @@ class ListSkuInventoriesResponse(SdkResponse):
     def sku_inventories(self, sku_inventories):
         """Sets the sku_inventories of this ListSkuInventoriesResponse.
 
-        |参数名称：总记录数| |参数约束以及描述：总记录数|
+        库存的查询结果详情，具体参见表2。
 
         :param sku_inventories: The sku_inventories of this ListSkuInventoriesResponse.
         :type: list[SkuInventory]

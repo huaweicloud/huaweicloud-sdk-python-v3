@@ -45,7 +45,7 @@ class ListMeasureUnitsResponse(SdkResponse):
     def measure_units(self):
         """Gets the measure_units of this ListMeasureUnitsResponse.
 
-        |参数名称：度量信息| |参数约束以及描述：度量信息|
+        度量单位信息，具体参见表2。
 
         :return: The measure_units of this ListMeasureUnitsResponse.
         :rtype: list[MeasureUnitRest]
@@ -56,7 +56,7 @@ class ListMeasureUnitsResponse(SdkResponse):
     def measure_units(self, measure_units):
         """Sets the measure_units of this ListMeasureUnitsResponse.
 
-        |参数名称：度量信息| |参数约束以及描述：度量信息|
+        度量单位信息，具体参见表2。
 
         :param measure_units: The measure_units of this ListMeasureUnitsResponse.
         :type: list[MeasureUnitRest]

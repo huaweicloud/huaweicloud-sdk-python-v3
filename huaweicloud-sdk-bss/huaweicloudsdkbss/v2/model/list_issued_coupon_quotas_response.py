@@ -50,7 +50,7 @@ class ListIssuedCouponQuotasResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListIssuedCouponQuotasResponse.
 
-        |参数名称：查询总数。| |参数的约束及描述：查询总数。|
+        查询的记录总数。
 
         :return: The total_count of this ListIssuedCouponQuotasResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ListIssuedCouponQuotasResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListIssuedCouponQuotasResponse.
 
-        |参数名称：查询总数。| |参数的约束及描述：查询总数。|
+        查询的记录总数。
 
         :param total_count: The total_count of this ListIssuedCouponQuotasResponse.
         :type: int
@@ -72,7 +72,7 @@ class ListIssuedCouponQuotasResponse(SdkResponse):
     def quotas(self):
         """Gets the quotas of this ListIssuedCouponQuotasResponse.
 
-        |参数名称：额度记录列表。具体请参见IssuedCouponQuota。| |参数约束以及描述：额度记录列表。具体请参见IssuedCouponQuota。|
+        额度记录列表。 具体请参见表2。
 
         :return: The quotas of this ListIssuedCouponQuotasResponse.
         :rtype: list[IssuedCouponQuota]
@@ -83,7 +83,7 @@ class ListIssuedCouponQuotasResponse(SdkResponse):
     def quotas(self, quotas):
         """Sets the quotas of this ListIssuedCouponQuotasResponse.
 
-        |参数名称：额度记录列表。具体请参见IssuedCouponQuota。| |参数约束以及描述：额度记录列表。具体请参见IssuedCouponQuota。|
+        额度记录列表。 具体请参见表2。
 
         :param quotas: The quotas of this ListIssuedCouponQuotasResponse.
         :type: list[IssuedCouponQuota]

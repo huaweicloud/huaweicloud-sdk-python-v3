@@ -100,7 +100,7 @@ class CouponQuotaV2:
     def quota_id(self):
         """Gets the quota_id of this CouponQuotaV2.
 
-        |参数名称：额度ID。| |参数约束及描述：额度ID。|
+        优惠券额度ID。
 
         :return: The quota_id of this CouponQuotaV2.
         :rtype: str
@@ -111,7 +111,7 @@ class CouponQuotaV2:
     def quota_id(self, quota_id):
         """Sets the quota_id of this CouponQuotaV2.
 
-        |参数名称：额度ID。| |参数约束及描述：额度ID。|
+        优惠券额度ID。
 
         :param quota_id: The quota_id of this CouponQuotaV2.
         :type: str
@@ -122,7 +122,7 @@ class CouponQuotaV2:
     def quota_type(self):
         """Gets the quota_type of this CouponQuotaV2.
 
-        |参数名称：额度类型：0：代金券额度；| |参数的约束及描述：额度类型：0：代金券额度；|
+        优惠券额度的类型： 0：代金券额度1：现金券额度
 
         :return: The quota_type of this CouponQuotaV2.
         :rtype: int
@@ -133,7 +133,7 @@ class CouponQuotaV2:
     def quota_type(self, quota_type):
         """Sets the quota_type of this CouponQuotaV2.
 
-        |参数名称：额度类型：0：代金券额度；| |参数的约束及描述：额度类型：0：代金券额度；|
+        优惠券额度的类型： 0：代金券额度1：现金券额度
 
         :param quota_type: The quota_type of this CouponQuotaV2.
         :type: int
@@ -144,7 +144,7 @@ class CouponQuotaV2:
     def create_time(self):
         """Gets the create_time of this CouponQuotaV2.
 
-        |参数名称：创建时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。| |参数约束及描述：创建时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。|
+        创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The create_time of this CouponQuotaV2.
         :rtype: str
@@ -155,7 +155,7 @@ class CouponQuotaV2:
     def create_time(self, create_time):
         """Sets the create_time of this CouponQuotaV2.
 
-        |参数名称：创建时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。| |参数约束及描述：创建时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。|
+        创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param create_time: The create_time of this CouponQuotaV2.
         :type: str
@@ -166,7 +166,7 @@ class CouponQuotaV2:
     def last_update_time(self):
         """Gets the last_update_time of this CouponQuotaV2.
 
-        |参数名称：最后一次更新时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。| |参数约束及描述：最后一次更新时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。|
+        最后一次更新时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The last_update_time of this CouponQuotaV2.
         :rtype: str
@@ -177,7 +177,7 @@ class CouponQuotaV2:
     def last_update_time(self, last_update_time):
         """Sets the last_update_time of this CouponQuotaV2.
 
-        |参数名称：最后一次更新时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。| |参数约束及描述：最后一次更新时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。|
+        最后一次更新时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param last_update_time: The last_update_time of this CouponQuotaV2.
         :type: str
@@ -188,7 +188,7 @@ class CouponQuotaV2:
     def quota_value(self):
         """Gets the quota_value of this CouponQuotaV2.
 
-        |参数名称：代金券额度的值，精确到小数点后2位。| |参数的约束及描述：代金券额度的值，精确到小数点后2位。|
+        优惠券额度的值，精确到小数点后2位。
 
         :return: The quota_value of this CouponQuotaV2.
         :rtype: float
@@ -199,7 +199,7 @@ class CouponQuotaV2:
     def quota_value(self, quota_value):
         """Sets the quota_value of this CouponQuotaV2.
 
-        |参数名称：代金券额度的值，精确到小数点后2位。| |参数的约束及描述：代金券额度的值，精确到小数点后2位。|
+        优惠券额度的值，精确到小数点后2位。
 
         :param quota_value: The quota_value of this CouponQuotaV2.
         :type: float
@@ -210,7 +210,7 @@ class CouponQuotaV2:
     def quota_status(self):
         """Gets the quota_status of this CouponQuotaV2.
 
-        |参数名称：状态：0：正常；3：失效（过期失效和人工设置失效）；4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放代金券）。5：冻结6：回收| |参数的约束及描述：状态：0：正常；3：失效（过期失效和人工设置失效）；4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放代金券）。5：冻结6：回收|
+        优惠券额度的状态： 0：正常3：失效（过期失效和人工设置失效）4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放优惠券）5：冻结
 
         :return: The quota_status of this CouponQuotaV2.
         :rtype: int
@@ -221,7 +221,7 @@ class CouponQuotaV2:
     def quota_status(self, quota_status):
         """Sets the quota_status of this CouponQuotaV2.
 
-        |参数名称：状态：0：正常；3：失效（过期失效和人工设置失效）；4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放代金券）。5：冻结6：回收| |参数的约束及描述：状态：0：正常；3：失效（过期失效和人工设置失效）；4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放代金券）。5：冻结6：回收|
+        优惠券额度的状态： 0：正常3：失效（过期失效和人工设置失效）4：额度调整中（伙伴可以查看该额度，但不能使用该额度发放优惠券）5：冻结
 
         :param quota_status: The quota_status of this CouponQuotaV2.
         :type: int
@@ -232,7 +232,7 @@ class CouponQuotaV2:
     def balance(self):
         """Gets the balance of this CouponQuotaV2.
 
-        |参数名称：剩余的代金券额度，精确到小数点后2位。| |参数的约束及描述：剩余的代金券额度，精确到小数点后2位。|
+        剩余的优惠券额度，精确到小数点后2位。
 
         :return: The balance of this CouponQuotaV2.
         :rtype: float
@@ -243,7 +243,7 @@ class CouponQuotaV2:
     def balance(self, balance):
         """Sets the balance of this CouponQuotaV2.
 
-        |参数名称：剩余的代金券额度，精确到小数点后2位。| |参数的约束及描述：剩余的代金券额度，精确到小数点后2位。|
+        剩余的优惠券额度，精确到小数点后2位。
 
         :param balance: The balance of this CouponQuotaV2.
         :type: float
@@ -254,7 +254,7 @@ class CouponQuotaV2:
     def measure_id(self):
         """Gets the measure_id of this CouponQuotaV2.
 
-        |参数名称：面额单位。1：元。| |参数的约束及描述：面额单位。1：元。|
+        面额单位。 1：元。
 
         :return: The measure_id of this CouponQuotaV2.
         :rtype: int
@@ -265,7 +265,7 @@ class CouponQuotaV2:
     def measure_id(self, measure_id):
         """Sets the measure_id of this CouponQuotaV2.
 
-        |参数名称：面额单位。1：元。| |参数的约束及描述：面额单位。1：元。|
+        面额单位。 1：元。
 
         :param measure_id: The measure_id of this CouponQuotaV2.
         :type: int
@@ -276,7 +276,7 @@ class CouponQuotaV2:
     def currency(self):
         """Gets the currency of this CouponQuotaV2.
 
-        |参数名称：币种。当前仅有CNY。| |参数约束及描述：币种。当前仅有CNY。|
+        币种。 CNY：人民币
 
         :return: The currency of this CouponQuotaV2.
         :rtype: str
@@ -287,7 +287,7 @@ class CouponQuotaV2:
     def currency(self, currency):
         """Sets the currency of this CouponQuotaV2.
 
-        |参数名称：币种。当前仅有CNY。| |参数约束及描述：币种。当前仅有CNY。|
+        币种。 CNY：人民币
 
         :param currency: The currency of this CouponQuotaV2.
         :type: str
@@ -298,7 +298,7 @@ class CouponQuotaV2:
     def effective_time(self):
         """Gets the effective_time of this CouponQuotaV2.
 
-        |参数名称：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。|
+        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The effective_time of this CouponQuotaV2.
         :rtype: str
@@ -309,7 +309,7 @@ class CouponQuotaV2:
     def effective_time(self, effective_time):
         """Sets the effective_time of this CouponQuotaV2.
 
-        |参数名称：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。|
+        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param effective_time: The effective_time of this CouponQuotaV2.
         :type: str
@@ -320,7 +320,7 @@ class CouponQuotaV2:
     def expire_time(self):
         """Gets the expire_time of this CouponQuotaV2.
 
-        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。|
+        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The expire_time of this CouponQuotaV2.
         :rtype: str
@@ -331,7 +331,7 @@ class CouponQuotaV2:
     def expire_time(self, expire_time):
         """Sets the expire_time of this CouponQuotaV2.
 
-        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。|
+        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param expire_time: The expire_time of this CouponQuotaV2.
         :type: str
@@ -342,7 +342,7 @@ class CouponQuotaV2:
     def limit_infos(self):
         """Gets the limit_infos of this CouponQuotaV2.
 
-        |参数名称：额度上的限制属性| |参数约束以及描述：额度上的限制属性|
+        优惠券额度上的限制属性，具体参见表3。
 
         :return: The limit_infos of this CouponQuotaV2.
         :rtype: list[QuotaLimitInfo]
@@ -353,7 +353,7 @@ class CouponQuotaV2:
     def limit_infos(self, limit_infos):
         """Sets the limit_infos of this CouponQuotaV2.
 
-        |参数名称：额度上的限制属性| |参数约束以及描述：额度上的限制属性|
+        优惠券额度上的限制属性，具体参见表3。
 
         :param limit_infos: The limit_infos of this CouponQuotaV2.
         :type: list[QuotaLimitInfo]

@@ -50,7 +50,7 @@ class QuotaLimitInfo:
     def limit_key(self):
         """Gets the limit_key of this QuotaLimitInfo.
 
-        |参数名称：属性key值| |参数约束及描述：属性key值|
+        属性key值。
 
         :return: The limit_key of this QuotaLimitInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class QuotaLimitInfo:
     def limit_key(self, limit_key):
         """Sets the limit_key of this QuotaLimitInfo.
 
-        |参数名称：属性key值| |参数约束及描述：属性key值|
+        属性key值。
 
         :param limit_key: The limit_key of this QuotaLimitInfo.
         :type: str
@@ -72,7 +72,7 @@ class QuotaLimitInfo:
     def limit_values(self):
         """Gets the limit_values of this QuotaLimitInfo.
 
-        |参数名称：属性值| |参数约束以及描述：属性值|
+        属性值，具体参见表4。
 
         :return: The limit_values of this QuotaLimitInfo.
         :rtype: list[LimitValue]
@@ -83,7 +83,7 @@ class QuotaLimitInfo:
     def limit_values(self, limit_values):
         """Sets the limit_values of this QuotaLimitInfo.
 
-        |参数名称：属性值| |参数约束以及描述：属性值|
+        属性值，具体参见表4。
 
         :param limit_values: The limit_values of this QuotaLimitInfo.
         :type: list[LimitValue]

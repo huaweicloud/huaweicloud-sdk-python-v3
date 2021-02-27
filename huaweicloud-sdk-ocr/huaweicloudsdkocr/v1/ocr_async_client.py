@@ -1418,8 +1418,8 @@ class OcrAsyncClient(Client):
 
         识别图片中的车架号信息，并将识别结果返回给用户。 
 
-        :param RecognizeVINRequest request
-        :return: RecognizeVINResponse
+        :param RecognizeVinRequest request
+        :return: RecognizeVinResponse
         """
         return self.recognize_vin_with_http_info(request)
 
@@ -1428,8 +1428,8 @@ class OcrAsyncClient(Client):
 
         识别图片中的车架号信息，并将识别结果返回给用户。 
 
-        :param RecognizeVINRequest request
-        :return: RecognizeVINResponse
+        :param RecognizeVinRequest request
+        :return: RecognizeVinResponse
         """
 
         all_params = ['project_id', 'recognize_vin_request_body']
@@ -1471,7 +1471,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='RecognizeVINResponse',
+            response_type='RecognizeVinResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

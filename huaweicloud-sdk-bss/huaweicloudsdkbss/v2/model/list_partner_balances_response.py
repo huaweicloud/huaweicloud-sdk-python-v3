@@ -45,7 +45,7 @@ class ListPartnerBalancesResponse(SdkResponse):
     def account_balances(self):
         """Gets the account_balances of this ListPartnerBalancesResponse.
 
-        |参数名称：总额，即最终优惠后的金额，| |参数约束以及描述：总额，即最终优惠后的金额，|
+        账户余额列表。 具体请参见表2
 
         :return: The account_balances of this ListPartnerBalancesResponse.
         :rtype: list[AccountBalanceV2]
@@ -56,7 +56,7 @@ class ListPartnerBalancesResponse(SdkResponse):
     def account_balances(self, account_balances):
         """Sets the account_balances of this ListPartnerBalancesResponse.
 
-        |参数名称：总额，即最终优惠后的金额，| |参数约束以及描述：总额，即最终优惠后的金额，|
+        账户余额列表。 具体请参见表2
 
         :param account_balances: The account_balances of this ListPartnerBalancesResponse.
         :type: list[AccountBalanceV2]

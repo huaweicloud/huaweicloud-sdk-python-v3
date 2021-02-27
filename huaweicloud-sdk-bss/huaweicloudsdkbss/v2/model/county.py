@@ -48,7 +48,7 @@ class County:
     def code(self):
         """Gets the code of this County.
 
-        |参数名称：区县的编码。| |参数约束及描述：区县的编码。|
+        区县的编码。
 
         :return: The code of this County.
         :rtype: str
@@ -59,7 +59,7 @@ class County:
     def code(self, code):
         """Sets the code of this County.
 
-        |参数名称：区县的编码。| |参数约束及描述：区县的编码。|
+        区县的编码。
 
         :param code: The code of this County.
         :type: str
@@ -70,7 +70,7 @@ class County:
     def name(self):
         """Gets the name of this County.
 
-        |参数名称：区县的名称，根据请求的语言会传递回对应的语言的名称，目前仅支持中文。| |参数约束及描述：区县的名称，根据请求的语言会传递回对应的语言的名称，目前仅支持中文。|
+        区县的名称，根据请求的语言会传递回对应的语言的名称，目前仅支持中文。
 
         :return: The name of this County.
         :rtype: str
@@ -81,7 +81,7 @@ class County:
     def name(self, name):
         """Sets the name of this County.
 
-        |参数名称：区县的名称，根据请求的语言会传递回对应的语言的名称，目前仅支持中文。| |参数约束及描述：区县的名称，根据请求的语言会传递回对应的语言的名称，目前仅支持中文。|
+        区县的名称，根据请求的语言会传递回对应的语言的名称，目前仅支持中文。
 
         :param name: The name of this County.
         :type: str

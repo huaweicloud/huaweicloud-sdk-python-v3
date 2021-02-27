@@ -60,7 +60,7 @@ class EmChildNodeV2:
     def relation_id(self):
         """Gets the relation_id of this EmChildNodeV2.
 
-        |参数名称：实体关系ID| |参数约束及描述：实体关系ID|
+        实体关系ID。
 
         :return: The relation_id of this EmChildNodeV2.
         :rtype: str
@@ -71,7 +71,7 @@ class EmChildNodeV2:
     def relation_id(self, relation_id):
         """Sets the relation_id of this EmChildNodeV2.
 
-        |参数名称：实体关系ID| |参数约束及描述：实体关系ID|
+        实体关系ID。
 
         :param relation_id: The relation_id of this EmChildNodeV2.
         :type: str
@@ -82,7 +82,7 @@ class EmChildNodeV2:
     def id(self):
         """Gets the id of this EmChildNodeV2.
 
-        |参数名称：节点ID| |参数约束及描述：节点ID|
+        节点ID。
 
         :return: The id of this EmChildNodeV2.
         :rtype: str
@@ -93,7 +93,7 @@ class EmChildNodeV2:
     def id(self, id):
         """Sets the id of this EmChildNodeV2.
 
-        |参数名称：节点ID| |参数约束及描述：节点ID|
+        节点ID。
 
         :param id: The id of this EmChildNodeV2.
         :type: str
@@ -104,7 +104,7 @@ class EmChildNodeV2:
     def name(self):
         """Gets the name of this EmChildNodeV2.
 
-        |参数名称：节点名称| |参数约束及描述：节点名称|
+        节点名称。
 
         :return: The name of this EmChildNodeV2.
         :rtype: str
@@ -115,7 +115,7 @@ class EmChildNodeV2:
     def name(self, name):
         """Sets the name of this EmChildNodeV2.
 
-        |参数名称：节点名称| |参数约束及描述：节点名称|
+        节点名称。
 
         :param name: The name of this EmChildNodeV2.
         :type: str
@@ -126,7 +126,7 @@ class EmChildNodeV2:
     def child_nodes(self):
         """Gets the child_nodes of this EmChildNodeV2.
 
-        |参数名称：子节点列表| |参数约束以及描述：子节点列表|
+        子节点列表。
 
         :return: The child_nodes of this EmChildNodeV2.
         :rtype: list[EmChildNodeV2]
@@ -137,7 +137,7 @@ class EmChildNodeV2:
     def child_nodes(self, child_nodes):
         """Sets the child_nodes of this EmChildNodeV2.
 
-        |参数名称：子节点列表| |参数约束以及描述：子节点列表|
+        子节点列表。
 
         :param child_nodes: The child_nodes of this EmChildNodeV2.
         :type: list[EmChildNodeV2]

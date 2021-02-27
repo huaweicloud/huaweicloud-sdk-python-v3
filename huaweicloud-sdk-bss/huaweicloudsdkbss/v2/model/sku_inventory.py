@@ -52,7 +52,7 @@ class SkuInventory:
     def product_id(self):
         """Gets the product_id of this SkuInventory.
 
-        |参数名称：产品ID| |参数约束及描述：产品ID|
+        产品的ID。
 
         :return: The product_id of this SkuInventory.
         :rtype: str
@@ -63,7 +63,7 @@ class SkuInventory:
     def product_id(self, product_id):
         """Sets the product_id of this SkuInventory.
 
-        |参数名称：产品ID| |参数约束及描述：产品ID|
+        产品的ID。
 
         :param product_id: The product_id of this SkuInventory.
         :type: str
@@ -74,7 +74,7 @@ class SkuInventory:
     def sku_code(self):
         """Gets the sku_code of this SkuInventory.
 
-        |参数名称：SKU编码| |参数约束及描述：SKU编码|
+        SKU编码，唯一标识一个产品的规格。
 
         :return: The sku_code of this SkuInventory.
         :rtype: str
@@ -85,7 +85,7 @@ class SkuInventory:
     def sku_code(self, sku_code):
         """Sets the sku_code of this SkuInventory.
 
-        |参数名称：SKU编码| |参数约束及描述：SKU编码|
+        SKU编码，唯一标识一个产品的规格。
 
         :param sku_code: The sku_code of this SkuInventory.
         :type: str
@@ -96,7 +96,7 @@ class SkuInventory:
     def saleable_quantity(self):
         """Gets the saleable_quantity of this SkuInventory.
 
-        |参数名称：可售库存数| |参数的约束及描述：可售库存数|
+        产品的可售库存数量。
 
         :return: The saleable_quantity of this SkuInventory.
         :rtype: int
@@ -107,7 +107,7 @@ class SkuInventory:
     def saleable_quantity(self, saleable_quantity):
         """Sets the saleable_quantity of this SkuInventory.
 
-        |参数名称：可售库存数| |参数的约束及描述：可售库存数|
+        产品的可售库存数量。
 
         :param saleable_quantity: The saleable_quantity of this SkuInventory.
         :type: int

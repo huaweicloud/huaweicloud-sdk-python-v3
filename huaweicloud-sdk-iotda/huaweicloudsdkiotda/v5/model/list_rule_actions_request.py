@@ -21,10 +21,8 @@ class ListRuleActionsRequest:
     """
 
     sensitive_list = []
-    sensitive_list.append('stage_auth_token')
 
     openapi_types = {
-        'stage_auth_token': 'str',
         'instance_id': 'str',
         'rule_id': 'str',
         'channel': 'str',
@@ -36,7 +34,6 @@ class ListRuleActionsRequest:
     }
 
     attribute_map = {
-        'stage_auth_token': 'Stage-Auth-Token',
         'instance_id': 'Instance-Id',
         'rule_id': 'rule_id',
         'channel': 'channel',
@@ -47,12 +44,11 @@ class ListRuleActionsRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, stage_auth_token=None, instance_id=None, rule_id=None, channel=None, app_type=None, app_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):
+    def __init__(self, instance_id=None, rule_id=None, channel=None, app_type=None, app_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):
         """ListRuleActionsRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._stage_auth_token = None
         self._instance_id = None
         self._rule_id = None
         self._channel = None
@@ -63,8 +59,6 @@ class ListRuleActionsRequest:
         self._offset = None
         self.discriminator = None
 
-        if stage_auth_token is not None:
-            self.stage_auth_token = stage_auth_token
         if instance_id is not None:
             self.instance_id = instance_id
         if rule_id is not None:
@@ -81,26 +75,6 @@ class ListRuleActionsRequest:
             self.marker = marker
         if offset is not None:
             self.offset = offset
-
-    @property
-    def stage_auth_token(self):
-        """Gets the stage_auth_token of this ListRuleActionsRequest.
-
-
-        :return: The stage_auth_token of this ListRuleActionsRequest.
-        :rtype: str
-        """
-        return self._stage_auth_token
-
-    @stage_auth_token.setter
-    def stage_auth_token(self, stage_auth_token):
-        """Sets the stage_auth_token of this ListRuleActionsRequest.
-
-
-        :param stage_auth_token: The stage_auth_token of this ListRuleActionsRequest.
-        :type: str
-        """
-        self._stage_auth_token = stage_auth_token
 
     @property
     def instance_id(self):

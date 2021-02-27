@@ -46,7 +46,7 @@ class InstanceRequest:
         'replica_of_id': 'str',
         'restore_point': 'RestorePoint',
         'collation': 'str',
-        'tags': 'list[InstanceRequestTags]'
+        'tags': 'list[TagWithKeyValue]'
     }
 
     attribute_map = {
@@ -648,7 +648,7 @@ class InstanceRequest:
         标签列表。单个实例总标签数上限10个。
 
         :return: The tags of this InstanceRequest.
-        :rtype: list[InstanceRequestTags]
+        :rtype: list[TagWithKeyValue]
         """
         return self._tags
 
@@ -659,7 +659,7 @@ class InstanceRequest:
         标签列表。单个实例总标签数上限10个。
 
         :param tags: The tags of this InstanceRequest.
-        :type: list[InstanceRequestTags]
+        :type: list[TagWithKeyValue]
         """
         self._tags = tags
 

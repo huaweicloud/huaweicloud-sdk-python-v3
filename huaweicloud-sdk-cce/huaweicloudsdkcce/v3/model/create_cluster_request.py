@@ -23,47 +23,23 @@ class CreateClusterRequest:
     sensitive_list = []
 
     openapi_types = {
-        'content_type': 'str',
         'body': 'V3Cluster'
     }
 
     attribute_map = {
-        'content_type': 'Content-Type',
         'body': 'body'
     }
 
-    def __init__(self, content_type='application/json', body=None):
+    def __init__(self, body=None):
         """CreateClusterRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._content_type = None
         self._body = None
         self.discriminator = None
 
-        self.content_type = content_type
         if body is not None:
             self.body = body
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this CreateClusterRequest.
-
-
-        :return: The content_type of this CreateClusterRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this CreateClusterRequest.
-
-
-        :param content_type: The content_type of this CreateClusterRequest.
-        :type: str
-        """
-        self._content_type = content_type
 
     @property
     def body(self):

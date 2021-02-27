@@ -48,7 +48,7 @@ class CouponSimpleInfo:
     def id(self):
         """Gets the id of this CouponSimpleInfo.
 
-        |参数名称：批量发放成功客户ID。| |参数约束及描述：批量发放成功客户ID。|
+        批量发放优惠券成功的客户ID。
 
         :return: The id of this CouponSimpleInfo.
         :rtype: str
@@ -59,7 +59,7 @@ class CouponSimpleInfo:
     def id(self, id):
         """Sets the id of this CouponSimpleInfo.
 
-        |参数名称：批量发放成功客户ID。| |参数约束及描述：批量发放成功客户ID。|
+        批量发放优惠券成功的客户ID。
 
         :param id: The id of this CouponSimpleInfo.
         :type: str
@@ -70,7 +70,7 @@ class CouponSimpleInfo:
     def coupon_id(self):
         """Gets the coupon_id of this CouponSimpleInfo.
 
-        |参数名称：发放成功的券ID| |参数约束及描述：发放成功的券ID|
+        发放成功的券ID。
 
         :return: The coupon_id of this CouponSimpleInfo.
         :rtype: str
@@ -81,7 +81,7 @@ class CouponSimpleInfo:
     def coupon_id(self, coupon_id):
         """Sets the coupon_id of this CouponSimpleInfo.
 
-        |参数名称：发放成功的券ID| |参数约束及描述：发放成功的券ID|
+        发放成功的券ID。
 
         :param coupon_id: The coupon_id of this CouponSimpleInfo.
         :type: str

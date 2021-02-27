@@ -28,6 +28,8 @@ from huaweicloudsdkbms.v1.model.create_baremetal_servers_body import CreateBarem
 from huaweicloudsdkbms.v1.model.create_scheduler_hints import CreateSchedulerHints
 from huaweicloudsdkbms.v1.model.create_servers import CreateServers
 from huaweicloudsdkbms.v1.model.data_volumes import DataVolumes
+from huaweicloudsdkbms.v1.model.delete_windows_bare_metal_server_password_request import DeleteWindowsBareMetalServerPasswordRequest
+from huaweicloudsdkbms.v1.model.delete_windows_bare_metal_server_password_response import DeleteWindowsBareMetalServerPasswordResponse
 from huaweicloudsdkbms.v1.model.detach_baremetal_server_volume_request import DetachBaremetalServerVolumeRequest
 from huaweicloudsdkbms.v1.model.detach_baremetal_server_volume_response import DetachBaremetalServerVolumeResponse
 from huaweicloudsdkbms.v1.model.eip import Eip
@@ -105,5 +107,3 @@ from huaweicloudsdkbms.v1.model.version_links import VersionLinks
 from huaweicloudsdkbms.v1.model.versions import Versions
 from huaweicloudsdkbms.v1.model.volume_attachment import VolumeAttachment
 from huaweicloudsdkbms.v1.model.volume_attachments import VolumeAttachments
-from huaweicloudsdkbms.v1.model.windows_baremetal_server_clean_pwd_request import WindowsBaremetalServerCleanPwdRequest
-from huaweicloudsdkbms.v1.model.windows_baremetal_server_clean_pwd_response import WindowsBaremetalServerCleanPwdResponse

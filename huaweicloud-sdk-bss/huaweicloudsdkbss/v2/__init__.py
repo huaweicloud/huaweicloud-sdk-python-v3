@@ -14,8 +14,6 @@ from huaweicloudsdkbss.v2.model.adjust_account_req import AdjustAccountReq
 from huaweicloudsdkbss.v2.model.adjust_coupon_quotas_req import AdjustCouponQuotasReq
 from huaweicloudsdkbss.v2.model.adjust_record_v2 import AdjustRecordV2
 from huaweicloudsdkbss.v2.model.adjust_to_indirect_partner_req import AdjustToIndirectPartnerReq
-from huaweicloudsdkbss.v2.model.agent_pay_info import AgentPayInfo
-from huaweicloudsdkbss.v2.model.amount_infomation import AmountInfomation
 from huaweicloudsdkbss.v2.model.amount_infomation_v2 import AmountInfomationV2
 from huaweicloudsdkbss.v2.model.apply_enterprise_realname_auths_req import ApplyEnterpriseRealnameAuthsReq
 from huaweicloudsdkbss.v2.model.apply_individual_realname_auths_req import ApplyIndividualRealnameAuthsReq
@@ -69,7 +67,6 @@ from huaweicloudsdkbss.v2.model.customer_balances_v2 import CustomerBalancesV2
 from huaweicloudsdkbss.v2.model.customer_info_v2 import CustomerInfoV2
 from huaweicloudsdkbss.v2.model.customer_information import CustomerInformation
 from huaweicloudsdkbss.v2.model.customer_on_demand_resource import CustomerOnDemandResource
-from huaweicloudsdkbss.v2.model.customer_order_entity import CustomerOrderEntity
 from huaweicloudsdkbss.v2.model.customer_order_v2 import CustomerOrderV2
 from huaweicloudsdkbss.v2.model.customer_postal_address_v2 import CustomerPostalAddressV2
 from huaweicloudsdkbss.v2.model.delete_postal_request import DeletePostalRequest
@@ -77,7 +74,6 @@ from huaweicloudsdkbss.v2.model.delete_postal_response import DeletePostalRespon
 from huaweicloudsdkbss.v2.model.demand_discount_rating_result import DemandDiscountRatingResult
 from huaweicloudsdkbss.v2.model.demand_product_info import DemandProductInfo
 from huaweicloudsdkbss.v2.model.demand_product_rating_result import DemandProductRatingResult
-from huaweicloudsdkbss.v2.model.discount_entry import DiscountEntry
 from huaweicloudsdkbss.v2.model.discount_item_v2 import DiscountItemV2
 from huaweicloudsdkbss.v2.model.discount_simple_info import DiscountSimpleInfo
 from huaweicloudsdkbss.v2.model.em_child_node_v2 import EmChildNodeV2
@@ -134,8 +130,6 @@ from huaweicloudsdkbss.v2.model.list_partner_balances_request import ListPartner
 from huaweicloudsdkbss.v2.model.list_partner_balances_response import ListPartnerBalancesResponse
 from huaweicloudsdkbss.v2.model.list_partner_coupons_record_request import ListPartnerCouponsRecordRequest
 from huaweicloudsdkbss.v2.model.list_partner_coupons_record_response import ListPartnerCouponsRecordResponse
-from huaweicloudsdkbss.v2.model.list_partner_pay_orders_request import ListPartnerPayOrdersRequest
-from huaweicloudsdkbss.v2.model.list_partner_pay_orders_response import ListPartnerPayOrdersResponse
 from huaweicloudsdkbss.v2.model.list_pay_per_use_customer_resources_request import ListPayPerUseCustomerResourcesRequest
 from huaweicloudsdkbss.v2.model.list_pay_per_use_customer_resources_response import ListPayPerUseCustomerResourcesResponse
 from huaweicloudsdkbss.v2.model.list_postal_address_request import ListPostalAddressRequest

@@ -9,7 +9,7 @@ import six
 from huaweicloudsdkcore.sdk_response import SdkResponse
 
 
-class RecognizeVINResponse(SdkResponse):
+class RecognizeVinResponse(SdkResponse):
 
 
     """
@@ -31,7 +31,7 @@ class RecognizeVINResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeVINResponse - a model defined in huaweicloud sdk"""
+        """RecognizeVinResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
@@ -43,20 +43,20 @@ class RecognizeVINResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeVINResponse.
+        """Gets the result of this RecognizeVinResponse.
 
 
-        :return: The result of this RecognizeVINResponse.
+        :return: The result of this RecognizeVinResponse.
         :rtype: VINResult
         """
         return self._result
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeVINResponse.
+        """Sets the result of this RecognizeVinResponse.
 
 
-        :param result: The result of this RecognizeVINResponse.
+        :param result: The result of this RecognizeVinResponse.
         :type: VINResult
         """
         self._result = result
@@ -98,7 +98,7 @@ class RecognizeVINResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RecognizeVINResponse):
+        if not isinstance(other, RecognizeVinResponse):
             return False
 
         return self.__dict__ == other.__dict__

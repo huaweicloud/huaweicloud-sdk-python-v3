@@ -70,7 +70,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
     def amount(self):
         """Gets the amount of this ListOnDemandResourceRatingsResponse.
 
-        |参数名称：总额| |参数约束及描述：即最终优惠后的金额|
+        折扣的金额。
 
         :return: The amount of this ListOnDemandResourceRatingsResponse.
         :rtype: float
@@ -81,7 +81,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
     def amount(self, amount):
         """Sets the amount of this ListOnDemandResourceRatingsResponse.
 
-        |参数名称：总额| |参数约束及描述：即最终优惠后的金额|
+        折扣的金额。
 
         :param amount: The amount of this ListOnDemandResourceRatingsResponse.
         :type: float
@@ -92,7 +92,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
     def discount_amount(self):
         """Gets the discount_amount of this ListOnDemandResourceRatingsResponse.
 
-        |参数名称：优惠额| |参数约束及描述：（官网价和总价的差）|
+        优惠额（官网价和总价的差）。
 
         :return: The discount_amount of this ListOnDemandResourceRatingsResponse.
         :rtype: float
@@ -103,7 +103,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
     def discount_amount(self, discount_amount):
         """Sets the discount_amount of this ListOnDemandResourceRatingsResponse.
 
-        |参数名称：优惠额| |参数约束及描述：（官网价和总价的差）|
+        优惠额（官网价和总价的差）。
 
         :param discount_amount: The discount_amount of this ListOnDemandResourceRatingsResponse.
         :type: float
@@ -114,7 +114,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
     def official_website_amount(self):
         """Gets the official_website_amount of this ListOnDemandResourceRatingsResponse.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        按需产品的官网价。
 
         :return: The official_website_amount of this ListOnDemandResourceRatingsResponse.
         :rtype: float
@@ -125,7 +125,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
     def official_website_amount(self, official_website_amount):
         """Sets the official_website_amount of this ListOnDemandResourceRatingsResponse.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        按需产品的官网价。
 
         :param official_website_amount: The official_website_amount of this ListOnDemandResourceRatingsResponse.
         :type: float
@@ -136,7 +136,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
     def measure_id(self):
         """Gets the measure_id of this ListOnDemandResourceRatingsResponse.
 
-        |参数名称：度量单位标识| |参数约束及描述：1：元|
+        度量单位标识。 1：元
 
         :return: The measure_id of this ListOnDemandResourceRatingsResponse.
         :rtype: int
@@ -147,7 +147,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
     def measure_id(self, measure_id):
         """Sets the measure_id of this ListOnDemandResourceRatingsResponse.
 
-        |参数名称：度量单位标识| |参数约束及描述：1：元|
+        度量单位标识。 1：元
 
         :param measure_id: The measure_id of this ListOnDemandResourceRatingsResponse.
         :type: int
@@ -158,7 +158,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
     def currency(self):
         """Gets the currency of this ListOnDemandResourceRatingsResponse.
 
-        |参数名称：币种| |参数约束及描述：比如CNY|
+        币种。 CNY：人民币。 值为空代表人民币。
 
         :return: The currency of this ListOnDemandResourceRatingsResponse.
         :rtype: str
@@ -169,7 +169,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
     def currency(self, currency):
         """Sets the currency of this ListOnDemandResourceRatingsResponse.
 
-        |参数名称：币种| |参数约束及描述：比如CNY|
+        币种。 CNY：人民币。 值为空代表人民币。
 
         :param currency: The currency of this ListOnDemandResourceRatingsResponse.
         :type: str
@@ -180,7 +180,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
     def product_rating_results(self):
         """Gets the product_rating_results of this ListOnDemandResourceRatingsResponse.
 
-        |参数名称：产品询价结果| |参数的约束及描述：产品询价结果|
+        产品询价结果，具体参见表2。
 
         :return: The product_rating_results of this ListOnDemandResourceRatingsResponse.
         :rtype: list[DemandProductRatingResult]
@@ -191,7 +191,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
     def product_rating_results(self, product_rating_results):
         """Sets the product_rating_results of this ListOnDemandResourceRatingsResponse.
 
-        |参数名称：产品询价结果| |参数的约束及描述：产品询价结果|
+        产品询价结果，具体参见表2。
 
         :param product_rating_results: The product_rating_results of this ListOnDemandResourceRatingsResponse.
         :type: list[DemandProductRatingResult]

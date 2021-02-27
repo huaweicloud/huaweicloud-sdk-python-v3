@@ -27,8 +27,6 @@ from huaweicloudsdkeps.v1.model.match import Match
 from huaweicloudsdkeps.v1.model.migrate_resource import MigrateResource
 from huaweicloudsdkeps.v1.model.migrate_resource_request import MigrateResourceRequest
 from huaweicloudsdkeps.v1.model.migrate_resource_response import MigrateResourceResponse
-from huaweicloudsdkeps.v1.model.modify_enterprise_project_request import ModifyEnterpriseProjectRequest
-from huaweicloudsdkeps.v1.model.modify_enterprise_project_response import ModifyEnterpriseProjectResponse
 from huaweicloudsdkeps.v1.model.quotas_detail import QuotasDetail
 from huaweicloudsdkeps.v1.model.resources import Resources
 from huaweicloudsdkeps.v1.model.resq_ep_resouce import ResqEpResouce
@@ -40,5 +38,7 @@ from huaweicloudsdkeps.v1.model.show_enterprise_project_request import ShowEnter
 from huaweicloudsdkeps.v1.model.show_enterprise_project_response import ShowEnterpriseProjectResponse
 from huaweicloudsdkeps.v1.model.show_resource_bind_enterprise_project_request import ShowResourceBindEnterpriseProjectRequest
 from huaweicloudsdkeps.v1.model.show_resource_bind_enterprise_project_response import ShowResourceBindEnterpriseProjectResponse
+from huaweicloudsdkeps.v1.model.update_enterprise_project_request import UpdateEnterpriseProjectRequest
+from huaweicloudsdkeps.v1.model.update_enterprise_project_response import UpdateEnterpriseProjectResponse
 from huaweicloudsdkeps.v1.model.version_detail import VersionDetail
 

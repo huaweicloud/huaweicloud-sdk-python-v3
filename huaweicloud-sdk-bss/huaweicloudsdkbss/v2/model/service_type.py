@@ -55,7 +55,7 @@ class ServiceType:
     def service_type_name(self):
         """Gets the service_type_name of this ServiceType.
 
-        |参数名称：云服务类型名称| |参数约束及描述：云服务类型名称|
+        云服务类型的名称。
 
         :return: The service_type_name of this ServiceType.
         :rtype: str
@@ -66,7 +66,7 @@ class ServiceType:
     def service_type_name(self, service_type_name):
         """Sets the service_type_name of this ServiceType.
 
-        |参数名称：云服务类型名称| |参数约束及描述：云服务类型名称|
+        云服务类型的名称。
 
         :param service_type_name: The service_type_name of this ServiceType.
         :type: str
@@ -77,7 +77,7 @@ class ServiceType:
     def service_type_code(self):
         """Gets the service_type_code of this ServiceType.
 
-        |参数名称：云服务类型编码| |参数约束及描述：云服务类型编码|
+        云服务类型的编码。
 
         :return: The service_type_code of this ServiceType.
         :rtype: str
@@ -88,7 +88,7 @@ class ServiceType:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ServiceType.
 
-        |参数名称：云服务类型编码| |参数约束及描述：云服务类型编码|
+        云服务类型的编码。
 
         :param service_type_code: The service_type_code of this ServiceType.
         :type: str
@@ -99,7 +99,7 @@ class ServiceType:
     def abbreviation(self):
         """Gets the abbreviation of this ServiceType.
 
-        |参数名称：云服务缩写| |参数约束及描述：云服务缩写|
+        云服务类型的缩写。
 
         :return: The abbreviation of this ServiceType.
         :rtype: str
@@ -110,7 +110,7 @@ class ServiceType:
     def abbreviation(self, abbreviation):
         """Sets the abbreviation of this ServiceType.
 
-        |参数名称：云服务缩写| |参数约束及描述：云服务缩写|
+        云服务类型的缩写。
 
         :param abbreviation: The abbreviation of this ServiceType.
         :type: str

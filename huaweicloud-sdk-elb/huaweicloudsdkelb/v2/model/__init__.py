@@ -77,8 +77,8 @@ from huaweicloudsdkelb.v2.model.list_listeners_request import ListListenersReque
 from huaweicloudsdkelb.v2.model.list_listeners_response import ListListenersResponse
 from huaweicloudsdkelb.v2.model.list_loadbalancers_request import ListLoadbalancersRequest
 from huaweicloudsdkelb.v2.model.list_loadbalancers_response import ListLoadbalancersResponse
-from huaweicloudsdkelb.v2.model.list_menbers_request import ListMenbersRequest
-from huaweicloudsdkelb.v2.model.list_menbers_response import ListMenbersResponse
+from huaweicloudsdkelb.v2.model.list_members_request import ListMembersRequest
+from huaweicloudsdkelb.v2.model.list_members_response import ListMembersResponse
 from huaweicloudsdkelb.v2.model.list_pools_request import ListPoolsRequest
 from huaweicloudsdkelb.v2.model.list_pools_response import ListPoolsResponse
 from huaweicloudsdkelb.v2.model.list_whitelists_request import ListWhitelistsRequest

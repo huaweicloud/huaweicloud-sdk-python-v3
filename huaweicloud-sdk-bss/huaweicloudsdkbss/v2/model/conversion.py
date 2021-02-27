@@ -60,7 +60,7 @@ class Conversion:
     def measure_id(self):
         """Gets the measure_id of this Conversion.
 
-        |参数名称：度量单位| |参数的约束及描述：度量单位|
+        度量单位ID。 例如：10表示GB。
 
         :return: The measure_id of this Conversion.
         :rtype: int
@@ -71,7 +71,7 @@ class Conversion:
     def measure_id(self, measure_id):
         """Sets the measure_id of this Conversion.
 
-        |参数名称：度量单位| |参数的约束及描述：度量单位|
+        度量单位ID。 例如：10表示GB。
 
         :param measure_id: The measure_id of this Conversion.
         :type: int
@@ -82,7 +82,7 @@ class Conversion:
     def ref_measure_id(self):
         """Gets the ref_measure_id of this Conversion.
 
-        |参数名称：转换的度量单位| |参数的约束及描述：转换的度量单位|
+        转换后的度量单位ID。 例如：11表示MB。
 
         :return: The ref_measure_id of this Conversion.
         :rtype: int
@@ -93,7 +93,7 @@ class Conversion:
     def ref_measure_id(self, ref_measure_id):
         """Sets the ref_measure_id of this Conversion.
 
-        |参数名称：转换的度量单位| |参数的约束及描述：转换的度量单位|
+        转换后的度量单位ID。 例如：11表示MB。
 
         :param ref_measure_id: The ref_measure_id of this Conversion.
         :type: int
@@ -104,7 +104,7 @@ class Conversion:
     def conversion_ratio(self):
         """Gets the conversion_ratio of this Conversion.
 
-        |参数名称：转换比率| |参数的约束及描述：转换比率|
+        度量单位和转换后的度量单位之间的转换比率。 例如： 度量单位为GB，转换度量单位为MB时，转换比率为1024，两者之间的转换公式为：1GB=1024MB。
 
         :return: The conversion_ratio of this Conversion.
         :rtype: int
@@ -115,7 +115,7 @@ class Conversion:
     def conversion_ratio(self, conversion_ratio):
         """Sets the conversion_ratio of this Conversion.
 
-        |参数名称：转换比率| |参数的约束及描述：转换比率|
+        度量单位和转换后的度量单位之间的转换比率。 例如： 度量单位为GB，转换度量单位为MB时，转换比率为1024，两者之间的转换公式为：1GB=1024MB。
 
         :param conversion_ratio: The conversion_ratio of this Conversion.
         :type: int
@@ -126,7 +126,7 @@ class Conversion:
     def measure_type(self):
         """Gets the measure_type of this Conversion.
 
-        |参数名称：度量类型| |参数的约束及描述：度量类型|
+        度量类型。 1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量25：测试类型
 
         :return: The measure_type of this Conversion.
         :rtype: int
@@ -137,7 +137,7 @@ class Conversion:
     def measure_type(self, measure_type):
         """Sets the measure_type of this Conversion.
 
-        |参数名称：度量类型| |参数的约束及描述：度量类型|
+        度量类型。 1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量25：测试类型
 
         :param measure_type: The measure_type of this Conversion.
         :type: int

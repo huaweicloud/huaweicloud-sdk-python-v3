@@ -50,7 +50,7 @@ class ListEnterpriseSubCustomersResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListEnterpriseSubCustomersResponse.
 
-        |参数名称：结果集数量，成功才有。| |参数的约束及描述：结果集数量，成功才有。|
+        结果集数量，成功才有。
 
         :return: The total_count of this ListEnterpriseSubCustomersResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ListEnterpriseSubCustomersResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListEnterpriseSubCustomersResponse.
 
-        |参数名称：结果集数量，成功才有。| |参数的约束及描述：结果集数量，成功才有。|
+        结果集数量，成功才有。
 
         :param total_count: The total_count of this ListEnterpriseSubCustomersResponse.
         :type: int
@@ -72,7 +72,7 @@ class ListEnterpriseSubCustomersResponse(SdkResponse):
     def sub_customer_infos(self):
         """Gets the sub_customer_infos of this ListEnterpriseSubCustomersResponse.
 
-        |参数名称：客户信息列表，成功才有。| |参数约束以及描述：客户信息列表，成功才有。|
+        客户信息列表，成功才有。 具体请参见表2。
 
         :return: The sub_customer_infos of this ListEnterpriseSubCustomersResponse.
         :rtype: list[SubCustomerInfoV2]
@@ -83,7 +83,7 @@ class ListEnterpriseSubCustomersResponse(SdkResponse):
     def sub_customer_infos(self, sub_customer_infos):
         """Sets the sub_customer_infos of this ListEnterpriseSubCustomersResponse.
 
-        |参数名称：客户信息列表，成功才有。| |参数约束以及描述：客户信息列表，成功才有。|
+        客户信息列表，成功才有。 具体请参见表2。
 
         :param sub_customer_infos: The sub_customer_infos of this ListEnterpriseSubCustomersResponse.
         :type: list[SubCustomerInfoV2]

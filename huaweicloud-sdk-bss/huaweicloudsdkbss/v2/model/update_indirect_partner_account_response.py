@@ -45,7 +45,7 @@ class UpdateIndirectPartnerAccountResponse(SdkResponse):
     def transfer_id(self):
         """Gets the transfer_id of this UpdateIndirectPartnerAccountResponse.
 
-        |参数名称：事务流水ID，只有成功响应才会返回。| |参数约束及描述：非必填|
+        事务流水ID，只有成功响应才会返回。
 
         :return: The transfer_id of this UpdateIndirectPartnerAccountResponse.
         :rtype: str
@@ -56,7 +56,7 @@ class UpdateIndirectPartnerAccountResponse(SdkResponse):
     def transfer_id(self, transfer_id):
         """Sets the transfer_id of this UpdateIndirectPartnerAccountResponse.
 
-        |参数名称：事务流水ID，只有成功响应才会返回。| |参数约束及描述：非必填|
+        事务流水ID，只有成功响应才会返回。
 
         :param transfer_id: The transfer_id of this UpdateIndirectPartnerAccountResponse.
         :type: str

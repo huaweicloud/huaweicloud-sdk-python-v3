@@ -225,7 +225,7 @@ class SubCustomerResFeeRecordV2:
     def effective_time(self):
         """Gets the effective_time of this SubCustomerResFeeRecordV2.
 
-        |参数名称：费用对应的资源使用的开始时间，按需有效，包周期该字段保留。| |参数约束及描述：费用对应的资源使用的开始时间，按需有效，包周期该字段保留。|
+        消费记录对应的资源使用的开始时间。  说明： 按需有效，包年/包月该字段保留。
 
         :return: The effective_time of this SubCustomerResFeeRecordV2.
         :rtype: str
@@ -236,7 +236,7 @@ class SubCustomerResFeeRecordV2:
     def effective_time(self, effective_time):
         """Sets the effective_time of this SubCustomerResFeeRecordV2.
 
-        |参数名称：费用对应的资源使用的开始时间，按需有效，包周期该字段保留。| |参数约束及描述：费用对应的资源使用的开始时间，按需有效，包周期该字段保留。|
+        消费记录对应的资源使用的开始时间。  说明： 按需有效，包年/包月该字段保留。
 
         :param effective_time: The effective_time of this SubCustomerResFeeRecordV2.
         :type: str
@@ -247,7 +247,7 @@ class SubCustomerResFeeRecordV2:
     def expire_time(self):
         """Gets the expire_time of this SubCustomerResFeeRecordV2.
 
-        |参数名称：费用对应的资源使用的结束时间，按需有效，包周期该字段保留。| |参数约束及描述：费用对应的资源使用的结束时间，按需有效，包周期该字段保留。|
+        消费记录对应的资源使用的结束时间。  说明： 按需有效，包年/包月该字段保留。
 
         :return: The expire_time of this SubCustomerResFeeRecordV2.
         :rtype: str
@@ -258,7 +258,7 @@ class SubCustomerResFeeRecordV2:
     def expire_time(self, expire_time):
         """Sets the expire_time of this SubCustomerResFeeRecordV2.
 
-        |参数名称：费用对应的资源使用的结束时间，按需有效，包周期该字段保留。| |参数约束及描述：费用对应的资源使用的结束时间，按需有效，包周期该字段保留。|
+        消费记录对应的资源使用的结束时间。  说明： 按需有效，包年/包月该字段保留。
 
         :param expire_time: The expire_time of this SubCustomerResFeeRecordV2.
         :type: str
@@ -269,7 +269,7 @@ class SubCustomerResFeeRecordV2:
     def product_id(self):
         """Gets the product_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：产品ID。| |参数约束及描述：产品ID。|
+        产品ID。
 
         :return: The product_id of this SubCustomerResFeeRecordV2.
         :rtype: str
@@ -280,7 +280,7 @@ class SubCustomerResFeeRecordV2:
     def product_id(self, product_id):
         """Sets the product_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：产品ID。| |参数约束及描述：产品ID。|
+        产品ID。
 
         :param product_id: The product_id of this SubCustomerResFeeRecordV2.
         :type: str
@@ -291,7 +291,7 @@ class SubCustomerResFeeRecordV2:
     def product_name(self):
         """Gets the product_name of this SubCustomerResFeeRecordV2.
 
-        |参数名称：产品名称。| |参数约束及描述：产品名称。|
+        产品名称。
 
         :return: The product_name of this SubCustomerResFeeRecordV2.
         :rtype: str
@@ -302,7 +302,7 @@ class SubCustomerResFeeRecordV2:
     def product_name(self, product_name):
         """Sets the product_name of this SubCustomerResFeeRecordV2.
 
-        |参数名称：产品名称。| |参数约束及描述：产品名称。|
+        产品名称。
 
         :param product_name: The product_name of this SubCustomerResFeeRecordV2.
         :type: str
@@ -313,7 +313,7 @@ class SubCustomerResFeeRecordV2:
     def order_id(self):
         """Gets the order_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：订单ID，包周期资源使用记录才有该字段，按需资源为空。| |参数约束及描述：订单ID，包周期资源使用记录才有该字段，按需资源为空。|
+        订单ID。  说明： 包年/包月资源的使用记录才有该字段，按需资源为空。
 
         :return: The order_id of this SubCustomerResFeeRecordV2.
         :rtype: str
@@ -324,7 +324,7 @@ class SubCustomerResFeeRecordV2:
     def order_id(self, order_id):
         """Sets the order_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：订单ID，包周期资源使用记录才有该字段，按需资源为空。| |参数约束及描述：订单ID，包周期资源使用记录才有该字段，按需资源为空。|
+        订单ID。  说明： 包年/包月资源的使用记录才有该字段，按需资源为空。
 
         :param order_id: The order_id of this SubCustomerResFeeRecordV2.
         :type: str
@@ -335,7 +335,7 @@ class SubCustomerResFeeRecordV2:
     def amount(self):
         """Gets the amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：消费金额，包括现金券和代金券金额，精确到小数点后2位。| |参数约束及描述： 消费金额，包括现金券和代金券金额，精确到小数点后2位。|
+        消费金额，包括现金券和代金券金额，精确到小数点后2位。
 
         :return: The amount of this SubCustomerResFeeRecordV2.
         :rtype: float
@@ -346,7 +346,7 @@ class SubCustomerResFeeRecordV2:
     def amount(self, amount):
         """Sets the amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：消费金额，包括现金券和代金券金额，精确到小数点后2位。| |参数约束及描述： 消费金额，包括现金券和代金券金额，精确到小数点后2位。|
+        消费金额，包括现金券和代金券金额，精确到小数点后2位。
 
         :param amount: The amount of this SubCustomerResFeeRecordV2.
         :type: float
@@ -357,7 +357,7 @@ class SubCustomerResFeeRecordV2:
     def measure_id(self):
         """Gets the measure_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：金额单位：1：元| |参数的约束及描述：金额单位：1：元|
+        金额单位： 1：元
 
         :return: The measure_id of this SubCustomerResFeeRecordV2.
         :rtype: int
@@ -368,7 +368,7 @@ class SubCustomerResFeeRecordV2:
     def measure_id(self, measure_id):
         """Sets the measure_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：金额单位：1：元| |参数的约束及描述：金额单位：1：元|
+        金额单位： 1：元
 
         :param measure_id: The measure_id of this SubCustomerResFeeRecordV2.
         :type: int
@@ -379,7 +379,7 @@ class SubCustomerResFeeRecordV2:
     def usage_type(self):
         """Gets the usage_type of this SubCustomerResFeeRecordV2.
 
-        |参数名称：使用量类型| |参数约束及描述：使用量类型|
+        资源的使用量类型，您可以调用查询使用量类型列表接口获取。
 
         :return: The usage_type of this SubCustomerResFeeRecordV2.
         :rtype: str
@@ -390,7 +390,7 @@ class SubCustomerResFeeRecordV2:
     def usage_type(self, usage_type):
         """Sets the usage_type of this SubCustomerResFeeRecordV2.
 
-        |参数名称：使用量类型| |参数约束及描述：使用量类型|
+        资源的使用量类型，您可以调用查询使用量类型列表接口获取。
 
         :param usage_type: The usage_type of this SubCustomerResFeeRecordV2.
         :type: str
@@ -401,7 +401,7 @@ class SubCustomerResFeeRecordV2:
     def usage(self):
         """Gets the usage of this SubCustomerResFeeRecordV2.
 
-        |参数名称：使用量。| |参数约束及描述： 使用量。|
+        资源的使用量。
 
         :return: The usage of this SubCustomerResFeeRecordV2.
         :rtype: float
@@ -412,7 +412,7 @@ class SubCustomerResFeeRecordV2:
     def usage(self, usage):
         """Sets the usage of this SubCustomerResFeeRecordV2.
 
-        |参数名称：使用量。| |参数约束及描述： 使用量。|
+        资源的使用量。
 
         :param usage: The usage of this SubCustomerResFeeRecordV2.
         :type: float
@@ -423,7 +423,7 @@ class SubCustomerResFeeRecordV2:
     def usage_measure_id(self):
         """Gets the usage_measure_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：使用量度量单位| |参数的约束及描述：使用量度量单位|
+        资源的使用量单位，您可以调用查询使用量单位列表接口获取。
 
         :return: The usage_measure_id of this SubCustomerResFeeRecordV2.
         :rtype: int
@@ -434,7 +434,7 @@ class SubCustomerResFeeRecordV2:
     def usage_measure_id(self, usage_measure_id):
         """Sets the usage_measure_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：使用量度量单位| |参数的约束及描述：使用量度量单位|
+        资源的使用量单位，您可以调用查询使用量单位列表接口获取。
 
         :param usage_measure_id: The usage_measure_id of this SubCustomerResFeeRecordV2.
         :type: int
@@ -445,7 +445,7 @@ class SubCustomerResFeeRecordV2:
     def free_resource_usage(self):
         """Gets the free_resource_usage of this SubCustomerResFeeRecordV2.
 
-        |参数名称：套餐内使用量。| |参数约束及描述： 套餐内使用量。|
+        套餐内使用量。
 
         :return: The free_resource_usage of this SubCustomerResFeeRecordV2.
         :rtype: float
@@ -456,7 +456,7 @@ class SubCustomerResFeeRecordV2:
     def free_resource_usage(self, free_resource_usage):
         """Sets the free_resource_usage of this SubCustomerResFeeRecordV2.
 
-        |参数名称：套餐内使用量。| |参数约束及描述： 套餐内使用量。|
+        套餐内使用量。
 
         :param free_resource_usage: The free_resource_usage of this SubCustomerResFeeRecordV2.
         :type: float
@@ -467,7 +467,7 @@ class SubCustomerResFeeRecordV2:
     def free_resource_measure_id(self):
         """Gets the free_resource_measure_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：套餐内使用量单位，具体枚举参考：usage_measure_id| |参数的约束及描述：套餐内使用量单位，具体枚举参考：usage_measure_id|
+        套餐内使用量单位，您可以调用查询使用量单位列表接口获取。
 
         :return: The free_resource_measure_id of this SubCustomerResFeeRecordV2.
         :rtype: int
@@ -478,7 +478,7 @@ class SubCustomerResFeeRecordV2:
     def free_resource_measure_id(self, free_resource_measure_id):
         """Sets the free_resource_measure_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：套餐内使用量单位，具体枚举参考：usage_measure_id| |参数的约束及描述：套餐内使用量单位，具体枚举参考：usage_measure_id|
+        套餐内使用量单位，您可以调用查询使用量单位列表接口获取。
 
         :param free_resource_measure_id: The free_resource_measure_id of this SubCustomerResFeeRecordV2.
         :type: int
@@ -489,7 +489,7 @@ class SubCustomerResFeeRecordV2:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this SubCustomerResFeeRecordV2.
 
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
 
         :return: The cloud_service_type of this SubCustomerResFeeRecordV2.
         :rtype: str
@@ -500,7 +500,7 @@ class SubCustomerResFeeRecordV2:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this SubCustomerResFeeRecordV2.
 
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
 
         :param cloud_service_type: The cloud_service_type of this SubCustomerResFeeRecordV2.
         :type: str
@@ -511,7 +511,7 @@ class SubCustomerResFeeRecordV2:
     def region(self):
         """Gets the region of this SubCustomerResFeeRecordV2.
 
-        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
+        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :return: The region of this SubCustomerResFeeRecordV2.
         :rtype: str
@@ -522,7 +522,7 @@ class SubCustomerResFeeRecordV2:
     def region(self, region):
         """Sets the region of this SubCustomerResFeeRecordV2.
 
-        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
+        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region: The region of this SubCustomerResFeeRecordV2.
         :type: str
@@ -533,7 +533,7 @@ class SubCustomerResFeeRecordV2:
     def resource_type(self):
         """Gets the resource_type of this SubCustomerResFeeRecordV2.
 
-        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。| |参数约束及描述：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :return: The resource_type of this SubCustomerResFeeRecordV2.
         :rtype: str
@@ -544,7 +544,7 @@ class SubCustomerResFeeRecordV2:
     def resource_type(self, resource_type):
         """Sets the resource_type of this SubCustomerResFeeRecordV2.
 
-        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。| |参数约束及描述：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type: The resource_type of this SubCustomerResFeeRecordV2.
         :type: str
@@ -555,7 +555,7 @@ class SubCustomerResFeeRecordV2:
     def charge_mode(self):
         """Gets the charge_mode of this SubCustomerResFeeRecordV2.
 
-        |参数名称：1 : 包周期；3: 按需。10: 预留实例。| |参数约束及描述：1 : 包周期；3: 按需。10: 预留实例。|
+        计费模式。 1 : 包年/包月3：按需10：预留实例
 
         :return: The charge_mode of this SubCustomerResFeeRecordV2.
         :rtype: str
@@ -566,7 +566,7 @@ class SubCustomerResFeeRecordV2:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this SubCustomerResFeeRecordV2.
 
-        |参数名称：1 : 包周期；3: 按需。10: 预留实例。| |参数约束及描述：1 : 包周期；3: 按需。10: 预留实例。|
+        计费模式。 1 : 包年/包月3：按需10：预留实例
 
         :param charge_mode: The charge_mode of this SubCustomerResFeeRecordV2.
         :type: str
@@ -577,7 +577,7 @@ class SubCustomerResFeeRecordV2:
     def resource_tag(self):
         """Gets the resource_tag of this SubCustomerResFeeRecordV2.
 
-        |参数名称：资源标签。| |参数约束及描述：资源标签。|
+        资源标签。
 
         :return: The resource_tag of this SubCustomerResFeeRecordV2.
         :rtype: str
@@ -588,7 +588,7 @@ class SubCustomerResFeeRecordV2:
     def resource_tag(self, resource_tag):
         """Sets the resource_tag of this SubCustomerResFeeRecordV2.
 
-        |参数名称：资源标签。| |参数约束及描述：资源标签。|
+        资源标签。
 
         :param resource_tag: The resource_tag of this SubCustomerResFeeRecordV2.
         :type: str
@@ -599,7 +599,7 @@ class SubCustomerResFeeRecordV2:
     def resource_name(self):
         """Gets the resource_name of this SubCustomerResFeeRecordV2.
 
-        |参数名称：资源名称。| |参数约束及描述：资源名称。|
+        资源名称。
 
         :return: The resource_name of this SubCustomerResFeeRecordV2.
         :rtype: str
@@ -610,7 +610,7 @@ class SubCustomerResFeeRecordV2:
     def resource_name(self, resource_name):
         """Sets the resource_name of this SubCustomerResFeeRecordV2.
 
-        |参数名称：资源名称。| |参数约束及描述：资源名称。|
+        资源名称。
 
         :param resource_name: The resource_name of this SubCustomerResFeeRecordV2.
         :type: str
@@ -621,7 +621,7 @@ class SubCustomerResFeeRecordV2:
     def resource_id(self):
         """Gets the resource_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：资源ID。| |参数约束及描述：资源ID。|
+        资源ID。
 
         :return: The resource_id of this SubCustomerResFeeRecordV2.
         :rtype: str
@@ -632,7 +632,7 @@ class SubCustomerResFeeRecordV2:
     def resource_id(self, resource_id):
         """Sets the resource_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：资源ID。| |参数约束及描述：资源ID。|
+        资源ID。
 
         :param resource_id: The resource_id of this SubCustomerResFeeRecordV2.
         :type: str
@@ -643,7 +643,7 @@ class SubCustomerResFeeRecordV2:
     def bill_type(self):
         """Gets the bill_type of this SubCustomerResFeeRecordV2.
 
-        |参数名称：账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿12：消费-按时计费13：消费-退订手续费14：消费-服务支持计划月末扣费16：调账-扣费| |参数的约束及描述：账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿12：消费-按时计费13：消费-退订手续费14：消费-服务支持计划月末扣费16：调账-扣费|
+        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费
 
         :return: The bill_type of this SubCustomerResFeeRecordV2.
         :rtype: int
@@ -654,7 +654,7 @@ class SubCustomerResFeeRecordV2:
     def bill_type(self, bill_type):
         """Sets the bill_type of this SubCustomerResFeeRecordV2.
 
-        |参数名称：账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿12：消费-按时计费13：消费-退订手续费14：消费-服务支持计划月末扣费16：调账-扣费| |参数的约束及描述：账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿12：消费-按时计费13：消费-退订手续费14：消费-服务支持计划月末扣费16：调账-扣费|
+        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费
 
         :param bill_type: The bill_type of this SubCustomerResFeeRecordV2.
         :type: int
@@ -665,7 +665,7 @@ class SubCustomerResFeeRecordV2:
     def period_type(self):
         """Gets the period_type of this SubCustomerResFeeRecordV2.
 
-        |参数名称：周期类型：19：年；20：月；24：天；25：小时；5：分钟；6：秒。| |参数约束及描述：周期类型：19：年；20：月；24：天；25：小时；5：分钟；6：秒。|
+        周期类型： 19：年20：月24：天25：小时5：一次性  说明： charge_mode取值为“1：包年/包月资源”或“10：预留实例”时该参数才有值；charge_mode取值为“3：按需资源”时该参数为空。
 
         :return: The period_type of this SubCustomerResFeeRecordV2.
         :rtype: str
@@ -676,7 +676,7 @@ class SubCustomerResFeeRecordV2:
     def period_type(self, period_type):
         """Sets the period_type of this SubCustomerResFeeRecordV2.
 
-        |参数名称：周期类型：19：年；20：月；24：天；25：小时；5：分钟；6：秒。| |参数约束及描述：周期类型：19：年；20：月；24：天；25：小时；5：分钟；6：秒。|
+        周期类型： 19：年20：月24：天25：小时5：一次性  说明： charge_mode取值为“1：包年/包月资源”或“10：预留实例”时该参数才有值；charge_mode取值为“3：按需资源”时该参数为空。
 
         :param period_type: The period_type of this SubCustomerResFeeRecordV2.
         :type: str
@@ -687,7 +687,7 @@ class SubCustomerResFeeRecordV2:
     def product_spec_desc(self):
         """Gets the product_spec_desc of this SubCustomerResFeeRecordV2.
 
-        |参数名称：产品规格描述。| |参数约束及描述：产品规格描述，举例为：普通IO|100.0GB。|
+        产品的规格描述。例如：“普通IO|100.0GB”。
 
         :return: The product_spec_desc of this SubCustomerResFeeRecordV2.
         :rtype: str
@@ -698,7 +698,7 @@ class SubCustomerResFeeRecordV2:
     def product_spec_desc(self, product_spec_desc):
         """Sets the product_spec_desc of this SubCustomerResFeeRecordV2.
 
-        |参数名称：产品规格描述。| |参数约束及描述：产品规格描述，举例为：普通IO|100.0GB。|
+        产品的规格描述。例如：“普通IO|100.0GB”。
 
         :param product_spec_desc: The product_spec_desc of this SubCustomerResFeeRecordV2.
         :type: str
@@ -709,7 +709,7 @@ class SubCustomerResFeeRecordV2:
     def ri_usage(self):
         """Gets the ri_usage of this SubCustomerResFeeRecordV2.
 
-        |参数名称：预留实例使用量。| |参数约束及描述： 预留实例使用量。|
+        预留实例使用量。
 
         :return: The ri_usage of this SubCustomerResFeeRecordV2.
         :rtype: float
@@ -720,7 +720,7 @@ class SubCustomerResFeeRecordV2:
     def ri_usage(self, ri_usage):
         """Sets the ri_usage of this SubCustomerResFeeRecordV2.
 
-        |参数名称：预留实例使用量。| |参数约束及描述： 预留实例使用量。|
+        预留实例使用量。
 
         :param ri_usage: The ri_usage of this SubCustomerResFeeRecordV2.
         :type: float
@@ -731,7 +731,7 @@ class SubCustomerResFeeRecordV2:
     def ri_usage_measure_id(self):
         """Gets the ri_usage_measure_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：预留实例使用量单位。| |参数的约束及描述：预留实例使用量单位。|
+        预留实例使用量单位。
 
         :return: The ri_usage_measure_id of this SubCustomerResFeeRecordV2.
         :rtype: int
@@ -742,7 +742,7 @@ class SubCustomerResFeeRecordV2:
     def ri_usage_measure_id(self, ri_usage_measure_id):
         """Sets the ri_usage_measure_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：预留实例使用量单位。| |参数的约束及描述：预留实例使用量单位。|
+        预留实例使用量单位。
 
         :param ri_usage_measure_id: The ri_usage_measure_id of this SubCustomerResFeeRecordV2.
         :type: int
@@ -753,7 +753,7 @@ class SubCustomerResFeeRecordV2:
     def official_amount(self):
         """Gets the official_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：官网价。| |参数约束及描述： 官网价。|
+        官网价。
 
         :return: The official_amount of this SubCustomerResFeeRecordV2.
         :rtype: float
@@ -764,7 +764,7 @@ class SubCustomerResFeeRecordV2:
     def official_amount(self, official_amount):
         """Sets the official_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：官网价。| |参数约束及描述： 官网价。|
+        官网价。
 
         :param official_amount: The official_amount of this SubCustomerResFeeRecordV2.
         :type: float
@@ -775,7 +775,7 @@ class SubCustomerResFeeRecordV2:
     def discount_amount(self):
         """Gets the discount_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：折扣金额| |参数约束及描述： 折扣金额|
+        折扣金额
 
         :return: The discount_amount of this SubCustomerResFeeRecordV2.
         :rtype: float
@@ -786,7 +786,7 @@ class SubCustomerResFeeRecordV2:
     def discount_amount(self, discount_amount):
         """Sets the discount_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：折扣金额| |参数约束及描述： 折扣金额|
+        折扣金额
 
         :param discount_amount: The discount_amount of this SubCustomerResFeeRecordV2.
         :type: float
@@ -797,7 +797,7 @@ class SubCustomerResFeeRecordV2:
     def cash_amount(self):
         """Gets the cash_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：现金支付金额| |参数约束及描述： 现金支付金额|
+        现金支付金额
 
         :return: The cash_amount of this SubCustomerResFeeRecordV2.
         :rtype: float
@@ -808,7 +808,7 @@ class SubCustomerResFeeRecordV2:
     def cash_amount(self, cash_amount):
         """Sets the cash_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：现金支付金额| |参数约束及描述： 现金支付金额|
+        现金支付金额
 
         :param cash_amount: The cash_amount of this SubCustomerResFeeRecordV2.
         :type: float
@@ -819,7 +819,7 @@ class SubCustomerResFeeRecordV2:
     def credit_amount(self):
         """Gets the credit_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：信用额度支付金额。| |参数约束及描述： 信用额度支付金额。|
+        信用额度支付金额。
 
         :return: The credit_amount of this SubCustomerResFeeRecordV2.
         :rtype: float
@@ -830,7 +830,7 @@ class SubCustomerResFeeRecordV2:
     def credit_amount(self, credit_amount):
         """Sets the credit_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：信用额度支付金额。| |参数约束及描述： 信用额度支付金额。|
+        信用额度支付金额。
 
         :param credit_amount: The credit_amount of this SubCustomerResFeeRecordV2.
         :type: float
@@ -841,7 +841,7 @@ class SubCustomerResFeeRecordV2:
     def coupon_amount(self):
         """Gets the coupon_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：代金券支付金额。| |参数约束及描述： 代金券支付金额。|
+        代金券支付金额。
 
         :return: The coupon_amount of this SubCustomerResFeeRecordV2.
         :rtype: float
@@ -852,7 +852,7 @@ class SubCustomerResFeeRecordV2:
     def coupon_amount(self, coupon_amount):
         """Sets the coupon_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：代金券支付金额。| |参数约束及描述： 代金券支付金额。|
+        代金券支付金额。
 
         :param coupon_amount: The coupon_amount of this SubCustomerResFeeRecordV2.
         :type: float
@@ -863,7 +863,7 @@ class SubCustomerResFeeRecordV2:
     def flexipurchase_coupon_amount(self):
         """Gets the flexipurchase_coupon_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：现金券支付金额。| |参数约束及描述： 现金券支付金额。|
+        现金券支付金额。
 
         :return: The flexipurchase_coupon_amount of this SubCustomerResFeeRecordV2.
         :rtype: float
@@ -874,7 +874,7 @@ class SubCustomerResFeeRecordV2:
     def flexipurchase_coupon_amount(self, flexipurchase_coupon_amount):
         """Sets the flexipurchase_coupon_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：现金券支付金额。| |参数约束及描述： 现金券支付金额。|
+        现金券支付金额。
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this SubCustomerResFeeRecordV2.
         :type: float
@@ -885,7 +885,7 @@ class SubCustomerResFeeRecordV2:
     def stored_card_amount(self):
         """Gets the stored_card_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：储值卡支付金额。| |参数约束及描述： 储值卡支付金额。|
+        储值卡支付金额。
 
         :return: The stored_card_amount of this SubCustomerResFeeRecordV2.
         :rtype: float
@@ -896,7 +896,7 @@ class SubCustomerResFeeRecordV2:
     def stored_card_amount(self, stored_card_amount):
         """Sets the stored_card_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：储值卡支付金额。| |参数约束及描述： 储值卡支付金额。|
+        储值卡支付金额。
 
         :param stored_card_amount: The stored_card_amount of this SubCustomerResFeeRecordV2.
         :type: float
@@ -907,7 +907,7 @@ class SubCustomerResFeeRecordV2:
     def bonus_amount(self):
         """Gets the bonus_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：奖励金支付金额（用于现网未清干净的奖励金）。| |参数约束及描述： 奖励金支付金额（用于现网未清干净的奖励金）。|
+        奖励金支付金额（用于现网客户未使用完的奖励金）。
 
         :return: The bonus_amount of this SubCustomerResFeeRecordV2.
         :rtype: float
@@ -918,7 +918,7 @@ class SubCustomerResFeeRecordV2:
     def bonus_amount(self, bonus_amount):
         """Sets the bonus_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：奖励金支付金额（用于现网未清干净的奖励金）。| |参数约束及描述： 奖励金支付金额（用于现网未清干净的奖励金）。|
+        奖励金支付金额（用于现网客户未使用完的奖励金）。
 
         :param bonus_amount: The bonus_amount of this SubCustomerResFeeRecordV2.
         :type: float
@@ -929,7 +929,7 @@ class SubCustomerResFeeRecordV2:
     def debt_amount(self):
         """Gets the debt_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：欠费金额。| |参数约束及描述： 欠费金额。|
+        欠费金额。
 
         :return: The debt_amount of this SubCustomerResFeeRecordV2.
         :rtype: float
@@ -940,7 +940,7 @@ class SubCustomerResFeeRecordV2:
     def debt_amount(self, debt_amount):
         """Sets the debt_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：欠费金额。| |参数约束及描述： 欠费金额。|
+        欠费金额。
 
         :param debt_amount: The debt_amount of this SubCustomerResFeeRecordV2.
         :type: float
@@ -951,7 +951,7 @@ class SubCustomerResFeeRecordV2:
     def adjustment_amount(self):
         """Gets the adjustment_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：欠费核销金额。| |参数约束及描述： 欠费核销金额。|
+        欠费核销金额。
 
         :return: The adjustment_amount of this SubCustomerResFeeRecordV2.
         :rtype: float
@@ -962,7 +962,7 @@ class SubCustomerResFeeRecordV2:
     def adjustment_amount(self, adjustment_amount):
         """Sets the adjustment_amount of this SubCustomerResFeeRecordV2.
 
-        |参数名称：欠费核销金额。| |参数约束及描述： 欠费核销金额。|
+        欠费核销金额。
 
         :param adjustment_amount: The adjustment_amount of this SubCustomerResFeeRecordV2.
         :type: float
@@ -973,7 +973,7 @@ class SubCustomerResFeeRecordV2:
     def spec_size(self):
         """Gets the spec_size of this SubCustomerResFeeRecordV2.
 
-        |参数名称：线性大小| |参数约束及描述： 线性大小|
+        产品的实例大小，仅线性产品有效。 线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
 
         :return: The spec_size of this SubCustomerResFeeRecordV2.
         :rtype: float
@@ -984,7 +984,7 @@ class SubCustomerResFeeRecordV2:
     def spec_size(self, spec_size):
         """Sets the spec_size of this SubCustomerResFeeRecordV2.
 
-        |参数名称：线性大小| |参数约束及描述： 线性大小|
+        产品的实例大小，仅线性产品有效。 线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
 
         :param spec_size: The spec_size of this SubCustomerResFeeRecordV2.
         :type: float
@@ -995,7 +995,7 @@ class SubCustomerResFeeRecordV2:
     def spec_size_measure_id(self):
         """Gets the spec_size_measure_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：线性大小单位| |参数的约束及描述：线性大小单位|
+        产品实例大小的单位，仅线性产品有该字段。您可以调用查询使用量单位列表接口获取。
 
         :return: The spec_size_measure_id of this SubCustomerResFeeRecordV2.
         :rtype: int
@@ -1006,7 +1006,7 @@ class SubCustomerResFeeRecordV2:
     def spec_size_measure_id(self, spec_size_measure_id):
         """Sets the spec_size_measure_id of this SubCustomerResFeeRecordV2.
 
-        |参数名称：线性大小单位| |参数的约束及描述：线性大小单位|
+        产品实例大小的单位，仅线性产品有该字段。您可以调用查询使用量单位列表接口获取。
 
         :param spec_size_measure_id: The spec_size_measure_id of this SubCustomerResFeeRecordV2.
         :type: int
@@ -1017,7 +1017,7 @@ class SubCustomerResFeeRecordV2:
     def region_name(self):
         """Gets the region_name of this SubCustomerResFeeRecordV2.
 
-        |参数名称：云服务区名称| |参数的约束及描述：云服务区名称|
+        云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 
         :return: The region_name of this SubCustomerResFeeRecordV2.
         :rtype: str
@@ -1028,7 +1028,7 @@ class SubCustomerResFeeRecordV2:
     def region_name(self, region_name):
         """Sets the region_name of this SubCustomerResFeeRecordV2.
 
-        |参数名称：云服务区名称| |参数的约束及描述：云服务区名称|
+        云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 
         :param region_name: The region_name of this SubCustomerResFeeRecordV2.
         :type: str

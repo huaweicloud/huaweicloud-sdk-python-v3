@@ -42,6 +42,9 @@ from huaweicloudsdkrds.v3.model.create_db_user_response import CreateDbUserRespo
 from huaweicloudsdkrds.v3.model.create_instance_request import CreateInstanceRequest
 from huaweicloudsdkrds.v3.model.create_instance_resp_item import CreateInstanceRespItem
 from huaweicloudsdkrds.v3.model.create_instance_response import CreateInstanceResponse
+from huaweicloudsdkrds.v3.model.create_manual_backup_request import CreateManualBackupRequest
+from huaweicloudsdkrds.v3.model.create_manual_backup_request_body import CreateManualBackupRequestBody
+from huaweicloudsdkrds.v3.model.create_manual_backup_response import CreateManualBackupResponse
 from huaweicloudsdkrds.v3.model.data_ip_request import DataIpRequest
 from huaweicloudsdkrds.v3.model.database_for_creation import DatabaseForCreation
 from huaweicloudsdkrds.v3.model.database_for_list import DatabaseForList
@@ -58,9 +61,6 @@ from huaweicloudsdkrds.v3.model.delete_instance_request import DeleteInstanceReq
 from huaweicloudsdkrds.v3.model.delete_instance_response import DeleteInstanceResponse
 from huaweicloudsdkrds.v3.model.delete_manual_backup_request import DeleteManualBackupRequest
 from huaweicloudsdkrds.v3.model.delete_manual_backup_response import DeleteManualBackupResponse
-from huaweicloudsdkrds.v3.model.do_manual_backup_request import DoManualBackupRequest
-from huaweicloudsdkrds.v3.model.do_manual_backup_request_body import DoManualBackupRequestBody
-from huaweicloudsdkrds.v3.model.do_manual_backup_response import DoManualBackupResponse
 from huaweicloudsdkrds.v3.model.download_slowlog_request import DownloadSlowlogRequest
 from huaweicloudsdkrds.v3.model.download_slowlog_response import DownloadSlowlogResponse
 from huaweicloudsdkrds.v3.model.dss_pool_info import DssPoolInfo
@@ -85,7 +85,6 @@ from huaweicloudsdkrds.v3.model.ha_response import HaResponse
 from huaweicloudsdkrds.v3.model.instance_action_request import InstanceActionRequest
 from huaweicloudsdkrds.v3.model.instance_action_request_restart import InstanceActionRequestRestart
 from huaweicloudsdkrds.v3.model.instance_request import InstanceRequest
-from huaweicloudsdkrds.v3.model.instance_request_tags import InstanceRequestTags
 from huaweicloudsdkrds.v3.model.instance_response import InstanceResponse
 from huaweicloudsdkrds.v3.model.l_datastore import LDatastore
 from huaweicloudsdkrds.v3.model.list_auditlogs_request import ListAuditlogsRequest
@@ -134,10 +133,6 @@ from huaweicloudsdkrds.v3.model.list_storage_types_request import ListStorageTyp
 from huaweicloudsdkrds.v3.model.list_storage_types_response import ListStorageTypesResponse
 from huaweicloudsdkrds.v3.model.migrate_follower_request import MigrateFollowerRequest
 from huaweicloudsdkrds.v3.model.migrate_follower_response import MigrateFollowerResponse
-from huaweicloudsdkrds.v3.model.modify_configuration_request import ModifyConfigurationRequest
-from huaweicloudsdkrds.v3.model.modify_configuration_response import ModifyConfigurationResponse
-from huaweicloudsdkrds.v3.model.modify_instance_configuration_request import ModifyInstanceConfigurationRequest
-from huaweicloudsdkrds.v3.model.modify_instance_configuration_response import ModifyInstanceConfigurationResponse
 from huaweicloudsdkrds.v3.model.node_response import NodeResponse
 from huaweicloudsdkrds.v3.model.off_site_backup_for_list import OffSiteBackupForList
 from huaweicloudsdkrds.v3.model.off_site_backup_policy import OffSiteBackupPolicy
@@ -205,9 +200,15 @@ from huaweicloudsdkrds.v3.model.storage import Storage
 from huaweicloudsdkrds.v3.model.switch_ssl_request import SwitchSslRequest
 from huaweicloudsdkrds.v3.model.switch_ssl_response import SwitchSslResponse
 from huaweicloudsdkrds.v3.model.tag_response import TagResponse
+from huaweicloudsdkrds.v3.model.tag_with_key_value import TagWithKeyValue
+from huaweicloudsdkrds.v3.model.update_configuration_request import UpdateConfigurationRequest
+from huaweicloudsdkrds.v3.model.update_configuration_response import UpdateConfigurationResponse
 from huaweicloudsdkrds.v3.model.update_data_ip_request import UpdateDataIpRequest
 from huaweicloudsdkrds.v3.model.update_data_ip_response import UpdateDataIpResponse
 from huaweicloudsdkrds.v3.model.update_db_port_request import UpdateDbPortRequest
+from huaweicloudsdkrds.v3.model.update_instance_configuration_request import UpdateInstanceConfigurationRequest
+from huaweicloudsdkrds.v3.model.update_instance_configuration_request_body import UpdateInstanceConfigurationRequestBody
+from huaweicloudsdkrds.v3.model.update_instance_configuration_response import UpdateInstanceConfigurationResponse
 from huaweicloudsdkrds.v3.model.update_port_request import UpdatePortRequest
 from huaweicloudsdkrds.v3.model.update_port_response import UpdatePortResponse
 from huaweicloudsdkrds.v3.model.user_for_creation import UserForCreation

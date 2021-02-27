@@ -45,7 +45,7 @@ class ListResourceTypesResponse(SdkResponse):
     def resource_types(self):
         """Gets the resource_types of this ListResourceTypesResponse.
 
-        |参数名称：返回数据| |参数约束以及描述：返回数据|
+        资源类型信息，具体参见表3。
 
         :return: The resource_types of this ListResourceTypesResponse.
         :rtype: list[ResourceType]
@@ -56,7 +56,7 @@ class ListResourceTypesResponse(SdkResponse):
     def resource_types(self, resource_types):
         """Sets the resource_types of this ListResourceTypesResponse.
 
-        |参数名称：返回数据| |参数约束以及描述：返回数据|
+        资源类型信息，具体参见表3。
 
         :param resource_types: The resource_types of this ListResourceTypesResponse.
         :type: list[ResourceType]

@@ -44,7 +44,7 @@ class SkuItem:
     def product_id(self):
         """Gets the product_id of this SkuItem.
 
-        |参数名称：产品ID| |参数约束及描述：产品ID|
+        库存产品的ID。
 
         :return: The product_id of this SkuItem.
         :rtype: str
@@ -55,7 +55,7 @@ class SkuItem:
     def product_id(self, product_id):
         """Sets the product_id of this SkuItem.
 
-        |参数名称：产品ID| |参数约束及描述：产品ID|
+        库存产品的ID。
 
         :param product_id: The product_id of this SkuItem.
         :type: str

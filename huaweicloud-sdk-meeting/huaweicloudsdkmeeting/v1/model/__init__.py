@@ -95,8 +95,6 @@ from huaweicloudsdkmeeting.v1.model.dept_basic_dto import DeptBasicDTO
 from huaweicloudsdkmeeting.v1.model.dept_dto import DeptDTO
 from huaweicloudsdkmeeting.v1.model.disassociate_vmr_request import DisassociateVmrRequest
 from huaweicloudsdkmeeting.v1.model.disassociate_vmr_response import DisassociateVmrResponse
-from huaweicloudsdkmeeting.v1.model.edit_meeting_request import EditMeetingRequest
-from huaweicloudsdkmeeting.v1.model.edit_meeting_response import EditMeetingResponse
 from huaweicloudsdkmeeting.v1.model.hand_request import HandRequest
 from huaweicloudsdkmeeting.v1.model.hand_response import HandResponse
 from huaweicloudsdkmeeting.v1.model.hang_up_request import HangUpRequest
@@ -328,6 +326,8 @@ from huaweicloudsdkmeeting.v1.model.update_device_response import UpdateDeviceRe
 from huaweicloudsdkmeeting.v1.model.update_material_request import UpdateMaterialRequest
 from huaweicloudsdkmeeting.v1.model.update_material_request_dto import UpdateMaterialRequestDTO
 from huaweicloudsdkmeeting.v1.model.update_material_response import UpdateMaterialResponse
+from huaweicloudsdkmeeting.v1.model.update_meeting_request import UpdateMeetingRequest
+from huaweicloudsdkmeeting.v1.model.update_meeting_response import UpdateMeetingResponse
 from huaweicloudsdkmeeting.v1.model.update_member_vmr_request import UpdateMemberVmrRequest
 from huaweicloudsdkmeeting.v1.model.update_member_vmr_response import UpdateMemberVmrResponse
 from huaweicloudsdkmeeting.v1.model.update_my_info_request import UpdateMyInfoRequest
