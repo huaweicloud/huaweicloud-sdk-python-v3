@@ -34,7 +34,7 @@ class ListClustersResponse(SdkResponse):
         'kind': 'kind'
     }
 
-    def __init__(self, api_version='v3', items=None, kind='Cluster'):
+    def __init__(self, api_version=None, items=None, kind=None):
         """ListClustersResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()

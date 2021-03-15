@@ -48,7 +48,7 @@ class CheckTokenResponse(SdkResponse):
         'days_pwd_available': 'daysPwdAvailable'
     }
 
-    def __init__(self, access_token=None, token_ip=None, valid_period=None, expire_time=None, user=None, client_type=None, force_login_ind=None, first_login=False, pwd_expired=False, days_pwd_available=None):
+    def __init__(self, access_token=None, token_ip=None, valid_period=None, expire_time=None, user=None, client_type=None, force_login_ind=None, first_login=None, pwd_expired=None, days_pwd_available=None):
         """CheckTokenResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()

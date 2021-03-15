@@ -40,7 +40,7 @@ class SendVerificationCodeV2Req:
         'customer_id': 'customer_id'
     }
 
-    def __init__(self, receiver_type=None, timeout=None, mobile_phone=None, lang=None, scene=29, customer_id=None):
+    def __init__(self, receiver_type=None, timeout=None, mobile_phone=None, lang=None, scene=None, customer_id=None):
         """SendVerificationCodeV2Req - a model defined in huaweicloud sdk"""
         
         

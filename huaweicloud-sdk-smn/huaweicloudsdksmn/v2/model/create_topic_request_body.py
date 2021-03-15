@@ -34,7 +34,7 @@ class CreateTopicRequestBody:
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, name=None, display_name=None, enterprise_project_id='0'):
+    def __init__(self, name=None, display_name=None, enterprise_project_id=None):
         """CreateTopicRequestBody - a model defined in huaweicloud sdk"""
         
         

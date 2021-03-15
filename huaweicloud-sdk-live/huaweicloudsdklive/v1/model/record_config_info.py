@@ -46,7 +46,7 @@ class RecordConfigInfo:
         'create_time': 'create_time'
     }
 
-    def __init__(self, domain=None, app_name=None, record_duration=None, record_format='flv', record_type='configer_record', record_location='vod', record_prefix='{DomainName}/{AppName}/{StreamName}/{StartTime}-{EndTime}', obs_addr=None, create_time=None):
+    def __init__(self, domain=None, app_name=None, record_duration=None, record_format=None, record_type=None, record_location=None, record_prefix=None, obs_addr=None, create_time=None):
         """RecordConfigInfo - a model defined in huaweicloud sdk"""
         
         

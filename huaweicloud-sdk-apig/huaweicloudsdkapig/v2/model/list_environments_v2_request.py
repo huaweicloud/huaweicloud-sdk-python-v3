@@ -36,7 +36,7 @@ class ListEnvironmentsV2Request:
         'limit': 'limit'
     }
 
-    def __init__(self, instance_id=None, name=None, offset=0, limit=20):
+    def __init__(self, instance_id=None, name=None, offset=None, limit=None):
         """ListEnvironmentsV2Request - a model defined in huaweicloud sdk"""
         
         

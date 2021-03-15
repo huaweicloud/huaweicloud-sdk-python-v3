@@ -34,7 +34,7 @@ class ValidateTokenReqDTO:
         'need_account_info': 'needAccountInfo'
     }
 
-    def __init__(self, token=None, need_gen_new_token=False, need_account_info=True):
+    def __init__(self, token=None, need_gen_new_token=None, need_account_info=None):
         """ValidateTokenReqDTO - a model defined in huaweicloud sdk"""
         
         

@@ -119,7 +119,10 @@ class HttpClient:
             except HTTPError as httpError:
                 response_status_code = httpError.response.status_code
                 response_header_params = httpError.response.headers
-                request_id = response_header_params["X-Request-Id"]
+                if "X-Request-Id" in response_header_params:
+                    request_id = response_header_params["X-Request-Id"]
+                else:
+                    request_id = ""
                 response_body = httpError.response.text
                 sdk_error = self.get_sdk_error_from_response(request_id, response_body, response_status_code)
                 if 400 <= response_status_code < 500:

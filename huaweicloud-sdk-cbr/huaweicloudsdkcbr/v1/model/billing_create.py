@@ -52,7 +52,7 @@ class BillingCreate:
         'extra_info': 'extra_info'
     }
 
-    def __init__(self, cloud_type=None, consistent_level=None, object_type=None, protect_type=None, size=None, charging_mode='post_paid', period_type=None, period_num=None, is_auto_renew=False, is_auto_pay=False, console_url=None, extra_info=None):
+    def __init__(self, cloud_type=None, consistent_level=None, object_type=None, protect_type=None, size=None, charging_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, console_url=None, extra_info=None):
         """BillingCreate - a model defined in huaweicloud sdk"""
         
         

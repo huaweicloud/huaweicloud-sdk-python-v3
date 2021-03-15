@@ -56,7 +56,7 @@ class ShowReposTagResp:
         'deleted': 'deleted'
     }
 
-    def __init__(self, id=None, repo_id=None, tag=None, image_id=None, manifest=None, digest=None, schema=None, path=None, internal_path=None, size=None, is_trusted=False, created=None, updated=None, deleted=None):
+    def __init__(self, id=None, repo_id=None, tag=None, image_id=None, manifest=None, digest=None, schema=None, path=None, internal_path=None, size=None, is_trusted=None, created=None, updated=None, deleted=None):
         """ShowReposTagResp - a model defined in huaweicloud sdk"""
         
         

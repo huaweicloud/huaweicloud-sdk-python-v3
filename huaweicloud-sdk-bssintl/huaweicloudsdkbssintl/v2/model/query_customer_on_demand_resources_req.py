@@ -48,7 +48,7 @@ class QueryCustomerOnDemandResourcesReq:
         'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, customer_id=None, region_code=None, service_type_code=None, resource_ids=None, effective_time_begin=None, effective_time_end=None, offset=0, limit=10, status=None, indirect_partner_id=None):
+    def __init__(self, customer_id=None, region_code=None, service_type_code=None, resource_ids=None, effective_time_begin=None, effective_time_end=None, offset=None, limit=None, status=None, indirect_partner_id=None):
         """QueryCustomerOnDemandResourcesReq - a model defined in huaweicloud sdk"""
         
         

@@ -32,7 +32,7 @@ class BatchStopServersOption:
         'type': 'type'
     }
 
-    def __init__(self, servers=None, type='SOFT'):
+    def __init__(self, servers=None, type=None):
         """BatchStopServersOption - a model defined in huaweicloud sdk"""
         
         

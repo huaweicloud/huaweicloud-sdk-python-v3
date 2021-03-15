@@ -46,7 +46,7 @@ class UpdateAlarmRequestBody:
         'ok_actions': 'ok_actions'
     }
 
-    def __init__(self, alarm_name=None, alarm_description=None, condition=None, alarm_action_enabled=True, alarm_level=None, alarm_type=None, alarm_actions=None, insufficientdata_actions=None, ok_actions=None):
+    def __init__(self, alarm_name=None, alarm_description=None, condition=None, alarm_action_enabled=None, alarm_level=None, alarm_type=None, alarm_actions=None, insufficientdata_actions=None, ok_actions=None):
         """UpdateAlarmRequestBody - a model defined in huaweicloud sdk"""
         
         

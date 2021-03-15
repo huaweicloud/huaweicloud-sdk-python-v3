@@ -34,7 +34,7 @@ class SubscriberInPic:
         'is_assist_stream': 'isAssistStream'
     }
 
-    def __init__(self, index=None, subscriber=None, is_assist_stream=0):
+    def __init__(self, index=None, subscriber=None, is_assist_stream=None):
         """SubscriberInPic - a model defined in huaweicloud sdk"""
         
         

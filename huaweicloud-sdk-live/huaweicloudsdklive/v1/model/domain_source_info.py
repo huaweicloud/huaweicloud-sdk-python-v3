@@ -36,7 +36,7 @@ class DomainSourceInfo:
         'sources_priority': 'sources_priority'
     }
 
-    def __init__(self, protocol=None, source_type='huawei', sources=None, sources_priority='first'):
+    def __init__(self, protocol=None, source_type=None, sources=None, sources_priority=None):
         """DomainSourceInfo - a model defined in huaweicloud sdk"""
         
         

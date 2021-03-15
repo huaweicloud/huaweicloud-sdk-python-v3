@@ -32,7 +32,7 @@ class CreateScalingTagsRequestBody:
         'action': 'action'
     }
 
-    def __init__(self, tags=None, action='create'):
+    def __init__(self, tags=None, action=None):
         """CreateScalingTagsRequestBody - a model defined in huaweicloud sdk"""
         
         

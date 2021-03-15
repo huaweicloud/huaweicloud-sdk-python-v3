@@ -40,7 +40,7 @@ class CreateNatGatewaySnatRuleOption:
         'floating_ip_id': 'floating_ip_id'
     }
 
-    def __init__(self, nat_gateway_id=None, cidr=None, network_id=None, description=None, source_type=0, floating_ip_id=None):
+    def __init__(self, nat_gateway_id=None, cidr=None, network_id=None, description=None, source_type=None, floating_ip_id=None):
         """CreateNatGatewaySnatRuleOption - a model defined in huaweicloud sdk"""
         
         

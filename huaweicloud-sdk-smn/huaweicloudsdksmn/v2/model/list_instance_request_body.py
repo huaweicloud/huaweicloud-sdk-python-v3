@@ -44,7 +44,7 @@ class ListInstanceRequestBody:
         'matches': 'matches'
     }
 
-    def __init__(self, tags=None, tags_any=None, not_tags=None, not_tags_any=None, offset='0', limit='1000', action=None, matches=None):
+    def __init__(self, tags=None, tags_any=None, not_tags=None, not_tags_any=None, offset=None, limit=None, action=None, matches=None):
         """ListInstanceRequestBody - a model defined in huaweicloud sdk"""
         
         

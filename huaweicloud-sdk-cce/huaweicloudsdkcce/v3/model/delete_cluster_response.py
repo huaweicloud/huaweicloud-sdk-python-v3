@@ -38,7 +38,7 @@ class DeleteClusterResponse(SdkResponse):
         'status': 'status'
     }
 
-    def __init__(self, api_version='v3', kind='Cluster', metadata=None, spec=None, status=None):
+    def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
         """DeleteClusterResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()

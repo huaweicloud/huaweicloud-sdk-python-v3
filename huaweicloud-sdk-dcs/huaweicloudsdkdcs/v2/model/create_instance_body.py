@@ -82,7 +82,7 @@ class CreateInstanceBody:
         'rename_commands': 'rename_commands'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, capacity=None, spec_code=None, az_codes=None, vpc_id=None, subnet_id=None, security_group_id=None, publicip_id='false', enterprise_project_id=None, enterprise_project_name=None, description=None, enable_ssl=None, private_ip=None, instance_num=1, maintain_begin=None, maintain_end=None, password=None, no_password_access=False, bss_param=None, instance_backup_policy=None, tags=None, access_user=None, enable_publicip=False, port=None, rename_commands=None):
+    def __init__(self, name=None, engine=None, engine_version=None, capacity=None, spec_code=None, az_codes=None, vpc_id=None, subnet_id=None, security_group_id=None, publicip_id=None, enterprise_project_id=None, enterprise_project_name=None, description=None, enable_ssl=None, private_ip=None, instance_num=None, maintain_begin=None, maintain_end=None, password=None, no_password_access=None, bss_param=None, instance_backup_policy=None, tags=None, access_user=None, enable_publicip=None, port=None, rename_commands=None):
         """CreateInstanceBody - a model defined in huaweicloud sdk"""
         
         

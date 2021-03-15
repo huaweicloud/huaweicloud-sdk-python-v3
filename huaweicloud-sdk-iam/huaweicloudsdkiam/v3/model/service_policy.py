@@ -32,7 +32,7 @@ class ServicePolicy:
         'statement': 'Statement'
     }
 
-    def __init__(self, version='1.1', statement=None):
+    def __init__(self, version=None, statement=None):
         """ServicePolicy - a model defined in huaweicloud sdk"""
         
         

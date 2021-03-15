@@ -32,7 +32,7 @@ class ShowKmsTagsRequest:
         'key_id': 'key_id'
     }
 
-    def __init__(self, version_id='v1.0', key_id=None):
+    def __init__(self, version_id=None, key_id=None):
         """ShowKmsTagsRequest - a model defined in huaweicloud sdk"""
         
         

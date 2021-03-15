@@ -36,7 +36,7 @@ class ListServiceResourcesRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, x_language='zh_cn', service_type_code=None, limit=10, offset=0):
+    def __init__(self, x_language=None, service_type_code=None, limit=None, offset=None):
         """ListServiceResourcesRequest - a model defined in huaweicloud sdk"""
         
         

@@ -34,7 +34,7 @@ class DetachServerVolumeRequest:
         'delete_flag': 'delete_flag'
     }
 
-    def __init__(self, server_id=None, volume_id=None, delete_flag='0'):
+    def __init__(self, server_id=None, volume_id=None, delete_flag=None):
         """DetachServerVolumeRequest - a model defined in huaweicloud sdk"""
         
         

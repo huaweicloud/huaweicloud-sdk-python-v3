@@ -40,7 +40,7 @@ class ListPredefineTagsRequest:
         'order_method': 'order_method'
     }
 
-    def __init__(self, key=None, value=None, limit=10, marker=None, order_field='update_time', order_method='desc'):
+    def __init__(self, key=None, value=None, limit=None, marker=None, order_field=None, order_method=None):
         """ListPredefineTagsRequest - a model defined in huaweicloud sdk"""
         
         

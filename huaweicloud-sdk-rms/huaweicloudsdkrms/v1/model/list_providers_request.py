@@ -34,7 +34,7 @@ class ListProvidersRequest:
         'x_language': 'X-Language'
     }
 
-    def __init__(self, offset=None, limit=None, x_language='zh-cn'):
+    def __init__(self, offset=None, limit=None, x_language=None):
         """ListProvidersRequest - a model defined in huaweicloud sdk"""
         
         

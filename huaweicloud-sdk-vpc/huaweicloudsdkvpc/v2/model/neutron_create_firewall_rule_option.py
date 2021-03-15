@@ -48,7 +48,7 @@ class NeutronCreateFirewallRuleOption:
         'enabled': 'enabled'
     }
 
-    def __init__(self, name=None, description=None, protocol=None, action='DENY', ip_version=4, destination_ip_address=None, destination_port=None, source_ip_address=None, source_port=None, enabled=True):
+    def __init__(self, name=None, description=None, protocol=None, action=None, ip_version=None, destination_ip_address=None, destination_port=None, source_ip_address=None, source_port=None, enabled=None):
         """NeutronCreateFirewallRuleOption - a model defined in huaweicloud sdk"""
         
         

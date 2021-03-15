@@ -36,7 +36,7 @@ class Common:
         'pack_type': 'pack_type'
     }
 
-    def __init__(self, pvc=False, hls_interval=5, dash_interval=5, pack_type=None):
+    def __init__(self, pvc=None, hls_interval=None, dash_interval=None, pack_type=None):
         """Common - a model defined in huaweicloud sdk"""
         
         

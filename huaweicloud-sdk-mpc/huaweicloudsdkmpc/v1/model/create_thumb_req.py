@@ -50,7 +50,7 @@ class CreateThumbReq:
         'canonical_grant_id': 'canonical_grant_id'
     }
 
-    def __init__(self, input=None, output=None, user_data=None, thumbnail_para=None, tar=1, sync=0, original_dir=0, project_id=None, tenant_project_id=None, domain_name=None, canonical_grant_id=None):
+    def __init__(self, input=None, output=None, user_data=None, thumbnail_para=None, tar=None, sync=None, original_dir=None, project_id=None, tenant_project_id=None, domain_name=None, canonical_grant_id=None):
         """CreateThumbReq - a model defined in huaweicloud sdk"""
         
         
@@ -174,7 +174,7 @@ class CreateThumbReq:
     def tar(self):
         """Gets the tar of this CreateThumbReq.
 
-        是否压缩抽帧图片生成tar包。  取值如下：  - 0：压缩。 - 1：不压缩 
+        是否压缩抽帧图片生成tar包。  取值如下： - 0：压缩。 - 1：不压缩 默认值：1 
 
         :return: The tar of this CreateThumbReq.
         :rtype: int
@@ -185,7 +185,7 @@ class CreateThumbReq:
     def tar(self, tar):
         """Sets the tar of this CreateThumbReq.
 
-        是否压缩抽帧图片生成tar包。  取值如下：  - 0：压缩。 - 1：不压缩 
+        是否压缩抽帧图片生成tar包。  取值如下： - 0：压缩。 - 1：不压缩 默认值：1 
 
         :param tar: The tar of this CreateThumbReq.
         :type: int
@@ -196,7 +196,7 @@ class CreateThumbReq:
     def sync(self):
         """Gets the sync of this CreateThumbReq.
 
-        是否同步处理，同步处理是指不下载全部文件，快速定位到截图位置进行截图。  取值如下： - 0：排队处理。 - 1：同步处理，暂只支持按时间点截单张图。 
+        是否同步处理，同步处理是指不下载全部文件，快速定位到截图位置进行截图。  取值如下： - 0：排队处理。 - 1：同步处理，暂只支持按时间点截单张图。 默认值：0 
 
         :return: The sync of this CreateThumbReq.
         :rtype: int
@@ -207,7 +207,7 @@ class CreateThumbReq:
     def sync(self, sync):
         """Sets the sync of this CreateThumbReq.
 
-        是否同步处理，同步处理是指不下载全部文件，快速定位到截图位置进行截图。  取值如下： - 0：排队处理。 - 1：同步处理，暂只支持按时间点截单张图。 
+        是否同步处理，同步处理是指不下载全部文件，快速定位到截图位置进行截图。  取值如下： - 0：排队处理。 - 1：同步处理，暂只支持按时间点截单张图。 默认值：0 
 
         :param sync: The sync of this CreateThumbReq.
         :type: int
@@ -218,7 +218,7 @@ class CreateThumbReq:
     def original_dir(self):
         """Gets the original_dir of this CreateThumbReq.
 
-        是否使用原始输出目录。  取值如下： - 0：不使用原始输出目录，下发的输出目录后面追加随机目录，防止截图文件outputUri相同被覆盖。 - 1：使用原始输出目录。 
+        是否使用原始输出目录。  取值如下： - 0：不使用原始输出目录，下发的输出目录后面追加随机目录，防止截图文件outputUri相同被覆盖。 - 1：使用原始输出目录。 默认值：0 
 
         :return: The original_dir of this CreateThumbReq.
         :rtype: int
@@ -229,7 +229,7 @@ class CreateThumbReq:
     def original_dir(self, original_dir):
         """Sets the original_dir of this CreateThumbReq.
 
-        是否使用原始输出目录。  取值如下： - 0：不使用原始输出目录，下发的输出目录后面追加随机目录，防止截图文件outputUri相同被覆盖。 - 1：使用原始输出目录。 
+        是否使用原始输出目录。  取值如下： - 0：不使用原始输出目录，下发的输出目录后面追加随机目录，防止截图文件outputUri相同被覆盖。 - 1：使用原始输出目录。 默认值：0 
 
         :param original_dir: The original_dir of this CreateThumbReq.
         :type: int

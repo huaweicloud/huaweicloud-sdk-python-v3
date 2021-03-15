@@ -60,7 +60,7 @@ class RestAttendeeDTO:
         'app_id': 'appId'
     }
 
-    def __init__(self, user_uuid=None, account_id=None, name=None, role=0, phone=None, phone2=None, phone3=None, email=None, sms=None, is_mute=0, is_auto_invite=1, type=None, address=None, dept_uuid=None, dept_name=None, app_id=None):
+    def __init__(self, user_uuid=None, account_id=None, name=None, role=None, phone=None, phone2=None, phone3=None, email=None, sms=None, is_mute=None, is_auto_invite=None, type=None, address=None, dept_uuid=None, dept_name=None, app_id=None):
         """RestAttendeeDTO - a model defined in huaweicloud sdk"""
         
         

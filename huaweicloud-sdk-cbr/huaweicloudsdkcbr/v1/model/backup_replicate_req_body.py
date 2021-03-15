@@ -40,7 +40,7 @@ class BackupReplicateReqBody:
         'name': 'name'
     }
 
-    def __init__(self, description=None, destination_project_id=None, destination_region=None, destination_vault_id=None, enable_acceleration=False, name=None):
+    def __init__(self, description=None, destination_project_id=None, destination_region=None, destination_vault_id=None, enable_acceleration=None, name=None):
         """BackupReplicateReqBody - a model defined in huaweicloud sdk"""
         
         

@@ -44,7 +44,7 @@ class EnvironmentCreate:
         'optional_resources': 'optional_resources'
     }
 
-    def __init__(self, name=None, alias=None, description=None, enterprise_project_id='0', charge_mode=None, vpc_id=None, base_resources=None, optional_resources=None):
+    def __init__(self, name=None, alias=None, description=None, enterprise_project_id=None, charge_mode=None, vpc_id=None, base_resources=None, optional_resources=None):
         """EnvironmentCreate - a model defined in huaweicloud sdk"""
         
         

@@ -44,7 +44,7 @@ class AccountBalanceV2:
         'memo': 'memo'
     }
 
-    def __init__(self, account_id=None, account_type=None, amount=None, currency='CNY', designated_amount=None, credit_amount=None, measure_id=None, memo=None):
+    def __init__(self, account_id=None, account_type=None, amount=None, currency=None, designated_amount=None, credit_amount=None, measure_id=None, memo=None):
         """AccountBalanceV2 - a model defined in huaweicloud sdk"""
         
         

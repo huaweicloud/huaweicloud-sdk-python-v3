@@ -32,7 +32,7 @@ class PrePaidServerDataVolumeMetadata:
         'system__cmkid': '__system__cmkid'
     }
 
-    def __init__(self, system__encrypted='0', system__cmkid=None):
+    def __init__(self, system__encrypted=None, system__cmkid=None):
         """PrePaidServerDataVolumeMetadata - a model defined in huaweicloud sdk"""
         
         

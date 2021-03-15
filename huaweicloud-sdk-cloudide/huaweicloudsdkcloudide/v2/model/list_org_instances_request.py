@@ -38,7 +38,7 @@ class ListOrgInstancesRequest:
         'search': 'search'
     }
 
-    def __init__(self, is_temporary=None, limit=30, offset=0, org_id=None, search=None):
+    def __init__(self, is_temporary=None, limit=None, offset=None, org_id=None, search=None):
         """ListOrgInstancesRequest - a model defined in huaweicloud sdk"""
         
         

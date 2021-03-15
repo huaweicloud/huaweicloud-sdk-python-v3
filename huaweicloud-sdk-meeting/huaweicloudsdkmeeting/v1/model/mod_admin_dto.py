@@ -36,7 +36,7 @@ class ModAdminDTO:
         'country': 'country'
     }
 
-    def __init__(self, name=None, email=None, phone=None, country='chinaPR'):
+    def __init__(self, name=None, email=None, phone=None, country=None):
         """ModAdminDTO - a model defined in huaweicloud sdk"""
         
         

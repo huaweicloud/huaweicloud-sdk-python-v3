@@ -34,7 +34,7 @@ class ListMonitoredObjectsRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, dim_name=None, offset=0, limit=10):
+    def __init__(self, dim_name=None, offset=None, limit=None):
         """ListMonitoredObjectsRequest - a model defined in huaweicloud sdk"""
         
         

@@ -54,7 +54,7 @@ class ListPortsRequest:
         'zone_id': 'zone_id'
     }
 
-    def __init__(self, name=None, id=None, limit=2000, admin_state_up=None, network_id=None, mac_address=None, device_id=None, device_owner=None, status=None, marker=None, fixed_ips=None, enterprise_project_id=None, zone_id=None):
+    def __init__(self, name=None, id=None, limit=None, admin_state_up=None, network_id=None, mac_address=None, device_id=None, device_owner=None, status=None, marker=None, fixed_ips=None, enterprise_project_id=None, zone_id=None):
         """ListPortsRequest - a model defined in huaweicloud sdk"""
         
         

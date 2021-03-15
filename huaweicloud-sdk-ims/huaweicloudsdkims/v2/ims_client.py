@@ -48,6 +48,71 @@ class ImsClient(Client):
 
         return ClientBuilder(clazz)
 
+    def add_image_tag(self, request):
+        """添加镜像标签
+
+        该接口用于为指定镜像添加或更新指定的单个标签
+
+        :param AddImageTagRequest request
+        :return: AddImageTagResponse
+        """
+        return self.add_image_tag_with_http_info(request)
+
+    def add_image_tag_with_http_info(self, request):
+        """添加镜像标签
+
+        该接口用于为指定镜像添加或更新指定的单个标签
+
+        :param AddImageTagRequest request
+        :return: AddImageTagResponse
+        """
+
+        all_params = ['image_id', 'bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/images/{image_id}/tags',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddImageTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def batch_add_members(self, request):
         """批量添加镜像成员
 
@@ -105,6 +170,71 @@ class ImsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='BatchAddMembersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_add_or_delete_tags(self, request):
+        """批量添加删除镜像标签
+
+        该接口用于为指定镜像批量添加/更新、删除标签。
+
+        :param BatchAddOrDeleteTagsRequest request
+        :return: BatchAddOrDeleteTagsResponse
+        """
+        return self.batch_add_or_delete_tags_with_http_info(request)
+
+    def batch_add_or_delete_tags_with_http_info(self, request):
+        """批量添加删除镜像标签
+
+        该接口用于为指定镜像批量添加/更新、删除标签。
+
+        :param BatchAddOrDeleteTagsRequest request
+        :return: BatchAddOrDeleteTagsResponse
+        """
+
+        all_params = ['image_id', 'bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/images/{image_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchAddOrDeleteTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -619,6 +749,71 @@ class ImsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_image_tag(self, request):
+        """删除镜像标签
+
+        该接口用于为镜像删除指定的标签
+
+        :param DeleteImageTagRequest request
+        :return: DeleteImageTagResponse
+        """
+        return self.delete_image_tag_with_http_info(request)
+
+    def delete_image_tag_with_http_info(self, request):
+        """删除镜像标签
+
+        该接口用于为镜像删除指定的标签
+
+        :param DeleteImageTagRequest request
+        :return: DeleteImageTagResponse
+        """
+
+        all_params = ['image_id', 'key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+        if 'key' in local_var_params:
+            path_params['key'] = local_var_params['key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/images/{image_id}/tags/{key}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteImageTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def export_image(self, request):
         """导出镜像
 
@@ -741,6 +936,132 @@ class ImsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ImportImageQuickResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_image_by_tags(self, request):
+        """按标签查询镜像
+
+        该接口用于按标签或其他条件对镜像进行过滤或者计数使用。
+
+        :param ListImageByTagsRequest request
+        :return: ListImageByTagsResponse
+        """
+        return self.list_image_by_tags_with_http_info(request)
+
+    def list_image_by_tags_with_http_info(self, request):
+        """按标签查询镜像
+
+        该接口用于按标签或其他条件对镜像进行过滤或者计数使用。
+
+        :param ListImageByTagsRequest request
+        :return: ListImageByTagsResponse
+        """
+
+        all_params = ['bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/images/resource_instances/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListImageByTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_image_tags(self, request):
+        """查询镜像标签
+
+        该接口用于为查询指定镜像上的所有标签
+
+        :param ListImageTagsRequest request
+        :return: ListImageTagsResponse
+        """
+        return self.list_image_tags_with_http_info(request)
+
+    def list_image_tags_with_http_info(self, request):
+        """查询镜像标签
+
+        该接口用于为查询指定镜像上的所有标签
+
+        :param ListImageTagsRequest request
+        :return: ListImageTagsResponse
+        """
+
+        all_params = ['image_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'image_id' in local_var_params:
+            path_params['image_id'] = local_var_params['image_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/images/{image_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListImageTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -876,6 +1197,67 @@ class ImsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListImagesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_images_tags(self, request):
+        """查询租户所有镜像标签
+
+        该接口用于为查询租户的所有镜像上的标签。
+
+        :param ListImagesTagsRequest request
+        :return: ListImagesTagsResponse
+        """
+        return self.list_images_tags_with_http_info(request)
+
+    def list_images_tags_with_http_info(self, request):
+        """查询租户所有镜像标签
+
+        该接口用于为查询租户的所有镜像上的标签。
+
+        :param ListImagesTagsRequest request
+        :return: ListImagesTagsResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/images/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListImagesTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

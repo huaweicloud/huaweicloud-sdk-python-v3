@@ -40,7 +40,7 @@ class SearchCorpVmrRequest:
         'status': 'status'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, offset=0, limit=100, search_key=None, status=None):
+    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, status=None):
         """SearchCorpVmrRequest - a model defined in huaweicloud sdk"""
         
         

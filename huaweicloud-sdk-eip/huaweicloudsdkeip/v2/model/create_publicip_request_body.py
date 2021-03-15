@@ -34,7 +34,7 @@ class CreatePublicipRequestBody:
         'publicip': 'publicip'
     }
 
-    def __init__(self, bandwidth=None, enterprise_project_id='0', publicip=None):
+    def __init__(self, bandwidth=None, enterprise_project_id=None, publicip=None):
         """CreatePublicipRequestBody - a model defined in huaweicloud sdk"""
         
         

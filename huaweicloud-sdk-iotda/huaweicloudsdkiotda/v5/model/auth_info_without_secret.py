@@ -32,7 +32,7 @@ class AuthInfoWithoutSecret:
         'timeout': 'timeout'
     }
 
-    def __init__(self, secure_access=True, timeout=0):
+    def __init__(self, secure_access=None, timeout=None):
         """AuthInfoWithoutSecret - a model defined in huaweicloud sdk"""
         
         

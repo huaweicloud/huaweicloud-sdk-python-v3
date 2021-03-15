@@ -30,7 +30,7 @@ class CreateEnterpriseRealnameAuthenticationResponse(SdkResponse):
         'is_review': 'is_review'
     }
 
-    def __init__(self, is_review=1):
+    def __init__(self, is_review=None):
         """CreateEnterpriseRealnameAuthenticationResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()

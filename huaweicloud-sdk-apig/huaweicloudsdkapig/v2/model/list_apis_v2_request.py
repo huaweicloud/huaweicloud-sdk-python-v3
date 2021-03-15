@@ -54,7 +54,7 @@ class ListApisV2Request:
         'precise_search': 'precise_search'
     }
 
-    def __init__(self, instance_id=None, id=None, name=None, group_id=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, env_id=None, type=None, offset=0, limit=20, precise_search=None):
+    def __init__(self, instance_id=None, id=None, name=None, group_id=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, env_id=None, type=None, offset=None, limit=None, precise_search=None):
         """ListApisV2Request - a model defined in huaweicloud sdk"""
         
         

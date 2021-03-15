@@ -25,7 +25,7 @@ class CreateAlarmRequestBody:
     openapi_types = {
         'alarm_name': 'str',
         'alarm_description': 'str',
-        'metric': 'MetricInfoForAlarm',
+        'metric': 'MetricForAlarm',
         'condition': 'Condition',
         'alarm_enabled': 'bool',
         'alarm_action_enabled': 'bool',
@@ -52,7 +52,7 @@ class CreateAlarmRequestBody:
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, alarm_name=None, alarm_description=None, metric=None, condition=None, alarm_enabled=True, alarm_action_enabled=True, alarm_level=None, alarm_type=None, alarm_actions=None, insufficientdata_actions=None, ok_actions=None, enterprise_project_id=None):
+    def __init__(self, alarm_name=None, alarm_description=None, metric=None, condition=None, alarm_enabled=None, alarm_action_enabled=None, alarm_level=None, alarm_type=None, alarm_actions=None, insufficientdata_actions=None, ok_actions=None, enterprise_project_id=None):
         """CreateAlarmRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -143,7 +143,7 @@ class CreateAlarmRequestBody:
 
 
         :return: The metric of this CreateAlarmRequestBody.
-        :rtype: MetricInfoForAlarm
+        :rtype: MetricForAlarm
         """
         return self._metric
 
@@ -153,7 +153,7 @@ class CreateAlarmRequestBody:
 
 
         :param metric: The metric of this CreateAlarmRequestBody.
-        :type: MetricInfoForAlarm
+        :type: MetricForAlarm
         """
         self._metric = metric
 

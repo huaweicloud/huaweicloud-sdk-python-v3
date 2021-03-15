@@ -44,7 +44,7 @@ class DeleteClusterRequest:
         'delete_sfs': 'delete_sfs'
     }
 
-    def __init__(self, cluster_id=None, error_status=None, delete_efs='false', delete_eni='false', delete_evs='false', delete_net='false', delete_obs='false', delete_sfs='false'):
+    def __init__(self, cluster_id=None, error_status=None, delete_efs=None, delete_eni=None, delete_evs=None, delete_net=None, delete_obs=None, delete_sfs=None):
         """DeleteClusterRequest - a model defined in huaweicloud sdk"""
         
         

@@ -58,7 +58,7 @@ class SecurityGroupRule:
         'project_id': 'project_id'
     }
 
-    def __init__(self, id=None, description=None, security_group_id=None, direction=None, protocol=None, ethertype='IPv4', multiport=None, action=None, priority=None, remote_group_id=None, remote_ip_prefix=None, remote_address_group_id=None, created_at=None, updated_at=None, project_id=None):
+    def __init__(self, id=None, description=None, security_group_id=None, direction=None, protocol=None, ethertype=None, multiport=None, action=None, priority=None, remote_group_id=None, remote_ip_prefix=None, remote_address_group_id=None, created_at=None, updated_at=None, project_id=None):
         """SecurityGroupRule - a model defined in huaweicloud sdk"""
         
         

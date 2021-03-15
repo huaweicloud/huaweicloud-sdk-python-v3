@@ -48,7 +48,7 @@ class Datastore:
     def type(self):
         """Gets the type of this Datastore.
 
-        数据库引擎，不区分大小写： - MySQL - PostgreSQL - SQLServer
+        数据库引擎，不区分大小写：  - MySQL - PostgreSQL - SQLServer
 
         :return: The type of this Datastore.
         :rtype: str
@@ -59,7 +59,7 @@ class Datastore:
     def type(self, type):
         """Sets the type of this Datastore.
 
-        数据库引擎，不区分大小写： - MySQL - PostgreSQL - SQLServer
+        数据库引擎，不区分大小写：  - MySQL - PostgreSQL - SQLServer
 
         :param type: The type of this Datastore.
         :type: str

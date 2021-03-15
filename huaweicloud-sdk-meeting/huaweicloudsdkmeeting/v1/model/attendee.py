@@ -52,7 +52,7 @@ class Attendee:
         'dept_name': 'deptName'
     }
 
-    def __init__(self, user_uuid=None, account_id=None, name=None, role=0, phone=None, phone2=None, phone3=None, email=None, sms=None, type=None, dept_uuid=None, dept_name=None):
+    def __init__(self, user_uuid=None, account_id=None, name=None, role=None, phone=None, phone2=None, phone3=None, email=None, sms=None, type=None, dept_uuid=None, dept_name=None):
         """Attendee - a model defined in huaweicloud sdk"""
         
         

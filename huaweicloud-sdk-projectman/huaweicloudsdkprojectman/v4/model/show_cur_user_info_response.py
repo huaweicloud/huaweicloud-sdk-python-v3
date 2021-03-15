@@ -29,8 +29,8 @@ class ShowCurUserInfoResponse(SdkResponse):
         'user_id': 'str',
         'user_name': 'str',
         'nick_name': 'str',
-        'created_time': 'str',
-        'updated_time': 'str',
+        'created_time': 'int',
+        'updated_time': 'int',
         'gender': 'str',
         'user_type': 'str'
     }
@@ -225,7 +225,7 @@ class ShowCurUserInfoResponse(SdkResponse):
         创建时间
 
         :return: The created_time of this ShowCurUserInfoResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._created_time
 
@@ -236,7 +236,7 @@ class ShowCurUserInfoResponse(SdkResponse):
         创建时间
 
         :param created_time: The created_time of this ShowCurUserInfoResponse.
-        :type: str
+        :type: int
         """
         self._created_time = created_time
 
@@ -247,7 +247,7 @@ class ShowCurUserInfoResponse(SdkResponse):
         更新时间
 
         :return: The updated_time of this ShowCurUserInfoResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._updated_time
 
@@ -258,7 +258,7 @@ class ShowCurUserInfoResponse(SdkResponse):
         更新时间
 
         :param updated_time: The updated_time of this ShowCurUserInfoResponse.
-        :type: str
+        :type: int
         """
         self._updated_time = updated_time
 
@@ -288,7 +288,7 @@ class ShowCurUserInfoResponse(SdkResponse):
     def user_type(self):
         """Gets the user_type of this ShowCurUserInfoResponse.
 
-        用户类型 User 云用户 Federation 联邦账号
+        用户类型, User 云用户, Federation 联邦账号,
 
         :return: The user_type of this ShowCurUserInfoResponse.
         :rtype: str
@@ -299,7 +299,7 @@ class ShowCurUserInfoResponse(SdkResponse):
     def user_type(self, user_type):
         """Sets the user_type of this ShowCurUserInfoResponse.
 
-        用户类型 User 云用户 Federation 联邦账号
+        用户类型, User 云用户, Federation 联邦账号,
 
         :param user_type: The user_type of this ShowCurUserInfoResponse.
         :type: str

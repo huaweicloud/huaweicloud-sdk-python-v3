@@ -60,7 +60,7 @@ class ListCustomerselfResourceRecordsRequest:
         'bill_date_end': 'bill_date_end'
     }
 
-    def __init__(self, x_language=None, cycle=None, cloud_service_type=None, region=None, charge_mode=None, bill_type=None, offset=0, limit=10, resource_id=None, enterprise_project_id=None, include_zero_record=None, method=None, sub_customer_id=None, trade_id=None, bill_date_begin=None, bill_date_end=None):
+    def __init__(self, x_language=None, cycle=None, cloud_service_type=None, region=None, charge_mode=None, bill_type=None, offset=None, limit=None, resource_id=None, enterprise_project_id=None, include_zero_record=None, method=None, sub_customer_id=None, trade_id=None, bill_date_begin=None, bill_date_end=None):
         """ListCustomerselfResourceRecordsRequest - a model defined in huaweicloud sdk"""
         
         

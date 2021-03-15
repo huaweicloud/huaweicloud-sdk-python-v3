@@ -62,7 +62,7 @@ class VideoParameters:
         'sr_factor': 'sr_factor'
     }
 
-    def __init__(self, output_policy='transcode', codec=None, bitrate=None, profile=None, level=None, preset=None, ref_frames_count=None, max_iframes_interval=5, bframes_count=None, frame_rate=None, sync_timestamp=False, width=None, height=None, aspect_ratio=None, black_cut=None, gop_structure=False, sr_factor=None):
+    def __init__(self, output_policy=None, codec=None, bitrate=None, profile=None, level=None, preset=None, ref_frames_count=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, sync_timestamp=None, width=None, height=None, aspect_ratio=None, black_cut=None, gop_structure=None, sr_factor=None):
         """VideoParameters - a model defined in huaweicloud sdk"""
         
         

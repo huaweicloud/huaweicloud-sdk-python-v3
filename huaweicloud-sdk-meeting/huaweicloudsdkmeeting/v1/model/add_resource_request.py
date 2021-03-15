@@ -38,7 +38,7 @@ class AddResourceRequest:
         'body': 'body'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, corp_id=None, force_edit_flag=False, body=None):
+    def __init__(self, x_request_id=None, accept_language=None, corp_id=None, force_edit_flag=None, body=None):
         """AddResourceRequest - a model defined in huaweicloud sdk"""
         
         

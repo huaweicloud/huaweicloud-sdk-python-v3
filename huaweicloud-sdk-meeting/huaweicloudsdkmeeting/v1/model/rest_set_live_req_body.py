@@ -30,7 +30,7 @@ class RestSetLiveReqBody:
         'is_live': 'isLive'
     }
 
-    def __init__(self, is_live=0):
+    def __init__(self, is_live=None):
         """RestSetLiveReqBody - a model defined in huaweicloud sdk"""
         
         

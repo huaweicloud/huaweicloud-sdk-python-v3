@@ -34,7 +34,7 @@ class ListProjectMembersV4Request:
         'limit': 'limit'
     }
 
-    def __init__(self, project_id=None, offset=0, limit=100):
+    def __init__(self, project_id=None, offset=None, limit=None):
         """ListProjectMembersV4Request - a model defined in huaweicloud sdk"""
         
         

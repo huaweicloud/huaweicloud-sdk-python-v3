@@ -36,7 +36,7 @@ class AddonTemplate:
         'spec': 'spec'
     }
 
-    def __init__(self, api_version='v3', kind='Addon', metadata=None, spec=None):
+    def __init__(self, api_version=None, kind=None, metadata=None, spec=None):
         """AddonTemplate - a model defined in huaweicloud sdk"""
         
         

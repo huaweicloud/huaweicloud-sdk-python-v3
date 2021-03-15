@@ -44,7 +44,7 @@ class SourceOrArtifact:
         'repo_auth': 'repo_auth'
     }
 
-    def __init__(self, storage=None, type=None, url=None, auth='iam', repo_type=None, repo_url=None, repo_ref=None, repo_auth=None):
+    def __init__(self, storage=None, type=None, url=None, auth=None, repo_type=None, repo_url=None, repo_ref=None, repo_auth=None):
         """SourceOrArtifact - a model defined in huaweicloud sdk"""
         
         

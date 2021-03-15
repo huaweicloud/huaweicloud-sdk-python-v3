@@ -36,7 +36,7 @@ class CreateExtractTaskReq:
         'sync': 'sync'
     }
 
-    def __init__(self, input=None, output=None, user_data=None, sync=0):
+    def __init__(self, input=None, output=None, user_data=None, sync=None):
         """CreateExtractTaskReq - a model defined in huaweicloud sdk"""
         
         

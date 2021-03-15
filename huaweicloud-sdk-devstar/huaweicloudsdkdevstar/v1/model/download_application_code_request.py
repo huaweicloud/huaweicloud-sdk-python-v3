@@ -32,7 +32,7 @@ class DownloadApplicationCodeRequest:
         'job_id': 'job_id'
     }
 
-    def __init__(self, x_language='zh-cn', job_id=None):
+    def __init__(self, x_language=None, job_id=None):
         """DownloadApplicationCodeRequest - a model defined in huaweicloud sdk"""
         
         

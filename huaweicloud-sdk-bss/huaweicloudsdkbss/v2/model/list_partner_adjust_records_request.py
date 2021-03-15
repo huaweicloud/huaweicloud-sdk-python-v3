@@ -44,7 +44,7 @@ class ListPartnerAdjustRecordsRequest:
         'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, customer_id=None, operation_type=None, operation_time_begin=None, operation_time_end=None, trans_id=None, offset=0, limit=10, indirect_partner_id=None):
+    def __init__(self, customer_id=None, operation_type=None, operation_time_begin=None, operation_time_end=None, trans_id=None, offset=None, limit=None, indirect_partner_id=None):
         """ListPartnerAdjustRecordsRequest - a model defined in huaweicloud sdk"""
         
         

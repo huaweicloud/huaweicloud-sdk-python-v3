@@ -38,7 +38,7 @@ class V3Cluster:
         'status': 'status'
     }
 
-    def __init__(self, api_version='v3', kind='Cluster', metadata=None, spec=None, status=None):
+    def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
         """V3Cluster - a model defined in huaweicloud sdk"""
         
         

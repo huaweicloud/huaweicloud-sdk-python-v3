@@ -32,7 +32,7 @@ class BatchCreateVolumeTagsRequestBody:
         'tags': 'tags'
     }
 
-    def __init__(self, action='create', tags=None):
+    def __init__(self, action=None, tags=None):
         """BatchCreateVolumeTagsRequestBody - a model defined in huaweicloud sdk"""
         
         

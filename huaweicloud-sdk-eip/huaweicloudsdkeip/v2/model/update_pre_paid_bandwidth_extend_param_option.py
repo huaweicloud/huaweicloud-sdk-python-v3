@@ -30,7 +30,7 @@ class UpdatePrePaidBandwidthExtendParamOption:
         'is_auto_pay': 'is_auto_pay'
     }
 
-    def __init__(self, is_auto_pay=False):
+    def __init__(self, is_auto_pay=None):
         """UpdatePrePaidBandwidthExtendParamOption - a model defined in huaweicloud sdk"""
         
         

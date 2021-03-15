@@ -54,7 +54,7 @@ class NatGatewaySnatRuleResponseBody:
         'freezed_ip_address': 'freezed_ip_address'
     }
 
-    def __init__(self, id=None, tenant_id=None, nat_gateway_id=None, cidr=None, source_type=0, floating_ip_id=None, description=None, status=None, created_at=None, network_id=None, admin_state_up=None, floating_ip_address=None, freezed_ip_address=None):
+    def __init__(self, id=None, tenant_id=None, nat_gateway_id=None, cidr=None, source_type=None, floating_ip_id=None, description=None, status=None, created_at=None, network_id=None, admin_state_up=None, floating_ip_address=None, freezed_ip_address=None):
         """NatGatewaySnatRuleResponseBody - a model defined in huaweicloud sdk"""
         
         

@@ -34,7 +34,7 @@ class PublishAppMessageRequestBody:
         'time_to_live': 'time_to_live'
     }
 
-    def __init__(self, message=None, message_structure=None, time_to_live='3600'):
+    def __init__(self, message=None, message_structure=None, time_to_live=None):
         """PublishAppMessageRequestBody - a model defined in huaweicloud sdk"""
         
         

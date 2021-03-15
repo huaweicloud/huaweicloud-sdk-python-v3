@@ -75,7 +75,7 @@ class AddMemberRequestV4:
     def role_id(self):
         """Gets the role_id of this AddMemberRequestV4.
 
-        用户在项目中的角色ID 3, 4, 5, 6, 7 , 8
+        用户在项目中的角色ID -1, 3, 4, 5, 6, 7 , 8
 
         :return: The role_id of this AddMemberRequestV4.
         :rtype: int
@@ -86,7 +86,7 @@ class AddMemberRequestV4:
     def role_id(self, role_id):
         """Sets the role_id of this AddMemberRequestV4.
 
-        用户在项目中的角色ID 3, 4, 5, 6, 7 , 8
+        用户在项目中的角色ID -1, 3, 4, 5, 6, 7 , 8
 
         :param role_id: The role_id of this AddMemberRequestV4.
         :type: int

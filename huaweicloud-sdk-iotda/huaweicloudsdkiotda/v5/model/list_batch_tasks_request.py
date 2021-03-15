@@ -42,7 +42,7 @@ class ListBatchTasksRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None, app_id=None, task_type=None, status=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):
+    def __init__(self, instance_id=None, app_id=None, task_type=None, status=None, limit=None, marker=None, offset=None):
         """ListBatchTasksRequest - a model defined in huaweicloud sdk"""
         
         

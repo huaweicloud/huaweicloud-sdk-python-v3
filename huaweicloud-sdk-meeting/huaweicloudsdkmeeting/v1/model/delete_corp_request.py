@@ -36,7 +36,7 @@ class DeleteCorpRequest:
         'force_delete': 'forceDelete'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, id=None, force_delete=False):
+    def __init__(self, x_request_id=None, accept_language=None, id=None, force_delete=None):
         """DeleteCorpRequest - a model defined in huaweicloud sdk"""
         
         

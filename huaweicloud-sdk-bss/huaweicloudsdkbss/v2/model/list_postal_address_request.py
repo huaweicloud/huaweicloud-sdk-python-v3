@@ -32,7 +32,7 @@ class ListPostalAddressRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, offset=0, limit=10):
+    def __init__(self, offset=None, limit=None):
         """ListPostalAddressRequest - a model defined in huaweicloud sdk"""
         
         

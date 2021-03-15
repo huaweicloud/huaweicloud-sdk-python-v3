@@ -40,7 +40,7 @@ class ListRequestThrottlingPolicyV2Request:
         'precise_search': 'precise_search'
     }
 
-    def __init__(self, instance_id=None, id=None, name=None, offset=0, limit=20, precise_search=None):
+    def __init__(self, instance_id=None, id=None, name=None, offset=None, limit=None, precise_search=None):
         """ListRequestThrottlingPolicyV2Request - a model defined in huaweicloud sdk"""
         
         

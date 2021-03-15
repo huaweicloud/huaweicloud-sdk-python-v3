@@ -32,7 +32,7 @@ class ListKeyDetailRequest:
         'body': 'body'
     }
 
-    def __init__(self, version_id='v1.0', body=None):
+    def __init__(self, version_id=None, body=None):
         """ListKeyDetailRequest - a model defined in huaweicloud sdk"""
         
         

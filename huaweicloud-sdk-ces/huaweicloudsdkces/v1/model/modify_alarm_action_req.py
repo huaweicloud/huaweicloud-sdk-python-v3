@@ -30,7 +30,7 @@ class ModifyAlarmActionReq:
         'alarm_enabled': 'alarm_enabled'
     }
 
-    def __init__(self, alarm_enabled=False):
+    def __init__(self, alarm_enabled=None):
         """ModifyAlarmActionReq - a model defined in huaweicloud sdk"""
         
         

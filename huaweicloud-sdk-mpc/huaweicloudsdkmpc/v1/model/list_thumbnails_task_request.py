@@ -42,7 +42,7 @@ class ListThumbnailsTaskRequest:
         'size': 'size'
     }
 
-    def __init__(self, x_language=None, task_id=None, status=None, start_time=None, end_time=None, page=0, size=10):
+    def __init__(self, x_language=None, task_id=None, status=None, start_time=None, end_time=None, page=None, size=None):
         """ListThumbnailsTaskRequest - a model defined in huaweicloud sdk"""
         
         

@@ -29,7 +29,7 @@ class V3ClusterSpec:
         'cluster_tags': 'list[ResourceTag]',
         'container_network': 'ContainerNetwork',
         'description': 'str',
-        'eni_network': 'ENINetwork',
+        'eni_network': 'EniNetwork',
         'extend_param': 'dict(str, str)',
         'flavor': 'str',
         'host_network': 'HostNetwork',
@@ -62,7 +62,7 @@ class V3ClusterSpec:
         'version': 'version'
     }
 
-    def __init__(self, authentication=None, az=None, billing_mode=0, cluster_tags=None, container_network=None, description=None, eni_network=None, extend_param=None, flavor=None, host_network=None, ipv6enable=None, kube_proxy_mode=None, kubernetes_svc_ip_range=None, masters=None, support_istio=None, type=None, version=None):
+    def __init__(self, authentication=None, az=None, billing_mode=None, cluster_tags=None, container_network=None, description=None, eni_network=None, extend_param=None, flavor=None, host_network=None, ipv6enable=None, kube_proxy_mode=None, kubernetes_svc_ip_range=None, masters=None, support_istio=None, type=None, version=None):
         """V3ClusterSpec - a model defined in huaweicloud sdk"""
         
         
@@ -251,7 +251,7 @@ class V3ClusterSpec:
 
 
         :return: The eni_network of this V3ClusterSpec.
-        :rtype: ENINetwork
+        :rtype: EniNetwork
         """
         return self._eni_network
 
@@ -261,7 +261,7 @@ class V3ClusterSpec:
 
 
         :param eni_network: The eni_network of this V3ClusterSpec.
-        :type: ENINetwork
+        :type: EniNetwork
         """
         self._eni_network = eni_network
 

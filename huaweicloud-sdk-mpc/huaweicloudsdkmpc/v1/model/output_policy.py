@@ -30,7 +30,7 @@ class OutputPolicy:
         'output_policy': 'output_policy'
     }
 
-    def __init__(self, output_policy='transcode'):
+    def __init__(self, output_policy=None):
         """OutputPolicy - a model defined in huaweicloud sdk"""
         
         

@@ -49,7 +49,7 @@ class ResizeFlavorRequest:
     def spec_code(self):
         """Gets the spec_code of this ResizeFlavorRequest.
 
-        资源规格编码。
+        资源规格编码。例如：rds.mysql.m1.xlarge。其中，rds代表RDS产品，mysql代表数据库引擎，m1.xlarge代表性能规格，为高内存类型。带\"rr\"的表示只读实例规格，反之表示单实例和HA实例规格。
 
         :return: The spec_code of this ResizeFlavorRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class ResizeFlavorRequest:
     def spec_code(self, spec_code):
         """Sets the spec_code of this ResizeFlavorRequest.
 
-        资源规格编码。
+        资源规格编码。例如：rds.mysql.m1.xlarge。其中，rds代表RDS产品，mysql代表数据库引擎，m1.xlarge代表性能规格，为高内存类型。带\"rr\"的表示只读实例规格，反之表示单实例和HA实例规格。
 
         :param spec_code: The spec_code of this ResizeFlavorRequest.
         :type: str
@@ -71,7 +71,7 @@ class ResizeFlavorRequest:
     def is_auto_pay(self):
         """Gets the is_auto_pay of this ResizeFlavorRequest.
 
-        变更包周期实例的规格时可指定，表示是否自动从客户的账户中支付。
+        变更包周期实例的规格时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
 
         :return: The is_auto_pay of this ResizeFlavorRequest.
         :rtype: bool
@@ -82,7 +82,7 @@ class ResizeFlavorRequest:
     def is_auto_pay(self, is_auto_pay):
         """Sets the is_auto_pay of this ResizeFlavorRequest.
 
-        变更包周期实例的规格时可指定，表示是否自动从客户的账户中支付。
+        变更包周期实例的规格时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
 
         :param is_auto_pay: The is_auto_pay of this ResizeFlavorRequest.
         :type: bool

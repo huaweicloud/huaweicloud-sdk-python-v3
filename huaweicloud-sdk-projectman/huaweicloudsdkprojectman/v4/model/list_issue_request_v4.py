@@ -30,8 +30,8 @@ class ListIssueRequestV4:
         'done_ratios': 'list[int]',
         'iteration_ids': 'list[int]',
         'limit': 'int',
-        'module_ids': 'list[int]',
         'offset': 'int',
+        'module_ids': 'list[int]',
         'priority_ids': 'list[int]',
         'query_type': 'str',
         'severity_ids': 'list[int]',
@@ -48,8 +48,8 @@ class ListIssueRequestV4:
         'done_ratios': 'done_ratios',
         'iteration_ids': 'iteration_ids',
         'limit': 'limit',
-        'module_ids': 'module_ids',
         'offset': 'offset',
+        'module_ids': 'module_ids',
         'priority_ids': 'priority_ids',
         'query_type': 'query_type',
         'severity_ids': 'severity_ids',
@@ -58,7 +58,7 @@ class ListIssueRequestV4:
         'tracker_ids': 'tracker_ids'
     }
 
-    def __init__(self, assigned_ids=None, creator_ids=None, developer_ids=None, domain_ids=None, done_ratios=None, iteration_ids=None, limit=None, module_ids=None, offset=None, priority_ids=None, query_type=None, severity_ids=None, status_ids=None, story_point_ids=None, tracker_ids=None):
+    def __init__(self, assigned_ids=None, creator_ids=None, developer_ids=None, domain_ids=None, done_ratios=None, iteration_ids=None, limit=None, offset=None, module_ids=None, priority_ids=None, query_type=None, severity_ids=None, status_ids=None, story_point_ids=None, tracker_ids=None):
         """ListIssueRequestV4 - a model defined in huaweicloud sdk"""
         
         
@@ -70,8 +70,8 @@ class ListIssueRequestV4:
         self._done_ratios = None
         self._iteration_ids = None
         self._limit = None
-        self._module_ids = None
         self._offset = None
+        self._module_ids = None
         self._priority_ids = None
         self._query_type = None
         self._severity_ids = None
@@ -94,10 +94,10 @@ class ListIssueRequestV4:
             self.iteration_ids = iteration_ids
         if limit is not None:
             self.limit = limit
-        if module_ids is not None:
-            self.module_ids = module_ids
         if offset is not None:
             self.offset = offset
+        if module_ids is not None:
+            self.module_ids = module_ids
         if priority_ids is not None:
             self.priority_ids = priority_ids
         if query_type is not None:
@@ -181,7 +181,7 @@ class ListIssueRequestV4:
     def domain_ids(self):
         """Gets the domain_ids of this ListIssueRequestV4.
 
-        id, 领域 14, '性能', 15, '功能', 16, '可靠性' 17, '网络安全' 18, '可维护性' 19, '其他DFX' 20, '可用性'
+        id, 领域, 14 '性能', 15 '功能', 16 '可靠性', 17 '网络安全', 18 '可维护性', 19 '其他DFX', 20 '可用性',
 
         :return: The domain_ids of this ListIssueRequestV4.
         :rtype: list[int]
@@ -192,7 +192,7 @@ class ListIssueRequestV4:
     def domain_ids(self, domain_ids):
         """Sets the domain_ids of this ListIssueRequestV4.
 
-        id, 领域 14, '性能', 15, '功能', 16, '可靠性' 17, '网络安全' 18, '可维护性' 19, '其他DFX' 20, '可用性'
+        id, 领域, 14 '性能', 15 '功能', 16 '可靠性', 17 '网络安全', 18 '可维护性', 19 '其他DFX', 20 '可用性',
 
         :param domain_ids: The domain_ids of this ListIssueRequestV4.
         :type: list[int]
@@ -266,6 +266,28 @@ class ListIssueRequestV4:
         self._limit = limit
 
     @property
+    def offset(self):
+        """Gets the offset of this ListIssueRequestV4.
+
+        分页索引，偏移量，offset是limit的整数倍数，limit=10,offset=0,10,20...
+
+        :return: The offset of this ListIssueRequestV4.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListIssueRequestV4.
+
+        分页索引，偏移量，offset是limit的整数倍数，limit=10,offset=0,10,20...
+
+        :param offset: The offset of this ListIssueRequestV4.
+        :type: int
+        """
+        self._offset = offset
+
+    @property
     def module_ids(self):
         """Gets the module_ids of this ListIssueRequestV4.
 
@@ -286,28 +308,6 @@ class ListIssueRequestV4:
         :type: list[int]
         """
         self._module_ids = module_ids
-
-    @property
-    def offset(self):
-        """Gets the offset of this ListIssueRequestV4.
-
-        分页索引，偏移量
-
-        :return: The offset of this ListIssueRequestV4.
-        :rtype: int
-        """
-        return self._offset
-
-    @offset.setter
-    def offset(self, offset):
-        """Sets the offset of this ListIssueRequestV4.
-
-        分页索引，偏移量
-
-        :param offset: The offset of this ListIssueRequestV4.
-        :type: int
-        """
-        self._offset = offset
 
     @property
     def priority_ids(self):
@@ -379,7 +379,7 @@ class ListIssueRequestV4:
     def status_ids(self):
         """Gets the status_ids of this ListIssueRequestV4.
 
-        状态   id 开始   1 进行中 2 已解决 3 测试中 4 已关闭 5 已解决 6
+        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已解决 6,
 
         :return: The status_ids of this ListIssueRequestV4.
         :rtype: list[int]
@@ -390,7 +390,7 @@ class ListIssueRequestV4:
     def status_ids(self, status_ids):
         """Sets the status_ids of this ListIssueRequestV4.
 
-        状态   id 开始   1 进行中 2 已解决 3 测试中 4 已关闭 5 已解决 6
+        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已解决 6,
 
         :param status_ids: The status_ids of this ListIssueRequestV4.
         :type: list[int]

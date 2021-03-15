@@ -38,7 +38,7 @@ class CreatePrePaidPublicipExtendParamOption:
         'is_auto_pay': 'is_auto_pay'
     }
 
-    def __init__(self, charge_mode='postPaid', period_type=None, period_num=None, is_auto_renew=False, is_auto_pay=False):
+    def __init__(self, charge_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None):
         """CreatePrePaidPublicipExtendParamOption - a model defined in huaweicloud sdk"""
         
         

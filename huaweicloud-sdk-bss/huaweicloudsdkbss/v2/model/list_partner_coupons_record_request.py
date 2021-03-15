@@ -50,7 +50,7 @@ class ListPartnerCouponsRecordRequest:
         'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, operation_types=None, quota_id=None, quota_type=None, coupon_ids=None, customer_id=None, operation_time_begin=None, operation_time_end=None, result=None, offset=0, limit=10, indirect_partner_id=None):
+    def __init__(self, operation_types=None, quota_id=None, quota_type=None, coupon_ids=None, customer_id=None, operation_time_begin=None, operation_time_end=None, result=None, offset=None, limit=None, indirect_partner_id=None):
         """ListPartnerCouponsRecordRequest - a model defined in huaweicloud sdk"""
         
         

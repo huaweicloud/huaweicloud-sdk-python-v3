@@ -25,7 +25,7 @@ class SwitchSslRequest:
     openapi_types = {
         'x_language': 'str',
         'instance_id': 'str',
-        'body': 'SslOptionRequestBody'
+        'body': 'SslOptionRequest'
     }
 
     attribute_map = {
@@ -96,7 +96,7 @@ class SwitchSslRequest:
 
 
         :return: The body of this SwitchSslRequest.
-        :rtype: SslOptionRequestBody
+        :rtype: SslOptionRequest
         """
         return self._body
 
@@ -106,7 +106,7 @@ class SwitchSslRequest:
 
 
         :param body: The body of this SwitchSslRequest.
-        :type: SslOptionRequestBody
+        :type: SslOptionRequest
         """
         self._body = body
 

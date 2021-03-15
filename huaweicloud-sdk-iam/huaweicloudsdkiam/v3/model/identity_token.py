@@ -32,7 +32,7 @@ class IdentityToken:
         'duration_seconds': 'duration_seconds'
     }
 
-    def __init__(self, id=None, duration_seconds=900):
+    def __init__(self, id=None, duration_seconds=None):
         """IdentityToken - a model defined in huaweicloud sdk"""
         
         

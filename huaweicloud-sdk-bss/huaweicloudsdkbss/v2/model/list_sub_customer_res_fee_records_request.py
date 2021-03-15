@@ -50,7 +50,7 @@ class ListSubCustomerResFeeRecordsRequest:
         'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, customer_id=None, cycle=None, cloud_service_type=None, region=None, charge_mode=None, bill_type=None, offset=0, limit=10, resource_id=None, include_zero_record=None, indirect_partner_id=None):
+    def __init__(self, customer_id=None, cycle=None, cloud_service_type=None, region=None, charge_mode=None, bill_type=None, offset=None, limit=None, resource_id=None, include_zero_record=None, indirect_partner_id=None):
         """ListSubCustomerResFeeRecordsRequest - a model defined in huaweicloud sdk"""
         
         

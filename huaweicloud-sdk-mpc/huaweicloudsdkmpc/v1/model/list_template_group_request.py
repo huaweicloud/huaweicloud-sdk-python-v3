@@ -36,7 +36,7 @@ class ListTemplateGroupRequest:
         'size': 'size'
     }
 
-    def __init__(self, group_id=None, group_name=None, page=0, size=10):
+    def __init__(self, group_id=None, group_name=None, page=None, size=None):
         """ListTemplateGroupRequest - a model defined in huaweicloud sdk"""
         
         

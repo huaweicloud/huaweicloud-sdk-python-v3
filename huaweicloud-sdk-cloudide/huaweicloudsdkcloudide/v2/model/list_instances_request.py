@@ -42,7 +42,7 @@ class ListInstancesRequest:
         'sort_key': 'sort_key'
     }
 
-    def __init__(self, limit=30, offset=0, is_temporary=None, label=None, search=None, sort_dir='desc', sort_key='created_time'):
+    def __init__(self, limit=None, offset=None, is_temporary=None, label=None, search=None, sort_dir=None, sort_key=None):
         """ListInstancesRequest - a model defined in huaweicloud sdk"""
         
         

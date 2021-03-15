@@ -44,7 +44,7 @@ class BackupSync:
         'created_at': 'created_at'
     }
 
-    def __init__(self, backup_id=None, backup_name=None, bucket_name=None, image_path=None, resource_id=None, resource_name=None, resource_type='OS::Native::Server', created_at=None):
+    def __init__(self, backup_id=None, backup_name=None, bucket_name=None, image_path=None, resource_id=None, resource_name=None, resource_type=None, created_at=None):
         """BackupSync - a model defined in huaweicloud sdk"""
         
         

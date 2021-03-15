@@ -200,7 +200,7 @@ class MemberListV4Members:
     def role_id(self):
         """Gets the role_id of this MemberListV4Members.
 
-        成员角色 3 项目经理 4 开发人员 5 测试经理 6 测试人员 7 参与者 8 浏览者
+        成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者,
 
         :return: The role_id of this MemberListV4Members.
         :rtype: int
@@ -211,7 +211,7 @@ class MemberListV4Members:
     def role_id(self, role_id):
         """Sets the role_id of this MemberListV4Members.
 
-        成员角色 3 项目经理 4 开发人员 5 测试经理 6 测试人员 7 参与者 8 浏览者
+        成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者,
 
         :param role_id: The role_id of this MemberListV4Members.
         :type: int
@@ -266,7 +266,7 @@ class MemberListV4Members:
     def user_type(self):
         """Gets the user_type of this MemberListV4Members.
 
-        用户类型 User iam用户 Federation 联邦账号
+        用户类型, User iam用户, Federation 联邦账号,
 
         :return: The user_type of this MemberListV4Members.
         :rtype: str
@@ -277,7 +277,7 @@ class MemberListV4Members:
     def user_type(self, user_type):
         """Sets the user_type of this MemberListV4Members.
 
-        用户类型 User iam用户 Federation 联邦账号
+        用户类型, User iam用户, Federation 联邦账号,
 
         :param user_type: The user_type of this MemberListV4Members.
         :type: str

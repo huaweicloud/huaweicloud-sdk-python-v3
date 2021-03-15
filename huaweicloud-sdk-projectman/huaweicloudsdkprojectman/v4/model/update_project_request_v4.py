@@ -43,8 +43,7 @@ class UpdateProjectRequestV4:
 
         if description is not None:
             self.description = description
-        if project_name is not None:
-            self.project_name = project_name
+        self.project_name = project_name
 
     @property
     def description(self):

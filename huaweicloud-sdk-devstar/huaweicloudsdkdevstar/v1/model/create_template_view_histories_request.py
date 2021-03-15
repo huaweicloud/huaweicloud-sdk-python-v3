@@ -32,7 +32,7 @@ class CreateTemplateViewHistoriesRequest:
         'body': 'body'
     }
 
-    def __init__(self, x_language='zh-cn', body=None):
+    def __init__(self, x_language=None, body=None):
         """CreateTemplateViewHistoriesRequest - a model defined in huaweicloud sdk"""
         
         

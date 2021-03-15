@@ -33,7 +33,7 @@ class ResetDeviceSecret:
         'force_disconnect': 'force_disconnect'
     }
 
-    def __init__(self, secret=None, force_disconnect=False):
+    def __init__(self, secret=None, force_disconnect=None):
         """ResetDeviceSecret - a model defined in huaweicloud sdk"""
         
         

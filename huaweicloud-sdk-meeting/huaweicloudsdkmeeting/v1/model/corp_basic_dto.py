@@ -50,7 +50,7 @@ class CorpBasicDTO:
         'time_zone_id': 'timeZoneId'
     }
 
-    def __init__(self, name=None, domain=None, phone=None, country='chinaPR', fax=None, email=None, address=None, description=None, sp_id=None, language='zh-CN', time_zone_id='56'):
+    def __init__(self, name=None, domain=None, phone=None, country=None, fax=None, email=None, address=None, description=None, sp_id=None, language=None, time_zone_id=None):
         """CorpBasicDTO - a model defined in huaweicloud sdk"""
         
         

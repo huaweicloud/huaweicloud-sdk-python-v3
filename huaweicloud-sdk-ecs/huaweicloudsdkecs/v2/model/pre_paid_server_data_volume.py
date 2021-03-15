@@ -48,7 +48,7 @@ class PrePaidServerDataVolume:
         'data_image_id': 'data_image_id'
     }
 
-    def __init__(self, volumetype=None, size=None, shareable=False, multiattach=False, hwpassthrough=False, extendparam=None, cluster_type=None, cluster_id=None, metadata=None, data_image_id=None):
+    def __init__(self, volumetype=None, size=None, shareable=None, multiattach=None, hwpassthrough=None, extendparam=None, cluster_type=None, cluster_id=None, metadata=None, data_image_id=None):
         """PrePaidServerDataVolume - a model defined in huaweicloud sdk"""
         
         

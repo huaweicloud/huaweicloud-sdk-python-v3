@@ -38,7 +38,7 @@ class PolicyCreate:
         'trigger': 'trigger'
     }
 
-    def __init__(self, enabled=True, name=None, operation_definition=None, operation_type=None, trigger=None):
+    def __init__(self, enabled=None, name=None, operation_definition=None, operation_type=None, trigger=None):
         """PolicyCreate - a model defined in huaweicloud sdk"""
         
         

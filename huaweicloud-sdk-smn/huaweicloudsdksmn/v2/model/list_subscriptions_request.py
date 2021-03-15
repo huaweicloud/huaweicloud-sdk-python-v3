@@ -32,7 +32,7 @@ class ListSubscriptionsRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, offset=0, limit=100):
+    def __init__(self, offset=None, limit=None):
         """ListSubscriptionsRequest - a model defined in huaweicloud sdk"""
         
         

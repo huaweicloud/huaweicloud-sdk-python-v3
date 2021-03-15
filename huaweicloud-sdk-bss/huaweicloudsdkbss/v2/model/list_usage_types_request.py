@@ -36,7 +36,7 @@ class ListUsageTypesRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, x_language='zh_cn', resource_type_code=None, offset=0, limit=10):
+    def __init__(self, x_language=None, resource_type_code=None, offset=None, limit=None):
         """ListUsageTypesRequest - a model defined in huaweicloud sdk"""
         
         

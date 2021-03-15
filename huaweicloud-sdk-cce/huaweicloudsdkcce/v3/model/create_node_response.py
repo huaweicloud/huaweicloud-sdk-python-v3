@@ -38,7 +38,7 @@ class CreateNodeResponse(SdkResponse):
         'status': 'status'
     }
 
-    def __init__(self, api_version='v3', kind='Node', metadata=None, spec=None, status=None):
+    def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
         """CreateNodeResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()

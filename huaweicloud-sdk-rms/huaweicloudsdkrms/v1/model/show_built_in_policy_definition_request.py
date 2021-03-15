@@ -32,7 +32,7 @@ class ShowBuiltInPolicyDefinitionRequest:
         'x_language': 'X-Language'
     }
 
-    def __init__(self, policy_definition_id=None, x_language='zh-cn'):
+    def __init__(self, policy_definition_id=None, x_language=None):
         """ShowBuiltInPolicyDefinitionRequest - a model defined in huaweicloud sdk"""
         
         

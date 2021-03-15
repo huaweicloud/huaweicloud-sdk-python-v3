@@ -210,7 +210,7 @@ class ListProjectWorkHoursRequestBody:
     def offset(self):
         """Gets the offset of this ListProjectWorkHoursRequestBody.
 
-        偏移量
+        偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
         :return: The offset of this ListProjectWorkHoursRequestBody.
         :rtype: int
@@ -221,7 +221,7 @@ class ListProjectWorkHoursRequestBody:
     def offset(self, offset):
         """Sets the offset of this ListProjectWorkHoursRequestBody.
 
-        偏移量
+        偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
         :param offset: The offset of this ListProjectWorkHoursRequestBody.
         :type: int

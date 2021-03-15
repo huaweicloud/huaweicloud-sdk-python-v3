@@ -58,7 +58,7 @@ class TemplateQueryV2:
         'tag_names': 'tag_names'
     }
 
-    def __init__(self, category=None, keyword=None, sort_by=None, label='all', my_templates=False, status=None, status_array=None, productshorts=None, offset=None, limit=None, tag_ids=None, types=None, is_static=None, platform_source=None, tag_names=None):
+    def __init__(self, category=None, keyword=None, sort_by=None, label=None, my_templates=None, status=None, status_array=None, productshorts=None, offset=None, limit=None, tag_ids=None, types=None, is_static=None, platform_source=None, tag_names=None):
         """TemplateQueryV2 - a model defined in huaweicloud sdk"""
         
         

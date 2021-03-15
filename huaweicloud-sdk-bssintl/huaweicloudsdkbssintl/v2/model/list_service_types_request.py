@@ -32,7 +32,7 @@ class ListServiceTypesRequest:
         'service_type_code': 'service_type_code'
     }
 
-    def __init__(self, x_language='zh_cn', service_type_code=None):
+    def __init__(self, x_language=None, service_type_code=None):
         """ListServiceTypesRequest - a model defined in huaweicloud sdk"""
         
         

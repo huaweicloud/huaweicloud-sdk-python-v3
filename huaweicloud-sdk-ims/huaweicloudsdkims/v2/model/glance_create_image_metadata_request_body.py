@@ -46,7 +46,7 @@ class GlanceCreateImageMetadataRequestBody:
         'visibility': 'visibility'
     }
 
-    def __init__(self, os_version=None, container_format='bare', disk_format=None, min_disk=40, min_ram=0, name=None, protected=False, tags=None, visibility='private'):
+    def __init__(self, os_version=None, container_format=None, disk_format=None, min_disk=None, min_ram=None, name=None, protected=None, tags=None, visibility=None):
         """GlanceCreateImageMetadataRequestBody - a model defined in huaweicloud sdk"""
         
         

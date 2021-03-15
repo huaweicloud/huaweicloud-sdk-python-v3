@@ -32,7 +32,7 @@ class RestProlongDurReqBody:
         'duration': 'duration'
     }
 
-    def __init__(self, auto=1, duration=15):
+    def __init__(self, auto=None, duration=None):
         """RestProlongDurReqBody - a model defined in huaweicloud sdk"""
         
         

@@ -42,7 +42,7 @@ class ServiceCapability:
         'option': 'option'
     }
 
-    def __init__(self, service_id=None, service_type=None, properties=None, commands=None, events=None, description=None, option='Optional'):
+    def __init__(self, service_id=None, service_type=None, properties=None, commands=None, events=None, description=None, option=None):
         """ServiceCapability - a model defined in huaweicloud sdk"""
         
         

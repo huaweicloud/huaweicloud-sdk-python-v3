@@ -42,7 +42,7 @@ class RestConfConfigDTO:
         'allow_guest_start_conf': 'allowGuestStartConf'
     }
 
-    def __init__(self, call_in_restriction=0, is_send_notify=None, is_send_sms=None, is_send_calendar=None, is_auto_mute=None, is_guest_free_pwd=None, allow_guest_start_conf=None):
+    def __init__(self, call_in_restriction=None, is_send_notify=None, is_send_sms=None, is_send_calendar=None, is_auto_mute=None, is_guest_free_pwd=None, allow_guest_start_conf=None):
         """RestConfConfigDTO - a model defined in huaweicloud sdk"""
         
         

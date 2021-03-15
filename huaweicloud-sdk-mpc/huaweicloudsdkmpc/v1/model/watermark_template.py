@@ -54,7 +54,7 @@ class WatermarkTemplate:
         'error': 'error'
     }
 
-    def __init__(self, dx='0', dy='0', referpos=None, timeline_start='0', timeline_duration=None, image_process=None, width=None, height=None, base='input', template_id=None, template_name=None, type=None, error=None):
+    def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None, image_process=None, width=None, height=None, base=None, template_id=None, template_name=None, type=None, error=None):
         """WatermarkTemplate - a model defined in huaweicloud sdk"""
         
         

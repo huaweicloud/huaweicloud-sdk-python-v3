@@ -42,7 +42,7 @@ class NeutronListFirewallGroupsRequest:
         'egress_firewall_policy_id': 'egress_firewall_policy_id'
     }
 
-    def __init__(self, marker=None, limit=2000, id=None, name=None, description=None, ingress_firewall_policy_id=None, egress_firewall_policy_id=None):
+    def __init__(self, marker=None, limit=None, id=None, name=None, description=None, ingress_firewall_policy_id=None, egress_firewall_policy_id=None):
         """NeutronListFirewallGroupsRequest - a model defined in huaweicloud sdk"""
         
         

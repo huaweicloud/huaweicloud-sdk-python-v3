@@ -25,16 +25,18 @@ class QualityEnhance:
     openapi_types = {
         'normal_enhance': 'str',
         'revive': 'str',
-        'sdr_to_hdr': 'str'
+        'sdr_to_hdr': 'str',
+        'video_enhance': 'str'
     }
 
     attribute_map = {
         'normal_enhance': 'normal_enhance',
         'revive': 'revive',
-        'sdr_to_hdr': 'sdr_to_hdr'
+        'sdr_to_hdr': 'sdr_to_hdr',
+        'video_enhance': 'video_enhance'
     }
 
-    def __init__(self, normal_enhance=None, revive=None, sdr_to_hdr=None):
+    def __init__(self, normal_enhance=None, revive=None, sdr_to_hdr=None, video_enhance=None):
         """QualityEnhance - a model defined in huaweicloud sdk"""
         
         
@@ -42,6 +44,7 @@ class QualityEnhance:
         self._normal_enhance = None
         self._revive = None
         self._sdr_to_hdr = None
+        self._video_enhance = None
         self.discriminator = None
 
         if normal_enhance is not None:
@@ -50,6 +53,8 @@ class QualityEnhance:
             self.revive = revive
         if sdr_to_hdr is not None:
             self.sdr_to_hdr = sdr_to_hdr
+        if video_enhance is not None:
+            self.video_enhance = video_enhance
 
     @property
     def normal_enhance(self):
@@ -116,6 +121,28 @@ class QualityEnhance:
         :type: str
         """
         self._sdr_to_hdr = sdr_to_hdr
+
+    @property
+    def video_enhance(self):
+        """Gets the video_enhance of this QualityEnhance.
+
+        视频增强模式。取值范围： - REGENERATION - CONVERSION_SDR - CONVERSION_HDR 
+
+        :return: The video_enhance of this QualityEnhance.
+        :rtype: str
+        """
+        return self._video_enhance
+
+    @video_enhance.setter
+    def video_enhance(self, video_enhance):
+        """Sets the video_enhance of this QualityEnhance.
+
+        视频增强模式。取值范围： - REGENERATION - CONVERSION_SDR - CONVERSION_HDR 
+
+        :param video_enhance: The video_enhance of this QualityEnhance.
+        :type: str
+        """
+        self._video_enhance = video_enhance
 
     def to_dict(self):
         """Returns the model properties as a dict"""

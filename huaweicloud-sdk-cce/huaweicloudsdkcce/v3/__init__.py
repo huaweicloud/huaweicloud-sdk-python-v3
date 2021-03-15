@@ -54,7 +54,7 @@ from huaweicloudsdkcce.v3.model.delete_node_pool_response import DeleteNodePoolR
 from huaweicloudsdkcce.v3.model.delete_node_request import DeleteNodeRequest
 from huaweicloudsdkcce.v3.model.delete_node_response import DeleteNodeResponse
 from huaweicloudsdkcce.v3.model.delete_status import DeleteStatus
-from huaweicloudsdkcce.v3.model.eni_network import ENINetwork
+from huaweicloudsdkcce.v3.model.eni_network import EniNetwork
 from huaweicloudsdkcce.v3.model.hibernate_cluster_request import HibernateClusterRequest
 from huaweicloudsdkcce.v3.model.hibernate_cluster_response import HibernateClusterResponse
 from huaweicloudsdkcce.v3.model.host_network import HostNetwork

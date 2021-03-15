@@ -23,6 +23,8 @@ import requests
 import requests_mock
 
 MOCK_ENDPOINT = "https://service.test.com"
+MOCK_ENDPOINT_WITHOUT_SCHEME = "service.test.com"
+
 mock_session = requests.Session()
 mock_adapter = requests_mock.Adapter()
 

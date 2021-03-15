@@ -24,6 +24,7 @@ class ListPipleineBuildResultRequest:
 
     openapi_types = {
         'x_language': 'str',
+        'project_id': 'str',
         'start_date': 'str',
         'end_date': 'str',
         'offset': 'int',
@@ -32,18 +33,20 @@ class ListPipleineBuildResultRequest:
 
     attribute_map = {
         'x_language': 'X-Language',
+        'project_id': 'project_id',
         'start_date': 'start_date',
         'end_date': 'end_date',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, x_language=None, start_date=None, end_date=None, offset=None, limit=None):
+    def __init__(self, x_language=None, project_id=None, start_date=None, end_date=None, offset=None, limit=None):
         """ListPipleineBuildResultRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._x_language = None
+        self._project_id = None
         self._start_date = None
         self._end_date = None
         self._offset = None
@@ -52,6 +55,7 @@ class ListPipleineBuildResultRequest:
 
         if x_language is not None:
             self.x_language = x_language
+        self.project_id = project_id
         self.start_date = start_date
         self.end_date = end_date
         self.offset = offset
@@ -76,6 +80,26 @@ class ListPipleineBuildResultRequest:
         :type: str
         """
         self._x_language = x_language
+
+    @property
+    def project_id(self):
+        """Gets the project_id of this ListPipleineBuildResultRequest.
+
+
+        :return: The project_id of this ListPipleineBuildResultRequest.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this ListPipleineBuildResultRequest.
+
+
+        :param project_id: The project_id of this ListPipleineBuildResultRequest.
+        :type: str
+        """
+        self._project_id = project_id
 
     @property
     def start_date(self):

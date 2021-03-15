@@ -70,7 +70,7 @@ class CreateListenerOption:
         'transparent_client_ip_enable': 'transparent_client_ip_enable'
     }
 
-    def __init__(self, admin_state_up=None, client_ca_tls_container_ref=None, default_pool_id=None, default_tls_container_ref=None, description=None, http2_enable=None, insert_headers=None, loadbalancer_id=None, name=None, project_id=None, protocol=None, protocol_port=None, sni_container_refs=None, tags=None, tls_ciphers_policy=None, enable_member_retry=True, keepalive_timeout=None, client_timeout=60, member_timeout=60, ipgroup=None, transparent_client_ip_enable=False):
+    def __init__(self, admin_state_up=None, client_ca_tls_container_ref=None, default_pool_id=None, default_tls_container_ref=None, description=None, http2_enable=None, insert_headers=None, loadbalancer_id=None, name=None, project_id=None, protocol=None, protocol_port=None, sni_container_refs=None, tags=None, tls_ciphers_policy=None, enable_member_retry=None, keepalive_timeout=None, client_timeout=None, member_timeout=None, ipgroup=None, transparent_client_ip_enable=None):
         """CreateListenerOption - a model defined in huaweicloud sdk"""
         
         

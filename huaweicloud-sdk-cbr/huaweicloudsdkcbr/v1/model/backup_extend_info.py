@@ -48,7 +48,7 @@ class BackupExtendInfo:
         'system_disk': 'system_disk'
     }
 
-    def __init__(self, auto_trigger=None, bootable=None, incremental=None, snapshot_id=None, support_lld=None, supported_restore_mode='na', os_images_data=None, contain_system_disk=None, encrypted=None, system_disk=None):
+    def __init__(self, auto_trigger=None, bootable=None, incremental=None, snapshot_id=None, support_lld=None, supported_restore_mode=None, os_images_data=None, contain_system_disk=None, encrypted=None, system_disk=None):
         """BackupExtendInfo - a model defined in huaweicloud sdk"""
         
         

@@ -36,7 +36,7 @@ class ListMessageTemplatesRequest:
         'protocol': 'protocol'
     }
 
-    def __init__(self, offset=0, limit=100, message_template_name=None, protocol=None):
+    def __init__(self, offset=None, limit=None, message_template_name=None, protocol=None):
         """ListMessageTemplatesRequest - a model defined in huaweicloud sdk"""
         
         

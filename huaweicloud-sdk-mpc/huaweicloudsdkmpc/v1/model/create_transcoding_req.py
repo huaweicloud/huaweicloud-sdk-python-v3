@@ -72,7 +72,7 @@ class CreateTranscodingReq:
         'template_extend': 'template_extend'
     }
 
-    def __init__(self, input=None, output=None, trans_template_id=None, av_parameters=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, digital_watermark=None, priority=6, audit=None, subtitle=None, special_effect=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None, quality_enhance=None, system_process=None, template_extend=None):
+    def __init__(self, input=None, output=None, trans_template_id=None, av_parameters=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, digital_watermark=None, priority=None, audit=None, subtitle=None, special_effect=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None, quality_enhance=None, system_process=None, template_extend=None):
         """CreateTranscodingReq - a model defined in huaweicloud sdk"""
         
         

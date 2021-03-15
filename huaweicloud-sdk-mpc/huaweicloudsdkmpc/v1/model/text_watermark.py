@@ -46,7 +46,7 @@ class TextWatermark:
         'base': 'base'
     }
 
-    def __init__(self, dx='0', dy='0', referpos=None, timeline_start='0', timeline_duration=None, font_name='msyh', font_size=16, font_color='white', base='input'):
+    def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None, font_name=None, font_size=None, font_color=None, base=None):
         """TextWatermark - a model defined in huaweicloud sdk"""
         
         
@@ -261,7 +261,7 @@ class TextWatermark:
     def base(self):
         """Gets the base of this TextWatermark.
 
-        水印叠加母体 取值如下： - input：水印叠加在输入片源上，转码输出后实际大小按图像等比例缩放 - output：水印叠加在转码输出文件上。 
+        水印叠加母体 取值如下： - input：水印叠加在输入片源上，转码输出后实际大小按图像等比例缩放 - output：水印叠加在转码输出文件上。 默认值：input 
 
         :return: The base of this TextWatermark.
         :rtype: str
@@ -272,7 +272,7 @@ class TextWatermark:
     def base(self, base):
         """Sets the base of this TextWatermark.
 
-        水印叠加母体 取值如下： - input：水印叠加在输入片源上，转码输出后实际大小按图像等比例缩放 - output：水印叠加在转码输出文件上。 
+        水印叠加母体 取值如下： - input：水印叠加在输入片源上，转码输出后实际大小按图像等比例缩放 - output：水印叠加在转码输出文件上。 默认值：input 
 
         :param base: The base of this TextWatermark.
         :type: str

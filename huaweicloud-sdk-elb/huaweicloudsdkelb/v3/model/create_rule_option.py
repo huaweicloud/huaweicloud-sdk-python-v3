@@ -42,7 +42,7 @@ class CreateRuleOption:
         'invert': 'invert'
     }
 
-    def __init__(self, admin_state_up=True, compare_type=None, key=None, project_id=None, type=None, value=None, invert=False):
+    def __init__(self, admin_state_up=None, compare_type=None, key=None, project_id=None, type=None, value=None, invert=None):
         """CreateRuleOption - a model defined in huaweicloud sdk"""
         
         

@@ -70,7 +70,7 @@ class RestScheduleConfDTO:
         'concurrent_participants': 'concurrentParticipants'
     }
 
-    def __init__(self, conference_type=0, start_time=None, length=30, subject=None, media_types=None, groupuri=None, attendees=None, is_auto_record=0, encrypt_mode=None, language=None, time_zone_id=None, record_type=0, live_address=None, aux_address=None, record_aux_stream=None, conf_config_info=None, record_auth_type=None, vmr_flag=0, cycle_params=None, vmr_id=None, concurrent_participants=None):
+    def __init__(self, conference_type=None, start_time=None, length=None, subject=None, media_types=None, groupuri=None, attendees=None, is_auto_record=None, encrypt_mode=None, language=None, time_zone_id=None, record_type=None, live_address=None, aux_address=None, record_aux_stream=None, conf_config_info=None, record_auth_type=None, vmr_flag=None, cycle_params=None, vmr_id=None, concurrent_participants=None):
         """RestScheduleConfDTO - a model defined in huaweicloud sdk"""
         
         

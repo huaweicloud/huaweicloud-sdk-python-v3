@@ -38,7 +38,7 @@ class AuthInfo:
         'timeout': 'timeout'
     }
 
-    def __init__(self, auth_type=None, secret=None, fingerprint=None, secure_access=True, timeout=0):
+    def __init__(self, auth_type=None, secret=None, fingerprint=None, secure_access=None, timeout=None):
         """AuthInfo - a model defined in huaweicloud sdk"""
         
         

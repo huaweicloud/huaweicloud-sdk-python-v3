@@ -63,7 +63,8 @@ class ListSlowlogStatisticsRequest:
         self.per_page = per_page
         self.start_date = start_date
         self.end_date = end_date
-        self.type = type
+        if type is not None:
+            self.type = type
 
     @property
     def x_language(self):

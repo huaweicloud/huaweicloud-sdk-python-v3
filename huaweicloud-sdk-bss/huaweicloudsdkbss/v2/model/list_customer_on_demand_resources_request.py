@@ -32,7 +32,7 @@ class ListCustomerOnDemandResourcesRequest:
         'body': 'body'
     }
 
-    def __init__(self, x_language='zh_CN', body=None):
+    def __init__(self, x_language=None, body=None):
         """ListCustomerOnDemandResourcesRequest - a model defined in huaweicloud sdk"""
         
         

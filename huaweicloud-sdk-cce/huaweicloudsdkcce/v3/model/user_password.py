@@ -32,7 +32,7 @@ class UserPassword:
         'username': 'username'
     }
 
-    def __init__(self, password=None, username='root'):
+    def __init__(self, password=None, username=None):
         """UserPassword - a model defined in huaweicloud sdk"""
         
         

@@ -38,7 +38,7 @@ class ShowJobDetailRequest:
         'desc': 'desc'
     }
 
-    def __init__(self, job_id=None, instance_id=None, limit=20, offset=0, desc='false'):
+    def __init__(self, job_id=None, instance_id=None, limit=None, offset=None, desc=None):
         """ShowJobDetailRequest - a model defined in huaweicloud sdk"""
         
         

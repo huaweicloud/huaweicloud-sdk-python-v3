@@ -23,7 +23,7 @@ class IssueRequestV4:
     sensitive_list = []
 
     openapi_types = {
-        'actual_work_hours': 'int',
+        'actual_work_hours': 'float',
         'assigned_id': 'int',
         'begin_time': 'str',
         'description': 'str',
@@ -128,7 +128,7 @@ class IssueRequestV4:
         实际工时
 
         :return: The actual_work_hours of this IssueRequestV4.
-        :rtype: int
+        :rtype: float
         """
         return self._actual_work_hours
 
@@ -139,7 +139,7 @@ class IssueRequestV4:
         实际工时
 
         :param actual_work_hours: The actual_work_hours of this IssueRequestV4.
-        :type: int
+        :type: float
         """
         self._actual_work_hours = actual_work_hours
 
@@ -411,7 +411,7 @@ class IssueRequestV4:
     def priority_id(self):
         """Gets the priority_id of this IssueRequestV4.
 
-        优先级   1 低   2 中   3 高
+        优先级,   1 低,   2 中,   3 高,
 
         :return: The priority_id of this IssueRequestV4.
         :rtype: int
@@ -422,7 +422,7 @@ class IssueRequestV4:
     def priority_id(self, priority_id):
         """Sets the priority_id of this IssueRequestV4.
 
-        优先级   1 低   2 中   3 高
+        优先级,   1 低,   2 中,   3 高,
 
         :param priority_id: The priority_id of this IssueRequestV4.
         :type: int
@@ -433,7 +433,7 @@ class IssueRequestV4:
     def severity_id(self):
         """Gets the severity_id of this IssueRequestV4.
 
-        重要程度   10 关键   11 重要   12 一般   13 提示
+        重要程度,   10 关键,   11 重要,   12 一般,   13 提示,
 
         :return: The severity_id of this IssueRequestV4.
         :rtype: int
@@ -444,7 +444,7 @@ class IssueRequestV4:
     def severity_id(self, severity_id):
         """Sets the severity_id of this IssueRequestV4.
 
-        重要程度   10 关键   11 重要   12 一般   13 提示
+        重要程度,   10 关键,   11 重要,   12 一般,   13 提示,
 
         :param severity_id: The severity_id of this IssueRequestV4.
         :type: int
@@ -455,7 +455,7 @@ class IssueRequestV4:
     def status_id(self):
         """Gets the status_id of this IssueRequestV4.
 
-        状态   id 开始   1 进行中 2 已解决 3 测试中 4 已关闭 5 已解决 6
+        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已解决 6,
 
         :return: The status_id of this IssueRequestV4.
         :rtype: int
@@ -466,7 +466,7 @@ class IssueRequestV4:
     def status_id(self, status_id):
         """Sets the status_id of this IssueRequestV4.
 
-        状态   id 开始   1 进行中 2 已解决 3 测试中 4 已关闭 5 已解决 6
+        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已解决 6,
 
         :param status_id: The status_id of this IssueRequestV4.
         :type: int

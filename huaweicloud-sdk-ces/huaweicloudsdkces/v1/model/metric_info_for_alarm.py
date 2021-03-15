@@ -128,7 +128,7 @@ class MetricInfoForAlarm:
     def resource_group_id(self):
         """Gets the resource_group_id of this MetricInfoForAlarm.
 
-        创建告警规则时选择的资源分组ID，如：rg1603786526428bWbVmk4rP
+        创建告警规则时选择的资源分组ID，如：rg1603786526428bWbVmk4rP；如果根据资源分组创建告警规则，则resource_group_id不能为空，且alarm_type值为RESOURCE_GROUP
 
         :return: The resource_group_id of this MetricInfoForAlarm.
         :rtype: str
@@ -139,7 +139,7 @@ class MetricInfoForAlarm:
     def resource_group_id(self, resource_group_id):
         """Sets the resource_group_id of this MetricInfoForAlarm.
 
-        创建告警规则时选择的资源分组ID，如：rg1603786526428bWbVmk4rP
+        创建告警规则时选择的资源分组ID，如：rg1603786526428bWbVmk4rP；如果根据资源分组创建告警规则，则resource_group_id不能为空，且alarm_type值为RESOURCE_GROUP
 
         :param resource_group_id: The resource_group_id of this MetricInfoForAlarm.
         :type: str

@@ -38,7 +38,7 @@ class ListResourcesByTagsRequest:
         'body': 'body'
     }
 
-    def __init__(self, instance_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0, body=None):
+    def __init__(self, instance_id=None, limit=None, marker=None, offset=None, body=None):
         """ListResourcesByTagsRequest - a model defined in huaweicloud sdk"""
         
         

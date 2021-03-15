@@ -48,7 +48,7 @@ class PostPaidServerExtendParam:
         'spot_duration_count': 'spot_duration_count'
     }
 
-    def __init__(self, charging_mode=0, region_id=None, support_auto_recovery=False, enterprise_project_id='0', market_type=None, spot_price=None, disk_prior=None, spot_duration_hours=None, interruption_policy=None, spot_duration_count=None):
+    def __init__(self, charging_mode=None, region_id=None, support_auto_recovery=None, enterprise_project_id=None, market_type=None, spot_price=None, disk_prior=None, spot_duration_hours=None, interruption_policy=None, spot_duration_count=None):
         """PostPaidServerExtendParam - a model defined in huaweicloud sdk"""
         
         

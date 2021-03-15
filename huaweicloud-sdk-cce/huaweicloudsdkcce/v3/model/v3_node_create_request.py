@@ -36,7 +36,7 @@ class V3NodeCreateRequest:
         'spec': 'spec'
     }
 
-    def __init__(self, api_version='v3', kind='Node', metadata=None, spec=None):
+    def __init__(self, api_version=None, kind=None, metadata=None, spec=None):
         """V3NodeCreateRequest - a model defined in huaweicloud sdk"""
         
         

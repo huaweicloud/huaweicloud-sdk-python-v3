@@ -34,7 +34,7 @@ class DeleteTagRequest:
         'version_id': 'version_id'
     }
 
-    def __init__(self, key_id=None, key=None, version_id='v1.0'):
+    def __init__(self, key_id=None, key=None, version_id=None):
         """DeleteTagRequest - a model defined in huaweicloud sdk"""
         
         

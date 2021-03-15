@@ -34,7 +34,7 @@ class ListWatermarkTemplateRequest:
         'size': 'size'
     }
 
-    def __init__(self, template_id=None, page=0, size=10):
+    def __init__(self, template_id=None, page=None, size=None):
         """ListWatermarkTemplateRequest - a model defined in huaweicloud sdk"""
         
         

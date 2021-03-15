@@ -34,7 +34,7 @@ class CreateRuleActionRequest:
         'body': 'body'
     }
 
-    def __init__(self, instance_id=None, x_lb_service='L7Adapt4Out', body=None):
+    def __init__(self, instance_id=None, x_lb_service=None, body=None):
         """CreateRuleActionRequest - a model defined in huaweicloud sdk"""
         
         

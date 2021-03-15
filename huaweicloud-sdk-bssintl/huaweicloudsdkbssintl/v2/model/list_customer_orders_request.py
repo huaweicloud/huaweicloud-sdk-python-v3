@@ -54,7 +54,7 @@ class ListCustomerOrdersRequest:
         'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, order_id=None, customer_id=None, create_time_begin=None, create_time_end=None, service_type_code=None, status=None, order_type=None, limit=10, offset=0, order_by=None, payment_time_begin=None, payment_time_end=None, indirect_partner_id=None):
+    def __init__(self, order_id=None, customer_id=None, create_time_begin=None, create_time_end=None, service_type_code=None, status=None, order_type=None, limit=None, offset=None, order_by=None, payment_time_begin=None, payment_time_end=None, indirect_partner_id=None):
         """ListCustomerOrdersRequest - a model defined in huaweicloud sdk"""
         
         

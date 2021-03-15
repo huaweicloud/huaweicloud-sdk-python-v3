@@ -38,7 +38,7 @@ class BasicWatermark:
         'timeline_duration': 'timeline_duration'
     }
 
-    def __init__(self, dx='0', dy='0', referpos=None, timeline_start='0', timeline_duration=None):
+    def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None):
         """BasicWatermark - a model defined in huaweicloud sdk"""
         
         

@@ -32,7 +32,7 @@ class CreatePoolSlowStartOption:
         'duration': 'duration'
     }
 
-    def __init__(self, enable=False, duration=30):
+    def __init__(self, enable=None, duration=None):
         """CreatePoolSlowStartOption - a model defined in huaweicloud sdk"""
         
         

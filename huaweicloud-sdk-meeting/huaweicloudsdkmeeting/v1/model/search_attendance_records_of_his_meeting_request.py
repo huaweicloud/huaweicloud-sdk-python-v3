@@ -44,7 +44,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
         'accept_language': 'Accept-Language'
     }
 
-    def __init__(self, conf_uuid=None, offset=0, limit=20, search_key=None, user_uuid=None, x_authorization_type=None, x_site_id=None, accept_language='zh-CN'):
+    def __init__(self, conf_uuid=None, offset=None, limit=None, search_key=None, user_uuid=None, x_authorization_type=None, x_site_id=None, accept_language=None):
         """SearchAttendanceRecordsOfHisMeetingRequest - a model defined in huaweicloud sdk"""
         
         

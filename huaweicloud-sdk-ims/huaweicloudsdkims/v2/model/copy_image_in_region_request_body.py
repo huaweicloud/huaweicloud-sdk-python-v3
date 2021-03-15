@@ -36,7 +36,7 @@ class CopyImageInRegionRequestBody:
         'name': 'name'
     }
 
-    def __init__(self, cmk_id=None, description=None, enterprise_project_id='0', name=None):
+    def __init__(self, cmk_id=None, description=None, enterprise_project_id=None, name=None):
         """CopyImageInRegionRequestBody - a model defined in huaweicloud sdk"""
         
         

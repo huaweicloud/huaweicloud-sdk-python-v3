@@ -38,7 +38,7 @@ class CinderExportToImageOption:
         'os_type': '__os_type'
     }
 
-    def __init__(self, container_format='bare', disk_format='vhd', force=None, image_name=None, os_type='linux'):
+    def __init__(self, container_format=None, disk_format=None, force=None, image_name=None, os_type=None):
         """CinderExportToImageOption - a model defined in huaweicloud sdk"""
         
         

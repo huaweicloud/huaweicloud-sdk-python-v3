@@ -769,26 +769,91 @@ class IamAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def create_unscope_token_by_idp_initiated_async(self, request):
-        """获取联邦认证unscoped token(IdP initiated)
+    def create_open_id_connect_config_async(self, request):
+        """创建OpenId Connect身份提供商配置
 
-        该接口可以用于通过IdP initiated的联邦认证方式获取unscoped token。    Unscoped token不能用来鉴权，若联邦用户需要使用token进行鉴权，请参考[获取联邦认证scoped token](https://support.huaweicloud.com/api-iam/iam_13_0604.html)获取scoped token。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。     > - 该接口支持在命令行侧调用，需要客户端使用IdP initiated的联邦认证方式获取SAMLResponse，并采用浏览器提交表单数据的方式，获取unscoped token。
+        创建OpenId Connect身份提供商配置
 
-        :param CreateUnscopeTokenByIdpInitiatedRequest request
-        :return: CreateUnscopeTokenByIdpInitiatedResponse
+        :param CreateOpenIdConnectConfigRequest request
+        :return: CreateOpenIdConnectConfigResponse
         """
-        return self.create_unscope_token_by_idp_initiated_with_http_info(request)
+        return self.create_open_id_connect_config_with_http_info(request)
 
-    def create_unscope_token_by_idp_initiated_with_http_info(self, request):
-        """获取联邦认证unscoped token(IdP initiated)
+    def create_open_id_connect_config_with_http_info(self, request):
+        """创建OpenId Connect身份提供商配置
 
-        该接口可以用于通过IdP initiated的联邦认证方式获取unscoped token。    Unscoped token不能用来鉴权，若联邦用户需要使用token进行鉴权，请参考[获取联邦认证scoped token](https://support.huaweicloud.com/api-iam/iam_13_0604.html)获取scoped token。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。     > - 该接口支持在命令行侧调用，需要客户端使用IdP initiated的联邦认证方式获取SAMLResponse，并采用浏览器提交表单数据的方式，获取unscoped token。
+        创建OpenId Connect身份提供商配置
 
-        :param CreateUnscopeTokenByIdpInitiatedRequest request
-        :return: CreateUnscopeTokenByIdpInitiatedResponse
+        :param CreateOpenIdConnectConfigRequest request
+        :return: CreateOpenIdConnectConfigResponse
         """
 
-        all_params = ['x_idp_id', 'saml_response']
+        all_params = ['idp_id', 'create_open_id_connect_config_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'idp_id' in local_var_params:
+            path_params['idp_id'] = local_var_params['idp_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-FEDERATION/identity-providers/{idp_id}/openid-connect-config',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateOpenIdConnectConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_token_with_id_token_async(self, request):
+        """获取联邦认证token(OpenId Connect Id token方式)
+
+        获取联邦认证token(OpenId Connect Id token方式)
+
+        :param CreateTokenWithIdTokenRequest request
+        :return: CreateTokenWithIdTokenResponse
+        """
+        return self.create_token_with_id_token_with_http_info(request)
+
+    def create_token_with_id_token_with_http_info(self, request):
+        """获取联邦认证token(OpenId Connect Id token方式)
+
+        获取联邦认证token(OpenId Connect Id token方式)
+
+        :param CreateTokenWithIdTokenRequest request
+        :return: CreateTokenWithIdTokenResponse
+        """
+
+        all_params = ['x_idp_id', 'body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -805,29 +870,29 @@ class IamAsyncClient(Client):
             header_params['X-Idp-Id'] = local_var_params['x_idp_id']
 
         form_params = {}
-        if 'saml_response' in local_var_params:
-            form_params['SAMLResponse'] =  local_var_params['saml_response']
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
         response_headers = ["X-Subject-Token"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/x-www-form-urlencoded'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v3.0/OS-FEDERATION/tokens',
+            resource_path='/v3.0/OS-AUTH/id-token/tokens',
             method='POST',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='CreateUnscopeTokenByIdpInitiatedResponse',
+            response_type='CreateTokenWithIdTokenResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -5663,6 +5728,69 @@ class IamAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_open_id_connect_config_async(self, request):
+        """查询OpenId Connect身份提供商配置
+
+        查询OpenId Connect身份提供商配置
+
+        :param ShowOpenIdConnectConfigRequest request
+        :return: ShowOpenIdConnectConfigResponse
+        """
+        return self.show_open_id_connect_config_with_http_info(request)
+
+    def show_open_id_connect_config_with_http_info(self, request):
+        """查询OpenId Connect身份提供商配置
+
+        查询OpenId Connect身份提供商配置
+
+        :param ShowOpenIdConnectConfigRequest request
+        :return: ShowOpenIdConnectConfigResponse
+        """
+
+        all_params = ['idp_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'idp_id' in local_var_params:
+            path_params['idp_id'] = local_var_params['idp_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-FEDERATION/identity-providers/{idp_id}/openid-connect-config',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowOpenIdConnectConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_project_details_and_status_async(self, request):
         """查询项目详情与状态
 
@@ -6370,6 +6498,71 @@ class IamAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateDomainProtectPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_open_id_connect_config_async(self, request):
+        """修改OpenId Connect身份提供商配置
+
+        修改OpenId Connect身份提供商配置
+
+        :param UpdateOpenIdConnectConfigRequest request
+        :return: UpdateOpenIdConnectConfigResponse
+        """
+        return self.update_open_id_connect_config_with_http_info(request)
+
+    def update_open_id_connect_config_with_http_info(self, request):
+        """修改OpenId Connect身份提供商配置
+
+        修改OpenId Connect身份提供商配置
+
+        :param UpdateOpenIdConnectConfigRequest request
+        :return: UpdateOpenIdConnectConfigResponse
+        """
+
+        all_params = ['idp_id', 'update_open_id_connect_config_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'idp_id' in local_var_params:
+            path_params['idp_id'] = local_var_params['idp_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-FEDERATION/identity-providers/{idp_id}/openid-connect-config',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateOpenIdConnectConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

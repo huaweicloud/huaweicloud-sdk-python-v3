@@ -115,23 +115,23 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def batch_tag_action(self, request):
-        """批量添加删除标签
+    def batch_tag_add_action(self, request):
+        """批量添加标签
 
-        批量添加删除标签。
+        批量添加标签。
 
-        :param BatchTagActionRequest request
-        :return: BatchTagActionResponse
+        :param BatchTagAddActionRequest request
+        :return: BatchTagAddActionResponse
         """
-        return self.batch_tag_action_with_http_info(request)
+        return self.batch_tag_add_action_with_http_info(request)
 
-    def batch_tag_action_with_http_info(self, request):
-        """批量添加删除标签
+    def batch_tag_add_action_with_http_info(self, request):
+        """批量添加标签
 
-        批量添加删除标签。
+        批量添加标签。
 
-        :param BatchTagActionRequest request
-        :return: BatchTagActionResponse
+        :param BatchTagAddActionRequest request
+        :return: BatchTagAddActionResponse
         """
 
         all_params = ['instance_id', 'batch_tag_action_request', 'x_language']
@@ -175,7 +175,74 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='BatchTagActionResponse',
+            response_type='BatchTagAddActionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_tag_del_action(self, request):
+        """批量删除标签
+
+        批量删除标签。
+
+        :param BatchTagDelActionRequest request
+        :return: BatchTagDelActionResponse
+        """
+        return self.batch_tag_del_action_with_http_info(request)
+
+    def batch_tag_del_action_with_http_info(self, request):
+        """批量删除标签
+
+        批量删除标签。
+
+        :param BatchTagDelActionRequest request
+        :return: BatchTagDelActionResponse
+        """
+
+        all_params = ['instance_id', 'batch_tag_action_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchTagDelActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -183,9 +250,9 @@ class RdsClient(Client):
 
 
     def change_failover_mode(self, request):
-        """更改主备实例的同步模式
+        """更改主备实例的数据同步方式
 
-        更改主备实例的同步模式.
+        更改主备实例的数据同步方式。
 
         :param ChangeFailoverModeRequest request
         :return: ChangeFailoverModeResponse
@@ -193,9 +260,9 @@ class RdsClient(Client):
         return self.change_failover_mode_with_http_info(request)
 
     def change_failover_mode_with_http_info(self, request):
-        """更改主备实例的同步模式
+        """更改主备实例的数据同步方式
 
-        更改主备实例的同步模式.
+        更改主备实例的数据同步方式。
 
         :param ChangeFailoverModeRequest request
         :return: ChangeFailoverModeResponse
@@ -448,10 +515,77 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def create_instance(self, request):
-        """创建数据库实例/恢复到新实例
+    def create_dns_name(self, request):
+        """申请域名
 
-        创建数据库实例/恢复到新实例。
+        申请域名
+
+        :param CreateDnsNameRequest request
+        :return: CreateDnsNameResponse
+        """
+        return self.create_dns_name_with_http_info(request)
+
+    def create_dns_name_with_http_info(self, request):
+        """申请域名
+
+        申请域名
+
+        :param CreateDnsNameRequest request
+        :return: CreateDnsNameResponse
+        """
+
+        all_params = ['instance_id', 'create_dns_name_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/create-dns',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateDnsNameResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_instance(self, request):
+        """创建数据库实例
+
+        创建数据库实例。
 
         :param CreateInstanceRequest request
         :return: CreateInstanceResponse
@@ -459,9 +593,9 @@ class RdsClient(Client):
         return self.create_instance_with_http_info(request)
 
     def create_instance_with_http_info(self, request):
-        """创建数据库实例/恢复到新实例
+        """创建数据库实例
 
-        创建数据库实例/恢复到新实例。
+        创建数据库实例。
 
         :param CreateInstanceRequest request
         :return: CreateInstanceResponse
@@ -578,6 +712,71 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_restore_instance(self, request):
+        """恢复到新实例
+
+        恢复到新实例。
+
+        :param CreateRestoreInstanceRequest request
+        :return: CreateRestoreInstanceResponse
+        """
+        return self.create_restore_instance_with_http_info(request)
+
+    def create_restore_instance_with_http_info(self, request):
+        """恢复到新实例
+
+        恢复到新实例。
+
+        :param CreateRestoreInstanceRequest request
+        :return: CreateRestoreInstanceResponse
+        """
+
+        all_params = ['create_instance_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateRestoreInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_configuration(self, request):
         """删除参数模板
 
@@ -644,9 +843,9 @@ class RdsClient(Client):
 
 
     def delete_instance(self, request):
-        """删除实例
+        """删除数据库实例
 
-        删除实例。
+        删除数据库实例。
 
         :param DeleteInstanceRequest request
         :return: DeleteInstanceResponse
@@ -654,9 +853,9 @@ class RdsClient(Client):
         return self.delete_instance_with_http_info(request)
 
     def delete_instance_with_http_info(self, request):
-        """删除实例
+        """删除数据库实例
 
-        删除实例。
+        删除数据库实例。
 
         :param DeleteInstanceRequest request
         :return: DeleteInstanceResponse
@@ -774,9 +973,9 @@ class RdsClient(Client):
 
 
     def download_slowlog(self, request):
-        """获取日志信息
+        """获取慢日志下载链接
 
-        获取日志信息
+        获取慢日志下载链接。
 
         :param DownloadSlowlogRequest request
         :return: DownloadSlowlogResponse
@@ -784,9 +983,9 @@ class RdsClient(Client):
         return self.download_slowlog_with_http_info(request)
 
     def download_slowlog_with_http_info(self, request):
-        """获取日志信息
+        """获取慢日志下载链接
 
-        获取日志信息
+        获取慢日志下载链接。
 
         :param DownloadSlowlogRequest request
         :return: DownloadSlowlogResponse
@@ -1474,9 +1673,9 @@ class RdsClient(Client):
 
 
     def list_job_info(self, request):
-        """获取任务信息
+        """获取指定ID的任务信息
 
-        获取任务信息。
+        获取指定ID的任务信息。
 
         :param ListJobInfoRequest request
         :return: ListJobInfoResponse
@@ -1484,9 +1683,9 @@ class RdsClient(Client):
         return self.list_job_info_with_http_info(request)
 
     def list_job_info_with_http_info(self, request):
-        """获取任务信息
+        """获取指定ID的任务信息
 
-        获取任务信息。
+        获取指定ID的任务信息。
 
         :param ListJobInfoRequest request
         :return: ListJobInfoResponse
@@ -1539,9 +1738,9 @@ class RdsClient(Client):
 
 
     def list_job_info_detail(self, request):
-        """获取所有任务详细信息
+        """获取指定实例和时间范围的任务信息（SQL Server）
 
-        获取所有任务详细信息。
+        获取指定实例和时间范围的任务信息（SQL Server）。
 
         :param ListJobInfoDetailRequest request
         :return: ListJobInfoDetailResponse
@@ -1549,9 +1748,9 @@ class RdsClient(Client):
         return self.list_job_info_detail_with_http_info(request)
 
     def list_job_info_detail_with_http_info(self, request):
-        """获取所有任务详细信息
+        """获取指定实例和时间范围的任务信息（SQL Server）
 
-        获取所有任务详细信息。
+        获取指定实例和时间范围的任务信息（SQL Server）。
 
         :param ListJobInfoDetailRequest request
         :return: ListJobInfoDetailResponse
@@ -2038,7 +2237,7 @@ class RdsClient(Client):
         :return: ListSlowlogStatisticsResponse
         """
 
-        all_params = ['instance_id', 'cur_page', 'per_page', 'start_date', 'end_date', 'type', 'x_language']
+        all_params = ['instance_id', 'cur_page', 'per_page', 'start_date', 'end_date', 'x_language', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3024,6 +3223,71 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_dr_replica_status(self, request):
+        """查询跨云容灾复制状态
+
+        查询跨云容灾复制状态。
+
+        :param ShowDrReplicaStatusRequest request
+        :return: ShowDrReplicaStatusResponse
+        """
+        return self.show_dr_replica_status_with_http_info(request)
+
+    def show_dr_replica_status_with_http_info(self, request):
+        """查询跨云容灾复制状态
+
+        查询跨云容灾复制状态。
+
+        :param ShowDrReplicaStatusRequest request
+        :return: ShowDrReplicaStatusResponse
+        """
+
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/disaster-recovery',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDrReplicaStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_instance_configuration(self, request):
         """获取指定实例的参数模板
 
@@ -3155,7 +3419,7 @@ class RdsClient(Client):
 
 
     def start_failover(self, request):
-        """手动倒换主备实例
+        """手动倒换主备
 
         手动倒换主备.
 
@@ -3165,7 +3429,7 @@ class RdsClient(Client):
         return self.start_failover_with_http_info(request)
 
     def start_failover_with_http_info(self, request):
-        """手动倒换主备实例
+        """手动倒换主备
 
         手动倒换主备.
 
@@ -3219,26 +3483,26 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def start_instance_action(self, request):
-        """变更实例规格/扩容实例磁盘/重启实例/单机转主备
+    def start_instance_dr_to_master_action(self, request):
+        """灾备实例升主
 
-        变更实例规格/扩容实例磁盘/重启实例/单机转主备。
+        灾备实例升主。
 
-        :param StartInstanceActionRequest request
-        :return: StartInstanceActionResponse
+        :param StartInstanceDrToMasterActionRequest request
+        :return: StartInstanceDrToMasterActionResponse
         """
-        return self.start_instance_action_with_http_info(request)
+        return self.start_instance_dr_to_master_action_with_http_info(request)
 
-    def start_instance_action_with_http_info(self, request):
-        """变更实例规格/扩容实例磁盘/重启实例/单机转主备
+    def start_instance_dr_to_master_action_with_http_info(self, request):
+        """灾备实例升主
 
-        变更实例规格/扩容实例磁盘/重启实例/单机转主备。
+        灾备实例升主。
 
-        :param StartInstanceActionRequest request
-        :return: StartInstanceActionResponse
+        :param StartInstanceDrToMasterActionRequest request
+        :return: StartInstanceDrToMasterActionResponse
         """
 
-        all_params = ['instance_id', 'instance_action_request_body', 'x_language']
+        all_params = ['instance_id', 'instance_dr_master_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3279,7 +3543,474 @@ class RdsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='StartInstanceActionResponse',
+            response_type='StartInstanceDrToMasterActionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def start_instance_enlarge_volume_action(self, request):
+        """扩容数据库实例的磁盘空间
+
+        扩容数据库实例的磁盘空间。
+
+        :param StartInstanceEnlargeVolumeActionRequest request
+        :return: StartInstanceEnlargeVolumeActionResponse
+        """
+        return self.start_instance_enlarge_volume_action_with_http_info(request)
+
+    def start_instance_enlarge_volume_action_with_http_info(self, request):
+        """扩容数据库实例的磁盘空间
+
+        扩容数据库实例的磁盘空间。
+
+        :param StartInstanceEnlargeVolumeActionRequest request
+        :return: StartInstanceEnlargeVolumeActionResponse
+        """
+
+        all_params = ['instance_id', 'enlarge_volume_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartInstanceEnlargeVolumeActionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def start_instance_master_dr_action(self, request):
+        """配置主实例容灾能力
+
+        配置主实例容灾能力。
+
+        :param StartInstanceMasterDrActionRequest request
+        :return: StartInstanceMasterDrActionResponse
+        """
+        return self.start_instance_master_dr_action_with_http_info(request)
+
+    def start_instance_master_dr_action_with_http_info(self, request):
+        """配置主实例容灾能力
+
+        配置主实例容灾能力。
+
+        :param StartInstanceMasterDrActionRequest request
+        :return: StartInstanceMasterDrActionResponse
+        """
+
+        all_params = ['instance_id', 'instance_master_dr_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartInstanceMasterDrActionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def start_instance_restart_action(self, request):
+        """重启数据库实例
+
+        重启数据库实例。
+
+        :param StartInstanceRestartActionRequest request
+        :return: StartInstanceRestartActionResponse
+        """
+        return self.start_instance_restart_action_with_http_info(request)
+
+    def start_instance_restart_action_with_http_info(self, request):
+        """重启数据库实例
+
+        重启数据库实例。
+
+        :param StartInstanceRestartActionRequest request
+        :return: StartInstanceRestartActionResponse
+        """
+
+        all_params = ['instance_id', 'instance_restart_requset_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartInstanceRestartActionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def start_instance_single_to_ha_action(self, request):
+        """单机转主备实例
+
+        单机转主备实例。
+
+        :param StartInstanceSingleToHaActionRequest request
+        :return: StartInstanceSingleToHaActionResponse
+        """
+        return self.start_instance_single_to_ha_action_with_http_info(request)
+
+    def start_instance_single_to_ha_action_with_http_info(self, request):
+        """单机转主备实例
+
+        单机转主备实例。
+
+        :param StartInstanceSingleToHaActionRequest request
+        :return: StartInstanceSingleToHaActionResponse
+        """
+
+        all_params = ['instance_id', 'instance_single_to_ha_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartInstanceSingleToHaActionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def start_instance_slave_dr_action(self, request):
+        """配置灾备实例容灾能力
+
+        配置灾备实例容灾能力。
+
+        :param StartInstanceSlaveDrActionRequest request
+        :return: StartInstanceSlaveDrActionResponse
+        """
+        return self.start_instance_slave_dr_action_with_http_info(request)
+
+    def start_instance_slave_dr_action_with_http_info(self, request):
+        """配置灾备实例容灾能力
+
+        配置灾备实例容灾能力。
+
+        :param StartInstanceSlaveDrActionRequest request
+        :return: StartInstanceSlaveDrActionResponse
+        """
+
+        all_params = ['instance_id', 'instance_slave_dr_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartInstanceSlaveDrActionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def start_recycle_policy(self, request):
+        """设置回收站策略
+
+        设置回收站策略。
+
+        :param StartRecyclePolicyRequest request
+        :return: StartRecyclePolicyResponse
+        """
+        return self.start_recycle_policy_with_http_info(request)
+
+    def start_recycle_policy_with_http_info(self, request):
+        """设置回收站策略
+
+        设置回收站策略。
+
+        :param StartRecyclePolicyRequest request
+        :return: StartRecyclePolicyResponse
+        """
+
+        all_params = ['recycle_policy_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/recycle-policy',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartRecyclePolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def start_resize_flavor_action(self, request):
+        """变更数据库实例的规格
+
+        变更数据库实例的规格。
+
+        :param StartResizeFlavorActionRequest request
+        :return: StartResizeFlavorActionResponse
+        """
+        return self.start_resize_flavor_action_with_http_info(request)
+
+    def start_resize_flavor_action_with_http_info(self, request):
+        """变更数据库实例的规格
+
+        变更数据库实例的规格。
+
+        :param StartResizeFlavorActionRequest request
+        :return: StartResizeFlavorActionResponse
+        """
+
+        all_params = ['instance_id', 'resize_flavor_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartResizeFlavorActionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3287,9 +4018,9 @@ class RdsClient(Client):
 
 
     def switch_ssl(self, request):
-        """SSL开关
+        """设置SSL数据加密
 
-        SSL开关
+        设置SSL数据加密。
 
         :param SwitchSslRequest request
         :return: SwitchSslResponse
@@ -3297,15 +4028,15 @@ class RdsClient(Client):
         return self.switch_ssl_with_http_info(request)
 
     def switch_ssl_with_http_info(self, request):
-        """SSL开关
+        """设置SSL数据加密
 
-        SSL开关
+        设置SSL数据加密。
 
         :param SwitchSslRequest request
         :return: SwitchSslResponse
         """
 
-        all_params = ['instance_id', 'ssl_option_request', 'x_language']
+        all_params = ['instance_id', 'ssl_option_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3487,6 +4218,73 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_dns_name(self, request):
+        """修改域名
+
+        修改域名
+
+        :param UpdateDnsNameRequest request
+        :return: UpdateDnsNameResponse
+        """
+        return self.update_dns_name_with_http_info(request)
+
+    def update_dns_name_with_http_info(self, request):
+        """修改域名
+
+        修改域名
+
+        :param UpdateDnsNameRequest request
+        :return: UpdateDnsNameResponse
+        """
+
+        all_params = ['instance_id', 'modify_dns_name_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/modify-dns',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateDnsNameResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_instance_configuration(self, request):
         """修改指定实例的参数
 
@@ -3548,6 +4346,73 @@ class RdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateInstanceConfigurationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_instance_name(self, request):
+        """修改实例名称
+
+        修改实例名称。
+
+        :param UpdateInstanceNameRequest request
+        :return: UpdateInstanceNameResponse
+        """
+        return self.update_instance_name_with_http_info(request)
+
+    def update_instance_name_with_http_info(self, request):
+        """修改实例名称
+
+        修改实例名称。
+
+        :param UpdateInstanceNameRequest request
+        :return: UpdateInstanceNameResponse
+        """
+
+        all_params = ['instance_id', 'modify_instance_name_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/name',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateInstanceNameResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4255,7 +5120,7 @@ class RdsClient(Client):
         :return: RevokeResponse
         """
 
-        all_params = ['instance_id', 'revoke_request', 'x_language']
+        all_params = ['instance_id', 'revoke_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4364,6 +5229,946 @@ class RdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='SetDbUserPwdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def allow_db_privilege(self, request):
+        """授权数据库帐号
+
+        授权数据库帐号。
+
+        :param AllowDbPrivilegeRequest request
+        :return: AllowDbPrivilegeResponse
+        """
+        return self.allow_db_privilege_with_http_info(request)
+
+    def allow_db_privilege_with_http_info(self, request):
+        """授权数据库帐号
+
+        授权数据库帐号。
+
+        :param AllowDbPrivilegeRequest request
+        :return: AllowDbPrivilegeResponse
+        """
+
+        all_params = ['instance_id', 'grant_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db_privilege',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AllowDbPrivilegeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def change_the_delay_threshold(self, request):
+        """修改读写分离阈值
+
+        修改读写分离阈值
+
+        :param ChangeTheDelayThresholdRequest request
+        :return: ChangeTheDelayThresholdResponse
+        """
+        return self.change_the_delay_threshold_with_http_info(request)
+
+    def change_the_delay_threshold_with_http_info(self, request):
+        """修改读写分离阈值
+
+        修改读写分离阈值
+
+        :param ChangeTheDelayThresholdRequest request
+        :return: ChangeTheDelayThresholdResponse
+        """
+
+        all_params = ['instance_id', 'changing_the_delay_threshold_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/delay-threshold',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ChangeTheDelayThresholdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_postgresql_database(self, request):
+        """创建数据库
+
+        创建数据库。
+
+        :param CreatePostgresqlDatabaseRequest request
+        :return: CreatePostgresqlDatabaseResponse
+        """
+        return self.create_postgresql_database_with_http_info(request)
+
+    def create_postgresql_database_with_http_info(self, request):
+        """创建数据库
+
+        创建数据库。
+
+        :param CreatePostgresqlDatabaseRequest request
+        :return: CreatePostgresqlDatabaseResponse
+        """
+
+        all_params = ['instance_id', 'create_database_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/database',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreatePostgresqlDatabaseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_postgresql_database_schema(self, request):
+        """创建数据库SCHEMA
+
+        创建数据库SCHEMA。
+
+        :param CreatePostgresqlDatabaseSchemaRequest request
+        :return: CreatePostgresqlDatabaseSchemaResponse
+        """
+        return self.create_postgresql_database_schema_with_http_info(request)
+
+    def create_postgresql_database_schema_with_http_info(self, request):
+        """创建数据库SCHEMA
+
+        创建数据库SCHEMA。
+
+        :param CreatePostgresqlDatabaseSchemaRequest request
+        :return: CreatePostgresqlDatabaseSchemaResponse
+        """
+
+        all_params = ['instance_id', 'db_schema_req', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/schema',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreatePostgresqlDatabaseSchemaResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_postgresql_db_user(self, request):
+        """创建数据库用户
+
+        创建数据库用户。
+
+        :param CreatePostgresqlDbUserRequest request
+        :return: CreatePostgresqlDbUserResponse
+        """
+        return self.create_postgresql_db_user_with_http_info(request)
+
+    def create_postgresql_db_user_with_http_info(self, request):
+        """创建数据库用户
+
+        创建数据库用户。
+
+        :param CreatePostgresqlDbUserRequest request
+        :return: CreatePostgresqlDbUserResponse
+        """
+
+        all_params = ['instance_id', 'create_db_user_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db_user',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreatePostgresqlDbUserResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_postgresql_database_schemas(self, request):
+        """查询数据库SCHEMA列表
+
+        查询数据库SCHEMA列表。
+
+        :param ListPostgresqlDatabaseSchemasRequest request
+        :return: ListPostgresqlDatabaseSchemasResponse
+        """
+        return self.list_postgresql_database_schemas_with_http_info(request)
+
+    def list_postgresql_database_schemas_with_http_info(self, request):
+        """查询数据库SCHEMA列表
+
+        查询数据库SCHEMA列表。
+
+        :param ListPostgresqlDatabaseSchemasRequest request
+        :return: ListPostgresqlDatabaseSchemasResponse
+        """
+
+        all_params = ['instance_id', 'db_name', 'page', 'limit', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'db_name' in local_var_params:
+            query_params.append(('db_name', local_var_params['db_name']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/schema/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListPostgresqlDatabaseSchemasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_postgresql_databases(self, request):
+        """查询数据库列表
+
+        查询数据库列表。
+
+        :param ListPostgresqlDatabasesRequest request
+        :return: ListPostgresqlDatabasesResponse
+        """
+        return self.list_postgresql_databases_with_http_info(request)
+
+    def list_postgresql_databases_with_http_info(self, request):
+        """查询数据库列表
+
+        查询数据库列表。
+
+        :param ListPostgresqlDatabasesRequest request
+        :return: ListPostgresqlDatabasesResponse
+        """
+
+        all_params = ['instance_id', 'page', 'limit', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/database/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListPostgresqlDatabasesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_postgresql_db_user_paginated(self, request):
+        """查询数据库用户列表
+
+        查询数据库用户列表。
+
+        :param ListPostgresqlDbUserPaginatedRequest request
+        :return: ListPostgresqlDbUserPaginatedResponse
+        """
+        return self.list_postgresql_db_user_paginated_with_http_info(request)
+
+    def list_postgresql_db_user_paginated_with_http_info(self, request):
+        """查询数据库用户列表
+
+        查询数据库用户列表。
+
+        :param ListPostgresqlDbUserPaginatedRequest request
+        :return: ListPostgresqlDbUserPaginatedResponse
+        """
+
+        all_params = ['instance_id', 'page', 'limit', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db_user/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListPostgresqlDbUserPaginatedResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def set_postgresql_db_user_pwd(self, request):
+        """重置数据库帐号密码
+
+        重置数据库帐号密码。
+
+        :param SetPostgresqlDbUserPwdRequest request
+        :return: SetPostgresqlDbUserPwdResponse
+        """
+        return self.set_postgresql_db_user_pwd_with_http_info(request)
+
+    def set_postgresql_db_user_pwd_with_http_info(self, request):
+        """重置数据库帐号密码
+
+        重置数据库帐号密码。
+
+        :param SetPostgresqlDbUserPwdRequest request
+        :return: SetPostgresqlDbUserPwdResponse
+        """
+
+        all_params = ['instance_id', 'db_user_pwd_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db_user/resetpwd',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetPostgresqlDbUserPwdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_information_about_database_proxy(self, request):
+        """查询数据库代理信息
+
+        查询数据库代理信息
+
+        :param ShowInformationAboutDatabaseProxyRequest request
+        :return: ShowInformationAboutDatabaseProxyResponse
+        """
+        return self.show_information_about_database_proxy_with_http_info(request)
+
+    def show_information_about_database_proxy_with_http_info(self, request):
+        """查询数据库代理信息
+
+        查询数据库代理信息
+
+        :param ShowInformationAboutDatabaseProxyRequest request
+        :return: ShowInformationAboutDatabaseProxyResponse
+        """
+
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxy',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowInformationAboutDatabaseProxyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def start_database_proxy(self, request):
+        """开启数据库代理
+
+        开启数据库代理
+
+        :param StartDatabaseProxyRequest request
+        :return: StartDatabaseProxyResponse
+        """
+        return self.start_database_proxy_with_http_info(request)
+
+    def start_database_proxy_with_http_info(self, request):
+        """开启数据库代理
+
+        开启数据库代理
+
+        :param StartDatabaseProxyRequest request
+        :return: StartDatabaseProxyResponse
+        """
+
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxy',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartDatabaseProxyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def stop_database_proxy(self, request):
+        """关闭数据库代理
+
+        关闭数据库代理
+
+        :param StopDatabaseProxyRequest request
+        :return: StopDatabaseProxyResponse
+        """
+        return self.stop_database_proxy_with_http_info(request)
+
+    def stop_database_proxy_with_http_info(self, request):
+        """关闭数据库代理
+
+        关闭数据库代理
+
+        :param StopDatabaseProxyRequest request
+        :return: StopDatabaseProxyResponse
+        """
+
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxy',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StopDatabaseProxyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_postgresql_instance_alias(self, request):
+        """修改实例备注信息
+
+        修改实例备注信息。
+
+        :param UpdatePostgresqlInstanceAliasRequest request
+        :return: UpdatePostgresqlInstanceAliasResponse
+        """
+        return self.update_postgresql_instance_alias_with_http_info(request)
+
+    def update_postgresql_instance_alias_with_http_info(self, request):
+        """修改实例备注信息
+
+        修改实例备注信息。
+
+        :param UpdatePostgresqlInstanceAliasRequest request
+        :return: UpdatePostgresqlInstanceAliasResponse
+        """
+
+        all_params = ['instance_id', 'update_rds_instance_alias_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/alias',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdatePostgresqlInstanceAliasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_read_weight(self, request):
+        """修改读写分离权重
+
+        修改读写分离权重
+
+        :param UpdateReadWeightRequest request
+        :return: UpdateReadWeightResponse
+        """
+        return self.update_read_weight_with_http_info(request)
+
+    def update_read_weight_with_http_info(self, request):
+        """修改读写分离权重
+
+        修改读写分离权重
+
+        :param UpdateReadWeightRequest request
+        :return: UpdateReadWeightResponse
+        """
+
+        all_params = ['instance_id', 'modify_proxy_weight_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/weight',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateReadWeightResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

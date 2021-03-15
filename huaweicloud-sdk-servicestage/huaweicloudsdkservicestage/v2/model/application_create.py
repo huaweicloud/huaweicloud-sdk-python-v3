@@ -34,7 +34,7 @@ class ApplicationCreate:
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, name=None, description=None, enterprise_project_id='0'):
+    def __init__(self, name=None, description=None, enterprise_project_id=None):
         """ApplicationCreate - a model defined in huaweicloud sdk"""
         
         

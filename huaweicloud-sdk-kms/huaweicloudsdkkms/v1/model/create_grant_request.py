@@ -32,7 +32,7 @@ class CreateGrantRequest:
         'body': 'body'
     }
 
-    def __init__(self, version_id='v1.0', body=None):
+    def __init__(self, version_id=None, body=None):
         """CreateGrantRequest - a model defined in huaweicloud sdk"""
         
         

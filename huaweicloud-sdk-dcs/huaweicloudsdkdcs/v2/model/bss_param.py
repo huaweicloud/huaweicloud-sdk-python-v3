@@ -38,7 +38,7 @@ class BssParam:
         'period_num': 'period_num'
     }
 
-    def __init__(self, is_auto_renew='false', charging_mode='postPaid', is_auto_pay=None, period_type=None, period_num=None):
+    def __init__(self, is_auto_renew=None, charging_mode=None, is_auto_pay=None, period_type=None, period_num=None):
         """BssParam - a model defined in huaweicloud sdk"""
         
         

@@ -36,7 +36,7 @@ class AddActionReq:
         'batch': 'batch'
     }
 
-    def __init__(self, rule_id=None, channel=None, channel_detail=None, batch=False):
+    def __init__(self, rule_id=None, channel=None, channel_detail=None, batch=None):
         """AddActionReq - a model defined in huaweicloud sdk"""
         
         

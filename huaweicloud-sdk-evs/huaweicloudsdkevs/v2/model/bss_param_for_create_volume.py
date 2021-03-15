@@ -38,7 +38,7 @@ class BssParamForCreateVolume:
         'period_type': 'periodType'
     }
 
-    def __init__(self, charging_mode='postPaid', is_auto_pay='false', is_auto_renew='false', period_num=None, period_type=None):
+    def __init__(self, charging_mode=None, is_auto_pay=None, is_auto_renew=None, period_num=None, period_type=None):
         """BssParamForCreateVolume - a model defined in huaweicloud sdk"""
         
         

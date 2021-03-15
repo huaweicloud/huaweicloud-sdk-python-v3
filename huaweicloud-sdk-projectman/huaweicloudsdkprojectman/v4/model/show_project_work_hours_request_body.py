@@ -28,8 +28,8 @@ class ShowProjectWorkHoursRequestBody:
         'work_hours_dates': 'str',
         'begin_time': 'str',
         'end_time': 'str',
-        'offset': 'str',
-        'limit': 'str'
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class ShowProjectWorkHoursRequestBody:
         'limit': 'limit'
     }
 
-    def __init__(self, user_ids=None, work_hours_types=None, work_hours_dates=None, begin_time=None, end_time=None, offset='0', limit='10'):
+    def __init__(self, user_ids=None, work_hours_types=None, work_hours_dates=None, begin_time=None, end_time=None, offset=None, limit=None):
         """ShowProjectWorkHoursRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -183,10 +183,10 @@ class ShowProjectWorkHoursRequestBody:
     def offset(self):
         """Gets the offset of this ShowProjectWorkHoursRequestBody.
 
-        偏移量
+        偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
         :return: The offset of this ShowProjectWorkHoursRequestBody.
-        :rtype: str
+        :rtype: int
         """
         return self._offset
 
@@ -194,10 +194,10 @@ class ShowProjectWorkHoursRequestBody:
     def offset(self, offset):
         """Sets the offset of this ShowProjectWorkHoursRequestBody.
 
-        偏移量
+        偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
         :param offset: The offset of this ShowProjectWorkHoursRequestBody.
-        :type: str
+        :type: int
         """
         self._offset = offset
 
@@ -208,7 +208,7 @@ class ShowProjectWorkHoursRequestBody:
         每页显示数量，每页最多显示100条
 
         :return: The limit of this ShowProjectWorkHoursRequestBody.
-        :rtype: str
+        :rtype: int
         """
         return self._limit
 
@@ -219,7 +219,7 @@ class ShowProjectWorkHoursRequestBody:
         每页显示数量，每页最多显示100条
 
         :param limit: The limit of this ShowProjectWorkHoursRequestBody.
-        :type: str
+        :type: int
         """
         self._limit = limit
 

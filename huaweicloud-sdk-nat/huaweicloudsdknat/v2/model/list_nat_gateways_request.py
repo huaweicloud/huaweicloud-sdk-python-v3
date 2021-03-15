@@ -52,7 +52,7 @@ class ListNatGatewaysRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, tenant_id=None, id=None, enterprise_project_id=None, description=None, created_at=None, name=None, status=None, spec=None, admin_state_up=None, internal_network_id=None, router_id=None, limit=2000):
+    def __init__(self, tenant_id=None, id=None, enterprise_project_id=None, description=None, created_at=None, name=None, status=None, spec=None, admin_state_up=None, internal_network_id=None, router_id=None, limit=None):
         """ListNatGatewaysRequest - a model defined in huaweicloud sdk"""
         
         

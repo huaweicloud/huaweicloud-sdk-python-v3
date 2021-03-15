@@ -34,7 +34,7 @@ class Thumbnail:
         'params': 'params'
     }
 
-    def __init__(self, tar=1, out=None, params=None):
+    def __init__(self, tar=None, out=None, params=None):
         """Thumbnail - a model defined in huaweicloud sdk"""
         
         

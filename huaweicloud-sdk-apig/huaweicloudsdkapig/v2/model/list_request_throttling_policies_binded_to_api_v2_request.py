@@ -42,7 +42,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Request:
         'limit': 'limit'
     }
 
-    def __init__(self, instance_id=None, api_id=None, throttle_id=None, throttle_name=None, env_id=None, offset=0, limit=20):
+    def __init__(self, instance_id=None, api_id=None, throttle_id=None, throttle_name=None, env_id=None, offset=None, limit=None):
         """ListRequestThrottlingPoliciesBindedToApiV2Request - a model defined in huaweicloud sdk"""
         
         

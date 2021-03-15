@@ -52,7 +52,7 @@ class ListNatGatewaySnatRulesRequest:
         'status': 'status'
     }
 
-    def __init__(self, admin_state_up=None, cidr=None, limit=2000, floating_ip_address=None, floating_ip_id=None, id=None, description=None, created_at=None, nat_gateway_id=None, network_id=None, source_type=0, status=None):
+    def __init__(self, admin_state_up=None, cidr=None, limit=None, floating_ip_address=None, floating_ip_id=None, id=None, description=None, created_at=None, nat_gateway_id=None, network_id=None, source_type=None, status=None):
         """ListNatGatewaySnatRulesRequest - a model defined in huaweicloud sdk"""
         
         

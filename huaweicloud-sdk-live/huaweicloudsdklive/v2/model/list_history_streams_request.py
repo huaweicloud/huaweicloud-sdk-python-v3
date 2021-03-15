@@ -36,7 +36,7 @@ class ListHistoryStreamsRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, domain=None, app=None, offset=0, limit=10):
+    def __init__(self, domain=None, app=None, offset=None, limit=None):
         """ListHistoryStreamsRequest - a model defined in huaweicloud sdk"""
         
         

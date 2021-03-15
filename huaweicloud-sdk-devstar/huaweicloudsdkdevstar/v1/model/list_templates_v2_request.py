@@ -34,7 +34,7 @@ class ListTemplatesV2Request:
         'body': 'body'
     }
 
-    def __init__(self, x_language='zh-cn', action_id=None, body=None):
+    def __init__(self, x_language=None, action_id=None, body=None):
         """ListTemplatesV2Request - a model defined in huaweicloud sdk"""
         
         

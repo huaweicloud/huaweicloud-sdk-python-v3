@@ -197,7 +197,7 @@ class CloudPipelineAsyncClient(Client):
         :return: ListPipleineBuildResultResponse
         """
 
-        all_params = ['start_date', 'end_date', 'offset', 'limit', 'x_language']
+        all_params = ['project_id', 'start_date', 'end_date', 'offset', 'limit', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -208,6 +208,8 @@ class CloudPipelineAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
         if 'start_date' in local_var_params:
             query_params.append(('start_date', local_var_params['start_date']))
         if 'end_date' in local_var_params:

@@ -50,7 +50,7 @@ class QuickImportImageByFileRequestBody:
         'image_tags': 'image_tags'
     }
 
-    def __init__(self, name=None, description=None, os_version=None, image_url=None, min_disk=None, tags=None, type='ECS', enterprise_project_id='0', architecture='x86', os_type=None, image_tags=None):
+    def __init__(self, name=None, description=None, os_version=None, image_url=None, min_disk=None, tags=None, type=None, enterprise_project_id=None, architecture=None, os_type=None, image_tags=None):
         """QuickImportImageByFileRequestBody - a model defined in huaweicloud sdk"""
         
         

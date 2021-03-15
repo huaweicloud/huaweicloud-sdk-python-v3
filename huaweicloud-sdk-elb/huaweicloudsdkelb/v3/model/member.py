@@ -23,103 +23,79 @@ class Member:
     sensitive_list = []
 
     openapi_types = {
-        'address': 'str',
-        'admin_state_up': 'bool',
         'id': 'str',
         'name': 'str',
-        'operating_status': 'str',
         'project_id': 'str',
-        'protocol_port': 'int',
+        'pool_id': 'str',
+        'admin_state_up': 'bool',
         'subnet_cidr_id': 'str',
+        'protocol_port': 'int',
         'weight': 'int',
-        'ip_version': 'str'
+        'address': 'str',
+        'ip_version': 'str',
+        'device_owner': 'str',
+        'device_id': 'str',
+        'operating_status': 'str',
+        'loadbalancer_id': 'str'
     }
 
     attribute_map = {
-        'address': 'address',
-        'admin_state_up': 'admin_state_up',
         'id': 'id',
         'name': 'name',
-        'operating_status': 'operating_status',
         'project_id': 'project_id',
-        'protocol_port': 'protocol_port',
+        'pool_id': 'pool_id',
+        'admin_state_up': 'admin_state_up',
         'subnet_cidr_id': 'subnet_cidr_id',
+        'protocol_port': 'protocol_port',
         'weight': 'weight',
-        'ip_version': 'ip_version'
+        'address': 'address',
+        'ip_version': 'ip_version',
+        'device_owner': 'device_owner',
+        'device_id': 'device_id',
+        'operating_status': 'operating_status',
+        'loadbalancer_id': 'loadbalancer_id'
     }
 
-    def __init__(self, address=None, admin_state_up=None, id=None, name=None, operating_status=None, project_id=None, protocol_port=None, subnet_cidr_id=None, weight=None, ip_version=None):
+    def __init__(self, id=None, name=None, project_id=None, pool_id=None, admin_state_up=None, subnet_cidr_id=None, protocol_port=None, weight=None, address=None, ip_version=None, device_owner=None, device_id=None, operating_status=None, loadbalancer_id=None):
         """Member - a model defined in huaweicloud sdk"""
         
         
 
-        self._address = None
-        self._admin_state_up = None
         self._id = None
         self._name = None
-        self._operating_status = None
         self._project_id = None
-        self._protocol_port = None
+        self._pool_id = None
+        self._admin_state_up = None
         self._subnet_cidr_id = None
+        self._protocol_port = None
         self._weight = None
+        self._address = None
         self._ip_version = None
+        self._device_owner = None
+        self._device_id = None
+        self._operating_status = None
+        self._loadbalancer_id = None
         self.discriminator = None
 
-        self.address = address
-        self.admin_state_up = admin_state_up
         self.id = id
         self.name = name
-        self.operating_status = operating_status
         self.project_id = project_id
-        self.protocol_port = protocol_port
+        if pool_id is not None:
+            self.pool_id = pool_id
+        self.admin_state_up = admin_state_up
         if subnet_cidr_id is not None:
             self.subnet_cidr_id = subnet_cidr_id
+        self.protocol_port = protocol_port
         self.weight = weight
+        self.address = address
         self.ip_version = ip_version
-
-    @property
-    def address(self):
-        """Gets the address of this Member.
-
-        后端云服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中。例如：192.168.3.11。只能指定为主网卡的IP。
-
-        :return: The address of this Member.
-        :rtype: str
-        """
-        return self._address
-
-    @address.setter
-    def address(self, address):
-        """Sets the address of this Member.
-
-        后端云服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中。例如：192.168.3.11。只能指定为主网卡的IP。
-
-        :param address: The address of this Member.
-        :type: str
-        """
-        self._address = address
-
-    @property
-    def admin_state_up(self):
-        """Gets the admin_state_up of this Member.
-
-        后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
-
-        :return: The admin_state_up of this Member.
-        :rtype: bool
-        """
-        return self._admin_state_up
-
-    @admin_state_up.setter
-    def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this Member.
-
-        后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
-
-        :param admin_state_up: The admin_state_up of this Member.
-        :type: bool
-        """
-        self._admin_state_up = admin_state_up
+        if device_owner is not None:
+            self.device_owner = device_owner
+        if device_id is not None:
+            self.device_id = device_id
+        self.operating_status = operating_status
+        if loadbalancer_id is not None:
+            self.loadbalancer_id = loadbalancer_id
 
     @property
     def id(self):
@@ -166,28 +142,6 @@ class Member:
         self._name = name
 
     @property
-    def operating_status(self):
-        """Gets the operating_status of this Member.
-
-        后端云服务器的健康状态，可以为ONLINE，NO_MONITOR，OFFLINE。
-
-        :return: The operating_status of this Member.
-        :rtype: str
-        """
-        return self._operating_status
-
-    @operating_status.setter
-    def operating_status(self, operating_status):
-        """Sets the operating_status of this Member.
-
-        后端云服务器的健康状态，可以为ONLINE，NO_MONITOR，OFFLINE。
-
-        :param operating_status: The operating_status of this Member.
-        :type: str
-        """
-        self._operating_status = operating_status
-
-    @property
     def project_id(self):
         """Gets the project_id of this Member.
 
@@ -210,26 +164,48 @@ class Member:
         self._project_id = project_id
 
     @property
-    def protocol_port(self):
-        """Gets the protocol_port of this Member.
+    def pool_id(self):
+        """Gets the pool_id of this Member.
 
-        后端端口和协议号
+        所属服务器组ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
 
-        :return: The protocol_port of this Member.
-        :rtype: int
+        :return: The pool_id of this Member.
+        :rtype: str
         """
-        return self._protocol_port
+        return self._pool_id
 
-    @protocol_port.setter
-    def protocol_port(self, protocol_port):
-        """Sets the protocol_port of this Member.
+    @pool_id.setter
+    def pool_id(self, pool_id):
+        """Sets the pool_id of this Member.
 
-        后端端口和协议号
+        所属服务器组ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
 
-        :param protocol_port: The protocol_port of this Member.
-        :type: int
+        :param pool_id: The pool_id of this Member.
+        :type: str
         """
-        self._protocol_port = protocol_port
+        self._pool_id = pool_id
+
+    @property
+    def admin_state_up(self):
+        """Gets the admin_state_up of this Member.
+
+        后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+
+        :return: The admin_state_up of this Member.
+        :rtype: bool
+        """
+        return self._admin_state_up
+
+    @admin_state_up.setter
+    def admin_state_up(self, admin_state_up):
+        """Sets the admin_state_up of this Member.
+
+        后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+
+        :param admin_state_up: The admin_state_up of this Member.
+        :type: bool
+        """
+        self._admin_state_up = admin_state_up
 
     @property
     def subnet_cidr_id(self):
@@ -254,6 +230,28 @@ class Member:
         self._subnet_cidr_id = subnet_cidr_id
 
     @property
+    def protocol_port(self):
+        """Gets the protocol_port of this Member.
+
+        后端服务器端口号
+
+        :return: The protocol_port of this Member.
+        :rtype: int
+        """
+        return self._protocol_port
+
+    @protocol_port.setter
+    def protocol_port(self, protocol_port):
+        """Sets the protocol_port of this Member.
+
+        后端服务器端口号
+
+        :param protocol_port: The protocol_port of this Member.
+        :type: int
+        """
+        self._protocol_port = protocol_port
+
+    @property
     def weight(self):
         """Gets the weight of this Member.
 
@@ -276,6 +274,28 @@ class Member:
         self._weight = weight
 
     @property
+    def address(self):
+        """Gets the address of this Member.
+
+        后端云服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中。例如：192.168.3.11。只能指定为主网卡的IP。
+
+        :return: The address of this Member.
+        :rtype: str
+        """
+        return self._address
+
+    @address.setter
+    def address(self, address):
+        """Sets the address of this Member.
+
+        后端云服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中。例如：192.168.3.11。只能指定为主网卡的IP。
+
+        :param address: The address of this Member.
+        :type: str
+        """
+        self._address = address
+
+    @property
     def ip_version(self):
         """Gets the ip_version of this Member.
 
@@ -296,6 +316,94 @@ class Member:
         :type: str
         """
         self._ip_version = ip_version
+
+    @property
+    def device_owner(self):
+        """Gets the device_owner of this Member.
+
+        设备使用者，为空表示后端服务器未关联到ECS。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+
+        :return: The device_owner of this Member.
+        :rtype: str
+        """
+        return self._device_owner
+
+    @device_owner.setter
+    def device_owner(self, device_owner):
+        """Sets the device_owner of this Member.
+
+        设备使用者，为空表示后端服务器未关联到ECS。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+
+        :param device_owner: The device_owner of this Member.
+        :type: str
+        """
+        self._device_owner = device_owner
+
+    @property
+    def device_id(self):
+        """Gets the device_id of this Member.
+
+        关联的ECS ID，为空表示后端服务器未关联到ECS。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+
+        :return: The device_id of this Member.
+        :rtype: str
+        """
+        return self._device_id
+
+    @device_id.setter
+    def device_id(self, device_id):
+        """Sets the device_id of this Member.
+
+        关联的ECS ID，为空表示后端服务器未关联到ECS。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+
+        :param device_id: The device_id of this Member.
+        :type: str
+        """
+        self._device_id = device_id
+
+    @property
+    def operating_status(self):
+        """Gets the operating_status of this Member.
+
+        后端云服务器的健康状态，可以为ONLINE，NO_MONITOR，OFFLINE。
+
+        :return: The operating_status of this Member.
+        :rtype: str
+        """
+        return self._operating_status
+
+    @operating_status.setter
+    def operating_status(self, operating_status):
+        """Sets the operating_status of this Member.
+
+        后端云服务器的健康状态，可以为ONLINE，NO_MONITOR，OFFLINE。
+
+        :param operating_status: The operating_status of this Member.
+        :type: str
+        """
+        self._operating_status = operating_status
+
+    @property
+    def loadbalancer_id(self):
+        """Gets the loadbalancer_id of this Member.
+
+        所属负载均衡器ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+
+        :return: The loadbalancer_id of this Member.
+        :rtype: str
+        """
+        return self._loadbalancer_id
+
+    @loadbalancer_id.setter
+    def loadbalancer_id(self, loadbalancer_id):
+        """Sets the loadbalancer_id of this Member.
+
+        所属负载均衡器ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+
+        :param loadbalancer_id: The loadbalancer_id of this Member.
+        :type: str
+        """
+        self._loadbalancer_id = loadbalancer_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

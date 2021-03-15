@@ -36,7 +36,7 @@ class ListCountiesRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, x_language='zh_cn', city_code=None, offset=None, limit=10):
+    def __init__(self, x_language=None, city_code=None, offset=None, limit=None):
         """ListCountiesRequest - a model defined in huaweicloud sdk"""
         
         

@@ -48,7 +48,7 @@ class QuerySubCustomerListReq:
         'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, account_name=None, customer=None, offset=0, limit=10, label=None, association_type=None, associated_on_begin=None, associated_on_end=None, customer_id=None, indirect_partner_id=None):
+    def __init__(self, account_name=None, customer=None, offset=None, limit=None, label=None, association_type=None, associated_on_begin=None, associated_on_end=None, customer_id=None, indirect_partner_id=None):
         """QuerySubCustomerListReq - a model defined in huaweicloud sdk"""
         
         

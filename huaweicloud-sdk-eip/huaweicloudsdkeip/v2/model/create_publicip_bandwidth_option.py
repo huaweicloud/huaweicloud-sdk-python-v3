@@ -38,7 +38,7 @@ class CreatePublicipBandwidthOption:
         'size': 'size'
     }
 
-    def __init__(self, charge_mode='bandwidth', id=None, name=None, share_type=None, size=None):
+    def __init__(self, charge_mode=None, id=None, name=None, share_type=None, size=None):
         """CreatePublicipBandwidthOption - a model defined in huaweicloud sdk"""
         
         

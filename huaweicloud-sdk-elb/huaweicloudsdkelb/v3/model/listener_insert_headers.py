@@ -36,7 +36,7 @@ class ListenerInsertHeaders:
         'x_forwarded_host': 'X-Forwarded-Host'
     }
 
-    def __init__(self, x_forwarded_elb_ip=False, x_forwarded_port=False, x_forwarded_for_port=False, x_forwarded_host=True):
+    def __init__(self, x_forwarded_elb_ip=None, x_forwarded_port=None, x_forwarded_for_port=None, x_forwarded_host=None):
         """ListenerInsertHeaders - a model defined in huaweicloud sdk"""
         
         

@@ -36,7 +36,7 @@ class ListSubnetsRequest:
         'scope': 'scope'
     }
 
-    def __init__(self, limit=2000, marker=None, vpc_id=None, scope=None):
+    def __init__(self, limit=None, marker=None, vpc_id=None, scope=None):
         """ListSubnetsRequest - a model defined in huaweicloud sdk"""
         
         

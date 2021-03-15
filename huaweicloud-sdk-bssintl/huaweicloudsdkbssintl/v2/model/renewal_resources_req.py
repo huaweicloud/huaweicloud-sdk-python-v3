@@ -38,7 +38,7 @@ class RenewalResourcesReq:
         'is_auto_pay': 'is_auto_pay'
     }
 
-    def __init__(self, resource_ids=None, period_type=None, period_num=None, expire_policy=None, is_auto_pay=0):
+    def __init__(self, resource_ids=None, period_type=None, period_num=None, expire_policy=None, is_auto_pay=None):
         """RenewalResourcesReq - a model defined in huaweicloud sdk"""
         
         

@@ -42,7 +42,7 @@ class SlaveRegister:
         'owner_type': 'owner_type'
     }
 
-    def __init__(self, cluster_id=None, slave_name=None, work_dir=None, label=None, version=None, retry=False, owner_type='customer'):
+    def __init__(self, cluster_id=None, slave_name=None, work_dir=None, label=None, version=None, retry=None, owner_type=None):
         """SlaveRegister - a model defined in huaweicloud sdk"""
         
         

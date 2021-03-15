@@ -34,7 +34,7 @@ class Encryption:
         'preview_duration': 'preview_duration'
     }
 
-    def __init__(self, hls_encrypt=None, multidrm=None, preview_duration=0):
+    def __init__(self, hls_encrypt=None, multidrm=None, preview_duration=None):
         """Encryption - a model defined in huaweicloud sdk"""
         
         

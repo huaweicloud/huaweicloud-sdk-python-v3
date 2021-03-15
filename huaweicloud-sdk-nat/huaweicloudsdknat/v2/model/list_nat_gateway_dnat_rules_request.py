@@ -56,7 +56,7 @@ class ListNatGatewayDnatRulesRequest:
         'protocol': 'protocol'
     }
 
-    def __init__(self, admin_state_up=None, external_service_port=None, floating_ip_address=None, status=None, floating_ip_id=None, internal_service_port=None, limit=2000, id=None, description=None, created_at=None, nat_gateway_id=None, port_id=None, private_ip=None, protocol=None):
+    def __init__(self, admin_state_up=None, external_service_port=None, floating_ip_address=None, status=None, floating_ip_id=None, internal_service_port=None, limit=None, id=None, description=None, created_at=None, nat_gateway_id=None, port_id=None, private_ip=None, protocol=None):
         """ListNatGatewayDnatRulesRequest - a model defined in huaweicloud sdk"""
         
         

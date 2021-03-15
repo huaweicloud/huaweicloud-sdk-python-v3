@@ -30,7 +30,7 @@ class ShowVersionRequest:
         'version_id': 'version_id'
     }
 
-    def __init__(self, version_id='v1.0'):
+    def __init__(self, version_id=None):
         """ShowVersionRequest - a model defined in huaweicloud sdk"""
         
         

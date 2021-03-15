@@ -40,7 +40,7 @@ class AnimatedGraphicsOutputParam:
         'frame_rate': 'frame_rate'
     }
 
-    def __init__(self, format=None, width=None, height=None, start=None, end=None, frame_rate=15):
+    def __init__(self, format=None, width=None, height=None, start=None, end=None, frame_rate=None):
         """AnimatedGraphicsOutputParam - a model defined in huaweicloud sdk"""
         
         

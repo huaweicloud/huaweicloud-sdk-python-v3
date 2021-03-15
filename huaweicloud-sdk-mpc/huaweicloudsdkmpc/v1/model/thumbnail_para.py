@@ -34,7 +34,8 @@ class ThumbnailPara:
         'aspect_ratio': 'int',
         'width': 'int',
         'height': 'int',
-        'max_length': 'int'
+        'max_length': 'int',
+        'frame_type': 'str'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class ThumbnailPara:
         'aspect_ratio': 'aspect_ratio',
         'width': 'width',
         'height': 'height',
-        'max_length': 'max_length'
+        'max_length': 'max_length',
+        'frame_type': 'frame_type'
     }
 
-    def __init__(self, type='TIME', percent=None, time=12, start_time=0, duration=None, dots=None, output_filename=None, format=1, aspect_ratio=0, width=None, height=None, max_length=480):
+    def __init__(self, type=None, percent=None, time=None, start_time=None, duration=None, dots=None, output_filename=None, format=None, aspect_ratio=None, width=None, height=None, max_length=None, frame_type=None):
         """ThumbnailPara - a model defined in huaweicloud sdk"""
         
         
@@ -69,6 +71,7 @@ class ThumbnailPara:
         self._width = None
         self._height = None
         self._max_length = None
+        self._frame_type = None
         self.discriminator = None
 
         if type is not None:
@@ -95,6 +98,8 @@ class ThumbnailPara:
             self.height = height
         if max_length is not None:
             self.max_length = max_length
+        if frame_type is not None:
+            self.frame_type = frame_type
 
     @property
     def type(self):
@@ -359,6 +364,28 @@ class ThumbnailPara:
         :type: int
         """
         self._max_length = max_length
+
+    @property
+    def frame_type(self):
+        """Gets the frame_type of this ThumbnailPara.
+
+        截图的帧类型 
+
+        :return: The frame_type of this ThumbnailPara.
+        :rtype: str
+        """
+        return self._frame_type
+
+    @frame_type.setter
+    def frame_type(self, frame_type):
+        """Sets the frame_type of this ThumbnailPara.
+
+        截图的帧类型 
+
+        :param frame_type: The frame_type of this ThumbnailPara.
+        :type: str
+        """
+        self._frame_type = frame_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

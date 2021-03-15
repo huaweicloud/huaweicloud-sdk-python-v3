@@ -30,7 +30,7 @@ class DigitalWatermark:
         'profile': 'profile'
     }
 
-    def __init__(self, profile='MEDIUM'):
+    def __init__(self, profile=None):
         """DigitalWatermark - a model defined in huaweicloud sdk"""
         
         

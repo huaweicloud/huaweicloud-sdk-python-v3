@@ -40,7 +40,7 @@ class NeutronUpdateFirewallGroupOption:
         'ports': 'ports'
     }
 
-    def __init__(self, admin_state_up=True, description=None, egress_firewall_policy_id=None, ingress_firewall_policy_id=None, name=None, ports=None):
+    def __init__(self, admin_state_up=None, description=None, egress_firewall_policy_id=None, ingress_firewall_policy_id=None, name=None, ports=None):
         """NeutronUpdateFirewallGroupOption - a model defined in huaweicloud sdk"""
         
         

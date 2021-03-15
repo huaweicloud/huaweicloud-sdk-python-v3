@@ -30,7 +30,7 @@ class UserFunctionDTO:
         'enable_room': 'enableRoom'
     }
 
-    def __init__(self, enable_room=False):
+    def __init__(self, enable_room=None):
         """UserFunctionDTO - a model defined in huaweicloud sdk"""
         
         

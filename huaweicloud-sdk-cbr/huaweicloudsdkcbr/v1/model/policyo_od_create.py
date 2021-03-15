@@ -48,7 +48,7 @@ class PolicyoODCreate:
         'year_backups': 'year_backups'
     }
 
-    def __init__(self, day_backups=None, destination_project_id=None, destination_region=None, enable_acceleration=None, max_backups=-1, month_backups=None, retention_duration_days=-1, timezone=None, week_backups=None, year_backups=None):
+    def __init__(self, day_backups=None, destination_project_id=None, destination_region=None, enable_acceleration=None, max_backups=None, month_backups=None, retention_duration_days=None, timezone=None, week_backups=None, year_backups=None):
         """PolicyoODCreate - a model defined in huaweicloud sdk"""
         
         

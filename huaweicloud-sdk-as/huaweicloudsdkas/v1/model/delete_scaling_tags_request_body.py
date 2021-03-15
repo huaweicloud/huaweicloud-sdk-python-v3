@@ -32,7 +32,7 @@ class DeleteScalingTagsRequestBody:
         'action': 'action'
     }
 
-    def __init__(self, tags=None, action='delete'):
+    def __init__(self, tags=None, action=None):
         """DeleteScalingTagsRequestBody - a model defined in huaweicloud sdk"""
         
         

@@ -40,7 +40,7 @@ class Disk:
         'snapshot_id': 'snapshot_id'
     }
 
-    def __init__(self, size=None, volume_type='SATA', disk_type='SYS', dedicate_storage_id=None, data_disk_image_id=None, snapshot_id=None):
+    def __init__(self, size=None, volume_type=None, disk_type=None, dedicate_storage_id=None, data_disk_image_id=None, snapshot_id=None):
         """Disk - a model defined in huaweicloud sdk"""
         
         

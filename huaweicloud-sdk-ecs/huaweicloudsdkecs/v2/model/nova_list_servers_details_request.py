@@ -54,7 +54,7 @@ class NovaListServersDetailsRequest:
         'open_stack_api_version': 'OpenStack-API-Version'
     }
 
-    def __init__(self, changes_since=None, flavor=None, image=None, ip=None, limit=25, marker=None, name=None, not_tags=None, reservation_id=None, sort_key='created_at', status=None, tags=None, open_stack_api_version=None):
+    def __init__(self, changes_since=None, flavor=None, image=None, ip=None, limit=None, marker=None, name=None, not_tags=None, reservation_id=None, sort_key=None, status=None, tags=None, open_stack_api_version=None):
         """NovaListServersDetailsRequest - a model defined in huaweicloud sdk"""
         
         

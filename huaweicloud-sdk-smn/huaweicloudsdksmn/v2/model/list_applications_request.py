@@ -36,7 +36,7 @@ class ListApplicationsRequest:
         'platform': 'platform'
     }
 
-    def __init__(self, offset=0, limit=100, name=None, platform=None):
+    def __init__(self, offset=None, limit=None, name=None, platform=None):
         """ListApplicationsRequest - a model defined in huaweicloud sdk"""
         
         

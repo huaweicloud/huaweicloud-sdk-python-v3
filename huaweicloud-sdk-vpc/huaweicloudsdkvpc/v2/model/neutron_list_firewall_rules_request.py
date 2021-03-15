@@ -42,7 +42,7 @@ class NeutronListFirewallRulesRequest:
         'tenant_id': 'tenant_id'
     }
 
-    def __init__(self, marker=None, limit=2000, id=None, name=None, description=None, action=None, tenant_id=None):
+    def __init__(self, marker=None, limit=None, id=None, name=None, description=None, action=None, tenant_id=None):
         """NeutronListFirewallRulesRequest - a model defined in huaweicloud sdk"""
         
         

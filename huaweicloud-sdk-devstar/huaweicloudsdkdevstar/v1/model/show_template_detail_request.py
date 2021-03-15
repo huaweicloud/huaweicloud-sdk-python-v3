@@ -32,7 +32,7 @@ class ShowTemplateDetailRequest:
         'template_id': 'template_id'
     }
 
-    def __init__(self, x_language='zh-cn', template_id=None):
+    def __init__(self, x_language=None, template_id=None):
         """ShowTemplateDetailRequest - a model defined in huaweicloud sdk"""
         
         

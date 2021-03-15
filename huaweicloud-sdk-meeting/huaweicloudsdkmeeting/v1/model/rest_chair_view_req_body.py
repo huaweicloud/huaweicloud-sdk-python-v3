@@ -36,7 +36,7 @@ class RestChairViewReqBody:
         'status': 'status'
     }
 
-    def __init__(self, view_type=None, participant_id=None, switch_time=30, status=0):
+    def __init__(self, view_type=None, participant_id=None, switch_time=None, status=None):
         """RestChairViewReqBody - a model defined in huaweicloud sdk"""
         
         

@@ -38,7 +38,7 @@ class CountPreoccupyIpNumRequest:
         'loadbalancer_id': 'loadbalancer_id'
     }
 
-    def __init__(self, availability_zone_id=None, ip_target_enable=False, ip_version=None, l7_flavor_id=None, loadbalancer_id=None):
+    def __init__(self, availability_zone_id=None, ip_target_enable=None, ip_version=None, l7_flavor_id=None, loadbalancer_id=None):
         """CountPreoccupyIpNumRequest - a model defined in huaweicloud sdk"""
         
         

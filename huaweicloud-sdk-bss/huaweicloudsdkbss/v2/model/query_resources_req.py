@@ -40,7 +40,7 @@ class QueryResourcesReq:
         'limit': 'limit'
     }
 
-    def __init__(self, resource_ids=None, order_id=None, only_main_resource=0, status_list=None, offset=None, limit=None):
+    def __init__(self, resource_ids=None, order_id=None, only_main_resource=None, status_list=None, offset=None, limit=None):
         """QueryResourcesReq - a model defined in huaweicloud sdk"""
         
         

@@ -34,7 +34,7 @@ class BatchCreateKmsTagsRequest:
         'body': 'body'
     }
 
-    def __init__(self, key_id=None, version_id='v1.0', body=None):
+    def __init__(self, key_id=None, version_id=None, body=None):
         """BatchCreateKmsTagsRequest - a model defined in huaweicloud sdk"""
         
         

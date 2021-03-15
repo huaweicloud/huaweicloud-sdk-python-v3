@@ -40,7 +40,7 @@ class ListStreamForbiddenRequest:
         'size': 'size'
     }
 
-    def __init__(self, specify_project=None, domain=None, app_name=None, stream_name=None, page=0, size=10):
+    def __init__(self, specify_project=None, domain=None, app_name=None, stream_name=None, page=None, size=None):
         """ListStreamForbiddenRequest - a model defined in huaweicloud sdk"""
         
         

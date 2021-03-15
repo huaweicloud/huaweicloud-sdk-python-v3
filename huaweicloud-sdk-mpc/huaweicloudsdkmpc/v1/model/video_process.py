@@ -36,7 +36,7 @@ class VideoProcess:
         'upsample': 'upsample'
     }
 
-    def __init__(self, rotate=None, black_enhance=None, adaptation='SHORT', upsample=0):
+    def __init__(self, rotate=None, black_enhance=None, adaptation=None, upsample=None):
         """VideoProcess - a model defined in huaweicloud sdk"""
         
         

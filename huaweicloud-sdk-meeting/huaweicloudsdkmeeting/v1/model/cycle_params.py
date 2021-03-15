@@ -40,7 +40,7 @@ class CycleParams:
         'pre_remind_days': 'preRemindDays'
     }
 
-    def __init__(self, start_date=None, end_date=None, cycle=None, interval=None, point=None, pre_remind_days=1):
+    def __init__(self, start_date=None, end_date=None, cycle=None, interval=None, point=None, pre_remind_days=None):
         """CycleParams - a model defined in huaweicloud sdk"""
         
         

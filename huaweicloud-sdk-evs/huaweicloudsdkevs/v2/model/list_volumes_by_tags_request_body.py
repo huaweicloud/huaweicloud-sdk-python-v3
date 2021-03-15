@@ -38,7 +38,7 @@ class ListVolumesByTagsRequestBody:
         'tags': 'tags'
     }
 
-    def __init__(self, action='filter', limit=1000, matches=None, offset=0, tags=None):
+    def __init__(self, action=None, limit=None, matches=None, offset=None, tags=None):
         """ListVolumesByTagsRequestBody - a model defined in huaweicloud sdk"""
         
         

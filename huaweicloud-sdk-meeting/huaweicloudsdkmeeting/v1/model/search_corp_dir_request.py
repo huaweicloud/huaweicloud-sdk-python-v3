@@ -44,7 +44,7 @@ class SearchCorpDirRequest:
         'search_scope': 'searchScope'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, offset=0, limit=100, search_key=None, dept_code=None, query_sub_dept=True, search_scope='ALL'):
+    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, dept_code=None, query_sub_dept=None, search_scope=None):
         """SearchCorpDirRequest - a model defined in huaweicloud sdk"""
         
         

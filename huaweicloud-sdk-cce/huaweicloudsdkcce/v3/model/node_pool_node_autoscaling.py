@@ -38,7 +38,7 @@ class NodePoolNodeAutoscaling:
         'scale_down_cooldown_time': 'scaleDownCooldownTime'
     }
 
-    def __init__(self, enable=False, max_node_count=None, min_node_count=None, priority=None, scale_down_cooldown_time=None):
+    def __init__(self, enable=None, max_node_count=None, min_node_count=None, priority=None, scale_down_cooldown_time=None):
         """NodePoolNodeAutoscaling - a model defined in huaweicloud sdk"""
         
         

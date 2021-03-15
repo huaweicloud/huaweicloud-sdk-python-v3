@@ -36,7 +36,7 @@ class SendSmVerificationCodeReq:
         'sm_template_args': 'sm_template_args'
     }
 
-    def __init__(self, mobile_phone=None, timeout=10, language=None, sm_template_args=None):
+    def __init__(self, mobile_phone=None, timeout=None, language=None, sm_template_args=None):
         """SendSmVerificationCodeReq - a model defined in huaweicloud sdk"""
         
         

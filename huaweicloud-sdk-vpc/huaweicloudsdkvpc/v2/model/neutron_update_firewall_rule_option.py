@@ -48,7 +48,7 @@ class NeutronUpdateFirewallRuleOption:
         'source_port': 'source_port'
     }
 
-    def __init__(self, action='DENY', description=None, destination_ip_address=None, destination_port=None, enabled=True, ip_version=4, name=None, protocol=None, source_ip_address=None, source_port=None):
+    def __init__(self, action=None, description=None, destination_ip_address=None, destination_port=None, enabled=None, ip_version=None, name=None, protocol=None, source_ip_address=None, source_port=None):
         """NeutronUpdateFirewallRuleOption - a model defined in huaweicloud sdk"""
         
         

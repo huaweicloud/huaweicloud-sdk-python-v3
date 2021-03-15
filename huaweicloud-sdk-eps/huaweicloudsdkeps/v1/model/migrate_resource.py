@@ -36,7 +36,7 @@ class MigrateResource:
         'associated': 'associated'
     }
 
-    def __init__(self, project_id=None, resource_id=None, resource_type=None, associated=False):
+    def __init__(self, project_id=None, resource_id=None, resource_type=None, associated=None):
         """MigrateResource - a model defined in huaweicloud sdk"""
         
         

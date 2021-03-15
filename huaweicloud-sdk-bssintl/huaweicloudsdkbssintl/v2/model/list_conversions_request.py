@@ -32,7 +32,7 @@ class ListConversionsRequest:
         'measure_type': 'measure_type'
     }
 
-    def __init__(self, x_language='zh_cn', measure_type=None):
+    def __init__(self, x_language=None, measure_type=None):
         """ListConversionsRequest - a model defined in huaweicloud sdk"""
         
         

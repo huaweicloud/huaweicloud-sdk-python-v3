@@ -48,7 +48,7 @@ class SearchHisMeetingsRequest:
         'x_site_id': 'X-Site-Id'
     }
 
-    def __init__(self, user_uuid=None, offset=0, limit=20, search_key=None, query_all=False, start_date=None, end_date=None, sort_type=None, x_authorization_type=None, x_site_id=None):
+    def __init__(self, user_uuid=None, offset=None, limit=None, search_key=None, query_all=None, start_date=None, end_date=None, sort_type=None, x_authorization_type=None, x_site_id=None):
         """SearchHisMeetingsRequest - a model defined in huaweicloud sdk"""
         
         

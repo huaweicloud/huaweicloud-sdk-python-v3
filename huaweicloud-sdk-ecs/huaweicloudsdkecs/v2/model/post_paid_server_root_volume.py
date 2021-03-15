@@ -40,7 +40,7 @@ class PostPaidServerRootVolume:
         'extendparam': 'extendparam'
     }
 
-    def __init__(self, volumetype=None, size=None, hwpassthrough=False, cluster_type=None, cluster_id=None, extendparam=None):
+    def __init__(self, volumetype=None, size=None, hwpassthrough=None, cluster_type=None, cluster_id=None, extendparam=None):
         """PostPaidServerRootVolume - a model defined in huaweicloud sdk"""
         
         

@@ -52,7 +52,7 @@ class ListDevicesRequest:
         'app_id': 'app_id'
     }
 
-    def __init__(self, instance_id=None, product_id=None, gateway_id=None, is_cascade_query=False, node_id=None, device_name=None, limit=10, marker='ffffffffffffffffffffffff', offset=0, start_time=None, end_time=None, app_id=None):
+    def __init__(self, instance_id=None, product_id=None, gateway_id=None, is_cascade_query=None, node_id=None, device_name=None, limit=None, marker=None, offset=None, start_time=None, end_time=None, app_id=None):
         """ListDevicesRequest - a model defined in huaweicloud sdk"""
         
         

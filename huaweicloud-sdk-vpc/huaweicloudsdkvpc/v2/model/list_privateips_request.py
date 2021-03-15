@@ -34,7 +34,7 @@ class ListPrivateipsRequest:
         'marker': 'marker'
     }
 
-    def __init__(self, subnet_id=None, limit=2000, marker=None):
+    def __init__(self, subnet_id=None, limit=None, marker=None):
         """ListPrivateipsRequest - a model defined in huaweicloud sdk"""
         
         

@@ -36,7 +36,7 @@ class ShowTemplateFileRequest:
         'type': 'type'
     }
 
-    def __init__(self, x_language='zh-cn', template_id=None, file_path=None, type='source-package'):
+    def __init__(self, x_language=None, template_id=None, file_path=None, type=None):
         """ShowTemplateFileRequest - a model defined in huaweicloud sdk"""
         
         

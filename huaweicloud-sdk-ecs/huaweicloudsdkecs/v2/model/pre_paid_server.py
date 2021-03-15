@@ -72,7 +72,7 @@ class PrePaidServer:
         'description': 'description'
     }
 
-    def __init__(self, auto_terminate_time=None, image_ref=None, flavor_ref=None, name=None, user_data=None, admin_pass=None, key_name=None, vpcid=None, nics=None, publicip=None, count=1, is_auto_rename=None, root_volume=None, data_volumes=None, security_groups=None, availability_zone=None, extendparam=None, metadata=None, osscheduler_hints=None, tags=None, server_tags=None, description=None):
+    def __init__(self, auto_terminate_time=None, image_ref=None, flavor_ref=None, name=None, user_data=None, admin_pass=None, key_name=None, vpcid=None, nics=None, publicip=None, count=None, is_auto_rename=None, root_volume=None, data_volumes=None, security_groups=None, availability_zone=None, extendparam=None, metadata=None, osscheduler_hints=None, tags=None, server_tags=None, description=None):
         """PrePaidServer - a model defined in huaweicloud sdk"""
         
         

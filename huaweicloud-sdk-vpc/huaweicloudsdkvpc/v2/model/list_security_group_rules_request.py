@@ -34,7 +34,7 @@ class ListSecurityGroupRulesRequest:
         'security_group_id': 'security_group_id'
     }
 
-    def __init__(self, marker=None, limit=2000, security_group_id=None):
+    def __init__(self, marker=None, limit=None, security_group_id=None):
         """ListSecurityGroupRulesRequest - a model defined in huaweicloud sdk"""
         
         

@@ -38,7 +38,7 @@ class ListLiveStreamsOnlineRequest:
         'stream': 'stream'
     }
 
-    def __init__(self, publish_domain=None, app=None, offset=None, limit=10, stream=None):
+    def __init__(self, publish_domain=None, app=None, offset=None, limit=None, stream=None):
         """ListLiveStreamsOnlineRequest - a model defined in huaweicloud sdk"""
         
         

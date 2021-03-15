@@ -46,7 +46,7 @@ class CreateCertificateOption:
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, admin_state_up=True, certificate=None, description=None, domain='""', name=None, private_key=None, project_id=None, type=None, enterprise_project_id=None):
+    def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, name=None, private_key=None, project_id=None, type=None, enterprise_project_id=None):
         """CreateCertificateOption - a model defined in huaweicloud sdk"""
         
         

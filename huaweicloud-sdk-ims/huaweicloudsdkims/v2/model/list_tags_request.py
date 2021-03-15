@@ -58,7 +58,7 @@ class ListTagsRequest:
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, limit=None, page=1, imagetype=None, id=None, status=None, name=None, min_disk=None, platform=None, os_type=None, member_status=None, virtual_env_type=None, enterprise_project_id=None, architecture=None, created_at=None, updated_at=None):
+    def __init__(self, limit=None, page=None, imagetype=None, id=None, status=None, name=None, min_disk=None, platform=None, os_type=None, member_status=None, virtual_env_type=None, enterprise_project_id=None, architecture=None, created_at=None, updated_at=None):
         """ListTagsRequest - a model defined in huaweicloud sdk"""
         
         

@@ -56,7 +56,7 @@ class ListIssuedPartnerCouponsRequest:
         'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, coupon_id=None, customer_id=None, order_id=None, coupon_type=None, status=None, create_time_begin=None, create_time_end=None, effective_time_begin=None, effective_time_end=None, expire_time_begin=None, expire_time_end=None, offset=0, limit=10, indirect_partner_id=None):
+    def __init__(self, coupon_id=None, customer_id=None, order_id=None, coupon_type=None, status=None, create_time_begin=None, create_time_end=None, effective_time_begin=None, effective_time_end=None, expire_time_begin=None, expire_time_end=None, offset=None, limit=None, indirect_partner_id=None):
         """ListIssuedPartnerCouponsRequest - a model defined in huaweicloud sdk"""
         
         

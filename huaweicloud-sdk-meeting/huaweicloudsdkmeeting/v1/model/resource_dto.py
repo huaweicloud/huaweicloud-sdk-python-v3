@@ -40,7 +40,7 @@ class ResourceDTO:
         'editable': 'editable'
     }
 
-    def __init__(self, id=None, type=None, type_id=None, count=None, expire_date=None, editable=True):
+    def __init__(self, id=None, type=None, type_id=None, count=None, expire_date=None, editable=None):
         """ResourceDTO - a model defined in huaweicloud sdk"""
         
         

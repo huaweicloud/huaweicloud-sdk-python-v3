@@ -38,7 +38,7 @@ class IdentityAssumerole:
         'session_user': 'session_user'
     }
 
-    def __init__(self, agency_name=None, domain_id=None, domain_name=None, duration_seconds=900, session_user=None):
+    def __init__(self, agency_name=None, domain_id=None, domain_name=None, duration_seconds=None, session_user=None):
         """IdentityAssumerole - a model defined in huaweicloud sdk"""
         
         

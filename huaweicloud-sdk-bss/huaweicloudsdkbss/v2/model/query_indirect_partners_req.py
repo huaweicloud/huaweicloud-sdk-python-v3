@@ -40,7 +40,7 @@ class QueryIndirectPartnersReq:
         'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, account_name=None, associated_on_begin=None, associated_on_end=None, offset=0, limit=10, indirect_partner_id=None):
+    def __init__(self, account_name=None, associated_on_begin=None, associated_on_end=None, offset=None, limit=None, indirect_partner_id=None):
         """QueryIndirectPartnersReq - a model defined in huaweicloud sdk"""
         
         

@@ -32,7 +32,7 @@ class ListEnterpriseOrganizationsRequest:
         'parent_id': 'parent_id'
     }
 
-    def __init__(self, recursive_query=0, parent_id=None):
+    def __init__(self, recursive_query=None, parent_id=None):
         """ListEnterpriseOrganizationsRequest - a model defined in huaweicloud sdk"""
         
         

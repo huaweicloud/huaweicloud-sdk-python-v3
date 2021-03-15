@@ -30,7 +30,7 @@ class AuthOpt:
         'app_code_auth_type': 'app_code_auth_type'
     }
 
-    def __init__(self, app_code_auth_type='DISABLE'):
+    def __init__(self, app_code_auth_type=None):
         """AuthOpt - a model defined in huaweicloud sdk"""
         
         

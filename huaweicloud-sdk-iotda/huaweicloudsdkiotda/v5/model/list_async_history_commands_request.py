@@ -48,7 +48,7 @@ class ListAsyncHistoryCommandsRequest:
         'command_name': 'command_name'
     }
 
-    def __init__(self, device_id=None, instance_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0, start_time=None, end_time=None, status=None, command_id=None, command_name=None):
+    def __init__(self, device_id=None, instance_id=None, limit=None, marker=None, offset=None, start_time=None, end_time=None, status=None, command_id=None, command_name=None):
         """ListAsyncHistoryCommandsRequest - a model defined in huaweicloud sdk"""
         
         

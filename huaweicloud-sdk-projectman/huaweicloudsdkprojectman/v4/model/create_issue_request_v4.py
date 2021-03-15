@@ -232,7 +232,7 @@ class CreateIssueRequestV4:
     def domain_id(self):
         """Gets the domain_id of this CreateIssueRequestV4.
 
-        领域id 14, '性能', 15, '功能', 16, '可靠性' 17, '网络安全' 18, '可维护性' 19, '其他DFX' 20, '可用性'
+        id 领域, 14 '性能', 15 '功能', 16 '可靠性' 17 '网络安全' 18 '可维护性' 19 '其他DFX' 20 '可用性'
 
         :return: The domain_id of this CreateIssueRequestV4.
         :rtype: int
@@ -243,7 +243,7 @@ class CreateIssueRequestV4:
     def domain_id(self, domain_id):
         """Sets the domain_id of this CreateIssueRequestV4.
 
-        领域id 14, '性能', 15, '功能', 16, '可靠性' 17, '网络安全' 18, '可维护性' 19, '其他DFX' 20, '可用性'
+        id 领域, 14 '性能', 15 '功能', 16 '可靠性' 17 '网络安全' 18 '可维护性' 19 '其他DFX' 20 '可用性'
 
         :param domain_id: The domain_id of this CreateIssueRequestV4.
         :type: int
@@ -408,7 +408,7 @@ class CreateIssueRequestV4:
     def priority_id(self):
         """Gets the priority_id of this CreateIssueRequestV4.
 
-        优先级   1 低   2 中   3 高
+        优先级,   1 低,   2 中,   3 高,
 
         :return: The priority_id of this CreateIssueRequestV4.
         :rtype: int
@@ -419,7 +419,7 @@ class CreateIssueRequestV4:
     def priority_id(self, priority_id):
         """Sets the priority_id of this CreateIssueRequestV4.
 
-        优先级   1 低   2 中   3 高
+        优先级,   1 低,   2 中,   3 高,
 
         :param priority_id: The priority_id of this CreateIssueRequestV4.
         :type: int
@@ -430,7 +430,7 @@ class CreateIssueRequestV4:
     def severity_id(self):
         """Gets the severity_id of this CreateIssueRequestV4.
 
-        重要程度   10 关键   11 重要   12 一般   13 提示
+        重要程度,   10 关键,   11 重要,   12 一般,   13 提示,
 
         :return: The severity_id of this CreateIssueRequestV4.
         :rtype: int
@@ -441,7 +441,7 @@ class CreateIssueRequestV4:
     def severity_id(self, severity_id):
         """Sets the severity_id of this CreateIssueRequestV4.
 
-        重要程度   10 关键   11 重要   12 一般   13 提示
+        重要程度,   10 关键,   11 重要,   12 一般,   13 提示,
 
         :param severity_id: The severity_id of this CreateIssueRequestV4.
         :type: int
@@ -452,7 +452,7 @@ class CreateIssueRequestV4:
     def status_id(self):
         """Gets the status_id of this CreateIssueRequestV4.
 
-        状态   id 开始   1 进行中 2 已解决 3 测试中 4 已关闭 5 已解决 6
+        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已解决 6,
 
         :return: The status_id of this CreateIssueRequestV4.
         :rtype: int
@@ -463,7 +463,7 @@ class CreateIssueRequestV4:
     def status_id(self, status_id):
         """Sets the status_id of this CreateIssueRequestV4.
 
-        状态   id 开始   1 进行中 2 已解决 3 测试中 4 已关闭 5 已解决 6
+        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已解决 6,
 
         :param status_id: The status_id of this CreateIssueRequestV4.
         :type: int
@@ -474,7 +474,7 @@ class CreateIssueRequestV4:
     def tracker_id(self):
         """Gets the tracker_id of this CreateIssueRequestV4.
 
-        工作项类型, 2任务/task,3缺陷/bug,5epic,6feature,7story 父工作项类型     5 只能为 6 的父工作项类型     6 只能为 7 的父工作项类型     7 只能为 2,3的父
+        工作项类型, 2任务/task,3缺陷/bug,5epic,6feature,7story;     5 只能为 6 的父工作项类型;     6 只能为 7 的父工作项类型;     7 只能为 2,3的父;
 
         :return: The tracker_id of this CreateIssueRequestV4.
         :rtype: int
@@ -485,7 +485,7 @@ class CreateIssueRequestV4:
     def tracker_id(self, tracker_id):
         """Sets the tracker_id of this CreateIssueRequestV4.
 
-        工作项类型, 2任务/task,3缺陷/bug,5epic,6feature,7story 父工作项类型     5 只能为 6 的父工作项类型     6 只能为 7 的父工作项类型     7 只能为 2,3的父
+        工作项类型, 2任务/task,3缺陷/bug,5epic,6feature,7story;     5 只能为 6 的父工作项类型;     6 只能为 7 的父工作项类型;     7 只能为 2,3的父;
 
         :param tracker_id: The tracker_id of this CreateIssueRequestV4.
         :type: int

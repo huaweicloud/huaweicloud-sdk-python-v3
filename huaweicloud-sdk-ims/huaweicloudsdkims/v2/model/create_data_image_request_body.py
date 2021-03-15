@@ -46,7 +46,7 @@ class CreateDataImageRequestBody:
         'tags': 'tags'
     }
 
-    def __init__(self, cmk_id=None, description=None, enterprise_project_id='0', image_tags=None, image_url=None, min_disk=None, name=None, os_type=None, tags=None):
+    def __init__(self, cmk_id=None, description=None, enterprise_project_id=None, image_tags=None, image_url=None, min_disk=None, name=None, os_type=None, tags=None):
         """CreateDataImageRequestBody - a model defined in huaweicloud sdk"""
         
         

@@ -72,7 +72,7 @@ class CreateLoadBalancerOption:
         'deletion_protection_enable': 'deletion_protection_enable'
     }
 
-    def __init__(self, name=None, description=None, vip_address=None, vip_subnet_cidr_id=None, ipv6_vip_virsubnet_id=None, provider=None, l4_flavor_id=None, project_id=None, guaranteed=True, vpc_id=None, availability_zone_list=None, enterprise_project_id=None, tags=None, admin_state_up=True, l7_flavor_id=None, billing_info=None, ipv6_bandwidth=None, publicip_ids=None, publicip=None, elb_virsubnet_ids=None, ip_target_enable=False, deletion_protection_enable=False):
+    def __init__(self, name=None, description=None, vip_address=None, vip_subnet_cidr_id=None, ipv6_vip_virsubnet_id=None, provider=None, l4_flavor_id=None, project_id=None, guaranteed=None, vpc_id=None, availability_zone_list=None, enterprise_project_id=None, tags=None, admin_state_up=None, l7_flavor_id=None, billing_info=None, ipv6_bandwidth=None, publicip_ids=None, publicip=None, elb_virsubnet_ids=None, ip_target_enable=None, deletion_protection_enable=None):
         """CreateLoadBalancerOption - a model defined in huaweicloud sdk"""
         
         

@@ -64,7 +64,7 @@ class NovaCreateServersOption:
         'description': 'description'
     }
 
-    def __init__(self, auto_terminate_time=None, image_ref=None, flavor_ref=None, name=None, metadata=None, admin_pass=None, block_device_mapping_v2=None, config_drive=None, security_groups=None, networks=None, key_name=None, user_data=None, availability_zone=None, return_reservation_id=None, min_count=1, max_count=None, os_dc_fdisk_config=None, description=None):
+    def __init__(self, auto_terminate_time=None, image_ref=None, flavor_ref=None, name=None, metadata=None, admin_pass=None, block_device_mapping_v2=None, config_drive=None, security_groups=None, networks=None, key_name=None, user_data=None, availability_zone=None, return_reservation_id=None, min_count=None, max_count=None, os_dc_fdisk_config=None, description=None):
         """NovaCreateServersOption - a model defined in huaweicloud sdk"""
         
         

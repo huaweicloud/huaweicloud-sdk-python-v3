@@ -56,7 +56,7 @@ class ListResizeFlavorsResult:
         'extra_specs': 'extra_specs'
     }
 
-    def __init__(self, id=None, name=None, vcpus=None, ram=None, disk='0', swap=None, os_flv_ext_dat_aephemeral=None, os_flv_disable_ddisabled=False, rxtx_factor=None, rxtx_quota=None, rxtx_cap=None, os_flavor_accessis_public=True, links=None, extra_specs=None):
+    def __init__(self, id=None, name=None, vcpus=None, ram=None, disk=None, swap=None, os_flv_ext_dat_aephemeral=None, os_flv_disable_ddisabled=None, rxtx_factor=None, rxtx_quota=None, rxtx_cap=None, os_flavor_accessis_public=None, links=None, extra_specs=None):
         """ListResizeFlavorsResult - a model defined in huaweicloud sdk"""
         
         

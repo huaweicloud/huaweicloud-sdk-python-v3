@@ -46,7 +46,7 @@ class NovaServerBlockDeviceMapping:
         'volume_type': 'volume_type'
     }
 
-    def __init__(self, source_type=None, destination_type=None, guest_format=None, device_name=None, delete_on_termination=False, boot_index=None, uuid=None, volume_size=None, volume_type=None):
+    def __init__(self, source_type=None, destination_type=None, guest_format=None, device_name=None, delete_on_termination=None, boot_index=None, uuid=None, volume_size=None, volume_type=None):
         """NovaServerBlockDeviceMapping - a model defined in huaweicloud sdk"""
         
         

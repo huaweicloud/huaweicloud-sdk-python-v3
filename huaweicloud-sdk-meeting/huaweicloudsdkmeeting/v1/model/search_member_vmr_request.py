@@ -40,7 +40,7 @@ class SearchMemberVmrRequest:
         'special_vmr': 'specialVmr'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, offset=0, limit=100, search_key=None, special_vmr=None):
+    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, special_vmr=None):
         """SearchMemberVmrRequest - a model defined in huaweicloud sdk"""
         
         

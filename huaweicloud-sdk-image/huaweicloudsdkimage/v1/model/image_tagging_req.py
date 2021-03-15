@@ -38,7 +38,7 @@ class ImageTaggingReq:
         'limit': 'limit'
     }
 
-    def __init__(self, image=None, url=None, language=None, threshold=0.0, limit=None):
+    def __init__(self, image=None, url=None, language=None, threshold=None, limit=None):
         """ImageTaggingReq - a model defined in huaweicloud sdk"""
         
         

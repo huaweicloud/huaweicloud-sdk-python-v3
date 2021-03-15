@@ -38,8 +38,7 @@ class CreateInstanceRequestBody:
         'enterprise_project_id': 'str',
         'ssl_option': 'str',
         'dss_pool_id': 'str',
-        'server_group_policies': 'list[str]',
-        'restore_point': 'RestorePoint'
+        'server_group_policies': 'list[str]'
     }
 
     attribute_map = {
@@ -58,11 +57,10 @@ class CreateInstanceRequestBody:
         'enterprise_project_id': 'enterprise_project_id',
         'ssl_option': 'ssl_option',
         'dss_pool_id': 'dss_pool_id',
-        'server_group_policies': 'server_group_policies',
-        'restore_point': 'restore_point'
+        'server_group_policies': 'server_group_policies'
     }
 
-    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, server_group_policies=None, restore_point=None):
+    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, server_group_policies=None):
         """CreateInstanceRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -83,7 +81,6 @@ class CreateInstanceRequestBody:
         self._ssl_option = None
         self._dss_pool_id = None
         self._server_group_policies = None
-        self._restore_point = None
         self.discriminator = None
 
         self.name = name
@@ -109,8 +106,6 @@ class CreateInstanceRequestBody:
             self.dss_pool_id = dss_pool_id
         if server_group_policies is not None:
             self.server_group_policies = server_group_policies
-        if restore_point is not None:
-            self.restore_point = restore_point
 
     @property
     def name(self):
@@ -158,7 +153,7 @@ class CreateInstanceRequestBody:
     def region(self):
         """Gets the region of this CreateInstanceRequestBody.
 
-        区域ID，恢复到新实例时不可选。
+        - 区域ID - 取值：非空。
 
         :return: The region of this CreateInstanceRequestBody.
         :rtype: str
@@ -169,7 +164,7 @@ class CreateInstanceRequestBody:
     def region(self, region):
         """Sets the region of this CreateInstanceRequestBody.
 
-        区域ID，恢复到新实例时不可选。
+        - 区域ID - 取值：非空。
 
         :param region: The region of this CreateInstanceRequestBody.
         :type: str
@@ -180,7 +175,7 @@ class CreateInstanceRequestBody:
     def availability_zone(self):
         """Gets the availability_zone of this CreateInstanceRequestBody.
 
-        可用区ID。
+        可用区ID。非专属云用户可以选择多个AZ，创建跨AZ的集群。专属云用户暂不支持创建跨AZ的集群。取值：非空。
 
         :return: The availability_zone of this CreateInstanceRequestBody.
         :rtype: str
@@ -191,7 +186,7 @@ class CreateInstanceRequestBody:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this CreateInstanceRequestBody.
 
-        可用区ID。
+        可用区ID。非专属云用户可以选择多个AZ，创建跨AZ的集群。专属云用户暂不支持创建跨AZ的集群。取值：非空。
 
         :param availability_zone: The availability_zone of this CreateInstanceRequestBody.
         :type: str
@@ -420,7 +415,7 @@ class CreateInstanceRequestBody:
     def dss_pool_id(self):
         """Gets the dss_pool_id of this CreateInstanceRequestBody.
 
-        创建新实例所在专属存储池ID，仅专属云创建实例时有效。
+        Dec用户专属存储ID，默认为空。仅Dec用户支持该参数。
 
         :return: The dss_pool_id of this CreateInstanceRequestBody.
         :rtype: str
@@ -431,7 +426,7 @@ class CreateInstanceRequestBody:
     def dss_pool_id(self, dss_pool_id):
         """Sets the dss_pool_id of this CreateInstanceRequestBody.
 
-        创建新实例所在专属存储池ID，仅专属云创建实例时有效。
+        Dec用户专属存储ID，默认为空。仅Dec用户支持该参数。
 
         :param dss_pool_id: The dss_pool_id of this CreateInstanceRequestBody.
         :type: str
@@ -459,26 +454,6 @@ class CreateInstanceRequestBody:
         :type: list[str]
         """
         self._server_group_policies = server_group_policies
-
-    @property
-    def restore_point(self):
-        """Gets the restore_point of this CreateInstanceRequestBody.
-
-
-        :return: The restore_point of this CreateInstanceRequestBody.
-        :rtype: RestorePoint
-        """
-        return self._restore_point
-
-    @restore_point.setter
-    def restore_point(self, restore_point):
-        """Sets the restore_point of this CreateInstanceRequestBody.
-
-
-        :param restore_point: The restore_point of this CreateInstanceRequestBody.
-        :type: RestorePoint
-        """
-        self._restore_point = restore_point
 
     def to_dict(self):
         """Returns the model properties as a dict"""

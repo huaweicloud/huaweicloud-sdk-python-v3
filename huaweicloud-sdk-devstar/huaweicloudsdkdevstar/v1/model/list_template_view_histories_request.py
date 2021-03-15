@@ -32,7 +32,7 @@ class ListTemplateViewHistoriesRequest:
         'platform_source': 'platform_source'
     }
 
-    def __init__(self, x_language='zh-cn', platform_source=None):
+    def __init__(self, x_language=None, platform_source=None):
         """ListTemplateViewHistoriesRequest - a model defined in huaweicloud sdk"""
         
         

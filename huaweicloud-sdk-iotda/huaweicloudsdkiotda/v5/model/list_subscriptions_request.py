@@ -46,7 +46,7 @@ class ListSubscriptionsRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None, resource=None, event=None, callbackurl=None, app_id=None, channel=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):
+    def __init__(self, instance_id=None, resource=None, event=None, callbackurl=None, app_id=None, channel=None, limit=None, marker=None, offset=None):
         """ListSubscriptionsRequest - a model defined in huaweicloud sdk"""
         
         

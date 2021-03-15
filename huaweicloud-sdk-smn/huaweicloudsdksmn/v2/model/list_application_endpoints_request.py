@@ -41,7 +41,7 @@ class ListApplicationEndpointsRequest:
         'user_data': 'user_data'
     }
 
-    def __init__(self, application_urn=None, offset=0, limit=100, enabled=None, token=None, user_data=None):
+    def __init__(self, application_urn=None, offset=None, limit=None, enabled=None, token=None, user_data=None):
         """ListApplicationEndpointsRequest - a model defined in huaweicloud sdk"""
         
         

@@ -23,7 +23,7 @@ class ListDatabasesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'databases': 'list[DatabaseForList]',
+        'databases': 'list[DatabaseForCreation]',
         'total_count': 'int'
     }
 
@@ -53,7 +53,7 @@ class ListDatabasesResponse(SdkResponse):
         数据库信息。
 
         :return: The databases of this ListDatabasesResponse.
-        :rtype: list[DatabaseForList]
+        :rtype: list[DatabaseForCreation]
         """
         return self._databases
 
@@ -64,7 +64,7 @@ class ListDatabasesResponse(SdkResponse):
         数据库信息。
 
         :param databases: The databases of this ListDatabasesResponse.
-        :type: list[DatabaseForList]
+        :type: list[DatabaseForCreation]
         """
         self._databases = databases
 

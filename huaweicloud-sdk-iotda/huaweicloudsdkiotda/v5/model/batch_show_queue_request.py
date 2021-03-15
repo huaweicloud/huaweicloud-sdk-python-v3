@@ -38,7 +38,7 @@ class BatchShowQueueRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None, queue_name=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):
+    def __init__(self, instance_id=None, queue_name=None, limit=None, marker=None, offset=None):
         """BatchShowQueueRequest - a model defined in huaweicloud sdk"""
         
         

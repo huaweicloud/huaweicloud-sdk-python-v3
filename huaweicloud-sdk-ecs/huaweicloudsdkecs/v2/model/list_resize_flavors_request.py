@@ -42,7 +42,7 @@ class ListResizeFlavorsRequest:
         'source_flavor_name': 'source_flavor_name'
     }
 
-    def __init__(self, instance_uuid=None, limit=1000, marker=None, sort_dir='asc', sort_key='flavorid', source_flavor_id=None, source_flavor_name=None):
+    def __init__(self, instance_uuid=None, limit=None, marker=None, sort_dir=None, sort_key=None, source_flavor_id=None, source_flavor_name=None):
         """ListResizeFlavorsRequest - a model defined in huaweicloud sdk"""
         
         

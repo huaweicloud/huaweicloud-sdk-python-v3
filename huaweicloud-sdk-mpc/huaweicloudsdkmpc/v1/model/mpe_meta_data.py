@@ -54,7 +54,7 @@ class MpeMetaData:
         'is_audio': 'is_audio'
     }
 
-    def __init__(self, pack_type=None, duration=None, video_size=None, width=None, height=None, bit_rate=None, audio_bit_rate=None, frame_rate=None, codec_name=None, audio_codec_name=None, channels=None, sample=None, is_audio=False):
+    def __init__(self, pack_type=None, duration=None, video_size=None, width=None, height=None, bit_rate=None, audio_bit_rate=None, frame_rate=None, codec_name=None, audio_codec_name=None, channels=None, sample=None, is_audio=None):
         """MpeMetaData - a model defined in huaweicloud sdk"""
         
         

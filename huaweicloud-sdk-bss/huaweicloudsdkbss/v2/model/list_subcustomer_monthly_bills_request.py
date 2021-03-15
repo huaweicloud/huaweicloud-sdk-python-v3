@@ -44,7 +44,7 @@ class ListSubcustomerMonthlyBillsRequest:
         'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, customer_id=None, cycle=None, cloud_service_type=None, charge_mode=None, offset=0, limit=10, bill_type=None, indirect_partner_id=None):
+    def __init__(self, customer_id=None, cycle=None, cloud_service_type=None, charge_mode=None, offset=None, limit=None, bill_type=None, indirect_partner_id=None):
         """ListSubcustomerMonthlyBillsRequest - a model defined in huaweicloud sdk"""
         
         

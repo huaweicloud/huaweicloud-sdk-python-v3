@@ -56,7 +56,7 @@ class CreateHealthMonitorOption:
         'url_path': 'url_path'
     }
 
-    def __init__(self, admin_state_up=True, delay=None, domain_name=None, expected_codes='200', http_method='GET', max_retries=None, max_retries_down=3, monitor_port=None, name=None, pool_id=None, project_id=None, timeout=None, type=None, url_path='/'):
+    def __init__(self, admin_state_up=None, delay=None, domain_name=None, expected_codes=None, http_method=None, max_retries=None, max_retries_down=None, monitor_port=None, name=None, pool_id=None, project_id=None, timeout=None, type=None, url_path=None):
         """CreateHealthMonitorOption - a model defined in huaweicloud sdk"""
         
         

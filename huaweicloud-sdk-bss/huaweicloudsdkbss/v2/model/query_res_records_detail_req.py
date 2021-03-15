@@ -54,7 +54,7 @@ class QueryResRecordsDetailReq:
         'sub_customer_id': 'sub_customer_id'
     }
 
-    def __init__(self, cycle=None, cloud_service_type=None, resource_type=None, region=None, res_instance_id=None, charge_mode=None, bill_type=None, enterprise_project_id=None, include_zero_record=None, offset=0, limit=10, method=None, sub_customer_id=None):
+    def __init__(self, cycle=None, cloud_service_type=None, resource_type=None, region=None, res_instance_id=None, charge_mode=None, bill_type=None, enterprise_project_id=None, include_zero_record=None, offset=None, limit=None, method=None, sub_customer_id=None):
         """QueryResRecordsDetailReq - a model defined in huaweicloud sdk"""
         
         

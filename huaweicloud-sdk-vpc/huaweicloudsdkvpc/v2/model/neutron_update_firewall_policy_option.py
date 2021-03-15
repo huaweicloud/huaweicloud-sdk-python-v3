@@ -36,7 +36,7 @@ class NeutronUpdateFirewallPolicyOption:
         'audited': 'audited'
     }
 
-    def __init__(self, name=None, description=None, firewall_rules=None, audited=False):
+    def __init__(self, name=None, description=None, firewall_rules=None, audited=None):
         """NeutronUpdateFirewallPolicyOption - a model defined in huaweicloud sdk"""
         
         

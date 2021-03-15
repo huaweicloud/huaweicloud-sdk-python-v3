@@ -38,7 +38,7 @@ class ListProductsRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None, limit=10, marker='ffffffffffffffffffffffff', app_id=None, offset=0):
+    def __init__(self, instance_id=None, limit=None, marker=None, app_id=None, offset=None):
         """ListProductsRequest - a model defined in huaweicloud sdk"""
         
         

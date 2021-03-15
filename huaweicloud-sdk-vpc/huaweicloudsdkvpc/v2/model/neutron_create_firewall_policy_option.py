@@ -36,7 +36,7 @@ class NeutronCreateFirewallPolicyOption:
         'name': 'name'
     }
 
-    def __init__(self, audited=False, description=None, firewall_rules=None, name=None):
+    def __init__(self, audited=None, description=None, firewall_rules=None, name=None):
         """NeutronCreateFirewallPolicyOption - a model defined in huaweicloud sdk"""
         
         

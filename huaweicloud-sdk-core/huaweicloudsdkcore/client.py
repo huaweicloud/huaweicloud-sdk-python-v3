@@ -57,6 +57,9 @@ class ClientBuilder:
         self._file_logger_handler = None
         self._stream_logger_handler = None
 
+        self._http_scheme = "http"
+        self._https_scheme = "https"
+
     def with_http_config(self, config: HttpConfig):
         self._config = config
         return self
@@ -117,6 +120,9 @@ class ClientBuilder:
         if self._region is not None:
             self._endpoint = self._region.endpoint
             self._credentials = self._credentials.process_auth_params(client.get_http_client(), self._region.id)
+
+        if not self._endpoint.startswith(self._http_scheme):
+            self._endpoint = self._https_scheme + "://" + self._endpoint
 
         client.with_endpoint(self._endpoint) \
             .with_credentials(self._credentials)
@@ -275,6 +281,9 @@ class Client:
             list_filter = filter(lambda x: type(x) == tuple and len(x) == 2 and x[1] is not None, params)
             return [i for i in list_filter]
 
+    def skip_authorization(self, request):
+        return request
+
     def do_http_request(self, method, resource_path, path_params=None, query_params=None, header_params=None, body=None,
                         post_params=None, response_type=None, response_headers=None, collection_formats=None,
                         request_type=None, async_request=False):
@@ -292,7 +301,11 @@ class Client:
         stream = self._is_stream(response_type)
         sdk_request = SdkRequest(method=method, schema=schema, host=host, resource_path=resource_path,
                                  query_params=query_params, header_params=header_params, body=body, stream=stream)
-        future_request = self._credentials.process_auth_request(sdk_request, self._http_client)
+        if "Authorization" not in header_params:
+            future_request = self._credentials.process_auth_request(sdk_request, self._http_client)
+        else:
+            executor = ThreadPoolExecutor(max_workers=8)
+            future_request = executor.submit(self.skip_authorization, sdk_request)
         if async_request:
             executor = ThreadPoolExecutor(max_workers=8)
             future_response = executor.submit(self._do_http_request_async, future_request, response_type,
@@ -344,7 +357,7 @@ class Client:
             if getattr(return_data, attr) is not None:
                 continue
             key_in_response_headers = return_data.attribute_map[attr]
-            if key_in_response_headers in response_headers:
+            if key_in_response_headers in response_headers and key_in_response_headers in response.headers:
                 setattr(return_data, attr, response.headers[key_in_response_headers])
 
     def deserialize(self, response, response_type):

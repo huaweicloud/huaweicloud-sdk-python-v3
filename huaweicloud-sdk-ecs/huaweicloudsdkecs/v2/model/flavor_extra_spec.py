@@ -24,9 +24,15 @@ class FlavorExtraSpec:
 
     openapi_types = {
         'ecsperformancetype': 'str',
+        'hwnuma_nodes': 'str',
         'resource_type': 'str',
+        'hpet_support': 'str',
+        'instance_vnictype': 'str',
+        'instance_vnicinstance_bandwidth': 'int',
+        'instance_vnicmax_count': 'int',
         'quotalocal_disk': 'str',
         'quotanvme_ssd': 'str',
+        'extra_speciopersistent_grant': 'bool',
         'ecsgeneration': 'str',
         'ecsvirtualization_env_types': 'str',
         'pci_passthroughenable_gpu': 'str',
@@ -37,14 +43,31 @@ class FlavorExtraSpec:
         'quotamax_rate': 'str',
         'quotamin_rate': 'str',
         'quotamax_pps': 'str',
-        'condoperationcharge': 'str'
+        'condoperationcharge': 'str',
+        'condoperationchargestop': 'str',
+        'condspotoperationaz': 'str',
+        'condoperationroles': 'str',
+        'condspotoperationstatus': 'str',
+        'condnetwork': 'str',
+        'condstorage': 'str',
+        'condcomputelive_resizable': 'str',
+        'condcompute': 'str',
+        'infogpuname': 'str',
+        'infocpuname': 'str',
+        'quotagpu': 'str'
     }
 
     attribute_map = {
         'ecsperformancetype': 'ecs:performancetype',
+        'hwnuma_nodes': 'hw:numa_nodes',
         'resource_type': 'resource_type',
+        'hpet_support': 'hpet_support',
+        'instance_vnictype': 'instance_vnic:type',
+        'instance_vnicinstance_bandwidth': 'instance_vnic:instance_bandwidth',
+        'instance_vnicmax_count': 'instance_vnic:max_count',
         'quotalocal_disk': 'quota:local_disk',
         'quotanvme_ssd': 'quota:nvme_ssd',
+        'extra_speciopersistent_grant': 'extra_spec:io:persistent_grant',
         'ecsgeneration': 'ecs:generation',
         'ecsvirtualization_env_types': 'ecs:virtualization_env_types',
         'pci_passthroughenable_gpu': 'pci_passthrough:enable_gpu',
@@ -55,18 +78,35 @@ class FlavorExtraSpec:
         'quotamax_rate': 'quota:max_rate',
         'quotamin_rate': 'quota:min_rate',
         'quotamax_pps': 'quota:max_pps',
-        'condoperationcharge': 'cond:operation:charge'
+        'condoperationcharge': 'cond:operation:charge',
+        'condoperationchargestop': 'cond:operation:charge:stop',
+        'condspotoperationaz': 'cond:spot:operation:az',
+        'condoperationroles': 'cond:operation:roles',
+        'condspotoperationstatus': 'cond:spot:operation:status',
+        'condnetwork': 'cond:network',
+        'condstorage': 'cond:storage',
+        'condcomputelive_resizable': 'cond:compute:live_resizable',
+        'condcompute': 'cond:compute',
+        'infogpuname': 'info:gpu:name',
+        'infocpuname': 'info:cpu:name',
+        'quotagpu': 'quota:gpu'
     }
 
-    def __init__(self, ecsperformancetype=None, resource_type=None, quotalocal_disk=None, quotanvme_ssd=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None):
+    def __init__(self, ecsperformancetype=None, hwnuma_nodes=None, resource_type=None, hpet_support=None, instance_vnictype=None, instance_vnicinstance_bandwidth=None, instance_vnicmax_count=None, quotalocal_disk=None, quotanvme_ssd=None, extra_speciopersistent_grant=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None, condoperationchargestop=None, condspotoperationaz=None, condoperationroles=None, condspotoperationstatus=None, condnetwork=None, condstorage=None, condcomputelive_resizable=None, condcompute=None, infogpuname=None, infocpuname=None, quotagpu=None):
         """FlavorExtraSpec - a model defined in huaweicloud sdk"""
         
         
 
         self._ecsperformancetype = None
+        self._hwnuma_nodes = None
         self._resource_type = None
+        self._hpet_support = None
+        self._instance_vnictype = None
+        self._instance_vnicinstance_bandwidth = None
+        self._instance_vnicmax_count = None
         self._quotalocal_disk = None
         self._quotanvme_ssd = None
+        self._extra_speciopersistent_grant = None
         self._ecsgeneration = None
         self._ecsvirtualization_env_types = None
         self._pci_passthroughenable_gpu = None
@@ -78,14 +118,32 @@ class FlavorExtraSpec:
         self._quotamin_rate = None
         self._quotamax_pps = None
         self._condoperationcharge = None
+        self._condoperationchargestop = None
+        self._condspotoperationaz = None
+        self._condoperationroles = None
+        self._condspotoperationstatus = None
+        self._condnetwork = None
+        self._condstorage = None
+        self._condcomputelive_resizable = None
+        self._condcompute = None
+        self._infogpuname = None
+        self._infocpuname = None
+        self._quotagpu = None
         self.discriminator = None
 
         self.ecsperformancetype = ecsperformancetype
+        self.hwnuma_nodes = hwnuma_nodes
         self.resource_type = resource_type
+        self.hpet_support = hpet_support
+        self.instance_vnictype = instance_vnictype
+        self.instance_vnicinstance_bandwidth = instance_vnicinstance_bandwidth
+        self.instance_vnicmax_count = instance_vnicmax_count
         if quotalocal_disk is not None:
             self.quotalocal_disk = quotalocal_disk
         if quotanvme_ssd is not None:
             self.quotanvme_ssd = quotanvme_ssd
+        if extra_speciopersistent_grant is not None:
+            self.extra_speciopersistent_grant = extra_speciopersistent_grant
         if ecsgeneration is not None:
             self.ecsgeneration = ecsgeneration
         if ecsvirtualization_env_types is not None:
@@ -105,6 +163,28 @@ class FlavorExtraSpec:
             self.quotamax_pps = quotamax_pps
         if condoperationcharge is not None:
             self.condoperationcharge = condoperationcharge
+        if condoperationchargestop is not None:
+            self.condoperationchargestop = condoperationchargestop
+        if condspotoperationaz is not None:
+            self.condspotoperationaz = condspotoperationaz
+        if condoperationroles is not None:
+            self.condoperationroles = condoperationroles
+        if condspotoperationstatus is not None:
+            self.condspotoperationstatus = condspotoperationstatus
+        if condnetwork is not None:
+            self.condnetwork = condnetwork
+        if condstorage is not None:
+            self.condstorage = condstorage
+        if condcomputelive_resizable is not None:
+            self.condcomputelive_resizable = condcomputelive_resizable
+        if condcompute is not None:
+            self.condcompute = condcompute
+        if infogpuname is not None:
+            self.infogpuname = infogpuname
+        if infocpuname is not None:
+            self.infocpuname = infocpuname
+        if quotagpu is not None:
+            self.quotagpu = quotagpu
 
     @property
     def ecsperformancetype(self):
@@ -129,6 +209,28 @@ class FlavorExtraSpec:
         self._ecsperformancetype = ecsperformancetype
 
     @property
+    def hwnuma_nodes(self):
+        """Gets the hwnuma_nodes of this FlavorExtraSpec.
+
+        主机的物理cpu数量。
+
+        :return: The hwnuma_nodes of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._hwnuma_nodes
+
+    @hwnuma_nodes.setter
+    def hwnuma_nodes(self, hwnuma_nodes):
+        """Sets the hwnuma_nodes of this FlavorExtraSpec.
+
+        主机的物理cpu数量。
+
+        :param hwnuma_nodes: The hwnuma_nodes of this FlavorExtraSpec.
+        :type: str
+        """
+        self._hwnuma_nodes = hwnuma_nodes
+
+    @property
     def resource_type(self):
         """Gets the resource_type of this FlavorExtraSpec.
 
@@ -149,6 +251,94 @@ class FlavorExtraSpec:
         :type: str
         """
         self._resource_type = resource_type
+
+    @property
+    def hpet_support(self):
+        """Gets the hpet_support of this FlavorExtraSpec.
+
+        弹性运服务器高精度时钟是否开启，开启为true，否则为false。（该字段是否返回根据云服务器规格而定）
+
+        :return: The hpet_support of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._hpet_support
+
+    @hpet_support.setter
+    def hpet_support(self, hpet_support):
+        """Sets the hpet_support of this FlavorExtraSpec.
+
+        弹性运服务器高精度时钟是否开启，开启为true，否则为false。（该字段是否返回根据云服务器规格而定）
+
+        :param hpet_support: The hpet_support of this FlavorExtraSpec.
+        :type: str
+        """
+        self._hpet_support = hpet_support
+
+    @property
+    def instance_vnictype(self):
+        """Gets the instance_vnictype of this FlavorExtraSpec.
+
+        网卡类型，值固定为“enhanced”，表示使用增强型网络的资源创建云服务器。
+
+        :return: The instance_vnictype of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._instance_vnictype
+
+    @instance_vnictype.setter
+    def instance_vnictype(self, instance_vnictype):
+        """Sets the instance_vnictype of this FlavorExtraSpec.
+
+        网卡类型，值固定为“enhanced”，表示使用增强型网络的资源创建云服务器。
+
+        :param instance_vnictype: The instance_vnictype of this FlavorExtraSpec.
+        :type: str
+        """
+        self._instance_vnictype = instance_vnictype
+
+    @property
+    def instance_vnicinstance_bandwidth(self):
+        """Gets the instance_vnicinstance_bandwidth of this FlavorExtraSpec.
+
+        最大带宽，单位Mbps，最大值为10000。
+
+        :return: The instance_vnicinstance_bandwidth of this FlavorExtraSpec.
+        :rtype: int
+        """
+        return self._instance_vnicinstance_bandwidth
+
+    @instance_vnicinstance_bandwidth.setter
+    def instance_vnicinstance_bandwidth(self, instance_vnicinstance_bandwidth):
+        """Sets the instance_vnicinstance_bandwidth of this FlavorExtraSpec.
+
+        最大带宽，单位Mbps，最大值为10000。
+
+        :param instance_vnicinstance_bandwidth: The instance_vnicinstance_bandwidth of this FlavorExtraSpec.
+        :type: int
+        """
+        self._instance_vnicinstance_bandwidth = instance_vnicinstance_bandwidth
+
+    @property
+    def instance_vnicmax_count(self):
+        """Gets the instance_vnicmax_count of this FlavorExtraSpec.
+
+        最大网卡个数，最大为4。
+
+        :return: The instance_vnicmax_count of this FlavorExtraSpec.
+        :rtype: int
+        """
+        return self._instance_vnicmax_count
+
+    @instance_vnicmax_count.setter
+    def instance_vnicmax_count(self, instance_vnicmax_count):
+        """Sets the instance_vnicmax_count of this FlavorExtraSpec.
+
+        最大网卡个数，最大为4。
+
+        :param instance_vnicmax_count: The instance_vnicmax_count of this FlavorExtraSpec.
+        :type: int
+        """
+        self._instance_vnicmax_count = instance_vnicmax_count
 
     @property
     def quotalocal_disk(self):
@@ -193,6 +383,28 @@ class FlavorExtraSpec:
         :type: str
         """
         self._quotanvme_ssd = quotanvme_ssd
+
+    @property
+    def extra_speciopersistent_grant(self):
+        """Gets the extra_speciopersistent_grant of this FlavorExtraSpec.
+
+        是否支持持久化，值为true。  代表云服务器访问存储的方式为持久化授权。   > 说明：  - 密集存储D1型特有字段。
+
+        :return: The extra_speciopersistent_grant of this FlavorExtraSpec.
+        :rtype: bool
+        """
+        return self._extra_speciopersistent_grant
+
+    @extra_speciopersistent_grant.setter
+    def extra_speciopersistent_grant(self, extra_speciopersistent_grant):
+        """Sets the extra_speciopersistent_grant of this FlavorExtraSpec.
+
+        是否支持持久化，值为true。  代表云服务器访问存储的方式为持久化授权。   > 说明：  - 密集存储D1型特有字段。
+
+        :param extra_speciopersistent_grant: The extra_speciopersistent_grant of this FlavorExtraSpec.
+        :type: bool
+        """
+        self._extra_speciopersistent_grant = extra_speciopersistent_grant
 
     @property
     def ecsgeneration(self):
@@ -435,6 +647,248 @@ class FlavorExtraSpec:
         :type: str
         """
         self._condoperationcharge = condoperationcharge
+
+    @property
+    def condoperationchargestop(self):
+        """Gets the condoperationchargestop of this FlavorExtraSpec.
+
+        关机是否收费  - 关机是否计费，默认免费： - charge - free
+
+        :return: The condoperationchargestop of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._condoperationchargestop
+
+    @condoperationchargestop.setter
+    def condoperationchargestop(self, condoperationchargestop):
+        """Sets the condoperationchargestop of this FlavorExtraSpec.
+
+        关机是否收费  - 关机是否计费，默认免费： - charge - free
+
+        :param condoperationchargestop: The condoperationchargestop of this FlavorExtraSpec.
+        :type: str
+        """
+        self._condoperationchargestop = condoperationchargestop
+
+    @property
+    def condspotoperationaz(self):
+        """Gets the condspotoperationaz of this FlavorExtraSpec.
+
+        计费类型  - 计费场景，不配置时都支持 - period，包周期 - demand，按需
+
+        :return: The condspotoperationaz of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._condspotoperationaz
+
+    @condspotoperationaz.setter
+    def condspotoperationaz(self, condspotoperationaz):
+        """Sets the condspotoperationaz of this FlavorExtraSpec.
+
+        计费类型  - 计费场景，不配置时都支持 - period，包周期 - demand，按需
+
+        :param condspotoperationaz: The condspotoperationaz of this FlavorExtraSpec.
+        :type: str
+        """
+        self._condspotoperationaz = condspotoperationaz
+
+    @property
+    def condoperationroles(self):
+        """Gets the condoperationroles of this FlavorExtraSpec.
+
+        允许的角色 匹配的用户标签（roles的op_gatexxx标签）。不设置时所有用户可见
+
+        :return: The condoperationroles of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._condoperationroles
+
+    @condoperationroles.setter
+    def condoperationroles(self, condoperationroles):
+        """Sets the condoperationroles of this FlavorExtraSpec.
+
+        允许的角色 匹配的用户标签（roles的op_gatexxx标签）。不设置时所有用户可见
+
+        :param condoperationroles: The condoperationroles of this FlavorExtraSpec.
+        :type: str
+        """
+        self._condoperationroles = condoperationroles
+
+    @property
+    def condspotoperationstatus(self):
+        """Gets the condspotoperationstatus of this FlavorExtraSpec.
+
+        Flavor在竞价销售模式下的状态  - 不配置时等同abandon - normal，正常商用 - abandon，下线 - sellout，售罄 - obt，公测，未申请时提示申请（暂不支持） - private，私有，只给特定用户显示（暂不支持） - test，试用/免费（暂不支持） - promotion，推荐
+
+        :return: The condspotoperationstatus of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._condspotoperationstatus
+
+    @condspotoperationstatus.setter
+    def condspotoperationstatus(self, condspotoperationstatus):
+        """Sets the condspotoperationstatus of this FlavorExtraSpec.
+
+        Flavor在竞价销售模式下的状态  - 不配置时等同abandon - normal，正常商用 - abandon，下线 - sellout，售罄 - obt，公测，未申请时提示申请（暂不支持） - private，私有，只给特定用户显示（暂不支持） - test，试用/免费（暂不支持） - promotion，推荐
+
+        :param condspotoperationstatus: The condspotoperationstatus of this FlavorExtraSpec.
+        :type: str
+        """
+        self._condspotoperationstatus = condspotoperationstatus
+
+    @property
+    def condnetwork(self):
+        """Gets the condnetwork of this FlavorExtraSpec.
+
+        网络约束 支持网络特性，不配置时以UI配置为准。
+
+        :return: The condnetwork of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._condnetwork
+
+    @condnetwork.setter
+    def condnetwork(self, condnetwork):
+        """Sets the condnetwork of this FlavorExtraSpec.
+
+        网络约束 支持网络特性，不配置时以UI配置为准。
+
+        :param condnetwork: The condnetwork of this FlavorExtraSpec.
+        :type: str
+        """
+        self._condnetwork = condnetwork
+
+    @property
+    def condstorage(self):
+        """Gets the condstorage of this FlavorExtraSpec.
+
+        存储约束  - 支持磁盘特性，不配置时以UI配置为准。 - scsi，支持scsi - localdisk，支持本地盘 - ib，支持ib
+
+        :return: The condstorage of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._condstorage
+
+    @condstorage.setter
+    def condstorage(self, condstorage):
+        """Sets the condstorage of this FlavorExtraSpec.
+
+        存储约束  - 支持磁盘特性，不配置时以UI配置为准。 - scsi，支持scsi - localdisk，支持本地盘 - ib，支持ib
+
+        :param condstorage: The condstorage of this FlavorExtraSpec.
+        :type: str
+        """
+        self._condstorage = condstorage
+
+    @property
+    def condcomputelive_resizable(self):
+        """Gets the condcomputelive_resizable of this FlavorExtraSpec.
+
+        计算约束  - true，支持在线扩容。 - false或不存在该字段，不支持在线扩容。
+
+        :return: The condcomputelive_resizable of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._condcomputelive_resizable
+
+    @condcomputelive_resizable.setter
+    def condcomputelive_resizable(self, condcomputelive_resizable):
+        """Sets the condcomputelive_resizable of this FlavorExtraSpec.
+
+        计算约束  - true，支持在线扩容。 - false或不存在该字段，不支持在线扩容。
+
+        :param condcomputelive_resizable: The condcomputelive_resizable of this FlavorExtraSpec.
+        :type: str
+        """
+        self._condcomputelive_resizable = condcomputelive_resizable
+
+    @property
+    def condcompute(self):
+        """Gets the condcompute of this FlavorExtraSpec.
+
+        计算约束  - autorecovery，自动恢复特性。 - 不存在该字段，不支持自动恢复。
+
+        :return: The condcompute of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._condcompute
+
+    @condcompute.setter
+    def condcompute(self, condcompute):
+        """Sets the condcompute of this FlavorExtraSpec.
+
+        计算约束  - autorecovery，自动恢复特性。 - 不存在该字段，不支持自动恢复。
+
+        :param condcompute: The condcompute of this FlavorExtraSpec.
+        :type: str
+        """
+        self._condcompute = condcompute
+
+    @property
+    def infogpuname(self):
+        """Gets the infogpuname of this FlavorExtraSpec.
+
+        
+
+        :return: The infogpuname of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._infogpuname
+
+    @infogpuname.setter
+    def infogpuname(self, infogpuname):
+        """Sets the infogpuname of this FlavorExtraSpec.
+
+        
+
+        :param infogpuname: The infogpuname of this FlavorExtraSpec.
+        :type: str
+        """
+        self._infogpuname = infogpuname
+
+    @property
+    def infocpuname(self):
+        """Gets the infocpuname of this FlavorExtraSpec.
+
+        
+
+        :return: The infocpuname of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._infocpuname
+
+    @infocpuname.setter
+    def infocpuname(self, infocpuname):
+        """Sets the infocpuname of this FlavorExtraSpec.
+
+        
+
+        :param infocpuname: The infocpuname of this FlavorExtraSpec.
+        :type: str
+        """
+        self._infocpuname = infocpuname
+
+    @property
+    def quotagpu(self):
+        """Gets the quotagpu of this FlavorExtraSpec.
+
+        
+
+        :return: The quotagpu of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._quotagpu
+
+    @quotagpu.setter
+    def quotagpu(self, quotagpu):
+        """Sets the quotagpu of this FlavorExtraSpec.
+
+        
+
+        :param quotagpu: The quotagpu of this FlavorExtraSpec.
+        :type: str
+        """
+        self._quotagpu = quotagpu
 
     def to_dict(self):
         """Returns the model properties as a dict"""

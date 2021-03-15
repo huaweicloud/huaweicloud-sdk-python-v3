@@ -34,7 +34,7 @@ class RateOnDemandReq:
         'product_infos': 'product_infos'
     }
 
-    def __init__(self, project_id=None, inquiry_precision=0, product_infos=None):
+    def __init__(self, project_id=None, inquiry_precision=None, product_infos=None):
         """RateOnDemandReq - a model defined in huaweicloud sdk"""
         
         

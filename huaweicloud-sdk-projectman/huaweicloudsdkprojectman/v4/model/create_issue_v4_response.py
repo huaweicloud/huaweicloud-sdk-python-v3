@@ -30,20 +30,19 @@ class CreateIssueV4Response(SdkResponse):
         'creator': 'IssueUser',
         'custom_fields': 'list[CustomField]',
         'developer': 'IssueUser',
-        'domain': 'IssueItemSFV4Domain',
+        'domain': 'CreateIssueResponseV4Domain',
         'done_ratio': 'int',
         'end_time': 'str',
         'expected_work_hours': 'float',
         'id': 'int',
-        'name': 'str',
         'project': 'IssueProjectResponseV4',
-        'iteration': 'IssueItemSFV4Iteration',
-        'module': 'IssueItemSFV4Module',
+        'iteration': 'IssueItemSfV4Iteration',
+        'module': 'IssueItemSfV4Module',
         'parent_issue': 'CreateIssueResponseV4ParentIssue',
-        'priority': 'IssueItemSFV4Priority',
-        'severity': 'IssueItemSFV4Severity',
-        'status': 'IssueItemSFV4Status',
-        'tracker': 'IssueItemSFV4Tracker'
+        'priority': 'IssueItemSfV4Priority',
+        'severity': 'IssueItemSfV4Severity',
+        'status': 'IssueItemSfV4Status',
+        'tracker': 'IssueItemSfV4Tracker'
     }
 
     attribute_map = {
@@ -59,7 +58,6 @@ class CreateIssueV4Response(SdkResponse):
         'end_time': 'end_time',
         'expected_work_hours': 'expected_work_hours',
         'id': 'id',
-        'name': 'name',
         'project': 'project',
         'iteration': 'iteration',
         'module': 'module',
@@ -70,7 +68,7 @@ class CreateIssueV4Response(SdkResponse):
         'tracker': 'tracker'
     }
 
-    def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, creator=None, custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, name=None, project=None, iteration=None, module=None, parent_issue=None, priority=None, severity=None, status=None, tracker=None):
+    def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, creator=None, custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, module=None, parent_issue=None, priority=None, severity=None, status=None, tracker=None):
         """CreateIssueV4Response - a model defined in huaweicloud sdk"""
         
         super().__init__()
@@ -87,7 +85,6 @@ class CreateIssueV4Response(SdkResponse):
         self._end_time = None
         self._expected_work_hours = None
         self._id = None
-        self._name = None
         self._project = None
         self._iteration = None
         self._module = None
@@ -122,8 +119,6 @@ class CreateIssueV4Response(SdkResponse):
             self.expected_work_hours = expected_work_hours
         if id is not None:
             self.id = id
-        if name is not None:
-            self.name = name
         if project is not None:
             self.project = project
         if iteration is not None:
@@ -295,7 +290,7 @@ class CreateIssueV4Response(SdkResponse):
 
 
         :return: The domain of this CreateIssueV4Response.
-        :rtype: IssueItemSFV4Domain
+        :rtype: CreateIssueResponseV4Domain
         """
         return self._domain
 
@@ -305,7 +300,7 @@ class CreateIssueV4Response(SdkResponse):
 
 
         :param domain: The domain of this CreateIssueV4Response.
-        :type: IssueItemSFV4Domain
+        :type: CreateIssueResponseV4Domain
         """
         self._domain = domain
 
@@ -398,28 +393,6 @@ class CreateIssueV4Response(SdkResponse):
         self._id = id
 
     @property
-    def name(self):
-        """Gets the name of this CreateIssueV4Response.
-
-        标题
-
-        :return: The name of this CreateIssueV4Response.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this CreateIssueV4Response.
-
-        标题
-
-        :param name: The name of this CreateIssueV4Response.
-        :type: str
-        """
-        self._name = name
-
-    @property
     def project(self):
         """Gets the project of this CreateIssueV4Response.
 
@@ -445,7 +418,7 @@ class CreateIssueV4Response(SdkResponse):
 
 
         :return: The iteration of this CreateIssueV4Response.
-        :rtype: IssueItemSFV4Iteration
+        :rtype: IssueItemSfV4Iteration
         """
         return self._iteration
 
@@ -455,7 +428,7 @@ class CreateIssueV4Response(SdkResponse):
 
 
         :param iteration: The iteration of this CreateIssueV4Response.
-        :type: IssueItemSFV4Iteration
+        :type: IssueItemSfV4Iteration
         """
         self._iteration = iteration
 
@@ -465,7 +438,7 @@ class CreateIssueV4Response(SdkResponse):
 
 
         :return: The module of this CreateIssueV4Response.
-        :rtype: IssueItemSFV4Module
+        :rtype: IssueItemSfV4Module
         """
         return self._module
 
@@ -475,7 +448,7 @@ class CreateIssueV4Response(SdkResponse):
 
 
         :param module: The module of this CreateIssueV4Response.
-        :type: IssueItemSFV4Module
+        :type: IssueItemSfV4Module
         """
         self._module = module
 
@@ -505,7 +478,7 @@ class CreateIssueV4Response(SdkResponse):
 
 
         :return: The priority of this CreateIssueV4Response.
-        :rtype: IssueItemSFV4Priority
+        :rtype: IssueItemSfV4Priority
         """
         return self._priority
 
@@ -515,7 +488,7 @@ class CreateIssueV4Response(SdkResponse):
 
 
         :param priority: The priority of this CreateIssueV4Response.
-        :type: IssueItemSFV4Priority
+        :type: IssueItemSfV4Priority
         """
         self._priority = priority
 
@@ -525,7 +498,7 @@ class CreateIssueV4Response(SdkResponse):
 
 
         :return: The severity of this CreateIssueV4Response.
-        :rtype: IssueItemSFV4Severity
+        :rtype: IssueItemSfV4Severity
         """
         return self._severity
 
@@ -535,7 +508,7 @@ class CreateIssueV4Response(SdkResponse):
 
 
         :param severity: The severity of this CreateIssueV4Response.
-        :type: IssueItemSFV4Severity
+        :type: IssueItemSfV4Severity
         """
         self._severity = severity
 
@@ -545,7 +518,7 @@ class CreateIssueV4Response(SdkResponse):
 
 
         :return: The status of this CreateIssueV4Response.
-        :rtype: IssueItemSFV4Status
+        :rtype: IssueItemSfV4Status
         """
         return self._status
 
@@ -555,7 +528,7 @@ class CreateIssueV4Response(SdkResponse):
 
 
         :param status: The status of this CreateIssueV4Response.
-        :type: IssueItemSFV4Status
+        :type: IssueItemSfV4Status
         """
         self._status = status
 
@@ -565,7 +538,7 @@ class CreateIssueV4Response(SdkResponse):
 
 
         :return: The tracker of this CreateIssueV4Response.
-        :rtype: IssueItemSFV4Tracker
+        :rtype: IssueItemSfV4Tracker
         """
         return self._tracker
 
@@ -575,7 +548,7 @@ class CreateIssueV4Response(SdkResponse):
 
 
         :param tracker: The tracker of this CreateIssueV4Response.
-        :type: IssueItemSFV4Tracker
+        :type: IssueItemSfV4Tracker
         """
         self._tracker = tracker
 

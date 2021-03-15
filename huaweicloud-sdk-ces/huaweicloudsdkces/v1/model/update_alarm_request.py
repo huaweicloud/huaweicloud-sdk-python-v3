@@ -32,7 +32,7 @@ class UpdateAlarmRequest:
         'body': 'body'
     }
 
-    def __init__(self, alarm_id='al15454523384878yogJg6ao', body=None):
+    def __init__(self, alarm_id=None, body=None):
         """UpdateAlarmRequest - a model defined in huaweicloud sdk"""
         
         

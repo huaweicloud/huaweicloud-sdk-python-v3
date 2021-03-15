@@ -1,3 +1,119 @@
+# 3.0.35-rc 2021-03-15
+
+### HuaweiCloud SDK Core
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - If the `endpoint` input by the user does not contain a protocol prefix, the `https` prefix will be automatically
+      added.
+    - Do not support the default values of the optional parameters anymore.
+
+### HuaweiCloud SDK CES
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Class adjustment in interface `CreateAlarmRequestBody`: change class definition of property `metric`
+      from `MetricInfoForAlarm` to `MetricForAlarm`.
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+    - Support more interfaces:
+        - `RestoreNewInstance`
+        - `ListSessions`
+        - `DeleteSession`
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+    - Support more interface: `ShowServerGroup`.
+- _Bug Fix_
+    - None
+- _Change_
+    - Change the interface name from `ShowWindowsServerPassword` to `ShowServerPassword`.
+    - Change the interface name from `DeleteWindowsServerPassword` to `DeleteServerPassword`.
+
+### HuaweiCloud SDK ELB
+
+- _Features_
+    - Support more interface: `ListAllMembers`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Interface `ListDependencies` adjustment: change the data type of property `size` of the response definition from
+      string to int.
+
+### HuaweiCloud SDK IAM
+
+- _Features_
+    - Support more interfaces:
+        - `KeystoneShowIdentityProvider`
+        - `KeystoneCreateIdentityProvider`
+        - `KeystoneUpdateIdentityProvider`
+        - `KeystoneDeleteIdentityProvider`
+        - `CreateTokenWithIdToken`
+- _Bug Fix_
+    - None
+- _Change_
+    - Do not support interface `CreateUnscopeTokenByIdpInitiated` anymore.
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+    - Support more interfaces:
+        - `ListImageByTags` which mead list images queried by tags.
+        - `ListImagesTags` which means list all tags of all images in current account.
+        - `ListImageTags` which means list all tags of specified image.
+        - `AddImageTag`
+        - `DeleteImageTag`
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK ProjectMan
+
+- _Features_
+    - Support more interfaces:
+        - `CreateCustomfields`
+        - `ShowBugsPerDeveloper`
+        - `ShowCompletionRate`
+        - `ShowBugDensityV2`
+        - `ShowProjectInfoV4`
+- _Bug Fix_
+    - Change the incorrect name of interface from `ShowtIssueCompletionRate` to `ShowIssueCompletionRate`.
+- _Change_
+    - Change the data type of property `created_time` and `updated_time` in class `ListProjectV4ResponseBody` from
+      string to int.
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+    - Support `Postgresql` related interfaces.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
 # 3.0.34-rc 2021-02-27
 
 ### HuaweiCloud SDK Core
@@ -33,7 +149,9 @@
 - _Features_
     - Support more interfaces: `DownloadSlowlog` and `DownloadErrorlog`.
 - _Bug Fix_
-    - Correct operation name from `ModifyConfigurationParameter` to `UpdateConfigurationParameter`, change the class name of this operation from `ModifyConfigurationParameterRequestBody` to `UpdateConfigurationParameterRequestBody`.
+    - Correct operation name from `ModifyConfigurationParameter` to `UpdateConfigurationParameter`, change the class
+      name of this operation from `ModifyConfigurationParameterRequestBody` to `UpdateConfigurationParameterRequestBody`
+      .
 - _Change_
     - None
 
@@ -87,7 +205,8 @@
 - _Bug Fix_
     - None
 - _Change_
-    - Hide the internal fields `Sp-Auth-Token` and `Stage-Auth-Token` of all interfaces which doesn't affect actual use in SDK.
+    - Hide the internal fields `Sp-Auth-Token` and `Stage-Auth-Token` of all interfaces which doesn't affect actual use
+      in SDK.
 
 ### HuaweiCloud SDK IMS
 
@@ -116,9 +235,11 @@
     - Correct operation name from `DoManualBackup` to `CreateManualBackup`.
     - Correct operation name from `ModifyConfiguration` to `UpdateConfiguration`.
     - Correct operation name from `ModifyInstanceConfiguration` to `UpdateInstanceConfiguration`.
-    - Fix the problem of circular dependency in the classes of `CreateInstanceResponse` and `CreateConfigurationResponse`.
+    - Fix the problem of circular dependency in the classes of `CreateInstanceResponse`
+      and `CreateConfigurationResponse`.
 - _Change_
-    - Add property `is_auto_pay` to the operation `StartInstanceAction` in the scenario of changing a single-node system to a primary/standby mode.
+    - Add property `is_auto_pay` to the operation `StartInstanceAction` in the scenario of changing a single-node system
+      to a primary/standby mode.
 
 # 3.0.33-rc 2021-02-07
 

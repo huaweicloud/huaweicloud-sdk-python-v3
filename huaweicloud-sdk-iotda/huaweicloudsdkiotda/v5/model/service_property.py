@@ -52,7 +52,7 @@ class ServiceProperty:
         'default_value': 'default_value'
     }
 
-    def __init__(self, property_name=None, data_type=None, required=False, enum_list=None, min=None, max=None, max_length=None, step=None, unit=None, method=None, description=None, default_value=None):
+    def __init__(self, property_name=None, data_type=None, required=None, enum_list=None, min=None, max=None, max_length=None, step=None, unit=None, method=None, description=None, default_value=None):
         """ServiceProperty - a model defined in huaweicloud sdk"""
         
         

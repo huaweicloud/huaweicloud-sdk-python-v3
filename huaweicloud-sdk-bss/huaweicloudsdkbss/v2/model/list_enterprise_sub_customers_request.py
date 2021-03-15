@@ -40,7 +40,7 @@ class ListEnterpriseSubCustomersRequest:
         'org_id': 'org_id'
     }
 
-    def __init__(self, sub_customer_account_name=None, sub_customer_display_name=None, fuzzy_query=None, offset=0, limit=10, org_id=None):
+    def __init__(self, sub_customer_account_name=None, sub_customer_display_name=None, fuzzy_query=None, offset=None, limit=None, org_id=None):
         """ListEnterpriseSubCustomersRequest - a model defined in huaweicloud sdk"""
         
         

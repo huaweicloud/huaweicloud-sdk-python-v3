@@ -40,7 +40,7 @@ class PrePaidServerRootVolume:
         'hwpassthrough': 'hw:passthrough'
     }
 
-    def __init__(self, volumetype=None, size=None, extendparam=None, cluster_type=None, cluster_id=None, hwpassthrough=False):
+    def __init__(self, volumetype=None, size=None, extendparam=None, cluster_type=None, cluster_id=None, hwpassthrough=None):
         """PrePaidServerRootVolume - a model defined in huaweicloud sdk"""
         
         

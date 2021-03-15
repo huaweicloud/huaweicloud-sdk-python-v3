@@ -48,7 +48,7 @@ class ServiceCommandPara:
         'description': 'description'
     }
 
-    def __init__(self, para_name=None, data_type=None, required=False, enum_list=None, min=None, max=None, max_length=None, step=None, unit=None, description=None):
+    def __init__(self, para_name=None, data_type=None, required=None, enum_list=None, min=None, max=None, max_length=None, step=None, unit=None, description=None):
         """ServiceCommandPara - a model defined in huaweicloud sdk"""
         
         

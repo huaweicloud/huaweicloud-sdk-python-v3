@@ -32,7 +32,7 @@ class ListResourceTypesRequest:
         'resource_type_code': 'resource_type_code'
     }
 
-    def __init__(self, x_language='zh_cn', resource_type_code=None):
+    def __init__(self, x_language=None, resource_type_code=None):
         """ListResourceTypesRequest - a model defined in huaweicloud sdk"""
         
         

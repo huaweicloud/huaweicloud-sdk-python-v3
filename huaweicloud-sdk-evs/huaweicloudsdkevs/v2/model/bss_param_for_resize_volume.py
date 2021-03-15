@@ -30,7 +30,7 @@ class BssParamForResizeVolume:
         'is_auto_pay': 'isAutoPay'
     }
 
-    def __init__(self, is_auto_pay='false'):
+    def __init__(self, is_auto_pay=None):
         """BssParamForResizeVolume - a model defined in huaweicloud sdk"""
         
         

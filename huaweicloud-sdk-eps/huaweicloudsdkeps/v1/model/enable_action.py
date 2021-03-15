@@ -30,7 +30,7 @@ class EnableAction:
         'action': 'action'
     }
 
-    def __init__(self, action='enable'):
+    def __init__(self, action=None):
         """EnableAction - a model defined in huaweicloud sdk"""
         
         

@@ -42,7 +42,7 @@ class PasswordPolicyOption:
         'password_char_combination': 'password_char_combination'
     }
 
-    def __init__(self, maximum_consecutive_identical_chars=None, minimum_password_age=None, minimum_password_length=None, number_of_recent_passwords_disallowed=None, password_not_username_or_invert=None, password_validity_period=None, password_char_combination=2):
+    def __init__(self, maximum_consecutive_identical_chars=None, minimum_password_age=None, minimum_password_length=None, number_of_recent_passwords_disallowed=None, password_not_username_or_invert=None, password_validity_period=None, password_char_combination=None):
         """PasswordPolicyOption - a model defined in huaweicloud sdk"""
         
         

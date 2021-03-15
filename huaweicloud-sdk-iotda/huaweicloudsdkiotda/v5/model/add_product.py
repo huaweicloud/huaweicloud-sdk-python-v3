@@ -48,7 +48,7 @@ class AddProduct:
         'app_id': 'app_id'
     }
 
-    def __init__(self, product_id=None, name=None, device_type=None, protocol_type=None, data_format='json', service_capabilities=None, manufacturer_name=None, industry=None, description=None, app_id=None):
+    def __init__(self, product_id=None, name=None, device_type=None, protocol_type=None, data_format=None, service_capabilities=None, manufacturer_name=None, industry=None, description=None, app_id=None):
         """AddProduct - a model defined in huaweicloud sdk"""
         
         

@@ -46,7 +46,7 @@ class ListApisBindedToAppV2Request:
         'limit': 'limit'
     }
 
-    def __init__(self, instance_id=None, app_id=None, api_id=None, api_name=None, group_id=None, group_name=None, env_id=None, offset=0, limit=20):
+    def __init__(self, instance_id=None, app_id=None, api_id=None, api_name=None, group_id=None, group_name=None, env_id=None, offset=None, limit=None):
         """ListApisBindedToAppV2Request - a model defined in huaweicloud sdk"""
         
         

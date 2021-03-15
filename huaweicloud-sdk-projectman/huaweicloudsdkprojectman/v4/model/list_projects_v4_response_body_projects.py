@@ -27,8 +27,8 @@ class ListProjectsV4ResponseBodyProjects:
         'project_id': 'str',
         'project_name': 'str',
         'description': 'str',
-        'created_time': 'str',
-        'updated_time': 'str',
+        'created_time': 'int',
+        'updated_time': 'int',
         'project_type': 'str',
         'creator': 'ListProjectsV4ResponseBodyCreator'
     }
@@ -171,7 +171,7 @@ class ListProjectsV4ResponseBodyProjects:
         项目创建时间
 
         :return: The created_time of this ListProjectsV4ResponseBodyProjects.
-        :rtype: str
+        :rtype: int
         """
         return self._created_time
 
@@ -182,7 +182,7 @@ class ListProjectsV4ResponseBodyProjects:
         项目创建时间
 
         :param created_time: The created_time of this ListProjectsV4ResponseBodyProjects.
-        :type: str
+        :type: int
         """
         self._created_time = created_time
 
@@ -193,7 +193,7 @@ class ListProjectsV4ResponseBodyProjects:
         项目更新时间
 
         :return: The updated_time of this ListProjectsV4ResponseBodyProjects.
-        :rtype: str
+        :rtype: int
         """
         return self._updated_time
 
@@ -204,7 +204,7 @@ class ListProjectsV4ResponseBodyProjects:
         项目更新时间
 
         :param updated_time: The updated_time of this ListProjectsV4ResponseBodyProjects.
-        :type: str
+        :type: int
         """
         self._updated_time = updated_time
 

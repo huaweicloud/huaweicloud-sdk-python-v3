@@ -48,7 +48,7 @@ class ListServersDetailsRequest:
         'tags': 'tags'
     }
 
-    def __init__(self, enterprise_project_id=None, flavor=None, ip=None, limit=25, name=None, not_tags=None, offset=1, reservation_id=None, status=None, tags=None):
+    def __init__(self, enterprise_project_id=None, flavor=None, ip=None, limit=None, name=None, not_tags=None, offset=None, reservation_id=None, status=None, tags=None):
         """ListServersDetailsRequest - a model defined in huaweicloud sdk"""
         
         

@@ -72,7 +72,7 @@ class PostPaidServer:
         'description': 'description'
     }
 
-    def __init__(self, auto_terminate_time=None, admin_pass=None, availability_zone=None, count=1, data_volumes=None, extendparam=None, flavor_ref=None, image_ref=None, is_auto_rename=True, key_name=None, metadata=None, name=None, nics=None, osscheduler_hints=None, publicip=None, root_volume=None, security_groups=None, server_tags=None, tags=None, user_data=None, vpcid=None, description=None):
+    def __init__(self, auto_terminate_time=None, admin_pass=None, availability_zone=None, count=None, data_volumes=None, extendparam=None, flavor_ref=None, image_ref=None, is_auto_rename=None, key_name=None, metadata=None, name=None, nics=None, osscheduler_hints=None, publicip=None, root_volume=None, security_groups=None, server_tags=None, tags=None, user_data=None, vpcid=None, description=None):
         """PostPaidServer - a model defined in huaweicloud sdk"""
         
         

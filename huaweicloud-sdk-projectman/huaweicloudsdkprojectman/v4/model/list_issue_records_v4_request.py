@@ -36,7 +36,7 @@ class ListIssueRecordsV4Request:
         'limit': 'limit'
     }
 
-    def __init__(self, project_id=None, issue_id=None, offset=0, limit=10):
+    def __init__(self, project_id=None, issue_id=None, offset=None, limit=None):
         """ListIssueRecordsV4Request - a model defined in huaweicloud sdk"""
         
         

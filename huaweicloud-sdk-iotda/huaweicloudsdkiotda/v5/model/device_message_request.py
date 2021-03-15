@@ -42,7 +42,7 @@ class DeviceMessageRequest:
         'topic_full_name': 'topic_full_name'
     }
 
-    def __init__(self, message_id=None, name=None, message=None, encoding='none', payload_format='standard', topic=None, topic_full_name=None):
+    def __init__(self, message_id=None, name=None, message=None, encoding=None, payload_format=None, topic=None, topic_full_name=None):
         """DeviceMessageRequest - a model defined in huaweicloud sdk"""
         
         

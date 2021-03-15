@@ -42,7 +42,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
         'accept_language': 'Accept-Language'
     }
 
-    def __init__(self, conf_uuid=None, offset=0, limit=20, user_uuid=None, x_authorization_type=None, x_site_id=None, accept_language='zh-CN'):
+    def __init__(self, conf_uuid=None, offset=None, limit=None, user_uuid=None, x_authorization_type=None, x_site_id=None, accept_language=None):
         """SearchCtlRecordsOfHisMeetingRequest - a model defined in huaweicloud sdk"""
         
         

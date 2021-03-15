@@ -44,6 +44,8 @@ class InstanceResponse:
         'enterprise_project_id': 'str',
         'disk_encryption_id': 'str',
         'flavor_ref': 'str',
+        'cpu': 'str',
+        'mem': 'str',
         'volume': 'Volume',
         'region': 'str',
         'vpc_id': 'str',
@@ -80,6 +82,8 @@ class InstanceResponse:
         'enterprise_project_id': 'enterprise_project_id',
         'disk_encryption_id': 'disk_encryption_id',
         'flavor_ref': 'flavor_ref',
+        'cpu': 'cpu',
+        'mem': 'mem',
         'volume': 'volume',
         'region': 'region',
         'vpc_id': 'vpc_id',
@@ -94,7 +98,7 @@ class InstanceResponse:
         'associated_with_ddm': 'associated_with_ddm'
     }
 
-    def __init__(self, id=None, status=None, private_ips=None, private_dns_names=None, public_ips=None, type=None, created=None, updated=None, db_user_name=None, switch_strategy=None, maintenance_window=None, nodes=None, related_instance=None, name=None, datastore=None, ha=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None, storage_used_space=None, order_id=None, associated_with_ddm=None):
+    def __init__(self, id=None, status=None, private_ips=None, private_dns_names=None, public_ips=None, type=None, created=None, updated=None, db_user_name=None, switch_strategy=None, maintenance_window=None, nodes=None, related_instance=None, name=None, datastore=None, ha=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, cpu=None, mem=None, volume=None, region=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None, storage_used_space=None, order_id=None, associated_with_ddm=None):
         """InstanceResponse - a model defined in huaweicloud sdk"""
         
         
@@ -120,6 +124,8 @@ class InstanceResponse:
         self._enterprise_project_id = None
         self._disk_encryption_id = None
         self._flavor_ref = None
+        self._cpu = None
+        self._mem = None
         self._volume = None
         self._region = None
         self._vpc_id = None
@@ -157,6 +163,10 @@ class InstanceResponse:
         self.enterprise_project_id = enterprise_project_id
         self.disk_encryption_id = disk_encryption_id
         self.flavor_ref = flavor_ref
+        if cpu is not None:
+            self.cpu = cpu
+        if mem is not None:
+            self.mem = mem
         self.volume = volume
         self.region = region
         self.vpc_id = vpc_id
@@ -623,6 +633,50 @@ class InstanceResponse:
         :type: str
         """
         self._flavor_ref = flavor_ref
+
+    @property
+    def cpu(self):
+        """Gets the cpu of this InstanceResponse.
+
+        CPU大小。例如，1表示1U。
+
+        :return: The cpu of this InstanceResponse.
+        :rtype: str
+        """
+        return self._cpu
+
+    @cpu.setter
+    def cpu(self, cpu):
+        """Sets the cpu of this InstanceResponse.
+
+        CPU大小。例如，1表示1U。
+
+        :param cpu: The cpu of this InstanceResponse.
+        :type: str
+        """
+        self._cpu = cpu
+
+    @property
+    def mem(self):
+        """Gets the mem of this InstanceResponse.
+
+        内存大小（单位：GB）。
+
+        :return: The mem of this InstanceResponse.
+        :rtype: str
+        """
+        return self._mem
+
+    @mem.setter
+    def mem(self, mem):
+        """Sets the mem of this InstanceResponse.
+
+        内存大小（单位：GB）。
+
+        :param mem: The mem of this InstanceResponse.
+        :type: str
+        """
+        self._mem = mem
 
     @property
     def volume(self):

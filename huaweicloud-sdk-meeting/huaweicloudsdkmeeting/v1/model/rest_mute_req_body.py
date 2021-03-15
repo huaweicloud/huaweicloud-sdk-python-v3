@@ -32,7 +32,7 @@ class RestMuteReqBody:
         'allow_unmute_by_oneself': 'allowUnmuteByOneself'
     }
 
-    def __init__(self, is_mute=None, allow_unmute_by_oneself=1):
+    def __init__(self, is_mute=None, allow_unmute_by_oneself=None):
         """RestMuteReqBody - a model defined in huaweicloud sdk"""
         
         

@@ -42,7 +42,7 @@ class AdminDTO:
         'send_notify': 'sendNotify'
     }
 
-    def __init__(self, account=None, name=None, pwd=None, email=None, phone=None, country='chinaPR', send_notify=False):
+    def __init__(self, account=None, name=None, pwd=None, email=None, phone=None, country=None, send_notify=None):
         """AdminDTO - a model defined in huaweicloud sdk"""
         
         

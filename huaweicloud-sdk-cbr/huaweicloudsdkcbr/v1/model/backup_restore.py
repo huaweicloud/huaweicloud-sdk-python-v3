@@ -38,7 +38,7 @@ class BackupRestore:
         'resource_id': 'resource_id'
     }
 
-    def __init__(self, mappings=None, power_on=True, server_id=None, volume_id=None, resource_id=None):
+    def __init__(self, mappings=None, power_on=None, server_id=None, volume_id=None, resource_id=None):
         """BackupRestore - a model defined in huaweicloud sdk"""
         
         

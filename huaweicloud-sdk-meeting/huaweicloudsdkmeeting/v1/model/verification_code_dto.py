@@ -34,7 +34,7 @@ class VerificationCodeDTO:
         'country': 'country'
     }
 
-    def __init__(self, contact=None, verification_code=None, country='chinaPR'):
+    def __init__(self, contact=None, verification_code=None, country=None):
         """VerificationCodeDTO - a model defined in huaweicloud sdk"""
         
         

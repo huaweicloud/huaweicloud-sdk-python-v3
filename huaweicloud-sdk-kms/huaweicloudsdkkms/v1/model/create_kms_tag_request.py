@@ -34,7 +34,7 @@ class CreateKmsTagRequest:
         'body': 'body'
     }
 
-    def __init__(self, version_id='v1.0', key_id=None, body=None):
+    def __init__(self, version_id=None, key_id=None, body=None):
         """CreateKmsTagRequest - a model defined in huaweicloud sdk"""
         
         

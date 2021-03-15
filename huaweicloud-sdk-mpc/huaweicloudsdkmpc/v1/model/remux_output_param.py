@@ -34,7 +34,7 @@ class RemuxOutputParam:
         'remove_meta': 'remove_meta'
     }
 
-    def __init__(self, format='MP4', segment_duration=5, remove_meta=False):
+    def __init__(self, format=None, segment_duration=None, remove_meta=None):
         """RemuxOutputParam - a model defined in huaweicloud sdk"""
         
         

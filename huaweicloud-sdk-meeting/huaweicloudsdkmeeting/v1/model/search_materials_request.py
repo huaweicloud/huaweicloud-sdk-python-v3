@@ -38,7 +38,7 @@ class SearchMaterialsRequest:
         'search_key': 'searchKey'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, offset=0, limit=100, search_key=None):
+    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None):
         """SearchMaterialsRequest - a model defined in huaweicloud sdk"""
         
         

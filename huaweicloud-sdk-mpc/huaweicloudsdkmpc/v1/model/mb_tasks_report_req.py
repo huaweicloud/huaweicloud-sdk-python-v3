@@ -38,7 +38,7 @@ class MbTasksReportReq:
         'parameter': 'parameter'
     }
 
-    def __init__(self, task_id=None, status=None, task_name=None, retry=False, parameter=None):
+    def __init__(self, task_id=None, status=None, task_name=None, retry=None, parameter=None):
         """MbTasksReportReq - a model defined in huaweicloud sdk"""
         
         

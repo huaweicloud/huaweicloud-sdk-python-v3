@@ -32,7 +32,7 @@ class UpdatePostalRequest:
         'body': 'body'
     }
 
-    def __init__(self, x_language='zh_CN', body=None):
+    def __init__(self, x_language=None, body=None):
         """UpdatePostalRequest - a model defined in huaweicloud sdk"""
         
         

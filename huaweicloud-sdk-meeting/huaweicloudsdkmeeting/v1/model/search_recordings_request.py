@@ -48,7 +48,7 @@ class SearchRecordingsRequest:
         'x_site_id': 'X-Site-Id'
     }
 
-    def __init__(self, user_uuid=None, offset=0, limit=20, query_all=False, search_key=None, start_date=None, end_date=None, sort_type='DSC_StartTIME', x_authorization_type=None, x_site_id=None):
+    def __init__(self, user_uuid=None, offset=None, limit=None, query_all=None, search_key=None, start_date=None, end_date=None, sort_type=None, x_authorization_type=None, x_site_id=None):
         """SearchRecordingsRequest - a model defined in huaweicloud sdk"""
         
         

@@ -40,7 +40,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
         'limit': 'limit'
     }
 
-    def __init__(self, instance_id=None, throttle_id=None, object_type=None, app_name=None, offset=0, limit=20):
+    def __init__(self, instance_id=None, throttle_id=None, object_type=None, app_name=None, offset=None, limit=None):
         """ListSpecialThrottlingConfigurationsV2Request - a model defined in huaweicloud sdk"""
         
         

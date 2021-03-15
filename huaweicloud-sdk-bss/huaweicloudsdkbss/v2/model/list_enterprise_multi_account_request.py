@@ -36,7 +36,7 @@ class ListEnterpriseMultiAccountRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, sub_customer_id=None, balance_type=None, offset=0, limit=10):
+    def __init__(self, sub_customer_id=None, balance_type=None, offset=None, limit=None):
         """ListEnterpriseMultiAccountRequest - a model defined in huaweicloud sdk"""
         
         

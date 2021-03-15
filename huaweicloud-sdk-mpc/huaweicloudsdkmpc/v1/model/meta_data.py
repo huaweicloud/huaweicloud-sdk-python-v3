@@ -163,7 +163,7 @@ class MetaData:
     def bitrate(self):
         """Gets the bitrate of this MetaData.
 
-        总码率。 
+        总码率。单位：bit/秒 
 
         :return: The bitrate of this MetaData.
         :rtype: int
@@ -174,7 +174,7 @@ class MetaData:
     def bitrate(self, bitrate):
         """Sets the bitrate of this MetaData.
 
-        总码率。 
+        总码率。单位：bit/秒 
 
         :param bitrate: The bitrate of this MetaData.
         :type: int

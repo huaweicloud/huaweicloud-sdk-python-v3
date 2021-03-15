@@ -92,7 +92,7 @@ class ApiRespBaseInfo:
         'publish_id': 'publish_id'
     }
 
-    def __init__(self, name=None, type=None, version=None, req_protocol='HTTPS', req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=False, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, id=None, status=None, arrange_necessary=None, register_time=None, update_time=None, group_name=None, group_version='V1', run_env_id=None, run_env_name=None, publish_id=None):
+    def __init__(self, name=None, type=None, version=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=None, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, id=None, status=None, arrange_necessary=None, register_time=None, update_time=None, group_name=None, group_version=None, run_env_id=None, run_env_name=None, publish_id=None):
         """ApiRespBaseInfo - a model defined in huaweicloud sdk"""
         
         

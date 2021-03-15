@@ -42,7 +42,7 @@ class ListVpcRoutesRequest:
         'tenant_id': 'tenant_id'
     }
 
-    def __init__(self, limit=2000, marker=None, id=None, type=None, vpc_id=None, destination=None, tenant_id=None):
+    def __init__(self, limit=None, marker=None, id=None, type=None, vpc_id=None, destination=None, tenant_id=None):
         """ListVpcRoutesRequest - a model defined in huaweicloud sdk"""
         
         

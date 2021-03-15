@@ -45,7 +45,7 @@ class ShowCurUserRoleResponse(SdkResponse):
     def user_role(self):
         """Gets the user_role of this ShowCurUserRoleResponse.
 
-        成员角色 -1 项目创建者 3 项目经理 4 开发人员 5 测试经理 6 测试人员 7 参与者 8 浏览
+        用户角色id
 
         :return: The user_role of this ShowCurUserRoleResponse.
         :rtype: int
@@ -56,7 +56,7 @@ class ShowCurUserRoleResponse(SdkResponse):
     def user_role(self, user_role):
         """Sets the user_role of this ShowCurUserRoleResponse.
 
-        成员角色 -1 项目创建者 3 项目经理 4 开发人员 5 测试经理 6 测试人员 7 参与者 8 浏览
+        用户角色id
 
         :param user_role: The user_role of this ShowCurUserRoleResponse.
         :type: int

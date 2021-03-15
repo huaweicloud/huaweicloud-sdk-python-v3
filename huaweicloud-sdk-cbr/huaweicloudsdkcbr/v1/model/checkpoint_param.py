@@ -40,7 +40,7 @@ class CheckpointParam:
         'resource_details': 'resource_details'
     }
 
-    def __init__(self, auto_trigger=False, description=None, incremental=True, name=None, resources=None, resource_details=None):
+    def __init__(self, auto_trigger=None, description=None, incremental=None, name=None, resources=None, resource_details=None):
         """CheckpointParam - a model defined in huaweicloud sdk"""
         
         

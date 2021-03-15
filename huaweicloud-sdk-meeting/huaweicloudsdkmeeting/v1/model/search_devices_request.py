@@ -44,7 +44,7 @@ class SearchDevicesRequest:
         'enable_sub_dept': 'enableSubDept'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=100, search_key=None, model=None, dept_code=None, enable_sub_dept=None):
+    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, model=None, dept_code=None, enable_sub_dept=None):
         """SearchDevicesRequest - a model defined in huaweicloud sdk"""
         
         

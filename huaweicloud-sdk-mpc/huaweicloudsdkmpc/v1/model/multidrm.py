@@ -38,7 +38,7 @@ class Multidrm:
         'drm_list': 'drm_list'
     }
 
-    def __init__(self, content_id=None, streaming_mode=None, encrypt_audio=None, emi=16420, drm_list=None):
+    def __init__(self, content_id=None, streaming_mode=None, encrypt_audio=None, emi=None, drm_list=None):
         """Multidrm - a model defined in huaweicloud sdk"""
         
         

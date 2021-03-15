@@ -40,7 +40,7 @@ class ModDeptDTO:
         'designated_out_dept_codes': 'designatedOutDeptCodes'
     }
 
-    def __init__(self, dept_name=None, parent_dept_code='1', note=None, in_permission=None, out_permission=None, designated_out_dept_codes=None):
+    def __init__(self, dept_name=None, parent_dept_code=None, note=None, in_permission=None, out_permission=None, designated_out_dept_codes=None):
         """ModDeptDTO - a model defined in huaweicloud sdk"""
         
         

@@ -30,7 +30,7 @@ class RestSetRecordReqBody:
         'is_record': 'isRecord'
     }
 
-    def __init__(self, is_record=0):
+    def __init__(self, is_record=None):
         """RestSetRecordReqBody - a model defined in huaweicloud sdk"""
         
         

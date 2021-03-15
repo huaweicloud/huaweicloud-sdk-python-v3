@@ -44,7 +44,7 @@ class ListUsersOfStreamRequest:
         'end_time': 'end_time'
     }
 
-    def __init__(self, play_domain=None, app=None, stream=None, isp=None, region=None, interval=60, start_time=None, end_time=None):
+    def __init__(self, play_domain=None, app=None, stream=None, isp=None, region=None, interval=None, start_time=None, end_time=None):
         """ListUsersOfStreamRequest - a model defined in huaweicloud sdk"""
         
         

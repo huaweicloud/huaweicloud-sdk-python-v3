@@ -32,7 +32,7 @@ class BatchDeleteVolumeTagsRequestBody:
         'tags': 'tags'
     }
 
-    def __init__(self, action='delete', tags=None):
+    def __init__(self, action=None, tags=None):
         """BatchDeleteVolumeTagsRequestBody - a model defined in huaweicloud sdk"""
         
         

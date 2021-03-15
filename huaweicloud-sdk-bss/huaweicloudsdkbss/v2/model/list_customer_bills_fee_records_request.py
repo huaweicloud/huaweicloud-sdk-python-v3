@@ -60,7 +60,7 @@ class ListCustomerBillsFeeRecordsRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, x_language='zh_cn', bill_cycle=None, provider_type=None, service_type_code=None, resource_type_code=None, region_code=None, charging_mode=None, bill_type=None, trade_id=None, enterprise_project_id=None, include_zero_record=None, status=None, method=None, sub_customer_id=None, offset=0, limit=10):
+    def __init__(self, x_language=None, bill_cycle=None, provider_type=None, service_type_code=None, resource_type_code=None, region_code=None, charging_mode=None, bill_type=None, trade_id=None, enterprise_project_id=None, include_zero_record=None, status=None, method=None, sub_customer_id=None, offset=None, limit=None):
         """ListCustomerBillsFeeRecordsRequest - a model defined in huaweicloud sdk"""
         
         

@@ -34,7 +34,7 @@ class EnterpriseProject:
         'type': 'type'
     }
 
-    def __init__(self, name=None, description=None, type='prod'):
+    def __init__(self, name=None, description=None, type=None):
         """EnterpriseProject - a model defined in huaweicloud sdk"""
         
         

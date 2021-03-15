@@ -1064,6 +1064,105 @@ class ElbClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_all_members(self, request):
+        """后端服务器全局列表
+
+        查询当前租户下的后端服务器列表。
+
+        :param ListAllMembersRequest request
+        :return: ListAllMembersResponse
+        """
+        return self.list_all_members_with_http_info(request)
+
+    def list_all_members_with_http_info(self, request):
+        """后端服务器全局列表
+
+        查询当前租户下的后端服务器列表。
+
+        :param ListAllMembersRequest request
+        :return: ListAllMembersResponse
+        """
+
+        all_params = ['address', 'admin_state_up', 'enterprise_project_id', 'id', 'ip_version', 'limit', 'loadbalancer_id', 'marker', 'name', 'operating_status', 'page_reverse', 'pool_id', 'protocol_port', 'subnet_cidr_id', 'weight']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'address' in local_var_params:
+            query_params.append(('address', local_var_params['address']))
+            collection_formats['address'] = 'multi'
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'multi'
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'ip_version' in local_var_params:
+            query_params.append(('ip_version', local_var_params['ip_version']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'loadbalancer_id' in local_var_params:
+            query_params.append(('loadbalancer_id', local_var_params['loadbalancer_id']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'operating_status' in local_var_params:
+            query_params.append(('operating_status', local_var_params['operating_status']))
+            collection_formats['operating_status'] = 'multi'
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'pool_id' in local_var_params:
+            query_params.append(('pool_id', local_var_params['pool_id']))
+        if 'protocol_port' in local_var_params:
+            query_params.append(('protocol_port', local_var_params['protocol_port']))
+            collection_formats['protocol_port'] = 'multi'
+        if 'subnet_cidr_id' in local_var_params:
+            query_params.append(('subnet_cidr_id', local_var_params['subnet_cidr_id']))
+            collection_formats['subnet_cidr_id'] = 'multi'
+        if 'weight' in local_var_params:
+            query_params.append(('weight', local_var_params['weight']))
+            collection_formats['weight'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/elb/members',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAllMembersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_availability_zones(self, request):
         """查询可用区列表
 

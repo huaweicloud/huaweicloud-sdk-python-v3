@@ -64,7 +64,7 @@ class CreateServers:
         'server_tags': 'server_tags'
     }
 
-    def __init__(self, image_ref=None, flavor_ref=None, name=None, metadata=None, user_data=None, admin_pass=None, key_name=None, security_groups=None, nics=None, availability_zone=None, vpcid=None, publicip=None, count=1, root_volume=None, data_volumes=None, extendparam=None, scheduler_hints=None, server_tags=None):
+    def __init__(self, image_ref=None, flavor_ref=None, name=None, metadata=None, user_data=None, admin_pass=None, key_name=None, security_groups=None, nics=None, availability_zone=None, vpcid=None, publicip=None, count=None, root_volume=None, data_volumes=None, extendparam=None, scheduler_hints=None, server_tags=None):
         """CreateServers - a model defined in huaweicloud sdk"""
         
         

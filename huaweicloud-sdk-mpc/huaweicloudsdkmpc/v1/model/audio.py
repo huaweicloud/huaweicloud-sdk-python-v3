@@ -38,7 +38,7 @@ class Audio:
         'channels': 'channels'
     }
 
-    def __init__(self, output_policy='transcode', codec=1, sample_rate=1, bitrate=None, channels=None):
+    def __init__(self, output_policy=None, codec=None, sample_rate=None, bitrate=None, channels=None):
         """Audio - a model defined in huaweicloud sdk"""
         
         

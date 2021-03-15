@@ -56,7 +56,7 @@ class CreateVolumeOption:
         'tags': 'tags'
     }
 
-    def __init__(self, availability_zone=None, backup_id=None, count=None, description=None, enterprise_project_id=None, image_ref=None, metadata=None, multiattach=None, name=None, shareable='false', size=None, snapshot_id=None, volume_type=None, tags=None):
+    def __init__(self, availability_zone=None, backup_id=None, count=None, description=None, enterprise_project_id=None, image_ref=None, metadata=None, multiattach=None, name=None, shareable=None, size=None, snapshot_id=None, volume_type=None, tags=None):
         """CreateVolumeOption - a model defined in huaweicloud sdk"""
         
         

@@ -34,7 +34,7 @@ class CreatePublicipOption:
         'ip_version': 'ip_version'
     }
 
-    def __init__(self, ip_address=None, type=None, ip_version=4):
+    def __init__(self, ip_address=None, type=None, ip_version=None):
         """CreatePublicipOption - a model defined in huaweicloud sdk"""
         
         

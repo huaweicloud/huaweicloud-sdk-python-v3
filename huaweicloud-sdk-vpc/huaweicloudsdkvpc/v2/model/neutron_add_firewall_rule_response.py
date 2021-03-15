@@ -44,7 +44,7 @@ class NeutronAddFirewallRuleResponse(SdkResponse):
         'project_id': 'project_id'
     }
 
-    def __init__(self, id=None, name=None, description=None, firewall_rules=None, audited=False, public=False, tenant_id=None, project_id=None):
+    def __init__(self, id=None, name=None, description=None, firewall_rules=None, audited=None, public=None, tenant_id=None, project_id=None):
         """NeutronAddFirewallRuleResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()

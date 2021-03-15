@@ -70,7 +70,7 @@ class DatabaseForCreation:
     def character_set(self):
         """Gets the character_set of this DatabaseForCreation.
 
-        数据库使用的字符集。
+        数据库使用的字符集，例如utf8、gbk、ascii等MySQL支持的字符集。
 
         :return: The character_set of this DatabaseForCreation.
         :rtype: str
@@ -81,7 +81,7 @@ class DatabaseForCreation:
     def character_set(self, character_set):
         """Sets the character_set of this DatabaseForCreation.
 
-        数据库使用的字符集。
+        数据库使用的字符集，例如utf8、gbk、ascii等MySQL支持的字符集。
 
         :param character_set: The character_set of this DatabaseForCreation.
         :type: str

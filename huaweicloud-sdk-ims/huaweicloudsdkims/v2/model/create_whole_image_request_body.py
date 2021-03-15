@@ -50,7 +50,7 @@ class CreateWholeImageRequestBody:
         'vault_id': 'vault_id'
     }
 
-    def __init__(self, description=None, enterprise_project_id='0', image_tags=None, instance_id=None, name=None, tags=None, backup_id=None, whole_image_type=None, max_ram=None, min_ram=0, vault_id=None):
+    def __init__(self, description=None, enterprise_project_id=None, image_tags=None, instance_id=None, name=None, tags=None, backup_id=None, whole_image_type=None, max_ram=None, min_ram=None, vault_id=None):
         """CreateWholeImageRequestBody - a model defined in huaweicloud sdk"""
         
         

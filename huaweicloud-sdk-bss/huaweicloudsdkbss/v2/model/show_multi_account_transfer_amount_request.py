@@ -34,7 +34,7 @@ class ShowMultiAccountTransferAmountRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, balance_type=None, offset=0, limit=10):
+    def __init__(self, balance_type=None, offset=None, limit=None):
         """ShowMultiAccountTransferAmountRequest - a model defined in huaweicloud sdk"""
         
         

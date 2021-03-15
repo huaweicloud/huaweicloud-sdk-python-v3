@@ -42,7 +42,7 @@ class ListVpcPeeringsRequest:
         'vpc_id': 'vpc_id'
     }
 
-    def __init__(self, limit=2000, marker=None, id=None, name=None, status=None, tenant_id=None, vpc_id=None):
+    def __init__(self, limit=None, marker=None, id=None, name=None, status=None, tenant_id=None, vpc_id=None):
         """ListVpcPeeringsRequest - a model defined in huaweicloud sdk"""
         
         

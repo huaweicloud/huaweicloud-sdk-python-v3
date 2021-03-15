@@ -245,71 +245,6 @@ class ProjectManAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def batch_delete_iterations_v4_async(self, request):
-        """批量删除项目的迭代
-
-        批量删除项目的迭代
-
-        :param BatchDeleteIterationsV4Request request
-        :return: BatchDeleteIterationsV4Response
-        """
-        return self.batch_delete_iterations_v4_with_http_info(request)
-
-    def batch_delete_iterations_v4_with_http_info(self, request):
-        """批量删除项目的迭代
-
-        批量删除项目的迭代
-
-        :param BatchDeleteIterationsV4Request request
-        :return: BatchDeleteIterationsV4Response
-        """
-
-        all_params = ['project_id', 'batch_delete_iterations_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = ['apig-auth-iam']
-
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/iterations',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='BatchDeleteIterationsV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def batch_delete_members_v4_async(self, request):
         """批量删除项目成员
 
@@ -438,71 +373,6 @@ class ProjectManAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def create_iteration_v4_async(self, request):
-        """创建Scrum项目迭代
-
-        创建Scrum项目迭代
-
-        :param CreateIterationV4Request request
-        :return: CreateIterationV4Response
-        """
-        return self.create_iteration_v4_with_http_info(request)
-
-    def create_iteration_v4_with_http_info(self, request):
-        """创建Scrum项目迭代
-
-        创建Scrum项目迭代
-
-        :param CreateIterationV4Request request
-        :return: CreateIterationV4Response
-        """
-
-        all_params = ['project_id', 'create_iteration_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/iteration',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreateIterationV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def create_project_v4_async(self, request):
         """创建项目
 
@@ -560,71 +430,6 @@ class ProjectManAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateProjectV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def delete_iteration_v4_async(self, request):
-        """删除项目迭代
-
-        删除项目迭代
-
-        :param DeleteIterationV4Request request
-        :return: DeleteIterationV4Response
-        """
-        return self.delete_iteration_v4_with_http_info(request)
-
-    def delete_iteration_v4_with_http_info(self, request):
-        """删除项目迭代
-
-        删除项目迭代
-
-        :param DeleteIterationV4Request request
-        :return: DeleteIterationV4Response
-        """
-
-        all_params = ['project_id', 'iteration_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'iteration_id' in local_var_params:
-            path_params['iteration_id'] = local_var_params['iteration_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/iterations/{iteration_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='DeleteIterationV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -885,69 +690,6 @@ class ProjectManAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_project_iterations_v4_async(self, request):
-        """获取指定项目的迭代列表
-
-        获取项目迭代
-
-        :param ListProjectIterationsV4Request request
-        :return: ListProjectIterationsV4Response
-        """
-        return self.list_project_iterations_v4_with_http_info(request)
-
-    def list_project_iterations_v4_with_http_info(self, request):
-        """获取指定项目的迭代列表
-
-        获取项目迭代
-
-        :param ListProjectIterationsV4Request request
-        :return: ListProjectIterationsV4Response
-        """
-
-        all_params = ['project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/iterations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListProjectIterationsV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def list_project_members_v4_async(self, request):
         """获取指定项目的成员用户列表
 
@@ -1153,6 +895,201 @@ class ProjectManAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_bug_density_v2_async(self, request):
+        """查询缺陷密度
+
+        查询缺陷密度
+
+        :param ShowBugDensityV2Request request
+        :return: ShowBugDensityV2Response
+        """
+        return self.show_bug_density_v2_with_http_info(request)
+
+    def show_bug_density_v2_with_http_info(self, request):
+        """查询缺陷密度
+
+        查询缺陷密度
+
+        :param ShowBugDensityV2Request request
+        :return: ShowBugDensityV2Response
+        """
+
+        all_params = ['project_id', 'show_bug_density_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/bug-density/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowBugDensityV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_bugs_per_developer_async(self, request):
+        """查询人均bug
+
+        查询人均bug
+
+        :param ShowBugsPerDeveloperRequest request
+        :return: ShowBugsPerDeveloperResponse
+        """
+        return self.show_bugs_per_developer_with_http_info(request)
+
+    def show_bugs_per_developer_with_http_info(self, request):
+        """查询人均bug
+
+        查询人均bug
+
+        :param ShowBugsPerDeveloperRequest request
+        :return: ShowBugsPerDeveloperResponse
+        """
+
+        all_params = ['project_id', 'show_bugs_per_developer_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/bugs-per-developer/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowBugsPerDeveloperResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_completion_rate_async(self, request):
+        """查询需求按时完成率
+
+        查询需求按时完成率
+
+        :param ShowCompletionRateRequest request
+        :return: ShowCompletionRateResponse
+        """
+        return self.show_completion_rate_with_http_info(request)
+
+    def show_completion_rate_with_http_info(self, request):
+        """查询需求按时完成率
+
+        查询需求按时完成率
+
+        :param ShowCompletionRateRequest request
+        :return: ShowCompletionRateResponse
+        """
+
+        all_params = ['project_id', 'show_completion_rate_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/completion-rate/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowCompletionRateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_cur_user_info_async(self, request):
         """获取当前用户信息
 
@@ -1277,26 +1214,26 @@ class ProjectManAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_iteration_v4_async(self, request):
-        """查看迭代详情
+    def show_project_info_v4_async(self, request):
+        """获取项目详情
 
-        查看迭代详情
+        获取项目详情
 
-        :param ShowIterationV4Request request
-        :return: ShowIterationV4Response
+        :param ShowProjectInfoV4Request request
+        :return: ShowProjectInfoV4Response
         """
-        return self.show_iteration_v4_with_http_info(request)
+        return self.show_project_info_v4_with_http_info(request)
 
-    def show_iteration_v4_with_http_info(self, request):
-        """查看迭代详情
+    def show_project_info_v4_with_http_info(self, request):
+        """获取项目详情
 
-        查看迭代详情
+        获取项目详情
 
-        :param ShowIterationV4Request request
-        :return: ShowIterationV4Response
+        :param ShowProjectInfoV4Request request
+        :return: ShowProjectInfoV4Response
         """
 
-        all_params = ['iteration_id']
+        all_params = ['project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1305,8 +1242,8 @@ class ProjectManAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'iteration_id' in local_var_params:
-            path_params['iteration_id'] = local_var_params['iteration_id']
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
 
@@ -1326,14 +1263,14 @@ class ProjectManAsyncClient(Client):
         auth_settings = ['apig-auth-iam']
 
         return self.call_api(
-            resource_path='/v4/iterations/{iteration_id}',
+            resource_path='/v4/projects/{project_id}',
             method='GET',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowIterationV4Response',
+            response_type='ShowProjectInfoV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1397,73 +1334,6 @@ class ProjectManAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowProjectSummaryV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def update_iteration_v4_async(self, request):
-        """更新Scrum项目迭代
-
-        更新Scrum项目迭代
-
-        :param UpdateIterationV4Request request
-        :return: UpdateIterationV4Response
-        """
-        return self.update_iteration_v4_with_http_info(request)
-
-    def update_iteration_v4_with_http_info(self, request):
-        """更新Scrum项目迭代
-
-        更新Scrum项目迭代
-
-        :param UpdateIterationV4Request request
-        :return: UpdateIterationV4Response
-        """
-
-        all_params = ['project_id', 'iteration_id', 'update_iteration_v4_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'iteration_id' in local_var_params:
-            path_params['iteration_id'] = local_var_params['iteration_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/iterations/{iteration_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='UpdateIterationV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1728,6 +1598,136 @@ class ProjectManAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def batch_delete_iterations_v4_async(self, request):
+        """批量删除项目的迭代
+
+        批量删除项目的迭代
+
+        :param BatchDeleteIterationsV4Request request
+        :return: BatchDeleteIterationsV4Response
+        """
+        return self.batch_delete_iterations_v4_with_http_info(request)
+
+    def batch_delete_iterations_v4_with_http_info(self, request):
+        """批量删除项目的迭代
+
+        批量删除项目的迭代
+
+        :param BatchDeleteIterationsV4Request request
+        :return: BatchDeleteIterationsV4Response
+        """
+
+        all_params = ['project_id', 'batch_delete_iterations_v4_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/iterations',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteIterationsV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_customfields_async(self, request):
+        """创建工作项类型自定义字段
+
+        创建工作项类型自定义字段
+
+        :param CreateCustomfieldsRequest request
+        :return: CreateCustomfieldsResponse
+        """
+        return self.create_customfields_with_http_info(request)
+
+    def create_customfields_with_http_info(self, request):
+        """创建工作项类型自定义字段
+
+        创建工作项类型自定义字段
+
+        :param CreateCustomfieldsRequest request
+        :return: CreateCustomfieldsResponse
+        """
+
+        all_params = ['project_id', 'create_custom_fields_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/custom-fields',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateCustomfieldsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_issue_v4_async(self, request):
         """创建工作项
 
@@ -1793,6 +1793,71 @@ class ProjectManAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_iteration_v4_async(self, request):
+        """创建Scrum项目迭代
+
+        创建Scrum项目迭代
+
+        :param CreateIterationV4Request request
+        :return: CreateIterationV4Response
+        """
+        return self.create_iteration_v4_with_http_info(request)
+
+    def create_iteration_v4_with_http_info(self, request):
+        """创建Scrum项目迭代
+
+        创建Scrum项目迭代
+
+        :param CreateIterationV4Request request
+        :return: CreateIterationV4Response
+        """
+
+        all_params = ['project_id', 'create_iteration_v4_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/iteration',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateIterationV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_issue_v4_async(self, request):
         """删除工作项
 
@@ -1852,6 +1917,71 @@ class ProjectManAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteIssueV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_iteration_v4_async(self, request):
+        """删除项目迭代
+
+        删除项目迭代
+
+        :param DeleteIterationV4Request request
+        :return: DeleteIterationV4Response
+        """
+        return self.delete_iteration_v4_with_http_info(request)
+
+    def delete_iteration_v4_with_http_info(self, request):
+        """删除项目迭代
+
+        删除项目迭代
+
+        :param DeleteIterationV4Request request
+        :return: DeleteIterationV4Response
+        """
+
+        all_params = ['project_id', 'iteration_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'iteration_id' in local_var_params:
+            path_params['iteration_id'] = local_var_params['iteration_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/iterations/{iteration_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteIterationV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1995,7 +2125,7 @@ class ProjectManAsyncClient(Client):
     def list_issue_records_v4_async(self, request):
         """获取工作项历史记录
 
-        获取项目成员列表
+        获取工作项历史记录
 
         :param ListIssueRecordsV4Request request
         :return: ListIssueRecordsV4Response
@@ -2005,7 +2135,7 @@ class ProjectManAsyncClient(Client):
     def list_issue_records_v4_with_http_info(self, request):
         """获取工作项历史记录
 
-        获取项目成员列表
+        获取工作项历史记录
 
         :param ListIssueRecordsV4Request request
         :return: ListIssueRecordsV4Response
@@ -2064,7 +2194,7 @@ class ProjectManAsyncClient(Client):
     def list_issues_v4_async(self, request):
         """高级查询工作项
 
-        高级查询工作项,根据筛选条件查询工作中
+        根据筛选条件查询工作项
 
         :param ListIssuesV4Request request
         :return: ListIssuesV4Response
@@ -2074,7 +2204,7 @@ class ProjectManAsyncClient(Client):
     def list_issues_v4_with_http_info(self, request):
         """高级查询工作项
 
-        高级查询工作项,根据筛选条件查询工作中
+        根据筛选条件查询工作项
 
         :param ListIssuesV4Request request
         :return: ListIssuesV4Response
@@ -2120,6 +2250,69 @@ class ProjectManAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListIssuesV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_project_iterations_v4_async(self, request):
+        """获取指定项目的迭代列表
+
+        获取项目迭代
+
+        :param ListProjectIterationsV4Request request
+        :return: ListProjectIterationsV4Response
+        """
+        return self.list_project_iterations_v4_with_http_info(request)
+
+    def list_project_iterations_v4_with_http_info(self, request):
+        """获取指定项目的迭代列表
+
+        获取项目迭代
+
+        :param ListProjectIterationsV4Request request
+        :return: ListProjectIterationsV4Response
+        """
+
+        all_params = ['project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/iterations',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListProjectIterationsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2183,6 +2376,69 @@ class ProjectManAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListProjectWorkHoursResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_issue_completion_rate_async(self, request):
+        """获取工作项完成率
+
+        获取工作项的完成率
+
+        :param ShowIssueCompletionRateRequest request
+        :return: ShowIssueCompletionRateResponse
+        """
+        return self.show_issue_completion_rate_with_http_info(request)
+
+    def show_issue_completion_rate_with_http_info(self, request):
+        """获取工作项完成率
+
+        获取工作项的完成率
+
+        :param ShowIssueCompletionRateRequest request
+        :return: ShowIssueCompletionRateResponse
+        """
+
+        all_params = ['project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/issue-completion-rate',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowIssueCompletionRateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2254,6 +2510,69 @@ class ProjectManAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_iteration_v4_async(self, request):
+        """查看迭代详情
+
+        查看迭代详情
+
+        :param ShowIterationV4Request request
+        :return: ShowIterationV4Response
+        """
+        return self.show_iteration_v4_with_http_info(request)
+
+    def show_iteration_v4_with_http_info(self, request):
+        """查看迭代详情
+
+        查看迭代详情
+
+        :param ShowIterationV4Request request
+        :return: ShowIterationV4Response
+        """
+
+        all_params = ['iteration_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'iteration_id' in local_var_params:
+            path_params['iteration_id'] = local_var_params['iteration_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/iterations/{iteration_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowIterationV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_project_work_hours_async(self, request):
         """按用户查询工时（单项目）
 
@@ -2313,69 +2632,6 @@ class ProjectManAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowProjectWorkHoursResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def showt_issue_completion_rate_async(self, request):
-        """获取工作项完成率
-
-        获取工作项的完成率
-
-        :param ShowtIssueCompletionRateRequest request
-        :return: ShowtIssueCompletionRateResponse
-        """
-        return self.showt_issue_completion_rate_with_http_info(request)
-
-    def showt_issue_completion_rate_with_http_info(self, request):
-        """获取工作项完成率
-
-        获取工作项的完成率
-
-        :param ShowtIssueCompletionRateRequest request
-        :return: ShowtIssueCompletionRateResponse
-        """
-
-        all_params = ['project_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issue-completion-rate',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowtIssueCompletionRateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2443,6 +2699,73 @@ class ProjectManAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateIssueV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_iteration_v4_async(self, request):
+        """更新Scrum项目迭代
+
+        更新Scrum项目迭代
+
+        :param UpdateIterationV4Request request
+        :return: UpdateIterationV4Response
+        """
+        return self.update_iteration_v4_with_http_info(request)
+
+    def update_iteration_v4_with_http_info(self, request):
+        """更新Scrum项目迭代
+
+        更新Scrum项目迭代
+
+        :param UpdateIterationV4Request request
+        :return: UpdateIterationV4Response
+        """
+
+        all_params = ['project_id', 'iteration_id', 'update_iteration_v4_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'iteration_id' in local_var_params:
+            path_params['iteration_id'] = local_var_params['iteration_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/iterations/{iteration_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateIterationV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -36,7 +36,7 @@ class LoginTokenSecurityToken:
         'duration_seconds': 'duration_seconds'
     }
 
-    def __init__(self, access=None, secret=None, id=None, duration_seconds=600):
+    def __init__(self, access=None, secret=None, id=None, duration_seconds=None):
         """LoginTokenSecurityToken - a model defined in huaweicloud sdk"""
         
         

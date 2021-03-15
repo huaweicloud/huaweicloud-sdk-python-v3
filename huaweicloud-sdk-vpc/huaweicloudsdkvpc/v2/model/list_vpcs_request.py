@@ -36,7 +36,7 @@ class ListVpcsRequest:
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, limit=2000, marker=None, id=None, enterprise_project_id=None):
+    def __init__(self, limit=None, marker=None, id=None, enterprise_project_id=None):
         """ListVpcsRequest - a model defined in huaweicloud sdk"""
         
         

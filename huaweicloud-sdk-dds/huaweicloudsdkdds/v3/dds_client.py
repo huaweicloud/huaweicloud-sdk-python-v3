@@ -49,7 +49,7 @@ class DdsClient(Client):
         return ClientBuilder(clazz)
 
     def add_sharding_node(self, request):
-        """扩容指定集群实例的节点数量
+        """扩容集群实例的节点数量
 
         扩容指定集群实例的节点数量。
 
@@ -59,7 +59,7 @@ class DdsClient(Client):
         return self.add_sharding_node_with_http_info(request)
 
     def add_sharding_node_with_http_info(self, request):
-        """扩容指定集群实例的节点数量
+        """扩容集群实例的节点数量
 
         扩容指定集群实例的节点数量。
 
@@ -114,9 +114,9 @@ class DdsClient(Client):
 
 
     def attach_eip(self, request):
-        """绑定节点的公网IP
+        """绑定弹性公网IP
 
-        绑定节点的公网IP
+        为实例下的节点绑定弹性公网IP。
 
         :param AttachEipRequest request
         :return: AttachEipResponse
@@ -124,9 +124,9 @@ class DdsClient(Client):
         return self.attach_eip_with_http_info(request)
 
     def attach_eip_with_http_info(self, request):
-        """绑定节点的公网IP
+        """绑定弹性公网IP
 
-        绑定节点的公网IP
+        为实例下的节点绑定弹性公网IP。
 
         :param AttachEipRequest request
         :return: AttachEipResponse
@@ -179,9 +179,9 @@ class DdsClient(Client):
 
 
     def attach_internal_ip(self, request):
-        """修改实例内网IP
+        """修改实例内网地址
 
-        修改实例内网IP
+        修改实例的内网地址
 
         :param AttachInternalIpRequest request
         :return: AttachInternalIpResponse
@@ -189,9 +189,9 @@ class DdsClient(Client):
         return self.attach_internal_ip_with_http_info(request)
 
     def attach_internal_ip_with_http_info(self, request):
-        """修改实例内网IP
+        """修改实例内网地址
 
-        修改实例内网IP
+        修改实例的内网地址
 
         :param AttachInternalIpRequest request
         :return: AttachInternalIpResponse
@@ -244,7 +244,7 @@ class DdsClient(Client):
 
 
     def batch_tag_action(self, request):
-        """批量添加或删除指定实例的标签
+        """批量添加或删除资源标签
 
         批量添加或删除指定实例的标签。
 
@@ -254,7 +254,7 @@ class DdsClient(Client):
         return self.batch_tag_action_with_http_info(request)
 
     def batch_tag_action_with_http_info(self, request):
-        """批量添加或删除指定实例的标签
+        """批量添加或删除资源标签
 
         批量添加或删除指定实例的标签。
 
@@ -309,9 +309,9 @@ class DdsClient(Client):
 
 
     def cancel_eip(self, request):
-        """节点解绑公网IP
+        """解绑弹性公网IP
 
-        节点解绑公网IP
+        解绑实例下节点已经绑定的弹性公网IP。
 
         :param CancelEipRequest request
         :return: CancelEipResponse
@@ -319,9 +319,9 @@ class DdsClient(Client):
         return self.cancel_eip_with_http_info(request)
 
     def cancel_eip_with_http_info(self, request):
-        """节点解绑公网IP
+        """解绑弹性公网IP
 
-        节点解绑公网IP
+        解绑实例下节点已经绑定的弹性公网IP。
 
         :param CancelEipRequest request
         :return: CancelEipResponse
@@ -372,9 +372,9 @@ class DdsClient(Client):
 
 
     def check_password(self, request):
-        """检查数据库用户密码
+        """检查数据库密码
 
-        检查数据库用户密码。
+        检查数据库密码。
 
         :param CheckPasswordRequest request
         :return: CheckPasswordResponse
@@ -382,9 +382,9 @@ class DdsClient(Client):
         return self.check_password_with_http_info(request)
 
     def check_password_with_http_info(self, request):
-        """检查数据库用户密码
+        """检查数据库密码
 
-        检查数据库用户密码。
+        检查数据库密码。
 
         :param CheckPasswordRequest request
         :return: CheckPasswordResponse
@@ -567,9 +567,9 @@ class DdsClient(Client):
 
 
     def create_instance(self, request):
-        """创建文档数据库实例/恢复到新实例，包括集群实例、副本集实例、以及单节点实例。
+        """创建实例
 
-        创建文档数据库实例/恢复到新实例，包括集群实例、副本集实例、以及单节点实例。
+        创建文档数据库实例，包括集群实例、副本集实例、以及单节点实例。
 
         :param CreateInstanceRequest request
         :return: CreateInstanceResponse
@@ -577,9 +577,9 @@ class DdsClient(Client):
         return self.create_instance_with_http_info(request)
 
     def create_instance_with_http_info(self, request):
-        """创建文档数据库实例/恢复到新实例，包括集群实例、副本集实例、以及单节点实例。
+        """创建实例
 
-        创建文档数据库实例/恢复到新实例，包括集群实例、副本集实例、以及单节点实例。
+        创建文档数据库实例，包括集群实例、副本集实例、以及单节点实例。
 
         :param CreateInstanceRequest request
         :return: CreateInstanceResponse
@@ -695,7 +695,7 @@ class DdsClient(Client):
 
 
     def create_manual_backup(self, request):
-        """创建数据库实例的手动备份
+        """创建手动备份
 
         创建数据库实例的手动备份。
 
@@ -705,7 +705,7 @@ class DdsClient(Client):
         return self.create_manual_backup_with_http_info(request)
 
     def create_manual_backup_with_http_info(self, request):
-        """创建数据库实例的手动备份
+        """创建手动备份
 
         创建数据库实例的手动备份。
 
@@ -758,7 +758,7 @@ class DdsClient(Client):
 
 
     def delete_instance(self, request):
-        """删除数据库实例
+        """删除实例
 
         删除数据库实例。
 
@@ -768,7 +768,7 @@ class DdsClient(Client):
         return self.delete_instance_with_http_info(request)
 
     def delete_instance_with_http_info(self, request):
-        """删除数据库实例
+        """删除实例
 
         删除数据库实例。
 
@@ -821,7 +821,7 @@ class DdsClient(Client):
 
 
     def delete_manual_backup(self, request):
-        """删除数据库实例的手动备份
+        """删除手动备份
 
         删除数据库实例的手动备份。
 
@@ -831,7 +831,7 @@ class DdsClient(Client):
         return self.delete_manual_backup_with_http_info(request)
 
     def delete_manual_backup_with_http_info(self, request):
-        """删除数据库实例的手动备份
+        """删除手动备份
 
         删除数据库实例的手动备份。
 
@@ -877,6 +877,71 @@ class DdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteManualBackupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_session(self, request):
+        """终结实例节点会话
+
+        终结实例节点会话。
+
+        :param DeleteSessionRequest request
+        :return: DeleteSessionResponse
+        """
+        return self.delete_session_with_http_info(request)
+
+    def delete_session_with_http_info(self, request):
+        """终结实例节点会话
+
+        终结实例节点会话。
+
+        :param DeleteSessionRequest request
+        :return: DeleteSessionResponse
+        """
+
+        all_params = ['node_id', 'delete_session_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/nodes/{node_id}/session',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteSessionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1014,9 +1079,9 @@ class DdsClient(Client):
 
 
     def list_auditlog_links(self, request):
-        """生成审计日志下载链接
+        """获取审计日志下载链接
 
-        生成审计日志下载链接。
+        获取审计日志下载链接。
 
         :param ListAuditlogLinksRequest request
         :return: ListAuditlogLinksResponse
@@ -1024,9 +1089,9 @@ class DdsClient(Client):
         return self.list_auditlog_links_with_http_info(request)
 
     def list_auditlog_links_with_http_info(self, request):
-        """生成审计日志下载链接
+        """获取审计日志下载链接
 
-        生成审计日志下载链接。
+        获取审计日志下载链接。
 
         :param ListAuditlogLinksRequest request
         :return: ListAuditlogLinksResponse
@@ -1154,7 +1219,7 @@ class DdsClient(Client):
 
 
     def list_backups(self, request):
-        """根据指定条件查询备份列表
+        """查询备份列表
 
         根据指定条件查询备份列表。
 
@@ -1164,7 +1229,7 @@ class DdsClient(Client):
         return self.list_backups_with_http_info(request)
 
     def list_backups_with_http_info(self, request):
-        """根据指定条件查询备份列表
+        """查询备份列表
 
         根据指定条件查询备份列表。
 
@@ -1511,7 +1576,7 @@ class DdsClient(Client):
 
 
     def list_flavors(self, request):
-        """查询指定条件下的所有实例规格信息
+        """查询所有实例规格信息
 
         查询指定条件下的所有实例规格信息。
 
@@ -1521,7 +1586,7 @@ class DdsClient(Client):
         return self.list_flavors_with_http_info(request)
 
     def list_flavors_with_http_info(self, request):
-        """查询指定条件下的所有实例规格信息
+        """查询所有实例规格信息
 
         查询指定条件下的所有实例规格信息。
 
@@ -1576,7 +1641,7 @@ class DdsClient(Client):
 
 
     def list_instance_tags(self, request):
-        """查询指定实例的标签信息
+        """查询资源标签
 
         查询指定实例的标签信息。
 
@@ -1586,7 +1651,7 @@ class DdsClient(Client):
         return self.list_instance_tags_with_http_info(request)
 
     def list_instance_tags_with_http_info(self, request):
-        """查询指定实例的标签信息
+        """查询资源标签
 
         查询指定实例的标签信息。
 
@@ -1639,7 +1704,7 @@ class DdsClient(Client):
 
 
     def list_instances(self, request):
-        """根据指定条件查询实例列表
+        """查询实例列表
 
         根据指定条件查询实例列表。
 
@@ -1649,7 +1714,7 @@ class DdsClient(Client):
         return self.list_instances_with_http_info(request)
 
     def list_instances_with_http_info(self, request):
-        """根据指定条件查询实例列表
+        """查询实例列表
 
         根据指定条件查询实例列表。
 
@@ -1716,7 +1781,7 @@ class DdsClient(Client):
 
 
     def list_instances_by_tags(self, request):
-        """根据标签查询指定的数据库实例
+        """查询资源实例
 
         根据标签查询指定的数据库实例。
 
@@ -1726,7 +1791,7 @@ class DdsClient(Client):
         return self.list_instances_by_tags_with_http_info(request)
 
     def list_instances_by_tags_with_http_info(self, request):
-        """根据标签查询指定的数据库实例
+        """查询资源实例
 
         根据标签查询指定的数据库实例。
 
@@ -1779,7 +1844,7 @@ class DdsClient(Client):
 
 
     def list_project_tags(self, request):
-        """查询指定project ID下实例的所有标签集合
+        """查询项目标签
 
         查询指定project ID下实例的所有标签集合。
 
@@ -1789,7 +1854,7 @@ class DdsClient(Client):
         return self.list_project_tags_with_http_info(request)
 
     def list_project_tags_with_http_info(self, request):
-        """查询指定project ID下实例的所有标签集合
+        """查询项目标签
 
         查询指定project ID下实例的所有标签集合。
 
@@ -2050,6 +2115,81 @@ class DdsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_sessions(self, request):
+        """查询实例节点会话
+
+        查询实例节点会话。
+
+        :param ListSessionsRequest request
+        :return: ListSessionsResponse
+        """
+        return self.list_sessions_with_http_info(request)
+
+    def list_sessions_with_http_info(self, request):
+        """查询实例节点会话
+
+        查询实例节点会话。
+
+        :param ListSessionsRequest request
+        :return: ListSessionsResponse
+        """
+
+        all_params = ['node_id', 'offset', 'limit', 'plan_summary', 'type', 'namespace', 'cost_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'plan_summary' in local_var_params:
+            query_params.append(('plan_summary', local_var_params['plan_summary']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
+        if 'cost_time' in local_var_params:
+            query_params.append(('cost_time', local_var_params['cost_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/nodes/{node_id}/sessions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSessionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_slow_logs(self, request):
         """查询数据库慢日志
 
@@ -2126,7 +2266,7 @@ class DdsClient(Client):
 
 
     def list_storage_type(self, request):
-        """查询当前区域下的数据库磁盘类型
+        """查询数据库磁盘类型
 
         查询当前区域下的数据库磁盘类型。
 
@@ -2136,7 +2276,7 @@ class DdsClient(Client):
         return self.list_storage_type_with_http_info(request)
 
     def list_storage_type_with_http_info(self, request):
-        """查询当前区域下的数据库磁盘类型
+        """查询数据库磁盘类型
 
         查询当前区域下的数据库磁盘类型。
 
@@ -2254,7 +2394,7 @@ class DdsClient(Client):
 
 
     def resize_instance(self, request):
-        """变更实例的规格
+        """变更实例规格
 
         变更实例的规格。
 
@@ -2264,7 +2404,7 @@ class DdsClient(Client):
         return self.resize_instance_with_http_info(request)
 
     def resize_instance_with_http_info(self, request):
-        """变更实例的规格
+        """变更实例规格
 
         变更实例的规格。
 
@@ -2319,7 +2459,7 @@ class DdsClient(Client):
 
 
     def resize_instance_volume(self, request):
-        """扩容实例相关的存储容量大小
+        """扩容实例存储容量
 
         扩容实例相关的存储容量大小。
 
@@ -2329,7 +2469,7 @@ class DdsClient(Client):
         return self.resize_instance_volume_with_http_info(request)
 
     def resize_instance_volume_with_http_info(self, request):
-        """扩容实例相关的存储容量大小
+        """扩容实例存储容量
 
         扩容实例相关的存储容量大小。
 
@@ -2384,7 +2524,7 @@ class DdsClient(Client):
 
 
     def restart_instance(self, request):
-        """重启实例的数据库服务
+        """重启实例
 
         重启实例的数据库服务。
 
@@ -2394,7 +2534,7 @@ class DdsClient(Client):
         return self.restart_instance_with_http_info(request)
 
     def restart_instance_with_http_info(self, request):
-        """重启实例的数据库服务
+        """重启实例
 
         重启实例的数据库服务。
 
@@ -2574,6 +2714,69 @@ class DdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='RestoreInstanceFromCollectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def restore_new_instance(self, request):
+        """恢复到新实例
+
+        根据备份恢复新实例。
+
+        :param RestoreNewInstanceRequest request
+        :return: RestoreNewInstanceResponse
+        """
+        return self.restore_new_instance_with_http_info(request)
+
+    def restore_new_instance_with_http_info(self, request):
+        """恢复到新实例
+
+        根据备份恢复新实例。
+
+        :param RestoreNewInstanceRequest request
+        :return: RestoreNewInstanceResponse
+        """
+
+        all_params = ['restore_new_instance_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RestoreNewInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2906,9 +3109,9 @@ class DdsClient(Client):
 
 
     def switch_ssl(self, request):
-        """切换mongodb实例的SSL开关
+        """切换SSL开关
 
-        切换mongodb实例的SSL开关
+        切换实例的SSL开关
 
         :param SwitchSslRequest request
         :return: SwitchSslResponse
@@ -2916,9 +3119,9 @@ class DdsClient(Client):
         return self.switch_ssl_with_http_info(request)
 
     def switch_ssl_with_http_info(self, request):
-        """切换mongodb实例的SSL开关
+        """切换SSL开关
 
-        切换mongodb实例的SSL开关
+        切换实例的SSL开关
 
         :param SwitchSslRequest request
         :return: SwitchSslResponse
@@ -2971,9 +3174,9 @@ class DdsClient(Client):
 
 
     def switchover_replica_set(self, request):
-        """副本集主备倒换
+        """切换副本集实例的主备节点
 
-        副本集主备倒换
+        切换副本集实例下的主备节点
 
         :param SwitchoverReplicaSetRequest request
         :return: SwitchoverReplicaSetResponse
@@ -2981,9 +3184,9 @@ class DdsClient(Client):
         return self.switchover_replica_set_with_http_info(request)
 
     def switchover_replica_set_with_http_info(self, request):
-        """副本集主备倒换
+        """切换副本集实例的主备节点
 
-        副本集主备倒换
+        切换副本集实例下的主备节点
 
         :param SwitchoverReplicaSetRequest request
         :return: SwitchoverReplicaSetResponse
@@ -3099,9 +3302,9 @@ class DdsClient(Client):
 
 
     def update_instance_port(self, request):
-        """修改实例端口
+        """修改数据库端口
 
-        修改实例端口
+        修改数据库实例的端口。
 
         :param UpdateInstancePortRequest request
         :return: UpdateInstancePortResponse
@@ -3109,9 +3312,9 @@ class DdsClient(Client):
         return self.update_instance_port_with_http_info(request)
 
     def update_instance_port_with_http_info(self, request):
-        """修改实例端口
+        """修改数据库端口
 
-        修改实例端口
+        修改数据库实例的端口。
 
         :param UpdateInstancePortRequest request
         :return: UpdateInstancePortResponse
@@ -3164,9 +3367,9 @@ class DdsClient(Client):
 
 
     def update_security_group(self, request):
-        """修改实例的安全组
+        """变更实例安全组
 
-        修改实例的安全组
+        变更实例关联的安全组
 
         :param UpdateSecurityGroupRequest request
         :return: UpdateSecurityGroupResponse
@@ -3174,9 +3377,9 @@ class DdsClient(Client):
         return self.update_security_group_with_http_info(request)
 
     def update_security_group_with_http_info(self, request):
-        """修改实例的安全组
+        """变更实例安全组
 
-        修改实例的安全组
+        变更实例关联的安全组
 
         :param UpdateSecurityGroupRequest request
         :return: UpdateSecurityGroupResponse

@@ -42,7 +42,7 @@ class CreateMemberOption:
         'weight': 'weight'
     }
 
-    def __init__(self, address=None, admin_state_up=None, name=None, project_id=None, protocol_port=None, subnet_cidr_id=None, weight=1):
+    def __init__(self, address=None, admin_state_up=None, name=None, project_id=None, protocol_port=None, subnet_cidr_id=None, weight=None):
         """CreateMemberOption - a model defined in huaweicloud sdk"""
         
         

@@ -32,7 +32,7 @@ class ListJobInfoDetailResponse(SdkResponse):
 
     attribute_map = {
         'jobs': 'jobs',
-        'task_detail': 'task_detail',
+        'task_detail': 'taskDetail',
         'instance': 'instance',
         'entities': 'entities',
         'fail_reason': 'fail_reason'

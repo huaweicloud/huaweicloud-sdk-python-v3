@@ -32,7 +32,7 @@ class NovaServerVolume:
         'delete_on_termination': 'delete_on_termination'
     }
 
-    def __init__(self, id=None, delete_on_termination=False):
+    def __init__(self, id=None, delete_on_termination=None):
         """NovaServerVolume - a model defined in huaweicloud sdk"""
         
         

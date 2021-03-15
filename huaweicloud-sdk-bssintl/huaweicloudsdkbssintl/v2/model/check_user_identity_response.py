@@ -34,7 +34,7 @@ class CheckUserIdentityResponse(SdkResponse):
         'check_result': 'check_result'
     }
 
-    def __init__(self, error_code='CBC.0000', error_msg='success', check_result=None):
+    def __init__(self, error_code=None, error_msg=None, check_result=None):
         """CheckUserIdentityResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()

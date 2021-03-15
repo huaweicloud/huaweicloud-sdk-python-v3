@@ -64,6 +64,7 @@ from huaweicloudsdkces.v1.model.meta_data import MetaData
 from huaweicloudsdkces.v1.model.meta_data_for_alarm_history import MetaDataForAlarmHistory
 from huaweicloudsdkces.v1.model.metric_alarms import MetricAlarms
 from huaweicloudsdkces.v1.model.metric_data_item import MetricDataItem
+from huaweicloudsdkces.v1.model.metric_for_alarm import MetricForAlarm
 from huaweicloudsdkces.v1.model.metric_info import MetricInfo
 from huaweicloudsdkces.v1.model.metric_info_for_alarm import MetricInfoForAlarm
 from huaweicloudsdkces.v1.model.metric_info_list import MetricInfoList

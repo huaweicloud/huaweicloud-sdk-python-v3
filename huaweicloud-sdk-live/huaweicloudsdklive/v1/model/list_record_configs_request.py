@@ -40,7 +40,7 @@ class ListRecordConfigsRequest:
         'record_type': 'record_type'
     }
 
-    def __init__(self, domain=None, app_name=None, stream_name=None, page=0, size=10, record_type=None):
+    def __init__(self, domain=None, app_name=None, stream_name=None, page=None, size=None, record_type=None):
         """ListRecordConfigsRequest - a model defined in huaweicloud sdk"""
         
         

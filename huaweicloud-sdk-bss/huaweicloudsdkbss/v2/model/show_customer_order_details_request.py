@@ -36,7 +36,7 @@ class ShowCustomerOrderDetailsRequest:
         'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, order_id=None, limit=10, offset=0, indirect_partner_id=None):
+    def __init__(self, order_id=None, limit=None, offset=None, indirect_partner_id=None):
         """ShowCustomerOrderDetailsRequest - a model defined in huaweicloud sdk"""
         
         

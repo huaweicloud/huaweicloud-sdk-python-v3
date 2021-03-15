@@ -50,6 +50,9 @@ from huaweicloudsdkdds.v3.model.delete_instance_request import DeleteInstanceReq
 from huaweicloudsdkdds.v3.model.delete_instance_response import DeleteInstanceResponse
 from huaweicloudsdkdds.v3.model.delete_manual_backup_request import DeleteManualBackupRequest
 from huaweicloudsdkdds.v3.model.delete_manual_backup_response import DeleteManualBackupResponse
+from huaweicloudsdkdds.v3.model.delete_session_request import DeleteSessionRequest
+from huaweicloudsdkdds.v3.model.delete_session_request_body import DeleteSessionRequestBody
+from huaweicloudsdkdds.v3.model.delete_session_response import DeleteSessionResponse
 from huaweicloudsdkdds.v3.model.download_errorlog_request import DownloadErrorlogRequest
 from huaweicloudsdkdds.v3.model.download_errorlog_request_body import DownloadErrorlogRequestBody
 from huaweicloudsdkdds.v3.model.download_errorlog_response import DownloadErrorlogResponse
@@ -102,6 +105,8 @@ from huaweicloudsdkdds.v3.model.list_restore_databases_response import ListResto
 from huaweicloudsdkdds.v3.model.list_restore_times_request import ListRestoreTimesRequest
 from huaweicloudsdkdds.v3.model.list_restore_times_response import ListRestoreTimesResponse
 from huaweicloudsdkdds.v3.model.list_restore_times_response_body_restore_time import ListRestoreTimesResponseBodyRestoreTime
+from huaweicloudsdkdds.v3.model.list_sessions_request import ListSessionsRequest
+from huaweicloudsdkdds.v3.model.list_sessions_response import ListSessionsResponse
 from huaweicloudsdkdds.v3.model.list_slow_logs_request import ListSlowLogsRequest
 from huaweicloudsdkdds.v3.model.list_slow_logs_response import ListSlowLogsResponse
 from huaweicloudsdkdds.v3.model.list_storage_type_request import ListStorageTypeRequest
@@ -112,6 +117,7 @@ from huaweicloudsdkdds.v3.model.query_instance_response import QueryInstanceResp
 from huaweicloudsdkdds.v3.model.query_match_item import QueryMatchItem
 from huaweicloudsdkdds.v3.model.query_project_tag_item import QueryProjectTagItem
 from huaweicloudsdkdds.v3.model.query_resource_tag_item import QueryResourceTagItem
+from huaweicloudsdkdds.v3.model.query_session_response import QuerySessionResponse
 from huaweicloudsdkdds.v3.model.query_tag_item import QueryTagItem
 from huaweicloudsdkdds.v3.model.reset_password_request import ResetPasswordRequest
 from huaweicloudsdkdds.v3.model.reset_password_request_body import ResetPasswordRequestBody
@@ -135,6 +141,10 @@ from huaweicloudsdkdds.v3.model.restore_instance_from_collection_response import
 from huaweicloudsdkdds.v3.model.restore_instance_request import RestoreInstanceRequest
 from huaweicloudsdkdds.v3.model.restore_instance_request_body import RestoreInstanceRequestBody
 from huaweicloudsdkdds.v3.model.restore_instance_response import RestoreInstanceResponse
+from huaweicloudsdkdds.v3.model.restore_new_instance_flavor_option import RestoreNewInstanceFlavorOption
+from huaweicloudsdkdds.v3.model.restore_new_instance_request import RestoreNewInstanceRequest
+from huaweicloudsdkdds.v3.model.restore_new_instance_request_body import RestoreNewInstanceRequestBody
+from huaweicloudsdkdds.v3.model.restore_new_instance_response import RestoreNewInstanceResponse
 from huaweicloudsdkdds.v3.model.restore_point import RestorePoint
 from huaweicloudsdkdds.v3.model.roles_option import RolesOption
 from huaweicloudsdkdds.v3.model.set_auditlog_policy_request import SetAuditlogPolicyRequest

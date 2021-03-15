@@ -28,7 +28,7 @@ class ListDependenciesResult:
         'link': 'str',
         'runtime': 'str',
         'etag': 'str',
-        'size': 'str',
+        'size': 'int',
         'name': 'str',
         'description': 'str',
         'file_name': 'str'
@@ -191,7 +191,7 @@ class ListDependenciesResult:
         依赖包大小。
 
         :return: The size of this ListDependenciesResult.
-        :rtype: str
+        :rtype: int
         """
         return self._size
 
@@ -202,7 +202,7 @@ class ListDependenciesResult:
         依赖包大小。
 
         :param size: The size of this ListDependenciesResult.
-        :type: str
+        :type: int
         """
         self._size = size
 

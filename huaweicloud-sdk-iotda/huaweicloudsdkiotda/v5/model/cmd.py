@@ -40,7 +40,7 @@ class Cmd:
         'mode': 'mode'
     }
 
-    def __init__(self, command_name=None, command_body=None, service_id=None, buffer_timeout=172800, response_timeout=1800, mode=None):
+    def __init__(self, command_name=None, command_body=None, service_id=None, buffer_timeout=None, response_timeout=None, mode=None):
         """Cmd - a model defined in huaweicloud sdk"""
         
         

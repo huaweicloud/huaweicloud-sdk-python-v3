@@ -34,7 +34,7 @@ class ListSubscriptionsByTopicRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, topic_urn=None, offset=0, limit=100):
+    def __init__(self, topic_urn=None, offset=None, limit=None):
         """ListSubscriptionsByTopicRequest - a model defined in huaweicloud sdk"""
         
         

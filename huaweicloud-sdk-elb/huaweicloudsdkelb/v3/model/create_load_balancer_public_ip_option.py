@@ -38,7 +38,7 @@ class CreateLoadBalancerPublicIpOption:
         'bandwidth': 'bandwidth'
     }
 
-    def __init__(self, ip_version=4, network_type=None, billing_info=None, description=None, bandwidth=None):
+    def __init__(self, ip_version=None, network_type=None, billing_info=None, description=None, bandwidth=None):
         """CreateLoadBalancerPublicIpOption - a model defined in huaweicloud sdk"""
         
         

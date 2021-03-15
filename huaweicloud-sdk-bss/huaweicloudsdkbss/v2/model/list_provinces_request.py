@@ -34,7 +34,7 @@ class ListProvincesRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, x_language='zh_cn', offset=None, limit=10):
+    def __init__(self, x_language=None, offset=None, limit=None):
         """ListProvincesRequest - a model defined in huaweicloud sdk"""
         
         

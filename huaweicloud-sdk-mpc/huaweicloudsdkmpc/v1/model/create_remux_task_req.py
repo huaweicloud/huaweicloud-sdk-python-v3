@@ -26,7 +26,6 @@ class CreateRemuxTaskReq:
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
         'user_data': 'str',
-        'sync': 'int',
         'output_param': 'RemuxOutputParam',
         'notify_url': 'str'
     }
@@ -35,12 +34,11 @@ class CreateRemuxTaskReq:
         'input': 'input',
         'output': 'output',
         'user_data': 'user_data',
-        'sync': 'sync',
         'output_param': 'output_param',
         'notify_url': 'notify_url'
     }
 
-    def __init__(self, input=None, output=None, user_data=None, sync=0, output_param=None, notify_url=None):
+    def __init__(self, input=None, output=None, user_data=None, output_param=None, notify_url=None):
         """CreateRemuxTaskReq - a model defined in huaweicloud sdk"""
         
         
@@ -48,7 +46,6 @@ class CreateRemuxTaskReq:
         self._input = None
         self._output = None
         self._user_data = None
-        self._sync = None
         self._output_param = None
         self._notify_url = None
         self.discriminator = None
@@ -59,8 +56,6 @@ class CreateRemuxTaskReq:
             self.output = output
         if user_data is not None:
             self.user_data = user_data
-        if sync is not None:
-            self.sync = sync
         if output_param is not None:
             self.output_param = output_param
         if notify_url is not None:
@@ -127,28 +122,6 @@ class CreateRemuxTaskReq:
         :type: str
         """
         self._user_data = user_data
-
-    @property
-    def sync(self):
-        """Gets the sync of this CreateRemuxTaskReq.
-
-        是否同步处理, - 0：排队处理 - 1：同步处理  默认值：0 
-
-        :return: The sync of this CreateRemuxTaskReq.
-        :rtype: int
-        """
-        return self._sync
-
-    @sync.setter
-    def sync(self, sync):
-        """Sets the sync of this CreateRemuxTaskReq.
-
-        是否同步处理, - 0：排队处理 - 1：同步处理  默认值：0 
-
-        :param sync: The sync of this CreateRemuxTaskReq.
-        :type: int
-        """
-        self._sync = sync
 
     @property
     def output_param(self):

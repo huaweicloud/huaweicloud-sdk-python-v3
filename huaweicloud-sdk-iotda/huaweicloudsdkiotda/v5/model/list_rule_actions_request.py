@@ -44,7 +44,7 @@ class ListRuleActionsRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, instance_id=None, rule_id=None, channel=None, app_type=None, app_id=None, limit=10, marker='ffffffffffffffffffffffff', offset=0):
+    def __init__(self, instance_id=None, rule_id=None, channel=None, app_type=None, app_id=None, limit=None, marker=None, offset=None):
         """ListRuleActionsRequest - a model defined in huaweicloud sdk"""
         
         

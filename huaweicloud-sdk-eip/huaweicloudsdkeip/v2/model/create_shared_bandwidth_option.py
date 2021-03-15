@@ -36,7 +36,7 @@ class CreateSharedBandwidthOption:
         'charge_mode': 'charge_mode'
     }
 
-    def __init__(self, enterprise_project_id='0', name=None, size=None, charge_mode=None):
+    def __init__(self, enterprise_project_id=None, name=None, size=None, charge_mode=None):
         """CreateSharedBandwidthOption - a model defined in huaweicloud sdk"""
         
         

@@ -30,7 +30,7 @@ class Crop:
         'duration': 'duration'
     }
 
-    def __init__(self, duration=0):
+    def __init__(self, duration=None):
         """Crop - a model defined in huaweicloud sdk"""
         
         

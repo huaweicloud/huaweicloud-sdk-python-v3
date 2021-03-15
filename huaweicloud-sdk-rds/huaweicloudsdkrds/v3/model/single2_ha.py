@@ -81,7 +81,7 @@ class Single2Ha:
     def password(self):
         """Gets the password of this Single2Ha.
 
-        仅在支持SQL Server数据库实例进行单机转主备时必选，有效。
+        仅在支持SQL Server数据库实例进行单机转主备时可选，指定时会验证密码有效性。
 
         :return: The password of this Single2Ha.
         :rtype: str
@@ -92,7 +92,7 @@ class Single2Ha:
     def password(self, password):
         """Sets the password of this Single2Ha.
 
-        仅在支持SQL Server数据库实例进行单机转主备时必选，有效。
+        仅在支持SQL Server数据库实例进行单机转主备时可选，指定时会验证密码有效性。
 
         :param password: The password of this Single2Ha.
         :type: str
@@ -103,7 +103,7 @@ class Single2Ha:
     def dsspool_id(self):
         """Gets the dsspool_id of this Single2Ha.
 
-        创建新节点所在专属存储池ID，仅专属云创建实例时有效。
+        Dec用户专属存储ID，每个az配置的专属存储不同，实例节点所在专属存储ID，仅支持DEC用户创建时使用。
 
         :return: The dsspool_id of this Single2Ha.
         :rtype: str
@@ -114,7 +114,7 @@ class Single2Ha:
     def dsspool_id(self, dsspool_id):
         """Sets the dsspool_id of this Single2Ha.
 
-        创建新节点所在专属存储池ID，仅专属云创建实例时有效。
+        Dec用户专属存储ID，每个az配置的专属存储不同，实例节点所在专属存储ID，仅支持DEC用户创建时使用。
 
         :param dsspool_id: The dsspool_id of this Single2Ha.
         :type: str
@@ -125,7 +125,7 @@ class Single2Ha:
     def is_auto_pay(self):
         """Gets the is_auto_pay of this Single2Ha.
 
-        包周期实例单转主备时可指定，表示是否自动从客户的账户中支付。
+        仅包周期实例进行单机转主备时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
 
         :return: The is_auto_pay of this Single2Ha.
         :rtype: bool
@@ -136,7 +136,7 @@ class Single2Ha:
     def is_auto_pay(self, is_auto_pay):
         """Sets the is_auto_pay of this Single2Ha.
 
-        包周期实例单转主备时可指定，表示是否自动从客户的账户中支付。
+        仅包周期实例进行单机转主备时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
 
         :param is_auto_pay: The is_auto_pay of this Single2Ha.
         :type: bool

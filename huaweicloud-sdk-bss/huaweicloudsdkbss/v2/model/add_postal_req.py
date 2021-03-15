@@ -44,7 +44,7 @@ class AddPostalReq:
         'is_default': 'is_default'
     }
 
-    def __init__(self, recipient=None, province=None, city=None, district=None, address=None, zipcode=None, mobile_phone=None, is_default=0):
+    def __init__(self, recipient=None, province=None, city=None, district=None, address=None, zipcode=None, mobile_phone=None, is_default=None):
         """AddPostalReq - a model defined in huaweicloud sdk"""
         
         

@@ -9,7 +9,7 @@ import six
 
 
 
-class ENINetwork:
+class EniNetwork:
 
 
     """
@@ -33,7 +33,7 @@ class ENINetwork:
     }
 
     def __init__(self, eni_subnet_cidr=None, eni_subnet_id=None):
-        """ENINetwork - a model defined in huaweicloud sdk"""
+        """EniNetwork - a model defined in huaweicloud sdk"""
         
         
 
@@ -46,44 +46,44 @@ class ENINetwork:
 
     @property
     def eni_subnet_cidr(self):
-        """Gets the eni_subnet_cidr of this ENINetwork.
+        """Gets the eni_subnet_cidr of this EniNetwork.
 
         ENI子网CIDR
 
-        :return: The eni_subnet_cidr of this ENINetwork.
+        :return: The eni_subnet_cidr of this EniNetwork.
         :rtype: str
         """
         return self._eni_subnet_cidr
 
     @eni_subnet_cidr.setter
     def eni_subnet_cidr(self, eni_subnet_cidr):
-        """Sets the eni_subnet_cidr of this ENINetwork.
+        """Sets the eni_subnet_cidr of this EniNetwork.
 
         ENI子网CIDR
 
-        :param eni_subnet_cidr: The eni_subnet_cidr of this ENINetwork.
+        :param eni_subnet_cidr: The eni_subnet_cidr of this EniNetwork.
         :type: str
         """
         self._eni_subnet_cidr = eni_subnet_cidr
 
     @property
     def eni_subnet_id(self):
-        """Gets the eni_subnet_id of this ENINetwork.
+        """Gets the eni_subnet_id of this EniNetwork.
 
         eni子网ID
 
-        :return: The eni_subnet_id of this ENINetwork.
+        :return: The eni_subnet_id of this EniNetwork.
         :rtype: str
         """
         return self._eni_subnet_id
 
     @eni_subnet_id.setter
     def eni_subnet_id(self, eni_subnet_id):
-        """Sets the eni_subnet_id of this ENINetwork.
+        """Sets the eni_subnet_id of this EniNetwork.
 
         eni子网ID
 
-        :param eni_subnet_id: The eni_subnet_id of this ENINetwork.
+        :param eni_subnet_id: The eni_subnet_id of this EniNetwork.
         :type: str
         """
         self._eni_subnet_id = eni_subnet_id
@@ -125,7 +125,7 @@ class ENINetwork:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ENINetwork):
+        if not isinstance(other, EniNetwork):
             return False
 
         return self.__dict__ == other.__dict__

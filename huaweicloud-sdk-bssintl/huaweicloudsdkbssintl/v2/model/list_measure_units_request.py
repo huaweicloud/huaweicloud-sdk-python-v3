@@ -30,7 +30,7 @@ class ListMeasureUnitsRequest:
         'x_language': 'X-Language'
     }
 
-    def __init__(self, x_language='zh_cn'):
+    def __init__(self, x_language=None):
         """ListMeasureUnitsRequest - a model defined in huaweicloud sdk"""
         
         

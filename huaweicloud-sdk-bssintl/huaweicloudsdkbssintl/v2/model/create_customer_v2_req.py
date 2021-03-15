@@ -50,7 +50,7 @@ class CreateCustomerV2Req:
         'include_association_result': 'include_association_result'
     }
 
-    def __init__(self, domain_name=None, email=None, verification_code=None, domain_area=None, xaccount_id=None, xaccount_type=None, password=None, is_close_market_ms='false', cooperation_type=None, indirect_partner_id=None, include_association_result=None):
+    def __init__(self, domain_name=None, email=None, verification_code=None, domain_area=None, xaccount_id=None, xaccount_type=None, password=None, is_close_market_ms=None, cooperation_type=None, indirect_partner_id=None, include_association_result=None):
         """CreateCustomerV2Req - a model defined in huaweicloud sdk"""
         
         

@@ -38,7 +38,7 @@ class DeleteNodePoolResponse(SdkResponse):
         'status': 'status'
     }
 
-    def __init__(self, api_version='v3', kind='NodePool', metadata=None, spec=None, status=None):
+    def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
         """DeleteNodePoolResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()

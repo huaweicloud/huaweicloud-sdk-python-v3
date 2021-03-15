@@ -34,7 +34,7 @@ class ListKmsByTagsRequest:
         'body': 'body'
     }
 
-    def __init__(self, resource_instances='resource_instances', version_id='v1.0', body=None):
+    def __init__(self, resource_instances=None, version_id=None, body=None):
         """ListKmsByTagsRequest - a model defined in huaweicloud sdk"""
         
         

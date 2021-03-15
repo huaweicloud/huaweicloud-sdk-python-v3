@@ -80,6 +80,8 @@ from huaweicloudsdkelb.v3.model.ip_group import IpGroup
 from huaweicloudsdkelb.v3.model.ip_info import IpInfo
 from huaweicloudsdkelb.v3.model.l7_policy import L7Policy
 from huaweicloudsdkelb.v3.model.l7_rule import L7Rule
+from huaweicloudsdkelb.v3.model.list_all_members_request import ListAllMembersRequest
+from huaweicloudsdkelb.v3.model.list_all_members_response import ListAllMembersResponse
 from huaweicloudsdkelb.v3.model.list_availability_zones_request import ListAvailabilityZonesRequest
 from huaweicloudsdkelb.v3.model.list_availability_zones_response import ListAvailabilityZonesResponse
 from huaweicloudsdkelb.v3.model.list_certificates_request import ListCertificatesRequest
