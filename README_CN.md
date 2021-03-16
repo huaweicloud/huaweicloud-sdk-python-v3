@@ -169,7 +169,7 @@ config.ssl_ca_cert = ssl_ca_cert
 
 Global 级服务有 BSS、DevStar、EPS、IAM、RMS、TMS。
 
-Region 级服务需要提供 projectId 。Global 级服务需要提供 domainId 。
+Region 级服务使用 BasicCredentials 初始化，需要提供 projectId 。Global 级服务使用 GlobalCredentials 初始化，需要提供 domainId 。
 
 客户端认证可以使用永久 AK&SK 认证，也可以使用临时 AK&SK&SecurityToken 认证。
 
@@ -191,7 +191,7 @@ basic_credentials = BasicCredentials(ak, sk, project_id)
 global_credentials = GlobalCredentials(ak, sk, domain_id)
 ```
 
-- `3.0.26-beta` 及以上版本支持通过永久 AK&SK 回填 project_id/domain_id ，需要在初始化客户端时配合 `with_region()`
+- `3.0.26-beta` 及以上版本支持自动获取 projectId/domainId ，用户需要指定当前华为云账号的永久 AK&SK 和 对应的 region_id，同时在初始化客户端时配合 `with_region()`
   方法使用，代码示例详见 [3.2 指定Region方式（推荐）](#32-指定-region-方式-推荐-top) 。
 
 #### 2.2 使用临时 AK 和 SK [:top:](#用户手册-top)
@@ -221,7 +221,13 @@ global_credentials = GlobalCredentials(ak, sk, domain_id).with_security_token(se
 #### 3.1 指定云服务 Endpoint 方式 [:top:](#用户手册-top)
 
 ``` python
-# 初始化指定云服务的客户端 {Service}Client ，以初始化 VpcClient 为例
+# 指定终端节点，以 VPC 服务北京四的 endpoint 为例
+endpoint = "https://vpc.cn-north-4.myhuaweicloud.com"
+
+# 初始化客户端认证信息，需要填写相应 project_id/domain_id，以初始化 BasicCredentials 为例
+basic_credentials = BasicCredentials(ak, sk, project_id)
+
+# 初始化指定云服务的客户端 {Service}Client ，以初始化 Region 级服务 VPC 的 VpcClient 为例
 client = VpcClient.new_builder() \
     .with_http_config(config) \
     .with_credentials(basic_credentials) \
@@ -233,16 +239,18 @@ client = VpcClient.new_builder() \
 
 - `endpoint` 是华为云各服务应用区域和各服务的终端节点，详情请查看 [地区和终端节点](https://developer.huaweicloud.com/endpoint) 。
 
+- 当用户使用指定 Region 方式无法自动获取 projectId 时，可以使用当前方式调用接口。
+
 #### 3.2 指定 Region 方式 **（推荐）** [:top:](#用户手册-top)
 
 ``` python
 # 增加region依赖
 from huaweicloudsdkiam.v3.region.iam_region import IamRegion
 
-# 使用当前客户端初始化方式可不填 domain_id
+# 初始化客户端认证信息，使用当前客户端初始化方式可不填 project_id/domain_id，以初始化 GlobalCredentials 为例
 global_credentials = GlobalCredentials(ak, sk)
 
-# 初始化指定云服务的客户端 {Service}Client ，以初始化 IamClient 为例
+# 初始化指定云服务的客户端 {Service}Client ，以初始化 Global 级服务 IAM 的 IamClient 为例
 client = IamClient.new_builder() \
     .with_http_config(config) \
     .with_credentials(global_credentials) \
@@ -253,7 +261,19 @@ client = IamClient.new_builder() \
 **说明:**
 
 - 指定 Region 方式创建客户端的场景，支持自动获取用户的 projectId 或者 domainId，初始化认证信息时可无需指定相应参数。
-- 不适用于 `多ProjectId` 的场景。
+
+- **不适用**于 `多ProjectId` 的场景。
+
+- 当前支持指定 Region 方式初始化客户端的 region_id : af-south-1, ap-southeast-1, ap-southeast-2, ap-southeast-3, cn-east-2, cn-east-3,
+  cn-north-1, cn-north-4, cn-south-1, cn-southwest-2, ru-northwest-2。调用其他 region 可能会抛出 `Unsupported regionId` 的异常信息。
+
+**两种方式对比：**
+
+| 初始化方式 | 优势 | 劣势 |
+| :---- | :---- | :---- | 
+| 指定云服务 Endpoint 方式 | 只要接口已在当前环境发布就可以成功调用 | 需要用户自行查找并填写 projectId 和 endpoint
+| 指定 Region 方式 | 无需指定 projectId 和 endpoint，按照要求配置即可自动获取该值并回填 | 支持的服务和 region 有限制
+
 
 ### 4. 发送请求并查看响应 [:top:](#用户手册-top)
 

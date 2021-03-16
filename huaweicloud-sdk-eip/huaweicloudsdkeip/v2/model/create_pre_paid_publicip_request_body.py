@@ -25,16 +25,18 @@ class CreatePrePaidPublicipRequestBody:
     openapi_types = {
         'publicip': 'CreatePrePaidPublicipOption',
         'bandwidth': 'CreatePublicipBandwidthOption',
-        'extend_param': 'CreatePrePaidPublicipExtendParamOption'
+        'extend_param': 'CreatePrePaidPublicipExtendParamOption',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
         'publicip': 'publicip',
         'bandwidth': 'bandwidth',
-        'extend_param': 'extendParam'
+        'extend_param': 'extendParam',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, publicip=None, bandwidth=None, extend_param=None):
+    def __init__(self, publicip=None, bandwidth=None, extend_param=None, enterprise_project_id=None):
         """CreatePrePaidPublicipRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -42,12 +44,15 @@ class CreatePrePaidPublicipRequestBody:
         self._publicip = None
         self._bandwidth = None
         self._extend_param = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.publicip = publicip
         self.bandwidth = bandwidth
         if extend_param is not None:
             self.extend_param = extend_param
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def publicip(self):
@@ -108,6 +113,28 @@ class CreatePrePaidPublicipRequestBody:
         :type: CreatePrePaidPublicipExtendParamOption
         """
         self._extend_param = extend_param
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CreatePrePaidPublicipRequestBody.
+
+        企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建弹性公网IP时，给弹性公网IP绑定企业项目ID。  不指定该参数时，默认值是 0
+
+        :return: The enterprise_project_id of this CreatePrePaidPublicipRequestBody.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CreatePrePaidPublicipRequestBody.
+
+        企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建弹性公网IP时，给弹性公网IP绑定企业项目ID。  不指定该参数时，默认值是 0
+
+        :param enterprise_project_id: The enterprise_project_id of this CreatePrePaidPublicipRequestBody.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

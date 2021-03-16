@@ -1,3 +1,23 @@
+# 3.0.36-rc 2021-03-16
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add request field `enterprise_project_id` in interface `CreatePrePaidPublicip`.
+
+### HuaweiCloud SDK ProjectMan
+
+- _Features_
+    - None
+- _Bug Fix_
+    - Fix the problem that the SDK can not be used.
+- _Change_
+    - None
+
 # 3.0.35-rc 2021-03-15
 
 ### HuaweiCloud SDK Core

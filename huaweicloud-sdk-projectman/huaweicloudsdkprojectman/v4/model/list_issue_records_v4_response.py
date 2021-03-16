@@ -24,7 +24,7 @@ class ListIssueRecordsV4Response(SdkResponse):
 
     openapi_types = {
         'id': 'int',
-        'created_time': 'str',
+        'created_time': 'int',
         'records': 'list[IssueRecordV4]',
         'total': 'int'
     }
@@ -85,7 +85,7 @@ class ListIssueRecordsV4Response(SdkResponse):
         创建时间
 
         :return: The created_time of this ListIssueRecordsV4Response.
-        :rtype: str
+        :rtype: int
         """
         return self._created_time
 
@@ -96,7 +96,7 @@ class ListIssueRecordsV4Response(SdkResponse):
         创建时间
 
         :param created_time: The created_time of this ListIssueRecordsV4Response.
-        :type: str
+        :type: int
         """
         self._created_time = created_time
 

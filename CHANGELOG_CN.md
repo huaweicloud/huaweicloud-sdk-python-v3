@@ -1,3 +1,23 @@
+# 3.0.36-rc 2021-03-16
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 申请包周期弹性公网IP接口增加 `enterprise_project_id` 字段
+
+### HuaweiCloud SDK ProjectMan
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 修复接口无法调用的问题
+- _特性变更_
+    - 无
+
 # 3.0.35-rc 2021-03-15
 
 ### HuaweiCloud SDK Core
