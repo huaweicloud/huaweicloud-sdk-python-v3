@@ -9,7 +9,7 @@ import six
 from huaweicloudsdkcore.sdk_response import SdkResponse
 
 
-class StopDatabaseProxyResponse(SdkResponse):
+class CreateVisionActiveCodeResponse(SdkResponse):
 
 
     """
@@ -23,45 +23,16 @@ class StopDatabaseProxyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'workflow_id': 'str'
     }
 
     attribute_map = {
-        'workflow_id': 'workflow_id'
     }
 
-    def __init__(self, workflow_id=None):
-        """StopDatabaseProxyResponse - a model defined in huaweicloud sdk"""
+    def __init__(self):
+        """CreateVisionActiveCodeResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
-
-        self._workflow_id = None
         self.discriminator = None
-
-        if workflow_id is not None:
-            self.workflow_id = workflow_id
-
-    @property
-    def workflow_id(self):
-        """Gets the workflow_id of this StopDatabaseProxyResponse.
-
-        工作流ID
-
-        :return: The workflow_id of this StopDatabaseProxyResponse.
-        :rtype: str
-        """
-        return self._workflow_id
-
-    @workflow_id.setter
-    def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this StopDatabaseProxyResponse.
-
-        工作流ID
-
-        :param workflow_id: The workflow_id of this StopDatabaseProxyResponse.
-        :type: str
-        """
-        self._workflow_id = workflow_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -100,7 +71,7 @@ class StopDatabaseProxyResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, StopDatabaseProxyResponse):
+        if not isinstance(other, CreateVisionActiveCodeResponse):
             return False
 
         return self.__dict__ == other.__dict__

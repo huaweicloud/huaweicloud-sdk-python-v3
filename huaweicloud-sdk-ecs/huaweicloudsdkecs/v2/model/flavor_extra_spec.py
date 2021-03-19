@@ -28,11 +28,11 @@ class FlavorExtraSpec:
         'resource_type': 'str',
         'hpet_support': 'str',
         'instance_vnictype': 'str',
-        'instance_vnicinstance_bandwidth': 'int',
-        'instance_vnicmax_count': 'int',
+        'instance_vnicinstance_bandwidth': 'str',
+        'instance_vnicmax_count': 'str',
         'quotalocal_disk': 'str',
         'quotanvme_ssd': 'str',
-        'extra_speciopersistent_grant': 'bool',
+        'extra_speciopersistent_grant': 'str',
         'ecsgeneration': 'str',
         'ecsvirtualization_env_types': 'str',
         'pci_passthroughenable_gpu': 'str',
@@ -303,7 +303,7 @@ class FlavorExtraSpec:
         最大带宽，单位Mbps，最大值为10000。
 
         :return: The instance_vnicinstance_bandwidth of this FlavorExtraSpec.
-        :rtype: int
+        :rtype: str
         """
         return self._instance_vnicinstance_bandwidth
 
@@ -314,7 +314,7 @@ class FlavorExtraSpec:
         最大带宽，单位Mbps，最大值为10000。
 
         :param instance_vnicinstance_bandwidth: The instance_vnicinstance_bandwidth of this FlavorExtraSpec.
-        :type: int
+        :type: str
         """
         self._instance_vnicinstance_bandwidth = instance_vnicinstance_bandwidth
 
@@ -325,7 +325,7 @@ class FlavorExtraSpec:
         最大网卡个数，最大为4。
 
         :return: The instance_vnicmax_count of this FlavorExtraSpec.
-        :rtype: int
+        :rtype: str
         """
         return self._instance_vnicmax_count
 
@@ -336,7 +336,7 @@ class FlavorExtraSpec:
         最大网卡个数，最大为4。
 
         :param instance_vnicmax_count: The instance_vnicmax_count of this FlavorExtraSpec.
-        :type: int
+        :type: str
         """
         self._instance_vnicmax_count = instance_vnicmax_count
 
@@ -391,7 +391,7 @@ class FlavorExtraSpec:
         是否支持持久化，值为true。  代表云服务器访问存储的方式为持久化授权。   > 说明：  - 密集存储D1型特有字段。
 
         :return: The extra_speciopersistent_grant of this FlavorExtraSpec.
-        :rtype: bool
+        :rtype: str
         """
         return self._extra_speciopersistent_grant
 
@@ -402,7 +402,7 @@ class FlavorExtraSpec:
         是否支持持久化，值为true。  代表云服务器访问存储的方式为持久化授权。   > 说明：  - 密集存储D1型特有字段。
 
         :param extra_speciopersistent_grant: The extra_speciopersistent_grant of this FlavorExtraSpec.
-        :type: bool
+        :type: str
         """
         self._extra_speciopersistent_grant = extra_speciopersistent_grant
 

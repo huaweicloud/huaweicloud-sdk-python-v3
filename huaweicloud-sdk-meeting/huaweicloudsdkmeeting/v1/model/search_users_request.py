@@ -35,7 +35,8 @@ class SearchUsersRequest:
         'admin_type': 'int',
         'enable_room': 'bool',
         'user_type': 'list[int]',
-        'status': 'int'
+        'status': 'int',
+        'contains_un_active': 'bool'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class SearchUsersRequest:
         'admin_type': 'adminType',
         'enable_room': 'enableRoom',
         'user_type': 'userType',
-        'status': 'status'
+        'status': 'status',
+        'contains_un_active': 'containsUnActive'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, sort_field=None, is_asc=None, dept_code=None, enable_sub_dept=None, admin_type=None, enable_room=None, user_type=None, status=None):
+    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, sort_field=None, is_asc=None, dept_code=None, enable_sub_dept=None, admin_type=None, enable_room=None, user_type=None, status=None, contains_un_active=None):
         """SearchUsersRequest - a model defined in huaweicloud sdk"""
         
         
@@ -72,6 +74,7 @@ class SearchUsersRequest:
         self._enable_room = None
         self._user_type = None
         self._status = None
+        self._contains_un_active = None
         self.discriminator = None
 
         if x_request_id is not None:
@@ -100,6 +103,8 @@ class SearchUsersRequest:
             self.user_type = user_type
         if status is not None:
             self.status = status
+        if contains_un_active is not None:
+            self.contains_un_active = contains_un_active
 
     @property
     def x_request_id(self):
@@ -360,6 +365,26 @@ class SearchUsersRequest:
         :type: int
         """
         self._status = status
+
+    @property
+    def contains_un_active(self):
+        """Gets the contains_un_active of this SearchUsersRequest.
+
+
+        :return: The contains_un_active of this SearchUsersRequest.
+        :rtype: bool
+        """
+        return self._contains_un_active
+
+    @contains_un_active.setter
+    def contains_un_active(self, contains_un_active):
+        """Sets the contains_un_active of this SearchUsersRequest.
+
+
+        :param contains_un_active: The contains_un_active of this SearchUsersRequest.
+        :type: bool
+        """
+        self._contains_un_active = contains_un_active
 
     def to_dict(self):
         """Returns the model properties as a dict"""

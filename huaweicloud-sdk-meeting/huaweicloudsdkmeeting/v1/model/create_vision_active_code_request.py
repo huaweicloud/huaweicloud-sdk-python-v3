@@ -9,7 +9,7 @@ import six
 
 
 
-class StartInstanceDrToMasterActionRequest:
+class CreateVisionActiveCodeRequest:
 
 
     """
@@ -23,90 +23,91 @@ class StartInstanceDrToMasterActionRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_language': 'str',
-        'instance_id': 'str',
-        'body': 'DrReplicaToMaster'
+        'x_request_id': 'str',
+        'accept_language': 'str',
+        'body': 'VisionActiveCodeDTO'
     }
 
     attribute_map = {
-        'x_language': 'X-Language',
-        'instance_id': 'instance_id',
+        'x_request_id': 'X-Request-Id',
+        'accept_language': 'Accept-Language',
         'body': 'body'
     }
 
-    def __init__(self, x_language=None, instance_id=None, body=None):
-        """StartInstanceDrToMasterActionRequest - a model defined in huaweicloud sdk"""
+    def __init__(self, x_request_id=None, accept_language=None, body=None):
+        """CreateVisionActiveCodeRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._x_language = None
-        self._instance_id = None
+        self._x_request_id = None
+        self._accept_language = None
         self._body = None
         self.discriminator = None
 
-        if x_language is not None:
-            self.x_language = x_language
-        self.instance_id = instance_id
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
+        if accept_language is not None:
+            self.accept_language = accept_language
         if body is not None:
             self.body = body
 
     @property
-    def x_language(self):
-        """Gets the x_language of this StartInstanceDrToMasterActionRequest.
+    def x_request_id(self):
+        """Gets the x_request_id of this CreateVisionActiveCodeRequest.
 
 
-        :return: The x_language of this StartInstanceDrToMasterActionRequest.
+        :return: The x_request_id of this CreateVisionActiveCodeRequest.
         :rtype: str
         """
-        return self._x_language
+        return self._x_request_id
 
-    @x_language.setter
-    def x_language(self, x_language):
-        """Sets the x_language of this StartInstanceDrToMasterActionRequest.
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this CreateVisionActiveCodeRequest.
 
 
-        :param x_language: The x_language of this StartInstanceDrToMasterActionRequest.
+        :param x_request_id: The x_request_id of this CreateVisionActiveCodeRequest.
         :type: str
         """
-        self._x_language = x_language
+        self._x_request_id = x_request_id
 
     @property
-    def instance_id(self):
-        """Gets the instance_id of this StartInstanceDrToMasterActionRequest.
+    def accept_language(self):
+        """Gets the accept_language of this CreateVisionActiveCodeRequest.
 
 
-        :return: The instance_id of this StartInstanceDrToMasterActionRequest.
+        :return: The accept_language of this CreateVisionActiveCodeRequest.
         :rtype: str
         """
-        return self._instance_id
+        return self._accept_language
 
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        """Sets the instance_id of this StartInstanceDrToMasterActionRequest.
+    @accept_language.setter
+    def accept_language(self, accept_language):
+        """Sets the accept_language of this CreateVisionActiveCodeRequest.
 
 
-        :param instance_id: The instance_id of this StartInstanceDrToMasterActionRequest.
+        :param accept_language: The accept_language of this CreateVisionActiveCodeRequest.
         :type: str
         """
-        self._instance_id = instance_id
+        self._accept_language = accept_language
 
     @property
     def body(self):
-        """Gets the body of this StartInstanceDrToMasterActionRequest.
+        """Gets the body of this CreateVisionActiveCodeRequest.
 
 
-        :return: The body of this StartInstanceDrToMasterActionRequest.
-        :rtype: DrReplicaToMaster
+        :return: The body of this CreateVisionActiveCodeRequest.
+        :rtype: VisionActiveCodeDTO
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartInstanceDrToMasterActionRequest.
+        """Sets the body of this CreateVisionActiveCodeRequest.
 
 
-        :param body: The body of this StartInstanceDrToMasterActionRequest.
-        :type: DrReplicaToMaster
+        :param body: The body of this CreateVisionActiveCodeRequest.
+        :type: VisionActiveCodeDTO
         """
         self._body = body
 
@@ -147,7 +148,7 @@ class StartInstanceDrToMasterActionRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, StartInstanceDrToMasterActionRequest):
+        if not isinstance(other, CreateVisionActiveCodeRequest):
             return False
 
         return self.__dict__ == other.__dict__

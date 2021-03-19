@@ -9,7 +9,7 @@ import six
 
 
 
-class ChangeTheDelayThresholdRequest:
+class DeleteVisionActiveCodeRequest:
 
 
     """
@@ -23,90 +23,93 @@ class ChangeTheDelayThresholdRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_language': 'str',
-        'instance_id': 'str',
-        'body': 'ChangingTheDelayThresholdRequestBody'
+        'x_request_id': 'str',
+        'accept_language': 'str',
+        'body': 'list[str]'
     }
 
     attribute_map = {
-        'x_language': 'X-Language',
-        'instance_id': 'instance_id',
+        'x_request_id': 'X-Request-Id',
+        'accept_language': 'Accept-Language',
         'body': 'body'
     }
 
-    def __init__(self, x_language=None, instance_id=None, body=None):
-        """ChangeTheDelayThresholdRequest - a model defined in huaweicloud sdk"""
+    def __init__(self, x_request_id=None, accept_language=None, body=None):
+        """DeleteVisionActiveCodeRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._x_language = None
-        self._instance_id = None
+        self._x_request_id = None
+        self._accept_language = None
         self._body = None
         self.discriminator = None
 
-        if x_language is not None:
-            self.x_language = x_language
-        self.instance_id = instance_id
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
+        if accept_language is not None:
+            self.accept_language = accept_language
         if body is not None:
             self.body = body
 
     @property
-    def x_language(self):
-        """Gets the x_language of this ChangeTheDelayThresholdRequest.
+    def x_request_id(self):
+        """Gets the x_request_id of this DeleteVisionActiveCodeRequest.
 
 
-        :return: The x_language of this ChangeTheDelayThresholdRequest.
+        :return: The x_request_id of this DeleteVisionActiveCodeRequest.
         :rtype: str
         """
-        return self._x_language
+        return self._x_request_id
 
-    @x_language.setter
-    def x_language(self, x_language):
-        """Sets the x_language of this ChangeTheDelayThresholdRequest.
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this DeleteVisionActiveCodeRequest.
 
 
-        :param x_language: The x_language of this ChangeTheDelayThresholdRequest.
+        :param x_request_id: The x_request_id of this DeleteVisionActiveCodeRequest.
         :type: str
         """
-        self._x_language = x_language
+        self._x_request_id = x_request_id
 
     @property
-    def instance_id(self):
-        """Gets the instance_id of this ChangeTheDelayThresholdRequest.
+    def accept_language(self):
+        """Gets the accept_language of this DeleteVisionActiveCodeRequest.
 
 
-        :return: The instance_id of this ChangeTheDelayThresholdRequest.
+        :return: The accept_language of this DeleteVisionActiveCodeRequest.
         :rtype: str
         """
-        return self._instance_id
+        return self._accept_language
 
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeTheDelayThresholdRequest.
+    @accept_language.setter
+    def accept_language(self, accept_language):
+        """Sets the accept_language of this DeleteVisionActiveCodeRequest.
 
 
-        :param instance_id: The instance_id of this ChangeTheDelayThresholdRequest.
+        :param accept_language: The accept_language of this DeleteVisionActiveCodeRequest.
         :type: str
         """
-        self._instance_id = instance_id
+        self._accept_language = accept_language
 
     @property
     def body(self):
-        """Gets the body of this ChangeTheDelayThresholdRequest.
+        """Gets the body of this DeleteVisionActiveCodeRequest.
 
+        激活码的唯一标识列表
 
-        :return: The body of this ChangeTheDelayThresholdRequest.
-        :rtype: ChangingTheDelayThresholdRequestBody
+        :return: The body of this DeleteVisionActiveCodeRequest.
+        :rtype: list[str]
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeTheDelayThresholdRequest.
+        """Sets the body of this DeleteVisionActiveCodeRequest.
 
+        激活码的唯一标识列表
 
-        :param body: The body of this ChangeTheDelayThresholdRequest.
-        :type: ChangingTheDelayThresholdRequestBody
+        :param body: The body of this DeleteVisionActiveCodeRequest.
+        :type: list[str]
         """
         self._body = body
 
@@ -147,7 +150,7 @@ class ChangeTheDelayThresholdRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ChangeTheDelayThresholdRequest):
+        if not isinstance(other, DeleteVisionActiveCodeRequest):
             return False
 
         return self.__dict__ == other.__dict__

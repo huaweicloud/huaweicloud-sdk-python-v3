@@ -24,27 +24,32 @@ class ModCorpDTO:
 
     openapi_types = {
         'basic_info': 'ModCorpBasicDTO',
-        'admin_info': 'ModAdminDTO'
+        'admin_info': 'ModAdminDTO',
+        'group_id': 'str'
     }
 
     attribute_map = {
         'basic_info': 'basicInfo',
-        'admin_info': 'adminInfo'
+        'admin_info': 'adminInfo',
+        'group_id': 'groupId'
     }
 
-    def __init__(self, basic_info=None, admin_info=None):
+    def __init__(self, basic_info=None, admin_info=None, group_id=None):
         """ModCorpDTO - a model defined in huaweicloud sdk"""
         
         
 
         self._basic_info = None
         self._admin_info = None
+        self._group_id = None
         self.discriminator = None
 
         if basic_info is not None:
             self.basic_info = basic_info
         if admin_info is not None:
             self.admin_info = admin_info
+        if group_id is not None:
+            self.group_id = group_id
 
     @property
     def basic_info(self):
@@ -85,6 +90,28 @@ class ModCorpDTO:
         :type: ModAdminDTO
         """
         self._admin_info = admin_info
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this ModCorpDTO.
+
+        媒体接入（包括SBC和MCU）分组id, 可通过企业资源管理下的SP管理员查询资源信息接口获取。
+
+        :return: The group_id of this ModCorpDTO.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this ModCorpDTO.
+
+        媒体接入（包括SBC和MCU）分组id, 可通过企业资源管理下的SP管理员查询资源信息接口获取。
+
+        :param group_id: The group_id of this ModCorpDTO.
+        :type: str
+        """
+        self._group_id = group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

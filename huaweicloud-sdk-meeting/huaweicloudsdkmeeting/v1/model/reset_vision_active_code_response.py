@@ -6,10 +6,10 @@ import re
 import six
 
 
+from huaweicloudsdkcore.sdk_response import SdkResponse
 
 
-
-class StopDatabaseProxyRequest:
+class ResetVisionActiveCodeResponse(SdkResponse):
 
 
     """
@@ -23,67 +23,16 @@ class StopDatabaseProxyRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_language': 'str',
-        'instance_id': 'str'
     }
 
     attribute_map = {
-        'x_language': 'X-Language',
-        'instance_id': 'instance_id'
     }
 
-    def __init__(self, x_language=None, instance_id=None):
-        """StopDatabaseProxyRequest - a model defined in huaweicloud sdk"""
+    def __init__(self):
+        """ResetVisionActiveCodeResponse - a model defined in huaweicloud sdk"""
         
-        
-
-        self._x_language = None
-        self._instance_id = None
+        super().__init__()
         self.discriminator = None
-
-        if x_language is not None:
-            self.x_language = x_language
-        self.instance_id = instance_id
-
-    @property
-    def x_language(self):
-        """Gets the x_language of this StopDatabaseProxyRequest.
-
-
-        :return: The x_language of this StopDatabaseProxyRequest.
-        :rtype: str
-        """
-        return self._x_language
-
-    @x_language.setter
-    def x_language(self, x_language):
-        """Sets the x_language of this StopDatabaseProxyRequest.
-
-
-        :param x_language: The x_language of this StopDatabaseProxyRequest.
-        :type: str
-        """
-        self._x_language = x_language
-
-    @property
-    def instance_id(self):
-        """Gets the instance_id of this StopDatabaseProxyRequest.
-
-
-        :return: The instance_id of this StopDatabaseProxyRequest.
-        :rtype: str
-        """
-        return self._instance_id
-
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        """Sets the instance_id of this StopDatabaseProxyRequest.
-
-
-        :param instance_id: The instance_id of this StopDatabaseProxyRequest.
-        :type: str
-        """
-        self._instance_id = instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -122,7 +71,7 @@ class StopDatabaseProxyRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, StopDatabaseProxyRequest):
+        if not isinstance(other, ResetVisionActiveCodeResponse):
             return False
 
         return self.__dict__ == other.__dict__

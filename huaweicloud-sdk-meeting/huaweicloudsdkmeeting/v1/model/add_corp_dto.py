@@ -25,16 +25,18 @@ class AddCorpDTO:
     openapi_types = {
         'basic_info': 'CorpBasicDTO',
         'admin_info': 'AdminDTO',
-        'res_info': 'AddCorpResDTO'
+        'res_info': 'AddCorpResDTO',
+        'group_id': 'str'
     }
 
     attribute_map = {
         'basic_info': 'basicInfo',
         'admin_info': 'adminInfo',
-        'res_info': 'resInfo'
+        'res_info': 'resInfo',
+        'group_id': 'groupId'
     }
 
-    def __init__(self, basic_info=None, admin_info=None, res_info=None):
+    def __init__(self, basic_info=None, admin_info=None, res_info=None, group_id=None):
         """AddCorpDTO - a model defined in huaweicloud sdk"""
         
         
@@ -42,12 +44,15 @@ class AddCorpDTO:
         self._basic_info = None
         self._admin_info = None
         self._res_info = None
+        self._group_id = None
         self.discriminator = None
 
         self.basic_info = basic_info
         self.admin_info = admin_info
         if res_info is not None:
             self.res_info = res_info
+        if group_id is not None:
+            self.group_id = group_id
 
     @property
     def basic_info(self):
@@ -108,6 +113,28 @@ class AddCorpDTO:
         :type: AddCorpResDTO
         """
         self._res_info = res_info
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this AddCorpDTO.
+
+        媒体接入（包括SBC和MCU）分组id, 可通过企业资源管理下的SP管理员查询资源信息接口获取。
+
+        :return: The group_id of this AddCorpDTO.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this AddCorpDTO.
+
+        媒体接入（包括SBC和MCU）分组id, 可通过企业资源管理下的SP管理员查询资源信息接口获取。
+
+        :param group_id: The group_id of this AddCorpDTO.
+        :type: str
+        """
+        self._group_id = group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -2017,6 +2017,73 @@ class MeetingAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_vision_active_code_async(self, request):
+        """企业管理员生成激活码
+
+        企业管理员生成智慧屏、电子白板、Ideahub的激活码
+
+        :param CreateVisionActiveCodeRequest request
+        :return: CreateVisionActiveCodeResponse
+        """
+        return self.create_vision_active_code_with_http_info(request)
+
+    def create_vision_active_code_with_http_info(self, request):
+        """企业管理员生成激活码
+
+        企业管理员生成智慧屏、电子白板、Ideahub的激活码
+
+        :param CreateVisionActiveCodeRequest request
+        :return: CreateVisionActiveCodeResponse
+        """
+
+        all_params = ['vision_activecode_dto', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/dcs/corp/vision/activecode',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateVisionActiveCodeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_attendees_async(self, request):
         """删除与会者
 
@@ -2421,6 +2488,73 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteResourceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_vision_active_code_async(self, request):
+        """企业管理员删除激活码
+
+        企业管理员批量删除激活码
+
+        :param DeleteVisionActiveCodeRequest request
+        :return: DeleteVisionActiveCodeResponse
+        """
+        return self.delete_vision_active_code_with_http_info(request)
+
+    def delete_vision_active_code_with_http_info(self, request):
+        """企业管理员删除激活码
+
+        企业管理员批量删除激活码
+
+        :param DeleteVisionActiveCodeRequest request
+        :return: DeleteVisionActiveCodeResponse
+        """
+
+        all_params = ['del_list', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/dcs/corp/vision/activecode',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteVisionActiveCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3503,6 +3637,75 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ResetPwdByAdminResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def reset_vision_active_code_async(self, request):
+        """企业管理员重置账号的激活码
+
+        企业管理员重置账号的激活码，重置后，原设备直接解绑，必须重新激活使用,若手机邮箱不填，则不会发送新的激活码
+
+        :param ResetVisionActiveCodeRequest request
+        :return: ResetVisionActiveCodeResponse
+        """
+        return self.reset_vision_active_code_with_http_info(request)
+
+    def reset_vision_active_code_with_http_info(self, request):
+        """企业管理员重置账号的激活码
+
+        企业管理员重置账号的激活码，重置后，原设备直接解绑，必须重新激活使用,若手机邮箱不填，则不会发送新的激活码
+
+        :param ResetVisionActiveCodeRequest request
+        :return: ResetVisionActiveCodeResponse
+        """
+
+        all_params = ['account', 'active_dto', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'account' in local_var_params:
+            path_params['account'] = local_var_params['account']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/dcs/corp/vision/activecode/{account}/reset',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ResetVisionActiveCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -5026,7 +5229,7 @@ class MeetingAsyncClient(Client):
         :return: SearchUsersResponse
         """
 
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'sort_field', 'is_asc', 'dept_code', 'enable_sub_dept', 'admin_type', 'enable_room', 'user_type', 'status']
+        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'sort_field', 'is_asc', 'dept_code', 'enable_sub_dept', 'admin_type', 'enable_room', 'user_type', 'status', 'contains_un_active']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -5060,6 +5263,8 @@ class MeetingAsyncClient(Client):
             collection_formats['userType'] = 'csv'
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
+        if 'contains_un_active' in local_var_params:
+            query_params.append(('containsUnActive', local_var_params['contains_un_active']))
 
         header_params = {}
         if 'x_request_id' in local_var_params:
@@ -5089,6 +5294,79 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='SearchUsersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def search_vision_active_code_async(self, request):
+        """企业管理员分页查询激活码
+
+        企业管理员分页查询激活码，支持激活码、终端名称模糊查询。
+
+        :param SearchVisionActiveCodeRequest request
+        :return: SearchVisionActiveCodeResponse
+        """
+        return self.search_vision_active_code_with_http_info(request)
+
+    def search_vision_active_code_with_http_info(self, request):
+        """企业管理员分页查询激活码
+
+        企业管理员分页查询激活码，支持激活码、终端名称模糊查询。
+
+        :param SearchVisionActiveCodeRequest request
+        :return: SearchVisionActiveCodeResponse
+        """
+
+        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'dev_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+        if 'dev_type' in local_var_params:
+            query_params.append(('devType', local_var_params['dev_type']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/dcs/corp/vision/activecode',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchVisionActiveCodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -7113,6 +7391,73 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowSpResResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_sp_resource_async(self, request):
+        """SP管理员查询资源信息
+
+        sp管理员查询sp的所有资源，包括已使用的资源
+
+        :param ShowSpResourceRequest request
+        :return: ShowSpResourceResponse
+        """
+        return self.show_sp_resource_with_http_info(request)
+
+    def show_sp_resource_with_http_info(self, request):
+        """SP管理员查询资源信息
+
+        sp管理员查询sp的所有资源，包括已使用的资源
+
+        :param ShowSpResourceRequest request
+        :return: ShowSpResourceResponse
+        """
+
+        all_params = ['x_request_id', 'accept_language', 'query_group']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'query_group' in local_var_params:
+            query_params.append(('queryGroup', local_var_params['query_group']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/dcs/sp/resource',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowSpResourceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

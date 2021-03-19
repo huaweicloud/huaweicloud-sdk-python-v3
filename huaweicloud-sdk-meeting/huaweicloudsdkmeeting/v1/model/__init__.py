@@ -77,6 +77,8 @@ from huaweicloudsdkmeeting.v1.model.create_portal_ref_nonce_request import Creat
 from huaweicloudsdkmeeting.v1.model.create_portal_ref_nonce_response import CreatePortalRefNonceResponse
 from huaweicloudsdkmeeting.v1.model.create_program_request_dto import CreateProgramRequestDTO
 from huaweicloudsdkmeeting.v1.model.create_publication_request_dto import CreatePublicationRequestDTO
+from huaweicloudsdkmeeting.v1.model.create_vision_active_code_request import CreateVisionActiveCodeRequest
+from huaweicloudsdkmeeting.v1.model.create_vision_active_code_response import CreateVisionActiveCodeResponse
 from huaweicloudsdkmeeting.v1.model.cycle_params import CycleParams
 from huaweicloudsdkmeeting.v1.model.del_attend_info import DelAttendInfo
 from huaweicloudsdkmeeting.v1.model.delete_attendees_request import DeleteAttendeesRequest
@@ -91,6 +93,8 @@ from huaweicloudsdkmeeting.v1.model.delete_recordings_request import DeleteRecor
 from huaweicloudsdkmeeting.v1.model.delete_recordings_response import DeleteRecordingsResponse
 from huaweicloudsdkmeeting.v1.model.delete_resource_request import DeleteResourceRequest
 from huaweicloudsdkmeeting.v1.model.delete_resource_response import DeleteResourceResponse
+from huaweicloudsdkmeeting.v1.model.delete_vision_active_code_request import DeleteVisionActiveCodeRequest
+from huaweicloudsdkmeeting.v1.model.delete_vision_active_code_response import DeleteVisionActiveCodeResponse
 from huaweicloudsdkmeeting.v1.model.dept_basic_dto import DeptBasicDTO
 from huaweicloudsdkmeeting.v1.model.dept_dto import DeptDTO
 from huaweicloudsdkmeeting.v1.model.disassociate_vmr_request import DisassociateVmrRequest
@@ -147,6 +151,7 @@ from huaweicloudsdkmeeting.v1.model.publish_device_response_dto import PublishDe
 from huaweicloudsdkmeeting.v1.model.query_admin_result_dto import QueryAdminResultDTO
 from huaweicloudsdkmeeting.v1.model.query_corp_admin_result_dto import QueryCorpAdminResultDTO
 from huaweicloudsdkmeeting.v1.model.query_corp_basic_result_dto import QueryCorpBasicResultDTO
+from huaweicloudsdkmeeting.v1.model.query_corp_group_dto import QueryCorpGroupDTO
 from huaweicloudsdkmeeting.v1.model.query_corp_res_result_dto import QueryCorpResResultDTO
 from huaweicloudsdkmeeting.v1.model.query_corp_result_dto import QueryCorpResultDTO
 from huaweicloudsdkmeeting.v1.model.query_corp_vc_res_result_dto import QueryCorpVcResResultDTO
@@ -156,6 +161,7 @@ from huaweicloudsdkmeeting.v1.model.query_device_result_dto import QueryDeviceRe
 from huaweicloudsdkmeeting.v1.model.query_device_type_result_dto import QueryDeviceTypeResultDTO
 from huaweicloudsdkmeeting.v1.model.query_org_vmr_result_dto import QueryOrgVmrResultDTO
 from huaweicloudsdkmeeting.v1.model.query_resource_result_dto import QueryResourceResultDTO
+from huaweicloudsdkmeeting.v1.model.query_vision_active_code_result_dto import QueryVisionActiveCodeResultDTO
 from huaweicloudsdkmeeting.v1.model.query_vmr_pkg_res_result_dto import QueryVmrPkgResResultDTO
 from huaweicloudsdkmeeting.v1.model.query_vmr_result_dto import QueryVmrResultDTO
 from huaweicloudsdkmeeting.v1.model.real_time_attendee import RealTimeAttendee
@@ -174,6 +180,8 @@ from huaweicloudsdkmeeting.v1.model.reset_pwd_by_admin_response import ResetPwdB
 from huaweicloudsdkmeeting.v1.model.reset_pwd_req_dtov1 import ResetPwdReqDTOV1
 from huaweicloudsdkmeeting.v1.model.reset_pwd_request import ResetPwdRequest
 from huaweicloudsdkmeeting.v1.model.reset_pwd_response import ResetPwdResponse
+from huaweicloudsdkmeeting.v1.model.reset_vision_active_code_request import ResetVisionActiveCodeRequest
+from huaweicloudsdkmeeting.v1.model.reset_vision_active_code_response import ResetVisionActiveCodeResponse
 from huaweicloudsdkmeeting.v1.model.resource_dto import ResourceDTO
 from huaweicloudsdkmeeting.v1.model.rest_allow_un_mute_req_body import RestAllowUnMuteReqBody
 from huaweicloudsdkmeeting.v1.model.rest_attendee_dto import RestAttendeeDTO
@@ -242,6 +250,8 @@ from huaweicloudsdkmeeting.v1.model.search_resource_response import SearchResour
 from huaweicloudsdkmeeting.v1.model.search_user_result_dto import SearchUserResultDTO
 from huaweicloudsdkmeeting.v1.model.search_users_request import SearchUsersRequest
 from huaweicloudsdkmeeting.v1.model.search_users_response import SearchUsersResponse
+from huaweicloudsdkmeeting.v1.model.search_vision_active_code_request import SearchVisionActiveCodeRequest
+from huaweicloudsdkmeeting.v1.model.search_vision_active_code_response import SearchVisionActiveCodeResponse
 from huaweicloudsdkmeeting.v1.model.send_slide_verify_code_request import SendSlideVerifyCodeRequest
 from huaweicloudsdkmeeting.v1.model.send_slide_verify_code_response import SendSlideVerifyCodeResponse
 from huaweicloudsdkmeeting.v1.model.send_veri_code_for_change_pwd_request import SendVeriCodeForChangePwdRequest
@@ -302,6 +312,8 @@ from huaweicloudsdkmeeting.v1.model.show_region_info_of_meeting_request import S
 from huaweicloudsdkmeeting.v1.model.show_region_info_of_meeting_response import ShowRegionInfoOfMeetingResponse
 from huaweicloudsdkmeeting.v1.model.show_sp_res_request import ShowSpResRequest
 from huaweicloudsdkmeeting.v1.model.show_sp_res_response import ShowSpResResponse
+from huaweicloudsdkmeeting.v1.model.show_sp_resource_request import ShowSpResourceRequest
+from huaweicloudsdkmeeting.v1.model.show_sp_resource_response import ShowSpResourceResponse
 from huaweicloudsdkmeeting.v1.model.show_user_detail_request import ShowUserDetailRequest
 from huaweicloudsdkmeeting.v1.model.show_user_detail_response import ShowUserDetailResponse
 from huaweicloudsdkmeeting.v1.model.slide_verify_code_check_dto import SlideVerifyCodeCheckDTO
@@ -355,3 +367,4 @@ from huaweicloudsdkmeeting.v1.model.validate_token_req_dto import ValidateTokenR
 from huaweicloudsdkmeeting.v1.model.verification_code_dto import VerificationCodeDTO
 from huaweicloudsdkmeeting.v1.model.verify_code_check_dto import VerifyCodeCheckDTO
 from huaweicloudsdkmeeting.v1.model.verify_code_send_dtov1 import VerifyCodeSendDTOV1
+from huaweicloudsdkmeeting.v1.model.vision_active_code_dto import VisionActiveCodeDTO
