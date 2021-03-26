@@ -1080,6 +1080,69 @@ class AsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def execute_scaling_policies(self, request):
+        """批量操作弹性伸缩策略。
+
+        批量启用、停用或者删除弹性伸缩策略。单次最多批量操作伸缩策略个数为20。
+
+        :param ExecuteScalingPoliciesRequest request
+        :return: ExecuteScalingPoliciesResponse
+        """
+        return self.execute_scaling_policies_with_http_info(request)
+
+    def execute_scaling_policies_with_http_info(self, request):
+        """批量操作弹性伸缩策略。
+
+        批量启用、停用或者删除弹性伸缩策略。单次最多批量操作伸缩策略个数为20。
+
+        :param ExecuteScalingPoliciesRequest request
+        :return: ExecuteScalingPoliciesResponse
+        """
+
+        all_params = ['bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_policies/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ExecuteScalingPoliciesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def execute_scaling_policy(self, request):
         """执行或启用或停止弹性伸缩策略。
 
@@ -1403,6 +1466,81 @@ class AsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListScalingActivityLogsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_scaling_activity_v2_logs(self, request):
+        """查询伸缩活动日志v2版本
+
+        根据输入条件过滤查询伸缩活动日志，支持查询实例伸缩、ELB迁移、实例备用等类型活动。查询结果分页显示。查询伸缩活动日志V2版本与V1版本区别在于，V2版本展示了更详细的实例伸缩日志，如ELB迁移日志，实例备用日志信息。可根据起始时间，截止时间，起始行号，记录数，伸缩活动类型等作为条件过滤查询。若不加过滤条件默认查询最多20条伸缩活动日志信息。
+
+        :param ListScalingActivityV2LogsRequest request
+        :return: ListScalingActivityV2LogsResponse
+        """
+        return self.list_scaling_activity_v2_logs_with_http_info(request)
+
+    def list_scaling_activity_v2_logs_with_http_info(self, request):
+        """查询伸缩活动日志v2版本
+
+        根据输入条件过滤查询伸缩活动日志，支持查询实例伸缩、ELB迁移、实例备用等类型活动。查询结果分页显示。查询伸缩活动日志V2版本与V1版本区别在于，V2版本展示了更详细的实例伸缩日志，如ELB迁移日志，实例备用日志信息。可根据起始时间，截止时间，起始行号，记录数，伸缩活动类型等作为条件过滤查询。若不加过滤条件默认查询最多20条伸缩活动日志信息。
+
+        :param ListScalingActivityV2LogsRequest request
+        :return: ListScalingActivityV2LogsResponse
+        """
+
+        all_params = ['scaling_group_id', 'start_time', 'end_time', 'start_number', 'limit', 'type', 'status']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'start_number' in local_var_params:
+            query_params.append(('start_number', local_var_params['start_number']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v2/{project_id}/scaling_activity_log/{scaling_group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListScalingActivityV2LogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2599,6 +2737,351 @@ class AsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateScalingPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_scaling_v2_policy(self, request):
+        """创建弹性伸缩策略（V2版本）
+
+        可针对不同类型资源如伸缩组或带宽，创建弹性伸缩策略。创建弹性伸缩策略V2版本与V1版本的区别在于，V2版本支持创建对带宽资源进行调整的策略，通过伸缩资源类型区分伸缩资源。
+
+        :param CreateScalingV2PolicyRequest request
+        :return: CreateScalingV2PolicyResponse
+        """
+        return self.create_scaling_v2_policy_with_http_info(request)
+
+    def create_scaling_v2_policy_with_http_info(self, request):
+        """创建弹性伸缩策略（V2版本）
+
+        可针对不同类型资源如伸缩组或带宽，创建弹性伸缩策略。创建弹性伸缩策略V2版本与V1版本的区别在于，V2版本支持创建对带宽资源进行调整的策略，通过伸缩资源类型区分伸缩资源。
+
+        :param CreateScalingV2PolicyRequest request
+        :return: CreateScalingV2PolicyResponse
+        """
+
+        all_params = ['bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v2/{project_id}/scaling_policy',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateScalingV2PolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_all_scaling_v2_policies(self, request):
+        """查询弹性伸缩策略全量列表（V2版本）
+
+        根据输入条件过滤查询弹性伸缩策略，支持查询当前租户下全量伸缩策略。查询结果分页显示。可根据伸缩资源ID，伸缩资源类型，伸缩策略名称，伸缩策略ID，告警ID，企业项目ID，起始行号，记录数，排序方式等条件进行过滤查询。若不加过滤添加默认查询该租户下最多20条伸缩策略信息。
+
+        :param ListAllScalingV2PoliciesRequest request
+        :return: ListAllScalingV2PoliciesResponse
+        """
+        return self.list_all_scaling_v2_policies_with_http_info(request)
+
+    def list_all_scaling_v2_policies_with_http_info(self, request):
+        """查询弹性伸缩策略全量列表（V2版本）
+
+        根据输入条件过滤查询弹性伸缩策略，支持查询当前租户下全量伸缩策略。查询结果分页显示。可根据伸缩资源ID，伸缩资源类型，伸缩策略名称，伸缩策略ID，告警ID，企业项目ID，起始行号，记录数，排序方式等条件进行过滤查询。若不加过滤添加默认查询该租户下最多20条伸缩策略信息。
+
+        :param ListAllScalingV2PoliciesRequest request
+        :return: ListAllScalingV2PoliciesResponse
+        """
+
+        all_params = ['scaling_resource_id', 'scaling_resource_type', 'scaling_policy_name', 'scaling_policy_type', 'scaling_policy_id', 'start_number', 'limit', 'sort_by', 'order', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'scaling_resource_id' in local_var_params:
+            query_params.append(('scaling_resource_id', local_var_params['scaling_resource_id']))
+        if 'scaling_resource_type' in local_var_params:
+            query_params.append(('scaling_resource_type', local_var_params['scaling_resource_type']))
+        if 'scaling_policy_name' in local_var_params:
+            query_params.append(('scaling_policy_name', local_var_params['scaling_policy_name']))
+        if 'scaling_policy_type' in local_var_params:
+            query_params.append(('scaling_policy_type', local_var_params['scaling_policy_type']))
+        if 'scaling_policy_id' in local_var_params:
+            query_params.append(('scaling_policy_id', local_var_params['scaling_policy_id']))
+        if 'start_number' in local_var_params:
+            query_params.append(('start_number', local_var_params['start_number']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_by' in local_var_params:
+            query_params.append(('sort_by', local_var_params['sort_by']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v2/{project_id}/scaling_policy',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAllScalingV2PoliciesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_scaling_v2_policies(self, request):
+        """查询弹性伸缩策略列表（V2版本）
+
+        根据输入条件过滤查询弹性伸缩策略。查询结果分页显示。查询弹性伸缩策略V2版本与V1版本的区别在于，V2版本响应含伸缩资源类型。可根据伸缩策略名称，策略类型，伸缩策略ID，起始行号，记录数进行条件过滤查询。若不加过滤条件默认查询该租户下指定资源下最多20条伸缩策略信息。
+
+        :param ListScalingV2PoliciesRequest request
+        :return: ListScalingV2PoliciesResponse
+        """
+        return self.list_scaling_v2_policies_with_http_info(request)
+
+    def list_scaling_v2_policies_with_http_info(self, request):
+        """查询弹性伸缩策略列表（V2版本）
+
+        根据输入条件过滤查询弹性伸缩策略。查询结果分页显示。查询弹性伸缩策略V2版本与V1版本的区别在于，V2版本响应含伸缩资源类型。可根据伸缩策略名称，策略类型，伸缩策略ID，起始行号，记录数进行条件过滤查询。若不加过滤条件默认查询该租户下指定资源下最多20条伸缩策略信息。
+
+        :param ListScalingV2PoliciesRequest request
+        :return: ListScalingV2PoliciesResponse
+        """
+
+        all_params = ['scaling_resource_id', 'scaling_policy_name', 'scaling_policy_type', 'scaling_policy_id', 'start_number', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_resource_id' in local_var_params:
+            path_params['scaling_resource_id'] = local_var_params['scaling_resource_id']
+
+        query_params = []
+        if 'scaling_policy_name' in local_var_params:
+            query_params.append(('scaling_policy_name', local_var_params['scaling_policy_name']))
+        if 'scaling_policy_type' in local_var_params:
+            query_params.append(('scaling_policy_type', local_var_params['scaling_policy_type']))
+        if 'scaling_policy_id' in local_var_params:
+            query_params.append(('scaling_policy_id', local_var_params['scaling_policy_id']))
+        if 'start_number' in local_var_params:
+            query_params.append(('start_number', local_var_params['start_number']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v2/{project_id}/scaling_policy/{scaling_resource_id}/list',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListScalingV2PoliciesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_scaling_v2_policy(self, request):
+        """查询指定弹性伸缩策略详情（V2版本）
+
+        查询指定弹性伸缩策略信息。
+
+        :param ShowScalingV2PolicyRequest request
+        :return: ShowScalingV2PolicyResponse
+        """
+        return self.show_scaling_v2_policy_with_http_info(request)
+
+    def show_scaling_v2_policy_with_http_info(self, request):
+        """查询指定弹性伸缩策略详情（V2版本）
+
+        查询指定弹性伸缩策略信息。
+
+        :param ShowScalingV2PolicyRequest request
+        :return: ShowScalingV2PolicyResponse
+        """
+
+        all_params = ['scaling_policy_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_policy_id' in local_var_params:
+            path_params['scaling_policy_id'] = local_var_params['scaling_policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v2/{project_id}/scaling_policy/{scaling_policy_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowScalingV2PolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_scaling_v2_policy(self, request):
+        """修改弹性伸缩策略（V2版本）
+
+        修改指定弹性伸缩策略。修改弹性伸缩策略V2版本与V1版本的区别在于，V2版本支持修改伸缩资源类型。
+
+        :param UpdateScalingV2PolicyRequest request
+        :return: UpdateScalingV2PolicyResponse
+        """
+        return self.update_scaling_v2_policy_with_http_info(request)
+
+    def update_scaling_v2_policy_with_http_info(self, request):
+        """修改弹性伸缩策略（V2版本）
+
+        修改指定弹性伸缩策略。修改弹性伸缩策略V2版本与V1版本的区别在于，V2版本支持修改伸缩资源类型。
+
+        :param UpdateScalingV2PolicyRequest request
+        :return: UpdateScalingV2PolicyResponse
+        """
+
+        all_params = ['scaling_policy_id', 'bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_policy_id' in local_var_params:
+            path_params['scaling_policy_id'] = local_var_params['scaling_policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v2/{project_id}/scaling_policy/{scaling_policy_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateScalingV2PolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -14,10 +14,10 @@
 
 ## 使用前提
 
-- 要使用华为云 Java SDK ，您需要拥有华为云账号以及该账号对应的 Access Key（AK）和 Secret Access Key（SK）。请在华为云控制台 “我的凭证-访问密钥” 页面上创建和查看您的 AK&SK
+- 要使用华为云 Python SDK ，您需要拥有华为云账号以及该账号对应的 Access Key（AK）和 Secret Access Key（SK）。请在华为云控制台 “我的凭证-访问密钥” 页面上创建和查看您的 AK&SK
   。更多信息请查看 [访问密钥](https://support.huaweicloud.com/usermanual-ca/zh-cn_topic_0046606340.html) 。
 
-- 要使用华为云 Java SDK 访问指定服务的 API
+- 要使用华为云 Python SDK 访问指定服务的 API
   ，您需要确认已在 [华为云控制台](https://console.huaweicloud.com/console/?locale=zh-cn&region=cn-north-4#/home) 开通当前服务。
 
 - 华为云 Python SDK 支持 **python3** 及以上版本。可执行 `python --version` 检查当前 python 的版本信息。

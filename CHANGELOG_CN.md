@@ -1,3 +1,32 @@
+# 3.0.38-rc 2021-03-26
+
+### HuaweiCloud SDK Live
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 解决 ListLiveStreamsOnline 接口响应体反序列化失败的问题
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 解决 ListSlowlogStatistics 接口响应体部分字段为空的问题
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK SMN
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 将接口 `ListSlowlogStatistics` 下的 `property` 属性从必填调整为非必填
+
 # 3.0.37-rc 2021-03-19
 
 ### HuaweiCloud SDK ECS

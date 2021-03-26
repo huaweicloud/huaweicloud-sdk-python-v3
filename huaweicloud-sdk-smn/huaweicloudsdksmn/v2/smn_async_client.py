@@ -839,7 +839,7 @@ class SmnAsyncClient(Client):
         :return: ListMessageTemplatesResponse
         """
 
-        all_params = ['protocol', 'offset', 'limit', 'message_template_name']
+        all_params = ['offset', 'limit', 'message_template_name', 'protocol']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

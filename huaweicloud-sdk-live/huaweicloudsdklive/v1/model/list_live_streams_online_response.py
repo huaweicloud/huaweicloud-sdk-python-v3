@@ -28,7 +28,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
         'offset': 'int',
         'limit': 'int',
         'request_id': 'str',
-        'streams': 'OnlineInfo'
+        'streams': 'list[OnlineInfo]'
     }
 
     attribute_map = {
@@ -180,9 +180,10 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
     def streams(self):
         """Gets the streams of this ListLiveStreamsOnlineResponse.
 
+        推流统计
 
         :return: The streams of this ListLiveStreamsOnlineResponse.
-        :rtype: OnlineInfo
+        :rtype: list[OnlineInfo]
         """
         return self._streams
 
@@ -190,9 +191,10 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
     def streams(self, streams):
         """Sets the streams of this ListLiveStreamsOnlineResponse.
 
+        推流统计
 
         :param streams: The streams of this ListLiveStreamsOnlineResponse.
-        :type: OnlineInfo
+        :type: list[OnlineInfo]
         """
         self._streams = streams
 

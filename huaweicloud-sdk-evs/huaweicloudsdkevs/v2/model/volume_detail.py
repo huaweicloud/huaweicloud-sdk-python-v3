@@ -465,7 +465,7 @@ class VolumeDetail:
     def volume_type(self):
         """Gets the volume_type of this VolumeDetail.
 
-        云硬盘类型。 目前支持“SSD”，“SAS”和“SATA”三种。 “SSD”为超高IO云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘
+        云硬盘类型。 目前支持“SSD”，“GPSSD”，“SAS”和“SATA”四种。 “SSD”为超高IO云硬盘 “GPSSD”为通用型云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘
 
         :return: The volume_type of this VolumeDetail.
         :rtype: str
@@ -476,7 +476,7 @@ class VolumeDetail:
     def volume_type(self, volume_type):
         """Sets the volume_type of this VolumeDetail.
 
-        云硬盘类型。 目前支持“SSD”，“SAS”和“SATA”三种。 “SSD”为超高IO云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘
+        云硬盘类型。 目前支持“SSD”，“GPSSD”，“SAS”和“SATA”四种。 “SSD”为超高IO云硬盘 “GPSSD”为通用型云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘
 
         :param volume_type: The volume_type of this VolumeDetail.
         :type: str

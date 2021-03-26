@@ -226,6 +226,7 @@ from huaweicloudsdkrds.v3.model.show_off_site_backup_policy_request import ShowO
 from huaweicloudsdkrds.v3.model.show_off_site_backup_policy_response import ShowOffSiteBackupPolicyResponse
 from huaweicloudsdkrds.v3.model.single2_ha import Single2Ha
 from huaweicloudsdkrds.v3.model.slow_log import SlowLog
+from huaweicloudsdkrds.v3.model.slow_log_statistics import SlowLogStatistics
 from huaweicloudsdkrds.v3.model.slowlog_download_info import SlowlogDownloadInfo
 from huaweicloudsdkrds.v3.model.slowlog_download_request import SlowlogDownloadRequest
 from huaweicloudsdkrds.v3.model.ssl_option_request import SslOptionRequest

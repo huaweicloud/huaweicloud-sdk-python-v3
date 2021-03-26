@@ -25,7 +25,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
     openapi_types = {
         'page_number': 'int',
         'page_record': 'int',
-        'slow_log_list': 'list[SlowLog]',
+        'slow_log_list': 'list[SlowLogStatistics]',
         'total_record': 'int',
         'start_time': 'int',
         'end_time': 'int'
@@ -117,7 +117,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
         慢日志列表
 
         :return: The slow_log_list of this ListSlowlogStatisticsResponse.
-        :rtype: list[SlowLog]
+        :rtype: list[SlowLogStatistics]
         """
         return self._slow_log_list
 
@@ -128,7 +128,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
         慢日志列表
 
         :param slow_log_list: The slow_log_list of this ListSlowlogStatisticsResponse.
-        :type: list[SlowLog]
+        :type: list[SlowLogStatistics]
         """
         self._slow_log_list = slow_log_list
 

@@ -53,7 +53,8 @@ class ListMessageTemplatesRequest:
             self.limit = limit
         if message_template_name is not None:
             self.message_template_name = message_template_name
-        self.protocol = protocol
+        if protocol is not None:
+            self.protocol = protocol
 
     @property
     def offset(self):
