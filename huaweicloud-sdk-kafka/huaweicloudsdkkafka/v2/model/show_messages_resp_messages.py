@@ -26,17 +26,19 @@ class ShowMessagesRespMessages:
         'topic': 'str',
         'partition': 'int',
         'message_offset': 'int',
-        'size': 'int'
+        'size': 'int',
+        'timestamp': 'int'
     }
 
     attribute_map = {
         'topic': 'topic',
         'partition': 'partition',
         'message_offset': 'message_offset',
-        'size': 'size'
+        'size': 'size',
+        'timestamp': 'timestamp'
     }
 
-    def __init__(self, topic=None, partition=None, message_offset=None, size=None):
+    def __init__(self, topic=None, partition=None, message_offset=None, size=None, timestamp=None):
         """ShowMessagesRespMessages - a model defined in huaweicloud sdk"""
         
         
@@ -45,6 +47,7 @@ class ShowMessagesRespMessages:
         self._partition = None
         self._message_offset = None
         self._size = None
+        self._timestamp = None
         self.discriminator = None
 
         if topic is not None:
@@ -55,6 +58,8 @@ class ShowMessagesRespMessages:
             self.message_offset = message_offset
         if size is not None:
             self.size = size
+        if timestamp is not None:
+            self.timestamp = timestamp
 
     @property
     def topic(self):
@@ -143,6 +148,28 @@ class ShowMessagesRespMessages:
         :type: int
         """
         self._size = size
+
+    @property
+    def timestamp(self):
+        """Gets the timestamp of this ShowMessagesRespMessages.
+
+        消息时间戳。
+
+        :return: The timestamp of this ShowMessagesRespMessages.
+        :rtype: int
+        """
+        return self._timestamp
+
+    @timestamp.setter
+    def timestamp(self, timestamp):
+        """Sets the timestamp of this ShowMessagesRespMessages.
+
+        消息时间戳。
+
+        :param timestamp: The timestamp of this ShowMessagesRespMessages.
+        :type: int
+        """
+        self._timestamp = timestamp
 
     def to_dict(self):
         """Returns the model properties as a dict"""

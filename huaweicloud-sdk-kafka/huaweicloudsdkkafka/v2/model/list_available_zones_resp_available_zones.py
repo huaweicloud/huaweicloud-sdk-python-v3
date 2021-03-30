@@ -30,6 +30,7 @@ class ListAvailableZonesRespAvailableZones:
         'port': 'str',
         'resource_availability': 'str',
         'default_az': 'bool',
+        'remain_time': 'int',
         'ipv6_enable': 'bool'
     }
 
@@ -41,10 +42,11 @@ class ListAvailableZonesRespAvailableZones:
         'port': 'port',
         'resource_availability': 'resource_availability',
         'default_az': 'default_az',
+        'remain_time': 'remain_time',
         'ipv6_enable': 'ipv6_enable'
     }
 
-    def __init__(self, sold_out=None, id=None, code=None, name=None, port=None, resource_availability=None, default_az=None, ipv6_enable=None):
+    def __init__(self, sold_out=None, id=None, code=None, name=None, port=None, resource_availability=None, default_az=None, remain_time=None, ipv6_enable=None):
         """ListAvailableZonesRespAvailableZones - a model defined in huaweicloud sdk"""
         
         
@@ -56,6 +58,7 @@ class ListAvailableZonesRespAvailableZones:
         self._port = None
         self._resource_availability = None
         self._default_az = None
+        self._remain_time = None
         self._ipv6_enable = None
         self.discriminator = None
 
@@ -73,6 +76,8 @@ class ListAvailableZonesRespAvailableZones:
             self.resource_availability = resource_availability
         if default_az is not None:
             self.default_az = default_az
+        if remain_time is not None:
+            self.remain_time = remain_time
         if ipv6_enable is not None:
             self.ipv6_enable = ipv6_enable
 
@@ -229,6 +234,28 @@ class ListAvailableZonesRespAvailableZones:
         :type: bool
         """
         self._default_az = default_az
+
+    @property
+    def remain_time(self):
+        """Gets the remain_time of this ListAvailableZonesRespAvailableZones.
+
+        剩余时间。
+
+        :return: The remain_time of this ListAvailableZonesRespAvailableZones.
+        :rtype: int
+        """
+        return self._remain_time
+
+    @remain_time.setter
+    def remain_time(self, remain_time):
+        """Sets the remain_time of this ListAvailableZonesRespAvailableZones.
+
+        剩余时间。
+
+        :param remain_time: The remain_time of this ListAvailableZonesRespAvailableZones.
+        :type: int
+        """
+        self._remain_time = remain_time
 
     @property
     def ipv6_enable(self):

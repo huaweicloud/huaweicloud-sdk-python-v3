@@ -26,17 +26,17 @@ class ImageBatchModerationResultBody:
         'url': 'str',
         'suggestion': 'str',
         'detail': 'ImageDetectionResultDetail',
-        'category_suggestion': 'object'
+        'category_suggestions': 'object'
     }
 
     attribute_map = {
         'url': 'url',
         'suggestion': 'suggestion',
         'detail': 'detail',
-        'category_suggestion': 'category_suggestion'
+        'category_suggestions': 'category_suggestions'
     }
 
-    def __init__(self, url=None, suggestion=None, detail=None, category_suggestion=None):
+    def __init__(self, url=None, suggestion=None, detail=None, category_suggestions=None):
         """ImageBatchModerationResultBody - a model defined in huaweicloud sdk"""
         
         
@@ -44,7 +44,7 @@ class ImageBatchModerationResultBody:
         self._url = None
         self._suggestion = None
         self._detail = None
-        self._category_suggestion = None
+        self._category_suggestions = None
         self.discriminator = None
 
         if url is not None:
@@ -53,8 +53,8 @@ class ImageBatchModerationResultBody:
             self.suggestion = suggestion
         if detail is not None:
             self.detail = detail
-        if category_suggestion is not None:
-            self.category_suggestion = category_suggestion
+        if category_suggestions is not None:
+            self.category_suggestions = category_suggestions
 
     @property
     def url(self):
@@ -121,26 +121,26 @@ class ImageBatchModerationResultBody:
         self._detail = detail
 
     @property
-    def category_suggestion(self):
-        """Gets the category_suggestion of this ImageBatchModerationResultBody.
+    def category_suggestions(self):
+        """Gets the category_suggestions of this ImageBatchModerationResultBody.
 
         具体每个场景的检测结果。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检 
 
-        :return: The category_suggestion of this ImageBatchModerationResultBody.
+        :return: The category_suggestions of this ImageBatchModerationResultBody.
         :rtype: object
         """
-        return self._category_suggestion
+        return self._category_suggestions
 
-    @category_suggestion.setter
-    def category_suggestion(self, category_suggestion):
-        """Sets the category_suggestion of this ImageBatchModerationResultBody.
+    @category_suggestions.setter
+    def category_suggestions(self, category_suggestions):
+        """Sets the category_suggestions of this ImageBatchModerationResultBody.
 
         具体每个场景的检测结果。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检 
 
-        :param category_suggestion: The category_suggestion of this ImageBatchModerationResultBody.
+        :param category_suggestions: The category_suggestions of this ImageBatchModerationResultBody.
         :type: object
         """
-        self._category_suggestion = category_suggestion
+        self._category_suggestions = category_suggestions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

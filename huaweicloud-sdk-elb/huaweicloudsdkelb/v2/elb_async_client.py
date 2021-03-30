@@ -48,6 +48,266 @@ class ElbAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
+    def batch_create_listener_tags_async(self, request):
+        """批量添加监听器标签
+
+        批量添加监听器标签。
+
+        :param BatchCreateListenerTagsRequest request
+        :return: BatchCreateListenerTagsResponse
+        """
+        return self.batch_create_listener_tags_with_http_info(request)
+
+    def batch_create_listener_tags_with_http_info(self, request):
+        """批量添加监听器标签
+
+        批量添加监听器标签。
+
+        :param BatchCreateListenerTagsRequest request
+        :return: BatchCreateListenerTagsResponse
+        """
+
+        all_params = ['listener_id', 'batch_create_listener_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'listener_id' in local_var_params:
+            path_params['listener_id'] = local_var_params['listener_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/listeners/{listener_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchCreateListenerTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_create_loadbalancer_tags_async(self, request):
+        """批量添加负载均衡器标签
+
+        批量添加负载均衡器标签。
+
+        :param BatchCreateLoadbalancerTagsRequest request
+        :return: BatchCreateLoadbalancerTagsResponse
+        """
+        return self.batch_create_loadbalancer_tags_with_http_info(request)
+
+    def batch_create_loadbalancer_tags_with_http_info(self, request):
+        """批量添加负载均衡器标签
+
+        批量添加负载均衡器标签。
+
+        :param BatchCreateLoadbalancerTagsRequest request
+        :return: BatchCreateLoadbalancerTagsResponse
+        """
+
+        all_params = ['loadbalancer_id', 'batch_create_loadbalancer_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/loadbalancers/{loadbalancer_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchCreateLoadbalancerTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_delete_listener_tags_async(self, request):
+        """批量删除监听器标签
+
+        批量删除监听器标签。
+
+        :param BatchDeleteListenerTagsRequest request
+        :return: BatchDeleteListenerTagsResponse
+        """
+        return self.batch_delete_listener_tags_with_http_info(request)
+
+    def batch_delete_listener_tags_with_http_info(self, request):
+        """批量删除监听器标签
+
+        批量删除监听器标签。
+
+        :param BatchDeleteListenerTagsRequest request
+        :return: BatchDeleteListenerTagsResponse
+        """
+
+        all_params = ['listener_id', 'batch_delete_listener_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'listener_id' in local_var_params:
+            path_params['listener_id'] = local_var_params['listener_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/listeners/{listener_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteListenerTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_delete_loadbalancer_tags_async(self, request):
+        """批量删除负载均衡器标签
+
+        批量删除负载均衡器标签。
+
+        :param BatchDeleteLoadbalancerTagsRequest request
+        :return: BatchDeleteLoadbalancerTagsResponse
+        """
+        return self.batch_delete_loadbalancer_tags_with_http_info(request)
+
+    def batch_delete_loadbalancer_tags_with_http_info(self, request):
+        """批量删除负载均衡器标签
+
+        批量删除负载均衡器标签。
+
+        :param BatchDeleteLoadbalancerTagsRequest request
+        :return: BatchDeleteLoadbalancerTagsResponse
+        """
+
+        all_params = ['loadbalancer_id', 'batch_delete_loadbalancer_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/loadbalancers/{loadbalancer_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteLoadbalancerTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_healthmonitor_async(self, request):
         """创建健康检查
 
@@ -92,7 +352,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -155,7 +415,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -220,7 +480,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -283,7 +543,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -296,6 +556,71 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateListenerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_listener_tags_async(self, request):
+        """添加监听器标签
+
+        给指定负载均衡器添加标签。
+
+        :param CreateListenerTagsRequest request
+        :return: CreateListenerTagsResponse
+        """
+        return self.create_listener_tags_with_http_info(request)
+
+    def create_listener_tags_with_http_info(self, request):
+        """添加监听器标签
+
+        给指定负载均衡器添加标签。
+
+        :param CreateListenerTagsRequest request
+        :return: CreateListenerTagsResponse
+        """
+
+        all_params = ['listener_id', 'create_listener_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'listener_id' in local_var_params:
+            path_params['listener_id'] = local_var_params['listener_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/listeners/{listener_id}/tags',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateListenerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -346,7 +671,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -359,6 +684,71 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateLoadbalancerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_loadbalancer_tags_async(self, request):
+        """添加负载均衡器标签
+
+        给指定负载均衡器添加标签。
+
+        :param CreateLoadbalancerTagsRequest request
+        :return: CreateLoadbalancerTagsResponse
+        """
+        return self.create_loadbalancer_tags_with_http_info(request)
+
+    def create_loadbalancer_tags_with_http_info(self, request):
+        """添加负载均衡器标签
+
+        给指定负载均衡器添加标签。
+
+        :param CreateLoadbalancerTagsRequest request
+        :return: CreateLoadbalancerTagsResponse
+        """
+
+        all_params = ['loadbalancer_id', 'create_loadbalancer_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/loadbalancers/{loadbalancer_id}/tags',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateLoadbalancerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -411,7 +801,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -474,7 +864,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -537,7 +927,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -812,6 +1202,71 @@ class ElbAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_listener_tags_async(self, request):
+        """删除监听器标签
+
+        删除监听器的某个key对应的标签。
+
+        :param DeleteListenerTagsRequest request
+        :return: DeleteListenerTagsResponse
+        """
+        return self.delete_listener_tags_with_http_info(request)
+
+    def delete_listener_tags_with_http_info(self, request):
+        """删除监听器标签
+
+        删除监听器的某个key对应的标签。
+
+        :param DeleteListenerTagsRequest request
+        :return: DeleteListenerTagsResponse
+        """
+
+        all_params = ['listener_id', 'key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'listener_id' in local_var_params:
+            path_params['listener_id'] = local_var_params['listener_id']
+        if 'key' in local_var_params:
+            path_params['key'] = local_var_params['key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/listeners/{listener_id}/tags/{key}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteListenerTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_loadbalancer_async(self, request):
         """删除负载均衡
 
@@ -871,6 +1326,71 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteLoadbalancerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_loadbalancer_tags_async(self, request):
+        """删除负载均衡标签
+
+        删除负载均衡器的某个key对应的标签。
+
+        :param DeleteLoadbalancerTagsRequest request
+        :return: DeleteLoadbalancerTagsResponse
+        """
+        return self.delete_loadbalancer_tags_with_http_info(request)
+
+    def delete_loadbalancer_tags_with_http_info(self, request):
+        """删除负载均衡标签
+
+        删除负载均衡器的某个key对应的标签。
+
+        :param DeleteLoadbalancerTagsRequest request
+        :return: DeleteLoadbalancerTagsResponse
+        """
+
+        all_params = ['loadbalancer_id', 'key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
+        if 'key' in local_var_params:
+            path_params['key'] = local_var_params['key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/loadbalancers/{loadbalancer_id}/tags/{key}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteLoadbalancerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1337,6 +1857,67 @@ class ElbAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_listener_tags_async(self, request):
+        """查询所有监听器的标签列表
+
+        查询指定项目下所有监听器的标签列表
+
+        :param ListListenerTagsRequest request
+        :return: ListListenerTagsResponse
+        """
+        return self.list_listener_tags_with_http_info(request)
+
+    def list_listener_tags_with_http_info(self, request):
+        """查询所有监听器的标签列表
+
+        查询指定项目下所有监听器的标签列表
+
+        :param ListListenerTagsRequest request
+        :return: ListListenerTagsResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/listeners/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListListenerTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_listeners_async(self, request):
         """查询监听器列表
 
@@ -1430,6 +2011,130 @@ class ElbAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_listeners_by_tags_async(self, request):
+        """根据标签查询监听器
+
+        根据标签过滤查询监听器实例。
+
+        :param ListListenersByTagsRequest request
+        :return: ListListenersByTagsResponse
+        """
+        return self.list_listeners_by_tags_with_http_info(request)
+
+    def list_listeners_by_tags_with_http_info(self, request):
+        """根据标签查询监听器
+
+        根据标签过滤查询监听器实例。
+
+        :param ListListenersByTagsRequest request
+        :return: ListListenersByTagsResponse
+        """
+
+        all_params = ['list_listeners_by_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/listeners/resource_instances/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListListenersByTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_loadbalancer_tags_async(self, request):
+        """查询所有负载均衡器的标签列表
+
+        查询指定项目下所有负载均衡器的标签列表
+
+        :param ListLoadbalancerTagsRequest request
+        :return: ListLoadbalancerTagsResponse
+        """
+        return self.list_loadbalancer_tags_with_http_info(request)
+
+    def list_loadbalancer_tags_with_http_info(self, request):
+        """查询所有负载均衡器的标签列表
+
+        查询指定项目下所有负载均衡器的标签列表
+
+        :param ListLoadbalancerTagsRequest request
+        :return: ListLoadbalancerTagsResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/loadbalancers/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListLoadbalancerTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_loadbalancers_async(self, request):
         """查询负载均衡列表
 
@@ -1517,6 +2222,69 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListLoadbalancersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_loadbalancers_by_tags_async(self, request):
+        """根据标签查询负载均衡器
+
+        根据标签过滤查询负载均衡实例。
+
+        :param ListLoadbalancersByTagsRequest request
+        :return: ListLoadbalancersByTagsResponse
+        """
+        return self.list_loadbalancers_by_tags_with_http_info(request)
+
+    def list_loadbalancers_by_tags_with_http_info(self, request):
+        """根据标签查询负载均衡器
+
+        根据标签过滤查询负载均衡实例。
+
+        :param ListLoadbalancersByTagsRequest request
+        :return: ListLoadbalancersByTagsResponse
+        """
+
+        all_params = ['list_loadbalancers_by_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/loadbalancers/resource_instances/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListLoadbalancersByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2022,6 +2790,69 @@ class ElbAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_listener_tags_async(self, request):
+        """查询监听器的标签详情
+
+        查询指定监听器的所有标签信息。
+
+        :param ShowListenerTagsRequest request
+        :return: ShowListenerTagsResponse
+        """
+        return self.show_listener_tags_with_http_info(request)
+
+    def show_listener_tags_with_http_info(self, request):
+        """查询监听器的标签详情
+
+        查询指定监听器的所有标签信息。
+
+        :param ShowListenerTagsRequest request
+        :return: ShowListenerTagsResponse
+        """
+
+        all_params = ['listener_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'listener_id' in local_var_params:
+            path_params['listener_id'] = local_var_params['listener_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/listeners/{listener_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowListenerTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_loadbalancer_async(self, request):
         """查询负载均衡详情
 
@@ -2079,6 +2910,69 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowLoadbalancerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_loadbalancer_tags_async(self, request):
+        """查询负载均衡器的标签详情
+
+        查询指定负载均衡器的所有标签信息
+
+        :param ShowLoadbalancerTagsRequest request
+        :return: ShowLoadbalancerTagsResponse
+        """
+        return self.show_loadbalancer_tags_with_http_info(request)
+
+    def show_loadbalancer_tags_with_http_info(self, request):
+        """查询负载均衡器的标签详情
+
+        查询指定负载均衡器的所有标签信息
+
+        :param ShowLoadbalancerTagsRequest request
+        :return: ShowLoadbalancerTagsResponse
+        """
+
+        all_params = ['loadbalancer_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/loadbalancers/{loadbalancer_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowLoadbalancerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2385,7 +3279,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -2450,7 +3344,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -2517,7 +3411,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -2582,7 +3476,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -2647,7 +3541,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -2714,7 +3608,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -2779,7 +3673,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -2844,7 +3738,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -2907,7 +3801,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 
@@ -3179,7 +4073,7 @@ class ElbAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/json'])
 
         auth_settings = []
 

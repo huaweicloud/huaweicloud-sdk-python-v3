@@ -9,7 +9,7 @@ import six
 
 
 
-class TextDetectionBody:
+class TextDetectionResponseResult:
 
 
     """
@@ -33,7 +33,7 @@ class TextDetectionBody:
     }
 
     def __init__(self, suggestion=None, detail=None):
-        """TextDetectionBody - a model defined in huaweicloud sdk"""
+        """TextDetectionResponseResult - a model defined in huaweicloud sdk"""
         
         
 
@@ -48,44 +48,44 @@ class TextDetectionBody:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this TextDetectionBody.
+        """Gets the suggestion of this TextDetectionResponseResult.
 
         检测结果是否通过。  block：包含敏感信息，不通过。  pass：不包含敏感信息，通过。  review：需要人工复查。
 
-        :return: The suggestion of this TextDetectionBody.
+        :return: The suggestion of this TextDetectionResponseResult.
         :rtype: str
         """
         return self._suggestion
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this TextDetectionBody.
+        """Sets the suggestion of this TextDetectionResponseResult.
 
         检测结果是否通过。  block：包含敏感信息，不通过。  pass：不包含敏感信息，通过。  review：需要人工复查。
 
-        :param suggestion: The suggestion of this TextDetectionBody.
+        :param suggestion: The suggestion of this TextDetectionResponseResult.
         :type: str
         """
         self._suggestion = suggestion
 
     @property
     def detail(self):
-        """Gets the detail of this TextDetectionBody.
+        """Gets the detail of this TextDetectionResponseResult.
 
         返回的相关检测结果详细信息：  - politics：涉政敏感词列表。  - porn：涉黄敏感词列表。  - ad：广告敏感词列表。  - abuse：辱骂敏感词列表。  - contraband：违禁品敏感词列表。  - flood：灌水文本。  > 说明：  - 灌水文本最多显示200个字符。
 
-        :return: The detail of this TextDetectionBody.
+        :return: The detail of this TextDetectionResponseResult.
         :rtype: object
         """
         return self._detail
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this TextDetectionBody.
+        """Sets the detail of this TextDetectionResponseResult.
 
         返回的相关检测结果详细信息：  - politics：涉政敏感词列表。  - porn：涉黄敏感词列表。  - ad：广告敏感词列表。  - abuse：辱骂敏感词列表。  - contraband：违禁品敏感词列表。  - flood：灌水文本。  > 说明：  - 灌水文本最多显示200个字符。
 
-        :param detail: The detail of this TextDetectionBody.
+        :param detail: The detail of this TextDetectionResponseResult.
         :type: object
         """
         self._detail = detail
@@ -127,7 +127,7 @@ class TextDetectionBody:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TextDetectionBody):
+        if not isinstance(other, TextDetectionResponseResult):
             return False
 
         return self.__dict__ == other.__dict__

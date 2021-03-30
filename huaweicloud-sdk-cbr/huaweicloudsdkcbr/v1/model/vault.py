@@ -212,7 +212,7 @@ class Vault:
     def provider_id(self):
         """Gets the provider_id of this Vault.
 
-        保管库类型
+        保管库资源类型id
 
         :return: The provider_id of this Vault.
         :rtype: str
@@ -223,7 +223,7 @@ class Vault:
     def provider_id(self, provider_id):
         """Sets the provider_id of this Vault.
 
-        保管库类型
+        保管库资源类型id
 
         :param provider_id: The provider_id of this Vault.
         :type: str

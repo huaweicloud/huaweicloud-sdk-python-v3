@@ -1,0 +1,218 @@
+# coding: utf-8
+
+import pprint
+import re
+
+import six
+
+
+
+
+
+class VersionMetadata:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'id': 'str',
+        'create_time': 'int',
+        'kms_key_id': 'str',
+        'secret_id': 'str',
+        'version_stages': 'list[str]'
+    }
+
+    attribute_map = {
+        'id': 'id',
+        'create_time': 'create_time',
+        'kms_key_id': 'kms_key_id',
+        'secret_id': 'secret_id',
+        'version_stages': 'version_stages'
+    }
+
+    def __init__(self, id=None, create_time=None, kms_key_id=None, secret_id=None, version_stages=None):
+        """VersionMetadata - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._id = None
+        self._create_time = None
+        self._kms_key_id = None
+        self._secret_id = None
+        self._version_stages = None
+        self.discriminator = None
+
+        if id is not None:
+            self.id = id
+        if create_time is not None:
+            self.create_time = create_time
+        if kms_key_id is not None:
+            self.kms_key_id = kms_key_id
+        if secret_id is not None:
+            self.secret_id = secret_id
+        if version_stages is not None:
+            self.version_stages = version_stages
+
+    @property
+    def id(self):
+        """Gets the id of this VersionMetadata.
+
+        凭据的版本号标识符，凭据对象下唯一。
+
+        :return: The id of this VersionMetadata.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this VersionMetadata.
+
+        凭据的版本号标识符，凭据对象下唯一。
+
+        :param id: The id of this VersionMetadata.
+        :type: str
+        """
+        self._id = id
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this VersionMetadata.
+
+        凭据版本创建时间，时间戳，即从1970年1月1日至该时间的总秒数。 
+
+        :return: The create_time of this VersionMetadata.
+        :rtype: int
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this VersionMetadata.
+
+        凭据版本创建时间，时间戳，即从1970年1月1日至该时间的总秒数。 
+
+        :param create_time: The create_time of this VersionMetadata.
+        :type: int
+        """
+        self._create_time = create_time
+
+    @property
+    def kms_key_id(self):
+        """Gets the kms_key_id of this VersionMetadata.
+
+        加密版本凭据值的KMS主密钥ID。 
+
+        :return: The kms_key_id of this VersionMetadata.
+        :rtype: str
+        """
+        return self._kms_key_id
+
+    @kms_key_id.setter
+    def kms_key_id(self, kms_key_id):
+        """Sets the kms_key_id of this VersionMetadata.
+
+        加密版本凭据值的KMS主密钥ID。 
+
+        :param kms_key_id: The kms_key_id of this VersionMetadata.
+        :type: str
+        """
+        self._kms_key_id = kms_key_id
+
+    @property
+    def secret_id(self):
+        """Gets the secret_id of this VersionMetadata.
+
+        凭据的资源标识符。
+
+        :return: The secret_id of this VersionMetadata.
+        :rtype: str
+        """
+        return self._secret_id
+
+    @secret_id.setter
+    def secret_id(self, secret_id):
+        """Sets the secret_id of this VersionMetadata.
+
+        凭据的资源标识符。
+
+        :param secret_id: The secret_id of this VersionMetadata.
+        :type: str
+        """
+        self._secret_id = secret_id
+
+    @property
+    def version_stages(self):
+        """Gets the version_stages of this VersionMetadata.
+
+        凭据版本被标记的状态列表。每个版本标签对于凭据对象下版本是唯一存在的，如果你创建版本时，指定的是同一凭据对象下的一个已经标记在其他版本上的状态，该标签将自动从其他版本上删除，并附加到此版本上。  如果未指定version_stage的值，则凭据管理服务会自动移动临时标签SYSCURRENT到此新版本。 
+
+        :return: The version_stages of this VersionMetadata.
+        :rtype: list[str]
+        """
+        return self._version_stages
+
+    @version_stages.setter
+    def version_stages(self, version_stages):
+        """Sets the version_stages of this VersionMetadata.
+
+        凭据版本被标记的状态列表。每个版本标签对于凭据对象下版本是唯一存在的，如果你创建版本时，指定的是同一凭据对象下的一个已经标记在其他版本上的状态，该标签将自动从其他版本上删除，并附加到此版本上。  如果未指定version_stage的值，则凭据管理服务会自动移动临时标签SYSCURRENT到此新版本。 
+
+        :param version_stages: The version_stages of this VersionMetadata.
+        :type: list[str]
+        """
+        self._version_stages = version_stages
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        return pprint.pformat(self.to_dict())
+
+    def __repr__(self):
+        """For `print` and `pprint`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, VersionMetadata):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

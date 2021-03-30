@@ -60,6 +60,7 @@ class ImageDetectionResultDetail:
     def politics(self):
         """Gets the politics of this ImageDetectionResultDetail.
 
+        涉政敏感人物检测结果。
 
         :return: The politics of this ImageDetectionResultDetail.
         :rtype: list[ImageDetectionResultDetailPolitics]
@@ -70,6 +71,7 @@ class ImageDetectionResultDetail:
     def politics(self, politics):
         """Sets the politics of this ImageDetectionResultDetail.
 
+        涉政敏感人物检测结果。
 
         :param politics: The politics of this ImageDetectionResultDetail.
         :type: list[ImageDetectionResultDetailPolitics]
@@ -80,6 +82,7 @@ class ImageDetectionResultDetail:
     def porn(self):
         """Gets the porn of this ImageDetectionResultDetail.
 
+        涉黄检测结果。
 
         :return: The porn of this ImageDetectionResultDetail.
         :rtype: list[ImageDetectionResultDetailPorn]
@@ -90,6 +93,7 @@ class ImageDetectionResultDetail:
     def porn(self, porn):
         """Sets the porn of this ImageDetectionResultDetail.
 
+        涉黄检测结果。
 
         :param porn: The porn of this ImageDetectionResultDetail.
         :type: list[ImageDetectionResultDetailPorn]
@@ -100,6 +104,7 @@ class ImageDetectionResultDetail:
     def terrorism(self):
         """Gets the terrorism of this ImageDetectionResultDetail.
 
+        涉政、暴恐检测结果。
 
         :return: The terrorism of this ImageDetectionResultDetail.
         :rtype: list[ImageDetectionResultDetailPorn]
@@ -110,6 +115,7 @@ class ImageDetectionResultDetail:
     def terrorism(self, terrorism):
         """Sets the terrorism of this ImageDetectionResultDetail.
 
+        涉政、暴恐检测结果。
 
         :param terrorism: The terrorism of this ImageDetectionResultDetail.
         :type: list[ImageDetectionResultDetailPorn]
@@ -120,6 +126,7 @@ class ImageDetectionResultDetail:
     def ad(self):
         """Gets the ad of this ImageDetectionResultDetail.
 
+        广告检测结果。
 
         :return: The ad of this ImageDetectionResultDetail.
         :rtype: list[ImageDetectionResultDetailPorn]
@@ -130,6 +137,7 @@ class ImageDetectionResultDetail:
     def ad(self, ad):
         """Sets the ad of this ImageDetectionResultDetail.
 
+        广告检测结果。
 
         :param ad: The ad of this ImageDetectionResultDetail.
         :type: list[ImageDetectionResultDetailPorn]

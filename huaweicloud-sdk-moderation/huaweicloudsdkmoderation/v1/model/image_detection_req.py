@@ -25,25 +25,31 @@ class ImageDetectionReq:
     openapi_types = {
         'url': 'str',
         'image': 'str',
+        'moderation_rule': 'str',
         'categories': 'list[str]',
+        'ad_glossaries': 'list[str]',
         'threshold': 'float'
     }
 
     attribute_map = {
         'url': 'url',
         'image': 'image',
+        'moderation_rule': 'moderation_rule',
         'categories': 'categories',
+        'ad_glossaries': 'ad_glossaries',
         'threshold': 'threshold'
     }
 
-    def __init__(self, url=None, image=None, categories=None, threshold=None):
+    def __init__(self, url=None, image=None, moderation_rule=None, categories=None, ad_glossaries=None, threshold=None):
         """ImageDetectionReq - a model defined in huaweicloud sdk"""
         
         
 
         self._url = None
         self._image = None
+        self._moderation_rule = None
         self._categories = None
+        self._ad_glossaries = None
         self._threshold = None
         self.discriminator = None
 
@@ -51,8 +57,12 @@ class ImageDetectionReq:
             self.url = url
         if image is not None:
             self.image = image
+        if moderation_rule is not None:
+            self.moderation_rule = moderation_rule
         if categories is not None:
             self.categories = categories
+        if ad_glossaries is not None:
+            self.ad_glossaries = ad_glossaries
         if threshold is not None:
             self.threshold = threshold
 
@@ -101,6 +111,28 @@ class ImageDetectionReq:
         self._image = image
 
     @property
+    def moderation_rule(self):
+        """Gets the moderation_rule of this ImageDetectionReq.
+
+        图像审核规则名称，默认使用default规则。  > 说明：  - 审核规则的创建和使用请参见配置审核规则(https://support.huaweicloud.com/api-moderation/moderation_03_0063.html) 
+
+        :return: The moderation_rule of this ImageDetectionReq.
+        :rtype: str
+        """
+        return self._moderation_rule
+
+    @moderation_rule.setter
+    def moderation_rule(self, moderation_rule):
+        """Sets the moderation_rule of this ImageDetectionReq.
+
+        图像审核规则名称，默认使用default规则。  > 说明：  - 审核规则的创建和使用请参见配置审核规则(https://support.huaweicloud.com/api-moderation/moderation_03_0063.html) 
+
+        :param moderation_rule: The moderation_rule of this ImageDetectionReq.
+        :type: str
+        """
+        self._moderation_rule = moderation_rule
+
+    @property
     def categories(self):
         """Gets the categories of this ImageDetectionReq.
 
@@ -121,6 +153,28 @@ class ImageDetectionReq:
         :type: list[str]
         """
         self._categories = categories
+
+    @property
+    def ad_glossaries(self):
+        """Gets the ad_glossaries of this ImageDetectionReq.
+
+        检测场景: ad场景自定义词库，配置方式同文本审核自定义词库配置方式 
+
+        :return: The ad_glossaries of this ImageDetectionReq.
+        :rtype: list[str]
+        """
+        return self._ad_glossaries
+
+    @ad_glossaries.setter
+    def ad_glossaries(self, ad_glossaries):
+        """Sets the ad_glossaries of this ImageDetectionReq.
+
+        检测场景: ad场景自定义词库，配置方式同文本审核自定义词库配置方式 
+
+        :param ad_glossaries: The ad_glossaries of this ImageDetectionReq.
+        :type: list[str]
+        """
+        self._ad_glossaries = ad_glossaries
 
     @property
     def threshold(self):

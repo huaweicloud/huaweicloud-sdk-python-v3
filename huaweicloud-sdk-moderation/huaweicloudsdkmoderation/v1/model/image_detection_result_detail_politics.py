@@ -23,7 +23,7 @@ class ImageDetectionResultDetailPolitics:
     sensitive_list = []
 
     openapi_types = {
-        'confidence': 'object',
+        'confidence': 'float',
         'label': 'str',
         'face_detail': 'ImageDetectionResultDetailFaceDetail'
     }
@@ -57,7 +57,7 @@ class ImageDetectionResultDetailPolitics:
 
 
         :return: The confidence of this ImageDetectionResultDetailPolitics.
-        :rtype: object
+        :rtype: float
         """
         return self._confidence
 
@@ -67,7 +67,7 @@ class ImageDetectionResultDetailPolitics:
 
 
         :param confidence: The confidence of this ImageDetectionResultDetailPolitics.
-        :type: object
+        :type: float
         """
         self._confidence = confidence
 

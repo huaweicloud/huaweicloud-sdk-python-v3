@@ -233,7 +233,7 @@ class CreateCertificateRequestBody:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateCertificateRequestBody.
 
-        企业项目ID。创建负载均衡器时，给负载均衡器绑定企业项目ID。取值范围：带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。默认值：\"0\"
+        企业项目ID。
 
         :return: The enterprise_project_id of this CreateCertificateRequestBody.
         :rtype: str
@@ -244,7 +244,7 @@ class CreateCertificateRequestBody:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateCertificateRequestBody.
 
-        企业项目ID。创建负载均衡器时，给负载均衡器绑定企业项目ID。取值范围：带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。默认值：\"0\"
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateCertificateRequestBody.
         :type: str

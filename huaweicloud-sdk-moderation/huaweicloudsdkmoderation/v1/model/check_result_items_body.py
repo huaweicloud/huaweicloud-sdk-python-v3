@@ -25,16 +25,18 @@ class CheckResultItemsBody:
     openapi_types = {
         'url': 'str',
         'suggestion': 'str',
-        'detail': 'ImageDetectionResultDetail'
+        'detail': 'ImageDetectionResultDetail',
+        'category_suggestions': 'dict(str, str)'
     }
 
     attribute_map = {
         'url': 'url',
         'suggestion': 'suggestion',
-        'detail': 'detail'
+        'detail': 'detail',
+        'category_suggestions': 'category_suggestions'
     }
 
-    def __init__(self, url=None, suggestion=None, detail=None):
+    def __init__(self, url=None, suggestion=None, detail=None, category_suggestions=None):
         """CheckResultItemsBody - a model defined in huaweicloud sdk"""
         
         
@@ -42,6 +44,7 @@ class CheckResultItemsBody:
         self._url = None
         self._suggestion = None
         self._detail = None
+        self._category_suggestions = None
         self.discriminator = None
 
         if url is not None:
@@ -50,6 +53,8 @@ class CheckResultItemsBody:
             self.suggestion = suggestion
         if detail is not None:
             self.detail = detail
+        if category_suggestions is not None:
+            self.category_suggestions = category_suggestions
 
     @property
     def url(self):
@@ -114,6 +119,28 @@ class CheckResultItemsBody:
         :type: ImageDetectionResultDetail
         """
         self._detail = detail
+
+    @property
+    def category_suggestions(self):
+        """Gets the category_suggestions of this CheckResultItemsBody.
+
+        具体每个场景的检测结果。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检 
+
+        :return: The category_suggestions of this CheckResultItemsBody.
+        :rtype: dict(str, str)
+        """
+        return self._category_suggestions
+
+    @category_suggestions.setter
+    def category_suggestions(self, category_suggestions):
+        """Sets the category_suggestions of this CheckResultItemsBody.
+
+        具体每个场景的检测结果。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检 
+
+        :param category_suggestions: The category_suggestions of this CheckResultItemsBody.
+        :type: dict(str, str)
+        """
+        self._category_suggestions = category_suggestions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

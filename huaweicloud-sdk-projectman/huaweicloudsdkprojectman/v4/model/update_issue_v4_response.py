@@ -39,6 +39,7 @@ class UpdateIssueV4Response(SdkResponse):
         'project': 'IssueProjectResponseV4',
         'iteration': 'IssueItemSfV4Iteration',
         'module': 'IssueItemSfV4Module',
+        'name': 'str',
         'parent_issue': 'CreateIssueResponseV4ParentIssue',
         'priority': 'IssueItemSfV4Priority',
         'severity': 'IssueItemSfV4Severity',
@@ -64,6 +65,7 @@ class UpdateIssueV4Response(SdkResponse):
         'project': 'project',
         'iteration': 'iteration',
         'module': 'module',
+        'name': 'name',
         'parent_issue': 'parent_issue',
         'priority': 'priority',
         'severity': 'severity',
@@ -72,7 +74,7 @@ class UpdateIssueV4Response(SdkResponse):
         'updated_time': 'updated_time'
     }
 
-    def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, created_time=None, creator=None, custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, module=None, parent_issue=None, priority=None, severity=None, status=None, tracker=None, updated_time=None):
+    def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, created_time=None, creator=None, custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, module=None, name=None, parent_issue=None, priority=None, severity=None, status=None, tracker=None, updated_time=None):
         """UpdateIssueV4Response - a model defined in huaweicloud sdk"""
         
         super().__init__()
@@ -93,6 +95,7 @@ class UpdateIssueV4Response(SdkResponse):
         self._project = None
         self._iteration = None
         self._module = None
+        self._name = None
         self._parent_issue = None
         self._priority = None
         self._severity = None
@@ -133,6 +136,8 @@ class UpdateIssueV4Response(SdkResponse):
             self.iteration = iteration
         if module is not None:
             self.module = module
+        if name is not None:
+            self.name = name
         if parent_issue is not None:
             self.parent_issue = parent_issue
         if priority is not None:
@@ -483,6 +488,28 @@ class UpdateIssueV4Response(SdkResponse):
         :type: IssueItemSfV4Module
         """
         self._module = module
+
+    @property
+    def name(self):
+        """Gets the name of this UpdateIssueV4Response.
+
+        标题
+
+        :return: The name of this UpdateIssueV4Response.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this UpdateIssueV4Response.
+
+        标题
+
+        :param name: The name of this UpdateIssueV4Response.
+        :type: str
+        """
+        self._name = name
 
     @property
     def parent_issue(self):

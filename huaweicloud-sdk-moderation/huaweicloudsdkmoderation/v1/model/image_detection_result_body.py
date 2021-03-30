@@ -25,31 +25,31 @@ class ImageDetectionResultBody:
     openapi_types = {
         'detail': 'ImageDetectionResultDetail',
         'suggestion': 'str',
-        'category_suggestion': 'object'
+        'category_suggestions': 'dict(str, str)'
     }
 
     attribute_map = {
         'detail': 'detail',
         'suggestion': 'suggestion',
-        'category_suggestion': 'category_suggestion'
+        'category_suggestions': 'category_suggestions'
     }
 
-    def __init__(self, detail=None, suggestion=None, category_suggestion=None):
+    def __init__(self, detail=None, suggestion=None, category_suggestions=None):
         """ImageDetectionResultBody - a model defined in huaweicloud sdk"""
         
         
 
         self._detail = None
         self._suggestion = None
-        self._category_suggestion = None
+        self._category_suggestions = None
         self.discriminator = None
 
         if detail is not None:
             self.detail = detail
         if suggestion is not None:
             self.suggestion = suggestion
-        if category_suggestion is not None:
-            self.category_suggestion = category_suggestion
+        if category_suggestions is not None:
+            self.category_suggestions = category_suggestions
 
     @property
     def detail(self):
@@ -94,26 +94,26 @@ class ImageDetectionResultBody:
         self._suggestion = suggestion
 
     @property
-    def category_suggestion(self):
-        """Gets the category_suggestion of this ImageDetectionResultBody.
+    def category_suggestions(self):
+        """Gets the category_suggestions of this ImageDetectionResultBody.
 
         具体每个场景的检测结果。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检 
 
-        :return: The category_suggestion of this ImageDetectionResultBody.
-        :rtype: object
+        :return: The category_suggestions of this ImageDetectionResultBody.
+        :rtype: dict(str, str)
         """
-        return self._category_suggestion
+        return self._category_suggestions
 
-    @category_suggestion.setter
-    def category_suggestion(self, category_suggestion):
-        """Sets the category_suggestion of this ImageDetectionResultBody.
+    @category_suggestions.setter
+    def category_suggestions(self, category_suggestions):
+        """Sets the category_suggestions of this ImageDetectionResultBody.
 
         具体每个场景的检测结果。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检 
 
-        :param category_suggestion: The category_suggestion of this ImageDetectionResultBody.
-        :type: object
+        :param category_suggestions: The category_suggestions of this ImageDetectionResultBody.
+        :type: dict(str, str)
         """
-        self._category_suggestion = category_suggestion
+        self._category_suggestions = category_suggestions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

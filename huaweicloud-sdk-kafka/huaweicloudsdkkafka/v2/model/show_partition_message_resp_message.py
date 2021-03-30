@@ -28,7 +28,8 @@ class ShowPartitionMessageRespMessage:
         'topic': 'str',
         'partition': 'int',
         'message_offset': 'int',
-        'size': 'int'
+        'size': 'int',
+        'timestamp': 'int'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ShowPartitionMessageRespMessage:
         'topic': 'topic',
         'partition': 'partition',
         'message_offset': 'message_offset',
-        'size': 'size'
+        'size': 'size',
+        'timestamp': 'timestamp'
     }
 
-    def __init__(self, key=None, value=None, topic=None, partition=None, message_offset=None, size=None):
+    def __init__(self, key=None, value=None, topic=None, partition=None, message_offset=None, size=None, timestamp=None):
         """ShowPartitionMessageRespMessage - a model defined in huaweicloud sdk"""
         
         
@@ -51,6 +53,7 @@ class ShowPartitionMessageRespMessage:
         self._partition = None
         self._message_offset = None
         self._size = None
+        self._timestamp = None
         self.discriminator = None
 
         if key is not None:
@@ -65,6 +68,8 @@ class ShowPartitionMessageRespMessage:
             self.message_offset = message_offset
         if size is not None:
             self.size = size
+        if timestamp is not None:
+            self.timestamp = timestamp
 
     @property
     def key(self):
@@ -197,6 +202,28 @@ class ShowPartitionMessageRespMessage:
         :type: int
         """
         self._size = size
+
+    @property
+    def timestamp(self):
+        """Gets the timestamp of this ShowPartitionMessageRespMessage.
+
+        消息时间戳。
+
+        :return: The timestamp of this ShowPartitionMessageRespMessage.
+        :rtype: int
+        """
+        return self._timestamp
+
+    @timestamp.setter
+    def timestamp(self, timestamp):
+        """Sets the timestamp of this ShowPartitionMessageRespMessage.
+
+        消息时间戳。
+
+        :param timestamp: The timestamp of this ShowPartitionMessageRespMessage.
+        :type: int
+        """
+        self._timestamp = timestamp
 
     def to_dict(self):
         """Returns the model properties as a dict"""

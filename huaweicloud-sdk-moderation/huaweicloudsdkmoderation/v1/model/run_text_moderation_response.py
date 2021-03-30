@@ -23,7 +23,7 @@ class RunTextModerationResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'TextDetectionBody'
+        'result': 'TextDetectionResponseResult'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class RunTextModerationResponse(SdkResponse):
 
 
         :return: The result of this RunTextModerationResponse.
-        :rtype: TextDetectionBody
+        :rtype: TextDetectionResponseResult
         """
         return self._result
 
@@ -57,7 +57,7 @@ class RunTextModerationResponse(SdkResponse):
 
 
         :param result: The result of this RunTextModerationResponse.
-        :type: TextDetectionBody
+        :type: TextDetectionResponseResult
         """
         self._result = result
 

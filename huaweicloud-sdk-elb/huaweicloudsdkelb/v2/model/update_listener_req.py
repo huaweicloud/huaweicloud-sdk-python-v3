@@ -161,7 +161,7 @@ class UpdateListenerReq:
     def http2_enable(self):
         """Gets the http2_enable of this UpdateListenerReq.
 
-        HTTP2功能的开启状态。该字段只有当监听器的协议是TERMINATED_HTTPS时生效。
+        HTTP2功能的开启状态。该字段只有当监听器的协议是TERMINATED_HTTPS时才有意义。
 
         :return: The http2_enable of this UpdateListenerReq.
         :rtype: bool
@@ -172,7 +172,7 @@ class UpdateListenerReq:
     def http2_enable(self, http2_enable):
         """Sets the http2_enable of this UpdateListenerReq.
 
-        HTTP2功能的开启状态。该字段只有当监听器的协议是TERMINATED_HTTPS时生效。
+        HTTP2功能的开启状态。该字段只有当监听器的协议是TERMINATED_HTTPS时才有意义。
 
         :param http2_enable: The http2_enable of this UpdateListenerReq.
         :type: bool

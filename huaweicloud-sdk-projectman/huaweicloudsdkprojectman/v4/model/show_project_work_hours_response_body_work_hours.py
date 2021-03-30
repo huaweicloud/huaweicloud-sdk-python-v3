@@ -26,7 +26,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         'project_name': 'str',
         'nick_name': 'str',
         'user_name': 'str',
-        'work_time': 'str',
+        'work_date': 'str',
         'work_hours_num': 'str',
         'summary': 'str',
         'work_hours_type_name': 'str',
@@ -41,7 +41,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         'project_name': 'project_name',
         'nick_name': 'nick_name',
         'user_name': 'user_name',
-        'work_time': 'work_time',
+        'work_date': 'work_date',
         'work_hours_num': 'work_hours_num',
         'summary': 'summary',
         'work_hours_type_name': 'work_hours_type_name',
@@ -52,7 +52,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         'closed_time': 'closed_time'
     }
 
-    def __init__(self, project_name=None, nick_name=None, user_name=None, work_time=None, work_hours_num=None, summary=None, work_hours_type_name=None, issue_id=None, issue_type=None, subject=None, created_time=None, closed_time=None):
+    def __init__(self, project_name=None, nick_name=None, user_name=None, work_date=None, work_hours_num=None, summary=None, work_hours_type_name=None, issue_id=None, issue_type=None, subject=None, created_time=None, closed_time=None):
         """ShowProjectWorkHoursResponseBodyWorkHours - a model defined in huaweicloud sdk"""
         
         
@@ -60,7 +60,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         self._project_name = None
         self._nick_name = None
         self._user_name = None
-        self._work_time = None
+        self._work_date = None
         self._work_hours_num = None
         self._summary = None
         self._work_hours_type_name = None
@@ -77,8 +77,8 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
             self.nick_name = nick_name
         if user_name is not None:
             self.user_name = user_name
-        if work_time is not None:
-            self.work_time = work_time
+        if work_date is not None:
+            self.work_date = work_date
         if work_hours_num is not None:
             self.work_hours_num = work_hours_num
         if summary is not None:
@@ -163,26 +163,26 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         self._user_name = user_name
 
     @property
-    def work_time(self):
-        """Gets the work_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+    def work_date(self):
+        """Gets the work_date of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工时日期
 
-        :return: The work_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+        :return: The work_date of this ShowProjectWorkHoursResponseBodyWorkHours.
         :rtype: str
         """
-        return self._work_time
+        return self._work_date
 
-    @work_time.setter
-    def work_time(self, work_time):
-        """Sets the work_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+    @work_date.setter
+    def work_date(self, work_date):
+        """Sets the work_date of this ShowProjectWorkHoursResponseBodyWorkHours.
 
         工时日期
 
-        :param work_time: The work_time of this ShowProjectWorkHoursResponseBodyWorkHours.
+        :param work_date: The work_date of this ShowProjectWorkHoursResponseBodyWorkHours.
         :type: str
         """
-        self._work_time = work_time
+        self._work_date = work_date
 
     @property
     def work_hours_num(self):

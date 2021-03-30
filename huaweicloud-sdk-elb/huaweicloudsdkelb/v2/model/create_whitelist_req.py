@@ -125,7 +125,7 @@ class CreateWhitelistReq:
     def whitelist(self):
         """Gets the whitelist of this CreateWhitelistReq.
 
-        白名单IP列表。可以是ip，例如192.168.10.123；也可以是一个网段，例如192.168.10.1/24；不同的值之间用逗号分隔
+        白名单IP列表。可以是ip，例如192.168.10.123。也可以是一个网段，例如192.168.10.1/24。不同的值之间用逗号分隔。 不传，默认为空。
 
         :return: The whitelist of this CreateWhitelistReq.
         :rtype: str
@@ -136,7 +136,7 @@ class CreateWhitelistReq:
     def whitelist(self, whitelist):
         """Sets the whitelist of this CreateWhitelistReq.
 
-        白名单IP列表。可以是ip，例如192.168.10.123；也可以是一个网段，例如192.168.10.1/24；不同的值之间用逗号分隔
+        白名单IP列表。可以是ip，例如192.168.10.123。也可以是一个网段，例如192.168.10.1/24。不同的值之间用逗号分隔。 不传，默认为空。
 
         :param whitelist: The whitelist of this CreateWhitelistReq.
         :type: str

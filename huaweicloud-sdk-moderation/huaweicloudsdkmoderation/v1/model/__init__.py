@@ -28,6 +28,6 @@ from huaweicloudsdkmoderation.v1.model.run_text_moderation_request import RunTex
 from huaweicloudsdkmoderation.v1.model.run_text_moderation_response import RunTextModerationResponse
 from huaweicloudsdkmoderation.v1.model.task_sumbit_req import TaskSumbitReq
 from huaweicloudsdkmoderation.v1.model.task_sumbit_result_body import TaskSumbitResultBody
-from huaweicloudsdkmoderation.v1.model.text_detection_body import TextDetectionBody
 from huaweicloudsdkmoderation.v1.model.text_detection_items_req import TextDetectionItemsReq
 from huaweicloudsdkmoderation.v1.model.text_detection_req import TextDetectionReq
+from huaweicloudsdkmoderation.v1.model.text_detection_response_result import TextDetectionResponseResult

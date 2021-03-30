@@ -23,7 +23,7 @@ class ShowUserInstancesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'instance_num': 'str'
+        'instance_num': 'int'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class ShowUserInstancesResponse(SdkResponse):
         非默认用户主密钥个数。
 
         :return: The instance_num of this ShowUserInstancesResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._instance_num
 
@@ -59,7 +59,7 @@ class ShowUserInstancesResponse(SdkResponse):
         非默认用户主密钥个数。
 
         :param instance_num: The instance_num of this ShowUserInstancesResponse.
-        :type: str
+        :type: int
         """
         self._instance_num = instance_num
 
