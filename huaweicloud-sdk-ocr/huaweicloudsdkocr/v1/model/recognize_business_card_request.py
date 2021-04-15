@@ -24,7 +24,7 @@ class RecognizeBusinessCardRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'BusinessCardReq'
+        'body': 'BusinessCardRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeBusinessCardRequest:
 
 
         :return: The body of this RecognizeBusinessCardRequest.
-        :rtype: BusinessCardReq
+        :rtype: BusinessCardRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeBusinessCardRequest:
 
 
         :param body: The body of this RecognizeBusinessCardRequest.
-        :type: BusinessCardReq
+        :type: BusinessCardRequestBody
         """
         self._body = body
 

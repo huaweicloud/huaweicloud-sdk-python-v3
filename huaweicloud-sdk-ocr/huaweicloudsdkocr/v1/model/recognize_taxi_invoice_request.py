@@ -24,7 +24,7 @@ class RecognizeTaxiInvoiceRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'TaxiInvoiceReq'
+        'body': 'TaxiInvoiceRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeTaxiInvoiceRequest:
 
 
         :return: The body of this RecognizeTaxiInvoiceRequest.
-        :rtype: TaxiInvoiceReq
+        :rtype: TaxiInvoiceRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeTaxiInvoiceRequest:
 
 
         :param body: The body of this RecognizeTaxiInvoiceRequest.
-        :type: TaxiInvoiceReq
+        :type: TaxiInvoiceRequestBody
         """
         self._body = body
 

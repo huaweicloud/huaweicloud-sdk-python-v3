@@ -24,7 +24,7 @@ class RecognizeQuotaInvoiceRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'QuotaInvoiceReq'
+        'body': 'QuotaInvoiceRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeQuotaInvoiceRequest:
 
 
         :return: The body of this RecognizeQuotaInvoiceRequest.
-        :rtype: QuotaInvoiceReq
+        :rtype: QuotaInvoiceRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeQuotaInvoiceRequest:
 
 
         :param body: The body of this RecognizeQuotaInvoiceRequest.
-        :type: QuotaInvoiceReq
+        :type: QuotaInvoiceRequestBody
         """
         self._body = body
 

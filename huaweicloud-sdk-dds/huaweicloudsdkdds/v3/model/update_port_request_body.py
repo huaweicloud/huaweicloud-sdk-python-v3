@@ -44,7 +44,7 @@ class UpdatePortRequestBody:
     def port(self):
         """Gets the port of this UpdatePortRequestBody.
 
-        新端口号。端口号有效范围为2100~9500。
+        新端口号。端口号有效范围为2100~9500，27017，27018，27019。
 
         :return: The port of this UpdatePortRequestBody.
         :rtype: int
@@ -55,7 +55,7 @@ class UpdatePortRequestBody:
     def port(self, port):
         """Sets the port of this UpdatePortRequestBody.
 
-        新端口号。端口号有效范围为2100~9500。
+        新端口号。端口号有效范围为2100~9500，27017，27018，27019。
 
         :param port: The port of this UpdatePortRequestBody.
         :type: int

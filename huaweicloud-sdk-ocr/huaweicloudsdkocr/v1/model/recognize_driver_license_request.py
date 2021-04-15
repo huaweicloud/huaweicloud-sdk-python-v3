@@ -24,7 +24,7 @@ class RecognizeDriverLicenseRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'RecognizeDriverLicenseRequestBody'
+        'body': 'DriverLicenseRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeDriverLicenseRequest:
 
 
         :return: The body of this RecognizeDriverLicenseRequest.
-        :rtype: RecognizeDriverLicenseRequestBody
+        :rtype: DriverLicenseRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeDriverLicenseRequest:
 
 
         :param body: The body of this RecognizeDriverLicenseRequest.
-        :type: RecognizeDriverLicenseRequestBody
+        :type: DriverLicenseRequestBody
         """
         self._body = body
 

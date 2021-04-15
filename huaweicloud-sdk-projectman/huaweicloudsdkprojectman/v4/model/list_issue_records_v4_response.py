@@ -60,7 +60,7 @@ class ListIssueRecordsV4Response(SdkResponse):
     def id(self):
         """Gets the id of this ListIssueRecordsV4Response.
 
-        操作记录id
+        操作记录id (已废弃)
 
         :return: The id of this ListIssueRecordsV4Response.
         :rtype: int
@@ -71,7 +71,7 @@ class ListIssueRecordsV4Response(SdkResponse):
     def id(self, id):
         """Sets the id of this ListIssueRecordsV4Response.
 
-        操作记录id
+        操作记录id (已废弃)
 
         :param id: The id of this ListIssueRecordsV4Response.
         :type: int
@@ -82,7 +82,7 @@ class ListIssueRecordsV4Response(SdkResponse):
     def created_time(self):
         """Gets the created_time of this ListIssueRecordsV4Response.
 
-        创建时间
+        创建时间 (已废弃)
 
         :return: The created_time of this ListIssueRecordsV4Response.
         :rtype: int
@@ -93,7 +93,7 @@ class ListIssueRecordsV4Response(SdkResponse):
     def created_time(self, created_time):
         """Sets the created_time of this ListIssueRecordsV4Response.
 
-        创建时间
+        创建时间 (已废弃)
 
         :param created_time: The created_time of this ListIssueRecordsV4Response.
         :type: int

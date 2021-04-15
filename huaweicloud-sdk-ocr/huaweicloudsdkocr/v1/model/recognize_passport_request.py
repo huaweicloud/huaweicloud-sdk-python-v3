@@ -24,7 +24,7 @@ class RecognizePassportRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'PassportReq'
+        'body': 'PassportRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizePassportRequest:
 
 
         :return: The body of this RecognizePassportRequest.
-        :rtype: PassportReq
+        :rtype: PassportRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizePassportRequest:
 
 
         :param body: The body of this RecognizePassportRequest.
-        :type: PassportReq
+        :type: PassportRequestBody
         """
         self._body = body
 

@@ -24,7 +24,7 @@ class RecognizeBankcardRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'BankcardReq'
+        'body': 'BankcardRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeBankcardRequest:
 
 
         :return: The body of this RecognizeBankcardRequest.
-        :rtype: BankcardReq
+        :rtype: BankcardRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeBankcardRequest:
 
 
         :param body: The body of this RecognizeBankcardRequest.
-        :type: BankcardReq
+        :type: BankcardRequestBody
         """
         self._body = body
 

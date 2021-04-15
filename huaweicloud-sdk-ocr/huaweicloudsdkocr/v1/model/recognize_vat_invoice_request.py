@@ -24,7 +24,7 @@ class RecognizeVatInvoiceRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'RecognizeVatInvoiceRequestBody'
+        'body': 'VatInvoiceRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeVatInvoiceRequest:
 
 
         :return: The body of this RecognizeVatInvoiceRequest.
-        :rtype: RecognizeVatInvoiceRequestBody
+        :rtype: VatInvoiceRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeVatInvoiceRequest:
 
 
         :param body: The body of this RecognizeVatInvoiceRequest.
-        :type: RecognizeVatInvoiceRequestBody
+        :type: VatInvoiceRequestBody
         """
         self._body = body
 

@@ -67,7 +67,7 @@ class ImageClient(Client):
         :return: RunCelebrityRecognitionResponse
         """
 
-        all_params = ['body']
+        all_params = ['run_celebrity_recognition_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -130,7 +130,7 @@ class ImageClient(Client):
         :return: RunImageTaggingResponse
         """
 
-        all_params = ['body']
+        all_params = ['run_image_tagging_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

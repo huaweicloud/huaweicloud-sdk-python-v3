@@ -1,3 +1,69 @@
+# 3.0.40-rc 2021-04-15
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support more interfaces about database management operations.
+    - `CreateSqlserverDatabase`
+    - `DeleteSqlserverDatabase`
+    - `ListSqlserverDatabases`
+  - Support more interfaces about user management operations.
+    - `CreateSqlserverDbUser`
+    - `ListSqlserverDbUsers`
+    - `ListAuthorizedSqlserverDbUsers`
+    - `DeleteSqlserverDbUser`
+    - `AllowSqlserverDbUserPrivilege`
+    - `RevokeSqlserverDbUserPrivilege`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - Support more interfaces `DeleteDatabaseUser`,`DeleteDatabaseRole`,`ShowConnectionStatistics`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ProjectMan
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add fields `closed_time` ,`id` ,`created_time` to reponse body of interfaces `ListIssuesV4`, `ListChildIssuesV4`.
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - Support `Application Operations Management` service.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - Standardize the naming of interface parameters.
+- _Change_
+  - None
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - Fix the bug, open the tags of the VPC and subnet.
+- _Change_
+  - None
+
 # 3.0.39-rc 2021-03-30
 
 ### HuaweiCloud SDK Kafka

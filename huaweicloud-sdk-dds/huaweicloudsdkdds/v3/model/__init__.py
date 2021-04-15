@@ -46,6 +46,12 @@ from huaweicloudsdkdds.v3.model.create_manual_backup_request_body import CreateM
 from huaweicloudsdkdds.v3.model.create_manual_backup_response import CreateManualBackupResponse
 from huaweicloudsdkdds.v3.model.datastore import Datastore
 from huaweicloudsdkdds.v3.model.datastore_item import DatastoreItem
+from huaweicloudsdkdds.v3.model.delete_database_role_request import DeleteDatabaseRoleRequest
+from huaweicloudsdkdds.v3.model.delete_database_role_request_body import DeleteDatabaseRoleRequestBody
+from huaweicloudsdkdds.v3.model.delete_database_role_response import DeleteDatabaseRoleResponse
+from huaweicloudsdkdds.v3.model.delete_database_user_request import DeleteDatabaseUserRequest
+from huaweicloudsdkdds.v3.model.delete_database_user_request_body import DeleteDatabaseUserRequestBody
+from huaweicloudsdkdds.v3.model.delete_database_user_response import DeleteDatabaseUserResponse
 from huaweicloudsdkdds.v3.model.delete_instance_request import DeleteInstanceRequest
 from huaweicloudsdkdds.v3.model.delete_instance_response import DeleteInstanceResponse
 from huaweicloudsdkdds.v3.model.delete_manual_backup_request import DeleteManualBackupRequest
@@ -113,6 +119,7 @@ from huaweicloudsdkdds.v3.model.list_storage_type_request import ListStorageType
 from huaweicloudsdkdds.v3.model.list_storage_type_response import ListStorageTypeResponse
 from huaweicloudsdkdds.v3.model.node_item import NodeItem
 from huaweicloudsdkdds.v3.model.produce_auditlog_links_request_body import ProduceAuditlogLinksRequestBody
+from huaweicloudsdkdds.v3.model.query_connections_response import QueryConnectionsResponse
 from huaweicloudsdkdds.v3.model.query_instance_response import QueryInstanceResponse
 from huaweicloudsdkdds.v3.model.query_match_item import QueryMatchItem
 from huaweicloudsdkdds.v3.model.query_project_tag_item import QueryProjectTagItem
@@ -161,6 +168,8 @@ from huaweicloudsdkdds.v3.model.show_backup_download_link_request import ShowBac
 from huaweicloudsdkdds.v3.model.show_backup_download_link_response import ShowBackupDownloadLinkResponse
 from huaweicloudsdkdds.v3.model.show_backup_policy_request import ShowBackupPolicyRequest
 from huaweicloudsdkdds.v3.model.show_backup_policy_response import ShowBackupPolicyResponse
+from huaweicloudsdkdds.v3.model.show_connection_statistics_request import ShowConnectionStatisticsRequest
+from huaweicloudsdkdds.v3.model.show_connection_statistics_response import ShowConnectionStatisticsResponse
 from huaweicloudsdkdds.v3.model.slowlog_result import SlowlogResult
 from huaweicloudsdkdds.v3.model.source import Source
 from huaweicloudsdkdds.v3.model.storage import Storage

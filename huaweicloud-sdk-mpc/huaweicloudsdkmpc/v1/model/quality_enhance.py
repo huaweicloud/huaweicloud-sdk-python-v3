@@ -26,17 +26,19 @@ class QualityEnhance:
         'normal_enhance': 'str',
         'revive': 'str',
         'sdr_to_hdr': 'str',
-        'video_enhance': 'str'
+        'video_enhance': 'str',
+        'video_settings': 'VideoSettings'
     }
 
     attribute_map = {
         'normal_enhance': 'normal_enhance',
         'revive': 'revive',
         'sdr_to_hdr': 'sdr_to_hdr',
-        'video_enhance': 'video_enhance'
+        'video_enhance': 'video_enhance',
+        'video_settings': 'video_settings'
     }
 
-    def __init__(self, normal_enhance=None, revive=None, sdr_to_hdr=None, video_enhance=None):
+    def __init__(self, normal_enhance=None, revive=None, sdr_to_hdr=None, video_enhance=None, video_settings=None):
         """QualityEnhance - a model defined in huaweicloud sdk"""
         
         
@@ -45,6 +47,7 @@ class QualityEnhance:
         self._revive = None
         self._sdr_to_hdr = None
         self._video_enhance = None
+        self._video_settings = None
         self.discriminator = None
 
         if normal_enhance is not None:
@@ -55,6 +58,8 @@ class QualityEnhance:
             self.sdr_to_hdr = sdr_to_hdr
         if video_enhance is not None:
             self.video_enhance = video_enhance
+        if video_settings is not None:
+            self.video_settings = video_settings
 
     @property
     def normal_enhance(self):
@@ -143,6 +148,26 @@ class QualityEnhance:
         :type: str
         """
         self._video_enhance = video_enhance
+
+    @property
+    def video_settings(self):
+        """Gets the video_settings of this QualityEnhance.
+
+
+        :return: The video_settings of this QualityEnhance.
+        :rtype: VideoSettings
+        """
+        return self._video_settings
+
+    @video_settings.setter
+    def video_settings(self, video_settings):
+        """Sets the video_settings of this QualityEnhance.
+
+
+        :param video_settings: The video_settings of this QualityEnhance.
+        :type: VideoSettings
+        """
+        self._video_settings = video_settings
 
     def to_dict(self):
         """Returns the model properties as a dict"""

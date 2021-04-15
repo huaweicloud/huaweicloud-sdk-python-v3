@@ -24,7 +24,7 @@ class RecognizeFlightItineraryRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'FlightItineraryReq'
+        'body': 'FlightItineraryRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeFlightItineraryRequest:
 
 
         :return: The body of this RecognizeFlightItineraryRequest.
-        :rtype: FlightItineraryReq
+        :rtype: FlightItineraryRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeFlightItineraryRequest:
 
 
         :param body: The body of this RecognizeFlightItineraryRequest.
-        :type: FlightItineraryReq
+        :type: FlightItineraryRequestBody
         """
         self._body = body
 

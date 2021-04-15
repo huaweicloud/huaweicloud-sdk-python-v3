@@ -24,7 +24,7 @@ class RecognizeWebImageRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'WebImageReq'
+        'body': 'WebImageRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeWebImageRequest:
 
 
         :return: The body of this RecognizeWebImageRequest.
-        :rtype: WebImageReq
+        :rtype: WebImageRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeWebImageRequest:
 
 
         :param body: The body of this RecognizeWebImageRequest.
-        :type: WebImageReq
+        :type: WebImageRequestBody
         """
         self._body = body
 

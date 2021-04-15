@@ -24,7 +24,7 @@ class RecognizeVinRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'VinReq'
+        'body': 'VinRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeVinRequest:
 
 
         :return: The body of this RecognizeVinRequest.
-        :rtype: VinReq
+        :rtype: VinRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeVinRequest:
 
 
         :param body: The body of this RecognizeVinRequest.
-        :type: VinReq
+        :type: VinRequestBody
         """
         self._body = body
 

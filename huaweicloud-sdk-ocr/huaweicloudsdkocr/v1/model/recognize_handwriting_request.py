@@ -24,7 +24,7 @@ class RecognizeHandwritingRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'HandwritingReq'
+        'body': 'HandwritingRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeHandwritingRequest:
 
 
         :return: The body of this RecognizeHandwritingRequest.
-        :rtype: HandwritingReq
+        :rtype: HandwritingRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeHandwritingRequest:
 
 
         :param body: The body of this RecognizeHandwritingRequest.
-        :type: HandwritingReq
+        :type: HandwritingRequestBody
         """
         self._body = body
 

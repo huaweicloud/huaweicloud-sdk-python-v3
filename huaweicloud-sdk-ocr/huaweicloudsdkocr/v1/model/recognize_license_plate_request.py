@@ -24,7 +24,7 @@ class RecognizeLicensePlateRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'LicensePlateReq'
+        'body': 'LicensePlateRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeLicensePlateRequest:
 
 
         :return: The body of this RecognizeLicensePlateRequest.
-        :rtype: LicensePlateReq
+        :rtype: LicensePlateRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeLicensePlateRequest:
 
 
         :param body: The body of this RecognizeLicensePlateRequest.
-        :type: LicensePlateReq
+        :type: LicensePlateRequestBody
         """
         self._body = body
 

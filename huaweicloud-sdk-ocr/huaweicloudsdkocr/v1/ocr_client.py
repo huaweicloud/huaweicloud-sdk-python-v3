@@ -67,7 +67,7 @@ class OcrClient(Client):
         :return: RecognizeAutoClassificationResponse
         """
 
-        all_params = ['project_id', 'auto_classification_req']
+        all_params = ['project_id', 'auto_classification_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -132,7 +132,7 @@ class OcrClient(Client):
         :return: RecognizeBankcardResponse
         """
 
-        all_params = ['project_id', 'bank_card_req']
+        all_params = ['project_id', 'bankcard_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -197,7 +197,7 @@ class OcrClient(Client):
         :return: RecognizeBusinessCardResponse
         """
 
-        all_params = ['project_id', 'business_card_req']
+        all_params = ['project_id', 'business_card_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -262,7 +262,7 @@ class OcrClient(Client):
         :return: RecognizeBusinessLicenseResponse
         """
 
-        all_params = ['project_id', 'bankcard_req']
+        all_params = ['project_id', 'business_license_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -327,7 +327,7 @@ class OcrClient(Client):
         :return: RecognizeDriverLicenseResponse
         """
 
-        all_params = ['project_id', 'driver_license_req']
+        all_params = ['project_id', 'driver_license_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -392,7 +392,7 @@ class OcrClient(Client):
         :return: RecognizeFlightItineraryResponse
         """
 
-        all_params = ['project_id', 'flight_itinerary_req']
+        all_params = ['project_id', 'flight_itinerary_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -457,7 +457,7 @@ class OcrClient(Client):
         :return: RecognizeGeneralTableResponse
         """
 
-        all_params = ['project_id', 'general_table_req']
+        all_params = ['project_id', 'general_table_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -522,7 +522,7 @@ class OcrClient(Client):
         :return: RecognizeGeneralTextResponse
         """
 
-        all_params = ['project_id', 'general_text_req']
+        all_params = ['project_id', 'general_text_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -587,7 +587,7 @@ class OcrClient(Client):
         :return: RecognizeHandwritingResponse
         """
 
-        all_params = ['project_id', 'handwriting_req']
+        all_params = ['project_id', 'handwriting_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -652,7 +652,7 @@ class OcrClient(Client):
         :return: RecognizeIDCardResponse
         """
 
-        all_params = ['project_id', 'id_card_req']
+        all_params = ['project_id', 'id_card_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -717,7 +717,7 @@ class OcrClient(Client):
         :return: RecognizeLicensePlateResponse
         """
 
-        all_params = ['project_id', 'license_plate_req']
+        all_params = ['project_id', 'license_plate_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -782,7 +782,7 @@ class OcrClient(Client):
         :return: RecognizeMvsInvoiceResponse
         """
 
-        all_params = ['project_id', 'mvs_invoice_req']
+        all_params = ['project_id', 'mvs_invoice_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -847,7 +847,7 @@ class OcrClient(Client):
         :return: RecognizePassportResponse
         """
 
-        all_params = ['project_id', 'passport_req']
+        all_params = ['project_id', 'passport_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -912,7 +912,7 @@ class OcrClient(Client):
         :return: RecognizeQuotaInvoiceResponse
         """
 
-        all_params = ['project_id', 'train_ticket_req']
+        all_params = ['project_id', 'quota_invoice_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -977,7 +977,7 @@ class OcrClient(Client):
         :return: RecognizeTaxiInvoiceResponse
         """
 
-        all_params = ['project_id', 'taxi_invoice_req']
+        all_params = ['project_id', 'taxi_invoice_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1042,7 +1042,7 @@ class OcrClient(Client):
         :return: RecognizeTollInvoiceResponse
         """
 
-        all_params = ['project_id', 'recognize_toll_invoice_req']
+        all_params = ['project_id', 'toll_invoice_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1107,7 +1107,7 @@ class OcrClient(Client):
         :return: RecognizeTrainTicketResponse
         """
 
-        all_params = ['project_id', 'train_ticket_req']
+        all_params = ['project_id', 'train_ticket_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1172,7 +1172,7 @@ class OcrClient(Client):
         :return: RecognizeTransportationLicenseResponse
         """
 
-        all_params = ['project_id', 'transportation_license_req']
+        all_params = ['project_id', 'transportation_license_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1237,7 +1237,7 @@ class OcrClient(Client):
         :return: RecognizeVatInvoiceResponse
         """
 
-        all_params = ['project_id', 'recognize_vat_invoice_request_body']
+        all_params = ['project_id', 'vat_invoice_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1302,7 +1302,7 @@ class OcrClient(Client):
         :return: RecognizeVehicleLicenseResponse
         """
 
-        all_params = ['project_id', 'recognize_vehicle_license_request_body']
+        all_params = ['project_id', 'vehicle_license_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1367,7 +1367,7 @@ class OcrClient(Client):
         :return: RecognizeWebImageResponse
         """
 
-        all_params = ['project_id', 'recognize_web_image_request_body']
+        all_params = ['project_id', 'web_image_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1432,7 +1432,7 @@ class OcrClient(Client):
         :return: RecognizeVinResponse
         """
 
-        all_params = ['project_id', 'recognize_vin_request_body']
+        all_params = ['project_id', 'vin_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

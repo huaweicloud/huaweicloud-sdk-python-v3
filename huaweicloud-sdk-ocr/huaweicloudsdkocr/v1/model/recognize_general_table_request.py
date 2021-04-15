@@ -24,7 +24,7 @@ class RecognizeGeneralTableRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'RecognizeGeneralTableRequestBody'
+        'body': 'GeneralTableRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeGeneralTableRequest:
 
 
         :return: The body of this RecognizeGeneralTableRequest.
-        :rtype: RecognizeGeneralTableRequestBody
+        :rtype: GeneralTableRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeGeneralTableRequest:
 
 
         :param body: The body of this RecognizeGeneralTableRequest.
-        :type: RecognizeGeneralTableRequestBody
+        :type: GeneralTableRequestBody
         """
         self._body = body
 

@@ -24,7 +24,7 @@ class RecognizeMvsInvoiceRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'MvsInvoiceReq'
+        'body': 'MvsInvoiceRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeMvsInvoiceRequest:
 
 
         :return: The body of this RecognizeMvsInvoiceRequest.
-        :rtype: MvsInvoiceReq
+        :rtype: MvsInvoiceRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeMvsInvoiceRequest:
 
 
         :param body: The body of this RecognizeMvsInvoiceRequest.
-        :type: MvsInvoiceReq
+        :type: MvsInvoiceRequestBody
         """
         self._body = body
 

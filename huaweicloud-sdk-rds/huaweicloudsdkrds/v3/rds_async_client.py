@@ -5580,6 +5580,617 @@ class RdsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def allow_sqlserver_db_user_privilege_async(self, request):
+        """授权数据库帐号
+
+        授权数据库帐号。
+
+        :param AllowSqlserverDbUserPrivilegeRequest request
+        :return: AllowSqlserverDbUserPrivilegeResponse
+        """
+        return self.allow_sqlserver_db_user_privilege_with_http_info(request)
+
+    def allow_sqlserver_db_user_privilege_with_http_info(self, request):
+        """授权数据库帐号
+
+        授权数据库帐号。
+
+        :param AllowSqlserverDbUserPrivilegeRequest request
+        :return: AllowSqlserverDbUserPrivilegeResponse
+        """
+
+        all_params = ['instance_id', 'grant_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db_privilege',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AllowSqlserverDbUserPrivilegeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_sqlserver_database_async(self, request):
+        """创建数据库
+
+        创建数据库。
+
+        :param CreateSqlserverDatabaseRequest request
+        :return: CreateSqlserverDatabaseResponse
+        """
+        return self.create_sqlserver_database_with_http_info(request)
+
+    def create_sqlserver_database_with_http_info(self, request):
+        """创建数据库
+
+        创建数据库。
+
+        :param CreateSqlserverDatabaseRequest request
+        :return: CreateSqlserverDatabaseResponse
+        """
+
+        all_params = ['instance_id', 'create_database_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/database',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateSqlserverDatabaseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_sqlserver_db_user_async(self, request):
+        """创建数据库用户
+
+        创建数据库用户。
+
+        :param CreateSqlserverDbUserRequest request
+        :return: CreateSqlserverDbUserResponse
+        """
+        return self.create_sqlserver_db_user_with_http_info(request)
+
+    def create_sqlserver_db_user_with_http_info(self, request):
+        """创建数据库用户
+
+        创建数据库用户。
+
+        :param CreateSqlserverDbUserRequest request
+        :return: CreateSqlserverDbUserResponse
+        """
+
+        all_params = ['instance_id', 'create_db_user_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db_user',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateSqlserverDbUserResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_sqlserver_database_async(self, request):
+        """删除数据库
+
+        删除数据库。
+
+        :param DeleteSqlserverDatabaseRequest request
+        :return: DeleteSqlserverDatabaseResponse
+        """
+        return self.delete_sqlserver_database_with_http_info(request)
+
+    def delete_sqlserver_database_with_http_info(self, request):
+        """删除数据库
+
+        删除数据库。
+
+        :param DeleteSqlserverDatabaseRequest request
+        :return: DeleteSqlserverDatabaseResponse
+        """
+
+        all_params = ['instance_id', 'db_name', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'db_name' in local_var_params:
+            path_params['db_name'] = local_var_params['db_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/database/{db_name}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteSqlserverDatabaseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_sqlserver_db_user_async(self, request):
+        """删除数据库用户
+
+        删除数据库用户。
+
+        :param DeleteSqlserverDbUserRequest request
+        :return: DeleteSqlserverDbUserResponse
+        """
+        return self.delete_sqlserver_db_user_with_http_info(request)
+
+    def delete_sqlserver_db_user_with_http_info(self, request):
+        """删除数据库用户
+
+        删除数据库用户。
+
+        :param DeleteSqlserverDbUserRequest request
+        :return: DeleteSqlserverDbUserResponse
+        """
+
+        all_params = ['instance_id', 'user_name', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db_user/{user_name}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteSqlserverDbUserResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_authorized_sqlserver_db_users_async(self, request):
+        """查询指定数据库的已授权用户
+
+        查询指定数据库的已授权用户。
+
+        :param ListAuthorizedSqlserverDbUsersRequest request
+        :return: ListAuthorizedSqlserverDbUsersResponse
+        """
+        return self.list_authorized_sqlserver_db_users_with_http_info(request)
+
+    def list_authorized_sqlserver_db_users_with_http_info(self, request):
+        """查询指定数据库的已授权用户
+
+        查询指定数据库的已授权用户。
+
+        :param ListAuthorizedSqlserverDbUsersRequest request
+        :return: ListAuthorizedSqlserverDbUsersResponse
+        """
+
+        all_params = ['instance_id', 'db_name', 'page', 'limit', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'db_name' in local_var_params:
+            query_params.append(('db-name', local_var_params['db_name']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/database/db_user',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAuthorizedSqlserverDbUsersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_sqlserver_databases_async(self, request):
+        """查询数据库列表
+
+        查询数据库列表。
+
+        :param ListSqlserverDatabasesRequest request
+        :return: ListSqlserverDatabasesResponse
+        """
+        return self.list_sqlserver_databases_with_http_info(request)
+
+    def list_sqlserver_databases_with_http_info(self, request):
+        """查询数据库列表
+
+        查询数据库列表。
+
+        :param ListSqlserverDatabasesRequest request
+        :return: ListSqlserverDatabasesResponse
+        """
+
+        all_params = ['instance_id', 'page', 'limit', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/database/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSqlserverDatabasesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_sqlserver_db_users_async(self, request):
+        """查询数据库用户列表
+
+        查询数据库用户列表。
+
+        :param ListSqlserverDbUsersRequest request
+        :return: ListSqlserverDbUsersResponse
+        """
+        return self.list_sqlserver_db_users_with_http_info(request)
+
+    def list_sqlserver_db_users_with_http_info(self, request):
+        """查询数据库用户列表
+
+        查询数据库用户列表。
+
+        :param ListSqlserverDbUsersRequest request
+        :return: ListSqlserverDbUsersResponse
+        """
+
+        all_params = ['instance_id', 'page', 'limit', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db_user/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSqlserverDbUsersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def revoke_sqlserver_db_user_privilege_async(self, request):
+        """解除数据库帐号权限
+
+        解除数据库帐号权限。
+
+        :param RevokeSqlserverDbUserPrivilegeRequest request
+        :return: RevokeSqlserverDbUserPrivilegeResponse
+        """
+        return self.revoke_sqlserver_db_user_privilege_with_http_info(request)
+
+    def revoke_sqlserver_db_user_privilege_with_http_info(self, request):
+        """解除数据库帐号权限
+
+        解除数据库帐号权限。
+
+        :param RevokeSqlserverDbUserPrivilegeRequest request
+        :return: RevokeSqlserverDbUserPrivilegeResponse
+        """
+
+        all_params = ['instance_id', 'sqlserver_revoke_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db_privilege',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RevokeSqlserverDbUserPrivilegeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):

@@ -45,7 +45,8 @@ class ShowIssueV4Response(SdkResponse):
         'severity': 'IssueItemSfV4Severity',
         'status': 'IssueItemSfV4Status',
         'tracker': 'IssueItemSfV4Tracker',
-        'updated_time': 'str'
+        'updated_time': 'str',
+        'closed_time': 'str'
     }
 
     attribute_map = {
@@ -71,10 +72,11 @@ class ShowIssueV4Response(SdkResponse):
         'severity': 'severity',
         'status': 'status',
         'tracker': 'tracker',
-        'updated_time': 'updated_time'
+        'updated_time': 'updated_time',
+        'closed_time': 'closed_time'
     }
 
-    def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, created_time=None, creator=None, custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, module=None, name=None, parent_issue=None, priority=None, severity=None, status=None, tracker=None, updated_time=None):
+    def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, created_time=None, creator=None, custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, module=None, name=None, parent_issue=None, priority=None, severity=None, status=None, tracker=None, updated_time=None, closed_time=None):
         """ShowIssueV4Response - a model defined in huaweicloud sdk"""
         
         super().__init__()
@@ -102,6 +104,7 @@ class ShowIssueV4Response(SdkResponse):
         self._status = None
         self._tracker = None
         self._updated_time = None
+        self._closed_time = None
         self.discriminator = None
 
         if actual_work_hours is not None:
@@ -150,6 +153,8 @@ class ShowIssueV4Response(SdkResponse):
             self.tracker = tracker
         if updated_time is not None:
             self.updated_time = updated_time
+        if closed_time is not None:
+            self.closed_time = closed_time
 
     @property
     def actual_work_hours(self):
@@ -632,6 +637,28 @@ class ShowIssueV4Response(SdkResponse):
         :type: str
         """
         self._updated_time = updated_time
+
+    @property
+    def closed_time(self):
+        """Gets the closed_time of this ShowIssueV4Response.
+
+        关闭时间 年-月-日 时:分:秒
+
+        :return: The closed_time of this ShowIssueV4Response.
+        :rtype: str
+        """
+        return self._closed_time
+
+    @closed_time.setter
+    def closed_time(self, closed_time):
+        """Sets the closed_time of this ShowIssueV4Response.
+
+        关闭时间 年-月-日 时:分:秒
+
+        :param closed_time: The closed_time of this ShowIssueV4Response.
+        :type: str
+        """
+        self._closed_time = closed_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

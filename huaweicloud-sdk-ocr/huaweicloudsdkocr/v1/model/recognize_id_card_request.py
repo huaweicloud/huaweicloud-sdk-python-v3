@@ -24,7 +24,7 @@ class RecognizeIDCardRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'IDCardReq'
+        'body': 'IDCardRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeIDCardRequest:
 
 
         :return: The body of this RecognizeIDCardRequest.
-        :rtype: IDCardReq
+        :rtype: IDCardRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeIDCardRequest:
 
 
         :param body: The body of this RecognizeIDCardRequest.
-        :type: IDCardReq
+        :type: IDCardRequestBody
         """
         self._body = body
 

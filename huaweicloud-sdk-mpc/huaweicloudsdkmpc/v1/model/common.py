@@ -23,34 +23,71 @@ class Common:
     sensitive_list = []
 
     openapi_types = {
+        'qds': 'bool',
         'pvc': 'bool',
+        'pvc_version': 'str',
+        'pvc_strength': 'str',
         'hls_interval': 'int',
         'dash_interval': 'int',
         'pack_type': 'int'
     }
 
     attribute_map = {
+        'qds': 'QDS',
         'pvc': 'PVC',
+        'pvc_version': 'PVC_version',
+        'pvc_strength': 'PVC_strength',
         'hls_interval': 'hls_interval',
         'dash_interval': 'dash_interval',
         'pack_type': 'pack_type'
     }
 
-    def __init__(self, pvc=None, hls_interval=None, dash_interval=None, pack_type=None):
+    def __init__(self, qds=None, pvc=None, pvc_version=None, pvc_strength=None, hls_interval=None, dash_interval=None, pack_type=None):
         """Common - a model defined in huaweicloud sdk"""
         
         
 
+        self._qds = None
         self._pvc = None
+        self._pvc_version = None
+        self._pvc_strength = None
         self._hls_interval = None
         self._dash_interval = None
         self._pack_type = None
         self.discriminator = None
 
+        if qds is not None:
+            self.qds = qds
         self.pvc = pvc
+        if pvc_version is not None:
+            self.pvc_version = pvc_version
+        if pvc_strength is not None:
+            self.pvc_strength = pvc_strength
         self.hls_interval = hls_interval
         self.dash_interval = dash_interval
         self.pack_type = pack_type
+
+    @property
+    def qds(self):
+        """Gets the qds of this Common.
+
+        QDS开关 0：关闭（当前默认关闭） 1：开启 
+
+        :return: The qds of this Common.
+        :rtype: bool
+        """
+        return self._qds
+
+    @qds.setter
+    def qds(self, qds):
+        """Sets the qds of this Common.
+
+        QDS开关 0：关闭（当前默认关闭） 1：开启 
+
+        :param qds: The qds of this Common.
+        :type: bool
+        """
+        self._qds = qds
 
     @property
     def pvc(self):
@@ -73,6 +110,50 @@ class Common:
         :type: bool
         """
         self._pvc = pvc
+
+    @property
+    def pvc_version(self):
+        """Gets the pvc_version of this Common.
+
+        PVC版本（PVC开启时，此字段才生效） “2.0_normal”：感知编码2.0（降码率30%~40%） “2.0_high”：感知编码2.0+画质增强 
+
+        :return: The pvc_version of this Common.
+        :rtype: str
+        """
+        return self._pvc_version
+
+    @pvc_version.setter
+    def pvc_version(self, pvc_version):
+        """Sets the pvc_version of this Common.
+
+        PVC版本（PVC开启时，此字段才生效） “2.0_normal”：感知编码2.0（降码率30%~40%） “2.0_high”：感知编码2.0+画质增强 
+
+        :param pvc_version: The pvc_version of this Common.
+        :type: str
+        """
+        self._pvc_version = pvc_version
+
+    @property
+    def pvc_strength(self):
+        """Gets the pvc_strength of this Common.
+
+        PVC感知编码强度（PVC开启时，此字段才生效），默认取值 “100” “100”：主观质量不变 “70”：主观质量适当下降 
+
+        :return: The pvc_strength of this Common.
+        :rtype: str
+        """
+        return self._pvc_strength
+
+    @pvc_strength.setter
+    def pvc_strength(self, pvc_strength):
+        """Sets the pvc_strength of this Common.
+
+        PVC感知编码强度（PVC开启时，此字段才生效），默认取值 “100” “100”：主观质量不变 “70”：主观质量适当下降 
+
+        :param pvc_strength: The pvc_strength of this Common.
+        :type: str
+        """
+        self._pvc_strength = pvc_strength
 
     @property
     def hls_interval(self):

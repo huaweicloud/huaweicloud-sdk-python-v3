@@ -24,7 +24,7 @@ class RecognizeAutoClassificationRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'AutoClassificationReq'
+        'body': 'AutoClassificationRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeAutoClassificationRequest:
 
 
         :return: The body of this RecognizeAutoClassificationRequest.
-        :rtype: AutoClassificationReq
+        :rtype: AutoClassificationRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeAutoClassificationRequest:
 
 
         :param body: The body of this RecognizeAutoClassificationRequest.
-        :type: AutoClassificationReq
+        :type: AutoClassificationRequestBody
         """
         self._body = body
 

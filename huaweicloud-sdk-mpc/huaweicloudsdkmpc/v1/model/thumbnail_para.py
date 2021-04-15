@@ -105,7 +105,7 @@ class ThumbnailPara:
     def type(self):
         """Gets the type of this ThumbnailPara.
 
-        采样类型。  取值如下： - \"PERCENT\"：根据视频时长的百分比间隔采样。 - \"TIME\"：根据时间间隔采样截图。 - \"DOTS\"：指定时间点截图。 默认值：\"TIME\" 
+        采样类型。  取值如下： - \"TIME\"：根据时间间隔采样截图。 - \"DOTS\"：指定时间点截图。 默认值：\"TIME\" 
 
         :return: The type of this ThumbnailPara.
         :rtype: str
@@ -116,7 +116,7 @@ class ThumbnailPara:
     def type(self, type):
         """Sets the type of this ThumbnailPara.
 
-        采样类型。  取值如下： - \"PERCENT\"：根据视频时长的百分比间隔采样。 - \"TIME\"：根据时间间隔采样截图。 - \"DOTS\"：指定时间点截图。 默认值：\"TIME\" 
+        采样类型。  取值如下： - \"TIME\"：根据时间间隔采样截图。 - \"DOTS\"：指定时间点截图。 默认值：\"TIME\" 
 
         :param type: The type of this ThumbnailPara.
         :type: str

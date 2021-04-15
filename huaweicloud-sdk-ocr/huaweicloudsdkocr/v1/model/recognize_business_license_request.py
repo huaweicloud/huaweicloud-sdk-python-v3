@@ -24,7 +24,7 @@ class RecognizeBusinessLicenseRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'BusinessLicenseReq'
+        'body': 'BusinessLicenseRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeBusinessLicenseRequest:
 
 
         :return: The body of this RecognizeBusinessLicenseRequest.
-        :rtype: BusinessLicenseReq
+        :rtype: BusinessLicenseRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeBusinessLicenseRequest:
 
 
         :param body: The body of this RecognizeBusinessLicenseRequest.
-        :type: BusinessLicenseReq
+        :type: BusinessLicenseRequestBody
         """
         self._body = body
 

@@ -23,23 +23,28 @@ class TemplateExtend:
     sensitive_list = []
 
     openapi_types = {
-        'audio': 'OutputPolicy'
+        'audio': 'AudioExtendSettings',
+        'video': 'VideoExtendSettings'
     }
 
     attribute_map = {
-        'audio': 'audio'
+        'audio': 'audio',
+        'video': 'video'
     }
 
-    def __init__(self, audio=None):
+    def __init__(self, audio=None, video=None):
         """TemplateExtend - a model defined in huaweicloud sdk"""
         
         
 
         self._audio = None
+        self._video = None
         self.discriminator = None
 
         if audio is not None:
             self.audio = audio
+        if video is not None:
+            self.video = video
 
     @property
     def audio(self):
@@ -47,7 +52,7 @@ class TemplateExtend:
 
 
         :return: The audio of this TemplateExtend.
-        :rtype: OutputPolicy
+        :rtype: AudioExtendSettings
         """
         return self._audio
 
@@ -57,9 +62,29 @@ class TemplateExtend:
 
 
         :param audio: The audio of this TemplateExtend.
-        :type: OutputPolicy
+        :type: AudioExtendSettings
         """
         self._audio = audio
+
+    @property
+    def video(self):
+        """Gets the video of this TemplateExtend.
+
+
+        :return: The video of this TemplateExtend.
+        :rtype: VideoExtendSettings
+        """
+        return self._video
+
+    @video.setter
+    def video(self, video):
+        """Sets the video of this TemplateExtend.
+
+
+        :param video: The video of this TemplateExtend.
+        :type: VideoExtendSettings
+        """
+        self._video = video
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -32,6 +32,7 @@ class TaskDetailInfo:
         'output': 'ObsObjInfo',
         'user_data': 'str',
         'audit_report': 'AuditReport',
+        'output_url': 'str',
         'error_code': 'str',
         'description': 'str',
         'media_detail': 'MediaDetail',
@@ -48,13 +49,14 @@ class TaskDetailInfo:
         'output': 'output',
         'user_data': 'user_data',
         'audit_report': 'audit_report',
+        'output_url': 'output_url',
         'error_code': 'error_code',
         'description': 'description',
         'media_detail': 'media_detail',
         'xcode_error': 'xcode_error'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, input=None, output=None, user_data=None, audit_report=None, error_code=None, description=None, media_detail=None, xcode_error=None):
+    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, input=None, output=None, user_data=None, audit_report=None, output_url=None, error_code=None, description=None, media_detail=None, xcode_error=None):
         """TaskDetailInfo - a model defined in huaweicloud sdk"""
         
         
@@ -68,6 +70,7 @@ class TaskDetailInfo:
         self._output = None
         self._user_data = None
         self._audit_report = None
+        self._output_url = None
         self._error_code = None
         self._description = None
         self._media_detail = None
@@ -92,6 +95,8 @@ class TaskDetailInfo:
             self.user_data = user_data
         if audit_report is not None:
             self.audit_report = audit_report
+        if output_url is not None:
+            self.output_url = output_url
         if error_code is not None:
             self.error_code = error_code
         if description is not None:
@@ -292,6 +297,28 @@ class TaskDetailInfo:
         :type: AuditReport
         """
         self._audit_report = audit_report
+
+    @property
+    def output_url(self):
+        """Gets the output_url of this TaskDetailInfo.
+
+        质检文件输出路径 
+
+        :return: The output_url of this TaskDetailInfo.
+        :rtype: str
+        """
+        return self._output_url
+
+    @output_url.setter
+    def output_url(self, output_url):
+        """Sets the output_url of this TaskDetailInfo.
+
+        质检文件输出路径 
+
+        :param output_url: The output_url of this TaskDetailInfo.
+        :type: str
+        """
+        self._output_url = output_url
 
     @property
     def error_code(self):

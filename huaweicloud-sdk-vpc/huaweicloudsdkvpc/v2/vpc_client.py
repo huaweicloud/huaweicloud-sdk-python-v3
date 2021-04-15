@@ -111,6 +111,136 @@ class VpcClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def batch_create_subnet_tags(self, request):
+        """批量创建子网资源标签
+
+        为指定的子网资源实例批量添加标签。 此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
+
+        :param BatchCreateSubnetTagsRequest request
+        :return: BatchCreateSubnetTagsResponse
+        """
+        return self.batch_create_subnet_tags_with_http_info(request)
+
+    def batch_create_subnet_tags_with_http_info(self, request):
+        """批量创建子网资源标签
+
+        为指定的子网资源实例批量添加标签。 此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
+
+        :param BatchCreateSubnetTagsRequest request
+        :return: BatchCreateSubnetTagsResponse
+        """
+
+        all_params = ['subnet_id', 'batch_create_subnet_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'subnet_id' in local_var_params:
+            path_params['subnet_id'] = local_var_params['subnet_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/subnets/{subnet_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchCreateSubnetTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_delete_subnet_tags(self, request):
+        """批量删除子网资源标签
+
+        为指定的子网资源实例批量删除标签 此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+
+        :param BatchDeleteSubnetTagsRequest request
+        :return: BatchDeleteSubnetTagsResponse
+        """
+        return self.batch_delete_subnet_tags_with_http_info(request)
+
+    def batch_delete_subnet_tags_with_http_info(self, request):
+        """批量删除子网资源标签
+
+        为指定的子网资源实例批量删除标签 此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+
+        :param BatchDeleteSubnetTagsRequest request
+        :return: BatchDeleteSubnetTagsResponse
+        """
+
+        all_params = ['subnet_id', 'batch_delete_subnet_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'subnet_id' in local_var_params:
+            path_params['subnet_id'] = local_var_params['subnet_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/subnets/{subnet_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteSubnetTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_port(self, request):
         """创建端口
 
@@ -357,6 +487,71 @@ class VpcClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateSubnetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_subnet_tag(self, request):
+        """创建子网资源标签
+
+        给指定子网资源实例增加标签信息。 此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
+
+        :param CreateSubnetTagRequest request
+        :return: CreateSubnetTagResponse
+        """
+        return self.create_subnet_tag_with_http_info(request)
+
+    def create_subnet_tag_with_http_info(self, request):
+        """创建子网资源标签
+
+        给指定子网资源实例增加标签信息。 此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
+
+        :param CreateSubnetTagRequest request
+        :return: CreateSubnetTagResponse
+        """
+
+        all_params = ['subnet_id', 'create_subnet_tag_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'subnet_id' in local_var_params:
+            path_params['subnet_id'] = local_var_params['subnet_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/subnets/{subnet_id}/tags',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateSubnetTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -680,6 +875,71 @@ class VpcClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_subnet_tag(self, request):
+        """删除子网资源标签
+
+        删除指定子网资源实例的标签信息。 该接口为幂等接口：删除的key不存在报404，Key不能为空或者空字符串
+
+        :param DeleteSubnetTagRequest request
+        :return: DeleteSubnetTagResponse
+        """
+        return self.delete_subnet_tag_with_http_info(request)
+
+    def delete_subnet_tag_with_http_info(self, request):
+        """删除子网资源标签
+
+        删除指定子网资源实例的标签信息。 该接口为幂等接口：删除的key不存在报404，Key不能为空或者空字符串
+
+        :param DeleteSubnetTagRequest request
+        :return: DeleteSubnetTagResponse
+        """
+
+        all_params = ['subnet_id', 'key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'subnet_id' in local_var_params:
+            path_params['subnet_id'] = local_var_params['subnet_id']
+        if 'key' in local_var_params:
+            path_params['key'] = local_var_params['key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/subnets/{subnet_id}/tags/{key}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteSubnetTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_vpc_peering(self, request):
         """删除对等连接
 
@@ -966,6 +1226,67 @@ class VpcClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_subnet_tags(self, request):
+        """查询子网项目标签
+
+        查询租户在指定区域和实例类型的所有标签集合
+
+        :param ListSubnetTagsRequest request
+        :return: ListSubnetTagsResponse
+        """
+        return self.list_subnet_tags_with_http_info(request)
+
+    def list_subnet_tags_with_http_info(self, request):
+        """查询子网项目标签
+
+        查询租户在指定区域和实例类型的所有标签集合
+
+        :param ListSubnetTagsRequest request
+        :return: ListSubnetTagsResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/subnets/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSubnetTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_subnets(self, request):
         """查询子网列表
 
@@ -1029,6 +1350,69 @@ class VpcClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSubnetsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_subnets_by_tags(self, request):
+        """查询子网资源实例
+
+        使用标签过滤实例
+
+        :param ListSubnetsByTagsRequest request
+        :return: ListSubnetsByTagsResponse
+        """
+        return self.list_subnets_by_tags_with_http_info(request)
+
+    def list_subnets_by_tags_with_http_info(self, request):
+        """查询子网资源实例
+
+        使用标签过滤实例
+
+        :param ListSubnetsByTagsRequest request
+        :return: ListSubnetsByTagsResponse
+        """
+
+        all_params = ['list_subnets_by_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/subnets/resource_instances/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSubnetsByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1482,6 +1866,69 @@ class VpcClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowSubnetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_subnet_tags(self, request):
+        """查询子网资源标签
+
+        查询指定子网实例的标签信息。
+
+        :param ShowSubnetTagsRequest request
+        :return: ShowSubnetTagsResponse
+        """
+        return self.show_subnet_tags_with_http_info(request)
+
+    def show_subnet_tags_with_http_info(self, request):
+        """查询子网资源标签
+
+        查询指定子网实例的标签信息。
+
+        :param ShowSubnetTagsRequest request
+        :return: ShowSubnetTagsResponse
+        """
+
+        all_params = ['subnet_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'subnet_id' in local_var_params:
+            path_params['subnet_id'] = local_var_params['subnet_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/subnets/{subnet_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowSubnetTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2061,6 +2508,609 @@ class VpcClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowPrivateipResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_create_security_group(self, request):
+        """创建安全组
+
+        创建安全组
+
+        :param NeutronCreateSecurityGroupRequest request
+        :return: NeutronCreateSecurityGroupResponse
+        """
+        return self.neutron_create_security_group_with_http_info(request)
+
+    def neutron_create_security_group_with_http_info(self, request):
+        """创建安全组
+
+        创建安全组
+
+        :param NeutronCreateSecurityGroupRequest request
+        :return: NeutronCreateSecurityGroupResponse
+        """
+
+        all_params = ['security_group']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/security-groups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronCreateSecurityGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_create_security_group_rule(self, request):
+        """创建安全组规则
+
+        创建安全组规则
+
+        :param NeutronCreateSecurityGroupRuleRequest request
+        :return: NeutronCreateSecurityGroupRuleResponse
+        """
+        return self.neutron_create_security_group_rule_with_http_info(request)
+
+    def neutron_create_security_group_rule_with_http_info(self, request):
+        """创建安全组规则
+
+        创建安全组规则
+
+        :param NeutronCreateSecurityGroupRuleRequest request
+        :return: NeutronCreateSecurityGroupRuleResponse
+        """
+
+        all_params = ['security_group_rule']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/security-group-rules',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronCreateSecurityGroupRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_delete_security_group(self, request):
+        """删除安全组
+
+        删除安全组
+
+        :param NeutronDeleteSecurityGroupRequest request
+        :return: NeutronDeleteSecurityGroupResponse
+        """
+        return self.neutron_delete_security_group_with_http_info(request)
+
+    def neutron_delete_security_group_with_http_info(self, request):
+        """删除安全组
+
+        删除安全组
+
+        :param NeutronDeleteSecurityGroupRequest request
+        :return: NeutronDeleteSecurityGroupResponse
+        """
+
+        all_params = ['security_group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'security_group_id' in local_var_params:
+            path_params['security_group_id'] = local_var_params['security_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/security-groups/{security_group_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronDeleteSecurityGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_delete_security_group_rule(self, request):
+        """删除安全组规则
+
+        删除安全组规则
+
+        :param NeutronDeleteSecurityGroupRuleRequest request
+        :return: NeutronDeleteSecurityGroupRuleResponse
+        """
+        return self.neutron_delete_security_group_rule_with_http_info(request)
+
+    def neutron_delete_security_group_rule_with_http_info(self, request):
+        """删除安全组规则
+
+        删除安全组规则
+
+        :param NeutronDeleteSecurityGroupRuleRequest request
+        :return: NeutronDeleteSecurityGroupRuleResponse
+        """
+
+        all_params = ['security_group_rule_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'security_group_rule_id' in local_var_params:
+            path_params['security_group_rule_id'] = local_var_params['security_group_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/security-group-rules/{security_group_rule_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronDeleteSecurityGroupRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_list_security_group_rules(self, request):
+        """查询安全组规则列表
+
+        查询提交请求的租户有权限查看的所有安全组规则。单次查询最多返回2000条数据，超过2000后会返回分页标记。分页查询请参考分页查询
+
+        :param NeutronListSecurityGroupRulesRequest request
+        :return: NeutronListSecurityGroupRulesResponse
+        """
+        return self.neutron_list_security_group_rules_with_http_info(request)
+
+    def neutron_list_security_group_rules_with_http_info(self, request):
+        """查询安全组规则列表
+
+        查询提交请求的租户有权限查看的所有安全组规则。单次查询最多返回2000条数据，超过2000后会返回分页标记。分页查询请参考分页查询
+
+        :param NeutronListSecurityGroupRulesRequest request
+        :return: NeutronListSecurityGroupRulesResponse
+        """
+
+        all_params = ['limit', 'marker', 'id', 'direction', 'protocol', 'ethertype', 'description', 'remote_ip_prefix', 'remote_group_id', 'security_group_id', 'port_range_max', 'port_range_min', 'tenant_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'direction' in local_var_params:
+            query_params.append(('direction', local_var_params['direction']))
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
+        if 'ethertype' in local_var_params:
+            query_params.append(('ethertype', local_var_params['ethertype']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'remote_ip_prefix' in local_var_params:
+            query_params.append(('remote_ip_prefix', local_var_params['remote_ip_prefix']))
+        if 'remote_group_id' in local_var_params:
+            query_params.append(('remote_group_id', local_var_params['remote_group_id']))
+        if 'security_group_id' in local_var_params:
+            query_params.append(('security_group_id', local_var_params['security_group_id']))
+        if 'port_range_max' in local_var_params:
+            query_params.append(('port_range_max', local_var_params['port_range_max']))
+        if 'port_range_min' in local_var_params:
+            query_params.append(('port_range_min', local_var_params['port_range_min']))
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/security-group-rules',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronListSecurityGroupRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_list_security_groups(self, request):
+        """查询安全组列表
+
+        查询提交请求租户的所有安全组，单次查询最多返回2000条数据，超过2000后会返回分页标记。分页查询请参考分页查询 。
+
+        :param NeutronListSecurityGroupsRequest request
+        :return: NeutronListSecurityGroupsResponse
+        """
+        return self.neutron_list_security_groups_with_http_info(request)
+
+    def neutron_list_security_groups_with_http_info(self, request):
+        """查询安全组列表
+
+        查询提交请求租户的所有安全组，单次查询最多返回2000条数据，超过2000后会返回分页标记。分页查询请参考分页查询 。
+
+        :param NeutronListSecurityGroupsRequest request
+        :return: NeutronListSecurityGroupsResponse
+        """
+
+        all_params = ['limit', 'marker', 'id', 'name', 'description', 'tenant_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/security-groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronListSecurityGroupsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_show_security_group(self, request):
+        """查询安全组
+
+        查询安全组详情
+
+        :param NeutronShowSecurityGroupRequest request
+        :return: NeutronShowSecurityGroupResponse
+        """
+        return self.neutron_show_security_group_with_http_info(request)
+
+    def neutron_show_security_group_with_http_info(self, request):
+        """查询安全组
+
+        查询安全组详情
+
+        :param NeutronShowSecurityGroupRequest request
+        :return: NeutronShowSecurityGroupResponse
+        """
+
+        all_params = ['security_group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'security_group_id' in local_var_params:
+            path_params['security_group_id'] = local_var_params['security_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/security-groups/{security_group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronShowSecurityGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_show_security_group_rule(self, request):
+        """查询安全组规则
+
+        查询安全组规则详情。
+
+        :param NeutronShowSecurityGroupRuleRequest request
+        :return: NeutronShowSecurityGroupRuleResponse
+        """
+        return self.neutron_show_security_group_rule_with_http_info(request)
+
+    def neutron_show_security_group_rule_with_http_info(self, request):
+        """查询安全组规则
+
+        查询安全组规则详情。
+
+        :param NeutronShowSecurityGroupRuleRequest request
+        :return: NeutronShowSecurityGroupRuleResponse
+        """
+
+        all_params = ['security_group_rule_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'security_group_rule_id' in local_var_params:
+            path_params['security_group_rule_id'] = local_var_params['security_group_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/security-group-rules/{security_group_rule_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronShowSecurityGroupRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def neutron_update_security_group(self, request):
+        """更新安全组
+
+        更新安全组
+
+        :param NeutronUpdateSecurityGroupRequest request
+        :return: NeutronUpdateSecurityGroupResponse
+        """
+        return self.neutron_update_security_group_with_http_info(request)
+
+    def neutron_update_security_group_with_http_info(self, request):
+        """更新安全组
+
+        更新安全组
+
+        :param NeutronUpdateSecurityGroupRequest request
+        :return: NeutronUpdateSecurityGroupResponse
+        """
+
+        all_params = ['security_group_id', 'security_group']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'security_group_id' in local_var_params:
+            path_params['security_group_id'] = local_var_params['security_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/security-groups/{security_group_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='NeutronUpdateSecurityGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3191,6 +4241,136 @@ class VpcClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def batch_create_vpc_tags(self, request):
+        """批量创建VPC资源标签
+
+        为指定的VPC资源实例批量添加标签。 此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
+
+        :param BatchCreateVpcTagsRequest request
+        :return: BatchCreateVpcTagsResponse
+        """
+        return self.batch_create_vpc_tags_with_http_info(request)
+
+    def batch_create_vpc_tags_with_http_info(self, request):
+        """批量创建VPC资源标签
+
+        为指定的VPC资源实例批量添加标签。 此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
+
+        :param BatchCreateVpcTagsRequest request
+        :return: BatchCreateVpcTagsResponse
+        """
+
+        all_params = ['vpc_id', 'batch_create_vpc_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_id' in local_var_params:
+            path_params['vpc_id'] = local_var_params['vpc_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/vpcs/{vpc_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchCreateVpcTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_delete_vpc_tags(self, request):
+        """批量删除VPC资源标签
+
+        为指定的VPC资源实例批量删除标签。 此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+
+        :param BatchDeleteVpcTagsRequest request
+        :return: BatchDeleteVpcTagsResponse
+        """
+        return self.batch_delete_vpc_tags_with_http_info(request)
+
+    def batch_delete_vpc_tags_with_http_info(self, request):
+        """批量删除VPC资源标签
+
+        为指定的VPC资源实例批量删除标签。 此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+
+        :param BatchDeleteVpcTagsRequest request
+        :return: BatchDeleteVpcTagsResponse
+        """
+
+        all_params = ['vpc_id', 'batch_delete_vpc_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_id' in local_var_params:
+            path_params['vpc_id'] = local_var_params['vpc_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/vpcs/{vpc_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteVpcTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_vpc(self, request):
         """创建VPC
 
@@ -3248,6 +4428,71 @@ class VpcClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateVpcResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_vpc_resource_tag(self, request):
+        """创建VPC资源标签
+
+        给指定VPC资源实例增加标签信息 此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
+
+        :param CreateVpcResourceTagRequest request
+        :return: CreateVpcResourceTagResponse
+        """
+        return self.create_vpc_resource_tag_with_http_info(request)
+
+    def create_vpc_resource_tag_with_http_info(self, request):
+        """创建VPC资源标签
+
+        给指定VPC资源实例增加标签信息 此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
+
+        :param CreateVpcResourceTagRequest request
+        :return: CreateVpcResourceTagResponse
+        """
+
+        all_params = ['vpc_id', 'create_vpc_resource_tag_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_id' in local_var_params:
+            path_params['vpc_id'] = local_var_params['vpc_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/vpcs/{vpc_id}/tags',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateVpcResourceTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3443,6 +4688,71 @@ class VpcClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_vpc_tag(self, request):
+        """删除VPC资源标签
+
+        删除指定VPC资源实例的标签信息 该接口为幂等接口：删除的key不存在报404，Key不能为空或者空字符串
+
+        :param DeleteVpcTagRequest request
+        :return: DeleteVpcTagResponse
+        """
+        return self.delete_vpc_tag_with_http_info(request)
+
+    def delete_vpc_tag_with_http_info(self, request):
+        """删除VPC资源标签
+
+        删除指定VPC资源实例的标签信息 该接口为幂等接口：删除的key不存在报404，Key不能为空或者空字符串
+
+        :param DeleteVpcTagRequest request
+        :return: DeleteVpcTagResponse
+        """
+
+        all_params = ['vpc_id', 'key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_id' in local_var_params:
+            path_params['vpc_id'] = local_var_params['vpc_id']
+        if 'key' in local_var_params:
+            path_params['key'] = local_var_params['key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/vpcs/{vpc_id}/tags/{key}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteVpcTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_vpc_routes(self, request):
         """查询VPC路由列表
 
@@ -3518,6 +4828,67 @@ class VpcClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_vpc_tags(self, request):
+        """查询VPC项目标签
+
+        查询租户在指定区域和实例类型的所有标签集合
+
+        :param ListVpcTagsRequest request
+        :return: ListVpcTagsResponse
+        """
+        return self.list_vpc_tags_with_http_info(request)
+
+    def list_vpc_tags_with_http_info(self, request):
+        """查询VPC项目标签
+
+        查询租户在指定区域和实例类型的所有标签集合
+
+        :param ListVpcTagsRequest request
+        :return: ListVpcTagsResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/vpcs/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListVpcTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_vpcs(self, request):
         """查询VPC列表
 
@@ -3581,6 +4952,69 @@ class VpcClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListVpcsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_vpcs_by_tags(self, request):
+        """查询VPC资源实例
+
+        使用标签过滤实例。
+
+        :param ListVpcsByTagsRequest request
+        :return: ListVpcsByTagsResponse
+        """
+        return self.list_vpcs_by_tags_with_http_info(request)
+
+    def list_vpcs_by_tags_with_http_info(self, request):
+        """查询VPC资源实例
+
+        使用标签过滤实例。
+
+        :param ListVpcsByTagsRequest request
+        :return: ListVpcsByTagsResponse
+        """
+
+        all_params = ['list_vpcs_by_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/vpcs/resource_instances/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListVpcsByTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3707,6 +5141,69 @@ class VpcClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowVpcRouteResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_vpc_tags(self, request):
+        """查询VPC资源标签
+
+        查询指定VPC实例的标签信息
+
+        :param ShowVpcTagsRequest request
+        :return: ShowVpcTagsResponse
+        """
+        return self.show_vpc_tags_with_http_info(request)
+
+    def show_vpc_tags_with_http_info(self, request):
+        """查询VPC资源标签
+
+        查询指定VPC实例的标签信息
+
+        :param ShowVpcTagsRequest request
+        :return: ShowVpcTagsResponse
+        """
+
+        all_params = ['vpc_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_id' in local_var_params:
+            path_params['vpc_id'] = local_var_params['vpc_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/vpcs/{vpc_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowVpcTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

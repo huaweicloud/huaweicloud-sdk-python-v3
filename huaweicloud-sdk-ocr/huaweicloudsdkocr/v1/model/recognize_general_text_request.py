@@ -24,7 +24,7 @@ class RecognizeGeneralTextRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'GeneralTextReq'
+        'body': 'GeneralTextRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeGeneralTextRequest:
 
 
         :return: The body of this RecognizeGeneralTextRequest.
-        :rtype: GeneralTextReq
+        :rtype: GeneralTextRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeGeneralTextRequest:
 
 
         :param body: The body of this RecognizeGeneralTextRequest.
-        :type: GeneralTextReq
+        :type: GeneralTextRequestBody
         """
         self._body = body
 

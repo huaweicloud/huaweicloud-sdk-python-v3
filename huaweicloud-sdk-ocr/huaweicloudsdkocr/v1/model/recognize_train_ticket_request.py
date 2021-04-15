@@ -24,7 +24,7 @@ class RecognizeTrainTicketRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'TrainTicketReq'
+        'body': 'TrainTicketRequestBody'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class RecognizeTrainTicketRequest:
 
 
         :return: The body of this RecognizeTrainTicketRequest.
-        :rtype: TrainTicketReq
+        :rtype: TrainTicketRequestBody
         """
         return self._body
 
@@ -81,7 +81,7 @@ class RecognizeTrainTicketRequest:
 
 
         :param body: The body of this RecognizeTrainTicketRequest.
-        :type: TrainTicketReq
+        :type: TrainTicketRequestBody
         """
         self._body = body
 

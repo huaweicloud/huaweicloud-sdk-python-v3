@@ -6,6 +6,7 @@ from __future__ import absolute_import
 from huaweicloudsdkmpc.v1.model.animated_graphics_output_param import AnimatedGraphicsOutputParam
 from huaweicloudsdkmpc.v1.model.animated_graphics_task import AnimatedGraphicsTask
 from huaweicloudsdkmpc.v1.model.audio import Audio
+from huaweicloudsdkmpc.v1.model.audio_extend_settings import AudioExtendSettings
 from huaweicloudsdkmpc.v1.model.audio_file import AudioFile
 from huaweicloudsdkmpc.v1.model.audio_info import AudioInfo
 from huaweicloudsdkmpc.v1.model.audio_process import AudioProcess
@@ -191,11 +192,13 @@ from huaweicloudsdkmpc.v1.model.video_common import VideoCommon
 from huaweicloudsdkmpc.v1.model.video_contrast import VideoContrast
 from huaweicloudsdkmpc.v1.model.video_deblock import VideoDeblock
 from huaweicloudsdkmpc.v1.model.video_denoise import VideoDenoise
+from huaweicloudsdkmpc.v1.model.video_extend_settings import VideoExtendSettings
 from huaweicloudsdkmpc.v1.model.video_info import VideoInfo
 from huaweicloudsdkmpc.v1.model.video_obj import VideoObj
 from huaweicloudsdkmpc.v1.model.video_parameters import VideoParameters
 from huaweicloudsdkmpc.v1.model.video_process import VideoProcess
 from huaweicloudsdkmpc.v1.model.video_saturation import VideoSaturation
+from huaweicloudsdkmpc.v1.model.video_settings import VideoSettings
 from huaweicloudsdkmpc.v1.model.video_sharp import VideoSharp
 from huaweicloudsdkmpc.v1.model.video_superresolution import VideoSuperresolution
 from huaweicloudsdkmpc.v1.model.watermark_request import WatermarkRequest

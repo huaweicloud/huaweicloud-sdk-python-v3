@@ -23,6 +23,7 @@ class TransTemplate:
     sensitive_list = []
 
     openapi_types = {
+        'tenant_id': 'str',
         'template_name': 'str',
         'video': 'Video',
         'audio': 'Audio',
@@ -30,29 +31,55 @@ class TransTemplate:
     }
 
     attribute_map = {
+        'tenant_id': 'tenant_id',
         'template_name': 'template_name',
         'video': 'video',
         'audio': 'audio',
         'common': 'common'
     }
 
-    def __init__(self, template_name=None, video=None, audio=None, common=None):
+    def __init__(self, tenant_id=None, template_name=None, video=None, audio=None, common=None):
         """TransTemplate - a model defined in huaweicloud sdk"""
         
         
 
+        self._tenant_id = None
         self._template_name = None
         self._video = None
         self._audio = None
         self._common = None
         self.discriminator = None
 
+        if tenant_id is not None:
+            self.tenant_id = tenant_id
         self.template_name = template_name
         if video is not None:
             self.video = video
         if audio is not None:
             self.audio = audio
         self.common = common
+
+    @property
+    def tenant_id(self):
+        """Gets the tenant_id of this TransTemplate.
+
+        租户Id
+
+        :return: The tenant_id of this TransTemplate.
+        :rtype: str
+        """
+        return self._tenant_id
+
+    @tenant_id.setter
+    def tenant_id(self, tenant_id):
+        """Sets the tenant_id of this TransTemplate.
+
+        租户Id
+
+        :param tenant_id: The tenant_id of this TransTemplate.
+        :type: str
+        """
+        self._tenant_id = tenant_id
 
     @property
     def template_name(self):

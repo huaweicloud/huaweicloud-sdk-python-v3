@@ -23,28 +23,82 @@ class IssueRecordV4:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'int',
+        'created_time': 'int',
         'user': 'IssueRecordV4User',
         'details': 'list[IssueRecordV4Details]'
     }
 
     attribute_map = {
+        'id': 'id',
+        'created_time': 'created_time',
         'user': 'user',
         'details': 'details'
     }
 
-    def __init__(self, user=None, details=None):
+    def __init__(self, id=None, created_time=None, user=None, details=None):
         """IssueRecordV4 - a model defined in huaweicloud sdk"""
         
         
 
+        self._id = None
+        self._created_time = None
         self._user = None
         self._details = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
+        if created_time is not None:
+            self.created_time = created_time
         if user is not None:
             self.user = user
         if details is not None:
             self.details = details
+
+    @property
+    def id(self):
+        """Gets the id of this IssueRecordV4.
+
+        操作记录id
+
+        :return: The id of this IssueRecordV4.
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this IssueRecordV4.
+
+        操作记录id
+
+        :param id: The id of this IssueRecordV4.
+        :type: int
+        """
+        self._id = id
+
+    @property
+    def created_time(self):
+        """Gets the created_time of this IssueRecordV4.
+
+        操作记录创建时间
+
+        :return: The created_time of this IssueRecordV4.
+        :rtype: int
+        """
+        return self._created_time
+
+    @created_time.setter
+    def created_time(self, created_time):
+        """Sets the created_time of this IssueRecordV4.
+
+        操作记录创建时间
+
+        :param created_time: The created_time of this IssueRecordV4.
+        :type: int
+        """
+        self._created_time = created_time
 
     @property
     def user(self):
