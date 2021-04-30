@@ -25,7 +25,7 @@ class CreatePostgresqlDatabaseSchemaRequest:
     openapi_types = {
         'x_language': 'str',
         'instance_id': 'str',
-        'body': 'DbSchemaReq'
+        'body': 'PostgresqlDatabaseSchemaReq'
     }
 
     attribute_map = {
@@ -96,7 +96,7 @@ class CreatePostgresqlDatabaseSchemaRequest:
 
 
         :return: The body of this CreatePostgresqlDatabaseSchemaRequest.
-        :rtype: DbSchemaReq
+        :rtype: PostgresqlDatabaseSchemaReq
         """
         return self._body
 
@@ -106,7 +106,7 @@ class CreatePostgresqlDatabaseSchemaRequest:
 
 
         :param body: The body of this CreatePostgresqlDatabaseSchemaRequest.
-        :type: DbSchemaReq
+        :type: PostgresqlDatabaseSchemaReq
         """
         self._body = body
 

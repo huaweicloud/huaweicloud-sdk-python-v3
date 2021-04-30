@@ -23,7 +23,7 @@ class ListPostgresqlDatabaseSchemasResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'database_schemas': 'list[DatabaseForListSchema]',
+        'database_schemas': 'list[PostgresqlDatabaseForListSchema]',
         'total_count': 'int'
     }
 
@@ -53,7 +53,7 @@ class ListPostgresqlDatabaseSchemasResponse(SdkResponse):
         列表中每个元素表示一个数据库schema。
 
         :return: The database_schemas of this ListPostgresqlDatabaseSchemasResponse.
-        :rtype: list[DatabaseForListSchema]
+        :rtype: list[PostgresqlDatabaseForListSchema]
         """
         return self._database_schemas
 
@@ -64,7 +64,7 @@ class ListPostgresqlDatabaseSchemasResponse(SdkResponse):
         列表中每个元素表示一个数据库schema。
 
         :param database_schemas: The database_schemas of this ListPostgresqlDatabaseSchemasResponse.
-        :type: list[DatabaseForListSchema]
+        :type: list[PostgresqlDatabaseForListSchema]
         """
         self._database_schemas = database_schemas
 
@@ -72,7 +72,7 @@ class ListPostgresqlDatabaseSchemasResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListPostgresqlDatabaseSchemasResponse.
 
-        总数。
+        数据库schema总数。
 
         :return: The total_count of this ListPostgresqlDatabaseSchemasResponse.
         :rtype: int
@@ -83,7 +83,7 @@ class ListPostgresqlDatabaseSchemasResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListPostgresqlDatabaseSchemasResponse.
 
-        总数。
+        数据库schema总数。
 
         :param total_count: The total_count of this ListPostgresqlDatabaseSchemasResponse.
         :type: int

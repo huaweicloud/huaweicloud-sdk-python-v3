@@ -25,7 +25,7 @@ class AllowDbPrivilegeRequest:
     openapi_types = {
         'x_language': 'str',
         'instance_id': 'str',
-        'body': 'PgGrantRequest'
+        'body': 'PostgresqlGrantRequest'
     }
 
     attribute_map = {
@@ -96,7 +96,7 @@ class AllowDbPrivilegeRequest:
 
 
         :return: The body of this AllowDbPrivilegeRequest.
-        :rtype: PgGrantRequest
+        :rtype: PostgresqlGrantRequest
         """
         return self._body
 
@@ -106,7 +106,7 @@ class AllowDbPrivilegeRequest:
 
 
         :param body: The body of this AllowDbPrivilegeRequest.
-        :type: PgGrantRequest
+        :type: PostgresqlGrantRequest
         """
         self._body = body
 

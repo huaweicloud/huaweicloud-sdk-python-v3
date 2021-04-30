@@ -23,50 +23,50 @@ class ListOffSiteBackupsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'offsite_backups': 'list[OffSiteBackupForList]',
+        'backups': 'list[OffSiteBackupForList]',
         'total_count': 'int'
     }
 
     attribute_map = {
-        'offsite_backups': 'offsite_backups',
+        'backups': 'backups',
         'total_count': 'total_count'
     }
 
-    def __init__(self, offsite_backups=None, total_count=None):
+    def __init__(self, backups=None, total_count=None):
         """ListOffSiteBackupsResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._offsite_backups = None
+        self._backups = None
         self._total_count = None
         self.discriminator = None
 
-        if offsite_backups is not None:
-            self.offsite_backups = offsite_backups
+        if backups is not None:
+            self.backups = backups
         if total_count is not None:
             self.total_count = total_count
 
     @property
-    def offsite_backups(self):
-        """Gets the offsite_backups of this ListOffSiteBackupsResponse.
+    def backups(self):
+        """Gets the backups of this ListOffSiteBackupsResponse.
 
         跨区域备份信息。
 
-        :return: The offsite_backups of this ListOffSiteBackupsResponse.
+        :return: The backups of this ListOffSiteBackupsResponse.
         :rtype: list[OffSiteBackupForList]
         """
-        return self._offsite_backups
+        return self._backups
 
-    @offsite_backups.setter
-    def offsite_backups(self, offsite_backups):
-        """Sets the offsite_backups of this ListOffSiteBackupsResponse.
+    @backups.setter
+    def backups(self, backups):
+        """Sets the backups of this ListOffSiteBackupsResponse.
 
         跨区域备份信息。
 
-        :param offsite_backups: The offsite_backups of this ListOffSiteBackupsResponse.
+        :param backups: The backups of this ListOffSiteBackupsResponse.
         :type: list[OffSiteBackupForList]
         """
-        self._offsite_backups = offsite_backups
+        self._backups = backups
 
     @property
     def total_count(self):

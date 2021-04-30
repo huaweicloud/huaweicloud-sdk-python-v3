@@ -1,3 +1,81 @@
+# 3.0.41-rc 2021-04-30
+
+### HuaweiCloud SDK BCS
+
+- _Features_
+  - Support interface `ListOpRecord`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - Support interfaces:
+    - `ShowShardingBalancer`
+    - `SetBalancerSwitch`
+    - `SetBalancerWindow`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - Support interface `ListHosts`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IAM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add optional values to request parameter `type` of the interface `ShowDomainQuota`:
+    - `assigment_group_mp`
+    - `assigment_agency_mp`
+    - `assigment_group_ep`
+    - `assigment_user_ep`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove interfaces:
+    - `ListSubscriptions`
+    - `CreateSubscription`
+    - `UpdateSubscription`
+    - `ShowSubscription`
+    - `DeleteSubscription`
+
+### HuaweiCloud SDK MPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add request parameters `language`、`sky_switch` to the interface `CreateMpeCallBack`.
+  - Update optional values of request parameter `subtitle_type` of interface `CreateTranscodingTask`.
+
+### HuaweiCloud SDK ProjectMan
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add a field `project_code` to response body of the interface `ShowProjectInfoV4`.
+
 # 3.0.40-rc 2021-04-15
 
 ### HuaweiCloud SDK RDS

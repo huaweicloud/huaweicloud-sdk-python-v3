@@ -1009,6 +1009,77 @@ class BcsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_op_record(self, request):
+        """查询异步操作结果
+
+        查询异步操作结果
+
+        :param ListOpRecordRequest request
+        :return: ListOpRecordResponse
+        """
+        return self.list_op_record_with_http_info(request)
+
+    def list_op_record_with_http_info(self, request):
+        """查询异步操作结果
+
+        查询异步操作结果
+
+        :param ListOpRecordRequest request
+        :return: ListOpRecordResponse
+        """
+
+        all_params = ['blockchain_id', 'operation_status', 'resource_type', 'operation_type', 'operation_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'blockchain_id' in local_var_params:
+            query_params.append(('blockchain_id', local_var_params['blockchain_id']))
+        if 'operation_status' in local_var_params:
+            query_params.append(('operation_status', local_var_params['operation_status']))
+        if 'resource_type' in local_var_params:
+            query_params.append(('resource_type', local_var_params['resource_type']))
+        if 'operation_type' in local_var_params:
+            query_params.append(('operation_type', local_var_params['operation_type']))
+        if 'operation_id' in local_var_params:
+            query_params.append(('operation_id', local_var_params['operation_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/operation/record',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListOpRecordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_quotas(self, request):
         """查询配额
 

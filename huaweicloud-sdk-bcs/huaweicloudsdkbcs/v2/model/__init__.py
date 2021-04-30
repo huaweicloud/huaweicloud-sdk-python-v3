@@ -70,6 +70,8 @@ from huaweicloudsdkbcs.v2.model.list_members_request import ListMembersRequest
 from huaweicloudsdkbcs.v2.model.list_members_response import ListMembersResponse
 from huaweicloudsdkbcs.v2.model.list_notifications_request import ListNotificationsRequest
 from huaweicloudsdkbcs.v2.model.list_notifications_response import ListNotificationsResponse
+from huaweicloudsdkbcs.v2.model.list_op_record_request import ListOpRecordRequest
+from huaweicloudsdkbcs.v2.model.list_op_record_response import ListOpRecordResponse
 from huaweicloudsdkbcs.v2.model.list_quotas_request import ListQuotasRequest
 from huaweicloudsdkbcs.v2.model.list_quotas_response import ListQuotasResponse
 from huaweicloudsdkbcs.v2.model.member import Member
@@ -79,14 +81,18 @@ from huaweicloudsdkbcs.v2.model.metric_data_points import MetricDataPoints
 from huaweicloudsdkbcs.v2.model.metric_demision import MetricDemision
 from huaweicloudsdkbcs.v2.model.metric_item_result_api import MetricItemResultAPI
 from huaweicloudsdkbcs.v2.model.node import Node
-from huaweicloudsdkbcs.v2.model.node_orgs import NodeOrgs
+from huaweicloudsdkbcs.v2.model.node_info import NodeInfo
 from huaweicloudsdkbcs.v2.model.notification_list import NotificationList
 from huaweicloudsdkbcs.v2.model.obs_info import OBSInfo
+from huaweicloudsdkbcs.v2.model.op_id_res import OpIdRes
+from huaweicloudsdkbcs.v2.model.oprecord_cluster import OprecordCluster
 from huaweicloudsdkbcs.v2.model.org import Org
 from huaweicloudsdkbcs.v2.model.org_peer import OrgPeer
 from huaweicloudsdkbcs.v2.model.organization_v2 import OrganizationV2
 from huaweicloudsdkbcs.v2.model.peer_address import PeerAddress
 from huaweicloudsdkbcs.v2.model.peer_info import PeerInfo
+from huaweicloudsdkbcs.v2.model.process_info import ProcessInfo
+from huaweicloudsdkbcs.v2.model.record_detail_info import RecordDetailInfo
 from huaweicloudsdkbcs.v2.model.resource import Resource
 from huaweicloudsdkbcs.v2.model.sfs_info import SfsInfo
 from huaweicloudsdkbcs.v2.model.show_blockchain_detail_request import ShowBlockchainDetailRequest
@@ -96,6 +102,6 @@ from huaweicloudsdkbcs.v2.model.show_blockchain_nodes_response import ShowBlockc
 from huaweicloudsdkbcs.v2.model.show_blockchain_status_request import ShowBlockchainStatusRequest
 from huaweicloudsdkbcs.v2.model.show_blockchain_status_response import ShowBlockchainStatusResponse
 from huaweicloudsdkbcs.v2.model.statistic_value import StatisticValue
+from huaweicloudsdkbcs.v2.model.sub_detail import SubDetail
 from huaweicloudsdkbcs.v2.model.update_instance_request import UpdateInstanceRequest
-from huaweicloudsdkbcs.v2.model.update_instance_request_body import UpdateInstanceRequestBody
 from huaweicloudsdkbcs.v2.model.update_instance_response import UpdateInstanceResponse

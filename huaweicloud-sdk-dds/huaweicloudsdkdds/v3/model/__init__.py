@@ -19,6 +19,7 @@ from huaweicloudsdkdds.v3.model.backup_policy import BackupPolicy
 from huaweicloudsdkdds.v3.model.backup_policy_item import BackupPolicyItem
 from huaweicloudsdkdds.v3.model.backup_strategy import BackupStrategy
 from huaweicloudsdkdds.v3.model.backup_strategy_for_item_response import BackupStrategyForItemResponse
+from huaweicloudsdkdds.v3.model.balancer_active_window import BalancerActiveWindow
 from huaweicloudsdkdds.v3.model.batch_operate_instance_tag_request_body import BatchOperateInstanceTagRequestBody
 from huaweicloudsdkdds.v3.model.batch_tag_action_request import BatchTagActionRequest
 from huaweicloudsdkdds.v3.model.batch_tag_action_response import BatchTagActionResponse
@@ -160,6 +161,10 @@ from huaweicloudsdkdds.v3.model.set_auditlog_policy_response import SetAuditlogP
 from huaweicloudsdkdds.v3.model.set_backup_policy_request import SetBackupPolicyRequest
 from huaweicloudsdkdds.v3.model.set_backup_policy_request_body import SetBackupPolicyRequestBody
 from huaweicloudsdkdds.v3.model.set_backup_policy_response import SetBackupPolicyResponse
+from huaweicloudsdkdds.v3.model.set_balancer_switch_request import SetBalancerSwitchRequest
+from huaweicloudsdkdds.v3.model.set_balancer_switch_response import SetBalancerSwitchResponse
+from huaweicloudsdkdds.v3.model.set_balancer_window_request import SetBalancerWindowRequest
+from huaweicloudsdkdds.v3.model.set_balancer_window_response import SetBalancerWindowResponse
 from huaweicloudsdkdds.v3.model.show_api_version_request import ShowApiVersionRequest
 from huaweicloudsdkdds.v3.model.show_api_version_response import ShowApiVersionResponse
 from huaweicloudsdkdds.v3.model.show_auditlog_policy_request import ShowAuditlogPolicyRequest
@@ -170,6 +175,8 @@ from huaweicloudsdkdds.v3.model.show_backup_policy_request import ShowBackupPoli
 from huaweicloudsdkdds.v3.model.show_backup_policy_response import ShowBackupPolicyResponse
 from huaweicloudsdkdds.v3.model.show_connection_statistics_request import ShowConnectionStatisticsRequest
 from huaweicloudsdkdds.v3.model.show_connection_statistics_response import ShowConnectionStatisticsResponse
+from huaweicloudsdkdds.v3.model.show_sharding_balancer_request import ShowShardingBalancerRequest
+from huaweicloudsdkdds.v3.model.show_sharding_balancer_response import ShowShardingBalancerResponse
 from huaweicloudsdkdds.v3.model.slowlog_result import SlowlogResult
 from huaweicloudsdkdds.v3.model.source import Source
 from huaweicloudsdkdds.v3.model.storage import Storage

@@ -23,7 +23,7 @@ class ListPostgresqlDatabasesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'databases': 'list[PgListDatabase]',
+        'databases': 'list[PostgresqlListDatabase]',
         'total_count': 'int'
     }
 
@@ -50,10 +50,10 @@ class ListPostgresqlDatabasesResponse(SdkResponse):
     def databases(self):
         """Gets the databases of this ListPostgresqlDatabasesResponse.
 
-        数据库信息。
+        列表中每个元素表示一个数据库。
 
         :return: The databases of this ListPostgresqlDatabasesResponse.
-        :rtype: list[PgListDatabase]
+        :rtype: list[PostgresqlListDatabase]
         """
         return self._databases
 
@@ -61,10 +61,10 @@ class ListPostgresqlDatabasesResponse(SdkResponse):
     def databases(self, databases):
         """Sets the databases of this ListPostgresqlDatabasesResponse.
 
-        数据库信息。
+        列表中每个元素表示一个数据库。
 
         :param databases: The databases of this ListPostgresqlDatabasesResponse.
-        :type: list[PgListDatabase]
+        :type: list[PostgresqlListDatabase]
         """
         self._databases = databases
 
@@ -72,7 +72,7 @@ class ListPostgresqlDatabasesResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListPostgresqlDatabasesResponse.
 
-        总数。
+        数据库总数。
 
         :return: The total_count of this ListPostgresqlDatabasesResponse.
         :rtype: int
@@ -83,7 +83,7 @@ class ListPostgresqlDatabasesResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListPostgresqlDatabasesResponse.
 
-        总数。
+        数据库总数。
 
         :param total_count: The total_count of this ListPostgresqlDatabasesResponse.
         :type: int

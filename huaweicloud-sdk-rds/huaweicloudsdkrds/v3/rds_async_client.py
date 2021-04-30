@@ -2429,73 +2429,6 @@ class RdsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def reset_pwd_async(self, request):
-        """重置数据库密码
-
-        重置数据库密码.
-
-        :param ResetPwdRequest request
-        :return: ResetPwdResponse
-        """
-        return self.reset_pwd_with_http_info(request)
-
-    def reset_pwd_with_http_info(self, request):
-        """重置数据库密码
-
-        重置数据库密码.
-
-        :param ResetPwdRequest request
-        :return: ResetPwdResponse
-        """
-
-        all_params = ['instance_id', 'pwd_reset_request_body', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/password',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ResetPwdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def restore_tables_async(self, request):
         """表级时间点恢复
 
@@ -4220,6 +4153,73 @@ class RdsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_postgresql_instance_alias_async(self, request):
+        """修改实例备注信息
+
+        修改指定数据库实例的备注信息。
+
+        :param UpdatePostgresqlInstanceAliasRequest request
+        :return: UpdatePostgresqlInstanceAliasResponse
+        """
+        return self.update_postgresql_instance_alias_with_http_info(request)
+
+    def update_postgresql_instance_alias_with_http_info(self, request):
+        """修改实例备注信息
+
+        修改指定数据库实例的备注信息。
+
+        :param UpdatePostgresqlInstanceAliasRequest request
+        :return: UpdatePostgresqlInstanceAliasResponse
+        """
+
+        all_params = ['instance_id', 'update_rds_instance_alias_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/alias',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdatePostgresqlInstanceAliasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def allow_db_user_privilege_async(self, request):
         """授权数据库帐号
 
@@ -4835,6 +4835,73 @@ class RdsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def reset_pwd_async(self, request):
+        """重置数据库密码
+
+        重置数据库密码.
+
+        :param ResetPwdRequest request
+        :return: ResetPwdResponse
+        """
+        return self.reset_pwd_with_http_info(request)
+
+    def reset_pwd_with_http_info(self, request):
+        """重置数据库密码
+
+        重置数据库密码.
+
+        :param ResetPwdRequest request
+        :return: ResetPwdResponse
+        """
+
+        all_params = ['instance_id', 'pwd_reset_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/password',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ResetPwdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def revoke_async(self, request):
         """解除数据库帐号权限
 
@@ -4972,7 +5039,7 @@ class RdsAsyncClient(Client):
     def allow_db_privilege_async(self, request):
         """授权数据库帐号
 
-        授权数据库帐号。
+        在指定实例的数据库中, 设置帐号的权限。
 
         :param AllowDbPrivilegeRequest request
         :return: AllowDbPrivilegeResponse
@@ -4982,7 +5049,7 @@ class RdsAsyncClient(Client):
     def allow_db_privilege_with_http_info(self, request):
         """授权数据库帐号
 
-        授权数据库帐号。
+        在指定实例的数据库中, 设置帐号的权限。
 
         :param AllowDbPrivilegeRequest request
         :return: AllowDbPrivilegeResponse
@@ -5039,7 +5106,7 @@ class RdsAsyncClient(Client):
     def create_postgresql_database_async(self, request):
         """创建数据库
 
-        创建数据库。
+        在指定实例中创建数据库。
 
         :param CreatePostgresqlDatabaseRequest request
         :return: CreatePostgresqlDatabaseResponse
@@ -5049,7 +5116,7 @@ class RdsAsyncClient(Client):
     def create_postgresql_database_with_http_info(self, request):
         """创建数据库
 
-        创建数据库。
+        在指定实例中创建数据库。
 
         :param CreatePostgresqlDatabaseRequest request
         :return: CreatePostgresqlDatabaseResponse
@@ -5106,7 +5173,7 @@ class RdsAsyncClient(Client):
     def create_postgresql_database_schema_async(self, request):
         """创建数据库SCHEMA
 
-        创建数据库SCHEMA。
+        在指定实例的数据库中, 创建数据库schema。
 
         :param CreatePostgresqlDatabaseSchemaRequest request
         :return: CreatePostgresqlDatabaseSchemaResponse
@@ -5116,7 +5183,7 @@ class RdsAsyncClient(Client):
     def create_postgresql_database_schema_with_http_info(self, request):
         """创建数据库SCHEMA
 
-        创建数据库SCHEMA。
+        在指定实例的数据库中, 创建数据库schema。
 
         :param CreatePostgresqlDatabaseSchemaRequest request
         :return: CreatePostgresqlDatabaseSchemaResponse
@@ -5173,7 +5240,7 @@ class RdsAsyncClient(Client):
     def create_postgresql_db_user_async(self, request):
         """创建数据库用户
 
-        创建数据库用户。
+        在指定实例中创建数据库用户。
 
         :param CreatePostgresqlDbUserRequest request
         :return: CreatePostgresqlDbUserResponse
@@ -5183,7 +5250,7 @@ class RdsAsyncClient(Client):
     def create_postgresql_db_user_with_http_info(self, request):
         """创建数据库用户
 
-        创建数据库用户。
+        在指定实例中创建数据库用户。
 
         :param CreatePostgresqlDbUserRequest request
         :return: CreatePostgresqlDbUserResponse
@@ -5240,7 +5307,7 @@ class RdsAsyncClient(Client):
     def list_postgresql_database_schemas_async(self, request):
         """查询数据库SCHEMA列表
 
-        查询数据库SCHEMA列表。
+        查询指定实例的数据库SCHEMA列表。
 
         :param ListPostgresqlDatabaseSchemasRequest request
         :return: ListPostgresqlDatabaseSchemasResponse
@@ -5250,7 +5317,7 @@ class RdsAsyncClient(Client):
     def list_postgresql_database_schemas_with_http_info(self, request):
         """查询数据库SCHEMA列表
 
-        查询数据库SCHEMA列表。
+        查询指定实例的数据库SCHEMA列表。
 
         :param ListPostgresqlDatabaseSchemasRequest request
         :return: ListPostgresqlDatabaseSchemasResponse
@@ -5311,7 +5378,7 @@ class RdsAsyncClient(Client):
     def list_postgresql_databases_async(self, request):
         """查询数据库列表
 
-        查询数据库列表。
+        查询指定实例中的数据库列表。
 
         :param ListPostgresqlDatabasesRequest request
         :return: ListPostgresqlDatabasesResponse
@@ -5321,7 +5388,7 @@ class RdsAsyncClient(Client):
     def list_postgresql_databases_with_http_info(self, request):
         """查询数据库列表
 
-        查询数据库列表。
+        查询指定实例中的数据库列表。
 
         :param ListPostgresqlDatabasesRequest request
         :return: ListPostgresqlDatabasesResponse
@@ -5380,7 +5447,7 @@ class RdsAsyncClient(Client):
     def list_postgresql_db_user_paginated_async(self, request):
         """查询数据库用户列表
 
-        查询数据库用户列表。
+        在指定实例中查询数据库用户列表。
 
         :param ListPostgresqlDbUserPaginatedRequest request
         :return: ListPostgresqlDbUserPaginatedResponse
@@ -5390,7 +5457,7 @@ class RdsAsyncClient(Client):
     def list_postgresql_db_user_paginated_with_http_info(self, request):
         """查询数据库用户列表
 
-        查询数据库用户列表。
+        在指定实例中查询数据库用户列表。
 
         :param ListPostgresqlDbUserPaginatedRequest request
         :return: ListPostgresqlDbUserPaginatedResponse
@@ -5449,7 +5516,7 @@ class RdsAsyncClient(Client):
     def set_postgresql_db_user_pwd_async(self, request):
         """重置数据库帐号密码
 
-        重置数据库帐号密码。
+        重置指定数据库帐号的密码。
 
         :param SetPostgresqlDbUserPwdRequest request
         :return: SetPostgresqlDbUserPwdResponse
@@ -5459,7 +5526,7 @@ class RdsAsyncClient(Client):
     def set_postgresql_db_user_pwd_with_http_info(self, request):
         """重置数据库帐号密码
 
-        重置数据库帐号密码。
+        重置指定数据库帐号的密码。
 
         :param SetPostgresqlDbUserPwdRequest request
         :return: SetPostgresqlDbUserPwdResponse
@@ -5507,73 +5574,6 @@ class RdsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='SetPostgresqlDbUserPwdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def update_postgresql_instance_alias_async(self, request):
-        """修改实例备注信息
-
-        修改实例备注信息。
-
-        :param UpdatePostgresqlInstanceAliasRequest request
-        :return: UpdatePostgresqlInstanceAliasResponse
-        """
-        return self.update_postgresql_instance_alias_with_http_info(request)
-
-    def update_postgresql_instance_alias_with_http_info(self, request):
-        """修改实例备注信息
-
-        修改实例备注信息。
-
-        :param UpdatePostgresqlInstanceAliasRequest request
-        :return: UpdatePostgresqlInstanceAliasResponse
-        """
-
-        all_params = ['instance_id', 'update_rds_instance_alias_request', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/alias',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='UpdatePostgresqlInstanceAliasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -6005,7 +6005,7 @@ class RdsAsyncClient(Client):
         :return: ListSqlserverDatabasesResponse
         """
 
-        all_params = ['instance_id', 'page', 'limit', 'x_language']
+        all_params = ['instance_id', 'page', 'limit', 'x_language', 'db_name']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -6022,6 +6022,8 @@ class RdsAsyncClient(Client):
             query_params.append(('page', local_var_params['page']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'db_name' in local_var_params:
+            query_params.append(('db-name', local_var_params['db_name']))
 
         header_params = {}
         if 'x_language' in local_var_params:

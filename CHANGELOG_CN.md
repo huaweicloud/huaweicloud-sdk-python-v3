@@ -1,3 +1,81 @@
+# 3.0.41-rc 2021-04-30
+
+### HuaweiCloud SDK BCS
+
+- _新增特性_
+  - 新增支持查询异步操作结果的接口`ListOpRecord`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+  - 新增支持的接口
+    - 查询集群均衡设置 `ShowShardingBalancer`
+    - 设置集群均衡开关 `SetBalancerSwitch`
+    - 设置集群均衡活动时间窗 `SetBalancerWindow`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 新增支持查询弹性云服务器状态列表的接口`ListHosts`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IAM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 查询账号配额接口`ShowDomainQuota`的请求参数`type`增加可选值：
+    - `assigment_group_mp`
+    - `assigment_agency_mp`
+    - `assigment_group_ep`
+    - `assigment_user_ep`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 下线订阅管理相关接口：
+    - `ListSubscriptions`
+    - `CreateSubscription`
+    - `UpdateSubscription`
+    - `ShowSubscription`
+    - `DeleteSubscription`
+
+### HuaweiCloud SDK MPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateMpeCallBack`新增请求参数`language`、`sky_switch`
+  - 接口`CreateTranscodingTask`的请求参数`subtitle_type`可选值调整为`0`、`1`、`2`
+
+### HuaweiCloud SDK ProjectMan
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 获取项目详情接口`ShowProjectInfoV4`的响应体新增字段`project_code`
+
 # 3.0.40-rc 2021-04-15
 
 ### HuaweiCloud SDK RDS

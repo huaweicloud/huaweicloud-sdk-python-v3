@@ -24,27 +24,32 @@ class CreateNewBlockchainResponse(SdkResponse):
 
     openapi_types = {
         'blockchain_id': 'str',
-        'blockchain_name': 'str'
+        'blockchain_name': 'str',
+        'operation_id': 'str'
     }
 
     attribute_map = {
         'blockchain_id': 'blockchain_id',
-        'blockchain_name': 'blockchain_name'
+        'blockchain_name': 'blockchain_name',
+        'operation_id': 'operation_id'
     }
 
-    def __init__(self, blockchain_id=None, blockchain_name=None):
+    def __init__(self, blockchain_id=None, blockchain_name=None, operation_id=None):
         """CreateNewBlockchainResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
         self._blockchain_id = None
         self._blockchain_name = None
+        self._operation_id = None
         self.discriminator = None
 
         if blockchain_id is not None:
             self.blockchain_id = blockchain_id
         if blockchain_name is not None:
             self.blockchain_name = blockchain_name
+        if operation_id is not None:
+            self.operation_id = operation_id
 
     @property
     def blockchain_id(self):
@@ -89,6 +94,28 @@ class CreateNewBlockchainResponse(SdkResponse):
         :type: str
         """
         self._blockchain_name = blockchain_name
+
+    @property
+    def operation_id(self):
+        """Gets the operation_id of this CreateNewBlockchainResponse.
+
+        操作ID
+
+        :return: The operation_id of this CreateNewBlockchainResponse.
+        :rtype: str
+        """
+        return self._operation_id
+
+    @operation_id.setter
+    def operation_id(self, operation_id):
+        """Sets the operation_id of this CreateNewBlockchainResponse.
+
+        操作ID
+
+        :param operation_id: The operation_id of this CreateNewBlockchainResponse.
+        :type: str
+        """
+        self._operation_id = operation_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

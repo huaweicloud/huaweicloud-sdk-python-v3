@@ -23,43 +23,62 @@ class OffSiteBackupPolicy:
     sensitive_list = []
 
     openapi_types = {
+        'backup_type': 'str',
         'keep_days': 'int',
-        'backup_type': 'object',
         'destination_region': 'str',
         'destination_project_id': 'str'
     }
 
     attribute_map = {
-        'keep_days': 'keep_days',
         'backup_type': 'backup_type',
+        'keep_days': 'keep_days',
         'destination_region': 'destination_region',
         'destination_project_id': 'destination_project_id'
     }
 
-    def __init__(self, keep_days=None, backup_type=None, destination_region=None, destination_project_id=None):
+    def __init__(self, backup_type=None, keep_days=None, destination_region=None, destination_project_id=None):
         """OffSiteBackupPolicy - a model defined in huaweicloud sdk"""
         
         
 
-        self._keep_days = None
         self._backup_type = None
+        self._keep_days = None
         self._destination_region = None
         self._destination_project_id = None
         self.discriminator = None
 
+        self.backup_type = backup_type
         self.keep_days = keep_days
-        if backup_type is not None:
-            self.backup_type = backup_type
-        if destination_region is not None:
-            self.destination_region = destination_region
-        if destination_project_id is not None:
-            self.destination_project_id = destination_project_id
+        self.destination_region = destination_region
+        self.destination_project_id = destination_project_id
+
+    @property
+    def backup_type(self):
+        """Gets the backup_type of this OffSiteBackupPolicy.
+
+        指定备份的类型。  SQL Server仅支持设置为“all”。  取值如下：  - auto：自动全量备份。 - incremental：自动增量备份。 - all：同时设置所有备份类型。   - MySQL：同时设置自动全量和自动增量备份。   - SQL Server：同时设置自动全量、自动增量备份和手动备份。
+
+        :return: The backup_type of this OffSiteBackupPolicy.
+        :rtype: str
+        """
+        return self._backup_type
+
+    @backup_type.setter
+    def backup_type(self, backup_type):
+        """Sets the backup_type of this OffSiteBackupPolicy.
+
+        指定备份的类型。  SQL Server仅支持设置为“all”。  取值如下：  - auto：自动全量备份。 - incremental：自动增量备份。 - all：同时设置所有备份类型。   - MySQL：同时设置自动全量和自动增量备份。   - SQL Server：同时设置自动全量、自动增量备份和手动备份。
+
+        :param backup_type: The backup_type of this OffSiteBackupPolicy.
+        :type: str
+        """
+        self._backup_type = backup_type
 
     @property
     def keep_days(self):
         """Gets the keep_days of this OffSiteBackupPolicy.
 
-        指定已生成的备份文件可以保存的天数。  取值范围：0～1825。保存天数设置为0时，表示关闭跨区域备份策略。  注意： 关闭备份策略后，备份任务将立即停止，如果有增量备份，所有增量备份任务将立即删除，使用增量备份的相关操作可能失败，相关操作不限于下载、复制、恢复、重建等，请谨慎操作。
+        备份文件可以保存的天数。
 
         :return: The keep_days of this OffSiteBackupPolicy.
         :rtype: int
@@ -70,7 +89,7 @@ class OffSiteBackupPolicy:
     def keep_days(self, keep_days):
         """Sets the keep_days of this OffSiteBackupPolicy.
 
-        指定已生成的备份文件可以保存的天数。  取值范围：0～1825。保存天数设置为0时，表示关闭跨区域备份策略。  注意： 关闭备份策略后，备份任务将立即停止，如果有增量备份，所有增量备份任务将立即删除，使用增量备份的相关操作可能失败，相关操作不限于下载、复制、恢复、重建等，请谨慎操作。
+        备份文件可以保存的天数。
 
         :param keep_days: The keep_days of this OffSiteBackupPolicy.
         :type: int
@@ -78,32 +97,10 @@ class OffSiteBackupPolicy:
         self._keep_days = keep_days
 
     @property
-    def backup_type(self):
-        """Gets the backup_type of this OffSiteBackupPolicy.
-
-        备份类型，取值： - SQL Server仅支持设置为“all” - “auto”: 自动全量备份 - “incremental”: 自动增量备份 - “manual“: 手动备份，仅SQL Server返回该备份类型 - “all”: 同时设置自动全量和自动增量备份。MySQL: 同时设置自动全量和自动增量备份。SQL Server: 同时设置自动全量、自动增量备份和手动备份。
-
-        :return: The backup_type of this OffSiteBackupPolicy.
-        :rtype: object
-        """
-        return self._backup_type
-
-    @backup_type.setter
-    def backup_type(self, backup_type):
-        """Sets the backup_type of this OffSiteBackupPolicy.
-
-        备份类型，取值： - SQL Server仅支持设置为“all” - “auto”: 自动全量备份 - “incremental”: 自动增量备份 - “manual“: 手动备份，仅SQL Server返回该备份类型 - “all”: 同时设置自动全量和自动增量备份。MySQL: 同时设置自动全量和自动增量备份。SQL Server: 同时设置自动全量、自动增量备份和手动备份。
-
-        :param backup_type: The backup_type of this OffSiteBackupPolicy.
-        :type: object
-        """
-        self._backup_type = backup_type
-
-    @property
     def destination_region(self):
         """Gets the destination_region of this OffSiteBackupPolicy.
 
-        目标区域ID。
+        设置跨区域备份策略的目标区域ID。
 
         :return: The destination_region of this OffSiteBackupPolicy.
         :rtype: str
@@ -114,7 +111,7 @@ class OffSiteBackupPolicy:
     def destination_region(self, destination_region):
         """Sets the destination_region of this OffSiteBackupPolicy.
 
-        目标区域ID。
+        设置跨区域备份策略的目标区域ID。
 
         :param destination_region: The destination_region of this OffSiteBackupPolicy.
         :type: str
@@ -125,7 +122,7 @@ class OffSiteBackupPolicy:
     def destination_project_id(self):
         """Gets the destination_project_id of this OffSiteBackupPolicy.
 
-        项目ID。
+        设置跨区域备份策略的目标project ID。
 
         :return: The destination_project_id of this OffSiteBackupPolicy.
         :rtype: str
@@ -136,7 +133,7 @@ class OffSiteBackupPolicy:
     def destination_project_id(self, destination_project_id):
         """Sets the destination_project_id of this OffSiteBackupPolicy.
 
-        项目ID。
+        设置跨区域备份策略的目标project ID。
 
         :param destination_project_id: The destination_project_id of this OffSiteBackupPolicy.
         :type: str

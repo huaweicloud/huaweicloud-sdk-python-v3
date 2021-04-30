@@ -48,7 +48,7 @@ class DbUserPwdRequest:
     def name(self):
         """Gets the name of this DbUserPwdRequest.
 
-        - 数据库帐号名称。
+        数据库帐号名称。
 
         :return: The name of this DbUserPwdRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class DbUserPwdRequest:
     def name(self, name):
         """Sets the name of this DbUserPwdRequest.
 
-        - 数据库帐号名称。
+        数据库帐号名称。
 
         :param name: The name of this DbUserPwdRequest.
         :type: str
@@ -70,7 +70,7 @@ class DbUserPwdRequest:
     def password(self):
         """Gets the password of this DbUserPwdRequest.
 
-        - 数据库帐号密码。取值范围：非空，至少包含以下字符中的三种：大写字母、小写字母、数字和特殊符号~!@#%^*-_=+?组成，长度8~32个字符，不能和数据库帐号“name”或“name”的逆序相同。建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
+        数据库帐号密码。  取值范围：  非空，至少包含以下字符中的三种：大写字母、小写字母、数字和特殊符号~!@#%^*-_=+?,组成，长度8~32个字符，不能和数据库帐号“name”或“name”的逆序相同。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
         :return: The password of this DbUserPwdRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class DbUserPwdRequest:
     def password(self, password):
         """Sets the password of this DbUserPwdRequest.
 
-        - 数据库帐号密码。取值范围：非空，至少包含以下字符中的三种：大写字母、小写字母、数字和特殊符号~!@#%^*-_=+?组成，长度8~32个字符，不能和数据库帐号“name”或“name”的逆序相同。建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
+        数据库帐号密码。  取值范围：  非空，至少包含以下字符中的三种：大写字母、小写字母、数字和特殊符号~!@#%^*-_=+?,组成，长度8~32个字符，不能和数据库帐号“name”或“name”的逆序相同。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
         :param password: The password of this DbUserPwdRequest.
         :type: str

@@ -32,7 +32,6 @@ class CreateVolumeOption:
         'metadata': 'dict(str, str)',
         'multiattach': 'bool',
         'name': 'str',
-        'shareable': 'str',
         'size': 'int',
         'snapshot_id': 'str',
         'volume_type': 'str',
@@ -49,14 +48,13 @@ class CreateVolumeOption:
         'metadata': 'metadata',
         'multiattach': 'multiattach',
         'name': 'name',
-        'shareable': 'shareable',
         'size': 'size',
         'snapshot_id': 'snapshot_id',
         'volume_type': 'volume_type',
         'tags': 'tags'
     }
 
-    def __init__(self, availability_zone=None, backup_id=None, count=None, description=None, enterprise_project_id=None, image_ref=None, metadata=None, multiattach=None, name=None, shareable=None, size=None, snapshot_id=None, volume_type=None, tags=None):
+    def __init__(self, availability_zone=None, backup_id=None, count=None, description=None, enterprise_project_id=None, image_ref=None, metadata=None, multiattach=None, name=None, size=None, snapshot_id=None, volume_type=None, tags=None):
         """CreateVolumeOption - a model defined in huaweicloud sdk"""
         
         
@@ -70,7 +68,6 @@ class CreateVolumeOption:
         self._metadata = None
         self._multiattach = None
         self._name = None
-        self._shareable = None
         self._size = None
         self._snapshot_id = None
         self._volume_type = None
@@ -94,8 +91,6 @@ class CreateVolumeOption:
             self.multiattach = multiattach
         if name is not None:
             self.name = name
-        if shareable is not None:
-            self.shareable = shareable
         if size is not None:
             self.size = size
         if snapshot_id is not None:
@@ -301,28 +296,6 @@ class CreateVolumeOption:
         :type: str
         """
         self._name = name
-
-    @property
-    def shareable(self):
-        """Gets the shareable of this CreateVolumeOption.
-
-        是否为共享云硬盘。true为共享盘，false为普通云硬盘。 该字段已经废弃，请使用multiattach。
-
-        :return: The shareable of this CreateVolumeOption.
-        :rtype: str
-        """
-        return self._shareable
-
-    @shareable.setter
-    def shareable(self, shareable):
-        """Sets the shareable of this CreateVolumeOption.
-
-        是否为共享云硬盘。true为共享盘，false为普通云硬盘。 该字段已经废弃，请使用multiattach。
-
-        :param shareable: The shareable of this CreateVolumeOption.
-        :type: str
-        """
-        self._shareable = shareable
 
     @property
     def size(self):

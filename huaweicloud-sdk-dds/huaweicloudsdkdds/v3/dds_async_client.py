@@ -3043,6 +3043,136 @@ class DdsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def set_balancer_switch_async(self, request):
+        """设置集群均衡开关
+
+        设置集群均衡开关。
+
+        :param SetBalancerSwitchRequest request
+        :return: SetBalancerSwitchResponse
+        """
+        return self.set_balancer_switch_with_http_info(request)
+
+    def set_balancer_switch_with_http_info(self, request):
+        """设置集群均衡开关
+
+        设置集群均衡开关。
+
+        :param SetBalancerSwitchRequest request
+        :return: SetBalancerSwitchResponse
+        """
+
+        all_params = ['instance_id', 'action']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'action' in local_var_params:
+            path_params['action'] = local_var_params['action']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/balancer/{action}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetBalancerSwitchResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def set_balancer_window_async(self, request):
+        """设置集群均衡活动时间窗
+
+        设置集群均衡活动时间窗。
+
+        :param SetBalancerWindowRequest request
+        :return: SetBalancerWindowResponse
+        """
+        return self.set_balancer_window_with_http_info(request)
+
+    def set_balancer_window_with_http_info(self, request):
+        """设置集群均衡活动时间窗
+
+        设置集群均衡活动时间窗。
+
+        :param SetBalancerWindowRequest request
+        :return: SetBalancerWindowResponse
+        """
+
+        all_params = ['instance_id', 'balancer_active_window']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/balancer/active-window',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetBalancerWindowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_auditlog_policy_async(self, request):
         """查询审计日志策略
 
@@ -3297,6 +3427,69 @@ class DdsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowConnectionStatisticsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_sharding_balancer_async(self, request):
+        """查询集群均衡设置
+
+        查询集群均衡设置。
+
+        :param ShowShardingBalancerRequest request
+        :return: ShowShardingBalancerResponse
+        """
+        return self.show_sharding_balancer_with_http_info(request)
+
+    def show_sharding_balancer_with_http_info(self, request):
+        """查询集群均衡设置
+
+        查询集群均衡设置。
+
+        :param ShowShardingBalancerRequest request
+        :return: ShowShardingBalancerResponse
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/balancer',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowShardingBalancerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

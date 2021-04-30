@@ -23,7 +23,7 @@ class ShowOffSiteBackupPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'policy_para': 'OffSiteBackupPolicy'
+        'policy_para': 'GetOffSiteBackupPolicy'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ShowOffSiteBackupPolicyResponse(SdkResponse):
 
 
         :return: The policy_para of this ShowOffSiteBackupPolicyResponse.
-        :rtype: OffSiteBackupPolicy
+        :rtype: GetOffSiteBackupPolicy
         """
         return self._policy_para
 
@@ -57,7 +57,7 @@ class ShowOffSiteBackupPolicyResponse(SdkResponse):
 
 
         :param policy_para: The policy_para of this ShowOffSiteBackupPolicyResponse.
-        :type: OffSiteBackupPolicy
+        :type: GetOffSiteBackupPolicy
         """
         self._policy_para = policy_para
 

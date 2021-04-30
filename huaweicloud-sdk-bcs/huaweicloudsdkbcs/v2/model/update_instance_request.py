@@ -24,7 +24,7 @@ class UpdateInstanceRequest:
 
     openapi_types = {
         'blockchain_id': 'str',
-        'body': 'UpdateInstanceRequestBody'
+        'body': 'OpIdRes'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class UpdateInstanceRequest:
 
 
         :return: The body of this UpdateInstanceRequest.
-        :rtype: UpdateInstanceRequestBody
+        :rtype: OpIdRes
         """
         return self._body
 
@@ -81,7 +81,7 @@ class UpdateInstanceRequest:
 
 
         :param body: The body of this UpdateInstanceRequest.
-        :type: UpdateInstanceRequestBody
+        :type: OpIdRes
         """
         self._body = body
 

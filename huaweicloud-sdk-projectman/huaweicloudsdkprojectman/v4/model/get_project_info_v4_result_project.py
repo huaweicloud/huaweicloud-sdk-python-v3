@@ -31,6 +31,7 @@ class GetProjectInfoV4ResultProject:
         'project_type': 'str',
         'archive': 'bool',
         'enterprise_id': 'str',
+        'project_code': 'str',
         'creator': 'GetProjectInfoV4ResultProjectCreator'
     }
 
@@ -43,10 +44,11 @@ class GetProjectInfoV4ResultProject:
         'project_type': 'project_type',
         'archive': 'archive',
         'enterprise_id': 'enterprise_id',
+        'project_code': 'project_code',
         'creator': 'creator'
     }
 
-    def __init__(self, project_num_id=None, project_id=None, name=None, created_on=None, updated_on=None, project_type=None, archive=None, enterprise_id=None, creator=None):
+    def __init__(self, project_num_id=None, project_id=None, name=None, created_on=None, updated_on=None, project_type=None, archive=None, enterprise_id=None, project_code=None, creator=None):
         """GetProjectInfoV4ResultProject - a model defined in huaweicloud sdk"""
         
         
@@ -59,6 +61,7 @@ class GetProjectInfoV4ResultProject:
         self._project_type = None
         self._archive = None
         self._enterprise_id = None
+        self._project_code = None
         self._creator = None
         self.discriminator = None
 
@@ -78,6 +81,8 @@ class GetProjectInfoV4ResultProject:
             self.archive = archive
         if enterprise_id is not None:
             self.enterprise_id = enterprise_id
+        if project_code is not None:
+            self.project_code = project_code
         if creator is not None:
             self.creator = creator
 
@@ -256,6 +261,28 @@ class GetProjectInfoV4ResultProject:
         :type: str
         """
         self._enterprise_id = enterprise_id
+
+    @property
+    def project_code(self):
+        """Gets the project_code of this GetProjectInfoV4ResultProject.
+
+        项目代号
+
+        :return: The project_code of this GetProjectInfoV4ResultProject.
+        :rtype: str
+        """
+        return self._project_code
+
+    @project_code.setter
+    def project_code(self, project_code):
+        """Sets the project_code of this GetProjectInfoV4ResultProject.
+
+        项目代号
+
+        :param project_code: The project_code of this GetProjectInfoV4ResultProject.
+        :type: str
+        """
+        self._project_code = project_code
 
     @property
     def creator(self):

@@ -23,43 +23,75 @@ class AudioInfo:
     sensitive_list = []
 
     openapi_types = {
+        'language': 'str',
         'codec': 'str',
         'sample': 'int',
         'channels': 'int',
+        'sky_switch': 'int',
         'bitrate': 'int',
         'bitrate_bps': 'int'
     }
 
     attribute_map = {
+        'language': 'language',
         'codec': 'codec',
         'sample': 'sample',
         'channels': 'channels',
+        'sky_switch': 'sky_switch',
         'bitrate': 'bitrate',
         'bitrate_bps': 'bitrate_bps'
     }
 
-    def __init__(self, codec=None, sample=None, channels=None, bitrate=None, bitrate_bps=None):
+    def __init__(self, language=None, codec=None, sample=None, channels=None, sky_switch=None, bitrate=None, bitrate_bps=None):
         """AudioInfo - a model defined in huaweicloud sdk"""
         
         
 
+        self._language = None
         self._codec = None
         self._sample = None
         self._channels = None
+        self._sky_switch = None
         self._bitrate = None
         self._bitrate_bps = None
         self.discriminator = None
 
+        if language is not None:
+            self.language = language
         if codec is not None:
             self.codec = codec
         if sample is not None:
             self.sample = sample
         if channels is not None:
             self.channels = channels
+        if sky_switch is not None:
+            self.sky_switch = sky_switch
         if bitrate is not None:
             self.bitrate = bitrate
         if bitrate_bps is not None:
             self.bitrate_bps = bitrate_bps
+
+    @property
+    def language(self):
+        """Gets the language of this AudioInfo.
+
+        声轨语言。
+
+        :return: The language of this AudioInfo.
+        :rtype: str
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        """Sets the language of this AudioInfo.
+
+        声轨语言。
+
+        :param language: The language of this AudioInfo.
+        :type: str
+        """
+        self._language = language
 
     @property
     def codec(self):
@@ -126,6 +158,28 @@ class AudioInfo:
         :type: int
         """
         self._channels = channels
+
+    @property
+    def sky_switch(self):
+        """Gets the sky_switch of this AudioInfo.
+
+        是否开启了天空音。
+
+        :return: The sky_switch of this AudioInfo.
+        :rtype: int
+        """
+        return self._sky_switch
+
+    @sky_switch.setter
+    def sky_switch(self, sky_switch):
+        """Sets the sky_switch of this AudioInfo.
+
+        是否开启了天空音。
+
+        :param sky_switch: The sky_switch of this AudioInfo.
+        :type: int
+        """
+        self._sky_switch = sky_switch
 
     @property
     def bitrate(self):

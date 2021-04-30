@@ -48,7 +48,7 @@ class SqlserverUserForCreation:
     def name(self):
         """Gets the name of this SqlserverUserForCreation.
 
-        数据库用户名称。 数据库帐号名称在1到128个字符之间，不能和系统用户名称相同。 系统用户包括：rdsadmin, rdsuser, rdsbackup, rdsmirror。
+        数据库用户名称。  数据库帐号名称在1到128个字符之间，不能和系统用户名称相同。  系统用户包括：rdsadmin, rdsuser, rdsbackup, rdsmirror。
 
         :return: The name of this SqlserverUserForCreation.
         :rtype: str
@@ -59,7 +59,7 @@ class SqlserverUserForCreation:
     def name(self, name):
         """Sets the name of this SqlserverUserForCreation.
 
-        数据库用户名称。 数据库帐号名称在1到128个字符之间，不能和系统用户名称相同。 系统用户包括：rdsadmin, rdsuser, rdsbackup, rdsmirror。
+        数据库用户名称。  数据库帐号名称在1到128个字符之间，不能和系统用户名称相同。  系统用户包括：rdsadmin, rdsuser, rdsbackup, rdsmirror。
 
         :param name: The name of this SqlserverUserForCreation.
         :type: str

@@ -26,17 +26,19 @@ class ListSqlserverDatabasesRequest:
         'x_language': 'str',
         'instance_id': 'str',
         'page': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'db_name': 'str'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
         'instance_id': 'instance_id',
         'page': 'page',
-        'limit': 'limit'
+        'limit': 'limit',
+        'db_name': 'db-name'
     }
 
-    def __init__(self, x_language=None, instance_id=None, page=None, limit=None):
+    def __init__(self, x_language=None, instance_id=None, page=None, limit=None, db_name=None):
         """ListSqlserverDatabasesRequest - a model defined in huaweicloud sdk"""
         
         
@@ -45,6 +47,7 @@ class ListSqlserverDatabasesRequest:
         self._instance_id = None
         self._page = None
         self._limit = None
+        self._db_name = None
         self.discriminator = None
 
         if x_language is not None:
@@ -52,6 +55,8 @@ class ListSqlserverDatabasesRequest:
         self.instance_id = instance_id
         self.page = page
         self.limit = limit
+        if db_name is not None:
+            self.db_name = db_name
 
     @property
     def x_language(self):
@@ -132,6 +137,26 @@ class ListSqlserverDatabasesRequest:
         :type: int
         """
         self._limit = limit
+
+    @property
+    def db_name(self):
+        """Gets the db_name of this ListSqlserverDatabasesRequest.
+
+
+        :return: The db_name of this ListSqlserverDatabasesRequest.
+        :rtype: str
+        """
+        return self._db_name
+
+    @db_name.setter
+    def db_name(self, db_name):
+        """Sets the db_name of this ListSqlserverDatabasesRequest.
+
+
+        :param db_name: The db_name of this ListSqlserverDatabasesRequest.
+        :type: str
+        """
+        self._db_name = db_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

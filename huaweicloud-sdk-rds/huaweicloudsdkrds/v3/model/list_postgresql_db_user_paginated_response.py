@@ -23,7 +23,7 @@ class ListPostgresqlDbUserPaginatedResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'users': 'list[PgUserForList]',
+        'users': 'list[PostgresqlUserForList]',
         'total_count': 'int'
     }
 
@@ -50,10 +50,10 @@ class ListPostgresqlDbUserPaginatedResponse(SdkResponse):
     def users(self):
         """Gets the users of this ListPostgresqlDbUserPaginatedResponse.
 
-        用户信息。
+        列表中每个元素表示一个数据库用户。
 
         :return: The users of this ListPostgresqlDbUserPaginatedResponse.
-        :rtype: list[PgUserForList]
+        :rtype: list[PostgresqlUserForList]
         """
         return self._users
 
@@ -61,10 +61,10 @@ class ListPostgresqlDbUserPaginatedResponse(SdkResponse):
     def users(self, users):
         """Sets the users of this ListPostgresqlDbUserPaginatedResponse.
 
-        用户信息。
+        列表中每个元素表示一个数据库用户。
 
         :param users: The users of this ListPostgresqlDbUserPaginatedResponse.
-        :type: list[PgUserForList]
+        :type: list[PostgresqlUserForList]
         """
         self._users = users
 
@@ -72,7 +72,7 @@ class ListPostgresqlDbUserPaginatedResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListPostgresqlDbUserPaginatedResponse.
 
-        总条数。
+        数据库用户总数。
 
         :return: The total_count of this ListPostgresqlDbUserPaginatedResponse.
         :rtype: int
@@ -83,7 +83,7 @@ class ListPostgresqlDbUserPaginatedResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListPostgresqlDbUserPaginatedResponse.
 
-        总条数。
+        数据库用户总数。
 
         :param total_count: The total_count of this ListPostgresqlDbUserPaginatedResponse.
         :type: int

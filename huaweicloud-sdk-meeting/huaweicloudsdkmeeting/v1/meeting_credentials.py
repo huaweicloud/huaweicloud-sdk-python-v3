@@ -6,23 +6,24 @@ from concurrent.futures.thread import ThreadPoolExecutor
 from pprint import pprint
 
 from huaweicloudsdkcore.auth.credentials import Credentials
-from huaweicloudsdkcore.exceptions.exceptions import SdkException
+from huaweicloudsdkcore.exceptions.exceptions import SdkException, ApiValueError
 from huaweicloudsdkcore.sdk_request import SdkRequest
+from huaweicloudsdkcore.signer.signer import process_canonical_query_string
 
 
 class MeetingCredentials(Credentials):
-    def __init__(self, username, password):
+    def __init__(self, user_name, user_password):
         self._token = None
         self._last_token_date = None
 
-        if username is None or username == "":
-            raise ApiValueError("username can not be null.")
+        if user_name is None or user_name == "":
+            raise ApiValueError("user_name can not be null.")
 
-        if password is None or password == "":
-            raise ApiValueError("password can not be null.")
+        if user_password is None or user_password == "":
+            raise ApiValueError("user_password can not be null.")
 
-        self._username = username
-        self._password = password
+        self._user_name = user_name
+        self._user_password = user_password
 
     def get_update_path_params(self):
         pass
@@ -39,10 +40,10 @@ class MeetingCredentials(Credentials):
         if self._token is None or self._last_token_date is None or (
                 now_time - self._last_token_date).days * 24 * 3600 + (
                 now_time - self._last_token_date).seconds > 12 * 60 * 60:
-            authorization = "Basic " + str(base64.b64encode((self._username + ':' + self._password).encode('utf-8')),
+            authorization = "Basic " + str(base64.b64encode((self._user_name + ':' + self._user_password).encode('utf-8')),
                                            'utf-8')
                                            
-            body = {'account': self._username, 'clientType': 0}
+            body = {'account': self._user_name, 'clientType': 0}
             sdk_request = SdkRequest('POST', 'https', request.host, [], '/v1/usg/acs/auth/account', [],
                                      {'Authorization': authorization, 'Content-Type': 'application/json'},
                                      json.dumps(body), [])
@@ -52,11 +53,13 @@ class MeetingCredentials(Credentials):
             self._token = content['accessToken']
             self._last_token_date = datetime.datetime.now()
             request.header_params["X-Auth-Token"] = self._token
-            request.uri = request.resource_path
+            canonical_query_string = process_canonical_query_string(request)
+            request.uri = request.resource_path + "?" + canonical_query_string if canonical_query_string != "" else request.resource_path
             return request
         else:
             request.header_params["X-Auth-Token"] = self._token
-            request.uri = request.resource_path
+            canonical_query_string = process_canonical_query_string(request)
+            request.uri = request.resource_path + "?" + canonical_query_string if canonical_query_string != "" else request.resource_path
             return request
 
 

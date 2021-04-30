@@ -69,9 +69,6 @@ from huaweicloudsdkiotda.v5.model.create_rule_action_request import CreateRuleAc
 from huaweicloudsdkiotda.v5.model.create_rule_action_response import CreateRuleActionResponse
 from huaweicloudsdkiotda.v5.model.create_rule_request import CreateRuleRequest
 from huaweicloudsdkiotda.v5.model.create_rule_response import CreateRuleResponse
-from huaweicloudsdkiotda.v5.model.create_sub_req import CreateSubReq
-from huaweicloudsdkiotda.v5.model.create_subscription_request import CreateSubscriptionRequest
-from huaweicloudsdkiotda.v5.model.create_subscription_response import CreateSubscriptionResponse
 from huaweicloudsdkiotda.v5.model.daily_timer_type import DailyTimerType
 from huaweicloudsdkiotda.v5.model.delete_application_request import DeleteApplicationRequest
 from huaweicloudsdkiotda.v5.model.delete_application_response import DeleteApplicationResponse
@@ -93,8 +90,6 @@ from huaweicloudsdkiotda.v5.model.delete_rule_action_request import DeleteRuleAc
 from huaweicloudsdkiotda.v5.model.delete_rule_action_response import DeleteRuleActionResponse
 from huaweicloudsdkiotda.v5.model.delete_rule_request import DeleteRuleRequest
 from huaweicloudsdkiotda.v5.model.delete_rule_response import DeleteRuleResponse
-from huaweicloudsdkiotda.v5.model.delete_subscription_request import DeleteSubscriptionRequest
-from huaweicloudsdkiotda.v5.model.delete_subscription_response import DeleteSubscriptionResponse
 from huaweicloudsdkiotda.v5.model.device_command_request import DeviceCommandRequest
 from huaweicloudsdkiotda.v5.model.device_data_condition import DeviceDataCondition
 from huaweicloudsdkiotda.v5.model.device_group_response_dto import DeviceGroupResponseDTO
@@ -143,8 +138,6 @@ from huaweicloudsdkiotda.v5.model.list_rule_actions_request import ListRuleActio
 from huaweicloudsdkiotda.v5.model.list_rule_actions_response import ListRuleActionsResponse
 from huaweicloudsdkiotda.v5.model.list_rules_request import ListRulesRequest
 from huaweicloudsdkiotda.v5.model.list_rules_response import ListRulesResponse
-from huaweicloudsdkiotda.v5.model.list_subscriptions_request import ListSubscriptionsRequest
-from huaweicloudsdkiotda.v5.model.list_subscriptions_response import ListSubscriptionsResponse
 from huaweicloudsdkiotda.v5.model.lts_forwarding import LtsForwarding
 from huaweicloudsdkiotda.v5.model.message_result import MessageResult
 from huaweicloudsdkiotda.v5.model.mqs_forwarding import MqsForwarding
@@ -207,13 +200,9 @@ from huaweicloudsdkiotda.v5.model.show_rule_action_request import ShowRuleAction
 from huaweicloudsdkiotda.v5.model.show_rule_action_response import ShowRuleActionResponse
 from huaweicloudsdkiotda.v5.model.show_rule_request import ShowRuleRequest
 from huaweicloudsdkiotda.v5.model.show_rule_response import ShowRuleResponse
-from huaweicloudsdkiotda.v5.model.show_subscription_request import ShowSubscriptionRequest
-from huaweicloudsdkiotda.v5.model.show_subscription_response import ShowSubscriptionResponse
 from huaweicloudsdkiotda.v5.model.simple_timer_type import SimpleTimerType
 from huaweicloudsdkiotda.v5.model.simplify_device import SimplifyDevice
 from huaweicloudsdkiotda.v5.model.strategy import Strategy
-from huaweicloudsdkiotda.v5.model.subject import Subject
-from huaweicloudsdkiotda.v5.model.subscription_item import SubscriptionItem
 from huaweicloudsdkiotda.v5.model.tag_device_request import TagDeviceRequest
 from huaweicloudsdkiotda.v5.model.tag_device_response import TagDeviceResponse
 from huaweicloudsdkiotda.v5.model.tag_v5_dto import TagV5DTO
@@ -250,7 +239,4 @@ from huaweicloudsdkiotda.v5.model.update_rule_action_response import UpdateRuleA
 from huaweicloudsdkiotda.v5.model.update_rule_req import UpdateRuleReq
 from huaweicloudsdkiotda.v5.model.update_rule_request import UpdateRuleRequest
 from huaweicloudsdkiotda.v5.model.update_rule_response import UpdateRuleResponse
-from huaweicloudsdkiotda.v5.model.update_sub_req import UpdateSubReq
-from huaweicloudsdkiotda.v5.model.update_subscription_request import UpdateSubscriptionRequest
-from huaweicloudsdkiotda.v5.model.update_subscription_response import UpdateSubscriptionResponse
 from huaweicloudsdkiotda.v5.model.verify_certificate_dto import VerifyCertificateDTO
