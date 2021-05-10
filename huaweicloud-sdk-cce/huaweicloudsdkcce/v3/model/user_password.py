@@ -23,49 +23,27 @@ class UserPassword:
     sensitive_list = []
 
     openapi_types = {
-        'password': 'str',
-        'username': 'str'
+        'username': 'str',
+        'password': 'str'
     }
 
     attribute_map = {
-        'password': 'password',
-        'username': 'username'
+        'username': 'username',
+        'password': 'password'
     }
 
-    def __init__(self, password=None, username=None):
+    def __init__(self, username=None, password=None):
         """UserPassword - a model defined in huaweicloud sdk"""
         
         
 
-        self._password = None
         self._username = None
+        self._password = None
         self.discriminator = None
 
-        self.password = password
         if username is not None:
             self.username = username
-
-    @property
-    def password(self):
-        """Gets the password of this UserPassword.
-
-        登录密码，取值请参见[创建云服务器](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212668.html)中**adminPass**参数的描述。若创建节点通过用户名密码方式，即使用该字段，则响应体中该字段作屏蔽展示。创建节点时password字段需要加盐加密，具体方法请参见[创建节点时password字段加盐加密](https://support.huaweicloud.com/bestpractice-cce/cce_bestpractice_0058.html)。 
-
-        :return: The password of this UserPassword.
-        :rtype: str
-        """
-        return self._password
-
-    @password.setter
-    def password(self, password):
-        """Sets the password of this UserPassword.
-
-        登录密码，取值请参见[创建云服务器](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212668.html)中**adminPass**参数的描述。若创建节点通过用户名密码方式，即使用该字段，则响应体中该字段作屏蔽展示。创建节点时password字段需要加盐加密，具体方法请参见[创建节点时password字段加盐加密](https://support.huaweicloud.com/bestpractice-cce/cce_bestpractice_0058.html)。 
-
-        :param password: The password of this UserPassword.
-        :type: str
-        """
-        self._password = password
+        self.password = password
 
     @property
     def username(self):
@@ -88,6 +66,28 @@ class UserPassword:
         :type: str
         """
         self._username = username
+
+    @property
+    def password(self):
+        """Gets the password of this UserPassword.
+
+        登录密码，取值请参见[[创建云服务器](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212668.html)](tag:hws)[[创建云服务器](https://support.huaweicloud.com/intl/zh-cn/api-ecs/zh-cn_topic_0020212668.html)](tag:hws_hk)中**adminPass**参数的描述。若创建节点通过用户名密码方式，即使用该字段，则响应体中该字段作屏蔽展示。创建节点时password字段需要加盐加密，具体方法请参见[[创建节点时password字段加盐加密](https://support.huaweicloud.com/bestpractice-cce/cce_bestpractice_0058.html)](tag:hws)[[创建节点时password字段加盐加密](https://support.huaweicloud.com/intl/zh-cn/bestpractice-cce/cce_bestpractice_0058.html)](tag:hws_hk)。 
+
+        :return: The password of this UserPassword.
+        :rtype: str
+        """
+        return self._password
+
+    @password.setter
+    def password(self, password):
+        """Sets the password of this UserPassword.
+
+        登录密码，取值请参见[[创建云服务器](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212668.html)](tag:hws)[[创建云服务器](https://support.huaweicloud.com/intl/zh-cn/api-ecs/zh-cn_topic_0020212668.html)](tag:hws_hk)中**adminPass**参数的描述。若创建节点通过用户名密码方式，即使用该字段，则响应体中该字段作屏蔽展示。创建节点时password字段需要加盐加密，具体方法请参见[[创建节点时password字段加盐加密](https://support.huaweicloud.com/bestpractice-cce/cce_bestpractice_0058.html)](tag:hws)[[创建节点时password字段加盐加密](https://support.huaweicloud.com/intl/zh-cn/bestpractice-cce/cce_bestpractice_0058.html)](tag:hws_hk)。 
+
+        :param password: The password of this UserPassword.
+        :type: str
+        """
+        self._password = password
 
     def to_dict(self):
         """Returns the model properties as a dict"""

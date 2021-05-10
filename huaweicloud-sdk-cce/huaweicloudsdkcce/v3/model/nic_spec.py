@@ -23,33 +23,55 @@ class NicSpec:
     sensitive_list = []
 
     openapi_types = {
+        'subnet_id': 'str',
         'fixed_ips': 'list[str]',
-        'ip_block': 'str',
-        'subnet_id': 'str'
+        'ip_block': 'str'
     }
 
     attribute_map = {
+        'subnet_id': 'subnetId',
         'fixed_ips': 'fixedIps',
-        'ip_block': 'ipBlock',
-        'subnet_id': 'subnetId'
+        'ip_block': 'ipBlock'
     }
 
-    def __init__(self, fixed_ips=None, ip_block=None, subnet_id=None):
+    def __init__(self, subnet_id=None, fixed_ips=None, ip_block=None):
         """NicSpec - a model defined in huaweicloud sdk"""
         
         
 
+        self._subnet_id = None
         self._fixed_ips = None
         self._ip_block = None
-        self._subnet_id = None
         self.discriminator = None
 
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
         if fixed_ips is not None:
             self.fixed_ips = fixed_ips
         if ip_block is not None:
             self.ip_block = ip_block
-        if subnet_id is not None:
-            self.subnet_id = subnet_id
+
+    @property
+    def subnet_id(self):
+        """Gets the subnet_id of this NicSpec.
+
+        网卡所在子网的ID。  
+
+        :return: The subnet_id of this NicSpec.
+        :rtype: str
+        """
+        return self._subnet_id
+
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        """Sets the subnet_id of this NicSpec.
+
+        网卡所在子网的ID。  
+
+        :param subnet_id: The subnet_id of this NicSpec.
+        :type: str
+        """
+        self._subnet_id = subnet_id
 
     @property
     def fixed_ips(self):
@@ -94,28 +116,6 @@ class NicSpec:
         :type: str
         """
         self._ip_block = ip_block
-
-    @property
-    def subnet_id(self):
-        """Gets the subnet_id of this NicSpec.
-
-        网卡所在子网的ID。  
-
-        :return: The subnet_id of this NicSpec.
-        :rtype: str
-        """
-        return self._subnet_id
-
-    @subnet_id.setter
-    def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this NicSpec.
-
-        网卡所在子网的ID。  
-
-        :param subnet_id: The subnet_id of this NicSpec.
-        :type: str
-        """
-        self._subnet_id = subnet_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

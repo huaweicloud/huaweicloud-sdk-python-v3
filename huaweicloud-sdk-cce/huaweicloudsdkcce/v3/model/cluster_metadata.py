@@ -23,113 +23,47 @@ class ClusterMetadata:
     sensitive_list = []
 
     openapi_types = {
-        'annotations': 'dict(str, str)',
-        'creation_timestamp': 'str',
-        'labels': 'dict(str, str)',
         'name': 'str',
         'uid': 'str',
+        'annotations': 'dict(str, str)',
+        'labels': 'dict(str, str)',
+        'creation_timestamp': 'str',
         'update_timestamp': 'str'
     }
 
     attribute_map = {
-        'annotations': 'annotations',
-        'creation_timestamp': 'creationTimestamp',
-        'labels': 'labels',
         'name': 'name',
         'uid': 'uid',
+        'annotations': 'annotations',
+        'labels': 'labels',
+        'creation_timestamp': 'creationTimestamp',
         'update_timestamp': 'updateTimestamp'
     }
 
-    def __init__(self, annotations=None, creation_timestamp=None, labels=None, name=None, uid=None, update_timestamp=None):
+    def __init__(self, name=None, uid=None, annotations=None, labels=None, creation_timestamp=None, update_timestamp=None):
         """ClusterMetadata - a model defined in huaweicloud sdk"""
         
         
 
-        self._annotations = None
-        self._creation_timestamp = None
-        self._labels = None
         self._name = None
         self._uid = None
+        self._annotations = None
+        self._labels = None
+        self._creation_timestamp = None
         self._update_timestamp = None
         self.discriminator = None
 
-        if annotations is not None:
-            self.annotations = annotations
-        if creation_timestamp is not None:
-            self.creation_timestamp = creation_timestamp
-        if labels is not None:
-            self.labels = labels
         self.name = name
         if uid is not None:
             self.uid = uid
+        if annotations is not None:
+            self.annotations = annotations
+        if labels is not None:
+            self.labels = labels
+        if creation_timestamp is not None:
+            self.creation_timestamp = creation_timestamp
         if update_timestamp is not None:
             self.update_timestamp = update_timestamp
-
-    @property
-    def annotations(self):
-        """Gets the annotations of this ClusterMetadata.
-
-        集群注解，由key/value组成：  ``` \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" } ```  > Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 > 该字段不会被数据库保存，当前仅用于指定集群待安装插件。
-
-        :return: The annotations of this ClusterMetadata.
-        :rtype: dict(str, str)
-        """
-        return self._annotations
-
-    @annotations.setter
-    def annotations(self, annotations):
-        """Sets the annotations of this ClusterMetadata.
-
-        集群注解，由key/value组成：  ``` \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" } ```  > Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 > 该字段不会被数据库保存，当前仅用于指定集群待安装插件。
-
-        :param annotations: The annotations of this ClusterMetadata.
-        :type: dict(str, str)
-        """
-        self._annotations = annotations
-
-    @property
-    def creation_timestamp(self):
-        """Gets the creation_timestamp of this ClusterMetadata.
-
-        集群创建时间
-
-        :return: The creation_timestamp of this ClusterMetadata.
-        :rtype: str
-        """
-        return self._creation_timestamp
-
-    @creation_timestamp.setter
-    def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this ClusterMetadata.
-
-        集群创建时间
-
-        :param creation_timestamp: The creation_timestamp of this ClusterMetadata.
-        :type: str
-        """
-        self._creation_timestamp = creation_timestamp
-
-    @property
-    def labels(self):
-        """Gets the labels of this ClusterMetadata.
-
-        集群标签，key/value对格式。  >  该字段值由系统自动生成，用于升级时前端识别集群支持的特性开关，用户指定无效。
-
-        :return: The labels of this ClusterMetadata.
-        :rtype: dict(str, str)
-        """
-        return self._labels
-
-    @labels.setter
-    def labels(self, labels):
-        """Sets the labels of this ClusterMetadata.
-
-        集群标签，key/value对格式。  >  该字段值由系统自动生成，用于升级时前端识别集群支持的特性开关，用户指定无效。
-
-        :param labels: The labels of this ClusterMetadata.
-        :type: dict(str, str)
-        """
-        self._labels = labels
 
     @property
     def name(self):
@@ -174,6 +108,72 @@ class ClusterMetadata:
         :type: str
         """
         self._uid = uid
+
+    @property
+    def annotations(self):
+        """Gets the annotations of this ClusterMetadata.
+
+        集群注解，由key/value组成：   ```  \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" }  ```   >    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 >    - 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 
+
+        :return: The annotations of this ClusterMetadata.
+        :rtype: dict(str, str)
+        """
+        return self._annotations
+
+    @annotations.setter
+    def annotations(self, annotations):
+        """Sets the annotations of this ClusterMetadata.
+
+        集群注解，由key/value组成：   ```  \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" }  ```   >    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 >    - 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 
+
+        :param annotations: The annotations of this ClusterMetadata.
+        :type: dict(str, str)
+        """
+        self._annotations = annotations
+
+    @property
+    def labels(self):
+        """Gets the labels of this ClusterMetadata.
+
+        集群标签，key/value对格式。  >  该字段值由系统自动生成，用于升级时前端识别集群支持的特性开关，用户指定无效。
+
+        :return: The labels of this ClusterMetadata.
+        :rtype: dict(str, str)
+        """
+        return self._labels
+
+    @labels.setter
+    def labels(self, labels):
+        """Sets the labels of this ClusterMetadata.
+
+        集群标签，key/value对格式。  >  该字段值由系统自动生成，用于升级时前端识别集群支持的特性开关，用户指定无效。
+
+        :param labels: The labels of this ClusterMetadata.
+        :type: dict(str, str)
+        """
+        self._labels = labels
+
+    @property
+    def creation_timestamp(self):
+        """Gets the creation_timestamp of this ClusterMetadata.
+
+        集群创建时间
+
+        :return: The creation_timestamp of this ClusterMetadata.
+        :rtype: str
+        """
+        return self._creation_timestamp
+
+    @creation_timestamp.setter
+    def creation_timestamp(self, creation_timestamp):
+        """Sets the creation_timestamp of this ClusterMetadata.
+
+        集群创建时间
+
+        :param creation_timestamp: The creation_timestamp of this ClusterMetadata.
+        :type: str
+        """
+        self._creation_timestamp = creation_timestamp
 
     @property
     def update_timestamp(self):

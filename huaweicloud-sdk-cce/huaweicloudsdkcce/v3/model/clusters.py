@@ -23,48 +23,28 @@ class Clusters:
     sensitive_list = []
 
     openapi_types = {
-        'cluster': 'ClusterCert',
-        'name': 'str'
+        'name': 'str',
+        'cluster': 'ClusterCert'
     }
 
     attribute_map = {
-        'cluster': 'cluster',
-        'name': 'name'
+        'name': 'name',
+        'cluster': 'cluster'
     }
 
-    def __init__(self, cluster=None, name=None):
+    def __init__(self, name=None, cluster=None):
         """Clusters - a model defined in huaweicloud sdk"""
         
         
 
-        self._cluster = None
         self._name = None
+        self._cluster = None
         self.discriminator = None
 
-        if cluster is not None:
-            self.cluster = cluster
         if name is not None:
             self.name = name
-
-    @property
-    def cluster(self):
-        """Gets the cluster of this Clusters.
-
-
-        :return: The cluster of this Clusters.
-        :rtype: ClusterCert
-        """
-        return self._cluster
-
-    @cluster.setter
-    def cluster(self, cluster):
-        """Sets the cluster of this Clusters.
-
-
-        :param cluster: The cluster of this Clusters.
-        :type: ClusterCert
-        """
-        self._cluster = cluster
+        if cluster is not None:
+            self.cluster = cluster
 
     @property
     def name(self):
@@ -87,6 +67,26 @@ class Clusters:
         :type: str
         """
         self._name = name
+
+    @property
+    def cluster(self):
+        """Gets the cluster of this Clusters.
+
+
+        :return: The cluster of this Clusters.
+        :rtype: ClusterCert
+        """
+        return self._cluster
+
+    @cluster.setter
+    def cluster(self, cluster):
+        """Sets the cluster of this Clusters.
+
+
+        :param cluster: The cluster of this Clusters.
+        :type: ClusterCert
+        """
+        self._cluster = cluster
 
     def to_dict(self):
         """Returns the model properties as a dict"""

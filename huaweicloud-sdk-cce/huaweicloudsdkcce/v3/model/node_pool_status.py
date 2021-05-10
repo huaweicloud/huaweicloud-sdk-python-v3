@@ -24,32 +24,32 @@ class NodePoolStatus:
 
     openapi_types = {
         'current_node': 'int',
-        'job_id': 'str',
-        'phase': 'str'
+        'phase': 'str',
+        'job_id': 'str'
     }
 
     attribute_map = {
         'current_node': 'currentNode',
-        'job_id': 'jobId',
-        'phase': 'phase'
+        'phase': 'phase',
+        'job_id': 'jobId'
     }
 
-    def __init__(self, current_node=None, job_id=None, phase=None):
+    def __init__(self, current_node=None, phase=None, job_id=None):
         """NodePoolStatus - a model defined in huaweicloud sdk"""
         
         
 
         self._current_node = None
-        self._job_id = None
         self._phase = None
+        self._job_id = None
         self.discriminator = None
 
         if current_node is not None:
             self.current_node = current_node
-        if job_id is not None:
-            self.job_id = job_id
         if phase is not None:
             self.phase = phase
+        if job_id is not None:
+            self.job_id = job_id
 
     @property
     def current_node(self):
@@ -74,6 +74,28 @@ class NodePoolStatus:
         self._current_node = current_node
 
     @property
+    def phase(self):
+        """Gets the phase of this NodePoolStatus.
+
+        节点池状态，为空时节点池处于可用状态。 - Synchronizing：伸缩中 - Synchronized：节点池更新失败时会被置于此状态 - SoldOut：节点资源售罄 - Deleting：删除中 - Error：错误 
+
+        :return: The phase of this NodePoolStatus.
+        :rtype: str
+        """
+        return self._phase
+
+    @phase.setter
+    def phase(self, phase):
+        """Sets the phase of this NodePoolStatus.
+
+        节点池状态，为空时节点池处于可用状态。 - Synchronizing：伸缩中 - Synchronized：节点池更新失败时会被置于此状态 - SoldOut：节点资源售罄 - Deleting：删除中 - Error：错误 
+
+        :param phase: The phase of this NodePoolStatus.
+        :type: str
+        """
+        self._phase = phase
+
+    @property
     def job_id(self):
         """Gets the job_id of this NodePoolStatus.
 
@@ -94,28 +116,6 @@ class NodePoolStatus:
         :type: str
         """
         self._job_id = job_id
-
-    @property
-    def phase(self):
-        """Gets the phase of this NodePoolStatus.
-
-        节点池状态，可为空。
-
-        :return: The phase of this NodePoolStatus.
-        :rtype: str
-        """
-        return self._phase
-
-    @phase.setter
-    def phase(self, phase):
-        """Sets the phase of this NodePoolStatus.
-
-        节点池状态，可为空。
-
-        :param phase: The phase of this NodePoolStatus.
-        :type: str
-        """
-        self._phase = phase
 
     def to_dict(self):
         """Returns the model properties as a dict"""

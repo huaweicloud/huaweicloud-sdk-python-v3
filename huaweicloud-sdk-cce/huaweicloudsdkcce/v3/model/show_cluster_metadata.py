@@ -23,113 +23,47 @@ class ShowClusterMetadata:
     sensitive_list = []
 
     openapi_types = {
-        'annotations': 'dict(str, str)',
-        'creation_timestamp': 'str',
-        'labels': 'str',
         'name': 'str',
         'uid': 'str',
-        'update_timestamp': 'str'
+        'annotations': 'dict(str, str)',
+        'creation_timestamp': 'str',
+        'update_timestamp': 'str',
+        'labels': 'str'
     }
 
     attribute_map = {
-        'annotations': 'annotations',
-        'creation_timestamp': 'creationTimestamp',
-        'labels': 'labels',
         'name': 'name',
         'uid': 'uid',
-        'update_timestamp': 'updateTimestamp'
+        'annotations': 'annotations',
+        'creation_timestamp': 'creationTimestamp',
+        'update_timestamp': 'updateTimestamp',
+        'labels': 'labels'
     }
 
-    def __init__(self, annotations=None, creation_timestamp=None, labels=None, name=None, uid=None, update_timestamp=None):
+    def __init__(self, name=None, uid=None, annotations=None, creation_timestamp=None, update_timestamp=None, labels=None):
         """ShowClusterMetadata - a model defined in huaweicloud sdk"""
         
         
 
-        self._annotations = None
-        self._creation_timestamp = None
-        self._labels = None
         self._name = None
         self._uid = None
+        self._annotations = None
+        self._creation_timestamp = None
         self._update_timestamp = None
+        self._labels = None
         self.discriminator = None
 
+        self.name = name
+        if uid is not None:
+            self.uid = uid
         if annotations is not None:
             self.annotations = annotations
         if creation_timestamp is not None:
             self.creation_timestamp = creation_timestamp
-        if labels is not None:
-            self.labels = labels
-        self.name = name
-        if uid is not None:
-            self.uid = uid
         if update_timestamp is not None:
             self.update_timestamp = update_timestamp
-
-    @property
-    def annotations(self):
-        """Gets the annotations of this ShowClusterMetadata.
-
-        集群注解。此字段与创建时的annotations无必然关系，查询时根据查询参数返回集群相关信息存入该字段中。  当查询参数detail设置为true时，该注解包含集群下节点总数(totalNodesNumber)、正常节点数(activeNodesNumber)、CPU总量(totalNodesCPU)、内存总量(totalNodesMemory)和已安装插件名称(installedAddonInstances)。
-
-        :return: The annotations of this ShowClusterMetadata.
-        :rtype: dict(str, str)
-        """
-        return self._annotations
-
-    @annotations.setter
-    def annotations(self, annotations):
-        """Sets the annotations of this ShowClusterMetadata.
-
-        集群注解。此字段与创建时的annotations无必然关系，查询时根据查询参数返回集群相关信息存入该字段中。  当查询参数detail设置为true时，该注解包含集群下节点总数(totalNodesNumber)、正常节点数(activeNodesNumber)、CPU总量(totalNodesCPU)、内存总量(totalNodesMemory)和已安装插件名称(installedAddonInstances)。
-
-        :param annotations: The annotations of this ShowClusterMetadata.
-        :type: dict(str, str)
-        """
-        self._annotations = annotations
-
-    @property
-    def creation_timestamp(self):
-        """Gets the creation_timestamp of this ShowClusterMetadata.
-
-        集群创建时间，集群创建成功后自动生成，填写无效
-
-        :return: The creation_timestamp of this ShowClusterMetadata.
-        :rtype: str
-        """
-        return self._creation_timestamp
-
-    @creation_timestamp.setter
-    def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this ShowClusterMetadata.
-
-        集群创建时间，集群创建成功后自动生成，填写无效
-
-        :param creation_timestamp: The creation_timestamp of this ShowClusterMetadata.
-        :type: str
-        """
-        self._creation_timestamp = creation_timestamp
-
-    @property
-    def labels(self):
-        """Gets the labels of this ShowClusterMetadata.
-
-        集群标签，key/value对格式。  该字段值由系统自动生成，用于升级时前端识别集群支持的特性开关，用户指定无效，与创建时的labels无必然关系。
-
-        :return: The labels of this ShowClusterMetadata.
-        :rtype: str
-        """
-        return self._labels
-
-    @labels.setter
-    def labels(self, labels):
-        """Sets the labels of this ShowClusterMetadata.
-
-        集群标签，key/value对格式。  该字段值由系统自动生成，用于升级时前端识别集群支持的特性开关，用户指定无效，与创建时的labels无必然关系。
-
-        :param labels: The labels of this ShowClusterMetadata.
-        :type: str
-        """
-        self._labels = labels
+        if labels is not None:
+            self.labels = labels
 
     @property
     def name(self):
@@ -176,6 +110,50 @@ class ShowClusterMetadata:
         self._uid = uid
 
     @property
+    def annotations(self):
+        """Gets the annotations of this ShowClusterMetadata.
+
+        集群注解。此字段与创建时的annotations无必然关系，查询时根据查询参数返回集群相关信息存入该字段中。  当查询参数detail设置为true时，该注解包含集群下节点总数(totalNodesNumber)、正常节点数(activeNodesNumber)、CPU总量(totalNodesCPU)、内存总量(totalNodesMemory)和已安装插件名称(installedAddonInstances)。
+
+        :return: The annotations of this ShowClusterMetadata.
+        :rtype: dict(str, str)
+        """
+        return self._annotations
+
+    @annotations.setter
+    def annotations(self, annotations):
+        """Sets the annotations of this ShowClusterMetadata.
+
+        集群注解。此字段与创建时的annotations无必然关系，查询时根据查询参数返回集群相关信息存入该字段中。  当查询参数detail设置为true时，该注解包含集群下节点总数(totalNodesNumber)、正常节点数(activeNodesNumber)、CPU总量(totalNodesCPU)、内存总量(totalNodesMemory)和已安装插件名称(installedAddonInstances)。
+
+        :param annotations: The annotations of this ShowClusterMetadata.
+        :type: dict(str, str)
+        """
+        self._annotations = annotations
+
+    @property
+    def creation_timestamp(self):
+        """Gets the creation_timestamp of this ShowClusterMetadata.
+
+        集群创建时间，集群创建成功后自动生成，填写无效
+
+        :return: The creation_timestamp of this ShowClusterMetadata.
+        :rtype: str
+        """
+        return self._creation_timestamp
+
+    @creation_timestamp.setter
+    def creation_timestamp(self, creation_timestamp):
+        """Sets the creation_timestamp of this ShowClusterMetadata.
+
+        集群创建时间，集群创建成功后自动生成，填写无效
+
+        :param creation_timestamp: The creation_timestamp of this ShowClusterMetadata.
+        :type: str
+        """
+        self._creation_timestamp = creation_timestamp
+
+    @property
     def update_timestamp(self):
         """Gets the update_timestamp of this ShowClusterMetadata.
 
@@ -196,6 +174,28 @@ class ShowClusterMetadata:
         :type: str
         """
         self._update_timestamp = update_timestamp
+
+    @property
+    def labels(self):
+        """Gets the labels of this ShowClusterMetadata.
+
+        集群标签，key/value对格式。  该字段值由系统自动生成，用于升级时前端识别集群支持的特性开关，用户指定无效，与创建时的labels无必然关系。
+
+        :return: The labels of this ShowClusterMetadata.
+        :rtype: str
+        """
+        return self._labels
+
+    @labels.setter
+    def labels(self, labels):
+        """Sets the labels of this ShowClusterMetadata.
+
+        集群标签，key/value对格式。  该字段值由系统自动生成，用于升级时前端识别集群支持的特性开关，用户指定无效，与创建时的labels无必然关系。
+
+        :param labels: The labels of this ShowClusterMetadata.
+        :type: str
+        """
+        self._labels = labels
 
     def to_dict(self):
         """Returns the model properties as a dict"""

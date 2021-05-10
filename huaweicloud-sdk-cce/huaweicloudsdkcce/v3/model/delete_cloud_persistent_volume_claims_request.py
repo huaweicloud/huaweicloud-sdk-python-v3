@@ -25,27 +25,37 @@ class DeleteCloudPersistentVolumeClaimsRequest:
     openapi_types = {
         'name': 'str',
         'namespace': 'str',
+        'delete_volume': 'str',
+        'storage_type': 'str',
         'x_cluster_id': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'namespace': 'namespace',
+        'delete_volume': 'deleteVolume',
+        'storage_type': 'storageType',
         'x_cluster_id': 'X-Cluster-ID'
     }
 
-    def __init__(self, name=None, namespace=None, x_cluster_id=None):
+    def __init__(self, name=None, namespace=None, delete_volume=None, storage_type=None, x_cluster_id=None):
         """DeleteCloudPersistentVolumeClaimsRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._name = None
         self._namespace = None
+        self._delete_volume = None
+        self._storage_type = None
         self._x_cluster_id = None
         self.discriminator = None
 
         self.name = name
         self.namespace = namespace
+        if delete_volume is not None:
+            self.delete_volume = delete_volume
+        if storage_type is not None:
+            self.storage_type = storage_type
         if x_cluster_id is not None:
             self.x_cluster_id = x_cluster_id
 
@@ -88,6 +98,46 @@ class DeleteCloudPersistentVolumeClaimsRequest:
         :type: str
         """
         self._namespace = namespace
+
+    @property
+    def delete_volume(self):
+        """Gets the delete_volume of this DeleteCloudPersistentVolumeClaimsRequest.
+
+
+        :return: The delete_volume of this DeleteCloudPersistentVolumeClaimsRequest.
+        :rtype: str
+        """
+        return self._delete_volume
+
+    @delete_volume.setter
+    def delete_volume(self, delete_volume):
+        """Sets the delete_volume of this DeleteCloudPersistentVolumeClaimsRequest.
+
+
+        :param delete_volume: The delete_volume of this DeleteCloudPersistentVolumeClaimsRequest.
+        :type: str
+        """
+        self._delete_volume = delete_volume
+
+    @property
+    def storage_type(self):
+        """Gets the storage_type of this DeleteCloudPersistentVolumeClaimsRequest.
+
+
+        :return: The storage_type of this DeleteCloudPersistentVolumeClaimsRequest.
+        :rtype: str
+        """
+        return self._storage_type
+
+    @storage_type.setter
+    def storage_type(self, storage_type):
+        """Sets the storage_type of this DeleteCloudPersistentVolumeClaimsRequest.
+
+
+        :param storage_type: The storage_type of this DeleteCloudPersistentVolumeClaimsRequest.
+        :type: str
+        """
+        self._storage_type = storage_type
 
     @property
     def x_cluster_id(self):

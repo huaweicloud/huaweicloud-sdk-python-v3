@@ -23,117 +23,161 @@ class ClusterStatus:
     sensitive_list = []
 
     openapi_types = {
-        'delete_option': 'object',
-        'delete_status': 'object',
+        'phase': 'str',
+        'job_id': 'str',
+        'reason': 'str',
+        'message': 'str',
         'endpoints': 'list[ClusterEndpoints]',
         'is_locked': 'bool',
-        'job_id': 'str',
         'lock_scene': 'str',
         'lock_source': 'str',
         'lock_source_id': 'str',
-        'message': 'str',
-        'phase': 'str',
-        'reason': 'str'
+        'delete_option': 'object',
+        'delete_status': 'object'
     }
 
     attribute_map = {
-        'delete_option': 'deleteOption',
-        'delete_status': 'deleteStatus',
+        'phase': 'phase',
+        'job_id': 'jobID',
+        'reason': 'reason',
+        'message': 'message',
         'endpoints': 'endpoints',
         'is_locked': 'isLocked',
-        'job_id': 'jobID',
         'lock_scene': 'lockScene',
         'lock_source': 'lockSource',
         'lock_source_id': 'lockSourceId',
-        'message': 'message',
-        'phase': 'phase',
-        'reason': 'reason'
+        'delete_option': 'deleteOption',
+        'delete_status': 'deleteStatus'
     }
 
-    def __init__(self, delete_option=None, delete_status=None, endpoints=None, is_locked=None, job_id=None, lock_scene=None, lock_source=None, lock_source_id=None, message=None, phase=None, reason=None):
+    def __init__(self, phase=None, job_id=None, reason=None, message=None, endpoints=None, is_locked=None, lock_scene=None, lock_source=None, lock_source_id=None, delete_option=None, delete_status=None):
         """ClusterStatus - a model defined in huaweicloud sdk"""
         
         
 
-        self._delete_option = None
-        self._delete_status = None
+        self._phase = None
+        self._job_id = None
+        self._reason = None
+        self._message = None
         self._endpoints = None
         self._is_locked = None
-        self._job_id = None
         self._lock_scene = None
         self._lock_source = None
         self._lock_source_id = None
-        self._message = None
-        self._phase = None
-        self._reason = None
+        self._delete_option = None
+        self._delete_status = None
         self.discriminator = None
 
-        if delete_option is not None:
-            self.delete_option = delete_option
-        if delete_status is not None:
-            self.delete_status = delete_status
+        if phase is not None:
+            self.phase = phase
+        if job_id is not None:
+            self.job_id = job_id
+        if reason is not None:
+            self.reason = reason
+        if message is not None:
+            self.message = message
         if endpoints is not None:
             self.endpoints = endpoints
         if is_locked is not None:
             self.is_locked = is_locked
-        if job_id is not None:
-            self.job_id = job_id
         if lock_scene is not None:
             self.lock_scene = lock_scene
         if lock_source is not None:
             self.lock_source = lock_source
         if lock_source_id is not None:
             self.lock_source_id = lock_source_id
-        if message is not None:
-            self.message = message
-        if phase is not None:
-            self.phase = phase
-        if reason is not None:
-            self.reason = reason
+        if delete_option is not None:
+            self.delete_option = delete_option
+        if delete_status is not None:
+            self.delete_status = delete_status
 
     @property
-    def delete_option(self):
-        """Gets the delete_option of this ClusterStatus.
+    def phase(self):
+        """Gets the phase of this ClusterStatus.
 
-        删除配置状态（仅删除请求响应包含）
+        集群状态，取值如下 - Available：可用，表示集群处于正常状态。 - Unavailable：不可用，表示集群异常，需手动删除或联系管理员删除。 - ScalingUp：扩容中，表示集群正处于扩容过程中。 - ScalingDown：缩容中，表示集群正处于缩容过程中。 - Creating：创建中，表示集群正处于创建过程中。 - Deleting：删除中，表示集群正处于删除过程中。 - Upgrading：升级中，表示集群正处于升级过程中。 - Resizing：规格变更中，表示集群正处于变更规格中。 - Empty：集群无任何资源
 
-        :return: The delete_option of this ClusterStatus.
-        :rtype: object
+        :return: The phase of this ClusterStatus.
+        :rtype: str
         """
-        return self._delete_option
+        return self._phase
 
-    @delete_option.setter
-    def delete_option(self, delete_option):
-        """Sets the delete_option of this ClusterStatus.
+    @phase.setter
+    def phase(self, phase):
+        """Sets the phase of this ClusterStatus.
 
-        删除配置状态（仅删除请求响应包含）
+        集群状态，取值如下 - Available：可用，表示集群处于正常状态。 - Unavailable：不可用，表示集群异常，需手动删除或联系管理员删除。 - ScalingUp：扩容中，表示集群正处于扩容过程中。 - ScalingDown：缩容中，表示集群正处于缩容过程中。 - Creating：创建中，表示集群正处于创建过程中。 - Deleting：删除中，表示集群正处于删除过程中。 - Upgrading：升级中，表示集群正处于升级过程中。 - Resizing：规格变更中，表示集群正处于变更规格中。 - Empty：集群无任何资源
 
-        :param delete_option: The delete_option of this ClusterStatus.
-        :type: object
+        :param phase: The phase of this ClusterStatus.
+        :type: str
         """
-        self._delete_option = delete_option
+        self._phase = phase
 
     @property
-    def delete_status(self):
-        """Gets the delete_status of this ClusterStatus.
+    def job_id(self):
+        """Gets the job_id of this ClusterStatus.
 
-        删除状态信息（仅删除请求响应包含）
+        作业ID
 
-        :return: The delete_status of this ClusterStatus.
-        :rtype: object
+        :return: The job_id of this ClusterStatus.
+        :rtype: str
         """
-        return self._delete_status
+        return self._job_id
 
-    @delete_status.setter
-    def delete_status(self, delete_status):
-        """Sets the delete_status of this ClusterStatus.
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this ClusterStatus.
 
-        删除状态信息（仅删除请求响应包含）
+        作业ID
 
-        :param delete_status: The delete_status of this ClusterStatus.
-        :type: object
+        :param job_id: The job_id of this ClusterStatus.
+        :type: str
         """
-        self._delete_status = delete_status
+        self._job_id = job_id
+
+    @property
+    def reason(self):
+        """Gets the reason of this ClusterStatus.
+
+        集群变为当前状态的原因，在集群在非“Available”状态下时，会返回此参数。
+
+        :return: The reason of this ClusterStatus.
+        :rtype: str
+        """
+        return self._reason
+
+    @reason.setter
+    def reason(self, reason):
+        """Sets the reason of this ClusterStatus.
+
+        集群变为当前状态的原因，在集群在非“Available”状态下时，会返回此参数。
+
+        :param reason: The reason of this ClusterStatus.
+        :type: str
+        """
+        self._reason = reason
+
+    @property
+    def message(self):
+        """Gets the message of this ClusterStatus.
+
+        集群变为当前状态的原因的详细信息，在集群在非“Available”状态下时，会返回此参数。
+
+        :return: The message of this ClusterStatus.
+        :rtype: str
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        """Sets the message of this ClusterStatus.
+
+        集群变为当前状态的原因的详细信息，在集群在非“Available”状态下时，会返回此参数。
+
+        :param message: The message of this ClusterStatus.
+        :type: str
+        """
+        self._message = message
 
     @property
     def endpoints(self):
@@ -178,28 +222,6 @@ class ClusterStatus:
         :type: bool
         """
         self._is_locked = is_locked
-
-    @property
-    def job_id(self):
-        """Gets the job_id of this ClusterStatus.
-
-        作业ID
-
-        :return: The job_id of this ClusterStatus.
-        :rtype: str
-        """
-        return self._job_id
-
-    @job_id.setter
-    def job_id(self, job_id):
-        """Sets the job_id of this ClusterStatus.
-
-        作业ID
-
-        :param job_id: The job_id of this ClusterStatus.
-        :type: str
-        """
-        self._job_id = job_id
 
     @property
     def lock_scene(self):
@@ -268,70 +290,48 @@ class ClusterStatus:
         self._lock_source_id = lock_source_id
 
     @property
-    def message(self):
-        """Gets the message of this ClusterStatus.
+    def delete_option(self):
+        """Gets the delete_option of this ClusterStatus.
 
-        集群变为当前状态的原因的详细信息，在集群在非“Available”状态下时，会返回此参数。
+        删除配置状态（仅删除请求响应包含）
 
-        :return: The message of this ClusterStatus.
-        :rtype: str
+        :return: The delete_option of this ClusterStatus.
+        :rtype: object
         """
-        return self._message
+        return self._delete_option
 
-    @message.setter
-    def message(self, message):
-        """Sets the message of this ClusterStatus.
+    @delete_option.setter
+    def delete_option(self, delete_option):
+        """Sets the delete_option of this ClusterStatus.
 
-        集群变为当前状态的原因的详细信息，在集群在非“Available”状态下时，会返回此参数。
+        删除配置状态（仅删除请求响应包含）
 
-        :param message: The message of this ClusterStatus.
-        :type: str
+        :param delete_option: The delete_option of this ClusterStatus.
+        :type: object
         """
-        self._message = message
+        self._delete_option = delete_option
 
     @property
-    def phase(self):
-        """Gets the phase of this ClusterStatus.
+    def delete_status(self):
+        """Gets the delete_status of this ClusterStatus.
 
-        集群状态，取值如下 - Available：可用，表示集群处于正常状态。 - Unavailable：不可用，表示集群异常，需手动删除或联系管理员删除。 - ScalingUp：扩容中，表示集群正处于扩容过程中。 - ScalingDown：缩容中，表示集群正处于缩容过程中。 - Creating：创建中，表示集群正处于创建过程中。 - Deleting：删除中，表示集群正处于删除过程中。 - Upgrading：升级中，表示集群正处于升级过程中。 - Resizing：规格变更中，表示集群正处于变更规格中。 - Empty：集群无任何资源
+        删除状态信息（仅删除请求响应包含）
 
-        :return: The phase of this ClusterStatus.
-        :rtype: str
+        :return: The delete_status of this ClusterStatus.
+        :rtype: object
         """
-        return self._phase
+        return self._delete_status
 
-    @phase.setter
-    def phase(self, phase):
-        """Sets the phase of this ClusterStatus.
+    @delete_status.setter
+    def delete_status(self, delete_status):
+        """Sets the delete_status of this ClusterStatus.
 
-        集群状态，取值如下 - Available：可用，表示集群处于正常状态。 - Unavailable：不可用，表示集群异常，需手动删除或联系管理员删除。 - ScalingUp：扩容中，表示集群正处于扩容过程中。 - ScalingDown：缩容中，表示集群正处于缩容过程中。 - Creating：创建中，表示集群正处于创建过程中。 - Deleting：删除中，表示集群正处于删除过程中。 - Upgrading：升级中，表示集群正处于升级过程中。 - Resizing：规格变更中，表示集群正处于变更规格中。 - Empty：集群无任何资源
+        删除状态信息（仅删除请求响应包含）
 
-        :param phase: The phase of this ClusterStatus.
-        :type: str
+        :param delete_status: The delete_status of this ClusterStatus.
+        :type: object
         """
-        self._phase = phase
-
-    @property
-    def reason(self):
-        """Gets the reason of this ClusterStatus.
-
-        集群变为当前状态的原因，在集群在非“Available”状态下时，会返回此参数。
-
-        :return: The reason of this ClusterStatus.
-        :rtype: str
-        """
-        return self._reason
-
-    @reason.setter
-    def reason(self, reason):
-        """Sets the reason of this ClusterStatus.
-
-        集群变为当前状态的原因，在集群在非“Available”状态下时，会返回此参数。
-
-        :param reason: The reason of this ClusterStatus.
-        :type: str
-        """
-        self._reason = reason
+        self._delete_status = delete_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

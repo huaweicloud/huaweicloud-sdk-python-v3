@@ -1807,9 +1807,9 @@ class RdsClient(Client):
 
 
     def list_off_site_backups(self, request):
-        """获取跨区域备份列表
+        """查询跨区域备份列表
 
-        获取跨区域备份列表。
+        查询跨区域备份列表。
 
         :param ListOffSiteBackupsRequest request
         :return: ListOffSiteBackupsResponse
@@ -1817,9 +1817,9 @@ class RdsClient(Client):
         return self.list_off_site_backups_with_http_info(request)
 
     def list_off_site_backups_with_http_info(self, request):
-        """获取跨区域备份列表
+        """查询跨区域备份列表
 
-        获取跨区域备份列表。
+        查询跨区域备份列表。
 
         :param ListOffSiteBackupsRequest request
         :return: ListOffSiteBackupsResponse
@@ -1947,9 +1947,9 @@ class RdsClient(Client):
 
 
     def list_off_site_restore_times(self, request):
-        """查询跨区域可恢复时间段
+        """查询跨区域备份可恢复时间段
 
-        查询跨区域可恢复时间段。 如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
+        查询跨区域备份可恢复时间段。 如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
 
         :param ListOffSiteRestoreTimesRequest request
         :return: ListOffSiteRestoreTimesResponse
@@ -1957,9 +1957,9 @@ class RdsClient(Client):
         return self.list_off_site_restore_times_with_http_info(request)
 
     def list_off_site_restore_times_with_http_info(self, request):
-        """查询跨区域可恢复时间段
+        """查询跨区域备份可恢复时间段
 
-        查询跨区域可恢复时间段。 如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
+        查询跨区域备份可恢复时间段。 如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
 
         :param ListOffSiteRestoreTimesRequest request
         :return: ListOffSiteRestoreTimesResponse
@@ -2430,9 +2430,9 @@ class RdsClient(Client):
 
 
     def restore_tables(self, request):
-        """表级时间点恢复
+        """表级时间点恢复(MySQL)
 
-        表级时间点恢复。
+        表级时间点恢复(MySQL)。
 
         :param RestoreTablesRequest request
         :return: RestoreTablesResponse
@@ -2440,9 +2440,9 @@ class RdsClient(Client):
         return self.restore_tables_with_http_info(request)
 
     def restore_tables_with_http_info(self, request):
-        """表级时间点恢复
+        """表级时间点恢复(MySQL)
 
-        表级时间点恢复。
+        表级时间点恢复(MySQL)。
 
         :param RestoreTablesRequest request
         :return: RestoreTablesResponse

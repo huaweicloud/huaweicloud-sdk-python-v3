@@ -49,7 +49,7 @@ class NodePoolMetadata:
     def name(self):
         """Gets the name of this NodePoolMetadata.
 
-        节点名池名称。  > 命名规则： >  >  - 以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-50位，且不能以中划线(-)结尾。 >  >  - 不允许创建名为 DefaultPool 的节点池。
+        节点名池名称。  > 命名规则： > >  - 以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-50位，且不能以中划线(-)结尾。 > >  - 不允许创建名为 DefaultPool 的节点池。
 
         :return: The name of this NodePoolMetadata.
         :rtype: str
@@ -60,7 +60,7 @@ class NodePoolMetadata:
     def name(self, name):
         """Sets the name of this NodePoolMetadata.
 
-        节点名池名称。  > 命名规则： >  >  - 以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-50位，且不能以中划线(-)结尾。 >  >  - 不允许创建名为 DefaultPool 的节点池。
+        节点名池名称。  > 命名规则： > >  - 以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-50位，且不能以中划线(-)结尾。 > >  - 不允许创建名为 DefaultPool 的节点池。
 
         :param name: The name of this NodePoolMetadata.
         :type: str

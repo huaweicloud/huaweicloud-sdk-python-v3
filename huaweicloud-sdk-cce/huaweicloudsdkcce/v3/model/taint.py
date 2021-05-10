@@ -23,55 +23,33 @@ class Taint:
     sensitive_list = []
 
     openapi_types = {
-        'effect': 'str',
         'key': 'str',
-        'value': 'str'
+        'value': 'str',
+        'effect': 'str'
     }
 
     attribute_map = {
-        'effect': 'effect',
         'key': 'key',
-        'value': 'value'
+        'value': 'value',
+        'effect': 'effect'
     }
 
-    def __init__(self, effect=None, key=None, value=None):
+    def __init__(self, key=None, value=None, effect=None):
         """Taint - a model defined in huaweicloud sdk"""
         
         
 
-        self._effect = None
         self._key = None
         self._value = None
+        self._effect = None
         self.discriminator = None
 
-        if effect is not None:
-            self.effect = effect
         if key is not None:
             self.key = key
         if value is not None:
             self.value = value
-
-    @property
-    def effect(self):
-        """Gets the effect of this Taint.
-
-        作用效果
-
-        :return: The effect of this Taint.
-        :rtype: str
-        """
-        return self._effect
-
-    @effect.setter
-    def effect(self, effect):
-        """Sets the effect of this Taint.
-
-        作用效果
-
-        :param effect: The effect of this Taint.
-        :type: str
-        """
-        self._effect = effect
+        if effect is not None:
+            self.effect = effect
 
     @property
     def key(self):
@@ -116,6 +94,28 @@ class Taint:
         :type: str
         """
         self._value = value
+
+    @property
+    def effect(self):
+        """Gets the effect of this Taint.
+
+        作用效果
+
+        :return: The effect of this Taint.
+        :rtype: str
+        """
+        return self._effect
+
+    @effect.setter
+    def effect(self, effect):
+        """Sets the effect of this Taint.
+
+        作用效果
+
+        :param effect: The effect of this Taint.
+        :type: str
+        """
+        self._effect = effect
 
     def to_dict(self):
         """Returns the model properties as a dict"""

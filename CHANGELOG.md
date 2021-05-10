@@ -1,3 +1,51 @@
+# 3.0.42-rc 2021-05-10
+
+### HuaweiCloud SDK BMS
+
+- _Features_
+  - Support interface `BatchCreateBaremetalServerTags`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - Support interfaces `MigrateAz`, `ListAz2Migrate`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK EPS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - [Issue 17](https://github.com/huaweicloud/huaweicloud-sdk-go-v3/issues/17): Fix the issue that `EpDetailType` enum is defined incorrectly.
+- _Change_
+  - None
+
+### HuaweiCloud SDK IEC
+
+- _Features_
+  - Support `Intelligent EdgeCloud` service.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the name of response body of interface `ListOffSiteInstances`: `OffSiteInstanceListResponse` -> `OffSiteInstanceListResponseBody`
+  - Modify the name of response field of interface `ListOffSiteInstances`: `offsite_backup_instances` -> `offsite_backup_instance`
+
 # 3.0.41-rc 2021-04-30
 
 ### HuaweiCloud SDK BCS

@@ -23,23 +23,33 @@ class MasterSpec:
     sensitive_list = []
 
     openapi_types = {
-        'availability_zone': 'str'
+        'availability_zone': 'str',
+        'flavor': 'str',
+        'fault_domain': 'str'
     }
 
     attribute_map = {
-        'availability_zone': 'availabilityZone'
+        'availability_zone': 'availabilityZone',
+        'flavor': 'flavor',
+        'fault_domain': 'faultDomain'
     }
 
-    def __init__(self, availability_zone=None):
+    def __init__(self, availability_zone=None, flavor=None, fault_domain=None):
         """MasterSpec - a model defined in huaweicloud sdk"""
         
         
 
         self._availability_zone = None
+        self._flavor = None
+        self._fault_domain = None
         self.discriminator = None
 
         if availability_zone is not None:
             self.availability_zone = availability_zone
+        if flavor is not None:
+            self.flavor = flavor
+        if fault_domain is not None:
+            self.fault_domain = fault_domain
 
     @property
     def availability_zone(self):
@@ -62,6 +72,50 @@ class MasterSpec:
         :type: str
         """
         self._availability_zone = availability_zone
+
+    @property
+    def flavor(self):
+        """Gets the flavor of this MasterSpec.
+
+        规格
+
+        :return: The flavor of this MasterSpec.
+        :rtype: str
+        """
+        return self._flavor
+
+    @flavor.setter
+    def flavor(self, flavor):
+        """Sets the flavor of this MasterSpec.
+
+        规格
+
+        :param flavor: The flavor of this MasterSpec.
+        :type: str
+        """
+        self._flavor = flavor
+
+    @property
+    def fault_domain(self):
+        """Gets the fault_domain of this MasterSpec.
+
+        故障域。 1. 指定该字段需要当前系统已开启故障域特性，否则校验失败。 2. 仅单az场景支持且必须显式指定az。
+
+        :return: The fault_domain of this MasterSpec.
+        :rtype: str
+        """
+        return self._fault_domain
+
+    @fault_domain.setter
+    def fault_domain(self, fault_domain):
+        """Sets the fault_domain of this MasterSpec.
+
+        故障域。 1. 指定该字段需要当前系统已开启故障域特性，否则校验失败。 2. 仅单az场景支持且必须显式指定az。
+
+        :param fault_domain: The fault_domain of this MasterSpec.
+        :type: str
+        """
+        self._fault_domain = fault_domain
 
     def to_dict(self):
         """Returns the model properties as a dict"""

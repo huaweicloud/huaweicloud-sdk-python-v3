@@ -62,12 +62,12 @@ class BasicCredentials(Credentials):
 
     def get_update_path_params(self):
         path_params = {}
-        if self.project_id is not None:
+        if self.project_id:
             path_params["project_id"] = self.project_id
         return path_params
 
     def process_auth_params(self, http_client, region_id):
-        if self.project_id is not None:
+        if self.project_id:
             return self
         if self.iam_endpoint is None:
             self.iam_endpoint = DEFAULT_IAM_ENDPOINT
@@ -87,7 +87,7 @@ class BasicCredentials(Credentials):
         return future
 
     def sign_request(self, request):
-        if self.project_id is not None:
+        if self.project_id:
             request.header_params["X-Project-Id"] = self.project_id
         if self.security_token is not None:
             request.header_params["X-Security-Token"] = self.security_token
@@ -123,12 +123,12 @@ class GlobalCredentials(Credentials):
 
     def get_update_path_params(self):
         path_params = {}
-        if self.domain_id is not None:
+        if self.domain_id:
             path_params["domain_id"] = self.domain_id
         return path_params
 
     def process_auth_params(self, http_client, region_id):
-        if self.domain_id is not None:
+        if self.domain_id:
             return self
         if self.iam_endpoint is None:
             self.iam_endpoint = DEFAULT_IAM_ENDPOINT
@@ -148,7 +148,7 @@ class GlobalCredentials(Credentials):
         return future
 
     def sign_request(self, request):
-        if self.domain_id is not None:
+        if self.domain_id:
             request.header_params["X-Domain-Id"] = self.domain_id
         if self.security_token is not None:
             request.header_params["X-Security-Token"] = self.security_token
@@ -160,17 +160,36 @@ class GlobalCredentials(Credentials):
         return signer.Signer(self).sign(request)
 
 
-class EnvCredentials(Credentials):
-    @staticmethod
-    def load_credential_from_env(default_type):
-        ak = os.environ.get("HUAWEICLOUD_SDK_AK")
-        sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+class EnvCredentials:
 
-        if default_type == "BasicCredentials":
-            project_id = os.environ.get("HUAWEICLOUD_SDK_PROJECT_ID")
-            return BasicCredentials(ak, sk, project_id)
-        elif default_type == "GlobalCredentials":
-            domain_id = os.environ.get("HUAWEICLOUD_SDK_DOMAIN_ID")
-            return GlobalCredentials(ak, sk, domain_id)
-        else:
-            return None
+    AK_ENV_NAME = "HUAWEICLOUD_SDK_AK"
+    SK_ENV_NAME = "HUAWEICLOUD_SDK_SK"
+    PROJECT_ID_ENV_NAME = "HUAWEICLOUD_SDK_PROJECT_ID"
+    DOMAIN_ID_ENV_NAME = "HUAWEICLOUD_SDK_DOMAIN_ID"
+    IAM_ENDPOINT_ENV_NAME = "HUAWEICLOUD_SDK_IAM_ENDPOINT"
+    BASIC_CREDENTIAL_TYPE = "BasicCredentials"
+    GLOBAL_CREDENTIAL_TYPE = "GlobalCredentials"
+
+    @classmethod
+    def load_credential_from_env(cls, default_type):
+
+        credential = None
+
+        ak = os.environ.get(cls.AK_ENV_NAME)
+        sk = os.environ.get(cls.SK_ENV_NAME)
+        iam_endpoint = cls.get_iam_endpoint_env_name()
+
+        if default_type == cls.BASIC_CREDENTIAL_TYPE:
+            project_id = os.environ.get(cls.PROJECT_ID_ENV_NAME)
+            credential = BasicCredentials(ak, sk, project_id)
+            credential.with_iam_endpoint(iam_endpoint)
+        elif default_type == cls.GLOBAL_CREDENTIAL_TYPE:
+            domain_id = os.environ.get(cls.DOMAIN_ID_ENV_NAME)
+            credential = GlobalCredentials(ak, sk, domain_id)
+            credential.with_iam_endpoint(iam_endpoint)
+
+        return credential
+
+    @classmethod
+    def get_iam_endpoint_env_name(cls):
+        return os.environ.get(cls.IAM_ENDPOINT_ENV_NAME)

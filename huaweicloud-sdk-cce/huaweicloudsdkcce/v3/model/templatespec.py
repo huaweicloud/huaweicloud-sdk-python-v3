@@ -23,69 +23,91 @@ class Templatespec:
     sensitive_list = []
 
     openapi_types = {
-        'description': 'str',
+        'type': 'str',
+        'require': 'bool',
         'labels': 'list[str]',
         'logo_url': 'str',
         'readme_url': 'str',
-        'require': 'bool',
-        'type': 'str',
+        'description': 'str',
         'versions': 'list[Versions]'
     }
 
     attribute_map = {
-        'description': 'description',
+        'type': 'type',
+        'require': 'require',
         'labels': 'labels',
         'logo_url': 'logoURL',
         'readme_url': 'readmeURL',
-        'require': 'require',
-        'type': 'type',
+        'description': 'description',
         'versions': 'versions'
     }
 
-    def __init__(self, description=None, labels=None, logo_url=None, readme_url=None, require=None, type=None, versions=None):
+    def __init__(self, type=None, require=None, labels=None, logo_url=None, readme_url=None, description=None, versions=None):
         """Templatespec - a model defined in huaweicloud sdk"""
         
         
 
-        self._description = None
+        self._type = None
+        self._require = None
         self._labels = None
         self._logo_url = None
         self._readme_url = None
-        self._require = None
-        self._type = None
+        self._description = None
         self._versions = None
         self.discriminator = None
 
-        self.description = description
+        self.type = type
+        if require is not None:
+            self.require = require
         self.labels = labels
         self.logo_url = logo_url
         self.readme_url = readme_url
-        if require is not None:
-            self.require = require
-        self.type = type
+        self.description = description
         self.versions = versions
 
     @property
-    def description(self):
-        """Gets the description of this Templatespec.
+    def type(self):
+        """Gets the type of this Templatespec.
 
-        模板描述
+        模板类型（helm，static）
 
-        :return: The description of this Templatespec.
+        :return: The type of this Templatespec.
         :rtype: str
         """
-        return self._description
+        return self._type
 
-    @description.setter
-    def description(self, description):
-        """Sets the description of this Templatespec.
+    @type.setter
+    def type(self, type):
+        """Sets the type of this Templatespec.
 
-        模板描述
+        模板类型（helm，static）
 
-        :param description: The description of this Templatespec.
+        :param type: The type of this Templatespec.
         :type: str
         """
-        self._description = description
+        self._type = type
+
+    @property
+    def require(self):
+        """Gets the require of this Templatespec.
+
+        是否为必安装插件
+
+        :return: The require of this Templatespec.
+        :rtype: bool
+        """
+        return self._require
+
+    @require.setter
+    def require(self, require):
+        """Sets the require of this Templatespec.
+
+        是否为必安装插件
+
+        :param require: The require of this Templatespec.
+        :type: bool
+        """
+        self._require = require
 
     @property
     def labels(self):
@@ -154,48 +176,26 @@ class Templatespec:
         self._readme_url = readme_url
 
     @property
-    def require(self):
-        """Gets the require of this Templatespec.
+    def description(self):
+        """Gets the description of this Templatespec.
 
-        是否为必安装插件
+        模板描述
 
-        :return: The require of this Templatespec.
-        :rtype: bool
-        """
-        return self._require
-
-    @require.setter
-    def require(self, require):
-        """Sets the require of this Templatespec.
-
-        是否为必安装插件
-
-        :param require: The require of this Templatespec.
-        :type: bool
-        """
-        self._require = require
-
-    @property
-    def type(self):
-        """Gets the type of this Templatespec.
-
-        模板类型（helm，static）
-
-        :return: The type of this Templatespec.
+        :return: The description of this Templatespec.
         :rtype: str
         """
-        return self._type
+        return self._description
 
-    @type.setter
-    def type(self, type):
-        """Sets the type of this Templatespec.
+    @description.setter
+    def description(self, description):
+        """Sets the description of this Templatespec.
 
-        模板类型（helm，static）
+        模板描述
 
-        :param type: The type of this Templatespec.
+        :param description: The description of this Templatespec.
         :type: str
         """
-        self._type = type
+        self._description = description
 
     @property
     def versions(self):

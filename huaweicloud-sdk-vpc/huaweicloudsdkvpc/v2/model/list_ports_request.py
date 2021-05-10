@@ -34,8 +34,7 @@ class ListPortsRequest:
         'status': 'str',
         'marker': 'str',
         'fixed_ips': 'str',
-        'enterprise_project_id': 'str',
-        'zone_id': 'str'
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -50,11 +49,10 @@ class ListPortsRequest:
         'status': 'status',
         'marker': 'marker',
         'fixed_ips': 'fixed_ips',
-        'enterprise_project_id': 'enterprise_project_id',
-        'zone_id': 'zone_id'
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, name=None, id=None, limit=None, admin_state_up=None, network_id=None, mac_address=None, device_id=None, device_owner=None, status=None, marker=None, fixed_ips=None, enterprise_project_id=None, zone_id=None):
+    def __init__(self, name=None, id=None, limit=None, admin_state_up=None, network_id=None, mac_address=None, device_id=None, device_owner=None, status=None, marker=None, fixed_ips=None, enterprise_project_id=None):
         """ListPortsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -71,7 +69,6 @@ class ListPortsRequest:
         self._marker = None
         self._fixed_ips = None
         self._enterprise_project_id = None
-        self._zone_id = None
         self.discriminator = None
 
         if name is not None:
@@ -98,8 +95,6 @@ class ListPortsRequest:
             self.fixed_ips = fixed_ips
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if zone_id is not None:
-            self.zone_id = zone_id
 
     @property
     def name(self):
@@ -340,26 +335,6 @@ class ListPortsRequest:
         :type: str
         """
         self._enterprise_project_id = enterprise_project_id
-
-    @property
-    def zone_id(self):
-        """Gets the zone_id of this ListPortsRequest.
-
-
-        :return: The zone_id of this ListPortsRequest.
-        :rtype: str
-        """
-        return self._zone_id
-
-    @zone_id.setter
-    def zone_id(self, zone_id):
-        """Sets the zone_id of this ListPortsRequest.
-
-
-        :param zone_id: The zone_id of this ListPortsRequest.
-        :type: str
-        """
-        self._zone_id = zone_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

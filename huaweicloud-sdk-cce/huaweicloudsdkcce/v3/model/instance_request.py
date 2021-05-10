@@ -23,56 +23,34 @@ class InstanceRequest:
     sensitive_list = []
 
     openapi_types = {
-        'api_version': 'str',
         'kind': 'str',
+        'api_version': 'str',
         'metadata': 'Metadata',
         'spec': 'InstanceRequestSpec'
     }
 
     attribute_map = {
-        'api_version': 'apiVersion',
         'kind': 'kind',
+        'api_version': 'apiVersion',
         'metadata': 'metadata',
         'spec': 'spec'
     }
 
-    def __init__(self, api_version=None, kind=None, metadata=None, spec=None):
+    def __init__(self, kind=None, api_version=None, metadata=None, spec=None):
         """InstanceRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._api_version = None
         self._kind = None
+        self._api_version = None
         self._metadata = None
         self._spec = None
         self.discriminator = None
 
-        self.api_version = api_version
         self.kind = kind
+        self.api_version = api_version
         self.metadata = metadata
         self.spec = spec
-
-    @property
-    def api_version(self):
-        """Gets the api_version of this InstanceRequest.
-
-        API版本，固定值“v3”，该值不可修改。
-
-        :return: The api_version of this InstanceRequest.
-        :rtype: str
-        """
-        return self._api_version
-
-    @api_version.setter
-    def api_version(self, api_version):
-        """Sets the api_version of this InstanceRequest.
-
-        API版本，固定值“v3”，该值不可修改。
-
-        :param api_version: The api_version of this InstanceRequest.
-        :type: str
-        """
-        self._api_version = api_version
 
     @property
     def kind(self):
@@ -95,6 +73,28 @@ class InstanceRequest:
         :type: str
         """
         self._kind = kind
+
+    @property
+    def api_version(self):
+        """Gets the api_version of this InstanceRequest.
+
+        API版本，固定值“v3”，该值不可修改。
+
+        :return: The api_version of this InstanceRequest.
+        :rtype: str
+        """
+        return self._api_version
+
+    @api_version.setter
+    def api_version(self, api_version):
+        """Sets the api_version of this InstanceRequest.
+
+        API版本，固定值“v3”，该值不可修改。
+
+        :param api_version: The api_version of this InstanceRequest.
+        :type: str
+        """
+        self._api_version = api_version
 
     @property
     def metadata(self):

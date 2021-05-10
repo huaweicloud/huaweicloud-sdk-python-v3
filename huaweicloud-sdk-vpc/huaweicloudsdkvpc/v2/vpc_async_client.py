@@ -1022,7 +1022,7 @@ class VpcAsyncClient(Client):
         :return: ListPortsResponse
         """
 
-        all_params = ['name', 'id', 'limit', 'admin_state_up', 'network_id', 'mac_address', 'device_id', 'device_owner', 'status', 'marker', 'fixed_ips', 'enterprise_project_id', 'zone_id']
+        all_params = ['name', 'id', 'limit', 'admin_state_up', 'network_id', 'mac_address', 'device_id', 'device_owner', 'status', 'marker', 'fixed_ips', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1057,8 +1057,6 @@ class VpcAsyncClient(Client):
             query_params.append(('fixed_ips', local_var_params['fixed_ips']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-        if 'zone_id' in local_var_params:
-            query_params.append(('zone_id', local_var_params['zone_id']))
 
         header_params = {}
 
@@ -1306,7 +1304,7 @@ class VpcAsyncClient(Client):
         :return: ListSubnetsResponse
         """
 
-        all_params = ['limit', 'marker', 'vpc_id', 'scope']
+        all_params = ['limit', 'marker', 'vpc_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1323,8 +1321,6 @@ class VpcAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
         if 'vpc_id' in local_var_params:
             query_params.append(('vpc_id', local_var_params['vpc_id']))
-        if 'scope' in local_var_params:
-            query_params.append(('scope', local_var_params['scope']))
 
         header_params = {}
 

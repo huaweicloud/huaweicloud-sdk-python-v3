@@ -23,28 +23,48 @@ class NodeNicSpec:
     sensitive_list = []
 
     openapi_types = {
-        'ext_nics': 'list[NicSpec]',
-        'primary_nic': 'NicSpec'
+        'primary_nic': 'NicSpec',
+        'ext_nics': 'list[NicSpec]'
     }
 
     attribute_map = {
-        'ext_nics': 'extNics',
-        'primary_nic': 'primaryNic'
+        'primary_nic': 'primaryNic',
+        'ext_nics': 'extNics'
     }
 
-    def __init__(self, ext_nics=None, primary_nic=None):
+    def __init__(self, primary_nic=None, ext_nics=None):
         """NodeNicSpec - a model defined in huaweicloud sdk"""
         
         
 
-        self._ext_nics = None
         self._primary_nic = None
+        self._ext_nics = None
         self.discriminator = None
 
-        if ext_nics is not None:
-            self.ext_nics = ext_nics
         if primary_nic is not None:
             self.primary_nic = primary_nic
+        if ext_nics is not None:
+            self.ext_nics = ext_nics
+
+    @property
+    def primary_nic(self):
+        """Gets the primary_nic of this NodeNicSpec.
+
+
+        :return: The primary_nic of this NodeNicSpec.
+        :rtype: NicSpec
+        """
+        return self._primary_nic
+
+    @primary_nic.setter
+    def primary_nic(self, primary_nic):
+        """Sets the primary_nic of this NodeNicSpec.
+
+
+        :param primary_nic: The primary_nic of this NodeNicSpec.
+        :type: NicSpec
+        """
+        self._primary_nic = primary_nic
 
     @property
     def ext_nics(self):
@@ -67,26 +87,6 @@ class NodeNicSpec:
         :type: list[NicSpec]
         """
         self._ext_nics = ext_nics
-
-    @property
-    def primary_nic(self):
-        """Gets the primary_nic of this NodeNicSpec.
-
-
-        :return: The primary_nic of this NodeNicSpec.
-        :rtype: NicSpec
-        """
-        return self._primary_nic
-
-    @primary_nic.setter
-    def primary_nic(self, primary_nic):
-        """Sets the primary_nic of this NodeNicSpec.
-
-
-        :param primary_nic: The primary_nic of this NodeNicSpec.
-        :type: NicSpec
-        """
-        self._primary_nic = primary_nic
 
     def to_dict(self):
         """Returns the model properties as a dict"""

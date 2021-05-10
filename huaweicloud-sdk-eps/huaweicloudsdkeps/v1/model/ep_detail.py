@@ -200,7 +200,7 @@ class EpDetail:
     def type(self):
         """Gets the type of this EpDetail.
 
-        项目类型。prod-商用项目；poc-测试项目
+        项目类型： - prod：商用项目 - poc：测试项目
 
         :return: The type of this EpDetail.
         :rtype: str
@@ -211,7 +211,7 @@ class EpDetail:
     def type(self, type):
         """Sets the type of this EpDetail.
 
-        项目类型。prod-商用项目；poc-测试项目
+        项目类型： - prod：商用项目 - poc：测试项目
 
         :param type: The type of this EpDetail.
         :type: str

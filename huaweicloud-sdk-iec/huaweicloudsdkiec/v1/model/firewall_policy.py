@@ -1,0 +1,216 @@
+# coding: utf-8
+
+import pprint
+import re
+
+import six
+
+
+
+
+
+class FirewallPolicy:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'id': 'str',
+        'name': 'str',
+        'firewall_rules': 'list[FirewallRule]',
+        'insert_after': 'str',
+        'insert_before': 'str'
+    }
+
+    attribute_map = {
+        'id': 'id',
+        'name': 'name',
+        'firewall_rules': 'firewall_rules',
+        'insert_after': 'insert_after',
+        'insert_before': 'insert_before'
+    }
+
+    def __init__(self, id=None, name=None, firewall_rules=None, insert_after=None, insert_before=None):
+        """FirewallPolicy - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._id = None
+        self._name = None
+        self._firewall_rules = None
+        self._insert_after = None
+        self._insert_before = None
+        self.discriminator = None
+
+        self.id = id
+        if name is not None:
+            self.name = name
+        self.firewall_rules = firewall_rules
+        if insert_after is not None:
+            self.insert_after = insert_after
+        if insert_before is not None:
+            self.insert_before = insert_before
+
+    @property
+    def id(self):
+        """Gets the id of this FirewallPolicy.
+
+        网络ACL策略ID。
+
+        :return: The id of this FirewallPolicy.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this FirewallPolicy.
+
+        网络ACL策略ID。
+
+        :param id: The id of this FirewallPolicy.
+        :type: str
+        """
+        self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this FirewallPolicy.
+
+        网络ACL策略名称。
+
+        :return: The name of this FirewallPolicy.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this FirewallPolicy.
+
+        网络ACL策略名称。
+
+        :param name: The name of this FirewallPolicy.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def firewall_rules(self):
+        """Gets the firewall_rules of this FirewallPolicy.
+
+        网络ACL规则列表对象。
+
+        :return: The firewall_rules of this FirewallPolicy.
+        :rtype: list[FirewallRule]
+        """
+        return self._firewall_rules
+
+    @firewall_rules.setter
+    def firewall_rules(self, firewall_rules):
+        """Sets the firewall_rules of this FirewallPolicy.
+
+        网络ACL规则列表对象。
+
+        :param firewall_rules: The firewall_rules of this FirewallPolicy.
+        :type: list[FirewallRule]
+        """
+        self._firewall_rules = firewall_rules
+
+    @property
+    def insert_after(self):
+        """Gets the insert_after of this FirewallPolicy.
+
+        ACL规则ID，表示在此ACL规则之后添加ACL规则
+
+        :return: The insert_after of this FirewallPolicy.
+        :rtype: str
+        """
+        return self._insert_after
+
+    @insert_after.setter
+    def insert_after(self, insert_after):
+        """Sets the insert_after of this FirewallPolicy.
+
+        ACL规则ID，表示在此ACL规则之后添加ACL规则
+
+        :param insert_after: The insert_after of this FirewallPolicy.
+        :type: str
+        """
+        self._insert_after = insert_after
+
+    @property
+    def insert_before(self):
+        """Gets the insert_before of this FirewallPolicy.
+
+        ACL规则ID，表示在此ACL规则之前添加ACL规则
+
+        :return: The insert_before of this FirewallPolicy.
+        :rtype: str
+        """
+        return self._insert_before
+
+    @insert_before.setter
+    def insert_before(self, insert_before):
+        """Sets the insert_before of this FirewallPolicy.
+
+        ACL规则ID，表示在此ACL规则之前添加ACL规则
+
+        :param insert_before: The insert_before of this FirewallPolicy.
+        :type: str
+        """
+        self._insert_before = insert_before
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        return pprint.pformat(self.to_dict())
+
+    def __repr__(self):
+        """For `print` and `pprint`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, FirewallPolicy):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

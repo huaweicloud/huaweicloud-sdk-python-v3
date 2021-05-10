@@ -23,62 +23,84 @@ class NodePoolSpec:
     sensitive_list = []
 
     openapi_types = {
-        'autoscaling': 'NodePoolNodeAutoscaling',
-        'initial_node_count': 'int',
-        'node_management': 'NodeManagement',
+        'type': 'str',
         'node_template': 'V3NodeSpec',
-        'type': 'str'
+        'initial_node_count': 'int',
+        'autoscaling': 'NodePoolNodeAutoscaling',
+        'node_management': 'NodeManagement'
     }
 
     attribute_map = {
-        'autoscaling': 'autoscaling',
-        'initial_node_count': 'initialNodeCount',
-        'node_management': 'nodeManagement',
+        'type': 'type',
         'node_template': 'nodeTemplate',
-        'type': 'type'
+        'initial_node_count': 'initialNodeCount',
+        'autoscaling': 'autoscaling',
+        'node_management': 'nodeManagement'
     }
 
-    def __init__(self, autoscaling=None, initial_node_count=None, node_management=None, node_template=None, type=None):
+    def __init__(self, type=None, node_template=None, initial_node_count=None, autoscaling=None, node_management=None):
         """NodePoolSpec - a model defined in huaweicloud sdk"""
         
         
 
-        self._autoscaling = None
-        self._initial_node_count = None
-        self._node_management = None
-        self._node_template = None
         self._type = None
+        self._node_template = None
+        self._initial_node_count = None
+        self._autoscaling = None
+        self._node_management = None
         self.discriminator = None
 
-        if autoscaling is not None:
-            self.autoscaling = autoscaling
-        if initial_node_count is not None:
-            self.initial_node_count = initial_node_count
-        if node_management is not None:
-            self.node_management = node_management
-        self.node_template = node_template
         if type is not None:
             self.type = type
+        self.node_template = node_template
+        if initial_node_count is not None:
+            self.initial_node_count = initial_node_count
+        if autoscaling is not None:
+            self.autoscaling = autoscaling
+        if node_management is not None:
+            self.node_management = node_management
 
     @property
-    def autoscaling(self):
-        """Gets the autoscaling of this NodePoolSpec.
+    def type(self):
+        """Gets the type of this NodePoolSpec.
 
+        节点池类型。不填写时默认为vm。  - vm：弹性云服务器 - ElasticBMS：C6型弹性裸金属通用计算增强型云服务器，规格示例：c6.22xlarge.2.physical 
 
-        :return: The autoscaling of this NodePoolSpec.
-        :rtype: NodePoolNodeAutoscaling
+        :return: The type of this NodePoolSpec.
+        :rtype: str
         """
-        return self._autoscaling
+        return self._type
 
-    @autoscaling.setter
-    def autoscaling(self, autoscaling):
-        """Sets the autoscaling of this NodePoolSpec.
+    @type.setter
+    def type(self, type):
+        """Sets the type of this NodePoolSpec.
 
+        节点池类型。不填写时默认为vm。  - vm：弹性云服务器 - ElasticBMS：C6型弹性裸金属通用计算增强型云服务器，规格示例：c6.22xlarge.2.physical 
 
-        :param autoscaling: The autoscaling of this NodePoolSpec.
-        :type: NodePoolNodeAutoscaling
+        :param type: The type of this NodePoolSpec.
+        :type: str
         """
-        self._autoscaling = autoscaling
+        self._type = type
+
+    @property
+    def node_template(self):
+        """Gets the node_template of this NodePoolSpec.
+
+
+        :return: The node_template of this NodePoolSpec.
+        :rtype: V3NodeSpec
+        """
+        return self._node_template
+
+    @node_template.setter
+    def node_template(self, node_template):
+        """Sets the node_template of this NodePoolSpec.
+
+
+        :param node_template: The node_template of this NodePoolSpec.
+        :type: V3NodeSpec
+        """
+        self._node_template = node_template
 
     @property
     def initial_node_count(self):
@@ -103,6 +125,26 @@ class NodePoolSpec:
         self._initial_node_count = initial_node_count
 
     @property
+    def autoscaling(self):
+        """Gets the autoscaling of this NodePoolSpec.
+
+
+        :return: The autoscaling of this NodePoolSpec.
+        :rtype: NodePoolNodeAutoscaling
+        """
+        return self._autoscaling
+
+    @autoscaling.setter
+    def autoscaling(self, autoscaling):
+        """Sets the autoscaling of this NodePoolSpec.
+
+
+        :param autoscaling: The autoscaling of this NodePoolSpec.
+        :type: NodePoolNodeAutoscaling
+        """
+        self._autoscaling = autoscaling
+
+    @property
     def node_management(self):
         """Gets the node_management of this NodePoolSpec.
 
@@ -121,48 +163,6 @@ class NodePoolSpec:
         :type: NodeManagement
         """
         self._node_management = node_management
-
-    @property
-    def node_template(self):
-        """Gets the node_template of this NodePoolSpec.
-
-
-        :return: The node_template of this NodePoolSpec.
-        :rtype: V3NodeSpec
-        """
-        return self._node_template
-
-    @node_template.setter
-    def node_template(self, node_template):
-        """Sets the node_template of this NodePoolSpec.
-
-
-        :param node_template: The node_template of this NodePoolSpec.
-        :type: V3NodeSpec
-        """
-        self._node_template = node_template
-
-    @property
-    def type(self):
-        """Gets the type of this NodePoolSpec.
-
-        节点池类型。不填写时默认为vm。  - vm：弹性云服务器 - ElasticBMS：C6型弹性裸金属通用计算增强型云服务器，规格示例：c6.22xlarge.2.physical 
-
-        :return: The type of this NodePoolSpec.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this NodePoolSpec.
-
-        节点池类型。不填写时默认为vm。  - vm：弹性云服务器 - ElasticBMS：C6型弹性裸金属通用计算增强型云服务器，规格示例：c6.22xlarge.2.physical 
-
-        :param type: The type of this NodePoolSpec.
-        :type: str
-        """
-        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

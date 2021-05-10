@@ -23,56 +23,56 @@ class InstanceRequestSpec:
     sensitive_list = []
 
     openapi_types = {
-        'addon_template_name': 'str',
+        'version': 'str',
         'cluster_id': 'str',
         'values': 'dict(str, object)',
-        'version': 'str'
+        'addon_template_name': 'str'
     }
 
     attribute_map = {
-        'addon_template_name': 'addonTemplateName',
+        'version': 'version',
         'cluster_id': 'clusterID',
         'values': 'values',
-        'version': 'version'
+        'addon_template_name': 'addonTemplateName'
     }
 
-    def __init__(self, addon_template_name=None, cluster_id=None, values=None, version=None):
+    def __init__(self, version=None, cluster_id=None, values=None, addon_template_name=None):
         """InstanceRequestSpec - a model defined in huaweicloud sdk"""
         
         
 
-        self._addon_template_name = None
+        self._version = None
         self._cluster_id = None
         self._values = None
-        self._version = None
+        self._addon_template_name = None
         self.discriminator = None
 
-        self.addon_template_name = addon_template_name
+        self.version = version
         self.cluster_id = cluster_id
         self.values = values
-        self.version = version
+        self.addon_template_name = addon_template_name
 
     @property
-    def addon_template_name(self):
-        """Gets the addon_template_name of this InstanceRequestSpec.
+    def version(self):
+        """Gets the version of this InstanceRequestSpec.
 
-        待安装插件模板名称，如coredns
+        待安装、升级插件的具体版本版本号，例如1.0.0
 
-        :return: The addon_template_name of this InstanceRequestSpec.
+        :return: The version of this InstanceRequestSpec.
         :rtype: str
         """
-        return self._addon_template_name
+        return self._version
 
-    @addon_template_name.setter
-    def addon_template_name(self, addon_template_name):
-        """Sets the addon_template_name of this InstanceRequestSpec.
+    @version.setter
+    def version(self, version):
+        """Sets the version of this InstanceRequestSpec.
 
-        待安装插件模板名称，如coredns
+        待安装、升级插件的具体版本版本号，例如1.0.0
 
-        :param addon_template_name: The addon_template_name of this InstanceRequestSpec.
+        :param version: The version of this InstanceRequestSpec.
         :type: str
         """
-        self._addon_template_name = addon_template_name
+        self._version = version
 
     @property
     def cluster_id(self):
@@ -100,7 +100,7 @@ class InstanceRequestSpec:
     def values(self):
         """Gets the values of this InstanceRequestSpec.
 
-        插件模板安装参数（各插件不同）
+        插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。
 
         :return: The values of this InstanceRequestSpec.
         :rtype: dict(str, object)
@@ -111,7 +111,7 @@ class InstanceRequestSpec:
     def values(self, values):
         """Sets the values of this InstanceRequestSpec.
 
-        插件模板安装参数（各插件不同）
+        插件模板安装参数（各插件不同），升级插件时需要填写全量安装参数，未填写参数将使用插件模板中的默认值，当前插件安装参数可通过查询插件实例接口获取。
 
         :param values: The values of this InstanceRequestSpec.
         :type: dict(str, object)
@@ -119,26 +119,26 @@ class InstanceRequestSpec:
         self._values = values
 
     @property
-    def version(self):
-        """Gets the version of this InstanceRequestSpec.
+    def addon_template_name(self):
+        """Gets the addon_template_name of this InstanceRequestSpec.
 
-        待安装、升级插件的具体版本版本号，例如1.0.0
+        待安装插件模板名称，如coredns
 
-        :return: The version of this InstanceRequestSpec.
+        :return: The addon_template_name of this InstanceRequestSpec.
         :rtype: str
         """
-        return self._version
+        return self._addon_template_name
 
-    @version.setter
-    def version(self, version):
-        """Sets the version of this InstanceRequestSpec.
+    @addon_template_name.setter
+    def addon_template_name(self, addon_template_name):
+        """Sets the addon_template_name of this InstanceRequestSpec.
 
-        待安装、升级插件的具体版本版本号，例如1.0.0
+        待安装插件模板名称，如coredns
 
-        :param version: The version of this InstanceRequestSpec.
+        :param addon_template_name: The addon_template_name of this InstanceRequestSpec.
         :type: str
         """
-        self._version = version
+        self._addon_template_name = addon_template_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

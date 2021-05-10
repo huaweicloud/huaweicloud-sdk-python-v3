@@ -23,68 +23,70 @@ class V3NodeStatus:
     sensitive_list = []
 
     openapi_types = {
-        'delete_status': 'DeleteStatus',
-        'job_id': 'str',
         'phase': 'str',
+        'job_id': 'str',
+        'server_id': 'str',
         'private_ip': 'str',
         'public_ip': 'str',
-        'server_id': 'str'
+        'delete_status': 'DeleteStatus'
     }
 
     attribute_map = {
-        'delete_status': 'deleteStatus',
-        'job_id': 'jobID',
         'phase': 'phase',
+        'job_id': 'jobID',
+        'server_id': 'serverId',
         'private_ip': 'privateIP',
         'public_ip': 'publicIP',
-        'server_id': 'serverId'
+        'delete_status': 'deleteStatus'
     }
 
-    def __init__(self, delete_status=None, job_id=None, phase=None, private_ip=None, public_ip=None, server_id=None):
+    def __init__(self, phase=None, job_id=None, server_id=None, private_ip=None, public_ip=None, delete_status=None):
         """V3NodeStatus - a model defined in huaweicloud sdk"""
         
         
 
-        self._delete_status = None
-        self._job_id = None
         self._phase = None
+        self._job_id = None
+        self._server_id = None
         self._private_ip = None
         self._public_ip = None
-        self._server_id = None
+        self._delete_status = None
         self.discriminator = None
 
-        if delete_status is not None:
-            self.delete_status = delete_status
-        if job_id is not None:
-            self.job_id = job_id
         if phase is not None:
             self.phase = phase
+        if job_id is not None:
+            self.job_id = job_id
+        if server_id is not None:
+            self.server_id = server_id
         if private_ip is not None:
             self.private_ip = private_ip
         if public_ip is not None:
             self.public_ip = public_ip
-        if server_id is not None:
-            self.server_id = server_id
+        if delete_status is not None:
+            self.delete_status = delete_status
 
     @property
-    def delete_status(self):
-        """Gets the delete_status of this V3NodeStatus.
+    def phase(self):
+        """Gets the phase of this V3NodeStatus.
 
+        节点状态。
 
-        :return: The delete_status of this V3NodeStatus.
-        :rtype: DeleteStatus
+        :return: The phase of this V3NodeStatus.
+        :rtype: str
         """
-        return self._delete_status
+        return self._phase
 
-    @delete_status.setter
-    def delete_status(self, delete_status):
-        """Sets the delete_status of this V3NodeStatus.
+    @phase.setter
+    def phase(self, phase):
+        """Sets the phase of this V3NodeStatus.
 
+        节点状态。
 
-        :param delete_status: The delete_status of this V3NodeStatus.
-        :type: DeleteStatus
+        :param phase: The phase of this V3NodeStatus.
+        :type: str
         """
-        self._delete_status = delete_status
+        self._phase = phase
 
     @property
     def job_id(self):
@@ -109,26 +111,26 @@ class V3NodeStatus:
         self._job_id = job_id
 
     @property
-    def phase(self):
-        """Gets the phase of this V3NodeStatus.
+    def server_id(self):
+        """Gets the server_id of this V3NodeStatus.
 
-        节点状态。
+        底层云服务器或裸金属节点ID。
 
-        :return: The phase of this V3NodeStatus.
+        :return: The server_id of this V3NodeStatus.
         :rtype: str
         """
-        return self._phase
+        return self._server_id
 
-    @phase.setter
-    def phase(self, phase):
-        """Sets the phase of this V3NodeStatus.
+    @server_id.setter
+    def server_id(self, server_id):
+        """Sets the server_id of this V3NodeStatus.
 
-        节点状态。
+        底层云服务器或裸金属节点ID。
 
-        :param phase: The phase of this V3NodeStatus.
+        :param server_id: The server_id of this V3NodeStatus.
         :type: str
         """
-        self._phase = phase
+        self._server_id = server_id
 
     @property
     def private_ip(self):
@@ -156,7 +158,7 @@ class V3NodeStatus:
     def public_ip(self):
         """Gets the public_ip of this V3NodeStatus.
 
-        节点弹性公网IP地址。
+        节点弹性公网IP地址。如果ECS的数据没有实时同步，可在界面上通过“同步节点信息”手动进行更新。
 
         :return: The public_ip of this V3NodeStatus.
         :rtype: str
@@ -167,7 +169,7 @@ class V3NodeStatus:
     def public_ip(self, public_ip):
         """Sets the public_ip of this V3NodeStatus.
 
-        节点弹性公网IP地址。
+        节点弹性公网IP地址。如果ECS的数据没有实时同步，可在界面上通过“同步节点信息”手动进行更新。
 
         :param public_ip: The public_ip of this V3NodeStatus.
         :type: str
@@ -175,26 +177,24 @@ class V3NodeStatus:
         self._public_ip = public_ip
 
     @property
-    def server_id(self):
-        """Gets the server_id of this V3NodeStatus.
+    def delete_status(self):
+        """Gets the delete_status of this V3NodeStatus.
 
-        底层云服务器或裸金属节点ID。
 
-        :return: The server_id of this V3NodeStatus.
-        :rtype: str
+        :return: The delete_status of this V3NodeStatus.
+        :rtype: DeleteStatus
         """
-        return self._server_id
+        return self._delete_status
 
-    @server_id.setter
-    def server_id(self, server_id):
-        """Sets the server_id of this V3NodeStatus.
+    @delete_status.setter
+    def delete_status(self, delete_status):
+        """Sets the delete_status of this V3NodeStatus.
 
-        底层云服务器或裸金属节点ID。
 
-        :param server_id: The server_id of this V3NodeStatus.
-        :type: str
+        :param delete_status: The delete_status of this V3NodeStatus.
+        :type: DeleteStatus
         """
-        self._server_id = server_id
+        self._delete_status = delete_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

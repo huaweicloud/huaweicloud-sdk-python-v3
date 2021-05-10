@@ -43,8 +43,7 @@ class Port:
         'bindingprofile': 'object',
         'instance_id': 'str',
         'instance_type': 'str',
-        'port_security_enabled': 'bool',
-        'zone_id': 'str'
+        'port_security_enabled': 'bool'
     }
 
     attribute_map = {
@@ -68,11 +67,10 @@ class Port:
         'bindingprofile': 'binding:profile',
         'instance_id': 'instance_id',
         'instance_type': 'instance_type',
-        'port_security_enabled': 'port_security_enabled',
-        'zone_id': 'zone_id'
+        'port_security_enabled': 'port_security_enabled'
     }
 
-    def __init__(self, id=None, name=None, network_id=None, admin_state_up=None, mac_address=None, fixed_ips=None, device_id=None, device_owner=None, tenant_id=None, status=None, security_groups=None, allowed_address_pairs=None, extra_dhcp_opts=None, bindingvnic_type=None, dns_assignment=None, dns_name=None, bindingvif_details=None, bindingprofile=None, instance_id=None, instance_type=None, port_security_enabled=None, zone_id=None):
+    def __init__(self, id=None, name=None, network_id=None, admin_state_up=None, mac_address=None, fixed_ips=None, device_id=None, device_owner=None, tenant_id=None, status=None, security_groups=None, allowed_address_pairs=None, extra_dhcp_opts=None, bindingvnic_type=None, dns_assignment=None, dns_name=None, bindingvif_details=None, bindingprofile=None, instance_id=None, instance_type=None, port_security_enabled=None):
         """Port - a model defined in huaweicloud sdk"""
         
         
@@ -98,7 +96,6 @@ class Port:
         self._instance_id = None
         self._instance_type = None
         self._port_security_enabled = None
-        self._zone_id = None
         self.discriminator = None
 
         self.id = id
@@ -122,7 +119,6 @@ class Port:
         self.instance_id = instance_id
         self.instance_type = instance_type
         self.port_security_enabled = port_security_enabled
-        self.zone_id = zone_id
 
     @property
     def id(self):
@@ -585,28 +581,6 @@ class Port:
         :type: bool
         """
         self._port_security_enabled = port_security_enabled
-
-    @property
-    def zone_id(self):
-        """Gets the zone_id of this Port.
-
-        功能说明：port所属的可用分区
-
-        :return: The zone_id of this Port.
-        :rtype: str
-        """
-        return self._zone_id
-
-    @zone_id.setter
-    def zone_id(self, zone_id):
-        """Sets the zone_id of this Port.
-
-        功能说明：port所属的可用分区
-
-        :param zone_id: The zone_id of this Port.
-        :type: str
-        """
-        self._zone_id = zone_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

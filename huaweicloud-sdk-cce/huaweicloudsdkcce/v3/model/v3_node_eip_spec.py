@@ -23,28 +23,50 @@ class V3NodeEIPSpec:
     sensitive_list = []
 
     openapi_types = {
-        'bandwidth': 'V3NodeBandwidth',
-        'iptype': 'str'
+        'iptype': 'str',
+        'bandwidth': 'V3NodeBandwidth'
     }
 
     attribute_map = {
-        'bandwidth': 'bandwidth',
-        'iptype': 'iptype'
+        'iptype': 'iptype',
+        'bandwidth': 'bandwidth'
     }
 
-    def __init__(self, bandwidth=None, iptype=None):
+    def __init__(self, iptype=None, bandwidth=None):
         """V3NodeEIPSpec - a model defined in huaweicloud sdk"""
         
         
 
-        self._bandwidth = None
         self._iptype = None
+        self._bandwidth = None
         self.discriminator = None
 
-        if bandwidth is not None:
-            self.bandwidth = bandwidth
         if iptype is not None:
             self.iptype = iptype
+        if bandwidth is not None:
+            self.bandwidth = bandwidth
+
+    @property
+    def iptype(self):
+        """Gets the iptype of this V3NodeEIPSpec.
+
+        弹性IP类型，取值请参见“[[创建云服务器](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0167957246.html)](tag:hws)[[创建云服务器](https://support.huaweicloud.com/intl/zh-cn/api-ecs/zh-cn_topic_0167957246.html)](tag:hws_hk) > eip字段数据结构说明”表中“iptype”参数的描述。
+
+        :return: The iptype of this V3NodeEIPSpec.
+        :rtype: str
+        """
+        return self._iptype
+
+    @iptype.setter
+    def iptype(self, iptype):
+        """Sets the iptype of this V3NodeEIPSpec.
+
+        弹性IP类型，取值请参见“[[创建云服务器](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0167957246.html)](tag:hws)[[创建云服务器](https://support.huaweicloud.com/intl/zh-cn/api-ecs/zh-cn_topic_0167957246.html)](tag:hws_hk) > eip字段数据结构说明”表中“iptype”参数的描述。
+
+        :param iptype: The iptype of this V3NodeEIPSpec.
+        :type: str
+        """
+        self._iptype = iptype
 
     @property
     def bandwidth(self):
@@ -65,28 +87,6 @@ class V3NodeEIPSpec:
         :type: V3NodeBandwidth
         """
         self._bandwidth = bandwidth
-
-    @property
-    def iptype(self):
-        """Gets the iptype of this V3NodeEIPSpec.
-
-        弹性IP类型，取值请参见“[创建云服务器](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0167957246.html) > eip字段数据结构说明”表中“iptype”参数的描述。
-
-        :return: The iptype of this V3NodeEIPSpec.
-        :rtype: str
-        """
-        return self._iptype
-
-    @iptype.setter
-    def iptype(self, iptype):
-        """Sets the iptype of this V3NodeEIPSpec.
-
-        弹性IP类型，取值请参见“[创建云服务器](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0167957246.html) > eip字段数据结构说明”表中“iptype”参数的描述。
-
-        :param iptype: The iptype of this V3NodeEIPSpec.
-        :type: str
-        """
-        self._iptype = iptype
 
     def to_dict(self):
         """Returns the model properties as a dict"""

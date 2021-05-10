@@ -23,33 +23,55 @@ class ClusterCert:
     sensitive_list = []
 
     openapi_types = {
+        'server': 'str',
         'certificate_authority_data': 'str',
-        'insecure_skip_tls_verify': 'bool',
-        'server': 'str'
+        'insecure_skip_tls_verify': 'bool'
     }
 
     attribute_map = {
+        'server': 'server',
         'certificate_authority_data': 'certificate-authority-data',
-        'insecure_skip_tls_verify': 'insecure-skip-tls-verify',
-        'server': 'server'
+        'insecure_skip_tls_verify': 'insecure-skip-tls-verify'
     }
 
-    def __init__(self, certificate_authority_data=None, insecure_skip_tls_verify=None, server=None):
+    def __init__(self, server=None, certificate_authority_data=None, insecure_skip_tls_verify=None):
         """ClusterCert - a model defined in huaweicloud sdk"""
         
         
 
+        self._server = None
         self._certificate_authority_data = None
         self._insecure_skip_tls_verify = None
-        self._server = None
         self.discriminator = None
 
+        if server is not None:
+            self.server = server
         if certificate_authority_data is not None:
             self.certificate_authority_data = certificate_authority_data
         if insecure_skip_tls_verify is not None:
             self.insecure_skip_tls_verify = insecure_skip_tls_verify
-        if server is not None:
-            self.server = server
+
+    @property
+    def server(self):
+        """Gets the server of this ClusterCert.
+
+        服务器地址。
+
+        :return: The server of this ClusterCert.
+        :rtype: str
+        """
+        return self._server
+
+    @server.setter
+    def server(self, server):
+        """Sets the server of this ClusterCert.
+
+        服务器地址。
+
+        :param server: The server of this ClusterCert.
+        :type: str
+        """
+        self._server = server
 
     @property
     def certificate_authority_data(self):
@@ -94,28 +116,6 @@ class ClusterCert:
         :type: bool
         """
         self._insecure_skip_tls_verify = insecure_skip_tls_verify
-
-    @property
-    def server(self):
-        """Gets the server of this ClusterCert.
-
-        服务器地址。
-
-        :return: The server of this ClusterCert.
-        :rtype: str
-        """
-        return self._server
-
-    @server.setter
-    def server(self, server):
-        """Sets the server of this ClusterCert.
-
-        服务器地址。
-
-        :param server: The server of this ClusterCert.
-        :type: str
-        """
-        self._server = server
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -23,26 +23,48 @@ class EniNetwork:
     sensitive_list = []
 
     openapi_types = {
-        'eni_subnet_cidr': 'str',
-        'eni_subnet_id': 'str'
+        'eni_subnet_id': 'str',
+        'eni_subnet_cidr': 'str'
     }
 
     attribute_map = {
-        'eni_subnet_cidr': 'eniSubnetCIDR',
-        'eni_subnet_id': 'eniSubnetId'
+        'eni_subnet_id': 'eniSubnetId',
+        'eni_subnet_cidr': 'eniSubnetCIDR'
     }
 
-    def __init__(self, eni_subnet_cidr=None, eni_subnet_id=None):
+    def __init__(self, eni_subnet_id=None, eni_subnet_cidr=None):
         """EniNetwork - a model defined in huaweicloud sdk"""
         
         
 
-        self._eni_subnet_cidr = None
         self._eni_subnet_id = None
+        self._eni_subnet_cidr = None
         self.discriminator = None
 
-        self.eni_subnet_cidr = eni_subnet_cidr
         self.eni_subnet_id = eni_subnet_id
+        self.eni_subnet_cidr = eni_subnet_cidr
+
+    @property
+    def eni_subnet_id(self):
+        """Gets the eni_subnet_id of this EniNetwork.
+
+        用于创建控制节点的subnet的IPv4网络ID(暂不支持IPv6)。获取方法如下：- 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找IPv4网络ID。- 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)](tag:hws)[[查询子网列表](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_subnet01_0003.html)](tag:hws_hk)
+
+        :return: The eni_subnet_id of this EniNetwork.
+        :rtype: str
+        """
+        return self._eni_subnet_id
+
+    @eni_subnet_id.setter
+    def eni_subnet_id(self, eni_subnet_id):
+        """Sets the eni_subnet_id of this EniNetwork.
+
+        用于创建控制节点的subnet的IPv4网络ID(暂不支持IPv6)。获取方法如下：- 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找IPv4网络ID。- 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)](tag:hws)[[查询子网列表](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_subnet01_0003.html)](tag:hws_hk)
+
+        :param eni_subnet_id: The eni_subnet_id of this EniNetwork.
+        :type: str
+        """
+        self._eni_subnet_id = eni_subnet_id
 
     @property
     def eni_subnet_cidr(self):
@@ -65,28 +87,6 @@ class EniNetwork:
         :type: str
         """
         self._eni_subnet_cidr = eni_subnet_cidr
-
-    @property
-    def eni_subnet_id(self):
-        """Gets the eni_subnet_id of this EniNetwork.
-
-        eni子网ID
-
-        :return: The eni_subnet_id of this EniNetwork.
-        :rtype: str
-        """
-        return self._eni_subnet_id
-
-    @eni_subnet_id.setter
-    def eni_subnet_id(self, eni_subnet_id):
-        """Sets the eni_subnet_id of this EniNetwork.
-
-        eni子网ID
-
-        :param eni_subnet_id: The eni_subnet_id of this EniNetwork.
-        :type: str
-        """
-        self._eni_subnet_id = eni_subnet_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

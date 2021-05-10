@@ -13,6 +13,7 @@ from huaweicloudsdkdds.v3.model.attach_eip_response import AttachEipResponse
 from huaweicloudsdkdds.v3.model.attach_internal_ip_request import AttachInternalIpRequest
 from huaweicloudsdkdds.v3.model.attach_internal_ip_request_body import AttachInternalIpRequestBody
 from huaweicloudsdkdds.v3.model.attach_internal_ip_response import AttachInternalIpResponse
+from huaweicloudsdkdds.v3.model.az2_migrate import Az2Migrate
 from huaweicloudsdkdds.v3.model.backup_database import BackupDatabase
 from huaweicloudsdkdds.v3.model.backup_for_list import BackupForList
 from huaweicloudsdkdds.v3.model.backup_policy import BackupPolicy
@@ -84,6 +85,8 @@ from huaweicloudsdkdds.v3.model.list_auditlog_links_response import ListAuditlog
 from huaweicloudsdkdds.v3.model.list_auditlogs_request import ListAuditlogsRequest
 from huaweicloudsdkdds.v3.model.list_auditlogs_response import ListAuditlogsResponse
 from huaweicloudsdkdds.v3.model.list_auditlogs_result import ListAuditlogsResult
+from huaweicloudsdkdds.v3.model.list_az2_migrate_request import ListAz2MigrateRequest
+from huaweicloudsdkdds.v3.model.list_az2_migrate_response import ListAz2MigrateResponse
 from huaweicloudsdkdds.v3.model.list_backups_request import ListBackupsRequest
 from huaweicloudsdkdds.v3.model.list_backups_response import ListBackupsResponse
 from huaweicloudsdkdds.v3.model.list_database_roles_request import ListDatabaseRolesRequest
@@ -118,6 +121,9 @@ from huaweicloudsdkdds.v3.model.list_slow_logs_request import ListSlowLogsReques
 from huaweicloudsdkdds.v3.model.list_slow_logs_response import ListSlowLogsResponse
 from huaweicloudsdkdds.v3.model.list_storage_type_request import ListStorageTypeRequest
 from huaweicloudsdkdds.v3.model.list_storage_type_response import ListStorageTypeResponse
+from huaweicloudsdkdds.v3.model.migrate_az_request import MigrateAzRequest
+from huaweicloudsdkdds.v3.model.migrate_az_request_body import MigrateAzRequestBody
+from huaweicloudsdkdds.v3.model.migrate_az_response import MigrateAzResponse
 from huaweicloudsdkdds.v3.model.node_item import NodeItem
 from huaweicloudsdkdds.v3.model.produce_auditlog_links_request_body import ProduceAuditlogLinksRequestBody
 from huaweicloudsdkdds.v3.model.query_connections_response import QueryConnectionsResponse

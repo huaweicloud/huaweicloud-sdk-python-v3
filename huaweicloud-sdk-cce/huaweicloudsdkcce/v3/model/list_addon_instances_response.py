@@ -23,33 +23,55 @@ class ListAddonInstancesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'kind': 'str',
         'api_version': 'str',
-        'items': 'list[AddonInstance]',
-        'kind': 'str'
+        'items': 'list[AddonInstance]'
     }
 
     attribute_map = {
+        'kind': 'kind',
         'api_version': 'apiVersion',
-        'items': 'items',
-        'kind': 'kind'
+        'items': 'items'
     }
 
-    def __init__(self, api_version=None, items=None, kind=None):
+    def __init__(self, kind=None, api_version=None, items=None):
         """ListAddonInstancesResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
+        self._kind = None
         self._api_version = None
         self._items = None
-        self._kind = None
         self.discriminator = None
 
+        if kind is not None:
+            self.kind = kind
         if api_version is not None:
             self.api_version = api_version
         if items is not None:
             self.items = items
-        if kind is not None:
-            self.kind = kind
+
+    @property
+    def kind(self):
+        """Gets the kind of this ListAddonInstancesResponse.
+
+        API类型，固定值“Addon”，该值不可修改。
+
+        :return: The kind of this ListAddonInstancesResponse.
+        :rtype: str
+        """
+        return self._kind
+
+    @kind.setter
+    def kind(self, kind):
+        """Sets the kind of this ListAddonInstancesResponse.
+
+        API类型，固定值“Addon”，该值不可修改。
+
+        :param kind: The kind of this ListAddonInstancesResponse.
+        :type: str
+        """
+        self._kind = kind
 
     @property
     def api_version(self):
@@ -94,28 +116,6 @@ class ListAddonInstancesResponse(SdkResponse):
         :type: list[AddonInstance]
         """
         self._items = items
-
-    @property
-    def kind(self):
-        """Gets the kind of this ListAddonInstancesResponse.
-
-        API类型，固定值“Addon”，该值不可修改。
-
-        :return: The kind of this ListAddonInstancesResponse.
-        :rtype: str
-        """
-        return self._kind
-
-    @kind.setter
-    def kind(self, kind):
-        """Sets the kind of this ListAddonInstancesResponse.
-
-        API类型，固定值“Addon”，该值不可修改。
-
-        :param kind: The kind of this ListAddonInstancesResponse.
-        :type: str
-        """
-        self._kind = kind
 
     def to_dict(self):
         """Returns the model properties as a dict"""

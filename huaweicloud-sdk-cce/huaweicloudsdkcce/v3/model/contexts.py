@@ -23,48 +23,28 @@ class Contexts:
     sensitive_list = []
 
     openapi_types = {
-        'context': 'Context',
-        'name': 'str'
+        'name': 'str',
+        'context': 'Context'
     }
 
     attribute_map = {
-        'context': 'context',
-        'name': 'name'
+        'name': 'name',
+        'context': 'context'
     }
 
-    def __init__(self, context=None, name=None):
+    def __init__(self, name=None, context=None):
         """Contexts - a model defined in huaweicloud sdk"""
         
         
 
-        self._context = None
         self._name = None
+        self._context = None
         self.discriminator = None
 
-        if context is not None:
-            self.context = context
         if name is not None:
             self.name = name
-
-    @property
-    def context(self):
-        """Gets the context of this Contexts.
-
-
-        :return: The context of this Contexts.
-        :rtype: Context
-        """
-        return self._context
-
-    @context.setter
-    def context(self, context):
-        """Sets the context of this Contexts.
-
-
-        :param context: The context of this Contexts.
-        :type: Context
-        """
-        self._context = context
+        if context is not None:
+            self.context = context
 
     @property
     def name(self):
@@ -87,6 +67,26 @@ class Contexts:
         :type: str
         """
         self._name = name
+
+    @property
+    def context(self):
+        """Gets the context of this Contexts.
+
+
+        :return: The context of this Contexts.
+        :rtype: Context
+        """
+        return self._context
+
+    @context.setter
+    def context(self, context):
+        """Sets the context of this Contexts.
+
+
+        :param context: The context of this Contexts.
+        :type: Context
+        """
+        self._context = context
 
     def to_dict(self):
         """Returns the model properties as a dict"""

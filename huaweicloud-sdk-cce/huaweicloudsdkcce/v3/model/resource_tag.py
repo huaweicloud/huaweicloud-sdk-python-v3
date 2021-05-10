@@ -50,7 +50,7 @@ class ResourceTag:
     def key(self):
         """Gets the key of this ResourceTag.
 
-        Key值。 - 支持最大长度未36个UTF-8字符。 - 不支持特殊字符[\\=\\*\\<\\>\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
+        Key值。 - 支持最大长度为36个UTF-8字符。 - 不支持特殊字符[\\=\\*\\<\\>\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
 
         :return: The key of this ResourceTag.
         :rtype: str
@@ -61,7 +61,7 @@ class ResourceTag:
     def key(self, key):
         """Sets the key of this ResourceTag.
 
-        Key值。 - 支持最大长度未36个UTF-8字符。 - 不支持特殊字符[\\=\\*\\<\\>\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
+        Key值。 - 支持最大长度为36个UTF-8字符。 - 不支持特殊字符[\\=\\*\\<\\>\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
 
         :param key: The key of this ResourceTag.
         :type: str
@@ -72,7 +72,7 @@ class ResourceTag:
     def value(self):
         """Gets the value of this ResourceTag.
 
-        Value值。 - 支持最大长度未43个UTF-8字符。 - 不支持特殊字符[\\=\\*\\<\\>\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
+        Value值。 - 支持最大长度为43个UTF-8字符。 - 不支持特殊字符[\\=\\*\\<\\>\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
 
         :return: The value of this ResourceTag.
         :rtype: str
@@ -83,7 +83,7 @@ class ResourceTag:
     def value(self, value):
         """Sets the value of this ResourceTag.
 
-        Value值。 - 支持最大长度未43个UTF-8字符。 - 不支持特殊字符[\\=\\*\\<\\>\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
+        Value值。 - 支持最大长度为43个UTF-8字符。 - 不支持特殊字符[\\=\\*\\<\\>\\\\\\,\\|/]+ - 不支持ASCII控制字符(0-31)
 
         :param value: The value of this ResourceTag.
         :type: str

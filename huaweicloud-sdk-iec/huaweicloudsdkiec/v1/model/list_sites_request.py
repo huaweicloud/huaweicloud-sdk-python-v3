@@ -1,0 +1,283 @@
+# coding: utf-8
+
+import pprint
+import re
+
+import six
+
+
+
+
+
+class ListSitesRequest:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'limit': 'int',
+        'offset': 'int',
+        'id': 'str',
+        'area': 'str',
+        'province': 'str',
+        'city': 'str',
+        'flavor': 'str',
+        'volume_type': 'str'
+    }
+
+    attribute_map = {
+        'limit': 'limit',
+        'offset': 'offset',
+        'id': 'id',
+        'area': 'area',
+        'province': 'province',
+        'city': 'city',
+        'flavor': 'flavor',
+        'volume_type': 'volume_type'
+    }
+
+    def __init__(self, limit=None, offset=None, id=None, area=None, province=None, city=None, flavor=None, volume_type=None):
+        """ListSitesRequest - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._limit = None
+        self._offset = None
+        self._id = None
+        self._area = None
+        self._province = None
+        self._city = None
+        self._flavor = None
+        self._volume_type = None
+        self.discriminator = None
+
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if id is not None:
+            self.id = id
+        if area is not None:
+            self.area = area
+        if province is not None:
+            self.province = province
+        if city is not None:
+            self.city = city
+        if flavor is not None:
+            self.flavor = flavor
+        if volume_type is not None:
+            self.volume_type = volume_type
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListSitesRequest.
+
+
+        :return: The limit of this ListSitesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListSitesRequest.
+
+
+        :param limit: The limit of this ListSitesRequest.
+        :type: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListSitesRequest.
+
+
+        :return: The offset of this ListSitesRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListSitesRequest.
+
+
+        :param offset: The offset of this ListSitesRequest.
+        :type: int
+        """
+        self._offset = offset
+
+    @property
+    def id(self):
+        """Gets the id of this ListSitesRequest.
+
+
+        :return: The id of this ListSitesRequest.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ListSitesRequest.
+
+
+        :param id: The id of this ListSitesRequest.
+        :type: str
+        """
+        self._id = id
+
+    @property
+    def area(self):
+        """Gets the area of this ListSitesRequest.
+
+
+        :return: The area of this ListSitesRequest.
+        :rtype: str
+        """
+        return self._area
+
+    @area.setter
+    def area(self, area):
+        """Sets the area of this ListSitesRequest.
+
+
+        :param area: The area of this ListSitesRequest.
+        :type: str
+        """
+        self._area = area
+
+    @property
+    def province(self):
+        """Gets the province of this ListSitesRequest.
+
+
+        :return: The province of this ListSitesRequest.
+        :rtype: str
+        """
+        return self._province
+
+    @province.setter
+    def province(self, province):
+        """Sets the province of this ListSitesRequest.
+
+
+        :param province: The province of this ListSitesRequest.
+        :type: str
+        """
+        self._province = province
+
+    @property
+    def city(self):
+        """Gets the city of this ListSitesRequest.
+
+
+        :return: The city of this ListSitesRequest.
+        :rtype: str
+        """
+        return self._city
+
+    @city.setter
+    def city(self, city):
+        """Sets the city of this ListSitesRequest.
+
+
+        :param city: The city of this ListSitesRequest.
+        :type: str
+        """
+        self._city = city
+
+    @property
+    def flavor(self):
+        """Gets the flavor of this ListSitesRequest.
+
+
+        :return: The flavor of this ListSitesRequest.
+        :rtype: str
+        """
+        return self._flavor
+
+    @flavor.setter
+    def flavor(self, flavor):
+        """Sets the flavor of this ListSitesRequest.
+
+
+        :param flavor: The flavor of this ListSitesRequest.
+        :type: str
+        """
+        self._flavor = flavor
+
+    @property
+    def volume_type(self):
+        """Gets the volume_type of this ListSitesRequest.
+
+
+        :return: The volume_type of this ListSitesRequest.
+        :rtype: str
+        """
+        return self._volume_type
+
+    @volume_type.setter
+    def volume_type(self, volume_type):
+        """Sets the volume_type of this ListSitesRequest.
+
+
+        :param volume_type: The volume_type of this ListSitesRequest.
+        :type: str
+        """
+        self._volume_type = volume_type
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        return pprint.pformat(self.to_dict())
+
+    def __repr__(self):
+        """For `print` and `pprint`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ListSitesRequest):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

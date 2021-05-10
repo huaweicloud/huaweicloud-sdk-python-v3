@@ -113,6 +113,136 @@ class BmsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def batch_create_baremetal_server_tags_async(self, request):
+        """批量添加裸金属服务器标签
+
+        - 为指定裸金属服务器批量添加标签。
+
+        :param BatchCreateBaremetalServerTagsRequest request
+        :return: BatchCreateBaremetalServerTagsResponse
+        """
+        return self.batch_create_baremetal_server_tags_with_http_info(request)
+
+    def batch_create_baremetal_server_tags_with_http_info(self, request):
+        """批量添加裸金属服务器标签
+
+        - 为指定裸金属服务器批量添加标签。
+
+        :param BatchCreateBaremetalServerTagsRequest request
+        :return: BatchCreateBaremetalServerTagsResponse
+        """
+
+        all_params = ['server_id', 'batch_create_baremetal_server_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/baremetalservers/{server_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchCreateBaremetalServerTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_delete_baremetal_server_tags_async(self, request):
+        """批量删除l裸金属服务器标签
+
+        - 为指定云服务器批量删除标签。
+
+        :param BatchDeleteBaremetalServerTagsRequest request
+        :return: BatchDeleteBaremetalServerTagsResponse
+        """
+        return self.batch_delete_baremetal_server_tags_with_http_info(request)
+
+    def batch_delete_baremetal_server_tags_with_http_info(self, request):
+        """批量删除l裸金属服务器标签
+
+        - 为指定云服务器批量删除标签。
+
+        :param BatchDeleteBaremetalServerTagsRequest request
+        :return: BatchDeleteBaremetalServerTagsResponse
+        """
+
+        all_params = ['server_id', 'batch_delete_baremetal_server_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/baremetalservers/{server_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteBaremetalServerTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def batch_reboot_baremetal_servers_async(self, request):
         """重启裸金属服务器
 
@@ -950,6 +1080,69 @@ class BmsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowBaremetalServerInterfaceAttachmentsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_baremetal_server_tags_async(self, request):
+        """查询裸金属服务器标签
+
+        - 查询指定云服务器的标签信息。
+
+        :param ShowBaremetalServerTagsRequest request
+        :return: ShowBaremetalServerTagsResponse
+        """
+        return self.show_baremetal_server_tags_with_http_info(request)
+
+    def show_baremetal_server_tags_with_http_info(self, request):
+        """查询裸金属服务器标签
+
+        - 查询指定云服务器的标签信息。
+
+        :param ShowBaremetalServerTagsRequest request
+        :return: ShowBaremetalServerTagsResponse
+        """
+
+        all_params = ['server_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/baremetalservers/{server_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowBaremetalServerTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

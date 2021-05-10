@@ -42,7 +42,6 @@ from huaweicloudsdkcce.v3.model.create_node_pool_request import CreateNodePoolRe
 from huaweicloudsdkcce.v3.model.create_node_pool_response import CreateNodePoolResponse
 from huaweicloudsdkcce.v3.model.create_node_request import CreateNodeRequest
 from huaweicloudsdkcce.v3.model.create_node_response import CreateNodeResponse
-from huaweicloudsdkcce.v3.model.data_volume_metadata import DataVolumeMetadata
 from huaweicloudsdkcce.v3.model.delete_addon_instance_request import DeleteAddonInstanceRequest
 from huaweicloudsdkcce.v3.model.delete_addon_instance_response import DeleteAddonInstanceResponse
 from huaweicloudsdkcce.v3.model.delete_cloud_persistent_volume_claims_request import DeleteCloudPersistentVolumeClaimsRequest
@@ -89,6 +88,7 @@ from huaweicloudsdkcce.v3.model.persistent_volume_claim_spec import PersistentVo
 from huaweicloudsdkcce.v3.model.persistent_volume_claim_status import PersistentVolumeClaimStatus
 from huaweicloudsdkcce.v3.model.resource_requirements import ResourceRequirements
 from huaweicloudsdkcce.v3.model.resource_tag import ResourceTag
+from huaweicloudsdkcce.v3.model.runtime import Runtime
 from huaweicloudsdkcce.v3.model.show_addon_instance_request import ShowAddonInstanceRequest
 from huaweicloudsdkcce.v3.model.show_addon_instance_response import ShowAddonInstanceResponse
 from huaweicloudsdkcce.v3.model.show_cluster_metadata import ShowClusterMetadata
@@ -117,7 +117,6 @@ from huaweicloudsdkcce.v3.model.user_tag import UserTag
 from huaweicloudsdkcce.v3.model.users import Users
 from huaweicloudsdkcce.v3.model.v3_cluster import V3Cluster
 from huaweicloudsdkcce.v3.model.v3_cluster_spec import V3ClusterSpec
-from huaweicloudsdkcce.v3.model.v3_data_volume import V3DataVolume
 from huaweicloudsdkcce.v3.model.v3_node import V3Node
 from huaweicloudsdkcce.v3.model.v3_node_bandwidth import V3NodeBandwidth
 from huaweicloudsdkcce.v3.model.v3_node_create_request import V3NodeCreateRequest
@@ -125,6 +124,7 @@ from huaweicloudsdkcce.v3.model.v3_node_eip_spec import V3NodeEIPSpec
 from huaweicloudsdkcce.v3.model.v3_node_public_ip import V3NodePublicIP
 from huaweicloudsdkcce.v3.model.v3_node_spec import V3NodeSpec
 from huaweicloudsdkcce.v3.model.v3_node_status import V3NodeStatus
-from huaweicloudsdkcce.v3.model.v3_root_volume import V3RootVolume
+from huaweicloudsdkcce.v3.model.v3_volume import V3Volume
 from huaweicloudsdkcce.v3.model.versions import Versions
+from huaweicloudsdkcce.v3.model.volume_metadata import VolumeMetadata
 

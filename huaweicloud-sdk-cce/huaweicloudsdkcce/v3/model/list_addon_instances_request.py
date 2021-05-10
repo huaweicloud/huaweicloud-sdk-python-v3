@@ -23,22 +23,47 @@ class ListAddonInstancesRequest:
     sensitive_list = []
 
     openapi_types = {
+        'addon_template_name': 'str',
         'cluster_id': 'str'
     }
 
     attribute_map = {
+        'addon_template_name': 'addon_template_name',
         'cluster_id': 'cluster_id'
     }
 
-    def __init__(self, cluster_id=None):
+    def __init__(self, addon_template_name=None, cluster_id=None):
         """ListAddonInstancesRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._addon_template_name = None
         self._cluster_id = None
         self.discriminator = None
 
+        if addon_template_name is not None:
+            self.addon_template_name = addon_template_name
         self.cluster_id = cluster_id
+
+    @property
+    def addon_template_name(self):
+        """Gets the addon_template_name of this ListAddonInstancesRequest.
+
+
+        :return: The addon_template_name of this ListAddonInstancesRequest.
+        :rtype: str
+        """
+        return self._addon_template_name
+
+    @addon_template_name.setter
+    def addon_template_name(self, addon_template_name):
+        """Sets the addon_template_name of this ListAddonInstancesRequest.
+
+
+        :param addon_template_name: The addon_template_name of this ListAddonInstancesRequest.
+        :type: str
+        """
+        self._addon_template_name = addon_template_name
 
     @property
     def cluster_id(self):

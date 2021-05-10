@@ -44,7 +44,7 @@ class CertDuration:
     def duration(self):
         """Gets the duration of this CertDuration.
 
-        集群证书有效时间，单位为天，非管理员用户可申请 1-30天，管理员用户可申请 1-30天或无限限制（-1）
+        集群证书有效时间，单位为天，用户可申请1-10950天，若填写-1则为最大值10950天，10950天约为30年。
 
         :return: The duration of this CertDuration.
         :rtype: int
@@ -55,7 +55,7 @@ class CertDuration:
     def duration(self, duration):
         """Sets the duration of this CertDuration.
 
-        集群证书有效时间，单位为天，非管理员用户可申请 1-30天，管理员用户可申请 1-30天或无限限制（-1）
+        集群证书有效时间，单位为天，用户可申请1-10950天，若填写-1则为最大值10950天，10950天约为30年。
 
         :param duration: The duration of this CertDuration.
         :type: int

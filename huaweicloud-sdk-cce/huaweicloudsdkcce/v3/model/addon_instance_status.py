@@ -23,103 +23,39 @@ class AddonInstanceStatus:
     sensitive_list = []
 
     openapi_types = {
-        'current_version': 'Versions',
-        'message': 'str',
-        'reason': 'str',
         'status': 'str',
-        'target_versions': 'list[str]'
+        'reason': 'str',
+        'message': 'str',
+        'target_versions': 'list[str]',
+        'current_version': 'Versions'
     }
 
     attribute_map = {
-        'current_version': 'currentVersion',
-        'message': 'message',
-        'reason': 'reason',
         'status': 'status',
-        'target_versions': 'targetVersions'
+        'reason': 'Reason',
+        'message': 'message',
+        'target_versions': 'targetVersions',
+        'current_version': 'currentVersion'
     }
 
-    def __init__(self, current_version=None, message=None, reason=None, status=None, target_versions=None):
+    def __init__(self, status=None, reason=None, message=None, target_versions=None, current_version=None):
         """AddonInstanceStatus - a model defined in huaweicloud sdk"""
         
         
 
-        self._current_version = None
-        self._message = None
-        self._reason = None
         self._status = None
+        self._reason = None
+        self._message = None
         self._target_versions = None
+        self._current_version = None
         self.discriminator = None
 
-        self.current_version = current_version
-        self.message = message
-        self.reason = reason
         self.status = status
+        self.reason = reason
+        self.message = message
         if target_versions is not None:
             self.target_versions = target_versions
-
-    @property
-    def current_version(self):
-        """Gets the current_version of this AddonInstanceStatus.
-
-
-        :return: The current_version of this AddonInstanceStatus.
-        :rtype: Versions
-        """
-        return self._current_version
-
-    @current_version.setter
-    def current_version(self, current_version):
-        """Sets the current_version of this AddonInstanceStatus.
-
-
-        :param current_version: The current_version of this AddonInstanceStatus.
-        :type: Versions
-        """
-        self._current_version = current_version
-
-    @property
-    def message(self):
-        """Gets the message of this AddonInstanceStatus.
-
-        安装错误详情
-
-        :return: The message of this AddonInstanceStatus.
-        :rtype: str
-        """
-        return self._message
-
-    @message.setter
-    def message(self, message):
-        """Sets the message of this AddonInstanceStatus.
-
-        安装错误详情
-
-        :param message: The message of this AddonInstanceStatus.
-        :type: str
-        """
-        self._message = message
-
-    @property
-    def reason(self):
-        """Gets the reason of this AddonInstanceStatus.
-
-        插件安装失败原因
-
-        :return: The reason of this AddonInstanceStatus.
-        :rtype: str
-        """
-        return self._reason
-
-    @reason.setter
-    def reason(self, reason):
-        """Sets the reason of this AddonInstanceStatus.
-
-        插件安装失败原因
-
-        :param reason: The reason of this AddonInstanceStatus.
-        :type: str
-        """
-        self._reason = reason
+        self.current_version = current_version
 
     @property
     def status(self):
@@ -144,6 +80,50 @@ class AddonInstanceStatus:
         self._status = status
 
     @property
+    def reason(self):
+        """Gets the reason of this AddonInstanceStatus.
+
+        插件安装失败原因
+
+        :return: The reason of this AddonInstanceStatus.
+        :rtype: str
+        """
+        return self._reason
+
+    @reason.setter
+    def reason(self, reason):
+        """Sets the reason of this AddonInstanceStatus.
+
+        插件安装失败原因
+
+        :param reason: The reason of this AddonInstanceStatus.
+        :type: str
+        """
+        self._reason = reason
+
+    @property
+    def message(self):
+        """Gets the message of this AddonInstanceStatus.
+
+        安装错误详情
+
+        :return: The message of this AddonInstanceStatus.
+        :rtype: str
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        """Sets the message of this AddonInstanceStatus.
+
+        安装错误详情
+
+        :param message: The message of this AddonInstanceStatus.
+        :type: str
+        """
+        self._message = message
+
+    @property
     def target_versions(self):
         """Gets the target_versions of this AddonInstanceStatus.
 
@@ -164,6 +144,26 @@ class AddonInstanceStatus:
         :type: list[str]
         """
         self._target_versions = target_versions
+
+    @property
+    def current_version(self):
+        """Gets the current_version of this AddonInstanceStatus.
+
+
+        :return: The current_version of this AddonInstanceStatus.
+        :rtype: Versions
+        """
+        return self._current_version
+
+    @current_version.setter
+    def current_version(self, current_version):
+        """Sets the current_version of this AddonInstanceStatus.
+
+
+        :param current_version: The current_version of this AddonInstanceStatus.
+        :type: Versions
+        """
+        self._current_version = current_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

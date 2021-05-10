@@ -23,49 +23,27 @@ class PersistentVolumeClaimMetadata:
     sensitive_list = []
 
     openapi_types = {
-        'labels': 'str',
-        'name': 'str'
+        'name': 'str',
+        'labels': 'str'
     }
 
     attribute_map = {
-        'labels': 'labels',
-        'name': 'name'
+        'name': 'name',
+        'labels': 'labels'
     }
 
-    def __init__(self, labels=None, name=None):
+    def __init__(self, name=None, labels=None):
         """PersistentVolumeClaimMetadata - a model defined in huaweicloud sdk"""
         
         
 
-        self._labels = None
         self._name = None
+        self._labels = None
         self.discriminator = None
 
+        self.name = name
         if labels is not None:
             self.labels = labels
-        self.name = name
-
-    @property
-    def labels(self):
-        """Gets the labels of this PersistentVolumeClaimMetadata.
-
-        PersistentVolumeClaim标签，key/value对格式。 - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀，例如example.com/my-key， DNS子域最长253个字符。 - Value：可以为空或者非空字符串，非空字符串必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。
-
-        :return: The labels of this PersistentVolumeClaimMetadata.
-        :rtype: str
-        """
-        return self._labels
-
-    @labels.setter
-    def labels(self, labels):
-        """Sets the labels of this PersistentVolumeClaimMetadata.
-
-        PersistentVolumeClaim标签，key/value对格式。 - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀，例如example.com/my-key， DNS子域最长253个字符。 - Value：可以为空或者非空字符串，非空字符串必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。
-
-        :param labels: The labels of this PersistentVolumeClaimMetadata.
-        :type: str
-        """
-        self._labels = labels
 
     @property
     def name(self):
@@ -88,6 +66,28 @@ class PersistentVolumeClaimMetadata:
         :type: str
         """
         self._name = name
+
+    @property
+    def labels(self):
+        """Gets the labels of this PersistentVolumeClaimMetadata.
+
+        PersistentVolumeClaim标签，key/value对格式。 - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀，例如example.com/my-key， DNS子域最长253个字符。 - Value：可以为空或者非空字符串，非空字符串必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。
+
+        :return: The labels of this PersistentVolumeClaimMetadata.
+        :rtype: str
+        """
+        return self._labels
+
+    @labels.setter
+    def labels(self, labels):
+        """Sets the labels of this PersistentVolumeClaimMetadata.
+
+        PersistentVolumeClaim标签，key/value对格式。 - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀，例如example.com/my-key， DNS子域最长253个字符。 - Value：可以为空或者非空字符串，非空字符串必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。
+
+        :param labels: The labels of this PersistentVolumeClaimMetadata.
+        :type: str
+        """
+        self._labels = labels
 
     def to_dict(self):
         """Returns the model properties as a dict"""

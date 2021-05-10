@@ -23,69 +23,69 @@ class Versions:
     sensitive_list = []
 
     openapi_types = {
-        'creation_timestamp': 'date',
+        'version': 'str',
         'input': 'object',
         'stable': 'bool',
-        'support_versions': 'list[SupportVersions]',
         'translate': 'object',
-        'update_timestamp': 'date',
-        'version': 'str'
+        'support_versions': 'list[SupportVersions]',
+        'creation_timestamp': 'date',
+        'update_timestamp': 'date'
     }
 
     attribute_map = {
-        'creation_timestamp': 'creationTimestamp',
+        'version': 'version',
         'input': 'input',
         'stable': 'stable',
-        'support_versions': 'supportVersions',
         'translate': 'translate',
-        'update_timestamp': 'updateTimestamp',
-        'version': 'version'
+        'support_versions': 'supportVersions',
+        'creation_timestamp': 'creationTimestamp',
+        'update_timestamp': 'updateTimestamp'
     }
 
-    def __init__(self, creation_timestamp=None, input=None, stable=None, support_versions=None, translate=None, update_timestamp=None, version=None):
+    def __init__(self, version=None, input=None, stable=None, translate=None, support_versions=None, creation_timestamp=None, update_timestamp=None):
         """Versions - a model defined in huaweicloud sdk"""
         
         
 
-        self._creation_timestamp = None
+        self._version = None
         self._input = None
         self._stable = None
-        self._support_versions = None
         self._translate = None
+        self._support_versions = None
+        self._creation_timestamp = None
         self._update_timestamp = None
-        self._version = None
         self.discriminator = None
 
-        if creation_timestamp is not None:
-            self.creation_timestamp = creation_timestamp
+        self.version = version
         self.input = input
         self.stable = stable
-        self.support_versions = support_versions
         self.translate = translate
+        self.support_versions = support_versions
+        if creation_timestamp is not None:
+            self.creation_timestamp = creation_timestamp
         self.update_timestamp = update_timestamp
-        self.version = version
 
     @property
-    def creation_timestamp(self):
-        """Gets the creation_timestamp of this Versions.
+    def version(self):
+        """Gets the version of this Versions.
 
-        创建时间
+        插件版本号
 
-        :return: The creation_timestamp of this Versions.
-        :rtype: date
+        :return: The version of this Versions.
+        :rtype: str
         """
-        return self._creation_timestamp
+        return self._version
 
-    @creation_timestamp.setter
-    def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this Versions.
+    @version.setter
+    def version(self, version):
+        """Sets the version of this Versions.
 
-        创建时间
+        插件版本号
 
-        :param creation_timestamp: The creation_timestamp of this Versions.
-        :type: date
+        :param version: The version of this Versions.
+        :type: str
         """
-        self._creation_timestamp = creation_timestamp
+        self._version = version
 
     @property
     def input(self):
@@ -132,28 +132,6 @@ class Versions:
         self._stable = stable
 
     @property
-    def support_versions(self):
-        """Gets the support_versions of this Versions.
-
-        支持集群版本号
-
-        :return: The support_versions of this Versions.
-        :rtype: list[SupportVersions]
-        """
-        return self._support_versions
-
-    @support_versions.setter
-    def support_versions(self, support_versions):
-        """Sets the support_versions of this Versions.
-
-        支持集群版本号
-
-        :param support_versions: The support_versions of this Versions.
-        :type: list[SupportVersions]
-        """
-        self._support_versions = support_versions
-
-    @property
     def translate(self):
         """Gets the translate of this Versions.
 
@@ -176,6 +154,50 @@ class Versions:
         self._translate = translate
 
     @property
+    def support_versions(self):
+        """Gets the support_versions of this Versions.
+
+        支持集群版本号
+
+        :return: The support_versions of this Versions.
+        :rtype: list[SupportVersions]
+        """
+        return self._support_versions
+
+    @support_versions.setter
+    def support_versions(self, support_versions):
+        """Sets the support_versions of this Versions.
+
+        支持集群版本号
+
+        :param support_versions: The support_versions of this Versions.
+        :type: list[SupportVersions]
+        """
+        self._support_versions = support_versions
+
+    @property
+    def creation_timestamp(self):
+        """Gets the creation_timestamp of this Versions.
+
+        创建时间
+
+        :return: The creation_timestamp of this Versions.
+        :rtype: date
+        """
+        return self._creation_timestamp
+
+    @creation_timestamp.setter
+    def creation_timestamp(self, creation_timestamp):
+        """Sets the creation_timestamp of this Versions.
+
+        创建时间
+
+        :param creation_timestamp: The creation_timestamp of this Versions.
+        :type: date
+        """
+        self._creation_timestamp = creation_timestamp
+
+    @property
     def update_timestamp(self):
         """Gets the update_timestamp of this Versions.
 
@@ -196,28 +218,6 @@ class Versions:
         :type: date
         """
         self._update_timestamp = update_timestamp
-
-    @property
-    def version(self):
-        """Gets the version of this Versions.
-
-        插件版本号
-
-        :return: The version of this Versions.
-        :rtype: str
-        """
-        return self._version
-
-    @version.setter
-    def version(self, version):
-        """Sets the version of this Versions.
-
-        插件版本号
-
-        :param version: The version of this Versions.
-        :type: str
-        """
-        self._version = version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

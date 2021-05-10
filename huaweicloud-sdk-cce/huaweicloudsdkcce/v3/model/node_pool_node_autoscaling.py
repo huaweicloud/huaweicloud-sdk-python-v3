@@ -24,42 +24,42 @@ class NodePoolNodeAutoscaling:
 
     openapi_types = {
         'enable': 'bool',
-        'max_node_count': 'int',
         'min_node_count': 'int',
-        'priority': 'int',
-        'scale_down_cooldown_time': 'int'
+        'max_node_count': 'int',
+        'scale_down_cooldown_time': 'int',
+        'priority': 'int'
     }
 
     attribute_map = {
         'enable': 'enable',
-        'max_node_count': 'maxNodeCount',
         'min_node_count': 'minNodeCount',
-        'priority': 'priority',
-        'scale_down_cooldown_time': 'scaleDownCooldownTime'
+        'max_node_count': 'maxNodeCount',
+        'scale_down_cooldown_time': 'scaleDownCooldownTime',
+        'priority': 'priority'
     }
 
-    def __init__(self, enable=None, max_node_count=None, min_node_count=None, priority=None, scale_down_cooldown_time=None):
+    def __init__(self, enable=None, min_node_count=None, max_node_count=None, scale_down_cooldown_time=None, priority=None):
         """NodePoolNodeAutoscaling - a model defined in huaweicloud sdk"""
         
         
 
         self._enable = None
-        self._max_node_count = None
         self._min_node_count = None
-        self._priority = None
+        self._max_node_count = None
         self._scale_down_cooldown_time = None
+        self._priority = None
         self.discriminator = None
 
         if enable is not None:
             self.enable = enable
-        if max_node_count is not None:
-            self.max_node_count = max_node_count
         if min_node_count is not None:
             self.min_node_count = min_node_count
-        if priority is not None:
-            self.priority = priority
+        if max_node_count is not None:
+            self.max_node_count = max_node_count
         if scale_down_cooldown_time is not None:
             self.scale_down_cooldown_time = scale_down_cooldown_time
+        if priority is not None:
+            self.priority = priority
 
     @property
     def enable(self):
@@ -84,28 +84,6 @@ class NodePoolNodeAutoscaling:
         self._enable = enable
 
     @property
-    def max_node_count(self):
-        """Gets the max_node_count of this NodePoolNodeAutoscaling.
-
-        若开启自动扩缩容，最大能扩容的节点个数，应大于等于 minNodeCount，且不超过集群规格对应的节点数量上限。
-
-        :return: The max_node_count of this NodePoolNodeAutoscaling.
-        :rtype: int
-        """
-        return self._max_node_count
-
-    @max_node_count.setter
-    def max_node_count(self, max_node_count):
-        """Sets the max_node_count of this NodePoolNodeAutoscaling.
-
-        若开启自动扩缩容，最大能扩容的节点个数，应大于等于 minNodeCount，且不超过集群规格对应的节点数量上限。
-
-        :param max_node_count: The max_node_count of this NodePoolNodeAutoscaling.
-        :type: int
-        """
-        self._max_node_count = max_node_count
-
-    @property
     def min_node_count(self):
         """Gets the min_node_count of this NodePoolNodeAutoscaling.
 
@@ -128,26 +106,26 @@ class NodePoolNodeAutoscaling:
         self._min_node_count = min_node_count
 
     @property
-    def priority(self):
-        """Gets the priority of this NodePoolNodeAutoscaling.
+    def max_node_count(self):
+        """Gets the max_node_count of this NodePoolNodeAutoscaling.
 
-        节点池权重，更高的权重在扩容时拥有更高的优先级
+        若开启自动扩缩容，最大能扩容的节点个数，应大于等于 minNodeCount，且不超过集群规格对应的节点数量上限。
 
-        :return: The priority of this NodePoolNodeAutoscaling.
+        :return: The max_node_count of this NodePoolNodeAutoscaling.
         :rtype: int
         """
-        return self._priority
+        return self._max_node_count
 
-    @priority.setter
-    def priority(self, priority):
-        """Sets the priority of this NodePoolNodeAutoscaling.
+    @max_node_count.setter
+    def max_node_count(self, max_node_count):
+        """Sets the max_node_count of this NodePoolNodeAutoscaling.
 
-        节点池权重，更高的权重在扩容时拥有更高的优先级
+        若开启自动扩缩容，最大能扩容的节点个数，应大于等于 minNodeCount，且不超过集群规格对应的节点数量上限。
 
-        :param priority: The priority of this NodePoolNodeAutoscaling.
+        :param max_node_count: The max_node_count of this NodePoolNodeAutoscaling.
         :type: int
         """
-        self._priority = priority
+        self._max_node_count = max_node_count
 
     @property
     def scale_down_cooldown_time(self):
@@ -170,6 +148,28 @@ class NodePoolNodeAutoscaling:
         :type: int
         """
         self._scale_down_cooldown_time = scale_down_cooldown_time
+
+    @property
+    def priority(self):
+        """Gets the priority of this NodePoolNodeAutoscaling.
+
+        节点池权重，更高的权重在扩容时拥有更高的优先级
+
+        :return: The priority of this NodePoolNodeAutoscaling.
+        :rtype: int
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        """Sets the priority of this NodePoolNodeAutoscaling.
+
+        节点池权重，更高的权重在扩容时拥有更高的优先级
+
+        :param priority: The priority of this NodePoolNodeAutoscaling.
+        :type: int
+        """
+        self._priority = priority
 
     def to_dict(self):
         """Returns the model properties as a dict"""

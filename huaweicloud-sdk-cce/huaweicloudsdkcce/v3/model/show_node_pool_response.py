@@ -23,65 +23,43 @@ class ShowNodePoolResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'api_version': 'str',
         'kind': 'str',
+        'api_version': 'str',
         'metadata': 'NodePoolMetadata',
         'spec': 'NodePoolSpec',
         'status': 'NodePoolStatus'
     }
 
     attribute_map = {
-        'api_version': 'apiVersion',
         'kind': 'kind',
+        'api_version': 'apiVersion',
         'metadata': 'metadata',
         'spec': 'spec',
         'status': 'status'
     }
 
-    def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
+    def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
         """ShowNodePoolResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
-        self._api_version = None
         self._kind = None
+        self._api_version = None
         self._metadata = None
         self._spec = None
         self._status = None
         self.discriminator = None
 
-        if api_version is not None:
-            self.api_version = api_version
         if kind is not None:
             self.kind = kind
+        if api_version is not None:
+            self.api_version = api_version
         if metadata is not None:
             self.metadata = metadata
         if spec is not None:
             self.spec = spec
         if status is not None:
             self.status = status
-
-    @property
-    def api_version(self):
-        """Gets the api_version of this ShowNodePoolResponse.
-
-        API版本，固定值“v3”。
-
-        :return: The api_version of this ShowNodePoolResponse.
-        :rtype: str
-        """
-        return self._api_version
-
-    @api_version.setter
-    def api_version(self, api_version):
-        """Sets the api_version of this ShowNodePoolResponse.
-
-        API版本，固定值“v3”。
-
-        :param api_version: The api_version of this ShowNodePoolResponse.
-        :type: str
-        """
-        self._api_version = api_version
 
     @property
     def kind(self):
@@ -104,6 +82,28 @@ class ShowNodePoolResponse(SdkResponse):
         :type: str
         """
         self._kind = kind
+
+    @property
+    def api_version(self):
+        """Gets the api_version of this ShowNodePoolResponse.
+
+        API版本，固定值“v3”。
+
+        :return: The api_version of this ShowNodePoolResponse.
+        :rtype: str
+        """
+        return self._api_version
+
+    @api_version.setter
+    def api_version(self, api_version):
+        """Sets the api_version of this ShowNodePoolResponse.
+
+        API版本，固定值“v3”。
+
+        :param api_version: The api_version of this ShowNodePoolResponse.
+        :type: str
+        """
+        self._api_version = api_version
 
     @property
     def metadata(self):

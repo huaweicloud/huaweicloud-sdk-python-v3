@@ -23,53 +23,75 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'api_version': 'str',
-        'clusters': 'list[Clusters]',
-        'contexts': 'list[Contexts]',
-        'current_context': 'str',
         'kind': 'str',
+        'api_version': 'str',
         'preferences': 'object',
-        'users': 'list[Users]'
+        'clusters': 'list[Clusters]',
+        'users': 'list[Users]',
+        'contexts': 'list[Contexts]',
+        'current_context': 'str'
     }
 
     attribute_map = {
-        'api_version': 'apiVersion',
-        'clusters': 'clusters',
-        'contexts': 'contexts',
-        'current_context': 'current-context',
         'kind': 'kind',
+        'api_version': 'apiVersion',
         'preferences': 'preferences',
-        'users': 'users'
+        'clusters': 'clusters',
+        'users': 'users',
+        'contexts': 'contexts',
+        'current_context': 'current-context'
     }
 
-    def __init__(self, api_version=None, clusters=None, contexts=None, current_context=None, kind=None, preferences=None, users=None):
+    def __init__(self, kind=None, api_version=None, preferences=None, clusters=None, users=None, contexts=None, current_context=None):
         """CreateKubernetesClusterCertResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
+        self._kind = None
         self._api_version = None
+        self._preferences = None
         self._clusters = None
+        self._users = None
         self._contexts = None
         self._current_context = None
-        self._kind = None
-        self._preferences = None
-        self._users = None
         self.discriminator = None
 
+        if kind is not None:
+            self.kind = kind
         if api_version is not None:
             self.api_version = api_version
+        if preferences is not None:
+            self.preferences = preferences
         if clusters is not None:
             self.clusters = clusters
+        if users is not None:
+            self.users = users
         if contexts is not None:
             self.contexts = contexts
         if current_context is not None:
             self.current_context = current_context
-        if kind is not None:
-            self.kind = kind
-        if preferences is not None:
-            self.preferences = preferences
-        if users is not None:
-            self.users = users
+
+    @property
+    def kind(self):
+        """Gets the kind of this CreateKubernetesClusterCertResponse.
+
+        API类型，固定值“Config”，该值不可修改。 
+
+        :return: The kind of this CreateKubernetesClusterCertResponse.
+        :rtype: str
+        """
+        return self._kind
+
+    @kind.setter
+    def kind(self, kind):
+        """Sets the kind of this CreateKubernetesClusterCertResponse.
+
+        API类型，固定值“Config”，该值不可修改。 
+
+        :param kind: The kind of this CreateKubernetesClusterCertResponse.
+        :type: str
+        """
+        self._kind = kind
 
     @property
     def api_version(self):
@@ -94,6 +116,28 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         self._api_version = api_version
 
     @property
+    def preferences(self):
+        """Gets the preferences of this CreateKubernetesClusterCertResponse.
+
+        当前未使用该字段，当前默认为空。
+
+        :return: The preferences of this CreateKubernetesClusterCertResponse.
+        :rtype: object
+        """
+        return self._preferences
+
+    @preferences.setter
+    def preferences(self, preferences):
+        """Sets the preferences of this CreateKubernetesClusterCertResponse.
+
+        当前未使用该字段，当前默认为空。
+
+        :param preferences: The preferences of this CreateKubernetesClusterCertResponse.
+        :type: object
+        """
+        self._preferences = preferences
+
+    @property
     def clusters(self):
         """Gets the clusters of this CreateKubernetesClusterCertResponse.
 
@@ -114,6 +158,28 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         :type: list[Clusters]
         """
         self._clusters = clusters
+
+    @property
+    def users(self):
+        """Gets the users of this CreateKubernetesClusterCertResponse.
+
+        存放了指定用户的一些证书信息和ClientKey信息。
+
+        :return: The users of this CreateKubernetesClusterCertResponse.
+        :rtype: list[Users]
+        """
+        return self._users
+
+    @users.setter
+    def users(self, users):
+        """Sets the users of this CreateKubernetesClusterCertResponse.
+
+        存放了指定用户的一些证书信息和ClientKey信息。
+
+        :param users: The users of this CreateKubernetesClusterCertResponse.
+        :type: list[Users]
+        """
+        self._users = users
 
     @property
     def contexts(self):
@@ -158,72 +224,6 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         :type: str
         """
         self._current_context = current_context
-
-    @property
-    def kind(self):
-        """Gets the kind of this CreateKubernetesClusterCertResponse.
-
-        API类型，固定值“Config”，该值不可修改。 
-
-        :return: The kind of this CreateKubernetesClusterCertResponse.
-        :rtype: str
-        """
-        return self._kind
-
-    @kind.setter
-    def kind(self, kind):
-        """Sets the kind of this CreateKubernetesClusterCertResponse.
-
-        API类型，固定值“Config”，该值不可修改。 
-
-        :param kind: The kind of this CreateKubernetesClusterCertResponse.
-        :type: str
-        """
-        self._kind = kind
-
-    @property
-    def preferences(self):
-        """Gets the preferences of this CreateKubernetesClusterCertResponse.
-
-        当前未使用该字段，当前默认为空。
-
-        :return: The preferences of this CreateKubernetesClusterCertResponse.
-        :rtype: object
-        """
-        return self._preferences
-
-    @preferences.setter
-    def preferences(self, preferences):
-        """Sets the preferences of this CreateKubernetesClusterCertResponse.
-
-        当前未使用该字段，当前默认为空。
-
-        :param preferences: The preferences of this CreateKubernetesClusterCertResponse.
-        :type: object
-        """
-        self._preferences = preferences
-
-    @property
-    def users(self):
-        """Gets the users of this CreateKubernetesClusterCertResponse.
-
-        存放了指定用户的一些证书信息和ClientKey信息。
-
-        :return: The users of this CreateKubernetesClusterCertResponse.
-        :rtype: list[Users]
-        """
-        return self._users
-
-    @users.setter
-    def users(self, users):
-        """Sets the users of this CreateKubernetesClusterCertResponse.
-
-        存放了指定用户的一些证书信息和ClientKey信息。
-
-        :param users: The users of this CreateKubernetesClusterCertResponse.
-        :type: list[Users]
-        """
-        self._users = users
 
     def to_dict(self):
         """Returns the model properties as a dict"""

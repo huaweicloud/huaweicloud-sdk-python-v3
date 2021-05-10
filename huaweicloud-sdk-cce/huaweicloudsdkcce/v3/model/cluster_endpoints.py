@@ -23,50 +23,28 @@ class ClusterEndpoints:
     sensitive_list = []
 
     openapi_types = {
-        'type': 'str',
-        'url': 'str'
+        'url': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
-        'type': 'type',
-        'url': 'url'
+        'url': 'url',
+        'type': 'type'
     }
 
-    def __init__(self, type=None, url=None):
+    def __init__(self, url=None, type=None):
         """ClusterEndpoints - a model defined in huaweicloud sdk"""
         
         
 
-        self._type = None
         self._url = None
+        self._type = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
         if url is not None:
             self.url = url
-
-    @property
-    def type(self):
-        """Gets the type of this ClusterEndpoints.
-
-        集群访问地址的类型 - Internal：用户子网内访问的地址 - External：公网访问的地址
-
-        :return: The type of this ClusterEndpoints.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this ClusterEndpoints.
-
-        集群访问地址的类型 - Internal：用户子网内访问的地址 - External：公网访问的地址
-
-        :param type: The type of this ClusterEndpoints.
-        :type: str
-        """
-        self._type = type
+        if type is not None:
+            self.type = type
 
     @property
     def url(self):
@@ -89,6 +67,28 @@ class ClusterEndpoints:
         :type: str
         """
         self._url = url
+
+    @property
+    def type(self):
+        """Gets the type of this ClusterEndpoints.
+
+        集群访问地址的类型 - Internal：用户子网内访问的地址 - External：公网访问的地址
+
+        :return: The type of this ClusterEndpoints.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ClusterEndpoints.
+
+        集群访问地址的类型 - Internal：用户子网内访问的地址 - External：公网访问的地址
+
+        :param type: The type of this ClusterEndpoints.
+        :type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

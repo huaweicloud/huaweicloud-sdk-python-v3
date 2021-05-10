@@ -23,48 +23,28 @@ class Authentication:
     sensitive_list = []
 
     openapi_types = {
-        'authenticating_proxy': 'AuthenticatingProxy',
-        'mode': 'str'
+        'mode': 'str',
+        'authenticating_proxy': 'AuthenticatingProxy'
     }
 
     attribute_map = {
-        'authenticating_proxy': 'authenticatingProxy',
-        'mode': 'mode'
+        'mode': 'mode',
+        'authenticating_proxy': 'authenticatingProxy'
     }
 
-    def __init__(self, authenticating_proxy=None, mode=None):
+    def __init__(self, mode=None, authenticating_proxy=None):
         """Authentication - a model defined in huaweicloud sdk"""
         
         
 
-        self._authenticating_proxy = None
         self._mode = None
+        self._authenticating_proxy = None
         self.discriminator = None
 
-        if authenticating_proxy is not None:
-            self.authenticating_proxy = authenticating_proxy
         if mode is not None:
             self.mode = mode
-
-    @property
-    def authenticating_proxy(self):
-        """Gets the authenticating_proxy of this Authentication.
-
-
-        :return: The authenticating_proxy of this Authentication.
-        :rtype: AuthenticatingProxy
-        """
-        return self._authenticating_proxy
-
-    @authenticating_proxy.setter
-    def authenticating_proxy(self, authenticating_proxy):
-        """Sets the authenticating_proxy of this Authentication.
-
-
-        :param authenticating_proxy: The authenticating_proxy of this Authentication.
-        :type: AuthenticatingProxy
-        """
-        self._authenticating_proxy = authenticating_proxy
+        if authenticating_proxy is not None:
+            self.authenticating_proxy = authenticating_proxy
 
     @property
     def mode(self):
@@ -87,6 +67,26 @@ class Authentication:
         :type: str
         """
         self._mode = mode
+
+    @property
+    def authenticating_proxy(self):
+        """Gets the authenticating_proxy of this Authentication.
+
+
+        :return: The authenticating_proxy of this Authentication.
+        :rtype: AuthenticatingProxy
+        """
+        return self._authenticating_proxy
+
+    @authenticating_proxy.setter
+    def authenticating_proxy(self, authenticating_proxy):
+        """Sets the authenticating_proxy of this Authentication.
+
+
+        :param authenticating_proxy: The authenticating_proxy of this Authentication.
+        :type: AuthenticatingProxy
+        """
+        self._authenticating_proxy = authenticating_proxy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

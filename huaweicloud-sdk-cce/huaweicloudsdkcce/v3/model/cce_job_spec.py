@@ -23,48 +23,70 @@ class CCEJobSpec:
     sensitive_list = []
 
     openapi_types = {
+        'type': 'str',
         'cluster_uid': 'str',
-        'extend_param': 'dict(str, str)',
         'resource_id': 'str',
         'resource_name': 'str',
-        'sub_jobs': 'list[CCEJob]',
-        'type': 'str'
+        'extend_param': 'dict(str, str)',
+        'sub_jobs': 'list[CCEJob]'
     }
 
     attribute_map = {
+        'type': 'type',
         'cluster_uid': 'clusterUID',
-        'extend_param': 'extendParam',
         'resource_id': 'resourceID',
         'resource_name': 'resourceName',
-        'sub_jobs': 'subJobs',
-        'type': 'type'
+        'extend_param': 'extendParam',
+        'sub_jobs': 'subJobs'
     }
 
-    def __init__(self, cluster_uid=None, extend_param=None, resource_id=None, resource_name=None, sub_jobs=None, type=None):
+    def __init__(self, type=None, cluster_uid=None, resource_id=None, resource_name=None, extend_param=None, sub_jobs=None):
         """CCEJobSpec - a model defined in huaweicloud sdk"""
         
         
 
+        self._type = None
         self._cluster_uid = None
-        self._extend_param = None
         self._resource_id = None
         self._resource_name = None
+        self._extend_param = None
         self._sub_jobs = None
-        self._type = None
         self.discriminator = None
 
+        if type is not None:
+            self.type = type
         if cluster_uid is not None:
             self.cluster_uid = cluster_uid
-        if extend_param is not None:
-            self.extend_param = extend_param
         if resource_id is not None:
             self.resource_id = resource_id
         if resource_name is not None:
             self.resource_name = resource_name
+        if extend_param is not None:
+            self.extend_param = extend_param
         if sub_jobs is not None:
             self.sub_jobs = sub_jobs
-        if type is not None:
-            self.type = type
+
+    @property
+    def type(self):
+        """Gets the type of this CCEJobSpec.
+
+        作业的类型，例：“CreateCluster”- 创建集群。
+
+        :return: The type of this CCEJobSpec.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this CCEJobSpec.
+
+        作业的类型，例：“CreateCluster”- 创建集群。
+
+        :param type: The type of this CCEJobSpec.
+        :type: str
+        """
+        self._type = type
 
     @property
     def cluster_uid(self):
@@ -87,28 +109,6 @@ class CCEJobSpec:
         :type: str
         """
         self._cluster_uid = cluster_uid
-
-    @property
-    def extend_param(self):
-        """Gets the extend_param of this CCEJobSpec.
-
-        扩展参数。
-
-        :return: The extend_param of this CCEJobSpec.
-        :rtype: dict(str, str)
-        """
-        return self._extend_param
-
-    @extend_param.setter
-    def extend_param(self, extend_param):
-        """Sets the extend_param of this CCEJobSpec.
-
-        扩展参数。
-
-        :param extend_param: The extend_param of this CCEJobSpec.
-        :type: dict(str, str)
-        """
-        self._extend_param = extend_param
 
     @property
     def resource_id(self):
@@ -155,6 +155,28 @@ class CCEJobSpec:
         self._resource_name = resource_name
 
     @property
+    def extend_param(self):
+        """Gets the extend_param of this CCEJobSpec.
+
+        扩展参数。
+
+        :return: The extend_param of this CCEJobSpec.
+        :rtype: dict(str, str)
+        """
+        return self._extend_param
+
+    @extend_param.setter
+    def extend_param(self, extend_param):
+        """Sets the extend_param of this CCEJobSpec.
+
+        扩展参数。
+
+        :param extend_param: The extend_param of this CCEJobSpec.
+        :type: dict(str, str)
+        """
+        self._extend_param = extend_param
+
+    @property
     def sub_jobs(self):
         """Gets the sub_jobs of this CCEJobSpec.
 
@@ -175,28 +197,6 @@ class CCEJobSpec:
         :type: list[CCEJob]
         """
         self._sub_jobs = sub_jobs
-
-    @property
-    def type(self):
-        """Gets the type of this CCEJobSpec.
-
-        作业的类型，例：“CreateCluster”- 创建集群。
-
-        :return: The type of this CCEJobSpec.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this CCEJobSpec.
-
-        作业的类型，例：“CreateCluster”- 创建集群。
-
-        :param type: The type of this CCEJobSpec.
-        :type: str
-        """
-        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

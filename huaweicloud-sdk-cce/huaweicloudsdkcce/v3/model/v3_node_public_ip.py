@@ -23,33 +23,55 @@ class V3NodePublicIP:
     sensitive_list = []
 
     openapi_types = {
+        'ids': 'list[str]',
         'count': 'int',
-        'eip': 'V3NodeEIPSpec',
-        'ids': 'list[str]'
+        'eip': 'V3NodeEIPSpec'
     }
 
     attribute_map = {
+        'ids': 'ids',
         'count': 'count',
-        'eip': 'eip',
-        'ids': 'ids'
+        'eip': 'eip'
     }
 
-    def __init__(self, count=None, eip=None, ids=None):
+    def __init__(self, ids=None, count=None, eip=None):
         """V3NodePublicIP - a model defined in huaweicloud sdk"""
         
         
 
+        self._ids = None
         self._count = None
         self._eip = None
-        self._ids = None
         self.discriminator = None
 
+        if ids is not None:
+            self.ids = ids
         if count is not None:
             self.count = count
         if eip is not None:
             self.eip = eip
-        if ids is not None:
-            self.ids = ids
+
+    @property
+    def ids(self):
+        """Gets the ids of this V3NodePublicIP.
+
+        已有的弹性IP的ID列表。数量不得大于待创建节点数 > 若已配置ids参数，则无需配置count和eip参数
+
+        :return: The ids of this V3NodePublicIP.
+        :rtype: list[str]
+        """
+        return self._ids
+
+    @ids.setter
+    def ids(self, ids):
+        """Sets the ids of this V3NodePublicIP.
+
+        已有的弹性IP的ID列表。数量不得大于待创建节点数 > 若已配置ids参数，则无需配置count和eip参数
+
+        :param ids: The ids of this V3NodePublicIP.
+        :type: list[str]
+        """
+        self._ids = ids
 
     @property
     def count(self):
@@ -92,28 +114,6 @@ class V3NodePublicIP:
         :type: V3NodeEIPSpec
         """
         self._eip = eip
-
-    @property
-    def ids(self):
-        """Gets the ids of this V3NodePublicIP.
-
-        已有的弹性IP的ID列表。数量不得大于待创建节点数 > 若已配置ids参数，则无需配置count和eip参数
-
-        :return: The ids of this V3NodePublicIP.
-        :rtype: list[str]
-        """
-        return self._ids
-
-    @ids.setter
-    def ids(self, ids):
-        """Sets the ids of this V3NodePublicIP.
-
-        已有的弹性IP的ID列表。数量不得大于待创建节点数 > 若已配置ids参数，则无需配置count和eip参数
-
-        :param ids: The ids of this V3NodePublicIP.
-        :type: list[str]
-        """
-        self._ids = ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

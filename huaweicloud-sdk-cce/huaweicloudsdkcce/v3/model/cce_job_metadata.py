@@ -23,55 +23,33 @@ class CCEJobMetadata:
     sensitive_list = []
 
     openapi_types = {
-        'creation_timestamp': 'str',
         'uid': 'str',
+        'creation_timestamp': 'str',
         'update_timestamp': 'str'
     }
 
     attribute_map = {
-        'creation_timestamp': 'creationTimestamp',
         'uid': 'uid',
+        'creation_timestamp': 'creationTimestamp',
         'update_timestamp': 'updateTimestamp'
     }
 
-    def __init__(self, creation_timestamp=None, uid=None, update_timestamp=None):
+    def __init__(self, uid=None, creation_timestamp=None, update_timestamp=None):
         """CCEJobMetadata - a model defined in huaweicloud sdk"""
         
         
 
-        self._creation_timestamp = None
         self._uid = None
+        self._creation_timestamp = None
         self._update_timestamp = None
         self.discriminator = None
 
-        if creation_timestamp is not None:
-            self.creation_timestamp = creation_timestamp
         if uid is not None:
             self.uid = uid
+        if creation_timestamp is not None:
+            self.creation_timestamp = creation_timestamp
         if update_timestamp is not None:
             self.update_timestamp = update_timestamp
-
-    @property
-    def creation_timestamp(self):
-        """Gets the creation_timestamp of this CCEJobMetadata.
-
-        作业的创建时间。
-
-        :return: The creation_timestamp of this CCEJobMetadata.
-        :rtype: str
-        """
-        return self._creation_timestamp
-
-    @creation_timestamp.setter
-    def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this CCEJobMetadata.
-
-        作业的创建时间。
-
-        :param creation_timestamp: The creation_timestamp of this CCEJobMetadata.
-        :type: str
-        """
-        self._creation_timestamp = creation_timestamp
 
     @property
     def uid(self):
@@ -94,6 +72,28 @@ class CCEJobMetadata:
         :type: str
         """
         self._uid = uid
+
+    @property
+    def creation_timestamp(self):
+        """Gets the creation_timestamp of this CCEJobMetadata.
+
+        作业的创建时间。
+
+        :return: The creation_timestamp of this CCEJobMetadata.
+        :rtype: str
+        """
+        return self._creation_timestamp
+
+    @creation_timestamp.setter
+    def creation_timestamp(self, creation_timestamp):
+        """Sets the creation_timestamp of this CCEJobMetadata.
+
+        作业的创建时间。
+
+        :param creation_timestamp: The creation_timestamp of this CCEJobMetadata.
+        :type: str
+        """
+        self._creation_timestamp = creation_timestamp
 
     @property
     def update_timestamp(self):

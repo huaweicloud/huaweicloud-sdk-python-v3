@@ -23,114 +23,48 @@ class NodeMetadata:
     sensitive_list = []
 
     openapi_types = {
-        'annotations': 'dict(str, str)',
-        'creation_timestamp': 'str',
-        'labels': 'dict(str, str)',
         'name': 'str',
         'uid': 'str',
+        'labels': 'dict(str, str)',
+        'annotations': 'dict(str, str)',
+        'creation_timestamp': 'str',
         'update_timestamp': 'str'
     }
 
     attribute_map = {
-        'annotations': 'annotations',
-        'creation_timestamp': 'creationTimestamp',
-        'labels': 'labels',
         'name': 'name',
         'uid': 'uid',
+        'labels': 'labels',
+        'annotations': 'annotations',
+        'creation_timestamp': 'creationTimestamp',
         'update_timestamp': 'updateTimestamp'
     }
 
-    def __init__(self, annotations=None, creation_timestamp=None, labels=None, name=None, uid=None, update_timestamp=None):
+    def __init__(self, name=None, uid=None, labels=None, annotations=None, creation_timestamp=None, update_timestamp=None):
         """NodeMetadata - a model defined in huaweicloud sdk"""
         
         
 
-        self._annotations = None
-        self._creation_timestamp = None
-        self._labels = None
         self._name = None
         self._uid = None
+        self._labels = None
+        self._annotations = None
+        self._creation_timestamp = None
         self._update_timestamp = None
         self.discriminator = None
 
-        if annotations is not None:
-            self.annotations = annotations
-        if creation_timestamp is not None:
-            self.creation_timestamp = creation_timestamp
-        if labels is not None:
-            self.labels = labels
         if name is not None:
             self.name = name
         if uid is not None:
             self.uid = uid
+        if labels is not None:
+            self.labels = labels
+        if annotations is not None:
+            self.annotations = annotations
+        if creation_timestamp is not None:
+            self.creation_timestamp = creation_timestamp
         if update_timestamp is not None:
             self.update_timestamp = update_timestamp
-
-    @property
-    def annotations(self):
-        """Gets the annotations of this NodeMetadata.
-
-        CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。  示例： ``` \"annotations\": {   \"key1\" : \"value1\",   \"key2\" : \"value2\" } ```  > Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。
-
-        :return: The annotations of this NodeMetadata.
-        :rtype: dict(str, str)
-        """
-        return self._annotations
-
-    @annotations.setter
-    def annotations(self, annotations):
-        """Sets the annotations of this NodeMetadata.
-
-        CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。  示例： ``` \"annotations\": {   \"key1\" : \"value1\",   \"key2\" : \"value2\" } ```  > Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。
-
-        :param annotations: The annotations of this NodeMetadata.
-        :type: dict(str, str)
-        """
-        self._annotations = annotations
-
-    @property
-    def creation_timestamp(self):
-        """Gets the creation_timestamp of this NodeMetadata.
-
-        创建时间，创建成功后自动生成，填写无效
-
-        :return: The creation_timestamp of this NodeMetadata.
-        :rtype: str
-        """
-        return self._creation_timestamp
-
-    @creation_timestamp.setter
-    def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this NodeMetadata.
-
-        创建时间，创建成功后自动生成，填写无效
-
-        :param creation_timestamp: The creation_timestamp of this NodeMetadata.
-        :type: str
-        """
-        self._creation_timestamp = creation_timestamp
-
-    @property
-    def labels(self):
-        """Gets the labels of this NodeMetadata.
-
-        CCE自有节点标签，非Kubernetes原生labels。  标签可用于选择对象并查找满足某些条件的对象集合，格式为key/value键值对。  示例：  ``` \"labels\": {   \"key\" : \"value\" } ```
-
-        :return: The labels of this NodeMetadata.
-        :rtype: dict(str, str)
-        """
-        return self._labels
-
-    @labels.setter
-    def labels(self, labels):
-        """Sets the labels of this NodeMetadata.
-
-        CCE自有节点标签，非Kubernetes原生labels。  标签可用于选择对象并查找满足某些条件的对象集合，格式为key/value键值对。  示例：  ``` \"labels\": {   \"key\" : \"value\" } ```
-
-        :param labels: The labels of this NodeMetadata.
-        :type: dict(str, str)
-        """
-        self._labels = labels
 
     @property
     def name(self):
@@ -158,7 +92,7 @@ class NodeMetadata:
     def uid(self):
         """Gets the uid of this NodeMetadata.
 
-        资源唯一标识，创建成功后自动生成，填写无效
+        节点ID，资源唯一标识，创建成功后自动生成，填写无效
 
         :return: The uid of this NodeMetadata.
         :rtype: str
@@ -169,12 +103,78 @@ class NodeMetadata:
     def uid(self, uid):
         """Sets the uid of this NodeMetadata.
 
-        资源唯一标识，创建成功后自动生成，填写无效
+        节点ID，资源唯一标识，创建成功后自动生成，填写无效
 
         :param uid: The uid of this NodeMetadata.
         :type: str
         """
         self._uid = uid
+
+    @property
+    def labels(self):
+        """Gets the labels of this NodeMetadata.
+
+        CCE自有节点标签，非Kubernetes原生labels。  标签可用于选择对象并查找满足某些条件的对象集合，格式为key/value键值对。  示例：  ``` \"labels\": {   \"key\" : \"value\" } ```
+
+        :return: The labels of this NodeMetadata.
+        :rtype: dict(str, str)
+        """
+        return self._labels
+
+    @labels.setter
+    def labels(self, labels):
+        """Sets the labels of this NodeMetadata.
+
+        CCE自有节点标签，非Kubernetes原生labels。  标签可用于选择对象并查找满足某些条件的对象集合，格式为key/value键值对。  示例：  ``` \"labels\": {   \"key\" : \"value\" } ```
+
+        :param labels: The labels of this NodeMetadata.
+        :type: dict(str, str)
+        """
+        self._labels = labels
+
+    @property
+    def annotations(self):
+        """Gets the annotations of this NodeMetadata.
+
+        CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。   示例：  ```  \"annotations\": {   \"key1\" : \"value1\",   \"key2\" : \"value2\" }  ```   > Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 
+
+        :return: The annotations of this NodeMetadata.
+        :rtype: dict(str, str)
+        """
+        return self._annotations
+
+    @annotations.setter
+    def annotations(self, annotations):
+        """Sets the annotations of this NodeMetadata.
+
+        CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。   示例：  ```  \"annotations\": {   \"key1\" : \"value1\",   \"key2\" : \"value2\" }  ```   > Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 
+
+        :param annotations: The annotations of this NodeMetadata.
+        :type: dict(str, str)
+        """
+        self._annotations = annotations
+
+    @property
+    def creation_timestamp(self):
+        """Gets the creation_timestamp of this NodeMetadata.
+
+        创建时间，创建成功后自动生成，填写无效
+
+        :return: The creation_timestamp of this NodeMetadata.
+        :rtype: str
+        """
+        return self._creation_timestamp
+
+    @creation_timestamp.setter
+    def creation_timestamp(self, creation_timestamp):
+        """Sets the creation_timestamp of this NodeMetadata.
+
+        创建时间，创建成功后自动生成，填写无效
+
+        :param creation_timestamp: The creation_timestamp of this NodeMetadata.
+        :type: str
+        """
+        self._creation_timestamp = creation_timestamp
 
     @property
     def update_timestamp(self):

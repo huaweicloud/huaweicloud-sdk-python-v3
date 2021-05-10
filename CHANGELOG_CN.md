@@ -1,3 +1,51 @@
+# 3.0.42-rc 2021-05-10
+
+### HuaweiCloud SDK BMS
+
+- _新增特性_
+  - 新增支持接口`BatchCreateBaremetalServerTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+  - 新增支持接口`MigrateAz`、`ListAz2Migrate`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK EPS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - [Issue 17](https://github.com/huaweicloud/huaweicloud-sdk-go-v3/issues/17): 修复`EpDetailType`枚举定义错误的问题
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IEC
+
+- _新增特性_
+  - 支持IEC智能边缘云服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListOffSiteInstances`的响应体名称调整：`OffSiteInstanceListResponse` -> `OffSiteInstanceListResponseBody`
+  - 接口`ListOffSiteInstances`的响应字段名称调整：`offsite_backup_instances` -> `offsite_backup_instance`
+
 # 3.0.41-rc 2021-04-30
 
 ### HuaweiCloud SDK BCS

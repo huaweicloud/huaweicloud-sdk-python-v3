@@ -1348,6 +1348,69 @@ class DdsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_az2_migrate(self, request):
+        """查询实例可迁移到的可用区
+
+        查询实例可迁移到的可用区。
+
+        :param ListAz2MigrateRequest request
+        :return: ListAz2MigrateResponse
+        """
+        return self.list_az2_migrate_with_http_info(request)
+
+    def list_az2_migrate_with_http_info(self, request):
+        """查询实例可迁移到的可用区
+
+        查询实例可迁移到的可用区。
+
+        :param ListAz2MigrateRequest request
+        :return: ListAz2MigrateResponse
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/migrate/az',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAz2MigrateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_backups(self, request):
         """查询备份列表
 
@@ -2452,6 +2515,71 @@ class DdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListStorageTypeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def migrate_az(self, request):
+        """实例可用区迁移
+
+        实例可用区迁移。
+
+        :param MigrateAzRequest request
+        :return: MigrateAzResponse
+        """
+        return self.migrate_az_with_http_info(request)
+
+    def migrate_az_with_http_info(self, request):
+        """实例可用区迁移
+
+        实例可用区迁移。
+
+        :param MigrateAzRequest request
+        :return: MigrateAzResponse
+        """
+
+        all_params = ['instance_id', 'migrate_az_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/migrate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='MigrateAzResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
