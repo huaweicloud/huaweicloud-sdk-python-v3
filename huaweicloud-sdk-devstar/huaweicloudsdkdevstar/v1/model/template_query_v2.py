@@ -30,6 +30,7 @@ class TemplateQueryV2:
         'my_templates': 'bool',
         'status': 'int',
         'status_array': 'list[int]',
+        'has_notices': 'bool',
         'productshorts': 'list[str]',
         'offset': 'int',
         'limit': 'int',
@@ -48,6 +49,7 @@ class TemplateQueryV2:
         'my_templates': 'my_templates',
         'status': 'status',
         'status_array': 'status_array',
+        'has_notices': 'has_notices',
         'productshorts': 'productshorts',
         'offset': 'offset',
         'limit': 'limit',
@@ -58,7 +60,7 @@ class TemplateQueryV2:
         'tag_names': 'tag_names'
     }
 
-    def __init__(self, category=None, keyword=None, sort_by=None, label=None, my_templates=None, status=None, status_array=None, productshorts=None, offset=None, limit=None, tag_ids=None, types=None, is_static=None, platform_source=None, tag_names=None):
+    def __init__(self, category=None, keyword=None, sort_by=None, label=None, my_templates=None, status=None, status_array=None, has_notices=None, productshorts=None, offset=None, limit=None, tag_ids=None, types=None, is_static=None, platform_source=None, tag_names=None):
         """TemplateQueryV2 - a model defined in huaweicloud sdk"""
         
         
@@ -70,6 +72,7 @@ class TemplateQueryV2:
         self._my_templates = None
         self._status = None
         self._status_array = None
+        self._has_notices = None
         self._productshorts = None
         self._offset = None
         self._limit = None
@@ -94,6 +97,8 @@ class TemplateQueryV2:
             self.status = status
         if status_array is not None:
             self.status_array = status_array
+        if has_notices is not None:
+            self.has_notices = has_notices
         if productshorts is not None:
             self.productshorts = productshorts
         if offset is not None:
@@ -115,7 +120,7 @@ class TemplateQueryV2:
     def category(self):
         """Gets the category of this TemplateQueryV2.
 
-        模板分类数组
+        模板分类数组。
 
         :return: The category of this TemplateQueryV2.
         :rtype: list[str]
@@ -126,7 +131,7 @@ class TemplateQueryV2:
     def category(self, category):
         """Sets the category of this TemplateQueryV2.
 
-        模板分类数组
+        模板分类数组。
 
         :param category: The category of this TemplateQueryV2.
         :type: list[str]
@@ -137,7 +142,7 @@ class TemplateQueryV2:
     def keyword(self):
         """Gets the keyword of this TemplateQueryV2.
 
-        搜索关键字,支持按名称和描述搜索，默认null
+        搜索关键字，支持按名称和描述搜索，默认null。
 
         :return: The keyword of this TemplateQueryV2.
         :rtype: str
@@ -148,7 +153,7 @@ class TemplateQueryV2:
     def keyword(self, keyword):
         """Sets the keyword of this TemplateQueryV2.
 
-        搜索关键字,支持按名称和描述搜索，默认null
+        搜索关键字，支持按名称和描述搜索，默认null。
 
         :param keyword: The keyword of this TemplateQueryV2.
         :type: str
@@ -159,7 +164,7 @@ class TemplateQueryV2:
     def sort_by(self):
         """Gets the sort_by of this TemplateQueryV2.
 
-        排序字段和排序顺序指定. 比如: desc(created_at),desc(usage_count)
+        排序字段和排序顺序指定。比如： - desc(created_at)：根据创建时间降序 - desc(usage_count)：根据引用次数降序 
 
         :return: The sort_by of this TemplateQueryV2.
         :rtype: str
@@ -170,7 +175,7 @@ class TemplateQueryV2:
     def sort_by(self, sort_by):
         """Sets the sort_by of this TemplateQueryV2.
 
-        排序字段和排序顺序指定. 比如: desc(created_at),desc(usage_count)
+        排序字段和排序顺序指定。比如： - desc(created_at)：根据创建时间降序 - desc(usage_count)：根据引用次数降序 
 
         :param sort_by: The sort_by of this TemplateQueryV2.
         :type: str
@@ -181,7 +186,7 @@ class TemplateQueryV2:
     def label(self):
         """Gets the label of this TemplateQueryV2.
 
-        标签（all，new，hot，推荐recommend）
+        标签： - all：全部 - new：最新 - hot：热门 - recommend：推荐 
 
         :return: The label of this TemplateQueryV2.
         :rtype: str
@@ -192,7 +197,7 @@ class TemplateQueryV2:
     def label(self, label):
         """Sets the label of this TemplateQueryV2.
 
-        标签（all，new，hot，推荐recommend）
+        标签： - all：全部 - new：最新 - hot：热门 - recommend：推荐 
 
         :param label: The label of this TemplateQueryV2.
         :type: str
@@ -203,7 +208,7 @@ class TemplateQueryV2:
     def my_templates(self):
         """Gets the my_templates of this TemplateQueryV2.
 
-        是否查询用户自己创建的模板，默认查所有模板
+        是否查询用户自己创建的模板，默认查所有模板。
 
         :return: The my_templates of this TemplateQueryV2.
         :rtype: bool
@@ -214,7 +219,7 @@ class TemplateQueryV2:
     def my_templates(self, my_templates):
         """Sets the my_templates of this TemplateQueryV2.
 
-        是否查询用户自己创建的模板，默认查所有模板
+        是否查询用户自己创建的模板，默认查所有模板。
 
         :param my_templates: The my_templates of this TemplateQueryV2.
         :type: bool
@@ -225,7 +230,7 @@ class TemplateQueryV2:
     def status(self):
         """Gets the status of this TemplateQueryV2.
 
-        查所有模板时只处理上架的；查用户模板，需支持按状态查询，状态：0审核中，1上架，2下架，不传表示查所有的（默认）
+        查所有模板时只处理上架的；查用户模板，需支持按状态查询，状态： - 0：审核中 - 1：上架 - 2：下架 不传表示查所有的（默认） 
 
         :return: The status of this TemplateQueryV2.
         :rtype: int
@@ -236,7 +241,7 @@ class TemplateQueryV2:
     def status(self, status):
         """Sets the status of this TemplateQueryV2.
 
-        查所有模板时只处理上架的；查用户模板，需支持按状态查询，状态：0审核中，1上架，2下架，不传表示查所有的（默认）
+        查所有模板时只处理上架的；查用户模板，需支持按状态查询，状态： - 0：审核中 - 1：上架 - 2：下架 不传表示查所有的（默认） 
 
         :param status: The status of this TemplateQueryV2.
         :type: int
@@ -247,7 +252,7 @@ class TemplateQueryV2:
     def status_array(self):
         """Gets the status_array of this TemplateQueryV2.
 
-        模板状态数组
+        模板状态数组。
 
         :return: The status_array of this TemplateQueryV2.
         :rtype: list[int]
@@ -258,7 +263,7 @@ class TemplateQueryV2:
     def status_array(self, status_array):
         """Sets the status_array of this TemplateQueryV2.
 
-        模板状态数组
+        模板状态数组。
 
         :param status_array: The status_array of this TemplateQueryV2.
         :type: list[int]
@@ -266,10 +271,32 @@ class TemplateQueryV2:
         self._status_array = status_array
 
     @property
+    def has_notices(self):
+        """Gets the has_notices of this TemplateQueryV2.
+
+        是否查询有消息的模板，默认查所有模板。
+
+        :return: The has_notices of this TemplateQueryV2.
+        :rtype: bool
+        """
+        return self._has_notices
+
+    @has_notices.setter
+    def has_notices(self, has_notices):
+        """Sets the has_notices of this TemplateQueryV2.
+
+        是否查询有消息的模板，默认查所有模板。
+
+        :param has_notices: The has_notices of this TemplateQueryV2.
+        :type: bool
+        """
+        self._has_notices = has_notices
+
+    @property
     def productshorts(self):
         """Gets the productshorts of this TemplateQueryV2.
 
-        模板关联的云产品(产品短名)列表
+        模板关联的云产品(产品短名)列表。
 
         :return: The productshorts of this TemplateQueryV2.
         :rtype: list[str]
@@ -280,7 +307,7 @@ class TemplateQueryV2:
     def productshorts(self, productshorts):
         """Sets the productshorts of this TemplateQueryV2.
 
-        模板关联的云产品(产品短名)列表
+        模板关联的云产品(产品短名)列表。
 
         :param productshorts: The productshorts of this TemplateQueryV2.
         :type: list[str]
@@ -291,7 +318,7 @@ class TemplateQueryV2:
     def offset(self):
         """Gets the offset of this TemplateQueryV2.
 
-        偏移量, 表示从此偏移量开始查询, offset大于等于0
+        偏移量，表示从此偏移量开始查询，offset大于等于0。
 
         :return: The offset of this TemplateQueryV2.
         :rtype: int
@@ -302,7 +329,7 @@ class TemplateQueryV2:
     def offset(self, offset):
         """Sets the offset of this TemplateQueryV2.
 
-        偏移量, 表示从此偏移量开始查询, offset大于等于0
+        偏移量，表示从此偏移量开始查询，offset大于等于0。
 
         :param offset: The offset of this TemplateQueryV2.
         :type: int
@@ -313,7 +340,7 @@ class TemplateQueryV2:
     def limit(self):
         """Gets the limit of this TemplateQueryV2.
 
-        每页的模板条数
+        每页的模板条数。
 
         :return: The limit of this TemplateQueryV2.
         :rtype: int
@@ -324,7 +351,7 @@ class TemplateQueryV2:
     def limit(self, limit):
         """Sets the limit of this TemplateQueryV2.
 
-        每页的模板条数
+        每页的模板条数。
 
         :param limit: The limit of this TemplateQueryV2.
         :type: int
@@ -335,7 +362,7 @@ class TemplateQueryV2:
     def tag_ids(self):
         """Gets the tag_ids of this TemplateQueryV2.
 
-        模板关联的自定义标签列表
+        模板关联的自定义标签列表。
 
         :return: The tag_ids of this TemplateQueryV2.
         :rtype: list[str]
@@ -346,7 +373,7 @@ class TemplateQueryV2:
     def tag_ids(self, tag_ids):
         """Sets the tag_ids of this TemplateQueryV2.
 
-        模板关联的自定义标签列表
+        模板关联的自定义标签列表。
 
         :param tag_ids: The tag_ids of this TemplateQueryV2.
         :type: list[str]
@@ -357,7 +384,7 @@ class TemplateQueryV2:
     def types(self):
         """Gets the types of this TemplateQueryV2.
 
-        模板类型（0:doc、1:code、2:pipeline、3:devops四种）
+        模板类型： - 0：doc - 1：code - 2：pipeline - 3：devops 
 
         :return: The types of this TemplateQueryV2.
         :rtype: list[int]
@@ -368,7 +395,7 @@ class TemplateQueryV2:
     def types(self, types):
         """Sets the types of this TemplateQueryV2.
 
-        模板类型（0:doc、1:code、2:pipeline、3:devops四种）
+        模板类型： - 0：doc - 1：code - 2：pipeline - 3：devops 
 
         :param types: The types of this TemplateQueryV2.
         :type: list[int]
@@ -379,7 +406,7 @@ class TemplateQueryV2:
     def is_static(self):
         """Gets the is_static of this TemplateQueryV2.
 
-        动、静态代码模板标识（0：动态模板codetemplate，1：静态模板codesample）
+        动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
 
         :return: The is_static of this TemplateQueryV2.
         :rtype: int
@@ -390,7 +417,7 @@ class TemplateQueryV2:
     def is_static(self, is_static):
         """Sets the is_static of this TemplateQueryV2.
 
-        动、静态代码模板标识（0：动态模板codetemplate，1：静态模板codesample）
+        动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
 
         :param is_static: The is_static of this TemplateQueryV2.
         :type: int
@@ -401,7 +428,7 @@ class TemplateQueryV2:
     def platform_source(self):
         """Gets the platform_source of this TemplateQueryV2.
 
-        平台来源（0:codelabs、1:devstar）
+        平台来源： - 0：codelabs - 1：devstar 
 
         :return: The platform_source of this TemplateQueryV2.
         :rtype: list[int]
@@ -412,7 +439,7 @@ class TemplateQueryV2:
     def platform_source(self, platform_source):
         """Sets the platform_source of this TemplateQueryV2.
 
-        平台来源（0:codelabs、1:devstar）
+        平台来源： - 0：codelabs - 1：devstar 
 
         :param platform_source: The platform_source of this TemplateQueryV2.
         :type: list[int]
@@ -423,7 +450,7 @@ class TemplateQueryV2:
     def tag_names(self):
         """Gets the tag_names of this TemplateQueryV2.
 
-        模板关联的标签名称列表
+        模板关联的标签名称列表。
 
         :return: The tag_names of this TemplateQueryV2.
         :rtype: list[str]
@@ -434,7 +461,7 @@ class TemplateQueryV2:
     def tag_names(self, tag_names):
         """Sets the tag_names of this TemplateQueryV2.
 
-        模板关联的标签名称列表
+        模板关联的标签名称列表。
 
         :param tag_names: The tag_names of this TemplateQueryV2.
         :type: list[str]

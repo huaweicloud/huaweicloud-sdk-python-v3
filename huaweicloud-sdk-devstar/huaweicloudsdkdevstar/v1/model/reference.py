@@ -26,17 +26,19 @@ class Reference:
         'title': 'str',
         'url': 'str',
         'type': 'int',
-        'productshort': 'str'
+        'productshort': 'str',
+        'is_valid': 'bool'
     }
 
     attribute_map = {
         'title': 'title',
         'url': 'url',
         'type': 'type',
-        'productshort': 'productshort'
+        'productshort': 'productshort',
+        'is_valid': 'is_valid'
     }
 
-    def __init__(self, title=None, url=None, type=None, productshort=None):
+    def __init__(self, title=None, url=None, type=None, productshort=None, is_valid=None):
         """Reference - a model defined in huaweicloud sdk"""
         
         
@@ -45,6 +47,7 @@ class Reference:
         self._url = None
         self._type = None
         self._productshort = None
+        self._is_valid = None
         self.discriminator = None
 
         if title is not None:
@@ -55,12 +58,14 @@ class Reference:
             self.type = type
         if productshort is not None:
             self.productshort = productshort
+        if is_valid is not None:
+            self.is_valid = is_valid
 
     @property
     def title(self):
         """Gets the title of this Reference.
 
-        标题名称
+        标题名称。
 
         :return: The title of this Reference.
         :rtype: str
@@ -71,7 +76,7 @@ class Reference:
     def title(self, title):
         """Sets the title of this Reference.
 
-        标题名称
+        标题名称。
 
         :param title: The title of this Reference.
         :type: str
@@ -82,7 +87,7 @@ class Reference:
     def url(self):
         """Gets the url of this Reference.
 
-        链接地址
+        链接地址。
 
         :return: The url of this Reference.
         :rtype: str
@@ -93,7 +98,7 @@ class Reference:
     def url(self, url):
         """Sets the url of this Reference.
 
-        链接地址
+        链接地址。
 
         :param url: The url of this Reference.
         :type: str
@@ -104,7 +109,7 @@ class Reference:
     def type(self):
         """Gets the type of this Reference.
 
-        关联类型
+        关联类型。
 
         :return: The type of this Reference.
         :rtype: int
@@ -115,7 +120,7 @@ class Reference:
     def type(self, type):
         """Sets the type of this Reference.
 
-        关联类型
+        关联类型。
 
         :param type: The type of this Reference.
         :type: int
@@ -126,7 +131,7 @@ class Reference:
     def productshort(self):
         """Gets the productshort of this Reference.
 
-        产品短名
+        产品短名。
 
         :return: The productshort of this Reference.
         :rtype: str
@@ -137,12 +142,34 @@ class Reference:
     def productshort(self, productshort):
         """Sets the productshort of this Reference.
 
-        产品短名
+        产品短名。
 
         :param productshort: The productshort of this Reference.
         :type: str
         """
         self._productshort = productshort
+
+    @property
+    def is_valid(self):
+        """Gets the is_valid of this Reference.
+
+        是否有效
+
+        :return: The is_valid of this Reference.
+        :rtype: bool
+        """
+        return self._is_valid
+
+    @is_valid.setter
+    def is_valid(self, is_valid):
+        """Sets the is_valid of this Reference.
+
+        是否有效
+
+        :param is_valid: The is_valid of this Reference.
+        :type: bool
+        """
+        self._is_valid = is_valid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

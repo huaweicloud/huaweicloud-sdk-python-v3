@@ -50,7 +50,7 @@ class TagInfo:
     def id(self):
         """Gets the id of this TagInfo.
 
-        自定义标签id
+        自定义标签id。
 
         :return: The id of this TagInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class TagInfo:
     def id(self, id):
         """Sets the id of this TagInfo.
 
-        自定义标签id
+        自定义标签id。
 
         :param id: The id of this TagInfo.
         :type: str
@@ -72,7 +72,7 @@ class TagInfo:
     def name(self):
         """Gets the name of this TagInfo.
 
-        自定义标签名称
+        自定义标签名称。
 
         :return: The name of this TagInfo.
         :rtype: str
@@ -83,7 +83,7 @@ class TagInfo:
     def name(self, name):
         """Sets the name of this TagInfo.
 
-        自定义标签名称
+        自定义标签名称。
 
         :param name: The name of this TagInfo.
         :type: str

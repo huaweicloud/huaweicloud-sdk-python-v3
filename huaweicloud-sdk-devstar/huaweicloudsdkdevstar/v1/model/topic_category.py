@@ -60,7 +60,7 @@ class TopicCategory:
     def topic_id(self):
         """Gets the topic_id of this TopicCategory.
 
-        topic的id
+        topic的id。
 
         :return: The topic_id of this TopicCategory.
         :rtype: str
@@ -71,7 +71,7 @@ class TopicCategory:
     def topic_id(self, topic_id):
         """Sets the topic_id of this TopicCategory.
 
-        topic的id
+        topic的id。
 
         :param topic_id: The topic_id of this TopicCategory.
         :type: str
@@ -82,7 +82,7 @@ class TopicCategory:
     def topic_name(self):
         """Gets the topic_name of this TopicCategory.
 
-        topic的名称
+        topic的名称。
 
         :return: The topic_name of this TopicCategory.
         :rtype: str
@@ -93,7 +93,7 @@ class TopicCategory:
     def topic_name(self, topic_name):
         """Sets the topic_name of this TopicCategory.
 
-        topic的名称
+        topic的名称。
 
         :param topic_name: The topic_name of this TopicCategory.
         :type: str
@@ -104,7 +104,7 @@ class TopicCategory:
     def category_id(self):
         """Gets the category_id of this TopicCategory.
 
-        topic对应的类别的id
+        topic对应的类别的id。
 
         :return: The category_id of this TopicCategory.
         :rtype: str
@@ -115,7 +115,7 @@ class TopicCategory:
     def category_id(self, category_id):
         """Sets the category_id of this TopicCategory.
 
-        topic对应的类别的id
+        topic对应的类别的id。
 
         :param category_id: The category_id of this TopicCategory.
         :type: str
@@ -126,7 +126,7 @@ class TopicCategory:
     def category_name(self):
         """Gets the category_name of this TopicCategory.
 
-        topic对应的类别的名称
+        topic对应的类别的名称。
 
         :return: The category_name of this TopicCategory.
         :rtype: str
@@ -137,7 +137,7 @@ class TopicCategory:
     def category_name(self, category_name):
         """Sets the category_name of this TopicCategory.
 
-        topic对应的类别的名称
+        topic对应的类别的名称。
 
         :param category_name: The category_name of this TopicCategory.
         :type: str

@@ -175,7 +175,7 @@ class ShowTemplateV3Response(SdkResponse):
     def id(self):
         """Gets the id of this ShowTemplateV3Response.
 
-        模板id
+        模板id。
 
         :return: The id of this ShowTemplateV3Response.
         :rtype: str
@@ -186,7 +186,7 @@ class ShowTemplateV3Response(SdkResponse):
     def id(self, id):
         """Sets the id of this ShowTemplateV3Response.
 
-        模板id
+        模板id。
 
         :param id: The id of this ShowTemplateV3Response.
         :type: str
@@ -197,7 +197,7 @@ class ShowTemplateV3Response(SdkResponse):
     def title(self):
         """Gets the title of this ShowTemplateV3Response.
 
-        模板名称
+        模板名称。
 
         :return: The title of this ShowTemplateV3Response.
         :rtype: str
@@ -208,7 +208,7 @@ class ShowTemplateV3Response(SdkResponse):
     def title(self, title):
         """Sets the title of this ShowTemplateV3Response.
 
-        模板名称
+        模板名称。
 
         :param title: The title of this ShowTemplateV3Response.
         :type: str
@@ -219,7 +219,7 @@ class ShowTemplateV3Response(SdkResponse):
     def description(self):
         """Gets the description of this ShowTemplateV3Response.
 
-        模板描述
+        模板描述。
 
         :return: The description of this ShowTemplateV3Response.
         :rtype: str
@@ -230,7 +230,7 @@ class ShowTemplateV3Response(SdkResponse):
     def description(self, description):
         """Sets the description of this ShowTemplateV3Response.
 
-        模板描述
+        模板描述。
 
         :param description: The description of this ShowTemplateV3Response.
         :type: str
@@ -241,7 +241,7 @@ class ShowTemplateV3Response(SdkResponse):
     def creator_id(self):
         """Gets the creator_id of this ShowTemplateV3Response.
 
-        模板创建者id
+        模板创建者id。
 
         :return: The creator_id of this ShowTemplateV3Response.
         :rtype: str
@@ -252,7 +252,7 @@ class ShowTemplateV3Response(SdkResponse):
     def creator_id(self, creator_id):
         """Sets the creator_id of this ShowTemplateV3Response.
 
-        模板创建者id
+        模板创建者id。
 
         :param creator_id: The creator_id of this ShowTemplateV3Response.
         :type: str
@@ -263,7 +263,7 @@ class ShowTemplateV3Response(SdkResponse):
     def creator(self):
         """Gets the creator of this ShowTemplateV3Response.
 
-        模板创建者,有别名返回别名
+        模板创建者，有别名返回别名。
 
         :return: The creator of this ShowTemplateV3Response.
         :rtype: str
@@ -274,7 +274,7 @@ class ShowTemplateV3Response(SdkResponse):
     def creator(self, creator):
         """Sets the creator of this ShowTemplateV3Response.
 
-        模板创建者,有别名返回别名
+        模板创建者，有别名返回别名。
 
         :param creator: The creator of this ShowTemplateV3Response.
         :type: str
@@ -285,7 +285,7 @@ class ShowTemplateV3Response(SdkResponse):
     def nickname(self):
         """Gets the nickname of this ShowTemplateV3Response.
 
-        模板创建者,有别名返回别名
+        模板创建者，有别名返回别名。
 
         :return: The nickname of this ShowTemplateV3Response.
         :rtype: str
@@ -296,7 +296,7 @@ class ShowTemplateV3Response(SdkResponse):
     def nickname(self, nickname):
         """Sets the nickname of this ShowTemplateV3Response.
 
-        模板创建者,有别名返回别名
+        模板创建者，有别名返回别名。
 
         :param nickname: The nickname of this ShowTemplateV3Response.
         :type: str
@@ -307,7 +307,7 @@ class ShowTemplateV3Response(SdkResponse):
     def score(self):
         """Gets the score of this ShowTemplateV3Response.
 
-        模板评分（点赞数）
+        模板评分（点赞数）。
 
         :return: The score of this ShowTemplateV3Response.
         :rtype: int
@@ -318,7 +318,7 @@ class ShowTemplateV3Response(SdkResponse):
     def score(self, score):
         """Sets the score of this ShowTemplateV3Response.
 
-        模板评分（点赞数）
+        模板评分（点赞数）。
 
         :param score: The score of this ShowTemplateV3Response.
         :type: int
@@ -329,7 +329,7 @@ class ShowTemplateV3Response(SdkResponse):
     def status(self):
         """Gets the status of this ShowTemplateV3Response.
 
-        模板状态（0:审核中 1: 已上架 2: 未上架（已下架）3: 未上架（合规检查不通过）4：未上架（待上架）5：已删除）
+        模板状态： - 0：审核中 - 1：已上架 - 2：未上架（已下架） - 3：未上架（合规检查不通过） - 4：未上架（待上架） - 5：已删除 
 
         :return: The status of this ShowTemplateV3Response.
         :rtype: int
@@ -340,7 +340,7 @@ class ShowTemplateV3Response(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowTemplateV3Response.
 
-        模板状态（0:审核中 1: 已上架 2: 未上架（已下架）3: 未上架（合规检查不通过）4：未上架（待上架）5：已删除）
+        模板状态： - 0：审核中 - 1：已上架 - 2：未上架（已下架） - 3：未上架（合规检查不通过） - 4：未上架（待上架） - 5：已删除 
 
         :param status: The status of this ShowTemplateV3Response.
         :type: int
@@ -351,7 +351,7 @@ class ShowTemplateV3Response(SdkResponse):
     def view_count(self):
         """Gets the view_count of this ShowTemplateV3Response.
 
-        访问量
+        访问量。
 
         :return: The view_count of this ShowTemplateV3Response.
         :rtype: int
@@ -362,7 +362,7 @@ class ShowTemplateV3Response(SdkResponse):
     def view_count(self, view_count):
         """Sets the view_count of this ShowTemplateV3Response.
 
-        访问量
+        访问量。
 
         :param view_count: The view_count of this ShowTemplateV3Response.
         :type: int
@@ -373,7 +373,7 @@ class ShowTemplateV3Response(SdkResponse):
     def usage_count(self):
         """Gets the usage_count of this ShowTemplateV3Response.
 
-        引用量
+        引用量。
 
         :return: The usage_count of this ShowTemplateV3Response.
         :rtype: int
@@ -384,7 +384,7 @@ class ShowTemplateV3Response(SdkResponse):
     def usage_count(self, usage_count):
         """Sets the usage_count of this ShowTemplateV3Response.
 
-        引用量
+        引用量。
 
         :param usage_count: The usage_count of this ShowTemplateV3Response.
         :type: int
@@ -395,7 +395,7 @@ class ShowTemplateV3Response(SdkResponse):
     def created_at(self):
         """Gets the created_at of this ShowTemplateV3Response.
 
-        创建时间
+        创建时间。
 
         :return: The created_at of this ShowTemplateV3Response.
         :rtype: str
@@ -406,7 +406,7 @@ class ShowTemplateV3Response(SdkResponse):
     def created_at(self, created_at):
         """Sets the created_at of this ShowTemplateV3Response.
 
-        创建时间
+        创建时间。
 
         :param created_at: The created_at of this ShowTemplateV3Response.
         :type: str
@@ -417,7 +417,7 @@ class ShowTemplateV3Response(SdkResponse):
     def updated_at(self):
         """Gets the updated_at of this ShowTemplateV3Response.
 
-        更新时间
+        更新时间。
 
         :return: The updated_at of this ShowTemplateV3Response.
         :rtype: str
@@ -428,7 +428,7 @@ class ShowTemplateV3Response(SdkResponse):
     def updated_at(self, updated_at):
         """Sets the updated_at of this ShowTemplateV3Response.
 
-        更新时间
+        更新时间。
 
         :param updated_at: The updated_at of this ShowTemplateV3Response.
         :type: str
@@ -439,7 +439,7 @@ class ShowTemplateV3Response(SdkResponse):
     def published_at(self):
         """Gets the published_at of this ShowTemplateV3Response.
 
-        上架时间
+        上架时间。
 
         :return: The published_at of this ShowTemplateV3Response.
         :rtype: str
@@ -450,7 +450,7 @@ class ShowTemplateV3Response(SdkResponse):
     def published_at(self, published_at):
         """Sets the published_at of this ShowTemplateV3Response.
 
-        上架时间
+        上架时间。
 
         :param published_at: The published_at of this ShowTemplateV3Response.
         :type: str
@@ -461,7 +461,7 @@ class ShowTemplateV3Response(SdkResponse):
     def favorite_state(self):
         """Gets the favorite_state of this ShowTemplateV3Response.
 
-        点赞状态(1：点赞，0：未点赞)
+        点赞状态： - 1：点赞 - 0：未点赞 
 
         :return: The favorite_state of this ShowTemplateV3Response.
         :rtype: int
@@ -472,7 +472,7 @@ class ShowTemplateV3Response(SdkResponse):
     def favorite_state(self, favorite_state):
         """Sets the favorite_state of this ShowTemplateV3Response.
 
-        点赞状态(1：点赞，0：未点赞)
+        点赞状态： - 1：点赞 - 0：未点赞 
 
         :param favorite_state: The favorite_state of this ShowTemplateV3Response.
         :type: int
@@ -483,7 +483,7 @@ class ShowTemplateV3Response(SdkResponse):
     def maintainers(self):
         """Gets the maintainers of this ShowTemplateV3Response.
 
-        模板相关联的所有维护人账号名称
+        模板相关联的所有维护人账号名称。
 
         :return: The maintainers of this ShowTemplateV3Response.
         :rtype: list[str]
@@ -494,7 +494,7 @@ class ShowTemplateV3Response(SdkResponse):
     def maintainers(self, maintainers):
         """Sets the maintainers of this ShowTemplateV3Response.
 
-        模板相关联的所有维护人账号名称
+        模板相关联的所有维护人账号名称。
 
         :param maintainers: The maintainers of this ShowTemplateV3Response.
         :type: list[str]
@@ -505,7 +505,7 @@ class ShowTemplateV3Response(SdkResponse):
     def platform_source(self):
         """Gets the platform_source of this ShowTemplateV3Response.
 
-        平台来源（0:codelabs、1:devstar）
+        平台来源： - 0：codelabs - 1：devstar 
 
         :return: The platform_source of this ShowTemplateV3Response.
         :rtype: int
@@ -516,7 +516,7 @@ class ShowTemplateV3Response(SdkResponse):
     def platform_source(self, platform_source):
         """Sets the platform_source of this ShowTemplateV3Response.
 
-        平台来源（0:codelabs、1:devstar）
+        平台来源： - 0：codelabs - 1：devstar 
 
         :param platform_source: The platform_source of this ShowTemplateV3Response.
         :type: int
@@ -527,7 +527,7 @@ class ShowTemplateV3Response(SdkResponse):
     def properties(self):
         """Gets the properties of this ShowTemplateV3Response.
 
-        模板自定义参数列表
+        模板自定义参数列表。
 
         :return: The properties of this ShowTemplateV3Response.
         :rtype: object
@@ -538,7 +538,7 @@ class ShowTemplateV3Response(SdkResponse):
     def properties(self, properties):
         """Sets the properties of this ShowTemplateV3Response.
 
-        模板自定义参数列表
+        模板自定义参数列表。
 
         :param properties: The properties of this ShowTemplateV3Response.
         :type: object
@@ -549,7 +549,7 @@ class ShowTemplateV3Response(SdkResponse):
     def dependencies(self):
         """Gets the dependencies of this ShowTemplateV3Response.
 
-        dependency信息
+        dependency信息。
 
         :return: The dependencies of this ShowTemplateV3Response.
         :rtype: list[object]
@@ -560,7 +560,7 @@ class ShowTemplateV3Response(SdkResponse):
     def dependencies(self, dependencies):
         """Sets the dependencies of this ShowTemplateV3Response.
 
-        dependency信息
+        dependency信息。
 
         :param dependencies: The dependencies of this ShowTemplateV3Response.
         :type: list[object]
@@ -571,7 +571,7 @@ class ShowTemplateV3Response(SdkResponse):
     def dependency_type(self):
         """Gets the dependency_type of this ShowTemplateV3Response.
 
-        dependency类型('0':非分组的依赖类型,'1':分组依赖类型)
+        dependency类型： - '0'：非分组的依赖类型 - '1'：分组依赖类型 
 
         :return: The dependency_type of this ShowTemplateV3Response.
         :rtype: str
@@ -582,7 +582,7 @@ class ShowTemplateV3Response(SdkResponse):
     def dependency_type(self, dependency_type):
         """Sets the dependency_type of this ShowTemplateV3Response.
 
-        dependency类型('0':非分组的依赖类型,'1':分组依赖类型)
+        dependency类型： - '0'：非分组的依赖类型 - '1'：分组依赖类型 
 
         :param dependency_type: The dependency_type of this ShowTemplateV3Response.
         :type: str
@@ -593,7 +593,7 @@ class ShowTemplateV3Response(SdkResponse):
     def store(self):
         """Gets the store of this ShowTemplateV3Response.
 
-        代码存储位置(0:codehub;1:Obs;2:efs;3:网络公开代码仓;)
+        代码存储位置： - 0：codehub - 1：Obs - 2：efs - 3：网络公开代码仓 
 
         :return: The store of this ShowTemplateV3Response.
         :rtype: int
@@ -604,7 +604,7 @@ class ShowTemplateV3Response(SdkResponse):
     def store(self, store):
         """Sets the store of this ShowTemplateV3Response.
 
-        代码存储位置(0:codehub;1:Obs;2:efs;3:网络公开代码仓;)
+        代码存储位置： - 0：codehub - 1：Obs - 2：efs - 3：网络公开代码仓 
 
         :param store: The store of this ShowTemplateV3Response.
         :type: int
@@ -615,7 +615,7 @@ class ShowTemplateV3Response(SdkResponse):
     def store_info(self):
         """Gets the store_info of this ShowTemplateV3Response.
 
-        获取代码模版所需的信息
+        获取代码模版所需的信息。
 
         :return: The store_info of this ShowTemplateV3Response.
         :rtype: str
@@ -626,7 +626,7 @@ class ShowTemplateV3Response(SdkResponse):
     def store_info(self, store_info):
         """Sets the store_info of this ShowTemplateV3Response.
 
-        获取代码模版所需的信息
+        获取代码模版所需的信息。
 
         :param store_info: The store_info of this ShowTemplateV3Response.
         :type: str
@@ -637,7 +637,7 @@ class ShowTemplateV3Response(SdkResponse):
     def file_size(self):
         """Gets the file_size of this ShowTemplateV3Response.
 
-        模板文件解压缩之后的大小(单位:KB)
+        模板文件解压缩之后的大小(单位:KB)。
 
         :return: The file_size of this ShowTemplateV3Response.
         :rtype: int
@@ -648,7 +648,7 @@ class ShowTemplateV3Response(SdkResponse):
     def file_size(self, file_size):
         """Sets the file_size of this ShowTemplateV3Response.
 
-        模板文件解压缩之后的大小(单位:KB)
+        模板文件解压缩之后的大小(单位:KB)。
 
         :param file_size: The file_size of this ShowTemplateV3Response.
         :type: int
@@ -659,7 +659,7 @@ class ShowTemplateV3Response(SdkResponse):
     def deployment(self):
         """Gets the deployment of this ShowTemplateV3Response.
 
-        部署信息
+        部署信息。
 
         :return: The deployment of this ShowTemplateV3Response.
         :rtype: object
@@ -670,7 +670,7 @@ class ShowTemplateV3Response(SdkResponse):
     def deployment(self, deployment):
         """Sets the deployment of this ShowTemplateV3Response.
 
-        部署信息
+        部署信息。
 
         :param deployment: The deployment of this ShowTemplateV3Response.
         :type: object
@@ -681,7 +681,7 @@ class ShowTemplateV3Response(SdkResponse):
     def is_static(self):
         """Gets the is_static of this ShowTemplateV3Response.
 
-        动、静态代码模板标识（0：动态模板codetemplate，1：静态模板codesample）
+        动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
 
         :return: The is_static of this ShowTemplateV3Response.
         :rtype: int
@@ -692,7 +692,7 @@ class ShowTemplateV3Response(SdkResponse):
     def is_static(self, is_static):
         """Sets the is_static of this ShowTemplateV3Response.
 
-        动、静态代码模板标识（0：动态模板codetemplate，1：静态模板codesample）
+        动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
 
         :param is_static: The is_static of this ShowTemplateV3Response.
         :type: int
@@ -703,7 +703,7 @@ class ShowTemplateV3Response(SdkResponse):
     def update_id(self):
         """Gets the update_id of this ShowTemplateV3Response.
 
-        模板关联更新态Id
+        模板关联更新态Id。
 
         :return: The update_id of this ShowTemplateV3Response.
         :rtype: str
@@ -714,7 +714,7 @@ class ShowTemplateV3Response(SdkResponse):
     def update_id(self, update_id):
         """Sets the update_id of this ShowTemplateV3Response.
 
-        模板关联更新态Id
+        模板关联更新态Id。
 
         :param update_id: The update_id of this ShowTemplateV3Response.
         :type: str
@@ -725,7 +725,7 @@ class ShowTemplateV3Response(SdkResponse):
     def topic(self):
         """Gets the topic of this ShowTemplateV3Response.
 
-        模板标签
+        模板标签。
 
         :return: The topic of this ShowTemplateV3Response.
         :rtype: list[TopicCategory]
@@ -736,7 +736,7 @@ class ShowTemplateV3Response(SdkResponse):
     def topic(self, topic):
         """Sets the topic of this ShowTemplateV3Response.
 
-        模板标签
+        模板标签。
 
         :param topic: The topic of this ShowTemplateV3Response.
         :type: list[TopicCategory]
@@ -747,7 +747,7 @@ class ShowTemplateV3Response(SdkResponse):
     def tags(self):
         """Gets the tags of this ShowTemplateV3Response.
 
-        模板标签
+        自定义标签。
 
         :return: The tags of this ShowTemplateV3Response.
         :rtype: list[TagInfo]
@@ -758,7 +758,7 @@ class ShowTemplateV3Response(SdkResponse):
     def tags(self, tags):
         """Sets the tags of this ShowTemplateV3Response.
 
-        模板标签
+        自定义标签。
 
         :param tags: The tags of this ShowTemplateV3Response.
         :type: list[TagInfo]

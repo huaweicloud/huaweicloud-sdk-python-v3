@@ -24,6 +24,8 @@ class CodehubJobInfo:
 
     openapi_types = {
         'application_name': 'str',
+        'privately': 'bool',
+        'short_id': 'str',
         'code_url': 'str',
         'region_id': 'str',
         'repo_type': 'int',
@@ -33,6 +35,8 @@ class CodehubJobInfo:
 
     attribute_map = {
         'application_name': 'application_name',
+        'privately': 'privately',
+        'short_id': 'short_id',
         'code_url': 'code_url',
         'region_id': 'region_id',
         'repo_type': 'repo_type',
@@ -40,12 +44,14 @@ class CodehubJobInfo:
         'repo_info': 'repo_info'
     }
 
-    def __init__(self, application_name=None, code_url=None, region_id=None, repo_type=None, properties=None, repo_info=None):
+    def __init__(self, application_name=None, privately=None, short_id=None, code_url=None, region_id=None, repo_type=None, properties=None, repo_info=None):
         """CodehubJobInfo - a model defined in huaweicloud sdk"""
         
         
 
         self._application_name = None
+        self._privately = None
+        self._short_id = None
         self._code_url = None
         self._region_id = None
         self._repo_type = None
@@ -54,6 +60,10 @@ class CodehubJobInfo:
         self.discriminator = None
 
         self.application_name = application_name
+        if privately is not None:
+            self.privately = privately
+        if short_id is not None:
+            self.short_id = short_id
         self.code_url = code_url
         self.region_id = region_id
         self.repo_type = repo_type
@@ -66,7 +76,7 @@ class CodehubJobInfo:
     def application_name(self):
         """Gets the application_name of this CodehubJobInfo.
 
-        应用名称
+        应用名称。
 
         :return: The application_name of this CodehubJobInfo.
         :rtype: str
@@ -77,7 +87,7 @@ class CodehubJobInfo:
     def application_name(self, application_name):
         """Sets the application_name of this CodehubJobInfo.
 
-        应用名称
+        应用名称。
 
         :param application_name: The application_name of this CodehubJobInfo.
         :type: str
@@ -85,10 +95,54 @@ class CodehubJobInfo:
         self._application_name = application_name
 
     @property
+    def privately(self):
+        """Gets the privately of this CodehubJobInfo.
+
+        仓库是否私有
+
+        :return: The privately of this CodehubJobInfo.
+        :rtype: bool
+        """
+        return self._privately
+
+    @privately.setter
+    def privately(self, privately):
+        """Sets the privately of this CodehubJobInfo.
+
+        仓库是否私有
+
+        :param privately: The privately of this CodehubJobInfo.
+        :type: bool
+        """
+        self._privately = privately
+
+    @property
+    def short_id(self):
+        """Gets the short_id of this CodehubJobInfo.
+
+        仓库短id
+
+        :return: The short_id of this CodehubJobInfo.
+        :rtype: str
+        """
+        return self._short_id
+
+    @short_id.setter
+    def short_id(self, short_id):
+        """Sets the short_id of this CodehubJobInfo.
+
+        仓库短id
+
+        :param short_id: The short_id of this CodehubJobInfo.
+        :type: str
+        """
+        self._short_id = short_id
+
+    @property
     def code_url(self):
         """Gets the code_url of this CodehubJobInfo.
 
-        代码存放的ssh地址
+        代码存放的ssh地址。
 
         :return: The code_url of this CodehubJobInfo.
         :rtype: str
@@ -99,7 +153,7 @@ class CodehubJobInfo:
     def code_url(self, code_url):
         """Sets the code_url of this CodehubJobInfo.
 
-        代码存放的ssh地址
+        代码存放的ssh地址。
 
         :param code_url: The code_url of this CodehubJobInfo.
         :type: str
@@ -110,7 +164,7 @@ class CodehubJobInfo:
     def region_id(self):
         """Gets the region_id of this CodehubJobInfo.
 
-        CodeHub 仓库所在的 Region ID。华南-广州: cn-south-1, 华东-上海二：cn-east-2，华北-北京一： cn-north-1 ，华北-北京四：cn-north-4
+        CodeHub 仓库所在的 Region ID： - 华南-广州：cn-south-1 - 华东-上海二：cn-east-2 - 华北-北京一：cn-north-1 - 华北-北京四：cn-north-4 
 
         :return: The region_id of this CodehubJobInfo.
         :rtype: str
@@ -121,7 +175,7 @@ class CodehubJobInfo:
     def region_id(self, region_id):
         """Sets the region_id of this CodehubJobInfo.
 
-        CodeHub 仓库所在的 Region ID。华南-广州: cn-south-1, 华东-上海二：cn-east-2，华北-北京一： cn-north-1 ，华北-北京四：cn-north-4
+        CodeHub 仓库所在的 Region ID： - 华南-广州：cn-south-1 - 华东-上海二：cn-east-2 - 华北-北京一：cn-north-1 - 华北-北京四：cn-north-4 
 
         :param region_id: The region_id of this CodehubJobInfo.
         :type: str
@@ -132,7 +186,7 @@ class CodehubJobInfo:
     def repo_type(self):
         """Gets the repo_type of this CodehubJobInfo.
 
-        0 - 将生成的应用代码存储于 repo_info 指定的 CodeHub 仓库中。1 - 将生成的应用代码存储到华为云，任务创建人可以通过 ExportApplicationCode 下载代码压缩包
+        - 0 - 将生成的应用代码存储于 repo_info 指定的 CodeHub 仓库中。 - 1 - 将生成的应用代码存储到华为云，任务创建人可以通过 ExportApplicationCode 下载代码压缩包。 
 
         :return: The repo_type of this CodehubJobInfo.
         :rtype: int
@@ -143,7 +197,7 @@ class CodehubJobInfo:
     def repo_type(self, repo_type):
         """Sets the repo_type of this CodehubJobInfo.
 
-        0 - 将生成的应用代码存储于 repo_info 指定的 CodeHub 仓库中。1 - 将生成的应用代码存储到华为云，任务创建人可以通过 ExportApplicationCode 下载代码压缩包
+        - 0 - 将生成的应用代码存储于 repo_info 指定的 CodeHub 仓库中。 - 1 - 将生成的应用代码存储到华为云，任务创建人可以通过 ExportApplicationCode 下载代码压缩包。 
 
         :param repo_type: The repo_type of this CodehubJobInfo.
         :type: int
@@ -154,7 +208,7 @@ class CodehubJobInfo:
     def properties(self):
         """Gets the properties of this CodehubJobInfo.
 
-        可以根据 template-metadata.json 获取动态参数 ID 以及规则
+        可以根据 template-metadata.json 获取动态参数 ID 以及规则。
 
         :return: The properties of this CodehubJobInfo.
         :rtype: dict(str, str)
@@ -165,7 +219,7 @@ class CodehubJobInfo:
     def properties(self, properties):
         """Sets the properties of this CodehubJobInfo.
 
-        可以根据 template-metadata.json 获取动态参数 ID 以及规则
+        可以根据 template-metadata.json 获取动态参数 ID 以及规则。
 
         :param properties: The properties of this CodehubJobInfo.
         :type: dict(str, str)

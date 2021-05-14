@@ -23,7 +23,7 @@ class RecognizeAutoClassificationResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'AutoClassificationResult'
+        'result': 'list[AutoClassificationResult]'
     }
 
     attribute_map = {
@@ -45,9 +45,10 @@ class RecognizeAutoClassificationResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeAutoClassificationResponse.
 
+        调用成功时表示调用结果。  调用失败时无此字段。 
 
         :return: The result of this RecognizeAutoClassificationResponse.
-        :rtype: AutoClassificationResult
+        :rtype: list[AutoClassificationResult]
         """
         return self._result
 
@@ -55,9 +56,10 @@ class RecognizeAutoClassificationResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this RecognizeAutoClassificationResponse.
 
+        调用成功时表示调用结果。  调用失败时无此字段。 
 
         :param result: The result of this RecognizeAutoClassificationResponse.
-        :type: AutoClassificationResult
+        :type: list[AutoClassificationResult]
         """
         self._result = result
 

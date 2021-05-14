@@ -2237,7 +2237,7 @@ class RdsClient(Client):
         :return: ListSlowlogStatisticsResponse
         """
 
-        all_params = ['instance_id', 'cur_page', 'per_page', 'start_date', 'end_date', 'x_language', 'type']
+        all_params = ['instance_id', 'cur_page', 'per_page', 'start_date', 'end_date', 'type', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

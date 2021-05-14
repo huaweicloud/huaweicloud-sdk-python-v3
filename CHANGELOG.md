@@ -1,3 +1,25 @@
+# 3.0.43-rc 2021-05-14
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - Solve the issue of abnormal parsing result when using interface `NovaShowKeypair` to obtain the secret key.
+- _Change_
+  - None
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add new result values `CLOUDSSD` and `LOCALSSD` to response field `type` of interface `ListInstances`.
+  - Add an optional request parameter `complete_version` to interface `ListBackups`.
+  - Change request parameter `type` of interface `ListSlowlogStatistics` from optional to required.
+
 # 3.0.42-rc 2021-05-10
 
 ### HuaweiCloud SDK BMS

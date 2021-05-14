@@ -48,7 +48,7 @@ class TemplateViewHistory:
     def template_id(self):
         """Gets the template_id of this TemplateViewHistory.
 
-        模板的id
+        模板的id。
 
         :return: The template_id of this TemplateViewHistory.
         :rtype: str
@@ -59,7 +59,7 @@ class TemplateViewHistory:
     def template_id(self, template_id):
         """Sets the template_id of this TemplateViewHistory.
 
-        模板的id
+        模板的id。
 
         :param template_id: The template_id of this TemplateViewHistory.
         :type: str
@@ -70,7 +70,7 @@ class TemplateViewHistory:
     def template_title(self):
         """Gets the template_title of this TemplateViewHistory.
 
-        模板的名称
+        模板的名称。
 
         :return: The template_title of this TemplateViewHistory.
         :rtype: str
@@ -81,7 +81,7 @@ class TemplateViewHistory:
     def template_title(self, template_title):
         """Sets the template_title of this TemplateViewHistory.
 
-        模板的名称
+        模板的名称。
 
         :param template_title: The template_title of this TemplateViewHistory.
         :type: str

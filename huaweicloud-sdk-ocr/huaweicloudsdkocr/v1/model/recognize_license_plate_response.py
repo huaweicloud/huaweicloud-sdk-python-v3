@@ -23,7 +23,7 @@ class RecognizeLicensePlateResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'LicensePlateResult'
+        'result': 'list[LicensePlateResult]'
     }
 
     attribute_map = {
@@ -45,9 +45,10 @@ class RecognizeLicensePlateResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeLicensePlateResponse.
 
+        调用成功时表示调用结果。  调用失败时无此字段。 
 
         :return: The result of this RecognizeLicensePlateResponse.
-        :rtype: LicensePlateResult
+        :rtype: list[LicensePlateResult]
         """
         return self._result
 
@@ -55,9 +56,10 @@ class RecognizeLicensePlateResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this RecognizeLicensePlateResponse.
 
+        调用成功时表示调用结果。  调用失败时无此字段。 
 
         :param result: The result of this RecognizeLicensePlateResponse.
-        :type: LicensePlateResult
+        :type: list[LicensePlateResult]
         """
         self._result = result
 

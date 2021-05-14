@@ -32,7 +32,10 @@ class ShowTemplateDetailResponse(SdkResponse):
         'ssh_url': 'str',
         'project_uuid': 'str',
         'status': 'int',
-        'properties': 'list[PropertiesInfo]'
+        'properties': 'list[object]',
+        'dependencies': 'list[object]',
+        'dependency_type': 'str',
+        'deployment': 'object'
     }
 
     attribute_map = {
@@ -45,10 +48,13 @@ class ShowTemplateDetailResponse(SdkResponse):
         'ssh_url': 'ssh_url',
         'project_uuid': 'project_uuid',
         'status': 'status',
-        'properties': 'properties'
+        'properties': 'properties',
+        'dependencies': 'dependencies',
+        'dependency_type': 'dependency_type',
+        'deployment': 'deployment'
     }
 
-    def __init__(self, id=None, title=None, description=None, region_id=None, repostory_id=None, code_url=None, ssh_url=None, project_uuid=None, status=None, properties=None):
+    def __init__(self, id=None, title=None, description=None, region_id=None, repostory_id=None, code_url=None, ssh_url=None, project_uuid=None, status=None, properties=None, dependencies=None, dependency_type=None, deployment=None):
         """ShowTemplateDetailResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
@@ -63,6 +69,9 @@ class ShowTemplateDetailResponse(SdkResponse):
         self._project_uuid = None
         self._status = None
         self._properties = None
+        self._dependencies = None
+        self._dependency_type = None
+        self._deployment = None
         self.discriminator = None
 
         if id is not None:
@@ -85,12 +94,18 @@ class ShowTemplateDetailResponse(SdkResponse):
             self.status = status
         if properties is not None:
             self.properties = properties
+        if dependencies is not None:
+            self.dependencies = dependencies
+        if dependency_type is not None:
+            self.dependency_type = dependency_type
+        if deployment is not None:
+            self.deployment = deployment
 
     @property
     def id(self):
         """Gets the id of this ShowTemplateDetailResponse.
 
-        模板的id
+        模板的id。
 
         :return: The id of this ShowTemplateDetailResponse.
         :rtype: str
@@ -101,7 +116,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this ShowTemplateDetailResponse.
 
-        模板的id
+        模板的id。
 
         :param id: The id of this ShowTemplateDetailResponse.
         :type: str
@@ -112,7 +127,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def title(self):
         """Gets the title of this ShowTemplateDetailResponse.
 
-        模板的名称
+        模板的名称。
 
         :return: The title of this ShowTemplateDetailResponse.
         :rtype: str
@@ -123,7 +138,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def title(self, title):
         """Sets the title of this ShowTemplateDetailResponse.
 
-        模板的名称
+        模板的名称。
 
         :param title: The title of this ShowTemplateDetailResponse.
         :type: str
@@ -134,7 +149,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def description(self):
         """Gets the description of this ShowTemplateDetailResponse.
 
-        模板的描述信息
+        模板的描述信息。
 
         :return: The description of this ShowTemplateDetailResponse.
         :rtype: str
@@ -145,7 +160,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def description(self, description):
         """Sets the description of this ShowTemplateDetailResponse.
 
-        模板的描述信息
+        模板的描述信息。
 
         :param description: The description of this ShowTemplateDetailResponse.
         :type: str
@@ -156,7 +171,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def region_id(self):
         """Gets the region_id of this ShowTemplateDetailResponse.
 
-        模板关联的region host id
+        模板关联的region host id。
 
         :return: The region_id of this ShowTemplateDetailResponse.
         :rtype: str
@@ -167,7 +182,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def region_id(self, region_id):
         """Sets the region_id of this ShowTemplateDetailResponse.
 
-        模板关联的region host id
+        模板关联的region host id。
 
         :param region_id: The region_id of this ShowTemplateDetailResponse.
         :type: str
@@ -178,7 +193,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def repostory_id(self):
         """Gets the repostory_id of this ShowTemplateDetailResponse.
 
-        模板关联的repo id
+        模板关联的repo id。
 
         :return: The repostory_id of this ShowTemplateDetailResponse.
         :rtype: str
@@ -189,7 +204,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def repostory_id(self, repostory_id):
         """Sets the repostory_id of this ShowTemplateDetailResponse.
 
-        模板关联的repo id
+        模板关联的repo id。
 
         :param repostory_id: The repostory_id of this ShowTemplateDetailResponse.
         :type: str
@@ -200,7 +215,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def code_url(self):
         """Gets the code_url of this ShowTemplateDetailResponse.
 
-        模板https下载路径
+        模板https下载路径。
 
         :return: The code_url of this ShowTemplateDetailResponse.
         :rtype: str
@@ -211,7 +226,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def code_url(self, code_url):
         """Sets the code_url of this ShowTemplateDetailResponse.
 
-        模板https下载路径
+        模板https下载路径。
 
         :param code_url: The code_url of this ShowTemplateDetailResponse.
         :type: str
@@ -222,7 +237,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def ssh_url(self):
         """Gets the ssh_url of this ShowTemplateDetailResponse.
 
-        模板ssh下载路径
+        模板ssh下载路径。
 
         :return: The ssh_url of this ShowTemplateDetailResponse.
         :rtype: str
@@ -233,7 +248,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def ssh_url(self, ssh_url):
         """Sets the ssh_url of this ShowTemplateDetailResponse.
 
-        模板ssh下载路径
+        模板ssh下载路径。
 
         :param ssh_url: The ssh_url of this ShowTemplateDetailResponse.
         :type: str
@@ -244,7 +259,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def project_uuid(self):
         """Gets the project_uuid of this ShowTemplateDetailResponse.
 
-        项目id
+        项目id。
 
         :return: The project_uuid of this ShowTemplateDetailResponse.
         :rtype: str
@@ -255,7 +270,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def project_uuid(self, project_uuid):
         """Sets the project_uuid of this ShowTemplateDetailResponse.
 
-        项目id
+        项目id。
 
         :param project_uuid: The project_uuid of this ShowTemplateDetailResponse.
         :type: str
@@ -266,7 +281,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowTemplateDetailResponse.
 
-        模板状态
+        模板状态。
 
         :return: The status of this ShowTemplateDetailResponse.
         :rtype: int
@@ -277,7 +292,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowTemplateDetailResponse.
 
-        模板状态
+        模板状态。
 
         :param status: The status of this ShowTemplateDetailResponse.
         :type: int
@@ -288,9 +303,10 @@ class ShowTemplateDetailResponse(SdkResponse):
     def properties(self):
         """Gets the properties of this ShowTemplateDetailResponse.
 
+        源数据信息： - key：元数据标识 - defaultValue：用户输入值的默认值 - isShow：前台界面组件是否展示该元数据 - isProjectName：是否使用作为项目名称 - label：前台界面组件展示名称 - type：前台界面组件类型 - helpText：前台界面组件帮助文本 - readOnly：前台界面组件是否可修改 - required：前台界面组件是否展示必填 - regType：该元数据进行正则校验类型；简化模板编码使用 - regPattern：该元数据对应js语法正则表达式 - regTip：该元数据正则校验提示信息 - visibleRule：该元数据可见规则 - isRequired：是否必填 - isReadOnly：是否只读 - options：option对象集合   - displayName：前台界面展示字符串   - value：该选项值 - eventOnchange：联动属性集合   - associatedProperty：被关联Property的key值   - associatedValue：被关联的value - fold：是否折叠 - show：是否展示该Property 
 
         :return: The properties of this ShowTemplateDetailResponse.
-        :rtype: list[PropertiesInfo]
+        :rtype: list[object]
         """
         return self._properties
 
@@ -298,11 +314,78 @@ class ShowTemplateDetailResponse(SdkResponse):
     def properties(self, properties):
         """Sets the properties of this ShowTemplateDetailResponse.
 
+        源数据信息： - key：元数据标识 - defaultValue：用户输入值的默认值 - isShow：前台界面组件是否展示该元数据 - isProjectName：是否使用作为项目名称 - label：前台界面组件展示名称 - type：前台界面组件类型 - helpText：前台界面组件帮助文本 - readOnly：前台界面组件是否可修改 - required：前台界面组件是否展示必填 - regType：该元数据进行正则校验类型；简化模板编码使用 - regPattern：该元数据对应js语法正则表达式 - regTip：该元数据正则校验提示信息 - visibleRule：该元数据可见规则 - isRequired：是否必填 - isReadOnly：是否只读 - options：option对象集合   - displayName：前台界面展示字符串   - value：该选项值 - eventOnchange：联动属性集合   - associatedProperty：被关联Property的key值   - associatedValue：被关联的value - fold：是否折叠 - show：是否展示该Property 
 
         :param properties: The properties of this ShowTemplateDetailResponse.
-        :type: list[PropertiesInfo]
+        :type: list[object]
         """
         self._properties = properties
+
+    @property
+    def dependencies(self):
+        """Gets the dependencies of this ShowTemplateDetailResponse.
+
+        dependency信息： - id：依赖全局唯一标识 - name：依赖展示名称 - description：依赖展示描述 - recommended：是否推荐使用该依赖 - versionProperty：该依赖版本被关联Property的key值 - versionRange：该依赖版本适用范围 - groupName：分组名称 - items：分组列表 
+
+        :return: The dependencies of this ShowTemplateDetailResponse.
+        :rtype: list[object]
+        """
+        return self._dependencies
+
+    @dependencies.setter
+    def dependencies(self, dependencies):
+        """Sets the dependencies of this ShowTemplateDetailResponse.
+
+        dependency信息： - id：依赖全局唯一标识 - name：依赖展示名称 - description：依赖展示描述 - recommended：是否推荐使用该依赖 - versionProperty：该依赖版本被关联Property的key值 - versionRange：该依赖版本适用范围 - groupName：分组名称 - items：分组列表 
+
+        :param dependencies: The dependencies of this ShowTemplateDetailResponse.
+        :type: list[object]
+        """
+        self._dependencies = dependencies
+
+    @property
+    def dependency_type(self):
+        """Gets the dependency_type of this ShowTemplateDetailResponse.
+
+        dependency类型： - 0：分组 - 1：不分组 - null：无分组信息 
+
+        :return: The dependency_type of this ShowTemplateDetailResponse.
+        :rtype: str
+        """
+        return self._dependency_type
+
+    @dependency_type.setter
+    def dependency_type(self, dependency_type):
+        """Sets the dependency_type of this ShowTemplateDetailResponse.
+
+        dependency类型： - 0：分组 - 1：不分组 - null：无分组信息 
+
+        :param dependency_type: The dependency_type of this ShowTemplateDetailResponse.
+        :type: str
+        """
+        self._dependency_type = dependency_type
+
+    @property
+    def deployment(self):
+        """Gets the deployment of this ShowTemplateDetailResponse.
+
+        部署信息： - param：参数对象   - build：构建类型   - runtime：函数运行时   - handler：函数执行入口   - outputFile：构建产物文件路径 - target：部署环境 
+
+        :return: The deployment of this ShowTemplateDetailResponse.
+        :rtype: object
+        """
+        return self._deployment
+
+    @deployment.setter
+    def deployment(self, deployment):
+        """Sets the deployment of this ShowTemplateDetailResponse.
+
+        部署信息： - param：参数对象   - build：构建类型   - runtime：函数运行时   - handler：函数执行入口   - outputFile：构建产物文件路径 - target：部署环境 
+
+        :param deployment: The deployment of this ShowTemplateDetailResponse.
+        :type: object
+        """
+        self._deployment = deployment
 
     def to_dict(self):
         """Returns the model properties as a dict"""

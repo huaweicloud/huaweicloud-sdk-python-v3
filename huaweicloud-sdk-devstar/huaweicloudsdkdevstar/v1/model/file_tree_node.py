@@ -9,7 +9,7 @@ import six
 
 
 
-class PipelineTemplateInfo:
+class FileTreeNode:
 
 
     """
@@ -23,99 +23,99 @@ class PipelineTemplateInfo:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
-        'name': 'str',
-        'detail': 'str'
+        'file_path': 'str',
+        'file_name': 'str',
+        'file_type': 'str'
     }
 
     attribute_map = {
-        'id': 'id',
-        'name': 'name',
-        'detail': 'detail'
+        'file_path': 'file_path',
+        'file_name': 'file_name',
+        'file_type': 'file_type'
     }
 
-    def __init__(self, id=None, name=None, detail=None):
-        """PipelineTemplateInfo - a model defined in huaweicloud sdk"""
+    def __init__(self, file_path=None, file_name=None, file_type=None):
+        """FileTreeNode - a model defined in huaweicloud sdk"""
         
         
 
-        self._id = None
-        self._name = None
-        self._detail = None
+        self._file_path = None
+        self._file_name = None
+        self._file_type = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if name is not None:
-            self.name = name
-        if detail is not None:
-            self.detail = detail
+        if file_path is not None:
+            self.file_path = file_path
+        if file_name is not None:
+            self.file_name = file_name
+        if file_type is not None:
+            self.file_type = file_type
 
     @property
-    def id(self):
-        """Gets the id of this PipelineTemplateInfo.
+    def file_path(self):
+        """Gets the file_path of this FileTreeNode.
 
-        流水线模板的id。
+        文件路径
 
-        :return: The id of this PipelineTemplateInfo.
+        :return: The file_path of this FileTreeNode.
         :rtype: str
         """
-        return self._id
+        return self._file_path
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this PipelineTemplateInfo.
+    @file_path.setter
+    def file_path(self, file_path):
+        """Sets the file_path of this FileTreeNode.
 
-        流水线模板的id。
+        文件路径
 
-        :param id: The id of this PipelineTemplateInfo.
+        :param file_path: The file_path of this FileTreeNode.
         :type: str
         """
-        self._id = id
+        self._file_path = file_path
 
     @property
-    def name(self):
-        """Gets the name of this PipelineTemplateInfo.
+    def file_name(self):
+        """Gets the file_name of this FileTreeNode.
 
-        流水线模板的名称。
+        文件名称
 
-        :return: The name of this PipelineTemplateInfo.
+        :return: The file_name of this FileTreeNode.
         :rtype: str
         """
-        return self._name
+        return self._file_name
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this PipelineTemplateInfo.
+    @file_name.setter
+    def file_name(self, file_name):
+        """Sets the file_name of this FileTreeNode.
 
-        流水线模板的名称。
+        文件名称
 
-        :param name: The name of this PipelineTemplateInfo.
+        :param file_name: The file_name of this FileTreeNode.
         :type: str
         """
-        self._name = name
+        self._file_name = file_name
 
     @property
-    def detail(self):
-        """Gets the detail of this PipelineTemplateInfo.
+    def file_type(self):
+        """Gets the file_type of this FileTreeNode.
 
-        流水线模板的详细信息。
+        是否文件夹
 
-        :return: The detail of this PipelineTemplateInfo.
+        :return: The file_type of this FileTreeNode.
         :rtype: str
         """
-        return self._detail
+        return self._file_type
 
-    @detail.setter
-    def detail(self, detail):
-        """Sets the detail of this PipelineTemplateInfo.
+    @file_type.setter
+    def file_type(self, file_type):
+        """Sets the file_type of this FileTreeNode.
 
-        流水线模板的详细信息。
+        是否文件夹
 
-        :param detail: The detail of this PipelineTemplateInfo.
+        :param file_type: The file_type of this FileTreeNode.
         :type: str
         """
-        self._detail = detail
+        self._file_type = file_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -154,7 +154,7 @@ class PipelineTemplateInfo:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PipelineTemplateInfo):
+        if not isinstance(other, FileTreeNode):
             return False
 
         return self.__dict__ == other.__dict__

@@ -50,7 +50,7 @@ class ListPublishedTemplatesResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListPublishedTemplatesResponse.
 
-        返回模板的数量
+        返回模板的数量。
 
         :return: The count of this ListPublishedTemplatesResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ListPublishedTemplatesResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListPublishedTemplatesResponse.
 
-        返回模板的数量
+        返回模板的数量。
 
         :param count: The count of this ListPublishedTemplatesResponse.
         :type: int
@@ -72,7 +72,7 @@ class ListPublishedTemplatesResponse(SdkResponse):
     def templates(self):
         """Gets the templates of this ListPublishedTemplatesResponse.
 
-        返回模板的列表
+        返回模板的列表。
 
         :return: The templates of this ListPublishedTemplatesResponse.
         :rtype: list[TemplateSimpleInfo]
@@ -83,7 +83,7 @@ class ListPublishedTemplatesResponse(SdkResponse):
     def templates(self, templates):
         """Sets the templates of this ListPublishedTemplatesResponse.
 
-        返回模板的列表
+        返回模板的列表。
 
         :param templates: The templates of this ListPublishedTemplatesResponse.
         :type: list[TemplateSimpleInfo]

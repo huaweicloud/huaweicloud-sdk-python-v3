@@ -168,7 +168,7 @@ class Billing:
     def consistent_level(self):
         """Gets the consistent_level of this Billing.
 
-        [规格，崩溃一致性（crash_consistent）或应用一致性（app_consistent）](tag:hws,hws_hk,fcs_vm,ctc) [规格，默认为崩溃一致性（crash_consistent）](tag:dt,ocb,tlf,sbc)
+        崩溃一致性（crash_consistent）或应用一致性（app_consistent）
 
         :return: The consistent_level of this Billing.
         :rtype: str
@@ -179,7 +179,7 @@ class Billing:
     def consistent_level(self, consistent_level):
         """Sets the consistent_level of this Billing.
 
-        [规格，崩溃一致性（crash_consistent）或应用一致性（app_consistent）](tag:hws,hws_hk,fcs_vm,ctc) [规格，默认为崩溃一致性（crash_consistent）](tag:dt,ocb,tlf,sbc)
+        崩溃一致性（crash_consistent）或应用一致性（app_consistent）
 
         :param consistent_level: The consistent_level of this Billing.
         :type: str
@@ -300,7 +300,7 @@ class Billing:
     def spec_code(self):
         """Gets the spec_code of this Billing.
 
-        规格编码
+        规格编码: 云服务备份存储库:vault.backup.server.normal;云硬盘备份存储库:vault.backup.volume.normal;文件备份存储库:vault.backup.turbo.normal;数据库备份存储库:vault.backup.database.normal;混合云备份存储库:vault.hybrid.server.normal;复制备份存储库:vault.replication.server.normal
 
         :return: The spec_code of this Billing.
         :rtype: str
@@ -311,7 +311,7 @@ class Billing:
     def spec_code(self, spec_code):
         """Sets the spec_code of this Billing.
 
-        规格编码
+        规格编码: 云服务备份存储库:vault.backup.server.normal;云硬盘备份存储库:vault.backup.volume.normal;文件备份存储库:vault.backup.turbo.normal;数据库备份存储库:vault.backup.database.normal;混合云备份存储库:vault.hybrid.server.normal;复制备份存储库:vault.replication.server.normal
 
         :param spec_code: The spec_code of this Billing.
         :type: str

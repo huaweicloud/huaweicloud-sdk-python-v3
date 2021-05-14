@@ -55,7 +55,7 @@ class TemplateSimpleInfo:
     def id(self):
         """Gets the id of this TemplateSimpleInfo.
 
-        模板id
+        模板id。
 
         :return: The id of this TemplateSimpleInfo.
         :rtype: str
@@ -66,7 +66,7 @@ class TemplateSimpleInfo:
     def id(self, id):
         """Sets the id of this TemplateSimpleInfo.
 
-        模板id
+        模板id。
 
         :param id: The id of this TemplateSimpleInfo.
         :type: str
@@ -77,7 +77,7 @@ class TemplateSimpleInfo:
     def title(self):
         """Gets the title of this TemplateSimpleInfo.
 
-        模板名
+        模板名。
 
         :return: The title of this TemplateSimpleInfo.
         :rtype: str
@@ -88,7 +88,7 @@ class TemplateSimpleInfo:
     def title(self, title):
         """Sets the title of this TemplateSimpleInfo.
 
-        模板名
+        模板名。
 
         :param title: The title of this TemplateSimpleInfo.
         :type: str
@@ -99,7 +99,7 @@ class TemplateSimpleInfo:
     def description(self):
         """Gets the description of this TemplateSimpleInfo.
 
-        模板描述
+        模板描述。
 
         :return: The description of this TemplateSimpleInfo.
         :rtype: str
@@ -110,7 +110,7 @@ class TemplateSimpleInfo:
     def description(self, description):
         """Sets the description of this TemplateSimpleInfo.
 
-        模板描述
+        模板描述。
 
         :param description: The description of this TemplateSimpleInfo.
         :type: str

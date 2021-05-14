@@ -65,7 +65,7 @@ class ShowTemplateFileResponse(SdkResponse):
     def content(self):
         """Gets the content of this ShowTemplateFileResponse.
 
-        文件内容
+        文件内容（返回的文件内容为encoding指定的编码格式编码后的内容）。
 
         :return: The content of this ShowTemplateFileResponse.
         :rtype: str
@@ -76,7 +76,7 @@ class ShowTemplateFileResponse(SdkResponse):
     def content(self, content):
         """Sets the content of this ShowTemplateFileResponse.
 
-        文件内容
+        文件内容（返回的文件内容为encoding指定的编码格式编码后的内容）。
 
         :param content: The content of this ShowTemplateFileResponse.
         :type: str
@@ -87,7 +87,7 @@ class ShowTemplateFileResponse(SdkResponse):
     def encoding(self):
         """Gets the encoding of this ShowTemplateFileResponse.
 
-        内容编码格式(固定base64)
+        内容编码格式(固定base64)。
 
         :return: The encoding of this ShowTemplateFileResponse.
         :rtype: str
@@ -98,7 +98,7 @@ class ShowTemplateFileResponse(SdkResponse):
     def encoding(self, encoding):
         """Sets the encoding of this ShowTemplateFileResponse.
 
-        内容编码格式(固定base64)
+        内容编码格式(固定base64)。
 
         :param encoding: The encoding of this ShowTemplateFileResponse.
         :type: str
@@ -109,7 +109,7 @@ class ShowTemplateFileResponse(SdkResponse):
     def file_name(self):
         """Gets the file_name of this ShowTemplateFileResponse.
 
-        文件名
+        文件名。
 
         :return: The file_name of this ShowTemplateFileResponse.
         :rtype: str
@@ -120,7 +120,7 @@ class ShowTemplateFileResponse(SdkResponse):
     def file_name(self, file_name):
         """Sets the file_name of this ShowTemplateFileResponse.
 
-        文件名
+        文件名。
 
         :param file_name: The file_name of this ShowTemplateFileResponse.
         :type: str
@@ -131,7 +131,7 @@ class ShowTemplateFileResponse(SdkResponse):
     def file_path(self):
         """Gets the file_path of this ShowTemplateFileResponse.
 
-        文件相对路径
+        文件相对路径。
 
         :return: The file_path of this ShowTemplateFileResponse.
         :rtype: str
@@ -142,7 +142,7 @@ class ShowTemplateFileResponse(SdkResponse):
     def file_path(self, file_path):
         """Sets the file_path of this ShowTemplateFileResponse.
 
-        文件相对路径
+        文件相对路径。
 
         :param file_path: The file_path of this ShowTemplateFileResponse.
         :type: str
@@ -153,7 +153,7 @@ class ShowTemplateFileResponse(SdkResponse):
     def file_type(self):
         """Gets the file_type of this ShowTemplateFileResponse.
 
-        文件类型
+        文件类型。
 
         :return: The file_type of this ShowTemplateFileResponse.
         :rtype: str
@@ -164,7 +164,7 @@ class ShowTemplateFileResponse(SdkResponse):
     def file_type(self, file_type):
         """Sets the file_type of this ShowTemplateFileResponse.
 
-        文件类型
+        文件类型。
 
         :param file_type: The file_type of this ShowTemplateFileResponse.
         :type: str

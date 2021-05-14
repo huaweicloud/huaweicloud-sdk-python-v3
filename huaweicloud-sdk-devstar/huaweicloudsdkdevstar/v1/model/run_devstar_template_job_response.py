@@ -23,29 +23,34 @@ class RunDevstarTemplateJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'job_id': 'str'
+        'job_id': 'str',
+        'file_list': 'list[FileTreeNode]'
     }
 
     attribute_map = {
-        'job_id': 'job_id'
+        'job_id': 'job_id',
+        'file_list': 'file_list'
     }
 
-    def __init__(self, job_id=None):
+    def __init__(self, job_id=None, file_list=None):
         """RunDevstarTemplateJobResponse - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
         self._job_id = None
+        self._file_list = None
         self.discriminator = None
 
         if job_id is not None:
             self.job_id = job_id
+        if file_list is not None:
+            self.file_list = file_list
 
     @property
     def job_id(self):
         """Gets the job_id of this RunDevstarTemplateJobResponse.
 
-        任务id
+        任务id。
 
         :return: The job_id of this RunDevstarTemplateJobResponse.
         :rtype: str
@@ -56,12 +61,34 @@ class RunDevstarTemplateJobResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this RunDevstarTemplateJobResponse.
 
-        任务id
+        任务id。
 
         :param job_id: The job_id of this RunDevstarTemplateJobResponse.
         :type: str
         """
         self._job_id = job_id
+
+    @property
+    def file_list(self):
+        """Gets the file_list of this RunDevstarTemplateJobResponse.
+
+        文件列表。
+
+        :return: The file_list of this RunDevstarTemplateJobResponse.
+        :rtype: list[FileTreeNode]
+        """
+        return self._file_list
+
+    @file_list.setter
+    def file_list(self, file_list):
+        """Sets the file_list of this RunDevstarTemplateJobResponse.
+
+        文件列表。
+
+        :param file_list: The file_list of this RunDevstarTemplateJobResponse.
+        :type: list[FileTreeNode]
+        """
+        self._file_list = file_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

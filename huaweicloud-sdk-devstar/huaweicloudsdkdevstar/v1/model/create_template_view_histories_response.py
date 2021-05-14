@@ -50,7 +50,7 @@ class CreateTemplateViewHistoriesResponse(SdkResponse):
     def templates(self):
         """Gets the templates of this CreateTemplateViewHistoriesResponse.
 
-        我浏览的模板
+        我浏览的模板。
 
         :return: The templates of this CreateTemplateViewHistoriesResponse.
         :rtype: list[TemplateViewHistory]
@@ -61,7 +61,7 @@ class CreateTemplateViewHistoriesResponse(SdkResponse):
     def templates(self, templates):
         """Sets the templates of this CreateTemplateViewHistoriesResponse.
 
-        我浏览的模板
+        我浏览的模板。
 
         :param templates: The templates of this CreateTemplateViewHistoriesResponse.
         :type: list[TemplateViewHistory]
@@ -72,7 +72,7 @@ class CreateTemplateViewHistoriesResponse(SdkResponse):
     def count(self):
         """Gets the count of this CreateTemplateViewHistoriesResponse.
 
-        我浏览的模板数量
+        我浏览的模板数量。
 
         :return: The count of this CreateTemplateViewHistoriesResponse.
         :rtype: int
@@ -83,7 +83,7 @@ class CreateTemplateViewHistoriesResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this CreateTemplateViewHistoriesResponse.
 
-        我浏览的模板数量
+        我浏览的模板数量。
 
         :param count: The count of this CreateTemplateViewHistoriesResponse.
         :type: int

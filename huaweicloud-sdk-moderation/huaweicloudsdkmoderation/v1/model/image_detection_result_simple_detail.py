@@ -9,7 +9,7 @@ import six
 
 
 
-class ImageDetectionResultDetailPorn:
+class ImageDetectionResultSimpleDetail:
 
 
     """
@@ -33,7 +33,7 @@ class ImageDetectionResultDetailPorn:
     }
 
     def __init__(self, confidence=None, label=None):
-        """ImageDetectionResultDetailPorn - a model defined in huaweicloud sdk"""
+        """ImageDetectionResultSimpleDetail - a model defined in huaweicloud sdk"""
         
         
 
@@ -48,40 +48,40 @@ class ImageDetectionResultDetailPorn:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ImageDetectionResultDetailPorn.
+        """Gets the confidence of this ImageDetectionResultSimpleDetail.
 
 
-        :return: The confidence of this ImageDetectionResultDetailPorn.
+        :return: The confidence of this ImageDetectionResultSimpleDetail.
         :rtype: float
         """
         return self._confidence
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ImageDetectionResultDetailPorn.
+        """Sets the confidence of this ImageDetectionResultSimpleDetail.
 
 
-        :param confidence: The confidence of this ImageDetectionResultDetailPorn.
+        :param confidence: The confidence of this ImageDetectionResultSimpleDetail.
         :type: float
         """
         self._confidence = confidence
 
     @property
     def label(self):
-        """Gets the label of this ImageDetectionResultDetailPorn.
+        """Gets the label of this ImageDetectionResultSimpleDetail.
 
 
-        :return: The label of this ImageDetectionResultDetailPorn.
+        :return: The label of this ImageDetectionResultSimpleDetail.
         :rtype: str
         """
         return self._label
 
     @label.setter
     def label(self, label):
-        """Sets the label of this ImageDetectionResultDetailPorn.
+        """Sets the label of this ImageDetectionResultSimpleDetail.
 
 
-        :param label: The label of this ImageDetectionResultDetailPorn.
+        :param label: The label of this ImageDetectionResultSimpleDetail.
         :type: str
         """
         self._label = label
@@ -123,7 +123,7 @@ class ImageDetectionResultDetailPorn:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImageDetectionResultDetailPorn):
+        if not isinstance(other, ImageDetectionResultSimpleDetail):
             return False
 
         return self.__dict__ == other.__dict__

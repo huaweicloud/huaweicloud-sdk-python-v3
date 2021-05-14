@@ -60,7 +60,7 @@ class ShowJobDetailResponse(SdkResponse):
     def id(self):
         """Gets the id of this ShowJobDetailResponse.
 
-        任务的id
+        任务的id。
 
         :return: The id of this ShowJobDetailResponse.
         :rtype: str
@@ -71,7 +71,7 @@ class ShowJobDetailResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this ShowJobDetailResponse.
 
-        任务的id
+        任务的id。
 
         :param id: The id of this ShowJobDetailResponse.
         :type: str
@@ -82,7 +82,7 @@ class ShowJobDetailResponse(SdkResponse):
     def name(self):
         """Gets the name of this ShowJobDetailResponse.
 
-        任务的名称
+        任务的名称。
 
         :return: The name of this ShowJobDetailResponse.
         :rtype: str
@@ -93,7 +93,7 @@ class ShowJobDetailResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this ShowJobDetailResponse.
 
-        任务的名称
+        任务的名称。
 
         :param name: The name of this ShowJobDetailResponse.
         :type: str
@@ -104,7 +104,7 @@ class ShowJobDetailResponse(SdkResponse):
     def job_status(self):
         """Gets the job_status of this ShowJobDetailResponse.
 
-        任务的状态
+        任务的状态。
 
         :return: The job_status of this ShowJobDetailResponse.
         :rtype: object
@@ -115,7 +115,7 @@ class ShowJobDetailResponse(SdkResponse):
     def job_status(self, job_status):
         """Sets the job_status of this ShowJobDetailResponse.
 
-        任务的状态
+        任务的状态。
 
         :param job_status: The job_status of this ShowJobDetailResponse.
         :type: object
@@ -126,7 +126,7 @@ class ShowJobDetailResponse(SdkResponse):
     def job_result(self):
         """Gets the job_result of this ShowJobDetailResponse.
 
-        任务结果信息
+        任务结果信息。
 
         :return: The job_result of this ShowJobDetailResponse.
         :rtype: str
@@ -137,7 +137,7 @@ class ShowJobDetailResponse(SdkResponse):
     def job_result(self, job_result):
         """Sets the job_result of this ShowJobDetailResponse.
 
-        任务结果信息
+        任务结果信息。
 
         :param job_result: The job_result of this ShowJobDetailResponse.
         :type: str

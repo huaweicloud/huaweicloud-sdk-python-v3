@@ -502,7 +502,7 @@ class CbrClient(Client):
     def create_policy(self, request):
         """创建策略
 
-        [创建策略，策略分为备份策略和复制策略。](tag:hws,hws_hk) [创建备份策略。](tag:dt,ocb,tlf,sbc,fcs_vm,ctc)
+        创建策略，策略分为备份策略和复制策略。
 
         :param CreatePolicyRequest request
         :return: CreatePolicyResponse
@@ -512,7 +512,7 @@ class CbrClient(Client):
     def create_policy_with_http_info(self, request):
         """创建策略
 
-        [创建策略，策略分为备份策略和复制策略。](tag:hws,hws_hk) [创建备份策略。](tag:dt,ocb,tlf,sbc,fcs_vm,ctc)
+        创建策略，策略分为备份策略和复制策略。
 
         :param CreatePolicyRequest request
         :return: CreatePolicyResponse

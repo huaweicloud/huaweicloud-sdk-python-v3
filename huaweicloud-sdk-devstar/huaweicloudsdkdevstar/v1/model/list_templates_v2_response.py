@@ -24,25 +24,30 @@ class ListTemplatesV2Response(SdkResponse):
 
     openapi_types = {
         'count': 'int',
+        'invalid_count': 'int',
         'templates': 'list[TemplateInfo]'
     }
 
     attribute_map = {
         'count': 'count',
+        'invalid_count': 'invalid_count',
         'templates': 'templates'
     }
 
-    def __init__(self, count=None, templates=None):
+    def __init__(self, count=None, invalid_count=None, templates=None):
         """ListTemplatesV2Response - a model defined in huaweicloud sdk"""
         
         super().__init__()
 
         self._count = None
+        self._invalid_count = None
         self._templates = None
         self.discriminator = None
 
         if count is not None:
             self.count = count
+        if invalid_count is not None:
+            self.invalid_count = invalid_count
         if templates is not None:
             self.templates = templates
 
@@ -50,7 +55,7 @@ class ListTemplatesV2Response(SdkResponse):
     def count(self):
         """Gets the count of this ListTemplatesV2Response.
 
-        返回模板的数量
+        返回模板的数量。
 
         :return: The count of this ListTemplatesV2Response.
         :rtype: int
@@ -61,7 +66,7 @@ class ListTemplatesV2Response(SdkResponse):
     def count(self, count):
         """Sets the count of this ListTemplatesV2Response.
 
-        返回模板的数量
+        返回模板的数量。
 
         :param count: The count of this ListTemplatesV2Response.
         :type: int
@@ -69,10 +74,32 @@ class ListTemplatesV2Response(SdkResponse):
         self._count = count
 
     @property
+    def invalid_count(self):
+        """Gets the invalid_count of this ListTemplatesV2Response.
+
+        返回关联了失效资源的模板数量。
+
+        :return: The invalid_count of this ListTemplatesV2Response.
+        :rtype: int
+        """
+        return self._invalid_count
+
+    @invalid_count.setter
+    def invalid_count(self, invalid_count):
+        """Sets the invalid_count of this ListTemplatesV2Response.
+
+        返回关联了失效资源的模板数量。
+
+        :param invalid_count: The invalid_count of this ListTemplatesV2Response.
+        :type: int
+        """
+        self._invalid_count = invalid_count
+
+    @property
     def templates(self):
         """Gets the templates of this ListTemplatesV2Response.
 
-        返回模板的列表
+        返回模板的列表。
 
         :return: The templates of this ListTemplatesV2Response.
         :rtype: list[TemplateInfo]
@@ -83,7 +110,7 @@ class ListTemplatesV2Response(SdkResponse):
     def templates(self, templates):
         """Sets the templates of this ListTemplatesV2Response.
 
-        返回模板的列表
+        返回模板的列表。
 
         :param templates: The templates of this ListTemplatesV2Response.
         :type: list[TemplateInfo]

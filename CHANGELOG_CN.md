@@ -1,3 +1,25 @@
+# 3.0.43-rc 2021-05-14
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 解决了使用接口`NovaShowKeypair`获取秘钥，结果解析异常的问题
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstances`的响应字段`type`新增结果值: `CLOUDSSD`、`LOCALSSD`
+  - 接口`ListBackups`新增可选的请求参数`complete_version`
+  - 将接口`ListSlowlogStatistics`的请求参数`type`从非必填改为必填
+
 # 3.0.42-rc 2021-05-10
 
 ### HuaweiCloud SDK BMS

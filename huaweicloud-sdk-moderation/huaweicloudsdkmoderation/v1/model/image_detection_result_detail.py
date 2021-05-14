@@ -24,9 +24,9 @@ class ImageDetectionResultDetail:
 
     openapi_types = {
         'politics': 'list[ImageDetectionResultDetailPolitics]',
-        'porn': 'list[ImageDetectionResultDetailPorn]',
-        'terrorism': 'list[ImageDetectionResultDetailPorn]',
-        'ad': 'list[ImageDetectionResultDetailPorn]'
+        'porn': 'list[ImageDetectionResultSimpleDetail]',
+        'terrorism': 'list[ImageDetectionResultSimpleDetail]',
+        'ad': 'list[ImageDetectionResultSimpleDetail]'
     }
 
     attribute_map = {
@@ -85,7 +85,7 @@ class ImageDetectionResultDetail:
         涉黄检测结果。
 
         :return: The porn of this ImageDetectionResultDetail.
-        :rtype: list[ImageDetectionResultDetailPorn]
+        :rtype: list[ImageDetectionResultSimpleDetail]
         """
         return self._porn
 
@@ -96,7 +96,7 @@ class ImageDetectionResultDetail:
         涉黄检测结果。
 
         :param porn: The porn of this ImageDetectionResultDetail.
-        :type: list[ImageDetectionResultDetailPorn]
+        :type: list[ImageDetectionResultSimpleDetail]
         """
         self._porn = porn
 
@@ -107,7 +107,7 @@ class ImageDetectionResultDetail:
         涉政、暴恐检测结果。
 
         :return: The terrorism of this ImageDetectionResultDetail.
-        :rtype: list[ImageDetectionResultDetailPorn]
+        :rtype: list[ImageDetectionResultSimpleDetail]
         """
         return self._terrorism
 
@@ -118,7 +118,7 @@ class ImageDetectionResultDetail:
         涉政、暴恐检测结果。
 
         :param terrorism: The terrorism of this ImageDetectionResultDetail.
-        :type: list[ImageDetectionResultDetailPorn]
+        :type: list[ImageDetectionResultSimpleDetail]
         """
         self._terrorism = terrorism
 
@@ -129,7 +129,7 @@ class ImageDetectionResultDetail:
         广告检测结果。
 
         :return: The ad of this ImageDetectionResultDetail.
-        :rtype: list[ImageDetectionResultDetailPorn]
+        :rtype: list[ImageDetectionResultSimpleDetail]
         """
         return self._ad
 
@@ -140,7 +140,7 @@ class ImageDetectionResultDetail:
         广告检测结果。
 
         :param ad: The ad of this ImageDetectionResultDetail.
-        :type: list[ImageDetectionResultDetailPorn]
+        :type: list[ImageDetectionResultSimpleDetail]
         """
         self._ad = ad
 

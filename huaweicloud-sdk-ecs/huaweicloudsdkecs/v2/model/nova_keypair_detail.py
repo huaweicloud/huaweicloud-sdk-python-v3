@@ -29,7 +29,7 @@ class NovaKeypairDetail:
         'created_at': 'datetime',
         'deleted': 'bool',
         'deleted_at': 'datetime',
-        'id': 'str',
+        'id': 'int',
         'updated_at': 'datetime',
         'user_id': 'str',
         'type': 'str'
@@ -216,7 +216,7 @@ class NovaKeypairDetail:
         密钥ID。
 
         :return: The id of this NovaKeypairDetail.
-        :rtype: str
+        :rtype: int
         """
         return self._id
 
@@ -227,7 +227,7 @@ class NovaKeypairDetail:
         密钥ID。
 
         :param id: The id of this NovaKeypairDetail.
-        :type: str
+        :type: int
         """
         self._id = id
 

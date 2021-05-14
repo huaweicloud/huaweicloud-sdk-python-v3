@@ -48,7 +48,7 @@ class TemplatesInfo:
     def template_ids(self):
         """Gets the template_ids of this TemplatesInfo.
 
-        模板ID列表
+        模板ID列表。
 
         :return: The template_ids of this TemplatesInfo.
         :rtype: list[str]
@@ -59,7 +59,7 @@ class TemplatesInfo:
     def template_ids(self, template_ids):
         """Sets the template_ids of this TemplatesInfo.
 
-        模板ID列表
+        模板ID列表。
 
         :param template_ids: The template_ids of this TemplatesInfo.
         :type: list[str]
@@ -70,7 +70,7 @@ class TemplatesInfo:
     def platform_source(self):
         """Gets the platform_source of this TemplatesInfo.
 
-        平台来源（0:codelabs、1:devstar）
+        平台来源： - 0：codelabs - 1：devstar 
 
         :return: The platform_source of this TemplatesInfo.
         :rtype: int
@@ -81,7 +81,7 @@ class TemplatesInfo:
     def platform_source(self, platform_source):
         """Sets the platform_source of this TemplatesInfo.
 
-        平台来源（0:codelabs、1:devstar）
+        平台来源： - 0：codelabs - 1：devstar 
 
         :param platform_source: The platform_source of this TemplatesInfo.
         :type: int

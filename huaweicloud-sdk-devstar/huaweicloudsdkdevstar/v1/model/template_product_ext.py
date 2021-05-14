@@ -80,7 +80,7 @@ class TemplateProductExt:
     def id(self):
         """Gets the id of this TemplateProductExt.
 
-        产品id
+        产品id。
 
         :return: The id of this TemplateProductExt.
         :rtype: str
@@ -91,7 +91,7 @@ class TemplateProductExt:
     def id(self, id):
         """Sets the id of this TemplateProductExt.
 
-        产品id
+        产品id。
 
         :param id: The id of this TemplateProductExt.
         :type: str
@@ -102,7 +102,7 @@ class TemplateProductExt:
     def productshort(self):
         """Gets the productshort of this TemplateProductExt.
 
-        产品短名
+        产品短名。
 
         :return: The productshort of this TemplateProductExt.
         :rtype: str
@@ -113,7 +113,7 @@ class TemplateProductExt:
     def productshort(self, productshort):
         """Sets the productshort of this TemplateProductExt.
 
-        产品短名
+        产品短名。
 
         :param productshort: The productshort of this TemplateProductExt.
         :type: str
@@ -124,7 +124,7 @@ class TemplateProductExt:
     def product_name(self):
         """Gets the product_name of this TemplateProductExt.
 
-        产品名
+        产品名。
 
         :return: The product_name of this TemplateProductExt.
         :rtype: str
@@ -135,7 +135,7 @@ class TemplateProductExt:
     def product_name(self, product_name):
         """Sets the product_name of this TemplateProductExt.
 
-        产品名
+        产品名。
 
         :param product_name: The product_name of this TemplateProductExt.
         :type: str
@@ -146,7 +146,7 @@ class TemplateProductExt:
     def home_link(self):
         """Gets the home_link of this TemplateProductExt.
 
-        首页链接
+        首页链接。
 
         :return: The home_link of this TemplateProductExt.
         :rtype: str
@@ -157,7 +157,7 @@ class TemplateProductExt:
     def home_link(self, home_link):
         """Sets the home_link of this TemplateProductExt.
 
-        首页链接
+        首页链接。
 
         :param home_link: The home_link of this TemplateProductExt.
         :type: str
@@ -168,7 +168,7 @@ class TemplateProductExt:
     def api_link(self):
         """Gets the api_link of this TemplateProductExt.
 
-        api调试链接
+        api调试链接。
 
         :return: The api_link of this TemplateProductExt.
         :rtype: str
@@ -179,7 +179,7 @@ class TemplateProductExt:
     def api_link(self, api_link):
         """Sets the api_link of this TemplateProductExt.
 
-        api调试链接
+        api调试链接。
 
         :param api_link: The api_link of this TemplateProductExt.
         :type: str
@@ -190,7 +190,7 @@ class TemplateProductExt:
     def sdk_link(self):
         """Gets the sdk_link of this TemplateProductExt.
 
-        sdk下载链接
+        sdk下载链接。
 
         :return: The sdk_link of this TemplateProductExt.
         :rtype: str
@@ -201,7 +201,7 @@ class TemplateProductExt:
     def sdk_link(self, sdk_link):
         """Sets the sdk_link of this TemplateProductExt.
 
-        sdk下载链接
+        sdk下载链接。
 
         :param sdk_link: The sdk_link of this TemplateProductExt.
         :type: str
@@ -212,7 +212,7 @@ class TemplateProductExt:
     def doc_link(self):
         """Gets the doc_link of this TemplateProductExt.
 
-        文档链接
+        文档链接。
 
         :return: The doc_link of this TemplateProductExt.
         :rtype: str
@@ -223,7 +223,7 @@ class TemplateProductExt:
     def doc_link(self, doc_link):
         """Sets the doc_link of this TemplateProductExt.
 
-        文档链接
+        文档链接。
 
         :param doc_link: The doc_link of this TemplateProductExt.
         :type: str
@@ -234,7 +234,7 @@ class TemplateProductExt:
     def logo_link(self):
         """Gets the logo_link of this TemplateProductExt.
 
-        logo链接
+        logo链接。
 
         :return: The logo_link of this TemplateProductExt.
         :rtype: str
@@ -245,7 +245,7 @@ class TemplateProductExt:
     def logo_link(self, logo_link):
         """Sets the logo_link of this TemplateProductExt.
 
-        logo链接
+        logo链接。
 
         :param logo_link: The logo_link of this TemplateProductExt.
         :type: str

@@ -96,7 +96,7 @@ class BillingCreate:
     def cloud_type(self):
         """Gets the cloud_type of this BillingCreate.
 
-        [云平台，云平台，公有云或者混合云](tag:hws,hws_hk,fcs_vm,ctc) [云平台，云平台，公有云](tag:dt,ocb,tlf,sbc)
+        云平台，公有云或者混合云
 
         :return: The cloud_type of this BillingCreate.
         :rtype: str
@@ -107,7 +107,7 @@ class BillingCreate:
     def cloud_type(self, cloud_type):
         """Sets the cloud_type of this BillingCreate.
 
-        [云平台，云平台，公有云或者混合云](tag:hws,hws_hk,fcs_vm,ctc) [云平台，云平台，公有云](tag:dt,ocb,tlf,sbc)
+        云平台，公有云或者混合云
 
         :param cloud_type: The cloud_type of this BillingCreate.
         :type: str
@@ -118,7 +118,7 @@ class BillingCreate:
     def consistent_level(self):
         """Gets the consistent_level of this BillingCreate.
 
-        [规格，崩溃一致性（crash_consistent）或应用一致性（app_consistent）](tag:hws,hws_hk,fcs_vm,ctc) [规格，默认为崩溃一致性（crash_consistent）](tag:dt,ocb,tlf,sbc)
+        规格，崩溃一致性（crash_consistent）或应用一致性（app_consistent）
 
         :return: The consistent_level of this BillingCreate.
         :rtype: str
@@ -129,7 +129,7 @@ class BillingCreate:
     def consistent_level(self, consistent_level):
         """Sets the consistent_level of this BillingCreate.
 
-        [规格，崩溃一致性（crash_consistent）或应用一致性（app_consistent）](tag:hws,hws_hk,fcs_vm,ctc) [规格，默认为崩溃一致性（crash_consistent）](tag:dt,ocb,tlf,sbc)
+        规格，崩溃一致性（crash_consistent）或应用一致性（app_consistent）
 
         :param consistent_level: The consistent_level of this BillingCreate.
         :type: str

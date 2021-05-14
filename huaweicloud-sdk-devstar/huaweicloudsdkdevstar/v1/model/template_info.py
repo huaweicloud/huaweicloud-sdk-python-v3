@@ -57,7 +57,8 @@ class TemplateInfo:
         'file_size': 'int',
         'deployment': 'object',
         'update_id': 'str',
-        'is_support_cloudide': 'bool'
+        'is_support_cloudide': 'bool',
+        'has_notices': 'bool'
     }
 
     attribute_map = {
@@ -95,10 +96,11 @@ class TemplateInfo:
         'file_size': 'file_size',
         'deployment': 'deployment',
         'update_id': 'update_id',
-        'is_support_cloudide': 'is_support_cloudide'
+        'is_support_cloudide': 'is_support_cloudide',
+        'has_notices': 'has_notices'
     }
 
-    def __init__(self, id=None, title=None, description=None, productshorts=None, products=None, topic=None, creator_id=None, creator=None, nickname=None, score=None, label=None, store=None, store_info=None, status=None, view_count=None, usage_count=None, created_at=None, updated_at=None, published_at=None, favorite_state=None, tags=None, type=None, is_static=None, maintainers=None, pipeline_template=None, platform_source=None, references=None, properties=None, dependencies=None, dependency_type=None, forum_id=None, file_size=None, deployment=None, update_id=None, is_support_cloudide=None):
+    def __init__(self, id=None, title=None, description=None, productshorts=None, products=None, topic=None, creator_id=None, creator=None, nickname=None, score=None, label=None, store=None, store_info=None, status=None, view_count=None, usage_count=None, created_at=None, updated_at=None, published_at=None, favorite_state=None, tags=None, type=None, is_static=None, maintainers=None, pipeline_template=None, platform_source=None, references=None, properties=None, dependencies=None, dependency_type=None, forum_id=None, file_size=None, deployment=None, update_id=None, is_support_cloudide=None, has_notices=None):
         """TemplateInfo - a model defined in huaweicloud sdk"""
         
         
@@ -138,6 +140,7 @@ class TemplateInfo:
         self._deployment = None
         self._update_id = None
         self._is_support_cloudide = None
+        self._has_notices = None
         self.discriminator = None
 
         if id is not None:
@@ -210,12 +213,14 @@ class TemplateInfo:
             self.update_id = update_id
         if is_support_cloudide is not None:
             self.is_support_cloudide = is_support_cloudide
+        if has_notices is not None:
+            self.has_notices = has_notices
 
     @property
     def id(self):
         """Gets the id of this TemplateInfo.
 
-        模板id
+        模板id。
 
         :return: The id of this TemplateInfo.
         :rtype: str
@@ -226,7 +231,7 @@ class TemplateInfo:
     def id(self, id):
         """Sets the id of this TemplateInfo.
 
-        模板id
+        模板id。
 
         :param id: The id of this TemplateInfo.
         :type: str
@@ -237,7 +242,7 @@ class TemplateInfo:
     def title(self):
         """Gets the title of this TemplateInfo.
 
-        模板名
+        模板名。
 
         :return: The title of this TemplateInfo.
         :rtype: str
@@ -248,7 +253,7 @@ class TemplateInfo:
     def title(self, title):
         """Sets the title of this TemplateInfo.
 
-        模板名
+        模板名。
 
         :param title: The title of this TemplateInfo.
         :type: str
@@ -259,7 +264,7 @@ class TemplateInfo:
     def description(self):
         """Gets the description of this TemplateInfo.
 
-        模板描述
+        模板描述。
 
         :return: The description of this TemplateInfo.
         :rtype: str
@@ -270,7 +275,7 @@ class TemplateInfo:
     def description(self, description):
         """Sets the description of this TemplateInfo.
 
-        模板描述
+        模板描述。
 
         :param description: The description of this TemplateInfo.
         :type: str
@@ -281,7 +286,7 @@ class TemplateInfo:
     def productshorts(self):
         """Gets the productshorts of this TemplateInfo.
 
-        模板关联的所有云服务（产品短名）
+        模板关联的所有云服务（产品短名）。
 
         :return: The productshorts of this TemplateInfo.
         :rtype: list[str]
@@ -292,7 +297,7 @@ class TemplateInfo:
     def productshorts(self, productshorts):
         """Sets the productshorts of this TemplateInfo.
 
-        模板关联的所有云服务（产品短名）
+        模板关联的所有云服务（产品短名）。
 
         :param productshorts: The productshorts of this TemplateInfo.
         :type: list[str]
@@ -303,7 +308,7 @@ class TemplateInfo:
     def products(self):
         """Gets the products of this TemplateInfo.
 
-        模板关联的云产品
+        模板关联的云产品。
 
         :return: The products of this TemplateInfo.
         :rtype: list[TemplateProductExt]
@@ -314,7 +319,7 @@ class TemplateInfo:
     def products(self, products):
         """Sets the products of this TemplateInfo.
 
-        模板关联的云产品
+        模板关联的云产品。
 
         :param products: The products of this TemplateInfo.
         :type: list[TemplateProductExt]
@@ -325,7 +330,7 @@ class TemplateInfo:
     def topic(self):
         """Gets the topic of this TemplateInfo.
 
-        模板标签
+        模板标签。
 
         :return: The topic of this TemplateInfo.
         :rtype: list[TopicCategory]
@@ -336,7 +341,7 @@ class TemplateInfo:
     def topic(self, topic):
         """Sets the topic of this TemplateInfo.
 
-        模板标签
+        模板标签。
 
         :param topic: The topic of this TemplateInfo.
         :type: list[TopicCategory]
@@ -347,7 +352,7 @@ class TemplateInfo:
     def creator_id(self):
         """Gets the creator_id of this TemplateInfo.
 
-        模板创建者id
+        模板创建者id。
 
         :return: The creator_id of this TemplateInfo.
         :rtype: str
@@ -358,7 +363,7 @@ class TemplateInfo:
     def creator_id(self, creator_id):
         """Sets the creator_id of this TemplateInfo.
 
-        模板创建者id
+        模板创建者id。
 
         :param creator_id: The creator_id of this TemplateInfo.
         :type: str
@@ -369,7 +374,7 @@ class TemplateInfo:
     def creator(self):
         """Gets the creator of this TemplateInfo.
 
-        模板创建者,有别名返回别名
+        模板创建者,有别名返回别名。
 
         :return: The creator of this TemplateInfo.
         :rtype: str
@@ -380,7 +385,7 @@ class TemplateInfo:
     def creator(self, creator):
         """Sets the creator of this TemplateInfo.
 
-        模板创建者,有别名返回别名
+        模板创建者,有别名返回别名。
 
         :param creator: The creator of this TemplateInfo.
         :type: str
@@ -391,7 +396,7 @@ class TemplateInfo:
     def nickname(self):
         """Gets the nickname of this TemplateInfo.
 
-        模板创建者,有别名返回别名
+        模板创建者,有别名返回别名。
 
         :return: The nickname of this TemplateInfo.
         :rtype: str
@@ -402,7 +407,7 @@ class TemplateInfo:
     def nickname(self, nickname):
         """Sets the nickname of this TemplateInfo.
 
-        模板创建者,有别名返回别名
+        模板创建者,有别名返回别名。
 
         :param nickname: The nickname of this TemplateInfo.
         :type: str
@@ -413,7 +418,7 @@ class TemplateInfo:
     def score(self):
         """Gets the score of this TemplateInfo.
 
-        模板评分（点赞数）
+        模板评分（点赞数）。
 
         :return: The score of this TemplateInfo.
         :rtype: int
@@ -424,7 +429,7 @@ class TemplateInfo:
     def score(self, score):
         """Sets the score of this TemplateInfo.
 
-        模板评分（点赞数）
+        模板评分（点赞数）。
 
         :param score: The score of this TemplateInfo.
         :type: int
@@ -435,7 +440,7 @@ class TemplateInfo:
     def label(self):
         """Gets the label of this TemplateInfo.
 
-        模板标签（new、hot等）
+        模板标签（new、hot等）。
 
         :return: The label of this TemplateInfo.
         :rtype: str
@@ -446,7 +451,7 @@ class TemplateInfo:
     def label(self, label):
         """Sets the label of this TemplateInfo.
 
-        模板标签（new、hot等）
+        模板标签（new、hot等）。
 
         :param label: The label of this TemplateInfo.
         :type: str
@@ -457,7 +462,7 @@ class TemplateInfo:
     def store(self):
         """Gets the store of this TemplateInfo.
 
-        代码存储位置
+        代码存储位置。
 
         :return: The store of this TemplateInfo.
         :rtype: int
@@ -468,7 +473,7 @@ class TemplateInfo:
     def store(self, store):
         """Sets the store of this TemplateInfo.
 
-        代码存储位置
+        代码存储位置。
 
         :param store: The store of this TemplateInfo.
         :type: int
@@ -479,7 +484,7 @@ class TemplateInfo:
     def store_info(self):
         """Gets the store_info of this TemplateInfo.
 
-        获取代码模版所需的信息
+        获取代码模版所需的信息。
 
         :return: The store_info of this TemplateInfo.
         :rtype: str
@@ -490,7 +495,7 @@ class TemplateInfo:
     def store_info(self, store_info):
         """Sets the store_info of this TemplateInfo.
 
-        获取代码模版所需的信息
+        获取代码模版所需的信息。
 
         :param store_info: The store_info of this TemplateInfo.
         :type: str
@@ -501,7 +506,7 @@ class TemplateInfo:
     def status(self):
         """Gets the status of this TemplateInfo.
 
-        模板状态（0:审核中 1: 已上架 2: 未上架（已下架）3: 未上架（合规检查不通过）4：未上架（待上架）5：已删除）
+        模板状态： - 0：审核中 - 1：已上架 - 2：未上架（已下架） - 3：未上架（合规检查不通过） - 4：未上架（待上架） - 5：已删除 
 
         :return: The status of this TemplateInfo.
         :rtype: int
@@ -512,7 +517,7 @@ class TemplateInfo:
     def status(self, status):
         """Sets the status of this TemplateInfo.
 
-        模板状态（0:审核中 1: 已上架 2: 未上架（已下架）3: 未上架（合规检查不通过）4：未上架（待上架）5：已删除）
+        模板状态： - 0：审核中 - 1：已上架 - 2：未上架（已下架） - 3：未上架（合规检查不通过） - 4：未上架（待上架） - 5：已删除 
 
         :param status: The status of this TemplateInfo.
         :type: int
@@ -523,7 +528,7 @@ class TemplateInfo:
     def view_count(self):
         """Gets the view_count of this TemplateInfo.
 
-        访问量
+        访问量。
 
         :return: The view_count of this TemplateInfo.
         :rtype: int
@@ -534,7 +539,7 @@ class TemplateInfo:
     def view_count(self, view_count):
         """Sets the view_count of this TemplateInfo.
 
-        访问量
+        访问量。
 
         :param view_count: The view_count of this TemplateInfo.
         :type: int
@@ -545,7 +550,7 @@ class TemplateInfo:
     def usage_count(self):
         """Gets the usage_count of this TemplateInfo.
 
-        引用量
+        引用量。
 
         :return: The usage_count of this TemplateInfo.
         :rtype: int
@@ -556,7 +561,7 @@ class TemplateInfo:
     def usage_count(self, usage_count):
         """Sets the usage_count of this TemplateInfo.
 
-        引用量
+        引用量。
 
         :param usage_count: The usage_count of this TemplateInfo.
         :type: int
@@ -567,7 +572,7 @@ class TemplateInfo:
     def created_at(self):
         """Gets the created_at of this TemplateInfo.
 
-        创建时间
+        创建时间。
 
         :return: The created_at of this TemplateInfo.
         :rtype: str
@@ -578,7 +583,7 @@ class TemplateInfo:
     def created_at(self, created_at):
         """Sets the created_at of this TemplateInfo.
 
-        创建时间
+        创建时间。
 
         :param created_at: The created_at of this TemplateInfo.
         :type: str
@@ -589,7 +594,7 @@ class TemplateInfo:
     def updated_at(self):
         """Gets the updated_at of this TemplateInfo.
 
-        更新时间
+        更新时间。
 
         :return: The updated_at of this TemplateInfo.
         :rtype: str
@@ -600,7 +605,7 @@ class TemplateInfo:
     def updated_at(self, updated_at):
         """Sets the updated_at of this TemplateInfo.
 
-        更新时间
+        更新时间。
 
         :param updated_at: The updated_at of this TemplateInfo.
         :type: str
@@ -611,7 +616,7 @@ class TemplateInfo:
     def published_at(self):
         """Gets the published_at of this TemplateInfo.
 
-        模板上架时间
+        模板上架时间。
 
         :return: The published_at of this TemplateInfo.
         :rtype: str
@@ -622,7 +627,7 @@ class TemplateInfo:
     def published_at(self, published_at):
         """Sets the published_at of this TemplateInfo.
 
-        模板上架时间
+        模板上架时间。
 
         :param published_at: The published_at of this TemplateInfo.
         :type: str
@@ -633,7 +638,7 @@ class TemplateInfo:
     def favorite_state(self):
         """Gets the favorite_state of this TemplateInfo.
 
-        点赞状态(1：点赞，0：未点赞)
+        点赞状态： - 1：点赞 - 0：未点赞 
 
         :return: The favorite_state of this TemplateInfo.
         :rtype: int
@@ -644,7 +649,7 @@ class TemplateInfo:
     def favorite_state(self, favorite_state):
         """Sets the favorite_state of this TemplateInfo.
 
-        点赞状态(1：点赞，0：未点赞)
+        点赞状态： - 1：点赞 - 0：未点赞 
 
         :param favorite_state: The favorite_state of this TemplateInfo.
         :type: int
@@ -655,7 +660,7 @@ class TemplateInfo:
     def tags(self):
         """Gets the tags of this TemplateInfo.
 
-        模板标签
+        模板标签。
 
         :return: The tags of this TemplateInfo.
         :rtype: list[TagInfo]
@@ -666,7 +671,7 @@ class TemplateInfo:
     def tags(self, tags):
         """Sets the tags of this TemplateInfo.
 
-        模板标签
+        模板标签。
 
         :param tags: The tags of this TemplateInfo.
         :type: list[TagInfo]
@@ -677,7 +682,7 @@ class TemplateInfo:
     def type(self):
         """Gets the type of this TemplateInfo.
 
-        模板类型（0:doc、1:code、2:pipeline、3:devops四种）
+        模板类型： - 0：doc - 1：code - 2：pipeline - 3：devops 四种 
 
         :return: The type of this TemplateInfo.
         :rtype: int
@@ -688,7 +693,7 @@ class TemplateInfo:
     def type(self, type):
         """Sets the type of this TemplateInfo.
 
-        模板类型（0:doc、1:code、2:pipeline、3:devops四种）
+        模板类型： - 0：doc - 1：code - 2：pipeline - 3：devops 四种 
 
         :param type: The type of this TemplateInfo.
         :type: int
@@ -699,7 +704,7 @@ class TemplateInfo:
     def is_static(self):
         """Gets the is_static of this TemplateInfo.
 
-        动、静态代码模板标识（0：动态模板codetemplate，1：静态模板codesample）
+        动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
 
         :return: The is_static of this TemplateInfo.
         :rtype: int
@@ -710,7 +715,7 @@ class TemplateInfo:
     def is_static(self, is_static):
         """Sets the is_static of this TemplateInfo.
 
-        动、静态代码模板标识（0：动态模板codetemplate，1：静态模板codesample）
+        动、静态代码模板标识： - 0：动态模板codetemplate - 1：静态模板codesample 
 
         :param is_static: The is_static of this TemplateInfo.
         :type: int
@@ -721,7 +726,7 @@ class TemplateInfo:
     def maintainers(self):
         """Gets the maintainers of this TemplateInfo.
 
-        模板相关联的所有维护人账号名称
+        模板相关联的所有维护人账号名称。
 
         :return: The maintainers of this TemplateInfo.
         :rtype: list[str]
@@ -732,7 +737,7 @@ class TemplateInfo:
     def maintainers(self, maintainers):
         """Sets the maintainers of this TemplateInfo.
 
-        模板相关联的所有维护人账号名称
+        模板相关联的所有维护人账号名称。
 
         :param maintainers: The maintainers of this TemplateInfo.
         :type: list[str]
@@ -763,7 +768,7 @@ class TemplateInfo:
     def platform_source(self):
         """Gets the platform_source of this TemplateInfo.
 
-        平台来源（0:codelabs、1:devstar）
+        平台来源： - 0：codelabs - 1：devstar 
 
         :return: The platform_source of this TemplateInfo.
         :rtype: int
@@ -774,7 +779,7 @@ class TemplateInfo:
     def platform_source(self, platform_source):
         """Sets the platform_source of this TemplateInfo.
 
-        平台来源（0:codelabs、1:devstar）
+        平台来源： - 0：codelabs - 1：devstar 
 
         :param platform_source: The platform_source of this TemplateInfo.
         :type: int
@@ -785,7 +790,7 @@ class TemplateInfo:
     def references(self):
         """Gets the references of this TemplateInfo.
 
-        相关文档，示例，帖子
+        相关文档，示例，帖子。
 
         :return: The references of this TemplateInfo.
         :rtype: list[Reference]
@@ -796,7 +801,7 @@ class TemplateInfo:
     def references(self, references):
         """Sets the references of this TemplateInfo.
 
-        相关文档，示例，帖子
+        相关文档，示例，帖子。
 
         :param references: The references of this TemplateInfo.
         :type: list[Reference]
@@ -807,7 +812,7 @@ class TemplateInfo:
     def properties(self):
         """Gets the properties of this TemplateInfo.
 
-        模板自定义参数列表
+        模板自定义参数列表。
 
         :return: The properties of this TemplateInfo.
         :rtype: object
@@ -818,7 +823,7 @@ class TemplateInfo:
     def properties(self, properties):
         """Sets the properties of this TemplateInfo.
 
-        模板自定义参数列表
+        模板自定义参数列表。
 
         :param properties: The properties of this TemplateInfo.
         :type: object
@@ -829,7 +834,7 @@ class TemplateInfo:
     def dependencies(self):
         """Gets the dependencies of this TemplateInfo.
 
-        dependency信息
+        dependency信息。
 
         :return: The dependencies of this TemplateInfo.
         :rtype: list[object]
@@ -840,7 +845,7 @@ class TemplateInfo:
     def dependencies(self, dependencies):
         """Sets the dependencies of this TemplateInfo.
 
-        dependency信息
+        dependency信息。
 
         :param dependencies: The dependencies of this TemplateInfo.
         :type: list[object]
@@ -851,7 +856,7 @@ class TemplateInfo:
     def dependency_type(self):
         """Gets the dependency_type of this TemplateInfo.
 
-        dependency类型
+        dependency类型。
 
         :return: The dependency_type of this TemplateInfo.
         :rtype: str
@@ -862,7 +867,7 @@ class TemplateInfo:
     def dependency_type(self, dependency_type):
         """Sets the dependency_type of this TemplateInfo.
 
-        dependency类型
+        dependency类型。
 
         :param dependency_type: The dependency_type of this TemplateInfo.
         :type: str
@@ -873,7 +878,7 @@ class TemplateInfo:
     def forum_id(self):
         """Gets the forum_id of this TemplateInfo.
 
-        关联论坛板块id
+        关联论坛板块id。
 
         :return: The forum_id of this TemplateInfo.
         :rtype: int
@@ -884,7 +889,7 @@ class TemplateInfo:
     def forum_id(self, forum_id):
         """Sets the forum_id of this TemplateInfo.
 
-        关联论坛板块id
+        关联论坛板块id。
 
         :param forum_id: The forum_id of this TemplateInfo.
         :type: int
@@ -895,7 +900,7 @@ class TemplateInfo:
     def file_size(self):
         """Gets the file_size of this TemplateInfo.
 
-        模板文件解压缩之后的大小(单位:KB)
+        模板文件解压缩之后的大小(单位:KB)。
 
         :return: The file_size of this TemplateInfo.
         :rtype: int
@@ -906,7 +911,7 @@ class TemplateInfo:
     def file_size(self, file_size):
         """Sets the file_size of this TemplateInfo.
 
-        模板文件解压缩之后的大小(单位:KB)
+        模板文件解压缩之后的大小(单位:KB)。
 
         :param file_size: The file_size of this TemplateInfo.
         :type: int
@@ -917,7 +922,7 @@ class TemplateInfo:
     def deployment(self):
         """Gets the deployment of this TemplateInfo.
 
-        部署信息
+        部署信息。
 
         :return: The deployment of this TemplateInfo.
         :rtype: object
@@ -928,7 +933,7 @@ class TemplateInfo:
     def deployment(self, deployment):
         """Sets the deployment of this TemplateInfo.
 
-        部署信息
+        部署信息。
 
         :param deployment: The deployment of this TemplateInfo.
         :type: object
@@ -939,7 +944,7 @@ class TemplateInfo:
     def update_id(self):
         """Gets the update_id of this TemplateInfo.
 
-        模板关联更新态Id
+        模板关联更新态Id。
 
         :return: The update_id of this TemplateInfo.
         :rtype: str
@@ -950,7 +955,7 @@ class TemplateInfo:
     def update_id(self, update_id):
         """Sets the update_id of this TemplateInfo.
 
-        模板关联更新态Id
+        模板关联更新态Id。
 
         :param update_id: The update_id of this TemplateInfo.
         :type: str
@@ -961,7 +966,7 @@ class TemplateInfo:
     def is_support_cloudide(self):
         """Gets the is_support_cloudide of this TemplateInfo.
 
-        是否支持使用CloudIDE运行源码
+        是否支持使用CloudIDE运行源码。
 
         :return: The is_support_cloudide of this TemplateInfo.
         :rtype: bool
@@ -972,12 +977,34 @@ class TemplateInfo:
     def is_support_cloudide(self, is_support_cloudide):
         """Sets the is_support_cloudide of this TemplateInfo.
 
-        是否支持使用CloudIDE运行源码
+        是否支持使用CloudIDE运行源码。
 
         :param is_support_cloudide: The is_support_cloudide of this TemplateInfo.
         :type: bool
         """
         self._is_support_cloudide = is_support_cloudide
+
+    @property
+    def has_notices(self):
+        """Gets the has_notices of this TemplateInfo.
+
+        是否有消息
+
+        :return: The has_notices of this TemplateInfo.
+        :rtype: bool
+        """
+        return self._has_notices
+
+    @has_notices.setter
+    def has_notices(self, has_notices):
+        """Sets the has_notices of this TemplateInfo.
+
+        是否有消息
+
+        :param has_notices: The has_notices of this TemplateInfo.
+        :type: bool
+        """
+        self._has_notices = has_notices
 
     def to_dict(self):
         """Returns the model properties as a dict"""

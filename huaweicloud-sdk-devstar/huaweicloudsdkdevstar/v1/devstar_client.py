@@ -49,9 +49,9 @@ class DevStarClient(Client):
         return ClientBuilder(clazz, "GlobalCredentials")
 
     def download_application_code(self, request):
-        """下载代码工程
+        """下载模板产物
 
-        通过任务ID下载ZIP格式的代码工程。
+        下载模板产物。
 
         :param DownloadApplicationCodeRequest request
         :return: DownloadApplicationCodeResponse
@@ -59,9 +59,9 @@ class DevStarClient(Client):
         return self.download_application_code_with_http_info(request)
 
     def download_application_code_with_http_info(self, request):
-        """下载代码工程
+        """下载模板产物
 
-        通过任务ID下载ZIP格式的代码工程。
+        下载模板产物。
 
         :param DownloadApplicationCodeRequest request
         :return: DownloadApplicationCodeResponse
@@ -116,7 +116,7 @@ class DevStarClient(Client):
     def run_codehub_template_job(self, request):
         """CodeHub 模板生成代码
 
-        通过 Codehub 的模板进行应用代码创建  通过 Codehub 模板创建生成应用代码的任务，并将应用代码存储于指定的 CodeHub 仓库中或者生成代码压缩包，可以通过返回的任务 ID 查询相关任务状态  - 接口鉴权方式 通过华为云服务获取的用户token  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
+        使用CodeHub模板创建应用代码。  通过 Codehub 模板创建生成应用代码的任务，并将应用代码存储于指定的 CodeHub 仓库中或者生成代码压缩包，可以通过返回的任务 ID 查询相关任务状态。  - 接口鉴权方式 通过华为云服务获取的用户token。  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
 
         :param RunCodehubTemplateJobRequest request
         :return: RunCodehubTemplateJobResponse
@@ -126,7 +126,7 @@ class DevStarClient(Client):
     def run_codehub_template_job_with_http_info(self, request):
         """CodeHub 模板生成代码
 
-        通过 Codehub 的模板进行应用代码创建  通过 Codehub 模板创建生成应用代码的任务，并将应用代码存储于指定的 CodeHub 仓库中或者生成代码压缩包，可以通过返回的任务 ID 查询相关任务状态  - 接口鉴权方式 通过华为云服务获取的用户token  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
+        使用CodeHub模板创建应用代码。  通过 Codehub 模板创建生成应用代码的任务，并将应用代码存储于指定的 CodeHub 仓库中或者生成代码压缩包，可以通过返回的任务 ID 查询相关任务状态。  - 接口鉴权方式 通过华为云服务获取的用户token。  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
 
         :param RunCodehubTemplateJobRequest request
         :return: RunCodehubTemplateJobResponse
@@ -181,7 +181,7 @@ class DevStarClient(Client):
     def run_devstar_template_job(self, request):
         """Devstar 模板生成代码
 
-        通过DevStar的模板进行应用代码创建  通过 DevStar 模板创建生成应用代码的任务，并将应用代码存储于指定的 CodeHub 仓库中，可以通过返回的任务 ID 查询相关任务状态  - 接口鉴权方式 通过华为云服务获取的用户token  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
+        使用DevStar的模板创建应用代码。  通过 DevStar 模板创建生成应用代码的任务，并将应用代码存储于指定的 CodeHub 仓库中，可以通过返回的任务 ID 查询相关任务状态。  - 接口鉴权方式 通过华为云服务获取的用户token。  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
 
         :param RunDevstarTemplateJobRequest request
         :return: RunDevstarTemplateJobResponse
@@ -191,7 +191,7 @@ class DevStarClient(Client):
     def run_devstar_template_job_with_http_info(self, request):
         """Devstar 模板生成代码
 
-        通过DevStar的模板进行应用代码创建  通过 DevStar 模板创建生成应用代码的任务，并将应用代码存储于指定的 CodeHub 仓库中，可以通过返回的任务 ID 查询相关任务状态  - 接口鉴权方式 通过华为云服务获取的用户token  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
+        使用DevStar的模板创建应用代码。  通过 DevStar 模板创建生成应用代码的任务，并将应用代码存储于指定的 CodeHub 仓库中，可以通过返回的任务 ID 查询相关任务状态。  - 接口鉴权方式 通过华为云服务获取的用户token。  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
 
         :param RunDevstarTemplateJobRequest request
         :return: RunDevstarTemplateJobResponse
@@ -246,7 +246,7 @@ class DevStarClient(Client):
     def show_job_detail(self, request):
         """查询任务详情
 
-        查询任务的详情  通过任务ID可以查看任务的状态 当任务结束时返回应用代码存放的位置  - 接口鉴权方式 通过华为云服务获取的用户token  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址
+        查询任务的详情。  通过任务ID可以查看任务的状态 当任务结束时返回应用代码存放的位置。  - 接口鉴权方式 通过华为云服务获取的用户token。  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
 
         :param ShowJobDetailRequest request
         :return: ShowJobDetailResponse
@@ -256,7 +256,7 @@ class DevStarClient(Client):
     def show_job_detail_with_http_info(self, request):
         """查询任务详情
 
-        查询任务的详情  通过任务ID可以查看任务的状态 当任务结束时返回应用代码存放的位置  - 接口鉴权方式 通过华为云服务获取的用户token  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址
+        查询任务的详情。  通过任务ID可以查看任务的状态 当任务结束时返回应用代码存放的位置。  - 接口鉴权方式 通过华为云服务获取的用户token。  - 代码生成位置 应用代码生成后的地址，目前支持codehub地址和压缩包下载地址。
 
         :param ShowJobDetailRequest request
         :return: ShowJobDetailResponse
@@ -311,7 +311,7 @@ class DevStarClient(Client):
     def show_template_file(self, request):
         """读取模板文件
 
-        读取模板文件
+        该接口可以用于模板作者或模板维护人读取模板文件内容。
 
         :param ShowTemplateFileRequest request
         :return: ShowTemplateFileResponse
@@ -321,7 +321,7 @@ class DevStarClient(Client):
     def show_template_file_with_http_info(self, request):
         """读取模板文件
 
-        读取模板文件
+        该接口可以用于模板作者或模板维护人读取模板文件内容。
 
         :param ShowTemplateFileRequest request
         :return: ShowTemplateFileResponse
@@ -378,9 +378,9 @@ class DevStarClient(Client):
 
 
     def create_template_view_histories(self, request):
-        """生成模板浏览历史记录
+        """同步模板浏览记录
 
-        生成模板浏览记录 
+        未登录状态下，将用户浏览过的模板缓存在浏览器中，登录时，调用该接口同步模板浏览记录。 
 
         :param CreateTemplateViewHistoriesRequest request
         :return: CreateTemplateViewHistoriesResponse
@@ -388,9 +388,9 @@ class DevStarClient(Client):
         return self.create_template_view_histories_with_http_info(request)
 
     def create_template_view_histories_with_http_info(self, request):
-        """生成模板浏览历史记录
+        """同步模板浏览记录
 
-        生成模板浏览记录 
+        未登录状态下，将用户浏览过的模板缓存在浏览器中，登录时，调用该接口同步模板浏览记录。 
 
         :param CreateTemplateViewHistoriesRequest request
         :return: CreateTemplateViewHistoriesResponse
@@ -443,9 +443,9 @@ class DevStarClient(Client):
 
 
     def list_published_templates(self, request):
-        """查询模板列表
+        """查询模板列表（V1）
 
-        查询模板列表
+        查询模板列表，推荐使用V2版本接口。
 
         :param ListPublishedTemplatesRequest request
         :return: ListPublishedTemplatesResponse
@@ -453,9 +453,9 @@ class DevStarClient(Client):
         return self.list_published_templates_with_http_info(request)
 
     def list_published_templates_with_http_info(self, request):
-        """查询模板列表
+        """查询模板列表（V1）
 
-        查询模板列表
+        查询模板列表，推荐使用V2版本接口。
 
         :param ListPublishedTemplatesRequest request
         :return: ListPublishedTemplatesResponse
@@ -514,7 +514,7 @@ class DevStarClient(Client):
     def list_template_view_histories(self, request):
         """我浏览的模板记录
 
-        查询用户浏览过的模板(只返回最近浏览的5个模板) 
+        查询DevStar或者CodeLabs登录用户浏览过的模板（只返回最近浏览的5个模板）。 
 
         :param ListTemplateViewHistoriesRequest request
         :return: ListTemplateViewHistoriesResponse
@@ -524,7 +524,7 @@ class DevStarClient(Client):
     def list_template_view_histories_with_http_info(self, request):
         """我浏览的模板记录
 
-        查询用户浏览过的模板(只返回最近浏览的5个模板) 
+        查询DevStar或者CodeLabs登录用户浏览过的模板（只返回最近浏览的5个模板）。 
 
         :param ListTemplateViewHistoriesRequest request
         :return: ListTemplateViewHistoriesResponse
@@ -577,9 +577,9 @@ class DevStarClient(Client):
 
 
     def list_templates_v2(self, request):
-        """查询模板列表
+        """查询模板列表（V2）
 
-        查询模板列表
+        查询模板列表。
 
         :param ListTemplatesV2Request request
         :return: ListTemplatesV2Response
@@ -587,9 +587,9 @@ class DevStarClient(Client):
         return self.list_templates_v2_with_http_info(request)
 
     def list_templates_v2_with_http_info(self, request):
-        """查询模板列表
+        """查询模板列表（V2）
 
-        查询模板列表
+        查询模板列表。
 
         :param ListTemplatesV2Request request
         :return: ListTemplatesV2Response
@@ -644,9 +644,9 @@ class DevStarClient(Client):
 
 
     def show_template_v3(self, request):
-        """模板详情
+        """查询模板详情（V3）
 
-        获取模板详情-模板id、名称、描述、作者、标签、上架时间等信息。 
+        获取指定模板详情，包括模板id、名称、描述、作者、标签、上架时间等信息。 
 
         :param ShowTemplateV3Request request
         :return: ShowTemplateV3Response
@@ -654,9 +654,9 @@ class DevStarClient(Client):
         return self.show_template_v3_with_http_info(request)
 
     def show_template_v3_with_http_info(self, request):
-        """模板详情
+        """查询模板详情（V3）
 
-        获取模板详情-模板id、名称、描述、作者、标签、上架时间等信息。 
+        获取指定模板详情，包括模板id、名称、描述、作者、标签、上架时间等信息。 
 
         :param ShowTemplateV3Request request
         :return: ShowTemplateV3Response
@@ -709,9 +709,9 @@ class DevStarClient(Client):
 
 
     def show_template_detail(self, request):
-        """查询模板详情
+        """查询模板详情（V1）
 
-        查询模板详情
+        查询模板详情，推荐使用V3版本接口。
 
         :param ShowTemplateDetailRequest request
         :return: ShowTemplateDetailResponse
@@ -719,9 +719,9 @@ class DevStarClient(Client):
         return self.show_template_detail_with_http_info(request)
 
     def show_template_detail_with_http_info(self, request):
-        """查询模板详情
+        """查询模板详情（V1）
 
-        查询模板详情
+        查询模板详情，推荐使用V3版本接口。
 
         :param ShowTemplateDetailRequest request
         :return: ShowTemplateDetailResponse

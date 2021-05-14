@@ -24,25 +24,30 @@ class Datastore:
 
     openapi_types = {
         'type': 'str',
-        'version': 'str'
+        'version': 'str',
+        'complete_version': 'str'
     }
 
     attribute_map = {
         'type': 'type',
-        'version': 'version'
+        'version': 'version',
+        'complete_version': 'complete_version'
     }
 
-    def __init__(self, type=None, version=None):
+    def __init__(self, type=None, version=None, complete_version=None):
         """Datastore - a model defined in huaweicloud sdk"""
         
         
 
         self._type = None
         self._version = None
+        self._complete_version = None
         self.discriminator = None
 
         self.type = type
         self.version = version
+        if complete_version is not None:
+            self.complete_version = complete_version
 
     @property
     def type(self):
@@ -87,6 +92,28 @@ class Datastore:
         :type: str
         """
         self._version = version
+
+    @property
+    def complete_version(self):
+        """Gets the complete_version of this Datastore.
+
+        数据库完整版本号。仅在数据库引擎是”PostgreSQL”时返回。
+
+        :return: The complete_version of this Datastore.
+        :rtype: str
+        """
+        return self._complete_version
+
+    @complete_version.setter
+    def complete_version(self, complete_version):
+        """Sets the complete_version of this Datastore.
+
+        数据库完整版本号。仅在数据库引擎是”PostgreSQL”时返回。
+
+        :param complete_version: The complete_version of this Datastore.
+        :type: str
+        """
+        self._complete_version = complete_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""
