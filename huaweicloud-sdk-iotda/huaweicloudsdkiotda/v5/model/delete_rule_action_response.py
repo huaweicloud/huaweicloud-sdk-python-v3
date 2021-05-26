@@ -33,7 +33,7 @@ class DeleteRuleActionResponse(SdkResponse):
     def __init__(self, body=None):
         """DeleteRuleActionResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteRuleActionResponse, self).__init__()
 
         self._body = None
         self.discriminator = None

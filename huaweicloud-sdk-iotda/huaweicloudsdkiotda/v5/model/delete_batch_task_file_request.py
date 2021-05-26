@@ -49,6 +49,7 @@ class DeleteBatchTaskFileRequest:
     def instance_id(self):
         """Gets the instance_id of this DeleteBatchTaskFileRequest.
 
+        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :return: The instance_id of this DeleteBatchTaskFileRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class DeleteBatchTaskFileRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeleteBatchTaskFileRequest.
 
+        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this DeleteBatchTaskFileRequest.
         :type: str
@@ -69,6 +71,7 @@ class DeleteBatchTaskFileRequest:
     def file_id(self):
         """Gets the file_id of this DeleteBatchTaskFileRequest.
 
+        **参数说明**：要删除的批量任务文件ID。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The file_id of this DeleteBatchTaskFileRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class DeleteBatchTaskFileRequest:
     def file_id(self, file_id):
         """Sets the file_id of this DeleteBatchTaskFileRequest.
 
+        **参数说明**：要删除的批量任务文件ID。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param file_id: The file_id of this DeleteBatchTaskFileRequest.
         :type: str

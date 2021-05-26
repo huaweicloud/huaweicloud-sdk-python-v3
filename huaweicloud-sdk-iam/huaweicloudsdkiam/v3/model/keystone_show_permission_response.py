@@ -33,7 +33,7 @@ class KeystoneShowPermissionResponse(SdkResponse):
     def __init__(self, role=None):
         """KeystoneShowPermissionResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneShowPermissionResponse, self).__init__()
 
         self._role = None
         self.discriminator = None

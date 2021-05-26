@@ -54,6 +54,7 @@ class ListAgenciesRequest:
     def domain_id(self):
         """Gets the domain_id of this ListAgenciesRequest.
 
+        委托方账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The domain_id of this ListAgenciesRequest.
         :rtype: str
@@ -64,6 +65,7 @@ class ListAgenciesRequest:
     def domain_id(self, domain_id):
         """Sets the domain_id of this ListAgenciesRequest.
 
+        委托方账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this ListAgenciesRequest.
         :type: str
@@ -74,6 +76,7 @@ class ListAgenciesRequest:
     def trust_domain_id(self):
         """Gets the trust_domain_id of this ListAgenciesRequest.
 
+        被委托方账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The trust_domain_id of this ListAgenciesRequest.
         :rtype: str
@@ -84,6 +87,7 @@ class ListAgenciesRequest:
     def trust_domain_id(self, trust_domain_id):
         """Sets the trust_domain_id of this ListAgenciesRequest.
 
+        被委托方账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param trust_domain_id: The trust_domain_id of this ListAgenciesRequest.
         :type: str
@@ -94,6 +98,7 @@ class ListAgenciesRequest:
     def name(self):
         """Gets the name of this ListAgenciesRequest.
 
+        委托名，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The name of this ListAgenciesRequest.
         :rtype: str
@@ -104,6 +109,7 @@ class ListAgenciesRequest:
     def name(self, name):
         """Sets the name of this ListAgenciesRequest.
 
+        委托名，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param name: The name of this ListAgenciesRequest.
         :type: str

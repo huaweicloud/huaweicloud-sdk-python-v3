@@ -59,6 +59,7 @@ class ListPropertiesRequest:
     def device_id(self):
         """Gets the device_id of this ListPropertiesRequest.
 
+        下发属性的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
 
         :return: The device_id of this ListPropertiesRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class ListPropertiesRequest:
     def device_id(self, device_id):
         """Sets the device_id of this ListPropertiesRequest.
 
+        下发属性的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
 
         :param device_id: The device_id of this ListPropertiesRequest.
         :type: str
@@ -79,6 +81,7 @@ class ListPropertiesRequest:
     def stage_auth_token(self):
         """Gets the stage_auth_token of this ListPropertiesRequest.
 
+        Stage用户的Token, 仅提供给IoStage服务使用
 
         :return: The stage_auth_token of this ListPropertiesRequest.
         :rtype: str
@@ -89,6 +92,7 @@ class ListPropertiesRequest:
     def stage_auth_token(self, stage_auth_token):
         """Sets the stage_auth_token of this ListPropertiesRequest.
 
+        Stage用户的Token, 仅提供给IoStage服务使用
 
         :param stage_auth_token: The stage_auth_token of this ListPropertiesRequest.
         :type: str
@@ -99,6 +103,7 @@ class ListPropertiesRequest:
     def instance_id(self):
         """Gets the instance_id of this ListPropertiesRequest.
 
+        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :return: The instance_id of this ListPropertiesRequest.
         :rtype: str
@@ -109,6 +114,7 @@ class ListPropertiesRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListPropertiesRequest.
 
+        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this ListPropertiesRequest.
         :type: str
@@ -119,6 +125,7 @@ class ListPropertiesRequest:
     def service_id(self):
         """Gets the service_id of this ListPropertiesRequest.
 
+        设备的服务ID，在设备关联的产品模型中定义。
 
         :return: The service_id of this ListPropertiesRequest.
         :rtype: str
@@ -129,6 +136,7 @@ class ListPropertiesRequest:
     def service_id(self, service_id):
         """Sets the service_id of this ListPropertiesRequest.
 
+        设备的服务ID，在设备关联的产品模型中定义。
 
         :param service_id: The service_id of this ListPropertiesRequest.
         :type: str

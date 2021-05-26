@@ -48,6 +48,7 @@ class GlanceDeleteTagRequest:
     def image_id(self):
         """Gets the image_id of this GlanceDeleteTagRequest.
 
+        镜像id
 
         :return: The image_id of this GlanceDeleteTagRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class GlanceDeleteTagRequest:
     def image_id(self, image_id):
         """Sets the image_id of this GlanceDeleteTagRequest.
 
+        镜像id
 
         :param image_id: The image_id of this GlanceDeleteTagRequest.
         :type: str
@@ -68,6 +70,7 @@ class GlanceDeleteTagRequest:
     def tag(self):
         """Gets the tag of this GlanceDeleteTagRequest.
 
+        新增的tag。字符串中不能包含“=”和“.”。
 
         :return: The tag of this GlanceDeleteTagRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class GlanceDeleteTagRequest:
     def tag(self, tag):
         """Sets the tag of this GlanceDeleteTagRequest.
 
+        新增的tag。字符串中不能包含“=”和“.”。
 
         :param tag: The tag of this GlanceDeleteTagRequest.
         :type: str

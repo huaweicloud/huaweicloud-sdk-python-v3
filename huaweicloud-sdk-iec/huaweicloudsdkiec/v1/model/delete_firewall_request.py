@@ -44,6 +44,7 @@ class DeleteFirewallRequest:
     def firewall_id(self):
         """Gets the firewall_id of this DeleteFirewallRequest.
 
+        网络ACL ID
 
         :return: The firewall_id of this DeleteFirewallRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteFirewallRequest:
     def firewall_id(self, firewall_id):
         """Sets the firewall_id of this DeleteFirewallRequest.
 
+        网络ACL ID
 
         :param firewall_id: The firewall_id of this DeleteFirewallRequest.
         :type: str

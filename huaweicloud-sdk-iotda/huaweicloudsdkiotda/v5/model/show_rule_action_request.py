@@ -49,6 +49,7 @@ class ShowRuleActionRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowRuleActionRequest.
 
+        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :return: The instance_id of this ShowRuleActionRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ShowRuleActionRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowRuleActionRequest.
 
+        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this ShowRuleActionRequest.
         :type: str
@@ -69,6 +71,7 @@ class ShowRuleActionRequest:
     def action_id(self):
         """Gets the action_id of this ShowRuleActionRequest.
 
+        规则动作ID。
 
         :return: The action_id of this ShowRuleActionRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ShowRuleActionRequest:
     def action_id(self, action_id):
         """Sets the action_id of this ShowRuleActionRequest.
 
+        规则动作ID。
 
         :param action_id: The action_id of this ShowRuleActionRequest.
         :type: str

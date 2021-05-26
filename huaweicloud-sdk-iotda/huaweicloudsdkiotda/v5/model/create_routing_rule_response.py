@@ -49,7 +49,7 @@ class CreateRoutingRuleResponse(SdkResponse):
     def __init__(self, rule_id=None, rule_name=None, description=None, subject=None, app_type=None, app_id=None, select=None, where=None, active=None):
         """CreateRoutingRuleResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateRoutingRuleResponse, self).__init__()
 
         self._rule_id = None
         self._rule_name = None

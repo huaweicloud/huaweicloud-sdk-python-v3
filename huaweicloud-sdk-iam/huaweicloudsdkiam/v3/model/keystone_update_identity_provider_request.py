@@ -49,6 +49,7 @@ class KeystoneUpdateIdentityProviderRequest:
     def id(self):
         """Gets the id of this KeystoneUpdateIdentityProviderRequest.
 
+        待更新的身份提供商ID。
 
         :return: The id of this KeystoneUpdateIdentityProviderRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class KeystoneUpdateIdentityProviderRequest:
     def id(self, id):
         """Sets the id of this KeystoneUpdateIdentityProviderRequest.
 
+        待更新的身份提供商ID。
 
         :param id: The id of this KeystoneUpdateIdentityProviderRequest.
         :type: str

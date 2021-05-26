@@ -52,6 +52,7 @@ class KeystoneCheckroleForGroupRequest:
     def domain_id(self):
         """Gets the domain_id of this KeystoneCheckroleForGroupRequest.
 
+        用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The domain_id of this KeystoneCheckroleForGroupRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class KeystoneCheckroleForGroupRequest:
     def domain_id(self, domain_id):
         """Sets the domain_id of this KeystoneCheckroleForGroupRequest.
 
+        用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this KeystoneCheckroleForGroupRequest.
         :type: str
@@ -72,6 +74,7 @@ class KeystoneCheckroleForGroupRequest:
     def group_id(self):
         """Gets the group_id of this KeystoneCheckroleForGroupRequest.
 
+        用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The group_id of this KeystoneCheckroleForGroupRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class KeystoneCheckroleForGroupRequest:
     def group_id(self, group_id):
         """Sets the group_id of this KeystoneCheckroleForGroupRequest.
 
+        用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param group_id: The group_id of this KeystoneCheckroleForGroupRequest.
         :type: str
@@ -92,6 +96,7 @@ class KeystoneCheckroleForGroupRequest:
     def role_id(self):
         """Gets the role_id of this KeystoneCheckroleForGroupRequest.
 
+        权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 
         :return: The role_id of this KeystoneCheckroleForGroupRequest.
         :rtype: str
@@ -102,6 +107,7 @@ class KeystoneCheckroleForGroupRequest:
     def role_id(self, role_id):
         """Sets the role_id of this KeystoneCheckroleForGroupRequest.
 
+        权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 
         :param role_id: The role_id of this KeystoneCheckroleForGroupRequest.
         :type: str

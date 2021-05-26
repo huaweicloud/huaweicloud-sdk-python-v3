@@ -35,7 +35,7 @@ class CreateLoginTokenResponse(SdkResponse):
     def __init__(self, logintoken=None, x_subject_login_token=None):
         """CreateLoginTokenResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateLoginTokenResponse, self).__init__()
 
         self._logintoken = None
         self._x_subject_login_token = None

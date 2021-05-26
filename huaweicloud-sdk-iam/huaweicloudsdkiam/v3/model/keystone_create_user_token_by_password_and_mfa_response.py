@@ -35,7 +35,7 @@ class KeystoneCreateUserTokenByPasswordAndMfaResponse(SdkResponse):
     def __init__(self, token=None, x_subject_token=None):
         """KeystoneCreateUserTokenByPasswordAndMfaResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneCreateUserTokenByPasswordAndMfaResponse, self).__init__()
 
         self._token = None
         self._x_subject_token = None

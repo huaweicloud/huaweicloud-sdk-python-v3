@@ -44,6 +44,7 @@ class DeleteDeploymentRequest:
     def deployment_id(self):
         """Gets the deployment_id of this DeleteDeploymentRequest.
 
+        部署计划ID。
 
         :return: The deployment_id of this DeleteDeploymentRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteDeploymentRequest:
     def deployment_id(self, deployment_id):
         """Sets the deployment_id of this DeleteDeploymentRequest.
 
+        部署计划ID。
 
         :param deployment_id: The deployment_id of this DeleteDeploymentRequest.
         :type: str

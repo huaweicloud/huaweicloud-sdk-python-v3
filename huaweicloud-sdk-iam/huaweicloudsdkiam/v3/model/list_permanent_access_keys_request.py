@@ -45,6 +45,7 @@ class ListPermanentAccessKeysRequest:
     def user_id(self):
         """Gets the user_id of this ListPermanentAccessKeysRequest.
 
+        待查询的IAM用户ID。
 
         :return: The user_id of this ListPermanentAccessKeysRequest.
         :rtype: str
@@ -55,6 +56,7 @@ class ListPermanentAccessKeysRequest:
     def user_id(self, user_id):
         """Sets the user_id of this ListPermanentAccessKeysRequest.
 
+        待查询的IAM用户ID。
 
         :param user_id: The user_id of this ListPermanentAccessKeysRequest.
         :type: str

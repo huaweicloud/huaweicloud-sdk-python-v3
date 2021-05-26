@@ -50,6 +50,7 @@ class KeystoneListEndpointsRequest:
     def interface(self):
         """Gets the interface of this KeystoneListEndpointsRequest.
 
+        终端节点平面。可能取值为：public、internal或admin。public： 用户可在公共网络接口上看到。internal：用户可在内部网络接口上看到。admin：管理员可以在安全的网络接口上看到。
 
         :return: The interface of this KeystoneListEndpointsRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class KeystoneListEndpointsRequest:
     def interface(self, interface):
         """Sets the interface of this KeystoneListEndpointsRequest.
 
+        终端节点平面。可能取值为：public、internal或admin。public： 用户可在公共网络接口上看到。internal：用户可在内部网络接口上看到。admin：管理员可以在安全的网络接口上看到。
 
         :param interface: The interface of this KeystoneListEndpointsRequest.
         :type: str
@@ -70,6 +72,7 @@ class KeystoneListEndpointsRequest:
     def service_id(self):
         """Gets the service_id of this KeystoneListEndpointsRequest.
 
+        服务ID。
 
         :return: The service_id of this KeystoneListEndpointsRequest.
         :rtype: str
@@ -80,6 +83,7 @@ class KeystoneListEndpointsRequest:
     def service_id(self, service_id):
         """Sets the service_id of this KeystoneListEndpointsRequest.
 
+        服务ID。
 
         :param service_id: The service_id of this KeystoneListEndpointsRequest.
         :type: str

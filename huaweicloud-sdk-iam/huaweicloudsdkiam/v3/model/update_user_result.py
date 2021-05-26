@@ -23,6 +23,7 @@ class UpdateUserResult:
     sensitive_list = []
 
     openapi_types = {
+        'access_mode': 'str',
         'pwd_status': 'bool',
         'xuser_id': 'str',
         'xuser_type': 'str',
@@ -39,6 +40,7 @@ class UpdateUserResult:
     }
 
     attribute_map = {
+        'access_mode': 'access_mode',
         'pwd_status': 'pwd_status',
         'xuser_id': 'xuser_id',
         'xuser_type': 'xuser_type',
@@ -54,11 +56,12 @@ class UpdateUserResult:
         'password_expires_at': 'password_expires_at'
     }
 
-    def __init__(self, pwd_status=None, xuser_id=None, xuser_type=None, description=None, name=None, phone=None, domain_id=None, enabled=None, areacode=None, email=None, id=None, links=None, password_expires_at=None):
+    def __init__(self, access_mode=None, pwd_status=None, xuser_id=None, xuser_type=None, description=None, name=None, phone=None, domain_id=None, enabled=None, areacode=None, email=None, id=None, links=None, password_expires_at=None):
         """UpdateUserResult - a model defined in huaweicloud sdk"""
         
         
 
+        self._access_mode = None
         self._pwd_status = None
         self._xuser_id = None
         self._xuser_type = None
@@ -74,6 +77,8 @@ class UpdateUserResult:
         self._password_expires_at = None
         self.discriminator = None
 
+        if access_mode is not None:
+            self.access_mode = access_mode
         if pwd_status is not None:
             self.pwd_status = pwd_status
         if xuser_id is not None:
@@ -95,6 +100,28 @@ class UpdateUserResult:
         self.links = links
         if password_expires_at is not None:
             self.password_expires_at = password_expires_at
+
+    @property
+    def access_mode(self):
+        """Gets the access_mode of this UpdateUserResult.
+
+        IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
+
+        :return: The access_mode of this UpdateUserResult.
+        :rtype: str
+        """
+        return self._access_mode
+
+    @access_mode.setter
+    def access_mode(self, access_mode):
+        """Sets the access_mode of this UpdateUserResult.
+
+        IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
+
+        :param access_mode: The access_mode of this UpdateUserResult.
+        :type: str
+        """
+        self._access_mode = access_mode
 
     @property
     def pwd_status(self):

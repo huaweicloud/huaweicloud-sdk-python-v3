@@ -37,7 +37,7 @@ class ListRoutingRulesResponse(SdkResponse):
     def __init__(self, rules=None, count=None, marker=None):
         """ListRoutingRulesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListRoutingRulesResponse, self).__init__()
 
         self._rules = None
         self._count = None

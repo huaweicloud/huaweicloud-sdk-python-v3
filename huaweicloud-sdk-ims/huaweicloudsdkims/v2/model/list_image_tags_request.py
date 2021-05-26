@@ -44,6 +44,7 @@ class ListImageTagsRequest:
     def image_id(self):
         """Gets the image_id of this ListImageTagsRequest.
 
+        镜像ID。
 
         :return: The image_id of this ListImageTagsRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListImageTagsRequest:
     def image_id(self, image_id):
         """Sets the image_id of this ListImageTagsRequest.
 
+        镜像ID。
 
         :param image_id: The image_id of this ListImageTagsRequest.
         :type: str

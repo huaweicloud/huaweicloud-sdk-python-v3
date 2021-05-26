@@ -35,7 +35,7 @@ class ShowDevicesInGroupResponse(SdkResponse):
     def __init__(self, devices=None, page=None):
         """ShowDevicesInGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowDevicesInGroupResponse, self).__init__()
 
         self._devices = None
         self._page = None

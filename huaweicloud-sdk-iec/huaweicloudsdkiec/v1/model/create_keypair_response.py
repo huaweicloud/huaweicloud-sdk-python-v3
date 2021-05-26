@@ -41,7 +41,7 @@ class CreateKeypairResponse(SdkResponse):
     def __init__(self, name=None, public_key=None, private_key=None, user_id=None, fingerprint=None):
         """CreateKeypairResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateKeypairResponse, self).__init__()
 
         self._name = None
         self._public_key = None

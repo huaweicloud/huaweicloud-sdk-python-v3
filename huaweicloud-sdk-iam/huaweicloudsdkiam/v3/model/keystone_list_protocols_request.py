@@ -44,6 +44,7 @@ class KeystoneListProtocolsRequest:
     def idp_id(self):
         """Gets the idp_id of this KeystoneListProtocolsRequest.
 
+        身份提供商ID。
 
         :return: The idp_id of this KeystoneListProtocolsRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class KeystoneListProtocolsRequest:
     def idp_id(self, idp_id):
         """Sets the idp_id of this KeystoneListProtocolsRequest.
 
+        身份提供商ID。
 
         :param idp_id: The idp_id of this KeystoneListProtocolsRequest.
         :type: str

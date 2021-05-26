@@ -33,7 +33,7 @@ class ListOsVersionsResponse(SdkResponse):
     def __init__(self, body=None):
         """ListOsVersionsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListOsVersionsResponse, self).__init__()
 
         self._body = None
         self.discriminator = None

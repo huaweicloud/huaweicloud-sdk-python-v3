@@ -49,6 +49,7 @@ class UpdateAgencyRequest:
     def agency_id(self):
         """Gets the agency_id of this UpdateAgencyRequest.
 
+        待修改的委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The agency_id of this UpdateAgencyRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateAgencyRequest:
     def agency_id(self, agency_id):
         """Sets the agency_id of this UpdateAgencyRequest.
 
+        待修改的委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param agency_id: The agency_id of this UpdateAgencyRequest.
         :type: str

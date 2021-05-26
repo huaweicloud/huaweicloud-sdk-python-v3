@@ -100,6 +100,7 @@ class ListPortsRequest:
     def limit(self):
         """Gets the limit of this ListPortsRequest.
 
+        查询返回端口列表数量。取值范围：0~1000。
 
         :return: The limit of this ListPortsRequest.
         :rtype: int
@@ -110,6 +111,7 @@ class ListPortsRequest:
     def limit(self, limit):
         """Sets the limit of this ListPortsRequest.
 
+        查询返回端口列表数量。取值范围：0~1000。
 
         :param limit: The limit of this ListPortsRequest.
         :type: int
@@ -120,6 +122,7 @@ class ListPortsRequest:
     def offset(self):
         """Gets the offset of this ListPortsRequest.
 
+        查询的偏移量。
 
         :return: The offset of this ListPortsRequest.
         :rtype: int
@@ -130,6 +133,7 @@ class ListPortsRequest:
     def offset(self, offset):
         """Sets the offset of this ListPortsRequest.
 
+        查询的偏移量。
 
         :param offset: The offset of this ListPortsRequest.
         :type: int
@@ -140,6 +144,7 @@ class ListPortsRequest:
     def network_id(self):
         """Gets the network_id of this ListPortsRequest.
 
+        子网的neutron的network的ID。
 
         :return: The network_id of this ListPortsRequest.
         :rtype: str
@@ -150,6 +155,7 @@ class ListPortsRequest:
     def network_id(self, network_id):
         """Sets the network_id of this ListPortsRequest.
 
+        子网的neutron的network的ID。
 
         :param network_id: The network_id of this ListPortsRequest.
         :type: str
@@ -160,6 +166,7 @@ class ListPortsRequest:
     def id(self):
         """Gets the id of this ListPortsRequest.
 
+        按照端口ID过滤查询
 
         :return: The id of this ListPortsRequest.
         :rtype: str
@@ -170,6 +177,7 @@ class ListPortsRequest:
     def id(self, id):
         """Sets the id of this ListPortsRequest.
 
+        按照端口ID过滤查询
 
         :param id: The id of this ListPortsRequest.
         :type: str
@@ -180,6 +188,7 @@ class ListPortsRequest:
     def name(self):
         """Gets the name of this ListPortsRequest.
 
+        按照name过滤查询  取值范围：最大长度不超过255
 
         :return: The name of this ListPortsRequest.
         :rtype: str
@@ -190,6 +199,7 @@ class ListPortsRequest:
     def name(self, name):
         """Sets the name of this ListPortsRequest.
 
+        按照name过滤查询  取值范围：最大长度不超过255
 
         :param name: The name of this ListPortsRequest.
         :type: str
@@ -200,6 +210,7 @@ class ListPortsRequest:
     def admin_state_up(self):
         """Gets the admin_state_up of this ListPortsRequest.
 
+        按照admin_state_up进行过滤  约束：只支持true
 
         :return: The admin_state_up of this ListPortsRequest.
         :rtype: bool
@@ -210,6 +221,7 @@ class ListPortsRequest:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this ListPortsRequest.
 
+        按照admin_state_up进行过滤  约束：只支持true
 
         :param admin_state_up: The admin_state_up of this ListPortsRequest.
         :type: bool
@@ -220,6 +232,7 @@ class ListPortsRequest:
     def fixed_ips(self):
         """Gets the fixed_ips of this ListPortsRequest.
 
+        根据绑定的IP查询端口。按照fixed_ips=ip_address或者fixed_ips=subnet_id过滤查询，示例：fixed_ips=ip_address=xxx&fixed_ips=subnet_id=xxxx
 
         :return: The fixed_ips of this ListPortsRequest.
         :rtype: list[str]
@@ -230,6 +243,7 @@ class ListPortsRequest:
     def fixed_ips(self, fixed_ips):
         """Sets the fixed_ips of this ListPortsRequest.
 
+        根据绑定的IP查询端口。按照fixed_ips=ip_address或者fixed_ips=subnet_id过滤查询，示例：fixed_ips=ip_address=xxx&fixed_ips=subnet_id=xxxx
 
         :param fixed_ips: The fixed_ips of this ListPortsRequest.
         :type: list[str]
@@ -240,6 +254,7 @@ class ListPortsRequest:
     def mac_address(self):
         """Gets the mac_address of this ListPortsRequest.
 
+        根据网卡的mac地址查询端口。
 
         :return: The mac_address of this ListPortsRequest.
         :rtype: str
@@ -250,6 +265,7 @@ class ListPortsRequest:
     def mac_address(self, mac_address):
         """Sets the mac_address of this ListPortsRequest.
 
+        根据网卡的mac地址查询端口。
 
         :param mac_address: The mac_address of this ListPortsRequest.
         :type: str
@@ -260,6 +276,7 @@ class ListPortsRequest:
     def device_id(self):
         """Gets the device_id of this ListPortsRequest.
 
+        根据设备ID查询端口。
 
         :return: The device_id of this ListPortsRequest.
         :rtype: str
@@ -270,6 +287,7 @@ class ListPortsRequest:
     def device_id(self, device_id):
         """Sets the device_id of this ListPortsRequest.
 
+        根据设备ID查询端口。
 
         :param device_id: The device_id of this ListPortsRequest.
         :type: str
@@ -280,6 +298,7 @@ class ListPortsRequest:
     def device_owner(self):
         """Gets the device_owner of this ListPortsRequest.
 
+        根据设备主查询端口。
 
         :return: The device_owner of this ListPortsRequest.
         :rtype: str
@@ -290,6 +309,7 @@ class ListPortsRequest:
     def device_owner(self, device_owner):
         """Sets the device_owner of this ListPortsRequest.
 
+        根据设备主查询端口。
 
         :param device_owner: The device_owner of this ListPortsRequest.
         :type: str
@@ -300,6 +320,7 @@ class ListPortsRequest:
     def status(self):
         """Gets the status of this ListPortsRequest.
 
+        按照status过滤查询  取值范围：ACTIVE、BUILD、DOWN
 
         :return: The status of this ListPortsRequest.
         :rtype: str
@@ -310,6 +331,7 @@ class ListPortsRequest:
     def status(self, status):
         """Sets the status of this ListPortsRequest.
 
+        按照status过滤查询  取值范围：ACTIVE、BUILD、DOWN
 
         :param status: The status of this ListPortsRequest.
         :type: str
@@ -320,6 +342,7 @@ class ListPortsRequest:
     def security_groups(self):
         """Gets the security_groups of this ListPortsRequest.
 
+        根据安全组信息ID查询端口。
 
         :return: The security_groups of this ListPortsRequest.
         :rtype: str
@@ -330,6 +353,7 @@ class ListPortsRequest:
     def security_groups(self, security_groups):
         """Sets the security_groups of this ListPortsRequest.
 
+        根据安全组信息ID查询端口。
 
         :param security_groups: The security_groups of this ListPortsRequest.
         :type: str

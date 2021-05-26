@@ -44,6 +44,7 @@ class KeystoneListUsersForGroupByAdminRequest:
     def group_id(self):
         """Gets the group_id of this KeystoneListUsersForGroupByAdminRequest.
 
+        待查询的用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The group_id of this KeystoneListUsersForGroupByAdminRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class KeystoneListUsersForGroupByAdminRequest:
     def group_id(self, group_id):
         """Sets the group_id of this KeystoneListUsersForGroupByAdminRequest.
 
+        待查询的用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param group_id: The group_id of this KeystoneListUsersForGroupByAdminRequest.
         :type: str

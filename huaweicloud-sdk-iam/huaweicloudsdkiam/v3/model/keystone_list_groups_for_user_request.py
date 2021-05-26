@@ -44,6 +44,7 @@ class KeystoneListGroupsForUserRequest:
     def user_id(self):
         """Gets the user_id of this KeystoneListGroupsForUserRequest.
 
+        待查询的IAM用户ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The user_id of this KeystoneListGroupsForUserRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class KeystoneListGroupsForUserRequest:
     def user_id(self, user_id):
         """Sets the user_id of this KeystoneListGroupsForUserRequest.
 
+        待查询的IAM用户ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param user_id: The user_id of this KeystoneListGroupsForUserRequest.
         :type: str

@@ -44,6 +44,7 @@ class ShowSubnetRequest:
     def subnet_id(self):
         """Gets the subnet_id of this ShowSubnetRequest.
 
+        子网ID。
 
         :return: The subnet_id of this ShowSubnetRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowSubnetRequest:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this ShowSubnetRequest.
 
+        子网ID。
 
         :param subnet_id: The subnet_id of this ShowSubnetRequest.
         :type: str

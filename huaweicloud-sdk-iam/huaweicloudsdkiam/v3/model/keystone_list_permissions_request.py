@@ -60,6 +60,7 @@ class KeystoneListPermissionsRequest:
     def name(self):
         """Gets the name of this KeystoneListPermissionsRequest.
 
+        权限名，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 
         :return: The name of this KeystoneListPermissionsRequest.
         :rtype: str
@@ -70,6 +71,7 @@ class KeystoneListPermissionsRequest:
     def name(self, name):
         """Sets the name of this KeystoneListPermissionsRequest.
 
+        权限名，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 
         :param name: The name of this KeystoneListPermissionsRequest.
         :type: str
@@ -80,6 +82,7 @@ class KeystoneListPermissionsRequest:
     def domain_id(self):
         """Gets the domain_id of this KeystoneListPermissionsRequest.
 
+        账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。    > - 如果填写此参数，则返回账号下所有自定义策略。 > - 如果不填写此参数，则返回所有系统权限（包含系统策略和系统角色）。
 
         :return: The domain_id of this KeystoneListPermissionsRequest.
         :rtype: str
@@ -90,6 +93,7 @@ class KeystoneListPermissionsRequest:
     def domain_id(self, domain_id):
         """Sets the domain_id of this KeystoneListPermissionsRequest.
 
+        账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。    > - 如果填写此参数，则返回账号下所有自定义策略。 > - 如果不填写此参数，则返回所有系统权限（包含系统策略和系统角色）。
 
         :param domain_id: The domain_id of this KeystoneListPermissionsRequest.
         :type: str
@@ -100,6 +104,7 @@ class KeystoneListPermissionsRequest:
     def page(self):
         """Gets the page of this KeystoneListPermissionsRequest.
 
+        分页查询时数据的页数，查询值最小为1，默认值为1。需要与per_page同时使用。
 
         :return: The page of this KeystoneListPermissionsRequest.
         :rtype: int
@@ -110,6 +115,7 @@ class KeystoneListPermissionsRequest:
     def page(self, page):
         """Sets the page of this KeystoneListPermissionsRequest.
 
+        分页查询时数据的页数，查询值最小为1，默认值为1。需要与per_page同时使用。
 
         :param page: The page of this KeystoneListPermissionsRequest.
         :type: int
@@ -120,6 +126,7 @@ class KeystoneListPermissionsRequest:
     def per_page(self):
         """Gets the per_page of this KeystoneListPermissionsRequest.
 
+        分页查询时每页的数据个数，取值范围为[1,300], 默认值为300。需要与page同时使用。
 
         :return: The per_page of this KeystoneListPermissionsRequest.
         :rtype: int
@@ -130,6 +137,7 @@ class KeystoneListPermissionsRequest:
     def per_page(self, per_page):
         """Sets the per_page of this KeystoneListPermissionsRequest.
 
+        分页查询时每页的数据个数，取值范围为[1,300], 默认值为300。需要与page同时使用。
 
         :param per_page: The per_page of this KeystoneListPermissionsRequest.
         :type: int

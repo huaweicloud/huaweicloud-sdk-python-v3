@@ -44,6 +44,7 @@ class DeletePermanentAccessKeyRequest:
     def access_key(self):
         """Gets the access_key of this DeletePermanentAccessKeyRequest.
 
+        待删除的指定AK。
 
         :return: The access_key of this DeletePermanentAccessKeyRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeletePermanentAccessKeyRequest:
     def access_key(self, access_key):
         """Sets the access_key of this DeletePermanentAccessKeyRequest.
 
+        待删除的指定AK。
 
         :param access_key: The access_key of this DeletePermanentAccessKeyRequest.
         :type: str

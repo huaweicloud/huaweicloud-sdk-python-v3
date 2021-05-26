@@ -37,7 +37,7 @@ class GlanceListImageMemberSchemasResponse(SdkResponse):
     def __init__(self, links=None, name=None, properties=None):
         """GlanceListImageMemberSchemasResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(GlanceListImageMemberSchemasResponse, self).__init__()
 
         self._links = None
         self._name = None

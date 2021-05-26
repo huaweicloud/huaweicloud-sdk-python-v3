@@ -35,7 +35,7 @@ class ListPortsResponse(SdkResponse):
     def __init__(self, ports=None, count=None):
         """ListPortsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListPortsResponse, self).__init__()
 
         self._ports = None
         self._count = None

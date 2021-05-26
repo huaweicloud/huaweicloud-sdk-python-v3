@@ -57,6 +57,7 @@ class CreateOrDeleteDeviceInGroupRequest:
     def instance_id(self):
         """Gets the instance_id of this CreateOrDeleteDeviceInGroupRequest.
 
+        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :return: The instance_id of this CreateOrDeleteDeviceInGroupRequest.
         :rtype: str
@@ -67,6 +68,7 @@ class CreateOrDeleteDeviceInGroupRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CreateOrDeleteDeviceInGroupRequest.
 
+        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this CreateOrDeleteDeviceInGroupRequest.
         :type: str
@@ -77,6 +79,7 @@ class CreateOrDeleteDeviceInGroupRequest:
     def group_id(self):
         """Gets the group_id of this CreateOrDeleteDeviceInGroupRequest.
 
+        设备组ID，用于唯一标识一个设备组，在创建设备组时由物联网平台分配。
 
         :return: The group_id of this CreateOrDeleteDeviceInGroupRequest.
         :rtype: str
@@ -87,6 +90,7 @@ class CreateOrDeleteDeviceInGroupRequest:
     def group_id(self, group_id):
         """Sets the group_id of this CreateOrDeleteDeviceInGroupRequest.
 
+        设备组ID，用于唯一标识一个设备组，在创建设备组时由物联网平台分配。
 
         :param group_id: The group_id of this CreateOrDeleteDeviceInGroupRequest.
         :type: str
@@ -97,6 +101,7 @@ class CreateOrDeleteDeviceInGroupRequest:
     def action_id(self):
         """Gets the action_id of this CreateOrDeleteDeviceInGroupRequest.
 
+        操作类型，支持添加设备和删除设备。 - addDevice: 添加设备。添加已注册的设备到指定的设备组中。 - removeDevice: 删除设备。从指定的设备组中删除设备，只是解除了设备和设备组的关系，该设备在平台仍然存在。 
 
         :return: The action_id of this CreateOrDeleteDeviceInGroupRequest.
         :rtype: str
@@ -107,6 +112,7 @@ class CreateOrDeleteDeviceInGroupRequest:
     def action_id(self, action_id):
         """Sets the action_id of this CreateOrDeleteDeviceInGroupRequest.
 
+        操作类型，支持添加设备和删除设备。 - addDevice: 添加设备。添加已注册的设备到指定的设备组中。 - removeDevice: 删除设备。从指定的设备组中删除设备，只是解除了设备和设备组的关系，该设备在平台仍然存在。 
 
         :param action_id: The action_id of this CreateOrDeleteDeviceInGroupRequest.
         :type: str
@@ -117,6 +123,7 @@ class CreateOrDeleteDeviceInGroupRequest:
     def device_id(self):
         """Gets the device_id of this CreateOrDeleteDeviceInGroupRequest.
 
+        设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
         :return: The device_id of this CreateOrDeleteDeviceInGroupRequest.
         :rtype: str
@@ -127,6 +134,7 @@ class CreateOrDeleteDeviceInGroupRequest:
     def device_id(self, device_id):
         """Sets the device_id of this CreateOrDeleteDeviceInGroupRequest.
 
+        设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
         :param device_id: The device_id of this CreateOrDeleteDeviceInGroupRequest.
         :type: str

@@ -44,6 +44,7 @@ class DeletePublicIpRequest:
     def publicip_id(self):
         """Gets the publicip_id of this DeletePublicIpRequest.
 
+        弹性公网IP ID
 
         :return: The publicip_id of this DeletePublicIpRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeletePublicIpRequest:
     def publicip_id(self, publicip_id):
         """Sets the publicip_id of this DeletePublicIpRequest.
 
+        弹性公网IP ID
 
         :param publicip_id: The publicip_id of this DeletePublicIpRequest.
         :type: str

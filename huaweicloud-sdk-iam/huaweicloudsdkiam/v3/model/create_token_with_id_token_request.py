@@ -49,6 +49,7 @@ class CreateTokenWithIdTokenRequest:
     def x_idp_id(self):
         """Gets the x_idp_id of this CreateTokenWithIdTokenRequest.
 
+        身份提供商ID。
 
         :return: The x_idp_id of this CreateTokenWithIdTokenRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateTokenWithIdTokenRequest:
     def x_idp_id(self, x_idp_id):
         """Sets the x_idp_id of this CreateTokenWithIdTokenRequest.
 
+        身份提供商ID。
 
         :param x_idp_id: The x_idp_id of this CreateTokenWithIdTokenRequest.
         :type: str

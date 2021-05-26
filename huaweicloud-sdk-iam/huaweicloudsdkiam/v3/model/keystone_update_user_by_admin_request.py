@@ -49,6 +49,7 @@ class KeystoneUpdateUserByAdminRequest:
     def user_id(self):
         """Gets the user_id of this KeystoneUpdateUserByAdminRequest.
 
+        待修改信息的IAM用户ID，获取方式请参见：[获取用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The user_id of this KeystoneUpdateUserByAdminRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class KeystoneUpdateUserByAdminRequest:
     def user_id(self, user_id):
         """Sets the user_id of this KeystoneUpdateUserByAdminRequest.
 
+        待修改信息的IAM用户ID，获取方式请参见：[获取用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param user_id: The user_id of this KeystoneUpdateUserByAdminRequest.
         :type: str

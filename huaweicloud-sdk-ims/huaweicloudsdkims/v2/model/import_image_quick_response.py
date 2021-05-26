@@ -33,7 +33,7 @@ class ImportImageQuickResponse(SdkResponse):
     def __init__(self, job_id=None):
         """ImportImageQuickResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ImportImageQuickResponse, self).__init__()
 
         self._job_id = None
         self.discriminator = None

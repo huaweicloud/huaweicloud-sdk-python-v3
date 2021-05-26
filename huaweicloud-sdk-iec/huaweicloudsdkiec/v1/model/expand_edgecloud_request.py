@@ -44,6 +44,7 @@ class ExpandEdgecloudRequest:
     def deployment_id(self):
         """Gets the deployment_id of this ExpandEdgecloudRequest.
 
+        部署计划ID。  约束： - 该接口只能执行指定边缘业务ID（id）创建的部署计划。
 
         :return: The deployment_id of this ExpandEdgecloudRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ExpandEdgecloudRequest:
     def deployment_id(self, deployment_id):
         """Sets the deployment_id of this ExpandEdgecloudRequest.
 
+        部署计划ID。  约束： - 该接口只能执行指定边缘业务ID（id）创建的部署计划。
 
         :param deployment_id: The deployment_id of this ExpandEdgecloudRequest.
         :type: str

@@ -55,6 +55,7 @@ class ListSecurityGroupRulesRequest:
     def limit(self):
         """Gets the limit of this ListSecurityGroupRulesRequest.
 
+        查询返回边缘安全组规则列表数量。取值范围：0~1000。
 
         :return: The limit of this ListSecurityGroupRulesRequest.
         :rtype: int
@@ -65,6 +66,7 @@ class ListSecurityGroupRulesRequest:
     def limit(self, limit):
         """Sets the limit of this ListSecurityGroupRulesRequest.
 
+        查询返回边缘安全组规则列表数量。取值范围：0~1000。
 
         :param limit: The limit of this ListSecurityGroupRulesRequest.
         :type: int
@@ -75,6 +77,7 @@ class ListSecurityGroupRulesRequest:
     def offset(self):
         """Gets the offset of this ListSecurityGroupRulesRequest.
 
+        查询的偏移量。
 
         :return: The offset of this ListSecurityGroupRulesRequest.
         :rtype: int
@@ -85,6 +88,7 @@ class ListSecurityGroupRulesRequest:
     def offset(self, offset):
         """Sets the offset of this ListSecurityGroupRulesRequest.
 
+        查询的偏移量。
 
         :param offset: The offset of this ListSecurityGroupRulesRequest.
         :type: int
@@ -95,6 +99,7 @@ class ListSecurityGroupRulesRequest:
     def security_group_id(self):
         """Gets the security_group_id of this ListSecurityGroupRulesRequest.
 
+        安全组ID。uuid
 
         :return: The security_group_id of this ListSecurityGroupRulesRequest.
         :rtype: str
@@ -105,6 +110,7 @@ class ListSecurityGroupRulesRequest:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this ListSecurityGroupRulesRequest.
 
+        安全组ID。uuid
 
         :param security_group_id: The security_group_id of this ListSecurityGroupRulesRequest.
         :type: str

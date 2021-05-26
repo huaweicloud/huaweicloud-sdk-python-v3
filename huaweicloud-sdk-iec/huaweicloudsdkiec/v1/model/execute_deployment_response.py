@@ -41,7 +41,7 @@ class ExecuteDeploymentResponse(SdkResponse):
     def __init__(self, id=None, name=None, deployment_id=None, status=None, job_id=None):
         """ExecuteDeploymentResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ExecuteDeploymentResponse, self).__init__()
 
         self._id = None
         self._name = None

@@ -31,7 +31,7 @@ class DeleteDomainGroupInheritedRoleResponse(SdkResponse):
     def __init__(self):
         """DeleteDomainGroupInheritedRoleResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteDomainGroupInheritedRoleResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

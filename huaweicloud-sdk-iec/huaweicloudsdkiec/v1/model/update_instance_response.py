@@ -109,7 +109,7 @@ class UpdateInstanceResponse(SdkResponse):
     def __init__(self, id=None, name=None, status=None, updated=None, host_id=None, addresses=None, created=None, tags=None, locked=None, description=None, tenant_id=None, sys_tags=None, flavor=None, metadata=None, security_groups=None, progress=None, os_ext_st_spower_state=None, os_ext_st_svm_state=None, os_ext_st_stask_state=None, os_dc_fdisk_config=None, os_ext_a_zavailability_zone=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_ruser_data=None, os_ext_srv_att_rhost=None, os_ext_srv_att_rhypervisor_hostname=None, os_extended_volumesvolumes_attached=None, geolocation=None, edgecloud_id=None, edgecloud_name=None, domain_id=None, key_name=None, os_ext_srv_att_rinstance_name=None):
         """UpdateInstanceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateInstanceResponse, self).__init__()
 
         self._id = None
         self._name = None

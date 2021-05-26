@@ -85,6 +85,7 @@ class ListFlavorsRequest:
     def offset(self):
         """Gets the offset of this ListFlavorsRequest.
 
+        页码。 当前页面数，默认为1。 取值大于等于0，取值为0时返回第1页。
 
         :return: The offset of this ListFlavorsRequest.
         :rtype: int
@@ -95,6 +96,7 @@ class ListFlavorsRequest:
     def offset(self, offset):
         """Sets the offset of this ListFlavorsRequest.
 
+        页码。 当前页面数，默认为1。 取值大于等于0，取值为0时返回第1页。
 
         :param offset: The offset of this ListFlavorsRequest.
         :type: int
@@ -105,6 +107,7 @@ class ListFlavorsRequest:
     def limit(self):
         """Gets the limit of this ListFlavorsRequest.
 
+        查询返回边缘实例规格列表当前页面的数量 。 取值范围：0~1000。
 
         :return: The limit of this ListFlavorsRequest.
         :rtype: int
@@ -115,6 +118,7 @@ class ListFlavorsRequest:
     def limit(self, limit):
         """Sets the limit of this ListFlavorsRequest.
 
+        查询返回边缘实例规格列表当前页面的数量 。 取值范围：0~1000。
 
         :param limit: The limit of this ListFlavorsRequest.
         :type: int
@@ -125,6 +129,7 @@ class ListFlavorsRequest:
     def name(self):
         """Gets the name of this ListFlavorsRequest.
 
+        查询条件，规格的名称。
 
         :return: The name of this ListFlavorsRequest.
         :rtype: str
@@ -135,6 +140,7 @@ class ListFlavorsRequest:
     def name(self, name):
         """Sets the name of this ListFlavorsRequest.
 
+        查询条件，规格的名称。
 
         :param name: The name of this ListFlavorsRequest.
         :type: str
@@ -145,6 +151,7 @@ class ListFlavorsRequest:
     def area(self):
         """Gets the area of this ListFlavorsRequest.
 
+        边缘规格所在大区。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :return: The area of this ListFlavorsRequest.
         :rtype: str
@@ -155,6 +162,7 @@ class ListFlavorsRequest:
     def area(self, area):
         """Sets the area of this ListFlavorsRequest.
 
+        边缘规格所在大区。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :param area: The area of this ListFlavorsRequest.
         :type: str
@@ -165,6 +173,7 @@ class ListFlavorsRequest:
     def province(self):
         """Gets the province of this ListFlavorsRequest.
 
+        边缘规格所在省份。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :return: The province of this ListFlavorsRequest.
         :rtype: str
@@ -175,6 +184,7 @@ class ListFlavorsRequest:
     def province(self, province):
         """Sets the province of this ListFlavorsRequest.
 
+        边缘规格所在省份。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :param province: The province of this ListFlavorsRequest.
         :type: str
@@ -185,6 +195,7 @@ class ListFlavorsRequest:
     def city(self):
         """Gets the city of this ListFlavorsRequest.
 
+        边缘规格所在城市。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :return: The city of this ListFlavorsRequest.
         :rtype: str
@@ -195,6 +206,7 @@ class ListFlavorsRequest:
     def city(self, city):
         """Sets the city of this ListFlavorsRequest.
 
+        边缘规格所在城市。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :param city: The city of this ListFlavorsRequest.
         :type: str
@@ -205,6 +217,7 @@ class ListFlavorsRequest:
     def operator(self):
         """Gets the operator of this ListFlavorsRequest.
 
+        边缘规格支持运营商。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :return: The operator of this ListFlavorsRequest.
         :rtype: str
@@ -215,6 +228,7 @@ class ListFlavorsRequest:
     def operator(self, operator):
         """Sets the operator of this ListFlavorsRequest.
 
+        边缘规格支持运营商。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :param operator: The operator of this ListFlavorsRequest.
         :type: str
@@ -225,6 +239,7 @@ class ListFlavorsRequest:
     def id(self):
         """Gets the id of this ListFlavorsRequest.
 
+        查询条件，规格的ID。
 
         :return: The id of this ListFlavorsRequest.
         :rtype: str
@@ -235,6 +250,7 @@ class ListFlavorsRequest:
     def id(self, id):
         """Sets the id of this ListFlavorsRequest.
 
+        查询条件，规格的ID。
 
         :param id: The id of this ListFlavorsRequest.
         :type: str
@@ -245,6 +261,7 @@ class ListFlavorsRequest:
     def site_ids(self):
         """Gets the site_ids of this ListFlavorsRequest.
 
+        查询条件，边缘规格站点列表，站点之间用“,”分隔。
 
         :return: The site_ids of this ListFlavorsRequest.
         :rtype: str
@@ -255,6 +272,7 @@ class ListFlavorsRequest:
     def site_ids(self, site_ids):
         """Sets the site_ids of this ListFlavorsRequest.
 
+        查询条件，边缘规格站点列表，站点之间用“,”分隔。
 
         :param site_ids: The site_ids of this ListFlavorsRequest.
         :type: str

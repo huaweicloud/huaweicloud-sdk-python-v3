@@ -23,6 +23,7 @@ class CreateUserResult:
     sensitive_list = []
 
     openapi_types = {
+        'access_mode': 'str',
         'status': 'int',
         'pwd_status': 'bool',
         'xuser_id': 'str',
@@ -43,6 +44,7 @@ class CreateUserResult:
     }
 
     attribute_map = {
+        'access_mode': 'access_mode',
         'status': 'status',
         'pwd_status': 'pwd_status',
         'xuser_id': 'xuser_id',
@@ -62,11 +64,12 @@ class CreateUserResult:
         'password_expires_at': 'password_expires_at'
     }
 
-    def __init__(self, status=None, pwd_status=None, xuser_id=None, xuser_type=None, description=None, name=None, phone=None, is_domain_owner=None, domain_id=None, enabled=None, areacode=None, email=None, create_time=None, xdomain_id=None, xdomain_type=None, id=None, password_expires_at=None):
+    def __init__(self, access_mode=None, status=None, pwd_status=None, xuser_id=None, xuser_type=None, description=None, name=None, phone=None, is_domain_owner=None, domain_id=None, enabled=None, areacode=None, email=None, create_time=None, xdomain_id=None, xdomain_type=None, id=None, password_expires_at=None):
         """CreateUserResult - a model defined in huaweicloud sdk"""
         
         
 
+        self._access_mode = None
         self._status = None
         self._pwd_status = None
         self._xuser_id = None
@@ -86,6 +89,8 @@ class CreateUserResult:
         self._password_expires_at = None
         self.discriminator = None
 
+        if access_mode is not None:
+            self.access_mode = access_mode
         if status is not None:
             self.status = status
         if pwd_status is not None:
@@ -116,6 +121,28 @@ class CreateUserResult:
         self.id = id
         if password_expires_at is not None:
             self.password_expires_at = password_expires_at
+
+    @property
+    def access_mode(self):
+        """Gets the access_mode of this CreateUserResult.
+
+        IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
+
+        :return: The access_mode of this CreateUserResult.
+        :rtype: str
+        """
+        return self._access_mode
+
+    @access_mode.setter
+    def access_mode(self, access_mode):
+        """Sets the access_mode of this CreateUserResult.
+
+        IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
+
+        :param access_mode: The access_mode of this CreateUserResult.
+        :type: str
+        """
+        self._access_mode = access_mode
 
     @property
     def status(self):

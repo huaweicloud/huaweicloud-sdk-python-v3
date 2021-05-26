@@ -35,7 +35,7 @@ class ListEdgeCloudResponse(SdkResponse):
     def __init__(self, count=None, edgeclouds=None):
         """ListEdgeCloudResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListEdgeCloudResponse, self).__init__()
 
         self._count = None
         self._edgeclouds = None

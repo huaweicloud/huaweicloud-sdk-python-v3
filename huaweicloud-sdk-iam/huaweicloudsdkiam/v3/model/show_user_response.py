@@ -33,7 +33,7 @@ class ShowUserResponse(SdkResponse):
     def __init__(self, user=None):
         """ShowUserResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowUserResponse, self).__init__()
 
         self._user = None
         self.discriminator = None

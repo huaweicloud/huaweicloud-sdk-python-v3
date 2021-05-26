@@ -49,6 +49,7 @@ class KeystoneCreateMappingRequest:
     def id(self):
         """Gets the id of this KeystoneCreateMappingRequest.
 
+        待注册的映射ID。
 
         :return: The id of this KeystoneCreateMappingRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class KeystoneCreateMappingRequest:
     def id(self, id):
         """Sets the id of this KeystoneCreateMappingRequest.
 
+        待注册的映射ID。
 
         :param id: The id of this KeystoneCreateMappingRequest.
         :type: str

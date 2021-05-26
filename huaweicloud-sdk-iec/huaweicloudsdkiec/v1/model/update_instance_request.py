@@ -49,6 +49,7 @@ class UpdateInstanceRequest:
     def server_id(self):
         """Gets the server_id of this UpdateInstanceRequest.
 
+        边缘实例ID。
 
         :return: The server_id of this UpdateInstanceRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateInstanceRequest:
     def server_id(self, server_id):
         """Sets the server_id of this UpdateInstanceRequest.
 
+        边缘实例ID。
 
         :param server_id: The server_id of this UpdateInstanceRequest.
         :type: str

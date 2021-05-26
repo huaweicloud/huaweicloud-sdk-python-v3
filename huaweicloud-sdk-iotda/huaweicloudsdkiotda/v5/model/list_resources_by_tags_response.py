@@ -35,7 +35,7 @@ class ListResourcesByTagsResponse(SdkResponse):
     def __init__(self, resources=None, page=None):
         """ListResourcesByTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListResourcesByTagsResponse, self).__init__()
 
         self._resources = None
         self._page = None

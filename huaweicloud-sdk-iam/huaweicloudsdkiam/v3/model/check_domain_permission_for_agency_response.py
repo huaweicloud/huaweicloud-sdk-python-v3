@@ -31,7 +31,7 @@ class CheckDomainPermissionForAgencyResponse(SdkResponse):
     def __init__(self):
         """CheckDomainPermissionForAgencyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CheckDomainPermissionForAgencyResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

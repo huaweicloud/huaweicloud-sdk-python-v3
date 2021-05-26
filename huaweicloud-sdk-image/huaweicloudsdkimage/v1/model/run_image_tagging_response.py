@@ -33,7 +33,7 @@ class RunImageTaggingResponse(SdkResponse):
     def __init__(self, result=None):
         """RunImageTaggingResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RunImageTaggingResponse, self).__init__()
 
         self._result = None
         self.discriminator = None

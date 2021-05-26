@@ -50,6 +50,7 @@ class KeystoneValidateTokenRequest:
     def x_subject_token(self):
         """Gets the x_subject_token of this KeystoneValidateTokenRequest.
 
+        待校验的token。
 
         :return: The x_subject_token of this KeystoneValidateTokenRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class KeystoneValidateTokenRequest:
     def x_subject_token(self, x_subject_token):
         """Sets the x_subject_token of this KeystoneValidateTokenRequest.
 
+        待校验的token。
 
         :param x_subject_token: The x_subject_token of this KeystoneValidateTokenRequest.
         :type: str
@@ -70,6 +72,7 @@ class KeystoneValidateTokenRequest:
     def nocatalog(self):
         """Gets the nocatalog of this KeystoneValidateTokenRequest.
 
+        如果设置该参数，返回的响应体中将不显示catalog信息。任何非空字符串都将解释为true，并使该字段生效。
 
         :return: The nocatalog of this KeystoneValidateTokenRequest.
         :rtype: str
@@ -80,6 +83,7 @@ class KeystoneValidateTokenRequest:
     def nocatalog(self, nocatalog):
         """Sets the nocatalog of this KeystoneValidateTokenRequest.
 
+        如果设置该参数，返回的响应体中将不显示catalog信息。任何非空字符串都将解释为true，并使该字段生效。
 
         :param nocatalog: The nocatalog of this KeystoneValidateTokenRequest.
         :type: str

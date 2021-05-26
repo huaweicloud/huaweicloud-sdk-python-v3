@@ -48,6 +48,7 @@ class DeleteMfaDeviceRequest:
     def user_id(self):
         """Gets the user_id of this DeleteMfaDeviceRequest.
 
+        绑定MFA设备的IAM 用户ID。
 
         :return: The user_id of this DeleteMfaDeviceRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteMfaDeviceRequest:
     def user_id(self, user_id):
         """Sets the user_id of this DeleteMfaDeviceRequest.
 
+        绑定MFA设备的IAM 用户ID。
 
         :param user_id: The user_id of this DeleteMfaDeviceRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteMfaDeviceRequest:
     def serial_number(self):
         """Gets the serial_number of this DeleteMfaDeviceRequest.
 
+        MFA设备序列号。
 
         :return: The serial_number of this DeleteMfaDeviceRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteMfaDeviceRequest:
     def serial_number(self, serial_number):
         """Sets the serial_number of this DeleteMfaDeviceRequest.
 
+        MFA设备序列号。
 
         :param serial_number: The serial_number of this DeleteMfaDeviceRequest.
         :type: str

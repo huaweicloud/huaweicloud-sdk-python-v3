@@ -35,7 +35,7 @@ class KeystoneListUsersResponse(SdkResponse):
     def __init__(self, links=None, users=None):
         """KeystoneListUsersResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneListUsersResponse, self).__init__()
 
         self._links = None
         self._users = None

@@ -33,7 +33,7 @@ class CreatePublicIpResponse(SdkResponse):
     def __init__(self, publicip=None):
         """CreatePublicIpResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreatePublicIpResponse, self).__init__()
 
         self._publicip = None
         self.discriminator = None

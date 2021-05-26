@@ -44,6 +44,7 @@ class KeystoneDeleteIdentityProviderRequest:
     def id(self):
         """Gets the id of this KeystoneDeleteIdentityProviderRequest.
 
+        待删除的身份提供商ID。
 
         :return: The id of this KeystoneDeleteIdentityProviderRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class KeystoneDeleteIdentityProviderRequest:
     def id(self, id):
         """Sets the id of this KeystoneDeleteIdentityProviderRequest.
 
+        待删除的身份提供商ID。
 
         :param id: The id of this KeystoneDeleteIdentityProviderRequest.
         :type: str

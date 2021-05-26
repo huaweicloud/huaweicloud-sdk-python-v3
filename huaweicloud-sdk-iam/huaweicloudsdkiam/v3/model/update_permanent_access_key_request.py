@@ -49,6 +49,7 @@ class UpdatePermanentAccessKeyRequest:
     def access_key(self):
         """Gets the access_key of this UpdatePermanentAccessKeyRequest.
 
+        待修改的指定AK。
 
         :return: The access_key of this UpdatePermanentAccessKeyRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdatePermanentAccessKeyRequest:
     def access_key(self, access_key):
         """Sets the access_key of this UpdatePermanentAccessKeyRequest.
 
+        待修改的指定AK。
 
         :param access_key: The access_key of this UpdatePermanentAccessKeyRequest.
         :type: str

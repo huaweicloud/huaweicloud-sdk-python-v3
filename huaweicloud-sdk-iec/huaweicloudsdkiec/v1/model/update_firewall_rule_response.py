@@ -33,7 +33,7 @@ class UpdateFirewallRuleResponse(SdkResponse):
     def __init__(self, firewall=None):
         """UpdateFirewallRuleResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateFirewallRuleResponse, self).__init__()
 
         self._firewall = None
         self.discriminator = None

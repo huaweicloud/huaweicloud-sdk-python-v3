@@ -33,7 +33,7 @@ class CreateTemporaryAccessKeyByAgencyResponse(SdkResponse):
     def __init__(self, credential=None):
         """CreateTemporaryAccessKeyByAgencyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateTemporaryAccessKeyByAgencyResponse, self).__init__()
 
         self._credential = None
         self.discriminator = None

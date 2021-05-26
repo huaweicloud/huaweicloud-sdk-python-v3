@@ -33,7 +33,7 @@ class AddNicsResponse(SdkResponse):
     def __init__(self, job_id=None):
         """AddNicsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AddNicsResponse, self).__init__()
 
         self._job_id = None
         self.discriminator = None

@@ -39,7 +39,7 @@ class ShowDeviceGroupResponse(SdkResponse):
     def __init__(self, group_id=None, name=None, description=None, super_group_id=None):
         """ShowDeviceGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowDeviceGroupResponse, self).__init__()
 
         self._group_id = None
         self._name = None

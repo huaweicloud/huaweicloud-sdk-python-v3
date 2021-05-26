@@ -31,7 +31,7 @@ class CheckAllProjectsPermissionForAgencyResponse(SdkResponse):
     def __init__(self):
         """CheckAllProjectsPermissionForAgencyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CheckAllProjectsPermissionForAgencyResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

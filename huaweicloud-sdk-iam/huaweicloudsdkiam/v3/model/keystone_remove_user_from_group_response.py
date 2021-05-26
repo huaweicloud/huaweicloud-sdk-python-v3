@@ -31,7 +31,7 @@ class KeystoneRemoveUserFromGroupResponse(SdkResponse):
     def __init__(self):
         """KeystoneRemoveUserFromGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneRemoveUserFromGroupResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

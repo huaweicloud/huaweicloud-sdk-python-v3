@@ -33,7 +33,7 @@ class ListPermanentAccessKeysResponse(SdkResponse):
     def __init__(self, credentials=None):
         """ListPermanentAccessKeysResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListPermanentAccessKeysResponse, self).__init__()
 
         self._credentials = None
         self.discriminator = None

@@ -55,7 +55,7 @@ class ShowEdgeCloudResponse(SdkResponse):
     def __init__(self, id=None, name=None, description=None, coverage=None, failed_num=None, status=None, success_num=None, edge_regions=None, create_at=None, fail_reason=None, stacks=None, update_at=None):
         """ShowEdgeCloudResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowEdgeCloudResponse, self).__init__()
 
         self._id = None
         self._name = None

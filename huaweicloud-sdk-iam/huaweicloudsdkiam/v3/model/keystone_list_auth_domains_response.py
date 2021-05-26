@@ -35,7 +35,7 @@ class KeystoneListAuthDomainsResponse(SdkResponse):
     def __init__(self, domains=None, links=None):
         """KeystoneListAuthDomainsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneListAuthDomainsResponse, self).__init__()
 
         self._domains = None
         self._links = None

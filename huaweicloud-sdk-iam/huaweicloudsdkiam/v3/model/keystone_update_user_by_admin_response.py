@@ -33,7 +33,7 @@ class KeystoneUpdateUserByAdminResponse(SdkResponse):
     def __init__(self, user=None):
         """KeystoneUpdateUserByAdminResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneUpdateUserByAdminResponse, self).__init__()
 
         self._user = None
         self.discriminator = None

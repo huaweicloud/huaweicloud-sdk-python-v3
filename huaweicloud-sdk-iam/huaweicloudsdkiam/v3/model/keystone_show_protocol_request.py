@@ -48,6 +48,7 @@ class KeystoneShowProtocolRequest:
     def idp_id(self):
         """Gets the idp_id of this KeystoneShowProtocolRequest.
 
+        身份提供商ID。
 
         :return: The idp_id of this KeystoneShowProtocolRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class KeystoneShowProtocolRequest:
     def idp_id(self, idp_id):
         """Sets the idp_id of this KeystoneShowProtocolRequest.
 
+        身份提供商ID。
 
         :param idp_id: The idp_id of this KeystoneShowProtocolRequest.
         :type: str
@@ -68,6 +70,7 @@ class KeystoneShowProtocolRequest:
     def protocol_id(self):
         """Gets the protocol_id of this KeystoneShowProtocolRequest.
 
+        待查询的协议ID。
 
         :return: The protocol_id of this KeystoneShowProtocolRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class KeystoneShowProtocolRequest:
     def protocol_id(self, protocol_id):
         """Sets the protocol_id of this KeystoneShowProtocolRequest.
 
+        待查询的协议ID。
 
         :param protocol_id: The protocol_id of this KeystoneShowProtocolRequest.
         :type: str

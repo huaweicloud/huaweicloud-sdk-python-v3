@@ -37,7 +37,7 @@ class ShowBatchTaskResponse(SdkResponse):
     def __init__(self, batchtask=None, task_details=None, page=None):
         """ShowBatchTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowBatchTaskResponse, self).__init__()
 
         self._batchtask = None
         self._task_details = None

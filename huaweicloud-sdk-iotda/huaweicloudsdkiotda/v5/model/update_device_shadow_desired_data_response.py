@@ -35,7 +35,7 @@ class UpdateDeviceShadowDesiredDataResponse(SdkResponse):
     def __init__(self, device_id=None, shadow=None):
         """UpdateDeviceShadowDesiredDataResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateDeviceShadowDesiredDataResponse, self).__init__()
 
         self._device_id = None
         self._shadow = None

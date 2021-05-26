@@ -33,7 +33,7 @@ class KeystoneShowRegionResponse(SdkResponse):
     def __init__(self, region=None):
         """KeystoneShowRegionResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneShowRegionResponse, self).__init__()
 
         self._region = None
         self.discriminator = None

@@ -50,6 +50,7 @@ class KeystoneCreateUserTokenByPasswordAndMfaRequest:
     def nocatalog(self):
         """Gets the nocatalog of this KeystoneCreateUserTokenByPasswordAndMfaRequest.
 
+        如果设置该参数，返回的响应体中将不显示catalog信息。任何非空字符串都将解释为true，并使该字段生效。
 
         :return: The nocatalog of this KeystoneCreateUserTokenByPasswordAndMfaRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class KeystoneCreateUserTokenByPasswordAndMfaRequest:
     def nocatalog(self, nocatalog):
         """Sets the nocatalog of this KeystoneCreateUserTokenByPasswordAndMfaRequest.
 
+        如果设置该参数，返回的响应体中将不显示catalog信息。任何非空字符串都将解释为true，并使该字段生效。
 
         :param nocatalog: The nocatalog of this KeystoneCreateUserTokenByPasswordAndMfaRequest.
         :type: str

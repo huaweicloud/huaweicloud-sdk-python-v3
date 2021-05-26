@@ -31,7 +31,7 @@ class DeleteKeypairResponse(SdkResponse):
     def __init__(self):
         """DeleteKeypairResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteKeypairResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

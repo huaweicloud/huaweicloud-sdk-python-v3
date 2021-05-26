@@ -60,6 +60,7 @@ class ListPublicIpsRequest:
     def limit(self):
         """Gets the limit of this ListPublicIpsRequest.
 
+        查询返回弹性IP列表数量。取值范围：0~1000。
 
         :return: The limit of this ListPublicIpsRequest.
         :rtype: int
@@ -70,6 +71,7 @@ class ListPublicIpsRequest:
     def limit(self, limit):
         """Sets the limit of this ListPublicIpsRequest.
 
+        查询返回弹性IP列表数量。取值范围：0~1000。
 
         :param limit: The limit of this ListPublicIpsRequest.
         :type: int
@@ -80,6 +82,7 @@ class ListPublicIpsRequest:
     def offset(self):
         """Gets the offset of this ListPublicIpsRequest.
 
+        查询的偏移量。
 
         :return: The offset of this ListPublicIpsRequest.
         :rtype: int
@@ -90,6 +93,7 @@ class ListPublicIpsRequest:
     def offset(self, offset):
         """Sets the offset of this ListPublicIpsRequest.
 
+        查询的偏移量。
 
         :param offset: The offset of this ListPublicIpsRequest.
         :type: int
@@ -100,6 +104,7 @@ class ListPublicIpsRequest:
     def site_id(self):
         """Gets the site_id of this ListPublicIpsRequest.
 
+        站点ID。
 
         :return: The site_id of this ListPublicIpsRequest.
         :rtype: str
@@ -110,6 +115,7 @@ class ListPublicIpsRequest:
     def site_id(self, site_id):
         """Sets the site_id of this ListPublicIpsRequest.
 
+        站点ID。
 
         :param site_id: The site_id of this ListPublicIpsRequest.
         :type: str
@@ -120,6 +126,7 @@ class ListPublicIpsRequest:
     def port_id(self):
         """Gets the port_id of this ListPublicIpsRequest.
 
+        端口ID
 
         :return: The port_id of this ListPublicIpsRequest.
         :rtype: str
@@ -130,6 +137,7 @@ class ListPublicIpsRequest:
     def port_id(self, port_id):
         """Sets the port_id of this ListPublicIpsRequest.
 
+        端口ID
 
         :param port_id: The port_id of this ListPublicIpsRequest.
         :type: str

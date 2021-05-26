@@ -93,7 +93,7 @@ class ShowImageResponse(SdkResponse):
     def __init__(self, id=None, name=None, status=None, disk_format=None, min_disk=None, min_ram=None, owner=None, protected=None, visibility=None, created_at=None, updated_at=None, _self=None, deleted=None, virtual_env_type=None, deleted_at=None, relation_job_id=None, imagetype=None, platform=None, os_type=None, os_version=None, isregistered=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_ascend_310=None, support_kvm_hi1822_hiovs=None, support_arm=None, hw_firmware_type=None, data_source=None, support_gpu_t4=None, origin_region_info=None, edge_region_info=None):
         """ShowImageResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowImageResponse, self).__init__()
 
         self._id = None
         self._name = None

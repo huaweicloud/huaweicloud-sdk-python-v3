@@ -61,6 +61,7 @@ class KeystoneListUsersRequest:
     def domain_id(self):
         """Gets the domain_id of this KeystoneListUsersRequest.
 
+        IAM用户所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The domain_id of this KeystoneListUsersRequest.
         :rtype: str
@@ -71,6 +72,7 @@ class KeystoneListUsersRequest:
     def domain_id(self, domain_id):
         """Sets the domain_id of this KeystoneListUsersRequest.
 
+        IAM用户所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this KeystoneListUsersRequest.
         :type: str
@@ -81,6 +83,7 @@ class KeystoneListUsersRequest:
     def enabled(self):
         """Gets the enabled of this KeystoneListUsersRequest.
 
+        是否启IAM用户，true为启用，false为停用，默认为true。
 
         :return: The enabled of this KeystoneListUsersRequest.
         :rtype: bool
@@ -91,6 +94,7 @@ class KeystoneListUsersRequest:
     def enabled(self, enabled):
         """Sets the enabled of this KeystoneListUsersRequest.
 
+        是否启IAM用户，true为启用，false为停用，默认为true。
 
         :param enabled: The enabled of this KeystoneListUsersRequest.
         :type: bool
@@ -101,6 +105,7 @@ class KeystoneListUsersRequest:
     def name(self):
         """Gets the name of this KeystoneListUsersRequest.
 
+        IAM用户名。
 
         :return: The name of this KeystoneListUsersRequest.
         :rtype: str
@@ -111,6 +116,7 @@ class KeystoneListUsersRequest:
     def name(self, name):
         """Sets the name of this KeystoneListUsersRequest.
 
+        IAM用户名。
 
         :param name: The name of this KeystoneListUsersRequest.
         :type: str
@@ -121,6 +127,7 @@ class KeystoneListUsersRequest:
     def password_expires_at(self):
         """Gets the password_expires_at of this KeystoneListUsersRequest.
 
+        密码过期时间，格式为：password_expires_at={operator}:{timestamp}。timestamp格式为：YYYY-MM-DDTHH:mm:ssZ。示例：    ``` password_expires_at=lt:2016-12-08T22:02:00Z ```   > - operator取值范围：lt，lte，gt，gte，eq，neq。   > - lt：过期时间小于timestamp。   > - lte：过期时间小于等于timestamp。   > - gt：过期时间大于timestamp。   > - gte：过期时间大于等于timestamp。   > - eq：过期时间等于timestamp。   > - neq：过期时间不等于timestamp。
 
         :return: The password_expires_at of this KeystoneListUsersRequest.
         :rtype: str
@@ -131,6 +138,7 @@ class KeystoneListUsersRequest:
     def password_expires_at(self, password_expires_at):
         """Sets the password_expires_at of this KeystoneListUsersRequest.
 
+        密码过期时间，格式为：password_expires_at={operator}:{timestamp}。timestamp格式为：YYYY-MM-DDTHH:mm:ssZ。示例：    ``` password_expires_at=lt:2016-12-08T22:02:00Z ```   > - operator取值范围：lt，lte，gt，gte，eq，neq。   > - lt：过期时间小于timestamp。   > - lte：过期时间小于等于timestamp。   > - gt：过期时间大于timestamp。   > - gte：过期时间大于等于timestamp。   > - eq：过期时间等于timestamp。   > - neq：过期时间不等于timestamp。
 
         :param password_expires_at: The password_expires_at of this KeystoneListUsersRequest.
         :type: str

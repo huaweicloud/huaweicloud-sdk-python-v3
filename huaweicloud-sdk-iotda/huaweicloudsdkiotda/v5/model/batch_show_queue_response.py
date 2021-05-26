@@ -35,7 +35,7 @@ class BatchShowQueueResponse(SdkResponse):
     def __init__(self, queues=None, page=None):
         """BatchShowQueueResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchShowQueueResponse, self).__init__()
 
         self._queues = None
         self._page = None

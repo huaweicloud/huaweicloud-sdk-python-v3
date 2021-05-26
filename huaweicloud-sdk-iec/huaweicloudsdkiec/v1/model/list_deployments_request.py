@@ -65,6 +65,7 @@ class ListDeploymentsRequest:
     def offset(self):
         """Gets the offset of this ListDeploymentsRequest.
 
+        偏移量。 当前偏移量，默认为0。
 
         :return: The offset of this ListDeploymentsRequest.
         :rtype: int
@@ -75,6 +76,7 @@ class ListDeploymentsRequest:
     def offset(self, offset):
         """Sets the offset of this ListDeploymentsRequest.
 
+        偏移量。 当前偏移量，默认为0。
 
         :param offset: The offset of this ListDeploymentsRequest.
         :type: int
@@ -85,6 +87,7 @@ class ListDeploymentsRequest:
     def limit(self):
         """Gets the limit of this ListDeploymentsRequest.
 
+        查询返回部署计划列表当前页面的数量。
 
         :return: The limit of this ListDeploymentsRequest.
         :rtype: int
@@ -95,6 +98,7 @@ class ListDeploymentsRequest:
     def limit(self, limit):
         """Sets the limit of this ListDeploymentsRequest.
 
+        查询返回部署计划列表当前页面的数量。
 
         :param limit: The limit of this ListDeploymentsRequest.
         :type: int
@@ -105,6 +109,7 @@ class ListDeploymentsRequest:
     def status(self):
         """Gets the status of this ListDeploymentsRequest.
 
+        查询条件，部署计划状态，现只包含如下值： - open:部署计划处于未执行状态，可执行部署计划进行部署 - closed:部署计划已关闭，不可部署。
 
         :return: The status of this ListDeploymentsRequest.
         :rtype: str
@@ -115,6 +120,7 @@ class ListDeploymentsRequest:
     def status(self, status):
         """Sets the status of this ListDeploymentsRequest.
 
+        查询条件，部署计划状态，现只包含如下值： - open:部署计划处于未执行状态，可执行部署计划进行部署 - closed:部署计划已关闭，不可部署。
 
         :param status: The status of this ListDeploymentsRequest.
         :type: str
@@ -125,6 +131,7 @@ class ListDeploymentsRequest:
     def id(self):
         """Gets the id of this ListDeploymentsRequest.
 
+        查询条件，部署计划ID。
 
         :return: The id of this ListDeploymentsRequest.
         :rtype: str
@@ -135,6 +142,7 @@ class ListDeploymentsRequest:
     def id(self, id):
         """Sets the id of this ListDeploymentsRequest.
 
+        查询条件，部署计划ID。
 
         :param id: The id of this ListDeploymentsRequest.
         :type: str
@@ -145,6 +153,7 @@ class ListDeploymentsRequest:
     def edgecloud_id(self):
         """Gets the edgecloud_id of this ListDeploymentsRequest.
 
+        查询条件，边缘业务ID。
 
         :return: The edgecloud_id of this ListDeploymentsRequest.
         :rtype: str
@@ -155,6 +164,7 @@ class ListDeploymentsRequest:
     def edgecloud_id(self, edgecloud_id):
         """Sets the edgecloud_id of this ListDeploymentsRequest.
 
+        查询条件，边缘业务ID。
 
         :param edgecloud_id: The edgecloud_id of this ListDeploymentsRequest.
         :type: str

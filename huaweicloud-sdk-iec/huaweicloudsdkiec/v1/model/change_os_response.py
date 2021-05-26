@@ -33,7 +33,7 @@ class ChangeOsResponse(SdkResponse):
     def __init__(self, job_id=None):
         """ChangeOsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ChangeOsResponse, self).__init__()
 
         self._job_id = None
         self.discriminator = None

@@ -44,6 +44,7 @@ class DeletePortRequest:
     def port_id(self):
         """Gets the port_id of this DeletePortRequest.
 
+        端口ID。
 
         :return: The port_id of this DeletePortRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeletePortRequest:
     def port_id(self, port_id):
         """Sets the port_id of this DeletePortRequest.
 
+        端口ID。
 
         :param port_id: The port_id of this DeletePortRequest.
         :type: str

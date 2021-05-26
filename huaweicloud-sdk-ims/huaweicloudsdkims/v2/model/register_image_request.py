@@ -49,6 +49,7 @@ class RegisterImageRequest:
     def image_id(self):
         """Gets the image_id of this RegisterImageRequest.
 
+        镜像ID。 image_id为用户调用创建镜像元数据接口所创建出来镜像的id，使用其他方式创建的镜像id会导致注册失败。 注册接口调用成功后，请根据镜像id查询镜像的状态。镜像状态变为active表示镜像注册成功，详情请参见查询镜像详情（OpenStack原生）。
 
         :return: The image_id of this RegisterImageRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class RegisterImageRequest:
     def image_id(self, image_id):
         """Sets the image_id of this RegisterImageRequest.
 
+        镜像ID。 image_id为用户调用创建镜像元数据接口所创建出来镜像的id，使用其他方式创建的镜像id会导致注册失败。 注册接口调用成功后，请根据镜像id查询镜像的状态。镜像状态变为active表示镜像注册成功，详情请参见查询镜像详情（OpenStack原生）。
 
         :param image_id: The image_id of this RegisterImageRequest.
         :type: str

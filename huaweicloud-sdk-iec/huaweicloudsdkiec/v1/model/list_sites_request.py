@@ -80,6 +80,7 @@ class ListSitesRequest:
     def limit(self):
         """Gets the limit of this ListSitesRequest.
 
+        查询返回边缘站点列表当前页面的数量。 取值范围：0~1000。
 
         :return: The limit of this ListSitesRequest.
         :rtype: int
@@ -90,6 +91,7 @@ class ListSitesRequest:
     def limit(self, limit):
         """Sets the limit of this ListSitesRequest.
 
+        查询返回边缘站点列表当前页面的数量。 取值范围：0~1000。
 
         :param limit: The limit of this ListSitesRequest.
         :type: int
@@ -100,6 +102,7 @@ class ListSitesRequest:
     def offset(self):
         """Gets the offset of this ListSitesRequest.
 
+        查询的偏移量。默认为0。
 
         :return: The offset of this ListSitesRequest.
         :rtype: int
@@ -110,6 +113,7 @@ class ListSitesRequest:
     def offset(self, offset):
         """Sets the offset of this ListSitesRequest.
 
+        查询的偏移量。默认为0。
 
         :param offset: The offset of this ListSitesRequest.
         :type: int
@@ -120,6 +124,7 @@ class ListSitesRequest:
     def id(self):
         """Gets the id of this ListSitesRequest.
 
+        查询条件，站点ID。
 
         :return: The id of this ListSitesRequest.
         :rtype: str
@@ -130,6 +135,7 @@ class ListSitesRequest:
     def id(self, id):
         """Sets the id of this ListSitesRequest.
 
+        查询条件，站点ID。
 
         :param id: The id of this ListSitesRequest.
         :type: str
@@ -140,6 +146,7 @@ class ListSitesRequest:
     def area(self):
         """Gets the area of this ListSitesRequest.
 
+        边缘实例所在大区。   大小写通用，皆支持。 支持多个查询，中间使用','分隔。
 
         :return: The area of this ListSitesRequest.
         :rtype: str
@@ -150,6 +157,7 @@ class ListSitesRequest:
     def area(self, area):
         """Sets the area of this ListSitesRequest.
 
+        边缘实例所在大区。   大小写通用，皆支持。 支持多个查询，中间使用','分隔。
 
         :param area: The area of this ListSitesRequest.
         :type: str
@@ -160,6 +168,7 @@ class ListSitesRequest:
     def province(self):
         """Gets the province of this ListSitesRequest.
 
+        边缘实例所在省份。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :return: The province of this ListSitesRequest.
         :rtype: str
@@ -170,6 +179,7 @@ class ListSitesRequest:
     def province(self, province):
         """Sets the province of this ListSitesRequest.
 
+        边缘实例所在省份。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :param province: The province of this ListSitesRequest.
         :type: str
@@ -180,6 +190,7 @@ class ListSitesRequest:
     def city(self):
         """Gets the city of this ListSitesRequest.
 
+        边缘实例所在城市。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :return: The city of this ListSitesRequest.
         :rtype: str
@@ -190,6 +201,7 @@ class ListSitesRequest:
     def city(self, city):
         """Sets the city of this ListSitesRequest.
 
+        边缘实例所在城市。  大小写通用，皆支持。 支持多个查询，中间使用“,”分隔。
 
         :param city: The city of this ListSitesRequest.
         :type: str
@@ -200,6 +212,7 @@ class ListSitesRequest:
     def flavor(self):
         """Gets the flavor of this ListSitesRequest.
 
+        边缘实例规格。
 
         :return: The flavor of this ListSitesRequest.
         :rtype: str
@@ -210,6 +223,7 @@ class ListSitesRequest:
     def flavor(self, flavor):
         """Sets the flavor of this ListSitesRequest.
 
+        边缘实例规格。
 
         :param flavor: The flavor of this ListSitesRequest.
         :type: str
@@ -220,6 +234,7 @@ class ListSitesRequest:
     def volume_type(self):
         """Gets the volume_type of this ListSitesRequest.
 
+        过滤支持磁盘类型的站点，多个类型之间用“,”分割。
 
         :return: The volume_type of this ListSitesRequest.
         :rtype: str
@@ -230,6 +245,7 @@ class ListSitesRequest:
     def volume_type(self, volume_type):
         """Sets the volume_type of this ListSitesRequest.
 
+        过滤支持磁盘类型的站点，多个类型之间用“,”分割。
 
         :param volume_type: The volume_type of this ListSitesRequest.
         :type: str

@@ -44,6 +44,7 @@ class ShowInstanceRequest:
     def server_id(self):
         """Gets the server_id of this ShowInstanceRequest.
 
+        边缘实例ID。
 
         :return: The server_id of this ShowInstanceRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowInstanceRequest:
     def server_id(self, server_id):
         """Sets the server_id of this ShowInstanceRequest.
 
+        边缘实例ID。
 
         :param server_id: The server_id of this ShowInstanceRequest.
         :type: str

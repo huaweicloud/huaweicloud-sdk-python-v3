@@ -23,6 +23,7 @@ class CreateUserOption:
     sensitive_list = []
 
     openapi_types = {
+        'access_mode': 'str',
         'name': 'str',
         'domain_id': 'str',
         'password': 'str',
@@ -37,6 +38,7 @@ class CreateUserOption:
     }
 
     attribute_map = {
+        'access_mode': 'access_mode',
         'name': 'name',
         'domain_id': 'domain_id',
         'password': 'password',
@@ -50,11 +52,12 @@ class CreateUserOption:
         'description': 'description'
     }
 
-    def __init__(self, name=None, domain_id=None, password=None, email=None, areacode=None, phone=None, enabled=None, pwd_status=None, xuser_type=None, xuser_id=None, description=None):
+    def __init__(self, access_mode=None, name=None, domain_id=None, password=None, email=None, areacode=None, phone=None, enabled=None, pwd_status=None, xuser_type=None, xuser_id=None, description=None):
         """CreateUserOption - a model defined in huaweicloud sdk"""
         
         
 
+        self._access_mode = None
         self._name = None
         self._domain_id = None
         self._password = None
@@ -68,6 +71,8 @@ class CreateUserOption:
         self._description = None
         self.discriminator = None
 
+        if access_mode is not None:
+            self.access_mode = access_mode
         self.name = name
         self.domain_id = domain_id
         if password is not None:
@@ -88,6 +93,28 @@ class CreateUserOption:
             self.xuser_id = xuser_id
         if description is not None:
             self.description = description
+
+    @property
+    def access_mode(self):
+        """Gets the access_mode of this CreateUserOption.
+
+        IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
+
+        :return: The access_mode of this CreateUserOption.
+        :rtype: str
+        """
+        return self._access_mode
+
+    @access_mode.setter
+    def access_mode(self, access_mode):
+        """Sets the access_mode of this CreateUserOption.
+
+        IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
+
+        :param access_mode: The access_mode of this CreateUserOption.
+        :type: str
+        """
+        self._access_mode = access_mode
 
     @property
     def name(self):

@@ -44,6 +44,7 @@ class ShowPermanentAccessKeyRequest:
     def access_key(self):
         """Gets the access_key of this ShowPermanentAccessKeyRequest.
 
+        待查询的指定AK。
 
         :return: The access_key of this ShowPermanentAccessKeyRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowPermanentAccessKeyRequest:
     def access_key(self, access_key):
         """Sets the access_key of this ShowPermanentAccessKeyRequest.
 
+        待查询的指定AK。
 
         :param access_key: The access_key of this ShowPermanentAccessKeyRequest.
         :type: str

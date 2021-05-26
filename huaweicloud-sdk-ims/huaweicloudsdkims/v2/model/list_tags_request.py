@@ -115,6 +115,7 @@ class ListTagsRequest:
     def limit(self):
         """Gets the limit of this ListTagsRequest.
 
+        用于分页，表示查询几条记录，取值为整数，默认为所有。
 
         :return: The limit of this ListTagsRequest.
         :rtype: int
@@ -125,6 +126,7 @@ class ListTagsRequest:
     def limit(self, limit):
         """Sets the limit of this ListTagsRequest.
 
+        用于分页，表示查询几条记录，取值为整数，默认为所有。
 
         :param limit: The limit of this ListTagsRequest.
         :type: int
@@ -135,6 +137,7 @@ class ListTagsRequest:
     def page(self):
         """Gets the page of this ListTagsRequest.
 
+        页码，表示需要查询第几页的数据。默认值为1。
 
         :return: The page of this ListTagsRequest.
         :rtype: int
@@ -145,6 +148,7 @@ class ListTagsRequest:
     def page(self, page):
         """Sets the page of this ListTagsRequest.
 
+        页码，表示需要查询第几页的数据。默认值为1。
 
         :param page: The page of this ListTagsRequest.
         :type: int
@@ -155,6 +159,7 @@ class ListTagsRequest:
     def imagetype(self):
         """Gets the imagetype of this ListTagsRequest.
 
+        镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared
 
         :return: The imagetype of this ListTagsRequest.
         :rtype: str
@@ -165,6 +170,7 @@ class ListTagsRequest:
     def imagetype(self, imagetype):
         """Sets the imagetype of this ListTagsRequest.
 
+        镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared
 
         :param imagetype: The imagetype of this ListTagsRequest.
         :type: str
@@ -175,6 +181,7 @@ class ListTagsRequest:
     def id(self):
         """Gets the id of this ListTagsRequest.
 
+        镜像ID。
 
         :return: The id of this ListTagsRequest.
         :rtype: str
@@ -185,6 +192,7 @@ class ListTagsRequest:
     def id(self, id):
         """Sets the id of this ListTagsRequest.
 
+        镜像ID。
 
         :param id: The id of this ListTagsRequest.
         :type: str
@@ -195,6 +203,7 @@ class ListTagsRequest:
     def status(self):
         """Gets the status of this ListTagsRequest.
 
+        镜像状态。取值如下： queued：表示镜像元数据已经创建成功，等待上传镜像文件。 saving：表示镜像正在上传文件到后端存储。 deleted：表示镜像已经删除。 killed：表示镜像上传错误。 active：表示镜像可以正常使用。
 
         :return: The status of this ListTagsRequest.
         :rtype: str
@@ -205,6 +214,7 @@ class ListTagsRequest:
     def status(self, status):
         """Sets the status of this ListTagsRequest.
 
+        镜像状态。取值如下： queued：表示镜像元数据已经创建成功，等待上传镜像文件。 saving：表示镜像正在上传文件到后端存储。 deleted：表示镜像已经删除。 killed：表示镜像上传错误。 active：表示镜像可以正常使用。
 
         :param status: The status of this ListTagsRequest.
         :type: str
@@ -215,6 +225,7 @@ class ListTagsRequest:
     def name(self):
         """Gets the name of this ListTagsRequest.
 
+        镜像名称。
 
         :return: The name of this ListTagsRequest.
         :rtype: str
@@ -225,6 +236,7 @@ class ListTagsRequest:
     def name(self, name):
         """Sets the name of this ListTagsRequest.
 
+        镜像名称。
 
         :param name: The name of this ListTagsRequest.
         :type: str
@@ -235,6 +247,7 @@ class ListTagsRequest:
     def min_disk(self):
         """Gets the min_disk of this ListTagsRequest.
 
+        镜像运行需要的最小磁盘，单位为GB 。
 
         :return: The min_disk of this ListTagsRequest.
         :rtype: int
@@ -245,6 +258,7 @@ class ListTagsRequest:
     def min_disk(self, min_disk):
         """Sets the min_disk of this ListTagsRequest.
 
+        镜像运行需要的最小磁盘，单位为GB 。
 
         :param min_disk: The min_disk of this ListTagsRequest.
         :type: int
@@ -255,6 +269,7 @@ class ListTagsRequest:
     def platform(self):
         """Gets the platform of this ListTagsRequest.
 
+        镜像平台分类。
 
         :return: The platform of this ListTagsRequest.
         :rtype: str
@@ -265,6 +280,7 @@ class ListTagsRequest:
     def platform(self, platform):
         """Sets the platform of this ListTagsRequest.
 
+        镜像平台分类。
 
         :param platform: The platform of this ListTagsRequest.
         :type: str
@@ -275,6 +291,7 @@ class ListTagsRequest:
     def os_type(self):
         """Gets the os_type of this ListTagsRequest.
 
+        镜像系统类型，取值如下：Linux,Windows,Other
 
         :return: The os_type of this ListTagsRequest.
         :rtype: str
@@ -285,6 +302,7 @@ class ListTagsRequest:
     def os_type(self, os_type):
         """Sets the os_type of this ListTagsRequest.
 
+        镜像系统类型，取值如下：Linux,Windows,Other
 
         :param os_type: The os_type of this ListTagsRequest.
         :type: str
@@ -295,6 +313,7 @@ class ListTagsRequest:
     def member_status(self):
         """Gets the member_status of this ListTagsRequest.
 
+        成员状态。目前取值有accepted、rejected、pending。
 
         :return: The member_status of this ListTagsRequest.
         :rtype: str
@@ -305,6 +324,7 @@ class ListTagsRequest:
     def member_status(self, member_status):
         """Sets the member_status of this ListTagsRequest.
 
+        成员状态。目前取值有accepted、rejected、pending。
 
         :param member_status: The member_status of this ListTagsRequest.
         :type: str
@@ -315,6 +335,7 @@ class ListTagsRequest:
     def virtual_env_type(self):
         """Gets the virtual_env_type of this ListTagsRequest.
 
+        镜像使用环境类型：FusionCompute、Ironic、DataImage。
 
         :return: The virtual_env_type of this ListTagsRequest.
         :rtype: str
@@ -325,6 +346,7 @@ class ListTagsRequest:
     def virtual_env_type(self, virtual_env_type):
         """Sets the virtual_env_type of this ListTagsRequest.
 
+        镜像使用环境类型：FusionCompute、Ironic、DataImage。
 
         :param virtual_env_type: The virtual_env_type of this ListTagsRequest.
         :type: str
@@ -335,6 +357,7 @@ class ListTagsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListTagsRequest.
 
+        表示查询某个企业项目下的镜像。
 
         :return: The enterprise_project_id of this ListTagsRequest.
         :rtype: str
@@ -345,6 +368,7 @@ class ListTagsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListTagsRequest.
 
+        表示查询某个企业项目下的镜像。
 
         :param enterprise_project_id: The enterprise_project_id of this ListTagsRequest.
         :type: str
@@ -355,6 +379,7 @@ class ListTagsRequest:
     def architecture(self):
         """Gets the architecture of this ListTagsRequest.
 
+        镜像架构类型。取值包括：x86，arm
 
         :return: The architecture of this ListTagsRequest.
         :rtype: str
@@ -365,6 +390,7 @@ class ListTagsRequest:
     def architecture(self, architecture):
         """Sets the architecture of this ListTagsRequest.
 
+        镜像架构类型。取值包括：x86，arm
 
         :param architecture: The architecture of this ListTagsRequest.
         :type: str
@@ -375,6 +401,7 @@ class ListTagsRequest:
     def created_at(self):
         """Gets the created_at of this ListTagsRequest.
 
+        镜像创建时间。支持按照时间点过滤查询，取值格式为“操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询创建时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： created_at=gt:2018-10-28T10:00:00Z
 
         :return: The created_at of this ListTagsRequest.
         :rtype: str
@@ -385,6 +412,7 @@ class ListTagsRequest:
     def created_at(self, created_at):
         """Sets the created_at of this ListTagsRequest.
 
+        镜像创建时间。支持按照时间点过滤查询，取值格式为“操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询创建时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： created_at=gt:2018-10-28T10:00:00Z
 
         :param created_at: The created_at of this ListTagsRequest.
         :type: str
@@ -395,6 +423,7 @@ class ListTagsRequest:
     def updated_at(self):
         """Gets the updated_at of this ListTagsRequest.
 
+        镜像修改时间。支持按照时间点过滤查询，取值格式为“ 操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询修改时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： updated_at=gt:2018-10-28T10:00:00Z
 
         :return: The updated_at of this ListTagsRequest.
         :rtype: str
@@ -405,6 +434,7 @@ class ListTagsRequest:
     def updated_at(self, updated_at):
         """Sets the updated_at of this ListTagsRequest.
 
+        镜像修改时间。支持按照时间点过滤查询，取值格式为“ 操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询修改时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： updated_at=gt:2018-10-28T10:00:00Z
 
         :param updated_at: The updated_at of this ListTagsRequest.
         :type: str

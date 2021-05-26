@@ -44,6 +44,7 @@ class KeystoneShowRegionRequest:
     def region_id(self):
         """Gets the region_id of this KeystoneShowRegionRequest.
 
+        待查询的区域ID。可以使用[查询区域列表](https://support.huaweicloud.com/api-iam/iam_05_0001.html)接口获取，控制台获取方法请参见：[获取区域ID](https://console.huaweicloud.com/iam/?agencyId=d15f57bd355d4514bd9618bd648dd432®ion=cn-east-2&locale=zh-cn#/iam/projects)
 
         :return: The region_id of this KeystoneShowRegionRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class KeystoneShowRegionRequest:
     def region_id(self, region_id):
         """Sets the region_id of this KeystoneShowRegionRequest.
 
+        待查询的区域ID。可以使用[查询区域列表](https://support.huaweicloud.com/api-iam/iam_05_0001.html)接口获取，控制台获取方法请参见：[获取区域ID](https://console.huaweicloud.com/iam/?agencyId=d15f57bd355d4514bd9618bd648dd432®ion=cn-east-2&locale=zh-cn#/iam/projects)
 
         :param region_id: The region_id of this KeystoneShowRegionRequest.
         :type: str

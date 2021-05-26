@@ -48,6 +48,7 @@ class GlanceDeleteImageMemberRequest:
     def image_id(self):
         """Gets the image_id of this GlanceDeleteImageMemberRequest.
 
+        镜像id
 
         :return: The image_id of this GlanceDeleteImageMemberRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class GlanceDeleteImageMemberRequest:
     def image_id(self, image_id):
         """Sets the image_id of this GlanceDeleteImageMemberRequest.
 
+        镜像id
 
         :param image_id: The image_id of this GlanceDeleteImageMemberRequest.
         :type: str
@@ -68,6 +70,7 @@ class GlanceDeleteImageMemberRequest:
     def member_id(self):
         """Gets the member_id of this GlanceDeleteImageMemberRequest.
 
+        成员id
 
         :return: The member_id of this GlanceDeleteImageMemberRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class GlanceDeleteImageMemberRequest:
     def member_id(self, member_id):
         """Sets the member_id of this GlanceDeleteImageMemberRequest.
 
+        成员id
 
         :param member_id: The member_id of this GlanceDeleteImageMemberRequest.
         :type: str

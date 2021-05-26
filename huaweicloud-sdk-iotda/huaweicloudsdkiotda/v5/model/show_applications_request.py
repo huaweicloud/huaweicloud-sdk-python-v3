@@ -50,6 +50,7 @@ class ShowApplicationsRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowApplicationsRequest.
 
+        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :return: The instance_id of this ShowApplicationsRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class ShowApplicationsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowApplicationsRequest.
 
+        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this ShowApplicationsRequest.
         :type: str
@@ -70,6 +72,7 @@ class ShowApplicationsRequest:
     def default_app(self):
         """Gets the default_app of this ShowApplicationsRequest.
 
+        默认资源空间标识，不携带则查询所有资源空间。 - true：查询默认资源空间。 - false：查询非默认资源空间。 
 
         :return: The default_app of this ShowApplicationsRequest.
         :rtype: bool
@@ -80,6 +83,7 @@ class ShowApplicationsRequest:
     def default_app(self, default_app):
         """Sets the default_app of this ShowApplicationsRequest.
 
+        默认资源空间标识，不携带则查询所有资源空间。 - true：查询默认资源空间。 - false：查询非默认资源空间。 
 
         :param default_app: The default_app of this ShowApplicationsRequest.
         :type: bool

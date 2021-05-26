@@ -33,7 +33,7 @@ class FreezeDeviceResponse(SdkResponse):
     def __init__(self, body=None):
         """FreezeDeviceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(FreezeDeviceResponse, self).__init__()
 
         self._body = None
         self.discriminator = None

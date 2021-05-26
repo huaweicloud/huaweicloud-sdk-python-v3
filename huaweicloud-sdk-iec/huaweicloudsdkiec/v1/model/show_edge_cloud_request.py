@@ -44,6 +44,7 @@ class ShowEdgeCloudRequest:
     def edgecloud_id(self):
         """Gets the edgecloud_id of this ShowEdgeCloudRequest.
 
+        边缘业务ID。
 
         :return: The edgecloud_id of this ShowEdgeCloudRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowEdgeCloudRequest:
     def edgecloud_id(self, edgecloud_id):
         """Sets the edgecloud_id of this ShowEdgeCloudRequest.
 
+        边缘业务ID。
 
         :param edgecloud_id: The edgecloud_id of this ShowEdgeCloudRequest.
         :type: str

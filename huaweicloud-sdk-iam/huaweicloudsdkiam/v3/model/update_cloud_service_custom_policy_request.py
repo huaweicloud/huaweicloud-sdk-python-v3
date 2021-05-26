@@ -49,6 +49,7 @@ class UpdateCloudServiceCustomPolicyRequest:
     def role_id(self):
         """Gets the role_id of this UpdateCloudServiceCustomPolicyRequest.
 
+        待修改的自定义策略ID，获取方式请参见：[自定义策略ID](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=ListCustomPolicies)。
 
         :return: The role_id of this UpdateCloudServiceCustomPolicyRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateCloudServiceCustomPolicyRequest:
     def role_id(self, role_id):
         """Sets the role_id of this UpdateCloudServiceCustomPolicyRequest.
 
+        待修改的自定义策略ID，获取方式请参见：[自定义策略ID](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=ListCustomPolicies)。
 
         :param role_id: The role_id of this UpdateCloudServiceCustomPolicyRequest.
         :type: str

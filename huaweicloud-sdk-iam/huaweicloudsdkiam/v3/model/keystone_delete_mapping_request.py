@@ -44,6 +44,7 @@ class KeystoneDeleteMappingRequest:
     def id(self):
         """Gets the id of this KeystoneDeleteMappingRequest.
 
+        待删除的映射ID。
 
         :return: The id of this KeystoneDeleteMappingRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class KeystoneDeleteMappingRequest:
     def id(self, id):
         """Sets the id of this KeystoneDeleteMappingRequest.
 
+        待删除的映射ID。
 
         :param id: The id of this KeystoneDeleteMappingRequest.
         :type: str

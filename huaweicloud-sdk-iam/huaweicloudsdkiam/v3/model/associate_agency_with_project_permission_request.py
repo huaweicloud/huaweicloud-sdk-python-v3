@@ -52,6 +52,7 @@ class AssociateAgencyWithProjectPermissionRequest:
     def project_id(self):
         """Gets the project_id of this AssociateAgencyWithProjectPermissionRequest.
 
+        委托方的项目ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The project_id of this AssociateAgencyWithProjectPermissionRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class AssociateAgencyWithProjectPermissionRequest:
     def project_id(self, project_id):
         """Sets the project_id of this AssociateAgencyWithProjectPermissionRequest.
 
+        委托方的项目ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param project_id: The project_id of this AssociateAgencyWithProjectPermissionRequest.
         :type: str
@@ -72,6 +74,7 @@ class AssociateAgencyWithProjectPermissionRequest:
     def agency_id(self):
         """Gets the agency_id of this AssociateAgencyWithProjectPermissionRequest.
 
+        委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The agency_id of this AssociateAgencyWithProjectPermissionRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class AssociateAgencyWithProjectPermissionRequest:
     def agency_id(self, agency_id):
         """Sets the agency_id of this AssociateAgencyWithProjectPermissionRequest.
 
+        委托ID，获取方式请参见：[获取委托名、委托ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param agency_id: The agency_id of this AssociateAgencyWithProjectPermissionRequest.
         :type: str
@@ -92,6 +96,7 @@ class AssociateAgencyWithProjectPermissionRequest:
     def role_id(self):
         """Gets the role_id of this AssociateAgencyWithProjectPermissionRequest.
 
+        权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 
         :return: The role_id of this AssociateAgencyWithProjectPermissionRequest.
         :rtype: str
@@ -102,6 +107,7 @@ class AssociateAgencyWithProjectPermissionRequest:
     def role_id(self, role_id):
         """Sets the role_id of this AssociateAgencyWithProjectPermissionRequest.
 
+        权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 
         :param role_id: The role_id of this AssociateAgencyWithProjectPermissionRequest.
         :type: str

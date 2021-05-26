@@ -35,7 +35,7 @@ class ListBatchTasksResponse(SdkResponse):
     def __init__(self, batchtasks=None, page=None):
         """ListBatchTasksResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListBatchTasksResponse, self).__init__()
 
         self._batchtasks = None
         self._page = None

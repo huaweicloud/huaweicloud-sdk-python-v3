@@ -35,7 +35,7 @@ class CreateMessageResponse(SdkResponse):
     def __init__(self, message_id=None, result=None):
         """CreateMessageResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateMessageResponse, self).__init__()
 
         self._message_id = None
         self._result = None

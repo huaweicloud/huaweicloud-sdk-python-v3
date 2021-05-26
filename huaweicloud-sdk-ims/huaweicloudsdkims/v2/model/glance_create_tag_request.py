@@ -48,6 +48,7 @@ class GlanceCreateTagRequest:
     def image_id(self):
         """Gets the image_id of this GlanceCreateTagRequest.
 
+        镜像id
 
         :return: The image_id of this GlanceCreateTagRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class GlanceCreateTagRequest:
     def image_id(self, image_id):
         """Sets the image_id of this GlanceCreateTagRequest.
 
+        镜像id
 
         :param image_id: The image_id of this GlanceCreateTagRequest.
         :type: str
@@ -68,6 +70,7 @@ class GlanceCreateTagRequest:
     def tag(self):
         """Gets the tag of this GlanceCreateTagRequest.
 
+        新增的tag。字符串中不能包含“=”和“.”。
 
         :return: The tag of this GlanceCreateTagRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class GlanceCreateTagRequest:
     def tag(self, tag):
         """Sets the tag of this GlanceCreateTagRequest.
 
+        新增的tag。字符串中不能包含“=”和“.”。
 
         :param tag: The tag of this GlanceCreateTagRequest.
         :type: str

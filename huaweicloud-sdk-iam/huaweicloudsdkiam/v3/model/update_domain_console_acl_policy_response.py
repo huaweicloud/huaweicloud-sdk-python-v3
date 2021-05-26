@@ -33,7 +33,7 @@ class UpdateDomainConsoleAclPolicyResponse(SdkResponse):
     def __init__(self, console_acl_policy=None):
         """UpdateDomainConsoleAclPolicyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateDomainConsoleAclPolicyResponse, self).__init__()
 
         self._console_acl_policy = None
         self.discriminator = None

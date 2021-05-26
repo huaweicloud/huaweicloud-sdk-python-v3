@@ -39,7 +39,7 @@ class ShowQueueResponse(SdkResponse):
     def __init__(self, queue_id=None, queue_name=None, create_time=None, last_modify_time=None):
         """ShowQueueResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowQueueResponse, self).__init__()
 
         self._queue_id = None
         self._queue_name = None

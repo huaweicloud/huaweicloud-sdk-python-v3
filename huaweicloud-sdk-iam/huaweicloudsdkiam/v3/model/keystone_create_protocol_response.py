@@ -33,7 +33,7 @@ class KeystoneCreateProtocolResponse(SdkResponse):
     def __init__(self, protocol=None):
         """KeystoneCreateProtocolResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneCreateProtocolResponse, self).__init__()
 
         self._protocol = None
         self.discriminator = None

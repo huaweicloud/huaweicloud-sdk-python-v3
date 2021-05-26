@@ -60,6 +60,7 @@ class ListVpcsRequest:
     def limit(self):
         """Gets the limit of this ListVpcsRequest.
 
+        查询返回虚拟私有云列表数量。
 
         :return: The limit of this ListVpcsRequest.
         :rtype: int
@@ -70,6 +71,7 @@ class ListVpcsRequest:
     def limit(self, limit):
         """Sets the limit of this ListVpcsRequest.
 
+        查询返回虚拟私有云列表数量。
 
         :param limit: The limit of this ListVpcsRequest.
         :type: int
@@ -80,6 +82,7 @@ class ListVpcsRequest:
     def offset(self):
         """Gets the offset of this ListVpcsRequest.
 
+        查询的偏移量。
 
         :return: The offset of this ListVpcsRequest.
         :rtype: int
@@ -90,6 +93,7 @@ class ListVpcsRequest:
     def offset(self, offset):
         """Sets the offset of this ListVpcsRequest.
 
+        查询的偏移量。
 
         :param offset: The offset of this ListVpcsRequest.
         :type: int
@@ -100,6 +104,7 @@ class ListVpcsRequest:
     def id(self):
         """Gets the id of this ListVpcsRequest.
 
+        通过ID查询
 
         :return: The id of this ListVpcsRequest.
         :rtype: str
@@ -110,6 +115,7 @@ class ListVpcsRequest:
     def id(self, id):
         """Sets the id of this ListVpcsRequest.
 
+        通过ID查询
 
         :param id: The id of this ListVpcsRequest.
         :type: str
@@ -120,6 +126,7 @@ class ListVpcsRequest:
     def name(self):
         """Gets the name of this ListVpcsRequest.
 
+        通过name查询
 
         :return: The name of this ListVpcsRequest.
         :rtype: str
@@ -130,6 +137,7 @@ class ListVpcsRequest:
     def name(self, name):
         """Sets the name of this ListVpcsRequest.
 
+        通过name查询
 
         :param name: The name of this ListVpcsRequest.
         :type: str

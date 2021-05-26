@@ -31,7 +31,7 @@ class KeystoneAssociateGroupWithDomainPermissionResponse(SdkResponse):
     def __init__(self):
         """KeystoneAssociateGroupWithDomainPermissionResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneAssociateGroupWithDomainPermissionResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

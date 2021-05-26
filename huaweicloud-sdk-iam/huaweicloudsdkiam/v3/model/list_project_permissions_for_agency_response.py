@@ -33,7 +33,7 @@ class ListProjectPermissionsForAgencyResponse(SdkResponse):
     def __init__(self, roles=None):
         """ListProjectPermissionsForAgencyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListProjectPermissionsForAgencyResponse, self).__init__()
 
         self._roles = None
         self.discriminator = None

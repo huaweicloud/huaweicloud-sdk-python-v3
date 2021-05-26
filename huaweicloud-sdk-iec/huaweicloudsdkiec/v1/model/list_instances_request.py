@@ -85,6 +85,7 @@ class ListInstancesRequest:
     def offset(self):
         """Gets the offset of this ListInstancesRequest.
 
+        页码。 当前页面数，默认为0。 取值大于等于0，取值为0时返回第1页
 
         :return: The offset of this ListInstancesRequest.
         :rtype: int
@@ -95,6 +96,7 @@ class ListInstancesRequest:
     def offset(self, offset):
         """Sets the offset of this ListInstancesRequest.
 
+        页码。 当前页面数，默认为0。 取值大于等于0，取值为0时返回第1页
 
         :param offset: The offset of this ListInstancesRequest.
         :type: int
@@ -105,6 +107,7 @@ class ListInstancesRequest:
     def limit(self):
         """Gets the limit of this ListInstancesRequest.
 
+        查询返回边缘实例列表当前页面的数量。 每页默认值是25，最多返回1000台边缘实例的信息，如果数据量过大建议设置成100。
 
         :return: The limit of this ListInstancesRequest.
         :rtype: int
@@ -115,6 +118,7 @@ class ListInstancesRequest:
     def limit(self, limit):
         """Sets the limit of this ListInstancesRequest.
 
+        查询返回边缘实例列表当前页面的数量。 每页默认值是25，最多返回1000台边缘实例的信息，如果数据量过大建议设置成100。
 
         :param limit: The limit of this ListInstancesRequest.
         :type: int
@@ -125,6 +129,7 @@ class ListInstancesRequest:
     def status(self):
         """Gets the status of this ListInstancesRequest.
 
+        边缘实例的状态。 取值范围：ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE。  非上面范围的status字段将返回空列表。 > 当边缘实例处于中间状态时，查询范围如下： - ACTIVE，查询范围：ACTIVE，REBOOT，HARD_REBOOT，REBUILD，MIGRATING - SHUTOFF，查询范围：SHUTOFF，RESIZE，REBUILD - ERROR，查询范围：ERROR，REBUILD - VERIFY_RESIZE，查询范围：VERIFY_RESIZE，REVERT_RESIZE
 
         :return: The status of this ListInstancesRequest.
         :rtype: str
@@ -135,6 +140,7 @@ class ListInstancesRequest:
     def status(self, status):
         """Sets the status of this ListInstancesRequest.
 
+        边缘实例的状态。 取值范围：ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE。  非上面范围的status字段将返回空列表。 > 当边缘实例处于中间状态时，查询范围如下： - ACTIVE，查询范围：ACTIVE，REBOOT，HARD_REBOOT，REBUILD，MIGRATING - SHUTOFF，查询范围：SHUTOFF，RESIZE，REBUILD - ERROR，查询范围：ERROR，REBUILD - VERIFY_RESIZE，查询范围：VERIFY_RESIZE，REVERT_RESIZE
 
         :param status: The status of this ListInstancesRequest.
         :type: str
@@ -145,6 +151,7 @@ class ListInstancesRequest:
     def name(self):
         """Gets the name of this ListInstancesRequest.
 
+        查询条件，边缘实例名称。
 
         :return: The name of this ListInstancesRequest.
         :rtype: str
@@ -155,6 +162,7 @@ class ListInstancesRequest:
     def name(self, name):
         """Sets the name of this ListInstancesRequest.
 
+        查询条件，边缘实例名称。
 
         :param name: The name of this ListInstancesRequest.
         :type: str
@@ -165,6 +173,7 @@ class ListInstancesRequest:
     def area(self):
         """Gets the area of this ListInstancesRequest.
 
+        边缘实例所在大区。
 
         :return: The area of this ListInstancesRequest.
         :rtype: str
@@ -175,6 +184,7 @@ class ListInstancesRequest:
     def area(self, area):
         """Sets the area of this ListInstancesRequest.
 
+        边缘实例所在大区。
 
         :param area: The area of this ListInstancesRequest.
         :type: str
@@ -185,6 +195,7 @@ class ListInstancesRequest:
     def province(self):
         """Gets the province of this ListInstancesRequest.
 
+        边缘实例所在省份。
 
         :return: The province of this ListInstancesRequest.
         :rtype: str
@@ -195,6 +206,7 @@ class ListInstancesRequest:
     def province(self, province):
         """Sets the province of this ListInstancesRequest.
 
+        边缘实例所在省份。
 
         :param province: The province of this ListInstancesRequest.
         :type: str
@@ -205,6 +217,7 @@ class ListInstancesRequest:
     def city(self):
         """Gets the city of this ListInstancesRequest.
 
+        边缘实例所在城市。
 
         :return: The city of this ListInstancesRequest.
         :rtype: str
@@ -215,6 +228,7 @@ class ListInstancesRequest:
     def city(self, city):
         """Sets the city of this ListInstancesRequest.
 
+        边缘实例所在城市。
 
         :param city: The city of this ListInstancesRequest.
         :type: str
@@ -225,6 +239,7 @@ class ListInstancesRequest:
     def edgecloud_id(self):
         """Gets the edgecloud_id of this ListInstancesRequest.
 
+        边缘业务ID。
 
         :return: The edgecloud_id of this ListInstancesRequest.
         :rtype: str
@@ -235,6 +250,7 @@ class ListInstancesRequest:
     def edgecloud_id(self, edgecloud_id):
         """Sets the edgecloud_id of this ListInstancesRequest.
 
+        边缘业务ID。
 
         :param edgecloud_id: The edgecloud_id of this ListInstancesRequest.
         :type: str
@@ -245,6 +261,7 @@ class ListInstancesRequest:
     def site_id(self):
         """Gets the site_id of this ListInstancesRequest.
 
+        站点ID。
 
         :return: The site_id of this ListInstancesRequest.
         :rtype: str
@@ -255,6 +272,7 @@ class ListInstancesRequest:
     def site_id(self, site_id):
         """Sets the site_id of this ListInstancesRequest.
 
+        站点ID。
 
         :param site_id: The site_id of this ListInstancesRequest.
         :type: str

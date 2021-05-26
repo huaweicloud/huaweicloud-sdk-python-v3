@@ -35,7 +35,7 @@ class CreateAccessCodeResponse(SdkResponse):
     def __init__(self, access_key=None, access_code=None):
         """CreateAccessCodeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateAccessCodeResponse, self).__init__()
 
         self._access_key = None
         self._access_code = None

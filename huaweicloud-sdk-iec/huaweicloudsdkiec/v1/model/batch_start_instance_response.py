@@ -33,7 +33,7 @@ class BatchStartInstanceResponse(SdkResponse):
     def __init__(self, jobs=None):
         """BatchStartInstanceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchStartInstanceResponse, self).__init__()
 
         self._jobs = None
         self.discriminator = None

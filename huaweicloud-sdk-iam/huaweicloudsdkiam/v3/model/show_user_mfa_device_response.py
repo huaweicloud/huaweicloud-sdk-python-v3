@@ -33,7 +33,7 @@ class ShowUserMfaDeviceResponse(SdkResponse):
     def __init__(self, virtual_mfa_device=None):
         """ShowUserMfaDeviceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowUserMfaDeviceResponse, self).__init__()
 
         self._virtual_mfa_device = None
         self.discriminator = None

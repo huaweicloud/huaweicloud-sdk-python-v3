@@ -48,6 +48,7 @@ class DeleteImageTagRequest:
     def image_id(self):
         """Gets the image_id of this DeleteImageTagRequest.
 
+        镜像ID。
 
         :return: The image_id of this DeleteImageTagRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteImageTagRequest:
     def image_id(self, image_id):
         """Sets the image_id of this DeleteImageTagRequest.
 
+        镜像ID。
 
         :param image_id: The image_id of this DeleteImageTagRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteImageTagRequest:
     def key(self):
         """Gets the key of this DeleteImageTagRequest.
 
+        要删除的标签的键。
 
         :return: The key of this DeleteImageTagRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteImageTagRequest:
     def key(self, key):
         """Sets the key of this DeleteImageTagRequest.
 
+        要删除的标签的键。
 
         :param key: The key of this DeleteImageTagRequest.
         :type: str

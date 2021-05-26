@@ -49,6 +49,7 @@ class CopyImageInRegionRequest:
     def image_id(self):
         """Gets the image_id of this CopyImageInRegionRequest.
 
+        镜像ID
 
         :return: The image_id of this CopyImageInRegionRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CopyImageInRegionRequest:
     def image_id(self, image_id):
         """Sets the image_id of this CopyImageInRegionRequest.
 
+        镜像ID
 
         :param image_id: The image_id of this CopyImageInRegionRequest.
         :type: str

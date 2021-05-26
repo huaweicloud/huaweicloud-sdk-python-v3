@@ -49,6 +49,7 @@ class GlanceAddImageMemberRequest:
     def image_id(self):
         """Gets the image_id of this GlanceAddImageMemberRequest.
 
+        镜像id
 
         :return: The image_id of this GlanceAddImageMemberRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class GlanceAddImageMemberRequest:
     def image_id(self, image_id):
         """Sets the image_id of this GlanceAddImageMemberRequest.
 
+        镜像id
 
         :param image_id: The image_id of this GlanceAddImageMemberRequest.
         :type: str

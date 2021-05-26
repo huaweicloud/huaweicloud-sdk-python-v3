@@ -44,6 +44,7 @@ class DeleteSecurityGroupRequest:
     def security_group_id(self):
         """Gets the security_group_id of this DeleteSecurityGroupRequest.
 
+        安全组的ID。uuid
 
         :return: The security_group_id of this DeleteSecurityGroupRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteSecurityGroupRequest:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this DeleteSecurityGroupRequest.
 
+        安全组的ID。uuid
 
         :param security_group_id: The security_group_id of this DeleteSecurityGroupRequest.
         :type: str

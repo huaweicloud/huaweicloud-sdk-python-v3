@@ -44,6 +44,7 @@ class KeystoneShowServiceRequest:
     def service_id(self):
         """Gets the service_id of this KeystoneShowServiceRequest.
 
+        待查询的服务ID。
 
         :return: The service_id of this KeystoneShowServiceRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class KeystoneShowServiceRequest:
     def service_id(self, service_id):
         """Sets the service_id of this KeystoneShowServiceRequest.
 
+        待查询的服务ID。
 
         :param service_id: The service_id of this KeystoneShowServiceRequest.
         :type: str

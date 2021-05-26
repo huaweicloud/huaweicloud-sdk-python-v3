@@ -35,7 +35,7 @@ class ListAllProjectsPermissionsForAgencyResponse(SdkResponse):
     def __init__(self, roles=None, links=None):
         """ListAllProjectsPermissionsForAgencyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListAllProjectsPermissionsForAgencyResponse, self).__init__()
 
         self._roles = None
         self._links = None

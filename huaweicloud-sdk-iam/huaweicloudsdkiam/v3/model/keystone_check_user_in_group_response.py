@@ -31,7 +31,7 @@ class KeystoneCheckUserInGroupResponse(SdkResponse):
     def __init__(self):
         """KeystoneCheckUserInGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneCheckUserInGroupResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

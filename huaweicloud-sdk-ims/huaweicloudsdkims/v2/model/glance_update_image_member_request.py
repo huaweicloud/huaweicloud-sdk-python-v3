@@ -53,6 +53,7 @@ class GlanceUpdateImageMemberRequest:
     def image_id(self):
         """Gets the image_id of this GlanceUpdateImageMemberRequest.
 
+        镜像id
 
         :return: The image_id of this GlanceUpdateImageMemberRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class GlanceUpdateImageMemberRequest:
     def image_id(self, image_id):
         """Sets the image_id of this GlanceUpdateImageMemberRequest.
 
+        镜像id
 
         :param image_id: The image_id of this GlanceUpdateImageMemberRequest.
         :type: str
@@ -73,6 +75,7 @@ class GlanceUpdateImageMemberRequest:
     def member_id(self):
         """Gets the member_id of this GlanceUpdateImageMemberRequest.
 
+        成员id
 
         :return: The member_id of this GlanceUpdateImageMemberRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class GlanceUpdateImageMemberRequest:
     def member_id(self, member_id):
         """Sets the member_id of this GlanceUpdateImageMemberRequest.
 
+        成员id
 
         :param member_id: The member_id of this GlanceUpdateImageMemberRequest.
         :type: str

@@ -45,6 +45,7 @@ class ListOsVersionsRequest:
     def tag(self):
         """Gets the tag of this ListOsVersionsRequest.
 
+        OS的标签。 根据标签值可以过滤查询指定特性的OS信息。 取值范围： bms：表示该镜像支持BMS的os_version列表。 uefi：支持UEFI启动方式的os_version列表。 arm：显示基于arm架构的os_version列表。 x86：显示基于x86架构的os_version列表。不带tag查询条件则默认查询当前region支持的所有的OS列表。
 
         :return: The tag of this ListOsVersionsRequest.
         :rtype: str
@@ -55,6 +56,7 @@ class ListOsVersionsRequest:
     def tag(self, tag):
         """Sets the tag of this ListOsVersionsRequest.
 
+        OS的标签。 根据标签值可以过滤查询指定特性的OS信息。 取值范围： bms：表示该镜像支持BMS的os_version列表。 uefi：支持UEFI启动方式的os_version列表。 arm：显示基于arm架构的os_version列表。 x86：显示基于x86架构的os_version列表。不带tag查询条件则默认查询当前region支持的所有的OS列表。
 
         :param tag: The tag of this ListOsVersionsRequest.
         :type: str

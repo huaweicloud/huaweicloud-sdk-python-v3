@@ -44,6 +44,7 @@ class KeystoneShowMappingRequest:
     def id(self):
         """Gets the id of this KeystoneShowMappingRequest.
 
+        待查询的映射ID。
 
         :return: The id of this KeystoneShowMappingRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class KeystoneShowMappingRequest:
     def id(self, id):
         """Sets the id of this KeystoneShowMappingRequest.
 
+        待查询的映射ID。
 
         :param id: The id of this KeystoneShowMappingRequest.
         :type: str

@@ -49,6 +49,7 @@ class UpdateDomainApiAclPolicyRequest:
     def domain_id(self):
         """Gets the domain_id of this UpdateDomainApiAclPolicyRequest.
 
+        账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The domain_id of this UpdateDomainApiAclPolicyRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateDomainApiAclPolicyRequest:
     def domain_id(self, domain_id):
         """Sets the domain_id of this UpdateDomainApiAclPolicyRequest.
 
+        账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this UpdateDomainApiAclPolicyRequest.
         :type: str

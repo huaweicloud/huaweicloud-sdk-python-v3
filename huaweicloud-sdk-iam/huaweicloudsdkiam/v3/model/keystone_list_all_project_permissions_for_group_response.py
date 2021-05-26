@@ -37,7 +37,7 @@ class KeystoneListAllProjectPermissionsForGroupResponse(SdkResponse):
     def __init__(self, links=None, roles=None, total_number=None):
         """KeystoneListAllProjectPermissionsForGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneListAllProjectPermissionsForGroupResponse, self).__init__()
 
         self._links = None
         self._roles = None

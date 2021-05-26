@@ -49,7 +49,7 @@ class CreateAsyncCommandResponse(SdkResponse):
     def __init__(self, device_id=None, command_id=None, service_id=None, command_name=None, paras=None, expire_time=None, status=None, created_time=None, send_strategy=None):
         """CreateAsyncCommandResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateAsyncCommandResponse, self).__init__()
 
         self._device_id = None
         self._command_id = None

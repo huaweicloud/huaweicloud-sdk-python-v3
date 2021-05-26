@@ -33,7 +33,7 @@ class ShowDomainApiAclPolicyResponse(SdkResponse):
     def __init__(self, api_acl_policy=None):
         """ShowDomainApiAclPolicyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowDomainApiAclPolicyResponse, self).__init__()
 
         self._api_acl_policy = None
         self.discriminator = None

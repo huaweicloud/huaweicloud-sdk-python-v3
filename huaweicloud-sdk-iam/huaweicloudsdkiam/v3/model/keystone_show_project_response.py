@@ -33,7 +33,7 @@ class KeystoneShowProjectResponse(SdkResponse):
     def __init__(self, project=None):
         """KeystoneShowProjectResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneShowProjectResponse, self).__init__()
 
         self._project = None
         self.discriminator = None

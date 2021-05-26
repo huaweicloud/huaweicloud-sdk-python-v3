@@ -44,6 +44,7 @@ class GlanceShowImageRequest:
     def image_id(self):
         """Gets the image_id of this GlanceShowImageRequest.
 
+        镜像ID
 
         :return: The image_id of this GlanceShowImageRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class GlanceShowImageRequest:
     def image_id(self, image_id):
         """Sets the image_id of this GlanceShowImageRequest.
 
+        镜像ID
 
         :param image_id: The image_id of this GlanceShowImageRequest.
         :type: str

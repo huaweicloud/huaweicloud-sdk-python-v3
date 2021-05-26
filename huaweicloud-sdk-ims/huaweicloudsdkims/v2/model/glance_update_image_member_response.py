@@ -43,7 +43,7 @@ class GlanceUpdateImageMemberResponse(SdkResponse):
     def __init__(self, status=None, created_at=None, updated_at=None, image_id=None, member_id=None, schema=None):
         """GlanceUpdateImageMemberResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(GlanceUpdateImageMemberResponse, self).__init__()
 
         self._status = None
         self._created_at = None

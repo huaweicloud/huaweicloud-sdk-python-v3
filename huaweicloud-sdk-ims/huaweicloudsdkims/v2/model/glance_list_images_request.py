@@ -200,6 +200,7 @@ class GlanceListImagesRequest:
     def imagetype(self):
         """Gets the imagetype of this GlanceListImagesRequest.
 
+        镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared
 
         :return: The imagetype of this GlanceListImagesRequest.
         :rtype: str
@@ -210,6 +211,7 @@ class GlanceListImagesRequest:
     def imagetype(self, imagetype):
         """Sets the imagetype of this GlanceListImagesRequest.
 
+        镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared
 
         :param imagetype: The imagetype of this GlanceListImagesRequest.
         :type: str
@@ -220,6 +222,7 @@ class GlanceListImagesRequest:
     def isregistered(self):
         """Gets the isregistered of this GlanceListImagesRequest.
 
+        镜像是否是受保护，取值为true/false。一般查询公共镜像时候取值为true，查询私有镜像可以不指定。
 
         :return: The isregistered of this GlanceListImagesRequest.
         :rtype: bool
@@ -230,6 +233,7 @@ class GlanceListImagesRequest:
     def isregistered(self, isregistered):
         """Sets the isregistered of this GlanceListImagesRequest.
 
+        镜像是否是受保护，取值为true/false。一般查询公共镜像时候取值为true，查询私有镜像可以不指定。
 
         :param isregistered: The isregistered of this GlanceListImagesRequest.
         :type: bool
@@ -240,6 +244,7 @@ class GlanceListImagesRequest:
     def os_bit(self):
         """Gets the os_bit of this GlanceListImagesRequest.
 
+        操作系统位数，一般取值为32或者64
 
         :return: The os_bit of this GlanceListImagesRequest.
         :rtype: str
@@ -250,6 +255,7 @@ class GlanceListImagesRequest:
     def os_bit(self, os_bit):
         """Sets the os_bit of this GlanceListImagesRequest.
 
+        操作系统位数，一般取值为32或者64
 
         :param os_bit: The os_bit of this GlanceListImagesRequest.
         :type: str
@@ -260,6 +266,7 @@ class GlanceListImagesRequest:
     def os_type(self):
         """Gets the os_type of this GlanceListImagesRequest.
 
+        镜像系统类型，取值为Linux，Windows，Other
 
         :return: The os_type of this GlanceListImagesRequest.
         :rtype: str
@@ -270,6 +277,7 @@ class GlanceListImagesRequest:
     def os_type(self, os_type):
         """Sets the os_type of this GlanceListImagesRequest.
 
+        镜像系统类型，取值为Linux，Windows，Other
 
         :param os_type: The os_type of this GlanceListImagesRequest.
         :type: str
@@ -280,6 +288,7 @@ class GlanceListImagesRequest:
     def platform(self):
         """Gets the platform of this GlanceListImagesRequest.
 
+        镜像平台分类，取值为Windows，Ubuntu，RedHat，SUSE，CentOS，Debian，OpenSUSE, Oracle Linux，Fedora，Other，CoreOS和EuleOS
 
         :return: The platform of this GlanceListImagesRequest.
         :rtype: str
@@ -290,6 +299,7 @@ class GlanceListImagesRequest:
     def platform(self, platform):
         """Sets the platform of this GlanceListImagesRequest.
 
+        镜像平台分类，取值为Windows，Ubuntu，RedHat，SUSE，CentOS，Debian，OpenSUSE, Oracle Linux，Fedora，Other，CoreOS和EuleOS
 
         :param platform: The platform of this GlanceListImagesRequest.
         :type: str
@@ -300,6 +310,7 @@ class GlanceListImagesRequest:
     def support_diskintensive(self):
         """Gets the support_diskintensive of this GlanceListImagesRequest.
 
+        表示该镜像支持密集存储。如果镜像支持密集存储性能，则值为true，否则无需增加该属性
 
         :return: The support_diskintensive of this GlanceListImagesRequest.
         :rtype: str
@@ -310,6 +321,7 @@ class GlanceListImagesRequest:
     def support_diskintensive(self, support_diskintensive):
         """Sets the support_diskintensive of this GlanceListImagesRequest.
 
+        表示该镜像支持密集存储。如果镜像支持密集存储性能，则值为true，否则无需增加该属性
 
         :param support_diskintensive: The support_diskintensive of this GlanceListImagesRequest.
         :type: str
@@ -320,6 +332,7 @@ class GlanceListImagesRequest:
     def support_highperformance(self):
         """Gets the support_highperformance of this GlanceListImagesRequest.
 
+        表示该镜像支持高计算性能。如果镜像支持高计算性能，则值为true，否则无需增加该属性
 
         :return: The support_highperformance of this GlanceListImagesRequest.
         :rtype: str
@@ -330,6 +343,7 @@ class GlanceListImagesRequest:
     def support_highperformance(self, support_highperformance):
         """Sets the support_highperformance of this GlanceListImagesRequest.
 
+        表示该镜像支持高计算性能。如果镜像支持高计算性能，则值为true，否则无需增加该属性
 
         :param support_highperformance: The support_highperformance of this GlanceListImagesRequest.
         :type: str
@@ -340,6 +354,7 @@ class GlanceListImagesRequest:
     def support_kvm(self):
         """Gets the support_kvm of this GlanceListImagesRequest.
 
+        如果镜像支持KVM，取值为true，否则无需增加该属性
 
         :return: The support_kvm of this GlanceListImagesRequest.
         :rtype: str
@@ -350,6 +365,7 @@ class GlanceListImagesRequest:
     def support_kvm(self, support_kvm):
         """Sets the support_kvm of this GlanceListImagesRequest.
 
+        如果镜像支持KVM，取值为true，否则无需增加该属性
 
         :param support_kvm: The support_kvm of this GlanceListImagesRequest.
         :type: str
@@ -360,6 +376,7 @@ class GlanceListImagesRequest:
     def support_kvm_gpu_type(self):
         """Gets the support_kvm_gpu_type of this GlanceListImagesRequest.
 
+        表示该镜像是支持KVM虚拟化平台下的GPU类型,如果不支持KVM虚拟机下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存
 
         :return: The support_kvm_gpu_type of this GlanceListImagesRequest.
         :rtype: str
@@ -370,6 +387,7 @@ class GlanceListImagesRequest:
     def support_kvm_gpu_type(self, support_kvm_gpu_type):
         """Sets the support_kvm_gpu_type of this GlanceListImagesRequest.
 
+        表示该镜像是支持KVM虚拟化平台下的GPU类型,如果不支持KVM虚拟机下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存
 
         :param support_kvm_gpu_type: The support_kvm_gpu_type of this GlanceListImagesRequest.
         :type: str
@@ -380,6 +398,7 @@ class GlanceListImagesRequest:
     def support_kvm_infiniband(self):
         """Gets the support_kvm_infiniband of this GlanceListImagesRequest.
 
+        如果镜像支持KVM虚拟化下Infiniband网卡类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”属性不共存。
 
         :return: The support_kvm_infiniband of this GlanceListImagesRequest.
         :rtype: str
@@ -390,6 +409,7 @@ class GlanceListImagesRequest:
     def support_kvm_infiniband(self, support_kvm_infiniband):
         """Sets the support_kvm_infiniband of this GlanceListImagesRequest.
 
+        如果镜像支持KVM虚拟化下Infiniband网卡类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”属性不共存。
 
         :param support_kvm_infiniband: The support_kvm_infiniband of this GlanceListImagesRequest.
         :type: str
@@ -400,6 +420,7 @@ class GlanceListImagesRequest:
     def support_largememory(self):
         """Gets the support_largememory of this GlanceListImagesRequest.
 
+        表示该镜像支持超大内存。如果镜像支持超大内存，取值为true，否则无需增加该属性
 
         :return: The support_largememory of this GlanceListImagesRequest.
         :rtype: str
@@ -410,6 +431,7 @@ class GlanceListImagesRequest:
     def support_largememory(self, support_largememory):
         """Sets the support_largememory of this GlanceListImagesRequest.
 
+        表示该镜像支持超大内存。如果镜像支持超大内存，取值为true，否则无需增加该属性
 
         :param support_largememory: The support_largememory of this GlanceListImagesRequest.
         :type: str
@@ -420,6 +442,7 @@ class GlanceListImagesRequest:
     def support_xen(self):
         """Gets the support_xen of this GlanceListImagesRequest.
 
+        如果镜像支持XEN，取值为true，否则无需增加该属性
 
         :return: The support_xen of this GlanceListImagesRequest.
         :rtype: str
@@ -430,6 +453,7 @@ class GlanceListImagesRequest:
     def support_xen(self, support_xen):
         """Sets the support_xen of this GlanceListImagesRequest.
 
+        如果镜像支持XEN，取值为true，否则无需增加该属性
 
         :param support_xen: The support_xen of this GlanceListImagesRequest.
         :type: str
@@ -440,6 +464,7 @@ class GlanceListImagesRequest:
     def support_xen_gpu_type(self):
         """Gets the support_xen_gpu_type of this GlanceListImagesRequest.
 
+        表示该镜像是支持XEN虚拟化平台下的GPU优化类型,如果不支持XEN虚拟化下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存
 
         :return: The support_xen_gpu_type of this GlanceListImagesRequest.
         :rtype: str
@@ -450,6 +475,7 @@ class GlanceListImagesRequest:
     def support_xen_gpu_type(self, support_xen_gpu_type):
         """Sets the support_xen_gpu_type of this GlanceListImagesRequest.
 
+        表示该镜像是支持XEN虚拟化平台下的GPU优化类型,如果不支持XEN虚拟化下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存
 
         :param support_xen_gpu_type: The support_xen_gpu_type of this GlanceListImagesRequest.
         :type: str
@@ -460,6 +486,7 @@ class GlanceListImagesRequest:
     def support_xen_hana(self):
         """Gets the support_xen_hana of this GlanceListImagesRequest.
 
+        如果镜像支持XEN虚拟化下HANA类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存
 
         :return: The support_xen_hana of this GlanceListImagesRequest.
         :rtype: str
@@ -470,6 +497,7 @@ class GlanceListImagesRequest:
     def support_xen_hana(self, support_xen_hana):
         """Sets the support_xen_hana of this GlanceListImagesRequest.
 
+        如果镜像支持XEN虚拟化下HANA类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存
 
         :param support_xen_hana: The support_xen_hana of this GlanceListImagesRequest.
         :type: str
@@ -480,6 +508,7 @@ class GlanceListImagesRequest:
     def container_format(self):
         """Gets the container_format of this GlanceListImagesRequest.
 
+        容器类型
 
         :return: The container_format of this GlanceListImagesRequest.
         :rtype: str
@@ -490,6 +519,7 @@ class GlanceListImagesRequest:
     def container_format(self, container_format):
         """Sets the container_format of this GlanceListImagesRequest.
 
+        容器类型
 
         :param container_format: The container_format of this GlanceListImagesRequest.
         :type: str
@@ -500,6 +530,7 @@ class GlanceListImagesRequest:
     def disk_format(self):
         """Gets the disk_format of this GlanceListImagesRequest.
 
+        镜像格式，目前支持vhd，zvhd、raw，qcow2。默认值是vhd
 
         :return: The disk_format of this GlanceListImagesRequest.
         :rtype: str
@@ -510,6 +541,7 @@ class GlanceListImagesRequest:
     def disk_format(self, disk_format):
         """Sets the disk_format of this GlanceListImagesRequest.
 
+        镜像格式，目前支持vhd，zvhd、raw，qcow2。默认值是vhd
 
         :param disk_format: The disk_format of this GlanceListImagesRequest.
         :type: str
@@ -520,6 +552,7 @@ class GlanceListImagesRequest:
     def id(self):
         """Gets the id of this GlanceListImagesRequest.
 
+        镜像ID
 
         :return: The id of this GlanceListImagesRequest.
         :rtype: str
@@ -530,6 +563,7 @@ class GlanceListImagesRequest:
     def id(self, id):
         """Sets the id of this GlanceListImagesRequest.
 
+        镜像ID
 
         :param id: The id of this GlanceListImagesRequest.
         :type: str
@@ -540,6 +574,7 @@ class GlanceListImagesRequest:
     def limit(self):
         """Gets the limit of this GlanceListImagesRequest.
 
+        用于分页，表示查询几条镜像记录，取值为整数，默认返回25条镜像记录
 
         :return: The limit of this GlanceListImagesRequest.
         :rtype: int
@@ -550,6 +585,7 @@ class GlanceListImagesRequest:
     def limit(self, limit):
         """Sets the limit of this GlanceListImagesRequest.
 
+        用于分页，表示查询几条镜像记录，取值为整数，默认返回25条镜像记录
 
         :param limit: The limit of this GlanceListImagesRequest.
         :type: int
@@ -560,6 +596,7 @@ class GlanceListImagesRequest:
     def marker(self):
         """Gets the marker of this GlanceListImagesRequest.
 
+        用于分页，表示从哪个镜像开始查询，取值为镜像ID。
 
         :return: The marker of this GlanceListImagesRequest.
         :rtype: str
@@ -570,6 +607,7 @@ class GlanceListImagesRequest:
     def marker(self, marker):
         """Sets the marker of this GlanceListImagesRequest.
 
+        用于分页，表示从哪个镜像开始查询，取值为镜像ID。
 
         :param marker: The marker of this GlanceListImagesRequest.
         :type: str
@@ -580,6 +618,7 @@ class GlanceListImagesRequest:
     def member_status(self):
         """Gets the member_status of this GlanceListImagesRequest.
 
+        成员状态。目前取值有accepted、rejected、pending。accepted表示已经接受共享的镜像，rejected表示已经拒绝了其他用户共享的镜像，pending表示需要确认的其他用户的共享镜像。需要在查询时，设置“visibility”参数为“shared”
 
         :return: The member_status of this GlanceListImagesRequest.
         :rtype: str
@@ -590,6 +629,7 @@ class GlanceListImagesRequest:
     def member_status(self, member_status):
         """Sets the member_status of this GlanceListImagesRequest.
 
+        成员状态。目前取值有accepted、rejected、pending。accepted表示已经接受共享的镜像，rejected表示已经拒绝了其他用户共享的镜像，pending表示需要确认的其他用户的共享镜像。需要在查询时，设置“visibility”参数为“shared”
 
         :param member_status: The member_status of this GlanceListImagesRequest.
         :type: str
@@ -600,6 +640,7 @@ class GlanceListImagesRequest:
     def min_disk(self):
         """Gets the min_disk of this GlanceListImagesRequest.
 
+        镜像运行需要的最小磁盘，单位为GB 。取值为40～1024GB。取值为1～1024GB。取值为40～255GB
 
         :return: The min_disk of this GlanceListImagesRequest.
         :rtype: int
@@ -610,6 +651,7 @@ class GlanceListImagesRequest:
     def min_disk(self, min_disk):
         """Sets the min_disk of this GlanceListImagesRequest.
 
+        镜像运行需要的最小磁盘，单位为GB 。取值为40～1024GB。取值为1～1024GB。取值为40～255GB
 
         :param min_disk: The min_disk of this GlanceListImagesRequest.
         :type: int
@@ -620,6 +662,7 @@ class GlanceListImagesRequest:
     def min_ram(self):
         """Gets the min_ram of this GlanceListImagesRequest.
 
+        镜像运行需要的最小内存，单位为MB。参数取值依据弹性云服务器的规格限制，一般设置为0。
 
         :return: The min_ram of this GlanceListImagesRequest.
         :rtype: int
@@ -630,6 +673,7 @@ class GlanceListImagesRequest:
     def min_ram(self, min_ram):
         """Sets the min_ram of this GlanceListImagesRequest.
 
+        镜像运行需要的最小内存，单位为MB。参数取值依据弹性云服务器的规格限制，一般设置为0。
 
         :param min_ram: The min_ram of this GlanceListImagesRequest.
         :type: int
@@ -640,6 +684,7 @@ class GlanceListImagesRequest:
     def name(self):
         """Gets the name of this GlanceListImagesRequest.
 
+        镜像名称
 
         :return: The name of this GlanceListImagesRequest.
         :rtype: str
@@ -650,6 +695,7 @@ class GlanceListImagesRequest:
     def name(self, name):
         """Sets the name of this GlanceListImagesRequest.
 
+        镜像名称
 
         :param name: The name of this GlanceListImagesRequest.
         :type: str
@@ -660,6 +706,7 @@ class GlanceListImagesRequest:
     def owner(self):
         """Gets the owner of this GlanceListImagesRequest.
 
+        镜像属于哪个租户
 
         :return: The owner of this GlanceListImagesRequest.
         :rtype: str
@@ -670,6 +717,7 @@ class GlanceListImagesRequest:
     def owner(self, owner):
         """Sets the owner of this GlanceListImagesRequest.
 
+        镜像属于哪个租户
 
         :param owner: The owner of this GlanceListImagesRequest.
         :type: str
@@ -680,6 +728,7 @@ class GlanceListImagesRequest:
     def protected(self):
         """Gets the protected of this GlanceListImagesRequest.
 
+        镜像是否是受保护，查询公共镜像时候取值为True，查询私有镜像可以不指定。
 
         :return: The protected of this GlanceListImagesRequest.
         :rtype: bool
@@ -690,6 +739,7 @@ class GlanceListImagesRequest:
     def protected(self, protected):
         """Sets the protected of this GlanceListImagesRequest.
 
+        镜像是否是受保护，查询公共镜像时候取值为True，查询私有镜像可以不指定。
 
         :param protected: The protected of this GlanceListImagesRequest.
         :type: bool
@@ -700,6 +750,7 @@ class GlanceListImagesRequest:
     def sort_dir(self):
         """Gets the sort_dir of this GlanceListImagesRequest.
 
+        用于排序，表示升序还是降序，取值为asc和desc。与sort_key一起组合使用，默认为降序desc
 
         :return: The sort_dir of this GlanceListImagesRequest.
         :rtype: str
@@ -710,6 +761,7 @@ class GlanceListImagesRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this GlanceListImagesRequest.
 
+        用于排序，表示升序还是降序，取值为asc和desc。与sort_key一起组合使用，默认为降序desc
 
         :param sort_dir: The sort_dir of this GlanceListImagesRequest.
         :type: str
@@ -720,6 +772,7 @@ class GlanceListImagesRequest:
     def sort_key(self):
         """Gets the sort_key of this GlanceListImagesRequest.
 
+        用于排序，表示按照哪个字段排序。取值为镜像属性name，container_format，disk_format，status，id，size字段，默认为创建时间。
 
         :return: The sort_key of this GlanceListImagesRequest.
         :rtype: str
@@ -730,6 +783,7 @@ class GlanceListImagesRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this GlanceListImagesRequest.
 
+        用于排序，表示按照哪个字段排序。取值为镜像属性name，container_format，disk_format，status，id，size字段，默认为创建时间。
 
         :param sort_key: The sort_key of this GlanceListImagesRequest.
         :type: str
@@ -740,6 +794,7 @@ class GlanceListImagesRequest:
     def status(self):
         """Gets the status of this GlanceListImagesRequest.
 
+        镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待上传镜像文件。saving：表示镜像正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用
 
         :return: The status of this GlanceListImagesRequest.
         :rtype: str
@@ -750,6 +805,7 @@ class GlanceListImagesRequest:
     def status(self, status):
         """Sets the status of this GlanceListImagesRequest.
 
+        镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待上传镜像文件。saving：表示镜像正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用
 
         :param status: The status of this GlanceListImagesRequest.
         :type: str
@@ -760,6 +816,7 @@ class GlanceListImagesRequest:
     def tag(self):
         """Gets the tag of this GlanceListImagesRequest.
 
+        标签，用户为镜像增加自定义标签后可以通过该参数过滤查询
 
         :return: The tag of this GlanceListImagesRequest.
         :rtype: str
@@ -770,6 +827,7 @@ class GlanceListImagesRequest:
     def tag(self, tag):
         """Sets the tag of this GlanceListImagesRequest.
 
+        标签，用户为镜像增加自定义标签后可以通过该参数过滤查询
 
         :param tag: The tag of this GlanceListImagesRequest.
         :type: str
@@ -780,6 +838,7 @@ class GlanceListImagesRequest:
     def visibility(self):
         """Gets the visibility of this GlanceListImagesRequest.
 
+        是否被其他租户可见，取值如下： public：公共镜像 private：私有镜像 shared：共享镜像
 
         :return: The visibility of this GlanceListImagesRequest.
         :rtype: str
@@ -790,6 +849,7 @@ class GlanceListImagesRequest:
     def visibility(self, visibility):
         """Sets the visibility of this GlanceListImagesRequest.
 
+        是否被其他租户可见，取值如下： public：公共镜像 private：私有镜像 shared：共享镜像
 
         :param visibility: The visibility of this GlanceListImagesRequest.
         :type: str
@@ -800,6 +860,7 @@ class GlanceListImagesRequest:
     def created_at(self):
         """Gets the created_at of this GlanceListImagesRequest.
 
+        镜像创建时间。支持按照时间点过滤查询，取值格式为“ 操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询创建时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： created_at=gt:2018-10-28T10:00:00Z
 
         :return: The created_at of this GlanceListImagesRequest.
         :rtype: str
@@ -810,6 +871,7 @@ class GlanceListImagesRequest:
     def created_at(self, created_at):
         """Sets the created_at of this GlanceListImagesRequest.
 
+        镜像创建时间。支持按照时间点过滤查询，取值格式为“ 操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询创建时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： created_at=gt:2018-10-28T10:00:00Z
 
         :param created_at: The created_at of this GlanceListImagesRequest.
         :type: str
@@ -820,6 +882,7 @@ class GlanceListImagesRequest:
     def updated_at(self):
         """Gets the updated_at of this GlanceListImagesRequest.
 
+        镜像修改时间。支持按照时间点过滤查询，取值格式为 “ 操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询修改时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： updated_at=gt:2018-10-28T10:00:00Z
 
         :return: The updated_at of this GlanceListImagesRequest.
         :rtype: str
@@ -830,6 +893,7 @@ class GlanceListImagesRequest:
     def updated_at(self, updated_at):
         """Sets the updated_at of this GlanceListImagesRequest.
 
+        镜像修改时间。支持按照时间点过滤查询，取值格式为 “ 操作符:UTC时间”。 其中操作符支持如下几种： gt：大于 gte：大于等于 lt：小于 lte：小于等于 eq：等于 neq：不等于 时间格式支持：yyyy-MM-ddThh:mm:ssZ或者yyyy-MM-dd hh:mm:ss 例如，查询修改时间在2018-10-28 10:00:00之前的镜像，可以通过如下条件过滤： updated_at=gt:2018-10-28T10:00:00Z
 
         :param updated_at: The updated_at of this GlanceListImagesRequest.
         :type: str

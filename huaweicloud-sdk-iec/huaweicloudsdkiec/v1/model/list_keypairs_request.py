@@ -55,6 +55,7 @@ class ListKeypairsRequest:
     def limit(self):
         """Gets the limit of this ListKeypairsRequest.
 
+        查询返回keypair列表当前页面的数量。 取值范围：0~1000。
 
         :return: The limit of this ListKeypairsRequest.
         :rtype: int
@@ -65,6 +66,7 @@ class ListKeypairsRequest:
     def limit(self, limit):
         """Sets the limit of this ListKeypairsRequest.
 
+        查询返回keypair列表当前页面的数量。 取值范围：0~1000。
 
         :param limit: The limit of this ListKeypairsRequest.
         :type: int
@@ -75,6 +77,7 @@ class ListKeypairsRequest:
     def offset(self):
         """Gets the offset of this ListKeypairsRequest.
 
+        偏移量。 当前偏移量，默认为0。
 
         :return: The offset of this ListKeypairsRequest.
         :rtype: int
@@ -85,6 +88,7 @@ class ListKeypairsRequest:
     def offset(self, offset):
         """Sets the offset of this ListKeypairsRequest.
 
+        偏移量。 当前偏移量，默认为0。
 
         :param offset: The offset of this ListKeypairsRequest.
         :type: int
@@ -95,6 +99,7 @@ class ListKeypairsRequest:
     def name(self):
         """Gets the name of this ListKeypairsRequest.
 
+        根据名称查询keypair列表。
 
         :return: The name of this ListKeypairsRequest.
         :rtype: str
@@ -105,6 +110,7 @@ class ListKeypairsRequest:
     def name(self, name):
         """Sets the name of this ListKeypairsRequest.
 
+        根据名称查询keypair列表。
 
         :param name: The name of this ListKeypairsRequest.
         :type: str

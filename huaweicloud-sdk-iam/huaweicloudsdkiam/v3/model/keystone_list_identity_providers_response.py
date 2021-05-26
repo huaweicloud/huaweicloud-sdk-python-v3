@@ -35,7 +35,7 @@ class KeystoneListIdentityProvidersResponse(SdkResponse):
     def __init__(self, identity_providers=None, links=None):
         """KeystoneListIdentityProvidersResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneListIdentityProvidersResponse, self).__init__()
 
         self._identity_providers = None
         self._links = None

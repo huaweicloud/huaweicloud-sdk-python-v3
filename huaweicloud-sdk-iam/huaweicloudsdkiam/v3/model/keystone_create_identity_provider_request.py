@@ -49,6 +49,7 @@ class KeystoneCreateIdentityProviderRequest:
     def id(self):
         """Gets the id of this KeystoneCreateIdentityProviderRequest.
 
+        待注册的身份提供商ID。
 
         :return: The id of this KeystoneCreateIdentityProviderRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class KeystoneCreateIdentityProviderRequest:
     def id(self, id):
         """Sets the id of this KeystoneCreateIdentityProviderRequest.
 
+        待注册的身份提供商ID。
 
         :param id: The id of this KeystoneCreateIdentityProviderRequest.
         :type: str

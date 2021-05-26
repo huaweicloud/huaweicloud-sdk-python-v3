@@ -31,7 +31,7 @@ class DeletePortResponse(SdkResponse):
     def __init__(self):
         """DeletePortResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeletePortResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

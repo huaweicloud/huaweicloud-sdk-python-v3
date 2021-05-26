@@ -44,6 +44,7 @@ class DeleteSecurityGroupRuleRequest:
     def security_group_rule_id(self):
         """Gets the security_group_rule_id of this DeleteSecurityGroupRuleRequest.
 
+        安全组规则ID。
 
         :return: The security_group_rule_id of this DeleteSecurityGroupRuleRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteSecurityGroupRuleRequest:
     def security_group_rule_id(self, security_group_rule_id):
         """Sets the security_group_rule_id of this DeleteSecurityGroupRuleRequest.
 
+        安全组规则ID。
 
         :param security_group_rule_id: The security_group_rule_id of this DeleteSecurityGroupRuleRequest.
         :type: str

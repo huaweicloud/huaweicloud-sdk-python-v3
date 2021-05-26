@@ -35,7 +35,7 @@ class ResetDeviceSecretResponse(SdkResponse):
     def __init__(self, device_id=None, secret=None):
         """ResetDeviceSecretResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ResetDeviceSecretResponse, self).__init__()
 
         self._device_id = None
         self._secret = None

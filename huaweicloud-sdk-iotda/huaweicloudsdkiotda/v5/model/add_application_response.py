@@ -53,7 +53,7 @@ class AddApplicationResponse(SdkResponse):
     def __init__(self, app_id=None, app_name=None, create_time=None, default_app=None, app_type=None, username=None, permission=None, last_instance_id=None, current_instance_id=None, service_name=None, freezed=None):
         """AddApplicationResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AddApplicationResponse, self).__init__()
 
         self._app_id = None
         self._app_name = None

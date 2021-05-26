@@ -33,7 +33,7 @@ class ListBatchTaskFilesResponse(SdkResponse):
     def __init__(self, files=None):
         """ListBatchTaskFilesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListBatchTaskFilesResponse, self).__init__()
 
         self._files = None
         self.discriminator = None

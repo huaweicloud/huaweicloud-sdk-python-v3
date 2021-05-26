@@ -35,7 +35,7 @@ class KeystoneShowCatalogResponse(SdkResponse):
     def __init__(self, catalog=None, links=None):
         """KeystoneShowCatalogResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneShowCatalogResponse, self).__init__()
 
         self._catalog = None
         self._links = None

@@ -47,7 +47,7 @@ class ShowMetadataResponse(SdkResponse):
     def __init__(self, id=None, idp_id=None, entity_id=None, protocol_id=None, domain_id=None, xaccount_type=None, update_time=None, data=None):
         """ShowMetadataResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowMetadataResponse, self).__init__()
 
         self._id = None
         self._idp_id = None

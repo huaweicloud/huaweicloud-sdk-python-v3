@@ -49,6 +49,7 @@ class ShowQueueRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowQueueRequest.
 
+        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :return: The instance_id of this ShowQueueRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ShowQueueRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowQueueRequest.
 
+        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this ShowQueueRequest.
         :type: str
@@ -69,6 +71,7 @@ class ShowQueueRequest:
     def queue_id(self):
         """Gets the queue_id of this ShowQueueRequest.
 
+        队列ID，用于唯一标识一个队列。
 
         :return: The queue_id of this ShowQueueRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ShowQueueRequest:
     def queue_id(self, queue_id):
         """Sets the queue_id of this ShowQueueRequest.
 
+        队列ID，用于唯一标识一个队列。
 
         :param queue_id: The queue_id of this ShowQueueRequest.
         :type: str

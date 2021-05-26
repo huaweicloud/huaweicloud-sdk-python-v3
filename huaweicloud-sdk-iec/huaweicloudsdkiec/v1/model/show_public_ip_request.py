@@ -44,6 +44,7 @@ class ShowPublicIpRequest:
     def publicip_id(self):
         """Gets the publicip_id of this ShowPublicIpRequest.
 
+        弹性公网IP ID。
 
         :return: The publicip_id of this ShowPublicIpRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowPublicIpRequest:
     def publicip_id(self, publicip_id):
         """Sets the publicip_id of this ShowPublicIpRequest.
 
+        弹性公网IP ID。
 
         :param publicip_id: The publicip_id of this ShowPublicIpRequest.
         :type: str

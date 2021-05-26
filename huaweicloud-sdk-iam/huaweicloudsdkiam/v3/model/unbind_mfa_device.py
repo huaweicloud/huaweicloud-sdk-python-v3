@@ -45,8 +45,7 @@ class UnbindMfaDevice:
         self.discriminator = None
 
         self.user_id = user_id
-        if authentication_code is not None:
-            self.authentication_code = authentication_code
+        self.authentication_code = authentication_code
         self.serial_number = serial_number
 
     @property
@@ -75,7 +74,7 @@ class UnbindMfaDevice:
     def authentication_code(self):
         """Gets the authentication_code of this UnbindMfaDevice.
 
-        验证码。
+        • 管理员为IAM用户解绑MFA设备：填写6位任意验证码，不做校验。 • IAM用户为自己解绑MFA设备：填写虚拟MFA验证码。
 
         :return: The authentication_code of this UnbindMfaDevice.
         :rtype: str
@@ -86,7 +85,7 @@ class UnbindMfaDevice:
     def authentication_code(self, authentication_code):
         """Sets the authentication_code of this UnbindMfaDevice.
 
-        验证码。
+        • 管理员为IAM用户解绑MFA设备：填写6位任意验证码，不做校验。 • IAM用户为自己解绑MFA设备：填写虚拟MFA验证码。
 
         :param authentication_code: The authentication_code of this UnbindMfaDevice.
         :type: str

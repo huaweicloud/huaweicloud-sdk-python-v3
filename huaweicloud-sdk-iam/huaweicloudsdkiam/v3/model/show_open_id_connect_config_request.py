@@ -44,6 +44,7 @@ class ShowOpenIdConnectConfigRequest:
     def idp_id(self):
         """Gets the idp_id of this ShowOpenIdConnectConfigRequest.
 
+        身份提供商ID
 
         :return: The idp_id of this ShowOpenIdConnectConfigRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowOpenIdConnectConfigRequest:
     def idp_id(self, idp_id):
         """Sets the idp_id of this ShowOpenIdConnectConfigRequest.
 
+        身份提供商ID
 
         :param idp_id: The idp_id of this ShowOpenIdConnectConfigRequest.
         :type: str

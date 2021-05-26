@@ -48,6 +48,7 @@ class KeystoneRemoveUserFromGroupRequest:
     def group_id(self):
         """Gets the group_id of this KeystoneRemoveUserFromGroupRequest.
 
+        用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The group_id of this KeystoneRemoveUserFromGroupRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class KeystoneRemoveUserFromGroupRequest:
     def group_id(self, group_id):
         """Sets the group_id of this KeystoneRemoveUserFromGroupRequest.
 
+        用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param group_id: The group_id of this KeystoneRemoveUserFromGroupRequest.
         :type: str
@@ -68,6 +70,7 @@ class KeystoneRemoveUserFromGroupRequest:
     def user_id(self):
         """Gets the user_id of this KeystoneRemoveUserFromGroupRequest.
 
+        待从用户组中移除的IAM用户ID，获取方式请参见：[获取IAM用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The user_id of this KeystoneRemoveUserFromGroupRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class KeystoneRemoveUserFromGroupRequest:
     def user_id(self, user_id):
         """Sets the user_id of this KeystoneRemoveUserFromGroupRequest.
 
+        待从用户组中移除的IAM用户ID，获取方式请参见：[获取IAM用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param user_id: The user_id of this KeystoneRemoveUserFromGroupRequest.
         :type: str

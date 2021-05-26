@@ -33,7 +33,7 @@ class DeleteBatchTaskFileResponse(SdkResponse):
     def __init__(self, body=None):
         """DeleteBatchTaskFileResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteBatchTaskFileResponse, self).__init__()
 
         self._body = None
         self.discriminator = None

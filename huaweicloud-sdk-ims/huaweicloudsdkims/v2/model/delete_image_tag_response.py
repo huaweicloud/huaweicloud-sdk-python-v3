@@ -31,7 +31,7 @@ class DeleteImageTagResponse(SdkResponse):
     def __init__(self):
         """DeleteImageTagResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteImageTagResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

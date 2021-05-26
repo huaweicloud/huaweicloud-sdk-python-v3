@@ -44,6 +44,7 @@ class DeleteKeypairRequest:
     def keypair_name(self):
         """Gets the keypair_name of this DeleteKeypairRequest.
 
+        密钥名称。
 
         :return: The keypair_name of this DeleteKeypairRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteKeypairRequest:
     def keypair_name(self, keypair_name):
         """Sets the keypair_name of this DeleteKeypairRequest.
 
+        密钥名称。
 
         :param keypair_name: The keypair_name of this DeleteKeypairRequest.
         :type: str

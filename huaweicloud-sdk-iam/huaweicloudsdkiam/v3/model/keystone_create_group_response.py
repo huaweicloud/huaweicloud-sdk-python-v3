@@ -33,7 +33,7 @@ class KeystoneCreateGroupResponse(SdkResponse):
     def __init__(self, group=None):
         """KeystoneCreateGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneCreateGroupResponse, self).__init__()
 
         self._group = None
         self.discriminator = None

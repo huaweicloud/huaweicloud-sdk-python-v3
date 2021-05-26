@@ -49,6 +49,7 @@ class UpdateLoginProtectRequest:
     def user_id(self):
         """Gets the user_id of this UpdateLoginProtectRequest.
 
+        待修改登录保护状态信息的IAM用户ID。
 
         :return: The user_id of this UpdateLoginProtectRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateLoginProtectRequest:
     def user_id(self, user_id):
         """Sets the user_id of this UpdateLoginProtectRequest.
 
+        待修改登录保护状态信息的IAM用户ID。
 
         :param user_id: The user_id of this UpdateLoginProtectRequest.
         :type: str

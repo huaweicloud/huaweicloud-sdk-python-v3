@@ -31,7 +31,7 @@ class GlanceDeleteTagResponse(SdkResponse):
     def __init__(self):
         """GlanceDeleteTagResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(GlanceDeleteTagResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

@@ -33,7 +33,7 @@ class UpdateOpenIdConnectConfigResponse(SdkResponse):
     def __init__(self, openid_connect_config=None):
         """UpdateOpenIdConnectConfigResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateOpenIdConnectConfigResponse, self).__init__()
 
         self._openid_connect_config = None
         self.discriminator = None

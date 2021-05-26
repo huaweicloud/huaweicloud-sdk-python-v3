@@ -49,6 +49,7 @@ class UpdateFirewallRequest:
     def firewall_id(self):
         """Gets the firewall_id of this UpdateFirewallRequest.
 
+        网络ACL ID
 
         :return: The firewall_id of this UpdateFirewallRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateFirewallRequest:
     def firewall_id(self, firewall_id):
         """Sets the firewall_id of this UpdateFirewallRequest.
 
+        网络ACL ID
 
         :param firewall_id: The firewall_id of this UpdateFirewallRequest.
         :type: str

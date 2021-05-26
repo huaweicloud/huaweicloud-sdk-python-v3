@@ -31,7 +31,7 @@ class KeystoneDeleteProtocolResponse(SdkResponse):
     def __init__(self):
         """KeystoneDeleteProtocolResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneDeleteProtocolResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

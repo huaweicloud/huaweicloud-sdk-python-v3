@@ -60,6 +60,7 @@ class ListSubnetsRequest:
     def vpc_id(self):
         """Gets the vpc_id of this ListSubnetsRequest.
 
+        虚拟私有云ID。
 
         :return: The vpc_id of this ListSubnetsRequest.
         :rtype: str
@@ -70,6 +71,7 @@ class ListSubnetsRequest:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this ListSubnetsRequest.
 
+        虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this ListSubnetsRequest.
         :type: str
@@ -80,6 +82,7 @@ class ListSubnetsRequest:
     def limit(self):
         """Gets the limit of this ListSubnetsRequest.
 
+        查询返回边缘子网列表数量。取值范围：0~1000。
 
         :return: The limit of this ListSubnetsRequest.
         :rtype: int
@@ -90,6 +93,7 @@ class ListSubnetsRequest:
     def limit(self, limit):
         """Sets the limit of this ListSubnetsRequest.
 
+        查询返回边缘子网列表数量。取值范围：0~1000。
 
         :param limit: The limit of this ListSubnetsRequest.
         :type: int
@@ -100,6 +104,7 @@ class ListSubnetsRequest:
     def offset(self):
         """Gets the offset of this ListSubnetsRequest.
 
+        查询的偏移量。
 
         :return: The offset of this ListSubnetsRequest.
         :rtype: int
@@ -110,6 +115,7 @@ class ListSubnetsRequest:
     def offset(self, offset):
         """Sets the offset of this ListSubnetsRequest.
 
+        查询的偏移量。
 
         :param offset: The offset of this ListSubnetsRequest.
         :type: int
@@ -120,6 +126,7 @@ class ListSubnetsRequest:
     def site_id(self):
         """Gets the site_id of this ListSubnetsRequest.
 
+        站点ID。
 
         :return: The site_id of this ListSubnetsRequest.
         :rtype: str
@@ -130,6 +137,7 @@ class ListSubnetsRequest:
     def site_id(self, site_id):
         """Sets the site_id of this ListSubnetsRequest.
 
+        站点ID。
 
         :param site_id: The site_id of this ListSubnetsRequest.
         :type: str

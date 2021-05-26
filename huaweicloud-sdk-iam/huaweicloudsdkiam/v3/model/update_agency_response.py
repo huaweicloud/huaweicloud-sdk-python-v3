@@ -33,7 +33,7 @@ class UpdateAgencyResponse(SdkResponse):
     def __init__(self, agency=None):
         """UpdateAgencyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateAgencyResponse, self).__init__()
 
         self._agency = None
         self.discriminator = None

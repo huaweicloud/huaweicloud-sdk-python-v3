@@ -33,7 +33,7 @@ class KeystoneListVersionsResponse(SdkResponse):
     def __init__(self, versions=None):
         """KeystoneListVersionsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneListVersionsResponse, self).__init__()
 
         self._versions = None
         self.discriminator = None

@@ -31,7 +31,7 @@ class DeletePublicIpResponse(SdkResponse):
     def __init__(self):
         """DeletePublicIpResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeletePublicIpResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

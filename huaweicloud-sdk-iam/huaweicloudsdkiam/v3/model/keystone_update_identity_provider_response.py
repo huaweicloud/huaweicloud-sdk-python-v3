@@ -33,7 +33,7 @@ class KeystoneUpdateIdentityProviderResponse(SdkResponse):
     def __init__(self, identity_provider=None):
         """KeystoneUpdateIdentityProviderResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneUpdateIdentityProviderResponse, self).__init__()
 
         self._identity_provider = None
         self.discriminator = None

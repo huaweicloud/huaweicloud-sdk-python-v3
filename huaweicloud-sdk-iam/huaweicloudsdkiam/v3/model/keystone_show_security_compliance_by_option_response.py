@@ -33,7 +33,7 @@ class KeystoneShowSecurityComplianceByOptionResponse(SdkResponse):
     def __init__(self, config=None):
         """KeystoneShowSecurityComplianceByOptionResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(KeystoneShowSecurityComplianceByOptionResponse, self).__init__()
 
         self._config = None
         self.discriminator = None

@@ -33,7 +33,7 @@ class ShowSecurityGroupRuleResponse(SdkResponse):
     def __init__(self, security_group_rule=None):
         """ShowSecurityGroupRuleResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowSecurityGroupRuleResponse, self).__init__()
 
         self._security_group_rule = None
         self.discriminator = None

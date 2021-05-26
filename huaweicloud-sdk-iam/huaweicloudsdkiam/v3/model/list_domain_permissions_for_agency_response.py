@@ -33,7 +33,7 @@ class ListDomainPermissionsForAgencyResponse(SdkResponse):
     def __init__(self, roles=None):
         """ListDomainPermissionsForAgencyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListDomainPermissionsForAgencyResponse, self).__init__()
 
         self._roles = None
         self.discriminator = None

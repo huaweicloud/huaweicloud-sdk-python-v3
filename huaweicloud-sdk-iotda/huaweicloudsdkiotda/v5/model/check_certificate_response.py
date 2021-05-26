@@ -33,7 +33,7 @@ class CheckCertificateResponse(SdkResponse):
     def __init__(self, body=None):
         """CheckCertificateResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CheckCertificateResponse, self).__init__()
 
         self._body = None
         self.discriminator = None

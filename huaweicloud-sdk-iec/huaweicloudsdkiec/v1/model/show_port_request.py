@@ -44,6 +44,7 @@ class ShowPortRequest:
     def port_id(self):
         """Gets the port_id of this ShowPortRequest.
 
+        端口ID。
 
         :return: The port_id of this ShowPortRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowPortRequest:
     def port_id(self, port_id):
         """Sets the port_id of this ShowPortRequest.
 
+        端口ID。
 
         :param port_id: The port_id of this ShowPortRequest.
         :type: str

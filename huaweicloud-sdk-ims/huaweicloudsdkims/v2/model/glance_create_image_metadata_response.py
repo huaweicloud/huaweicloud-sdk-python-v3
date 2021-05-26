@@ -85,7 +85,7 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
     def __init__(self, visibility=None, name=None, protected=None, container_format=None, disk_format=None, tags=None, min_ram=None, min_disk=None, status=None, created_at=None, updated_at=None, _self=None, id=None, file=None, schema=None, image_source_type=None, image_size=None, isregistered=None, os_version=None, os_type=None, platform=None, os_bit=None, imagetype=None, virtual_env_type=None, owner=None, virtual_size=None, properties=None):
         """GlanceCreateImageMetadataResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(GlanceCreateImageMetadataResponse, self).__init__()
 
         self._visibility = None
         self._name = None

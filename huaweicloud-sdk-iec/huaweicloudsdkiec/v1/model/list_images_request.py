@@ -135,6 +135,7 @@ class ListImagesRequest:
     def imagetype(self):
         """Gets the imagetype of this ListImagesRequest.
 
+        镜像类型，目前支持以下类型：  - 公共镜像：gold  - 私有镜像：private
 
         :return: The imagetype of this ListImagesRequest.
         :rtype: str
@@ -145,6 +146,7 @@ class ListImagesRequest:
     def imagetype(self, imagetype):
         """Sets the imagetype of this ListImagesRequest.
 
+        镜像类型，目前支持以下类型：  - 公共镜像：gold  - 私有镜像：private
 
         :param imagetype: The imagetype of this ListImagesRequest.
         :type: str
@@ -155,6 +157,7 @@ class ListImagesRequest:
     def protected(self):
         """Gets the protected of this ListImagesRequest.
 
+        镜像是否是受保护，取值为true/false，一般查询公共镜像时候取值为true，查询私有镜像可以不指定。
 
         :return: The protected of this ListImagesRequest.
         :rtype: str
@@ -165,6 +168,7 @@ class ListImagesRequest:
     def protected(self, protected):
         """Sets the protected of this ListImagesRequest.
 
+        镜像是否是受保护，取值为true/false，一般查询公共镜像时候取值为true，查询私有镜像可以不指定。
 
         :param protected: The protected of this ListImagesRequest.
         :type: str
@@ -175,6 +179,7 @@ class ListImagesRequest:
     def id(self):
         """Gets the id of this ListImagesRequest.
 
+        镜像ID，精确匹配。
 
         :return: The id of this ListImagesRequest.
         :rtype: str
@@ -185,6 +190,7 @@ class ListImagesRequest:
     def id(self, id):
         """Sets the id of this ListImagesRequest.
 
+        镜像ID，精确匹配。
 
         :param id: The id of this ListImagesRequest.
         :type: str
@@ -195,6 +201,7 @@ class ListImagesRequest:
     def visibility(self):
         """Gets the visibility of this ListImagesRequest.
 
+        是否被其他租户可见，取值如下：  - public：公共镜像  - private：私有镜像
 
         :return: The visibility of this ListImagesRequest.
         :rtype: str
@@ -205,6 +212,7 @@ class ListImagesRequest:
     def visibility(self, visibility):
         """Sets the visibility of this ListImagesRequest.
 
+        是否被其他租户可见，取值如下：  - public：公共镜像  - private：私有镜像
 
         :param visibility: The visibility of this ListImagesRequest.
         :type: str
@@ -215,6 +223,7 @@ class ListImagesRequest:
     def status(self):
         """Gets the status of this ListImagesRequest.
 
+        镜像状态。取值如下：  - saving：表示镜像正在上传文件到后端存储  - deleted：表示镜像已经删除  - killed：表示镜像上传错误  - active：表示镜像可以正常使用
 
         :return: The status of this ListImagesRequest.
         :rtype: str
@@ -225,6 +234,7 @@ class ListImagesRequest:
     def status(self, status):
         """Sets the status of this ListImagesRequest.
 
+        镜像状态。取值如下：  - saving：表示镜像正在上传文件到后端存储  - deleted：表示镜像已经删除  - killed：表示镜像上传错误  - active：表示镜像可以正常使用
 
         :param status: The status of this ListImagesRequest.
         :type: str
@@ -235,6 +245,7 @@ class ListImagesRequest:
     def name(self):
         """Gets the name of this ListImagesRequest.
 
+        镜像名称，匹配规则为精确匹配。
 
         :return: The name of this ListImagesRequest.
         :rtype: str
@@ -245,6 +256,7 @@ class ListImagesRequest:
     def name(self, name):
         """Sets the name of this ListImagesRequest.
 
+        镜像名称，匹配规则为精确匹配。
 
         :param name: The name of this ListImagesRequest.
         :type: str
@@ -255,6 +267,7 @@ class ListImagesRequest:
     def os_type(self):
         """Gets the os_type of this ListImagesRequest.
 
+        镜像系统类型，取值如下：  - Linux - Windows - Other
 
         :return: The os_type of this ListImagesRequest.
         :rtype: str
@@ -265,6 +278,7 @@ class ListImagesRequest:
     def os_type(self, os_type):
         """Sets the os_type of this ListImagesRequest.
 
+        镜像系统类型，取值如下：  - Linux - Windows - Other
 
         :param os_type: The os_type of this ListImagesRequest.
         :type: str
@@ -275,6 +289,7 @@ class ListImagesRequest:
     def virtual_env_type(self):
         """Gets the virtual_env_type of this ListImagesRequest.
 
+        镜像使用环境类型。  目前仅支持系统盘镜像，取值为：FusionCompute
 
         :return: The virtual_env_type of this ListImagesRequest.
         :rtype: str
@@ -285,6 +300,7 @@ class ListImagesRequest:
     def virtual_env_type(self, virtual_env_type):
         """Sets the virtual_env_type of this ListImagesRequest.
 
+        镜像使用环境类型。  目前仅支持系统盘镜像，取值为：FusionCompute
 
         :param virtual_env_type: The virtual_env_type of this ListImagesRequest.
         :type: str
@@ -295,6 +311,7 @@ class ListImagesRequest:
     def isregistered(self):
         """Gets the isregistered of this ListImagesRequest.
 
+        镜像是否可用，取值为true/false。 > 查询公共镜像时，该参数无效。
 
         :return: The isregistered of this ListImagesRequest.
         :rtype: str
@@ -305,6 +322,7 @@ class ListImagesRequest:
     def isregistered(self, isregistered):
         """Sets the isregistered of this ListImagesRequest.
 
+        镜像是否可用，取值为true/false。 > 查询公共镜像时，该参数无效。
 
         :param isregistered: The isregistered of this ListImagesRequest.
         :type: str
@@ -315,6 +333,7 @@ class ListImagesRequest:
     def limit(self):
         """Gets the limit of this ListImagesRequest.
 
+        用于分页，表示查询几条镜像记录，取值为正整数，最大（默认）取值为500
 
         :return: The limit of this ListImagesRequest.
         :rtype: int
@@ -325,6 +344,7 @@ class ListImagesRequest:
     def limit(self, limit):
         """Sets the limit of this ListImagesRequest.
 
+        用于分页，表示查询几条镜像记录，取值为正整数，最大（默认）取值为500
 
         :param limit: The limit of this ListImagesRequest.
         :type: int
@@ -335,6 +355,7 @@ class ListImagesRequest:
     def offset(self):
         """Gets the offset of this ListImagesRequest.
 
+        用于分页，表示查询偏移量，表示从整个列表查询结果中的该位置向后进行查询，并非页数偏移，默认取值为0，表示查询第一页。
 
         :return: The offset of this ListImagesRequest.
         :rtype: int
@@ -345,6 +366,7 @@ class ListImagesRequest:
     def offset(self, offset):
         """Sets the offset of this ListImagesRequest.
 
+        用于分页，表示查询偏移量，表示从整个列表查询结果中的该位置向后进行查询，并非页数偏移，默认取值为0，表示查询第一页。
 
         :param offset: The offset of this ListImagesRequest.
         :type: int
@@ -355,6 +377,7 @@ class ListImagesRequest:
     def sort_key(self):
         """Gets the sort_key of this ListImagesRequest.
 
+        用于排序，表示按照哪个字段排序，取值为镜像属性name、status、disk_format、created_at，默认取值为created_at。
 
         :return: The sort_key of this ListImagesRequest.
         :rtype: str
@@ -365,6 +388,7 @@ class ListImagesRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListImagesRequest.
 
+        用于排序，表示按照哪个字段排序，取值为镜像属性name、status、disk_format、created_at，默认取值为created_at。
 
         :param sort_key: The sort_key of this ListImagesRequest.
         :type: str
@@ -375,6 +399,7 @@ class ListImagesRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListImagesRequest.
 
+        用于排序，表示升序还是降序，取值为asc和desc，与sort_key一起组合使用，默认为降序desc。
 
         :return: The sort_dir of this ListImagesRequest.
         :rtype: str
@@ -385,6 +410,7 @@ class ListImagesRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListImagesRequest.
 
+        用于排序，表示升序还是降序，取值为asc和desc，与sort_key一起组合使用，默认为降序desc。
 
         :param sort_dir: The sort_dir of this ListImagesRequest.
         :type: str
@@ -395,6 +421,7 @@ class ListImagesRequest:
     def support_kvm(self):
         """Gets the support_kvm of this ListImagesRequest.
 
+        如果镜像支持KVM，取值为true，否则无该属性。
 
         :return: The support_kvm of this ListImagesRequest.
         :rtype: str
@@ -405,6 +432,7 @@ class ListImagesRequest:
     def support_kvm(self, support_kvm):
         """Sets the support_kvm of this ListImagesRequest.
 
+        如果镜像支持KVM，取值为true，否则无该属性。
 
         :param support_kvm: The support_kvm of this ListImagesRequest.
         :type: str
@@ -415,6 +443,7 @@ class ListImagesRequest:
     def support_kvm_gpu_type(self):
         """Gets the support_kvm_gpu_type of this ListImagesRequest.
 
+        如果镜像是支持KVM虚拟化平台下的GPU类型，取值为“V100_vGPU”或者“RTX5000”，否则无该属性。
 
         :return: The support_kvm_gpu_type of this ListImagesRequest.
         :rtype: str
@@ -425,6 +454,7 @@ class ListImagesRequest:
     def support_kvm_gpu_type(self, support_kvm_gpu_type):
         """Sets the support_kvm_gpu_type of this ListImagesRequest.
 
+        如果镜像是支持KVM虚拟化平台下的GPU类型，取值为“V100_vGPU”或者“RTX5000”，否则无该属性。
 
         :param support_kvm_gpu_type: The support_kvm_gpu_type of this ListImagesRequest.
         :type: str
@@ -435,6 +465,7 @@ class ListImagesRequest:
     def support_kvm_ascend_310(self):
         """Gets the support_kvm_ascend_310 of this ListImagesRequest.
 
+        如果镜像支持AI加速，取值为true，否则无该属性。
 
         :return: The support_kvm_ascend_310 of this ListImagesRequest.
         :rtype: str
@@ -445,6 +476,7 @@ class ListImagesRequest:
     def support_kvm_ascend_310(self, support_kvm_ascend_310):
         """Sets the support_kvm_ascend_310 of this ListImagesRequest.
 
+        如果镜像支持AI加速，取值为true，否则无该属性。
 
         :param support_kvm_ascend_310: The support_kvm_ascend_310 of this ListImagesRequest.
         :type: str
@@ -455,6 +487,7 @@ class ListImagesRequest:
     def support_kvm_hi1822_hiovs(self):
         """Gets the support_kvm_hi1822_hiovs of this ListImagesRequest.
 
+        如果镜像支持计算增强，取值为true，否则无该属性。
 
         :return: The support_kvm_hi1822_hiovs of this ListImagesRequest.
         :rtype: str
@@ -465,6 +498,7 @@ class ListImagesRequest:
     def support_kvm_hi1822_hiovs(self, support_kvm_hi1822_hiovs):
         """Sets the support_kvm_hi1822_hiovs of this ListImagesRequest.
 
+        如果镜像支持计算增强，取值为true，否则无该属性。
 
         :param support_kvm_hi1822_hiovs: The support_kvm_hi1822_hiovs of this ListImagesRequest.
         :type: str
@@ -475,6 +509,7 @@ class ListImagesRequest:
     def support_arm(self):
         """Gets the support_arm of this ListImagesRequest.
 
+        如果镜像为ARM架构类型，取值为true，否则无该属性。
 
         :return: The support_arm of this ListImagesRequest.
         :rtype: str
@@ -485,6 +520,7 @@ class ListImagesRequest:
     def support_arm(self, support_arm):
         """Sets the support_arm of this ListImagesRequest.
 
+        如果镜像为ARM架构类型，取值为true，否则无该属性。
 
         :param support_arm: The support_arm of this ListImagesRequest.
         :type: str
@@ -495,6 +531,7 @@ class ListImagesRequest:
     def support_gpu_t4(self):
         """Gets the support_gpu_t4 of this ListImagesRequest.
 
+        如果镜像支持GPU T4，取值为true，否则无该属性。
 
         :return: The support_gpu_t4 of this ListImagesRequest.
         :rtype: str
@@ -505,6 +542,7 @@ class ListImagesRequest:
     def support_gpu_t4(self, support_gpu_t4):
         """Sets the support_gpu_t4 of this ListImagesRequest.
 
+        如果镜像支持GPU T4，取值为true，否则无该属性。
 
         :param support_gpu_t4: The support_gpu_t4 of this ListImagesRequest.
         :type: str

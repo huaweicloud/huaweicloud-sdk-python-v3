@@ -35,7 +35,7 @@ class ListPublicIpsResponse(SdkResponse):
     def __init__(self, count=None, publicips=None):
         """ListPublicIpsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListPublicIpsResponse, self).__init__()
 
         self._count = None
         self._publicips = None

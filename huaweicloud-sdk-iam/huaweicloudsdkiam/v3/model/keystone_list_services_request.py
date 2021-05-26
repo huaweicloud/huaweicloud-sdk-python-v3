@@ -45,6 +45,7 @@ class KeystoneListServicesRequest:
     def type(self):
         """Gets the type of this KeystoneListServicesRequest.
 
+        服务类型。
 
         :return: The type of this KeystoneListServicesRequest.
         :rtype: str
@@ -55,6 +56,7 @@ class KeystoneListServicesRequest:
     def type(self, type):
         """Sets the type of this KeystoneListServicesRequest.
 
+        服务类型。
 
         :param type: The type of this KeystoneListServicesRequest.
         :type: str

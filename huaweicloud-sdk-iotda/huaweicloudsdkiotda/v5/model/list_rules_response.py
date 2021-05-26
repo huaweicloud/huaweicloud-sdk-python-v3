@@ -37,7 +37,7 @@ class ListRulesResponse(SdkResponse):
     def __init__(self, marker=None, count=None, rules=None):
         """ListRulesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListRulesResponse, self).__init__()
 
         self._marker = None
         self._count = None

@@ -35,7 +35,7 @@ class ListAsyncHistoryCommandsResponse(SdkResponse):
     def __init__(self, commands=None, page=None):
         """ListAsyncHistoryCommandsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListAsyncHistoryCommandsResponse, self).__init__()
 
         self._commands = None
         self._page = None

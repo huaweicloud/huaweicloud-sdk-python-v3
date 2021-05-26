@@ -48,6 +48,7 @@ class KeystoneListAllProjectPermissionsForGroupRequest:
     def domain_id(self):
         """Gets the domain_id of this KeystoneListAllProjectPermissionsForGroupRequest.
 
+        租户ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The domain_id of this KeystoneListAllProjectPermissionsForGroupRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class KeystoneListAllProjectPermissionsForGroupRequest:
     def domain_id(self, domain_id):
         """Sets the domain_id of this KeystoneListAllProjectPermissionsForGroupRequest.
 
+        租户ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param domain_id: The domain_id of this KeystoneListAllProjectPermissionsForGroupRequest.
         :type: str
@@ -68,6 +70,7 @@ class KeystoneListAllProjectPermissionsForGroupRequest:
     def group_id(self):
         """Gets the group_id of this KeystoneListAllProjectPermissionsForGroupRequest.
 
+        用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :return: The group_id of this KeystoneListAllProjectPermissionsForGroupRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class KeystoneListAllProjectPermissionsForGroupRequest:
     def group_id(self, group_id):
         """Sets the group_id of this KeystoneListAllProjectPermissionsForGroupRequest.
 
+        用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
         :param group_id: The group_id of this KeystoneListAllProjectPermissionsForGroupRequest.
         :type: str

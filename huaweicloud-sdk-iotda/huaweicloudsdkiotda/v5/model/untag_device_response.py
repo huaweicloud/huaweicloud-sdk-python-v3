@@ -33,7 +33,7 @@ class UntagDeviceResponse(SdkResponse):
     def __init__(self, body=None):
         """UntagDeviceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UntagDeviceResponse, self).__init__()
 
         self._body = None
         self.discriminator = None

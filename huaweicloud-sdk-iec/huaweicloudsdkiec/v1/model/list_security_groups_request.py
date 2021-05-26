@@ -50,6 +50,7 @@ class ListSecurityGroupsRequest:
     def limit(self):
         """Gets the limit of this ListSecurityGroupsRequest.
 
+        查询返回边缘安全组列表数量。取值范围：0~1000。
 
         :return: The limit of this ListSecurityGroupsRequest.
         :rtype: int
@@ -60,6 +61,7 @@ class ListSecurityGroupsRequest:
     def limit(self, limit):
         """Sets the limit of this ListSecurityGroupsRequest.
 
+        查询返回边缘安全组列表数量。取值范围：0~1000。
 
         :param limit: The limit of this ListSecurityGroupsRequest.
         :type: int
@@ -70,6 +72,7 @@ class ListSecurityGroupsRequest:
     def offset(self):
         """Gets the offset of this ListSecurityGroupsRequest.
 
+        查询的偏移量。
 
         :return: The offset of this ListSecurityGroupsRequest.
         :rtype: int
@@ -80,6 +83,7 @@ class ListSecurityGroupsRequest:
     def offset(self, offset):
         """Sets the offset of this ListSecurityGroupsRequest.
 
+        查询的偏移量。
 
         :param offset: The offset of this ListSecurityGroupsRequest.
         :type: int

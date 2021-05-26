@@ -44,6 +44,7 @@ class KeystoneShowEndpointRequest:
     def endpoint_id(self):
         """Gets the endpoint_id of this KeystoneShowEndpointRequest.
 
+        待查询的终端节点ID。
 
         :return: The endpoint_id of this KeystoneShowEndpointRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class KeystoneShowEndpointRequest:
     def endpoint_id(self, endpoint_id):
         """Sets the endpoint_id of this KeystoneShowEndpointRequest.
 
+        待查询的终端节点ID。
 
         :param endpoint_id: The endpoint_id of this KeystoneShowEndpointRequest.
         :type: str

@@ -141,7 +141,7 @@ class UpdateImageResponse(SdkResponse):
     def __init__(self, backup_id=None, data_origin=None, description=None, image_location=None, image_size=None, image_source_type=None, imagetype=None, is_config_init=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, architecture=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None, max_ram=None, system__cmkid=None, os_feature_list=None, account_code=None, hw_vif_multiqueue_enabled=None):
         """UpdateImageResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateImageResponse, self).__init__()
 
         self._backup_id = None
         self._data_origin = None

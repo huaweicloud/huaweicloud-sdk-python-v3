@@ -43,7 +43,7 @@ class UpdateRuleActionResponse(SdkResponse):
     def __init__(self, action_id=None, rule_id=None, app_id=None, channel=None, channel_detail=None, batch=None):
         """UpdateRuleActionResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateRuleActionResponse, self).__init__()
 
         self._action_id = None
         self._rule_id = None

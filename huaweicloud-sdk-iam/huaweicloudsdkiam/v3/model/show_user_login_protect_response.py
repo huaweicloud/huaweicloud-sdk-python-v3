@@ -33,7 +33,7 @@ class ShowUserLoginProtectResponse(SdkResponse):
     def __init__(self, login_protect=None):
         """ShowUserLoginProtectResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowUserLoginProtectResponse, self).__init__()
 
         self._login_protect = None
         self.discriminator = None

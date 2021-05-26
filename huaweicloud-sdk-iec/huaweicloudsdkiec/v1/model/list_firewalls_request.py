@@ -60,6 +60,7 @@ class ListFirewallsRequest:
     def limit(self):
         """Gets the limit of this ListFirewallsRequest.
 
+        每页返回的个数  取值范围：0~1000
 
         :return: The limit of this ListFirewallsRequest.
         :rtype: int
@@ -70,6 +71,7 @@ class ListFirewallsRequest:
     def limit(self, limit):
         """Sets the limit of this ListFirewallsRequest.
 
+        每页返回的个数  取值范围：0~1000
 
         :param limit: The limit of this ListFirewallsRequest.
         :type: int
@@ -80,6 +82,7 @@ class ListFirewallsRequest:
     def offset(self):
         """Gets the offset of this ListFirewallsRequest.
 
+        查询的偏移量。
 
         :return: The offset of this ListFirewallsRequest.
         :rtype: int
@@ -90,6 +93,7 @@ class ListFirewallsRequest:
     def offset(self, offset):
         """Sets the offset of this ListFirewallsRequest.
 
+        查询的偏移量。
 
         :param offset: The offset of this ListFirewallsRequest.
         :type: int
@@ -100,6 +104,7 @@ class ListFirewallsRequest:
     def id(self):
         """Gets the id of this ListFirewallsRequest.
 
+        通过ID过滤网络ACL。
 
         :return: The id of this ListFirewallsRequest.
         :rtype: str
@@ -110,6 +115,7 @@ class ListFirewallsRequest:
     def id(self, id):
         """Sets the id of this ListFirewallsRequest.
 
+        通过ID过滤网络ACL。
 
         :param id: The id of this ListFirewallsRequest.
         :type: str
@@ -120,6 +126,7 @@ class ListFirewallsRequest:
     def name(self):
         """Gets the name of this ListFirewallsRequest.
 
+        通过name模糊匹配网络ACL。
 
         :return: The name of this ListFirewallsRequest.
         :rtype: str
@@ -130,6 +137,7 @@ class ListFirewallsRequest:
     def name(self, name):
         """Sets the name of this ListFirewallsRequest.
 
+        通过name模糊匹配网络ACL。
 
         :param name: The name of this ListFirewallsRequest.
         :type: str

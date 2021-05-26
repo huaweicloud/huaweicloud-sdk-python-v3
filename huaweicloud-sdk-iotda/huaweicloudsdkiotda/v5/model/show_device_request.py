@@ -49,6 +49,7 @@ class ShowDeviceRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowDeviceRequest.
 
+        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :return: The instance_id of this ShowDeviceRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ShowDeviceRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowDeviceRequest.
 
+        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this ShowDeviceRequest.
         :type: str
@@ -69,6 +71,7 @@ class ShowDeviceRequest:
     def device_id(self):
         """Gets the device_id of this ShowDeviceRequest.
 
+        设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
         :return: The device_id of this ShowDeviceRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ShowDeviceRequest:
     def device_id(self, device_id):
         """Sets the device_id of this ShowDeviceRequest.
 
+        设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
         :param device_id: The device_id of this ShowDeviceRequest.
         :type: str

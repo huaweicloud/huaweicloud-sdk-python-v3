@@ -49,6 +49,7 @@ class UpdateSubnetRequest:
     def subnet_id(self):
         """Gets the subnet_id of this UpdateSubnetRequest.
 
+        子网ID。
 
         :return: The subnet_id of this UpdateSubnetRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateSubnetRequest:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this UpdateSubnetRequest.
 
+        子网ID。
 
         :param subnet_id: The subnet_id of this UpdateSubnetRequest.
         :type: str
