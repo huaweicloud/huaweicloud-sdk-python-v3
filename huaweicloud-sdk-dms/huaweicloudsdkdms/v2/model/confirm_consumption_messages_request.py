@@ -53,6 +53,7 @@ class ConfirmConsumptionMessagesRequest:
     def queue_id(self):
         """Gets the queue_id of this ConfirmConsumptionMessagesRequest.
 
+        队列ID。
 
         :return: The queue_id of this ConfirmConsumptionMessagesRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class ConfirmConsumptionMessagesRequest:
     def queue_id(self, queue_id):
         """Sets the queue_id of this ConfirmConsumptionMessagesRequest.
 
+        队列ID。
 
         :param queue_id: The queue_id of this ConfirmConsumptionMessagesRequest.
         :type: str
@@ -73,6 +75,7 @@ class ConfirmConsumptionMessagesRequest:
     def consumer_group_id(self):
         """Gets the consumer_group_id of this ConfirmConsumptionMessagesRequest.
 
+        消费组ID。
 
         :return: The consumer_group_id of this ConfirmConsumptionMessagesRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class ConfirmConsumptionMessagesRequest:
     def consumer_group_id(self, consumer_group_id):
         """Sets the consumer_group_id of this ConfirmConsumptionMessagesRequest.
 
+        消费组ID。
 
         :param consumer_group_id: The consumer_group_id of this ConfirmConsumptionMessagesRequest.
         :type: str

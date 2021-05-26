@@ -49,6 +49,7 @@ class BatchCreateOrDeleteQueueTagRequest:
     def queue_id(self):
         """Gets the queue_id of this BatchCreateOrDeleteQueueTagRequest.
 
+        队列ID。
 
         :return: The queue_id of this BatchCreateOrDeleteQueueTagRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class BatchCreateOrDeleteQueueTagRequest:
     def queue_id(self, queue_id):
         """Sets the queue_id of this BatchCreateOrDeleteQueueTagRequest.
 
+        队列ID。
 
         :param queue_id: The queue_id of this BatchCreateOrDeleteQueueTagRequest.
         :type: str

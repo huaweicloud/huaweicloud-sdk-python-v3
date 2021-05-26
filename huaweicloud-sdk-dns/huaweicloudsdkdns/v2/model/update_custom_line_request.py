@@ -49,6 +49,7 @@ class UpdateCustomLineRequest:
     def line_id(self):
         """Gets the line_id of this UpdateCustomLineRequest.
 
+        解析线路ID。
 
         :return: The line_id of this UpdateCustomLineRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateCustomLineRequest:
     def line_id(self, line_id):
         """Sets the line_id of this UpdateCustomLineRequest.
 
+        解析线路ID。
 
         :param line_id: The line_id of this UpdateCustomLineRequest.
         :type: str

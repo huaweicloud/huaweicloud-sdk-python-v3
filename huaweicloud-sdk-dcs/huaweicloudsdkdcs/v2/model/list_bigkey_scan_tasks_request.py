@@ -59,6 +59,7 @@ class ListBigkeyScanTasksRequest:
     def instance_id(self):
         """Gets the instance_id of this ListBigkeyScanTasksRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListBigkeyScanTasksRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class ListBigkeyScanTasksRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListBigkeyScanTasksRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListBigkeyScanTasksRequest.
         :type: str
@@ -79,6 +81,7 @@ class ListBigkeyScanTasksRequest:
     def offset(self):
         """Gets the offset of this ListBigkeyScanTasksRequest.
 
+        偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :return: The offset of this ListBigkeyScanTasksRequest.
         :rtype: int
@@ -89,6 +92,7 @@ class ListBigkeyScanTasksRequest:
     def offset(self, offset):
         """Sets the offset of this ListBigkeyScanTasksRequest.
 
+        偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListBigkeyScanTasksRequest.
         :type: int
@@ -99,6 +103,7 @@ class ListBigkeyScanTasksRequest:
     def limit(self):
         """Gets the limit of this ListBigkeyScanTasksRequest.
 
+        每页显示的条目数量。
 
         :return: The limit of this ListBigkeyScanTasksRequest.
         :rtype: int
@@ -109,6 +114,7 @@ class ListBigkeyScanTasksRequest:
     def limit(self, limit):
         """Sets the limit of this ListBigkeyScanTasksRequest.
 
+        每页显示的条目数量。
 
         :param limit: The limit of this ListBigkeyScanTasksRequest.
         :type: int
@@ -119,6 +125,7 @@ class ListBigkeyScanTasksRequest:
     def status(self):
         """Gets the status of this ListBigkeyScanTasksRequest.
 
+        分析任务状态
 
         :return: The status of this ListBigkeyScanTasksRequest.
         :rtype: str
@@ -129,6 +136,7 @@ class ListBigkeyScanTasksRequest:
     def status(self, status):
         """Sets the status of this ListBigkeyScanTasksRequest.
 
+        分析任务状态
 
         :param status: The status of this ListBigkeyScanTasksRequest.
         :type: str

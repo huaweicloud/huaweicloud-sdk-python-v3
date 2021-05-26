@@ -111,7 +111,7 @@ class ShowInstanceResponse(SdkResponse):
     def __init__(self, vpc_name=None, charging_mode=None, vpc_id=None, user_name=None, created_at=None, description=None, security_group_id=None, security_group_name=None, max_memory=None, used_memory=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, no_password_access=None, ip=None, instance_backup_policy=None, az_codes=None, access_user=None, instance_id=None, port=None, user_id=None, name=None, spec_code=None, subnet_id=None, subnet_name=None, subnet_cidr=None, engine_version=None, order_id=None, status=None, domain_name=None, enable_publicip=None, publicip_id=None, publicip_address=None, enable_ssl=None, service_upgrade=None, service_task_id=None, enterprise_project_id=None, backend_addrs=None):
         """ShowInstanceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowInstanceResponse, self).__init__()
 
         self._vpc_name = None
         self._charging_mode = None

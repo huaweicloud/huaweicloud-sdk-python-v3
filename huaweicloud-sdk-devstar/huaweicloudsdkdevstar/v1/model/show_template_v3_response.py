@@ -85,7 +85,7 @@ class ShowTemplateV3Response(SdkResponse):
     def __init__(self, id=None, title=None, description=None, creator_id=None, creator=None, nickname=None, score=None, status=None, view_count=None, usage_count=None, created_at=None, updated_at=None, published_at=None, favorite_state=None, maintainers=None, platform_source=None, properties=None, dependencies=None, dependency_type=None, store=None, store_info=None, file_size=None, deployment=None, is_static=None, update_id=None, topic=None, tags=None):
         """ShowTemplateV3Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowTemplateV3Response, self).__init__()
 
         self._id = None
         self._title = None

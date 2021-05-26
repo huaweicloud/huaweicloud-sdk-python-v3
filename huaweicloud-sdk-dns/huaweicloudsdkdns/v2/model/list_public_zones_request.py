@@ -80,6 +80,7 @@ class ListPublicZonesRequest:
     def type(self):
         """Gets the type of this ListPublicZonesRequest.
 
+        待查询的zone的类型。  取值范围：public、private  如果为空，表示查询公网类型的zone。 如果为public，表示查询公网类型的zone。 如果为private，表示查询内网类型的zone。 搜索模式默认为模糊搜索。  默认值为空。
 
         :return: The type of this ListPublicZonesRequest.
         :rtype: str
@@ -90,6 +91,7 @@ class ListPublicZonesRequest:
     def type(self, type):
         """Sets the type of this ListPublicZonesRequest.
 
+        待查询的zone的类型。  取值范围：public、private  如果为空，表示查询公网类型的zone。 如果为public，表示查询公网类型的zone。 如果为private，表示查询内网类型的zone。 搜索模式默认为模糊搜索。  默认值为空。
 
         :param type: The type of this ListPublicZonesRequest.
         :type: str
@@ -100,6 +102,7 @@ class ListPublicZonesRequest:
     def limit(self):
         """Gets the limit of this ListPublicZonesRequest.
 
+        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :return: The limit of this ListPublicZonesRequest.
         :rtype: int
@@ -110,6 +113,7 @@ class ListPublicZonesRequest:
     def limit(self, limit):
         """Sets the limit of this ListPublicZonesRequest.
 
+        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :param limit: The limit of this ListPublicZonesRequest.
         :type: int
@@ -120,6 +124,7 @@ class ListPublicZonesRequest:
     def marker(self):
         """Gets the marker of this ListPublicZonesRequest.
 
+        分页查询起始的资源ID，为空时为查询第一页。
 
         :return: The marker of this ListPublicZonesRequest.
         :rtype: str
@@ -130,6 +135,7 @@ class ListPublicZonesRequest:
     def marker(self, marker):
         """Sets the marker of this ListPublicZonesRequest.
 
+        分页查询起始的资源ID，为空时为查询第一页。
 
         :param marker: The marker of this ListPublicZonesRequest.
         :type: str
@@ -140,6 +146,7 @@ class ListPublicZonesRequest:
     def offset(self):
         """Gets the offset of this ListPublicZonesRequest.
 
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0-2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :return: The offset of this ListPublicZonesRequest.
         :rtype: int
@@ -150,6 +157,7 @@ class ListPublicZonesRequest:
     def offset(self, offset):
         """Sets the offset of this ListPublicZonesRequest.
 
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0-2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :param offset: The offset of this ListPublicZonesRequest.
         :type: int
@@ -160,6 +168,7 @@ class ListPublicZonesRequest:
     def tags(self):
         """Gets the tags of this ListPublicZonesRequest.
 
+        资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。  多个标签之间为“与”的关系。  关于资源标签，请参见添加资源标签。  搜索模式为精确搜索。如果资源标签值value是以*开头时，则按照*后面的值全模糊匹配。  默认值为空。
 
         :return: The tags of this ListPublicZonesRequest.
         :rtype: str
@@ -170,6 +179,7 @@ class ListPublicZonesRequest:
     def tags(self, tags):
         """Sets the tags of this ListPublicZonesRequest.
 
+        资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。  多个标签之间为“与”的关系。  关于资源标签，请参见添加资源标签。  搜索模式为精确搜索。如果资源标签值value是以*开头时，则按照*后面的值全模糊匹配。  默认值为空。
 
         :param tags: The tags of this ListPublicZonesRequest.
         :type: str
@@ -180,6 +190,7 @@ class ListPublicZonesRequest:
     def name(self):
         """Gets the name of this ListPublicZonesRequest.
 
+        zone名称。  搜索模式默认为模糊搜索。
 
         :return: The name of this ListPublicZonesRequest.
         :rtype: str
@@ -190,6 +201,7 @@ class ListPublicZonesRequest:
     def name(self, name):
         """Sets the name of this ListPublicZonesRequest.
 
+        zone名称。  搜索模式默认为模糊搜索。
 
         :param name: The name of this ListPublicZonesRequest.
         :type: str
@@ -200,6 +212,7 @@ class ListPublicZonesRequest:
     def status(self):
         """Gets the status of this ListPublicZonesRequest.
 
+        资源状态。
 
         :return: The status of this ListPublicZonesRequest.
         :rtype: str
@@ -210,6 +223,7 @@ class ListPublicZonesRequest:
     def status(self, status):
         """Sets the status of this ListPublicZonesRequest.
 
+        资源状态。
 
         :param status: The status of this ListPublicZonesRequest.
         :type: str
@@ -220,6 +234,7 @@ class ListPublicZonesRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListPublicZonesRequest.
 
+        域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
 
         :return: The enterprise_project_id of this ListPublicZonesRequest.
         :rtype: str
@@ -230,6 +245,7 @@ class ListPublicZonesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListPublicZonesRequest.
 
+        域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPublicZonesRequest.
         :type: str

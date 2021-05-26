@@ -25,6 +25,7 @@ class ListQueuesRespQueues:
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'created': 'int',
         'description': 'str',
         'queue_mode': 'str',
         'reservation': 'int',
@@ -32,12 +33,14 @@ class ListQueuesRespQueues:
         'produced_messages': 'int',
         'redrive_policy': 'str',
         'max_consume_count': 'int',
-        'group_count': 'int'
+        'group_count': 'int',
+        'eff_date': 'int'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'created': 'created',
         'description': 'description',
         'queue_mode': 'queue_mode',
         'reservation': 'reservation',
@@ -45,16 +48,18 @@ class ListQueuesRespQueues:
         'produced_messages': 'produced_messages',
         'redrive_policy': 'redrive_policy',
         'max_consume_count': 'max_consume_count',
-        'group_count': 'group_count'
+        'group_count': 'group_count',
+        'eff_date': 'eff_date'
     }
 
-    def __init__(self, id=None, name=None, description=None, queue_mode=None, reservation=None, max_msg_size_byte=None, produced_messages=None, redrive_policy=None, max_consume_count=None, group_count=None):
+    def __init__(self, id=None, name=None, created=None, description=None, queue_mode=None, reservation=None, max_msg_size_byte=None, produced_messages=None, redrive_policy=None, max_consume_count=None, group_count=None, eff_date=None):
         """ListQueuesRespQueues - a model defined in huaweicloud sdk"""
         
         
 
         self._id = None
         self._name = None
+        self._created = None
         self._description = None
         self._queue_mode = None
         self._reservation = None
@@ -63,12 +68,15 @@ class ListQueuesRespQueues:
         self._redrive_policy = None
         self._max_consume_count = None
         self._group_count = None
+        self._eff_date = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if name is not None:
             self.name = name
+        if created is not None:
+            self.created = created
         if description is not None:
             self.description = description
         if queue_mode is not None:
@@ -85,6 +93,8 @@ class ListQueuesRespQueues:
             self.max_consume_count = max_consume_count
         if group_count is not None:
             self.group_count = group_count
+        if eff_date is not None:
+            self.eff_date = eff_date
 
     @property
     def id(self):
@@ -129,6 +139,28 @@ class ListQueuesRespQueues:
         :type: str
         """
         self._name = name
+
+    @property
+    def created(self):
+        """Gets the created of this ListQueuesRespQueues.
+
+        创建队列的时间。
+
+        :return: The created of this ListQueuesRespQueues.
+        :rtype: int
+        """
+        return self._created
+
+    @created.setter
+    def created(self, created):
+        """Sets the created of this ListQueuesRespQueues.
+
+        创建队列的时间。
+
+        :param created: The created of this ListQueuesRespQueues.
+        :type: int
+        """
+        self._created = created
 
     @property
     def description(self):
@@ -305,6 +337,28 @@ class ListQueuesRespQueues:
         :type: int
         """
         self._group_count = group_count
+
+    @property
+    def eff_date(self):
+        """Gets the eff_date of this ListQueuesRespQueues.
+
+        创建队列的时间。
+
+        :return: The eff_date of this ListQueuesRespQueues.
+        :rtype: int
+        """
+        return self._eff_date
+
+    @eff_date.setter
+    def eff_date(self, eff_date):
+        """Sets the eff_date of this ListQueuesRespQueues.
+
+        创建队列的时间。
+
+        :param eff_date: The eff_date of this ListQueuesRespQueues.
+        :type: int
+        """
+        self._eff_date = eff_date
 
     def to_dict(self):
         """Returns the model properties as a dict"""

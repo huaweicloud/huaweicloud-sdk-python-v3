@@ -35,7 +35,7 @@ class SwitchSslResponse(SdkResponse):
     def __init__(self, job_id=None, ssl_option=None):
         """SwitchSslResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(SwitchSslResponse, self).__init__()
 
         self._job_id = None
         self._ssl_option = None

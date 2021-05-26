@@ -61,7 +61,7 @@ class ListNumberOfInstancesInDifferentStatusResponse(SdkResponse):
     def __init__(self, redis=None, memcached=None, paying_count=None, freezing_count=None, migrating_count=None, flushing_count=None, upgrading_count=None, restoring_count=None, extending_count=None, creating_count=None, running_count=None, error_count=None, frozen_count=None, createfailed_count=None, restarting_count=None):
         """ListNumberOfInstancesInDifferentStatusResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListNumberOfInstancesInDifferentStatusResponse, self).__init__()
 
         self._redis = None
         self._memcached = None

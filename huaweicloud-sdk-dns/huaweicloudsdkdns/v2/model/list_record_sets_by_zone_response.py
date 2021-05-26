@@ -37,7 +37,7 @@ class ListRecordSetsByZoneResponse(SdkResponse):
     def __init__(self, links=None, recordsets=None, metadata=None):
         """ListRecordSetsByZoneResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListRecordSetsByZoneResponse, self).__init__()
 
         self._links = None
         self._recordsets = None

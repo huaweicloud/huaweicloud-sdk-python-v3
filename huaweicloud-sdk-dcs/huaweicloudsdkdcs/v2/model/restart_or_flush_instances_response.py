@@ -33,7 +33,7 @@ class RestartOrFlushInstancesResponse(SdkResponse):
     def __init__(self, results=None):
         """RestartOrFlushInstancesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RestartOrFlushInstancesResponse, self).__init__()
 
         self._results = None
         self.discriminator = None

@@ -35,7 +35,7 @@ class UpdateSecurityGroupResponse(SdkResponse):
     def __init__(self, job_id=None, security_group_id=None):
         """UpdateSecurityGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateSecurityGroupResponse, self).__init__()
 
         self._job_id = None
         self._security_group_id = None

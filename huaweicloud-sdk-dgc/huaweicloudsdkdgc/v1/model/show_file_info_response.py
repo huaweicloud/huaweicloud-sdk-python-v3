@@ -35,7 +35,7 @@ class ShowFileInfoResponse(SdkResponse):
     def __init__(self, jobs=None, scripts=None):
         """ShowFileInfoResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowFileInfoResponse, self).__init__()
 
         self._jobs = None
         self._scripts = None

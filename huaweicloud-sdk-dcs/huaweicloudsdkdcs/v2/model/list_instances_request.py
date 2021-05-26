@@ -85,6 +85,7 @@ class ListInstancesRequest:
     def instance_id(self):
         """Gets the instance_id of this ListInstancesRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListInstancesRequest.
         :rtype: str
@@ -95,6 +96,7 @@ class ListInstancesRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListInstancesRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListInstancesRequest.
         :type: str
@@ -105,6 +107,7 @@ class ListInstancesRequest:
     def include_failure(self):
         """Gets the include_failure of this ListInstancesRequest.
 
+        是否返回创建失败的实例数。 当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。 
 
         :return: The include_failure of this ListInstancesRequest.
         :rtype: str
@@ -115,6 +118,7 @@ class ListInstancesRequest:
     def include_failure(self, include_failure):
         """Sets the include_failure of this ListInstancesRequest.
 
+        是否返回创建失败的实例数。 当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。 
 
         :param include_failure: The include_failure of this ListInstancesRequest.
         :type: str
@@ -125,6 +129,7 @@ class ListInstancesRequest:
     def name(self):
         """Gets the name of this ListInstancesRequest.
 
+        实例名称。
 
         :return: The name of this ListInstancesRequest.
         :rtype: str
@@ -135,6 +140,7 @@ class ListInstancesRequest:
     def name(self, name):
         """Sets the name of this ListInstancesRequest.
 
+        实例名称。
 
         :param name: The name of this ListInstancesRequest.
         :type: str
@@ -145,6 +151,7 @@ class ListInstancesRequest:
     def offset(self):
         """Gets the offset of this ListInstancesRequest.
 
+        偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :return: The offset of this ListInstancesRequest.
         :rtype: int
@@ -155,6 +162,7 @@ class ListInstancesRequest:
     def offset(self, offset):
         """Sets the offset of this ListInstancesRequest.
 
+        偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListInstancesRequest.
         :type: int
@@ -165,6 +173,7 @@ class ListInstancesRequest:
     def limit(self):
         """Gets the limit of this ListInstancesRequest.
 
+        每页显示条数，最小值为1，最大值为1000，若不设置该参数，则为10。
 
         :return: The limit of this ListInstancesRequest.
         :rtype: int
@@ -175,6 +184,7 @@ class ListInstancesRequest:
     def limit(self, limit):
         """Sets the limit of this ListInstancesRequest.
 
+        每页显示条数，最小值为1，最大值为1000，若不设置该参数，则为10。
 
         :param limit: The limit of this ListInstancesRequest.
         :type: int
@@ -185,6 +195,7 @@ class ListInstancesRequest:
     def status(self):
         """Gets the status of this ListInstancesRequest.
 
+        实例状态。详细状态说明见[缓存实例状态说明](https://support.huaweicloud.com/api-dcs/dcs-api-0312047.html)
 
         :return: The status of this ListInstancesRequest.
         :rtype: str
@@ -195,6 +206,7 @@ class ListInstancesRequest:
     def status(self, status):
         """Sets the status of this ListInstancesRequest.
 
+        实例状态。详细状态说明见[缓存实例状态说明](https://support.huaweicloud.com/api-dcs/dcs-api-0312047.html)
 
         :param status: The status of this ListInstancesRequest.
         :type: str
@@ -205,6 +217,7 @@ class ListInstancesRequest:
     def name_equal(self):
         """Gets the name_equal of this ListInstancesRequest.
 
+        是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。 
 
         :return: The name_equal of this ListInstancesRequest.
         :rtype: str
@@ -215,6 +228,7 @@ class ListInstancesRequest:
     def name_equal(self, name_equal):
         """Sets the name_equal of this ListInstancesRequest.
 
+        是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。 
 
         :param name_equal: The name_equal of this ListInstancesRequest.
         :type: str
@@ -225,6 +239,7 @@ class ListInstancesRequest:
     def tags(self):
         """Gets the tags of this ListInstancesRequest.
 
+        根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。 
 
         :return: The tags of this ListInstancesRequest.
         :rtype: str
@@ -235,6 +250,7 @@ class ListInstancesRequest:
     def tags(self, tags):
         """Sets the tags of this ListInstancesRequest.
 
+        根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。 
 
         :param tags: The tags of this ListInstancesRequest.
         :type: str
@@ -245,6 +261,7 @@ class ListInstancesRequest:
     def ip(self):
         """Gets the ip of this ListInstancesRequest.
 
+        连接缓存实例的IP地址。
 
         :return: The ip of this ListInstancesRequest.
         :rtype: str
@@ -255,6 +272,7 @@ class ListInstancesRequest:
     def ip(self, ip):
         """Sets the ip of this ListInstancesRequest.
 
+        连接缓存实例的IP地址。
 
         :param ip: The ip of this ListInstancesRequest.
         :type: str

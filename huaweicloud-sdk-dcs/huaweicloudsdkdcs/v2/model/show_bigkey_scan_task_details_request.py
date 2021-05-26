@@ -48,6 +48,7 @@ class ShowBigkeyScanTaskDetailsRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowBigkeyScanTaskDetailsRequest.
 
+        实例ID。
 
         :return: The instance_id of this ShowBigkeyScanTaskDetailsRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowBigkeyScanTaskDetailsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowBigkeyScanTaskDetailsRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ShowBigkeyScanTaskDetailsRequest.
         :type: str
@@ -68,6 +70,7 @@ class ShowBigkeyScanTaskDetailsRequest:
     def bigkey_id(self):
         """Gets the bigkey_id of this ShowBigkeyScanTaskDetailsRequest.
 
+        大key分析任务ID。
 
         :return: The bigkey_id of this ShowBigkeyScanTaskDetailsRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowBigkeyScanTaskDetailsRequest:
     def bigkey_id(self, bigkey_id):
         """Sets the bigkey_id of this ShowBigkeyScanTaskDetailsRequest.
 
+        大key分析任务ID。
 
         :param bigkey_id: The bigkey_id of this ShowBigkeyScanTaskDetailsRequest.
         :type: str

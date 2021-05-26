@@ -50,6 +50,7 @@ class BatchDeleteInstancesRequest:
     def all_failure(self):
         """Gets the all_failure of this BatchDeleteInstancesRequest.
 
+        是否批量删除创建失败的缓存实例。取值如下： - true，表示删除租户所有创建失败的缓存实例，此时请求参数instances可为空； - false或者其他值，表示删除instances参数数组中指定的缓存实例。 
 
         :return: The all_failure of this BatchDeleteInstancesRequest.
         :rtype: bool
@@ -60,6 +61,7 @@ class BatchDeleteInstancesRequest:
     def all_failure(self, all_failure):
         """Sets the all_failure of this BatchDeleteInstancesRequest.
 
+        是否批量删除创建失败的缓存实例。取值如下： - true，表示删除租户所有创建失败的缓存实例，此时请求参数instances可为空； - false或者其他值，表示删除instances参数数组中指定的缓存实例。 
 
         :param all_failure: The all_failure of this BatchDeleteInstancesRequest.
         :type: bool

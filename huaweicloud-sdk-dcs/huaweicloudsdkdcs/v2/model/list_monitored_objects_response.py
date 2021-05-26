@@ -39,7 +39,7 @@ class ListMonitoredObjectsResponse(SdkResponse):
     def __init__(self, router=None, children=None, instances=None, total=None):
         """ListMonitoredObjectsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListMonitoredObjectsResponse, self).__init__()
 
         self._router = None
         self._children = None

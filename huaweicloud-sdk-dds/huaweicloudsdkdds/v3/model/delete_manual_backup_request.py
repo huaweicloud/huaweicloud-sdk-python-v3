@@ -44,6 +44,7 @@ class DeleteManualBackupRequest:
     def backup_id(self):
         """Gets the backup_id of this DeleteManualBackupRequest.
 
+        备份文件ID。
 
         :return: The backup_id of this DeleteManualBackupRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteManualBackupRequest:
     def backup_id(self, backup_id):
         """Sets the backup_id of this DeleteManualBackupRequest.
 
+        备份文件ID。
 
         :param backup_id: The backup_id of this DeleteManualBackupRequest.
         :type: str

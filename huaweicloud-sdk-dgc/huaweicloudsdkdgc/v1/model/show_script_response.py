@@ -47,7 +47,7 @@ class ShowScriptResponse(SdkResponse):
     def __init__(self, name=None, type=None, directory=None, content=None, connection_name=None, database=None, queue_name=None, configuration=None):
         """ShowScriptResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowScriptResponse, self).__init__()
 
         self._name = None
         self._type = None

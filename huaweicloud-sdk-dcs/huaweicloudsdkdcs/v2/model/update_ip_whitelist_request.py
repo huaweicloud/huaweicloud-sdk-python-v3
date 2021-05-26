@@ -49,6 +49,7 @@ class UpdateIpWhitelistRequest:
     def instance_id(self):
         """Gets the instance_id of this UpdateIpWhitelistRequest.
 
+        实例ID。
 
         :return: The instance_id of this UpdateIpWhitelistRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateIpWhitelistRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpdateIpWhitelistRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this UpdateIpWhitelistRequest.
         :type: str

@@ -49,6 +49,7 @@ class RunOnceRequest:
     def job_name(self):
         """Gets the job_name of this RunOnceRequest.
 
+        作业名称.
 
         :return: The job_name of this RunOnceRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class RunOnceRequest:
     def job_name(self, job_name):
         """Sets the job_name of this RunOnceRequest.
 
+        作业名称.
 
         :param job_name: The job_name of this RunOnceRequest.
         :type: str

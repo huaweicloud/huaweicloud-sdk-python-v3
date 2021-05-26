@@ -37,7 +37,7 @@ class AttachInternalIpResponse(SdkResponse):
     def __init__(self, job_id=None, node_id=None, new_ip=None):
         """AttachInternalIpResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AttachInternalIpResponse, self).__init__()
 
         self._job_id = None
         self._node_id = None

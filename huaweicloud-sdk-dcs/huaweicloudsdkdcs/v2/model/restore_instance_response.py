@@ -33,7 +33,7 @@ class RestoreInstanceResponse(SdkResponse):
     def __init__(self, restore_id=None):
         """RestoreInstanceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RestoreInstanceResponse, self).__init__()
 
         self._restore_id = None
         self.discriminator = None

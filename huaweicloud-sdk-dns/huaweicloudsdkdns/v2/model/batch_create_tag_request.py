@@ -53,6 +53,7 @@ class BatchCreateTagRequest:
     def resource_type(self):
         """Gets the resource_type of this BatchCreateTagRequest.
 
+        资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。
 
         :return: The resource_type of this BatchCreateTagRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class BatchCreateTagRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this BatchCreateTagRequest.
 
+        资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。
 
         :param resource_type: The resource_type of this BatchCreateTagRequest.
         :type: str
@@ -73,6 +75,7 @@ class BatchCreateTagRequest:
     def resource_id(self):
         """Gets the resource_id of this BatchCreateTagRequest.
 
+        资源id。
 
         :return: The resource_id of this BatchCreateTagRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class BatchCreateTagRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this BatchCreateTagRequest.
 
+        资源id。
 
         :param resource_id: The resource_id of this BatchCreateTagRequest.
         :type: str

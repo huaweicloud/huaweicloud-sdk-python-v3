@@ -55,7 +55,7 @@ class StopMigrationTaskResponse(SdkResponse):
     def __init__(self, task_id=None, task_name=None, description=None, status=None, migration_type=None, migration_method=None, backup_files=None, network_type=None, source_instance=None, target_instance=None, created_at=None, updated_at=None):
         """StopMigrationTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(StopMigrationTaskResponse, self).__init__()
 
         self._task_id = None
         self._task_name = None

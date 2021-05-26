@@ -37,7 +37,7 @@ class DownloadErrorlogResponse(SdkResponse):
     def __init__(self, list=None, status=None, count=None):
         """DownloadErrorlogResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DownloadErrorlogResponse, self).__init__()
 
         self._list = None
         self._status = None

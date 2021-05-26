@@ -49,7 +49,7 @@ class ShowHotkeyTaskDetailsResponse(SdkResponse):
     def __init__(self, id=None, instance_id=None, status=None, scan_type=None, created_at=None, started_at=None, finished_at=None, num=None, keys=None):
         """ShowHotkeyTaskDetailsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowHotkeyTaskDetailsResponse, self).__init__()
 
         self._id = None
         self._instance_id = None

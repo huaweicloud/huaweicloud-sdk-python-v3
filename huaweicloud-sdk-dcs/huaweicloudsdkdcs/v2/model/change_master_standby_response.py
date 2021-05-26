@@ -31,7 +31,7 @@ class ChangeMasterStandbyResponse(SdkResponse):
     def __init__(self):
         """ChangeMasterStandbyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ChangeMasterStandbyResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

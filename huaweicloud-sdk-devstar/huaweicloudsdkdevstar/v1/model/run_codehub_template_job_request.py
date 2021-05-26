@@ -50,6 +50,7 @@ class RunCodehubTemplateJobRequest:
     def x_language(self):
         """Gets the x_language of this RunCodehubTemplateJobRequest.
 
+        语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :return: The x_language of this RunCodehubTemplateJobRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class RunCodehubTemplateJobRequest:
     def x_language(self, x_language):
         """Sets the x_language of this RunCodehubTemplateJobRequest.
 
+        语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :param x_language: The x_language of this RunCodehubTemplateJobRequest.
         :type: str

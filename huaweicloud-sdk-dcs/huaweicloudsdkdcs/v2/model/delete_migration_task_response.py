@@ -33,7 +33,7 @@ class DeleteMigrationTaskResponse(SdkResponse):
     def __init__(self, task_id_list=None):
         """DeleteMigrationTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteMigrationTaskResponse, self).__init__()
 
         self._task_id_list = None
         self.discriminator = None

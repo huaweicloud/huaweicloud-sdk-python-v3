@@ -60,7 +60,7 @@ class RestorePoint:
     def instance_id(self):
         """Gets the instance_id of this RestorePoint.
 
-        实例ID。当type为“backup”，为非必选。当type为“timestamp”，为必选。
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。当type为“backup”，为非必选。当type为“timestamp”，为必选。
 
         :return: The instance_id of this RestorePoint.
         :rtype: str
@@ -71,7 +71,7 @@ class RestorePoint:
     def instance_id(self, instance_id):
         """Sets the instance_id of this RestorePoint.
 
-        实例ID。当type为“backup”，为非必选。当type为“timestamp”，为必选。
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。当type为“backup”，为非必选。当type为“timestamp”，为必选。
 
         :param instance_id: The instance_id of this RestorePoint.
         :type: str

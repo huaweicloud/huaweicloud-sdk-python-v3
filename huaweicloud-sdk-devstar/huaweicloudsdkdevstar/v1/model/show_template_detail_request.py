@@ -49,6 +49,7 @@ class ShowTemplateDetailRequest:
     def x_language(self):
         """Gets the x_language of this ShowTemplateDetailRequest.
 
+        语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :return: The x_language of this ShowTemplateDetailRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ShowTemplateDetailRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowTemplateDetailRequest.
 
+        语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :param x_language: The x_language of this ShowTemplateDetailRequest.
         :type: str
@@ -69,6 +71,7 @@ class ShowTemplateDetailRequest:
     def template_id(self):
         """Gets the template_id of this ShowTemplateDetailRequest.
 
+        模板ID，通过查询模板列表接口可获取相应模板ID。
 
         :return: The template_id of this ShowTemplateDetailRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ShowTemplateDetailRequest:
     def template_id(self, template_id):
         """Sets the template_id of this ShowTemplateDetailRequest.
 
+        模板ID，通过查询模板列表接口可获取相应模板ID。
 
         :param template_id: The template_id of this ShowTemplateDetailRequest.
         :type: str

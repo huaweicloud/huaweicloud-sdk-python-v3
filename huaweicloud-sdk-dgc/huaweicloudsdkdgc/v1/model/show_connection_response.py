@@ -37,7 +37,7 @@ class ShowConnectionResponse(SdkResponse):
     def __init__(self, name=None, connection_type=None, config=None):
         """ShowConnectionResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowConnectionResponse, self).__init__()
 
         self._name = None
         self._connection_type = None

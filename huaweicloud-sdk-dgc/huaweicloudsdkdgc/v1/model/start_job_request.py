@@ -49,6 +49,7 @@ class StartJobRequest:
     def job_name(self):
         """Gets the job_name of this StartJobRequest.
 
+        作业名称.
 
         :return: The job_name of this StartJobRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class StartJobRequest:
     def job_name(self, job_name):
         """Sets the job_name of this StartJobRequest.
 
+        作业名称.
 
         :param job_name: The job_name of this StartJobRequest.
         :type: str

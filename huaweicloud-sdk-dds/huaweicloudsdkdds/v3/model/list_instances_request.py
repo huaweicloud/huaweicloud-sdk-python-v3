@@ -80,6 +80,7 @@ class ListInstancesRequest:
     def id(self):
         """Gets the id of this ListInstancesRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :return: The id of this ListInstancesRequest.
         :rtype: str
@@ -90,6 +91,7 @@ class ListInstancesRequest:
     def id(self, id):
         """Sets the id of this ListInstancesRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param id: The id of this ListInstancesRequest.
         :type: str
@@ -100,6 +102,7 @@ class ListInstancesRequest:
     def name(self):
         """Gets the name of this ListInstancesRequest.
 
+        实例名称。 如果name以“*”起始，表示按照“*”后面的值模糊匹配，否则，按照实际填写的name精确匹配查询。 - “*”为系统保留字符，不能只传入该字符。
 
         :return: The name of this ListInstancesRequest.
         :rtype: str
@@ -110,6 +113,7 @@ class ListInstancesRequest:
     def name(self, name):
         """Sets the name of this ListInstancesRequest.
 
+        实例名称。 如果name以“*”起始，表示按照“*”后面的值模糊匹配，否则，按照实际填写的name精确匹配查询。 - “*”为系统保留字符，不能只传入该字符。
 
         :param name: The name of this ListInstancesRequest.
         :type: str
@@ -120,6 +124,7 @@ class ListInstancesRequest:
     def mode(self):
         """Gets the mode of this ListInstancesRequest.
 
+        实例类型。 - 取值为“Sharding”，表示集群实例。 - 取值为“ReplicaSet”，表示副本集实例。 - 取值为“Single”，表示单节点实例。
 
         :return: The mode of this ListInstancesRequest.
         :rtype: str
@@ -130,6 +135,7 @@ class ListInstancesRequest:
     def mode(self, mode):
         """Sets the mode of this ListInstancesRequest.
 
+        实例类型。 - 取值为“Sharding”，表示集群实例。 - 取值为“ReplicaSet”，表示副本集实例。 - 取值为“Single”，表示单节点实例。
 
         :param mode: The mode of this ListInstancesRequest.
         :type: str
@@ -140,6 +146,7 @@ class ListInstancesRequest:
     def datastore_type(self):
         """Gets the datastore_type of this ListInstancesRequest.
 
+        数据库版本类型。取值为“DDS-Community”。
 
         :return: The datastore_type of this ListInstancesRequest.
         :rtype: str
@@ -150,6 +157,7 @@ class ListInstancesRequest:
     def datastore_type(self, datastore_type):
         """Sets the datastore_type of this ListInstancesRequest.
 
+        数据库版本类型。取值为“DDS-Community”。
 
         :param datastore_type: The datastore_type of this ListInstancesRequest.
         :type: str
@@ -160,6 +168,7 @@ class ListInstancesRequest:
     def vpc_id(self):
         """Gets the vpc_id of this ListInstancesRequest.
 
+        虚拟私有云ID。可登录虚拟私有云控制台界面，获取DDS实例所在虚拟私有云的ID。
 
         :return: The vpc_id of this ListInstancesRequest.
         :rtype: str
@@ -170,6 +179,7 @@ class ListInstancesRequest:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this ListInstancesRequest.
 
+        虚拟私有云ID。可登录虚拟私有云控制台界面，获取DDS实例所在虚拟私有云的ID。
 
         :param vpc_id: The vpc_id of this ListInstancesRequest.
         :type: str
@@ -180,6 +190,7 @@ class ListInstancesRequest:
     def subnet_id(self):
         """Gets the subnet_id of this ListInstancesRequest.
 
+        子网的网络ID。可登录虚拟私有云控制台界面，获取DDS实例所在虚拟私有云下子网的网络ID。
 
         :return: The subnet_id of this ListInstancesRequest.
         :rtype: str
@@ -190,6 +201,7 @@ class ListInstancesRequest:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this ListInstancesRequest.
 
+        子网的网络ID。可登录虚拟私有云控制台界面，获取DDS实例所在虚拟私有云下子网的网络ID。
 
         :param subnet_id: The subnet_id of this ListInstancesRequest.
         :type: str
@@ -200,6 +212,7 @@ class ListInstancesRequest:
     def offset(self):
         """Gets the offset of this ListInstancesRequest.
 
+        索引位置偏移量，表示从指定project ID下最新的实例创建时间开始，按时间的先后顺序偏移offset条数据后查询对应的实例信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0，表示从最新的实例创建时间对应的实例开始查询。
 
         :return: The offset of this ListInstancesRequest.
         :rtype: int
@@ -210,6 +223,7 @@ class ListInstancesRequest:
     def offset(self, offset):
         """Sets the offset of this ListInstancesRequest.
 
+        索引位置偏移量，表示从指定project ID下最新的实例创建时间开始，按时间的先后顺序偏移offset条数据后查询对应的实例信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0，表示从最新的实例创建时间对应的实例开始查询。
 
         :param offset: The offset of this ListInstancesRequest.
         :type: int
@@ -220,6 +234,7 @@ class ListInstancesRequest:
     def limit(self):
         """Gets the limit of this ListInstancesRequest.
 
+        查询实例个数上限值。 取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
         :return: The limit of this ListInstancesRequest.
         :rtype: int
@@ -230,6 +245,7 @@ class ListInstancesRequest:
     def limit(self, limit):
         """Sets the limit of this ListInstancesRequest.
 
+        查询实例个数上限值。 取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
         :param limit: The limit of this ListInstancesRequest.
         :type: int

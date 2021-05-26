@@ -53,6 +53,7 @@ class CreateEipRecordSetRequest:
     def region(self):
         """Gets the region of this CreateEipRecordSetRequest.
 
+        租户的区域信息。
 
         :return: The region of this CreateEipRecordSetRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class CreateEipRecordSetRequest:
     def region(self, region):
         """Sets the region of this CreateEipRecordSetRequest.
 
+        租户的区域信息。
 
         :param region: The region of this CreateEipRecordSetRequest.
         :type: str
@@ -73,6 +75,7 @@ class CreateEipRecordSetRequest:
     def floatingip_id(self):
         """Gets the floatingip_id of this CreateEipRecordSetRequest.
 
+        弹性IP的ID。
 
         :return: The floatingip_id of this CreateEipRecordSetRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class CreateEipRecordSetRequest:
     def floatingip_id(self, floatingip_id):
         """Sets the floatingip_id of this CreateEipRecordSetRequest.
 
+        弹性IP的ID。
 
         :param floatingip_id: The floatingip_id of this CreateEipRecordSetRequest.
         :type: str

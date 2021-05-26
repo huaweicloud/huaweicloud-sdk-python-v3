@@ -35,7 +35,7 @@ class ConfirmConsumptionMessagesResponse(SdkResponse):
     def __init__(self, success=None, fail=None):
         """ConfirmConsumptionMessagesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ConfirmConsumptionMessagesResponse, self).__init__()
 
         self._success = None
         self._fail = None

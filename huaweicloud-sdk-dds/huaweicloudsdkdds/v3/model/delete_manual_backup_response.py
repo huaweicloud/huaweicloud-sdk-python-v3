@@ -33,7 +33,7 @@ class DeleteManualBackupResponse(SdkResponse):
     def __init__(self, job_id=None):
         """DeleteManualBackupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteManualBackupResponse, self).__init__()
 
         self._job_id = None
         self.discriminator = None

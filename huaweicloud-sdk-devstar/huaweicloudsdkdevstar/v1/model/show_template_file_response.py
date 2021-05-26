@@ -41,7 +41,7 @@ class ShowTemplateFileResponse(SdkResponse):
     def __init__(self, content=None, encoding=None, file_name=None, file_path=None, file_type=None):
         """ShowTemplateFileResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowTemplateFileResponse, self).__init__()
 
         self._content = None
         self._encoding = None

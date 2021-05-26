@@ -45,9 +45,9 @@ from huaweicloudsdkdms.v2.model.send_messages_req import SendMessagesReq
 from huaweicloudsdkdms.v2.model.send_messages_request import SendMessagesRequest
 from huaweicloudsdkdms.v2.model.send_messages_resp_messages import SendMessagesRespMessages
 from huaweicloudsdkdms.v2.model.send_messages_response import SendMessagesResponse
-from huaweicloudsdkdms.v2.model.show_project_tags_request import ShowProjectTagsRequest
 from huaweicloudsdkdms.v2.model.show_project_tags_resp_tags import ShowProjectTagsRespTags
-from huaweicloudsdkdms.v2.model.show_project_tags_response import ShowProjectTagsResponse
+from huaweicloudsdkdms.v2.model.show_queue_project_tags_request import ShowQueueProjectTagsRequest
+from huaweicloudsdkdms.v2.model.show_queue_project_tags_response import ShowQueueProjectTagsResponse
 from huaweicloudsdkdms.v2.model.show_queue_request import ShowQueueRequest
 from huaweicloudsdkdms.v2.model.show_queue_response import ShowQueueResponse
 from huaweicloudsdkdms.v2.model.show_queue_tags_request import ShowQueueTagsRequest

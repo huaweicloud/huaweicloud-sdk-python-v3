@@ -48,6 +48,7 @@ class DeleteSpecifiedConsumerGroupRequest:
     def queue_id(self):
         """Gets the queue_id of this DeleteSpecifiedConsumerGroupRequest.
 
+        队列ID
 
         :return: The queue_id of this DeleteSpecifiedConsumerGroupRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteSpecifiedConsumerGroupRequest:
     def queue_id(self, queue_id):
         """Sets the queue_id of this DeleteSpecifiedConsumerGroupRequest.
 
+        队列ID
 
         :param queue_id: The queue_id of this DeleteSpecifiedConsumerGroupRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteSpecifiedConsumerGroupRequest:
     def group_id(self):
         """Gets the group_id of this DeleteSpecifiedConsumerGroupRequest.
 
+        待删除的消费组ID
 
         :return: The group_id of this DeleteSpecifiedConsumerGroupRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteSpecifiedConsumerGroupRequest:
     def group_id(self, group_id):
         """Sets the group_id of this DeleteSpecifiedConsumerGroupRequest.
 
+        待删除的消费组ID
 
         :param group_id: The group_id of this DeleteSpecifiedConsumerGroupRequest.
         :type: str

@@ -48,6 +48,7 @@ class ShowPtrRecordSetRequest:
     def region(self):
         """Gets the region of this ShowPtrRecordSetRequest.
 
+        租户的区域信息。 
 
         :return: The region of this ShowPtrRecordSetRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowPtrRecordSetRequest:
     def region(self, region):
         """Sets the region of this ShowPtrRecordSetRequest.
 
+        租户的区域信息。 
 
         :param region: The region of this ShowPtrRecordSetRequest.
         :type: str
@@ -68,6 +70,7 @@ class ShowPtrRecordSetRequest:
     def floatingip_id(self):
         """Gets the floatingip_id of this ShowPtrRecordSetRequest.
 
+        弹性IP的ID。
 
         :return: The floatingip_id of this ShowPtrRecordSetRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowPtrRecordSetRequest:
     def floatingip_id(self, floatingip_id):
         """Sets the floatingip_id of this ShowPtrRecordSetRequest.
 
+        弹性IP的ID。
 
         :param floatingip_id: The floatingip_id of this ShowPtrRecordSetRequest.
         :type: str

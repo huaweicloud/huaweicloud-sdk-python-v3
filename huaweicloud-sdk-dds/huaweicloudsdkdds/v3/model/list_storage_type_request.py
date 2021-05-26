@@ -45,6 +45,7 @@ class ListStorageTypeRequest:
     def engine_name(self):
         """Gets the engine_name of this ListStorageTypeRequest.
 
+        数据库版本类型： - 取值为“DDS-Community”。
 
         :return: The engine_name of this ListStorageTypeRequest.
         :rtype: str
@@ -55,6 +56,7 @@ class ListStorageTypeRequest:
     def engine_name(self, engine_name):
         """Sets the engine_name of this ListStorageTypeRequest.
 
+        数据库版本类型： - 取值为“DDS-Community”。
 
         :param engine_name: The engine_name of this ListStorageTypeRequest.
         :type: str

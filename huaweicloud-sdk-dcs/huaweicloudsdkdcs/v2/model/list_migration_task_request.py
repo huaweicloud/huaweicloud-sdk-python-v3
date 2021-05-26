@@ -55,6 +55,7 @@ class ListMigrationTaskRequest:
     def offset(self):
         """Gets the offset of this ListMigrationTaskRequest.
 
+        偏移量，表示从此偏移量开始查询， offset大于等于0。
 
         :return: The offset of this ListMigrationTaskRequest.
         :rtype: int
@@ -65,6 +66,7 @@ class ListMigrationTaskRequest:
     def offset(self, offset):
         """Sets the offset of this ListMigrationTaskRequest.
 
+        偏移量，表示从此偏移量开始查询， offset大于等于0。
 
         :param offset: The offset of this ListMigrationTaskRequest.
         :type: int
@@ -75,6 +77,7 @@ class ListMigrationTaskRequest:
     def limit(self):
         """Gets the limit of this ListMigrationTaskRequest.
 
+        每页显示的条目数量。
 
         :return: The limit of this ListMigrationTaskRequest.
         :rtype: int
@@ -85,6 +88,7 @@ class ListMigrationTaskRequest:
     def limit(self, limit):
         """Sets the limit of this ListMigrationTaskRequest.
 
+        每页显示的条目数量。
 
         :param limit: The limit of this ListMigrationTaskRequest.
         :type: int
@@ -95,6 +99,7 @@ class ListMigrationTaskRequest:
     def name(self):
         """Gets the name of this ListMigrationTaskRequest.
 
+        迁移任务名称。
 
         :return: The name of this ListMigrationTaskRequest.
         :rtype: str
@@ -105,6 +110,7 @@ class ListMigrationTaskRequest:
     def name(self, name):
         """Sets the name of this ListMigrationTaskRequest.
 
+        迁移任务名称。
 
         :param name: The name of this ListMigrationTaskRequest.
         :type: str

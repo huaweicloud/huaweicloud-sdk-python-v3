@@ -48,6 +48,7 @@ class ShowHotkeyTaskDetailsRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowHotkeyTaskDetailsRequest.
 
+        实例ID。
 
         :return: The instance_id of this ShowHotkeyTaskDetailsRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowHotkeyTaskDetailsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowHotkeyTaskDetailsRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ShowHotkeyTaskDetailsRequest.
         :type: str
@@ -68,6 +70,7 @@ class ShowHotkeyTaskDetailsRequest:
     def hotkey_id(self):
         """Gets the hotkey_id of this ShowHotkeyTaskDetailsRequest.
 
+        热key分析任务ID。
 
         :return: The hotkey_id of this ShowHotkeyTaskDetailsRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowHotkeyTaskDetailsRequest:
     def hotkey_id(self, hotkey_id):
         """Sets the hotkey_id of this ShowHotkeyTaskDetailsRequest.
 
+        热key分析任务ID。
 
         :param hotkey_id: The hotkey_id of this ShowHotkeyTaskDetailsRequest.
         :type: str

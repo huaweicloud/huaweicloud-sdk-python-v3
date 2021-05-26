@@ -49,7 +49,7 @@ class CreateBigkeyScanTaskResponse(SdkResponse):
     def __init__(self, id=None, instance_id=None, status=None, scan_type=None, created_at=None, started_at=None, finished_at=None, num=None, keys=None):
         """CreateBigkeyScanTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateBigkeyScanTaskResponse, self).__init__()
 
         self._id = None
         self._instance_id = None

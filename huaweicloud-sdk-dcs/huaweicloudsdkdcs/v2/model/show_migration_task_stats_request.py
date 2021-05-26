@@ -44,6 +44,7 @@ class ShowMigrationTaskStatsRequest:
     def task_id(self):
         """Gets the task_id of this ShowMigrationTaskStatsRequest.
 
+        任务ID。
 
         :return: The task_id of this ShowMigrationTaskStatsRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowMigrationTaskStatsRequest:
     def task_id(self, task_id):
         """Sets the task_id of this ShowMigrationTaskStatsRequest.
 
+        任务ID。
 
         :param task_id: The task_id of this ShowMigrationTaskStatsRequest.
         :type: str

@@ -33,7 +33,7 @@ class RunOnceResponse(SdkResponse):
     def __init__(self, instance_id=None):
         """RunOnceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RunOnceResponse, self).__init__()
 
         self._instance_id = None
         self.discriminator = None

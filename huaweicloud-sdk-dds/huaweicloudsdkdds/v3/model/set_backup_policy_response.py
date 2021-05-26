@@ -31,7 +31,7 @@ class SetBackupPolicyResponse(SdkResponse):
     def __init__(self):
         """SetBackupPolicyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(SetBackupPolicyResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

@@ -44,6 +44,7 @@ class ShowApiInfoRequest:
     def version(self):
         """Gets the version of this ShowApiInfoRequest.
 
+        待查询版本号。以v开头，如v2。
 
         :return: The version of this ShowApiInfoRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowApiInfoRequest:
     def version(self, version):
         """Sets the version of this ShowApiInfoRequest.
 
+        待查询版本号。以v开头，如v2。
 
         :param version: The version of this ShowApiInfoRequest.
         :type: str

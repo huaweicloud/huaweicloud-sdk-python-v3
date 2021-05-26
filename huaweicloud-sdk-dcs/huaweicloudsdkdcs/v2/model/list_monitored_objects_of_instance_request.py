@@ -48,6 +48,7 @@ class ListMonitoredObjectsOfInstanceRequest:
     def instance_id(self):
         """Gets the instance_id of this ListMonitoredObjectsOfInstanceRequest.
 
+        主维度对象ID，与DCS实例列表中实例ID相同。
 
         :return: The instance_id of this ListMonitoredObjectsOfInstanceRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ListMonitoredObjectsOfInstanceRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListMonitoredObjectsOfInstanceRequest.
 
+        主维度对象ID，与DCS实例列表中实例ID相同。
 
         :param instance_id: The instance_id of this ListMonitoredObjectsOfInstanceRequest.
         :type: str
@@ -68,6 +70,7 @@ class ListMonitoredObjectsOfInstanceRequest:
     def dim_name(self):
         """Gets the dim_name of this ListMonitoredObjectsOfInstanceRequest.
 
+        主维度ID，当前支持子维度的主维度ID的有dcs_instance_id。
 
         :return: The dim_name of this ListMonitoredObjectsOfInstanceRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ListMonitoredObjectsOfInstanceRequest:
     def dim_name(self, dim_name):
         """Sets the dim_name of this ListMonitoredObjectsOfInstanceRequest.
 
+        主维度ID，当前支持子维度的主维度ID的有dcs_instance_id。
 
         :param dim_name: The dim_name of this ListMonitoredObjectsOfInstanceRequest.
         :type: str

@@ -63,6 +63,7 @@ class ListRestoreDatabasesRequest:
     def x_language(self):
         """Gets the x_language of this ListRestoreDatabasesRequest.
 
+        语言。
 
         :return: The x_language of this ListRestoreDatabasesRequest.
         :rtype: str
@@ -73,6 +74,7 @@ class ListRestoreDatabasesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListRestoreDatabasesRequest.
 
+        语言。
 
         :param x_language: The x_language of this ListRestoreDatabasesRequest.
         :type: str
@@ -83,6 +85,7 @@ class ListRestoreDatabasesRequest:
     def instance_id(self):
         """Gets the instance_id of this ListRestoreDatabasesRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :return: The instance_id of this ListRestoreDatabasesRequest.
         :rtype: str
@@ -93,6 +96,7 @@ class ListRestoreDatabasesRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListRestoreDatabasesRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ListRestoreDatabasesRequest.
         :type: str
@@ -103,6 +107,7 @@ class ListRestoreDatabasesRequest:
     def restore_time(self):
         """Gets the restore_time of this ListRestoreDatabasesRequest.
 
+        恢复时间点。UNIX时间戳格式，单位是毫秒，时区是UTC。
 
         :return: The restore_time of this ListRestoreDatabasesRequest.
         :rtype: str
@@ -113,6 +118,7 @@ class ListRestoreDatabasesRequest:
     def restore_time(self, restore_time):
         """Sets the restore_time of this ListRestoreDatabasesRequest.
 
+        恢复时间点。UNIX时间戳格式，单位是毫秒，时区是UTC。
 
         :param restore_time: The restore_time of this ListRestoreDatabasesRequest.
         :type: str
@@ -123,6 +129,7 @@ class ListRestoreDatabasesRequest:
     def offset(self):
         """Gets the offset of this ListRestoreDatabasesRequest.
 
+        索引位置偏移量。取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
         :return: The offset of this ListRestoreDatabasesRequest.
         :rtype: int
@@ -133,6 +140,7 @@ class ListRestoreDatabasesRequest:
     def offset(self, offset):
         """Sets the offset of this ListRestoreDatabasesRequest.
 
+        索引位置偏移量。取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
         :param offset: The offset of this ListRestoreDatabasesRequest.
         :type: int
@@ -143,6 +151,7 @@ class ListRestoreDatabasesRequest:
     def limit(self):
         """Gets the limit of this ListRestoreDatabasesRequest.
 
+        查询个数上限值。取值范围：1~100。不传该参数时，默认查询前100条信息。
 
         :return: The limit of this ListRestoreDatabasesRequest.
         :rtype: int
@@ -153,6 +162,7 @@ class ListRestoreDatabasesRequest:
     def limit(self, limit):
         """Sets the limit of this ListRestoreDatabasesRequest.
 
+        查询个数上限值。取值范围：1~100。不传该参数时，默认查询前100条信息。
 
         :param limit: The limit of this ListRestoreDatabasesRequest.
         :type: int

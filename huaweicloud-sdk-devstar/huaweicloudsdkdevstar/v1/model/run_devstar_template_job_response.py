@@ -35,7 +35,7 @@ class RunDevstarTemplateJobResponse(SdkResponse):
     def __init__(self, job_id=None, file_list=None):
         """RunDevstarTemplateJobResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RunDevstarTemplateJobResponse, self).__init__()
 
         self._job_id = None
         self._file_list = None

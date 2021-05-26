@@ -33,7 +33,7 @@ class SetBalancerSwitchResponse(SdkResponse):
     def __init__(self, job_id=None):
         """SetBalancerSwitchResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(SetBalancerSwitchResponse, self).__init__()
 
         self._job_id = None
         self.discriminator = None

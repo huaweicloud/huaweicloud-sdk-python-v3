@@ -35,7 +35,7 @@ class CreateTemplateViewHistoriesResponse(SdkResponse):
     def __init__(self, templates=None, count=None):
         """CreateTemplateViewHistoriesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateTemplateViewHistoriesResponse, self).__init__()
 
         self._templates = None
         self._count = None

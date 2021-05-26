@@ -44,6 +44,7 @@ class ListSystemTasksRequest:
     def task_id(self):
         """Gets the task_id of this ListSystemTasksRequest.
 
+        系统任务id.
 
         :return: The task_id of this ListSystemTasksRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListSystemTasksRequest:
     def task_id(self, task_id):
         """Sets the task_id of this ListSystemTasksRequest.
 
+        系统任务id.
 
         :param task_id: The task_id of this ListSystemTasksRequest.
         :type: str

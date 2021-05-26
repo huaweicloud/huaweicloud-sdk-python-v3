@@ -115,6 +115,7 @@ class ListRecordSetsWithLineRequest:
     def zone_type(self):
         """Gets the zone_type of this ListRecordSetsWithLineRequest.
 
+        待查询的Record Set的域名类型。  取值范围：public  搜索模式默认为模糊搜索。  默认值为public。
 
         :return: The zone_type of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -125,6 +126,7 @@ class ListRecordSetsWithLineRequest:
     def zone_type(self, zone_type):
         """Sets the zone_type of this ListRecordSetsWithLineRequest.
 
+        待查询的Record Set的域名类型。  取值范围：public  搜索模式默认为模糊搜索。  默认值为public。
 
         :param zone_type: The zone_type of this ListRecordSetsWithLineRequest.
         :type: str
@@ -135,6 +137,7 @@ class ListRecordSetsWithLineRequest:
     def marker(self):
         """Gets the marker of this ListRecordSetsWithLineRequest.
 
+        分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
         :return: The marker of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -145,6 +148,7 @@ class ListRecordSetsWithLineRequest:
     def marker(self, marker):
         """Sets the marker of this ListRecordSetsWithLineRequest.
 
+        分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
         :param marker: The marker of this ListRecordSetsWithLineRequest.
         :type: str
@@ -155,6 +159,7 @@ class ListRecordSetsWithLineRequest:
     def limit(self):
         """Gets the limit of this ListRecordSetsWithLineRequest.
 
+        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :return: The limit of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -165,6 +170,7 @@ class ListRecordSetsWithLineRequest:
     def limit(self, limit):
         """Sets the limit of this ListRecordSetsWithLineRequest.
 
+        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :param limit: The limit of this ListRecordSetsWithLineRequest.
         :type: str
@@ -175,6 +181,7 @@ class ListRecordSetsWithLineRequest:
     def offset(self):
         """Gets the offset of this ListRecordSetsWithLineRequest.
 
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :return: The offset of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -185,6 +192,7 @@ class ListRecordSetsWithLineRequest:
     def offset(self, offset):
         """Sets the offset of this ListRecordSetsWithLineRequest.
 
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :param offset: The offset of this ListRecordSetsWithLineRequest.
         :type: str
@@ -195,6 +203,7 @@ class ListRecordSetsWithLineRequest:
     def line_id(self):
         """Gets the line_id of this ListRecordSetsWithLineRequest.
 
+        解析线路ID。
 
         :return: The line_id of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -205,6 +214,7 @@ class ListRecordSetsWithLineRequest:
     def line_id(self, line_id):
         """Sets the line_id of this ListRecordSetsWithLineRequest.
 
+        解析线路ID。
 
         :param line_id: The line_id of this ListRecordSetsWithLineRequest.
         :type: str
@@ -215,6 +225,7 @@ class ListRecordSetsWithLineRequest:
     def tags(self):
         """Gets the tags of this ListRecordSetsWithLineRequest.
 
+        资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
 
         :return: The tags of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -225,6 +236,7 @@ class ListRecordSetsWithLineRequest:
     def tags(self, tags):
         """Sets the tags of this ListRecordSetsWithLineRequest.
 
+        资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
 
         :param tags: The tags of this ListRecordSetsWithLineRequest.
         :type: str
@@ -235,6 +247,7 @@ class ListRecordSetsWithLineRequest:
     def status(self):
         """Gets the status of this ListRecordSetsWithLineRequest.
 
+        待查询的Record Set的状态。  取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
 
         :return: The status of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -245,6 +258,7 @@ class ListRecordSetsWithLineRequest:
     def status(self, status):
         """Sets the status of this ListRecordSetsWithLineRequest.
 
+        待查询的Record Set的状态。  取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
 
         :param status: The status of this ListRecordSetsWithLineRequest.
         :type: str
@@ -255,6 +269,7 @@ class ListRecordSetsWithLineRequest:
     def type(self):
         """Gets the type of this ListRecordSetsWithLineRequest.
 
+        待查询的Record Set的记录集类型。  取值范围：A、CNAME、MX、AAAA、TXT、SRV、NS、CAA
 
         :return: The type of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -265,6 +280,7 @@ class ListRecordSetsWithLineRequest:
     def type(self, type):
         """Sets the type of this ListRecordSetsWithLineRequest.
 
+        待查询的Record Set的记录集类型。  取值范围：A、CNAME、MX、AAAA、TXT、SRV、NS、CAA
 
         :param type: The type of this ListRecordSetsWithLineRequest.
         :type: str
@@ -275,6 +291,7 @@ class ListRecordSetsWithLineRequest:
     def name(self):
         """Gets the name of this ListRecordSetsWithLineRequest.
 
+        待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
 
         :return: The name of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -285,6 +302,7 @@ class ListRecordSetsWithLineRequest:
     def name(self, name):
         """Sets the name of this ListRecordSetsWithLineRequest.
 
+        待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
 
         :param name: The name of this ListRecordSetsWithLineRequest.
         :type: str
@@ -295,6 +313,7 @@ class ListRecordSetsWithLineRequest:
     def id(self):
         """Gets the id of this ListRecordSetsWithLineRequest.
 
+        待查询的Record Set的id包含此id。  搜索模式默认为模糊搜索。  默认值为空。
 
         :return: The id of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -305,6 +324,7 @@ class ListRecordSetsWithLineRequest:
     def id(self, id):
         """Sets the id of this ListRecordSetsWithLineRequest.
 
+        待查询的Record Set的id包含此id。  搜索模式默认为模糊搜索。  默认值为空。
 
         :param id: The id of this ListRecordSetsWithLineRequest.
         :type: str
@@ -315,6 +335,7 @@ class ListRecordSetsWithLineRequest:
     def records(self):
         """Gets the records of this ListRecordSetsWithLineRequest.
 
+        待查询的Record Set的值中包含此records。  搜索模式默认为模糊搜索。  默认值为空。
 
         :return: The records of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -325,6 +346,7 @@ class ListRecordSetsWithLineRequest:
     def records(self, records):
         """Sets the records of this ListRecordSetsWithLineRequest.
 
+        待查询的Record Set的值中包含此records。  搜索模式默认为模糊搜索。  默认值为空。
 
         :param records: The records of this ListRecordSetsWithLineRequest.
         :type: str
@@ -335,6 +357,7 @@ class ListRecordSetsWithLineRequest:
     def sort_key(self):
         """Gets the sort_key of this ListRecordSetsWithLineRequest.
 
+        查询结果中Record Set列表的排序字段。  取值范围：  name：域名 type：记录集类型 默认值为空，表示不排序。
 
         :return: The sort_key of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -345,6 +368,7 @@ class ListRecordSetsWithLineRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListRecordSetsWithLineRequest.
 
+        查询结果中Record Set列表的排序字段。  取值范围：  name：域名 type：记录集类型 默认值为空，表示不排序。
 
         :param sort_key: The sort_key of this ListRecordSetsWithLineRequest.
         :type: str
@@ -355,6 +379,7 @@ class ListRecordSetsWithLineRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListRecordSetsWithLineRequest.
 
+        查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
         :return: The sort_dir of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -365,6 +390,7 @@ class ListRecordSetsWithLineRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListRecordSetsWithLineRequest.
 
+        查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
         :param sort_dir: The sort_dir of this ListRecordSetsWithLineRequest.
         :type: str
@@ -375,6 +401,7 @@ class ListRecordSetsWithLineRequest:
     def health_check_id(self):
         """Gets the health_check_id of this ListRecordSetsWithLineRequest.
 
+        健康检查ID。  搜索模式默认为模糊搜索。  默认值为空。
 
         :return: The health_check_id of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -385,6 +412,7 @@ class ListRecordSetsWithLineRequest:
     def health_check_id(self, health_check_id):
         """Sets the health_check_id of this ListRecordSetsWithLineRequest.
 
+        健康检查ID。  搜索模式默认为模糊搜索。  默认值为空。
 
         :param health_check_id: The health_check_id of this ListRecordSetsWithLineRequest.
         :type: str
@@ -395,6 +423,7 @@ class ListRecordSetsWithLineRequest:
     def search_mode(self):
         """Gets the search_mode of this ListRecordSetsWithLineRequest.
 
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为like。
 
         :return: The search_mode of this ListRecordSetsWithLineRequest.
         :rtype: str
@@ -405,6 +434,7 @@ class ListRecordSetsWithLineRequest:
     def search_mode(self, search_mode):
         """Sets the search_mode of this ListRecordSetsWithLineRequest.
 
+        查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索 默认值为like。
 
         :param search_mode: The search_mode of this ListRecordSetsWithLineRequest.
         :type: str

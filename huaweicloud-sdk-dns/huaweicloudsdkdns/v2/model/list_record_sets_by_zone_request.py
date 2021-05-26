@@ -94,6 +94,7 @@ class ListRecordSetsByZoneRequest:
     def zone_id(self):
         """Gets the zone_id of this ListRecordSetsByZoneRequest.
 
+        所属zone id。
 
         :return: The zone_id of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -104,6 +105,7 @@ class ListRecordSetsByZoneRequest:
     def zone_id(self, zone_id):
         """Sets the zone_id of this ListRecordSetsByZoneRequest.
 
+        所属zone id。
 
         :param zone_id: The zone_id of this ListRecordSetsByZoneRequest.
         :type: str
@@ -114,6 +116,7 @@ class ListRecordSetsByZoneRequest:
     def marker(self):
         """Gets the marker of this ListRecordSetsByZoneRequest.
 
+        分页查询起始的资源ID，为空时为查询第一页。
 
         :return: The marker of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -124,6 +127,7 @@ class ListRecordSetsByZoneRequest:
     def marker(self, marker):
         """Sets the marker of this ListRecordSetsByZoneRequest.
 
+        分页查询起始的资源ID，为空时为查询第一页。
 
         :param marker: The marker of this ListRecordSetsByZoneRequest.
         :type: str
@@ -134,6 +138,7 @@ class ListRecordSetsByZoneRequest:
     def limit(self):
         """Gets the limit of this ListRecordSetsByZoneRequest.
 
+        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :return: The limit of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -144,6 +149,7 @@ class ListRecordSetsByZoneRequest:
     def limit(self, limit):
         """Sets the limit of this ListRecordSetsByZoneRequest.
 
+        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :param limit: The limit of this ListRecordSetsByZoneRequest.
         :type: str
@@ -154,6 +160,7 @@ class ListRecordSetsByZoneRequest:
     def offset(self):
         """Gets the offset of this ListRecordSetsByZoneRequest.
 
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :return: The offset of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -164,6 +171,7 @@ class ListRecordSetsByZoneRequest:
     def offset(self, offset):
         """Sets the offset of this ListRecordSetsByZoneRequest.
 
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :param offset: The offset of this ListRecordSetsByZoneRequest.
         :type: str
@@ -174,6 +182,7 @@ class ListRecordSetsByZoneRequest:
     def tags(self):
         """Gets the tags of this ListRecordSetsByZoneRequest.
 
+        资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
 
         :return: The tags of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -184,6 +193,7 @@ class ListRecordSetsByZoneRequest:
     def tags(self, tags):
         """Sets the tags of this ListRecordSetsByZoneRequest.
 
+        资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
 
         :param tags: The tags of this ListRecordSetsByZoneRequest.
         :type: str
@@ -194,6 +204,7 @@ class ListRecordSetsByZoneRequest:
     def status(self):
         """Gets the status of this ListRecordSetsByZoneRequest.
 
+        待查询的Record Set的状态。  取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
 
         :return: The status of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -204,6 +215,7 @@ class ListRecordSetsByZoneRequest:
     def status(self, status):
         """Sets the status of this ListRecordSetsByZoneRequest.
 
+        待查询的Record Set的状态。  取值范围：ACTIVE、ERROR、DISABLE、FREEZE、PENDING_CREATE、PENDING_UPDATE、PENDING_DELETE
 
         :param status: The status of this ListRecordSetsByZoneRequest.
         :type: str
@@ -214,6 +226,7 @@ class ListRecordSetsByZoneRequest:
     def type(self):
         """Gets the type of this ListRecordSetsByZoneRequest.
 
+        待查询的Record Set的记录集类型。  取值范围：A,AAAA,MX,CNAME,TXT, NS（仅限公网Zone）,SRV,PTR（仅限内网Zone）,CAA（仅限公网Zone）。
 
         :return: The type of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -224,6 +237,7 @@ class ListRecordSetsByZoneRequest:
     def type(self, type):
         """Sets the type of this ListRecordSetsByZoneRequest.
 
+        待查询的Record Set的记录集类型。  取值范围：A,AAAA,MX,CNAME,TXT, NS（仅限公网Zone）,SRV,PTR（仅限内网Zone）,CAA（仅限公网Zone）。
 
         :param type: The type of this ListRecordSetsByZoneRequest.
         :type: str
@@ -234,6 +248,7 @@ class ListRecordSetsByZoneRequest:
     def name(self):
         """Gets the name of this ListRecordSetsByZoneRequest.
 
+        待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
 
         :return: The name of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -244,6 +259,7 @@ class ListRecordSetsByZoneRequest:
     def name(self, name):
         """Sets the name of this ListRecordSetsByZoneRequest.
 
+        待查询的Record Set的域名中包含此name。  搜索模式默认为模糊搜索。  默认值为空。
 
         :param name: The name of this ListRecordSetsByZoneRequest.
         :type: str
@@ -254,6 +270,7 @@ class ListRecordSetsByZoneRequest:
     def id(self):
         """Gets the id of this ListRecordSetsByZoneRequest.
 
+        待查询的Record Set的id包含此id。  搜索模式默认为模糊搜索。  默认值为空。
 
         :return: The id of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -264,6 +281,7 @@ class ListRecordSetsByZoneRequest:
     def id(self, id):
         """Sets the id of this ListRecordSetsByZoneRequest.
 
+        待查询的Record Set的id包含此id。  搜索模式默认为模糊搜索。  默认值为空。
 
         :param id: The id of this ListRecordSetsByZoneRequest.
         :type: str
@@ -274,6 +292,7 @@ class ListRecordSetsByZoneRequest:
     def sort_key(self):
         """Gets the sort_key of this ListRecordSetsByZoneRequest.
 
+        查询结果中Record Set列表的排序字段。  取值范围为：  name：域名 type：记录集类型 默认值为空，表示不排序。
 
         :return: The sort_key of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -284,6 +303,7 @@ class ListRecordSetsByZoneRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListRecordSetsByZoneRequest.
 
+        查询结果中Record Set列表的排序字段。  取值范围为：  name：域名 type：记录集类型 默认值为空，表示不排序。
 
         :param sort_key: The sort_key of this ListRecordSetsByZoneRequest.
         :type: str
@@ -294,6 +314,7 @@ class ListRecordSetsByZoneRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListRecordSetsByZoneRequest.
 
+        查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
         :return: The sort_dir of this ListRecordSetsByZoneRequest.
         :rtype: str
@@ -304,6 +325,7 @@ class ListRecordSetsByZoneRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListRecordSetsByZoneRequest.
 
+        查询结果中Record Set列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
         :param sort_dir: The sort_dir of this ListRecordSetsByZoneRequest.
         :type: str

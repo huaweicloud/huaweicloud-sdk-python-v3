@@ -72,6 +72,7 @@ class ListAuditlogsRequest:
     def x_language(self):
         """Gets the x_language of this ListAuditlogsRequest.
 
+        语言。
 
         :return: The x_language of this ListAuditlogsRequest.
         :rtype: str
@@ -82,6 +83,7 @@ class ListAuditlogsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListAuditlogsRequest.
 
+        语言。
 
         :param x_language: The x_language of this ListAuditlogsRequest.
         :type: str
@@ -92,6 +94,7 @@ class ListAuditlogsRequest:
     def instance_id(self):
         """Gets the instance_id of this ListAuditlogsRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :return: The instance_id of this ListAuditlogsRequest.
         :rtype: str
@@ -102,6 +105,7 @@ class ListAuditlogsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListAuditlogsRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ListAuditlogsRequest.
         :type: str
@@ -112,6 +116,7 @@ class ListAuditlogsRequest:
     def node_id(self):
         """Gets the node_id of this ListAuditlogsRequest.
 
+        查询审计日志的节点ID。不传值，默认查询所有的节点,集群实例审计日志分布在mongos节点上。
 
         :return: The node_id of this ListAuditlogsRequest.
         :rtype: str
@@ -122,6 +127,7 @@ class ListAuditlogsRequest:
     def node_id(self, node_id):
         """Sets the node_id of this ListAuditlogsRequest.
 
+        查询审计日志的节点ID。不传值，默认查询所有的节点,集群实例审计日志分布在mongos节点上。
 
         :param node_id: The node_id of this ListAuditlogsRequest.
         :type: str
@@ -132,6 +138,7 @@ class ListAuditlogsRequest:
     def start_time(self):
         """Gets the start_time of this ListAuditlogsRequest.
 
+        查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :return: The start_time of this ListAuditlogsRequest.
         :rtype: str
@@ -142,6 +149,7 @@ class ListAuditlogsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListAuditlogsRequest.
 
+        查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param start_time: The start_time of this ListAuditlogsRequest.
         :type: str
@@ -152,6 +160,7 @@ class ListAuditlogsRequest:
     def end_time(self):
         """Gets the end_time of this ListAuditlogsRequest.
 
+        查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间，时间跨度不超过30天。其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :return: The end_time of this ListAuditlogsRequest.
         :rtype: str
@@ -162,6 +171,7 @@ class ListAuditlogsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListAuditlogsRequest.
 
+        查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间，时间跨度不超过30天。其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param end_time: The end_time of this ListAuditlogsRequest.
         :type: str
@@ -172,6 +182,7 @@ class ListAuditlogsRequest:
     def offset(self):
         """Gets the offset of this ListAuditlogsRequest.
 
+        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :return: The offset of this ListAuditlogsRequest.
         :rtype: int
@@ -182,6 +193,7 @@ class ListAuditlogsRequest:
     def offset(self, offset):
         """Sets the offset of this ListAuditlogsRequest.
 
+        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :param offset: The offset of this ListAuditlogsRequest.
         :type: int
@@ -192,6 +204,7 @@ class ListAuditlogsRequest:
     def limit(self):
         """Gets the limit of this ListAuditlogsRequest.
 
+        查询记录数。取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
         :return: The limit of this ListAuditlogsRequest.
         :rtype: int
@@ -202,6 +215,7 @@ class ListAuditlogsRequest:
     def limit(self, limit):
         """Sets the limit of this ListAuditlogsRequest.
 
+        查询记录数。取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
         :param limit: The limit of this ListAuditlogsRequest.
         :type: int

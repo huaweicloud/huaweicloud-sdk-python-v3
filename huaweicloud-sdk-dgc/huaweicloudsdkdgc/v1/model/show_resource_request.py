@@ -44,6 +44,7 @@ class ShowResourceRequest:
     def resource_id(self):
         """Gets the resource_id of this ShowResourceRequest.
 
+        资源id.
 
         :return: The resource_id of this ShowResourceRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowResourceRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ShowResourceRequest.
 
+        资源id.
 
         :param resource_id: The resource_id of this ShowResourceRequest.
         :type: str

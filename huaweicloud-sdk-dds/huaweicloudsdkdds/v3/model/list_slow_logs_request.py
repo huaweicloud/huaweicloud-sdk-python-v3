@@ -72,6 +72,7 @@ class ListSlowLogsRequest:
     def instance_id(self):
         """Gets the instance_id of this ListSlowLogsRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :return: The instance_id of this ListSlowLogsRequest.
         :rtype: str
@@ -82,6 +83,7 @@ class ListSlowLogsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListSlowLogsRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ListSlowLogsRequest.
         :type: str
@@ -92,6 +94,7 @@ class ListSlowLogsRequest:
     def start_date(self):
         """Gets the start_date of this ListSlowLogsRequest.
 
+        开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :return: The start_date of this ListSlowLogsRequest.
         :rtype: str
@@ -102,6 +105,7 @@ class ListSlowLogsRequest:
     def start_date(self, start_date):
         """Sets the start_date of this ListSlowLogsRequest.
 
+        开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param start_date: The start_date of this ListSlowLogsRequest.
         :type: str
@@ -112,6 +116,7 @@ class ListSlowLogsRequest:
     def end_date(self):
         """Gets the end_date of this ListSlowLogsRequest.
 
+        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。注：结束时间不能晚于当前时间。
 
         :return: The end_date of this ListSlowLogsRequest.
         :rtype: str
@@ -122,6 +127,7 @@ class ListSlowLogsRequest:
     def end_date(self, end_date):
         """Sets the end_date of this ListSlowLogsRequest.
 
+        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。注：结束时间不能晚于当前时间。
 
         :param end_date: The end_date of this ListSlowLogsRequest.
         :type: str
@@ -132,6 +138,7 @@ class ListSlowLogsRequest:
     def node_id(self):
         """Gets the node_id of this ListSlowLogsRequest.
 
+        节点ID，取空值，表示查询实例下所有允许查询的节点。 使用请参考《DDS API参考》的“查询实例列表”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群实例下面的 shard节点 - 副本集、单节点实例下面的所有节点
 
         :return: The node_id of this ListSlowLogsRequest.
         :rtype: str
@@ -142,6 +149,7 @@ class ListSlowLogsRequest:
     def node_id(self, node_id):
         """Sets the node_id of this ListSlowLogsRequest.
 
+        节点ID，取空值，表示查询实例下所有允许查询的节点。 使用请参考《DDS API参考》的“查询实例列表”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群实例下面的 shard节点 - 副本集、单节点实例下面的所有节点
 
         :param node_id: The node_id of this ListSlowLogsRequest.
         :type: str
@@ -152,6 +160,7 @@ class ListSlowLogsRequest:
     def type(self):
         """Gets the type of this ListSlowLogsRequest.
 
+        语句类型，取空值，表示查询所有语句类型，也可指定如下日志类型： - INSERT - QUERY - UPDATE - REMOVE - GETMORE - COMMAND - KILLCURSORS
 
         :return: The type of this ListSlowLogsRequest.
         :rtype: str
@@ -162,6 +171,7 @@ class ListSlowLogsRequest:
     def type(self, type):
         """Sets the type of this ListSlowLogsRequest.
 
+        语句类型，取空值，表示查询所有语句类型，也可指定如下日志类型： - INSERT - QUERY - UPDATE - REMOVE - GETMORE - COMMAND - KILLCURSORS
 
         :param type: The type of this ListSlowLogsRequest.
         :type: str
@@ -172,6 +182,7 @@ class ListSlowLogsRequest:
     def offset(self):
         """Gets the offset of this ListSlowLogsRequest.
 
+        索引位置，偏移量。取值范围为 [0, 1999]。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :return: The offset of this ListSlowLogsRequest.
         :rtype: int
@@ -182,6 +193,7 @@ class ListSlowLogsRequest:
     def offset(self, offset):
         """Sets the offset of this ListSlowLogsRequest.
 
+        索引位置，偏移量。取值范围为 [0, 1999]。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :param offset: The offset of this ListSlowLogsRequest.
         :type: int
@@ -192,6 +204,7 @@ class ListSlowLogsRequest:
     def limit(self):
         """Gets the limit of this ListSlowLogsRequest.
 
+        查询记录数。取值范围[1, 100]，默认10 （表示默认返回10条数据）。 注意： limit 与 offset 的和需要满足 <= 2000的条件。
 
         :return: The limit of this ListSlowLogsRequest.
         :rtype: int
@@ -202,6 +215,7 @@ class ListSlowLogsRequest:
     def limit(self, limit):
         """Sets the limit of this ListSlowLogsRequest.
 
+        查询记录数。取值范围[1, 100]，默认10 （表示默认返回10条数据）。 注意： limit 与 offset 的和需要满足 <= 2000的条件。
 
         :param limit: The limit of this ListSlowLogsRequest.
         :type: int

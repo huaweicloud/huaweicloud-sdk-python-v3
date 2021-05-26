@@ -45,7 +45,7 @@ class DeleteCustomLineResponse(SdkResponse):
     def __init__(self, line_id=None, name=None, ip_segments=None, created_at=None, updated_at=None, status=None, description=None):
         """DeleteCustomLineResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteCustomLineResponse, self).__init__()
 
         self._line_id = None
         self._name = None

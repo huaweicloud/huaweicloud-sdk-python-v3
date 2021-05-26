@@ -49,6 +49,7 @@ class DeleteSessionRequest:
     def node_id(self):
         """Gets the node_id of this DeleteSessionRequest.
 
+        节点ID。允许查询的节点如下： 集群下面的 mongos节点以及 副本集、单节点实例下面的所有节点。
 
         :return: The node_id of this DeleteSessionRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class DeleteSessionRequest:
     def node_id(self, node_id):
         """Sets the node_id of this DeleteSessionRequest.
 
+        节点ID。允许查询的节点如下： 集群下面的 mongos节点以及 副本集、单节点实例下面的所有节点。
 
         :param node_id: The node_id of this DeleteSessionRequest.
         :type: str

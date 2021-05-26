@@ -35,7 +35,7 @@ class ListCustomLineResponse(SdkResponse):
     def __init__(self, lines=None, metadata=None):
         """ListCustomLineResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListCustomLineResponse, self).__init__()
 
         self._lines = None
         self._metadata = None

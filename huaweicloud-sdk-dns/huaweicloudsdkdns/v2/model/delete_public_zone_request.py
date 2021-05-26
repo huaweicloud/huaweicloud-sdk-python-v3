@@ -44,6 +44,7 @@ class DeletePublicZoneRequest:
     def zone_id(self):
         """Gets the zone_id of this DeletePublicZoneRequest.
 
+        待删除zone的ID
 
         :return: The zone_id of this DeletePublicZoneRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeletePublicZoneRequest:
     def zone_id(self, zone_id):
         """Sets the zone_id of this DeletePublicZoneRequest.
 
+        待删除zone的ID
 
         :param zone_id: The zone_id of this DeletePublicZoneRequest.
         :type: str

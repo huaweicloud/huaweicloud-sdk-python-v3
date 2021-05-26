@@ -31,7 +31,7 @@ class CheckPasswordResponse(SdkResponse):
     def __init__(self):
         """CheckPasswordResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CheckPasswordResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

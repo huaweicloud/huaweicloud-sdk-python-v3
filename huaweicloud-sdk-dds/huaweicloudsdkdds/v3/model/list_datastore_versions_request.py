@@ -44,6 +44,7 @@ class ListDatastoreVersionsRequest:
     def datastore_name(self):
         """Gets the datastore_name of this ListDatastoreVersionsRequest.
 
+        数据库版本类型。取值为“DDS-Community”。
 
         :return: The datastore_name of this ListDatastoreVersionsRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListDatastoreVersionsRequest:
     def datastore_name(self, datastore_name):
         """Sets the datastore_name of this ListDatastoreVersionsRequest.
 
+        数据库版本类型。取值为“DDS-Community”。
 
         :param datastore_name: The datastore_name of this ListDatastoreVersionsRequest.
         :type: str

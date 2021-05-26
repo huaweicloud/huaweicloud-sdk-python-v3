@@ -49,6 +49,7 @@ class SendMessagesRequest:
     def queue_id(self):
         """Gets the queue_id of this SendMessagesRequest.
 
+        指定的队列ID。
 
         :return: The queue_id of this SendMessagesRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class SendMessagesRequest:
     def queue_id(self, queue_id):
         """Sets the queue_id of this SendMessagesRequest.
 
+        指定的队列ID。
 
         :param queue_id: The queue_id of this SendMessagesRequest.
         :type: str

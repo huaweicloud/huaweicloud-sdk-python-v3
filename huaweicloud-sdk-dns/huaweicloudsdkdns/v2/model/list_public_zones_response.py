@@ -37,7 +37,7 @@ class ListPublicZonesResponse(SdkResponse):
     def __init__(self, links=None, zones=None, metadata=None):
         """ListPublicZonesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListPublicZonesResponse, self).__init__()
 
         self._links = None
         self._zones = None

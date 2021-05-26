@@ -31,7 +31,7 @@ class DeleteSpecifiedConsumerGroupResponse(SdkResponse):
     def __init__(self):
         """DeleteSpecifiedConsumerGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteSpecifiedConsumerGroupResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

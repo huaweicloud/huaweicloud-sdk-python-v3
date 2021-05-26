@@ -37,7 +37,7 @@ class ListPrivateZonesResponse(SdkResponse):
     def __init__(self, links=None, metadata=None, zones=None):
         """ListPrivateZonesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListPrivateZonesResponse, self).__init__()
 
         self._links = None
         self._metadata = None

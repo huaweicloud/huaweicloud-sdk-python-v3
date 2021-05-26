@@ -37,7 +37,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
     def __init__(self, links=None, recordsets=None, metadata=None):
         """ListRecordSetsWithLineResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListRecordSetsWithLineResponse, self).__init__()
 
         self._links = None
         self._recordsets = None

@@ -41,7 +41,7 @@ class UpdatePasswordResponse(SdkResponse):
     def __init__(self, lock_time=None, result=None, lock_time_left=None, retry_times_left=None, message=None):
         """UpdatePasswordResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdatePasswordResponse, self).__init__()
 
         self._lock_time = None
         self._result = None

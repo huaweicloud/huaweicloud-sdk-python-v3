@@ -49,6 +49,7 @@ class ShowConnectionStatisticsRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowConnectionStatisticsRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :return: The instance_id of this ShowConnectionStatisticsRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ShowConnectionStatisticsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowConnectionStatisticsRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ShowConnectionStatisticsRequest.
         :type: str
@@ -69,6 +71,7 @@ class ShowConnectionStatisticsRequest:
     def node_id(self):
         """Gets the node_id of this ShowConnectionStatisticsRequest.
 
+        节点ID。 - 如取空值，则默认查询实例下所有允许连接的节点的连接数信息。
 
         :return: The node_id of this ShowConnectionStatisticsRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ShowConnectionStatisticsRequest:
     def node_id(self, node_id):
         """Sets the node_id of this ShowConnectionStatisticsRequest.
 
+        节点ID。 - 如取空值，则默认查询实例下所有允许连接的节点的连接数信息。
 
         :param node_id: The node_id of this ShowConnectionStatisticsRequest.
         :type: str

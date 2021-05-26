@@ -37,7 +37,7 @@ class ListBackupFileLinksResponse(SdkResponse):
     def __init__(self, file_path=None, bucket_name=None, links=None):
         """ListBackupFileLinksResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListBackupFileLinksResponse, self).__init__()
 
         self._file_path = None
         self._bucket_name = None

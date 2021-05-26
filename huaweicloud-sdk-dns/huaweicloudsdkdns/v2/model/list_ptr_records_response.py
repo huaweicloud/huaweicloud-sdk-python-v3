@@ -37,7 +37,7 @@ class ListPtrRecordsResponse(SdkResponse):
     def __init__(self, links=None, metadata=None, floatingips=None):
         """ListPtrRecordsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListPtrRecordsResponse, self).__init__()
 
         self._links = None
         self._metadata = None

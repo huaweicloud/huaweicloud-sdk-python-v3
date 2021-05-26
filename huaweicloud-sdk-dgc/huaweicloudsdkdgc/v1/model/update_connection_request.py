@@ -49,6 +49,7 @@ class UpdateConnectionRequest:
     def connection_name(self):
         """Gets the connection_name of this UpdateConnectionRequest.
 
+        连接名称.
 
         :return: The connection_name of this UpdateConnectionRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateConnectionRequest:
     def connection_name(self, connection_name):
         """Sets the connection_name of this UpdateConnectionRequest.
 
+        连接名称.
 
         :param connection_name: The connection_name of this UpdateConnectionRequest.
         :type: str

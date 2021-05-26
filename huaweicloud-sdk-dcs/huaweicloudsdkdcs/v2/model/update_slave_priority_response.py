@@ -31,7 +31,7 @@ class UpdateSlavePriorityResponse(SdkResponse):
     def __init__(self):
         """UpdateSlavePriorityResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateSlavePriorityResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

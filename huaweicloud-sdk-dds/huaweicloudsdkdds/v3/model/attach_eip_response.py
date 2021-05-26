@@ -41,7 +41,7 @@ class AttachEipResponse(SdkResponse):
     def __init__(self, job_id=None, node_id=None, node_name=None, public_ip_id=None, public_ip=None):
         """AttachEipResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AttachEipResponse, self).__init__()
 
         self._job_id = None
         self._node_id = None

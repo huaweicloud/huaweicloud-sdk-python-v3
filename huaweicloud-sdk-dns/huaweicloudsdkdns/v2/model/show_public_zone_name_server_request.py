@@ -44,6 +44,7 @@ class ShowPublicZoneNameServerRequest:
     def zone_id(self):
         """Gets the zone_id of this ShowPublicZoneNameServerRequest.
 
+        待查询zone的ID。  可以通过查询公网Zone列表获取。
 
         :return: The zone_id of this ShowPublicZoneNameServerRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowPublicZoneNameServerRequest:
     def zone_id(self, zone_id):
         """Sets the zone_id of this ShowPublicZoneNameServerRequest.
 
+        待查询zone的ID。  可以通过查询公网Zone列表获取。
 
         :param zone_id: The zone_id of this ShowPublicZoneNameServerRequest.
         :type: str

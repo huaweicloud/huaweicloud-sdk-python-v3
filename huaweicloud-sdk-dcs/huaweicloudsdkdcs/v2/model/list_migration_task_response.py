@@ -35,7 +35,7 @@ class ListMigrationTaskResponse(SdkResponse):
     def __init__(self, count=None, migration_tasks=None):
         """ListMigrationTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListMigrationTaskResponse, self).__init__()
 
         self._count = None
         self._migration_tasks = None

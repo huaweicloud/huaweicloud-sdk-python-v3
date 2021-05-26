@@ -44,6 +44,7 @@ class StopJobRequest:
     def job_name(self):
         """Gets the job_name of this StopJobRequest.
 
+        作业名称.
 
         :return: The job_name of this StopJobRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class StopJobRequest:
     def job_name(self, job_name):
         """Sets the job_name of this StopJobRequest.
 
+        作业名称.
 
         :param job_name: The job_name of this StopJobRequest.
         :type: str

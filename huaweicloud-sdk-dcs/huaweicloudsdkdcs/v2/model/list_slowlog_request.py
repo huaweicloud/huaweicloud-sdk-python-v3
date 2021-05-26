@@ -72,6 +72,7 @@ class ListSlowlogRequest:
     def instance_id(self):
         """Gets the instance_id of this ListSlowlogRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListSlowlogRequest.
         :rtype: str
@@ -82,6 +83,7 @@ class ListSlowlogRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListSlowlogRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListSlowlogRequest.
         :type: str
@@ -92,6 +94,7 @@ class ListSlowlogRequest:
     def offset(self):
         """Gets the offset of this ListSlowlogRequest.
 
+        偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :return: The offset of this ListSlowlogRequest.
         :rtype: int
@@ -102,6 +105,7 @@ class ListSlowlogRequest:
     def offset(self, offset):
         """Sets the offset of this ListSlowlogRequest.
 
+        偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListSlowlogRequest.
         :type: int
@@ -112,6 +116,7 @@ class ListSlowlogRequest:
     def limit(self):
         """Gets the limit of this ListSlowlogRequest.
 
+        每页显示的条目数量。
 
         :return: The limit of this ListSlowlogRequest.
         :rtype: int
@@ -122,6 +127,7 @@ class ListSlowlogRequest:
     def limit(self, limit):
         """Sets the limit of this ListSlowlogRequest.
 
+        每页显示的条目数量。
 
         :param limit: The limit of this ListSlowlogRequest.
         :type: int
@@ -132,6 +138,7 @@ class ListSlowlogRequest:
     def sort_key(self):
         """Gets the sort_key of this ListSlowlogRequest.
 
+        返回结果按该关键字排序，支持start_time，duration，默认为“start_time”
 
         :return: The sort_key of this ListSlowlogRequest.
         :rtype: str
@@ -142,6 +149,7 @@ class ListSlowlogRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListSlowlogRequest.
 
+        返回结果按该关键字排序，支持start_time，duration，默认为“start_time”
 
         :param sort_key: The sort_key of this ListSlowlogRequest.
         :type: str
@@ -152,6 +160,7 @@ class ListSlowlogRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListSlowlogRequest.
 
+        降序或升序（分别对应desc和asc，默认为“desc”）
 
         :return: The sort_dir of this ListSlowlogRequest.
         :rtype: str
@@ -162,6 +171,7 @@ class ListSlowlogRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListSlowlogRequest.
 
+        降序或升序（分别对应desc和asc，默认为“desc”）
 
         :param sort_dir: The sort_dir of this ListSlowlogRequest.
         :type: str
@@ -172,6 +182,7 @@ class ListSlowlogRequest:
     def start_time(self):
         """Gets the start_time of this ListSlowlogRequest.
 
+        查询开始时间，时间为UTC时间的Unix时间戳。如：1598803200000。
 
         :return: The start_time of this ListSlowlogRequest.
         :rtype: str
@@ -182,6 +193,7 @@ class ListSlowlogRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListSlowlogRequest.
 
+        查询开始时间，时间为UTC时间的Unix时间戳。如：1598803200000。
 
         :param start_time: The start_time of this ListSlowlogRequest.
         :type: str
@@ -192,6 +204,7 @@ class ListSlowlogRequest:
     def end_time(self):
         """Gets the end_time of this ListSlowlogRequest.
 
+        查询结束时间，时间为UTC时间的Unix时间戳。如：1599494399000。
 
         :return: The end_time of this ListSlowlogRequest.
         :rtype: str
@@ -202,6 +215,7 @@ class ListSlowlogRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListSlowlogRequest.
 
+        查询结束时间，时间为UTC时间的Unix时间戳。如：1599494399000。
 
         :param end_time: The end_time of this ListSlowlogRequest.
         :type: str

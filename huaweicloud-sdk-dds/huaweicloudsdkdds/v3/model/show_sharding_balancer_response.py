@@ -35,7 +35,7 @@ class ShowShardingBalancerResponse(SdkResponse):
     def __init__(self, is_open=None, active_window=None):
         """ShowShardingBalancerResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowShardingBalancerResponse, self).__init__()
 
         self._is_open = None
         self._active_window = None

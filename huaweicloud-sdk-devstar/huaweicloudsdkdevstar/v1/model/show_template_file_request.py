@@ -58,6 +58,7 @@ class ShowTemplateFileRequest:
     def x_language(self):
         """Gets the x_language of this ShowTemplateFileRequest.
 
+        语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :return: The x_language of this ShowTemplateFileRequest.
         :rtype: str
@@ -68,6 +69,7 @@ class ShowTemplateFileRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowTemplateFileRequest.
 
+        语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :param x_language: The x_language of this ShowTemplateFileRequest.
         :type: str
@@ -78,6 +80,7 @@ class ShowTemplateFileRequest:
     def template_id(self):
         """Gets the template_id of this ShowTemplateFileRequest.
 
+        模板ID，通过查询模板列表接口可获取相应的模板ID。
 
         :return: The template_id of this ShowTemplateFileRequest.
         :rtype: str
@@ -88,6 +91,7 @@ class ShowTemplateFileRequest:
     def template_id(self, template_id):
         """Sets the template_id of this ShowTemplateFileRequest.
 
+        模板ID，通过查询模板列表接口可获取相应的模板ID。
 
         :param template_id: The template_id of this ShowTemplateFileRequest.
         :type: str
@@ -98,6 +102,7 @@ class ShowTemplateFileRequest:
     def file_path(self):
         """Gets the file_path of this ShowTemplateFileRequest.
 
+        文件相对路径，基于当前根目录的相对文件路径，例如获取HELP.md文件内容，则文件相对路径为“template-resources/file/HELP.md”。
 
         :return: The file_path of this ShowTemplateFileRequest.
         :rtype: str
@@ -108,6 +113,7 @@ class ShowTemplateFileRequest:
     def file_path(self, file_path):
         """Sets the file_path of this ShowTemplateFileRequest.
 
+        文件相对路径，基于当前根目录的相对文件路径，例如获取HELP.md文件内容，则文件相对路径为“template-resources/file/HELP.md”。
 
         :param file_path: The file_path of this ShowTemplateFileRequest.
         :type: str
@@ -118,6 +124,7 @@ class ShowTemplateFileRequest:
     def type(self):
         """Gets the type of this ShowTemplateFileRequest.
 
+        读取文件来源，缺省值为“source-pachage”。  枚举值： - source-package: 源文件压缩包 - introduction: 说明文件 
 
         :return: The type of this ShowTemplateFileRequest.
         :rtype: str
@@ -128,6 +135,7 @@ class ShowTemplateFileRequest:
     def type(self, type):
         """Sets the type of this ShowTemplateFileRequest.
 
+        读取文件来源，缺省值为“source-pachage”。  枚举值： - source-package: 源文件压缩包 - introduction: 说明文件 
 
         :param type: The type of this ShowTemplateFileRequest.
         :type: str

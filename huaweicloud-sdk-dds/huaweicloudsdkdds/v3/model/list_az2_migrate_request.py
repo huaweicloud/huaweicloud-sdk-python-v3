@@ -44,6 +44,7 @@ class ListAz2MigrateRequest:
     def instance_id(self):
         """Gets the instance_id of this ListAz2MigrateRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListAz2MigrateRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListAz2MigrateRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListAz2MigrateRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListAz2MigrateRequest.
         :type: str

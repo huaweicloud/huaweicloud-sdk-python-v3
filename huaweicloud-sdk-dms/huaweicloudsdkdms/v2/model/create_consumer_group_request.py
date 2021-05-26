@@ -49,6 +49,7 @@ class CreateConsumerGroupRequest:
     def queue_id(self):
         """Gets the queue_id of this CreateConsumerGroupRequest.
 
+        指定的队列ID
 
         :return: The queue_id of this CreateConsumerGroupRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateConsumerGroupRequest:
     def queue_id(self, queue_id):
         """Sets the queue_id of this CreateConsumerGroupRequest.
 
+        指定的队列ID
 
         :param queue_id: The queue_id of this CreateConsumerGroupRequest.
         :type: str

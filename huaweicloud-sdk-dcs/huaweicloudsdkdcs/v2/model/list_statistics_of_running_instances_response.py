@@ -33,7 +33,7 @@ class ListStatisticsOfRunningInstancesResponse(SdkResponse):
     def __init__(self, statistics=None):
         """ListStatisticsOfRunningInstancesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListStatisticsOfRunningInstancesResponse, self).__init__()
 
         self._statistics = None
         self.discriminator = None

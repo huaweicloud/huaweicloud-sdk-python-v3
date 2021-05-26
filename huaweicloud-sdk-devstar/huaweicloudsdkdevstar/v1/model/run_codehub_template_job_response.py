@@ -35,7 +35,7 @@ class RunCodehubTemplateJobResponse(SdkResponse):
     def __init__(self, job_id=None, file_list=None):
         """RunCodehubTemplateJobResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RunCodehubTemplateJobResponse, self).__init__()
 
         self._job_id = None
         self._file_list = None

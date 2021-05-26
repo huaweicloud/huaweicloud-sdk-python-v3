@@ -33,7 +33,7 @@ class CreateConsumerGroupResponse(SdkResponse):
     def __init__(self, groups=None):
         """CreateConsumerGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateConsumerGroupResponse, self).__init__()
 
         self._groups = None
         self.discriminator = None

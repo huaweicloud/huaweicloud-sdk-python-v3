@@ -6,10 +6,10 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
+from huaweicloudsdkcore.sdk_response import SdkResponse
 
 
-class DownloadApplicationCodeResponse(SdkStreamResponse):
+class ShowQueueProjectTagsResponse(SdkResponse):
 
 
     """
@@ -23,16 +23,45 @@ class DownloadApplicationCodeResponse(SdkStreamResponse):
     sensitive_list = []
 
     openapi_types = {
+        'tags': 'list[ShowProjectTagsRespTags]'
     }
 
     attribute_map = {
+        'tags': 'tags'
     }
 
-    def __init__(self,response):
-        """DownloadApplicationCodeResponse - a model defined in huaweicloud sdk"""
+    def __init__(self, tags=None):
+        """ShowQueueProjectTagsResponse - a model defined in huaweicloud sdk"""
         
-        super(DownloadApplicationCodeResponse, self).__init__(response)
+        super(ShowQueueProjectTagsResponse, self).__init__()
+
+        self._tags = None
         self.discriminator = None
+
+        if tags is not None:
+            self.tags = tags
+
+    @property
+    def tags(self):
+        """Gets the tags of this ShowQueueProjectTagsResponse.
+
+        标签列表
+
+        :return: The tags of this ShowQueueProjectTagsResponse.
+        :rtype: list[ShowProjectTagsRespTags]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ShowQueueProjectTagsResponse.
+
+        标签列表
+
+        :param tags: The tags of this ShowQueueProjectTagsResponse.
+        :type: list[ShowProjectTagsRespTags]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -71,7 +100,7 @@ class DownloadApplicationCodeResponse(SdkStreamResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DownloadApplicationCodeResponse):
+        if not isinstance(other, ShowQueueProjectTagsResponse):
             return False
 
         return self.__dict__ == other.__dict__

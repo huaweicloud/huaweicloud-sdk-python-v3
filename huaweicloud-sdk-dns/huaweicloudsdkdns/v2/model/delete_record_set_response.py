@@ -59,7 +59,7 @@ class DeleteRecordSetResponse(SdkResponse):
     def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, create_at=None, update_at=None, status=None, default=None, project_id=None, links=None):
         """DeleteRecordSetResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteRecordSetResponse, self).__init__()
 
         self._id = None
         self._name = None

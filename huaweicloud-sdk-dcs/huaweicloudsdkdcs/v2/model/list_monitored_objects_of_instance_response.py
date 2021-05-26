@@ -43,7 +43,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
     def __init__(self, router=None, children=None, instances=None, dcs_cluster_redis_node=None, dcs_cluster_proxy_node=None, total=None):
         """ListMonitoredObjectsOfInstanceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListMonitoredObjectsOfInstanceResponse, self).__init__()
 
         self._router = None
         self._children = None

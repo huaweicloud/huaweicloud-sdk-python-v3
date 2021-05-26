@@ -59,6 +59,7 @@ class ListHotKeyScanTasksRequest:
     def instance_id(self):
         """Gets the instance_id of this ListHotKeyScanTasksRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListHotKeyScanTasksRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class ListHotKeyScanTasksRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListHotKeyScanTasksRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListHotKeyScanTasksRequest.
         :type: str
@@ -79,6 +81,7 @@ class ListHotKeyScanTasksRequest:
     def offset(self):
         """Gets the offset of this ListHotKeyScanTasksRequest.
 
+        偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :return: The offset of this ListHotKeyScanTasksRequest.
         :rtype: int
@@ -89,6 +92,7 @@ class ListHotKeyScanTasksRequest:
     def offset(self, offset):
         """Sets the offset of this ListHotKeyScanTasksRequest.
 
+        偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListHotKeyScanTasksRequest.
         :type: int
@@ -99,6 +103,7 @@ class ListHotKeyScanTasksRequest:
     def limit(self):
         """Gets the limit of this ListHotKeyScanTasksRequest.
 
+        每页显示的条目数量。
 
         :return: The limit of this ListHotKeyScanTasksRequest.
         :rtype: int
@@ -109,6 +114,7 @@ class ListHotKeyScanTasksRequest:
     def limit(self, limit):
         """Sets the limit of this ListHotKeyScanTasksRequest.
 
+        每页显示的条目数量。
 
         :param limit: The limit of this ListHotKeyScanTasksRequest.
         :type: int
@@ -119,6 +125,7 @@ class ListHotKeyScanTasksRequest:
     def status(self):
         """Gets the status of this ListHotKeyScanTasksRequest.
 
+        分析任务状态
 
         :return: The status of this ListHotKeyScanTasksRequest.
         :rtype: str
@@ -129,6 +136,7 @@ class ListHotKeyScanTasksRequest:
     def status(self, status):
         """Sets the status of this ListHotKeyScanTasksRequest.
 
+        分析任务状态
 
         :param status: The status of this ListHotKeyScanTasksRequest.
         :type: str

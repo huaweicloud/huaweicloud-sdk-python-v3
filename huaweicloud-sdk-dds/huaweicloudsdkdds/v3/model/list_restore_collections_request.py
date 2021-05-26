@@ -67,6 +67,7 @@ class ListRestoreCollectionsRequest:
     def x_language(self):
         """Gets the x_language of this ListRestoreCollectionsRequest.
 
+        语言。
 
         :return: The x_language of this ListRestoreCollectionsRequest.
         :rtype: str
@@ -77,6 +78,7 @@ class ListRestoreCollectionsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListRestoreCollectionsRequest.
 
+        语言。
 
         :param x_language: The x_language of this ListRestoreCollectionsRequest.
         :type: str
@@ -87,6 +89,7 @@ class ListRestoreCollectionsRequest:
     def instance_id(self):
         """Gets the instance_id of this ListRestoreCollectionsRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :return: The instance_id of this ListRestoreCollectionsRequest.
         :rtype: str
@@ -97,6 +100,7 @@ class ListRestoreCollectionsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListRestoreCollectionsRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ListRestoreCollectionsRequest.
         :type: str
@@ -107,6 +111,7 @@ class ListRestoreCollectionsRequest:
     def db_name(self):
         """Gets the db_name of this ListRestoreCollectionsRequest.
 
+        数据库名称。
 
         :return: The db_name of this ListRestoreCollectionsRequest.
         :rtype: str
@@ -117,6 +122,7 @@ class ListRestoreCollectionsRequest:
     def db_name(self, db_name):
         """Sets the db_name of this ListRestoreCollectionsRequest.
 
+        数据库名称。
 
         :param db_name: The db_name of this ListRestoreCollectionsRequest.
         :type: str
@@ -127,6 +133,7 @@ class ListRestoreCollectionsRequest:
     def restore_time(self):
         """Gets the restore_time of this ListRestoreCollectionsRequest.
 
+        恢复时间点。UNIX时间戳格式，单位是毫秒，时区是UTC。
 
         :return: The restore_time of this ListRestoreCollectionsRequest.
         :rtype: str
@@ -137,6 +144,7 @@ class ListRestoreCollectionsRequest:
     def restore_time(self, restore_time):
         """Sets the restore_time of this ListRestoreCollectionsRequest.
 
+        恢复时间点。UNIX时间戳格式，单位是毫秒，时区是UTC。
 
         :param restore_time: The restore_time of this ListRestoreCollectionsRequest.
         :type: str
@@ -147,6 +155,7 @@ class ListRestoreCollectionsRequest:
     def offset(self):
         """Gets the offset of this ListRestoreCollectionsRequest.
 
+        索引位置偏移量。取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
         :return: The offset of this ListRestoreCollectionsRequest.
         :rtype: int
@@ -157,6 +166,7 @@ class ListRestoreCollectionsRequest:
     def offset(self, offset):
         """Sets the offset of this ListRestoreCollectionsRequest.
 
+        索引位置偏移量。取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
         :param offset: The offset of this ListRestoreCollectionsRequest.
         :type: int
@@ -167,6 +177,7 @@ class ListRestoreCollectionsRequest:
     def limit(self):
         """Gets the limit of this ListRestoreCollectionsRequest.
 
+        查询个数上限值。取值范围：1~100。不传该参数时，默认查询前100条信息。
 
         :return: The limit of this ListRestoreCollectionsRequest.
         :rtype: int
@@ -177,6 +188,7 @@ class ListRestoreCollectionsRequest:
     def limit(self, limit):
         """Sets the limit of this ListRestoreCollectionsRequest.
 
+        查询个数上限值。取值范围：1~100。不传该参数时，默认查询前100条信息。
 
         :param limit: The limit of this ListRestoreCollectionsRequest.
         :type: int

@@ -37,7 +37,7 @@ class CancelEipResponse(SdkResponse):
     def __init__(self, job_id=None, node_id=None, node_name=None):
         """CancelEipResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CancelEipResponse, self).__init__()
 
         self._job_id = None
         self._node_id = None

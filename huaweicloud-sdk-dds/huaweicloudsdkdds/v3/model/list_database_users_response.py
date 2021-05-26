@@ -35,7 +35,7 @@ class ListDatabaseUsersResponse(SdkResponse):
     def __init__(self, users=None, total_count=None):
         """ListDatabaseUsersResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListDatabaseUsersResponse, self).__init__()
 
         self._users = None
         self._total_count = None

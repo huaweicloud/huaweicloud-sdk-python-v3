@@ -44,6 +44,7 @@ class ShowQueueTagsRequest:
     def queue_id(self):
         """Gets the queue_id of this ShowQueueTagsRequest.
 
+        队列ID。
 
         :return: The queue_id of this ShowQueueTagsRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowQueueTagsRequest:
     def queue_id(self, queue_id):
         """Sets the queue_id of this ShowQueueTagsRequest.
 
+        队列ID。
 
         :param queue_id: The queue_id of this ShowQueueTagsRequest.
         :type: str

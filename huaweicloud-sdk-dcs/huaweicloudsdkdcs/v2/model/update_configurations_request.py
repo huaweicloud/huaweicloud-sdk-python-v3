@@ -49,6 +49,7 @@ class UpdateConfigurationsRequest:
     def instance_id(self):
         """Gets the instance_id of this UpdateConfigurationsRequest.
 
+        实例ID
 
         :return: The instance_id of this UpdateConfigurationsRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateConfigurationsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpdateConfigurationsRequest.
 
+        实例ID
 
         :param instance_id: The instance_id of this UpdateConfigurationsRequest.
         :type: str

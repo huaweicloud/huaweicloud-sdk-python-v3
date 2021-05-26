@@ -44,6 +44,7 @@ class DeleteConnctionRequest:
     def connection_name(self):
         """Gets the connection_name of this DeleteConnctionRequest.
 
+        连接名称.
 
         :return: The connection_name of this DeleteConnctionRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteConnctionRequest:
     def connection_name(self, connection_name):
         """Sets the connection_name of this DeleteConnctionRequest.
 
+        连接名称.
 
         :param connection_name: The connection_name of this DeleteConnctionRequest.
         :type: str

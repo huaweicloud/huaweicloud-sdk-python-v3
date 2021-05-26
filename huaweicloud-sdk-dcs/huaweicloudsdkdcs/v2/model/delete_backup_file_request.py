@@ -48,6 +48,7 @@ class DeleteBackupFileRequest:
     def backup_id(self):
         """Gets the backup_id of this DeleteBackupFileRequest.
 
+        备份记录ID。
 
         :return: The backup_id of this DeleteBackupFileRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteBackupFileRequest:
     def backup_id(self, backup_id):
         """Sets the backup_id of this DeleteBackupFileRequest.
 
+        备份记录ID。
 
         :param backup_id: The backup_id of this DeleteBackupFileRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteBackupFileRequest:
     def instance_id(self):
         """Gets the instance_id of this DeleteBackupFileRequest.
 
+        实例ID。
 
         :return: The instance_id of this DeleteBackupFileRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteBackupFileRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeleteBackupFileRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this DeleteBackupFileRequest.
         :type: str

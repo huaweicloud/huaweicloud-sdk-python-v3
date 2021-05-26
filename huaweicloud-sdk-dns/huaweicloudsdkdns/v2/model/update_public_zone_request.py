@@ -49,6 +49,7 @@ class UpdatePublicZoneRequest:
     def zone_id(self):
         """Gets the zone_id of this UpdatePublicZoneRequest.
 
+        待修改zone的ID
 
         :return: The zone_id of this UpdatePublicZoneRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdatePublicZoneRequest:
     def zone_id(self, zone_id):
         """Sets the zone_id of this UpdatePublicZoneRequest.
 
+        待修改zone的ID
 
         :param zone_id: The zone_id of this UpdatePublicZoneRequest.
         :type: str

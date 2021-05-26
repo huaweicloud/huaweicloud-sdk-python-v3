@@ -70,7 +70,7 @@ class QueryMatchItem:
     def value(self):
         """Gets the value of this QueryMatchItem.
 
-        待匹配的实例名称或实例ID。
+        待匹配的实例名称或实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :return: The value of this QueryMatchItem.
         :rtype: str
@@ -81,7 +81,7 @@ class QueryMatchItem:
     def value(self, value):
         """Sets the value of this QueryMatchItem.
 
-        待匹配的实例名称或实例ID。
+        待匹配的实例名称或实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param value: The value of this QueryMatchItem.
         :type: str

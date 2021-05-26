@@ -54,6 +54,7 @@ class ListMonitoredObjectsRequest:
     def dim_name(self):
         """Gets the dim_name of this ListMonitoredObjectsRequest.
 
+        主维度ID，当前支持dcs_instance_id，dcs_memcached_instance_id。
 
         :return: The dim_name of this ListMonitoredObjectsRequest.
         :rtype: str
@@ -64,6 +65,7 @@ class ListMonitoredObjectsRequest:
     def dim_name(self, dim_name):
         """Sets the dim_name of this ListMonitoredObjectsRequest.
 
+        主维度ID，当前支持dcs_instance_id，dcs_memcached_instance_id。
 
         :param dim_name: The dim_name of this ListMonitoredObjectsRequest.
         :type: str
@@ -74,6 +76,7 @@ class ListMonitoredObjectsRequest:
     def offset(self):
         """Gets the offset of this ListMonitoredObjectsRequest.
 
+        偏移量，表示从此偏移量开始查询，offset大于等于0
 
         :return: The offset of this ListMonitoredObjectsRequest.
         :rtype: int
@@ -84,6 +87,7 @@ class ListMonitoredObjectsRequest:
     def offset(self, offset):
         """Sets the offset of this ListMonitoredObjectsRequest.
 
+        偏移量，表示从此偏移量开始查询，offset大于等于0
 
         :param offset: The offset of this ListMonitoredObjectsRequest.
         :type: int
@@ -94,6 +98,7 @@ class ListMonitoredObjectsRequest:
     def limit(self):
         """Gets the limit of this ListMonitoredObjectsRequest.
 
+        每页显示的条目数量
 
         :return: The limit of this ListMonitoredObjectsRequest.
         :rtype: int
@@ -104,6 +109,7 @@ class ListMonitoredObjectsRequest:
     def limit(self, limit):
         """Sets the limit of this ListMonitoredObjectsRequest.
 
+        每页显示的条目数量
 
         :param limit: The limit of this ListMonitoredObjectsRequest.
         :type: int

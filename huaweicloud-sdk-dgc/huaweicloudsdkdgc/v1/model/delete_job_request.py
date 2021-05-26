@@ -44,6 +44,7 @@ class DeleteJobRequest:
     def job_name(self):
         """Gets the job_name of this DeleteJobRequest.
 
+        作业名称.
 
         :return: The job_name of this DeleteJobRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteJobRequest:
     def job_name(self, job_name):
         """Sets the job_name of this DeleteJobRequest.
 
+        作业名称.
 
         :param job_name: The job_name of this DeleteJobRequest.
         :type: str

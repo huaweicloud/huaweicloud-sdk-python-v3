@@ -44,6 +44,7 @@ class DeleteCustomLineRequest:
     def line_id(self):
         """Gets the line_id of this DeleteCustomLineRequest.
 
+        解析线路ID。
 
         :return: The line_id of this DeleteCustomLineRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteCustomLineRequest:
     def line_id(self, line_id):
         """Sets the line_id of this DeleteCustomLineRequest.
 
+        解析线路ID。
 
         :param line_id: The line_id of this DeleteCustomLineRequest.
         :type: str

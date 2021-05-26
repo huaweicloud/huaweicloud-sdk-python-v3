@@ -37,7 +37,7 @@ class CreateQueueResponse(SdkResponse):
     def __init__(self, id=None, name=None, kafka_topic=None):
         """CreateQueueResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateQueueResponse, self).__init__()
 
         self._id = None
         self._name = None

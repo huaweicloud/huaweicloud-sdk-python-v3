@@ -44,6 +44,7 @@ class ListInstanceTagsRequest:
     def instance_id(self):
         """Gets the instance_id of this ListInstanceTagsRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :return: The instance_id of this ListInstanceTagsRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListInstanceTagsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListInstanceTagsRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ListInstanceTagsRequest.
         :type: str

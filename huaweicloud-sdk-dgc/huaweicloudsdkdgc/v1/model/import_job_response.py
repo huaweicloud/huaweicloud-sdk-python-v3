@@ -33,7 +33,7 @@ class ImportJobResponse(SdkResponse):
     def __init__(self, task_id=None):
         """ImportJobResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ImportJobResponse, self).__init__()
 
         self._task_id = None
         self.discriminator = None

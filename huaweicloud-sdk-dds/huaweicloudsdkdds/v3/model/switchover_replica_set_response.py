@@ -33,7 +33,7 @@ class SwitchoverReplicaSetResponse(SdkResponse):
     def __init__(self, job_id=None):
         """SwitchoverReplicaSetResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(SwitchoverReplicaSetResponse, self).__init__()
 
         self._job_id = None
         self.discriminator = None

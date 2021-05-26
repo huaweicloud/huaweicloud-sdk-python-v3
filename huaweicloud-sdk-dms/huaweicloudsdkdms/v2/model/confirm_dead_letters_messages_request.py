@@ -53,6 +53,7 @@ class ConfirmDeadLettersMessagesRequest:
     def queue_id(self):
         """Gets the queue_id of this ConfirmDeadLettersMessagesRequest.
 
+        队列ID。
 
         :return: The queue_id of this ConfirmDeadLettersMessagesRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class ConfirmDeadLettersMessagesRequest:
     def queue_id(self, queue_id):
         """Sets the queue_id of this ConfirmDeadLettersMessagesRequest.
 
+        队列ID。
 
         :param queue_id: The queue_id of this ConfirmDeadLettersMessagesRequest.
         :type: str
@@ -73,6 +75,7 @@ class ConfirmDeadLettersMessagesRequest:
     def consumer_group_id(self):
         """Gets the consumer_group_id of this ConfirmDeadLettersMessagesRequest.
 
+        消费组ID。
 
         :return: The consumer_group_id of this ConfirmDeadLettersMessagesRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class ConfirmDeadLettersMessagesRequest:
     def consumer_group_id(self, consumer_group_id):
         """Sets the consumer_group_id of this ConfirmDeadLettersMessagesRequest.
 
+        消费组ID。
 
         :param consumer_group_id: The consumer_group_id of this ConfirmDeadLettersMessagesRequest.
         :type: str

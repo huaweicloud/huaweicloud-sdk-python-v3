@@ -49,6 +49,7 @@ class AttachEipRequest:
     def node_id(self):
         """Gets the node_id of this AttachEipRequest.
 
+        需要绑定公网IP的节点ID。集群实例选择mongos节点，副本集实例选择primary或者secondary节点，单节点实例选择primary节点。
 
         :return: The node_id of this AttachEipRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class AttachEipRequest:
     def node_id(self, node_id):
         """Sets the node_id of this AttachEipRequest.
 
+        需要绑定公网IP的节点ID。集群实例选择mongos节点，副本集实例选择primary或者secondary节点，单节点实例选择primary节点。
 
         :param node_id: The node_id of this AttachEipRequest.
         :type: str

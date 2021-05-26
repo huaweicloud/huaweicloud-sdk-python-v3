@@ -49,6 +49,7 @@ class ListFlavorsRequest:
     def region(self):
         """Gets the region of this ListFlavorsRequest.
 
+        实例所在区域。
 
         :return: The region of this ListFlavorsRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ListFlavorsRequest:
     def region(self, region):
         """Sets the region of this ListFlavorsRequest.
 
+        实例所在区域。
 
         :param region: The region of this ListFlavorsRequest.
         :type: str
@@ -69,6 +71,7 @@ class ListFlavorsRequest:
     def engine_name(self):
         """Gets the engine_name of this ListFlavorsRequest.
 
+        数据库版本类型。取值为“DDS-Community”。
 
         :return: The engine_name of this ListFlavorsRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ListFlavorsRequest:
     def engine_name(self, engine_name):
         """Sets the engine_name of this ListFlavorsRequest.
 
+        数据库版本类型。取值为“DDS-Community”。
 
         :param engine_name: The engine_name of this ListFlavorsRequest.
         :type: str

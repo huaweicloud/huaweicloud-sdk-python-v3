@@ -39,7 +39,7 @@ class ListConsumerGroupsResponse(SdkResponse):
     def __init__(self, queue_id=None, queue_name=None, groups=None, redrive_policy=None):
         """ListConsumerGroupsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListConsumerGroupsResponse, self).__init__()
 
         self._queue_id = None
         self._queue_name = None

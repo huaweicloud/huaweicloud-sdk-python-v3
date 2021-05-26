@@ -47,7 +47,7 @@ class ListSystemTasksResponse(SdkResponse):
     def __init__(self, id=None, name=None, start_time=None, end_time=None, last_update=None, status=None, message=None, sub_tasks=None):
         """ListSystemTasksResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSystemTasksResponse, self).__init__()
 
         self._id = None
         self._name = None

@@ -44,6 +44,7 @@ class ShowTagsRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowTagsRequest.
 
+        实例ID。
 
         :return: The instance_id of this ShowTagsRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowTagsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowTagsRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ShowTagsRequest.
         :type: str

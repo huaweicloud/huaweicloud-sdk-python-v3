@@ -43,7 +43,7 @@ class ShowResourceResponse(SdkResponse):
     def __init__(self, name=None, type=None, location=None, depend_files=None, desc=None, directory=None):
         """ShowResourceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowResourceResponse, self).__init__()
 
         self._name = None
         self._type = None

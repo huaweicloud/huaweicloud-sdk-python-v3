@@ -43,7 +43,7 @@ class ShowJobStatusResponse(SdkResponse):
     def __init__(self, name=None, status=None, starttime=None, end_time=None, last_update_time=None, nodes=None):
         """ShowJobStatusResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowJobStatusResponse, self).__init__()
 
         self._name = None
         self._status = None

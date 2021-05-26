@@ -35,7 +35,7 @@ class ShowIpWhitelistResponse(SdkResponse):
     def __init__(self, enable_whitelist=None, whitelist=None):
         """ShowIpWhitelistResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowIpWhitelistResponse, self).__init__()
 
         self._enable_whitelist = None
         self._whitelist = None

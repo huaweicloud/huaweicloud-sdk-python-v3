@@ -49,6 +49,7 @@ class DownloadApplicationCodeRequest:
     def x_language(self):
         """Gets the x_language of this DownloadApplicationCodeRequest.
 
+        语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :return: The x_language of this DownloadApplicationCodeRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class DownloadApplicationCodeRequest:
     def x_language(self, x_language):
         """Sets the x_language of this DownloadApplicationCodeRequest.
 
+        语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :param x_language: The x_language of this DownloadApplicationCodeRequest.
         :type: str
@@ -69,6 +71,7 @@ class DownloadApplicationCodeRequest:
     def job_id(self):
         """Gets the job_id of this DownloadApplicationCodeRequest.
 
+        任务id。
 
         :return: The job_id of this DownloadApplicationCodeRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class DownloadApplicationCodeRequest:
     def job_id(self, job_id):
         """Sets the job_id of this DownloadApplicationCodeRequest.
 
+        任务id。
 
         :param job_id: The job_id of this DownloadApplicationCodeRequest.
         :type: str

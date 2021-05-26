@@ -73,6 +73,7 @@ class ConsumeMessagesRequest:
     def queue_id(self):
         """Gets the queue_id of this ConsumeMessagesRequest.
 
+        指定的队列ID。
 
         :return: The queue_id of this ConsumeMessagesRequest.
         :rtype: str
@@ -83,6 +84,7 @@ class ConsumeMessagesRequest:
     def queue_id(self, queue_id):
         """Sets the queue_id of this ConsumeMessagesRequest.
 
+        指定的队列ID。
 
         :param queue_id: The queue_id of this ConsumeMessagesRequest.
         :type: str
@@ -93,6 +95,7 @@ class ConsumeMessagesRequest:
     def consumer_group_id(self):
         """Gets the consumer_group_id of this ConsumeMessagesRequest.
 
+        消费组的ID。
 
         :return: The consumer_group_id of this ConsumeMessagesRequest.
         :rtype: str
@@ -103,6 +106,7 @@ class ConsumeMessagesRequest:
     def consumer_group_id(self, consumer_group_id):
         """Sets the consumer_group_id of this ConsumeMessagesRequest.
 
+        消费组的ID。
 
         :param consumer_group_id: The consumer_group_id of this ConsumeMessagesRequest.
         :type: str
@@ -113,6 +117,7 @@ class ConsumeMessagesRequest:
     def max_msgs(self):
         """Gets the max_msgs of this ConsumeMessagesRequest.
 
+        获取可消费的消息的条数。  取值范围：1~10。  默认值：10
 
         :return: The max_msgs of this ConsumeMessagesRequest.
         :rtype: int
@@ -123,6 +128,7 @@ class ConsumeMessagesRequest:
     def max_msgs(self, max_msgs):
         """Sets the max_msgs of this ConsumeMessagesRequest.
 
+        获取可消费的消息的条数。  取值范围：1~10。  默认值：10
 
         :param max_msgs: The max_msgs of this ConsumeMessagesRequest.
         :type: int
@@ -133,6 +139,7 @@ class ConsumeMessagesRequest:
     def time_wait(self):
         """Gets the time_wait of this ConsumeMessagesRequest.
 
+        设定队列可消费的消息为0时的读取消息等待时间。  如果在等待时间内有新的消息，则立即返回消费结果，如果等待时间内没有新的消息，则到等待时间后返回消费结果。  取值范围：1~60s  默认值：3s  说明：不带该参数或者配置为空，都默认为3s。
 
         :return: The time_wait of this ConsumeMessagesRequest.
         :rtype: int
@@ -143,6 +150,7 @@ class ConsumeMessagesRequest:
     def time_wait(self, time_wait):
         """Sets the time_wait of this ConsumeMessagesRequest.
 
+        设定队列可消费的消息为0时的读取消息等待时间。  如果在等待时间内有新的消息，则立即返回消费结果，如果等待时间内没有新的消息，则到等待时间后返回消费结果。  取值范围：1~60s  默认值：3s  说明：不带该参数或者配置为空，都默认为3s。
 
         :param time_wait: The time_wait of this ConsumeMessagesRequest.
         :type: int
@@ -153,6 +161,7 @@ class ConsumeMessagesRequest:
     def ack_wait(self):
         """Gets the ack_wait of this ConsumeMessagesRequest.
 
+        提交确认消费的超时时间，客户端需要在该时间内提交消费确认，如果超过指定时间，没有确认消费，系统会报消息确认超时或handler无效，则默认为消费失败。  取值范围：15~300s  默认值：30s  说明：不带该参数或者配置为空，都默认为30s。
 
         :return: The ack_wait of this ConsumeMessagesRequest.
         :rtype: int
@@ -163,6 +172,7 @@ class ConsumeMessagesRequest:
     def ack_wait(self, ack_wait):
         """Sets the ack_wait of this ConsumeMessagesRequest.
 
+        提交确认消费的超时时间，客户端需要在该时间内提交消费确认，如果超过指定时间，没有确认消费，系统会报消息确认超时或handler无效，则默认为消费失败。  取值范围：15~300s  默认值：30s  说明：不带该参数或者配置为空，都默认为30s。
 
         :param ack_wait: The ack_wait of this ConsumeMessagesRequest.
         :type: int
@@ -173,6 +183,7 @@ class ConsumeMessagesRequest:
     def tag(self):
         """Gets the tag of this ConsumeMessagesRequest.
 
+        添加标签后可以按照Tag进行过滤，只消费匹配上标签的消息。  Tag的数量不超过3个。  每个Tag长度不超过64。
 
         :return: The tag of this ConsumeMessagesRequest.
         :rtype: str
@@ -183,6 +194,7 @@ class ConsumeMessagesRequest:
     def tag(self, tag):
         """Sets the tag of this ConsumeMessagesRequest.
 
+        添加标签后可以按照Tag进行过滤，只消费匹配上标签的消息。  Tag的数量不超过3个。  每个Tag长度不超过64。
 
         :param tag: The tag of this ConsumeMessagesRequest.
         :type: str
@@ -193,6 +205,7 @@ class ConsumeMessagesRequest:
     def tag_type(self):
         """Gets the tag_type of this ConsumeMessagesRequest.
 
+        多个消息标签的过滤类型。  取值范围： - and：必须所有标签匹配上，才能消费消息。 - or：只要有一条标签匹配上，就可以消费消息。  默认值为：or。
 
         :return: The tag_type of this ConsumeMessagesRequest.
         :rtype: str
@@ -203,6 +216,7 @@ class ConsumeMessagesRequest:
     def tag_type(self, tag_type):
         """Sets the tag_type of this ConsumeMessagesRequest.
 
+        多个消息标签的过滤类型。  取值范围： - and：必须所有标签匹配上，才能消费消息。 - or：只要有一条标签匹配上，就可以消费消息。  默认值为：or。
 
         :param tag_type: The tag_type of this ConsumeMessagesRequest.
         :type: str

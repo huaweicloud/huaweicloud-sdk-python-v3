@@ -44,6 +44,7 @@ class ShowConnectionRequest:
     def connection_name(self):
         """Gets the connection_name of this ShowConnectionRequest.
 
+        连接名称.
 
         :return: The connection_name of this ShowConnectionRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowConnectionRequest:
     def connection_name(self, connection_name):
         """Sets the connection_name of this ShowConnectionRequest.
 
+        连接名称.
 
         :param connection_name: The connection_name of this ShowConnectionRequest.
         :type: str

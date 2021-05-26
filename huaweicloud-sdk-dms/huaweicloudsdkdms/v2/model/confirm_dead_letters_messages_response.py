@@ -35,7 +35,7 @@ class ConfirmDeadLettersMessagesResponse(SdkResponse):
     def __init__(self, success=None, fail=None):
         """ConfirmDeadLettersMessagesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ConfirmDeadLettersMessagesResponse, self).__init__()
 
         self._success = None
         self._fail = None

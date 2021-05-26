@@ -53,6 +53,7 @@ class ListRestoreTimesRequest:
     def x_language(self):
         """Gets the x_language of this ListRestoreTimesRequest.
 
+        语言。
 
         :return: The x_language of this ListRestoreTimesRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class ListRestoreTimesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListRestoreTimesRequest.
 
+        语言。
 
         :param x_language: The x_language of this ListRestoreTimesRequest.
         :type: str
@@ -73,6 +75,7 @@ class ListRestoreTimesRequest:
     def instance_id(self):
         """Gets the instance_id of this ListRestoreTimesRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :return: The instance_id of this ListRestoreTimesRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class ListRestoreTimesRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListRestoreTimesRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ListRestoreTimesRequest.
         :type: str
@@ -93,6 +97,7 @@ class ListRestoreTimesRequest:
     def date(self):
         """Gets the date of this ListRestoreTimesRequest.
 
+        所需查询的日期，为yyyy-mm-dd字符串格式，时区为UTC。
 
         :return: The date of this ListRestoreTimesRequest.
         :rtype: str
@@ -103,6 +108,7 @@ class ListRestoreTimesRequest:
     def date(self, date):
         """Sets the date of this ListRestoreTimesRequest.
 
+        所需查询的日期，为yyyy-mm-dd字符串格式，时区为UTC。
 
         :param date: The date of this ListRestoreTimesRequest.
         :type: str

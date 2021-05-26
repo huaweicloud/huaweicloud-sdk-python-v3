@@ -53,6 +53,7 @@ class ShowBackupDownloadLinkRequest:
     def x_language(self):
         """Gets the x_language of this ShowBackupDownloadLinkRequest.
 
+        语言。
 
         :return: The x_language of this ShowBackupDownloadLinkRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class ShowBackupDownloadLinkRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowBackupDownloadLinkRequest.
 
+        语言。
 
         :param x_language: The x_language of this ShowBackupDownloadLinkRequest.
         :type: str
@@ -73,6 +75,7 @@ class ShowBackupDownloadLinkRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowBackupDownloadLinkRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :return: The instance_id of this ShowBackupDownloadLinkRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class ShowBackupDownloadLinkRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowBackupDownloadLinkRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ShowBackupDownloadLinkRequest.
         :type: str
@@ -93,6 +97,7 @@ class ShowBackupDownloadLinkRequest:
     def backup_id(self):
         """Gets the backup_id of this ShowBackupDownloadLinkRequest.
 
+        备份ID。
 
         :return: The backup_id of this ShowBackupDownloadLinkRequest.
         :rtype: str
@@ -103,6 +108,7 @@ class ShowBackupDownloadLinkRequest:
     def backup_id(self, backup_id):
         """Sets the backup_id of this ShowBackupDownloadLinkRequest.
 
+        备份ID。
 
         :param backup_id: The backup_id of this ShowBackupDownloadLinkRequest.
         :type: str

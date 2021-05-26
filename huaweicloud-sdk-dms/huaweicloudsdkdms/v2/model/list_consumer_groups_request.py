@@ -64,6 +64,7 @@ class ListConsumerGroupsRequest:
     def queue_id(self):
         """Gets the queue_id of this ListConsumerGroupsRequest.
 
+        指定的队列ID
 
         :return: The queue_id of this ListConsumerGroupsRequest.
         :rtype: str
@@ -74,6 +75,7 @@ class ListConsumerGroupsRequest:
     def queue_id(self, queue_id):
         """Sets the queue_id of this ListConsumerGroupsRequest.
 
+        指定的队列ID
 
         :param queue_id: The queue_id of this ListConsumerGroupsRequest.
         :type: str
@@ -84,6 +86,7 @@ class ListConsumerGroupsRequest:
     def include_deadletter(self):
         """Gets the include_deadletter of this ListConsumerGroupsRequest.
 
+        是否包含死信信息。默认值为：false
 
         :return: The include_deadletter of this ListConsumerGroupsRequest.
         :rtype: bool
@@ -94,6 +97,7 @@ class ListConsumerGroupsRequest:
     def include_deadletter(self, include_deadletter):
         """Sets the include_deadletter of this ListConsumerGroupsRequest.
 
+        是否包含死信信息。默认值为：false
 
         :param include_deadletter: The include_deadletter of this ListConsumerGroupsRequest.
         :type: bool
@@ -104,6 +108,7 @@ class ListConsumerGroupsRequest:
     def include_messages_num(self):
         """Gets the include_messages_num of this ListConsumerGroupsRequest.
 
+        是否查询消费组的详情，默认值为true。  配置为false时，查询的消费组列表不包含消费详情，接口响应速度快。
 
         :return: The include_messages_num of this ListConsumerGroupsRequest.
         :rtype: bool
@@ -114,6 +119,7 @@ class ListConsumerGroupsRequest:
     def include_messages_num(self, include_messages_num):
         """Sets the include_messages_num of this ListConsumerGroupsRequest.
 
+        是否查询消费组的详情，默认值为true。  配置为false时，查询的消费组列表不包含消费详情，接口响应速度快。
 
         :param include_messages_num: The include_messages_num of this ListConsumerGroupsRequest.
         :type: bool
@@ -124,6 +130,7 @@ class ListConsumerGroupsRequest:
     def page_size(self):
         """Gets the page_size of this ListConsumerGroupsRequest.
 
+        设置每页显示的消费组数量。  page_size和current_page必须同时配置有效值，否则默认查询所有消费组。
 
         :return: The page_size of this ListConsumerGroupsRequest.
         :rtype: int
@@ -134,6 +141,7 @@ class ListConsumerGroupsRequest:
     def page_size(self, page_size):
         """Sets the page_size of this ListConsumerGroupsRequest.
 
+        设置每页显示的消费组数量。  page_size和current_page必须同时配置有效值，否则默认查询所有消费组。
 
         :param page_size: The page_size of this ListConsumerGroupsRequest.
         :type: int
@@ -144,6 +152,7 @@ class ListConsumerGroupsRequest:
     def current_page(self):
         """Gets the current_page of this ListConsumerGroupsRequest.
 
+        设置查询消费组的页码。  page_size和current_page必须同时配置有效值，否则默认查询所有消费组。
 
         :return: The current_page of this ListConsumerGroupsRequest.
         :rtype: int
@@ -154,6 +163,7 @@ class ListConsumerGroupsRequest:
     def current_page(self, current_page):
         """Sets the current_page of this ListConsumerGroupsRequest.
 
+        设置查询消费组的页码。  page_size和current_page必须同时配置有效值，否则默认查询所有消费组。
 
         :param current_page: The current_page of this ListConsumerGroupsRequest.
         :type: int

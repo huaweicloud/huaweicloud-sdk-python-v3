@@ -39,7 +39,7 @@ class UpdateHotkeyAutoScanConfigResponse(SdkResponse):
     def __init__(self, instance_id=None, enable_auto_scan=None, schedule_at=None, updated_at=None):
         """UpdateHotkeyAutoScanConfigResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateHotkeyAutoScanConfigResponse, self).__init__()
 
         self._instance_id = None
         self._enable_auto_scan = None

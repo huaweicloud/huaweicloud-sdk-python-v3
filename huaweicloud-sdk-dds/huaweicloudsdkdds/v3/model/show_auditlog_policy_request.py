@@ -49,6 +49,7 @@ class ShowAuditlogPolicyRequest:
     def x_language(self):
         """Gets the x_language of this ShowAuditlogPolicyRequest.
 
+        语言。
 
         :return: The x_language of this ShowAuditlogPolicyRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ShowAuditlogPolicyRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowAuditlogPolicyRequest.
 
+        语言。
 
         :param x_language: The x_language of this ShowAuditlogPolicyRequest.
         :type: str
@@ -69,6 +71,7 @@ class ShowAuditlogPolicyRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowAuditlogPolicyRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :return: The instance_id of this ShowAuditlogPolicyRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ShowAuditlogPolicyRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowAuditlogPolicyRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ShowAuditlogPolicyRequest.
         :type: str

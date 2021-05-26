@@ -45,6 +45,7 @@ class ListQueuesRequest:
     def include_deadletter(self):
         """Gets the include_deadletter of this ListQueuesRequest.
 
+        是否包含死信信息。  支持的值如下：  - true：包含死信消息。 - false：不包含死信消息。  默认值为：false。  Kafka队列没有死信功能，该参数对于Kafka队列无效。
 
         :return: The include_deadletter of this ListQueuesRequest.
         :rtype: bool
@@ -55,6 +56,7 @@ class ListQueuesRequest:
     def include_deadletter(self, include_deadletter):
         """Sets the include_deadletter of this ListQueuesRequest.
 
+        是否包含死信信息。  支持的值如下：  - true：包含死信消息。 - false：不包含死信消息。  默认值为：false。  Kafka队列没有死信功能，该参数对于Kafka队列无效。
 
         :param include_deadletter: The include_deadletter of this ListQueuesRequest.
         :type: bool

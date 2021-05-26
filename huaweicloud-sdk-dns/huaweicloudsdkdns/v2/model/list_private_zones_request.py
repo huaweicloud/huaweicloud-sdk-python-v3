@@ -79,6 +79,7 @@ class ListPrivateZonesRequest:
     def type(self):
         """Gets the type of this ListPrivateZonesRequest.
 
+        待查询的zone的类型。  取值范围：private。
 
         :return: The type of this ListPrivateZonesRequest.
         :rtype: str
@@ -89,6 +90,7 @@ class ListPrivateZonesRequest:
     def type(self, type):
         """Sets the type of this ListPrivateZonesRequest.
 
+        待查询的zone的类型。  取值范围：private。
 
         :param type: The type of this ListPrivateZonesRequest.
         :type: str
@@ -99,6 +101,7 @@ class ListPrivateZonesRequest:
     def limit(self):
         """Gets the limit of this ListPrivateZonesRequest.
 
+        每页返回的资源个数，取值范围：0~500
 
         :return: The limit of this ListPrivateZonesRequest.
         :rtype: int
@@ -109,6 +112,7 @@ class ListPrivateZonesRequest:
     def limit(self, limit):
         """Sets the limit of this ListPrivateZonesRequest.
 
+        每页返回的资源个数，取值范围：0~500
 
         :param limit: The limit of this ListPrivateZonesRequest.
         :type: int
@@ -119,6 +123,7 @@ class ListPrivateZonesRequest:
     def marker(self):
         """Gets the marker of this ListPrivateZonesRequest.
 
+        分页查询起始的资源ID，为空时为查询第一页
 
         :return: The marker of this ListPrivateZonesRequest.
         :rtype: str
@@ -129,6 +134,7 @@ class ListPrivateZonesRequest:
     def marker(self, marker):
         """Sets the marker of this ListPrivateZonesRequest.
 
+        分页查询起始的资源ID，为空时为查询第一页
 
         :param marker: The marker of this ListPrivateZonesRequest.
         :type: str
@@ -139,6 +145,7 @@ class ListPrivateZonesRequest:
     def offset(self):
         """Gets the offset of this ListPrivateZonesRequest.
 
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询
 
         :return: The offset of this ListPrivateZonesRequest.
         :rtype: int
@@ -149,6 +156,7 @@ class ListPrivateZonesRequest:
     def offset(self, offset):
         """Sets the offset of this ListPrivateZonesRequest.
 
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询
 
         :param offset: The offset of this ListPrivateZonesRequest.
         :type: int
@@ -159,6 +167,7 @@ class ListPrivateZonesRequest:
     def tags(self):
         """Gets the tags of this ListPrivateZonesRequest.
 
+        资源标签。
 
         :return: The tags of this ListPrivateZonesRequest.
         :rtype: str
@@ -169,6 +178,7 @@ class ListPrivateZonesRequest:
     def tags(self, tags):
         """Sets the tags of this ListPrivateZonesRequest.
 
+        资源标签。
 
         :param tags: The tags of this ListPrivateZonesRequest.
         :type: str
@@ -179,6 +189,7 @@ class ListPrivateZonesRequest:
     def name(self):
         """Gets the name of this ListPrivateZonesRequest.
 
+        zone名称。
 
         :return: The name of this ListPrivateZonesRequest.
         :rtype: str
@@ -189,6 +200,7 @@ class ListPrivateZonesRequest:
     def name(self, name):
         """Sets the name of this ListPrivateZonesRequest.
 
+        zone名称。
 
         :param name: The name of this ListPrivateZonesRequest.
         :type: str
@@ -199,6 +211,7 @@ class ListPrivateZonesRequest:
     def status(self):
         """Gets the status of this ListPrivateZonesRequest.
 
+        资源状态。
 
         :return: The status of this ListPrivateZonesRequest.
         :rtype: str
@@ -209,6 +222,7 @@ class ListPrivateZonesRequest:
     def status(self, status):
         """Sets the status of this ListPrivateZonesRequest.
 
+        资源状态。
 
         :param status: The status of this ListPrivateZonesRequest.
         :type: str
@@ -219,6 +233,7 @@ class ListPrivateZonesRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListPrivateZonesRequest.
 
+        域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
 
         :return: The enterprise_project_id of this ListPrivateZonesRequest.
         :rtype: str
@@ -229,6 +244,7 @@ class ListPrivateZonesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListPrivateZonesRequest.
 
+        域名关联的企业项目ID，长度不超过36个字符。  默认值为0。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPrivateZonesRequest.
         :type: str

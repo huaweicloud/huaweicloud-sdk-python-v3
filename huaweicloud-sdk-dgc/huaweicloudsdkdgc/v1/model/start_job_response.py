@@ -31,7 +31,7 @@ class StartJobResponse(SdkResponse):
     def __init__(self):
         """StartJobResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(StartJobResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

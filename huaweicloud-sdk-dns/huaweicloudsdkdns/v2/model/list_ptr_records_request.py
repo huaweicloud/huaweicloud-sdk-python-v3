@@ -70,6 +70,7 @@ class ListPtrRecordsRequest:
     def marker(self):
         """Gets the marker of this ListPtrRecordsRequest.
 
+        分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
         :return: The marker of this ListPtrRecordsRequest.
         :rtype: str
@@ -80,6 +81,7 @@ class ListPtrRecordsRequest:
     def marker(self, marker):
         """Sets the marker of this ListPtrRecordsRequest.
 
+        分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
         :param marker: The marker of this ListPtrRecordsRequest.
         :type: str
@@ -90,6 +92,7 @@ class ListPtrRecordsRequest:
     def limit(self):
         """Gets the limit of this ListPtrRecordsRequest.
 
+        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :return: The limit of this ListPtrRecordsRequest.
         :rtype: int
@@ -100,6 +103,7 @@ class ListPtrRecordsRequest:
     def limit(self, limit):
         """Sets the limit of this ListPtrRecordsRequest.
 
+        每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :param limit: The limit of this ListPtrRecordsRequest.
         :type: int
@@ -110,6 +114,7 @@ class ListPtrRecordsRequest:
     def offset(self):
         """Gets the offset of this ListPtrRecordsRequest.
 
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :return: The offset of this ListPtrRecordsRequest.
         :rtype: int
@@ -120,6 +125,7 @@ class ListPtrRecordsRequest:
     def offset(self, offset):
         """Sets the offset of this ListPtrRecordsRequest.
 
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :param offset: The offset of this ListPtrRecordsRequest.
         :type: int
@@ -130,6 +136,7 @@ class ListPtrRecordsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListPtrRecordsRequest.
 
+        反向解析关联的企业项目ID，长度不超过36个字符。  默认值为0。
 
         :return: The enterprise_project_id of this ListPtrRecordsRequest.
         :rtype: str
@@ -140,6 +147,7 @@ class ListPtrRecordsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListPtrRecordsRequest.
 
+        反向解析关联的企业项目ID，长度不超过36个字符。  默认值为0。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPtrRecordsRequest.
         :type: str
@@ -150,6 +158,7 @@ class ListPtrRecordsRequest:
     def tags(self):
         """Gets the tags of this ListPtrRecordsRequest.
 
+        资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
 
         :return: The tags of this ListPtrRecordsRequest.
         :rtype: str
@@ -160,6 +169,7 @@ class ListPtrRecordsRequest:
     def tags(self, tags):
         """Sets the tags of this ListPtrRecordsRequest.
 
+        资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。
 
         :param tags: The tags of this ListPtrRecordsRequest.
         :type: str
@@ -170,6 +180,7 @@ class ListPtrRecordsRequest:
     def status(self):
         """Gets the status of this ListPtrRecordsRequest.
 
+        资源状态。
 
         :return: The status of this ListPtrRecordsRequest.
         :rtype: str
@@ -180,6 +191,7 @@ class ListPtrRecordsRequest:
     def status(self, status):
         """Sets the status of this ListPtrRecordsRequest.
 
+        资源状态。
 
         :param status: The status of this ListPtrRecordsRequest.
         :type: str

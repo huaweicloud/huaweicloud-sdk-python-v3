@@ -41,7 +41,7 @@ class ShowConnectionStatisticsResponse(SdkResponse):
     def __init__(self, total_connections=None, total_inner_connections=None, total_outer_connections=None, inner_connections=None, outer_connections=None):
         """ShowConnectionStatisticsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowConnectionStatisticsResponse, self).__init__()
 
         self._total_connections = None
         self._total_inner_connections = None

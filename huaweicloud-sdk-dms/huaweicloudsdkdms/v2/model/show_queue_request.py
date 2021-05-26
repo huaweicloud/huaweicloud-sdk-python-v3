@@ -49,6 +49,7 @@ class ShowQueueRequest:
     def queue_id(self):
         """Gets the queue_id of this ShowQueueRequest.
 
+        待查询的队列ID
 
         :return: The queue_id of this ShowQueueRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ShowQueueRequest:
     def queue_id(self, queue_id):
         """Sets the queue_id of this ShowQueueRequest.
 
+        待查询的队列ID
 
         :param queue_id: The queue_id of this ShowQueueRequest.
         :type: str
@@ -69,6 +71,7 @@ class ShowQueueRequest:
     def include_deadletter(self):
         """Gets the include_deadletter of this ShowQueueRequest.
 
+        是否包含死信信息。  支持的值如下：  - true：包含死信消息。 - false：不包含死信消息。  默认值为：false。  Kafka队列没有死信功能，该参数对于Kafka队列无效。
 
         :return: The include_deadletter of this ShowQueueRequest.
         :rtype: bool
@@ -79,6 +82,7 @@ class ShowQueueRequest:
     def include_deadletter(self, include_deadletter):
         """Sets the include_deadletter of this ShowQueueRequest.
 
+        是否包含死信信息。  支持的值如下：  - true：包含死信消息。 - false：不包含死信消息。  默认值为：false。  Kafka队列没有死信功能，该参数对于Kafka队列无效。
 
         :param include_deadletter: The include_deadletter of this ShowQueueRequest.
         :type: bool

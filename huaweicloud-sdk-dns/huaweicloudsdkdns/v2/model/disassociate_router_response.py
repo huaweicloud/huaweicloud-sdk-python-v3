@@ -37,7 +37,7 @@ class DisassociateRouterResponse(SdkResponse):
     def __init__(self, router_id=None, router_region=None, status=None):
         """DisassociateRouterResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DisassociateRouterResponse, self).__init__()
 
         self._router_id = None
         self._router_region = None

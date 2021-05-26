@@ -33,7 +33,7 @@ class ShowApiInfoResponse(SdkResponse):
     def __init__(self, version=None):
         """ShowApiInfoResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowApiInfoResponse, self).__init__()
 
         self._version = None
         self.discriminator = None

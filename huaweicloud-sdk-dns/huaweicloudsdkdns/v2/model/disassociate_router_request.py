@@ -49,6 +49,7 @@ class DisassociateRouterRequest:
     def zone_id(self):
         """Gets the zone_id of this DisassociateRouterRequest.
 
+        待解关联zone的ID。
 
         :return: The zone_id of this DisassociateRouterRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class DisassociateRouterRequest:
     def zone_id(self, zone_id):
         """Sets the zone_id of this DisassociateRouterRequest.
 
+        待解关联zone的ID。
 
         :param zone_id: The zone_id of this DisassociateRouterRequest.
         :type: str

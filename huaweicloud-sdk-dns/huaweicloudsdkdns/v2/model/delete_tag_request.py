@@ -52,6 +52,7 @@ class DeleteTagRequest:
     def resource_type(self):
         """Gets the resource_type of this DeleteTagRequest.
 
+        资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。  
 
         :return: The resource_type of this DeleteTagRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class DeleteTagRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this DeleteTagRequest.
 
+        资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。  
 
         :param resource_type: The resource_type of this DeleteTagRequest.
         :type: str
@@ -72,6 +74,7 @@ class DeleteTagRequest:
     def resource_id(self):
         """Gets the resource_id of this DeleteTagRequest.
 
+        资源id。  
 
         :return: The resource_id of this DeleteTagRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class DeleteTagRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this DeleteTagRequest.
 
+        资源id。  
 
         :param resource_id: The resource_id of this DeleteTagRequest.
         :type: str
@@ -92,6 +96,7 @@ class DeleteTagRequest:
     def key(self):
         """Gets the key of this DeleteTagRequest.
 
+        标签key。  标签key不能为空或者空字符串。
 
         :return: The key of this DeleteTagRequest.
         :rtype: str
@@ -102,6 +107,7 @@ class DeleteTagRequest:
     def key(self, key):
         """Sets the key of this DeleteTagRequest.
 
+        标签key。  标签key不能为空或者空字符串。
 
         :param key: The key of this DeleteTagRequest.
         :type: str

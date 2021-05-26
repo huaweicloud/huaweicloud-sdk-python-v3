@@ -31,7 +31,7 @@ class CreateDatabaseUserResponse(SdkResponse):
     def __init__(self):
         """CreateDatabaseUserResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateDatabaseUserResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

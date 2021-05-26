@@ -49,6 +49,7 @@ class ListTemplateViewHistoriesRequest:
     def x_language(self):
         """Gets the x_language of this ListTemplateViewHistoriesRequest.
 
+        语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :return: The x_language of this ListTemplateViewHistoriesRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ListTemplateViewHistoriesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListTemplateViewHistoriesRequest.
 
+        语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :param x_language: The x_language of this ListTemplateViewHistoriesRequest.
         :type: str
@@ -69,6 +71,7 @@ class ListTemplateViewHistoriesRequest:
     def platform_source(self):
         """Gets the platform_source of this ListTemplateViewHistoriesRequest.
 
+        平台来源： - 0：查询CodeLabs中用户浏览过的模板。 - 1：查询DevStar中用户浏览过的模板。 
 
         :return: The platform_source of this ListTemplateViewHistoriesRequest.
         :rtype: int
@@ -79,6 +82,7 @@ class ListTemplateViewHistoriesRequest:
     def platform_source(self, platform_source):
         """Sets the platform_source of this ListTemplateViewHistoriesRequest.
 
+        平台来源： - 0：查询CodeLabs中用户浏览过的模板。 - 1：查询DevStar中用户浏览过的模板。 
 
         :param platform_source: The platform_source of this ListTemplateViewHistoriesRequest.
         :type: int

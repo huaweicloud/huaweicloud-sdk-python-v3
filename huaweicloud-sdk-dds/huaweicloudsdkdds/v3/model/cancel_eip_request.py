@@ -44,6 +44,7 @@ class CancelEipRequest:
     def node_id(self):
         """Gets the node_id of this CancelEipRequest.
 
+        节点ID。
 
         :return: The node_id of this CancelEipRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class CancelEipRequest:
     def node_id(self, node_id):
         """Sets the node_id of this CancelEipRequest.
 
+        节点ID。
 
         :param node_id: The node_id of this CancelEipRequest.
         :type: str

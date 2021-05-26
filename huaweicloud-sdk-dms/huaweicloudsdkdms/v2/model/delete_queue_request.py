@@ -44,6 +44,7 @@ class DeleteQueueRequest:
     def queue_id(self):
         """Gets the queue_id of this DeleteQueueRequest.
 
+        待删除的队列ID
 
         :return: The queue_id of this DeleteQueueRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteQueueRequest:
     def queue_id(self, queue_id):
         """Sets the queue_id of this DeleteQueueRequest.
 
+        待删除的队列ID
 
         :param queue_id: The queue_id of this DeleteQueueRequest.
         :type: str

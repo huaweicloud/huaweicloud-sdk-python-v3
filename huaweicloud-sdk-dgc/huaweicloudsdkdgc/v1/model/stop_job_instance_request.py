@@ -48,6 +48,7 @@ class StopJobInstanceRequest:
     def job_name(self):
         """Gets the job_name of this StopJobInstanceRequest.
 
+        作业名称.
 
         :return: The job_name of this StopJobInstanceRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class StopJobInstanceRequest:
     def job_name(self, job_name):
         """Sets the job_name of this StopJobInstanceRequest.
 
+        作业名称.
 
         :param job_name: The job_name of this StopJobInstanceRequest.
         :type: str
@@ -68,6 +70,7 @@ class StopJobInstanceRequest:
     def instance_id(self):
         """Gets the instance_id of this StopJobInstanceRequest.
 
+        作业实例id.
 
         :return: The instance_id of this StopJobInstanceRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class StopJobInstanceRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this StopJobInstanceRequest.
 
+        作业实例id.
 
         :param instance_id: The instance_id of this StopJobInstanceRequest.
         :type: str

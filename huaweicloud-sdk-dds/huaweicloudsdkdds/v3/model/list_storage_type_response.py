@@ -35,7 +35,7 @@ class ListStorageTypeResponse(SdkResponse):
     def __init__(self, storage_type=None, dss_pool_info=None):
         """ListStorageTypeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListStorageTypeResponse, self).__init__()
 
         self._storage_type = None
         self._dss_pool_info = None

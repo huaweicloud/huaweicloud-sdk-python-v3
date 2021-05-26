@@ -33,7 +33,7 @@ class ListAz2MigrateResponse(SdkResponse):
     def __init__(self, az_list=None):
         """ListAz2MigrateResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListAz2MigrateResponse, self).__init__()
 
         self._az_list = None
         self.discriminator = None

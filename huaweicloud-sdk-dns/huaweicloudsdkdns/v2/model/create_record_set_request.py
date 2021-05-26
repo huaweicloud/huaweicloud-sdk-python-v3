@@ -49,6 +49,7 @@ class CreateRecordSetRequest:
     def zone_id(self):
         """Gets the zone_id of this CreateRecordSetRequest.
 
+        所属zone的ID。
 
         :return: The zone_id of this CreateRecordSetRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateRecordSetRequest:
     def zone_id(self, zone_id):
         """Sets the zone_id of this CreateRecordSetRequest.
 
+        所属zone的ID。
 
         :param zone_id: The zone_id of this CreateRecordSetRequest.
         :type: str

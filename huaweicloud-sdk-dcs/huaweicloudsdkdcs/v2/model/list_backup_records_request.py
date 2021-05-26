@@ -64,6 +64,7 @@ class ListBackupRecordsRequest:
     def instance_id(self):
         """Gets the instance_id of this ListBackupRecordsRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListBackupRecordsRequest.
         :rtype: str
@@ -74,6 +75,7 @@ class ListBackupRecordsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListBackupRecordsRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListBackupRecordsRequest.
         :type: str
@@ -84,6 +86,7 @@ class ListBackupRecordsRequest:
     def begin_time(self):
         """Gets the begin_time of this ListBackupRecordsRequest.
 
+        查询开始时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20170718235959。
 
         :return: The begin_time of this ListBackupRecordsRequest.
         :rtype: str
@@ -94,6 +97,7 @@ class ListBackupRecordsRequest:
     def begin_time(self, begin_time):
         """Sets the begin_time of this ListBackupRecordsRequest.
 
+        查询开始时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20170718235959。
 
         :param begin_time: The begin_time of this ListBackupRecordsRequest.
         :type: str
@@ -104,6 +108,7 @@ class ListBackupRecordsRequest:
     def end_time(self):
         """Gets the end_time of this ListBackupRecordsRequest.
 
+        查询结束时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20170718235959。
 
         :return: The end_time of this ListBackupRecordsRequest.
         :rtype: str
@@ -114,6 +119,7 @@ class ListBackupRecordsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListBackupRecordsRequest.
 
+        查询结束时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20170718235959。
 
         :param end_time: The end_time of this ListBackupRecordsRequest.
         :type: str
@@ -124,6 +130,7 @@ class ListBackupRecordsRequest:
     def limit(self):
         """Gets the limit of this ListBackupRecordsRequest.
 
+        每页显示的条目数量。
 
         :return: The limit of this ListBackupRecordsRequest.
         :rtype: int
@@ -134,6 +141,7 @@ class ListBackupRecordsRequest:
     def limit(self, limit):
         """Sets the limit of this ListBackupRecordsRequest.
 
+        每页显示的条目数量。
 
         :param limit: The limit of this ListBackupRecordsRequest.
         :type: int
@@ -144,6 +152,7 @@ class ListBackupRecordsRequest:
     def offset(self):
         """Gets the offset of this ListBackupRecordsRequest.
 
+        偏移量，表示从此偏移量开始查询， offset大于等于0。
 
         :return: The offset of this ListBackupRecordsRequest.
         :rtype: int
@@ -154,6 +163,7 @@ class ListBackupRecordsRequest:
     def offset(self, offset):
         """Sets the offset of this ListBackupRecordsRequest.
 
+        偏移量，表示从此偏移量开始查询， offset大于等于0。
 
         :param offset: The offset of this ListBackupRecordsRequest.
         :type: int

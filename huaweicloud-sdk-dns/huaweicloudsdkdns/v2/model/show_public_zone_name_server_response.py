@@ -33,7 +33,7 @@ class ShowPublicZoneNameServerResponse(SdkResponse):
     def __init__(self, nameservers=None):
         """ShowPublicZoneNameServerResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowPublicZoneNameServerResponse, self).__init__()
 
         self._nameservers = None
         self.discriminator = None

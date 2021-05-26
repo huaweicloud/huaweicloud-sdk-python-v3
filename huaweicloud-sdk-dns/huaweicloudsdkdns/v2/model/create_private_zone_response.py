@@ -63,7 +63,7 @@ class CreatePrivateZoneResponse(SdkResponse):
     def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, pool_id=None, project_id=None, created_at=None, updated_at=None, links=None, masters=None, router=None):
         """CreatePrivateZoneResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreatePrivateZoneResponse, self).__init__()
 
         self._id = None
         self._name = None

@@ -33,7 +33,7 @@ class SetBalancerWindowResponse(SdkResponse):
     def __init__(self, job_id=None):
         """SetBalancerWindowResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(SetBalancerWindowResponse, self).__init__()
 
         self._job_id = None
         self.discriminator = None

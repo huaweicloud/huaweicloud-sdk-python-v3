@@ -33,7 +33,7 @@ class SendMessagesResponse(SdkResponse):
     def __init__(self, messages=None):
         """SendMessagesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(SendMessagesResponse, self).__init__()
 
         self._messages = None
         self.discriminator = None

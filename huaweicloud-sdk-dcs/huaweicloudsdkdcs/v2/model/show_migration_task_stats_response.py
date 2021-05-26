@@ -45,7 +45,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
     def __init__(self, full_migration_progress=None, offset=None, source_dbsize=None, target_dbsize=None, target_input_kbps=None, target_ops=None, is_migrating=None):
         """ShowMigrationTaskStatsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowMigrationTaskStatsResponse, self).__init__()
 
         self._full_migration_progress = None
         self._offset = None

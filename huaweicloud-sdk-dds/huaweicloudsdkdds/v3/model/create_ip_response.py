@@ -31,7 +31,7 @@ class CreateIpResponse(SdkResponse):
     def __init__(self):
         """CreateIpResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateIpResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

@@ -49,6 +49,7 @@ class UpdateJobRequest:
     def job_name(self):
         """Gets the job_name of this UpdateJobRequest.
 
+        作业名称.
 
         :return: The job_name of this UpdateJobRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateJobRequest:
     def job_name(self, job_name):
         """Sets the job_name of this UpdateJobRequest.
 
+        作业名称.
 
         :param job_name: The job_name of this UpdateJobRequest.
         :type: str

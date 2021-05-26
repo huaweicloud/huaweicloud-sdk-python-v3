@@ -37,7 +37,7 @@ class AssociateRouterResponse(SdkResponse):
     def __init__(self, router_id=None, router_region=None, status=None):
         """AssociateRouterResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AssociateRouterResponse, self).__init__()
 
         self._router_id = None
         self._router_region = None

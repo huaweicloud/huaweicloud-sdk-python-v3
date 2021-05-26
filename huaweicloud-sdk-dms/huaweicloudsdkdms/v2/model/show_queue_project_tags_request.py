@@ -6,10 +6,10 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 
 
-class DownloadApplicationCodeResponse(SdkStreamResponse):
+
+class ShowQueueProjectTagsRequest:
 
 
     """
@@ -28,10 +28,10 @@ class DownloadApplicationCodeResponse(SdkStreamResponse):
     attribute_map = {
     }
 
-    def __init__(self,response):
-        """DownloadApplicationCodeResponse - a model defined in huaweicloud sdk"""
+    def __init__(self):
+        """ShowQueueProjectTagsRequest - a model defined in huaweicloud sdk"""
         
-        super(DownloadApplicationCodeResponse, self).__init__(response)
+        
         self.discriminator = None
 
     def to_dict(self):
@@ -71,7 +71,7 @@ class DownloadApplicationCodeResponse(SdkStreamResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DownloadApplicationCodeResponse):
+        if not isinstance(other, ShowQueueProjectTagsRequest):
             return False
 
         return self.__dict__ == other.__dict__

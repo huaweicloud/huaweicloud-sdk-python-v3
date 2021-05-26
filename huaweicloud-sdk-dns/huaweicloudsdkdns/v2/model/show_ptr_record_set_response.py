@@ -47,7 +47,7 @@ class ShowPtrRecordSetResponse(SdkResponse):
     def __init__(self, id=None, ptrdname=None, description=None, ttl=None, address=None, status=None, action=None, links=None):
         """ShowPtrRecordSetResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowPtrRecordSetResponse, self).__init__()
 
         self._id = None
         self._ptrdname = None

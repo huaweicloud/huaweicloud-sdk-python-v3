@@ -52,6 +52,7 @@ class DeleteIpFromDomainNameRequest:
     def instance_id(self):
         """Gets the instance_id of this DeleteIpFromDomainNameRequest.
 
+        实例ID。
 
         :return: The instance_id of this DeleteIpFromDomainNameRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class DeleteIpFromDomainNameRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeleteIpFromDomainNameRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this DeleteIpFromDomainNameRequest.
         :type: str
@@ -72,6 +74,7 @@ class DeleteIpFromDomainNameRequest:
     def group_id(self):
         """Gets the group_id of this DeleteIpFromDomainNameRequest.
 
+        分片ID。
 
         :return: The group_id of this DeleteIpFromDomainNameRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class DeleteIpFromDomainNameRequest:
     def group_id(self, group_id):
         """Sets the group_id of this DeleteIpFromDomainNameRequest.
 
+        分片ID。
 
         :param group_id: The group_id of this DeleteIpFromDomainNameRequest.
         :type: str
@@ -92,6 +96,7 @@ class DeleteIpFromDomainNameRequest:
     def node_id(self):
         """Gets the node_id of this DeleteIpFromDomainNameRequest.
 
+        节点ID。
 
         :return: The node_id of this DeleteIpFromDomainNameRequest.
         :rtype: str
@@ -102,6 +107,7 @@ class DeleteIpFromDomainNameRequest:
     def node_id(self, node_id):
         """Sets the node_id of this DeleteIpFromDomainNameRequest.
 
+        节点ID。
 
         :param node_id: The node_id of this DeleteIpFromDomainNameRequest.
         :type: str

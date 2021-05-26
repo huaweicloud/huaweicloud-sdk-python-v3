@@ -54,6 +54,7 @@ class ListTemplatesV2Request:
     def x_language(self):
         """Gets the x_language of this ListTemplatesV2Request.
 
+        语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :return: The x_language of this ListTemplatesV2Request.
         :rtype: str
@@ -64,6 +65,7 @@ class ListTemplatesV2Request:
     def x_language(self, x_language):
         """Sets the x_language of this ListTemplatesV2Request.
 
+        语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :param x_language: The x_language of this ListTemplatesV2Request.
         :type: str
@@ -74,6 +76,7 @@ class ListTemplatesV2Request:
     def action_id(self):
         """Gets the action_id of this ListTemplatesV2Request.
 
+        请填写固定值“query”。
 
         :return: The action_id of this ListTemplatesV2Request.
         :rtype: str
@@ -84,6 +87,7 @@ class ListTemplatesV2Request:
     def action_id(self, action_id):
         """Sets the action_id of this ListTemplatesV2Request.
 
+        请填写固定值“query”。
 
         :param action_id: The action_id of this ListTemplatesV2Request.
         :type: str

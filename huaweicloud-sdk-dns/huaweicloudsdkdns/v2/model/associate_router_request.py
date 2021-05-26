@@ -49,6 +49,7 @@ class AssociateRouterRequest:
     def zone_id(self):
         """Gets the zone_id of this AssociateRouterRequest.
 
+        关联VPC的Zone ID。
 
         :return: The zone_id of this AssociateRouterRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class AssociateRouterRequest:
     def zone_id(self, zone_id):
         """Sets the zone_id of this AssociateRouterRequest.
 
+        关联VPC的Zone ID。
 
         :param zone_id: The zone_id of this AssociateRouterRequest.
         :type: str

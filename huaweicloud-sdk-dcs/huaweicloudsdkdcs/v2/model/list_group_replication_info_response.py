@@ -35,7 +35,7 @@ class ListGroupReplicationInfoResponse(SdkResponse):
     def __init__(self, group_list=None, group_count=None):
         """ListGroupReplicationInfoResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListGroupReplicationInfoResponse, self).__init__()
 
         self._group_list = None
         self._group_count = None

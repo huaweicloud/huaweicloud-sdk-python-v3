@@ -48,6 +48,7 @@ class DeleteBackgroundTaskRequest:
     def instance_id(self):
         """Gets the instance_id of this DeleteBackgroundTaskRequest.
 
+        实例ID。
 
         :return: The instance_id of this DeleteBackgroundTaskRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteBackgroundTaskRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeleteBackgroundTaskRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this DeleteBackgroundTaskRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteBackgroundTaskRequest:
     def task_id(self):
         """Gets the task_id of this DeleteBackgroundTaskRequest.
 
+        后台任务ID
 
         :return: The task_id of this DeleteBackgroundTaskRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteBackgroundTaskRequest:
     def task_id(self, task_id):
         """Sets the task_id of this DeleteBackgroundTaskRequest.
 
+        后台任务ID
 
         :param task_id: The task_id of this DeleteBackgroundTaskRequest.
         :type: str

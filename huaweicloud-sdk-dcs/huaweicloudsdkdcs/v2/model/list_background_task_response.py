@@ -35,7 +35,7 @@ class ListBackgroundTaskResponse(SdkResponse):
     def __init__(self, task_count=None, tasks=None):
         """ListBackgroundTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListBackgroundTaskResponse, self).__init__()
 
         self._task_count = None
         self._tasks = None

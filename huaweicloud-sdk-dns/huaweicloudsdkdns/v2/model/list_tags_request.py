@@ -44,6 +44,7 @@ class ListTagsRequest:
     def resource_type(self):
         """Gets the resource_type of this ListTagsRequest.
 
+        资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。
 
         :return: The resource_type of this ListTagsRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListTagsRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListTagsRequest.
 
+        资源的类型：DNS-public_zone，DNS-private_zone，DNS-public_recordset，DNS-private_recordset，DNS-ptr_record。
 
         :param resource_type: The resource_type of this ListTagsRequest.
         :type: str

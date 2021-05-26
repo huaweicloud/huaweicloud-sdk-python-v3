@@ -65,6 +65,7 @@ class ListCustomLineRequest:
     def line_id(self):
         """Gets the line_id of this ListCustomLineRequest.
 
+        解析线路ID。
 
         :return: The line_id of this ListCustomLineRequest.
         :rtype: str
@@ -75,6 +76,7 @@ class ListCustomLineRequest:
     def line_id(self, line_id):
         """Sets the line_id of this ListCustomLineRequest.
 
+        解析线路ID。
 
         :param line_id: The line_id of this ListCustomLineRequest.
         :type: str
@@ -85,6 +87,7 @@ class ListCustomLineRequest:
     def name(self):
         """Gets the name of this ListCustomLineRequest.
 
+        解析线路名称。
 
         :return: The name of this ListCustomLineRequest.
         :rtype: str
@@ -95,6 +98,7 @@ class ListCustomLineRequest:
     def name(self, name):
         """Sets the name of this ListCustomLineRequest.
 
+        解析线路名称。
 
         :param name: The name of this ListCustomLineRequest.
         :type: str
@@ -105,6 +109,7 @@ class ListCustomLineRequest:
     def limit(self):
         """Gets the limit of this ListCustomLineRequest.
 
+        每页返回的资源个数。取值范围为0~100。
 
         :return: The limit of this ListCustomLineRequest.
         :rtype: int
@@ -115,6 +120,7 @@ class ListCustomLineRequest:
     def limit(self, limit):
         """Sets the limit of this ListCustomLineRequest.
 
+        每页返回的资源个数。取值范围为0~100。
 
         :param limit: The limit of this ListCustomLineRequest.
         :type: int
@@ -125,6 +131,7 @@ class ListCustomLineRequest:
     def offset(self):
         """Gets the offset of this ListCustomLineRequest.
 
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。
 
         :return: The offset of this ListCustomLineRequest.
         :rtype: int
@@ -135,6 +142,7 @@ class ListCustomLineRequest:
     def offset(self, offset):
         """Sets the offset of this ListCustomLineRequest.
 
+        分页查询起始偏移量，表示从偏移量的下一个资源开始查询。
 
         :param offset: The offset of this ListCustomLineRequest.
         :type: int
@@ -145,6 +153,7 @@ class ListCustomLineRequest:
     def show_detail(self):
         """Gets the show_detail of this ListCustomLineRequest.
 
+        是否查询详细信息。  取值范围：  true：是，查询详细信息。 false：否，不查询详细信息。 默认为true。
 
         :return: The show_detail of this ListCustomLineRequest.
         :rtype: bool
@@ -155,6 +164,7 @@ class ListCustomLineRequest:
     def show_detail(self, show_detail):
         """Sets the show_detail of this ListCustomLineRequest.
 
+        是否查询详细信息。  取值范围：  true：是，查询详细信息。 false：否，不查询详细信息。 默认为true。
 
         :param show_detail: The show_detail of this ListCustomLineRequest.
         :type: bool

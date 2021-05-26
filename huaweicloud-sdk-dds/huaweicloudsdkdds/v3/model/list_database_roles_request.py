@@ -64,6 +64,7 @@ class ListDatabaseRolesRequest:
     def instance_id(self):
         """Gets the instance_id of this ListDatabaseRolesRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :return: The instance_id of this ListDatabaseRolesRequest.
         :rtype: str
@@ -74,6 +75,7 @@ class ListDatabaseRolesRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListDatabaseRolesRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ListDatabaseRolesRequest.
         :type: str
@@ -84,6 +86,7 @@ class ListDatabaseRolesRequest:
     def role_name(self):
         """Gets the role_name of this ListDatabaseRolesRequest.
 
+        角色名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
         :return: The role_name of this ListDatabaseRolesRequest.
         :rtype: str
@@ -94,6 +97,7 @@ class ListDatabaseRolesRequest:
     def role_name(self, role_name):
         """Sets the role_name of this ListDatabaseRolesRequest.
 
+        角色名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
         :param role_name: The role_name of this ListDatabaseRolesRequest.
         :type: str
@@ -104,6 +108,7 @@ class ListDatabaseRolesRequest:
     def db_name(self):
         """Gets the db_name of this ListDatabaseRolesRequest.
 
+        数据库名称，默认为admin。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
         :return: The db_name of this ListDatabaseRolesRequest.
         :rtype: str
@@ -114,6 +119,7 @@ class ListDatabaseRolesRequest:
     def db_name(self, db_name):
         """Sets the db_name of this ListDatabaseRolesRequest.
 
+        数据库名称，默认为admin。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
         :param db_name: The db_name of this ListDatabaseRolesRequest.
         :type: str
@@ -124,6 +130,7 @@ class ListDatabaseRolesRequest:
     def offset(self):
         """Gets the offset of this ListDatabaseRolesRequest.
 
+        索引位置偏移量。 取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
         :return: The offset of this ListDatabaseRolesRequest.
         :rtype: int
@@ -134,6 +141,7 @@ class ListDatabaseRolesRequest:
     def offset(self, offset):
         """Sets the offset of this ListDatabaseRolesRequest.
 
+        索引位置偏移量。 取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
         :param offset: The offset of this ListDatabaseRolesRequest.
         :type: int
@@ -144,6 +152,7 @@ class ListDatabaseRolesRequest:
     def limit(self):
         """Gets the limit of this ListDatabaseRolesRequest.
 
+        查询实例个数上限值。 取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
         :return: The limit of this ListDatabaseRolesRequest.
         :rtype: int
@@ -154,6 +163,7 @@ class ListDatabaseRolesRequest:
     def limit(self, limit):
         """Sets the limit of this ListDatabaseRolesRequest.
 
+        查询实例个数上限值。 取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
         :param limit: The limit of this ListDatabaseRolesRequest.
         :type: int

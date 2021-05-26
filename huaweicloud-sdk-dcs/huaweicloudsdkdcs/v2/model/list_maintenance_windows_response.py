@@ -33,7 +33,7 @@ class ListMaintenanceWindowsResponse(SdkResponse):
     def __init__(self, maintain_windows=None):
         """ListMaintenanceWindowsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListMaintenanceWindowsResponse, self).__init__()
 
         self._maintain_windows = None
         self.discriminator = None

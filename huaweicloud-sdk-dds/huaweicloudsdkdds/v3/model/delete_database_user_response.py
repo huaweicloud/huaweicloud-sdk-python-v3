@@ -31,7 +31,7 @@ class DeleteDatabaseUserResponse(SdkResponse):
     def __init__(self):
         """DeleteDatabaseUserResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteDatabaseUserResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

@@ -80,6 +80,7 @@ class ListBackupsRequest:
     def instance_id(self):
         """Gets the instance_id of this ListBackupsRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :return: The instance_id of this ListBackupsRequest.
         :rtype: str
@@ -90,6 +91,7 @@ class ListBackupsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListBackupsRequest.
 
+        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ListBackupsRequest.
         :type: str
@@ -100,6 +102,7 @@ class ListBackupsRequest:
     def backup_id(self):
         """Gets the backup_id of this ListBackupsRequest.
 
+        备份ID。 - 当该字段传入的备份ID归属为自动增量备份时，实例ID必传。
 
         :return: The backup_id of this ListBackupsRequest.
         :rtype: str
@@ -110,6 +113,7 @@ class ListBackupsRequest:
     def backup_id(self, backup_id):
         """Sets the backup_id of this ListBackupsRequest.
 
+        备份ID。 - 当该字段传入的备份ID归属为自动增量备份时，实例ID必传。
 
         :param backup_id: The backup_id of this ListBackupsRequest.
         :type: str
@@ -120,6 +124,7 @@ class ListBackupsRequest:
     def backup_type(self):
         """Gets the backup_type of this ListBackupsRequest.
 
+        备份类型。 - 取值为“Auto”，表示自动全量备份。 - 取值为“Manual”，表示手动全量备份。 - 取值为“Incremental”，表示自动增量备份。 - 当该字段未传入值时，默认只查询所有的全量备份，包括自动全备备份和手动全量备份。当该字段取值为“Incremental”时，实例ID必传。
 
         :return: The backup_type of this ListBackupsRequest.
         :rtype: str
@@ -130,6 +135,7 @@ class ListBackupsRequest:
     def backup_type(self, backup_type):
         """Sets the backup_type of this ListBackupsRequest.
 
+        备份类型。 - 取值为“Auto”，表示自动全量备份。 - 取值为“Manual”，表示手动全量备份。 - 取值为“Incremental”，表示自动增量备份。 - 当该字段未传入值时，默认只查询所有的全量备份，包括自动全备备份和手动全量备份。当该字段取值为“Incremental”时，实例ID必传。
 
         :param backup_type: The backup_type of this ListBackupsRequest.
         :type: str
@@ -140,6 +146,7 @@ class ListBackupsRequest:
     def offset(self):
         """Gets the offset of this ListBackupsRequest.
 
+        索引位置偏移量，表示从指定project ID下最新的实例创建时间开始，按时间的先后顺序偏移offset条数据后查询对应的实例信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0，表示从最新的实例创建时间对应的实例开始查询。
 
         :return: The offset of this ListBackupsRequest.
         :rtype: int
@@ -150,6 +157,7 @@ class ListBackupsRequest:
     def offset(self, offset):
         """Sets the offset of this ListBackupsRequest.
 
+        索引位置偏移量，表示从指定project ID下最新的实例创建时间开始，按时间的先后顺序偏移offset条数据后查询对应的实例信息。 取值大于或等于0。不传该参数时，查询偏移量默认为0，表示从最新的实例创建时间对应的实例开始查询。
 
         :param offset: The offset of this ListBackupsRequest.
         :type: int
@@ -160,6 +168,7 @@ class ListBackupsRequest:
     def limit(self):
         """Gets the limit of this ListBackupsRequest.
 
+        查询备份个数上限值。 取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
         :return: The limit of this ListBackupsRequest.
         :rtype: int
@@ -170,6 +179,7 @@ class ListBackupsRequest:
     def limit(self, limit):
         """Sets the limit of this ListBackupsRequest.
 
+        查询备份个数上限值。 取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
         :param limit: The limit of this ListBackupsRequest.
         :type: int
@@ -180,6 +190,7 @@ class ListBackupsRequest:
     def begin_time(self):
         """Gets the begin_time of this ListBackupsRequest.
 
+        查询开始时间，格式为“yyyy-mm-dd hh:mm:ss”。该时间为UTC时间。 “end_time”有值时，“begin_time”必选。
 
         :return: The begin_time of this ListBackupsRequest.
         :rtype: str
@@ -190,6 +201,7 @@ class ListBackupsRequest:
     def begin_time(self, begin_time):
         """Sets the begin_time of this ListBackupsRequest.
 
+        查询开始时间，格式为“yyyy-mm-dd hh:mm:ss”。该时间为UTC时间。 “end_time”有值时，“begin_time”必选。
 
         :param begin_time: The begin_time of this ListBackupsRequest.
         :type: str
@@ -200,6 +212,7 @@ class ListBackupsRequest:
     def end_time(self):
         """Gets the end_time of this ListBackupsRequest.
 
+        查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 “begin_time”有值时，“end_time”必选。
 
         :return: The end_time of this ListBackupsRequest.
         :rtype: str
@@ -210,6 +223,7 @@ class ListBackupsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListBackupsRequest.
 
+        查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 “begin_time”有值时，“end_time”必选。
 
         :param end_time: The end_time of this ListBackupsRequest.
         :type: str
@@ -220,6 +234,7 @@ class ListBackupsRequest:
     def mode(self):
         """Gets the mode of this ListBackupsRequest.
 
+        实例模式。 取值： - Sharding - ReplicaSet - Single
 
         :return: The mode of this ListBackupsRequest.
         :rtype: str
@@ -230,6 +245,7 @@ class ListBackupsRequest:
     def mode(self, mode):
         """Sets the mode of this ListBackupsRequest.
 
+        实例模式。 取值： - Sharding - ReplicaSet - Single
 
         :param mode: The mode of this ListBackupsRequest.
         :type: str

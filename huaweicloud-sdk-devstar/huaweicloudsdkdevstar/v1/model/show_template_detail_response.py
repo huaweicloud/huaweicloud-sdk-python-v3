@@ -57,7 +57,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def __init__(self, id=None, title=None, description=None, region_id=None, repostory_id=None, code_url=None, ssh_url=None, project_uuid=None, status=None, properties=None, dependencies=None, dependency_type=None, deployment=None):
         """ShowTemplateDetailResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowTemplateDetailResponse, self).__init__()
 
         self._id = None
         self._title = None

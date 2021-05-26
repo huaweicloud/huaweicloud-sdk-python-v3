@@ -33,7 +33,7 @@ class ConsumeMessagesResponse(SdkResponse):
     def __init__(self, body=None):
         """ConsumeMessagesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ConsumeMessagesResponse, self).__init__()
 
         self._body = None
         self.discriminator = None

@@ -64,6 +64,7 @@ class ListBackgroundTaskRequest:
     def instance_id(self):
         """Gets the instance_id of this ListBackgroundTaskRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListBackgroundTaskRequest.
         :rtype: str
@@ -74,6 +75,7 @@ class ListBackgroundTaskRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListBackgroundTaskRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListBackgroundTaskRequest.
         :type: str
@@ -84,6 +86,7 @@ class ListBackgroundTaskRequest:
     def offset(self):
         """Gets the offset of this ListBackgroundTaskRequest.
 
+        偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :return: The offset of this ListBackgroundTaskRequest.
         :rtype: int
@@ -94,6 +97,7 @@ class ListBackgroundTaskRequest:
     def offset(self, offset):
         """Sets the offset of this ListBackgroundTaskRequest.
 
+        偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListBackgroundTaskRequest.
         :type: int
@@ -104,6 +108,7 @@ class ListBackgroundTaskRequest:
     def limit(self):
         """Gets the limit of this ListBackgroundTaskRequest.
 
+        每页显示的条目数量。
 
         :return: The limit of this ListBackgroundTaskRequest.
         :rtype: int
@@ -114,6 +119,7 @@ class ListBackgroundTaskRequest:
     def limit(self, limit):
         """Sets the limit of this ListBackgroundTaskRequest.
 
+        每页显示的条目数量。
 
         :param limit: The limit of this ListBackgroundTaskRequest.
         :type: int
@@ -124,6 +130,7 @@ class ListBackgroundTaskRequest:
     def start_time(self):
         """Gets the start_time of this ListBackgroundTaskRequest.
 
+        查询开始时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20200609160000。
 
         :return: The start_time of this ListBackgroundTaskRequest.
         :rtype: str
@@ -134,6 +141,7 @@ class ListBackgroundTaskRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListBackgroundTaskRequest.
 
+        查询开始时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20200609160000。
 
         :param start_time: The start_time of this ListBackgroundTaskRequest.
         :type: str
@@ -144,6 +152,7 @@ class ListBackgroundTaskRequest:
     def end_time(self):
         """Gets the end_time of this ListBackgroundTaskRequest.
 
+        查询结束时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20200617155959。
 
         :return: The end_time of this ListBackgroundTaskRequest.
         :rtype: str
@@ -154,6 +163,7 @@ class ListBackgroundTaskRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListBackgroundTaskRequest.
 
+        查询结束时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20200617155959。
 
         :param end_time: The end_time of this ListBackgroundTaskRequest.
         :type: str

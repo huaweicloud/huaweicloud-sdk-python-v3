@@ -67,7 +67,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
     def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, created_at=None, updated_at=None, status=None, default=None, project_id=None, links=None, line=None, weight=None, health_check_id=None, alias_target=None):
         """ShowRecordSetWithLineResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowRecordSetWithLineResponse, self).__init__()
 
         self._id = None
         self._name = None
