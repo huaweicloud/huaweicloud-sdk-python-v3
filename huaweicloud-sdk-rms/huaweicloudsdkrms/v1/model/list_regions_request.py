@@ -45,6 +45,7 @@ class ListRegionsRequest:
     def x_language(self):
         """Gets the x_language of this ListRegionsRequest.
 
+        选择接口返回的信息的语言，默认为\"zh-cn\"中文
 
         :return: The x_language of this ListRegionsRequest.
         :rtype: str
@@ -55,6 +56,7 @@ class ListRegionsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListRegionsRequest.
 
+        选择接口返回的信息的语言，默认为\"zh-cn\"中文
 
         :param x_language: The x_language of this ListRegionsRequest.
         :type: str

@@ -33,7 +33,7 @@ class CreatePostPaidInstanceResponse(SdkResponse):
     def __init__(self, instance_id=None):
         """CreatePostPaidInstanceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreatePostPaidInstanceResponse, self).__init__()
 
         self._instance_id = None
         self.discriminator = None

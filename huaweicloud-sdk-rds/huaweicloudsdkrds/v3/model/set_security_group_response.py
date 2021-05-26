@@ -33,7 +33,7 @@ class SetSecurityGroupResponse(SdkResponse):
     def __init__(self, workflow_id=None):
         """SetSecurityGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(SetSecurityGroupResponse, self).__init__()
 
         self._workflow_id = None
         self.discriminator = None

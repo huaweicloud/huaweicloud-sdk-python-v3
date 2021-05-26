@@ -35,7 +35,7 @@ class ListProvidersResponse(SdkResponse):
     def __init__(self, resource_providers=None, total_count=None):
         """ListProvidersResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListProvidersResponse, self).__init__()
 
         self._resource_providers = None
         self._total_count = None

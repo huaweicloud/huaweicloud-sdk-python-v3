@@ -33,7 +33,7 @@ class UpdatePostgresqlInstanceAliasResponse(SdkResponse):
     def __init__(self, resp=None):
         """UpdatePostgresqlInstanceAliasResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdatePostgresqlInstanceAliasResponse, self).__init__()
 
         self._resp = None
         self.discriminator = None

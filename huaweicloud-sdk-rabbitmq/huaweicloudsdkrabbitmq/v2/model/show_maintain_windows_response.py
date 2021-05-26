@@ -23,7 +23,7 @@ class ShowMaintainWindowsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'maintain_windows': 'list[MaintainWindowsEntity]'
+        'maintain_windows': 'list[ShowMaintainWindowsRespMaintainWindows]'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class ShowMaintainWindowsResponse(SdkResponse):
     def __init__(self, maintain_windows=None):
         """ShowMaintainWindowsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowMaintainWindowsResponse, self).__init__()
 
         self._maintain_windows = None
         self.discriminator = None
@@ -48,7 +48,7 @@ class ShowMaintainWindowsResponse(SdkResponse):
         支持的维护时间窗列表。
 
         :return: The maintain_windows of this ShowMaintainWindowsResponse.
-        :rtype: list[MaintainWindowsEntity]
+        :rtype: list[ShowMaintainWindowsRespMaintainWindows]
         """
         return self._maintain_windows
 
@@ -59,7 +59,7 @@ class ShowMaintainWindowsResponse(SdkResponse):
         支持的维护时间窗列表。
 
         :param maintain_windows: The maintain_windows of this ShowMaintainWindowsResponse.
-        :type: list[MaintainWindowsEntity]
+        :type: list[ShowMaintainWindowsRespMaintainWindows]
         """
         self._maintain_windows = maintain_windows
 

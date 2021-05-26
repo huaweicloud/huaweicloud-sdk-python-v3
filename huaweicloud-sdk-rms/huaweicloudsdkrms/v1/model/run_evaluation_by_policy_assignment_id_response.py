@@ -31,7 +31,7 @@ class RunEvaluationByPolicyAssignmentIdResponse(SdkResponse):
     def __init__(self):
         """RunEvaluationByPolicyAssignmentIdResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RunEvaluationByPolicyAssignmentIdResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

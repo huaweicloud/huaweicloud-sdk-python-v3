@@ -52,6 +52,7 @@ class ShowResourceByIdRequest:
     def provider(self):
         """Gets the provider of this ShowResourceByIdRequest.
 
+        云服务英文简写
 
         :return: The provider of this ShowResourceByIdRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class ShowResourceByIdRequest:
     def provider(self, provider):
         """Sets the provider of this ShowResourceByIdRequest.
 
+        云服务英文简写
 
         :param provider: The provider of this ShowResourceByIdRequest.
         :type: str
@@ -72,6 +74,7 @@ class ShowResourceByIdRequest:
     def type(self):
         """Gets the type of this ShowResourceByIdRequest.
 
+        云服务资源类型名称
 
         :return: The type of this ShowResourceByIdRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class ShowResourceByIdRequest:
     def type(self, type):
         """Sets the type of this ShowResourceByIdRequest.
 
+        云服务资源类型名称
 
         :param type: The type of this ShowResourceByIdRequest.
         :type: str
@@ -92,6 +96,7 @@ class ShowResourceByIdRequest:
     def resource_id(self):
         """Gets the resource_id of this ShowResourceByIdRequest.
 
+        资源ID
 
         :return: The resource_id of this ShowResourceByIdRequest.
         :rtype: str
@@ -102,6 +107,7 @@ class ShowResourceByIdRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ShowResourceByIdRequest.
 
+        资源ID
 
         :param resource_id: The resource_id of this ShowResourceByIdRequest.
         :type: str

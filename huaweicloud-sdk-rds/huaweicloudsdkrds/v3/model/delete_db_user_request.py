@@ -53,6 +53,7 @@ class DeleteDbUserRequest:
     def x_language(self):
         """Gets the x_language of this DeleteDbUserRequest.
 
+        语言
 
         :return: The x_language of this DeleteDbUserRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class DeleteDbUserRequest:
     def x_language(self, x_language):
         """Sets the x_language of this DeleteDbUserRequest.
 
+        语言
 
         :param x_language: The x_language of this DeleteDbUserRequest.
         :type: str
@@ -73,6 +75,7 @@ class DeleteDbUserRequest:
     def instance_id(self):
         """Gets the instance_id of this DeleteDbUserRequest.
 
+        实例ID。
 
         :return: The instance_id of this DeleteDbUserRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class DeleteDbUserRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeleteDbUserRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this DeleteDbUserRequest.
         :type: str
@@ -93,6 +97,7 @@ class DeleteDbUserRequest:
     def user_name(self):
         """Gets the user_name of this DeleteDbUserRequest.
 
+        需要删除的帐号名。
 
         :return: The user_name of this DeleteDbUserRequest.
         :rtype: str
@@ -103,6 +108,7 @@ class DeleteDbUserRequest:
     def user_name(self, user_name):
         """Sets the user_name of this DeleteDbUserRequest.
 
+        需要删除的帐号名。
 
         :param user_name: The user_name of this DeleteDbUserRequest.
         :type: str

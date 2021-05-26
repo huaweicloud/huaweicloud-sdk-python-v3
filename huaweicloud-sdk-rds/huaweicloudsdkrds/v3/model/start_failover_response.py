@@ -37,7 +37,7 @@ class StartFailoverResponse(SdkResponse):
     def __init__(self, instance_id=None, node_id=None, workflow_id=None):
         """StartFailoverResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(StartFailoverResponse, self).__init__()
 
         self._instance_id = None
         self._node_id = None

@@ -62,7 +62,8 @@ class ShowInstanceResponse(SdkResponse):
         'storage_resource_id': 'str',
         'storage_spec_code': 'str',
         'ipv6_enable': 'bool',
-        'ipv6_connect_addresses': 'list[str]'
+        'ipv6_connect_addresses': 'list[str]',
+        'tags': 'list[ListInstancesRespTags]'
     }
 
     attribute_map = {
@@ -105,13 +106,14 @@ class ShowInstanceResponse(SdkResponse):
         'storage_resource_id': 'storage_resource_id',
         'storage_spec_code': 'storage_spec_code',
         'ipv6_enable': 'ipv6_enable',
-        'ipv6_connect_addresses': 'ipv6_connect_addresses'
+        'ipv6_connect_addresses': 'ipv6_connect_addresses',
+        'tags': 'tags'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, specification=None, storage_space=None, used_storage_space=None, connect_address=None, port=None, status=None, description=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_address=None, publicip_id=None, management_connect_address=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, storage_resource_id=None, storage_spec_code=None, ipv6_enable=None, ipv6_connect_addresses=None):
+    def __init__(self, name=None, engine=None, engine_version=None, specification=None, storage_space=None, used_storage_space=None, connect_address=None, port=None, status=None, description=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_address=None, publicip_id=None, management_connect_address=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, storage_resource_id=None, storage_spec_code=None, ipv6_enable=None, ipv6_connect_addresses=None, tags=None):
         """ShowInstanceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowInstanceResponse, self).__init__()
 
         self._name = None
         self._engine = None
@@ -153,6 +155,7 @@ class ShowInstanceResponse(SdkResponse):
         self._storage_spec_code = None
         self._ipv6_enable = None
         self._ipv6_connect_addresses = None
+        self._tags = None
         self.discriminator = None
 
         if name is not None:
@@ -235,6 +238,8 @@ class ShowInstanceResponse(SdkResponse):
             self.ipv6_enable = ipv6_enable
         if ipv6_connect_addresses is not None:
             self.ipv6_connect_addresses = ipv6_connect_addresses
+        if tags is not None:
+            self.tags = tags
 
     @property
     def name(self):
@@ -1115,6 +1120,28 @@ class ShowInstanceResponse(SdkResponse):
         :type: list[str]
         """
         self._ipv6_connect_addresses = ipv6_connect_addresses
+
+    @property
+    def tags(self):
+        """Gets the tags of this ShowInstanceResponse.
+
+        标签列表。
+
+        :return: The tags of this ShowInstanceResponse.
+        :rtype: list[ListInstancesRespTags]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ShowInstanceResponse.
+
+        标签列表。
+
+        :param tags: The tags of this ShowInstanceResponse.
+        :type: list[ListInstancesRespTags]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -61,6 +61,7 @@ class ListAuthorizedDatabasesRequest:
     def x_language(self):
         """Gets the x_language of this ListAuthorizedDatabasesRequest.
 
+        语言
 
         :return: The x_language of this ListAuthorizedDatabasesRequest.
         :rtype: str
@@ -71,6 +72,7 @@ class ListAuthorizedDatabasesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListAuthorizedDatabasesRequest.
 
+        语言
 
         :param x_language: The x_language of this ListAuthorizedDatabasesRequest.
         :type: str
@@ -81,6 +83,7 @@ class ListAuthorizedDatabasesRequest:
     def instance_id(self):
         """Gets the instance_id of this ListAuthorizedDatabasesRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListAuthorizedDatabasesRequest.
         :rtype: str
@@ -91,6 +94,7 @@ class ListAuthorizedDatabasesRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListAuthorizedDatabasesRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListAuthorizedDatabasesRequest.
         :type: str
@@ -101,6 +105,7 @@ class ListAuthorizedDatabasesRequest:
     def user_name(self):
         """Gets the user_name of this ListAuthorizedDatabasesRequest.
 
+        数据库用户名。
 
         :return: The user_name of this ListAuthorizedDatabasesRequest.
         :rtype: str
@@ -111,6 +116,7 @@ class ListAuthorizedDatabasesRequest:
     def user_name(self, user_name):
         """Sets the user_name of this ListAuthorizedDatabasesRequest.
 
+        数据库用户名。
 
         :param user_name: The user_name of this ListAuthorizedDatabasesRequest.
         :type: str
@@ -121,6 +127,7 @@ class ListAuthorizedDatabasesRequest:
     def page(self):
         """Gets the page of this ListAuthorizedDatabasesRequest.
 
+        分页页码，从1开始。
 
         :return: The page of this ListAuthorizedDatabasesRequest.
         :rtype: int
@@ -131,6 +138,7 @@ class ListAuthorizedDatabasesRequest:
     def page(self, page):
         """Sets the page of this ListAuthorizedDatabasesRequest.
 
+        分页页码，从1开始。
 
         :param page: The page of this ListAuthorizedDatabasesRequest.
         :type: int
@@ -141,6 +149,7 @@ class ListAuthorizedDatabasesRequest:
     def limit(self):
         """Gets the limit of this ListAuthorizedDatabasesRequest.
 
+        每页数据条数。取值范围[1, 100]。
 
         :return: The limit of this ListAuthorizedDatabasesRequest.
         :rtype: int
@@ -151,6 +160,7 @@ class ListAuthorizedDatabasesRequest:
     def limit(self, limit):
         """Sets the limit of this ListAuthorizedDatabasesRequest.
 
+        每页数据条数。取值范围[1, 100]。
 
         :param limit: The limit of this ListAuthorizedDatabasesRequest.
         :type: int

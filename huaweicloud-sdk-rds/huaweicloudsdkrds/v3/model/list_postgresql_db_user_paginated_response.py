@@ -35,7 +35,7 @@ class ListPostgresqlDbUserPaginatedResponse(SdkResponse):
     def __init__(self, users=None, total_count=None):
         """ListPostgresqlDbUserPaginatedResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListPostgresqlDbUserPaginatedResponse, self).__init__()
 
         self._users = None
         self._total_count = None

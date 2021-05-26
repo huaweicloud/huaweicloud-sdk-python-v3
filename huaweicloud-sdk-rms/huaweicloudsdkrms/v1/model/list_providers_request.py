@@ -55,6 +55,7 @@ class ListProvidersRequest:
     def offset(self):
         """Gets the offset of this ListProvidersRequest.
 
+        分页偏移
 
         :return: The offset of this ListProvidersRequest.
         :rtype: int
@@ -65,6 +66,7 @@ class ListProvidersRequest:
     def offset(self, offset):
         """Sets the offset of this ListProvidersRequest.
 
+        分页偏移
 
         :param offset: The offset of this ListProvidersRequest.
         :type: int
@@ -75,6 +77,7 @@ class ListProvidersRequest:
     def limit(self):
         """Gets the limit of this ListProvidersRequest.
 
+        最大的返回数量
 
         :return: The limit of this ListProvidersRequest.
         :rtype: int
@@ -85,6 +88,7 @@ class ListProvidersRequest:
     def limit(self, limit):
         """Sets the limit of this ListProvidersRequest.
 
+        最大的返回数量
 
         :param limit: The limit of this ListProvidersRequest.
         :type: int
@@ -95,6 +99,7 @@ class ListProvidersRequest:
     def x_language(self):
         """Gets the x_language of this ListProvidersRequest.
 
+        选择接口返回的信息的语言，默认为\"zh-cn\"中文
 
         :return: The x_language of this ListProvidersRequest.
         :rtype: str
@@ -105,6 +110,7 @@ class ListProvidersRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListProvidersRequest.
 
+        选择接口返回的信息的语言，默认为\"zh-cn\"中文
 
         :param x_language: The x_language of this ListProvidersRequest.
         :type: str

@@ -72,6 +72,7 @@ class ListErrorLogsRequest:
     def x_language(self):
         """Gets the x_language of this ListErrorLogsRequest.
 
+        语言
 
         :return: The x_language of this ListErrorLogsRequest.
         :rtype: str
@@ -82,6 +83,7 @@ class ListErrorLogsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListErrorLogsRequest.
 
+        语言
 
         :param x_language: The x_language of this ListErrorLogsRequest.
         :type: str
@@ -92,6 +94,7 @@ class ListErrorLogsRequest:
     def instance_id(self):
         """Gets the instance_id of this ListErrorLogsRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListErrorLogsRequest.
         :rtype: str
@@ -102,6 +105,7 @@ class ListErrorLogsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListErrorLogsRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListErrorLogsRequest.
         :type: str
@@ -112,6 +116,7 @@ class ListErrorLogsRequest:
     def start_date(self):
         """Gets the start_date of this ListErrorLogsRequest.
 
+        开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :return: The start_date of this ListErrorLogsRequest.
         :rtype: str
@@ -122,6 +127,7 @@ class ListErrorLogsRequest:
     def start_date(self, start_date):
         """Sets the start_date of this ListErrorLogsRequest.
 
+        开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param start_date: The start_date of this ListErrorLogsRequest.
         :type: str
@@ -132,6 +138,7 @@ class ListErrorLogsRequest:
     def end_date(self):
         """Gets the end_date of this ListErrorLogsRequest.
 
+        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。  只能查询当前时间前一个月内的错误日志。
 
         :return: The end_date of this ListErrorLogsRequest.
         :rtype: str
@@ -142,6 +149,7 @@ class ListErrorLogsRequest:
     def end_date(self, end_date):
         """Sets the end_date of this ListErrorLogsRequest.
 
+        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。  只能查询当前时间前一个月内的错误日志。
 
         :param end_date: The end_date of this ListErrorLogsRequest.
         :type: str
@@ -152,6 +160,7 @@ class ListErrorLogsRequest:
     def offset(self):
         """Gets the offset of this ListErrorLogsRequest.
 
+        页数偏移量，如1、2、3、4等，不填时默认为1。
 
         :return: The offset of this ListErrorLogsRequest.
         :rtype: int
@@ -162,6 +171,7 @@ class ListErrorLogsRequest:
     def offset(self, offset):
         """Sets the offset of this ListErrorLogsRequest.
 
+        页数偏移量，如1、2、3、4等，不填时默认为1。
 
         :param offset: The offset of this ListErrorLogsRequest.
         :type: int
@@ -172,6 +182,7 @@ class ListErrorLogsRequest:
     def limit(self):
         """Gets the limit of this ListErrorLogsRequest.
 
+        每页多少条记录，取值范围是1~100，不填时默认为10。
 
         :return: The limit of this ListErrorLogsRequest.
         :rtype: int
@@ -182,6 +193,7 @@ class ListErrorLogsRequest:
     def limit(self, limit):
         """Sets the limit of this ListErrorLogsRequest.
 
+        每页多少条记录，取值范围是1~100，不填时默认为10。
 
         :param limit: The limit of this ListErrorLogsRequest.
         :type: int
@@ -192,6 +204,7 @@ class ListErrorLogsRequest:
     def level(self):
         """Gets the level of this ListErrorLogsRequest.
 
+        日志级别，默认为ALL。
 
         :return: The level of this ListErrorLogsRequest.
         :rtype: str
@@ -202,6 +215,7 @@ class ListErrorLogsRequest:
     def level(self, level):
         """Sets the level of this ListErrorLogsRequest.
 
+        日志级别，默认为ALL。
 
         :param level: The level of this ListErrorLogsRequest.
         :type: str

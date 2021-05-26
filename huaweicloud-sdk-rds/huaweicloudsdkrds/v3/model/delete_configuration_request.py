@@ -49,6 +49,7 @@ class DeleteConfigurationRequest:
     def x_language(self):
         """Gets the x_language of this DeleteConfigurationRequest.
 
+        语言
 
         :return: The x_language of this DeleteConfigurationRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class DeleteConfigurationRequest:
     def x_language(self, x_language):
         """Sets the x_language of this DeleteConfigurationRequest.
 
+        语言
 
         :param x_language: The x_language of this DeleteConfigurationRequest.
         :type: str
@@ -69,6 +71,7 @@ class DeleteConfigurationRequest:
     def config_id(self):
         """Gets the config_id of this DeleteConfigurationRequest.
 
+        参数模板ID。
 
         :return: The config_id of this DeleteConfigurationRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class DeleteConfigurationRequest:
     def config_id(self, config_id):
         """Sets the config_id of this DeleteConfigurationRequest.
 
+        参数模板ID。
 
         :param config_id: The config_id of this DeleteConfigurationRequest.
         :type: str

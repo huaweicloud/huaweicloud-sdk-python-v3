@@ -524,7 +524,7 @@ class CreateInstanceReq:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateInstanceReq.
 
-        企业项目ID。若为企业项目账号，该参数必填。
+        企业项目ID。若为企业项目帐号，该参数必填。
 
         :return: The enterprise_project_id of this CreateInstanceReq.
         :rtype: str
@@ -535,7 +535,7 @@ class CreateInstanceReq:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateInstanceReq.
 
-        企业项目ID。若为企业项目账号，该参数必填。
+        企业项目ID。若为企业项目帐号，该参数必填。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateInstanceReq.
         :type: str

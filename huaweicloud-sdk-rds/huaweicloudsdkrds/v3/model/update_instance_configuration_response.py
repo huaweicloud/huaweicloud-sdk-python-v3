@@ -33,7 +33,7 @@ class UpdateInstanceConfigurationResponse(SdkResponse):
     def __init__(self, restart_required=None):
         """UpdateInstanceConfigurationResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateInstanceConfigurationResponse, self).__init__()
 
         self._restart_required = None
         self.discriminator = None

@@ -49,6 +49,7 @@ class ShowBackupDownloadLinkRequest:
     def x_language(self):
         """Gets the x_language of this ShowBackupDownloadLinkRequest.
 
+        语言
 
         :return: The x_language of this ShowBackupDownloadLinkRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ShowBackupDownloadLinkRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowBackupDownloadLinkRequest.
 
+        语言
 
         :param x_language: The x_language of this ShowBackupDownloadLinkRequest.
         :type: str
@@ -69,6 +71,7 @@ class ShowBackupDownloadLinkRequest:
     def backup_id(self):
         """Gets the backup_id of this ShowBackupDownloadLinkRequest.
 
+        备份ID。
 
         :return: The backup_id of this ShowBackupDownloadLinkRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ShowBackupDownloadLinkRequest:
     def backup_id(self, backup_id):
         """Sets the backup_id of this ShowBackupDownloadLinkRequest.
 
+        备份ID。
 
         :param backup_id: The backup_id of this ShowBackupDownloadLinkRequest.
         :type: str

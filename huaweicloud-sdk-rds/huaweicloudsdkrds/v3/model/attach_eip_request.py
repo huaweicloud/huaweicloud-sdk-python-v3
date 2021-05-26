@@ -54,6 +54,7 @@ class AttachEipRequest:
     def x_language(self):
         """Gets the x_language of this AttachEipRequest.
 
+        语言
 
         :return: The x_language of this AttachEipRequest.
         :rtype: str
@@ -64,6 +65,7 @@ class AttachEipRequest:
     def x_language(self, x_language):
         """Sets the x_language of this AttachEipRequest.
 
+        语言
 
         :param x_language: The x_language of this AttachEipRequest.
         :type: str
@@ -74,6 +76,7 @@ class AttachEipRequest:
     def instance_id(self):
         """Gets the instance_id of this AttachEipRequest.
 
+        实例ID。
 
         :return: The instance_id of this AttachEipRequest.
         :rtype: str
@@ -84,6 +87,7 @@ class AttachEipRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this AttachEipRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this AttachEipRequest.
         :type: str

@@ -57,6 +57,7 @@ class ListPostgresqlDatabasesRequest:
     def x_language(self):
         """Gets the x_language of this ListPostgresqlDatabasesRequest.
 
+        语言
 
         :return: The x_language of this ListPostgresqlDatabasesRequest.
         :rtype: str
@@ -67,6 +68,7 @@ class ListPostgresqlDatabasesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListPostgresqlDatabasesRequest.
 
+        语言
 
         :param x_language: The x_language of this ListPostgresqlDatabasesRequest.
         :type: str
@@ -77,6 +79,7 @@ class ListPostgresqlDatabasesRequest:
     def instance_id(self):
         """Gets the instance_id of this ListPostgresqlDatabasesRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListPostgresqlDatabasesRequest.
         :rtype: str
@@ -87,6 +90,7 @@ class ListPostgresqlDatabasesRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListPostgresqlDatabasesRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListPostgresqlDatabasesRequest.
         :type: str
@@ -97,6 +101,7 @@ class ListPostgresqlDatabasesRequest:
     def page(self):
         """Gets the page of this ListPostgresqlDatabasesRequest.
 
+        分页页码，从1开始。
 
         :return: The page of this ListPostgresqlDatabasesRequest.
         :rtype: int
@@ -107,6 +112,7 @@ class ListPostgresqlDatabasesRequest:
     def page(self, page):
         """Sets the page of this ListPostgresqlDatabasesRequest.
 
+        分页页码，从1开始。
 
         :param page: The page of this ListPostgresqlDatabasesRequest.
         :type: int
@@ -117,6 +123,7 @@ class ListPostgresqlDatabasesRequest:
     def limit(self):
         """Gets the limit of this ListPostgresqlDatabasesRequest.
 
+        每页数据条数。取值范围[1, 100]。
 
         :return: The limit of this ListPostgresqlDatabasesRequest.
         :rtype: int
@@ -127,6 +134,7 @@ class ListPostgresqlDatabasesRequest:
     def limit(self, limit):
         """Sets the limit of this ListPostgresqlDatabasesRequest.
 
+        每页数据条数。取值范围[1, 100]。
 
         :param limit: The limit of this ListPostgresqlDatabasesRequest.
         :type: int

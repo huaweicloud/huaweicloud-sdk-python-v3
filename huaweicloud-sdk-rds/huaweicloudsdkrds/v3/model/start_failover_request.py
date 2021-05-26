@@ -49,6 +49,7 @@ class StartFailoverRequest:
     def x_language(self):
         """Gets the x_language of this StartFailoverRequest.
 
+        语言
 
         :return: The x_language of this StartFailoverRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class StartFailoverRequest:
     def x_language(self, x_language):
         """Sets the x_language of this StartFailoverRequest.
 
+        语言
 
         :param x_language: The x_language of this StartFailoverRequest.
         :type: str
@@ -69,6 +71,7 @@ class StartFailoverRequest:
     def instance_id(self):
         """Gets the instance_id of this StartFailoverRequest.
 
+        实例ID。
 
         :return: The instance_id of this StartFailoverRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class StartFailoverRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this StartFailoverRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this StartFailoverRequest.
         :type: str

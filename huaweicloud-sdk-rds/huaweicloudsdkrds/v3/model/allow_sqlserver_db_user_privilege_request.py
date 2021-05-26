@@ -54,6 +54,7 @@ class AllowSqlserverDbUserPrivilegeRequest:
     def x_language(self):
         """Gets the x_language of this AllowSqlserverDbUserPrivilegeRequest.
 
+        语言
 
         :return: The x_language of this AllowSqlserverDbUserPrivilegeRequest.
         :rtype: str
@@ -64,6 +65,7 @@ class AllowSqlserverDbUserPrivilegeRequest:
     def x_language(self, x_language):
         """Sets the x_language of this AllowSqlserverDbUserPrivilegeRequest.
 
+        语言
 
         :param x_language: The x_language of this AllowSqlserverDbUserPrivilegeRequest.
         :type: str
@@ -74,6 +76,7 @@ class AllowSqlserverDbUserPrivilegeRequest:
     def instance_id(self):
         """Gets the instance_id of this AllowSqlserverDbUserPrivilegeRequest.
 
+        实例ID。
 
         :return: The instance_id of this AllowSqlserverDbUserPrivilegeRequest.
         :rtype: str
@@ -84,6 +87,7 @@ class AllowSqlserverDbUserPrivilegeRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this AllowSqlserverDbUserPrivilegeRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this AllowSqlserverDbUserPrivilegeRequest.
         :type: str

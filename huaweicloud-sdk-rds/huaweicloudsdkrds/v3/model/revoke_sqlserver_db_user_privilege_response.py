@@ -33,7 +33,7 @@ class RevokeSqlserverDbUserPrivilegeResponse(SdkResponse):
     def __init__(self, resp=None):
         """RevokeSqlserverDbUserPrivilegeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RevokeSqlserverDbUserPrivilegeResponse, self).__init__()
 
         self._resp = None
         self.discriminator = None

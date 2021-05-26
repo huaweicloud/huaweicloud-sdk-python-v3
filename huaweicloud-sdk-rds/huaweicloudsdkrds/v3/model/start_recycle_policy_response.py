@@ -33,7 +33,7 @@ class StartRecyclePolicyResponse(SdkResponse):
     def __init__(self, result=None):
         """StartRecyclePolicyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(StartRecyclePolicyResponse, self).__init__()
 
         self._result = None
         self.discriminator = None

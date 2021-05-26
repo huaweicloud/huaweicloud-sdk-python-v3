@@ -69,6 +69,7 @@ class ListPolicyStatesByAssignmentIdRequest:
     def policy_assignment_id(self):
         """Gets the policy_assignment_id of this ListPolicyStatesByAssignmentIdRequest.
 
+        规则ID
 
         :return: The policy_assignment_id of this ListPolicyStatesByAssignmentIdRequest.
         :rtype: str
@@ -79,6 +80,7 @@ class ListPolicyStatesByAssignmentIdRequest:
     def policy_assignment_id(self, policy_assignment_id):
         """Sets the policy_assignment_id of this ListPolicyStatesByAssignmentIdRequest.
 
+        规则ID
 
         :param policy_assignment_id: The policy_assignment_id of this ListPolicyStatesByAssignmentIdRequest.
         :type: str
@@ -89,6 +91,7 @@ class ListPolicyStatesByAssignmentIdRequest:
     def compliance_state(self):
         """Gets the compliance_state of this ListPolicyStatesByAssignmentIdRequest.
 
+        合规状态
 
         :return: The compliance_state of this ListPolicyStatesByAssignmentIdRequest.
         :rtype: str
@@ -99,6 +102,7 @@ class ListPolicyStatesByAssignmentIdRequest:
     def compliance_state(self, compliance_state):
         """Sets the compliance_state of this ListPolicyStatesByAssignmentIdRequest.
 
+        合规状态
 
         :param compliance_state: The compliance_state of this ListPolicyStatesByAssignmentIdRequest.
         :type: str
@@ -109,6 +113,7 @@ class ListPolicyStatesByAssignmentIdRequest:
     def resource_id(self):
         """Gets the resource_id of this ListPolicyStatesByAssignmentIdRequest.
 
+        资源ID
 
         :return: The resource_id of this ListPolicyStatesByAssignmentIdRequest.
         :rtype: str
@@ -119,6 +124,7 @@ class ListPolicyStatesByAssignmentIdRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ListPolicyStatesByAssignmentIdRequest.
 
+        资源ID
 
         :param resource_id: The resource_id of this ListPolicyStatesByAssignmentIdRequest.
         :type: str
@@ -129,6 +135,7 @@ class ListPolicyStatesByAssignmentIdRequest:
     def resource_name(self):
         """Gets the resource_name of this ListPolicyStatesByAssignmentIdRequest.
 
+        资源名称
 
         :return: The resource_name of this ListPolicyStatesByAssignmentIdRequest.
         :rtype: str
@@ -139,6 +146,7 @@ class ListPolicyStatesByAssignmentIdRequest:
     def resource_name(self, resource_name):
         """Sets the resource_name of this ListPolicyStatesByAssignmentIdRequest.
 
+        资源名称
 
         :param resource_name: The resource_name of this ListPolicyStatesByAssignmentIdRequest.
         :type: str
@@ -149,6 +157,7 @@ class ListPolicyStatesByAssignmentIdRequest:
     def limit(self):
         """Gets the limit of this ListPolicyStatesByAssignmentIdRequest.
 
+        最大的返回数量
 
         :return: The limit of this ListPolicyStatesByAssignmentIdRequest.
         :rtype: int
@@ -159,6 +168,7 @@ class ListPolicyStatesByAssignmentIdRequest:
     def limit(self, limit):
         """Sets the limit of this ListPolicyStatesByAssignmentIdRequest.
 
+        最大的返回数量
 
         :param limit: The limit of this ListPolicyStatesByAssignmentIdRequest.
         :type: int
@@ -169,6 +179,7 @@ class ListPolicyStatesByAssignmentIdRequest:
     def marker(self):
         """Gets the marker of this ListPolicyStatesByAssignmentIdRequest.
 
+        分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :return: The marker of this ListPolicyStatesByAssignmentIdRequest.
         :rtype: str
@@ -179,6 +190,7 @@ class ListPolicyStatesByAssignmentIdRequest:
     def marker(self, marker):
         """Sets the marker of this ListPolicyStatesByAssignmentIdRequest.
 
+        分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :param marker: The marker of this ListPolicyStatesByAssignmentIdRequest.
         :type: str

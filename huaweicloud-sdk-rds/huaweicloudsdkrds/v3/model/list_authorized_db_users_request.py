@@ -61,6 +61,7 @@ class ListAuthorizedDbUsersRequest:
     def x_language(self):
         """Gets the x_language of this ListAuthorizedDbUsersRequest.
 
+        语言
 
         :return: The x_language of this ListAuthorizedDbUsersRequest.
         :rtype: str
@@ -71,6 +72,7 @@ class ListAuthorizedDbUsersRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListAuthorizedDbUsersRequest.
 
+        语言
 
         :param x_language: The x_language of this ListAuthorizedDbUsersRequest.
         :type: str
@@ -81,6 +83,7 @@ class ListAuthorizedDbUsersRequest:
     def instance_id(self):
         """Gets the instance_id of this ListAuthorizedDbUsersRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListAuthorizedDbUsersRequest.
         :rtype: str
@@ -91,6 +94,7 @@ class ListAuthorizedDbUsersRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListAuthorizedDbUsersRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListAuthorizedDbUsersRequest.
         :type: str
@@ -101,6 +105,7 @@ class ListAuthorizedDbUsersRequest:
     def db_name(self):
         """Gets the db_name of this ListAuthorizedDbUsersRequest.
 
+        数据库名。
 
         :return: The db_name of this ListAuthorizedDbUsersRequest.
         :rtype: str
@@ -111,6 +116,7 @@ class ListAuthorizedDbUsersRequest:
     def db_name(self, db_name):
         """Sets the db_name of this ListAuthorizedDbUsersRequest.
 
+        数据库名。
 
         :param db_name: The db_name of this ListAuthorizedDbUsersRequest.
         :type: str
@@ -121,6 +127,7 @@ class ListAuthorizedDbUsersRequest:
     def page(self):
         """Gets the page of this ListAuthorizedDbUsersRequest.
 
+        分页页码，从1开始。
 
         :return: The page of this ListAuthorizedDbUsersRequest.
         :rtype: int
@@ -131,6 +138,7 @@ class ListAuthorizedDbUsersRequest:
     def page(self, page):
         """Sets the page of this ListAuthorizedDbUsersRequest.
 
+        分页页码，从1开始。
 
         :param page: The page of this ListAuthorizedDbUsersRequest.
         :type: int
@@ -141,6 +149,7 @@ class ListAuthorizedDbUsersRequest:
     def limit(self):
         """Gets the limit of this ListAuthorizedDbUsersRequest.
 
+        每页数据条数。取值范围[1, 100]。
 
         :return: The limit of this ListAuthorizedDbUsersRequest.
         :rtype: int
@@ -151,6 +160,7 @@ class ListAuthorizedDbUsersRequest:
     def limit(self, limit):
         """Sets the limit of this ListAuthorizedDbUsersRequest.
 
+        每页数据条数。取值范围[1, 100]。
 
         :param limit: The limit of this ListAuthorizedDbUsersRequest.
         :type: int

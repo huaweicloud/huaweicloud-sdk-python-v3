@@ -33,7 +33,7 @@ class UpdateDnsNameResponse(SdkResponse):
     def __init__(self, job_id=None):
         """UpdateDnsNameResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateDnsNameResponse, self).__init__()
 
         self._job_id = None
         self.discriminator = None

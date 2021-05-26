@@ -33,7 +33,7 @@ class ListRestoreTimesResponse(SdkResponse):
     def __init__(self, restore_time=None):
         """ListRestoreTimesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListRestoreTimesResponse, self).__init__()
 
         self._restore_time = None
         self.discriminator = None

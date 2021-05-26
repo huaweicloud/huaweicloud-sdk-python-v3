@@ -54,6 +54,7 @@ class ListOffSiteRestoreTimesRequest:
     def x_language(self):
         """Gets the x_language of this ListOffSiteRestoreTimesRequest.
 
+        语言
 
         :return: The x_language of this ListOffSiteRestoreTimesRequest.
         :rtype: str
@@ -64,6 +65,7 @@ class ListOffSiteRestoreTimesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListOffSiteRestoreTimesRequest.
 
+        语言
 
         :param x_language: The x_language of this ListOffSiteRestoreTimesRequest.
         :type: str
@@ -74,6 +76,7 @@ class ListOffSiteRestoreTimesRequest:
     def instance_id(self):
         """Gets the instance_id of this ListOffSiteRestoreTimesRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListOffSiteRestoreTimesRequest.
         :rtype: str
@@ -84,6 +87,7 @@ class ListOffSiteRestoreTimesRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListOffSiteRestoreTimesRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListOffSiteRestoreTimesRequest.
         :type: str
@@ -94,6 +98,7 @@ class ListOffSiteRestoreTimesRequest:
     def date(self):
         """Gets the date of this ListOffSiteRestoreTimesRequest.
 
+        所需查询的日期，为yyyy-mm-dd字符串格式，时区为UTC。
 
         :return: The date of this ListOffSiteRestoreTimesRequest.
         :rtype: str
@@ -104,6 +109,7 @@ class ListOffSiteRestoreTimesRequest:
     def date(self, date):
         """Sets the date of this ListOffSiteRestoreTimesRequest.
 
+        所需查询的日期，为yyyy-mm-dd字符串格式，时区为UTC。
 
         :param date: The date of this ListOffSiteRestoreTimesRequest.
         :type: str

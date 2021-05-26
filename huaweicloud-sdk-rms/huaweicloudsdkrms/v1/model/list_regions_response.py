@@ -33,7 +33,7 @@ class ListRegionsResponse(SdkResponse):
     def __init__(self, value=None):
         """ListRegionsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListRegionsResponse, self).__init__()
 
         self._value = None
         self.discriminator = None

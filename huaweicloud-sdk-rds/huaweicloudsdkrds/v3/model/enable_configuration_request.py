@@ -54,6 +54,7 @@ class EnableConfigurationRequest:
     def x_language(self):
         """Gets the x_language of this EnableConfigurationRequest.
 
+        语言
 
         :return: The x_language of this EnableConfigurationRequest.
         :rtype: str
@@ -64,6 +65,7 @@ class EnableConfigurationRequest:
     def x_language(self, x_language):
         """Sets the x_language of this EnableConfigurationRequest.
 
+        语言
 
         :param x_language: The x_language of this EnableConfigurationRequest.
         :type: str
@@ -74,6 +76,7 @@ class EnableConfigurationRequest:
     def config_id(self):
         """Gets the config_id of this EnableConfigurationRequest.
 
+        参数模板ID。
 
         :return: The config_id of this EnableConfigurationRequest.
         :rtype: str
@@ -84,6 +87,7 @@ class EnableConfigurationRequest:
     def config_id(self, config_id):
         """Sets the config_id of this EnableConfigurationRequest.
 
+        参数模板ID。
 
         :param config_id: The config_id of this EnableConfigurationRequest.
         :type: str

@@ -57,6 +57,7 @@ class ListPostgresqlDbUserPaginatedRequest:
     def x_language(self):
         """Gets the x_language of this ListPostgresqlDbUserPaginatedRequest.
 
+        语言
 
         :return: The x_language of this ListPostgresqlDbUserPaginatedRequest.
         :rtype: str
@@ -67,6 +68,7 @@ class ListPostgresqlDbUserPaginatedRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListPostgresqlDbUserPaginatedRequest.
 
+        语言
 
         :param x_language: The x_language of this ListPostgresqlDbUserPaginatedRequest.
         :type: str
@@ -77,6 +79,7 @@ class ListPostgresqlDbUserPaginatedRequest:
     def instance_id(self):
         """Gets the instance_id of this ListPostgresqlDbUserPaginatedRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListPostgresqlDbUserPaginatedRequest.
         :rtype: str
@@ -87,6 +90,7 @@ class ListPostgresqlDbUserPaginatedRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListPostgresqlDbUserPaginatedRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListPostgresqlDbUserPaginatedRequest.
         :type: str
@@ -97,6 +101,7 @@ class ListPostgresqlDbUserPaginatedRequest:
     def page(self):
         """Gets the page of this ListPostgresqlDbUserPaginatedRequest.
 
+        分页页码，从1开始。
 
         :return: The page of this ListPostgresqlDbUserPaginatedRequest.
         :rtype: int
@@ -107,6 +112,7 @@ class ListPostgresqlDbUserPaginatedRequest:
     def page(self, page):
         """Sets the page of this ListPostgresqlDbUserPaginatedRequest.
 
+        分页页码，从1开始。
 
         :param page: The page of this ListPostgresqlDbUserPaginatedRequest.
         :type: int
@@ -117,6 +123,7 @@ class ListPostgresqlDbUserPaginatedRequest:
     def limit(self):
         """Gets the limit of this ListPostgresqlDbUserPaginatedRequest.
 
+        每页数据条数。取值范围[1, 100]。
 
         :return: The limit of this ListPostgresqlDbUserPaginatedRequest.
         :rtype: int
@@ -127,6 +134,7 @@ class ListPostgresqlDbUserPaginatedRequest:
     def limit(self, limit):
         """Sets the limit of this ListPostgresqlDbUserPaginatedRequest.
 
+        每页数据条数。取值范围[1, 100]。
 
         :param limit: The limit of this ListPostgresqlDbUserPaginatedRequest.
         :type: int

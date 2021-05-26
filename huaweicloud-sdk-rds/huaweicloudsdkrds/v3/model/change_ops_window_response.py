@@ -31,7 +31,7 @@ class ChangeOpsWindowResponse(SdkResponse):
     def __init__(self):
         """ChangeOpsWindowResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ChangeOpsWindowResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

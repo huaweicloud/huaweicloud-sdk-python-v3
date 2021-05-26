@@ -53,6 +53,7 @@ class DeleteSqlserverDatabaseRequest:
     def x_language(self):
         """Gets the x_language of this DeleteSqlserverDatabaseRequest.
 
+        语言
 
         :return: The x_language of this DeleteSqlserverDatabaseRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class DeleteSqlserverDatabaseRequest:
     def x_language(self, x_language):
         """Sets the x_language of this DeleteSqlserverDatabaseRequest.
 
+        语言
 
         :param x_language: The x_language of this DeleteSqlserverDatabaseRequest.
         :type: str
@@ -73,6 +75,7 @@ class DeleteSqlserverDatabaseRequest:
     def instance_id(self):
         """Gets the instance_id of this DeleteSqlserverDatabaseRequest.
 
+        实例ID。
 
         :return: The instance_id of this DeleteSqlserverDatabaseRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class DeleteSqlserverDatabaseRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeleteSqlserverDatabaseRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this DeleteSqlserverDatabaseRequest.
         :type: str
@@ -93,6 +97,7 @@ class DeleteSqlserverDatabaseRequest:
     def db_name(self):
         """Gets the db_name of this DeleteSqlserverDatabaseRequest.
 
+        需要删除的数据库名。
 
         :return: The db_name of this DeleteSqlserverDatabaseRequest.
         :rtype: str
@@ -103,6 +108,7 @@ class DeleteSqlserverDatabaseRequest:
     def db_name(self, db_name):
         """Sets the db_name of this DeleteSqlserverDatabaseRequest.
 
+        需要删除的数据库名。
 
         :param db_name: The db_name of this DeleteSqlserverDatabaseRequest.
         :type: str

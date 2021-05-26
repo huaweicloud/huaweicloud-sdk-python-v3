@@ -58,6 +58,7 @@ class ListJobInfoDetailRequest:
     def x_language(self):
         """Gets the x_language of this ListJobInfoDetailRequest.
 
+        语言
 
         :return: The x_language of this ListJobInfoDetailRequest.
         :rtype: str
@@ -68,6 +69,7 @@ class ListJobInfoDetailRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListJobInfoDetailRequest.
 
+        语言
 
         :param x_language: The x_language of this ListJobInfoDetailRequest.
         :type: str
@@ -78,6 +80,7 @@ class ListJobInfoDetailRequest:
     def instance_id(self):
         """Gets the instance_id of this ListJobInfoDetailRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListJobInfoDetailRequest.
         :rtype: str
@@ -88,6 +91,7 @@ class ListJobInfoDetailRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListJobInfoDetailRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListJobInfoDetailRequest.
         :type: str
@@ -98,6 +102,7 @@ class ListJobInfoDetailRequest:
     def start_time(self):
         """Gets the start_time of this ListJobInfoDetailRequest.
 
+        开始时间，格式为UTC时间戳。
 
         :return: The start_time of this ListJobInfoDetailRequest.
         :rtype: str
@@ -108,6 +113,7 @@ class ListJobInfoDetailRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListJobInfoDetailRequest.
 
+        开始时间，格式为UTC时间戳。
 
         :param start_time: The start_time of this ListJobInfoDetailRequest.
         :type: str
@@ -118,6 +124,7 @@ class ListJobInfoDetailRequest:
     def end_time(self):
         """Gets the end_time of this ListJobInfoDetailRequest.
 
+        结束时间，格式为UTC时间戳。
 
         :return: The end_time of this ListJobInfoDetailRequest.
         :rtype: str
@@ -128,6 +135,7 @@ class ListJobInfoDetailRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListJobInfoDetailRequest.
 
+        结束时间，格式为UTC时间戳。
 
         :param end_time: The end_time of this ListJobInfoDetailRequest.
         :type: str

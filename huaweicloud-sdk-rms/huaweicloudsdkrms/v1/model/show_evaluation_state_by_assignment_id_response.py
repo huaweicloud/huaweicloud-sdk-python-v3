@@ -41,7 +41,7 @@ class ShowEvaluationStateByAssignmentIdResponse(SdkResponse):
     def __init__(self, policy_assignment_id=None, state=None, start_time=None, end_time=None, error_message=None):
         """ShowEvaluationStateByAssignmentIdResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowEvaluationStateByAssignmentIdResponse, self).__init__()
 
         self._policy_assignment_id = None
         self._state = None

@@ -35,7 +35,7 @@ class ShowResourceRelationsResponse(SdkResponse):
     def __init__(self, relations=None, page_info=None):
         """ShowResourceRelationsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowResourceRelationsResponse, self).__init__()
 
         self._relations = None
         self._page_info = None

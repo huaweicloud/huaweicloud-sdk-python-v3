@@ -33,7 +33,7 @@ class UpdatePortResponse(SdkResponse):
     def __init__(self, workflow_id=None):
         """UpdatePortResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdatePortResponse, self).__init__()
 
         self._workflow_id = None
         self.discriminator = None

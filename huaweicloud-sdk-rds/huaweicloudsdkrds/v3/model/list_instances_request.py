@@ -90,6 +90,7 @@ class ListInstancesRequest:
     def x_language(self):
         """Gets the x_language of this ListInstancesRequest.
 
+        语言
 
         :return: The x_language of this ListInstancesRequest.
         :rtype: str
@@ -100,6 +101,7 @@ class ListInstancesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListInstancesRequest.
 
+        语言
 
         :param x_language: The x_language of this ListInstancesRequest.
         :type: str
@@ -110,6 +112,7 @@ class ListInstancesRequest:
     def id(self):
         """Gets the id of this ListInstancesRequest.
 
+        实例ID。  “\\*”为系统保留字符，如果id是以“\\*”起始，表示按照\\*后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入“\\*”。
 
         :return: The id of this ListInstancesRequest.
         :rtype: str
@@ -120,6 +123,7 @@ class ListInstancesRequest:
     def id(self, id):
         """Sets the id of this ListInstancesRequest.
 
+        实例ID。  “\\*”为系统保留字符，如果id是以“\\*”起始，表示按照\\*后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入“\\*”。
 
         :param id: The id of this ListInstancesRequest.
         :type: str
@@ -130,6 +134,7 @@ class ListInstancesRequest:
     def name(self):
         """Gets the name of this ListInstancesRequest.
 
+        实例名称。  “\\*”为系统保留字符，如果name是以“\\*”起始，表示按照\\*后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入“\\*”。
 
         :return: The name of this ListInstancesRequest.
         :rtype: str
@@ -140,6 +145,7 @@ class ListInstancesRequest:
     def name(self, name):
         """Sets the name of this ListInstancesRequest.
 
+        实例名称。  “\\*”为系统保留字符，如果name是以“\\*”起始，表示按照\\*后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入“\\*”。
 
         :param name: The name of this ListInstancesRequest.
         :type: str
@@ -150,6 +156,7 @@ class ListInstancesRequest:
     def type(self):
         """Gets the type of this ListInstancesRequest.
 
+        按照实例类型查询。取值Single、Ha、Replica，分别对应于单实例、主备实例和只读实例。
 
         :return: The type of this ListInstancesRequest.
         :rtype: str
@@ -160,6 +167,7 @@ class ListInstancesRequest:
     def type(self, type):
         """Sets the type of this ListInstancesRequest.
 
+        按照实例类型查询。取值Single、Ha、Replica，分别对应于单实例、主备实例和只读实例。
 
         :param type: The type of this ListInstancesRequest.
         :type: str
@@ -170,6 +178,7 @@ class ListInstancesRequest:
     def datastore_type(self):
         """Gets the datastore_type of this ListInstancesRequest.
 
+        数据库类型，区分大小写。  - MySQL - PostgreSQL - SQLServer
 
         :return: The datastore_type of this ListInstancesRequest.
         :rtype: str
@@ -180,6 +189,7 @@ class ListInstancesRequest:
     def datastore_type(self, datastore_type):
         """Sets the datastore_type of this ListInstancesRequest.
 
+        数据库类型，区分大小写。  - MySQL - PostgreSQL - SQLServer
 
         :param datastore_type: The datastore_type of this ListInstancesRequest.
         :type: str
@@ -190,6 +200,7 @@ class ListInstancesRequest:
     def vpc_id(self):
         """Gets the vpc_id of this ListInstancesRequest.
 
+        虚拟私有云ID。
 
         :return: The vpc_id of this ListInstancesRequest.
         :rtype: str
@@ -200,6 +211,7 @@ class ListInstancesRequest:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this ListInstancesRequest.
 
+        虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this ListInstancesRequest.
         :type: str
@@ -210,6 +222,7 @@ class ListInstancesRequest:
     def subnet_id(self):
         """Gets the subnet_id of this ListInstancesRequest.
 
+        子网ID。
 
         :return: The subnet_id of this ListInstancesRequest.
         :rtype: str
@@ -220,6 +233,7 @@ class ListInstancesRequest:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this ListInstancesRequest.
 
+        子网ID。
 
         :param subnet_id: The subnet_id of this ListInstancesRequest.
         :type: str
@@ -230,6 +244,7 @@ class ListInstancesRequest:
     def offset(self):
         """Gets the offset of this ListInstancesRequest.
 
+        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :return: The offset of this ListInstancesRequest.
         :rtype: int
@@ -240,6 +255,7 @@ class ListInstancesRequest:
     def offset(self, offset):
         """Sets the offset of this ListInstancesRequest.
 
+        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :param offset: The offset of this ListInstancesRequest.
         :type: int
@@ -250,6 +266,7 @@ class ListInstancesRequest:
     def limit(self):
         """Gets the limit of this ListInstancesRequest.
 
+        查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
         :return: The limit of this ListInstancesRequest.
         :rtype: int
@@ -260,6 +277,7 @@ class ListInstancesRequest:
     def limit(self, limit):
         """Sets the limit of this ListInstancesRequest.
 
+        查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
         :param limit: The limit of this ListInstancesRequest.
         :type: int
@@ -270,6 +288,7 @@ class ListInstancesRequest:
     def tags(self):
         """Gets the tags of this ListInstancesRequest.
 
+        根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值，最多包含10组。key不可以为空或重复，value可以为空。如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。
 
         :return: The tags of this ListInstancesRequest.
         :rtype: str
@@ -280,6 +299,7 @@ class ListInstancesRequest:
     def tags(self, tags):
         """Sets the tags of this ListInstancesRequest.
 
+        根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值，最多包含10组。key不可以为空或重复，value可以为空。如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。
 
         :param tags: The tags of this ListInstancesRequest.
         :type: str

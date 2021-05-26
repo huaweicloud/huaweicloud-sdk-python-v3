@@ -49,6 +49,7 @@ class ListJobInfoRequest:
     def x_language(self):
         """Gets the x_language of this ListJobInfoRequest.
 
+        语言
 
         :return: The x_language of this ListJobInfoRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ListJobInfoRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListJobInfoRequest.
 
+        语言
 
         :param x_language: The x_language of this ListJobInfoRequest.
         :type: str
@@ -69,6 +71,7 @@ class ListJobInfoRequest:
     def id(self):
         """Gets the id of this ListJobInfoRequest.
 
+        任务ID。
 
         :return: The id of this ListJobInfoRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ListJobInfoRequest:
     def id(self, id):
         """Sets the id of this ListJobInfoRequest.
 
+        任务ID。
 
         :param id: The id of this ListJobInfoRequest.
         :type: str

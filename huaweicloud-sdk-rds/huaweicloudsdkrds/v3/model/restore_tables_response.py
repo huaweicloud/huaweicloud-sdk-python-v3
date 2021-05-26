@@ -33,7 +33,7 @@ class RestoreTablesResponse(SdkResponse):
     def __init__(self, job_id=None):
         """RestoreTablesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RestoreTablesResponse, self).__init__()
 
         self._job_id = None
         self.discriminator = None

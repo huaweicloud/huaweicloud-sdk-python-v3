@@ -43,7 +43,7 @@ class ListSlowlogStatisticsResponse(SdkResponse):
     def __init__(self, page_number=None, page_record=None, slow_log_list=None, total_record=None, start_time=None, end_time=None):
         """ListSlowlogStatisticsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSlowlogStatisticsResponse, self).__init__()
 
         self._page_number = None
         self._page_record = None

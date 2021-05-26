@@ -35,7 +35,7 @@ class ListSqlserverDatabasesResponse(SdkResponse):
     def __init__(self, databases=None, total_count=None):
         """ListSqlserverDatabasesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSqlserverDatabasesResponse, self).__init__()
 
         self._databases = None
         self._total_count = None

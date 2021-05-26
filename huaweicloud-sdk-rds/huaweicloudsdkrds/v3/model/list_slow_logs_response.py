@@ -35,7 +35,7 @@ class ListSlowLogsResponse(SdkResponse):
     def __init__(self, slow_log_list=None, total_record=None):
         """ListSlowLogsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSlowLogsResponse, self).__init__()
 
         self._slow_log_list = None
         self._total_record = None

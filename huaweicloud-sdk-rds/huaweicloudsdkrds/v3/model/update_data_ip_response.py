@@ -33,7 +33,7 @@ class UpdateDataIpResponse(SdkResponse):
     def __init__(self, workflow_id=None):
         """UpdateDataIpResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateDataIpResponse, self).__init__()
 
         self._workflow_id = None
         self.discriminator = None

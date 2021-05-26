@@ -61,7 +61,7 @@ class ShowResourceByIdResponse(SdkResponse):
     def __init__(self, id=None, name=None, provider=None, type=None, region_id=None, project_id=None, project_name=None, ep_id=None, ep_name=None, checksum=None, created=None, updated=None, provisioning_state=None, tags=None, properties=None):
         """ShowResourceByIdResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowResourceByIdResponse, self).__init__()
 
         self._id = None
         self._name = None

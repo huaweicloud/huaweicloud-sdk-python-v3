@@ -49,6 +49,7 @@ class ListDatastoresRequest:
     def x_language(self):
         """Gets the x_language of this ListDatastoresRequest.
 
+        语言
 
         :return: The x_language of this ListDatastoresRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ListDatastoresRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListDatastoresRequest.
 
+        语言
 
         :param x_language: The x_language of this ListDatastoresRequest.
         :type: str
@@ -69,6 +71,7 @@ class ListDatastoresRequest:
     def database_name(self):
         """Gets the database_name of this ListDatastoresRequest.
 
+        数据库引擎。支持的引擎如下，不区分大小写： MySQL PostgreSQL SQLServer
 
         :return: The database_name of this ListDatastoresRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ListDatastoresRequest:
     def database_name(self, database_name):
         """Sets the database_name of this ListDatastoresRequest.
 
+        数据库引擎。支持的引擎如下，不区分大小写： MySQL PostgreSQL SQLServer
 
         :param database_name: The database_name of this ListDatastoresRequest.
         :type: str

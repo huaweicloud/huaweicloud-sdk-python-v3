@@ -48,26 +48,26 @@ class RabbitMQAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
-    def batch_create_or_delete_instance_tag_async(self, request):
+    def batch_create_or_delete_rabbit_mq_tag_async(self, request):
         """批量添加或删除实例标签
 
         批量添加或删除实例标签。
 
-        :param BatchCreateOrDeleteInstanceTagRequest request
-        :return: BatchCreateOrDeleteInstanceTagResponse
+        :param BatchCreateOrDeleteRabbitMqTagRequest request
+        :return: BatchCreateOrDeleteRabbitMqTagResponse
         """
-        return self.batch_create_or_delete_instance_tag_with_http_info(request)
+        return self.batch_create_or_delete_rabbit_mq_tag_with_http_info(request)
 
-    def batch_create_or_delete_instance_tag_with_http_info(self, request):
+    def batch_create_or_delete_rabbit_mq_tag_with_http_info(self, request):
         """批量添加或删除实例标签
 
         批量添加或删除实例标签。
 
-        :param BatchCreateOrDeleteInstanceTagRequest request
-        :return: BatchCreateOrDeleteInstanceTagResponse
+        :param BatchCreateOrDeleteRabbitMqTagRequest request
+        :return: BatchCreateOrDeleteRabbitMqTagResponse
         """
 
-        all_params = ['instance_id', 'batch_create_or_delete_instance_tag_request_body']
+        all_params = ['instance_id', 'batch_create_or_delete_rabbit_mq_tag_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -96,7 +96,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/rabbitmq/{instance_id}/tags/action',
@@ -106,7 +106,7 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='BatchCreateOrDeleteInstanceTagResponse',
+            response_type='BatchCreateOrDeleteRabbitMqTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -159,7 +159,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/action',
@@ -222,7 +222,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances',
@@ -287,7 +287,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/tasks/{task_id}',
@@ -350,7 +350,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}',
@@ -411,7 +411,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/available-zones',
@@ -482,7 +482,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/tasks',
@@ -557,7 +557,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances',
@@ -620,7 +620,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/rabbitmq/plugins',
@@ -683,7 +683,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/products',
@@ -748,7 +748,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/password',
@@ -813,7 +813,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/extend',
@@ -878,7 +878,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/tasks/{task_id}',
@@ -896,7 +896,7 @@ class RabbitMQAsyncClient(Client):
 
 
     def show_instance_async(self, request):
-        """查询指定实例成功
+        """查询指定实例
 
         查询指定实例的详细信息。
 
@@ -906,7 +906,7 @@ class RabbitMQAsyncClient(Client):
         return self.show_instance_with_http_info(request)
 
     def show_instance_with_http_info(self, request):
-        """查询指定实例成功
+        """查询指定实例
 
         查询指定实例的详细信息。
 
@@ -941,7 +941,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}',
@@ -1008,7 +1008,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/extend',
@@ -1019,69 +1019,6 @@ class RabbitMQAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowInstanceExtendProductInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def show_instance_tags_async(self, request):
-        """查询实例标签
-
-        查询实例标签。
-
-        :param ShowInstanceTagsRequest request
-        :return: ShowInstanceTagsResponse
-        """
-        return self.show_instance_tags_with_http_info(request)
-
-    def show_instance_tags_with_http_info(self, request):
-        """查询实例标签
-
-        查询实例标签。
-
-        :param ShowInstanceTagsRequest request
-        :return: ShowInstanceTagsResponse
-        """
-
-        all_params = ['instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/rabbitmq/{instance_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowInstanceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1132,7 +1069,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/instances/maintain-windows',
@@ -1149,23 +1086,23 @@ class RabbitMQAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_project_tags_async(self, request):
+    def show_rabbit_mq_project_tags_async(self, request):
         """查询项目标签
 
         查询项目标签。
 
-        :param ShowProjectTagsRequest request
-        :return: ShowProjectTagsResponse
+        :param ShowRabbitMqProjectTagsRequest request
+        :return: ShowRabbitMqProjectTagsResponse
         """
-        return self.show_project_tags_with_http_info(request)
+        return self.show_rabbit_mq_project_tags_with_http_info(request)
 
-    def show_project_tags_with_http_info(self, request):
+    def show_rabbit_mq_project_tags_with_http_info(self, request):
         """查询项目标签
 
         查询项目标签。
 
-        :param ShowProjectTagsRequest request
-        :return: ShowProjectTagsResponse
+        :param ShowRabbitMqProjectTagsRequest request
+        :return: ShowRabbitMqProjectTagsResponse
         """
 
         all_params = []
@@ -1193,7 +1130,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/rabbitmq/tags',
@@ -1203,7 +1140,70 @@ class RabbitMQAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowProjectTagsResponse',
+            response_type='ShowRabbitMqProjectTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_rabbit_mq_tags_async(self, request):
+        """查询实例标签
+
+        查询实例标签。
+
+        :param ShowRabbitMqTagsRequest request
+        :return: ShowRabbitMqTagsResponse
+        """
+        return self.show_rabbit_mq_tags_with_http_info(request)
+
+    def show_rabbit_mq_tags_with_http_info(self, request):
+        """查询实例标签
+
+        查询实例标签。
+
+        :param ShowRabbitMqTagsRequest request
+        :return: ShowRabbitMqTagsResponse
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/rabbitmq/{instance_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowRabbitMqTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1258,7 +1258,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}',
@@ -1323,7 +1323,7 @@ class RabbitMQAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/rabbitmq/plugins',

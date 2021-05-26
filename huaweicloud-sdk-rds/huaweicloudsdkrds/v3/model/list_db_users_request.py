@@ -57,6 +57,7 @@ class ListDbUsersRequest:
     def x_language(self):
         """Gets the x_language of this ListDbUsersRequest.
 
+        语言
 
         :return: The x_language of this ListDbUsersRequest.
         :rtype: str
@@ -67,6 +68,7 @@ class ListDbUsersRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListDbUsersRequest.
 
+        语言
 
         :param x_language: The x_language of this ListDbUsersRequest.
         :type: str
@@ -77,6 +79,7 @@ class ListDbUsersRequest:
     def instance_id(self):
         """Gets the instance_id of this ListDbUsersRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListDbUsersRequest.
         :rtype: str
@@ -87,6 +90,7 @@ class ListDbUsersRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListDbUsersRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListDbUsersRequest.
         :type: str
@@ -97,6 +101,7 @@ class ListDbUsersRequest:
     def page(self):
         """Gets the page of this ListDbUsersRequest.
 
+        分页页码，从1开始。
 
         :return: The page of this ListDbUsersRequest.
         :rtype: int
@@ -107,6 +112,7 @@ class ListDbUsersRequest:
     def page(self, page):
         """Sets the page of this ListDbUsersRequest.
 
+        分页页码，从1开始。
 
         :param page: The page of this ListDbUsersRequest.
         :type: int
@@ -117,6 +123,7 @@ class ListDbUsersRequest:
     def limit(self):
         """Gets the limit of this ListDbUsersRequest.
 
+        每页数据条数。取值范围[1, 100]。
 
         :return: The limit of this ListDbUsersRequest.
         :rtype: int
@@ -127,6 +134,7 @@ class ListDbUsersRequest:
     def limit(self, limit):
         """Sets the limit of this ListDbUsersRequest.
 
+        每页数据条数。取值范围[1, 100]。
 
         :param limit: The limit of this ListDbUsersRequest.
         :type: int

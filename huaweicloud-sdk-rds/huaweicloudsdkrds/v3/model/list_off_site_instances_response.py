@@ -35,7 +35,7 @@ class ListOffSiteInstancesResponse(SdkResponse):
     def __init__(self, offsite_backup_instance=None, total_count=None):
         """ListOffSiteInstancesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListOffSiteInstancesResponse, self).__init__()
 
         self._offsite_backup_instance = None
         self._total_count = None

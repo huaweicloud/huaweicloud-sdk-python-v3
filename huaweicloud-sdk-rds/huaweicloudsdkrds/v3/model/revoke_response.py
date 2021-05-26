@@ -33,7 +33,7 @@ class RevokeResponse(SdkResponse):
     def __init__(self, resp=None):
         """RevokeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RevokeResponse, self).__init__()
 
         self._resp = None
         self.discriminator = None

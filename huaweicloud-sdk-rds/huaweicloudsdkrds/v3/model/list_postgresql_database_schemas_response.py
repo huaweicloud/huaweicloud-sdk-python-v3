@@ -35,7 +35,7 @@ class ListPostgresqlDatabaseSchemasResponse(SdkResponse):
     def __init__(self, database_schemas=None, total_count=None):
         """ListPostgresqlDatabaseSchemasResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListPostgresqlDatabaseSchemasResponse, self).__init__()
 
         self._database_schemas = None
         self._total_count = None

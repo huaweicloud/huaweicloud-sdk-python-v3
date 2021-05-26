@@ -35,7 +35,7 @@ class ListPolicyAssignmentsResponse(SdkResponse):
     def __init__(self, value=None, page_info=None):
         """ListPolicyAssignmentsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListPolicyAssignmentsResponse, self).__init__()
 
         self._value = None
         self._page_info = None

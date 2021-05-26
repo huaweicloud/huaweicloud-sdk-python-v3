@@ -31,7 +31,7 @@ class ChangeFailoverStrategyResponse(SdkResponse):
     def __init__(self):
         """ChangeFailoverStrategyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ChangeFailoverStrategyResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

@@ -33,7 +33,7 @@ class CreatePostgresqlDbUserResponse(SdkResponse):
     def __init__(self, resp=None):
         """CreatePostgresqlDbUserResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreatePostgresqlDbUserResponse, self).__init__()
 
         self._resp = None
         self.discriminator = None

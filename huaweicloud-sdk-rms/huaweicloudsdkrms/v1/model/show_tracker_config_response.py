@@ -37,7 +37,7 @@ class ShowTrackerConfigResponse(SdkResponse):
     def __init__(self, channel=None, selector=None, agency_name=None):
         """ShowTrackerConfigResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowTrackerConfigResponse, self).__init__()
 
         self._channel = None
         self._selector = None

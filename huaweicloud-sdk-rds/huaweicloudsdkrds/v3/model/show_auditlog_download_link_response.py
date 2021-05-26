@@ -33,7 +33,7 @@ class ShowAuditlogDownloadLinkResponse(SdkResponse):
     def __init__(self, links=None):
         """ShowAuditlogDownloadLinkResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowAuditlogDownloadLinkResponse, self).__init__()
 
         self._links = None
         self.discriminator = None

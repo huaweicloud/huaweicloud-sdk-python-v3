@@ -68,6 +68,7 @@ class ListResourcesRequest:
     def provider(self):
         """Gets the provider of this ListResourcesRequest.
 
+        云服务英文简写
 
         :return: The provider of this ListResourcesRequest.
         :rtype: str
@@ -78,6 +79,7 @@ class ListResourcesRequest:
     def provider(self, provider):
         """Sets the provider of this ListResourcesRequest.
 
+        云服务英文简写
 
         :param provider: The provider of this ListResourcesRequest.
         :type: str
@@ -88,6 +90,7 @@ class ListResourcesRequest:
     def type(self):
         """Gets the type of this ListResourcesRequest.
 
+        云服务资源类型名称
 
         :return: The type of this ListResourcesRequest.
         :rtype: str
@@ -98,6 +101,7 @@ class ListResourcesRequest:
     def type(self, type):
         """Sets the type of this ListResourcesRequest.
 
+        云服务资源类型名称
 
         :param type: The type of this ListResourcesRequest.
         :type: str
@@ -108,6 +112,7 @@ class ListResourcesRequest:
     def region_id(self):
         """Gets the region_id of this ListResourcesRequest.
 
+        区域ID
 
         :return: The region_id of this ListResourcesRequest.
         :rtype: str
@@ -118,6 +123,7 @@ class ListResourcesRequest:
     def region_id(self, region_id):
         """Sets the region_id of this ListResourcesRequest.
 
+        区域ID
 
         :param region_id: The region_id of this ListResourcesRequest.
         :type: str
@@ -128,6 +134,7 @@ class ListResourcesRequest:
     def ep_id(self):
         """Gets the ep_id of this ListResourcesRequest.
 
+        企业项目ID
 
         :return: The ep_id of this ListResourcesRequest.
         :rtype: str
@@ -138,6 +145,7 @@ class ListResourcesRequest:
     def ep_id(self, ep_id):
         """Sets the ep_id of this ListResourcesRequest.
 
+        企业项目ID
 
         :param ep_id: The ep_id of this ListResourcesRequest.
         :type: str
@@ -148,6 +156,7 @@ class ListResourcesRequest:
     def limit(self):
         """Gets the limit of this ListResourcesRequest.
 
+        最大的返回数量
 
         :return: The limit of this ListResourcesRequest.
         :rtype: int
@@ -158,6 +167,7 @@ class ListResourcesRequest:
     def limit(self, limit):
         """Sets the limit of this ListResourcesRequest.
 
+        最大的返回数量
 
         :param limit: The limit of this ListResourcesRequest.
         :type: int
@@ -168,6 +178,7 @@ class ListResourcesRequest:
     def marker(self):
         """Gets the marker of this ListResourcesRequest.
 
+        分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :return: The marker of this ListResourcesRequest.
         :rtype: str
@@ -178,6 +189,7 @@ class ListResourcesRequest:
     def marker(self, marker):
         """Sets the marker of this ListResourcesRequest.
 
+        分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :param marker: The marker of this ListResourcesRequest.
         :type: str

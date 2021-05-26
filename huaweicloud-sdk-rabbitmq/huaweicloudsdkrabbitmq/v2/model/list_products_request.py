@@ -38,12 +38,14 @@ class ListProductsRequest:
         self._engine = None
         self.discriminator = None
 
-        self.engine = engine
+        if engine is not None:
+            self.engine = engine
 
     @property
     def engine(self):
         """Gets the engine of this ListProductsRequest.
 
+        消息引擎的类型。当前只支持rabbitmq。
 
         :return: The engine of this ListProductsRequest.
         :rtype: str
@@ -54,6 +56,7 @@ class ListProductsRequest:
     def engine(self, engine):
         """Sets the engine of this ListProductsRequest.
 
+        消息引擎的类型。当前只支持rabbitmq。
 
         :param engine: The engine of this ListProductsRequest.
         :type: str

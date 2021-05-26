@@ -33,7 +33,7 @@ class ListCollationsResponse(SdkResponse):
     def __init__(self, char_sets=None):
         """ListCollationsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListCollationsResponse, self).__init__()
 
         self._char_sets = None
         self.discriminator = None

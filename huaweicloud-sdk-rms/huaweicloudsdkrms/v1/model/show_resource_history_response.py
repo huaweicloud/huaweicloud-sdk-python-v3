@@ -35,7 +35,7 @@ class ShowResourceHistoryResponse(SdkResponse):
     def __init__(self, items=None, page_info=None):
         """ShowResourceHistoryResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowResourceHistoryResponse, self).__init__()
 
         self._items = None
         self._page_info = None

@@ -54,6 +54,7 @@ class UpdateConfigurationRequest:
     def x_language(self):
         """Gets the x_language of this UpdateConfigurationRequest.
 
+        语言
 
         :return: The x_language of this UpdateConfigurationRequest.
         :rtype: str
@@ -64,6 +65,7 @@ class UpdateConfigurationRequest:
     def x_language(self, x_language):
         """Sets the x_language of this UpdateConfigurationRequest.
 
+        语言
 
         :param x_language: The x_language of this UpdateConfigurationRequest.
         :type: str
@@ -74,6 +76,7 @@ class UpdateConfigurationRequest:
     def config_id(self):
         """Gets the config_id of this UpdateConfigurationRequest.
 
+        参数模板ID。
 
         :return: The config_id of this UpdateConfigurationRequest.
         :rtype: str
@@ -84,6 +87,7 @@ class UpdateConfigurationRequest:
     def config_id(self, config_id):
         """Sets the config_id of this UpdateConfigurationRequest.
 
+        参数模板ID。
 
         :param config_id: The config_id of this UpdateConfigurationRequest.
         :type: str

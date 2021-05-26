@@ -44,6 +44,7 @@ class ShowEvaluationStateByAssignmentIdRequest:
     def policy_assignment_id(self):
         """Gets the policy_assignment_id of this ShowEvaluationStateByAssignmentIdRequest.
 
+        规则ID
 
         :return: The policy_assignment_id of this ShowEvaluationStateByAssignmentIdRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowEvaluationStateByAssignmentIdRequest:
     def policy_assignment_id(self, policy_assignment_id):
         """Sets the policy_assignment_id of this ShowEvaluationStateByAssignmentIdRequest.
 
+        规则ID
 
         :param policy_assignment_id: The policy_assignment_id of this ShowEvaluationStateByAssignmentIdRequest.
         :type: str

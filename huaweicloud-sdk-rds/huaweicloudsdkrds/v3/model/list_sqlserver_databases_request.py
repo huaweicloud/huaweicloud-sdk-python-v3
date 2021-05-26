@@ -62,6 +62,7 @@ class ListSqlserverDatabasesRequest:
     def x_language(self):
         """Gets the x_language of this ListSqlserverDatabasesRequest.
 
+        语言
 
         :return: The x_language of this ListSqlserverDatabasesRequest.
         :rtype: str
@@ -72,6 +73,7 @@ class ListSqlserverDatabasesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListSqlserverDatabasesRequest.
 
+        语言
 
         :param x_language: The x_language of this ListSqlserverDatabasesRequest.
         :type: str
@@ -82,6 +84,7 @@ class ListSqlserverDatabasesRequest:
     def instance_id(self):
         """Gets the instance_id of this ListSqlserverDatabasesRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListSqlserverDatabasesRequest.
         :rtype: str
@@ -92,6 +95,7 @@ class ListSqlserverDatabasesRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListSqlserverDatabasesRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListSqlserverDatabasesRequest.
         :type: str
@@ -102,6 +106,7 @@ class ListSqlserverDatabasesRequest:
     def page(self):
         """Gets the page of this ListSqlserverDatabasesRequest.
 
+        分页页码，从1开始。
 
         :return: The page of this ListSqlserverDatabasesRequest.
         :rtype: int
@@ -112,6 +117,7 @@ class ListSqlserverDatabasesRequest:
     def page(self, page):
         """Sets the page of this ListSqlserverDatabasesRequest.
 
+        分页页码，从1开始。
 
         :param page: The page of this ListSqlserverDatabasesRequest.
         :type: int
@@ -122,6 +128,7 @@ class ListSqlserverDatabasesRequest:
     def limit(self):
         """Gets the limit of this ListSqlserverDatabasesRequest.
 
+        每页数据条数。取值范围[1, 100]。
 
         :return: The limit of this ListSqlserverDatabasesRequest.
         :rtype: int
@@ -132,6 +139,7 @@ class ListSqlserverDatabasesRequest:
     def limit(self, limit):
         """Sets the limit of this ListSqlserverDatabasesRequest.
 
+        每页数据条数。取值范围[1, 100]。
 
         :param limit: The limit of this ListSqlserverDatabasesRequest.
         :type: int
@@ -142,6 +150,7 @@ class ListSqlserverDatabasesRequest:
     def db_name(self):
         """Gets the db_name of this ListSqlserverDatabasesRequest.
 
+        数据库名。当指定该参数时，page和limit参数需要传入但不生效。
 
         :return: The db_name of this ListSqlserverDatabasesRequest.
         :rtype: str
@@ -152,6 +161,7 @@ class ListSqlserverDatabasesRequest:
     def db_name(self, db_name):
         """Sets the db_name of this ListSqlserverDatabasesRequest.
 
+        数据库名。当指定该参数时，page和limit参数需要传入但不生效。
 
         :param db_name: The db_name of this ListSqlserverDatabasesRequest.
         :type: str

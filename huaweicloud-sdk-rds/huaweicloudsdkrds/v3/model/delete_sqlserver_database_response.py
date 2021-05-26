@@ -33,7 +33,7 @@ class DeleteSqlserverDatabaseResponse(SdkResponse):
     def __init__(self, resp=None):
         """DeleteSqlserverDatabaseResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteSqlserverDatabaseResponse, self).__init__()
 
         self._resp = None
         self.discriminator = None

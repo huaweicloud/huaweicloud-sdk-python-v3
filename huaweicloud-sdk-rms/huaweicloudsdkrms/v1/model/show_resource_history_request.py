@@ -69,6 +69,7 @@ class ShowResourceHistoryRequest:
     def resource_id(self):
         """Gets the resource_id of this ShowResourceHistoryRequest.
 
+        资源ID
 
         :return: The resource_id of this ShowResourceHistoryRequest.
         :rtype: str
@@ -79,6 +80,7 @@ class ShowResourceHistoryRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ShowResourceHistoryRequest.
 
+        资源ID
 
         :param resource_id: The resource_id of this ShowResourceHistoryRequest.
         :type: str
@@ -89,6 +91,7 @@ class ShowResourceHistoryRequest:
     def marker(self):
         """Gets the marker of this ShowResourceHistoryRequest.
 
+        分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :return: The marker of this ShowResourceHistoryRequest.
         :rtype: str
@@ -99,6 +102,7 @@ class ShowResourceHistoryRequest:
     def marker(self, marker):
         """Sets the marker of this ShowResourceHistoryRequest.
 
+        分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :param marker: The marker of this ShowResourceHistoryRequest.
         :type: str
@@ -109,6 +113,7 @@ class ShowResourceHistoryRequest:
     def limit(self):
         """Gets the limit of this ShowResourceHistoryRequest.
 
+        最大的返回数量
 
         :return: The limit of this ShowResourceHistoryRequest.
         :rtype: int
@@ -119,6 +124,7 @@ class ShowResourceHistoryRequest:
     def limit(self, limit):
         """Sets the limit of this ShowResourceHistoryRequest.
 
+        最大的返回数量
 
         :param limit: The limit of this ShowResourceHistoryRequest.
         :type: int
@@ -129,6 +135,7 @@ class ShowResourceHistoryRequest:
     def earlier_time(self):
         """Gets the earlier_time of this ShowResourceHistoryRequest.
 
+        指定查询范围的起始时间点，如果不设置此参数，默认为最早的时间
 
         :return: The earlier_time of this ShowResourceHistoryRequest.
         :rtype: int
@@ -139,6 +146,7 @@ class ShowResourceHistoryRequest:
     def earlier_time(self, earlier_time):
         """Sets the earlier_time of this ShowResourceHistoryRequest.
 
+        指定查询范围的起始时间点，如果不设置此参数，默认为最早的时间
 
         :param earlier_time: The earlier_time of this ShowResourceHistoryRequest.
         :type: int
@@ -149,6 +157,7 @@ class ShowResourceHistoryRequest:
     def later_time(self):
         """Gets the later_time of this ShowResourceHistoryRequest.
 
+        指定查询范围的结束时间点，如果不设置此参数，默认为当前时间
 
         :return: The later_time of this ShowResourceHistoryRequest.
         :rtype: int
@@ -159,6 +168,7 @@ class ShowResourceHistoryRequest:
     def later_time(self, later_time):
         """Sets the later_time of this ShowResourceHistoryRequest.
 
+        指定查询范围的结束时间点，如果不设置此参数，默认为当前时间
 
         :param later_time: The later_time of this ShowResourceHistoryRequest.
         :type: int
@@ -169,6 +179,7 @@ class ShowResourceHistoryRequest:
     def chronological_order(self):
         """Gets the chronological_order of this ShowResourceHistoryRequest.
 
+        指定返回数据的时间顺序，默认为倒序
 
         :return: The chronological_order of this ShowResourceHistoryRequest.
         :rtype: str
@@ -179,6 +190,7 @@ class ShowResourceHistoryRequest:
     def chronological_order(self, chronological_order):
         """Sets the chronological_order of this ShowResourceHistoryRequest.
 
+        指定返回数据的时间顺序，默认为倒序
 
         :param chronological_order: The chronological_order of this ShowResourceHistoryRequest.
         :type: str

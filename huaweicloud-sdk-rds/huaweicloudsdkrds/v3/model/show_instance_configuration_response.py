@@ -41,7 +41,7 @@ class ShowInstanceConfigurationResponse(SdkResponse):
     def __init__(self, datastore_version_name=None, datastore_name=None, created=None, updated=None, configuration_parameters=None):
         """ShowInstanceConfigurationResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowInstanceConfigurationResponse, self).__init__()
 
         self._datastore_version_name = None
         self._datastore_name = None

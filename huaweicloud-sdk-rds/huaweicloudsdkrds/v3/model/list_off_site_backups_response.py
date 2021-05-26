@@ -35,7 +35,7 @@ class ListOffSiteBackupsResponse(SdkResponse):
     def __init__(self, backups=None, total_count=None):
         """ListOffSiteBackupsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListOffSiteBackupsResponse, self).__init__()
 
         self._backups = None
         self._total_count = None

@@ -31,7 +31,7 @@ class SwitchSslResponse(SdkResponse):
     def __init__(self):
         """SwitchSslResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(SwitchSslResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

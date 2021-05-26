@@ -59,6 +59,7 @@ class ListFlavorsRequest:
     def x_language(self):
         """Gets the x_language of this ListFlavorsRequest.
 
+        语言
 
         :return: The x_language of this ListFlavorsRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class ListFlavorsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListFlavorsRequest.
 
+        语言
 
         :param x_language: The x_language of this ListFlavorsRequest.
         :type: str
@@ -79,6 +81,7 @@ class ListFlavorsRequest:
     def database_name(self):
         """Gets the database_name of this ListFlavorsRequest.
 
+        数据库引擎。支持的引擎如下，不区分大小写： MySQL PostgreSQL SQLServer
 
         :return: The database_name of this ListFlavorsRequest.
         :rtype: str
@@ -89,6 +92,7 @@ class ListFlavorsRequest:
     def database_name(self, database_name):
         """Sets the database_name of this ListFlavorsRequest.
 
+        数据库引擎。支持的引擎如下，不区分大小写： MySQL PostgreSQL SQLServer
 
         :param database_name: The database_name of this ListFlavorsRequest.
         :type: str
@@ -99,6 +103,7 @@ class ListFlavorsRequest:
     def version_name(self):
         """Gets the version_name of this ListFlavorsRequest.
 
+        数据库版本号，获取方法请参见5.1查询数据库引擎的版本。（可输入小版本号）
 
         :return: The version_name of this ListFlavorsRequest.
         :rtype: str
@@ -109,6 +114,7 @@ class ListFlavorsRequest:
     def version_name(self, version_name):
         """Sets the version_name of this ListFlavorsRequest.
 
+        数据库版本号，获取方法请参见5.1查询数据库引擎的版本。（可输入小版本号）
 
         :param version_name: The version_name of this ListFlavorsRequest.
         :type: str
@@ -119,6 +125,7 @@ class ListFlavorsRequest:
     def spec_code(self):
         """Gets the spec_code of this ListFlavorsRequest.
 
+        规格编码
 
         :return: The spec_code of this ListFlavorsRequest.
         :rtype: str
@@ -129,6 +136,7 @@ class ListFlavorsRequest:
     def spec_code(self, spec_code):
         """Sets the spec_code of this ListFlavorsRequest.
 
+        规格编码
 
         :param spec_code: The spec_code of this ListFlavorsRequest.
         :type: str

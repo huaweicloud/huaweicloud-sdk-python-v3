@@ -45,6 +45,7 @@ class ListProjectTagsRequest:
     def x_language(self):
         """Gets the x_language of this ListProjectTagsRequest.
 
+        语言
 
         :return: The x_language of this ListProjectTagsRequest.
         :rtype: str
@@ -55,6 +56,7 @@ class ListProjectTagsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListProjectTagsRequest.
 
+        语言
 
         :param x_language: The x_language of this ListProjectTagsRequest.
         :type: str

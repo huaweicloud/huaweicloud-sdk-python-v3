@@ -33,7 +33,7 @@ class StartInstanceSingleToHaActionResponse(SdkResponse):
     def __init__(self, job_id=None):
         """StartInstanceSingleToHaActionResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(StartInstanceSingleToHaActionResponse, self).__init__()
 
         self._job_id = None
         self.discriminator = None

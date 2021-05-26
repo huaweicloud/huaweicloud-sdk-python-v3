@@ -33,7 +33,7 @@ class ListFlavorsResponse(SdkResponse):
     def __init__(self, flavors=None):
         """ListFlavorsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListFlavorsResponse, self).__init__()
 
         self._flavors = None
         self.discriminator = None

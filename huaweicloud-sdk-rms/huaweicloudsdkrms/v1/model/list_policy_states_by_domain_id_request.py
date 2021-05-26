@@ -65,6 +65,7 @@ class ListPolicyStatesByDomainIdRequest:
     def compliance_state(self):
         """Gets the compliance_state of this ListPolicyStatesByDomainIdRequest.
 
+        合规状态
 
         :return: The compliance_state of this ListPolicyStatesByDomainIdRequest.
         :rtype: str
@@ -75,6 +76,7 @@ class ListPolicyStatesByDomainIdRequest:
     def compliance_state(self, compliance_state):
         """Sets the compliance_state of this ListPolicyStatesByDomainIdRequest.
 
+        合规状态
 
         :param compliance_state: The compliance_state of this ListPolicyStatesByDomainIdRequest.
         :type: str
@@ -85,6 +87,7 @@ class ListPolicyStatesByDomainIdRequest:
     def resource_id(self):
         """Gets the resource_id of this ListPolicyStatesByDomainIdRequest.
 
+        资源ID
 
         :return: The resource_id of this ListPolicyStatesByDomainIdRequest.
         :rtype: str
@@ -95,6 +98,7 @@ class ListPolicyStatesByDomainIdRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ListPolicyStatesByDomainIdRequest.
 
+        资源ID
 
         :param resource_id: The resource_id of this ListPolicyStatesByDomainIdRequest.
         :type: str
@@ -105,6 +109,7 @@ class ListPolicyStatesByDomainIdRequest:
     def resource_name(self):
         """Gets the resource_name of this ListPolicyStatesByDomainIdRequest.
 
+        资源名称
 
         :return: The resource_name of this ListPolicyStatesByDomainIdRequest.
         :rtype: str
@@ -115,6 +120,7 @@ class ListPolicyStatesByDomainIdRequest:
     def resource_name(self, resource_name):
         """Sets the resource_name of this ListPolicyStatesByDomainIdRequest.
 
+        资源名称
 
         :param resource_name: The resource_name of this ListPolicyStatesByDomainIdRequest.
         :type: str
@@ -125,6 +131,7 @@ class ListPolicyStatesByDomainIdRequest:
     def limit(self):
         """Gets the limit of this ListPolicyStatesByDomainIdRequest.
 
+        最大的返回数量
 
         :return: The limit of this ListPolicyStatesByDomainIdRequest.
         :rtype: int
@@ -135,6 +142,7 @@ class ListPolicyStatesByDomainIdRequest:
     def limit(self, limit):
         """Sets the limit of this ListPolicyStatesByDomainIdRequest.
 
+        最大的返回数量
 
         :param limit: The limit of this ListPolicyStatesByDomainIdRequest.
         :type: int
@@ -145,6 +153,7 @@ class ListPolicyStatesByDomainIdRequest:
     def marker(self):
         """Gets the marker of this ListPolicyStatesByDomainIdRequest.
 
+        分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :return: The marker of this ListPolicyStatesByDomainIdRequest.
         :rtype: str
@@ -155,6 +164,7 @@ class ListPolicyStatesByDomainIdRequest:
     def marker(self, marker):
         """Sets the marker of this ListPolicyStatesByDomainIdRequest.
 
+        分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :param marker: The marker of this ListPolicyStatesByDomainIdRequest.
         :type: str

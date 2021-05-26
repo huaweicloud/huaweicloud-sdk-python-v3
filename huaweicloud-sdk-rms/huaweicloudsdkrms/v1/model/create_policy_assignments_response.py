@@ -49,7 +49,7 @@ class CreatePolicyAssignmentsResponse(SdkResponse):
     def __init__(self, id=None, name=None, description=None, policy_filter=None, state=None, created=None, updated=None, policy_definition_id=None, parameters=None):
         """CreatePolicyAssignmentsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreatePolicyAssignmentsResponse, self).__init__()
 
         self._id = None
         self._name = None

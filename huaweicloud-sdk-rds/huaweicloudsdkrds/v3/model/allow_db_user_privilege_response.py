@@ -33,7 +33,7 @@ class AllowDbUserPrivilegeResponse(SdkResponse):
     def __init__(self, resp=None):
         """AllowDbUserPrivilegeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AllowDbUserPrivilegeResponse, self).__init__()
 
         self._resp = None
         self.discriminator = None

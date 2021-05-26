@@ -58,6 +58,7 @@ class ShowResourceRelationsRequest:
     def resource_id(self):
         """Gets the resource_id of this ShowResourceRelationsRequest.
 
+        资源ID
 
         :return: The resource_id of this ShowResourceRelationsRequest.
         :rtype: str
@@ -68,6 +69,7 @@ class ShowResourceRelationsRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ShowResourceRelationsRequest.
 
+        资源ID
 
         :param resource_id: The resource_id of this ShowResourceRelationsRequest.
         :type: str
@@ -78,6 +80,7 @@ class ShowResourceRelationsRequest:
     def direction(self):
         """Gets the direction of this ShowResourceRelationsRequest.
 
+        资源关系的指向
 
         :return: The direction of this ShowResourceRelationsRequest.
         :rtype: str
@@ -88,6 +91,7 @@ class ShowResourceRelationsRequest:
     def direction(self, direction):
         """Sets the direction of this ShowResourceRelationsRequest.
 
+        资源关系的指向
 
         :param direction: The direction of this ShowResourceRelationsRequest.
         :type: str
@@ -98,6 +102,7 @@ class ShowResourceRelationsRequest:
     def limit(self):
         """Gets the limit of this ShowResourceRelationsRequest.
 
+        最大的返回数量
 
         :return: The limit of this ShowResourceRelationsRequest.
         :rtype: int
@@ -108,6 +113,7 @@ class ShowResourceRelationsRequest:
     def limit(self, limit):
         """Sets the limit of this ShowResourceRelationsRequest.
 
+        最大的返回数量
 
         :param limit: The limit of this ShowResourceRelationsRequest.
         :type: int
@@ -118,6 +124,7 @@ class ShowResourceRelationsRequest:
     def marker(self):
         """Gets the marker of this ShowResourceRelationsRequest.
 
+        分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :return: The marker of this ShowResourceRelationsRequest.
         :rtype: str
@@ -128,6 +135,7 @@ class ShowResourceRelationsRequest:
     def marker(self, marker):
         """Sets the marker of this ShowResourceRelationsRequest.
 
+        分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :param marker: The marker of this ShowResourceRelationsRequest.
         :type: str

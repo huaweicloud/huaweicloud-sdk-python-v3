@@ -58,6 +58,7 @@ class ListStorageTypesRequest:
     def x_language(self):
         """Gets the x_language of this ListStorageTypesRequest.
 
+        语言
 
         :return: The x_language of this ListStorageTypesRequest.
         :rtype: str
@@ -68,6 +69,7 @@ class ListStorageTypesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListStorageTypesRequest.
 
+        语言
 
         :param x_language: The x_language of this ListStorageTypesRequest.
         :type: str
@@ -78,6 +80,7 @@ class ListStorageTypesRequest:
     def database_name(self):
         """Gets the database_name of this ListStorageTypesRequest.
 
+        数据库引擎。支持的引擎如下，不区分大小写： MySQL PostgreSQL SQLServer
 
         :return: The database_name of this ListStorageTypesRequest.
         :rtype: str
@@ -88,6 +91,7 @@ class ListStorageTypesRequest:
     def database_name(self, database_name):
         """Sets the database_name of this ListStorageTypesRequest.
 
+        数据库引擎。支持的引擎如下，不区分大小写： MySQL PostgreSQL SQLServer
 
         :param database_name: The database_name of this ListStorageTypesRequest.
         :type: str
@@ -98,6 +102,7 @@ class ListStorageTypesRequest:
     def version_name(self):
         """Gets the version_name of this ListStorageTypesRequest.
 
+        数据库版本号。
 
         :return: The version_name of this ListStorageTypesRequest.
         :rtype: str
@@ -108,6 +113,7 @@ class ListStorageTypesRequest:
     def version_name(self, version_name):
         """Sets the version_name of this ListStorageTypesRequest.
 
+        数据库版本号。
 
         :param version_name: The version_name of this ListStorageTypesRequest.
         :type: str
@@ -118,6 +124,7 @@ class ListStorageTypesRequest:
     def ha_mode(self):
         """Gets the ha_mode of this ListStorageTypesRequest.
 
+        主备模式： single：单机模式。 ha：主备模式。 replica：只读模式。
 
         :return: The ha_mode of this ListStorageTypesRequest.
         :rtype: str
@@ -128,6 +135,7 @@ class ListStorageTypesRequest:
     def ha_mode(self, ha_mode):
         """Sets the ha_mode of this ListStorageTypesRequest.
 
+        主备模式： single：单机模式。 ha：主备模式。 replica：只读模式。
 
         :param ha_mode: The ha_mode of this ListStorageTypesRequest.
         :type: str

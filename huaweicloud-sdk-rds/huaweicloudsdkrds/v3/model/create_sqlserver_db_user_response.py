@@ -33,7 +33,7 @@ class CreateSqlserverDbUserResponse(SdkResponse):
     def __init__(self, resp=None):
         """CreateSqlserverDbUserResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateSqlserverDbUserResponse, self).__init__()
 
         self._resp = None
         self.discriminator = None

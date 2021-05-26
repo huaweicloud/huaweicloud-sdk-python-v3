@@ -59,6 +59,7 @@ class ListPolicyStatesByResourceIdRequest:
     def resource_id(self):
         """Gets the resource_id of this ListPolicyStatesByResourceIdRequest.
 
+        资源ID
 
         :return: The resource_id of this ListPolicyStatesByResourceIdRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class ListPolicyStatesByResourceIdRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ListPolicyStatesByResourceIdRequest.
 
+        资源ID
 
         :param resource_id: The resource_id of this ListPolicyStatesByResourceIdRequest.
         :type: str
@@ -79,6 +81,7 @@ class ListPolicyStatesByResourceIdRequest:
     def compliance_state(self):
         """Gets the compliance_state of this ListPolicyStatesByResourceIdRequest.
 
+        合规状态
 
         :return: The compliance_state of this ListPolicyStatesByResourceIdRequest.
         :rtype: str
@@ -89,6 +92,7 @@ class ListPolicyStatesByResourceIdRequest:
     def compliance_state(self, compliance_state):
         """Sets the compliance_state of this ListPolicyStatesByResourceIdRequest.
 
+        合规状态
 
         :param compliance_state: The compliance_state of this ListPolicyStatesByResourceIdRequest.
         :type: str
@@ -99,6 +103,7 @@ class ListPolicyStatesByResourceIdRequest:
     def limit(self):
         """Gets the limit of this ListPolicyStatesByResourceIdRequest.
 
+        最大的返回数量
 
         :return: The limit of this ListPolicyStatesByResourceIdRequest.
         :rtype: int
@@ -109,6 +114,7 @@ class ListPolicyStatesByResourceIdRequest:
     def limit(self, limit):
         """Sets the limit of this ListPolicyStatesByResourceIdRequest.
 
+        最大的返回数量
 
         :param limit: The limit of this ListPolicyStatesByResourceIdRequest.
         :type: int
@@ -119,6 +125,7 @@ class ListPolicyStatesByResourceIdRequest:
     def marker(self):
         """Gets the marker of this ListPolicyStatesByResourceIdRequest.
 
+        分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :return: The marker of this ListPolicyStatesByResourceIdRequest.
         :rtype: str
@@ -129,6 +136,7 @@ class ListPolicyStatesByResourceIdRequest:
     def marker(self, marker):
         """Sets the marker of this ListPolicyStatesByResourceIdRequest.
 
+        分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :param marker: The marker of this ListPolicyStatesByResourceIdRequest.
         :type: str

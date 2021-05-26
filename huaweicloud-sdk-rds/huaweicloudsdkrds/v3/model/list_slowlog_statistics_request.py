@@ -69,6 +69,7 @@ class ListSlowlogStatisticsRequest:
     def x_language(self):
         """Gets the x_language of this ListSlowlogStatisticsRequest.
 
+        语言
 
         :return: The x_language of this ListSlowlogStatisticsRequest.
         :rtype: str
@@ -79,6 +80,7 @@ class ListSlowlogStatisticsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListSlowlogStatisticsRequest.
 
+        语言
 
         :param x_language: The x_language of this ListSlowlogStatisticsRequest.
         :type: str
@@ -89,6 +91,7 @@ class ListSlowlogStatisticsRequest:
     def instance_id(self):
         """Gets the instance_id of this ListSlowlogStatisticsRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListSlowlogStatisticsRequest.
         :rtype: str
@@ -99,6 +102,7 @@ class ListSlowlogStatisticsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListSlowlogStatisticsRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListSlowlogStatisticsRequest.
         :type: str
@@ -109,6 +113,7 @@ class ListSlowlogStatisticsRequest:
     def cur_page(self):
         """Gets the cur_page of this ListSlowlogStatisticsRequest.
 
+        当前页号
 
         :return: The cur_page of this ListSlowlogStatisticsRequest.
         :rtype: int
@@ -119,6 +124,7 @@ class ListSlowlogStatisticsRequest:
     def cur_page(self, cur_page):
         """Sets the cur_page of this ListSlowlogStatisticsRequest.
 
+        当前页号
 
         :param cur_page: The cur_page of this ListSlowlogStatisticsRequest.
         :type: int
@@ -129,6 +135,7 @@ class ListSlowlogStatisticsRequest:
     def per_page(self):
         """Gets the per_page of this ListSlowlogStatisticsRequest.
 
+        每页多少条记录，取值范围0~100
 
         :return: The per_page of this ListSlowlogStatisticsRequest.
         :rtype: int
@@ -139,6 +146,7 @@ class ListSlowlogStatisticsRequest:
     def per_page(self, per_page):
         """Sets the per_page of this ListSlowlogStatisticsRequest.
 
+        每页多少条记录，取值范围0~100
 
         :param per_page: The per_page of this ListSlowlogStatisticsRequest.
         :type: int
@@ -149,6 +157,7 @@ class ListSlowlogStatisticsRequest:
     def start_date(self):
         """Gets the start_date of this ListSlowlogStatisticsRequest.
 
+        开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :return: The start_date of this ListSlowlogStatisticsRequest.
         :rtype: str
@@ -159,6 +168,7 @@ class ListSlowlogStatisticsRequest:
     def start_date(self, start_date):
         """Sets the start_date of this ListSlowlogStatisticsRequest.
 
+        开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param start_date: The start_date of this ListSlowlogStatisticsRequest.
         :type: str
@@ -169,6 +179,7 @@ class ListSlowlogStatisticsRequest:
     def end_date(self):
         """Gets the end_date of this ListSlowlogStatisticsRequest.
 
+        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :return: The end_date of this ListSlowlogStatisticsRequest.
         :rtype: str
@@ -179,6 +190,7 @@ class ListSlowlogStatisticsRequest:
     def end_date(self, end_date):
         """Sets the end_date of this ListSlowlogStatisticsRequest.
 
+        结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
         :param end_date: The end_date of this ListSlowlogStatisticsRequest.
         :type: str
@@ -189,6 +201,7 @@ class ListSlowlogStatisticsRequest:
     def type(self):
         """Gets the type of this ListSlowlogStatisticsRequest.
 
+        语句类型，ALL表示查询所有语句类型，也可指定日志类型 - INSERT - UPDATE - SELECT - DELETE - CREATE - ALL
 
         :return: The type of this ListSlowlogStatisticsRequest.
         :rtype: str
@@ -199,6 +212,7 @@ class ListSlowlogStatisticsRequest:
     def type(self, type):
         """Sets the type of this ListSlowlogStatisticsRequest.
 
+        语句类型，ALL表示查询所有语句类型，也可指定日志类型 - INSERT - UPDATE - SELECT - DELETE - CREATE - ALL
 
         :param type: The type of this ListSlowlogStatisticsRequest.
         :type: str
