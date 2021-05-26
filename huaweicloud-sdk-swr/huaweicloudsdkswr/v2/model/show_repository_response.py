@@ -63,7 +63,7 @@ class ShowRepositoryResponse(SdkResponse):
     def __init__(self, id=None, ns_id=None, name=None, category=None, description=None, creator_id=None, creator_name=None, size=None, is_public=None, num_images=None, num_download=None, url=None, path=None, internal_path=None, created=None, updated=None):
         """ShowRepositoryResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowRepositoryResponse, self).__init__()
 
         self._id = None
         self._ns_id = None

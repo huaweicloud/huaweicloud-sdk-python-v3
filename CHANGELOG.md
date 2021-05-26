@@ -1,258 +1,425 @@
+# 3.0.45 2021-05-25
+
+### HuaweiCloud SDK AS
+
+- _Features_
+    - Support more interfaces:
+        - `ListApiVersions`
+        - `ShowApiVersion`
+        - `BatchProtectScalingInstances`
+        - `BatchRemoveScalingInstances`
+        - `CreateScalingTagInfo`
+        - `BatchResumeScalingPolicies`
+        - `BatchPauseScalingPolicies`
+        - `PauseScalingGroup`
+        - `BatchSetScalingInstancesStandby`
+        - `BatchUnsetScalingInstancesStandby`
+        - `ResumeScalingPolicy`
+        - `PauseScalingPolicy`
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the operation name of the following interfaces:
+        - from `ExecuteScalingPolicies` to `BatchDeleteScalingPolicies`
+        - from `EnableOrDisableScalingGroup` to `ResumeScalingGroup`
+        - from `UpdateScalingGroupInstance` to `BatchAddScalingInstances`
+        - from `CompleteLifecycleAction` to `AttachCallbackInstanceLifeCycleHook`
+    - Remove the interface: `DeleteScalingTags`
+    - Add the parameter `enterprise_project_id` to the interface `ListScalingGroups`.
+    - Add the parameter `log_id` to the interface `ListScalingActivityV2Logs`.
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+    - Support interface `ListCustomerBillsMonthlyBreakDown` and `ListOrderDiscounts`.
+- _Bug Fix_
+    - None
+- _Change_
+    - Add query parameter _bill_date_begin_ and _bill_date_end_ to interface `ListSubCustomerResFeeRecords`.
+
+### HuaweiCloud SDK CloudPipeline
+
+- _Features_
+    - Support interface: `StopPipelineNew`.
+- _Bug Fix_
+    - None
+- _Change_
+    - Remove interfaces `StartPipeline`, `StopPipeline`.
+
+### HuaweiCloud SDK DMS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the name of interface from `ShowProjectTags` to `ShowQueueProjectTags`.
+
+### HuaweiCloud SDK EPS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Change request parameter `offset` of interface `ListEnterpriseProject` from required to optional.
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+    - Support more interfaces:
+        - `ListFunctionAsyncInvokeConfig`
+        - `ShowFunctionAsyncInvokeConfig`
+        - `DeleteFunctionAsyncInvokeConfig`
+        - `UpdateFunctionAsyncInvokeConfig`
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the name of request parameter of interfaces `DeleteVersionAlias`,`UpdateVersionAlias`
+      ,`ShowVersionAlias`: `name` -> `alias_name`
+    - Modify the name of request parameter of interfaces `DeleteFunctionTrigger`,`UpdateTrigger`
+      ,`ShowFunctionTrigger`: `triggerId` -> `trigger_id`
+
+### HuaweiCloud SDK IAM
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the parameter `access_mode` to interface `CreateUsers`.
+    - Change the parameter `authentication_code` of interface `DeleteBindingDevice` from required to optional.
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+    - Support more interfaces:
+        - `CreateInstanceUser`
+        - `BatchDeleteInstanceUsers`
+        - `ShowInstanceUsers`
+        - `ShowTopicAccessPolicy`
+        - `UpdateTopicAccessPolicy`
+        - `ShowKafkaTopicPartitionDiskusage`
+        - `ShowInstanceMessages`
+        - `ResetUserPassword`
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the name of the interface:
+        - from `ShowInstanceTags` to `ShowKafkaTags`
+        - from `ShowProjectTags` to `ShowKafkaProjectTags`
+        - from `BatchCreateOrDeleteInstanceTag` to `BatchCreateOrDeleteKafkaTag`
+    - Modify the request body name of the interface:
+        - from `BatchCreateOrDeleteInstanceTagRequestBody` to `BatchCreateOrDeleteKafkaTagRequestBody`
+    - Modify the data type of parameter `sink_max_tasks` in the request body of interface `UpdateSinkTaskQuota` from
+      String to Integer.
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+    - Support more interfaces:
+        - `ShowRecordingFileDownloadUrls`
+        - `SearchQosParticipantDetail`
+        - `SearchMemberVmrByCloudLink`
+        - `SearchQosHistoryMeetings`
+        - `UpdateStartedConfConfig`
+        - `SearchQosParticipants`
+        - `InviteUser`
+        - `CreateWebSocketToken`
+        - `CreateAppIdToken`
+        - `SearchQosOnlineMeetings`
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the data type of parameter `X-Login-Type` of interface `CreateConfToken` from Integer to String.
+    - Delete the unused parameter `forceEditFlag` of interface `UpdateResource` and `DeleteResource`.
+    - Delete the unused parameter `forceDelete` of interface `DeleteCorp`.
+
+### HuaweiCloud SDK OMS
+
+- _Features_
+    - Support `Object Storage Migration Service`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK RabbitMQ
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the name of the following interfaces:
+        - from `BatchCreateOrDeleteInstanceTag` to `BatchCreateOrDeleteRabbitMqTag`;
+        - from `ShowProjectTags` to `ShowRabbitMqProjectTags`;
+        - from `ShowInstanceTags` to `ShowRabbitMqTags`.
+    - Modify the request body name of interface `BatchCreateOrDeleteInstanceTag`
+      from `BatchCreateOrDeleteInstanceTagRequestBody` to
+      `BatchCreateOrDeleteRabbitMqTagRequestBody`.
+
 # 3.0.43-rc 2021-05-14
 
 ### HuaweiCloud SDK ECS
 
 - _Features_
-  - None
+    - None
 - _Bug Fix_
-  - Solve the issue of abnormal parsing result when using interface `NovaShowKeypair` to obtain the secret key.
+    - Solve the issue of abnormal parsing result when using interface `NovaShowKeypair` to obtain the secret key.
 - _Change_
-  - None
+    - None
 
 ### HuaweiCloud SDK RDS
 
 - _Features_
-  - None
+    - None
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - Add new result values `CLOUDSSD` and `LOCALSSD` to response field `type` of interface `ListInstances`.
-  - Add an optional request parameter `complete_version` to interface `ListBackups`.
-  - Change request parameter `type` of interface `ListSlowlogStatistics` from optional to required.
+    - Add new result values `CLOUDSSD` and `LOCALSSD` to response field `type` of interface `ListInstances`.
+    - Add an optional request parameter `complete_version` to interface `ListBackups`.
+    - Change request parameter `type` of interface `ListSlowlogStatistics` from optional to required.
 
 # 3.0.42-rc 2021-05-10
 
 ### HuaweiCloud SDK BMS
 
 - _Features_
-  - Support interface `BatchCreateBaremetalServerTags`.
+    - Support interface `BatchCreateBaremetalServerTags`.
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - None
+    - None
 
 ### HuaweiCloud SDK DDS
 
 - _Features_
-  - Support interfaces `MigrateAz`, `ListAz2Migrate`.
+    - Support interfaces `MigrateAz`, `ListAz2Migrate`.
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - None
+    - None
 
 ### HuaweiCloud SDK EPS
 
 - _Features_
-  - None
+    - None
 - _Bug Fix_
-  - [Issue 17](https://github.com/huaweicloud/huaweicloud-sdk-go-v3/issues/17): Fix the issue that `EpDetailType` enum is defined incorrectly.
+    - [Issue 17](https://github.com/huaweicloud/huaweicloud-sdk-go-v3/issues/17): Fix the issue that `EpDetailType` enum
+      is defined incorrectly.
 - _Change_
-  - None
+    - None
 
 ### HuaweiCloud SDK IEC
 
 - _Features_
-  - Support `Intelligent EdgeCloud` service.
+    - Support `Intelligent EdgeCloud` service.
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - None
+    - None
 
 ### HuaweiCloud SDK RDS
 
 - _Features_
-  - None
+    - None
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - Modify the name of response body of interface `ListOffSiteInstances`: `OffSiteInstanceListResponse` -> `OffSiteInstanceListResponseBody`
-  - Modify the name of response field of interface `ListOffSiteInstances`: `offsite_backup_instances` -> `offsite_backup_instance`
+    - Modify the name of response body of interface `ListOffSiteInstances`: `OffSiteInstanceListResponse`
+      -> `OffSiteInstanceListResponseBody`
+    - Modify the name of response field of interface `ListOffSiteInstances`: `offsite_backup_instances`
+      -> `offsite_backup_instance`
 
 # 3.0.41-rc 2021-04-30
 
 ### HuaweiCloud SDK BCS
 
 - _Features_
-  - Support interface `ListOpRecord`
+    - Support interface `ListOpRecord`
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - None
+    - None
 
 ### HuaweiCloud SDK DDS
 
 - _Features_
-  - Support interfaces:
-    - `ShowShardingBalancer`
-    - `SetBalancerSwitch`
-    - `SetBalancerWindow`
+    - Support interfaces:
+        - `ShowShardingBalancer`
+        - `SetBalancerSwitch`
+        - `SetBalancerWindow`
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - None
+    - None
 
 ### HuaweiCloud SDK HSS
 
 - _Features_
-  - Support interface `ListHosts`
+    - Support interface `ListHosts`
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - None
+    - None
 
 ### HuaweiCloud SDK IAM
 
 - _Features_
-  - None
+    - None
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - Add optional values to request parameter `type` of the interface `ShowDomainQuota`:
-    - `assigment_group_mp`
-    - `assigment_agency_mp`
-    - `assigment_group_ep`
-    - `assigment_user_ep`
+    - Add optional values to request parameter `type` of the interface `ShowDomainQuota`:
+        - `assigment_group_mp`
+        - `assigment_agency_mp`
+        - `assigment_group_ep`
+        - `assigment_user_ep`
 
 ### HuaweiCloud SDK IoTDA
 
 - _Features_
-  - None
+    - None
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - Remove interfaces:
-    - `ListSubscriptions`
-    - `CreateSubscription`
-    - `UpdateSubscription`
-    - `ShowSubscription`
-    - `DeleteSubscription`
+    - Remove interfaces:
+        - `ListSubscriptions`
+        - `CreateSubscription`
+        - `UpdateSubscription`
+        - `ShowSubscription`
+        - `DeleteSubscription`
 
 ### HuaweiCloud SDK MPC
 
 - _Features_
-  - None
+    - None
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - Add request parameters `language`、`sky_switch` to the interface `CreateMpeCallBack`.
-  - Update optional values of request parameter `subtitle_type` of interface `CreateTranscodingTask`.
+    - Add request parameters `language`、`sky_switch` to the interface `CreateMpeCallBack`.
+    - Update optional values of request parameter `subtitle_type` of interface `CreateTranscodingTask`.
 
 ### HuaweiCloud SDK ProjectMan
 
 - _Features_
-  - None
+    - None
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - Add a field `project_code` to response body of the interface `ShowProjectInfoV4`.
+    - Add a field `project_code` to response body of the interface `ShowProjectInfoV4`.
 
 # 3.0.40-rc 2021-04-15
 
 ### HuaweiCloud SDK RDS
 
 - _Features_
-  - Support more interfaces about database management operations.
-    - `CreateSqlserverDatabase`
-    - `DeleteSqlserverDatabase`
-    - `ListSqlserverDatabases`
-  - Support more interfaces about user management operations.
-    - `CreateSqlserverDbUser`
-    - `ListSqlserverDbUsers`
-    - `ListAuthorizedSqlserverDbUsers`
-    - `DeleteSqlserverDbUser`
-    - `AllowSqlserverDbUserPrivilege`
-    - `RevokeSqlserverDbUserPrivilege`
+    - Support more interfaces about database management operations.
+        - `CreateSqlserverDatabase`
+        - `DeleteSqlserverDatabase`
+        - `ListSqlserverDatabases`
+    - Support more interfaces about user management operations.
+        - `CreateSqlserverDbUser`
+        - `ListSqlserverDbUsers`
+        - `ListAuthorizedSqlserverDbUsers`
+        - `DeleteSqlserverDbUser`
+        - `AllowSqlserverDbUserPrivilege`
+        - `RevokeSqlserverDbUserPrivilege`
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - None
+    - None
 
 ### HuaweiCloud SDK DDS
 
 - _Features_
-  - Support more interfaces `DeleteDatabaseUser`,`DeleteDatabaseRole`,`ShowConnectionStatistics`.
+    - Support more interfaces `DeleteDatabaseUser`,`DeleteDatabaseRole`,`ShowConnectionStatistics`.
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - None
+    - None
 
 ### HuaweiCloud SDK ProjectMan
 
 - _Features_
-  - None
+    - None
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - Add fields `closed_time` ,`id` ,`created_time` to reponse body of interfaces `ListIssuesV4`, `ListChildIssuesV4`.
+    - Add fields `closed_time` ,`id` ,`created_time` to reponse body of interfaces `ListIssuesV4`, `ListChildIssuesV4`.
 
 ### HuaweiCloud SDK AOM
 
 - _Features_
-  - Support `Application Operations Management` service.
+    - Support `Application Operations Management` service.
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - None
+    - None
 
 ### HuaweiCloud SDK OCR
 
 - _Features_
-  - None
+    - None
 - _Bug Fix_
-  - Standardize the naming of interface parameters.
+    - Standardize the naming of interface parameters.
 - _Change_
-  - None
+    - None
 
 ### HuaweiCloud SDK VPC
 
 - _Features_
-  - None
+    - None
 - _Bug Fix_
-  - Fix the bug, open the tags of the VPC and subnet.
+    - Fix the bug, open the tags of the VPC and subnet.
 - _Change_
-  - None
+    - None
 
 # 3.0.39-rc 2021-03-30
 
 ### HuaweiCloud SDK Kafka
 
 - _Features_
-  - None
+    - None
 - _Bug Fix_
-  - Fix the issue that the interface for querying messages does not contain the timestamp field.
+    - Fix the issue that the interface for querying messages does not contain the timestamp field.
 - _Change_
-  - None
+    - None
 
 ### HuaweiCloud SDK Moderation
 
 - _Features_
-  - None
+    - None
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - Add request parameters `moderation_rule` and `ad_glossaries` to interface `RunImageModeration`.
-  - Change the parameter `category_suggestion` to `category_suggestions` of the interface  `RunTextModeration`.
-  - Change the type of the response parameter `confidence` to `object` of the interface `RunImageModeration `.
+    - Add request parameters `moderation_rule` and `ad_glossaries` to interface `RunImageModeration`.
+    - Change the parameter `category_suggestion` to `category_suggestions` of the interface  `RunTextModeration`.
+    - Change the type of the response parameter `confidence` to `object` of the interface `RunImageModeration `.
 
 ### HuaweiCloud SDK ProjectMan
 
 - _Features_
-  - None
+    - None
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - Add the attribute `name` to the response body `IssueResponseV4` of the interfaces `ShowIssueV4` and `UpdateIssueV4`.
-  - Change the attribute `work_time` to `work_date` in `ShowProjectWorkHoursResponseBody` in the response body of the interfaces `ShowProjectWorkHours` and `ListProjectWorkHours`.
+    - Add the attribute `name` to the response body `IssueResponseV4` of the interfaces `ShowIssueV4`
+      and `UpdateIssueV4`.
+    - Change the attribute `work_time` to `work_date` in `ShowProjectWorkHoursResponseBody` in the response body of the
+      interfaces `ShowProjectWorkHours` and `ListProjectWorkHours`.
 
 ### HuaweiCloud SDK SMN
 
 - _Features_
-  - None
+    - None
 - _Bug Fix_
-  - None
+    - None
 - _Change_
-  - Change the request parameter `protocol`  of the interface `PublishMessage`  from mandatory to optional.
-  - Change the attribute `subject`  of the class `PublishMessageRequestBody` in the request body of the interface `PublishMessage`  from mandatory to optional.
+    - Change the request parameter `protocol`  of the interface `PublishMessage`  from mandatory to optional.
+    - Change the attribute `subject`  of the class `PublishMessageRequestBody` in the request body of the
+      interface `PublishMessage`  from mandatory to optional.
 
 # 3.0.38-rc 2021-03-26
 

@@ -31,7 +31,7 @@ class DeleteImportedKeyMaterialResponse(SdkResponse):
     def __init__(self):
         """DeleteImportedKeyMaterialResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteImportedKeyMaterialResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

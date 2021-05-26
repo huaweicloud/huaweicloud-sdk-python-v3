@@ -44,6 +44,7 @@ class DeleteRemuxTaskRequest:
     def task_id(self):
         """Gets the task_id of this DeleteRemuxTaskRequest.
 
+        任务ID 
 
         :return: The task_id of this DeleteRemuxTaskRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteRemuxTaskRequest:
     def task_id(self, task_id):
         """Sets the task_id of this DeleteRemuxTaskRequest.
 
+        任务ID 
 
         :param task_id: The task_id of this DeleteRemuxTaskRequest.
         :type: str

@@ -68,6 +68,7 @@ class ListInstancesRequest:
     def application_id(self):
         """Gets the application_id of this ListInstancesRequest.
 
+        应用ID。
 
         :return: The application_id of this ListInstancesRequest.
         :rtype: str
@@ -78,6 +79,7 @@ class ListInstancesRequest:
     def application_id(self, application_id):
         """Sets the application_id of this ListInstancesRequest.
 
+        应用ID。
 
         :param application_id: The application_id of this ListInstancesRequest.
         :type: str
@@ -88,6 +90,7 @@ class ListInstancesRequest:
     def component_id(self):
         """Gets the component_id of this ListInstancesRequest.
 
+        组件ID。
 
         :return: The component_id of this ListInstancesRequest.
         :rtype: str
@@ -98,6 +101,7 @@ class ListInstancesRequest:
     def component_id(self, component_id):
         """Sets the component_id of this ListInstancesRequest.
 
+        组件ID。
 
         :param component_id: The component_id of this ListInstancesRequest.
         :type: str
@@ -108,6 +112,7 @@ class ListInstancesRequest:
     def limit(self):
         """Gets the limit of this ListInstancesRequest.
 
+        指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
         :return: The limit of this ListInstancesRequest.
         :rtype: int
@@ -118,6 +123,7 @@ class ListInstancesRequest:
     def limit(self, limit):
         """Sets the limit of this ListInstancesRequest.
 
+        指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
         :param limit: The limit of this ListInstancesRequest.
         :type: int
@@ -128,6 +134,7 @@ class ListInstancesRequest:
     def offset(self):
         """Gets the offset of this ListInstancesRequest.
 
+        指定查询偏移量，默认偏移量为0.
 
         :return: The offset of this ListInstancesRequest.
         :rtype: int
@@ -138,6 +145,7 @@ class ListInstancesRequest:
     def offset(self, offset):
         """Sets the offset of this ListInstancesRequest.
 
+        指定查询偏移量，默认偏移量为0.
 
         :param offset: The offset of this ListInstancesRequest.
         :type: int
@@ -148,6 +156,7 @@ class ListInstancesRequest:
     def order_by(self):
         """Gets the order_by of this ListInstancesRequest.
 
+        排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
         :return: The order_by of this ListInstancesRequest.
         :rtype: str
@@ -158,6 +167,7 @@ class ListInstancesRequest:
     def order_by(self, order_by):
         """Sets the order_by of this ListInstancesRequest.
 
+        排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
         :param order_by: The order_by of this ListInstancesRequest.
         :type: str
@@ -168,6 +178,7 @@ class ListInstancesRequest:
     def order(self):
         """Gets the order of this ListInstancesRequest.
 
+        desc/asc，默认desc。
 
         :return: The order of this ListInstancesRequest.
         :rtype: str
@@ -178,6 +189,7 @@ class ListInstancesRequest:
     def order(self, order):
         """Sets the order of this ListInstancesRequest.
 
+        desc/asc，默认desc。
 
         :param order: The order of this ListInstancesRequest.
         :type: str

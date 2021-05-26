@@ -59,6 +59,7 @@ class ShowTranscodingsTemplateRequest:
     def domain(self):
         """Gets the domain of this ShowTranscodingsTemplateRequest.
 
+        播放域名
 
         :return: The domain of this ShowTranscodingsTemplateRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class ShowTranscodingsTemplateRequest:
     def domain(self, domain):
         """Sets the domain of this ShowTranscodingsTemplateRequest.
 
+        播放域名
 
         :param domain: The domain of this ShowTranscodingsTemplateRequest.
         :type: str
@@ -79,6 +81,7 @@ class ShowTranscodingsTemplateRequest:
     def app_name(self):
         """Gets the app_name of this ShowTranscodingsTemplateRequest.
 
+        应用名称
 
         :return: The app_name of this ShowTranscodingsTemplateRequest.
         :rtype: str
@@ -89,6 +92,7 @@ class ShowTranscodingsTemplateRequest:
     def app_name(self, app_name):
         """Sets the app_name of this ShowTranscodingsTemplateRequest.
 
+        应用名称
 
         :param app_name: The app_name of this ShowTranscodingsTemplateRequest.
         :type: str
@@ -99,6 +103,7 @@ class ShowTranscodingsTemplateRequest:
     def page(self):
         """Gets the page of this ShowTranscodingsTemplateRequest.
 
+        分页编号，默认为0。
 
         :return: The page of this ShowTranscodingsTemplateRequest.
         :rtype: int
@@ -109,6 +114,7 @@ class ShowTranscodingsTemplateRequest:
     def page(self, page):
         """Sets the page of this ShowTranscodingsTemplateRequest.
 
+        分页编号，默认为0。
 
         :param page: The page of this ShowTranscodingsTemplateRequest.
         :type: int
@@ -119,6 +125,7 @@ class ShowTranscodingsTemplateRequest:
     def size(self):
         """Gets the size of this ShowTranscodingsTemplateRequest.
 
+        每页记录数。  取值范围：1-100。  默认为10。 
 
         :return: The size of this ShowTranscodingsTemplateRequest.
         :rtype: int
@@ -129,6 +136,7 @@ class ShowTranscodingsTemplateRequest:
     def size(self, size):
         """Sets the size of this ShowTranscodingsTemplateRequest.
 
+        每页记录数。  取值范围：1-100。  默认为10。 
 
         :param size: The size of this ShowTranscodingsTemplateRequest.
         :type: int

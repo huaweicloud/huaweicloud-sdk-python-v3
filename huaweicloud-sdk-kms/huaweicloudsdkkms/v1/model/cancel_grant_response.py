@@ -31,7 +31,7 @@ class CancelGrantResponse(SdkResponse):
     def __init__(self):
         """CancelGrantResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CancelGrantResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

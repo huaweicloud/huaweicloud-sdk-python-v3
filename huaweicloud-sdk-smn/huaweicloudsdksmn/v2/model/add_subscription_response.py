@@ -35,7 +35,7 @@ class AddSubscriptionResponse(SdkResponse):
     def __init__(self, request_id=None, subscription_urn=None):
         """AddSubscriptionResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AddSubscriptionResponse, self).__init__()
 
         self._request_id = None
         self._subscription_urn = None

@@ -56,6 +56,7 @@ class DeleteHookRequest:
     def x_repo_auth(self):
         """Gets the x_repo_auth of this DeleteHookRequest.
 
+        授权名称。
 
         :return: The x_repo_auth of this DeleteHookRequest.
         :rtype: str
@@ -66,6 +67,7 @@ class DeleteHookRequest:
     def x_repo_auth(self, x_repo_auth):
         """Sets the x_repo_auth of this DeleteHookRequest.
 
+        授权名称。
 
         :param x_repo_auth: The x_repo_auth of this DeleteHookRequest.
         :type: str
@@ -76,6 +78,7 @@ class DeleteHookRequest:
     def namespace(self):
         """Gets the namespace of this DeleteHookRequest.
 
+        组织ID。
 
         :return: The namespace of this DeleteHookRequest.
         :rtype: str
@@ -86,6 +89,7 @@ class DeleteHookRequest:
     def namespace(self, namespace):
         """Sets the namespace of this DeleteHookRequest.
 
+        组织ID。
 
         :param namespace: The namespace of this DeleteHookRequest.
         :type: str
@@ -96,6 +100,7 @@ class DeleteHookRequest:
     def project(self):
         """Gets the project of this DeleteHookRequest.
 
+        仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
         :return: The project of this DeleteHookRequest.
         :rtype: str
@@ -106,6 +111,7 @@ class DeleteHookRequest:
     def project(self, project):
         """Sets the project of this DeleteHookRequest.
 
+        仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
         :param project: The project of this DeleteHookRequest.
         :type: str
@@ -116,6 +122,7 @@ class DeleteHookRequest:
     def hook_id(self):
         """Gets the hook_id of this DeleteHookRequest.
 
+        hook ID。
 
         :return: The hook_id of this DeleteHookRequest.
         :rtype: str
@@ -126,6 +133,7 @@ class DeleteHookRequest:
     def hook_id(self, hook_id):
         """Sets the hook_id of this DeleteHookRequest.
 
+        hook ID。
 
         :param hook_id: The hook_id of this DeleteHookRequest.
         :type: str

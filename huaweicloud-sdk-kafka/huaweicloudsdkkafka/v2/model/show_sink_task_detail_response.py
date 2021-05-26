@@ -25,7 +25,7 @@ class ShowSinkTaskDetailResponse(SdkResponse):
     openapi_types = {
         'task_name': 'str',
         'destination_type': 'str',
-        'create_time': 'str',
+        'create_time': 'int',
         'status': 'str',
         'topics': 'str',
         'obs_destination_descriptor': 'ShowSinkTaskDetailRespObsDestinationDescriptor'
@@ -43,7 +43,7 @@ class ShowSinkTaskDetailResponse(SdkResponse):
     def __init__(self, task_name=None, destination_type=None, create_time=None, status=None, topics=None, obs_destination_descriptor=None):
         """ShowSinkTaskDetailResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowSinkTaskDetailResponse, self).__init__()
 
         self._task_name = None
         self._destination_type = None
@@ -117,7 +117,7 @@ class ShowSinkTaskDetailResponse(SdkResponse):
         转储任务创建时间戳。
 
         :return: The create_time of this ShowSinkTaskDetailResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._create_time
 
@@ -128,7 +128,7 @@ class ShowSinkTaskDetailResponse(SdkResponse):
         转储任务创建时间戳。
 
         :param create_time: The create_time of this ShowSinkTaskDetailResponse.
-        :type: str
+        :type: int
         """
         self._create_time = create_time
 

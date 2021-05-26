@@ -44,6 +44,7 @@ class ShowDependencyRequest:
     def depend_id(self):
         """Gets the depend_id of this ShowDependencyRequest.
 
+        依赖包的ID。
 
         :return: The depend_id of this ShowDependencyRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowDependencyRequest:
     def depend_id(self, depend_id):
         """Sets the depend_id of this ShowDependencyRequest.
 
+        依赖包的ID。
 
         :param depend_id: The depend_id of this ShowDependencyRequest.
         :type: str

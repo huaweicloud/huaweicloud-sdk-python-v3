@@ -88,6 +88,7 @@ class SearchRecordingsRequest:
     def user_uuid(self):
         """Gets the user_uuid of this SearchRecordingsRequest.
 
+        待查询的会议预定者的用户UUID。仅管理员有权限查询权限范围内的所有录制，普通帐号仅能查询自己的。 默认是登录帐号。
 
         :return: The user_uuid of this SearchRecordingsRequest.
         :rtype: str
@@ -98,6 +99,7 @@ class SearchRecordingsRequest:
     def user_uuid(self, user_uuid):
         """Sets the user_uuid of this SearchRecordingsRequest.
 
+        待查询的会议预定者的用户UUID。仅管理员有权限查询权限范围内的所有录制，普通帐号仅能查询自己的。 默认是登录帐号。
 
         :param user_uuid: The user_uuid of this SearchRecordingsRequest.
         :type: str
@@ -108,6 +110,7 @@ class SearchRecordingsRequest:
     def offset(self):
         """Gets the offset of this SearchRecordingsRequest.
 
+        指定返回的页面索引。该值必须大于0。 default: 0
 
         :return: The offset of this SearchRecordingsRequest.
         :rtype: int
@@ -118,6 +121,7 @@ class SearchRecordingsRequest:
     def offset(self, offset):
         """Sets the offset of this SearchRecordingsRequest.
 
+        指定返回的页面索引。该值必须大于0。 default: 0
 
         :param offset: The offset of this SearchRecordingsRequest.
         :type: int
@@ -128,6 +132,7 @@ class SearchRecordingsRequest:
     def limit(self):
         """Gets the limit of this SearchRecordingsRequest.
 
+        指定返回的记录数。默认值为20，最大值为100。
 
         :return: The limit of this SearchRecordingsRequest.
         :rtype: int
@@ -138,6 +143,7 @@ class SearchRecordingsRequest:
     def limit(self, limit):
         """Sets the limit of this SearchRecordingsRequest.
 
+        指定返回的记录数。默认值为20，最大值为100。
 
         :param limit: The limit of this SearchRecordingsRequest.
         :type: int
@@ -148,6 +154,7 @@ class SearchRecordingsRequest:
     def query_all(self):
         """Gets the query_all of this SearchRecordingsRequest.
 
+        指定是否查询企业下所有用户的会议录制。 - 如果登录帐号不是企业管理员，则该字段无效。 - 如果该字段为true，则userUUID字段无效。
 
         :return: The query_all of this SearchRecordingsRequest.
         :rtype: bool
@@ -158,6 +165,7 @@ class SearchRecordingsRequest:
     def query_all(self, query_all):
         """Sets the query_all of this SearchRecordingsRequest.
 
+        指定是否查询企业下所有用户的会议录制。 - 如果登录帐号不是企业管理员，则该字段无效。 - 如果该字段为true，则userUUID字段无效。
 
         :param query_all: The query_all of this SearchRecordingsRequest.
         :type: bool
@@ -168,6 +176,7 @@ class SearchRecordingsRequest:
     def search_key(self):
         """Gets the search_key of this SearchRecordingsRequest.
 
+        会议主题，预定人或会议id可作为搜索词，查询录制。
 
         :return: The search_key of this SearchRecordingsRequest.
         :rtype: str
@@ -178,6 +187,7 @@ class SearchRecordingsRequest:
     def search_key(self, search_key):
         """Sets the search_key of this SearchRecordingsRequest.
 
+        会议主题，预定人或会议id可作为搜索词，查询录制。
 
         :param search_key: The search_key of this SearchRecordingsRequest.
         :type: str
@@ -188,6 +198,7 @@ class SearchRecordingsRequest:
     def start_date(self):
         """Gets the start_date of this SearchRecordingsRequest.
 
+        查询的起始日期毫秒数。
 
         :return: The start_date of this SearchRecordingsRequest.
         :rtype: int
@@ -198,6 +209,7 @@ class SearchRecordingsRequest:
     def start_date(self, start_date):
         """Sets the start_date of this SearchRecordingsRequest.
 
+        查询的起始日期毫秒数。
 
         :param start_date: The start_date of this SearchRecordingsRequest.
         :type: int
@@ -208,6 +220,7 @@ class SearchRecordingsRequest:
     def end_date(self):
         """Gets the end_date of this SearchRecordingsRequest.
 
+        查询的截止日期毫秒数。
 
         :return: The end_date of this SearchRecordingsRequest.
         :rtype: int
@@ -218,6 +231,7 @@ class SearchRecordingsRequest:
     def end_date(self, end_date):
         """Sets the end_date of this SearchRecordingsRequest.
 
+        查询的截止日期毫秒数。
 
         :param end_date: The end_date of this SearchRecordingsRequest.
         :type: int
@@ -228,6 +242,7 @@ class SearchRecordingsRequest:
     def sort_type(self):
         """Gets the sort_type of this SearchRecordingsRequest.
 
+        - ASC_StartTIME：按录制开始时间升序排序。 - DSC_StartTIME：按录制开始时间降序排序。
 
         :return: The sort_type of this SearchRecordingsRequest.
         :rtype: str
@@ -238,6 +253,7 @@ class SearchRecordingsRequest:
     def sort_type(self, sort_type):
         """Sets the sort_type of this SearchRecordingsRequest.
 
+        - ASC_StartTIME：按录制开始时间升序排序。 - DSC_StartTIME：按录制开始时间降序排序。
 
         :param sort_type: The sort_type of this SearchRecordingsRequest.
         :type: str
@@ -248,6 +264,7 @@ class SearchRecordingsRequest:
     def x_authorization_type(self):
         """Gets the x_authorization_type of this SearchRecordingsRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :return: The x_authorization_type of this SearchRecordingsRequest.
         :rtype: str
@@ -258,6 +275,7 @@ class SearchRecordingsRequest:
     def x_authorization_type(self, x_authorization_type):
         """Sets the x_authorization_type of this SearchRecordingsRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this SearchRecordingsRequest.
         :type: str
@@ -268,6 +286,7 @@ class SearchRecordingsRequest:
     def x_site_id(self):
         """Gets the x_site_id of this SearchRecordingsRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :return: The x_site_id of this SearchRecordingsRequest.
         :rtype: str
@@ -278,6 +297,7 @@ class SearchRecordingsRequest:
     def x_site_id(self, x_site_id):
         """Sets the x_site_id of this SearchRecordingsRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this SearchRecordingsRequest.
         :type: str

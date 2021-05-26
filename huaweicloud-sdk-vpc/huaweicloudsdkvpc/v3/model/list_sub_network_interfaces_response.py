@@ -37,7 +37,7 @@ class ListSubNetworkInterfacesResponse(SdkResponse):
     def __init__(self, request_id=None, sub_network_interfaces=None, page_info=None):
         """ListSubNetworkInterfacesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSubNetworkInterfacesResponse, self).__init__()
 
         self._request_id = None
         self._sub_network_interfaces = None

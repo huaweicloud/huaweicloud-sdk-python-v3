@@ -33,7 +33,7 @@ class ListNamespacesResponse(SdkResponse):
     def __init__(self, namespaces=None):
         """ListNamespacesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListNamespacesResponse, self).__init__()
 
         self._namespaces = None
         self.discriminator = None

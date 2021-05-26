@@ -37,7 +37,7 @@ class ListTranscodeDataResponse(SdkResponse):
     def __init__(self, transcode_data_list=None, summary_list=None, x_request_id=None):
         """ListTranscodeDataResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListTranscodeDataResponse, self).__init__()
 
         self._transcode_data_list = None
         self._summary_list = None

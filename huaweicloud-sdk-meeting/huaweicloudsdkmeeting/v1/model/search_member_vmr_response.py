@@ -39,7 +39,7 @@ class SearchMemberVmrResponse(SdkResponse):
     def __init__(self, offset=None, limit=None, count=None, data=None):
         """SearchMemberVmrResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(SearchMemberVmrResponse, self).__init__()
 
         self._offset = None
         self._limit = None

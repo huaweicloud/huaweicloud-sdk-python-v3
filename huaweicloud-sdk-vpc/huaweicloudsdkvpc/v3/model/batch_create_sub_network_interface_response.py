@@ -35,7 +35,7 @@ class BatchCreateSubNetworkInterfaceResponse(SdkResponse):
     def __init__(self, request_id=None, sub_network_interfaces=None):
         """BatchCreateSubNetworkInterfaceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchCreateSubNetworkInterfaceResponse, self).__init__()
 
         self._request_id = None
         self._sub_network_interfaces = None

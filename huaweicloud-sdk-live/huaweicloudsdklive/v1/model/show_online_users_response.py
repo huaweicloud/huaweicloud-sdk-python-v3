@@ -35,7 +35,7 @@ class ShowOnlineUsersResponse(SdkResponse):
     def __init__(self, total=None, user_info=None):
         """ShowOnlineUsersResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowOnlineUsersResponse, self).__init__()
 
         self._total = None
         self._user_info = None

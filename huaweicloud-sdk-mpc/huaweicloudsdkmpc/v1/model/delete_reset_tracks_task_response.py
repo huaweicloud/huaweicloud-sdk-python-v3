@@ -31,7 +31,7 @@ class DeleteResetTracksTaskResponse(SdkResponse):
     def __init__(self):
         """DeleteResetTracksTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteResetTracksTaskResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

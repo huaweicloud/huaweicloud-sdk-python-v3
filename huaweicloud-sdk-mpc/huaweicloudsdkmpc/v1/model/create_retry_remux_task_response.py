@@ -31,7 +31,7 @@ class CreateRetryRemuxTaskResponse(SdkResponse):
     def __init__(self):
         """CreateRetryRemuxTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateRetryRemuxTaskResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

@@ -49,6 +49,7 @@ class ShowRedirectUrlRequest:
     def repo_type(self):
         """Gets the repo_type of this ShowRedirectUrlRequest.
 
+        仓库类型。 取值范围：github、gitlab、gitee、bitbucket。
 
         :return: The repo_type of this ShowRedirectUrlRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ShowRedirectUrlRequest:
     def repo_type(self, repo_type):
         """Sets the repo_type of this ShowRedirectUrlRequest.
 
+        仓库类型。 取值范围：github、gitlab、gitee、bitbucket。
 
         :param repo_type: The repo_type of this ShowRedirectUrlRequest.
         :type: str
@@ -69,6 +71,7 @@ class ShowRedirectUrlRequest:
     def tag(self):
         """Gets the tag of this ShowRedirectUrlRequest.
 
+        站点标签。 比如国际站的，?tag=intl。 默认为空。
 
         :return: The tag of this ShowRedirectUrlRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ShowRedirectUrlRequest:
     def tag(self, tag):
         """Sets the tag of this ShowRedirectUrlRequest.
 
+        站点标签。 比如国际站的，?tag=intl。 默认为空。
 
         :param tag: The tag of this ShowRedirectUrlRequest.
         :type: str

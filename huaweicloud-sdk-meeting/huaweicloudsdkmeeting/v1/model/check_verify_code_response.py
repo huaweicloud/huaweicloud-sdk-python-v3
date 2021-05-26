@@ -35,7 +35,7 @@ class CheckVerifyCodeResponse(SdkResponse):
     def __init__(self, token=None, expire=None):
         """CheckVerifyCodeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CheckVerifyCodeResponse, self).__init__()
 
         self._token = None
         self._expire = None

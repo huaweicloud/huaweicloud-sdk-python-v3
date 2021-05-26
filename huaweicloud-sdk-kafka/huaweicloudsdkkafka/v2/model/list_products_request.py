@@ -44,6 +44,7 @@ class ListProductsRequest:
     def engine(self):
         """Gets the engine of this ListProductsRequest.
 
+        消息引擎的类型。当前只支持kafka类型。
 
         :return: The engine of this ListProductsRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListProductsRequest:
     def engine(self, engine):
         """Sets the engine of this ListProductsRequest.
 
+        消息引擎的类型。当前只支持kafka类型。
 
         :param engine: The engine of this ListProductsRequest.
         :type: str

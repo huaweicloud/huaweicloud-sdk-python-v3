@@ -52,6 +52,7 @@ class ListBranchesRequest:
     def x_repo_auth(self):
         """Gets the x_repo_auth of this ListBranchesRequest.
 
+        授权名称。
 
         :return: The x_repo_auth of this ListBranchesRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class ListBranchesRequest:
     def x_repo_auth(self, x_repo_auth):
         """Sets the x_repo_auth of this ListBranchesRequest.
 
+        授权名称。
 
         :param x_repo_auth: The x_repo_auth of this ListBranchesRequest.
         :type: str
@@ -72,6 +74,7 @@ class ListBranchesRequest:
     def namespace(self):
         """Gets the namespace of this ListBranchesRequest.
 
+        组织ID。
 
         :return: The namespace of this ListBranchesRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class ListBranchesRequest:
     def namespace(self, namespace):
         """Sets the namespace of this ListBranchesRequest.
 
+        组织ID。
 
         :param namespace: The namespace of this ListBranchesRequest.
         :type: str
@@ -92,6 +96,7 @@ class ListBranchesRequest:
     def project(self):
         """Gets the project of this ListBranchesRequest.
 
+        仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
         :return: The project of this ListBranchesRequest.
         :rtype: str
@@ -102,6 +107,7 @@ class ListBranchesRequest:
     def project(self, project):
         """Sets the project of this ListBranchesRequest.
 
+        仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
         :param project: The project of this ListBranchesRequest.
         :type: str

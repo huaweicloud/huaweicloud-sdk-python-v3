@@ -33,7 +33,7 @@ class CreateIterationV4Response(SdkResponse):
     def __init__(self, id=None):
         """CreateIterationV4Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateIterationV4Response, self).__init__()
 
         self._id = None
         self.discriminator = None

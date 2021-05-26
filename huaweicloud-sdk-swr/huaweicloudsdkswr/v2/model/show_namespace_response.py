@@ -39,7 +39,7 @@ class ShowNamespaceResponse(SdkResponse):
     def __init__(self, id=None, name=None, creator_name=None, auth=None):
         """ShowNamespaceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowNamespaceResponse, self).__init__()
 
         self._id = None
         self._name = None

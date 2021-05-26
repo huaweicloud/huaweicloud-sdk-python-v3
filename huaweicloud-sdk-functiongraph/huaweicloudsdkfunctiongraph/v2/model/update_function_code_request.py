@@ -49,6 +49,7 @@ class UpdateFunctionCodeRequest:
     def function_urn(self):
         """Gets the function_urn of this UpdateFunctionCodeRequest.
 
+        函数的URN，详细解释见表1 FunctionGraph函数字段说明表的描述。
 
         :return: The function_urn of this UpdateFunctionCodeRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateFunctionCodeRequest:
     def function_urn(self, function_urn):
         """Sets the function_urn of this UpdateFunctionCodeRequest.
 
+        函数的URN，详细解释见表1 FunctionGraph函数字段说明表的描述。
 
         :param function_urn: The function_urn of this UpdateFunctionCodeRequest.
         :type: str

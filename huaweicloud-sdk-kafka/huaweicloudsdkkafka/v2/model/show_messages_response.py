@@ -39,7 +39,7 @@ class ShowMessagesResponse(SdkResponse):
     def __init__(self, messages=None, messages_count=None, offsets_count=None, offset=None):
         """ShowMessagesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowMessagesResponse, self).__init__()
 
         self._messages = None
         self._messages_count = None

@@ -53,6 +53,7 @@ class CreateRepoDomainsRequest:
     def namespace(self):
         """Gets the namespace of this CreateRepoDomainsRequest.
 
+        组织名称
 
         :return: The namespace of this CreateRepoDomainsRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class CreateRepoDomainsRequest:
     def namespace(self, namespace):
         """Sets the namespace of this CreateRepoDomainsRequest.
 
+        组织名称
 
         :param namespace: The namespace of this CreateRepoDomainsRequest.
         :type: str
@@ -73,6 +75,7 @@ class CreateRepoDomainsRequest:
     def repository(self):
         """Gets the repository of this CreateRepoDomainsRequest.
 
+        镜像仓库名称
 
         :return: The repository of this CreateRepoDomainsRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class CreateRepoDomainsRequest:
     def repository(self, repository):
         """Sets the repository of this CreateRepoDomainsRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this CreateRepoDomainsRequest.
         :type: str

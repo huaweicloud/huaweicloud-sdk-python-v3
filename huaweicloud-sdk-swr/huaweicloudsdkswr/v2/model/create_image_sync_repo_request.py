@@ -53,6 +53,7 @@ class CreateImageSyncRepoRequest:
     def namespace(self):
         """Gets the namespace of this CreateImageSyncRepoRequest.
 
+        组织名称
 
         :return: The namespace of this CreateImageSyncRepoRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class CreateImageSyncRepoRequest:
     def namespace(self, namespace):
         """Sets the namespace of this CreateImageSyncRepoRequest.
 
+        组织名称
 
         :param namespace: The namespace of this CreateImageSyncRepoRequest.
         :type: str
@@ -73,6 +75,7 @@ class CreateImageSyncRepoRequest:
     def repository(self):
         """Gets the repository of this CreateImageSyncRepoRequest.
 
+        镜像仓库名称
 
         :return: The repository of this CreateImageSyncRepoRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class CreateImageSyncRepoRequest:
     def repository(self, repository):
         """Sets the repository of this CreateImageSyncRepoRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this CreateImageSyncRepoRequest.
         :type: str

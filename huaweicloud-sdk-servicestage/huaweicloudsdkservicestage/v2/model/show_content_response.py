@@ -39,7 +39,7 @@ class ShowContentResponse(SdkResponse):
     def __init__(self, path=None, sha=None, encoding=None, content=None):
         """ShowContentResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowContentResponse, self).__init__()
 
         self._path = None
         self._sha = None

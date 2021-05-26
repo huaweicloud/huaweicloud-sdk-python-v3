@@ -52,6 +52,7 @@ class DeleteRetentionRequest:
     def namespace(self):
         """Gets the namespace of this DeleteRetentionRequest.
 
+        组织名称
 
         :return: The namespace of this DeleteRetentionRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class DeleteRetentionRequest:
     def namespace(self, namespace):
         """Sets the namespace of this DeleteRetentionRequest.
 
+        组织名称
 
         :param namespace: The namespace of this DeleteRetentionRequest.
         :type: str
@@ -72,6 +74,7 @@ class DeleteRetentionRequest:
     def repository(self):
         """Gets the repository of this DeleteRetentionRequest.
 
+        镜像仓库名称
 
         :return: The repository of this DeleteRetentionRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class DeleteRetentionRequest:
     def repository(self, repository):
         """Sets the repository of this DeleteRetentionRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this DeleteRetentionRequest.
         :type: str
@@ -92,6 +96,7 @@ class DeleteRetentionRequest:
     def retention_id(self):
         """Gets the retention_id of this DeleteRetentionRequest.
 
+        镜像老化规则id
 
         :return: The retention_id of this DeleteRetentionRequest.
         :rtype: int
@@ -102,6 +107,7 @@ class DeleteRetentionRequest:
     def retention_id(self, retention_id):
         """Sets the retention_id of this DeleteRetentionRequest.
 
+        镜像老化规则id
 
         :param retention_id: The retention_id of this DeleteRetentionRequest.
         :type: int

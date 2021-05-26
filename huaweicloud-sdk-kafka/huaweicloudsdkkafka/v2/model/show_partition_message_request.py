@@ -56,6 +56,7 @@ class ShowPartitionMessageRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowPartitionMessageRequest.
 
+        实例ID。
 
         :return: The instance_id of this ShowPartitionMessageRequest.
         :rtype: str
@@ -66,6 +67,7 @@ class ShowPartitionMessageRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowPartitionMessageRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ShowPartitionMessageRequest.
         :type: str
@@ -76,6 +78,7 @@ class ShowPartitionMessageRequest:
     def topic(self):
         """Gets the topic of this ShowPartitionMessageRequest.
 
+        Topic名称。
 
         :return: The topic of this ShowPartitionMessageRequest.
         :rtype: str
@@ -86,6 +89,7 @@ class ShowPartitionMessageRequest:
     def topic(self, topic):
         """Sets the topic of this ShowPartitionMessageRequest.
 
+        Topic名称。
 
         :param topic: The topic of this ShowPartitionMessageRequest.
         :type: str
@@ -96,6 +100,7 @@ class ShowPartitionMessageRequest:
     def partition(self):
         """Gets the partition of this ShowPartitionMessageRequest.
 
+        分区编号。
 
         :return: The partition of this ShowPartitionMessageRequest.
         :rtype: int
@@ -106,6 +111,7 @@ class ShowPartitionMessageRequest:
     def partition(self, partition):
         """Sets the partition of this ShowPartitionMessageRequest.
 
+        分区编号。
 
         :param partition: The partition of this ShowPartitionMessageRequest.
         :type: int
@@ -116,6 +122,7 @@ class ShowPartitionMessageRequest:
     def message_offset(self):
         """Gets the message_offset of this ShowPartitionMessageRequest.
 
+        消息位置。
 
         :return: The message_offset of this ShowPartitionMessageRequest.
         :rtype: str
@@ -126,6 +133,7 @@ class ShowPartitionMessageRequest:
     def message_offset(self, message_offset):
         """Sets the message_offset of this ShowPartitionMessageRequest.
 
+        消息位置。
 
         :param message_offset: The message_offset of this ShowPartitionMessageRequest.
         :type: str

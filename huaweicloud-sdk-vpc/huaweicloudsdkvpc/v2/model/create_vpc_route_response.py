@@ -33,7 +33,7 @@ class CreateVpcRouteResponse(SdkResponse):
     def __init__(self, route=None):
         """CreateVpcRouteResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateVpcRouteResponse, self).__init__()
 
         self._route = None
         self.discriminator = None

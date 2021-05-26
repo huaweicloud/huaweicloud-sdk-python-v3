@@ -85,7 +85,7 @@ class ShowMyInfoResponse(SdkResponse):
     def __init__(self, id=None, user_account=None, name=None, english_name=None, phone=None, country=None, email=None, sip_num=None, vmr_list=None, dept_code=None, dept_name=None, dept_name_path=None, user_type=None, admin_type=None, signature=None, title=None, desc=None, corp=None, function=None, dev_type=None, status=None, sort_level=None, hide_phone=None, vision_account=None, third_account=None, license=None, active_time=None):
         """ShowMyInfoResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowMyInfoResponse, self).__init__()
 
         self._id = None
         self._user_account = None

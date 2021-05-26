@@ -35,7 +35,7 @@ class DecryptDataResponse(SdkResponse):
     def __init__(self, key_id=None, plain_text=None):
         """DecryptDataResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DecryptDataResponse, self).__init__()
 
         self._key_id = None
         self._plain_text = None

@@ -39,7 +39,7 @@ class ShowKeyRotationStatusResponse(SdkResponse):
     def __init__(self, key_rotation_enabled=None, rotation_interval=None, last_rotation_time=None, number_of_rotations=None):
         """ShowKeyRotationStatusResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowKeyRotationStatusResponse, self).__init__()
 
         self._key_rotation_enabled = None
         self._rotation_interval = None

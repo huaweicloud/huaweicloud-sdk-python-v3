@@ -33,7 +33,7 @@ class RecognizeWebImageResponse(SdkResponse):
     def __init__(self, result=None):
         """RecognizeWebImageResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RecognizeWebImageResponse, self).__init__()
 
         self._result = None
         self.discriminator = None

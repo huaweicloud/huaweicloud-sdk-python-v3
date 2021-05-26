@@ -35,7 +35,7 @@ class ListInstanceSnapshotsResponse(SdkResponse):
     def __init__(self, count=None, snapshots=None):
         """ListInstanceSnapshotsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListInstanceSnapshotsResponse, self).__init__()
 
         self._count = None
         self._snapshots = None

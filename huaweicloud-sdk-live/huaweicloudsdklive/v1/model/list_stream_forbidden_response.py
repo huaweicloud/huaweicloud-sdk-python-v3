@@ -35,7 +35,7 @@ class ListStreamForbiddenResponse(SdkResponse):
     def __init__(self, total=None, blocks=None):
         """ListStreamForbiddenResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListStreamForbiddenResponse, self).__init__()
 
         self._total = None
         self._blocks = None

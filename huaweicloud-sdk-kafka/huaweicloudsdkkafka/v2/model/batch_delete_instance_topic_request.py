@@ -49,6 +49,7 @@ class BatchDeleteInstanceTopicRequest:
     def instance_id(self):
         """Gets the instance_id of this BatchDeleteInstanceTopicRequest.
 
+        实例ID。
 
         :return: The instance_id of this BatchDeleteInstanceTopicRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class BatchDeleteInstanceTopicRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this BatchDeleteInstanceTopicRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this BatchDeleteInstanceTopicRequest.
         :type: str

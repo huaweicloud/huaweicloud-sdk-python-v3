@@ -44,6 +44,7 @@ class DeleteVpcRouteRequest:
     def route_id(self):
         """Gets the route_id of this DeleteVpcRouteRequest.
 
+        路由ID
 
         :return: The route_id of this DeleteVpcRouteRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteVpcRouteRequest:
     def route_id(self, route_id):
         """Sets the route_id of this DeleteVpcRouteRequest.
 
+        路由ID
 
         :param route_id: The route_id of this DeleteVpcRouteRequest.
         :type: str

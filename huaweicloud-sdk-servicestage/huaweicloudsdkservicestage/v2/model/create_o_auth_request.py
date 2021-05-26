@@ -54,6 +54,7 @@ class CreateOAuthRequest:
     def repo_type(self):
         """Gets the repo_type of this CreateOAuthRequest.
 
+        仓库类型。 支持OAuth授权的仓库类型有：github、gitlab、gitee、bitbucket。
 
         :return: The repo_type of this CreateOAuthRequest.
         :rtype: str
@@ -64,6 +65,7 @@ class CreateOAuthRequest:
     def repo_type(self, repo_type):
         """Sets the repo_type of this CreateOAuthRequest.
 
+        仓库类型。 支持OAuth授权的仓库类型有：github、gitlab、gitee、bitbucket。
 
         :param repo_type: The repo_type of this CreateOAuthRequest.
         :type: str
@@ -74,6 +76,7 @@ class CreateOAuthRequest:
     def tag(self):
         """Gets the tag of this CreateOAuthRequest.
 
+        站点标签。 比如国际站的，?tag=intl。 默认为空。
 
         :return: The tag of this CreateOAuthRequest.
         :rtype: str
@@ -84,6 +87,7 @@ class CreateOAuthRequest:
     def tag(self, tag):
         """Sets the tag of this CreateOAuthRequest.
 
+        站点标签。 比如国际站的，?tag=intl。 默认为空。
 
         :param tag: The tag of this CreateOAuthRequest.
         :type: str

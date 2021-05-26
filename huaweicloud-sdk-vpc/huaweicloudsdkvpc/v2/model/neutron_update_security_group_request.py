@@ -49,6 +49,7 @@ class NeutronUpdateSecurityGroupRequest:
     def security_group_id(self):
         """Gets the security_group_id of this NeutronUpdateSecurityGroupRequest.
 
+        安全组ID
 
         :return: The security_group_id of this NeutronUpdateSecurityGroupRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class NeutronUpdateSecurityGroupRequest:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this NeutronUpdateSecurityGroupRequest.
 
+        安全组ID
 
         :param security_group_id: The security_group_id of this NeutronUpdateSecurityGroupRequest.
         :type: str

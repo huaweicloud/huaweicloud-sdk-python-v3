@@ -39,7 +39,7 @@ class ShowUserRepositoryAuthResponse(SdkResponse):
     def __init__(self, id=None, name=None, self_auth=None, others_auths=None):
         """ShowUserRepositoryAuthResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowUserRepositoryAuthResponse, self).__init__()
 
         self._id = None
         self._name = None

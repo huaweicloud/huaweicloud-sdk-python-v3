@@ -57,6 +57,7 @@ class UpdateTriggerRequest:
     def namespace(self):
         """Gets the namespace of this UpdateTriggerRequest.
 
+        组织名称
 
         :return: The namespace of this UpdateTriggerRequest.
         :rtype: str
@@ -67,6 +68,7 @@ class UpdateTriggerRequest:
     def namespace(self, namespace):
         """Sets the namespace of this UpdateTriggerRequest.
 
+        组织名称
 
         :param namespace: The namespace of this UpdateTriggerRequest.
         :type: str
@@ -77,6 +79,7 @@ class UpdateTriggerRequest:
     def repository(self):
         """Gets the repository of this UpdateTriggerRequest.
 
+        镜像仓库名称
 
         :return: The repository of this UpdateTriggerRequest.
         :rtype: str
@@ -87,6 +90,7 @@ class UpdateTriggerRequest:
     def repository(self, repository):
         """Sets the repository of this UpdateTriggerRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this UpdateTriggerRequest.
         :type: str
@@ -97,6 +101,7 @@ class UpdateTriggerRequest:
     def trigger(self):
         """Gets the trigger of this UpdateTriggerRequest.
 
+        触发器名称
 
         :return: The trigger of this UpdateTriggerRequest.
         :rtype: str
@@ -107,6 +112,7 @@ class UpdateTriggerRequest:
     def trigger(self, trigger):
         """Sets the trigger of this UpdateTriggerRequest.
 
+        触发器名称
 
         :param trigger: The trigger of this UpdateTriggerRequest.
         :type: str

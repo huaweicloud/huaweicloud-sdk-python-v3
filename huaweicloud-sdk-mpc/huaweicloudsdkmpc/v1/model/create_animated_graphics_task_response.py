@@ -45,7 +45,7 @@ class CreateAnimatedGraphicsTaskResponse(SdkResponse):
     def __init__(self, task_id=None, status=None, create_time=None, output=None, output_file_name=None, description=None, metadata=None):
         """CreateAnimatedGraphicsTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateAnimatedGraphicsTaskResponse, self).__init__()
 
         self._task_id = None
         self._status = None

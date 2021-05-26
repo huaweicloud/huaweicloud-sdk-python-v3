@@ -49,6 +49,7 @@ class UpdateDependencyRequest:
     def depend_id(self):
         """Gets the depend_id of this UpdateDependencyRequest.
 
+        依赖包的ID。
 
         :return: The depend_id of this UpdateDependencyRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateDependencyRequest:
     def depend_id(self, depend_id):
         """Sets the depend_id of this UpdateDependencyRequest.
 
+        依赖包的ID。
 
         :param depend_id: The depend_id of this UpdateDependencyRequest.
         :type: str

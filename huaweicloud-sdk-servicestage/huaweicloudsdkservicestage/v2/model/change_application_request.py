@@ -49,6 +49,7 @@ class ChangeApplicationRequest:
     def application_id(self):
         """Gets the application_id of this ChangeApplicationRequest.
 
+        应用ID。
 
         :return: The application_id of this ChangeApplicationRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ChangeApplicationRequest:
     def application_id(self, application_id):
         """Sets the application_id of this ChangeApplicationRequest.
 
+        应用ID。
 
         :param application_id: The application_id of this ChangeApplicationRequest.
         :type: str

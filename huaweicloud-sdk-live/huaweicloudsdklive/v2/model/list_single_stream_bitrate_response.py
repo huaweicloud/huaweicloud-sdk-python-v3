@@ -35,7 +35,7 @@ class ListSingleStreamBitrateResponse(SdkResponse):
     def __init__(self, bitrate_info_list=None, x_request_id=None):
         """ListSingleStreamBitrateResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSingleStreamBitrateResponse, self).__init__()
 
         self._bitrate_info_list = None
         self._x_request_id = None

@@ -61,7 +61,7 @@ class ShowTriggerResponse(SdkResponse):
     def __init__(self, action=None, app_type=None, application=None, cluster_id=None, cluster_name=None, cluster_ns=None, condition=None, container=None, created_at=None, creator_name=None, enable=None, name=None, trigger_history=None, trigger_mode=None, trigger_type=None):
         """ShowTriggerResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowTriggerResponse, self).__init__()
 
         self._action = None
         self._app_type = None

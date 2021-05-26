@@ -35,7 +35,7 @@ class CreateConnectorResponse(SdkResponse):
     def __init__(self, job_id=None, connector_id=None):
         """CreateConnectorResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateConnectorResponse, self).__init__()
 
         self._job_id = None
         self._connector_id = None

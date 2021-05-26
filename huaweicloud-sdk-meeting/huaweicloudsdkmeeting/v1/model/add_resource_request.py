@@ -26,7 +26,6 @@ class AddResourceRequest:
         'x_request_id': 'str',
         'accept_language': 'str',
         'corp_id': 'str',
-        'force_edit_flag': 'bool',
         'body': 'list[ResourceDTO]'
     }
 
@@ -34,11 +33,10 @@ class AddResourceRequest:
         'x_request_id': 'X-Request-Id',
         'accept_language': 'Accept-Language',
         'corp_id': 'corp_id',
-        'force_edit_flag': 'forceEditFlag',
         'body': 'body'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, corp_id=None, force_edit_flag=None, body=None):
+    def __init__(self, x_request_id=None, accept_language=None, corp_id=None, body=None):
         """AddResourceRequest - a model defined in huaweicloud sdk"""
         
         
@@ -46,7 +44,6 @@ class AddResourceRequest:
         self._x_request_id = None
         self._accept_language = None
         self._corp_id = None
-        self._force_edit_flag = None
         self._body = None
         self.discriminator = None
 
@@ -55,8 +52,6 @@ class AddResourceRequest:
         if accept_language is not None:
             self.accept_language = accept_language
         self.corp_id = corp_id
-        if force_edit_flag is not None:
-            self.force_edit_flag = force_edit_flag
         if body is not None:
             self.body = body
 
@@ -64,6 +59,7 @@ class AddResourceRequest:
     def x_request_id(self):
         """Gets the x_request_id of this AddResourceRequest.
 
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :return: The x_request_id of this AddResourceRequest.
         :rtype: str
@@ -74,6 +70,7 @@ class AddResourceRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this AddResourceRequest.
 
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this AddResourceRequest.
         :type: str
@@ -84,6 +81,7 @@ class AddResourceRequest:
     def accept_language(self):
         """Gets the accept_language of this AddResourceRequest.
 
+        语言参数，默认为中文zh_CN, 英文为en_US
 
         :return: The accept_language of this AddResourceRequest.
         :rtype: str
@@ -94,6 +92,7 @@ class AddResourceRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this AddResourceRequest.
 
+        语言参数，默认为中文zh_CN, 英文为en_US
 
         :param accept_language: The accept_language of this AddResourceRequest.
         :type: str
@@ -104,6 +103,7 @@ class AddResourceRequest:
     def corp_id(self):
         """Gets the corp_id of this AddResourceRequest.
 
+        企业id
 
         :return: The corp_id of this AddResourceRequest.
         :rtype: str
@@ -114,31 +114,12 @@ class AddResourceRequest:
     def corp_id(self, corp_id):
         """Sets the corp_id of this AddResourceRequest.
 
+        企业id
 
         :param corp_id: The corp_id of this AddResourceRequest.
         :type: str
         """
         self._corp_id = corp_id
-
-    @property
-    def force_edit_flag(self):
-        """Gets the force_edit_flag of this AddResourceRequest.
-
-
-        :return: The force_edit_flag of this AddResourceRequest.
-        :rtype: bool
-        """
-        return self._force_edit_flag
-
-    @force_edit_flag.setter
-    def force_edit_flag(self, force_edit_flag):
-        """Sets the force_edit_flag of this AddResourceRequest.
-
-
-        :param force_edit_flag: The force_edit_flag of this AddResourceRequest.
-        :type: bool
-        """
-        self._force_edit_flag = force_edit_flag
 
     @property
     def body(self):

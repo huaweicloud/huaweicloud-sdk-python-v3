@@ -54,6 +54,7 @@ class ListSubscriptionsByTopicRequest:
     def topic_urn(self):
         """Gets the topic_urn of this ListSubscriptionsByTopicRequest.
 
+        Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
 
         :return: The topic_urn of this ListSubscriptionsByTopicRequest.
         :rtype: str
@@ -64,6 +65,7 @@ class ListSubscriptionsByTopicRequest:
     def topic_urn(self, topic_urn):
         """Sets the topic_urn of this ListSubscriptionsByTopicRequest.
 
+        Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
 
         :param topic_urn: The topic_urn of this ListSubscriptionsByTopicRequest.
         :type: str
@@ -74,6 +76,7 @@ class ListSubscriptionsByTopicRequest:
     def offset(self):
         """Gets the offset of this ListSubscriptionsByTopicRequest.
 
+        偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
         :return: The offset of this ListSubscriptionsByTopicRequest.
         :rtype: int
@@ -84,6 +87,7 @@ class ListSubscriptionsByTopicRequest:
     def offset(self, offset):
         """Sets the offset of this ListSubscriptionsByTopicRequest.
 
+        偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
         :param offset: The offset of this ListSubscriptionsByTopicRequest.
         :type: int
@@ -94,6 +98,7 @@ class ListSubscriptionsByTopicRequest:
     def limit(self):
         """Gets the limit of this ListSubscriptionsByTopicRequest.
 
+        查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
         :return: The limit of this ListSubscriptionsByTopicRequest.
         :rtype: int
@@ -104,6 +109,7 @@ class ListSubscriptionsByTopicRequest:
     def limit(self, limit):
         """Sets the limit of this ListSubscriptionsByTopicRequest.
 
+        查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
         :param limit: The limit of this ListSubscriptionsByTopicRequest.
         :type: int

@@ -24,7 +24,7 @@ class UpdateInstanceCrossVpcIpRespResults:
 
     openapi_types = {
         'advertised_ip': 'str',
-        'success': 'str',
+        'success': 'bool',
         'ip': 'str'
     }
 
@@ -80,7 +80,7 @@ class UpdateInstanceCrossVpcIpRespResults:
         修改broker跨VPC访问的状态。
 
         :return: The success of this UpdateInstanceCrossVpcIpRespResults.
-        :rtype: str
+        :rtype: bool
         """
         return self._success
 
@@ -91,7 +91,7 @@ class UpdateInstanceCrossVpcIpRespResults:
         修改broker跨VPC访问的状态。
 
         :param success: The success of this UpdateInstanceCrossVpcIpRespResults.
-        :type: str
+        :type: bool
         """
         self._success = success
 

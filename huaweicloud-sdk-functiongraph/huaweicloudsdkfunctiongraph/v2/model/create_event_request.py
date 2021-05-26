@@ -49,6 +49,7 @@ class CreateEventRequest:
     def function_urn(self):
         """Gets the function_urn of this CreateEventRequest.
 
+        函数的URN（Uniform Resource Name），唯一标识函数。
 
         :return: The function_urn of this CreateEventRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateEventRequest:
     def function_urn(self, function_urn):
         """Sets the function_urn of this CreateEventRequest.
 
+        函数的URN（Uniform Resource Name），唯一标识函数。
 
         :param function_urn: The function_urn of this CreateEventRequest.
         :type: str

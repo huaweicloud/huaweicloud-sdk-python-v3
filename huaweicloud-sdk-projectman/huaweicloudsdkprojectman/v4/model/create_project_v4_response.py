@@ -43,7 +43,7 @@ class CreateProjectV4Response(SdkResponse):
     def __init__(self, project_num_id=None, project_id=None, project_name=None, description=None, project_type=None, user_num_id=None):
         """CreateProjectV4Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateProjectV4Response, self).__init__()
 
         self._project_num_id = None
         self._project_id = None

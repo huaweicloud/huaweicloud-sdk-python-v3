@@ -48,6 +48,7 @@ class ListRetentionsRequest:
     def namespace(self):
         """Gets the namespace of this ListRetentionsRequest.
 
+        组织名称
 
         :return: The namespace of this ListRetentionsRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ListRetentionsRequest:
     def namespace(self, namespace):
         """Sets the namespace of this ListRetentionsRequest.
 
+        组织名称
 
         :param namespace: The namespace of this ListRetentionsRequest.
         :type: str
@@ -68,6 +70,7 @@ class ListRetentionsRequest:
     def repository(self):
         """Gets the repository of this ListRetentionsRequest.
 
+        镜像仓库名称
 
         :return: The repository of this ListRetentionsRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ListRetentionsRequest:
     def repository(self, repository):
         """Sets the repository of this ListRetentionsRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this ListRetentionsRequest.
         :type: str

@@ -49,6 +49,7 @@ class ShowCompletionRateRequest:
     def project_id(self):
         """Gets the project_id of this ShowCompletionRateRequest.
 
+        项目ID
 
         :return: The project_id of this ShowCompletionRateRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ShowCompletionRateRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ShowCompletionRateRequest.
 
+        项目ID
 
         :param project_id: The project_id of this ShowCompletionRateRequest.
         :type: str

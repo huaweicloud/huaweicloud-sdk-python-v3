@@ -31,7 +31,7 @@ class LockMeetingResponse(SdkResponse):
     def __init__(self):
         """LockMeetingResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(LockMeetingResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

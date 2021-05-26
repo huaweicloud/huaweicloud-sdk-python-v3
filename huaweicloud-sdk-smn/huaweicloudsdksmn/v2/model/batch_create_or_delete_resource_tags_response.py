@@ -31,7 +31,7 @@ class BatchCreateOrDeleteResourceTagsResponse(SdkResponse):
     def __init__(self):
         """BatchCreateOrDeleteResourceTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchCreateOrDeleteResourceTagsResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

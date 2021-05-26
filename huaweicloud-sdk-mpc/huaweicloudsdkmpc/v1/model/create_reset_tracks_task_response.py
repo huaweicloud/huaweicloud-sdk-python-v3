@@ -33,7 +33,7 @@ class CreateResetTracksTaskResponse(SdkResponse):
     def __init__(self, task_id=None):
         """CreateResetTracksTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateResetTracksTaskResponse, self).__init__()
 
         self._task_id = None
         self.discriminator = None

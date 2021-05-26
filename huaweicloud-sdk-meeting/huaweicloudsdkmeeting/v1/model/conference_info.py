@@ -60,7 +60,13 @@ class ConferenceInfo:
         'normal_count': 'int',
         'dept_name': 'str',
         'vmr_id': 'str',
-        'concurrent_participants': 'int'
+        'role': 'str',
+        'webinar': 'bool',
+        'multi_stream_flag': 'int',
+        'conf_mode': 'str',
+        'schedule_vmr': 'bool',
+        'concurrent_participants': 'int',
+        'pic_display': 'object'
     }
 
     attribute_map = {
@@ -101,10 +107,16 @@ class ConferenceInfo:
         'normal_count': 'normalCount',
         'dept_name': 'deptName',
         'vmr_id': 'vmrID',
-        'concurrent_participants': 'concurrentParticipants'
+        'role': 'role',
+        'webinar': 'webinar',
+        'multi_stream_flag': 'multiStreamFlag',
+        'conf_mode': 'confMode',
+        'schedule_vmr': 'scheduleVmr',
+        'concurrent_participants': 'concurrentParticipants',
+        'pic_display': 'picDisplay'
     }
 
-    def __init__(self, conference_id=None, subject=None, size=None, time_zone_id=None, start_time=None, end_time=None, media_types=None, conference_state=None, language=None, access_number=None, password_entry=None, user_uuid=None, scheduser_name=None, conference_type=None, conf_type=None, cycle_params=None, is_auto_mute=None, is_auto_record=None, chair_join_uri=None, guest_join_uri=None, audience_join_uri=None, record_type=None, aux_address=None, live_address=None, record_aux_stream=None, record_auth_type=None, live_url=None, conf_config_info=None, vmr_flag=None, is_has_record_file=None, vmr_conference_id=None, conf_uuid=None, part_attendee_info=None, terminl_count=None, normal_count=None, dept_name=None, vmr_id=None, concurrent_participants=None):
+    def __init__(self, conference_id=None, subject=None, size=None, time_zone_id=None, start_time=None, end_time=None, media_types=None, conference_state=None, language=None, access_number=None, password_entry=None, user_uuid=None, scheduser_name=None, conference_type=None, conf_type=None, cycle_params=None, is_auto_mute=None, is_auto_record=None, chair_join_uri=None, guest_join_uri=None, audience_join_uri=None, record_type=None, aux_address=None, live_address=None, record_aux_stream=None, record_auth_type=None, live_url=None, conf_config_info=None, vmr_flag=None, is_has_record_file=None, vmr_conference_id=None, conf_uuid=None, part_attendee_info=None, terminl_count=None, normal_count=None, dept_name=None, vmr_id=None, role=None, webinar=None, multi_stream_flag=None, conf_mode=None, schedule_vmr=None, concurrent_participants=None, pic_display=None):
         """ConferenceInfo - a model defined in huaweicloud sdk"""
         
         
@@ -146,7 +158,13 @@ class ConferenceInfo:
         self._normal_count = None
         self._dept_name = None
         self._vmr_id = None
+        self._role = None
+        self._webinar = None
+        self._multi_stream_flag = None
+        self._conf_mode = None
+        self._schedule_vmr = None
         self._concurrent_participants = None
+        self._pic_display = None
         self.discriminator = None
 
         if conference_id is not None:
@@ -223,8 +241,20 @@ class ConferenceInfo:
             self.dept_name = dept_name
         if vmr_id is not None:
             self.vmr_id = vmr_id
+        if role is not None:
+            self.role = role
+        if webinar is not None:
+            self.webinar = webinar
+        if multi_stream_flag is not None:
+            self.multi_stream_flag = multi_stream_flag
+        if conf_mode is not None:
+            self.conf_mode = conf_mode
+        if schedule_vmr is not None:
+            self.schedule_vmr = schedule_vmr
         if concurrent_participants is not None:
             self.concurrent_participants = concurrent_participants
+        if pic_display is not None:
+            self.pic_display = pic_display
 
     @property
     def conference_id(self):
@@ -1037,6 +1067,116 @@ class ConferenceInfo:
         self._vmr_id = vmr_id
 
     @property
+    def role(self):
+        """Gets the role of this ConferenceInfo.
+
+        会议角色
+
+        :return: The role of this ConferenceInfo.
+        :rtype: str
+        """
+        return self._role
+
+    @role.setter
+    def role(self, role):
+        """Sets the role of this ConferenceInfo.
+
+        会议角色
+
+        :param role: The role of this ConferenceInfo.
+        :type: str
+        """
+        self._role = role
+
+    @property
+    def webinar(self):
+        """Gets the webinar of this ConferenceInfo.
+
+        是否网络研讨会
+
+        :return: The webinar of this ConferenceInfo.
+        :rtype: bool
+        """
+        return self._webinar
+
+    @webinar.setter
+    def webinar(self, webinar):
+        """Sets the webinar of this ConferenceInfo.
+
+        是否网络研讨会
+
+        :param webinar: The webinar of this ConferenceInfo.
+        :type: bool
+        """
+        self._webinar = webinar
+
+    @property
+    def multi_stream_flag(self):
+        """Gets the multi_stream_flag of this ConferenceInfo.
+
+        标识是否为多流视频会议。 枚举值如下 1：多流会议
+
+        :return: The multi_stream_flag of this ConferenceInfo.
+        :rtype: int
+        """
+        return self._multi_stream_flag
+
+    @multi_stream_flag.setter
+    def multi_stream_flag(self, multi_stream_flag):
+        """Sets the multi_stream_flag of this ConferenceInfo.
+
+        标识是否为多流视频会议。 枚举值如下 1：多流会议
+
+        :param multi_stream_flag: The multi_stream_flag of this ConferenceInfo.
+        :type: int
+        """
+        self._multi_stream_flag = multi_stream_flag
+
+    @property
+    def conf_mode(self):
+        """Gets the conf_mode of this ConferenceInfo.
+
+        会议类型
+
+        :return: The conf_mode of this ConferenceInfo.
+        :rtype: str
+        """
+        return self._conf_mode
+
+    @conf_mode.setter
+    def conf_mode(self, conf_mode):
+        """Sets the conf_mode of this ConferenceInfo.
+
+        会议类型
+
+        :param conf_mode: The conf_mode of this ConferenceInfo.
+        :type: str
+        """
+        self._conf_mode = conf_mode
+
+    @property
+    def schedule_vmr(self):
+        """Gets the schedule_vmr of this ConferenceInfo.
+
+        True: VMR预约记录（如果为true则该记录不支持根据会议ID查询会议详情） False：普通会议
+
+        :return: The schedule_vmr of this ConferenceInfo.
+        :rtype: bool
+        """
+        return self._schedule_vmr
+
+    @schedule_vmr.setter
+    def schedule_vmr(self, schedule_vmr):
+        """Sets the schedule_vmr of this ConferenceInfo.
+
+        True: VMR预约记录（如果为true则该记录不支持根据会议ID查询会议详情） False：普通会议
+
+        :param schedule_vmr: The schedule_vmr of this ConferenceInfo.
+        :type: bool
+        """
+        self._schedule_vmr = schedule_vmr
+
+    @property
     def concurrent_participants(self):
         """Gets the concurrent_participants of this ConferenceInfo.
 
@@ -1057,6 +1197,28 @@ class ConferenceInfo:
         :type: int
         """
         self._concurrent_participants = concurrent_participants
+
+    @property
+    def pic_display(self):
+        """Gets the pic_display of this ConferenceInfo.
+
+        当前多画面信息。
+
+        :return: The pic_display of this ConferenceInfo.
+        :rtype: object
+        """
+        return self._pic_display
+
+    @pic_display.setter
+    def pic_display(self, pic_display):
+        """Sets the pic_display of this ConferenceInfo.
+
+        当前多画面信息。
+
+        :param pic_display: The pic_display of this ConferenceInfo.
+        :type: object
+        """
+        self._pic_display = pic_display
 
     def to_dict(self):
         """Returns the model properties as a dict"""

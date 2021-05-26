@@ -48,6 +48,7 @@ class ShowGroupsRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowGroupsRequest.
 
+        实例ID。
 
         :return: The instance_id of this ShowGroupsRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowGroupsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowGroupsRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ShowGroupsRequest.
         :type: str
@@ -68,6 +70,7 @@ class ShowGroupsRequest:
     def group(self):
         """Gets the group of this ShowGroupsRequest.
 
+        消费组名称。
 
         :return: The group of this ShowGroupsRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowGroupsRequest:
     def group(self, group):
         """Sets the group of this ShowGroupsRequest.
 
+        消费组名称。
 
         :param group: The group of this ShowGroupsRequest.
         :type: str

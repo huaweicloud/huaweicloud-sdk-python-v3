@@ -33,7 +33,7 @@ class ListPrivateipsResponse(SdkResponse):
     def __init__(self, privateips=None):
         """ListPrivateipsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListPrivateipsResponse, self).__init__()
 
         self._privateips = None
         self.discriminator = None

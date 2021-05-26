@@ -35,7 +35,7 @@ class ShowIssueCompletionRateResponse(SdkResponse):
     def __init__(self, issue_completion_rates=None, total=None):
         """ShowIssueCompletionRateResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowIssueCompletionRateResponse, self).__init__()
 
         self._issue_completion_rates = None
         self._total = None

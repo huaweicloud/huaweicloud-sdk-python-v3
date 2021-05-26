@@ -48,6 +48,7 @@ class StopMeetingRequest:
     def conference_id(self):
         """Gets the conference_id of this StopMeetingRequest.
 
+        会议ID。
 
         :return: The conference_id of this StopMeetingRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class StopMeetingRequest:
     def conference_id(self, conference_id):
         """Sets the conference_id of this StopMeetingRequest.
 
+        会议ID。
 
         :param conference_id: The conference_id of this StopMeetingRequest.
         :type: str
@@ -68,6 +70,7 @@ class StopMeetingRequest:
     def x_conference_authorization(self):
         """Gets the x_conference_authorization of this StopMeetingRequest.
 
+        会控授权令牌，通过获取会控token接口获得。
 
         :return: The x_conference_authorization of this StopMeetingRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class StopMeetingRequest:
     def x_conference_authorization(self, x_conference_authorization):
         """Sets the x_conference_authorization of this StopMeetingRequest.
 
+        会控授权令牌，通过获取会控token接口获得。
 
         :param x_conference_authorization: The x_conference_authorization of this StopMeetingRequest.
         :type: str

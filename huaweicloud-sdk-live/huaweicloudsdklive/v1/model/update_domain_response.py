@@ -45,7 +45,7 @@ class UpdateDomainResponse(SdkResponse):
     def __init__(self, domain=None, domain_type=None, domain_cname=None, region=None, status=None, create_time=None, domain_source=None):
         """UpdateDomainResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateDomainResponse, self).__init__()
 
         self._domain = None
         self._domain_type = None

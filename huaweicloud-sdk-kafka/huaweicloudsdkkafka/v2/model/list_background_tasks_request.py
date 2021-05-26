@@ -64,6 +64,7 @@ class ListBackgroundTasksRequest:
     def instance_id(self):
         """Gets the instance_id of this ListBackgroundTasksRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListBackgroundTasksRequest.
         :rtype: str
@@ -74,6 +75,7 @@ class ListBackgroundTasksRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListBackgroundTasksRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListBackgroundTasksRequest.
         :type: str
@@ -84,6 +86,7 @@ class ListBackgroundTasksRequest:
     def start(self):
         """Gets the start of this ListBackgroundTasksRequest.
 
+        开启查询的任务编号。
 
         :return: The start of this ListBackgroundTasksRequest.
         :rtype: int
@@ -94,6 +97,7 @@ class ListBackgroundTasksRequest:
     def start(self, start):
         """Sets the start of this ListBackgroundTasksRequest.
 
+        开启查询的任务编号。
 
         :param start: The start of this ListBackgroundTasksRequest.
         :type: int
@@ -104,6 +108,7 @@ class ListBackgroundTasksRequest:
     def limit(self):
         """Gets the limit of this ListBackgroundTasksRequest.
 
+        查询的任务个数。
 
         :return: The limit of this ListBackgroundTasksRequest.
         :rtype: int
@@ -114,6 +119,7 @@ class ListBackgroundTasksRequest:
     def limit(self, limit):
         """Sets the limit of this ListBackgroundTasksRequest.
 
+        查询的任务个数。
 
         :param limit: The limit of this ListBackgroundTasksRequest.
         :type: int
@@ -124,6 +130,7 @@ class ListBackgroundTasksRequest:
     def begin_time(self):
         """Gets the begin_time of this ListBackgroundTasksRequest.
 
+        查询任务的最小时间，格式为YYYYMMDDHHmmss。
 
         :return: The begin_time of this ListBackgroundTasksRequest.
         :rtype: str
@@ -134,6 +141,7 @@ class ListBackgroundTasksRequest:
     def begin_time(self, begin_time):
         """Sets the begin_time of this ListBackgroundTasksRequest.
 
+        查询任务的最小时间，格式为YYYYMMDDHHmmss。
 
         :param begin_time: The begin_time of this ListBackgroundTasksRequest.
         :type: str
@@ -144,6 +152,7 @@ class ListBackgroundTasksRequest:
     def end_time(self):
         """Gets the end_time of this ListBackgroundTasksRequest.
 
+        查询任务的最大时间，格式为YYYYMMDDHHmmss。
 
         :return: The end_time of this ListBackgroundTasksRequest.
         :rtype: str
@@ -154,6 +163,7 @@ class ListBackgroundTasksRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListBackgroundTasksRequest.
 
+        查询任务的最大时间，格式为YYYYMMDDHHmmss。
 
         :param end_time: The end_time of this ListBackgroundTasksRequest.
         :type: str

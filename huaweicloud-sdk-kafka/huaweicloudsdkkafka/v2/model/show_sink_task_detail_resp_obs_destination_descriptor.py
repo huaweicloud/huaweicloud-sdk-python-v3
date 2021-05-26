@@ -29,8 +29,8 @@ class ShowSinkTaskDetailRespObsDestinationDescriptor:
         'obs_path': 'str',
         'partition_format': 'str',
         'record_delimiter': 'str',
-        'deliver_time_interval': 'str',
-        'obs_part_size': 'str'
+        'deliver_time_interval': 'int',
+        'obs_part_size': 'int'
     }
 
     attribute_map = {
@@ -215,7 +215,7 @@ class ShowSinkTaskDetailRespObsDestinationDescriptor:
         根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。 取值范围：30～900 缺省值：300 单位：秒。 > 使用OBS通道转储流式数据时该参数为必选配置。 
 
         :return: The deliver_time_interval of this ShowSinkTaskDetailRespObsDestinationDescriptor.
-        :rtype: str
+        :rtype: int
         """
         return self._deliver_time_interval
 
@@ -226,7 +226,7 @@ class ShowSinkTaskDetailRespObsDestinationDescriptor:
         根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。 取值范围：30～900 缺省值：300 单位：秒。 > 使用OBS通道转储流式数据时该参数为必选配置。 
 
         :param deliver_time_interval: The deliver_time_interval of this ShowSinkTaskDetailRespObsDestinationDescriptor.
-        :type: str
+        :type: int
         """
         self._deliver_time_interval = deliver_time_interval
 
@@ -234,10 +234,10 @@ class ShowSinkTaskDetailRespObsDestinationDescriptor:
     def obs_part_size(self):
         """Gets the obs_part_size of this ShowSinkTaskDetailRespObsDestinationDescriptor.
 
-        每个传输文件多大后就开始上传，单位为byte。 默认值5242880。
+        每个传输文件多大后就开始上传，单位为byte。 默认值5242880。 
 
         :return: The obs_part_size of this ShowSinkTaskDetailRespObsDestinationDescriptor.
-        :rtype: str
+        :rtype: int
         """
         return self._obs_part_size
 
@@ -245,10 +245,10 @@ class ShowSinkTaskDetailRespObsDestinationDescriptor:
     def obs_part_size(self, obs_part_size):
         """Sets the obs_part_size of this ShowSinkTaskDetailRespObsDestinationDescriptor.
 
-        每个传输文件多大后就开始上传，单位为byte。 默认值5242880。
+        每个传输文件多大后就开始上传，单位为byte。 默认值5242880。 
 
         :param obs_part_size: The obs_part_size of this ShowSinkTaskDetailRespObsDestinationDescriptor.
-        :type: str
+        :type: int
         """
         self._obs_part_size = obs_part_size
 

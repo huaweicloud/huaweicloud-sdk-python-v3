@@ -102,7 +102,7 @@ class QueryResourceResultDTO:
     def type(self):
         """Gets the type of this QueryResourceResultDTO.
 
-        资源类型，前台通过查询接口返回该sp支持售卖的资源在界面上做相应屏蔽，当前为枚举类型. - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏
+        资源类型，前台通过查询接口返回该sp支持售卖的资源在界面上做相应屏蔽，当前为枚举类型. - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏 - IDEA_HUB   - ideahub
 
         :return: The type of this QueryResourceResultDTO.
         :rtype: str
@@ -113,7 +113,7 @@ class QueryResourceResultDTO:
     def type(self, type):
         """Sets the type of this QueryResourceResultDTO.
 
-        资源类型，前台通过查询接口返回该sp支持售卖的资源在界面上做相应屏蔽，当前为枚举类型. - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏
+        资源类型，前台通过查询接口返回该sp支持售卖的资源在界面上做相应屏蔽，当前为枚举类型. - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏 - IDEA_HUB   - ideahub
 
         :param type: The type of this QueryResourceResultDTO.
         :type: str
@@ -234,7 +234,7 @@ class QueryResourceResultDTO:
     def editable(self):
         """Gets the editable of this QueryResourceResultDTO.
 
-        标识资源是否可以编辑或删除，为false时，前台需要屏蔽操作按钮
+        标识资源是否可以编辑或删除
 
         :return: The editable of this QueryResourceResultDTO.
         :rtype: bool
@@ -245,7 +245,7 @@ class QueryResourceResultDTO:
     def editable(self, editable):
         """Sets the editable of this QueryResourceResultDTO.
 
-        标识资源是否可以编辑或删除，为false时，前台需要屏蔽操作按钮
+        标识资源是否可以编辑或删除
 
         :param editable: The editable of this QueryResourceResultDTO.
         :type: bool

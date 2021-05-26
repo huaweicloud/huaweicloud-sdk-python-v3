@@ -48,6 +48,7 @@ class ShowComponentDetailRequest:
     def application_id(self):
         """Gets the application_id of this ShowComponentDetailRequest.
 
+        应用ID。
 
         :return: The application_id of this ShowComponentDetailRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowComponentDetailRequest:
     def application_id(self, application_id):
         """Sets the application_id of this ShowComponentDetailRequest.
 
+        应用ID。
 
         :param application_id: The application_id of this ShowComponentDetailRequest.
         :type: str
@@ -68,6 +70,7 @@ class ShowComponentDetailRequest:
     def component_id(self):
         """Gets the component_id of this ShowComponentDetailRequest.
 
+        组件ID。
 
         :return: The component_id of this ShowComponentDetailRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowComponentDetailRequest:
     def component_id(self, component_id):
         """Sets the component_id of this ShowComponentDetailRequest.
 
+        组件ID。
 
         :param component_id: The component_id of this ShowComponentDetailRequest.
         :type: str

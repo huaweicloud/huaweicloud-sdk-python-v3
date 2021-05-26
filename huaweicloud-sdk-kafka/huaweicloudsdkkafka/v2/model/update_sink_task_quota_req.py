@@ -23,7 +23,7 @@ class UpdateSinkTaskQuotaReq:
     sensitive_list = []
 
     openapi_types = {
-        'sink_max_tasks': 'str'
+        'sink_max_tasks': 'int'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class UpdateSinkTaskQuotaReq:
         转储任务的总个数。 
 
         :return: The sink_max_tasks of this UpdateSinkTaskQuotaReq.
-        :rtype: str
+        :rtype: int
         """
         return self._sink_max_tasks
 
@@ -58,7 +58,7 @@ class UpdateSinkTaskQuotaReq:
         转储任务的总个数。 
 
         :param sink_max_tasks: The sink_max_tasks of this UpdateSinkTaskQuotaReq.
-        :type: str
+        :type: int
         """
         self._sink_max_tasks = sink_max_tasks
 

@@ -33,7 +33,7 @@ class ShowNetworkIpAvailabilitiesResponse(SdkResponse):
     def __init__(self, network_ip_availability=None):
         """ShowNetworkIpAvailabilitiesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowNetworkIpAvailabilitiesResponse, self).__init__()
 
         self._network_ip_availability = None
         self.discriminator = None

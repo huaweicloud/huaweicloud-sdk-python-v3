@@ -49,6 +49,7 @@ class CreateVersionAliasRequest:
     def function_urn(self):
         """Gets the function_urn of this CreateVersionAliasRequest.
 
+        函数的URN。
 
         :return: The function_urn of this CreateVersionAliasRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateVersionAliasRequest:
     def function_urn(self, function_urn):
         """Sets the function_urn of this CreateVersionAliasRequest.
 
+        函数的URN。
 
         :param function_urn: The function_urn of this CreateVersionAliasRequest.
         :type: str

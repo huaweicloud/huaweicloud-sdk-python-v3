@@ -49,6 +49,7 @@ class UpdateSubNetworkInterfaceRequest:
     def sub_network_interface_id(self):
         """Gets the sub_network_interface_id of this UpdateSubNetworkInterfaceRequest.
 
+        辅助弹性网卡的唯一标识
 
         :return: The sub_network_interface_id of this UpdateSubNetworkInterfaceRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateSubNetworkInterfaceRequest:
     def sub_network_interface_id(self, sub_network_interface_id):
         """Sets the sub_network_interface_id of this UpdateSubNetworkInterfaceRequest.
 
+        辅助弹性网卡的唯一标识
 
         :param sub_network_interface_id: The sub_network_interface_id of this UpdateSubNetworkInterfaceRequest.
         :type: str

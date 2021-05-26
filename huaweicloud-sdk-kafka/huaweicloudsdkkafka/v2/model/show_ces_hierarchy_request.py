@@ -44,6 +44,7 @@ class ShowCesHierarchyRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowCesHierarchyRequest.
 
+        实例ID。
 
         :return: The instance_id of this ShowCesHierarchyRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowCesHierarchyRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowCesHierarchyRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ShowCesHierarchyRequest.
         :type: str

@@ -33,7 +33,7 @@ class UpdateFunctionReservedInstancesResponse(SdkResponse):
     def __init__(self, count=None):
         """UpdateFunctionReservedInstancesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateFunctionReservedInstancesResponse, self).__init__()
 
         self._count = None
         self.discriminator = None

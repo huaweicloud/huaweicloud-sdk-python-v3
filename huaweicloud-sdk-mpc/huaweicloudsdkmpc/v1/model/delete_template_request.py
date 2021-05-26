@@ -44,6 +44,7 @@ class DeleteTemplateRequest:
     def template_id(self):
         """Gets the template_id of this DeleteTemplateRequest.
 
+        自定义转码模板ID 
 
         :return: The template_id of this DeleteTemplateRequest.
         :rtype: int
@@ -54,6 +55,7 @@ class DeleteTemplateRequest:
     def template_id(self, template_id):
         """Sets the template_id of this DeleteTemplateRequest.
 
+        自定义转码模板ID 
 
         :param template_id: The template_id of this DeleteTemplateRequest.
         :type: int

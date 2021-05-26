@@ -48,6 +48,7 @@ class ListResourceTagsRequest:
     def resource_type(self):
         """Gets the resource_type of this ListResourceTagsRequest.
 
+        资源类型 目前有: smn_topic，主题 smn_sms，短信 smn_application，移动推送
 
         :return: The resource_type of this ListResourceTagsRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ListResourceTagsRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListResourceTagsRequest.
 
+        资源类型 目前有: smn_topic，主题 smn_sms，短信 smn_application，移动推送
 
         :param resource_type: The resource_type of this ListResourceTagsRequest.
         :type: str
@@ -68,6 +70,7 @@ class ListResourceTagsRequest:
     def resource_id(self):
         """Gets the resource_id of this ListResourceTagsRequest.
 
+        资源ID。  获取resource_id的方法：  当resource_type为“smn_topic”时， 手动添加请求消息头“X-SMN-RESOURCEID-TYPE=name”，资源ID即为topic名称。 不添加请求消息头，通过“查询资源实例”，获取资源ID。 当resource_type为“smn_sms”时，resource_id为签名ID。您可在控制台获取。
 
         :return: The resource_id of this ListResourceTagsRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ListResourceTagsRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ListResourceTagsRequest.
 
+        资源ID。  获取resource_id的方法：  当resource_type为“smn_topic”时， 手动添加请求消息头“X-SMN-RESOURCEID-TYPE=name”，资源ID即为topic名称。 不添加请求消息头，通过“查询资源实例”，获取资源ID。 当resource_type为“smn_sms”时，resource_id为签名ID。您可在控制台获取。
 
         :param resource_id: The resource_id of this ListResourceTagsRequest.
         :type: str

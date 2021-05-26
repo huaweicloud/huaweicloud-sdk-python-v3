@@ -58,6 +58,7 @@ class ListRetentionHistoriesRequest:
     def namespace(self):
         """Gets the namespace of this ListRetentionHistoriesRequest.
 
+        组织名称
 
         :return: The namespace of this ListRetentionHistoriesRequest.
         :rtype: str
@@ -68,6 +69,7 @@ class ListRetentionHistoriesRequest:
     def namespace(self, namespace):
         """Sets the namespace of this ListRetentionHistoriesRequest.
 
+        组织名称
 
         :param namespace: The namespace of this ListRetentionHistoriesRequest.
         :type: str
@@ -78,6 +80,7 @@ class ListRetentionHistoriesRequest:
     def repository(self):
         """Gets the repository of this ListRetentionHistoriesRequest.
 
+        镜像仓库名称
 
         :return: The repository of this ListRetentionHistoriesRequest.
         :rtype: str
@@ -88,6 +91,7 @@ class ListRetentionHistoriesRequest:
     def repository(self, repository):
         """Sets the repository of this ListRetentionHistoriesRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this ListRetentionHistoriesRequest.
         :type: str
@@ -98,6 +102,7 @@ class ListRetentionHistoriesRequest:
     def offset(self):
         """Gets the offset of this ListRetentionHistoriesRequest.
 
+        起始索引。**注意：offset和limit参数需要配套使用** 
 
         :return: The offset of this ListRetentionHistoriesRequest.
         :rtype: str
@@ -108,6 +113,7 @@ class ListRetentionHistoriesRequest:
     def offset(self, offset):
         """Sets the offset of this ListRetentionHistoriesRequest.
 
+        起始索引。**注意：offset和limit参数需要配套使用** 
 
         :param offset: The offset of this ListRetentionHistoriesRequest.
         :type: str
@@ -118,6 +124,7 @@ class ListRetentionHistoriesRequest:
     def limit(self):
         """Gets the limit of this ListRetentionHistoriesRequest.
 
+        返回条数。**注意：offset和limit参数需要配套使用** 
 
         :return: The limit of this ListRetentionHistoriesRequest.
         :rtype: str
@@ -128,6 +135,7 @@ class ListRetentionHistoriesRequest:
     def limit(self, limit):
         """Sets the limit of this ListRetentionHistoriesRequest.
 
+        返回条数。**注意：offset和limit参数需要配套使用** 
 
         :param limit: The limit of this ListRetentionHistoriesRequest.
         :type: str

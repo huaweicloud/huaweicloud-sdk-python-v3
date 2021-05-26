@@ -33,7 +33,7 @@ class RecognizeMvsInvoiceResponse(SdkResponse):
     def __init__(self, result=None):
         """RecognizeMvsInvoiceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RecognizeMvsInvoiceResponse, self).__init__()
 
         self._result = None
         self.discriminator = None

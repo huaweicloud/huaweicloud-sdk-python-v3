@@ -74,6 +74,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def conf_uuid(self):
         """Gets the conf_uuid of this SearchCtlRecordsOfHisMeetingRequest.
 
+        会议UUID。
 
         :return: The conf_uuid of this SearchCtlRecordsOfHisMeetingRequest.
         :rtype: str
@@ -84,6 +85,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def conf_uuid(self, conf_uuid):
         """Sets the conf_uuid of this SearchCtlRecordsOfHisMeetingRequest.
 
+        会议UUID。
 
         :param conf_uuid: The conf_uuid of this SearchCtlRecordsOfHisMeetingRequest.
         :type: str
@@ -94,6 +96,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def offset(self):
         """Gets the offset of this SearchCtlRecordsOfHisMeetingRequest.
 
+        指定返回的记录索引。该值必须大于等于0； 默认为0。
 
         :return: The offset of this SearchCtlRecordsOfHisMeetingRequest.
         :rtype: int
@@ -104,6 +107,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def offset(self, offset):
         """Sets the offset of this SearchCtlRecordsOfHisMeetingRequest.
 
+        指定返回的记录索引。该值必须大于等于0； 默认为0。
 
         :param offset: The offset of this SearchCtlRecordsOfHisMeetingRequest.
         :type: int
@@ -114,6 +118,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def limit(self):
         """Gets the limit of this SearchCtlRecordsOfHisMeetingRequest.
 
+        指定返回的记录数，默认是20，最大500条。
 
         :return: The limit of this SearchCtlRecordsOfHisMeetingRequest.
         :rtype: int
@@ -124,6 +129,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def limit(self, limit):
         """Sets the limit of this SearchCtlRecordsOfHisMeetingRequest.
 
+        指定返回的记录数，默认是20，最大500条。
 
         :param limit: The limit of this SearchCtlRecordsOfHisMeetingRequest.
         :type: int
@@ -134,6 +140,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def user_uuid(self):
         """Gets the user_uuid of this SearchCtlRecordsOfHisMeetingRequest.
 
+        用户的UUID（已在USG注册过的）。
 
         :return: The user_uuid of this SearchCtlRecordsOfHisMeetingRequest.
         :rtype: str
@@ -144,6 +151,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def user_uuid(self, user_uuid):
         """Sets the user_uuid of this SearchCtlRecordsOfHisMeetingRequest.
 
+        用户的UUID（已在USG注册过的）。
 
         :param user_uuid: The user_uuid of this SearchCtlRecordsOfHisMeetingRequest.
         :type: str
@@ -154,6 +162,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def x_authorization_type(self):
         """Gets the x_authorization_type of this SearchCtlRecordsOfHisMeetingRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :return: The x_authorization_type of this SearchCtlRecordsOfHisMeetingRequest.
         :rtype: str
@@ -164,6 +173,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def x_authorization_type(self, x_authorization_type):
         """Sets the x_authorization_type of this SearchCtlRecordsOfHisMeetingRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this SearchCtlRecordsOfHisMeetingRequest.
         :type: str
@@ -174,6 +184,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def x_site_id(self):
         """Gets the x_site_id of this SearchCtlRecordsOfHisMeetingRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :return: The x_site_id of this SearchCtlRecordsOfHisMeetingRequest.
         :rtype: str
@@ -184,6 +195,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def x_site_id(self, x_site_id):
         """Sets the x_site_id of this SearchCtlRecordsOfHisMeetingRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this SearchCtlRecordsOfHisMeetingRequest.
         :type: str
@@ -194,6 +206,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def accept_language(self):
         """Gets the accept_language of this SearchCtlRecordsOfHisMeetingRequest.
 
+        语言。默认简体中文。 - zh-CN: 简体中文。 - en-US: 美国英文。
 
         :return: The accept_language of this SearchCtlRecordsOfHisMeetingRequest.
         :rtype: str
@@ -204,6 +217,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this SearchCtlRecordsOfHisMeetingRequest.
 
+        语言。默认简体中文。 - zh-CN: 简体中文。 - en-US: 美国英文。
 
         :param accept_language: The accept_language of this SearchCtlRecordsOfHisMeetingRequest.
         :type: str

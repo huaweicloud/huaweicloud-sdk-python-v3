@@ -1,6 +1,7 @@
 # coding: utf-8
 
 import types
+import six
 
 from huaweicloudsdkcore.region.region import Region
 
@@ -11,12 +12,12 @@ class TmsRegion:
 
     CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://tms.myhuaweicloud.com")
 
-    static_fields = types.MappingProxyType({
+    static_fields = {
         "cn-north-4": CN_NORTH_4,
-    })
+    }
 
     @staticmethod
-    def value_of(region_id, static_fields=static_fields):
+    def value_of(region_id, static_fields=types.MappingProxyType(static_fields) if six.PY3 else static_fields):
         if region_id is None or len(region_id) == 0:
             raise KeyError("Unexpected empty parameter: region_id.")
         if not static_fields.get(region_id):

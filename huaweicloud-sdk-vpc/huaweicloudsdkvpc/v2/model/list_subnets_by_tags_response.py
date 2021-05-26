@@ -35,7 +35,7 @@ class ListSubnetsByTagsResponse(SdkResponse):
     def __init__(self, resources=None, total_count=None):
         """ListSubnetsByTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSubnetsByTagsResponse, self).__init__()
 
         self._resources = None
         self._total_count = None

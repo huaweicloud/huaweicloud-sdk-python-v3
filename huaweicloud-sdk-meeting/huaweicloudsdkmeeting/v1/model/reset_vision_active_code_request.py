@@ -59,6 +59,7 @@ class ResetVisionActiveCodeRequest:
     def x_request_id(self):
         """Gets the x_request_id of this ResetVisionActiveCodeRequest.
 
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :return: The x_request_id of this ResetVisionActiveCodeRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class ResetVisionActiveCodeRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this ResetVisionActiveCodeRequest.
 
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this ResetVisionActiveCodeRequest.
         :type: str
@@ -79,6 +81,7 @@ class ResetVisionActiveCodeRequest:
     def accept_language(self):
         """Gets the accept_language of this ResetVisionActiveCodeRequest.
 
+        语言参数，默认为中文zh_CN, 英文为en_US
 
         :return: The accept_language of this ResetVisionActiveCodeRequest.
         :rtype: str
@@ -89,6 +92,7 @@ class ResetVisionActiveCodeRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this ResetVisionActiveCodeRequest.
 
+        语言参数，默认为中文zh_CN, 英文为en_US
 
         :param accept_language: The accept_language of this ResetVisionActiveCodeRequest.
         :type: str
@@ -99,6 +103,7 @@ class ResetVisionActiveCodeRequest:
     def account(self):
         """Gets the account of this ResetVisionActiveCodeRequest.
 
+        账号 可通过用户管理中分页查询用户接口获取，对应接口返回userAccount字段。 
 
         :return: The account of this ResetVisionActiveCodeRequest.
         :rtype: str
@@ -109,6 +114,7 @@ class ResetVisionActiveCodeRequest:
     def account(self, account):
         """Sets the account of this ResetVisionActiveCodeRequest.
 
+        账号 可通过用户管理中分页查询用户接口获取，对应接口返回userAccount字段。 
 
         :param account: The account of this ResetVisionActiveCodeRequest.
         :type: str

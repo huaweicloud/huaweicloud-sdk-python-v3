@@ -53,6 +53,7 @@ class DeleteImageSyncRepoRequest:
     def namespace(self):
         """Gets the namespace of this DeleteImageSyncRepoRequest.
 
+        组织名称
 
         :return: The namespace of this DeleteImageSyncRepoRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class DeleteImageSyncRepoRequest:
     def namespace(self, namespace):
         """Sets the namespace of this DeleteImageSyncRepoRequest.
 
+        组织名称
 
         :param namespace: The namespace of this DeleteImageSyncRepoRequest.
         :type: str
@@ -73,6 +75,7 @@ class DeleteImageSyncRepoRequest:
     def repository(self):
         """Gets the repository of this DeleteImageSyncRepoRequest.
 
+        镜像仓库名称
 
         :return: The repository of this DeleteImageSyncRepoRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class DeleteImageSyncRepoRequest:
     def repository(self, repository):
         """Sets the repository of this DeleteImageSyncRepoRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this DeleteImageSyncRepoRequest.
         :type: str

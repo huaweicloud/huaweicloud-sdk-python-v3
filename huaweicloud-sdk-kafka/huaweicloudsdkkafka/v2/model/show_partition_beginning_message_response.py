@@ -39,7 +39,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
     def __init__(self, topic=None, partition=None, message_offset=None, timestamp=None):
         """ShowPartitionBeginningMessageResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowPartitionBeginningMessageResponse, self).__init__()
 
         self._topic = None
         self._partition = None

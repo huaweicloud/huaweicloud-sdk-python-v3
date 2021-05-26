@@ -61,7 +61,7 @@ class ShowInstanceDetailResponse(SdkResponse):
     def __init__(self, id=None, name=None, description=None, environment_id=None, platform_type=None, flavor_id=None, artifacts=None, version=None, configuration=None, creator=None, create_time=None, update_time=None, external_accesses=None, refer_resources=None, status_detail=None):
         """ShowInstanceDetailResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowInstanceDetailResponse, self).__init__()
 
         self._id = None
         self._name = None

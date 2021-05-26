@@ -33,7 +33,7 @@ class UpdateNatGatewayResponse(SdkResponse):
     def __init__(self, nat_gateway=None):
         """UpdateNatGatewayResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateNatGatewayResponse, self).__init__()
 
         self._nat_gateway = None
         self.discriminator = None

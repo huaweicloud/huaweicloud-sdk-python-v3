@@ -50,6 +50,7 @@ class ListTopicsRequest:
     def offset(self):
         """Gets the offset of this ListTopicsRequest.
 
+        偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
         :return: The offset of this ListTopicsRequest.
         :rtype: int
@@ -60,6 +61,7 @@ class ListTopicsRequest:
     def offset(self, offset):
         """Sets the offset of this ListTopicsRequest.
 
+        偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
         :param offset: The offset of this ListTopicsRequest.
         :type: int
@@ -70,6 +72,7 @@ class ListTopicsRequest:
     def limit(self):
         """Gets the limit of this ListTopicsRequest.
 
+         查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
         :return: The limit of this ListTopicsRequest.
         :rtype: int
@@ -80,6 +83,7 @@ class ListTopicsRequest:
     def limit(self, limit):
         """Sets the limit of this ListTopicsRequest.
 
+         查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
         :param limit: The limit of this ListTopicsRequest.
         :type: int

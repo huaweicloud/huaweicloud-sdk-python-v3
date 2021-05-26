@@ -60,6 +60,7 @@ class ListTemplateGroupRequest:
     def group_id(self):
         """Gets the group_id of this ListTemplateGroupRequest.
 
+        转码模板组ID，最多10个 
 
         :return: The group_id of this ListTemplateGroupRequest.
         :rtype: list[str]
@@ -70,6 +71,7 @@ class ListTemplateGroupRequest:
     def group_id(self, group_id):
         """Sets the group_id of this ListTemplateGroupRequest.
 
+        转码模板组ID，最多10个 
 
         :param group_id: The group_id of this ListTemplateGroupRequest.
         :type: list[str]
@@ -80,6 +82,7 @@ class ListTemplateGroupRequest:
     def group_name(self):
         """Gets the group_name of this ListTemplateGroupRequest.
 
+        转码模板组名，最多10个 
 
         :return: The group_name of this ListTemplateGroupRequest.
         :rtype: list[str]
@@ -90,6 +93,7 @@ class ListTemplateGroupRequest:
     def group_name(self, group_name):
         """Sets the group_name of this ListTemplateGroupRequest.
 
+        转码模板组名，最多10个 
 
         :param group_name: The group_name of this ListTemplateGroupRequest.
         :type: list[str]
@@ -100,6 +104,7 @@ class ListTemplateGroupRequest:
     def page(self):
         """Gets the page of this ListTemplateGroupRequest.
 
+        分页编号。查询指定“group_id”时，该参数无效。  默认值：0。 
 
         :return: The page of this ListTemplateGroupRequest.
         :rtype: int
@@ -110,6 +115,7 @@ class ListTemplateGroupRequest:
     def page(self, page):
         """Sets the page of this ListTemplateGroupRequest.
 
+        分页编号。查询指定“group_id”时，该参数无效。  默认值：0。 
 
         :param page: The page of this ListTemplateGroupRequest.
         :type: int
@@ -120,6 +126,7 @@ class ListTemplateGroupRequest:
     def size(self):
         """Gets the size of this ListTemplateGroupRequest.
 
+        每页记录数。取值范围：[1,100]，指定group_id时该参数无效。 
 
         :return: The size of this ListTemplateGroupRequest.
         :rtype: int
@@ -130,6 +137,7 @@ class ListTemplateGroupRequest:
     def size(self, size):
         """Sets the size of this ListTemplateGroupRequest.
 
+        每页记录数。取值范围：[1,100]，指定group_id时该参数无效。 
 
         :param size: The size of this ListTemplateGroupRequest.
         :type: int

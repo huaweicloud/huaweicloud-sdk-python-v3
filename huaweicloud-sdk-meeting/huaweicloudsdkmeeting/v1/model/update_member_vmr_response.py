@@ -31,7 +31,7 @@ class UpdateMemberVmrResponse(SdkResponse):
     def __init__(self):
         """UpdateMemberVmrResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateMemberVmrResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

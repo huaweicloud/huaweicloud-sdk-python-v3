@@ -35,7 +35,7 @@ class ShowStreamPortraitResponse(SdkResponse):
     def __init__(self, stream_portraits=None, x_request_id=None):
         """ShowStreamPortraitResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowStreamPortraitResponse, self).__init__()
 
         self._stream_portraits = None
         self._x_request_id = None

@@ -53,6 +53,7 @@ class UpdateSecretStageRequest:
     def secret_id(self):
         """Gets the secret_id of this UpdateSecretStageRequest.
 
+        凭据的资源标识符。
 
         :return: The secret_id of this UpdateSecretStageRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class UpdateSecretStageRequest:
     def secret_id(self, secret_id):
         """Sets the secret_id of this UpdateSecretStageRequest.
 
+        凭据的资源标识符。
 
         :param secret_id: The secret_id of this UpdateSecretStageRequest.
         :type: str
@@ -73,6 +75,7 @@ class UpdateSecretStageRequest:
     def stage_name(self):
         """Gets the stage_name of this UpdateSecretStageRequest.
 
+        凭据版本状态的名称。
 
         :return: The stage_name of this UpdateSecretStageRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class UpdateSecretStageRequest:
     def stage_name(self, stage_name):
         """Sets the stage_name of this UpdateSecretStageRequest.
 
+        凭据版本状态的名称。
 
         :param stage_name: The stage_name of this UpdateSecretStageRequest.
         :type: str

@@ -35,7 +35,7 @@ class ShowBandwidthResponse(SdkResponse):
     def __init__(self, total=None, bandwidth_info=None):
         """ShowBandwidthResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowBandwidthResponse, self).__init__()
 
         self._total = None
         self._bandwidth_info = None

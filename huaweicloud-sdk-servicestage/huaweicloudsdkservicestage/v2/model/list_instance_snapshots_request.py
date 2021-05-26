@@ -72,6 +72,7 @@ class ListInstanceSnapshotsRequest:
     def application_id(self):
         """Gets the application_id of this ListInstanceSnapshotsRequest.
 
+        应用ID。
 
         :return: The application_id of this ListInstanceSnapshotsRequest.
         :rtype: str
@@ -82,6 +83,7 @@ class ListInstanceSnapshotsRequest:
     def application_id(self, application_id):
         """Sets the application_id of this ListInstanceSnapshotsRequest.
 
+        应用ID。
 
         :param application_id: The application_id of this ListInstanceSnapshotsRequest.
         :type: str
@@ -92,6 +94,7 @@ class ListInstanceSnapshotsRequest:
     def component_id(self):
         """Gets the component_id of this ListInstanceSnapshotsRequest.
 
+        组件ID。
 
         :return: The component_id of this ListInstanceSnapshotsRequest.
         :rtype: str
@@ -102,6 +105,7 @@ class ListInstanceSnapshotsRequest:
     def component_id(self, component_id):
         """Sets the component_id of this ListInstanceSnapshotsRequest.
 
+        组件ID。
 
         :param component_id: The component_id of this ListInstanceSnapshotsRequest.
         :type: str
@@ -112,6 +116,7 @@ class ListInstanceSnapshotsRequest:
     def instance_id(self):
         """Gets the instance_id of this ListInstanceSnapshotsRequest.
 
+        组件实例ID。
 
         :return: The instance_id of this ListInstanceSnapshotsRequest.
         :rtype: str
@@ -122,6 +127,7 @@ class ListInstanceSnapshotsRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListInstanceSnapshotsRequest.
 
+        组件实例ID。
 
         :param instance_id: The instance_id of this ListInstanceSnapshotsRequest.
         :type: str
@@ -132,6 +138,7 @@ class ListInstanceSnapshotsRequest:
     def limit(self):
         """Gets the limit of this ListInstanceSnapshotsRequest.
 
+        指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
         :return: The limit of this ListInstanceSnapshotsRequest.
         :rtype: int
@@ -142,6 +149,7 @@ class ListInstanceSnapshotsRequest:
     def limit(self, limit):
         """Sets the limit of this ListInstanceSnapshotsRequest.
 
+        指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
         :param limit: The limit of this ListInstanceSnapshotsRequest.
         :type: int
@@ -152,6 +160,7 @@ class ListInstanceSnapshotsRequest:
     def offset(self):
         """Gets the offset of this ListInstanceSnapshotsRequest.
 
+        指定查询偏移量，默认偏移量为0.
 
         :return: The offset of this ListInstanceSnapshotsRequest.
         :rtype: int
@@ -162,6 +171,7 @@ class ListInstanceSnapshotsRequest:
     def offset(self, offset):
         """Sets the offset of this ListInstanceSnapshotsRequest.
 
+        指定查询偏移量，默认偏移量为0.
 
         :param offset: The offset of this ListInstanceSnapshotsRequest.
         :type: int
@@ -172,6 +182,7 @@ class ListInstanceSnapshotsRequest:
     def snapshot_order_by(self):
         """Gets the snapshot_order_by of this ListInstanceSnapshotsRequest.
 
+        排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、version。 
 
         :return: The snapshot_order_by of this ListInstanceSnapshotsRequest.
         :rtype: str
@@ -182,6 +193,7 @@ class ListInstanceSnapshotsRequest:
     def snapshot_order_by(self, snapshot_order_by):
         """Sets the snapshot_order_by of this ListInstanceSnapshotsRequest.
 
+        排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、version。 
 
         :param snapshot_order_by: The snapshot_order_by of this ListInstanceSnapshotsRequest.
         :type: str
@@ -192,6 +204,7 @@ class ListInstanceSnapshotsRequest:
     def order(self):
         """Gets the order of this ListInstanceSnapshotsRequest.
 
+        desc/asc，默认desc。
 
         :return: The order of this ListInstanceSnapshotsRequest.
         :rtype: str
@@ -202,6 +215,7 @@ class ListInstanceSnapshotsRequest:
     def order(self, order):
         """Sets the order of this ListInstanceSnapshotsRequest.
 
+        desc/asc，默认desc。
 
         :param order: The order of this ListInstanceSnapshotsRequest.
         :type: str

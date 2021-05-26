@@ -31,7 +31,7 @@ class DeleteAnimatedGraphicsTaskResponse(SdkResponse):
     def __init__(self):
         """DeleteAnimatedGraphicsTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteAnimatedGraphicsTaskResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

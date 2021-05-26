@@ -48,6 +48,7 @@ class DeleteIssueV4Request:
     def project_id(self):
         """Gets the project_id of this DeleteIssueV4Request.
 
+        项目id
 
         :return: The project_id of this DeleteIssueV4Request.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteIssueV4Request:
     def project_id(self, project_id):
         """Sets the project_id of this DeleteIssueV4Request.
 
+        项目id
 
         :param project_id: The project_id of this DeleteIssueV4Request.
         :type: str
@@ -68,6 +70,7 @@ class DeleteIssueV4Request:
     def issue_id(self):
         """Gets the issue_id of this DeleteIssueV4Request.
 
+        工作项id
 
         :return: The issue_id of this DeleteIssueV4Request.
         :rtype: int
@@ -78,6 +81,7 @@ class DeleteIssueV4Request:
     def issue_id(self, issue_id):
         """Sets the issue_id of this DeleteIssueV4Request.
 
+        工作项id
 
         :param issue_id: The issue_id of this DeleteIssueV4Request.
         :type: int

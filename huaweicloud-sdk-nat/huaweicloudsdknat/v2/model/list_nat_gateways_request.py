@@ -100,6 +100,7 @@ class ListNatGatewaysRequest:
     def tenant_id(self):
         """Gets the tenant_id of this ListNatGatewaysRequest.
 
+        项目的ID。
 
         :return: The tenant_id of this ListNatGatewaysRequest.
         :rtype: str
@@ -110,6 +111,7 @@ class ListNatGatewaysRequest:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this ListNatGatewaysRequest.
 
+        项目的ID。
 
         :param tenant_id: The tenant_id of this ListNatGatewaysRequest.
         :type: str
@@ -120,6 +122,7 @@ class ListNatGatewaysRequest:
     def id(self):
         """Gets the id of this ListNatGatewaysRequest.
 
+        公网NAT网关实例的ID。
 
         :return: The id of this ListNatGatewaysRequest.
         :rtype: str
@@ -130,6 +133,7 @@ class ListNatGatewaysRequest:
     def id(self, id):
         """Sets the id of this ListNatGatewaysRequest.
 
+        公网NAT网关实例的ID。
 
         :param id: The id of this ListNatGatewaysRequest.
         :type: str
@@ -140,6 +144,7 @@ class ListNatGatewaysRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListNatGatewaysRequest.
 
+        企业项目ID。创建公网NAT网关实例时，关联的企业项目ID。
 
         :return: The enterprise_project_id of this ListNatGatewaysRequest.
         :rtype: str
@@ -150,6 +155,7 @@ class ListNatGatewaysRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListNatGatewaysRequest.
 
+        企业项目ID。创建公网NAT网关实例时，关联的企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListNatGatewaysRequest.
         :type: str
@@ -160,6 +166,7 @@ class ListNatGatewaysRequest:
     def description(self):
         """Gets the description of this ListNatGatewaysRequest.
 
+        公网NAT网关实例的描述，长度限制为255。
 
         :return: The description of this ListNatGatewaysRequest.
         :rtype: str
@@ -170,6 +177,7 @@ class ListNatGatewaysRequest:
     def description(self, description):
         """Sets the description of this ListNatGatewaysRequest.
 
+        公网NAT网关实例的描述，长度限制为255。
 
         :param description: The description of this ListNatGatewaysRequest.
         :type: str
@@ -180,6 +188,7 @@ class ListNatGatewaysRequest:
     def created_at(self):
         """Gets the created_at of this ListNatGatewaysRequest.
 
+        公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
         :return: The created_at of this ListNatGatewaysRequest.
         :rtype: datetime
@@ -190,6 +199,7 @@ class ListNatGatewaysRequest:
     def created_at(self, created_at):
         """Sets the created_at of this ListNatGatewaysRequest.
 
+        公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
         :param created_at: The created_at of this ListNatGatewaysRequest.
         :type: datetime
@@ -200,6 +210,7 @@ class ListNatGatewaysRequest:
     def name(self):
         """Gets the name of this ListNatGatewaysRequest.
 
+        公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文
 
         :return: The name of this ListNatGatewaysRequest.
         :rtype: str
@@ -210,6 +221,7 @@ class ListNatGatewaysRequest:
     def name(self, name):
         """Sets the name of this ListNatGatewaysRequest.
 
+        公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文
 
         :param name: The name of this ListNatGatewaysRequest.
         :type: str
@@ -220,6 +232,7 @@ class ListNatGatewaysRequest:
     def status(self):
         """Gets the status of this ListNatGatewaysRequest.
 
+        公网NAT网关实例的状态。
 
         :return: The status of this ListNatGatewaysRequest.
         :rtype: list[str]
@@ -230,6 +243,7 @@ class ListNatGatewaysRequest:
     def status(self, status):
         """Sets the status of this ListNatGatewaysRequest.
 
+        公网NAT网关实例的状态。
 
         :param status: The status of this ListNatGatewaysRequest.
         :type: list[str]
@@ -240,6 +254,7 @@ class ListNatGatewaysRequest:
     def spec(self):
         """Gets the spec of this ListNatGatewaysRequest.
 
+        公网NAT网关实例的规格。 取值为： \"1\"：小型，SNAT最大连接数10000 \"2\"：中型，SNAT最大连接数50000 \"3\"：大型，SNAT最大连接数200000 \"4\"：超大型，SNAT最大连接数1000000 
 
         :return: The spec of this ListNatGatewaysRequest.
         :rtype: list[str]
@@ -250,6 +265,7 @@ class ListNatGatewaysRequest:
     def spec(self, spec):
         """Sets the spec of this ListNatGatewaysRequest.
 
+        公网NAT网关实例的规格。 取值为： \"1\"：小型，SNAT最大连接数10000 \"2\"：中型，SNAT最大连接数50000 \"3\"：大型，SNAT最大连接数200000 \"4\"：超大型，SNAT最大连接数1000000 
 
         :param spec: The spec of this ListNatGatewaysRequest.
         :type: list[str]
@@ -260,6 +276,7 @@ class ListNatGatewaysRequest:
     def admin_state_up(self):
         """Gets the admin_state_up of this ListNatGatewaysRequest.
 
+        解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
 
         :return: The admin_state_up of this ListNatGatewaysRequest.
         :rtype: bool
@@ -270,6 +287,7 @@ class ListNatGatewaysRequest:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this ListNatGatewaysRequest.
 
+        解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
 
         :param admin_state_up: The admin_state_up of this ListNatGatewaysRequest.
         :type: bool
@@ -280,6 +298,7 @@ class ListNatGatewaysRequest:
     def internal_network_id(self):
         """Gets the internal_network_id of this ListNatGatewaysRequest.
 
+        公网NAT网关下行口（DVR的下一跳）所属的network id。
 
         :return: The internal_network_id of this ListNatGatewaysRequest.
         :rtype: str
@@ -290,6 +309,7 @@ class ListNatGatewaysRequest:
     def internal_network_id(self, internal_network_id):
         """Sets the internal_network_id of this ListNatGatewaysRequest.
 
+        公网NAT网关下行口（DVR的下一跳）所属的network id。
 
         :param internal_network_id: The internal_network_id of this ListNatGatewaysRequest.
         :type: str
@@ -300,6 +320,7 @@ class ListNatGatewaysRequest:
     def router_id(self):
         """Gets the router_id of this ListNatGatewaysRequest.
 
+        VPC的id。
 
         :return: The router_id of this ListNatGatewaysRequest.
         :rtype: str
@@ -310,6 +331,7 @@ class ListNatGatewaysRequest:
     def router_id(self, router_id):
         """Sets the router_id of this ListNatGatewaysRequest.
 
+        VPC的id。
 
         :param router_id: The router_id of this ListNatGatewaysRequest.
         :type: str
@@ -320,6 +342,7 @@ class ListNatGatewaysRequest:
     def limit(self):
         """Gets the limit of this ListNatGatewaysRequest.
 
+        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
         :return: The limit of this ListNatGatewaysRequest.
         :rtype: int
@@ -330,6 +353,7 @@ class ListNatGatewaysRequest:
     def limit(self, limit):
         """Sets the limit of this ListNatGatewaysRequest.
 
+        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
         :param limit: The limit of this ListNatGatewaysRequest.
         :type: int

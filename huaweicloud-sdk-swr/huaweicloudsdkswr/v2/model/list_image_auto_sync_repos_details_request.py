@@ -48,6 +48,7 @@ class ListImageAutoSyncReposDetailsRequest:
     def namespace(self):
         """Gets the namespace of this ListImageAutoSyncReposDetailsRequest.
 
+        组织名称
 
         :return: The namespace of this ListImageAutoSyncReposDetailsRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ListImageAutoSyncReposDetailsRequest:
     def namespace(self, namespace):
         """Sets the namespace of this ListImageAutoSyncReposDetailsRequest.
 
+        组织名称
 
         :param namespace: The namespace of this ListImageAutoSyncReposDetailsRequest.
         :type: str
@@ -68,6 +70,7 @@ class ListImageAutoSyncReposDetailsRequest:
     def repository(self):
         """Gets the repository of this ListImageAutoSyncReposDetailsRequest.
 
+        镜像仓库名称
 
         :return: The repository of this ListImageAutoSyncReposDetailsRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ListImageAutoSyncReposDetailsRequest:
     def repository(self, repository):
         """Sets the repository of this ListImageAutoSyncReposDetailsRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this ListImageAutoSyncReposDetailsRequest.
         :type: str

@@ -44,6 +44,7 @@ class DeleteMediaProcessTaskRequest:
     def task_id(self):
         """Gets the task_id of this DeleteMediaProcessTaskRequest.
 
+        任务ID 
 
         :return: The task_id of this DeleteMediaProcessTaskRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteMediaProcessTaskRequest:
     def task_id(self, task_id):
         """Sets the task_id of this DeleteMediaProcessTaskRequest.
 
+        任务ID 
 
         :param task_id: The task_id of this DeleteMediaProcessTaskRequest.
         :type: str

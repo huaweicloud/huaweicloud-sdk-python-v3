@@ -33,7 +33,7 @@ class CreateFileResponse(SdkResponse):
     def __init__(self, path=None):
         """CreateFileResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateFileResponse, self).__init__()
 
         self._path = None
         self.discriminator = None

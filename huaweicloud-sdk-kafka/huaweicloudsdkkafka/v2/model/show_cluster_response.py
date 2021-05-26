@@ -33,7 +33,7 @@ class ShowClusterResponse(SdkResponse):
     def __init__(self, cluster=None):
         """ShowClusterResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowClusterResponse, self).__init__()
 
         self._cluster = None
         self.discriminator = None

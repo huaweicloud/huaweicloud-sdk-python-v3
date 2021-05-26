@@ -52,6 +52,7 @@ class ShowPartitionEndMessageRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowPartitionEndMessageRequest.
 
+        实例ID。
 
         :return: The instance_id of this ShowPartitionEndMessageRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class ShowPartitionEndMessageRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowPartitionEndMessageRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ShowPartitionEndMessageRequest.
         :type: str
@@ -72,6 +74,7 @@ class ShowPartitionEndMessageRequest:
     def topic(self):
         """Gets the topic of this ShowPartitionEndMessageRequest.
 
+        Topic名称。
 
         :return: The topic of this ShowPartitionEndMessageRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class ShowPartitionEndMessageRequest:
     def topic(self, topic):
         """Sets the topic of this ShowPartitionEndMessageRequest.
 
+        Topic名称。
 
         :param topic: The topic of this ShowPartitionEndMessageRequest.
         :type: str
@@ -92,6 +96,7 @@ class ShowPartitionEndMessageRequest:
     def partition(self):
         """Gets the partition of this ShowPartitionEndMessageRequest.
 
+        分区编号。
 
         :return: The partition of this ShowPartitionEndMessageRequest.
         :rtype: int
@@ -102,6 +107,7 @@ class ShowPartitionEndMessageRequest:
     def partition(self, partition):
         """Sets the partition of this ShowPartitionEndMessageRequest.
 
+        分区编号。
 
         :param partition: The partition of this ShowPartitionEndMessageRequest.
         :type: int

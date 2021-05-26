@@ -37,7 +37,7 @@ class ChangeApplicationConfigurationResponse(SdkResponse):
     def __init__(self, application_id=None, environment_id=None, configuration=None):
         """ChangeApplicationConfigurationResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ChangeApplicationConfigurationResponse, self).__init__()
 
         self._application_id = None
         self._environment_id = None

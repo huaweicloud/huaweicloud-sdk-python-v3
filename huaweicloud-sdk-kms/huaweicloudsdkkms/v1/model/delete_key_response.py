@@ -35,7 +35,7 @@ class DeleteKeyResponse(SdkResponse):
     def __init__(self, key_id=None, key_state=None):
         """DeleteKeyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteKeyResponse, self).__init__()
 
         self._key_id = None
         self._key_state = None

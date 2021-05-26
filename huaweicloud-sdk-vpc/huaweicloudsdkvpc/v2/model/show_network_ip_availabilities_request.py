@@ -44,6 +44,7 @@ class ShowNetworkIpAvailabilitiesRequest:
     def network_id(self):
         """Gets the network_id of this ShowNetworkIpAvailabilitiesRequest.
 
+        网络ID
 
         :return: The network_id of this ShowNetworkIpAvailabilitiesRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowNetworkIpAvailabilitiesRequest:
     def network_id(self, network_id):
         """Sets the network_id of this ShowNetworkIpAvailabilitiesRequest.
 
+        网络ID
 
         :param network_id: The network_id of this ShowNetworkIpAvailabilitiesRequest.
         :type: str

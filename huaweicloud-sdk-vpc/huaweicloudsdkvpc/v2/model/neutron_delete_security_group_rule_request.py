@@ -44,6 +44,7 @@ class NeutronDeleteSecurityGroupRuleRequest:
     def security_group_rule_id(self):
         """Gets the security_group_rule_id of this NeutronDeleteSecurityGroupRuleRequest.
 
+        安全组规则ID
 
         :return: The security_group_rule_id of this NeutronDeleteSecurityGroupRuleRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class NeutronDeleteSecurityGroupRuleRequest:
     def security_group_rule_id(self, security_group_rule_id):
         """Sets the security_group_rule_id of this NeutronDeleteSecurityGroupRuleRequest.
 
+        安全组规则ID
 
         :param security_group_rule_id: The security_group_rule_id of this NeutronDeleteSecurityGroupRuleRequest.
         :type: str

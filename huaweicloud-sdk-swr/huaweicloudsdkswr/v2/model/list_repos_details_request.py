@@ -60,6 +60,7 @@ class ListReposDetailsRequest:
     def namespace(self):
         """Gets the namespace of this ListReposDetailsRequest.
 
+        组织名称
 
         :return: The namespace of this ListReposDetailsRequest.
         :rtype: str
@@ -70,6 +71,7 @@ class ListReposDetailsRequest:
     def namespace(self, namespace):
         """Sets the namespace of this ListReposDetailsRequest.
 
+        组织名称
 
         :param namespace: The namespace of this ListReposDetailsRequest.
         :type: str
@@ -80,6 +82,7 @@ class ListReposDetailsRequest:
     def name(self):
         """Gets the name of this ListReposDetailsRequest.
 
+        镜像仓库名称
 
         :return: The name of this ListReposDetailsRequest.
         :rtype: str
@@ -90,6 +93,7 @@ class ListReposDetailsRequest:
     def name(self, name):
         """Sets the name of this ListReposDetailsRequest.
 
+        镜像仓库名称
 
         :param name: The name of this ListReposDetailsRequest.
         :type: str
@@ -100,6 +104,7 @@ class ListReposDetailsRequest:
     def category(self):
         """Gets the category of this ListReposDetailsRequest.
 
+        镜像仓库分类，可设置为app_server, linux, framework_app, database, lang, other, windows, arm。
 
         :return: The category of this ListReposDetailsRequest.
         :rtype: str
@@ -110,6 +115,7 @@ class ListReposDetailsRequest:
     def category(self, category):
         """Sets the category of this ListReposDetailsRequest.
 
+        镜像仓库分类，可设置为app_server, linux, framework_app, database, lang, other, windows, arm。
 
         :param category: The category of this ListReposDetailsRequest.
         :type: str
@@ -120,6 +126,7 @@ class ListReposDetailsRequest:
     def filter(self):
         """Gets the filter of this ListReposDetailsRequest.
 
+        应填写 center::{center}|limit::{limit}|offset::{offset}|order_column::{order_column}|order_type::{order_type} , 其中{center}为self或thirdparty，自己的镜像或第三方镜像，默认值为self,{limit}为返回条数,{offset}为起始索引, {order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型，可设置为desc（降序）、asc（升序）
 
         :return: The filter of this ListReposDetailsRequest.
         :rtype: str
@@ -130,6 +137,7 @@ class ListReposDetailsRequest:
     def filter(self, filter):
         """Sets the filter of this ListReposDetailsRequest.
 
+        应填写 center::{center}|limit::{limit}|offset::{offset}|order_column::{order_column}|order_type::{order_type} , 其中{center}为self或thirdparty，自己的镜像或第三方镜像，默认值为self,{limit}为返回条数,{offset}为起始索引, {order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型，可设置为desc（降序）、asc（升序）
 
         :param filter: The filter of this ListReposDetailsRequest.
         :type: str

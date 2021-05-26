@@ -31,7 +31,7 @@ class BatchDeleteVpcTagsResponse(SdkResponse):
     def __init__(self):
         """BatchDeleteVpcTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchDeleteVpcTagsResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

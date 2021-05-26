@@ -33,7 +33,7 @@ class ListProjectBugStaticsV4Response(SdkResponse):
     def __init__(self, bug_statistics=None):
         """ListProjectBugStaticsV4Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListProjectBugStaticsV4Response, self).__init__()
 
         self._bug_statistics = None
         self.discriminator = None

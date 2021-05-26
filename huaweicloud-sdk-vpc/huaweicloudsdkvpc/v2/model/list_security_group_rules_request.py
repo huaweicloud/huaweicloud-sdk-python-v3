@@ -55,6 +55,7 @@ class ListSecurityGroupRulesRequest:
     def marker(self):
         """Gets the marker of this ListSecurityGroupRulesRequest.
 
+        功能说明：分页查询起始的资源ID，为空时查询第一页
 
         :return: The marker of this ListSecurityGroupRulesRequest.
         :rtype: str
@@ -65,6 +66,7 @@ class ListSecurityGroupRulesRequest:
     def marker(self, marker):
         """Sets the marker of this ListSecurityGroupRulesRequest.
 
+        功能说明：分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListSecurityGroupRulesRequest.
         :type: str
@@ -75,6 +77,7 @@ class ListSecurityGroupRulesRequest:
     def limit(self):
         """Gets the limit of this ListSecurityGroupRulesRequest.
 
+        每页返回的个数
 
         :return: The limit of this ListSecurityGroupRulesRequest.
         :rtype: int
@@ -85,6 +88,7 @@ class ListSecurityGroupRulesRequest:
     def limit(self, limit):
         """Sets the limit of this ListSecurityGroupRulesRequest.
 
+        每页返回的个数
 
         :param limit: The limit of this ListSecurityGroupRulesRequest.
         :type: int
@@ -95,6 +99,7 @@ class ListSecurityGroupRulesRequest:
     def security_group_id(self):
         """Gets the security_group_id of this ListSecurityGroupRulesRequest.
 
+        安全组ID
 
         :return: The security_group_id of this ListSecurityGroupRulesRequest.
         :rtype: str
@@ -105,6 +110,7 @@ class ListSecurityGroupRulesRequest:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this ListSecurityGroupRulesRequest.
 
+        安全组ID
 
         :param security_group_id: The security_group_id of this ListSecurityGroupRulesRequest.
         :type: str

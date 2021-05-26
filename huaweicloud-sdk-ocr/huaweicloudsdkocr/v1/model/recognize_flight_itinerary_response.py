@@ -33,7 +33,7 @@ class RecognizeFlightItineraryResponse(SdkResponse):
     def __init__(self, result=None):
         """RecognizeFlightItineraryResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RecognizeFlightItineraryResponse, self).__init__()
 
         self._result = None
         self.discriminator = None

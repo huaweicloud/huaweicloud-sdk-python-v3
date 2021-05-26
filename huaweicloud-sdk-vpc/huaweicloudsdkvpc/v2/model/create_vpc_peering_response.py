@@ -33,7 +33,7 @@ class CreateVpcPeeringResponse(SdkResponse):
     def __init__(self, peering=None):
         """CreateVpcPeeringResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateVpcPeeringResponse, self).__init__()
 
         self._peering = None
         self.discriminator = None

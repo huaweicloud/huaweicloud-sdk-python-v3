@@ -49,6 +49,7 @@ class ShowApplicationConfigurationRequest:
     def application_id(self):
         """Gets the application_id of this ShowApplicationConfigurationRequest.
 
+        应用ID。
 
         :return: The application_id of this ShowApplicationConfigurationRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ShowApplicationConfigurationRequest:
     def application_id(self, application_id):
         """Sets the application_id of this ShowApplicationConfigurationRequest.
 
+        应用ID。
 
         :param application_id: The application_id of this ShowApplicationConfigurationRequest.
         :type: str
@@ -69,6 +71,7 @@ class ShowApplicationConfigurationRequest:
     def environment_id(self):
         """Gets the environment_id of this ShowApplicationConfigurationRequest.
 
+        环境ID，如果未提供，查询所有环境。
 
         :return: The environment_id of this ShowApplicationConfigurationRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ShowApplicationConfigurationRequest:
     def environment_id(self, environment_id):
         """Sets the environment_id of this ShowApplicationConfigurationRequest.
 
+        环境ID，如果未提供，查询所有环境。
 
         :param environment_id: The environment_id of this ShowApplicationConfigurationRequest.
         :type: str

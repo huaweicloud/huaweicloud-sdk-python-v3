@@ -37,7 +37,7 @@ class ShowTranscodingsTemplateResponse(SdkResponse):
     def __init__(self, total=None, domain=None, templates=None):
         """ShowTranscodingsTemplateResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowTranscodingsTemplateResponse, self).__init__()
 
         self._total = None
         self._domain = None

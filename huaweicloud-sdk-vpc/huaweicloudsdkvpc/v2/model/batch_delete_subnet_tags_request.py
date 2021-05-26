@@ -49,6 +49,7 @@ class BatchDeleteSubnetTagsRequest:
     def subnet_id(self):
         """Gets the subnet_id of this BatchDeleteSubnetTagsRequest.
 
+        子网ID
 
         :return: The subnet_id of this BatchDeleteSubnetTagsRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class BatchDeleteSubnetTagsRequest:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this BatchDeleteSubnetTagsRequest.
 
+        子网ID
 
         :param subnet_id: The subnet_id of this BatchDeleteSubnetTagsRequest.
         :type: str

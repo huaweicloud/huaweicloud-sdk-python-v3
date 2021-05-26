@@ -51,7 +51,7 @@ class ShowCurUserInfoResponse(SdkResponse):
     def __init__(self, domain_id=None, domain_name=None, user_num_id=None, user_id=None, user_name=None, nick_name=None, created_time=None, updated_time=None, gender=None, user_type=None):
         """ShowCurUserInfoResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowCurUserInfoResponse, self).__init__()
 
         self._domain_id = None
         self._domain_name = None

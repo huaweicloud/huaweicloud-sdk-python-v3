@@ -44,6 +44,7 @@ class DeleteNatGatewayRequest:
     def nat_gateway_id(self):
         """Gets the nat_gateway_id of this DeleteNatGatewayRequest.
 
+        公网NAT网关实例的ID。
 
         :return: The nat_gateway_id of this DeleteNatGatewayRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteNatGatewayRequest:
     def nat_gateway_id(self, nat_gateway_id):
         """Sets the nat_gateway_id of this DeleteNatGatewayRequest.
 
+        公网NAT网关实例的ID。
 
         :param nat_gateway_id: The nat_gateway_id of this DeleteNatGatewayRequest.
         :type: str

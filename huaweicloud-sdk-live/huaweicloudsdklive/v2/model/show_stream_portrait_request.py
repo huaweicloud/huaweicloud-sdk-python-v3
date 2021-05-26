@@ -53,6 +53,7 @@ class ShowStreamPortraitRequest:
     def play_domain(self):
         """Gets the play_domain of this ShowStreamPortraitRequest.
 
+        播放域名。 
 
         :return: The play_domain of this ShowStreamPortraitRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class ShowStreamPortraitRequest:
     def play_domain(self, play_domain):
         """Sets the play_domain of this ShowStreamPortraitRequest.
 
+        播放域名。 
 
         :param play_domain: The play_domain of this ShowStreamPortraitRequest.
         :type: str
@@ -73,6 +75,7 @@ class ShowStreamPortraitRequest:
     def stream(self):
         """Gets the stream of this ShowStreamPortraitRequest.
 
+        流名。 
 
         :return: The stream of this ShowStreamPortraitRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class ShowStreamPortraitRequest:
     def stream(self, stream):
         """Sets the stream of this ShowStreamPortraitRequest.
 
+        流名。 
 
         :param stream: The stream of this ShowStreamPortraitRequest.
         :type: str
@@ -93,6 +97,7 @@ class ShowStreamPortraitRequest:
     def time(self):
         """Gets the time of this ShowStreamPortraitRequest.
 
+        统计日期，日期格式按照ISO8601表示法，格式：YYYYMMDD，如20200904。可以查询过去31天的数据（不含当天）。 
 
         :return: The time of this ShowStreamPortraitRequest.
         :rtype: str
@@ -103,6 +108,7 @@ class ShowStreamPortraitRequest:
     def time(self, time):
         """Sets the time of this ShowStreamPortraitRequest.
 
+        统计日期，日期格式按照ISO8601表示法，格式：YYYYMMDD，如20200904。可以查询过去31天的数据（不含当天）。 
 
         :param time: The time of this ShowStreamPortraitRequest.
         :type: str

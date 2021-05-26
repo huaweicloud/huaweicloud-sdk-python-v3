@@ -23,27 +23,22 @@ class CorpAdminDTO:
     sensitive_list = []
 
     openapi_types = {
-        'account': 'str',
-        'menu_template_id': 'str'
+        'account': 'str'
     }
 
     attribute_map = {
-        'account': 'account',
-        'menu_template_id': 'menuTemplateId'
+        'account': 'account'
     }
 
-    def __init__(self, account=None, menu_template_id=None):
+    def __init__(self, account=None):
         """CorpAdminDTO - a model defined in huaweicloud sdk"""
         
         
 
         self._account = None
-        self._menu_template_id = None
         self.discriminator = None
 
         self.account = account
-        if menu_template_id is not None:
-            self.menu_template_id = menu_template_id
 
     @property
     def account(self):
@@ -66,28 +61,6 @@ class CorpAdminDTO:
         :type: str
         """
         self._account = account
-
-    @property
-    def menu_template_id(self):
-        """Gets the menu_template_id of this CorpAdminDTO.
-
-        菜单模板id，若不携带或为\\\"\\\"，则使用默认的菜单模板  约束 - 长度范围为0到32个字符
-
-        :return: The menu_template_id of this CorpAdminDTO.
-        :rtype: str
-        """
-        return self._menu_template_id
-
-    @menu_template_id.setter
-    def menu_template_id(self, menu_template_id):
-        """Sets the menu_template_id of this CorpAdminDTO.
-
-        菜单模板id，若不携带或为\\\"\\\"，则使用默认的菜单模板  约束 - 长度范围为0到32个字符
-
-        :param menu_template_id: The menu_template_id of this CorpAdminDTO.
-        :type: str
-        """
-        self._menu_template_id = menu_template_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

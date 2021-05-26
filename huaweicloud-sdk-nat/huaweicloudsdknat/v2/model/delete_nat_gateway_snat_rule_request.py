@@ -48,6 +48,7 @@ class DeleteNatGatewaySnatRuleRequest:
     def nat_gateway_id(self):
         """Gets the nat_gateway_id of this DeleteNatGatewaySnatRuleRequest.
 
+        公网NAT网关实例的ID。
 
         :return: The nat_gateway_id of this DeleteNatGatewaySnatRuleRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteNatGatewaySnatRuleRequest:
     def nat_gateway_id(self, nat_gateway_id):
         """Sets the nat_gateway_id of this DeleteNatGatewaySnatRuleRequest.
 
+        公网NAT网关实例的ID。
 
         :param nat_gateway_id: The nat_gateway_id of this DeleteNatGatewaySnatRuleRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteNatGatewaySnatRuleRequest:
     def snat_rule_id(self):
         """Gets the snat_rule_id of this DeleteNatGatewaySnatRuleRequest.
 
+        SNAT规则的ID。
 
         :return: The snat_rule_id of this DeleteNatGatewaySnatRuleRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteNatGatewaySnatRuleRequest:
     def snat_rule_id(self, snat_rule_id):
         """Sets the snat_rule_id of this DeleteNatGatewaySnatRuleRequest.
 
+        SNAT规则的ID。
 
         :param snat_rule_id: The snat_rule_id of this DeleteNatGatewaySnatRuleRequest.
         :type: str

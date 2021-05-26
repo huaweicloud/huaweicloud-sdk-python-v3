@@ -59,7 +59,7 @@ class CreateCustomfieldsResponse(SdkResponse):
     def __init__(self, options=None, region=None, id=None, identifier=None, project_id=None, tracker_id=None, custom_field=None, type=None, name=None, sort=None, memo=None, created=None, modified=None, is_delete=None):
         """CreateCustomfieldsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateCustomfieldsResponse, self).__init__()
 
         self._options = None
         self._region = None

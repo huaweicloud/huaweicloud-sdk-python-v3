@@ -24,27 +24,32 @@ class ListFunctionVersionsResponse(SdkResponse):
 
     openapi_types = {
         'versions': 'list[ListFunctionVersionResult]',
-        'next_marker': 'int'
+        'next_marker': 'int',
+        'count': 'int'
     }
 
     attribute_map = {
         'versions': 'versions',
-        'next_marker': 'next_marker'
+        'next_marker': 'next_marker',
+        'count': 'count'
     }
 
-    def __init__(self, versions=None, next_marker=None):
+    def __init__(self, versions=None, next_marker=None, count=None):
         """ListFunctionVersionsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListFunctionVersionsResponse, self).__init__()
 
         self._versions = None
         self._next_marker = None
+        self._count = None
         self.discriminator = None
 
         if versions is not None:
             self.versions = versions
         if next_marker is not None:
             self.next_marker = next_marker
+        if count is not None:
+            self.count = count
 
     @property
     def versions(self):
@@ -89,6 +94,28 @@ class ListFunctionVersionsResponse(SdkResponse):
         :type: int
         """
         self._next_marker = next_marker
+
+    @property
+    def count(self):
+        """Gets the count of this ListFunctionVersionsResponse.
+
+        函数版本总数
+
+        :return: The count of this ListFunctionVersionsResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListFunctionVersionsResponse.
+
+        函数版本总数
+
+        :param count: The count of this ListFunctionVersionsResponse.
+        :type: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

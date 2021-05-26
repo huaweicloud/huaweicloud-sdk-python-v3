@@ -44,6 +44,7 @@ class NeutronDeleteFirewallGroupRequest:
     def firewall_group_id(self):
         """Gets the firewall_group_id of this NeutronDeleteFirewallGroupRequest.
 
+        网络ACL防火墙组ID
 
         :return: The firewall_group_id of this NeutronDeleteFirewallGroupRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class NeutronDeleteFirewallGroupRequest:
     def firewall_group_id(self, firewall_group_id):
         """Sets the firewall_group_id of this NeutronDeleteFirewallGroupRequest.
 
+        网络ACL防火墙组ID
 
         :param firewall_group_id: The firewall_group_id of this NeutronDeleteFirewallGroupRequest.
         :type: str

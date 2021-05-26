@@ -142,7 +142,7 @@ class RestAttendeeDTO:
     def account_id(self):
         """Gets the account_id of this RestAttendeeDTO.
 
-        与会者帐号，兼容终端老版本。如果没有携带userUUID，就通过accountId查询用户信息。
+        与会者的账号ID。 如果是账号/密码鉴权场景，选填，表示华为云会议帐号ID。 如果是APPID鉴权场景，必填，表示第三方的User ID，同时需要携带appid参数。
 
         :return: The account_id of this RestAttendeeDTO.
         :rtype: str
@@ -153,7 +153,7 @@ class RestAttendeeDTO:
     def account_id(self, account_id):
         """Sets the account_id of this RestAttendeeDTO.
 
-        与会者帐号，兼容终端老版本。如果没有携带userUUID，就通过accountId查询用户信息。
+        与会者的账号ID。 如果是账号/密码鉴权场景，选填，表示华为云会议帐号ID。 如果是APPID鉴权场景，必填，表示第三方的User ID，同时需要携带appid参数。
 
         :param account_id: The account_id of this RestAttendeeDTO.
         :type: str
@@ -208,7 +208,7 @@ class RestAttendeeDTO:
     def phone(self):
         """Gets the phone of this RestAttendeeDTO.
 
-        电话号码(可支持SIP、TEL号码格式)。最大不超过127个字符。phone、email和sms三者需至少填写一个。当type为telepresence时，且设备为三屏智真，则该字段填写中屏号码。
+        如果是账号/密码鉴权场景，必填，号码（可支持SIP、TEL号码格式）。 如果是APP ID鉴权场景，选填。 最大不超过127个字符。phone、email和sms三者需至少填写一个。
 
         :return: The phone of this RestAttendeeDTO.
         :rtype: str
@@ -219,7 +219,7 @@ class RestAttendeeDTO:
     def phone(self, phone):
         """Sets the phone of this RestAttendeeDTO.
 
-        电话号码(可支持SIP、TEL号码格式)。最大不超过127个字符。phone、email和sms三者需至少填写一个。当type为telepresence时，且设备为三屏智真，则该字段填写中屏号码。
+        如果是账号/密码鉴权场景，必填，号码（可支持SIP、TEL号码格式）。 如果是APP ID鉴权场景，选填。 最大不超过127个字符。phone、email和sms三者需至少填写一个。
 
         :param phone: The phone of this RestAttendeeDTO.
         :type: str
@@ -230,7 +230,7 @@ class RestAttendeeDTO:
     def phone2(self):
         """Gets the phone2 of this RestAttendeeDTO.
 
-        预留字段，取值类型同phone。当type为telepresence时，且设备为三屏智真，则该字段填写左屏号码
+        预留字段，取值类型同phone。
 
         :return: The phone2 of this RestAttendeeDTO.
         :rtype: str
@@ -241,7 +241,7 @@ class RestAttendeeDTO:
     def phone2(self, phone2):
         """Sets the phone2 of this RestAttendeeDTO.
 
-        预留字段，取值类型同phone。当type为telepresence时，且设备为三屏智真，则该字段填写左屏号码
+        预留字段，取值类型同phone。
 
         :param phone2: The phone2 of this RestAttendeeDTO.
         :type: str
@@ -252,7 +252,7 @@ class RestAttendeeDTO:
     def phone3(self):
         """Gets the phone3 of this RestAttendeeDTO.
 
-        预留字段，取值类型同phone。当type为telepresence时，且设备为三屏智真，则该字段填写右屏号码
+        预留字段，取值类型同phone。
 
         :return: The phone3 of this RestAttendeeDTO.
         :rtype: str
@@ -263,7 +263,7 @@ class RestAttendeeDTO:
     def phone3(self, phone3):
         """Sets the phone3 of this RestAttendeeDTO.
 
-        预留字段，取值类型同phone。当type为telepresence时，且设备为三屏智真，则该字段填写右屏号码
+        预留字段，取值类型同phone。
 
         :param phone3: The phone3 of this RestAttendeeDTO.
         :type: str
@@ -340,7 +340,7 @@ class RestAttendeeDTO:
     def is_auto_invite(self):
         """Gets the is_auto_invite of this RestAttendeeDTO.
 
-        会议开始时是否自动邀请该与会者。默认自动邀请。 - 0: 不自动邀请 - 1: 自动邀请
+        会议开始时是否自动邀请该与会者。默认不自动邀请。 - 0: 不自动邀请 - 1: 自动邀请
 
         :return: The is_auto_invite of this RestAttendeeDTO.
         :rtype: int
@@ -351,7 +351,7 @@ class RestAttendeeDTO:
     def is_auto_invite(self, is_auto_invite):
         """Sets the is_auto_invite of this RestAttendeeDTO.
 
-        会议开始时是否自动邀请该与会者。默认自动邀请。 - 0: 不自动邀请 - 1: 自动邀请
+        会议开始时是否自动邀请该与会者。默认不自动邀请。 - 0: 不自动邀请 - 1: 自动邀请
 
         :param is_auto_invite: The is_auto_invite of this RestAttendeeDTO.
         :type: int
@@ -450,7 +450,7 @@ class RestAttendeeDTO:
     def app_id(self):
         """Gets the app_id of this RestAttendeeDTO.
 
-        会议Paas服务APPID。
+        App ID，应用标识，一个应用只需创建一次。如果是APP ID鉴权场景，此项必填。
 
         :return: The app_id of this RestAttendeeDTO.
         :rtype: str
@@ -461,7 +461,7 @@ class RestAttendeeDTO:
     def app_id(self, app_id):
         """Sets the app_id of this RestAttendeeDTO.
 
-        会议Paas服务APPID。
+        App ID，应用标识，一个应用只需创建一次。如果是APP ID鉴权场景，此项必填。
 
         :param app_id: The app_id of this RestAttendeeDTO.
         :type: str

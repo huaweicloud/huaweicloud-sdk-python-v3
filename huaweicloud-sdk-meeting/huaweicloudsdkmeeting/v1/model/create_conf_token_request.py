@@ -27,7 +27,7 @@ class CreateConfTokenRequest:
         'conference_id': 'str',
         'x_conference_authorization': 'str',
         'x_password': 'str',
-        'x_login_type': 'int',
+        'x_login_type': 'str',
         'x_nonce': 'str'
     }
 
@@ -63,6 +63,7 @@ class CreateConfTokenRequest:
     def conference_id(self):
         """Gets the conference_id of this CreateConfTokenRequest.
 
+        会议ID。
 
         :return: The conference_id of this CreateConfTokenRequest.
         :rtype: str
@@ -73,6 +74,7 @@ class CreateConfTokenRequest:
     def conference_id(self, conference_id):
         """Sets the conference_id of this CreateConfTokenRequest.
 
+        会议ID。
 
         :param conference_id: The conference_id of this CreateConfTokenRequest.
         :type: str
@@ -83,6 +85,7 @@ class CreateConfTokenRequest:
     def x_conference_authorization(self):
         """Gets the x_conference_authorization of this CreateConfTokenRequest.
 
+        如果携带该值，则表示是保活消息，如果会话已过期并且请求中携带了密码，则进行重新鉴权并回复新的会话标识。 该头域统一为BASE64编码。
 
         :return: The x_conference_authorization of this CreateConfTokenRequest.
         :rtype: str
@@ -93,6 +96,7 @@ class CreateConfTokenRequest:
     def x_conference_authorization(self, x_conference_authorization):
         """Sets the x_conference_authorization of this CreateConfTokenRequest.
 
+        如果携带该值，则表示是保活消息，如果会话已过期并且请求中携带了密码，则进行重新鉴权并回复新的会话标识。 该头域统一为BASE64编码。
 
         :param x_conference_authorization: The x_conference_authorization of this CreateConfTokenRequest.
         :type: str
@@ -103,6 +107,7 @@ class CreateConfTokenRequest:
     def x_password(self):
         """Gets the x_password of this CreateConfTokenRequest.
 
+        会议的主持人密码。 从创建会议的返回响应参数获取。 对于会控Token保活场景，可以不携带会议密码。
 
         :return: The x_password of this CreateConfTokenRequest.
         :rtype: str
@@ -113,6 +118,7 @@ class CreateConfTokenRequest:
     def x_password(self, x_password):
         """Sets the x_password of this CreateConfTokenRequest.
 
+        会议的主持人密码。 从创建会议的返回响应参数获取。 对于会控Token保活场景，可以不携带会议密码。
 
         :param x_password: The x_password of this CreateConfTokenRequest.
         :type: str
@@ -123,9 +129,10 @@ class CreateConfTokenRequest:
     def x_login_type(self):
         """Gets the x_login_type of this CreateConfTokenRequest.
 
+        区分请求类型。 - 0: 终端请求。 - 1: CloudPortal请求。
 
         :return: The x_login_type of this CreateConfTokenRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._x_login_type
 
@@ -133,9 +140,10 @@ class CreateConfTokenRequest:
     def x_login_type(self, x_login_type):
         """Sets the x_login_type of this CreateConfTokenRequest.
 
+        区分请求类型。 - 0: 终端请求。 - 1: CloudPortal请求。
 
         :param x_login_type: The x_login_type of this CreateConfTokenRequest.
-        :type: int
+        :type: str
         """
         self._x_login_type = x_login_type
 
@@ -143,6 +151,7 @@ class CreateConfTokenRequest:
     def x_nonce(self):
         """Gets the x_nonce of this CreateConfTokenRequest.
 
+        用户临时nonce token。
 
         :return: The x_nonce of this CreateConfTokenRequest.
         :rtype: str
@@ -153,6 +162,7 @@ class CreateConfTokenRequest:
     def x_nonce(self, x_nonce):
         """Sets the x_nonce of this CreateConfTokenRequest.
 
+        用户临时nonce token。
 
         :param x_nonce: The x_nonce of this CreateConfTokenRequest.
         :type: str

@@ -44,6 +44,7 @@ class RejectVpcPeeringRequest:
     def peering_id(self):
         """Gets the peering_id of this RejectVpcPeeringRequest.
 
+        对等连接ID
 
         :return: The peering_id of this RejectVpcPeeringRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class RejectVpcPeeringRequest:
     def peering_id(self, peering_id):
         """Sets the peering_id of this RejectVpcPeeringRequest.
 
+        对等连接ID
 
         :param peering_id: The peering_id of this RejectVpcPeeringRequest.
         :type: str

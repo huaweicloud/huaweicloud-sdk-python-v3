@@ -44,6 +44,7 @@ class ShowSecretRequest:
     def secret_id(self):
         """Gets the secret_id of this ShowSecretRequest.
 
+        凭据的资源标识符。
 
         :return: The secret_id of this ShowSecretRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowSecretRequest:
     def secret_id(self, secret_id):
         """Sets the secret_id of this ShowSecretRequest.
 
+        凭据的资源标识符。
 
         :param secret_id: The secret_id of this ShowSecretRequest.
         :type: str

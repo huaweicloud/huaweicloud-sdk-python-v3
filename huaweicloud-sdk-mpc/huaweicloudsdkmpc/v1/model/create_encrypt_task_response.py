@@ -33,7 +33,7 @@ class CreateEncryptTaskResponse(SdkResponse):
     def __init__(self, task_id=None):
         """CreateEncryptTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateEncryptTaskResponse, self).__init__()
 
         self._task_id = None
         self.discriminator = None

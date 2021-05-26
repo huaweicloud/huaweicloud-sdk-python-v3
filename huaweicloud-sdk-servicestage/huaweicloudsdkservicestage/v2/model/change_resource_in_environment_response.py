@@ -57,7 +57,7 @@ class ChangeResourceInEnvironmentResponse(SdkResponse):
     def __init__(self, id=None, name=None, alias=None, description=None, project_id=None, enterprise_project_id=None, charge_mode=None, vpc_id=None, base_resources=None, optional_resources=None, creator=None, create_time=None, update_time=None):
         """ChangeResourceInEnvironmentResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ChangeResourceInEnvironmentResponse, self).__init__()
 
         self._id = None
         self._name = None

@@ -44,6 +44,7 @@ class DeleteQualityEnhanceTemplateRequest:
     def template_id(self):
         """Gets the template_id of this DeleteQualityEnhanceTemplateRequest.
 
+        模板ID 
 
         :return: The template_id of this DeleteQualityEnhanceTemplateRequest.
         :rtype: int
@@ -54,6 +55,7 @@ class DeleteQualityEnhanceTemplateRequest:
     def template_id(self, template_id):
         """Sets the template_id of this DeleteQualityEnhanceTemplateRequest.
 
+        模板ID 
 
         :param template_id: The template_id of this DeleteQualityEnhanceTemplateRequest.
         :type: int

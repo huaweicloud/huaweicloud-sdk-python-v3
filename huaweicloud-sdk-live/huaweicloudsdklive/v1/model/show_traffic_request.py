@@ -60,6 +60,7 @@ class ShowTrafficRequest:
     def domain(self):
         """Gets the domain of this ShowTrafficRequest.
 
+        播放域名，不指定域名表示查询租户所有域名汇总流量
 
         :return: The domain of this ShowTrafficRequest.
         :rtype: str
@@ -70,6 +71,7 @@ class ShowTrafficRequest:
     def domain(self, domain):
         """Sets the domain of this ShowTrafficRequest.
 
+        播放域名，不指定域名表示查询租户所有域名汇总流量
 
         :param domain: The domain of this ShowTrafficRequest.
         :type: str
@@ -80,6 +82,7 @@ class ShowTrafficRequest:
     def start_time(self):
         """Gets the start_time of this ShowTrafficRequest.
 
+        查询起始时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ
 
         :return: The start_time of this ShowTrafficRequest.
         :rtype: str
@@ -90,6 +93,7 @@ class ShowTrafficRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ShowTrafficRequest.
 
+        查询起始时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ
 
         :param start_time: The start_time of this ShowTrafficRequest.
         :type: str
@@ -100,6 +104,7 @@ class ShowTrafficRequest:
     def end_time(self):
         """Gets the end_time of this ShowTrafficRequest.
 
+        查询结束时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ。  - start_time与end_time均不存在时，服务端从最近一个统计周期的数据里查询。 - start_time存在、end_time不存在时，end_time取当前时间。 - start_time不存在、end_time存在时，请求非法。 - 只能查询最近三个月内的数据，start_time和end_time的跨度不能大于30天。 
 
         :return: The end_time of this ShowTrafficRequest.
         :rtype: str
@@ -110,6 +115,7 @@ class ShowTrafficRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowTrafficRequest.
 
+        查询结束时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ。  - start_time与end_time均不存在时，服务端从最近一个统计周期的数据里查询。 - start_time存在、end_time不存在时，end_time取当前时间。 - start_time不存在、end_time存在时，请求非法。 - 只能查询最近三个月内的数据，start_time和end_time的跨度不能大于30天。 
 
         :param end_time: The end_time of this ShowTrafficRequest.
         :type: str
@@ -120,6 +126,7 @@ class ShowTrafficRequest:
     def step(self):
         """Gets the step of this ShowTrafficRequest.
 
+        统计周期，单位分钟
 
         :return: The step of this ShowTrafficRequest.
         :rtype: int
@@ -130,6 +137,7 @@ class ShowTrafficRequest:
     def step(self, step):
         """Sets the step of this ShowTrafficRequest.
 
+        统计周期，单位分钟
 
         :param step: The step of this ShowTrafficRequest.
         :type: int

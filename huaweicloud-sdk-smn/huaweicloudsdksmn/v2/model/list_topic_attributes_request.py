@@ -48,6 +48,7 @@ class ListTopicAttributesRequest:
     def topic_urn(self):
         """Gets the topic_urn of this ListTopicAttributesRequest.
 
+        Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
 
         :return: The topic_urn of this ListTopicAttributesRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ListTopicAttributesRequest:
     def topic_urn(self, topic_urn):
         """Sets the topic_urn of this ListTopicAttributesRequest.
 
+        Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
 
         :param topic_urn: The topic_urn of this ListTopicAttributesRequest.
         :type: str
@@ -68,6 +70,7 @@ class ListTopicAttributesRequest:
     def name(self):
         """Gets the name of this ListTopicAttributesRequest.
 
+        主题策略名称。  只支持特定的策略名称，请参见[Topic属性表](https://support.huaweicloud.com/intl/zh-cn/api-smn/smn_api_a1000.html)。
 
         :return: The name of this ListTopicAttributesRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ListTopicAttributesRequest:
     def name(self, name):
         """Sets the name of this ListTopicAttributesRequest.
 
+        主题策略名称。  只支持特定的策略名称，请参见[Topic属性表](https://support.huaweicloud.com/intl/zh-cn/api-smn/smn_api_a1000.html)。
 
         :param name: The name of this ListTopicAttributesRequest.
         :type: str

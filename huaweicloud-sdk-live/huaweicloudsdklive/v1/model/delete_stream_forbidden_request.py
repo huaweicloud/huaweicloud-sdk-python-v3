@@ -57,6 +57,7 @@ class DeleteStreamForbiddenRequest:
     def specify_project(self):
         """Gets the specify_project of this DeleteStreamForbiddenRequest.
 
+        op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
 
         :return: The specify_project of this DeleteStreamForbiddenRequest.
         :rtype: str
@@ -67,6 +68,7 @@ class DeleteStreamForbiddenRequest:
     def specify_project(self, specify_project):
         """Sets the specify_project of this DeleteStreamForbiddenRequest.
 
+        op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
 
         :param specify_project: The specify_project of this DeleteStreamForbiddenRequest.
         :type: str
@@ -77,6 +79,7 @@ class DeleteStreamForbiddenRequest:
     def domain(self):
         """Gets the domain of this DeleteStreamForbiddenRequest.
 
+        播放或推流域名
 
         :return: The domain of this DeleteStreamForbiddenRequest.
         :rtype: str
@@ -87,6 +90,7 @@ class DeleteStreamForbiddenRequest:
     def domain(self, domain):
         """Sets the domain of this DeleteStreamForbiddenRequest.
 
+        播放或推流域名
 
         :param domain: The domain of this DeleteStreamForbiddenRequest.
         :type: str
@@ -97,6 +101,7 @@ class DeleteStreamForbiddenRequest:
     def app_name(self):
         """Gets the app_name of this DeleteStreamForbiddenRequest.
 
+        RTMP应用名称
 
         :return: The app_name of this DeleteStreamForbiddenRequest.
         :rtype: str
@@ -107,6 +112,7 @@ class DeleteStreamForbiddenRequest:
     def app_name(self, app_name):
         """Sets the app_name of this DeleteStreamForbiddenRequest.
 
+        RTMP应用名称
 
         :param app_name: The app_name of this DeleteStreamForbiddenRequest.
         :type: str
@@ -117,6 +123,7 @@ class DeleteStreamForbiddenRequest:
     def stream_name(self):
         """Gets the stream_name of this DeleteStreamForbiddenRequest.
 
+        流名称
 
         :return: The stream_name of this DeleteStreamForbiddenRequest.
         :rtype: str
@@ -127,6 +134,7 @@ class DeleteStreamForbiddenRequest:
     def stream_name(self, stream_name):
         """Sets the stream_name of this DeleteStreamForbiddenRequest.
 
+        流名称
 
         :param stream_name: The stream_name of this DeleteStreamForbiddenRequest.
         :type: str

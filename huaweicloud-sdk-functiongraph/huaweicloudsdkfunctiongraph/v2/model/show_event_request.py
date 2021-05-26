@@ -48,6 +48,7 @@ class ShowEventRequest:
     def event_id(self):
         """Gets the event_id of this ShowEventRequest.
 
+        事件ID。
 
         :return: The event_id of this ShowEventRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowEventRequest:
     def event_id(self, event_id):
         """Sets the event_id of this ShowEventRequest.
 
+        事件ID。
 
         :param event_id: The event_id of this ShowEventRequest.
         :type: str
@@ -68,6 +70,7 @@ class ShowEventRequest:
     def function_urn(self):
         """Gets the function_urn of this ShowEventRequest.
 
+        函数的URN（Uniform Resource Name），唯一标识函数。
 
         :return: The function_urn of this ShowEventRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowEventRequest:
     def function_urn(self, function_urn):
         """Sets the function_urn of this ShowEventRequest.
 
+        函数的URN（Uniform Resource Name），唯一标识函数。
 
         :param function_urn: The function_urn of this ShowEventRequest.
         :type: str

@@ -43,7 +43,7 @@ class CreateFunctionTriggerResponse(SdkResponse):
     def __init__(self, trigger_id=None, trigger_type_code=None, trigger_status=None, event_data=None, last_updated_time=None, created_time=None):
         """CreateFunctionTriggerResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateFunctionTriggerResponse, self).__init__()
 
         self._trigger_id = None
         self._trigger_type_code = None

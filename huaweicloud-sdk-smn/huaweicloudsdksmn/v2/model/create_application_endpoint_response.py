@@ -35,7 +35,7 @@ class CreateApplicationEndpointResponse(SdkResponse):
     def __init__(self, request_id=None, endpoint_urn=None):
         """CreateApplicationEndpointResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateApplicationEndpointResponse, self).__init__()
 
         self._request_id = None
         self._endpoint_urn = None

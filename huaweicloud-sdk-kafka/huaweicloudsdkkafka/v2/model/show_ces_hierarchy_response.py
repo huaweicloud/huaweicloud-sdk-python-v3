@@ -27,7 +27,7 @@ class ShowCesHierarchyResponse(SdkResponse):
         'instance_ids': 'list[ShowCeshierarchyRespInstanceIds]',
         'nodes': 'list[ShowCeshierarchyRespNodes]',
         'queues': 'list[ShowCeshierarchyRespQueues]',
-        'groups': 'list[str]'
+        'groups': 'list[ShowCeshierarchyRespGroups]'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class ShowCesHierarchyResponse(SdkResponse):
     def __init__(self, dimensions=None, instance_ids=None, nodes=None, queues=None, groups=None):
         """ShowCesHierarchyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowCesHierarchyResponse, self).__init__()
 
         self._dimensions = None
         self._instance_ids = None
@@ -156,7 +156,7 @@ class ShowCesHierarchyResponse(SdkResponse):
         消费组信息。
 
         :return: The groups of this ShowCesHierarchyResponse.
-        :rtype: list[str]
+        :rtype: list[ShowCeshierarchyRespGroups]
         """
         return self._groups
 
@@ -167,7 +167,7 @@ class ShowCesHierarchyResponse(SdkResponse):
         消费组信息。
 
         :param groups: The groups of this ShowCesHierarchyResponse.
-        :type: list[str]
+        :type: list[ShowCeshierarchyRespGroups]
         """
         self._groups = groups
 

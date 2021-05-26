@@ -48,6 +48,7 @@ class ShowBackgroundTaskRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowBackgroundTaskRequest.
 
+        实例ID。
 
         :return: The instance_id of this ShowBackgroundTaskRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowBackgroundTaskRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowBackgroundTaskRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ShowBackgroundTaskRequest.
         :type: str
@@ -68,6 +70,7 @@ class ShowBackgroundTaskRequest:
     def task_id(self):
         """Gets the task_id of this ShowBackgroundTaskRequest.
 
+        任务ID。
 
         :return: The task_id of this ShowBackgroundTaskRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowBackgroundTaskRequest:
     def task_id(self, task_id):
         """Sets the task_id of this ShowBackgroundTaskRequest.
 
+        任务ID。
 
         :param task_id: The task_id of this ShowBackgroundTaskRequest.
         :type: str

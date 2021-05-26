@@ -33,7 +33,7 @@ class RecognizeGeneralTableResponse(SdkResponse):
     def __init__(self, result=None):
         """RecognizeGeneralTableResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RecognizeGeneralTableResponse, self).__init__()
 
         self._result = None
         self.discriminator = None

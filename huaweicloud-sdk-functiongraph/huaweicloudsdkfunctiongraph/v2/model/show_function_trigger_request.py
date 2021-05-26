@@ -31,7 +31,7 @@ class ShowFunctionTriggerRequest:
     attribute_map = {
         'function_urn': 'function_urn',
         'trigger_type_code': 'trigger_type_code',
-        'trigger_id': 'triggerId'
+        'trigger_id': 'trigger_id'
     }
 
     def __init__(self, function_urn=None, trigger_type_code=None, trigger_id=None):
@@ -52,6 +52,7 @@ class ShowFunctionTriggerRequest:
     def function_urn(self):
         """Gets the function_urn of this ShowFunctionTriggerRequest.
 
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :return: The function_urn of this ShowFunctionTriggerRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class ShowFunctionTriggerRequest:
     def function_urn(self, function_urn):
         """Sets the function_urn of this ShowFunctionTriggerRequest.
 
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this ShowFunctionTriggerRequest.
         :type: str

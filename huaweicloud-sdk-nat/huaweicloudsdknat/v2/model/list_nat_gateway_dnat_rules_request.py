@@ -110,6 +110,7 @@ class ListNatGatewayDnatRulesRequest:
     def admin_state_up(self):
         """Gets the admin_state_up of this ListNatGatewayDnatRulesRequest.
 
+        解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
 
         :return: The admin_state_up of this ListNatGatewayDnatRulesRequest.
         :rtype: bool
@@ -120,6 +121,7 @@ class ListNatGatewayDnatRulesRequest:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this ListNatGatewayDnatRulesRequest.
 
+        解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
 
         :param admin_state_up: The admin_state_up of this ListNatGatewayDnatRulesRequest.
         :type: bool
@@ -130,6 +132,7 @@ class ListNatGatewayDnatRulesRequest:
     def external_service_port(self):
         """Gets the external_service_port of this ListNatGatewayDnatRulesRequest.
 
+        Floatingip对外提供服务的端口号。 取值范围：0~65535。
 
         :return: The external_service_port of this ListNatGatewayDnatRulesRequest.
         :rtype: int
@@ -140,6 +143,7 @@ class ListNatGatewayDnatRulesRequest:
     def external_service_port(self, external_service_port):
         """Sets the external_service_port of this ListNatGatewayDnatRulesRequest.
 
+        Floatingip对外提供服务的端口号。 取值范围：0~65535。
 
         :param external_service_port: The external_service_port of this ListNatGatewayDnatRulesRequest.
         :type: int
@@ -150,6 +154,7 @@ class ListNatGatewayDnatRulesRequest:
     def floating_ip_address(self):
         """Gets the floating_ip_address of this ListNatGatewayDnatRulesRequest.
 
+        弹性公网的IP地址。
 
         :return: The floating_ip_address of this ListNatGatewayDnatRulesRequest.
         :rtype: str
@@ -160,6 +165,7 @@ class ListNatGatewayDnatRulesRequest:
     def floating_ip_address(self, floating_ip_address):
         """Sets the floating_ip_address of this ListNatGatewayDnatRulesRequest.
 
+        弹性公网的IP地址。
 
         :param floating_ip_address: The floating_ip_address of this ListNatGatewayDnatRulesRequest.
         :type: str
@@ -170,6 +176,7 @@ class ListNatGatewayDnatRulesRequest:
     def status(self):
         """Gets the status of this ListNatGatewayDnatRulesRequest.
 
+        Dnat规则的状态。
 
         :return: The status of this ListNatGatewayDnatRulesRequest.
         :rtype: list[str]
@@ -180,6 +187,7 @@ class ListNatGatewayDnatRulesRequest:
     def status(self, status):
         """Sets the status of this ListNatGatewayDnatRulesRequest.
 
+        Dnat规则的状态。
 
         :param status: The status of this ListNatGatewayDnatRulesRequest.
         :type: list[str]
@@ -190,6 +198,7 @@ class ListNatGatewayDnatRulesRequest:
     def floating_ip_id(self):
         """Gets the floating_ip_id of this ListNatGatewayDnatRulesRequest.
 
+        弹性公网IP的id。
 
         :return: The floating_ip_id of this ListNatGatewayDnatRulesRequest.
         :rtype: str
@@ -200,6 +209,7 @@ class ListNatGatewayDnatRulesRequest:
     def floating_ip_id(self, floating_ip_id):
         """Sets the floating_ip_id of this ListNatGatewayDnatRulesRequest.
 
+        弹性公网IP的id。
 
         :param floating_ip_id: The floating_ip_id of this ListNatGatewayDnatRulesRequest.
         :type: str
@@ -210,6 +220,7 @@ class ListNatGatewayDnatRulesRequest:
     def internal_service_port(self):
         """Gets the internal_service_port of this ListNatGatewayDnatRulesRequest.
 
+        虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
 
         :return: The internal_service_port of this ListNatGatewayDnatRulesRequest.
         :rtype: int
@@ -220,6 +231,7 @@ class ListNatGatewayDnatRulesRequest:
     def internal_service_port(self, internal_service_port):
         """Sets the internal_service_port of this ListNatGatewayDnatRulesRequest.
 
+        虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
 
         :param internal_service_port: The internal_service_port of this ListNatGatewayDnatRulesRequest.
         :type: int
@@ -230,6 +242,7 @@ class ListNatGatewayDnatRulesRequest:
     def limit(self):
         """Gets the limit of this ListNatGatewayDnatRulesRequest.
 
+        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
         :return: The limit of this ListNatGatewayDnatRulesRequest.
         :rtype: int
@@ -240,6 +253,7 @@ class ListNatGatewayDnatRulesRequest:
     def limit(self, limit):
         """Sets the limit of this ListNatGatewayDnatRulesRequest.
 
+        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
         :param limit: The limit of this ListNatGatewayDnatRulesRequest.
         :type: int
@@ -250,6 +264,7 @@ class ListNatGatewayDnatRulesRequest:
     def id(self):
         """Gets the id of this ListNatGatewayDnatRulesRequest.
 
+        DNAT规则的ID。
 
         :return: The id of this ListNatGatewayDnatRulesRequest.
         :rtype: str
@@ -260,6 +275,7 @@ class ListNatGatewayDnatRulesRequest:
     def id(self, id):
         """Sets the id of this ListNatGatewayDnatRulesRequest.
 
+        DNAT规则的ID。
 
         :param id: The id of this ListNatGatewayDnatRulesRequest.
         :type: str
@@ -270,6 +286,7 @@ class ListNatGatewayDnatRulesRequest:
     def description(self):
         """Gets the description of this ListNatGatewayDnatRulesRequest.
 
+        DNAT规则的描述，长度限制为255。
 
         :return: The description of this ListNatGatewayDnatRulesRequest.
         :rtype: str
@@ -280,6 +297,7 @@ class ListNatGatewayDnatRulesRequest:
     def description(self, description):
         """Sets the description of this ListNatGatewayDnatRulesRequest.
 
+        DNAT规则的描述，长度限制为255。
 
         :param description: The description of this ListNatGatewayDnatRulesRequest.
         :type: str
@@ -290,6 +308,7 @@ class ListNatGatewayDnatRulesRequest:
     def created_at(self):
         """Gets the created_at of this ListNatGatewayDnatRulesRequest.
 
+        DNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
         :return: The created_at of this ListNatGatewayDnatRulesRequest.
         :rtype: datetime
@@ -300,6 +319,7 @@ class ListNatGatewayDnatRulesRequest:
     def created_at(self, created_at):
         """Sets the created_at of this ListNatGatewayDnatRulesRequest.
 
+        DNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
         :param created_at: The created_at of this ListNatGatewayDnatRulesRequest.
         :type: datetime
@@ -310,6 +330,7 @@ class ListNatGatewayDnatRulesRequest:
     def nat_gateway_id(self):
         """Gets the nat_gateway_id of this ListNatGatewayDnatRulesRequest.
 
+        公网NAT网关实例的ID。
 
         :return: The nat_gateway_id of this ListNatGatewayDnatRulesRequest.
         :rtype: list[str]
@@ -320,6 +341,7 @@ class ListNatGatewayDnatRulesRequest:
     def nat_gateway_id(self, nat_gateway_id):
         """Sets the nat_gateway_id of this ListNatGatewayDnatRulesRequest.
 
+        公网NAT网关实例的ID。
 
         :param nat_gateway_id: The nat_gateway_id of this ListNatGatewayDnatRulesRequest.
         :type: list[str]
@@ -330,6 +352,7 @@ class ListNatGatewayDnatRulesRequest:
     def port_id(self):
         """Gets the port_id of this ListNatGatewayDnatRulesRequest.
 
+        虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
 
         :return: The port_id of this ListNatGatewayDnatRulesRequest.
         :rtype: str
@@ -340,6 +363,7 @@ class ListNatGatewayDnatRulesRequest:
     def port_id(self, port_id):
         """Sets the port_id of this ListNatGatewayDnatRulesRequest.
 
+        虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
 
         :param port_id: The port_id of this ListNatGatewayDnatRulesRequest.
         :type: str
@@ -350,6 +374,7 @@ class ListNatGatewayDnatRulesRequest:
     def private_ip(self):
         """Gets the private_ip of this ListNatGatewayDnatRulesRequest.
 
+        用户私有IP地址，对应专线、云连接场景，与port_id参数二选一。
 
         :return: The private_ip of this ListNatGatewayDnatRulesRequest.
         :rtype: str
@@ -360,6 +385,7 @@ class ListNatGatewayDnatRulesRequest:
     def private_ip(self, private_ip):
         """Sets the private_ip of this ListNatGatewayDnatRulesRequest.
 
+        用户私有IP地址，对应专线、云连接场景，与port_id参数二选一。
 
         :param private_ip: The private_ip of this ListNatGatewayDnatRulesRequest.
         :type: str
@@ -370,6 +396,7 @@ class ListNatGatewayDnatRulesRequest:
     def protocol(self):
         """Gets the protocol of this ListNatGatewayDnatRulesRequest.
 
+        协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
 
         :return: The protocol of this ListNatGatewayDnatRulesRequest.
         :rtype: list[str]
@@ -380,6 +407,7 @@ class ListNatGatewayDnatRulesRequest:
     def protocol(self, protocol):
         """Sets the protocol of this ListNatGatewayDnatRulesRequest.
 
+        协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
 
         :param protocol: The protocol of this ListNatGatewayDnatRulesRequest.
         :type: list[str]

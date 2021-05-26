@@ -74,6 +74,7 @@ class ListDomainTrafficSummaryRequest:
     def play_domains(self):
         """Gets the play_domains of this ListDomainTrafficSummaryRequest.
 
+        播放域名列表，最多支持查询10个域名，多个域名以逗号分隔。 
 
         :return: The play_domains of this ListDomainTrafficSummaryRequest.
         :rtype: list[str]
@@ -84,6 +85,7 @@ class ListDomainTrafficSummaryRequest:
     def play_domains(self, play_domains):
         """Sets the play_domains of this ListDomainTrafficSummaryRequest.
 
+        播放域名列表，最多支持查询10个域名，多个域名以逗号分隔。 
 
         :param play_domains: The play_domains of this ListDomainTrafficSummaryRequest.
         :type: list[str]
@@ -94,6 +96,7 @@ class ListDomainTrafficSummaryRequest:
     def app(self):
         """Gets the app of this ListDomainTrafficSummaryRequest.
 
+        应用名称。
 
         :return: The app of this ListDomainTrafficSummaryRequest.
         :rtype: str
@@ -104,6 +107,7 @@ class ListDomainTrafficSummaryRequest:
     def app(self, app):
         """Sets the app of this ListDomainTrafficSummaryRequest.
 
+        应用名称。
 
         :param app: The app of this ListDomainTrafficSummaryRequest.
         :type: str
@@ -114,6 +118,7 @@ class ListDomainTrafficSummaryRequest:
     def stream(self):
         """Gets the stream of this ListDomainTrafficSummaryRequest.
 
+        流名。
 
         :return: The stream of this ListDomainTrafficSummaryRequest.
         :rtype: str
@@ -124,6 +129,7 @@ class ListDomainTrafficSummaryRequest:
     def stream(self, stream):
         """Sets the stream of this ListDomainTrafficSummaryRequest.
 
+        流名。
 
         :param stream: The stream of this ListDomainTrafficSummaryRequest.
         :type: str
@@ -134,6 +140,7 @@ class ListDomainTrafficSummaryRequest:
     def region(self):
         """Gets the region of this ListDomainTrafficSummaryRequest.
 
+        区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
 
         :return: The region of this ListDomainTrafficSummaryRequest.
         :rtype: list[str]
@@ -144,6 +151,7 @@ class ListDomainTrafficSummaryRequest:
     def region(self, region):
         """Sets the region of this ListDomainTrafficSummaryRequest.
 
+        区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
 
         :param region: The region of this ListDomainTrafficSummaryRequest.
         :type: list[str]
@@ -154,6 +162,7 @@ class ListDomainTrafficSummaryRequest:
     def isp(self):
         """Gets the isp of this ListDomainTrafficSummaryRequest.
 
+        运营商列表。取值如下： - \"CMCC ：移动\" - \"CTCC ： 电信\" - \"CUCC ：联通\" - \"OTHER: 其他\"  不填写查询所有运营商。 
 
         :return: The isp of this ListDomainTrafficSummaryRequest.
         :rtype: list[str]
@@ -164,6 +173,7 @@ class ListDomainTrafficSummaryRequest:
     def isp(self, isp):
         """Sets the isp of this ListDomainTrafficSummaryRequest.
 
+        运营商列表。取值如下： - \"CMCC ：移动\" - \"CTCC ： 电信\" - \"CUCC ：联通\" - \"OTHER: 其他\"  不填写查询所有运营商。 
 
         :param isp: The isp of this ListDomainTrafficSummaryRequest.
         :type: list[str]
@@ -174,6 +184,7 @@ class ListDomainTrafficSummaryRequest:
     def start_time(self):
         """Gets the start_time of this ListDomainTrafficSummaryRequest.
 
+        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期90天。  若参数为空，默认查询7天数据。 
 
         :return: The start_time of this ListDomainTrafficSummaryRequest.
         :rtype: str
@@ -184,6 +195,7 @@ class ListDomainTrafficSummaryRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListDomainTrafficSummaryRequest.
 
+        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期90天。  若参数为空，默认查询7天数据。 
 
         :param start_time: The start_time of this ListDomainTrafficSummaryRequest.
         :type: str
@@ -194,6 +206,7 @@ class ListDomainTrafficSummaryRequest:
     def end_time(self):
         """Gets the end_time of this ListDomainTrafficSummaryRequest.
 
+        结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
         :return: The end_time of this ListDomainTrafficSummaryRequest.
         :rtype: str
@@ -204,6 +217,7 @@ class ListDomainTrafficSummaryRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListDomainTrafficSummaryRequest.
 
+        结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
         :param end_time: The end_time of this ListDomainTrafficSummaryRequest.
         :type: str

@@ -44,6 +44,7 @@ class ListVersionRequest:
     def api_version(self):
         """Gets the api_version of this ListVersionRequest.
 
+        待查询版本号。当前仅支持v2。
 
         :return: The api_version of this ListVersionRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListVersionRequest:
     def api_version(self, api_version):
         """Sets the api_version of this ListVersionRequest.
 
+        待查询版本号。当前仅支持v2。
 
         :param api_version: The api_version of this ListVersionRequest.
         :type: str

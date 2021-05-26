@@ -85,6 +85,7 @@ class SearchMeetingsRequest:
     def user_uuid(self):
         """Gets the user_uuid of this SearchMeetingsRequest.
 
+        待查询的会议预定者的uuid 仅管理员有权限查询权限范围内的所有账号；普通账号该字段无效，只能查询自己的。
 
         :return: The user_uuid of this SearchMeetingsRequest.
         :rtype: str
@@ -95,6 +96,7 @@ class SearchMeetingsRequest:
     def user_uuid(self, user_uuid):
         """Sets the user_uuid of this SearchMeetingsRequest.
 
+        待查询的会议预定者的uuid 仅管理员有权限查询权限范围内的所有账号；普通账号该字段无效，只能查询自己的。
 
         :param user_uuid: The user_uuid of this SearchMeetingsRequest.
         :type: str
@@ -105,6 +107,7 @@ class SearchMeetingsRequest:
     def offset(self):
         """Gets the offset of this SearchMeetingsRequest.
 
+        指定返回的记录索引。该值必须大于等于0； 默认为0。
 
         :return: The offset of this SearchMeetingsRequest.
         :rtype: int
@@ -115,6 +118,7 @@ class SearchMeetingsRequest:
     def offset(self, offset):
         """Sets the offset of this SearchMeetingsRequest.
 
+        指定返回的记录索引。该值必须大于等于0； 默认为0。
 
         :param offset: The offset of this SearchMeetingsRequest.
         :type: int
@@ -125,6 +129,7 @@ class SearchMeetingsRequest:
     def limit(self):
         """Gets the limit of this SearchMeetingsRequest.
 
+        指定返回的记录数，默认值由会议AS定义，默认是20，最大500条。
 
         :return: The limit of this SearchMeetingsRequest.
         :rtype: int
@@ -135,6 +140,7 @@ class SearchMeetingsRequest:
     def limit(self, limit):
         """Sets the limit of this SearchMeetingsRequest.
 
+        指定返回的记录数，默认值由会议AS定义，默认是20，最大500条。
 
         :param limit: The limit of this SearchMeetingsRequest.
         :type: int
@@ -145,6 +151,7 @@ class SearchMeetingsRequest:
     def query_all(self):
         """Gets the query_all of this SearchMeetingsRequest.
 
+        指定是否查询企业下所有用户的会议记录。 如果登录帐号不是企业管理员，则该字段无效。 如果该字段为true，则userUUID字段无效。 default : false
 
         :return: The query_all of this SearchMeetingsRequest.
         :rtype: bool
@@ -155,6 +162,7 @@ class SearchMeetingsRequest:
     def query_all(self, query_all):
         """Sets the query_all of this SearchMeetingsRequest.
 
+        指定是否查询企业下所有用户的会议记录。 如果登录帐号不是企业管理员，则该字段无效。 如果该字段为true，则userUUID字段无效。 default : false
 
         :param query_all: The query_all of this SearchMeetingsRequest.
         :type: bool
@@ -165,6 +173,7 @@ class SearchMeetingsRequest:
     def search_key(self):
         """Gets the search_key of this SearchMeetingsRequest.
 
+        查询用来当作关键词的字符串。长度限制为1-128个字符。
 
         :return: The search_key of this SearchMeetingsRequest.
         :rtype: str
@@ -175,6 +184,7 @@ class SearchMeetingsRequest:
     def search_key(self, search_key):
         """Sets the search_key of this SearchMeetingsRequest.
 
+        查询用来当作关键词的字符串。长度限制为1-128个字符。
 
         :param search_key: The search_key of this SearchMeetingsRequest.
         :type: str
@@ -185,6 +195,7 @@ class SearchMeetingsRequest:
     def query_conf_mode(self):
         """Gets the query_conf_mode of this SearchMeetingsRequest.
 
+        - ADAY:  一天。 - AWEEK:  一周。 - AMONTH:  一个月。 - ALL:  查询所有。
 
         :return: The query_conf_mode of this SearchMeetingsRequest.
         :rtype: str
@@ -195,6 +206,7 @@ class SearchMeetingsRequest:
     def query_conf_mode(self, query_conf_mode):
         """Sets the query_conf_mode of this SearchMeetingsRequest.
 
+        - ADAY:  一天。 - AWEEK:  一周。 - AMONTH:  一个月。 - ALL:  查询所有。
 
         :param query_conf_mode: The query_conf_mode of this SearchMeetingsRequest.
         :type: str
@@ -205,6 +217,7 @@ class SearchMeetingsRequest:
     def sort_type(self):
         """Gets the sort_type of this SearchMeetingsRequest.
 
+        - ASC_StartTIME:  按会议开始时间升序排序。 - DSC_StartTIME:  按会议开始时间降序排序。
 
         :return: The sort_type of this SearchMeetingsRequest.
         :rtype: str
@@ -215,6 +228,7 @@ class SearchMeetingsRequest:
     def sort_type(self, sort_type):
         """Sets the sort_type of this SearchMeetingsRequest.
 
+        - ASC_StartTIME:  按会议开始时间升序排序。 - DSC_StartTIME:  按会议开始时间降序排序。
 
         :param sort_type: The sort_type of this SearchMeetingsRequest.
         :type: str
@@ -225,6 +239,7 @@ class SearchMeetingsRequest:
     def x_authorization_type(self):
         """Gets the x_authorization_type of this SearchMeetingsRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :return: The x_authorization_type of this SearchMeetingsRequest.
         :rtype: str
@@ -235,6 +250,7 @@ class SearchMeetingsRequest:
     def x_authorization_type(self, x_authorization_type):
         """Sets the x_authorization_type of this SearchMeetingsRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this SearchMeetingsRequest.
         :type: str
@@ -245,6 +261,7 @@ class SearchMeetingsRequest:
     def x_site_id(self):
         """Gets the x_site_id of this SearchMeetingsRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :return: The x_site_id of this SearchMeetingsRequest.
         :rtype: str
@@ -255,6 +272,7 @@ class SearchMeetingsRequest:
     def x_site_id(self, x_site_id):
         """Sets the x_site_id of this SearchMeetingsRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this SearchMeetingsRequest.
         :type: str

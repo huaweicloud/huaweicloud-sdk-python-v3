@@ -85,6 +85,7 @@ class ListSubNetworkInterfacesRequest:
     def limit(self):
         """Gets the limit of this ListSubNetworkInterfacesRequest.
 
+        功能说明：每页返回的个数 取值范围：0-2000
 
         :return: The limit of this ListSubNetworkInterfacesRequest.
         :rtype: int
@@ -95,6 +96,7 @@ class ListSubNetworkInterfacesRequest:
     def limit(self, limit):
         """Sets the limit of this ListSubNetworkInterfacesRequest.
 
+        功能说明：每页返回的个数 取值范围：0-2000
 
         :param limit: The limit of this ListSubNetworkInterfacesRequest.
         :type: int
@@ -105,6 +107,7 @@ class ListSubNetworkInterfacesRequest:
     def marker(self):
         """Gets the marker of this ListSubNetworkInterfacesRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :return: The marker of this ListSubNetworkInterfacesRequest.
         :rtype: str
@@ -115,6 +118,7 @@ class ListSubNetworkInterfacesRequest:
     def marker(self, marker):
         """Sets the marker of this ListSubNetworkInterfacesRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListSubNetworkInterfacesRequest.
         :type: str
@@ -125,6 +129,7 @@ class ListSubNetworkInterfacesRequest:
     def id(self):
         """Gets the id of this ListSubNetworkInterfacesRequest.
 
+        功能说明：辅助弹性网卡ID，支持多ID过滤 使用场景：查询需要的多个辅助弹性网卡信息
 
         :return: The id of this ListSubNetworkInterfacesRequest.
         :rtype: list[str]
@@ -135,6 +140,7 @@ class ListSubNetworkInterfacesRequest:
     def id(self, id):
         """Sets the id of this ListSubNetworkInterfacesRequest.
 
+        功能说明：辅助弹性网卡ID，支持多ID过滤 使用场景：查询需要的多个辅助弹性网卡信息
 
         :param id: The id of this ListSubNetworkInterfacesRequest.
         :type: list[str]
@@ -145,6 +151,7 @@ class ListSubNetworkInterfacesRequest:
     def virsubnet_id(self):
         """Gets the virsubnet_id of this ListSubNetworkInterfacesRequest.
 
+        功能说明：辅助弹性网卡所属虚拟子网的ID，支持多个ID过滤 使用场景：过滤需要的单个或者多个虚拟子网下的辅助弹性网卡
 
         :return: The virsubnet_id of this ListSubNetworkInterfacesRequest.
         :rtype: list[str]
@@ -155,6 +162,7 @@ class ListSubNetworkInterfacesRequest:
     def virsubnet_id(self, virsubnet_id):
         """Sets the virsubnet_id of this ListSubNetworkInterfacesRequest.
 
+        功能说明：辅助弹性网卡所属虚拟子网的ID，支持多个ID过滤 使用场景：过滤需要的单个或者多个虚拟子网下的辅助弹性网卡
 
         :param virsubnet_id: The virsubnet_id of this ListSubNetworkInterfacesRequest.
         :type: list[str]
@@ -165,6 +173,7 @@ class ListSubNetworkInterfacesRequest:
     def private_ip_address(self):
         """Gets the private_ip_address of this ListSubNetworkInterfacesRequest.
 
+        功能说明：辅助弹性网卡的私有IPv4地址，支持多个地址同时过滤 使用场景：通过单个或者多个ip地址过滤查询辅助弹性网卡
 
         :return: The private_ip_address of this ListSubNetworkInterfacesRequest.
         :rtype: list[str]
@@ -175,6 +184,7 @@ class ListSubNetworkInterfacesRequest:
     def private_ip_address(self, private_ip_address):
         """Sets the private_ip_address of this ListSubNetworkInterfacesRequest.
 
+        功能说明：辅助弹性网卡的私有IPv4地址，支持多个地址同时过滤 使用场景：通过单个或者多个ip地址过滤查询辅助弹性网卡
 
         :param private_ip_address: The private_ip_address of this ListSubNetworkInterfacesRequest.
         :type: list[str]
@@ -185,6 +195,7 @@ class ListSubNetworkInterfacesRequest:
     def mac_address(self):
         """Gets the mac_address of this ListSubNetworkInterfacesRequest.
 
+        功能说明：辅助弹性网卡的mac地址，支持多个同时过滤 使用场景：使用mac地址精确过滤辅助弹性网卡
 
         :return: The mac_address of this ListSubNetworkInterfacesRequest.
         :rtype: list[str]
@@ -195,6 +206,7 @@ class ListSubNetworkInterfacesRequest:
     def mac_address(self, mac_address):
         """Sets the mac_address of this ListSubNetworkInterfacesRequest.
 
+        功能说明：辅助弹性网卡的mac地址，支持多个同时过滤 使用场景：使用mac地址精确过滤辅助弹性网卡
 
         :param mac_address: The mac_address of this ListSubNetworkInterfacesRequest.
         :type: list[str]
@@ -205,6 +217,7 @@ class ListSubNetworkInterfacesRequest:
     def vpc_id(self):
         """Gets the vpc_id of this ListSubNetworkInterfacesRequest.
 
+        功能说明：辅助弹性网卡所属的VPC_ID，支持多ID过滤 使用场景：过滤单个或多个VPC下的辅助弹性网卡信息
 
         :return: The vpc_id of this ListSubNetworkInterfacesRequest.
         :rtype: list[str]
@@ -215,6 +228,7 @@ class ListSubNetworkInterfacesRequest:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this ListSubNetworkInterfacesRequest.
 
+        功能说明：辅助弹性网卡所属的VPC_ID，支持多ID过滤 使用场景：过滤单个或多个VPC下的辅助弹性网卡信息
 
         :param vpc_id: The vpc_id of this ListSubNetworkInterfacesRequest.
         :type: list[str]
@@ -225,6 +239,7 @@ class ListSubNetworkInterfacesRequest:
     def description(self):
         """Gets the description of this ListSubNetworkInterfacesRequest.
 
+        功能说明：辅助弹性网卡的描述信息，支持多个同时过滤 使用场景：通过描述信息过滤辅助弹性网卡
 
         :return: The description of this ListSubNetworkInterfacesRequest.
         :rtype: list[str]
@@ -235,6 +250,7 @@ class ListSubNetworkInterfacesRequest:
     def description(self, description):
         """Sets the description of this ListSubNetworkInterfacesRequest.
 
+        功能说明：辅助弹性网卡的描述信息，支持多个同时过滤 使用场景：通过描述信息过滤辅助弹性网卡
 
         :param description: The description of this ListSubNetworkInterfacesRequest.
         :type: list[str]
@@ -245,6 +261,7 @@ class ListSubNetworkInterfacesRequest:
     def parent_id(self):
         """Gets the parent_id of this ListSubNetworkInterfacesRequest.
 
+        功能说明：辅助弹性网卡的宿主网卡的ID，支持多ID过滤 使用场景：过滤单个或多个宿主网卡下存在的辅助弹性网卡
 
         :return: The parent_id of this ListSubNetworkInterfacesRequest.
         :rtype: list[str]
@@ -255,6 +272,7 @@ class ListSubNetworkInterfacesRequest:
     def parent_id(self, parent_id):
         """Sets the parent_id of this ListSubNetworkInterfacesRequest.
 
+        功能说明：辅助弹性网卡的宿主网卡的ID，支持多ID过滤 使用场景：过滤单个或多个宿主网卡下存在的辅助弹性网卡
 
         :param parent_id: The parent_id of this ListSubNetworkInterfacesRequest.
         :type: list[str]

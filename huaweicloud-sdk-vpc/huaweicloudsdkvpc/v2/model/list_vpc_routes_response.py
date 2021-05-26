@@ -35,7 +35,7 @@ class ListVpcRoutesResponse(SdkResponse):
     def __init__(self, routes=None, routes_links=None):
         """ListVpcRoutesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListVpcRoutesResponse, self).__init__()
 
         self._routes = None
         self._routes_links = None

@@ -71,7 +71,7 @@ class CreateIssueV4Response(SdkResponse):
     def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, creator=None, custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, module=None, parent_issue=None, priority=None, severity=None, status=None, tracker=None):
         """CreateIssueV4Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateIssueV4Response, self).__init__()
 
         self._actual_work_hours = None
         self._assigned_cc_user = None

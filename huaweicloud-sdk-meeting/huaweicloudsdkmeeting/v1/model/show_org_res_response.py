@@ -45,7 +45,7 @@ class ShowOrgResResponse(SdkResponse):
     def __init__(self, used_rec_storage=None, used_accounts_count=None, used_live_count=None, conf_count=None, conf_length=None, active_attendee_count=None, total_attendee_count=None):
         """ShowOrgResResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowOrgResResponse, self).__init__()
 
         self._used_rec_storage = None
         self._used_accounts_count = None

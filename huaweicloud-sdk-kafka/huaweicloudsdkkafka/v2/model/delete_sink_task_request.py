@@ -48,6 +48,7 @@ class DeleteSinkTaskRequest:
     def connector_id(self):
         """Gets the connector_id of this DeleteSinkTaskRequest.
 
+        实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
 
         :return: The connector_id of this DeleteSinkTaskRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteSinkTaskRequest:
     def connector_id(self, connector_id):
         """Sets the connector_id of this DeleteSinkTaskRequest.
 
+        实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
 
         :param connector_id: The connector_id of this DeleteSinkTaskRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteSinkTaskRequest:
     def task_id(self):
         """Gets the task_id of this DeleteSinkTaskRequest.
 
+        转储任务ID。
 
         :return: The task_id of this DeleteSinkTaskRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteSinkTaskRequest:
     def task_id(self, task_id):
         """Sets the task_id of this DeleteSinkTaskRequest.
 
+        转储任务ID。
 
         :param task_id: The task_id of this DeleteSinkTaskRequest.
         :type: str

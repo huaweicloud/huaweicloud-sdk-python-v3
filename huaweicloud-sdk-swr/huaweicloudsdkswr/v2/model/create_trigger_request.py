@@ -53,6 +53,7 @@ class CreateTriggerRequest:
     def namespace(self):
         """Gets the namespace of this CreateTriggerRequest.
 
+        组织名称
 
         :return: The namespace of this CreateTriggerRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class CreateTriggerRequest:
     def namespace(self, namespace):
         """Sets the namespace of this CreateTriggerRequest.
 
+        组织名称
 
         :param namespace: The namespace of this CreateTriggerRequest.
         :type: str
@@ -73,6 +75,7 @@ class CreateTriggerRequest:
     def repository(self):
         """Gets the repository of this CreateTriggerRequest.
 
+        镜像仓库名称
 
         :return: The repository of this CreateTriggerRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class CreateTriggerRequest:
     def repository(self, repository):
         """Sets the repository of this CreateTriggerRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this CreateTriggerRequest.
         :type: str

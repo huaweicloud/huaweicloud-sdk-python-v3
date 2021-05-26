@@ -53,6 +53,7 @@ class ListKmsByTagsRequest:
     def resource_instances(self):
         """Gets the resource_instances of this ListKmsByTagsRequest.
 
+        资源实例
 
         :return: The resource_instances of this ListKmsByTagsRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class ListKmsByTagsRequest:
     def resource_instances(self, resource_instances):
         """Sets the resource_instances of this ListKmsByTagsRequest.
 
+        资源实例
 
         :param resource_instances: The resource_instances of this ListKmsByTagsRequest.
         :type: str
@@ -73,6 +75,7 @@ class ListKmsByTagsRequest:
     def version_id(self):
         """Gets the version_id of this ListKmsByTagsRequest.
 
+        API版本号
 
         :return: The version_id of this ListKmsByTagsRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class ListKmsByTagsRequest:
     def version_id(self, version_id):
         """Sets the version_id of this ListKmsByTagsRequest.
 
+        API版本号
 
         :param version_id: The version_id of this ListKmsByTagsRequest.
         :type: str

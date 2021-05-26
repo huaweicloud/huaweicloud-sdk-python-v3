@@ -43,7 +43,7 @@ class ShowVersionAliasResponse(SdkResponse):
     def __init__(self, name=None, version=None, description=None, last_modified=None, alias_urn=None, additional_version_weights=None):
         """ShowVersionAliasResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowVersionAliasResponse, self).__init__()
 
         self._name = None
         self._version = None

@@ -35,7 +35,7 @@ class ListProjectsV4Response(SdkResponse):
     def __init__(self, projects=None, total=None):
         """ListProjectsV4Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListProjectsV4Response, self).__init__()
 
         self._projects = None
         self._total = None

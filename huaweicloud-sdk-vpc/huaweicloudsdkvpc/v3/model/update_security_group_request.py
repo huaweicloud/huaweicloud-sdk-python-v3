@@ -49,6 +49,7 @@ class UpdateSecurityGroupRequest:
     def security_group_id(self):
         """Gets the security_group_id of this UpdateSecurityGroupRequest.
 
+        安全组ID
 
         :return: The security_group_id of this UpdateSecurityGroupRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateSecurityGroupRequest:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this UpdateSecurityGroupRequest.
 
+        安全组ID
 
         :param security_group_id: The security_group_id of this UpdateSecurityGroupRequest.
         :type: str

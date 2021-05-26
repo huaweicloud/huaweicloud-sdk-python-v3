@@ -33,7 +33,7 @@ class AddCorpResponse(SdkResponse):
     def __init__(self, value=None):
         """AddCorpResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AddCorpResponse, self).__init__()
 
         self._value = None
         self.discriminator = None

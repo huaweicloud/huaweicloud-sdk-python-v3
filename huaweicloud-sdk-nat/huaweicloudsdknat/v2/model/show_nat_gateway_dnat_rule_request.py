@@ -44,6 +44,7 @@ class ShowNatGatewayDnatRuleRequest:
     def dnat_rule_id(self):
         """Gets the dnat_rule_id of this ShowNatGatewayDnatRuleRequest.
 
+        DNAT规则的ID。
 
         :return: The dnat_rule_id of this ShowNatGatewayDnatRuleRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowNatGatewayDnatRuleRequest:
     def dnat_rule_id(self, dnat_rule_id):
         """Sets the dnat_rule_id of this ShowNatGatewayDnatRuleRequest.
 
+        DNAT规则的ID。
 
         :param dnat_rule_id: The dnat_rule_id of this ShowNatGatewayDnatRuleRequest.
         :type: str

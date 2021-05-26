@@ -33,7 +33,7 @@ class UpdateTopicAttributeResponse(SdkResponse):
     def __init__(self, request_id=None):
         """UpdateTopicAttributeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateTopicAttributeResponse, self).__init__()
 
         self._request_id = None
         self.discriminator = None

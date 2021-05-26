@@ -31,7 +31,7 @@ class CreateImageSyncRepoResponse(SdkResponse):
     def __init__(self):
         """CreateImageSyncRepoResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateImageSyncRepoResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

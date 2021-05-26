@@ -59,6 +59,7 @@ class ListHistoryStreamsRequest:
     def domain(self):
         """Gets the domain of this ListHistoryStreamsRequest.
 
+        推流域名。 
 
         :return: The domain of this ListHistoryStreamsRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class ListHistoryStreamsRequest:
     def domain(self, domain):
         """Sets the domain of this ListHistoryStreamsRequest.
 
+        推流域名。 
 
         :param domain: The domain of this ListHistoryStreamsRequest.
         :type: str
@@ -79,6 +81,7 @@ class ListHistoryStreamsRequest:
     def app(self):
         """Gets the app of this ListHistoryStreamsRequest.
 
+        应用名称。
 
         :return: The app of this ListHistoryStreamsRequest.
         :rtype: str
@@ -89,6 +92,7 @@ class ListHistoryStreamsRequest:
     def app(self, app):
         """Sets the app of this ListHistoryStreamsRequest.
 
+        应用名称。
 
         :param app: The app of this ListHistoryStreamsRequest.
         :type: str
@@ -99,6 +103,7 @@ class ListHistoryStreamsRequest:
     def offset(self):
         """Gets the offset of this ListHistoryStreamsRequest.
 
+        分页编号，默认为0
 
         :return: The offset of this ListHistoryStreamsRequest.
         :rtype: int
@@ -109,6 +114,7 @@ class ListHistoryStreamsRequest:
     def offset(self, offset):
         """Sets the offset of this ListHistoryStreamsRequest.
 
+        分页编号，默认为0
 
         :param offset: The offset of this ListHistoryStreamsRequest.
         :type: int
@@ -119,6 +125,7 @@ class ListHistoryStreamsRequest:
     def limit(self):
         """Gets the limit of this ListHistoryStreamsRequest.
 
+        每页记录数。  取值范围：[1,100]  默认值：10。 
 
         :return: The limit of this ListHistoryStreamsRequest.
         :rtype: int
@@ -129,6 +136,7 @@ class ListHistoryStreamsRequest:
     def limit(self, limit):
         """Sets the limit of this ListHistoryStreamsRequest.
 
+        每页记录数。  取值范围：[1,100]  默认值：10。 
 
         :param limit: The limit of this ListHistoryStreamsRequest.
         :type: int

@@ -59,6 +59,7 @@ class ShowRecordingDetailRequest:
     def conf_uuid(self):
         """Gets the conf_uuid of this ShowRecordingDetailRequest.
 
+        会议的ConfUUID(通过查询录制列表获取)。
 
         :return: The conf_uuid of this ShowRecordingDetailRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class ShowRecordingDetailRequest:
     def conf_uuid(self, conf_uuid):
         """Sets the conf_uuid of this ShowRecordingDetailRequest.
 
+        会议的ConfUUID(通过查询录制列表获取)。
 
         :param conf_uuid: The conf_uuid of this ShowRecordingDetailRequest.
         :type: str
@@ -79,6 +81,7 @@ class ShowRecordingDetailRequest:
     def user_uuid(self):
         """Gets the user_uuid of this ShowRecordingDetailRequest.
 
+        用户的UUID（已在USG注册过的）。
 
         :return: The user_uuid of this ShowRecordingDetailRequest.
         :rtype: str
@@ -89,6 +92,7 @@ class ShowRecordingDetailRequest:
     def user_uuid(self, user_uuid):
         """Sets the user_uuid of this ShowRecordingDetailRequest.
 
+        用户的UUID（已在USG注册过的）。
 
         :param user_uuid: The user_uuid of this ShowRecordingDetailRequest.
         :type: str
@@ -99,6 +103,7 @@ class ShowRecordingDetailRequest:
     def x_authorization_type(self):
         """Gets the x_authorization_type of this ShowRecordingDetailRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :return: The x_authorization_type of this ShowRecordingDetailRequest.
         :rtype: str
@@ -109,6 +114,7 @@ class ShowRecordingDetailRequest:
     def x_authorization_type(self, x_authorization_type):
         """Sets the x_authorization_type of this ShowRecordingDetailRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this ShowRecordingDetailRequest.
         :type: str
@@ -119,6 +125,7 @@ class ShowRecordingDetailRequest:
     def x_site_id(self):
         """Gets the x_site_id of this ShowRecordingDetailRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :return: The x_site_id of this ShowRecordingDetailRequest.
         :rtype: str
@@ -129,6 +136,7 @@ class ShowRecordingDetailRequest:
     def x_site_id(self, x_site_id):
         """Sets the x_site_id of this ShowRecordingDetailRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this ShowRecordingDetailRequest.
         :type: str

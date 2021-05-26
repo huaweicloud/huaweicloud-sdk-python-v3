@@ -44,6 +44,7 @@ class DeleteSecretRequest:
     def secret_id(self):
         """Gets the secret_id of this DeleteSecretRequest.
 
+        凭据的资源标识符。
 
         :return: The secret_id of this DeleteSecretRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteSecretRequest:
     def secret_id(self, secret_id):
         """Sets the secret_id of this DeleteSecretRequest.
 
+        凭据的资源标识符。
 
         :param secret_id: The secret_id of this DeleteSecretRequest.
         :type: str

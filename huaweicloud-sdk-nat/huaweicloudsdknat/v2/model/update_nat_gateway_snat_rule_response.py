@@ -33,7 +33,7 @@ class UpdateNatGatewaySnatRuleResponse(SdkResponse):
     def __init__(self, snat_rule=None):
         """UpdateNatGatewaySnatRuleResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateNatGatewaySnatRuleResponse, self).__init__()
 
         self._snat_rule = None
         self.discriminator = None

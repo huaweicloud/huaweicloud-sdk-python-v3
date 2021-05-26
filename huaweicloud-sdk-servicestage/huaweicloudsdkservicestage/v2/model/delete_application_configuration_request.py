@@ -48,6 +48,7 @@ class DeleteApplicationConfigurationRequest:
     def application_id(self):
         """Gets the application_id of this DeleteApplicationConfigurationRequest.
 
+        应用ID。
 
         :return: The application_id of this DeleteApplicationConfigurationRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteApplicationConfigurationRequest:
     def application_id(self, application_id):
         """Sets the application_id of this DeleteApplicationConfigurationRequest.
 
+        应用ID。
 
         :param application_id: The application_id of this DeleteApplicationConfigurationRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteApplicationConfigurationRequest:
     def environment_id(self):
         """Gets the environment_id of this DeleteApplicationConfigurationRequest.
 
+        环境ID。
 
         :return: The environment_id of this DeleteApplicationConfigurationRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteApplicationConfigurationRequest:
     def environment_id(self, environment_id):
         """Sets the environment_id of this DeleteApplicationConfigurationRequest.
 
+        环境ID。
 
         :param environment_id: The environment_id of this DeleteApplicationConfigurationRequest.
         :type: str

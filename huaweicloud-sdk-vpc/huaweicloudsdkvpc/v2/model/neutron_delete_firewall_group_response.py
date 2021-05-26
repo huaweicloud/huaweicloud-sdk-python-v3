@@ -31,7 +31,7 @@ class NeutronDeleteFirewallGroupResponse(SdkResponse):
     def __init__(self):
         """NeutronDeleteFirewallGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(NeutronDeleteFirewallGroupResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

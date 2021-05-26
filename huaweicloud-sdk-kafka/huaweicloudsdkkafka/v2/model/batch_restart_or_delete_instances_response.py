@@ -33,7 +33,7 @@ class BatchRestartOrDeleteInstancesResponse(SdkResponse):
     def __init__(self, results=None):
         """BatchRestartOrDeleteInstancesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchRestartOrDeleteInstancesResponse, self).__init__()
 
         self._results = None
         self.discriminator = None

@@ -33,7 +33,7 @@ class ShowConfOrgResponse(SdkResponse):
     def __init__(self, org_id=None):
         """ShowConfOrgResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowConfOrgResponse, self).__init__()
 
         self._org_id = None
         self.discriminator = None

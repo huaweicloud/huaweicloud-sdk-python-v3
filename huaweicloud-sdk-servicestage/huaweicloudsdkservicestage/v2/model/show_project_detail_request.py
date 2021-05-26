@@ -48,6 +48,7 @@ class ShowProjectDetailRequest:
     def x_repo_auth(self):
         """Gets the x_repo_auth of this ShowProjectDetailRequest.
 
+        授权名称。
 
         :return: The x_repo_auth of this ShowProjectDetailRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowProjectDetailRequest:
     def x_repo_auth(self, x_repo_auth):
         """Sets the x_repo_auth of this ShowProjectDetailRequest.
 
+        授权名称。
 
         :param x_repo_auth: The x_repo_auth of this ShowProjectDetailRequest.
         :type: str
@@ -68,6 +70,7 @@ class ShowProjectDetailRequest:
     def clone_url(self):
         """Gets the clone_url of this ShowProjectDetailRequest.
 
+        仓库克隆URL。
 
         :return: The clone_url of this ShowProjectDetailRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowProjectDetailRequest:
     def clone_url(self, clone_url):
         """Sets the clone_url of this ShowProjectDetailRequest.
 
+        仓库克隆URL。
 
         :param clone_url: The clone_url of this ShowProjectDetailRequest.
         :type: str

@@ -31,7 +31,7 @@ class ResetMessageOffsetResponse(SdkResponse):
     def __init__(self):
         """ResetMessageOffsetResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ResetMessageOffsetResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

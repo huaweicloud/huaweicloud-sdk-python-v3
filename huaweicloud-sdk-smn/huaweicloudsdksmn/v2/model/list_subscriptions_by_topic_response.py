@@ -37,7 +37,7 @@ class ListSubscriptionsByTopicResponse(SdkResponse):
     def __init__(self, request_id=None, subscription_count=None, subscriptions=None):
         """ListSubscriptionsByTopicResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSubscriptionsByTopicResponse, self).__init__()
 
         self._request_id = None
         self._subscription_count = None

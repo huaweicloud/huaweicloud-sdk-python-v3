@@ -26,17 +26,19 @@ class AddCorpDTO:
         'basic_info': 'CorpBasicDTO',
         'admin_info': 'AdminDTO',
         'res_info': 'AddCorpResDTO',
-        'group_id': 'str'
+        'group_id': 'str',
+        'property_info': 'list[OrgPropertyDTO]'
     }
 
     attribute_map = {
         'basic_info': 'basicInfo',
         'admin_info': 'adminInfo',
         'res_info': 'resInfo',
-        'group_id': 'groupId'
+        'group_id': 'groupId',
+        'property_info': 'propertyInfo'
     }
 
-    def __init__(self, basic_info=None, admin_info=None, res_info=None, group_id=None):
+    def __init__(self, basic_info=None, admin_info=None, res_info=None, group_id=None, property_info=None):
         """AddCorpDTO - a model defined in huaweicloud sdk"""
         
         
@@ -45,6 +47,7 @@ class AddCorpDTO:
         self._admin_info = None
         self._res_info = None
         self._group_id = None
+        self._property_info = None
         self.discriminator = None
 
         self.basic_info = basic_info
@@ -53,6 +56,8 @@ class AddCorpDTO:
             self.res_info = res_info
         if group_id is not None:
             self.group_id = group_id
+        if property_info is not None:
+            self.property_info = property_info
 
     @property
     def basic_info(self):
@@ -135,6 +140,28 @@ class AddCorpDTO:
         :type: str
         """
         self._group_id = group_id
+
+    @property
+    def property_info(self):
+        """Gets the property_info of this AddCorpDTO.
+
+        可配置项信息。
+
+        :return: The property_info of this AddCorpDTO.
+        :rtype: list[OrgPropertyDTO]
+        """
+        return self._property_info
+
+    @property_info.setter
+    def property_info(self, property_info):
+        """Sets the property_info of this AddCorpDTO.
+
+        可配置项信息。
+
+        :param property_info: The property_info of this AddCorpDTO.
+        :type: list[OrgPropertyDTO]
+        """
+        self._property_info = property_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

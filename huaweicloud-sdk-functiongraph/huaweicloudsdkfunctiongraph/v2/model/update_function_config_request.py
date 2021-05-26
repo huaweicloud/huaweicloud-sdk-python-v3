@@ -49,6 +49,7 @@ class UpdateFunctionConfigRequest:
     def function_urn(self):
         """Gets the function_urn of this UpdateFunctionConfigRequest.
 
+        函数的URN，详细解释见FunctionGraph函数模型。
 
         :return: The function_urn of this UpdateFunctionConfigRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateFunctionConfigRequest:
     def function_urn(self, function_urn):
         """Sets the function_urn of this UpdateFunctionConfigRequest.
 
+        函数的URN，详细解释见FunctionGraph函数模型。
 
         :param function_urn: The function_urn of this UpdateFunctionConfigRequest.
         :type: str

@@ -35,7 +35,7 @@ class ListTopicAttributesResponse(SdkResponse):
     def __init__(self, request_id=None, attributes=None):
         """ListTopicAttributesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListTopicAttributesResponse, self).__init__()
 
         self._request_id = None
         self._attributes = None

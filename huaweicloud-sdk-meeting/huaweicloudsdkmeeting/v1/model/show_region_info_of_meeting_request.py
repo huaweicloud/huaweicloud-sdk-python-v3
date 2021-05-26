@@ -44,6 +44,7 @@ class ShowRegionInfoOfMeetingRequest:
     def conference_id(self):
         """Gets the conference_id of this ShowRegionInfoOfMeetingRequest.
 
+        会议ID。
 
         :return: The conference_id of this ShowRegionInfoOfMeetingRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowRegionInfoOfMeetingRequest:
     def conference_id(self, conference_id):
         """Sets the conference_id of this ShowRegionInfoOfMeetingRequest.
 
+        会议ID。
 
         :param conference_id: The conference_id of this ShowRegionInfoOfMeetingRequest.
         :type: str

@@ -33,7 +33,7 @@ class CreatePortalRefNonceResponse(SdkResponse):
     def __init__(self, nonce=None):
         """CreatePortalRefNonceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreatePortalRefNonceResponse, self).__init__()
 
         self._nonce = None
         self.discriminator = None

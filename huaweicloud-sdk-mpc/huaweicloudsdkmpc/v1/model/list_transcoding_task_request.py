@@ -75,6 +75,7 @@ class ListTranscodingTaskRequest:
     def x_language(self):
         """Gets the x_language of this ListTranscodingTaskRequest.
 
+        客户端语言
 
         :return: The x_language of this ListTranscodingTaskRequest.
         :rtype: str
@@ -85,6 +86,7 @@ class ListTranscodingTaskRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListTranscodingTaskRequest.
 
+        客户端语言
 
         :param x_language: The x_language of this ListTranscodingTaskRequest.
         :type: str
@@ -95,6 +97,7 @@ class ListTranscodingTaskRequest:
     def task_id(self):
         """Gets the task_id of this ListTranscodingTaskRequest.
 
+        转码服务接受任务后产生的任务ID。一次最多10个 
 
         :return: The task_id of this ListTranscodingTaskRequest.
         :rtype: list[int]
@@ -105,6 +108,7 @@ class ListTranscodingTaskRequest:
     def task_id(self, task_id):
         """Sets the task_id of this ListTranscodingTaskRequest.
 
+        转码服务接受任务后产生的任务ID。一次最多10个 
 
         :param task_id: The task_id of this ListTranscodingTaskRequest.
         :type: list[int]
@@ -115,6 +119,7 @@ class ListTranscodingTaskRequest:
     def status(self):
         """Gets the status of this ListTranscodingTaskRequest.
 
+        任务执行状态。  取值如下： - WAITING：等待启动 - TRANSCODING：转码中 - SUCCEEDED：转码成功 - FAILED：转码失败 - CANCELED：已删除 - NEED_TO_BE_AUDIT：片源待审核 
 
         :return: The status of this ListTranscodingTaskRequest.
         :rtype: str
@@ -125,6 +130,7 @@ class ListTranscodingTaskRequest:
     def status(self, status):
         """Sets the status of this ListTranscodingTaskRequest.
 
+        任务执行状态。  取值如下： - WAITING：等待启动 - TRANSCODING：转码中 - SUCCEEDED：转码成功 - FAILED：转码失败 - CANCELED：已删除 - NEED_TO_BE_AUDIT：片源待审核 
 
         :param status: The status of this ListTranscodingTaskRequest.
         :type: str
@@ -135,6 +141,7 @@ class ListTranscodingTaskRequest:
     def start_time(self):
         """Gets the start_time of this ListTranscodingTaskRequest.
 
+        起始时间  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
         :return: The start_time of this ListTranscodingTaskRequest.
         :rtype: str
@@ -145,6 +152,7 @@ class ListTranscodingTaskRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListTranscodingTaskRequest.
 
+        起始时间  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
         :param start_time: The start_time of this ListTranscodingTaskRequest.
         :type: str
@@ -155,6 +163,7 @@ class ListTranscodingTaskRequest:
     def end_time(self):
         """Gets the end_time of this ListTranscodingTaskRequest.
 
+        结束时间  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
         :return: The end_time of this ListTranscodingTaskRequest.
         :rtype: str
@@ -165,6 +174,7 @@ class ListTranscodingTaskRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListTranscodingTaskRequest.
 
+        结束时间  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
         :param end_time: The end_time of this ListTranscodingTaskRequest.
         :type: str
@@ -175,6 +185,7 @@ class ListTranscodingTaskRequest:
     def page(self):
         """Gets the page of this ListTranscodingTaskRequest.
 
+        分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
         :return: The page of this ListTranscodingTaskRequest.
         :rtype: int
@@ -185,6 +196,7 @@ class ListTranscodingTaskRequest:
     def page(self, page):
         """Sets the page of this ListTranscodingTaskRequest.
 
+        分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
         :param page: The page of this ListTranscodingTaskRequest.
         :type: int
@@ -195,6 +207,7 @@ class ListTranscodingTaskRequest:
     def size(self):
         """Gets the size of this ListTranscodingTaskRequest.
 
+        每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
 
         :return: The size of this ListTranscodingTaskRequest.
         :rtype: int
@@ -205,6 +218,7 @@ class ListTranscodingTaskRequest:
     def size(self, size):
         """Sets the size of this ListTranscodingTaskRequest.
 
+        每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
 
         :param size: The size of this ListTranscodingTaskRequest.
         :type: int

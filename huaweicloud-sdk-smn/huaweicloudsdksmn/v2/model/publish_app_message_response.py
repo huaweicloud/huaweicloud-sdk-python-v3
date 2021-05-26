@@ -35,7 +35,7 @@ class PublishAppMessageResponse(SdkResponse):
     def __init__(self, message_id=None, request_id=None):
         """PublishAppMessageResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(PublishAppMessageResponse, self).__init__()
 
         self._message_id = None
         self._request_id = None

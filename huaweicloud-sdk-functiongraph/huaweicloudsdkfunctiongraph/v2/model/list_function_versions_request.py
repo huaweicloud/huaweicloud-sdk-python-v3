@@ -54,6 +54,7 @@ class ListFunctionVersionsRequest:
     def function_urn(self):
         """Gets the function_urn of this ListFunctionVersionsRequest.
 
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :return: The function_urn of this ListFunctionVersionsRequest.
         :rtype: str
@@ -64,6 +65,7 @@ class ListFunctionVersionsRequest:
     def function_urn(self, function_urn):
         """Sets the function_urn of this ListFunctionVersionsRequest.
 
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this ListFunctionVersionsRequest.
         :type: str
@@ -74,6 +76,7 @@ class ListFunctionVersionsRequest:
     def marker(self):
         """Gets the marker of this ListFunctionVersionsRequest.
 
+        上一次查询到的最后的记录位置。
 
         :return: The marker of this ListFunctionVersionsRequest.
         :rtype: str
@@ -84,6 +87,7 @@ class ListFunctionVersionsRequest:
     def marker(self, marker):
         """Sets the marker of this ListFunctionVersionsRequest.
 
+        上一次查询到的最后的记录位置。
 
         :param marker: The marker of this ListFunctionVersionsRequest.
         :type: str
@@ -94,6 +98,7 @@ class ListFunctionVersionsRequest:
     def maxitems(self):
         """Gets the maxitems of this ListFunctionVersionsRequest.
 
+        每次查询获取的最大函数记录数量。
 
         :return: The maxitems of this ListFunctionVersionsRequest.
         :rtype: str
@@ -104,6 +109,7 @@ class ListFunctionVersionsRequest:
     def maxitems(self, maxitems):
         """Sets the maxitems of this ListFunctionVersionsRequest.
 
+        每次查询获取的最大函数记录数量。
 
         :param maxitems: The maxitems of this ListFunctionVersionsRequest.
         :type: str

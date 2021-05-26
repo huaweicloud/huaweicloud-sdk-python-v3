@@ -44,6 +44,7 @@ class ShowPrivateipRequest:
     def privateip_id(self):
         """Gets the privateip_id of this ShowPrivateipRequest.
 
+        私有IP ID
 
         :return: The privateip_id of this ShowPrivateipRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowPrivateipRequest:
     def privateip_id(self, privateip_id):
         """Sets the privateip_id of this ShowPrivateipRequest.
 
+        私有IP ID
 
         :param privateip_id: The privateip_id of this ShowPrivateipRequest.
         :type: str

@@ -104,6 +104,7 @@ class SearchResourceOpRecordRequest:
     def x_request_id(self):
         """Gets the x_request_id of this SearchResourceOpRecordRequest.
 
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :return: The x_request_id of this SearchResourceOpRecordRequest.
         :rtype: str
@@ -114,6 +115,7 @@ class SearchResourceOpRecordRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this SearchResourceOpRecordRequest.
 
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this SearchResourceOpRecordRequest.
         :type: str
@@ -124,6 +126,7 @@ class SearchResourceOpRecordRequest:
     def accept_language(self):
         """Gets the accept_language of this SearchResourceOpRecordRequest.
 
+        语言参数，默认为中文zh_CN, 英文为en_US
 
         :return: The accept_language of this SearchResourceOpRecordRequest.
         :rtype: str
@@ -134,6 +137,7 @@ class SearchResourceOpRecordRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this SearchResourceOpRecordRequest.
 
+        语言参数，默认为中文zh_CN, 英文为en_US
 
         :param accept_language: The accept_language of this SearchResourceOpRecordRequest.
         :type: str
@@ -144,6 +148,7 @@ class SearchResourceOpRecordRequest:
     def offset(self):
         """Gets the offset of this SearchResourceOpRecordRequest.
 
+        查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
 
         :return: The offset of this SearchResourceOpRecordRequest.
         :rtype: int
@@ -154,6 +159,7 @@ class SearchResourceOpRecordRequest:
     def offset(self, offset):
         """Sets the offset of this SearchResourceOpRecordRequest.
 
+        查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
 
         :param offset: The offset of this SearchResourceOpRecordRequest.
         :type: int
@@ -164,6 +170,7 @@ class SearchResourceOpRecordRequest:
     def limit(self):
         """Gets the limit of this SearchResourceOpRecordRequest.
 
+        查询数量 默认值：0 
 
         :return: The limit of this SearchResourceOpRecordRequest.
         :rtype: int
@@ -174,6 +181,7 @@ class SearchResourceOpRecordRequest:
     def limit(self, limit):
         """Sets the limit of this SearchResourceOpRecordRequest.
 
+        查询数量 默认值：0 
 
         :param limit: The limit of this SearchResourceOpRecordRequest.
         :type: int
@@ -184,6 +192,7 @@ class SearchResourceOpRecordRequest:
     def search_key(self):
         """Gets the search_key of this SearchResourceOpRecordRequest.
 
+        搜索条件
 
         :return: The search_key of this SearchResourceOpRecordRequest.
         :rtype: str
@@ -194,6 +203,7 @@ class SearchResourceOpRecordRequest:
     def search_key(self, search_key):
         """Sets the search_key of this SearchResourceOpRecordRequest.
 
+        搜索条件
 
         :param search_key: The search_key of this SearchResourceOpRecordRequest.
         :type: str
@@ -204,6 +214,7 @@ class SearchResourceOpRecordRequest:
     def corp_id(self):
         """Gets the corp_id of this SearchResourceOpRecordRequest.
 
+        企业id
 
         :return: The corp_id of this SearchResourceOpRecordRequest.
         :rtype: str
@@ -214,6 +225,7 @@ class SearchResourceOpRecordRequest:
     def corp_id(self, corp_id):
         """Sets the corp_id of this SearchResourceOpRecordRequest.
 
+        企业id
 
         :param corp_id: The corp_id of this SearchResourceOpRecordRequest.
         :type: str
@@ -224,6 +236,7 @@ class SearchResourceOpRecordRequest:
     def start_expire_date(self):
         """Gets the start_expire_date of this SearchResourceOpRecordRequest.
 
+        查询过期时间在该时间戳之后的订单操作记录
 
         :return: The start_expire_date of this SearchResourceOpRecordRequest.
         :rtype: int
@@ -234,6 +247,7 @@ class SearchResourceOpRecordRequest:
     def start_expire_date(self, start_expire_date):
         """Sets the start_expire_date of this SearchResourceOpRecordRequest.
 
+        查询过期时间在该时间戳之后的订单操作记录
 
         :param start_expire_date: The start_expire_date of this SearchResourceOpRecordRequest.
         :type: int
@@ -244,6 +258,7 @@ class SearchResourceOpRecordRequest:
     def end_expire_date(self):
         """Gets the end_expire_date of this SearchResourceOpRecordRequest.
 
+        查询过期时间在该时间戳之前的订单操作记录
 
         :return: The end_expire_date of this SearchResourceOpRecordRequest.
         :rtype: int
@@ -254,6 +269,7 @@ class SearchResourceOpRecordRequest:
     def end_expire_date(self, end_expire_date):
         """Sets the end_expire_date of this SearchResourceOpRecordRequest.
 
+        查询过期时间在该时间戳之前的订单操作记录
 
         :param end_expire_date: The end_expire_date of this SearchResourceOpRecordRequest.
         :type: int
@@ -264,6 +280,7 @@ class SearchResourceOpRecordRequest:
     def start_operate_date(self):
         """Gets the start_operate_date of this SearchResourceOpRecordRequest.
 
+        查询操作时间在该时间戳之后的订单操作记录
 
         :return: The start_operate_date of this SearchResourceOpRecordRequest.
         :rtype: int
@@ -274,6 +291,7 @@ class SearchResourceOpRecordRequest:
     def start_operate_date(self, start_operate_date):
         """Sets the start_operate_date of this SearchResourceOpRecordRequest.
 
+        查询操作时间在该时间戳之后的订单操作记录
 
         :param start_operate_date: The start_operate_date of this SearchResourceOpRecordRequest.
         :type: int
@@ -284,6 +302,7 @@ class SearchResourceOpRecordRequest:
     def end_operate_date(self):
         """Gets the end_operate_date of this SearchResourceOpRecordRequest.
 
+        查询操作时间在该时间戳之前的订单操作记录
 
         :return: The end_operate_date of this SearchResourceOpRecordRequest.
         :rtype: int
@@ -294,6 +313,7 @@ class SearchResourceOpRecordRequest:
     def end_operate_date(self, end_operate_date):
         """Sets the end_operate_date of this SearchResourceOpRecordRequest.
 
+        查询操作时间在该时间戳之前的订单操作记录
 
         :param end_operate_date: The end_operate_date of this SearchResourceOpRecordRequest.
         :type: int
@@ -304,6 +324,7 @@ class SearchResourceOpRecordRequest:
     def type(self):
         """Gets the type of this SearchResourceOpRecordRequest.
 
+        订单资源类型
 
         :return: The type of this SearchResourceOpRecordRequest.
         :rtype: str
@@ -314,6 +335,7 @@ class SearchResourceOpRecordRequest:
     def type(self, type):
         """Sets the type of this SearchResourceOpRecordRequest.
 
+        订单资源类型
 
         :param type: The type of this SearchResourceOpRecordRequest.
         :type: str
@@ -324,6 +346,7 @@ class SearchResourceOpRecordRequest:
     def type_id(self):
         """Gets the type_id of this SearchResourceOpRecordRequest.
 
+        当前仅当资源类型为vmr时生效
 
         :return: The type_id of this SearchResourceOpRecordRequest.
         :rtype: str
@@ -334,6 +357,7 @@ class SearchResourceOpRecordRequest:
     def type_id(self, type_id):
         """Sets the type_id of this SearchResourceOpRecordRequest.
 
+        当前仅当资源类型为vmr时生效
 
         :param type_id: The type_id of this SearchResourceOpRecordRequest.
         :type: str
@@ -344,6 +368,7 @@ class SearchResourceOpRecordRequest:
     def operate_type(self):
         """Gets the operate_type of this SearchResourceOpRecordRequest.
 
+        操作类型 - 0：添加 - 1：删除 - 2：修改 - 3：停用 - 4：启用
 
         :return: The operate_type of this SearchResourceOpRecordRequest.
         :rtype: int
@@ -354,6 +379,7 @@ class SearchResourceOpRecordRequest:
     def operate_type(self, operate_type):
         """Sets the operate_type of this SearchResourceOpRecordRequest.
 
+        操作类型 - 0：添加 - 1：删除 - 2：修改 - 3：停用 - 4：启用
 
         :param operate_type: The operate_type of this SearchResourceOpRecordRequest.
         :type: int

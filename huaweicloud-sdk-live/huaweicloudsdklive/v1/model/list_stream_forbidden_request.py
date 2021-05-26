@@ -69,6 +69,7 @@ class ListStreamForbiddenRequest:
     def specify_project(self):
         """Gets the specify_project of this ListStreamForbiddenRequest.
 
+        op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
 
         :return: The specify_project of this ListStreamForbiddenRequest.
         :rtype: str
@@ -79,6 +80,7 @@ class ListStreamForbiddenRequest:
     def specify_project(self, specify_project):
         """Sets the specify_project of this ListStreamForbiddenRequest.
 
+        op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
 
         :param specify_project: The specify_project of this ListStreamForbiddenRequest.
         :type: str
@@ -89,6 +91,7 @@ class ListStreamForbiddenRequest:
     def domain(self):
         """Gets the domain of this ListStreamForbiddenRequest.
 
+        播放或推流域名
 
         :return: The domain of this ListStreamForbiddenRequest.
         :rtype: str
@@ -99,6 +102,7 @@ class ListStreamForbiddenRequest:
     def domain(self, domain):
         """Sets the domain of this ListStreamForbiddenRequest.
 
+        播放或推流域名
 
         :param domain: The domain of this ListStreamForbiddenRequest.
         :type: str
@@ -109,6 +113,7 @@ class ListStreamForbiddenRequest:
     def app_name(self):
         """Gets the app_name of this ListStreamForbiddenRequest.
 
+        应用名称，不指定则查询domain下所有应用的禁止直播推流信息
 
         :return: The app_name of this ListStreamForbiddenRequest.
         :rtype: str
@@ -119,6 +124,7 @@ class ListStreamForbiddenRequest:
     def app_name(self, app_name):
         """Sets the app_name of this ListStreamForbiddenRequest.
 
+        应用名称，不指定则查询domain下所有应用的禁止直播推流信息
 
         :param app_name: The app_name of this ListStreamForbiddenRequest.
         :type: str
@@ -129,6 +135,7 @@ class ListStreamForbiddenRequest:
     def stream_name(self):
         """Gets the stream_name of this ListStreamForbiddenRequest.
 
+        流名称
 
         :return: The stream_name of this ListStreamForbiddenRequest.
         :rtype: str
@@ -139,6 +146,7 @@ class ListStreamForbiddenRequest:
     def stream_name(self, stream_name):
         """Sets the stream_name of this ListStreamForbiddenRequest.
 
+        流名称
 
         :param stream_name: The stream_name of this ListStreamForbiddenRequest.
         :type: str
@@ -149,6 +157,7 @@ class ListStreamForbiddenRequest:
     def page(self):
         """Gets the page of this ListStreamForbiddenRequest.
 
+        分页编号。 默认为0。 
 
         :return: The page of this ListStreamForbiddenRequest.
         :rtype: int
@@ -159,6 +168,7 @@ class ListStreamForbiddenRequest:
     def page(self, page):
         """Sets the page of this ListStreamForbiddenRequest.
 
+        分页编号。 默认为0。 
 
         :param page: The page of this ListStreamForbiddenRequest.
         :type: int
@@ -169,6 +179,7 @@ class ListStreamForbiddenRequest:
     def size(self):
         """Gets the size of this ListStreamForbiddenRequest.
 
+        每页记录数。  取值范围：1-100。  默认为10。 
 
         :return: The size of this ListStreamForbiddenRequest.
         :rtype: int
@@ -179,6 +190,7 @@ class ListStreamForbiddenRequest:
     def size(self, size):
         """Sets the size of this ListStreamForbiddenRequest.
 
+        每页记录数。  取值范围：1-100。  默认为10。 
 
         :param size: The size of this ListStreamForbiddenRequest.
         :type: int

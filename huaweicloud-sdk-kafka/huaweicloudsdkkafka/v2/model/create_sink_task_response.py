@@ -33,7 +33,7 @@ class CreateSinkTaskResponse(SdkResponse):
     def __init__(self, task_id=None):
         """CreateSinkTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateSinkTaskResponse, self).__init__()
 
         self._task_id = None
         self.discriminator = None

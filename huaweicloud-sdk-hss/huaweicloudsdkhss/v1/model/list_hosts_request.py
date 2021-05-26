@@ -100,6 +100,7 @@ class ListHostsRequest:
     def version(self):
         """Gets the version of this ListHostsRequest.
 
+        主机开通的版本
 
         :return: The version of this ListHostsRequest.
         :rtype: str
@@ -110,6 +111,7 @@ class ListHostsRequest:
     def version(self, version):
         """Sets the version of this ListHostsRequest.
 
+        主机开通的版本
 
         :param version: The version of this ListHostsRequest.
         :type: str
@@ -120,6 +122,7 @@ class ListHostsRequest:
     def agent_status(self):
         """Gets the agent_status of this ListHostsRequest.
 
+        Agent状态，未注册：uninstall；在线：online；离线：offline；
 
         :return: The agent_status of this ListHostsRequest.
         :rtype: str
@@ -130,6 +133,7 @@ class ListHostsRequest:
     def agent_status(self, agent_status):
         """Sets the agent_status of this ListHostsRequest.
 
+        Agent状态，未注册：uninstall；在线：online；离线：offline；
 
         :param agent_status: The agent_status of this ListHostsRequest.
         :type: str
@@ -140,6 +144,7 @@ class ListHostsRequest:
     def host_status(self):
         """Gets the host_status of this ListHostsRequest.
 
+        云主机状态：正在运行：active；关机：shutoff；创建中：building；故障：error
 
         :return: The host_status of this ListHostsRequest.
         :rtype: str
@@ -150,6 +155,7 @@ class ListHostsRequest:
     def host_status(self, host_status):
         """Sets the host_status of this ListHostsRequest.
 
+        云主机状态：正在运行：active；关机：shutoff；创建中：building；故障：error
 
         :param host_status: The host_status of this ListHostsRequest.
         :type: str
@@ -160,6 +166,7 @@ class ListHostsRequest:
     def protect_status(self):
         """Gets the protect_status of this ListHostsRequest.
 
+        防护状态：closed关闭；opened开启
 
         :return: The protect_status of this ListHostsRequest.
         :rtype: str
@@ -170,6 +177,7 @@ class ListHostsRequest:
     def protect_status(self, protect_status):
         """Sets the protect_status of this ListHostsRequest.
 
+        防护状态：closed关闭；opened开启
 
         :param protect_status: The protect_status of this ListHostsRequest.
         :type: str
@@ -180,6 +188,7 @@ class ListHostsRequest:
     def detect_result(self):
         """Gets the detect_result of this ListHostsRequest.
 
+        检测结果，undetect：未检测，clean：无风险，risk：有风险
 
         :return: The detect_result of this ListHostsRequest.
         :rtype: str
@@ -190,6 +199,7 @@ class ListHostsRequest:
     def detect_result(self, detect_result):
         """Sets the detect_result of this ListHostsRequest.
 
+        检测结果，undetect：未检测，clean：无风险，risk：有风险
 
         :param detect_result: The detect_result of this ListHostsRequest.
         :type: str
@@ -200,6 +210,7 @@ class ListHostsRequest:
     def host_name(self):
         """Gets the host_name of this ListHostsRequest.
 
+        云主机名称
 
         :return: The host_name of this ListHostsRequest.
         :rtype: str
@@ -210,6 +221,7 @@ class ListHostsRequest:
     def host_name(self, host_name):
         """Sets the host_name of this ListHostsRequest.
 
+        云主机名称
 
         :param host_name: The host_name of this ListHostsRequest.
         :type: str
@@ -220,6 +232,7 @@ class ListHostsRequest:
     def host_ip(self):
         """Gets the host_ip of this ListHostsRequest.
 
+        云主机私有IP
 
         :return: The host_ip of this ListHostsRequest.
         :rtype: str
@@ -230,6 +243,7 @@ class ListHostsRequest:
     def host_ip(self, host_ip):
         """Sets the host_ip of this ListHostsRequest.
 
+        云主机私有IP
 
         :param host_ip: The host_ip of this ListHostsRequest.
         :type: str
@@ -240,6 +254,7 @@ class ListHostsRequest:
     def public_ip(self):
         """Gets the public_ip of this ListHostsRequest.
 
+        云主机公网IP
 
         :return: The public_ip of this ListHostsRequest.
         :rtype: str
@@ -250,6 +265,7 @@ class ListHostsRequest:
     def public_ip(self, public_ip):
         """Sets the public_ip of this ListHostsRequest.
 
+        云主机公网IP
 
         :param public_ip: The public_ip of this ListHostsRequest.
         :type: str
@@ -260,6 +276,7 @@ class ListHostsRequest:
     def os_type(self):
         """Gets the os_type of this ListHostsRequest.
 
+        操作系统类型
 
         :return: The os_type of this ListHostsRequest.
         :rtype: str
@@ -270,6 +287,7 @@ class ListHostsRequest:
     def os_type(self, os_type):
         """Sets the os_type of this ListHostsRequest.
 
+        操作系统类型
 
         :param os_type: The os_type of this ListHostsRequest.
         :type: str
@@ -280,6 +298,7 @@ class ListHostsRequest:
     def charging_mode(self):
         """Gets the charging_mode of this ListHostsRequest.
 
+        收费模式
 
         :return: The charging_mode of this ListHostsRequest.
         :rtype: str
@@ -290,6 +309,7 @@ class ListHostsRequest:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ListHostsRequest.
 
+        收费模式
 
         :param charging_mode: The charging_mode of this ListHostsRequest.
         :type: str
@@ -300,6 +320,7 @@ class ListHostsRequest:
     def limit(self):
         """Gets the limit of this ListHostsRequest.
 
+        默认10
 
         :return: The limit of this ListHostsRequest.
         :rtype: int
@@ -310,6 +331,7 @@ class ListHostsRequest:
     def limit(self, limit):
         """Sets the limit of this ListHostsRequest.
 
+        默认10
 
         :param limit: The limit of this ListHostsRequest.
         :type: int
@@ -320,6 +342,7 @@ class ListHostsRequest:
     def offset(self):
         """Gets the offset of this ListHostsRequest.
 
+        默认0
 
         :return: The offset of this ListHostsRequest.
         :rtype: int
@@ -330,6 +353,7 @@ class ListHostsRequest:
     def offset(self, offset):
         """Sets the offset of this ListHostsRequest.
 
+        默认0
 
         :param offset: The offset of this ListHostsRequest.
         :type: int

@@ -33,7 +33,7 @@ class ListImageAutoSyncReposDetailsResponse(SdkResponse):
     def __init__(self, body=None):
         """ListImageAutoSyncReposDetailsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListImageAutoSyncReposDetailsResponse, self).__init__()
 
         self._body = None
         self.discriminator = None

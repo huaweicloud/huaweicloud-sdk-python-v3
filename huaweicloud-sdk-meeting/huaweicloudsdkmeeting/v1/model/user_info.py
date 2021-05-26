@@ -35,7 +35,22 @@ class UserInfo:
         'user_type': 'int',
         'admin_type': 'int',
         'name': 'str',
-        'name_en': 'str'
+        'name_en': 'str',
+        'is_bind_phone': 'bool',
+        'free_user': 'bool',
+        'third_account': 'str',
+        'vision_account': 'str',
+        'head_picture_url': 'str',
+        'password': 'str',
+        'status': 'int',
+        'paid_account': 'str',
+        'paid_password': 'str',
+        'we_link_user': 'bool',
+        'app_id': 'str',
+        'tr069_account': 'str',
+        'corp_type': 'int',
+        'cloud_user_id': 'str',
+        'gray_user': 'bool'
     }
 
     attribute_map = {
@@ -51,10 +66,25 @@ class UserInfo:
         'user_type': 'userType',
         'admin_type': 'adminType',
         'name': 'name',
-        'name_en': 'nameEn'
+        'name_en': 'nameEn',
+        'is_bind_phone': 'isBindPhone',
+        'free_user': 'freeUser',
+        'third_account': 'thirdAccount',
+        'vision_account': 'visionAccount',
+        'head_picture_url': 'headPictureUrl',
+        'password': 'password',
+        'status': 'status',
+        'paid_account': 'paidAccount',
+        'paid_password': 'paidPassword',
+        'we_link_user': 'weLinkUser',
+        'app_id': 'appId',
+        'tr069_account': 'tr069Account',
+        'corp_type': 'corpType',
+        'cloud_user_id': 'cloudUserId',
+        'gray_user': 'grayUser'
     }
 
-    def __init__(self, user_id=None, uclogin_account=None, service_account=None, number_ha1=None, alias1=None, company_id=None, sp_id=None, company_domain=None, realm=None, user_type=None, admin_type=None, name=None, name_en=None):
+    def __init__(self, user_id=None, uclogin_account=None, service_account=None, number_ha1=None, alias1=None, company_id=None, sp_id=None, company_domain=None, realm=None, user_type=None, admin_type=None, name=None, name_en=None, is_bind_phone=None, free_user=None, third_account=None, vision_account=None, head_picture_url=None, password=None, status=None, paid_account=None, paid_password=None, we_link_user=None, app_id=None, tr069_account=None, corp_type=None, cloud_user_id=None, gray_user=None):
         """UserInfo - a model defined in huaweicloud sdk"""
         
         
@@ -72,6 +102,21 @@ class UserInfo:
         self._admin_type = None
         self._name = None
         self._name_en = None
+        self._is_bind_phone = None
+        self._free_user = None
+        self._third_account = None
+        self._vision_account = None
+        self._head_picture_url = None
+        self._password = None
+        self._status = None
+        self._paid_account = None
+        self._paid_password = None
+        self._we_link_user = None
+        self._app_id = None
+        self._tr069_account = None
+        self._corp_type = None
+        self._cloud_user_id = None
+        self._gray_user = None
         self.discriminator = None
 
         if user_id is not None:
@@ -99,6 +144,36 @@ class UserInfo:
             self.name = name
         if name_en is not None:
             self.name_en = name_en
+        if is_bind_phone is not None:
+            self.is_bind_phone = is_bind_phone
+        if free_user is not None:
+            self.free_user = free_user
+        if third_account is not None:
+            self.third_account = third_account
+        if vision_account is not None:
+            self.vision_account = vision_account
+        if head_picture_url is not None:
+            self.head_picture_url = head_picture_url
+        if password is not None:
+            self.password = password
+        if status is not None:
+            self.status = status
+        if paid_account is not None:
+            self.paid_account = paid_account
+        if paid_password is not None:
+            self.paid_password = paid_password
+        if we_link_user is not None:
+            self.we_link_user = we_link_user
+        if app_id is not None:
+            self.app_id = app_id
+        if tr069_account is not None:
+            self.tr069_account = tr069_account
+        if corp_type is not None:
+            self.corp_type = corp_type
+        if cloud_user_id is not None:
+            self.cloud_user_id = cloud_user_id
+        if gray_user is not None:
+            self.gray_user = gray_user
 
     @property
     def user_id(self):
@@ -385,6 +460,336 @@ class UserInfo:
         :type: str
         """
         self._name_en = name_en
+
+    @property
+    def is_bind_phone(self):
+        """Gets the is_bind_phone of this UserInfo.
+
+        标识是否绑定手机
+
+        :return: The is_bind_phone of this UserInfo.
+        :rtype: bool
+        """
+        return self._is_bind_phone
+
+    @is_bind_phone.setter
+    def is_bind_phone(self, is_bind_phone):
+        """Sets the is_bind_phone of this UserInfo.
+
+        标识是否绑定手机
+
+        :param is_bind_phone: The is_bind_phone of this UserInfo.
+        :type: bool
+        """
+        self._is_bind_phone = is_bind_phone
+
+    @property
+    def free_user(self):
+        """Gets the free_user of this UserInfo.
+
+        标识是否是免费试用用户
+
+        :return: The free_user of this UserInfo.
+        :rtype: bool
+        """
+        return self._free_user
+
+    @free_user.setter
+    def free_user(self, free_user):
+        """Sets the free_user of this UserInfo.
+
+        标识是否是免费试用用户
+
+        :param free_user: The free_user of this UserInfo.
+        :type: bool
+        """
+        self._free_user = free_user
+
+    @property
+    def third_account(self):
+        """Gets the third_account of this UserInfo.
+
+        用户的第三方账号，例如华为账号登录时获取到的union_id
+
+        :return: The third_account of this UserInfo.
+        :rtype: str
+        """
+        return self._third_account
+
+    @third_account.setter
+    def third_account(self, third_account):
+        """Sets the third_account of this UserInfo.
+
+        用户的第三方账号，例如华为账号登录时获取到的union_id
+
+        :param third_account: The third_account of this UserInfo.
+        :type: str
+        """
+        self._third_account = third_account
+
+    @property
+    def vision_account(self):
+        """Gets the vision_account of this UserInfo.
+
+        智慧屏设备id
+
+        :return: The vision_account of this UserInfo.
+        :rtype: str
+        """
+        return self._vision_account
+
+    @vision_account.setter
+    def vision_account(self, vision_account):
+        """Sets the vision_account of this UserInfo.
+
+        智慧屏设备id
+
+        :param vision_account: The vision_account of this UserInfo.
+        :type: str
+        """
+        self._vision_account = vision_account
+
+    @property
+    def head_picture_url(self):
+        """Gets the head_picture_url of this UserInfo.
+
+        头像链接
+
+        :return: The head_picture_url of this UserInfo.
+        :rtype: str
+        """
+        return self._head_picture_url
+
+    @head_picture_url.setter
+    def head_picture_url(self, head_picture_url):
+        """Sets the head_picture_url of this UserInfo.
+
+        头像链接
+
+        :param head_picture_url: The head_picture_url of this UserInfo.
+        :type: str
+        """
+        self._head_picture_url = head_picture_url
+
+    @property
+    def password(self):
+        """Gets the password of this UserInfo.
+
+        机机密码，用于智慧屏登录
+
+        :return: The password of this UserInfo.
+        :rtype: str
+        """
+        return self._password
+
+    @password.setter
+    def password(self, password):
+        """Sets the password of this UserInfo.
+
+        机机密码，用于智慧屏登录
+
+        :param password: The password of this UserInfo.
+        :type: str
+        """
+        self._password = password
+
+    @property
+    def status(self):
+        """Gets the status of this UserInfo.
+
+        用户状态。 * 0：正常 * 1：停用 
+
+        :return: The status of this UserInfo.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this UserInfo.
+
+        用户状态。 * 0：正常 * 1：停用 
+
+        :param status: The status of this UserInfo.
+        :type: int
+        """
+        self._status = status
+
+    @property
+    def paid_account(self):
+        """Gets the paid_account of this UserInfo.
+
+        付费用户机机账号，用于智慧屏登录
+
+        :return: The paid_account of this UserInfo.
+        :rtype: str
+        """
+        return self._paid_account
+
+    @paid_account.setter
+    def paid_account(self, paid_account):
+        """Sets the paid_account of this UserInfo.
+
+        付费用户机机账号，用于智慧屏登录
+
+        :param paid_account: The paid_account of this UserInfo.
+        :type: str
+        """
+        self._paid_account = paid_account
+
+    @property
+    def paid_password(self):
+        """Gets the paid_password of this UserInfo.
+
+        付费用户机机密码，用于智慧屏登录
+
+        :return: The paid_password of this UserInfo.
+        :rtype: str
+        """
+        return self._paid_password
+
+    @paid_password.setter
+    def paid_password(self, paid_password):
+        """Sets the paid_password of this UserInfo.
+
+        付费用户机机密码，用于智慧屏登录
+
+        :param paid_password: The paid_password of this UserInfo.
+        :type: str
+        """
+        self._paid_password = paid_password
+
+    @property
+    def we_link_user(self):
+        """Gets the we_link_user of this UserInfo.
+
+        标识是否是WeLink用户
+
+        :return: The we_link_user of this UserInfo.
+        :rtype: bool
+        """
+        return self._we_link_user
+
+    @we_link_user.setter
+    def we_link_user(self, we_link_user):
+        """Sets the we_link_user of this UserInfo.
+
+        标识是否是WeLink用户
+
+        :param we_link_user: The we_link_user of this UserInfo.
+        :type: bool
+        """
+        self._we_link_user = we_link_user
+
+    @property
+    def app_id(self):
+        """Gets the app_id of this UserInfo.
+
+        应用ID
+
+        :return: The app_id of this UserInfo.
+        :rtype: str
+        """
+        return self._app_id
+
+    @app_id.setter
+    def app_id(self, app_id):
+        """Sets the app_id of this UserInfo.
+
+        应用ID
+
+        :param app_id: The app_id of this UserInfo.
+        :type: str
+        """
+        self._app_id = app_id
+
+    @property
+    def tr069_account(self):
+        """Gets the tr069_account of this UserInfo.
+
+        tr069帐号
+
+        :return: The tr069_account of this UserInfo.
+        :rtype: str
+        """
+        return self._tr069_account
+
+    @tr069_account.setter
+    def tr069_account(self, tr069_account):
+        """Sets the tr069_account of this UserInfo.
+
+        tr069帐号
+
+        :param tr069_account: The tr069_account of this UserInfo.
+        :type: str
+        """
+        self._tr069_account = tr069_account
+
+    @property
+    def corp_type(self):
+        """Gets the corp_type of this UserInfo.
+
+        企业类型。 * 0：企业版 * 1：公共企业，手机、邮箱注册时会放到该企业内 * 2：公共企业，智慧屏用户自动开户时会放到该企业内 * 3：公共企业，大屏用户自动开户时会放到该企业内 * 4：公共TOC消费者企业 * 5：免费版 * 6：专业版 
+
+        :return: The corp_type of this UserInfo.
+        :rtype: int
+        """
+        return self._corp_type
+
+    @corp_type.setter
+    def corp_type(self, corp_type):
+        """Sets the corp_type of this UserInfo.
+
+        企业类型。 * 0：企业版 * 1：公共企业，手机、邮箱注册时会放到该企业内 * 2：公共企业，智慧屏用户自动开户时会放到该企业内 * 3：公共企业，大屏用户自动开户时会放到该企业内 * 4：公共TOC消费者企业 * 5：免费版 * 6：专业版 
+
+        :param corp_type: The corp_type of this UserInfo.
+        :type: int
+        """
+        self._corp_type = corp_type
+
+    @property
+    def cloud_user_id(self):
+        """Gets the cloud_user_id of this UserInfo.
+
+        华为云账号ID
+
+        :return: The cloud_user_id of this UserInfo.
+        :rtype: str
+        """
+        return self._cloud_user_id
+
+    @cloud_user_id.setter
+    def cloud_user_id(self, cloud_user_id):
+        """Sets the cloud_user_id of this UserInfo.
+
+        华为云账号ID
+
+        :param cloud_user_id: The cloud_user_id of this UserInfo.
+        :type: str
+        """
+        self._cloud_user_id = cloud_user_id
+
+    @property
+    def gray_user(self):
+        """Gets the gray_user of this UserInfo.
+
+        标识是否是灰度用户
+
+        :return: The gray_user of this UserInfo.
+        :rtype: bool
+        """
+        return self._gray_user
+
+    @gray_user.setter
+    def gray_user(self, gray_user):
+        """Sets the gray_user of this UserInfo.
+
+        标识是否是灰度用户
+
+        :param gray_user: The gray_user of this UserInfo.
+        :type: bool
+        """
+        self._gray_user = gray_user
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -54,6 +54,7 @@ class ListPrivateipsRequest:
     def subnet_id(self):
         """Gets the subnet_id of this ListPrivateipsRequest.
 
+        私有IP所在子网的唯一标识
 
         :return: The subnet_id of this ListPrivateipsRequest.
         :rtype: str
@@ -64,6 +65,7 @@ class ListPrivateipsRequest:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this ListPrivateipsRequest.
 
+        私有IP所在子网的唯一标识
 
         :param subnet_id: The subnet_id of this ListPrivateipsRequest.
         :type: str
@@ -74,6 +76,7 @@ class ListPrivateipsRequest:
     def limit(self):
         """Gets the limit of this ListPrivateipsRequest.
 
+        每页返回的个数
 
         :return: The limit of this ListPrivateipsRequest.
         :rtype: int
@@ -84,6 +87,7 @@ class ListPrivateipsRequest:
     def limit(self, limit):
         """Sets the limit of this ListPrivateipsRequest.
 
+        每页返回的个数
 
         :param limit: The limit of this ListPrivateipsRequest.
         :type: int
@@ -94,6 +98,7 @@ class ListPrivateipsRequest:
     def marker(self):
         """Gets the marker of this ListPrivateipsRequest.
 
+        分页查询起始的资源id，为空时查询第一页
 
         :return: The marker of this ListPrivateipsRequest.
         :rtype: str
@@ -104,6 +109,7 @@ class ListPrivateipsRequest:
     def marker(self, marker):
         """Sets the marker of this ListPrivateipsRequest.
 
+        分页查询起始的资源id，为空时查询第一页
 
         :param marker: The marker of this ListPrivateipsRequest.
         :type: str

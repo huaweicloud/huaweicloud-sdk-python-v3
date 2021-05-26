@@ -37,7 +37,7 @@ class ListPredefineTagsResponse(SdkResponse):
     def __init__(self, marker=None, total_count=None, tags=None):
         """ListPredefineTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListPredefineTagsResponse, self).__init__()
 
         self._marker = None
         self._total_count = None

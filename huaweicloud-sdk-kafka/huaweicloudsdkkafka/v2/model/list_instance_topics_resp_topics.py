@@ -23,36 +23,47 @@ class ListInstanceTopicsRespTopics:
     sensitive_list = []
 
     openapi_types = {
+        'policies_only': 'bool',
         'name': 'str',
         'replication': 'int',
         'partition': 'int',
         'retention_time': 'int',
         'sync_replication': 'bool',
-        'sync_message_flush': 'bool'
+        'sync_message_flush': 'bool',
+        'external_configs': 'object',
+        'topic_type': 'int'
     }
 
     attribute_map = {
+        'policies_only': 'policiesOnly',
         'name': 'name',
         'replication': 'replication',
         'partition': 'partition',
         'retention_time': 'retention_time',
         'sync_replication': 'sync_replication',
-        'sync_message_flush': 'sync_message_flush'
+        'sync_message_flush': 'sync_message_flush',
+        'external_configs': 'external_configs',
+        'topic_type': 'topic_type'
     }
 
-    def __init__(self, name=None, replication=None, partition=None, retention_time=None, sync_replication=None, sync_message_flush=None):
+    def __init__(self, policies_only=None, name=None, replication=None, partition=None, retention_time=None, sync_replication=None, sync_message_flush=None, external_configs=None, topic_type=None):
         """ListInstanceTopicsRespTopics - a model defined in huaweicloud sdk"""
         
         
 
+        self._policies_only = None
         self._name = None
         self._replication = None
         self._partition = None
         self._retention_time = None
         self._sync_replication = None
         self._sync_message_flush = None
+        self._external_configs = None
+        self._topic_type = None
         self.discriminator = None
 
+        if policies_only is not None:
+            self.policies_only = policies_only
         if name is not None:
             self.name = name
         if replication is not None:
@@ -65,6 +76,32 @@ class ListInstanceTopicsRespTopics:
             self.sync_replication = sync_replication
         if sync_message_flush is not None:
             self.sync_message_flush = sync_message_flush
+        if external_configs is not None:
+            self.external_configs = external_configs
+        if topic_type is not None:
+            self.topic_type = topic_type
+
+    @property
+    def policies_only(self):
+        """Gets the policies_only of this ListInstanceTopicsRespTopics.
+
+        是否为默认策略。
+
+        :return: The policies_only of this ListInstanceTopicsRespTopics.
+        :rtype: bool
+        """
+        return self._policies_only
+
+    @policies_only.setter
+    def policies_only(self, policies_only):
+        """Sets the policies_only of this ListInstanceTopicsRespTopics.
+
+        是否为默认策略。
+
+        :param policies_only: The policies_only of this ListInstanceTopicsRespTopics.
+        :type: bool
+        """
+        self._policies_only = policies_only
 
     @property
     def name(self):
@@ -197,6 +234,50 @@ class ListInstanceTopicsRespTopics:
         :type: bool
         """
         self._sync_message_flush = sync_message_flush
+
+    @property
+    def external_configs(self):
+        """Gets the external_configs of this ListInstanceTopicsRespTopics.
+
+        扩展配置。
+
+        :return: The external_configs of this ListInstanceTopicsRespTopics.
+        :rtype: object
+        """
+        return self._external_configs
+
+    @external_configs.setter
+    def external_configs(self, external_configs):
+        """Sets the external_configs of this ListInstanceTopicsRespTopics.
+
+        扩展配置。
+
+        :param external_configs: The external_configs of this ListInstanceTopicsRespTopics.
+        :type: object
+        """
+        self._external_configs = external_configs
+
+    @property
+    def topic_type(self):
+        """Gets the topic_type of this ListInstanceTopicsRespTopics.
+
+        topic类型。
+
+        :return: The topic_type of this ListInstanceTopicsRespTopics.
+        :rtype: int
+        """
+        return self._topic_type
+
+    @topic_type.setter
+    def topic_type(self, topic_type):
+        """Sets the topic_type of this ListInstanceTopicsRespTopics.
+
+        topic类型。
+
+        :param topic_type: The topic_type of this ListInstanceTopicsRespTopics.
+        :type: int
+        """
+        self._topic_type = topic_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

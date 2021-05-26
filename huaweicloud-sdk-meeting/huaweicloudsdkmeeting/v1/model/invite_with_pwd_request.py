@@ -49,6 +49,7 @@ class InviteWithPwdRequest:
     def conference_id(self):
         """Gets the conference_id of this InviteWithPwdRequest.
 
+        会议ID
 
         :return: The conference_id of this InviteWithPwdRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class InviteWithPwdRequest:
     def conference_id(self, conference_id):
         """Sets the conference_id of this InviteWithPwdRequest.
 
+        会议ID
 
         :param conference_id: The conference_id of this InviteWithPwdRequest.
         :type: str

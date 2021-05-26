@@ -35,7 +35,7 @@ class ShowRegionInfoOfMeetingResponse(SdkResponse):
     def __init__(self, region_ip=None, region_url=None):
         """ShowRegionInfoOfMeetingResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowRegionInfoOfMeetingResponse, self).__init__()
 
         self._region_ip = None
         self._region_url = None

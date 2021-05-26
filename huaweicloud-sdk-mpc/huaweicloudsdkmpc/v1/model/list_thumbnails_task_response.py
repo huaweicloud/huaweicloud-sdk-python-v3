@@ -37,7 +37,7 @@ class ListThumbnailsTaskResponse(SdkResponse):
     def __init__(self, task_array=None, is_truncated=None, total=None):
         """ListThumbnailsTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListThumbnailsTaskResponse, self).__init__()
 
         self._task_array = None
         self._is_truncated = None

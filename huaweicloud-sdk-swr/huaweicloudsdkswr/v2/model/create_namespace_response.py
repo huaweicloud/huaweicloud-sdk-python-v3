@@ -31,7 +31,7 @@ class CreateNamespaceResponse(SdkResponse):
     def __init__(self):
         """CreateNamespaceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateNamespaceResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

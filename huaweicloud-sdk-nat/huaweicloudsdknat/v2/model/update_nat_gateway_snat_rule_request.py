@@ -49,6 +49,7 @@ class UpdateNatGatewaySnatRuleRequest:
     def snat_rule_id(self):
         """Gets the snat_rule_id of this UpdateNatGatewaySnatRuleRequest.
 
+        SNAT规则的ID。
 
         :return: The snat_rule_id of this UpdateNatGatewaySnatRuleRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateNatGatewaySnatRuleRequest:
     def snat_rule_id(self, snat_rule_id):
         """Sets the snat_rule_id of this UpdateNatGatewaySnatRuleRequest.
 
+        SNAT规则的ID。
 
         :param snat_rule_id: The snat_rule_id of this UpdateNatGatewaySnatRuleRequest.
         :type: str

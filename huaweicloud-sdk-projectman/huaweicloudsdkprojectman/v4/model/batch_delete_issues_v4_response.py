@@ -31,7 +31,7 @@ class BatchDeleteIssuesV4Response(SdkResponse):
     def __init__(self):
         """BatchDeleteIssuesV4Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchDeleteIssuesV4Response, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

@@ -35,7 +35,7 @@ class CheckSlideVerifyCodeResponse(SdkResponse):
     def __init__(self, token=None, expire=None):
         """CheckSlideVerifyCodeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CheckSlideVerifyCodeResponse, self).__init__()
 
         self._token = None
         self._expire = None

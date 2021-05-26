@@ -57,6 +57,7 @@ class UpdateRetentionRequest:
     def namespace(self):
         """Gets the namespace of this UpdateRetentionRequest.
 
+        组织名称
 
         :return: The namespace of this UpdateRetentionRequest.
         :rtype: str
@@ -67,6 +68,7 @@ class UpdateRetentionRequest:
     def namespace(self, namespace):
         """Sets the namespace of this UpdateRetentionRequest.
 
+        组织名称
 
         :param namespace: The namespace of this UpdateRetentionRequest.
         :type: str
@@ -77,6 +79,7 @@ class UpdateRetentionRequest:
     def repository(self):
         """Gets the repository of this UpdateRetentionRequest.
 
+        镜像仓库名称
 
         :return: The repository of this UpdateRetentionRequest.
         :rtype: str
@@ -87,6 +90,7 @@ class UpdateRetentionRequest:
     def repository(self, repository):
         """Sets the repository of this UpdateRetentionRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this UpdateRetentionRequest.
         :type: str
@@ -97,6 +101,7 @@ class UpdateRetentionRequest:
     def retention_id(self):
         """Gets the retention_id of this UpdateRetentionRequest.
 
+        镜像老化规则id
 
         :return: The retention_id of this UpdateRetentionRequest.
         :rtype: int
@@ -107,6 +112,7 @@ class UpdateRetentionRequest:
     def retention_id(self, retention_id):
         """Sets the retention_id of this UpdateRetentionRequest.
 
+        镜像老化规则id
 
         :param retention_id: The retention_id of this UpdateRetentionRequest.
         :type: int

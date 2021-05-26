@@ -33,7 +33,7 @@ class NeutronShowFirewallRuleResponse(SdkResponse):
     def __init__(self, firewall_rule=None):
         """NeutronShowFirewallRuleResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(NeutronShowFirewallRuleResponse, self).__init__()
 
         self._firewall_rule = None
         self.discriminator = None

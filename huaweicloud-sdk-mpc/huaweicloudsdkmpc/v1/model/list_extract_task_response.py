@@ -35,7 +35,7 @@ class ListExtractTaskResponse(SdkResponse):
     def __init__(self, total=None, tasks=None):
         """ListExtractTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListExtractTaskResponse, self).__init__()
 
         self._total = None
         self._tasks = None

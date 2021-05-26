@@ -31,7 +31,7 @@ class DeleteNatGatewayDnatRuleResponse(SdkResponse):
     def __init__(self):
         """DeleteNatGatewayDnatRuleResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteNatGatewayDnatRuleResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

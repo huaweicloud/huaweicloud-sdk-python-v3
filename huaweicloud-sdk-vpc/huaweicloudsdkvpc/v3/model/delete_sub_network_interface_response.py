@@ -31,7 +31,7 @@ class DeleteSubNetworkInterfaceResponse(SdkResponse):
     def __init__(self):
         """DeleteSubNetworkInterfaceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteSubNetworkInterfaceResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

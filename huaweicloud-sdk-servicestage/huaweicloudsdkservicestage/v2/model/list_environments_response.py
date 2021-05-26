@@ -35,7 +35,7 @@ class ListEnvironmentsResponse(SdkResponse):
     def __init__(self, count=None, environments=None):
         """ListEnvironmentsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListEnvironmentsResponse, self).__init__()
 
         self._count = None
         self._environments = None

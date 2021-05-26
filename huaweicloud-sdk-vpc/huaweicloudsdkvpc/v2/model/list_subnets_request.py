@@ -55,6 +55,7 @@ class ListSubnetsRequest:
     def limit(self):
         """Gets the limit of this ListSubnetsRequest.
 
+        每页返回的个数
 
         :return: The limit of this ListSubnetsRequest.
         :rtype: int
@@ -65,6 +66,7 @@ class ListSubnetsRequest:
     def limit(self, limit):
         """Sets the limit of this ListSubnetsRequest.
 
+        每页返回的个数
 
         :param limit: The limit of this ListSubnetsRequest.
         :type: int
@@ -75,6 +77,7 @@ class ListSubnetsRequest:
     def marker(self):
         """Gets the marker of this ListSubnetsRequest.
 
+        分页查询起始的资源id，为空时查询第一页
 
         :return: The marker of this ListSubnetsRequest.
         :rtype: str
@@ -85,6 +88,7 @@ class ListSubnetsRequest:
     def marker(self, marker):
         """Sets the marker of this ListSubnetsRequest.
 
+        分页查询起始的资源id，为空时查询第一页
 
         :param marker: The marker of this ListSubnetsRequest.
         :type: str
@@ -95,6 +99,7 @@ class ListSubnetsRequest:
     def vpc_id(self):
         """Gets the vpc_id of this ListSubnetsRequest.
 
+        按照vpc_id过滤查询  企业项目细粒度授权场景下，该字段必传
 
         :return: The vpc_id of this ListSubnetsRequest.
         :rtype: str
@@ -105,6 +110,7 @@ class ListSubnetsRequest:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this ListSubnetsRequest.
 
+        按照vpc_id过滤查询  企业项目细粒度授权场景下，该字段必传
 
         :param vpc_id: The vpc_id of this ListSubnetsRequest.
         :type: str

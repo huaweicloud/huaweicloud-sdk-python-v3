@@ -57,6 +57,7 @@ class UpdateRepoDomainsRequest:
     def namespace(self):
         """Gets the namespace of this UpdateRepoDomainsRequest.
 
+        组织名称
 
         :return: The namespace of this UpdateRepoDomainsRequest.
         :rtype: str
@@ -67,6 +68,7 @@ class UpdateRepoDomainsRequest:
     def namespace(self, namespace):
         """Sets the namespace of this UpdateRepoDomainsRequest.
 
+        组织名称
 
         :param namespace: The namespace of this UpdateRepoDomainsRequest.
         :type: str
@@ -77,6 +79,7 @@ class UpdateRepoDomainsRequest:
     def repository(self):
         """Gets the repository of this UpdateRepoDomainsRequest.
 
+        镜像仓库名称
 
         :return: The repository of this UpdateRepoDomainsRequest.
         :rtype: str
@@ -87,6 +90,7 @@ class UpdateRepoDomainsRequest:
     def repository(self, repository):
         """Sets the repository of this UpdateRepoDomainsRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this UpdateRepoDomainsRequest.
         :type: str
@@ -97,6 +101,7 @@ class UpdateRepoDomainsRequest:
     def access_domain(self):
         """Gets the access_domain of this UpdateRepoDomainsRequest.
 
+        共享账号
 
         :return: The access_domain of this UpdateRepoDomainsRequest.
         :rtype: str
@@ -107,6 +112,7 @@ class UpdateRepoDomainsRequest:
     def access_domain(self, access_domain):
         """Sets the access_domain of this UpdateRepoDomainsRequest.
 
+        共享账号
 
         :param access_domain: The access_domain of this UpdateRepoDomainsRequest.
         :type: str

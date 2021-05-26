@@ -53,6 +53,7 @@ class CreateProjectRequest:
     def x_repo_auth(self):
         """Gets the x_repo_auth of this CreateProjectRequest.
 
+        授权名称。
 
         :return: The x_repo_auth of this CreateProjectRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class CreateProjectRequest:
     def x_repo_auth(self, x_repo_auth):
         """Sets the x_repo_auth of this CreateProjectRequest.
 
+        授权名称。
 
         :param x_repo_auth: The x_repo_auth of this CreateProjectRequest.
         :type: str
@@ -73,6 +75,7 @@ class CreateProjectRequest:
     def namespace(self):
         """Gets the namespace of this CreateProjectRequest.
 
+        组织ID。
 
         :return: The namespace of this CreateProjectRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class CreateProjectRequest:
     def namespace(self, namespace):
         """Sets the namespace of this CreateProjectRequest.
 
+        组织ID。
 
         :param namespace: The namespace of this CreateProjectRequest.
         :type: str

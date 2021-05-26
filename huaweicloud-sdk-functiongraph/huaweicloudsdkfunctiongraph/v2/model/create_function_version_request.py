@@ -49,6 +49,7 @@ class CreateFunctionVersionRequest:
     def function_urn(self):
         """Gets the function_urn of this CreateFunctionVersionRequest.
 
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :return: The function_urn of this CreateFunctionVersionRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateFunctionVersionRequest:
     def function_urn(self, function_urn):
         """Sets the function_urn of this CreateFunctionVersionRequest.
 
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this CreateFunctionVersionRequest.
         :type: str

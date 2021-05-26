@@ -50,6 +50,7 @@ class ListDomainNotAddedProjectsV4Request:
     def offset(self):
         """Gets the offset of this ListDomainNotAddedProjectsV4Request.
 
+        分页索引，偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
         :return: The offset of this ListDomainNotAddedProjectsV4Request.
         :rtype: int
@@ -60,6 +61,7 @@ class ListDomainNotAddedProjectsV4Request:
     def offset(self, offset):
         """Sets the offset of this ListDomainNotAddedProjectsV4Request.
 
+        分页索引，偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
         :param offset: The offset of this ListDomainNotAddedProjectsV4Request.
         :type: int
@@ -70,6 +72,7 @@ class ListDomainNotAddedProjectsV4Request:
     def limit(self):
         """Gets the limit of this ListDomainNotAddedProjectsV4Request.
 
+        每页显示的数量,每页最多显示100条
 
         :return: The limit of this ListDomainNotAddedProjectsV4Request.
         :rtype: int
@@ -80,6 +83,7 @@ class ListDomainNotAddedProjectsV4Request:
     def limit(self, limit):
         """Sets the limit of this ListDomainNotAddedProjectsV4Request.
 
+        每页显示的数量,每页最多显示100条
 
         :param limit: The limit of this ListDomainNotAddedProjectsV4Request.
         :type: int

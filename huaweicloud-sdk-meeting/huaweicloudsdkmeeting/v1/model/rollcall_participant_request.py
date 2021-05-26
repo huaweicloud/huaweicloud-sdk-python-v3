@@ -52,6 +52,7 @@ class RollcallParticipantRequest:
     def conference_id(self):
         """Gets the conference_id of this RollcallParticipantRequest.
 
+        会议ID。
 
         :return: The conference_id of this RollcallParticipantRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class RollcallParticipantRequest:
     def conference_id(self, conference_id):
         """Sets the conference_id of this RollcallParticipantRequest.
 
+        会议ID。
 
         :param conference_id: The conference_id of this RollcallParticipantRequest.
         :type: str
@@ -72,6 +74,7 @@ class RollcallParticipantRequest:
     def participant_id(self):
         """Gets the participant_id of this RollcallParticipantRequest.
 
+        与会者标识。
 
         :return: The participant_id of this RollcallParticipantRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class RollcallParticipantRequest:
     def participant_id(self, participant_id):
         """Sets the participant_id of this RollcallParticipantRequest.
 
+        与会者标识。
 
         :param participant_id: The participant_id of this RollcallParticipantRequest.
         :type: str
@@ -92,6 +96,7 @@ class RollcallParticipantRequest:
     def x_conference_authorization(self):
         """Gets the x_conference_authorization of this RollcallParticipantRequest.
 
+        会控授权令牌，通过获取会控token接口获得。
 
         :return: The x_conference_authorization of this RollcallParticipantRequest.
         :rtype: str
@@ -102,6 +107,7 @@ class RollcallParticipantRequest:
     def x_conference_authorization(self, x_conference_authorization):
         """Sets the x_conference_authorization of this RollcallParticipantRequest.
 
+        会控授权令牌，通过获取会控token接口获得。
 
         :param x_conference_authorization: The x_conference_authorization of this RollcallParticipantRequest.
         :type: str

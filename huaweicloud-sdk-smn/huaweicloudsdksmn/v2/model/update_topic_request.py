@@ -49,6 +49,7 @@ class UpdateTopicRequest:
     def topic_urn(self):
         """Gets the topic_urn of this UpdateTopicRequest.
 
+        Topic的唯一的资源标识。可以通过[查看主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
 
         :return: The topic_urn of this UpdateTopicRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateTopicRequest:
     def topic_urn(self, topic_urn):
         """Sets the topic_urn of this UpdateTopicRequest.
 
+        Topic的唯一的资源标识。可以通过[查看主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
 
         :param topic_urn: The topic_urn of this UpdateTopicRequest.
         :type: str

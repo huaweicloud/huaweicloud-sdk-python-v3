@@ -82,7 +82,8 @@ class ListInstancesRespInstances:
         'pod_connect_address': 'str',
         'disk_encrypted': 'bool',
         'kafka_private_connect_address': 'str',
-        'ces_version': 'str'
+        'ces_version': 'str',
+        'tags': 'list[ListInstancesRespTags]'
     }
 
     attribute_map = {
@@ -145,10 +146,11 @@ class ListInstancesRespInstances:
         'pod_connect_address': 'pod_connect_address',
         'disk_encrypted': 'disk_encrypted',
         'kafka_private_connect_address': 'kafka_private_connect_address',
-        'ces_version': 'ces_version'
+        'ces_version': 'ces_version',
+        'tags': 'tags'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, rest_enable=None, rest_connect_address=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, pod_connect_address=None, disk_encrypted=None, kafka_private_connect_address=None, ces_version=None):
+    def __init__(self, name=None, engine=None, engine_version=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, rest_enable=None, rest_connect_address=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, pod_connect_address=None, disk_encrypted=None, kafka_private_connect_address=None, ces_version=None, tags=None):
         """ListInstancesRespInstances - a model defined in huaweicloud sdk"""
         
         
@@ -213,6 +215,7 @@ class ListInstancesRespInstances:
         self._disk_encrypted = None
         self._kafka_private_connect_address = None
         self._ces_version = None
+        self._tags = None
         self.discriminator = None
 
         if name is not None:
@@ -335,6 +338,8 @@ class ListInstancesRespInstances:
             self.kafka_private_connect_address = kafka_private_connect_address
         if ces_version is not None:
             self.ces_version = ces_version
+        if tags is not None:
+            self.tags = tags
 
     @property
     def name(self):
@@ -450,7 +455,7 @@ class ListInstancesRespInstances:
     def partition_num(self):
         """Gets the partition_num of this ListInstancesRespInstances.
 
-        Kafka实例的最大topic数。
+        Kafka实例的分区数量。
 
         :return: The partition_num of this ListInstancesRespInstances.
         :rtype: str
@@ -461,7 +466,7 @@ class ListInstancesRespInstances:
     def partition_num(self, partition_num):
         """Sets the partition_num of this ListInstancesRespInstances.
 
-        Kafka实例的最大topic数。
+        Kafka实例的分区数量。
 
         :param partition_num: The partition_num of this ListInstancesRespInstances.
         :type: str
@@ -1655,6 +1660,28 @@ class ListInstancesRespInstances:
         :type: str
         """
         self._ces_version = ces_version
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListInstancesRespInstances.
+
+        标签列表。
+
+        :return: The tags of this ListInstancesRespInstances.
+        :rtype: list[ListInstancesRespTags]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListInstancesRespInstances.
+
+        标签列表。
+
+        :param tags: The tags of this ListInstancesRespInstances.
+        :type: list[ListInstancesRespTags]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

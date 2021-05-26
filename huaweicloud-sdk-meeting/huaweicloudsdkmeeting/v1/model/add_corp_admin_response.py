@@ -31,7 +31,7 @@ class AddCorpAdminResponse(SdkResponse):
     def __init__(self):
         """AddCorpAdminResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AddCorpAdminResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

@@ -61,7 +61,7 @@ class ShowDeviceDetailResponse(SdkResponse):
     def __init__(self, name=None, type=None, model=None, sn=None, account=None, number=None, prj_code_mode=None, dept_code=None, dept_name=None, dept_name_path=None, phone=None, country=None, email=None, description=None, status=None):
         """ShowDeviceDetailResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowDeviceDetailResponse, self).__init__()
 
         self._name = None
         self._type = None

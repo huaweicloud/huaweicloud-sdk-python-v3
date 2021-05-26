@@ -75,6 +75,7 @@ class ListExtractTaskRequest:
     def x_language(self):
         """Gets the x_language of this ListExtractTaskRequest.
 
+        客户端语言
 
         :return: The x_language of this ListExtractTaskRequest.
         :rtype: str
@@ -85,6 +86,7 @@ class ListExtractTaskRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListExtractTaskRequest.
 
+        客户端语言
 
         :param x_language: The x_language of this ListExtractTaskRequest.
         :type: str
@@ -95,6 +97,7 @@ class ListExtractTaskRequest:
     def task_id(self):
         """Gets the task_id of this ListExtractTaskRequest.
 
+        任务ID。一次最多10个 
 
         :return: The task_id of this ListExtractTaskRequest.
         :rtype: list[str]
@@ -105,6 +108,7 @@ class ListExtractTaskRequest:
     def task_id(self, task_id):
         """Sets the task_id of this ListExtractTaskRequest.
 
+        任务ID。一次最多10个 
 
         :param task_id: The task_id of this ListExtractTaskRequest.
         :type: list[str]
@@ -115,6 +119,7 @@ class ListExtractTaskRequest:
     def status(self):
         """Gets the status of this ListExtractTaskRequest.
 
+        任务执行状态。  取值如下： - INIT：初始状态 - WAITING：等待启动 - PREPROCESSING：处理中 - SUCCEED：处理成功 - FAILED：处理失败 - CANCELED：已取消 
 
         :return: The status of this ListExtractTaskRequest.
         :rtype: str
@@ -125,6 +130,7 @@ class ListExtractTaskRequest:
     def status(self, status):
         """Sets the status of this ListExtractTaskRequest.
 
+        任务执行状态。  取值如下： - INIT：初始状态 - WAITING：等待启动 - PREPROCESSING：处理中 - SUCCEED：处理成功 - FAILED：处理失败 - CANCELED：已取消 
 
         :param status: The status of this ListExtractTaskRequest.
         :type: str
@@ -135,6 +141,7 @@ class ListExtractTaskRequest:
     def start_time(self):
         """Gets the start_time of this ListExtractTaskRequest.
 
+        起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
         :return: The start_time of this ListExtractTaskRequest.
         :rtype: str
@@ -145,6 +152,7 @@ class ListExtractTaskRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListExtractTaskRequest.
 
+        起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
         :param start_time: The start_time of this ListExtractTaskRequest.
         :type: str
@@ -155,6 +163,7 @@ class ListExtractTaskRequest:
     def end_time(self):
         """Gets the end_time of this ListExtractTaskRequest.
 
+        结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
         :return: The end_time of this ListExtractTaskRequest.
         :rtype: str
@@ -165,6 +174,7 @@ class ListExtractTaskRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListExtractTaskRequest.
 
+        结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
         :param end_time: The end_time of this ListExtractTaskRequest.
         :type: str
@@ -175,6 +185,7 @@ class ListExtractTaskRequest:
     def page(self):
         """Gets the page of this ListExtractTaskRequest.
 
+        分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
         :return: The page of this ListExtractTaskRequest.
         :rtype: int
@@ -185,6 +196,7 @@ class ListExtractTaskRequest:
     def page(self, page):
         """Sets the page of this ListExtractTaskRequest.
 
+        分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
         :param page: The page of this ListExtractTaskRequest.
         :type: int
@@ -195,6 +207,7 @@ class ListExtractTaskRequest:
     def size(self):
         """Gets the size of this ListExtractTaskRequest.
 
+        每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
 
         :return: The size of this ListExtractTaskRequest.
         :rtype: int
@@ -205,6 +218,7 @@ class ListExtractTaskRequest:
     def size(self, size):
         """Sets the size of this ListExtractTaskRequest.
 
+        每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
 
         :param size: The size of this ListExtractTaskRequest.
         :type: int

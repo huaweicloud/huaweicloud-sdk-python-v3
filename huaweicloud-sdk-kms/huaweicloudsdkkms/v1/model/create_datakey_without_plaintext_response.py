@@ -35,7 +35,7 @@ class CreateDatakeyWithoutPlaintextResponse(SdkResponse):
     def __init__(self, key_id=None, cipher_text=None):
         """CreateDatakeyWithoutPlaintextResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateDatakeyWithoutPlaintextResponse, self).__init__()
 
         self._key_id = None
         self._cipher_text = None

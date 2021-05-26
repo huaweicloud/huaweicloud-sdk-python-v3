@@ -35,7 +35,7 @@ class ShowInstanceExtendProductInfoResponse(SdkResponse):
     def __init__(self, hourly=None, monthly=None):
         """ShowInstanceExtendProductInfoResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowInstanceExtendProductInfoResponse, self).__init__()
 
         self._hourly = None
         self._monthly = None

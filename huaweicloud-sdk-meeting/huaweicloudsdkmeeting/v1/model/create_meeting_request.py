@@ -60,6 +60,7 @@ class CreateMeetingRequest:
     def user_uuid(self):
         """Gets the user_uuid of this CreateMeetingRequest.
 
+        用户的UUID（已在USG注册过的）。
 
         :return: The user_uuid of this CreateMeetingRequest.
         :rtype: str
@@ -70,6 +71,7 @@ class CreateMeetingRequest:
     def user_uuid(self, user_uuid):
         """Sets the user_uuid of this CreateMeetingRequest.
 
+        用户的UUID（已在USG注册过的）。
 
         :param user_uuid: The user_uuid of this CreateMeetingRequest.
         :type: str
@@ -80,6 +82,7 @@ class CreateMeetingRequest:
     def x_authorization_type(self):
         """Gets the x_authorization_type of this CreateMeetingRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :return: The x_authorization_type of this CreateMeetingRequest.
         :rtype: str
@@ -90,6 +93,7 @@ class CreateMeetingRequest:
     def x_authorization_type(self, x_authorization_type):
         """Sets the x_authorization_type of this CreateMeetingRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this CreateMeetingRequest.
         :type: str
@@ -100,6 +104,7 @@ class CreateMeetingRequest:
     def x_site_id(self):
         """Gets the x_site_id of this CreateMeetingRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :return: The x_site_id of this CreateMeetingRequest.
         :rtype: str
@@ -110,6 +115,7 @@ class CreateMeetingRequest:
     def x_site_id(self, x_site_id):
         """Sets the x_site_id of this CreateMeetingRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this CreateMeetingRequest.
         :type: str

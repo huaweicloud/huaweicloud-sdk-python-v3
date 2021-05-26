@@ -65,6 +65,7 @@ class UpdateFileRequest:
     def x_repo_auth(self):
         """Gets the x_repo_auth of this UpdateFileRequest.
 
+        授权名称。
 
         :return: The x_repo_auth of this UpdateFileRequest.
         :rtype: str
@@ -75,6 +76,7 @@ class UpdateFileRequest:
     def x_repo_auth(self, x_repo_auth):
         """Sets the x_repo_auth of this UpdateFileRequest.
 
+        授权名称。
 
         :param x_repo_auth: The x_repo_auth of this UpdateFileRequest.
         :type: str
@@ -85,6 +87,7 @@ class UpdateFileRequest:
     def namespace(self):
         """Gets the namespace of this UpdateFileRequest.
 
+        组织ID。
 
         :return: The namespace of this UpdateFileRequest.
         :rtype: str
@@ -95,6 +98,7 @@ class UpdateFileRequest:
     def namespace(self, namespace):
         """Sets the namespace of this UpdateFileRequest.
 
+        组织ID。
 
         :param namespace: The namespace of this UpdateFileRequest.
         :type: str
@@ -105,6 +109,7 @@ class UpdateFileRequest:
     def project(self):
         """Gets the project of this UpdateFileRequest.
 
+        仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
         :return: The project of this UpdateFileRequest.
         :rtype: str
@@ -115,6 +120,7 @@ class UpdateFileRequest:
     def project(self, project):
         """Sets the project of this UpdateFileRequest.
 
+        仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
         :param project: The project of this UpdateFileRequest.
         :type: str
@@ -125,6 +131,7 @@ class UpdateFileRequest:
     def path(self):
         """Gets the path of this UpdateFileRequest.
 
+        文件路径，需要将“/”替换为“:”。
 
         :return: The path of this UpdateFileRequest.
         :rtype: str
@@ -135,6 +142,7 @@ class UpdateFileRequest:
     def path(self, path):
         """Sets the path of this UpdateFileRequest.
 
+        文件路径，需要将“/”替换为“:”。
 
         :param path: The path of this UpdateFileRequest.
         :type: str
@@ -145,6 +153,7 @@ class UpdateFileRequest:
     def ref(self):
         """Gets the ref of this UpdateFileRequest.
 
+        分支名称或者tag标签名称或者commit sha。
 
         :return: The ref of this UpdateFileRequest.
         :rtype: str
@@ -155,6 +164,7 @@ class UpdateFileRequest:
     def ref(self, ref):
         """Sets the ref of this UpdateFileRequest.
 
+        分支名称或者tag标签名称或者commit sha。
 
         :param ref: The ref of this UpdateFileRequest.
         :type: str

@@ -44,6 +44,7 @@ class ShowSecurityGroupRequest:
     def security_group_id(self):
         """Gets the security_group_id of this ShowSecurityGroupRequest.
 
+        安全组资源ID
 
         :return: The security_group_id of this ShowSecurityGroupRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowSecurityGroupRequest:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this ShowSecurityGroupRequest.
 
+        安全组资源ID
 
         :param security_group_id: The security_group_id of this ShowSecurityGroupRequest.
         :type: str

@@ -33,7 +33,7 @@ class CreateTemplateGroupResponse(SdkResponse):
     def __init__(self, template_group=None):
         """CreateTemplateGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateTemplateGroupResponse, self).__init__()
 
         self._template_group = None
         self.discriminator = None

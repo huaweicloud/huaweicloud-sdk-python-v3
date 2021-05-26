@@ -33,7 +33,7 @@ class ObsDestinationDescriptor:
         'obs_path': 'str',
         'partition_format': 'str',
         'record_delimiter': 'str',
-        'deliver_time_interval': 'str'
+        'deliver_time_interval': 'int'
     }
 
     attribute_map = {
@@ -311,7 +311,7 @@ class ObsDestinationDescriptor:
         根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。 取值范围：30～900 单位：秒。 > 使用OBS通道转储流式数据时该参数为必选配置。 
 
         :return: The deliver_time_interval of this ObsDestinationDescriptor.
-        :rtype: str
+        :rtype: int
         """
         return self._deliver_time_interval
 
@@ -322,7 +322,7 @@ class ObsDestinationDescriptor:
         根据用户配置的时间，周期性的将数据导入OBS，若某个时间段内无数据，则此时间段不会生成打包文件。 取值范围：30～900 单位：秒。 > 使用OBS通道转储流式数据时该参数为必选配置。 
 
         :param deliver_time_interval: The deliver_time_interval of this ObsDestinationDescriptor.
-        :type: str
+        :type: int
         """
         self._deliver_time_interval = deliver_time_interval
 

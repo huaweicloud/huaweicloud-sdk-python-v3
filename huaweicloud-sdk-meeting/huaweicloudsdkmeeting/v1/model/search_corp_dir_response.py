@@ -39,7 +39,7 @@ class SearchCorpDirResponse(SdkResponse):
     def __init__(self, offset=None, limit=None, count=None, data=None):
         """SearchCorpDirResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(SearchCorpDirResponse, self).__init__()
 
         self._offset = None
         self._limit = None

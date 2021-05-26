@@ -33,7 +33,7 @@ class ListProjectDemandStaticV4Response(SdkResponse):
     def __init__(self, demand_statistics=None):
         """ListProjectDemandStaticV4Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListProjectDemandStaticV4Response, self).__init__()
 
         self._demand_statistics = None
         self.discriminator = None

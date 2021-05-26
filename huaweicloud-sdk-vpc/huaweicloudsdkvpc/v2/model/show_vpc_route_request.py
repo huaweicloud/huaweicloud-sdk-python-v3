@@ -44,6 +44,7 @@ class ShowVpcRouteRequest:
     def route_id(self):
         """Gets the route_id of this ShowVpcRouteRequest.
 
+        路由ID
 
         :return: The route_id of this ShowVpcRouteRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowVpcRouteRequest:
     def route_id(self, route_id):
         """Sets the route_id of this ShowVpcRouteRequest.
 
+        路由ID
 
         :param route_id: The route_id of this ShowVpcRouteRequest.
         :type: str

@@ -33,7 +33,7 @@ class ListBranchesResponse(SdkResponse):
     def __init__(self, branches=None):
         """ListBranchesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListBranchesResponse, self).__init__()
 
         self._branches = None
         self.discriminator = None

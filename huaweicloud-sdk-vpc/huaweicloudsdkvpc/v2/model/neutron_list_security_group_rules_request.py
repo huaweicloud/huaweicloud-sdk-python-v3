@@ -105,6 +105,7 @@ class NeutronListSecurityGroupRulesRequest:
     def limit(self):
         """Gets the limit of this NeutronListSecurityGroupRulesRequest.
 
+        每页返回的个数
 
         :return: The limit of this NeutronListSecurityGroupRulesRequest.
         :rtype: int
@@ -115,6 +116,7 @@ class NeutronListSecurityGroupRulesRequest:
     def limit(self, limit):
         """Sets the limit of this NeutronListSecurityGroupRulesRequest.
 
+        每页返回的个数
 
         :param limit: The limit of this NeutronListSecurityGroupRulesRequest.
         :type: int
@@ -125,6 +127,7 @@ class NeutronListSecurityGroupRulesRequest:
     def marker(self):
         """Gets the marker of this NeutronListSecurityGroupRulesRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :return: The marker of this NeutronListSecurityGroupRulesRequest.
         :rtype: str
@@ -135,6 +138,7 @@ class NeutronListSecurityGroupRulesRequest:
     def marker(self, marker):
         """Sets the marker of this NeutronListSecurityGroupRulesRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this NeutronListSecurityGroupRulesRequest.
         :type: str
@@ -145,6 +149,7 @@ class NeutronListSecurityGroupRulesRequest:
     def id(self):
         """Gets the id of this NeutronListSecurityGroupRulesRequest.
 
+        按照安全组规则对应的id过滤查询结果
 
         :return: The id of this NeutronListSecurityGroupRulesRequest.
         :rtype: str
@@ -155,6 +160,7 @@ class NeutronListSecurityGroupRulesRequest:
     def id(self, id):
         """Sets the id of this NeutronListSecurityGroupRulesRequest.
 
+        按照安全组规则对应的id过滤查询结果
 
         :param id: The id of this NeutronListSecurityGroupRulesRequest.
         :type: str
@@ -165,6 +171,7 @@ class NeutronListSecurityGroupRulesRequest:
     def direction(self):
         """Gets the direction of this NeutronListSecurityGroupRulesRequest.
 
+        按照安全组规则的方向过滤查询结果，支持ingress和egress进行过滤
 
         :return: The direction of this NeutronListSecurityGroupRulesRequest.
         :rtype: str
@@ -175,6 +182,7 @@ class NeutronListSecurityGroupRulesRequest:
     def direction(self, direction):
         """Sets the direction of this NeutronListSecurityGroupRulesRequest.
 
+        按照安全组规则的方向过滤查询结果，支持ingress和egress进行过滤
 
         :param direction: The direction of this NeutronListSecurityGroupRulesRequest.
         :type: str
@@ -185,6 +193,7 @@ class NeutronListSecurityGroupRulesRequest:
     def protocol(self):
         """Gets the protocol of this NeutronListSecurityGroupRulesRequest.
 
+        按照安全组规则的IP协议过滤查询结果
 
         :return: The protocol of this NeutronListSecurityGroupRulesRequest.
         :rtype: str
@@ -195,6 +204,7 @@ class NeutronListSecurityGroupRulesRequest:
     def protocol(self, protocol):
         """Sets the protocol of this NeutronListSecurityGroupRulesRequest.
 
+        按照安全组规则的IP协议过滤查询结果
 
         :param protocol: The protocol of this NeutronListSecurityGroupRulesRequest.
         :type: str
@@ -205,6 +215,7 @@ class NeutronListSecurityGroupRulesRequest:
     def ethertype(self):
         """Gets the ethertype of this NeutronListSecurityGroupRulesRequest.
 
+        按照网络类型过滤查询结果，支持IPv4或者IPv6
 
         :return: The ethertype of this NeutronListSecurityGroupRulesRequest.
         :rtype: str
@@ -215,6 +226,7 @@ class NeutronListSecurityGroupRulesRequest:
     def ethertype(self, ethertype):
         """Sets the ethertype of this NeutronListSecurityGroupRulesRequest.
 
+        按照网络类型过滤查询结果，支持IPv4或者IPv6
 
         :param ethertype: The ethertype of this NeutronListSecurityGroupRulesRequest.
         :type: str
@@ -225,6 +237,7 @@ class NeutronListSecurityGroupRulesRequest:
     def description(self):
         """Gets the description of this NeutronListSecurityGroupRulesRequest.
 
+        按照安全组规则的描述过滤查询结果
 
         :return: The description of this NeutronListSecurityGroupRulesRequest.
         :rtype: str
@@ -235,6 +248,7 @@ class NeutronListSecurityGroupRulesRequest:
     def description(self, description):
         """Sets the description of this NeutronListSecurityGroupRulesRequest.
 
+        按照安全组规则的描述过滤查询结果
 
         :param description: The description of this NeutronListSecurityGroupRulesRequest.
         :type: str
@@ -245,6 +259,7 @@ class NeutronListSecurityGroupRulesRequest:
     def remote_ip_prefix(self):
         """Gets the remote_ip_prefix of this NeutronListSecurityGroupRulesRequest.
 
+        按照与此安全组规则匹配的远端IP网段过滤查询结果
 
         :return: The remote_ip_prefix of this NeutronListSecurityGroupRulesRequest.
         :rtype: str
@@ -255,6 +270,7 @@ class NeutronListSecurityGroupRulesRequest:
     def remote_ip_prefix(self, remote_ip_prefix):
         """Sets the remote_ip_prefix of this NeutronListSecurityGroupRulesRequest.
 
+        按照与此安全组规则匹配的远端IP网段过滤查询结果
 
         :param remote_ip_prefix: The remote_ip_prefix of this NeutronListSecurityGroupRulesRequest.
         :type: str
@@ -265,6 +281,7 @@ class NeutronListSecurityGroupRulesRequest:
     def remote_group_id(self):
         """Gets the remote_group_id of this NeutronListSecurityGroupRulesRequest.
 
+        按照与此安全组规则关联的远端安全组ID过滤查询结果
 
         :return: The remote_group_id of this NeutronListSecurityGroupRulesRequest.
         :rtype: str
@@ -275,6 +292,7 @@ class NeutronListSecurityGroupRulesRequest:
     def remote_group_id(self, remote_group_id):
         """Sets the remote_group_id of this NeutronListSecurityGroupRulesRequest.
 
+        按照与此安全组规则关联的远端安全组ID过滤查询结果
 
         :param remote_group_id: The remote_group_id of this NeutronListSecurityGroupRulesRequest.
         :type: str
@@ -285,6 +303,7 @@ class NeutronListSecurityGroupRulesRequest:
     def security_group_id(self):
         """Gets the security_group_id of this NeutronListSecurityGroupRulesRequest.
 
+        按照与此安全组规则所属的安全组ID过滤查询结果
 
         :return: The security_group_id of this NeutronListSecurityGroupRulesRequest.
         :rtype: str
@@ -295,6 +314,7 @@ class NeutronListSecurityGroupRulesRequest:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this NeutronListSecurityGroupRulesRequest.
 
+        按照与此安全组规则所属的安全组ID过滤查询结果
 
         :param security_group_id: The security_group_id of this NeutronListSecurityGroupRulesRequest.
         :type: str
@@ -305,6 +325,7 @@ class NeutronListSecurityGroupRulesRequest:
     def port_range_max(self):
         """Gets the port_range_max of this NeutronListSecurityGroupRulesRequest.
 
+        按照最大端口过滤查询结果
 
         :return: The port_range_max of this NeutronListSecurityGroupRulesRequest.
         :rtype: str
@@ -315,6 +336,7 @@ class NeutronListSecurityGroupRulesRequest:
     def port_range_max(self, port_range_max):
         """Sets the port_range_max of this NeutronListSecurityGroupRulesRequest.
 
+        按照最大端口过滤查询结果
 
         :param port_range_max: The port_range_max of this NeutronListSecurityGroupRulesRequest.
         :type: str
@@ -325,6 +347,7 @@ class NeutronListSecurityGroupRulesRequest:
     def port_range_min(self):
         """Gets the port_range_min of this NeutronListSecurityGroupRulesRequest.
 
+        按照最小端口过滤查询结果
 
         :return: The port_range_min of this NeutronListSecurityGroupRulesRequest.
         :rtype: str
@@ -335,6 +358,7 @@ class NeutronListSecurityGroupRulesRequest:
     def port_range_min(self, port_range_min):
         """Sets the port_range_min of this NeutronListSecurityGroupRulesRequest.
 
+        按照最小端口过滤查询结果
 
         :param port_range_min: The port_range_min of this NeutronListSecurityGroupRulesRequest.
         :type: str
@@ -345,6 +369,7 @@ class NeutronListSecurityGroupRulesRequest:
     def tenant_id(self):
         """Gets the tenant_id of this NeutronListSecurityGroupRulesRequest.
 
+        按照安全组规则所属的项目ID过滤查询结果
 
         :return: The tenant_id of this NeutronListSecurityGroupRulesRequest.
         :rtype: str
@@ -355,6 +380,7 @@ class NeutronListSecurityGroupRulesRequest:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this NeutronListSecurityGroupRulesRequest.
 
+        按照安全组规则所属的项目ID过滤查询结果
 
         :param tenant_id: The tenant_id of this NeutronListSecurityGroupRulesRequest.
         :type: str

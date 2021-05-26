@@ -24,30 +24,31 @@ class ShowVersionAliasRequest:
 
     openapi_types = {
         'function_urn': 'str',
-        'name': 'str'
+        'alias_name': 'str'
     }
 
     attribute_map = {
         'function_urn': 'function_urn',
-        'name': 'name'
+        'alias_name': 'alias_name'
     }
 
-    def __init__(self, function_urn=None, name=None):
+    def __init__(self, function_urn=None, alias_name=None):
         """ShowVersionAliasRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._function_urn = None
-        self._name = None
+        self._alias_name = None
         self.discriminator = None
 
         self.function_urn = function_urn
-        self.name = name
+        self.alias_name = alias_name
 
     @property
     def function_urn(self):
         """Gets the function_urn of this ShowVersionAliasRequest.
 
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :return: The function_urn of this ShowVersionAliasRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowVersionAliasRequest:
     def function_urn(self, function_urn):
         """Sets the function_urn of this ShowVersionAliasRequest.
 
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this ShowVersionAliasRequest.
         :type: str
@@ -65,24 +67,26 @@ class ShowVersionAliasRequest:
         self._function_urn = function_urn
 
     @property
-    def name(self):
-        """Gets the name of this ShowVersionAliasRequest.
+    def alias_name(self):
+        """Gets the alias_name of this ShowVersionAliasRequest.
 
+        要查询的别名名称。
 
-        :return: The name of this ShowVersionAliasRequest.
+        :return: The alias_name of this ShowVersionAliasRequest.
         :rtype: str
         """
-        return self._name
+        return self._alias_name
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ShowVersionAliasRequest.
+    @alias_name.setter
+    def alias_name(self, alias_name):
+        """Sets the alias_name of this ShowVersionAliasRequest.
 
+        要查询的别名名称。
 
-        :param name: The name of this ShowVersionAliasRequest.
+        :param alias_name: The alias_name of this ShowVersionAliasRequest.
         :type: str
         """
-        self._name = name
+        self._alias_name = alias_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -33,7 +33,7 @@ class CheckProjectNameV4Response(SdkResponse):
     def __init__(self, exist=None):
         """CheckProjectNameV4Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CheckProjectNameV4Response, self).__init__()
 
         self._exist = None
         self.discriminator = None

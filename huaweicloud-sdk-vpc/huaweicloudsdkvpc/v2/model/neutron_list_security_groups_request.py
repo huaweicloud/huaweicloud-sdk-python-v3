@@ -70,6 +70,7 @@ class NeutronListSecurityGroupsRequest:
     def limit(self):
         """Gets the limit of this NeutronListSecurityGroupsRequest.
 
+        每页返回的个数
 
         :return: The limit of this NeutronListSecurityGroupsRequest.
         :rtype: int
@@ -80,6 +81,7 @@ class NeutronListSecurityGroupsRequest:
     def limit(self, limit):
         """Sets the limit of this NeutronListSecurityGroupsRequest.
 
+        每页返回的个数
 
         :param limit: The limit of this NeutronListSecurityGroupsRequest.
         :type: int
@@ -90,6 +92,7 @@ class NeutronListSecurityGroupsRequest:
     def marker(self):
         """Gets the marker of this NeutronListSecurityGroupsRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :return: The marker of this NeutronListSecurityGroupsRequest.
         :rtype: str
@@ -100,6 +103,7 @@ class NeutronListSecurityGroupsRequest:
     def marker(self, marker):
         """Sets the marker of this NeutronListSecurityGroupsRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this NeutronListSecurityGroupsRequest.
         :type: str
@@ -110,6 +114,7 @@ class NeutronListSecurityGroupsRequest:
     def id(self):
         """Gets the id of this NeutronListSecurityGroupsRequest.
 
+        按照安全组对应的ID过滤查询
 
         :return: The id of this NeutronListSecurityGroupsRequest.
         :rtype: str
@@ -120,6 +125,7 @@ class NeutronListSecurityGroupsRequest:
     def id(self, id):
         """Sets the id of this NeutronListSecurityGroupsRequest.
 
+        按照安全组对应的ID过滤查询
 
         :param id: The id of this NeutronListSecurityGroupsRequest.
         :type: str
@@ -130,6 +136,7 @@ class NeutronListSecurityGroupsRequest:
     def name(self):
         """Gets the name of this NeutronListSecurityGroupsRequest.
 
+        按照安全组的名称过滤查询
 
         :return: The name of this NeutronListSecurityGroupsRequest.
         :rtype: str
@@ -140,6 +147,7 @@ class NeutronListSecurityGroupsRequest:
     def name(self, name):
         """Sets the name of this NeutronListSecurityGroupsRequest.
 
+        按照安全组的名称过滤查询
 
         :param name: The name of this NeutronListSecurityGroupsRequest.
         :type: str
@@ -150,6 +158,7 @@ class NeutronListSecurityGroupsRequest:
     def description(self):
         """Gets the description of this NeutronListSecurityGroupsRequest.
 
+        按照安全组的描述过滤查询
 
         :return: The description of this NeutronListSecurityGroupsRequest.
         :rtype: str
@@ -160,6 +169,7 @@ class NeutronListSecurityGroupsRequest:
     def description(self, description):
         """Sets the description of this NeutronListSecurityGroupsRequest.
 
+        按照安全组的描述过滤查询
 
         :param description: The description of this NeutronListSecurityGroupsRequest.
         :type: str
@@ -170,6 +180,7 @@ class NeutronListSecurityGroupsRequest:
     def tenant_id(self):
         """Gets the tenant_id of this NeutronListSecurityGroupsRequest.
 
+        按照安全组所属的项目ID过滤查询
 
         :return: The tenant_id of this NeutronListSecurityGroupsRequest.
         :rtype: str
@@ -180,6 +191,7 @@ class NeutronListSecurityGroupsRequest:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this NeutronListSecurityGroupsRequest.
 
+        按照安全组所属的项目ID过滤查询
 
         :param tenant_id: The tenant_id of this NeutronListSecurityGroupsRequest.
         :type: str

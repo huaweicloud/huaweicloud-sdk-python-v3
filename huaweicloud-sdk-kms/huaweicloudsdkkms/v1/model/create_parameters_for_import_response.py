@@ -39,7 +39,7 @@ class CreateParametersForImportResponse(SdkResponse):
     def __init__(self, key_id=None, import_token=None, expiration_time=None, public_key=None):
         """CreateParametersForImportResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateParametersForImportResponse, self).__init__()
 
         self._key_id = None
         self._import_token = None

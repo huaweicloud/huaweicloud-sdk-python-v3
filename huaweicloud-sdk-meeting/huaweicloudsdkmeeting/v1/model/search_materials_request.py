@@ -65,6 +65,7 @@ class SearchMaterialsRequest:
     def x_request_id(self):
         """Gets the x_request_id of this SearchMaterialsRequest.
 
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :return: The x_request_id of this SearchMaterialsRequest.
         :rtype: str
@@ -75,6 +76,7 @@ class SearchMaterialsRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this SearchMaterialsRequest.
 
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this SearchMaterialsRequest.
         :type: str
@@ -85,6 +87,7 @@ class SearchMaterialsRequest:
     def accept_language(self):
         """Gets the accept_language of this SearchMaterialsRequest.
 
+        语言参数，默认为中文zh_CN, 英文为en_US
 
         :return: The accept_language of this SearchMaterialsRequest.
         :rtype: str
@@ -95,6 +98,7 @@ class SearchMaterialsRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this SearchMaterialsRequest.
 
+        语言参数，默认为中文zh_CN, 英文为en_US
 
         :param accept_language: The accept_language of this SearchMaterialsRequest.
         :type: str
@@ -105,6 +109,7 @@ class SearchMaterialsRequest:
     def offset(self):
         """Gets the offset of this SearchMaterialsRequest.
 
+        查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
 
         :return: The offset of this SearchMaterialsRequest.
         :rtype: int
@@ -115,6 +120,7 @@ class SearchMaterialsRequest:
     def offset(self, offset):
         """Sets the offset of this SearchMaterialsRequest.
 
+        查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
 
         :param offset: The offset of this SearchMaterialsRequest.
         :type: int
@@ -125,6 +131,7 @@ class SearchMaterialsRequest:
     def limit(self):
         """Gets the limit of this SearchMaterialsRequest.
 
+        查询数量 默认值：0 
 
         :return: The limit of this SearchMaterialsRequest.
         :rtype: int
@@ -135,6 +142,7 @@ class SearchMaterialsRequest:
     def limit(self, limit):
         """Sets the limit of this SearchMaterialsRequest.
 
+        查询数量 默认值：0 
 
         :param limit: The limit of this SearchMaterialsRequest.
         :type: int
@@ -145,6 +153,7 @@ class SearchMaterialsRequest:
     def search_key(self):
         """Gets the search_key of this SearchMaterialsRequest.
 
+        搜索条件。支持素材名称、更新人模糊搜索
 
         :return: The search_key of this SearchMaterialsRequest.
         :rtype: str
@@ -155,6 +164,7 @@ class SearchMaterialsRequest:
     def search_key(self, search_key):
         """Sets the search_key of this SearchMaterialsRequest.
 
+        搜索条件。支持素材名称、更新人模糊搜索
 
         :param search_key: The search_key of this SearchMaterialsRequest.
         :type: str

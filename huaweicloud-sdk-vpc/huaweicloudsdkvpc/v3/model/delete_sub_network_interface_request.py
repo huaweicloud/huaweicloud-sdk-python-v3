@@ -44,6 +44,7 @@ class DeleteSubNetworkInterfaceRequest:
     def sub_network_interface_id(self):
         """Gets the sub_network_interface_id of this DeleteSubNetworkInterfaceRequest.
 
+        弹性辅助网卡唯一标识
 
         :return: The sub_network_interface_id of this DeleteSubNetworkInterfaceRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteSubNetworkInterfaceRequest:
     def sub_network_interface_id(self, sub_network_interface_id):
         """Sets the sub_network_interface_id of this DeleteSubNetworkInterfaceRequest.
 
+        弹性辅助网卡唯一标识
 
         :param sub_network_interface_id: The sub_network_interface_id of this DeleteSubNetworkInterfaceRequest.
         :type: str

@@ -52,6 +52,7 @@ class ShowTriggerRequest:
     def namespace(self):
         """Gets the namespace of this ShowTriggerRequest.
 
+        组织名称
 
         :return: The namespace of this ShowTriggerRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class ShowTriggerRequest:
     def namespace(self, namespace):
         """Sets the namespace of this ShowTriggerRequest.
 
+        组织名称
 
         :param namespace: The namespace of this ShowTriggerRequest.
         :type: str
@@ -72,6 +74,7 @@ class ShowTriggerRequest:
     def repository(self):
         """Gets the repository of this ShowTriggerRequest.
 
+        镜像仓库名称
 
         :return: The repository of this ShowTriggerRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class ShowTriggerRequest:
     def repository(self, repository):
         """Sets the repository of this ShowTriggerRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this ShowTriggerRequest.
         :type: str
@@ -92,6 +96,7 @@ class ShowTriggerRequest:
     def trigger(self):
         """Gets the trigger of this ShowTriggerRequest.
 
+        触发器名称
 
         :return: The trigger of this ShowTriggerRequest.
         :rtype: str
@@ -102,6 +107,7 @@ class ShowTriggerRequest:
     def trigger(self, trigger):
         """Sets the trigger of this ShowTriggerRequest.
 
+        触发器名称
 
         :param trigger: The trigger of this ShowTriggerRequest.
         :type: str

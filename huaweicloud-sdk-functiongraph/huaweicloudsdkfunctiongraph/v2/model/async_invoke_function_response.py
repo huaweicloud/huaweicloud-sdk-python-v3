@@ -33,7 +33,7 @@ class AsyncInvokeFunctionResponse(SdkResponse):
     def __init__(self, request_id=None):
         """AsyncInvokeFunctionResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AsyncInvokeFunctionResponse, self).__init__()
 
         self._request_id = None
         self.discriminator = None

@@ -53,6 +53,7 @@ class UpdateSubnetRequest:
     def vpc_id(self):
         """Gets the vpc_id of this UpdateSubnetRequest.
 
+        子网对应的vpc_id
 
         :return: The vpc_id of this UpdateSubnetRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class UpdateSubnetRequest:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this UpdateSubnetRequest.
 
+        子网对应的vpc_id
 
         :param vpc_id: The vpc_id of this UpdateSubnetRequest.
         :type: str
@@ -73,6 +75,7 @@ class UpdateSubnetRequest:
     def subnet_id(self):
         """Gets the subnet_id of this UpdateSubnetRequest.
 
+        子网ID
 
         :return: The subnet_id of this UpdateSubnetRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class UpdateSubnetRequest:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this UpdateSubnetRequest.
 
+        子网ID
 
         :param subnet_id: The subnet_id of this UpdateSubnetRequest.
         :type: str

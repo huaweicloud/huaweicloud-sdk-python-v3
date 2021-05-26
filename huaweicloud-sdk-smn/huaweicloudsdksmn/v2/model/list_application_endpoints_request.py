@@ -70,6 +70,7 @@ class ListApplicationEndpointsRequest:
     def application_urn(self):
         """Gets the application_urn of this ListApplicationEndpointsRequest.
 
+        Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/smn_api_57004.html)获取该标识。
 
         :return: The application_urn of this ListApplicationEndpointsRequest.
         :rtype: str
@@ -80,6 +81,7 @@ class ListApplicationEndpointsRequest:
     def application_urn(self, application_urn):
         """Sets the application_urn of this ListApplicationEndpointsRequest.
 
+        Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/smn_api_57004.html)获取该标识。
 
         :param application_urn: The application_urn of this ListApplicationEndpointsRequest.
         :type: str
@@ -90,6 +92,7 @@ class ListApplicationEndpointsRequest:
     def offset(self):
         """Gets the offset of this ListApplicationEndpointsRequest.
 
+        偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
         :return: The offset of this ListApplicationEndpointsRequest.
         :rtype: int
@@ -100,6 +103,7 @@ class ListApplicationEndpointsRequest:
     def offset(self, offset):
         """Sets the offset of this ListApplicationEndpointsRequest.
 
+        偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
         :param offset: The offset of this ListApplicationEndpointsRequest.
         :type: int
@@ -110,6 +114,7 @@ class ListApplicationEndpointsRequest:
     def limit(self):
         """Gets the limit of this ListApplicationEndpointsRequest.
 
+        查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
         :return: The limit of this ListApplicationEndpointsRequest.
         :rtype: int
@@ -120,6 +125,7 @@ class ListApplicationEndpointsRequest:
     def limit(self, limit):
         """Sets the limit of this ListApplicationEndpointsRequest.
 
+        查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
         :param limit: The limit of this ListApplicationEndpointsRequest.
         :type: int
@@ -130,6 +136,7 @@ class ListApplicationEndpointsRequest:
     def enabled(self):
         """Gets the enabled of this ListApplicationEndpointsRequest.
 
+        设备是否可用，值为true或false字符串。
 
         :return: The enabled of this ListApplicationEndpointsRequest.
         :rtype: str
@@ -140,6 +147,7 @@ class ListApplicationEndpointsRequest:
     def enabled(self, enabled):
         """Sets the enabled of this ListApplicationEndpointsRequest.
 
+        设备是否可用，值为true或false字符串。
 
         :param enabled: The enabled of this ListApplicationEndpointsRequest.
         :type: str
@@ -150,6 +158,7 @@ class ListApplicationEndpointsRequest:
     def token(self):
         """Gets the token of this ListApplicationEndpointsRequest.
 
+        设备token，最大长度512个字节。
 
         :return: The token of this ListApplicationEndpointsRequest.
         :rtype: str
@@ -160,6 +169,7 @@ class ListApplicationEndpointsRequest:
     def token(self, token):
         """Sets the token of this ListApplicationEndpointsRequest.
 
+        设备token，最大长度512个字节。
 
         :param token: The token of this ListApplicationEndpointsRequest.
         :type: str
@@ -170,6 +180,7 @@ class ListApplicationEndpointsRequest:
     def user_data(self):
         """Gets the user_data of this ListApplicationEndpointsRequest.
 
+        用户数据，最大长度2048个字节。
 
         :return: The user_data of this ListApplicationEndpointsRequest.
         :rtype: str
@@ -180,6 +191,7 @@ class ListApplicationEndpointsRequest:
     def user_data(self, user_data):
         """Sets the user_data of this ListApplicationEndpointsRequest.
 
+        用户数据，最大长度2048个字节。
 
         :param user_data: The user_data of this ListApplicationEndpointsRequest.
         :type: str

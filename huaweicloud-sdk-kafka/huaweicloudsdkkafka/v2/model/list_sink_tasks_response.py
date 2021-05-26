@@ -39,7 +39,7 @@ class ListSinkTasksResponse(SdkResponse):
     def __init__(self, tasks=None, total_number=None, max_tasks=None, quota_tasks=None):
         """ListSinkTasksResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSinkTasksResponse, self).__init__()
 
         self._tasks = None
         self._total_number = None

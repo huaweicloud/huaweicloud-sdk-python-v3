@@ -44,6 +44,7 @@ class RemoveProjectRequest:
     def project_id(self):
         """Gets the project_id of this RemoveProjectRequest.
 
+        项目id
 
         :return: The project_id of this RemoveProjectRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class RemoveProjectRequest:
     def project_id(self, project_id):
         """Sets the project_id of this RemoveProjectRequest.
 
+        项目id
 
         :param project_id: The project_id of this RemoveProjectRequest.
         :type: str

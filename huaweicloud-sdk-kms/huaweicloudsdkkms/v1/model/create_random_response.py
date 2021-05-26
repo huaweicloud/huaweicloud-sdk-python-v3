@@ -33,7 +33,7 @@ class CreateRandomResponse(SdkResponse):
     def __init__(self, random_data=None):
         """CreateRandomResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateRandomResponse, self).__init__()
 
         self._random_data = None
         self.discriminator = None

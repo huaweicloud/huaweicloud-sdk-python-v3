@@ -50,6 +50,7 @@ class ListSecretsRequest:
     def limit(self):
         """Gets the limit of this ListSecretsRequest.
 
+        每页返回的个数。  默认值：50。 
 
         :return: The limit of this ListSecretsRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class ListSecretsRequest:
     def limit(self, limit):
         """Sets the limit of this ListSecretsRequest.
 
+        每页返回的个数。  默认值：50。 
 
         :param limit: The limit of this ListSecretsRequest.
         :type: str
@@ -70,6 +72,7 @@ class ListSecretsRequest:
     def marker(self):
         """Gets the marker of this ListSecretsRequest.
 
+        分页查询起始的资源id，为空时为查询第一页 
 
         :return: The marker of this ListSecretsRequest.
         :rtype: str
@@ -80,6 +83,7 @@ class ListSecretsRequest:
     def marker(self, marker):
         """Sets the marker of this ListSecretsRequest.
 
+        分页查询起始的资源id，为空时为查询第一页 
 
         :param marker: The marker of this ListSecretsRequest.
         :type: str

@@ -49,6 +49,7 @@ class UpdateMessageTemplateRequest:
     def message_template_id(self):
         """Gets the message_template_id of this UpdateMessageTemplateRequest.
 
+        模板唯一的资源标识，可通过查询[消息模板列表](https://support.huaweicloud.com/api-smn/smn_api_53004.html)获取该标识。
 
         :return: The message_template_id of this UpdateMessageTemplateRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateMessageTemplateRequest:
     def message_template_id(self, message_template_id):
         """Sets the message_template_id of this UpdateMessageTemplateRequest.
 
+        模板唯一的资源标识，可通过查询[消息模板列表](https://support.huaweicloud.com/api-smn/smn_api_53004.html)获取该标识。
 
         :param message_template_id: The message_template_id of this UpdateMessageTemplateRequest.
         :type: str

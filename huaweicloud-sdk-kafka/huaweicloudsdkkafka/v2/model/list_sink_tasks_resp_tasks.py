@@ -26,7 +26,7 @@ class ListSinkTasksRespTasks:
         'task_id': 'str',
         'task_name': 'str',
         'destination_type': 'str',
-        'create_time': 'str',
+        'create_time': 'int',
         'status': 'str',
         'topics': 'str'
     }
@@ -139,7 +139,7 @@ class ListSinkTasksRespTasks:
         转储任务创建时间戳。
 
         :return: The create_time of this ListSinkTasksRespTasks.
-        :rtype: str
+        :rtype: int
         """
         return self._create_time
 
@@ -150,7 +150,7 @@ class ListSinkTasksRespTasks:
         转储任务创建时间戳。
 
         :param create_time: The create_time of this ListSinkTasksRespTasks.
-        :type: str
+        :type: int
         """
         self._create_time = create_time
 

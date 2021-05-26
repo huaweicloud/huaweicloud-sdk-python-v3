@@ -69,6 +69,7 @@ class ListRecordConfigsRequest:
     def domain(self):
         """Gets the domain of this ListRecordConfigsRequest.
 
+        直播播放域名
 
         :return: The domain of this ListRecordConfigsRequest.
         :rtype: str
@@ -79,6 +80,7 @@ class ListRecordConfigsRequest:
     def domain(self, domain):
         """Sets the domain of this ListRecordConfigsRequest.
 
+        直播播放域名
 
         :param domain: The domain of this ListRecordConfigsRequest.
         :type: str
@@ -89,6 +91,7 @@ class ListRecordConfigsRequest:
     def app_name(self):
         """Gets the app_name of this ListRecordConfigsRequest.
 
+        流应用名称
 
         :return: The app_name of this ListRecordConfigsRequest.
         :rtype: str
@@ -99,6 +102,7 @@ class ListRecordConfigsRequest:
     def app_name(self, app_name):
         """Sets the app_name of this ListRecordConfigsRequest.
 
+        流应用名称
 
         :param app_name: The app_name of this ListRecordConfigsRequest.
         :type: str
@@ -109,6 +113,7 @@ class ListRecordConfigsRequest:
     def stream_name(self):
         """Gets the stream_name of this ListRecordConfigsRequest.
 
+        流名
 
         :return: The stream_name of this ListRecordConfigsRequest.
         :rtype: str
@@ -119,6 +124,7 @@ class ListRecordConfigsRequest:
     def stream_name(self, stream_name):
         """Sets the stream_name of this ListRecordConfigsRequest.
 
+        流名
 
         :param stream_name: The stream_name of this ListRecordConfigsRequest.
         :type: str
@@ -129,6 +135,7 @@ class ListRecordConfigsRequest:
     def page(self):
         """Gets the page of this ListRecordConfigsRequest.
 
+        分页编号。 默认为0。 
 
         :return: The page of this ListRecordConfigsRequest.
         :rtype: int
@@ -139,6 +146,7 @@ class ListRecordConfigsRequest:
     def page(self, page):
         """Sets the page of this ListRecordConfigsRequest.
 
+        分页编号。 默认为0。 
 
         :param page: The page of this ListRecordConfigsRequest.
         :type: int
@@ -149,6 +157,7 @@ class ListRecordConfigsRequest:
     def size(self):
         """Gets the size of this ListRecordConfigsRequest.
 
+        每页记录数。 取值范围：1-100。 默认为10。 
 
         :return: The size of this ListRecordConfigsRequest.
         :rtype: int
@@ -159,6 +168,7 @@ class ListRecordConfigsRequest:
     def size(self, size):
         """Sets the size of this ListRecordConfigsRequest.
 
+        每页记录数。 取值范围：1-100。 默认为10。 
 
         :param size: The size of this ListRecordConfigsRequest.
         :type: int
@@ -169,6 +179,7 @@ class ListRecordConfigsRequest:
     def record_type(self):
         """Gets the record_type of this ListRecordConfigsRequest.
 
+        录制类型 configer_record：按照配置录制
 
         :return: The record_type of this ListRecordConfigsRequest.
         :rtype: str
@@ -179,6 +190,7 @@ class ListRecordConfigsRequest:
     def record_type(self, record_type):
         """Sets the record_type of this ListRecordConfigsRequest.
 
+        录制类型 configer_record：按照配置录制
 
         :param record_type: The record_type of this ListRecordConfigsRequest.
         :type: str

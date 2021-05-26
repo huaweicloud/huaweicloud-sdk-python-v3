@@ -45,6 +45,7 @@ class ListNamespacesRequest:
     def namespace(self):
         """Gets the namespace of this ListNamespacesRequest.
 
+        组织名称
 
         :return: The namespace of this ListNamespacesRequest.
         :rtype: str
@@ -55,6 +56,7 @@ class ListNamespacesRequest:
     def namespace(self, namespace):
         """Sets the namespace of this ListNamespacesRequest.
 
+        组织名称
 
         :param namespace: The namespace of this ListNamespacesRequest.
         :type: str

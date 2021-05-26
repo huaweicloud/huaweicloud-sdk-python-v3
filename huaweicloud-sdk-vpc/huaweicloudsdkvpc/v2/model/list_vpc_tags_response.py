@@ -33,7 +33,7 @@ class ListVpcTagsResponse(SdkResponse):
     def __init__(self, tags=None):
         """ListVpcTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListVpcTagsResponse, self).__init__()
 
         self._tags = None
         self.discriminator = None

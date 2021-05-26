@@ -48,6 +48,7 @@ class DeleteSubnetTagRequest:
     def subnet_id(self):
         """Gets the subnet_id of this DeleteSubnetTagRequest.
 
+        子网ID
 
         :return: The subnet_id of this DeleteSubnetTagRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteSubnetTagRequest:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this DeleteSubnetTagRequest.
 
+        子网ID
 
         :param subnet_id: The subnet_id of this DeleteSubnetTagRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteSubnetTagRequest:
     def key(self):
         """Gets the key of this DeleteSubnetTagRequest.
 
+        功能说明：键值
 
         :return: The key of this DeleteSubnetTagRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteSubnetTagRequest:
     def key(self, key):
         """Sets the key of this DeleteSubnetTagRequest.
 
+        功能说明：键值
 
         :param key: The key of this DeleteSubnetTagRequest.
         :type: str

@@ -49,6 +49,7 @@ class CreateSinkTaskRequest:
     def connector_id(self):
         """Gets the connector_id of this CreateSinkTaskRequest.
 
+        实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
 
         :return: The connector_id of this CreateSinkTaskRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateSinkTaskRequest:
     def connector_id(self, connector_id):
         """Sets the connector_id of this CreateSinkTaskRequest.
 
+        实例转储ID。 请参考[实例生命周期][查询实例]接口返回的数据。
 
         :param connector_id: The connector_id of this CreateSinkTaskRequest.
         :type: str

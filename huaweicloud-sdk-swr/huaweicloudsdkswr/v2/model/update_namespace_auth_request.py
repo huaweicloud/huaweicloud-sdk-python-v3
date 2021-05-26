@@ -49,6 +49,7 @@ class UpdateNamespaceAuthRequest:
     def namespace(self):
         """Gets the namespace of this UpdateNamespaceAuthRequest.
 
+        组织名称
 
         :return: The namespace of this UpdateNamespaceAuthRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateNamespaceAuthRequest:
     def namespace(self, namespace):
         """Sets the namespace of this UpdateNamespaceAuthRequest.
 
+        组织名称
 
         :param namespace: The namespace of this UpdateNamespaceAuthRequest.
         :type: str

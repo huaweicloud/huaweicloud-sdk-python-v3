@@ -23,7 +23,7 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'success': 'str',
+        'success': 'bool',
         'results': 'list[UpdateInstanceCrossVpcIpRespResults]'
     }
 
@@ -35,7 +35,7 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
     def __init__(self, success=None, results=None):
         """UpdateInstanceCrossVpcIpResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateInstanceCrossVpcIpResponse, self).__init__()
 
         self._success = None
         self._results = None
@@ -53,7 +53,7 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
         修改跨VPC访问结果。
 
         :return: The success of this UpdateInstanceCrossVpcIpResponse.
-        :rtype: str
+        :rtype: bool
         """
         return self._success
 
@@ -64,7 +64,7 @@ class UpdateInstanceCrossVpcIpResponse(SdkResponse):
         修改跨VPC访问结果。
 
         :param success: The success of this UpdateInstanceCrossVpcIpResponse.
-        :type: str
+        :type: bool
         """
         self._success = success
 

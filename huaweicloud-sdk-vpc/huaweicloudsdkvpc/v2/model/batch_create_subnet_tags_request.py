@@ -49,6 +49,7 @@ class BatchCreateSubnetTagsRequest:
     def subnet_id(self):
         """Gets the subnet_id of this BatchCreateSubnetTagsRequest.
 
+        子网ID
 
         :return: The subnet_id of this BatchCreateSubnetTagsRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class BatchCreateSubnetTagsRequest:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this BatchCreateSubnetTagsRequest.
 
+        子网ID
 
         :param subnet_id: The subnet_id of this BatchCreateSubnetTagsRequest.
         :type: str

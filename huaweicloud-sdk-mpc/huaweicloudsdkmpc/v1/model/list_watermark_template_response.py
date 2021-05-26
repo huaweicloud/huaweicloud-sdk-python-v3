@@ -37,7 +37,7 @@ class ListWatermarkTemplateResponse(SdkResponse):
     def __init__(self, total=None, templates=None, error=None):
         """ListWatermarkTemplateResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListWatermarkTemplateResponse, self).__init__()
 
         self._total = None
         self._templates = None

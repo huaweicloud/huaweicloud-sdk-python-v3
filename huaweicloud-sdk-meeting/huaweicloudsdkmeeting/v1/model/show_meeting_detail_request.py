@@ -84,6 +84,7 @@ class ShowMeetingDetailRequest:
     def conference_id(self):
         """Gets the conference_id of this ShowMeetingDetailRequest.
 
+        会议ID。
 
         :return: The conference_id of this ShowMeetingDetailRequest.
         :rtype: str
@@ -94,6 +95,7 @@ class ShowMeetingDetailRequest:
     def conference_id(self, conference_id):
         """Sets the conference_id of this ShowMeetingDetailRequest.
 
+        会议ID。
 
         :param conference_id: The conference_id of this ShowMeetingDetailRequest.
         :type: str
@@ -104,6 +106,7 @@ class ShowMeetingDetailRequest:
     def offset(self):
         """Gets the offset of this ShowMeetingDetailRequest.
 
+        指定返回的与会者列表的记录索引。该值必须大于等于0。
 
         :return: The offset of this ShowMeetingDetailRequest.
         :rtype: int
@@ -114,6 +117,7 @@ class ShowMeetingDetailRequest:
     def offset(self, offset):
         """Sets the offset of this ShowMeetingDetailRequest.
 
+        指定返回的与会者列表的记录索引。该值必须大于等于0。
 
         :param offset: The offset of this ShowMeetingDetailRequest.
         :type: int
@@ -124,6 +128,7 @@ class ShowMeetingDetailRequest:
     def limit(self):
         """Gets the limit of this ShowMeetingDetailRequest.
 
+        指定返回的与会者记录数。默认值20。
 
         :return: The limit of this ShowMeetingDetailRequest.
         :rtype: int
@@ -134,6 +139,7 @@ class ShowMeetingDetailRequest:
     def limit(self, limit):
         """Sets the limit of this ShowMeetingDetailRequest.
 
+        指定返回的与会者记录数。默认值20。
 
         :param limit: The limit of this ShowMeetingDetailRequest.
         :type: int
@@ -144,6 +150,7 @@ class ShowMeetingDetailRequest:
     def search_key(self):
         """Gets the search_key of this ShowMeetingDetailRequest.
 
+        用来作关键词查询的字符串。长度限制为1-128个字符。
 
         :return: The search_key of this ShowMeetingDetailRequest.
         :rtype: str
@@ -154,6 +161,7 @@ class ShowMeetingDetailRequest:
     def search_key(self, search_key):
         """Sets the search_key of this ShowMeetingDetailRequest.
 
+        用来作关键词查询的字符串。长度限制为1-128个字符。
 
         :param search_key: The search_key of this ShowMeetingDetailRequest.
         :type: str
@@ -164,6 +172,7 @@ class ShowMeetingDetailRequest:
     def user_uuid(self):
         """Gets the user_uuid of this ShowMeetingDetailRequest.
 
+        用户的UUID。第三方鉴权时需要携带。
 
         :return: The user_uuid of this ShowMeetingDetailRequest.
         :rtype: str
@@ -174,6 +183,7 @@ class ShowMeetingDetailRequest:
     def user_uuid(self, user_uuid):
         """Sets the user_uuid of this ShowMeetingDetailRequest.
 
+        用户的UUID。第三方鉴权时需要携带。
 
         :param user_uuid: The user_uuid of this ShowMeetingDetailRequest.
         :type: str
@@ -184,6 +194,7 @@ class ShowMeetingDetailRequest:
     def x_type(self):
         """Gets the x_type of this ShowMeetingDetailRequest.
 
+        默认值为0。 - 0: 不区分终端和与会人。 - 1: 分页查询区分终端和与会人，结果合并返回。 - 2: 单独查询终端和与会人，结果单独返回。
 
         :return: The x_type of this ShowMeetingDetailRequest.
         :rtype: str
@@ -194,6 +205,7 @@ class ShowMeetingDetailRequest:
     def x_type(self, x_type):
         """Sets the x_type of this ShowMeetingDetailRequest.
 
+        默认值为0。 - 0: 不区分终端和与会人。 - 1: 分页查询区分终端和与会人，结果合并返回。 - 2: 单独查询终端和与会人，结果单独返回。
 
         :param x_type: The x_type of this ShowMeetingDetailRequest.
         :type: str
@@ -204,6 +216,7 @@ class ShowMeetingDetailRequest:
     def x_query_type(self):
         """Gets the x_query_type of this ShowMeetingDetailRequest.
 
+        当X-Type为2时，有效。默认为0。 - 0: 查询与会人。 - 1: 查询终端。
 
         :return: The x_query_type of this ShowMeetingDetailRequest.
         :rtype: str
@@ -214,6 +227,7 @@ class ShowMeetingDetailRequest:
     def x_query_type(self, x_query_type):
         """Sets the x_query_type of this ShowMeetingDetailRequest.
 
+        当X-Type为2时，有效。默认为0。 - 0: 查询与会人。 - 1: 查询终端。
 
         :param x_query_type: The x_query_type of this ShowMeetingDetailRequest.
         :type: str
@@ -224,6 +238,7 @@ class ShowMeetingDetailRequest:
     def x_authorization_type(self):
         """Gets the x_authorization_type of this ShowMeetingDetailRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :return: The x_authorization_type of this ShowMeetingDetailRequest.
         :rtype: str
@@ -234,6 +249,7 @@ class ShowMeetingDetailRequest:
     def x_authorization_type(self, x_authorization_type):
         """Sets the x_authorization_type of this ShowMeetingDetailRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this ShowMeetingDetailRequest.
         :type: str
@@ -244,6 +260,7 @@ class ShowMeetingDetailRequest:
     def x_site_id(self):
         """Gets the x_site_id of this ShowMeetingDetailRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :return: The x_site_id of this ShowMeetingDetailRequest.
         :rtype: str
@@ -254,6 +271,7 @@ class ShowMeetingDetailRequest:
     def x_site_id(self, x_site_id):
         """Sets the x_site_id of this ShowMeetingDetailRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this ShowMeetingDetailRequest.
         :type: str

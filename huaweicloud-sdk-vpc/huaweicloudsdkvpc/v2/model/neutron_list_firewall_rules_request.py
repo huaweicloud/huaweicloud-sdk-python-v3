@@ -75,6 +75,7 @@ class NeutronListFirewallRulesRequest:
     def marker(self):
         """Gets the marker of this NeutronListFirewallRulesRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :return: The marker of this NeutronListFirewallRulesRequest.
         :rtype: str
@@ -85,6 +86,7 @@ class NeutronListFirewallRulesRequest:
     def marker(self, marker):
         """Sets the marker of this NeutronListFirewallRulesRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this NeutronListFirewallRulesRequest.
         :type: str
@@ -95,6 +97,7 @@ class NeutronListFirewallRulesRequest:
     def limit(self):
         """Gets the limit of this NeutronListFirewallRulesRequest.
 
+        每页返回的个数
 
         :return: The limit of this NeutronListFirewallRulesRequest.
         :rtype: int
@@ -105,6 +108,7 @@ class NeutronListFirewallRulesRequest:
     def limit(self, limit):
         """Sets the limit of this NeutronListFirewallRulesRequest.
 
+        每页返回的个数
 
         :param limit: The limit of this NeutronListFirewallRulesRequest.
         :type: int
@@ -115,6 +119,7 @@ class NeutronListFirewallRulesRequest:
     def id(self):
         """Gets the id of this NeutronListFirewallRulesRequest.
 
+        使用网络ACL规则ID过滤网络ACL规则
 
         :return: The id of this NeutronListFirewallRulesRequest.
         :rtype: list[str]
@@ -125,6 +130,7 @@ class NeutronListFirewallRulesRequest:
     def id(self, id):
         """Sets the id of this NeutronListFirewallRulesRequest.
 
+        使用网络ACL规则ID过滤网络ACL规则
 
         :param id: The id of this NeutronListFirewallRulesRequest.
         :type: list[str]
@@ -135,6 +141,7 @@ class NeutronListFirewallRulesRequest:
     def name(self):
         """Gets the name of this NeutronListFirewallRulesRequest.
 
+        使用网络ACL规则name过滤网络ACL规则
 
         :return: The name of this NeutronListFirewallRulesRequest.
         :rtype: list[str]
@@ -145,6 +152,7 @@ class NeutronListFirewallRulesRequest:
     def name(self, name):
         """Sets the name of this NeutronListFirewallRulesRequest.
 
+        使用网络ACL规则name过滤网络ACL规则
 
         :param name: The name of this NeutronListFirewallRulesRequest.
         :type: list[str]
@@ -155,6 +163,7 @@ class NeutronListFirewallRulesRequest:
     def description(self):
         """Gets the description of this NeutronListFirewallRulesRequest.
 
+        使用网络ACL规则的description过滤网络ACL规则
 
         :return: The description of this NeutronListFirewallRulesRequest.
         :rtype: list[str]
@@ -165,6 +174,7 @@ class NeutronListFirewallRulesRequest:
     def description(self, description):
         """Sets the description of this NeutronListFirewallRulesRequest.
 
+        使用网络ACL规则的description过滤网络ACL规则
 
         :param description: The description of this NeutronListFirewallRulesRequest.
         :type: list[str]
@@ -175,6 +185,7 @@ class NeutronListFirewallRulesRequest:
     def action(self):
         """Gets the action of this NeutronListFirewallRulesRequest.
 
+        使用action过滤查询网络ACL规则
 
         :return: The action of this NeutronListFirewallRulesRequest.
         :rtype: str
@@ -185,6 +196,7 @@ class NeutronListFirewallRulesRequest:
     def action(self, action):
         """Sets the action of this NeutronListFirewallRulesRequest.
 
+        使用action过滤查询网络ACL规则
 
         :param action: The action of this NeutronListFirewallRulesRequest.
         :type: str
@@ -195,6 +207,7 @@ class NeutronListFirewallRulesRequest:
     def tenant_id(self):
         """Gets the tenant_id of this NeutronListFirewallRulesRequest.
 
+        使用tenant_id过滤查询网络ACL规则
 
         :return: The tenant_id of this NeutronListFirewallRulesRequest.
         :rtype: str
@@ -205,6 +218,7 @@ class NeutronListFirewallRulesRequest:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this NeutronListFirewallRulesRequest.
 
+        使用tenant_id过滤查询网络ACL规则
 
         :param tenant_id: The tenant_id of this NeutronListFirewallRulesRequest.
         :type: str

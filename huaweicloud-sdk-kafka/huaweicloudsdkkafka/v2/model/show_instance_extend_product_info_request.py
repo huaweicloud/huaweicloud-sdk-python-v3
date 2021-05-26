@@ -46,12 +46,14 @@ class ShowInstanceExtendProductInfoRequest:
 
         self.instance_id = instance_id
         self.type = type
-        self.engine = engine
+        if engine is not None:
+            self.engine = engine
 
     @property
     def instance_id(self):
         """Gets the instance_id of this ShowInstanceExtendProductInfoRequest.
 
+        实例ID。
 
         :return: The instance_id of this ShowInstanceExtendProductInfoRequest.
         :rtype: str
@@ -62,6 +64,7 @@ class ShowInstanceExtendProductInfoRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowInstanceExtendProductInfoRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ShowInstanceExtendProductInfoRequest.
         :type: str
@@ -72,6 +75,7 @@ class ShowInstanceExtendProductInfoRequest:
     def type(self):
         """Gets the type of this ShowInstanceExtendProductInfoRequest.
 
+        产品的类型。 - advanced: 专享版 - platinum: 铂金版 - dec: 专属云版 - exp: 体验版
 
         :return: The type of this ShowInstanceExtendProductInfoRequest.
         :rtype: str
@@ -82,6 +86,7 @@ class ShowInstanceExtendProductInfoRequest:
     def type(self, type):
         """Sets the type of this ShowInstanceExtendProductInfoRequest.
 
+        产品的类型。 - advanced: 专享版 - platinum: 铂金版 - dec: 专属云版 - exp: 体验版
 
         :param type: The type of this ShowInstanceExtendProductInfoRequest.
         :type: str
@@ -92,6 +97,7 @@ class ShowInstanceExtendProductInfoRequest:
     def engine(self):
         """Gets the engine of this ShowInstanceExtendProductInfoRequest.
 
+        消息引擎的类型。当前支持的类型为kafka。
 
         :return: The engine of this ShowInstanceExtendProductInfoRequest.
         :rtype: str
@@ -102,6 +108,7 @@ class ShowInstanceExtendProductInfoRequest:
     def engine(self, engine):
         """Sets the engine of this ShowInstanceExtendProductInfoRequest.
 
+        消息引擎的类型。当前支持的类型为kafka。
 
         :param engine: The engine of this ShowInstanceExtendProductInfoRequest.
         :type: str

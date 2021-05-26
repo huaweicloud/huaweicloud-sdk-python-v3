@@ -31,7 +31,7 @@ class DeleteMergeChannelsTaskResponse(SdkResponse):
     def __init__(self):
         """DeleteMergeChannelsTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteMergeChannelsTaskResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

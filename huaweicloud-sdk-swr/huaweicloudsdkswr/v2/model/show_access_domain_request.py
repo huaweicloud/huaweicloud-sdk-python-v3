@@ -52,6 +52,7 @@ class ShowAccessDomainRequest:
     def namespace(self):
         """Gets the namespace of this ShowAccessDomainRequest.
 
+        组织名称
 
         :return: The namespace of this ShowAccessDomainRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class ShowAccessDomainRequest:
     def namespace(self, namespace):
         """Sets the namespace of this ShowAccessDomainRequest.
 
+        组织名称
 
         :param namespace: The namespace of this ShowAccessDomainRequest.
         :type: str
@@ -72,6 +74,7 @@ class ShowAccessDomainRequest:
     def repository(self):
         """Gets the repository of this ShowAccessDomainRequest.
 
+        镜像仓库名称
 
         :return: The repository of this ShowAccessDomainRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class ShowAccessDomainRequest:
     def repository(self, repository):
         """Sets the repository of this ShowAccessDomainRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this ShowAccessDomainRequest.
         :type: str
@@ -92,6 +96,7 @@ class ShowAccessDomainRequest:
     def access_domain(self):
         """Gets the access_domain of this ShowAccessDomainRequest.
 
+        共享账号
 
         :return: The access_domain of this ShowAccessDomainRequest.
         :rtype: str
@@ -102,6 +107,7 @@ class ShowAccessDomainRequest:
     def access_domain(self, access_domain):
         """Sets the access_domain of this ShowAccessDomainRequest.
 
+        共享账号
 
         :param access_domain: The access_domain of this ShowAccessDomainRequest.
         :type: str

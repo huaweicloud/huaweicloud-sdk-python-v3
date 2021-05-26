@@ -31,7 +31,7 @@ class DeleteTranscodingsTemplateResponse(SdkResponse):
     def __init__(self):
         """DeleteTranscodingsTemplateResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteTranscodingsTemplateResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

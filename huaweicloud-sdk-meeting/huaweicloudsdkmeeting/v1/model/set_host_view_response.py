@@ -31,7 +31,7 @@ class SetHostViewResponse(SdkResponse):
     def __init__(self):
         """SetHostViewResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(SetHostViewResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

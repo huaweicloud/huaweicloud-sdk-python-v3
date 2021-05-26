@@ -31,7 +31,7 @@ class DeleteMediaProcessTaskResponse(SdkResponse):
     def __init__(self):
         """DeleteMediaProcessTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteMediaProcessTaskResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

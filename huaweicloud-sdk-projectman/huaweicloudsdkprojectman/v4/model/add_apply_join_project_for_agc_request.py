@@ -52,6 +52,7 @@ class AddApplyJoinProjectForAgcRequest:
     def domain_id(self):
         """Gets the domain_id of this AddApplyJoinProjectForAgcRequest.
 
+        租户id
 
         :return: The domain_id of this AddApplyJoinProjectForAgcRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class AddApplyJoinProjectForAgcRequest:
     def domain_id(self, domain_id):
         """Sets the domain_id of this AddApplyJoinProjectForAgcRequest.
 
+        租户id
 
         :param domain_id: The domain_id of this AddApplyJoinProjectForAgcRequest.
         :type: str
@@ -72,6 +74,7 @@ class AddApplyJoinProjectForAgcRequest:
     def user_id(self):
         """Gets the user_id of this AddApplyJoinProjectForAgcRequest.
 
+        用户id
 
         :return: The user_id of this AddApplyJoinProjectForAgcRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class AddApplyJoinProjectForAgcRequest:
     def user_id(self, user_id):
         """Sets the user_id of this AddApplyJoinProjectForAgcRequest.
 
+        用户id
 
         :param user_id: The user_id of this AddApplyJoinProjectForAgcRequest.
         :type: str
@@ -92,6 +96,7 @@ class AddApplyJoinProjectForAgcRequest:
     def project_id(self):
         """Gets the project_id of this AddApplyJoinProjectForAgcRequest.
 
+        项目id
 
         :return: The project_id of this AddApplyJoinProjectForAgcRequest.
         :rtype: str
@@ -102,6 +107,7 @@ class AddApplyJoinProjectForAgcRequest:
     def project_id(self, project_id):
         """Sets the project_id of this AddApplyJoinProjectForAgcRequest.
 
+        项目id
 
         :param project_id: The project_id of this AddApplyJoinProjectForAgcRequest.
         :type: str

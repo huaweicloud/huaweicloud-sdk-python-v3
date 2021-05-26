@@ -33,7 +33,7 @@ class BatchDeleteInstanceTopicResponse(SdkResponse):
     def __init__(self, topics=None):
         """BatchDeleteInstanceTopicResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchDeleteInstanceTopicResponse, self).__init__()
 
         self._topics = None
         self.discriminator = None

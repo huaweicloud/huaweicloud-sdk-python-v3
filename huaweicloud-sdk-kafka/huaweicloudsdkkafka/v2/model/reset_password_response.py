@@ -31,7 +31,7 @@ class ResetPasswordResponse(SdkResponse):
     def __init__(self):
         """ResetPasswordResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ResetPasswordResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

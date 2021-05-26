@@ -33,7 +33,7 @@ class ShowRedirectUrlResponse(SdkResponse):
     def __init__(self, url=None):
         """ShowRedirectUrlResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowRedirectUrlResponse, self).__init__()
 
         self._url = None
         self.discriminator = None

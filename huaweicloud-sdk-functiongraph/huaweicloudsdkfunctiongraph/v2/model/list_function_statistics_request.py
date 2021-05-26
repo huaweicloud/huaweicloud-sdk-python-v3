@@ -48,6 +48,7 @@ class ListFunctionStatisticsRequest:
     def func_urn(self):
         """Gets the func_urn of this ListFunctionStatisticsRequest.
 
+        函数的URN（Uniform Resource Name），唯一标识函数。
 
         :return: The func_urn of this ListFunctionStatisticsRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ListFunctionStatisticsRequest:
     def func_urn(self, func_urn):
         """Sets the func_urn of this ListFunctionStatisticsRequest.
 
+        函数的URN（Uniform Resource Name），唯一标识函数。
 
         :param func_urn: The func_urn of this ListFunctionStatisticsRequest.
         :type: str
@@ -68,6 +70,7 @@ class ListFunctionStatisticsRequest:
     def period(self):
         """Gets the period of this ListFunctionStatisticsRequest.
 
+        获取最近多少分钟内函数执行的指标。
 
         :return: The period of this ListFunctionStatisticsRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ListFunctionStatisticsRequest:
     def period(self, period):
         """Sets the period of this ListFunctionStatisticsRequest.
 
+        获取最近多少分钟内函数执行的指标。
 
         :param period: The period of this ListFunctionStatisticsRequest.
         :type: str

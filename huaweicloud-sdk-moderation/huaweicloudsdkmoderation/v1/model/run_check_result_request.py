@@ -44,6 +44,7 @@ class RunCheckResultRequest:
     def job_id(self):
         """Gets the job_id of this RunCheckResultRequest.
 
+        任务标识。
 
         :return: The job_id of this RunCheckResultRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class RunCheckResultRequest:
     def job_id(self, job_id):
         """Sets the job_id of this RunCheckResultRequest.
 
+        任务标识。
 
         :param job_id: The job_id of this RunCheckResultRequest.
         :type: str

@@ -100,6 +100,7 @@ class ListNatGatewaySnatRulesRequest:
     def admin_state_up(self):
         """Gets the admin_state_up of this ListNatGatewaySnatRulesRequest.
 
+        解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
 
         :return: The admin_state_up of this ListNatGatewaySnatRulesRequest.
         :rtype: bool
@@ -110,6 +111,7 @@ class ListNatGatewaySnatRulesRequest:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this ListNatGatewaySnatRulesRequest.
 
+        解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
 
         :param admin_state_up: The admin_state_up of this ListNatGatewaySnatRulesRequest.
         :type: bool
@@ -120,6 +122,7 @@ class ListNatGatewaySnatRulesRequest:
     def cidr(self):
         """Gets the cidr of this ListNatGatewaySnatRulesRequest.
 
+        可以是网段或者主机格式，与network_id参数二选一。 Source_type=0时，cidr必须是vpc子网网段的子集(不能相等）; Source_type=1时，cidr必须指定专线侧网段。
 
         :return: The cidr of this ListNatGatewaySnatRulesRequest.
         :rtype: str
@@ -130,6 +133,7 @@ class ListNatGatewaySnatRulesRequest:
     def cidr(self, cidr):
         """Sets the cidr of this ListNatGatewaySnatRulesRequest.
 
+        可以是网段或者主机格式，与network_id参数二选一。 Source_type=0时，cidr必须是vpc子网网段的子集(不能相等）; Source_type=1时，cidr必须指定专线侧网段。
 
         :param cidr: The cidr of this ListNatGatewaySnatRulesRequest.
         :type: str
@@ -140,6 +144,7 @@ class ListNatGatewaySnatRulesRequest:
     def limit(self):
         """Gets the limit of this ListNatGatewaySnatRulesRequest.
 
+        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
         :return: The limit of this ListNatGatewaySnatRulesRequest.
         :rtype: int
@@ -150,6 +155,7 @@ class ListNatGatewaySnatRulesRequest:
     def limit(self, limit):
         """Sets the limit of this ListNatGatewaySnatRulesRequest.
 
+        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
         :param limit: The limit of this ListNatGatewaySnatRulesRequest.
         :type: int
@@ -160,6 +166,7 @@ class ListNatGatewaySnatRulesRequest:
     def floating_ip_address(self):
         """Gets the floating_ip_address of this ListNatGatewaySnatRulesRequest.
 
+        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
 
         :return: The floating_ip_address of this ListNatGatewaySnatRulesRequest.
         :rtype: str
@@ -170,6 +177,7 @@ class ListNatGatewaySnatRulesRequest:
     def floating_ip_address(self, floating_ip_address):
         """Sets the floating_ip_address of this ListNatGatewaySnatRulesRequest.
 
+        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
 
         :param floating_ip_address: The floating_ip_address of this ListNatGatewaySnatRulesRequest.
         :type: str
@@ -180,6 +188,7 @@ class ListNatGatewaySnatRulesRequest:
     def floating_ip_id(self):
         """Gets the floating_ip_id of this ListNatGatewaySnatRulesRequest.
 
+        功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
 
         :return: The floating_ip_id of this ListNatGatewaySnatRulesRequest.
         :rtype: str
@@ -190,6 +199,7 @@ class ListNatGatewaySnatRulesRequest:
     def floating_ip_id(self, floating_ip_id):
         """Sets the floating_ip_id of this ListNatGatewaySnatRulesRequest.
 
+        功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
 
         :param floating_ip_id: The floating_ip_id of this ListNatGatewaySnatRulesRequest.
         :type: str
@@ -200,6 +210,7 @@ class ListNatGatewaySnatRulesRequest:
     def id(self):
         """Gets the id of this ListNatGatewaySnatRulesRequest.
 
+        SNAT规则的ID。
 
         :return: The id of this ListNatGatewaySnatRulesRequest.
         :rtype: str
@@ -210,6 +221,7 @@ class ListNatGatewaySnatRulesRequest:
     def id(self, id):
         """Sets the id of this ListNatGatewaySnatRulesRequest.
 
+        SNAT规则的ID。
 
         :param id: The id of this ListNatGatewaySnatRulesRequest.
         :type: str
@@ -220,6 +232,7 @@ class ListNatGatewaySnatRulesRequest:
     def description(self):
         """Gets the description of this ListNatGatewaySnatRulesRequest.
 
+        SNAT规则的描述，长度限制为255。
 
         :return: The description of this ListNatGatewaySnatRulesRequest.
         :rtype: str
@@ -230,6 +243,7 @@ class ListNatGatewaySnatRulesRequest:
     def description(self, description):
         """Sets the description of this ListNatGatewaySnatRulesRequest.
 
+        SNAT规则的描述，长度限制为255。
 
         :param description: The description of this ListNatGatewaySnatRulesRequest.
         :type: str
@@ -240,6 +254,7 @@ class ListNatGatewaySnatRulesRequest:
     def created_at(self):
         """Gets the created_at of this ListNatGatewaySnatRulesRequest.
 
+        SNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
         :return: The created_at of this ListNatGatewaySnatRulesRequest.
         :rtype: datetime
@@ -250,6 +265,7 @@ class ListNatGatewaySnatRulesRequest:
     def created_at(self, created_at):
         """Sets the created_at of this ListNatGatewaySnatRulesRequest.
 
+        SNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
         :param created_at: The created_at of this ListNatGatewaySnatRulesRequest.
         :type: datetime
@@ -260,6 +276,7 @@ class ListNatGatewaySnatRulesRequest:
     def nat_gateway_id(self):
         """Gets the nat_gateway_id of this ListNatGatewaySnatRulesRequest.
 
+        公网NAT网关实例的ID。
 
         :return: The nat_gateway_id of this ListNatGatewaySnatRulesRequest.
         :rtype: list[str]
@@ -270,6 +287,7 @@ class ListNatGatewaySnatRulesRequest:
     def nat_gateway_id(self, nat_gateway_id):
         """Sets the nat_gateway_id of this ListNatGatewaySnatRulesRequest.
 
+        公网NAT网关实例的ID。
 
         :param nat_gateway_id: The nat_gateway_id of this ListNatGatewaySnatRulesRequest.
         :type: list[str]
@@ -280,6 +298,7 @@ class ListNatGatewaySnatRulesRequest:
     def network_id(self):
         """Gets the network_id of this ListNatGatewaySnatRulesRequest.
 
+        规则使用的网络id。与cidr参数二选一。
 
         :return: The network_id of this ListNatGatewaySnatRulesRequest.
         :rtype: str
@@ -290,6 +309,7 @@ class ListNatGatewaySnatRulesRequest:
     def network_id(self, network_id):
         """Sets the network_id of this ListNatGatewaySnatRulesRequest.
 
+        规则使用的网络id。与cidr参数二选一。
 
         :param network_id: The network_id of this ListNatGatewaySnatRulesRequest.
         :type: str
@@ -300,6 +320,7 @@ class ListNatGatewaySnatRulesRequest:
     def source_type(self):
         """Gets the source_type of this ListNatGatewaySnatRulesRequest.
 
+        0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
 
         :return: The source_type of this ListNatGatewaySnatRulesRequest.
         :rtype: int
@@ -310,6 +331,7 @@ class ListNatGatewaySnatRulesRequest:
     def source_type(self, source_type):
         """Sets the source_type of this ListNatGatewaySnatRulesRequest.
 
+        0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
 
         :param source_type: The source_type of this ListNatGatewaySnatRulesRequest.
         :type: int
@@ -320,6 +342,7 @@ class ListNatGatewaySnatRulesRequest:
     def status(self):
         """Gets the status of this ListNatGatewaySnatRulesRequest.
 
+        功能说明：SNAT规则的状态。
 
         :return: The status of this ListNatGatewaySnatRulesRequest.
         :rtype: str
@@ -330,6 +353,7 @@ class ListNatGatewaySnatRulesRequest:
     def status(self, status):
         """Sets the status of this ListNatGatewaySnatRulesRequest.
 
+        功能说明：SNAT规则的状态。
 
         :param status: The status of this ListNatGatewaySnatRulesRequest.
         :type: str

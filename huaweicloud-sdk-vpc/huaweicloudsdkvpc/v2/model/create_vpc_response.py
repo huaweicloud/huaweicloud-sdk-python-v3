@@ -33,7 +33,7 @@ class CreateVpcResponse(SdkResponse):
     def __init__(self, vpc=None):
         """CreateVpcResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateVpcResponse, self).__init__()
 
         self._vpc = None
         self.discriminator = None

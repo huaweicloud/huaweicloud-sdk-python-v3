@@ -52,6 +52,7 @@ class DeleteRepoDomainsRequest:
     def namespace(self):
         """Gets the namespace of this DeleteRepoDomainsRequest.
 
+        组织名称
 
         :return: The namespace of this DeleteRepoDomainsRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class DeleteRepoDomainsRequest:
     def namespace(self, namespace):
         """Sets the namespace of this DeleteRepoDomainsRequest.
 
+        组织名称
 
         :param namespace: The namespace of this DeleteRepoDomainsRequest.
         :type: str
@@ -72,6 +74,7 @@ class DeleteRepoDomainsRequest:
     def repository(self):
         """Gets the repository of this DeleteRepoDomainsRequest.
 
+        镜像仓库名称
 
         :return: The repository of this DeleteRepoDomainsRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class DeleteRepoDomainsRequest:
     def repository(self, repository):
         """Sets the repository of this DeleteRepoDomainsRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this DeleteRepoDomainsRequest.
         :type: str
@@ -92,6 +96,7 @@ class DeleteRepoDomainsRequest:
     def access_domain(self):
         """Gets the access_domain of this DeleteRepoDomainsRequest.
 
+        共享租户名
 
         :return: The access_domain of this DeleteRepoDomainsRequest.
         :rtype: str
@@ -102,6 +107,7 @@ class DeleteRepoDomainsRequest:
     def access_domain(self, access_domain):
         """Sets the access_domain of this DeleteRepoDomainsRequest.
 
+        共享租户名
 
         :param access_domain: The access_domain of this DeleteRepoDomainsRequest.
         :type: str

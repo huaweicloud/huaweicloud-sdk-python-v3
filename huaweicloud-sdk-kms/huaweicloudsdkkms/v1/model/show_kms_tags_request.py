@@ -48,6 +48,7 @@ class ShowKmsTagsRequest:
     def version_id(self):
         """Gets the version_id of this ShowKmsTagsRequest.
 
+        API版本号
 
         :return: The version_id of this ShowKmsTagsRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowKmsTagsRequest:
     def version_id(self, version_id):
         """Sets the version_id of this ShowKmsTagsRequest.
 
+        API版本号
 
         :param version_id: The version_id of this ShowKmsTagsRequest.
         :type: str
@@ -68,6 +70,7 @@ class ShowKmsTagsRequest:
     def key_id(self):
         """Gets the key_id of this ShowKmsTagsRequest.
 
+        密钥ID
 
         :return: The key_id of this ShowKmsTagsRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowKmsTagsRequest:
     def key_id(self, key_id):
         """Sets the key_id of this ShowKmsTagsRequest.
 
+        密钥ID
 
         :param key_id: The key_id of this ShowKmsTagsRequest.
         :type: str

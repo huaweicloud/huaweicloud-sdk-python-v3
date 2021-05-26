@@ -35,7 +35,7 @@ class ListSingleStreamFramerateResponse(SdkResponse):
     def __init__(self, framerate_info_list=None, x_request_id=None):
         """ListSingleStreamFramerateResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSingleStreamFramerateResponse, self).__init__()
 
         self._framerate_info_list = None
         self._x_request_id = None

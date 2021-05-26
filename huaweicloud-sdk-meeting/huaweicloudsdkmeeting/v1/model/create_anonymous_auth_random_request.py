@@ -49,6 +49,7 @@ class CreateAnonymousAuthRandomRequest:
     def conference_id(self):
         """Gets the conference_id of this CreateAnonymousAuthRandomRequest.
 
+        会议ID。
 
         :return: The conference_id of this CreateAnonymousAuthRandomRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateAnonymousAuthRandomRequest:
     def conference_id(self, conference_id):
         """Sets the conference_id of this CreateAnonymousAuthRandomRequest.
 
+        会议ID。
 
         :param conference_id: The conference_id of this CreateAnonymousAuthRandomRequest.
         :type: str
@@ -69,6 +71,7 @@ class CreateAnonymousAuthRandomRequest:
     def x_password(self):
         """Gets the x_password of this CreateAnonymousAuthRandomRequest.
 
+        会议密码。
 
         :return: The x_password of this CreateAnonymousAuthRandomRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class CreateAnonymousAuthRandomRequest:
     def x_password(self, x_password):
         """Sets the x_password of this CreateAnonymousAuthRandomRequest.
 
+        会议密码。
 
         :param x_password: The x_password of this CreateAnonymousAuthRandomRequest.
         :type: str

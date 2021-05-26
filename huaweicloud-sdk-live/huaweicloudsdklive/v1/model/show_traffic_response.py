@@ -35,7 +35,7 @@ class ShowTrafficResponse(SdkResponse):
     def __init__(self, total=None, traffic_info=None):
         """ShowTrafficResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowTrafficResponse, self).__init__()
 
         self._total = None
         self._traffic_info = None

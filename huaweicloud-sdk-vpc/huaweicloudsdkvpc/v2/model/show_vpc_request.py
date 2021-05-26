@@ -44,6 +44,7 @@ class ShowVpcRequest:
     def vpc_id(self):
         """Gets the vpc_id of this ShowVpcRequest.
 
+        虚拟私有云ID
 
         :return: The vpc_id of this ShowVpcRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowVpcRequest:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this ShowVpcRequest.
 
+        虚拟私有云ID
 
         :param vpc_id: The vpc_id of this ShowVpcRequest.
         :type: str

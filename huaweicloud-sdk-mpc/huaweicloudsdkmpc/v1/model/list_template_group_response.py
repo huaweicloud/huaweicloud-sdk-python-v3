@@ -35,7 +35,7 @@ class ListTemplateGroupResponse(SdkResponse):
     def __init__(self, template_group_list=None, total=None):
         """ListTemplateGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListTemplateGroupResponse, self).__init__()
 
         self._template_group_list = None
         self._total = None

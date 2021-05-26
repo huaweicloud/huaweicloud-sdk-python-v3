@@ -33,7 +33,7 @@ class BatchCreateNatGatewayDnatRulesResponse(SdkResponse):
     def __init__(self, dnat_rules=None):
         """BatchCreateNatGatewayDnatRulesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchCreateNatGatewayDnatRulesResponse, self).__init__()
 
         self._dnat_rules = None
         self.discriminator = None

@@ -5,6 +5,8 @@ import json
 from concurrent.futures.thread import ThreadPoolExecutor
 from pprint import pprint
 
+import six
+
 from huaweicloudsdkcore.auth.credentials import Credentials
 from huaweicloudsdkcore.exceptions.exceptions import SdkException, ApiValueError
 from huaweicloudsdkcore.sdk_request import SdkRequest
@@ -40,8 +42,8 @@ class MeetingCredentials(Credentials):
         if self._token is None or self._last_token_date is None or (
                 now_time - self._last_token_date).days * 24 * 3600 + (
                 now_time - self._last_token_date).seconds > 12 * 60 * 60:
-            authorization = "Basic " + str(base64.b64encode((self._user_name + ':' + self._user_password).encode('utf-8')),
-                                           'utf-8')
+            authorization = "Basic " + six.ensure_str(
+                base64.b64encode((self._user_name + ':' + self._user_password).encode('utf-8')))
                                            
             body = {'account': self._user_name, 'clientType': 0}
             sdk_request = SdkRequest('POST', 'https', request.host, [], '/v1/usg/acs/auth/account', [],
@@ -52,12 +54,12 @@ class MeetingCredentials(Credentials):
             content = json.loads(response.content.decode())
             self._token = content['accessToken']
             self._last_token_date = datetime.datetime.now()
-            request.header_params["X-Auth-Token"] = self._token
+            request.header_params["X-Access-Token"] = self._token
             canonical_query_string = process_canonical_query_string(request)
             request.uri = request.resource_path + "?" + canonical_query_string if canonical_query_string != "" else request.resource_path
             return request
         else:
-            request.header_params["X-Auth-Token"] = self._token
+            request.header_params["X-Access-Token"] = self._token
             canonical_query_string = process_canonical_query_string(request)
             request.uri = request.resource_path + "?" + canonical_query_string if canonical_query_string != "" else request.resource_path
             return request

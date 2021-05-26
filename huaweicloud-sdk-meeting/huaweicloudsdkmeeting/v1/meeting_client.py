@@ -453,7 +453,7 @@ class MeetingClient(Client):
 
 
     def add_resource(self, request):
-        """分配企业资源
+        """SP管理员分配企业资源
 
         企业新增资源发放。优化适配，该接口同时支持修改，带resourceId后会判断该资源是否存在，存在即修改（支持修改的参数见修改接口），否则按新增处理
 
@@ -463,7 +463,7 @@ class MeetingClient(Client):
         return self.add_resource_with_http_info(request)
 
     def add_resource_with_http_info(self, request):
-        """分配企业资源
+        """SP管理员分配企业资源
 
         企业新增资源发放。优化适配，该接口同时支持修改，带resourceId后会判断该资源是否存在，存在即修改（支持修改的参数见修改接口），否则按新增处理
 
@@ -471,7 +471,7 @@ class MeetingClient(Client):
         :return: AddResourceResponse
         """
 
-        all_params = ['corp_id', 'resource_list', 'x_request_id', 'accept_language', 'force_edit_flag']
+        all_params = ['corp_id', 'resource_list', 'x_request_id', 'accept_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -484,8 +484,6 @@ class MeetingClient(Client):
             path_params['corp_id'] = local_var_params['corp_id']
 
         query_params = []
-        if 'force_edit_flag' in local_var_params:
-            query_params.append(('forceEditFlag', local_var_params['force_edit_flag']))
 
         header_params = {}
         if 'x_request_id' in local_var_params:
@@ -2084,6 +2082,71 @@ class MeetingClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_web_socket_token(self, request):
+        """获取websocket鉴权token
+
+        获取websocket鉴权token。
+
+        :param CreateWebSocketTokenRequest request
+        :return: CreateWebSocketTokenResponse
+        """
+        return self.create_web_socket_token_with_http_info(request)
+
+    def create_web_socket_token_with_http_info(self, request):
+        """获取websocket鉴权token
+
+        获取websocket鉴权token。
+
+        :param CreateWebSocketTokenRequest request
+        :return: CreateWebSocketTokenResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/wsToken',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateWebSocketTokenResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_attendees(self, request):
         """删除与会者
 
@@ -2170,7 +2233,7 @@ class MeetingClient(Client):
         :return: DeleteCorpResponse
         """
 
-        all_params = ['id', 'x_request_id', 'accept_language', 'force_delete']
+        all_params = ['id', 'x_request_id', 'accept_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2183,8 +2246,6 @@ class MeetingClient(Client):
             path_params['id'] = local_var_params['id']
 
         query_params = []
-        if 'force_delete' in local_var_params:
-            query_params.append(('forceDelete', local_var_params['force_delete']))
 
         header_params = {}
         if 'x_request_id' in local_var_params:
@@ -2424,7 +2485,7 @@ class MeetingClient(Client):
 
 
     def delete_resource(self, request):
-        """删除企业资源
+        """SP管理员根据删除企业资源
 
         企业删除资源项，删除资源项后，企业资源总数会自动减少
 
@@ -2434,7 +2495,7 @@ class MeetingClient(Client):
         return self.delete_resource_with_http_info(request)
 
     def delete_resource_with_http_info(self, request):
-        """删除企业资源
+        """SP管理员根据删除企业资源
 
         企业删除资源项，删除资源项后，企业资源总数会自动减少
 
@@ -2442,7 +2503,7 @@ class MeetingClient(Client):
         :return: DeleteResourceResponse
         """
 
-        all_params = ['corp_id', 'resource_id_list', 'x_request_id', 'accept_language', 'force_edit_flag']
+        all_params = ['corp_id', 'resource_id_list', 'x_request_id', 'accept_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2455,8 +2516,6 @@ class MeetingClient(Client):
             path_params['corp_id'] = local_var_params['corp_id']
 
         query_params = []
-        if 'force_edit_flag' in local_var_params:
-            query_params.append(('forceEditFlag', local_var_params['force_edit_flag']))
 
         header_params = {}
         if 'x_request_id' in local_var_params:
@@ -2829,6 +2888,73 @@ class MeetingClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='InviteParticipantResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def invite_user(self, request):
+        """邀请用户
+
+        通过手机号码或者邮箱地址邀请用户加入企业。 * 若被邀请用户在华为云会议系统中不存在，则：   - 华为云会议免费版和华为云会议标准版发送短信/邮件邀请用户完成注册后加入企业。用户注册成功后，加入该企业。   - 华为云会议旗舰版在企业内直接添加该用户。用户会收到华为云会议的初始密码，用户第一次以手机号或者邮箱登录时，需要修改密码。 * 若被邀请用户在华为云会议系统中存在，则该用户会收到短信或者邮件确认。确认完成后改用户加入企业内。该用户的密码保持原来的密码不变。 
+
+        :param InviteUserRequest request
+        :return: InviteUserResponse
+        """
+        return self.invite_user_with_http_info(request)
+
+    def invite_user_with_http_info(self, request):
+        """邀请用户
+
+        通过手机号码或者邮箱地址邀请用户加入企业。 * 若被邀请用户在华为云会议系统中不存在，则：   - 华为云会议免费版和华为云会议标准版发送短信/邮件邀请用户完成注册后加入企业。用户注册成功后，加入该企业。   - 华为云会议旗舰版在企业内直接添加该用户。用户会收到华为云会议的初始密码，用户第一次以手机号或者邮箱登录时，需要修改密码。 * 若被邀请用户在华为云会议系统中存在，则该用户会收到短信或者邮件确认。确认完成后改用户加入企业内。该用户的密码保持原来的密码不变。 
+
+        :param InviteUserRequest request
+        :return: InviteUserResponse
+        """
+
+        all_params = ['user_dto', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/dcs/corp/member/add',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='InviteUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3441,7 +3567,7 @@ class MeetingClient(Client):
 
 
     def reset_activecode(self, request):
-        """重置激活码
+        """企业管理员重置硬终端激活码
 
         当硬终端激活码失效时，企业管理员可以通过该接口重置激活码，使用重新获取的激活码激活终端，每24小时可重新激活5次。
 
@@ -3451,7 +3577,7 @@ class MeetingClient(Client):
         return self.reset_activecode_with_http_info(request)
 
     def reset_activecode_with_http_info(self, request):
-        """重置激活码
+        """企业管理员重置硬终端激活码
 
         当硬终端激活码失效时，企业管理员可以通过该接口重置激活码，使用重新获取的激活码激活终端，每24小时可重新激活5次。
 
@@ -4742,6 +4868,71 @@ class MeetingClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def search_member_vmr_by_cloud_link(self, request):
+        """查询用户VMR列表
+
+        查询用户VMR列表。
+
+        :param SearchMemberVmrByCloudLinkRequest request
+        :return: SearchMemberVmrByCloudLinkResponse
+        """
+        return self.search_member_vmr_by_cloud_link_with_http_info(request)
+
+    def search_member_vmr_by_cloud_link_with_http_info(self, request):
+        """查询用户VMR列表
+
+        查询用户VMR列表。
+
+        :param SearchMemberVmrByCloudLinkRequest request
+        :return: SearchMemberVmrByCloudLinkResponse
+        """
+
+        all_params = ['x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/dcs/member/vmrinfo',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchMemberVmrByCloudLinkResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def search_online_meetings(self, request):
         """查询在线会议列表
 
@@ -5041,9 +5232,9 @@ class MeetingClient(Client):
 
 
     def search_resource(self, request):
-        """分页查询企业资源
+        """SP管理员根据分页查询企业资源
 
-        sp根据条件查询企业的资源项
+        SP根据条件查询企业的资源项
 
         :param SearchResourceRequest request
         :return: SearchResourceResponse
@@ -5051,9 +5242,9 @@ class MeetingClient(Client):
         return self.search_resource_with_http_info(request)
 
     def search_resource_with_http_info(self, request):
-        """分页查询企业资源
+        """SP管理员根据分页查询企业资源
 
-        sp根据条件查询企业的资源项
+        SP根据条件查询企业的资源项
 
         :param SearchResourceRequest request
         :return: SearchResourceResponse
@@ -5124,9 +5315,9 @@ class MeetingClient(Client):
 
 
     def search_resource_op_record(self, request):
-        """分页查询企业资源操作记录
+        """SP管理员根据分页查询企业资源操作记录
 
-        sp根据条件查询企业的资源操作记录，支持根据resourceId模糊搜索
+        SP根据根据条件查询企业的资源操作记录，支持根据resourceId模糊搜索
 
         :param SearchResourceOpRecordRequest request
         :return: SearchResourceOpRecordResponse
@@ -5134,9 +5325,9 @@ class MeetingClient(Client):
         return self.search_resource_op_record_with_http_info(request)
 
     def search_resource_op_record_with_http_info(self, request):
-        """分页查询企业资源操作记录
+        """SP管理员根据分页查询企业资源操作记录
 
-        sp根据条件查询企业的资源操作记录，支持根据resourceId模糊搜索
+        SP根据根据条件查询企业的资源操作记录，支持根据resourceId模糊搜索
 
         :param SearchResourceOpRecordRequest request
         :return: SearchResourceOpRecordResponse
@@ -5627,7 +5818,7 @@ class MeetingClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/mmc/control/conferences/display/customMultiPicture',
+            resource_path='/v1/mmc/control/conferences/display/',
             method='PUT',
             path_params=path_params,
             query_params=query_params,
@@ -7273,6 +7464,73 @@ class MeetingClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_recording_file_download_urls(self, request):
+        """查询录制文件下载链接
+
+        查询某个录制文件下载链接。
+
+        :param ShowRecordingFileDownloadUrlsRequest request
+        :return: ShowRecordingFileDownloadUrlsResponse
+        """
+        return self.show_recording_file_download_urls_with_http_info(request)
+
+    def show_recording_file_download_urls_with_http_info(self, request):
+        """查询录制文件下载链接
+
+        查询某个录制文件下载链接。
+
+        :param ShowRecordingFileDownloadUrlsRequest request
+        :return: ShowRecordingFileDownloadUrlsResponse
+        """
+
+        all_params = ['conf_uuid', 'x_authorization_type', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conf_uuid' in local_var_params:
+            query_params.append(('confUUID', local_var_params['conf_uuid']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/record/downloadurls',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowRecordingFileDownloadUrlsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_region_info_of_meeting(self, request):
         """查询会议所在区域信息
 
@@ -7400,7 +7658,7 @@ class MeetingClient(Client):
     def show_sp_resource(self, request):
         """SP管理员查询资源信息
 
-        sp管理员查询sp的所有资源，包括已使用的资源
+        SP管理员查询SP的所有资源，包括已使用的资源
 
         :param ShowSpResourceRequest request
         :return: ShowSpResourceResponse
@@ -7410,7 +7668,7 @@ class MeetingClient(Client):
     def show_sp_resource_with_http_info(self, request):
         """SP管理员查询资源信息
 
-        sp管理员查询sp的所有资源，包括已使用的资源
+        SP管理员查询SP的所有资源，包括已使用的资源
 
         :param ShowSpResourceRequest request
         :return: ShowSpResourceResponse
@@ -8488,7 +8746,7 @@ class MeetingClient(Client):
 
 
     def update_resource(self, request):
-        """修改企业资源
+        """SP管理员根据修改企业资源
 
         企业修改资源的过期时间、停用状态
 
@@ -8498,7 +8756,7 @@ class MeetingClient(Client):
         return self.update_resource_with_http_info(request)
 
     def update_resource_with_http_info(self, request):
-        """修改企业资源
+        """SP管理员根据修改企业资源
 
         企业修改资源的过期时间、停用状态
 
@@ -8506,7 +8764,7 @@ class MeetingClient(Client):
         :return: UpdateResourceResponse
         """
 
-        all_params = ['corp_id', 'resource_list', 'x_request_id', 'accept_language', 'force_edit_flag']
+        all_params = ['corp_id', 'resource_list', 'x_request_id', 'accept_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -8519,8 +8777,6 @@ class MeetingClient(Client):
             path_params['corp_id'] = local_var_params['corp_id']
 
         query_params = []
-        if 'force_edit_flag' in local_var_params:
-            query_params.append(('forceEditFlag', local_var_params['force_edit_flag']))
 
         header_params = {}
         if 'x_request_id' in local_var_params:
@@ -8552,6 +8808,73 @@ class MeetingClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateResourceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_started_conf_config(self, request):
+        """会中修改配置
+
+        会中修改配置。
+
+        :param UpdateStartedConfConfigRequest request
+        :return: UpdateStartedConfConfigResponse
+        """
+        return self.update_started_conf_config_with_http_info(request)
+
+    def update_started_conf_config_with_http_info(self, request):
+        """会中修改配置
+
+        会中修改配置。
+
+        :param UpdateStartedConfConfigRequest request
+        :return: UpdateStartedConfConfigResponse
+        """
+
+        all_params = ['conference_id', 'x_conference_authorization', 'update_started_config_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/updateStartedConfConfig',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateStartedConfConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -8688,6 +9011,284 @@ class MeetingClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateUserResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def search_qos_history_meetings(self, request):
+        """查询QoS历史会议列表
+
+        * 查询企业内QoS历史会议列表。 * 支持按照时间范围查询，可查询最近3个月内数据。 * 权限角色=旗舰版企业 + 管理员。
+
+        :param SearchQosHistoryMeetingsRequest request
+        :return: SearchQosHistoryMeetingsResponse
+        """
+        return self.search_qos_history_meetings_with_http_info(request)
+
+    def search_qos_history_meetings_with_http_info(self, request):
+        """查询QoS历史会议列表
+
+        * 查询企业内QoS历史会议列表。 * 支持按照时间范围查询，可查询最近3个月内数据。 * 权限角色=旗舰版企业 + 管理员。
+
+        :param SearchQosHistoryMeetingsRequest request
+        :return: SearchQosHistoryMeetingsResponse
+        """
+
+        all_params = ['start_date', 'end_date', 'offset', 'limit', 'search_key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_date' in local_var_params:
+            query_params.append(('startDate', local_var_params['start_date']))
+        if 'end_date' in local_var_params:
+            query_params.append(('endDate', local_var_params['end_date']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/metrics/conferences/history',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchQosHistoryMeetingsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def search_qos_online_meetings(self, request):
+        """查询QoS在线会议列表
+
+        * 查询企业内QoS在线会议列表。 * 权限角色=旗舰版企业 + 管理员。
+
+        :param SearchQosOnlineMeetingsRequest request
+        :return: SearchQosOnlineMeetingsResponse
+        """
+        return self.search_qos_online_meetings_with_http_info(request)
+
+    def search_qos_online_meetings_with_http_info(self, request):
+        """查询QoS在线会议列表
+
+        * 查询企业内QoS在线会议列表。 * 权限角色=旗舰版企业 + 管理员。
+
+        :param SearchQosOnlineMeetingsRequest request
+        :return: SearchQosOnlineMeetingsResponse
+        """
+
+        all_params = ['offset', 'limit', 'search_key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/metrics/conferences/online',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchQosOnlineMeetingsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def search_qos_participant_detail(self, request):
+        """查询与会者的QoS数据
+
+        * 查询企业内指定与会者的QoS数据，按照音频，视频，屏幕共享，CPU分类查询QoS数据。 * QoS数据的打点周期为5秒。 * 权限角色=旗舰版企业 + 管理员。
+
+        :param SearchQosParticipantDetailRequest request
+        :return: SearchQosParticipantDetailResponse
+        """
+        return self.search_qos_participant_detail_with_http_info(request)
+
+    def search_qos_participant_detail_with_http_info(self, request):
+        """查询与会者的QoS数据
+
+        * 查询企业内指定与会者的QoS数据，按照音频，视频，屏幕共享，CPU分类查询QoS数据。 * QoS数据的打点周期为5秒。 * 权限角色=旗舰版企业 + 管理员。
+
+        :param SearchQosParticipantDetailRequest request
+        :return: SearchQosParticipantDetailResponse
+        """
+
+        all_params = ['conf_uuid', 'conf_type', 'participant_id', 'qos_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conf_uuid' in local_var_params:
+            query_params.append(('confUUID', local_var_params['conf_uuid']))
+        if 'conf_type' in local_var_params:
+            query_params.append(('confType', local_var_params['conf_type']))
+        if 'participant_id' in local_var_params:
+            query_params.append(('participantID', local_var_params['participant_id']))
+        if 'qos_type' in local_var_params:
+            query_params.append(('qosType', local_var_params['qos_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/metrics/conference/participant/qos',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchQosParticipantDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def search_qos_participants(self, request):
+        """查询QoS会议与会者列表
+
+        * 查询企业内QoS会议与会者列表。 * 权限角色=旗舰版企业 + 管理员。
+
+        :param SearchQosParticipantsRequest request
+        :return: SearchQosParticipantsResponse
+        """
+        return self.search_qos_participants_with_http_info(request)
+
+    def search_qos_participants_with_http_info(self, request):
+        """查询QoS会议与会者列表
+
+        * 查询企业内QoS会议与会者列表。 * 权限角色=旗舰版企业 + 管理员。
+
+        :param SearchQosParticipantsRequest request
+        :return: SearchQosParticipantsResponse
+        """
+
+        all_params = ['conf_uuid', 'conf_type', 'offset', 'limit', 'search_key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conf_uuid' in local_var_params:
+            query_params.append(('confUUID', local_var_params['conf_uuid']))
+        if 'conf_type' in local_var_params:
+            query_params.append(('confType', local_var_params['conf_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/metrics/conference/participants',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchQosParticipantsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

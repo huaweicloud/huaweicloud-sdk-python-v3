@@ -64,6 +64,7 @@ class ListComponentsRequest:
     def application_id(self):
         """Gets the application_id of this ListComponentsRequest.
 
+        应用ID。
 
         :return: The application_id of this ListComponentsRequest.
         :rtype: str
@@ -74,6 +75,7 @@ class ListComponentsRequest:
     def application_id(self, application_id):
         """Sets the application_id of this ListComponentsRequest.
 
+        应用ID。
 
         :param application_id: The application_id of this ListComponentsRequest.
         :type: str
@@ -84,6 +86,7 @@ class ListComponentsRequest:
     def limit(self):
         """Gets the limit of this ListComponentsRequest.
 
+        指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
         :return: The limit of this ListComponentsRequest.
         :rtype: int
@@ -94,6 +97,7 @@ class ListComponentsRequest:
     def limit(self, limit):
         """Sets the limit of this ListComponentsRequest.
 
+        指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
         :param limit: The limit of this ListComponentsRequest.
         :type: int
@@ -104,6 +108,7 @@ class ListComponentsRequest:
     def offset(self):
         """Gets the offset of this ListComponentsRequest.
 
+        指定查询偏移量，默认偏移量为0.
 
         :return: The offset of this ListComponentsRequest.
         :rtype: int
@@ -114,6 +119,7 @@ class ListComponentsRequest:
     def offset(self, offset):
         """Sets the offset of this ListComponentsRequest.
 
+        指定查询偏移量，默认偏移量为0.
 
         :param offset: The offset of this ListComponentsRequest.
         :type: int
@@ -124,6 +130,7 @@ class ListComponentsRequest:
     def order_by(self):
         """Gets the order_by of this ListComponentsRequest.
 
+        排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
         :return: The order_by of this ListComponentsRequest.
         :rtype: str
@@ -134,6 +141,7 @@ class ListComponentsRequest:
     def order_by(self, order_by):
         """Sets the order_by of this ListComponentsRequest.
 
+        排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
         :param order_by: The order_by of this ListComponentsRequest.
         :type: str
@@ -144,6 +152,7 @@ class ListComponentsRequest:
     def order(self):
         """Gets the order of this ListComponentsRequest.
 
+        desc/asc，默认desc。
 
         :return: The order of this ListComponentsRequest.
         :rtype: str
@@ -154,6 +163,7 @@ class ListComponentsRequest:
     def order(self, order):
         """Sets the order of this ListComponentsRequest.
 
+        desc/asc，默认desc。
 
         :param order: The order of this ListComponentsRequest.
         :type: str

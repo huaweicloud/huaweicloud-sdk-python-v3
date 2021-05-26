@@ -35,7 +35,7 @@ class ListRemuxTaskResponse(SdkResponse):
     def __init__(self, total=None, tasks=None):
         """ListRemuxTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListRemuxTaskResponse, self).__init__()
 
         self._total = None
         self._tasks = None

@@ -48,6 +48,7 @@ class ShowInstanceTopicDetailRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowInstanceTopicDetailRequest.
 
+        实例ID。
 
         :return: The instance_id of this ShowInstanceTopicDetailRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowInstanceTopicDetailRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowInstanceTopicDetailRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ShowInstanceTopicDetailRequest.
         :type: str
@@ -68,6 +70,7 @@ class ShowInstanceTopicDetailRequest:
     def topic(self):
         """Gets the topic of this ShowInstanceTopicDetailRequest.
 
+        Topic名称。
 
         :return: The topic of this ShowInstanceTopicDetailRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowInstanceTopicDetailRequest:
     def topic(self, topic):
         """Sets the topic of this ShowInstanceTopicDetailRequest.
 
+        Topic名称。
 
         :param topic: The topic of this ShowInstanceTopicDetailRequest.
         :type: str

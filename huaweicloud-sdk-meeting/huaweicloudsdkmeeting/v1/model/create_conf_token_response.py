@@ -37,7 +37,7 @@ class CreateConfTokenResponse(SdkResponse):
     def __init__(self, data=None, address_token=None, gloabl_public_ip=None):
         """CreateConfTokenResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateConfTokenResponse, self).__init__()
 
         self._data = None
         self._address_token = None

@@ -33,7 +33,7 @@ class CreateMergeChannelsTaskResponse(SdkResponse):
     def __init__(self, task_id=None):
         """CreateMergeChannelsTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateMergeChannelsTaskResponse, self).__init__()
 
         self._task_id = None
         self.discriminator = None

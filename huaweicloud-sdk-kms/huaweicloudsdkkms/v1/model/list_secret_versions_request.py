@@ -44,6 +44,7 @@ class ListSecretVersionsRequest:
     def secret_id(self):
         """Gets the secret_id of this ListSecretVersionsRequest.
 
+        凭据的资源标识符。
 
         :return: The secret_id of this ListSecretVersionsRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListSecretVersionsRequest:
     def secret_id(self, secret_id):
         """Sets the secret_id of this ListSecretVersionsRequest.
 
+        凭据的资源标识符。
 
         :param secret_id: The secret_id of this ListSecretVersionsRequest.
         :type: str

@@ -52,6 +52,7 @@ class DeleteTagRequest:
     def key_id(self):
         """Gets the key_id of this DeleteTagRequest.
 
+        密钥ID
 
         :return: The key_id of this DeleteTagRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class DeleteTagRequest:
     def key_id(self, key_id):
         """Sets the key_id of this DeleteTagRequest.
 
+        密钥ID
 
         :param key_id: The key_id of this DeleteTagRequest.
         :type: str
@@ -72,6 +74,7 @@ class DeleteTagRequest:
     def key(self):
         """Gets the key of this DeleteTagRequest.
 
+        标签键的值
 
         :return: The key of this DeleteTagRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class DeleteTagRequest:
     def key(self, key):
         """Sets the key of this DeleteTagRequest.
 
+        标签键的值
 
         :param key: The key of this DeleteTagRequest.
         :type: str
@@ -92,6 +96,7 @@ class DeleteTagRequest:
     def version_id(self):
         """Gets the version_id of this DeleteTagRequest.
 
+        API版本号
 
         :return: The version_id of this DeleteTagRequest.
         :rtype: str
@@ -102,6 +107,7 @@ class DeleteTagRequest:
     def version_id(self, version_id):
         """Sets the version_id of this DeleteTagRequest.
 
+        API版本号
 
         :param version_id: The version_id of this DeleteTagRequest.
         :type: str

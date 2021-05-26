@@ -49,6 +49,7 @@ class UpdatePortRequest:
     def port_id(self):
         """Gets the port_id of this UpdatePortRequest.
 
+        端口ID
 
         :return: The port_id of this UpdatePortRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdatePortRequest:
     def port_id(self, port_id):
         """Sets the port_id of this UpdatePortRequest.
 
+        端口ID
 
         :param port_id: The port_id of this UpdatePortRequest.
         :type: str

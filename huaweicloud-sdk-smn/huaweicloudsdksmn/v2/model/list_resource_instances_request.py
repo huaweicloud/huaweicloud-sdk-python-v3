@@ -49,6 +49,7 @@ class ListResourceInstancesRequest:
     def resource_type(self):
         """Gets the resource_type of this ListResourceInstancesRequest.
 
+        资源类型，目前有:  smn_topic，主题  smn_sms，短信  smn_application，移动推送
 
         :return: The resource_type of this ListResourceInstancesRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ListResourceInstancesRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListResourceInstancesRequest.
 
+        资源类型，目前有:  smn_topic，主题  smn_sms，短信  smn_application，移动推送
 
         :param resource_type: The resource_type of this ListResourceInstancesRequest.
         :type: str

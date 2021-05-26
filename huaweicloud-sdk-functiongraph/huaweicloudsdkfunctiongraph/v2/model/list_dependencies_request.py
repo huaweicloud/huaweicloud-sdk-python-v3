@@ -65,6 +65,7 @@ class ListDependenciesRequest:
     def dependency_type(self):
         """Gets the dependency_type of this ListDependenciesRequest.
 
+        依赖包类型public：公开,private:私有，all：全部。缺省时查询全量。
 
         :return: The dependency_type of this ListDependenciesRequest.
         :rtype: str
@@ -75,6 +76,7 @@ class ListDependenciesRequest:
     def dependency_type(self, dependency_type):
         """Sets the dependency_type of this ListDependenciesRequest.
 
+        依赖包类型public：公开,private:私有，all：全部。缺省时查询全量。
 
         :param dependency_type: The dependency_type of this ListDependenciesRequest.
         :type: str
@@ -85,6 +87,7 @@ class ListDependenciesRequest:
     def runtime(self):
         """Gets the runtime of this ListDependenciesRequest.
 
+        运行时语言
 
         :return: The runtime of this ListDependenciesRequest.
         :rtype: str
@@ -95,6 +98,7 @@ class ListDependenciesRequest:
     def runtime(self, runtime):
         """Sets the runtime of this ListDependenciesRequest.
 
+        运行时语言
 
         :param runtime: The runtime of this ListDependenciesRequest.
         :type: str
@@ -105,6 +109,7 @@ class ListDependenciesRequest:
     def name(self):
         """Gets the name of this ListDependenciesRequest.
 
+        依赖包名称。
 
         :return: The name of this ListDependenciesRequest.
         :rtype: str
@@ -115,6 +120,7 @@ class ListDependenciesRequest:
     def name(self, name):
         """Sets the name of this ListDependenciesRequest.
 
+        依赖包名称。
 
         :param name: The name of this ListDependenciesRequest.
         :type: str
@@ -125,6 +131,7 @@ class ListDependenciesRequest:
     def marker(self):
         """Gets the marker of this ListDependenciesRequest.
 
+        上一次查询依赖包的最后记录位置，默认为\"0\"。
 
         :return: The marker of this ListDependenciesRequest.
         :rtype: str
@@ -135,6 +142,7 @@ class ListDependenciesRequest:
     def marker(self, marker):
         """Sets the marker of this ListDependenciesRequest.
 
+        上一次查询依赖包的最后记录位置，默认为\"0\"。
 
         :param marker: The marker of this ListDependenciesRequest.
         :type: str
@@ -145,6 +153,7 @@ class ListDependenciesRequest:
     def limit(self):
         """Gets the limit of this ListDependenciesRequest.
 
+        本次查询可获取的依赖包的最大数目，默认为\"400\"。
 
         :return: The limit of this ListDependenciesRequest.
         :rtype: str
@@ -155,6 +164,7 @@ class ListDependenciesRequest:
     def limit(self, limit):
         """Sets the limit of this ListDependenciesRequest.
 
+        本次查询可获取的依赖包的最大数目，默认为\"400\"。
 
         :param limit: The limit of this ListDependenciesRequest.
         :type: str

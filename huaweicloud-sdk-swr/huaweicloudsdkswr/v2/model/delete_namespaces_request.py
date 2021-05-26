@@ -44,6 +44,7 @@ class DeleteNamespacesRequest:
     def namespace(self):
         """Gets the namespace of this DeleteNamespacesRequest.
 
+        组织名称
 
         :return: The namespace of this DeleteNamespacesRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteNamespacesRequest:
     def namespace(self, namespace):
         """Sets the namespace of this DeleteNamespacesRequest.
 
+        组织名称
 
         :param namespace: The namespace of this DeleteNamespacesRequest.
         :type: str

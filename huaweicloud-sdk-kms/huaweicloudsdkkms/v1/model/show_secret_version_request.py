@@ -48,6 +48,7 @@ class ShowSecretVersionRequest:
     def secret_id(self):
         """Gets the secret_id of this ShowSecretVersionRequest.
 
+        凭据的资源标识符。
 
         :return: The secret_id of this ShowSecretVersionRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowSecretVersionRequest:
     def secret_id(self, secret_id):
         """Sets the secret_id of this ShowSecretVersionRequest.
 
+        凭据的资源标识符。
 
         :param secret_id: The secret_id of this ShowSecretVersionRequest.
         :type: str
@@ -68,6 +70,7 @@ class ShowSecretVersionRequest:
     def version_id(self):
         """Gets the version_id of this ShowSecretVersionRequest.
 
+        凭据的版本标识符。
 
         :return: The version_id of this ShowSecretVersionRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowSecretVersionRequest:
     def version_id(self, version_id):
         """Sets the version_id of this ShowSecretVersionRequest.
 
+        凭据的版本标识符。
 
         :param version_id: The version_id of this ShowSecretVersionRequest.
         :type: str

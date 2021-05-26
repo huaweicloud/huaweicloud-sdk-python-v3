@@ -61,7 +61,7 @@ class UpdateFunctionCodeResponse(SdkResponse):
     def __init__(self, func_urn=None, func_name=None, domain_id=None, runtime=None, code_type=None, code_url=None, code_filename=None, code_size=None, digest=None, last_modified=None, func_code=None, concurrency=None, depend_list=None, strategy_config=None, dependencies=None):
         """UpdateFunctionCodeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateFunctionCodeResponse, self).__init__()
 
         self._func_urn = None
         self._func_name = None

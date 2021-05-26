@@ -53,6 +53,7 @@ class DeleteComponentRequest:
     def application_id(self):
         """Gets the application_id of this DeleteComponentRequest.
 
+        应用ID。
 
         :return: The application_id of this DeleteComponentRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class DeleteComponentRequest:
     def application_id(self, application_id):
         """Sets the application_id of this DeleteComponentRequest.
 
+        应用ID。
 
         :param application_id: The application_id of this DeleteComponentRequest.
         :type: str
@@ -73,6 +75,7 @@ class DeleteComponentRequest:
     def component_id(self):
         """Gets the component_id of this DeleteComponentRequest.
 
+        组件ID。
 
         :return: The component_id of this DeleteComponentRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class DeleteComponentRequest:
     def component_id(self, component_id):
         """Sets the component_id of this DeleteComponentRequest.
 
+        组件ID。
 
         :param component_id: The component_id of this DeleteComponentRequest.
         :type: str
@@ -93,6 +97,7 @@ class DeleteComponentRequest:
     def force(self):
         """Gets the force of this DeleteComponentRequest.
 
+        是否强制删除。
 
         :return: The force of this DeleteComponentRequest.
         :rtype: bool
@@ -103,6 +108,7 @@ class DeleteComponentRequest:
     def force(self, force):
         """Sets the force of this DeleteComponentRequest.
 
+        是否强制删除。
 
         :param force: The force of this DeleteComponentRequest.
         :type: bool

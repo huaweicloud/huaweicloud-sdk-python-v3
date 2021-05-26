@@ -44,6 +44,7 @@ class CancelSubscriptionRequest:
     def subscription_urn(self):
         """Gets the subscription_urn of this CancelSubscriptionRequest.
 
+        Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
 
         :return: The subscription_urn of this CancelSubscriptionRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class CancelSubscriptionRequest:
     def subscription_urn(self, subscription_urn):
         """Sets the subscription_urn of this CancelSubscriptionRequest.
 
+        Topic的唯一的资源标识，可通过[查询主题列表](https://support.huaweicloud.com/api-smn/smn_api_51004.html)获取该标识。
 
         :param subscription_urn: The subscription_urn of this CancelSubscriptionRequest.
         :type: str

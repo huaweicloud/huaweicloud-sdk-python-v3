@@ -48,6 +48,7 @@ class DeleteTranscodingsTemplateRequest:
     def domain(self):
         """Gets the domain of this DeleteTranscodingsTemplateRequest.
 
+        播放域名
 
         :return: The domain of this DeleteTranscodingsTemplateRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteTranscodingsTemplateRequest:
     def domain(self, domain):
         """Sets the domain of this DeleteTranscodingsTemplateRequest.
 
+        播放域名
 
         :param domain: The domain of this DeleteTranscodingsTemplateRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteTranscodingsTemplateRequest:
     def app_name(self):
         """Gets the app_name of this DeleteTranscodingsTemplateRequest.
 
+        应用名称
 
         :return: The app_name of this DeleteTranscodingsTemplateRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteTranscodingsTemplateRequest:
     def app_name(self, app_name):
         """Sets the app_name of this DeleteTranscodingsTemplateRequest.
 
+        应用名称
 
         :param app_name: The app_name of this DeleteTranscodingsTemplateRequest.
         :type: str

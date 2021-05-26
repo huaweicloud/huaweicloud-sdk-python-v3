@@ -49,6 +49,7 @@ class ShowBugsPerDeveloperRequest:
     def project_id(self):
         """Gets the project_id of this ShowBugsPerDeveloperRequest.
 
+        项目ID
 
         :return: The project_id of this ShowBugsPerDeveloperRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ShowBugsPerDeveloperRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ShowBugsPerDeveloperRequest.
 
+        项目ID
 
         :param project_id: The project_id of this ShowBugsPerDeveloperRequest.
         :type: str

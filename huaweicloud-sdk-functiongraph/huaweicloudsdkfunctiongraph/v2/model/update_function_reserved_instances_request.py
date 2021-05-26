@@ -49,6 +49,7 @@ class UpdateFunctionReservedInstancesRequest:
     def function_urn(self):
         """Gets the function_urn of this UpdateFunctionReservedInstancesRequest.
 
+        函数的URN（Uniform Resource Name），唯一标识函数。
 
         :return: The function_urn of this UpdateFunctionReservedInstancesRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateFunctionReservedInstancesRequest:
     def function_urn(self, function_urn):
         """Sets the function_urn of this UpdateFunctionReservedInstancesRequest.
 
+        函数的URN（Uniform Resource Name），唯一标识函数。
 
         :param function_urn: The function_urn of this UpdateFunctionReservedInstancesRequest.
         :type: str

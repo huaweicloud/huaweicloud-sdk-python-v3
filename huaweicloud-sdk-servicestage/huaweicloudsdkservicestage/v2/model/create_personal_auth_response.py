@@ -33,7 +33,7 @@ class CreatePersonalAuthResponse(SdkResponse):
     def __init__(self, authorization=None):
         """CreatePersonalAuthResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreatePersonalAuthResponse, self).__init__()
 
         self._authorization = None
         self.discriminator = None

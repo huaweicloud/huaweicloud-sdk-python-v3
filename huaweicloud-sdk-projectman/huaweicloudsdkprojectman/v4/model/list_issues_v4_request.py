@@ -49,6 +49,7 @@ class ListIssuesV4Request:
     def project_id(self):
         """Gets the project_id of this ListIssuesV4Request.
 
+        项目id
 
         :return: The project_id of this ListIssuesV4Request.
         :rtype: str
@@ -59,6 +60,7 @@ class ListIssuesV4Request:
     def project_id(self, project_id):
         """Sets the project_id of this ListIssuesV4Request.
 
+        项目id
 
         :param project_id: The project_id of this ListIssuesV4Request.
         :type: str

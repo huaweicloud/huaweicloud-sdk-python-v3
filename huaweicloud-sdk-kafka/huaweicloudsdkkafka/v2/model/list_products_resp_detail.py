@@ -139,7 +139,7 @@ class ListProductsRespDetail:
     def partition_num(self):
         """Gets the partition_num of this ListProductsRespDetail.
 
-        Kafka实例的最大Topic数。
+        Kafka实例的分区数量。
 
         :return: The partition_num of this ListProductsRespDetail.
         :rtype: str
@@ -150,7 +150,7 @@ class ListProductsRespDetail:
     def partition_num(self, partition_num):
         """Sets the partition_num of this ListProductsRespDetail.
 
-        Kafka实例的最大Topic数。
+        Kafka实例的分区数量。
 
         :param partition_num: The partition_num of this ListProductsRespDetail.
         :type: str

@@ -48,6 +48,7 @@ class DeleteRecordConfigRequest:
     def domain(self):
         """Gets the domain of this DeleteRecordConfigRequest.
 
+        直播播放域名
 
         :return: The domain of this DeleteRecordConfigRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteRecordConfigRequest:
     def domain(self, domain):
         """Sets the domain of this DeleteRecordConfigRequest.
 
+        直播播放域名
 
         :param domain: The domain of this DeleteRecordConfigRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteRecordConfigRequest:
     def app_name(self):
         """Gets the app_name of this DeleteRecordConfigRequest.
 
+        流应用名称
 
         :return: The app_name of this DeleteRecordConfigRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteRecordConfigRequest:
     def app_name(self, app_name):
         """Sets the app_name of this DeleteRecordConfigRequest.
 
+        流应用名称
 
         :param app_name: The app_name of this DeleteRecordConfigRequest.
         :type: str

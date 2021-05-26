@@ -53,6 +53,7 @@ class DeleteDomainMappingRequest:
     def specify_project(self):
         """Gets the specify_project of this DeleteDomainMappingRequest.
 
+        op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
 
         :return: The specify_project of this DeleteDomainMappingRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class DeleteDomainMappingRequest:
     def specify_project(self, specify_project):
         """Sets the specify_project of this DeleteDomainMappingRequest.
 
+        op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
 
         :param specify_project: The specify_project of this DeleteDomainMappingRequest.
         :type: str
@@ -73,6 +75,7 @@ class DeleteDomainMappingRequest:
     def pull_domain(self):
         """Gets the pull_domain of this DeleteDomainMappingRequest.
 
+        直播播放域名
 
         :return: The pull_domain of this DeleteDomainMappingRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class DeleteDomainMappingRequest:
     def pull_domain(self, pull_domain):
         """Sets the pull_domain of this DeleteDomainMappingRequest.
 
+        直播播放域名
 
         :param pull_domain: The pull_domain of this DeleteDomainMappingRequest.
         :type: str
@@ -93,6 +97,7 @@ class DeleteDomainMappingRequest:
     def push_domain(self):
         """Gets the push_domain of this DeleteDomainMappingRequest.
 
+        直播推流域名
 
         :return: The push_domain of this DeleteDomainMappingRequest.
         :rtype: str
@@ -103,6 +108,7 @@ class DeleteDomainMappingRequest:
     def push_domain(self, push_domain):
         """Sets the push_domain of this DeleteDomainMappingRequest.
 
+        直播推流域名
 
         :param push_domain: The push_domain of this DeleteDomainMappingRequest.
         :type: str

@@ -73,6 +73,7 @@ class ListRepositoryTagsRequest:
     def namespace(self):
         """Gets the namespace of this ListRepositoryTagsRequest.
 
+        组织名称
 
         :return: The namespace of this ListRepositoryTagsRequest.
         :rtype: str
@@ -83,6 +84,7 @@ class ListRepositoryTagsRequest:
     def namespace(self, namespace):
         """Sets the namespace of this ListRepositoryTagsRequest.
 
+        组织名称
 
         :param namespace: The namespace of this ListRepositoryTagsRequest.
         :type: str
@@ -93,6 +95,7 @@ class ListRepositoryTagsRequest:
     def repository(self):
         """Gets the repository of this ListRepositoryTagsRequest.
 
+        镜像仓库名称
 
         :return: The repository of this ListRepositoryTagsRequest.
         :rtype: str
@@ -103,6 +106,7 @@ class ListRepositoryTagsRequest:
     def repository(self, repository):
         """Sets the repository of this ListRepositoryTagsRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this ListRepositoryTagsRequest.
         :type: str
@@ -113,6 +117,7 @@ class ListRepositoryTagsRequest:
     def offset(self):
         """Gets the offset of this ListRepositoryTagsRequest.
 
+        起始索引。**注意：offset和limit参数需要配套使用** 
 
         :return: The offset of this ListRepositoryTagsRequest.
         :rtype: str
@@ -123,6 +128,7 @@ class ListRepositoryTagsRequest:
     def offset(self, offset):
         """Sets the offset of this ListRepositoryTagsRequest.
 
+        起始索引。**注意：offset和limit参数需要配套使用** 
 
         :param offset: The offset of this ListRepositoryTagsRequest.
         :type: str
@@ -133,6 +139,7 @@ class ListRepositoryTagsRequest:
     def limit(self):
         """Gets the limit of this ListRepositoryTagsRequest.
 
+        返回条数。**注意：offset和limit参数需要配套使用* 
 
         :return: The limit of this ListRepositoryTagsRequest.
         :rtype: str
@@ -143,6 +150,7 @@ class ListRepositoryTagsRequest:
     def limit(self, limit):
         """Sets the limit of this ListRepositoryTagsRequest.
 
+        返回条数。**注意：offset和limit参数需要配套使用* 
 
         :param limit: The limit of this ListRepositoryTagsRequest.
         :type: str
@@ -153,6 +161,7 @@ class ListRepositoryTagsRequest:
     def order_column(self):
         """Gets the order_column of this ListRepositoryTagsRequest.
 
+        按列排序，可设置为updated_at（按更新时间排序） 
 
         :return: The order_column of this ListRepositoryTagsRequest.
         :rtype: str
@@ -163,6 +172,7 @@ class ListRepositoryTagsRequest:
     def order_column(self, order_column):
         """Sets the order_column of this ListRepositoryTagsRequest.
 
+        按列排序，可设置为updated_at（按更新时间排序） 
 
         :param order_column: The order_column of this ListRepositoryTagsRequest.
         :type: str
@@ -173,6 +183,7 @@ class ListRepositoryTagsRequest:
     def order_type(self):
         """Gets the order_type of this ListRepositoryTagsRequest.
 
+        排序类型，可设置为desc（降序）、asc（升序） 
 
         :return: The order_type of this ListRepositoryTagsRequest.
         :rtype: str
@@ -183,6 +194,7 @@ class ListRepositoryTagsRequest:
     def order_type(self, order_type):
         """Sets the order_type of this ListRepositoryTagsRequest.
 
+        排序类型，可设置为desc（降序）、asc（升序） 
 
         :param order_type: The order_type of this ListRepositoryTagsRequest.
         :type: str
@@ -193,6 +205,7 @@ class ListRepositoryTagsRequest:
     def tag(self):
         """Gets the tag of this ListRepositoryTagsRequest.
 
+        镜像版本名
 
         :return: The tag of this ListRepositoryTagsRequest.
         :rtype: str
@@ -203,6 +216,7 @@ class ListRepositoryTagsRequest:
     def tag(self, tag):
         """Sets the tag of this ListRepositoryTagsRequest.
 
+        镜像版本名
 
         :param tag: The tag of this ListRepositoryTagsRequest.
         :type: str

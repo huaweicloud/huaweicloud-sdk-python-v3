@@ -99,7 +99,7 @@ class CreateFunctionVersionResponse(SdkResponse):
     def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, version_description=None, last_modified=None, func_vpc=None, mount_config=None, concurrency=None, depend_list=None, strategy_config=None, extend_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None):
         """CreateFunctionVersionResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateFunctionVersionResponse, self).__init__()
 
         self._func_urn = None
         self._func_name = None

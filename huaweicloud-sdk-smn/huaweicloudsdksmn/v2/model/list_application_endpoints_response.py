@@ -37,7 +37,7 @@ class ListApplicationEndpointsResponse(SdkResponse):
     def __init__(self, request_id=None, next_page_flag=None, endpoints=None):
         """ListApplicationEndpointsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListApplicationEndpointsResponse, self).__init__()
 
         self._request_id = None
         self._next_page_flag = None

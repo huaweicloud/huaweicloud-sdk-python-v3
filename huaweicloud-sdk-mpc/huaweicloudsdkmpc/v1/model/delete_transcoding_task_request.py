@@ -44,6 +44,7 @@ class DeleteTranscodingTaskRequest:
     def task_id(self):
         """Gets the task_id of this DeleteTranscodingTaskRequest.
 
+        创建转码任务成功时返回的任务ID 
 
         :return: The task_id of this DeleteTranscodingTaskRequest.
         :rtype: int
@@ -54,6 +55,7 @@ class DeleteTranscodingTaskRequest:
     def task_id(self, task_id):
         """Sets the task_id of this DeleteTranscodingTaskRequest.
 
+        创建转码任务成功时返回的任务ID 
 
         :param task_id: The task_id of this DeleteTranscodingTaskRequest.
         :type: int

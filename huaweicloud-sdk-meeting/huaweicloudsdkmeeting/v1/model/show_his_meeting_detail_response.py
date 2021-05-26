@@ -35,7 +35,7 @@ class ShowHisMeetingDetailResponse(SdkResponse):
     def __init__(self, conference_data=None, data=None):
         """ShowHisMeetingDetailResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowHisMeetingDetailResponse, self).__init__()
 
         self._conference_data = None
         self._data = None

@@ -61,7 +61,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def __init__(self, file_code=None, topic=None, file_id=None, file_name=None, file_size=None, thumbnail_file_id=None, thumbnail_file_name=None, thumbnail_file_size=None, pdf_file_id=None, pdf_file_name=None, pdf_file_size=None, file_url=None, thumbnail_url=None, pdf_url=None, creation_timestamp=None):
         """ShowMeetingFileResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowMeetingFileResponse, self).__init__()
 
         self._file_code = None
         self._topic = None

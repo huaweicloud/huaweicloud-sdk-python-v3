@@ -47,7 +47,7 @@ class ListTopicDetailsResponse(SdkResponse):
     def __init__(self, update_time=None, push_policy=None, create_time=None, name=None, topic_urn=None, display_name=None, request_id=None, enterprise_project_id=None):
         """ListTopicDetailsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListTopicDetailsResponse, self).__init__()
 
         self._update_time = None
         self._push_policy = None

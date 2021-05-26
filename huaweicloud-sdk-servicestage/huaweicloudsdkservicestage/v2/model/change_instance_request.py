@@ -57,6 +57,7 @@ class ChangeInstanceRequest:
     def application_id(self):
         """Gets the application_id of this ChangeInstanceRequest.
 
+        应用ID。
 
         :return: The application_id of this ChangeInstanceRequest.
         :rtype: str
@@ -67,6 +68,7 @@ class ChangeInstanceRequest:
     def application_id(self, application_id):
         """Sets the application_id of this ChangeInstanceRequest.
 
+        应用ID。
 
         :param application_id: The application_id of this ChangeInstanceRequest.
         :type: str
@@ -77,6 +79,7 @@ class ChangeInstanceRequest:
     def component_id(self):
         """Gets the component_id of this ChangeInstanceRequest.
 
+        组件ID。
 
         :return: The component_id of this ChangeInstanceRequest.
         :rtype: str
@@ -87,6 +90,7 @@ class ChangeInstanceRequest:
     def component_id(self, component_id):
         """Sets the component_id of this ChangeInstanceRequest.
 
+        组件ID。
 
         :param component_id: The component_id of this ChangeInstanceRequest.
         :type: str
@@ -97,6 +101,7 @@ class ChangeInstanceRequest:
     def instance_id(self):
         """Gets the instance_id of this ChangeInstanceRequest.
 
+        组件实例ID。
 
         :return: The instance_id of this ChangeInstanceRequest.
         :rtype: str
@@ -107,6 +112,7 @@ class ChangeInstanceRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ChangeInstanceRequest.
 
+        组件实例ID。
 
         :param instance_id: The instance_id of this ChangeInstanceRequest.
         :type: str

@@ -60,6 +60,7 @@ class ListApplicationsRequest:
     def offset(self):
         """Gets the offset of this ListApplicationsRequest.
 
+        偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
         :return: The offset of this ListApplicationsRequest.
         :rtype: int
@@ -70,6 +71,7 @@ class ListApplicationsRequest:
     def offset(self, offset):
         """Sets the offset of this ListApplicationsRequest.
 
+        偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
         :param offset: The offset of this ListApplicationsRequest.
         :type: int
@@ -80,6 +82,7 @@ class ListApplicationsRequest:
     def limit(self):
         """Gets the limit of this ListApplicationsRequest.
 
+        查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
         :return: The limit of this ListApplicationsRequest.
         :rtype: int
@@ -90,6 +93,7 @@ class ListApplicationsRequest:
     def limit(self, limit):
         """Sets the limit of this ListApplicationsRequest.
 
+        查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
         :param limit: The limit of this ListApplicationsRequest.
         :type: int
@@ -100,6 +104,7 @@ class ListApplicationsRequest:
     def name(self):
         """Gets the name of this ListApplicationsRequest.
 
+        检索应用名称。  支持后向模糊匹配，长度不得超过64个字符，只能包含英文字母、下划线和数字。
 
         :return: The name of this ListApplicationsRequest.
         :rtype: str
@@ -110,6 +115,7 @@ class ListApplicationsRequest:
     def name(self, name):
         """Sets the name of this ListApplicationsRequest.
 
+        检索应用名称。  支持后向模糊匹配，长度不得超过64个字符，只能包含英文字母、下划线和数字。
 
         :param name: The name of this ListApplicationsRequest.
         :type: str
@@ -120,6 +126,7 @@ class ListApplicationsRequest:
     def platform(self):
         """Gets the platform of this ListApplicationsRequest.
 
+        应用平台。  目前仅支持HMS、APNS、APNS_SANDBOX。  HMS是为开发者提供的消息推送平台。  APNS和APNS_SANDBOX是用于推送iOS消息的服务平台。
 
         :return: The platform of this ListApplicationsRequest.
         :rtype: str
@@ -130,6 +137,7 @@ class ListApplicationsRequest:
     def platform(self, platform):
         """Sets the platform of this ListApplicationsRequest.
 
+        应用平台。  目前仅支持HMS、APNS、APNS_SANDBOX。  HMS是为开发者提供的消息推送平台。  APNS和APNS_SANDBOX是用于推送iOS消息的服务平台。
 
         :param platform: The platform of this ListApplicationsRequest.
         :type: str

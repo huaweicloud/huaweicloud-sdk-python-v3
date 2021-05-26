@@ -35,7 +35,7 @@ class ListDomainTrafficSummaryResponse(SdkResponse):
     def __init__(self, traffic_list=None, x_request_id=None):
         """ListDomainTrafficSummaryResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListDomainTrafficSummaryResponse, self).__init__()
 
         self._traffic_list = None
         self._x_request_id = None

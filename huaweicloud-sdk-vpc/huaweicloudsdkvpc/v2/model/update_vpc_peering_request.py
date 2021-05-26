@@ -49,6 +49,7 @@ class UpdateVpcPeeringRequest:
     def peering_id(self):
         """Gets the peering_id of this UpdateVpcPeeringRequest.
 
+        对等连接ID
 
         :return: The peering_id of this UpdateVpcPeeringRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateVpcPeeringRequest:
     def peering_id(self, peering_id):
         """Sets the peering_id of this UpdateVpcPeeringRequest.
 
+        对等连接ID
 
         :param peering_id: The peering_id of this UpdateVpcPeeringRequest.
         :type: str

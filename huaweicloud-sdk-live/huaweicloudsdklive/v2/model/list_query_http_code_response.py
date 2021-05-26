@@ -35,7 +35,7 @@ class ListQueryHttpCodeResponse(SdkResponse):
     def __init__(self, data_series=None, x_request_id=None):
         """ListQueryHttpCodeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListQueryHttpCodeResponse, self).__init__()
 
         self._data_series = None
         self._x_request_id = None

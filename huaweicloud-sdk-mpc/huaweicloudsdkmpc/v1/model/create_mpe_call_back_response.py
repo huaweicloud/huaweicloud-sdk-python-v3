@@ -31,7 +31,7 @@ class CreateMpeCallBackResponse(SdkResponse):
     def __init__(self):
         """CreateMpeCallBackResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateMpeCallBackResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

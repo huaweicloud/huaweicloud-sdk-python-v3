@@ -33,7 +33,7 @@ class CreateQualityEnhanceTemplateResponse(SdkResponse):
     def __init__(self, template_id=None):
         """CreateQualityEnhanceTemplateResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateQualityEnhanceTemplateResponse, self).__init__()
 
         self._template_id = None
         self.discriminator = None

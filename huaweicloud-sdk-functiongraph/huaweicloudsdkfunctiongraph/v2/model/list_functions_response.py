@@ -24,27 +24,32 @@ class ListFunctionsResponse(SdkResponse):
 
     openapi_types = {
         'functions': 'list[ListFunctionResult]',
-        'next_marker': 'int'
+        'next_marker': 'int',
+        'count': 'int'
     }
 
     attribute_map = {
         'functions': 'functions',
-        'next_marker': 'next_marker'
+        'next_marker': 'next_marker',
+        'count': 'count'
     }
 
-    def __init__(self, functions=None, next_marker=None):
+    def __init__(self, functions=None, next_marker=None, count=None):
         """ListFunctionsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListFunctionsResponse, self).__init__()
 
         self._functions = None
         self._next_marker = None
+        self._count = None
         self.discriminator = None
 
         if functions is not None:
             self.functions = functions
         if next_marker is not None:
             self.next_marker = next_marker
+        if count is not None:
+            self.count = count
 
     @property
     def functions(self):
@@ -89,6 +94,28 @@ class ListFunctionsResponse(SdkResponse):
         :type: int
         """
         self._next_marker = next_marker
+
+    @property
+    def count(self):
+        """Gets the count of this ListFunctionsResponse.
+
+        满足查询条件的函数总数。
+
+        :return: The count of this ListFunctionsResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListFunctionsResponse.
+
+        满足查询条件的函数总数。
+
+        :param count: The count of this ListFunctionsResponse.
+        :type: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

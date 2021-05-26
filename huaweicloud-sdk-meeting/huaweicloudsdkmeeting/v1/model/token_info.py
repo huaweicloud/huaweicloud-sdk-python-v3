@@ -26,6 +26,7 @@ class TokenInfo:
         'token': 'str',
         'tmp_ws_token': 'str',
         'ws_url': 'str',
+        'role': 'int',
         'expire_time': 'int',
         'user_id': 'str',
         'org_id': 'str',
@@ -39,6 +40,7 @@ class TokenInfo:
         'token': 'token',
         'tmp_ws_token': 'tmpWsToken',
         'ws_url': 'wsURL',
+        'role': 'role',
         'expire_time': 'expireTime',
         'user_id': 'userID',
         'org_id': 'orgID',
@@ -48,7 +50,7 @@ class TokenInfo:
         'support_notify_type': 'supportNotifyType'
     }
 
-    def __init__(self, token=None, tmp_ws_token=None, ws_url=None, expire_time=None, user_id=None, org_id=None, participant_id=None, conf_token_expire_time=None, vmr_current_conf_id=None, support_notify_type=None):
+    def __init__(self, token=None, tmp_ws_token=None, ws_url=None, role=None, expire_time=None, user_id=None, org_id=None, participant_id=None, conf_token_expire_time=None, vmr_current_conf_id=None, support_notify_type=None):
         """TokenInfo - a model defined in huaweicloud sdk"""
         
         
@@ -56,6 +58,7 @@ class TokenInfo:
         self._token = None
         self._tmp_ws_token = None
         self._ws_url = None
+        self._role = None
         self._expire_time = None
         self._user_id = None
         self._org_id = None
@@ -71,6 +74,8 @@ class TokenInfo:
             self.tmp_ws_token = tmp_ws_token
         if ws_url is not None:
             self.ws_url = ws_url
+        if role is not None:
+            self.role = role
         if expire_time is not None:
             self.expire_time = expire_time
         if user_id is not None:
@@ -151,6 +156,28 @@ class TokenInfo:
         :type: str
         """
         self._ws_url = ws_url
+
+    @property
+    def role(self):
+        """Gets the role of this TokenInfo.
+
+        会议中的角色 1：会议主席 0：普通与会者
+
+        :return: The role of this TokenInfo.
+        :rtype: int
+        """
+        return self._role
+
+    @role.setter
+    def role(self, role):
+        """Sets the role of this TokenInfo.
+
+        会议中的角色 1：会议主席 0：普通与会者
+
+        :param role: The role of this TokenInfo.
+        :type: int
+        """
+        self._role = role
 
     @property
     def expire_time(self):

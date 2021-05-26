@@ -33,7 +33,7 @@ class CreateTransTemplateResponse(SdkResponse):
     def __init__(self, template_id=None):
         """CreateTransTemplateResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateTransTemplateResponse, self).__init__()
 
         self._template_id = None
         self.discriminator = None

@@ -44,6 +44,7 @@ class NeutronShowFirewallRuleRequest:
     def firewall_rule_id(self):
         """Gets the firewall_rule_id of this NeutronShowFirewallRuleRequest.
 
+        网络ACL规则ID
 
         :return: The firewall_rule_id of this NeutronShowFirewallRuleRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class NeutronShowFirewallRuleRequest:
     def firewall_rule_id(self, firewall_rule_id):
         """Sets the firewall_rule_id of this NeutronShowFirewallRuleRequest.
 
+        网络ACL规则ID
 
         :param firewall_rule_id: The firewall_rule_id of this NeutronShowFirewallRuleRequest.
         :type: str

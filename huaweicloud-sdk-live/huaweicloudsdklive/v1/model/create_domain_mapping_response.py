@@ -35,7 +35,7 @@ class CreateDomainMappingResponse(SdkResponse):
     def __init__(self, pull_domain=None, push_domain=None):
         """CreateDomainMappingResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateDomainMappingResponse, self).__init__()
 
         self._pull_domain = None
         self._push_domain = None

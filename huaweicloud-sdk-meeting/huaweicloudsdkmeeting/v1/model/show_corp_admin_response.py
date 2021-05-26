@@ -30,8 +30,6 @@ class ShowCorpAdminResponse(SdkResponse):
         'email': 'str',
         'phone': 'str',
         'country': 'str',
-        'menu_template_id': 'str',
-        'menu_template_name': 'str',
         'dept': 'DeptBasicDTO'
     }
 
@@ -43,15 +41,13 @@ class ShowCorpAdminResponse(SdkResponse):
         'email': 'email',
         'phone': 'phone',
         'country': 'country',
-        'menu_template_id': 'menuTemplateId',
-        'menu_template_name': 'menuTemplateName',
         'dept': 'dept'
     }
 
-    def __init__(self, id=None, account=None, name=None, admin_type=None, email=None, phone=None, country=None, menu_template_id=None, menu_template_name=None, dept=None):
+    def __init__(self, id=None, account=None, name=None, admin_type=None, email=None, phone=None, country=None, dept=None):
         """ShowCorpAdminResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowCorpAdminResponse, self).__init__()
 
         self._id = None
         self._account = None
@@ -60,8 +56,6 @@ class ShowCorpAdminResponse(SdkResponse):
         self._email = None
         self._phone = None
         self._country = None
-        self._menu_template_id = None
-        self._menu_template_name = None
         self._dept = None
         self.discriminator = None
 
@@ -79,10 +73,6 @@ class ShowCorpAdminResponse(SdkResponse):
             self.phone = phone
         if country is not None:
             self.country = country
-        if menu_template_id is not None:
-            self.menu_template_id = menu_template_id
-        if menu_template_name is not None:
-            self.menu_template_name = menu_template_name
         if dept is not None:
             self.dept = dept
 
@@ -239,50 +229,6 @@ class ShowCorpAdminResponse(SdkResponse):
         :type: str
         """
         self._country = country
-
-    @property
-    def menu_template_id(self):
-        """Gets the menu_template_id of this ShowCorpAdminResponse.
-
-        菜单模板id
-
-        :return: The menu_template_id of this ShowCorpAdminResponse.
-        :rtype: str
-        """
-        return self._menu_template_id
-
-    @menu_template_id.setter
-    def menu_template_id(self, menu_template_id):
-        """Sets the menu_template_id of this ShowCorpAdminResponse.
-
-        菜单模板id
-
-        :param menu_template_id: The menu_template_id of this ShowCorpAdminResponse.
-        :type: str
-        """
-        self._menu_template_id = menu_template_id
-
-    @property
-    def menu_template_name(self):
-        """Gets the menu_template_name of this ShowCorpAdminResponse.
-
-        菜单模板名称
-
-        :return: The menu_template_name of this ShowCorpAdminResponse.
-        :rtype: str
-        """
-        return self._menu_template_name
-
-    @menu_template_name.setter
-    def menu_template_name(self, menu_template_name):
-        """Sets the menu_template_name of this ShowCorpAdminResponse.
-
-        菜单模板名称
-
-        :param menu_template_name: The menu_template_name of this ShowCorpAdminResponse.
-        :type: str
-        """
-        self._menu_template_name = menu_template_name
 
     @property
     def dept(self):

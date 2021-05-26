@@ -53,6 +53,7 @@ class CreatePartitionRequest:
     def instance_id(self):
         """Gets the instance_id of this CreatePartitionRequest.
 
+        实例ID。
 
         :return: The instance_id of this CreatePartitionRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class CreatePartitionRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CreatePartitionRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this CreatePartitionRequest.
         :type: str
@@ -73,6 +75,7 @@ class CreatePartitionRequest:
     def topic(self):
         """Gets the topic of this CreatePartitionRequest.
 
+        Topic名称。
 
         :return: The topic of this CreatePartitionRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class CreatePartitionRequest:
     def topic(self, topic):
         """Sets the topic of this CreatePartitionRequest.
 
+        Topic名称。
 
         :param topic: The topic of this CreatePartitionRequest.
         :type: str

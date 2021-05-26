@@ -44,6 +44,7 @@ class ShowNatGatewaySnatRuleRequest:
     def snat_rule_id(self):
         """Gets the snat_rule_id of this ShowNatGatewaySnatRuleRequest.
 
+        SNAT规则的ID。
 
         :return: The snat_rule_id of this ShowNatGatewaySnatRuleRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowNatGatewaySnatRuleRequest:
     def snat_rule_id(self, snat_rule_id):
         """Sets the snat_rule_id of this ShowNatGatewaySnatRuleRequest.
 
+        SNAT规则的ID。
 
         :param snat_rule_id: The snat_rule_id of this ShowNatGatewaySnatRuleRequest.
         :type: str

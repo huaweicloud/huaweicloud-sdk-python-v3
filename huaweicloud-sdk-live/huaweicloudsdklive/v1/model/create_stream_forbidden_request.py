@@ -50,6 +50,7 @@ class CreateStreamForbiddenRequest:
     def specify_project(self):
         """Gets the specify_project of this CreateStreamForbiddenRequest.
 
+        op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
 
         :return: The specify_project of this CreateStreamForbiddenRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class CreateStreamForbiddenRequest:
     def specify_project(self, specify_project):
         """Sets the specify_project of this CreateStreamForbiddenRequest.
 
+        op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
 
         :param specify_project: The specify_project of this CreateStreamForbiddenRequest.
         :type: str

@@ -35,7 +35,7 @@ class ListIssueCommentsV4Response(SdkResponse):
     def __init__(self, total=None, comments=None):
         """ListIssueCommentsV4Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListIssueCommentsV4Response, self).__init__()
 
         self._total = None
         self._comments = None

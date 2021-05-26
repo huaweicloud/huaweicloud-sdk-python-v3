@@ -33,7 +33,7 @@ class ListTriggersDetailsResponse(SdkResponse):
     def __init__(self, body=None):
         """ListTriggersDetailsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListTriggersDetailsResponse, self).__init__()
 
         self._body = None
         self.discriminator = None

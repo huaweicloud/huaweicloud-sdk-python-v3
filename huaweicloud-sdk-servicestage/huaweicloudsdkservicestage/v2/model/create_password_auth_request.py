@@ -49,6 +49,7 @@ class CreatePasswordAuthRequest:
     def repo_type(self):
         """Gets the repo_type of this CreatePasswordAuthRequest.
 
+        仓库类型。 支持口令授权的仓库类型有：github、devcloud、bitbucket。
 
         :return: The repo_type of this CreatePasswordAuthRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreatePasswordAuthRequest:
     def repo_type(self, repo_type):
         """Sets the repo_type of this CreatePasswordAuthRequest.
 
+        仓库类型。 支持口令授权的仓库类型有：github、devcloud、bitbucket。
 
         :param repo_type: The repo_type of this CreatePasswordAuthRequest.
         :type: str

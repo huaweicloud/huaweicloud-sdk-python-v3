@@ -35,7 +35,7 @@ class ShowOnlineMeetingDetailResponse(SdkResponse):
     def __init__(self, conference_data=None, data=None):
         """ShowOnlineMeetingDetailResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowOnlineMeetingDetailResponse, self).__init__()
 
         self._conference_data = None
         self._data = None

@@ -55,7 +55,7 @@ class ShowPublicationResponse(SdkResponse):
     def __init__(self, id=None, last_updated_by=None, create_time=None, update_time=None, publish_name=None, publish_scope=None, start_time=None, end_time=None, publish_status=None, program_list=None, dept_list=None, device_list=None):
         """ShowPublicationResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowPublicationResponse, self).__init__()
 
         self._id = None
         self._last_updated_by = None

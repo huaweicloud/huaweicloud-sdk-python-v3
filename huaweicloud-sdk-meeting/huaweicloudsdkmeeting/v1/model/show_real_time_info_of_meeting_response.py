@@ -37,7 +37,7 @@ class ShowRealTimeInfoOfMeetingResponse(SdkResponse):
     def __init__(self, attendees=None, participants=None, conf_info=None):
         """ShowRealTimeInfoOfMeetingResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowRealTimeInfoOfMeetingResponse, self).__init__()
 
         self._attendees = None
         self._participants = None

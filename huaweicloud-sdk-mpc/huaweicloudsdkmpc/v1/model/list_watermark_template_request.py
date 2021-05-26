@@ -55,6 +55,7 @@ class ListWatermarkTemplateRequest:
     def template_id(self):
         """Gets the template_id of this ListWatermarkTemplateRequest.
 
+        水印模板ID，最多10个 
 
         :return: The template_id of this ListWatermarkTemplateRequest.
         :rtype: list[int]
@@ -65,6 +66,7 @@ class ListWatermarkTemplateRequest:
     def template_id(self, template_id):
         """Sets the template_id of this ListWatermarkTemplateRequest.
 
+        水印模板ID，最多10个 
 
         :param template_id: The template_id of this ListWatermarkTemplateRequest.
         :type: list[int]
@@ -75,6 +77,7 @@ class ListWatermarkTemplateRequest:
     def page(self):
         """Gets the page of this ListWatermarkTemplateRequest.
 
+        分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
         :return: The page of this ListWatermarkTemplateRequest.
         :rtype: int
@@ -85,6 +88,7 @@ class ListWatermarkTemplateRequest:
     def page(self, page):
         """Sets the page of this ListWatermarkTemplateRequest.
 
+        分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
         :param page: The page of this ListWatermarkTemplateRequest.
         :type: int
@@ -95,6 +99,7 @@ class ListWatermarkTemplateRequest:
     def size(self):
         """Gets the size of this ListWatermarkTemplateRequest.
 
+        每页记录数。取值范围：[1,100]，指定template_id时该参数无效 
 
         :return: The size of this ListWatermarkTemplateRequest.
         :rtype: int
@@ -105,6 +110,7 @@ class ListWatermarkTemplateRequest:
     def size(self, size):
         """Sets the size of this ListWatermarkTemplateRequest.
 
+        每页记录数。取值范围：[1,100]，指定template_id时该参数无效 
 
         :param size: The size of this ListWatermarkTemplateRequest.
         :type: int

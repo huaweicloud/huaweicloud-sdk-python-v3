@@ -73,6 +73,7 @@ class ShowMessagesRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowMessagesRequest.
 
+        实例ID。
 
         :return: The instance_id of this ShowMessagesRequest.
         :rtype: str
@@ -83,6 +84,7 @@ class ShowMessagesRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowMessagesRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ShowMessagesRequest.
         :type: str
@@ -93,6 +95,7 @@ class ShowMessagesRequest:
     def topic(self):
         """Gets the topic of this ShowMessagesRequest.
 
+        Topic名称。
 
         :return: The topic of this ShowMessagesRequest.
         :rtype: str
@@ -103,6 +106,7 @@ class ShowMessagesRequest:
     def topic(self, topic):
         """Sets the topic of this ShowMessagesRequest.
 
+        Topic名称。
 
         :param topic: The topic of this ShowMessagesRequest.
         :type: str
@@ -113,6 +117,7 @@ class ShowMessagesRequest:
     def start_time(self):
         """Gets the start_time of this ShowMessagesRequest.
 
+        查询起始时间，为unix时间戳格式，默认值为0。
 
         :return: The start_time of this ShowMessagesRequest.
         :rtype: str
@@ -123,6 +128,7 @@ class ShowMessagesRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ShowMessagesRequest.
 
+        查询起始时间，为unix时间戳格式，默认值为0。
 
         :param start_time: The start_time of this ShowMessagesRequest.
         :type: str
@@ -133,6 +139,7 @@ class ShowMessagesRequest:
     def end_time(self):
         """Gets the end_time of this ShowMessagesRequest.
 
+        查询结束时间，为unix时间戳格式，默认值为系统当前时间。
 
         :return: The end_time of this ShowMessagesRequest.
         :rtype: str
@@ -143,6 +150,7 @@ class ShowMessagesRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowMessagesRequest.
 
+        查询结束时间，为unix时间戳格式，默认值为系统当前时间。
 
         :param end_time: The end_time of this ShowMessagesRequest.
         :type: str
@@ -153,6 +161,7 @@ class ShowMessagesRequest:
     def limit(self):
         """Gets the limit of this ShowMessagesRequest.
 
+        单页返回消息数，默认值为10。
 
         :return: The limit of this ShowMessagesRequest.
         :rtype: int
@@ -163,6 +172,7 @@ class ShowMessagesRequest:
     def limit(self, limit):
         """Sets the limit of this ShowMessagesRequest.
 
+        单页返回消息数，默认值为10。
 
         :param limit: The limit of this ShowMessagesRequest.
         :type: int
@@ -173,6 +183,7 @@ class ShowMessagesRequest:
     def offset(self):
         """Gets the offset of this ShowMessagesRequest.
 
+        查询的页码，默认值为1。
 
         :return: The offset of this ShowMessagesRequest.
         :rtype: int
@@ -183,6 +194,7 @@ class ShowMessagesRequest:
     def offset(self, offset):
         """Sets the offset of this ShowMessagesRequest.
 
+        查询的页码，默认值为1。
 
         :param offset: The offset of this ShowMessagesRequest.
         :type: int
@@ -193,6 +205,7 @@ class ShowMessagesRequest:
     def partition(self):
         """Gets the partition of this ShowMessagesRequest.
 
+        分区编号，默认值为-1，若传入值为-1，则查询所有分区。
 
         :return: The partition of this ShowMessagesRequest.
         :rtype: str
@@ -203,6 +216,7 @@ class ShowMessagesRequest:
     def partition(self, partition):
         """Sets the partition of this ShowMessagesRequest.
 
+        分区编号，默认值为-1，若传入值为-1，则查询所有分区。
 
         :param partition: The partition of this ShowMessagesRequest.
         :type: str

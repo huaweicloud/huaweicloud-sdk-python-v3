@@ -23,7 +23,7 @@ class CreateInstanceTopicReq:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
+        'id': 'str',
         'replication': 'int',
         'sync_message_flush': 'bool',
         'partition': 'int',
@@ -32,7 +32,7 @@ class CreateInstanceTopicReq:
     }
 
     attribute_map = {
-        'name': 'name',
+        'id': 'id',
         'replication': 'replication',
         'sync_message_flush': 'sync_message_flush',
         'partition': 'partition',
@@ -40,12 +40,12 @@ class CreateInstanceTopicReq:
         'retention_time': 'retention_time'
     }
 
-    def __init__(self, name=None, replication=None, sync_message_flush=None, partition=None, sync_replication=None, retention_time=None):
+    def __init__(self, id=None, replication=None, sync_message_flush=None, partition=None, sync_replication=None, retention_time=None):
         """CreateInstanceTopicReq - a model defined in huaweicloud sdk"""
         
         
 
-        self._name = None
+        self._id = None
         self._replication = None
         self._sync_message_flush = None
         self._partition = None
@@ -53,7 +53,7 @@ class CreateInstanceTopicReq:
         self._retention_time = None
         self.discriminator = None
 
-        self.name = name
+        self.id = id
         if replication is not None:
             self.replication = replication
         if sync_message_flush is not None:
@@ -66,26 +66,26 @@ class CreateInstanceTopicReq:
             self.retention_time = retention_time
 
     @property
-    def name(self):
-        """Gets the name of this CreateInstanceTopicReq.
+    def id(self):
+        """Gets the id of this CreateInstanceTopicReq.
 
         topic名称，长度为4-64，以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
-        :return: The name of this CreateInstanceTopicReq.
+        :return: The id of this CreateInstanceTopicReq.
         :rtype: str
         """
-        return self._name
+        return self._id
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this CreateInstanceTopicReq.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this CreateInstanceTopicReq.
 
         topic名称，长度为4-64，以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
-        :param name: The name of this CreateInstanceTopicReq.
+        :param id: The id of this CreateInstanceTopicReq.
         :type: str
         """
-        self._name = name
+        self._id = id
 
     @property
     def replication(self):
@@ -135,7 +135,7 @@ class CreateInstanceTopicReq:
     def partition(self):
         """Gets the partition of this CreateInstanceTopicReq.
 
-        topic分区数，设置消费的并发数。 取值范围：1-20。
+        topic分区数，设置消费的并发数。 取值范围：1-50。
 
         :return: The partition of this CreateInstanceTopicReq.
         :rtype: int
@@ -146,7 +146,7 @@ class CreateInstanceTopicReq:
     def partition(self, partition):
         """Sets the partition of this CreateInstanceTopicReq.
 
-        topic分区数，设置消费的并发数。 取值范围：1-20。
+        topic分区数，设置消费的并发数。 取值范围：1-50。
 
         :param partition: The partition of this CreateInstanceTopicReq.
         :type: int

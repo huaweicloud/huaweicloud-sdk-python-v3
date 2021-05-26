@@ -558,7 +558,7 @@ class RestScheduleConfDTO:
     def vmr_id(self):
         """Gets the vmr_id of this RestScheduleConfDTO.
 
-        用于识别用户开会时绑定的云会议室。最大长度不超过512个字符。 - 不为空，则用ID查询云会议室信息。 - 为空，则查用户所有云会议室，如果有个人云会议室，用个人云会议室ID；没有个人云会议室，取最小云会议室ID。
+        用于识别用户开会时绑定的云会议室。最大长度不超过512个字符。 ID可以从云会议室管理->分页查询用户云会议室中获取id字段。 - 不为空，则用ID查询云会议室信息。 - 为空，则查用户所有云会议室，如果有个人云会议室，用个人云会议室ID；没有个人云会议室，取最小云会议室ID。
 
         :return: The vmr_id of this RestScheduleConfDTO.
         :rtype: str
@@ -569,7 +569,7 @@ class RestScheduleConfDTO:
     def vmr_id(self, vmr_id):
         """Sets the vmr_id of this RestScheduleConfDTO.
 
-        用于识别用户开会时绑定的云会议室。最大长度不超过512个字符。 - 不为空，则用ID查询云会议室信息。 - 为空，则查用户所有云会议室，如果有个人云会议室，用个人云会议室ID；没有个人云会议室，取最小云会议室ID。
+        用于识别用户开会时绑定的云会议室。最大长度不超过512个字符。 ID可以从云会议室管理->分页查询用户云会议室中获取id字段。 - 不为空，则用ID查询云会议室信息。 - 为空，则查用户所有云会议室，如果有个人云会议室，用个人云会议室ID；没有个人云会议室，取最小云会议室ID。
 
         :param vmr_id: The vmr_id of this RestScheduleConfDTO.
         :type: str

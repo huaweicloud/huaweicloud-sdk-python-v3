@@ -23,55 +23,65 @@ class ListInstanceTopicsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'count': 'int',
+        'total': 'int',
         'size': 'int',
+        'remain_partitions': 'int',
+        'max_partitions': 'int',
         'topics': 'list[ListInstanceTopicsRespTopics]'
     }
 
     attribute_map = {
-        'count': 'count',
+        'total': 'total',
         'size': 'size',
+        'remain_partitions': 'remain_partitions',
+        'max_partitions': 'max_partitions',
         'topics': 'topics'
     }
 
-    def __init__(self, count=None, size=None, topics=None):
+    def __init__(self, total=None, size=None, remain_partitions=None, max_partitions=None, topics=None):
         """ListInstanceTopicsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListInstanceTopicsResponse, self).__init__()
 
-        self._count = None
+        self._total = None
         self._size = None
+        self._remain_partitions = None
+        self._max_partitions = None
         self._topics = None
         self.discriminator = None
 
-        if count is not None:
-            self.count = count
+        if total is not None:
+            self.total = total
         if size is not None:
             self.size = size
+        if remain_partitions is not None:
+            self.remain_partitions = remain_partitions
+        if max_partitions is not None:
+            self.max_partitions = max_partitions
         if topics is not None:
             self.topics = topics
 
     @property
-    def count(self):
-        """Gets the count of this ListInstanceTopicsResponse.
+    def total(self):
+        """Gets the total of this ListInstanceTopicsResponse.
 
         topic总数。
 
-        :return: The count of this ListInstanceTopicsResponse.
+        :return: The total of this ListInstanceTopicsResponse.
         :rtype: int
         """
-        return self._count
+        return self._total
 
-    @count.setter
-    def count(self, count):
-        """Sets the count of this ListInstanceTopicsResponse.
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ListInstanceTopicsResponse.
 
         topic总数。
 
-        :param count: The count of this ListInstanceTopicsResponse.
+        :param total: The total of this ListInstanceTopicsResponse.
         :type: int
         """
-        self._count = count
+        self._total = total
 
     @property
     def size(self):
@@ -96,10 +106,54 @@ class ListInstanceTopicsResponse(SdkResponse):
         self._size = size
 
     @property
+    def remain_partitions(self):
+        """Gets the remain_partitions of this ListInstanceTopicsResponse.
+
+        剩余分区数。
+
+        :return: The remain_partitions of this ListInstanceTopicsResponse.
+        :rtype: int
+        """
+        return self._remain_partitions
+
+    @remain_partitions.setter
+    def remain_partitions(self, remain_partitions):
+        """Sets the remain_partitions of this ListInstanceTopicsResponse.
+
+        剩余分区数。
+
+        :param remain_partitions: The remain_partitions of this ListInstanceTopicsResponse.
+        :type: int
+        """
+        self._remain_partitions = remain_partitions
+
+    @property
+    def max_partitions(self):
+        """Gets the max_partitions of this ListInstanceTopicsResponse.
+
+        分区总数。
+
+        :return: The max_partitions of this ListInstanceTopicsResponse.
+        :rtype: int
+        """
+        return self._max_partitions
+
+    @max_partitions.setter
+    def max_partitions(self, max_partitions):
+        """Sets the max_partitions of this ListInstanceTopicsResponse.
+
+        分区总数。
+
+        :param max_partitions: The max_partitions of this ListInstanceTopicsResponse.
+        :type: int
+        """
+        self._max_partitions = max_partitions
+
+    @property
     def topics(self):
         """Gets the topics of this ListInstanceTopicsResponse.
 
-        Topic列表。
+        topic列表。
 
         :return: The topics of this ListInstanceTopicsResponse.
         :rtype: list[ListInstanceTopicsRespTopics]
@@ -110,7 +164,7 @@ class ListInstanceTopicsResponse(SdkResponse):
     def topics(self, topics):
         """Sets the topics of this ListInstanceTopicsResponse.
 
-        Topic列表。
+        topic列表。
 
         :param topics: The topics of this ListInstanceTopicsResponse.
         :type: list[ListInstanceTopicsRespTopics]

@@ -31,7 +31,7 @@ class NeutronDeleteSecurityGroupResponse(SdkResponse):
     def __init__(self):
         """NeutronDeleteSecurityGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(NeutronDeleteSecurityGroupResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

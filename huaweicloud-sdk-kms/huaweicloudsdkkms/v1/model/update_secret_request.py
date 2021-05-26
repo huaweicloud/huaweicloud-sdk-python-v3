@@ -49,6 +49,7 @@ class UpdateSecretRequest:
     def secret_id(self):
         """Gets the secret_id of this UpdateSecretRequest.
 
+        凭据对象唯一资源标识符。
 
         :return: The secret_id of this UpdateSecretRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateSecretRequest:
     def secret_id(self, secret_id):
         """Sets the secret_id of this UpdateSecretRequest.
 
+        凭据对象唯一资源标识符。
 
         :param secret_id: The secret_id of this UpdateSecretRequest.
         :type: str

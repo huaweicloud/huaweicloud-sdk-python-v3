@@ -62,6 +62,7 @@ class ListSingleStreamFramerateRequest:
     def domain(self):
         """Gets the domain of this ListSingleStreamFramerateRequest.
 
+        推流域名。 
 
         :return: The domain of this ListSingleStreamFramerateRequest.
         :rtype: str
@@ -72,6 +73,7 @@ class ListSingleStreamFramerateRequest:
     def domain(self, domain):
         """Sets the domain of this ListSingleStreamFramerateRequest.
 
+        推流域名。 
 
         :param domain: The domain of this ListSingleStreamFramerateRequest.
         :type: str
@@ -82,6 +84,7 @@ class ListSingleStreamFramerateRequest:
     def app(self):
         """Gets the app of this ListSingleStreamFramerateRequest.
 
+        App名。 
 
         :return: The app of this ListSingleStreamFramerateRequest.
         :rtype: str
@@ -92,6 +95,7 @@ class ListSingleStreamFramerateRequest:
     def app(self, app):
         """Sets the app of this ListSingleStreamFramerateRequest.
 
+        App名。 
 
         :param app: The app of this ListSingleStreamFramerateRequest.
         :type: str
@@ -102,6 +106,7 @@ class ListSingleStreamFramerateRequest:
     def stream(self):
         """Gets the stream of this ListSingleStreamFramerateRequest.
 
+        流名。 
 
         :return: The stream of this ListSingleStreamFramerateRequest.
         :rtype: str
@@ -112,6 +117,7 @@ class ListSingleStreamFramerateRequest:
     def stream(self, stream):
         """Sets the stream of this ListSingleStreamFramerateRequest.
 
+        流名。 
 
         :param stream: The stream of this ListSingleStreamFramerateRequest.
         :type: str
@@ -122,6 +128,7 @@ class ListSingleStreamFramerateRequest:
     def start_time(self):
         """Gets the start_time of this ListSingleStreamFramerateRequest.
 
+        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度6小时，最大查询周期7天。  若参数为空，默认查询最近1小时数据。 
 
         :return: The start_time of this ListSingleStreamFramerateRequest.
         :rtype: str
@@ -132,6 +139,7 @@ class ListSingleStreamFramerateRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListSingleStreamFramerateRequest.
 
+        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度6小时，最大查询周期7天。  若参数为空，默认查询最近1小时数据。 
 
         :param start_time: The start_time of this ListSingleStreamFramerateRequest.
         :type: str
@@ -142,6 +150,7 @@ class ListSingleStreamFramerateRequest:
     def end_time(self):
         """Gets the end_time of this ListSingleStreamFramerateRequest.
 
+        结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
         :return: The end_time of this ListSingleStreamFramerateRequest.
         :rtype: str
@@ -152,6 +161,7 @@ class ListSingleStreamFramerateRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListSingleStreamFramerateRequest.
 
+        结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
         :param end_time: The end_time of this ListSingleStreamFramerateRequest.
         :type: str

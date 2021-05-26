@@ -31,7 +31,7 @@ class CancelMeetingResponse(SdkResponse):
     def __init__(self):
         """CancelMeetingResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CancelMeetingResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

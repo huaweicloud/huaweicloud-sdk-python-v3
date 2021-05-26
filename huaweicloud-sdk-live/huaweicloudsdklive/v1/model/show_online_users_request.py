@@ -69,6 +69,7 @@ class ShowOnlineUsersRequest:
     def domain(self):
         """Gets the domain of this ShowOnlineUsersRequest.
 
+        直播播放域名
 
         :return: The domain of this ShowOnlineUsersRequest.
         :rtype: str
@@ -79,6 +80,7 @@ class ShowOnlineUsersRequest:
     def domain(self, domain):
         """Sets the domain of this ShowOnlineUsersRequest.
 
+        直播播放域名
 
         :param domain: The domain of this ShowOnlineUsersRequest.
         :type: str
@@ -89,6 +91,7 @@ class ShowOnlineUsersRequest:
     def app_name(self):
         """Gets the app_name of this ShowOnlineUsersRequest.
 
+        应用名称。 默认为“live”，若您需要自定义应用名称，请先提交工单申请。 
 
         :return: The app_name of this ShowOnlineUsersRequest.
         :rtype: str
@@ -99,6 +102,7 @@ class ShowOnlineUsersRequest:
     def app_name(self, app_name):
         """Sets the app_name of this ShowOnlineUsersRequest.
 
+        应用名称。 默认为“live”，若您需要自定义应用名称，请先提交工单申请。 
 
         :param app_name: The app_name of this ShowOnlineUsersRequest.
         :type: str
@@ -109,6 +113,7 @@ class ShowOnlineUsersRequest:
     def stream_name(self):
         """Gets the stream_name of this ShowOnlineUsersRequest.
 
+        流名称
 
         :return: The stream_name of this ShowOnlineUsersRequest.
         :rtype: str
@@ -119,6 +124,7 @@ class ShowOnlineUsersRequest:
     def stream_name(self, stream_name):
         """Sets the stream_name of this ShowOnlineUsersRequest.
 
+        流名称
 
         :param stream_name: The stream_name of this ShowOnlineUsersRequest.
         :type: str
@@ -129,6 +135,7 @@ class ShowOnlineUsersRequest:
     def start_time(self):
         """Gets the start_time of this ShowOnlineUsersRequest.
 
+        查询开始时间，UTC时间，格式：yyyy-mm-ddThh:mm:ssZ。无开始时间表示查询最近统计周期在线人数数据
 
         :return: The start_time of this ShowOnlineUsersRequest.
         :rtype: datetime
@@ -139,6 +146,7 @@ class ShowOnlineUsersRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ShowOnlineUsersRequest.
 
+        查询开始时间，UTC时间，格式：yyyy-mm-ddThh:mm:ssZ。无开始时间表示查询最近统计周期在线人数数据
 
         :param start_time: The start_time of this ShowOnlineUsersRequest.
         :type: datetime
@@ -149,6 +157,7 @@ class ShowOnlineUsersRequest:
     def end_time(self):
         """Gets the end_time of this ShowOnlineUsersRequest.
 
+        查询结束时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ。  - start_time与end_time均不存在时，服务端从最近一个统计周期的数据里查询。 - start_time存在、end_time不存在时，end_time取当前时间。 - start_time不存在、end_time存在时，请求非法。 - 只能查询最近三个月内的数据，start_time和end_time的跨度不能大于30天。 
 
         :return: The end_time of this ShowOnlineUsersRequest.
         :rtype: datetime
@@ -159,6 +168,7 @@ class ShowOnlineUsersRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowOnlineUsersRequest.
 
+        查询结束时间，UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ。  - start_time与end_time均不存在时，服务端从最近一个统计周期的数据里查询。 - start_time存在、end_time不存在时，end_time取当前时间。 - start_time不存在、end_time存在时，请求非法。 - 只能查询最近三个月内的数据，start_time和end_time的跨度不能大于30天。 
 
         :param end_time: The end_time of this ShowOnlineUsersRequest.
         :type: datetime
@@ -169,6 +179,7 @@ class ShowOnlineUsersRequest:
     def step(self):
         """Gets the step of this ShowOnlineUsersRequest.
 
+        统计周期。 单位：分钟 
 
         :return: The step of this ShowOnlineUsersRequest.
         :rtype: int
@@ -179,6 +190,7 @@ class ShowOnlineUsersRequest:
     def step(self, step):
         """Sets the step of this ShowOnlineUsersRequest.
 
+        统计周期。 单位：分钟 
 
         :param step: The step of this ShowOnlineUsersRequest.
         :type: int

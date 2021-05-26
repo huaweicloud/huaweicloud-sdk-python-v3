@@ -49,7 +49,7 @@ class UpdateDependencyResponse(SdkResponse):
     def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None):
         """UpdateDependencyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateDependencyResponse, self).__init__()
 
         self._id = None
         self._owner = None

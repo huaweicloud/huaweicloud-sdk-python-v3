@@ -64,6 +64,7 @@ class ListLiveStreamsOnlineRequest:
     def publish_domain(self):
         """Gets the publish_domain of this ListLiveStreamsOnlineRequest.
 
+        域名
 
         :return: The publish_domain of this ListLiveStreamsOnlineRequest.
         :rtype: str
@@ -74,6 +75,7 @@ class ListLiveStreamsOnlineRequest:
     def publish_domain(self, publish_domain):
         """Sets the publish_domain of this ListLiveStreamsOnlineRequest.
 
+        域名
 
         :param publish_domain: The publish_domain of this ListLiveStreamsOnlineRequest.
         :type: str
@@ -84,6 +86,7 @@ class ListLiveStreamsOnlineRequest:
     def app(self):
         """Gets the app of this ListLiveStreamsOnlineRequest.
 
+        应用名
 
         :return: The app of this ListLiveStreamsOnlineRequest.
         :rtype: str
@@ -94,6 +97,7 @@ class ListLiveStreamsOnlineRequest:
     def app(self, app):
         """Sets the app of this ListLiveStreamsOnlineRequest.
 
+        应用名
 
         :param app: The app of this ListLiveStreamsOnlineRequest.
         :type: str
@@ -104,6 +108,7 @@ class ListLiveStreamsOnlineRequest:
     def offset(self):
         """Gets the offset of this ListLiveStreamsOnlineRequest.
 
+        偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :return: The offset of this ListLiveStreamsOnlineRequest.
         :rtype: int
@@ -114,6 +119,7 @@ class ListLiveStreamsOnlineRequest:
     def offset(self, offset):
         """Sets the offset of this ListLiveStreamsOnlineRequest.
 
+        偏移量，表示从此偏移量开始查询， offset大于等于0
 
         :param offset: The offset of this ListLiveStreamsOnlineRequest.
         :type: int
@@ -124,6 +130,7 @@ class ListLiveStreamsOnlineRequest:
     def limit(self):
         """Gets the limit of this ListLiveStreamsOnlineRequest.
 
+        每页记录数，取值范围[1,100]，默认值10
 
         :return: The limit of this ListLiveStreamsOnlineRequest.
         :rtype: int
@@ -134,6 +141,7 @@ class ListLiveStreamsOnlineRequest:
     def limit(self, limit):
         """Sets the limit of this ListLiveStreamsOnlineRequest.
 
+        每页记录数，取值范围[1,100]，默认值10
 
         :param limit: The limit of this ListLiveStreamsOnlineRequest.
         :type: int
@@ -144,6 +152,7 @@ class ListLiveStreamsOnlineRequest:
     def stream(self):
         """Gets the stream of this ListLiveStreamsOnlineRequest.
 
+        流名，用于单流查询，携带stream参数时app不能缺省
 
         :return: The stream of this ListLiveStreamsOnlineRequest.
         :rtype: str
@@ -154,6 +163,7 @@ class ListLiveStreamsOnlineRequest:
     def stream(self, stream):
         """Sets the stream of this ListLiveStreamsOnlineRequest.
 
+        流名，用于单流查询，携带stream参数时app不能缺省
 
         :param stream: The stream of this ListLiveStreamsOnlineRequest.
         :type: str

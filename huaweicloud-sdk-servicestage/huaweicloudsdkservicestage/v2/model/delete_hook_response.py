@@ -31,7 +31,7 @@ class DeleteHookResponse(SdkResponse):
     def __init__(self):
         """DeleteHookResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteHookResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

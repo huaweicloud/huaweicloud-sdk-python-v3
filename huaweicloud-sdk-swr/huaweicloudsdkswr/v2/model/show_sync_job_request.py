@@ -52,6 +52,7 @@ class ShowSyncJobRequest:
     def namespace(self):
         """Gets the namespace of this ShowSyncJobRequest.
 
+        组织名称
 
         :return: The namespace of this ShowSyncJobRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class ShowSyncJobRequest:
     def namespace(self, namespace):
         """Sets the namespace of this ShowSyncJobRequest.
 
+        组织名称
 
         :param namespace: The namespace of this ShowSyncJobRequest.
         :type: str
@@ -72,6 +74,7 @@ class ShowSyncJobRequest:
     def repository(self):
         """Gets the repository of this ShowSyncJobRequest.
 
+        镜像仓库名称
 
         :return: The repository of this ShowSyncJobRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class ShowSyncJobRequest:
     def repository(self, repository):
         """Sets the repository of this ShowSyncJobRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this ShowSyncJobRequest.
         :type: str
@@ -92,6 +96,7 @@ class ShowSyncJobRequest:
     def filter(self):
         """Gets the filter of this ShowSyncJobRequest.
 
+        应填写 limit::{limit}|offset::{offset}|order::{order} ,其中{limit}为返回条数,{offset}为起始索引,{order}为排序类型，可设置为desc（降序）、asc（升序）
 
         :return: The filter of this ShowSyncJobRequest.
         :rtype: str
@@ -102,6 +107,7 @@ class ShowSyncJobRequest:
     def filter(self, filter):
         """Sets the filter of this ShowSyncJobRequest.
 
+        应填写 limit::{limit}|offset::{offset}|order::{order} ,其中{limit}为返回条数,{offset}为起始索引,{order}为排序类型，可设置为desc（降序）、asc（升序）
 
         :param filter: The filter of this ShowSyncJobRequest.
         :type: str

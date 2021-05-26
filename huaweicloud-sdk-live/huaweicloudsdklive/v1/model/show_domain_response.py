@@ -35,7 +35,7 @@ class ShowDomainResponse(SdkResponse):
     def __init__(self, total=None, domain_info=None):
         """ShowDomainResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowDomainResponse, self).__init__()
 
         self._total = None
         self._domain_info = None

@@ -41,7 +41,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
     def __init__(self, id=None, name=None, creator_name=None, self_auth=None, others_auths=None):
         """ShowNamespaceAuthResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowNamespaceAuthResponse, self).__init__()
 
         self._id = None
         self._name = None

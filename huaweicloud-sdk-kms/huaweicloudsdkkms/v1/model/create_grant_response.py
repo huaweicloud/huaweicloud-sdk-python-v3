@@ -33,7 +33,7 @@ class CreateGrantResponse(SdkResponse):
     def __init__(self, grant_id=None):
         """CreateGrantResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateGrantResponse, self).__init__()
 
         self._grant_id = None
         self.discriminator = None

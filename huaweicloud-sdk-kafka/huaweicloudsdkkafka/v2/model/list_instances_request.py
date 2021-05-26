@@ -56,7 +56,8 @@ class ListInstancesRequest:
         self._enterprise_project_id = None
         self.discriminator = None
 
-        self.engine = engine
+        if engine is not None:
+            self.engine = engine
         if name is not None:
             self.name = name
         if instance_id is not None:
@@ -74,6 +75,7 @@ class ListInstancesRequest:
     def engine(self):
         """Gets the engine of this ListInstancesRequest.
 
+        消息引擎：kafka。
 
         :return: The engine of this ListInstancesRequest.
         :rtype: str
@@ -84,6 +86,7 @@ class ListInstancesRequest:
     def engine(self, engine):
         """Sets the engine of this ListInstancesRequest.
 
+        消息引擎：kafka。
 
         :param engine: The engine of this ListInstancesRequest.
         :type: str
@@ -94,6 +97,7 @@ class ListInstancesRequest:
     def name(self):
         """Gets the name of this ListInstancesRequest.
 
+        实例名称。
 
         :return: The name of this ListInstancesRequest.
         :rtype: str
@@ -104,6 +108,7 @@ class ListInstancesRequest:
     def name(self, name):
         """Sets the name of this ListInstancesRequest.
 
+        实例名称。
 
         :param name: The name of this ListInstancesRequest.
         :type: str
@@ -114,6 +119,7 @@ class ListInstancesRequest:
     def instance_id(self):
         """Gets the instance_id of this ListInstancesRequest.
 
+        实例ID。
 
         :return: The instance_id of this ListInstancesRequest.
         :rtype: str
@@ -124,6 +130,7 @@ class ListInstancesRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListInstancesRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ListInstancesRequest.
         :type: str
@@ -134,6 +141,7 @@ class ListInstancesRequest:
     def status(self):
         """Gets the status of this ListInstancesRequest.
 
+        实例状态。详细状态说明见[实例状态说明](https://support.huaweicloud.com/api-kafka/kafka-api-180514012.html)。
 
         :return: The status of this ListInstancesRequest.
         :rtype: str
@@ -144,6 +152,7 @@ class ListInstancesRequest:
     def status(self, status):
         """Sets the status of this ListInstancesRequest.
 
+        实例状态。详细状态说明见[实例状态说明](https://support.huaweicloud.com/api-kafka/kafka-api-180514012.html)。
 
         :param status: The status of this ListInstancesRequest.
         :type: str
@@ -154,6 +163,7 @@ class ListInstancesRequest:
     def include_failure(self):
         """Gets the include_failure of this ListInstancesRequest.
 
+        是否返回创建失败的实例数。  当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
 
         :return: The include_failure of this ListInstancesRequest.
         :rtype: str
@@ -164,6 +174,7 @@ class ListInstancesRequest:
     def include_failure(self, include_failure):
         """Sets the include_failure of this ListInstancesRequest.
 
+        是否返回创建失败的实例数。  当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
 
         :param include_failure: The include_failure of this ListInstancesRequest.
         :type: str
@@ -174,6 +185,7 @@ class ListInstancesRequest:
     def exact_match_name(self):
         """Gets the exact_match_name of this ListInstancesRequest.
 
+        是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。
 
         :return: The exact_match_name of this ListInstancesRequest.
         :rtype: str
@@ -184,6 +196,7 @@ class ListInstancesRequest:
     def exact_match_name(self, exact_match_name):
         """Sets the exact_match_name of this ListInstancesRequest.
 
+        是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。
 
         :param exact_match_name: The exact_match_name of this ListInstancesRequest.
         :type: str
@@ -194,6 +207,7 @@ class ListInstancesRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListInstancesRequest.
 
+        企业项目ID。
 
         :return: The enterprise_project_id of this ListInstancesRequest.
         :rtype: str
@@ -204,6 +218,7 @@ class ListInstancesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListInstancesRequest.
 
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListInstancesRequest.
         :type: str

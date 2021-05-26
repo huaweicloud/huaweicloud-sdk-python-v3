@@ -53,6 +53,7 @@ class ListStatisticsRequest:
     def filter(self):
         """Gets the filter of this ListStatisticsRequest.
 
+        参数过滤器。
 
         :return: The filter of this ListStatisticsRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class ListStatisticsRequest:
     def filter(self, filter):
         """Sets the filter of this ListStatisticsRequest.
 
+        参数过滤器。
 
         :param filter: The filter of this ListStatisticsRequest.
         :type: str
@@ -73,6 +75,7 @@ class ListStatisticsRequest:
     def period(self):
         """Gets the period of this ListStatisticsRequest.
 
+        时间段单位为分钟，与filter参数metric配合使用。
 
         :return: The period of this ListStatisticsRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class ListStatisticsRequest:
     def period(self, period):
         """Sets the period of this ListStatisticsRequest.
 
+        时间段单位为分钟，与filter参数metric配合使用。
 
         :param period: The period of this ListStatisticsRequest.
         :type: str
@@ -93,6 +97,7 @@ class ListStatisticsRequest:
     def month_code(self):
         """Gets the month_code of this ListStatisticsRequest.
 
+        月度统计的维度，与filter参数monthly_statistics配合使用。 \"0\":本月月度统计。 \"1\":上月月度统计。 \"2\":最近三个月月度统计。 \"3\":最近六个月月度计。 取值超出范围时默认取\"0”
 
         :return: The month_code of this ListStatisticsRequest.
         :rtype: str
@@ -103,6 +108,7 @@ class ListStatisticsRequest:
     def month_code(self, month_code):
         """Sets the month_code of this ListStatisticsRequest.
 
+        月度统计的维度，与filter参数monthly_statistics配合使用。 \"0\":本月月度统计。 \"1\":上月月度统计。 \"2\":最近三个月月度统计。 \"3\":最近六个月月度计。 取值超出范围时默认取\"0”
 
         :param month_code: The month_code of this ListStatisticsRequest.
         :type: str

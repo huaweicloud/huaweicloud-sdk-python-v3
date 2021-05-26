@@ -23,43 +23,45 @@ class CreateMeetingResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[ConferenceInfo]'
+        'data': 'list[ConferenceInfo]'
     }
 
     attribute_map = {
-        'body': 'body'
+        'data': 'data'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, data=None):
         """CreateMeetingResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateMeetingResponse, self).__init__()
 
-        self._body = None
+        self._data = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if data is not None:
+            self.data = data
 
     @property
-    def body(self):
-        """Gets the body of this CreateMeetingResponse.
+    def data(self):
+        """Gets the data of this CreateMeetingResponse.
 
+        会议信息
 
-        :return: The body of this CreateMeetingResponse.
+        :return: The data of this CreateMeetingResponse.
         :rtype: list[ConferenceInfo]
         """
-        return self._body
+        return self._data
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this CreateMeetingResponse.
+    @data.setter
+    def data(self, data):
+        """Sets the data of this CreateMeetingResponse.
 
+        会议信息
 
-        :param body: The body of this CreateMeetingResponse.
+        :param data: The data of this CreateMeetingResponse.
         :type: list[ConferenceInfo]
         """
-        self._body = body
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -44,6 +44,7 @@ class ShowNamespaceAuthRequest:
     def namespace(self):
         """Gets the namespace of this ShowNamespaceAuthRequest.
 
+        组织名称
 
         :return: The namespace of this ShowNamespaceAuthRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowNamespaceAuthRequest:
     def namespace(self, namespace):
         """Sets the namespace of this ShowNamespaceAuthRequest.
 
+        组织名称
 
         :param namespace: The namespace of this ShowNamespaceAuthRequest.
         :type: str

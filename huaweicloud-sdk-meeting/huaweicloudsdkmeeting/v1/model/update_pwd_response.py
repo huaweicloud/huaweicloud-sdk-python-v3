@@ -31,7 +31,7 @@ class UpdatePwdResponse(SdkResponse):
     def __init__(self):
         """UpdatePwdResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdatePwdResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

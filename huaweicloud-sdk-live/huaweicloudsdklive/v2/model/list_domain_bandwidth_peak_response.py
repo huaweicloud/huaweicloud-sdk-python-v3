@@ -35,7 +35,7 @@ class ListDomainBandwidthPeakResponse(SdkResponse):
     def __init__(self, bandwidth_list=None, x_request_id=None):
         """ListDomainBandwidthPeakResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListDomainBandwidthPeakResponse, self).__init__()
 
         self._bandwidth_list = None
         self._x_request_id = None

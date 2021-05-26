@@ -44,6 +44,7 @@ class DeleteDomainRequest:
     def domain(self):
         """Gets the domain of this DeleteDomainRequest.
 
+        直播域名
 
         :return: The domain of this DeleteDomainRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteDomainRequest:
     def domain(self, domain):
         """Sets the domain of this DeleteDomainRequest.
 
+        直播域名
 
         :param domain: The domain of this DeleteDomainRequest.
         :type: str

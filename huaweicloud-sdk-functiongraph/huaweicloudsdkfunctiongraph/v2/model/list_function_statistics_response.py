@@ -43,7 +43,7 @@ class ListFunctionStatisticsResponse(SdkResponse):
     def __init__(self, count=None, duration=None, fail_count=None, max_duration=None, min_duration=None, reject_count=None):
         """ListFunctionStatisticsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListFunctionStatisticsResponse, self).__init__()
 
         self._count = None
         self._duration = None

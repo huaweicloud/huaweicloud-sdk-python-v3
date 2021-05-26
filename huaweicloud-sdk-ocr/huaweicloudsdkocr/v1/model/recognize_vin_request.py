@@ -49,6 +49,7 @@ class RecognizeVinRequest:
     def project_id(self):
         """Gets the project_id of this RecognizeVinRequest.
 
+        项目ID，您可以从[获取项目ID](https://support.huaweicloud.com/api-ocr/ocr_03_0130.html)中获取。
 
         :return: The project_id of this RecognizeVinRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class RecognizeVinRequest:
     def project_id(self, project_id):
         """Sets the project_id of this RecognizeVinRequest.
 
+        项目ID，您可以从[获取项目ID](https://support.huaweicloud.com/api-ocr/ocr_03_0130.html)中获取。
 
         :param project_id: The project_id of this RecognizeVinRequest.
         :type: str

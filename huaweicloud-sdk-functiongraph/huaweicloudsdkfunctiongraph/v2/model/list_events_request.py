@@ -44,6 +44,7 @@ class ListEventsRequest:
     def function_urn(self):
         """Gets the function_urn of this ListEventsRequest.
 
+        函数的URN（Uniform Resource Name），唯一标识函数。
 
         :return: The function_urn of this ListEventsRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListEventsRequest:
     def function_urn(self, function_urn):
         """Sets the function_urn of this ListEventsRequest.
 
+        函数的URN（Uniform Resource Name），唯一标识函数。
 
         :param function_urn: The function_urn of this ListEventsRequest.
         :type: str

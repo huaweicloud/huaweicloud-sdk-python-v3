@@ -31,7 +31,7 @@ class CreateResourceTagResponse(SdkResponse):
     def __init__(self):
         """CreateResourceTagResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateResourceTagResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

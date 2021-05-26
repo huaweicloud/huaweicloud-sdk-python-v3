@@ -37,7 +37,7 @@ class SendVeriCodeForChangePwdResponse(SdkResponse):
     def __init__(self, expire=None, bind_phone=None, bind_email=None):
         """SendVeriCodeForChangePwdResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(SendVeriCodeForChangePwdResponse, self).__init__()
 
         self._expire = None
         self._bind_phone = None

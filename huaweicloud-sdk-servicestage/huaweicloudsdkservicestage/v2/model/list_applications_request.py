@@ -60,6 +60,7 @@ class ListApplicationsRequest:
     def limit(self):
         """Gets the limit of this ListApplicationsRequest.
 
+        指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
         :return: The limit of this ListApplicationsRequest.
         :rtype: int
@@ -70,6 +71,7 @@ class ListApplicationsRequest:
     def limit(self, limit):
         """Sets the limit of this ListApplicationsRequest.
 
+        指定个数，明确指定的时候用于分页，取值[0, 100]。不指定的时候表示不分页，最多查询1000条记录。
 
         :param limit: The limit of this ListApplicationsRequest.
         :type: int
@@ -80,6 +82,7 @@ class ListApplicationsRequest:
     def offset(self):
         """Gets the offset of this ListApplicationsRequest.
 
+        指定查询偏移量，默认偏移量为0.
 
         :return: The offset of this ListApplicationsRequest.
         :rtype: int
@@ -90,6 +93,7 @@ class ListApplicationsRequest:
     def offset(self, offset):
         """Sets the offset of this ListApplicationsRequest.
 
+        指定查询偏移量，默认偏移量为0.
 
         :param offset: The offset of this ListApplicationsRequest.
         :type: int
@@ -100,6 +104,7 @@ class ListApplicationsRequest:
     def order_by(self):
         """Gets the order_by of this ListApplicationsRequest.
 
+        排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
         :return: The order_by of this ListApplicationsRequest.
         :rtype: str
@@ -110,6 +115,7 @@ class ListApplicationsRequest:
     def order_by(self, order_by):
         """Sets the order_by of this ListApplicationsRequest.
 
+        排序字段，默认按创建时间排序。  排序字段支持枚举值：create_time、name、update_time。 
 
         :param order_by: The order_by of this ListApplicationsRequest.
         :type: str
@@ -120,6 +126,7 @@ class ListApplicationsRequest:
     def order(self):
         """Gets the order of this ListApplicationsRequest.
 
+        desc/asc，默认desc。
 
         :return: The order of this ListApplicationsRequest.
         :rtype: str
@@ -130,6 +137,7 @@ class ListApplicationsRequest:
     def order(self, order):
         """Sets the order of this ListApplicationsRequest.
 
+        desc/asc，默认desc。
 
         :param order: The order of this ListApplicationsRequest.
         :type: str

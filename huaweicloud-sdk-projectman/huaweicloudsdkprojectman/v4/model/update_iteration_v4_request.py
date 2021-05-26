@@ -53,6 +53,7 @@ class UpdateIterationV4Request:
     def project_id(self):
         """Gets the project_id of this UpdateIterationV4Request.
 
+        项目id
 
         :return: The project_id of this UpdateIterationV4Request.
         :rtype: str
@@ -63,6 +64,7 @@ class UpdateIterationV4Request:
     def project_id(self, project_id):
         """Sets the project_id of this UpdateIterationV4Request.
 
+        项目id
 
         :param project_id: The project_id of this UpdateIterationV4Request.
         :type: str
@@ -73,6 +75,7 @@ class UpdateIterationV4Request:
     def iteration_id(self):
         """Gets the iteration_id of this UpdateIterationV4Request.
 
+        迭代id
 
         :return: The iteration_id of this UpdateIterationV4Request.
         :rtype: int
@@ -83,6 +86,7 @@ class UpdateIterationV4Request:
     def iteration_id(self, iteration_id):
         """Sets the iteration_id of this UpdateIterationV4Request.
 
+        迭代id
 
         :param iteration_id: The iteration_id of this UpdateIterationV4Request.
         :type: int

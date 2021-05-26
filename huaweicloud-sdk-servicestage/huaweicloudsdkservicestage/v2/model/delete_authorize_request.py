@@ -44,6 +44,7 @@ class DeleteAuthorizeRequest:
     def name(self):
         """Gets the name of this DeleteAuthorizeRequest.
 
+        授权名称。
 
         :return: The name of this DeleteAuthorizeRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteAuthorizeRequest:
     def name(self, name):
         """Sets the name of this DeleteAuthorizeRequest.
 
+        授权名称。
 
         :param name: The name of this DeleteAuthorizeRequest.
         :type: str

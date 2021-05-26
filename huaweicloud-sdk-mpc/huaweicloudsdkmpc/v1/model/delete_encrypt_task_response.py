@@ -31,7 +31,7 @@ class DeleteEncryptTaskResponse(SdkResponse):
     def __init__(self):
         """DeleteEncryptTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteEncryptTaskResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

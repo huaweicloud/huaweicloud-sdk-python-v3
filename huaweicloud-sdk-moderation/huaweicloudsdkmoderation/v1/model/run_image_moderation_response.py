@@ -33,7 +33,7 @@ class RunImageModerationResponse(SdkResponse):
     def __init__(self, result=None):
         """RunImageModerationResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RunImageModerationResponse, self).__init__()
 
         self._result = None
         self.discriminator = None

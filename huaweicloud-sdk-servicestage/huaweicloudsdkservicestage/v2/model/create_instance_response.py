@@ -35,7 +35,7 @@ class CreateInstanceResponse(SdkResponse):
     def __init__(self, instance_id=None, job_id=None):
         """CreateInstanceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateInstanceResponse, self).__init__()
 
         self._instance_id = None
         self._job_id = None

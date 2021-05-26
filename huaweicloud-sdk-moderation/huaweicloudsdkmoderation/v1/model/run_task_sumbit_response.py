@@ -33,7 +33,7 @@ class RunTaskSumbitResponse(SdkResponse):
     def __init__(self, result=None):
         """RunTaskSumbitResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RunTaskSumbitResponse, self).__init__()
 
         self._result = None
         self.discriminator = None

@@ -28,7 +28,7 @@ class ShowClusterRespClusterBrokers:
         'broker_id': 'str',
         'is_controller': 'bool',
         'version': 'str',
-        'register_time': 'str',
+        'register_time': 'int',
         'is_health': 'bool'
     }
 
@@ -188,7 +188,7 @@ class ShowClusterRespClusterBrokers:
         broker注册时间，为unix时间戳格式。
 
         :return: The register_time of this ShowClusterRespClusterBrokers.
-        :rtype: str
+        :rtype: int
         """
         return self._register_time
 
@@ -199,7 +199,7 @@ class ShowClusterRespClusterBrokers:
         broker注册时间，为unix时间戳格式。
 
         :param register_time: The register_time of this ShowClusterRespClusterBrokers.
-        :type: str
+        :type: int
         """
         self._register_time = register_time
 

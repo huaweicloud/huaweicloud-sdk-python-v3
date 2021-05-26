@@ -31,7 +31,7 @@ class DeleteApplicationConfigurationResponse(SdkResponse):
     def __init__(self):
         """DeleteApplicationConfigurationResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteApplicationConfigurationResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

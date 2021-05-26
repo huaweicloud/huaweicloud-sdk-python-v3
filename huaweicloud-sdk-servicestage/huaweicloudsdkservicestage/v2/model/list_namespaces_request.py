@@ -44,6 +44,7 @@ class ListNamespacesRequest:
     def x_repo_auth(self):
         """Gets the x_repo_auth of this ListNamespacesRequest.
 
+        授权名称。
 
         :return: The x_repo_auth of this ListNamespacesRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListNamespacesRequest:
     def x_repo_auth(self, x_repo_auth):
         """Sets the x_repo_auth of this ListNamespacesRequest.
 
+        授权名称。
 
         :param x_repo_auth: The x_repo_auth of this ListNamespacesRequest.
         :type: str

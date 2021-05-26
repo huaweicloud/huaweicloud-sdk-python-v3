@@ -33,7 +33,7 @@ class CreatePrivateipResponse(SdkResponse):
     def __init__(self, privateips=None):
         """CreatePrivateipResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreatePrivateipResponse, self).__init__()
 
         self._privateips = None
         self.discriminator = None

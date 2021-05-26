@@ -41,7 +41,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
     def __init__(self, shadow_image=None, cut_image=None, point_y=None, token=None, expire=None):
         """SendSlideVerifyCodeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(SendSlideVerifyCodeResponse, self).__init__()
 
         self._shadow_image = None
         self._cut_image = None

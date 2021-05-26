@@ -25,18 +25,16 @@ class DeleteCorpRequest:
     openapi_types = {
         'x_request_id': 'str',
         'accept_language': 'str',
-        'id': 'str',
-        'force_delete': 'bool'
+        'id': 'str'
     }
 
     attribute_map = {
         'x_request_id': 'X-Request-Id',
         'accept_language': 'Accept-Language',
-        'id': 'id',
-        'force_delete': 'forceDelete'
+        'id': 'id'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, id=None, force_delete=None):
+    def __init__(self, x_request_id=None, accept_language=None, id=None):
         """DeleteCorpRequest - a model defined in huaweicloud sdk"""
         
         
@@ -44,7 +42,6 @@ class DeleteCorpRequest:
         self._x_request_id = None
         self._accept_language = None
         self._id = None
-        self._force_delete = None
         self.discriminator = None
 
         if x_request_id is not None:
@@ -52,13 +49,12 @@ class DeleteCorpRequest:
         if accept_language is not None:
             self.accept_language = accept_language
         self.id = id
-        if force_delete is not None:
-            self.force_delete = force_delete
 
     @property
     def x_request_id(self):
         """Gets the x_request_id of this DeleteCorpRequest.
 
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :return: The x_request_id of this DeleteCorpRequest.
         :rtype: str
@@ -69,6 +65,7 @@ class DeleteCorpRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this DeleteCorpRequest.
 
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this DeleteCorpRequest.
         :type: str
@@ -79,6 +76,7 @@ class DeleteCorpRequest:
     def accept_language(self):
         """Gets the accept_language of this DeleteCorpRequest.
 
+        语言参数，默认为中文zh_CN, 英文为en_US
 
         :return: The accept_language of this DeleteCorpRequest.
         :rtype: str
@@ -89,6 +87,7 @@ class DeleteCorpRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this DeleteCorpRequest.
 
+        语言参数，默认为中文zh_CN, 英文为en_US
 
         :param accept_language: The accept_language of this DeleteCorpRequest.
         :type: str
@@ -99,6 +98,7 @@ class DeleteCorpRequest:
     def id(self):
         """Gets the id of this DeleteCorpRequest.
 
+        企业id
 
         :return: The id of this DeleteCorpRequest.
         :rtype: str
@@ -109,31 +109,12 @@ class DeleteCorpRequest:
     def id(self, id):
         """Sets the id of this DeleteCorpRequest.
 
+        企业id
 
         :param id: The id of this DeleteCorpRequest.
         :type: str
         """
         self._id = id
-
-    @property
-    def force_delete(self):
-        """Gets the force_delete of this DeleteCorpRequest.
-
-
-        :return: The force_delete of this DeleteCorpRequest.
-        :rtype: bool
-        """
-        return self._force_delete
-
-    @force_delete.setter
-    def force_delete(self, force_delete):
-        """Sets the force_delete of this DeleteCorpRequest.
-
-
-        :param force_delete: The force_delete of this DeleteCorpRequest.
-        :type: bool
-        """
-        self._force_delete = force_delete
 
     def to_dict(self):
         """Returns the model properties as a dict"""

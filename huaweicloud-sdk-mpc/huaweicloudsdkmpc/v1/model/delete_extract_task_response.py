@@ -31,7 +31,7 @@ class DeleteExtractTaskResponse(SdkResponse):
     def __init__(self):
         """DeleteExtractTaskResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteExtractTaskResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

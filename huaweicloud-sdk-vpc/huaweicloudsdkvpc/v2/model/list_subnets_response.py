@@ -33,7 +33,7 @@ class ListSubnetsResponse(SdkResponse):
     def __init__(self, subnets=None):
         """ListSubnetsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSubnetsResponse, self).__init__()
 
         self._subnets = None
         self.discriminator = None

@@ -52,6 +52,7 @@ class DeleteRepoTagRequest:
     def namespace(self):
         """Gets the namespace of this DeleteRepoTagRequest.
 
+        组织名称
 
         :return: The namespace of this DeleteRepoTagRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class DeleteRepoTagRequest:
     def namespace(self, namespace):
         """Sets the namespace of this DeleteRepoTagRequest.
 
+        组织名称
 
         :param namespace: The namespace of this DeleteRepoTagRequest.
         :type: str
@@ -72,6 +74,7 @@ class DeleteRepoTagRequest:
     def repository(self):
         """Gets the repository of this DeleteRepoTagRequest.
 
+        镜像仓库名称
 
         :return: The repository of this DeleteRepoTagRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class DeleteRepoTagRequest:
     def repository(self, repository):
         """Sets the repository of this DeleteRepoTagRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this DeleteRepoTagRequest.
         :type: str
@@ -92,6 +96,7 @@ class DeleteRepoTagRequest:
     def tag(self):
         """Gets the tag of this DeleteRepoTagRequest.
 
+        镜像版本名称
 
         :return: The tag of this DeleteRepoTagRequest.
         :rtype: str
@@ -102,6 +107,7 @@ class DeleteRepoTagRequest:
     def tag(self, tag):
         """Sets the tag of this DeleteRepoTagRequest.
 
+        镜像版本名称
 
         :param tag: The tag of this DeleteRepoTagRequest.
         :type: str

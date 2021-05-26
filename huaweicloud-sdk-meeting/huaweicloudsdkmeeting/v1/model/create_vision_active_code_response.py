@@ -23,16 +23,45 @@ class CreateVisionActiveCodeResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'active_code': 'str'
     }
 
     attribute_map = {
+        'active_code': 'activeCode'
     }
 
-    def __init__(self):
+    def __init__(self, active_code=None):
         """CreateVisionActiveCodeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateVisionActiveCodeResponse, self).__init__()
+
+        self._active_code = None
         self.discriminator = None
+
+        if active_code is not None:
+            self.active_code = active_code
+
+    @property
+    def active_code(self):
+        """Gets the active_code of this CreateVisionActiveCodeResponse.
+
+        激活码
+
+        :return: The active_code of this CreateVisionActiveCodeResponse.
+        :rtype: str
+        """
+        return self._active_code
+
+    @active_code.setter
+    def active_code(self, active_code):
+        """Sets the active_code of this CreateVisionActiveCodeResponse.
+
+        激活码
+
+        :param active_code: The active_code of this CreateVisionActiveCodeResponse.
+        :type: str
+        """
+        self._active_code = active_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

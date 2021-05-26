@@ -33,7 +33,7 @@ class RecognizeBankcardResponse(SdkResponse):
     def __init__(self, result=None):
         """RecognizeBankcardResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RecognizeBankcardResponse, self).__init__()
 
         self._result = None
         self.discriminator = None

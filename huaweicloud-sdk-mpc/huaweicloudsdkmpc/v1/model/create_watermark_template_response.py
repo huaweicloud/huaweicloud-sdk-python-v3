@@ -33,7 +33,7 @@ class CreateWatermarkTemplateResponse(SdkResponse):
     def __init__(self, template_id=None):
         """CreateWatermarkTemplateResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateWatermarkTemplateResponse, self).__init__()
 
         self._template_id = None
         self.discriminator = None

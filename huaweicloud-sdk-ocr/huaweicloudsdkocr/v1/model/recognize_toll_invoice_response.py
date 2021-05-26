@@ -33,7 +33,7 @@ class RecognizeTollInvoiceResponse(SdkResponse):
     def __init__(self, result=None):
         """RecognizeTollInvoiceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RecognizeTollInvoiceResponse, self).__init__()
 
         self._result = None
         self.discriminator = None

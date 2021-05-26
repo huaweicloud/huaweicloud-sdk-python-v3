@@ -85,6 +85,7 @@ class ListSecurityGroupRulesRequest:
     def limit(self):
         """Gets the limit of this ListSecurityGroupRulesRequest.
 
+        功能说明：每页返回个数 取值范围：0-2000
 
         :return: The limit of this ListSecurityGroupRulesRequest.
         :rtype: int
@@ -95,6 +96,7 @@ class ListSecurityGroupRulesRequest:
     def limit(self, limit):
         """Sets the limit of this ListSecurityGroupRulesRequest.
 
+        功能说明：每页返回个数 取值范围：0-2000
 
         :param limit: The limit of this ListSecurityGroupRulesRequest.
         :type: int
@@ -105,6 +107,7 @@ class ListSecurityGroupRulesRequest:
     def marker(self):
         """Gets the marker of this ListSecurityGroupRulesRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :return: The marker of this ListSecurityGroupRulesRequest.
         :rtype: str
@@ -115,6 +118,7 @@ class ListSecurityGroupRulesRequest:
     def marker(self, marker):
         """Sets the marker of this ListSecurityGroupRulesRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListSecurityGroupRulesRequest.
         :type: str
@@ -125,6 +129,7 @@ class ListSecurityGroupRulesRequest:
     def id(self):
         """Gets the id of this ListSecurityGroupRulesRequest.
 
+        功能说明：安全组规则ID，支持多个ID过滤
 
         :return: The id of this ListSecurityGroupRulesRequest.
         :rtype: list[str]
@@ -135,6 +140,7 @@ class ListSecurityGroupRulesRequest:
     def id(self, id):
         """Sets the id of this ListSecurityGroupRulesRequest.
 
+        功能说明：安全组规则ID，支持多个ID过滤
 
         :param id: The id of this ListSecurityGroupRulesRequest.
         :type: list[str]
@@ -145,6 +151,7 @@ class ListSecurityGroupRulesRequest:
     def security_group_id(self):
         """Gets the security_group_id of this ListSecurityGroupRulesRequest.
 
+        功能说明：安全组规则所属安全组ID，支持多个ID过滤
 
         :return: The security_group_id of this ListSecurityGroupRulesRequest.
         :rtype: list[str]
@@ -155,6 +162,7 @@ class ListSecurityGroupRulesRequest:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this ListSecurityGroupRulesRequest.
 
+        功能说明：安全组规则所属安全组ID，支持多个ID过滤
 
         :param security_group_id: The security_group_id of this ListSecurityGroupRulesRequest.
         :type: list[str]
@@ -165,6 +173,7 @@ class ListSecurityGroupRulesRequest:
     def protocol(self):
         """Gets the protocol of this ListSecurityGroupRulesRequest.
 
+        功能说明：安全组规则协议，支持多条过滤
 
         :return: The protocol of this ListSecurityGroupRulesRequest.
         :rtype: list[str]
@@ -175,6 +184,7 @@ class ListSecurityGroupRulesRequest:
     def protocol(self, protocol):
         """Sets the protocol of this ListSecurityGroupRulesRequest.
 
+        功能说明：安全组规则协议，支持多条过滤
 
         :param protocol: The protocol of this ListSecurityGroupRulesRequest.
         :type: list[str]
@@ -185,6 +195,7 @@ class ListSecurityGroupRulesRequest:
     def description(self):
         """Gets the description of this ListSecurityGroupRulesRequest.
 
+        功能说明：安全组规则的描述，支持多个描述同时过滤
 
         :return: The description of this ListSecurityGroupRulesRequest.
         :rtype: list[str]
@@ -195,6 +206,7 @@ class ListSecurityGroupRulesRequest:
     def description(self, description):
         """Sets the description of this ListSecurityGroupRulesRequest.
 
+        功能说明：安全组规则的描述，支持多个描述同时过滤
 
         :param description: The description of this ListSecurityGroupRulesRequest.
         :type: list[str]
@@ -205,6 +217,7 @@ class ListSecurityGroupRulesRequest:
     def remote_group_id(self):
         """Gets the remote_group_id of this ListSecurityGroupRulesRequest.
 
+        功能说明：远端安全组ID，支持多ID过滤
 
         :return: The remote_group_id of this ListSecurityGroupRulesRequest.
         :rtype: list[str]
@@ -215,6 +228,7 @@ class ListSecurityGroupRulesRequest:
     def remote_group_id(self, remote_group_id):
         """Sets the remote_group_id of this ListSecurityGroupRulesRequest.
 
+        功能说明：远端安全组ID，支持多ID过滤
 
         :param remote_group_id: The remote_group_id of this ListSecurityGroupRulesRequest.
         :type: list[str]
@@ -225,6 +239,7 @@ class ListSecurityGroupRulesRequest:
     def direction(self):
         """Gets the direction of this ListSecurityGroupRulesRequest.
 
+        功能说明：安全组规则方向
 
         :return: The direction of this ListSecurityGroupRulesRequest.
         :rtype: str
@@ -235,6 +250,7 @@ class ListSecurityGroupRulesRequest:
     def direction(self, direction):
         """Sets the direction of this ListSecurityGroupRulesRequest.
 
+        功能说明：安全组规则方向
 
         :param direction: The direction of this ListSecurityGroupRulesRequest.
         :type: str
@@ -245,6 +261,7 @@ class ListSecurityGroupRulesRequest:
     def action(self):
         """Gets the action of this ListSecurityGroupRulesRequest.
 
+        功能说明：安全组规则生效策略
 
         :return: The action of this ListSecurityGroupRulesRequest.
         :rtype: str
@@ -255,6 +272,7 @@ class ListSecurityGroupRulesRequest:
     def action(self, action):
         """Sets the action of this ListSecurityGroupRulesRequest.
 
+        功能说明：安全组规则生效策略
 
         :param action: The action of this ListSecurityGroupRulesRequest.
         :type: str

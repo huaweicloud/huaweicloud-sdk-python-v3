@@ -37,7 +37,7 @@ class ListRetirableGrantsResponse(SdkResponse):
     def __init__(self, grants=None, next_marker=None, truncated=None):
         """ListRetirableGrantsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListRetirableGrantsResponse, self).__init__()
 
         self._grants = None
         self._next_marker = None

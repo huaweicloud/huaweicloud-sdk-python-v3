@@ -33,7 +33,7 @@ class ListTreesResponse(SdkResponse):
     def __init__(self, paths=None):
         """ListTreesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListTreesResponse, self).__init__()
 
         self._paths = None
         self.discriminator = None

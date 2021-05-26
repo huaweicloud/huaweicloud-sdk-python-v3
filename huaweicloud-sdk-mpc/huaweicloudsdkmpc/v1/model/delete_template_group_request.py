@@ -44,6 +44,7 @@ class DeleteTemplateGroupRequest:
     def group_id(self):
         """Gets the group_id of this DeleteTemplateGroupRequest.
 
+        模板组id 
 
         :return: The group_id of this DeleteTemplateGroupRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteTemplateGroupRequest:
     def group_id(self, group_id):
         """Sets the group_id of this DeleteTemplateGroupRequest.
 
+        模板组id 
 
         :param group_id: The group_id of this DeleteTemplateGroupRequest.
         :type: str

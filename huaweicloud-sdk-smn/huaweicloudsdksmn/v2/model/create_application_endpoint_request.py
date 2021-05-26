@@ -49,6 +49,7 @@ class CreateApplicationEndpointRequest:
     def application_urn(self):
         """Gets the application_urn of this CreateApplicationEndpointRequest.
 
+        Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/smn_api_57004.html)获取该标识。
 
         :return: The application_urn of this CreateApplicationEndpointRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateApplicationEndpointRequest:
     def application_urn(self, application_urn):
         """Sets the application_urn of this CreateApplicationEndpointRequest.
 
+        Application的唯一资源标识，可通过[查询Application](https://support.huaweicloud.com/api-smn/smn_api_57004.html)获取该标识。
 
         :param application_urn: The application_urn of this CreateApplicationEndpointRequest.
         :type: str

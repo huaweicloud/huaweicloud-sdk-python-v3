@@ -45,6 +45,7 @@ class ShowDomainRequest:
     def domain(self):
         """Gets the domain of this ShowDomainRequest.
 
+        直播域名，如果不设置此字段，则返回租户所有的域名信息
 
         :return: The domain of this ShowDomainRequest.
         :rtype: str
@@ -55,6 +56,7 @@ class ShowDomainRequest:
     def domain(self, domain):
         """Sets the domain of this ShowDomainRequest.
 
+        直播域名，如果不设置此字段，则返回租户所有的域名信息
 
         :param domain: The domain of this ShowDomainRequest.
         :type: str

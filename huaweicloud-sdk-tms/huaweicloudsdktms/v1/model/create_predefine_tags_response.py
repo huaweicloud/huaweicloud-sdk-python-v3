@@ -31,7 +31,7 @@ class CreatePredefineTagsResponse(SdkResponse):
     def __init__(self):
         """CreatePredefineTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreatePredefineTagsResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

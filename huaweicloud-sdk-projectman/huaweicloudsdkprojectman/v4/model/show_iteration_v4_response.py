@@ -55,7 +55,7 @@ class ShowIterationV4Response(SdkResponse):
     def __init__(self, begin_time=None, charts=None, closed_total=None, created_time=None, end_time=None, have_task=None, iteration_id=None, name=None, opened_total=None, progress=None, total=None, updated_time=None):
         """ShowIterationV4Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowIterationV4Response, self).__init__()
 
         self._begin_time = None
         self._charts = None

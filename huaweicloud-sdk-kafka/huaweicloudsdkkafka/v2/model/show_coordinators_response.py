@@ -33,7 +33,7 @@ class ShowCoordinatorsResponse(SdkResponse):
     def __init__(self, coordinators=None):
         """ShowCoordinatorsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowCoordinatorsResponse, self).__init__()
 
         self._coordinators = None
         self.discriminator = None

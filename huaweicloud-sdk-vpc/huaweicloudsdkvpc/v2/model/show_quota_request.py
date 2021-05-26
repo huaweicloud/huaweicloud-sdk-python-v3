@@ -45,6 +45,7 @@ class ShowQuotaRequest:
     def type(self):
         """Gets the type of this ShowQuotaRequest.
 
+        功能说明：根据type过滤查询指定类型的配额 取值范围：vpc，subnet，securityGroup，securityGroupRule，publicIp，vpn，vpngw，vpcPeer，firewall，shareBandwidth，shareBandwidthIP，loadbalancer，listener，physicalConnect，virtualInterface，vpcContainRoutetable，routetableContainRoutes
 
         :return: The type of this ShowQuotaRequest.
         :rtype: str
@@ -55,6 +56,7 @@ class ShowQuotaRequest:
     def type(self, type):
         """Sets the type of this ShowQuotaRequest.
 
+        功能说明：根据type过滤查询指定类型的配额 取值范围：vpc，subnet，securityGroup，securityGroupRule，publicIp，vpn，vpngw，vpcPeer，firewall，shareBandwidth，shareBandwidthIP，loadbalancer，listener，physicalConnect，virtualInterface，vpcContainRoutetable，routetableContainRoutes
 
         :param type: The type of this ShowQuotaRequest.
         :type: str

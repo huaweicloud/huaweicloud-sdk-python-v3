@@ -34,7 +34,8 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         'enable_sms': 'bool',
         'enable_cloud_disk': 'bool',
         'enable_pstn': 'bool',
-        'auto_user_create': 'bool'
+        'auto_user_create': 'bool',
+        'corp_type': 'int'
     }
 
     attribute_map = {
@@ -49,13 +50,14 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         'enable_sms': 'enableSMS',
         'enable_cloud_disk': 'enableCloudDisk',
         'enable_pstn': 'enablePstn',
-        'auto_user_create': 'autoUserCreate'
+        'auto_user_create': 'autoUserCreate',
+        'corp_type': 'corpType'
     }
 
-    def __init__(self, id=None, name=None, address=None, admin_name=None, account=None, phone=None, country=None, email=None, enable_sms=None, enable_cloud_disk=None, enable_pstn=None, auto_user_create=None):
+    def __init__(self, id=None, name=None, address=None, admin_name=None, account=None, phone=None, country=None, email=None, enable_sms=None, enable_cloud_disk=None, enable_pstn=None, auto_user_create=None, corp_type=None):
         """ShowCorpBasicInfoResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowCorpBasicInfoResponse, self).__init__()
 
         self._id = None
         self._name = None
@@ -69,6 +71,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         self._enable_cloud_disk = None
         self._enable_pstn = None
         self._auto_user_create = None
+        self._corp_type = None
         self.discriminator = None
 
         if id is not None:
@@ -95,6 +98,8 @@ class ShowCorpBasicInfoResponse(SdkResponse):
             self.enable_pstn = enable_pstn
         if auto_user_create is not None:
             self.auto_user_create = auto_user_create
+        if corp_type is not None:
+            self.corp_type = corp_type
 
     @property
     def id(self):
@@ -359,6 +364,28 @@ class ShowCorpBasicInfoResponse(SdkResponse):
         :type: bool
         """
         self._auto_user_create = auto_user_create
+
+    @property
+    def corp_type(self):
+        """Gets the corp_type of this ShowCorpBasicInfoResponse.
+
+        企业类型
+
+        :return: The corp_type of this ShowCorpBasicInfoResponse.
+        :rtype: int
+        """
+        return self._corp_type
+
+    @corp_type.setter
+    def corp_type(self, corp_type):
+        """Sets the corp_type of this ShowCorpBasicInfoResponse.
+
+        企业类型
+
+        :param corp_type: The corp_type of this ShowCorpBasicInfoResponse.
+        :type: int
+        """
+        self._corp_type = corp_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

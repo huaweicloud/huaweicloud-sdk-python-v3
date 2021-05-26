@@ -59,6 +59,7 @@ class BatchUpdateDevicesStatusRequest:
     def x_request_id(self):
         """Gets the x_request_id of this BatchUpdateDevicesStatusRequest.
 
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :return: The x_request_id of this BatchUpdateDevicesStatusRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class BatchUpdateDevicesStatusRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this BatchUpdateDevicesStatusRequest.
 
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this BatchUpdateDevicesStatusRequest.
         :type: str
@@ -79,6 +81,7 @@ class BatchUpdateDevicesStatusRequest:
     def accept_language(self):
         """Gets the accept_language of this BatchUpdateDevicesStatusRequest.
 
+        语言参数，默认为中文zh_CN, 英文为en_US
 
         :return: The accept_language of this BatchUpdateDevicesStatusRequest.
         :rtype: str
@@ -89,6 +92,7 @@ class BatchUpdateDevicesStatusRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this BatchUpdateDevicesStatusRequest.
 
+        语言参数，默认为中文zh_CN, 英文为en_US
 
         :param accept_language: The accept_language of this BatchUpdateDevicesStatusRequest.
         :type: str
@@ -99,6 +103,7 @@ class BatchUpdateDevicesStatusRequest:
     def value(self):
         """Gets the value of this BatchUpdateDevicesStatusRequest.
 
+        状态。 * 0、启用 * 1、停用 
 
         :return: The value of this BatchUpdateDevicesStatusRequest.
         :rtype: int
@@ -109,6 +114,7 @@ class BatchUpdateDevicesStatusRequest:
     def value(self, value):
         """Sets the value of this BatchUpdateDevicesStatusRequest.
 
+        状态。 * 0、启用 * 1、停用 
 
         :param value: The value of this BatchUpdateDevicesStatusRequest.
         :type: int

@@ -44,6 +44,7 @@ class ShowIterationV4Request:
     def iteration_id(self):
         """Gets the iteration_id of this ShowIterationV4Request.
 
+        迭代id
 
         :return: The iteration_id of this ShowIterationV4Request.
         :rtype: int
@@ -54,6 +55,7 @@ class ShowIterationV4Request:
     def iteration_id(self, iteration_id):
         """Sets the iteration_id of this ShowIterationV4Request.
 
+        迭代id
 
         :param iteration_id: The iteration_id of this ShowIterationV4Request.
         :type: int

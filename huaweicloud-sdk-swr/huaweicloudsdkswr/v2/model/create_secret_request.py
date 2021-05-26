@@ -45,6 +45,7 @@ class CreateSecretRequest:
     def projectname(self):
         """Gets the projectname of this CreateSecretRequest.
 
+        项目名称，缺省值默认为区域名称，例如：cn-north-1。 
 
         :return: The projectname of this CreateSecretRequest.
         :rtype: str
@@ -55,6 +56,7 @@ class CreateSecretRequest:
     def projectname(self, projectname):
         """Sets the projectname of this CreateSecretRequest.
 
+        项目名称，缺省值默认为区域名称，例如：cn-north-1。 
 
         :param projectname: The projectname of this CreateSecretRequest.
         :type: str

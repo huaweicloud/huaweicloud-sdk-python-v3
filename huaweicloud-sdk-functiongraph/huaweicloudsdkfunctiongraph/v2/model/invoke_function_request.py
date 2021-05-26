@@ -59,6 +59,7 @@ class InvokeFunctionRequest:
     def function_urn(self):
         """Gets the function_urn of this InvokeFunctionRequest.
 
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :return: The function_urn of this InvokeFunctionRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class InvokeFunctionRequest:
     def function_urn(self, function_urn):
         """Sets the function_urn of this InvokeFunctionRequest.
 
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this InvokeFunctionRequest.
         :type: str
@@ -79,6 +81,7 @@ class InvokeFunctionRequest:
     def x_cff_log_type(self):
         """Gets the x_cff_log_type of this InvokeFunctionRequest.
 
+        取值为：tail（返回函数执行后的4K日志），或者为空（不返回日志）。
 
         :return: The x_cff_log_type of this InvokeFunctionRequest.
         :rtype: str
@@ -89,6 +92,7 @@ class InvokeFunctionRequest:
     def x_cff_log_type(self, x_cff_log_type):
         """Sets the x_cff_log_type of this InvokeFunctionRequest.
 
+        取值为：tail（返回函数执行后的4K日志），或者为空（不返回日志）。
 
         :param x_cff_log_type: The x_cff_log_type of this InvokeFunctionRequest.
         :type: str
@@ -99,6 +103,7 @@ class InvokeFunctionRequest:
     def x_cff_request_version(self):
         """Gets the x_cff_request_version of this InvokeFunctionRequest.
 
+        返回体格式，取值v0,v1。
 
         :return: The x_cff_request_version of this InvokeFunctionRequest.
         :rtype: str
@@ -109,6 +114,7 @@ class InvokeFunctionRequest:
     def x_cff_request_version(self, x_cff_request_version):
         """Sets the x_cff_request_version of this InvokeFunctionRequest.
 
+        返回体格式，取值v0,v1。
 
         :param x_cff_request_version: The x_cff_request_version of this InvokeFunctionRequest.
         :type: str

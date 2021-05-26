@@ -47,7 +47,7 @@ class ListMessageTemplateDetailsResponse(SdkResponse):
     def __init__(self, message_template_id=None, message_template_name=None, protocol=None, tag_names=None, create_time=None, update_time=None, content=None, request_id=None):
         """ListMessageTemplateDetailsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListMessageTemplateDetailsResponse, self).__init__()
 
         self._message_template_id = None
         self._message_template_name = None

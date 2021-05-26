@@ -31,7 +31,7 @@ class DeleteDependencyResponse(SdkResponse):
     def __init__(self):
         """DeleteDependencyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteDependencyResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

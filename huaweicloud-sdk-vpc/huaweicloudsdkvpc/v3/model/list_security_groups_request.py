@@ -70,6 +70,7 @@ class ListSecurityGroupsRequest:
     def limit(self):
         """Gets the limit of this ListSecurityGroupsRequest.
 
+        功能说明：每页返回的个数 取值范围：0-2000
 
         :return: The limit of this ListSecurityGroupsRequest.
         :rtype: int
@@ -80,6 +81,7 @@ class ListSecurityGroupsRequest:
     def limit(self, limit):
         """Sets the limit of this ListSecurityGroupsRequest.
 
+        功能说明：每页返回的个数 取值范围：0-2000
 
         :param limit: The limit of this ListSecurityGroupsRequest.
         :type: int
@@ -90,6 +92,7 @@ class ListSecurityGroupsRequest:
     def marker(self):
         """Gets the marker of this ListSecurityGroupsRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :return: The marker of this ListSecurityGroupsRequest.
         :rtype: str
@@ -100,6 +103,7 @@ class ListSecurityGroupsRequest:
     def marker(self, marker):
         """Sets the marker of this ListSecurityGroupsRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListSecurityGroupsRequest.
         :type: str
@@ -110,6 +114,7 @@ class ListSecurityGroupsRequest:
     def id(self):
         """Gets the id of this ListSecurityGroupsRequest.
 
+        功能说明：安全组资源ID。可以使用该字段精确过滤安全组，支持多个ID
 
         :return: The id of this ListSecurityGroupsRequest.
         :rtype: list[str]
@@ -120,6 +125,7 @@ class ListSecurityGroupsRequest:
     def id(self, id):
         """Sets the id of this ListSecurityGroupsRequest.
 
+        功能说明：安全组资源ID。可以使用该字段精确过滤安全组，支持多个ID
 
         :param id: The id of this ListSecurityGroupsRequest.
         :type: list[str]
@@ -130,6 +136,7 @@ class ListSecurityGroupsRequest:
     def name(self):
         """Gets the name of this ListSecurityGroupsRequest.
 
+        功能说明：安全组名称。可以使用该字段精确过滤满足条件的安全组，支持传入多个name过滤
 
         :return: The name of this ListSecurityGroupsRequest.
         :rtype: list[str]
@@ -140,6 +147,7 @@ class ListSecurityGroupsRequest:
     def name(self, name):
         """Sets the name of this ListSecurityGroupsRequest.
 
+        功能说明：安全组名称。可以使用该字段精确过滤满足条件的安全组，支持传入多个name过滤
 
         :param name: The name of this ListSecurityGroupsRequest.
         :type: list[str]
@@ -150,6 +158,7 @@ class ListSecurityGroupsRequest:
     def description(self):
         """Gets the description of this ListSecurityGroupsRequest.
 
+        功能说明：安全组描述新增。可以使用该字段精确过滤安全组，支持传入多个描述进行过滤
 
         :return: The description of this ListSecurityGroupsRequest.
         :rtype: list[str]
@@ -160,6 +169,7 @@ class ListSecurityGroupsRequest:
     def description(self, description):
         """Sets the description of this ListSecurityGroupsRequest.
 
+        功能说明：安全组描述新增。可以使用该字段精确过滤安全组，支持传入多个描述进行过滤
 
         :param description: The description of this ListSecurityGroupsRequest.
         :type: list[str]
@@ -170,6 +180,7 @@ class ListSecurityGroupsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListSecurityGroupsRequest.
 
+        功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的安全组。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 约束：若需要查询当前用户所有有权限查看企业项目绑定的安全组，请传参all_granted_eps。
 
         :return: The enterprise_project_id of this ListSecurityGroupsRequest.
         :rtype: str
@@ -180,6 +191,7 @@ class ListSecurityGroupsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListSecurityGroupsRequest.
 
+        功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的安全组。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 约束：若需要查询当前用户所有有权限查看企业项目绑定的安全组，请传参all_granted_eps。
 
         :param enterprise_project_id: The enterprise_project_id of this ListSecurityGroupsRequest.
         :type: str

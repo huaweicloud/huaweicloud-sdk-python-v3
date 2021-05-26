@@ -50,6 +50,7 @@ class ListFunctionsRequest:
     def marker(self):
         """Gets the marker of this ListFunctionsRequest.
 
+        上一次查询到的最后的记录位置。
 
         :return: The marker of this ListFunctionsRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class ListFunctionsRequest:
     def marker(self, marker):
         """Sets the marker of this ListFunctionsRequest.
 
+        上一次查询到的最后的记录位置。
 
         :param marker: The marker of this ListFunctionsRequest.
         :type: str
@@ -70,6 +72,7 @@ class ListFunctionsRequest:
     def maxitems(self):
         """Gets the maxitems of this ListFunctionsRequest.
 
+        每次查询获取的最大函数记录数量 最大值：400 如果不提供该值或者提供的值大于400或等于0，则使用默认值：400 如果该值小于0，则返回参数错误。
 
         :return: The maxitems of this ListFunctionsRequest.
         :rtype: str
@@ -80,6 +83,7 @@ class ListFunctionsRequest:
     def maxitems(self, maxitems):
         """Sets the maxitems of this ListFunctionsRequest.
 
+        每次查询获取的最大函数记录数量 最大值：400 如果不提供该值或者提供的值大于400或等于0，则使用默认值：400 如果该值小于0，则返回参数错误。
 
         :param maxitems: The maxitems of this ListFunctionsRequest.
         :type: str

@@ -75,6 +75,7 @@ class ListVpcPeeringsRequest:
     def limit(self):
         """Gets the limit of this ListVpcPeeringsRequest.
 
+        每页返回的个数
 
         :return: The limit of this ListVpcPeeringsRequest.
         :rtype: int
@@ -85,6 +86,7 @@ class ListVpcPeeringsRequest:
     def limit(self, limit):
         """Sets the limit of this ListVpcPeeringsRequest.
 
+        每页返回的个数
 
         :param limit: The limit of this ListVpcPeeringsRequest.
         :type: int
@@ -95,6 +97,7 @@ class ListVpcPeeringsRequest:
     def marker(self):
         """Gets the marker of this ListVpcPeeringsRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :return: The marker of this ListVpcPeeringsRequest.
         :rtype: str
@@ -105,6 +108,7 @@ class ListVpcPeeringsRequest:
     def marker(self, marker):
         """Sets the marker of this ListVpcPeeringsRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListVpcPeeringsRequest.
         :type: str
@@ -115,6 +119,7 @@ class ListVpcPeeringsRequest:
     def id(self):
         """Gets the id of this ListVpcPeeringsRequest.
 
+        按照peering_id过滤查询
 
         :return: The id of this ListVpcPeeringsRequest.
         :rtype: str
@@ -125,6 +130,7 @@ class ListVpcPeeringsRequest:
     def id(self, id):
         """Sets the id of this ListVpcPeeringsRequest.
 
+        按照peering_id过滤查询
 
         :param id: The id of this ListVpcPeeringsRequest.
         :type: str
@@ -135,6 +141,7 @@ class ListVpcPeeringsRequest:
     def name(self):
         """Gets the name of this ListVpcPeeringsRequest.
 
+        功能说明：按照peering_name过查询  取值范围：最大长度不超过64
 
         :return: The name of this ListVpcPeeringsRequest.
         :rtype: str
@@ -145,6 +152,7 @@ class ListVpcPeeringsRequest:
     def name(self, name):
         """Sets the name of this ListVpcPeeringsRequest.
 
+        功能说明：按照peering_name过查询  取值范围：最大长度不超过64
 
         :param name: The name of this ListVpcPeeringsRequest.
         :type: str
@@ -155,6 +163,7 @@ class ListVpcPeeringsRequest:
     def status(self):
         """Gets the status of this ListVpcPeeringsRequest.
 
+        根据status进行过滤  - PENDING_ACCEPTANCE：等待接受 - REJECTED：已拒绝。 - EXPIRED：已过期。 - DELETED：已删除。 - ACTIVE：活动的。
 
         :return: The status of this ListVpcPeeringsRequest.
         :rtype: str
@@ -165,6 +174,7 @@ class ListVpcPeeringsRequest:
     def status(self, status):
         """Sets the status of this ListVpcPeeringsRequest.
 
+        根据status进行过滤  - PENDING_ACCEPTANCE：等待接受 - REJECTED：已拒绝。 - EXPIRED：已过期。 - DELETED：已删除。 - ACTIVE：活动的。
 
         :param status: The status of this ListVpcPeeringsRequest.
         :type: str
@@ -175,6 +185,7 @@ class ListVpcPeeringsRequest:
     def tenant_id(self):
         """Gets the tenant_id of this ListVpcPeeringsRequest.
 
+        按照项目ID过滤查询
 
         :return: The tenant_id of this ListVpcPeeringsRequest.
         :rtype: str
@@ -185,6 +196,7 @@ class ListVpcPeeringsRequest:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this ListVpcPeeringsRequest.
 
+        按照项目ID过滤查询
 
         :param tenant_id: The tenant_id of this ListVpcPeeringsRequest.
         :type: str
@@ -195,6 +207,7 @@ class ListVpcPeeringsRequest:
     def vpc_id(self):
         """Gets the vpc_id of this ListVpcPeeringsRequest.
 
+        根据vpc ID过滤查询
 
         :return: The vpc_id of this ListVpcPeeringsRequest.
         :rtype: str
@@ -205,6 +218,7 @@ class ListVpcPeeringsRequest:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this ListVpcPeeringsRequest.
 
+        根据vpc ID过滤查询
 
         :param vpc_id: The vpc_id of this ListVpcPeeringsRequest.
         :type: str

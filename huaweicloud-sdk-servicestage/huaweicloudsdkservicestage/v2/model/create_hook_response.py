@@ -37,7 +37,7 @@ class CreateHookResponse(SdkResponse):
     def __init__(self, id=None, type=None, callback_url=None):
         """CreateHookResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateHookResponse, self).__init__()
 
         self._id = None
         self._type = None

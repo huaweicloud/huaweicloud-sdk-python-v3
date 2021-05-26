@@ -45,7 +45,7 @@ class ShowProgramResponse(SdkResponse):
     def __init__(self, id=None, last_updated_by=None, update_time=None, program_name=None, material_size_str=None, play_time=None, program_item_list=None):
         """ShowProgramResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowProgramResponse, self).__init__()
 
         self._id = None
         self._last_updated_by = None

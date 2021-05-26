@@ -70,6 +70,7 @@ class ListEncryptTaskRequest:
     def task_id(self):
         """Gets the task_id of this ListEncryptTaskRequest.
 
+        独立加密任务ID。一次最多10个 
 
         :return: The task_id of this ListEncryptTaskRequest.
         :rtype: list[str]
@@ -80,6 +81,7 @@ class ListEncryptTaskRequest:
     def task_id(self, task_id):
         """Sets the task_id of this ListEncryptTaskRequest.
 
+        独立加密任务ID。一次最多10个 
 
         :param task_id: The task_id of this ListEncryptTaskRequest.
         :type: list[str]
@@ -90,6 +92,7 @@ class ListEncryptTaskRequest:
     def status(self):
         """Gets the status of this ListEncryptTaskRequest.
 
+        任务状态。  取值如下： - WAITING：等待启动 - PROCESSING：处理中 - SUCCEEDED：处理成功 - FAILED：处理失败 - CANCELED：已取消 
 
         :return: The status of this ListEncryptTaskRequest.
         :rtype: str
@@ -100,6 +103,7 @@ class ListEncryptTaskRequest:
     def status(self, status):
         """Sets the status of this ListEncryptTaskRequest.
 
+        任务状态。  取值如下： - WAITING：等待启动 - PROCESSING：处理中 - SUCCEEDED：处理成功 - FAILED：处理失败 - CANCELED：已取消 
 
         :param status: The status of this ListEncryptTaskRequest.
         :type: str
@@ -110,6 +114,7 @@ class ListEncryptTaskRequest:
     def start_time(self):
         """Gets the start_time of this ListEncryptTaskRequest.
 
+        起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
         :return: The start_time of this ListEncryptTaskRequest.
         :rtype: str
@@ -120,6 +125,7 @@ class ListEncryptTaskRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListEncryptTaskRequest.
 
+        起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
         :param start_time: The start_time of this ListEncryptTaskRequest.
         :type: str
@@ -130,6 +136,7 @@ class ListEncryptTaskRequest:
     def end_time(self):
         """Gets the end_time of this ListEncryptTaskRequest.
 
+        结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
         :return: The end_time of this ListEncryptTaskRequest.
         :rtype: str
@@ -140,6 +147,7 @@ class ListEncryptTaskRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListEncryptTaskRequest.
 
+        结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。 
 
         :param end_time: The end_time of this ListEncryptTaskRequest.
         :type: str
@@ -150,6 +158,7 @@ class ListEncryptTaskRequest:
     def page(self):
         """Gets the page of this ListEncryptTaskRequest.
 
+        分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
         :return: The page of this ListEncryptTaskRequest.
         :rtype: int
@@ -160,6 +169,7 @@ class ListEncryptTaskRequest:
     def page(self, page):
         """Sets the page of this ListEncryptTaskRequest.
 
+        分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
         :param page: The page of this ListEncryptTaskRequest.
         :type: int
@@ -170,6 +180,7 @@ class ListEncryptTaskRequest:
     def size(self):
         """Gets the size of this ListEncryptTaskRequest.
 
+        每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
 
         :return: The size of this ListEncryptTaskRequest.
         :rtype: int
@@ -180,6 +191,7 @@ class ListEncryptTaskRequest:
     def size(self, size):
         """Sets the size of this ListEncryptTaskRequest.
 
+        每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
 
         :param size: The size of this ListEncryptTaskRequest.
         :type: int

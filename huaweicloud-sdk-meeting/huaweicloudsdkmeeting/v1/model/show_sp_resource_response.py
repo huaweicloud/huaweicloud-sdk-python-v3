@@ -59,7 +59,7 @@ class ShowSpResourceResponse(SdkResponse):
     def __init__(self, te1080p_hard_count=None, te720p_hard_count=None, te_soft_count=None, room_count=None, record_capability=None, conf_call_count=None, live_count=None, corp_count=None, third_party_hard_count=None, hw_vision_count=None, idea_hub_count=None, enable_pstn=None, enable_sms=None, group_list=None):
         """ShowSpResourceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowSpResourceResponse, self).__init__()
 
         self._te1080p_hard_count = None
         self._te720p_hard_count = None

@@ -35,7 +35,7 @@ class ListQualityEnhanceDefaultTemplateResponse(SdkResponse):
     def __init__(self, task_array=None, total=None):
         """ListQualityEnhanceDefaultTemplateResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListQualityEnhanceDefaultTemplateResponse, self).__init__()
 
         self._task_array = None
         self._total = None

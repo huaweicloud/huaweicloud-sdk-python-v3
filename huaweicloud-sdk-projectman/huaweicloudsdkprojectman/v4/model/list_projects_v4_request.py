@@ -73,6 +73,7 @@ class ListProjectsV4Request:
     def offset(self):
         """Gets the offset of this ListProjectsV4Request.
 
+        偏移量 从0开始
 
         :return: The offset of this ListProjectsV4Request.
         :rtype: int
@@ -83,6 +84,7 @@ class ListProjectsV4Request:
     def offset(self, offset):
         """Sets the offset of this ListProjectsV4Request.
 
+        偏移量 从0开始
 
         :param offset: The offset of this ListProjectsV4Request.
         :type: int
@@ -93,6 +95,7 @@ class ListProjectsV4Request:
     def limit(self):
         """Gets the limit of this ListProjectsV4Request.
 
+        条数 最小1条,最大1000
 
         :return: The limit of this ListProjectsV4Request.
         :rtype: int
@@ -103,6 +106,7 @@ class ListProjectsV4Request:
     def limit(self, limit):
         """Sets the limit of this ListProjectsV4Request.
 
+        条数 最小1条,最大1000
 
         :param limit: The limit of this ListProjectsV4Request.
         :type: int
@@ -113,6 +117,7 @@ class ListProjectsV4Request:
     def search(self):
         """Gets the search of this ListProjectsV4Request.
 
+        模糊查询项目名称或描述,不支持通配符等高级查询
 
         :return: The search of this ListProjectsV4Request.
         :rtype: str
@@ -123,6 +128,7 @@ class ListProjectsV4Request:
     def search(self, search):
         """Sets the search of this ListProjectsV4Request.
 
+        模糊查询项目名称或描述,不支持通配符等高级查询
 
         :param search: The search of this ListProjectsV4Request.
         :type: str
@@ -133,6 +139,7 @@ class ListProjectsV4Request:
     def project_type(self):
         """Gets the project_type of this ListProjectsV4Request.
 
+        项目类型 scrum|xboard
 
         :return: The project_type of this ListProjectsV4Request.
         :rtype: str
@@ -143,6 +150,7 @@ class ListProjectsV4Request:
     def project_type(self, project_type):
         """Sets the project_type of this ListProjectsV4Request.
 
+        项目类型 scrum|xboard
 
         :param project_type: The project_type of this ListProjectsV4Request.
         :type: str
@@ -153,6 +161,7 @@ class ListProjectsV4Request:
     def sort(self):
         """Gets the sort of this ListProjectsV4Request.
 
+        排序条件 默认创建时间降序(name|created_on)(asc|desc)
 
         :return: The sort of this ListProjectsV4Request.
         :rtype: str
@@ -163,6 +172,7 @@ class ListProjectsV4Request:
     def sort(self, sort):
         """Sets the sort of this ListProjectsV4Request.
 
+        排序条件 默认创建时间降序(name|created_on)(asc|desc)
 
         :param sort: The sort of this ListProjectsV4Request.
         :type: str
@@ -173,6 +183,7 @@ class ListProjectsV4Request:
     def archive(self):
         """Gets the archive of this ListProjectsV4Request.
 
+        是否归档 true已归档|false未归档
 
         :return: The archive of this ListProjectsV4Request.
         :rtype: str
@@ -183,6 +194,7 @@ class ListProjectsV4Request:
     def archive(self, archive):
         """Sets the archive of this ListProjectsV4Request.
 
+        是否归档 true已归档|false未归档
 
         :param archive: The archive of this ListProjectsV4Request.
         :type: str
@@ -193,6 +205,7 @@ class ListProjectsV4Request:
     def query_type(self):
         """Gets the query_type of this ListProjectsV4Request.
 
+        默认返回当前用户参与的项目列表,domain_projects租户下的所有项目列表,absent返回当前用户未参与的租户项目列表
 
         :return: The query_type of this ListProjectsV4Request.
         :rtype: str
@@ -203,6 +216,7 @@ class ListProjectsV4Request:
     def query_type(self, query_type):
         """Sets the query_type of this ListProjectsV4Request.
 
+        默认返回当前用户参与的项目列表,domain_projects租户下的所有项目列表,absent返回当前用户未参与的租户项目列表
 
         :param query_type: The query_type of this ListProjectsV4Request.
         :type: str

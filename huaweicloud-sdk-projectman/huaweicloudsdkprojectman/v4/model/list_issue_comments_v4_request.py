@@ -58,6 +58,7 @@ class ListIssueCommentsV4Request:
     def project_id(self):
         """Gets the project_id of this ListIssueCommentsV4Request.
 
+        项目id
 
         :return: The project_id of this ListIssueCommentsV4Request.
         :rtype: str
@@ -68,6 +69,7 @@ class ListIssueCommentsV4Request:
     def project_id(self, project_id):
         """Sets the project_id of this ListIssueCommentsV4Request.
 
+        项目id
 
         :param project_id: The project_id of this ListIssueCommentsV4Request.
         :type: str
@@ -78,6 +80,7 @@ class ListIssueCommentsV4Request:
     def issue_id(self):
         """Gets the issue_id of this ListIssueCommentsV4Request.
 
+        工作项id
 
         :return: The issue_id of this ListIssueCommentsV4Request.
         :rtype: int
@@ -88,6 +91,7 @@ class ListIssueCommentsV4Request:
     def issue_id(self, issue_id):
         """Sets the issue_id of this ListIssueCommentsV4Request.
 
+        工作项id
 
         :param issue_id: The issue_id of this ListIssueCommentsV4Request.
         :type: int
@@ -98,6 +102,7 @@ class ListIssueCommentsV4Request:
     def offset(self):
         """Gets the offset of this ListIssueCommentsV4Request.
 
+        分页索引，偏移量
 
         :return: The offset of this ListIssueCommentsV4Request.
         :rtype: int
@@ -108,6 +113,7 @@ class ListIssueCommentsV4Request:
     def offset(self, offset):
         """Sets the offset of this ListIssueCommentsV4Request.
 
+        分页索引，偏移量
 
         :param offset: The offset of this ListIssueCommentsV4Request.
         :type: int
@@ -118,6 +124,7 @@ class ListIssueCommentsV4Request:
     def limit(self):
         """Gets the limit of this ListIssueCommentsV4Request.
 
+        每页显示的条数,最大显示100条
 
         :return: The limit of this ListIssueCommentsV4Request.
         :rtype: int
@@ -128,6 +135,7 @@ class ListIssueCommentsV4Request:
     def limit(self, limit):
         """Sets the limit of this ListIssueCommentsV4Request.
 
+        每页显示的条数,最大显示100条
 
         :param limit: The limit of this ListIssueCommentsV4Request.
         :type: int

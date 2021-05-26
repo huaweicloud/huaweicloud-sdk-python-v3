@@ -43,7 +43,7 @@ class ListLiveStreamsOnlineResponse(SdkResponse):
     def __init__(self, total_page=None, total_num=None, offset=None, limit=None, request_id=None, streams=None):
         """ListLiveStreamsOnlineResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListLiveStreamsOnlineResponse, self).__init__()
 
         self._total_page = None
         self._total_num = None

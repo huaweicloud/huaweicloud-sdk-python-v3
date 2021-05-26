@@ -49,6 +49,7 @@ class CreatePersonalAuthRequest:
     def repo_type(self):
         """Gets the repo_type of this CreatePersonalAuthRequest.
 
+        仓库类型。 支持私人令牌授权的仓库类型有：github、gitlab、gitee。
 
         :return: The repo_type of this CreatePersonalAuthRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreatePersonalAuthRequest:
     def repo_type(self, repo_type):
         """Sets the repo_type of this CreatePersonalAuthRequest.
 
+        仓库类型。 支持私人令牌授权的仓库类型有：github、gitlab、gitee。
 
         :param repo_type: The repo_type of this CreatePersonalAuthRequest.
         :type: str

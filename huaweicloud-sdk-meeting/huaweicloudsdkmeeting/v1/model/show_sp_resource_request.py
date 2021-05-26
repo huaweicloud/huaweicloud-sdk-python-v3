@@ -55,6 +55,7 @@ class ShowSpResourceRequest:
     def x_request_id(self):
         """Gets the x_request_id of this ShowSpResourceRequest.
 
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :return: The x_request_id of this ShowSpResourceRequest.
         :rtype: str
@@ -65,6 +66,7 @@ class ShowSpResourceRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this ShowSpResourceRequest.
 
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this ShowSpResourceRequest.
         :type: str
@@ -75,6 +77,7 @@ class ShowSpResourceRequest:
     def accept_language(self):
         """Gets the accept_language of this ShowSpResourceRequest.
 
+        语言参数，默认为中文zh_CN, 英文为en_US
 
         :return: The accept_language of this ShowSpResourceRequest.
         :rtype: str
@@ -85,6 +88,7 @@ class ShowSpResourceRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this ShowSpResourceRequest.
 
+        语言参数，默认为中文zh_CN, 英文为en_US
 
         :param accept_language: The accept_language of this ShowSpResourceRequest.
         :type: str
@@ -95,6 +99,7 @@ class ShowSpResourceRequest:
     def query_group(self):
         """Gets the query_group of this ShowSpResourceRequest.
 
+        是否在查询资源信息时返回SP自主规划的媒体接入分组id，默认不查询
 
         :return: The query_group of this ShowSpResourceRequest.
         :rtype: bool
@@ -105,6 +110,7 @@ class ShowSpResourceRequest:
     def query_group(self, query_group):
         """Sets the query_group of this ShowSpResourceRequest.
 
+        是否在查询资源信息时返回SP自主规划的媒体接入分组id，默认不查询
 
         :param query_group: The query_group of this ShowSpResourceRequest.
         :type: bool

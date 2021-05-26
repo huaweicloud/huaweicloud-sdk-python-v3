@@ -48,26 +48,26 @@ class KafkaAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
-    def batch_create_or_delete_instance_tag_async(self, request):
+    def batch_create_or_delete_kafka_tag_async(self, request):
         """批量添加或删除实例标签
 
         批量添加或删除实例标签。
 
-        :param BatchCreateOrDeleteInstanceTagRequest request
-        :return: BatchCreateOrDeleteInstanceTagResponse
+        :param BatchCreateOrDeleteKafkaTagRequest request
+        :return: BatchCreateOrDeleteKafkaTagResponse
         """
-        return self.batch_create_or_delete_instance_tag_with_http_info(request)
+        return self.batch_create_or_delete_kafka_tag_with_http_info(request)
 
-    def batch_create_or_delete_instance_tag_with_http_info(self, request):
+    def batch_create_or_delete_kafka_tag_with_http_info(self, request):
         """批量添加或删除实例标签
 
         批量添加或删除实例标签。
 
-        :param BatchCreateOrDeleteInstanceTagRequest request
-        :return: BatchCreateOrDeleteInstanceTagResponse
+        :param BatchCreateOrDeleteKafkaTagRequest request
+        :return: BatchCreateOrDeleteKafkaTagResponse
         """
 
-        all_params = ['instance_id', 'batch_create_or_delete_instance_tag_request_body']
+        all_params = ['instance_id', 'batch_create_or_delete_kafka_tag_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -96,7 +96,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/kafka/{instance_id}/tags/action',
@@ -106,7 +106,7 @@ class KafkaAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='BatchCreateOrDeleteInstanceTagResponse',
+            response_type='BatchCreateOrDeleteKafkaTagResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -161,7 +161,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/topics/delete',
@@ -172,6 +172,71 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='BatchDeleteInstanceTopicResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_delete_instance_users_async(self, request):
+        """批量删除用户
+
+        批量删除Kafka实例的用户
+
+        :param BatchDeleteInstanceUsersRequest request
+        :return: BatchDeleteInstanceUsersResponse
+        """
+        return self.batch_delete_instance_users_with_http_info(request)
+
+    def batch_delete_instance_users_with_http_info(self, request):
+        """批量删除用户
+
+        批量删除Kafka实例的用户
+
+        :param BatchDeleteInstanceUsersRequest request
+        :return: BatchDeleteInstanceUsersResponse
+        """
+
+        all_params = ['instance_id', 'batch_delete_instance_users_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/users',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteInstanceUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -224,7 +289,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/action',
@@ -289,7 +354,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/connector',
@@ -354,7 +419,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/topics',
@@ -365,6 +430,71 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateInstanceTopicResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_instance_user_async(self, request):
+        """创建用户
+
+        创建Kafka实例的用户，用户可连接开启SASL的Kafka实例。
+
+        :param CreateInstanceUserRequest request
+        :return: CreateInstanceUserResponse
+        """
+        return self.create_instance_user_with_http_info(request)
+
+    def create_instance_user_with_http_info(self, request):
+        """创建用户
+
+        创建Kafka实例的用户，用户可连接开启SASL的Kafka实例。
+
+        :param CreateInstanceUserRequest request
+        :return: CreateInstanceUserResponse
+        """
+
+        all_params = ['instance_id', 'create_instance_user_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/users',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateInstanceUserResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -421,7 +551,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/management/topics/{topic}/partitions-reassignment',
@@ -484,7 +614,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances',
@@ -549,7 +679,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/connectors/{connector_id}/sink-tasks',
@@ -614,7 +744,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/tasks/{task_id}',
@@ -677,7 +807,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}',
@@ -742,7 +872,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/connectors/{connector_id}/sink-tasks/{task_id}',
@@ -803,7 +933,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/available-zones',
@@ -874,7 +1004,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/tasks',
@@ -937,7 +1067,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/topics',
@@ -1012,7 +1142,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances',
@@ -1075,7 +1205,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/products',
@@ -1138,7 +1268,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/connectors/{connector_id}/sink-tasks',
@@ -1203,7 +1333,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/kafka-manager-password',
@@ -1270,7 +1400,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/management/groups/{group}/reset-message-offset',
@@ -1335,7 +1465,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/password',
@@ -1346,6 +1476,73 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ResetPasswordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def reset_user_passwrod_async(self, request):
+        """重置用户密码
+
+        重置用户密码
+
+        :param ResetUserPasswrodRequest request
+        :return: ResetUserPasswrodResponse
+        """
+        return self.reset_user_passwrod_with_http_info(request)
+
+    def reset_user_passwrod_with_http_info(self, request):
+        """重置用户密码
+
+        重置用户密码
+
+        :param ResetUserPasswrodRequest request
+        :return: ResetUserPasswrodResponse
+        """
+
+        all_params = ['instance_id', 'user_name', 'reset_user_passwrod_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/users/{user_name}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ResetUserPasswrodResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1400,7 +1597,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/extend',
@@ -1463,7 +1660,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/restart-kafka-manager',
@@ -1528,7 +1725,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/tasks/{task_id}',
@@ -1591,7 +1788,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/ces-hierarchy',
@@ -1654,7 +1851,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/management/cluster',
@@ -1717,7 +1914,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/management/coordinators',
@@ -1782,7 +1979,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/management/groups/{group}',
@@ -1845,7 +2042,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}',
@@ -1912,7 +2109,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/extend',
@@ -1929,26 +2126,26 @@ class KafkaAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_instance_tags_async(self, request):
-        """查询实例标签
+    def show_instance_messages_async(self, request):
+        """查询消息
 
-        查询实例标签。
+        查询消息的偏移量和消息内容。 先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
 
-        :param ShowInstanceTagsRequest request
-        :return: ShowInstanceTagsResponse
+        :param ShowInstanceMessagesRequest request
+        :return: ShowInstanceMessagesResponse
         """
-        return self.show_instance_tags_with_http_info(request)
+        return self.show_instance_messages_with_http_info(request)
 
-    def show_instance_tags_with_http_info(self, request):
-        """查询实例标签
+    def show_instance_messages_with_http_info(self, request):
+        """查询消息
 
-        查询实例标签。
+        查询消息的偏移量和消息内容。 先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
 
-        :param ShowInstanceTagsRequest request
-        :return: ShowInstanceTagsResponse
+        :param ShowInstanceMessagesRequest request
+        :return: ShowInstanceMessagesResponse
         """
 
-        all_params = ['instance_id']
+        all_params = ['instance_id', 'topic', 'asc', 'start_time', 'end_time', 'limit', 'offset', 'download', 'message_offset', 'partition']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1961,6 +2158,24 @@ class KafkaAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'topic' in local_var_params:
+            query_params.append(('topic', local_var_params['topic']))
+        if 'asc' in local_var_params:
+            query_params.append(('asc', local_var_params['asc']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'download' in local_var_params:
+            query_params.append(('download', local_var_params['download']))
+        if 'message_offset' in local_var_params:
+            query_params.append(('message_offset', local_var_params['message_offset']))
+        if 'partition' in local_var_params:
+            query_params.append(('partition', local_var_params['partition']))
 
         header_params = {}
 
@@ -1975,17 +2190,17 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
-            resource_path='/v2/{project_id}/kafka/{instance_id}/tags',
+            resource_path='/v2/{project_id}/instances/{instance_id}/messages',
             method='GET',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowInstanceTagsResponse',
+            response_type='ShowInstanceMessagesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2040,7 +2255,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/management/topics/{topic}',
@@ -2051,6 +2266,262 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowInstanceTopicDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_instance_users_async(self, request):
+        """查询用户列表
+
+        查询用户列表。 Kafka实例开启SASL功能时，才支持多用户管理的功能。
+
+        :param ShowInstanceUsersRequest request
+        :return: ShowInstanceUsersResponse
+        """
+        return self.show_instance_users_with_http_info(request)
+
+    def show_instance_users_with_http_info(self, request):
+        """查询用户列表
+
+        查询用户列表。 Kafka实例开启SASL功能时，才支持多用户管理的功能。
+
+        :param ShowInstanceUsersRequest request
+        :return: ShowInstanceUsersResponse
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/users',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowInstanceUsersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_kafka_project_tags_async(self, request):
+        """查询项目标签
+
+        查询项目标签。
+
+        :param ShowKafkaProjectTagsRequest request
+        :return: ShowKafkaProjectTagsResponse
+        """
+        return self.show_kafka_project_tags_with_http_info(request)
+
+    def show_kafka_project_tags_with_http_info(self, request):
+        """查询项目标签
+
+        查询项目标签。
+
+        :param ShowKafkaProjectTagsRequest request
+        :return: ShowKafkaProjectTagsResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/kafka/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowKafkaProjectTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_kafka_tags_async(self, request):
+        """查询实例标签
+
+        查询实例标签。
+
+        :param ShowKafkaTagsRequest request
+        :return: ShowKafkaTagsResponse
+        """
+        return self.show_kafka_tags_with_http_info(request)
+
+    def show_kafka_tags_with_http_info(self, request):
+        """查询实例标签
+
+        查询实例标签。
+
+        :param ShowKafkaTagsRequest request
+        :return: ShowKafkaTagsResponse
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/kafka/{instance_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowKafkaTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_kafka_topic_partition_diskusage_async(self, request):
+        """查询topic的磁盘存储情况
+
+        查询topic在Broker上磁盘占用情况。
+
+        :param ShowKafkaTopicPartitionDiskusageRequest request
+        :return: ShowKafkaTopicPartitionDiskusageResponse
+        """
+        return self.show_kafka_topic_partition_diskusage_with_http_info(request)
+
+    def show_kafka_topic_partition_diskusage_with_http_info(self, request):
+        """查询topic的磁盘存储情况
+
+        查询topic在Broker上磁盘占用情况。
+
+        :param ShowKafkaTopicPartitionDiskusageRequest request
+        :return: ShowKafkaTopicPartitionDiskusageResponse
+        """
+
+        all_params = ['instance_id', 'min_size', 'top', 'percentage']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'min_size' in local_var_params:
+            query_params.append(('minSize', local_var_params['min_size']))
+        if 'top' in local_var_params:
+            query_params.append(('top', local_var_params['top']))
+        if 'percentage' in local_var_params:
+            query_params.append(('percentage', local_var_params['percentage']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/topics/diskusage',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowKafkaTopicPartitionDiskusageResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2101,7 +2572,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/instances/maintain-windows',
@@ -2176,7 +2647,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/management/topics/{topic}/messages',
@@ -2194,9 +2665,9 @@ class KafkaAsyncClient(Client):
 
 
     def show_partition_beginning_message_async(self, request):
-        """查询分区最新消息的位置
+        """查询分区最早消息的位置
 
-        查询分区最新消息的位置。
+        查询分区最早消息的位置。
 
         :param ShowPartitionBeginningMessageRequest request
         :return: ShowPartitionBeginningMessageResponse
@@ -2204,9 +2675,9 @@ class KafkaAsyncClient(Client):
         return self.show_partition_beginning_message_with_http_info(request)
 
     def show_partition_beginning_message_with_http_info(self, request):
-        """查询分区最新消息的位置
+        """查询分区最早消息的位置
 
-        查询分区最新消息的位置。
+        查询分区最早消息的位置。
 
         :param ShowPartitionBeginningMessageRequest request
         :return: ShowPartitionBeginningMessageResponse
@@ -2243,7 +2714,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/management/topics/{topic}/partitions/{partition}/beginning-message',
@@ -2261,9 +2732,9 @@ class KafkaAsyncClient(Client):
 
 
     def show_partition_end_message_async(self, request):
-        """查询分区最早消息的位置
+        """查询分区最新消息的位置
 
-        查询分区最早消息的位置。
+        查询分区最新消息的位置。
 
         :param ShowPartitionEndMessageRequest request
         :return: ShowPartitionEndMessageResponse
@@ -2271,9 +2742,9 @@ class KafkaAsyncClient(Client):
         return self.show_partition_end_message_with_http_info(request)
 
     def show_partition_end_message_with_http_info(self, request):
-        """查询分区最早消息的位置
+        """查询分区最新消息的位置
 
-        查询分区最早消息的位置。
+        查询分区最新消息的位置。
 
         :param ShowPartitionEndMessageRequest request
         :return: ShowPartitionEndMessageResponse
@@ -2310,7 +2781,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/management/topics/{topic}/partitions/{partition}/end-message',
@@ -2379,7 +2850,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/management/topics/{topic}/partitions/{partition}/message',
@@ -2390,67 +2861,6 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowPartitionMessageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def show_project_tags_async(self, request):
-        """查询项目标签
-
-        查询项目标签。
-
-        :param ShowProjectTagsRequest request
-        :return: ShowProjectTagsResponse
-        """
-        return self.show_project_tags_with_http_info(request)
-
-    def show_project_tags_with_http_info(self, request):
-        """查询项目标签
-
-        查询项目标签。
-
-        :param ShowProjectTagsRequest request
-        :return: ShowProjectTagsResponse
-        """
-
-        all_params = []
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/kafka/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowProjectTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2505,7 +2915,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/connectors/{connector_id}/sink-tasks/{task_id}',
@@ -2516,6 +2926,71 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowSinkTaskDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_topic_access_policy_async(self, request):
+        """查询用户权限
+
+        查询用户权限。 Kafka实例开启SASL功能时，才支持多用户管理的功能。
+
+        :param ShowTopicAccessPolicyRequest request
+        :return: ShowTopicAccessPolicyResponse
+        """
+        return self.show_topic_access_policy_with_http_info(request)
+
+    def show_topic_access_policy_with_http_info(self, request):
+        """查询用户权限
+
+        查询用户权限。 Kafka实例开启SASL功能时，才支持多用户管理的功能。
+
+        :param ShowTopicAccessPolicyRequest request
+        :return: ShowTopicAccessPolicyResponse
+        """
+
+        all_params = ['instance_id', 'topic_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'topic_name' in local_var_params:
+            path_params['topic_name'] = local_var_params['topic_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/topics/{topic_name}/accesspolicy',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowTopicAccessPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2570,7 +3045,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}',
@@ -2635,7 +3110,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/autotopic',
@@ -2700,7 +3175,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/crossvpc/modify',
@@ -2765,7 +3240,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/topics',
@@ -2830,7 +3305,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/connectors/{connector_id}/sink-tasks',
@@ -2841,6 +3316,71 @@ class KafkaAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateSinkTaskQuotaResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_topic_access_policy_async(self, request):
+        """设置用户权限
+
+        设置用户权限。 Kafka实例开启SASL功能时，才支持多用户管理的功能。
+
+        :param UpdateTopicAccessPolicyRequest request
+        :return: UpdateTopicAccessPolicyResponse
+        """
+        return self.update_topic_access_policy_with_http_info(request)
+
+    def update_topic_access_policy_with_http_info(self, request):
+        """设置用户权限
+
+        设置用户权限。 Kafka实例开启SASL功能时，才支持多用户管理的功能。
+
+        :param UpdateTopicAccessPolicyRequest request
+        :return: UpdateTopicAccessPolicyResponse
+        """
+
+        all_params = ['instance_id', 'update_topic_access_policy_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/instances/{instance_id}/topics/accesspolicy',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateTopicAccessPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2897,7 +3437,7 @@ class KafkaAsyncClient(Client):
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
 
-        auth_settings = []
+        auth_settings = ['apig-auth-iam']
 
         return self.call_api(
             resource_path='/v2/{project_id}/instances/{instance_id}/management/topics/{topic}/replicas-reassignment',

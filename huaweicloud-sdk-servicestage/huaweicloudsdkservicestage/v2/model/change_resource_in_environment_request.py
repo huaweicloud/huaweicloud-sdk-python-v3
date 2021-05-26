@@ -49,6 +49,7 @@ class ChangeResourceInEnvironmentRequest:
     def environment_id(self):
         """Gets the environment_id of this ChangeResourceInEnvironmentRequest.
 
+        环境ID。
 
         :return: The environment_id of this ChangeResourceInEnvironmentRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ChangeResourceInEnvironmentRequest:
     def environment_id(self, environment_id):
         """Sets the environment_id of this ChangeResourceInEnvironmentRequest.
 
+        环境ID。
 
         :param environment_id: The environment_id of this ChangeResourceInEnvironmentRequest.
         :type: str

@@ -37,7 +37,7 @@ class ListLiveSampleLogsResponse(SdkResponse):
     def __init__(self, total=None, domain=None, logs=None):
         """ListLiveSampleLogsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListLiveSampleLogsResponse, self).__init__()
 
         self._total = None
         self._domain = None

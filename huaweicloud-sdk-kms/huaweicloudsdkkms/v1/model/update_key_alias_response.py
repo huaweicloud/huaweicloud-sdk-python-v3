@@ -33,7 +33,7 @@ class UpdateKeyAliasResponse(SdkResponse):
     def __init__(self, key_info=None):
         """UpdateKeyAliasResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateKeyAliasResponse, self).__init__()
 
         self._key_info = None
         self.discriminator = None

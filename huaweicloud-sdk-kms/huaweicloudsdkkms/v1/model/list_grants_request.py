@@ -49,6 +49,7 @@ class ListGrantsRequest:
     def version_id(self):
         """Gets the version_id of this ListGrantsRequest.
 
+        API版本号
 
         :return: The version_id of this ListGrantsRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ListGrantsRequest:
     def version_id(self, version_id):
         """Sets the version_id of this ListGrantsRequest.
 
+        API版本号
 
         :param version_id: The version_id of this ListGrantsRequest.
         :type: str

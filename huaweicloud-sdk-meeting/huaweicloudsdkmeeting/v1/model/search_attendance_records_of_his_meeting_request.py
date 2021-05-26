@@ -79,6 +79,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     def conf_uuid(self):
         """Gets the conf_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
 
+        会议UUID。
 
         :return: The conf_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
         :rtype: str
@@ -89,6 +90,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     def conf_uuid(self, conf_uuid):
         """Sets the conf_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
 
+        会议UUID。
 
         :param conf_uuid: The conf_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
         :type: str
@@ -99,6 +101,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     def offset(self):
         """Gets the offset of this SearchAttendanceRecordsOfHisMeetingRequest.
 
+        指定返回的记录索引。该值必须大于等于0； 默认为0。
 
         :return: The offset of this SearchAttendanceRecordsOfHisMeetingRequest.
         :rtype: int
@@ -109,6 +112,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     def offset(self, offset):
         """Sets the offset of this SearchAttendanceRecordsOfHisMeetingRequest.
 
+        指定返回的记录索引。该值必须大于等于0； 默认为0。
 
         :param offset: The offset of this SearchAttendanceRecordsOfHisMeetingRequest.
         :type: int
@@ -119,6 +123,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     def limit(self):
         """Gets the limit of this SearchAttendanceRecordsOfHisMeetingRequest.
 
+        指定返回的记录数，默认是20，最大500条。
 
         :return: The limit of this SearchAttendanceRecordsOfHisMeetingRequest.
         :rtype: int
@@ -129,6 +134,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     def limit(self, limit):
         """Sets the limit of this SearchAttendanceRecordsOfHisMeetingRequest.
 
+        指定返回的记录数，默认是20，最大500条。
 
         :param limit: The limit of this SearchAttendanceRecordsOfHisMeetingRequest.
         :type: int
@@ -139,6 +145,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     def search_key(self):
         """Gets the search_key of this SearchAttendanceRecordsOfHisMeetingRequest.
 
+        查询用来当作关键词的字符串。
 
         :return: The search_key of this SearchAttendanceRecordsOfHisMeetingRequest.
         :rtype: str
@@ -149,6 +156,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     def search_key(self, search_key):
         """Sets the search_key of this SearchAttendanceRecordsOfHisMeetingRequest.
 
+        查询用来当作关键词的字符串。
 
         :param search_key: The search_key of this SearchAttendanceRecordsOfHisMeetingRequest.
         :type: str
@@ -159,6 +167,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     def user_uuid(self):
         """Gets the user_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
 
+        用户的UUID（已在USG注册过的）。
 
         :return: The user_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
         :rtype: str
@@ -169,6 +178,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     def user_uuid(self, user_uuid):
         """Sets the user_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
 
+        用户的UUID（已在USG注册过的）。
 
         :param user_uuid: The user_uuid of this SearchAttendanceRecordsOfHisMeetingRequest.
         :type: str
@@ -179,6 +189,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     def x_authorization_type(self):
         """Gets the x_authorization_type of this SearchAttendanceRecordsOfHisMeetingRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :return: The x_authorization_type of this SearchAttendanceRecordsOfHisMeetingRequest.
         :rtype: str
@@ -189,6 +200,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     def x_authorization_type(self, x_authorization_type):
         """Sets the x_authorization_type of this SearchAttendanceRecordsOfHisMeetingRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this SearchAttendanceRecordsOfHisMeetingRequest.
         :type: str
@@ -199,6 +211,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     def x_site_id(self):
         """Gets the x_site_id of this SearchAttendanceRecordsOfHisMeetingRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :return: The x_site_id of this SearchAttendanceRecordsOfHisMeetingRequest.
         :rtype: str
@@ -209,6 +222,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     def x_site_id(self, x_site_id):
         """Sets the x_site_id of this SearchAttendanceRecordsOfHisMeetingRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this SearchAttendanceRecordsOfHisMeetingRequest.
         :type: str
@@ -219,6 +233,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     def accept_language(self):
         """Gets the accept_language of this SearchAttendanceRecordsOfHisMeetingRequest.
 
+        语言。默认简体中文。 - zh-CN: 简体中文。 - en-US: 美国英文。
 
         :return: The accept_language of this SearchAttendanceRecordsOfHisMeetingRequest.
         :rtype: str
@@ -229,6 +244,7 @@ class SearchAttendanceRecordsOfHisMeetingRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this SearchAttendanceRecordsOfHisMeetingRequest.
 
+        语言。默认简体中文。 - zh-CN: 简体中文。 - en-US: 美国英文。
 
         :param accept_language: The accept_language of this SearchAttendanceRecordsOfHisMeetingRequest.
         :type: str

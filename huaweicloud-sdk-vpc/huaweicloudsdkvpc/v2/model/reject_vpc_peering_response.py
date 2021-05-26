@@ -47,7 +47,7 @@ class RejectVpcPeeringResponse(SdkResponse):
     def __init__(self, id=None, name=None, status=None, request_vpc_info=None, accept_vpc_info=None, created_at=None, updated_at=None, description=None):
         """RejectVpcPeeringResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RejectVpcPeeringResponse, self).__init__()
 
         self._id = None
         self._name = None

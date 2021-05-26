@@ -75,6 +75,7 @@ class NeutronListFirewallGroupsRequest:
     def marker(self):
         """Gets the marker of this NeutronListFirewallGroupsRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :return: The marker of this NeutronListFirewallGroupsRequest.
         :rtype: str
@@ -85,6 +86,7 @@ class NeutronListFirewallGroupsRequest:
     def marker(self, marker):
         """Sets the marker of this NeutronListFirewallGroupsRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this NeutronListFirewallGroupsRequest.
         :type: str
@@ -95,6 +97,7 @@ class NeutronListFirewallGroupsRequest:
     def limit(self):
         """Gets the limit of this NeutronListFirewallGroupsRequest.
 
+        每页返回的个数
 
         :return: The limit of this NeutronListFirewallGroupsRequest.
         :rtype: int
@@ -105,6 +108,7 @@ class NeutronListFirewallGroupsRequest:
     def limit(self, limit):
         """Sets the limit of this NeutronListFirewallGroupsRequest.
 
+        每页返回的个数
 
         :param limit: The limit of this NeutronListFirewallGroupsRequest.
         :type: int
@@ -115,6 +119,7 @@ class NeutronListFirewallGroupsRequest:
     def id(self):
         """Gets the id of this NeutronListFirewallGroupsRequest.
 
+        使用id过滤网络ACL组
 
         :return: The id of this NeutronListFirewallGroupsRequest.
         :rtype: list[str]
@@ -125,6 +130,7 @@ class NeutronListFirewallGroupsRequest:
     def id(self, id):
         """Sets the id of this NeutronListFirewallGroupsRequest.
 
+        使用id过滤网络ACL组
 
         :param id: The id of this NeutronListFirewallGroupsRequest.
         :type: list[str]
@@ -135,6 +141,7 @@ class NeutronListFirewallGroupsRequest:
     def name(self):
         """Gets the name of this NeutronListFirewallGroupsRequest.
 
+        使用name过滤ACL组
 
         :return: The name of this NeutronListFirewallGroupsRequest.
         :rtype: list[str]
@@ -145,6 +152,7 @@ class NeutronListFirewallGroupsRequest:
     def name(self, name):
         """Sets the name of this NeutronListFirewallGroupsRequest.
 
+        使用name过滤ACL组
 
         :param name: The name of this NeutronListFirewallGroupsRequest.
         :type: list[str]
@@ -155,6 +163,7 @@ class NeutronListFirewallGroupsRequest:
     def description(self):
         """Gets the description of this NeutronListFirewallGroupsRequest.
 
+        使用description过滤ACL组
 
         :return: The description of this NeutronListFirewallGroupsRequest.
         :rtype: list[str]
@@ -165,6 +174,7 @@ class NeutronListFirewallGroupsRequest:
     def description(self, description):
         """Sets the description of this NeutronListFirewallGroupsRequest.
 
+        使用description过滤ACL组
 
         :param description: The description of this NeutronListFirewallGroupsRequest.
         :type: list[str]
@@ -175,6 +185,7 @@ class NeutronListFirewallGroupsRequest:
     def ingress_firewall_policy_id(self):
         """Gets the ingress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
 
+        使用入方向的网络ACL策略ID过滤网络ACL组
 
         :return: The ingress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
         :rtype: str
@@ -185,6 +196,7 @@ class NeutronListFirewallGroupsRequest:
     def ingress_firewall_policy_id(self, ingress_firewall_policy_id):
         """Sets the ingress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
 
+        使用入方向的网络ACL策略ID过滤网络ACL组
 
         :param ingress_firewall_policy_id: The ingress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
         :type: str
@@ -195,6 +207,7 @@ class NeutronListFirewallGroupsRequest:
     def egress_firewall_policy_id(self):
         """Gets the egress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
 
+        使用出方向的网络ACL策略过滤查询网络ACL组
 
         :return: The egress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
         :rtype: str
@@ -205,6 +218,7 @@ class NeutronListFirewallGroupsRequest:
     def egress_firewall_policy_id(self, egress_firewall_policy_id):
         """Sets the egress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
 
+        使用出方向的网络ACL策略过滤查询网络ACL组
 
         :param egress_firewall_policy_id: The egress_firewall_policy_id of this NeutronListFirewallGroupsRequest.
         :type: str

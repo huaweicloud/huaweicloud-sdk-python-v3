@@ -37,7 +37,7 @@ class EncryptDatakeyResponse(SdkResponse):
     def __init__(self, key_id=None, cipher_text=None, datakey_length=None):
         """EncryptDatakeyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(EncryptDatakeyResponse, self).__init__()
 
         self._key_id = None
         self._cipher_text = None

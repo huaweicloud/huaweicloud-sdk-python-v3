@@ -59,6 +59,7 @@ class UpdateDeviceRequest:
     def x_request_id(self):
         """Gets the x_request_id of this UpdateDeviceRequest.
 
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :return: The x_request_id of this UpdateDeviceRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class UpdateDeviceRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this UpdateDeviceRequest.
 
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
         :param x_request_id: The x_request_id of this UpdateDeviceRequest.
         :type: str
@@ -79,6 +81,7 @@ class UpdateDeviceRequest:
     def accept_language(self):
         """Gets the accept_language of this UpdateDeviceRequest.
 
+        语言参数，默认为中文zh_CN, 英文为en_US
 
         :return: The accept_language of this UpdateDeviceRequest.
         :rtype: str
@@ -89,6 +92,7 @@ class UpdateDeviceRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this UpdateDeviceRequest.
 
+        语言参数，默认为中文zh_CN, 英文为en_US
 
         :param accept_language: The accept_language of this UpdateDeviceRequest.
         :type: str
@@ -99,6 +103,7 @@ class UpdateDeviceRequest:
     def sn(self):
         """Gets the sn of this UpdateDeviceRequest.
 
+        终端SN号，仅可包含数字、字母和下划线。 maxLength：30 minLength：1
 
         :return: The sn of this UpdateDeviceRequest.
         :rtype: str
@@ -109,6 +114,7 @@ class UpdateDeviceRequest:
     def sn(self, sn):
         """Sets the sn of this UpdateDeviceRequest.
 
+        终端SN号，仅可包含数字、字母和下划线。 maxLength：30 minLength：1
 
         :param sn: The sn of this UpdateDeviceRequest.
         :type: str

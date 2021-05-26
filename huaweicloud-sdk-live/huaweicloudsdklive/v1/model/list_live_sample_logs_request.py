@@ -52,6 +52,7 @@ class ListLiveSampleLogsRequest:
     def play_domain(self):
         """Gets the play_domain of this ListLiveSampleLogsRequest.
 
+        播放域名。
 
         :return: The play_domain of this ListLiveSampleLogsRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class ListLiveSampleLogsRequest:
     def play_domain(self, play_domain):
         """Sets the play_domain of this ListLiveSampleLogsRequest.
 
+        播放域名。
 
         :param play_domain: The play_domain of this ListLiveSampleLogsRequest.
         :type: str
@@ -72,6 +74,7 @@ class ListLiveSampleLogsRequest:
     def start_time(self):
         """Gets the start_time of this ListLiveSampleLogsRequest.
 
+        查询开始时间，UTC时间：YYYY-MM-DDTHH:mm:ssZ，如北京时间2020年3月4日16点00分00秒可表示为2020-03-04T08:00:00Z。仅支持查询最近3个月内的数据。
 
         :return: The start_time of this ListLiveSampleLogsRequest.
         :rtype: datetime
@@ -82,6 +85,7 @@ class ListLiveSampleLogsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListLiveSampleLogsRequest.
 
+        查询开始时间，UTC时间：YYYY-MM-DDTHH:mm:ssZ，如北京时间2020年3月4日16点00分00秒可表示为2020-03-04T08:00:00Z。仅支持查询最近3个月内的数据。
 
         :param start_time: The start_time of this ListLiveSampleLogsRequest.
         :type: datetime
@@ -92,6 +96,7 @@ class ListLiveSampleLogsRequest:
     def end_time(self):
         """Gets the end_time of this ListLiveSampleLogsRequest.
 
+        查询结束时间，UTC时间：YYYY-MM-DDTHH:mm:ssZ，如北京时间2020年3月4日16点00分00秒可表示为2020-03-04T08:00:00Z。查询时间跨度不能大于7天。
 
         :return: The end_time of this ListLiveSampleLogsRequest.
         :rtype: datetime
@@ -102,6 +107,7 @@ class ListLiveSampleLogsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListLiveSampleLogsRequest.
 
+        查询结束时间，UTC时间：YYYY-MM-DDTHH:mm:ssZ，如北京时间2020年3月4日16点00分00秒可表示为2020-03-04T08:00:00Z。查询时间跨度不能大于7天。
 
         :param end_time: The end_time of this ListLiveSampleLogsRequest.
         :type: datetime

@@ -625,26 +625,26 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def delete_version_alias(self, request):
-        """删除函数版本别名。
+    def delete_function_async_invoke_config(self, request):
+        """删除函数异步配置信息。
 
-        删除函数版本别名。
+        删除函数异步配置信息。
 
-        :param DeleteVersionAliasRequest request
-        :return: DeleteVersionAliasResponse
+        :param DeleteFunctionAsyncInvokeConfigRequest request
+        :return: DeleteFunctionAsyncInvokeConfigResponse
         """
-        return self.delete_version_alias_with_http_info(request)
+        return self.delete_function_async_invoke_config_with_http_info(request)
 
-    def delete_version_alias_with_http_info(self, request):
-        """删除函数版本别名。
+    def delete_function_async_invoke_config_with_http_info(self, request):
+        """删除函数异步配置信息。
 
-        删除函数版本别名。
+        删除函数异步配置信息。
 
-        :param DeleteVersionAliasRequest request
-        :return: DeleteVersionAliasResponse
+        :param DeleteFunctionAsyncInvokeConfigRequest request
+        :return: DeleteFunctionAsyncInvokeConfigResponse
         """
 
-        all_params = ['function_urn', 'name']
+        all_params = ['function_urn']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -655,8 +655,6 @@ class FunctionGraphClient(Client):
         path_params = {}
         if 'function_urn' in local_var_params:
             path_params['function_urn'] = local_var_params['function_urn']
-        if 'name' in local_var_params:
-            path_params['name'] = local_var_params['name']
 
         query_params = []
 
@@ -676,7 +674,72 @@ class FunctionGraphClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/aliases/{name}',
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/async-invoke-config',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteFunctionAsyncInvokeConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_version_alias(self, request):
+        """删除函数版本别名。
+
+        删除函数版本别名。
+
+        :param DeleteVersionAliasRequest request
+        :return: DeleteVersionAliasResponse
+        """
+        return self.delete_version_alias_with_http_info(request)
+
+    def delete_version_alias_with_http_info(self, request):
+        """删除函数版本别名。
+
+        删除函数版本别名。
+
+        :param DeleteVersionAliasRequest request
+        :return: DeleteVersionAliasResponse
+        """
+
+        all_params = ['function_urn', 'alias_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+        if 'alias_name' in local_var_params:
+            path_params['alias_name'] = local_var_params['alias_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/aliases/{alias_name}',
             method='DELETE',
             path_params=path_params,
             query_params=query_params,
@@ -887,6 +950,73 @@ class FunctionGraphClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListEventsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_function_async_invoke_config(self, request):
+        """获取函数异步配置列表
+
+        获取函数异步配置列表。
+
+        :param ListFunctionAsyncInvokeConfigRequest request
+        :return: ListFunctionAsyncInvokeConfigResponse
+        """
+        return self.list_function_async_invoke_config_with_http_info(request)
+
+    def list_function_async_invoke_config_with_http_info(self, request):
+        """获取函数异步配置列表
+
+        获取函数异步配置列表。
+
+        :param ListFunctionAsyncInvokeConfigRequest request
+        :return: ListFunctionAsyncInvokeConfigResponse
+        """
+
+        all_params = ['function_urn', 'marker', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/async-invoke-configs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListFunctionAsyncInvokeConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1409,6 +1539,69 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_function_async_invoke_config(self, request):
+        """获取函数异步配置信息。
+
+        获取函数异步配置信息。
+
+        :param ShowFunctionAsyncInvokeConfigRequest request
+        :return: ShowFunctionAsyncInvokeConfigResponse
+        """
+        return self.show_function_async_invoke_config_with_http_info(request)
+
+    def show_function_async_invoke_config_with_http_info(self, request):
+        """获取函数异步配置信息。
+
+        获取函数异步配置信息。
+
+        :param ShowFunctionAsyncInvokeConfigRequest request
+        :return: ShowFunctionAsyncInvokeConfigResponse
+        """
+
+        all_params = ['function_urn']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/async-invoke-config',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowFunctionAsyncInvokeConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_function_code(self, request):
         """获取指定函数代码。
 
@@ -1554,7 +1747,7 @@ class FunctionGraphClient(Client):
         :return: ShowVersionAliasResponse
         """
 
-        all_params = ['function_urn', 'name']
+        all_params = ['function_urn', 'alias_name']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1565,8 +1758,8 @@ class FunctionGraphClient(Client):
         path_params = {}
         if 'function_urn' in local_var_params:
             path_params['function_urn'] = local_var_params['function_urn']
-        if 'name' in local_var_params:
-            path_params['name'] = local_var_params['name']
+        if 'alias_name' in local_var_params:
+            path_params['alias_name'] = local_var_params['alias_name']
 
         query_params = []
 
@@ -1586,7 +1779,7 @@ class FunctionGraphClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/aliases/{name}',
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/aliases/{alias_name}',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -1726,6 +1919,71 @@ class FunctionGraphClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateEventResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_function_async_invoke_config(self, request):
+        """设置函数异步配置信息。
+
+        设置函数异步配置信息。
+
+        :param UpdateFunctionAsyncInvokeConfigRequest request
+        :return: UpdateFunctionAsyncInvokeConfigResponse
+        """
+        return self.update_function_async_invoke_config_with_http_info(request)
+
+    def update_function_async_invoke_config_with_http_info(self, request):
+        """设置函数异步配置信息。
+
+        设置函数异步配置信息。
+
+        :param UpdateFunctionAsyncInvokeConfigRequest request
+        :return: UpdateFunctionAsyncInvokeConfigResponse
+        """
+
+        all_params = ['function_urn', 'update_function_async_invoke_config_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/async-invoke-config',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateFunctionAsyncInvokeConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1946,7 +2204,7 @@ class FunctionGraphClient(Client):
         :return: UpdateVersionAliasResponse
         """
 
-        all_params = ['function_urn', 'name', 'update_version_alias_request_body']
+        all_params = ['function_urn', 'alias_name', 'update_version_alias_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1957,8 +2215,8 @@ class FunctionGraphClient(Client):
         path_params = {}
         if 'function_urn' in local_var_params:
             path_params['function_urn'] = local_var_params['function_urn']
-        if 'name' in local_var_params:
-            path_params['name'] = local_var_params['name']
+        if 'alias_name' in local_var_params:
+            path_params['alias_name'] = local_var_params['alias_name']
 
         query_params = []
 
@@ -1980,7 +2238,7 @@ class FunctionGraphClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/aliases/{name}',
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/aliases/{alias_name}',
             method='PUT',
             path_params=path_params,
             query_params=query_params,
@@ -2155,7 +2413,7 @@ class FunctionGraphClient(Client):
         if 'trigger_type_code' in local_var_params:
             path_params['trigger_type_code'] = local_var_params['trigger_type_code']
         if 'trigger_id' in local_var_params:
-            path_params['triggerId'] = local_var_params['trigger_id']
+            path_params['trigger_id'] = local_var_params['trigger_id']
 
         query_params = []
 
@@ -2175,7 +2433,7 @@ class FunctionGraphClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}/{trigger_type_code}/{triggerId}',
+            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}/{trigger_type_code}/{trigger_id}',
             method='DELETE',
             path_params=path_params,
             query_params=query_params,
@@ -2285,7 +2543,7 @@ class FunctionGraphClient(Client):
         if 'trigger_type_code' in local_var_params:
             path_params['trigger_type_code'] = local_var_params['trigger_type_code']
         if 'trigger_id' in local_var_params:
-            path_params['triggerId'] = local_var_params['trigger_id']
+            path_params['trigger_id'] = local_var_params['trigger_id']
 
         query_params = []
 
@@ -2305,7 +2563,7 @@ class FunctionGraphClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}/{trigger_type_code}/{triggerId}',
+            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}/{trigger_type_code}/{trigger_id}',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -2352,7 +2610,7 @@ class FunctionGraphClient(Client):
         if 'trigger_type_code' in local_var_params:
             path_params['trigger_type_code'] = local_var_params['trigger_type_code']
         if 'trigger_id' in local_var_params:
-            path_params['triggerId'] = local_var_params['trigger_id']
+            path_params['trigger_id'] = local_var_params['trigger_id']
 
         query_params = []
 
@@ -2374,7 +2632,7 @@ class FunctionGraphClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}/{trigger_type_code}/{triggerId}',
+            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}/{trigger_type_code}/{trigger_id}',
             method='PUT',
             path_params=path_params,
             query_params=query_params,

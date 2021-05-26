@@ -79,6 +79,7 @@ class ShowUpBandwidthRequest:
     def publish_domains(self):
         """Gets the publish_domains of this ShowUpBandwidthRequest.
 
+        推流域名列表，最多支持查询10个域名，多个域名以逗号分隔，若查询多个域名，则返回的是多个域名合并数据。 
 
         :return: The publish_domains of this ShowUpBandwidthRequest.
         :rtype: list[str]
@@ -89,6 +90,7 @@ class ShowUpBandwidthRequest:
     def publish_domains(self, publish_domains):
         """Sets the publish_domains of this ShowUpBandwidthRequest.
 
+        推流域名列表，最多支持查询10个域名，多个域名以逗号分隔，若查询多个域名，则返回的是多个域名合并数据。 
 
         :param publish_domains: The publish_domains of this ShowUpBandwidthRequest.
         :type: list[str]
@@ -99,6 +101,7 @@ class ShowUpBandwidthRequest:
     def app(self):
         """Gets the app of this ShowUpBandwidthRequest.
 
+        应用名称。 
 
         :return: The app of this ShowUpBandwidthRequest.
         :rtype: str
@@ -109,6 +112,7 @@ class ShowUpBandwidthRequest:
     def app(self, app):
         """Sets the app of this ShowUpBandwidthRequest.
 
+        应用名称。 
 
         :param app: The app of this ShowUpBandwidthRequest.
         :type: str
@@ -119,6 +123,7 @@ class ShowUpBandwidthRequest:
     def stream(self):
         """Gets the stream of this ShowUpBandwidthRequest.
 
+        流名。 
 
         :return: The stream of this ShowUpBandwidthRequest.
         :rtype: str
@@ -129,6 +134,7 @@ class ShowUpBandwidthRequest:
     def stream(self, stream):
         """Sets the stream of this ShowUpBandwidthRequest.
 
+        流名。 
 
         :param stream: The stream of this ShowUpBandwidthRequest.
         :type: str
@@ -139,6 +145,7 @@ class ShowUpBandwidthRequest:
     def region(self):
         """Gets the region of this ShowUpBandwidthRequest.
 
+        区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
 
         :return: The region of this ShowUpBandwidthRequest.
         :rtype: list[str]
@@ -149,6 +156,7 @@ class ShowUpBandwidthRequest:
     def region(self, region):
         """Sets the region of this ShowUpBandwidthRequest.
 
+        区域列表。具体取值请参考[省份名称缩写](live_03_0043.xml)，不填写查询所有区域。 
 
         :param region: The region of this ShowUpBandwidthRequest.
         :type: list[str]
@@ -159,6 +167,7 @@ class ShowUpBandwidthRequest:
     def isp(self):
         """Gets the isp of this ShowUpBandwidthRequest.
 
+        运营商列表，取值如下： - \"CMCC ：移动\" - \"CTCC ： 电信\" - \"CUCC ：联通\" - \"OTHER: 其他\"  不填写查询所有运营商。 
 
         :return: The isp of this ShowUpBandwidthRequest.
         :rtype: list[str]
@@ -169,6 +178,7 @@ class ShowUpBandwidthRequest:
     def isp(self, isp):
         """Sets the isp of this ShowUpBandwidthRequest.
 
+        运营商列表，取值如下： - \"CMCC ：移动\" - \"CTCC ： 电信\" - \"CUCC ：联通\" - \"OTHER: 其他\"  不填写查询所有运营商。 
 
         :param isp: The isp of this ShowUpBandwidthRequest.
         :type: list[str]
@@ -179,6 +189,7 @@ class ShowUpBandwidthRequest:
     def interval(self):
         """Gets the interval of this ShowUpBandwidthRequest.
 
+        查询数据的时间粒度。支持300（默认值），3600和86400秒。不传值时，使用默认值300秒。 
 
         :return: The interval of this ShowUpBandwidthRequest.
         :rtype: int
@@ -189,6 +200,7 @@ class ShowUpBandwidthRequest:
     def interval(self, interval):
         """Sets the interval of this ShowUpBandwidthRequest.
 
+        查询数据的时间粒度。支持300（默认值），3600和86400秒。不传值时，使用默认值300秒。 
 
         :param interval: The interval of this ShowUpBandwidthRequest.
         :type: int
@@ -199,6 +211,7 @@ class ShowUpBandwidthRequest:
     def start_time(self):
         """Gets the start_time of this ShowUpBandwidthRequest.
 
+        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期90天  若参数为空，默认查询7天数据。 
 
         :return: The start_time of this ShowUpBandwidthRequest.
         :rtype: str
@@ -209,6 +222,7 @@ class ShowUpBandwidthRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ShowUpBandwidthRequest.
 
+        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期90天  若参数为空，默认查询7天数据。 
 
         :param start_time: The start_time of this ShowUpBandwidthRequest.
         :type: str
@@ -219,6 +233,7 @@ class ShowUpBandwidthRequest:
     def end_time(self):
         """Gets the end_time of this ShowUpBandwidthRequest.
 
+        结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度31天，最大查询周期90天。结束时间需大于起始时间。 
 
         :return: The end_time of this ShowUpBandwidthRequest.
         :rtype: str
@@ -229,6 +244,7 @@ class ShowUpBandwidthRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowUpBandwidthRequest.
 
+        结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度31天，最大查询周期90天。结束时间需大于起始时间。 
 
         :param end_time: The end_time of this ShowUpBandwidthRequest.
         :type: str

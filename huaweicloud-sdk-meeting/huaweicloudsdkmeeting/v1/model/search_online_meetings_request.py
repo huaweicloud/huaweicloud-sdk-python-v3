@@ -75,6 +75,7 @@ class SearchOnlineMeetingsRequest:
     def user_uuid(self):
         """Gets the user_uuid of this SearchOnlineMeetingsRequest.
 
+        用户UUID。 仅管理员有权限查询权限范围内的所有帐号，普通帐号仅能查询自己的。
 
         :return: The user_uuid of this SearchOnlineMeetingsRequest.
         :rtype: str
@@ -85,6 +86,7 @@ class SearchOnlineMeetingsRequest:
     def user_uuid(self, user_uuid):
         """Sets the user_uuid of this SearchOnlineMeetingsRequest.
 
+        用户UUID。 仅管理员有权限查询权限范围内的所有帐号，普通帐号仅能查询自己的。
 
         :param user_uuid: The user_uuid of this SearchOnlineMeetingsRequest.
         :type: str
@@ -95,6 +97,7 @@ class SearchOnlineMeetingsRequest:
     def offset(self):
         """Gets the offset of this SearchOnlineMeetingsRequest.
 
+        指定返回的记录索引。该值必须大于等于0； 默认为0。
 
         :return: The offset of this SearchOnlineMeetingsRequest.
         :rtype: int
@@ -105,6 +108,7 @@ class SearchOnlineMeetingsRequest:
     def offset(self, offset):
         """Sets the offset of this SearchOnlineMeetingsRequest.
 
+        指定返回的记录索引。该值必须大于等于0； 默认为0。
 
         :param offset: The offset of this SearchOnlineMeetingsRequest.
         :type: int
@@ -115,6 +119,7 @@ class SearchOnlineMeetingsRequest:
     def limit(self):
         """Gets the limit of this SearchOnlineMeetingsRequest.
 
+        指定返回的记录数。默认是20，最大值为500。
 
         :return: The limit of this SearchOnlineMeetingsRequest.
         :rtype: int
@@ -125,6 +130,7 @@ class SearchOnlineMeetingsRequest:
     def limit(self, limit):
         """Sets the limit of this SearchOnlineMeetingsRequest.
 
+        指定返回的记录数。默认是20，最大值为500。
 
         :param limit: The limit of this SearchOnlineMeetingsRequest.
         :type: int
@@ -135,6 +141,7 @@ class SearchOnlineMeetingsRequest:
     def query_all(self):
         """Gets the query_all of this SearchOnlineMeetingsRequest.
 
+        指定是否查询企业下所有用户的会议记录。 如果登录帐号不是企业管理员，则该字段无效。 如果该字段为true，则userUUID字段无效。 default : false
 
         :return: The query_all of this SearchOnlineMeetingsRequest.
         :rtype: bool
@@ -145,6 +152,7 @@ class SearchOnlineMeetingsRequest:
     def query_all(self, query_all):
         """Sets the query_all of this SearchOnlineMeetingsRequest.
 
+        指定是否查询企业下所有用户的会议记录。 如果登录帐号不是企业管理员，则该字段无效。 如果该字段为true，则userUUID字段无效。 default : false
 
         :param query_all: The query_all of this SearchOnlineMeetingsRequest.
         :type: bool
@@ -155,6 +163,7 @@ class SearchOnlineMeetingsRequest:
     def search_key(self):
         """Gets the search_key of this SearchOnlineMeetingsRequest.
 
+        查询用来当作关键词的字符串。会议主题、会议预约人和会议ID等可作为搜索内容。
 
         :return: The search_key of this SearchOnlineMeetingsRequest.
         :rtype: str
@@ -165,6 +174,7 @@ class SearchOnlineMeetingsRequest:
     def search_key(self, search_key):
         """Sets the search_key of this SearchOnlineMeetingsRequest.
 
+        查询用来当作关键词的字符串。会议主题、会议预约人和会议ID等可作为搜索内容。
 
         :param search_key: The search_key of this SearchOnlineMeetingsRequest.
         :type: str
@@ -175,6 +185,7 @@ class SearchOnlineMeetingsRequest:
     def x_authorization_type(self):
         """Gets the x_authorization_type of this SearchOnlineMeetingsRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :return: The x_authorization_type of this SearchOnlineMeetingsRequest.
         :rtype: str
@@ -185,6 +196,7 @@ class SearchOnlineMeetingsRequest:
     def x_authorization_type(self, x_authorization_type):
         """Sets the x_authorization_type of this SearchOnlineMeetingsRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this SearchOnlineMeetingsRequest.
         :type: str
@@ -195,6 +207,7 @@ class SearchOnlineMeetingsRequest:
     def x_site_id(self):
         """Gets the x_site_id of this SearchOnlineMeetingsRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :return: The x_site_id of this SearchOnlineMeetingsRequest.
         :rtype: str
@@ -205,6 +218,7 @@ class SearchOnlineMeetingsRequest:
     def x_site_id(self, x_site_id):
         """Sets the x_site_id of this SearchOnlineMeetingsRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this SearchOnlineMeetingsRequest.
         :type: str

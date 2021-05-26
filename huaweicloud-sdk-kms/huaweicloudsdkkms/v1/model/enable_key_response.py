@@ -33,7 +33,7 @@ class EnableKeyResponse(SdkResponse):
     def __init__(self, key_info=None):
         """EnableKeyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(EnableKeyResponse, self).__init__()
 
         self._key_info = None
         self.discriminator = None

@@ -33,7 +33,7 @@ class ShowSpResResponse(SdkResponse):
     def __init__(self, used_accounts_count=None):
         """ShowSpResResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowSpResResponse, self).__init__()
 
         self._used_accounts_count = None
         self.discriminator = None

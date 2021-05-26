@@ -53,6 +53,7 @@ class UpdateUserRepositoryAuthRequest:
     def namespace(self):
         """Gets the namespace of this UpdateUserRepositoryAuthRequest.
 
+        组织名称
 
         :return: The namespace of this UpdateUserRepositoryAuthRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class UpdateUserRepositoryAuthRequest:
     def namespace(self, namespace):
         """Sets the namespace of this UpdateUserRepositoryAuthRequest.
 
+        组织名称
 
         :param namespace: The namespace of this UpdateUserRepositoryAuthRequest.
         :type: str
@@ -73,6 +75,7 @@ class UpdateUserRepositoryAuthRequest:
     def repository(self):
         """Gets the repository of this UpdateUserRepositoryAuthRequest.
 
+        镜像仓库名称
 
         :return: The repository of this UpdateUserRepositoryAuthRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class UpdateUserRepositoryAuthRequest:
     def repository(self, repository):
         """Sets the repository of this UpdateUserRepositoryAuthRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this UpdateUserRepositoryAuthRequest.
         :type: str

@@ -45,6 +45,7 @@ class RunCheckTaskJobsRequest:
     def status(self):
         """Gets the status of this RunCheckTaskJobsRequest.
 
+        图像内容审核任务处理状态如下：  - created 已创建  - running 正在处理  - finish 已完成  - failed 处理失败 
 
         :return: The status of this RunCheckTaskJobsRequest.
         :rtype: str
@@ -55,6 +56,7 @@ class RunCheckTaskJobsRequest:
     def status(self, status):
         """Sets the status of this RunCheckTaskJobsRequest.
 
+        图像内容审核任务处理状态如下：  - created 已创建  - running 正在处理  - finish 已完成  - failed 处理失败 
 
         :param status: The status of this RunCheckTaskJobsRequest.
         :type: str

@@ -60,6 +60,7 @@ class ListVpcsRequest:
     def limit(self):
         """Gets the limit of this ListVpcsRequest.
 
+        每页返回的个数
 
         :return: The limit of this ListVpcsRequest.
         :rtype: int
@@ -70,6 +71,7 @@ class ListVpcsRequest:
     def limit(self, limit):
         """Sets the limit of this ListVpcsRequest.
 
+        每页返回的个数
 
         :param limit: The limit of this ListVpcsRequest.
         :type: int
@@ -80,6 +82,7 @@ class ListVpcsRequest:
     def marker(self):
         """Gets the marker of this ListVpcsRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :return: The marker of this ListVpcsRequest.
         :rtype: str
@@ -90,6 +93,7 @@ class ListVpcsRequest:
     def marker(self, marker):
         """Sets the marker of this ListVpcsRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListVpcsRequest.
         :type: str
@@ -100,6 +104,7 @@ class ListVpcsRequest:
     def id(self):
         """Gets the id of this ListVpcsRequest.
 
+        功能说明：虚拟私有云ID。可以使用该字段过滤某个ID的虚拟私有云。
 
         :return: The id of this ListVpcsRequest.
         :rtype: str
@@ -110,6 +115,7 @@ class ListVpcsRequest:
     def id(self, id):
         """Sets the id of this ListVpcsRequest.
 
+        功能说明：虚拟私有云ID。可以使用该字段过滤某个ID的虚拟私有云。
 
         :param id: The id of this ListVpcsRequest.
         :type: str
@@ -120,6 +126,7 @@ class ListVpcsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListVpcsRequest.
 
+        功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的虚拟私有云。若未传值则默认返回所有企业项目绑定的虚拟私有云。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的虚拟私有云，请传参all_granted_eps。
 
         :return: The enterprise_project_id of this ListVpcsRequest.
         :rtype: str
@@ -130,6 +137,7 @@ class ListVpcsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListVpcsRequest.
 
+        功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的虚拟私有云。若未传值则默认返回所有企业项目绑定的虚拟私有云。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的虚拟私有云，请传参all_granted_eps。
 
         :param enterprise_project_id: The enterprise_project_id of this ListVpcsRequest.
         :type: str

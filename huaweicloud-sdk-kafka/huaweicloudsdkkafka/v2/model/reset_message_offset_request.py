@@ -53,6 +53,7 @@ class ResetMessageOffsetRequest:
     def instance_id(self):
         """Gets the instance_id of this ResetMessageOffsetRequest.
 
+        实例ID。
 
         :return: The instance_id of this ResetMessageOffsetRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class ResetMessageOffsetRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ResetMessageOffsetRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this ResetMessageOffsetRequest.
         :type: str
@@ -73,6 +75,7 @@ class ResetMessageOffsetRequest:
     def group(self):
         """Gets the group of this ResetMessageOffsetRequest.
 
+        消费组名称。
 
         :return: The group of this ResetMessageOffsetRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class ResetMessageOffsetRequest:
     def group(self, group):
         """Sets the group of this ResetMessageOffsetRequest.
 
+        消费组名称。
 
         :param group: The group of this ResetMessageOffsetRequest.
         :type: str

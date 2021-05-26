@@ -53,6 +53,7 @@ class UpdateTopicReplicaRequest:
     def instance_id(self):
         """Gets the instance_id of this UpdateTopicReplicaRequest.
 
+        实例ID。
 
         :return: The instance_id of this UpdateTopicReplicaRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class UpdateTopicReplicaRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpdateTopicReplicaRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this UpdateTopicReplicaRequest.
         :type: str
@@ -73,6 +75,7 @@ class UpdateTopicReplicaRequest:
     def topic(self):
         """Gets the topic of this UpdateTopicReplicaRequest.
 
+        Topic名称。
 
         :return: The topic of this UpdateTopicReplicaRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class UpdateTopicReplicaRequest:
     def topic(self, topic):
         """Sets the topic of this UpdateTopicReplicaRequest.
 
+        Topic名称。
 
         :param topic: The topic of this UpdateTopicReplicaRequest.
         :type: str

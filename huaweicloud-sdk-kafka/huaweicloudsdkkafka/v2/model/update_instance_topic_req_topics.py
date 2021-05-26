@@ -24,7 +24,7 @@ class UpdateInstanceTopicReqTopics:
 
     openapi_types = {
         'id': 'str',
-        'retention_time': 'str',
+        'retention_time': 'int',
         'sync_replication': 'bool',
         'sync_message_flush': 'bool'
     }
@@ -47,8 +47,7 @@ class UpdateInstanceTopicReqTopics:
         self._sync_message_flush = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
+        self.id = id
         if retention_time is not None:
             self.retention_time = retention_time
         if sync_replication is not None:
@@ -85,7 +84,7 @@ class UpdateInstanceTopicReqTopics:
         老化时间，单位小时。
 
         :return: The retention_time of this UpdateInstanceTopicReqTopics.
-        :rtype: str
+        :rtype: int
         """
         return self._retention_time
 
@@ -96,7 +95,7 @@ class UpdateInstanceTopicReqTopics:
         老化时间，单位小时。
 
         :param retention_time: The retention_time of this UpdateInstanceTopicReqTopics.
-        :type: str
+        :type: int
         """
         self._retention_time = retention_time
 

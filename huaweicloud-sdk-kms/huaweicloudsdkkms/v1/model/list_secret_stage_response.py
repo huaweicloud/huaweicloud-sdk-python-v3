@@ -33,7 +33,7 @@ class ListSecretStageResponse(SdkResponse):
     def __init__(self, stage=None):
         """ListSecretStageResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSecretStageResponse, self).__init__()
 
         self._stage = None
         self.discriminator = None

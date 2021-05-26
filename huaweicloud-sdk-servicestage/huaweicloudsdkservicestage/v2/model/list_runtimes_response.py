@@ -33,7 +33,7 @@ class ListRuntimesResponse(SdkResponse):
     def __init__(self, runtimes=None):
         """ListRuntimesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListRuntimesResponse, self).__init__()
 
         self._runtimes = None
         self.discriminator = None

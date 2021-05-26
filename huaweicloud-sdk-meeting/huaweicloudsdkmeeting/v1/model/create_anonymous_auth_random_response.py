@@ -35,7 +35,7 @@ class CreateAnonymousAuthRandomResponse(SdkResponse):
     def __init__(self, site_url=None, random=None):
         """CreateAnonymousAuthRandomResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateAnonymousAuthRandomResponse, self).__init__()
 
         self._site_url = None
         self._random = None

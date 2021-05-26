@@ -49,6 +49,7 @@ class BatchCreateVpcTagsRequest:
     def vpc_id(self):
         """Gets the vpc_id of this BatchCreateVpcTagsRequest.
 
+        功能说明：虚拟私有云唯一标识 取值范围：合法UUID 约束：ID对应的VPC必须存在
 
         :return: The vpc_id of this BatchCreateVpcTagsRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class BatchCreateVpcTagsRequest:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this BatchCreateVpcTagsRequest.
 
+        功能说明：虚拟私有云唯一标识 取值范围：合法UUID 约束：ID对应的VPC必须存在
 
         :param vpc_id: The vpc_id of this BatchCreateVpcTagsRequest.
         :type: str

@@ -100,6 +100,7 @@ class ListPortsRequest:
     def name(self):
         """Gets the name of this ListPortsRequest.
 
+        功能说明：按照name过滤查询  取值范围：最大长度不超过255
 
         :return: The name of this ListPortsRequest.
         :rtype: str
@@ -110,6 +111,7 @@ class ListPortsRequest:
     def name(self, name):
         """Sets the name of this ListPortsRequest.
 
+        功能说明：按照name过滤查询  取值范围：最大长度不超过255
 
         :param name: The name of this ListPortsRequest.
         :type: str
@@ -120,6 +122,7 @@ class ListPortsRequest:
     def id(self):
         """Gets the id of this ListPortsRequest.
 
+        按照port_id过滤查询
 
         :return: The id of this ListPortsRequest.
         :rtype: str
@@ -130,6 +133,7 @@ class ListPortsRequest:
     def id(self, id):
         """Sets the id of this ListPortsRequest.
 
+        按照port_id过滤查询
 
         :param id: The id of this ListPortsRequest.
         :type: str
@@ -140,6 +144,7 @@ class ListPortsRequest:
     def limit(self):
         """Gets the limit of this ListPortsRequest.
 
+        每页返回的个数
 
         :return: The limit of this ListPortsRequest.
         :rtype: int
@@ -150,6 +155,7 @@ class ListPortsRequest:
     def limit(self, limit):
         """Sets the limit of this ListPortsRequest.
 
+        每页返回的个数
 
         :param limit: The limit of this ListPortsRequest.
         :type: int
@@ -160,6 +166,7 @@ class ListPortsRequest:
     def admin_state_up(self):
         """Gets the admin_state_up of this ListPortsRequest.
 
+        按照admin_state_up进行过滤
 
         :return: The admin_state_up of this ListPortsRequest.
         :rtype: bool
@@ -170,6 +177,7 @@ class ListPortsRequest:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this ListPortsRequest.
 
+        按照admin_state_up进行过滤
 
         :param admin_state_up: The admin_state_up of this ListPortsRequest.
         :type: bool
@@ -180,6 +188,7 @@ class ListPortsRequest:
     def network_id(self):
         """Gets the network_id of this ListPortsRequest.
 
+        按照network_id过滤查询
 
         :return: The network_id of this ListPortsRequest.
         :rtype: str
@@ -190,6 +199,7 @@ class ListPortsRequest:
     def network_id(self, network_id):
         """Sets the network_id of this ListPortsRequest.
 
+        按照network_id过滤查询
 
         :param network_id: The network_id of this ListPortsRequest.
         :type: str
@@ -200,6 +210,7 @@ class ListPortsRequest:
     def mac_address(self):
         """Gets the mac_address of this ListPortsRequest.
 
+        按照mac_address过滤查询
 
         :return: The mac_address of this ListPortsRequest.
         :rtype: str
@@ -210,6 +221,7 @@ class ListPortsRequest:
     def mac_address(self, mac_address):
         """Sets the mac_address of this ListPortsRequest.
 
+        按照mac_address过滤查询
 
         :param mac_address: The mac_address of this ListPortsRequest.
         :type: str
@@ -220,6 +232,7 @@ class ListPortsRequest:
     def device_id(self):
         """Gets the device_id of this ListPortsRequest.
 
+        按照device_id过滤查询
 
         :return: The device_id of this ListPortsRequest.
         :rtype: str
@@ -230,6 +243,7 @@ class ListPortsRequest:
     def device_id(self, device_id):
         """Sets the device_id of this ListPortsRequest.
 
+        按照device_id过滤查询
 
         :param device_id: The device_id of this ListPortsRequest.
         :type: str
@@ -240,6 +254,7 @@ class ListPortsRequest:
     def device_owner(self):
         """Gets the device_owner of this ListPortsRequest.
 
+        按照device_owner过滤查询
 
         :return: The device_owner of this ListPortsRequest.
         :rtype: str
@@ -250,6 +265,7 @@ class ListPortsRequest:
     def device_owner(self, device_owner):
         """Sets the device_owner of this ListPortsRequest.
 
+        按照device_owner过滤查询
 
         :param device_owner: The device_owner of this ListPortsRequest.
         :type: str
@@ -260,6 +276,7 @@ class ListPortsRequest:
     def status(self):
         """Gets the status of this ListPortsRequest.
 
+        功能说明：按照status过滤查询  取值范围：ACTIVE、BUILD、DOWN
 
         :return: The status of this ListPortsRequest.
         :rtype: str
@@ -270,6 +287,7 @@ class ListPortsRequest:
     def status(self, status):
         """Sets the status of this ListPortsRequest.
 
+        功能说明：按照status过滤查询  取值范围：ACTIVE、BUILD、DOWN
 
         :param status: The status of this ListPortsRequest.
         :type: str
@@ -280,6 +298,7 @@ class ListPortsRequest:
     def marker(self):
         """Gets the marker of this ListPortsRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :return: The marker of this ListPortsRequest.
         :rtype: str
@@ -290,6 +309,7 @@ class ListPortsRequest:
     def marker(self, marker):
         """Sets the marker of this ListPortsRequest.
 
+        分页查询起始的资源ID，为空时查询第一页
 
         :param marker: The marker of this ListPortsRequest.
         :type: str
@@ -300,6 +320,7 @@ class ListPortsRequest:
     def fixed_ips(self):
         """Gets the fixed_ips of this ListPortsRequest.
 
+        按照fixed_ips=ip_address或者fixed_ips=subnet_id过滤查询
 
         :return: The fixed_ips of this ListPortsRequest.
         :rtype: str
@@ -310,6 +331,7 @@ class ListPortsRequest:
     def fixed_ips(self, fixed_ips):
         """Sets the fixed_ips of this ListPortsRequest.
 
+        按照fixed_ips=ip_address或者fixed_ips=subnet_id过滤查询
 
         :param fixed_ips: The fixed_ips of this ListPortsRequest.
         :type: str
@@ -320,6 +342,7 @@ class ListPortsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListPortsRequest.
 
+        功能说明：企业项目ID，用于基于企业项目的权限管理。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。  若需要查询当前用户所有企业项目绑定的端口，请传参all_granted_eps。
 
         :return: The enterprise_project_id of this ListPortsRequest.
         :rtype: str
@@ -330,6 +353,7 @@ class ListPortsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListPortsRequest.
 
+        功能说明：企业项目ID，用于基于企业项目的权限管理。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。  若需要查询当前用户所有企业项目绑定的端口，请传参all_granted_eps。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPortsRequest.
         :type: str

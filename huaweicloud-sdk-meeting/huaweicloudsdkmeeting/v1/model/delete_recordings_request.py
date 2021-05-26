@@ -59,6 +59,7 @@ class DeleteRecordingsRequest:
     def conf_uui_ds(self):
         """Gets the conf_uui_ds of this DeleteRecordingsRequest.
 
+        会议UUID列表，多个会议UUID之间以英文逗号隔开。
 
         :return: The conf_uui_ds of this DeleteRecordingsRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class DeleteRecordingsRequest:
     def conf_uui_ds(self, conf_uui_ds):
         """Sets the conf_uui_ds of this DeleteRecordingsRequest.
 
+        会议UUID列表，多个会议UUID之间以英文逗号隔开。
 
         :param conf_uui_ds: The conf_uui_ds of this DeleteRecordingsRequest.
         :type: str
@@ -79,6 +81,7 @@ class DeleteRecordingsRequest:
     def user_uuid(self):
         """Gets the user_uuid of this DeleteRecordingsRequest.
 
+        用户的UUID（已在USG注册过的）。
 
         :return: The user_uuid of this DeleteRecordingsRequest.
         :rtype: str
@@ -89,6 +92,7 @@ class DeleteRecordingsRequest:
     def user_uuid(self, user_uuid):
         """Sets the user_uuid of this DeleteRecordingsRequest.
 
+        用户的UUID（已在USG注册过的）。
 
         :param user_uuid: The user_uuid of this DeleteRecordingsRequest.
         :type: str
@@ -99,6 +103,7 @@ class DeleteRecordingsRequest:
     def x_authorization_type(self):
         """Gets the x_authorization_type of this DeleteRecordingsRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :return: The x_authorization_type of this DeleteRecordingsRequest.
         :rtype: str
@@ -109,6 +114,7 @@ class DeleteRecordingsRequest:
     def x_authorization_type(self, x_authorization_type):
         """Sets the x_authorization_type of this DeleteRecordingsRequest.
 
+        标识是否为第三方portal过来的请求。
 
         :param x_authorization_type: The x_authorization_type of this DeleteRecordingsRequest.
         :type: str
@@ -119,6 +125,7 @@ class DeleteRecordingsRequest:
     def x_site_id(self):
         """Gets the x_site_id of this DeleteRecordingsRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :return: The x_site_id of this DeleteRecordingsRequest.
         :rtype: str
@@ -129,6 +136,7 @@ class DeleteRecordingsRequest:
     def x_site_id(self, x_site_id):
         """Sets the x_site_id of this DeleteRecordingsRequest.
 
+        用于区分到哪个HCSO站点鉴权。
 
         :param x_site_id: The x_site_id of this DeleteRecordingsRequest.
         :type: str

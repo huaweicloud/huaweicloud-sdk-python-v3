@@ -53,6 +53,7 @@ class CreateUserRepositoryAuthRequest:
     def namespace(self):
         """Gets the namespace of this CreateUserRepositoryAuthRequest.
 
+        组织名称
 
         :return: The namespace of this CreateUserRepositoryAuthRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class CreateUserRepositoryAuthRequest:
     def namespace(self, namespace):
         """Sets the namespace of this CreateUserRepositoryAuthRequest.
 
+        组织名称
 
         :param namespace: The namespace of this CreateUserRepositoryAuthRequest.
         :type: str
@@ -73,6 +75,7 @@ class CreateUserRepositoryAuthRequest:
     def repository(self):
         """Gets the repository of this CreateUserRepositoryAuthRequest.
 
+        镜像仓库名称
 
         :return: The repository of this CreateUserRepositoryAuthRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class CreateUserRepositoryAuthRequest:
     def repository(self, repository):
         """Sets the repository of this CreateUserRepositoryAuthRequest.
 
+        镜像仓库名称
 
         :param repository: The repository of this CreateUserRepositoryAuthRequest.
         :type: str

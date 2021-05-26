@@ -37,7 +37,7 @@ class ListHistoryStreamsResponse(SdkResponse):
     def __init__(self, history_stream_list=None, total=None, x_request_id=None):
         """ListHistoryStreamsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListHistoryStreamsResponse, self).__init__()
 
         self._history_stream_list = None
         self._total = None

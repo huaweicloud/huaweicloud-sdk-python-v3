@@ -44,6 +44,7 @@ class DeleteEnvironmentRequest:
     def environment_id(self):
         """Gets the environment_id of this DeleteEnvironmentRequest.
 
+        环境ID。
 
         :return: The environment_id of this DeleteEnvironmentRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteEnvironmentRequest:
     def environment_id(self, environment_id):
         """Sets the environment_id of this DeleteEnvironmentRequest.
 
+        环境ID。
 
         :param environment_id: The environment_id of this DeleteEnvironmentRequest.
         :type: str

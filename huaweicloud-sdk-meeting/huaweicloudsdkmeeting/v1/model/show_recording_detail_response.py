@@ -53,7 +53,7 @@ class ShowRecordingDetailResponse(SdkResponse):
     def __init__(self, conf_uuid=None, conf_id=None, url=None, rcd_time=None, rcd_size=None, subject=None, scheduser_name=None, start_time=None, is_decode_finish=None, decode_end_time=None, available=None):
         """ShowRecordingDetailResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowRecordingDetailResponse, self).__init__()
 
         self._conf_uuid = None
         self._conf_id = None

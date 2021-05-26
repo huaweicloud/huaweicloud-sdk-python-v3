@@ -49,6 +49,7 @@ class UpdateVpcRequest:
     def vpc_id(self):
         """Gets the vpc_id of this UpdateVpcRequest.
 
+        虚拟私有云ID
 
         :return: The vpc_id of this UpdateVpcRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateVpcRequest:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this UpdateVpcRequest.
 
+        虚拟私有云ID
 
         :param vpc_id: The vpc_id of this UpdateVpcRequest.
         :type: str

@@ -33,7 +33,7 @@ class ShowAccessDomainResponse(SdkResponse):
     def __init__(self, exist=None):
         """ShowAccessDomainResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowAccessDomainResponse, self).__init__()
 
         self._exist = None
         self.discriminator = None

@@ -39,7 +39,7 @@ class SearchCtlRecordsOfHisMeetingResponse(SdkResponse):
     def __init__(self, offset=None, limit=None, count=None, data=None):
         """SearchCtlRecordsOfHisMeetingResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(SearchCtlRecordsOfHisMeetingResponse, self).__init__()
 
         self._offset = None
         self._limit = None

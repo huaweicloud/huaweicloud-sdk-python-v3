@@ -33,7 +33,7 @@ class ListRetentionsResponse(SdkResponse):
     def __init__(self, body=None):
         """ListRetentionsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListRetentionsResponse, self).__init__()
 
         self._body = None
         self.discriminator = None

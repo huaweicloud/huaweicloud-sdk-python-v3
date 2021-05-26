@@ -33,7 +33,7 @@ class CreateTagResponse(SdkResponse):
     def __init__(self, name=None):
         """CreateTagResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateTagResponse, self).__init__()
 
         self._name = None
         self.discriminator = None

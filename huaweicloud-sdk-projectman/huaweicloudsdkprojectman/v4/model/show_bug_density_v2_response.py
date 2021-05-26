@@ -43,7 +43,7 @@ class ShowBugDensityV2Response(SdkResponse):
     def __init__(self, dividend_value=None, divisor_value=None, metric_name=None, metric_value=None, project_id=None, project_name=None):
         """ShowBugDensityV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowBugDensityV2Response, self).__init__()
 
         self._dividend_value = None
         self._divisor_value = None

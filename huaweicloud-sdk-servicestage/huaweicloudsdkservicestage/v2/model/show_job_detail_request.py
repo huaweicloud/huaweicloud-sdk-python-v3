@@ -64,6 +64,7 @@ class ShowJobDetailRequest:
     def job_id(self):
         """Gets the job_id of this ShowJobDetailRequest.
 
+        部署任务ID。
 
         :return: The job_id of this ShowJobDetailRequest.
         :rtype: str
@@ -74,6 +75,7 @@ class ShowJobDetailRequest:
     def job_id(self, job_id):
         """Sets the job_id of this ShowJobDetailRequest.
 
+        部署任务ID。
 
         :param job_id: The job_id of this ShowJobDetailRequest.
         :type: str
@@ -84,6 +86,7 @@ class ShowJobDetailRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowJobDetailRequest.
 
+        应用组件实例ID。
 
         :return: The instance_id of this ShowJobDetailRequest.
         :rtype: str
@@ -94,6 +97,7 @@ class ShowJobDetailRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowJobDetailRequest.
 
+        应用组件实例ID。
 
         :param instance_id: The instance_id of this ShowJobDetailRequest.
         :type: str
@@ -104,6 +108,7 @@ class ShowJobDetailRequest:
     def limit(self):
         """Gets the limit of this ShowJobDetailRequest.
 
+        指定查询的个数，可用于分页查询。
 
         :return: The limit of this ShowJobDetailRequest.
         :rtype: int
@@ -114,6 +119,7 @@ class ShowJobDetailRequest:
     def limit(self, limit):
         """Sets the limit of this ShowJobDetailRequest.
 
+        指定查询的个数，可用于分页查询。
 
         :param limit: The limit of this ShowJobDetailRequest.
         :type: int
@@ -124,6 +130,7 @@ class ShowJobDetailRequest:
     def offset(self):
         """Gets the offset of this ShowJobDetailRequest.
 
+        指定查询的偏移量，可用于分页查询。
 
         :return: The offset of this ShowJobDetailRequest.
         :rtype: int
@@ -134,6 +141,7 @@ class ShowJobDetailRequest:
     def offset(self, offset):
         """Sets the offset of this ShowJobDetailRequest.
 
+        指定查询的偏移量，可用于分页查询。
 
         :param offset: The offset of this ShowJobDetailRequest.
         :type: int
@@ -144,6 +152,7 @@ class ShowJobDetailRequest:
     def desc(self):
         """Gets the desc of this ShowJobDetailRequest.
 
+        是否降序。true表示desc, false表示asc。
 
         :return: The desc of this ShowJobDetailRequest.
         :rtype: str
@@ -154,6 +163,7 @@ class ShowJobDetailRequest:
     def desc(self, desc):
         """Sets the desc of this ShowJobDetailRequest.
 
+        是否降序。true表示desc, false表示asc。
 
         :param desc: The desc of this ShowJobDetailRequest.
         :type: str

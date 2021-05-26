@@ -48,6 +48,7 @@ class DeleteSubnetRequest:
     def vpc_id(self):
         """Gets the vpc_id of this DeleteSubnetRequest.
 
+        子网对应的vpc_id
 
         :return: The vpc_id of this DeleteSubnetRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteSubnetRequest:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this DeleteSubnetRequest.
 
+        子网对应的vpc_id
 
         :param vpc_id: The vpc_id of this DeleteSubnetRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteSubnetRequest:
     def subnet_id(self):
         """Gets the subnet_id of this DeleteSubnetRequest.
 
+        子网ID
 
         :return: The subnet_id of this DeleteSubnetRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteSubnetRequest:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this DeleteSubnetRequest.
 
+        子网ID
 
         :param subnet_id: The subnet_id of this DeleteSubnetRequest.
         :type: str

@@ -38,7 +38,7 @@ class UserDTO:
         'signature': 'str',
         'title': 'str',
         'description': 'str',
-        'hide_phone': 'str',
+        'hide_phone': 'bool',
         'type': 'str'
     }
 
@@ -458,7 +458,7 @@ class UserDTO:
         是否隐藏手机号（如果为true，其他人查询该用户时，不会返回该用户的手机号。自己查自己是可见的）
 
         :return: The hide_phone of this UserDTO.
-        :rtype: str
+        :rtype: bool
         """
         return self._hide_phone
 
@@ -469,7 +469,7 @@ class UserDTO:
         是否隐藏手机号（如果为true，其他人查询该用户时，不会返回该用户的手机号。自己查自己是可见的）
 
         :param hide_phone: The hide_phone of this UserDTO.
-        :type: str
+        :type: bool
         """
         self._hide_phone = hide_phone
 

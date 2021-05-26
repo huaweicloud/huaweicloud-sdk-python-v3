@@ -26,6 +26,7 @@ class ShowCorpResponse(SdkResponse):
         'basic_info': 'QueryCorpBasicResultDTO',
         'admin_info': 'QueryAdminResultDTO',
         'res_info': 'QueryCorpResResultDTO',
+        'group_dto': 'OrgGroupDTO',
         'id': 'str'
     }
 
@@ -33,17 +34,19 @@ class ShowCorpResponse(SdkResponse):
         'basic_info': 'basicInfo',
         'admin_info': 'adminInfo',
         'res_info': 'resInfo',
+        'group_dto': 'groupDTO',
         'id': 'id'
     }
 
-    def __init__(self, basic_info=None, admin_info=None, res_info=None, id=None):
+    def __init__(self, basic_info=None, admin_info=None, res_info=None, group_dto=None, id=None):
         """ShowCorpResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowCorpResponse, self).__init__()
 
         self._basic_info = None
         self._admin_info = None
         self._res_info = None
+        self._group_dto = None
         self._id = None
         self.discriminator = None
 
@@ -53,6 +56,8 @@ class ShowCorpResponse(SdkResponse):
             self.admin_info = admin_info
         if res_info is not None:
             self.res_info = res_info
+        if group_dto is not None:
+            self.group_dto = group_dto
         if id is not None:
             self.id = id
 
@@ -115,6 +120,26 @@ class ShowCorpResponse(SdkResponse):
         :type: QueryCorpResResultDTO
         """
         self._res_info = res_info
+
+    @property
+    def group_dto(self):
+        """Gets the group_dto of this ShowCorpResponse.
+
+
+        :return: The group_dto of this ShowCorpResponse.
+        :rtype: OrgGroupDTO
+        """
+        return self._group_dto
+
+    @group_dto.setter
+    def group_dto(self, group_dto):
+        """Sets the group_dto of this ShowCorpResponse.
+
+
+        :param group_dto: The group_dto of this ShowCorpResponse.
+        :type: OrgGroupDTO
+        """
+        self._group_dto = group_dto
 
     @property
     def id(self):

@@ -35,7 +35,7 @@ class ListSecretsResponse(SdkResponse):
     def __init__(self, secrets=None, page_info=None):
         """ListSecretsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSecretsResponse, self).__init__()
 
         self._secrets = None
         self._page_info = None

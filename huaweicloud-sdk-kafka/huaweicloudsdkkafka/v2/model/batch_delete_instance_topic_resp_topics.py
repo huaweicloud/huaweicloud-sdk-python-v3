@@ -72,7 +72,7 @@ class BatchDeleteInstanceTopicRespTopics:
     def success(self):
         """Gets the success of this BatchDeleteInstanceTopicRespTopics.
 
-        topic名称。
+        是否删除成功。
 
         :return: The success of this BatchDeleteInstanceTopicRespTopics.
         :rtype: bool
@@ -83,7 +83,7 @@ class BatchDeleteInstanceTopicRespTopics:
     def success(self, success):
         """Sets the success of this BatchDeleteInstanceTopicRespTopics.
 
-        topic名称。
+        是否删除成功。
 
         :param success: The success of this BatchDeleteInstanceTopicRespTopics.
         :type: bool

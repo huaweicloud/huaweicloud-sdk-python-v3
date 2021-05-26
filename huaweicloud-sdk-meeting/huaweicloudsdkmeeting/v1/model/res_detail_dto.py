@@ -24,25 +24,40 @@ class ResDetailDTO:
 
     openapi_types = {
         'sum_count': 'int',
+        'trial_count': 'int',
+        'expired_count': 'int',
+        'expiring_count': 'int',
         'used_count': 'int'
     }
 
     attribute_map = {
         'sum_count': 'sumCount',
+        'trial_count': 'trialCount',
+        'expired_count': 'expiredCount',
+        'expiring_count': 'expiringCount',
         'used_count': 'usedCount'
     }
 
-    def __init__(self, sum_count=None, used_count=None):
+    def __init__(self, sum_count=None, trial_count=None, expired_count=None, expiring_count=None, used_count=None):
         """ResDetailDTO - a model defined in huaweicloud sdk"""
         
         
 
         self._sum_count = None
+        self._trial_count = None
+        self._expired_count = None
+        self._expiring_count = None
         self._used_count = None
         self.discriminator = None
 
         if sum_count is not None:
             self.sum_count = sum_count
+        if trial_count is not None:
+            self.trial_count = trial_count
+        if expired_count is not None:
+            self.expired_count = expired_count
+        if expiring_count is not None:
+            self.expiring_count = expiring_count
         if used_count is not None:
             self.used_count = used_count
 
@@ -67,6 +82,72 @@ class ResDetailDTO:
         :type: int
         """
         self._sum_count = sum_count
+
+    @property
+    def trial_count(self):
+        """Gets the trial_count of this ResDetailDTO.
+
+        赠送数量
+
+        :return: The trial_count of this ResDetailDTO.
+        :rtype: int
+        """
+        return self._trial_count
+
+    @trial_count.setter
+    def trial_count(self, trial_count):
+        """Sets the trial_count of this ResDetailDTO.
+
+        赠送数量
+
+        :param trial_count: The trial_count of this ResDetailDTO.
+        :type: int
+        """
+        self._trial_count = trial_count
+
+    @property
+    def expired_count(self):
+        """Gets the expired_count of this ResDetailDTO.
+
+        到期数量
+
+        :return: The expired_count of this ResDetailDTO.
+        :rtype: int
+        """
+        return self._expired_count
+
+    @expired_count.setter
+    def expired_count(self, expired_count):
+        """Sets the expired_count of this ResDetailDTO.
+
+        到期数量
+
+        :param expired_count: The expired_count of this ResDetailDTO.
+        :type: int
+        """
+        self._expired_count = expired_count
+
+    @property
+    def expiring_count(self):
+        """Gets the expiring_count of this ResDetailDTO.
+
+        即将到期数量，到期时间在30天内
+
+        :return: The expiring_count of this ResDetailDTO.
+        :rtype: int
+        """
+        return self._expiring_count
+
+    @expiring_count.setter
+    def expiring_count(self, expiring_count):
+        """Sets the expiring_count of this ResDetailDTO.
+
+        即将到期数量，到期时间在30天内
+
+        :param expiring_count: The expiring_count of this ResDetailDTO.
+        :type: int
+        """
+        self._expiring_count = expiring_count
 
     @property
     def used_count(self):

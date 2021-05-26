@@ -49,6 +49,7 @@ class CreateComponentRequest:
     def application_id(self):
         """Gets the application_id of this CreateComponentRequest.
 
+        应用ID。
 
         :return: The application_id of this CreateComponentRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateComponentRequest:
     def application_id(self, application_id):
         """Sets the application_id of this CreateComponentRequest.
 
+        应用ID。
 
         :param application_id: The application_id of this CreateComponentRequest.
         :type: str

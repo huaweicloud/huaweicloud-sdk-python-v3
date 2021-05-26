@@ -70,7 +70,7 @@ class RealTimeAttendee:
     def account_id(self):
         """Gets the account_id of this RealTimeAttendee.
 
-        与会者帐号。
+        与会者帐号（AAPID用户，代表第三方账号）。
 
         :return: The account_id of this RealTimeAttendee.
         :rtype: str
@@ -81,7 +81,7 @@ class RealTimeAttendee:
     def account_id(self, account_id):
         """Sets the account_id of this RealTimeAttendee.
 
-        与会者帐号。
+        与会者帐号（AAPID用户，代表第三方账号）。
 
         :param account_id: The account_id of this RealTimeAttendee.
         :type: str
