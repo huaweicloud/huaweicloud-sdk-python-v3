@@ -33,7 +33,7 @@ class CancelResourcesSubscriptionResponse(SdkResponse):
     def __init__(self, order_ids=None):
         """CancelResourcesSubscriptionResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CancelResourcesSubscriptionResponse, self).__init__()
 
         self._order_ids = None
         self.discriminator = None

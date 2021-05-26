@@ -33,7 +33,7 @@ class ListSkuInventoriesResponse(SdkResponse):
     def __init__(self, sku_inventories=None):
         """ListSkuInventoriesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSkuInventoriesResponse, self).__init__()
 
         self._sku_inventories = None
         self.discriminator = None

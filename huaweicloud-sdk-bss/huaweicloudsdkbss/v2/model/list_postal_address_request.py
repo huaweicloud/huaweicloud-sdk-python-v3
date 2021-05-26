@@ -50,6 +50,7 @@ class ListPostalAddressRequest:
     def offset(self):
         """Gets the offset of this ListPostalAddressRequest.
 
+        偏移量。默认值为0。
 
         :return: The offset of this ListPostalAddressRequest.
         :rtype: int
@@ -60,6 +61,7 @@ class ListPostalAddressRequest:
     def offset(self, offset):
         """Sets the offset of this ListPostalAddressRequest.
 
+        偏移量。默认值为0。
 
         :param offset: The offset of this ListPostalAddressRequest.
         :type: int
@@ -70,6 +72,7 @@ class ListPostalAddressRequest:
     def limit(self):
         """Gets the limit of this ListPostalAddressRequest.
 
+        每次查询的个数。默认值为10。
 
         :return: The limit of this ListPostalAddressRequest.
         :rtype: int
@@ -80,6 +83,7 @@ class ListPostalAddressRequest:
     def limit(self, limit):
         """Sets the limit of this ListPostalAddressRequest.
 
+        每次查询的个数。默认值为10。
 
         :param limit: The limit of this ListPostalAddressRequest.
         :type: int

@@ -50,6 +50,7 @@ class ListResourceTypesRequest:
     def x_language(self):
         """Gets the x_language of this ListResourceTypesRequest.
 
+        |忽略大小写，默认 zh_cn：中文 en_us：英文|
 
         :return: The x_language of this ListResourceTypesRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class ListResourceTypesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListResourceTypesRequest.
 
+        |忽略大小写，默认 zh_cn：中文 en_us：英文|
 
         :param x_language: The x_language of this ListResourceTypesRequest.
         :type: str
@@ -70,6 +72,7 @@ class ListResourceTypesRequest:
     def resource_type_code(self):
         """Gets the resource_type_code of this ListResourceTypesRequest.
 
+        |参数名称：资源类型编码| |参数的约束及描述：云服务类型编码,最大长度64|
 
         :return: The resource_type_code of this ListResourceTypesRequest.
         :rtype: str
@@ -80,6 +83,7 @@ class ListResourceTypesRequest:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this ListResourceTypesRequest.
 
+        |参数名称：资源类型编码| |参数的约束及描述：云服务类型编码,最大长度64|
 
         :param resource_type_code: The resource_type_code of this ListResourceTypesRequest.
         :type: str

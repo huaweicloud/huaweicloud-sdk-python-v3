@@ -59,7 +59,7 @@ class ShowBlockchainDetailResponse(SdkResponse):
     def __init__(self, basic_info=None, channels=None, peer_info=None, light_peer_info=None, orderer_info=None, couch_db_info=None, dms_kafka_info=None, ief_info=None, sfs_info=None, agent_info=None, restapi_info=None, evs_pvc_info=None, tc3_taskserver_info=None, obs_bucket_info=None):
         """ShowBlockchainDetailResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowBlockchainDetailResponse, self).__init__()
 
         self._basic_info = None
         self._channels = None

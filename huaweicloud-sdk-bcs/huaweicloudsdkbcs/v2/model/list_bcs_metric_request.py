@@ -49,6 +49,7 @@ class ListBcsMetricRequest:
     def blockchain_id(self):
         """Gets the blockchain_id of this ListBcsMetricRequest.
 
+        区块链服务id,当前不支持IEF实例
 
         :return: The blockchain_id of this ListBcsMetricRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ListBcsMetricRequest:
     def blockchain_id(self, blockchain_id):
         """Sets the blockchain_id of this ListBcsMetricRequest.
 
+        区块链服务id,当前不支持IEF实例
 
         :param blockchain_id: The blockchain_id of this ListBcsMetricRequest.
         :type: str

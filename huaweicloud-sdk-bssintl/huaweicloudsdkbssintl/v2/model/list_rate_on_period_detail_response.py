@@ -37,7 +37,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
     def __init__(self, official_website_rating_result=None, optional_discount_rating_results=None, currency=None):
         """ListRateOnPeriodDetailResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListRateOnPeriodDetailResponse, self).__init__()
 
         self._official_website_rating_result = None
         self._optional_discount_rating_results = None

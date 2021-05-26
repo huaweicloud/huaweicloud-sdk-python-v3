@@ -50,6 +50,7 @@ class ListEnterpriseOrganizationsRequest:
     def recursive_query(self):
         """Gets the recursive_query of this ListEnterpriseOrganizationsRequest.
 
+        是否递归查询。0：不递归（默认）1：递归如果不递归，只返回起始节点的直接子节点。
 
         :return: The recursive_query of this ListEnterpriseOrganizationsRequest.
         :rtype: int
@@ -60,6 +61,7 @@ class ListEnterpriseOrganizationsRequest:
     def recursive_query(self, recursive_query):
         """Sets the recursive_query of this ListEnterpriseOrganizationsRequest.
 
+        是否递归查询。0：不递归（默认）1：递归如果不递归，只返回起始节点的直接子节点。
 
         :param recursive_query: The recursive_query of this ListEnterpriseOrganizationsRequest.
         :type: int
@@ -70,6 +72,7 @@ class ListEnterpriseOrganizationsRequest:
     def parent_id(self):
         """Gets the parent_id of this ListEnterpriseOrganizationsRequest.
 
+        指定的节点ID。为空则从根节点查起。
 
         :return: The parent_id of this ListEnterpriseOrganizationsRequest.
         :rtype: str
@@ -80,6 +83,7 @@ class ListEnterpriseOrganizationsRequest:
     def parent_id(self, parent_id):
         """Sets the parent_id of this ListEnterpriseOrganizationsRequest.
 
+        指定的节点ID。为空则从根节点查起。
 
         :param parent_id: The parent_id of this ListEnterpriseOrganizationsRequest.
         :type: str

@@ -44,6 +44,7 @@ class ShowSpecifiedVersionRequest:
     def api_version(self):
         """Gets the api_version of this ShowSpecifiedVersionRequest.
 
+        API版本号
 
         :return: The api_version of this ShowSpecifiedVersionRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowSpecifiedVersionRequest:
     def api_version(self, api_version):
         """Sets the api_version of this ShowSpecifiedVersionRequest.
 
+        API版本号
 
         :param api_version: The api_version of this ShowSpecifiedVersionRequest.
         :type: str

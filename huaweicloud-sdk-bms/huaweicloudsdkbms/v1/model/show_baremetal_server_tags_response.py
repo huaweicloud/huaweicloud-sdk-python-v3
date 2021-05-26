@@ -33,7 +33,7 @@ class ShowBaremetalServerTagsResponse(SdkResponse):
     def __init__(self, tags=None):
         """ShowBaremetalServerTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowBaremetalServerTagsResponse, self).__init__()
 
         self._tags = None
         self.discriminator = None

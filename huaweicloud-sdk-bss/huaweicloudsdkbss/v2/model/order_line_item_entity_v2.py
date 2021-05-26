@@ -120,7 +120,7 @@ class OrderLineItemEntityV2:
     def order_line_item_id(self):
         """Gets the order_line_item_id of this OrderLineItemEntityV2.
 
-        订单项Id。
+        订单项ID。
 
         :return: The order_line_item_id of this OrderLineItemEntityV2.
         :rtype: str
@@ -131,7 +131,7 @@ class OrderLineItemEntityV2:
     def order_line_item_id(self, order_line_item_id):
         """Sets the order_line_item_id of this OrderLineItemEntityV2.
 
-        订单项Id。
+        订单项ID。
 
         :param order_line_item_id: The order_line_item_id of this OrderLineItemEntityV2.
         :type: str

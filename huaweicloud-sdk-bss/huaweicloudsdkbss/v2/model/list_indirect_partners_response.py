@@ -35,7 +35,7 @@ class ListIndirectPartnersResponse(SdkResponse):
     def __init__(self, count=None, indirect_partners=None):
         """ListIndirectPartnersResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListIndirectPartnersResponse, self).__init__()
 
         self._count = None
         self._indirect_partners = None

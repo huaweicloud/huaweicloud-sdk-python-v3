@@ -33,7 +33,7 @@ class CreatePostalResponse(SdkResponse):
     def __init__(self, address_id=None):
         """CreatePostalResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreatePostalResponse, self).__init__()
 
         self._address_id = None
         self.discriminator = None

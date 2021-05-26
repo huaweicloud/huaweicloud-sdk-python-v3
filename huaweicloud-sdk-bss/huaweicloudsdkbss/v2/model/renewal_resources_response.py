@@ -33,7 +33,7 @@ class RenewalResourcesResponse(SdkResponse):
     def __init__(self, order_ids=None):
         """RenewalResourcesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RenewalResourcesResponse, self).__init__()
 
         self._order_ids = None
         self.discriminator = None

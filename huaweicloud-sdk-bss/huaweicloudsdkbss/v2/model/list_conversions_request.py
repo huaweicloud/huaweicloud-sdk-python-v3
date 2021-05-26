@@ -50,6 +50,7 @@ class ListConversionsRequest:
     def x_language(self):
         """Gets the x_language of this ListConversionsRequest.
 
+        |忽略大小写，默认 zh_CN：中文 en_US：英文|
 
         :return: The x_language of this ListConversionsRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class ListConversionsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListConversionsRequest.
 
+        |忽略大小写，默认 zh_CN：中文 en_US：英文|
 
         :param x_language: The x_language of this ListConversionsRequest.
         :type: str
@@ -70,6 +72,7 @@ class ListConversionsRequest:
     def measure_type(self):
         """Gets the measure_type of this ListConversionsRequest.
 
+        度量类型。1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量25：测试类型
 
         :return: The measure_type of this ListConversionsRequest.
         :rtype: int
@@ -80,6 +83,7 @@ class ListConversionsRequest:
     def measure_type(self, measure_type):
         """Sets the measure_type of this ListConversionsRequest.
 
+        度量类型。1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量25：测试类型
 
         :param measure_type: The measure_type of this ListConversionsRequest.
         :type: int

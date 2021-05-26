@@ -50,6 +50,7 @@ class ListServiceTypesRequest:
     def x_language(self):
         """Gets the x_language of this ListServiceTypesRequest.
 
+        |忽略大小写，默认 zh_cn：中文 en_us：英文|
 
         :return: The x_language of this ListServiceTypesRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class ListServiceTypesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListServiceTypesRequest.
 
+        |忽略大小写，默认 zh_cn：中文 en_us：英文|
 
         :param x_language: The x_language of this ListServiceTypesRequest.
         :type: str
@@ -70,6 +72,7 @@ class ListServiceTypesRequest:
     def service_type_code(self):
         """Gets the service_type_code of this ListServiceTypesRequest.
 
+        |参数名称：云服务类型编码| |参数的约束及描述：云服务类型编码,最大长度64|
 
         :return: The service_type_code of this ListServiceTypesRequest.
         :rtype: str
@@ -80,6 +83,7 @@ class ListServiceTypesRequest:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ListServiceTypesRequest.
 
+        |参数名称：云服务类型编码| |参数的约束及描述：云服务类型编码,最大长度64|
 
         :param service_type_code: The service_type_code of this ListServiceTypesRequest.
         :type: str

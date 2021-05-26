@@ -33,7 +33,7 @@ class ShowWindowsBaremetalServerPwdResponse(SdkResponse):
     def __init__(self, password=None):
         """ShowWindowsBaremetalServerPwdResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowWindowsBaremetalServerPwdResponse, self).__init__()
 
         self._password = None
         self.discriminator = None

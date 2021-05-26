@@ -35,7 +35,7 @@ class ShowRealnameAuthenticationReviewResultResponse(SdkResponse):
     def __init__(self, review_result=None, opinion=None):
         """ShowRealnameAuthenticationReviewResultResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowRealnameAuthenticationReviewResultResponse, self).__init__()
 
         self._review_result = None
         self._opinion = None

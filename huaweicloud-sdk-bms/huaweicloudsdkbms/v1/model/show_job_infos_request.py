@@ -44,6 +44,7 @@ class ShowJobInfosRequest:
     def job_id(self):
         """Gets the job_id of this ShowJobInfosRequest.
 
+        Job ID
 
         :return: The job_id of this ShowJobInfosRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowJobInfosRequest:
     def job_id(self, job_id):
         """Sets the job_id of this ShowJobInfosRequest.
 
+        Job ID
 
         :param job_id: The job_id of this ShowJobInfosRequest.
         :type: str

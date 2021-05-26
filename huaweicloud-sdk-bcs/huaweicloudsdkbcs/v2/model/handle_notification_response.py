@@ -31,7 +31,7 @@ class HandleNotificationResponse(SdkResponse):
     def __init__(self):
         """HandleNotificationResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(HandleNotificationResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

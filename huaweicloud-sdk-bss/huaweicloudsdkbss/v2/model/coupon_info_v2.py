@@ -482,7 +482,7 @@ class CouponInfoV2:
     def used_by_order_id(self):
         """Gets the used_by_order_id of this CouponInfoV2.
 
-        使用优惠券的订单ID，表示正在有另外一张订单正在使用这个优惠券。正在锁定的时候，只有锁定优惠券的订单才能使用这个优惠券，其他订单不能使用该优惠券。
+        使用优惠券的订单ID。表示有订单正在使用这个优惠券，优惠券已被锁定，只有锁定优惠券的订单才能使用这个优惠券，其他订单不能使用该优惠券。
 
         :return: The used_by_order_id of this CouponInfoV2.
         :rtype: str
@@ -493,7 +493,7 @@ class CouponInfoV2:
     def used_by_order_id(self, used_by_order_id):
         """Sets the used_by_order_id of this CouponInfoV2.
 
-        使用优惠券的订单ID，表示正在有另外一张订单正在使用这个优惠券。正在锁定的时候，只有锁定优惠券的订单才能使用这个优惠券，其他订单不能使用该优惠券。
+        使用优惠券的订单ID。表示有订单正在使用这个优惠券，优惠券已被锁定，只有锁定优惠券的订单才能使用这个优惠券，其他订单不能使用该优惠券。
 
         :param used_by_order_id: The used_by_order_id of this CouponInfoV2.
         :type: str

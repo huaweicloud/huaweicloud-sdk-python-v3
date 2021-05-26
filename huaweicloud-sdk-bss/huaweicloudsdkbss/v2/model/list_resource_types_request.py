@@ -50,6 +50,7 @@ class ListResourceTypesRequest:
     def x_language(self):
         """Gets the x_language of this ListResourceTypesRequest.
 
+        语言。zh_CN：中文en_US：英文缺省为zh_CN。
 
         :return: The x_language of this ListResourceTypesRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class ListResourceTypesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListResourceTypesRequest.
 
+        语言。zh_CN：中文en_US：英文缺省为zh_CN。
 
         :param x_language: The x_language of this ListResourceTypesRequest.
         :type: str
@@ -70,6 +72,7 @@ class ListResourceTypesRequest:
     def resource_type_code(self):
         """Gets the resource_type_code of this ListResourceTypesRequest.
 
+        资源类型编码。例如ECS的VM为“hws.resource.type.vm”。
 
         :return: The resource_type_code of this ListResourceTypesRequest.
         :rtype: str
@@ -80,6 +83,7 @@ class ListResourceTypesRequest:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this ListResourceTypesRequest.
 
+        资源类型编码。例如ECS的VM为“hws.resource.type.vm”。
 
         :param resource_type_code: The resource_type_code of this ListResourceTypesRequest.
         :type: str

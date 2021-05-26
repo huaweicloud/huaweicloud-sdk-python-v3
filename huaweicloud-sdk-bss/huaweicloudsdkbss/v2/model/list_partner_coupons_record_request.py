@@ -95,6 +95,7 @@ class ListPartnerCouponsRecordRequest:
     def operation_types(self):
         """Gets the operation_types of this ListPartnerCouponsRecordRequest.
 
+        操作类型。 1：发放2：手动回收3：解绑自动回收4：过期回收5：退订回收6：退款充值撤销7：建立关联回收
 
         :return: The operation_types of this ListPartnerCouponsRecordRequest.
         :rtype: list[str]
@@ -105,6 +106,7 @@ class ListPartnerCouponsRecordRequest:
     def operation_types(self, operation_types):
         """Sets the operation_types of this ListPartnerCouponsRecordRequest.
 
+        操作类型。 1：发放2：手动回收3：解绑自动回收4：过期回收5：退订回收6：退款充值撤销7：建立关联回收
 
         :param operation_types: The operation_types of this ListPartnerCouponsRecordRequest.
         :type: list[str]
@@ -115,6 +117,7 @@ class ListPartnerCouponsRecordRequest:
     def quota_id(self):
         """Gets the quota_id of this ListPartnerCouponsRecordRequest.
 
+        额度ID。 请从“查询优惠券额度”接口的响应参数中获取。
 
         :return: The quota_id of this ListPartnerCouponsRecordRequest.
         :rtype: str
@@ -125,6 +128,7 @@ class ListPartnerCouponsRecordRequest:
     def quota_id(self, quota_id):
         """Sets the quota_id of this ListPartnerCouponsRecordRequest.
 
+        额度ID。 请从“查询优惠券额度”接口的响应参数中获取。
 
         :param quota_id: The quota_id of this ListPartnerCouponsRecordRequest.
         :type: str
@@ -135,6 +139,7 @@ class ListPartnerCouponsRecordRequest:
     def quota_type(self):
         """Gets the quota_type of this ListPartnerCouponsRecordRequest.
 
+        额度类型： 0：代金券额度1：现金券额度
 
         :return: The quota_type of this ListPartnerCouponsRecordRequest.
         :rtype: int
@@ -145,6 +150,7 @@ class ListPartnerCouponsRecordRequest:
     def quota_type(self, quota_type):
         """Sets the quota_type of this ListPartnerCouponsRecordRequest.
 
+        额度类型： 0：代金券额度1：现金券额度
 
         :param quota_type: The quota_type of this ListPartnerCouponsRecordRequest.
         :type: int
@@ -155,6 +161,7 @@ class ListPartnerCouponsRecordRequest:
     def coupon_ids(self):
         """Gets the coupon_ids of this ListPartnerCouponsRecordRequest.
 
+        代金券ID列表。 请从“发放优惠券”接口的响应参数中获取。
 
         :return: The coupon_ids of this ListPartnerCouponsRecordRequest.
         :rtype: list[str]
@@ -165,6 +172,7 @@ class ListPartnerCouponsRecordRequest:
     def coupon_ids(self, coupon_ids):
         """Sets the coupon_ids of this ListPartnerCouponsRecordRequest.
 
+        代金券ID列表。 请从“发放优惠券”接口的响应参数中获取。
 
         :param coupon_ids: The coupon_ids of this ListPartnerCouponsRecordRequest.
         :type: list[str]
@@ -175,6 +183,7 @@ class ListPartnerCouponsRecordRequest:
     def customer_id(self):
         """Gets the customer_id of this ListPartnerCouponsRecordRequest.
 
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :return: The customer_id of this ListPartnerCouponsRecordRequest.
         :rtype: str
@@ -185,6 +194,7 @@ class ListPartnerCouponsRecordRequest:
     def customer_id(self, customer_id):
         """Sets the customer_id of this ListPartnerCouponsRecordRequest.
 
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this ListPartnerCouponsRecordRequest.
         :type: str
@@ -195,6 +205,7 @@ class ListPartnerCouponsRecordRequest:
     def operation_time_begin(self):
         """Gets the operation_time_begin of this ListPartnerCouponsRecordRequest.
 
+        操作时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出操作时间大于这个时间的记录。
 
         :return: The operation_time_begin of this ListPartnerCouponsRecordRequest.
         :rtype: str
@@ -205,6 +216,7 @@ class ListPartnerCouponsRecordRequest:
     def operation_time_begin(self, operation_time_begin):
         """Sets the operation_time_begin of this ListPartnerCouponsRecordRequest.
 
+        操作时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出操作时间大于这个时间的记录。
 
         :param operation_time_begin: The operation_time_begin of this ListPartnerCouponsRecordRequest.
         :type: str
@@ -215,6 +227,7 @@ class ListPartnerCouponsRecordRequest:
     def operation_time_end(self):
         """Gets the operation_time_end of this ListPartnerCouponsRecordRequest.
 
+        操作时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出操作时间小于这个时间的记录。
 
         :return: The operation_time_end of this ListPartnerCouponsRecordRequest.
         :rtype: str
@@ -225,6 +238,7 @@ class ListPartnerCouponsRecordRequest:
     def operation_time_end(self, operation_time_end):
         """Sets the operation_time_end of this ListPartnerCouponsRecordRequest.
 
+        操作时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出操作时间小于这个时间的记录。
 
         :param operation_time_end: The operation_time_end of this ListPartnerCouponsRecordRequest.
         :type: str
@@ -235,6 +249,7 @@ class ListPartnerCouponsRecordRequest:
     def result(self):
         """Gets the result of this ListPartnerCouponsRecordRequest.
 
+        操作结果： 0：成功-1：失败（非0的记录）
 
         :return: The result of this ListPartnerCouponsRecordRequest.
         :rtype: str
@@ -245,6 +260,7 @@ class ListPartnerCouponsRecordRequest:
     def result(self, result):
         """Sets the result of this ListPartnerCouponsRecordRequest.
 
+        操作结果： 0：成功-1：失败（非0的记录）
 
         :param result: The result of this ListPartnerCouponsRecordRequest.
         :type: str
@@ -255,6 +271,7 @@ class ListPartnerCouponsRecordRequest:
     def offset(self):
         """Gets the offset of this ListPartnerCouponsRecordRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :return: The offset of this ListPartnerCouponsRecordRequest.
         :rtype: int
@@ -265,6 +282,7 @@ class ListPartnerCouponsRecordRequest:
     def offset(self, offset):
         """Sets the offset of this ListPartnerCouponsRecordRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :param offset: The offset of this ListPartnerCouponsRecordRequest.
         :type: int
@@ -275,6 +293,7 @@ class ListPartnerCouponsRecordRequest:
     def limit(self):
         """Gets the limit of this ListPartnerCouponsRecordRequest.
 
+        每页记录数。默认值为10。
 
         :return: The limit of this ListPartnerCouponsRecordRequest.
         :rtype: int
@@ -285,6 +304,7 @@ class ListPartnerCouponsRecordRequest:
     def limit(self, limit):
         """Sets the limit of this ListPartnerCouponsRecordRequest.
 
+        每页记录数。默认值为10。
 
         :param limit: The limit of this ListPartnerCouponsRecordRequest.
         :type: int
@@ -295,6 +315,7 @@ class ListPartnerCouponsRecordRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListPartnerCouponsRecordRequest.
 
+        精英服务商ID。 华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券发放记录时，需要携带该参数，否则只能查询发给自己子客户的优惠券发放记录。
 
         :return: The indirect_partner_id of this ListPartnerCouponsRecordRequest.
         :rtype: str
@@ -305,6 +326,7 @@ class ListPartnerCouponsRecordRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListPartnerCouponsRecordRequest.
 
+        精英服务商ID。 华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券发放记录时，需要携带该参数，否则只能查询发给自己子客户的优惠券发放记录。
 
         :param indirect_partner_id: The indirect_partner_id of this ListPartnerCouponsRecordRequest.
         :type: str

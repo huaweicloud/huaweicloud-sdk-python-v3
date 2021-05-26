@@ -33,7 +33,7 @@ class ListPartnerBalancesResponse(SdkResponse):
     def __init__(self, account_balances=None):
         """ListPartnerBalancesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListPartnerBalancesResponse, self).__init__()
 
         self._account_balances = None
         self.discriminator = None

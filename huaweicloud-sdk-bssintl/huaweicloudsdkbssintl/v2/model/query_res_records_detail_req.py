@@ -302,7 +302,7 @@ class QueryResRecordsDetailReq:
     def offset(self):
         """Gets the offset of this QueryResRecordsDetailReq.
 
-        |参数名称：偏移量| |参数的约束及描述：该参数非必填，且只允许数字，默认为1|
+        |参数名称：偏移量| |参数的约束及描述：该参数非必填，且只允许数字，默认为0|
 
         :return: The offset of this QueryResRecordsDetailReq.
         :rtype: int
@@ -313,7 +313,7 @@ class QueryResRecordsDetailReq:
     def offset(self, offset):
         """Sets the offset of this QueryResRecordsDetailReq.
 
-        |参数名称：偏移量| |参数的约束及描述：该参数非必填，且只允许数字，默认为1|
+        |参数名称：偏移量| |参数的约束及描述：该参数非必填，且只允许数字，默认为0|
 
         :param offset: The offset of this QueryResRecordsDetailReq.
         :type: int

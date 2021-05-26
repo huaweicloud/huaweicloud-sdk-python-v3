@@ -33,7 +33,7 @@ class UnfreezeSubCustomersResponse(SdkResponse):
     def __init__(self, error_details=None):
         """UnfreezeSubCustomersResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UnfreezeSubCustomersResponse, self).__init__()
 
         self._error_details = None
         self.discriminator = None

@@ -44,6 +44,7 @@ class DeletePostalRequest:
     def address_id(self):
         """Gets the address_id of this DeletePostalRequest.
 
+        收件人邮寄地址ID。
 
         :return: The address_id of this DeletePostalRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeletePostalRequest:
     def address_id(self, address_id):
         """Sets the address_id of this DeletePostalRequest.
 
+        收件人邮寄地址ID。
 
         :param address_id: The address_id of this DeletePostalRequest.
         :type: str

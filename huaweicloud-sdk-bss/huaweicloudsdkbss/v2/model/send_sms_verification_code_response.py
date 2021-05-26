@@ -31,7 +31,7 @@ class SendSmsVerificationCodeResponse(SdkResponse):
     def __init__(self):
         """SendSmsVerificationCodeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(SendSmsVerificationCodeResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

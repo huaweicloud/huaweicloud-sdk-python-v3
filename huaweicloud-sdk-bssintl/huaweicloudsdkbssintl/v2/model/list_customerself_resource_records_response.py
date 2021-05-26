@@ -37,7 +37,7 @@ class ListCustomerselfResourceRecordsResponse(SdkResponse):
     def __init__(self, fee_records=None, total_count=None, currency=None):
         """ListCustomerselfResourceRecordsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListCustomerselfResourceRecordsResponse, self).__init__()
 
         self._fee_records = None
         self._total_count = None

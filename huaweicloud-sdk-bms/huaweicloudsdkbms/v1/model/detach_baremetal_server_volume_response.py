@@ -33,7 +33,7 @@ class DetachBaremetalServerVolumeResponse(SdkResponse):
     def __init__(self, job_id=None):
         """DetachBaremetalServerVolumeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DetachBaremetalServerVolumeResponse, self).__init__()
 
         self._job_id = None
         self.discriminator = None

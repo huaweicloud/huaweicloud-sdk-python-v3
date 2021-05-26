@@ -44,6 +44,7 @@ class ShowRealnameAuthenticationReviewResultRequest:
     def customer_id(self):
         """Gets the customer_id of this ShowRealnameAuthenticationReviewResultRequest.
 
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :return: The customer_id of this ShowRealnameAuthenticationReviewResultRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowRealnameAuthenticationReviewResultRequest:
     def customer_id(self, customer_id):
         """Sets the customer_id of this ShowRealnameAuthenticationReviewResultRequest.
 
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this ShowRealnameAuthenticationReviewResultRequest.
         :type: str

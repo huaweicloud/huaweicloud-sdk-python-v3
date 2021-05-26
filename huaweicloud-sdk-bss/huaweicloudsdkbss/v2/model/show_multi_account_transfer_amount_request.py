@@ -54,6 +54,7 @@ class ShowMultiAccountTransferAmountRequest:
     def balance_type(self):
         """Gets the balance_type of this ShowMultiAccountTransferAmountRequest.
 
+        账户类型：BALANCE_TYPE_DEBIT：余额账户BALANCE_TYPE_CREDIT：信用账户
 
         :return: The balance_type of this ShowMultiAccountTransferAmountRequest.
         :rtype: str
@@ -64,6 +65,7 @@ class ShowMultiAccountTransferAmountRequest:
     def balance_type(self, balance_type):
         """Sets the balance_type of this ShowMultiAccountTransferAmountRequest.
 
+        账户类型：BALANCE_TYPE_DEBIT：余额账户BALANCE_TYPE_CREDIT：信用账户
 
         :param balance_type: The balance_type of this ShowMultiAccountTransferAmountRequest.
         :type: str
@@ -74,6 +76,7 @@ class ShowMultiAccountTransferAmountRequest:
     def offset(self):
         """Gets the offset of this ShowMultiAccountTransferAmountRequest.
 
+        偏移量，默认值为0。只有信用账户有效。
 
         :return: The offset of this ShowMultiAccountTransferAmountRequest.
         :rtype: int
@@ -84,6 +87,7 @@ class ShowMultiAccountTransferAmountRequest:
     def offset(self, offset):
         """Sets the offset of this ShowMultiAccountTransferAmountRequest.
 
+        偏移量，默认值为0。只有信用账户有效。
 
         :param offset: The offset of this ShowMultiAccountTransferAmountRequest.
         :type: int
@@ -94,6 +98,7 @@ class ShowMultiAccountTransferAmountRequest:
     def limit(self):
         """Gets the limit of this ShowMultiAccountTransferAmountRequest.
 
+        每次查询条数，默认值为10。只有信用账户有效。
 
         :return: The limit of this ShowMultiAccountTransferAmountRequest.
         :rtype: int
@@ -104,6 +109,7 @@ class ShowMultiAccountTransferAmountRequest:
     def limit(self, limit):
         """Sets the limit of this ShowMultiAccountTransferAmountRequest.
 
+        每次查询条数，默认值为10。只有信用账户有效。
 
         :param limit: The limit of this ShowMultiAccountTransferAmountRequest.
         :type: int

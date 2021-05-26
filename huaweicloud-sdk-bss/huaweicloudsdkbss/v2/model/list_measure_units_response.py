@@ -33,7 +33,7 @@ class ListMeasureUnitsResponse(SdkResponse):
     def __init__(self, measure_units=None):
         """ListMeasureUnitsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListMeasureUnitsResponse, self).__init__()
 
         self._measure_units = None
         self.discriminator = None

@@ -31,7 +31,7 @@ class BatchCreateBaremetalServerTagsResponse(SdkResponse):
     def __init__(self):
         """BatchCreateBaremetalServerTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchCreateBaremetalServerTagsResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

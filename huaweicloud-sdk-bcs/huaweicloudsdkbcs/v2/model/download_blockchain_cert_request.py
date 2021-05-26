@@ -52,6 +52,7 @@ class DownloadBlockchainCertRequest:
     def blockchain_id(self):
         """Gets the blockchain_id of this DownloadBlockchainCertRequest.
 
+        blockchainID
 
         :return: The blockchain_id of this DownloadBlockchainCertRequest.
         :rtype: str
@@ -62,6 +63,7 @@ class DownloadBlockchainCertRequest:
     def blockchain_id(self, blockchain_id):
         """Sets the blockchain_id of this DownloadBlockchainCertRequest.
 
+        blockchainID
 
         :param blockchain_id: The blockchain_id of this DownloadBlockchainCertRequest.
         :type: str
@@ -72,6 +74,7 @@ class DownloadBlockchainCertRequest:
     def org_name(self):
         """Gets the org_name of this DownloadBlockchainCertRequest.
 
+        order或者peer组织名称
 
         :return: The org_name of this DownloadBlockchainCertRequest.
         :rtype: str
@@ -82,6 +85,7 @@ class DownloadBlockchainCertRequest:
     def org_name(self, org_name):
         """Sets the org_name of this DownloadBlockchainCertRequest.
 
+        order或者peer组织名称
 
         :param org_name: The org_name of this DownloadBlockchainCertRequest.
         :type: str
@@ -92,6 +96,7 @@ class DownloadBlockchainCertRequest:
     def cert_type(self):
         """Gets the cert_type of this DownloadBlockchainCertRequest.
 
+        下载证书类别
 
         :return: The cert_type of this DownloadBlockchainCertRequest.
         :rtype: str
@@ -102,6 +107,7 @@ class DownloadBlockchainCertRequest:
     def cert_type(self, cert_type):
         """Sets the cert_type of this DownloadBlockchainCertRequest.
 
+        下载证书类别
 
         :param cert_type: The cert_type of this DownloadBlockchainCertRequest.
         :type: str

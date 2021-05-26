@@ -45,7 +45,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
     def __init__(self, bill_cycle=None, initial_amount_due=None, consume_amount=None, refunds=None, adjustments=None, tax_amount=None, currency=None):
         """ListPostpaidBillSumResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListPostpaidBillSumResponse, self).__init__()
 
         self._bill_cycle = None
         self._initial_amount_due = None

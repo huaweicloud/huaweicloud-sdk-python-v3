@@ -44,6 +44,7 @@ class ListBlockchainChannelsRequest:
     def blockchain_id(self):
         """Gets the blockchain_id of this ListBlockchainChannelsRequest.
 
+        blockchainID
 
         :return: The blockchain_id of this ListBlockchainChannelsRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListBlockchainChannelsRequest:
     def blockchain_id(self, blockchain_id):
         """Sets the blockchain_id of this ListBlockchainChannelsRequest.
 
+        blockchainID
 
         :param blockchain_id: The blockchain_id of this ListBlockchainChannelsRequest.
         :type: str

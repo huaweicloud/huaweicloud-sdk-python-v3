@@ -33,7 +33,7 @@ class ListBcsMetricResponse(SdkResponse):
     def __init__(self, metrics=None):
         """ListBcsMetricResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListBcsMetricResponse, self).__init__()
 
         self._metrics = None
         self.discriminator = None

@@ -35,7 +35,7 @@ class ListBareMetalServersResponse(SdkResponse):
     def __init__(self, servers=None, count=None):
         """ListBareMetalServersResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListBareMetalServersResponse, self).__init__()
 
         self._servers = None
         self._count = None

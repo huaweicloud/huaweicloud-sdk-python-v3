@@ -31,7 +31,7 @@ class BatchCreateChannelsResponse(SdkResponse):
     def __init__(self):
         """BatchCreateChannelsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchCreateChannelsResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

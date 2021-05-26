@@ -59,6 +59,7 @@ class ListServiceResourcesRequest:
     def x_language(self):
         """Gets the x_language of this ListServiceResourcesRequest.
 
+        |忽略大小写，默认 zh_cn：中文 en_us：英文|
 
         :return: The x_language of this ListServiceResourcesRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class ListServiceResourcesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListServiceResourcesRequest.
 
+        |忽略大小写，默认 zh_cn：中文 en_us：英文|
 
         :param x_language: The x_language of this ListServiceResourcesRequest.
         :type: str
@@ -79,6 +81,7 @@ class ListServiceResourcesRequest:
     def service_type_code(self):
         """Gets the service_type_code of this ListServiceResourcesRequest.
 
+        |参数名称：云服务类型编码| |参数的约束及描述：|
 
         :return: The service_type_code of this ListServiceResourcesRequest.
         :rtype: str
@@ -89,6 +92,7 @@ class ListServiceResourcesRequest:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ListServiceResourcesRequest.
 
+        |参数名称：云服务类型编码| |参数的约束及描述：|
 
         :param service_type_code: The service_type_code of this ListServiceResourcesRequest.
         :type: str
@@ -99,6 +103,7 @@ class ListServiceResourcesRequest:
     def limit(self):
         """Gets the limit of this ListServiceResourcesRequest.
 
+        |参数名称：每次查询的数量| |参数的约束及描述：|
 
         :return: The limit of this ListServiceResourcesRequest.
         :rtype: int
@@ -109,6 +114,7 @@ class ListServiceResourcesRequest:
     def limit(self, limit):
         """Sets the limit of this ListServiceResourcesRequest.
 
+        |参数名称：每次查询的数量| |参数的约束及描述：|
 
         :param limit: The limit of this ListServiceResourcesRequest.
         :type: int
@@ -119,6 +125,7 @@ class ListServiceResourcesRequest:
     def offset(self):
         """Gets the offset of this ListServiceResourcesRequest.
 
+        |参数名称：偏移量| |参数的约束及描述：|
 
         :return: The offset of this ListServiceResourcesRequest.
         :rtype: int
@@ -129,6 +136,7 @@ class ListServiceResourcesRequest:
     def offset(self, offset):
         """Sets the offset of this ListServiceResourcesRequest.
 
+        |参数名称：偏移量| |参数的约束及描述：|
 
         :param offset: The offset of this ListServiceResourcesRequest.
         :type: int

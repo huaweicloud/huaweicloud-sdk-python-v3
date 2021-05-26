@@ -65,6 +65,7 @@ class ListIssuedCouponQuotasRequest:
     def quota_id(self):
         """Gets the quota_id of this ListIssuedCouponQuotasRequest.
 
+        精英服务商的代金券额度ID。
 
         :return: The quota_id of this ListIssuedCouponQuotasRequest.
         :rtype: str
@@ -75,6 +76,7 @@ class ListIssuedCouponQuotasRequest:
     def quota_id(self, quota_id):
         """Sets the quota_id of this ListIssuedCouponQuotasRequest.
 
+        精英服务商的代金券额度ID。
 
         :param quota_id: The quota_id of this ListIssuedCouponQuotasRequest.
         :type: str
@@ -85,6 +87,7 @@ class ListIssuedCouponQuotasRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListIssuedCouponQuotasRequest.
 
+        精英服务商ID。
 
         :return: The indirect_partner_id of this ListIssuedCouponQuotasRequest.
         :rtype: str
@@ -95,6 +98,7 @@ class ListIssuedCouponQuotasRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListIssuedCouponQuotasRequest.
 
+        精英服务商ID。
 
         :param indirect_partner_id: The indirect_partner_id of this ListIssuedCouponQuotasRequest.
         :type: str
@@ -105,6 +109,7 @@ class ListIssuedCouponQuotasRequest:
     def parent_quota_id(self):
         """Gets the parent_quota_id of this ListIssuedCouponQuotasRequest.
 
+        父额度ID，即华为云伙伴能力中心用于发放给精英服务商代金券额度的额度ID。
 
         :return: The parent_quota_id of this ListIssuedCouponQuotasRequest.
         :rtype: str
@@ -115,6 +120,7 @@ class ListIssuedCouponQuotasRequest:
     def parent_quota_id(self, parent_quota_id):
         """Sets the parent_quota_id of this ListIssuedCouponQuotasRequest.
 
+        父额度ID，即华为云伙伴能力中心用于发放给精英服务商代金券额度的额度ID。
 
         :param parent_quota_id: The parent_quota_id of this ListIssuedCouponQuotasRequest.
         :type: str
@@ -125,6 +131,7 @@ class ListIssuedCouponQuotasRequest:
     def offset(self):
         """Gets the offset of this ListIssuedCouponQuotasRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :return: The offset of this ListIssuedCouponQuotasRequest.
         :rtype: int
@@ -135,6 +142,7 @@ class ListIssuedCouponQuotasRequest:
     def offset(self, offset):
         """Sets the offset of this ListIssuedCouponQuotasRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :param offset: The offset of this ListIssuedCouponQuotasRequest.
         :type: int
@@ -145,6 +153,7 @@ class ListIssuedCouponQuotasRequest:
     def limit(self):
         """Gets the limit of this ListIssuedCouponQuotasRequest.
 
+        每次查询记录数。默认值为10。
 
         :return: The limit of this ListIssuedCouponQuotasRequest.
         :rtype: int
@@ -155,6 +164,7 @@ class ListIssuedCouponQuotasRequest:
     def limit(self, limit):
         """Sets the limit of this ListIssuedCouponQuotasRequest.
 
+        每次查询记录数。默认值为10。
 
         :param limit: The limit of this ListIssuedCouponQuotasRequest.
         :type: int

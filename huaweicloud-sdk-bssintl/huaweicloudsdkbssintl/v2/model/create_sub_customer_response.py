@@ -35,7 +35,7 @@ class CreateSubCustomerResponse(SdkResponse):
     def __init__(self, domain_id=None, domain_name=None):
         """CreateSubCustomerResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateSubCustomerResponse, self).__init__()
 
         self._domain_id = None
         self._domain_name = None

@@ -33,7 +33,7 @@ class UpdateCustomerAccountAmountResponse(SdkResponse):
     def __init__(self, transfer_id=None):
         """UpdateCustomerAccountAmountResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateCustomerAccountAmountResponse, self).__init__()
 
         self._transfer_id = None
         self.discriminator = None

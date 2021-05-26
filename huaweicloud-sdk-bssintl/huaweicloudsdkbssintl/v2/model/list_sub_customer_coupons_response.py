@@ -35,7 +35,7 @@ class ListSubCustomerCouponsResponse(SdkResponse):
     def __init__(self, count=None, user_coupons=None):
         """ListSubCustomerCouponsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSubCustomerCouponsResponse, self).__init__()
 
         self._count = None
         self._user_coupons = None

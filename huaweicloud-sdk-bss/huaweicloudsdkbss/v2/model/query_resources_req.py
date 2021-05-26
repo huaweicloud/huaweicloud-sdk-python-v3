@@ -136,7 +136,7 @@ class QueryResourcesReq:
     def status_list(self):
         """Gets the status_list of this QueryResourcesReq.
 
-        资源状态。 查询指定状态的资源。多个状态以英文逗号分隔。 2：已生效4：已冻结
+        资源状态。 查询指定状态的资源。多个状态以英文逗号分隔。 2：使用中4：已冻结5：已过期
 
         :return: The status_list of this QueryResourcesReq.
         :rtype: list[int]
@@ -147,7 +147,7 @@ class QueryResourcesReq:
     def status_list(self, status_list):
         """Sets the status_list of this QueryResourcesReq.
 
-        资源状态。 查询指定状态的资源。多个状态以英文逗号分隔。 2：已生效4：已冻结
+        资源状态。 查询指定状态的资源。多个状态以英文逗号分隔。 2：使用中4：已冻结5：已过期
 
         :param status_list: The status_list of this QueryResourcesReq.
         :type: list[int]

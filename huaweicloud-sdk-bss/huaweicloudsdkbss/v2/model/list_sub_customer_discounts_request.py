@@ -49,6 +49,7 @@ class ListSubCustomerDiscountsRequest:
     def customer_id(self):
         """Gets the customer_id of this ListSubCustomerDiscountsRequest.
 
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :return: The customer_id of this ListSubCustomerDiscountsRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ListSubCustomerDiscountsRequest:
     def customer_id(self, customer_id):
         """Sets the customer_id of this ListSubCustomerDiscountsRequest.
 
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this ListSubCustomerDiscountsRequest.
         :type: str
@@ -69,6 +71,7 @@ class ListSubCustomerDiscountsRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListSubCustomerDiscountsRequest.
 
+        精英服务商ID。
 
         :return: The indirect_partner_id of this ListSubCustomerDiscountsRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ListSubCustomerDiscountsRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListSubCustomerDiscountsRequest.
 
+        精英服务商ID。
 
         :param indirect_partner_id: The indirect_partner_id of this ListSubCustomerDiscountsRequest.
         :type: str

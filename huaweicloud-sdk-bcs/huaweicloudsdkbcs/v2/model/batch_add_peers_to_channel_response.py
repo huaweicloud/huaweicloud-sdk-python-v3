@@ -33,7 +33,7 @@ class BatchAddPeersToChannelResponse(SdkResponse):
     def __init__(self, operation_id=None):
         """BatchAddPeersToChannelResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchAddPeersToChannelResponse, self).__init__()
 
         self._operation_id = None
         self.discriminator = None

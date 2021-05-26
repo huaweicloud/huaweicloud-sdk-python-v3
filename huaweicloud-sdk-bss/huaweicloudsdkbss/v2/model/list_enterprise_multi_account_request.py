@@ -58,6 +58,7 @@ class ListEnterpriseMultiAccountRequest:
     def sub_customer_id(self):
         """Gets the sub_customer_id of this ListEnterpriseMultiAccountRequest.
 
+        企业子账户的账号ID。
 
         :return: The sub_customer_id of this ListEnterpriseMultiAccountRequest.
         :rtype: str
@@ -68,6 +69,7 @@ class ListEnterpriseMultiAccountRequest:
     def sub_customer_id(self, sub_customer_id):
         """Sets the sub_customer_id of this ListEnterpriseMultiAccountRequest.
 
+        企业子账户的账号ID。
 
         :param sub_customer_id: The sub_customer_id of this ListEnterpriseMultiAccountRequest.
         :type: str
@@ -78,6 +80,7 @@ class ListEnterpriseMultiAccountRequest:
     def balance_type(self):
         """Gets the balance_type of this ListEnterpriseMultiAccountRequest.
 
+        账户类型：BALANCE_TYPE_DEBIT：余额账户（默认）BALANCE_TYPE_CREDIT：信用账户
 
         :return: The balance_type of this ListEnterpriseMultiAccountRequest.
         :rtype: str
@@ -88,6 +91,7 @@ class ListEnterpriseMultiAccountRequest:
     def balance_type(self, balance_type):
         """Sets the balance_type of this ListEnterpriseMultiAccountRequest.
 
+        账户类型：BALANCE_TYPE_DEBIT：余额账户（默认）BALANCE_TYPE_CREDIT：信用账户
 
         :param balance_type: The balance_type of this ListEnterpriseMultiAccountRequest.
         :type: str
@@ -98,6 +102,7 @@ class ListEnterpriseMultiAccountRequest:
     def offset(self):
         """Gets the offset of this ListEnterpriseMultiAccountRequest.
 
+        偏移量，默认值为0。只有信用账户有效。
 
         :return: The offset of this ListEnterpriseMultiAccountRequest.
         :rtype: int
@@ -108,6 +113,7 @@ class ListEnterpriseMultiAccountRequest:
     def offset(self, offset):
         """Sets the offset of this ListEnterpriseMultiAccountRequest.
 
+        偏移量，默认值为0。只有信用账户有效。
 
         :param offset: The offset of this ListEnterpriseMultiAccountRequest.
         :type: int
@@ -118,6 +124,7 @@ class ListEnterpriseMultiAccountRequest:
     def limit(self):
         """Gets the limit of this ListEnterpriseMultiAccountRequest.
 
+        每次查询条数，默认值为10。只有信用账户有效。
 
         :return: The limit of this ListEnterpriseMultiAccountRequest.
         :rtype: int
@@ -128,6 +135,7 @@ class ListEnterpriseMultiAccountRequest:
     def limit(self, limit):
         """Sets the limit of this ListEnterpriseMultiAccountRequest.
 
+        每次查询条数，默认值为10。只有信用账户有效。
 
         :param limit: The limit of this ListEnterpriseMultiAccountRequest.
         :type: int

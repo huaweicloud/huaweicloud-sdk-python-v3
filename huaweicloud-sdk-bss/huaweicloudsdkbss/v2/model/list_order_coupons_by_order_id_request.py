@@ -44,6 +44,7 @@ class ListOrderCouponsByOrderIdRequest:
     def order_id(self):
         """Gets the order_id of this ListOrderCouponsByOrderIdRequest.
 
+        订单ID。
 
         :return: The order_id of this ListOrderCouponsByOrderIdRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListOrderCouponsByOrderIdRequest:
     def order_id(self, order_id):
         """Sets the order_id of this ListOrderCouponsByOrderIdRequest.
 
+        订单ID。
 
         :param order_id: The order_id of this ListOrderCouponsByOrderIdRequest.
         :type: str

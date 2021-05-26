@@ -43,7 +43,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
     def __init__(self, amount=None, discount_amount=None, official_website_amount=None, measure_id=None, currency=None, product_rating_results=None):
         """ListOnDemandResourceRatingsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListOnDemandResourceRatingsResponse, self).__init__()
 
         self._amount = None
         self._discount_amount = None

@@ -33,7 +33,7 @@ class UpdateBaremetalServerMetadataResponse(SdkResponse):
     def __init__(self, metadata=None):
         """UpdateBaremetalServerMetadataResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateBaremetalServerMetadataResponse, self).__init__()
 
         self._metadata = None
         self.discriminator = None

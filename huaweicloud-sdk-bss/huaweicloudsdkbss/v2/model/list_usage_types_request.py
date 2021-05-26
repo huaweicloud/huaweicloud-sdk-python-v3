@@ -60,6 +60,7 @@ class ListUsageTypesRequest:
     def x_language(self):
         """Gets the x_language of this ListUsageTypesRequest.
 
+        语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
         :return: The x_language of this ListUsageTypesRequest.
         :rtype: str
@@ -70,6 +71,7 @@ class ListUsageTypesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListUsageTypesRequest.
 
+        语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
         :param x_language: The x_language of this ListUsageTypesRequest.
         :type: str
@@ -80,6 +82,7 @@ class ListUsageTypesRequest:
     def resource_type_code(self):
         """Gets the resource_type_code of this ListUsageTypesRequest.
 
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :return: The resource_type_code of this ListUsageTypesRequest.
         :rtype: str
@@ -90,6 +93,7 @@ class ListUsageTypesRequest:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this ListUsageTypesRequest.
 
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type_code: The resource_type_code of this ListUsageTypesRequest.
         :type: str
@@ -100,6 +104,7 @@ class ListUsageTypesRequest:
     def offset(self):
         """Gets the offset of this ListUsageTypesRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :return: The offset of this ListUsageTypesRequest.
         :rtype: int
@@ -110,6 +115,7 @@ class ListUsageTypesRequest:
     def offset(self, offset):
         """Sets the offset of this ListUsageTypesRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :param offset: The offset of this ListUsageTypesRequest.
         :type: int
@@ -120,6 +126,7 @@ class ListUsageTypesRequest:
     def limit(self):
         """Gets the limit of this ListUsageTypesRequest.
 
+        每次查询的数量，默认值为10。
 
         :return: The limit of this ListUsageTypesRequest.
         :rtype: int
@@ -130,6 +137,7 @@ class ListUsageTypesRequest:
     def limit(self, limit):
         """Sets the limit of this ListUsageTypesRequest.
 
+        每次查询的数量，默认值为10。
 
         :param limit: The limit of this ListUsageTypesRequest.
         :type: int

@@ -33,7 +33,7 @@ class BatchSetSubCustomerDiscountResponse(SdkResponse):
     def __init__(self, error_details=None):
         """BatchSetSubCustomerDiscountResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchSetSubCustomerDiscountResponse, self).__init__()
 
         self._error_details = None
         self.discriminator = None

@@ -65,6 +65,7 @@ class ListOpRecordRequest:
     def blockchain_id(self):
         """Gets the blockchain_id of this ListOpRecordRequest.
 
+        区块链ID
 
         :return: The blockchain_id of this ListOpRecordRequest.
         :rtype: str
@@ -75,6 +76,7 @@ class ListOpRecordRequest:
     def blockchain_id(self, blockchain_id):
         """Sets the blockchain_id of this ListOpRecordRequest.
 
+        区块链ID
 
         :param blockchain_id: The blockchain_id of this ListOpRecordRequest.
         :type: str
@@ -85,6 +87,7 @@ class ListOpRecordRequest:
     def operation_status(self):
         """Gets the operation_status of this ListOpRecordRequest.
 
+        操作状态
 
         :return: The operation_status of this ListOpRecordRequest.
         :rtype: str
@@ -95,6 +98,7 @@ class ListOpRecordRequest:
     def operation_status(self, operation_status):
         """Sets the operation_status of this ListOpRecordRequest.
 
+        操作状态
 
         :param operation_status: The operation_status of this ListOpRecordRequest.
         :type: str
@@ -105,6 +109,7 @@ class ListOpRecordRequest:
     def resource_type(self):
         """Gets the resource_type of this ListOpRecordRequest.
 
+        资源类型
 
         :return: The resource_type of this ListOpRecordRequest.
         :rtype: str
@@ -115,6 +120,7 @@ class ListOpRecordRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListOpRecordRequest.
 
+        资源类型
 
         :param resource_type: The resource_type of this ListOpRecordRequest.
         :type: str
@@ -125,6 +131,7 @@ class ListOpRecordRequest:
     def operation_type(self):
         """Gets the operation_type of this ListOpRecordRequest.
 
+        操作类型,  可选数值如下（括号中为该数值对应的操作类型含义）：99（OpCreate）,00（OpDelete）,01（OpUpgrade）,91（OpUpgradeRb）,02（OpAddOrg）,03（OpScaleOrg）,04（OpJoinChannel）,05（OpJoinUnion）
 
         :return: The operation_type of this ListOpRecordRequest.
         :rtype: str
@@ -135,6 +142,7 @@ class ListOpRecordRequest:
     def operation_type(self, operation_type):
         """Sets the operation_type of this ListOpRecordRequest.
 
+        操作类型,  可选数值如下（括号中为该数值对应的操作类型含义）：99（OpCreate）,00（OpDelete）,01（OpUpgrade）,91（OpUpgradeRb）,02（OpAddOrg）,03（OpScaleOrg）,04（OpJoinChannel）,05（OpJoinUnion）
 
         :param operation_type: The operation_type of this ListOpRecordRequest.
         :type: str
@@ -145,6 +153,7 @@ class ListOpRecordRequest:
     def operation_id(self):
         """Gets the operation_id of this ListOpRecordRequest.
 
+        操作记录ID
 
         :return: The operation_id of this ListOpRecordRequest.
         :rtype: str
@@ -155,6 +164,7 @@ class ListOpRecordRequest:
     def operation_id(self, operation_id):
         """Sets the operation_id of this ListOpRecordRequest.
 
+        操作记录ID
 
         :param operation_id: The operation_id of this ListOpRecordRequest.
         :type: str

@@ -48,6 +48,7 @@ class DetachBaremetalServerVolumeRequest:
     def server_id(self):
         """Gets the server_id of this DetachBaremetalServerVolumeRequest.
 
+        裸金属服务器ID
 
         :return: The server_id of this DetachBaremetalServerVolumeRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DetachBaremetalServerVolumeRequest:
     def server_id(self, server_id):
         """Sets the server_id of this DetachBaremetalServerVolumeRequest.
 
+        裸金属服务器ID
 
         :param server_id: The server_id of this DetachBaremetalServerVolumeRequest.
         :type: str
@@ -68,6 +70,7 @@ class DetachBaremetalServerVolumeRequest:
     def attachment_id(self):
         """Gets the attachment_id of this DetachBaremetalServerVolumeRequest.
 
+        裸金属服务器的云磁盘ID
 
         :return: The attachment_id of this DetachBaremetalServerVolumeRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DetachBaremetalServerVolumeRequest:
     def attachment_id(self, attachment_id):
         """Sets the attachment_id of this DetachBaremetalServerVolumeRequest.
 
+        裸金属服务器的云磁盘ID
 
         :param attachment_id: The attachment_id of this DetachBaremetalServerVolumeRequest.
         :type: str

@@ -105,6 +105,7 @@ class ListCustomerOrdersRequest:
     def order_id(self):
         """Gets the order_id of this ListCustomerOrdersRequest.
 
+        订单ID。
 
         :return: The order_id of this ListCustomerOrdersRequest.
         :rtype: str
@@ -115,6 +116,7 @@ class ListCustomerOrdersRequest:
     def order_id(self, order_id):
         """Sets the order_id of this ListCustomerOrdersRequest.
 
+        订单ID。
 
         :param order_id: The order_id of this ListCustomerOrdersRequest.
         :type: str
@@ -125,6 +127,7 @@ class ListCustomerOrdersRequest:
     def customer_id(self):
         """Gets the customer_id of this ListCustomerOrdersRequest.
 
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :return: The customer_id of this ListCustomerOrdersRequest.
         :rtype: str
@@ -135,6 +138,7 @@ class ListCustomerOrdersRequest:
     def customer_id(self, customer_id):
         """Sets the customer_id of this ListCustomerOrdersRequest.
 
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this ListCustomerOrdersRequest.
         :type: str
@@ -145,6 +149,7 @@ class ListCustomerOrdersRequest:
     def create_time_begin(self):
         """Gets the create_time_begin of this ListCustomerOrdersRequest.
 
+        订单创建开始时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :return: The create_time_begin of this ListCustomerOrdersRequest.
         :rtype: str
@@ -155,6 +160,7 @@ class ListCustomerOrdersRequest:
     def create_time_begin(self, create_time_begin):
         """Sets the create_time_begin of this ListCustomerOrdersRequest.
 
+        订单创建开始时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param create_time_begin: The create_time_begin of this ListCustomerOrdersRequest.
         :type: str
@@ -165,6 +171,7 @@ class ListCustomerOrdersRequest:
     def create_time_end(self):
         """Gets the create_time_end of this ListCustomerOrdersRequest.
 
+        订单创建结束时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :return: The create_time_end of this ListCustomerOrdersRequest.
         :rtype: str
@@ -175,6 +182,7 @@ class ListCustomerOrdersRequest:
     def create_time_end(self, create_time_end):
         """Sets the create_time_end of this ListCustomerOrdersRequest.
 
+        订单创建结束时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param create_time_end: The create_time_end of this ListCustomerOrdersRequest.
         :type: str
@@ -185,6 +193,7 @@ class ListCustomerOrdersRequest:
     def service_type_code(self):
         """Gets the service_type_code of this ListCustomerOrdersRequest.
 
+        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
 
         :return: The service_type_code of this ListCustomerOrdersRequest.
         :rtype: str
@@ -195,6 +204,7 @@ class ListCustomerOrdersRequest:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ListCustomerOrdersRequest.
 
+        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this ListCustomerOrdersRequest.
         :type: str
@@ -205,6 +215,7 @@ class ListCustomerOrdersRequest:
     def status(self):
         """Gets the status of this ListCustomerOrdersRequest.
 
+        订单状态。 1：待审核3：处理中4：已取消5：已完成6：待支付9：待确认
 
         :return: The status of this ListCustomerOrdersRequest.
         :rtype: int
@@ -215,6 +226,7 @@ class ListCustomerOrdersRequest:
     def status(self, status):
         """Sets the status of this ListCustomerOrdersRequest.
 
+        订单状态。 1：待审核3：处理中4：已取消5：已完成6：待支付9：待确认
 
         :param status: The status of this ListCustomerOrdersRequest.
         :type: int
@@ -225,6 +237,7 @@ class ListCustomerOrdersRequest:
     def order_type(self):
         """Gets the order_type of this ListCustomerOrdersRequest.
 
+        订单类型。 1：开通2：续订3：变更4：退订11：按需转包年/包月13：试用14：转商用15：费用调整
 
         :return: The order_type of this ListCustomerOrdersRequest.
         :rtype: str
@@ -235,6 +248,7 @@ class ListCustomerOrdersRequest:
     def order_type(self, order_type):
         """Sets the order_type of this ListCustomerOrdersRequest.
 
+        订单类型。 1：开通2：续订3：变更4：退订11：按需转包年/包月13：试用14：转商用15：费用调整
 
         :param order_type: The order_type of this ListCustomerOrdersRequest.
         :type: str
@@ -245,6 +259,7 @@ class ListCustomerOrdersRequest:
     def limit(self):
         """Gets the limit of this ListCustomerOrdersRequest.
 
+        每次查询的订单数量，默认值为10。
 
         :return: The limit of this ListCustomerOrdersRequest.
         :rtype: int
@@ -255,6 +270,7 @@ class ListCustomerOrdersRequest:
     def limit(self, limit):
         """Sets the limit of this ListCustomerOrdersRequest.
 
+        每次查询的订单数量，默认值为10。
 
         :param limit: The limit of this ListCustomerOrdersRequest.
         :type: int
@@ -265,6 +281,7 @@ class ListCustomerOrdersRequest:
     def offset(self):
         """Gets the offset of this ListCustomerOrdersRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :return: The offset of this ListCustomerOrdersRequest.
         :rtype: int
@@ -275,6 +292,7 @@ class ListCustomerOrdersRequest:
     def offset(self, offset):
         """Sets the offset of this ListCustomerOrdersRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :param offset: The offset of this ListCustomerOrdersRequest.
         :type: int
@@ -285,6 +303,7 @@ class ListCustomerOrdersRequest:
     def order_by(self):
         """Gets the order_by of this ListCustomerOrdersRequest.
 
+        查询的订单列表排序。 支持按照创建时间进行排序，带-表示倒序。 创建时间：升序为createTime，倒序为-createTime。
 
         :return: The order_by of this ListCustomerOrdersRequest.
         :rtype: str
@@ -295,6 +314,7 @@ class ListCustomerOrdersRequest:
     def order_by(self, order_by):
         """Sets the order_by of this ListCustomerOrdersRequest.
 
+        查询的订单列表排序。 支持按照创建时间进行排序，带-表示倒序。 创建时间：升序为createTime，倒序为-createTime。
 
         :param order_by: The order_by of this ListCustomerOrdersRequest.
         :type: str
@@ -305,6 +325,7 @@ class ListCustomerOrdersRequest:
     def payment_time_begin(self):
         """Gets the payment_time_begin of this ListCustomerOrdersRequest.
 
+        订单支付开始时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :return: The payment_time_begin of this ListCustomerOrdersRequest.
         :rtype: str
@@ -315,6 +336,7 @@ class ListCustomerOrdersRequest:
     def payment_time_begin(self, payment_time_begin):
         """Sets the payment_time_begin of this ListCustomerOrdersRequest.
 
+        订单支付开始时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param payment_time_begin: The payment_time_begin of this ListCustomerOrdersRequest.
         :type: str
@@ -325,6 +347,7 @@ class ListCustomerOrdersRequest:
     def payment_time_end(self):
         """Gets the payment_time_end of this ListCustomerOrdersRequest.
 
+        订单支付结束时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :return: The payment_time_end of this ListCustomerOrdersRequest.
         :rtype: str
@@ -335,6 +358,7 @@ class ListCustomerOrdersRequest:
     def payment_time_end(self, payment_time_end):
         """Sets the payment_time_end of this ListCustomerOrdersRequest.
 
+        订单支付结束时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param payment_time_end: The payment_time_end of this ListCustomerOrdersRequest.
         :type: str
@@ -345,6 +369,7 @@ class ListCustomerOrdersRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListCustomerOrdersRequest.
 
+        精英服务商ID。 华为云伙伴能力中心（一级经销商）查询精英服务商的客户订单列表时，需要携带该参数；否则只能查询自己客户的订单列表。
 
         :return: The indirect_partner_id of this ListCustomerOrdersRequest.
         :rtype: str
@@ -355,6 +380,7 @@ class ListCustomerOrdersRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListCustomerOrdersRequest.
 
+        精英服务商ID。 华为云伙伴能力中心（一级经销商）查询精英服务商的客户订单列表时，需要携带该参数；否则只能查询自己客户的订单列表。
 
         :param indirect_partner_id: The indirect_partner_id of this ListCustomerOrdersRequest.
         :type: str

@@ -31,7 +31,7 @@ class CreateSubEnterpriseAccountResponse(SdkResponse):
     def __init__(self):
         """CreateSubEnterpriseAccountResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateSubEnterpriseAccountResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

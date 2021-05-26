@@ -1114,6 +1114,95 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_customer_bills_monthly_break_down(self, request):
+        """查询月度成本
+
+        功能描述：查询月度成本
+
+        :param ListCustomerBillsMonthlyBreakDownRequest request
+        :return: ListCustomerBillsMonthlyBreakDownResponse
+        """
+        return self.list_customer_bills_monthly_break_down_with_http_info(request)
+
+    def list_customer_bills_monthly_break_down_with_http_info(self, request):
+        """查询月度成本
+
+        功能描述：查询月度成本
+
+        :param ListCustomerBillsMonthlyBreakDownRequest request
+        :return: ListCustomerBillsMonthlyBreakDownResponse
+        """
+
+        all_params = ['shared_month', 'x_language', 'charging_mode', 'service_type_code', 'resource_type_code', 'region_code', 'bill_type', 'offset', 'limit', 'resource_id', 'resource_name', 'enterprise_project_id', 'method', 'sub_customer_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'shared_month' in local_var_params:
+            query_params.append(('shared_month', local_var_params['shared_month']))
+        if 'charging_mode' in local_var_params:
+            query_params.append(('charging_mode', local_var_params['charging_mode']))
+        if 'service_type_code' in local_var_params:
+            query_params.append(('service_type_code', local_var_params['service_type_code']))
+        if 'resource_type_code' in local_var_params:
+            query_params.append(('resource_type_code', local_var_params['resource_type_code']))
+        if 'region_code' in local_var_params:
+            query_params.append(('region_code', local_var_params['region_code']))
+        if 'bill_type' in local_var_params:
+            query_params.append(('bill_type', local_var_params['bill_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+        if 'resource_name' in local_var_params:
+            query_params.append(('resource_name', local_var_params['resource_name']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'method' in local_var_params:
+            query_params.append(('method', local_var_params['method']))
+        if 'sub_customer_id' in local_var_params:
+            query_params.append(('sub_customer_id', local_var_params['sub_customer_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/costs/cost-analysed-bills/monthly-breakdown',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListCustomerBillsMonthlyBreakDownResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_customer_on_demand_resources(self, request):
         """查询客户按需资源列表
 
@@ -1948,6 +2037,69 @@ class BssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListOnDemandResourceRatingsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_order_discounts(self, request):
+        """查询订单可用折扣
+
+        功能描述：功能介绍客户在伙伴销售平台支付待支付订单时，查询可使用的折扣。只返回商务合同折扣和伙伴授权折扣客户在客户自建平台查看订单可用的优惠券列表。
+
+        :param ListOrderDiscountsRequest request
+        :return: ListOrderDiscountsResponse
+        """
+        return self.list_order_discounts_with_http_info(request)
+
+    def list_order_discounts_with_http_info(self, request):
+        """查询订单可用折扣
+
+        功能描述：功能介绍客户在伙伴销售平台支付待支付订单时，查询可使用的折扣。只返回商务合同折扣和伙伴授权折扣客户在客户自建平台查看订单可用的优惠券列表。
+
+        :param ListOrderDiscountsRequest request
+        :return: ListOrderDiscountsResponse
+        """
+
+        all_params = ['order_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'order_id' in local_var_params:
+            query_params.append(('order_id', local_var_params['order_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/orders/customer-orders/order-discounts',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListOrderDiscountsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2866,7 +3018,7 @@ class BssClient(Client):
         :return: ListSubCustomerResFeeRecordsResponse
         """
 
-        all_params = ['customer_id', 'cycle', 'charge_mode', 'cloud_service_type', 'region', 'bill_type', 'offset', 'limit', 'resource_id', 'include_zero_record', 'indirect_partner_id']
+        all_params = ['customer_id', 'cycle', 'charge_mode', 'cloud_service_type', 'region', 'bill_type', 'offset', 'limit', 'resource_id', 'include_zero_record', 'indirect_partner_id', 'bill_date_begin', 'bill_date_end']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2899,6 +3051,10 @@ class BssClient(Client):
             query_params.append(('include_zero_record', local_var_params['include_zero_record']))
         if 'indirect_partner_id' in local_var_params:
             query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
+        if 'bill_date_begin' in local_var_params:
+            query_params.append(('bill_date_begin', local_var_params['bill_date_begin']))
+        if 'bill_date_end' in local_var_params:
+            query_params.append(('bill_date_end', local_var_params['bill_date_end']))
 
         header_params = {}
 

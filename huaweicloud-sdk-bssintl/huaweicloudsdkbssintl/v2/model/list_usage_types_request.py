@@ -60,6 +60,7 @@ class ListUsageTypesRequest:
     def x_language(self):
         """Gets the x_language of this ListUsageTypesRequest.
 
+        |忽略大小写，默认 zh_cn：中文 en_us：英文|
 
         :return: The x_language of this ListUsageTypesRequest.
         :rtype: str
@@ -70,6 +71,7 @@ class ListUsageTypesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListUsageTypesRequest.
 
+        |忽略大小写，默认 zh_cn：中文 en_us：英文|
 
         :param x_language: The x_language of this ListUsageTypesRequest.
         :type: str
@@ -80,6 +82,7 @@ class ListUsageTypesRequest:
     def resource_type_code(self):
         """Gets the resource_type_code of this ListUsageTypesRequest.
 
+        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。| |参数的约束及描述：|
 
         :return: The resource_type_code of this ListUsageTypesRequest.
         :rtype: str
@@ -90,6 +93,7 @@ class ListUsageTypesRequest:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this ListUsageTypesRequest.
 
+        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。| |参数的约束及描述：|
 
         :param resource_type_code: The resource_type_code of this ListUsageTypesRequest.
         :type: str
@@ -100,6 +104,7 @@ class ListUsageTypesRequest:
     def offset(self):
         """Gets the offset of this ListUsageTypesRequest.
 
+        |参数名称：偏移量，从0开始。默认值为0。| |参数的约束及描述：偏移量，从0开始。默认值为0。|
 
         :return: The offset of this ListUsageTypesRequest.
         :rtype: int
@@ -110,6 +115,7 @@ class ListUsageTypesRequest:
     def offset(self, offset):
         """Sets the offset of this ListUsageTypesRequest.
 
+        |参数名称：偏移量，从0开始。默认值为0。| |参数的约束及描述：偏移量，从0开始。默认值为0。|
 
         :param offset: The offset of this ListUsageTypesRequest.
         :type: int
@@ -120,6 +126,7 @@ class ListUsageTypesRequest:
     def limit(self):
         """Gets the limit of this ListUsageTypesRequest.
 
+        |参数名称：每次查询的数量。默认值为10。| |参数的约束及描述：每次查询的数量。默认值为10。|
 
         :return: The limit of this ListUsageTypesRequest.
         :rtype: int
@@ -130,6 +137,7 @@ class ListUsageTypesRequest:
     def limit(self, limit):
         """Sets the limit of this ListUsageTypesRequest.
 
+        |参数名称：每次查询的数量。默认值为10。| |参数的约束及描述：每次查询的数量。默认值为10。|
 
         :param limit: The limit of this ListUsageTypesRequest.
         :type: int

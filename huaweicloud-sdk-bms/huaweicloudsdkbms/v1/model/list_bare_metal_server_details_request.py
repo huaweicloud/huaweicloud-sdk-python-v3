@@ -44,6 +44,7 @@ class ListBareMetalServerDetailsRequest:
     def server_id(self):
         """Gets the server_id of this ListBareMetalServerDetailsRequest.
 
+        裸金属服务器ID
 
         :return: The server_id of this ListBareMetalServerDetailsRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListBareMetalServerDetailsRequest:
     def server_id(self, server_id):
         """Sets the server_id of this ListBareMetalServerDetailsRequest.
 
+        裸金属服务器ID
 
         :param server_id: The server_id of this ListBareMetalServerDetailsRequest.
         :type: str

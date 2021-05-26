@@ -110,6 +110,7 @@ class ListIssuedPartnerCouponsRequest:
     def coupon_id(self):
         """Gets the coupon_id of this ListIssuedPartnerCouponsRequest.
 
+        优惠券ID。
 
         :return: The coupon_id of this ListIssuedPartnerCouponsRequest.
         :rtype: str
@@ -120,6 +121,7 @@ class ListIssuedPartnerCouponsRequest:
     def coupon_id(self, coupon_id):
         """Sets the coupon_id of this ListIssuedPartnerCouponsRequest.
 
+        优惠券ID。
 
         :param coupon_id: The coupon_id of this ListIssuedPartnerCouponsRequest.
         :type: str
@@ -130,6 +132,7 @@ class ListIssuedPartnerCouponsRequest:
     def customer_id(self):
         """Gets the customer_id of this ListIssuedPartnerCouponsRequest.
 
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :return: The customer_id of this ListIssuedPartnerCouponsRequest.
         :rtype: str
@@ -140,6 +143,7 @@ class ListIssuedPartnerCouponsRequest:
     def customer_id(self, customer_id):
         """Sets the customer_id of this ListIssuedPartnerCouponsRequest.
 
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this ListIssuedPartnerCouponsRequest.
         :type: str
@@ -150,6 +154,7 @@ class ListIssuedPartnerCouponsRequest:
     def order_id(self):
         """Gets the order_id of this ListIssuedPartnerCouponsRequest.
 
+        订单ID。
 
         :return: The order_id of this ListIssuedPartnerCouponsRequest.
         :rtype: str
@@ -160,6 +165,7 @@ class ListIssuedPartnerCouponsRequest:
     def order_id(self, order_id):
         """Sets the order_id of this ListIssuedPartnerCouponsRequest.
 
+        订单ID。
 
         :param order_id: The order_id of this ListIssuedPartnerCouponsRequest.
         :type: str
@@ -170,6 +176,7 @@ class ListIssuedPartnerCouponsRequest:
     def coupon_type(self):
         """Gets the coupon_type of this ListIssuedPartnerCouponsRequest.
 
+        优惠券类型： 1：代金券4：现金券
 
         :return: The coupon_type of this ListIssuedPartnerCouponsRequest.
         :rtype: int
@@ -180,6 +187,7 @@ class ListIssuedPartnerCouponsRequest:
     def coupon_type(self, coupon_type):
         """Sets the coupon_type of this ListIssuedPartnerCouponsRequest.
 
+        优惠券类型： 1：代金券4：现金券
 
         :param coupon_type: The coupon_type of this ListIssuedPartnerCouponsRequest.
         :type: int
@@ -190,6 +198,7 @@ class ListIssuedPartnerCouponsRequest:
     def status(self):
         """Gets the status of this ListIssuedPartnerCouponsRequest.
 
+        客户优惠券实例状态： 1：未激活2：可使用3：已使用4：已过期5：已回收
 
         :return: The status of this ListIssuedPartnerCouponsRequest.
         :rtype: int
@@ -200,6 +209,7 @@ class ListIssuedPartnerCouponsRequest:
     def status(self, status):
         """Sets the status of this ListIssuedPartnerCouponsRequest.
 
+        客户优惠券实例状态： 1：未激活2：可使用3：已使用4：已过期5：已回收
 
         :param status: The status of this ListIssuedPartnerCouponsRequest.
         :type: int
@@ -210,6 +220,7 @@ class ListIssuedPartnerCouponsRequest:
     def create_time_begin(self):
         """Gets the create_time_begin of this ListIssuedPartnerCouponsRequest.
 
+        创建时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出创建时间大于这个时间的记录。
 
         :return: The create_time_begin of this ListIssuedPartnerCouponsRequest.
         :rtype: str
@@ -220,6 +231,7 @@ class ListIssuedPartnerCouponsRequest:
     def create_time_begin(self, create_time_begin):
         """Sets the create_time_begin of this ListIssuedPartnerCouponsRequest.
 
+        创建时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出创建时间大于这个时间的记录。
 
         :param create_time_begin: The create_time_begin of this ListIssuedPartnerCouponsRequest.
         :type: str
@@ -230,6 +242,7 @@ class ListIssuedPartnerCouponsRequest:
     def create_time_end(self):
         """Gets the create_time_end of this ListIssuedPartnerCouponsRequest.
 
+        创建时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出创建时间小于这个时间的记录。
 
         :return: The create_time_end of this ListIssuedPartnerCouponsRequest.
         :rtype: str
@@ -240,6 +253,7 @@ class ListIssuedPartnerCouponsRequest:
     def create_time_end(self, create_time_end):
         """Sets the create_time_end of this ListIssuedPartnerCouponsRequest.
 
+        创建时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出创建时间小于这个时间的记录。
 
         :param create_time_end: The create_time_end of this ListIssuedPartnerCouponsRequest.
         :type: str
@@ -250,6 +264,7 @@ class ListIssuedPartnerCouponsRequest:
     def effective_time_begin(self):
         """Gets the effective_time_begin of this ListIssuedPartnerCouponsRequest.
 
+        生效时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出生效时间大于这个时间的记录。
 
         :return: The effective_time_begin of this ListIssuedPartnerCouponsRequest.
         :rtype: str
@@ -260,6 +275,7 @@ class ListIssuedPartnerCouponsRequest:
     def effective_time_begin(self, effective_time_begin):
         """Sets the effective_time_begin of this ListIssuedPartnerCouponsRequest.
 
+        生效时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出生效时间大于这个时间的记录。
 
         :param effective_time_begin: The effective_time_begin of this ListIssuedPartnerCouponsRequest.
         :type: str
@@ -270,6 +286,7 @@ class ListIssuedPartnerCouponsRequest:
     def effective_time_end(self):
         """Gets the effective_time_end of this ListIssuedPartnerCouponsRequest.
 
+        生效时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出生效时间小于这个时间的记录。
 
         :return: The effective_time_end of this ListIssuedPartnerCouponsRequest.
         :rtype: str
@@ -280,6 +297,7 @@ class ListIssuedPartnerCouponsRequest:
     def effective_time_end(self, effective_time_end):
         """Sets the effective_time_end of this ListIssuedPartnerCouponsRequest.
 
+        生效时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出生效时间小于这个时间的记录。
 
         :param effective_time_end: The effective_time_end of this ListIssuedPartnerCouponsRequest.
         :type: str
@@ -290,6 +308,7 @@ class ListIssuedPartnerCouponsRequest:
     def expire_time_begin(self):
         """Gets the expire_time_begin of this ListIssuedPartnerCouponsRequest.
 
+        失效时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出失效时间大于这个时间的记录。
 
         :return: The expire_time_begin of this ListIssuedPartnerCouponsRequest.
         :rtype: str
@@ -300,6 +319,7 @@ class ListIssuedPartnerCouponsRequest:
     def expire_time_begin(self, expire_time_begin):
         """Sets the expire_time_begin of this ListIssuedPartnerCouponsRequest.
 
+        失效时间（开始）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出失效时间大于这个时间的记录。
 
         :param expire_time_begin: The expire_time_begin of this ListIssuedPartnerCouponsRequest.
         :type: str
@@ -310,6 +330,7 @@ class ListIssuedPartnerCouponsRequest:
     def expire_time_end(self):
         """Gets the expire_time_end of this ListIssuedPartnerCouponsRequest.
 
+        失效时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出失效时间小于这个时间的记录。
 
         :return: The expire_time_end of this ListIssuedPartnerCouponsRequest.
         :rtype: str
@@ -320,6 +341,7 @@ class ListIssuedPartnerCouponsRequest:
     def expire_time_end(self, expire_time_end):
         """Sets the expire_time_end of this ListIssuedPartnerCouponsRequest.
 
+        失效时间（结束）。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 输入这个条件，会查询出失效时间小于这个时间的记录。
 
         :param expire_time_end: The expire_time_end of this ListIssuedPartnerCouponsRequest.
         :type: str
@@ -330,6 +352,7 @@ class ListIssuedPartnerCouponsRequest:
     def offset(self):
         """Gets the offset of this ListIssuedPartnerCouponsRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :return: The offset of this ListIssuedPartnerCouponsRequest.
         :rtype: int
@@ -340,6 +363,7 @@ class ListIssuedPartnerCouponsRequest:
     def offset(self, offset):
         """Sets the offset of this ListIssuedPartnerCouponsRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :param offset: The offset of this ListIssuedPartnerCouponsRequest.
         :type: int
@@ -350,6 +374,7 @@ class ListIssuedPartnerCouponsRequest:
     def limit(self):
         """Gets the limit of this ListIssuedPartnerCouponsRequest.
 
+        查询的每页数量。默认值为10。
 
         :return: The limit of this ListIssuedPartnerCouponsRequest.
         :rtype: int
@@ -360,6 +385,7 @@ class ListIssuedPartnerCouponsRequest:
     def limit(self, limit):
         """Sets the limit of this ListIssuedPartnerCouponsRequest.
 
+        查询的每页数量。默认值为10。
 
         :param limit: The limit of this ListIssuedPartnerCouponsRequest.
         :type: int
@@ -370,6 +396,7 @@ class ListIssuedPartnerCouponsRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListIssuedPartnerCouponsRequest.
 
+        精英服务商ID。 华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券时，需要携带该参数；否则只能查询发放给自己子客户的优惠券。
 
         :return: The indirect_partner_id of this ListIssuedPartnerCouponsRequest.
         :rtype: str
@@ -380,6 +407,7 @@ class ListIssuedPartnerCouponsRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListIssuedPartnerCouponsRequest.
 
+        精英服务商ID。 华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券时，需要携带该参数；否则只能查询发放给自己子客户的优惠券。
 
         :param indirect_partner_id: The indirect_partner_id of this ListIssuedPartnerCouponsRequest.
         :type: str

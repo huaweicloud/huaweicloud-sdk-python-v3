@@ -49,6 +49,7 @@ class DownloadBlockchainSdkConfigRequest:
     def blockchain_id(self):
         """Gets the blockchain_id of this DownloadBlockchainSdkConfigRequest.
 
+        blockchainID
 
         :return: The blockchain_id of this DownloadBlockchainSdkConfigRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class DownloadBlockchainSdkConfigRequest:
     def blockchain_id(self, blockchain_id):
         """Sets the blockchain_id of this DownloadBlockchainSdkConfigRequest.
 
+        blockchainID
 
         :param blockchain_id: The blockchain_id of this DownloadBlockchainSdkConfigRequest.
         :type: str

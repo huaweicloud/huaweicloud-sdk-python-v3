@@ -33,7 +33,7 @@ class ShowBaremetalServerInterfaceAttachmentsResponse(SdkResponse):
     def __init__(self, interface_attachments=None):
         """ShowBaremetalServerInterfaceAttachmentsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowBaremetalServerInterfaceAttachmentsResponse, self).__init__()
 
         self._interface_attachments = None
         self.discriminator = None

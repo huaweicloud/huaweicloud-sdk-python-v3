@@ -33,7 +33,7 @@ class ShowBaremetalServerVolumeInfoResponse(SdkResponse):
     def __init__(self, volume_attachments=None):
         """ShowBaremetalServerVolumeInfoResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowBaremetalServerVolumeInfoResponse, self).__init__()
 
         self._volume_attachments = None
         self.discriminator = None

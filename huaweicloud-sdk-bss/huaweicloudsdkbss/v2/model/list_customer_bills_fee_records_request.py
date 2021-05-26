@@ -119,6 +119,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def x_language(self):
         """Gets the x_language of this ListCustomerBillsFeeRecordsRequest.
 
+        |忽略大小写，默认 zh_cn：中文 en_us：英文|
 
         :return: The x_language of this ListCustomerBillsFeeRecordsRequest.
         :rtype: str
@@ -129,6 +130,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListCustomerBillsFeeRecordsRequest.
 
+        |忽略大小写，默认 zh_cn：中文 en_us：英文|
 
         :param x_language: The x_language of this ListCustomerBillsFeeRecordsRequest.
         :type: str
@@ -139,6 +141,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def bill_cycle(self):
         """Gets the bill_cycle of this ListCustomerBillsFeeRecordsRequest.
 
+        查询的流水账单所在账期，格式为YYYY-MM。
 
         :return: The bill_cycle of this ListCustomerBillsFeeRecordsRequest.
         :rtype: str
@@ -149,6 +152,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def bill_cycle(self, bill_cycle):
         """Sets the bill_cycle of this ListCustomerBillsFeeRecordsRequest.
 
+        查询的流水账单所在账期，格式为YYYY-MM。
 
         :param bill_cycle: The bill_cycle of this ListCustomerBillsFeeRecordsRequest.
         :type: str
@@ -159,6 +163,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def provider_type(self):
         """Gets the provider_type of this ListCustomerBillsFeeRecordsRequest.
 
+        服务商。1：华为云2：云市场为空时查询包含华为云和云市场在内的全部服务商。
 
         :return: The provider_type of this ListCustomerBillsFeeRecordsRequest.
         :rtype: int
@@ -169,6 +174,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def provider_type(self, provider_type):
         """Sets the provider_type of this ListCustomerBillsFeeRecordsRequest.
 
+        服务商。1：华为云2：云市场为空时查询包含华为云和云市场在内的全部服务商。
 
         :param provider_type: The provider_type of this ListCustomerBillsFeeRecordsRequest.
         :type: int
@@ -179,6 +185,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def service_type_code(self):
         """Gets the service_type_code of this ListCustomerBillsFeeRecordsRequest.
 
+        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
 
         :return: The service_type_code of this ListCustomerBillsFeeRecordsRequest.
         :rtype: str
@@ -189,6 +196,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ListCustomerBillsFeeRecordsRequest.
 
+        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this ListCustomerBillsFeeRecordsRequest.
         :type: str
@@ -199,6 +207,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def resource_type_code(self):
         """Gets the resource_type_code of this ListCustomerBillsFeeRecordsRequest.
 
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :return: The resource_type_code of this ListCustomerBillsFeeRecordsRequest.
         :rtype: str
@@ -209,6 +218,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this ListCustomerBillsFeeRecordsRequest.
 
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type_code: The resource_type_code of this ListCustomerBillsFeeRecordsRequest.
         :type: str
@@ -219,6 +229,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def region_code(self):
         """Gets the region_code of this ListCustomerBillsFeeRecordsRequest.
 
+        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :return: The region_code of this ListCustomerBillsFeeRecordsRequest.
         :rtype: str
@@ -229,6 +240,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def region_code(self, region_code):
         """Sets the region_code of this ListCustomerBillsFeeRecordsRequest.
 
+        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this ListCustomerBillsFeeRecordsRequest.
         :type: str
@@ -239,6 +251,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def charging_mode(self):
         """Gets the charging_mode of this ListCustomerBillsFeeRecordsRequest.
 
+        计费模式：1 : 包年/包月3：按需10：预留实例
 
         :return: The charging_mode of this ListCustomerBillsFeeRecordsRequest.
         :rtype: int
@@ -249,6 +262,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ListCustomerBillsFeeRecordsRequest.
 
+        计费模式：1 : 包年/包月3：按需10：预留实例
 
         :param charging_mode: The charging_mode of this ListCustomerBillsFeeRecordsRequest.
         :type: int
@@ -259,6 +273,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def bill_type(self):
         """Gets the bill_type of this ListCustomerBillsFeeRecordsRequest.
 
+        账单类型：1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费
 
         :return: The bill_type of this ListCustomerBillsFeeRecordsRequest.
         :rtype: int
@@ -269,6 +284,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def bill_type(self, bill_type):
         """Sets the bill_type of this ListCustomerBillsFeeRecordsRequest.
 
+        账单类型：1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费
 
         :param bill_type: The bill_type of this ListCustomerBillsFeeRecordsRequest.
         :type: int
@@ -279,6 +295,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def trade_id(self):
         """Gets the trade_id of this ListCustomerBillsFeeRecordsRequest.
 
+        订单ID或交易ID。账单类型为1、2、3、4和8时此处为订单ID。账单类型为其它场景时此处为交易ID，为扣费维度的唯一标识。例如非月末扣费时为应收ID；月末扣费时为账单ID。
 
         :return: The trade_id of this ListCustomerBillsFeeRecordsRequest.
         :rtype: str
@@ -289,6 +306,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def trade_id(self, trade_id):
         """Sets the trade_id of this ListCustomerBillsFeeRecordsRequest.
 
+        订单ID或交易ID。账单类型为1、2、3、4和8时此处为订单ID。账单类型为其它场景时此处为交易ID，为扣费维度的唯一标识。例如非月末扣费时为应收ID；月末扣费时为账单ID。
 
         :param trade_id: The trade_id of this ListCustomerBillsFeeRecordsRequest.
         :type: str
@@ -299,6 +317,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListCustomerBillsFeeRecordsRequest.
 
+        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :return: The enterprise_project_id of this ListCustomerBillsFeeRecordsRequest.
         :rtype: str
@@ -309,6 +328,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListCustomerBillsFeeRecordsRequest.
 
+        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListCustomerBillsFeeRecordsRequest.
         :type: str
@@ -319,6 +339,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def include_zero_record(self):
         """Gets the include_zero_record of this ListCustomerBillsFeeRecordsRequest.
 
+        返回是否包含应付金额为0的记录。true：包含false：不包含
 
         :return: The include_zero_record of this ListCustomerBillsFeeRecordsRequest.
         :rtype: bool
@@ -329,6 +350,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def include_zero_record(self, include_zero_record):
         """Sets the include_zero_record of this ListCustomerBillsFeeRecordsRequest.
 
+        返回是否包含应付金额为0的记录。true：包含false：不包含
 
         :param include_zero_record: The include_zero_record of this ListCustomerBillsFeeRecordsRequest.
         :type: bool
@@ -339,6 +361,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def status(self):
         """Gets the status of this ListCustomerBillsFeeRecordsRequest.
 
+        支付状态。1：已支付2：未结清3：未出账
 
         :return: The status of this ListCustomerBillsFeeRecordsRequest.
         :rtype: int
@@ -349,6 +372,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def status(self, status):
         """Sets the status of this ListCustomerBillsFeeRecordsRequest.
 
+        支付状态。1：已支付2：未结清3：未出账
 
         :param status: The status of this ListCustomerBillsFeeRecordsRequest.
         :type: int
@@ -359,6 +383,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def method(self):
         """Gets the method of this ListCustomerBillsFeeRecordsRequest.
 
+        查询流水账单的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的流水账单。
 
         :return: The method of this ListCustomerBillsFeeRecordsRequest.
         :rtype: str
@@ -369,6 +394,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def method(self, method):
         """Sets the method of this ListCustomerBillsFeeRecordsRequest.
 
+        查询流水账单的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的流水账单。
 
         :param method: The method of this ListCustomerBillsFeeRecordsRequest.
         :type: str
@@ -379,6 +405,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def sub_customer_id(self):
         """Gets the sub_customer_id of this ListCustomerBillsFeeRecordsRequest.
 
+        企业子账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
         :return: The sub_customer_id of this ListCustomerBillsFeeRecordsRequest.
         :rtype: str
@@ -389,6 +416,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def sub_customer_id(self, sub_customer_id):
         """Sets the sub_customer_id of this ListCustomerBillsFeeRecordsRequest.
 
+        企业子账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
         :param sub_customer_id: The sub_customer_id of this ListCustomerBillsFeeRecordsRequest.
         :type: str
@@ -399,6 +427,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def offset(self):
         """Gets the offset of this ListCustomerBillsFeeRecordsRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :return: The offset of this ListCustomerBillsFeeRecordsRequest.
         :rtype: int
@@ -409,6 +438,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def offset(self, offset):
         """Sets the offset of this ListCustomerBillsFeeRecordsRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :param offset: The offset of this ListCustomerBillsFeeRecordsRequest.
         :type: int
@@ -419,6 +449,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def limit(self):
         """Gets the limit of this ListCustomerBillsFeeRecordsRequest.
 
+        页面大小。默认值为10。
 
         :return: The limit of this ListCustomerBillsFeeRecordsRequest.
         :rtype: int
@@ -429,6 +460,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def limit(self, limit):
         """Sets the limit of this ListCustomerBillsFeeRecordsRequest.
 
+        页面大小。默认值为10。
 
         :param limit: The limit of this ListCustomerBillsFeeRecordsRequest.
         :type: int

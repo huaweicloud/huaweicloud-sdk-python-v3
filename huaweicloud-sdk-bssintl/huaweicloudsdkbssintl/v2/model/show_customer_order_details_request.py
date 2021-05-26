@@ -59,6 +59,7 @@ class ShowCustomerOrderDetailsRequest:
     def order_id(self):
         """Gets the order_id of this ShowCustomerOrderDetailsRequest.
 
+        |参数名称：订单ID。| |参数的约束及描述：|
 
         :return: The order_id of this ShowCustomerOrderDetailsRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class ShowCustomerOrderDetailsRequest:
     def order_id(self, order_id):
         """Sets the order_id of this ShowCustomerOrderDetailsRequest.
 
+        |参数名称：订单ID。| |参数的约束及描述：|
 
         :param order_id: The order_id of this ShowCustomerOrderDetailsRequest.
         :type: str
@@ -79,6 +81,7 @@ class ShowCustomerOrderDetailsRequest:
     def limit(self):
         """Gets the limit of this ShowCustomerOrderDetailsRequest.
 
+        |参数名称：每次查询的大小，默认为10| |参数的约束及描述：|
 
         :return: The limit of this ShowCustomerOrderDetailsRequest.
         :rtype: int
@@ -89,6 +92,7 @@ class ShowCustomerOrderDetailsRequest:
     def limit(self, limit):
         """Sets the limit of this ShowCustomerOrderDetailsRequest.
 
+        |参数名称：每次查询的大小，默认为10| |参数的约束及描述：|
 
         :param limit: The limit of this ShowCustomerOrderDetailsRequest.
         :type: int
@@ -99,6 +103,7 @@ class ShowCustomerOrderDetailsRequest:
     def offset(self):
         """Gets the offset of this ShowCustomerOrderDetailsRequest.
 
+        |参数名称：偏移量，从0开始，默认为0| |参数的约束及描述：|
 
         :return: The offset of this ShowCustomerOrderDetailsRequest.
         :rtype: int
@@ -109,6 +114,7 @@ class ShowCustomerOrderDetailsRequest:
     def offset(self, offset):
         """Sets the offset of this ShowCustomerOrderDetailsRequest.
 
+        |参数名称：偏移量，从0开始，默认为0| |参数的约束及描述：|
 
         :param offset: The offset of this ShowCustomerOrderDetailsRequest.
         :type: int
@@ -119,6 +125,7 @@ class ShowCustomerOrderDetailsRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ShowCustomerOrderDetailsRequest.
 
+        |参数名称：二级经销商ID，只有伙伴用自身token调用的时候，该字段才有含义。| |参数的约束及描述：|
 
         :return: The indirect_partner_id of this ShowCustomerOrderDetailsRequest.
         :rtype: str
@@ -129,6 +136,7 @@ class ShowCustomerOrderDetailsRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ShowCustomerOrderDetailsRequest.
 
+        |参数名称：二级经销商ID，只有伙伴用自身token调用的时候，该字段才有含义。| |参数的约束及描述：|
 
         :param indirect_partner_id: The indirect_partner_id of this ShowCustomerOrderDetailsRequest.
         :type: str

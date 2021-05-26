@@ -50,6 +50,7 @@ class ListConversionsRequest:
     def x_language(self):
         """Gets the x_language of this ListConversionsRequest.
 
+        |忽略大小写，默认 zh_CN：中文 en_US：英文|
 
         :return: The x_language of this ListConversionsRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class ListConversionsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListConversionsRequest.
 
+        |忽略大小写，默认 zh_CN：中文 en_US：英文|
 
         :param x_language: The x_language of this ListConversionsRequest.
         :type: str
@@ -70,6 +72,7 @@ class ListConversionsRequest:
     def measure_type(self):
         """Gets the measure_type of this ListConversionsRequest.
 
+        |参数名称：度量类型| |参数的约束及描述：|
 
         :return: The measure_type of this ListConversionsRequest.
         :rtype: int
@@ -80,6 +83,7 @@ class ListConversionsRequest:
     def measure_type(self, measure_type):
         """Sets the measure_type of this ListConversionsRequest.
 
+        |参数名称：度量类型| |参数的约束及描述：|
 
         :param measure_type: The measure_type of this ListConversionsRequest.
         :type: int

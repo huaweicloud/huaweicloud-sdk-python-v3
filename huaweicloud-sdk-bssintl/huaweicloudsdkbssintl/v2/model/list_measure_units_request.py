@@ -45,6 +45,7 @@ class ListMeasureUnitsRequest:
     def x_language(self):
         """Gets the x_language of this ListMeasureUnitsRequest.
 
+        |忽略大小写，默认 zh_CN en_US：英文|
 
         :return: The x_language of this ListMeasureUnitsRequest.
         :rtype: str
@@ -55,6 +56,7 @@ class ListMeasureUnitsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListMeasureUnitsRequest.
 
+        |忽略大小写，默认 zh_CN en_US：英文|
 
         :param x_language: The x_language of this ListMeasureUnitsRequest.
         :type: str

@@ -44,6 +44,7 @@ class ListPostpaidBillSumRequest:
     def bill_cycle(self):
         """Gets the bill_cycle of this ListPostpaidBillSumRequest.
 
+        |参数名称：账期，格式YYYY-MM示例：2020-07| |参数的约束及描述：|
 
         :return: The bill_cycle of this ListPostpaidBillSumRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListPostpaidBillSumRequest:
     def bill_cycle(self, bill_cycle):
         """Sets the bill_cycle of this ListPostpaidBillSumRequest.
 
+        |参数名称：账期，格式YYYY-MM示例：2020-07| |参数的约束及描述：|
 
         :param bill_cycle: The bill_cycle of this ListPostpaidBillSumRequest.
         :type: str

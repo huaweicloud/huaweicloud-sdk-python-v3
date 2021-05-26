@@ -44,6 +44,7 @@ class ShowBlockchainStatusRequest:
     def blockchain_id(self):
         """Gets the blockchain_id of this ShowBlockchainStatusRequest.
 
+        blockchainID
 
         :return: The blockchain_id of this ShowBlockchainStatusRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowBlockchainStatusRequest:
     def blockchain_id(self, blockchain_id):
         """Sets the blockchain_id of this ShowBlockchainStatusRequest.
 
+        blockchainID
 
         :param blockchain_id: The blockchain_id of this ShowBlockchainStatusRequest.
         :type: str

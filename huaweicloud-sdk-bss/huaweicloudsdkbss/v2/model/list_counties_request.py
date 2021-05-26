@@ -59,6 +59,7 @@ class ListCountiesRequest:
     def x_language(self):
         """Gets the x_language of this ListCountiesRequest.
 
+        语言。zh_CN：中文en_us：英文缺省为zh_CN。
 
         :return: The x_language of this ListCountiesRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class ListCountiesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListCountiesRequest.
 
+        语言。zh_CN：中文en_us：英文缺省为zh_CN。
 
         :param x_language: The x_language of this ListCountiesRequest.
         :type: str
@@ -79,6 +81,7 @@ class ListCountiesRequest:
     def city_code(self):
         """Gets the city_code of this ListCountiesRequest.
 
+        城市的编码。
 
         :return: The city_code of this ListCountiesRequest.
         :rtype: str
@@ -89,6 +92,7 @@ class ListCountiesRequest:
     def city_code(self, city_code):
         """Sets the city_code of this ListCountiesRequest.
 
+        城市的编码。
 
         :param city_code: The city_code of this ListCountiesRequest.
         :type: str
@@ -99,6 +103,7 @@ class ListCountiesRequest:
     def offset(self):
         """Gets the offset of this ListCountiesRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :return: The offset of this ListCountiesRequest.
         :rtype: int
@@ -109,6 +114,7 @@ class ListCountiesRequest:
     def offset(self, offset):
         """Sets the offset of this ListCountiesRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :param offset: The offset of this ListCountiesRequest.
         :type: int
@@ -119,6 +125,7 @@ class ListCountiesRequest:
     def limit(self):
         """Gets the limit of this ListCountiesRequest.
 
+        每次查询的数量，最大1000。
 
         :return: The limit of this ListCountiesRequest.
         :rtype: int
@@ -129,6 +136,7 @@ class ListCountiesRequest:
     def limit(self, limit):
         """Sets the limit of this ListCountiesRequest.
 
+        每次查询的数量，最大1000。
 
         :param limit: The limit of this ListCountiesRequest.
         :type: int

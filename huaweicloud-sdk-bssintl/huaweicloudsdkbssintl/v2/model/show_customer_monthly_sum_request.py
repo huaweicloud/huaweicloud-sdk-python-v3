@@ -74,6 +74,7 @@ class ShowCustomerMonthlySumRequest:
     def bill_cycle(self):
         """Gets the bill_cycle of this ShowCustomerMonthlySumRequest.
 
+        |参数名称：消费时间，格式：yyyy-MM| |参数的约束及描述：|
 
         :return: The bill_cycle of this ShowCustomerMonthlySumRequest.
         :rtype: str
@@ -84,6 +85,7 @@ class ShowCustomerMonthlySumRequest:
     def bill_cycle(self, bill_cycle):
         """Sets the bill_cycle of this ShowCustomerMonthlySumRequest.
 
+        |参数名称：消费时间，格式：yyyy-MM| |参数的约束及描述：|
 
         :param bill_cycle: The bill_cycle of this ShowCustomerMonthlySumRequest.
         :type: str
@@ -94,6 +96,7 @@ class ShowCustomerMonthlySumRequest:
     def service_type_code(self):
         """Gets the service_type_code of this ShowCustomerMonthlySumRequest.
 
+        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型| |参数的约束及描述：|
 
         :return: The service_type_code of this ShowCustomerMonthlySumRequest.
         :rtype: str
@@ -104,6 +107,7 @@ class ShowCustomerMonthlySumRequest:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ShowCustomerMonthlySumRequest.
 
+        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型| |参数的约束及描述：|
 
         :param service_type_code: The service_type_code of this ShowCustomerMonthlySumRequest.
         :type: str
@@ -114,6 +118,7 @@ class ShowCustomerMonthlySumRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowCustomerMonthlySumRequest.
 
+        |参数名称：企业项目ID。获取方法请参见如何获取企业项目ID。| |参数的约束及描述：|
 
         :return: The enterprise_project_id of this ShowCustomerMonthlySumRequest.
         :rtype: str
@@ -124,6 +129,7 @@ class ShowCustomerMonthlySumRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowCustomerMonthlySumRequest.
 
+        |参数名称：企业项目ID。获取方法请参见如何获取企业项目ID。| |参数的约束及描述：|
 
         :param enterprise_project_id: The enterprise_project_id of this ShowCustomerMonthlySumRequest.
         :type: str
@@ -134,6 +140,7 @@ class ShowCustomerMonthlySumRequest:
     def offset(self):
         """Gets the offset of this ShowCustomerMonthlySumRequest.
 
+        |参数名称：偏移量，从0开始，默认为0| |参数的约束及描述：|
 
         :return: The offset of this ShowCustomerMonthlySumRequest.
         :rtype: int
@@ -144,6 +151,7 @@ class ShowCustomerMonthlySumRequest:
     def offset(self, offset):
         """Sets the offset of this ShowCustomerMonthlySumRequest.
 
+        |参数名称：偏移量，从0开始，默认为0| |参数的约束及描述：|
 
         :param offset: The offset of this ShowCustomerMonthlySumRequest.
         :type: int
@@ -154,6 +162,7 @@ class ShowCustomerMonthlySumRequest:
     def limit(self):
         """Gets the limit of this ShowCustomerMonthlySumRequest.
 
+        |参数名称：每次查询的数量，默认为10| |参数的约束及描述：|
 
         :return: The limit of this ShowCustomerMonthlySumRequest.
         :rtype: int
@@ -164,6 +173,7 @@ class ShowCustomerMonthlySumRequest:
     def limit(self, limit):
         """Sets the limit of this ShowCustomerMonthlySumRequest.
 
+        |参数名称：每次查询的数量，默认为10| |参数的约束及描述：|
 
         :param limit: The limit of this ShowCustomerMonthlySumRequest.
         :type: int
@@ -174,6 +184,7 @@ class ShowCustomerMonthlySumRequest:
     def method(self):
         """Gets the method of this ShowCustomerMonthlySumRequest.
 
+        |参数名称：查询方式。oneself：自身sub_customer: 企业子客户all:自己和企业子客户| |参数的约束及描述：oneself：自身sub_customer: 企业子客户all:自己和企业子客户|
 
         :return: The method of this ShowCustomerMonthlySumRequest.
         :rtype: str
@@ -184,6 +195,7 @@ class ShowCustomerMonthlySumRequest:
     def method(self, method):
         """Sets the method of this ShowCustomerMonthlySumRequest.
 
+        |参数名称：查询方式。oneself：自身sub_customer: 企业子客户all:自己和企业子客户| |参数的约束及描述：oneself：自身sub_customer: 企业子客户all:自己和企业子客户|
 
         :param method: The method of this ShowCustomerMonthlySumRequest.
         :type: str
@@ -194,6 +206,7 @@ class ShowCustomerMonthlySumRequest:
     def sub_customer_id(self):
         """Gets the sub_customer_id of this ShowCustomerMonthlySumRequest.
 
+        |参数名称：企业子账号ID。| |参数的约束及描述：注意：method不等于sub_customer的时候，该参数无效，如果method等于sub_customer，该参数不能为空|
 
         :return: The sub_customer_id of this ShowCustomerMonthlySumRequest.
         :rtype: str
@@ -204,6 +217,7 @@ class ShowCustomerMonthlySumRequest:
     def sub_customer_id(self, sub_customer_id):
         """Sets the sub_customer_id of this ShowCustomerMonthlySumRequest.
 
+        |参数名称：企业子账号ID。| |参数的约束及描述：注意：method不等于sub_customer的时候，该参数无效，如果method等于sub_customer，该参数不能为空|
 
         :param sub_customer_id: The sub_customer_id of this ShowCustomerMonthlySumRequest.
         :type: str

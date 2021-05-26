@@ -98,7 +98,7 @@ class PayCustomerOrderReq:
     def discount_infos(self):
         """Gets the discount_infos of this PayCustomerOrderReq.
 
-        折扣ID列表，目前仅支持传递一个折扣ID。 具体参见表2。
+        折扣ID列表，目前仅支持传递一个折扣ID。 请从“查询订单可用折扣”接口的响应参数中获取。 具体参见表2。
 
         :return: The discount_infos of this PayCustomerOrderReq.
         :rtype: list[DiscountSimpleInfo]
@@ -109,7 +109,7 @@ class PayCustomerOrderReq:
     def discount_infos(self, discount_infos):
         """Sets the discount_infos of this PayCustomerOrderReq.
 
-        折扣ID列表，目前仅支持传递一个折扣ID。 具体参见表2。
+        折扣ID列表，目前仅支持传递一个折扣ID。 请从“查询订单可用折扣”接口的响应参数中获取。 具体参见表2。
 
         :param discount_infos: The discount_infos of this PayCustomerOrderReq.
         :type: list[DiscountSimpleInfo]

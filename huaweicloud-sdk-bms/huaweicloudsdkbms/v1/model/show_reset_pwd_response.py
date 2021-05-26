@@ -33,7 +33,7 @@ class ShowResetPwdResponse(SdkResponse):
     def __init__(self, resetpwd_flag=None):
         """ShowResetPwdResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowResetPwdResponse, self).__init__()
 
         self._resetpwd_flag = None
         self.discriminator = None

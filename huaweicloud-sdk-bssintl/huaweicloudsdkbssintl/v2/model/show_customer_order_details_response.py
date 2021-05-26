@@ -37,7 +37,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
     def __init__(self, total_count=None, order_info=None, order_line_items=None):
         """ShowCustomerOrderDetailsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowCustomerOrderDetailsResponse, self).__init__()
 
         self._total_count = None
         self._order_info = None

@@ -37,7 +37,7 @@ class ListEnterpriseOrganizationsResponse(SdkResponse):
     def __init__(self, root_id=None, root_name=None, child_nodes=None):
         """ListEnterpriseOrganizationsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListEnterpriseOrganizationsResponse, self).__init__()
 
         self._root_id = None
         self._root_name = None

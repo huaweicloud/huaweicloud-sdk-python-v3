@@ -45,6 +45,7 @@ class ListBaremetalFlavorDetailExtendsRequest:
     def availability_zone(self):
         """Gets the availability_zone of this ListBaremetalFlavorDetailExtendsRequest.
 
+        可用区，需要指定可用区（AZ）的名称。请参考地区和终端节点获取。
 
         :return: The availability_zone of this ListBaremetalFlavorDetailExtendsRequest.
         :rtype: str
@@ -55,6 +56,7 @@ class ListBaremetalFlavorDetailExtendsRequest:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this ListBaremetalFlavorDetailExtendsRequest.
 
+        可用区，需要指定可用区（AZ）的名称。请参考地区和终端节点获取。
 
         :param availability_zone: The availability_zone of this ListBaremetalFlavorDetailExtendsRequest.
         :type: str

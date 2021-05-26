@@ -33,7 +33,7 @@ class ShowBlockchainNodesResponse(SdkResponse):
     def __init__(self, node_orgs=None):
         """ShowBlockchainNodesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowBlockchainNodesResponse, self).__init__()
 
         self._node_orgs = None
         self.discriminator = None

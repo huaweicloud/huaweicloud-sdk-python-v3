@@ -223,7 +223,7 @@ class DemandProductInfo:
     def resource_size(self):
         """Gets the resource_size of this DemandProductInfo.
 
-        资源容量大小，例如购买的卷大小或带宽大小。 线性产品时该参数不能为空。
+        资源容量大小，例如购买的卷大小或带宽大小。 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
 
         :return: The resource_size of this DemandProductInfo.
         :rtype: int
@@ -234,7 +234,7 @@ class DemandProductInfo:
     def resource_size(self, resource_size):
         """Sets the resource_size of this DemandProductInfo.
 
-        资源容量大小，例如购买的卷大小或带宽大小。 线性产品时该参数不能为空。
+        资源容量大小，例如购买的卷大小或带宽大小。 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
 
         :param resource_size: The resource_size of this DemandProductInfo.
         :type: int
@@ -245,7 +245,7 @@ class DemandProductInfo:
     def size_measure_id(self):
         """Gets the size_measure_id of this DemandProductInfo.
 
-        资源容量度量标识，枚举值如下： 15：Mbps（购买带宽时使用）17：GB（购买云硬盘时使用）14：个（次） 线性产品时该参数不能为空。
+        资源容量度量标识，枚举值如下： 15：Mbps（购买带宽时使用）17：GB（购买云硬盘时使用）14：个（次） 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
 
         :return: The size_measure_id of this DemandProductInfo.
         :rtype: int
@@ -256,7 +256,7 @@ class DemandProductInfo:
     def size_measure_id(self, size_measure_id):
         """Sets the size_measure_id of this DemandProductInfo.
 
-        资源容量度量标识，枚举值如下： 15：Mbps（购买带宽时使用）17：GB（购买云硬盘时使用）14：个（次） 线性产品时该参数不能为空。
+        资源容量度量标识，枚举值如下： 15：Mbps（购买带宽时使用）17：GB（购买云硬盘时使用）14：个（次） 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
 
         :param size_measure_id: The size_measure_id of this DemandProductInfo.
         :type: int

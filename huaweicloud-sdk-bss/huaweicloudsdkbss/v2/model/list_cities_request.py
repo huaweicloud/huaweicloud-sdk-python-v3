@@ -59,6 +59,7 @@ class ListCitiesRequest:
     def x_language(self):
         """Gets the x_language of this ListCitiesRequest.
 
+        语言。zh_CN：中文en_us：英文缺省为zh_CN。
 
         :return: The x_language of this ListCitiesRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class ListCitiesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListCitiesRequest.
 
+        语言。zh_CN：中文en_us：英文缺省为zh_CN。
 
         :param x_language: The x_language of this ListCitiesRequest.
         :type: str
@@ -79,6 +81,7 @@ class ListCitiesRequest:
     def province_code(self):
         """Gets the province_code of this ListCitiesRequest.
 
+        省份编码。
 
         :return: The province_code of this ListCitiesRequest.
         :rtype: str
@@ -89,6 +92,7 @@ class ListCitiesRequest:
     def province_code(self, province_code):
         """Sets the province_code of this ListCitiesRequest.
 
+        省份编码。
 
         :param province_code: The province_code of this ListCitiesRequest.
         :type: str
@@ -99,6 +103,7 @@ class ListCitiesRequest:
     def offset(self):
         """Gets the offset of this ListCitiesRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :return: The offset of this ListCitiesRequest.
         :rtype: int
@@ -109,6 +114,7 @@ class ListCitiesRequest:
     def offset(self, offset):
         """Sets the offset of this ListCitiesRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :param offset: The offset of this ListCitiesRequest.
         :type: int
@@ -119,6 +125,7 @@ class ListCitiesRequest:
     def limit(self):
         """Gets the limit of this ListCitiesRequest.
 
+        每次查询的数量，最大1000。
 
         :return: The limit of this ListCitiesRequest.
         :rtype: int
@@ -129,6 +136,7 @@ class ListCitiesRequest:
     def limit(self, limit):
         """Sets the limit of this ListCitiesRequest.
 
+        每次查询的数量，最大1000。
 
         :param limit: The limit of this ListCitiesRequest.
         :type: int

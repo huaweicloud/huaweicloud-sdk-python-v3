@@ -37,7 +37,7 @@ class CreateNewBlockchainResponse(SdkResponse):
     def __init__(self, blockchain_id=None, blockchain_name=None, operation_id=None):
         """CreateNewBlockchainResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateNewBlockchainResponse, self).__init__()
 
         self._blockchain_id = None
         self._blockchain_name = None

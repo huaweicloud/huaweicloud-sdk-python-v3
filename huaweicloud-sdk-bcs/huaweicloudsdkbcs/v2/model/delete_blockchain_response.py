@@ -33,7 +33,7 @@ class DeleteBlockchainResponse(SdkResponse):
     def __init__(self, operation_id=None):
         """DeleteBlockchainResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteBlockchainResponse, self).__init__()
 
         self._operation_id = None
         self.discriminator = None

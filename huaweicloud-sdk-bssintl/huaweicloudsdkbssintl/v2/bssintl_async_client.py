@@ -838,6 +838,69 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_order_discounts_async(self, request):
+        """查询订单可用折扣
+
+        功能描述：功能介绍客户在伙伴销售平台支付待支付订单时，查询可使用的折扣。只返回商务合同折扣和伙伴授权折扣客户在客户自建平台查看订单可用的优惠券列表。
+
+        :param ListOrderDiscountsRequest request
+        :return: ListOrderDiscountsResponse
+        """
+        return self.list_order_discounts_with_http_info(request)
+
+    def list_order_discounts_with_http_info(self, request):
+        """查询订单可用折扣
+
+        功能描述：功能介绍客户在伙伴销售平台支付待支付订单时，查询可使用的折扣。只返回商务合同折扣和伙伴授权折扣客户在客户自建平台查看订单可用的优惠券列表。
+
+        :param ListOrderDiscountsRequest request
+        :return: ListOrderDiscountsResponse
+        """
+
+        all_params = ['order_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'order_id' in local_var_params:
+            query_params.append(('order_id', local_var_params['order_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/orders/customer-orders/order-discounts',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListOrderDiscountsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_postpaid_bill_sum_async(self, request):
         """查询伙伴月度消费账单
 

@@ -49,6 +49,7 @@ class ListInstanceMetricRequest:
     def blockchain_id(self):
         """Gets the blockchain_id of this ListInstanceMetricRequest.
 
+        区块链服务id。
 
         :return: The blockchain_id of this ListInstanceMetricRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ListInstanceMetricRequest:
     def blockchain_id(self, blockchain_id):
         """Sets the blockchain_id of this ListInstanceMetricRequest.
 
+        区块链服务id。
 
         :param blockchain_id: The blockchain_id of this ListInstanceMetricRequest.
         :type: str

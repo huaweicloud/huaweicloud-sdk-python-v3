@@ -70,6 +70,7 @@ class ListEnterpriseSubCustomersRequest:
     def sub_customer_account_name(self):
         """Gets the sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
 
+        企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。
 
         :return: The sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
         :rtype: str
@@ -80,6 +81,7 @@ class ListEnterpriseSubCustomersRequest:
     def sub_customer_account_name(self, sub_customer_account_name):
         """Sets the sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
 
+        企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。
 
         :param sub_customer_account_name: The sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
         :type: str
@@ -90,6 +92,7 @@ class ListEnterpriseSubCustomersRequest:
     def sub_customer_display_name(self):
         """Gets the sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
 
+        企业子账号的显示名称。不限制特殊字符。根据fuzzy_query取值决定是否按模糊查询。
 
         :return: The sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
         :rtype: str
@@ -100,6 +103,7 @@ class ListEnterpriseSubCustomersRequest:
     def sub_customer_display_name(self, sub_customer_display_name):
         """Sets the sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
 
+        企业子账号的显示名称。不限制特殊字符。根据fuzzy_query取值决定是否按模糊查询。
 
         :param sub_customer_display_name: The sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
         :type: str
@@ -110,6 +114,7 @@ class ListEnterpriseSubCustomersRequest:
     def fuzzy_query(self):
         """Gets the fuzzy_query of this ListEnterpriseSubCustomersRequest.
 
+        企业子账号的显示名称、用户名是否按模糊查询。0：不按模糊查询1：按模糊查询默认值为0。
 
         :return: The fuzzy_query of this ListEnterpriseSubCustomersRequest.
         :rtype: int
@@ -120,6 +125,7 @@ class ListEnterpriseSubCustomersRequest:
     def fuzzy_query(self, fuzzy_query):
         """Sets the fuzzy_query of this ListEnterpriseSubCustomersRequest.
 
+        企业子账号的显示名称、用户名是否按模糊查询。0：不按模糊查询1：按模糊查询默认值为0。
 
         :param fuzzy_query: The fuzzy_query of this ListEnterpriseSubCustomersRequest.
         :type: int
@@ -130,6 +136,7 @@ class ListEnterpriseSubCustomersRequest:
     def offset(self):
         """Gets the offset of this ListEnterpriseSubCustomersRequest.
 
+        偏移量，从0开始，默认值为0。
 
         :return: The offset of this ListEnterpriseSubCustomersRequest.
         :rtype: int
@@ -140,6 +147,7 @@ class ListEnterpriseSubCustomersRequest:
     def offset(self, offset):
         """Sets the offset of this ListEnterpriseSubCustomersRequest.
 
+        偏移量，从0开始，默认值为0。
 
         :param offset: The offset of this ListEnterpriseSubCustomersRequest.
         :type: int
@@ -150,6 +158,7 @@ class ListEnterpriseSubCustomersRequest:
     def limit(self):
         """Gets the limit of this ListEnterpriseSubCustomersRequest.
 
+        每次查询记录数，默认值为10。
 
         :return: The limit of this ListEnterpriseSubCustomersRequest.
         :rtype: int
@@ -160,6 +169,7 @@ class ListEnterpriseSubCustomersRequest:
     def limit(self, limit):
         """Sets the limit of this ListEnterpriseSubCustomersRequest.
 
+        每次查询记录数，默认值为10。
 
         :param limit: The limit of this ListEnterpriseSubCustomersRequest.
         :type: int
@@ -170,6 +180,7 @@ class ListEnterpriseSubCustomersRequest:
     def org_id(self):
         """Gets the org_id of this ListEnterpriseSubCustomersRequest.
 
+        子账号归属的组织单元ID。
 
         :return: The org_id of this ListEnterpriseSubCustomersRequest.
         :rtype: str
@@ -180,6 +191,7 @@ class ListEnterpriseSubCustomersRequest:
     def org_id(self, org_id):
         """Sets the org_id of this ListEnterpriseSubCustomersRequest.
 
+        子账号归属的组织单元ID。
 
         :param org_id: The org_id of this ListEnterpriseSubCustomersRequest.
         :type: str

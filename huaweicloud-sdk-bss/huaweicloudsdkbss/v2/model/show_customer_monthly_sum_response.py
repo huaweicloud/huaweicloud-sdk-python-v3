@@ -55,7 +55,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     def __init__(self, total_count=None, bill_sums=None, consume_amount=None, debt_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, cash_amount=None, credit_amount=None, writeoff_amount=None, measure_id=None, currency=None):
         """ShowCustomerMonthlySumResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowCustomerMonthlySumResponse, self).__init__()
 
         self._total_count = None
         self._bill_sums = None

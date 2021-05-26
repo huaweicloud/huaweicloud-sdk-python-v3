@@ -43,7 +43,7 @@ class ShowBlockchainStatusResponse(SdkResponse):
     def __init__(self, bcs=None, eip=None, sfs=None, obs=None, kafka=None, cce=None):
         """ShowBlockchainStatusResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowBlockchainStatusResponse, self).__init__()
 
         self._bcs = None
         self._eip = None

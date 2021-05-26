@@ -49,6 +49,7 @@ class ReinstallBaremetalServerOsRequest:
     def server_id(self):
         """Gets the server_id of this ReinstallBaremetalServerOsRequest.
 
+        裸金属服务器ID
 
         :return: The server_id of this ReinstallBaremetalServerOsRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ReinstallBaremetalServerOsRequest:
     def server_id(self, server_id):
         """Sets the server_id of this ReinstallBaremetalServerOsRequest.
 
+        裸金属服务器ID
 
         :param server_id: The server_id of this ReinstallBaremetalServerOsRequest.
         :type: str

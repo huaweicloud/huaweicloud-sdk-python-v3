@@ -95,6 +95,7 @@ class ListSubCustomerCouponsRequest:
     def coupon_id(self):
         """Gets the coupon_id of this ListSubCustomerCouponsRequest.
 
+        |参数名称：优惠券ID。| |参数的约束及描述：优惠券ID。|
 
         :return: The coupon_id of this ListSubCustomerCouponsRequest.
         :rtype: str
@@ -105,6 +106,7 @@ class ListSubCustomerCouponsRequest:
     def coupon_id(self, coupon_id):
         """Sets the coupon_id of this ListSubCustomerCouponsRequest.
 
+        |参数名称：优惠券ID。| |参数的约束及描述：优惠券ID。|
 
         :param coupon_id: The coupon_id of this ListSubCustomerCouponsRequest.
         :type: str
@@ -115,6 +117,7 @@ class ListSubCustomerCouponsRequest:
     def order_id(self):
         """Gets the order_id of this ListSubCustomerCouponsRequest.
 
+        |参数名称：订单ID。| |参数的约束及描述：订单ID。|
 
         :return: The order_id of this ListSubCustomerCouponsRequest.
         :rtype: str
@@ -125,6 +128,7 @@ class ListSubCustomerCouponsRequest:
     def order_id(self, order_id):
         """Sets the order_id of this ListSubCustomerCouponsRequest.
 
+        |参数名称：订单ID。| |参数的约束及描述：订单ID。|
 
         :param order_id: The order_id of this ListSubCustomerCouponsRequest.
         :type: str
@@ -135,6 +139,7 @@ class ListSubCustomerCouponsRequest:
     def promotion_plan_id(self):
         """Gets the promotion_plan_id of this ListSubCustomerCouponsRequest.
 
+        |参数名称：促销计划ID。| |参数的约束及描述：促销计划ID。|
 
         :return: The promotion_plan_id of this ListSubCustomerCouponsRequest.
         :rtype: str
@@ -145,6 +150,7 @@ class ListSubCustomerCouponsRequest:
     def promotion_plan_id(self, promotion_plan_id):
         """Sets the promotion_plan_id of this ListSubCustomerCouponsRequest.
 
+        |参数名称：促销计划ID。| |参数的约束及描述：促销计划ID。|
 
         :param promotion_plan_id: The promotion_plan_id of this ListSubCustomerCouponsRequest.
         :type: str
@@ -155,6 +161,7 @@ class ListSubCustomerCouponsRequest:
     def coupon_type(self):
         """Gets the coupon_type of this ListSubCustomerCouponsRequest.
 
+        |参数名称：优惠券类型：1：代金券；2：折扣券；3：产品券；4：现金券。| |参数的约束及描述：优惠券类型：1：代金券；2：折扣券；3：产品券；4：现金券。|
 
         :return: The coupon_type of this ListSubCustomerCouponsRequest.
         :rtype: int
@@ -165,6 +172,7 @@ class ListSubCustomerCouponsRequest:
     def coupon_type(self, coupon_type):
         """Sets the coupon_type of this ListSubCustomerCouponsRequest.
 
+        |参数名称：优惠券类型：1：代金券；2：折扣券；3：产品券；4：现金券。| |参数的约束及描述：优惠券类型：1：代金券；2：折扣券；3：产品券；4：现金券。|
 
         :param coupon_type: The coupon_type of this ListSubCustomerCouponsRequest.
         :type: int
@@ -175,6 +183,7 @@ class ListSubCustomerCouponsRequest:
     def status(self):
         """Gets the status of this ListSubCustomerCouponsRequest.
 
+        |参数名称：客户优惠券实例状态：1：未激活；2：待使用；3：已使用；4：已过期。| |参数的约束及描述：客户优惠券实例状态：1：未激活；2：待使用；3：已使用；4：已过期。|
 
         :return: The status of this ListSubCustomerCouponsRequest.
         :rtype: int
@@ -185,6 +194,7 @@ class ListSubCustomerCouponsRequest:
     def status(self, status):
         """Sets the status of this ListSubCustomerCouponsRequest.
 
+        |参数名称：客户优惠券实例状态：1：未激活；2：待使用；3：已使用；4：已过期。| |参数的约束及描述：客户优惠券实例状态：1：未激活；2：待使用；3：已使用；4：已过期。|
 
         :param status: The status of this ListSubCustomerCouponsRequest.
         :type: int
@@ -195,6 +205,7 @@ class ListSubCustomerCouponsRequest:
     def active_start_time(self):
         """Gets the active_start_time of this ListSubCustomerCouponsRequest.
 
+        |参数名称：激活时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数的约束及描述：激活时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
 
         :return: The active_start_time of this ListSubCustomerCouponsRequest.
         :rtype: str
@@ -205,6 +216,7 @@ class ListSubCustomerCouponsRequest:
     def active_start_time(self, active_start_time):
         """Sets the active_start_time of this ListSubCustomerCouponsRequest.
 
+        |参数名称：激活时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数的约束及描述：激活时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
 
         :param active_start_time: The active_start_time of this ListSubCustomerCouponsRequest.
         :type: str
@@ -215,6 +227,7 @@ class ListSubCustomerCouponsRequest:
     def active_end_time(self):
         """Gets the active_end_time of this ListSubCustomerCouponsRequest.
 
+        |参数名称：结束时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数的约束及描述：结束时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
 
         :return: The active_end_time of this ListSubCustomerCouponsRequest.
         :rtype: str
@@ -225,6 +238,7 @@ class ListSubCustomerCouponsRequest:
     def active_end_time(self, active_end_time):
         """Sets the active_end_time of this ListSubCustomerCouponsRequest.
 
+        |参数名称：结束时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数的约束及描述：结束时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
 
         :param active_end_time: The active_end_time of this ListSubCustomerCouponsRequest.
         :type: str
@@ -235,6 +249,7 @@ class ListSubCustomerCouponsRequest:
     def offset(self):
         """Gets the offset of this ListSubCustomerCouponsRequest.
 
+        |参数名称：偏移量，默认为0| |参数的约束及描述：偏移量，默认为0|
 
         :return: The offset of this ListSubCustomerCouponsRequest.
         :rtype: int
@@ -245,6 +260,7 @@ class ListSubCustomerCouponsRequest:
     def offset(self, offset):
         """Sets the offset of this ListSubCustomerCouponsRequest.
 
+        |参数名称：偏移量，默认为0| |参数的约束及描述：偏移量，默认为0|
 
         :param offset: The offset of this ListSubCustomerCouponsRequest.
         :type: int
@@ -255,6 +271,7 @@ class ListSubCustomerCouponsRequest:
     def limit(self):
         """Gets the limit of this ListSubCustomerCouponsRequest.
 
+        |参数名称：每页数量，默认10。| |参数的约束及描述：每页数量，默认10。|
 
         :return: The limit of this ListSubCustomerCouponsRequest.
         :rtype: int
@@ -265,6 +282,7 @@ class ListSubCustomerCouponsRequest:
     def limit(self, limit):
         """Sets the limit of this ListSubCustomerCouponsRequest.
 
+        |参数名称：每页数量，默认10。| |参数的约束及描述：每页数量，默认10。|
 
         :param limit: The limit of this ListSubCustomerCouponsRequest.
         :type: int
@@ -275,6 +293,7 @@ class ListSubCustomerCouponsRequest:
     def source_id(self):
         """Gets the source_id of this ListSubCustomerCouponsRequest.
 
+        |参数名称：发券来源| |参数的约束及描述：如果是合作伙伴发送的券，这个地方是伙伴ID。 如果想查询某个伙伴发放的券，可以在这里输入伙伴ID|
 
         :return: The source_id of this ListSubCustomerCouponsRequest.
         :rtype: str
@@ -285,6 +304,7 @@ class ListSubCustomerCouponsRequest:
     def source_id(self, source_id):
         """Sets the source_id of this ListSubCustomerCouponsRequest.
 
+        |参数名称：发券来源| |参数的约束及描述：如果是合作伙伴发送的券，这个地方是伙伴ID。 如果想查询某个伙伴发放的券，可以在这里输入伙伴ID|
 
         :param source_id: The source_id of this ListSubCustomerCouponsRequest.
         :type: str
@@ -295,6 +315,7 @@ class ListSubCustomerCouponsRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListSubCustomerCouponsRequest.
 
+        |参数名称：经营服务商（二级经销商）ID，如果要查询二级经销商名下的券，要传递该字段，否则查询的就是一级经销商自己的券列表。| |参数的约束及描述：经营服务商（二级经销商）ID，如果要查询二级经销商名下的券，要传递该字段，否则查询的就是一级经销商自己的券列表。|
 
         :return: The indirect_partner_id of this ListSubCustomerCouponsRequest.
         :rtype: str
@@ -305,6 +326,7 @@ class ListSubCustomerCouponsRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListSubCustomerCouponsRequest.
 
+        |参数名称：经营服务商（二级经销商）ID，如果要查询二级经销商名下的券，要传递该字段，否则查询的就是一级经销商自己的券列表。| |参数的约束及描述：经营服务商（二级经销商）ID，如果要查询二级经销商名下的券，要传递该字段，否则查询的就是一级经销商自己的券列表。|
 
         :param indirect_partner_id: The indirect_partner_id of this ListSubCustomerCouponsRequest.
         :type: str

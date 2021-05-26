@@ -39,7 +39,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
     def __init__(self, budget_amount=None, used_amount=None, measure_id=None, currency=None):
         """ShowSubCustomerBudgetResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowSubCustomerBudgetResponse, self).__init__()
 
         self._budget_amount = None
         self._used_amount = None

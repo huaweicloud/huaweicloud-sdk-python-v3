@@ -35,7 +35,7 @@ class UpdateCouponQuotasResponse(SdkResponse):
     def __init__(self, error_details=None, simple_quota_infos=None):
         """UpdateCouponQuotasResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateCouponQuotasResponse, self).__init__()
 
         self._error_details = None
         self._simple_quota_infos = None

@@ -80,6 +80,7 @@ class ListPartnerAdjustRecordsRequest:
     def customer_id(self):
         """Gets the customer_id of this ListPartnerAdjustRecordsRequest.
 
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。为空表示查询所有的调账记录。不为空表示仅查询与该客户相关的调账记录。默认查询所有客户的调账记录。 说明： 此处的客户包含伙伴的子客户，以及华为云伙伴能力中心关联的精英服务商（二级经销商）。
 
         :return: The customer_id of this ListPartnerAdjustRecordsRequest.
         :rtype: str
@@ -90,6 +91,7 @@ class ListPartnerAdjustRecordsRequest:
     def customer_id(self, customer_id):
         """Sets the customer_id of this ListPartnerAdjustRecordsRequest.
 
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。为空表示查询所有的调账记录。不为空表示仅查询与该客户相关的调账记录。默认查询所有客户的调账记录。 说明： 此处的客户包含伙伴的子客户，以及华为云伙伴能力中心关联的精英服务商（二级经销商）。
 
         :param customer_id: The customer_id of this ListPartnerAdjustRecordsRequest.
         :type: str
@@ -100,6 +102,7 @@ class ListPartnerAdjustRecordsRequest:
     def operation_type(self):
         """Gets the operation_type of this ListPartnerAdjustRecordsRequest.
 
+        操作类型。SOURCE_OPERATION_BEADJUST：拨款SOURCE_OPERATION_BERETRIEVE：回收SOURCE_OPERATION_BEUNBIND：解绑回收不传递默认查询所有类型。
 
         :return: The operation_type of this ListPartnerAdjustRecordsRequest.
         :rtype: str
@@ -110,6 +113,7 @@ class ListPartnerAdjustRecordsRequest:
     def operation_type(self, operation_type):
         """Sets the operation_type of this ListPartnerAdjustRecordsRequest.
 
+        操作类型。SOURCE_OPERATION_BEADJUST：拨款SOURCE_OPERATION_BERETRIEVE：回收SOURCE_OPERATION_BEUNBIND：解绑回收不传递默认查询所有类型。
 
         :param operation_type: The operation_type of this ListPartnerAdjustRecordsRequest.
         :type: str
@@ -120,6 +124,7 @@ class ListPartnerAdjustRecordsRequest:
     def operation_time_begin(self):
         """Gets the operation_time_begin of this ListPartnerAdjustRecordsRequest.
 
+        调账起始时间。UTC时间，格式为：2016-03-28T14:45:38Z
 
         :return: The operation_time_begin of this ListPartnerAdjustRecordsRequest.
         :rtype: str
@@ -130,6 +135,7 @@ class ListPartnerAdjustRecordsRequest:
     def operation_time_begin(self, operation_time_begin):
         """Sets the operation_time_begin of this ListPartnerAdjustRecordsRequest.
 
+        调账起始时间。UTC时间，格式为：2016-03-28T14:45:38Z
 
         :param operation_time_begin: The operation_time_begin of this ListPartnerAdjustRecordsRequest.
         :type: str
@@ -140,6 +146,7 @@ class ListPartnerAdjustRecordsRequest:
     def operation_time_end(self):
         """Gets the operation_time_end of this ListPartnerAdjustRecordsRequest.
 
+        调账截止时间。UTC时间，格式为：2016-03-28T14:45:38Z
 
         :return: The operation_time_end of this ListPartnerAdjustRecordsRequest.
         :rtype: str
@@ -150,6 +157,7 @@ class ListPartnerAdjustRecordsRequest:
     def operation_time_end(self, operation_time_end):
         """Sets the operation_time_end of this ListPartnerAdjustRecordsRequest.
 
+        调账截止时间。UTC时间，格式为：2016-03-28T14:45:38Z
 
         :param operation_time_end: The operation_time_end of this ListPartnerAdjustRecordsRequest.
         :type: str
@@ -160,6 +168,7 @@ class ListPartnerAdjustRecordsRequest:
     def trans_id(self):
         """Gets the trans_id of this ListPartnerAdjustRecordsRequest.
 
+        事务ID。
 
         :return: The trans_id of this ListPartnerAdjustRecordsRequest.
         :rtype: str
@@ -170,6 +179,7 @@ class ListPartnerAdjustRecordsRequest:
     def trans_id(self, trans_id):
         """Sets the trans_id of this ListPartnerAdjustRecordsRequest.
 
+        事务ID。
 
         :param trans_id: The trans_id of this ListPartnerAdjustRecordsRequest.
         :type: str
@@ -180,6 +190,7 @@ class ListPartnerAdjustRecordsRequest:
     def offset(self):
         """Gets the offset of this ListPartnerAdjustRecordsRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :return: The offset of this ListPartnerAdjustRecordsRequest.
         :rtype: int
@@ -190,6 +201,7 @@ class ListPartnerAdjustRecordsRequest:
     def offset(self, offset):
         """Sets the offset of this ListPartnerAdjustRecordsRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :param offset: The offset of this ListPartnerAdjustRecordsRequest.
         :type: int
@@ -200,6 +212,7 @@ class ListPartnerAdjustRecordsRequest:
     def limit(self):
         """Gets the limit of this ListPartnerAdjustRecordsRequest.
 
+        每页的显示条数。默认值为10。
 
         :return: The limit of this ListPartnerAdjustRecordsRequest.
         :rtype: int
@@ -210,6 +223,7 @@ class ListPartnerAdjustRecordsRequest:
     def limit(self, limit):
         """Sets the limit of this ListPartnerAdjustRecordsRequest.
 
+        每页的显示条数。默认值为10。
 
         :param limit: The limit of this ListPartnerAdjustRecordsRequest.
         :type: int
@@ -220,6 +234,7 @@ class ListPartnerAdjustRecordsRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListPartnerAdjustRecordsRequest.
 
+        精英服务商ID。华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的子客户调账记录时，需携带此参数；否则只能查询自己的子客户调账记录。
 
         :return: The indirect_partner_id of this ListPartnerAdjustRecordsRequest.
         :rtype: str
@@ -230,6 +245,7 @@ class ListPartnerAdjustRecordsRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListPartnerAdjustRecordsRequest.
 
+        精英服务商ID。华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的子客户调账记录时，需携带此参数；否则只能查询自己的子客户调账记录。
 
         :param indirect_partner_id: The indirect_partner_id of this ListPartnerAdjustRecordsRequest.
         :type: str

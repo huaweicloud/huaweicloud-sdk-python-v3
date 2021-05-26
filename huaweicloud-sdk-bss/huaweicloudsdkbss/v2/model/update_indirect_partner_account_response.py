@@ -33,7 +33,7 @@ class UpdateIndirectPartnerAccountResponse(SdkResponse):
     def __init__(self, transfer_id=None):
         """UpdateIndirectPartnerAccountResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateIndirectPartnerAccountResponse, self).__init__()
 
         self._transfer_id = None
         self.discriminator = None

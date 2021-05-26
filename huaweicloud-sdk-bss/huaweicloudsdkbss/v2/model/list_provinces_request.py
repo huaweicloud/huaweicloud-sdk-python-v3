@@ -55,6 +55,7 @@ class ListProvincesRequest:
     def x_language(self):
         """Gets the x_language of this ListProvincesRequest.
 
+        语言。zh_CN：中文en_us：英文缺省为zh_CN。
 
         :return: The x_language of this ListProvincesRequest.
         :rtype: str
@@ -65,6 +66,7 @@ class ListProvincesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListProvincesRequest.
 
+        语言。zh_CN：中文en_us：英文缺省为zh_CN。
 
         :param x_language: The x_language of this ListProvincesRequest.
         :type: str
@@ -75,6 +77,7 @@ class ListProvincesRequest:
     def offset(self):
         """Gets the offset of this ListProvincesRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :return: The offset of this ListProvincesRequest.
         :rtype: int
@@ -85,6 +88,7 @@ class ListProvincesRequest:
     def offset(self, offset):
         """Sets the offset of this ListProvincesRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :param offset: The offset of this ListProvincesRequest.
         :type: int
@@ -95,6 +99,7 @@ class ListProvincesRequest:
     def limit(self):
         """Gets the limit of this ListProvincesRequest.
 
+        每次查询的数量，最大1000。
 
         :return: The limit of this ListProvincesRequest.
         :rtype: int
@@ -105,6 +110,7 @@ class ListProvincesRequest:
     def limit(self, limit):
         """Sets the limit of this ListProvincesRequest.
 
+        每次查询的数量，最大1000。
 
         :param limit: The limit of this ListProvincesRequest.
         :type: int

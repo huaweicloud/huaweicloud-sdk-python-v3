@@ -33,7 +33,7 @@ class ListResourceUsagesResponse(SdkResponse):
     def __init__(self, package_usage_infos=None):
         """ListResourceUsagesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListResourceUsagesResponse, self).__init__()
 
         self._package_usage_infos = None
         self.discriminator = None

@@ -33,7 +33,7 @@ class ShowSpecifiedVersionResponse(SdkResponse):
     def __init__(self, version=None):
         """ShowSpecifiedVersionResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowSpecifiedVersionResponse, self).__init__()
 
         self._version = None
         self.discriminator = None

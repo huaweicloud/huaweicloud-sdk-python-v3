@@ -59,6 +59,7 @@ class ShowCustomerOrderDetailsRequest:
     def order_id(self):
         """Gets the order_id of this ShowCustomerOrderDetailsRequest.
 
+        订单ID。 查询订单列表时系统会返回订单ID。
 
         :return: The order_id of this ShowCustomerOrderDetailsRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class ShowCustomerOrderDetailsRequest:
     def order_id(self, order_id):
         """Sets the order_id of this ShowCustomerOrderDetailsRequest.
 
+        订单ID。 查询订单列表时系统会返回订单ID。
 
         :param order_id: The order_id of this ShowCustomerOrderDetailsRequest.
         :type: str
@@ -79,6 +81,7 @@ class ShowCustomerOrderDetailsRequest:
     def limit(self):
         """Gets the limit of this ShowCustomerOrderDetailsRequest.
 
+        每页大小。默认值为10。
 
         :return: The limit of this ShowCustomerOrderDetailsRequest.
         :rtype: int
@@ -89,6 +92,7 @@ class ShowCustomerOrderDetailsRequest:
     def limit(self, limit):
         """Sets the limit of this ShowCustomerOrderDetailsRequest.
 
+        每页大小。默认值为10。
 
         :param limit: The limit of this ShowCustomerOrderDetailsRequest.
         :type: int
@@ -99,6 +103,7 @@ class ShowCustomerOrderDetailsRequest:
     def offset(self):
         """Gets the offset of this ShowCustomerOrderDetailsRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :return: The offset of this ShowCustomerOrderDetailsRequest.
         :rtype: int
@@ -109,6 +114,7 @@ class ShowCustomerOrderDetailsRequest:
     def offset(self, offset):
         """Sets the offset of this ShowCustomerOrderDetailsRequest.
 
+        偏移量，从0开始。默认值为0。
 
         :param offset: The offset of this ShowCustomerOrderDetailsRequest.
         :type: int
@@ -119,6 +125,7 @@ class ShowCustomerOrderDetailsRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ShowCustomerOrderDetailsRequest.
 
+        精英服务商ID。 华为云伙伴能力中心（一级经销商）查询精英服务商的客户订单详情时，需要携带该参数；否则只能查询自己客户的订单详情。
 
         :return: The indirect_partner_id of this ShowCustomerOrderDetailsRequest.
         :rtype: str
@@ -129,6 +136,7 @@ class ShowCustomerOrderDetailsRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ShowCustomerOrderDetailsRequest.
 
+        精英服务商ID。 华为云伙伴能力中心（一级经销商）查询精英服务商的客户订单详情时，需要携带该参数；否则只能查询自己客户的订单详情。
 
         :param indirect_partner_id: The indirect_partner_id of this ShowCustomerOrderDetailsRequest.
         :type: str

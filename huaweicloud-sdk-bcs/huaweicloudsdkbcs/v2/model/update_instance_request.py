@@ -49,6 +49,7 @@ class UpdateInstanceRequest:
     def blockchain_id(self):
         """Gets the blockchain_id of this UpdateInstanceRequest.
 
+        bcs 服务id
 
         :return: The blockchain_id of this UpdateInstanceRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateInstanceRequest:
     def blockchain_id(self, blockchain_id):
         """Sets the blockchain_id of this UpdateInstanceRequest.
 
+        bcs 服务id
 
         :param blockchain_id: The blockchain_id of this UpdateInstanceRequest.
         :type: str

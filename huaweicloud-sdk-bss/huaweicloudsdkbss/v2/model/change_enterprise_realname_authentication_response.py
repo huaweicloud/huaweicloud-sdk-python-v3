@@ -33,7 +33,7 @@ class ChangeEnterpriseRealnameAuthenticationResponse(SdkResponse):
     def __init__(self, is_review=None):
         """ChangeEnterpriseRealnameAuthenticationResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ChangeEnterpriseRealnameAuthenticationResponse, self).__init__()
 
         self._is_review = None
         self.discriminator = None

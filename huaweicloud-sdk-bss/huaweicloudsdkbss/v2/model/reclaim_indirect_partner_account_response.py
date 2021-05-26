@@ -33,7 +33,7 @@ class ReclaimIndirectPartnerAccountResponse(SdkResponse):
     def __init__(self, trans_id=None):
         """ReclaimIndirectPartnerAccountResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ReclaimIndirectPartnerAccountResponse, self).__init__()
 
         self._trans_id = None
         self.discriminator = None

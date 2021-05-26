@@ -119,6 +119,7 @@ class ListCustomerselfResourceRecordsRequest:
     def x_language(self):
         """Gets the x_language of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：语言| |参数的约束及描述：中文：zh_CN 英文：en_US。缺省为zh_CN|
 
         :return: The x_language of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -129,6 +130,7 @@ class ListCustomerselfResourceRecordsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：语言| |参数的约束及描述：中文：zh_CN 英文：en_US。缺省为zh_CN|
 
         :param x_language: The x_language of this ListCustomerselfResourceRecordsRequest.
         :type: str
@@ -139,6 +141,7 @@ class ListCustomerselfResourceRecordsRequest:
     def cycle(self):
         """Gets the cycle of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：开始时间，格式：yyyy-MM| |参数的约束及描述：|
 
         :return: The cycle of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -149,6 +152,7 @@ class ListCustomerselfResourceRecordsRequest:
     def cycle(self, cycle):
         """Sets the cycle of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：开始时间，格式：yyyy-MM| |参数的约束及描述：|
 
         :param cycle: The cycle of this ListCustomerselfResourceRecordsRequest.
         :type: str
@@ -159,6 +163,7 @@ class ListCustomerselfResourceRecordsRequest:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数的约束及描述：|
 
         :return: The cloud_service_type of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -169,6 +174,7 @@ class ListCustomerselfResourceRecordsRequest:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数的约束及描述：|
 
         :param cloud_service_type: The cloud_service_type of this ListCustomerselfResourceRecordsRequest.
         :type: str
@@ -179,6 +185,7 @@ class ListCustomerselfResourceRecordsRequest:
     def region(self):
         """Gets the region of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数的约束及描述：|
 
         :return: The region of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -189,6 +196,7 @@ class ListCustomerselfResourceRecordsRequest:
     def region(self, region):
         """Sets the region of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数的约束及描述：|
 
         :param region: The region of this ListCustomerselfResourceRecordsRequest.
         :type: str
@@ -199,6 +207,7 @@ class ListCustomerselfResourceRecordsRequest:
     def charge_mode(self):
         """Gets the charge_mode of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：支付方式。1 : 包周期；3: 按需。10: 预留实例。| |参数的约束及描述：|
 
         :return: The charge_mode of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -209,6 +218,7 @@ class ListCustomerselfResourceRecordsRequest:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：支付方式。1 : 包周期；3: 按需。10: 预留实例。| |参数的约束及描述：|
 
         :param charge_mode: The charge_mode of this ListCustomerselfResourceRecordsRequest.
         :type: str
@@ -219,6 +229,7 @@ class ListCustomerselfResourceRecordsRequest:
     def bill_type(self):
         """Gets the bill_type of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿12：消费-按时计费13：消费-退订手续费14：消费-服务支持计划月末扣费 15消费-税金 16：调账-扣费  17：消费-保底差额 100：退款-退订税金 101：调账-补偿税金 102：调账-扣费税金| |参数的约束及描述：|
 
         :return: The bill_type of this ListCustomerselfResourceRecordsRequest.
         :rtype: int
@@ -229,6 +240,7 @@ class ListCustomerselfResourceRecordsRequest:
     def bill_type(self, bill_type):
         """Sets the bill_type of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿12：消费-按时计费13：消费-退订手续费14：消费-服务支持计划月末扣费 15消费-税金 16：调账-扣费  17：消费-保底差额 100：退款-退订税金 101：调账-补偿税金 102：调账-扣费税金| |参数的约束及描述：|
 
         :param bill_type: The bill_type of this ListCustomerselfResourceRecordsRequest.
         :type: int
@@ -239,6 +251,7 @@ class ListCustomerselfResourceRecordsRequest:
     def offset(self):
         """Gets the offset of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：偏移量，从0开始| |参数的约束及描述：|
 
         :return: The offset of this ListCustomerselfResourceRecordsRequest.
         :rtype: int
@@ -249,6 +262,7 @@ class ListCustomerselfResourceRecordsRequest:
     def offset(self, offset):
         """Sets the offset of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：偏移量，从0开始| |参数的约束及描述：|
 
         :param offset: The offset of this ListCustomerselfResourceRecordsRequest.
         :type: int
@@ -259,6 +273,7 @@ class ListCustomerselfResourceRecordsRequest:
     def limit(self):
         """Gets the limit of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：每次查询的限制| |参数的约束及描述：|
 
         :return: The limit of this ListCustomerselfResourceRecordsRequest.
         :rtype: int
@@ -269,6 +284,7 @@ class ListCustomerselfResourceRecordsRequest:
     def limit(self, limit):
         """Sets the limit of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：每次查询的限制| |参数的约束及描述：|
 
         :param limit: The limit of this ListCustomerselfResourceRecordsRequest.
         :type: int
@@ -279,6 +295,7 @@ class ListCustomerselfResourceRecordsRequest:
     def resource_id(self):
         """Gets the resource_id of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：资源ID。| |参数的约束及描述：|
 
         :return: The resource_id of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -289,6 +306,7 @@ class ListCustomerselfResourceRecordsRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：资源ID。| |参数的约束及描述：|
 
         :param resource_id: The resource_id of this ListCustomerselfResourceRecordsRequest.
         :type: str
@@ -299,6 +317,7 @@ class ListCustomerselfResourceRecordsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：企业项目ID。| |参数的约束及描述：|
 
         :return: The enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -309,6 +328,7 @@ class ListCustomerselfResourceRecordsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：企业项目ID。| |参数的约束及描述：|
 
         :param enterprise_project_id: The enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
         :type: str
@@ -319,6 +339,7 @@ class ListCustomerselfResourceRecordsRequest:
     def include_zero_record(self):
         """Gets the include_zero_record of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：返回是否包含应付金额为0的记录。| |参数的约束及描述：|
 
         :return: The include_zero_record of this ListCustomerselfResourceRecordsRequest.
         :rtype: bool
@@ -329,6 +350,7 @@ class ListCustomerselfResourceRecordsRequest:
     def include_zero_record(self, include_zero_record):
         """Sets the include_zero_record of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：返回是否包含应付金额为0的记录。| |参数的约束及描述：|
 
         :param include_zero_record: The include_zero_record of this ListCustomerselfResourceRecordsRequest.
         :type: bool
@@ -339,6 +361,7 @@ class ListCustomerselfResourceRecordsRequest:
     def method(self):
         """Gets the method of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：查询方式。oneself：自身sub_customer: 企业子客户all:自己和企业子客户| |参数的约束及描述：oneself：自身sub_customer: 企业子客户all:自己和企业子客户|
 
         :return: The method of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -349,6 +372,7 @@ class ListCustomerselfResourceRecordsRequest:
     def method(self, method):
         """Sets the method of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：查询方式。oneself：自身sub_customer: 企业子客户all:自己和企业子客户| |参数的约束及描述：oneself：自身sub_customer: 企业子客户all:自己和企业子客户|
 
         :param method: The method of this ListCustomerselfResourceRecordsRequest.
         :type: str
@@ -359,6 +383,7 @@ class ListCustomerselfResourceRecordsRequest:
     def sub_customer_id(self):
         """Gets the sub_customer_id of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：企业子账号ID。| |参数的约束及描述：注意：method不等于sub_customer的时候，该参数无效，如果method等于sub_customer，该参数不能为空|
 
         :return: The sub_customer_id of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -369,6 +394,7 @@ class ListCustomerselfResourceRecordsRequest:
     def sub_customer_id(self, sub_customer_id):
         """Sets the sub_customer_id of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：企业子账号ID。| |参数的约束及描述：注意：method不等于sub_customer的时候，该参数无效，如果method等于sub_customer，该参数不能为空|
 
         :param sub_customer_id: The sub_customer_id of this ListCustomerselfResourceRecordsRequest.
         :type: str
@@ -379,6 +405,7 @@ class ListCustomerselfResourceRecordsRequest:
     def trade_id(self):
         """Gets the trade_id of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：订单ID 或 交易ID1，2，3，4，8时为订单ID，其它场景下为： 交易ID(非月末扣费：应收ID；月末扣费：账单ID)，扣费维度的唯一标识| |参数的约束及描述：|
 
         :return: The trade_id of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -389,6 +416,7 @@ class ListCustomerselfResourceRecordsRequest:
     def trade_id(self, trade_id):
         """Sets the trade_id of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：订单ID 或 交易ID1，2，3，4，8时为订单ID，其它场景下为： 交易ID(非月末扣费：应收ID；月末扣费：账单ID)，扣费维度的唯一标识| |参数的约束及描述：|
 
         :param trade_id: The trade_id of this ListCustomerselfResourceRecordsRequest.
         :type: str
@@ -399,6 +427,7 @@ class ListCustomerselfResourceRecordsRequest:
     def bill_date_begin(self):
         """Gets the bill_date_begin of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：计费日期，格式为YYYY-MM-DD| |参数的约束及描述：必须和cycle，即资源的消费账期在同一个月。|
 
         :return: The bill_date_begin of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -409,6 +438,7 @@ class ListCustomerselfResourceRecordsRequest:
     def bill_date_begin(self, bill_date_begin):
         """Sets the bill_date_begin of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：计费日期，格式为YYYY-MM-DD| |参数的约束及描述：必须和cycle，即资源的消费账期在同一个月。|
 
         :param bill_date_begin: The bill_date_begin of this ListCustomerselfResourceRecordsRequest.
         :type: str
@@ -419,6 +449,7 @@ class ListCustomerselfResourceRecordsRequest:
     def bill_date_end(self):
         """Gets the bill_date_end of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：计费日期，格式为YYYY-MM-DD| |参数的约束及描述：必须和cycle，即资源的消费账期在同一个月。 begin和end必须同时出现，否则忽略这两个参数。仅仅按照cycle进行查询。|
 
         :return: The bill_date_end of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -429,6 +460,7 @@ class ListCustomerselfResourceRecordsRequest:
     def bill_date_end(self, bill_date_end):
         """Sets the bill_date_end of this ListCustomerselfResourceRecordsRequest.
 
+        |参数名称：计费日期，格式为YYYY-MM-DD| |参数的约束及描述：必须和cycle，即资源的消费账期在同一个月。 begin和end必须同时出现，否则忽略这两个参数。仅仅按照cycle进行查询。|
 
         :param bill_date_end: The bill_date_end of this ListCustomerselfResourceRecordsRequest.
         :type: str

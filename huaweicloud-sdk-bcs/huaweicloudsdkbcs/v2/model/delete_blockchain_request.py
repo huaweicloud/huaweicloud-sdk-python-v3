@@ -59,6 +59,7 @@ class DeleteBlockchainRequest:
     def blockchain_id(self):
         """Gets the blockchain_id of this DeleteBlockchainRequest.
 
+        bcs 服务id
 
         :return: The blockchain_id of this DeleteBlockchainRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class DeleteBlockchainRequest:
     def blockchain_id(self, blockchain_id):
         """Sets the blockchain_id of this DeleteBlockchainRequest.
 
+        bcs 服务id
 
         :param blockchain_id: The blockchain_id of this DeleteBlockchainRequest.
         :type: str
@@ -79,6 +81,7 @@ class DeleteBlockchainRequest:
     def is_delete_storage(self):
         """Gets the is_delete_storage of this DeleteBlockchainRequest.
 
+        [是否删除存储，IEF模式下不用填写](tag:online)[是否删除存储](tag:hcs)
 
         :return: The is_delete_storage of this DeleteBlockchainRequest.
         :rtype: bool
@@ -89,6 +92,7 @@ class DeleteBlockchainRequest:
     def is_delete_storage(self, is_delete_storage):
         """Sets the is_delete_storage of this DeleteBlockchainRequest.
 
+        [是否删除存储，IEF模式下不用填写](tag:online)[是否删除存储](tag:hcs)
 
         :param is_delete_storage: The is_delete_storage of this DeleteBlockchainRequest.
         :type: bool
@@ -99,6 +103,7 @@ class DeleteBlockchainRequest:
     def is_delete_obs(self):
         """Gets the is_delete_obs of this DeleteBlockchainRequest.
 
+        [是否删除obs，IEF模式下不用填写](tag:online)[是否删除obs](tag:hcs)
 
         :return: The is_delete_obs of this DeleteBlockchainRequest.
         :rtype: bool
@@ -109,6 +114,7 @@ class DeleteBlockchainRequest:
     def is_delete_obs(self, is_delete_obs):
         """Sets the is_delete_obs of this DeleteBlockchainRequest.
 
+        [是否删除obs，IEF模式下不用填写](tag:online)[是否删除obs](tag:hcs)
 
         :param is_delete_obs: The is_delete_obs of this DeleteBlockchainRequest.
         :type: bool
@@ -119,6 +125,7 @@ class DeleteBlockchainRequest:
     def is_delete_resource(self):
         """Gets the is_delete_resource of this DeleteBlockchainRequest.
 
+        是否删除底层CCE资源
 
         :return: The is_delete_resource of this DeleteBlockchainRequest.
         :rtype: bool
@@ -129,6 +136,7 @@ class DeleteBlockchainRequest:
     def is_delete_resource(self, is_delete_resource):
         """Sets the is_delete_resource of this DeleteBlockchainRequest.
 
+        是否删除底层CCE资源
 
         :param is_delete_resource: The is_delete_resource of this DeleteBlockchainRequest.
         :type: bool

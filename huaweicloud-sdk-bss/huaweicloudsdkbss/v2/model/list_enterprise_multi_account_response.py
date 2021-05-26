@@ -35,7 +35,7 @@ class ListEnterpriseMultiAccountResponse(SdkResponse):
     def __init__(self, total_count=None, amount_infos=None):
         """ListEnterpriseMultiAccountResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListEnterpriseMultiAccountResponse, self).__init__()
 
         self._total_count = None
         self._amount_infos = None
