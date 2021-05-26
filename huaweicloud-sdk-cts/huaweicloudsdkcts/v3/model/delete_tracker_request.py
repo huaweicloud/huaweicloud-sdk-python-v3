@@ -50,6 +50,7 @@ class DeleteTrackerRequest:
     def tracker_name(self):
         """Gets the tracker_name of this DeleteTrackerRequest.
 
+        标识追踪器名称。 在不传入该字段的情况下，将删除当前租户所有的数据类追踪器。
 
         :return: The tracker_name of this DeleteTrackerRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class DeleteTrackerRequest:
     def tracker_name(self, tracker_name):
         """Sets the tracker_name of this DeleteTrackerRequest.
 
+        标识追踪器名称。 在不传入该字段的情况下，将删除当前租户所有的数据类追踪器。
 
         :param tracker_name: The tracker_name of this DeleteTrackerRequest.
         :type: str
@@ -70,6 +72,7 @@ class DeleteTrackerRequest:
     def tracker_type(self):
         """Gets the tracker_type of this DeleteTrackerRequest.
 
+        标识追踪器类型。 目前仅支持数据类追踪器（data）的删除，默认值为\"data\"。
 
         :return: The tracker_type of this DeleteTrackerRequest.
         :rtype: str
@@ -80,6 +83,7 @@ class DeleteTrackerRequest:
     def tracker_type(self, tracker_type):
         """Sets the tracker_type of this DeleteTrackerRequest.
 
+        标识追踪器类型。 目前仅支持数据类追踪器（data）的删除，默认值为\"data\"。
 
         :param tracker_type: The tracker_type of this DeleteTrackerRequest.
         :type: str

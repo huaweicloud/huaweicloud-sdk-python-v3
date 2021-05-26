@@ -169,7 +169,7 @@ def process_auth_header_value(signature, app_key, signed_headers):
     return "%s Access=%s, SignedHeaders=%s, Signature=%s" % (Algorithm, app_key, ";".join(signed_headers), signature)
 
 
-class Signer:
+class Signer(object):
     def __init__(self, credentials):
         self.__ak = credentials.ak
         self.__sk = credentials.sk

@@ -35,7 +35,7 @@ class ListVaultResponse(SdkResponse):
     def __init__(self, vaults=None, count=None):
         """ListVaultResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListVaultResponse, self).__init__()
 
         self._vaults = None
         self._count = None

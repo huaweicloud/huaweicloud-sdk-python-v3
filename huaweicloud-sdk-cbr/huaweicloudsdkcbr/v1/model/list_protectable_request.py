@@ -79,6 +79,7 @@ class ListProtectableRequest:
     def limit(self):
         """Gets the limit of this ListProtectableRequest.
 
+        每页显示的条目数量，每页最多支持50条
 
         :return: The limit of this ListProtectableRequest.
         :rtype: int
@@ -89,6 +90,7 @@ class ListProtectableRequest:
     def limit(self, limit):
         """Sets the limit of this ListProtectableRequest.
 
+        每页显示的条目数量，每页最多支持50条
 
         :param limit: The limit of this ListProtectableRequest.
         :type: int
@@ -99,6 +101,7 @@ class ListProtectableRequest:
     def marker(self):
         """Gets the marker of this ListProtectableRequest.
 
+        上一次查询最后一条的ID
 
         :return: The marker of this ListProtectableRequest.
         :rtype: str
@@ -109,6 +112,7 @@ class ListProtectableRequest:
     def marker(self, marker):
         """Sets the marker of this ListProtectableRequest.
 
+        上一次查询最后一条的ID
 
         :param marker: The marker of this ListProtectableRequest.
         :type: str
@@ -119,6 +123,7 @@ class ListProtectableRequest:
     def name(self):
         """Gets the name of this ListProtectableRequest.
 
+        按名称过滤
 
         :return: The name of this ListProtectableRequest.
         :rtype: str
@@ -129,6 +134,7 @@ class ListProtectableRequest:
     def name(self, name):
         """Sets the name of this ListProtectableRequest.
 
+        按名称过滤
 
         :param name: The name of this ListProtectableRequest.
         :type: str
@@ -139,6 +145,7 @@ class ListProtectableRequest:
     def offset(self):
         """Gets the offset of this ListProtectableRequest.
 
+        偏移值
 
         :return: The offset of this ListProtectableRequest.
         :rtype: int
@@ -149,6 +156,7 @@ class ListProtectableRequest:
     def offset(self, offset):
         """Sets the offset of this ListProtectableRequest.
 
+        偏移值
 
         :param offset: The offset of this ListProtectableRequest.
         :type: int
@@ -159,6 +167,7 @@ class ListProtectableRequest:
     def protectable_type(self):
         """Gets the protectable_type of this ListProtectableRequest.
 
+        对象类型
 
         :return: The protectable_type of this ListProtectableRequest.
         :rtype: str
@@ -169,6 +178,7 @@ class ListProtectableRequest:
     def protectable_type(self, protectable_type):
         """Sets the protectable_type of this ListProtectableRequest.
 
+        对象类型
 
         :param protectable_type: The protectable_type of this ListProtectableRequest.
         :type: str
@@ -179,6 +189,7 @@ class ListProtectableRequest:
     def status(self):
         """Gets the status of this ListProtectableRequest.
 
+        资源的状态，如available，error 等
 
         :return: The status of this ListProtectableRequest.
         :rtype: str
@@ -189,6 +200,7 @@ class ListProtectableRequest:
     def status(self, status):
         """Sets the status of this ListProtectableRequest.
 
+        资源的状态，如available，error 等
 
         :param status: The status of this ListProtectableRequest.
         :type: str
@@ -199,6 +211,7 @@ class ListProtectableRequest:
     def id(self):
         """Gets the id of this ListProtectableRequest.
 
+        根据资源id过滤
 
         :return: The id of this ListProtectableRequest.
         :rtype: str
@@ -209,6 +222,7 @@ class ListProtectableRequest:
     def id(self, id):
         """Sets the id of this ListProtectableRequest.
 
+        根据资源id过滤
 
         :param id: The id of this ListProtectableRequest.
         :type: str
@@ -219,6 +233,7 @@ class ListProtectableRequest:
     def server_id(self):
         """Gets the server_id of this ListProtectableRequest.
 
+        根据该id过滤属于该服务器的所有磁盘，支持企业多项目的用户才能传入此参数
 
         :return: The server_id of this ListProtectableRequest.
         :rtype: str
@@ -229,6 +244,7 @@ class ListProtectableRequest:
     def server_id(self, server_id):
         """Sets the server_id of this ListProtectableRequest.
 
+        根据该id过滤属于该服务器的所有磁盘，支持企业多项目的用户才能传入此参数
 
         :param server_id: The server_id of this ListProtectableRequest.
         :type: str

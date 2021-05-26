@@ -33,7 +33,7 @@ class UpdateVaultResponse(SdkResponse):
     def __init__(self, vault=None):
         """UpdateVaultResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateVaultResponse, self).__init__()
 
         self._vault = None
         self.discriminator = None

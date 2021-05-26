@@ -35,7 +35,7 @@ class ShowVaultTagResponse(SdkResponse):
     def __init__(self, tags=None, sys_tags=None):
         """ShowVaultTagResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowVaultTagResponse, self).__init__()
 
         self._tags = None
         self._sys_tags = None

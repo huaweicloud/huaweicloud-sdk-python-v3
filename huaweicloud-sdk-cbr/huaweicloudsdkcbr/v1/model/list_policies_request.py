@@ -50,6 +50,7 @@ class ListPoliciesRequest:
     def operation_type(self):
         """Gets the operation_type of this ListPoliciesRequest.
 
+        策略类型：备份（backup）、复制(replication)
 
         :return: The operation_type of this ListPoliciesRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class ListPoliciesRequest:
     def operation_type(self, operation_type):
         """Sets the operation_type of this ListPoliciesRequest.
 
+        策略类型：备份（backup）、复制(replication)
 
         :param operation_type: The operation_type of this ListPoliciesRequest.
         :type: str
@@ -70,6 +72,7 @@ class ListPoliciesRequest:
     def vault_id(self):
         """Gets the vault_id of this ListPoliciesRequest.
 
+        存储库ID
 
         :return: The vault_id of this ListPoliciesRequest.
         :rtype: str
@@ -80,6 +83,7 @@ class ListPoliciesRequest:
     def vault_id(self, vault_id):
         """Sets the vault_id of this ListPoliciesRequest.
 
+        存储库ID
 
         :param vault_id: The vault_id of this ListPoliciesRequest.
         :type: str

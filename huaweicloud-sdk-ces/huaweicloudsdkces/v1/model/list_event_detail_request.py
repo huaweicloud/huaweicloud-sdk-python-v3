@@ -88,6 +88,7 @@ class ListEventDetailRequest:
     def event_name(self):
         """Gets the event_name of this ListEventDetailRequest.
 
+        事件名称。
 
         :return: The event_name of this ListEventDetailRequest.
         :rtype: str
@@ -98,6 +99,7 @@ class ListEventDetailRequest:
     def event_name(self, event_name):
         """Sets the event_name of this ListEventDetailRequest.
 
+        事件名称。
 
         :param event_name: The event_name of this ListEventDetailRequest.
         :type: str
@@ -108,6 +110,7 @@ class ListEventDetailRequest:
     def event_type(self):
         """Gets the event_type of this ListEventDetailRequest.
 
+        事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
 
         :return: The event_type of this ListEventDetailRequest.
         :rtype: str
@@ -118,6 +121,7 @@ class ListEventDetailRequest:
     def event_type(self, event_type):
         """Sets the event_type of this ListEventDetailRequest.
 
+        事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
 
         :param event_type: The event_type of this ListEventDetailRequest.
         :type: str
@@ -128,6 +132,7 @@ class ListEventDetailRequest:
     def event_source(self):
         """Gets the event_source of this ListEventDetailRequest.
 
+        事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
 
         :return: The event_source of this ListEventDetailRequest.
         :rtype: str
@@ -138,6 +143,7 @@ class ListEventDetailRequest:
     def event_source(self, event_source):
         """Sets the event_source of this ListEventDetailRequest.
 
+        事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
 
         :param event_source: The event_source of this ListEventDetailRequest.
         :type: str
@@ -148,6 +154,7 @@ class ListEventDetailRequest:
     def event_level(self):
         """Gets the event_level of this ListEventDetailRequest.
 
+        事件的级别，值为Critical，Major，Minor，Info；Critical为紧急，Major为重要，Minor为次要，Info为提示。
 
         :return: The event_level of this ListEventDetailRequest.
         :rtype: str
@@ -158,6 +165,7 @@ class ListEventDetailRequest:
     def event_level(self, event_level):
         """Sets the event_level of this ListEventDetailRequest.
 
+        事件的级别，值为Critical，Major，Minor，Info；Critical为紧急，Major为重要，Minor为次要，Info为提示。
 
         :param event_level: The event_level of this ListEventDetailRequest.
         :type: str
@@ -168,6 +176,7 @@ class ListEventDetailRequest:
     def event_user(self):
         """Gets the event_user of this ListEventDetailRequest.
 
+        上报事件监控数据时用户的名称，也可为projectID。
 
         :return: The event_user of this ListEventDetailRequest.
         :rtype: str
@@ -178,6 +187,7 @@ class ListEventDetailRequest:
     def event_user(self, event_user):
         """Sets the event_user of this ListEventDetailRequest.
 
+        上报事件监控数据时用户的名称，也可为projectID。
 
         :param event_user: The event_user of this ListEventDetailRequest.
         :type: str
@@ -188,6 +198,7 @@ class ListEventDetailRequest:
     def event_state(self):
         """Gets the event_state of this ListEventDetailRequest.
 
+        事件的状态，值为normal，warning，incident；normal为正常，warning为警告，incident为故障。
 
         :return: The event_state of this ListEventDetailRequest.
         :rtype: str
@@ -198,6 +209,7 @@ class ListEventDetailRequest:
     def event_state(self, event_state):
         """Sets the event_state of this ListEventDetailRequest.
 
+        事件的状态，值为normal，warning，incident；normal为正常，warning为警告，incident为故障。
 
         :param event_state: The event_state of this ListEventDetailRequest.
         :type: str
@@ -208,6 +220,7 @@ class ListEventDetailRequest:
     def _from(self):
         """Gets the _from of this ListEventDetailRequest.
 
+        查询数据起始时间，UNIX时间戳，单位毫秒；例如：1605952700911。
 
         :return: The _from of this ListEventDetailRequest.
         :rtype: int
@@ -218,6 +231,7 @@ class ListEventDetailRequest:
     def _from(self, _from):
         """Sets the _from of this ListEventDetailRequest.
 
+        查询数据起始时间，UNIX时间戳，单位毫秒；例如：1605952700911。
 
         :param _from: The _from of this ListEventDetailRequest.
         :type: int
@@ -228,6 +242,7 @@ class ListEventDetailRequest:
     def to(self):
         """Gets the to of this ListEventDetailRequest.
 
+        查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to，例如：1606557500911。
 
         :return: The to of this ListEventDetailRequest.
         :rtype: int
@@ -238,6 +253,7 @@ class ListEventDetailRequest:
     def to(self, to):
         """Sets the to of this ListEventDetailRequest.
 
+        查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to，例如：1606557500911。
 
         :param to: The to of this ListEventDetailRequest.
         :type: int
@@ -248,6 +264,7 @@ class ListEventDetailRequest:
     def start(self):
         """Gets the start of this ListEventDetailRequest.
 
+        分页起始值，类型为integer，默认值为0。
 
         :return: The start of this ListEventDetailRequest.
         :rtype: int
@@ -258,6 +275,7 @@ class ListEventDetailRequest:
     def start(self, start):
         """Sets the start of this ListEventDetailRequest.
 
+        分页起始值，类型为integer，默认值为0。
 
         :param start: The start of this ListEventDetailRequest.
         :type: int
@@ -268,6 +286,7 @@ class ListEventDetailRequest:
     def limit(self):
         """Gets the limit of this ListEventDetailRequest.
 
+        单次查询的条数限制，取值范围(0,100]，默认值为100，用于限制结果数据条数。
 
         :return: The limit of this ListEventDetailRequest.
         :rtype: int
@@ -278,6 +297,7 @@ class ListEventDetailRequest:
     def limit(self, limit):
         """Sets the limit of this ListEventDetailRequest.
 
+        单次查询的条数限制，取值范围(0,100]，默认值为100，用于限制结果数据条数。
 
         :param limit: The limit of this ListEventDetailRequest.
         :type: int

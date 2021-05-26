@@ -49,6 +49,7 @@ class UpdateResourceGroupRequest:
     def group_id(self):
         """Gets the group_id of this UpdateResourceGroupRequest.
 
+        资源分组ID。
 
         :return: The group_id of this UpdateResourceGroupRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateResourceGroupRequest:
     def group_id(self, group_id):
         """Sets the group_id of this UpdateResourceGroupRequest.
 
+        资源分组ID。
 
         :param group_id: The group_id of this UpdateResourceGroupRequest.
         :type: str

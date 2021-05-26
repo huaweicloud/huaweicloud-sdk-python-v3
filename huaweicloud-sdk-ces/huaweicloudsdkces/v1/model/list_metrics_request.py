@@ -80,6 +80,7 @@ class ListMetricsRequest:
     def dim_0(self):
         """Gets the dim_0 of this ListMetricsRequest.
 
+        指标的维度，目前最大支持3个维度，从0开始；维度格式为dim.{i}=key,value，最大值为256。 例如：dim.0=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d；各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :return: The dim_0 of this ListMetricsRequest.
         :rtype: str
@@ -90,6 +91,7 @@ class ListMetricsRequest:
     def dim_0(self, dim_0):
         """Sets the dim_0 of this ListMetricsRequest.
 
+        指标的维度，目前最大支持3个维度，从0开始；维度格式为dim.{i}=key,value，最大值为256。 例如：dim.0=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d；各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param dim_0: The dim_0 of this ListMetricsRequest.
         :type: str
@@ -100,6 +102,7 @@ class ListMetricsRequest:
     def dim_1(self):
         """Gets the dim_1 of this ListMetricsRequest.
 
+        指标的维度，目前最大支持3个维度，从0开始；维度格式为dim.{i}=key,value，最大值为256。 例如：dim.1=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d；各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :return: The dim_1 of this ListMetricsRequest.
         :rtype: str
@@ -110,6 +113,7 @@ class ListMetricsRequest:
     def dim_1(self, dim_1):
         """Sets the dim_1 of this ListMetricsRequest.
 
+        指标的维度，目前最大支持3个维度，从0开始；维度格式为dim.{i}=key,value，最大值为256。 例如：dim.1=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d；各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param dim_1: The dim_1 of this ListMetricsRequest.
         :type: str
@@ -120,6 +124,7 @@ class ListMetricsRequest:
     def dim_2(self):
         """Gets the dim_2 of this ListMetricsRequest.
 
+        指标的维度，目前最大支持3个维度，从0开始；维度格式为dim.{i}=key,value，最大值为256。 例如：dim.2=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d；各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :return: The dim_2 of this ListMetricsRequest.
         :rtype: str
@@ -130,6 +135,7 @@ class ListMetricsRequest:
     def dim_2(self, dim_2):
         """Sets the dim_2 of this ListMetricsRequest.
 
+        指标的维度，目前最大支持3个维度，从0开始；维度格式为dim.{i}=key,value，最大值为256。 例如：dim.2=instance_id,6f3c6f91-4b24-4e1b-b7d1-a94ac1cb011d；各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param dim_2: The dim_2 of this ListMetricsRequest.
         :type: str
@@ -140,6 +146,7 @@ class ListMetricsRequest:
     def limit(self):
         """Gets the limit of this ListMetricsRequest.
 
+        取值范围(0,1000]，默认值为1000。  用于限制结果数据条数。
 
         :return: The limit of this ListMetricsRequest.
         :rtype: int
@@ -150,6 +157,7 @@ class ListMetricsRequest:
     def limit(self, limit):
         """Sets the limit of this ListMetricsRequest.
 
+        取值范围(0,1000]，默认值为1000。  用于限制结果数据条数。
 
         :param limit: The limit of this ListMetricsRequest.
         :type: int
@@ -160,6 +168,7 @@ class ListMetricsRequest:
     def metric_name(self):
         """Gets the metric_name of this ListMetricsRequest.
 
+        指标名称，例如弹性云服务器监控指标中的cpu_util；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :return: The metric_name of this ListMetricsRequest.
         :rtype: str
@@ -170,6 +179,7 @@ class ListMetricsRequest:
     def metric_name(self, metric_name):
         """Sets the metric_name of this ListMetricsRequest.
 
+        指标名称，例如弹性云服务器监控指标中的cpu_util；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param metric_name: The metric_name of this ListMetricsRequest.
         :type: str
@@ -180,6 +190,7 @@ class ListMetricsRequest:
     def namespace(self):
         """Gets the namespace of this ListMetricsRequest.
 
+        指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :return: The namespace of this ListMetricsRequest.
         :rtype: str
@@ -190,6 +201,7 @@ class ListMetricsRequest:
     def namespace(self, namespace):
         """Sets the namespace of this ListMetricsRequest.
 
+        指标命名空间，格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param namespace: The namespace of this ListMetricsRequest.
         :type: str
@@ -200,6 +212,7 @@ class ListMetricsRequest:
     def order(self):
         """Gets the order of this ListMetricsRequest.
 
+        用于标识结果排序方法。  取值说明，默认为desc：  asc，升序 desc，降序
 
         :return: The order of this ListMetricsRequest.
         :rtype: str
@@ -210,6 +223,7 @@ class ListMetricsRequest:
     def order(self, order):
         """Sets the order of this ListMetricsRequest.
 
+        用于标识结果排序方法。  取值说明，默认为desc：  asc，升序 desc，降序
 
         :param order: The order of this ListMetricsRequest.
         :type: str
@@ -220,6 +234,7 @@ class ListMetricsRequest:
     def start(self):
         """Gets the start of this ListMetricsRequest.
 
+        分页起始值，格式为：namespace.metric_name.key:value 例如：start=SYS.ECS.cpu_util.instance_id:d9112af5-6913-4f3b-bd0a-3f96711e004d
 
         :return: The start of this ListMetricsRequest.
         :rtype: str
@@ -230,6 +245,7 @@ class ListMetricsRequest:
     def start(self, start):
         """Sets the start of this ListMetricsRequest.
 
+        分页起始值，格式为：namespace.metric_name.key:value 例如：start=SYS.ECS.cpu_util.instance_id:d9112af5-6913-4f3b-bd0a-3f96711e004d
 
         :param start: The start of this ListMetricsRequest.
         :type: str

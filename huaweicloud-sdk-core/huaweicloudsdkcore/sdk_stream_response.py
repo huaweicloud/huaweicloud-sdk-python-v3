@@ -22,7 +22,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 
 class SdkStreamResponse(SdkResponse):
     def __init__(self, response):
-        super().__init__()
+        super(SdkStreamResponse, self).__init__()
         self._stream = response
 
     def consumeDownloadStream(self, fn):

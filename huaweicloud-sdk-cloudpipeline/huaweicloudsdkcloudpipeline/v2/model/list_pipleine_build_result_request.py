@@ -65,6 +65,7 @@ class ListPipleineBuildResultRequest:
     def x_language(self):
         """Gets the x_language of this ListPipleineBuildResultRequest.
 
+        语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :return: The x_language of this ListPipleineBuildResultRequest.
         :rtype: str
@@ -75,6 +76,7 @@ class ListPipleineBuildResultRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListPipleineBuildResultRequest.
 
+        语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this ListPipleineBuildResultRequest.
         :type: str
@@ -85,6 +87,7 @@ class ListPipleineBuildResultRequest:
     def project_id(self):
         """Gets the project_id of this ListPipleineBuildResultRequest.
 
+        项目id
 
         :return: The project_id of this ListPipleineBuildResultRequest.
         :rtype: str
@@ -95,6 +98,7 @@ class ListPipleineBuildResultRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ListPipleineBuildResultRequest.
 
+        项目id
 
         :param project_id: The project_id of this ListPipleineBuildResultRequest.
         :type: str
@@ -105,6 +109,7 @@ class ListPipleineBuildResultRequest:
     def start_date(self):
         """Gets the start_date of this ListPipleineBuildResultRequest.
 
+        起始日期,起始日期和结束日期间隔不超过一个月，查询包含起始日期
 
         :return: The start_date of this ListPipleineBuildResultRequest.
         :rtype: str
@@ -115,6 +120,7 @@ class ListPipleineBuildResultRequest:
     def start_date(self, start_date):
         """Sets the start_date of this ListPipleineBuildResultRequest.
 
+        起始日期,起始日期和结束日期间隔不超过一个月，查询包含起始日期
 
         :param start_date: The start_date of this ListPipleineBuildResultRequest.
         :type: str
@@ -125,6 +131,7 @@ class ListPipleineBuildResultRequest:
     def end_date(self):
         """Gets the end_date of this ListPipleineBuildResultRequest.
 
+        结束日期，起始日期和结束日期间隔不超过一个月，查询包含结束日期
 
         :return: The end_date of this ListPipleineBuildResultRequest.
         :rtype: str
@@ -135,6 +142,7 @@ class ListPipleineBuildResultRequest:
     def end_date(self, end_date):
         """Sets the end_date of this ListPipleineBuildResultRequest.
 
+        结束日期，起始日期和结束日期间隔不超过一个月，查询包含结束日期
 
         :param end_date: The end_date of this ListPipleineBuildResultRequest.
         :type: str
@@ -145,6 +153,7 @@ class ListPipleineBuildResultRequest:
     def offset(self):
         """Gets the offset of this ListPipleineBuildResultRequest.
 
+        偏移量,表示从此偏移量开始查询,offset大于等于0
 
         :return: The offset of this ListPipleineBuildResultRequest.
         :rtype: int
@@ -155,6 +164,7 @@ class ListPipleineBuildResultRequest:
     def offset(self, offset):
         """Sets the offset of this ListPipleineBuildResultRequest.
 
+        偏移量,表示从此偏移量开始查询,offset大于等于0
 
         :param offset: The offset of this ListPipleineBuildResultRequest.
         :type: int
@@ -165,6 +175,7 @@ class ListPipleineBuildResultRequest:
     def limit(self):
         """Gets the limit of this ListPipleineBuildResultRequest.
 
+        每次查询的条目数量
 
         :return: The limit of this ListPipleineBuildResultRequest.
         :rtype: int
@@ -175,6 +186,7 @@ class ListPipleineBuildResultRequest:
     def limit(self, limit):
         """Sets the limit of this ListPipleineBuildResultRequest.
 
+        每次查询的条目数量
 
         :param limit: The limit of this ListPipleineBuildResultRequest.
         :type: int

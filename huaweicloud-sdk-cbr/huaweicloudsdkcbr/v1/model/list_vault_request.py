@@ -95,6 +95,7 @@ class ListVaultRequest:
     def limit(self):
         """Gets the limit of this ListVaultRequest.
 
+        每页显示条目数，正整数
 
         :return: The limit of this ListVaultRequest.
         :rtype: int
@@ -105,6 +106,7 @@ class ListVaultRequest:
     def limit(self, limit):
         """Sets the limit of this ListVaultRequest.
 
+        每页显示条目数，正整数
 
         :param limit: The limit of this ListVaultRequest.
         :type: int
@@ -115,6 +117,7 @@ class ListVaultRequest:
     def name(self):
         """Gets the name of this ListVaultRequest.
 
+        存储库名称
 
         :return: The name of this ListVaultRequest.
         :rtype: str
@@ -125,6 +128,7 @@ class ListVaultRequest:
     def name(self, name):
         """Sets the name of this ListVaultRequest.
 
+        存储库名称
 
         :param name: The name of this ListVaultRequest.
         :type: str
@@ -135,6 +139,7 @@ class ListVaultRequest:
     def offset(self):
         """Gets the offset of this ListVaultRequest.
 
+        偏移值,正整数
 
         :return: The offset of this ListVaultRequest.
         :rtype: int
@@ -145,6 +150,7 @@ class ListVaultRequest:
     def offset(self, offset):
         """Sets the offset of this ListVaultRequest.
 
+        偏移值,正整数
 
         :param offset: The offset of this ListVaultRequest.
         :type: int
@@ -155,6 +161,7 @@ class ListVaultRequest:
     def cloud_type(self):
         """Gets the cloud_type of this ListVaultRequest.
 
+        云类型
 
         :return: The cloud_type of this ListVaultRequest.
         :rtype: str
@@ -165,6 +172,7 @@ class ListVaultRequest:
     def cloud_type(self, cloud_type):
         """Sets the cloud_type of this ListVaultRequest.
 
+        云类型
 
         :param cloud_type: The cloud_type of this ListVaultRequest.
         :type: str
@@ -175,6 +183,7 @@ class ListVaultRequest:
     def protect_type(self):
         """Gets the protect_type of this ListVaultRequest.
 
+        保护类型
 
         :return: The protect_type of this ListVaultRequest.
         :rtype: str
@@ -185,6 +194,7 @@ class ListVaultRequest:
     def protect_type(self, protect_type):
         """Sets the protect_type of this ListVaultRequest.
 
+        保护类型
 
         :param protect_type: The protect_type of this ListVaultRequest.
         :type: str
@@ -195,6 +205,7 @@ class ListVaultRequest:
     def object_type(self):
         """Gets the object_type of this ListVaultRequest.
 
+        资源类型
 
         :return: The object_type of this ListVaultRequest.
         :rtype: str
@@ -205,6 +216,7 @@ class ListVaultRequest:
     def object_type(self, object_type):
         """Sets the object_type of this ListVaultRequest.
 
+        资源类型
 
         :param object_type: The object_type of this ListVaultRequest.
         :type: str
@@ -215,6 +227,7 @@ class ListVaultRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListVaultRequest.
 
+        企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
 
         :return: The enterprise_project_id of this ListVaultRequest.
         :rtype: str
@@ -225,6 +238,7 @@ class ListVaultRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListVaultRequest.
 
+        企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListVaultRequest.
         :type: str
@@ -235,6 +249,7 @@ class ListVaultRequest:
     def id(self):
         """Gets the id of this ListVaultRequest.
 
+        存储库ID
 
         :return: The id of this ListVaultRequest.
         :rtype: str
@@ -245,6 +260,7 @@ class ListVaultRequest:
     def id(self, id):
         """Sets the id of this ListVaultRequest.
 
+        存储库ID
 
         :param id: The id of this ListVaultRequest.
         :type: str
@@ -255,6 +271,7 @@ class ListVaultRequest:
     def policy_id(self):
         """Gets the policy_id of this ListVaultRequest.
 
+        策略ID
 
         :return: The policy_id of this ListVaultRequest.
         :rtype: str
@@ -265,6 +282,7 @@ class ListVaultRequest:
     def policy_id(self, policy_id):
         """Sets the policy_id of this ListVaultRequest.
 
+        策略ID
 
         :param policy_id: The policy_id of this ListVaultRequest.
         :type: str
@@ -275,6 +293,7 @@ class ListVaultRequest:
     def status(self):
         """Gets the status of this ListVaultRequest.
 
+        状态
 
         :return: The status of this ListVaultRequest.
         :rtype: str
@@ -285,6 +304,7 @@ class ListVaultRequest:
     def status(self, status):
         """Sets the status of this ListVaultRequest.
 
+        状态
 
         :param status: The status of this ListVaultRequest.
         :type: str
@@ -295,6 +315,7 @@ class ListVaultRequest:
     def resource_ids(self):
         """Gets the resource_ids of this ListVaultRequest.
 
+        资源id
 
         :return: The resource_ids of this ListVaultRequest.
         :rtype: str
@@ -305,6 +326,7 @@ class ListVaultRequest:
     def resource_ids(self, resource_ids):
         """Sets the resource_ids of this ListVaultRequest.
 
+        资源id
 
         :param resource_ids: The resource_ids of this ListVaultRequest.
         :type: str

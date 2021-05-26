@@ -55,7 +55,7 @@ class ShowPipleineStatusResponse(SdkResponse):
     def __init__(self, pipeline_id=None, pipeline_name=None, executor=None, build_id=None, start_time=None, end_time=None, parameters=None, states=None, elapsed_time=None, status=None, outcome=None, detail_url=None):
         """ShowPipleineStatusResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowPipleineStatusResponse, self).__init__()
 
         self._pipeline_id = None
         self._pipeline_name = None

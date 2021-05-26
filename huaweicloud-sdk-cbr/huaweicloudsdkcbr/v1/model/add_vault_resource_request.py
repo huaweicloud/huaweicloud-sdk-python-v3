@@ -49,6 +49,7 @@ class AddVaultResourceRequest:
     def vault_id(self):
         """Gets the vault_id of this AddVaultResourceRequest.
 
+        存储库ID
 
         :return: The vault_id of this AddVaultResourceRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class AddVaultResourceRequest:
     def vault_id(self, vault_id):
         """Sets the vault_id of this AddVaultResourceRequest.
 
+        存储库ID
 
         :param vault_id: The vault_id of this AddVaultResourceRequest.
         :type: str

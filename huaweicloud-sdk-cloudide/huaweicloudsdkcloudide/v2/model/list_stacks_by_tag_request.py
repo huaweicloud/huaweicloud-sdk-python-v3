@@ -45,6 +45,7 @@ class ListStacksByTagRequest:
     def tags(self):
         """Gets the tags of this ListStacksByTagRequest.
 
+        技术栈标签。默认为空值，查询全部。 目前可取值 Java,Maven,CPP,Vue,ServiceComb,Blockchain,GO, Node.js,DCN,Quantum,JavaScript,Ruby,Python;可查询多个标签
 
         :return: The tags of this ListStacksByTagRequest.
         :rtype: list[str]
@@ -55,6 +56,7 @@ class ListStacksByTagRequest:
     def tags(self, tags):
         """Sets the tags of this ListStacksByTagRequest.
 
+        技术栈标签。默认为空值，查询全部。 目前可取值 Java,Maven,CPP,Vue,ServiceComb,Blockchain,GO, Node.js,DCN,Quantum,JavaScript,Ruby,Python;可查询多个标签
 
         :param tags: The tags of this ListStacksByTagRequest.
         :type: list[str]

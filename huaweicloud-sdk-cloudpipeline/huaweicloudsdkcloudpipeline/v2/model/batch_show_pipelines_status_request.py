@@ -49,6 +49,7 @@ class BatchShowPipelinesStatusRequest:
     def x_language(self):
         """Gets the x_language of this BatchShowPipelinesStatusRequest.
 
+        语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :return: The x_language of this BatchShowPipelinesStatusRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class BatchShowPipelinesStatusRequest:
     def x_language(self, x_language):
         """Sets the x_language of this BatchShowPipelinesStatusRequest.
 
+        语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this BatchShowPipelinesStatusRequest.
         :type: str
@@ -69,6 +71,7 @@ class BatchShowPipelinesStatusRequest:
     def pipeline_ids(self):
         """Gets the pipeline_ids of this BatchShowPipelinesStatusRequest.
 
+        要获取状态的流水线ID，用逗号隔开
 
         :return: The pipeline_ids of this BatchShowPipelinesStatusRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class BatchShowPipelinesStatusRequest:
     def pipeline_ids(self, pipeline_ids):
         """Sets the pipeline_ids of this BatchShowPipelinesStatusRequest.
 
+        要获取状态的流水线ID，用逗号隔开
 
         :param pipeline_ids: The pipeline_ids of this BatchShowPipelinesStatusRequest.
         :type: str

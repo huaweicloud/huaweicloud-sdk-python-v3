@@ -33,7 +33,7 @@ class MigrateVaultResourceResponse(SdkResponse):
     def __init__(self, migrated_resources=None):
         """MigrateVaultResourceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(MigrateVaultResourceResponse, self).__init__()
 
         self._migrated_resources = None
         self.discriminator = None

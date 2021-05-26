@@ -50,6 +50,7 @@ class CreatePipelineByTemplateRequest:
     def x_language(self):
         """Gets the x_language of this CreatePipelineByTemplateRequest.
 
+        语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :return: The x_language of this CreatePipelineByTemplateRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class CreatePipelineByTemplateRequest:
     def x_language(self, x_language):
         """Sets the x_language of this CreatePipelineByTemplateRequest.
 
+        语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this CreatePipelineByTemplateRequest.
         :type: str

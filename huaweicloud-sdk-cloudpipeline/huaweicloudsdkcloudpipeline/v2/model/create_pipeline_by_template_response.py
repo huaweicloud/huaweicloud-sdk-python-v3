@@ -33,7 +33,7 @@ class CreatePipelineByTemplateResponse(SdkResponse):
     def __init__(self, task_id=None):
         """CreatePipelineByTemplateResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreatePipelineByTemplateResponse, self).__init__()
 
         self._task_id = None
         self.discriminator = None

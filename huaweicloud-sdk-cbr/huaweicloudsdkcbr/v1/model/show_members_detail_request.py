@@ -84,6 +84,7 @@ class ShowMembersDetailRequest:
     def backup_id(self):
         """Gets the backup_id of this ShowMembersDetailRequest.
 
+        备份id
 
         :return: The backup_id of this ShowMembersDetailRequest.
         :rtype: str
@@ -94,6 +95,7 @@ class ShowMembersDetailRequest:
     def backup_id(self, backup_id):
         """Sets the backup_id of this ShowMembersDetailRequest.
 
+        备份id
 
         :param backup_id: The backup_id of this ShowMembersDetailRequest.
         :type: str
@@ -104,6 +106,7 @@ class ShowMembersDetailRequest:
     def dest_project_id(self):
         """Gets the dest_project_id of this ShowMembersDetailRequest.
 
+        接受备份共享的项目id
 
         :return: The dest_project_id of this ShowMembersDetailRequest.
         :rtype: str
@@ -114,6 +117,7 @@ class ShowMembersDetailRequest:
     def dest_project_id(self, dest_project_id):
         """Sets the dest_project_id of this ShowMembersDetailRequest.
 
+        接受备份共享的项目id
 
         :param dest_project_id: The dest_project_id of this ShowMembersDetailRequest.
         :type: str
@@ -124,6 +128,7 @@ class ShowMembersDetailRequest:
     def image_id(self):
         """Gets the image_id of this ShowMembersDetailRequest.
 
+        接受的共享备份副本注册的镜像id
 
         :return: The image_id of this ShowMembersDetailRequest.
         :rtype: str
@@ -134,6 +139,7 @@ class ShowMembersDetailRequest:
     def image_id(self, image_id):
         """Sets the image_id of this ShowMembersDetailRequest.
 
+        接受的共享备份副本注册的镜像id
 
         :param image_id: The image_id of this ShowMembersDetailRequest.
         :type: str
@@ -144,6 +150,7 @@ class ShowMembersDetailRequest:
     def status(self):
         """Gets the status of this ShowMembersDetailRequest.
 
+        备份共享状态
 
         :return: The status of this ShowMembersDetailRequest.
         :rtype: str
@@ -154,6 +161,7 @@ class ShowMembersDetailRequest:
     def status(self, status):
         """Sets the status of this ShowMembersDetailRequest.
 
+        备份共享状态
 
         :param status: The status of this ShowMembersDetailRequest.
         :type: str
@@ -164,6 +172,7 @@ class ShowMembersDetailRequest:
     def vault_id(self):
         """Gets the vault_id of this ShowMembersDetailRequest.
 
+        目标端接受共享备份的存储库id，仅支持uuid
 
         :return: The vault_id of this ShowMembersDetailRequest.
         :rtype: str
@@ -174,6 +183,7 @@ class ShowMembersDetailRequest:
     def vault_id(self, vault_id):
         """Sets the vault_id of this ShowMembersDetailRequest.
 
+        目标端接受共享备份的存储库id，仅支持uuid
 
         :param vault_id: The vault_id of this ShowMembersDetailRequest.
         :type: str
@@ -184,6 +194,7 @@ class ShowMembersDetailRequest:
     def limit(self):
         """Gets the limit of this ShowMembersDetailRequest.
 
+        每页显示的条目数量，正整数
 
         :return: The limit of this ShowMembersDetailRequest.
         :rtype: int
@@ -194,6 +205,7 @@ class ShowMembersDetailRequest:
     def limit(self, limit):
         """Sets the limit of this ShowMembersDetailRequest.
 
+        每页显示的条目数量，正整数
 
         :param limit: The limit of this ShowMembersDetailRequest.
         :type: int
@@ -204,6 +216,7 @@ class ShowMembersDetailRequest:
     def marker(self):
         """Gets the marker of this ShowMembersDetailRequest.
 
+        上一次查询最后一条的id，仅支持uuid
 
         :return: The marker of this ShowMembersDetailRequest.
         :rtype: str
@@ -214,6 +227,7 @@ class ShowMembersDetailRequest:
     def marker(self, marker):
         """Sets the marker of this ShowMembersDetailRequest.
 
+        上一次查询最后一条的id，仅支持uuid
 
         :param marker: The marker of this ShowMembersDetailRequest.
         :type: str
@@ -224,6 +238,7 @@ class ShowMembersDetailRequest:
     def offset(self):
         """Gets the offset of this ShowMembersDetailRequest.
 
+        偏移值，正整数
 
         :return: The offset of this ShowMembersDetailRequest.
         :rtype: int
@@ -234,6 +249,7 @@ class ShowMembersDetailRequest:
     def offset(self, offset):
         """Sets the offset of this ShowMembersDetailRequest.
 
+        偏移值，正整数
 
         :param offset: The offset of this ShowMembersDetailRequest.
         :type: int
@@ -244,6 +260,7 @@ class ShowMembersDetailRequest:
     def sort(self):
         """Gets the sort of this ShowMembersDetailRequest.
 
+        sort的内容为一组由逗号分隔的属性及可选排序方向组成，形如<key1>[:<direction>],<key2>[:<direction>],其中direction的取值为asc (升序) 或 desc (降序),如没有传入direction参数，默认为降序，sort内容的长度限制为255个字符。
 
         :return: The sort of this ShowMembersDetailRequest.
         :rtype: str
@@ -254,6 +271,7 @@ class ShowMembersDetailRequest:
     def sort(self, sort):
         """Sets the sort of this ShowMembersDetailRequest.
 
+        sort的内容为一组由逗号分隔的属性及可选排序方向组成，形如<key1>[:<direction>],<key2>[:<direction>],其中direction的取值为asc (升序) 或 desc (降序),如没有传入direction参数，默认为降序，sort内容的长度限制为255个字符。
 
         :param sort: The sort of this ShowMembersDetailRequest.
         :type: str

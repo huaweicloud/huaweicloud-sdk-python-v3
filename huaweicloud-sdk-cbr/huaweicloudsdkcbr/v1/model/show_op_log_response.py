@@ -33,7 +33,7 @@ class ShowOpLogResponse(SdkResponse):
     def __init__(self, operation_log=None):
         """ShowOpLogResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowOpLogResponse, self).__init__()
 
         self._operation_log = None
         self.discriminator = None

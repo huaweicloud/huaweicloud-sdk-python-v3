@@ -31,7 +31,7 @@ class CreateVaultTagsResponse(SdkResponse):
     def __init__(self):
         """CreateVaultTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateVaultTagsResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

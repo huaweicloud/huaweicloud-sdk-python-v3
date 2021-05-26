@@ -35,7 +35,7 @@ class ShowPriceResponse(SdkResponse):
     def __init__(self, prices=None, status=None):
         """ShowPriceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowPriceResponse, self).__init__()
 
         self._prices = None
         self._status = None

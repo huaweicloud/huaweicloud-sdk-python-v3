@@ -48,6 +48,7 @@ class ShowProtectableRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowProtectableRequest.
 
+        资源ID
 
         :return: The instance_id of this ShowProtectableRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowProtectableRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowProtectableRequest.
 
+        资源ID
 
         :param instance_id: The instance_id of this ShowProtectableRequest.
         :type: str
@@ -68,6 +70,7 @@ class ShowProtectableRequest:
     def protectable_type(self):
         """Gets the protectable_type of this ShowProtectableRequest.
 
+        可保护性类型
 
         :return: The protectable_type of this ShowProtectableRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowProtectableRequest:
     def protectable_type(self, protectable_type):
         """Sets the protectable_type of this ShowProtectableRequest.
 
+        可保护性类型
 
         :param protectable_type: The protectable_type of this ShowProtectableRequest.
         :type: str

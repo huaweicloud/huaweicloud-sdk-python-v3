@@ -45,7 +45,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def __init__(self, group_name=None, group_id=None, resources=None, status=None, create_time=None, meta_data=None, enterprise_project_id=None):
         """ShowResourceGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowResourceGroupResponse, self).__init__()
 
         self._group_name = None
         self._group_id = None

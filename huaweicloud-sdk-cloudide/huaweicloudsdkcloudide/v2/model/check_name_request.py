@@ -44,6 +44,7 @@ class CheckNameRequest:
     def display_name(self):
         """Gets the display_name of this CheckNameRequest.
 
+        实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 
         :return: The display_name of this CheckNameRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class CheckNameRequest:
     def display_name(self, display_name):
         """Sets the display_name of this CheckNameRequest.
 
+        实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 
         :param display_name: The display_name of this CheckNameRequest.
         :type: str

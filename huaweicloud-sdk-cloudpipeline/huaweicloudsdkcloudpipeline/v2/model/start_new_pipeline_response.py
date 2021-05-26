@@ -35,7 +35,7 @@ class StartNewPipelineResponse(SdkResponse):
     def __init__(self, pipeline_id=None, build_id=None):
         """StartNewPipelineResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(StartNewPipelineResponse, self).__init__()
 
         self._pipeline_id = None
         self._build_id = None

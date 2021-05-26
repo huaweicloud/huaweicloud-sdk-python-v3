@@ -41,7 +41,7 @@ class CreateClusterResponse(SdkResponse):
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
         """CreateClusterResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateClusterResponse, self).__init__()
 
         self._kind = None
         self._api_version = None

@@ -49,6 +49,7 @@ class RestoreBackupRequest:
     def backup_id(self):
         """Gets the backup_id of this RestoreBackupRequest.
 
+        备份id
 
         :return: The backup_id of this RestoreBackupRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class RestoreBackupRequest:
     def backup_id(self, backup_id):
         """Sets the backup_id of this RestoreBackupRequest.
 
+        备份id
 
         :param backup_id: The backup_id of this RestoreBackupRequest.
         :type: str

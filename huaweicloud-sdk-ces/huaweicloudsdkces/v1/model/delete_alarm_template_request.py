@@ -44,6 +44,7 @@ class DeleteAlarmTemplateRequest:
     def template_id(self):
         """Gets the template_id of this DeleteAlarmTemplateRequest.
 
+        需要删除的自定义告警模板ID。
 
         :return: The template_id of this DeleteAlarmTemplateRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteAlarmTemplateRequest:
     def template_id(self, template_id):
         """Sets the template_id of this DeleteAlarmTemplateRequest.
 
+        需要删除的自定义告警模板ID。
 
         :param template_id: The template_id of this DeleteAlarmTemplateRequest.
         :type: str

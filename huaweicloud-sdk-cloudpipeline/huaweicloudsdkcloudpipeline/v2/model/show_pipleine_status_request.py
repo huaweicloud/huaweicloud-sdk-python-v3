@@ -54,6 +54,7 @@ class ShowPipleineStatusRequest:
     def x_language(self):
         """Gets the x_language of this ShowPipleineStatusRequest.
 
+        语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :return: The x_language of this ShowPipleineStatusRequest.
         :rtype: str
@@ -64,6 +65,7 @@ class ShowPipleineStatusRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowPipleineStatusRequest.
 
+        语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this ShowPipleineStatusRequest.
         :type: str
@@ -74,6 +76,7 @@ class ShowPipleineStatusRequest:
     def pipeline_id(self):
         """Gets the pipeline_id of this ShowPipleineStatusRequest.
 
+        要获取状态的流水线ID
 
         :return: The pipeline_id of this ShowPipleineStatusRequest.
         :rtype: str
@@ -84,6 +87,7 @@ class ShowPipleineStatusRequest:
     def pipeline_id(self, pipeline_id):
         """Sets the pipeline_id of this ShowPipleineStatusRequest.
 
+        要获取状态的流水线ID
 
         :param pipeline_id: The pipeline_id of this ShowPipleineStatusRequest.
         :type: str
@@ -94,6 +98,7 @@ class ShowPipleineStatusRequest:
     def build_id(self):
         """Gets the build_id of this ShowPipleineStatusRequest.
 
+        要获取状态的执行ID
 
         :return: The build_id of this ShowPipleineStatusRequest.
         :rtype: str
@@ -104,6 +109,7 @@ class ShowPipleineStatusRequest:
     def build_id(self, build_id):
         """Sets the build_id of this ShowPipleineStatusRequest.
 
+        要获取状态的执行ID
 
         :param build_id: The build_id of this ShowPipleineStatusRequest.
         :type: str

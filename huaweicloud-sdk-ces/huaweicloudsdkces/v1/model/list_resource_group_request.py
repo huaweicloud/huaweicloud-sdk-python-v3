@@ -65,6 +65,7 @@ class ListResourceGroupRequest:
     def group_name(self):
         """Gets the group_name of this ListResourceGroupRequest.
 
+        资源分组的名称；长度为1-128，只能包含0-9/a-z/A-Z/_/-或汉字；如：ResourceGroup-Test01。
 
         :return: The group_name of this ListResourceGroupRequest.
         :rtype: str
@@ -75,6 +76,7 @@ class ListResourceGroupRequest:
     def group_name(self, group_name):
         """Sets the group_name of this ListResourceGroupRequest.
 
+        资源分组的名称；长度为1-128，只能包含0-9/a-z/A-Z/_/-或汉字；如：ResourceGroup-Test01。
 
         :param group_name: The group_name of this ListResourceGroupRequest.
         :type: str
@@ -85,6 +87,7 @@ class ListResourceGroupRequest:
     def group_id(self):
         """Gets the group_id of this ListResourceGroupRequest.
 
+        资源分组的ID，长度为1-128，只能包含0-9/a-z/A-Z；如：rg16063743652226ew93e64p。
 
         :return: The group_id of this ListResourceGroupRequest.
         :rtype: str
@@ -95,6 +98,7 @@ class ListResourceGroupRequest:
     def group_id(self, group_id):
         """Sets the group_id of this ListResourceGroupRequest.
 
+        资源分组的ID，长度为1-128，只能包含0-9/a-z/A-Z；如：rg16063743652226ew93e64p。
 
         :param group_id: The group_id of this ListResourceGroupRequest.
         :type: str
@@ -105,6 +109,7 @@ class ListResourceGroupRequest:
     def status(self):
         """Gets the status of this ListResourceGroupRequest.
 
+        资源分组健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，
 
         :return: The status of this ListResourceGroupRequest.
         :rtype: str
@@ -115,6 +120,7 @@ class ListResourceGroupRequest:
     def status(self, status):
         """Sets the status of this ListResourceGroupRequest.
 
+        资源分组健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，
 
         :param status: The status of this ListResourceGroupRequest.
         :type: str
@@ -125,6 +131,7 @@ class ListResourceGroupRequest:
     def start(self):
         """Gets the start of this ListResourceGroupRequest.
 
+        分页起始值，类型为integer，默认值为0。
 
         :return: The start of this ListResourceGroupRequest.
         :rtype: int
@@ -135,6 +142,7 @@ class ListResourceGroupRequest:
     def start(self, start):
         """Sets the start of this ListResourceGroupRequest.
 
+        分页起始值，类型为integer，默认值为0。
 
         :param start: The start of this ListResourceGroupRequest.
         :type: int
@@ -145,6 +153,7 @@ class ListResourceGroupRequest:
     def limit(self):
         """Gets the limit of this ListResourceGroupRequest.
 
+        单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
 
         :return: The limit of this ListResourceGroupRequest.
         :rtype: int
@@ -155,6 +164,7 @@ class ListResourceGroupRequest:
     def limit(self, limit):
         """Sets the limit of this ListResourceGroupRequest.
 
+        单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
 
         :param limit: The limit of this ListResourceGroupRequest.
         :type: int

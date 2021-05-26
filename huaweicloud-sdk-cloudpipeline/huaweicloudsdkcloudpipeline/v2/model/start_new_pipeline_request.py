@@ -54,6 +54,7 @@ class StartNewPipelineRequest:
     def x_language(self):
         """Gets the x_language of this StartNewPipelineRequest.
 
+        语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :return: The x_language of this StartNewPipelineRequest.
         :rtype: str
@@ -64,6 +65,7 @@ class StartNewPipelineRequest:
     def x_language(self, x_language):
         """Sets the x_language of this StartNewPipelineRequest.
 
+        语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this StartNewPipelineRequest.
         :type: str
@@ -74,6 +76,7 @@ class StartNewPipelineRequest:
     def pipeline_id(self):
         """Gets the pipeline_id of this StartNewPipelineRequest.
 
+        流水线ID
 
         :return: The pipeline_id of this StartNewPipelineRequest.
         :rtype: str
@@ -84,6 +87,7 @@ class StartNewPipelineRequest:
     def pipeline_id(self, pipeline_id):
         """Sets the pipeline_id of this StartNewPipelineRequest.
 
+        流水线ID
 
         :param pipeline_id: The pipeline_id of this StartNewPipelineRequest.
         :type: str

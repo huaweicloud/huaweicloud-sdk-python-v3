@@ -35,7 +35,7 @@ class ListAlarmsResponse(SdkResponse):
     def __init__(self, metric_alarms=None, meta_data=None):
         """ListAlarmsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListAlarmsResponse, self).__init__()
 
         self._metric_alarms = None
         self._meta_data = None

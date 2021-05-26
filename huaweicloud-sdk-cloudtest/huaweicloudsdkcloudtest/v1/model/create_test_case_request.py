@@ -49,6 +49,7 @@ class CreateTestCaseRequest:
     def project_id(self):
         """Gets the project_id of this CreateTestCaseRequest.
 
+        项目唯一标识，固定长度32位字符
 
         :return: The project_id of this CreateTestCaseRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateTestCaseRequest:
     def project_id(self, project_id):
         """Sets the project_id of this CreateTestCaseRequest.
 
+        项目唯一标识，固定长度32位字符
 
         :param project_id: The project_id of this CreateTestCaseRequest.
         :type: str

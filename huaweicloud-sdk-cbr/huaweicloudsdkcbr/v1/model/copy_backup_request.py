@@ -49,6 +49,7 @@ class CopyBackupRequest:
     def backup_id(self):
         """Gets the backup_id of this CopyBackupRequest.
 
+        复制的备份ID
 
         :return: The backup_id of this CopyBackupRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CopyBackupRequest:
     def backup_id(self, backup_id):
         """Sets the backup_id of this CopyBackupRequest.
 
+        复制的备份ID
 
         :param backup_id: The backup_id of this CopyBackupRequest.
         :type: str

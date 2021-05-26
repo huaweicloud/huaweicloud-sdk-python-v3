@@ -49,6 +49,7 @@ class AddMemberRequest:
     def backup_id(self):
         """Gets the backup_id of this AddMemberRequest.
 
+        备份副本id
 
         :return: The backup_id of this AddMemberRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class AddMemberRequest:
     def backup_id(self, backup_id):
         """Sets the backup_id of this AddMemberRequest.
 
+        备份副本id
 
         :param backup_id: The backup_id of this AddMemberRequest.
         :type: str

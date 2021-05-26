@@ -62,6 +62,7 @@ class ListMemberJobRecordsRequest:
     def job_id(self):
         """Gets the job_id of this ListMemberJobRecordsRequest.
 
+        作业ID
 
         :return: The job_id of this ListMemberJobRecordsRequest.
         :rtype: str
@@ -72,6 +73,7 @@ class ListMemberJobRecordsRequest:
     def job_id(self, job_id):
         """Sets the job_id of this ListMemberJobRecordsRequest.
 
+        作业ID
 
         :param job_id: The job_id of this ListMemberJobRecordsRequest.
         :type: str
@@ -82,6 +84,7 @@ class ListMemberJobRecordsRequest:
     def exercise_id(self):
         """Gets the exercise_id of this ListMemberJobRecordsRequest.
 
+        习题ID
 
         :return: The exercise_id of this ListMemberJobRecordsRequest.
         :rtype: str
@@ -92,6 +95,7 @@ class ListMemberJobRecordsRequest:
     def exercise_id(self, exercise_id):
         """Sets the exercise_id of this ListMemberJobRecordsRequest.
 
+        习题ID
 
         :param exercise_id: The exercise_id of this ListMemberJobRecordsRequest.
         :type: str
@@ -102,6 +106,7 @@ class ListMemberJobRecordsRequest:
     def member_id(self):
         """Gets the member_id of this ListMemberJobRecordsRequest.
 
+        用户ID
 
         :return: The member_id of this ListMemberJobRecordsRequest.
         :rtype: str
@@ -112,6 +117,7 @@ class ListMemberJobRecordsRequest:
     def member_id(self, member_id):
         """Sets the member_id of this ListMemberJobRecordsRequest.
 
+        用户ID
 
         :param member_id: The member_id of this ListMemberJobRecordsRequest.
         :type: str
@@ -122,6 +128,7 @@ class ListMemberJobRecordsRequest:
     def offset(self):
         """Gets the offset of this ListMemberJobRecordsRequest.
 
+        信息记录的起始编号
 
         :return: The offset of this ListMemberJobRecordsRequest.
         :rtype: int
@@ -132,6 +139,7 @@ class ListMemberJobRecordsRequest:
     def offset(self, offset):
         """Sets the offset of this ListMemberJobRecordsRequest.
 
+        信息记录的起始编号
 
         :param offset: The offset of this ListMemberJobRecordsRequest.
         :type: int
@@ -142,6 +150,7 @@ class ListMemberJobRecordsRequest:
     def limit(self):
         """Gets the limit of this ListMemberJobRecordsRequest.
 
+        每页包含的信息记录数
 
         :return: The limit of this ListMemberJobRecordsRequest.
         :rtype: int
@@ -152,6 +161,7 @@ class ListMemberJobRecordsRequest:
     def limit(self, limit):
         """Sets the limit of this ListMemberJobRecordsRequest.
 
+        每页包含的信息记录数
 
         :param limit: The limit of this ListMemberJobRecordsRequest.
         :type: int

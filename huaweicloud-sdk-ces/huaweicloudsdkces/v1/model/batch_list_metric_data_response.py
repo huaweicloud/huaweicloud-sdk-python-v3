@@ -33,7 +33,7 @@ class BatchListMetricDataResponse(SdkResponse):
     def __init__(self, metrics=None):
         """BatchListMetricDataResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchListMetricDataResponse, self).__init__()
 
         self._metrics = None
         self.discriminator = None

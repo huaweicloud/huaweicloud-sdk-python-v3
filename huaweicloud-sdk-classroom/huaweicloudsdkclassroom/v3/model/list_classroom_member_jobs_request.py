@@ -58,6 +58,7 @@ class ListClassroomMemberJobsRequest:
     def classroom_id(self):
         """Gets the classroom_id of this ListClassroomMemberJobsRequest.
 
+        课堂ID
 
         :return: The classroom_id of this ListClassroomMemberJobsRequest.
         :rtype: str
@@ -68,6 +69,7 @@ class ListClassroomMemberJobsRequest:
     def classroom_id(self, classroom_id):
         """Sets the classroom_id of this ListClassroomMemberJobsRequest.
 
+        课堂ID
 
         :param classroom_id: The classroom_id of this ListClassroomMemberJobsRequest.
         :type: str
@@ -78,6 +80,7 @@ class ListClassroomMemberJobsRequest:
     def member_id(self):
         """Gets the member_id of this ListClassroomMemberJobsRequest.
 
+        用户ID
 
         :return: The member_id of this ListClassroomMemberJobsRequest.
         :rtype: str
@@ -88,6 +91,7 @@ class ListClassroomMemberJobsRequest:
     def member_id(self, member_id):
         """Sets the member_id of this ListClassroomMemberJobsRequest.
 
+        用户ID
 
         :param member_id: The member_id of this ListClassroomMemberJobsRequest.
         :type: str
@@ -98,6 +102,7 @@ class ListClassroomMemberJobsRequest:
     def offset(self):
         """Gets the offset of this ListClassroomMemberJobsRequest.
 
+        信息记录的起始编号
 
         :return: The offset of this ListClassroomMemberJobsRequest.
         :rtype: int
@@ -108,6 +113,7 @@ class ListClassroomMemberJobsRequest:
     def offset(self, offset):
         """Sets the offset of this ListClassroomMemberJobsRequest.
 
+        信息记录的起始编号
 
         :param offset: The offset of this ListClassroomMemberJobsRequest.
         :type: int
@@ -118,6 +124,7 @@ class ListClassroomMemberJobsRequest:
     def limit(self):
         """Gets the limit of this ListClassroomMemberJobsRequest.
 
+        每页包含的信息记录数
 
         :return: The limit of this ListClassroomMemberJobsRequest.
         :rtype: int
@@ -128,6 +135,7 @@ class ListClassroomMemberJobsRequest:
     def limit(self, limit):
         """Sets the limit of this ListClassroomMemberJobsRequest.
 
+        每页包含的信息记录数
 
         :param limit: The limit of this ListClassroomMemberJobsRequest.
         :type: int

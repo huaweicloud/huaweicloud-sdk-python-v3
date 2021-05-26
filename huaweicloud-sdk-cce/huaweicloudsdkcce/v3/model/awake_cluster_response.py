@@ -31,7 +31,7 @@ class AwakeClusterResponse(SdkResponse):
     def __init__(self):
         """AwakeClusterResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AwakeClusterResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

@@ -69,6 +69,7 @@ class ShowResourceGroupRequest:
     def group_id(self):
         """Gets the group_id of this ShowResourceGroupRequest.
 
+        资源分组ID。
 
         :return: The group_id of this ShowResourceGroupRequest.
         :rtype: str
@@ -79,6 +80,7 @@ class ShowResourceGroupRequest:
     def group_id(self, group_id):
         """Sets the group_id of this ShowResourceGroupRequest.
 
+        资源分组ID。
 
         :param group_id: The group_id of this ShowResourceGroupRequest.
         :type: str
@@ -89,6 +91,7 @@ class ShowResourceGroupRequest:
     def status(self):
         """Gets the status of this ShowResourceGroupRequest.
 
+        资源健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，
 
         :return: The status of this ShowResourceGroupRequest.
         :rtype: str
@@ -99,6 +102,7 @@ class ShowResourceGroupRequest:
     def status(self, status):
         """Sets the status of this ShowResourceGroupRequest.
 
+        资源健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，
 
         :param status: The status of this ShowResourceGroupRequest.
         :type: str
@@ -109,6 +113,7 @@ class ShowResourceGroupRequest:
     def namespace(self):
         """Gets the namespace of this ShowResourceGroupRequest.
 
+        资源类型，即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :return: The namespace of this ShowResourceGroupRequest.
         :rtype: str
@@ -119,6 +124,7 @@ class ShowResourceGroupRequest:
     def namespace(self, namespace):
         """Sets the namespace of this ShowResourceGroupRequest.
 
+        资源类型，即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param namespace: The namespace of this ShowResourceGroupRequest.
         :type: str
@@ -129,6 +135,7 @@ class ShowResourceGroupRequest:
     def dname(self):
         """Gets the dname of this ShowResourceGroupRequest.
 
+        资源维度，如：弹性云服务器，则维度为instance_id，各资源的监控维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :return: The dname of this ShowResourceGroupRequest.
         :rtype: str
@@ -139,6 +146,7 @@ class ShowResourceGroupRequest:
     def dname(self, dname):
         """Sets the dname of this ShowResourceGroupRequest.
 
+        资源维度，如：弹性云服务器，则维度为instance_id，各资源的监控维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
         :param dname: The dname of this ShowResourceGroupRequest.
         :type: str
@@ -149,6 +157,7 @@ class ShowResourceGroupRequest:
     def start(self):
         """Gets the start of this ShowResourceGroupRequest.
 
+        分页起始值，类型为integer，默认值为0。
 
         :return: The start of this ShowResourceGroupRequest.
         :rtype: str
@@ -159,6 +168,7 @@ class ShowResourceGroupRequest:
     def start(self, start):
         """Sets the start of this ShowResourceGroupRequest.
 
+        分页起始值，类型为integer，默认值为0。
 
         :param start: The start of this ShowResourceGroupRequest.
         :type: str
@@ -169,6 +179,7 @@ class ShowResourceGroupRequest:
     def limit(self):
         """Gets the limit of this ShowResourceGroupRequest.
 
+        单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
 
         :return: The limit of this ShowResourceGroupRequest.
         :rtype: str
@@ -179,6 +190,7 @@ class ShowResourceGroupRequest:
     def limit(self, limit):
         """Sets the limit of this ShowResourceGroupRequest.
 
+        单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
 
         :param limit: The limit of this ShowResourceGroupRequest.
         :type: str

@@ -33,7 +33,7 @@ class ShowPolicyResponse(SdkResponse):
     def __init__(self, policy=None):
         """ShowPolicyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowPolicyResponse, self).__init__()
 
         self._policy = None
         self.discriminator = None

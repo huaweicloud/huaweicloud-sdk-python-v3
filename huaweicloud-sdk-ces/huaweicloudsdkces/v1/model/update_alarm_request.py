@@ -49,6 +49,7 @@ class UpdateAlarmRequest:
     def alarm_id(self):
         """Gets the alarm_id of this UpdateAlarmRequest.
 
+        告警规则的ID。
 
         :return: The alarm_id of this UpdateAlarmRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateAlarmRequest:
     def alarm_id(self, alarm_id):
         """Sets the alarm_id of this UpdateAlarmRequest.
 
+        告警规则的ID。
 
         :param alarm_id: The alarm_id of this UpdateAlarmRequest.
         :type: str

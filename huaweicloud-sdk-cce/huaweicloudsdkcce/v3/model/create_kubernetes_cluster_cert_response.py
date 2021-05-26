@@ -45,7 +45,7 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
     def __init__(self, kind=None, api_version=None, preferences=None, clusters=None, users=None, contexts=None, current_context=None):
         """CreateKubernetesClusterCertResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateKubernetesClusterCertResponse, self).__init__()
 
         self._kind = None
         self._api_version = None

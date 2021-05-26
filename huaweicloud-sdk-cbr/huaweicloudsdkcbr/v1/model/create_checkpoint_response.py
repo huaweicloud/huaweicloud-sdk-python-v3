@@ -33,7 +33,7 @@ class CreateCheckpointResponse(SdkResponse):
     def __init__(self, checkpoint=None):
         """CreateCheckpointResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateCheckpointResponse, self).__init__()
 
         self._checkpoint = None
         self.discriminator = None

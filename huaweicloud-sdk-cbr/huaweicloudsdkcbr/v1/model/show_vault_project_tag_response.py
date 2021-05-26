@@ -33,7 +33,7 @@ class ShowVaultProjectTagResponse(SdkResponse):
     def __init__(self, tags=None):
         """ShowVaultProjectTagResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowVaultProjectTagResponse, self).__init__()
 
         self._tags = None
         self.discriminator = None

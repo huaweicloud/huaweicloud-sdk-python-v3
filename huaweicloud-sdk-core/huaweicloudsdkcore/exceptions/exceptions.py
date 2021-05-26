@@ -223,7 +223,7 @@ class RetryOutageException(RequestTimeoutException):
         return "RetryOutageException - %s" % self.err_message
 
 
-class SdkError:
+class SdkError(object):
     def __init__(self, request_id=None, error_code=None, error_msg=None):
         self.error_msg = error_msg
         self.error_code = error_code

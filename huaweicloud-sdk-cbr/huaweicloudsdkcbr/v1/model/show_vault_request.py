@@ -44,6 +44,7 @@ class ShowVaultRequest:
     def vault_id(self):
         """Gets the vault_id of this ShowVaultRequest.
 
+        存储库ID
 
         :return: The vault_id of this ShowVaultRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowVaultRequest:
     def vault_id(self, vault_id):
         """Sets the vault_id of this ShowVaultRequest.
 
+        存储库ID
 
         :param vault_id: The vault_id of this ShowVaultRequest.
         :type: str

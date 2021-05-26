@@ -62,6 +62,7 @@ class ShowJobExercisesRequest:
     def job_id(self):
         """Gets the job_id of this ShowJobExercisesRequest.
 
+        作业ID。
 
         :return: The job_id of this ShowJobExercisesRequest.
         :rtype: str
@@ -72,6 +73,7 @@ class ShowJobExercisesRequest:
     def job_id(self, job_id):
         """Sets the job_id of this ShowJobExercisesRequest.
 
+        作业ID。
 
         :param job_id: The job_id of this ShowJobExercisesRequest.
         :type: str
@@ -82,6 +84,7 @@ class ShowJobExercisesRequest:
     def source_from(self):
         """Gets the source_from of this ShowJobExercisesRequest.
 
+        作业来源于课堂或课程。 取值范围： classroom:课堂作业 course:课程作业
 
         :return: The source_from of this ShowJobExercisesRequest.
         :rtype: str
@@ -92,6 +95,7 @@ class ShowJobExercisesRequest:
     def source_from(self, source_from):
         """Sets the source_from of this ShowJobExercisesRequest.
 
+        作业来源于课堂或课程。 取值范围： classroom:课堂作业 course:课程作业
 
         :param source_from: The source_from of this ShowJobExercisesRequest.
         :type: str
@@ -102,6 +106,7 @@ class ShowJobExercisesRequest:
     def source_id(self):
         """Gets the source_id of this ShowJobExercisesRequest.
 
+        课堂ID或者课程ID。
 
         :return: The source_id of this ShowJobExercisesRequest.
         :rtype: str
@@ -112,6 +117,7 @@ class ShowJobExercisesRequest:
     def source_id(self, source_id):
         """Sets the source_id of this ShowJobExercisesRequest.
 
+        课堂ID或者课程ID。
 
         :param source_id: The source_id of this ShowJobExercisesRequest.
         :type: str
@@ -122,6 +128,7 @@ class ShowJobExercisesRequest:
     def offset(self):
         """Gets the offset of this ShowJobExercisesRequest.
 
+        信息记录的起始编号
 
         :return: The offset of this ShowJobExercisesRequest.
         :rtype: int
@@ -132,6 +139,7 @@ class ShowJobExercisesRequest:
     def offset(self, offset):
         """Sets the offset of this ShowJobExercisesRequest.
 
+        信息记录的起始编号
 
         :param offset: The offset of this ShowJobExercisesRequest.
         :type: int
@@ -142,6 +150,7 @@ class ShowJobExercisesRequest:
     def limit(self):
         """Gets the limit of this ShowJobExercisesRequest.
 
+        每页包含的信息记录数
 
         :return: The limit of this ShowJobExercisesRequest.
         :rtype: int
@@ -152,6 +161,7 @@ class ShowJobExercisesRequest:
     def limit(self, limit):
         """Sets the limit of this ShowJobExercisesRequest.
 
+        每页包含的信息记录数
 
         :param limit: The limit of this ShowJobExercisesRequest.
         :type: int

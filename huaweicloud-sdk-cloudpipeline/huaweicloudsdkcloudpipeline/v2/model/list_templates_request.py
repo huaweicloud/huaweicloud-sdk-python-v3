@@ -78,6 +78,7 @@ class ListTemplatesRequest:
     def x_language(self):
         """Gets the x_language of this ListTemplatesRequest.
 
+        语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :return: The x_language of this ListTemplatesRequest.
         :rtype: str
@@ -88,6 +89,7 @@ class ListTemplatesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListTemplatesRequest.
 
+        语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this ListTemplatesRequest.
         :type: str
@@ -98,6 +100,7 @@ class ListTemplatesRequest:
     def template_type(self):
         """Gets the template_type of this ListTemplatesRequest.
 
+        模板类型
 
         :return: The template_type of this ListTemplatesRequest.
         :rtype: str
@@ -108,6 +111,7 @@ class ListTemplatesRequest:
     def template_type(self, template_type):
         """Sets the template_type of this ListTemplatesRequest.
 
+        模板类型
 
         :param template_type: The template_type of this ListTemplatesRequest.
         :type: str
@@ -118,6 +122,7 @@ class ListTemplatesRequest:
     def is_build_in(self):
         """Gets the is_build_in of this ListTemplatesRequest.
 
+        是否内置模板
 
         :return: The is_build_in of this ListTemplatesRequest.
         :rtype: str
@@ -128,6 +133,7 @@ class ListTemplatesRequest:
     def is_build_in(self, is_build_in):
         """Sets the is_build_in of this ListTemplatesRequest.
 
+        是否内置模板
 
         :param is_build_in: The is_build_in of this ListTemplatesRequest.
         :type: str
@@ -138,6 +144,7 @@ class ListTemplatesRequest:
     def offset(self):
         """Gets the offset of this ListTemplatesRequest.
 
+        偏移量,表示从此偏移量开始查询,offset大于等于0
 
         :return: The offset of this ListTemplatesRequest.
         :rtype: int
@@ -148,6 +155,7 @@ class ListTemplatesRequest:
     def offset(self, offset):
         """Sets the offset of this ListTemplatesRequest.
 
+        偏移量,表示从此偏移量开始查询,offset大于等于0
 
         :param offset: The offset of this ListTemplatesRequest.
         :type: int
@@ -158,6 +166,7 @@ class ListTemplatesRequest:
     def limit(self):
         """Gets the limit of this ListTemplatesRequest.
 
+        每页显示的条目数量
 
         :return: The limit of this ListTemplatesRequest.
         :rtype: int
@@ -168,6 +177,7 @@ class ListTemplatesRequest:
     def limit(self, limit):
         """Sets the limit of this ListTemplatesRequest.
 
+        每页显示的条目数量
 
         :param limit: The limit of this ListTemplatesRequest.
         :type: int
@@ -178,6 +188,7 @@ class ListTemplatesRequest:
     def name(self):
         """Gets the name of this ListTemplatesRequest.
 
+        模板名称，匹配规则为模糊匹配
 
         :return: The name of this ListTemplatesRequest.
         :rtype: str
@@ -188,6 +199,7 @@ class ListTemplatesRequest:
     def name(self, name):
         """Sets the name of this ListTemplatesRequest.
 
+        模板名称，匹配规则为模糊匹配
 
         :param name: The name of this ListTemplatesRequest.
         :type: str
@@ -198,6 +210,7 @@ class ListTemplatesRequest:
     def sort(self):
         """Gets the sort of this ListTemplatesRequest.
 
+        排序字段
 
         :return: The sort of this ListTemplatesRequest.
         :rtype: str
@@ -208,6 +221,7 @@ class ListTemplatesRequest:
     def sort(self, sort):
         """Sets the sort of this ListTemplatesRequest.
 
+        排序字段
 
         :param sort: The sort of this ListTemplatesRequest.
         :type: str
@@ -218,6 +232,7 @@ class ListTemplatesRequest:
     def asc(self):
         """Gets the asc of this ListTemplatesRequest.
 
+        是否正序
 
         :return: The asc of this ListTemplatesRequest.
         :rtype: str
@@ -228,6 +243,7 @@ class ListTemplatesRequest:
     def asc(self, asc):
         """Sets the asc of this ListTemplatesRequest.
 
+        是否正序
 
         :param asc: The asc of this ListTemplatesRequest.
         :type: str

@@ -37,7 +37,7 @@ class CreateTestCaseInPlanResponse(SdkResponse):
     def __init__(self, error_code=None, error_msg=None, error_detail=None):
         """CreateTestCaseInPlanResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateTestCaseInPlanResponse, self).__init__()
 
         self._error_code = None
         self._error_msg = None

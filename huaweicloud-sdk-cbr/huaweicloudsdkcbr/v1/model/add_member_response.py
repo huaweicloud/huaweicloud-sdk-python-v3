@@ -35,7 +35,7 @@ class AddMemberResponse(SdkResponse):
     def __init__(self, members=None, count=None):
         """AddMemberResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AddMemberResponse, self).__init__()
 
         self._members = None
         self._count = None

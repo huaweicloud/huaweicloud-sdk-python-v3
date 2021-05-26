@@ -37,7 +37,7 @@ class RegisterAgentResponse(SdkResponse):
     def __init__(self, status=None, result=None, error=None):
         """RegisterAgentResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RegisterAgentResponse, self).__init__()
 
         self._status = None
         self._result = None

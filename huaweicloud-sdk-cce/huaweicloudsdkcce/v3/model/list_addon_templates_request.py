@@ -65,6 +65,7 @@ class ListAddonTemplatesRequest:
     def addon_template_name(self):
         """Gets the addon_template_name of this ListAddonTemplatesRequest.
 
+        指定的模板名称，不填写则查询列表。
 
         :return: The addon_template_name of this ListAddonTemplatesRequest.
         :rtype: str
@@ -75,6 +76,7 @@ class ListAddonTemplatesRequest:
     def addon_template_name(self, addon_template_name):
         """Sets the addon_template_name of this ListAddonTemplatesRequest.
 
+        指定的模板名称，不填写则查询列表。
 
         :param addon_template_name: The addon_template_name of this ListAddonTemplatesRequest.
         :type: str
@@ -85,6 +87,7 @@ class ListAddonTemplatesRequest:
     def base_update_addon_version(self):
         """Gets the base_update_addon_version of this ListAddonTemplatesRequest.
 
+        含义：可接受的最低升级版本  属性：隐藏参数
 
         :return: The base_update_addon_version of this ListAddonTemplatesRequest.
         :rtype: str
@@ -95,6 +98,7 @@ class ListAddonTemplatesRequest:
     def base_update_addon_version(self, base_update_addon_version):
         """Sets the base_update_addon_version of this ListAddonTemplatesRequest.
 
+        含义：可接受的最低升级版本  属性：隐藏参数
 
         :param base_update_addon_version: The base_update_addon_version of this ListAddonTemplatesRequest.
         :type: str
@@ -105,6 +109,7 @@ class ListAddonTemplatesRequest:
     def cluster_id(self):
         """Gets the cluster_id of this ListAddonTemplatesRequest.
 
+        含义：查询的集群  属性：隐藏参数
 
         :return: The cluster_id of this ListAddonTemplatesRequest.
         :rtype: str
@@ -115,6 +120,7 @@ class ListAddonTemplatesRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this ListAddonTemplatesRequest.
 
+        含义：查询的集群  属性：隐藏参数
 
         :param cluster_id: The cluster_id of this ListAddonTemplatesRequest.
         :type: str
@@ -125,6 +131,7 @@ class ListAddonTemplatesRequest:
     def newest(self):
         """Gets the newest of this ListAddonTemplatesRequest.
 
+        含义：是否获取最新插件  属性：隐藏参数
 
         :return: The newest of this ListAddonTemplatesRequest.
         :rtype: str
@@ -135,6 +142,7 @@ class ListAddonTemplatesRequest:
     def newest(self, newest):
         """Sets the newest of this ListAddonTemplatesRequest.
 
+        含义：是否获取最新插件  属性：隐藏参数
 
         :param newest: The newest of this ListAddonTemplatesRequest.
         :type: str
@@ -145,6 +153,7 @@ class ListAddonTemplatesRequest:
     def version(self):
         """Gets the version of this ListAddonTemplatesRequest.
 
+        含义：筛选的插件版本  属性：隐藏参数
 
         :return: The version of this ListAddonTemplatesRequest.
         :rtype: str
@@ -155,6 +164,7 @@ class ListAddonTemplatesRequest:
     def version(self, version):
         """Sets the version of this ListAddonTemplatesRequest.
 
+        含义：筛选的插件版本  属性：隐藏参数
 
         :param version: The version of this ListAddonTemplatesRequest.
         :type: str

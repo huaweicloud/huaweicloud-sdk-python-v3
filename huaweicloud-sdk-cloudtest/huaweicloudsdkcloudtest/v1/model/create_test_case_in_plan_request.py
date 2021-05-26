@@ -53,6 +53,7 @@ class CreateTestCaseInPlanRequest:
     def project_id(self):
         """Gets the project_id of this CreateTestCaseInPlanRequest.
 
+        项目唯一标识，固定长度32位字符
 
         :return: The project_id of this CreateTestCaseInPlanRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class CreateTestCaseInPlanRequest:
     def project_id(self, project_id):
         """Sets the project_id of this CreateTestCaseInPlanRequest.
 
+        项目唯一标识，固定长度32位字符
 
         :param project_id: The project_id of this CreateTestCaseInPlanRequest.
         :type: str
@@ -73,6 +75,7 @@ class CreateTestCaseInPlanRequest:
     def plan_id(self):
         """Gets the plan_id of this CreateTestCaseInPlanRequest.
 
+        计划唯一标识，固定长度32位字符
 
         :return: The plan_id of this CreateTestCaseInPlanRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class CreateTestCaseInPlanRequest:
     def plan_id(self, plan_id):
         """Sets the plan_id of this CreateTestCaseInPlanRequest.
 
+        计划唯一标识，固定长度32位字符
 
         :param plan_id: The plan_id of this CreateTestCaseInPlanRequest.
         :type: str

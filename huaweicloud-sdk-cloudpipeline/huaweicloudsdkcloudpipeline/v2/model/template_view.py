@@ -26,7 +26,6 @@ class TemplateView:
         'template_id': 'str',
         'template_name': 'str',
         'template_type': 'str',
-        'template_url': 'str',
         'user_id': 'str',
         'user_name': 'str',
         'domain_id': 'str',
@@ -46,7 +45,6 @@ class TemplateView:
         'template_id': 'template_id',
         'template_name': 'template_name',
         'template_type': 'template_type',
-        'template_url': 'template_url',
         'user_id': 'user_id',
         'user_name': 'user_name',
         'domain_id': 'domain_id',
@@ -62,7 +60,7 @@ class TemplateView:
         'states': 'states'
     }
 
-    def __init__(self, template_id=None, template_name=None, template_type=None, template_url=None, user_id=None, user_name=None, domain_id=None, domain_name=None, is_build_in=None, region=None, project_id=None, project_name=None, is_watch=None, description=None, parameter=None, flow=None, states=None):
+    def __init__(self, template_id=None, template_name=None, template_type=None, user_id=None, user_name=None, domain_id=None, domain_name=None, is_build_in=None, region=None, project_id=None, project_name=None, is_watch=None, description=None, parameter=None, flow=None, states=None):
         """TemplateView - a model defined in huaweicloud sdk"""
         
         
@@ -70,7 +68,6 @@ class TemplateView:
         self._template_id = None
         self._template_name = None
         self._template_type = None
-        self._template_url = None
         self._user_id = None
         self._user_name = None
         self._domain_id = None
@@ -89,7 +86,6 @@ class TemplateView:
         self.template_id = template_id
         self.template_name = template_name
         self.template_type = template_type
-        self.template_url = template_url
         self.user_id = user_id
         self.user_name = user_name
         self.domain_id = domain_id
@@ -169,28 +165,6 @@ class TemplateView:
         :type: str
         """
         self._template_type = template_type
-
-    @property
-    def template_url(self):
-        """Gets the template_url of this TemplateView.
-
-        模板编辑URL
-
-        :return: The template_url of this TemplateView.
-        :rtype: str
-        """
-        return self._template_url
-
-    @template_url.setter
-    def template_url(self, template_url):
-        """Sets the template_url of this TemplateView.
-
-        模板编辑URL
-
-        :param template_url: The template_url of this TemplateView.
-        :type: str
-        """
-        self._template_url = template_url
 
     @property
     def user_id(self):

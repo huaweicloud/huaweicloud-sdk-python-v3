@@ -49,6 +49,7 @@ class ShowInstanceStatusRequest:
     def x_language(self):
         """Gets the x_language of this ShowInstanceStatusRequest.
 
+        语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :return: The x_language of this ShowInstanceStatusRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ShowInstanceStatusRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowInstanceStatusRequest.
 
+        语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this ShowInstanceStatusRequest.
         :type: str
@@ -69,6 +71,7 @@ class ShowInstanceStatusRequest:
     def task_id(self):
         """Gets the task_id of this ShowInstanceStatusRequest.
 
+        实例ID
 
         :return: The task_id of this ShowInstanceStatusRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ShowInstanceStatusRequest:
     def task_id(self, task_id):
         """Sets the task_id of this ShowInstanceStatusRequest.
 
+        实例ID
 
         :param task_id: The task_id of this ShowInstanceStatusRequest.
         :type: str

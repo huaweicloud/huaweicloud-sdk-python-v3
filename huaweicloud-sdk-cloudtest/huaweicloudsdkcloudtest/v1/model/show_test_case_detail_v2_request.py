@@ -54,6 +54,7 @@ class ShowTestCaseDetailV2Request:
     def project_id(self):
         """Gets the project_id of this ShowTestCaseDetailV2Request.
 
+        项目唯一标识，固定长度32位字符
 
         :return: The project_id of this ShowTestCaseDetailV2Request.
         :rtype: str
@@ -64,6 +65,7 @@ class ShowTestCaseDetailV2Request:
     def project_id(self, project_id):
         """Sets the project_id of this ShowTestCaseDetailV2Request.
 
+        项目唯一标识，固定长度32位字符
 
         :param project_id: The project_id of this ShowTestCaseDetailV2Request.
         :type: str
@@ -74,6 +76,7 @@ class ShowTestCaseDetailV2Request:
     def testcase_number(self):
         """Gets the testcase_number of this ShowTestCaseDetailV2Request.
 
+        用例编号，长度为[3-128]位字符
 
         :return: The testcase_number of this ShowTestCaseDetailV2Request.
         :rtype: str
@@ -84,6 +87,7 @@ class ShowTestCaseDetailV2Request:
     def testcase_number(self, testcase_number):
         """Sets the testcase_number of this ShowTestCaseDetailV2Request.
 
+        用例编号，长度为[3-128]位字符
 
         :param testcase_number: The testcase_number of this ShowTestCaseDetailV2Request.
         :type: str
@@ -94,6 +98,7 @@ class ShowTestCaseDetailV2Request:
     def testcase_id(self):
         """Gets the testcase_id of this ShowTestCaseDetailV2Request.
 
+        测试用例唯一标识，固定长度32位字符
 
         :return: The testcase_id of this ShowTestCaseDetailV2Request.
         :rtype: str
@@ -104,6 +109,7 @@ class ShowTestCaseDetailV2Request:
     def testcase_id(self, testcase_id):
         """Sets the testcase_id of this ShowTestCaseDetailV2Request.
 
+        测试用例唯一标识，固定长度32位字符
 
         :param testcase_id: The testcase_id of this ShowTestCaseDetailV2Request.
         :type: str

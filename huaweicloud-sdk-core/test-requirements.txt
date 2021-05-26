@@ -1,5 +1,3 @@
 -r requirements.txt
 pytest
-pytest-cov
-pytest-mock
-requests-mock
+

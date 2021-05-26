@@ -33,7 +33,7 @@ class ShowAlarmResponse(SdkResponse):
     def __init__(self, metric_alarms=None):
         """ShowAlarmResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowAlarmResponse, self).__init__()
 
         self._metric_alarms = None
         self.discriminator = None

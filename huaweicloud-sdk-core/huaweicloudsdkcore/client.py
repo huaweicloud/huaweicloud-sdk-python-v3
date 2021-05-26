@@ -24,9 +24,8 @@ import json
 import logging
 import re
 import sys
-from concurrent.futures.thread import ThreadPoolExecutor
 from logging.handlers import RotatingFileHandler
-from typing import Mapping
+from concurrent.futures import ThreadPoolExecutor
 
 import six
 from six.moves.urllib.parse import quote, urlparse
@@ -37,14 +36,13 @@ from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.http.http_handler import HttpHandler
 from huaweicloudsdkcore.http.primitive_types import native_types_mapping
 from huaweicloudsdkcore.http.primitive_types import primitive_types
-from huaweicloudsdkcore.region.region import Region
 from huaweicloudsdkcore.sdk_request import SdkRequest
 from huaweicloudsdkcore.sdk_response import FutureSdkResponse
 from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils import http_utils, core_utils
 
 
-class ClientBuilder:
+class ClientBuilder(object):
     def __init__(self, client_type, credential_type=BasicCredentials.__name__):
         self._client_type = client_type
         self._credential_type = credential_type.split(',')
@@ -60,7 +58,7 @@ class ClientBuilder:
         self._http_scheme = "http"
         self._https_scheme = "https"
 
-    def with_http_config(self, config: HttpConfig):
+    def with_http_config(self, config):
         self._config = config
         return self
 
@@ -68,7 +66,7 @@ class ClientBuilder:
         self._credentials = credentials
         return self
 
-    def with_region(self, region: Region):
+    def with_region(self, region):
         self._region = region
         return self
 
@@ -135,7 +133,7 @@ class ClientBuilder:
         return client
 
 
-class Client:
+class Client(object):
     def __init__(self):
         self.preset_headers = {}
 
@@ -253,8 +251,13 @@ class Client:
     @classmethod
     def _parse_body(cls, body, post_params):
         if body:
-            if all([hasattr(body, '__iter__'), not isinstance(body, (str, bytes, list, tuple, Mapping))]):
-                return body
+            if six.PY3:
+                from typing import Mapping
+                if all([hasattr(body, '__iter__'), not isinstance(body, (str, bytes, list, tuple, Mapping))]):
+                    return body
+            else:
+                if all([hasattr(body, '__iter__'), not isinstance(body, (str, bytes, list, tuple, dict))]):
+                    return body
             body = http_utils.sanitize_for_serialization(body)
             body = json.dumps(body)
         elif len(post_params) != 0:
@@ -281,9 +284,6 @@ class Client:
             list_filter = filter(lambda x: type(x) == tuple and len(x) == 2 and x[1] is not None, params)
             return [i for i in list_filter]
 
-    def skip_authorization(self, request):
-        return request
-
     def do_http_request(self, method, resource_path, path_params=None, query_params=None, header_params=None, body=None,
                         post_params=None, response_type=None, response_headers=None, collection_formats=None,
                         request_type=None, async_request=False):
@@ -305,7 +305,8 @@ class Client:
             future_request = self._credentials.process_auth_request(sdk_request, self._http_client)
         else:
             executor = ThreadPoolExecutor(max_workers=8)
-            future_request = executor.submit(self.skip_authorization, sdk_request)
+            future_request = executor.submit(lambda req: req, sdk_request)
+
         if async_request:
             executor = ThreadPoolExecutor(max_workers=8)
             future_response = executor.submit(self._do_http_request_async, future_request, response_type,
@@ -367,7 +368,7 @@ class Client:
                 return klass(response)
 
         try:
-            data = json.loads(response.text)
+            data = json.loads(six.ensure_str(response.text))
         except ValueError:
             data = response.text
         return self._deserialize(data, response_type)

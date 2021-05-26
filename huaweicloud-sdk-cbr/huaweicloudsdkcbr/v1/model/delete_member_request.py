@@ -48,6 +48,7 @@ class DeleteMemberRequest:
     def backup_id(self):
         """Gets the backup_id of this DeleteMemberRequest.
 
+        备份副本id
 
         :return: The backup_id of this DeleteMemberRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteMemberRequest:
     def backup_id(self, backup_id):
         """Sets the backup_id of this DeleteMemberRequest.
 
+        备份副本id
 
         :param backup_id: The backup_id of this DeleteMemberRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteMemberRequest:
     def member_id(self):
         """Gets the member_id of this DeleteMemberRequest.
 
+        成员id
 
         :return: The member_id of this DeleteMemberRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteMemberRequest:
     def member_id(self, member_id):
         """Sets the member_id of this DeleteMemberRequest.
 
+        成员id
 
         :param member_id: The member_id of this DeleteMemberRequest.
         :type: str

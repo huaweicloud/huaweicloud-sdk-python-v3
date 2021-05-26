@@ -49,6 +49,7 @@ class StartInstanceRequest:
     def instance_id(self):
         """Gets the instance_id of this StartInstanceRequest.
 
+        实例id
 
         :return: The instance_id of this StartInstanceRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class StartInstanceRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this StartInstanceRequest.
 
+        实例id
 
         :param instance_id: The instance_id of this StartInstanceRequest.
         :type: str

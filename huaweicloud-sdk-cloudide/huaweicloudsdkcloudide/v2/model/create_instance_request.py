@@ -49,6 +49,7 @@ class CreateInstanceRequest:
     def org_id(self):
         """Gets the org_id of this CreateInstanceRequest.
 
+        组织id（对应华为云帐号的domainId）
 
         :return: The org_id of this CreateInstanceRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateInstanceRequest:
     def org_id(self, org_id):
         """Sets the org_id of this CreateInstanceRequest.
 
+        组织id（对应华为云帐号的domainId）
 
         :param org_id: The org_id of this CreateInstanceRequest.
         :type: str

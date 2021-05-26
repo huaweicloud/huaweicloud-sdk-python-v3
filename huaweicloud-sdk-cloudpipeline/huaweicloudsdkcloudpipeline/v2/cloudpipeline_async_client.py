@@ -789,26 +789,26 @@ class CloudPipelineAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def start_pipeline_async(self, request):
-        """执行流水线
+    def stop_pipeline_new_async(self, request):
+        """停止流水线
 
-        执行流水线
+        停止流水线
 
-        :param StartPipelineRequest request
-        :return: StartPipelineResponse
+        :param StopPipelineNewRequest request
+        :return: StopPipelineNewResponse
         """
-        return self.start_pipeline_with_http_info(request)
+        return self.stop_pipeline_new_with_http_info(request)
 
-    def start_pipeline_with_http_info(self, request):
-        """执行流水线
+    def stop_pipeline_new_with_http_info(self, request):
+        """停止流水线
 
-        执行流水线
+        停止流水线
 
-        :param StartPipelineRequest request
-        :return: StartPipelineResponse
+        :param StopPipelineNewRequest request
+        :return: StopPipelineNewResponse
         """
 
-        all_params = ['pipeline_id', 'x_language', 'start_new_pipeline_request_body']
+        all_params = ['pipeline_id', 'build_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -817,77 +817,10 @@ class CloudPipelineAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
 
         query_params = []
-        if 'pipeline_id' in local_var_params:
-            query_params.append(('pipeline_id', local_var_params['pipeline_id']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        return self.call_api(
-            resource_path='/v3/pipelines/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='StartPipelineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def stop_pipeline_async(self, request):
-        """停止流水线
-
-        停止流水线
-
-        :param StopPipelineRequest request
-        :return: StopPipelineResponse
-        """
-        return self.stop_pipeline_with_http_info(request)
-
-    def stop_pipeline_with_http_info(self, request):
-        """停止流水线
-
-        停止流水线
-
-        :param StopPipelineRequest request
-        :return: StopPipelineResponse
-        """
-
-        all_params = ['pipeline_id', 'x_language', 'build_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'pipeline_id' in local_var_params:
-            query_params.append(('pipeline_id', local_var_params['pipeline_id']))
         if 'build_id' in local_var_params:
             query_params.append(('build_id', local_var_params['build_id']))
 
@@ -909,14 +842,14 @@ class CloudPipelineAsyncClient(Client):
         auth_settings = ['apig-auth-iam']
 
         return self.call_api(
-            resource_path='/v3/pipelines/stop',
+            resource_path='/v3/pipelines/{pipeline_id}/stop',
             method='POST',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='StopPipelineResponse',
+            response_type='StopPipelineNewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

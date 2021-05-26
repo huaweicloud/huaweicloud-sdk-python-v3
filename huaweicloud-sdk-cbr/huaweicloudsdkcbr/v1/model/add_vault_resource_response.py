@@ -33,7 +33,7 @@ class AddVaultResourceResponse(SdkResponse):
     def __init__(self, add_resource_ids=None):
         """AddVaultResourceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AddVaultResourceResponse, self).__init__()
 
         self._add_resource_ids = None
         self.discriminator = None

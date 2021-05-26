@@ -19,7 +19,7 @@
 """
 
 
-class SdkStreamRequest:
+class SdkStreamRequest(object):
     def __init__(self, stream):
         self._stream = stream
 

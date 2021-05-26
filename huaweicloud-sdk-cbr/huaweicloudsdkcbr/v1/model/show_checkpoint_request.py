@@ -44,6 +44,7 @@ class ShowCheckpointRequest:
     def checkpoint_id(self):
         """Gets the checkpoint_id of this ShowCheckpointRequest.
 
+        还原点ID
 
         :return: The checkpoint_id of this ShowCheckpointRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowCheckpointRequest:
     def checkpoint_id(self, checkpoint_id):
         """Sets the checkpoint_id of this ShowCheckpointRequest.
 
+        还原点ID
 
         :param checkpoint_id: The checkpoint_id of this ShowCheckpointRequest.
         :type: str

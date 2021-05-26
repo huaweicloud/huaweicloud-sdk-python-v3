@@ -44,6 +44,7 @@ class ShowOpLogRequest:
     def operation_log_id(self):
         """Gets the operation_log_id of this ShowOpLogRequest.
 
+        任务ID
 
         :return: The operation_log_id of this ShowOpLogRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowOpLogRequest:
     def operation_log_id(self, operation_log_id):
         """Sets the operation_log_id of this ShowOpLogRequest.
 
+        任务ID
 
         :param operation_log_id: The operation_log_id of this ShowOpLogRequest.
         :type: str

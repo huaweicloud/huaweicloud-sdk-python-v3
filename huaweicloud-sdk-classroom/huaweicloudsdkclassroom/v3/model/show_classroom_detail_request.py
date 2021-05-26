@@ -44,6 +44,7 @@ class ShowClassroomDetailRequest:
     def classroom_id(self):
         """Gets the classroom_id of this ShowClassroomDetailRequest.
 
+        课堂ID
 
         :return: The classroom_id of this ShowClassroomDetailRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowClassroomDetailRequest:
     def classroom_id(self, classroom_id):
         """Sets the classroom_id of this ShowClassroomDetailRequest.
 
+        课堂ID
 
         :param classroom_id: The classroom_id of this ShowClassroomDetailRequest.
         :type: str

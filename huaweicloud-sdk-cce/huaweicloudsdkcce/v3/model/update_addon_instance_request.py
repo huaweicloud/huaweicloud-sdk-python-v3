@@ -49,6 +49,7 @@ class UpdateAddonInstanceRequest:
     def id(self):
         """Gets the id of this UpdateAddonInstanceRequest.
 
+        插件实例id
 
         :return: The id of this UpdateAddonInstanceRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateAddonInstanceRequest:
     def id(self, id):
         """Sets the id of this UpdateAddonInstanceRequest.
 
+        插件实例id
 
         :param id: The id of this UpdateAddonInstanceRequest.
         :type: str

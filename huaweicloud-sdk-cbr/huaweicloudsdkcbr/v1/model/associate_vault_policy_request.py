@@ -49,6 +49,7 @@ class AssociateVaultPolicyRequest:
     def vault_id(self):
         """Gets the vault_id of this AssociateVaultPolicyRequest.
 
+        存储库ID
 
         :return: The vault_id of this AssociateVaultPolicyRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class AssociateVaultPolicyRequest:
     def vault_id(self, vault_id):
         """Sets the vault_id of this AssociateVaultPolicyRequest.
 
+        存储库ID
 
         :param vault_id: The vault_id of this AssociateVaultPolicyRequest.
         :type: str

@@ -59,6 +59,7 @@ class ListClassroomMembersRequest:
     def classroom_id(self):
         """Gets the classroom_id of this ListClassroomMembersRequest.
 
+        课堂ID
 
         :return: The classroom_id of this ListClassroomMembersRequest.
         :rtype: str
@@ -69,6 +70,7 @@ class ListClassroomMembersRequest:
     def classroom_id(self, classroom_id):
         """Sets the classroom_id of this ListClassroomMembersRequest.
 
+        课堂ID
 
         :param classroom_id: The classroom_id of this ListClassroomMembersRequest.
         :type: str
@@ -79,6 +81,7 @@ class ListClassroomMembersRequest:
     def offset(self):
         """Gets the offset of this ListClassroomMembersRequest.
 
+        信息记录的起始编号
 
         :return: The offset of this ListClassroomMembersRequest.
         :rtype: int
@@ -89,6 +92,7 @@ class ListClassroomMembersRequest:
     def offset(self, offset):
         """Sets the offset of this ListClassroomMembersRequest.
 
+        信息记录的起始编号
 
         :param offset: The offset of this ListClassroomMembersRequest.
         :type: int
@@ -99,6 +103,7 @@ class ListClassroomMembersRequest:
     def limit(self):
         """Gets the limit of this ListClassroomMembersRequest.
 
+        每页包含的信息记录数
 
         :return: The limit of this ListClassroomMembersRequest.
         :rtype: int
@@ -109,6 +114,7 @@ class ListClassroomMembersRequest:
     def limit(self, limit):
         """Sets the limit of this ListClassroomMembersRequest.
 
+        每页包含的信息记录数
 
         :param limit: The limit of this ListClassroomMembersRequest.
         :type: int
@@ -119,6 +125,7 @@ class ListClassroomMembersRequest:
     def filter(self):
         """Gets the filter of this ListClassroomMembersRequest.
 
+        按照条件搜索学生，搜索字段会同时匹配姓名，学号，用户名，班级
 
         :return: The filter of this ListClassroomMembersRequest.
         :rtype: str
@@ -129,6 +136,7 @@ class ListClassroomMembersRequest:
     def filter(self, filter):
         """Sets the filter of this ListClassroomMembersRequest.
 
+        按照条件搜索学生，搜索字段会同时匹配姓名，学号，用户名，班级
 
         :param filter: The filter of this ListClassroomMembersRequest.
         :type: str

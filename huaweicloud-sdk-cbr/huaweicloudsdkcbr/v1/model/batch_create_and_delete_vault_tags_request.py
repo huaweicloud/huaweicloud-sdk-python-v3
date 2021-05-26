@@ -49,6 +49,7 @@ class BatchCreateAndDeleteVaultTagsRequest:
     def vault_id(self):
         """Gets the vault_id of this BatchCreateAndDeleteVaultTagsRequest.
 
+        资源id
 
         :return: The vault_id of this BatchCreateAndDeleteVaultTagsRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class BatchCreateAndDeleteVaultTagsRequest:
     def vault_id(self, vault_id):
         """Sets the vault_id of this BatchCreateAndDeleteVaultTagsRequest.
 
+        资源id
 
         :param vault_id: The vault_id of this BatchCreateAndDeleteVaultTagsRequest.
         :type: str

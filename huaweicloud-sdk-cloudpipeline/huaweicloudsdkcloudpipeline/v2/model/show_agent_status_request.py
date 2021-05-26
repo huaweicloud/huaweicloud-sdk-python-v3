@@ -49,6 +49,7 @@ class ShowAgentStatusRequest:
     def x_language(self):
         """Gets the x_language of this ShowAgentStatusRequest.
 
+        语言类型 中文:zh-cn 英文:en-us
 
         :return: The x_language of this ShowAgentStatusRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ShowAgentStatusRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowAgentStatusRequest.
 
+        语言类型 中文:zh-cn 英文:en-us
 
         :param x_language: The x_language of this ShowAgentStatusRequest.
         :type: str
@@ -69,6 +71,7 @@ class ShowAgentStatusRequest:
     def agent_id(self):
         """Gets the agent_id of this ShowAgentStatusRequest.
 
+        AgentID
 
         :return: The agent_id of this ShowAgentStatusRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ShowAgentStatusRequest:
     def agent_id(self, agent_id):
         """Sets the agent_id of this ShowAgentStatusRequest.
 
+        AgentID
 
         :param agent_id: The agent_id of this ShowAgentStatusRequest.
         :type: str

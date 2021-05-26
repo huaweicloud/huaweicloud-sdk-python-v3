@@ -35,7 +35,7 @@ class ShowMetricDataResponse(SdkResponse):
     def __init__(self, datapoints=None, metric_name=None):
         """ShowMetricDataResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowMetricDataResponse, self).__init__()
 
         self._datapoints = None
         self._metric_name = None

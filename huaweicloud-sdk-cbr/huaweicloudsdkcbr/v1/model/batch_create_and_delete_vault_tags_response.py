@@ -31,7 +31,7 @@ class BatchCreateAndDeleteVaultTagsResponse(SdkResponse):
     def __init__(self):
         """BatchCreateAndDeleteVaultTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchCreateAndDeleteVaultTagsResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

@@ -48,6 +48,7 @@ class ShowTestCaseDetailRequest:
     def project_id(self):
         """Gets the project_id of this ShowTestCaseDetailRequest.
 
+        项目唯一标识，固定长度32位字符
 
         :return: The project_id of this ShowTestCaseDetailRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowTestCaseDetailRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ShowTestCaseDetailRequest.
 
+        项目唯一标识，固定长度32位字符
 
         :param project_id: The project_id of this ShowTestCaseDetailRequest.
         :type: str
@@ -68,6 +70,7 @@ class ShowTestCaseDetailRequest:
     def testcase_id(self):
         """Gets the testcase_id of this ShowTestCaseDetailRequest.
 
+        测试用例唯一标识，固定长度32位字符
 
         :return: The testcase_id of this ShowTestCaseDetailRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowTestCaseDetailRequest:
     def testcase_id(self, testcase_id):
         """Sets the testcase_id of this ShowTestCaseDetailRequest.
 
+        测试用例唯一标识，固定长度32位字符
 
         :param testcase_id: The testcase_id of this ShowTestCaseDetailRequest.
         :type: str

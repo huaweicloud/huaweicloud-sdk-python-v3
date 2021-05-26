@@ -35,7 +35,7 @@ class ListTracesResponse(SdkResponse):
     def __init__(self, traces=None, meta_data=None):
         """ListTracesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListTracesResponse, self).__init__()
 
         self._traces = None
         self._meta_data = None

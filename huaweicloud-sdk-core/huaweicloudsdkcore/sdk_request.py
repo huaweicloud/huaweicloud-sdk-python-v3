@@ -19,7 +19,7 @@
 """
 
 
-class SdkRequest:
+class SdkRequest(object):
     def __init__(self, method='GET', schema=None, host=None, resource_path=None, uri=None, query_params=None,
                  header_params=None, body=None, stream=False):
         self.method = method

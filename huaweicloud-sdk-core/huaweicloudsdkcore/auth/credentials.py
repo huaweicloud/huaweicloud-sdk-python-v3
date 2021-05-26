@@ -19,7 +19,7 @@
 """
 
 import os
-from concurrent.futures.thread import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor
 
 from huaweicloudsdkcore.auth.iam_service import get_keystone_list_projects_request, keystone_list_projects, \
     get_keystone_list_auth_domains_request, keystone_list_auth_domains, DEFAULT_IAM_ENDPOINT
@@ -27,28 +27,11 @@ from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceRespo
 from huaweicloudsdkcore.signer import signer
 
 
-class Credentials:
-    def get_update_path_params(self):
-        pass
+class Credentials(object):
 
-    def process_auth_params(self, http_client, region_id):
-        pass
-
-    def process_auth_request(self, request, http_client):
-        pass
-
-
-class BasicCredentials(Credentials):
-    def __init__(self, ak, sk, project_id=None):
-        if ak is None or ak == "":
-            raise ApiValueError("AK can not be null.")
-
-        if sk is None or sk == "":
-            raise ApiValueError("SK can not be null.")
-
+    def __init__(self, ak=None, sk=None):
         self.ak = ak
         self.sk = sk
-        self.project_id = project_id
         self.iam_endpoint = None
         self.security_token = None
 
@@ -59,6 +42,30 @@ class BasicCredentials(Credentials):
     def with_security_token(self, token):
         self.security_token = token
         return self
+
+    def get_update_path_params(self):
+        pass
+
+    def process_auth_params(self, http_client, region_id):
+        pass
+
+    def process_auth_request(self, request, http_client):
+        executor = ThreadPoolExecutor(max_workers=8)
+        future = executor.submit(self.sign_request, request)
+        return future
+
+    def sign_request(self, request):
+        pass
+
+
+class BasicCredentials(Credentials):
+    def __init__(self, ak, sk, project_id=None):
+        if not ak:
+            raise ApiValueError("AK can not be null.")
+        if not sk:
+            raise ApiValueError("SK can not be null.")
+        super(BasicCredentials, self).__init__(ak, sk)
+        self.project_id = project_id
 
     def get_update_path_params(self):
         path_params = {}
@@ -82,9 +89,7 @@ class BasicCredentials(Credentials):
         return self
 
     def process_auth_request(self, request, http_client):
-        executor = ThreadPoolExecutor(max_workers=8)
-        future = executor.submit(self.sign_request, request)
-        return future
+        return super(BasicCredentials, self).process_auth_request(request, http_client)
 
     def sign_request(self, request):
         if self.project_id:
@@ -101,25 +106,12 @@ class BasicCredentials(Credentials):
 
 class GlobalCredentials(Credentials):
     def __init__(self, ak, sk, domain_id=None):
-        if ak is None or ak == "":
+        if not ak:
             raise ApiValueError("AK can not be null.")
-
-        if sk is None or sk == "":
+        if not sk:
             raise ApiValueError("SK can not be null.")
-
-        self.ak = ak
-        self.sk = sk
+        super(GlobalCredentials, self).__init__(ak, sk)
         self.domain_id = domain_id
-        self.iam_endpoint = None
-        self.security_token = None
-
-    def with_iam_endpoint(self, endpoint):
-        self.iam_endpoint = endpoint
-        return self
-
-    def with_security_token(self, token):
-        self.security_token = token
-        return self
 
     def get_update_path_params(self):
         path_params = {}
@@ -143,9 +135,7 @@ class GlobalCredentials(Credentials):
         return self
 
     def process_auth_request(self, request, http_client):
-        executor = ThreadPoolExecutor(max_workers=8)
-        future = executor.submit(self.sign_request, request)
-        return future
+        return super(GlobalCredentials, self).process_auth_request(request, http_client)
 
     def sign_request(self, request):
         if self.domain_id:
@@ -160,7 +150,10 @@ class GlobalCredentials(Credentials):
         return signer.Signer(self).sign(request)
 
 
-class EnvCredentials:
+class EnvCredentials(object):
+
+    def __init__(self):
+        pass
 
     AK_ENV_NAME = "HUAWEICLOUD_SDK_AK"
     SK_ENV_NAME = "HUAWEICLOUD_SDK_SK"

@@ -33,7 +33,7 @@ class DisassociateVaultPolicyResponse(SdkResponse):
     def __init__(self, dissociate_policy=None):
         """DisassociateVaultPolicyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DisassociateVaultPolicyResponse, self).__init__()
 
         self._dissociate_policy = None
         self.discriminator = None

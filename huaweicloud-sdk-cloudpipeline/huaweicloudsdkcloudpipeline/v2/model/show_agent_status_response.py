@@ -35,7 +35,7 @@ class ShowAgentStatusResponse(SdkResponse):
     def __init__(self, status=None, agent_id=None):
         """ShowAgentStatusResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowAgentStatusResponse, self).__init__()
 
         self._status = None
         self._agent_id = None

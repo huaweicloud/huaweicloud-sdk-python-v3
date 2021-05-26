@@ -44,6 +44,7 @@ class ShowPolicyRequest:
     def policy_id(self):
         """Gets the policy_id of this ShowPolicyRequest.
 
+        策略ID
 
         :return: The policy_id of this ShowPolicyRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowPolicyRequest:
     def policy_id(self, policy_id):
         """Sets the policy_id of this ShowPolicyRequest.
 
+        策略ID
 
         :param policy_id: The policy_id of this ShowPolicyRequest.
         :type: str

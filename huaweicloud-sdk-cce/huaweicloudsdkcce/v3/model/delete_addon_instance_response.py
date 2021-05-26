@@ -33,7 +33,7 @@ class DeleteAddonInstanceResponse(SdkResponse):
     def __init__(self, body=None):
         """DeleteAddonInstanceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteAddonInstanceResponse, self).__init__()
 
         self._body = None
         self.discriminator = None

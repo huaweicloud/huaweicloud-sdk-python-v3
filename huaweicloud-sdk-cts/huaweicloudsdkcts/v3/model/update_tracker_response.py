@@ -31,7 +31,7 @@ class UpdateTrackerResponse(SdkResponse):
     def __init__(self):
         """UpdateTrackerResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateTrackerResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

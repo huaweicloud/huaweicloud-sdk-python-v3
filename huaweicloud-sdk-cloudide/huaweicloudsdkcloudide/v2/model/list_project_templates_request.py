@@ -49,6 +49,7 @@ class ListProjectTemplatesRequest:
     def arch(self):
         """Gets the arch of this ListProjectTemplatesRequest.
 
+        cpu架构 x86|arm
 
         :return: The arch of this ListProjectTemplatesRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ListProjectTemplatesRequest:
     def arch(self, arch):
         """Sets the arch of this ListProjectTemplatesRequest.
 
+        cpu架构 x86|arm
 
         :param arch: The arch of this ListProjectTemplatesRequest.
         :type: str
@@ -69,6 +71,7 @@ class ListProjectTemplatesRequest:
     def stack_id(self):
         """Gets the stack_id of this ListProjectTemplatesRequest.
 
+        技术栈ID，通过技术栈管理ListStacksByTag接口获取。
 
         :return: The stack_id of this ListProjectTemplatesRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ListProjectTemplatesRequest:
     def stack_id(self, stack_id):
         """Sets the stack_id of this ListProjectTemplatesRequest.
 
+        技术栈ID，通过技术栈管理ListStacksByTag接口获取。
 
         :param stack_id: The stack_id of this ListProjectTemplatesRequest.
         :type: str

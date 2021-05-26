@@ -35,7 +35,7 @@ class ShowInstanceResponse(SdkResponse):
     def __init__(self, instance=None, status=None):
         """ShowInstanceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowInstanceResponse, self).__init__()
 
         self._instance = None
         self._status = None

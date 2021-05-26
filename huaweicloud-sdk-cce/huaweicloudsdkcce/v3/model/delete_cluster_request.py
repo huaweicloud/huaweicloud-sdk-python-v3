@@ -79,6 +79,7 @@ class DeleteClusterRequest:
     def cluster_id(self):
         """Gets the cluster_id of this DeleteClusterRequest.
 
+        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :return: The cluster_id of this DeleteClusterRequest.
         :rtype: str
@@ -89,6 +90,7 @@ class DeleteClusterRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this DeleteClusterRequest.
 
+        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :param cluster_id: The cluster_id of this DeleteClusterRequest.
         :type: str
@@ -99,6 +101,7 @@ class DeleteClusterRequest:
     def error_status(self):
         """Gets the error_status of this DeleteClusterRequest.
 
+        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
 
         :return: The error_status of this DeleteClusterRequest.
         :rtype: str
@@ -109,6 +112,7 @@ class DeleteClusterRequest:
     def error_status(self, error_status):
         """Sets the error_status of this DeleteClusterRequest.
 
+        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
 
         :param error_status: The error_status of this DeleteClusterRequest.
         :type: str
@@ -119,6 +123,7 @@ class DeleteClusterRequest:
     def delete_efs(self):
         """Gets the delete_efs of this DeleteClusterRequest.
 
+        是否删除SFS Turbo（极速文件存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
         :return: The delete_efs of this DeleteClusterRequest.
         :rtype: str
@@ -129,6 +134,7 @@ class DeleteClusterRequest:
     def delete_efs(self, delete_efs):
         """Sets the delete_efs of this DeleteClusterRequest.
 
+        是否删除SFS Turbo（极速文件存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
         :param delete_efs: The delete_efs of this DeleteClusterRequest.
         :type: str
@@ -139,6 +145,7 @@ class DeleteClusterRequest:
     def delete_eni(self):
         """Gets the delete_eni of this DeleteClusterRequest.
 
+        是否删除eni ports（原生弹性网卡）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
         :return: The delete_eni of this DeleteClusterRequest.
         :rtype: str
@@ -149,6 +156,7 @@ class DeleteClusterRequest:
     def delete_eni(self, delete_eni):
         """Sets the delete_eni of this DeleteClusterRequest.
 
+        是否删除eni ports（原生弹性网卡）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
         :param delete_eni: The delete_eni of this DeleteClusterRequest.
         :type: str
@@ -159,6 +167,7 @@ class DeleteClusterRequest:
     def delete_evs(self):
         """Gets the delete_evs of this DeleteClusterRequest.
 
+        是否删除evs（云硬盘）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
         :return: The delete_evs of this DeleteClusterRequest.
         :rtype: str
@@ -169,6 +178,7 @@ class DeleteClusterRequest:
     def delete_evs(self, delete_evs):
         """Sets the delete_evs of this DeleteClusterRequest.
 
+        是否删除evs（云硬盘）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
         :param delete_evs: The delete_evs of this DeleteClusterRequest.
         :type: str
@@ -179,6 +189,7 @@ class DeleteClusterRequest:
     def delete_net(self):
         """Gets the delete_net of this DeleteClusterRequest.
 
+        是否删除elb（弹性负载均衡）等集群Service/Ingress相关资源。 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
         :return: The delete_net of this DeleteClusterRequest.
         :rtype: str
@@ -189,6 +200,7 @@ class DeleteClusterRequest:
     def delete_net(self, delete_net):
         """Sets the delete_net of this DeleteClusterRequest.
 
+        是否删除elb（弹性负载均衡）等集群Service/Ingress相关资源。 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
         :param delete_net: The delete_net of this DeleteClusterRequest.
         :type: str
@@ -199,6 +211,7 @@ class DeleteClusterRequest:
     def delete_obs(self):
         """Gets the delete_obs of this DeleteClusterRequest.
 
+        是否删除obs（对象存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
         :return: The delete_obs of this DeleteClusterRequest.
         :rtype: str
@@ -209,6 +222,7 @@ class DeleteClusterRequest:
     def delete_obs(self, delete_obs):
         """Sets the delete_obs of this DeleteClusterRequest.
 
+        是否删除obs（对象存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
         :param delete_obs: The delete_obs of this DeleteClusterRequest.
         :type: str
@@ -219,6 +233,7 @@ class DeleteClusterRequest:
     def delete_sfs(self):
         """Gets the delete_sfs of this DeleteClusterRequest.
 
+        是否删除sfs（文件存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
         :return: The delete_sfs of this DeleteClusterRequest.
         :rtype: str
@@ -229,6 +244,7 @@ class DeleteClusterRequest:
     def delete_sfs(self, delete_sfs):
         """Sets the delete_sfs of this DeleteClusterRequest.
 
+        是否删除sfs（文件存储卷）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
 
         :param delete_sfs: The delete_sfs of this DeleteClusterRequest.
         :type: str

@@ -54,6 +54,7 @@ class ListNodePoolsRequest:
     def cluster_id(self):
         """Gets the cluster_id of this ListNodePoolsRequest.
 
+        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :return: The cluster_id of this ListNodePoolsRequest.
         :rtype: str
@@ -64,6 +65,7 @@ class ListNodePoolsRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this ListNodePoolsRequest.
 
+        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :param cluster_id: The cluster_id of this ListNodePoolsRequest.
         :type: str
@@ -74,6 +76,7 @@ class ListNodePoolsRequest:
     def error_status(self):
         """Gets the error_status of this ListNodePoolsRequest.
 
+        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
 
         :return: The error_status of this ListNodePoolsRequest.
         :rtype: str
@@ -84,6 +87,7 @@ class ListNodePoolsRequest:
     def error_status(self, error_status):
         """Sets the error_status of this ListNodePoolsRequest.
 
+        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
 
         :param error_status: The error_status of this ListNodePoolsRequest.
         :type: str
@@ -94,6 +98,7 @@ class ListNodePoolsRequest:
     def show_default_node_pool(self):
         """Gets the show_default_node_pool of this ListNodePoolsRequest.
 
+        是否展示默认节点池。默认不展示，指定为“true”时展示默认节点池。
 
         :return: The show_default_node_pool of this ListNodePoolsRequest.
         :rtype: str
@@ -104,6 +109,7 @@ class ListNodePoolsRequest:
     def show_default_node_pool(self, show_default_node_pool):
         """Sets the show_default_node_pool of this ListNodePoolsRequest.
 
+        是否展示默认节点池。默认不展示，指定为“true”时展示默认节点池。
 
         :param show_default_node_pool: The show_default_node_pool of this ListNodePoolsRequest.
         :type: str

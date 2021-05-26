@@ -44,6 +44,7 @@ class ShowJobRequest:
     def job_id(self):
         """Gets the job_id of this ShowJobRequest.
 
+        作业ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :return: The job_id of this ShowJobRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowJobRequest:
     def job_id(self, job_id):
         """Sets the job_id of this ShowJobRequest.
 
+        作业ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :param job_id: The job_id of this ShowJobRequest.
         :type: str

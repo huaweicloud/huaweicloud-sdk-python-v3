@@ -26,7 +26,6 @@ class ShowTemplateDetailResponse(SdkResponse):
         'template_id': 'str',
         'template_name': 'str',
         'template_type': 'str',
-        'template_url': 'str',
         'user_id': 'str',
         'user_name': 'str',
         'domain_id': 'str',
@@ -46,7 +45,6 @@ class ShowTemplateDetailResponse(SdkResponse):
         'template_id': 'template_id',
         'template_name': 'template_name',
         'template_type': 'template_type',
-        'template_url': 'template_url',
         'user_id': 'user_id',
         'user_name': 'user_name',
         'domain_id': 'domain_id',
@@ -62,15 +60,14 @@ class ShowTemplateDetailResponse(SdkResponse):
         'states': 'states'
     }
 
-    def __init__(self, template_id=None, template_name=None, template_type=None, template_url=None, user_id=None, user_name=None, domain_id=None, domain_name=None, is_build_in=None, region=None, project_id=None, project_name=None, is_watch=None, description=None, parameter=None, flow=None, states=None):
+    def __init__(self, template_id=None, template_name=None, template_type=None, user_id=None, user_name=None, domain_id=None, domain_name=None, is_build_in=None, region=None, project_id=None, project_name=None, is_watch=None, description=None, parameter=None, flow=None, states=None):
         """ShowTemplateDetailResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowTemplateDetailResponse, self).__init__()
 
         self._template_id = None
         self._template_name = None
         self._template_type = None
-        self._template_url = None
         self._user_id = None
         self._user_name = None
         self._domain_id = None
@@ -92,8 +89,6 @@ class ShowTemplateDetailResponse(SdkResponse):
             self.template_name = template_name
         if template_type is not None:
             self.template_type = template_type
-        if template_url is not None:
-            self.template_url = template_url
         if user_id is not None:
             self.user_id = user_id
         if user_name is not None:
@@ -186,28 +181,6 @@ class ShowTemplateDetailResponse(SdkResponse):
         :type: str
         """
         self._template_type = template_type
-
-    @property
-    def template_url(self):
-        """Gets the template_url of this ShowTemplateDetailResponse.
-
-        模板编辑URL
-
-        :return: The template_url of this ShowTemplateDetailResponse.
-        :rtype: str
-        """
-        return self._template_url
-
-    @template_url.setter
-    def template_url(self, template_url):
-        """Sets the template_url of this ShowTemplateDetailResponse.
-
-        模板编辑URL
-
-        :param template_url: The template_url of this ShowTemplateDetailResponse.
-        :type: str
-        """
-        self._template_url = template_url
 
     @property
     def user_id(self):

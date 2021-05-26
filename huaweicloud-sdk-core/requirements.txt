@@ -1,6 +1,5 @@
 urllib3
 six
-python-dateutil
 requests
-requests-futures
-requests-toolbelt
+futures
+requests_futures

@@ -49,6 +49,7 @@ class CreateNodePoolRequest:
     def cluster_id(self):
         """Gets the cluster_id of this CreateNodePoolRequest.
 
+        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :return: The cluster_id of this CreateNodePoolRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateNodePoolRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this CreateNodePoolRequest.
 
+        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :param cluster_id: The cluster_id of this CreateNodePoolRequest.
         :type: str

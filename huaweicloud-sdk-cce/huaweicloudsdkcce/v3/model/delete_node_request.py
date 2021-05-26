@@ -58,6 +58,7 @@ class DeleteNodeRequest:
     def cluster_id(self):
         """Gets the cluster_id of this DeleteNodeRequest.
 
+        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :return: The cluster_id of this DeleteNodeRequest.
         :rtype: str
@@ -68,6 +69,7 @@ class DeleteNodeRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this DeleteNodeRequest.
 
+        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :param cluster_id: The cluster_id of this DeleteNodeRequest.
         :type: str
@@ -78,6 +80,7 @@ class DeleteNodeRequest:
     def node_id(self):
         """Gets the node_id of this DeleteNodeRequest.
 
+        节点ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :return: The node_id of this DeleteNodeRequest.
         :rtype: str
@@ -88,6 +91,7 @@ class DeleteNodeRequest:
     def node_id(self, node_id):
         """Sets the node_id of this DeleteNodeRequest.
 
+        节点ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :param node_id: The node_id of this DeleteNodeRequest.
         :type: str
@@ -98,6 +102,7 @@ class DeleteNodeRequest:
     def error_status(self):
         """Gets the error_status of this DeleteNodeRequest.
 
+        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
 
         :return: The error_status of this DeleteNodeRequest.
         :rtype: str
@@ -108,6 +113,7 @@ class DeleteNodeRequest:
     def error_status(self, error_status):
         """Sets the error_status of this DeleteNodeRequest.
 
+        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
 
         :param error_status: The error_status of this DeleteNodeRequest.
         :type: str
@@ -118,6 +124,7 @@ class DeleteNodeRequest:
     def nodepool_scale_down(self):
         """Gets the nodepool_scale_down of this DeleteNodeRequest.
 
+        标明是否为nodepool下发的请求。若不为“NoScaleDown”将自动更新对应节点池的实例数
 
         :return: The nodepool_scale_down of this DeleteNodeRequest.
         :rtype: str
@@ -128,6 +135,7 @@ class DeleteNodeRequest:
     def nodepool_scale_down(self, nodepool_scale_down):
         """Sets the nodepool_scale_down of this DeleteNodeRequest.
 
+        标明是否为nodepool下发的请求。若不为“NoScaleDown”将自动更新对应节点池的实例数
 
         :param nodepool_scale_down: The nodepool_scale_down of this DeleteNodeRequest.
         :type: str

@@ -70,6 +70,7 @@ class ListEventsRequest:
     def event_type(self):
         """Gets the event_type of this ListEventsRequest.
 
+        事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
 
         :return: The event_type of this ListEventsRequest.
         :rtype: str
@@ -80,6 +81,7 @@ class ListEventsRequest:
     def event_type(self, event_type):
         """Sets the event_type of this ListEventsRequest.
 
+        事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
 
         :param event_type: The event_type of this ListEventsRequest.
         :type: str
@@ -90,6 +92,7 @@ class ListEventsRequest:
     def event_name(self):
         """Gets the event_name of this ListEventsRequest.
 
+        事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
 
         :return: The event_name of this ListEventsRequest.
         :rtype: str
@@ -100,6 +103,7 @@ class ListEventsRequest:
     def event_name(self, event_name):
         """Sets the event_name of this ListEventsRequest.
 
+        事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
 
         :param event_name: The event_name of this ListEventsRequest.
         :type: str
@@ -110,6 +114,7 @@ class ListEventsRequest:
     def _from(self):
         """Gets the _from of this ListEventsRequest.
 
+        查询数据起始时间，UNIX时间戳，单位毫秒；例如：1605952700911。
 
         :return: The _from of this ListEventsRequest.
         :rtype: int
@@ -120,6 +125,7 @@ class ListEventsRequest:
     def _from(self, _from):
         """Sets the _from of this ListEventsRequest.
 
+        查询数据起始时间，UNIX时间戳，单位毫秒；例如：1605952700911。
 
         :param _from: The _from of this ListEventsRequest.
         :type: int
@@ -130,6 +136,7 @@ class ListEventsRequest:
     def to(self):
         """Gets the to of this ListEventsRequest.
 
+        查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to，例如：1606557500911。
 
         :return: The to of this ListEventsRequest.
         :rtype: int
@@ -140,6 +147,7 @@ class ListEventsRequest:
     def to(self, to):
         """Sets the to of this ListEventsRequest.
 
+        查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to，例如：1606557500911。
 
         :param to: The to of this ListEventsRequest.
         :type: int
@@ -150,6 +158,7 @@ class ListEventsRequest:
     def start(self):
         """Gets the start of this ListEventsRequest.
 
+        分页起始值，类型为integer，默认值为0。
 
         :return: The start of this ListEventsRequest.
         :rtype: int
@@ -160,6 +169,7 @@ class ListEventsRequest:
     def start(self, start):
         """Sets the start of this ListEventsRequest.
 
+        分页起始值，类型为integer，默认值为0。
 
         :param start: The start of this ListEventsRequest.
         :type: int
@@ -170,6 +180,7 @@ class ListEventsRequest:
     def limit(self):
         """Gets the limit of this ListEventsRequest.
 
+        单次查询的条数限制，取值范围(0,100]，默认值为100，用于限制结果数据条数。
 
         :return: The limit of this ListEventsRequest.
         :rtype: int
@@ -180,6 +191,7 @@ class ListEventsRequest:
     def limit(self, limit):
         """Sets the limit of this ListEventsRequest.
 
+        单次查询的条数限制，取值范围(0,100]，默认值为100，用于限制结果数据条数。
 
         :param limit: The limit of this ListEventsRequest.
         :type: int

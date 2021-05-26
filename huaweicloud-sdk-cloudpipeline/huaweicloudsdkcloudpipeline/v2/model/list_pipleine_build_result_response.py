@@ -39,7 +39,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
     def __init__(self, offset=None, limit=None, total=None, build_results=None):
         """ListPipleineBuildResultResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListPipleineBuildResultResponse, self).__init__()
 
         self._offset = None
         self._limit = None

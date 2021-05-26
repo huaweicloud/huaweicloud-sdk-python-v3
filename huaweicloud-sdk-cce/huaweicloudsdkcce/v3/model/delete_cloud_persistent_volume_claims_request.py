@@ -63,6 +63,7 @@ class DeleteCloudPersistentVolumeClaimsRequest:
     def name(self):
         """Gets the name of this DeleteCloudPersistentVolumeClaimsRequest.
 
+        需要删除的PersistentVolumClaim的名称。 
 
         :return: The name of this DeleteCloudPersistentVolumeClaimsRequest.
         :rtype: str
@@ -73,6 +74,7 @@ class DeleteCloudPersistentVolumeClaimsRequest:
     def name(self, name):
         """Sets the name of this DeleteCloudPersistentVolumeClaimsRequest.
 
+        需要删除的PersistentVolumClaim的名称。 
 
         :param name: The name of this DeleteCloudPersistentVolumeClaimsRequest.
         :type: str
@@ -83,6 +85,7 @@ class DeleteCloudPersistentVolumeClaimsRequest:
     def namespace(self):
         """Gets the namespace of this DeleteCloudPersistentVolumeClaimsRequest.
 
+        指定PersistentVolumeClaim所在的命名空间。 
 
         :return: The namespace of this DeleteCloudPersistentVolumeClaimsRequest.
         :rtype: str
@@ -93,6 +96,7 @@ class DeleteCloudPersistentVolumeClaimsRequest:
     def namespace(self, namespace):
         """Sets the namespace of this DeleteCloudPersistentVolumeClaimsRequest.
 
+        指定PersistentVolumeClaim所在的命名空间。 
 
         :param namespace: The namespace of this DeleteCloudPersistentVolumeClaimsRequest.
         :type: str
@@ -103,6 +107,7 @@ class DeleteCloudPersistentVolumeClaimsRequest:
     def delete_volume(self):
         """Gets the delete_volume of this DeleteCloudPersistentVolumeClaimsRequest.
 
+        删除PersistentVolumeClaim后是否保留后端关联的云存储。false表示不删除，true表示删除，默认为false。 
 
         :return: The delete_volume of this DeleteCloudPersistentVolumeClaimsRequest.
         :rtype: str
@@ -113,6 +118,7 @@ class DeleteCloudPersistentVolumeClaimsRequest:
     def delete_volume(self, delete_volume):
         """Sets the delete_volume of this DeleteCloudPersistentVolumeClaimsRequest.
 
+        删除PersistentVolumeClaim后是否保留后端关联的云存储。false表示不删除，true表示删除，默认为false。 
 
         :param delete_volume: The delete_volume of this DeleteCloudPersistentVolumeClaimsRequest.
         :type: str
@@ -123,6 +129,7 @@ class DeleteCloudPersistentVolumeClaimsRequest:
     def storage_type(self):
         """Gets the storage_type of this DeleteCloudPersistentVolumeClaimsRequest.
 
+        删除PersistentVolumeClaim后是否保留后端关联的云存储。false表示不删除，true表示删除，默认为false。 云存储的类型，和deleteVolume搭配使用。即deleteVolume和storageType必须同时配置。     - bs：EVS云硬盘存储     - nfs：SFS弹性文件存储     - obs：OBS对象存储     [- efs：SFS Turbo极速文件存储](tag:hws) 
 
         :return: The storage_type of this DeleteCloudPersistentVolumeClaimsRequest.
         :rtype: str
@@ -133,6 +140,7 @@ class DeleteCloudPersistentVolumeClaimsRequest:
     def storage_type(self, storage_type):
         """Sets the storage_type of this DeleteCloudPersistentVolumeClaimsRequest.
 
+        删除PersistentVolumeClaim后是否保留后端关联的云存储。false表示不删除，true表示删除，默认为false。 云存储的类型，和deleteVolume搭配使用。即deleteVolume和storageType必须同时配置。     - bs：EVS云硬盘存储     - nfs：SFS弹性文件存储     - obs：OBS对象存储     [- efs：SFS Turbo极速文件存储](tag:hws) 
 
         :param storage_type: The storage_type of this DeleteCloudPersistentVolumeClaimsRequest.
         :type: str
@@ -143,6 +151,7 @@ class DeleteCloudPersistentVolumeClaimsRequest:
     def x_cluster_id(self):
         """Gets the x_cluster_id of this DeleteCloudPersistentVolumeClaimsRequest.
 
+        集群ID，使用**https://Endpoint/uri**这种URL格式时必须指定此参数。获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :return: The x_cluster_id of this DeleteCloudPersistentVolumeClaimsRequest.
         :rtype: str
@@ -153,6 +162,7 @@ class DeleteCloudPersistentVolumeClaimsRequest:
     def x_cluster_id(self, x_cluster_id):
         """Sets the x_cluster_id of this DeleteCloudPersistentVolumeClaimsRequest.
 
+        集群ID，使用**https://Endpoint/uri**这种URL格式时必须指定此参数。获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :param x_cluster_id: The x_cluster_id of this DeleteCloudPersistentVolumeClaimsRequest.
         :type: str

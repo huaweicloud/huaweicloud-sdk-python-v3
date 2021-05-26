@@ -44,6 +44,7 @@ class ShowBackupRequest:
     def backup_id(self):
         """Gets the backup_id of this ShowBackupRequest.
 
+        备份ID
 
         :return: The backup_id of this ShowBackupRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowBackupRequest:
     def backup_id(self, backup_id):
         """Sets the backup_id of this ShowBackupRequest.
 
+        备份ID
 
         :param backup_id: The backup_id of this ShowBackupRequest.
         :type: str

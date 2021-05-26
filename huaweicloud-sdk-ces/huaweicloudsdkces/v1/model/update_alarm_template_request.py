@@ -49,6 +49,7 @@ class UpdateAlarmTemplateRequest:
     def template_id(self):
         """Gets the template_id of this UpdateAlarmTemplateRequest.
 
+        需要更新的自定义告警模板ID。
 
         :return: The template_id of this UpdateAlarmTemplateRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateAlarmTemplateRequest:
     def template_id(self, template_id):
         """Sets the template_id of this UpdateAlarmTemplateRequest.
 
+        需要更新的自定义告警模板ID。
 
         :param template_id: The template_id of this UpdateAlarmTemplateRequest.
         :type: str

@@ -35,7 +35,7 @@ class RemovePipelineResponse(SdkResponse):
     def __init__(self, pipeline_id=None, pipeline_name=None):
         """RemovePipelineResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RemovePipelineResponse, self).__init__()
 
         self._pipeline_id = None
         self._pipeline_name = None

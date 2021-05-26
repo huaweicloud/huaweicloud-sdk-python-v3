@@ -54,6 +54,7 @@ class ShowClusterRequest:
     def cluster_id(self):
         """Gets the cluster_id of this ShowClusterRequest.
 
+        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :return: The cluster_id of this ShowClusterRequest.
         :rtype: str
@@ -64,6 +65,7 @@ class ShowClusterRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this ShowClusterRequest.
 
+        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :param cluster_id: The cluster_id of this ShowClusterRequest.
         :type: str
@@ -74,6 +76,7 @@ class ShowClusterRequest:
     def error_status(self):
         """Gets the error_status of this ShowClusterRequest.
 
+        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
 
         :return: The error_status of this ShowClusterRequest.
         :rtype: str
@@ -84,6 +87,7 @@ class ShowClusterRequest:
     def error_status(self, error_status):
         """Sets the error_status of this ShowClusterRequest.
 
+        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
 
         :param error_status: The error_status of this ShowClusterRequest.
         :type: str
@@ -94,6 +98,7 @@ class ShowClusterRequest:
     def detail(self):
         """Gets the detail of this ShowClusterRequest.
 
+        查询集群详细信息。若设置为true，获取集群下节点总数(totalNodesNumber)、正常节点数(activeNodesNumber)、CPU总量(totalNodesCPU)、内存总量(totalNodesMemory)和已安装插件列表(installedAddonInstances)，已安装插件列表中包含名称(addonTemplateName)、版本号(version)、插件的状态信息(status)，放入到annotation中。
 
         :return: The detail of this ShowClusterRequest.
         :rtype: str
@@ -104,6 +109,7 @@ class ShowClusterRequest:
     def detail(self, detail):
         """Sets the detail of this ShowClusterRequest.
 
+        查询集群详细信息。若设置为true，获取集群下节点总数(totalNodesNumber)、正常节点数(activeNodesNumber)、CPU总量(totalNodesCPU)、内存总量(totalNodesMemory)和已安装插件列表(installedAddonInstances)，已安装插件列表中包含名称(addonTemplateName)、版本号(version)、插件的状态信息(status)，放入到annotation中。
 
         :param detail: The detail of this ShowClusterRequest.
         :type: str

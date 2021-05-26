@@ -100,6 +100,7 @@ class ListOpLogsRequest:
     def end_time(self):
         """Gets the end_time of this ListOpLogsRequest.
 
+        任务结束时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-02-01T12:00:00Z
 
         :return: The end_time of this ListOpLogsRequest.
         :rtype: str
@@ -110,6 +111,7 @@ class ListOpLogsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListOpLogsRequest.
 
+        任务结束时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-02-01T12:00:00Z
 
         :param end_time: The end_time of this ListOpLogsRequest.
         :type: str
@@ -120,6 +122,7 @@ class ListOpLogsRequest:
     def limit(self):
         """Gets the limit of this ListOpLogsRequest.
 
+        每页显示的条目数量，正整数
 
         :return: The limit of this ListOpLogsRequest.
         :rtype: int
@@ -130,6 +133,7 @@ class ListOpLogsRequest:
     def limit(self, limit):
         """Sets the limit of this ListOpLogsRequest.
 
+        每页显示的条目数量，正整数
 
         :param limit: The limit of this ListOpLogsRequest.
         :type: int
@@ -140,6 +144,7 @@ class ListOpLogsRequest:
     def offset(self):
         """Gets the offset of this ListOpLogsRequest.
 
+        偏移值，正整数
 
         :return: The offset of this ListOpLogsRequest.
         :rtype: int
@@ -150,6 +155,7 @@ class ListOpLogsRequest:
     def offset(self, offset):
         """Sets the offset of this ListOpLogsRequest.
 
+        偏移值，正整数
 
         :param offset: The offset of this ListOpLogsRequest.
         :type: int
@@ -160,6 +166,7 @@ class ListOpLogsRequest:
     def operation_type(self):
         """Gets the operation_type of this ListOpLogsRequest.
 
+        任务类型
 
         :return: The operation_type of this ListOpLogsRequest.
         :rtype: str
@@ -170,6 +177,7 @@ class ListOpLogsRequest:
     def operation_type(self, operation_type):
         """Sets the operation_type of this ListOpLogsRequest.
 
+        任务类型
 
         :param operation_type: The operation_type of this ListOpLogsRequest.
         :type: str
@@ -180,6 +188,7 @@ class ListOpLogsRequest:
     def provider_id(self):
         """Gets the provider_id of this ListOpLogsRequest.
 
+        备份提供商ID
 
         :return: The provider_id of this ListOpLogsRequest.
         :rtype: str
@@ -190,6 +199,7 @@ class ListOpLogsRequest:
     def provider_id(self, provider_id):
         """Sets the provider_id of this ListOpLogsRequest.
 
+        备份提供商ID
 
         :param provider_id: The provider_id of this ListOpLogsRequest.
         :type: str
@@ -200,6 +210,7 @@ class ListOpLogsRequest:
     def resource_id(self):
         """Gets the resource_id of this ListOpLogsRequest.
 
+        该任务操作的资源ID
 
         :return: The resource_id of this ListOpLogsRequest.
         :rtype: str
@@ -210,6 +221,7 @@ class ListOpLogsRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ListOpLogsRequest.
 
+        该任务操作的资源ID
 
         :param resource_id: The resource_id of this ListOpLogsRequest.
         :type: str
@@ -220,6 +232,7 @@ class ListOpLogsRequest:
     def resource_name(self):
         """Gets the resource_name of this ListOpLogsRequest.
 
+        该任务操作的资源名称
 
         :return: The resource_name of this ListOpLogsRequest.
         :rtype: str
@@ -230,6 +243,7 @@ class ListOpLogsRequest:
     def resource_name(self, resource_name):
         """Sets the resource_name of this ListOpLogsRequest.
 
+        该任务操作的资源名称
 
         :param resource_name: The resource_name of this ListOpLogsRequest.
         :type: str
@@ -240,6 +254,7 @@ class ListOpLogsRequest:
     def start_time(self):
         """Gets the start_time of this ListOpLogsRequest.
 
+        任务开始时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-01-01T12:00:00Z
 
         :return: The start_time of this ListOpLogsRequest.
         :rtype: str
@@ -250,6 +265,7 @@ class ListOpLogsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListOpLogsRequest.
 
+        任务开始时间，格式为%YYYY-%mm-%ddT%HH:%MM:%SSZ，例如2018-01-01T12:00:00Z
 
         :param start_time: The start_time of this ListOpLogsRequest.
         :type: str
@@ -260,6 +276,7 @@ class ListOpLogsRequest:
     def status(self):
         """Gets the status of this ListOpLogsRequest.
 
+        任务状态
 
         :return: The status of this ListOpLogsRequest.
         :rtype: str
@@ -270,6 +287,7 @@ class ListOpLogsRequest:
     def status(self, status):
         """Sets the status of this ListOpLogsRequest.
 
+        任务状态
 
         :param status: The status of this ListOpLogsRequest.
         :type: str
@@ -280,6 +298,7 @@ class ListOpLogsRequest:
     def vault_id(self):
         """Gets the vault_id of this ListOpLogsRequest.
 
+        存储库ID,该任务操作的资源所属绑定的存储库。
 
         :return: The vault_id of this ListOpLogsRequest.
         :rtype: str
@@ -290,6 +309,7 @@ class ListOpLogsRequest:
     def vault_id(self, vault_id):
         """Sets the vault_id of this ListOpLogsRequest.
 
+        存储库ID,该任务操作的资源所属绑定的存储库。
 
         :param vault_id: The vault_id of this ListOpLogsRequest.
         :type: str
@@ -300,6 +320,7 @@ class ListOpLogsRequest:
     def vault_name(self):
         """Gets the vault_name of this ListOpLogsRequest.
 
+        存储库名称，该任务操作资源所绑定的存储库名称。
 
         :return: The vault_name of this ListOpLogsRequest.
         :rtype: str
@@ -310,6 +331,7 @@ class ListOpLogsRequest:
     def vault_name(self, vault_name):
         """Sets the vault_name of this ListOpLogsRequest.
 
+        存储库名称，该任务操作资源所绑定的存储库名称。
 
         :param vault_name: The vault_name of this ListOpLogsRequest.
         :type: str
@@ -320,6 +342,7 @@ class ListOpLogsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListOpLogsRequest.
 
+        企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
 
         :return: The enterprise_project_id of this ListOpLogsRequest.
         :rtype: str
@@ -330,6 +353,7 @@ class ListOpLogsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListOpLogsRequest.
 
+        企业项目id或all_granted_eps，all_granted_eps表示查询用户有权限的所有企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListOpLogsRequest.
         :type: str

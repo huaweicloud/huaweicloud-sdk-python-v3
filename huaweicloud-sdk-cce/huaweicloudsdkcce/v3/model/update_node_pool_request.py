@@ -58,6 +58,7 @@ class UpdateNodePoolRequest:
     def cluster_id(self):
         """Gets the cluster_id of this UpdateNodePoolRequest.
 
+        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :return: The cluster_id of this UpdateNodePoolRequest.
         :rtype: str
@@ -68,6 +69,7 @@ class UpdateNodePoolRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this UpdateNodePoolRequest.
 
+        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
 
         :param cluster_id: The cluster_id of this UpdateNodePoolRequest.
         :type: str
@@ -78,6 +80,7 @@ class UpdateNodePoolRequest:
     def nodepool_id(self):
         """Gets the nodepool_id of this UpdateNodePoolRequest.
 
+        节点池ID
 
         :return: The nodepool_id of this UpdateNodePoolRequest.
         :rtype: str
@@ -88,6 +91,7 @@ class UpdateNodePoolRequest:
     def nodepool_id(self, nodepool_id):
         """Sets the nodepool_id of this UpdateNodePoolRequest.
 
+        节点池ID
 
         :param nodepool_id: The nodepool_id of this UpdateNodePoolRequest.
         :type: str
@@ -98,6 +102,7 @@ class UpdateNodePoolRequest:
     def error_status(self):
         """Gets the error_status of this UpdateNodePoolRequest.
 
+        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
 
         :return: The error_status of this UpdateNodePoolRequest.
         :rtype: str
@@ -108,6 +113,7 @@ class UpdateNodePoolRequest:
     def error_status(self, error_status):
         """Sets the error_status of this UpdateNodePoolRequest.
 
+        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
 
         :param error_status: The error_status of this UpdateNodePoolRequest.
         :type: str

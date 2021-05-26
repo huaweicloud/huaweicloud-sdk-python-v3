@@ -55,6 +55,7 @@ class ListAlarmsRequest:
     def limit(self):
         """Gets the limit of this ListAlarmsRequest.
 
+        取值范围(0,100]，默认值为100  用于限制结果数据条数。
 
         :return: The limit of this ListAlarmsRequest.
         :rtype: int
@@ -65,6 +66,7 @@ class ListAlarmsRequest:
     def limit(self, limit):
         """Sets the limit of this ListAlarmsRequest.
 
+        取值范围(0,100]，默认值为100  用于限制结果数据条数。
 
         :param limit: The limit of this ListAlarmsRequest.
         :type: int
@@ -75,6 +77,7 @@ class ListAlarmsRequest:
     def order(self):
         """Gets the order of this ListAlarmsRequest.
 
+        用于标识结果排序方法。  取值说明，默认值为desc。  asc：升序 desc：降序
 
         :return: The order of this ListAlarmsRequest.
         :rtype: str
@@ -85,6 +88,7 @@ class ListAlarmsRequest:
     def order(self, order):
         """Sets the order of this ListAlarmsRequest.
 
+        用于标识结果排序方法。  取值说明，默认值为desc。  asc：升序 desc：降序
 
         :param order: The order of this ListAlarmsRequest.
         :type: str
@@ -95,6 +99,7 @@ class ListAlarmsRequest:
     def start(self):
         """Gets the start of this ListAlarmsRequest.
 
+        分页起始值，内容为alarm_id。
 
         :return: The start of this ListAlarmsRequest.
         :rtype: str
@@ -105,6 +110,7 @@ class ListAlarmsRequest:
     def start(self, start):
         """Sets the start of this ListAlarmsRequest.
 
+        分页起始值，内容为alarm_id。
 
         :param start: The start of this ListAlarmsRequest.
         :type: str

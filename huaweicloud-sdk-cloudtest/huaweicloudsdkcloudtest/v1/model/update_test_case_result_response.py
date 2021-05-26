@@ -37,7 +37,7 @@ class UpdateTestCaseResultResponse(SdkResponse):
     def __init__(self, error_code=None, error_msg=None, error_detail=None):
         """UpdateTestCaseResultResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateTestCaseResultResponse, self).__init__()
 
         self._error_code = None
         self._error_msg = None

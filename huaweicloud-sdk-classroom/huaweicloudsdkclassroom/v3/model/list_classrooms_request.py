@@ -55,6 +55,7 @@ class ListClassroomsRequest:
     def offset(self):
         """Gets the offset of this ListClassroomsRequest.
 
+        信息记录的起始编号
 
         :return: The offset of this ListClassroomsRequest.
         :rtype: int
@@ -65,6 +66,7 @@ class ListClassroomsRequest:
     def offset(self, offset):
         """Sets the offset of this ListClassroomsRequest.
 
+        信息记录的起始编号
 
         :param offset: The offset of this ListClassroomsRequest.
         :type: int
@@ -75,6 +77,7 @@ class ListClassroomsRequest:
     def limit(self):
         """Gets the limit of this ListClassroomsRequest.
 
+        每页包含的信息记录数
 
         :return: The limit of this ListClassroomsRequest.
         :rtype: int
@@ -85,6 +88,7 @@ class ListClassroomsRequest:
     def limit(self, limit):
         """Sets the limit of this ListClassroomsRequest.
 
+        每页包含的信息记录数
 
         :param limit: The limit of this ListClassroomsRequest.
         :type: int
@@ -95,6 +99,7 @@ class ListClassroomsRequest:
     def query_type(self):
         """Gets the query_type of this ListClassroomsRequest.
 
+        查询的课堂类别，默认查询所有的课堂。 取值范围： create：只查询当前用户创建的课堂。 attend：只查询当前用户加入的课堂。 all：查询当前用户所有的课堂。
 
         :return: The query_type of this ListClassroomsRequest.
         :rtype: str
@@ -105,6 +110,7 @@ class ListClassroomsRequest:
     def query_type(self, query_type):
         """Sets the query_type of this ListClassroomsRequest.
 
+        查询的课堂类别，默认查询所有的课堂。 取值范围： create：只查询当前用户创建的课堂。 attend：只查询当前用户加入的课堂。 all：查询当前用户所有的课堂。
 
         :param query_type: The query_type of this ListClassroomsRequest.
         :type: str

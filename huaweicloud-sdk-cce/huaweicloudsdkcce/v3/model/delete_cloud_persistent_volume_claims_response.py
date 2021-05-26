@@ -41,7 +41,7 @@ class DeleteCloudPersistentVolumeClaimsResponse(SdkResponse):
     def __init__(self, api_version=None, kind=None, metadata=None, spec=None, status=None):
         """DeleteCloudPersistentVolumeClaimsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteCloudPersistentVolumeClaimsResponse, self).__init__()
 
         self._api_version = None
         self._kind = None

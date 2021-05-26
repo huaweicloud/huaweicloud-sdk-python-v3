@@ -24,7 +24,7 @@ from requests.exceptions import ConnectionError
 from urllib3.exceptions import SSLError, NewConnectionError
 
 
-class SdkResponse:
+class SdkResponse(object):
     def __init__(self):
         self.status_code = None
         self.header_params = None

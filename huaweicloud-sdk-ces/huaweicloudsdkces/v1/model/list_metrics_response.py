@@ -35,7 +35,7 @@ class ListMetricsResponse(SdkResponse):
     def __init__(self, metrics=None, meta_data=None):
         """ListMetricsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListMetricsResponse, self).__init__()
 
         self._metrics = None
         self._meta_data = None

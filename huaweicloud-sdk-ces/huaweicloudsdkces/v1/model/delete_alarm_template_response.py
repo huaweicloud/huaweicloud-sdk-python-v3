@@ -31,7 +31,7 @@ class DeleteAlarmTemplateResponse(SdkResponse):
     def __init__(self):
         """DeleteAlarmTemplateResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteAlarmTemplateResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

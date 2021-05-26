@@ -19,7 +19,7 @@
 """
 
 import json
-
+import six
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException
 from huaweicloudsdkcore.sdk_request import SdkRequest
 from six.moves.urllib.parse import urlparse
@@ -49,7 +49,7 @@ def keystone_list_projects(http_client, request):
         raise e
     if http_response is not None and hasattr(http_response, "content"):
         content = getattr(http_response, "content")
-        response = json.loads(content)
+        response = json.loads(six.ensure_str(content))
         if "projects" in response and len(response["projects"]) == 1:
             return response["projects"][0]["id"]
         elif "projects" in response and len(response["projects"]) > 1:
@@ -80,7 +80,7 @@ def keystone_list_auth_domains(http_client, request):
         raise e
     if http_response is not None and hasattr(http_response, "content"):
         content = getattr(http_response, "content")
-        response = json.loads(content)
+        response = json.loads(six.ensure_str(content))
         if "domains" in response and len(response["domains"]) == 1:
             return response["domains"][0]["id"]
         else:

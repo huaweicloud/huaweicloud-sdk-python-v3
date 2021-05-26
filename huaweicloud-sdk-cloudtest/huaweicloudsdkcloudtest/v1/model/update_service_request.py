@@ -49,6 +49,7 @@ class UpdateServiceRequest:
     def service_id(self):
         """Gets the service_id of this UpdateServiceRequest.
 
+        注册服务唯一标识，该值由注册接口返回
 
         :return: The service_id of this UpdateServiceRequest.
         :rtype: int
@@ -59,6 +60,7 @@ class UpdateServiceRequest:
     def service_id(self, service_id):
         """Sets the service_id of this UpdateServiceRequest.
 
+        注册服务唯一标识，该值由注册接口返回
 
         :param service_id: The service_id of this UpdateServiceRequest.
         :type: int

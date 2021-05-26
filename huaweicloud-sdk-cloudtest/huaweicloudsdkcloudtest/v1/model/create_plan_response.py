@@ -37,7 +37,7 @@ class CreatePlanResponse(SdkResponse):
     def __init__(self, plan_id=None, error_code=None, error_msg=None):
         """CreatePlanResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreatePlanResponse, self).__init__()
 
         self._plan_id = None
         self._error_code = None

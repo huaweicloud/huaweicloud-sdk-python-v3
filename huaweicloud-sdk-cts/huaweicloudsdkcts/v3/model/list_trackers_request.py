@@ -50,6 +50,7 @@ class ListTrackersRequest:
     def tracker_name(self):
         """Gets the tracker_name of this ListTrackersRequest.
 
+        标示追踪器名称。 在不传入该字段的情况下，将查询租户所有的追踪器。
 
         :return: The tracker_name of this ListTrackersRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class ListTrackersRequest:
     def tracker_name(self, tracker_name):
         """Sets the tracker_name of this ListTrackersRequest.
 
+        标示追踪器名称。 在不传入该字段的情况下，将查询租户所有的追踪器。
 
         :param tracker_name: The tracker_name of this ListTrackersRequest.
         :type: str
@@ -70,6 +72,7 @@ class ListTrackersRequest:
     def tracker_type(self):
         """Gets the tracker_type of this ListTrackersRequest.
 
+        标识追踪器类型。 目前支持系统追踪器有管理类追踪器（system）和数据类追踪器（data）。
 
         :return: The tracker_type of this ListTrackersRequest.
         :rtype: str
@@ -80,6 +83,7 @@ class ListTrackersRequest:
     def tracker_type(self, tracker_type):
         """Sets the tracker_type of this ListTrackersRequest.
 
+        标识追踪器类型。 目前支持系统追踪器有管理类追踪器（system）和数据类追踪器（data）。
 
         :param tracker_type: The tracker_type of this ListTrackersRequest.
         :type: str

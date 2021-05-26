@@ -58,6 +58,7 @@ class ListJobsRequest:
     def source_from(self):
         """Gets the source_from of this ListJobsRequest.
 
+        作业来源于课堂或课程。 取值范围： classroom:课堂作业 course:课程作业
 
         :return: The source_from of this ListJobsRequest.
         :rtype: str
@@ -68,6 +69,7 @@ class ListJobsRequest:
     def source_from(self, source_from):
         """Sets the source_from of this ListJobsRequest.
 
+        作业来源于课堂或课程。 取值范围： classroom:课堂作业 course:课程作业
 
         :param source_from: The source_from of this ListJobsRequest.
         :type: str
@@ -78,6 +80,7 @@ class ListJobsRequest:
     def source_id(self):
         """Gets the source_id of this ListJobsRequest.
 
+        课堂ID或者课程ID。
 
         :return: The source_id of this ListJobsRequest.
         :rtype: str
@@ -88,6 +91,7 @@ class ListJobsRequest:
     def source_id(self, source_id):
         """Sets the source_id of this ListJobsRequest.
 
+        课堂ID或者课程ID。
 
         :param source_id: The source_id of this ListJobsRequest.
         :type: str
@@ -98,6 +102,7 @@ class ListJobsRequest:
     def offset(self):
         """Gets the offset of this ListJobsRequest.
 
+        信息记录的起始编号
 
         :return: The offset of this ListJobsRequest.
         :rtype: int
@@ -108,6 +113,7 @@ class ListJobsRequest:
     def offset(self, offset):
         """Sets the offset of this ListJobsRequest.
 
+        信息记录的起始编号
 
         :param offset: The offset of this ListJobsRequest.
         :type: int
@@ -118,6 +124,7 @@ class ListJobsRequest:
     def limit(self):
         """Gets the limit of this ListJobsRequest.
 
+        每页包含的信息记录数
 
         :return: The limit of this ListJobsRequest.
         :rtype: int
@@ -128,6 +135,7 @@ class ListJobsRequest:
     def limit(self, limit):
         """Sets the limit of this ListJobsRequest.
 
+        每页包含的信息记录数
 
         :param limit: The limit of this ListJobsRequest.
         :type: int

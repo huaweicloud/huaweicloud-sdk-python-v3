@@ -35,7 +35,7 @@ class ListOpLogsResponse(SdkResponse):
     def __init__(self, operation_logs=None, count=None):
         """ListOpLogsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListOpLogsResponse, self).__init__()
 
         self._operation_logs = None
         self._count = None

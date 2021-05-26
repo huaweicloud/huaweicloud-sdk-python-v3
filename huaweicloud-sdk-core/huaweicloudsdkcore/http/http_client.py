@@ -20,6 +20,7 @@
 
 import json
 
+import six
 import requests
 from requests import HTTPError, Timeout, TooManyRedirects
 from requests.adapters import HTTPAdapter
@@ -31,7 +32,7 @@ from urllib3.exceptions import SSLError, NewConnectionError
 from huaweicloudsdkcore.exceptions import exceptions
 
 
-class HttpClient:
+class HttpClient(object):
     def __init__(self, config, http_handler, exception_handler, logger):
         self._logger = logger
         self._exception_handler = exception_handler
@@ -140,7 +141,7 @@ class HttpClient:
         sdk_error = exceptions.SdkError()
 
         try:
-            sdk_error_dict = json.loads(response_body)
+            sdk_error_dict = json.loads(six.ensure_str(response_body))
             if "error_code" in sdk_error_dict and "error_msg" in sdk_error_dict:
                 sdk_error = exceptions.SdkError(request_id, sdk_error_dict["error_code"],
                                                 sdk_error_dict["error_msg"])

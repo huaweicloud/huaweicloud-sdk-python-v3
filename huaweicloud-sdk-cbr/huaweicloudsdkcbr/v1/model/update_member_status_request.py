@@ -53,6 +53,7 @@ class UpdateMemberStatusRequest:
     def member_id(self):
         """Gets the member_id of this UpdateMemberStatusRequest.
 
+        成员id，成员id与项目id为同一个。
 
         :return: The member_id of this UpdateMemberStatusRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class UpdateMemberStatusRequest:
     def member_id(self, member_id):
         """Sets the member_id of this UpdateMemberStatusRequest.
 
+        成员id，成员id与项目id为同一个。
 
         :param member_id: The member_id of this UpdateMemberStatusRequest.
         :type: str
@@ -73,6 +75,7 @@ class UpdateMemberStatusRequest:
     def backup_id(self):
         """Gets the backup_id of this UpdateMemberStatusRequest.
 
+        备份副本id
 
         :return: The backup_id of this UpdateMemberStatusRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class UpdateMemberStatusRequest:
     def backup_id(self, backup_id):
         """Sets the backup_id of this UpdateMemberStatusRequest.
 
+        备份副本id
 
         :param backup_id: The backup_id of this UpdateMemberStatusRequest.
         :type: str

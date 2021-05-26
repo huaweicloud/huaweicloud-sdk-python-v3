@@ -44,6 +44,7 @@ class DeleteResourceGroupRequest:
     def group_id(self):
         """Gets the group_id of this DeleteResourceGroupRequest.
 
+        资源分组ID。
 
         :return: The group_id of this DeleteResourceGroupRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteResourceGroupRequest:
     def group_id(self, group_id):
         """Sets the group_id of this DeleteResourceGroupRequest.
 
+        资源分组ID。
 
         :param group_id: The group_id of this DeleteResourceGroupRequest.
         :type: str

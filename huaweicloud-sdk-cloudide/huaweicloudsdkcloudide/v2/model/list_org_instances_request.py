@@ -64,6 +64,7 @@ class ListOrgInstancesRequest:
     def is_temporary(self):
         """Gets the is_temporary of this ListOrgInstancesRequest.
 
+        是否页面显示（以标签配置为准）
 
         :return: The is_temporary of this ListOrgInstancesRequest.
         :rtype: bool
@@ -74,6 +75,7 @@ class ListOrgInstancesRequest:
     def is_temporary(self, is_temporary):
         """Sets the is_temporary of this ListOrgInstancesRequest.
 
+        是否页面显示（以标签配置为准）
 
         :param is_temporary: The is_temporary of this ListOrgInstancesRequest.
         :type: bool
@@ -84,6 +86,7 @@ class ListOrgInstancesRequest:
     def limit(self):
         """Gets the limit of this ListOrgInstancesRequest.
 
+        每页显示的条目数量 10/15/30
 
         :return: The limit of this ListOrgInstancesRequest.
         :rtype: int
@@ -94,6 +97,7 @@ class ListOrgInstancesRequest:
     def limit(self, limit):
         """Sets the limit of this ListOrgInstancesRequest.
 
+        每页显示的条目数量 10/15/30
 
         :param limit: The limit of this ListOrgInstancesRequest.
         :type: int
@@ -104,6 +108,7 @@ class ListOrgInstancesRequest:
     def offset(self):
         """Gets the offset of this ListOrgInstancesRequest.
 
+        偏移量，表示从此偏移量开始查询
 
         :return: The offset of this ListOrgInstancesRequest.
         :rtype: int
@@ -114,6 +119,7 @@ class ListOrgInstancesRequest:
     def offset(self, offset):
         """Sets the offset of this ListOrgInstancesRequest.
 
+        偏移量，表示从此偏移量开始查询
 
         :param offset: The offset of this ListOrgInstancesRequest.
         :type: int
@@ -124,6 +130,7 @@ class ListOrgInstancesRequest:
     def org_id(self):
         """Gets the org_id of this ListOrgInstancesRequest.
 
+        组织id（对应华为云帐号的domainId）
 
         :return: The org_id of this ListOrgInstancesRequest.
         :rtype: str
@@ -134,6 +141,7 @@ class ListOrgInstancesRequest:
     def org_id(self, org_id):
         """Sets the org_id of this ListOrgInstancesRequest.
 
+        组织id（对应华为云帐号的domainId）
 
         :param org_id: The org_id of this ListOrgInstancesRequest.
         :type: str
@@ -144,6 +152,7 @@ class ListOrgInstancesRequest:
     def search(self):
         """Gets the search of this ListOrgInstancesRequest.
 
+        关键字查询(根据实例名，描述模糊查询)
 
         :return: The search of this ListOrgInstancesRequest.
         :rtype: str
@@ -154,6 +163,7 @@ class ListOrgInstancesRequest:
     def search(self, search):
         """Sets the search of this ListOrgInstancesRequest.
 
+        关键字查询(根据实例名，描述模糊查询)
 
         :param search: The search of this ListOrgInstancesRequest.
         :type: str

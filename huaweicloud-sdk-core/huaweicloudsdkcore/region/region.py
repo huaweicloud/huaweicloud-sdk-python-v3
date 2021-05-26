@@ -19,7 +19,7 @@
 """
 
 
-class Region:
+class Region(object):
     def __init__(self, id=None, endpoint=None):
         self._id = None
         self._endpoint = None

@@ -44,6 +44,7 @@ class DeleteBackupRequest:
     def backup_id(self):
         """Gets the backup_id of this DeleteBackupRequest.
 
+        指定删除的备份ID
 
         :return: The backup_id of this DeleteBackupRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteBackupRequest:
     def backup_id(self, backup_id):
         """Sets the backup_id of this DeleteBackupRequest.
 
+        指定删除的备份ID
 
         :param backup_id: The backup_id of this DeleteBackupRequest.
         :type: str

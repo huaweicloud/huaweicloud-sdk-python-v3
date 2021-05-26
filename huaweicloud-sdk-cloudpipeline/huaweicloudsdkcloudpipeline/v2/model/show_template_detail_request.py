@@ -58,6 +58,7 @@ class ShowTemplateDetailRequest:
     def x_language(self):
         """Gets the x_language of this ShowTemplateDetailRequest.
 
+        语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :return: The x_language of this ShowTemplateDetailRequest.
         :rtype: str
@@ -68,6 +69,7 @@ class ShowTemplateDetailRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowTemplateDetailRequest.
 
+        语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this ShowTemplateDetailRequest.
         :type: str
@@ -78,6 +80,7 @@ class ShowTemplateDetailRequest:
     def template_id(self):
         """Gets the template_id of this ShowTemplateDetailRequest.
 
+        模板ID
 
         :return: The template_id of this ShowTemplateDetailRequest.
         :rtype: str
@@ -88,6 +91,7 @@ class ShowTemplateDetailRequest:
     def template_id(self, template_id):
         """Sets the template_id of this ShowTemplateDetailRequest.
 
+        模板ID
 
         :param template_id: The template_id of this ShowTemplateDetailRequest.
         :type: str
@@ -98,6 +102,7 @@ class ShowTemplateDetailRequest:
     def template_type(self):
         """Gets the template_type of this ShowTemplateDetailRequest.
 
+        模板类型
 
         :return: The template_type of this ShowTemplateDetailRequest.
         :rtype: str
@@ -108,6 +113,7 @@ class ShowTemplateDetailRequest:
     def template_type(self, template_type):
         """Sets the template_type of this ShowTemplateDetailRequest.
 
+        模板类型
 
         :param template_type: The template_type of this ShowTemplateDetailRequest.
         :type: str
@@ -118,6 +124,7 @@ class ShowTemplateDetailRequest:
     def source(self):
         """Gets the source of this ShowTemplateDetailRequest.
 
+        接口调用方
 
         :return: The source of this ShowTemplateDetailRequest.
         :rtype: str
@@ -128,6 +135,7 @@ class ShowTemplateDetailRequest:
     def source(self, source):
         """Sets the source of this ShowTemplateDetailRequest.
 
+        接口调用方
 
         :param source: The source of this ShowTemplateDetailRequest.
         :type: str

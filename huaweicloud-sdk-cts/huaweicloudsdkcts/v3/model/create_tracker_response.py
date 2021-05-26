@@ -59,7 +59,7 @@ class CreateTrackerResponse(SdkResponse):
     def __init__(self, id=None, create_time=None, kms_id=None, is_support_validate=None, lts=None, tracker_type=None, domain_id=None, project_id=None, tracker_name=None, status=None, detail=None, is_support_trace_files_encryption=None, obs_info=None, data_bucket=None):
         """CreateTrackerResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateTrackerResponse, self).__init__()
 
         self._id = None
         self._create_time = None
