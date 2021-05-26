@@ -24,8 +24,8 @@ class ListScalingActivityLogsRequest:
 
     openapi_types = {
         'scaling_group_id': 'str',
-        'start_time': 'datetime',
-        'end_time': 'datetime',
+        'start_time': 'str',
+        'end_time': 'str',
         'start_number': 'int',
         'limit': 'int'
     }
@@ -64,6 +64,7 @@ class ListScalingActivityLogsRequest:
     def scaling_group_id(self):
         """Gets the scaling_group_id of this ListScalingActivityLogsRequest.
 
+        伸缩组ID。
 
         :return: The scaling_group_id of this ListScalingActivityLogsRequest.
         :rtype: str
@@ -74,6 +75,7 @@ class ListScalingActivityLogsRequest:
     def scaling_group_id(self, scaling_group_id):
         """Sets the scaling_group_id of this ListScalingActivityLogsRequest.
 
+        伸缩组ID。
 
         :param scaling_group_id: The scaling_group_id of this ListScalingActivityLogsRequest.
         :type: str
@@ -84,9 +86,10 @@ class ListScalingActivityLogsRequest:
     def start_time(self):
         """Gets the start_time of this ListScalingActivityLogsRequest.
 
+        查询的起始时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
         :return: The start_time of this ListScalingActivityLogsRequest.
-        :rtype: datetime
+        :rtype: str
         """
         return self._start_time
 
@@ -94,9 +97,10 @@ class ListScalingActivityLogsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListScalingActivityLogsRequest.
 
+        查询的起始时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
         :param start_time: The start_time of this ListScalingActivityLogsRequest.
-        :type: datetime
+        :type: str
         """
         self._start_time = start_time
 
@@ -104,9 +108,10 @@ class ListScalingActivityLogsRequest:
     def end_time(self):
         """Gets the end_time of this ListScalingActivityLogsRequest.
 
+        查询的截止时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
         :return: The end_time of this ListScalingActivityLogsRequest.
-        :rtype: datetime
+        :rtype: str
         """
         return self._end_time
 
@@ -114,9 +119,10 @@ class ListScalingActivityLogsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListScalingActivityLogsRequest.
 
+        查询的截止时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
         :param end_time: The end_time of this ListScalingActivityLogsRequest.
-        :type: datetime
+        :type: str
         """
         self._end_time = end_time
 
@@ -124,6 +130,7 @@ class ListScalingActivityLogsRequest:
     def start_number(self):
         """Gets the start_number of this ListScalingActivityLogsRequest.
 
+        查询的起始行号，默认为0。
 
         :return: The start_number of this ListScalingActivityLogsRequest.
         :rtype: int
@@ -134,6 +141,7 @@ class ListScalingActivityLogsRequest:
     def start_number(self, start_number):
         """Sets the start_number of this ListScalingActivityLogsRequest.
 
+        查询的起始行号，默认为0。
 
         :param start_number: The start_number of this ListScalingActivityLogsRequest.
         :type: int
@@ -144,6 +152,7 @@ class ListScalingActivityLogsRequest:
     def limit(self):
         """Gets the limit of this ListScalingActivityLogsRequest.
 
+        查询记录数，默认20，最大100。
 
         :return: The limit of this ListScalingActivityLogsRequest.
         :rtype: int
@@ -154,6 +163,7 @@ class ListScalingActivityLogsRequest:
     def limit(self, limit):
         """Sets the limit of this ListScalingActivityLogsRequest.
 
+        查询记录数，默认20，最大100。
 
         :param limit: The limit of this ListScalingActivityLogsRequest.
         :type: int

@@ -39,7 +39,7 @@ class ListScalingPolicyExecuteLogsResponse(SdkResponse):
     def __init__(self, total_number=None, start_number=None, limit=None, scaling_policy_execute_log=None):
         """ListScalingPolicyExecuteLogsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListScalingPolicyExecuteLogsResponse, self).__init__()
 
         self._total_number = None
         self._start_number = None

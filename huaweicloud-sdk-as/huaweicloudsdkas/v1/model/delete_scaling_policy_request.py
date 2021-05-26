@@ -44,6 +44,7 @@ class DeleteScalingPolicyRequest:
     def scaling_policy_id(self):
         """Gets the scaling_policy_id of this DeleteScalingPolicyRequest.
 
+        伸缩策略ID。
 
         :return: The scaling_policy_id of this DeleteScalingPolicyRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteScalingPolicyRequest:
     def scaling_policy_id(self, scaling_policy_id):
         """Sets the scaling_policy_id of this DeleteScalingPolicyRequest.
 
+        伸缩策略ID。
 
         :param scaling_policy_id: The scaling_policy_id of this DeleteScalingPolicyRequest.
         :type: str

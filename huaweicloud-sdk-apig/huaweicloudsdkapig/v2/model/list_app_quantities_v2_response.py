@@ -35,7 +35,7 @@ class ListAppQuantitiesV2Response(SdkResponse):
     def __init__(self, authed_nums=None, unauthed_nums=None):
         """ListAppQuantitiesV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListAppQuantitiesV2Response, self).__init__()
 
         self._authed_nums = None
         self._unauthed_nums = None

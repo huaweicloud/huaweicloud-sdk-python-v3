@@ -41,7 +41,7 @@ class AssociateCertificateV2Response(SdkResponse):
     def __init__(self, ssl_name=None, url_domain=None, ssl_id=None, id=None, status=None):
         """AssociateCertificateV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AssociateCertificateV2Response, self).__init__()
 
         self._ssl_name = None
         self._url_domain = None

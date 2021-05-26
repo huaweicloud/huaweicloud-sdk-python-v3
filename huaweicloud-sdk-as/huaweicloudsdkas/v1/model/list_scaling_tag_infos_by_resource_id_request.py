@@ -48,6 +48,7 @@ class ListScalingTagInfosByResourceIdRequest:
     def resource_type(self):
         """Gets the resource_type of this ListScalingTagInfosByResourceIdRequest.
 
+        资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
 
         :return: The resource_type of this ListScalingTagInfosByResourceIdRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ListScalingTagInfosByResourceIdRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListScalingTagInfosByResourceIdRequest.
 
+        资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
 
         :param resource_type: The resource_type of this ListScalingTagInfosByResourceIdRequest.
         :type: str
@@ -68,6 +70,7 @@ class ListScalingTagInfosByResourceIdRequest:
     def resource_id(self):
         """Gets the resource_id of this ListScalingTagInfosByResourceIdRequest.
 
+        资源ID。
 
         :return: The resource_id of this ListScalingTagInfosByResourceIdRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ListScalingTagInfosByResourceIdRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ListScalingTagInfosByResourceIdRequest.
 
+        资源ID。
 
         :param resource_id: The resource_id of this ListScalingTagInfosByResourceIdRequest.
         :type: str

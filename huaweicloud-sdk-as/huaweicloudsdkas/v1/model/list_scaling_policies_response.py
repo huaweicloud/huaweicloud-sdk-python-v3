@@ -26,7 +26,7 @@ class ListScalingPoliciesResponse(SdkResponse):
         'total_number': 'int',
         'start_number': 'int',
         'limit': 'int',
-        'scaling_policies': 'list[ScalingPolicyDetail]'
+        'scaling_policies': 'list[ScalingV1PolicyDetail]'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class ListScalingPoliciesResponse(SdkResponse):
     def __init__(self, total_number=None, start_number=None, limit=None, scaling_policies=None):
         """ListScalingPoliciesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListScalingPoliciesResponse, self).__init__()
 
         self._total_number = None
         self._start_number = None
@@ -129,7 +129,7 @@ class ListScalingPoliciesResponse(SdkResponse):
         伸缩策略列表
 
         :return: The scaling_policies of this ListScalingPoliciesResponse.
-        :rtype: list[ScalingPolicyDetail]
+        :rtype: list[ScalingV1PolicyDetail]
         """
         return self._scaling_policies
 
@@ -140,7 +140,7 @@ class ListScalingPoliciesResponse(SdkResponse):
         伸缩策略列表
 
         :param scaling_policies: The scaling_policies of this ListScalingPoliciesResponse.
-        :type: list[ScalingPolicyDetail]
+        :type: list[ScalingV1PolicyDetail]
         """
         self._scaling_policies = scaling_policies
 

@@ -68,6 +68,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
     def instance_id(self):
         """Gets the instance_id of this ListSpecialThrottlingConfigurationsV2Request.
 
+        实例编号
 
         :return: The instance_id of this ListSpecialThrottlingConfigurationsV2Request.
         :rtype: str
@@ -78,6 +79,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListSpecialThrottlingConfigurationsV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this ListSpecialThrottlingConfigurationsV2Request.
         :type: str
@@ -88,6 +90,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
     def throttle_id(self):
         """Gets the throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
 
+        流控策略的ID
 
         :return: The throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
         :rtype: str
@@ -98,6 +101,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
     def throttle_id(self, throttle_id):
         """Sets the throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
 
+        流控策略的ID
 
         :param throttle_id: The throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
         :type: str
@@ -108,6 +112,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
     def object_type(self):
         """Gets the object_type of this ListSpecialThrottlingConfigurationsV2Request.
 
+        特殊流控类型：APP, USER
 
         :return: The object_type of this ListSpecialThrottlingConfigurationsV2Request.
         :rtype: str
@@ -118,6 +123,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
     def object_type(self, object_type):
         """Sets the object_type of this ListSpecialThrottlingConfigurationsV2Request.
 
+        特殊流控类型：APP, USER
 
         :param object_type: The object_type of this ListSpecialThrottlingConfigurationsV2Request.
         :type: str
@@ -128,6 +134,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
     def app_name(self):
         """Gets the app_name of this ListSpecialThrottlingConfigurationsV2Request.
 
+        筛选的特殊应用名称
 
         :return: The app_name of this ListSpecialThrottlingConfigurationsV2Request.
         :rtype: str
@@ -138,6 +145,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
     def app_name(self, app_name):
         """Sets the app_name of this ListSpecialThrottlingConfigurationsV2Request.
 
+        筛选的特殊应用名称
 
         :param app_name: The app_name of this ListSpecialThrottlingConfigurationsV2Request.
         :type: str
@@ -148,6 +156,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
     def offset(self):
         """Gets the offset of this ListSpecialThrottlingConfigurationsV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :return: The offset of this ListSpecialThrottlingConfigurationsV2Request.
         :rtype: int
@@ -158,6 +167,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
     def offset(self, offset):
         """Sets the offset of this ListSpecialThrottlingConfigurationsV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListSpecialThrottlingConfigurationsV2Request.
         :type: int
@@ -168,6 +178,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
     def limit(self):
         """Gets the limit of this ListSpecialThrottlingConfigurationsV2Request.
 
+        每页显示的条目数量
 
         :return: The limit of this ListSpecialThrottlingConfigurationsV2Request.
         :rtype: int
@@ -178,6 +189,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
     def limit(self, limit):
         """Sets the limit of this ListSpecialThrottlingConfigurationsV2Request.
 
+        每页显示的条目数量
 
         :param limit: The limit of this ListSpecialThrottlingConfigurationsV2Request.
         :type: int

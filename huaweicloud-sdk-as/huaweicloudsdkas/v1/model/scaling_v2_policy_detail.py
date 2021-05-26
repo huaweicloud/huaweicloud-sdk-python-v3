@@ -34,7 +34,7 @@ class ScalingV2PolicyDetail:
         'scaling_policy_action': 'ScalingPolicyActionV2',
         'cool_down_time': 'int',
         'create_time': 'datetime',
-        'meta_data': 'MeteData'
+        'meta_data': 'ScalingPolicyV2MetaData'
     }
 
     attribute_map = {
@@ -340,7 +340,7 @@ class ScalingV2PolicyDetail:
 
 
         :return: The meta_data of this ScalingV2PolicyDetail.
-        :rtype: MeteData
+        :rtype: ScalingPolicyV2MetaData
         """
         return self._meta_data
 
@@ -350,7 +350,7 @@ class ScalingV2PolicyDetail:
 
 
         :param meta_data: The meta_data of this ScalingV2PolicyDetail.
-        :type: MeteData
+        :type: ScalingPolicyV2MetaData
         """
         self._meta_data = meta_data
 

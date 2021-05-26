@@ -53,6 +53,7 @@ class AssociateDomainV2Request:
     def instance_id(self):
         """Gets the instance_id of this AssociateDomainV2Request.
 
+        实例编号
 
         :return: The instance_id of this AssociateDomainV2Request.
         :rtype: str
@@ -63,6 +64,7 @@ class AssociateDomainV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this AssociateDomainV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this AssociateDomainV2Request.
         :type: str
@@ -73,6 +75,7 @@ class AssociateDomainV2Request:
     def group_id(self):
         """Gets the group_id of this AssociateDomainV2Request.
 
+        API分组编号
 
         :return: The group_id of this AssociateDomainV2Request.
         :rtype: str
@@ -83,6 +86,7 @@ class AssociateDomainV2Request:
     def group_id(self, group_id):
         """Sets the group_id of this AssociateDomainV2Request.
 
+        API分组编号
 
         :param group_id: The group_id of this AssociateDomainV2Request.
         :type: str

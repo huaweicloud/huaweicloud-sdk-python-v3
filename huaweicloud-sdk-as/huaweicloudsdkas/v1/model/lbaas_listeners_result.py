@@ -23,32 +23,32 @@ class LbaasListenersResult:
     sensitive_list = []
 
     openapi_types = {
-        'listeners_id': 'str',
+        'listener_id': 'str',
         'pool_id': 'str',
         'protocol_port': 'int',
         'weight': 'int'
     }
 
     attribute_map = {
-        'listeners_id': 'listeners_id',
+        'listener_id': 'listener_id',
         'pool_id': 'pool_id',
         'protocol_port': 'protocol_port',
         'weight': 'weight'
     }
 
-    def __init__(self, listeners_id=None, pool_id=None, protocol_port=None, weight=None):
+    def __init__(self, listener_id=None, pool_id=None, protocol_port=None, weight=None):
         """LbaasListenersResult - a model defined in huaweicloud sdk"""
         
         
 
-        self._listeners_id = None
+        self._listener_id = None
         self._pool_id = None
         self._protocol_port = None
         self._weight = None
         self.discriminator = None
 
-        if listeners_id is not None:
-            self.listeners_id = listeners_id
+        if listener_id is not None:
+            self.listener_id = listener_id
         if pool_id is not None:
             self.pool_id = pool_id
         if protocol_port is not None:
@@ -57,26 +57,26 @@ class LbaasListenersResult:
             self.weight = weight
 
     @property
-    def listeners_id(self):
-        """Gets the listeners_id of this LbaasListenersResult.
+    def listener_id(self):
+        """Gets the listener_id of this LbaasListenersResult.
 
         监听器ID
 
-        :return: The listeners_id of this LbaasListenersResult.
+        :return: The listener_id of this LbaasListenersResult.
         :rtype: str
         """
-        return self._listeners_id
+        return self._listener_id
 
-    @listeners_id.setter
-    def listeners_id(self, listeners_id):
-        """Sets the listeners_id of this LbaasListenersResult.
+    @listener_id.setter
+    def listener_id(self, listener_id):
+        """Sets the listener_id of this LbaasListenersResult.
 
         监听器ID
 
-        :param listeners_id: The listeners_id of this LbaasListenersResult.
+        :param listener_id: The listener_id of this LbaasListenersResult.
         :type: str
         """
-        self._listeners_id = listeners_id
+        self._listener_id = listener_id
 
     @property
     def pool_id(self):

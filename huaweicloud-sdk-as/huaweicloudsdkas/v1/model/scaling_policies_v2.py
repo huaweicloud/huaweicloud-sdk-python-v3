@@ -33,7 +33,8 @@ class ScalingPoliciesV2:
         'scheduled_policy': 'ScheduledPolicy',
         'scaling_policy_action': 'ScalingPolicyActionV2',
         'cool_down_time': 'int',
-        'create_time': 'datetime'
+        'create_time': 'datetime',
+        'meta_data': 'ScalingPolicyV2MetaData'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class ScalingPoliciesV2:
         'scheduled_policy': 'scheduled_policy',
         'scaling_policy_action': 'scaling_policy_action',
         'cool_down_time': 'cool_down_time',
-        'create_time': 'create_time'
+        'create_time': 'create_time',
+        'meta_data': 'meta_data'
     }
 
-    def __init__(self, scaling_policy_name=None, scaling_policy_id=None, scaling_resource_id=None, scaling_resource_type=None, policy_status=None, scaling_policy_type=None, alarm_id=None, scheduled_policy=None, scaling_policy_action=None, cool_down_time=None, create_time=None):
+    def __init__(self, scaling_policy_name=None, scaling_policy_id=None, scaling_resource_id=None, scaling_resource_type=None, policy_status=None, scaling_policy_type=None, alarm_id=None, scheduled_policy=None, scaling_policy_action=None, cool_down_time=None, create_time=None, meta_data=None):
         """ScalingPoliciesV2 - a model defined in huaweicloud sdk"""
         
         
@@ -66,6 +68,7 @@ class ScalingPoliciesV2:
         self._scaling_policy_action = None
         self._cool_down_time = None
         self._create_time = None
+        self._meta_data = None
         self.discriminator = None
 
         if scaling_policy_name is not None:
@@ -90,6 +93,8 @@ class ScalingPoliciesV2:
             self.cool_down_time = cool_down_time
         if create_time is not None:
             self.create_time = create_time
+        if meta_data is not None:
+            self.meta_data = meta_data
 
     @property
     def scaling_policy_name(self):
@@ -328,6 +333,26 @@ class ScalingPoliciesV2:
         :type: datetime
         """
         self._create_time = create_time
+
+    @property
+    def meta_data(self):
+        """Gets the meta_data of this ScalingPoliciesV2.
+
+
+        :return: The meta_data of this ScalingPoliciesV2.
+        :rtype: ScalingPolicyV2MetaData
+        """
+        return self._meta_data
+
+    @meta_data.setter
+    def meta_data(self, meta_data):
+        """Sets the meta_data of this ScalingPoliciesV2.
+
+
+        :param meta_data: The meta_data of this ScalingPoliciesV2.
+        :type: ScalingPolicyV2MetaData
+        """
+        self._meta_data = meta_data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

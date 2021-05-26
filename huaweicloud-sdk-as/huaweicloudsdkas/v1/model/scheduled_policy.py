@@ -50,8 +50,7 @@ class ScheduledPolicy:
         self._end_time = None
         self.discriminator = None
 
-        if launch_time is not None:
-            self.launch_time = launch_time
+        self.launch_time = launch_time
         if recurrence_type is not None:
             self.recurrence_type = recurrence_type
         if recurrence_value is not None:

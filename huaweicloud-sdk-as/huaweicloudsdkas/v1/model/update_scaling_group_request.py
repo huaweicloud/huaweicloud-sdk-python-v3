@@ -24,7 +24,7 @@ class UpdateScalingGroupRequest:
 
     openapi_types = {
         'scaling_group_id': 'str',
-        'body': 'UpdateScalingGroupRequestBody'
+        'body': 'UpdateScalingGroupOption'
     }
 
     attribute_map = {
@@ -49,6 +49,7 @@ class UpdateScalingGroupRequest:
     def scaling_group_id(self):
         """Gets the scaling_group_id of this UpdateScalingGroupRequest.
 
+        伸缩组ID
 
         :return: The scaling_group_id of this UpdateScalingGroupRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateScalingGroupRequest:
     def scaling_group_id(self, scaling_group_id):
         """Sets the scaling_group_id of this UpdateScalingGroupRequest.
 
+        伸缩组ID
 
         :param scaling_group_id: The scaling_group_id of this UpdateScalingGroupRequest.
         :type: str
@@ -71,7 +73,7 @@ class UpdateScalingGroupRequest:
 
 
         :return: The body of this UpdateScalingGroupRequest.
-        :rtype: UpdateScalingGroupRequestBody
+        :rtype: UpdateScalingGroupOption
         """
         return self._body
 
@@ -81,7 +83,7 @@ class UpdateScalingGroupRequest:
 
 
         :param body: The body of this UpdateScalingGroupRequest.
-        :type: UpdateScalingGroupRequestBody
+        :type: UpdateScalingGroupOption
         """
         self._body = body
 

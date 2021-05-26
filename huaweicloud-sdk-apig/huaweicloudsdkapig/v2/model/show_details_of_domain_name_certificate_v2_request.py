@@ -56,6 +56,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
     def instance_id(self):
         """Gets the instance_id of this ShowDetailsOfDomainNameCertificateV2Request.
 
+        实例编号
 
         :return: The instance_id of this ShowDetailsOfDomainNameCertificateV2Request.
         :rtype: str
@@ -66,6 +67,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowDetailsOfDomainNameCertificateV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this ShowDetailsOfDomainNameCertificateV2Request.
         :type: str
@@ -76,6 +78,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
     def domain_id(self):
         """Gets the domain_id of this ShowDetailsOfDomainNameCertificateV2Request.
 
+        域名的编号
 
         :return: The domain_id of this ShowDetailsOfDomainNameCertificateV2Request.
         :rtype: str
@@ -86,6 +89,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
     def domain_id(self, domain_id):
         """Sets the domain_id of this ShowDetailsOfDomainNameCertificateV2Request.
 
+        域名的编号
 
         :param domain_id: The domain_id of this ShowDetailsOfDomainNameCertificateV2Request.
         :type: str
@@ -96,6 +100,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
     def group_id(self):
         """Gets the group_id of this ShowDetailsOfDomainNameCertificateV2Request.
 
+        分组的编号
 
         :return: The group_id of this ShowDetailsOfDomainNameCertificateV2Request.
         :rtype: str
@@ -106,6 +111,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
     def group_id(self, group_id):
         """Sets the group_id of this ShowDetailsOfDomainNameCertificateV2Request.
 
+        分组的编号
 
         :param group_id: The group_id of this ShowDetailsOfDomainNameCertificateV2Request.
         :type: str
@@ -116,6 +122,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
     def certificate_id(self):
         """Gets the certificate_id of this ShowDetailsOfDomainNameCertificateV2Request.
 
+        证书的编号
 
         :return: The certificate_id of this ShowDetailsOfDomainNameCertificateV2Request.
         :rtype: str
@@ -126,6 +133,7 @@ class ShowDetailsOfDomainNameCertificateV2Request:
     def certificate_id(self, certificate_id):
         """Sets the certificate_id of this ShowDetailsOfDomainNameCertificateV2Request.
 
+        证书的编号
 
         :param certificate_id: The certificate_id of this ShowDetailsOfDomainNameCertificateV2Request.
         :type: str

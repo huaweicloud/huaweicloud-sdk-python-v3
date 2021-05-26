@@ -31,7 +31,7 @@ class DeleteScalingInstanceResponse(SdkResponse):
     def __init__(self):
         """DeleteScalingInstanceResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteScalingInstanceResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

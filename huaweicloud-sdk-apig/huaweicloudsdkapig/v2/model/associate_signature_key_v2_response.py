@@ -33,7 +33,7 @@ class AssociateSignatureKeyV2Response(SdkResponse):
     def __init__(self, bindings=None):
         """AssociateSignatureKeyV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AssociateSignatureKeyV2Response, self).__init__()
 
         self._bindings = None
         self.discriminator = None

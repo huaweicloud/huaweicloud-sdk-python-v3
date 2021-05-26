@@ -25,7 +25,7 @@ class UpdateLifeCycleHookRequest:
     openapi_types = {
         'scaling_group_id': 'str',
         'lifecycle_hook_name': 'str',
-        'body': 'UpdateLifeCycleHookRequestBody'
+        'body': 'UpdateLifeCycleHookOption'
     }
 
     attribute_map = {
@@ -53,6 +53,7 @@ class UpdateLifeCycleHookRequest:
     def scaling_group_id(self):
         """Gets the scaling_group_id of this UpdateLifeCycleHookRequest.
 
+        伸缩组标识。
 
         :return: The scaling_group_id of this UpdateLifeCycleHookRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class UpdateLifeCycleHookRequest:
     def scaling_group_id(self, scaling_group_id):
         """Sets the scaling_group_id of this UpdateLifeCycleHookRequest.
 
+        伸缩组标识。
 
         :param scaling_group_id: The scaling_group_id of this UpdateLifeCycleHookRequest.
         :type: str
@@ -73,6 +75,7 @@ class UpdateLifeCycleHookRequest:
     def lifecycle_hook_name(self):
         """Gets the lifecycle_hook_name of this UpdateLifeCycleHookRequest.
 
+        生命周期挂钩标识。
 
         :return: The lifecycle_hook_name of this UpdateLifeCycleHookRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class UpdateLifeCycleHookRequest:
     def lifecycle_hook_name(self, lifecycle_hook_name):
         """Sets the lifecycle_hook_name of this UpdateLifeCycleHookRequest.
 
+        生命周期挂钩标识。
 
         :param lifecycle_hook_name: The lifecycle_hook_name of this UpdateLifeCycleHookRequest.
         :type: str
@@ -95,7 +99,7 @@ class UpdateLifeCycleHookRequest:
 
 
         :return: The body of this UpdateLifeCycleHookRequest.
-        :rtype: UpdateLifeCycleHookRequestBody
+        :rtype: UpdateLifeCycleHookOption
         """
         return self._body
 
@@ -105,7 +109,7 @@ class UpdateLifeCycleHookRequest:
 
 
         :param body: The body of this UpdateLifeCycleHookRequest.
-        :type: UpdateLifeCycleHookRequestBody
+        :type: UpdateLifeCycleHookOption
         """
         self._body = body
 

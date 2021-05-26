@@ -69,6 +69,7 @@ class ListApiGroupsV2Request:
     def instance_id(self):
         """Gets the instance_id of this ListApiGroupsV2Request.
 
+        实例编号
 
         :return: The instance_id of this ListApiGroupsV2Request.
         :rtype: str
@@ -79,6 +80,7 @@ class ListApiGroupsV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListApiGroupsV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this ListApiGroupsV2Request.
         :type: str
@@ -89,6 +91,7 @@ class ListApiGroupsV2Request:
     def id(self):
         """Gets the id of this ListApiGroupsV2Request.
 
+        API分组编号
 
         :return: The id of this ListApiGroupsV2Request.
         :rtype: str
@@ -99,6 +102,7 @@ class ListApiGroupsV2Request:
     def id(self, id):
         """Sets the id of this ListApiGroupsV2Request.
 
+        API分组编号
 
         :param id: The id of this ListApiGroupsV2Request.
         :type: str
@@ -109,6 +113,7 @@ class ListApiGroupsV2Request:
     def name(self):
         """Gets the name of this ListApiGroupsV2Request.
 
+        API分组名称
 
         :return: The name of this ListApiGroupsV2Request.
         :rtype: str
@@ -119,6 +124,7 @@ class ListApiGroupsV2Request:
     def name(self, name):
         """Sets the name of this ListApiGroupsV2Request.
 
+        API分组名称
 
         :param name: The name of this ListApiGroupsV2Request.
         :type: str
@@ -129,6 +135,7 @@ class ListApiGroupsV2Request:
     def offset(self):
         """Gets the offset of this ListApiGroupsV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :return: The offset of this ListApiGroupsV2Request.
         :rtype: int
@@ -139,6 +146,7 @@ class ListApiGroupsV2Request:
     def offset(self, offset):
         """Sets the offset of this ListApiGroupsV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListApiGroupsV2Request.
         :type: int
@@ -149,6 +157,7 @@ class ListApiGroupsV2Request:
     def limit(self):
         """Gets the limit of this ListApiGroupsV2Request.
 
+        每页显示的条目数量
 
         :return: The limit of this ListApiGroupsV2Request.
         :rtype: int
@@ -159,6 +168,7 @@ class ListApiGroupsV2Request:
     def limit(self, limit):
         """Sets the limit of this ListApiGroupsV2Request.
 
+        每页显示的条目数量
 
         :param limit: The limit of this ListApiGroupsV2Request.
         :type: int
@@ -169,6 +179,7 @@ class ListApiGroupsV2Request:
     def precise_search(self):
         """Gets the precise_search of this ListApiGroupsV2Request.
 
+        指定需要精确匹配查找的参数名称，目前仅支持API分组名称
 
         :return: The precise_search of this ListApiGroupsV2Request.
         :rtype: str
@@ -179,6 +190,7 @@ class ListApiGroupsV2Request:
     def precise_search(self, precise_search):
         """Sets the precise_search of this ListApiGroupsV2Request.
 
+        指定需要精确匹配查找的参数名称，目前仅支持API分组名称
 
         :param precise_search: The precise_search of this ListApiGroupsV2Request.
         :type: str

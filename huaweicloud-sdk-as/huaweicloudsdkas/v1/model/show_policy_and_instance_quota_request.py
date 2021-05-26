@@ -44,6 +44,7 @@ class ShowPolicyAndInstanceQuotaRequest:
     def scaling_group_id(self):
         """Gets the scaling_group_id of this ShowPolicyAndInstanceQuotaRequest.
 
+        伸缩组ID。
 
         :return: The scaling_group_id of this ShowPolicyAndInstanceQuotaRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowPolicyAndInstanceQuotaRequest:
     def scaling_group_id(self, scaling_group_id):
         """Sets the scaling_group_id of this ShowPolicyAndInstanceQuotaRequest.
 
+        伸缩组ID。
 
         :param scaling_group_id: The scaling_group_id of this ShowPolicyAndInstanceQuotaRequest.
         :type: str

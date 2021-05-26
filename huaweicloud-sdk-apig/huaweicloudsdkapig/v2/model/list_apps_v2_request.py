@@ -84,6 +84,7 @@ class ListAppsV2Request:
     def instance_id(self):
         """Gets the instance_id of this ListAppsV2Request.
 
+        实例编号
 
         :return: The instance_id of this ListAppsV2Request.
         :rtype: str
@@ -94,6 +95,7 @@ class ListAppsV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListAppsV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this ListAppsV2Request.
         :type: str
@@ -104,6 +106,7 @@ class ListAppsV2Request:
     def id(self):
         """Gets the id of this ListAppsV2Request.
 
+        APP编号
 
         :return: The id of this ListAppsV2Request.
         :rtype: str
@@ -114,6 +117,7 @@ class ListAppsV2Request:
     def id(self, id):
         """Sets the id of this ListAppsV2Request.
 
+        APP编号
 
         :param id: The id of this ListAppsV2Request.
         :type: str
@@ -124,6 +128,7 @@ class ListAppsV2Request:
     def name(self):
         """Gets the name of this ListAppsV2Request.
 
+        APP名称
 
         :return: The name of this ListAppsV2Request.
         :rtype: str
@@ -134,6 +139,7 @@ class ListAppsV2Request:
     def name(self, name):
         """Sets the name of this ListAppsV2Request.
 
+        APP名称
 
         :param name: The name of this ListAppsV2Request.
         :type: str
@@ -144,6 +150,7 @@ class ListAppsV2Request:
     def status(self):
         """Gets the status of this ListAppsV2Request.
 
+        APP状态
 
         :return: The status of this ListAppsV2Request.
         :rtype: int
@@ -154,6 +161,7 @@ class ListAppsV2Request:
     def status(self, status):
         """Sets the status of this ListAppsV2Request.
 
+        APP状态
 
         :param status: The status of this ListAppsV2Request.
         :type: int
@@ -164,6 +172,7 @@ class ListAppsV2Request:
     def app_key(self):
         """Gets the app_key of this ListAppsV2Request.
 
+        APP的KEY
 
         :return: The app_key of this ListAppsV2Request.
         :rtype: str
@@ -174,6 +183,7 @@ class ListAppsV2Request:
     def app_key(self, app_key):
         """Sets the app_key of this ListAppsV2Request.
 
+        APP的KEY
 
         :param app_key: The app_key of this ListAppsV2Request.
         :type: str
@@ -184,6 +194,7 @@ class ListAppsV2Request:
     def creator(self):
         """Gets the creator of this ListAppsV2Request.
 
+        APP的创建者。 - USER：用户自行创建 - MARKET：云市场分配
 
         :return: The creator of this ListAppsV2Request.
         :rtype: str
@@ -194,6 +205,7 @@ class ListAppsV2Request:
     def creator(self, creator):
         """Sets the creator of this ListAppsV2Request.
 
+        APP的创建者。 - USER：用户自行创建 - MARKET：云市场分配
 
         :param creator: The creator of this ListAppsV2Request.
         :type: str
@@ -204,6 +216,7 @@ class ListAppsV2Request:
     def offset(self):
         """Gets the offset of this ListAppsV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :return: The offset of this ListAppsV2Request.
         :rtype: int
@@ -214,6 +227,7 @@ class ListAppsV2Request:
     def offset(self, offset):
         """Sets the offset of this ListAppsV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListAppsV2Request.
         :type: int
@@ -224,6 +238,7 @@ class ListAppsV2Request:
     def limit(self):
         """Gets the limit of this ListAppsV2Request.
 
+        每页显示的条目数量
 
         :return: The limit of this ListAppsV2Request.
         :rtype: int
@@ -234,6 +249,7 @@ class ListAppsV2Request:
     def limit(self, limit):
         """Sets the limit of this ListAppsV2Request.
 
+        每页显示的条目数量
 
         :param limit: The limit of this ListAppsV2Request.
         :type: int
@@ -244,6 +260,7 @@ class ListAppsV2Request:
     def precise_search(self):
         """Gets the precise_search of this ListAppsV2Request.
 
+        指定需要精确匹配查找的参数名称，目前仅支持name
 
         :return: The precise_search of this ListAppsV2Request.
         :rtype: str
@@ -254,6 +271,7 @@ class ListAppsV2Request:
     def precise_search(self, precise_search):
         """Sets the precise_search of this ListAppsV2Request.
 
+        指定需要精确匹配查找的参数名称，目前仅支持name
 
         :param precise_search: The precise_search of this ListAppsV2Request.
         :type: str

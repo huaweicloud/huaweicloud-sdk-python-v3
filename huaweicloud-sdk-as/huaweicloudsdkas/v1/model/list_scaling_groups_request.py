@@ -27,7 +27,8 @@ class ListScalingGroupsRequest:
         'scaling_configuration_id': 'str',
         'scaling_group_status': 'str',
         'start_number': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ListScalingGroupsRequest:
         'scaling_configuration_id': 'scaling_configuration_id',
         'scaling_group_status': 'scaling_group_status',
         'start_number': 'start_number',
-        'limit': 'limit'
+        'limit': 'limit',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, scaling_group_name=None, scaling_configuration_id=None, scaling_group_status=None, start_number=None, limit=None):
+    def __init__(self, scaling_group_name=None, scaling_configuration_id=None, scaling_group_status=None, start_number=None, limit=None, enterprise_project_id=None):
         """ListScalingGroupsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -48,6 +50,7 @@ class ListScalingGroupsRequest:
         self._scaling_group_status = None
         self._start_number = None
         self._limit = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if scaling_group_name is not None:
@@ -60,11 +63,14 @@ class ListScalingGroupsRequest:
             self.start_number = start_number
         if limit is not None:
             self.limit = limit
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def scaling_group_name(self):
         """Gets the scaling_group_name of this ListScalingGroupsRequest.
 
+        伸缩组名称
 
         :return: The scaling_group_name of this ListScalingGroupsRequest.
         :rtype: str
@@ -75,6 +81,7 @@ class ListScalingGroupsRequest:
     def scaling_group_name(self, scaling_group_name):
         """Sets the scaling_group_name of this ListScalingGroupsRequest.
 
+        伸缩组名称
 
         :param scaling_group_name: The scaling_group_name of this ListScalingGroupsRequest.
         :type: str
@@ -85,6 +92,7 @@ class ListScalingGroupsRequest:
     def scaling_configuration_id(self):
         """Gets the scaling_configuration_id of this ListScalingGroupsRequest.
 
+        伸缩配置ID，通过查询弹性伸缩配置列表接口获取，详见查询弹性伸缩配置列表。
 
         :return: The scaling_configuration_id of this ListScalingGroupsRequest.
         :rtype: str
@@ -95,6 +103,7 @@ class ListScalingGroupsRequest:
     def scaling_configuration_id(self, scaling_configuration_id):
         """Sets the scaling_configuration_id of this ListScalingGroupsRequest.
 
+        伸缩配置ID，通过查询弹性伸缩配置列表接口获取，详见查询弹性伸缩配置列表。
 
         :param scaling_configuration_id: The scaling_configuration_id of this ListScalingGroupsRequest.
         :type: str
@@ -105,6 +114,7 @@ class ListScalingGroupsRequest:
     def scaling_group_status(self):
         """Gets the scaling_group_status of this ListScalingGroupsRequest.
 
+        伸缩组状态，包括INSERVICE，PAUSED，ERROR，DELETING。
 
         :return: The scaling_group_status of this ListScalingGroupsRequest.
         :rtype: str
@@ -115,6 +125,7 @@ class ListScalingGroupsRequest:
     def scaling_group_status(self, scaling_group_status):
         """Sets the scaling_group_status of this ListScalingGroupsRequest.
 
+        伸缩组状态，包括INSERVICE，PAUSED，ERROR，DELETING。
 
         :param scaling_group_status: The scaling_group_status of this ListScalingGroupsRequest.
         :type: str
@@ -125,6 +136,7 @@ class ListScalingGroupsRequest:
     def start_number(self):
         """Gets the start_number of this ListScalingGroupsRequest.
 
+        查询的起始行号，默认为0。
 
         :return: The start_number of this ListScalingGroupsRequest.
         :rtype: int
@@ -135,6 +147,7 @@ class ListScalingGroupsRequest:
     def start_number(self, start_number):
         """Sets the start_number of this ListScalingGroupsRequest.
 
+        查询的起始行号，默认为0。
 
         :param start_number: The start_number of this ListScalingGroupsRequest.
         :type: int
@@ -145,6 +158,7 @@ class ListScalingGroupsRequest:
     def limit(self):
         """Gets the limit of this ListScalingGroupsRequest.
 
+        查询的记录条数，默认为20。
 
         :return: The limit of this ListScalingGroupsRequest.
         :rtype: int
@@ -155,11 +169,34 @@ class ListScalingGroupsRequest:
     def limit(self, limit):
         """Sets the limit of this ListScalingGroupsRequest.
 
+        查询的记录条数，默认为20。
 
         :param limit: The limit of this ListScalingGroupsRequest.
         :type: int
         """
         self._limit = limit
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListScalingGroupsRequest.
+
+        企业项目ID，当传入all_granted_eps时表示查询该用户所有授权的企业项目下的伸缩组列表
+
+        :return: The enterprise_project_id of this ListScalingGroupsRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListScalingGroupsRequest.
+
+        企业项目ID，当传入all_granted_eps时表示查询该用户所有授权的企业项目下的伸缩组列表
+
+        :param enterprise_project_id: The enterprise_project_id of this ListScalingGroupsRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

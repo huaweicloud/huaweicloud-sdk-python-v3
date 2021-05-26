@@ -24,7 +24,7 @@ class UpdateScalingPolicyRequest:
 
     openapi_types = {
         'scaling_policy_id': 'str',
-        'body': 'UpdateScalingPolicyRequestBody'
+        'body': 'UpdateScalingPolicyOption'
     }
 
     attribute_map = {
@@ -49,6 +49,7 @@ class UpdateScalingPolicyRequest:
     def scaling_policy_id(self):
         """Gets the scaling_policy_id of this UpdateScalingPolicyRequest.
 
+        伸缩策略ID。
 
         :return: The scaling_policy_id of this UpdateScalingPolicyRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateScalingPolicyRequest:
     def scaling_policy_id(self, scaling_policy_id):
         """Sets the scaling_policy_id of this UpdateScalingPolicyRequest.
 
+        伸缩策略ID。
 
         :param scaling_policy_id: The scaling_policy_id of this UpdateScalingPolicyRequest.
         :type: str
@@ -71,7 +73,7 @@ class UpdateScalingPolicyRequest:
 
 
         :return: The body of this UpdateScalingPolicyRequest.
-        :rtype: UpdateScalingPolicyRequestBody
+        :rtype: UpdateScalingPolicyOption
         """
         return self._body
 
@@ -81,7 +83,7 @@ class UpdateScalingPolicyRequest:
 
 
         :param body: The body of this UpdateScalingPolicyRequest.
-        :type: UpdateScalingPolicyRequestBody
+        :type: UpdateScalingPolicyOption
         """
         self._body = body
 

@@ -59,7 +59,7 @@ class CreateRequestThrottlingPolicyV2Response(SdkResponse):
     def __init__(self, bind_num=None, is_include_special_throttle=None, create_time=None, remark=None, type=None, time_interval=None, ip_call_limits=None, app_call_limits=None, name=None, time_unit=None, api_call_limits=None, id=None, user_call_limits=None, enable_adaptive_control=None):
         """CreateRequestThrottlingPolicyV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateRequestThrottlingPolicyV2Response, self).__init__()
 
         self._bind_num = None
         self._is_include_special_throttle = None

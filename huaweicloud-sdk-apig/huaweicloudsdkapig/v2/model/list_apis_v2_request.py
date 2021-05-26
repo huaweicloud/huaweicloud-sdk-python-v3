@@ -104,6 +104,7 @@ class ListApisV2Request:
     def instance_id(self):
         """Gets the instance_id of this ListApisV2Request.
 
+        实例编号
 
         :return: The instance_id of this ListApisV2Request.
         :rtype: str
@@ -114,6 +115,7 @@ class ListApisV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListApisV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this ListApisV2Request.
         :type: str
@@ -124,6 +126,7 @@ class ListApisV2Request:
     def id(self):
         """Gets the id of this ListApisV2Request.
 
+        API编号
 
         :return: The id of this ListApisV2Request.
         :rtype: str
@@ -134,6 +137,7 @@ class ListApisV2Request:
     def id(self, id):
         """Sets the id of this ListApisV2Request.
 
+        API编号
 
         :param id: The id of this ListApisV2Request.
         :type: str
@@ -144,6 +148,7 @@ class ListApisV2Request:
     def name(self):
         """Gets the name of this ListApisV2Request.
 
+        API名称
 
         :return: The name of this ListApisV2Request.
         :rtype: str
@@ -154,6 +159,7 @@ class ListApisV2Request:
     def name(self, name):
         """Sets the name of this ListApisV2Request.
 
+        API名称
 
         :param name: The name of this ListApisV2Request.
         :type: str
@@ -164,6 +170,7 @@ class ListApisV2Request:
     def group_id(self):
         """Gets the group_id of this ListApisV2Request.
 
+        API分组编号
 
         :return: The group_id of this ListApisV2Request.
         :rtype: str
@@ -174,6 +181,7 @@ class ListApisV2Request:
     def group_id(self, group_id):
         """Sets the group_id of this ListApisV2Request.
 
+        API分组编号
 
         :param group_id: The group_id of this ListApisV2Request.
         :type: str
@@ -184,6 +192,7 @@ class ListApisV2Request:
     def req_protocol(self):
         """Gets the req_protocol of this ListApisV2Request.
 
+        请求协议
 
         :return: The req_protocol of this ListApisV2Request.
         :rtype: str
@@ -194,6 +203,7 @@ class ListApisV2Request:
     def req_protocol(self, req_protocol):
         """Sets the req_protocol of this ListApisV2Request.
 
+        请求协议
 
         :param req_protocol: The req_protocol of this ListApisV2Request.
         :type: str
@@ -204,6 +214,7 @@ class ListApisV2Request:
     def req_method(self):
         """Gets the req_method of this ListApisV2Request.
 
+        请求方法
 
         :return: The req_method of this ListApisV2Request.
         :rtype: str
@@ -214,6 +225,7 @@ class ListApisV2Request:
     def req_method(self, req_method):
         """Sets the req_method of this ListApisV2Request.
 
+        请求方法
 
         :param req_method: The req_method of this ListApisV2Request.
         :type: str
@@ -224,6 +236,7 @@ class ListApisV2Request:
     def req_uri(self):
         """Gets the req_uri of this ListApisV2Request.
 
+        请求路径
 
         :return: The req_uri of this ListApisV2Request.
         :rtype: str
@@ -234,6 +247,7 @@ class ListApisV2Request:
     def req_uri(self, req_uri):
         """Sets the req_uri of this ListApisV2Request.
 
+        请求路径
 
         :param req_uri: The req_uri of this ListApisV2Request.
         :type: str
@@ -244,6 +258,7 @@ class ListApisV2Request:
     def auth_type(self):
         """Gets the auth_type of this ListApisV2Request.
 
+        授权类型
 
         :return: The auth_type of this ListApisV2Request.
         :rtype: str
@@ -254,6 +269,7 @@ class ListApisV2Request:
     def auth_type(self, auth_type):
         """Sets the auth_type of this ListApisV2Request.
 
+        授权类型
 
         :param auth_type: The auth_type of this ListApisV2Request.
         :type: str
@@ -264,6 +280,7 @@ class ListApisV2Request:
     def env_id(self):
         """Gets the env_id of this ListApisV2Request.
 
+        发布的环境编号
 
         :return: The env_id of this ListApisV2Request.
         :rtype: str
@@ -274,6 +291,7 @@ class ListApisV2Request:
     def env_id(self, env_id):
         """Sets the env_id of this ListApisV2Request.
 
+        发布的环境编号
 
         :param env_id: The env_id of this ListApisV2Request.
         :type: str
@@ -284,6 +302,7 @@ class ListApisV2Request:
     def type(self):
         """Gets the type of this ListApisV2Request.
 
+        API类型
 
         :return: The type of this ListApisV2Request.
         :rtype: int
@@ -294,6 +313,7 @@ class ListApisV2Request:
     def type(self, type):
         """Sets the type of this ListApisV2Request.
 
+        API类型
 
         :param type: The type of this ListApisV2Request.
         :type: int
@@ -304,6 +324,7 @@ class ListApisV2Request:
     def offset(self):
         """Gets the offset of this ListApisV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :return: The offset of this ListApisV2Request.
         :rtype: int
@@ -314,6 +335,7 @@ class ListApisV2Request:
     def offset(self, offset):
         """Sets the offset of this ListApisV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListApisV2Request.
         :type: int
@@ -324,6 +346,7 @@ class ListApisV2Request:
     def limit(self):
         """Gets the limit of this ListApisV2Request.
 
+        每页显示的条目数量
 
         :return: The limit of this ListApisV2Request.
         :rtype: int
@@ -334,6 +357,7 @@ class ListApisV2Request:
     def limit(self, limit):
         """Sets the limit of this ListApisV2Request.
 
+        每页显示的条目数量
 
         :param limit: The limit of this ListApisV2Request.
         :type: int
@@ -344,6 +368,7 @@ class ListApisV2Request:
     def precise_search(self):
         """Gets the precise_search of this ListApisV2Request.
 
+        指定需要精确匹配查找的参数名称，目前仅支持name、req_uri
 
         :return: The precise_search of this ListApisV2Request.
         :rtype: str
@@ -354,6 +379,7 @@ class ListApisV2Request:
     def precise_search(self, precise_search):
         """Sets the precise_search of this ListApisV2Request.
 
+        指定需要精确匹配查找的参数名称，目前仅支持name、req_uri
 
         :param precise_search: The precise_search of this ListApisV2Request.
         :type: str

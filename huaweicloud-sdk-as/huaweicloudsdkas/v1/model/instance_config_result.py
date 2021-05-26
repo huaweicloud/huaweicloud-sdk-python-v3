@@ -25,19 +25,22 @@ class InstanceConfigResult:
     openapi_types = {
         'flavor_ref': 'str',
         'image_ref': 'str',
-        'disk': 'list[Disk]',
+        'disk': 'list[DiskResult]',
         'key_name': 'str',
+        'key_fingerprint': 'str',
         'instance_name': 'str',
         'instance_id': 'str',
         'admin_pass': 'str',
-        'personality': 'Personality',
-        'public_ip': 'PublicIp',
+        'personality': 'PersonalityResult',
+        'public_ip': 'PublicipResult',
         'user_data': 'str',
-        'metadata': 'MetaData',
+        'metadata': 'VmMetaData',
         'security_groups': 'list[SecurityGroups]',
         'server_group_id': 'str',
         'tenancy': 'str',
-        'dedicated_host_id': 'str'
+        'dedicated_host_id': 'str',
+        'market_type': 'str',
+        'multi_flavor_priority_policy': 'str'
     }
 
     attribute_map = {
@@ -45,6 +48,7 @@ class InstanceConfigResult:
         'image_ref': 'imageRef',
         'disk': 'disk',
         'key_name': 'key_name',
+        'key_fingerprint': 'key_fingerprint',
         'instance_name': 'instance_name',
         'instance_id': 'instance_id',
         'admin_pass': 'adminPass',
@@ -55,10 +59,12 @@ class InstanceConfigResult:
         'security_groups': 'security_groups',
         'server_group_id': 'server_group_id',
         'tenancy': 'tenancy',
-        'dedicated_host_id': 'dedicated_host_id'
+        'dedicated_host_id': 'dedicated_host_id',
+        'market_type': 'market_type',
+        'multi_flavor_priority_policy': 'multi_flavor_priority_policy'
     }
 
-    def __init__(self, flavor_ref=None, image_ref=None, disk=None, key_name=None, instance_name=None, instance_id=None, admin_pass=None, personality=None, public_ip=None, user_data=None, metadata=None, security_groups=None, server_group_id=None, tenancy=None, dedicated_host_id=None):
+    def __init__(self, flavor_ref=None, image_ref=None, disk=None, key_name=None, key_fingerprint=None, instance_name=None, instance_id=None, admin_pass=None, personality=None, public_ip=None, user_data=None, metadata=None, security_groups=None, server_group_id=None, tenancy=None, dedicated_host_id=None, market_type=None, multi_flavor_priority_policy=None):
         """InstanceConfigResult - a model defined in huaweicloud sdk"""
         
         
@@ -67,6 +73,7 @@ class InstanceConfigResult:
         self._image_ref = None
         self._disk = None
         self._key_name = None
+        self._key_fingerprint = None
         self._instance_name = None
         self._instance_id = None
         self._admin_pass = None
@@ -78,6 +85,8 @@ class InstanceConfigResult:
         self._server_group_id = None
         self._tenancy = None
         self._dedicated_host_id = None
+        self._market_type = None
+        self._multi_flavor_priority_policy = None
         self.discriminator = None
 
         if flavor_ref is not None:
@@ -88,6 +97,8 @@ class InstanceConfigResult:
             self.disk = disk
         if key_name is not None:
             self.key_name = key_name
+        if key_fingerprint is not None:
+            self.key_fingerprint = key_fingerprint
         if instance_name is not None:
             self.instance_name = instance_name
         if instance_id is not None:
@@ -110,6 +121,10 @@ class InstanceConfigResult:
             self.tenancy = tenancy
         if dedicated_host_id is not None:
             self.dedicated_host_id = dedicated_host_id
+        if market_type is not None:
+            self.market_type = market_type
+        if multi_flavor_priority_policy is not None:
+            self.multi_flavor_priority_policy = multi_flavor_priority_policy
 
     @property
     def flavor_ref(self):
@@ -162,7 +177,7 @@ class InstanceConfigResult:
         磁盘组信息。
 
         :return: The disk of this InstanceConfigResult.
-        :rtype: list[Disk]
+        :rtype: list[DiskResult]
         """
         return self._disk
 
@@ -173,7 +188,7 @@ class InstanceConfigResult:
         磁盘组信息。
 
         :param disk: The disk of this InstanceConfigResult.
-        :type: list[Disk]
+        :type: list[DiskResult]
         """
         self._disk = disk
 
@@ -198,6 +213,28 @@ class InstanceConfigResult:
         :type: str
         """
         self._key_name = key_name
+
+    @property
+    def key_fingerprint(self):
+        """Gets the key_fingerprint of this InstanceConfigResult.
+
+        登录云服务器的SSH密钥指纹。
+
+        :return: The key_fingerprint of this InstanceConfigResult.
+        :rtype: str
+        """
+        return self._key_fingerprint
+
+    @key_fingerprint.setter
+    def key_fingerprint(self, key_fingerprint):
+        """Sets the key_fingerprint of this InstanceConfigResult.
+
+        登录云服务器的SSH密钥指纹。
+
+        :param key_fingerprint: The key_fingerprint of this InstanceConfigResult.
+        :type: str
+        """
+        self._key_fingerprint = key_fingerprint
 
     @property
     def instance_name(self):
@@ -271,7 +308,7 @@ class InstanceConfigResult:
 
 
         :return: The personality of this InstanceConfigResult.
-        :rtype: Personality
+        :rtype: PersonalityResult
         """
         return self._personality
 
@@ -281,7 +318,7 @@ class InstanceConfigResult:
 
 
         :param personality: The personality of this InstanceConfigResult.
-        :type: Personality
+        :type: PersonalityResult
         """
         self._personality = personality
 
@@ -291,7 +328,7 @@ class InstanceConfigResult:
 
 
         :return: The public_ip of this InstanceConfigResult.
-        :rtype: PublicIp
+        :rtype: PublicipResult
         """
         return self._public_ip
 
@@ -301,7 +338,7 @@ class InstanceConfigResult:
 
 
         :param public_ip: The public_ip of this InstanceConfigResult.
-        :type: PublicIp
+        :type: PublicipResult
         """
         self._public_ip = public_ip
 
@@ -333,7 +370,7 @@ class InstanceConfigResult:
 
 
         :return: The metadata of this InstanceConfigResult.
-        :rtype: MetaData
+        :rtype: VmMetaData
         """
         return self._metadata
 
@@ -343,7 +380,7 @@ class InstanceConfigResult:
 
 
         :param metadata: The metadata of this InstanceConfigResult.
-        :type: MetaData
+        :type: VmMetaData
         """
         self._metadata = metadata
 
@@ -434,6 +471,50 @@ class InstanceConfigResult:
         :type: str
         """
         self._dedicated_host_id = dedicated_host_id
+
+    @property
+    def market_type(self):
+        """Gets the market_type of this InstanceConfigResult.
+
+        云服务器的计费模式，可以选择竞价计费或按需计费。
+
+        :return: The market_type of this InstanceConfigResult.
+        :rtype: str
+        """
+        return self._market_type
+
+    @market_type.setter
+    def market_type(self, market_type):
+        """Sets the market_type of this InstanceConfigResult.
+
+        云服务器的计费模式，可以选择竞价计费或按需计费。
+
+        :param market_type: The market_type of this InstanceConfigResult.
+        :type: str
+        """
+        self._market_type = market_type
+
+    @property
+    def multi_flavor_priority_policy(self):
+        """Gets the multi_flavor_priority_policy of this InstanceConfigResult.
+
+        使用伸缩配置创建云主机的时候，多规格使用的优先级策略。
+
+        :return: The multi_flavor_priority_policy of this InstanceConfigResult.
+        :rtype: str
+        """
+        return self._multi_flavor_priority_policy
+
+    @multi_flavor_priority_policy.setter
+    def multi_flavor_priority_policy(self, multi_flavor_priority_policy):
+        """Sets the multi_flavor_priority_policy of this InstanceConfigResult.
+
+        使用伸缩配置创建云主机的时候，多规格使用的优先级策略。
+
+        :param multi_flavor_priority_policy: The multi_flavor_priority_policy of this InstanceConfigResult.
+        :type: str
+        """
+        self._multi_flavor_priority_policy = multi_flavor_priority_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

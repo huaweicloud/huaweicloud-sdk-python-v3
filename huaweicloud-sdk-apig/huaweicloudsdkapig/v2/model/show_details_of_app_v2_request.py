@@ -48,6 +48,7 @@ class ShowDetailsOfAppV2Request:
     def instance_id(self):
         """Gets the instance_id of this ShowDetailsOfAppV2Request.
 
+        实例编号
 
         :return: The instance_id of this ShowDetailsOfAppV2Request.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowDetailsOfAppV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowDetailsOfAppV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this ShowDetailsOfAppV2Request.
         :type: str
@@ -68,6 +70,7 @@ class ShowDetailsOfAppV2Request:
     def app_id(self):
         """Gets the app_id of this ShowDetailsOfAppV2Request.
 
+        APP的编号
 
         :return: The app_id of this ShowDetailsOfAppV2Request.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowDetailsOfAppV2Request:
     def app_id(self, app_id):
         """Sets the app_id of this ShowDetailsOfAppV2Request.
 
+        APP的编号
 
         :param app_id: The app_id of this ShowDetailsOfAppV2Request.
         :type: str

@@ -46,8 +46,7 @@ class LbaasListeners:
 
         self.pool_id = pool_id
         self.protocol_port = protocol_port
-        if weight is not None:
-            self.weight = weight
+        self.weight = weight
 
     @property
     def pool_id(self):
@@ -97,7 +96,7 @@ class LbaasListeners:
     def weight(self):
         """Gets the weight of this LbaasListeners.
 
-        权重，指后端云服务器经分发得到的请求数量比例，取值范围[0,1]，默认为1。
+        权重，指后端云服务器经分发得到的请求数量比例，取值范围[0,1]。
 
         :return: The weight of this LbaasListeners.
         :rtype: int
@@ -108,7 +107,7 @@ class LbaasListeners:
     def weight(self, weight):
         """Sets the weight of this LbaasListeners.
 
-        权重，指后端云服务器经分发得到的请求数量比例，取值范围[0,1]，默认为1。
+        权重，指后端云服务器经分发得到的请求数量比例，取值范围[0,1]。
 
         :param weight: The weight of this LbaasListeners.
         :type: int

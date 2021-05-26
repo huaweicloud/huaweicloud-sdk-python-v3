@@ -53,6 +53,7 @@ class UpdateSignatureKeyV2Request:
     def instance_id(self):
         """Gets the instance_id of this UpdateSignatureKeyV2Request.
 
+        实例编号
 
         :return: The instance_id of this UpdateSignatureKeyV2Request.
         :rtype: str
@@ -63,6 +64,7 @@ class UpdateSignatureKeyV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpdateSignatureKeyV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this UpdateSignatureKeyV2Request.
         :type: str
@@ -73,6 +75,7 @@ class UpdateSignatureKeyV2Request:
     def sign_id(self):
         """Gets the sign_id of this UpdateSignatureKeyV2Request.
 
+        签名密钥编号
 
         :return: The sign_id of this UpdateSignatureKeyV2Request.
         :rtype: str
@@ -83,6 +86,7 @@ class UpdateSignatureKeyV2Request:
     def sign_id(self, sign_id):
         """Sets the sign_id of this UpdateSignatureKeyV2Request.
 
+        签名密钥编号
 
         :param sign_id: The sign_id of this UpdateSignatureKeyV2Request.
         :type: str

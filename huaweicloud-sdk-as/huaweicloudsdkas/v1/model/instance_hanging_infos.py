@@ -28,7 +28,7 @@ class InstanceHangingInfos:
         'instance_id': 'str',
         'scaling_group_id': 'str',
         'lifecycle_hook_status': 'str',
-        'timeout': 'datetime',
+        'timeout': 'str',
         'default_result': 'str'
     }
 
@@ -188,7 +188,7 @@ class InstanceHangingInfos:
         超时时间，遵循UTC时间，格式为：YYYY-MM-DDThh:mm:ssZZ。
 
         :return: The timeout of this InstanceHangingInfos.
-        :rtype: datetime
+        :rtype: str
         """
         return self._timeout
 
@@ -199,7 +199,7 @@ class InstanceHangingInfos:
         超时时间，遵循UTC时间，格式为：YYYY-MM-DDThh:mm:ssZZ。
 
         :param timeout: The timeout of this InstanceHangingInfos.
-        :type: datetime
+        :type: str
         """
         self._timeout = timeout
 

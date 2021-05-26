@@ -48,6 +48,7 @@ class ShowDetailsOfEnvironmentVariableV2Request:
     def instance_id(self):
         """Gets the instance_id of this ShowDetailsOfEnvironmentVariableV2Request.
 
+        实例编号
 
         :return: The instance_id of this ShowDetailsOfEnvironmentVariableV2Request.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowDetailsOfEnvironmentVariableV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowDetailsOfEnvironmentVariableV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this ShowDetailsOfEnvironmentVariableV2Request.
         :type: str
@@ -68,6 +70,7 @@ class ShowDetailsOfEnvironmentVariableV2Request:
     def env_variable_id(self):
         """Gets the env_variable_id of this ShowDetailsOfEnvironmentVariableV2Request.
 
+        环境变量的编号
 
         :return: The env_variable_id of this ShowDetailsOfEnvironmentVariableV2Request.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowDetailsOfEnvironmentVariableV2Request:
     def env_variable_id(self, env_variable_id):
         """Sets the env_variable_id of this ShowDetailsOfEnvironmentVariableV2Request.
 
+        环境变量的编号
 
         :param env_variable_id: The env_variable_id of this ShowDetailsOfEnvironmentVariableV2Request.
         :type: str

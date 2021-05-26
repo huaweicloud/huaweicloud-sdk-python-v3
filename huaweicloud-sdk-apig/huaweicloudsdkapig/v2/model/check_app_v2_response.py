@@ -37,7 +37,7 @@ class CheckAppV2Response(SdkResponse):
     def __init__(self, name=None, remark=None, id=None):
         """CheckAppV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CheckAppV2Response, self).__init__()
 
         self._name = None
         self._remark = None

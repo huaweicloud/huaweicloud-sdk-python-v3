@@ -23,45 +23,72 @@ class MetaData:
     sensitive_list = []
 
     openapi_types = {
-        'customize_key': 'str'
+        'system__encrypted': 'str',
+        'system__cmkid': 'str'
     }
 
     attribute_map = {
-        'customize_key': 'customize_key'
+        'system__encrypted': '__system__encrypted',
+        'system__cmkid': '__system__cmkid'
     }
 
-    def __init__(self, customize_key=None):
+    def __init__(self, system__encrypted=None, system__cmkid=None):
         """MetaData - a model defined in huaweicloud sdk"""
         
         
 
-        self._customize_key = None
+        self._system__encrypted = None
+        self._system__cmkid = None
         self.discriminator = None
 
-        if customize_key is not None:
-            self.customize_key = customize_key
+        if system__encrypted is not None:
+            self.system__encrypted = system__encrypted
+        if system__cmkid is not None:
+            self.system__cmkid = system__cmkid
 
     @property
-    def customize_key(self):
-        """Gets the customize_key of this MetaData.
+    def system__encrypted(self):
+        """Gets the system__encrypted of this MetaData.
 
-        用户自定义数据总长度不大于512字节。用户自定义键不能是空串，不能包含符号.，以及不能以符号$开头。说明：Windows弹性云服务器Administrator用户的密码。示例：键（固定）：admin_pass值：cloud.1234创建密码方式鉴权的Windows弹性云服务器时为必选字段。
+        metadata中的表示加密功能的字段，0代表不加密，1代表加密。  该字段不存在时，云硬盘默认为不加密。
 
-        :return: The customize_key of this MetaData.
+        :return: The system__encrypted of this MetaData.
         :rtype: str
         """
-        return self._customize_key
+        return self._system__encrypted
 
-    @customize_key.setter
-    def customize_key(self, customize_key):
-        """Sets the customize_key of this MetaData.
+    @system__encrypted.setter
+    def system__encrypted(self, system__encrypted):
+        """Sets the system__encrypted of this MetaData.
 
-        用户自定义数据总长度不大于512字节。用户自定义键不能是空串，不能包含符号.，以及不能以符号$开头。说明：Windows弹性云服务器Administrator用户的密码。示例：键（固定）：admin_pass值：cloud.1234创建密码方式鉴权的Windows弹性云服务器时为必选字段。
+        metadata中的表示加密功能的字段，0代表不加密，1代表加密。  该字段不存在时，云硬盘默认为不加密。
 
-        :param customize_key: The customize_key of this MetaData.
+        :param system__encrypted: The system__encrypted of this MetaData.
         :type: str
         """
-        self._customize_key = customize_key
+        self._system__encrypted = system__encrypted
+
+    @property
+    def system__cmkid(self):
+        """Gets the system__cmkid of this MetaData.
+
+        用户主密钥ID，是metadata中的表示加密功能的字段，与__system__encrypted配合使用。
+
+        :return: The system__cmkid of this MetaData.
+        :rtype: str
+        """
+        return self._system__cmkid
+
+    @system__cmkid.setter
+    def system__cmkid(self, system__cmkid):
+        """Sets the system__cmkid of this MetaData.
+
+        用户主密钥ID，是metadata中的表示加密功能的字段，与__system__encrypted配合使用。
+
+        :param system__cmkid: The system__cmkid of this MetaData.
+        :type: str
+        """
+        self._system__cmkid = system__cmkid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

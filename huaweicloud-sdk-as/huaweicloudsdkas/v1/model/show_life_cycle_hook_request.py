@@ -48,6 +48,7 @@ class ShowLifeCycleHookRequest:
     def scaling_group_id(self):
         """Gets the scaling_group_id of this ShowLifeCycleHookRequest.
 
+        伸缩组标识。
 
         :return: The scaling_group_id of this ShowLifeCycleHookRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowLifeCycleHookRequest:
     def scaling_group_id(self, scaling_group_id):
         """Sets the scaling_group_id of this ShowLifeCycleHookRequest.
 
+        伸缩组标识。
 
         :param scaling_group_id: The scaling_group_id of this ShowLifeCycleHookRequest.
         :type: str
@@ -68,6 +70,7 @@ class ShowLifeCycleHookRequest:
     def lifecycle_hook_name(self):
         """Gets the lifecycle_hook_name of this ShowLifeCycleHookRequest.
 
+        生命周期挂钩标识。
 
         :return: The lifecycle_hook_name of this ShowLifeCycleHookRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowLifeCycleHookRequest:
     def lifecycle_hook_name(self, lifecycle_hook_name):
         """Sets the lifecycle_hook_name of this ShowLifeCycleHookRequest.
 
+        生命周期挂钩标识。
 
         :param lifecycle_hook_name: The lifecycle_hook_name of this ShowLifeCycleHookRequest.
         :type: str

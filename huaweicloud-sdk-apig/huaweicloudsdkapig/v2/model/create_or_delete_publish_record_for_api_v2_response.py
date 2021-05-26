@@ -45,7 +45,7 @@ class CreateOrDeletePublishRecordForApiV2Response(SdkResponse):
     def __init__(self, publish_id=None, api_id=None, api_name=None, env_id=None, remark=None, publish_time=None, version_id=None):
         """CreateOrDeletePublishRecordForApiV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateOrDeletePublishRecordForApiV2Response, self).__init__()
 
         self._publish_id = None
         self._api_id = None

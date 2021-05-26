@@ -69,6 +69,7 @@ class ListScalingV2PoliciesRequest:
     def scaling_resource_id(self):
         """Gets the scaling_resource_id of this ListScalingV2PoliciesRequest.
 
+        伸缩组ID。
 
         :return: The scaling_resource_id of this ListScalingV2PoliciesRequest.
         :rtype: str
@@ -79,6 +80,7 @@ class ListScalingV2PoliciesRequest:
     def scaling_resource_id(self, scaling_resource_id):
         """Sets the scaling_resource_id of this ListScalingV2PoliciesRequest.
 
+        伸缩组ID。
 
         :param scaling_resource_id: The scaling_resource_id of this ListScalingV2PoliciesRequest.
         :type: str
@@ -89,6 +91,7 @@ class ListScalingV2PoliciesRequest:
     def scaling_policy_name(self):
         """Gets the scaling_policy_name of this ListScalingV2PoliciesRequest.
 
+        伸缩策略名称。
 
         :return: The scaling_policy_name of this ListScalingV2PoliciesRequest.
         :rtype: str
@@ -99,6 +102,7 @@ class ListScalingV2PoliciesRequest:
     def scaling_policy_name(self, scaling_policy_name):
         """Sets the scaling_policy_name of this ListScalingV2PoliciesRequest.
 
+        伸缩策略名称。
 
         :param scaling_policy_name: The scaling_policy_name of this ListScalingV2PoliciesRequest.
         :type: str
@@ -109,6 +113,7 @@ class ListScalingV2PoliciesRequest:
     def scaling_policy_type(self):
         """Gets the scaling_policy_type of this ListScalingV2PoliciesRequest.
 
+        策略类型。
 
         :return: The scaling_policy_type of this ListScalingV2PoliciesRequest.
         :rtype: str
@@ -119,6 +124,7 @@ class ListScalingV2PoliciesRequest:
     def scaling_policy_type(self, scaling_policy_type):
         """Sets the scaling_policy_type of this ListScalingV2PoliciesRequest.
 
+        策略类型。
 
         :param scaling_policy_type: The scaling_policy_type of this ListScalingV2PoliciesRequest.
         :type: str
@@ -129,6 +135,7 @@ class ListScalingV2PoliciesRequest:
     def scaling_policy_id(self):
         """Gets the scaling_policy_id of this ListScalingV2PoliciesRequest.
 
+        伸缩策略ID。
 
         :return: The scaling_policy_id of this ListScalingV2PoliciesRequest.
         :rtype: str
@@ -139,6 +146,7 @@ class ListScalingV2PoliciesRequest:
     def scaling_policy_id(self, scaling_policy_id):
         """Sets the scaling_policy_id of this ListScalingV2PoliciesRequest.
 
+        伸缩策略ID。
 
         :param scaling_policy_id: The scaling_policy_id of this ListScalingV2PoliciesRequest.
         :type: str
@@ -149,6 +157,7 @@ class ListScalingV2PoliciesRequest:
     def start_number(self):
         """Gets the start_number of this ListScalingV2PoliciesRequest.
 
+        查询的起始行号，默认为0。
 
         :return: The start_number of this ListScalingV2PoliciesRequest.
         :rtype: int
@@ -159,6 +168,7 @@ class ListScalingV2PoliciesRequest:
     def start_number(self, start_number):
         """Sets the start_number of this ListScalingV2PoliciesRequest.
 
+        查询的起始行号，默认为0。
 
         :param start_number: The start_number of this ListScalingV2PoliciesRequest.
         :type: int
@@ -169,6 +179,7 @@ class ListScalingV2PoliciesRequest:
     def limit(self):
         """Gets the limit of this ListScalingV2PoliciesRequest.
 
+        查询记录数，默认20，最大100。
 
         :return: The limit of this ListScalingV2PoliciesRequest.
         :rtype: int
@@ -179,6 +190,7 @@ class ListScalingV2PoliciesRequest:
     def limit(self, limit):
         """Sets the limit of this ListScalingV2PoliciesRequest.
 
+        查询记录数，默认20，最大100。
 
         :param limit: The limit of this ListScalingV2PoliciesRequest.
         :type: int

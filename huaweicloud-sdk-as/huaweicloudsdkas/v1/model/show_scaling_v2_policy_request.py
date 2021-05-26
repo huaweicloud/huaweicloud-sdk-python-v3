@@ -44,6 +44,7 @@ class ShowScalingV2PolicyRequest:
     def scaling_policy_id(self):
         """Gets the scaling_policy_id of this ShowScalingV2PolicyRequest.
 
+        伸缩组ID。
 
         :return: The scaling_policy_id of this ShowScalingV2PolicyRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowScalingV2PolicyRequest:
     def scaling_policy_id(self, scaling_policy_id):
         """Sets the scaling_policy_id of this ShowScalingV2PolicyRequest.
 
+        伸缩组ID。
 
         :param scaling_policy_id: The scaling_policy_id of this ShowScalingV2PolicyRequest.
         :type: str

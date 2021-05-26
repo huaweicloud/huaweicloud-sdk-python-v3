@@ -23,7 +23,7 @@ class CreateScalingConfigRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateScalingConfigRequestBody'
+        'body': 'CreateScalingConfigOption'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class CreateScalingConfigRequest:
 
 
         :return: The body of this CreateScalingConfigRequest.
-        :rtype: CreateScalingConfigRequestBody
+        :rtype: CreateScalingConfigOption
         """
         return self._body
 
@@ -57,7 +57,7 @@ class CreateScalingConfigRequest:
 
 
         :param body: The body of this CreateScalingConfigRequest.
-        :type: CreateScalingConfigRequestBody
+        :type: CreateScalingConfigOption
         """
         self._body = body
 

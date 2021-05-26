@@ -73,6 +73,7 @@ class ListSignatureKeysBindedToApiV2Request:
     def instance_id(self):
         """Gets the instance_id of this ListSignatureKeysBindedToApiV2Request.
 
+        实例编号
 
         :return: The instance_id of this ListSignatureKeysBindedToApiV2Request.
         :rtype: str
@@ -83,6 +84,7 @@ class ListSignatureKeysBindedToApiV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListSignatureKeysBindedToApiV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this ListSignatureKeysBindedToApiV2Request.
         :type: str
@@ -93,6 +95,7 @@ class ListSignatureKeysBindedToApiV2Request:
     def api_id(self):
         """Gets the api_id of this ListSignatureKeysBindedToApiV2Request.
 
+        API的编号
 
         :return: The api_id of this ListSignatureKeysBindedToApiV2Request.
         :rtype: str
@@ -103,6 +106,7 @@ class ListSignatureKeysBindedToApiV2Request:
     def api_id(self, api_id):
         """Sets the api_id of this ListSignatureKeysBindedToApiV2Request.
 
+        API的编号
 
         :param api_id: The api_id of this ListSignatureKeysBindedToApiV2Request.
         :type: str
@@ -113,6 +117,7 @@ class ListSignatureKeysBindedToApiV2Request:
     def sign_id(self):
         """Gets the sign_id of this ListSignatureKeysBindedToApiV2Request.
 
+        签名密钥的编号
 
         :return: The sign_id of this ListSignatureKeysBindedToApiV2Request.
         :rtype: str
@@ -123,6 +128,7 @@ class ListSignatureKeysBindedToApiV2Request:
     def sign_id(self, sign_id):
         """Sets the sign_id of this ListSignatureKeysBindedToApiV2Request.
 
+        签名密钥的编号
 
         :param sign_id: The sign_id of this ListSignatureKeysBindedToApiV2Request.
         :type: str
@@ -133,6 +139,7 @@ class ListSignatureKeysBindedToApiV2Request:
     def sign_name(self):
         """Gets the sign_name of this ListSignatureKeysBindedToApiV2Request.
 
+        签名密钥的名称
 
         :return: The sign_name of this ListSignatureKeysBindedToApiV2Request.
         :rtype: str
@@ -143,6 +150,7 @@ class ListSignatureKeysBindedToApiV2Request:
     def sign_name(self, sign_name):
         """Sets the sign_name of this ListSignatureKeysBindedToApiV2Request.
 
+        签名密钥的名称
 
         :param sign_name: The sign_name of this ListSignatureKeysBindedToApiV2Request.
         :type: str
@@ -153,6 +161,7 @@ class ListSignatureKeysBindedToApiV2Request:
     def env_id(self):
         """Gets the env_id of this ListSignatureKeysBindedToApiV2Request.
 
+        环境编号
 
         :return: The env_id of this ListSignatureKeysBindedToApiV2Request.
         :rtype: str
@@ -163,6 +172,7 @@ class ListSignatureKeysBindedToApiV2Request:
     def env_id(self, env_id):
         """Sets the env_id of this ListSignatureKeysBindedToApiV2Request.
 
+        环境编号
 
         :param env_id: The env_id of this ListSignatureKeysBindedToApiV2Request.
         :type: str
@@ -173,6 +183,7 @@ class ListSignatureKeysBindedToApiV2Request:
     def offset(self):
         """Gets the offset of this ListSignatureKeysBindedToApiV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :return: The offset of this ListSignatureKeysBindedToApiV2Request.
         :rtype: int
@@ -183,6 +194,7 @@ class ListSignatureKeysBindedToApiV2Request:
     def offset(self, offset):
         """Sets the offset of this ListSignatureKeysBindedToApiV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListSignatureKeysBindedToApiV2Request.
         :type: int
@@ -193,6 +205,7 @@ class ListSignatureKeysBindedToApiV2Request:
     def limit(self):
         """Gets the limit of this ListSignatureKeysBindedToApiV2Request.
 
+        每页显示的条目数量
 
         :return: The limit of this ListSignatureKeysBindedToApiV2Request.
         :rtype: int
@@ -203,6 +216,7 @@ class ListSignatureKeysBindedToApiV2Request:
     def limit(self, limit):
         """Sets the limit of this ListSignatureKeysBindedToApiV2Request.
 
+        每页显示的条目数量
 
         :param limit: The limit of this ListSignatureKeysBindedToApiV2Request.
         :type: int

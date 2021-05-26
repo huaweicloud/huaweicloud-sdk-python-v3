@@ -59,7 +59,7 @@ class CreateApiGroupV2Response(SdkResponse):
     def __init__(self, url_domains=None, call_limits=None, update_time=None, name=None, time_unit=None, on_sell_status=None, remark=None, sl_domain=None, sl_domains=None, id=None, time_interval=None, register_time=None, status=None, is_default=None):
         """CreateApiGroupV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateApiGroupV2Response, self).__init__()
 
         self._url_domains = None
         self._call_limits = None

@@ -69,6 +69,7 @@ class ListScalingInstancesRequest:
     def scaling_group_id(self):
         """Gets the scaling_group_id of this ListScalingInstancesRequest.
 
+        伸缩组ID。
 
         :return: The scaling_group_id of this ListScalingInstancesRequest.
         :rtype: str
@@ -79,6 +80,7 @@ class ListScalingInstancesRequest:
     def scaling_group_id(self, scaling_group_id):
         """Sets the scaling_group_id of this ListScalingInstancesRequest.
 
+        伸缩组ID。
 
         :param scaling_group_id: The scaling_group_id of this ListScalingInstancesRequest.
         :type: str
@@ -89,6 +91,7 @@ class ListScalingInstancesRequest:
     def life_cycle_state(self):
         """Gets the life_cycle_state of this ListScalingInstancesRequest.
 
+        实例在伸缩组中的生命周期状态：INSERVICE： 正在使用。PENDING：正在加入伸缩组。REMOVING：正在移出伸缩组。PENDING_WAIT：正在加入伸缩组：等待。REMOVING_WAIT：正在移出伸缩组：等待。
 
         :return: The life_cycle_state of this ListScalingInstancesRequest.
         :rtype: str
@@ -99,6 +102,7 @@ class ListScalingInstancesRequest:
     def life_cycle_state(self, life_cycle_state):
         """Sets the life_cycle_state of this ListScalingInstancesRequest.
 
+        实例在伸缩组中的生命周期状态：INSERVICE： 正在使用。PENDING：正在加入伸缩组。REMOVING：正在移出伸缩组。PENDING_WAIT：正在加入伸缩组：等待。REMOVING_WAIT：正在移出伸缩组：等待。
 
         :param life_cycle_state: The life_cycle_state of this ListScalingInstancesRequest.
         :type: str
@@ -109,6 +113,7 @@ class ListScalingInstancesRequest:
     def health_status(self):
         """Gets the health_status of this ListScalingInstancesRequest.
 
+        实例健康状态：INITIALIZING：初始化。NORMAL：正常。ERROR：异常
 
         :return: The health_status of this ListScalingInstancesRequest.
         :rtype: str
@@ -119,6 +124,7 @@ class ListScalingInstancesRequest:
     def health_status(self, health_status):
         """Sets the health_status of this ListScalingInstancesRequest.
 
+        实例健康状态：INITIALIZING：初始化。NORMAL：正常。ERROR：异常
 
         :param health_status: The health_status of this ListScalingInstancesRequest.
         :type: str
@@ -129,6 +135,7 @@ class ListScalingInstancesRequest:
     def protect_from_scaling_down(self):
         """Gets the protect_from_scaling_down of this ListScalingInstancesRequest.
 
+        实例保护状态：true：已设置实例保护。false：未设置实例保护。
 
         :return: The protect_from_scaling_down of this ListScalingInstancesRequest.
         :rtype: str
@@ -139,6 +146,7 @@ class ListScalingInstancesRequest:
     def protect_from_scaling_down(self, protect_from_scaling_down):
         """Sets the protect_from_scaling_down of this ListScalingInstancesRequest.
 
+        实例保护状态：true：已设置实例保护。false：未设置实例保护。
 
         :param protect_from_scaling_down: The protect_from_scaling_down of this ListScalingInstancesRequest.
         :type: str
@@ -149,6 +157,7 @@ class ListScalingInstancesRequest:
     def start_number(self):
         """Gets the start_number of this ListScalingInstancesRequest.
 
+        查询的起始行号，默认为0。
 
         :return: The start_number of this ListScalingInstancesRequest.
         :rtype: int
@@ -159,6 +168,7 @@ class ListScalingInstancesRequest:
     def start_number(self, start_number):
         """Sets the start_number of this ListScalingInstancesRequest.
 
+        查询的起始行号，默认为0。
 
         :param start_number: The start_number of this ListScalingInstancesRequest.
         :type: int
@@ -169,6 +179,7 @@ class ListScalingInstancesRequest:
     def limit(self):
         """Gets the limit of this ListScalingInstancesRequest.
 
+        查询的记录条数，默认为20。
 
         :return: The limit of this ListScalingInstancesRequest.
         :rtype: int
@@ -179,6 +190,7 @@ class ListScalingInstancesRequest:
     def limit(self, limit):
         """Sets the limit of this ListScalingInstancesRequest.
 
+        查询的记录条数，默认为20。
 
         :param limit: The limit of this ListScalingInstancesRequest.
         :type: int

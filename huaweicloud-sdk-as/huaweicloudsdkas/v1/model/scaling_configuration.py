@@ -27,7 +27,8 @@ class ScalingConfiguration:
         'tenant': 'str',
         'scaling_configuration_name': 'str',
         'instance_config': 'InstanceConfigResult',
-        'create_time': 'datetime'
+        'create_time': 'datetime',
+        'scaling_group_id': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ScalingConfiguration:
         'tenant': 'tenant',
         'scaling_configuration_name': 'scaling_configuration_name',
         'instance_config': 'instance_config',
-        'create_time': 'create_time'
+        'create_time': 'create_time',
+        'scaling_group_id': 'scaling_group_id'
     }
 
-    def __init__(self, scaling_configuration_id=None, tenant=None, scaling_configuration_name=None, instance_config=None, create_time=None):
+    def __init__(self, scaling_configuration_id=None, tenant=None, scaling_configuration_name=None, instance_config=None, create_time=None, scaling_group_id=None):
         """ScalingConfiguration - a model defined in huaweicloud sdk"""
         
         
@@ -48,6 +50,7 @@ class ScalingConfiguration:
         self._scaling_configuration_name = None
         self._instance_config = None
         self._create_time = None
+        self._scaling_group_id = None
         self.discriminator = None
 
         if scaling_configuration_id is not None:
@@ -60,6 +63,8 @@ class ScalingConfiguration:
             self.instance_config = instance_config
         if create_time is not None:
             self.create_time = create_time
+        if scaling_group_id is not None:
+            self.scaling_group_id = scaling_group_id
 
     @property
     def scaling_configuration_id(self):
@@ -168,6 +173,28 @@ class ScalingConfiguration:
         :type: datetime
         """
         self._create_time = create_time
+
+    @property
+    def scaling_group_id(self):
+        """Gets the scaling_group_id of this ScalingConfiguration.
+
+        绑定该伸缩配置的伸缩组ID
+
+        :return: The scaling_group_id of this ScalingConfiguration.
+        :rtype: str
+        """
+        return self._scaling_group_id
+
+    @scaling_group_id.setter
+    def scaling_group_id(self, scaling_group_id):
+        """Sets the scaling_group_id of this ScalingConfiguration.
+
+        绑定该伸缩配置的伸缩组ID
+
+        :param scaling_group_id: The scaling_group_id of this ScalingConfiguration.
+        :type: str
+        """
+        self._scaling_group_id = scaling_group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

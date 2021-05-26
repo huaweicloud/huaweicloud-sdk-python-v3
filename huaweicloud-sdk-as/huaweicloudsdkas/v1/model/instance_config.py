@@ -26,12 +26,12 @@ class InstanceConfig:
         'instance_id': 'str',
         'flavor_ref': 'str',
         'image_ref': 'str',
-        'disk': 'list[Disk]',
+        'disk': 'list[DiskInfo]',
         'key_name': 'str',
-        'personality': 'list[Personality]',
+        'personality': 'list[PersonalityInfo]',
         'public_ip': 'PublicIp',
         'user_data': 'str',
-        'metadata': 'MetaData',
+        'metadata': 'VmMetaData',
         'security_groups': 'list[SecurityGroups]',
         'server_group_id': 'str',
         'tenancy': 'str',
@@ -184,7 +184,7 @@ class InstanceConfig:
         磁盘组信息，系统盘必选，数据盘可选。
 
         :return: The disk of this InstanceConfig.
-        :rtype: list[Disk]
+        :rtype: list[DiskInfo]
         """
         return self._disk
 
@@ -195,7 +195,7 @@ class InstanceConfig:
         磁盘组信息，系统盘必选，数据盘可选。
 
         :param disk: The disk of this InstanceConfig.
-        :type: list[Disk]
+        :type: list[DiskInfo]
         """
         self._disk = disk
 
@@ -228,7 +228,7 @@ class InstanceConfig:
         注入文件信息。仅支持注入文本文件，最大支持注入5个文件，每个文件最大1KB。
 
         :return: The personality of this InstanceConfig.
-        :rtype: list[Personality]
+        :rtype: list[PersonalityInfo]
         """
         return self._personality
 
@@ -239,7 +239,7 @@ class InstanceConfig:
         注入文件信息。仅支持注入文本文件，最大支持注入5个文件，每个文件最大1KB。
 
         :param personality: The personality of this InstanceConfig.
-        :type: list[Personality]
+        :type: list[PersonalityInfo]
         """
         self._personality = personality
 
@@ -291,7 +291,7 @@ class InstanceConfig:
 
 
         :return: The metadata of this InstanceConfig.
-        :rtype: MetaData
+        :rtype: VmMetaData
         """
         return self._metadata
 
@@ -301,7 +301,7 @@ class InstanceConfig:
 
 
         :param metadata: The metadata of this InstanceConfig.
-        :type: MetaData
+        :type: VmMetaData
         """
         self._metadata = metadata
 

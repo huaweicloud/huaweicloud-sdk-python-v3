@@ -26,18 +26,18 @@ class ScalingPolicyExecuteLogList:
         'status': 'str',
         'failed_reason': 'str',
         'execute_type': 'str',
-        'execute_time': 'datetime',
+        'execute_time': 'str',
         'id': 'str',
-        'project_id': 'str',
+        'tenant_id': 'str',
         'scaling_policy_id': 'str',
         'scaling_resource_type': 'str',
         'scaling_resource_id': 'str',
         'old_value': 'str',
         'desire_value': 'str',
-        'limit_value': 'int',
+        'limit_value': 'str',
         'type': 'str',
         'job_records': 'list[JobRecords]',
-        'meta_data': 'MetaData'
+        'meta_data': 'EipMetaData'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class ScalingPolicyExecuteLogList:
         'execute_type': 'execute_type',
         'execute_time': 'execute_time',
         'id': 'id',
-        'project_id': 'project_id',
+        'tenant_id': 'tenant_id',
         'scaling_policy_id': 'scaling_policy_id',
         'scaling_resource_type': 'scaling_resource_type',
         'scaling_resource_id': 'scaling_resource_id',
@@ -58,7 +58,7 @@ class ScalingPolicyExecuteLogList:
         'meta_data': 'meta_data'
     }
 
-    def __init__(self, status=None, failed_reason=None, execute_type=None, execute_time=None, id=None, project_id=None, scaling_policy_id=None, scaling_resource_type=None, scaling_resource_id=None, old_value=None, desire_value=None, limit_value=None, type=None, job_records=None, meta_data=None):
+    def __init__(self, status=None, failed_reason=None, execute_type=None, execute_time=None, id=None, tenant_id=None, scaling_policy_id=None, scaling_resource_type=None, scaling_resource_id=None, old_value=None, desire_value=None, limit_value=None, type=None, job_records=None, meta_data=None):
         """ScalingPolicyExecuteLogList - a model defined in huaweicloud sdk"""
         
         
@@ -68,7 +68,7 @@ class ScalingPolicyExecuteLogList:
         self._execute_type = None
         self._execute_time = None
         self._id = None
-        self._project_id = None
+        self._tenant_id = None
         self._scaling_policy_id = None
         self._scaling_resource_type = None
         self._scaling_resource_id = None
@@ -90,8 +90,8 @@ class ScalingPolicyExecuteLogList:
             self.execute_time = execute_time
         if id is not None:
             self.id = id
-        if project_id is not None:
-            self.project_id = project_id
+        if tenant_id is not None:
+            self.tenant_id = tenant_id
         if scaling_policy_id is not None:
             self.scaling_policy_id = scaling_policy_id
         if scaling_resource_type is not None:
@@ -184,7 +184,7 @@ class ScalingPolicyExecuteLogList:
         策略执行时间，遵循UTC时间。
 
         :return: The execute_time of this ScalingPolicyExecuteLogList.
-        :rtype: datetime
+        :rtype: str
         """
         return self._execute_time
 
@@ -195,7 +195,7 @@ class ScalingPolicyExecuteLogList:
         策略执行时间，遵循UTC时间。
 
         :param execute_time: The execute_time of this ScalingPolicyExecuteLogList.
-        :type: datetime
+        :type: str
         """
         self._execute_time = execute_time
 
@@ -222,26 +222,26 @@ class ScalingPolicyExecuteLogList:
         self._id = id
 
     @property
-    def project_id(self):
-        """Gets the project_id of this ScalingPolicyExecuteLogList.
+    def tenant_id(self):
+        """Gets the tenant_id of this ScalingPolicyExecuteLogList.
 
         租户id。
 
-        :return: The project_id of this ScalingPolicyExecuteLogList.
+        :return: The tenant_id of this ScalingPolicyExecuteLogList.
         :rtype: str
         """
-        return self._project_id
+        return self._tenant_id
 
-    @project_id.setter
-    def project_id(self, project_id):
-        """Sets the project_id of this ScalingPolicyExecuteLogList.
+    @tenant_id.setter
+    def tenant_id(self, tenant_id):
+        """Sets the tenant_id of this ScalingPolicyExecuteLogList.
 
         租户id。
 
-        :param project_id: The project_id of this ScalingPolicyExecuteLogList.
+        :param tenant_id: The tenant_id of this ScalingPolicyExecuteLogList.
         :type: str
         """
-        self._project_id = project_id
+        self._tenant_id = tenant_id
 
     @property
     def scaling_policy_id(self):
@@ -360,7 +360,7 @@ class ScalingPolicyExecuteLogList:
         操作限制。当scaling_resource_type为BANDWIDTH时，且operation不为SET时，limit_value生效，单位为Mbit/s。此时，当operation为ADD时，limit_value表示最高带宽限制；当operation为REDUCE时，limit_value表示最低带宽限制。
 
         :return: The limit_value of this ScalingPolicyExecuteLogList.
-        :rtype: int
+        :rtype: str
         """
         return self._limit_value
 
@@ -371,7 +371,7 @@ class ScalingPolicyExecuteLogList:
         操作限制。当scaling_resource_type为BANDWIDTH时，且operation不为SET时，limit_value生效，单位为Mbit/s。此时，当operation为ADD时，limit_value表示最高带宽限制；当operation为REDUCE时，limit_value表示最低带宽限制。
 
         :param limit_value: The limit_value of this ScalingPolicyExecuteLogList.
-        :type: int
+        :type: str
         """
         self._limit_value = limit_value
 
@@ -425,7 +425,7 @@ class ScalingPolicyExecuteLogList:
 
 
         :return: The meta_data of this ScalingPolicyExecuteLogList.
-        :rtype: MetaData
+        :rtype: EipMetaData
         """
         return self._meta_data
 
@@ -435,7 +435,7 @@ class ScalingPolicyExecuteLogList:
 
 
         :param meta_data: The meta_data of this ScalingPolicyExecuteLogList.
-        :type: MetaData
+        :type: EipMetaData
         """
         self._meta_data = meta_data
 

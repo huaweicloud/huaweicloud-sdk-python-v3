@@ -48,6 +48,7 @@ class DeleteApiV2Request:
     def instance_id(self):
         """Gets the instance_id of this DeleteApiV2Request.
 
+        实例编号
 
         :return: The instance_id of this DeleteApiV2Request.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteApiV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeleteApiV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this DeleteApiV2Request.
         :type: str
@@ -68,6 +70,7 @@ class DeleteApiV2Request:
     def api_id(self):
         """Gets the api_id of this DeleteApiV2Request.
 
+        API的编号
 
         :return: The api_id of this DeleteApiV2Request.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteApiV2Request:
     def api_id(self, api_id):
         """Sets the api_id of this DeleteApiV2Request.
 
+        API的编号
 
         :param api_id: The api_id of this DeleteApiV2Request.
         :type: str

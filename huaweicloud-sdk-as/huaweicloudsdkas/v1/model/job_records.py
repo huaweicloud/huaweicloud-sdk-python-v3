@@ -28,7 +28,7 @@ class JobRecords:
         'record_time': 'str',
         'request': 'str',
         'response': 'str',
-        'code': 'int',
+        'code': 'str',
         'message': 'str',
         'job_status': 'str'
     }
@@ -193,7 +193,7 @@ class JobRecords:
         返回码，仅当record_type为API时有效
 
         :return: The code of this JobRecords.
-        :rtype: int
+        :rtype: str
         """
         return self._code
 
@@ -204,7 +204,7 @@ class JobRecords:
         返回码，仅当record_type为API时有效
 
         :param code: The code of this JobRecords.
-        :type: int
+        :type: str
         """
         self._code = code
 

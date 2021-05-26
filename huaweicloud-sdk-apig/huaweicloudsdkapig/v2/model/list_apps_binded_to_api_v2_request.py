@@ -74,6 +74,7 @@ class ListAppsBindedToApiV2Request:
     def instance_id(self):
         """Gets the instance_id of this ListAppsBindedToApiV2Request.
 
+        实例编号
 
         :return: The instance_id of this ListAppsBindedToApiV2Request.
         :rtype: str
@@ -84,6 +85,7 @@ class ListAppsBindedToApiV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListAppsBindedToApiV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this ListAppsBindedToApiV2Request.
         :type: str
@@ -94,6 +96,7 @@ class ListAppsBindedToApiV2Request:
     def api_id(self):
         """Gets the api_id of this ListAppsBindedToApiV2Request.
 
+        API编号
 
         :return: The api_id of this ListAppsBindedToApiV2Request.
         :rtype: str
@@ -104,6 +107,7 @@ class ListAppsBindedToApiV2Request:
     def api_id(self, api_id):
         """Sets the api_id of this ListAppsBindedToApiV2Request.
 
+        API编号
 
         :param api_id: The api_id of this ListAppsBindedToApiV2Request.
         :type: str
@@ -114,6 +118,7 @@ class ListAppsBindedToApiV2Request:
     def app_name(self):
         """Gets the app_name of this ListAppsBindedToApiV2Request.
 
+        APP名称
 
         :return: The app_name of this ListAppsBindedToApiV2Request.
         :rtype: str
@@ -124,6 +129,7 @@ class ListAppsBindedToApiV2Request:
     def app_name(self, app_name):
         """Sets the app_name of this ListAppsBindedToApiV2Request.
 
+        APP名称
 
         :param app_name: The app_name of this ListAppsBindedToApiV2Request.
         :type: str
@@ -134,6 +140,7 @@ class ListAppsBindedToApiV2Request:
     def app_id(self):
         """Gets the app_id of this ListAppsBindedToApiV2Request.
 
+        APP编号
 
         :return: The app_id of this ListAppsBindedToApiV2Request.
         :rtype: str
@@ -144,6 +151,7 @@ class ListAppsBindedToApiV2Request:
     def app_id(self, app_id):
         """Sets the app_id of this ListAppsBindedToApiV2Request.
 
+        APP编号
 
         :param app_id: The app_id of this ListAppsBindedToApiV2Request.
         :type: str
@@ -154,6 +162,7 @@ class ListAppsBindedToApiV2Request:
     def env_id(self):
         """Gets the env_id of this ListAppsBindedToApiV2Request.
 
+        环境编号
 
         :return: The env_id of this ListAppsBindedToApiV2Request.
         :rtype: str
@@ -164,6 +173,7 @@ class ListAppsBindedToApiV2Request:
     def env_id(self, env_id):
         """Sets the env_id of this ListAppsBindedToApiV2Request.
 
+        环境编号
 
         :param env_id: The env_id of this ListAppsBindedToApiV2Request.
         :type: str
@@ -174,6 +184,7 @@ class ListAppsBindedToApiV2Request:
     def offset(self):
         """Gets the offset of this ListAppsBindedToApiV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :return: The offset of this ListAppsBindedToApiV2Request.
         :rtype: int
@@ -184,6 +195,7 @@ class ListAppsBindedToApiV2Request:
     def offset(self, offset):
         """Sets the offset of this ListAppsBindedToApiV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListAppsBindedToApiV2Request.
         :type: int
@@ -194,6 +206,7 @@ class ListAppsBindedToApiV2Request:
     def limit(self):
         """Gets the limit of this ListAppsBindedToApiV2Request.
 
+        每页显示的条目数量
 
         :return: The limit of this ListAppsBindedToApiV2Request.
         :rtype: int
@@ -204,6 +217,7 @@ class ListAppsBindedToApiV2Request:
     def limit(self, limit):
         """Sets the limit of this ListAppsBindedToApiV2Request.
 
+        每页显示的条目数量
 
         :param limit: The limit of this ListAppsBindedToApiV2Request.
         :type: int

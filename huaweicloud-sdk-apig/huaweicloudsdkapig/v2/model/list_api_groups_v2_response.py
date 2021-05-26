@@ -37,7 +37,7 @@ class ListApiGroupsV2Response(SdkResponse):
     def __init__(self, total=None, size=None, groups=None):
         """ListApiGroupsV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListApiGroupsV2Response, self).__init__()
 
         self._total = None
         self._size = None

@@ -37,7 +37,7 @@ class ListSignatureKeysBindedToApiV2Response(SdkResponse):
     def __init__(self, total=None, size=None, bindings=None):
         """ListSignatureKeysBindedToApiV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSignatureKeysBindedToApiV2Response, self).__init__()
 
         self._total = None
         self._size = None

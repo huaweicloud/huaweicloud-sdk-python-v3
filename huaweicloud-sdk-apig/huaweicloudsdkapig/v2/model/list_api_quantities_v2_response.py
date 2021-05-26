@@ -37,7 +37,7 @@ class ListApiQuantitiesV2Response(SdkResponse):
     def __init__(self, instance_num=None, nums_on_release=None, nums_off_release=None):
         """ListApiQuantitiesV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListApiQuantitiesV2Response, self).__init__()
 
         self._instance_num = None
         self._nums_on_release = None

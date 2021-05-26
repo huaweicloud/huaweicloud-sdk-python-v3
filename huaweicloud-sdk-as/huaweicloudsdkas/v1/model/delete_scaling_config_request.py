@@ -44,6 +44,7 @@ class DeleteScalingConfigRequest:
     def scaling_configuration_id(self):
         """Gets the scaling_configuration_id of this DeleteScalingConfigRequest.
 
+        伸缩配置ID。
 
         :return: The scaling_configuration_id of this DeleteScalingConfigRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteScalingConfigRequest:
     def scaling_configuration_id(self, scaling_configuration_id):
         """Sets the scaling_configuration_id of this DeleteScalingConfigRequest.
 
+        伸缩配置ID。
 
         :param scaling_configuration_id: The scaling_configuration_id of this DeleteScalingConfigRequest.
         :type: str

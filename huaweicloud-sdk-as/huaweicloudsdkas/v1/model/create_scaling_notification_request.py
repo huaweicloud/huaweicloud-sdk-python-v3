@@ -24,7 +24,7 @@ class CreateScalingNotificationRequest:
 
     openapi_types = {
         'scaling_group_id': 'str',
-        'body': 'CreateNotificationRequestBody'
+        'body': 'CreateNotificationOption'
     }
 
     attribute_map = {
@@ -49,6 +49,7 @@ class CreateScalingNotificationRequest:
     def scaling_group_id(self):
         """Gets the scaling_group_id of this CreateScalingNotificationRequest.
 
+        伸缩组标识。
 
         :return: The scaling_group_id of this CreateScalingNotificationRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateScalingNotificationRequest:
     def scaling_group_id(self, scaling_group_id):
         """Sets the scaling_group_id of this CreateScalingNotificationRequest.
 
+        伸缩组标识。
 
         :param scaling_group_id: The scaling_group_id of this CreateScalingNotificationRequest.
         :type: str
@@ -71,7 +73,7 @@ class CreateScalingNotificationRequest:
 
 
         :return: The body of this CreateScalingNotificationRequest.
-        :rtype: CreateNotificationRequestBody
+        :rtype: CreateNotificationOption
         """
         return self._body
 
@@ -81,7 +83,7 @@ class CreateScalingNotificationRequest:
 
 
         :param body: The body of this CreateScalingNotificationRequest.
-        :type: CreateNotificationRequestBody
+        :type: CreateNotificationOption
         """
         self._body = body
 

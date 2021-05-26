@@ -37,7 +37,7 @@ class CreateScalingNotificationResponse(SdkResponse):
     def __init__(self, topic_urn=None, topic_scene=None, topic_name=None):
         """CreateScalingNotificationResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateScalingNotificationResponse, self).__init__()
 
         self._topic_urn = None
         self._topic_scene = None

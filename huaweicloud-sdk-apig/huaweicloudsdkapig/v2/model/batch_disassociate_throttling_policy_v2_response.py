@@ -35,7 +35,7 @@ class BatchDisassociateThrottlingPolicyV2Response(SdkResponse):
     def __init__(self, success_count=None, failure=None):
         """BatchDisassociateThrottlingPolicyV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchDisassociateThrottlingPolicyV2Response, self).__init__()
 
         self._success_count = None
         self._failure = None

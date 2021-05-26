@@ -31,7 +31,7 @@ class DeleteRequestThrottlingPolicyV2Response(SdkResponse):
     def __init__(self):
         """DeleteRequestThrottlingPolicyV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteRequestThrottlingPolicyV2Response, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

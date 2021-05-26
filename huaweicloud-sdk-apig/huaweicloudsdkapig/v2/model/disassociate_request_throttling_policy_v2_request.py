@@ -48,6 +48,7 @@ class DisassociateRequestThrottlingPolicyV2Request:
     def instance_id(self):
         """Gets the instance_id of this DisassociateRequestThrottlingPolicyV2Request.
 
+        实例编号
 
         :return: The instance_id of this DisassociateRequestThrottlingPolicyV2Request.
         :rtype: str
@@ -58,6 +59,7 @@ class DisassociateRequestThrottlingPolicyV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DisassociateRequestThrottlingPolicyV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this DisassociateRequestThrottlingPolicyV2Request.
         :type: str
@@ -68,6 +70,7 @@ class DisassociateRequestThrottlingPolicyV2Request:
     def throttle_binding_id(self):
         """Gets the throttle_binding_id of this DisassociateRequestThrottlingPolicyV2Request.
 
+        API和流控策略绑定关系的ID。
 
         :return: The throttle_binding_id of this DisassociateRequestThrottlingPolicyV2Request.
         :rtype: str
@@ -78,6 +81,7 @@ class DisassociateRequestThrottlingPolicyV2Request:
     def throttle_binding_id(self, throttle_binding_id):
         """Sets the throttle_binding_id of this DisassociateRequestThrottlingPolicyV2Request.
 
+        API和流控策略绑定关系的ID。
 
         :param throttle_binding_id: The throttle_binding_id of this DisassociateRequestThrottlingPolicyV2Request.
         :type: str

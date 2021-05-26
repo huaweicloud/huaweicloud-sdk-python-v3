@@ -33,7 +33,7 @@ class ListScalingNotificationsResponse(SdkResponse):
     def __init__(self, topics=None):
         """ListScalingNotificationsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListScalingNotificationsResponse, self).__init__()
 
         self._topics = None
         self.discriminator = None

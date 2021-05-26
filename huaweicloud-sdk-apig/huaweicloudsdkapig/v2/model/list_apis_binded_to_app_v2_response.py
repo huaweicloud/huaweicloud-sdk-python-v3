@@ -37,7 +37,7 @@ class ListApisBindedToAppV2Response(SdkResponse):
     def __init__(self, total=None, size=None, auths=None):
         """ListApisBindedToAppV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListApisBindedToAppV2Response, self).__init__()
 
         self._total = None
         self._size = None

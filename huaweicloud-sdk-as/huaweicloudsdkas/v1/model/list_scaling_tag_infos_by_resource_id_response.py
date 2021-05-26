@@ -35,7 +35,7 @@ class ListScalingTagInfosByResourceIdResponse(SdkResponse):
     def __init__(self, tags=None, sys_tags=None):
         """ListScalingTagInfosByResourceIdResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListScalingTagInfosByResourceIdResponse, self).__init__()
 
         self._tags = None
         self._sys_tags = None

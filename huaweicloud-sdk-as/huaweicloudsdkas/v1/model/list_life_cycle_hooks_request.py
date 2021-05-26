@@ -44,6 +44,7 @@ class ListLifeCycleHooksRequest:
     def scaling_group_id(self):
         """Gets the scaling_group_id of this ListLifeCycleHooksRequest.
 
+        伸缩组标识。
 
         :return: The scaling_group_id of this ListLifeCycleHooksRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListLifeCycleHooksRequest:
     def scaling_group_id(self, scaling_group_id):
         """Sets the scaling_group_id of this ListLifeCycleHooksRequest.
 
+        伸缩组标识。
 
         :param scaling_group_id: The scaling_group_id of this ListLifeCycleHooksRequest.
         :type: str

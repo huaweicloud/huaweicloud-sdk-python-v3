@@ -33,7 +33,7 @@ class ListLifeCycleHooksResponse(SdkResponse):
     def __init__(self, lifecycle_hooks=None):
         """ListLifeCycleHooksResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListLifeCycleHooksResponse, self).__init__()
 
         self._lifecycle_hooks = None
         self.discriminator = None

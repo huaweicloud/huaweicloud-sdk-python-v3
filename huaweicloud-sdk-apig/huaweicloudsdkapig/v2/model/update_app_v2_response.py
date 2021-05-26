@@ -51,7 +51,7 @@ class UpdateAppV2Response(SdkResponse):
     def __init__(self, creator=None, update_time=None, app_key=None, name=None, remark=None, id=None, app_secret=None, register_time=None, status=None, app_type=None):
         """UpdateAppV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateAppV2Response, self).__init__()
 
         self._creator = None
         self._update_time = None

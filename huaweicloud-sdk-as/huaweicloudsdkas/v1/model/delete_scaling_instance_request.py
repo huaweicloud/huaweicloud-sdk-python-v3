@@ -49,6 +49,7 @@ class DeleteScalingInstanceRequest:
     def instance_id(self):
         """Gets the instance_id of this DeleteScalingInstanceRequest.
 
+        实例ID。
 
         :return: The instance_id of this DeleteScalingInstanceRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class DeleteScalingInstanceRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeleteScalingInstanceRequest.
 
+        实例ID。
 
         :param instance_id: The instance_id of this DeleteScalingInstanceRequest.
         :type: str
@@ -69,6 +71,7 @@ class DeleteScalingInstanceRequest:
     def instance_delete(self):
         """Gets the instance_delete of this DeleteScalingInstanceRequest.
 
+        实例移出伸缩组，是否删除云服务器实例。默认为no；可选值为yes或no。
 
         :return: The instance_delete of this DeleteScalingInstanceRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class DeleteScalingInstanceRequest:
     def instance_delete(self, instance_delete):
         """Sets the instance_delete of this DeleteScalingInstanceRequest.
 
+        实例移出伸缩组，是否删除云服务器实例。默认为no；可选值为yes或no。
 
         :param instance_delete: The instance_delete of this DeleteScalingInstanceRequest.
         :type: str

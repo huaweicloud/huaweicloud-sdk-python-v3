@@ -48,6 +48,136 @@ class AsClient(Client):
 
         return ClientBuilder(clazz)
 
+    def attach_callback_instance_life_cycle_hook(self, request):
+        """伸缩实例生命周期回调
+
+        通过生命周期操作令牌或者通过实例ID和生命周期挂钩名称对伸缩实例指定的挂钩进行回调操作。如果在超时时间结束前已完成自定义操作，选择终止或继续完成生命周期操作。如果需要更多时间完成自定义操作，选择延长超时时间，实例保持等待状态的时间将增加1小时。只有实例的生命周期挂钩状态为 HANGING 时才可以进行回调操作。
+
+        :param AttachCallbackInstanceLifeCycleHookRequest request
+        :return: AttachCallbackInstanceLifeCycleHookResponse
+        """
+        return self.attach_callback_instance_life_cycle_hook_with_http_info(request)
+
+    def attach_callback_instance_life_cycle_hook_with_http_info(self, request):
+        """伸缩实例生命周期回调
+
+        通过生命周期操作令牌或者通过实例ID和生命周期挂钩名称对伸缩实例指定的挂钩进行回调操作。如果在超时时间结束前已完成自定义操作，选择终止或继续完成生命周期操作。如果需要更多时间完成自定义操作，选择延长超时时间，实例保持等待状态的时间将增加1小时。只有实例的生命周期挂钩状态为 HANGING 时才可以进行回调操作。
+
+        :param AttachCallbackInstanceLifeCycleHookRequest request
+        :return: AttachCallbackInstanceLifeCycleHookResponse
+        """
+
+        all_params = ['scaling_group_id', 'bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_instance_hook/{scaling_group_id}/callback',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AttachCallbackInstanceLifeCycleHookResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_add_scaling_instances(self, request):
+        """批量添加实例
+
+        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
+
+        :param BatchAddScalingInstancesRequest request
+        :return: BatchAddScalingInstancesResponse
+        """
+        return self.batch_add_scaling_instances_with_http_info(request)
+
+    def batch_add_scaling_instances_with_http_info(self, request):
+        """批量添加实例
+
+        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
+
+        :param BatchAddScalingInstancesRequest request
+        :return: BatchAddScalingInstancesResponse
+        """
+
+        all_params = ['scaling_group_id', 'bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchAddScalingInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def batch_delete_scaling_configs(self, request):
         """批量删除弹性伸缩配置
 
@@ -111,23 +241,149 @@ class AsClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def complete_lifecycle_action(self, request):
-        """伸缩实例生命周期回调
+    def batch_delete_scaling_policies(self, request):
+        """批量删除弹性伸缩策略。
 
-        通过生命周期操作令牌或者通过实例ID和生命周期挂钩名称对伸缩实例指定的挂钩进行回调操作。如果在超时时间结束前已完成自定义操作，选择终止或继续完成生命周期操作。如果需要更多时间完成自定义操作，选择延长超时时间，实例保持等待状态的时间将增加1小时。只有实例的生命周期挂钩状态为 HANGING 时才可以进行回调操作。
+        批量启用、停用或者删除弹性伸缩策略。单次最多批量操作伸缩策略个数为20。
 
-        :param CompleteLifecycleActionRequest request
-        :return: CompleteLifecycleActionResponse
+        :param BatchDeleteScalingPoliciesRequest request
+        :return: BatchDeleteScalingPoliciesResponse
         """
-        return self.complete_lifecycle_action_with_http_info(request)
+        return self.batch_delete_scaling_policies_with_http_info(request)
 
-    def complete_lifecycle_action_with_http_info(self, request):
-        """伸缩实例生命周期回调
+    def batch_delete_scaling_policies_with_http_info(self, request):
+        """批量删除弹性伸缩策略。
 
-        通过生命周期操作令牌或者通过实例ID和生命周期挂钩名称对伸缩实例指定的挂钩进行回调操作。如果在超时时间结束前已完成自定义操作，选择终止或继续完成生命周期操作。如果需要更多时间完成自定义操作，选择延长超时时间，实例保持等待状态的时间将增加1小时。只有实例的生命周期挂钩状态为 HANGING 时才可以进行回调操作。
+        批量启用、停用或者删除弹性伸缩策略。单次最多批量操作伸缩策略个数为20。
 
-        :param CompleteLifecycleActionRequest request
-        :return: CompleteLifecycleActionResponse
+        :param BatchDeleteScalingPoliciesRequest request
+        :return: BatchDeleteScalingPoliciesResponse
+        """
+
+        all_params = ['bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_policies/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteScalingPoliciesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_pause_scaling_policies(self, request):
+        """批量停用弹性伸缩策略。
+
+        批量启用、停用或者删除弹性伸缩策略。单次最多批量操作伸缩策略个数为20。
+
+        :param BatchPauseScalingPoliciesRequest request
+        :return: BatchPauseScalingPoliciesResponse
+        """
+        return self.batch_pause_scaling_policies_with_http_info(request)
+
+    def batch_pause_scaling_policies_with_http_info(self, request):
+        """批量停用弹性伸缩策略。
+
+        批量启用、停用或者删除弹性伸缩策略。单次最多批量操作伸缩策略个数为20。
+
+        :param BatchPauseScalingPoliciesRequest request
+        :return: BatchPauseScalingPoliciesResponse
+        """
+
+        all_params = ['bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_policies/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchPauseScalingPoliciesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_protect_scaling_instances(self, request):
+        """批量设置实例保护
+
+        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
+
+        :param BatchProtectScalingInstancesRequest request
+        :return: BatchProtectScalingInstancesResponse
+        """
+        return self.batch_protect_scaling_instances_with_http_info(request)
+
+    def batch_protect_scaling_instances_with_http_info(self, request):
+        """批量设置实例保护
+
+        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
+
+        :param BatchProtectScalingInstancesRequest request
+        :return: BatchProtectScalingInstancesResponse
         """
 
         all_params = ['scaling_group_id', 'bodyparam']
@@ -162,14 +418,337 @@ class AsClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_instance_hook/{scaling_group_id}/callback',
-            method='PUT',
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action',
+            method='POST',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='CompleteLifecycleActionResponse',
+            response_type='BatchProtectScalingInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_remove_scaling_instances(self, request):
+        """批量移除实例
+
+        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
+
+        :param BatchRemoveScalingInstancesRequest request
+        :return: BatchRemoveScalingInstancesResponse
+        """
+        return self.batch_remove_scaling_instances_with_http_info(request)
+
+    def batch_remove_scaling_instances_with_http_info(self, request):
+        """批量移除实例
+
+        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
+
+        :param BatchRemoveScalingInstancesRequest request
+        :return: BatchRemoveScalingInstancesResponse
+        """
+
+        all_params = ['scaling_group_id', 'bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchRemoveScalingInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_resume_scaling_policies(self, request):
+        """批量启用弹性伸缩策略。
+
+        批量启用、停用或者删除弹性伸缩策略。单次最多批量操作伸缩策略个数为20。
+
+        :param BatchResumeScalingPoliciesRequest request
+        :return: BatchResumeScalingPoliciesResponse
+        """
+        return self.batch_resume_scaling_policies_with_http_info(request)
+
+    def batch_resume_scaling_policies_with_http_info(self, request):
+        """批量启用弹性伸缩策略。
+
+        批量启用、停用或者删除弹性伸缩策略。单次最多批量操作伸缩策略个数为20。
+
+        :param BatchResumeScalingPoliciesRequest request
+        :return: BatchResumeScalingPoliciesResponse
+        """
+
+        all_params = ['bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_policies/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchResumeScalingPoliciesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_set_scaling_instances_standby(self, request):
+        """批量将实例转为备用状态
+
+        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
+
+        :param BatchSetScalingInstancesStandbyRequest request
+        :return: BatchSetScalingInstancesStandbyResponse
+        """
+        return self.batch_set_scaling_instances_standby_with_http_info(request)
+
+    def batch_set_scaling_instances_standby_with_http_info(self, request):
+        """批量将实例转为备用状态
+
+        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
+
+        :param BatchSetScalingInstancesStandbyRequest request
+        :return: BatchSetScalingInstancesStandbyResponse
+        """
+
+        all_params = ['scaling_group_id', 'bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchSetScalingInstancesStandbyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_unprotect_scaling_instances(self, request):
+        """批量取消实例保护
+
+        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
+
+        :param BatchUnprotectScalingInstancesRequest request
+        :return: BatchUnprotectScalingInstancesResponse
+        """
+        return self.batch_unprotect_scaling_instances_with_http_info(request)
+
+    def batch_unprotect_scaling_instances_with_http_info(self, request):
+        """批量取消实例保护
+
+        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
+
+        :param BatchUnprotectScalingInstancesRequest request
+        :return: BatchUnprotectScalingInstancesResponse
+        """
+
+        all_params = ['scaling_group_id', 'bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchUnprotectScalingInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_unset_scaling_instances_standby(self, request):
+        """批量将实例移出备用状态
+
+        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
+
+        :param BatchUnsetScalingInstancesStandbyRequest request
+        :return: BatchUnsetScalingInstancesStandbyResponse
+        """
+        return self.batch_unset_scaling_instances_standby_with_http_info(request)
+
+    def batch_unset_scaling_instances_standby_with_http_info(self, request):
+        """批量将实例移出备用状态
+
+        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
+
+        :param BatchUnsetScalingInstancesStandbyRequest request
+        :return: BatchUnsetScalingInstancesStandbyResponse
+        """
+
+        all_params = ['scaling_group_id', 'bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchUnsetScalingInstancesStandbyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -495,23 +1074,23 @@ class AsClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def create_scaling_tags(self, request):
+    def create_scaling_tag_info(self, request):
         """创建标签
 
         创建或删除指定资源的标签。每个伸缩组最多添加10个标签。
 
-        :param CreateScalingTagsRequest request
-        :return: CreateScalingTagsResponse
+        :param CreateScalingTagInfoRequest request
+        :return: CreateScalingTagInfoResponse
         """
-        return self.create_scaling_tags_with_http_info(request)
+        return self.create_scaling_tag_info_with_http_info(request)
 
-    def create_scaling_tags_with_http_info(self, request):
+    def create_scaling_tag_info_with_http_info(self, request):
         """创建标签
 
         创建或删除指定资源的标签。每个伸缩组最多添加10个标签。
 
-        :param CreateScalingTagsRequest request
-        :return: CreateScalingTagsResponse
+        :param CreateScalingTagInfoRequest request
+        :return: CreateScalingTagInfoResponse
         """
 
         all_params = ['resource_type', 'resource_id', 'bodyparam']
@@ -555,7 +1134,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='CreateScalingTagsResponse',
+            response_type='CreateScalingTagInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -948,23 +1527,23 @@ class AsClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def delete_scaling_tags(self, request):
+    def delete_scaling_tag_info(self, request):
         """删除标签
 
         创建或删除指定资源的标签。每个伸缩组最多添加10个标签。
 
-        :param DeleteScalingTagsRequest request
-        :return: DeleteScalingTagsResponse
+        :param DeleteScalingTagInfoRequest request
+        :return: DeleteScalingTagInfoResponse
         """
-        return self.delete_scaling_tags_with_http_info(request)
+        return self.delete_scaling_tag_info_with_http_info(request)
 
-    def delete_scaling_tags_with_http_info(self, request):
+    def delete_scaling_tag_info_with_http_info(self, request):
         """删除标签
 
         创建或删除指定资源的标签。每个伸缩组最多添加10个标签。
 
-        :param DeleteScalingTagsRequest request
-        :return: DeleteScalingTagsResponse
+        :param DeleteScalingTagInfoRequest request
+        :return: DeleteScalingTagInfoResponse
         """
 
         all_params = ['resource_type', 'resource_id', 'bodyparam']
@@ -1008,135 +1587,7 @@ class AsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='DeleteScalingTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def enable_or_disable_scaling_group(self, request):
-        """启用或停止弹性伸缩组
-
-        启用或停止一个指定弹性伸缩组。已停用状态的伸缩组，不会自动触发任何伸缩活动。当伸缩组正在进行伸缩活动，即使停用，正在进行的伸缩活动也不会立即停止。
-
-        :param EnableOrDisableScalingGroupRequest request
-        :return: EnableOrDisableScalingGroupResponse
-        """
-        return self.enable_or_disable_scaling_group_with_http_info(request)
-
-    def enable_or_disable_scaling_group_with_http_info(self, request):
-        """启用或停止弹性伸缩组
-
-        启用或停止一个指定弹性伸缩组。已停用状态的伸缩组，不会自动触发任何伸缩活动。当伸缩组正在进行伸缩活动，即使停用，正在进行的伸缩活动也不会立即停止。
-
-        :param EnableOrDisableScalingGroupRequest request
-        :return: EnableOrDisableScalingGroupResponse
-        """
-
-        all_params = ['scaling_group_id', 'body_param']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'scaling_group_id' in local_var_params:
-            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='EnableOrDisableScalingGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def execute_scaling_policies(self, request):
-        """批量操作弹性伸缩策略。
-
-        批量启用、停用或者删除弹性伸缩策略。单次最多批量操作伸缩策略个数为20。
-
-        :param ExecuteScalingPoliciesRequest request
-        :return: ExecuteScalingPoliciesResponse
-        """
-        return self.execute_scaling_policies_with_http_info(request)
-
-    def execute_scaling_policies_with_http_info(self, request):
-        """批量操作弹性伸缩策略。
-
-        批量启用、停用或者删除弹性伸缩策略。单次最多批量操作伸缩策略个数为20。
-
-        :param ExecuteScalingPoliciesRequest request
-        :return: ExecuteScalingPoliciesResponse
-        """
-
-        all_params = ['bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_policies/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ExecuteScalingPoliciesResponse',
+            response_type='DeleteScalingTagInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1144,7 +1595,7 @@ class AsClient(Client):
 
 
     def execute_scaling_policy(self, request):
-        """执行或启用或停止弹性伸缩策略。
+        """执行弹性伸缩策略。
 
         立即执行或启用或停止一个指定弹性伸缩策略。当伸缩组、伸缩策略状态处于INSERVICE时，伸缩策略才能被正确执行，否则会执行失败。
 
@@ -1154,7 +1605,7 @@ class AsClient(Client):
         return self.execute_scaling_policy_with_http_info(request)
 
     def execute_scaling_policy_with_http_info(self, request):
-        """执行或启用或停止弹性伸缩策略。
+        """执行弹性伸缩策略。
 
         立即执行或启用或停止一个指定弹性伸缩策略。当伸缩组、伸缩策略状态处于INSERVICE时，伸缩策略才能被正确执行，否则会执行失败。
 
@@ -1491,7 +1942,7 @@ class AsClient(Client):
         :return: ListScalingActivityV2LogsResponse
         """
 
-        all_params = ['scaling_group_id', 'start_time', 'end_time', 'start_number', 'limit', 'type', 'status']
+        all_params = ['scaling_group_id', 'log_id', 'start_time', 'end_time', 'start_number', 'limit', 'type', 'status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1504,6 +1955,8 @@ class AsClient(Client):
             path_params['scaling_group_id'] = local_var_params['scaling_group_id']
 
         query_params = []
+        if 'log_id' in local_var_params:
+            query_params.append(('log_id', local_var_params['log_id']))
         if 'start_time' in local_var_params:
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
@@ -1635,7 +2088,7 @@ class AsClient(Client):
         :return: ListScalingGroupsResponse
         """
 
-        all_params = ['scaling_group_name', 'scaling_configuration_id', 'scaling_group_status', 'start_number', 'limit']
+        all_params = ['scaling_group_name', 'scaling_configuration_id', 'scaling_group_status', 'start_number', 'limit', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1656,6 +2109,8 @@ class AsClient(Client):
             query_params.append(('start_number', local_var_params['start_number']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2097,6 +2552,266 @@ class AsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListScalingTagInfosByTenantIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def pause_scaling_group(self, request):
+        """停止弹性伸缩组
+
+        启用或停止一个指定弹性伸缩组。已停用状态的伸缩组，不会自动触发任何伸缩活动。当伸缩组正在进行伸缩活动，即使停用，正在进行的伸缩活动也不会立即停止。
+
+        :param PauseScalingGroupRequest request
+        :return: PauseScalingGroupResponse
+        """
+        return self.pause_scaling_group_with_http_info(request)
+
+    def pause_scaling_group_with_http_info(self, request):
+        """停止弹性伸缩组
+
+        启用或停止一个指定弹性伸缩组。已停用状态的伸缩组，不会自动触发任何伸缩活动。当伸缩组正在进行伸缩活动，即使停用，正在进行的伸缩活动也不会立即停止。
+
+        :param PauseScalingGroupRequest request
+        :return: PauseScalingGroupResponse
+        """
+
+        all_params = ['scaling_group_id', 'body_param']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='PauseScalingGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def pause_scaling_policy(self, request):
+        """停止弹性伸缩策略。
+
+        立即执行或启用或停止一个指定弹性伸缩策略。当伸缩组、伸缩策略状态处于INSERVICE时，伸缩策略才能被正确执行，否则会执行失败。
+
+        :param PauseScalingPolicyRequest request
+        :return: PauseScalingPolicyResponse
+        """
+        return self.pause_scaling_policy_with_http_info(request)
+
+    def pause_scaling_policy_with_http_info(self, request):
+        """停止弹性伸缩策略。
+
+        立即执行或启用或停止一个指定弹性伸缩策略。当伸缩组、伸缩策略状态处于INSERVICE时，伸缩策略才能被正确执行，否则会执行失败。
+
+        :param PauseScalingPolicyRequest request
+        :return: PauseScalingPolicyResponse
+        """
+
+        all_params = ['scaling_policy_id', 'bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_policy_id' in local_var_params:
+            path_params['scaling_policy_id'] = local_var_params['scaling_policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='PauseScalingPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def resume_scaling_group(self, request):
+        """启用弹性伸缩组
+
+        启用或停止一个指定弹性伸缩组。已停用状态的伸缩组，不会自动触发任何伸缩活动。当伸缩组正在进行伸缩活动，即使停用，正在进行的伸缩活动也不会立即停止。
+
+        :param ResumeScalingGroupRequest request
+        :return: ResumeScalingGroupResponse
+        """
+        return self.resume_scaling_group_with_http_info(request)
+
+    def resume_scaling_group_with_http_info(self, request):
+        """启用弹性伸缩组
+
+        启用或停止一个指定弹性伸缩组。已停用状态的伸缩组，不会自动触发任何伸缩活动。当伸缩组正在进行伸缩活动，即使停用，正在进行的伸缩活动也不会立即停止。
+
+        :param ResumeScalingGroupRequest request
+        :return: ResumeScalingGroupResponse
+        """
+
+        all_params = ['scaling_group_id', 'body_param']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ResumeScalingGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def resume_scaling_policy(self, request):
+        """启用弹性伸缩策略。
+
+        立即执行或启用或停止一个指定弹性伸缩策略。当伸缩组、伸缩策略状态处于INSERVICE时，伸缩策略才能被正确执行，否则会执行失败。
+
+        :param ResumeScalingPolicyRequest request
+        :return: ResumeScalingPolicyResponse
+        """
+        return self.resume_scaling_policy_with_http_info(request)
+
+    def resume_scaling_policy_with_http_info(self, request):
+        """启用弹性伸缩策略。
+
+        立即执行或启用或停止一个指定弹性伸缩策略。当伸缩组、伸缩策略状态处于INSERVICE时，伸缩策略才能被正确执行，否则会执行失败。
+
+        :param ResumeScalingPolicyRequest request
+        :return: ResumeScalingPolicyResponse
+        """
+
+        all_params = ['scaling_policy_id', 'bodyparam']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_policy_id' in local_var_params:
+            path_params['scaling_policy_id'] = local_var_params['scaling_policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ResumeScalingPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2613,71 +3328,6 @@ class AsClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def update_scaling_group_instance(self, request):
-        """批量操作实例
-
-        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
-
-        :param UpdateScalingGroupInstanceRequest request
-        :return: UpdateScalingGroupInstanceResponse
-        """
-        return self.update_scaling_group_instance_with_http_info(request)
-
-    def update_scaling_group_instance_with_http_info(self, request):
-        """批量操作实例
-
-        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
-
-        :param UpdateScalingGroupInstanceRequest request
-        :return: UpdateScalingGroupInstanceResponse
-        """
-
-        all_params = ['scaling_group_id', 'bodyparam']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'scaling_group_id' in local_var_params:
-            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='UpdateScalingGroupInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def update_scaling_policy(self, request):
         """修改弹性伸缩策略
 
@@ -2737,6 +3387,130 @@ class AsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateScalingPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_api_versions(self, request):
+        """查询弹性伸缩API所有版本信息
+
+        查询弹性伸缩API所有版本信息
+
+        :param ListApiVersionsRequest request
+        :return: ListApiVersionsResponse
+        """
+        return self.list_api_versions_with_http_info(request)
+
+    def list_api_versions_with_http_info(self, request):
+        """查询弹性伸缩API所有版本信息
+
+        查询弹性伸缩API所有版本信息
+
+        :param ListApiVersionsRequest request
+        :return: ListApiVersionsResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListApiVersionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_api_version(self, request):
+        """查询弹性伸缩API指定版本信息
+
+        根据租户id和资源id查询指定资源类型的标签列表
+
+        :param ShowApiVersionRequest request
+        :return: ShowApiVersionResponse
+        """
+        return self.show_api_version_with_http_info(request)
+
+    def show_api_version_with_http_info(self, request):
+        """查询弹性伸缩API指定版本信息
+
+        根据租户id和资源id查询指定资源类型的标签列表
+
+        :param ShowApiVersionRequest request
+        :return: ShowApiVersionResponse
+        """
+
+        all_params = ['api_version']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'api_version' in local_var_params:
+            path_params['api_version'] = local_var_params['api_version']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/{api_version}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowApiVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -57,6 +57,7 @@ class AssociateCertificateV2Request:
     def instance_id(self):
         """Gets the instance_id of this AssociateCertificateV2Request.
 
+        实例编号
 
         :return: The instance_id of this AssociateCertificateV2Request.
         :rtype: str
@@ -67,6 +68,7 @@ class AssociateCertificateV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this AssociateCertificateV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this AssociateCertificateV2Request.
         :type: str
@@ -77,6 +79,7 @@ class AssociateCertificateV2Request:
     def domain_id(self):
         """Gets the domain_id of this AssociateCertificateV2Request.
 
+        域名的编号
 
         :return: The domain_id of this AssociateCertificateV2Request.
         :rtype: str
@@ -87,6 +90,7 @@ class AssociateCertificateV2Request:
     def domain_id(self, domain_id):
         """Sets the domain_id of this AssociateCertificateV2Request.
 
+        域名的编号
 
         :param domain_id: The domain_id of this AssociateCertificateV2Request.
         :type: str
@@ -97,6 +101,7 @@ class AssociateCertificateV2Request:
     def group_id(self):
         """Gets the group_id of this AssociateCertificateV2Request.
 
+        分组的编号
 
         :return: The group_id of this AssociateCertificateV2Request.
         :rtype: str
@@ -107,6 +112,7 @@ class AssociateCertificateV2Request:
     def group_id(self, group_id):
         """Sets the group_id of this AssociateCertificateV2Request.
 
+        分组的编号
 
         :param group_id: The group_id of this AssociateCertificateV2Request.
         :type: str

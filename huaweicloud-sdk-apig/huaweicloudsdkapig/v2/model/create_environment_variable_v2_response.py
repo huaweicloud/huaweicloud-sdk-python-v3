@@ -41,7 +41,7 @@ class CreateEnvironmentVariableV2Response(SdkResponse):
     def __init__(self, variable_value=None, env_id=None, group_id=None, id=None, variable_name=None):
         """CreateEnvironmentVariableV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateEnvironmentVariableV2Response, self).__init__()
 
         self._variable_value = None
         self._env_id = None

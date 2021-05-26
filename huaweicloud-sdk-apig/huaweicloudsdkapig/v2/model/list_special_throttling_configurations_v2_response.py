@@ -37,7 +37,7 @@ class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
     def __init__(self, total=None, size=None, throttle_specials=None):
         """ListSpecialThrottlingConfigurationsV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSpecialThrottlingConfigurationsV2Response, self).__init__()
 
         self._total = None
         self._size = None

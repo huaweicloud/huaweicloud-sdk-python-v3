@@ -49,7 +49,7 @@ class UpdateSpecialThrottlingConfigurationV2Response(SdkResponse):
     def __init__(self, call_limits=None, app_name=None, object_name=None, object_id=None, throttle_id=None, apply_time=None, id=None, app_id=None, object_type=None):
         """UpdateSpecialThrottlingConfigurationV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateSpecialThrottlingConfigurationV2Response, self).__init__()
 
         self._call_limits = None
         self._app_name = None

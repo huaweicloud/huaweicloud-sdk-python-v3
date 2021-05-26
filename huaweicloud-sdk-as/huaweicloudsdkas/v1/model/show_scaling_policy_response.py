@@ -23,7 +23,7 @@ class ShowScalingPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'scaling_policy': 'ScalingPolicyDetail'
+        'scaling_policy': 'ScalingV1PolicyDetail'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class ShowScalingPolicyResponse(SdkResponse):
     def __init__(self, scaling_policy=None):
         """ShowScalingPolicyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowScalingPolicyResponse, self).__init__()
 
         self._scaling_policy = None
         self.discriminator = None
@@ -47,7 +47,7 @@ class ShowScalingPolicyResponse(SdkResponse):
 
 
         :return: The scaling_policy of this ShowScalingPolicyResponse.
-        :rtype: ScalingPolicyDetail
+        :rtype: ScalingV1PolicyDetail
         """
         return self._scaling_policy
 
@@ -57,7 +57,7 @@ class ShowScalingPolicyResponse(SdkResponse):
 
 
         :param scaling_policy: The scaling_policy of this ShowScalingPolicyResponse.
-        :type: ScalingPolicyDetail
+        :type: ScalingV1PolicyDetail
         """
         self._scaling_policy = scaling_policy
 

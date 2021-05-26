@@ -36,7 +36,7 @@ class ScalingGroups:
         'lb_listener_id': 'str',
         'lbaas_listeners': 'list[LbaasListenersResult]',
         'available_zones': 'list[str]',
-        'networks': 'list[Networks]',
+        'networks': 'list[NetworksResult]',
         'security_groups': 'list[SecurityGroupsResult]',
         'create_time': 'datetime',
         'vpc_id': 'str',
@@ -48,8 +48,11 @@ class ScalingGroups:
         'instance_terminate_policy': 'str',
         'notifications': 'list[str]',
         'delete_publicip': 'bool',
+        'delete_volume': 'bool',
         'cloud_location_id': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'activity_type': 'str',
+        'multi_az_priority_policy': 'str'
     }
 
     attribute_map = {
@@ -78,11 +81,14 @@ class ScalingGroups:
         'instance_terminate_policy': 'instance_terminate_policy',
         'notifications': 'notifications',
         'delete_publicip': 'delete_publicip',
+        'delete_volume': 'delete_volume',
         'cloud_location_id': 'cloud_location_id',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'activity_type': 'activity_type',
+        'multi_az_priority_policy': 'multi_az_priority_policy'
     }
 
-    def __init__(self, scaling_group_name=None, scaling_group_id=None, scaling_group_status=None, scaling_configuration_id=None, scaling_configuration_name=None, current_instance_number=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, lb_listener_id=None, lbaas_listeners=None, available_zones=None, networks=None, security_groups=None, create_time=None, vpc_id=None, detail=None, is_scaling=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, notifications=None, delete_publicip=None, cloud_location_id=None, enterprise_project_id=None):
+    def __init__(self, scaling_group_name=None, scaling_group_id=None, scaling_group_status=None, scaling_configuration_id=None, scaling_configuration_name=None, current_instance_number=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, lb_listener_id=None, lbaas_listeners=None, available_zones=None, networks=None, security_groups=None, create_time=None, vpc_id=None, detail=None, is_scaling=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, notifications=None, delete_publicip=None, delete_volume=None, cloud_location_id=None, enterprise_project_id=None, activity_type=None, multi_az_priority_policy=None):
         """ScalingGroups - a model defined in huaweicloud sdk"""
         
         
@@ -112,8 +118,11 @@ class ScalingGroups:
         self._instance_terminate_policy = None
         self._notifications = None
         self._delete_publicip = None
+        self._delete_volume = None
         self._cloud_location_id = None
         self._enterprise_project_id = None
+        self._activity_type = None
+        self._multi_az_priority_policy = None
         self.discriminator = None
 
         if scaling_group_name is not None:
@@ -166,10 +175,16 @@ class ScalingGroups:
             self.notifications = notifications
         if delete_publicip is not None:
             self.delete_publicip = delete_publicip
+        if delete_volume is not None:
+            self.delete_volume = delete_volume
         if cloud_location_id is not None:
             self.cloud_location_id = cloud_location_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if activity_type is not None:
+            self.activity_type = activity_type
+        if multi_az_priority_policy is not None:
+            self.multi_az_priority_policy = multi_az_priority_policy
 
     @property
     def scaling_group_name(self):
@@ -464,7 +479,7 @@ class ScalingGroups:
         网络信息
 
         :return: The networks of this ScalingGroups.
-        :rtype: list[Networks]
+        :rtype: list[NetworksResult]
         """
         return self._networks
 
@@ -475,7 +490,7 @@ class ScalingGroups:
         网络信息
 
         :param networks: The networks of this ScalingGroups.
-        :type: list[Networks]
+        :type: list[NetworksResult]
         """
         self._networks = networks
 
@@ -722,6 +737,28 @@ class ScalingGroups:
         self._delete_publicip = delete_publicip
 
     @property
+    def delete_volume(self):
+        """Gets the delete_volume of this ScalingGroups.
+
+        删除云服务器是否删除云服务器绑定的数据盘
+
+        :return: The delete_volume of this ScalingGroups.
+        :rtype: bool
+        """
+        return self._delete_volume
+
+    @delete_volume.setter
+    def delete_volume(self, delete_volume):
+        """Sets the delete_volume of this ScalingGroups.
+
+        删除云服务器是否删除云服务器绑定的数据盘
+
+        :param delete_volume: The delete_volume of this ScalingGroups.
+        :type: bool
+        """
+        self._delete_volume = delete_volume
+
+    @property
     def cloud_location_id(self):
         """Gets the cloud_location_id of this ScalingGroups.
 
@@ -764,6 +801,50 @@ class ScalingGroups:
         :type: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def activity_type(self):
+        """Gets the activity_type of this ScalingGroups.
+
+        伸缩组活动类型
+
+        :return: The activity_type of this ScalingGroups.
+        :rtype: str
+        """
+        return self._activity_type
+
+    @activity_type.setter
+    def activity_type(self, activity_type):
+        """Sets the activity_type of this ScalingGroups.
+
+        伸缩组活动类型
+
+        :param activity_type: The activity_type of this ScalingGroups.
+        :type: str
+        """
+        self._activity_type = activity_type
+
+    @property
+    def multi_az_priority_policy(self):
+        """Gets the multi_az_priority_policy of this ScalingGroups.
+
+        伸缩组扩缩容时目标AZ选择的优先级策略
+
+        :return: The multi_az_priority_policy of this ScalingGroups.
+        :rtype: str
+        """
+        return self._multi_az_priority_policy
+
+    @multi_az_priority_policy.setter
+    def multi_az_priority_policy(self, multi_az_priority_policy):
+        """Sets the multi_az_priority_policy of this ScalingGroups.
+
+        伸缩组扩缩容时目标AZ选择的优先级策略
+
+        :param multi_az_priority_policy: The multi_az_priority_policy of this ScalingGroups.
+        :type: str
+        """
+        self._multi_az_priority_policy = multi_az_priority_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

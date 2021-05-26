@@ -37,7 +37,7 @@ class ListSignatureKeysV2Response(SdkResponse):
     def __init__(self, total=None, signs=None, size=None):
         """ListSignatureKeysV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSignatureKeysV2Response, self).__init__()
 
         self._total = None
         self._signs = None

@@ -52,6 +52,7 @@ class DeleteSpecialThrottlingConfigurationV2Request:
     def instance_id(self):
         """Gets the instance_id of this DeleteSpecialThrottlingConfigurationV2Request.
 
+        实例编号
 
         :return: The instance_id of this DeleteSpecialThrottlingConfigurationV2Request.
         :rtype: str
@@ -62,6 +63,7 @@ class DeleteSpecialThrottlingConfigurationV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeleteSpecialThrottlingConfigurationV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this DeleteSpecialThrottlingConfigurationV2Request.
         :type: str
@@ -72,6 +74,7 @@ class DeleteSpecialThrottlingConfigurationV2Request:
     def throttle_id(self):
         """Gets the throttle_id of this DeleteSpecialThrottlingConfigurationV2Request.
 
+        流控策略的ID
 
         :return: The throttle_id of this DeleteSpecialThrottlingConfigurationV2Request.
         :rtype: str
@@ -82,6 +85,7 @@ class DeleteSpecialThrottlingConfigurationV2Request:
     def throttle_id(self, throttle_id):
         """Sets the throttle_id of this DeleteSpecialThrottlingConfigurationV2Request.
 
+        流控策略的ID
 
         :param throttle_id: The throttle_id of this DeleteSpecialThrottlingConfigurationV2Request.
         :type: str
@@ -92,6 +96,7 @@ class DeleteSpecialThrottlingConfigurationV2Request:
     def strategy_id(self):
         """Gets the strategy_id of this DeleteSpecialThrottlingConfigurationV2Request.
 
+        特殊配置的编号
 
         :return: The strategy_id of this DeleteSpecialThrottlingConfigurationV2Request.
         :rtype: str
@@ -102,6 +107,7 @@ class DeleteSpecialThrottlingConfigurationV2Request:
     def strategy_id(self, strategy_id):
         """Sets the strategy_id of this DeleteSpecialThrottlingConfigurationV2Request.
 
+        特殊配置的编号
 
         :param strategy_id: The strategy_id of this DeleteSpecialThrottlingConfigurationV2Request.
         :type: str

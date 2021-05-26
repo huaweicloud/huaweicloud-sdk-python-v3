@@ -37,7 +37,7 @@ class AssociateDomainV2Response(SdkResponse):
     def __init__(self, url_domain=None, id=None, status=None):
         """AssociateDomainV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AssociateDomainV2Response, self).__init__()
 
         self._url_domain = None
         self._id = None

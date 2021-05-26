@@ -53,6 +53,7 @@ class BatchDisassociateThrottlingPolicyV2Request:
     def instance_id(self):
         """Gets the instance_id of this BatchDisassociateThrottlingPolicyV2Request.
 
+        实例编号
 
         :return: The instance_id of this BatchDisassociateThrottlingPolicyV2Request.
         :rtype: str
@@ -63,6 +64,7 @@ class BatchDisassociateThrottlingPolicyV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this BatchDisassociateThrottlingPolicyV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this BatchDisassociateThrottlingPolicyV2Request.
         :type: str
@@ -73,6 +75,7 @@ class BatchDisassociateThrottlingPolicyV2Request:
     def action(self):
         """Gets the action of this BatchDisassociateThrottlingPolicyV2Request.
 
+        必须为delete
 
         :return: The action of this BatchDisassociateThrottlingPolicyV2Request.
         :rtype: str
@@ -83,6 +86,7 @@ class BatchDisassociateThrottlingPolicyV2Request:
     def action(self, action):
         """Sets the action of this BatchDisassociateThrottlingPolicyV2Request.
 
+        必须为delete
 
         :param action: The action of this BatchDisassociateThrottlingPolicyV2Request.
         :type: str

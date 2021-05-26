@@ -33,7 +33,7 @@ class ShowScalingConfigResponse(SdkResponse):
     def __init__(self, scaling_configuration=None):
         """ShowScalingConfigResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowScalingConfigResponse, self).__init__()
 
         self._scaling_configuration = None
         self.discriminator = None

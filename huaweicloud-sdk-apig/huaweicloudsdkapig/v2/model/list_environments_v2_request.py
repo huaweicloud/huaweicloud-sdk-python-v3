@@ -59,6 +59,7 @@ class ListEnvironmentsV2Request:
     def instance_id(self):
         """Gets the instance_id of this ListEnvironmentsV2Request.
 
+        实例编号
 
         :return: The instance_id of this ListEnvironmentsV2Request.
         :rtype: str
@@ -69,6 +70,7 @@ class ListEnvironmentsV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListEnvironmentsV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this ListEnvironmentsV2Request.
         :type: str
@@ -79,6 +81,7 @@ class ListEnvironmentsV2Request:
     def name(self):
         """Gets the name of this ListEnvironmentsV2Request.
 
+        环境名称
 
         :return: The name of this ListEnvironmentsV2Request.
         :rtype: str
@@ -89,6 +92,7 @@ class ListEnvironmentsV2Request:
     def name(self, name):
         """Sets the name of this ListEnvironmentsV2Request.
 
+        环境名称
 
         :param name: The name of this ListEnvironmentsV2Request.
         :type: str
@@ -99,6 +103,7 @@ class ListEnvironmentsV2Request:
     def offset(self):
         """Gets the offset of this ListEnvironmentsV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :return: The offset of this ListEnvironmentsV2Request.
         :rtype: int
@@ -109,6 +114,7 @@ class ListEnvironmentsV2Request:
     def offset(self, offset):
         """Sets the offset of this ListEnvironmentsV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListEnvironmentsV2Request.
         :type: int
@@ -119,6 +125,7 @@ class ListEnvironmentsV2Request:
     def limit(self):
         """Gets the limit of this ListEnvironmentsV2Request.
 
+        每页显示的条目数量
 
         :return: The limit of this ListEnvironmentsV2Request.
         :rtype: int
@@ -129,6 +136,7 @@ class ListEnvironmentsV2Request:
     def limit(self, limit):
         """Sets the limit of this ListEnvironmentsV2Request.
 
+        每页显示的条目数量
 
         :param limit: The limit of this ListEnvironmentsV2Request.
         :type: int

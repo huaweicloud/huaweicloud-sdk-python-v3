@@ -44,6 +44,7 @@ class ListScalingTagInfosByTenantIdRequest:
     def resource_type(self):
         """Gets the resource_type of this ListScalingTagInfosByTenantIdRequest.
 
+        资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
 
         :return: The resource_type of this ListScalingTagInfosByTenantIdRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListScalingTagInfosByTenantIdRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListScalingTagInfosByTenantIdRequest.
 
+        资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
 
         :param resource_type: The resource_type of this ListScalingTagInfosByTenantIdRequest.
         :type: str

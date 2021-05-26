@@ -33,7 +33,7 @@ class UpdateScalingGroupResponse(SdkResponse):
     def __init__(self, scaling_group_id=None):
         """UpdateScalingGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateScalingGroupResponse, self).__init__()
 
         self._scaling_group_id = None
         self.discriminator = None

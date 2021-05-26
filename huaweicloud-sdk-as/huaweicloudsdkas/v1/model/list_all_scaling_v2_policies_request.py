@@ -90,6 +90,7 @@ class ListAllScalingV2PoliciesRequest:
     def scaling_resource_id(self):
         """Gets the scaling_resource_id of this ListAllScalingV2PoliciesRequest.
 
+        伸缩组ID。
 
         :return: The scaling_resource_id of this ListAllScalingV2PoliciesRequest.
         :rtype: str
@@ -100,6 +101,7 @@ class ListAllScalingV2PoliciesRequest:
     def scaling_resource_id(self, scaling_resource_id):
         """Sets the scaling_resource_id of this ListAllScalingV2PoliciesRequest.
 
+        伸缩组ID。
 
         :param scaling_resource_id: The scaling_resource_id of this ListAllScalingV2PoliciesRequest.
         :type: str
@@ -110,6 +112,7 @@ class ListAllScalingV2PoliciesRequest:
     def scaling_resource_type(self):
         """Gets the scaling_resource_type of this ListAllScalingV2PoliciesRequest.
 
+        伸缩资源类型：伸缩组：SCALING_GROUP；带宽：BANDWIDTH
 
         :return: The scaling_resource_type of this ListAllScalingV2PoliciesRequest.
         :rtype: str
@@ -120,6 +123,7 @@ class ListAllScalingV2PoliciesRequest:
     def scaling_resource_type(self, scaling_resource_type):
         """Sets the scaling_resource_type of this ListAllScalingV2PoliciesRequest.
 
+        伸缩资源类型：伸缩组：SCALING_GROUP；带宽：BANDWIDTH
 
         :param scaling_resource_type: The scaling_resource_type of this ListAllScalingV2PoliciesRequest.
         :type: str
@@ -130,6 +134,7 @@ class ListAllScalingV2PoliciesRequest:
     def scaling_policy_name(self):
         """Gets the scaling_policy_name of this ListAllScalingV2PoliciesRequest.
 
+        伸缩策略名称。
 
         :return: The scaling_policy_name of this ListAllScalingV2PoliciesRequest.
         :rtype: str
@@ -140,6 +145,7 @@ class ListAllScalingV2PoliciesRequest:
     def scaling_policy_name(self, scaling_policy_name):
         """Sets the scaling_policy_name of this ListAllScalingV2PoliciesRequest.
 
+        伸缩策略名称。
 
         :param scaling_policy_name: The scaling_policy_name of this ListAllScalingV2PoliciesRequest.
         :type: str
@@ -150,6 +156,7 @@ class ListAllScalingV2PoliciesRequest:
     def scaling_policy_type(self):
         """Gets the scaling_policy_type of this ListAllScalingV2PoliciesRequest.
 
+        策略类型。  告警策略：ALARM ,定时策略：SCHEDULED, 周期策略：RECURRENCE
 
         :return: The scaling_policy_type of this ListAllScalingV2PoliciesRequest.
         :rtype: str
@@ -160,6 +167,7 @@ class ListAllScalingV2PoliciesRequest:
     def scaling_policy_type(self, scaling_policy_type):
         """Sets the scaling_policy_type of this ListAllScalingV2PoliciesRequest.
 
+        策略类型。  告警策略：ALARM ,定时策略：SCHEDULED, 周期策略：RECURRENCE
 
         :param scaling_policy_type: The scaling_policy_type of this ListAllScalingV2PoliciesRequest.
         :type: str
@@ -170,6 +178,7 @@ class ListAllScalingV2PoliciesRequest:
     def scaling_policy_id(self):
         """Gets the scaling_policy_id of this ListAllScalingV2PoliciesRequest.
 
+        伸缩策略ID。
 
         :return: The scaling_policy_id of this ListAllScalingV2PoliciesRequest.
         :rtype: str
@@ -180,6 +189,7 @@ class ListAllScalingV2PoliciesRequest:
     def scaling_policy_id(self, scaling_policy_id):
         """Sets the scaling_policy_id of this ListAllScalingV2PoliciesRequest.
 
+        伸缩策略ID。
 
         :param scaling_policy_id: The scaling_policy_id of this ListAllScalingV2PoliciesRequest.
         :type: str
@@ -190,6 +200,7 @@ class ListAllScalingV2PoliciesRequest:
     def start_number(self):
         """Gets the start_number of this ListAllScalingV2PoliciesRequest.
 
+        查询的起始行号，默认为0。
 
         :return: The start_number of this ListAllScalingV2PoliciesRequest.
         :rtype: int
@@ -200,6 +211,7 @@ class ListAllScalingV2PoliciesRequest:
     def start_number(self, start_number):
         """Sets the start_number of this ListAllScalingV2PoliciesRequest.
 
+        查询的起始行号，默认为0。
 
         :param start_number: The start_number of this ListAllScalingV2PoliciesRequest.
         :type: int
@@ -210,6 +222,7 @@ class ListAllScalingV2PoliciesRequest:
     def limit(self):
         """Gets the limit of this ListAllScalingV2PoliciesRequest.
 
+        查询记录数，默认20，最大100。
 
         :return: The limit of this ListAllScalingV2PoliciesRequest.
         :rtype: int
@@ -220,6 +233,7 @@ class ListAllScalingV2PoliciesRequest:
     def limit(self, limit):
         """Sets the limit of this ListAllScalingV2PoliciesRequest.
 
+        查询记录数，默认20，最大100。
 
         :param limit: The limit of this ListAllScalingV2PoliciesRequest.
         :type: int
@@ -230,6 +244,7 @@ class ListAllScalingV2PoliciesRequest:
     def sort_by(self):
         """Gets the sort_by of this ListAllScalingV2PoliciesRequest.
 
+        排序方法POLICY_NAME：根据策略名称排序;TRIGGER_CONDITION：根据触发条件排序，如升序下，告警策略最先，其余根据最近一次触发时间升序排列;CREATE_TIME：根据策略的创建时间排序。
 
         :return: The sort_by of this ListAllScalingV2PoliciesRequest.
         :rtype: str
@@ -240,6 +255,7 @@ class ListAllScalingV2PoliciesRequest:
     def sort_by(self, sort_by):
         """Sets the sort_by of this ListAllScalingV2PoliciesRequest.
 
+        排序方法POLICY_NAME：根据策略名称排序;TRIGGER_CONDITION：根据触发条件排序，如升序下，告警策略最先，其余根据最近一次触发时间升序排列;CREATE_TIME：根据策略的创建时间排序。
 
         :param sort_by: The sort_by of this ListAllScalingV2PoliciesRequest.
         :type: str
@@ -250,6 +266,7 @@ class ListAllScalingV2PoliciesRequest:
     def order(self):
         """Gets the order of this ListAllScalingV2PoliciesRequest.
 
+        排序顺序ASC：升序；DESC：降序
 
         :return: The order of this ListAllScalingV2PoliciesRequest.
         :rtype: str
@@ -260,6 +277,7 @@ class ListAllScalingV2PoliciesRequest:
     def order(self, order):
         """Sets the order of this ListAllScalingV2PoliciesRequest.
 
+        排序顺序ASC：升序；DESC：降序
 
         :param order: The order of this ListAllScalingV2PoliciesRequest.
         :type: str
@@ -270,6 +288,7 @@ class ListAllScalingV2PoliciesRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListAllScalingV2PoliciesRequest.
 
+        企业项目ID，当传入all_granted_eps时表示查询该用户所有授权的企业项目下的伸缩组列表。
 
         :return: The enterprise_project_id of this ListAllScalingV2PoliciesRequest.
         :rtype: str
@@ -280,6 +299,7 @@ class ListAllScalingV2PoliciesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListAllScalingV2PoliciesRequest.
 
+        企业项目ID，当传入all_granted_eps时表示查询该用户所有授权的企业项目下的伸缩组列表。
 
         :param enterprise_project_id: The enterprise_project_id of this ListAllScalingV2PoliciesRequest.
         :type: str

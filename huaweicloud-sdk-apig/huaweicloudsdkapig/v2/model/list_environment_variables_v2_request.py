@@ -73,6 +73,7 @@ class ListEnvironmentVariablesV2Request:
     def instance_id(self):
         """Gets the instance_id of this ListEnvironmentVariablesV2Request.
 
+        实例编号
 
         :return: The instance_id of this ListEnvironmentVariablesV2Request.
         :rtype: str
@@ -83,6 +84,7 @@ class ListEnvironmentVariablesV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListEnvironmentVariablesV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this ListEnvironmentVariablesV2Request.
         :type: str
@@ -93,6 +95,7 @@ class ListEnvironmentVariablesV2Request:
     def group_id(self):
         """Gets the group_id of this ListEnvironmentVariablesV2Request.
 
+        API分组编号
 
         :return: The group_id of this ListEnvironmentVariablesV2Request.
         :rtype: str
@@ -103,6 +106,7 @@ class ListEnvironmentVariablesV2Request:
     def group_id(self, group_id):
         """Sets the group_id of this ListEnvironmentVariablesV2Request.
 
+        API分组编号
 
         :param group_id: The group_id of this ListEnvironmentVariablesV2Request.
         :type: str
@@ -113,6 +117,7 @@ class ListEnvironmentVariablesV2Request:
     def env_id(self):
         """Gets the env_id of this ListEnvironmentVariablesV2Request.
 
+        环境编号
 
         :return: The env_id of this ListEnvironmentVariablesV2Request.
         :rtype: str
@@ -123,6 +128,7 @@ class ListEnvironmentVariablesV2Request:
     def env_id(self, env_id):
         """Sets the env_id of this ListEnvironmentVariablesV2Request.
 
+        环境编号
 
         :param env_id: The env_id of this ListEnvironmentVariablesV2Request.
         :type: str
@@ -133,6 +139,7 @@ class ListEnvironmentVariablesV2Request:
     def variable_name(self):
         """Gets the variable_name of this ListEnvironmentVariablesV2Request.
 
+        变量名
 
         :return: The variable_name of this ListEnvironmentVariablesV2Request.
         :rtype: str
@@ -143,6 +150,7 @@ class ListEnvironmentVariablesV2Request:
     def variable_name(self, variable_name):
         """Sets the variable_name of this ListEnvironmentVariablesV2Request.
 
+        变量名
 
         :param variable_name: The variable_name of this ListEnvironmentVariablesV2Request.
         :type: str
@@ -153,6 +161,7 @@ class ListEnvironmentVariablesV2Request:
     def offset(self):
         """Gets the offset of this ListEnvironmentVariablesV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :return: The offset of this ListEnvironmentVariablesV2Request.
         :rtype: int
@@ -163,6 +172,7 @@ class ListEnvironmentVariablesV2Request:
     def offset(self, offset):
         """Sets the offset of this ListEnvironmentVariablesV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListEnvironmentVariablesV2Request.
         :type: int
@@ -173,6 +183,7 @@ class ListEnvironmentVariablesV2Request:
     def limit(self):
         """Gets the limit of this ListEnvironmentVariablesV2Request.
 
+        每页显示的条目数量
 
         :return: The limit of this ListEnvironmentVariablesV2Request.
         :rtype: int
@@ -183,6 +194,7 @@ class ListEnvironmentVariablesV2Request:
     def limit(self, limit):
         """Sets the limit of this ListEnvironmentVariablesV2Request.
 
+        每页显示的条目数量
 
         :param limit: The limit of this ListEnvironmentVariablesV2Request.
         :type: int
@@ -193,6 +205,7 @@ class ListEnvironmentVariablesV2Request:
     def precise_search(self):
         """Gets the precise_search of this ListEnvironmentVariablesV2Request.
 
+        指定需要精确匹配查找的参数名称，目前仅支持name
 
         :return: The precise_search of this ListEnvironmentVariablesV2Request.
         :rtype: str
@@ -203,6 +216,7 @@ class ListEnvironmentVariablesV2Request:
     def precise_search(self, precise_search):
         """Sets the precise_search of this ListEnvironmentVariablesV2Request.
 
+        指定需要精确匹配查找的参数名称，目前仅支持name
 
         :param precise_search: The precise_search of this ListEnvironmentVariablesV2Request.
         :type: str

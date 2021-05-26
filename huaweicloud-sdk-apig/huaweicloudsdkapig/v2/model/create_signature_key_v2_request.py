@@ -49,6 +49,7 @@ class CreateSignatureKeyV2Request:
     def instance_id(self):
         """Gets the instance_id of this CreateSignatureKeyV2Request.
 
+        实例编号
 
         :return: The instance_id of this CreateSignatureKeyV2Request.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateSignatureKeyV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CreateSignatureKeyV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this CreateSignatureKeyV2Request.
         :type: str

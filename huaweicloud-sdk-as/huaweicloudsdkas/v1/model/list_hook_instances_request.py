@@ -49,6 +49,7 @@ class ListHookInstancesRequest:
     def scaling_group_id(self):
         """Gets the scaling_group_id of this ListHookInstancesRequest.
 
+        伸缩组ID。
 
         :return: The scaling_group_id of this ListHookInstancesRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ListHookInstancesRequest:
     def scaling_group_id(self, scaling_group_id):
         """Sets the scaling_group_id of this ListHookInstancesRequest.
 
+        伸缩组ID。
 
         :param scaling_group_id: The scaling_group_id of this ListHookInstancesRequest.
         :type: str
@@ -69,6 +71,7 @@ class ListHookInstancesRequest:
     def instance_id(self):
         """Gets the instance_id of this ListHookInstancesRequest.
 
+        伸缩实例ID。
 
         :return: The instance_id of this ListHookInstancesRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class ListHookInstancesRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListHookInstancesRequest.
 
+        伸缩实例ID。
 
         :param instance_id: The instance_id of this ListHookInstancesRequest.
         :type: str

@@ -23,7 +23,7 @@ class CreateScalingV2PolicyRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateScalingPolicyV2RequestBody'
+        'body': 'CreateScalingPolicyV2Option'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class CreateScalingV2PolicyRequest:
 
 
         :return: The body of this CreateScalingV2PolicyRequest.
-        :rtype: CreateScalingPolicyV2RequestBody
+        :rtype: CreateScalingPolicyV2Option
         """
         return self._body
 
@@ -57,7 +57,7 @@ class CreateScalingV2PolicyRequest:
 
 
         :param body: The body of this CreateScalingV2PolicyRequest.
-        :type: CreateScalingPolicyV2RequestBody
+        :type: CreateScalingPolicyV2Option
         """
         self._body = body
 

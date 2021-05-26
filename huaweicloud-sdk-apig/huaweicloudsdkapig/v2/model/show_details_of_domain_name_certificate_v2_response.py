@@ -57,7 +57,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
     def __init__(self, common_name=None, san=None, version=None, organization=None, organizational_unit=None, locality=None, state=None, country=None, not_before=None, not_after=None, serial_number=None, issuer=None, signature_algorithm=None):
         """ShowDetailsOfDomainNameCertificateV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowDetailsOfDomainNameCertificateV2Response, self).__init__()
 
         self._common_name = None
         self._san = None

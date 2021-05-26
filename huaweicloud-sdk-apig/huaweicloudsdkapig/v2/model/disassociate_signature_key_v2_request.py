@@ -48,6 +48,7 @@ class DisassociateSignatureKeyV2Request:
     def instance_id(self):
         """Gets the instance_id of this DisassociateSignatureKeyV2Request.
 
+        实例编号
 
         :return: The instance_id of this DisassociateSignatureKeyV2Request.
         :rtype: str
@@ -58,6 +59,7 @@ class DisassociateSignatureKeyV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DisassociateSignatureKeyV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this DisassociateSignatureKeyV2Request.
         :type: str
@@ -68,6 +70,7 @@ class DisassociateSignatureKeyV2Request:
     def sign_bindings_id(self):
         """Gets the sign_bindings_id of this DisassociateSignatureKeyV2Request.
 
+        API与签名密钥的绑定关系编号
 
         :return: The sign_bindings_id of this DisassociateSignatureKeyV2Request.
         :rtype: str
@@ -78,6 +81,7 @@ class DisassociateSignatureKeyV2Request:
     def sign_bindings_id(self, sign_bindings_id):
         """Sets the sign_bindings_id of this DisassociateSignatureKeyV2Request.
 
+        API与签名密钥的绑定关系编号
 
         :param sign_bindings_id: The sign_bindings_id of this DisassociateSignatureKeyV2Request.
         :type: str

@@ -44,6 +44,7 @@ class ShowScalingConfigRequest:
     def scaling_configuration_id(self):
         """Gets the scaling_configuration_id of this ShowScalingConfigRequest.
 
+        伸缩配置ID，查询唯一配置。
 
         :return: The scaling_configuration_id of this ShowScalingConfigRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowScalingConfigRequest:
     def scaling_configuration_id(self, scaling_configuration_id):
         """Sets the scaling_configuration_id of this ShowScalingConfigRequest.
 
+        伸缩配置ID，查询唯一配置。
 
         :param scaling_configuration_id: The scaling_configuration_id of this ShowScalingConfigRequest.
         :type: str

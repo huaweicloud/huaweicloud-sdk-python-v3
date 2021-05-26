@@ -23,7 +23,7 @@ class BatchDeleteScalingConfigsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'BatchDeleteScalingConfigsRequestBody'
+        'body': 'BatchDeleteScalingConfigOption'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class BatchDeleteScalingConfigsRequest:
 
 
         :return: The body of this BatchDeleteScalingConfigsRequest.
-        :rtype: BatchDeleteScalingConfigsRequestBody
+        :rtype: BatchDeleteScalingConfigOption
         """
         return self._body
 
@@ -57,7 +57,7 @@ class BatchDeleteScalingConfigsRequest:
 
 
         :param body: The body of this BatchDeleteScalingConfigsRequest.
-        :type: BatchDeleteScalingConfigsRequestBody
+        :type: BatchDeleteScalingConfigOption
         """
         self._body = body
 

@@ -23,7 +23,7 @@ class CreateScalingGroupRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateScalingGroupRequestBody'
+        'body': 'CreateScalingGroupOption'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class CreateScalingGroupRequest:
 
 
         :return: The body of this CreateScalingGroupRequest.
-        :rtype: CreateScalingGroupRequestBody
+        :rtype: CreateScalingGroupOption
         """
         return self._body
 
@@ -57,7 +57,7 @@ class CreateScalingGroupRequest:
 
 
         :param body: The body of this CreateScalingGroupRequest.
-        :type: CreateScalingGroupRequestBody
+        :type: CreateScalingGroupOption
         """
         self._body = body
 

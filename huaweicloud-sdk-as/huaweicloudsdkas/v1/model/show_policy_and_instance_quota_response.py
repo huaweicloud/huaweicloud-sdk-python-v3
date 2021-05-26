@@ -23,43 +23,43 @@ class ShowPolicyAndInstanceQuotaResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'all_quotas': 'PolicyInstanceQuotas'
+        'quotas': 'PolicyInstanceQuotas'
     }
 
     attribute_map = {
-        'all_quotas': 'AllQuotas'
+        'quotas': 'quotas'
     }
 
-    def __init__(self, all_quotas=None):
+    def __init__(self, quotas=None):
         """ShowPolicyAndInstanceQuotaResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowPolicyAndInstanceQuotaResponse, self).__init__()
 
-        self._all_quotas = None
+        self._quotas = None
         self.discriminator = None
 
-        if all_quotas is not None:
-            self.all_quotas = all_quotas
+        if quotas is not None:
+            self.quotas = quotas
 
     @property
-    def all_quotas(self):
-        """Gets the all_quotas of this ShowPolicyAndInstanceQuotaResponse.
+    def quotas(self):
+        """Gets the quotas of this ShowPolicyAndInstanceQuotaResponse.
 
 
-        :return: The all_quotas of this ShowPolicyAndInstanceQuotaResponse.
+        :return: The quotas of this ShowPolicyAndInstanceQuotaResponse.
         :rtype: PolicyInstanceQuotas
         """
-        return self._all_quotas
+        return self._quotas
 
-    @all_quotas.setter
-    def all_quotas(self, all_quotas):
-        """Sets the all_quotas of this ShowPolicyAndInstanceQuotaResponse.
+    @quotas.setter
+    def quotas(self, quotas):
+        """Sets the quotas of this ShowPolicyAndInstanceQuotaResponse.
 
 
-        :param all_quotas: The all_quotas of this ShowPolicyAndInstanceQuotaResponse.
+        :param quotas: The quotas of this ShowPolicyAndInstanceQuotaResponse.
         :type: PolicyInstanceQuotas
         """
-        self._all_quotas = all_quotas
+        self._quotas = quotas
 
     def to_dict(self):
         """Returns the model properties as a dict"""

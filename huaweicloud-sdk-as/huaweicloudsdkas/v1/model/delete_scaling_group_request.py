@@ -49,6 +49,7 @@ class DeleteScalingGroupRequest:
     def scaling_group_id(self):
         """Gets the scaling_group_id of this DeleteScalingGroupRequest.
 
+        伸缩组ID。
 
         :return: The scaling_group_id of this DeleteScalingGroupRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class DeleteScalingGroupRequest:
     def scaling_group_id(self, scaling_group_id):
         """Sets the scaling_group_id of this DeleteScalingGroupRequest.
 
+        伸缩组ID。
 
         :param scaling_group_id: The scaling_group_id of this DeleteScalingGroupRequest.
         :type: str
@@ -69,6 +71,7 @@ class DeleteScalingGroupRequest:
     def force_delete(self):
         """Gets the force_delete of this DeleteScalingGroupRequest.
 
+        是否强制删除伸缩组。默认为no；可选值为yes或no。
 
         :return: The force_delete of this DeleteScalingGroupRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class DeleteScalingGroupRequest:
     def force_delete(self, force_delete):
         """Sets the force_delete of this DeleteScalingGroupRequest.
 
+        是否强制删除伸缩组。默认为no；可选值为yes或no。
 
         :param force_delete: The force_delete of this DeleteScalingGroupRequest.
         :type: str

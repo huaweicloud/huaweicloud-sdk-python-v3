@@ -30,7 +30,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
         'notification_topic_urn': 'str',
         'notification_topic_name': 'str',
         'notification_metadata': 'str',
-        'create_time': 'datetime'
+        'create_time': 'str'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
     def __init__(self, lifecycle_hook_name=None, lifecycle_hook_type=None, default_result=None, default_timeout=None, notification_topic_urn=None, notification_topic_name=None, notification_metadata=None, create_time=None):
         """ShowLifeCycleHookResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowLifeCycleHookResponse, self).__init__()
 
         self._lifecycle_hook_name = None
         self._lifecycle_hook_type = None
@@ -237,7 +237,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
         生命周期挂钩创建时间，遵循UTC时间。
 
         :return: The create_time of this ShowLifeCycleHookResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._create_time
 
@@ -248,7 +248,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
         生命周期挂钩创建时间，遵循UTC时间。
 
         :param create_time: The create_time of this ShowLifeCycleHookResponse.
-        :type: datetime
+        :type: str
         """
         self._create_time = create_time
 

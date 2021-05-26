@@ -45,7 +45,7 @@ class UpdateSignatureKeyV2Response(SdkResponse):
     def __init__(self, sign_secret=None, update_time=None, create_time=None, name=None, id=None, sign_key=None, sign_type=None):
         """UpdateSignatureKeyV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateSignatureKeyV2Response, self).__init__()
 
         self._sign_secret = None
         self._update_time = None

@@ -48,6 +48,7 @@ class DeleteSignatureKeyV2Request:
     def instance_id(self):
         """Gets the instance_id of this DeleteSignatureKeyV2Request.
 
+        实例编号
 
         :return: The instance_id of this DeleteSignatureKeyV2Request.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteSignatureKeyV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeleteSignatureKeyV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this DeleteSignatureKeyV2Request.
         :type: str
@@ -68,6 +70,7 @@ class DeleteSignatureKeyV2Request:
     def sign_id(self):
         """Gets the sign_id of this DeleteSignatureKeyV2Request.
 
+        签名密钥编号
 
         :return: The sign_id of this DeleteSignatureKeyV2Request.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteSignatureKeyV2Request:
     def sign_id(self, sign_id):
         """Sets the sign_id of this DeleteSignatureKeyV2Request.
 
+        签名密钥编号
 
         :param sign_id: The sign_id of this DeleteSignatureKeyV2Request.
         :type: str

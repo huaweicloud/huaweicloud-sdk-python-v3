@@ -33,7 +33,7 @@ class ListHookInstancesResponse(SdkResponse):
     def __init__(self, instance_hanging_info=None):
         """ListHookInstancesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListHookInstancesResponse, self).__init__()
 
         self._instance_hanging_info = None
         self.discriminator = None

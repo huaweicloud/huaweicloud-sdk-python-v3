@@ -44,7 +44,7 @@ class SecurityGroups:
     def id(self):
         """Gets the id of this SecurityGroups.
 
-        安全组ID。
+        安全组ID
 
         :return: The id of this SecurityGroups.
         :rtype: str
@@ -55,7 +55,7 @@ class SecurityGroups:
     def id(self, id):
         """Sets the id of this SecurityGroups.
 
-        安全组ID。
+        安全组ID
 
         :param id: The id of this SecurityGroups.
         :type: str

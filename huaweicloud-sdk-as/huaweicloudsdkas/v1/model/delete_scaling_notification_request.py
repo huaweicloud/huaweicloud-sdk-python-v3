@@ -48,6 +48,7 @@ class DeleteScalingNotificationRequest:
     def scaling_group_id(self):
         """Gets the scaling_group_id of this DeleteScalingNotificationRequest.
 
+        伸缩组标识。
 
         :return: The scaling_group_id of this DeleteScalingNotificationRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteScalingNotificationRequest:
     def scaling_group_id(self, scaling_group_id):
         """Sets the scaling_group_id of this DeleteScalingNotificationRequest.
 
+        伸缩组标识。
 
         :param scaling_group_id: The scaling_group_id of this DeleteScalingNotificationRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteScalingNotificationRequest:
     def topic_urn(self):
         """Gets the topic_urn of this DeleteScalingNotificationRequest.
 
+        SMN服务中Topic的唯一的资源标识。
 
         :return: The topic_urn of this DeleteScalingNotificationRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteScalingNotificationRequest:
     def topic_urn(self, topic_urn):
         """Sets the topic_urn of this DeleteScalingNotificationRequest.
 
+        SMN服务中Topic的唯一的资源标识。
 
         :param topic_urn: The topic_urn of this DeleteScalingNotificationRequest.
         :type: str

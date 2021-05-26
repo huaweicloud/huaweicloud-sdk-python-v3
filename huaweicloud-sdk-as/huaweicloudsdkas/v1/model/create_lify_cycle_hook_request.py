@@ -24,7 +24,7 @@ class CreateLifyCycleHookRequest:
 
     openapi_types = {
         'scaling_group_id': 'str',
-        'body': 'CreateLifeCycleHookRequestBody'
+        'body': 'CreateLifeCycleHookOption'
     }
 
     attribute_map = {
@@ -49,6 +49,7 @@ class CreateLifyCycleHookRequest:
     def scaling_group_id(self):
         """Gets the scaling_group_id of this CreateLifyCycleHookRequest.
 
+        伸缩组标识。
 
         :return: The scaling_group_id of this CreateLifyCycleHookRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateLifyCycleHookRequest:
     def scaling_group_id(self, scaling_group_id):
         """Sets the scaling_group_id of this CreateLifyCycleHookRequest.
 
+        伸缩组标识。
 
         :param scaling_group_id: The scaling_group_id of this CreateLifyCycleHookRequest.
         :type: str
@@ -71,7 +73,7 @@ class CreateLifyCycleHookRequest:
 
 
         :return: The body of this CreateLifyCycleHookRequest.
-        :rtype: CreateLifeCycleHookRequestBody
+        :rtype: CreateLifeCycleHookOption
         """
         return self._body
 
@@ -81,7 +83,7 @@ class CreateLifyCycleHookRequest:
 
 
         :param body: The body of this CreateLifyCycleHookRequest.
-        :type: CreateLifeCycleHookRequestBody
+        :type: CreateLifeCycleHookOption
         """
         self._body = body
 

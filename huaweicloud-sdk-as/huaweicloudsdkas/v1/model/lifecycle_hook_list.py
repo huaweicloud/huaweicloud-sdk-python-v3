@@ -30,7 +30,7 @@ class LifecycleHookList:
         'notification_topic_urn': 'str',
         'notification_topic_name': 'str',
         'notification_metadata': 'str',
-        'create_time': 'datetime'
+        'create_time': 'str'
     }
 
     attribute_map = {
@@ -237,7 +237,7 @@ class LifecycleHookList:
         创建生命周期挂钩时间，遵循UTC时间。
 
         :return: The create_time of this LifecycleHookList.
-        :rtype: datetime
+        :rtype: str
         """
         return self._create_time
 
@@ -248,7 +248,7 @@ class LifecycleHookList:
         创建生命周期挂钩时间，遵循UTC时间。
 
         :param create_time: The create_time of this LifecycleHookList.
-        :type: datetime
+        :type: str
         """
         self._create_time = create_time
 

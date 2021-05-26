@@ -44,6 +44,7 @@ class ListScalingNotificationsRequest:
     def scaling_group_id(self):
         """Gets the scaling_group_id of this ListScalingNotificationsRequest.
 
+        伸缩组标识。
 
         :return: The scaling_group_id of this ListScalingNotificationsRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ListScalingNotificationsRequest:
     def scaling_group_id(self, scaling_group_id):
         """Sets the scaling_group_id of this ListScalingNotificationsRequest.
 
+        伸缩组标识。
 
         :param scaling_group_id: The scaling_group_id of this ListScalingNotificationsRequest.
         :type: str

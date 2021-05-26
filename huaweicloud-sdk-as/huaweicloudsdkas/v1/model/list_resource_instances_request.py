@@ -24,7 +24,7 @@ class ListResourceInstancesRequest:
 
     openapi_types = {
         'resource_type': 'str',
-        'body': 'ShowTagsRequestBody'
+        'body': 'QueryTagsOption'
     }
 
     attribute_map = {
@@ -49,6 +49,7 @@ class ListResourceInstancesRequest:
     def resource_type(self):
         """Gets the resource_type of this ListResourceInstancesRequest.
 
+        资源类型，枚举类：SCALING_GROUP_TAG。
 
         :return: The resource_type of this ListResourceInstancesRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ListResourceInstancesRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListResourceInstancesRequest.
 
+        资源类型，枚举类：SCALING_GROUP_TAG。
 
         :param resource_type: The resource_type of this ListResourceInstancesRequest.
         :type: str
@@ -71,7 +73,7 @@ class ListResourceInstancesRequest:
 
 
         :return: The body of this ListResourceInstancesRequest.
-        :rtype: ShowTagsRequestBody
+        :rtype: QueryTagsOption
         """
         return self._body
 
@@ -81,7 +83,7 @@ class ListResourceInstancesRequest:
 
 
         :param body: The body of this ListResourceInstancesRequest.
-        :type: ShowTagsRequestBody
+        :type: QueryTagsOption
         """
         self._body = body
 

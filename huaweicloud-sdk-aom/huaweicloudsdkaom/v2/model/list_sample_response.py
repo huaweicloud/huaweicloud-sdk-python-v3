@@ -33,7 +33,7 @@ class ListSampleResponse(SdkResponse):
     def __init__(self, samples=None):
         """ListSampleResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListSampleResponse, self).__init__()
 
         self._samples = None
         self.discriminator = None

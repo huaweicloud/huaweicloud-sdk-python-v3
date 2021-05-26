@@ -37,7 +37,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Response(SdkResponse):
     def __init__(self, total=None, size=None, throttles=None):
         """ListRequestThrottlingPoliciesBindedToApiV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListRequestThrottlingPoliciesBindedToApiV2Response, self).__init__()
 
         self._total = None
         self._size = None

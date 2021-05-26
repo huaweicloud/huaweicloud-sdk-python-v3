@@ -28,8 +28,8 @@ class ListScalingPolicyExecuteLogsRequest:
         'scaling_resource_type': 'str',
         'scaling_resource_id': 'str',
         'execute_type': 'str',
-        'start_time': 'datetime',
-        'end_time': 'datetime',
+        'start_time': 'str',
+        'end_time': 'str',
         'start_number': 'int',
         'limit': 'int'
     }
@@ -84,6 +84,7 @@ class ListScalingPolicyExecuteLogsRequest:
     def scaling_policy_id(self):
         """Gets the scaling_policy_id of this ListScalingPolicyExecuteLogsRequest.
 
+        伸缩策略ID。
 
         :return: The scaling_policy_id of this ListScalingPolicyExecuteLogsRequest.
         :rtype: str
@@ -94,6 +95,7 @@ class ListScalingPolicyExecuteLogsRequest:
     def scaling_policy_id(self, scaling_policy_id):
         """Sets the scaling_policy_id of this ListScalingPolicyExecuteLogsRequest.
 
+        伸缩策略ID。
 
         :param scaling_policy_id: The scaling_policy_id of this ListScalingPolicyExecuteLogsRequest.
         :type: str
@@ -104,6 +106,7 @@ class ListScalingPolicyExecuteLogsRequest:
     def log_id(self):
         """Gets the log_id of this ListScalingPolicyExecuteLogsRequest.
 
+        日志ID。
 
         :return: The log_id of this ListScalingPolicyExecuteLogsRequest.
         :rtype: str
@@ -114,6 +117,7 @@ class ListScalingPolicyExecuteLogsRequest:
     def log_id(self, log_id):
         """Sets the log_id of this ListScalingPolicyExecuteLogsRequest.
 
+        日志ID。
 
         :param log_id: The log_id of this ListScalingPolicyExecuteLogsRequest.
         :type: str
@@ -124,6 +128,7 @@ class ListScalingPolicyExecuteLogsRequest:
     def scaling_resource_type(self):
         """Gets the scaling_resource_type of this ListScalingPolicyExecuteLogsRequest.
 
+        伸缩资源类型：伸缩组：SCALING_GROUP。带宽：BANDWIDTH
 
         :return: The scaling_resource_type of this ListScalingPolicyExecuteLogsRequest.
         :rtype: str
@@ -134,6 +139,7 @@ class ListScalingPolicyExecuteLogsRequest:
     def scaling_resource_type(self, scaling_resource_type):
         """Sets the scaling_resource_type of this ListScalingPolicyExecuteLogsRequest.
 
+        伸缩资源类型：伸缩组：SCALING_GROUP。带宽：BANDWIDTH
 
         :param scaling_resource_type: The scaling_resource_type of this ListScalingPolicyExecuteLogsRequest.
         :type: str
@@ -144,6 +150,7 @@ class ListScalingPolicyExecuteLogsRequest:
     def scaling_resource_id(self):
         """Gets the scaling_resource_id of this ListScalingPolicyExecuteLogsRequest.
 
+        伸缩资源ID。
 
         :return: The scaling_resource_id of this ListScalingPolicyExecuteLogsRequest.
         :rtype: str
@@ -154,6 +161,7 @@ class ListScalingPolicyExecuteLogsRequest:
     def scaling_resource_id(self, scaling_resource_id):
         """Sets the scaling_resource_id of this ListScalingPolicyExecuteLogsRequest.
 
+        伸缩资源ID。
 
         :param scaling_resource_id: The scaling_resource_id of this ListScalingPolicyExecuteLogsRequest.
         :type: str
@@ -164,6 +172,7 @@ class ListScalingPolicyExecuteLogsRequest:
     def execute_type(self):
         """Gets the execute_type of this ListScalingPolicyExecuteLogsRequest.
 
+        策略执行类型：SCHEDULED：自动触发（定时）。RECURRENCE：自动触发（周期）。ALARM：自动触发（告警）。MANUAL：手动触发。
 
         :return: The execute_type of this ListScalingPolicyExecuteLogsRequest.
         :rtype: str
@@ -174,6 +183,7 @@ class ListScalingPolicyExecuteLogsRequest:
     def execute_type(self, execute_type):
         """Sets the execute_type of this ListScalingPolicyExecuteLogsRequest.
 
+        策略执行类型：SCHEDULED：自动触发（定时）。RECURRENCE：自动触发（周期）。ALARM：自动触发（告警）。MANUAL：手动触发。
 
         :param execute_type: The execute_type of this ListScalingPolicyExecuteLogsRequest.
         :type: str
@@ -184,9 +194,10 @@ class ListScalingPolicyExecuteLogsRequest:
     def start_time(self):
         """Gets the start_time of this ListScalingPolicyExecuteLogsRequest.
 
+        查询的起始时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
         :return: The start_time of this ListScalingPolicyExecuteLogsRequest.
-        :rtype: datetime
+        :rtype: str
         """
         return self._start_time
 
@@ -194,9 +205,10 @@ class ListScalingPolicyExecuteLogsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListScalingPolicyExecuteLogsRequest.
 
+        查询的起始时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
         :param start_time: The start_time of this ListScalingPolicyExecuteLogsRequest.
-        :type: datetime
+        :type: str
         """
         self._start_time = start_time
 
@@ -204,9 +216,10 @@ class ListScalingPolicyExecuteLogsRequest:
     def end_time(self):
         """Gets the end_time of this ListScalingPolicyExecuteLogsRequest.
 
+        查询的截止时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
         :return: The end_time of this ListScalingPolicyExecuteLogsRequest.
-        :rtype: datetime
+        :rtype: str
         """
         return self._end_time
 
@@ -214,9 +227,10 @@ class ListScalingPolicyExecuteLogsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListScalingPolicyExecuteLogsRequest.
 
+        查询的截止时间，格式是“yyyy-MM-ddThh:mm:ssZ”。
 
         :param end_time: The end_time of this ListScalingPolicyExecuteLogsRequest.
-        :type: datetime
+        :type: str
         """
         self._end_time = end_time
 
@@ -224,6 +238,7 @@ class ListScalingPolicyExecuteLogsRequest:
     def start_number(self):
         """Gets the start_number of this ListScalingPolicyExecuteLogsRequest.
 
+        查询的起始行号，默认为0。
 
         :return: The start_number of this ListScalingPolicyExecuteLogsRequest.
         :rtype: int
@@ -234,6 +249,7 @@ class ListScalingPolicyExecuteLogsRequest:
     def start_number(self, start_number):
         """Sets the start_number of this ListScalingPolicyExecuteLogsRequest.
 
+        查询的起始行号，默认为0。
 
         :param start_number: The start_number of this ListScalingPolicyExecuteLogsRequest.
         :type: int
@@ -244,6 +260,7 @@ class ListScalingPolicyExecuteLogsRequest:
     def limit(self):
         """Gets the limit of this ListScalingPolicyExecuteLogsRequest.
 
+        查询记录数，默认20，最大100。
 
         :return: The limit of this ListScalingPolicyExecuteLogsRequest.
         :rtype: int
@@ -254,6 +271,7 @@ class ListScalingPolicyExecuteLogsRequest:
     def limit(self, limit):
         """Sets the limit of this ListScalingPolicyExecuteLogsRequest.
 
+        查询记录数，默认20，最大100。
 
         :param limit: The limit of this ListScalingPolicyExecuteLogsRequest.
         :type: int

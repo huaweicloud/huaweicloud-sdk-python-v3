@@ -53,6 +53,7 @@ class UpdateEnvironmentV2Request:
     def instance_id(self):
         """Gets the instance_id of this UpdateEnvironmentV2Request.
 
+        实例编号
 
         :return: The instance_id of this UpdateEnvironmentV2Request.
         :rtype: str
@@ -63,6 +64,7 @@ class UpdateEnvironmentV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpdateEnvironmentV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this UpdateEnvironmentV2Request.
         :type: str
@@ -73,6 +75,7 @@ class UpdateEnvironmentV2Request:
     def env_id(self):
         """Gets the env_id of this UpdateEnvironmentV2Request.
 
+        环境的ID，可通过查询环境信息获取该ID
 
         :return: The env_id of this UpdateEnvironmentV2Request.
         :rtype: str
@@ -83,6 +86,7 @@ class UpdateEnvironmentV2Request:
     def env_id(self, env_id):
         """Sets the env_id of this UpdateEnvironmentV2Request.
 
+        环境的ID，可通过查询环境信息获取该ID
 
         :param env_id: The env_id of this UpdateEnvironmentV2Request.
         :type: str

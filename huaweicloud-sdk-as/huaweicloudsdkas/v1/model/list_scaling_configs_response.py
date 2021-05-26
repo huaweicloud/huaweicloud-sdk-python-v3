@@ -39,7 +39,7 @@ class ListScalingConfigsResponse(SdkResponse):
     def __init__(self, total_number=None, start_number=None, limit=None, scaling_configurations=None):
         """ListScalingConfigsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListScalingConfigsResponse, self).__init__()
 
         self._total_number = None
         self._start_number = None

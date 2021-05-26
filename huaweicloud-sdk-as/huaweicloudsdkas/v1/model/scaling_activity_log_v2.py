@@ -39,7 +39,8 @@ class ScalingActivityLogV2:
         'lb_bind_success_list': 'list[ModifyLb]',
         'lb_bind_failed_list': 'list[ModifyLb]',
         'lb_unbind_success_list': 'list[ModifyLb]',
-        'lb_unbind_failed_list': 'list[ModifyLb]'
+        'lb_unbind_failed_list': 'list[ModifyLb]',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -59,10 +60,11 @@ class ScalingActivityLogV2:
         'lb_bind_success_list': 'lb_bind_success_list',
         'lb_bind_failed_list': 'lb_bind_failed_list',
         'lb_unbind_success_list': 'lb_unbind_success_list',
-        'lb_unbind_failed_list': 'lb_unbind_failed_list'
+        'lb_unbind_failed_list': 'lb_unbind_failed_list',
+        'type': 'type'
     }
 
-    def __init__(self, status=None, start_time=None, end_time=None, id=None, instance_removed_list=None, instance_deleted_list=None, instance_added_list=None, instance_failed_list=None, instance_standby_list=None, scaling_value=None, description=None, instance_value=None, desire_value=None, lb_bind_success_list=None, lb_bind_failed_list=None, lb_unbind_success_list=None, lb_unbind_failed_list=None):
+    def __init__(self, status=None, start_time=None, end_time=None, id=None, instance_removed_list=None, instance_deleted_list=None, instance_added_list=None, instance_failed_list=None, instance_standby_list=None, scaling_value=None, description=None, instance_value=None, desire_value=None, lb_bind_success_list=None, lb_bind_failed_list=None, lb_unbind_success_list=None, lb_unbind_failed_list=None, type=None):
         """ScalingActivityLogV2 - a model defined in huaweicloud sdk"""
         
         
@@ -84,6 +86,7 @@ class ScalingActivityLogV2:
         self._lb_bind_failed_list = None
         self._lb_unbind_success_list = None
         self._lb_unbind_failed_list = None
+        self._type = None
         self.discriminator = None
 
         if status is not None:
@@ -120,6 +123,8 @@ class ScalingActivityLogV2:
             self.lb_unbind_success_list = lb_unbind_success_list
         if lb_unbind_failed_list is not None:
             self.lb_unbind_failed_list = lb_unbind_failed_list
+        if type is not None:
+            self.type = type
 
     @property
     def status(self):
@@ -494,6 +499,28 @@ class ScalingActivityLogV2:
         :type: list[ModifyLb]
         """
         self._lb_unbind_failed_list = lb_unbind_failed_list
+
+    @property
+    def type(self):
+        """Gets the type of this ScalingActivityLogV2.
+
+        伸缩组活动类型
+
+        :return: The type of this ScalingActivityLogV2.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ScalingActivityLogV2.
+
+        伸缩组活动类型
+
+        :param type: The type of this ScalingActivityLogV2.
+        :type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

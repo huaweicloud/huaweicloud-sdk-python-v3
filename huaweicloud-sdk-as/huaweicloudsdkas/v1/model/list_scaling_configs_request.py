@@ -60,6 +60,7 @@ class ListScalingConfigsRequest:
     def scaling_configuration_name(self):
         """Gets the scaling_configuration_name of this ListScalingConfigsRequest.
 
+        伸缩配置名称。
 
         :return: The scaling_configuration_name of this ListScalingConfigsRequest.
         :rtype: str
@@ -70,6 +71,7 @@ class ListScalingConfigsRequest:
     def scaling_configuration_name(self, scaling_configuration_name):
         """Sets the scaling_configuration_name of this ListScalingConfigsRequest.
 
+        伸缩配置名称。
 
         :param scaling_configuration_name: The scaling_configuration_name of this ListScalingConfigsRequest.
         :type: str
@@ -80,6 +82,7 @@ class ListScalingConfigsRequest:
     def image_id(self):
         """Gets the image_id of this ListScalingConfigsRequest.
 
+        镜像ID，同imageRef。
 
         :return: The image_id of this ListScalingConfigsRequest.
         :rtype: str
@@ -90,6 +93,7 @@ class ListScalingConfigsRequest:
     def image_id(self, image_id):
         """Sets the image_id of this ListScalingConfigsRequest.
 
+        镜像ID，同imageRef。
 
         :param image_id: The image_id of this ListScalingConfigsRequest.
         :type: str
@@ -100,6 +104,7 @@ class ListScalingConfigsRequest:
     def start_number(self):
         """Gets the start_number of this ListScalingConfigsRequest.
 
+        查询的起始行号，默认为0。
 
         :return: The start_number of this ListScalingConfigsRequest.
         :rtype: int
@@ -110,6 +115,7 @@ class ListScalingConfigsRequest:
     def start_number(self, start_number):
         """Sets the start_number of this ListScalingConfigsRequest.
 
+        查询的起始行号，默认为0。
 
         :param start_number: The start_number of this ListScalingConfigsRequest.
         :type: int
@@ -120,6 +126,7 @@ class ListScalingConfigsRequest:
     def limit(self):
         """Gets the limit of this ListScalingConfigsRequest.
 
+        查询的记录条数，默认为20。
 
         :return: The limit of this ListScalingConfigsRequest.
         :rtype: int
@@ -130,6 +137,7 @@ class ListScalingConfigsRequest:
     def limit(self, limit):
         """Sets the limit of this ListScalingConfigsRequest.
 
+        查询的记录条数，默认为20。
 
         :param limit: The limit of this ListScalingConfigsRequest.
         :type: int

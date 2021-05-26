@@ -26,17 +26,19 @@ class ScalingInstance:
         'instance_name': 'str',
         'instance_id': 'str',
         'failed_reason': 'str',
-        'failed_details': 'str'
+        'failed_details': 'str',
+        'instance_config': 'str'
     }
 
     attribute_map = {
         'instance_name': 'instance_name',
         'instance_id': 'instance_id',
         'failed_reason': 'failed_reason',
-        'failed_details': 'failed_details'
+        'failed_details': 'failed_details',
+        'instance_config': 'instance_config'
     }
 
-    def __init__(self, instance_name=None, instance_id=None, failed_reason=None, failed_details=None):
+    def __init__(self, instance_name=None, instance_id=None, failed_reason=None, failed_details=None, instance_config=None):
         """ScalingInstance - a model defined in huaweicloud sdk"""
         
         
@@ -45,6 +47,7 @@ class ScalingInstance:
         self._instance_id = None
         self._failed_reason = None
         self._failed_details = None
+        self._instance_config = None
         self.discriminator = None
 
         if instance_name is not None:
@@ -55,6 +58,8 @@ class ScalingInstance:
             self.failed_reason = failed_reason
         if failed_details is not None:
             self.failed_details = failed_details
+        if instance_config is not None:
+            self.instance_config = instance_config
 
     @property
     def instance_name(self):
@@ -143,6 +148,28 @@ class ScalingInstance:
         :type: str
         """
         self._failed_details = failed_details
+
+    @property
+    def instance_config(self):
+        """Gets the instance_config of this ScalingInstance.
+
+        实例配置信息。
+
+        :return: The instance_config of this ScalingInstance.
+        :rtype: str
+        """
+        return self._instance_config
+
+    @instance_config.setter
+    def instance_config(self, instance_config):
+        """Sets the instance_config of this ScalingInstance.
+
+        实例配置信息。
+
+        :param instance_config: The instance_config of this ScalingInstance.
+        :type: str
+        """
+        self._instance_config = instance_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

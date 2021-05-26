@@ -23,7 +23,7 @@ class PublicIp:
     sensitive_list = []
 
     openapi_types = {
-        'eip': 'Eip'
+        'eip': 'EipInfo'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class PublicIp:
 
 
         :return: The eip of this PublicIp.
-        :rtype: Eip
+        :rtype: EipInfo
         """
         return self._eip
 
@@ -56,7 +56,7 @@ class PublicIp:
 
 
         :param eip: The eip of this PublicIp.
-        :type: Eip
+        :type: EipInfo
         """
         self._eip = eip
 

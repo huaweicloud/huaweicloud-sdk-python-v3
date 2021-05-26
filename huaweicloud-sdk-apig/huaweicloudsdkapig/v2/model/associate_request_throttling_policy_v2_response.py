@@ -33,7 +33,7 @@ class AssociateRequestThrottlingPolicyV2Response(SdkResponse):
     def __init__(self, throttle_applys=None):
         """AssociateRequestThrottlingPolicyV2Response - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AssociateRequestThrottlingPolicyV2Response, self).__init__()
 
         self._throttle_applys = None
         self.discriminator = None

@@ -78,6 +78,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     def instance_id(self):
         """Gets the instance_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
 
+        实例编号
 
         :return: The instance_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
         :rtype: str
@@ -88,6 +89,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
 
+        实例编号
 
         :param instance_id: The instance_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
         :type: str
@@ -98,6 +100,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     def throttle_id(self):
         """Gets the throttle_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
 
+        流控策略编号
 
         :return: The throttle_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
         :rtype: str
@@ -108,6 +111,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     def throttle_id(self, throttle_id):
         """Sets the throttle_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
 
+        流控策略编号
 
         :param throttle_id: The throttle_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
         :type: str
@@ -118,6 +122,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     def env_id(self):
         """Gets the env_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
 
+        环境的ID
 
         :return: The env_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
         :rtype: str
@@ -128,6 +133,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     def env_id(self, env_id):
         """Sets the env_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
 
+        环境的ID
 
         :param env_id: The env_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
         :type: str
@@ -138,6 +144,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     def group_id(self):
         """Gets the group_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
 
+        API分组编号
 
         :return: The group_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
         :rtype: str
@@ -148,6 +155,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     def group_id(self, group_id):
         """Sets the group_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
 
+        API分组编号
 
         :param group_id: The group_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
         :type: str
@@ -158,6 +166,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     def api_id(self):
         """Gets the api_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
 
+        API编号
 
         :return: The api_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
         :rtype: str
@@ -168,6 +177,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     def api_id(self, api_id):
         """Sets the api_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
 
+        API编号
 
         :param api_id: The api_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
         :type: str
@@ -178,6 +188,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     def api_name(self):
         """Gets the api_name of this ListApisBindedToRequestThrottlingPolicyV2Request.
 
+        API名称
 
         :return: The api_name of this ListApisBindedToRequestThrottlingPolicyV2Request.
         :rtype: str
@@ -188,6 +199,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     def api_name(self, api_name):
         """Sets the api_name of this ListApisBindedToRequestThrottlingPolicyV2Request.
 
+        API名称
 
         :param api_name: The api_name of this ListApisBindedToRequestThrottlingPolicyV2Request.
         :type: str
@@ -198,6 +210,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     def offset(self):
         """Gets the offset of this ListApisBindedToRequestThrottlingPolicyV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :return: The offset of this ListApisBindedToRequestThrottlingPolicyV2Request.
         :rtype: int
@@ -208,6 +221,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     def offset(self, offset):
         """Sets the offset of this ListApisBindedToRequestThrottlingPolicyV2Request.
 
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListApisBindedToRequestThrottlingPolicyV2Request.
         :type: int
@@ -218,6 +232,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     def limit(self):
         """Gets the limit of this ListApisBindedToRequestThrottlingPolicyV2Request.
 
+        每页显示的条目数量
 
         :return: The limit of this ListApisBindedToRequestThrottlingPolicyV2Request.
         :rtype: int
@@ -228,6 +243,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     def limit(self, limit):
         """Sets the limit of this ListApisBindedToRequestThrottlingPolicyV2Request.
 
+        每页显示的条目数量
 
         :param limit: The limit of this ListApisBindedToRequestThrottlingPolicyV2Request.
         :type: int

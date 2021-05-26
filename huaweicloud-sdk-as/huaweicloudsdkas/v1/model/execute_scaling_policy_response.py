@@ -31,7 +31,7 @@ class ExecuteScalingPolicyResponse(SdkResponse):
     def __init__(self):
         """ExecuteScalingPolicyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ExecuteScalingPolicyResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):
