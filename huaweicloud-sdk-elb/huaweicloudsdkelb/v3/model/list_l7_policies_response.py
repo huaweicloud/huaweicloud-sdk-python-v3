@@ -37,7 +37,7 @@ class ListL7PoliciesResponse(SdkResponse):
     def __init__(self, request_id=None, page_info=None, l7policies=None):
         """ListL7PoliciesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListL7PoliciesResponse, self).__init__()
 
         self._request_id = None
         self._page_info = None

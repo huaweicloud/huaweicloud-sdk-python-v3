@@ -31,7 +31,7 @@ class DeletePoolResponse(SdkResponse):
     def __init__(self):
         """DeletePoolResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeletePoolResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

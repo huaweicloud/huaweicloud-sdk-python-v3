@@ -49,6 +49,7 @@ class UpdateCertificateRequest:
     def certificate_id(self):
         """Gets the certificate_id of this UpdateCertificateRequest.
 
+        SSL证书ID
 
         :return: The certificate_id of this UpdateCertificateRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateCertificateRequest:
     def certificate_id(self, certificate_id):
         """Sets the certificate_id of this UpdateCertificateRequest.
 
+        SSL证书ID
 
         :param certificate_id: The certificate_id of this UpdateCertificateRequest.
         :type: str

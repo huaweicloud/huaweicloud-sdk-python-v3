@@ -104,6 +104,7 @@ class ListL7RulesRequest:
     def l7policy_id(self):
         """Gets the l7policy_id of this ListL7RulesRequest.
 
+        策略ID。
 
         :return: The l7policy_id of this ListL7RulesRequest.
         :rtype: str
@@ -114,6 +115,7 @@ class ListL7RulesRequest:
     def l7policy_id(self, l7policy_id):
         """Sets the l7policy_id of this ListL7RulesRequest.
 
+        策略ID。
 
         :param l7policy_id: The l7policy_id of this ListL7RulesRequest.
         :type: str
@@ -124,6 +126,7 @@ class ListL7RulesRequest:
     def admin_state_up(self):
         """Gets the admin_state_up of this ListL7RulesRequest.
 
+        转发规则的管理状态；该字段为预留字段，暂未启用。默认为true。
 
         :return: The admin_state_up of this ListL7RulesRequest.
         :rtype: bool
@@ -134,6 +137,7 @@ class ListL7RulesRequest:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this ListL7RulesRequest.
 
+        转发规则的管理状态；该字段为预留字段，暂未启用。默认为true。
 
         :param admin_state_up: The admin_state_up of this ListL7RulesRequest.
         :type: bool
@@ -144,6 +148,7 @@ class ListL7RulesRequest:
     def compare_type(self):
         """Gets the compare_type of this ListL7RulesRequest.
 
+        转发规则的匹配方式。type为HOST_NAME时可以为EQUAL_TO。type为PATH时可以为REGEX， STARTS_WITH，EQUAL_TO。
 
         :return: The compare_type of this ListL7RulesRequest.
         :rtype: list[str]
@@ -154,6 +159,7 @@ class ListL7RulesRequest:
     def compare_type(self, compare_type):
         """Sets the compare_type of this ListL7RulesRequest.
 
+        转发规则的匹配方式。type为HOST_NAME时可以为EQUAL_TO。type为PATH时可以为REGEX， STARTS_WITH，EQUAL_TO。
 
         :param compare_type: The compare_type of this ListL7RulesRequest.
         :type: list[str]
@@ -164,6 +170,7 @@ class ListL7RulesRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListL7RulesRequest.
 
+        企业项目ID。
 
         :return: The enterprise_project_id of this ListL7RulesRequest.
         :rtype: list[str]
@@ -174,6 +181,7 @@ class ListL7RulesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListL7RulesRequest.
 
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListL7RulesRequest.
         :type: list[str]
@@ -184,6 +192,7 @@ class ListL7RulesRequest:
     def id(self):
         """Gets the id of this ListL7RulesRequest.
 
+        转发规则ID。
 
         :return: The id of this ListL7RulesRequest.
         :rtype: list[str]
@@ -194,6 +203,7 @@ class ListL7RulesRequest:
     def id(self, id):
         """Sets the id of this ListL7RulesRequest.
 
+        转发规则ID。
 
         :param id: The id of this ListL7RulesRequest.
         :type: list[str]
@@ -204,6 +214,7 @@ class ListL7RulesRequest:
     def invert(self):
         """Gets the invert of this ListL7RulesRequest.
 
+        是否反向匹配。使用说明：固定为false。该字段能更新但不会生效。
 
         :return: The invert of this ListL7RulesRequest.
         :rtype: bool
@@ -214,6 +225,7 @@ class ListL7RulesRequest:
     def invert(self, invert):
         """Sets the invert of this ListL7RulesRequest.
 
+        是否反向匹配。使用说明：固定为false。该字段能更新但不会生效。
 
         :param invert: The invert of this ListL7RulesRequest.
         :type: bool
@@ -224,6 +236,7 @@ class ListL7RulesRequest:
     def key(self):
         """Gets the key of this ListL7RulesRequest.
 
+        匹配内容的键值。目前匹配内容为HOST_NAME和PATH时，该字段不生效。该字段能更新但不会生效。
 
         :return: The key of this ListL7RulesRequest.
         :rtype: list[str]
@@ -234,6 +247,7 @@ class ListL7RulesRequest:
     def key(self, key):
         """Sets the key of this ListL7RulesRequest.
 
+        匹配内容的键值。目前匹配内容为HOST_NAME和PATH时，该字段不生效。该字段能更新但不会生效。
 
         :param key: The key of this ListL7RulesRequest.
         :type: list[str]
@@ -244,6 +258,7 @@ class ListL7RulesRequest:
     def limit(self):
         """Gets the limit of this ListL7RulesRequest.
 
+        每页返回的个数。
 
         :return: The limit of this ListL7RulesRequest.
         :rtype: int
@@ -254,6 +269,7 @@ class ListL7RulesRequest:
     def limit(self, limit):
         """Sets the limit of this ListL7RulesRequest.
 
+        每页返回的个数。
 
         :param limit: The limit of this ListL7RulesRequest.
         :type: int
@@ -264,6 +280,7 @@ class ListL7RulesRequest:
     def marker(self):
         """Gets the marker of this ListL7RulesRequest.
 
+        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :return: The marker of this ListL7RulesRequest.
         :rtype: str
@@ -274,6 +291,7 @@ class ListL7RulesRequest:
     def marker(self, marker):
         """Sets the marker of this ListL7RulesRequest.
 
+        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListL7RulesRequest.
         :type: str
@@ -284,6 +302,7 @@ class ListL7RulesRequest:
     def page_reverse(self):
         """Gets the page_reverse of this ListL7RulesRequest.
 
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。 使用说明：必须与limit一起使用。
 
         :return: The page_reverse of this ListL7RulesRequest.
         :rtype: bool
@@ -294,6 +313,7 @@ class ListL7RulesRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListL7RulesRequest.
 
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。 使用说明：必须与limit一起使用。
 
         :param page_reverse: The page_reverse of this ListL7RulesRequest.
         :type: bool
@@ -304,6 +324,7 @@ class ListL7RulesRequest:
     def provisioning_status(self):
         """Gets the provisioning_status of this ListL7RulesRequest.
 
+        转发规则的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
         :return: The provisioning_status of this ListL7RulesRequest.
         :rtype: list[str]
@@ -314,6 +335,7 @@ class ListL7RulesRequest:
     def provisioning_status(self, provisioning_status):
         """Sets the provisioning_status of this ListL7RulesRequest.
 
+        转发规则的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
         :param provisioning_status: The provisioning_status of this ListL7RulesRequest.
         :type: list[str]
@@ -324,6 +346,7 @@ class ListL7RulesRequest:
     def type(self):
         """Gets the type of this ListL7RulesRequest.
 
+        一个l7policy下创建的l7rule的type不能重复。 匹配内容：可以为HOST_NAME，PATH。
 
         :return: The type of this ListL7RulesRequest.
         :rtype: list[str]
@@ -334,6 +357,7 @@ class ListL7RulesRequest:
     def type(self, type):
         """Sets the type of this ListL7RulesRequest.
 
+        一个l7policy下创建的l7rule的type不能重复。 匹配内容：可以为HOST_NAME，PATH。
 
         :param type: The type of this ListL7RulesRequest.
         :type: list[str]
@@ -344,6 +368,7 @@ class ListL7RulesRequest:
     def value(self):
         """Gets the value of this ListL7RulesRequest.
 
+        匹配内容的值。其值不能包含空格。使用说明：当type为HOST_NAME时，取值范围：String(100)，字符串只能包含英文字母、数字、“-”或“.”，且必须以字母或数字开头。当type为PATH时，取值范围：String(128)。当转发规则的compare_type为STARTS_WITH，EQUAL_TO时，字符串只能包含英文字母、数字、^-%#&$.*+?,=!:| /()[]{}，且必须以\"/\"开头。
 
         :return: The value of this ListL7RulesRequest.
         :rtype: list[str]
@@ -354,6 +379,7 @@ class ListL7RulesRequest:
     def value(self, value):
         """Sets the value of this ListL7RulesRequest.
 
+        匹配内容的值。其值不能包含空格。使用说明：当type为HOST_NAME时，取值范围：String(100)，字符串只能包含英文字母、数字、“-”或“.”，且必须以字母或数字开头。当type为PATH时，取值范围：String(128)。当转发规则的compare_type为STARTS_WITH，EQUAL_TO时，字符串只能包含英文字母、数字、^-%#&$.*+?,=!:| /()[]{}，且必须以\"/\"开头。
 
         :param value: The value of this ListL7RulesRequest.
         :type: list[str]

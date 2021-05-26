@@ -44,6 +44,7 @@ class ShowIpGroupRequest:
     def ipgroup_id(self):
         """Gets the ipgroup_id of this ShowIpGroupRequest.
 
+        IP地址组id
 
         :return: The ipgroup_id of this ShowIpGroupRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowIpGroupRequest:
     def ipgroup_id(self, ipgroup_id):
         """Sets the ipgroup_id of this ShowIpGroupRequest.
 
+        IP地址组id
 
         :param ipgroup_id: The ipgroup_id of this ShowIpGroupRequest.
         :type: str

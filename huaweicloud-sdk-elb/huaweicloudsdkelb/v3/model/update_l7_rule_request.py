@@ -53,6 +53,7 @@ class UpdateL7RuleRequest:
     def l7policy_id(self):
         """Gets the l7policy_id of this UpdateL7RuleRequest.
 
+        策略ID。
 
         :return: The l7policy_id of this UpdateL7RuleRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class UpdateL7RuleRequest:
     def l7policy_id(self, l7policy_id):
         """Sets the l7policy_id of this UpdateL7RuleRequest.
 
+        策略ID。
 
         :param l7policy_id: The l7policy_id of this UpdateL7RuleRequest.
         :type: str
@@ -73,6 +75,7 @@ class UpdateL7RuleRequest:
     def l7rule_id(self):
         """Gets the l7rule_id of this UpdateL7RuleRequest.
 
+        规则ID。
 
         :return: The l7rule_id of this UpdateL7RuleRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class UpdateL7RuleRequest:
     def l7rule_id(self, l7rule_id):
         """Sets the l7rule_id of this UpdateL7RuleRequest.
 
+        规则ID。
 
         :param l7rule_id: The l7rule_id of this UpdateL7RuleRequest.
         :type: str

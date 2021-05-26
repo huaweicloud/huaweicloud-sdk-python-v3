@@ -33,7 +33,7 @@ class ShowServerTagsResponse(SdkResponse):
     def __init__(self, tags=None):
         """ShowServerTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowServerTagsResponse, self).__init__()
 
         self._tags = None
         self.discriminator = None

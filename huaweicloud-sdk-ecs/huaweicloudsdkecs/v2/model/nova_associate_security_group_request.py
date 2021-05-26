@@ -49,6 +49,7 @@ class NovaAssociateSecurityGroupRequest:
     def server_id(self):
         """Gets the server_id of this NovaAssociateSecurityGroupRequest.
 
+        弹性云服务器ID。
 
         :return: The server_id of this NovaAssociateSecurityGroupRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class NovaAssociateSecurityGroupRequest:
     def server_id(self, server_id):
         """Sets the server_id of this NovaAssociateSecurityGroupRequest.
 
+        弹性云服务器ID。
 
         :param server_id: The server_id of this NovaAssociateSecurityGroupRequest.
         :type: str

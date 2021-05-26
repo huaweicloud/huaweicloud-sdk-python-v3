@@ -49,6 +49,7 @@ class UpdateVolumeRequest:
     def volume_id(self):
         """Gets the volume_id of this UpdateVolumeRequest.
 
+        云硬盘ID。
 
         :return: The volume_id of this UpdateVolumeRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateVolumeRequest:
     def volume_id(self, volume_id):
         """Sets the volume_id of this UpdateVolumeRequest.
 
+        云硬盘ID。
 
         :param volume_id: The volume_id of this UpdateVolumeRequest.
         :type: str

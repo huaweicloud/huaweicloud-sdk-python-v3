@@ -49,6 +49,7 @@ class UpdateHealthmonitorRequest:
     def healthmonitor_id(self):
         """Gets the healthmonitor_id of this UpdateHealthmonitorRequest.
 
+        健康检查id
 
         :return: The healthmonitor_id of this UpdateHealthmonitorRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateHealthmonitorRequest:
     def healthmonitor_id(self, healthmonitor_id):
         """Sets the healthmonitor_id of this UpdateHealthmonitorRequest.
 
+        健康检查id
 
         :param healthmonitor_id: The healthmonitor_id of this UpdateHealthmonitorRequest.
         :type: str

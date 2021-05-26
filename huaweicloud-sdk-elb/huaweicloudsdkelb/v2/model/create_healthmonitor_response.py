@@ -33,7 +33,7 @@ class CreateHealthmonitorResponse(SdkResponse):
     def __init__(self, healthmonitor=None):
         """CreateHealthmonitorResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateHealthmonitorResponse, self).__init__()
 
         self._healthmonitor = None
         self.discriminator = None

@@ -33,7 +33,7 @@ class AddPublicipsIntoSharedBandwidthResponse(SdkResponse):
     def __init__(self, bandwidth=None):
         """AddPublicipsIntoSharedBandwidthResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AddPublicipsIntoSharedBandwidthResponse, self).__init__()
 
         self._bandwidth = None
         self.discriminator = None

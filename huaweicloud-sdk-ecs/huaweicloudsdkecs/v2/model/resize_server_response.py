@@ -35,7 +35,7 @@ class ResizeServerResponse(SdkResponse):
     def __init__(self, order_id=None, job_id=None):
         """ResizeServerResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ResizeServerResponse, self).__init__()
 
         self._order_id = None
         self._job_id = None

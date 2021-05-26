@@ -33,7 +33,7 @@ class ShowServerLimitsResponse(SdkResponse):
     def __init__(self, absolute=None):
         """ShowServerLimitsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowServerLimitsResponse, self).__init__()
 
         self._absolute = None
         self.discriminator = None

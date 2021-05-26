@@ -49,6 +49,7 @@ class EnableEnterpriseProjectRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this EnableEnterpriseProjectRequest.
 
+        企业项目ID，不能为0。
 
         :return: The enterprise_project_id of this EnableEnterpriseProjectRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class EnableEnterpriseProjectRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this EnableEnterpriseProjectRequest.
 
+        企业项目ID，不能为0。
 
         :param enterprise_project_id: The enterprise_project_id of this EnableEnterpriseProjectRequest.
         :type: str

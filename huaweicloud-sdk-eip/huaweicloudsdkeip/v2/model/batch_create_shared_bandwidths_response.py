@@ -33,7 +33,7 @@ class BatchCreateSharedBandwidthsResponse(SdkResponse):
     def __init__(self, bandwidths=None):
         """BatchCreateSharedBandwidthsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchCreateSharedBandwidthsResponse, self).__init__()
 
         self._bandwidths = None
         self.discriminator = None

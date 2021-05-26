@@ -33,7 +33,7 @@ class NovaShowKeypairResponse(SdkResponse):
     def __init__(self, keypair=None):
         """NovaShowKeypairResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(NovaShowKeypairResponse, self).__init__()
 
         self._keypair = None
         self.discriminator = None

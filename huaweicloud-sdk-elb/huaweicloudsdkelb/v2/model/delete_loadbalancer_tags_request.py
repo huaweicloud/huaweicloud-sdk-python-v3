@@ -48,6 +48,7 @@ class DeleteLoadbalancerTagsRequest:
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this DeleteLoadbalancerTagsRequest.
 
+        负载均衡器ID。
 
         :return: The loadbalancer_id of this DeleteLoadbalancerTagsRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteLoadbalancerTagsRequest:
     def loadbalancer_id(self, loadbalancer_id):
         """Sets the loadbalancer_id of this DeleteLoadbalancerTagsRequest.
 
+        负载均衡器ID。
 
         :param loadbalancer_id: The loadbalancer_id of this DeleteLoadbalancerTagsRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteLoadbalancerTagsRequest:
     def key(self):
         """Gets the key of this DeleteLoadbalancerTagsRequest.
 
+        待删除标签的key值
 
         :return: The key of this DeleteLoadbalancerTagsRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteLoadbalancerTagsRequest:
     def key(self, key):
         """Sets the key of this DeleteLoadbalancerTagsRequest.
 
+        待删除标签的key值
 
         :param key: The key of this DeleteLoadbalancerTagsRequest.
         :type: str

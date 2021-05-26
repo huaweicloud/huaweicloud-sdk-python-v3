@@ -31,7 +31,7 @@ class BatchDeleteListenerTagsResponse(SdkResponse):
     def __init__(self):
         """BatchDeleteListenerTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchDeleteListenerTagsResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

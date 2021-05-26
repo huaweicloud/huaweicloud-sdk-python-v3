@@ -33,7 +33,7 @@ class ShowServerRemoteConsoleResponse(SdkResponse):
     def __init__(self, remote_console=None):
         """ShowServerRemoteConsoleResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowServerRemoteConsoleResponse, self).__init__()
 
         self._remote_console = None
         self.discriminator = None

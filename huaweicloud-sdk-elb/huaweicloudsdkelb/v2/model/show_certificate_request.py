@@ -44,6 +44,7 @@ class ShowCertificateRequest:
     def certificate_id(self):
         """Gets the certificate_id of this ShowCertificateRequest.
 
+        证书id。
 
         :return: The certificate_id of this ShowCertificateRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowCertificateRequest:
     def certificate_id(self, certificate_id):
         """Sets the certificate_id of this ShowCertificateRequest.
 
+        证书id。
 
         :param certificate_id: The certificate_id of this ShowCertificateRequest.
         :type: str

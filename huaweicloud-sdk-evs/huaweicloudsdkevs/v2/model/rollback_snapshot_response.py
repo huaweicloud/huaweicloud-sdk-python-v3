@@ -33,7 +33,7 @@ class RollbackSnapshotResponse(SdkResponse):
     def __init__(self, rollback=None):
         """RollbackSnapshotResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(RollbackSnapshotResponse, self).__init__()
 
         self._rollback = None
         self.discriminator = None

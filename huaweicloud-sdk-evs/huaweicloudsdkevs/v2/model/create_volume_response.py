@@ -37,7 +37,7 @@ class CreateVolumeResponse(SdkResponse):
     def __init__(self, job_id=None, order_id=None, volume_ids=None):
         """CreateVolumeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateVolumeResponse, self).__init__()
 
         self._job_id = None
         self._order_id = None

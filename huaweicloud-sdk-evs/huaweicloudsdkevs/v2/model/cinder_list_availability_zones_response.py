@@ -33,7 +33,7 @@ class CinderListAvailabilityZonesResponse(SdkResponse):
     def __init__(self, availability_zone_info=None):
         """CinderListAvailabilityZonesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CinderListAvailabilityZonesResponse, self).__init__()
 
         self._availability_zone_info = None
         self.discriminator = None

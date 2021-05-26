@@ -35,7 +35,7 @@ class ListServerGroupsResponse(SdkResponse):
     def __init__(self, server_groups=None, page_info=None):
         """ListServerGroupsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListServerGroupsResponse, self).__init__()
 
         self._server_groups = None
         self._page_info = None

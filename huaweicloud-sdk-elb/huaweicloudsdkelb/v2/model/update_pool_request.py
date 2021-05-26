@@ -49,6 +49,7 @@ class UpdatePoolRequest:
     def pool_id(self):
         """Gets the pool_id of this UpdatePoolRequest.
 
+        后端云服务器组id
 
         :return: The pool_id of this UpdatePoolRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdatePoolRequest:
     def pool_id(self, pool_id):
         """Sets the pool_id of this UpdatePoolRequest.
 
+        后端云服务器组id
 
         :param pool_id: The pool_id of this UpdatePoolRequest.
         :type: str

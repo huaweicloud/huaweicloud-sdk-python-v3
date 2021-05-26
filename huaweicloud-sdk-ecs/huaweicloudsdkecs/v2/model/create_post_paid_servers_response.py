@@ -35,7 +35,7 @@ class CreatePostPaidServersResponse(SdkResponse):
     def __init__(self, job_id=None, server_ids=None):
         """CreatePostPaidServersResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreatePostPaidServersResponse, self).__init__()
 
         self._job_id = None
         self._server_ids = None

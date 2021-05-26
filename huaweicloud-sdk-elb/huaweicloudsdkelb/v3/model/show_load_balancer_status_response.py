@@ -35,7 +35,7 @@ class ShowLoadBalancerStatusResponse(SdkResponse):
     def __init__(self, statuses=None, request_id=None):
         """ShowLoadBalancerStatusResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowLoadBalancerStatusResponse, self).__init__()
 
         self._statuses = None
         self._request_id = None

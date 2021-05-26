@@ -49,6 +49,7 @@ class NovaShowKeypairRequest:
     def keypair_name(self):
         """Gets the keypair_name of this NovaShowKeypairRequest.
 
+        密钥名称信息。
 
         :return: The keypair_name of this NovaShowKeypairRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class NovaShowKeypairRequest:
     def keypair_name(self, keypair_name):
         """Sets the keypair_name of this NovaShowKeypairRequest.
 
+        密钥名称信息。
 
         :param keypair_name: The keypair_name of this NovaShowKeypairRequest.
         :type: str
@@ -69,6 +71,7 @@ class NovaShowKeypairRequest:
     def open_stack_api_version(self):
         """Gets the open_stack_api_version of this NovaShowKeypairRequest.
 
+        微版本头
 
         :return: The open_stack_api_version of this NovaShowKeypairRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class NovaShowKeypairRequest:
     def open_stack_api_version(self, open_stack_api_version):
         """Sets the open_stack_api_version of this NovaShowKeypairRequest.
 
+        微版本头
 
         :param open_stack_api_version: The open_stack_api_version of this NovaShowKeypairRequest.
         :type: str

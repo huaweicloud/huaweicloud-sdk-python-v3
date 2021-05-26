@@ -95,6 +95,7 @@ class ListSnapshotsRequest:
     def offset(self):
         """Gets the offset of this ListSnapshotsRequest.
 
+        偏移量。 说明:分页查询快照时使用，与limit配合使用。假如共有30个快照，设置offset为11，limit为10，即为从第12个快照开始查询，一次最多可读取10个快照。
 
         :return: The offset of this ListSnapshotsRequest.
         :rtype: int
@@ -105,6 +106,7 @@ class ListSnapshotsRequest:
     def offset(self, offset):
         """Sets the offset of this ListSnapshotsRequest.
 
+        偏移量。 说明:分页查询快照时使用，与limit配合使用。假如共有30个快照，设置offset为11，limit为10，即为从第12个快照开始查询，一次最多可读取10个快照。
 
         :param offset: The offset of this ListSnapshotsRequest.
         :type: int
@@ -115,6 +117,7 @@ class ListSnapshotsRequest:
     def limit(self):
         """Gets the limit of this ListSnapshotsRequest.
 
+        返回结果个数限制，值为大于0的整数。默认值为1000。
 
         :return: The limit of this ListSnapshotsRequest.
         :rtype: int
@@ -125,6 +128,7 @@ class ListSnapshotsRequest:
     def limit(self, limit):
         """Sets the limit of this ListSnapshotsRequest.
 
+        返回结果个数限制，值为大于0的整数。默认值为1000。
 
         :param limit: The limit of this ListSnapshotsRequest.
         :type: int
@@ -135,6 +139,7 @@ class ListSnapshotsRequest:
     def name(self):
         """Gets the name of this ListSnapshotsRequest.
 
+        云硬盘快照名称。最大支持255个字节。
 
         :return: The name of this ListSnapshotsRequest.
         :rtype: str
@@ -145,6 +150,7 @@ class ListSnapshotsRequest:
     def name(self, name):
         """Sets the name of this ListSnapshotsRequest.
 
+        云硬盘快照名称。最大支持255个字节。
 
         :param name: The name of this ListSnapshotsRequest.
         :type: str
@@ -155,6 +161,7 @@ class ListSnapshotsRequest:
     def status(self):
         """Gets the status of this ListSnapshotsRequest.
 
+        云硬盘快照状态，具体请参见A.3 云硬盘快照状态。
 
         :return: The status of this ListSnapshotsRequest.
         :rtype: str
@@ -165,6 +172,7 @@ class ListSnapshotsRequest:
     def status(self, status):
         """Sets the status of this ListSnapshotsRequest.
 
+        云硬盘快照状态，具体请参见A.3 云硬盘快照状态。
 
         :param status: The status of this ListSnapshotsRequest.
         :type: str
@@ -175,6 +183,7 @@ class ListSnapshotsRequest:
     def volume_id(self):
         """Gets the volume_id of this ListSnapshotsRequest.
 
+        快照所属云硬盘的ID。
 
         :return: The volume_id of this ListSnapshotsRequest.
         :rtype: str
@@ -185,6 +194,7 @@ class ListSnapshotsRequest:
     def volume_id(self, volume_id):
         """Sets the volume_id of this ListSnapshotsRequest.
 
+        快照所属云硬盘的ID。
 
         :param volume_id: The volume_id of this ListSnapshotsRequest.
         :type: str
@@ -195,6 +205,7 @@ class ListSnapshotsRequest:
     def availability_zone(self):
         """Gets the availability_zone of this ListSnapshotsRequest.
 
+        快照所属云硬盘的可用区。
 
         :return: The availability_zone of this ListSnapshotsRequest.
         :rtype: str
@@ -205,6 +216,7 @@ class ListSnapshotsRequest:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this ListSnapshotsRequest.
 
+        快照所属云硬盘的可用区。
 
         :param availability_zone: The availability_zone of this ListSnapshotsRequest.
         :type: str
@@ -215,6 +227,7 @@ class ListSnapshotsRequest:
     def id(self):
         """Gets the id of this ListSnapshotsRequest.
 
+        指定快照id进行过滤。
 
         :return: The id of this ListSnapshotsRequest.
         :rtype: str
@@ -225,6 +238,7 @@ class ListSnapshotsRequest:
     def id(self, id):
         """Sets the id of this ListSnapshotsRequest.
 
+        指定快照id进行过滤。
 
         :param id: The id of this ListSnapshotsRequest.
         :type: str
@@ -235,6 +249,7 @@ class ListSnapshotsRequest:
     def dedicated_storage_name(self):
         """Gets the dedicated_storage_name of this ListSnapshotsRequest.
 
+        专属存储的名称。
 
         :return: The dedicated_storage_name of this ListSnapshotsRequest.
         :rtype: str
@@ -245,6 +260,7 @@ class ListSnapshotsRequest:
     def dedicated_storage_name(self, dedicated_storage_name):
         """Sets the dedicated_storage_name of this ListSnapshotsRequest.
 
+        专属存储的名称。
 
         :param dedicated_storage_name: The dedicated_storage_name of this ListSnapshotsRequest.
         :type: str
@@ -255,6 +271,7 @@ class ListSnapshotsRequest:
     def dedicated_storage_id(self):
         """Gets the dedicated_storage_id of this ListSnapshotsRequest.
 
+        专属存储ID。
 
         :return: The dedicated_storage_id of this ListSnapshotsRequest.
         :rtype: str
@@ -265,6 +282,7 @@ class ListSnapshotsRequest:
     def dedicated_storage_id(self, dedicated_storage_id):
         """Sets the dedicated_storage_id of this ListSnapshotsRequest.
 
+        专属存储ID。
 
         :param dedicated_storage_id: The dedicated_storage_id of this ListSnapshotsRequest.
         :type: str
@@ -275,6 +293,7 @@ class ListSnapshotsRequest:
     def service_type(self):
         """Gets the service_type of this ListSnapshotsRequest.
 
+        服务类型。仅支持EVS、DSS、DESS。
 
         :return: The service_type of this ListSnapshotsRequest.
         :rtype: str
@@ -285,6 +304,7 @@ class ListSnapshotsRequest:
     def service_type(self, service_type):
         """Sets the service_type of this ListSnapshotsRequest.
 
+        服务类型。仅支持EVS、DSS、DESS。
 
         :param service_type: The service_type of this ListSnapshotsRequest.
         :type: str
@@ -295,6 +315,7 @@ class ListSnapshotsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListSnapshotsRequest.
 
+        指定企业项目id进行过滤。 传入“all_granted_eps”，代表查询权限范围内的所有企业项目下的云硬盘。 > 说明： >  > 关于企业项目ID的获取及企业项目特性的详细信息，请参考：\"[企业管理用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)\"。
 
         :return: The enterprise_project_id of this ListSnapshotsRequest.
         :rtype: str
@@ -305,6 +326,7 @@ class ListSnapshotsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListSnapshotsRequest.
 
+        指定企业项目id进行过滤。 传入“all_granted_eps”，代表查询权限范围内的所有企业项目下的云硬盘。 > 说明： >  > 关于企业项目ID的获取及企业项目特性的详细信息，请参考：\"[企业管理用户指南](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0123692049.html)\"。
 
         :param enterprise_project_id: The enterprise_project_id of this ListSnapshotsRequest.
         :type: str

@@ -44,6 +44,7 @@ class DeleteListenerRequest:
     def listener_id(self):
         """Gets the listener_id of this DeleteListenerRequest.
 
+        监听器ID。
 
         :return: The listener_id of this DeleteListenerRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteListenerRequest:
     def listener_id(self, listener_id):
         """Sets the listener_id of this DeleteListenerRequest.
 
+        监听器ID。
 
         :param listener_id: The listener_id of this DeleteListenerRequest.
         :type: str

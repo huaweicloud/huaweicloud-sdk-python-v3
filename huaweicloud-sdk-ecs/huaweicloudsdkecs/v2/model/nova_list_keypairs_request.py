@@ -55,6 +55,7 @@ class NovaListKeypairsRequest:
     def limit(self):
         """Gets the limit of this NovaListKeypairsRequest.
 
+        查询返回秘钥数量限制。  在微版本2.35后支持
 
         :return: The limit of this NovaListKeypairsRequest.
         :rtype: int
@@ -65,6 +66,7 @@ class NovaListKeypairsRequest:
     def limit(self, limit):
         """Sets the limit of this NovaListKeypairsRequest.
 
+        查询返回秘钥数量限制。  在微版本2.35后支持
 
         :param limit: The limit of this NovaListKeypairsRequest.
         :type: int
@@ -75,6 +77,7 @@ class NovaListKeypairsRequest:
     def marker(self):
         """Gets the marker of this NovaListKeypairsRequest.
 
+        从marker指定的keypair的名称的下一条数据开始查询。  在微版本2.35后支持。
 
         :return: The marker of this NovaListKeypairsRequest.
         :rtype: str
@@ -85,6 +88,7 @@ class NovaListKeypairsRequest:
     def marker(self, marker):
         """Sets the marker of this NovaListKeypairsRequest.
 
+        从marker指定的keypair的名称的下一条数据开始查询。  在微版本2.35后支持。
 
         :param marker: The marker of this NovaListKeypairsRequest.
         :type: str
@@ -95,6 +99,7 @@ class NovaListKeypairsRequest:
     def open_stack_api_version(self):
         """Gets the open_stack_api_version of this NovaListKeypairsRequest.
 
+        微版本头
 
         :return: The open_stack_api_version of this NovaListKeypairsRequest.
         :rtype: str
@@ -105,6 +110,7 @@ class NovaListKeypairsRequest:
     def open_stack_api_version(self, open_stack_api_version):
         """Sets the open_stack_api_version of this NovaListKeypairsRequest.
 
+        微版本头
 
         :param open_stack_api_version: The open_stack_api_version of this NovaListKeypairsRequest.
         :type: str

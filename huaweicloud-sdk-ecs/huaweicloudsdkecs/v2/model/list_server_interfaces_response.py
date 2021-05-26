@@ -33,7 +33,7 @@ class ListServerInterfacesResponse(SdkResponse):
     def __init__(self, interface_attachments=None):
         """ListServerInterfacesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListServerInterfacesResponse, self).__init__()
 
         self._interface_attachments = None
         self.discriminator = None

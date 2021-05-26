@@ -44,6 +44,7 @@ class ShowPoolRequest:
     def pool_id(self):
         """Gets the pool_id of this ShowPoolRequest.
 
+        后端云服务器组id
 
         :return: The pool_id of this ShowPoolRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowPoolRequest:
     def pool_id(self, pool_id):
         """Sets the pool_id of this ShowPoolRequest.
 
+        后端云服务器组id
 
         :param pool_id: The pool_id of this ShowPoolRequest.
         :type: str

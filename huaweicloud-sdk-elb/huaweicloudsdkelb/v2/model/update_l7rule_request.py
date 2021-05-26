@@ -53,6 +53,7 @@ class UpdateL7ruleRequest:
     def l7policy_id(self):
         """Gets the l7policy_id of this UpdateL7ruleRequest.
 
+        待更新的转发规则所在的转发策略id
 
         :return: The l7policy_id of this UpdateL7ruleRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class UpdateL7ruleRequest:
     def l7policy_id(self, l7policy_id):
         """Sets the l7policy_id of this UpdateL7ruleRequest.
 
+        待更新的转发规则所在的转发策略id
 
         :param l7policy_id: The l7policy_id of this UpdateL7ruleRequest.
         :type: str
@@ -73,6 +75,7 @@ class UpdateL7ruleRequest:
     def l7rule_id(self):
         """Gets the l7rule_id of this UpdateL7ruleRequest.
 
+        待更新的转发规则id
 
         :return: The l7rule_id of this UpdateL7ruleRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class UpdateL7ruleRequest:
     def l7rule_id(self, l7rule_id):
         """Sets the l7rule_id of this UpdateL7ruleRequest.
 
+        待更新的转发规则id
 
         :param l7rule_id: The l7rule_id of this UpdateL7ruleRequest.
         :type: str

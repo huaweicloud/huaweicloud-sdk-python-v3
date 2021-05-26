@@ -33,7 +33,7 @@ class ListQuotasResponse(SdkResponse):
     def __init__(self, quotas=None):
         """ListQuotasResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListQuotasResponse, self).__init__()
 
         self._quotas = None
         self.discriminator = None

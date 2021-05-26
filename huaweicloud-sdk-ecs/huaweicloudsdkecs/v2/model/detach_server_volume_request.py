@@ -53,6 +53,7 @@ class DetachServerVolumeRequest:
     def server_id(self):
         """Gets the server_id of this DetachServerVolumeRequest.
 
+        云服务器ID。
 
         :return: The server_id of this DetachServerVolumeRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class DetachServerVolumeRequest:
     def server_id(self, server_id):
         """Sets the server_id of this DetachServerVolumeRequest.
 
+        云服务器ID。
 
         :param server_id: The server_id of this DetachServerVolumeRequest.
         :type: str
@@ -73,6 +75,7 @@ class DetachServerVolumeRequest:
     def volume_id(self):
         """Gets the volume_id of this DetachServerVolumeRequest.
 
+        磁盘ID。
 
         :return: The volume_id of this DetachServerVolumeRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class DetachServerVolumeRequest:
     def volume_id(self, volume_id):
         """Sets the volume_id of this DetachServerVolumeRequest.
 
+        磁盘ID。
 
         :param volume_id: The volume_id of this DetachServerVolumeRequest.
         :type: str
@@ -93,6 +97,7 @@ class DetachServerVolumeRequest:
     def delete_flag(self):
         """Gets the delete_flag of this DetachServerVolumeRequest.
 
+        是否强制卸载数据盘。  - 是，值为“1”。  - 否，值为“0”。  默认值为0。
 
         :return: The delete_flag of this DetachServerVolumeRequest.
         :rtype: str
@@ -103,6 +108,7 @@ class DetachServerVolumeRequest:
     def delete_flag(self, delete_flag):
         """Sets the delete_flag of this DetachServerVolumeRequest.
 
+        是否强制卸载数据盘。  - 是，值为“1”。  - 否，值为“0”。  默认值为0。
 
         :param delete_flag: The delete_flag of this DetachServerVolumeRequest.
         :type: str

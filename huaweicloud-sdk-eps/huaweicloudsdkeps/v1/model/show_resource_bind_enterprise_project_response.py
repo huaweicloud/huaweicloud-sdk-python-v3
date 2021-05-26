@@ -37,7 +37,7 @@ class ShowResourceBindEnterpriseProjectResponse(SdkResponse):
     def __init__(self, resources=None, errors=None, total_count=None):
         """ShowResourceBindEnterpriseProjectResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowResourceBindEnterpriseProjectResponse, self).__init__()
 
         self._resources = None
         self._errors = None

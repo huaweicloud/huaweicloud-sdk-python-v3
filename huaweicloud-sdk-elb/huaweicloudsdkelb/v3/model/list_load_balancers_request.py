@@ -190,6 +190,7 @@ class ListLoadBalancersRequest:
     def admin_state_up(self):
         """Gets the admin_state_up of this ListLoadBalancersRequest.
 
+        负载均衡器的管理状态。只支持设定为true。
 
         :return: The admin_state_up of this ListLoadBalancersRequest.
         :rtype: bool
@@ -200,6 +201,7 @@ class ListLoadBalancersRequest:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this ListLoadBalancersRequest.
 
+        负载均衡器的管理状态。只支持设定为true。
 
         :param admin_state_up: The admin_state_up of this ListLoadBalancersRequest.
         :type: bool
@@ -210,6 +212,7 @@ class ListLoadBalancersRequest:
     def availability_zone_list(self):
         """Gets the availability_zone_list of this ListLoadBalancersRequest.
 
+        可用区。 注： 可用AZ的查询方式可用通过调用nova接口查询 /v2/{project_id}/os-availability-zone
 
         :return: The availability_zone_list of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -220,6 +223,7 @@ class ListLoadBalancersRequest:
     def availability_zone_list(self, availability_zone_list):
         """Sets the availability_zone_list of this ListLoadBalancersRequest.
 
+        可用区。 注： 可用AZ的查询方式可用通过调用nova接口查询 /v2/{project_id}/os-availability-zone
 
         :param availability_zone_list: The availability_zone_list of this ListLoadBalancersRequest.
         :type: list[str]
@@ -230,6 +234,7 @@ class ListLoadBalancersRequest:
     def billing_info(self):
         """Gets the billing_info of this ListLoadBalancersRequest.
 
+        预留资源账单信息，默认为空表示按需计费， 非空为包周期。admin权限才能更新此字段。
 
         :return: The billing_info of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -240,6 +245,7 @@ class ListLoadBalancersRequest:
     def billing_info(self, billing_info):
         """Sets the billing_info of this ListLoadBalancersRequest.
 
+        预留资源账单信息，默认为空表示按需计费， 非空为包周期。admin权限才能更新此字段。
 
         :param billing_info: The billing_info of this ListLoadBalancersRequest.
         :type: list[str]
@@ -250,6 +256,7 @@ class ListLoadBalancersRequest:
     def deletion_protection_enable(self):
         """Gets the deletion_protection_enable of this ListLoadBalancersRequest.
 
+        是否开启删除保护，false不开启，默认为空都查询
 
         :return: The deletion_protection_enable of this ListLoadBalancersRequest.
         :rtype: bool
@@ -260,6 +267,7 @@ class ListLoadBalancersRequest:
     def deletion_protection_enable(self, deletion_protection_enable):
         """Sets the deletion_protection_enable of this ListLoadBalancersRequest.
 
+        是否开启删除保护，false不开启，默认为空都查询
 
         :param deletion_protection_enable: The deletion_protection_enable of this ListLoadBalancersRequest.
         :type: bool
@@ -270,6 +278,7 @@ class ListLoadBalancersRequest:
     def description(self):
         """Gets the description of this ListLoadBalancersRequest.
 
+        负载均衡器的描述信息。
 
         :return: The description of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -280,6 +289,7 @@ class ListLoadBalancersRequest:
     def description(self, description):
         """Sets the description of this ListLoadBalancersRequest.
 
+        负载均衡器的描述信息。
 
         :param description: The description of this ListLoadBalancersRequest.
         :type: list[str]
@@ -290,6 +300,7 @@ class ListLoadBalancersRequest:
     def eips(self):
         """Gets the eips of this ListLoadBalancersRequest.
 
+        公网ELB实例绑定EIP。 示例如下：  \"eips\": [             {                 \"eip_id\": \"a6ded276-c88a-4c58-95e0-5b6d1d2297b3\",                 \"eip_address\": \"2001:db8:a583:86:cf24:5cc5:8117:6eaa\",                 \"ip_version\": 6             }         ] 查询时指定：eips=eip_id=XXXX
 
         :return: The eips of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -300,6 +311,7 @@ class ListLoadBalancersRequest:
     def eips(self, eips):
         """Sets the eips of this ListLoadBalancersRequest.
 
+        公网ELB实例绑定EIP。 示例如下：  \"eips\": [             {                 \"eip_id\": \"a6ded276-c88a-4c58-95e0-5b6d1d2297b3\",                 \"eip_address\": \"2001:db8:a583:86:cf24:5cc5:8117:6eaa\",                 \"ip_version\": 6             }         ] 查询时指定：eips=eip_id=XXXX
 
         :param eips: The eips of this ListLoadBalancersRequest.
         :type: list[str]
@@ -310,6 +322,7 @@ class ListLoadBalancersRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListLoadBalancersRequest.
 
+        企业项目ID。
 
         :return: The enterprise_project_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -320,6 +333,7 @@ class ListLoadBalancersRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListLoadBalancersRequest.
 
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListLoadBalancersRequest.
         :type: list[str]
@@ -330,6 +344,7 @@ class ListLoadBalancersRequest:
     def guaranteed(self):
         """Gets the guaranteed of this ListLoadBalancersRequest.
 
+        共享型：false 性能保障型：true
 
         :return: The guaranteed of this ListLoadBalancersRequest.
         :rtype: bool
@@ -340,6 +355,7 @@ class ListLoadBalancersRequest:
     def guaranteed(self, guaranteed):
         """Sets the guaranteed of this ListLoadBalancersRequest.
 
+        共享型：false 性能保障型：true
 
         :param guaranteed: The guaranteed of this ListLoadBalancersRequest.
         :type: bool
@@ -350,6 +366,7 @@ class ListLoadBalancersRequest:
     def id(self):
         """Gets the id of this ListLoadBalancersRequest.
 
+        负载均衡器ID。
 
         :return: The id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -360,6 +377,7 @@ class ListLoadBalancersRequest:
     def id(self, id):
         """Sets the id of this ListLoadBalancersRequest.
 
+        负载均衡器ID。
 
         :param id: The id of this ListLoadBalancersRequest.
         :type: list[str]
@@ -370,6 +388,7 @@ class ListLoadBalancersRequest:
     def ip_version(self):
         """Gets the ip_version of this ListLoadBalancersRequest.
 
+        IP版本信息。 取值范围：4和6 4：IPv4 6：IPv6
 
         :return: The ip_version of this ListLoadBalancersRequest.
         :rtype: list[int]
@@ -380,6 +399,7 @@ class ListLoadBalancersRequest:
     def ip_version(self, ip_version):
         """Sets the ip_version of this ListLoadBalancersRequest.
 
+        IP版本信息。 取值范围：4和6 4：IPv4 6：IPv6
 
         :param ip_version: The ip_version of this ListLoadBalancersRequest.
         :type: list[int]
@@ -390,6 +410,7 @@ class ListLoadBalancersRequest:
     def ipv6_vip_address(self):
         """Gets the ipv6_vip_address of this ListLoadBalancersRequest.
 
+        双栈实例对应v6的ip地址。
 
         :return: The ipv6_vip_address of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -400,6 +421,7 @@ class ListLoadBalancersRequest:
     def ipv6_vip_address(self, ipv6_vip_address):
         """Sets the ipv6_vip_address of this ListLoadBalancersRequest.
 
+        双栈实例对应v6的ip地址。
 
         :param ipv6_vip_address: The ipv6_vip_address of this ListLoadBalancersRequest.
         :type: list[str]
@@ -410,6 +432,7 @@ class ListLoadBalancersRequest:
     def ipv6_vip_port_id(self):
         """Gets the ipv6_vip_port_id of this ListLoadBalancersRequest.
 
+        双栈实例对应v6的端口。
 
         :return: The ipv6_vip_port_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -420,6 +443,7 @@ class ListLoadBalancersRequest:
     def ipv6_vip_port_id(self, ipv6_vip_port_id):
         """Sets the ipv6_vip_port_id of this ListLoadBalancersRequest.
 
+        双栈实例对应v6的端口。
 
         :param ipv6_vip_port_id: The ipv6_vip_port_id of this ListLoadBalancersRequest.
         :type: list[str]
@@ -430,6 +454,7 @@ class ListLoadBalancersRequest:
     def ipv6_vip_virsubnet_id(self):
         """Gets the ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
 
+        双栈实例对应v6的网络id 。 说明：vpc_id , vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空。
 
         :return: The ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -440,6 +465,7 @@ class ListLoadBalancersRequest:
     def ipv6_vip_virsubnet_id(self, ipv6_vip_virsubnet_id):
         """Sets the ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
 
+        双栈实例对应v6的网络id 。 说明：vpc_id , vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空。
 
         :param ipv6_vip_virsubnet_id: The ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
         :type: list[str]
@@ -450,6 +476,7 @@ class ListLoadBalancersRequest:
     def l4_flavor_id(self):
         """Gets the l4_flavor_id of this ListLoadBalancersRequest.
 
+        四层Flavor， 按需计费不填， 包周期由用户设置。
 
         :return: The l4_flavor_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -460,6 +487,7 @@ class ListLoadBalancersRequest:
     def l4_flavor_id(self, l4_flavor_id):
         """Sets the l4_flavor_id of this ListLoadBalancersRequest.
 
+        四层Flavor， 按需计费不填， 包周期由用户设置。
 
         :param l4_flavor_id: The l4_flavor_id of this ListLoadBalancersRequest.
         :type: list[str]
@@ -470,6 +498,7 @@ class ListLoadBalancersRequest:
     def l4_scale_flavor_id(self):
         """Gets the l4_scale_flavor_id of this ListLoadBalancersRequest.
 
+        预留弹性flavor。
 
         :return: The l4_scale_flavor_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -480,6 +509,7 @@ class ListLoadBalancersRequest:
     def l4_scale_flavor_id(self, l4_scale_flavor_id):
         """Sets the l4_scale_flavor_id of this ListLoadBalancersRequest.
 
+        预留弹性flavor。
 
         :param l4_scale_flavor_id: The l4_scale_flavor_id of this ListLoadBalancersRequest.
         :type: list[str]
@@ -490,6 +520,7 @@ class ListLoadBalancersRequest:
     def l7_flavor_id(self):
         """Gets the l7_flavor_id of this ListLoadBalancersRequest.
 
+        七层Flavor， 按需计费不填， 包周期由用户设置。
 
         :return: The l7_flavor_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -500,6 +531,7 @@ class ListLoadBalancersRequest:
     def l7_flavor_id(self, l7_flavor_id):
         """Sets the l7_flavor_id of this ListLoadBalancersRequest.
 
+        七层Flavor， 按需计费不填， 包周期由用户设置。
 
         :param l7_flavor_id: The l7_flavor_id of this ListLoadBalancersRequest.
         :type: list[str]
@@ -510,6 +542,7 @@ class ListLoadBalancersRequest:
     def l7_scale_flavor_id(self):
         """Gets the l7_scale_flavor_id of this ListLoadBalancersRequest.
 
+        预留弹性flavor。
 
         :return: The l7_scale_flavor_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -520,6 +553,7 @@ class ListLoadBalancersRequest:
     def l7_scale_flavor_id(self, l7_scale_flavor_id):
         """Sets the l7_scale_flavor_id of this ListLoadBalancersRequest.
 
+        预留弹性flavor。
 
         :param l7_scale_flavor_id: The l7_scale_flavor_id of this ListLoadBalancersRequest.
         :type: list[str]
@@ -530,6 +564,7 @@ class ListLoadBalancersRequest:
     def limit(self):
         """Gets the limit of this ListLoadBalancersRequest.
 
+        每页返回的个数。
 
         :return: The limit of this ListLoadBalancersRequest.
         :rtype: int
@@ -540,6 +575,7 @@ class ListLoadBalancersRequest:
     def limit(self, limit):
         """Sets the limit of this ListLoadBalancersRequest.
 
+        每页返回的个数。
 
         :param limit: The limit of this ListLoadBalancersRequest.
         :type: int
@@ -550,6 +586,7 @@ class ListLoadBalancersRequest:
     def marker(self):
         """Gets the marker of this ListLoadBalancersRequest.
 
+        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :return: The marker of this ListLoadBalancersRequest.
         :rtype: str
@@ -560,6 +597,7 @@ class ListLoadBalancersRequest:
     def marker(self, marker):
         """Sets the marker of this ListLoadBalancersRequest.
 
+        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListLoadBalancersRequest.
         :type: str
@@ -570,6 +608,7 @@ class ListLoadBalancersRequest:
     def member_address(self):
         """Gets the member_address of this ListLoadBalancersRequest.
 
+        后端云服务器的IP地址。
 
         :return: The member_address of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -580,6 +619,7 @@ class ListLoadBalancersRequest:
     def member_address(self, member_address):
         """Sets the member_address of this ListLoadBalancersRequest.
 
+        后端云服务器的IP地址。
 
         :param member_address: The member_address of this ListLoadBalancersRequest.
         :type: list[str]
@@ -590,6 +630,7 @@ class ListLoadBalancersRequest:
     def member_device_id(self):
         """Gets the member_device_id of this ListLoadBalancersRequest.
 
+        后端云服务器对应的弹性云服务器的ID。
 
         :return: The member_device_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -600,6 +641,7 @@ class ListLoadBalancersRequest:
     def member_device_id(self, member_device_id):
         """Sets the member_device_id of this ListLoadBalancersRequest.
 
+        后端云服务器对应的弹性云服务器的ID。
 
         :param member_device_id: The member_device_id of this ListLoadBalancersRequest.
         :type: list[str]
@@ -610,6 +652,7 @@ class ListLoadBalancersRequest:
     def name(self):
         """Gets the name of this ListLoadBalancersRequest.
 
+        负载均衡器名称。
 
         :return: The name of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -620,6 +663,7 @@ class ListLoadBalancersRequest:
     def name(self, name):
         """Sets the name of this ListLoadBalancersRequest.
 
+        负载均衡器名称。
 
         :param name: The name of this ListLoadBalancersRequest.
         :type: list[str]
@@ -630,6 +674,7 @@ class ListLoadBalancersRequest:
     def operating_status(self):
         """Gets the operating_status of this ListLoadBalancersRequest.
 
+        负载均衡器的操作状态。 可以为：ONLINE、OFFLINE、DEGRADED、DISABLED或NO_MONITOR。 说明 该字段为预留字段，暂未启用。
 
         :return: The operating_status of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -640,6 +685,7 @@ class ListLoadBalancersRequest:
     def operating_status(self, operating_status):
         """Sets the operating_status of this ListLoadBalancersRequest.
 
+        负载均衡器的操作状态。 可以为：ONLINE、OFFLINE、DEGRADED、DISABLED或NO_MONITOR。 说明 该字段为预留字段，暂未启用。
 
         :param operating_status: The operating_status of this ListLoadBalancersRequest.
         :type: list[str]
@@ -650,6 +696,7 @@ class ListLoadBalancersRequest:
     def page_reverse(self):
         """Gets the page_reverse of this ListLoadBalancersRequest.
 
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。 使用说明：必须与limit一起使用。
 
         :return: The page_reverse of this ListLoadBalancersRequest.
         :rtype: bool
@@ -660,6 +707,7 @@ class ListLoadBalancersRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListLoadBalancersRequest.
 
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。 使用说明：必须与limit一起使用。
 
         :param page_reverse: The page_reverse of this ListLoadBalancersRequest.
         :type: bool
@@ -670,6 +718,7 @@ class ListLoadBalancersRequest:
     def provisioning_status(self):
         """Gets the provisioning_status of this ListLoadBalancersRequest.
 
+        负载均衡器的配置状态。 可以为：ACTIVE、PENDING_CREATE 或者ERROR。 说明 该字段为预留字段，暂未启用。
 
         :return: The provisioning_status of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -680,6 +729,7 @@ class ListLoadBalancersRequest:
     def provisioning_status(self, provisioning_status):
         """Sets the provisioning_status of this ListLoadBalancersRequest.
 
+        负载均衡器的配置状态。 可以为：ACTIVE、PENDING_CREATE 或者ERROR。 说明 该字段为预留字段，暂未启用。
 
         :param provisioning_status: The provisioning_status of this ListLoadBalancersRequest.
         :type: list[str]
@@ -690,6 +740,7 @@ class ListLoadBalancersRequest:
     def publicips(self):
         """Gets the publicips of this ListLoadBalancersRequest.
 
+        公网IP 示例如下：  \"publicips\": [             {                 \"publicip_id\": \"a6ded276-c88a-4c58-95e0-5b6d1d2297b3\",                 \"publicip_address\": \"2001:db8:a583:86:cf24:5cc5:8117:6eaa\",                 \"publicip_ip_version\": 6             }         ] 查询时指定：publicips=publicip_id=XXXX,YYYY
 
         :return: The publicips of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -700,6 +751,7 @@ class ListLoadBalancersRequest:
     def publicips(self, publicips):
         """Sets the publicips of this ListLoadBalancersRequest.
 
+        公网IP 示例如下：  \"publicips\": [             {                 \"publicip_id\": \"a6ded276-c88a-4c58-95e0-5b6d1d2297b3\",                 \"publicip_address\": \"2001:db8:a583:86:cf24:5cc5:8117:6eaa\",                 \"publicip_ip_version\": 6             }         ] 查询时指定：publicips=publicip_id=XXXX,YYYY
 
         :param publicips: The publicips of this ListLoadBalancersRequest.
         :type: list[str]
@@ -710,6 +762,7 @@ class ListLoadBalancersRequest:
     def vip_address(self):
         """Gets the vip_address of this ListLoadBalancersRequest.
 
+        负载均衡器的虚拟IP。
 
         :return: The vip_address of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -720,6 +773,7 @@ class ListLoadBalancersRequest:
     def vip_address(self, vip_address):
         """Sets the vip_address of this ListLoadBalancersRequest.
 
+        负载均衡器的虚拟IP。
 
         :param vip_address: The vip_address of this ListLoadBalancersRequest.
         :type: list[str]
@@ -730,6 +784,7 @@ class ListLoadBalancersRequest:
     def vip_port_id(self):
         """Gets the vip_port_id of this ListLoadBalancersRequest.
 
+        负载均衡器虚拟IP对应的端口ID。
 
         :return: The vip_port_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -740,6 +795,7 @@ class ListLoadBalancersRequest:
     def vip_port_id(self, vip_port_id):
         """Sets the vip_port_id of this ListLoadBalancersRequest.
 
+        负载均衡器虚拟IP对应的端口ID。
 
         :param vip_port_id: The vip_port_id of this ListLoadBalancersRequest.
         :type: list[str]
@@ -750,6 +806,7 @@ class ListLoadBalancersRequest:
     def vip_subnet_cidr_id(self):
         """Gets the vip_subnet_cidr_id of this ListLoadBalancersRequest.
 
+        负载均衡器所在的子网ID，仅支持内网类型。 说明：vpc_id , vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空。
 
         :return: The vip_subnet_cidr_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -760,6 +817,7 @@ class ListLoadBalancersRequest:
     def vip_subnet_cidr_id(self, vip_subnet_cidr_id):
         """Sets the vip_subnet_cidr_id of this ListLoadBalancersRequest.
 
+        负载均衡器所在的子网ID，仅支持内网类型。 说明：vpc_id , vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空。
 
         :param vip_subnet_cidr_id: The vip_subnet_cidr_id of this ListLoadBalancersRequest.
         :type: list[str]
@@ -770,6 +828,7 @@ class ListLoadBalancersRequest:
     def vpc_id(self):
         """Gets the vpc_id of this ListLoadBalancersRequest.
 
+        实例对应的vpc属性。 若无，则从vip_subnet_cidr_id获取。  说明：vpc_id , vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空。
 
         :return: The vpc_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -780,6 +839,7 @@ class ListLoadBalancersRequest:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this ListLoadBalancersRequest.
 
+        实例对应的vpc属性。 若无，则从vip_subnet_cidr_id获取。  说明：vpc_id , vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空。
 
         :param vpc_id: The vpc_id of this ListLoadBalancersRequest.
         :type: list[str]

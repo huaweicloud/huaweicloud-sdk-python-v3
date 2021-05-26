@@ -48,6 +48,7 @@ class DeletePublicipTagRequest:
     def publicip_id(self):
         """Gets the publicip_id of this DeletePublicipTagRequest.
 
+        弹性公网IP的id
 
         :return: The publicip_id of this DeletePublicipTagRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeletePublicipTagRequest:
     def publicip_id(self, publicip_id):
         """Sets the publicip_id of this DeletePublicipTagRequest.
 
+        弹性公网IP的id
 
         :param publicip_id: The publicip_id of this DeletePublicipTagRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeletePublicipTagRequest:
     def key(self):
         """Gets the key of this DeletePublicipTagRequest.
 
+        标签的键
 
         :return: The key of this DeletePublicipTagRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeletePublicipTagRequest:
     def key(self, key):
         """Sets the key of this DeletePublicipTagRequest.
 
+        标签的键
 
         :param key: The key of this DeletePublicipTagRequest.
         :type: str

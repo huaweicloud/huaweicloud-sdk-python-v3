@@ -62,7 +62,8 @@ class ListEnterpriseProjectRequest:
             self.limit = limit
         if name is not None:
             self.name = name
-        self.offset = offset
+        if offset is not None:
+            self.offset = offset
         if sort_dir is not None:
             self.sort_dir = sort_dir
         if sort_key is not None:
@@ -74,6 +75,7 @@ class ListEnterpriseProjectRequest:
     def id(self):
         """Gets the id of this ListEnterpriseProjectRequest.
 
+        企业项目ID，0表示默认企业项目
 
         :return: The id of this ListEnterpriseProjectRequest.
         :rtype: str
@@ -84,6 +86,7 @@ class ListEnterpriseProjectRequest:
     def id(self, id):
         """Sets the id of this ListEnterpriseProjectRequest.
 
+        企业项目ID，0表示默认企业项目
 
         :param id: The id of this ListEnterpriseProjectRequest.
         :type: str
@@ -94,6 +97,7 @@ class ListEnterpriseProjectRequest:
     def limit(self):
         """Gets the limit of this ListEnterpriseProjectRequest.
 
+        查询记录数默认为1000，limit最多为1000, 最小值为1
 
         :return: The limit of this ListEnterpriseProjectRequest.
         :rtype: int
@@ -104,6 +108,7 @@ class ListEnterpriseProjectRequest:
     def limit(self, limit):
         """Sets the limit of this ListEnterpriseProjectRequest.
 
+        查询记录数默认为1000，limit最多为1000, 最小值为1
 
         :param limit: The limit of this ListEnterpriseProjectRequest.
         :type: int
@@ -114,6 +119,7 @@ class ListEnterpriseProjectRequest:
     def name(self):
         """Gets the name of this ListEnterpriseProjectRequest.
 
+        企业项目名称，支持模糊搜索
 
         :return: The name of this ListEnterpriseProjectRequest.
         :rtype: str
@@ -124,6 +130,7 @@ class ListEnterpriseProjectRequest:
     def name(self, name):
         """Sets the name of this ListEnterpriseProjectRequest.
 
+        企业项目名称，支持模糊搜索
 
         :param name: The name of this ListEnterpriseProjectRequest.
         :type: str
@@ -134,6 +141,7 @@ class ListEnterpriseProjectRequest:
     def offset(self):
         """Gets the offset of this ListEnterpriseProjectRequest.
 
+        索引位置，从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0
 
         :return: The offset of this ListEnterpriseProjectRequest.
         :rtype: int
@@ -144,6 +152,7 @@ class ListEnterpriseProjectRequest:
     def offset(self, offset):
         """Sets the offset of this ListEnterpriseProjectRequest.
 
+        索引位置，从offset指定的下一条数据开始查询，必须为数字，不能为负数，默认为0
 
         :param offset: The offset of this ListEnterpriseProjectRequest.
         :type: int
@@ -154,6 +163,7 @@ class ListEnterpriseProjectRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListEnterpriseProjectRequest.
 
+        降序或升序,默认为“desc” 。desc表示降序 。asc 表示升序
 
         :return: The sort_dir of this ListEnterpriseProjectRequest.
         :rtype: str
@@ -164,6 +174,7 @@ class ListEnterpriseProjectRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListEnterpriseProjectRequest.
 
+        降序或升序,默认为“desc” 。desc表示降序 。asc 表示升序
 
         :param sort_dir: The sort_dir of this ListEnterpriseProjectRequest.
         :type: str
@@ -174,6 +185,7 @@ class ListEnterpriseProjectRequest:
     def sort_key(self):
         """Gets the sort_key of this ListEnterpriseProjectRequest.
 
+        返回结果按该关键字排序（支持updated_at等关键字，默认为“created_at”）
 
         :return: The sort_key of this ListEnterpriseProjectRequest.
         :rtype: str
@@ -184,6 +196,7 @@ class ListEnterpriseProjectRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListEnterpriseProjectRequest.
 
+        返回结果按该关键字排序（支持updated_at等关键字，默认为“created_at”）
 
         :param sort_key: The sort_key of this ListEnterpriseProjectRequest.
         :type: str
@@ -194,6 +207,7 @@ class ListEnterpriseProjectRequest:
     def status(self):
         """Gets the status of this ListEnterpriseProjectRequest.
 
+        企业项目状态。 1--启用，2--停用
 
         :return: The status of this ListEnterpriseProjectRequest.
         :rtype: int
@@ -204,6 +218,7 @@ class ListEnterpriseProjectRequest:
     def status(self, status):
         """Sets the status of this ListEnterpriseProjectRequest.
 
+        企业项目状态。 1--启用，2--停用
 
         :param status: The status of this ListEnterpriseProjectRequest.
         :type: int

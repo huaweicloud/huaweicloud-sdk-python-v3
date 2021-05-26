@@ -35,7 +35,7 @@ class ShowCertificateResponse(SdkResponse):
     def __init__(self, request_id=None, certificate=None):
         """ShowCertificateResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowCertificateResponse, self).__init__()
 
         self._request_id = None
         self._certificate = None

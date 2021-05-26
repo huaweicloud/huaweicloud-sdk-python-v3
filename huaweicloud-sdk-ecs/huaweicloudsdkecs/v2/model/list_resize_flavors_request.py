@@ -75,6 +75,7 @@ class ListResizeFlavorsRequest:
     def instance_uuid(self):
         """Gets the instance_uuid of this ListResizeFlavorsRequest.
 
+        进行规格切换的云服务器ID，UUID格式。
 
         :return: The instance_uuid of this ListResizeFlavorsRequest.
         :rtype: str
@@ -85,6 +86,7 @@ class ListResizeFlavorsRequest:
     def instance_uuid(self, instance_uuid):
         """Sets the instance_uuid of this ListResizeFlavorsRequest.
 
+        进行规格切换的云服务器ID，UUID格式。
 
         :param instance_uuid: The instance_uuid of this ListResizeFlavorsRequest.
         :type: str
@@ -95,6 +97,7 @@ class ListResizeFlavorsRequest:
     def limit(self):
         """Gets the limit of this ListResizeFlavorsRequest.
 
+        单页面可显示的flavor条数最大值，默认是1000。
 
         :return: The limit of this ListResizeFlavorsRequest.
         :rtype: int
@@ -105,6 +108,7 @@ class ListResizeFlavorsRequest:
     def limit(self, limit):
         """Sets the limit of this ListResizeFlavorsRequest.
 
+        单页面可显示的flavor条数最大值，默认是1000。
 
         :param limit: The limit of this ListResizeFlavorsRequest.
         :type: int
@@ -115,6 +119,7 @@ class ListResizeFlavorsRequest:
     def marker(self):
         """Gets the marker of this ListResizeFlavorsRequest.
 
+        以单页最后一条flavor的ID作为分页标记。
 
         :return: The marker of this ListResizeFlavorsRequest.
         :rtype: str
@@ -125,6 +130,7 @@ class ListResizeFlavorsRequest:
     def marker(self, marker):
         """Sets the marker of this ListResizeFlavorsRequest.
 
+        以单页最后一条flavor的ID作为分页标记。
 
         :param marker: The marker of this ListResizeFlavorsRequest.
         :type: str
@@ -135,6 +141,7 @@ class ListResizeFlavorsRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListResizeFlavorsRequest.
 
+        升序/降序排序，默认值为：asc。  取值范围：  - asc：表示升序。 - desc：表示降序
 
         :return: The sort_dir of this ListResizeFlavorsRequest.
         :rtype: str
@@ -145,6 +152,7 @@ class ListResizeFlavorsRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListResizeFlavorsRequest.
 
+        升序/降序排序，默认值为：asc。  取值范围：  - asc：表示升序。 - desc：表示降序
 
         :param sort_dir: The sort_dir of this ListResizeFlavorsRequest.
         :type: str
@@ -155,6 +163,7 @@ class ListResizeFlavorsRequest:
     def sort_key(self):
         """Gets the sort_key of this ListResizeFlavorsRequest.
 
+        排序字段。  key的取值范围：  - flavorid：表示规格ID。 - sort_key的默认值为“flavorid”。 - name：表示规格名称。 - memory_mb：表示内存大小。 - vcpus：表示CPU大小。 - root_gb：表示系统盘大小。
 
         :return: The sort_key of this ListResizeFlavorsRequest.
         :rtype: str
@@ -165,6 +174,7 @@ class ListResizeFlavorsRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListResizeFlavorsRequest.
 
+        排序字段。  key的取值范围：  - flavorid：表示规格ID。 - sort_key的默认值为“flavorid”。 - name：表示规格名称。 - memory_mb：表示内存大小。 - vcpus：表示CPU大小。 - root_gb：表示系统盘大小。
 
         :param sort_key: The sort_key of this ListResizeFlavorsRequest.
         :type: str
@@ -175,6 +185,7 @@ class ListResizeFlavorsRequest:
     def source_flavor_id(self):
         """Gets the source_flavor_id of this ListResizeFlavorsRequest.
 
+        进行规格切换的云服务器源规格ID。
 
         :return: The source_flavor_id of this ListResizeFlavorsRequest.
         :rtype: str
@@ -185,6 +196,7 @@ class ListResizeFlavorsRequest:
     def source_flavor_id(self, source_flavor_id):
         """Sets the source_flavor_id of this ListResizeFlavorsRequest.
 
+        进行规格切换的云服务器源规格ID。
 
         :param source_flavor_id: The source_flavor_id of this ListResizeFlavorsRequest.
         :type: str
@@ -195,6 +207,7 @@ class ListResizeFlavorsRequest:
     def source_flavor_name(self):
         """Gets the source_flavor_name of this ListResizeFlavorsRequest.
 
+        进行规格切换的云服务器源规格名称。
 
         :return: The source_flavor_name of this ListResizeFlavorsRequest.
         :rtype: str
@@ -205,6 +218,7 @@ class ListResizeFlavorsRequest:
     def source_flavor_name(self, source_flavor_name):
         """Sets the source_flavor_name of this ListResizeFlavorsRequest.
 
+        进行规格切换的云服务器源规格名称。
 
         :param source_flavor_name: The source_flavor_name of this ListResizeFlavorsRequest.
         :type: str

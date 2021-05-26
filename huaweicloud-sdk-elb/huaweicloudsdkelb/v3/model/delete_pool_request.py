@@ -44,6 +44,7 @@ class DeletePoolRequest:
     def pool_id(self):
         """Gets the pool_id of this DeletePoolRequest.
 
+        后端服务器组ID。
 
         :return: The pool_id of this DeletePoolRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeletePoolRequest:
     def pool_id(self, pool_id):
         """Sets the pool_id of this DeletePoolRequest.
 
+        后端服务器组ID。
 
         :param pool_id: The pool_id of this DeletePoolRequest.
         :type: str

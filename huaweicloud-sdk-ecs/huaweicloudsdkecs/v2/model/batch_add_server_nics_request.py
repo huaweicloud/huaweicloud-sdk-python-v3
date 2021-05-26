@@ -49,6 +49,7 @@ class BatchAddServerNicsRequest:
     def server_id(self):
         """Gets the server_id of this BatchAddServerNicsRequest.
 
+        云服务器ID。
 
         :return: The server_id of this BatchAddServerNicsRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class BatchAddServerNicsRequest:
     def server_id(self, server_id):
         """Sets the server_id of this BatchAddServerNicsRequest.
 
+        云服务器ID。
 
         :param server_id: The server_id of this BatchAddServerNicsRequest.
         :type: str

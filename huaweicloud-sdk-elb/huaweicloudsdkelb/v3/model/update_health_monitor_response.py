@@ -35,7 +35,7 @@ class UpdateHealthMonitorResponse(SdkResponse):
     def __init__(self, request_id=None, healthmonitor=None):
         """UpdateHealthMonitorResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateHealthMonitorResponse, self).__init__()
 
         self._request_id = None
         self._healthmonitor = None

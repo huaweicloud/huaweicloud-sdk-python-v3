@@ -33,7 +33,7 @@ class ShowEnterpriseProjectResponse(SdkResponse):
     def __init__(self, enterprise_project=None):
         """ShowEnterpriseProjectResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowEnterpriseProjectResponse, self).__init__()
 
         self._enterprise_project = None
         self.discriminator = None

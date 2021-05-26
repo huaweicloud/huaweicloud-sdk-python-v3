@@ -33,7 +33,7 @@ class CinderListQuotasResponse(SdkResponse):
     def __init__(self, quota_set=None):
         """CinderListQuotasResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CinderListQuotasResponse, self).__init__()
 
         self._quota_set = None
         self.discriminator = None

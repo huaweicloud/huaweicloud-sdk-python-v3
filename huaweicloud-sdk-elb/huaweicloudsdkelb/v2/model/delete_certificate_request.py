@@ -44,6 +44,7 @@ class DeleteCertificateRequest:
     def certificate_id(self):
         """Gets the certificate_id of this DeleteCertificateRequest.
 
+        SSL证书ID
 
         :return: The certificate_id of this DeleteCertificateRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteCertificateRequest:
     def certificate_id(self, certificate_id):
         """Sets the certificate_id of this DeleteCertificateRequest.
 
+        SSL证书ID
 
         :param certificate_id: The certificate_id of this DeleteCertificateRequest.
         :type: str

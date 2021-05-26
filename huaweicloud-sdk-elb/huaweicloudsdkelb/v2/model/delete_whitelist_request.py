@@ -44,6 +44,7 @@ class DeleteWhitelistRequest:
     def whitelist_id(self):
         """Gets the whitelist_id of this DeleteWhitelistRequest.
 
+        白名单id
 
         :return: The whitelist_id of this DeleteWhitelistRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteWhitelistRequest:
     def whitelist_id(self, whitelist_id):
         """Sets the whitelist_id of this DeleteWhitelistRequest.
 
+        白名单id
 
         :param whitelist_id: The whitelist_id of this DeleteWhitelistRequest.
         :type: str

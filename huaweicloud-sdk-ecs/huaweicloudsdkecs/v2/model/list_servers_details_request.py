@@ -90,6 +90,7 @@ class ListServersDetailsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListServersDetailsRequest.
 
+        查询绑定某个企业项目的弹性云服务器。  若需要查询当前用户所有企业项目绑定的弹性云服务，请传参all_granted_eps。
 
         :return: The enterprise_project_id of this ListServersDetailsRequest.
         :rtype: str
@@ -100,6 +101,7 @@ class ListServersDetailsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListServersDetailsRequest.
 
+        查询绑定某个企业项目的弹性云服务器。  若需要查询当前用户所有企业项目绑定的弹性云服务，请传参all_granted_eps。
 
         :param enterprise_project_id: The enterprise_project_id of this ListServersDetailsRequest.
         :type: str
@@ -110,6 +112,7 @@ class ListServersDetailsRequest:
     def flavor(self):
         """Gets the flavor of this ListServersDetailsRequest.
 
+        云服务器规格ID,已上线的规格请参见《弹性云服务器用户指南》的“实例和应用场景”章节。
 
         :return: The flavor of this ListServersDetailsRequest.
         :rtype: str
@@ -120,6 +123,7 @@ class ListServersDetailsRequest:
     def flavor(self, flavor):
         """Sets the flavor of this ListServersDetailsRequest.
 
+        云服务器规格ID,已上线的规格请参见《弹性云服务器用户指南》的“实例和应用场景”章节。
 
         :param flavor: The flavor of this ListServersDetailsRequest.
         :type: str
@@ -130,6 +134,7 @@ class ListServersDetailsRequest:
     def ip(self):
         """Gets the ip of this ListServersDetailsRequest.
 
+        IPv4地址过滤结果，匹配规则为模糊匹配。
 
         :return: The ip of this ListServersDetailsRequest.
         :rtype: str
@@ -140,6 +145,7 @@ class ListServersDetailsRequest:
     def ip(self, ip):
         """Sets the ip of this ListServersDetailsRequest.
 
+        IPv4地址过滤结果，匹配规则为模糊匹配。
 
         :param ip: The ip of this ListServersDetailsRequest.
         :type: str
@@ -150,6 +156,7 @@ class ListServersDetailsRequest:
     def limit(self):
         """Gets the limit of this ListServersDetailsRequest.
 
+        查询返回云服务器当前页面的大小。每页最多返回1000台云服务器的信息。
 
         :return: The limit of this ListServersDetailsRequest.
         :rtype: int
@@ -160,6 +167,7 @@ class ListServersDetailsRequest:
     def limit(self, limit):
         """Sets the limit of this ListServersDetailsRequest.
 
+        查询返回云服务器当前页面的大小。每页最多返回1000台云服务器的信息。
 
         :param limit: The limit of this ListServersDetailsRequest.
         :type: int
@@ -170,6 +178,7 @@ class ListServersDetailsRequest:
     def name(self):
         """Gets the name of this ListServersDetailsRequest.
 
+        云服务器名称，匹配规则为模糊匹配。
 
         :return: The name of this ListServersDetailsRequest.
         :rtype: str
@@ -180,6 +189,7 @@ class ListServersDetailsRequest:
     def name(self, name):
         """Sets the name of this ListServersDetailsRequest.
 
+        云服务器名称，匹配规则为模糊匹配。
 
         :param name: The name of this ListServersDetailsRequest.
         :type: str
@@ -190,6 +200,7 @@ class ListServersDetailsRequest:
     def not_tags(self):
         """Gets the not_tags of this ListServersDetailsRequest.
 
+        查询tag字段中不包含该值的云服务器。
 
         :return: The not_tags of this ListServersDetailsRequest.
         :rtype: str
@@ -200,6 +211,7 @@ class ListServersDetailsRequest:
     def not_tags(self, not_tags):
         """Sets the not_tags of this ListServersDetailsRequest.
 
+        查询tag字段中不包含该值的云服务器。
 
         :param not_tags: The not_tags of this ListServersDetailsRequest.
         :type: str
@@ -210,6 +222,7 @@ class ListServersDetailsRequest:
     def offset(self):
         """Gets the offset of this ListServersDetailsRequest.
 
+        页码。 当前页面数，默认为1。  取值大于等于0，取值为0时返回第1页。
 
         :return: The offset of this ListServersDetailsRequest.
         :rtype: int
@@ -220,6 +233,7 @@ class ListServersDetailsRequest:
     def offset(self, offset):
         """Sets the offset of this ListServersDetailsRequest.
 
+        页码。 当前页面数，默认为1。  取值大于等于0，取值为0时返回第1页。
 
         :param offset: The offset of this ListServersDetailsRequest.
         :type: int
@@ -230,6 +244,7 @@ class ListServersDetailsRequest:
     def reservation_id(self):
         """Gets the reservation_id of this ListServersDetailsRequest.
 
+        批量创建弹性云服务器时，指定返回的ID，用于查询本次批量创建的弹性云服务器。
 
         :return: The reservation_id of this ListServersDetailsRequest.
         :rtype: str
@@ -240,6 +255,7 @@ class ListServersDetailsRequest:
     def reservation_id(self, reservation_id):
         """Sets the reservation_id of this ListServersDetailsRequest.
 
+        批量创建弹性云服务器时，指定返回的ID，用于查询本次批量创建的弹性云服务器。
 
         :param reservation_id: The reservation_id of this ListServersDetailsRequest.
         :type: str
@@ -250,6 +266,7 @@ class ListServersDetailsRequest:
     def status(self):
         """Gets the status of this ListServersDetailsRequest.
 
+        云服务器状态。  取值范围：  ACTIVE， BUILD，DELETED，ERROR，HARD_REBOOT，MIGRATING，REBOOT，RESIZE，REVERT_RESIZE，SHELVED，SHELVED_OFFLOADED，SHUTOFF，UNKNOWN，VERIFY_RESIZE  只有管理员可以使用“deleted”状态过滤查询已经删除的弹性云服务器。
 
         :return: The status of this ListServersDetailsRequest.
         :rtype: str
@@ -260,6 +277,7 @@ class ListServersDetailsRequest:
     def status(self, status):
         """Sets the status of this ListServersDetailsRequest.
 
+        云服务器状态。  取值范围：  ACTIVE， BUILD，DELETED，ERROR，HARD_REBOOT，MIGRATING，REBOOT，RESIZE，REVERT_RESIZE，SHELVED，SHELVED_OFFLOADED，SHUTOFF，UNKNOWN，VERIFY_RESIZE  只有管理员可以使用“deleted”状态过滤查询已经删除的弹性云服务器。
 
         :param status: The status of this ListServersDetailsRequest.
         :type: str
@@ -270,6 +288,7 @@ class ListServersDetailsRequest:
     def tags(self):
         """Gets the tags of this ListServersDetailsRequest.
 
+        查询tag字段中包含该值的云服务器。
 
         :return: The tags of this ListServersDetailsRequest.
         :rtype: str
@@ -280,6 +299,7 @@ class ListServersDetailsRequest:
     def tags(self, tags):
         """Sets the tags of this ListServersDetailsRequest.
 
+        查询tag字段中包含该值的云服务器。
 
         :param tags: The tags of this ListServersDetailsRequest.
         :type: str

@@ -49,6 +49,7 @@ class UpdateServerAutoTerminateTimeRequest:
     def server_id(self):
         """Gets the server_id of this UpdateServerAutoTerminateTimeRequest.
 
+        云服务器ID。
 
         :return: The server_id of this UpdateServerAutoTerminateTimeRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateServerAutoTerminateTimeRequest:
     def server_id(self, server_id):
         """Sets the server_id of this UpdateServerAutoTerminateTimeRequest.
 
+        云服务器ID。
 
         :param server_id: The server_id of this UpdateServerAutoTerminateTimeRequest.
         :type: str

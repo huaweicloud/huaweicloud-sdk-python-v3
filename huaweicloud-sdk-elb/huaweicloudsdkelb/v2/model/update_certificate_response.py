@@ -55,7 +55,7 @@ class UpdateCertificateResponse(SdkResponse):
     def __init__(self, id=None, tenant_id=None, admin_state_up=None, name=None, description=None, type=None, domain=None, private_key=None, certificate=None, expire_time=None, create_time=None, update_time=None):
         """UpdateCertificateResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateCertificateResponse, self).__init__()
 
         self._id = None
         self._tenant_id = None

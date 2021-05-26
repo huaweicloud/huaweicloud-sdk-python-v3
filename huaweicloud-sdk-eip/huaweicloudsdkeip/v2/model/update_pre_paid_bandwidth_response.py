@@ -35,7 +35,7 @@ class UpdatePrePaidBandwidthResponse(SdkResponse):
     def __init__(self, bandwidth=None, order_id=None):
         """UpdatePrePaidBandwidthResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdatePrePaidBandwidthResponse, self).__init__()
 
         self._bandwidth = None
         self._order_id = None

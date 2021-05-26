@@ -53,6 +53,7 @@ class UpdateMemberRequest:
     def member_id(self):
         """Gets the member_id of this UpdateMemberRequest.
 
+        后端服务器ID。
 
         :return: The member_id of this UpdateMemberRequest.
         :rtype: str
@@ -63,6 +64,7 @@ class UpdateMemberRequest:
     def member_id(self, member_id):
         """Sets the member_id of this UpdateMemberRequest.
 
+        后端服务器ID。
 
         :param member_id: The member_id of this UpdateMemberRequest.
         :type: str
@@ -73,6 +75,7 @@ class UpdateMemberRequest:
     def pool_id(self):
         """Gets the pool_id of this UpdateMemberRequest.
 
+        后端服务器组ID。
 
         :return: The pool_id of this UpdateMemberRequest.
         :rtype: str
@@ -83,6 +86,7 @@ class UpdateMemberRequest:
     def pool_id(self, pool_id):
         """Sets the pool_id of this UpdateMemberRequest.
 
+        后端服务器组ID。
 
         :param pool_id: The pool_id of this UpdateMemberRequest.
         :type: str

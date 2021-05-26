@@ -35,7 +35,7 @@ class CountPreoccupyIpNumResponse(SdkResponse):
     def __init__(self, preoccupy_ip=None, request_id=None):
         """CountPreoccupyIpNumResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CountPreoccupyIpNumResponse, self).__init__()
 
         self._preoccupy_ip = None
         self._request_id = None

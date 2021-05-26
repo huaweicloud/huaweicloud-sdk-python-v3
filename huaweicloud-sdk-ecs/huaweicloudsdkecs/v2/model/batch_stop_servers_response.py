@@ -33,7 +33,7 @@ class BatchStopServersResponse(SdkResponse):
     def __init__(self, job_id=None):
         """BatchStopServersResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchStopServersResponse, self).__init__()
 
         self._job_id = None
         self.discriminator = None

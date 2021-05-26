@@ -49,6 +49,7 @@ class AddServerGroupMemberRequest:
     def server_group_id(self):
         """Gets the server_group_id of this AddServerGroupMemberRequest.
 
+        云服务器组ID。
 
         :return: The server_group_id of this AddServerGroupMemberRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class AddServerGroupMemberRequest:
     def server_group_id(self, server_group_id):
         """Sets the server_group_id of this AddServerGroupMemberRequest.
 
+        云服务器组ID。
 
         :param server_group_id: The server_group_id of this AddServerGroupMemberRequest.
         :type: str

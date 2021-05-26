@@ -105,6 +105,7 @@ class ListPoolsRequest:
     def limit(self):
         """Gets the limit of this ListPoolsRequest.
 
+        分页查询中每页的监听器个数
 
         :return: The limit of this ListPoolsRequest.
         :rtype: int
@@ -115,6 +116,7 @@ class ListPoolsRequest:
     def limit(self, limit):
         """Sets the limit of this ListPoolsRequest.
 
+        分页查询中每页的监听器个数
 
         :param limit: The limit of this ListPoolsRequest.
         :type: int
@@ -125,6 +127,7 @@ class ListPoolsRequest:
     def marker(self):
         """Gets the marker of this ListPoolsRequest.
 
+        分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
 
         :return: The marker of this ListPoolsRequest.
         :rtype: str
@@ -135,6 +138,7 @@ class ListPoolsRequest:
     def marker(self, marker):
         """Sets the marker of this ListPoolsRequest.
 
+        分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
 
         :param marker: The marker of this ListPoolsRequest.
         :type: str
@@ -145,6 +149,7 @@ class ListPoolsRequest:
     def page_reverse(self):
         """Gets the page_reverse of this ListPoolsRequest.
 
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
         :return: The page_reverse of this ListPoolsRequest.
         :rtype: bool
@@ -155,6 +160,7 @@ class ListPoolsRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListPoolsRequest.
 
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
         :param page_reverse: The page_reverse of this ListPoolsRequest.
         :type: bool
@@ -165,6 +171,7 @@ class ListPoolsRequest:
     def id(self):
         """Gets the id of this ListPoolsRequest.
 
+        后端云服务器组ID。
 
         :return: The id of this ListPoolsRequest.
         :rtype: str
@@ -175,6 +182,7 @@ class ListPoolsRequest:
     def id(self, id):
         """Sets the id of this ListPoolsRequest.
 
+        后端云服务器组ID。
 
         :param id: The id of this ListPoolsRequest.
         :type: str
@@ -185,6 +193,7 @@ class ListPoolsRequest:
     def name(self):
         """Gets the name of this ListPoolsRequest.
 
+        后端云服务器组名称。
 
         :return: The name of this ListPoolsRequest.
         :rtype: str
@@ -195,6 +204,7 @@ class ListPoolsRequest:
     def name(self, name):
         """Sets the name of this ListPoolsRequest.
 
+        后端云服务器组名称。
 
         :param name: The name of this ListPoolsRequest.
         :type: str
@@ -205,6 +215,7 @@ class ListPoolsRequest:
     def description(self):
         """Gets the description of this ListPoolsRequest.
 
+        后端云服务器组的描述信息。
 
         :return: The description of this ListPoolsRequest.
         :rtype: str
@@ -215,6 +226,7 @@ class ListPoolsRequest:
     def description(self, description):
         """Sets the description of this ListPoolsRequest.
 
+        后端云服务器组的描述信息。
 
         :param description: The description of this ListPoolsRequest.
         :type: str
@@ -225,6 +237,7 @@ class ListPoolsRequest:
     def healthmonitor_id(self):
         """Gets the healthmonitor_id of this ListPoolsRequest.
 
+        后端云服务器组关联的健康检查的ID。
 
         :return: The healthmonitor_id of this ListPoolsRequest.
         :rtype: str
@@ -235,6 +248,7 @@ class ListPoolsRequest:
     def healthmonitor_id(self, healthmonitor_id):
         """Sets the healthmonitor_id of this ListPoolsRequest.
 
+        后端云服务器组关联的健康检查的ID。
 
         :param healthmonitor_id: The healthmonitor_id of this ListPoolsRequest.
         :type: str
@@ -245,6 +259,7 @@ class ListPoolsRequest:
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this ListPoolsRequest.
 
+        后端云服务器组关联的负载均衡器ID。
 
         :return: The loadbalancer_id of this ListPoolsRequest.
         :rtype: str
@@ -255,6 +270,7 @@ class ListPoolsRequest:
     def loadbalancer_id(self, loadbalancer_id):
         """Sets the loadbalancer_id of this ListPoolsRequest.
 
+        后端云服务器组关联的负载均衡器ID。
 
         :param loadbalancer_id: The loadbalancer_id of this ListPoolsRequest.
         :type: str
@@ -265,6 +281,7 @@ class ListPoolsRequest:
     def protocol(self):
         """Gets the protocol of this ListPoolsRequest.
 
+        后端云服务器组的后端协议。支持TCP、UDP和HTTP。
 
         :return: The protocol of this ListPoolsRequest.
         :rtype: str
@@ -275,6 +292,7 @@ class ListPoolsRequest:
     def protocol(self, protocol):
         """Sets the protocol of this ListPoolsRequest.
 
+        后端云服务器组的后端协议。支持TCP、UDP和HTTP。
 
         :param protocol: The protocol of this ListPoolsRequest.
         :type: str
@@ -285,6 +303,7 @@ class ListPoolsRequest:
     def lb_algorithm(self):
         """Gets the lb_algorithm of this ListPoolsRequest.
 
+        后端云服务器组的负载均衡算法。取值范围：ROUND_ROBIN：加权轮询算法。LEAST_CONNECTIONS：加权最少连接算法。SOURCE_IP：源IP算法。当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
 
         :return: The lb_algorithm of this ListPoolsRequest.
         :rtype: str
@@ -295,6 +314,7 @@ class ListPoolsRequest:
     def lb_algorithm(self, lb_algorithm):
         """Sets the lb_algorithm of this ListPoolsRequest.
 
+        后端云服务器组的负载均衡算法。取值范围：ROUND_ROBIN：加权轮询算法。LEAST_CONNECTIONS：加权最少连接算法。SOURCE_IP：源IP算法。当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
 
         :param lb_algorithm: The lb_algorithm of this ListPoolsRequest.
         :type: str
@@ -305,6 +325,7 @@ class ListPoolsRequest:
     def member_address(self):
         """Gets the member_address of this ListPoolsRequest.
 
+        后端云服务器组关联的后端云服务器IP。
 
         :return: The member_address of this ListPoolsRequest.
         :rtype: str
@@ -315,6 +336,7 @@ class ListPoolsRequest:
     def member_address(self, member_address):
         """Sets the member_address of this ListPoolsRequest.
 
+        后端云服务器组关联的后端云服务器IP。
 
         :param member_address: The member_address of this ListPoolsRequest.
         :type: str
@@ -325,6 +347,7 @@ class ListPoolsRequest:
     def member_device_id(self):
         """Gets the member_device_id of this ListPoolsRequest.
 
+        后端云服务器组关联的后端云服务器对应的弹性云服务器的ID。
 
         :return: The member_device_id of this ListPoolsRequest.
         :rtype: str
@@ -335,6 +358,7 @@ class ListPoolsRequest:
     def member_device_id(self, member_device_id):
         """Sets the member_device_id of this ListPoolsRequest.
 
+        后端云服务器组关联的后端云服务器对应的弹性云服务器的ID。
 
         :param member_device_id: The member_device_id of this ListPoolsRequest.
         :type: str
@@ -345,6 +369,7 @@ class ListPoolsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListPoolsRequest.
 
+        企业项目ID，仅用于基于企业项目的细粒度鉴权使用；如果参数中传递了loadbalancer_id，则用该负载均衡器对应企业项目ID鉴权；如果参数中没有传递loadbalancer_id，而传递了healthmonitor_id，则使用健康检查器对应的企业项目id鉴权。
 
         :return: The enterprise_project_id of this ListPoolsRequest.
         :rtype: str
@@ -355,6 +380,7 @@ class ListPoolsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListPoolsRequest.
 
+        企业项目ID，仅用于基于企业项目的细粒度鉴权使用；如果参数中传递了loadbalancer_id，则用该负载均衡器对应企业项目ID鉴权；如果参数中没有传递loadbalancer_id，而传递了healthmonitor_id，则使用健康检查器对应的企业项目id鉴权。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPoolsRequest.
         :type: str

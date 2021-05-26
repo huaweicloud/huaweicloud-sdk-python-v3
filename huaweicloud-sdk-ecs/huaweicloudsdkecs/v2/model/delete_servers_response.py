@@ -33,7 +33,7 @@ class DeleteServersResponse(SdkResponse):
     def __init__(self, job_id=None):
         """DeleteServersResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteServersResponse, self).__init__()
 
         self._job_id = None
         self.discriminator = None

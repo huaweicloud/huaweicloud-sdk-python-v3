@@ -35,7 +35,7 @@ class NovaListServersDetailsResponse(SdkResponse):
     def __init__(self, servers=None, servers_links=None):
         """NovaListServersDetailsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(NovaListServersDetailsResponse, self).__init__()
 
         self._servers = None
         self._servers_links = None

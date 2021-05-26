@@ -31,7 +31,7 @@ class BatchCreateServerTagsResponse(SdkResponse):
     def __init__(self):
         """BatchCreateServerTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchCreateServerTagsResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

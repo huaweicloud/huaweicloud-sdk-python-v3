@@ -31,7 +31,7 @@ class DeleteL7policyResponse(SdkResponse):
     def __init__(self):
         """DeleteL7policyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteL7policyResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

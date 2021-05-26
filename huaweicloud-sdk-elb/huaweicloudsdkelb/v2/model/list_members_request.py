@@ -94,6 +94,7 @@ class ListMembersRequest:
     def pool_id(self):
         """Gets the pool_id of this ListMembersRequest.
 
+        后端云服务器组id
 
         :return: The pool_id of this ListMembersRequest.
         :rtype: str
@@ -104,6 +105,7 @@ class ListMembersRequest:
     def pool_id(self, pool_id):
         """Sets the pool_id of this ListMembersRequest.
 
+        后端云服务器组id
 
         :param pool_id: The pool_id of this ListMembersRequest.
         :type: str
@@ -114,6 +116,7 @@ class ListMembersRequest:
     def limit(self):
         """Gets the limit of this ListMembersRequest.
 
+        分页查询中每页的监听器个数
 
         :return: The limit of this ListMembersRequest.
         :rtype: int
@@ -124,6 +127,7 @@ class ListMembersRequest:
     def limit(self, limit):
         """Sets the limit of this ListMembersRequest.
 
+        分页查询中每页的监听器个数
 
         :param limit: The limit of this ListMembersRequest.
         :type: int
@@ -134,6 +138,7 @@ class ListMembersRequest:
     def marker(self):
         """Gets the marker of this ListMembersRequest.
 
+        分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
 
         :return: The marker of this ListMembersRequest.
         :rtype: str
@@ -144,6 +149,7 @@ class ListMembersRequest:
     def marker(self, marker):
         """Sets the marker of this ListMembersRequest.
 
+        分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
 
         :param marker: The marker of this ListMembersRequest.
         :type: str
@@ -154,6 +160,7 @@ class ListMembersRequest:
     def page_reverse(self):
         """Gets the page_reverse of this ListMembersRequest.
 
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
         :return: The page_reverse of this ListMembersRequest.
         :rtype: bool
@@ -164,6 +171,7 @@ class ListMembersRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListMembersRequest.
 
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
 
         :param page_reverse: The page_reverse of this ListMembersRequest.
         :type: bool
@@ -174,6 +182,7 @@ class ListMembersRequest:
     def id(self):
         """Gets the id of this ListMembersRequest.
 
+        后端云服务器的ID。
 
         :return: The id of this ListMembersRequest.
         :rtype: str
@@ -184,6 +193,7 @@ class ListMembersRequest:
     def id(self, id):
         """Sets the id of this ListMembersRequest.
 
+        后端云服务器的ID。
 
         :param id: The id of this ListMembersRequest.
         :type: str
@@ -194,6 +204,7 @@ class ListMembersRequest:
     def name(self):
         """Gets the name of this ListMembersRequest.
 
+        后端云服务器的名称。
 
         :return: The name of this ListMembersRequest.
         :rtype: str
@@ -204,6 +215,7 @@ class ListMembersRequest:
     def name(self, name):
         """Sets the name of this ListMembersRequest.
 
+        后端云服务器的名称。
 
         :param name: The name of this ListMembersRequest.
         :type: str
@@ -214,6 +226,7 @@ class ListMembersRequest:
     def address(self):
         """Gets the address of this ListMembersRequest.
 
+        后端云服务器对应的IP地址。
 
         :return: The address of this ListMembersRequest.
         :rtype: str
@@ -224,6 +237,7 @@ class ListMembersRequest:
     def address(self, address):
         """Sets the address of this ListMembersRequest.
 
+        后端云服务器对应的IP地址。
 
         :param address: The address of this ListMembersRequest.
         :type: str
@@ -234,6 +248,7 @@ class ListMembersRequest:
     def protocol_port(self):
         """Gets the protocol_port of this ListMembersRequest.
 
+        后端云服务器后端端口的协议号。
 
         :return: The protocol_port of this ListMembersRequest.
         :rtype: int
@@ -244,6 +259,7 @@ class ListMembersRequest:
     def protocol_port(self, protocol_port):
         """Sets the protocol_port of this ListMembersRequest.
 
+        后端云服务器后端端口的协议号。
 
         :param protocol_port: The protocol_port of this ListMembersRequest.
         :type: int
@@ -254,6 +270,7 @@ class ListMembersRequest:
     def subnet_id(self):
         """Gets the subnet_id of this ListMembersRequest.
 
+        后端云服务器所在的子网ID。
 
         :return: The subnet_id of this ListMembersRequest.
         :rtype: str
@@ -264,6 +281,7 @@ class ListMembersRequest:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this ListMembersRequest.
 
+        后端云服务器所在的子网ID。
 
         :param subnet_id: The subnet_id of this ListMembersRequest.
         :type: str
@@ -274,6 +292,7 @@ class ListMembersRequest:
     def admin_state_up(self):
         """Gets the admin_state_up of this ListMembersRequest.
 
+        后端云服务器的管理状态。取值范围：true/false。
 
         :return: The admin_state_up of this ListMembersRequest.
         :rtype: bool
@@ -284,6 +303,7 @@ class ListMembersRequest:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this ListMembersRequest.
 
+        后端云服务器的管理状态。取值范围：true/false。
 
         :param admin_state_up: The admin_state_up of this ListMembersRequest.
         :type: bool
@@ -294,6 +314,7 @@ class ListMembersRequest:
     def weight(self):
         """Gets the weight of this ListMembersRequest.
 
+        后端云服务器的权重。
 
         :return: The weight of this ListMembersRequest.
         :rtype: int
@@ -304,6 +325,7 @@ class ListMembersRequest:
     def weight(self, weight):
         """Sets the weight of this ListMembersRequest.
 
+        后端云服务器的权重。
 
         :param weight: The weight of this ListMembersRequest.
         :type: int

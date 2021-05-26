@@ -44,6 +44,7 @@ class ShowSnapshotRequest:
     def snapshot_id(self):
         """Gets the snapshot_id of this ShowSnapshotRequest.
 
+        快照ID。
 
         :return: The snapshot_id of this ShowSnapshotRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowSnapshotRequest:
     def snapshot_id(self, snapshot_id):
         """Sets the snapshot_id of this ShowSnapshotRequest.
 
+        快照ID。
 
         :param snapshot_id: The snapshot_id of this ShowSnapshotRequest.
         :type: str

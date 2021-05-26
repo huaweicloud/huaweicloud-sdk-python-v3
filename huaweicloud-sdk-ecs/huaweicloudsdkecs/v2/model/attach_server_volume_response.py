@@ -33,7 +33,7 @@ class AttachServerVolumeResponse(SdkResponse):
     def __init__(self, job_id=None):
         """AttachServerVolumeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(AttachServerVolumeResponse, self).__init__()
 
         self._job_id = None
         self.discriminator = None

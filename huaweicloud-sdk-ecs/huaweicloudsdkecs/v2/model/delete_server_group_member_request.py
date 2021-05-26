@@ -49,6 +49,7 @@ class DeleteServerGroupMemberRequest:
     def server_group_id(self):
         """Gets the server_group_id of this DeleteServerGroupMemberRequest.
 
+        云服务器组ID。
 
         :return: The server_group_id of this DeleteServerGroupMemberRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class DeleteServerGroupMemberRequest:
     def server_group_id(self, server_group_id):
         """Sets the server_group_id of this DeleteServerGroupMemberRequest.
 
+        云服务器组ID。
 
         :param server_group_id: The server_group_id of this DeleteServerGroupMemberRequest.
         :type: str

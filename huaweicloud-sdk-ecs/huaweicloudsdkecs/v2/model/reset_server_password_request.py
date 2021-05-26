@@ -49,6 +49,7 @@ class ResetServerPasswordRequest:
     def server_id(self):
         """Gets the server_id of this ResetServerPasswordRequest.
 
+        云服务器ID。
 
         :return: The server_id of this ResetServerPasswordRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ResetServerPasswordRequest:
     def server_id(self, server_id):
         """Sets the server_id of this ResetServerPasswordRequest.
 
+        云服务器ID。
 
         :param server_id: The server_id of this ResetServerPasswordRequest.
         :type: str

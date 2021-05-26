@@ -31,7 +31,7 @@ class DeleteListenerResponse(SdkResponse):
     def __init__(self):
         """DeleteListenerResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(DeleteListenerResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

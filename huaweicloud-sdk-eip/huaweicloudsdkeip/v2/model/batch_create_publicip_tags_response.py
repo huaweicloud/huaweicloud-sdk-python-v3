@@ -31,7 +31,7 @@ class BatchCreatePublicipTagsResponse(SdkResponse):
     def __init__(self):
         """BatchCreatePublicipTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchCreatePublicipTagsResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

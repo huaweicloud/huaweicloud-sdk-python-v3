@@ -44,6 +44,7 @@ class ShowListenerRequest:
     def listener_id(self):
         """Gets the listener_id of this ShowListenerRequest.
 
+        监听器id
 
         :return: The listener_id of this ShowListenerRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowListenerRequest:
     def listener_id(self, listener_id):
         """Sets the listener_id of this ShowListenerRequest.
 
+        监听器id
 
         :param listener_id: The listener_id of this ShowListenerRequest.
         :type: str

@@ -33,7 +33,7 @@ class CreateL7ruleResponse(SdkResponse):
     def __init__(self, rule=None):
         """CreateL7ruleResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateL7ruleResponse, self).__init__()
 
         self._rule = None
         self.discriminator = None

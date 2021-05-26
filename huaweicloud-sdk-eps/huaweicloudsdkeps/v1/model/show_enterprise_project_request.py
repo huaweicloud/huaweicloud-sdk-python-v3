@@ -44,6 +44,7 @@ class ShowEnterpriseProjectRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowEnterpriseProjectRequest.
 
+        企业项目ID。 可以通过查询企业项目列表接口获取。
 
         :return: The enterprise_project_id of this ShowEnterpriseProjectRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowEnterpriseProjectRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowEnterpriseProjectRequest.
 
+        企业项目ID。 可以通过查询企业项目列表接口获取。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowEnterpriseProjectRequest.
         :type: str

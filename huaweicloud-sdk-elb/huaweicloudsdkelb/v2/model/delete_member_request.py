@@ -48,6 +48,7 @@ class DeleteMemberRequest:
     def pool_id(self):
         """Gets the pool_id of this DeleteMemberRequest.
 
+        后端云服务器组id
 
         :return: The pool_id of this DeleteMemberRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteMemberRequest:
     def pool_id(self, pool_id):
         """Sets the pool_id of this DeleteMemberRequest.
 
+        后端云服务器组id
 
         :param pool_id: The pool_id of this DeleteMemberRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteMemberRequest:
     def member_id(self):
         """Gets the member_id of this DeleteMemberRequest.
 
+        后端云服务器id
 
         :return: The member_id of this DeleteMemberRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteMemberRequest:
     def member_id(self, member_id):
         """Sets the member_id of this DeleteMemberRequest.
 
+        后端云服务器id
 
         :param member_id: The member_id of this DeleteMemberRequest.
         :type: str

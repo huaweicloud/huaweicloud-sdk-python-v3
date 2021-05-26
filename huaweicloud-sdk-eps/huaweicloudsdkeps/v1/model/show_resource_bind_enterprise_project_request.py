@@ -49,6 +49,7 @@ class ShowResourceBindEnterpriseProjectRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowResourceBindEnterpriseProjectRequest.
 
+        企业项目ID
 
         :return: The enterprise_project_id of this ShowResourceBindEnterpriseProjectRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class ShowResourceBindEnterpriseProjectRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowResourceBindEnterpriseProjectRequest.
 
+        企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ShowResourceBindEnterpriseProjectRequest.
         :type: str

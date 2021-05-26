@@ -33,7 +33,7 @@ class ShowPoolResponse(SdkResponse):
     def __init__(self, pool=None):
         """ShowPoolResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowPoolResponse, self).__init__()
 
         self._pool = None
         self.discriminator = None

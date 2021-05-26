@@ -35,7 +35,7 @@ class ListEnterpriseProjectResponse(SdkResponse):
     def __init__(self, enterprise_projects=None, total_count=None):
         """ListEnterpriseProjectResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListEnterpriseProjectResponse, self).__init__()
 
         self._enterprise_projects = None
         self._total_count = None

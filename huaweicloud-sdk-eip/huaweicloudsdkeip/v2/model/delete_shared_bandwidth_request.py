@@ -44,6 +44,7 @@ class DeleteSharedBandwidthRequest:
     def bandwidth_id(self):
         """Gets the bandwidth_id of this DeleteSharedBandwidthRequest.
 
+        带宽唯一标识  约束： 当前仅支持删除共享带宽
 
         :return: The bandwidth_id of this DeleteSharedBandwidthRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteSharedBandwidthRequest:
     def bandwidth_id(self, bandwidth_id):
         """Sets the bandwidth_id of this DeleteSharedBandwidthRequest.
 
+        带宽唯一标识  约束： 当前仅支持删除共享带宽
 
         :param bandwidth_id: The bandwidth_id of this DeleteSharedBandwidthRequest.
         :type: str

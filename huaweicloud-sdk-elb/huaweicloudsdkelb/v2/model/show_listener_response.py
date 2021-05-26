@@ -33,7 +33,7 @@ class ShowListenerResponse(SdkResponse):
     def __init__(self, listener=None):
         """ShowListenerResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowListenerResponse, self).__init__()
 
         self._listener = None
         self.discriminator = None

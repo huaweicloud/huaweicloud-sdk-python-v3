@@ -35,7 +35,7 @@ class CreateLoadBalancerResponse(SdkResponse):
     def __init__(self, loadbalancer=None, request_id=None):
         """CreateLoadBalancerResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreateLoadBalancerResponse, self).__init__()
 
         self._loadbalancer = None
         self._request_id = None

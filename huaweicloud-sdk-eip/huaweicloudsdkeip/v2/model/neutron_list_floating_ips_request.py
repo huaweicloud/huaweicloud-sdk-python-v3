@@ -90,6 +90,7 @@ class NeutronListFloatingIpsRequest:
     def limit(self):
         """Gets the limit of this NeutronListFloatingIpsRequest.
 
+        每页显示的条目数量。
 
         :return: The limit of this NeutronListFloatingIpsRequest.
         :rtype: str
@@ -100,6 +101,7 @@ class NeutronListFloatingIpsRequest:
     def limit(self, limit):
         """Sets the limit of this NeutronListFloatingIpsRequest.
 
+        每页显示的条目数量。
 
         :param limit: The limit of this NeutronListFloatingIpsRequest.
         :type: str
@@ -110,6 +112,7 @@ class NeutronListFloatingIpsRequest:
     def marker(self):
         """Gets the marker of this NeutronListFloatingIpsRequest.
 
+        取值为上一页数据的最后一条记录的id，当marker参数为无效id时，response将响应错误码400
 
         :return: The marker of this NeutronListFloatingIpsRequest.
         :rtype: str
@@ -120,6 +123,7 @@ class NeutronListFloatingIpsRequest:
     def marker(self, marker):
         """Sets the marker of this NeutronListFloatingIpsRequest.
 
+        取值为上一页数据的最后一条记录的id，当marker参数为无效id时，response将响应错误码400
 
         :param marker: The marker of this NeutronListFloatingIpsRequest.
         :type: str
@@ -130,6 +134,7 @@ class NeutronListFloatingIpsRequest:
     def page_reverse(self):
         """Gets the page_reverse of this NeutronListFloatingIpsRequest.
 
+        False/True，是否设置分页的顺序。
 
         :return: The page_reverse of this NeutronListFloatingIpsRequest.
         :rtype: bool
@@ -140,6 +145,7 @@ class NeutronListFloatingIpsRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this NeutronListFloatingIpsRequest.
 
+        False/True，是否设置分页的顺序。
 
         :param page_reverse: The page_reverse of this NeutronListFloatingIpsRequest.
         :type: bool
@@ -150,6 +156,7 @@ class NeutronListFloatingIpsRequest:
     def id(self):
         """Gets the id of this NeutronListFloatingIpsRequest.
 
+        浮动IP的id。
 
         :return: The id of this NeutronListFloatingIpsRequest.
         :rtype: str
@@ -160,6 +167,7 @@ class NeutronListFloatingIpsRequest:
     def id(self, id):
         """Sets the id of this NeutronListFloatingIpsRequest.
 
+        浮动IP的id。
 
         :param id: The id of this NeutronListFloatingIpsRequest.
         :type: str
@@ -170,6 +178,7 @@ class NeutronListFloatingIpsRequest:
     def floating_ip_address(self):
         """Gets the floating_ip_address of this NeutronListFloatingIpsRequest.
 
+        浮动IP地址。
 
         :return: The floating_ip_address of this NeutronListFloatingIpsRequest.
         :rtype: str
@@ -180,6 +189,7 @@ class NeutronListFloatingIpsRequest:
     def floating_ip_address(self, floating_ip_address):
         """Sets the floating_ip_address of this NeutronListFloatingIpsRequest.
 
+        浮动IP地址。
 
         :param floating_ip_address: The floating_ip_address of this NeutronListFloatingIpsRequest.
         :type: str
@@ -190,6 +200,7 @@ class NeutronListFloatingIpsRequest:
     def router_id(self):
         """Gets the router_id of this NeutronListFloatingIpsRequest.
 
+        所属路由器id。
 
         :return: The router_id of this NeutronListFloatingIpsRequest.
         :rtype: str
@@ -200,6 +211,7 @@ class NeutronListFloatingIpsRequest:
     def router_id(self, router_id):
         """Sets the router_id of this NeutronListFloatingIpsRequest.
 
+        所属路由器id。
 
         :param router_id: The router_id of this NeutronListFloatingIpsRequest.
         :type: str
@@ -210,6 +222,7 @@ class NeutronListFloatingIpsRequest:
     def port_id(self):
         """Gets the port_id of this NeutronListFloatingIpsRequest.
 
+        端口id。
 
         :return: The port_id of this NeutronListFloatingIpsRequest.
         :rtype: str
@@ -220,6 +233,7 @@ class NeutronListFloatingIpsRequest:
     def port_id(self, port_id):
         """Sets the port_id of this NeutronListFloatingIpsRequest.
 
+        端口id。
 
         :param port_id: The port_id of this NeutronListFloatingIpsRequest.
         :type: str
@@ -230,6 +244,7 @@ class NeutronListFloatingIpsRequest:
     def fixed_ip_address(self):
         """Gets the fixed_ip_address of this NeutronListFloatingIpsRequest.
 
+        关联端口的私有IP地址。
 
         :return: The fixed_ip_address of this NeutronListFloatingIpsRequest.
         :rtype: str
@@ -240,6 +255,7 @@ class NeutronListFloatingIpsRequest:
     def fixed_ip_address(self, fixed_ip_address):
         """Sets the fixed_ip_address of this NeutronListFloatingIpsRequest.
 
+        关联端口的私有IP地址。
 
         :param fixed_ip_address: The fixed_ip_address of this NeutronListFloatingIpsRequest.
         :type: str
@@ -250,6 +266,7 @@ class NeutronListFloatingIpsRequest:
     def tenant_id(self):
         """Gets the tenant_id of this NeutronListFloatingIpsRequest.
 
+        项目ID。
 
         :return: The tenant_id of this NeutronListFloatingIpsRequest.
         :rtype: str
@@ -260,6 +277,7 @@ class NeutronListFloatingIpsRequest:
     def tenant_id(self, tenant_id):
         """Sets the tenant_id of this NeutronListFloatingIpsRequest.
 
+        项目ID。
 
         :param tenant_id: The tenant_id of this NeutronListFloatingIpsRequest.
         :type: str
@@ -270,6 +288,7 @@ class NeutronListFloatingIpsRequest:
     def floating_network_id(self):
         """Gets the floating_network_id of this NeutronListFloatingIpsRequest.
 
+        外部网络的id。只能使用固定的外网，外部网络的信息请通过GET /v2.0/networks?router:external=True或GET /v2.0/networks?name={floating_network}或neutron net-external-list方式查询
 
         :return: The floating_network_id of this NeutronListFloatingIpsRequest.
         :rtype: str
@@ -280,6 +299,7 @@ class NeutronListFloatingIpsRequest:
     def floating_network_id(self, floating_network_id):
         """Sets the floating_network_id of this NeutronListFloatingIpsRequest.
 
+        外部网络的id。只能使用固定的外网，外部网络的信息请通过GET /v2.0/networks?router:external=True或GET /v2.0/networks?name={floating_network}或neutron net-external-list方式查询
 
         :param floating_network_id: The floating_network_id of this NeutronListFloatingIpsRequest.
         :type: str

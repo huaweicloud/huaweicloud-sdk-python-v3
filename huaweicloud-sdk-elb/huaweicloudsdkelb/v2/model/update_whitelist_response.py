@@ -33,7 +33,7 @@ class UpdateWhitelistResponse(SdkResponse):
     def __init__(self, whitelist=None):
         """UpdateWhitelistResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateWhitelistResponse, self).__init__()
 
         self._whitelist = None
         self.discriminator = None

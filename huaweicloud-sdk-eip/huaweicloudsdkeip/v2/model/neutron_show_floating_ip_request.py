@@ -44,6 +44,7 @@ class NeutronShowFloatingIpRequest:
     def floatingip_id(self):
         """Gets the floatingip_id of this NeutronShowFloatingIpRequest.
 
+        floatingip的ID
 
         :return: The floatingip_id of this NeutronShowFloatingIpRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class NeutronShowFloatingIpRequest:
     def floatingip_id(self, floatingip_id):
         """Sets the floatingip_id of this NeutronShowFloatingIpRequest.
 
+        floatingip的ID
 
         :param floatingip_id: The floatingip_id of this NeutronShowFloatingIpRequest.
         :type: str

@@ -44,6 +44,7 @@ class ShowVolumeTagsRequest:
     def volume_id(self):
         """Gets the volume_id of this ShowVolumeTagsRequest.
 
+        云硬盘ID
 
         :return: The volume_id of this ShowVolumeTagsRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowVolumeTagsRequest:
     def volume_id(self, volume_id):
         """Sets the volume_id of this ShowVolumeTagsRequest.
 
+        云硬盘ID
 
         :param volume_id: The volume_id of this ShowVolumeTagsRequest.
         :type: str

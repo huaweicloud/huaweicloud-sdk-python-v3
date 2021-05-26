@@ -33,7 +33,7 @@ class NovaShowServerResponse(SdkResponse):
     def __init__(self, server=None):
         """NovaShowServerResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(NovaShowServerResponse, self).__init__()
 
         self._server = None
         self.discriminator = None

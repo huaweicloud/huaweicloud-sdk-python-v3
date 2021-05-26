@@ -48,6 +48,7 @@ class CinderListQuotasRequest:
     def target_project_id(self):
         """Gets the target_project_id of this CinderListQuotasRequest.
 
+        目标的项目ID。与project_id保持一致即可。
 
         :return: The target_project_id of this CinderListQuotasRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class CinderListQuotasRequest:
     def target_project_id(self, target_project_id):
         """Sets the target_project_id of this CinderListQuotasRequest.
 
+        目标的项目ID。与project_id保持一致即可。
 
         :param target_project_id: The target_project_id of this CinderListQuotasRequest.
         :type: str
@@ -68,6 +70,7 @@ class CinderListQuotasRequest:
     def usage(self):
         """Gets the usage of this CinderListQuotasRequest.
 
+        是否查询配额详细信息。当前只支持传true。
 
         :return: The usage of this CinderListQuotasRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class CinderListQuotasRequest:
     def usage(self, usage):
         """Sets the usage of this CinderListQuotasRequest.
 
+        是否查询配额详细信息。当前只支持传true。
 
         :param usage: The usage of this CinderListQuotasRequest.
         :type: str

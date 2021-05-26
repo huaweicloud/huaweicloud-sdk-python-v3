@@ -321,7 +321,7 @@ class EpsAsyncClient(Client):
         :return: ListEnterpriseProjectResponse
         """
 
-        all_params = ['offset', 'id', 'limit', 'name', 'sort_dir', 'sort_key', 'status']
+        all_params = ['id', 'limit', 'name', 'offset', 'sort_dir', 'sort_key', 'status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

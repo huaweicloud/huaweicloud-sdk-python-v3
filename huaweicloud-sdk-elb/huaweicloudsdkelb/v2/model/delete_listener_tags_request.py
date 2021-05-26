@@ -48,6 +48,7 @@ class DeleteListenerTagsRequest:
     def listener_id(self):
         """Gets the listener_id of this DeleteListenerTagsRequest.
 
+        监听器ID
 
         :return: The listener_id of this DeleteListenerTagsRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteListenerTagsRequest:
     def listener_id(self, listener_id):
         """Sets the listener_id of this DeleteListenerTagsRequest.
 
+        监听器ID
 
         :param listener_id: The listener_id of this DeleteListenerTagsRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteListenerTagsRequest:
     def key(self):
         """Gets the key of this DeleteListenerTagsRequest.
 
+        待删除标签的key值。
 
         :return: The key of this DeleteListenerTagsRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteListenerTagsRequest:
     def key(self, key):
         """Sets the key of this DeleteListenerTagsRequest.
 
+        待删除标签的key值。
 
         :param key: The key of this DeleteListenerTagsRequest.
         :type: str

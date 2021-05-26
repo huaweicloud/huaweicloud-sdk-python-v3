@@ -31,7 +31,7 @@ class EnableEnterpriseProjectResponse(SdkResponse):
     def __init__(self):
         """EnableEnterpriseProjectResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(EnableEnterpriseProjectResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

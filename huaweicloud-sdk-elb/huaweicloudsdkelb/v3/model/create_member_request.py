@@ -49,6 +49,7 @@ class CreateMemberRequest:
     def pool_id(self):
         """Gets the pool_id of this CreateMemberRequest.
 
+        后端服务器组ID。
 
         :return: The pool_id of this CreateMemberRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateMemberRequest:
     def pool_id(self, pool_id):
         """Sets the pool_id of this CreateMemberRequest.
 
+        后端服务器组ID。
 
         :param pool_id: The pool_id of this CreateMemberRequest.
         :type: str

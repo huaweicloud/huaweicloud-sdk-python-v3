@@ -49,6 +49,7 @@ class BatchDeletePublicipTagsRequest:
     def publicip_id(self):
         """Gets the publicip_id of this BatchDeletePublicipTagsRequest.
 
+        资源ID
 
         :return: The publicip_id of this BatchDeletePublicipTagsRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class BatchDeletePublicipTagsRequest:
     def publicip_id(self, publicip_id):
         """Sets the publicip_id of this BatchDeletePublicipTagsRequest.
 
+        资源ID
 
         :param publicip_id: The publicip_id of this BatchDeletePublicipTagsRequest.
         :type: str

@@ -33,7 +33,7 @@ class ListLoadbalancerTagsResponse(SdkResponse):
     def __init__(self, tags=None):
         """ListLoadbalancerTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListLoadbalancerTagsResponse, self).__init__()
 
         self._tags = None
         self.discriminator = None

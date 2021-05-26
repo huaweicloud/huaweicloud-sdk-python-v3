@@ -33,7 +33,7 @@ class CinderListVolumeTypesResponse(SdkResponse):
     def __init__(self, volume_types=None):
         """CinderListVolumeTypesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CinderListVolumeTypesResponse, self).__init__()
 
         self._volume_types = None
         self.discriminator = None

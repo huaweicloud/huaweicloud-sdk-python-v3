@@ -75,6 +75,7 @@ class ListIpGroupsRequest:
     def description(self):
         """Gets the description of this ListIpGroupsRequest.
 
+        ip地址组的描述信息。
 
         :return: The description of this ListIpGroupsRequest.
         :rtype: list[str]
@@ -85,6 +86,7 @@ class ListIpGroupsRequest:
     def description(self, description):
         """Sets the description of this ListIpGroupsRequest.
 
+        ip地址组的描述信息。
 
         :param description: The description of this ListIpGroupsRequest.
         :type: list[str]
@@ -95,6 +97,7 @@ class ListIpGroupsRequest:
     def id(self):
         """Gets the id of this ListIpGroupsRequest.
 
+        ip地址组的id
 
         :return: The id of this ListIpGroupsRequest.
         :rtype: list[str]
@@ -105,6 +108,7 @@ class ListIpGroupsRequest:
     def id(self, id):
         """Sets the id of this ListIpGroupsRequest.
 
+        ip地址组的id
 
         :param id: The id of this ListIpGroupsRequest.
         :type: list[str]
@@ -115,6 +119,7 @@ class ListIpGroupsRequest:
     def ip_list(self):
         """Gets the ip_list of this ListIpGroupsRequest.
 
+        ip地址，多个用逗号分隔
 
         :return: The ip_list of this ListIpGroupsRequest.
         :rtype: list[str]
@@ -125,6 +130,7 @@ class ListIpGroupsRequest:
     def ip_list(self, ip_list):
         """Sets the ip_list of this ListIpGroupsRequest.
 
+        ip地址，多个用逗号分隔
 
         :param ip_list: The ip_list of this ListIpGroupsRequest.
         :type: list[str]
@@ -135,6 +141,7 @@ class ListIpGroupsRequest:
     def limit(self):
         """Gets the limit of this ListIpGroupsRequest.
 
+        每页返回的个数。
 
         :return: The limit of this ListIpGroupsRequest.
         :rtype: int
@@ -145,6 +152,7 @@ class ListIpGroupsRequest:
     def limit(self, limit):
         """Sets the limit of this ListIpGroupsRequest.
 
+        每页返回的个数。
 
         :param limit: The limit of this ListIpGroupsRequest.
         :type: int
@@ -155,6 +163,7 @@ class ListIpGroupsRequest:
     def marker(self):
         """Gets the marker of this ListIpGroupsRequest.
 
+        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :return: The marker of this ListIpGroupsRequest.
         :rtype: str
@@ -165,6 +174,7 @@ class ListIpGroupsRequest:
     def marker(self, marker):
         """Sets the marker of this ListIpGroupsRequest.
 
+        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListIpGroupsRequest.
         :type: str
@@ -175,6 +185,7 @@ class ListIpGroupsRequest:
     def name(self):
         """Gets the name of this ListIpGroupsRequest.
 
+        ip地址组的名称
 
         :return: The name of this ListIpGroupsRequest.
         :rtype: list[str]
@@ -185,6 +196,7 @@ class ListIpGroupsRequest:
     def name(self, name):
         """Sets the name of this ListIpGroupsRequest.
 
+        ip地址组的名称
 
         :param name: The name of this ListIpGroupsRequest.
         :type: list[str]
@@ -195,6 +207,7 @@ class ListIpGroupsRequest:
     def page_reverse(self):
         """Gets the page_reverse of this ListIpGroupsRequest.
 
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明：必须与limit一起使用。
 
         :return: The page_reverse of this ListIpGroupsRequest.
         :rtype: bool
@@ -205,6 +218,7 @@ class ListIpGroupsRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListIpGroupsRequest.
 
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明：必须与limit一起使用。
 
         :param page_reverse: The page_reverse of this ListIpGroupsRequest.
         :type: bool

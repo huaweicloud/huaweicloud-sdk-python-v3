@@ -33,7 +33,7 @@ class ShowVolumeResponse(SdkResponse):
     def __init__(self, volume=None):
         """ShowVolumeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowVolumeResponse, self).__init__()
 
         self._volume = None
         self.discriminator = None

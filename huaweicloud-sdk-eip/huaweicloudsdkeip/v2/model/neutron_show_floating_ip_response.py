@@ -33,7 +33,7 @@ class NeutronShowFloatingIpResponse(SdkResponse):
     def __init__(self, floatingip=None):
         """NeutronShowFloatingIpResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(NeutronShowFloatingIpResponse, self).__init__()
 
         self._floatingip = None
         self.discriminator = None

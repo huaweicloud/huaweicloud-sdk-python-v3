@@ -49,6 +49,7 @@ class DeleteLoadbalancerRequest:
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this DeleteLoadbalancerRequest.
 
+        负载均衡器id
 
         :return: The loadbalancer_id of this DeleteLoadbalancerRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class DeleteLoadbalancerRequest:
     def loadbalancer_id(self, loadbalancer_id):
         """Sets the loadbalancer_id of this DeleteLoadbalancerRequest.
 
+        负载均衡器id
 
         :param loadbalancer_id: The loadbalancer_id of this DeleteLoadbalancerRequest.
         :type: str
@@ -69,6 +71,7 @@ class DeleteLoadbalancerRequest:
     def cascade(self):
         """Gets the cascade of this DeleteLoadbalancerRequest.
 
+        （不再支持）级联删除负载均衡器
 
         :return: The cascade of this DeleteLoadbalancerRequest.
         :rtype: bool
@@ -79,6 +82,7 @@ class DeleteLoadbalancerRequest:
     def cascade(self, cascade):
         """Sets the cascade of this DeleteLoadbalancerRequest.
 
+        （不再支持）级联删除负载均衡器
 
         :param cascade: The cascade of this DeleteLoadbalancerRequest.
         :type: bool

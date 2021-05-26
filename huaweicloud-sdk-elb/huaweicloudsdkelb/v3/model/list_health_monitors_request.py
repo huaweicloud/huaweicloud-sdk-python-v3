@@ -125,6 +125,7 @@ class ListHealthMonitorsRequest:
     def admin_state_up(self):
         """Gets the admin_state_up of this ListHealthMonitorsRequest.
 
+        健康检查的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :return: The admin_state_up of this ListHealthMonitorsRequest.
         :rtype: bool
@@ -135,6 +136,7 @@ class ListHealthMonitorsRequest:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this ListHealthMonitorsRequest.
 
+        健康检查的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :param admin_state_up: The admin_state_up of this ListHealthMonitorsRequest.
         :type: bool
@@ -145,6 +147,7 @@ class ListHealthMonitorsRequest:
     def delay(self):
         """Gets the delay of this ListHealthMonitorsRequest.
 
+        健康检查间隔。
 
         :return: The delay of this ListHealthMonitorsRequest.
         :rtype: list[int]
@@ -155,6 +158,7 @@ class ListHealthMonitorsRequest:
     def delay(self, delay):
         """Sets the delay of this ListHealthMonitorsRequest.
 
+        健康检查间隔。
 
         :param delay: The delay of this ListHealthMonitorsRequest.
         :type: list[int]
@@ -165,6 +169,7 @@ class ListHealthMonitorsRequest:
     def domain_name(self):
         """Gets the domain_name of this ListHealthMonitorsRequest.
 
+        功能说明：健康检查测试member健康状态时，发送的http请求的域名。仅当type为HTTP时生效。使用说明：默认为空，表示使用负载均衡器的vip作为http请求的目的地址。以数字或字母开头，只能包含数字、字母、’-’、’.’。
 
         :return: The domain_name of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -175,6 +180,7 @@ class ListHealthMonitorsRequest:
     def domain_name(self, domain_name):
         """Sets the domain_name of this ListHealthMonitorsRequest.
 
+        功能说明：健康检查测试member健康状态时，发送的http请求的域名。仅当type为HTTP时生效。使用说明：默认为空，表示使用负载均衡器的vip作为http请求的目的地址。以数字或字母开头，只能包含数字、字母、’-’、’.’。
 
         :param domain_name: The domain_name of this ListHealthMonitorsRequest.
         :type: list[str]
@@ -185,6 +191,7 @@ class ListHealthMonitorsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListHealthMonitorsRequest.
 
+        企业项目ID。
 
         :return: The enterprise_project_id of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -195,6 +202,7 @@ class ListHealthMonitorsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListHealthMonitorsRequest.
 
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListHealthMonitorsRequest.
         :type: list[str]
@@ -205,6 +213,7 @@ class ListHealthMonitorsRequest:
     def expected_codes(self):
         """Gets the expected_codes of this ListHealthMonitorsRequest.
 
+        期望HTTP响应状态码，指定下列值：单值，例如200；列表，例如200，202；区间，例如200-204。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
 
         :return: The expected_codes of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -215,6 +224,7 @@ class ListHealthMonitorsRequest:
     def expected_codes(self, expected_codes):
         """Sets the expected_codes of this ListHealthMonitorsRequest.
 
+        期望HTTP响应状态码，指定下列值：单值，例如200；列表，例如200，202；区间，例如200-204。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
 
         :param expected_codes: The expected_codes of this ListHealthMonitorsRequest.
         :type: list[str]
@@ -225,6 +235,7 @@ class ListHealthMonitorsRequest:
     def http_method(self):
         """Gets the http_method of this ListHealthMonitorsRequest.
 
+        HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
 
         :return: The http_method of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -235,6 +246,7 @@ class ListHealthMonitorsRequest:
     def http_method(self, http_method):
         """Sets the http_method of this ListHealthMonitorsRequest.
 
+        HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
 
         :param http_method: The http_method of this ListHealthMonitorsRequest.
         :type: list[str]
@@ -245,6 +257,7 @@ class ListHealthMonitorsRequest:
     def id(self):
         """Gets the id of this ListHealthMonitorsRequest.
 
+        健康检查ID。
 
         :return: The id of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -255,6 +268,7 @@ class ListHealthMonitorsRequest:
     def id(self, id):
         """Sets the id of this ListHealthMonitorsRequest.
 
+        健康检查ID。
 
         :param id: The id of this ListHealthMonitorsRequest.
         :type: list[str]
@@ -265,6 +279,7 @@ class ListHealthMonitorsRequest:
     def limit(self):
         """Gets the limit of this ListHealthMonitorsRequest.
 
+        每页返回的个数。
 
         :return: The limit of this ListHealthMonitorsRequest.
         :rtype: int
@@ -275,6 +290,7 @@ class ListHealthMonitorsRequest:
     def limit(self, limit):
         """Sets the limit of this ListHealthMonitorsRequest.
 
+        每页返回的个数。
 
         :param limit: The limit of this ListHealthMonitorsRequest.
         :type: int
@@ -285,6 +301,7 @@ class ListHealthMonitorsRequest:
     def marker(self):
         """Gets the marker of this ListHealthMonitorsRequest.
 
+        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :return: The marker of this ListHealthMonitorsRequest.
         :rtype: str
@@ -295,6 +312,7 @@ class ListHealthMonitorsRequest:
     def marker(self, marker):
         """Sets the marker of this ListHealthMonitorsRequest.
 
+        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListHealthMonitorsRequest.
         :type: str
@@ -305,6 +323,7 @@ class ListHealthMonitorsRequest:
     def max_retries(self):
         """Gets the max_retries of this ListHealthMonitorsRequest.
 
+        最大重试次数。
 
         :return: The max_retries of this ListHealthMonitorsRequest.
         :rtype: list[int]
@@ -315,6 +334,7 @@ class ListHealthMonitorsRequest:
     def max_retries(self, max_retries):
         """Sets the max_retries of this ListHealthMonitorsRequest.
 
+        最大重试次数。
 
         :param max_retries: The max_retries of this ListHealthMonitorsRequest.
         :type: list[int]
@@ -325,6 +345,7 @@ class ListHealthMonitorsRequest:
     def max_retries_down(self):
         """Gets the max_retries_down of this ListHealthMonitorsRequest.
 
+        健康检查连续成功多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE，取值范围[1，10]。
 
         :return: The max_retries_down of this ListHealthMonitorsRequest.
         :rtype: list[int]
@@ -335,6 +356,7 @@ class ListHealthMonitorsRequest:
     def max_retries_down(self, max_retries_down):
         """Sets the max_retries_down of this ListHealthMonitorsRequest.
 
+        健康检查连续成功多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE，取值范围[1，10]。
 
         :param max_retries_down: The max_retries_down of this ListHealthMonitorsRequest.
         :type: list[int]
@@ -345,6 +367,7 @@ class ListHealthMonitorsRequest:
     def monitor_port(self):
         """Gets the monitor_port of this ListHealthMonitorsRequest.
 
+        健康检查端口号。
 
         :return: The monitor_port of this ListHealthMonitorsRequest.
         :rtype: list[int]
@@ -355,6 +378,7 @@ class ListHealthMonitorsRequest:
     def monitor_port(self, monitor_port):
         """Sets the monitor_port of this ListHealthMonitorsRequest.
 
+        健康检查端口号。
 
         :param monitor_port: The monitor_port of this ListHealthMonitorsRequest.
         :type: list[int]
@@ -365,6 +389,7 @@ class ListHealthMonitorsRequest:
     def name(self):
         """Gets the name of this ListHealthMonitorsRequest.
 
+        健康检查名称。
 
         :return: The name of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -375,6 +400,7 @@ class ListHealthMonitorsRequest:
     def name(self, name):
         """Sets the name of this ListHealthMonitorsRequest.
 
+        健康检查名称。
 
         :param name: The name of this ListHealthMonitorsRequest.
         :type: list[str]
@@ -385,6 +411,7 @@ class ListHealthMonitorsRequest:
     def page_reverse(self):
         """Gets the page_reverse of this ListHealthMonitorsRequest.
 
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。 使用说明：必须与limit一起使用。
 
         :return: The page_reverse of this ListHealthMonitorsRequest.
         :rtype: bool
@@ -395,6 +422,7 @@ class ListHealthMonitorsRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListHealthMonitorsRequest.
 
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。 使用说明：必须与limit一起使用。
 
         :param page_reverse: The page_reverse of this ListHealthMonitorsRequest.
         :type: bool
@@ -405,6 +433,7 @@ class ListHealthMonitorsRequest:
     def timeout(self):
         """Gets the timeout of this ListHealthMonitorsRequest.
 
+        健康检查的超时时间。建议该值小于delay的值。
 
         :return: The timeout of this ListHealthMonitorsRequest.
         :rtype: int
@@ -415,6 +444,7 @@ class ListHealthMonitorsRequest:
     def timeout(self, timeout):
         """Sets the timeout of this ListHealthMonitorsRequest.
 
+        健康检查的超时时间。建议该值小于delay的值。
 
         :param timeout: The timeout of this ListHealthMonitorsRequest.
         :type: int
@@ -425,6 +455,7 @@ class ListHealthMonitorsRequest:
     def type(self):
         """Gets the type of this ListHealthMonitorsRequest.
 
+        健康检查类型。
 
         :return: The type of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -435,6 +466,7 @@ class ListHealthMonitorsRequest:
     def type(self, type):
         """Sets the type of this ListHealthMonitorsRequest.
 
+        健康检查类型。
 
         :param type: The type of this ListHealthMonitorsRequest.
         :type: list[str]
@@ -445,6 +477,7 @@ class ListHealthMonitorsRequest:
     def url_path(self):
         """Gets the url_path of this ListHealthMonitorsRequest.
 
+        功能说明：健康检查测试member健康时发送的http请求路径。默认为“/”。使用说明：以“/”开头。仅当type为HTTP时生效。
 
         :return: The url_path of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -455,6 +488,7 @@ class ListHealthMonitorsRequest:
     def url_path(self, url_path):
         """Sets the url_path of this ListHealthMonitorsRequest.
 
+        功能说明：健康检查测试member健康时发送的http请求路径。默认为“/”。使用说明：以“/”开头。仅当type为HTTP时生效。
 
         :param url_path: The url_path of this ListHealthMonitorsRequest.
         :type: list[str]

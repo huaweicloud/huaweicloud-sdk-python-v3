@@ -35,7 +35,7 @@ class ShowQuotaDefaultsResponse(SdkResponse):
     def __init__(self, request_id=None, quota=None):
         """ShowQuotaDefaultsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowQuotaDefaultsResponse, self).__init__()
 
         self._request_id = None
         self._quota = None

@@ -45,6 +45,7 @@ class ListFlavorsRequest:
     def availability_zone(self):
         """Gets the availability_zone of this ListFlavorsRequest.
 
+        可用区，需要指定可用区（AZ）的名称或者ID或者code。
 
         :return: The availability_zone of this ListFlavorsRequest.
         :rtype: str
@@ -55,6 +56,7 @@ class ListFlavorsRequest:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this ListFlavorsRequest.
 
+        可用区，需要指定可用区（AZ）的名称或者ID或者code。
 
         :param availability_zone: The availability_zone of this ListFlavorsRequest.
         :type: str

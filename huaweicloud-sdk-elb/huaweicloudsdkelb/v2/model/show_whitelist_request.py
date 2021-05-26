@@ -44,6 +44,7 @@ class ShowWhitelistRequest:
     def whitelist_id(self):
         """Gets the whitelist_id of this ShowWhitelistRequest.
 
+        白名单的id
 
         :return: The whitelist_id of this ShowWhitelistRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowWhitelistRequest:
     def whitelist_id(self, whitelist_id):
         """Sets the whitelist_id of this ShowWhitelistRequest.
 
+        白名单的id
 
         :param whitelist_id: The whitelist_id of this ShowWhitelistRequest.
         :type: str

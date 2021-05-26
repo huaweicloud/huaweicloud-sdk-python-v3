@@ -71,7 +71,7 @@ class UpdateVolumeResponse(SdkResponse):
     def __init__(self, attachments=None, availability_zone=None, bootable=None, created_at=None, id=None, links=None, metadata=None, multiattach=None, name=None, os_vol_host_attrhost=None, os_vol_tenant_attrtenant_id=None, shareable=None, size=None, snapshot_id=None, source_volid=None, status=None, volume_image_metadata=None, volume_type=None, description=None, os_volume_replicationextended_status=None):
         """UpdateVolumeResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateVolumeResponse, self).__init__()
 
         self._attachments = None
         self._availability_zone = None

@@ -49,6 +49,7 @@ class UpdatePublicipRequest:
     def publicip_id(self):
         """Gets the publicip_id of this UpdatePublicipRequest.
 
+        弹性公网IP唯一标识
 
         :return: The publicip_id of this UpdatePublicipRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdatePublicipRequest:
     def publicip_id(self, publicip_id):
         """Sets the publicip_id of this UpdatePublicipRequest.
 
+        弹性公网IP唯一标识
 
         :param publicip_id: The publicip_id of this UpdatePublicipRequest.
         :type: str

@@ -44,6 +44,7 @@ class ShowLoadbalancersStatusRequest:
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this ShowLoadbalancersStatusRequest.
 
+        负载均衡器id
 
         :return: The loadbalancer_id of this ShowLoadbalancersStatusRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowLoadbalancersStatusRequest:
     def loadbalancer_id(self, loadbalancer_id):
         """Sets the loadbalancer_id of this ShowLoadbalancersStatusRequest.
 
+        负载均衡器id
 
         :param loadbalancer_id: The loadbalancer_id of this ShowLoadbalancersStatusRequest.
         :type: str

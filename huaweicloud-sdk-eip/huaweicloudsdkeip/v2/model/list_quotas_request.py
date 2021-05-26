@@ -45,6 +45,7 @@ class ListQuotasRequest:
     def type(self):
         """Gets the type of this ListQuotasRequest.
 
+        功能说明：根据type过滤查询指定类型的配额 取值范围：vpc，subnet，securityGroup，securityGroupRule，publicIp，vpn，vpngw，vpcPeer，firewall，shareBandwidth，shareBandwidthIP，loadbalancer，listener
 
         :return: The type of this ListQuotasRequest.
         :rtype: str
@@ -55,6 +56,7 @@ class ListQuotasRequest:
     def type(self, type):
         """Sets the type of this ListQuotasRequest.
 
+        功能说明：根据type过滤查询指定类型的配额 取值范围：vpc，subnet，securityGroup，securityGroupRule，publicIp，vpn，vpngw，vpcPeer，firewall，shareBandwidth，shareBandwidthIP，loadbalancer，listener
 
         :param type: The type of this ListQuotasRequest.
         :type: str

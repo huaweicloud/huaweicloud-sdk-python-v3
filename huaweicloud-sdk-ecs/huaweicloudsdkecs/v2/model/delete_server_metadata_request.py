@@ -48,6 +48,7 @@ class DeleteServerMetadataRequest:
     def key(self):
         """Gets the key of this DeleteServerMetadataRequest.
 
+        待删除的云服务器metadata键值
 
         :return: The key of this DeleteServerMetadataRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class DeleteServerMetadataRequest:
     def key(self, key):
         """Sets the key of this DeleteServerMetadataRequest.
 
+        待删除的云服务器metadata键值
 
         :param key: The key of this DeleteServerMetadataRequest.
         :type: str
@@ -68,6 +70,7 @@ class DeleteServerMetadataRequest:
     def server_id(self):
         """Gets the server_id of this DeleteServerMetadataRequest.
 
+        云服务器ID。
 
         :return: The server_id of this DeleteServerMetadataRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class DeleteServerMetadataRequest:
     def server_id(self, server_id):
         """Sets the server_id of this DeleteServerMetadataRequest.
 
+        云服务器ID。
 
         :param server_id: The server_id of this DeleteServerMetadataRequest.
         :type: str

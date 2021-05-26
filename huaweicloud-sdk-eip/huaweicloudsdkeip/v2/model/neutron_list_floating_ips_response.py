@@ -35,7 +35,7 @@ class NeutronListFloatingIpsResponse(SdkResponse):
     def __init__(self, floatingips=None, floatingips_links=None):
         """NeutronListFloatingIpsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(NeutronListFloatingIpsResponse, self).__init__()
 
         self._floatingips = None
         self._floatingips_links = None

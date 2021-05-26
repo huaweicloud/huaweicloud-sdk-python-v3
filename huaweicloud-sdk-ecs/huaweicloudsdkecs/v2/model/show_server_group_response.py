@@ -33,7 +33,7 @@ class ShowServerGroupResponse(SdkResponse):
     def __init__(self, server_group=None):
         """ShowServerGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowServerGroupResponse, self).__init__()
 
         self._server_group = None
         self.discriminator = None

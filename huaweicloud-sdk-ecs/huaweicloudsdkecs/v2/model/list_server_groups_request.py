@@ -50,6 +50,7 @@ class ListServerGroupsRequest:
     def limit(self):
         """Gets the limit of this ListServerGroupsRequest.
 
+        查询返回server group数量限制。
 
         :return: The limit of this ListServerGroupsRequest.
         :rtype: int
@@ -60,6 +61,7 @@ class ListServerGroupsRequest:
     def limit(self, limit):
         """Sets the limit of this ListServerGroupsRequest.
 
+        查询返回server group数量限制。
 
         :param limit: The limit of this ListServerGroupsRequest.
         :type: int
@@ -70,6 +72,7 @@ class ListServerGroupsRequest:
     def marker(self):
         """Gets the marker of this ListServerGroupsRequest.
 
+        从marker指定的server group的下一条数据开始查询。
 
         :return: The marker of this ListServerGroupsRequest.
         :rtype: str
@@ -80,6 +83,7 @@ class ListServerGroupsRequest:
     def marker(self, marker):
         """Sets the marker of this ListServerGroupsRequest.
 
+        从marker指定的server group的下一条数据开始查询。
 
         :param marker: The marker of this ListServerGroupsRequest.
         :type: str

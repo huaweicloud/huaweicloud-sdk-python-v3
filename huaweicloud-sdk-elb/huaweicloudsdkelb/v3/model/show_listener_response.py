@@ -35,7 +35,7 @@ class ShowListenerResponse(SdkResponse):
     def __init__(self, request_id=None, listener=None):
         """ShowListenerResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowListenerResponse, self).__init__()
 
         self._request_id = None
         self._listener = None

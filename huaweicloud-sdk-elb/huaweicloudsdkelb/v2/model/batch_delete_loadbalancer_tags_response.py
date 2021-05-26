@@ -31,7 +31,7 @@ class BatchDeleteLoadbalancerTagsResponse(SdkResponse):
     def __init__(self):
         """BatchDeleteLoadbalancerTagsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(BatchDeleteLoadbalancerTagsResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

@@ -35,7 +35,7 @@ class ShowFlavorResponse(SdkResponse):
     def __init__(self, request_id=None, flavor=None):
         """ShowFlavorResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowFlavorResponse, self).__init__()
 
         self._request_id = None
         self._flavor = None

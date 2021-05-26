@@ -49,6 +49,7 @@ class BatchDeleteVolumeTagsRequest:
     def volume_id(self):
         """Gets the volume_id of this BatchDeleteVolumeTagsRequest.
 
+        磁盘ID。
 
         :return: The volume_id of this BatchDeleteVolumeTagsRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class BatchDeleteVolumeTagsRequest:
     def volume_id(self, volume_id):
         """Sets the volume_id of this BatchDeleteVolumeTagsRequest.
 
+        磁盘ID。
 
         :param volume_id: The volume_id of this BatchDeleteVolumeTagsRequest.
         :type: str

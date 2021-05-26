@@ -37,7 +37,7 @@ class ListVolumesResponse(SdkResponse):
     def __init__(self, count=None, volumes_links=None, volumes=None):
         """ListVolumesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListVolumesResponse, self).__init__()
 
         self._count = None
         self._volumes_links = None

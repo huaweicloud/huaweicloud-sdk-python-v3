@@ -48,6 +48,7 @@ class ShowL7RuleRequest:
     def l7policy_id(self):
         """Gets the l7policy_id of this ShowL7RuleRequest.
 
+        7层转发策略。
 
         :return: The l7policy_id of this ShowL7RuleRequest.
         :rtype: str
@@ -58,6 +59,7 @@ class ShowL7RuleRequest:
     def l7policy_id(self, l7policy_id):
         """Sets the l7policy_id of this ShowL7RuleRequest.
 
+        7层转发策略。
 
         :param l7policy_id: The l7policy_id of this ShowL7RuleRequest.
         :type: str
@@ -68,6 +70,7 @@ class ShowL7RuleRequest:
     def l7rule_id(self):
         """Gets the l7rule_id of this ShowL7RuleRequest.
 
+        7层转发规则。
 
         :return: The l7rule_id of this ShowL7RuleRequest.
         :rtype: str
@@ -78,6 +81,7 @@ class ShowL7RuleRequest:
     def l7rule_id(self, l7rule_id):
         """Sets the l7rule_id of this ShowL7RuleRequest.
 
+        7层转发规则。
 
         :param l7rule_id: The l7rule_id of this ShowL7RuleRequest.
         :type: str

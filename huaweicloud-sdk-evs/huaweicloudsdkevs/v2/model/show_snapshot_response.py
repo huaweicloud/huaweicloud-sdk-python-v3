@@ -33,7 +33,7 @@ class ShowSnapshotResponse(SdkResponse):
     def __init__(self, snapshot=None):
         """ShowSnapshotResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ShowSnapshotResponse, self).__init__()
 
         self._snapshot = None
         self.discriminator = None

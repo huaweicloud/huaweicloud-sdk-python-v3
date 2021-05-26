@@ -35,7 +35,7 @@ class UpdateL7PolicyResponse(SdkResponse):
     def __init__(self, request_id=None, l7policy=None):
         """UpdateL7PolicyResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(UpdateL7PolicyResponse, self).__init__()
 
         self._request_id = None
         self._l7policy = None

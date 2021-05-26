@@ -49,6 +49,7 @@ class UpdateWhitelistRequest:
     def whitelist_id(self):
         """Gets the whitelist_id of this UpdateWhitelistRequest.
 
+        待更新的白名单id
 
         :return: The whitelist_id of this UpdateWhitelistRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateWhitelistRequest:
     def whitelist_id(self, whitelist_id):
         """Sets the whitelist_id of this UpdateWhitelistRequest.
 
+        待更新的白名单id
 
         :param whitelist_id: The whitelist_id of this UpdateWhitelistRequest.
         :type: str

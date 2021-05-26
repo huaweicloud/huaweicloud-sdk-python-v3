@@ -49,6 +49,7 @@ class CreateListenerTagsRequest:
     def listener_id(self):
         """Gets the listener_id of this CreateListenerTagsRequest.
 
+        监听器ID。
 
         :return: The listener_id of this CreateListenerTagsRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateListenerTagsRequest:
     def listener_id(self, listener_id):
         """Sets the listener_id of this CreateListenerTagsRequest.
 
+        监听器ID。
 
         :param listener_id: The listener_id of this CreateListenerTagsRequest.
         :type: str

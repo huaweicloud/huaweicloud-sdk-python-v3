@@ -115,6 +115,7 @@ class ListAllMembersRequest:
     def address(self):
         """Gets the address of this ListAllMembersRequest.
 
+        后端云服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中，例如：192.168.3.11。只能指定为主网卡的IP。
 
         :return: The address of this ListAllMembersRequest.
         :rtype: list[str]
@@ -125,6 +126,7 @@ class ListAllMembersRequest:
     def address(self, address):
         """Sets the address of this ListAllMembersRequest.
 
+        后端云服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中，例如：192.168.3.11。只能指定为主网卡的IP。
 
         :param address: The address of this ListAllMembersRequest.
         :type: list[str]
@@ -135,6 +137,7 @@ class ListAllMembersRequest:
     def admin_state_up(self):
         """Gets the admin_state_up of this ListAllMembersRequest.
 
+        后端云服务器的管理状态。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :return: The admin_state_up of this ListAllMembersRequest.
         :rtype: bool
@@ -145,6 +148,7 @@ class ListAllMembersRequest:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this ListAllMembersRequest.
 
+        后端云服务器的管理状态。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :param admin_state_up: The admin_state_up of this ListAllMembersRequest.
         :type: bool
@@ -155,6 +159,7 @@ class ListAllMembersRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListAllMembersRequest.
 
+        企业项目ID。
 
         :return: The enterprise_project_id of this ListAllMembersRequest.
         :rtype: list[str]
@@ -165,6 +170,7 @@ class ListAllMembersRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListAllMembersRequest.
 
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListAllMembersRequest.
         :type: list[str]
@@ -175,6 +181,7 @@ class ListAllMembersRequest:
     def id(self):
         """Gets the id of this ListAllMembersRequest.
 
+        后端云服务器ID。
 
         :return: The id of this ListAllMembersRequest.
         :rtype: list[str]
@@ -185,6 +192,7 @@ class ListAllMembersRequest:
     def id(self, id):
         """Sets the id of this ListAllMembersRequest.
 
+        后端云服务器ID。
 
         :param id: The id of this ListAllMembersRequest.
         :type: list[str]
@@ -195,6 +203,7 @@ class ListAllMembersRequest:
     def ip_version(self):
         """Gets the ip_version of this ListAllMembersRequest.
 
+        IP版本，取值v4、v6
 
         :return: The ip_version of this ListAllMembersRequest.
         :rtype: str
@@ -205,6 +214,7 @@ class ListAllMembersRequest:
     def ip_version(self, ip_version):
         """Sets the ip_version of this ListAllMembersRequest.
 
+        IP版本，取值v4、v6
 
         :param ip_version: The ip_version of this ListAllMembersRequest.
         :type: str
@@ -215,6 +225,7 @@ class ListAllMembersRequest:
     def limit(self):
         """Gets the limit of this ListAllMembersRequest.
 
+        每页返回的个数。
 
         :return: The limit of this ListAllMembersRequest.
         :rtype: int
@@ -225,6 +236,7 @@ class ListAllMembersRequest:
     def limit(self, limit):
         """Sets the limit of this ListAllMembersRequest.
 
+        每页返回的个数。
 
         :param limit: The limit of this ListAllMembersRequest.
         :type: int
@@ -235,6 +247,7 @@ class ListAllMembersRequest:
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this ListAllMembersRequest.
 
+        member所属的负载均衡器ID
 
         :return: The loadbalancer_id of this ListAllMembersRequest.
         :rtype: str
@@ -245,6 +258,7 @@ class ListAllMembersRequest:
     def loadbalancer_id(self, loadbalancer_id):
         """Sets the loadbalancer_id of this ListAllMembersRequest.
 
+        member所属的负载均衡器ID
 
         :param loadbalancer_id: The loadbalancer_id of this ListAllMembersRequest.
         :type: str
@@ -255,6 +269,7 @@ class ListAllMembersRequest:
     def marker(self):
         """Gets the marker of this ListAllMembersRequest.
 
+        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :return: The marker of this ListAllMembersRequest.
         :rtype: str
@@ -265,6 +280,7 @@ class ListAllMembersRequest:
     def marker(self, marker):
         """Sets the marker of this ListAllMembersRequest.
 
+        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListAllMembersRequest.
         :type: str
@@ -275,6 +291,7 @@ class ListAllMembersRequest:
     def name(self):
         """Gets the name of this ListAllMembersRequest.
 
+        后端云服务器名称。
 
         :return: The name of this ListAllMembersRequest.
         :rtype: list[str]
@@ -285,6 +302,7 @@ class ListAllMembersRequest:
     def name(self, name):
         """Sets the name of this ListAllMembersRequest.
 
+        后端云服务器名称。
 
         :param name: The name of this ListAllMembersRequest.
         :type: list[str]
@@ -295,6 +313,7 @@ class ListAllMembersRequest:
     def operating_status(self):
         """Gets the operating_status of this ListAllMembersRequest.
 
+        后端云服务器的健康状态，可以为ONLINE，NO_MONITOR，OFFLINE。
 
         :return: The operating_status of this ListAllMembersRequest.
         :rtype: list[str]
@@ -305,6 +324,7 @@ class ListAllMembersRequest:
     def operating_status(self, operating_status):
         """Sets the operating_status of this ListAllMembersRequest.
 
+        后端云服务器的健康状态，可以为ONLINE，NO_MONITOR，OFFLINE。
 
         :param operating_status: The operating_status of this ListAllMembersRequest.
         :type: list[str]
@@ -315,6 +335,7 @@ class ListAllMembersRequest:
     def page_reverse(self):
         """Gets the page_reverse of this ListAllMembersRequest.
 
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明：必须与limit一起使用。
 
         :return: The page_reverse of this ListAllMembersRequest.
         :rtype: bool
@@ -325,6 +346,7 @@ class ListAllMembersRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListAllMembersRequest.
 
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明：必须与limit一起使用。
 
         :param page_reverse: The page_reverse of this ListAllMembersRequest.
         :type: bool
@@ -335,6 +357,7 @@ class ListAllMembersRequest:
     def pool_id(self):
         """Gets the pool_id of this ListAllMembersRequest.
 
+        member所属的服务器组ID
 
         :return: The pool_id of this ListAllMembersRequest.
         :rtype: str
@@ -345,6 +368,7 @@ class ListAllMembersRequest:
     def pool_id(self, pool_id):
         """Sets the pool_id of this ListAllMembersRequest.
 
+        member所属的服务器组ID
 
         :param pool_id: The pool_id of this ListAllMembersRequest.
         :type: str
@@ -355,6 +379,7 @@ class ListAllMembersRequest:
     def protocol_port(self):
         """Gets the protocol_port of this ListAllMembersRequest.
 
+        后端端口和协议号。
 
         :return: The protocol_port of this ListAllMembersRequest.
         :rtype: list[int]
@@ -365,6 +390,7 @@ class ListAllMembersRequest:
     def protocol_port(self, protocol_port):
         """Sets the protocol_port of this ListAllMembersRequest.
 
+        后端端口和协议号。
 
         :param protocol_port: The protocol_port of this ListAllMembersRequest.
         :type: list[int]
@@ -375,6 +401,7 @@ class ListAllMembersRequest:
     def subnet_cidr_id(self):
         """Gets the subnet_cidr_id of this ListAllMembersRequest.
 
+        后端云服务器所在的子网ID。该子网和后端云服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。暂不支持IPv6。
 
         :return: The subnet_cidr_id of this ListAllMembersRequest.
         :rtype: list[str]
@@ -385,6 +412,7 @@ class ListAllMembersRequest:
     def subnet_cidr_id(self, subnet_cidr_id):
         """Sets the subnet_cidr_id of this ListAllMembersRequest.
 
+        后端云服务器所在的子网ID。该子网和后端云服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。暂不支持IPv6。
 
         :param subnet_cidr_id: The subnet_cidr_id of this ListAllMembersRequest.
         :type: list[str]
@@ -395,6 +423,7 @@ class ListAllMembersRequest:
     def weight(self):
         """Gets the weight of this ListAllMembersRequest.
 
+        后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
 
         :return: The weight of this ListAllMembersRequest.
         :rtype: list[int]
@@ -405,6 +434,7 @@ class ListAllMembersRequest:
     def weight(self, weight):
         """Sets the weight of this ListAllMembersRequest.
 
+        后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
 
         :param weight: The weight of this ListAllMembersRequest.
         :type: list[int]

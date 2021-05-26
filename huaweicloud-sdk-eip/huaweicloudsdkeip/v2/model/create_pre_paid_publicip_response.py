@@ -37,7 +37,7 @@ class CreatePrePaidPublicipResponse(SdkResponse):
     def __init__(self, publicip=None, order_id=None, publicip_id=None):
         """CreatePrePaidPublicipResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreatePrePaidPublicipResponse, self).__init__()
 
         self._publicip = None
         self._order_id = None

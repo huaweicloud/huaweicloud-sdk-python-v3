@@ -31,7 +31,7 @@ class NovaAssociateSecurityGroupResponse(SdkResponse):
     def __init__(self):
         """NovaAssociateSecurityGroupResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(NovaAssociateSecurityGroupResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):

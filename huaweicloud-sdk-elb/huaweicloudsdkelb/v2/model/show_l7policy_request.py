@@ -44,6 +44,7 @@ class ShowL7policyRequest:
     def l7policy_id(self):
         """Gets the l7policy_id of this ShowL7policyRequest.
 
+        转发策略id
 
         :return: The l7policy_id of this ShowL7policyRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowL7policyRequest:
     def l7policy_id(self, l7policy_id):
         """Sets the l7policy_id of this ShowL7policyRequest.
 
+        转发策略id
 
         :param l7policy_id: The l7policy_id of this ShowL7policyRequest.
         :type: str

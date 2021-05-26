@@ -33,7 +33,7 @@ class NovaListServerSecurityGroupsResponse(SdkResponse):
     def __init__(self, security_groups=None):
         """NovaListServerSecurityGroupsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(NovaListServerSecurityGroupsResponse, self).__init__()
 
         self._security_groups = None
         self.discriminator = None

@@ -49,6 +49,7 @@ class DeleteListenerRequest:
     def cascade(self):
         """Gets the cascade of this DeleteListenerRequest.
 
+        （不再支持）级联删除负载均衡器
 
         :return: The cascade of this DeleteListenerRequest.
         :rtype: bool
@@ -59,6 +60,7 @@ class DeleteListenerRequest:
     def cascade(self, cascade):
         """Sets the cascade of this DeleteListenerRequest.
 
+        （不再支持）级联删除负载均衡器
 
         :param cascade: The cascade of this DeleteListenerRequest.
         :type: bool
@@ -69,6 +71,7 @@ class DeleteListenerRequest:
     def listener_id(self):
         """Gets the listener_id of this DeleteListenerRequest.
 
+        监听器id
 
         :return: The listener_id of this DeleteListenerRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class DeleteListenerRequest:
     def listener_id(self, listener_id):
         """Sets the listener_id of this DeleteListenerRequest.
 
+        监听器id
 
         :param listener_id: The listener_id of this DeleteListenerRequest.
         :type: str

@@ -44,6 +44,7 @@ class DeleteIpGroupRequest:
     def ipgroup_id(self):
         """Gets the ipgroup_id of this DeleteIpGroupRequest.
 
+        待更新的IP地址组的id
 
         :return: The ipgroup_id of this DeleteIpGroupRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteIpGroupRequest:
     def ipgroup_id(self, ipgroup_id):
         """Sets the ipgroup_id of this DeleteIpGroupRequest.
 
+        待更新的IP地址组的id
 
         :param ipgroup_id: The ipgroup_id of this DeleteIpGroupRequest.
         :type: str

@@ -33,7 +33,7 @@ class CinderExportToImageResponse(SdkResponse):
     def __init__(self, os_volume_upload_image=None):
         """CinderExportToImageResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CinderExportToImageResponse, self).__init__()
 
         self._os_volume_upload_image = None
         self.discriminator = None

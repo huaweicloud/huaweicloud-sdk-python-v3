@@ -60,6 +60,7 @@ class ListBandwidthsRequest:
     def marker(self):
         """Gets the marker of this ListBandwidthsRequest.
 
+        取值为上一页数据的最后一条记录的id，为空时为查询第一页
 
         :return: The marker of this ListBandwidthsRequest.
         :rtype: str
@@ -70,6 +71,7 @@ class ListBandwidthsRequest:
     def marker(self, marker):
         """Sets the marker of this ListBandwidthsRequest.
 
+        取值为上一页数据的最后一条记录的id，为空时为查询第一页
 
         :param marker: The marker of this ListBandwidthsRequest.
         :type: str
@@ -80,6 +82,7 @@ class ListBandwidthsRequest:
     def limit(self):
         """Gets the limit of this ListBandwidthsRequest.
 
+        功能说明：每页返回的个数  取值范围：0~intmax
 
         :return: The limit of this ListBandwidthsRequest.
         :rtype: int
@@ -90,6 +93,7 @@ class ListBandwidthsRequest:
     def limit(self, limit):
         """Sets the limit of this ListBandwidthsRequest.
 
+        功能说明：每页返回的个数  取值范围：0~intmax
 
         :param limit: The limit of this ListBandwidthsRequest.
         :type: int
@@ -100,6 +104,7 @@ class ListBandwidthsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListBandwidthsRequest.
 
+        功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的虚拟私有云。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的虚拟私有云，请传参all_granted_eps。
 
         :return: The enterprise_project_id of this ListBandwidthsRequest.
         :rtype: str
@@ -110,6 +115,7 @@ class ListBandwidthsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListBandwidthsRequest.
 
+        功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的虚拟私有云。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的虚拟私有云，请传参all_granted_eps。
 
         :param enterprise_project_id: The enterprise_project_id of this ListBandwidthsRequest.
         :type: str
@@ -120,6 +126,7 @@ class ListBandwidthsRequest:
     def share_type(self):
         """Gets the share_type of this ListBandwidthsRequest.
 
+        功能说明：带宽类型，标识是否是共享带宽 取值范围：WHOLE，PER WHOLE表示共享带宽；PER，表示独享带宽
 
         :return: The share_type of this ListBandwidthsRequest.
         :rtype: str
@@ -130,6 +137,7 @@ class ListBandwidthsRequest:
     def share_type(self, share_type):
         """Sets the share_type of this ListBandwidthsRequest.
 
+        功能说明：带宽类型，标识是否是共享带宽 取值范围：WHOLE，PER WHOLE表示共享带宽；PER，表示独享带宽
 
         :param share_type: The share_type of this ListBandwidthsRequest.
         :type: str

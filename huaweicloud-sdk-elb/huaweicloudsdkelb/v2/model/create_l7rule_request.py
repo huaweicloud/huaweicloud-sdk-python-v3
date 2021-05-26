@@ -49,6 +49,7 @@ class CreateL7ruleRequest:
     def l7policy_id(self):
         """Gets the l7policy_id of this CreateL7ruleRequest.
 
+        转发策略id
 
         :return: The l7policy_id of this CreateL7ruleRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class CreateL7ruleRequest:
     def l7policy_id(self, l7policy_id):
         """Sets the l7policy_id of this CreateL7ruleRequest.
 
+        转发策略id
 
         :param l7policy_id: The l7policy_id of this CreateL7ruleRequest.
         :type: str

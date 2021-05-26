@@ -49,6 +49,7 @@ class RollbackSnapshotRequest:
     def snapshot_id(self):
         """Gets the snapshot_id of this RollbackSnapshotRequest.
 
+        快照ID
 
         :return: The snapshot_id of this RollbackSnapshotRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class RollbackSnapshotRequest:
     def snapshot_id(self, snapshot_id):
         """Sets the snapshot_id of this RollbackSnapshotRequest.
 
+        快照ID
 
         :param snapshot_id: The snapshot_id of this RollbackSnapshotRequest.
         :type: str

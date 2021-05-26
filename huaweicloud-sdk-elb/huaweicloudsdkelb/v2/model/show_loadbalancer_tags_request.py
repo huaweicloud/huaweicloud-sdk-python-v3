@@ -44,6 +44,7 @@ class ShowLoadbalancerTagsRequest:
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this ShowLoadbalancerTagsRequest.
 
+        负载均衡器所在的项目id
 
         :return: The loadbalancer_id of this ShowLoadbalancerTagsRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class ShowLoadbalancerTagsRequest:
     def loadbalancer_id(self, loadbalancer_id):
         """Sets the loadbalancer_id of this ShowLoadbalancerTagsRequest.
 
+        负载均衡器所在的项目id
 
         :param loadbalancer_id: The loadbalancer_id of this ShowLoadbalancerTagsRequest.
         :type: str

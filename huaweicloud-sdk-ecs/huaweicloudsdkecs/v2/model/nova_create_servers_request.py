@@ -50,6 +50,7 @@ class NovaCreateServersRequest:
     def open_stack_api_version(self):
         """Gets the open_stack_api_version of this NovaCreateServersRequest.
 
+        微版本头
 
         :return: The open_stack_api_version of this NovaCreateServersRequest.
         :rtype: str
@@ -60,6 +61,7 @@ class NovaCreateServersRequest:
     def open_stack_api_version(self, open_stack_api_version):
         """Sets the open_stack_api_version of this NovaCreateServersRequest.
 
+        微版本头
 
         :param open_stack_api_version: The open_stack_api_version of this NovaCreateServersRequest.
         :type: str

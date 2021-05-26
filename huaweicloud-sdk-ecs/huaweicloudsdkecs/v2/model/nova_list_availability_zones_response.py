@@ -33,7 +33,7 @@ class NovaListAvailabilityZonesResponse(SdkResponse):
     def __init__(self, availability_zone_info=None):
         """NovaListAvailabilityZonesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(NovaListAvailabilityZonesResponse, self).__init__()
 
         self._availability_zone_info = None
         self.discriminator = None

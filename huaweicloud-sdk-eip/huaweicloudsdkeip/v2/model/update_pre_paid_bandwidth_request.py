@@ -49,6 +49,7 @@ class UpdatePrePaidBandwidthRequest:
     def bandwidth_id(self):
         """Gets the bandwidth_id of this UpdatePrePaidBandwidthRequest.
 
+        带宽唯一标识。通过弹性公网IP详情获取，且此弹性公网IP是包周期的。
 
         :return: The bandwidth_id of this UpdatePrePaidBandwidthRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdatePrePaidBandwidthRequest:
     def bandwidth_id(self, bandwidth_id):
         """Sets the bandwidth_id of this UpdatePrePaidBandwidthRequest.
 
+        带宽唯一标识。通过弹性公网IP详情获取，且此弹性公网IP是包周期的。
 
         :param bandwidth_id: The bandwidth_id of this UpdatePrePaidBandwidthRequest.
         :type: str

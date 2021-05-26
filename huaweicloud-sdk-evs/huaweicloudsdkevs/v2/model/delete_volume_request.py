@@ -44,6 +44,7 @@ class DeleteVolumeRequest:
     def volume_id(self):
         """Gets the volume_id of this DeleteVolumeRequest.
 
+        云硬盘ID。
 
         :return: The volume_id of this DeleteVolumeRequest.
         :rtype: str
@@ -54,6 +55,7 @@ class DeleteVolumeRequest:
     def volume_id(self, volume_id):
         """Sets the volume_id of this DeleteVolumeRequest.
 
+        云硬盘ID。
 
         :param volume_id: The volume_id of this DeleteVolumeRequest.
         :type: str

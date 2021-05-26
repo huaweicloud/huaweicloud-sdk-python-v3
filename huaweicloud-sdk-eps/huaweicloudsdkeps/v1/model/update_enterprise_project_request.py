@@ -49,6 +49,7 @@ class UpdateEnterpriseProjectRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this UpdateEnterpriseProjectRequest.
 
+        企业项目ID，不能为0。 可以通过查询企业项目列表接口获取。
 
         :return: The enterprise_project_id of this UpdateEnterpriseProjectRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateEnterpriseProjectRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this UpdateEnterpriseProjectRequest.
 
+        企业项目ID，不能为0。 可以通过查询企业项目列表接口获取。
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateEnterpriseProjectRequest.
         :type: str

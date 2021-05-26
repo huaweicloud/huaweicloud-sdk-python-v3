@@ -49,6 +49,7 @@ class AddPublicipsIntoSharedBandwidthRequest:
     def bandwidth_id(self):
         """Gets the bandwidth_id of this AddPublicipsIntoSharedBandwidthRequest.
 
+        带宽唯一标识
 
         :return: The bandwidth_id of this AddPublicipsIntoSharedBandwidthRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class AddPublicipsIntoSharedBandwidthRequest:
     def bandwidth_id(self, bandwidth_id):
         """Sets the bandwidth_id of this AddPublicipsIntoSharedBandwidthRequest.
 
+        带宽唯一标识
 
         :param bandwidth_id: The bandwidth_id of this AddPublicipsIntoSharedBandwidthRequest.
         :type: str

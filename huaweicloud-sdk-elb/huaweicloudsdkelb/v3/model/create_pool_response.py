@@ -35,7 +35,7 @@ class CreatePoolResponse(SdkResponse):
     def __init__(self, request_id=None, pool=None):
         """CreatePoolResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(CreatePoolResponse, self).__init__()
 
         self._request_id = None
         self._pool = None

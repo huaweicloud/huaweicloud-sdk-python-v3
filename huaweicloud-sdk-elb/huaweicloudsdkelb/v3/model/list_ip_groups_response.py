@@ -37,7 +37,7 @@ class ListIpGroupsResponse(SdkResponse):
     def __init__(self, ipgroups=None, request_id=None, page_info=None):
         """ListIpGroupsResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListIpGroupsResponse, self).__init__()
 
         self._ipgroups = None
         self._request_id = None

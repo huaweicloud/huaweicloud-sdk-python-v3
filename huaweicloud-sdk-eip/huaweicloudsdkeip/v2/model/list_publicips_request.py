@@ -80,6 +80,7 @@ class ListPublicipsRequest:
     def marker(self):
         """Gets the marker of this ListPublicipsRequest.
 
+        取值为上一页数据的最后一条记录的id，为空时为查询第一页
 
         :return: The marker of this ListPublicipsRequest.
         :rtype: str
@@ -90,6 +91,7 @@ class ListPublicipsRequest:
     def marker(self, marker):
         """Sets the marker of this ListPublicipsRequest.
 
+        取值为上一页数据的最后一条记录的id，为空时为查询第一页
 
         :param marker: The marker of this ListPublicipsRequest.
         :type: str
@@ -100,6 +102,7 @@ class ListPublicipsRequest:
     def limit(self):
         """Gets the limit of this ListPublicipsRequest.
 
+        功能说明：每页返回的个数  取值范围：0~intmax
 
         :return: The limit of this ListPublicipsRequest.
         :rtype: int
@@ -110,6 +113,7 @@ class ListPublicipsRequest:
     def limit(self, limit):
         """Sets the limit of this ListPublicipsRequest.
 
+        功能说明：每页返回的个数  取值范围：0~intmax
 
         :param limit: The limit of this ListPublicipsRequest.
         :type: int
@@ -120,6 +124,7 @@ class ListPublicipsRequest:
     def ip_version(self):
         """Gets the ip_version of this ListPublicipsRequest.
 
+        IP地址版本信息  4：IPv4  6：IPv6
 
         :return: The ip_version of this ListPublicipsRequest.
         :rtype: int
@@ -130,6 +135,7 @@ class ListPublicipsRequest:
     def ip_version(self, ip_version):
         """Sets the ip_version of this ListPublicipsRequest.
 
+        IP地址版本信息  4：IPv4  6：IPv6
 
         :param ip_version: The ip_version of this ListPublicipsRequest.
         :type: int
@@ -140,6 +146,7 @@ class ListPublicipsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListPublicipsRequest.
 
+        功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的弹性IP弹性公网IP。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的弹性公网IP，请传参all_granted_eps。
 
         :return: The enterprise_project_id of this ListPublicipsRequest.
         :rtype: str
@@ -150,6 +157,7 @@ class ListPublicipsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListPublicipsRequest.
 
+        功能说明：企业项目ID。可以使用该字段过滤某个企业项目下的弹性IP弹性公网IP。  取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。若需要查询当前用户所有企业项目绑定的弹性公网IP，请传参all_granted_eps。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPublicipsRequest.
         :type: str
@@ -160,6 +168,7 @@ class ListPublicipsRequest:
     def port_id(self):
         """Gets the port_id of this ListPublicipsRequest.
 
+        绑定弹性公网IP的端口id
 
         :return: The port_id of this ListPublicipsRequest.
         :rtype: list[str]
@@ -170,6 +179,7 @@ class ListPublicipsRequest:
     def port_id(self, port_id):
         """Sets the port_id of this ListPublicipsRequest.
 
+        绑定弹性公网IP的端口id
 
         :param port_id: The port_id of this ListPublicipsRequest.
         :type: list[str]
@@ -180,6 +190,7 @@ class ListPublicipsRequest:
     def public_ip_address(self):
         """Gets the public_ip_address of this ListPublicipsRequest.
 
+        IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址
 
         :return: The public_ip_address of this ListPublicipsRequest.
         :rtype: list[str]
@@ -190,6 +201,7 @@ class ListPublicipsRequest:
     def public_ip_address(self, public_ip_address):
         """Sets the public_ip_address of this ListPublicipsRequest.
 
+        IPv4时是申请到的弹性公网IP地址，IPv6时是IPv6地址对应的IPv4地址
 
         :param public_ip_address: The public_ip_address of this ListPublicipsRequest.
         :type: list[str]
@@ -200,6 +212,7 @@ class ListPublicipsRequest:
     def private_ip_address(self):
         """Gets the private_ip_address of this ListPublicipsRequest.
 
+        关联端口的私有IP地址
 
         :return: The private_ip_address of this ListPublicipsRequest.
         :rtype: list[str]
@@ -210,6 +223,7 @@ class ListPublicipsRequest:
     def private_ip_address(self, private_ip_address):
         """Sets the private_ip_address of this ListPublicipsRequest.
 
+        关联端口的私有IP地址
 
         :param private_ip_address: The private_ip_address of this ListPublicipsRequest.
         :type: list[str]
@@ -220,6 +234,7 @@ class ListPublicipsRequest:
     def id(self):
         """Gets the id of this ListPublicipsRequest.
 
+        弹性公网IP唯一标识
 
         :return: The id of this ListPublicipsRequest.
         :rtype: list[str]
@@ -230,6 +245,7 @@ class ListPublicipsRequest:
     def id(self, id):
         """Sets the id of this ListPublicipsRequest.
 
+        弹性公网IP唯一标识
 
         :param id: The id of this ListPublicipsRequest.
         :type: list[str]

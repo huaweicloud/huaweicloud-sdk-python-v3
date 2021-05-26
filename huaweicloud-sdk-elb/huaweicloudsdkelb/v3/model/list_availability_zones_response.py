@@ -35,7 +35,7 @@ class ListAvailabilityZonesResponse(SdkResponse):
     def __init__(self, availability_zones=None, request_id=None):
         """ListAvailabilityZonesResponse - a model defined in huaweicloud sdk"""
         
-        super().__init__()
+        super(ListAvailabilityZonesResponse, self).__init__()
 
         self._availability_zones = None
         self._request_id = None

@@ -49,6 +49,7 @@ class MigrateResourceRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this MigrateResourceRequest.
 
+        目标企业项目ID，enterprise_project_id为0时表示迁移资源到默认资源组default。
 
         :return: The enterprise_project_id of this MigrateResourceRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class MigrateResourceRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this MigrateResourceRequest.
 
+        目标企业项目ID，enterprise_project_id为0时表示迁移资源到默认资源组default。
 
         :param enterprise_project_id: The enterprise_project_id of this MigrateResourceRequest.
         :type: str

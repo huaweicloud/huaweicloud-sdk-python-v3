@@ -120,6 +120,7 @@ class ListL7PoliciesRequest:
     def action(self):
         """Gets the action of this ListL7PoliciesRequest.
 
+        转发策略的转发动作；取值：REDIRECT_TO_POOL：转发到后端云服务器组；REDIRECT_TO_LISTENER：重定向到监听器
 
         :return: The action of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -130,6 +131,7 @@ class ListL7PoliciesRequest:
     def action(self, action):
         """Sets the action of this ListL7PoliciesRequest.
 
+        转发策略的转发动作；取值：REDIRECT_TO_POOL：转发到后端云服务器组；REDIRECT_TO_LISTENER：重定向到监听器
 
         :param action: The action of this ListL7PoliciesRequest.
         :type: list[str]
@@ -140,6 +142,7 @@ class ListL7PoliciesRequest:
     def admin_state_up(self):
         """Gets the admin_state_up of this ListL7PoliciesRequest.
 
+        转发策略的管理状态；该字段为预留字段，暂未启用。默认为true。
 
         :return: The admin_state_up of this ListL7PoliciesRequest.
         :rtype: bool
@@ -150,6 +153,7 @@ class ListL7PoliciesRequest:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this ListL7PoliciesRequest.
 
+        转发策略的管理状态；该字段为预留字段，暂未启用。默认为true。
 
         :param admin_state_up: The admin_state_up of this ListL7PoliciesRequest.
         :type: bool
@@ -160,6 +164,7 @@ class ListL7PoliciesRequest:
     def description(self):
         """Gets the description of this ListL7PoliciesRequest.
 
+        转发策略额描述信息。
 
         :return: The description of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -170,6 +175,7 @@ class ListL7PoliciesRequest:
     def description(self, description):
         """Sets the description of this ListL7PoliciesRequest.
 
+        转发策略额描述信息。
 
         :param description: The description of this ListL7PoliciesRequest.
         :type: list[str]
@@ -180,6 +186,7 @@ class ListL7PoliciesRequest:
     def display_all_rules(self):
         """Gets the display_all_rules of this ListL7PoliciesRequest.
 
+        true:显示policy下面的rule的所有信息，false：只显示policy下面的rule的id信息
 
         :return: The display_all_rules of this ListL7PoliciesRequest.
         :rtype: bool
@@ -190,6 +197,7 @@ class ListL7PoliciesRequest:
     def display_all_rules(self, display_all_rules):
         """Sets the display_all_rules of this ListL7PoliciesRequest.
 
+        true:显示policy下面的rule的所有信息，false：只显示policy下面的rule的id信息
 
         :param display_all_rules: The display_all_rules of this ListL7PoliciesRequest.
         :type: bool
@@ -200,6 +208,7 @@ class ListL7PoliciesRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListL7PoliciesRequest.
 
+        企业项目ID。
 
         :return: The enterprise_project_id of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -210,6 +219,7 @@ class ListL7PoliciesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListL7PoliciesRequest.
 
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListL7PoliciesRequest.
         :type: list[str]
@@ -220,6 +230,7 @@ class ListL7PoliciesRequest:
     def id(self):
         """Gets the id of this ListL7PoliciesRequest.
 
+        转发策略ID
 
         :return: The id of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -230,6 +241,7 @@ class ListL7PoliciesRequest:
     def id(self, id):
         """Sets the id of this ListL7PoliciesRequest.
 
+        转发策略ID
 
         :param id: The id of this ListL7PoliciesRequest.
         :type: list[str]
@@ -240,6 +252,7 @@ class ListL7PoliciesRequest:
     def limit(self):
         """Gets the limit of this ListL7PoliciesRequest.
 
+        每页返回的个数。
 
         :return: The limit of this ListL7PoliciesRequest.
         :rtype: int
@@ -250,6 +263,7 @@ class ListL7PoliciesRequest:
     def limit(self, limit):
         """Sets the limit of this ListL7PoliciesRequest.
 
+        每页返回的个数。
 
         :param limit: The limit of this ListL7PoliciesRequest.
         :type: int
@@ -260,6 +274,7 @@ class ListL7PoliciesRequest:
     def listener_id(self):
         """Gets the listener_id of this ListL7PoliciesRequest.
 
+        转发策略对应的监听器ID。当action为REDIRECT_TO_POOL时，只支持创建在PROTOCOL为HTTP或TERMINATED_HTTPS的listener上。 当action为REDIRECT_TO_LISTENER时，只支持创建在PROTOCOL为HTTP的listener上。
 
         :return: The listener_id of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -270,6 +285,7 @@ class ListL7PoliciesRequest:
     def listener_id(self, listener_id):
         """Sets the listener_id of this ListL7PoliciesRequest.
 
+        转发策略对应的监听器ID。当action为REDIRECT_TO_POOL时，只支持创建在PROTOCOL为HTTP或TERMINATED_HTTPS的listener上。 当action为REDIRECT_TO_LISTENER时，只支持创建在PROTOCOL为HTTP的listener上。
 
         :param listener_id: The listener_id of this ListL7PoliciesRequest.
         :type: list[str]
@@ -280,6 +296,7 @@ class ListL7PoliciesRequest:
     def marker(self):
         """Gets the marker of this ListL7PoliciesRequest.
 
+        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :return: The marker of this ListL7PoliciesRequest.
         :rtype: str
@@ -290,6 +307,7 @@ class ListL7PoliciesRequest:
     def marker(self, marker):
         """Sets the marker of this ListL7PoliciesRequest.
 
+        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListL7PoliciesRequest.
         :type: str
@@ -300,6 +318,7 @@ class ListL7PoliciesRequest:
     def name(self):
         """Gets the name of this ListL7PoliciesRequest.
 
+        转发策略名称。
 
         :return: The name of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -310,6 +329,7 @@ class ListL7PoliciesRequest:
     def name(self, name):
         """Sets the name of this ListL7PoliciesRequest.
 
+        转发策略名称。
 
         :param name: The name of this ListL7PoliciesRequest.
         :type: list[str]
@@ -320,6 +340,7 @@ class ListL7PoliciesRequest:
     def page_reverse(self):
         """Gets the page_reverse of this ListL7PoliciesRequest.
 
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。 使用说明：必须与limit一起使用。
 
         :return: The page_reverse of this ListL7PoliciesRequest.
         :rtype: bool
@@ -330,6 +351,7 @@ class ListL7PoliciesRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListL7PoliciesRequest.
 
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。 使用说明：必须与limit一起使用。
 
         :param page_reverse: The page_reverse of this ListL7PoliciesRequest.
         :type: bool
@@ -340,6 +362,7 @@ class ListL7PoliciesRequest:
     def position(self):
         """Gets the position of this ListL7PoliciesRequest.
 
+        转发策略的优先级，从1递增，最高100。该字段为预留字段，暂未启用。
 
         :return: The position of this ListL7PoliciesRequest.
         :rtype: list[int]
@@ -350,6 +373,7 @@ class ListL7PoliciesRequest:
     def position(self, position):
         """Sets the position of this ListL7PoliciesRequest.
 
+        转发策略的优先级，从1递增，最高100。该字段为预留字段，暂未启用。
 
         :param position: The position of this ListL7PoliciesRequest.
         :type: list[int]
@@ -360,6 +384,7 @@ class ListL7PoliciesRequest:
     def provisioning_status(self):
         """Gets the provisioning_status of this ListL7PoliciesRequest.
 
+        健康检查的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
         :return: The provisioning_status of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -370,6 +395,7 @@ class ListL7PoliciesRequest:
     def provisioning_status(self, provisioning_status):
         """Sets the provisioning_status of this ListL7PoliciesRequest.
 
+        健康检查的配置状态；该字段为预留字段，暂未启用。默认为ACTIVE。
 
         :param provisioning_status: The provisioning_status of this ListL7PoliciesRequest.
         :type: list[str]
@@ -380,6 +406,7 @@ class ListL7PoliciesRequest:
     def redirect_listener_id(self):
         """Gets the redirect_listener_id of this ListL7PoliciesRequest.
 
+        转发到的listener的ID，当action为REDIRECT_TO_LISTENER时生效。当action为REDIRECT_TO_LISTENER时必选
 
         :return: The redirect_listener_id of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -390,6 +417,7 @@ class ListL7PoliciesRequest:
     def redirect_listener_id(self, redirect_listener_id):
         """Sets the redirect_listener_id of this ListL7PoliciesRequest.
 
+        转发到的listener的ID，当action为REDIRECT_TO_LISTENER时生效。当action为REDIRECT_TO_LISTENER时必选
 
         :param redirect_listener_id: The redirect_listener_id of this ListL7PoliciesRequest.
         :type: list[str]
@@ -400,6 +428,7 @@ class ListL7PoliciesRequest:
     def redirect_pool_id(self):
         """Gets the redirect_pool_id of this ListL7PoliciesRequest.
 
+        转发到pool的ID。转发到pool的ID。当action为REDIRECT_TO_POOL时生效。当action为REDIRECT_TO_POOL时必选。
 
         :return: The redirect_pool_id of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -410,6 +439,7 @@ class ListL7PoliciesRequest:
     def redirect_pool_id(self, redirect_pool_id):
         """Sets the redirect_pool_id of this ListL7PoliciesRequest.
 
+        转发到pool的ID。转发到pool的ID。当action为REDIRECT_TO_POOL时生效。当action为REDIRECT_TO_POOL时必选。
 
         :param redirect_pool_id: The redirect_pool_id of this ListL7PoliciesRequest.
         :type: list[str]
@@ -420,6 +450,7 @@ class ListL7PoliciesRequest:
     def redirect_url(self):
         """Gets the redirect_url of this ListL7PoliciesRequest.
 
+        转发到的url。该字段未启用。
 
         :return: The redirect_url of this ListL7PoliciesRequest.
         :rtype: list[str]
@@ -430,6 +461,7 @@ class ListL7PoliciesRequest:
     def redirect_url(self, redirect_url):
         """Sets the redirect_url of this ListL7PoliciesRequest.
 
+        转发到的url。该字段未启用。
 
         :param redirect_url: The redirect_url of this ListL7PoliciesRequest.
         :type: list[str]

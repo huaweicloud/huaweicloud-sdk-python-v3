@@ -49,6 +49,7 @@ class NovaShowServerRequest:
     def server_id(self):
         """Gets the server_id of this NovaShowServerRequest.
 
+        云服务器ID。
 
         :return: The server_id of this NovaShowServerRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class NovaShowServerRequest:
     def server_id(self, server_id):
         """Sets the server_id of this NovaShowServerRequest.
 
+        云服务器ID。
 
         :param server_id: The server_id of this NovaShowServerRequest.
         :type: str
@@ -69,6 +71,7 @@ class NovaShowServerRequest:
     def open_stack_api_version(self):
         """Gets the open_stack_api_version of this NovaShowServerRequest.
 
+        微版本头
 
         :return: The open_stack_api_version of this NovaShowServerRequest.
         :rtype: str
@@ -79,6 +82,7 @@ class NovaShowServerRequest:
     def open_stack_api_version(self, open_stack_api_version):
         """Sets the open_stack_api_version of this NovaShowServerRequest.
 
+        微版本头
 
         :param open_stack_api_version: The open_stack_api_version of this NovaShowServerRequest.
         :type: str

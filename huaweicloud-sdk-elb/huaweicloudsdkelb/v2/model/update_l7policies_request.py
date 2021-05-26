@@ -49,6 +49,7 @@ class UpdateL7policiesRequest:
     def l7policy_id(self):
         """Gets the l7policy_id of this UpdateL7policiesRequest.
 
+        待更新的转发策略id
 
         :return: The l7policy_id of this UpdateL7policiesRequest.
         :rtype: str
@@ -59,6 +60,7 @@ class UpdateL7policiesRequest:
     def l7policy_id(self, l7policy_id):
         """Sets the l7policy_id of this UpdateL7policiesRequest.
 
+        待更新的转发策略id
 
         :param l7policy_id: The l7policy_id of this UpdateL7policiesRequest.
         :type: str
