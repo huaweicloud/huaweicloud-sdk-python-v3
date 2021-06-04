@@ -79,7 +79,7 @@ class AddRuleReq:
     def rule_name(self):
         """Gets the rule_name of this AddRuleReq.
 
-        用户自定义的规则名称。
+        **参数说明**：用户自定义的规则名称。
 
         :return: The rule_name of this AddRuleReq.
         :rtype: str
@@ -90,7 +90,7 @@ class AddRuleReq:
     def rule_name(self, rule_name):
         """Sets the rule_name of this AddRuleReq.
 
-        用户自定义的规则名称。
+        **参数说明**：用户自定义的规则名称。
 
         :param rule_name: The rule_name of this AddRuleReq.
         :type: str
@@ -101,7 +101,7 @@ class AddRuleReq:
     def description(self):
         """Gets the description of this AddRuleReq.
 
-        用户自定义的规则描述。
+        **参数说明**：用户自定义的规则描述。
 
         :return: The description of this AddRuleReq.
         :rtype: str
@@ -112,7 +112,7 @@ class AddRuleReq:
     def description(self, description):
         """Sets the description of this AddRuleReq.
 
-        用户自定义的规则描述。
+        **参数说明**：用户自定义的规则描述。
 
         :param description: The description of this AddRuleReq.
         :type: str
@@ -143,7 +143,7 @@ class AddRuleReq:
     def app_type(self):
         """Gets the app_type of this AddRuleReq.
 
-        租户规则的生效范围，默认GLOBAL，取值如下： - GLOBAL：生效范围为租户级 - APP：生效范围为资源空间级。如果类型为APP，创建的规则生效范围为携带的app_id指定的资源空间，不携带app_id则创建规则生效范围为[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)。 
+        **参数说明**：租户规则的生效范围，默认GLOBAL，。 **取值范围**： - GLOBAL：生效范围为租户级。 - APP：生效范围为资源空间级。如果类型为APP，创建的规则生效范围为携带的app_id指定的资源空间，不携带app_id则创建规则生效范围为[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)。
 
         :return: The app_type of this AddRuleReq.
         :rtype: str
@@ -154,7 +154,7 @@ class AddRuleReq:
     def app_type(self, app_type):
         """Sets the app_type of this AddRuleReq.
 
-        租户规则的生效范围，默认GLOBAL，取值如下： - GLOBAL：生效范围为租户级 - APP：生效范围为资源空间级。如果类型为APP，创建的规则生效范围为携带的app_id指定的资源空间，不携带app_id则创建规则生效范围为[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)。 
+        **参数说明**：租户规则的生效范围，默认GLOBAL，。 **取值范围**： - GLOBAL：生效范围为租户级。 - APP：生效范围为资源空间级。如果类型为APP，创建的规则生效范围为携带的app_id指定的资源空间，不携带app_id则创建规则生效范围为[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)。
 
         :param app_type: The app_type of this AddRuleReq.
         :type: str
@@ -165,7 +165,7 @@ class AddRuleReq:
     def app_id(self):
         """Gets the app_id of this AddRuleReq.
 
-        资源空间ID。
+        **参数说明**：资源空间ID。。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The app_id of this AddRuleReq.
         :rtype: str
@@ -176,7 +176,7 @@ class AddRuleReq:
     def app_id(self, app_id):
         """Sets the app_id of this AddRuleReq.
 
-        资源空间ID。
+        **参数说明**：资源空间ID。。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param app_id: The app_id of this AddRuleReq.
         :type: str
@@ -187,7 +187,7 @@ class AddRuleReq:
     def select(self):
         """Gets the select of this AddRuleReq.
 
-        用户自定义sql select语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        **参数说明**：用户自定义sql select语句，最大长度500，该参数仅供标准版和企业版用户使用。
 
         :return: The select of this AddRuleReq.
         :rtype: str
@@ -198,7 +198,7 @@ class AddRuleReq:
     def select(self, select):
         """Sets the select of this AddRuleReq.
 
-        用户自定义sql select语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        **参数说明**：用户自定义sql select语句，最大长度500，该参数仅供标准版和企业版用户使用。
 
         :param select: The select of this AddRuleReq.
         :type: str
@@ -209,7 +209,7 @@ class AddRuleReq:
     def where(self):
         """Gets the where of this AddRuleReq.
 
-        用户自定义sql where语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        **参数说明**：用户自定义sql where语句，最大长度500，该参数仅供标准版和企业版用户使用。
 
         :return: The where of this AddRuleReq.
         :rtype: str
@@ -220,7 +220,7 @@ class AddRuleReq:
     def where(self, where):
         """Sets the where of this AddRuleReq.
 
-        用户自定义sql where语句，最大长度500，该参数仅供标准版和企业版用户使用。
+        **参数说明**：用户自定义sql where语句，最大长度500，该参数仅供标准版和企业版用户使用。
 
         :param where: The where of this AddRuleReq.
         :type: str
@@ -231,7 +231,7 @@ class AddRuleReq:
     def data_version(self):
         """Gets the data_version of this AddRuleReq.
 
-        规则推送消息的消息格式版本，租户无需设置，仅供内部兼容历史推送消息使用，iocsa的历史推送消息版本为V5.0.1
+        **参数说明**：规则推送消息的消息格式版本，租户无需设置，仅供内部兼容历史推送消息使用，iocsa的历史推送消息版本为V5.0.1
 
         :return: The data_version of this AddRuleReq.
         :rtype: str
@@ -242,7 +242,7 @@ class AddRuleReq:
     def data_version(self, data_version):
         """Sets the data_version of this AddRuleReq.
 
-        规则推送消息的消息格式版本，租户无需设置，仅供内部兼容历史推送消息使用，iocsa的历史推送消息版本为V5.0.1
+        **参数说明**：规则推送消息的消息格式版本，租户无需设置，仅供内部兼容历史推送消息使用，iocsa的历史推送消息版本为V5.0.1
 
         :param data_version: The data_version of this AddRuleReq.
         :type: str

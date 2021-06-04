@@ -57,7 +57,7 @@ class PropertyFilter:
     def path(self):
         """Gets the path of this PropertyFilter.
 
-        设备属性的路径信息，格式：service_id/DataProperty，例如门磁状态为“DoorWindow/status”。多个属性路径之间以逗号分隔。
+        **参数说明**：设备属性的路径信息，格式：service_id/DataProperty，例如门磁状态为“DoorWindow/status”。多个属性路径之间以逗号分隔。
 
         :return: The path of this PropertyFilter.
         :rtype: str
@@ -68,7 +68,7 @@ class PropertyFilter:
     def path(self, path):
         """Sets the path of this PropertyFilter.
 
-        设备属性的路径信息，格式：service_id/DataProperty，例如门磁状态为“DoorWindow/status”。多个属性路径之间以逗号分隔。
+        **参数说明**：设备属性的路径信息，格式：service_id/DataProperty，例如门磁状态为“DoorWindow/status”。多个属性路径之间以逗号分隔。
 
         :param path: The path of this PropertyFilter.
         :type: str
@@ -79,7 +79,7 @@ class PropertyFilter:
     def operator(self):
         """Gets the operator of this PropertyFilter.
 
-        数据比较的操作符，当前支持的操作符有：>，<，>=，<=，=和between:表示数值区间，geo.circle.in:表示圆形区域范围内，geo.circle.out:表示圆形区域范围外。
+        **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：>，<，>=，<=，=和between:表示数值区间，geo.circle.in:表示圆形区域范围内，geo.circle.out:表示圆形区域范围外。
 
         :return: The operator of this PropertyFilter.
         :rtype: str
@@ -90,7 +90,7 @@ class PropertyFilter:
     def operator(self, operator):
         """Sets the operator of this PropertyFilter.
 
-        数据比较的操作符，当前支持的操作符有：>，<，>=，<=，=和between:表示数值区间，geo.circle.in:表示圆形区域范围内，geo.circle.out:表示圆形区域范围外。
+        **参数说明**：数据比较的操作符。 **取值范围**：当前支持的操作符有：>，<，>=，<=，=和between:表示数值区间，geo.circle.in:表示圆形区域范围内，geo.circle.out:表示圆形区域范围外。
 
         :param operator: The operator of this PropertyFilter.
         :type: str
@@ -101,7 +101,7 @@ class PropertyFilter:
     def value(self):
         """Gets the value of this PropertyFilter.
 
-        数据比较表达式的右值。与数据比较操作符between联用时，右值表示最小值和最大值，用逗号隔开，如“20,30”表示大于等于20小于30。
+        **参数说明**：数据比较表达式的右值。与数据比较操作符between联用时，右值表示最小值和最大值，用逗号隔开，如“20,30”表示大于等于20小于30。
 
         :return: The value of this PropertyFilter.
         :rtype: str
@@ -112,7 +112,7 @@ class PropertyFilter:
     def value(self, value):
         """Sets the value of this PropertyFilter.
 
-        数据比较表达式的右值。与数据比较操作符between联用时，右值表示最小值和最大值，用逗号隔开，如“20,30”表示大于等于20小于30。
+        **参数说明**：数据比较表达式的右值。与数据比较操作符between联用时，右值表示最小值和最大值，用逗号隔开，如“20,30”表示大于等于20小于30。
 
         :param value: The value of this PropertyFilter.
         :type: str

@@ -88,7 +88,7 @@ class ServiceCommandPara:
     def para_name(self):
         """Gets the para_name of this ServiceCommandPara.
 
-        参数的名称。
+        **参数说明**：参数的名称。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :return: The para_name of this ServiceCommandPara.
         :rtype: str
@@ -99,7 +99,7 @@ class ServiceCommandPara:
     def para_name(self, para_name):
         """Sets the para_name of this ServiceCommandPara.
 
-        参数的名称。
+        **参数说明**：参数的名称。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param para_name: The para_name of this ServiceCommandPara.
         :type: str
@@ -110,7 +110,7 @@ class ServiceCommandPara:
     def data_type(self):
         """Gets the data_type of this ServiceCommandPara.
 
-        参数的数据类型。取值范围：int，long，decimal，string，DateTime，jsonObject，enum，boolean，string list。
+        **参数说明**：参数的数据类型。 **取值范围**：int，long，decimal，string，DateTime，jsonObject，enum，boolean，string list。
 
         :return: The data_type of this ServiceCommandPara.
         :rtype: str
@@ -121,7 +121,7 @@ class ServiceCommandPara:
     def data_type(self, data_type):
         """Sets the data_type of this ServiceCommandPara.
 
-        参数的数据类型。取值范围：int，long，decimal，string，DateTime，jsonObject，enum，boolean，string list。
+        **参数说明**：参数的数据类型。 **取值范围**：int，long，decimal，string，DateTime，jsonObject，enum，boolean，string list。
 
         :param data_type: The data_type of this ServiceCommandPara.
         :type: str
@@ -132,7 +132,7 @@ class ServiceCommandPara:
     def required(self):
         """Gets the required of this ServiceCommandPara.
 
-        参数是否必选。默认为false。
+        **参数说明**：参数是否必选。默认为false。
 
         :return: The required of this ServiceCommandPara.
         :rtype: bool
@@ -143,7 +143,7 @@ class ServiceCommandPara:
     def required(self, required):
         """Sets the required of this ServiceCommandPara.
 
-        参数是否必选。默认为false。
+        **参数说明**：参数是否必选。默认为false。
 
         :param required: The required of this ServiceCommandPara.
         :type: bool
@@ -154,7 +154,7 @@ class ServiceCommandPara:
     def enum_list(self):
         """Gets the enum_list of this ServiceCommandPara.
 
-        参数的枚举值列表。
+        **参数说明**：参数的枚举值列表。
 
         :return: The enum_list of this ServiceCommandPara.
         :rtype: list[str]
@@ -165,7 +165,7 @@ class ServiceCommandPara:
     def enum_list(self, enum_list):
         """Sets the enum_list of this ServiceCommandPara.
 
-        参数的枚举值列表。
+        **参数说明**：参数的枚举值列表。
 
         :param enum_list: The enum_list of this ServiceCommandPara.
         :type: list[str]
@@ -176,7 +176,7 @@ class ServiceCommandPara:
     def min(self):
         """Gets the min of this ServiceCommandPara.
 
-        参数的最小值。
+        **参数说明**：参数的最小值。 **取值范围**：长度1-16。
 
         :return: The min of this ServiceCommandPara.
         :rtype: str
@@ -187,7 +187,7 @@ class ServiceCommandPara:
     def min(self, min):
         """Sets the min of this ServiceCommandPara.
 
-        参数的最小值。
+        **参数说明**：参数的最小值。 **取值范围**：长度1-16。
 
         :param min: The min of this ServiceCommandPara.
         :type: str
@@ -198,7 +198,7 @@ class ServiceCommandPara:
     def max(self):
         """Gets the max of this ServiceCommandPara.
 
-        参数的最大值。
+        **参数说明**：参数的最大值。 **取值范围**：长度1-16。
 
         :return: The max of this ServiceCommandPara.
         :rtype: str
@@ -209,7 +209,7 @@ class ServiceCommandPara:
     def max(self, max):
         """Sets the max of this ServiceCommandPara.
 
-        参数的最大值。
+        **参数说明**：参数的最大值。 **取值范围**：长度1-16。
 
         :param max: The max of this ServiceCommandPara.
         :type: str
@@ -220,7 +220,7 @@ class ServiceCommandPara:
     def max_length(self):
         """Gets the max_length of this ServiceCommandPara.
 
-        参数的最大长度。
+        **参数说明**：参数的最大长度。
 
         :return: The max_length of this ServiceCommandPara.
         :rtype: int
@@ -231,7 +231,7 @@ class ServiceCommandPara:
     def max_length(self, max_length):
         """Sets the max_length of this ServiceCommandPara.
 
-        参数的最大长度。
+        **参数说明**：参数的最大长度。
 
         :param max_length: The max_length of this ServiceCommandPara.
         :type: int
@@ -242,7 +242,7 @@ class ServiceCommandPara:
     def step(self):
         """Gets the step of this ServiceCommandPara.
 
-        参数的步长。
+        **参数说明**：参数的步长。
 
         :return: The step of this ServiceCommandPara.
         :rtype: float
@@ -253,7 +253,7 @@ class ServiceCommandPara:
     def step(self, step):
         """Sets the step of this ServiceCommandPara.
 
-        参数的步长。
+        **参数说明**：参数的步长。
 
         :param step: The step of this ServiceCommandPara.
         :type: float
@@ -264,7 +264,7 @@ class ServiceCommandPara:
     def unit(self):
         """Gets the unit of this ServiceCommandPara.
 
-        参数的单位。
+        **参数说明**：参数的单位。 **取值范围**：长度不超过16。
 
         :return: The unit of this ServiceCommandPara.
         :rtype: str
@@ -275,7 +275,7 @@ class ServiceCommandPara:
     def unit(self, unit):
         """Sets the unit of this ServiceCommandPara.
 
-        参数的单位。
+        **参数说明**：参数的单位。 **取值范围**：长度不超过16。
 
         :param unit: The unit of this ServiceCommandPara.
         :type: str
@@ -286,7 +286,7 @@ class ServiceCommandPara:
     def description(self):
         """Gets the description of this ServiceCommandPara.
 
-        参数的描述。
+        **参数说明**：参数的描述。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
         :return: The description of this ServiceCommandPara.
         :rtype: str
@@ -297,7 +297,7 @@ class ServiceCommandPara:
     def description(self, description):
         """Sets the description of this ServiceCommandPara.
 
-        参数的描述。
+        **参数说明**：参数的描述。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
         :param description: The description of this ServiceCommandPara.
         :type: str

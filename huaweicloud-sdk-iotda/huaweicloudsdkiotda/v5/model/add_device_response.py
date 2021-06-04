@@ -33,6 +33,7 @@ class AddDeviceResponse(SdkResponse):
         'description': 'str',
         'fw_version': 'str',
         'sw_version': 'str',
+        'device_sdk_version': 'str',
         'auth_info': 'AuthInfo',
         'product_id': 'str',
         'product_name': 'str',
@@ -53,6 +54,7 @@ class AddDeviceResponse(SdkResponse):
         'description': 'description',
         'fw_version': 'fw_version',
         'sw_version': 'sw_version',
+        'device_sdk_version': 'device_sdk_version',
         'auth_info': 'auth_info',
         'product_id': 'product_id',
         'product_name': 'product_name',
@@ -62,7 +64,7 @@ class AddDeviceResponse(SdkResponse):
         'extension_info': 'extension_info'
     }
 
-    def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, description=None, fw_version=None, sw_version=None, auth_info=None, product_id=None, product_name=None, status=None, create_time=None, tags=None, extension_info=None):
+    def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, description=None, fw_version=None, sw_version=None, device_sdk_version=None, auth_info=None, product_id=None, product_name=None, status=None, create_time=None, tags=None, extension_info=None):
         """AddDeviceResponse - a model defined in huaweicloud sdk"""
         
         super(AddDeviceResponse, self).__init__()
@@ -77,6 +79,7 @@ class AddDeviceResponse(SdkResponse):
         self._description = None
         self._fw_version = None
         self._sw_version = None
+        self._device_sdk_version = None
         self._auth_info = None
         self._product_id = None
         self._product_name = None
@@ -106,6 +109,8 @@ class AddDeviceResponse(SdkResponse):
             self.fw_version = fw_version
         if sw_version is not None:
             self.sw_version = sw_version
+        if device_sdk_version is not None:
+            self.device_sdk_version = device_sdk_version
         if auth_info is not None:
             self.auth_info = auth_info
         if product_id is not None:
@@ -191,7 +196,7 @@ class AddDeviceResponse(SdkResponse):
     def node_id(self):
         """Gets the node_id of this AddDeviceResponse.
 
-        设备标识码，通常使用IMEI、MAC地址或Serial No作为nodeId。
+        设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。
 
         :return: The node_id of this AddDeviceResponse.
         :rtype: str
@@ -202,7 +207,7 @@ class AddDeviceResponse(SdkResponse):
     def node_id(self, node_id):
         """Sets the node_id of this AddDeviceResponse.
 
-        设备标识码，通常使用IMEI、MAC地址或Serial No作为nodeId。
+        设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。
 
         :param node_id: The node_id of this AddDeviceResponse.
         :type: str
@@ -340,6 +345,28 @@ class AddDeviceResponse(SdkResponse):
         :type: str
         """
         self._sw_version = sw_version
+
+    @property
+    def device_sdk_version(self):
+        """Gets the device_sdk_version of this AddDeviceResponse.
+
+        设备的sdk信息。
+
+        :return: The device_sdk_version of this AddDeviceResponse.
+        :rtype: str
+        """
+        return self._device_sdk_version
+
+    @device_sdk_version.setter
+    def device_sdk_version(self, device_sdk_version):
+        """Sets the device_sdk_version of this AddDeviceResponse.
+
+        设备的sdk信息。
+
+        :param device_sdk_version: The device_sdk_version of this AddDeviceResponse.
+        :type: str
+        """
+        self._device_sdk_version = device_sdk_version
 
     @property
     def auth_info(self):

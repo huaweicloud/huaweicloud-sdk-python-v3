@@ -150,6 +150,10 @@ class HttpClient(object):
                                                 sdk_error_dict["message"])
             else:
                 for key in sdk_error_dict:
+                    if type(sdk_error_dict[key]) == dict and "error_code" in sdk_error_dict[key] \
+                            and "error_msg" in sdk_error_dict[key]:
+                        sdk_error = exceptions.SdkError(request_id, sdk_error_dict[key]["error_code"],
+                                                        sdk_error_dict[key]["error_msg"])
                     if type(sdk_error_dict[key]) == dict and "code" in sdk_error_dict[key] and "message" in \
                             sdk_error_dict[key]:
                         sdk_error = exceptions.SdkError(request_id, sdk_error_dict[key]["code"],
@@ -164,4 +168,5 @@ class HttpClient(object):
         if sdk_error.error_msg is None or sdk_error.error_msg == "":
             sdk_error = exceptions.SdkError(error_msg=response_body)
 
+        sdk_error.request_id = request_id
         return sdk_error

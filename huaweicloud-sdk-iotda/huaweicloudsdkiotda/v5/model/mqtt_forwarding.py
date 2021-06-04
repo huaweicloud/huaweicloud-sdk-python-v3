@@ -44,7 +44,7 @@ class MqttForwarding:
     def topic(self):
         """Gets the topic of this MqttForwarding.
 
-        用于接收满足规则条件数据的topic。
+        **参数说明**：用于接收满足规则条件数据的topic。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、斜杠（/）、连接符（-）的组合。
 
         :return: The topic of this MqttForwarding.
         :rtype: str
@@ -55,7 +55,7 @@ class MqttForwarding:
     def topic(self, topic):
         """Sets the topic of this MqttForwarding.
 
-        用于接收满足规则条件数据的topic。
+        **参数说明**：用于接收满足规则条件数据的topic。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、斜杠（/）、连接符（-）的组合。
 
         :param topic: The topic of this MqttForwarding.
         :type: str

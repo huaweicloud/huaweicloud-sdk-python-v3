@@ -55,7 +55,7 @@ class NetAddress:
     def ip(self):
         """Gets the ip of this NetAddress.
 
-        服务的对应IP
+        **参数说明**：服务的对应IP
 
         :return: The ip of this NetAddress.
         :rtype: str
@@ -66,7 +66,7 @@ class NetAddress:
     def ip(self, ip):
         """Sets the ip of this NetAddress.
 
-        服务的对应IP
+        **参数说明**：服务的对应IP
 
         :param ip: The ip of this NetAddress.
         :type: str
@@ -77,7 +77,7 @@ class NetAddress:
     def port(self):
         """Gets the port of this NetAddress.
 
-        服务对应端口
+        **参数说明**：服务对应端口
 
         :return: The port of this NetAddress.
         :rtype: int
@@ -88,7 +88,7 @@ class NetAddress:
     def port(self, port):
         """Sets the port of this NetAddress.
 
-        服务对应端口
+        **参数说明**：服务对应端口
 
         :param port: The port of this NetAddress.
         :type: int
@@ -99,7 +99,7 @@ class NetAddress:
     def domain(self):
         """Gets the domain of this NetAddress.
 
-        服务对应的域名
+        **参数说明**：服务对应的域名
 
         :return: The domain of this NetAddress.
         :rtype: str
@@ -110,7 +110,7 @@ class NetAddress:
     def domain(self, domain):
         """Sets the domain of this NetAddress.
 
-        服务对应的域名
+        **参数说明**：服务对应的域名
 
         :param domain: The domain of this NetAddress.
         :type: str

@@ -52,7 +52,7 @@ class BindTagsDTO:
     def resource_type(self):
         """Gets the resource_type of this BindTagsDTO.
 
-        要绑定标签的资源类型。 - device：设备。 
+        **参数说明**：要绑定标签的资源类型。 **取值范围**： - device：设备。
 
         :return: The resource_type of this BindTagsDTO.
         :rtype: str
@@ -63,7 +63,7 @@ class BindTagsDTO:
     def resource_type(self, resource_type):
         """Sets the resource_type of this BindTagsDTO.
 
-        要绑定标签的资源类型。 - device：设备。 
+        **参数说明**：要绑定标签的资源类型。 **取值范围**： - device：设备。
 
         :param resource_type: The resource_type of this BindTagsDTO.
         :type: str
@@ -74,7 +74,7 @@ class BindTagsDTO:
     def resource_id(self):
         """Gets the resource_id of this BindTagsDTO.
 
-        要绑定标签的资源id。例如，资源类型为device，那么对应的资源id就是device_id。
+        **参数说明**：要绑定标签的资源id。例如，资源类型为device，那么对应的资源id就是device_id。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The resource_id of this BindTagsDTO.
         :rtype: str
@@ -85,7 +85,7 @@ class BindTagsDTO:
     def resource_id(self, resource_id):
         """Sets the resource_id of this BindTagsDTO.
 
-        要绑定标签的资源id。例如，资源类型为device，那么对应的资源id就是device_id。
+        **参数说明**：要绑定标签的资源id。例如，资源类型为device，那么对应的资源id就是device_id。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param resource_id: The resource_id of this BindTagsDTO.
         :type: str
@@ -96,7 +96,7 @@ class BindTagsDTO:
     def tags(self):
         """Gets the tags of this BindTagsDTO.
 
-        要绑定到指定资源的标签列表，标签列表中各项标签键值之间不允许重复，一个资源最多可以绑定10个标签。
+        **参数说明**：要绑定到指定资源的标签列表，标签列表中各项标签键值之间不允许重复，一个资源最多可以绑定10个标签。
 
         :return: The tags of this BindTagsDTO.
         :rtype: list[TagV5DTO]
@@ -107,7 +107,7 @@ class BindTagsDTO:
     def tags(self, tags):
         """Sets the tags of this BindTagsDTO.
 
-        要绑定到指定资源的标签列表，标签列表中各项标签键值之间不允许重复，一个资源最多可以绑定10个标签。
+        **参数说明**：要绑定到指定资源的标签列表，标签列表中各项标签键值之间不允许重复，一个资源最多可以绑定10个标签。
 
         :param tags: The tags of this BindTagsDTO.
         :type: list[TagV5DTO]

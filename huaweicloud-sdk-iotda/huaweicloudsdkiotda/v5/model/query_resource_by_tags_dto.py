@@ -48,7 +48,7 @@ class QueryResourceByTagsDTO:
     def resource_type(self):
         """Gets the resource_type of this QueryResourceByTagsDTO.
 
-        要查询的资源类型，当前支持设备（device）。
+        **参数说明**：要查询的资源类型，当前支持设备（device）。
 
         :return: The resource_type of this QueryResourceByTagsDTO.
         :rtype: str
@@ -59,7 +59,7 @@ class QueryResourceByTagsDTO:
     def resource_type(self, resource_type):
         """Sets the resource_type of this QueryResourceByTagsDTO.
 
-        要查询的资源类型，当前支持设备（device）。
+        **参数说明**：要查询的资源类型，当前支持设备（device）。
 
         :param resource_type: The resource_type of this QueryResourceByTagsDTO.
         :type: str
@@ -70,7 +70,7 @@ class QueryResourceByTagsDTO:
     def tags(self):
         """Gets the tags of this QueryResourceByTagsDTO.
 
-        标签列表，支持按照标签key和value组合查询，传入的多个标签之间是或的关系。
+        **参数说明**：标签列表，支持按照标签key和value组合查询，传入的多个标签之间是或的关系。
 
         :return: The tags of this QueryResourceByTagsDTO.
         :rtype: list[TagV5DTO]
@@ -81,7 +81,7 @@ class QueryResourceByTagsDTO:
     def tags(self, tags):
         """Sets the tags of this QueryResourceByTagsDTO.
 
-        标签列表，支持按照标签key和value组合查询，传入的多个标签之间是或的关系。
+        **参数说明**：标签列表，支持按照标签key和value组合查询，传入的多个标签之间是或的关系。
 
         :param tags: The tags of this QueryResourceByTagsDTO.
         :type: list[TagV5DTO]

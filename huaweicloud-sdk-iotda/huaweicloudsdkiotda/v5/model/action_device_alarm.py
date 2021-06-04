@@ -57,7 +57,7 @@ class ActionDeviceAlarm:
     def name(self):
         """Gets the name of this ActionDeviceAlarm.
 
-        告警名称。
+        **参数说明**：告警名称。
 
         :return: The name of this ActionDeviceAlarm.
         :rtype: str
@@ -68,7 +68,7 @@ class ActionDeviceAlarm:
     def name(self, name):
         """Sets the name of this ActionDeviceAlarm.
 
-        告警名称。
+        **参数说明**：告警名称。
 
         :param name: The name of this ActionDeviceAlarm.
         :type: str
@@ -79,7 +79,7 @@ class ActionDeviceAlarm:
     def alarm_status(self):
         """Gets the alarm_status of this ActionDeviceAlarm.
 
-        告警状态。 - fault：上报告警。 - recovery：恢复告警。 
+        **参数说明**：告警状态。 **取值范围**： - fault：上报告警。 - recovery：恢复告警。
 
         :return: The alarm_status of this ActionDeviceAlarm.
         :rtype: str
@@ -90,7 +90,7 @@ class ActionDeviceAlarm:
     def alarm_status(self, alarm_status):
         """Sets the alarm_status of this ActionDeviceAlarm.
 
-        告警状态。 - fault：上报告警。 - recovery：恢复告警。 
+        **参数说明**：告警状态。 **取值范围**： - fault：上报告警。 - recovery：恢复告警。
 
         :param alarm_status: The alarm_status of this ActionDeviceAlarm.
         :type: str
@@ -101,7 +101,7 @@ class ActionDeviceAlarm:
     def severity(self):
         """Gets the severity of this ActionDeviceAlarm.
 
-        告警级别,取值范围：warning（警告）、minor（一般）、major（严重）和critical（致命）。
+        **参数说明**：告警级别。 **取值范围**： - warning：警告。 - minor：一般。 - major：严重。 - critical：致命。
 
         :return: The severity of this ActionDeviceAlarm.
         :rtype: str
@@ -112,7 +112,7 @@ class ActionDeviceAlarm:
     def severity(self, severity):
         """Sets the severity of this ActionDeviceAlarm.
 
-        告警级别,取值范围：warning（警告）、minor（一般）、major（严重）和critical（致命）。
+        **参数说明**：告警级别。 **取值范围**： - warning：警告。 - minor：一般。 - major：严重。 - critical：致命。
 
         :param severity: The severity of this ActionDeviceAlarm.
         :type: str
@@ -123,7 +123,7 @@ class ActionDeviceAlarm:
     def description(self):
         """Gets the description of this ActionDeviceAlarm.
 
-        告警的描述信息。
+        **参数说明**：告警的描述信息。
 
         :return: The description of this ActionDeviceAlarm.
         :rtype: str
@@ -134,7 +134,7 @@ class ActionDeviceAlarm:
     def description(self, description):
         """Sets the description of this ActionDeviceAlarm.
 
-        告警的描述信息。
+        **参数说明**：告警的描述信息。
 
         :param description: The description of this ActionDeviceAlarm.
         :type: str

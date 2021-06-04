@@ -33,7 +33,8 @@ class ShowApplicationResponse(SdkResponse):
         'last_instance_id': 'str',
         'current_instance_id': 'str',
         'service_name': 'str',
-        'freezed': 'bool'
+        'freezed': 'bool',
+        'request_instance_id': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class ShowApplicationResponse(SdkResponse):
         'last_instance_id': 'last_instance_id',
         'current_instance_id': 'current_instance_id',
         'service_name': 'service_name',
-        'freezed': 'freezed'
+        'freezed': 'freezed',
+        'request_instance_id': 'request_instance_id'
     }
 
-    def __init__(self, app_id=None, app_name=None, create_time=None, default_app=None, app_type=None, username=None, permission=None, last_instance_id=None, current_instance_id=None, service_name=None, freezed=None):
+    def __init__(self, app_id=None, app_name=None, create_time=None, default_app=None, app_type=None, username=None, permission=None, last_instance_id=None, current_instance_id=None, service_name=None, freezed=None, request_instance_id=None):
         """ShowApplicationResponse - a model defined in huaweicloud sdk"""
         
         super(ShowApplicationResponse, self).__init__()
@@ -66,6 +68,7 @@ class ShowApplicationResponse(SdkResponse):
         self._current_instance_id = None
         self._service_name = None
         self._freezed = None
+        self._request_instance_id = None
         self.discriminator = None
 
         if app_id is not None:
@@ -90,6 +93,8 @@ class ShowApplicationResponse(SdkResponse):
             self.service_name = service_name
         if freezed is not None:
             self.freezed = freezed
+        if request_instance_id is not None:
+            self.request_instance_id = request_instance_id
 
     @property
     def app_id(self):
@@ -332,6 +337,28 @@ class ShowApplicationResponse(SdkResponse):
         :type: bool
         """
         self._freezed = freezed
+
+    @property
+    def request_instance_id(self):
+        """Gets the request_instance_id of this ShowApplicationResponse.
+
+        调用接口所属instanceId
+
+        :return: The request_instance_id of this ShowApplicationResponse.
+        :rtype: str
+        """
+        return self._request_instance_id
+
+    @request_instance_id.setter
+    def request_instance_id(self, request_instance_id):
+        """Sets the request_instance_id of this ShowApplicationResponse.
+
+        调用接口所属instanceId
+
+        :param request_instance_id: The request_instance_id of this ShowApplicationResponse.
+        :type: str
+        """
+        self._request_instance_id = request_instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

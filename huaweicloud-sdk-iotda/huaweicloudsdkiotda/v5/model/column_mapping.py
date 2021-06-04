@@ -48,7 +48,7 @@ class ColumnMapping:
     def column_name(self):
         """Gets the column_name of this ColumnMapping.
 
-        数据库的列名
+        **参数说明**：数据库的列名
 
         :return: The column_name of this ColumnMapping.
         :rtype: str
@@ -59,7 +59,7 @@ class ColumnMapping:
     def column_name(self, column_name):
         """Sets the column_name of this ColumnMapping.
 
-        数据库的列名
+        **参数说明**：数据库的列名
 
         :param column_name: The column_name of this ColumnMapping.
         :type: str
@@ -70,7 +70,7 @@ class ColumnMapping:
     def json_key(self):
         """Gets the json_key of this ColumnMapping.
 
-        流转数据的属性名
+        **参数说明**：流转数据的属性名
 
         :return: The json_key of this ColumnMapping.
         :rtype: str
@@ -81,7 +81,7 @@ class ColumnMapping:
     def json_key(self, json_key):
         """Sets the json_key of this ColumnMapping.
 
-        流转数据的属性名
+        **参数说明**：流转数据的属性名
 
         :param json_key: The json_key of this ColumnMapping.
         :type: str

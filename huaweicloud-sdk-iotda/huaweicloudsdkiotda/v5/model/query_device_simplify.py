@@ -33,6 +33,7 @@ class QueryDeviceSimplify:
         'description': 'str',
         'fw_version': 'str',
         'sw_version': 'str',
+        'device_sdk_version': 'str',
         'product_id': 'str',
         'product_name': 'str',
         'status': 'str',
@@ -50,13 +51,14 @@ class QueryDeviceSimplify:
         'description': 'description',
         'fw_version': 'fw_version',
         'sw_version': 'sw_version',
+        'device_sdk_version': 'device_sdk_version',
         'product_id': 'product_id',
         'product_name': 'product_name',
         'status': 'status',
         'tags': 'tags'
     }
 
-    def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, description=None, fw_version=None, sw_version=None, product_id=None, product_name=None, status=None, tags=None):
+    def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, description=None, fw_version=None, sw_version=None, device_sdk_version=None, product_id=None, product_name=None, status=None, tags=None):
         """QueryDeviceSimplify - a model defined in huaweicloud sdk"""
         
         
@@ -71,6 +73,7 @@ class QueryDeviceSimplify:
         self._description = None
         self._fw_version = None
         self._sw_version = None
+        self._device_sdk_version = None
         self._product_id = None
         self._product_name = None
         self._status = None
@@ -97,6 +100,8 @@ class QueryDeviceSimplify:
             self.fw_version = fw_version
         if sw_version is not None:
             self.sw_version = sw_version
+        if device_sdk_version is not None:
+            self.device_sdk_version = device_sdk_version
         if product_id is not None:
             self.product_id = product_id
         if product_name is not None:
@@ -176,7 +181,7 @@ class QueryDeviceSimplify:
     def node_id(self):
         """Gets the node_id of this QueryDeviceSimplify.
 
-        设备标识码，通常使用IMEI、MAC地址或Serial No作为nodeId。
+        设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。
 
         :return: The node_id of this QueryDeviceSimplify.
         :rtype: str
@@ -187,7 +192,7 @@ class QueryDeviceSimplify:
     def node_id(self, node_id):
         """Sets the node_id of this QueryDeviceSimplify.
 
-        设备标识码，通常使用IMEI、MAC地址或Serial No作为nodeId。
+        设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。
 
         :param node_id: The node_id of this QueryDeviceSimplify.
         :type: str
@@ -325,6 +330,28 @@ class QueryDeviceSimplify:
         :type: str
         """
         self._sw_version = sw_version
+
+    @property
+    def device_sdk_version(self):
+        """Gets the device_sdk_version of this QueryDeviceSimplify.
+
+        设备的sdk信息。
+
+        :return: The device_sdk_version of this QueryDeviceSimplify.
+        :rtype: str
+        """
+        return self._device_sdk_version
+
+    @device_sdk_version.setter
+    def device_sdk_version(self, device_sdk_version):
+        """Sets the device_sdk_version of this QueryDeviceSimplify.
+
+        设备的sdk信息。
+
+        :param device_sdk_version: The device_sdk_version of this QueryDeviceSimplify.
+        :type: str
+        """
+        self._device_sdk_version = device_sdk_version
 
     @property
     def product_id(self):

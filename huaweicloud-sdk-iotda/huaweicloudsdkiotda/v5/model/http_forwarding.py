@@ -59,7 +59,7 @@ class HttpForwarding:
     def url(self):
         """Gets the url of this HttpForwarding.
 
-        用于接收满足规则条件数据的http服务器地址。
+        **参数说明**：用于接收满足规则条件数据的http服务器地址。
 
         :return: The url of this HttpForwarding.
         :rtype: str
@@ -70,7 +70,7 @@ class HttpForwarding:
     def url(self, url):
         """Sets the url of this HttpForwarding.
 
-        用于接收满足规则条件数据的http服务器地址。
+        **参数说明**：用于接收满足规则条件数据的http服务器地址。
 
         :param url: The url of this HttpForwarding.
         :type: str
@@ -81,7 +81,7 @@ class HttpForwarding:
     def cert_id(self):
         """Gets the cert_id of this HttpForwarding.
 
-        证书id，通过证书上传接口上传证书获取Id
+        **参数说明**：证书id，请参见[获取证书ID](https://support.huaweicloud.com/usermanual-iothub/iot_01_0001.html#section3)
 
         :return: The cert_id of this HttpForwarding.
         :rtype: str
@@ -92,7 +92,7 @@ class HttpForwarding:
     def cert_id(self, cert_id):
         """Sets the cert_id of this HttpForwarding.
 
-        证书id，通过证书上传接口上传证书获取Id
+        **参数说明**：证书id，请参见[获取证书ID](https://support.huaweicloud.com/usermanual-iothub/iot_01_0001.html#section3)
 
         :param cert_id: The cert_id of this HttpForwarding.
         :type: str
@@ -103,7 +103,7 @@ class HttpForwarding:
     def cn_name(self):
         """Gets the cn_name of this HttpForwarding.
 
-        当sni_enable为true时，此字段需要填写，当sni_enbale为false时，此字段默认为*
+        **参数说明**：当sni_enable为true时，此字段需要填写，内容为将要请求的服务端证书的域名,举例:www.example.com:8443;当sni_enbale为false时，此字段默认不填写。
 
         :return: The cn_name of this HttpForwarding.
         :rtype: str
@@ -114,7 +114,7 @@ class HttpForwarding:
     def cn_name(self, cn_name):
         """Sets the cn_name of this HttpForwarding.
 
-        当sni_enable为true时，此字段需要填写，当sni_enbale为false时，此字段默认为*
+        **参数说明**：当sni_enable为true时，此字段需要填写，内容为将要请求的服务端证书的域名,举例:www.example.com:8443;当sni_enbale为false时，此字段默认不填写。
 
         :param cn_name: The cn_name of this HttpForwarding.
         :type: str
@@ -125,7 +125,7 @@ class HttpForwarding:
     def sni_enable(self):
         """Gets the sni_enable of this HttpForwarding.
 
-        需要https服务端和客户端都支持此功能，默认为false，设成true表明Https的客户端在发起请求时，需要携带cn_name；https服务端根据cn_name返回对应的证书；设为false可关闭此功能
+        **参数说明**：需要https服务端和客户端都支持此功能，默认为false，设成true表明Https的客户端在发起请求时，需要携带cn_name；https服务端根据cn_name返回对应的证书；设为false可关闭此功能。
 
         :return: The sni_enable of this HttpForwarding.
         :rtype: bool
@@ -136,7 +136,7 @@ class HttpForwarding:
     def sni_enable(self, sni_enable):
         """Sets the sni_enable of this HttpForwarding.
 
-        需要https服务端和客户端都支持此功能，默认为false，设成true表明Https的客户端在发起请求时，需要携带cn_name；https服务端根据cn_name返回对应的证书；设为false可关闭此功能
+        **参数说明**：需要https服务端和客户端都支持此功能，默认为false，设成true表明Https的客户端在发起请求时，需要携带cn_name；https服务端根据cn_name返回对应的证书；设为false可关闭此功能。
 
         :param sni_enable: The sni_enable of this HttpForwarding.
         :type: bool

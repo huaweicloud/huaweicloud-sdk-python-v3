@@ -76,7 +76,7 @@ class Rule:
     def name(self):
         """Gets the name of this Rule.
 
-        规则名称。
+        **参数说明**：规则名称。
 
         :return: The name of this Rule.
         :rtype: str
@@ -87,7 +87,7 @@ class Rule:
     def name(self, name):
         """Sets the name of this Rule.
 
-        规则名称。
+        **参数说明**：规则名称。
 
         :param name: The name of this Rule.
         :type: str
@@ -98,7 +98,7 @@ class Rule:
     def description(self):
         """Gets the description of this Rule.
 
-        规则的描述信息。
+        **参数说明**：规则的描述信息。
 
         :return: The description of this Rule.
         :rtype: str
@@ -109,7 +109,7 @@ class Rule:
     def description(self, description):
         """Sets the description of this Rule.
 
-        规则的描述信息。
+        **参数说明**：规则的描述信息。
 
         :param description: The description of this Rule.
         :type: str
@@ -140,7 +140,7 @@ class Rule:
     def actions(self):
         """Gets the actions of this Rule.
 
-        规则的动作列表，单个规则最多支持设置10个动作。
+        **参数说明**：规则的动作列表，单个规则最多支持设置10个动作。
 
         :return: The actions of this Rule.
         :rtype: list[RuleAction]
@@ -151,7 +151,7 @@ class Rule:
     def actions(self, actions):
         """Sets the actions of this Rule.
 
-        规则的动作列表，单个规则最多支持设置10个动作。
+        **参数说明**：规则的动作列表，单个规则最多支持设置10个动作。
 
         :param actions: The actions of this Rule.
         :type: list[RuleAction]
@@ -162,7 +162,7 @@ class Rule:
     def rule_type(self):
         """Gets the rule_type of this Rule.
 
-        规则的类型 - DEVICE_LINKAGE：设备联动。 - DATA_FORWARDING：数据转发。 - EDGE：边缘侧。 
+        **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：设备联动。 - DATA_FORWARDING：数据转发。 - EDGE：边缘侧。
 
         :return: The rule_type of this Rule.
         :rtype: str
@@ -173,7 +173,7 @@ class Rule:
     def rule_type(self, rule_type):
         """Sets the rule_type of this Rule.
 
-        规则的类型 - DEVICE_LINKAGE：设备联动。 - DATA_FORWARDING：数据转发。 - EDGE：边缘侧。 
+        **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：设备联动。 - DATA_FORWARDING：数据转发。 - EDGE：边缘侧。
 
         :param rule_type: The rule_type of this Rule.
         :type: str
@@ -184,7 +184,7 @@ class Rule:
     def status(self):
         """Gets the status of this Rule.
 
-        规则的状态，默认值：active。 - active：激活。 - inactive：未激活。 
+        **参数说明**：规则的状态，默认值：active。 **取值范围**： - active：激活。 - inactive：未激活。
 
         :return: The status of this Rule.
         :rtype: str
@@ -195,7 +195,7 @@ class Rule:
     def status(self, status):
         """Sets the status of this Rule.
 
-        规则的状态，默认值：active。 - active：激活。 - inactive：未激活。 
+        **参数说明**：规则的状态，默认值：active。 **取值范围**： - active：激活。 - inactive：未激活。
 
         :param status: The status of this Rule.
         :type: str
@@ -206,7 +206,7 @@ class Rule:
     def app_id(self):
         """Gets the app_id of this Rule.
 
-        资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。
+        **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The app_id of this Rule.
         :rtype: str
@@ -217,7 +217,7 @@ class Rule:
     def app_id(self, app_id):
         """Sets the app_id of this Rule.
 
-        资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。
+        **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param app_id: The app_id of this Rule.
         :type: str
@@ -228,7 +228,7 @@ class Rule:
     def edge_node_ids(self):
         """Gets the edge_node_ids of this Rule.
 
-        归属边缘侧节点设备ID列表。
+        **参数说明**：归属边缘侧节点设备ID列表。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The edge_node_ids of this Rule.
         :rtype: list[str]
@@ -239,7 +239,7 @@ class Rule:
     def edge_node_ids(self, edge_node_ids):
         """Sets the edge_node_ids of this Rule.
 
-        归属边缘侧节点设备ID列表。
+        **参数说明**：归属边缘侧节点设备ID列表。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param edge_node_ids: The edge_node_ids of this Rule.
         :type: list[str]

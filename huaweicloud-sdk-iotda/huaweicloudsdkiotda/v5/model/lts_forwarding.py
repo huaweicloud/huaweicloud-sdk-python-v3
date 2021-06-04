@@ -48,7 +48,7 @@ class LtsForwarding:
     def log_group_id(self):
         """Gets the log_group_id of this LtsForwarding.
 
-        用于接收日志的日志组Id，通过调用LTS服务创建日志组接口获取(https://support.huaweicloud.com/api-lts/lts_api_0012.html)。
+        **参数说明**：用于接收日志的日志组Id，通过调用LTS服务创建日志组接口获取(https://support.huaweicloud.com/api-lts/lts_api_0012.html)。
 
         :return: The log_group_id of this LtsForwarding.
         :rtype: str
@@ -59,7 +59,7 @@ class LtsForwarding:
     def log_group_id(self, log_group_id):
         """Sets the log_group_id of this LtsForwarding.
 
-        用于接收日志的日志组Id，通过调用LTS服务创建日志组接口获取(https://support.huaweicloud.com/api-lts/lts_api_0012.html)。
+        **参数说明**：用于接收日志的日志组Id，通过调用LTS服务创建日志组接口获取(https://support.huaweicloud.com/api-lts/lts_api_0012.html)。
 
         :param log_group_id: The log_group_id of this LtsForwarding.
         :type: str
@@ -70,7 +70,7 @@ class LtsForwarding:
     def log_stream_id(self):
         """Gets the log_stream_id of this LtsForwarding.
 
-        用于接收日志的日志流Id，通过调用LTS服务创建日志流接口获取(https://support.huaweicloud.com/api-lts/lts_api_0016.html)。
+        **参数说明**：用于接收日志的日志流Id，通过调用LTS服务创建日志流接口获取(https://support.huaweicloud.com/api-lts/lts_api_0016.html)。
 
         :return: The log_stream_id of this LtsForwarding.
         :rtype: str
@@ -81,7 +81,7 @@ class LtsForwarding:
     def log_stream_id(self, log_stream_id):
         """Sets the log_stream_id of this LtsForwarding.
 
-        用于接收日志的日志流Id，通过调用LTS服务创建日志流接口获取(https://support.huaweicloud.com/api-lts/lts_api_0016.html)。
+        **参数说明**：用于接收日志的日志流Id，通过调用LTS服务创建日志流接口获取(https://support.huaweicloud.com/api-lts/lts_api_0016.html)。
 
         :param log_stream_id: The log_stream_id of this LtsForwarding.
         :type: str

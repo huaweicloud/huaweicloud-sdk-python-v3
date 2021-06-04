@@ -49,7 +49,7 @@ class ServiceCommandResponse:
     def response_name(self):
         """Gets the response_name of this ServiceCommandResponse.
 
-        设备命令响应名称。
+        **参数说明**：设备命令响应名称。 **取值范围**：长度不超过128，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :return: The response_name of this ServiceCommandResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class ServiceCommandResponse:
     def response_name(self, response_name):
         """Sets the response_name of this ServiceCommandResponse.
 
-        设备命令响应名称。
+        **参数说明**：设备命令响应名称。 **取值范围**：长度不超过128，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param response_name: The response_name of this ServiceCommandResponse.
         :type: str
@@ -71,7 +71,7 @@ class ServiceCommandResponse:
     def paras(self):
         """Gets the paras of this ServiceCommandResponse.
 
-        设备命令响应的参数列表。
+        **参数说明**：设备命令响应的参数列表。
 
         :return: The paras of this ServiceCommandResponse.
         :rtype: list[ServiceCommandPara]
@@ -82,7 +82,7 @@ class ServiceCommandResponse:
     def paras(self, paras):
         """Sets the paras of this ServiceCommandResponse.
 
-        设备命令响应的参数列表。
+        **参数说明**：设备命令响应的参数列表。
 
         :param paras: The paras of this ServiceCommandResponse.
         :type: list[ServiceCommandPara]

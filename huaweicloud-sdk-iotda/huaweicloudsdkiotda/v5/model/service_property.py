@@ -97,7 +97,7 @@ class ServiceProperty:
     def property_name(self):
         """Gets the property_name of this ServiceProperty.
 
-        设备属性名称。
+        **参数说明**：设备属性名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :return: The property_name of this ServiceProperty.
         :rtype: str
@@ -108,7 +108,7 @@ class ServiceProperty:
     def property_name(self, property_name):
         """Sets the property_name of this ServiceProperty.
 
-        设备属性名称。
+        **参数说明**：设备属性名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param property_name: The property_name of this ServiceProperty.
         :type: str
@@ -119,7 +119,7 @@ class ServiceProperty:
     def data_type(self):
         """Gets the data_type of this ServiceProperty.
 
-        设备属性的数据类型。取值范围：int，long，decimal，string，DateTime，jsonObject，enum，boolean，string list。
+        **参数说明**：设备属性的数据类型。 **取值范围**：int，long，decimal，string，DateTime，jsonObject，enum，boolean，string list。
 
         :return: The data_type of this ServiceProperty.
         :rtype: str
@@ -130,7 +130,7 @@ class ServiceProperty:
     def data_type(self, data_type):
         """Sets the data_type of this ServiceProperty.
 
-        设备属性的数据类型。取值范围：int，long，decimal，string，DateTime，jsonObject，enum，boolean，string list。
+        **参数说明**：设备属性的数据类型。 **取值范围**：int，long，decimal，string，DateTime，jsonObject，enum，boolean，string list。
 
         :param data_type: The data_type of this ServiceProperty.
         :type: str
@@ -141,7 +141,7 @@ class ServiceProperty:
     def required(self):
         """Gets the required of this ServiceProperty.
 
-        设备属性是否必选。默认为false。
+        **参数说明**：设备属性是否必选。默认为false。
 
         :return: The required of this ServiceProperty.
         :rtype: bool
@@ -152,7 +152,7 @@ class ServiceProperty:
     def required(self, required):
         """Sets the required of this ServiceProperty.
 
-        设备属性是否必选。默认为false。
+        **参数说明**：设备属性是否必选。默认为false。
 
         :param required: The required of this ServiceProperty.
         :type: bool
@@ -163,7 +163,7 @@ class ServiceProperty:
     def enum_list(self):
         """Gets the enum_list of this ServiceProperty.
 
-        设备属性的枚举值列表。
+        **参数说明**：设备属性的枚举值列表。
 
         :return: The enum_list of this ServiceProperty.
         :rtype: list[str]
@@ -174,7 +174,7 @@ class ServiceProperty:
     def enum_list(self, enum_list):
         """Sets the enum_list of this ServiceProperty.
 
-        设备属性的枚举值列表。
+        **参数说明**：设备属性的枚举值列表。
 
         :param enum_list: The enum_list of this ServiceProperty.
         :type: list[str]
@@ -185,7 +185,7 @@ class ServiceProperty:
     def min(self):
         """Gets the min of this ServiceProperty.
 
-        设备属性的最小值。
+        **参数说明**：设备属性的最小值。 **取值范围**：长度1-16。
 
         :return: The min of this ServiceProperty.
         :rtype: str
@@ -196,7 +196,7 @@ class ServiceProperty:
     def min(self, min):
         """Sets the min of this ServiceProperty.
 
-        设备属性的最小值。
+        **参数说明**：设备属性的最小值。 **取值范围**：长度1-16。
 
         :param min: The min of this ServiceProperty.
         :type: str
@@ -207,7 +207,7 @@ class ServiceProperty:
     def max(self):
         """Gets the max of this ServiceProperty.
 
-        设备属性的最大值。
+        **参数说明**：设备属性的最大值。 **取值范围**：长度1-16。
 
         :return: The max of this ServiceProperty.
         :rtype: str
@@ -218,7 +218,7 @@ class ServiceProperty:
     def max(self, max):
         """Sets the max of this ServiceProperty.
 
-        设备属性的最大值。
+        **参数说明**：设备属性的最大值。 **取值范围**：长度1-16。
 
         :param max: The max of this ServiceProperty.
         :type: str
@@ -229,7 +229,7 @@ class ServiceProperty:
     def max_length(self):
         """Gets the max_length of this ServiceProperty.
 
-        设备属性的最大长度。
+        **参数说明**：设备属性的最大长度。
 
         :return: The max_length of this ServiceProperty.
         :rtype: int
@@ -240,7 +240,7 @@ class ServiceProperty:
     def max_length(self, max_length):
         """Sets the max_length of this ServiceProperty.
 
-        设备属性的最大长度。
+        **参数说明**：设备属性的最大长度。
 
         :param max_length: The max_length of this ServiceProperty.
         :type: int
@@ -251,7 +251,7 @@ class ServiceProperty:
     def step(self):
         """Gets the step of this ServiceProperty.
 
-        设备属性的步长。
+        **参数说明**：设备属性的步长。
 
         :return: The step of this ServiceProperty.
         :rtype: float
@@ -262,7 +262,7 @@ class ServiceProperty:
     def step(self, step):
         """Sets the step of this ServiceProperty.
 
-        设备属性的步长。
+        **参数说明**：设备属性的步长。
 
         :param step: The step of this ServiceProperty.
         :type: float
@@ -273,7 +273,7 @@ class ServiceProperty:
     def unit(self):
         """Gets the unit of this ServiceProperty.
 
-        设备属性的单位。
+        **参数说明**：设备属性的单位。 **取值范围**：长度不超过16。
 
         :return: The unit of this ServiceProperty.
         :rtype: str
@@ -284,7 +284,7 @@ class ServiceProperty:
     def unit(self, unit):
         """Sets the unit of this ServiceProperty.
 
-        设备属性的单位。
+        **参数说明**：设备属性的单位。 **取值范围**：长度不超过16。
 
         :param unit: The unit of this ServiceProperty.
         :type: str
@@ -295,7 +295,7 @@ class ServiceProperty:
     def method(self):
         """Gets the method of this ServiceProperty.
 
-        设备属性的访问模式。取值范围：RWE，RW，RE，WE，E，W，R。 - R：属性值可读 - W：属性值可写 - E：属性值可订阅，即属性值变化时上报事件 
+        **参数说明**：设备属性的访问模式。 **取值范围**：RWE，RW，RE，WE，E，W，R。 - R：属性值可读 - W：属性值可写 - E：属性值可订阅，即属性值变化时上报事件
 
         :return: The method of this ServiceProperty.
         :rtype: str
@@ -306,7 +306,7 @@ class ServiceProperty:
     def method(self, method):
         """Sets the method of this ServiceProperty.
 
-        设备属性的访问模式。取值范围：RWE，RW，RE，WE，E，W，R。 - R：属性值可读 - W：属性值可写 - E：属性值可订阅，即属性值变化时上报事件 
+        **参数说明**：设备属性的访问模式。 **取值范围**：RWE，RW，RE，WE，E，W，R。 - R：属性值可读 - W：属性值可写 - E：属性值可订阅，即属性值变化时上报事件
 
         :param method: The method of this ServiceProperty.
         :type: str
@@ -317,7 +317,7 @@ class ServiceProperty:
     def description(self):
         """Gets the description of this ServiceProperty.
 
-        设备属性的描述。
+        **参数说明**：设备属性的描述。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
         :return: The description of this ServiceProperty.
         :rtype: str
@@ -328,7 +328,7 @@ class ServiceProperty:
     def description(self, description):
         """Sets the description of this ServiceProperty.
 
-        设备属性的描述。
+        **参数说明**：设备属性的描述。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
         :param description: The description of this ServiceProperty.
         :type: str
@@ -339,7 +339,7 @@ class ServiceProperty:
     def default_value(self):
         """Gets the default_value of this ServiceProperty.
 
-        设备属性的默认值。如果设置了默认值，使用该产品创建设备时，会将该属性的默认值写入到该设备的设备影子预期数据中，待设备上线时将该属性默认值下发给设备。
+        **参数说明**：设备属性的默认值。如果设置了默认值，使用该产品创建设备时，会将该属性的默认值写入到该设备的设备影子预期数据中，待设备上线时将该属性默认值下发给设备。
 
         :return: The default_value of this ServiceProperty.
         :rtype: object
@@ -350,7 +350,7 @@ class ServiceProperty:
     def default_value(self, default_value):
         """Sets the default_value of this ServiceProperty.
 
-        设备属性的默认值。如果设置了默认值，使用该产品创建设备时，会将该属性的默认值写入到该设备的设备影子预期数据中，待设备上线时将该属性默认值下发给设备。
+        **参数说明**：设备属性的默认值。如果设置了默认值，使用该产品创建设备时，会将该属性的默认值写入到该设备的设备影子预期数据中，待设备上线时将该属性默认值下发给设备。
 
         :param default_value: The default_value of this ServiceProperty.
         :type: object

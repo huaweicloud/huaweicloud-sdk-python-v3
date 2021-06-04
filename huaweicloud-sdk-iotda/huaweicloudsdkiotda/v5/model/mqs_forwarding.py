@@ -62,7 +62,7 @@ class MqsForwarding:
     def url(self):
         """Gets the url of this MqsForwarding.
 
-        MQS服务的URL
+        **参数说明**：MQS服务的URL
 
         :return: The url of this MqsForwarding.
         :rtype: str
@@ -73,7 +73,7 @@ class MqsForwarding:
     def url(self, url):
         """Sets the url of this MqsForwarding.
 
-        MQS服务的URL
+        **参数说明**：MQS服务的URL
 
         :param url: The url of this MqsForwarding.
         :type: str
@@ -84,7 +84,7 @@ class MqsForwarding:
     def user_name(self):
         """Gets the user_name of this MqsForwarding.
 
-        用于登录MQS的用户名
+        **参数说明**：用于登录MQS的用户名
 
         :return: The user_name of this MqsForwarding.
         :rtype: str
@@ -95,7 +95,7 @@ class MqsForwarding:
     def user_name(self, user_name):
         """Sets the user_name of this MqsForwarding.
 
-        用于登录MQS的用户名
+        **参数说明**：用于登录MQS的用户名
 
         :param user_name: The user_name of this MqsForwarding.
         :type: str
@@ -106,7 +106,7 @@ class MqsForwarding:
     def password(self):
         """Gets the password of this MqsForwarding.
 
-        用于登录MQS的密码
+        **参数说明**：用于登录MQS的密码
 
         :return: The password of this MqsForwarding.
         :rtype: str
@@ -117,7 +117,7 @@ class MqsForwarding:
     def password(self, password):
         """Sets the password of this MqsForwarding.
 
-        用于登录MQS的密码
+        **参数说明**：用于登录MQS的密码
 
         :param password: The password of this MqsForwarding.
         :type: str
@@ -128,7 +128,7 @@ class MqsForwarding:
     def topic(self):
         """Gets the topic of this MqsForwarding.
 
-        订阅的MQS主题
+        **参数说明**：订阅的MQS主题
 
         :return: The topic of this MqsForwarding.
         :rtype: str
@@ -139,7 +139,7 @@ class MqsForwarding:
     def topic(self, topic):
         """Sets the topic of this MqsForwarding.
 
-        订阅的MQS主题
+        **参数说明**：订阅的MQS主题
 
         :param topic: The topic of this MqsForwarding.
         :type: str
@@ -150,7 +150,7 @@ class MqsForwarding:
     def encrypt_transport(self):
         """Gets the encrypt_transport of this MqsForwarding.
 
-        是否加密传输
+        **参数说明**：是否加密传输
 
         :return: The encrypt_transport of this MqsForwarding.
         :rtype: bool
@@ -161,7 +161,7 @@ class MqsForwarding:
     def encrypt_transport(self, encrypt_transport):
         """Sets the encrypt_transport of this MqsForwarding.
 
-        是否加密传输
+        **参数说明**：是否加密传输
 
         :param encrypt_transport: The encrypt_transport of this MqsForwarding.
         :type: bool

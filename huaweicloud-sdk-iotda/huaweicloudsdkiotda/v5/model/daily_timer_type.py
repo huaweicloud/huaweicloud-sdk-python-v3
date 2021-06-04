@@ -49,7 +49,7 @@ class DailyTimerType:
     def time(self):
         """Gets the time of this DailyTimerType.
 
-        规则触发的时间，格式：HH:MM。
+        **参数说明**：规则触发的时间，格式：HH:MM。
 
         :return: The time of this DailyTimerType.
         :rtype: str
@@ -60,7 +60,7 @@ class DailyTimerType:
     def time(self, time):
         """Sets the time of this DailyTimerType.
 
-        规则触发的时间，格式：HH:MM。
+        **参数说明**：规则触发的时间，格式：HH:MM。
 
         :param time: The time of this DailyTimerType.
         :type: str
@@ -71,7 +71,7 @@ class DailyTimerType:
     def days_of_week(self):
         """Gets the days_of_week of this DailyTimerType.
 
-        星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。
+        **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。 **取值范围**：只允许数字和逗号的组合，数字不小于1不大于7，数量不超过7个，以逗号隔开
 
         :return: The days_of_week of this DailyTimerType.
         :rtype: str
@@ -82,7 +82,7 @@ class DailyTimerType:
     def days_of_week(self, days_of_week):
         """Sets the days_of_week of this DailyTimerType.
 
-        星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。
+        **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。 **取值范围**：只允许数字和逗号的组合，数字不小于1不大于7，数量不超过7个，以逗号隔开
 
         :param days_of_week: The days_of_week of this DailyTimerType.
         :type: str

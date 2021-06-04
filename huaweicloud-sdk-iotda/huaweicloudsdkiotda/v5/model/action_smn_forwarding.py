@@ -64,7 +64,7 @@ class ActionSmnForwarding:
     def region_name(self):
         """Gets the region_name of this ActionSmnForwarding.
 
-        SMN服务对应的region区域
+        **参数说明**：SMN服务对应的region区域。
 
         :return: The region_name of this ActionSmnForwarding.
         :rtype: str
@@ -75,7 +75,7 @@ class ActionSmnForwarding:
     def region_name(self, region_name):
         """Sets the region_name of this ActionSmnForwarding.
 
-        SMN服务对应的region区域
+        **参数说明**：SMN服务对应的region区域。
 
         :param region_name: The region_name of this ActionSmnForwarding.
         :type: str
@@ -86,7 +86,7 @@ class ActionSmnForwarding:
     def project_id(self):
         """Gets the project_id of this ActionSmnForwarding.
 
-        SMN服务对应的projectId信息
+        **参数说明**：SMN服务对应的projectId信息。
 
         :return: The project_id of this ActionSmnForwarding.
         :rtype: str
@@ -97,7 +97,7 @@ class ActionSmnForwarding:
     def project_id(self, project_id):
         """Sets the project_id of this ActionSmnForwarding.
 
-        SMN服务对应的projectId信息
+        **参数说明**：SMN服务对应的projectId信息。
 
         :param project_id: The project_id of this ActionSmnForwarding.
         :type: str
@@ -108,7 +108,7 @@ class ActionSmnForwarding:
     def theme_name(self):
         """Gets the theme_name of this ActionSmnForwarding.
 
-        SMN服务对应的主题名称
+        **参数说明**：SMN服务对应的主题名称。
 
         :return: The theme_name of this ActionSmnForwarding.
         :rtype: str
@@ -119,7 +119,7 @@ class ActionSmnForwarding:
     def theme_name(self, theme_name):
         """Sets the theme_name of this ActionSmnForwarding.
 
-        SMN服务对应的主题名称
+        **参数说明**：SMN服务对应的主题名称。
 
         :param theme_name: The theme_name of this ActionSmnForwarding.
         :type: str
@@ -130,7 +130,7 @@ class ActionSmnForwarding:
     def topic_urn(self):
         """Gets the topic_urn of this ActionSmnForwarding.
 
-        SMN服务对应的topic的主题URN
+        **参数说明**：SMN服务对应的topic的主题URN。
 
         :return: The topic_urn of this ActionSmnForwarding.
         :rtype: str
@@ -141,7 +141,7 @@ class ActionSmnForwarding:
     def topic_urn(self, topic_urn):
         """Sets the topic_urn of this ActionSmnForwarding.
 
-        SMN服务对应的topic的主题URN
+        **参数说明**：SMN服务对应的topic的主题URN。
 
         :param topic_urn: The topic_urn of this ActionSmnForwarding.
         :type: str
@@ -152,7 +152,7 @@ class ActionSmnForwarding:
     def message_content(self):
         """Gets the message_content of this ActionSmnForwarding.
 
-        短信或邮件的内容。
+        **参数说明**：短信或邮件的内容。。
 
         :return: The message_content of this ActionSmnForwarding.
         :rtype: str
@@ -163,7 +163,7 @@ class ActionSmnForwarding:
     def message_content(self, message_content):
         """Sets the message_content of this ActionSmnForwarding.
 
-        短信或邮件的内容。
+        **参数说明**：短信或邮件的内容。。
 
         :param message_content: The message_content of this ActionSmnForwarding.
         :type: str
@@ -174,7 +174,7 @@ class ActionSmnForwarding:
     def message_title(self):
         """Gets the message_title of this ActionSmnForwarding.
 
-        短信或邮件的主题。
+        **参数说明**：短信或邮件的主题。。
 
         :return: The message_title of this ActionSmnForwarding.
         :rtype: str
@@ -185,7 +185,7 @@ class ActionSmnForwarding:
     def message_title(self, message_title):
         """Sets the message_title of this ActionSmnForwarding.
 
-        短信或邮件的主题。
+        **参数说明**：短信或邮件的主题。。
 
         :param message_title: The message_title of this ActionSmnForwarding.
         :type: str

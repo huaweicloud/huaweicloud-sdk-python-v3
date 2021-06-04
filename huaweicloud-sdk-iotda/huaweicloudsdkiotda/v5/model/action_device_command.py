@@ -49,7 +49,7 @@ class ActionDeviceCommand:
     def device_id(self):
         """Gets the device_id of this ActionDeviceCommand.
 
-        下发命令的设备ID。 - 当创建设备数据规则时，若device_id为空，则命令下发给触发条件的设备。 - 当创建定时规则时，不允许为空。 
+        **参数说明**：下发命令的设备ID。当创建设备数据规则时，若device_id为空，则命令下发给触发条件的设备。当创建定时规则时，不允许为空。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The device_id of this ActionDeviceCommand.
         :rtype: str
@@ -60,7 +60,7 @@ class ActionDeviceCommand:
     def device_id(self, device_id):
         """Sets the device_id of this ActionDeviceCommand.
 
-        下发命令的设备ID。 - 当创建设备数据规则时，若device_id为空，则命令下发给触发条件的设备。 - 当创建定时规则时，不允许为空。 
+        **参数说明**：下发命令的设备ID。当创建设备数据规则时，若device_id为空，则命令下发给触发条件的设备。当创建定时规则时，不允许为空。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param device_id: The device_id of this ActionDeviceCommand.
         :type: str

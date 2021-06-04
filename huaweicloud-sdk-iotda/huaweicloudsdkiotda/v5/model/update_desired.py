@@ -53,7 +53,7 @@ class UpdateDesired:
     def service_id(self):
         """Gets the service_id of this UpdateDesired.
 
-        设备的服务ID，在设备关联的产品模型中定义。
+        **参数说明**：设备的服务ID，在设备关联的产品模型中定义。
 
         :return: The service_id of this UpdateDesired.
         :rtype: str
@@ -64,7 +64,7 @@ class UpdateDesired:
     def service_id(self, service_id):
         """Sets the service_id of this UpdateDesired.
 
-        设备的服务ID，在设备关联的产品模型中定义。
+        **参数说明**：设备的服务ID，在设备关联的产品模型中定义。
 
         :param service_id: The service_id of this UpdateDesired.
         :type: str
@@ -75,7 +75,7 @@ class UpdateDesired:
     def desired(self):
         """Gets the desired of this UpdateDesired.
 
-        设备影子期望属性数据，Json格式，里面是一个个键值对，每个键都是产品模型中属性的参数名(property_name)，目前如样例所示只支持一层结构；如果想要删除整个desired可以填写空object(例如\"desired\":{})，如果想要删除某一个属性期望值可以将属性置位null(例如{\"temperature\":null})
+        **参数说明**：设备影子期望属性数据，Json格式，里面是一个个键值对，每个键都是产品模型中属性的参数名(property_name)，目前如样例所示只支持一层结构；如果想要删除整个desired可以填写空Object(例如\"desired\":{})，如果想要删除某一个属性期望值可以将属性置位null(例如{\"temperature\":null})
 
         :return: The desired of this UpdateDesired.
         :rtype: object
@@ -86,7 +86,7 @@ class UpdateDesired:
     def desired(self, desired):
         """Sets the desired of this UpdateDesired.
 
-        设备影子期望属性数据，Json格式，里面是一个个键值对，每个键都是产品模型中属性的参数名(property_name)，目前如样例所示只支持一层结构；如果想要删除整个desired可以填写空object(例如\"desired\":{})，如果想要删除某一个属性期望值可以将属性置位null(例如{\"temperature\":null})
+        **参数说明**：设备影子期望属性数据，Json格式，里面是一个个键值对，每个键都是产品模型中属性的参数名(property_name)，目前如样例所示只支持一层结构；如果想要删除整个desired可以填写空Object(例如\"desired\":{})，如果想要删除某一个属性期望值可以将属性置位null(例如{\"temperature\":null})
 
         :param desired: The desired of this UpdateDesired.
         :type: object
@@ -97,7 +97,7 @@ class UpdateDesired:
     def version(self):
         """Gets the version of this UpdateDesired.
 
-        设备影子的版本，携带改参数时平台会校验值必须等于当前影子版本，初始从0开始。
+        **参数说明**：设备影子的版本，携带该参数时平台会校验值必须等于当前影子版本，初始从0开始。
 
         :return: The version of this UpdateDesired.
         :rtype: int
@@ -108,7 +108,7 @@ class UpdateDesired:
     def version(self, version):
         """Sets the version of this UpdateDesired.
 
-        设备影子的版本，携带改参数时平台会校验值必须等于当前影子版本，初始从0开始。
+        **参数说明**：设备影子的版本，携带该参数时平台会校验值必须等于当前影子版本，初始从0开始。
 
         :param version: The version of this UpdateDesired.
         :type: int

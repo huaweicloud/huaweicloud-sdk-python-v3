@@ -58,7 +58,7 @@ class ActionDisForwarding:
     def region_name(self):
         """Gets the region_name of this ActionDisForwarding.
 
-        DIS服务对应的region区域
+        **参数说明**：DIS服务对应的region区域。
 
         :return: The region_name of this ActionDisForwarding.
         :rtype: str
@@ -69,7 +69,7 @@ class ActionDisForwarding:
     def region_name(self, region_name):
         """Sets the region_name of this ActionDisForwarding.
 
-        DIS服务对应的region区域
+        **参数说明**：DIS服务对应的region区域。
 
         :param region_name: The region_name of this ActionDisForwarding.
         :type: str
@@ -80,7 +80,7 @@ class ActionDisForwarding:
     def project_id(self):
         """Gets the project_id of this ActionDisForwarding.
 
-        DIS服务对应的projectId信息
+        **参数说明**：DIS服务对应的projectId信息。
 
         :return: The project_id of this ActionDisForwarding.
         :rtype: str
@@ -91,7 +91,7 @@ class ActionDisForwarding:
     def project_id(self, project_id):
         """Sets the project_id of this ActionDisForwarding.
 
-        DIS服务对应的projectId信息
+        **参数说明**：DIS服务对应的projectId信息。
 
         :param project_id: The project_id of this ActionDisForwarding.
         :type: str
@@ -102,7 +102,7 @@ class ActionDisForwarding:
     def stream_name(self):
         """Gets the stream_name of this ActionDisForwarding.
 
-        DIS服务对应的通道名称，和通道ID参数中至少一个不为空，和通道ID参数都存在时，以通道ID参数值为准。通过调用DIS服务 [查询通道列表](https://support.huaweicloud.com/api-dis/dis_02_0024.html)接口获取。
+        **参数说明**：DIS服务对应的通道名称，和通道ID参数中至少一个不为空，和通道ID参数都存在时，以通道ID参数值为准。通过调用DIS服务 [查询通道列表](https://support.huaweicloud.com/api-dis/dis_02_0024.html)接口获取。
 
         :return: The stream_name of this ActionDisForwarding.
         :rtype: str
@@ -113,7 +113,7 @@ class ActionDisForwarding:
     def stream_name(self, stream_name):
         """Sets the stream_name of this ActionDisForwarding.
 
-        DIS服务对应的通道名称，和通道ID参数中至少一个不为空，和通道ID参数都存在时，以通道ID参数值为准。通过调用DIS服务 [查询通道列表](https://support.huaweicloud.com/api-dis/dis_02_0024.html)接口获取。
+        **参数说明**：DIS服务对应的通道名称，和通道ID参数中至少一个不为空，和通道ID参数都存在时，以通道ID参数值为准。通过调用DIS服务 [查询通道列表](https://support.huaweicloud.com/api-dis/dis_02_0024.html)接口获取。
 
         :param stream_name: The stream_name of this ActionDisForwarding.
         :type: str
@@ -124,7 +124,7 @@ class ActionDisForwarding:
     def stream_id(self):
         """Gets the stream_id of this ActionDisForwarding.
 
-        DIS服务对应的通道ID，和通道名称参数中至少一个不为空，和通道名称参数都存在时，以本参数值为准。通过调用DIS服务 [查询通道详情](https://support.huaweicloud.com/api-dis/dis_02_0025.html)接口获取。
+        **参数说明**：DIS服务对应的通道ID，和通道名称参数中至少一个不为空，和通道名称参数都存在时，以本参数值为准。通过调用DIS服务 [查询通道详情](https://support.huaweicloud.com/api-dis/dis_02_0025.html)接口获取。
 
         :return: The stream_id of this ActionDisForwarding.
         :rtype: str
@@ -135,7 +135,7 @@ class ActionDisForwarding:
     def stream_id(self, stream_id):
         """Sets the stream_id of this ActionDisForwarding.
 
-        DIS服务对应的通道ID，和通道名称参数中至少一个不为空，和通道名称参数都存在时，以本参数值为准。通过调用DIS服务 [查询通道详情](https://support.huaweicloud.com/api-dis/dis_02_0025.html)接口获取。
+        **参数说明**：DIS服务对应的通道ID，和通道名称参数中至少一个不为空，和通道名称参数都存在时，以本参数值为准。通过调用DIS服务 [查询通道详情](https://support.huaweicloud.com/api-dis/dis_02_0025.html)接口获取。
 
         :param stream_id: The stream_id of this ActionDisForwarding.
         :type: str

@@ -52,7 +52,7 @@ class SimpleTimerType:
     def start_time(self):
         """Gets the start_time of this SimpleTimerType.
 
-        规则触发的开始时间，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'。
+        **参数说明**：规则触发的开始时间，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'。
 
         :return: The start_time of this SimpleTimerType.
         :rtype: str
@@ -63,7 +63,7 @@ class SimpleTimerType:
     def start_time(self, start_time):
         """Sets the start_time of this SimpleTimerType.
 
-        规则触发的开始时间，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'。
+        **参数说明**：规则触发的开始时间，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'。
 
         :param start_time: The start_time of this SimpleTimerType.
         :type: str
@@ -74,7 +74,7 @@ class SimpleTimerType:
     def repeat_interval(self):
         """Gets the repeat_interval of this SimpleTimerType.
 
-        规则触发的重复时间间隔，单位为秒。
+        **参数说明**：规则触发的重复时间间隔，单位为秒。
 
         :return: The repeat_interval of this SimpleTimerType.
         :rtype: int
@@ -85,7 +85,7 @@ class SimpleTimerType:
     def repeat_interval(self, repeat_interval):
         """Sets the repeat_interval of this SimpleTimerType.
 
-        规则触发的重复时间间隔，单位为秒。
+        **参数说明**：规则触发的重复时间间隔，单位为秒。
 
         :param repeat_interval: The repeat_interval of this SimpleTimerType.
         :type: int
@@ -96,7 +96,7 @@ class SimpleTimerType:
     def repeat_count(self):
         """Gets the repeat_count of this SimpleTimerType.
 
-        规则触发的重复次数。
+        **参数说明**：规则触发的重复次数。
 
         :return: The repeat_count of this SimpleTimerType.
         :rtype: int
@@ -107,7 +107,7 @@ class SimpleTimerType:
     def repeat_count(self, repeat_count):
         """Sets the repeat_count of this SimpleTimerType.
 
-        规则触发的重复次数。
+        **参数说明**：规则触发的重复次数。
 
         :param repeat_count: The repeat_count of this SimpleTimerType.
         :type: int

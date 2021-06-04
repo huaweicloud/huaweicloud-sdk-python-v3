@@ -60,7 +60,7 @@ class UpdateDevice:
     def device_name(self):
         """Gets the device_name of this UpdateDevice.
 
-        设备名称。
+        **参数说明**：设备名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
         :return: The device_name of this UpdateDevice.
         :rtype: str
@@ -71,7 +71,7 @@ class UpdateDevice:
     def device_name(self, device_name):
         """Sets the device_name of this UpdateDevice.
 
-        设备名称。
+        **参数说明**：设备名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
         :param device_name: The device_name of this UpdateDevice.
         :type: str
@@ -82,7 +82,7 @@ class UpdateDevice:
     def description(self):
         """Gets the description of this UpdateDevice.
 
-        设备的描述信息。
+        **参数说明**：设备的描述信息。 **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
         :return: The description of this UpdateDevice.
         :rtype: str
@@ -93,7 +93,7 @@ class UpdateDevice:
     def description(self, description):
         """Sets the description of this UpdateDevice.
 
-        设备的描述信息。
+        **参数说明**：设备的描述信息。 **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
         :param description: The description of this UpdateDevice.
         :type: str
@@ -104,7 +104,7 @@ class UpdateDevice:
     def extension_info(self):
         """Gets the extension_info of this UpdateDevice.
 
-        设备扩展信息。用户可以自定义任何想要的扩展信息，修改子设备信息时不会下发给网关。
+        **参数说明**：设备扩展信息。用户可以自定义任何想要的扩展信息，修改子设备信息时不会下发给网关。
 
         :return: The extension_info of this UpdateDevice.
         :rtype: object
@@ -115,7 +115,7 @@ class UpdateDevice:
     def extension_info(self, extension_info):
         """Sets the extension_info of this UpdateDevice.
 
-        设备扩展信息。用户可以自定义任何想要的扩展信息，修改子设备信息时不会下发给网关。
+        **参数说明**：设备扩展信息。用户可以自定义任何想要的扩展信息，修改子设备信息时不会下发给网关。
 
         :param extension_info: The extension_info of this UpdateDevice.
         :type: object

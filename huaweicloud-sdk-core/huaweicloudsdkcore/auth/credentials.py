@@ -25,6 +25,7 @@ from huaweicloudsdkcore.auth.iam_service import get_keystone_list_projects_reque
     get_keystone_list_auth_domains_request, keystone_list_auth_domains, DEFAULT_IAM_ENDPOINT
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException
 from huaweicloudsdkcore.signer import signer
+from huaweicloudsdkcore.auth.cache import AuthCache
 
 
 class Credentials(object):
@@ -76,6 +77,13 @@ class BasicCredentials(Credentials):
     def process_auth_params(self, http_client, region_id):
         if self.project_id:
             return self
+
+        ak_with_name = self.ak + region_id
+        project_id = AuthCache.get_auth(ak_with_name)
+        if project_id:
+            self.project_id = project_id
+            return self
+
         if self.iam_endpoint is None:
             self.iam_endpoint = DEFAULT_IAM_ENDPOINT
         future_request = self.process_auth_request(
@@ -83,6 +91,7 @@ class BasicCredentials(Credentials):
         request = future_request.result()
         try:
             self.project_id = keystone_list_projects(http_client, request)
+            AuthCache.put_auth(ak_with_name, self.project_id)
         except ServiceResponseException as e:
             err_msg = e.error_msg if hasattr(e, "error_msg") else "unknown exception."
             raise ApiValueError("Failed to get project id, " + err_msg)
@@ -122,6 +131,12 @@ class GlobalCredentials(Credentials):
     def process_auth_params(self, http_client, region_id):
         if self.domain_id:
             return self
+
+        domain_id = AuthCache.get_auth(self.ak)
+        if domain_id:
+            self.domain_id = domain_id
+            return self
+
         if self.iam_endpoint is None:
             self.iam_endpoint = DEFAULT_IAM_ENDPOINT
         future_request = self.process_auth_request(get_keystone_list_auth_domains_request(self.iam_endpoint),
@@ -129,6 +144,7 @@ class GlobalCredentials(Credentials):
         request = future_request.result()
         try:
             self.domain_id = keystone_list_auth_domains(http_client, request)
+            AuthCache.put_auth(self.ak, self.domain_id)
         except ServiceResponseException as e:
             err_msg = e.error_msg if hasattr(e, "error_msg") else "unknown exception."
             raise ApiValueError("Failed to get domain id, " + err_msg)

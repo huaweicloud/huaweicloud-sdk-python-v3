@@ -45,7 +45,7 @@ class ChangeRuleStatusResponse(SdkResponse):
     def status(self):
         """Gets the status of this ChangeRuleStatusResponse.
 
-        规则的激活状态。 - active：激活。 - inactive：未激活。 
+        **参数说明**：规则的激活状态。 **取值范围**： - active：激活。 - inactive：未激活。
 
         :return: The status of this ChangeRuleStatusResponse.
         :rtype: str
@@ -56,7 +56,7 @@ class ChangeRuleStatusResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ChangeRuleStatusResponse.
 
-        规则的激活状态。 - active：激活。 - inactive：未激活。 
+        **参数说明**：规则的激活状态。 **取值范围**： - active：激活。 - inactive：未激活。
 
         :param status: The status of this ChangeRuleStatusResponse.
         :type: str

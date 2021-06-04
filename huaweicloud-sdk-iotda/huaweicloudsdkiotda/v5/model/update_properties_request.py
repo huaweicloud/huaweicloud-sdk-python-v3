@@ -21,36 +21,30 @@ class UpdatePropertiesRequest:
     """
 
     sensitive_list = []
-    sensitive_list.append('stage_auth_token')
 
     openapi_types = {
         'device_id': 'str',
-        'stage_auth_token': 'str',
         'instance_id': 'str',
         'body': 'DevicePropertiesRequest'
     }
 
     attribute_map = {
         'device_id': 'device_id',
-        'stage_auth_token': 'Stage-Auth-Token',
         'instance_id': 'Instance-Id',
         'body': 'body'
     }
 
-    def __init__(self, device_id=None, stage_auth_token=None, instance_id=None, body=None):
+    def __init__(self, device_id=None, instance_id=None, body=None):
         """UpdatePropertiesRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._device_id = None
-        self._stage_auth_token = None
         self._instance_id = None
         self._body = None
         self.discriminator = None
 
         self.device_id = device_id
-        if stage_auth_token is not None:
-            self.stage_auth_token = stage_auth_token
         if instance_id is not None:
             self.instance_id = instance_id
         if body is not None:
@@ -60,7 +54,7 @@ class UpdatePropertiesRequest:
     def device_id(self):
         """Gets the device_id of this UpdatePropertiesRequest.
 
-        下发属性的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
+        **参数说明**：下发属性的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The device_id of this UpdatePropertiesRequest.
         :rtype: str
@@ -71,7 +65,7 @@ class UpdatePropertiesRequest:
     def device_id(self, device_id):
         """Sets the device_id of this UpdatePropertiesRequest.
 
-        下发属性的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。
+        **参数说明**：下发属性的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param device_id: The device_id of this UpdatePropertiesRequest.
         :type: str
@@ -79,32 +73,10 @@ class UpdatePropertiesRequest:
         self._device_id = device_id
 
     @property
-    def stage_auth_token(self):
-        """Gets the stage_auth_token of this UpdatePropertiesRequest.
-
-        Stage用户的Token, 仅提供给IoStage服务使用
-
-        :return: The stage_auth_token of this UpdatePropertiesRequest.
-        :rtype: str
-        """
-        return self._stage_auth_token
-
-    @stage_auth_token.setter
-    def stage_auth_token(self, stage_auth_token):
-        """Sets the stage_auth_token of this UpdatePropertiesRequest.
-
-        Stage用户的Token, 仅提供给IoStage服务使用
-
-        :param stage_auth_token: The stage_auth_token of this UpdatePropertiesRequest.
-        :type: str
-        """
-        self._stage_auth_token = stage_auth_token
-
-    @property
     def instance_id(self):
         """Gets the instance_id of this UpdatePropertiesRequest.
 
-        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :return: The instance_id of this UpdatePropertiesRequest.
         :rtype: str
@@ -115,7 +87,7 @@ class UpdatePropertiesRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpdatePropertiesRequest.
 
-        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this UpdatePropertiesRequest.
         :type: str

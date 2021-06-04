@@ -64,7 +64,7 @@ class CreatePublicipBandwidthOption:
     def charge_mode(self):
         """Gets the charge_mode of this CreatePublicipBandwidthOption.
 
-        功能说明：按流量计费还是按带宽计费。  其中IPv6国外默认是bandwidth，国内默认是traffic。取值为traffic，表示流量计费。
+        功能说明：按流量计费还是按带宽计费。 取值范围：bandwidth，traffic。  不填或为空时默认是bandwidth。  其中IPv6国外默认是bandwidth，国内默认是traffic。取值为traffic，表示流量计费。
 
         :return: The charge_mode of this CreatePublicipBandwidthOption.
         :rtype: str
@@ -75,7 +75,7 @@ class CreatePublicipBandwidthOption:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this CreatePublicipBandwidthOption.
 
-        功能说明：按流量计费还是按带宽计费。  其中IPv6国外默认是bandwidth，国内默认是traffic。取值为traffic，表示流量计费。
+        功能说明：按流量计费还是按带宽计费。 取值范围：bandwidth，traffic。  不填或为空时默认是bandwidth。  其中IPv6国外默认是bandwidth，国内默认是traffic。取值为traffic，表示流量计费。
 
         :param charge_mode: The charge_mode of this CreatePublicipBandwidthOption.
         :type: str

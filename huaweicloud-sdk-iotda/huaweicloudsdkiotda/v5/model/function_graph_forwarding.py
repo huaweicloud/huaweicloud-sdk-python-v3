@@ -48,7 +48,7 @@ class FunctionGraphForwarding:
     def func_urn(self):
         """Gets the func_urn of this FunctionGraphForwarding.
 
-        函数的URN（Uniform Resource Name），唯一标识函数。
+        **参数说明**：函数的URN（Uniform Resource Name），唯一标识函数。
 
         :return: The func_urn of this FunctionGraphForwarding.
         :rtype: str
@@ -59,7 +59,7 @@ class FunctionGraphForwarding:
     def func_urn(self, func_urn):
         """Sets the func_urn of this FunctionGraphForwarding.
 
-        函数的URN（Uniform Resource Name），唯一标识函数。
+        **参数说明**：函数的URN（Uniform Resource Name），唯一标识函数。
 
         :param func_urn: The func_urn of this FunctionGraphForwarding.
         :type: str
@@ -70,7 +70,7 @@ class FunctionGraphForwarding:
     def func_name(self):
         """Gets the func_name of this FunctionGraphForwarding.
 
-        函数名称。
+        **参数说明**：函数名称。
 
         :return: The func_name of this FunctionGraphForwarding.
         :rtype: str
@@ -81,7 +81,7 @@ class FunctionGraphForwarding:
     def func_name(self, func_name):
         """Sets the func_name of this FunctionGraphForwarding.
 
-        函数名称。
+        **参数说明**：函数名称。
 
         :param func_name: The func_name of this FunctionGraphForwarding.
         :type: str

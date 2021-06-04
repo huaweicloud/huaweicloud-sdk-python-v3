@@ -50,7 +50,7 @@ class DeviceMessageCondition:
     def product_id(self):
         """Gets the product_id of this DeviceMessageCondition.
 
-        设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。
+        **参数说明**：设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。
 
         :return: The product_id of this DeviceMessageCondition.
         :rtype: str
@@ -61,7 +61,7 @@ class DeviceMessageCondition:
     def product_id(self, product_id):
         """Sets the product_id of this DeviceMessageCondition.
 
-        设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。
+        **参数说明**：设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。
 
         :param product_id: The product_id of this DeviceMessageCondition.
         :type: str
@@ -72,7 +72,7 @@ class DeviceMessageCondition:
     def topic(self):
         """Gets the topic of this DeviceMessageCondition.
 
-        产品关联的topic信息，用于过滤消息中指定topic消息。
+        **参数说明**：产品关联的topic信息，用于过滤消息中指定topic消息。
 
         :return: The topic of this DeviceMessageCondition.
         :rtype: str
@@ -83,7 +83,7 @@ class DeviceMessageCondition:
     def topic(self, topic):
         """Sets the topic of this DeviceMessageCondition.
 
-        产品关联的topic信息，用于过滤消息中指定topic消息。
+        **参数说明**：产品关联的topic信息，用于过滤消息中指定topic消息。
 
         :param topic: The topic of this DeviceMessageCondition.
         :type: str

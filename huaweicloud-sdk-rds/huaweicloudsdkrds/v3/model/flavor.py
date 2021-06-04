@@ -29,7 +29,8 @@ class Flavor:
         'spec_code': 'str',
         'instance_mode': 'str',
         'az_status': 'dict(str, str)',
-        'version_name': 'list[str]'
+        'version_name': 'list[str]',
+        'group_type': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class Flavor:
         'spec_code': 'spec_code',
         'instance_mode': 'instance_mode',
         'az_status': 'az_status',
-        'version_name': 'version_name'
+        'version_name': 'version_name',
+        'group_type': 'group_type'
     }
 
-    def __init__(self, id=None, vcpus=None, ram=None, spec_code=None, instance_mode=None, az_status=None, version_name=None):
+    def __init__(self, id=None, vcpus=None, ram=None, spec_code=None, instance_mode=None, az_status=None, version_name=None, group_type=None):
         """Flavor - a model defined in huaweicloud sdk"""
         
         
@@ -54,6 +56,7 @@ class Flavor:
         self._instance_mode = None
         self._az_status = None
         self._version_name = None
+        self._group_type = None
         self.discriminator = None
 
         self.id = id
@@ -63,6 +66,7 @@ class Flavor:
         self.instance_mode = instance_mode
         self.az_status = az_status
         self.version_name = version_name
+        self.group_type = group_type
 
     @property
     def id(self):
@@ -217,6 +221,28 @@ class Flavor:
         :type: list[str]
         """
         self._version_name = version_name
+
+    @property
+    def group_type(self):
+        """Gets the group_type of this Flavor.
+
+        性能规格，包含以下状态： - normal：通用增强型。 - normal2：通用增强Ⅱ型。 - armFlavors：鲲鹏通用增强型。 - dedicicatenormal ：x86独享型。 - armlocalssd：鲲鹏通用型。 - normallocalssd：x86通用型。 - general：通用型。 - dedicated：独享型，仅云盘SSD支持。 - rapid：独享型，仅极速型SSD支持。
+
+        :return: The group_type of this Flavor.
+        :rtype: str
+        """
+        return self._group_type
+
+    @group_type.setter
+    def group_type(self, group_type):
+        """Sets the group_type of this Flavor.
+
+        性能规格，包含以下状态： - normal：通用增强型。 - normal2：通用增强Ⅱ型。 - armFlavors：鲲鹏通用增强型。 - dedicicatenormal ：x86独享型。 - armlocalssd：鲲鹏通用型。 - normallocalssd：x86通用型。 - general：通用型。 - dedicated：独享型，仅云盘SSD支持。 - rapid：独享型，仅极速型SSD支持。
+
+        :param group_type: The group_type of this Flavor.
+        :type: str
+        """
+        self._group_type = group_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

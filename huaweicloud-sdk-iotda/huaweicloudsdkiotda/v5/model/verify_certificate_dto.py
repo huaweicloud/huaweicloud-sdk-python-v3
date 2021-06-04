@@ -44,7 +44,7 @@ class VerifyCertificateDTO:
     def verify_content(self):
         """Gets the verify_content of this VerifyCertificateDTO.
 
-        验证证书的内容信息。
+        **参数说明**：验证证书的内容信息。
 
         :return: The verify_content of this VerifyCertificateDTO.
         :rtype: str
@@ -55,7 +55,7 @@ class VerifyCertificateDTO:
     def verify_content(self, verify_content):
         """Sets the verify_content of this VerifyCertificateDTO.
 
-        验证证书的内容信息。
+        **参数说明**：验证证书的内容信息。
 
         :param verify_content: The verify_content of this VerifyCertificateDTO.
         :type: str

@@ -45,7 +45,7 @@ class DeviceStatusCondition:
     def status_list(self):
         """Gets the status_list of this DeviceStatusCondition.
 
-        状态列表，设备状态条件携带该参数。
+        **参数说明**：状态列表，设备状态条件携带该参数。
 
         :return: The status_list of this DeviceStatusCondition.
         :rtype: list[str]
@@ -56,7 +56,7 @@ class DeviceStatusCondition:
     def status_list(self, status_list):
         """Sets the status_list of this DeviceStatusCondition.
 
-        状态列表，设备状态条件携带该参数。
+        **参数说明**：状态列表，设备状态条件携带该参数。
 
         :param status_list: The status_list of this DeviceStatusCondition.
         :type: list[str]

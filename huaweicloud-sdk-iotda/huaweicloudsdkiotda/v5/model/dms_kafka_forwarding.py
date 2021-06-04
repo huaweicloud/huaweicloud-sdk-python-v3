@@ -72,7 +72,7 @@ class DmsKafkaForwarding:
     def region_name(self):
         """Gets the region_name of this DmsKafkaForwarding.
 
-        Kafka服务对应的region区域
+        **参数说明**：Kafka服务对应的region区域
 
         :return: The region_name of this DmsKafkaForwarding.
         :rtype: str
@@ -83,7 +83,7 @@ class DmsKafkaForwarding:
     def region_name(self, region_name):
         """Sets the region_name of this DmsKafkaForwarding.
 
-        Kafka服务对应的region区域
+        **参数说明**：Kafka服务对应的region区域
 
         :param region_name: The region_name of this DmsKafkaForwarding.
         :type: str
@@ -94,7 +94,7 @@ class DmsKafkaForwarding:
     def project_id(self):
         """Gets the project_id of this DmsKafkaForwarding.
 
-        Kafka服务对应的projectId信息
+        **参数说明**：Kafka服务对应的projectId信息
 
         :return: The project_id of this DmsKafkaForwarding.
         :rtype: str
@@ -105,7 +105,7 @@ class DmsKafkaForwarding:
     def project_id(self, project_id):
         """Sets the project_id of this DmsKafkaForwarding.
 
-        Kafka服务对应的projectId信息
+        **参数说明**：Kafka服务对应的projectId信息
 
         :param project_id: The project_id of this DmsKafkaForwarding.
         :type: str
@@ -116,7 +116,7 @@ class DmsKafkaForwarding:
     def addresses(self):
         """Gets the addresses of this DmsKafkaForwarding.
 
-        转发kafka消息对应的地址列表
+        **参数说明**：转发kafka消息对应的地址列表
 
         :return: The addresses of this DmsKafkaForwarding.
         :rtype: list[NetAddress]
@@ -127,7 +127,7 @@ class DmsKafkaForwarding:
     def addresses(self, addresses):
         """Sets the addresses of this DmsKafkaForwarding.
 
-        转发kafka消息对应的地址列表
+        **参数说明**：转发kafka消息对应的地址列表
 
         :param addresses: The addresses of this DmsKafkaForwarding.
         :type: list[NetAddress]
@@ -138,7 +138,7 @@ class DmsKafkaForwarding:
     def topic(self):
         """Gets the topic of this DmsKafkaForwarding.
 
-        转发kafka消息关联的topic信息。
+        **参数说明**：转发kafka消息关联的topic信息。
 
         :return: The topic of this DmsKafkaForwarding.
         :rtype: str
@@ -149,7 +149,7 @@ class DmsKafkaForwarding:
     def topic(self, topic):
         """Sets the topic of this DmsKafkaForwarding.
 
-        转发kafka消息关联的topic信息。
+        **参数说明**：转发kafka消息关联的topic信息。
 
         :param topic: The topic of this DmsKafkaForwarding.
         :type: str
@@ -160,7 +160,7 @@ class DmsKafkaForwarding:
     def username(self):
         """Gets the username of this DmsKafkaForwarding.
 
-        转发kafka关联的用户名信息。
+        **参数说明**：转发kafka关联的用户名信息。
 
         :return: The username of this DmsKafkaForwarding.
         :rtype: str
@@ -171,7 +171,7 @@ class DmsKafkaForwarding:
     def username(self, username):
         """Sets the username of this DmsKafkaForwarding.
 
-        转发kafka关联的用户名信息。
+        **参数说明**：转发kafka关联的用户名信息。
 
         :param username: The username of this DmsKafkaForwarding.
         :type: str
@@ -182,7 +182,7 @@ class DmsKafkaForwarding:
     def password(self):
         """Gets the password of this DmsKafkaForwarding.
 
-        转发kafka关联的密码信息。
+        **参数说明**：转发kafka关联的密码信息。
 
         :return: The password of this DmsKafkaForwarding.
         :rtype: str
@@ -193,7 +193,7 @@ class DmsKafkaForwarding:
     def password(self, password):
         """Sets the password of this DmsKafkaForwarding.
 
-        转发kafka关联的密码信息。
+        **参数说明**：转发kafka关联的密码信息。
 
         :param password: The password of this DmsKafkaForwarding.
         :type: str
@@ -204,7 +204,7 @@ class DmsKafkaForwarding:
     def mechanism(self):
         """Gets the mechanism of this DmsKafkaForwarding.
 
-        转发kafka关联的鉴权机制。 类型说明： PAAS：非SASL鉴权。 PLAIN：SASL/PLAIN模式。需要填写对应的用户名密码信息。 
+        **参数说明**：转发kafka关联的鉴权机制。 **取值范围**： - PAAS：非SASL鉴权。 - PLAIN：SASL/PLAIN模式。需要填写对应的用户名密码信息。
 
         :return: The mechanism of this DmsKafkaForwarding.
         :rtype: str
@@ -215,7 +215,7 @@ class DmsKafkaForwarding:
     def mechanism(self, mechanism):
         """Sets the mechanism of this DmsKafkaForwarding.
 
-        转发kafka关联的鉴权机制。 类型说明： PAAS：非SASL鉴权。 PLAIN：SASL/PLAIN模式。需要填写对应的用户名密码信息。 
+        **参数说明**：转发kafka关联的鉴权机制。 **取值范围**： - PAAS：非SASL鉴权。 - PLAIN：SASL/PLAIN模式。需要填写对应的用户名密码信息。
 
         :param mechanism: The mechanism of this DmsKafkaForwarding.
         :type: str

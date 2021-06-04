@@ -57,7 +57,7 @@ class ObsForwarding:
     def region_name(self):
         """Gets the region_name of this ObsForwarding.
 
-        OBS服务对应的region区域
+        **参数说明**：OBS服务对应的region区域
 
         :return: The region_name of this ObsForwarding.
         :rtype: str
@@ -68,7 +68,7 @@ class ObsForwarding:
     def region_name(self, region_name):
         """Sets the region_name of this ObsForwarding.
 
-        OBS服务对应的region区域
+        **参数说明**：OBS服务对应的region区域
 
         :param region_name: The region_name of this ObsForwarding.
         :type: str
@@ -79,7 +79,7 @@ class ObsForwarding:
     def project_id(self):
         """Gets the project_id of this ObsForwarding.
 
-        OBS服务对应的projectId信息
+        **参数说明**：OBS服务对应的projectId信息
 
         :return: The project_id of this ObsForwarding.
         :rtype: str
@@ -90,7 +90,7 @@ class ObsForwarding:
     def project_id(self, project_id):
         """Sets the project_id of this ObsForwarding.
 
-        OBS服务对应的projectId信息
+        **参数说明**：OBS服务对应的projectId信息
 
         :param project_id: The project_id of this ObsForwarding.
         :type: str
@@ -101,7 +101,7 @@ class ObsForwarding:
     def bucket_name(self):
         """Gets the bucket_name of this ObsForwarding.
 
-        OBS服务对应的桶名称
+        **参数说明**：OBS服务对应的桶名称
 
         :return: The bucket_name of this ObsForwarding.
         :rtype: str
@@ -112,7 +112,7 @@ class ObsForwarding:
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this ObsForwarding.
 
-        OBS服务对应的桶名称
+        **参数说明**：OBS服务对应的桶名称
 
         :param bucket_name: The bucket_name of this ObsForwarding.
         :type: str
@@ -123,7 +123,7 @@ class ObsForwarding:
     def location(self):
         """Gets the location of this ObsForwarding.
 
-        OBS服务对应桶的区域
+        **参数说明**：OBS服务对应桶的区域
 
         :return: The location of this ObsForwarding.
         :rtype: str
@@ -134,7 +134,7 @@ class ObsForwarding:
     def location(self, location):
         """Sets the location of this ObsForwarding.
 
-        OBS服务对应桶的区域
+        **参数说明**：OBS服务对应桶的区域
 
         :param location: The location of this ObsForwarding.
         :type: str

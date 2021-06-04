@@ -85,7 +85,7 @@ class InfluxDBForwarding:
     def db_name(self):
         """Gets the db_name of this InfluxDBForwarding.
 
-        连接InfluxDB数据库的库名,不存在会自动创建
+        **参数说明**：连接InfluxDB数据库的库名,不存在会自动创建
 
         :return: The db_name of this InfluxDBForwarding.
         :rtype: str
@@ -96,7 +96,7 @@ class InfluxDBForwarding:
     def db_name(self, db_name):
         """Sets the db_name of this InfluxDBForwarding.
 
-        连接InfluxDB数据库的库名,不存在会自动创建
+        **参数说明**：连接InfluxDB数据库的库名,不存在会自动创建
 
         :param db_name: The db_name of this InfluxDBForwarding.
         :type: str
@@ -107,7 +107,7 @@ class InfluxDBForwarding:
     def username(self):
         """Gets the username of this InfluxDBForwarding.
 
-        连接InfluxDB数据库的用户名
+        **参数说明**：连接InfluxDB数据库的用户名
 
         :return: The username of this InfluxDBForwarding.
         :rtype: str
@@ -118,7 +118,7 @@ class InfluxDBForwarding:
     def username(self, username):
         """Sets the username of this InfluxDBForwarding.
 
-        连接InfluxDB数据库的用户名
+        **参数说明**：连接InfluxDB数据库的用户名
 
         :param username: The username of this InfluxDBForwarding.
         :type: str
@@ -129,7 +129,7 @@ class InfluxDBForwarding:
     def password(self):
         """Gets the password of this InfluxDBForwarding.
 
-        连接InfluxDB数据库的密码
+        **参数说明**：连接InfluxDB数据库的密码
 
         :return: The password of this InfluxDBForwarding.
         :rtype: str
@@ -140,7 +140,7 @@ class InfluxDBForwarding:
     def password(self, password):
         """Sets the password of this InfluxDBForwarding.
 
-        连接InfluxDB数据库的密码
+        **参数说明**：连接InfluxDB数据库的密码
 
         :param password: The password of this InfluxDBForwarding.
         :type: str
@@ -151,7 +151,7 @@ class InfluxDBForwarding:
     def measurement(self):
         """Gets the measurement of this InfluxDBForwarding.
 
-        InfluxDB数据库的measurement,不存在会自动创建
+        **参数说明**：InfluxDB数据库的measurement,不存在会自动创建
 
         :return: The measurement of this InfluxDBForwarding.
         :rtype: str
@@ -162,7 +162,7 @@ class InfluxDBForwarding:
     def measurement(self, measurement):
         """Sets the measurement of this InfluxDBForwarding.
 
-        InfluxDB数据库的measurement,不存在会自动创建
+        **参数说明**：InfluxDB数据库的measurement,不存在会自动创建
 
         :param measurement: The measurement of this InfluxDBForwarding.
         :type: str
@@ -173,7 +173,7 @@ class InfluxDBForwarding:
     def column_mappings(self):
         """Gets the column_mappings of this InfluxDBForwarding.
 
-        InfluxDB数据库和流转数据的对应关系列表。
+        **参数说明**：InfluxDB数据库和流转数据的对应关系列表。
 
         :return: The column_mappings of this InfluxDBForwarding.
         :rtype: list[ColumnMapping]
@@ -184,7 +184,7 @@ class InfluxDBForwarding:
     def column_mappings(self, column_mappings):
         """Sets the column_mappings of this InfluxDBForwarding.
 
-        InfluxDB数据库和流转数据的对应关系列表。
+        **参数说明**：InfluxDB数据库和流转数据的对应关系列表。
 
         :param column_mappings: The column_mappings of this InfluxDBForwarding.
         :type: list[ColumnMapping]

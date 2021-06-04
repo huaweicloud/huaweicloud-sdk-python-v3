@@ -45,7 +45,7 @@ class CreateAccessCodeRequestBody:
     def type(self):
         """Gets the type of this CreateAccessCodeRequestBody.
 
-        接入凭证类型，默认为AMQP的接入凭证类型。
+        **参数说明**：接入凭证类型，默认为AMQP的接入凭证类型。 **取值范围**： - AMQP 
 
         :return: The type of this CreateAccessCodeRequestBody.
         :rtype: str
@@ -56,7 +56,7 @@ class CreateAccessCodeRequestBody:
     def type(self, type):
         """Sets the type of this CreateAccessCodeRequestBody.
 
-        接入凭证类型，默认为AMQP的接入凭证类型。
+        **参数说明**：接入凭证类型，默认为AMQP的接入凭证类型。 **取值范围**： - AMQP 
 
         :param type: The type of this CreateAccessCodeRequestBody.
         :type: str

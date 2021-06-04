@@ -63,7 +63,7 @@ class BatchMetricData:
     def unit(self):
         """Gets the unit of this BatchMetricData.
 
-        指标单位
+        指标单位。
 
         :return: The unit of this BatchMetricData.
         :rtype: str
@@ -74,7 +74,7 @@ class BatchMetricData:
     def unit(self, unit):
         """Sets the unit of this BatchMetricData.
 
-        指标单位
+        指标单位。
 
         :param unit: The unit of this BatchMetricData.
         :type: str
@@ -151,7 +151,7 @@ class BatchMetricData:
     def dimensions(self):
         """Gets the dimensions of this BatchMetricData.
 
-        指标维度列表
+        指标维度列表。
 
         :return: The dimensions of this BatchMetricData.
         :rtype: list[MetricsDimension]
@@ -162,7 +162,7 @@ class BatchMetricData:
     def dimensions(self, dimensions):
         """Sets the dimensions of this BatchMetricData.
 
-        指标维度列表
+        指标维度列表。
 
         :param dimensions: The dimensions of this BatchMetricData.
         :type: list[MetricsDimension]

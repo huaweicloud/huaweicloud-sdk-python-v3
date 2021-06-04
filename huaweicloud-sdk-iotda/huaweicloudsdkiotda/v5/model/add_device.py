@@ -88,7 +88,7 @@ class AddDevice:
     def device_id(self):
         """Gets the device_id of this AddDevice.
 
-        设备ID，用于唯一标识一个设备。如果携带该参数，平台将设备ID设置为该参数值；如果不携带该参数，设备ID由物联网平台分配获得，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
+        **参数说明**：设备ID，用于唯一标识一个设备。如果携带该参数，平台将设备ID设置为该参数值；如果不携带该参数，设备ID由物联网平台分配获得，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The device_id of this AddDevice.
         :rtype: str
@@ -99,7 +99,7 @@ class AddDevice:
     def device_id(self, device_id):
         """Sets the device_id of this AddDevice.
 
-        设备ID，用于唯一标识一个设备。如果携带该参数，平台将设备ID设置为该参数值；如果不携带该参数，设备ID由物联网平台分配获得，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
+        **参数说明**：设备ID，用于唯一标识一个设备。如果携带该参数，平台将设备ID设置为该参数值；如果不携带该参数，设备ID由物联网平台分配获得，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param device_id: The device_id of this AddDevice.
         :type: str
@@ -110,7 +110,7 @@ class AddDevice:
     def node_id(self):
         """Gets the node_id of this AddDevice.
 
-        设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。（注意:NB设备由于模组烧录信息后无法配置，所以NB设备会校验node_id全局唯一。）
+        **参数说明**：设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。 设备标识码长度为1到64个字符，包含英文字母、数字、连接号“-”和下划线“_”。 注意：NB设备由于模组烧录信息后无法配置，所以NB设备会校验node_id全局唯一。 **取值范围**：长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The node_id of this AddDevice.
         :rtype: str
@@ -121,7 +121,7 @@ class AddDevice:
     def node_id(self, node_id):
         """Sets the node_id of this AddDevice.
 
-        设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。（注意:NB设备由于模组烧录信息后无法配置，所以NB设备会校验node_id全局唯一。）
+        **参数说明**：设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。 设备标识码长度为1到64个字符，包含英文字母、数字、连接号“-”和下划线“_”。 注意：NB设备由于模组烧录信息后无法配置，所以NB设备会校验node_id全局唯一。 **取值范围**：长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param node_id: The node_id of this AddDevice.
         :type: str
@@ -132,7 +132,7 @@ class AddDevice:
     def device_name(self):
         """Gets the device_name of this AddDevice.
 
-        设备名称。
+        **参数说明**：设备名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
         :return: The device_name of this AddDevice.
         :rtype: str
@@ -143,7 +143,7 @@ class AddDevice:
     def device_name(self, device_name):
         """Sets the device_name of this AddDevice.
 
-        设备名称。
+        **参数说明**：设备名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
         :param device_name: The device_name of this AddDevice.
         :type: str
@@ -154,7 +154,7 @@ class AddDevice:
     def product_id(self):
         """Gets the product_id of this AddDevice.
 
-        设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。
+        **参数说明**：设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The product_id of this AddDevice.
         :rtype: str
@@ -165,7 +165,7 @@ class AddDevice:
     def product_id(self, product_id):
         """Sets the product_id of this AddDevice.
 
-        设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。
+        **参数说明**：设备关联的产品ID，用于唯一标识一个产品模型，在管理门户导入产品模型后由平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param product_id: The product_id of this AddDevice.
         :type: str
@@ -196,7 +196,7 @@ class AddDevice:
     def description(self):
         """Gets the description of this AddDevice.
 
-        设备的描述信息。
+        **参数说明**：设备的描述信息。 **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
         :return: The description of this AddDevice.
         :rtype: str
@@ -207,7 +207,7 @@ class AddDevice:
     def description(self, description):
         """Sets the description of this AddDevice.
 
-        设备的描述信息。
+        **参数说明**：设备的描述信息。 **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
         :param description: The description of this AddDevice.
         :type: str
@@ -218,7 +218,7 @@ class AddDevice:
     def gateway_id(self):
         """Gets the gateway_id of this AddDevice.
 
-        网关ID，用于标识设备所属的父设备，即父设备的设备ID。携带该参数时，表示在该父设备下创建一个子设备，这个子设备不与平台直连，此时必须保证这个父设备在平台已存在，创建成功后子设备的gateway_id等于该参数值；不携带该参数时，表示创建一个和平台直连的设备，创建成功后设备的device_id和gateway_id一致。注意：当前平台最多支持二级子设备。
+        **参数说明**：网关ID，用于标识设备所属的父设备，即父设备的设备ID。携带该参数时，表示在该父设备下创建一个子设备，这个子设备不与平台直连，此时必须保证这个父设备在平台已存在，创建成功后子设备的gateway_id等于该参数值；不携带该参数时，表示创建一个和平台直连的设备，创建成功后设备的device_id和gateway_id一致。注意：当前平台最多支持二级子设备。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The gateway_id of this AddDevice.
         :rtype: str
@@ -229,7 +229,7 @@ class AddDevice:
     def gateway_id(self, gateway_id):
         """Sets the gateway_id of this AddDevice.
 
-        网关ID，用于标识设备所属的父设备，即父设备的设备ID。携带该参数时，表示在该父设备下创建一个子设备，这个子设备不与平台直连，此时必须保证这个父设备在平台已存在，创建成功后子设备的gateway_id等于该参数值；不携带该参数时，表示创建一个和平台直连的设备，创建成功后设备的device_id和gateway_id一致。注意：当前平台最多支持二级子设备。
+        **参数说明**：网关ID，用于标识设备所属的父设备，即父设备的设备ID。携带该参数时，表示在该父设备下创建一个子设备，这个子设备不与平台直连，此时必须保证这个父设备在平台已存在，创建成功后子设备的gateway_id等于该参数值；不携带该参数时，表示创建一个和平台直连的设备，创建成功后设备的device_id和gateway_id一致。注意：当前平台最多支持二级子设备。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param gateway_id: The gateway_id of this AddDevice.
         :type: str
@@ -240,7 +240,7 @@ class AddDevice:
     def app_id(self):
         """Gets the app_id of this AddDevice.
 
-        资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的设备归属到哪个资源空间下，否则创建的设备将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。
+        **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的设备归属到哪个资源空间下，否则创建的设备将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The app_id of this AddDevice.
         :rtype: str
@@ -251,7 +251,7 @@ class AddDevice:
     def app_id(self, app_id):
         """Sets the app_id of this AddDevice.
 
-        资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的设备归属到哪个资源空间下，否则创建的设备将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。
+        **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的设备归属到哪个资源空间下，否则创建的设备将会归属到[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param app_id: The app_id of this AddDevice.
         :type: str
@@ -262,7 +262,7 @@ class AddDevice:
     def extension_info(self):
         """Gets the extension_info of this AddDevice.
 
-        设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。字段值大小上限为1K。
+        **参数说明**：设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。字段值大小上限为1K。
 
         :return: The extension_info of this AddDevice.
         :rtype: object
@@ -273,7 +273,7 @@ class AddDevice:
     def extension_info(self, extension_info):
         """Sets the extension_info of this AddDevice.
 
-        设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。字段值大小上限为1K。
+        **参数说明**：设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。字段值大小上限为1K。
 
         :param extension_info: The extension_info of this AddDevice.
         :type: object
@@ -284,7 +284,7 @@ class AddDevice:
     def shadow(self):
         """Gets the shadow of this AddDevice.
 
-        设备初始配置。用户使用该字段可以为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以shadow字段中设置的属性值为准写入到设备影子中。service_id的值和desired内的属性必须是profile中定义的。
+        **参数说明**：设备初始配置。用户使用该字段可以为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以shadow字段中设置的属性值为准写入到设备影子中。service_id的值和desired内的属性必须是profile中定义的。
 
         :return: The shadow of this AddDevice.
         :rtype: list[InitialDesired]
@@ -295,7 +295,7 @@ class AddDevice:
     def shadow(self, shadow):
         """Sets the shadow of this AddDevice.
 
-        设备初始配置。用户使用该字段可以为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以shadow字段中设置的属性值为准写入到设备影子中。service_id的值和desired内的属性必须是profile中定义的。
+        **参数说明**：设备初始配置。用户使用该字段可以为设备指定初始配置，指定后将会根据service_id和desired设置的属性值与产品中对应属性的默认值比对，如果不同，则将以shadow字段中设置的属性值为准写入到设备影子中。service_id的值和desired内的属性必须是profile中定义的。
 
         :param shadow: The shadow of this AddDevice.
         :type: list[InitialDesired]

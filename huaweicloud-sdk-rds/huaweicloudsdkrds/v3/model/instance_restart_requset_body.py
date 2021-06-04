@@ -23,7 +23,7 @@ class InstanceRestartRequsetBody:
     sensitive_list = []
 
     openapi_types = {
-        'restart': 'str'
+        'restart': 'object'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class InstanceRestartRequsetBody:
         在线调试时必填。
 
         :return: The restart of this InstanceRestartRequsetBody.
-        :rtype: str
+        :rtype: object
         """
         return self._restart
 
@@ -59,7 +59,7 @@ class InstanceRestartRequsetBody:
         在线调试时必填。
 
         :param restart: The restart of this InstanceRestartRequsetBody.
-        :type: str
+        :type: object
         """
         self._restart = restart
 

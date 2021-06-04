@@ -85,7 +85,7 @@ class UpdateProduct:
     def app_id(self):
         """Gets the app_id of this UpdateProduct.
 
-        资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，必须携带该参数指定修改的产品属于哪个资源空间，否则接口会提示错误。如果用户存在多资源空间，同时又不想携带该参数，可以联系华为技术支持对用户数据做资源空间合并。
+        **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，必须携带该参数指定修改的产品属于哪个资源空间，否则接口会提示错误。如果用户存在多资源空间，同时又不想携带该参数，可以联系华为技术支持对用户数据做资源空间合并。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The app_id of this UpdateProduct.
         :rtype: str
@@ -96,7 +96,7 @@ class UpdateProduct:
     def app_id(self, app_id):
         """Sets the app_id of this UpdateProduct.
 
-        资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，必须携带该参数指定修改的产品属于哪个资源空间，否则接口会提示错误。如果用户存在多资源空间，同时又不想携带该参数，可以联系华为技术支持对用户数据做资源空间合并。
+        **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，必须携带该参数指定修改的产品属于哪个资源空间，否则接口会提示错误。如果用户存在多资源空间，同时又不想携带该参数，可以联系华为技术支持对用户数据做资源空间合并。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param app_id: The app_id of this UpdateProduct.
         :type: str
@@ -107,7 +107,7 @@ class UpdateProduct:
     def name(self):
         """Gets the name of this UpdateProduct.
 
-        产品名称。
+        **参数说明**：产品名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :return: The name of this UpdateProduct.
         :rtype: str
@@ -118,7 +118,7 @@ class UpdateProduct:
     def name(self, name):
         """Sets the name of this UpdateProduct.
 
-        产品名称。
+        **参数说明**：产品名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param name: The name of this UpdateProduct.
         :type: str
@@ -129,7 +129,7 @@ class UpdateProduct:
     def device_type(self):
         """Gets the device_type of this UpdateProduct.
 
-        设备类型。
+        **参数说明**：设备类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :return: The device_type of this UpdateProduct.
         :rtype: str
@@ -140,7 +140,7 @@ class UpdateProduct:
     def device_type(self, device_type):
         """Sets the device_type of this UpdateProduct.
 
-        设备类型。
+        **参数说明**：设备类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param device_type: The device_type of this UpdateProduct.
         :type: str
@@ -151,7 +151,7 @@ class UpdateProduct:
     def protocol_type(self):
         """Gets the protocol_type of this UpdateProduct.
 
-        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA。
+        **参数说明**：设备使用的协议类型。 **取值范围**：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF，OPC-UA，OPC-DA。
 
         :return: The protocol_type of this UpdateProduct.
         :rtype: str
@@ -162,7 +162,7 @@ class UpdateProduct:
     def protocol_type(self, protocol_type):
         """Sets the protocol_type of this UpdateProduct.
 
-        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA。
+        **参数说明**：设备使用的协议类型。 **取值范围**：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF，OPC-UA，OPC-DA。
 
         :param protocol_type: The protocol_type of this UpdateProduct.
         :type: str
@@ -173,7 +173,7 @@ class UpdateProduct:
     def data_format(self):
         """Gets the data_format of this UpdateProduct.
 
-        设备上报数据的格式，取值范围：json，binary。
+        **参数说明**：设备上报数据的格式。 **取值范围**： - json：JSON格式 - binary：二进制码流格式
 
         :return: The data_format of this UpdateProduct.
         :rtype: str
@@ -184,7 +184,7 @@ class UpdateProduct:
     def data_format(self, data_format):
         """Sets the data_format of this UpdateProduct.
 
-        设备上报数据的格式，取值范围：json，binary。
+        **参数说明**：设备上报数据的格式。 **取值范围**： - json：JSON格式 - binary：二进制码流格式
 
         :param data_format: The data_format of this UpdateProduct.
         :type: str
@@ -195,7 +195,7 @@ class UpdateProduct:
     def service_capabilities(self):
         """Gets the service_capabilities of this UpdateProduct.
 
-        设备的服务能力列表。
+        **参数说明**：设备的服务能力列表。
 
         :return: The service_capabilities of this UpdateProduct.
         :rtype: list[ServiceCapability]
@@ -206,7 +206,7 @@ class UpdateProduct:
     def service_capabilities(self, service_capabilities):
         """Sets the service_capabilities of this UpdateProduct.
 
-        设备的服务能力列表。
+        **参数说明**：设备的服务能力列表。
 
         :param service_capabilities: The service_capabilities of this UpdateProduct.
         :type: list[ServiceCapability]
@@ -217,7 +217,7 @@ class UpdateProduct:
     def manufacturer_name(self):
         """Gets the manufacturer_name of this UpdateProduct.
 
-        厂商名称。
+        **参数说明**：厂商名称。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :return: The manufacturer_name of this UpdateProduct.
         :rtype: str
@@ -228,7 +228,7 @@ class UpdateProduct:
     def manufacturer_name(self, manufacturer_name):
         """Sets the manufacturer_name of this UpdateProduct.
 
-        厂商名称。
+        **参数说明**：厂商名称。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param manufacturer_name: The manufacturer_name of this UpdateProduct.
         :type: str
@@ -239,7 +239,7 @@ class UpdateProduct:
     def industry(self):
         """Gets the industry of this UpdateProduct.
 
-        设备所属行业。
+        **参数说明**：设备所属行业。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :return: The industry of this UpdateProduct.
         :rtype: str
@@ -250,7 +250,7 @@ class UpdateProduct:
     def industry(self, industry):
         """Sets the industry of this UpdateProduct.
 
-        设备所属行业。
+        **参数说明**：设备所属行业。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param industry: The industry of this UpdateProduct.
         :type: str
@@ -261,7 +261,7 @@ class UpdateProduct:
     def description(self):
         """Gets the description of this UpdateProduct.
 
-        产品的描述信息。
+        **参数说明**：产品的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
         :return: The description of this UpdateProduct.
         :rtype: str
@@ -272,7 +272,7 @@ class UpdateProduct:
     def description(self, description):
         """Sets the description of this UpdateProduct.
 
-        产品的描述信息。
+        **参数说明**：产品的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
         :param description: The description of this UpdateProduct.
         :type: str

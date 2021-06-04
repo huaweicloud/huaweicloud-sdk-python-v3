@@ -23,125 +23,42 @@ class Single2Ha:
     sensitive_list = []
 
     openapi_types = {
-        'az_code_new_node': 'str',
-        'password': 'str',
-        'dsspool_id': 'str',
-        'is_auto_pay': 'bool'
+        'single_to_ha': 'Single2HaObject'
     }
 
     attribute_map = {
-        'az_code_new_node': 'az_code_new_node',
-        'password': 'password',
-        'dsspool_id': 'dsspool_id',
-        'is_auto_pay': 'is_auto_pay'
+        'single_to_ha': 'single_to_ha'
     }
 
-    def __init__(self, az_code_new_node=None, password=None, dsspool_id=None, is_auto_pay=None):
+    def __init__(self, single_to_ha=None):
         """Single2Ha - a model defined in huaweicloud sdk"""
         
         
 
-        self._az_code_new_node = None
-        self._password = None
-        self._dsspool_id = None
-        self._is_auto_pay = None
+        self._single_to_ha = None
         self.discriminator = None
 
-        self.az_code_new_node = az_code_new_node
-        if password is not None:
-            self.password = password
-        if dsspool_id is not None:
-            self.dsspool_id = dsspool_id
-        if is_auto_pay is not None:
-            self.is_auto_pay = is_auto_pay
+        self.single_to_ha = single_to_ha
 
     @property
-    def az_code_new_node(self):
-        """Gets the az_code_new_node of this Single2Ha.
+    def single_to_ha(self):
+        """Gets the single_to_ha of this Single2Ha.
 
-        实例节点可用区码（AZ）。
 
-        :return: The az_code_new_node of this Single2Ha.
-        :rtype: str
+        :return: The single_to_ha of this Single2Ha.
+        :rtype: Single2HaObject
         """
-        return self._az_code_new_node
+        return self._single_to_ha
 
-    @az_code_new_node.setter
-    def az_code_new_node(self, az_code_new_node):
-        """Sets the az_code_new_node of this Single2Ha.
+    @single_to_ha.setter
+    def single_to_ha(self, single_to_ha):
+        """Sets the single_to_ha of this Single2Ha.
 
-        实例节点可用区码（AZ）。
 
-        :param az_code_new_node: The az_code_new_node of this Single2Ha.
-        :type: str
+        :param single_to_ha: The single_to_ha of this Single2Ha.
+        :type: Single2HaObject
         """
-        self._az_code_new_node = az_code_new_node
-
-    @property
-    def password(self):
-        """Gets the password of this Single2Ha.
-
-        仅在支持SQL Server数据库实例进行单机转主备时可选，指定时会验证密码有效性。
-
-        :return: The password of this Single2Ha.
-        :rtype: str
-        """
-        return self._password
-
-    @password.setter
-    def password(self, password):
-        """Sets the password of this Single2Ha.
-
-        仅在支持SQL Server数据库实例进行单机转主备时可选，指定时会验证密码有效性。
-
-        :param password: The password of this Single2Ha.
-        :type: str
-        """
-        self._password = password
-
-    @property
-    def dsspool_id(self):
-        """Gets the dsspool_id of this Single2Ha.
-
-        Dec用户专属存储ID，每个az配置的专属存储不同，实例节点所在专属存储ID，仅支持DEC用户创建时使用。
-
-        :return: The dsspool_id of this Single2Ha.
-        :rtype: str
-        """
-        return self._dsspool_id
-
-    @dsspool_id.setter
-    def dsspool_id(self, dsspool_id):
-        """Sets the dsspool_id of this Single2Ha.
-
-        Dec用户专属存储ID，每个az配置的专属存储不同，实例节点所在专属存储ID，仅支持DEC用户创建时使用。
-
-        :param dsspool_id: The dsspool_id of this Single2Ha.
-        :type: str
-        """
-        self._dsspool_id = dsspool_id
-
-    @property
-    def is_auto_pay(self):
-        """Gets the is_auto_pay of this Single2Ha.
-
-        仅包周期实例进行单机转主备时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
-
-        :return: The is_auto_pay of this Single2Ha.
-        :rtype: bool
-        """
-        return self._is_auto_pay
-
-    @is_auto_pay.setter
-    def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this Single2Ha.
-
-        仅包周期实例进行单机转主备时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
-
-        :param is_auto_pay: The is_auto_pay of this Single2Ha.
-        :type: bool
-        """
-        self._is_auto_pay = is_auto_pay
+        self._single_to_ha = single_to_ha
 
     def to_dict(self):
         """Returns the model properties as a dict"""

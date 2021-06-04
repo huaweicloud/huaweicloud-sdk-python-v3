@@ -57,7 +57,7 @@ class AddActionReq:
     def rule_id(self):
         """Gets the rule_id of this AddActionReq.
 
-        规则触发条件ID，用于唯一标识一条规则触发条件，在创建规则时由物联网平台分配获得。
+        **参数说明**：规则触发条件ID，用于唯一标识一条规则触发条件，在创建规则时由物联网平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The rule_id of this AddActionReq.
         :rtype: str
@@ -68,7 +68,7 @@ class AddActionReq:
     def rule_id(self, rule_id):
         """Sets the rule_id of this AddActionReq.
 
-        规则触发条件ID，用于唯一标识一条规则触发条件，在创建规则时由物联网平台分配获得。
+        **参数说明**：规则触发条件ID，用于唯一标识一条规则触发条件，在创建规则时由物联网平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param rule_id: The rule_id of this AddActionReq.
         :type: str
@@ -79,7 +79,7 @@ class AddActionReq:
     def channel(self):
         """Gets the channel of this AddActionReq.
 
-        规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。 
+        **参数说明**：规则动作的类型。 **取值范围**： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。
 
         :return: The channel of this AddActionReq.
         :rtype: str
@@ -90,7 +90,7 @@ class AddActionReq:
     def channel(self, channel):
         """Sets the channel of this AddActionReq.
 
-        规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。 
+        **参数说明**：规则动作的类型。 **取值范围**： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。
 
         :param channel: The channel of this AddActionReq.
         :type: str
@@ -121,7 +121,7 @@ class AddActionReq:
     def batch(self):
         """Gets the batch of this AddActionReq.
 
-        是否支持批量接收推送消息。
+        **参数说明**：是否支持批量接收推送消息。
 
         :return: The batch of this AddActionReq.
         :rtype: bool
@@ -132,7 +132,7 @@ class AddActionReq:
     def batch(self, batch):
         """Sets the batch of this AddActionReq.
 
-        是否支持批量接收推送消息。
+        **参数说明**：是否支持批量接收推送消息。
 
         :param batch: The batch of this AddActionReq.
         :type: bool

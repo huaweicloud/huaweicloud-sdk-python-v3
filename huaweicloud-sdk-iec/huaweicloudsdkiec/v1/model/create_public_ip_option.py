@@ -25,30 +25,30 @@ class CreatePublicIpOption:
     openapi_types = {
         'site_id': 'str',
         'ip_version': 'str',
-        'pool_id': 'str'
+        'type': 'str'
     }
 
     attribute_map = {
         'site_id': 'site_id',
         'ip_version': 'ip_version',
-        'pool_id': 'pool_id'
+        'type': 'type'
     }
 
-    def __init__(self, site_id=None, ip_version=None, pool_id=None):
+    def __init__(self, site_id=None, ip_version=None, type=None):
         """CreatePublicIpOption - a model defined in huaweicloud sdk"""
         
         
 
         self._site_id = None
         self._ip_version = None
-        self._pool_id = None
+        self._type = None
         self.discriminator = None
 
         self.site_id = site_id
         if ip_version is not None:
             self.ip_version = ip_version
-        if pool_id is not None:
-            self.pool_id = pool_id
+        if type is not None:
+            self.type = type
 
     @property
     def site_id(self):
@@ -95,26 +95,26 @@ class CreatePublicIpOption:
         self._ip_version = ip_version
 
     @property
-    def pool_id(self):
-        """Gets the pool_id of this CreatePublicIpOption.
+    def type(self):
+        """Gets the type of this CreatePublicIpOption.
 
         线路ID。
 
-        :return: The pool_id of this CreatePublicIpOption.
+        :return: The type of this CreatePublicIpOption.
         :rtype: str
         """
-        return self._pool_id
+        return self._type
 
-    @pool_id.setter
-    def pool_id(self, pool_id):
-        """Sets the pool_id of this CreatePublicIpOption.
+    @type.setter
+    def type(self, type):
+        """Sets the type of this CreatePublicIpOption.
 
         线路ID。
 
-        :param pool_id: The pool_id of this CreatePublicIpOption.
+        :param type: The type of this CreatePublicIpOption.
         :type: str
         """
-        self._pool_id = pool_id
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

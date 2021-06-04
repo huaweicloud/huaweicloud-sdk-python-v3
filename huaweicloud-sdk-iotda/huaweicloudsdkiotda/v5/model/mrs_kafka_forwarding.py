@@ -24,31 +24,36 @@ class MrsKafkaForwarding:
 
     openapi_types = {
         'addresses': 'list[NetAddress]',
-        'topic': 'str'
+        'topic': 'str',
+        'kerberos_authentication': 'bool'
     }
 
     attribute_map = {
         'addresses': 'addresses',
-        'topic': 'topic'
+        'topic': 'topic',
+        'kerberos_authentication': 'kerberos_authentication'
     }
 
-    def __init__(self, addresses=None, topic=None):
+    def __init__(self, addresses=None, topic=None, kerberos_authentication=None):
         """MrsKafkaForwarding - a model defined in huaweicloud sdk"""
         
         
 
         self._addresses = None
         self._topic = None
+        self._kerberos_authentication = None
         self.discriminator = None
 
         self.addresses = addresses
         self.topic = topic
+        if kerberos_authentication is not None:
+            self.kerberos_authentication = kerberos_authentication
 
     @property
     def addresses(self):
         """Gets the addresses of this MrsKafkaForwarding.
 
-        转发kafka消息对应的地址列表
+        **参数说明**：转发kafka消息对应的地址列表
 
         :return: The addresses of this MrsKafkaForwarding.
         :rtype: list[NetAddress]
@@ -59,7 +64,7 @@ class MrsKafkaForwarding:
     def addresses(self, addresses):
         """Sets the addresses of this MrsKafkaForwarding.
 
-        转发kafka消息对应的地址列表
+        **参数说明**：转发kafka消息对应的地址列表
 
         :param addresses: The addresses of this MrsKafkaForwarding.
         :type: list[NetAddress]
@@ -70,7 +75,7 @@ class MrsKafkaForwarding:
     def topic(self):
         """Gets the topic of this MrsKafkaForwarding.
 
-        转发kafka消息关联的topic信息。
+        **参数说明**：转发kafka消息关联的topic信息。
 
         :return: The topic of this MrsKafkaForwarding.
         :rtype: str
@@ -81,12 +86,34 @@ class MrsKafkaForwarding:
     def topic(self, topic):
         """Sets the topic of this MrsKafkaForwarding.
 
-        转发kafka消息关联的topic信息。
+        **参数说明**：转发kafka消息关联的topic信息。
 
         :param topic: The topic of this MrsKafkaForwarding.
         :type: str
         """
         self._topic = topic
+
+    @property
+    def kerberos_authentication(self):
+        """Gets the kerberos_authentication of this MrsKafkaForwarding.
+
+        是否Kerberos认证，默认为false。
+
+        :return: The kerberos_authentication of this MrsKafkaForwarding.
+        :rtype: bool
+        """
+        return self._kerberos_authentication
+
+    @kerberos_authentication.setter
+    def kerberos_authentication(self, kerberos_authentication):
+        """Sets the kerberos_authentication of this MrsKafkaForwarding.
+
+        是否Kerberos认证，默认为false。
+
+        :param kerberos_authentication: The kerberos_authentication of this MrsKafkaForwarding.
+        :type: bool
+        """
+        self._kerberos_authentication = kerberos_authentication
 
     def to_dict(self):
         """Returns the model properties as a dict"""

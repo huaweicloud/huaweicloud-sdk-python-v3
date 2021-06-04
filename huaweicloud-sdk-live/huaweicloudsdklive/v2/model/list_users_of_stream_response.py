@@ -50,7 +50,7 @@ class ListUsersOfStreamResponse(SdkResponse):
     def data_list(self):
         """Gets the data_list of this ListUsersOfStreamResponse.
 
-        域名对应的流量汇总列表。
+        观众趋势列表。
 
         :return: The data_list of this ListUsersOfStreamResponse.
         :rtype: list[V2UserData]
@@ -61,7 +61,7 @@ class ListUsersOfStreamResponse(SdkResponse):
     def data_list(self, data_list):
         """Sets the data_list of this ListUsersOfStreamResponse.
 
-        域名对应的流量汇总列表。
+        观众趋势列表。
 
         :param data_list: The data_list of this ListUsersOfStreamResponse.
         :type: list[V2UserData]

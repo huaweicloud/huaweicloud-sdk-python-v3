@@ -55,7 +55,7 @@ class UpdateActionReq:
     def channel(self):
         """Gets the channel of this UpdateActionReq.
 
-        规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。 
+        **参数说明**：规则动作的类型。 **取值范围**： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。
 
         :return: The channel of this UpdateActionReq.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateActionReq:
     def channel(self, channel):
         """Sets the channel of this UpdateActionReq.
 
-        规则动作的类型，取值范围： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。 
+        **参数说明**：规则动作的类型。 **取值范围**： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。
 
         :param channel: The channel of this UpdateActionReq.
         :type: str
@@ -97,7 +97,7 @@ class UpdateActionReq:
     def batch(self):
         """Gets the batch of this UpdateActionReq.
 
-        是否支持批量接收推送消息。
+        **参数说明**：是否支持批量接收推送消息。
 
         :return: The batch of this UpdateActionReq.
         :rtype: bool
@@ -108,7 +108,7 @@ class UpdateActionReq:
     def batch(self, batch):
         """Sets the batch of this UpdateActionReq.
 
-        是否支持批量接收推送消息。
+        **参数说明**：是否支持批量接收推送消息。
 
         :param batch: The batch of this UpdateActionReq.
         :type: bool

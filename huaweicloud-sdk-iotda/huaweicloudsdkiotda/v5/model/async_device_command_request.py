@@ -63,7 +63,7 @@ class AsyncDeviceCommandRequest:
     def service_id(self):
         """Gets the service_id of this AsyncDeviceCommandRequest.
 
-        设备命令所属的设备服务ID，在设备关联的产品模型中定义。如设备需要编解码插件来解析命令，此参数为必填项。
+        **参数说明**：设备命令所属的设备服务ID，在设备关联的产品模型中定义。如设备需要编解码插件来解析命令，此参数为必填项。 **取值范围**：长度不超过64的字符串。
 
         :return: The service_id of this AsyncDeviceCommandRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class AsyncDeviceCommandRequest:
     def service_id(self, service_id):
         """Sets the service_id of this AsyncDeviceCommandRequest.
 
-        设备命令所属的设备服务ID，在设备关联的产品模型中定义。如设备需要编解码插件来解析命令，此参数为必填项。
+        **参数说明**：设备命令所属的设备服务ID，在设备关联的产品模型中定义。如设备需要编解码插件来解析命令，此参数为必填项。 **取值范围**：长度不超过64的字符串。
 
         :param service_id: The service_id of this AsyncDeviceCommandRequest.
         :type: str
@@ -85,7 +85,7 @@ class AsyncDeviceCommandRequest:
     def command_name(self):
         """Gets the command_name of this AsyncDeviceCommandRequest.
 
-        设备命令名称，在设备关联的产品模型中定义。如设备需要编解码插件来解析命令，此参数为必填项。
+        **参数说明**：设备命令名称，在设备关联的产品模型中定义。如设备需要编解码插件来解析命令，此参数为必填项。 **取值范围**：长度不超过128的字符串。
 
         :return: The command_name of this AsyncDeviceCommandRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class AsyncDeviceCommandRequest:
     def command_name(self, command_name):
         """Sets the command_name of this AsyncDeviceCommandRequest.
 
-        设备命令名称，在设备关联的产品模型中定义。如设备需要编解码插件来解析命令，此参数为必填项。
+        **参数说明**：设备命令名称，在设备关联的产品模型中定义。如设备需要编解码插件来解析命令，此参数为必填项。 **取值范围**：长度不超过128的字符串。
 
         :param command_name: The command_name of this AsyncDeviceCommandRequest.
         :type: str
@@ -107,7 +107,7 @@ class AsyncDeviceCommandRequest:
     def paras(self):
         """Gets the paras of this AsyncDeviceCommandRequest.
 
-        设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定， 最大32K。 
+        **参数说明**：设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定， 最大32K。
 
         :return: The paras of this AsyncDeviceCommandRequest.
         :rtype: object
@@ -118,7 +118,7 @@ class AsyncDeviceCommandRequest:
     def paras(self, paras):
         """Sets the paras of this AsyncDeviceCommandRequest.
 
-        设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定， 最大32K。 
+        **参数说明**：设备执行的命令，Json格式，里面是一个个健值对，如果service_id不为空，每个健都是profile中命令的参数名（paraName）;如果service_id为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定， 最大32K。
 
         :param paras: The paras of this AsyncDeviceCommandRequest.
         :type: object
@@ -129,7 +129,7 @@ class AsyncDeviceCommandRequest:
     def expire_time(self):
         """Gets the expire_time of this AsyncDeviceCommandRequest.
 
-        物联网平台缓存命令的时长， 单位秒, 平台最多缓存20条消息（即最多缓存20条PENDING状态的命令） 该参数在send_strategy字段为delay时有效，默认缓存24小时，最大缓存2天；
+        **参数说明**：物联网平台缓存命令的时长， 单位秒, 平台最多缓存20条消息（即最多缓存20条PENDING状态的命令） 该参数在send_strategy字段为delay时有效，默认缓存24小时，最大缓存2天。
 
         :return: The expire_time of this AsyncDeviceCommandRequest.
         :rtype: int
@@ -140,7 +140,7 @@ class AsyncDeviceCommandRequest:
     def expire_time(self, expire_time):
         """Sets the expire_time of this AsyncDeviceCommandRequest.
 
-        物联网平台缓存命令的时长， 单位秒, 平台最多缓存20条消息（即最多缓存20条PENDING状态的命令） 该参数在send_strategy字段为delay时有效，默认缓存24小时，最大缓存2天；
+        **参数说明**：物联网平台缓存命令的时长， 单位秒, 平台最多缓存20条消息（即最多缓存20条PENDING状态的命令） 该参数在send_strategy字段为delay时有效，默认缓存24小时，最大缓存2天。
 
         :param expire_time: The expire_time of this AsyncDeviceCommandRequest.
         :type: int
@@ -151,7 +151,7 @@ class AsyncDeviceCommandRequest:
     def send_strategy(self):
         """Gets the send_strategy of this AsyncDeviceCommandRequest.
 
-        下发策略， immediately表示立即下发，此时expire_time无效；delay表示缓存下发，等数据上报或者设备上线之后下发，默认缓存下发。delay策略下，expire_time为0或空时，命令会默认缓存24小时。
+        **参数说明**：下发策略，默认缓存下发。 **取值范围**： - immediately:表示立即下发，此时expire_time无效。 - delay:表示缓存下发，等数据上报或者设备上线之后下发。expire_time为0或空时，命令会默认缓存24小时。
 
         :return: The send_strategy of this AsyncDeviceCommandRequest.
         :rtype: str
@@ -162,7 +162,7 @@ class AsyncDeviceCommandRequest:
     def send_strategy(self, send_strategy):
         """Sets the send_strategy of this AsyncDeviceCommandRequest.
 
-        下发策略， immediately表示立即下发，此时expire_time无效；delay表示缓存下发，等数据上报或者设备上线之后下发，默认缓存下发。delay策略下，expire_time为0或空时，命令会默认缓存24小时。
+        **参数说明**：下发策略，默认缓存下发。 **取值范围**： - immediately:表示立即下发，此时expire_time无效。 - delay:表示缓存下发，等数据上报或者设备上线之后下发。expire_time为0或空时，命令会默认缓存24小时。
 
         :param send_strategy: The send_strategy of this AsyncDeviceCommandRequest.
         :type: str

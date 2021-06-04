@@ -44,7 +44,7 @@ class RuleStatus:
     def status(self):
         """Gets the status of this RuleStatus.
 
-        规则的激活状态。 - active：激活。 - inactive：未激活。 
+        **参数说明**：规则的激活状态。 **取值范围**： - active：激活。 - inactive：未激活。
 
         :return: The status of this RuleStatus.
         :rtype: str
@@ -55,7 +55,7 @@ class RuleStatus:
     def status(self, status):
         """Sets the status of this RuleStatus.
 
-        规则的激活状态。 - active：激活。 - inactive：未激活。 
+        **参数说明**：规则的激活状态。 **取值范围**： - active：激活。 - inactive：未激活。
 
         :param status: The status of this RuleStatus.
         :type: str

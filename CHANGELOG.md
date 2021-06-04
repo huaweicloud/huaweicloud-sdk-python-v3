@@ -1,3 +1,69 @@
+# 3.0.46 2021-06-04
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+    - None
+- _Bug Fix_
+    - [Issue 20](https://github.com/huaweicloud/huaweicloud-sdk-go-v3/issues/20): Fix the issue that the type of `extendParam`
+      is defined incorrectly.
+- _Change_
+    - Add the request parameter `tobedeleted` to the interface `DeleteCluster`.
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+    - Support `Content Delivery Network` service.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+    - Support the interface `ShowQuotas`
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK IEC
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the name of request parameter of the interface `CreatePublicIp`: `pool_id` -> `type`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+    - Support interface `ListComplexQueryDevice`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+    - Support `GaussDBforNoSQL` service.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+    - Support the interface `ShowQuotas`
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the type of request parameter `restart` of the interface `StartInstanceRestartAction`: string -> object
+
 # 3.0.45 2021-05-25
 
 ### HuaweiCloud SDK AS

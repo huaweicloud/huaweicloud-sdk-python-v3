@@ -53,7 +53,7 @@ class ShowAsyncDeviceCommandRequest:
     def device_id(self):
         """Gets the device_id of this ShowAsyncDeviceCommandRequest.
 
-        下发消息的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获。
+        **参数说明**：下发消息的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获。
 
         :return: The device_id of this ShowAsyncDeviceCommandRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class ShowAsyncDeviceCommandRequest:
     def device_id(self, device_id):
         """Sets the device_id of this ShowAsyncDeviceCommandRequest.
 
-        下发消息的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获。
+        **参数说明**：下发消息的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获。
 
         :param device_id: The device_id of this ShowAsyncDeviceCommandRequest.
         :type: str
@@ -75,7 +75,7 @@ class ShowAsyncDeviceCommandRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowAsyncDeviceCommandRequest.
 
-        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :return: The instance_id of this ShowAsyncDeviceCommandRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class ShowAsyncDeviceCommandRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowAsyncDeviceCommandRequest.
 
-        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this ShowAsyncDeviceCommandRequest.
         :type: str
@@ -97,7 +97,7 @@ class ShowAsyncDeviceCommandRequest:
     def command_id(self):
         """Gets the command_id of this ShowAsyncDeviceCommandRequest.
 
-        下发命令的命令id，用于唯一标识一个消息，在下发命令时由物联网平台分配获得。
+        **参数说明**：下发命令的命令id，用于唯一标识一个消息，在下发命令时由物联网平台分配获得。 **取值范围**：长度不超过100，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The command_id of this ShowAsyncDeviceCommandRequest.
         :rtype: str
@@ -108,7 +108,7 @@ class ShowAsyncDeviceCommandRequest:
     def command_id(self, command_id):
         """Sets the command_id of this ShowAsyncDeviceCommandRequest.
 
-        下发命令的命令id，用于唯一标识一个消息，在下发命令时由物联网平台分配获得。
+        **参数说明**：下发命令的命令id，用于唯一标识一个消息，在下发命令时由物联网平台分配获得。 **取值范围**：长度不超过100，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param command_id: The command_id of this ShowAsyncDeviceCommandRequest.
         :type: str

@@ -32,7 +32,6 @@ from huaweicloudsdkiotda.v5.model.add_queue_response import AddQueueResponse
 from huaweicloudsdkiotda.v5.model.add_rule_req import AddRuleReq
 from huaweicloudsdkiotda.v5.model.amqp_forwarding import AmqpForwarding
 from huaweicloudsdkiotda.v5.model.application_dto import ApplicationDTO
-from huaweicloudsdkiotda.v5.model.async_device_command import AsyncDeviceCommand
 from huaweicloudsdkiotda.v5.model.async_device_command_request import AsyncDeviceCommandRequest
 from huaweicloudsdkiotda.v5.model.auth_info import AuthInfo
 from huaweicloudsdkiotda.v5.model.auth_info_without_secret import AuthInfoWithoutSecret
@@ -113,10 +112,6 @@ from huaweicloudsdkiotda.v5.model.http_forwarding import HttpForwarding
 from huaweicloudsdkiotda.v5.model.influx_db_forwarding import InfluxDBForwarding
 from huaweicloudsdkiotda.v5.model.initial_desired import InitialDesired
 from huaweicloudsdkiotda.v5.model.io_ta_forwarding import IoTAForwarding
-from huaweicloudsdkiotda.v5.model.list_async_commands_request import ListAsyncCommandsRequest
-from huaweicloudsdkiotda.v5.model.list_async_commands_response import ListAsyncCommandsResponse
-from huaweicloudsdkiotda.v5.model.list_async_history_commands_request import ListAsyncHistoryCommandsRequest
-from huaweicloudsdkiotda.v5.model.list_async_history_commands_response import ListAsyncHistoryCommandsResponse
 from huaweicloudsdkiotda.v5.model.list_batch_task_files_request import ListBatchTaskFilesRequest
 from huaweicloudsdkiotda.v5.model.list_batch_task_files_response import ListBatchTaskFilesResponse
 from huaweicloudsdkiotda.v5.model.list_batch_tasks_request import ListBatchTasksRequest
@@ -152,6 +147,7 @@ from huaweicloudsdkiotda.v5.model.obs_forwarding import ObsForwarding
 from huaweicloudsdkiotda.v5.model.page import Page
 from huaweicloudsdkiotda.v5.model.product_summary import ProductSummary
 from huaweicloudsdkiotda.v5.model.property_filter import PropertyFilter
+from huaweicloudsdkiotda.v5.model.pulsar_forwarding import PulsarForwarding
 from huaweicloudsdkiotda.v5.model.query_device_simplify import QueryDeviceSimplify
 from huaweicloudsdkiotda.v5.model.query_queue_base import QueryQueueBase
 from huaweicloudsdkiotda.v5.model.query_resource_by_tags_dto import QueryResourceByTagsDTO

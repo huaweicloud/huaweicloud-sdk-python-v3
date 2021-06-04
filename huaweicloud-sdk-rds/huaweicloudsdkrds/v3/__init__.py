@@ -95,6 +95,7 @@ from huaweicloudsdkrds.v3.model.dss_pool_info import DssPoolInfo
 from huaweicloudsdkrds.v3.model.enable_configuration_request import EnableConfigurationRequest
 from huaweicloudsdkrds.v3.model.enable_configuration_response import EnableConfigurationResponse
 from huaweicloudsdkrds.v3.model.enlarge_volume import EnlargeVolume
+from huaweicloudsdkrds.v3.model.enlarge_volume_object import EnlargeVolumeObject
 from huaweicloudsdkrds.v3.model.error_log import ErrorLog
 from huaweicloudsdkrds.v3.model.error_response import ErrorResponse
 from huaweicloudsdkrds.v3.model.failover_mode_request import FailoverModeRequest
@@ -191,11 +192,14 @@ from huaweicloudsdkrds.v3.model.postgresql_user_for_list import PostgresqlUserFo
 from huaweicloudsdkrds.v3.model.postgresql_user_with_privilege import PostgresqlUserWithPrivilege
 from huaweicloudsdkrds.v3.model.project_tag_info_response import ProjectTagInfoResponse
 from huaweicloudsdkrds.v3.model.pwd_reset_request import PwdResetRequest
+from huaweicloudsdkrds.v3.model.quotas import Quotas
 from huaweicloudsdkrds.v3.model.recycle_policy_request_body import RecyclePolicyRequestBody
 from huaweicloudsdkrds.v3.model.related_instance import RelatedInstance
 from huaweicloudsdkrds.v3.model.reset_pwd_request import ResetPwdRequest
 from huaweicloudsdkrds.v3.model.reset_pwd_response import ResetPwdResponse
+from huaweicloudsdkrds.v3.model.resize_flavor_object import ResizeFlavorObject
 from huaweicloudsdkrds.v3.model.resize_flavor_request import ResizeFlavorRequest
+from huaweicloudsdkrds.v3.model.resources import Resources
 from huaweicloudsdkrds.v3.model.restore_databases_info import RestoreDatabasesInfo
 from huaweicloudsdkrds.v3.model.restore_point import RestorePoint
 from huaweicloudsdkrds.v3.model.restore_table_info import RestoreTableInfo
@@ -243,7 +247,10 @@ from huaweicloudsdkrds.v3.model.show_instance_configuration_request import ShowI
 from huaweicloudsdkrds.v3.model.show_instance_configuration_response import ShowInstanceConfigurationResponse
 from huaweicloudsdkrds.v3.model.show_off_site_backup_policy_request import ShowOffSiteBackupPolicyRequest
 from huaweicloudsdkrds.v3.model.show_off_site_backup_policy_response import ShowOffSiteBackupPolicyResponse
+from huaweicloudsdkrds.v3.model.show_quotas_request import ShowQuotasRequest
+from huaweicloudsdkrds.v3.model.show_quotas_response import ShowQuotasResponse
 from huaweicloudsdkrds.v3.model.single2_ha import Single2Ha
+from huaweicloudsdkrds.v3.model.single2_ha_object import Single2HaObject
 from huaweicloudsdkrds.v3.model.slow_log import SlowLog
 from huaweicloudsdkrds.v3.model.slow_log_statistics import SlowLogStatistics
 from huaweicloudsdkrds.v3.model.slowlog_download_info import SlowlogDownloadInfo

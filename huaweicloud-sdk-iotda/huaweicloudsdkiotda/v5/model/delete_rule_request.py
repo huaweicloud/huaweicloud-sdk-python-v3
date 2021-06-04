@@ -49,7 +49,7 @@ class DeleteRuleRequest:
     def instance_id(self):
         """Gets the instance_id of this DeleteRuleRequest.
 
-        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :return: The instance_id of this DeleteRuleRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class DeleteRuleRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeleteRuleRequest.
 
-        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this DeleteRuleRequest.
         :type: str
@@ -71,7 +71,7 @@ class DeleteRuleRequest:
     def rule_id(self):
         """Gets the rule_id of this DeleteRuleRequest.
 
-        规则ID，用于唯一标识一条规则，在创建规则时由物联网平台分配获得。
+        **参数说明**：规则ID，用于唯一标识一条规则，在创建规则时由物联网平台分配获得。 **取值范围**：长度不超过32，只允许字母、数字的组合。
 
         :return: The rule_id of this DeleteRuleRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class DeleteRuleRequest:
     def rule_id(self, rule_id):
         """Sets the rule_id of this DeleteRuleRequest.
 
-        规则ID，用于唯一标识一条规则，在创建规则时由物联网平台分配获得。
+        **参数说明**：规则ID，用于唯一标识一条规则，在创建规则时由物联网平台分配获得。 **取值范围**：长度不超过32，只允许字母、数字的组合。
 
         :param rule_id: The rule_id of this DeleteRuleRequest.
         :type: str

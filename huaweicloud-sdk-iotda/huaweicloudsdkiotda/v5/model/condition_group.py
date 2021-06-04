@@ -55,7 +55,7 @@ class ConditionGroup:
     def conditions(self):
         """Gets the conditions of this ConditionGroup.
 
-        规则的条件列表，单个规则最多支持设置10个条件。
+        **参数说明**：规则的条件列表，单个规则最多支持设置10个条件。
 
         :return: The conditions of this ConditionGroup.
         :rtype: list[RuleCondition]
@@ -66,7 +66,7 @@ class ConditionGroup:
     def conditions(self, conditions):
         """Sets the conditions of this ConditionGroup.
 
-        规则的条件列表，单个规则最多支持设置10个条件。
+        **参数说明**：规则的条件列表，单个规则最多支持设置10个条件。
 
         :param conditions: The conditions of this ConditionGroup.
         :type: list[RuleCondition]
@@ -77,7 +77,7 @@ class ConditionGroup:
     def logic(self):
         """Gets the logic of this ConditionGroup.
 
-        规则条件列表中多个条件之间的逻辑关系，默认值：and。 - and：逻辑且。 - or：逻辑或。 
+        **参数说明**：规则条件列表中多个条件之间的逻辑关系，默认值：and。 **取值范围**： - and：逻辑且。 - or：逻辑或。
 
         :return: The logic of this ConditionGroup.
         :rtype: str
@@ -88,7 +88,7 @@ class ConditionGroup:
     def logic(self, logic):
         """Sets the logic of this ConditionGroup.
 
-        规则条件列表中多个条件之间的逻辑关系，默认值：and。 - and：逻辑且。 - or：逻辑或。 
+        **参数说明**：规则条件列表中多个条件之间的逻辑关系，默认值：and。 **取值范围**： - and：逻辑且。 - or：逻辑或。
 
         :param logic: The logic of this ConditionGroup.
         :type: str

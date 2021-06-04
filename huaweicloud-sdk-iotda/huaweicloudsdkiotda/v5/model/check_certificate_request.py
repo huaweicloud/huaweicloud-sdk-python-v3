@@ -58,7 +58,7 @@ class CheckCertificateRequest:
     def instance_id(self):
         """Gets the instance_id of this CheckCertificateRequest.
 
-        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :return: The instance_id of this CheckCertificateRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class CheckCertificateRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CheckCertificateRequest.
 
-        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this CheckCertificateRequest.
         :type: str
@@ -80,7 +80,7 @@ class CheckCertificateRequest:
     def certificate_id(self):
         """Gets the certificate_id of this CheckCertificateRequest.
 
-        设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
+        **参数说明**：设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
 
         :return: The certificate_id of this CheckCertificateRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class CheckCertificateRequest:
     def certificate_id(self, certificate_id):
         """Sets the certificate_id of this CheckCertificateRequest.
 
-        设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
+        **参数说明**：设备CA证书ID，在上传设备CA证书时由平台分配的唯一标识。
 
         :param certificate_id: The certificate_id of this CheckCertificateRequest.
         :type: str
@@ -102,7 +102,7 @@ class CheckCertificateRequest:
     def action_id(self):
         """Gets the action_id of this CheckCertificateRequest.
 
-        对证书执行的操作，当前仅支持verify:校验证书
+        **参数说明**：对证书执行的操作。 **取值范围**：当前仅支持verify:校验证书。
 
         :return: The action_id of this CheckCertificateRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class CheckCertificateRequest:
     def action_id(self, action_id):
         """Sets the action_id of this CheckCertificateRequest.
 
-        对证书执行的操作，当前仅支持verify:校验证书
+        **参数说明**：对证书执行的操作。 **取值范围**：当前仅支持verify:校验证书。
 
         :param action_id: The action_id of this CheckCertificateRequest.
         :type: str

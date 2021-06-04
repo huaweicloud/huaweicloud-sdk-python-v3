@@ -69,7 +69,7 @@ class DatapointForBatchMetric:
     def max(self):
         """Gets the max of this DatapointForBatchMetric.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的最大值。
 
         :return: The max of this DatapointForBatchMetric.
         :rtype: float
@@ -80,7 +80,7 @@ class DatapointForBatchMetric:
     def max(self, max):
         """Sets the max of this DatapointForBatchMetric.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的最大值。
 
         :param max: The max of this DatapointForBatchMetric.
         :type: float
@@ -91,7 +91,7 @@ class DatapointForBatchMetric:
     def min(self):
         """Gets the min of this DatapointForBatchMetric.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的最小值。
 
         :return: The min of this DatapointForBatchMetric.
         :rtype: float
@@ -102,7 +102,7 @@ class DatapointForBatchMetric:
     def min(self, min):
         """Sets the min of this DatapointForBatchMetric.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的最小值。
 
         :param min: The min of this DatapointForBatchMetric.
         :type: float
@@ -113,7 +113,7 @@ class DatapointForBatchMetric:
     def average(self):
         """Gets the average of this DatapointForBatchMetric.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的平均值。
 
         :return: The average of this DatapointForBatchMetric.
         :rtype: float
@@ -124,7 +124,7 @@ class DatapointForBatchMetric:
     def average(self, average):
         """Sets the average of this DatapointForBatchMetric.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的平均值。
 
         :param average: The average of this DatapointForBatchMetric.
         :type: float
@@ -135,7 +135,7 @@ class DatapointForBatchMetric:
     def sum(self):
         """Gets the sum of this DatapointForBatchMetric.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的求和值。
 
         :return: The sum of this DatapointForBatchMetric.
         :rtype: float
@@ -146,7 +146,7 @@ class DatapointForBatchMetric:
     def sum(self, sum):
         """Sets the sum of this DatapointForBatchMetric.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的求和值。
 
         :param sum: The sum of this DatapointForBatchMetric.
         :type: float
@@ -157,7 +157,7 @@ class DatapointForBatchMetric:
     def variance(self):
         """Gets the variance of this DatapointForBatchMetric.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的方差。
 
         :return: The variance of this DatapointForBatchMetric.
         :rtype: str
@@ -168,7 +168,7 @@ class DatapointForBatchMetric:
     def variance(self, variance):
         """Sets the variance of this DatapointForBatchMetric.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的方差。
 
         :param variance: The variance of this DatapointForBatchMetric.
         :type: str

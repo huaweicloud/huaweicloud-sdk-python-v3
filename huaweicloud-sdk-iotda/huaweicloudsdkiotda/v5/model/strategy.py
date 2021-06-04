@@ -50,7 +50,7 @@ class Strategy:
     def trigger(self):
         """Gets the trigger of this Strategy.
 
-        规则条件触发的判断策略，默认为pulse。 - pulse：设备上报的数据满足条件则触发，不判断上一次上报的数据。 - reverse：设备上一次上报的数据不满足条件，本次上报的数据满足条件则触发。 
+        **参数说明**：规则条件触发的判断策略，默认为pulse。 **取值范围**： - pulse：设备上报的数据满足条件则触发，不判断上一次上报的数据。 - reverse：设备上一次上报的数据不满足条件，本次上报的数据满足条件则触发。
 
         :return: The trigger of this Strategy.
         :rtype: str
@@ -61,7 +61,7 @@ class Strategy:
     def trigger(self, trigger):
         """Sets the trigger of this Strategy.
 
-        规则条件触发的判断策略，默认为pulse。 - pulse：设备上报的数据满足条件则触发，不判断上一次上报的数据。 - reverse：设备上一次上报的数据不满足条件，本次上报的数据满足条件则触发。 
+        **参数说明**：规则条件触发的判断策略，默认为pulse。 **取值范围**： - pulse：设备上报的数据满足条件则触发，不判断上一次上报的数据。 - reverse：设备上一次上报的数据不满足条件，本次上报的数据满足条件则触发。
 
         :param trigger: The trigger of this Strategy.
         :type: str
@@ -72,7 +72,7 @@ class Strategy:
     def event_valid_time(self):
         """Gets the event_valid_time of this Strategy.
 
-        设备数据的有效时间，单位为秒，设备数据的产生时间以上报数据中的eventTime为基准。
+        **参数说明**：设备数据的有效时间，单位为秒，设备数据的产生时间以上报数据中的eventTime为基准。
 
         :return: The event_valid_time of this Strategy.
         :rtype: int
@@ -83,7 +83,7 @@ class Strategy:
     def event_valid_time(self, event_valid_time):
         """Sets the event_valid_time of this Strategy.
 
-        设备数据的有效时间，单位为秒，设备数据的产生时间以上报数据中的eventTime为基准。
+        **参数说明**：设备数据的有效时间，单位为秒，设备数据的产生时间以上报数据中的eventTime为基准。
 
         :param event_valid_time: The event_valid_time of this Strategy.
         :type: int

@@ -36,7 +36,8 @@ class ChannelDetail:
         'lts_forwarding': 'LtsForwarding',
         'influxdb_forwarding': 'InfluxDBForwarding',
         'functiongraph_forwarding': 'FunctionGraphForwarding',
-        'mrs_kafka_forwarding': 'MrsKafkaForwarding'
+        'mrs_kafka_forwarding': 'MrsKafkaForwarding',
+        'pulsar_forwarding': 'PulsarForwarding'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class ChannelDetail:
         'lts_forwarding': 'lts_forwarding',
         'influxdb_forwarding': 'influxdb_forwarding',
         'functiongraph_forwarding': 'functiongraph_forwarding',
-        'mrs_kafka_forwarding': 'mrs_kafka_forwarding'
+        'mrs_kafka_forwarding': 'mrs_kafka_forwarding',
+        'pulsar_forwarding': 'pulsar_forwarding'
     }
 
-    def __init__(self, http_forwarding=None, dis_forwarding=None, obs_forwarding=None, amqp_forwarding=None, dms_kafka_forwarding=None, roma_forwarding=None, iota_forwarding=None, mqs_forwarding=None, mysql_forwarding=None, mqtt_forwarding=None, lts_forwarding=None, influxdb_forwarding=None, functiongraph_forwarding=None, mrs_kafka_forwarding=None):
+    def __init__(self, http_forwarding=None, dis_forwarding=None, obs_forwarding=None, amqp_forwarding=None, dms_kafka_forwarding=None, roma_forwarding=None, iota_forwarding=None, mqs_forwarding=None, mysql_forwarding=None, mqtt_forwarding=None, lts_forwarding=None, influxdb_forwarding=None, functiongraph_forwarding=None, mrs_kafka_forwarding=None, pulsar_forwarding=None):
         """ChannelDetail - a model defined in huaweicloud sdk"""
         
         
@@ -75,6 +77,7 @@ class ChannelDetail:
         self._influxdb_forwarding = None
         self._functiongraph_forwarding = None
         self._mrs_kafka_forwarding = None
+        self._pulsar_forwarding = None
         self.discriminator = None
 
         if http_forwarding is not None:
@@ -105,6 +108,8 @@ class ChannelDetail:
             self.functiongraph_forwarding = functiongraph_forwarding
         if mrs_kafka_forwarding is not None:
             self.mrs_kafka_forwarding = mrs_kafka_forwarding
+        if pulsar_forwarding is not None:
+            self.pulsar_forwarding = pulsar_forwarding
 
     @property
     def http_forwarding(self):
@@ -385,6 +390,26 @@ class ChannelDetail:
         :type: MrsKafkaForwarding
         """
         self._mrs_kafka_forwarding = mrs_kafka_forwarding
+
+    @property
+    def pulsar_forwarding(self):
+        """Gets the pulsar_forwarding of this ChannelDetail.
+
+
+        :return: The pulsar_forwarding of this ChannelDetail.
+        :rtype: PulsarForwarding
+        """
+        return self._pulsar_forwarding
+
+    @pulsar_forwarding.setter
+    def pulsar_forwarding(self, pulsar_forwarding):
+        """Sets the pulsar_forwarding of this ChannelDetail.
+
+
+        :param pulsar_forwarding: The pulsar_forwarding of this ChannelDetail.
+        :type: PulsarForwarding
+        """
+        self._pulsar_forwarding = pulsar_forwarding
 
     def to_dict(self):
         """Returns the model properties as a dict"""

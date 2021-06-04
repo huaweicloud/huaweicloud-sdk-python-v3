@@ -73,7 +73,7 @@ class ServiceCapability:
     def service_id(self):
         """Gets the service_id of this ServiceCapability.
 
-        设备的服务ID。
+        **参数说明**：设备的服务ID。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
 
         :return: The service_id of this ServiceCapability.
         :rtype: str
@@ -84,7 +84,7 @@ class ServiceCapability:
     def service_id(self, service_id):
         """Sets the service_id of this ServiceCapability.
 
-        设备的服务ID。
+        **参数说明**：设备的服务ID。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
 
         :param service_id: The service_id of this ServiceCapability.
         :type: str
@@ -95,7 +95,7 @@ class ServiceCapability:
     def service_type(self):
         """Gets the service_type of this ServiceCapability.
 
-        设备的服务类型。
+        **参数说明**：设备的服务类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
 
         :return: The service_type of this ServiceCapability.
         :rtype: str
@@ -106,7 +106,7 @@ class ServiceCapability:
     def service_type(self, service_type):
         """Sets the service_type of this ServiceCapability.
 
-        设备的服务类型。
+        **参数说明**：设备的服务类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
 
         :param service_type: The service_type of this ServiceCapability.
         :type: str
@@ -117,7 +117,7 @@ class ServiceCapability:
     def properties(self):
         """Gets the properties of this ServiceCapability.
 
-        设备服务支持的属性列表。
+        **参数说明**：设备服务支持的属性列表
 
         :return: The properties of this ServiceCapability.
         :rtype: list[ServiceProperty]
@@ -128,7 +128,7 @@ class ServiceCapability:
     def properties(self, properties):
         """Sets the properties of this ServiceCapability.
 
-        设备服务支持的属性列表。
+        **参数说明**：设备服务支持的属性列表
 
         :param properties: The properties of this ServiceCapability.
         :type: list[ServiceProperty]
@@ -139,7 +139,7 @@ class ServiceCapability:
     def commands(self):
         """Gets the commands of this ServiceCapability.
 
-        设备服务支持的命令列表。
+        **参数说明**：设备服务支持的命令列表。
 
         :return: The commands of this ServiceCapability.
         :rtype: list[ServiceCommand]
@@ -150,7 +150,7 @@ class ServiceCapability:
     def commands(self, commands):
         """Sets the commands of this ServiceCapability.
 
-        设备服务支持的命令列表。
+        **参数说明**：设备服务支持的命令列表。
 
         :param commands: The commands of this ServiceCapability.
         :type: list[ServiceCommand]
@@ -161,7 +161,7 @@ class ServiceCapability:
     def events(self):
         """Gets the events of this ServiceCapability.
 
-        设备服务支持的事件列表。
+        **参数说明**：设备服务支持的事件列表。
 
         :return: The events of this ServiceCapability.
         :rtype: list[ServiceEvent]
@@ -172,7 +172,7 @@ class ServiceCapability:
     def events(self, events):
         """Sets the events of this ServiceCapability.
 
-        设备服务支持的事件列表。
+        **参数说明**：设备服务支持的事件列表。
 
         :param events: The events of this ServiceCapability.
         :type: list[ServiceEvent]
@@ -183,7 +183,7 @@ class ServiceCapability:
     def description(self):
         """Gets the description of this ServiceCapability.
 
-        设备服务的描述信息。
+        **参数说明**：设备服务的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
         :return: The description of this ServiceCapability.
         :rtype: str
@@ -194,7 +194,7 @@ class ServiceCapability:
     def description(self, description):
         """Sets the description of this ServiceCapability.
 
-        设备服务的描述信息。
+        **参数说明**：设备服务的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
         :param description: The description of this ServiceCapability.
         :type: str
@@ -205,7 +205,7 @@ class ServiceCapability:
     def option(self):
         """Gets the option of this ServiceCapability.
 
-        指定设备服务是否必选。Master（主服务）, Mandatory（必选服务）, Optional（可选服务），目前本字段为非功能性字段，仅起到标识作用。默认为Optional（可选服务）。
+        **参数说明**：指定设备服务是否必选。目前本字段为非功能性字段，仅起到标识作用。 **取值范围**： - Master：主服务 - Mandatory：必选服务 - Optional：可选服务 默认值为Optional。
 
         :return: The option of this ServiceCapability.
         :rtype: str
@@ -216,7 +216,7 @@ class ServiceCapability:
     def option(self, option):
         """Sets the option of this ServiceCapability.
 
-        指定设备服务是否必选。Master（主服务）, Mandatory（必选服务）, Optional（可选服务），目前本字段为非功能性字段，仅起到标识作用。默认为Optional（可选服务）。
+        **参数说明**：指定设备服务是否必选。目前本字段为非功能性字段，仅起到标识作用。 **取值范围**： - Master：主服务 - Mandatory：必选服务 - Optional：可选服务 默认值为Optional。
 
         :param option: The option of this ServiceCapability.
         :type: str

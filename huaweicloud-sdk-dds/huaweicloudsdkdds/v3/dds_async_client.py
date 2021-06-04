@@ -3561,6 +3561,67 @@ class DdsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_quotas_async(self, request):
+        """查询配额
+
+        查询单租户在DDS服务下的资源配额，包括单节点实例配额、副本集实例配额、集群实例配额等。
+
+        :param ShowQuotasRequest request
+        :return: ShowQuotasResponse
+        """
+        return self.show_quotas_with_http_info(request)
+
+    def show_quotas_with_http_info(self, request):
+        """查询配额
+
+        查询单租户在DDS服务下的资源配额，包括单节点实例配额、副本集实例配额、集群实例配额等。
+
+        :param ShowQuotasRequest request
+        :return: ShowQuotasResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/quotas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowQuotasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_sharding_balancer_async(self, request):
         """查询集群均衡设置
 

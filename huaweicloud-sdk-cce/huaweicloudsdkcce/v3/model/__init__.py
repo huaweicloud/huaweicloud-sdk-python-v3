@@ -19,6 +19,7 @@ from huaweicloudsdkcce.v3.model.cce_job_status import CCEJobStatus
 from huaweicloudsdkcce.v3.model.cert_duration import CertDuration
 from huaweicloudsdkcce.v3.model.cluster_cert import ClusterCert
 from huaweicloudsdkcce.v3.model.cluster_endpoints import ClusterEndpoints
+from huaweicloudsdkcce.v3.model.cluster_extend_param import ClusterExtendParam
 from huaweicloudsdkcce.v3.model.cluster_information import ClusterInformation
 from huaweicloudsdkcce.v3.model.cluster_information_spec import ClusterInformationSpec
 from huaweicloudsdkcce.v3.model.cluster_metadata import ClusterMetadata
@@ -71,6 +72,7 @@ from huaweicloudsdkcce.v3.model.login import Login
 from huaweicloudsdkcce.v3.model.master_spec import MasterSpec
 from huaweicloudsdkcce.v3.model.metadata import Metadata
 from huaweicloudsdkcce.v3.model.nic_spec import NicSpec
+from huaweicloudsdkcce.v3.model.node_extend_param import NodeExtendParam
 from huaweicloudsdkcce.v3.model.node_management import NodeManagement
 from huaweicloudsdkcce.v3.model.node_metadata import NodeMetadata
 from huaweicloudsdkcce.v3.model.node_nic_spec import NodeNicSpec
@@ -121,6 +123,6 @@ from huaweicloudsdkcce.v3.model.v3_node_eip_spec import V3NodeEIPSpec
 from huaweicloudsdkcce.v3.model.v3_node_public_ip import V3NodePublicIP
 from huaweicloudsdkcce.v3.model.v3_node_spec import V3NodeSpec
 from huaweicloudsdkcce.v3.model.v3_node_status import V3NodeStatus
-from huaweicloudsdkcce.v3.model.v3_volume import V3Volume
 from huaweicloudsdkcce.v3.model.versions import Versions
+from huaweicloudsdkcce.v3.model.volume import Volume
 from huaweicloudsdkcce.v3.model.volume_metadata import VolumeMetadata

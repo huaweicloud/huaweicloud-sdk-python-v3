@@ -48,7 +48,7 @@ class ActionIoTAForwarding:
     def region_name(self):
         """Gets the region_name of this ActionIoTAForwarding.
 
-        IoTA服务对应的region区域
+        **参数说明**：IoTA服务对应的region区域。
 
         :return: The region_name of this ActionIoTAForwarding.
         :rtype: str
@@ -59,7 +59,7 @@ class ActionIoTAForwarding:
     def region_name(self, region_name):
         """Sets the region_name of this ActionIoTAForwarding.
 
-        IoTA服务对应的region区域
+        **参数说明**：IoTA服务对应的region区域。
 
         :param region_name: The region_name of this ActionIoTAForwarding.
         :type: str
@@ -70,7 +70,7 @@ class ActionIoTAForwarding:
     def project_id(self):
         """Gets the project_id of this ActionIoTAForwarding.
 
-        IoTA服务对应的projectId信息
+        **参数说明**：IoTA服务对应的projectId信息。
 
         :return: The project_id of this ActionIoTAForwarding.
         :rtype: str
@@ -81,7 +81,7 @@ class ActionIoTAForwarding:
     def project_id(self, project_id):
         """Sets the project_id of this ActionIoTAForwarding.
 
-        IoTA服务对应的projectId信息
+        **参数说明**：IoTA服务对应的projectId信息。
 
         :param project_id: The project_id of this ActionIoTAForwarding.
         :type: str

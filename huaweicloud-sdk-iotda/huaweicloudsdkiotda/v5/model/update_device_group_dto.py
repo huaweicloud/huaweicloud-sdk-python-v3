@@ -50,7 +50,7 @@ class UpdateDeviceGroupDTO:
     def name(self):
         """Gets the name of this UpdateDeviceGroupDTO.
 
-        设备组名称，单个资源空间下不可重复。
+        **参数说明**：设备组名称，单个资源空间下不可重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 
         :return: The name of this UpdateDeviceGroupDTO.
         :rtype: str
@@ -61,7 +61,7 @@ class UpdateDeviceGroupDTO:
     def name(self, name):
         """Sets the name of this UpdateDeviceGroupDTO.
 
-        设备组名称，单个资源空间下不可重复。
+        **参数说明**：设备组名称，单个资源空间下不可重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 
         :param name: The name of this UpdateDeviceGroupDTO.
         :type: str
@@ -72,7 +72,7 @@ class UpdateDeviceGroupDTO:
     def description(self):
         """Gets the description of this UpdateDeviceGroupDTO.
 
-        设备组描述。
+        **参数说明**：设备组描述。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 
         :return: The description of this UpdateDeviceGroupDTO.
         :rtype: str
@@ -83,7 +83,7 @@ class UpdateDeviceGroupDTO:
     def description(self, description):
         """Sets the description of this UpdateDeviceGroupDTO.
 
-        设备组描述。
+        **参数说明**：设备组描述。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 
         :param description: The description of this UpdateDeviceGroupDTO.
         :type: str

@@ -75,7 +75,7 @@ class ActionKafkaForwarding:
     def region_name(self):
         """Gets the region_name of this ActionKafkaForwarding.
 
-        转发kafka消息对应的region区域
+        **参数说明**：转发kafka消息对应的region区域
 
         :return: The region_name of this ActionKafkaForwarding.
         :rtype: str
@@ -86,7 +86,7 @@ class ActionKafkaForwarding:
     def region_name(self, region_name):
         """Sets the region_name of this ActionKafkaForwarding.
 
-        转发kafka消息对应的region区域
+        **参数说明**：转发kafka消息对应的region区域
 
         :param region_name: The region_name of this ActionKafkaForwarding.
         :type: str
@@ -97,7 +97,7 @@ class ActionKafkaForwarding:
     def project_id(self):
         """Gets the project_id of this ActionKafkaForwarding.
 
-        转发kafka消息对应的projectId信息
+        **参数说明**：转发kafka消息对应的projectId信息
 
         :return: The project_id of this ActionKafkaForwarding.
         :rtype: str
@@ -108,7 +108,7 @@ class ActionKafkaForwarding:
     def project_id(self, project_id):
         """Sets the project_id of this ActionKafkaForwarding.
 
-        转发kafka消息对应的projectId信息
+        **参数说明**：转发kafka消息对应的projectId信息
 
         :param project_id: The project_id of this ActionKafkaForwarding.
         :type: str
@@ -119,7 +119,7 @@ class ActionKafkaForwarding:
     def kafka_addresses(self):
         """Gets the kafka_addresses of this ActionKafkaForwarding.
 
-        转发kafka消息对应的地址列表
+        **参数说明**：转发kafka消息对应的地址列表
 
         :return: The kafka_addresses of this ActionKafkaForwarding.
         :rtype: list[NetAddress]
@@ -130,7 +130,7 @@ class ActionKafkaForwarding:
     def kafka_addresses(self, kafka_addresses):
         """Sets the kafka_addresses of this ActionKafkaForwarding.
 
-        转发kafka消息对应的地址列表
+        **参数说明**：转发kafka消息对应的地址列表
 
         :param kafka_addresses: The kafka_addresses of this ActionKafkaForwarding.
         :type: list[NetAddress]
@@ -141,7 +141,7 @@ class ActionKafkaForwarding:
     def kafka_topic(self):
         """Gets the kafka_topic of this ActionKafkaForwarding.
 
-        转发kafka消息关联的topic信息。
+        **参数说明**：转发kafka消息关联的topic信息。
 
         :return: The kafka_topic of this ActionKafkaForwarding.
         :rtype: str
@@ -152,7 +152,7 @@ class ActionKafkaForwarding:
     def kafka_topic(self, kafka_topic):
         """Sets the kafka_topic of this ActionKafkaForwarding.
 
-        转发kafka消息关联的topic信息。
+        **参数说明**：转发kafka消息关联的topic信息。
 
         :param kafka_topic: The kafka_topic of this ActionKafkaForwarding.
         :type: str
@@ -163,7 +163,7 @@ class ActionKafkaForwarding:
     def kafka_username(self):
         """Gets the kafka_username of this ActionKafkaForwarding.
 
-        转发kafka关联的用户名信息。
+        **参数说明**：转发kafka关联的用户名信息。
 
         :return: The kafka_username of this ActionKafkaForwarding.
         :rtype: str
@@ -174,7 +174,7 @@ class ActionKafkaForwarding:
     def kafka_username(self, kafka_username):
         """Sets the kafka_username of this ActionKafkaForwarding.
 
-        转发kafka关联的用户名信息。
+        **参数说明**：转发kafka关联的用户名信息。
 
         :param kafka_username: The kafka_username of this ActionKafkaForwarding.
         :type: str
@@ -185,7 +185,7 @@ class ActionKafkaForwarding:
     def kafka_password(self):
         """Gets the kafka_password of this ActionKafkaForwarding.
 
-        转发kafka关联的密码信息。
+        **参数说明**：转发kafka关联的密码信息。
 
         :return: The kafka_password of this ActionKafkaForwarding.
         :rtype: str
@@ -196,7 +196,7 @@ class ActionKafkaForwarding:
     def kafka_password(self, kafka_password):
         """Sets the kafka_password of this ActionKafkaForwarding.
 
-        转发kafka关联的密码信息。
+        **参数说明**：转发kafka关联的密码信息。
 
         :param kafka_password: The kafka_password of this ActionKafkaForwarding.
         :type: str
@@ -207,7 +207,7 @@ class ActionKafkaForwarding:
     def kafka_mechanism(self):
         """Gets the kafka_mechanism of this ActionKafkaForwarding.
 
-        转发kafka关联的鉴权机制。 类型说明： PAAS：非SASL鉴权。 PLAIN：SASL/PLAIN模式。需要填写对应的用户名密码信息。 
+        **参数说明**：转发kafka关联的鉴权机制。 **取值范围**： - PAAS：非SASL鉴权。 - PLAIN：SASL/PLAIN模式。需要填写对应的用户名密码信息。
 
         :return: The kafka_mechanism of this ActionKafkaForwarding.
         :rtype: str
@@ -218,7 +218,7 @@ class ActionKafkaForwarding:
     def kafka_mechanism(self, kafka_mechanism):
         """Sets the kafka_mechanism of this ActionKafkaForwarding.
 
-        转发kafka关联的鉴权机制。 类型说明： PAAS：非SASL鉴权。 PLAIN：SASL/PLAIN模式。需要填写对应的用户名密码信息。 
+        **参数说明**：转发kafka关联的鉴权机制。 **取值范围**： - PAAS：非SASL鉴权。 - PLAIN：SASL/PLAIN模式。需要填写对应的用户名密码信息。
 
         :param kafka_mechanism: The kafka_mechanism of this ActionKafkaForwarding.
         :type: str

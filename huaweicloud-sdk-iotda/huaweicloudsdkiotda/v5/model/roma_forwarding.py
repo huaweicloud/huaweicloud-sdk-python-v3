@@ -57,7 +57,7 @@ class RomaForwarding:
     def addresses(self):
         """Gets the addresses of this RomaForwarding.
 
-        转发roma消息对应的地址列表
+        **参数说明**：转发roma消息对应的地址列表
 
         :return: The addresses of this RomaForwarding.
         :rtype: list[NetAddress]
@@ -68,7 +68,7 @@ class RomaForwarding:
     def addresses(self, addresses):
         """Sets the addresses of this RomaForwarding.
 
-        转发roma消息对应的地址列表
+        **参数说明**：转发roma消息对应的地址列表
 
         :param addresses: The addresses of this RomaForwarding.
         :type: list[NetAddress]
@@ -79,7 +79,7 @@ class RomaForwarding:
     def topic(self):
         """Gets the topic of this RomaForwarding.
 
-        转发roma消息关联的topic信息。
+        **参数说明**：转发roma消息关联的topic信息。
 
         :return: The topic of this RomaForwarding.
         :rtype: str
@@ -90,7 +90,7 @@ class RomaForwarding:
     def topic(self, topic):
         """Sets the topic of this RomaForwarding.
 
-        转发roma消息关联的topic信息。
+        **参数说明**：转发roma消息关联的topic信息。
 
         :param topic: The topic of this RomaForwarding.
         :type: str
@@ -101,7 +101,7 @@ class RomaForwarding:
     def username(self):
         """Gets the username of this RomaForwarding.
 
-        转发roma关联的用户名信息。
+        **参数说明**：转发roma关联的用户名信息。
 
         :return: The username of this RomaForwarding.
         :rtype: str
@@ -112,7 +112,7 @@ class RomaForwarding:
     def username(self, username):
         """Sets the username of this RomaForwarding.
 
-        转发roma关联的用户名信息。
+        **参数说明**：转发roma关联的用户名信息。
 
         :param username: The username of this RomaForwarding.
         :type: str
@@ -123,7 +123,7 @@ class RomaForwarding:
     def password(self):
         """Gets the password of this RomaForwarding.
 
-        转发roma关联的密码信息。
+        **参数说明**：转发roma关联的密码信息。
 
         :return: The password of this RomaForwarding.
         :rtype: str
@@ -134,7 +134,7 @@ class RomaForwarding:
     def password(self, password):
         """Sets the password of this RomaForwarding.
 
-        转发roma关联的密码信息。
+        **参数说明**：转发roma关联的密码信息。
 
         :param password: The password of this RomaForwarding.
         :type: str

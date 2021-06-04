@@ -59,7 +59,7 @@ class AddApplication:
     def app_name(self):
         """Gets the app_name of this AddApplication.
 
-        资源空间名称。
+        **参数说明**：资源空间名称。 **取值范围**：长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The app_name of this AddApplication.
         :rtype: str
@@ -70,7 +70,7 @@ class AddApplication:
     def app_name(self, app_name):
         """Sets the app_name of this AddApplication.
 
-        资源空间名称。
+        **参数说明**：资源空间名称。 **取值范围**：长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param app_name: The app_name of this AddApplication.
         :type: str
@@ -81,7 +81,7 @@ class AddApplication:
     def app_id(self):
         """Gets the app_id of this AddApplication.
 
-        资源空间ID。
+        **参数说明**：资源空间ID。 **取值范围**：长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The app_id of this AddApplication.
         :rtype: str
@@ -92,7 +92,7 @@ class AddApplication:
     def app_id(self, app_id):
         """Sets the app_id of this AddApplication.
 
-        资源空间ID。
+        **参数说明**：资源空间ID。 **取值范围**：长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param app_id: The app_id of this AddApplication.
         :type: str
@@ -103,7 +103,7 @@ class AddApplication:
     def instance_id(self):
         """Gets the instance_id of this AddApplication.
 
-        迁移前实例ID。
+        **参数说明**：迁移前实例ID。 **取值范围**：长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The instance_id of this AddApplication.
         :rtype: str
@@ -114,7 +114,7 @@ class AddApplication:
     def instance_id(self, instance_id):
         """Sets the instance_id of this AddApplication.
 
-        迁移前实例ID。
+        **参数说明**：迁移前实例ID。 **取值范围**：长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param instance_id: The instance_id of this AddApplication.
         :type: str
@@ -125,7 +125,7 @@ class AddApplication:
     def service_name(self):
         """Gets the service_name of this AddApplication.
 
-        对接的服务名,IoTDA代表华为云设备接入云服务，CTNBGW代表天翼云设备接入服务
+        **参数说明**：对接的服务名。 **取值范围**： - IoTDA：代表华为云设备接入云服务。 - CTNBGW：代表天翼云设备接入服务。
 
         :return: The service_name of this AddApplication.
         :rtype: str
@@ -136,7 +136,7 @@ class AddApplication:
     def service_name(self, service_name):
         """Sets the service_name of this AddApplication.
 
-        对接的服务名,IoTDA代表华为云设备接入云服务，CTNBGW代表天翼云设备接入服务
+        **参数说明**：对接的服务名。 **取值范围**： - IoTDA：代表华为云设备接入云服务。 - CTNBGW：代表天翼云设备接入服务。
 
         :param service_name: The service_name of this AddApplication.
         :type: str

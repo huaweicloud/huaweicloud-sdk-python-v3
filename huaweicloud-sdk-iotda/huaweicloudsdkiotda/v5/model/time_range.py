@@ -53,7 +53,7 @@ class TimeRange:
     def start_time(self):
         """Gets the start_time of this TimeRange.
 
-        规则条件触发的开始时间，格式：HH:mm。
+        **参数说明**：规则条件触发的开始时间，格式：HH:mm。
 
         :return: The start_time of this TimeRange.
         :rtype: str
@@ -64,7 +64,7 @@ class TimeRange:
     def start_time(self, start_time):
         """Sets the start_time of this TimeRange.
 
-        规则条件触发的开始时间，格式：HH:mm。
+        **参数说明**：规则条件触发的开始时间，格式：HH:mm。
 
         :param start_time: The start_time of this TimeRange.
         :type: str
@@ -75,7 +75,7 @@ class TimeRange:
     def end_time(self):
         """Gets the end_time of this TimeRange.
 
-        规则条件触发的结束时间，格式：HH:mm。若结束时间与开始时间一致，则时间为全天。
+        **参数说明**：规则条件触发的结束时间，格式：HH:mm。若结束时间与开始时间一致，则时间为全天。
 
         :return: The end_time of this TimeRange.
         :rtype: str
@@ -86,7 +86,7 @@ class TimeRange:
     def end_time(self, end_time):
         """Sets the end_time of this TimeRange.
 
-        规则条件触发的结束时间，格式：HH:mm。若结束时间与开始时间一致，则时间为全天。
+        **参数说明**：规则条件触发的结束时间，格式：HH:mm。若结束时间与开始时间一致，则时间为全天。
 
         :param end_time: The end_time of this TimeRange.
         :type: str
@@ -97,7 +97,7 @@ class TimeRange:
     def days_of_week(self):
         """Gets the days_of_week of this TimeRange.
 
-        星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。星期列表中的日期为开始时间的日期。
+        **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。星期列表中的日期为开始时间的日期。 **取值范围**：只允许数字和逗号的组合，数字不小于1不大于7，数量不超过7个，以逗号隔开
 
         :return: The days_of_week of this TimeRange.
         :rtype: str
@@ -108,7 +108,7 @@ class TimeRange:
     def days_of_week(self, days_of_week):
         """Sets the days_of_week of this TimeRange.
 
-        星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。星期列表中的日期为开始时间的日期。
+        **参数说明**：星期列表，以逗号分隔。1代表周日，2代表周一，依次类推，默认为每天。星期列表中的日期为开始时间的日期。 **取值范围**：只允许数字和逗号的组合，数字不小于1不大于7，数量不超过7个，以逗号隔开
 
         :param days_of_week: The days_of_week of this TimeRange.
         :type: str

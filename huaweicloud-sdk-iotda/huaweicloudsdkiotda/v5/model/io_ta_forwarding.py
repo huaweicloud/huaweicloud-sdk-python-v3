@@ -48,7 +48,7 @@ class IoTAForwarding:
     def data_source_id(self):
         """Gets the data_source_id of this IoTAForwarding.
 
-        IoTA服务对应的数据源Id
+        **参数说明**：IoTA服务对应的数据源Id。
 
         :return: The data_source_id of this IoTAForwarding.
         :rtype: str
@@ -59,7 +59,7 @@ class IoTAForwarding:
     def data_source_id(self, data_source_id):
         """Sets the data_source_id of this IoTAForwarding.
 
-        IoTA服务对应的数据源Id
+        **参数说明**：IoTA服务对应的数据源Id。
 
         :param data_source_id: The data_source_id of this IoTAForwarding.
         :type: str
@@ -70,7 +70,7 @@ class IoTAForwarding:
     def project_id(self):
         """Gets the project_id of this IoTAForwarding.
 
-        IoTA服务对应的projectId信息
+        **参数说明**：IoTA服务对应的projectId信息。
 
         :return: The project_id of this IoTAForwarding.
         :rtype: str
@@ -81,7 +81,7 @@ class IoTAForwarding:
     def project_id(self, project_id):
         """Sets the project_id of this IoTAForwarding.
 
-        IoTA服务对应的projectId信息
+        **参数说明**：IoTA服务对应的projectId信息。
 
         :param project_id: The project_id of this IoTAForwarding.
         :type: str

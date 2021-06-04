@@ -1174,7 +1174,7 @@ class FunctionGraphAsyncClient(Client):
         :return: ListFunctionsResponse
         """
 
-        all_params = ['marker', 'maxitems']
+        all_params = ['marker', 'maxitems', 'package_name']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1189,6 +1189,8 @@ class FunctionGraphAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
         if 'maxitems' in local_var_params:
             query_params.append(('maxitems', local_var_params['maxitems']))
+        if 'package_name' in local_var_params:
+            query_params.append(('package_name', local_var_params['package_name']))
 
         header_params = {}
 

@@ -74,7 +74,7 @@ class Datapoint:
     def max(self):
         """Gets the max of this Datapoint.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的最大值。
 
         :return: The max of this Datapoint.
         :rtype: float
@@ -85,7 +85,7 @@ class Datapoint:
     def max(self, max):
         """Sets the max of this Datapoint.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的最大值。
 
         :param max: The max of this Datapoint.
         :type: float
@@ -96,7 +96,7 @@ class Datapoint:
     def min(self):
         """Gets the min of this Datapoint.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的最小值。
 
         :return: The min of this Datapoint.
         :rtype: float
@@ -107,7 +107,7 @@ class Datapoint:
     def min(self, min):
         """Sets the min of this Datapoint.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的最小值。
 
         :param min: The min of this Datapoint.
         :type: float
@@ -118,7 +118,7 @@ class Datapoint:
     def average(self):
         """Gets the average of this Datapoint.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的平均值。
 
         :return: The average of this Datapoint.
         :rtype: float
@@ -129,7 +129,7 @@ class Datapoint:
     def average(self, average):
         """Sets the average of this Datapoint.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的平均值。
 
         :param average: The average of this Datapoint.
         :type: float
@@ -140,7 +140,7 @@ class Datapoint:
     def sum(self):
         """Gets the sum of this Datapoint.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的求和值。
 
         :return: The sum of this Datapoint.
         :rtype: float
@@ -151,7 +151,7 @@ class Datapoint:
     def sum(self, sum):
         """Sets the sum of this Datapoint.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的求和值。
 
         :param sum: The sum of this Datapoint.
         :type: float
@@ -162,7 +162,7 @@ class Datapoint:
     def variance(self):
         """Gets the variance of this Datapoint.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的方差。
 
         :return: The variance of this Datapoint.
         :rtype: float
@@ -173,7 +173,7 @@ class Datapoint:
     def variance(self, variance):
         """Sets the variance of this Datapoint.
 
-        指标值，该字段名称与请求参数中filter使用的查询值相同；字段名称可为：max/min/average/sum/variance。
+        聚合周期内指标数据的方差。
 
         :param variance: The variance of this Datapoint.
         :type: float
@@ -184,7 +184,7 @@ class Datapoint:
     def timestamp(self):
         """Gets the timestamp of this Datapoint.
 
-        指标采集时间。
+        指标采集时间，UNIX时间戳，单位毫秒。
 
         :return: The timestamp of this Datapoint.
         :rtype: int
@@ -195,7 +195,7 @@ class Datapoint:
     def timestamp(self, timestamp):
         """Sets the timestamp of this Datapoint.
 
-        指标采集时间。
+        指标采集时间，UNIX时间戳，单位毫秒。
 
         :param timestamp: The timestamp of this Datapoint.
         :type: int
@@ -206,7 +206,7 @@ class Datapoint:
     def unit(self):
         """Gets the unit of this Datapoint.
 
-        指标单位
+        指标单位。
 
         :return: The unit of this Datapoint.
         :rtype: str
@@ -217,7 +217,7 @@ class Datapoint:
     def unit(self, unit):
         """Sets the unit of this Datapoint.
 
-        指标单位
+        指标单位。
 
         :param unit: The unit of this Datapoint.
         :type: str

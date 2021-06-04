@@ -44,7 +44,7 @@ class AmqpForwarding:
     def queue_name(self):
         """Gets the queue_name of this AmqpForwarding.
 
-        用于接收满足规则条件数据的amqp queue。
+        **参数说明**：用于接收满足规则条件数据的amqp queue。
 
         :return: The queue_name of this AmqpForwarding.
         :rtype: str
@@ -55,7 +55,7 @@ class AmqpForwarding:
     def queue_name(self, queue_name):
         """Sets the queue_name of this AmqpForwarding.
 
-        用于接收满足规则条件数据的amqp queue。
+        **参数说明**：用于接收满足规则条件数据的amqp queue。
 
         :param queue_name: The queue_name of this AmqpForwarding.
         :type: str

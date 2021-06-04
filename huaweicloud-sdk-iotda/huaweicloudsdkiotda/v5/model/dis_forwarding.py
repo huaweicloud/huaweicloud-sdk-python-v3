@@ -58,7 +58,7 @@ class DisForwarding:
     def region_name(self):
         """Gets the region_name of this DisForwarding.
 
-        DIS服务对应的region区域
+        **参数说明**：DIS服务对应的region区域
 
         :return: The region_name of this DisForwarding.
         :rtype: str
@@ -69,7 +69,7 @@ class DisForwarding:
     def region_name(self, region_name):
         """Sets the region_name of this DisForwarding.
 
-        DIS服务对应的region区域
+        **参数说明**：DIS服务对应的region区域
 
         :param region_name: The region_name of this DisForwarding.
         :type: str
@@ -80,7 +80,7 @@ class DisForwarding:
     def project_id(self):
         """Gets the project_id of this DisForwarding.
 
-        DIS服务对应的projectId信息
+        **参数说明**：DIS服务对应的projectId信息
 
         :return: The project_id of this DisForwarding.
         :rtype: str
@@ -91,7 +91,7 @@ class DisForwarding:
     def project_id(self, project_id):
         """Sets the project_id of this DisForwarding.
 
-        DIS服务对应的projectId信息
+        **参数说明**：DIS服务对应的projectId信息
 
         :param project_id: The project_id of this DisForwarding.
         :type: str
@@ -102,7 +102,7 @@ class DisForwarding:
     def stream_name(self):
         """Gets the stream_name of this DisForwarding.
 
-        DIS服务对应的通道名称，stream_id和stream_name两个参数必须携带一个，优先使用stream_id
+        **参数说明**：DIS服务对应的通道名称，stream_id和stream_name两个参数必须携带一个，优先使用stream_id
 
         :return: The stream_name of this DisForwarding.
         :rtype: str
@@ -113,7 +113,7 @@ class DisForwarding:
     def stream_name(self, stream_name):
         """Sets the stream_name of this DisForwarding.
 
-        DIS服务对应的通道名称，stream_id和stream_name两个参数必须携带一个，优先使用stream_id
+        **参数说明**：DIS服务对应的通道名称，stream_id和stream_name两个参数必须携带一个，优先使用stream_id
 
         :param stream_name: The stream_name of this DisForwarding.
         :type: str
@@ -124,7 +124,7 @@ class DisForwarding:
     def stream_id(self):
         """Gets the stream_id of this DisForwarding.
 
-        DIS服务对应的通道ID，stream_id和stream_name两个参数必须携带一个，优先使用stream_id
+        **参数说明**：DIS服务对应的通道ID，stream_id和stream_name两个参数必须携带一个，优先使用stream_id
 
         :return: The stream_id of this DisForwarding.
         :rtype: str
@@ -135,7 +135,7 @@ class DisForwarding:
     def stream_id(self, stream_id):
         """Sets the stream_id of this DisForwarding.
 
-        DIS服务对应的通道ID，stream_id和stream_name两个参数必须携带一个，优先使用stream_id
+        **参数说明**：DIS服务对应的通道ID，stream_id和stream_name两个参数必须携带一个，优先使用stream_id
 
         :param stream_id: The stream_id of this DisForwarding.
         :type: str

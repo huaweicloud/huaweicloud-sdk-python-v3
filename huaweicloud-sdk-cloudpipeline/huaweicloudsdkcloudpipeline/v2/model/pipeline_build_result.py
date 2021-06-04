@@ -27,7 +27,10 @@ class PipelineBuildResult:
         'elapse_time': 'str',
         'end_time': 'str',
         'outcome': 'str',
-        'pipeline_id': 'str'
+        'pipeline_id': 'str',
+        'pipeline_name': 'str',
+        'start_time': 'str',
+        'status': 'str'
     }
 
     attribute_map = {
@@ -35,10 +38,13 @@ class PipelineBuildResult:
         'elapse_time': 'elapse_time',
         'end_time': 'end_time',
         'outcome': 'outcome',
-        'pipeline_id': 'pipeline_id'
+        'pipeline_id': 'pipeline_id',
+        'pipeline_name': 'pipeline_name',
+        'start_time': 'start_time',
+        'status': 'status'
     }
 
-    def __init__(self, build_id=None, elapse_time=None, end_time=None, outcome=None, pipeline_id=None):
+    def __init__(self, build_id=None, elapse_time=None, end_time=None, outcome=None, pipeline_id=None, pipeline_name=None, start_time=None, status=None):
         """PipelineBuildResult - a model defined in huaweicloud sdk"""
         
         
@@ -48,6 +54,9 @@ class PipelineBuildResult:
         self._end_time = None
         self._outcome = None
         self._pipeline_id = None
+        self._pipeline_name = None
+        self._start_time = None
+        self._status = None
         self.discriminator = None
 
         self.build_id = build_id
@@ -56,6 +65,9 @@ class PipelineBuildResult:
         self.end_time = end_time
         self.outcome = outcome
         self.pipeline_id = pipeline_id
+        self.pipeline_name = pipeline_name
+        self.start_time = start_time
+        self.status = status
 
     @property
     def build_id(self):
@@ -166,6 +178,72 @@ class PipelineBuildResult:
         :type: str
         """
         self._pipeline_id = pipeline_id
+
+    @property
+    def pipeline_name(self):
+        """Gets the pipeline_name of this PipelineBuildResult.
+
+        流水线名称
+
+        :return: The pipeline_name of this PipelineBuildResult.
+        :rtype: str
+        """
+        return self._pipeline_name
+
+    @pipeline_name.setter
+    def pipeline_name(self, pipeline_name):
+        """Sets the pipeline_name of this PipelineBuildResult.
+
+        流水线名称
+
+        :param pipeline_name: The pipeline_name of this PipelineBuildResult.
+        :type: str
+        """
+        self._pipeline_name = pipeline_name
+
+    @property
+    def start_time(self):
+        """Gets the start_time of this PipelineBuildResult.
+
+        执行开始时间
+
+        :return: The start_time of this PipelineBuildResult.
+        :rtype: str
+        """
+        return self._start_time
+
+    @start_time.setter
+    def start_time(self, start_time):
+        """Sets the start_time of this PipelineBuildResult.
+
+        执行开始时间
+
+        :param start_time: The start_time of this PipelineBuildResult.
+        :type: str
+        """
+        self._start_time = start_time
+
+    @property
+    def status(self):
+        """Gets the status of this PipelineBuildResult.
+
+        运行状态
+
+        :return: The status of this PipelineBuildResult.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this PipelineBuildResult.
+
+        运行状态
+
+        :param status: The status of this PipelineBuildResult.
+        :type: str
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

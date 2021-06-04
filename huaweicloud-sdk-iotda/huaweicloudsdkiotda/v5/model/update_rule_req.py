@@ -65,7 +65,7 @@ class UpdateRuleReq:
     def rule_name(self):
         """Gets the rule_name of this UpdateRuleReq.
 
-        用户自定义的规则名称。
+        **参数说明**：用户自定义的规则名称。
 
         :return: The rule_name of this UpdateRuleReq.
         :rtype: str
@@ -76,7 +76,7 @@ class UpdateRuleReq:
     def rule_name(self, rule_name):
         """Sets the rule_name of this UpdateRuleReq.
 
-        用户自定义的规则名称。
+        **参数说明**：用户自定义的规则名称。
 
         :param rule_name: The rule_name of this UpdateRuleReq.
         :type: str
@@ -87,7 +87,7 @@ class UpdateRuleReq:
     def description(self):
         """Gets the description of this UpdateRuleReq.
 
-        用户自定义的规则描述。
+        **参数说明**：用户自定义的规则描述。
 
         :return: The description of this UpdateRuleReq.
         :rtype: str
@@ -98,7 +98,7 @@ class UpdateRuleReq:
     def description(self, description):
         """Sets the description of this UpdateRuleReq.
 
-        用户自定义的规则描述。
+        **参数说明**：用户自定义的规则描述。
 
         :param description: The description of this UpdateRuleReq.
         :type: str
@@ -109,7 +109,7 @@ class UpdateRuleReq:
     def select(self):
         """Gets the select of this UpdateRuleReq.
 
-        用户自定义sql select语句，最大长度500，更新sql时，select跟where必须同时传参，如果需要清除该参数的值，输入空字符串，该参数仅供标准版和企业版用户使用。
+        **参数说明**：用户自定义sql select语句，最大长度500，更新sql时，select跟where必须同时传参，如果需要清除该参数的值，输入空字符串，该参数仅供标准版和企业版用户使用。
 
         :return: The select of this UpdateRuleReq.
         :rtype: str
@@ -120,7 +120,7 @@ class UpdateRuleReq:
     def select(self, select):
         """Sets the select of this UpdateRuleReq.
 
-        用户自定义sql select语句，最大长度500，更新sql时，select跟where必须同时传参，如果需要清除该参数的值，输入空字符串，该参数仅供标准版和企业版用户使用。
+        **参数说明**：用户自定义sql select语句，最大长度500，更新sql时，select跟where必须同时传参，如果需要清除该参数的值，输入空字符串，该参数仅供标准版和企业版用户使用。
 
         :param select: The select of this UpdateRuleReq.
         :type: str
@@ -131,7 +131,7 @@ class UpdateRuleReq:
     def where(self):
         """Gets the where of this UpdateRuleReq.
 
-        用户自定义sql where语句，最大长度500，更新操作时，select跟where必须同时传参，如果需要清除该参数的值，输入空字符串，该参数仅供标准版和企业版用户使用。
+        **参数说明**：用户自定义sql where语句，最大长度500，更新操作时，select跟where必须同时传参，如果需要清除该参数的值，输入空字符串，该参数仅供标准版和企业版用户使用。
 
         :return: The where of this UpdateRuleReq.
         :rtype: str
@@ -142,7 +142,7 @@ class UpdateRuleReq:
     def where(self, where):
         """Sets the where of this UpdateRuleReq.
 
-        用户自定义sql where语句，最大长度500，更新操作时，select跟where必须同时传参，如果需要清除该参数的值，输入空字符串，该参数仅供标准版和企业版用户使用。
+        **参数说明**：用户自定义sql where语句，最大长度500，更新操作时，select跟where必须同时传参，如果需要清除该参数的值，输入空字符串，该参数仅供标准版和企业版用户使用。
 
         :param where: The where of this UpdateRuleReq.
         :type: str
@@ -153,7 +153,7 @@ class UpdateRuleReq:
     def active(self):
         """Gets the active of this UpdateRuleReq.
 
-        修改规则条件的状态是否为激活。
+        **参数说明**：修改规则条件的状态是否为激活。
 
         :return: The active of this UpdateRuleReq.
         :rtype: bool
@@ -164,7 +164,7 @@ class UpdateRuleReq:
     def active(self, active):
         """Sets the active of this UpdateRuleReq.
 
-        修改规则条件的状态是否为激活。
+        **参数说明**：修改规则条件的状态是否为激活。
 
         :param active: The active of this UpdateRuleReq.
         :type: bool

@@ -24,27 +24,32 @@ class ListFunctionsRequest:
 
     openapi_types = {
         'marker': 'str',
-        'maxitems': 'str'
+        'maxitems': 'str',
+        'package_name': 'str'
     }
 
     attribute_map = {
         'marker': 'marker',
-        'maxitems': 'maxitems'
+        'maxitems': 'maxitems',
+        'package_name': 'package_name'
     }
 
-    def __init__(self, marker=None, maxitems=None):
+    def __init__(self, marker=None, maxitems=None, package_name=None):
         """ListFunctionsRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._marker = None
         self._maxitems = None
+        self._package_name = None
         self.discriminator = None
 
         if marker is not None:
             self.marker = marker
         if maxitems is not None:
             self.maxitems = maxitems
+        if package_name is not None:
+            self.package_name = package_name
 
     @property
     def marker(self):
@@ -89,6 +94,28 @@ class ListFunctionsRequest:
         :type: str
         """
         self._maxitems = maxitems
+
+    @property
+    def package_name(self):
+        """Gets the package_name of this ListFunctionsRequest.
+
+        应用名称。
+
+        :return: The package_name of this ListFunctionsRequest.
+        :rtype: str
+        """
+        return self._package_name
+
+    @package_name.setter
+    def package_name(self, package_name):
+        """Sets the package_name of this ListFunctionsRequest.
+
+        应用名称。
+
+        :param package_name: The package_name of this ListFunctionsRequest.
+        :type: str
+        """
+        self._package_name = package_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

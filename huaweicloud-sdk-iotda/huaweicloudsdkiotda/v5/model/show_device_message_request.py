@@ -53,7 +53,7 @@ class ShowDeviceMessageRequest:
     def device_id(self):
         """Gets the device_id of this ShowDeviceMessageRequest.
 
-        下发消息的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获。
+        **参数说明**：下发消息的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获。
 
         :return: The device_id of this ShowDeviceMessageRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class ShowDeviceMessageRequest:
     def device_id(self, device_id):
         """Sets the device_id of this ShowDeviceMessageRequest.
 
-        下发消息的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获。
+        **参数说明**：下发消息的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获。
 
         :param device_id: The device_id of this ShowDeviceMessageRequest.
         :type: str
@@ -75,7 +75,7 @@ class ShowDeviceMessageRequest:
     def instance_id(self):
         """Gets the instance_id of this ShowDeviceMessageRequest.
 
-        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :return: The instance_id of this ShowDeviceMessageRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class ShowDeviceMessageRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ShowDeviceMessageRequest.
 
-        实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
+        **参数说明**：实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
         :param instance_id: The instance_id of this ShowDeviceMessageRequest.
         :type: str
@@ -97,7 +97,7 @@ class ShowDeviceMessageRequest:
     def message_id(self):
         """Gets the message_id of this ShowDeviceMessageRequest.
 
-        下发消息的消息ID，用于唯一标识一个消息，在消息下发时由物联网平台分配获得。
+        **参数说明**：下发消息的消息ID，用于唯一标识一个消息，在消息下发时由物联网平台分配获得。
 
         :return: The message_id of this ShowDeviceMessageRequest.
         :rtype: str
@@ -108,7 +108,7 @@ class ShowDeviceMessageRequest:
     def message_id(self, message_id):
         """Sets the message_id of this ShowDeviceMessageRequest.
 
-        下发消息的消息ID，用于唯一标识一个消息，在消息下发时由物联网平台分配获得。
+        **参数说明**：下发消息的消息ID，用于唯一标识一个消息，在消息下发时由物联网平台分配获得。
 
         :param message_id: The message_id of this ShowDeviceMessageRequest.
         :type: str

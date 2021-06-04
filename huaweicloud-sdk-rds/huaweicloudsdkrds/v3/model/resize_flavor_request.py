@@ -23,71 +23,42 @@ class ResizeFlavorRequest:
     sensitive_list = []
 
     openapi_types = {
-        'spec_code': 'str',
-        'is_auto_pay': 'bool'
+        'resize_flavor': 'ResizeFlavorObject'
     }
 
     attribute_map = {
-        'spec_code': 'spec_code',
-        'is_auto_pay': 'is_auto_pay'
+        'resize_flavor': 'resize_flavor'
     }
 
-    def __init__(self, spec_code=None, is_auto_pay=None):
+    def __init__(self, resize_flavor=None):
         """ResizeFlavorRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._spec_code = None
-        self._is_auto_pay = None
+        self._resize_flavor = None
         self.discriminator = None
 
-        self.spec_code = spec_code
-        if is_auto_pay is not None:
-            self.is_auto_pay = is_auto_pay
+        self.resize_flavor = resize_flavor
 
     @property
-    def spec_code(self):
-        """Gets the spec_code of this ResizeFlavorRequest.
+    def resize_flavor(self):
+        """Gets the resize_flavor of this ResizeFlavorRequest.
 
-        资源规格编码。例如：rds.mysql.m1.xlarge。其中，rds代表RDS产品，mysql代表数据库引擎，m1.xlarge代表性能规格，为高内存类型。带\"rr\"的表示只读实例规格，反之表示单实例和HA实例规格。
 
-        :return: The spec_code of this ResizeFlavorRequest.
-        :rtype: str
+        :return: The resize_flavor of this ResizeFlavorRequest.
+        :rtype: ResizeFlavorObject
         """
-        return self._spec_code
+        return self._resize_flavor
 
-    @spec_code.setter
-    def spec_code(self, spec_code):
-        """Sets the spec_code of this ResizeFlavorRequest.
+    @resize_flavor.setter
+    def resize_flavor(self, resize_flavor):
+        """Sets the resize_flavor of this ResizeFlavorRequest.
 
-        资源规格编码。例如：rds.mysql.m1.xlarge。其中，rds代表RDS产品，mysql代表数据库引擎，m1.xlarge代表性能规格，为高内存类型。带\"rr\"的表示只读实例规格，反之表示单实例和HA实例规格。
 
-        :param spec_code: The spec_code of this ResizeFlavorRequest.
-        :type: str
+        :param resize_flavor: The resize_flavor of this ResizeFlavorRequest.
+        :type: ResizeFlavorObject
         """
-        self._spec_code = spec_code
-
-    @property
-    def is_auto_pay(self):
-        """Gets the is_auto_pay of this ResizeFlavorRequest.
-
-        变更包周期实例的规格时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
-
-        :return: The is_auto_pay of this ResizeFlavorRequest.
-        :rtype: bool
-        """
-        return self._is_auto_pay
-
-    @is_auto_pay.setter
-    def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ResizeFlavorRequest.
-
-        变更包周期实例的规格时可指定，表示是否自动从客户的账户中支付。 - true，为自动支付。 - false，为手动支付，默认该方式。
-
-        :param is_auto_pay: The is_auto_pay of this ResizeFlavorRequest.
-        :type: bool
-        """
-        self._is_auto_pay = is_auto_pay
+        self._resize_flavor = resize_flavor
 
     def to_dict(self):
         """Returns the model properties as a dict"""

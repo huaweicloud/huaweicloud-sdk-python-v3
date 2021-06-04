@@ -706,168 +706,6 @@ class IoTDAClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_async_commands(self, request):
-        """查询设备下队列中的命令
-
-        查询设备下队列中的命（处理中的命令），包含PENDING,SENT,DELIVERED三种状态，注意：DELIVERED状态的命令经过系统设定的一段时间（具体以系统配置为准）仍然没有更新，就会从队列中移除，变为历史命令。 
-
-        :param ListAsyncCommandsRequest request
-        :return: ListAsyncCommandsResponse
-        """
-        return self.list_async_commands_with_http_info(request)
-
-    def list_async_commands_with_http_info(self, request):
-        """查询设备下队列中的命令
-
-        查询设备下队列中的命（处理中的命令），包含PENDING,SENT,DELIVERED三种状态，注意：DELIVERED状态的命令经过系统设定的一段时间（具体以系统配置为准）仍然没有更新，就会从队列中移除，变为历史命令。 
-
-        :param ListAsyncCommandsRequest request
-        :return: ListAsyncCommandsResponse
-        """
-
-        all_params = ['device_id', 'instance_id', 'limit', 'marker', 'offset', 'start_time', 'end_time', 'status', 'command_id', 'command_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'device_id' in local_var_params:
-            path_params['device_id'] = local_var_params['device_id']
-
-        query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'start_time' in local_var_params:
-            query_params.append(('start_time', local_var_params['start_time']))
-        if 'end_time' in local_var_params:
-            query_params.append(('end_time', local_var_params['end_time']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'command_id' in local_var_params:
-            query_params.append(('command_id', local_var_params['command_id']))
-        if 'command_name' in local_var_params:
-            query_params.append(('command_name', local_var_params['command_name']))
-
-        header_params = {}
-        if 'instance_id' in local_var_params:
-            header_params['Instance-Id'] = local_var_params['instance_id']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v5/iot/{project_id}/devices/{device_id}/async-commands',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListAsyncCommandsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_async_history_commands(self, request):
-        """查询设备下的历史命令
-
-        查询设备下发的历史异步命令。 
-
-        :param ListAsyncHistoryCommandsRequest request
-        :return: ListAsyncHistoryCommandsResponse
-        """
-        return self.list_async_history_commands_with_http_info(request)
-
-    def list_async_history_commands_with_http_info(self, request):
-        """查询设备下的历史命令
-
-        查询设备下发的历史异步命令。 
-
-        :param ListAsyncHistoryCommandsRequest request
-        :return: ListAsyncHistoryCommandsResponse
-        """
-
-        all_params = ['device_id', 'instance_id', 'limit', 'marker', 'offset', 'start_time', 'end_time', 'status', 'command_id', 'command_name']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'device_id' in local_var_params:
-            path_params['device_id'] = local_var_params['device_id']
-
-        query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'start_time' in local_var_params:
-            query_params.append(('start_time', local_var_params['start_time']))
-        if 'end_time' in local_var_params:
-            query_params.append(('end_time', local_var_params['end_time']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'command_id' in local_var_params:
-            query_params.append(('command_id', local_var_params['command_id']))
-        if 'command_name' in local_var_params:
-            query_params.append(('command_name', local_var_params['command_name']))
-
-        header_params = {}
-        if 'instance_id' in local_var_params:
-            header_params['Instance-Id'] = local_var_params['instance_id']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v5/iot/{project_id}/devices/{device_id}/async-commands-history',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListAsyncHistoryCommandsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def show_async_device_command(self, request):
         """查询指定id的命令
 
@@ -1547,7 +1385,7 @@ class IoTDAClient(Client):
     def create_command(self, request):
         """下发设备命令
 
-        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发命令，以实现对设备的同步控制。平台负责将命令以同步方式发送给设备，并将设备执行命令结果同步返回, 如果设备没有响应，平台会返回给应用服务器超时，平台超时间是25秒。注意：此接口适用于MQTT设备同步命令下发，暂不支持NB-IoT设备命令下发。 
+        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发命令，以实现对设备的同步控制。平台负责将命令以同步方式发送给设备，并将设备执行命令结果同步返回, 如果设备没有响应，平台会返回给应用服务器超时，平台超时间是20秒。注意：此接口适用于MQTT设备同步命令下发，暂不支持NB-IoT设备命令下发。 
 
         :param CreateCommandRequest request
         :return: CreateCommandResponse
@@ -1557,7 +1395,7 @@ class IoTDAClient(Client):
     def create_command_with_http_info(self, request):
         """下发设备命令
 
-        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发命令，以实现对设备的同步控制。平台负责将命令以同步方式发送给设备，并将设备执行命令结果同步返回, 如果设备没有响应，平台会返回给应用服务器超时，平台超时间是25秒。注意：此接口适用于MQTT设备同步命令下发，暂不支持NB-IoT设备命令下发。 
+        设备的产品模型中定义了物联网平台可向设备下发的命令，应用服务器可调用此接口向指定设备下发命令，以实现对设备的同步控制。平台负责将命令以同步方式发送给设备，并将设备执行命令结果同步返回, 如果设备没有响应，平台会返回给应用服务器超时，平台超时间是20秒。注意：此接口适用于MQTT设备同步命令下发，暂不支持NB-IoT设备命令下发。 
 
         :param CreateCommandRequest request
         :return: CreateCommandResponse
@@ -3319,7 +3157,7 @@ class IoTDAClient(Client):
         :return: ListPropertiesResponse
         """
 
-        all_params = ['device_id', 'service_id', 'stage_auth_token', 'instance_id']
+        all_params = ['device_id', 'service_id', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3336,8 +3174,6 @@ class IoTDAClient(Client):
             query_params.append(('service_id', local_var_params['service_id']))
 
         header_params = {}
-        if 'stage_auth_token' in local_var_params:
-            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -3388,7 +3224,7 @@ class IoTDAClient(Client):
         :return: UpdatePropertiesResponse
         """
 
-        all_params = ['device_id', 'update_properties_request_body', 'stage_auth_token', 'instance_id']
+        all_params = ['device_id', 'update_properties_request_body', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3403,8 +3239,6 @@ class IoTDAClient(Client):
         query_params = []
 
         header_params = {}
-        if 'stage_auth_token' in local_var_params:
-            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 

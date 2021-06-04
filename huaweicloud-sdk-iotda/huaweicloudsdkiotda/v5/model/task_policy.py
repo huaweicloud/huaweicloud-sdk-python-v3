@@ -55,7 +55,7 @@ class TaskPolicy:
     def schedule_time(self):
         """Gets the schedule_time of this TaskPolicy.
 
-        批量任务指定执行时间，取值范围为7天内，不传入此参数表示立即执行，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
+        **参数说明**：批量任务指定执行时间。 **取值范围**：7天内，不传入此参数表示立即执行，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
         :return: The schedule_time of this TaskPolicy.
         :rtype: str
@@ -66,7 +66,7 @@ class TaskPolicy:
     def schedule_time(self, schedule_time):
         """Sets the schedule_time of this TaskPolicy.
 
-        批量任务指定执行时间，取值范围为7天内，不传入此参数表示立即执行，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
+        **参数说明**：批量任务指定执行时间。 **取值范围**：7天内，不传入此参数表示立即执行，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
         :param schedule_time: The schedule_time of this TaskPolicy.
         :type: str
@@ -77,7 +77,7 @@ class TaskPolicy:
     def retry_count(self):
         """Gets the retry_count of this TaskPolicy.
 
-        批量任务子任务自动重试次数，如果传入retry_interval参数，则需传入该参数，最大支持重试5次。
+        **参数说明**：批量任务子任务自动重试次数。 **取值范围**：如果传入retry_interval参数，则需传入该参数，最大支持重试5次。
 
         :return: The retry_count of this TaskPolicy.
         :rtype: int
@@ -88,7 +88,7 @@ class TaskPolicy:
     def retry_count(self, retry_count):
         """Sets the retry_count of this TaskPolicy.
 
-        批量任务子任务自动重试次数，如果传入retry_interval参数，则需传入该参数，最大支持重试5次。
+        **参数说明**：批量任务子任务自动重试次数。 **取值范围**：如果传入retry_interval参数，则需传入该参数，最大支持重试5次。
 
         :param retry_count: The retry_count of this TaskPolicy.
         :type: int
@@ -99,7 +99,7 @@ class TaskPolicy:
     def retry_interval(self):
         """Gets the retry_interval of this TaskPolicy.
 
-        批量任务子任务失败后，自动重试时间间隔，单位：分钟，最大1440(24小时)，不传入此参数表示不重试，如果传入retry_count参数则需要传入该参数。
+        **参数说明**：批量任务子任务失败后，自动重试时间间隔，单位：分钟。 **取值范围**：最大1440(24小时)，不传入此参数表示不重试，如果传入retry_count参数则需要传入该参数。
 
         :return: The retry_interval of this TaskPolicy.
         :rtype: int
@@ -110,7 +110,7 @@ class TaskPolicy:
     def retry_interval(self, retry_interval):
         """Sets the retry_interval of this TaskPolicy.
 
-        批量任务子任务失败后，自动重试时间间隔，单位：分钟，最大1440(24小时)，不传入此参数表示不重试，如果传入retry_count参数则需要传入该参数。
+        **参数说明**：批量任务子任务失败后，自动重试时间间隔，单位：分钟。 **取值范围**：最大1440(24小时)，不传入此参数表示不重试，如果传入retry_count参数则需要传入该参数。
 
         :param retry_interval: The retry_interval of this TaskPolicy.
         :type: int

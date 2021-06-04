@@ -49,7 +49,7 @@ class CloudPipelineClient(Client):
         return ClientBuilder(clazz)
 
     def batch_show_pipelines_status(self, request):
-        """获取流水线状态
+        """批量获取流水线状态
 
         批量获取流水线状态和阶段信息
 
@@ -59,7 +59,7 @@ class CloudPipelineClient(Client):
         return self.batch_show_pipelines_status_with_http_info(request)
 
     def batch_show_pipelines_status_with_http_info(self, request):
-        """获取流水线状态
+        """批量获取流水线状态
 
         批量获取流水线状态和阶段信息
 

@@ -42,8 +42,7 @@ class MetricsDimension:
         self.discriminator = None
 
         self.name = name
-        if value is not None:
-            self.value = value
+        self.value = value
 
     @property
     def name(self):

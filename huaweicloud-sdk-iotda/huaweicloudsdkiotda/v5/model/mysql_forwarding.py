@@ -85,7 +85,7 @@ class MysqlForwarding:
     def db_name(self):
         """Gets the db_name of this MysqlForwarding.
 
-        连接MYSQL数据库的库名
+        **参数说明**：连接MYSQL数据库的库名。 **取值范围**：长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The db_name of this MysqlForwarding.
         :rtype: str
@@ -96,7 +96,7 @@ class MysqlForwarding:
     def db_name(self, db_name):
         """Sets the db_name of this MysqlForwarding.
 
-        连接MYSQL数据库的库名
+        **参数说明**：连接MYSQL数据库的库名。 **取值范围**：长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param db_name: The db_name of this MysqlForwarding.
         :type: str
@@ -107,7 +107,7 @@ class MysqlForwarding:
     def username(self):
         """Gets the username of this MysqlForwarding.
 
-        连接MYSQL数据库的用户名
+        **参数说明**：连接MYSQL数据库的用户名
 
         :return: The username of this MysqlForwarding.
         :rtype: str
@@ -118,7 +118,7 @@ class MysqlForwarding:
     def username(self, username):
         """Sets the username of this MysqlForwarding.
 
-        连接MYSQL数据库的用户名
+        **参数说明**：连接MYSQL数据库的用户名
 
         :param username: The username of this MysqlForwarding.
         :type: str
@@ -129,7 +129,7 @@ class MysqlForwarding:
     def password(self):
         """Gets the password of this MysqlForwarding.
 
-        连接MYSQL数据库的密码
+        **参数说明**：连接MYSQL数据库的密码
 
         :return: The password of this MysqlForwarding.
         :rtype: str
@@ -140,7 +140,7 @@ class MysqlForwarding:
     def password(self, password):
         """Sets the password of this MysqlForwarding.
 
-        连接MYSQL数据库的密码
+        **参数说明**：连接MYSQL数据库的密码
 
         :param password: The password of this MysqlForwarding.
         :type: str
@@ -151,7 +151,7 @@ class MysqlForwarding:
     def table_name(self):
         """Gets the table_name of this MysqlForwarding.
 
-        MYSQL数据库的表名
+        **参数说明**：MYSQL数据库的表名
 
         :return: The table_name of this MysqlForwarding.
         :rtype: str
@@ -162,7 +162,7 @@ class MysqlForwarding:
     def table_name(self, table_name):
         """Sets the table_name of this MysqlForwarding.
 
-        MYSQL数据库的表名
+        **参数说明**：MYSQL数据库的表名
 
         :param table_name: The table_name of this MysqlForwarding.
         :type: str
@@ -173,7 +173,7 @@ class MysqlForwarding:
     def column_mappings(self):
         """Gets the column_mappings of this MysqlForwarding.
 
-        MYSQL数据库的列和流转数据的对应关系列表。
+        **参数说明**：MYSQL数据库的列和流转数据的对应关系列表。
 
         :return: The column_mappings of this MysqlForwarding.
         :rtype: list[ColumnMapping]
@@ -184,7 +184,7 @@ class MysqlForwarding:
     def column_mappings(self, column_mappings):
         """Sets the column_mappings of this MysqlForwarding.
 
-        MYSQL数据库的列和流转数据的对应关系列表。
+        **参数说明**：MYSQL数据库的列和流转数据的对应关系列表。
 
         :param column_mappings: The column_mappings of this MysqlForwarding.
         :type: list[ColumnMapping]

@@ -45,7 +45,7 @@ class UpdateDesireds:
     def shadow(self):
         """Gets the shadow of this UpdateDesireds.
 
-        设备影子期望值构体。
+        **参数说明**：设备影子期望值构体。
 
         :return: The shadow of this UpdateDesireds.
         :rtype: list[UpdateDesired]
@@ -56,7 +56,7 @@ class UpdateDesireds:
     def shadow(self, shadow):
         """Sets the shadow of this UpdateDesireds.
 
-        设备影子期望值构体。
+        **参数说明**：设备影子期望值构体。
 
         :param shadow: The shadow of this UpdateDesireds.
         :type: list[UpdateDesired]
