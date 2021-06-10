@@ -24,25 +24,30 @@ class Storage:
 
     openapi_types = {
         'name': 'str',
-        'az_status': 'dict(str, str)'
+        'az_status': 'dict(str, str)',
+        'support_compute_group_type': 'list[str]'
     }
 
     attribute_map = {
         'name': 'name',
-        'az_status': 'az_status'
+        'az_status': 'az_status',
+        'support_compute_group_type': 'support_compute_group_type'
     }
 
-    def __init__(self, name=None, az_status=None):
+    def __init__(self, name=None, az_status=None, support_compute_group_type=None):
         """Storage - a model defined in huaweicloud sdk"""
         
         
 
         self._name = None
         self._az_status = None
+        self._support_compute_group_type = None
         self.discriminator = None
 
         self.name = name
         self.az_status = az_status
+        if support_compute_group_type is not None:
+            self.support_compute_group_type = support_compute_group_type
 
     @property
     def name(self):
@@ -87,6 +92,28 @@ class Storage:
         :type: dict(str, str)
         """
         self._az_status = az_status
+
+    @property
+    def support_compute_group_type(self):
+        """Gets the support_compute_group_type of this Storage.
+
+        性能规格，包含以下状态： - normal：通用增强型。 - normal2：通用增强Ⅱ型。 - armFlavors：鲲鹏通用增强型。 - dedicicatenormal ：x86独享型。 - armlocalssd：鲲鹏通用型。 - normallocalssd：x86通用型。 - general：通用型。 - dedicated：独享型，仅云盘SSD支持。 - rapid：独享型，仅极速型SSD支持。
+
+        :return: The support_compute_group_type of this Storage.
+        :rtype: list[str]
+        """
+        return self._support_compute_group_type
+
+    @support_compute_group_type.setter
+    def support_compute_group_type(self, support_compute_group_type):
+        """Sets the support_compute_group_type of this Storage.
+
+        性能规格，包含以下状态： - normal：通用增强型。 - normal2：通用增强Ⅱ型。 - armFlavors：鲲鹏通用增强型。 - dedicicatenormal ：x86独享型。 - armlocalssd：鲲鹏通用型。 - normallocalssd：x86通用型。 - general：通用型。 - dedicated：独享型，仅云盘SSD支持。 - rapid：独享型，仅极速型SSD支持。
+
+        :param support_compute_group_type: The support_compute_group_type of this Storage.
+        :type: list[str]
+        """
+        self._support_compute_group_type = support_compute_group_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

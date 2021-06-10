@@ -32,6 +32,7 @@ class QueryVmrResultDTO:
         'chair_join_url': 'str',
         'allow_gust_first': 'bool',
         'gust_first_notice': 'bool',
+        'vmr_mode': 'int',
         'vmr_pkg_id': 'str',
         'vmr_pkg_name': 'str',
         'vmr_pkg_parties': 'int',
@@ -48,13 +49,14 @@ class QueryVmrResultDTO:
         'chair_join_url': 'chairJoinUrl',
         'allow_gust_first': 'allowGustFirst',
         'gust_first_notice': 'gustFirstNotice',
+        'vmr_mode': 'vmrMode',
         'vmr_pkg_id': 'vmrPkgId',
         'vmr_pkg_name': 'vmrPkgName',
         'vmr_pkg_parties': 'vmrPkgParties',
         'status': 'status'
     }
 
-    def __init__(self, id=None, vmr_id=None, vmr_name=None, gust_pwd=None, gust_join_url=None, chair_pwd=None, chair_join_url=None, allow_gust_first=None, gust_first_notice=None, vmr_pkg_id=None, vmr_pkg_name=None, vmr_pkg_parties=None, status=None):
+    def __init__(self, id=None, vmr_id=None, vmr_name=None, gust_pwd=None, gust_join_url=None, chair_pwd=None, chair_join_url=None, allow_gust_first=None, gust_first_notice=None, vmr_mode=None, vmr_pkg_id=None, vmr_pkg_name=None, vmr_pkg_parties=None, status=None):
         """QueryVmrResultDTO - a model defined in huaweicloud sdk"""
         
         
@@ -68,6 +70,7 @@ class QueryVmrResultDTO:
         self._chair_join_url = None
         self._allow_gust_first = None
         self._gust_first_notice = None
+        self._vmr_mode = None
         self._vmr_pkg_id = None
         self._vmr_pkg_name = None
         self._vmr_pkg_parties = None
@@ -92,6 +95,8 @@ class QueryVmrResultDTO:
             self.allow_gust_first = allow_gust_first
         if gust_first_notice is not None:
             self.gust_first_notice = gust_first_notice
+        if vmr_mode is not None:
+            self.vmr_mode = vmr_mode
         if vmr_pkg_id is not None:
             self.vmr_pkg_id = vmr_pkg_id
         if vmr_pkg_name is not None:
@@ -298,6 +303,28 @@ class QueryVmrResultDTO:
         :type: bool
         """
         self._gust_first_notice = gust_first_notice
+
+    @property
+    def vmr_mode(self):
+        """Gets the vmr_mode of this QueryVmrResultDTO.
+
+        VMR模式 * 0: 个人会议ID * 1: 云会议室 * 2: 网络研讨会 
+
+        :return: The vmr_mode of this QueryVmrResultDTO.
+        :rtype: int
+        """
+        return self._vmr_mode
+
+    @vmr_mode.setter
+    def vmr_mode(self, vmr_mode):
+        """Sets the vmr_mode of this QueryVmrResultDTO.
+
+        VMR模式 * 0: 个人会议ID * 1: 云会议室 * 2: 网络研讨会 
+
+        :param vmr_mode: The vmr_mode of this QueryVmrResultDTO.
+        :type: int
+        """
+        self._vmr_mode = vmr_mode
 
     @property
     def vmr_pkg_id(self):

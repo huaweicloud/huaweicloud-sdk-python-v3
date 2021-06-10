@@ -53,14 +53,11 @@ class RestInviteWithPwdReqBody:
         self._is_not_overlay_pid_name = None
         self.discriminator = None
 
-        if call_num is not None:
-            self.call_num = call_num
+        self.call_num = call_num
         if org_id is not None:
             self.org_id = org_id
-        if conf_id is not None:
-            self.conf_id = conf_id
-        if pwd is not None:
-            self.pwd = pwd
+        self.conf_id = conf_id
+        self.pwd = pwd
         if num_belongs_type is not None:
             self.num_belongs_type = num_belongs_type
         if is_not_overlay_pid_name is not None:

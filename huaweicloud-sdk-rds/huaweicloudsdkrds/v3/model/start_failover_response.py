@@ -29,7 +29,7 @@ class StartFailoverResponse(SdkResponse):
     }
 
     attribute_map = {
-        'instance_id': 'instance_id',
+        'instance_id': 'instanceId',
         'node_id': 'nodeId',
         'workflow_id': 'workflowId'
     }

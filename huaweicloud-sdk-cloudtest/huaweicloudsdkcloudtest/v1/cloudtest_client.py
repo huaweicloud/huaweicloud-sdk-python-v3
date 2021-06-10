@@ -48,6 +48,138 @@ class CloudtestClient(Client):
 
         return ClientBuilder(clazz)
 
+    def create_api_test_suite_by_repo_file(self, request):
+        """通过导入仓库中的文件生成接口测试套
+
+        通过导入仓库中的文件生成接口测试套
+
+        :param CreateApiTestSuiteByRepoFileRequest request
+        :return: CreateApiTestSuiteByRepoFileResponse
+        """
+        return self.create_api_test_suite_by_repo_file_with_http_info(request)
+
+    def create_api_test_suite_by_repo_file_with_http_info(self, request):
+        """通过导入仓库中的文件生成接口测试套
+
+        通过导入仓库中的文件生成接口测试套
+
+        :param CreateApiTestSuiteByRepoFileRequest request
+        :return: CreateApiTestSuiteByRepoFileResponse
+        """
+
+        all_params = ['project_id', 'create_api_test_suite_by_repo_file_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/projects/{project_id}/repository/testsuites',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateApiTestSuiteByRepoFileResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_environments(self, request):
+        """获取云测的环境参数分组列表
+
+        获取云测的环境参数分组列表
+
+        :param ListEnvironmentsRequest request
+        :return: ListEnvironmentsResponse
+        """
+        return self.list_environments_with_http_info(request)
+
+    def list_environments_with_http_info(self, request):
+        """获取云测的环境参数分组列表
+
+        获取云测的环境参数分组列表
+
+        :param ListEnvironmentsRequest request
+        :return: ListEnvironmentsResponse
+        """
+
+        all_params = ['project_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v1/projects/{project_id}/environments',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEnvironmentsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_plan(self, request):
         """项目下创建计划
 

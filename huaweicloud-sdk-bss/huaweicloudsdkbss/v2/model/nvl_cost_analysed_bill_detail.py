@@ -594,7 +594,7 @@ class NvlCostAnalysedBillDetail:
     def order_id(self):
         """Gets the order_id of this NvlCostAnalysedBillDetail.
 
-        订单ID。 说明： 包年/包月资源的使用记录才有该字段，按需资源则为空。
+        订单ID。  说明： 包年/包月资源的使用记录才有该字段，按需资源则为空。
 
         :return: The order_id of this NvlCostAnalysedBillDetail.
         :rtype: str
@@ -605,7 +605,7 @@ class NvlCostAnalysedBillDetail:
     def order_id(self, order_id):
         """Sets the order_id of this NvlCostAnalysedBillDetail.
 
-        订单ID。 说明： 包年/包月资源的使用记录才有该字段，按需资源则为空。
+        订单ID。  说明： 包年/包月资源的使用记录才有该字段，按需资源则为空。
 
         :param order_id: The order_id of this NvlCostAnalysedBillDetail.
         :type: str
@@ -682,7 +682,7 @@ class NvlCostAnalysedBillDetail:
     def usage_measure_id(self):
         """Gets the usage_measure_id of this NvlCostAnalysedBillDetail.
 
-        资源使用量的度量单位，您可以调用查询使用量单位列表接口获取。
+        资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
         :return: The usage_measure_id of this NvlCostAnalysedBillDetail.
         :rtype: int
@@ -693,7 +693,7 @@ class NvlCostAnalysedBillDetail:
     def usage_measure_id(self, usage_measure_id):
         """Sets the usage_measure_id of this NvlCostAnalysedBillDetail.
 
-        资源使用量的度量单位，您可以调用查询使用量单位列表接口获取。
+        资源使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
         :param usage_measure_id: The usage_measure_id of this NvlCostAnalysedBillDetail.
         :type: int
@@ -726,7 +726,7 @@ class NvlCostAnalysedBillDetail:
     def free_resource_measure_id(self):
         """Gets the free_resource_measure_id of this NvlCostAnalysedBillDetail.
 
-        套餐内使用量的度量单位，您可以调用查询使用量单位列表接口获取。
+        套餐内使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
         :return: The free_resource_measure_id of this NvlCostAnalysedBillDetail.
         :rtype: int
@@ -737,7 +737,7 @@ class NvlCostAnalysedBillDetail:
     def free_resource_measure_id(self, free_resource_measure_id):
         """Sets the free_resource_measure_id of this NvlCostAnalysedBillDetail.
 
-        套餐内使用量的度量单位，您可以调用查询使用量单位列表接口获取。
+        套餐内使用量的度量单位，您可以调用查询度量单位列表接口获取。
 
         :param free_resource_measure_id: The free_resource_measure_id of this NvlCostAnalysedBillDetail.
         :type: int
@@ -814,7 +814,7 @@ class NvlCostAnalysedBillDetail:
     def past_months_amortized_amount(self):
         """Gets the past_months_amortized_amount of this NvlCostAnalysedBillDetail.
 
-        期初已分摊金额。 说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
+        期初已分摊金额。  说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
 
         :return: The past_months_amortized_amount of this NvlCostAnalysedBillDetail.
         :rtype: float
@@ -825,7 +825,7 @@ class NvlCostAnalysedBillDetail:
     def past_months_amortized_amount(self, past_months_amortized_amount):
         """Sets the past_months_amortized_amount of this NvlCostAnalysedBillDetail.
 
-        期初已分摊金额。 说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
+        期初已分摊金额。  说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
 
         :param past_months_amortized_amount: The past_months_amortized_amount of this NvlCostAnalysedBillDetail.
         :type: float
@@ -858,7 +858,7 @@ class NvlCostAnalysedBillDetail:
     def future_months_amortized_amount(self):
         """Gets the future_months_amortized_amount of this NvlCostAnalysedBillDetail.
 
-        期末未分摊金额。月度成本分摊时，当月以后还未分摊的金额。 说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
+        期末未分摊金额。月度成本分摊时，当月以后还未分摊的金额。  说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
 
         :return: The future_months_amortized_amount of this NvlCostAnalysedBillDetail.
         :rtype: float
@@ -869,7 +869,7 @@ class NvlCostAnalysedBillDetail:
     def future_months_amortized_amount(self, future_months_amortized_amount):
         """Sets the future_months_amortized_amount of this NvlCostAnalysedBillDetail.
 
-        期末未分摊金额。月度成本分摊时，当月以后还未分摊的金额。 说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
+        期末未分摊金额。月度成本分摊时，当月以后还未分摊的金额。  说明： 包周期和预留实例预付时有效；计费类型为按需，预留实例为按时计费时该值为0。
 
         :param future_months_amortized_amount: The future_months_amortized_amount of this NvlCostAnalysedBillDetail.
         :type: float

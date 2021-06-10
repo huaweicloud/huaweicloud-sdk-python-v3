@@ -190,7 +190,7 @@ class ListSubCustomerResFeeRecordsRequest:
     def charge_mode(self):
         """Gets the charge_mode of this ListSubCustomerResFeeRecordsRequest.
 
-        计费模式。 1 : 包年/包月3：按需10: 预留实例
+        计费模式。1 : 包年/包月3：按需10: 预留实例
 
         :return: The charge_mode of this ListSubCustomerResFeeRecordsRequest.
         :rtype: str
@@ -201,7 +201,7 @@ class ListSubCustomerResFeeRecordsRequest:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this ListSubCustomerResFeeRecordsRequest.
 
-        计费模式。 1 : 包年/包月3：按需10: 预留实例
+        计费模式。1 : 包年/包月3：按需10: 预留实例
 
         :param charge_mode: The charge_mode of this ListSubCustomerResFeeRecordsRequest.
         :type: str
@@ -212,7 +212,7 @@ class ListSubCustomerResFeeRecordsRequest:
     def bill_type(self):
         """Gets the bill_type of this ListSubCustomerResFeeRecordsRequest.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费
+        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费
 
         :return: The bill_type of this ListSubCustomerResFeeRecordsRequest.
         :rtype: int
@@ -223,7 +223,7 @@ class ListSubCustomerResFeeRecordsRequest:
     def bill_type(self, bill_type):
         """Sets the bill_type of this ListSubCustomerResFeeRecordsRequest.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费
+        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费
 
         :param bill_type: The bill_type of this ListSubCustomerResFeeRecordsRequest.
         :type: int
@@ -234,7 +234,7 @@ class ListSubCustomerResFeeRecordsRequest:
     def offset(self):
         """Gets the offset of this ListSubCustomerResFeeRecordsRequest.
 
-        偏移量，从0开始。默认值为0。
+        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :return: The offset of this ListSubCustomerResFeeRecordsRequest.
         :rtype: int
@@ -245,7 +245,7 @@ class ListSubCustomerResFeeRecordsRequest:
     def offset(self, offset):
         """Sets the offset of this ListSubCustomerResFeeRecordsRequest.
 
-        偏移量，从0开始。默认值为0。
+        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListSubCustomerResFeeRecordsRequest.
         :type: int
@@ -300,7 +300,7 @@ class ListSubCustomerResFeeRecordsRequest:
     def include_zero_record(self):
         """Gets the include_zero_record of this ListSubCustomerResFeeRecordsRequest.
 
-        返回是否包含应付金额为0的记录。 true：包含false：不包含
+        返回是否包含应付金额为0的记录。true：包含false：不包含
 
         :return: The include_zero_record of this ListSubCustomerResFeeRecordsRequest.
         :rtype: bool
@@ -311,7 +311,7 @@ class ListSubCustomerResFeeRecordsRequest:
     def include_zero_record(self, include_zero_record):
         """Sets the include_zero_record of this ListSubCustomerResFeeRecordsRequest.
 
-        返回是否包含应付金额为0的记录。 true：包含false：不包含
+        返回是否包含应付金额为0的记录。true：包含false：不包含
 
         :param include_zero_record: The include_zero_record of this ListSubCustomerResFeeRecordsRequest.
         :type: bool
@@ -322,7 +322,7 @@ class ListSubCustomerResFeeRecordsRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListSubCustomerResFeeRecordsRequest.
 
-        精英服务商ID。 如果华为云伙伴能力中心需要查询客户在精英服务商关联期间的消费，需要携带该字段；否则只能查询该客户在与自己关联期间的消费。
+        精英服务商ID。如果华为云伙伴能力中心需要查询客户在精英服务商关联期间的消费，需要携带该字段；否则只能查询该客户在与自己关联期间的消费。
 
         :return: The indirect_partner_id of this ListSubCustomerResFeeRecordsRequest.
         :rtype: str
@@ -333,7 +333,7 @@ class ListSubCustomerResFeeRecordsRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListSubCustomerResFeeRecordsRequest.
 
-        精英服务商ID。 如果华为云伙伴能力中心需要查询客户在精英服务商关联期间的消费，需要携带该字段；否则只能查询该客户在与自己关联期间的消费。
+        精英服务商ID。如果华为云伙伴能力中心需要查询客户在精英服务商关联期间的消费，需要携带该字段；否则只能查询该客户在与自己关联期间的消费。
 
         :param indirect_partner_id: The indirect_partner_id of this ListSubCustomerResFeeRecordsRequest.
         :type: str
@@ -344,7 +344,7 @@ class ListSubCustomerResFeeRecordsRequest:
     def bill_date_begin(self):
         """Gets the bill_date_begin of this ListSubCustomerResFeeRecordsRequest.
 
-        |参数名称：查询的资源消费记录的开始日期，格式为YYYY-MM-DD。| |参数的约束及描述：必须和cycle（即资源的消费账期）在同一个月。|
+        查询的资源消费记录的开始日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。
 
         :return: The bill_date_begin of this ListSubCustomerResFeeRecordsRequest.
         :rtype: str
@@ -355,7 +355,7 @@ class ListSubCustomerResFeeRecordsRequest:
     def bill_date_begin(self, bill_date_begin):
         """Sets the bill_date_begin of this ListSubCustomerResFeeRecordsRequest.
 
-        |参数名称：查询的资源消费记录的开始日期，格式为YYYY-MM-DD。| |参数的约束及描述：必须和cycle（即资源的消费账期）在同一个月。|
+        查询的资源消费记录的开始日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。
 
         :param bill_date_begin: The bill_date_begin of this ListSubCustomerResFeeRecordsRequest.
         :type: str
@@ -366,7 +366,7 @@ class ListSubCustomerResFeeRecordsRequest:
     def bill_date_end(self):
         """Gets the bill_date_end of this ListSubCustomerResFeeRecordsRequest.
 
-        |参数名称：查询的资源消费记录的结束日期，格式为YYYY-MM-DD。| |参数的约束及描述：必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。|
+        查询的资源消费记录的结束日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
 
         :return: The bill_date_end of this ListSubCustomerResFeeRecordsRequest.
         :rtype: str
@@ -377,7 +377,7 @@ class ListSubCustomerResFeeRecordsRequest:
     def bill_date_end(self, bill_date_end):
         """Sets the bill_date_end of this ListSubCustomerResFeeRecordsRequest.
 
-        |参数名称：查询的资源消费记录的结束日期，格式为YYYY-MM-DD。| |参数的约束及描述：必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。|
+        查询的资源消费记录的结束日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
 
         :param bill_date_end: The bill_date_end of this ListSubCustomerResFeeRecordsRequest.
         :type: str

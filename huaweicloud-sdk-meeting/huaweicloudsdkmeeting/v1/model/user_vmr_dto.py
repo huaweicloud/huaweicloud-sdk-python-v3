@@ -26,6 +26,7 @@ class UserVmrDTO:
         'id': 'str',
         'vmr_id': 'str',
         'vmr_name': 'str',
+        'vmr_mode': 'int',
         'vmr_pkg_id': 'str',
         'vmr_pkg_name': 'str',
         'vmr_pkg_parties': 'int',
@@ -37,6 +38,7 @@ class UserVmrDTO:
         'id': 'id',
         'vmr_id': 'vmrId',
         'vmr_name': 'vmrName',
+        'vmr_mode': 'vmrMode',
         'vmr_pkg_id': 'vmrPkgId',
         'vmr_pkg_name': 'vmrPkgName',
         'vmr_pkg_parties': 'vmrPkgParties',
@@ -44,7 +46,7 @@ class UserVmrDTO:
         'status': 'status'
     }
 
-    def __init__(self, id=None, vmr_id=None, vmr_name=None, vmr_pkg_id=None, vmr_pkg_name=None, vmr_pkg_parties=None, vmr_pkg_length=None, status=None):
+    def __init__(self, id=None, vmr_id=None, vmr_name=None, vmr_mode=None, vmr_pkg_id=None, vmr_pkg_name=None, vmr_pkg_parties=None, vmr_pkg_length=None, status=None):
         """UserVmrDTO - a model defined in huaweicloud sdk"""
         
         
@@ -52,6 +54,7 @@ class UserVmrDTO:
         self._id = None
         self._vmr_id = None
         self._vmr_name = None
+        self._vmr_mode = None
         self._vmr_pkg_id = None
         self._vmr_pkg_name = None
         self._vmr_pkg_parties = None
@@ -65,6 +68,8 @@ class UserVmrDTO:
             self.vmr_id = vmr_id
         if vmr_name is not None:
             self.vmr_name = vmr_name
+        if vmr_mode is not None:
+            self.vmr_mode = vmr_mode
         if vmr_pkg_id is not None:
             self.vmr_pkg_id = vmr_pkg_id
         if vmr_pkg_name is not None:
@@ -141,6 +146,28 @@ class UserVmrDTO:
         :type: str
         """
         self._vmr_name = vmr_name
+
+    @property
+    def vmr_mode(self):
+        """Gets the vmr_mode of this UserVmrDTO.
+
+        VMR模式。 - 0：个人会议ID - 1: 云会议室 - 2: 网络研讨会 
+
+        :return: The vmr_mode of this UserVmrDTO.
+        :rtype: int
+        """
+        return self._vmr_mode
+
+    @vmr_mode.setter
+    def vmr_mode(self, vmr_mode):
+        """Sets the vmr_mode of this UserVmrDTO.
+
+        VMR模式。 - 0：个人会议ID - 1: 云会议室 - 2: 网络研讨会 
+
+        :param vmr_mode: The vmr_mode of this UserVmrDTO.
+        :type: int
+        """
+        self._vmr_mode = vmr_mode
 
     @property
     def vmr_pkg_id(self):

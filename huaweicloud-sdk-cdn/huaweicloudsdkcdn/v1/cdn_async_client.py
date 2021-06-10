@@ -577,7 +577,7 @@ class CdnAsyncClient(Client):
 
 
     def show_cache_rules_async(self, request):
-        """询缓存规则
+        """查询缓存规则
 
         查询缓存规则。
 
@@ -587,7 +587,7 @@ class CdnAsyncClient(Client):
         return self.show_cache_rules_with_http_info(request)
 
     def show_cache_rules_with_http_info(self, request):
-        """询缓存规则
+        """查询缓存规则
 
         查询缓存规则。
 
@@ -2012,6 +2012,7 @@ class CdnAsyncClient(Client):
     def update_private_bucket_access_async(self, request):
         """修改私有桶开启关闭状态
 
+        修改私有桶开启关闭状态。
 
         :param UpdatePrivateBucketAccessRequest request
         :return: UpdatePrivateBucketAccessResponse
@@ -2021,6 +2022,7 @@ class CdnAsyncClient(Client):
     def update_private_bucket_access_with_http_info(self, request):
         """修改私有桶开启关闭状态
 
+        修改私有桶开启关闭状态。
 
         :param UpdatePrivateBucketAccessRequest request
         :return: UpdatePrivateBucketAccessResponse

@@ -113,6 +113,71 @@ class FunctionGraphAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def async_invoke_reserved_function_async(self, request):
+        """函数异步执行并返回预留实例ID。
+
+        函数异步执行并返回预留实例ID用于场景指客户端请求执行比较费时任务，不需要同步等待执行完成返回结果，该方法提前返回任务执行对应的预留实例ID, 如果预留实例有异常， 可以通过该实例ID把对应实例删除（该接口主要针对白名单用户）。
+
+        :param AsyncInvokeReservedFunctionRequest request
+        :return: AsyncInvokeReservedFunctionResponse
+        """
+        return self.async_invoke_reserved_function_with_http_info(request)
+
+    def async_invoke_reserved_function_with_http_info(self, request):
+        """函数异步执行并返回预留实例ID。
+
+        函数异步执行并返回预留实例ID用于场景指客户端请求执行比较费时任务，不需要同步等待执行完成返回结果，该方法提前返回任务执行对应的预留实例ID, 如果预留实例有异常， 可以通过该实例ID把对应实例删除（该接口主要针对白名单用户）。
+
+        :param AsyncInvokeReservedFunctionRequest request
+        :return: AsyncInvokeReservedFunctionResponse
+        """
+
+        all_params = ['function_urn', 'async_invoke_reserved_function_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/reserved-invocations',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AsyncInvokeReservedFunctionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_dependency_async(self, request):
         """创建依赖包
 
@@ -688,6 +753,71 @@ class FunctionGraphAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_reserved_instance_by_id_async(self, request):
+        """根据预留实例ID删除对应预留实例
+
+        预留实例异常时，可以根据预留实例ID删除该预留实例，注意：删除成功之后重新会重新拉起一个新的预留实例，业务高峰期可以更好的工作（该接口主要针对白名单用户）
+
+        :param DeleteReservedInstanceByIdRequest request
+        :return: DeleteReservedInstanceByIdResponse
+        """
+        return self.delete_reserved_instance_by_id_with_http_info(request)
+
+    def delete_reserved_instance_by_id_with_http_info(self, request):
+        """根据预留实例ID删除对应预留实例
+
+        预留实例异常时，可以根据预留实例ID删除该预留实例，注意：删除成功之后重新会重新拉起一个新的预留实例，业务高峰期可以更好的工作（该接口主要针对白名单用户）
+
+        :param DeleteReservedInstanceByIdRequest request
+        :return: DeleteReservedInstanceByIdResponse
+        """
+
+        all_params = ['function_urn', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/reservedinstances/{instance_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteReservedInstanceByIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_version_alias_async(self, request):
         """删除函数版本别名。
 
@@ -747,6 +877,134 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteVersionAliasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def export_function_async(self, request):
+        """导出函数。
+
+        导出函数。
+
+        :param ExportFunctionRequest request
+        :return: ExportFunctionResponse
+        """
+        return self.export_function_with_http_info(request)
+
+    def export_function_with_http_info(self, request):
+        """导出函数。
+
+        导出函数。
+
+        :param ExportFunctionRequest request
+        :return: ExportFunctionResponse
+        """
+
+        all_params = ['config', 'code']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'config' in local_var_params:
+            query_params.append(('config', local_var_params['config']))
+        if 'code' in local_var_params:
+            query_params.append(('code', local_var_params['code']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/export',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ExportFunctionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def import_function_async(self, request):
+        """导入函数。
+
+        导入函数。
+
+        :param ImportFunctionRequest request
+        :return: ImportFunctionResponse
+        """
+        return self.import_function_with_http_info(request)
+
+    def import_function_with_http_info(self, request):
+        """导入函数。
+
+        导入函数。
+
+        :param ImportFunctionRequest request
+        :return: ImportFunctionResponse
+        """
+
+        all_params = ['import_function_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/import',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ImportFunctionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -32,7 +32,6 @@ class SlowLogStatistics:
         'users': 'str',
         'query_sample': 'str',
         'type': 'str',
-        'start_time': 'str',
         'client_ip': 'str'
     }
 
@@ -46,11 +45,10 @@ class SlowLogStatistics:
         'users': 'users',
         'query_sample': 'querySample',
         'type': 'type',
-        'start_time': 'startTime',
         'client_ip': 'clientIP'
     }
 
-    def __init__(self, count=None, time=None, lock_time=None, rows_sent=None, rows_examined=None, database=None, users=None, query_sample=None, type=None, start_time=None, client_ip=None):
+    def __init__(self, count=None, time=None, lock_time=None, rows_sent=None, rows_examined=None, database=None, users=None, query_sample=None, type=None, client_ip=None):
         """SlowLogStatistics - a model defined in huaweicloud sdk"""
         
         
@@ -64,7 +62,6 @@ class SlowLogStatistics:
         self._users = None
         self._query_sample = None
         self._type = None
-        self._start_time = None
         self._client_ip = None
         self.discriminator = None
 
@@ -77,7 +74,6 @@ class SlowLogStatistics:
         self.users = users
         self.query_sample = query_sample
         self.type = type
-        self.start_time = start_time
         self.client_ip = client_ip
 
     @property
@@ -277,28 +273,6 @@ class SlowLogStatistics:
         :type: str
         """
         self._type = type
-
-    @property
-    def start_time(self):
-        """Gets the start_time of this SlowLogStatistics.
-
-        发生时间，UTC时间。
-
-        :return: The start_time of this SlowLogStatistics.
-        :rtype: str
-        """
-        return self._start_time
-
-    @start_time.setter
-    def start_time(self, start_time):
-        """Sets the start_time of this SlowLogStatistics.
-
-        发生时间，UTC时间。
-
-        :param start_time: The start_time of this SlowLogStatistics.
-        :type: str
-        """
-        self._start_time = start_time
 
     @property
     def client_ip(self):

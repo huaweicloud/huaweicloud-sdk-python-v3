@@ -161,7 +161,7 @@ class ListSubCustomerCouponsRequest:
     def coupon_type(self):
         """Gets the coupon_type of this ListSubCustomerCouponsRequest.
 
-        优惠券类型： 1：代金券2：折扣券3：产品券4：现金券
+        优惠券类型：1：代金券2：折扣券3：产品券4：现金券
 
         :return: The coupon_type of this ListSubCustomerCouponsRequest.
         :rtype: int
@@ -172,7 +172,7 @@ class ListSubCustomerCouponsRequest:
     def coupon_type(self, coupon_type):
         """Sets the coupon_type of this ListSubCustomerCouponsRequest.
 
-        优惠券类型： 1：代金券2：折扣券3：产品券4：现金券
+        优惠券类型：1：代金券2：折扣券3：产品券4：现金券
 
         :param coupon_type: The coupon_type of this ListSubCustomerCouponsRequest.
         :type: int
@@ -183,7 +183,7 @@ class ListSubCustomerCouponsRequest:
     def status(self):
         """Gets the status of this ListSubCustomerCouponsRequest.
 
-        客户优惠券实例状态： 1：未激活2：待使用3：已使用4：已过期
+        客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期
 
         :return: The status of this ListSubCustomerCouponsRequest.
         :rtype: int
@@ -194,7 +194,7 @@ class ListSubCustomerCouponsRequest:
     def status(self, status):
         """Sets the status of this ListSubCustomerCouponsRequest.
 
-        客户优惠券实例状态： 1：未激活2：待使用3：已使用4：已过期
+        客户优惠券实例状态：1：未激活2：待使用3：已使用4：已过期
 
         :param status: The status of this ListSubCustomerCouponsRequest.
         :type: int
@@ -205,7 +205,7 @@ class ListSubCustomerCouponsRequest:
     def active_start_time(self):
         """Gets the active_start_time of this ListSubCustomerCouponsRequest.
 
-        激活时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
+        激活时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
         :return: The active_start_time of this ListSubCustomerCouponsRequest.
         :rtype: str
@@ -216,7 +216,7 @@ class ListSubCustomerCouponsRequest:
     def active_start_time(self, active_start_time):
         """Sets the active_start_time of this ListSubCustomerCouponsRequest.
 
-        激活时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
+        激活时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param active_start_time: The active_start_time of this ListSubCustomerCouponsRequest.
         :type: str
@@ -227,7 +227,7 @@ class ListSubCustomerCouponsRequest:
     def active_end_time(self):
         """Gets the active_end_time of this ListSubCustomerCouponsRequest.
 
-        结束时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
+        结束时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
         :return: The active_end_time of this ListSubCustomerCouponsRequest.
         :rtype: str
@@ -238,7 +238,7 @@ class ListSubCustomerCouponsRequest:
     def active_end_time(self, active_end_time):
         """Sets the active_end_time of this ListSubCustomerCouponsRequest.
 
-        结束时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
+        结束时间。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param active_end_time: The active_end_time of this ListSubCustomerCouponsRequest.
         :type: str
@@ -249,7 +249,7 @@ class ListSubCustomerCouponsRequest:
     def offset(self):
         """Gets the offset of this ListSubCustomerCouponsRequest.
 
-        偏移量，从0开始。默认值为0。
+        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :return: The offset of this ListSubCustomerCouponsRequest.
         :rtype: int
@@ -260,7 +260,7 @@ class ListSubCustomerCouponsRequest:
     def offset(self, offset):
         """Sets the offset of this ListSubCustomerCouponsRequest.
 
-        偏移量，从0开始。默认值为0。
+        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListSubCustomerCouponsRequest.
         :type: int
@@ -293,7 +293,7 @@ class ListSubCustomerCouponsRequest:
     def source_id(self):
         """Gets the source_id of this ListSubCustomerCouponsRequest.
 
-        发券来源，如果是合作伙伴发送的券，此处为伙伴ID。 如果需要查询某个伙伴发放的券，可以在此处输入该伙伴ID。
+        发券来源，如果是合作伙伴发送的券，此处为伙伴ID。如果需要查询某个伙伴发放的券，可以在此处输入该伙伴ID。
 
         :return: The source_id of this ListSubCustomerCouponsRequest.
         :rtype: str
@@ -304,7 +304,7 @@ class ListSubCustomerCouponsRequest:
     def source_id(self, source_id):
         """Sets the source_id of this ListSubCustomerCouponsRequest.
 
-        发券来源，如果是合作伙伴发送的券，此处为伙伴ID。 如果需要查询某个伙伴发放的券，可以在此处输入该伙伴ID。
+        发券来源，如果是合作伙伴发送的券，此处为伙伴ID。如果需要查询某个伙伴发放的券，可以在此处输入该伙伴ID。
 
         :param source_id: The source_id of this ListSubCustomerCouponsRequest.
         :type: str
@@ -315,7 +315,7 @@ class ListSubCustomerCouponsRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListSubCustomerCouponsRequest.
 
-        精英服务商（二级经销商）ID。 华为云伙伴能力中心（一级经销商）查询精英服务商名下的优惠券时，需要携带该参数；否则只能查询自己的优惠券列表。
+        精英服务商（二级经销商）ID。华为云伙伴能力中心（一级经销商）查询精英服务商名下的优惠券时，需要携带该参数；否则只能查询自己的优惠券列表。
 
         :return: The indirect_partner_id of this ListSubCustomerCouponsRequest.
         :rtype: str
@@ -326,7 +326,7 @@ class ListSubCustomerCouponsRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListSubCustomerCouponsRequest.
 
-        精英服务商（二级经销商）ID。 华为云伙伴能力中心（一级经销商）查询精英服务商名下的优惠券时，需要携带该参数；否则只能查询自己的优惠券列表。
+        精英服务商（二级经销商）ID。华为云伙伴能力中心（一级经销商）查询精英服务商名下的优惠券时，需要携带该参数；否则只能查询自己的优惠券列表。
 
         :param indirect_partner_id: The indirect_partner_id of this ListSubCustomerCouponsRequest.
         :type: str

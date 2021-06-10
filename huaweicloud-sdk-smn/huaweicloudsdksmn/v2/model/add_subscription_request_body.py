@@ -23,58 +23,37 @@ class AddSubscriptionRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'endpoint': 'str',
         'protocol': 'str',
+        'endpoint': 'str',
         'remark': 'str'
     }
 
     attribute_map = {
-        'endpoint': 'endpoint',
         'protocol': 'protocol',
+        'endpoint': 'endpoint',
         'remark': 'remark'
     }
 
-    def __init__(self, endpoint=None, protocol=None, remark=None):
+    def __init__(self, protocol=None, endpoint=None, remark=None):
         """AddSubscriptionRequestBody - a model defined in huaweicloud sdk"""
         
         
 
-        self._endpoint = None
         self._protocol = None
+        self._endpoint = None
         self._remark = None
         self.discriminator = None
 
-        self.endpoint = endpoint
         self.protocol = protocol
-        self.remark = remark
-
-    @property
-    def endpoint(self):
-        """Gets the endpoint of this AddSubscriptionRequestBody.
-
-        说明：http协议，接入点必须以“http://”开头。  https协议，接入点必须以“https://”开头。  email协议，接入点必须是邮件地址。  sms协议，接入点必须是一个电话号码。  functionstage协议，接入点必须是一个函数。  functiongraph协议，接入点必须是一个函数工作流。  dms协议，接入点必须是一个消息队列。  application协议，接入点必须是一个应用平台的设备终端。  callnotify协议，接入点必须是一个电话号码。
-
-        :return: The endpoint of this AddSubscriptionRequestBody.
-        :rtype: str
-        """
-        return self._endpoint
-
-    @endpoint.setter
-    def endpoint(self, endpoint):
-        """Sets the endpoint of this AddSubscriptionRequestBody.
-
-        说明：http协议，接入点必须以“http://”开头。  https协议，接入点必须以“https://”开头。  email协议，接入点必须是邮件地址。  sms协议，接入点必须是一个电话号码。  functionstage协议，接入点必须是一个函数。  functiongraph协议，接入点必须是一个函数工作流。  dms协议，接入点必须是一个消息队列。  application协议，接入点必须是一个应用平台的设备终端。  callnotify协议，接入点必须是一个电话号码。
-
-        :param endpoint: The endpoint of this AddSubscriptionRequestBody.
-        :type: str
-        """
-        self._endpoint = endpoint
+        self.endpoint = endpoint
+        if remark is not None:
+            self.remark = remark
 
     @property
     def protocol(self):
         """Gets the protocol of this AddSubscriptionRequestBody.
 
-        不同协议对应不同的endpoint（接受消息的接入点）。 目前支持的协议包括：  “email”：邮件传输协议，endpoint为邮箱地址。  “default”  “sms”：短信传输协议，endpoint为手机号码。  “functionstage”：FunctionGraph（函数）传输协议，endpoint为一个函数。  “functiongraph”：FunctionGraph（工作流）传输协议，endpoint为由一组函数编排成的工作流。  “http”、“https”：HTTP/HTTPS传输协议，endpoint为URL。  “callnotify”：语音通知传输协议，endpoint为手机号码。
+        不同协议对应不同的endpoint（接受消息的接入点）。 目前支持的协议包括：  “email”：邮件传输协议，endpoint为邮箱地址。  “sms”：短信传输协议，endpoint为手机号码。  “functionstage”：FunctionGraph（函数）传输协议，endpoint为一个函数。  “http”、“https”：HTTP/HTTPS传输协议，endpoint为URL。  “callnotify”：语音通知传输协议，endpoint为手机号码。
 
         :return: The protocol of this AddSubscriptionRequestBody.
         :rtype: str
@@ -85,12 +64,34 @@ class AddSubscriptionRequestBody:
     def protocol(self, protocol):
         """Sets the protocol of this AddSubscriptionRequestBody.
 
-        不同协议对应不同的endpoint（接受消息的接入点）。 目前支持的协议包括：  “email”：邮件传输协议，endpoint为邮箱地址。  “default”  “sms”：短信传输协议，endpoint为手机号码。  “functionstage”：FunctionGraph（函数）传输协议，endpoint为一个函数。  “functiongraph”：FunctionGraph（工作流）传输协议，endpoint为由一组函数编排成的工作流。  “http”、“https”：HTTP/HTTPS传输协议，endpoint为URL。  “callnotify”：语音通知传输协议，endpoint为手机号码。
+        不同协议对应不同的endpoint（接受消息的接入点）。 目前支持的协议包括：  “email”：邮件传输协议，endpoint为邮箱地址。  “sms”：短信传输协议，endpoint为手机号码。  “functionstage”：FunctionGraph（函数）传输协议，endpoint为一个函数。  “http”、“https”：HTTP/HTTPS传输协议，endpoint为URL。  “callnotify”：语音通知传输协议，endpoint为手机号码。
 
         :param protocol: The protocol of this AddSubscriptionRequestBody.
         :type: str
         """
         self._protocol = protocol
+
+    @property
+    def endpoint(self):
+        """Gets the endpoint of this AddSubscriptionRequestBody.
+
+        说明：  https协议，接入点必须以“https://”开头。  email协议，接入点必须是邮件地址。  sms协议，接入点必须是一个电话号码。  functionstage协议，接入点必须是一个函数。  dms协议，接入点必须是一个消息队列。  application协议，接入点必须是一个应用平台的设备终端。  callnotify协议，接入点必须是一个电话号码。
+
+        :return: The endpoint of this AddSubscriptionRequestBody.
+        :rtype: str
+        """
+        return self._endpoint
+
+    @endpoint.setter
+    def endpoint(self, endpoint):
+        """Sets the endpoint of this AddSubscriptionRequestBody.
+
+        说明：  https协议，接入点必须以“https://”开头。  email协议，接入点必须是邮件地址。  sms协议，接入点必须是一个电话号码。  functionstage协议，接入点必须是一个函数。  dms协议，接入点必须是一个消息队列。  application协议，接入点必须是一个应用平台的设备终端。  callnotify协议，接入点必须是一个电话号码。
+
+        :param endpoint: The endpoint of this AddSubscriptionRequestBody.
+        :type: str
+        """
+        self._endpoint = endpoint
 
     @property
     def remark(self):

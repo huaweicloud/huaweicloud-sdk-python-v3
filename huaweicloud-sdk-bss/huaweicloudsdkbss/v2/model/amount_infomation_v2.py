@@ -70,7 +70,7 @@ class AmountInfomationV2:
     def discounts(self):
         """Gets the discounts of this AmountInfomationV2.
 
-        费用项。 具体请参见表6。
+        费用项。 具体请参见表7。
 
         :return: The discounts of this AmountInfomationV2.
         :rtype: list[DiscountItemV2]
@@ -81,7 +81,7 @@ class AmountInfomationV2:
     def discounts(self, discounts):
         """Sets the discounts of this AmountInfomationV2.
 
-        费用项。 具体请参见表6。
+        费用项。 具体请参见表7。
 
         :param discounts: The discounts of this AmountInfomationV2.
         :type: list[DiscountItemV2]

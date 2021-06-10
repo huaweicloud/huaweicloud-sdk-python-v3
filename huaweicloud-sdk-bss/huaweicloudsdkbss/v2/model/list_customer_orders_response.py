@@ -50,7 +50,7 @@ class ListCustomerOrdersResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListCustomerOrdersResponse.
 
-        大于等于0的整数 符合条件的记录总数。
+        大于等于0的整数。 符合条件的记录总数。
 
         :return: The total_count of this ListCustomerOrdersResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ListCustomerOrdersResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListCustomerOrdersResponse.
 
-        大于等于0的整数 符合条件的记录总数。
+        大于等于0的整数。 符合条件的记录总数。
 
         :param total_count: The total_count of this ListCustomerOrdersResponse.
         :type: int

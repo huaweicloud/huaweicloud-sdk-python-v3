@@ -25,16 +25,18 @@ class DeleteSqlserverDatabaseRequest:
     openapi_types = {
         'x_language': 'str',
         'instance_id': 'str',
-        'db_name': 'str'
+        'db_name': 'str',
+        'body': 'DropDatabaseV3Req'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
         'instance_id': 'instance_id',
-        'db_name': 'db_name'
+        'db_name': 'db_name',
+        'body': 'body'
     }
 
-    def __init__(self, x_language=None, instance_id=None, db_name=None):
+    def __init__(self, x_language=None, instance_id=None, db_name=None, body=None):
         """DeleteSqlserverDatabaseRequest - a model defined in huaweicloud sdk"""
         
         
@@ -42,12 +44,15 @@ class DeleteSqlserverDatabaseRequest:
         self._x_language = None
         self._instance_id = None
         self._db_name = None
+        self._body = None
         self.discriminator = None
 
         if x_language is not None:
             self.x_language = x_language
         self.instance_id = instance_id
         self.db_name = db_name
+        if body is not None:
+            self.body = body
 
     @property
     def x_language(self):
@@ -114,6 +119,26 @@ class DeleteSqlserverDatabaseRequest:
         :type: str
         """
         self._db_name = db_name
+
+    @property
+    def body(self):
+        """Gets the body of this DeleteSqlserverDatabaseRequest.
+
+
+        :return: The body of this DeleteSqlserverDatabaseRequest.
+        :rtype: DropDatabaseV3Req
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this DeleteSqlserverDatabaseRequest.
+
+
+        :param body: The body of this DeleteSqlserverDatabaseRequest.
+        :type: DropDatabaseV3Req
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

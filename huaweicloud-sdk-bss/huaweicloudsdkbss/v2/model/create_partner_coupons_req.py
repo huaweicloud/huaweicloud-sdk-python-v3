@@ -192,7 +192,7 @@ class CreatePartnerCouponsReq:
     def cloud_service_types(self):
         """Gets the cloud_service_types of this CreatePartnerCouponsReq.
 
-        允许使用的云服务列表，您可以调用查询云服务类型列表接口获取。 多个云服务产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制） 说明： 如果额度上有限制云服务类型列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定云服务类型。
+        允许使用的云服务列表，您可以调用查询云服务类型列表接口获取。 多个云服务产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制）  说明： 如果额度上有限制云服务类型列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定云服务类型。
 
         :return: The cloud_service_types of this CreatePartnerCouponsReq.
         :rtype: list[str]
@@ -203,7 +203,7 @@ class CreatePartnerCouponsReq:
     def cloud_service_types(self, cloud_service_types):
         """Sets the cloud_service_types of this CreatePartnerCouponsReq.
 
-        允许使用的云服务列表，您可以调用查询云服务类型列表接口获取。 多个云服务产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制） 说明： 如果额度上有限制云服务类型列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定云服务类型。
+        允许使用的云服务列表，您可以调用查询云服务类型列表接口获取。 多个云服务产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制）  说明： 如果额度上有限制云服务类型列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定云服务类型。
 
         :param cloud_service_types: The cloud_service_types of this CreatePartnerCouponsReq.
         :type: list[str]
@@ -214,7 +214,7 @@ class CreatePartnerCouponsReq:
     def product_ids(self):
         """Gets the product_ids of this CreatePartnerCouponsReq.
 
-        允许使用的产品列表。 多个产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制） 说明： 如果额度上有限制产品列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定产品ID。 产品ID需要合作伙伴通过线下获得。
+        允许使用的产品列表。 多个产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制）  说明： 如果额度上有限制产品列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定产品ID。 产品ID需要合作伙伴通过线下获得。
 
         :return: The product_ids of this CreatePartnerCouponsReq.
         :rtype: list[str]
@@ -225,7 +225,7 @@ class CreatePartnerCouponsReq:
     def product_ids(self, product_ids):
         """Sets the product_ids of this CreatePartnerCouponsReq.
 
-        允许使用的产品列表。 多个产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制） 说明： 如果额度上有限制产品列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定产品ID。 产品ID需要合作伙伴通过线下获得。
+        允许使用的产品列表。 多个产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制）  说明： 如果额度上有限制产品列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定产品ID。 产品ID需要合作伙伴通过线下获得。
 
         :param product_ids: The product_ids of this CreatePartnerCouponsReq.
         :type: list[str]

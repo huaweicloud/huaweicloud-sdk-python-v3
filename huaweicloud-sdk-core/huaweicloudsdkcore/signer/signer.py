@@ -123,11 +123,14 @@ def process_canonical_query_string(request):
     canonical_query_param = []
     for (key, value) in params:
         k = url_encode(key)
-        if type(value) is list:
+        if isinstance(value, list):
             value.sort()
             for v in value:
                 kv = k + "=" + url_encode(str(v))
                 canonical_query_param.append(kv)
+        elif isinstance(value, bool):
+            kv = k + "=" + url_encode(str(value).lower())
+            canonical_query_param.append(kv)
         else:
             kv = k + "=" + url_encode(str(value))
             canonical_query_param.append(kv)

@@ -1,0 +1,266 @@
+# coding: utf-8
+
+import pprint
+import re
+
+import six
+
+
+
+
+
+class LineCompareDetail:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'source_table_name': 'str',
+        'target_table_name': 'str',
+        'source_row_num': 'int',
+        'target_row_num': 'int',
+        'diff_row_num': 'int',
+        'line_compare_result': 'str',
+        'message': 'str'
+    }
+
+    attribute_map = {
+        'source_table_name': 'source_table_name',
+        'target_table_name': 'target_table_name',
+        'source_row_num': 'source_row_num',
+        'target_row_num': 'target_row_num',
+        'diff_row_num': 'diff_row_num',
+        'line_compare_result': 'line_compare_result',
+        'message': 'message'
+    }
+
+    def __init__(self, source_table_name=None, target_table_name=None, source_row_num=None, target_row_num=None, diff_row_num=None, line_compare_result=None, message=None):
+        """LineCompareDetail - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._source_table_name = None
+        self._target_table_name = None
+        self._source_row_num = None
+        self._target_row_num = None
+        self._diff_row_num = None
+        self._line_compare_result = None
+        self._message = None
+        self.discriminator = None
+
+        self.source_table_name = source_table_name
+        self.target_table_name = target_table_name
+        self.source_row_num = source_row_num
+        self.target_row_num = target_row_num
+        self.diff_row_num = diff_row_num
+        self.line_compare_result = line_compare_result
+        if message is not None:
+            self.message = message
+
+    @property
+    def source_table_name(self):
+        """Gets the source_table_name of this LineCompareDetail.
+
+        源库的表名称。
+
+        :return: The source_table_name of this LineCompareDetail.
+        :rtype: str
+        """
+        return self._source_table_name
+
+    @source_table_name.setter
+    def source_table_name(self, source_table_name):
+        """Sets the source_table_name of this LineCompareDetail.
+
+        源库的表名称。
+
+        :param source_table_name: The source_table_name of this LineCompareDetail.
+        :type: str
+        """
+        self._source_table_name = source_table_name
+
+    @property
+    def target_table_name(self):
+        """Gets the target_table_name of this LineCompareDetail.
+
+        目标库的表名称。
+
+        :return: The target_table_name of this LineCompareDetail.
+        :rtype: str
+        """
+        return self._target_table_name
+
+    @target_table_name.setter
+    def target_table_name(self, target_table_name):
+        """Sets the target_table_name of this LineCompareDetail.
+
+        目标库的表名称。
+
+        :param target_table_name: The target_table_name of this LineCompareDetail.
+        :type: str
+        """
+        self._target_table_name = target_table_name
+
+    @property
+    def source_row_num(self):
+        """Gets the source_row_num of this LineCompareDetail.
+
+        源库的表行数。
+
+        :return: The source_row_num of this LineCompareDetail.
+        :rtype: int
+        """
+        return self._source_row_num
+
+    @source_row_num.setter
+    def source_row_num(self, source_row_num):
+        """Sets the source_row_num of this LineCompareDetail.
+
+        源库的表行数。
+
+        :param source_row_num: The source_row_num of this LineCompareDetail.
+        :type: int
+        """
+        self._source_row_num = source_row_num
+
+    @property
+    def target_row_num(self):
+        """Gets the target_row_num of this LineCompareDetail.
+
+        目标库的表行数。
+
+        :return: The target_row_num of this LineCompareDetail.
+        :rtype: int
+        """
+        return self._target_row_num
+
+    @target_row_num.setter
+    def target_row_num(self, target_row_num):
+        """Sets the target_row_num of this LineCompareDetail.
+
+        目标库的表行数。
+
+        :param target_row_num: The target_row_num of this LineCompareDetail.
+        :type: int
+        """
+        self._target_row_num = target_row_num
+
+    @property
+    def diff_row_num(self):
+        """Gets the diff_row_num of this LineCompareDetail.
+
+        源库的表和目标库的表的差异值。
+
+        :return: The diff_row_num of this LineCompareDetail.
+        :rtype: int
+        """
+        return self._diff_row_num
+
+    @diff_row_num.setter
+    def diff_row_num(self, diff_row_num):
+        """Sets the diff_row_num of this LineCompareDetail.
+
+        源库的表和目标库的表的差异值。
+
+        :param diff_row_num: The diff_row_num of this LineCompareDetail.
+        :type: int
+        """
+        self._diff_row_num = diff_row_num
+
+    @property
+    def line_compare_result(self):
+        """Gets the line_compare_result of this LineCompareDetail.
+
+        对比结果。
+
+        :return: The line_compare_result of this LineCompareDetail.
+        :rtype: str
+        """
+        return self._line_compare_result
+
+    @line_compare_result.setter
+    def line_compare_result(self, line_compare_result):
+        """Sets the line_compare_result of this LineCompareDetail.
+
+        对比结果。
+
+        :param line_compare_result: The line_compare_result of this LineCompareDetail.
+        :type: str
+        """
+        self._line_compare_result = line_compare_result
+
+    @property
+    def message(self):
+        """Gets the message of this LineCompareDetail.
+
+        附加信息。
+
+        :return: The message of this LineCompareDetail.
+        :rtype: str
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        """Sets the message of this LineCompareDetail.
+
+        附加信息。
+
+        :param message: The message of this LineCompareDetail.
+        :type: str
+        """
+        self._message = message
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        return pprint.pformat(self.to_dict())
+
+    def __repr__(self):
+        """For `print` and `pprint`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, LineCompareDetail):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

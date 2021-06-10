@@ -28,7 +28,11 @@ class GetTaskDetailListRspJobs:
         'status': 'str',
         'created': 'str',
         'ended': 'str',
-        'process': 'str'
+        'process': 'str',
+        'task_detail': 'str',
+        'instance': 'GetTaskDetailListRspJobsInstance',
+        'entities': 'object',
+        'fail_reason': 'str'
     }
 
     attribute_map = {
@@ -37,10 +41,14 @@ class GetTaskDetailListRspJobs:
         'status': 'status',
         'created': 'created',
         'ended': 'ended',
-        'process': 'process'
+        'process': 'process',
+        'task_detail': 'taskDetail',
+        'instance': 'instance',
+        'entities': 'entities',
+        'fail_reason': 'fail_reason'
     }
 
-    def __init__(self, id=None, name=None, status=None, created=None, ended=None, process=None):
+    def __init__(self, id=None, name=None, status=None, created=None, ended=None, process=None, task_detail=None, instance=None, entities=None, fail_reason=None):
         """GetTaskDetailListRspJobs - a model defined in huaweicloud sdk"""
         
         
@@ -51,6 +59,10 @@ class GetTaskDetailListRspJobs:
         self._created = None
         self._ended = None
         self._process = None
+        self._task_detail = None
+        self._instance = None
+        self._entities = None
+        self._fail_reason = None
         self.discriminator = None
 
         self.id = id
@@ -61,6 +73,13 @@ class GetTaskDetailListRspJobs:
             self.ended = ended
         if process is not None:
             self.process = process
+        if task_detail is not None:
+            self.task_detail = task_detail
+        self.instance = instance
+        if entities is not None:
+            self.entities = entities
+        if fail_reason is not None:
+            self.fail_reason = fail_reason
 
     @property
     def id(self):
@@ -193,6 +212,92 @@ class GetTaskDetailListRspJobs:
         :type: str
         """
         self._process = process
+
+    @property
+    def task_detail(self):
+        """Gets the task_detail of this GetTaskDetailListRspJobs.
+
+        任务执行的具体的参数信息，为空则不返回该字段。
+
+        :return: The task_detail of this GetTaskDetailListRspJobs.
+        :rtype: str
+        """
+        return self._task_detail
+
+    @task_detail.setter
+    def task_detail(self, task_detail):
+        """Sets the task_detail of this GetTaskDetailListRspJobs.
+
+        任务执行的具体的参数信息，为空则不返回该字段。
+
+        :param task_detail: The task_detail of this GetTaskDetailListRspJobs.
+        :type: str
+        """
+        self._task_detail = task_detail
+
+    @property
+    def instance(self):
+        """Gets the instance of this GetTaskDetailListRspJobs.
+
+
+        :return: The instance of this GetTaskDetailListRspJobs.
+        :rtype: GetTaskDetailListRspJobsInstance
+        """
+        return self._instance
+
+    @instance.setter
+    def instance(self, instance):
+        """Sets the instance of this GetTaskDetailListRspJobs.
+
+
+        :param instance: The instance of this GetTaskDetailListRspJobs.
+        :type: GetTaskDetailListRspJobsInstance
+        """
+        self._instance = instance
+
+    @property
+    def entities(self):
+        """Gets the entities of this GetTaskDetailListRspJobs.
+
+        根据不同的任务，显示不同的内容。
+
+        :return: The entities of this GetTaskDetailListRspJobs.
+        :rtype: object
+        """
+        return self._entities
+
+    @entities.setter
+    def entities(self, entities):
+        """Sets the entities of this GetTaskDetailListRspJobs.
+
+        根据不同的任务，显示不同的内容。
+
+        :param entities: The entities of this GetTaskDetailListRspJobs.
+        :type: object
+        """
+        self._entities = entities
+
+    @property
+    def fail_reason(self):
+        """Gets the fail_reason of this GetTaskDetailListRspJobs.
+
+        任务执行失败时的错误信息。
+
+        :return: The fail_reason of this GetTaskDetailListRspJobs.
+        :rtype: str
+        """
+        return self._fail_reason
+
+    @fail_reason.setter
+    def fail_reason(self, fail_reason):
+        """Sets the fail_reason of this GetTaskDetailListRspJobs.
+
+        任务执行失败时的错误信息。
+
+        :param fail_reason: The fail_reason of this GetTaskDetailListRspJobs.
+        :type: str
+        """
+        self._fail_reason = fail_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

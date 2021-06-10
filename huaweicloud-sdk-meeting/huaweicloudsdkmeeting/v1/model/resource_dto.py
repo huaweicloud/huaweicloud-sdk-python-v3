@@ -23,6 +23,7 @@ class ResourceDTO:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'type': 'str',
         'type_id': 'str',
         'count': 'int',
@@ -30,28 +31,54 @@ class ResourceDTO:
     }
 
     attribute_map = {
+        'id': 'id',
         'type': 'type',
         'type_id': 'typeId',
         'count': 'count',
         'expire_date': 'expireDate'
     }
 
-    def __init__(self, type=None, type_id=None, count=None, expire_date=None):
+    def __init__(self, id=None, type=None, type_id=None, count=None, expire_date=None):
         """ResourceDTO - a model defined in huaweicloud sdk"""
         
         
 
+        self._id = None
         self._type = None
         self._type_id = None
         self._count = None
         self._expire_date = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         self.type = type
         if type_id is not None:
             self.type_id = type_id
         self.count = count
         self.expire_date = expire_date
+
+    @property
+    def id(self):
+        """Gets the id of this ResourceDTO.
+
+        资源标识，不携带则后台自动生成
+
+        :return: The id of this ResourceDTO.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ResourceDTO.
+
+        资源标识，不携带则后台自动生成
+
+        :param id: The id of this ResourceDTO.
+        :type: str
+        """
+        self._id = id
 
     @property
     def type(self):

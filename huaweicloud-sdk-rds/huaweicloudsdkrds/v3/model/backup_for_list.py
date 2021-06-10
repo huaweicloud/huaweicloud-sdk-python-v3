@@ -32,7 +32,8 @@ class BackupForList:
         'status': 'str',
         'type': 'str',
         'size': 'int',
-        'datastore': 'Datastore'
+        'datastore': 'BackupDatastore',
+        'associated_with_ddm': 'bool'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class BackupForList:
         'status': 'status',
         'type': 'type',
         'size': 'size',
-        'datastore': 'datastore'
+        'datastore': 'datastore',
+        'associated_with_ddm': 'associated_with_ddm'
     }
 
-    def __init__(self, id=None, instance_id=None, name=None, databases=None, begin_time=None, end_time=None, status=None, type=None, size=None, datastore=None):
+    def __init__(self, id=None, instance_id=None, name=None, databases=None, begin_time=None, end_time=None, status=None, type=None, size=None, datastore=None, associated_with_ddm=None):
         """BackupForList - a model defined in huaweicloud sdk"""
         
         
@@ -63,6 +65,7 @@ class BackupForList:
         self._type = None
         self._size = None
         self._datastore = None
+        self._associated_with_ddm = None
         self.discriminator = None
 
         self.id = id
@@ -76,6 +79,8 @@ class BackupForList:
         self.type = type
         self.size = size
         self.datastore = datastore
+        if associated_with_ddm is not None:
+            self.associated_with_ddm = associated_with_ddm
 
     @property
     def id(self):
@@ -281,7 +286,7 @@ class BackupForList:
 
 
         :return: The datastore of this BackupForList.
-        :rtype: Datastore
+        :rtype: BackupDatastore
         """
         return self._datastore
 
@@ -291,9 +296,31 @@ class BackupForList:
 
 
         :param datastore: The datastore of this BackupForList.
-        :type: Datastore
+        :type: BackupDatastore
         """
         self._datastore = datastore
+
+    @property
+    def associated_with_ddm(self):
+        """Gets the associated_with_ddm of this BackupForList.
+
+        是否已被DDM实例关联。
+
+        :return: The associated_with_ddm of this BackupForList.
+        :rtype: bool
+        """
+        return self._associated_with_ddm
+
+    @associated_with_ddm.setter
+    def associated_with_ddm(self, associated_with_ddm):
+        """Sets the associated_with_ddm of this BackupForList.
+
+        是否已被DDM实例关联。
+
+        :param associated_with_ddm: The associated_with_ddm of this BackupForList.
+        :type: bool
+        """
+        self._associated_with_ddm = associated_with_ddm
 
     def to_dict(self):
         """Returns the model properties as a dict"""

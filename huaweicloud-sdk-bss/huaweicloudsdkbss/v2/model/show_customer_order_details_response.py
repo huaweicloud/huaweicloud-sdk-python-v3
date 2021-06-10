@@ -97,7 +97,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
     def order_line_items(self):
         """Gets the order_line_items of this ShowCustomerOrderDetailsResponse.
 
-        订单对应的订单项。 具体请参见表4。
+        订单对应的订单项。 具体请参见表5。
 
         :return: The order_line_items of this ShowCustomerOrderDetailsResponse.
         :rtype: list[OrderLineItemEntityV2]
@@ -108,7 +108,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
     def order_line_items(self, order_line_items):
         """Sets the order_line_items of this ShowCustomerOrderDetailsResponse.
 
-        订单对应的订单项。 具体请参见表4。
+        订单对应的订单项。 具体请参见表5。
 
         :param order_line_items: The order_line_items of this ShowCustomerOrderDetailsResponse.
         :type: list[OrderLineItemEntityV2]

@@ -42,7 +42,8 @@ class SlowlogDownloadRequest:
         self.discriminator = None
 
         self.request_id = request_id
-        self.file_name = file_name
+        if file_name is not None:
+            self.file_name = file_name
 
     @property
     def request_id(self):

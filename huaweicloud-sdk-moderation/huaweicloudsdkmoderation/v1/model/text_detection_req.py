@@ -49,7 +49,7 @@ class TextDetectionReq:
     def categories(self):
         """Gets the categories of this TextDetectionReq.
 
-        检测场景。  当前支持的场景有默认场景和用户自定义场景：  默认场景为：  * politics：涉政  * porn：涉黄  * ad：广告  * abuse：辱骂  * contraband：违禁品  * flood：灌水  - 用户自定义场景为：自定义黑名单词库。  > 说明： - 自定义词库的创建和使用请参见[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)。 - flood场景不支持使用自定义白名单词库。
+        检测场景。  当前支持的场景有默认场景和用户自定义场景：  默认场景为：  * politics：涉政  * porn：涉黄  * ad：广告  * abuse：辱骂  * contraband：违禁品  * flood：灌水  用户自定义场景为：自定义黑名单词库。  > 说明： - 自定义词库的创建和使用请参见[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)。 - flood场景不支持使用自定义白名单词库。
 
         :return: The categories of this TextDetectionReq.
         :rtype: list[str]
@@ -60,7 +60,7 @@ class TextDetectionReq:
     def categories(self, categories):
         """Sets the categories of this TextDetectionReq.
 
-        检测场景。  当前支持的场景有默认场景和用户自定义场景：  默认场景为：  * politics：涉政  * porn：涉黄  * ad：广告  * abuse：辱骂  * contraband：违禁品  * flood：灌水  - 用户自定义场景为：自定义黑名单词库。  > 说明： - 自定义词库的创建和使用请参见[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)。 - flood场景不支持使用自定义白名单词库。
+        检测场景。  当前支持的场景有默认场景和用户自定义场景：  默认场景为：  * politics：涉政  * porn：涉黄  * ad：广告  * abuse：辱骂  * contraband：违禁品  * flood：灌水  用户自定义场景为：自定义黑名单词库。  > 说明： - 自定义词库的创建和使用请参见[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)。 - flood场景不支持使用自定义白名单词库。
 
         :param categories: The categories of this TextDetectionReq.
         :type: list[str]

@@ -230,7 +230,7 @@ class OrderLineItemEntityV2:
     def period_num(self):
         """Gets the period_num of this OrderLineItemEntityV2.
 
-        周期数量。
+        周期数量。  说明： 当订单为退订资源的订单时，参数取值为null。
 
         :return: The period_num of this OrderLineItemEntityV2.
         :rtype: int
@@ -241,7 +241,7 @@ class OrderLineItemEntityV2:
     def period_num(self, period_num):
         """Sets the period_num of this OrderLineItemEntityV2.
 
-        周期数量。
+        周期数量。  说明： 当订单为退订资源的订单时，参数取值为null。
 
         :param period_num: The period_num of this OrderLineItemEntityV2.
         :type: int

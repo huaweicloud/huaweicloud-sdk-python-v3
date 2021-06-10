@@ -113,7 +113,7 @@ class ApplicationItem:
     def create_time(self):
         """Gets the create_time of this ApplicationItem.
 
-        创建application的时间时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+        创建application的时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
         :return: The create_time of this ApplicationItem.
         :rtype: str
@@ -124,7 +124,7 @@ class ApplicationItem:
     def create_time(self, create_time):
         """Sets the create_time of this ApplicationItem.
 
-        创建application的时间时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+        创建application的时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
 
         :param create_time: The create_time of this ApplicationItem.
         :type: str

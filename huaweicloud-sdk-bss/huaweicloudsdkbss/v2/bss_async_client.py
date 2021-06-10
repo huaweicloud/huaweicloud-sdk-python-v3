@@ -48,6 +48,353 @@ class BssAsyncClient(Client):
 
         return ClientBuilder(clazz, "GlobalCredentials")
 
+    def list_conversions_async(self, request):
+        """查询使用量单位进制
+
+        功能描述：伙伴在伙伴销售平台上查询使用量单位的进制转换信息，用于不同度量单位之间的转换。
+
+        :param ListConversionsRequest request
+        :return: ListConversionsResponse
+        """
+        return self.list_conversions_with_http_info(request)
+
+    def list_conversions_with_http_info(self, request):
+        """查询使用量单位进制
+
+        功能描述：伙伴在伙伴销售平台上查询使用量单位的进制转换信息，用于不同度量单位之间的转换。
+
+        :param ListConversionsRequest request
+        :return: ListConversionsResponse
+        """
+
+        all_params = ['x_language', 'measure_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'measure_type' in local_var_params:
+            query_params.append(('measure_type', local_var_params['measure_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bases/conversions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListConversionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_customer_bills_monthly_break_down_async(self, request):
+        """查询月度成本
+
+        功能描述：查询月度成本
+
+        :param ListCustomerBillsMonthlyBreakDownRequest request
+        :return: ListCustomerBillsMonthlyBreakDownResponse
+        """
+        return self.list_customer_bills_monthly_break_down_with_http_info(request)
+
+    def list_customer_bills_monthly_break_down_with_http_info(self, request):
+        """查询月度成本
+
+        功能描述：查询月度成本
+
+        :param ListCustomerBillsMonthlyBreakDownRequest request
+        :return: ListCustomerBillsMonthlyBreakDownResponse
+        """
+
+        all_params = ['shared_month', 'x_language', 'charging_mode', 'service_type_code', 'resource_type_code', 'region_code', 'bill_type', 'offset', 'limit', 'resource_id', 'resource_name', 'enterprise_project_id', 'method', 'sub_customer_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'shared_month' in local_var_params:
+            query_params.append(('shared_month', local_var_params['shared_month']))
+        if 'charging_mode' in local_var_params:
+            query_params.append(('charging_mode', local_var_params['charging_mode']))
+        if 'service_type_code' in local_var_params:
+            query_params.append(('service_type_code', local_var_params['service_type_code']))
+        if 'resource_type_code' in local_var_params:
+            query_params.append(('resource_type_code', local_var_params['resource_type_code']))
+        if 'region_code' in local_var_params:
+            query_params.append(('region_code', local_var_params['region_code']))
+        if 'bill_type' in local_var_params:
+            query_params.append(('bill_type', local_var_params['bill_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+        if 'resource_name' in local_var_params:
+            query_params.append(('resource_name', local_var_params['resource_name']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'method' in local_var_params:
+            query_params.append(('method', local_var_params['method']))
+        if 'sub_customer_id' in local_var_params:
+            query_params.append(('sub_customer_id', local_var_params['sub_customer_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/costs/cost-analysed-bills/monthly-breakdown',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListCustomerBillsMonthlyBreakDownResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_free_resource_usages_async(self, request):
+        """查询资源内使用量
+
+        功能描述：客户在自建平台查询客户自己的资源包列表
+
+        :param ListFreeResourceUsagesRequest request
+        :return: ListFreeResourceUsagesResponse
+        """
+        return self.list_free_resource_usages_with_http_info(request)
+
+    def list_free_resource_usages_with_http_info(self, request):
+        """查询资源内使用量
+
+        功能描述：客户在自建平台查询客户自己的资源包列表
+
+        :param ListFreeResourceUsagesRequest request
+        :return: ListFreeResourceUsagesResponse
+        """
+
+        all_params = ['req', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/payments/free-resources/usages/details/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListFreeResourceUsagesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_free_resources_async(self, request):
+        """查询资源包列表
+
+        功能描述：查询资源包列表
+
+        :param ListFreeResourcesRequest request
+        :return: ListFreeResourcesResponse
+        """
+        return self.list_free_resources_with_http_info(request)
+
+    def list_free_resources_with_http_info(self, request):
+        """查询资源包列表
+
+        功能描述：查询资源包列表
+
+        :param ListFreeResourcesRequest request
+        :return: ListFreeResourcesResponse
+        """
+
+        all_params = ['req', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/payments/free-resources/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListFreeResourcesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_measure_units_async(self, request):
+        """查询使用量单位列表
+
+        功能描述：伙伴在伙伴销售平台上查询资源使用量的度量单位及名称，度量单位类型等。
+
+        :param ListMeasureUnitsRequest request
+        :return: ListMeasureUnitsResponse
+        """
+        return self.list_measure_units_with_http_info(request)
+
+    def list_measure_units_with_http_info(self, request):
+        """查询使用量单位列表
+
+        功能描述：伙伴在伙伴销售平台上查询资源使用量的度量单位及名称，度量单位类型等。
+
+        :param ListMeasureUnitsRequest request
+        :return: ListMeasureUnitsResponse
+        """
+
+        all_params = ['x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/bases/measurements',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListMeasureUnitsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def batch_set_sub_customer_discount_async(self, request):
         """设置伙伴折扣
 
@@ -810,71 +1157,6 @@ class BssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_conversions_async(self, request):
-        """查询使用量单位进制
-
-        功能描述：伙伴在伙伴销售平台上查询使用量单位的进制转换信息，用于不同度量单位之间的转换。
-
-        :param ListConversionsRequest request
-        :return: ListConversionsResponse
-        """
-        return self.list_conversions_with_http_info(request)
-
-    def list_conversions_with_http_info(self, request):
-        """查询使用量单位进制
-
-        功能描述：伙伴在伙伴销售平台上查询使用量单位的进制转换信息，用于不同度量单位之间的转换。
-
-        :param ListConversionsRequest request
-        :return: ListConversionsResponse
-        """
-
-        all_params = ['x_language', 'measure_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'measure_type' in local_var_params:
-            query_params.append(('measure_type', local_var_params['measure_type']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/bases/conversions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListConversionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def list_counties_async(self, request):
         """查询区县信息
 
@@ -1108,95 +1390,6 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCustomerBillsFeeRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_customer_bills_monthly_break_down_async(self, request):
-        """查询月度成本
-
-        功能描述：查询月度成本
-
-        :param ListCustomerBillsMonthlyBreakDownRequest request
-        :return: ListCustomerBillsMonthlyBreakDownResponse
-        """
-        return self.list_customer_bills_monthly_break_down_with_http_info(request)
-
-    def list_customer_bills_monthly_break_down_with_http_info(self, request):
-        """查询月度成本
-
-        功能描述：查询月度成本
-
-        :param ListCustomerBillsMonthlyBreakDownRequest request
-        :return: ListCustomerBillsMonthlyBreakDownResponse
-        """
-
-        all_params = ['shared_month', 'x_language', 'charging_mode', 'service_type_code', 'resource_type_code', 'region_code', 'bill_type', 'offset', 'limit', 'resource_id', 'resource_name', 'enterprise_project_id', 'method', 'sub_customer_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'shared_month' in local_var_params:
-            query_params.append(('shared_month', local_var_params['shared_month']))
-        if 'charging_mode' in local_var_params:
-            query_params.append(('charging_mode', local_var_params['charging_mode']))
-        if 'service_type_code' in local_var_params:
-            query_params.append(('service_type_code', local_var_params['service_type_code']))
-        if 'resource_type_code' in local_var_params:
-            query_params.append(('resource_type_code', local_var_params['resource_type_code']))
-        if 'region_code' in local_var_params:
-            query_params.append(('region_code', local_var_params['region_code']))
-        if 'bill_type' in local_var_params:
-            query_params.append(('bill_type', local_var_params['bill_type']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'resource_id' in local_var_params:
-            query_params.append(('resource_id', local_var_params['resource_id']))
-        if 'resource_name' in local_var_params:
-            query_params.append(('resource_name', local_var_params['resource_name']))
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-        if 'method' in local_var_params:
-            query_params.append(('method', local_var_params['method']))
-        if 'sub_customer_id' in local_var_params:
-            query_params.append(('sub_customer_id', local_var_params['sub_customer_id']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/costs/cost-analysed-bills/monthly-breakdown',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListCustomerBillsMonthlyBreakDownResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1911,69 +2104,6 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListIssuedPartnerCouponsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_measure_units_async(self, request):
-        """查询使用量单位列表
-
-        功能描述：伙伴在伙伴销售平台上查询资源使用量的度量单位及名称，度量单位类型等。
-
-        :param ListMeasureUnitsRequest request
-        :return: ListMeasureUnitsResponse
-        """
-        return self.list_measure_units_with_http_info(request)
-
-    def list_measure_units_with_http_info(self, request):
-        """查询使用量单位列表
-
-        功能描述：伙伴在伙伴销售平台上查询资源使用量的度量单位及名称，度量单位类型等。
-
-        :param ListMeasureUnitsRequest request
-        :return: ListMeasureUnitsResponse
-        """
-
-        all_params = ['x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/bases/measurements',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListMeasureUnitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4191,6 +4321,69 @@ class BssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_period_to_on_demand_async(self, request):
+        """设置或者取消包年/包月资源到期转按需
+
+        功能描述：客户可以设置包年/包月资源到期后转为按需资源计费。包年/包月计费模式到期后，按需的计费模式即生效
+
+        :param UpdatePeriodToOnDemandRequest request
+        :return: UpdatePeriodToOnDemandResponse
+        """
+        return self.update_period_to_on_demand_with_http_info(request)
+
+    def update_period_to_on_demand_with_http_info(self, request):
+        """设置或者取消包年/包月资源到期转按需
+
+        功能描述：客户可以设置包年/包月资源到期后转为按需资源计费。包年/包月计费模式到期后，按需的计费模式即生效
+
+        :param UpdatePeriodToOnDemandRequest request
+        :return: UpdatePeriodToOnDemandResponse
+        """
+
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/orders/subscriptions/resources/to-on-demand',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdatePeriodToOnDemandResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_postal_async(self, request):
         """修改邮寄地址
 
@@ -5099,69 +5292,6 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowRefundOrderDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def update_period_to_on_demand_async(self, request):
-        """设置或者取消包年/包月资源到期转按需
-
-        功能描述：客户可以设置包年/包月资源到期后转为按需资源计费。包年/包月计费模式到期后，按需的计费模式即生效
-
-        :param UpdatePeriodToOnDemandRequest request
-        :return: UpdatePeriodToOnDemandResponse
-        """
-        return self.update_period_to_on_demand_with_http_info(request)
-
-    def update_period_to_on_demand_with_http_info(self, request):
-        """设置或者取消包年/包月资源到期转按需
-
-        功能描述：客户可以设置包年/包月资源到期后转为按需资源计费。包年/包月计费模式到期后，按需的计费模式即生效
-
-        :param UpdatePeriodToOnDemandRequest request
-        :return: UpdatePeriodToOnDemandResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/orders/subscriptions/resources/to-on-demand',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='UpdatePeriodToOnDemandResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

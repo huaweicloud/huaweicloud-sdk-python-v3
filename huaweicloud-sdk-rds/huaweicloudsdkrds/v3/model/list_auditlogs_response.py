@@ -23,7 +23,7 @@ class ListAuditlogsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'auditlogs': 'Auditlog',
+        'auditlogs': 'list[Auditlog]',
         'total_record': 'int'
     }
 
@@ -52,7 +52,7 @@ class ListAuditlogsResponse(SdkResponse):
 
 
         :return: The auditlogs of this ListAuditlogsResponse.
-        :rtype: Auditlog
+        :rtype: list[Auditlog]
         """
         return self._auditlogs
 
@@ -62,7 +62,7 @@ class ListAuditlogsResponse(SdkResponse):
 
 
         :param auditlogs: The auditlogs of this ListAuditlogsResponse.
-        :type: Auditlog
+        :type: list[Auditlog]
         """
         self._auditlogs = auditlogs
 

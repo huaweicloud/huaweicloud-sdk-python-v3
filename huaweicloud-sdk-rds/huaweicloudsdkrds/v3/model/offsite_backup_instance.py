@@ -23,70 +23,231 @@ class OffsiteBackupInstance:
     sensitive_list = []
 
     openapi_types = {
-        'offset': 'str',
-        'limit': 'str'
+        'id': 'str',
+        'name': 'str',
+        'source_region': 'str',
+        'source_project_id': 'str',
+        'datastore': 'ParaGroupDatastore',
+        'destination_region': 'str',
+        'destination_project_id': 'str',
+        'keep_days': 'int'
     }
 
     attribute_map = {
-        'offset': 'offset',
-        'limit': 'limit'
+        'id': 'id',
+        'name': 'name',
+        'source_region': 'source_region',
+        'source_project_id': 'source_project_id',
+        'datastore': 'datastore',
+        'destination_region': 'destination_region',
+        'destination_project_id': 'destination_project_id',
+        'keep_days': 'keep_days'
     }
 
-    def __init__(self, offset=None, limit=None):
+    def __init__(self, id=None, name=None, source_region=None, source_project_id=None, datastore=None, destination_region=None, destination_project_id=None, keep_days=None):
         """OffsiteBackupInstance - a model defined in huaweicloud sdk"""
         
         
 
-        self._offset = None
-        self._limit = None
+        self._id = None
+        self._name = None
+        self._source_region = None
+        self._source_project_id = None
+        self._datastore = None
+        self._destination_region = None
+        self._destination_project_id = None
+        self._keep_days = None
         self.discriminator = None
 
-        self.offset = offset
-        self.limit = limit
+        self.id = id
+        if name is not None:
+            self.name = name
+        if source_region is not None:
+            self.source_region = source_region
+        if source_project_id is not None:
+            self.source_project_id = source_project_id
+        if datastore is not None:
+            self.datastore = datastore
+        if destination_region is not None:
+            self.destination_region = destination_region
+        if destination_project_id is not None:
+            self.destination_project_id = destination_project_id
+        if keep_days is not None:
+            self.keep_days = keep_days
 
     @property
-    def offset(self):
-        """Gets the offset of this OffsiteBackupInstance.
+    def id(self):
+        """Gets the id of this OffsiteBackupInstance.
 
-        偏移量。
+        实例ID。
 
-        :return: The offset of this OffsiteBackupInstance.
+        :return: The id of this OffsiteBackupInstance.
         :rtype: str
         """
-        return self._offset
+        return self._id
 
-    @offset.setter
-    def offset(self, offset):
-        """Sets the offset of this OffsiteBackupInstance.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this OffsiteBackupInstance.
 
-        偏移量。
+        实例ID。
 
-        :param offset: The offset of this OffsiteBackupInstance.
+        :param id: The id of this OffsiteBackupInstance.
         :type: str
         """
-        self._offset = offset
+        self._id = id
 
     @property
-    def limit(self):
-        """Gets the limit of this OffsiteBackupInstance.
+    def name(self):
+        """Gets the name of this OffsiteBackupInstance.
 
-        查询记录数。
+        创建的实例名称。
 
-        :return: The limit of this OffsiteBackupInstance.
+        :return: The name of this OffsiteBackupInstance.
         :rtype: str
         """
-        return self._limit
+        return self._name
 
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this OffsiteBackupInstance.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this OffsiteBackupInstance.
 
-        查询记录数。
+        创建的实例名称。
 
-        :param limit: The limit of this OffsiteBackupInstance.
+        :param name: The name of this OffsiteBackupInstance.
         :type: str
         """
-        self._limit = limit
+        self._name = name
+
+    @property
+    def source_region(self):
+        """Gets the source_region of this OffsiteBackupInstance.
+
+        源区域。
+
+        :return: The source_region of this OffsiteBackupInstance.
+        :rtype: str
+        """
+        return self._source_region
+
+    @source_region.setter
+    def source_region(self, source_region):
+        """Sets the source_region of this OffsiteBackupInstance.
+
+        源区域。
+
+        :param source_region: The source_region of this OffsiteBackupInstance.
+        :type: str
+        """
+        self._source_region = source_region
+
+    @property
+    def source_project_id(self):
+        """Gets the source_project_id of this OffsiteBackupInstance.
+
+        租户在源区域下的project ID。
+
+        :return: The source_project_id of this OffsiteBackupInstance.
+        :rtype: str
+        """
+        return self._source_project_id
+
+    @source_project_id.setter
+    def source_project_id(self, source_project_id):
+        """Sets the source_project_id of this OffsiteBackupInstance.
+
+        租户在源区域下的project ID。
+
+        :param source_project_id: The source_project_id of this OffsiteBackupInstance.
+        :type: str
+        """
+        self._source_project_id = source_project_id
+
+    @property
+    def datastore(self):
+        """Gets the datastore of this OffsiteBackupInstance.
+
+
+        :return: The datastore of this OffsiteBackupInstance.
+        :rtype: ParaGroupDatastore
+        """
+        return self._datastore
+
+    @datastore.setter
+    def datastore(self, datastore):
+        """Sets the datastore of this OffsiteBackupInstance.
+
+
+        :param datastore: The datastore of this OffsiteBackupInstance.
+        :type: ParaGroupDatastore
+        """
+        self._datastore = datastore
+
+    @property
+    def destination_region(self):
+        """Gets the destination_region of this OffsiteBackupInstance.
+
+        跨区域备份所在区域。
+
+        :return: The destination_region of this OffsiteBackupInstance.
+        :rtype: str
+        """
+        return self._destination_region
+
+    @destination_region.setter
+    def destination_region(self, destination_region):
+        """Sets the destination_region of this OffsiteBackupInstance.
+
+        跨区域备份所在区域。
+
+        :param destination_region: The destination_region of this OffsiteBackupInstance.
+        :type: str
+        """
+        self._destination_region = destination_region
+
+    @property
+    def destination_project_id(self):
+        """Gets the destination_project_id of this OffsiteBackupInstance.
+
+        租户在目标区域下的project ID。
+
+        :return: The destination_project_id of this OffsiteBackupInstance.
+        :rtype: str
+        """
+        return self._destination_project_id
+
+    @destination_project_id.setter
+    def destination_project_id(self, destination_project_id):
+        """Sets the destination_project_id of this OffsiteBackupInstance.
+
+        租户在目标区域下的project ID。
+
+        :param destination_project_id: The destination_project_id of this OffsiteBackupInstance.
+        :type: str
+        """
+        self._destination_project_id = destination_project_id
+
+    @property
+    def keep_days(self):
+        """Gets the keep_days of this OffsiteBackupInstance.
+
+        跨区域备份保留天数。
+
+        :return: The keep_days of this OffsiteBackupInstance.
+        :rtype: int
+        """
+        return self._keep_days
+
+    @keep_days.setter
+    def keep_days(self, keep_days):
+        """Sets the keep_days of this OffsiteBackupInstance.
+
+        跨区域备份保留天数。
+
+        :param keep_days: The keep_days of this OffsiteBackupInstance.
+        :type: int
+        """
+        self._keep_days = keep_days
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -80,7 +80,7 @@ class SetSubCustomerDiscountV2:
     def discount(self):
         """Gets the discount of this SetSubCustomerDiscountV2.
 
-        折扣率，最高精确到2位小数。 折扣范围：0.8~1。 如果折扣率是85%，则折扣率写成0.85。 说明： 折扣为1表示不打折，相当于删除伙伴折扣。
+        折扣率，最高精确到2位小数。 折扣范围：0.8~1。 如果折扣率是85%，则折扣率写成0.85。  说明： 折扣为1表示不打折，相当于删除伙伴折扣。
 
         :return: The discount of this SetSubCustomerDiscountV2.
         :rtype: float
@@ -91,7 +91,7 @@ class SetSubCustomerDiscountV2:
     def discount(self, discount):
         """Sets the discount of this SetSubCustomerDiscountV2.
 
-        折扣率，最高精确到2位小数。 折扣范围：0.8~1。 如果折扣率是85%，则折扣率写成0.85。 说明： 折扣为1表示不打折，相当于删除伙伴折扣。
+        折扣率，最高精确到2位小数。 折扣范围：0.8~1。 如果折扣率是85%，则折扣率写成0.85。  说明： 折扣为1表示不打折，相当于删除伙伴折扣。
 
         :param discount: The discount of this SetSubCustomerDiscountV2.
         :type: float

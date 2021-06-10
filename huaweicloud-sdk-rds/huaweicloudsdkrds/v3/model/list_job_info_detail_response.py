@@ -23,43 +23,23 @@ class ListJobInfoDetailResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'jobs': 'GetTaskDetailListRspJobs',
-        'task_detail': 'str',
-        'instance': 'GetTaskDetailListRspInstance',
-        'entities': 'object',
-        'fail_reason': 'str'
+        'jobs': 'GetTaskDetailListRspJobs'
     }
 
     attribute_map = {
-        'jobs': 'jobs',
-        'task_detail': 'taskDetail',
-        'instance': 'instance',
-        'entities': 'entities',
-        'fail_reason': 'fail_reason'
+        'jobs': 'jobs'
     }
 
-    def __init__(self, jobs=None, task_detail=None, instance=None, entities=None, fail_reason=None):
+    def __init__(self, jobs=None):
         """ListJobInfoDetailResponse - a model defined in huaweicloud sdk"""
         
         super(ListJobInfoDetailResponse, self).__init__()
 
         self._jobs = None
-        self._task_detail = None
-        self._instance = None
-        self._entities = None
-        self._fail_reason = None
         self.discriminator = None
 
         if jobs is not None:
             self.jobs = jobs
-        if task_detail is not None:
-            self.task_detail = task_detail
-        if instance is not None:
-            self.instance = instance
-        if entities is not None:
-            self.entities = entities
-        if fail_reason is not None:
-            self.fail_reason = fail_reason
 
     @property
     def jobs(self):
@@ -80,92 +60,6 @@ class ListJobInfoDetailResponse(SdkResponse):
         :type: GetTaskDetailListRspJobs
         """
         self._jobs = jobs
-
-    @property
-    def task_detail(self):
-        """Gets the task_detail of this ListJobInfoDetailResponse.
-
-        任务执行的具体的参数信息，为空则不返回该字段。
-
-        :return: The task_detail of this ListJobInfoDetailResponse.
-        :rtype: str
-        """
-        return self._task_detail
-
-    @task_detail.setter
-    def task_detail(self, task_detail):
-        """Sets the task_detail of this ListJobInfoDetailResponse.
-
-        任务执行的具体的参数信息，为空则不返回该字段。
-
-        :param task_detail: The task_detail of this ListJobInfoDetailResponse.
-        :type: str
-        """
-        self._task_detail = task_detail
-
-    @property
-    def instance(self):
-        """Gets the instance of this ListJobInfoDetailResponse.
-
-
-        :return: The instance of this ListJobInfoDetailResponse.
-        :rtype: GetTaskDetailListRspInstance
-        """
-        return self._instance
-
-    @instance.setter
-    def instance(self, instance):
-        """Sets the instance of this ListJobInfoDetailResponse.
-
-
-        :param instance: The instance of this ListJobInfoDetailResponse.
-        :type: GetTaskDetailListRspInstance
-        """
-        self._instance = instance
-
-    @property
-    def entities(self):
-        """Gets the entities of this ListJobInfoDetailResponse.
-
-        根据不同的任务，显示不同的内容。
-
-        :return: The entities of this ListJobInfoDetailResponse.
-        :rtype: object
-        """
-        return self._entities
-
-    @entities.setter
-    def entities(self, entities):
-        """Sets the entities of this ListJobInfoDetailResponse.
-
-        根据不同的任务，显示不同的内容。
-
-        :param entities: The entities of this ListJobInfoDetailResponse.
-        :type: object
-        """
-        self._entities = entities
-
-    @property
-    def fail_reason(self):
-        """Gets the fail_reason of this ListJobInfoDetailResponse.
-
-        任务执行失败时的错误信息。
-
-        :return: The fail_reason of this ListJobInfoDetailResponse.
-        :rtype: str
-        """
-        return self._fail_reason
-
-    @fail_reason.setter
-    def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ListJobInfoDetailResponse.
-
-        任务执行失败时的错误信息。
-
-        :param fail_reason: The fail_reason of this ListJobInfoDetailResponse.
-        :type: str
-        """
-        self._fail_reason = fail_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

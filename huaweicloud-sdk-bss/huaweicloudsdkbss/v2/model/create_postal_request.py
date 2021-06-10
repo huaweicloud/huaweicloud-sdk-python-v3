@@ -50,7 +50,7 @@ class CreatePostalRequest:
     def x_language(self):
         """Gets the x_language of this CreatePostalRequest.
 
-        语言。 中文：zh_CN 缺省为zh_CN。
+        |参数名称：语言| |参数的约束及描述：中文：zh_CN 英文：en_US缺省为zh_CN|
 
         :return: The x_language of this CreatePostalRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class CreatePostalRequest:
     def x_language(self, x_language):
         """Sets the x_language of this CreatePostalRequest.
 
-        语言。 中文：zh_CN 缺省为zh_CN。
+        |参数名称：语言| |参数的约束及描述：中文：zh_CN 英文：en_US缺省为zh_CN|
 
         :param x_language: The x_language of this CreatePostalRequest.
         :type: str

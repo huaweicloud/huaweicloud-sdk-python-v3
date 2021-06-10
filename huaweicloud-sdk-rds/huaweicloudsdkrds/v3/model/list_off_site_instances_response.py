@@ -23,50 +23,50 @@ class ListOffSiteInstancesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'offsite_backup_instance': 'list[OffsiteBackupInstance]',
+        'offsite_backup_instances': 'list[OffsiteBackupInstance]',
         'total_count': 'int'
     }
 
     attribute_map = {
-        'offsite_backup_instance': 'offsite_backup_instance',
+        'offsite_backup_instances': 'offsite_backup_instances',
         'total_count': 'total_count'
     }
 
-    def __init__(self, offsite_backup_instance=None, total_count=None):
+    def __init__(self, offsite_backup_instances=None, total_count=None):
         """ListOffSiteInstancesResponse - a model defined in huaweicloud sdk"""
         
         super(ListOffSiteInstancesResponse, self).__init__()
 
-        self._offsite_backup_instance = None
+        self._offsite_backup_instances = None
         self._total_count = None
         self.discriminator = None
 
-        if offsite_backup_instance is not None:
-            self.offsite_backup_instance = offsite_backup_instance
+        if offsite_backup_instances is not None:
+            self.offsite_backup_instances = offsite_backup_instances
         if total_count is not None:
             self.total_count = total_count
 
     @property
-    def offsite_backup_instance(self):
-        """Gets the offsite_backup_instance of this ListOffSiteInstancesResponse.
+    def offsite_backup_instances(self):
+        """Gets the offsite_backup_instances of this ListOffSiteInstancesResponse.
 
         跨区域备份实例信息。
 
-        :return: The offsite_backup_instance of this ListOffSiteInstancesResponse.
+        :return: The offsite_backup_instances of this ListOffSiteInstancesResponse.
         :rtype: list[OffsiteBackupInstance]
         """
-        return self._offsite_backup_instance
+        return self._offsite_backup_instances
 
-    @offsite_backup_instance.setter
-    def offsite_backup_instance(self, offsite_backup_instance):
-        """Sets the offsite_backup_instance of this ListOffSiteInstancesResponse.
+    @offsite_backup_instances.setter
+    def offsite_backup_instances(self, offsite_backup_instances):
+        """Sets the offsite_backup_instances of this ListOffSiteInstancesResponse.
 
         跨区域备份实例信息。
 
-        :param offsite_backup_instance: The offsite_backup_instance of this ListOffSiteInstancesResponse.
+        :param offsite_backup_instances: The offsite_backup_instances of this ListOffSiteInstancesResponse.
         :type: list[OffsiteBackupInstance]
         """
-        self._offsite_backup_instance = offsite_backup_instance
+        self._offsite_backup_instances = offsite_backup_instances
 
     @property
     def total_count(self):

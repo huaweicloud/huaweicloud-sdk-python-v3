@@ -31,7 +31,6 @@ class CreateCustomerV2Req:
         'xaccount_type': 'str',
         'password': 'str',
         'is_close_market_ms': 'str',
-        'cooperation_type': 'str',
         'indirect_partner_id': 'str',
         'include_association_result': 'bool'
     }
@@ -45,12 +44,11 @@ class CreateCustomerV2Req:
         'xaccount_type': 'xaccount_type',
         'password': 'password',
         'is_close_market_ms': 'is_close_market_ms',
-        'cooperation_type': 'cooperation_type',
         'indirect_partner_id': 'indirect_partner_id',
         'include_association_result': 'include_association_result'
     }
 
-    def __init__(self, domain_name=None, email=None, verification_code=None, domain_area=None, xaccount_id=None, xaccount_type=None, password=None, is_close_market_ms=None, cooperation_type=None, indirect_partner_id=None, include_association_result=None):
+    def __init__(self, domain_name=None, email=None, verification_code=None, domain_area=None, xaccount_id=None, xaccount_type=None, password=None, is_close_market_ms=None, indirect_partner_id=None, include_association_result=None):
         """CreateCustomerV2Req - a model defined in huaweicloud sdk"""
         
         
@@ -63,7 +61,6 @@ class CreateCustomerV2Req:
         self._xaccount_type = None
         self._password = None
         self._is_close_market_ms = None
-        self._cooperation_type = None
         self._indirect_partner_id = None
         self._include_association_result = None
         self.discriminator = None
@@ -82,8 +79,6 @@ class CreateCustomerV2Req:
             self.password = password
         if is_close_market_ms is not None:
             self.is_close_market_ms = is_close_market_ms
-        if cooperation_type is not None:
-            self.cooperation_type = cooperation_type
         if indirect_partner_id is not None:
             self.indirect_partner_id = indirect_partner_id
         if include_association_result is not None:
@@ -264,28 +259,6 @@ class CreateCustomerV2Req:
         :type: str
         """
         self._is_close_market_ms = is_close_market_ms
-
-    @property
-    def cooperation_type(self):
-        """Gets the cooperation_type of this CreateCustomerV2Req.
-
-        |合作类型| |参数的约束及描述：该参数选填。1：推荐。仅仅支持1|
-
-        :return: The cooperation_type of this CreateCustomerV2Req.
-        :rtype: str
-        """
-        return self._cooperation_type
-
-    @cooperation_type.setter
-    def cooperation_type(self, cooperation_type):
-        """Sets the cooperation_type of this CreateCustomerV2Req.
-
-        |合作类型| |参数的约束及描述：该参数选填。1：推荐。仅仅支持1|
-
-        :param cooperation_type: The cooperation_type of this CreateCustomerV2Req.
-        :type: str
-        """
-        self._cooperation_type = cooperation_type
 
     @property
     def indirect_partner_id(self):

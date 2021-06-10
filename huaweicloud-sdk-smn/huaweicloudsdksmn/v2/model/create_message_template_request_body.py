@@ -74,7 +74,7 @@ class CreateMessageTemplateRequestBody:
     def protocol(self):
         """Gets the protocol of this CreateMessageTemplateRequestBody.
 
-        模板支持的协议类型。  目前支持的协议包括：  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “functiongraph”：FunctionGraph（工作流）传输协议。  “dms”：DMS传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
+        模板支持的协议类型。  目前支持的协议包括：  “default”：默认协议。  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “dms”：DMS传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
 
         :return: The protocol of this CreateMessageTemplateRequestBody.
         :rtype: str
@@ -85,7 +85,7 @@ class CreateMessageTemplateRequestBody:
     def protocol(self, protocol):
         """Sets the protocol of this CreateMessageTemplateRequestBody.
 
-        模板支持的协议类型。  目前支持的协议包括：  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “functiongraph”：FunctionGraph（工作流）传输协议。  “dms”：DMS传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
+        模板支持的协议类型。  目前支持的协议包括：  “default”：默认协议。  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “dms”：DMS传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
 
         :param protocol: The protocol of this CreateMessageTemplateRequestBody.
         :type: str

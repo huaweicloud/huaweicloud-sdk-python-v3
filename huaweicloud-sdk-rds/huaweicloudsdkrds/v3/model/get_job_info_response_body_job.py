@@ -29,7 +29,7 @@ class GetJobInfoResponseBodyJob:
         'created': 'str',
         'ended': 'str',
         'process': 'str',
-        'instance': 'GetTaskDetailListRspInstance',
+        'instance': 'GetTaskDetailListRspJobsInstance',
         'entities': 'object',
         'fail_reason': 'str'
     }
@@ -214,7 +214,7 @@ class GetJobInfoResponseBodyJob:
 
 
         :return: The instance of this GetJobInfoResponseBodyJob.
-        :rtype: GetTaskDetailListRspInstance
+        :rtype: GetTaskDetailListRspJobsInstance
         """
         return self._instance
 
@@ -224,7 +224,7 @@ class GetJobInfoResponseBodyJob:
 
 
         :param instance: The instance of this GetJobInfoResponseBodyJob.
-        :type: GetTaskDetailListRspInstance
+        :type: GetTaskDetailListRspJobsInstance
         """
         self._instance = instance
 

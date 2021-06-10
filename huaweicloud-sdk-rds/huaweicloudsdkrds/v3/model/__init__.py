@@ -15,6 +15,7 @@ from huaweicloudsdkrds.v3.model.attach_eip_request import AttachEipRequest
 from huaweicloudsdkrds.v3.model.attach_eip_response import AttachEipResponse
 from huaweicloudsdkrds.v3.model.auditlog import Auditlog
 from huaweicloudsdkrds.v3.model.backup_database import BackupDatabase
+from huaweicloudsdkrds.v3.model.backup_datastore import BackupDatastore
 from huaweicloudsdkrds.v3.model.backup_for_list import BackupForList
 from huaweicloudsdkrds.v3.model.backup_info import BackupInfo
 from huaweicloudsdkrds.v3.model.backup_policy import BackupPolicy
@@ -27,6 +28,7 @@ from huaweicloudsdkrds.v3.model.batch_tag_add_action_response import BatchTagAdd
 from huaweicloudsdkrds.v3.model.batch_tag_del_action_request import BatchTagDelActionRequest
 from huaweicloudsdkrds.v3.model.batch_tag_del_action_response import BatchTagDelActionResponse
 from huaweicloudsdkrds.v3.model.bind_eip_request import BindEipRequest
+from huaweicloudsdkrds.v3.model.binlog_clear_policy_request_body import BinlogClearPolicyRequestBody
 from huaweicloudsdkrds.v3.model.change_failover_mode_request import ChangeFailoverModeRequest
 from huaweicloudsdkrds.v3.model.change_failover_mode_response import ChangeFailoverModeResponse
 from huaweicloudsdkrds.v3.model.change_failover_strategy_request import ChangeFailoverStrategyRequest
@@ -88,6 +90,7 @@ from huaweicloudsdkrds.v3.model.delete_sqlserver_db_user_request import DeleteSq
 from huaweicloudsdkrds.v3.model.delete_sqlserver_db_user_response import DeleteSqlserverDbUserResponse
 from huaweicloudsdkrds.v3.model.download_slowlog_request import DownloadSlowlogRequest
 from huaweicloudsdkrds.v3.model.download_slowlog_response import DownloadSlowlogResponse
+from huaweicloudsdkrds.v3.model.drop_database_v3_req import DropDatabaseV3Req
 from huaweicloudsdkrds.v3.model.dss_pool_info import DssPoolInfo
 from huaweicloudsdkrds.v3.model.enable_configuration_request import EnableConfigurationRequest
 from huaweicloudsdkrds.v3.model.enable_configuration_response import EnableConfigurationResponse
@@ -104,8 +107,8 @@ from huaweicloudsdkrds.v3.model.get_backup_download_link_files import GetBackupD
 from huaweicloudsdkrds.v3.model.get_job_info_response_body_job import GetJobInfoResponseBodyJob
 from huaweicloudsdkrds.v3.model.get_off_site_backup_policy import GetOffSiteBackupPolicy
 from huaweicloudsdkrds.v3.model.get_restore_time_response_restore_time import GetRestoreTimeResponseRestoreTime
-from huaweicloudsdkrds.v3.model.get_task_detail_list_rsp_instance import GetTaskDetailListRspInstance
 from huaweicloudsdkrds.v3.model.get_task_detail_list_rsp_jobs import GetTaskDetailListRspJobs
+from huaweicloudsdkrds.v3.model.get_task_detail_list_rsp_jobs_instance import GetTaskDetailListRspJobsInstance
 from huaweicloudsdkrds.v3.model.grant_request import GrantRequest
 from huaweicloudsdkrds.v3.model.ha import Ha
 from huaweicloudsdkrds.v3.model.ha_response import HaResponse
@@ -178,6 +181,7 @@ from huaweicloudsdkrds.v3.model.off_site_backup_for_list import OffSiteBackupFor
 from huaweicloudsdkrds.v3.model.off_site_backup_policy import OffSiteBackupPolicy
 from huaweicloudsdkrds.v3.model.offsite_backup_instance import OffsiteBackupInstance
 from huaweicloudsdkrds.v3.model.ops_window_request import OpsWindowRequest
+from huaweicloudsdkrds.v3.model.para_group_datastore import ParaGroupDatastore
 from huaweicloudsdkrds.v3.model.postgresql_create_schema_req import PostgresqlCreateSchemaReq
 from huaweicloudsdkrds.v3.model.postgresql_database_for_creation import PostgresqlDatabaseForCreation
 from huaweicloudsdkrds.v3.model.postgresql_database_for_list_schema import PostgresqlDatabaseForListSchema
@@ -221,6 +225,8 @@ from huaweicloudsdkrds.v3.model.set_auditlog_policy_response import SetAuditlogP
 from huaweicloudsdkrds.v3.model.set_backup_policy_request import SetBackupPolicyRequest
 from huaweicloudsdkrds.v3.model.set_backup_policy_request_body import SetBackupPolicyRequestBody
 from huaweicloudsdkrds.v3.model.set_backup_policy_response import SetBackupPolicyResponse
+from huaweicloudsdkrds.v3.model.set_binlog_clear_policy_request import SetBinlogClearPolicyRequest
+from huaweicloudsdkrds.v3.model.set_binlog_clear_policy_response import SetBinlogClearPolicyResponse
 from huaweicloudsdkrds.v3.model.set_db_user_pwd_request import SetDbUserPwdRequest
 from huaweicloudsdkrds.v3.model.set_db_user_pwd_response import SetDbUserPwdResponse
 from huaweicloudsdkrds.v3.model.set_off_site_backup_policy_request import SetOffSiteBackupPolicyRequest
@@ -238,6 +244,8 @@ from huaweicloudsdkrds.v3.model.show_backup_download_link_request import ShowBac
 from huaweicloudsdkrds.v3.model.show_backup_download_link_response import ShowBackupDownloadLinkResponse
 from huaweicloudsdkrds.v3.model.show_backup_policy_request import ShowBackupPolicyRequest
 from huaweicloudsdkrds.v3.model.show_backup_policy_response import ShowBackupPolicyResponse
+from huaweicloudsdkrds.v3.model.show_binlog_clear_policy_request import ShowBinlogClearPolicyRequest
+from huaweicloudsdkrds.v3.model.show_binlog_clear_policy_response import ShowBinlogClearPolicyResponse
 from huaweicloudsdkrds.v3.model.show_configuration_request import ShowConfigurationRequest
 from huaweicloudsdkrds.v3.model.show_configuration_response import ShowConfigurationResponse
 from huaweicloudsdkrds.v3.model.show_instance_configuration_request import ShowInstanceConfigurationRequest

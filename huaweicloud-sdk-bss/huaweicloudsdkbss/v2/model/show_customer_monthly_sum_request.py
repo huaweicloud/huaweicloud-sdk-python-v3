@@ -118,7 +118,7 @@ class ShowCustomerMonthlySumRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowCustomerMonthlySumRequest.
 
-        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :return: The enterprise_project_id of this ShowCustomerMonthlySumRequest.
         :rtype: str
@@ -129,7 +129,7 @@ class ShowCustomerMonthlySumRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowCustomerMonthlySumRequest.
 
-        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowCustomerMonthlySumRequest.
         :type: str
@@ -140,7 +140,7 @@ class ShowCustomerMonthlySumRequest:
     def offset(self):
         """Gets the offset of this ShowCustomerMonthlySumRequest.
 
-        偏移量，从0开始。默认值为0。
+        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :return: The offset of this ShowCustomerMonthlySumRequest.
         :rtype: int
@@ -151,7 +151,7 @@ class ShowCustomerMonthlySumRequest:
     def offset(self, offset):
         """Sets the offset of this ShowCustomerMonthlySumRequest.
 
-        偏移量，从0开始。默认值为0。
+        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ShowCustomerMonthlySumRequest.
         :type: int
@@ -184,7 +184,7 @@ class ShowCustomerMonthlySumRequest:
     def method(self):
         """Gets the method of this ShowCustomerMonthlySumRequest.
 
-        查询方式。 oneself：自身sub_customer：企业子客户all：自己和企业子客户 默认为all，如果没有企业子客户，all的时候也是查询自己的。
+        查询方式。oneself：自身sub_customer：企业子客户all：自己和企业子客户默认为all，如果没有企业子客户，all的时候也是查询自己的。
 
         :return: The method of this ShowCustomerMonthlySumRequest.
         :rtype: str
@@ -195,7 +195,7 @@ class ShowCustomerMonthlySumRequest:
     def method(self, method):
         """Sets the method of this ShowCustomerMonthlySumRequest.
 
-        查询方式。 oneself：自身sub_customer：企业子客户all：自己和企业子客户 默认为all，如果没有企业子客户，all的时候也是查询自己的。
+        查询方式。oneself：自身sub_customer：企业子客户all：自己和企业子客户默认为all，如果没有企业子客户，all的时候也是查询自己的。
 
         :param method: The method of this ShowCustomerMonthlySumRequest.
         :type: str

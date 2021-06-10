@@ -70,7 +70,7 @@ class ReclaimIndirectPartnerAccountReq:
     def amount(self):
         """Gets the amount of this ReclaimIndirectPartnerAccountReq.
 
-        回收金额。 华为云伙伴能力中心回收的精英服务商的账户金额。 说明： 回收金额不能大于精英服务商的账户余额。 单位：元。取值大于0且精确到小数点后2位。
+        回收金额。 华为云伙伴能力中心回收的精英服务商的账户金额。  说明： 回收金额不能大于精英服务商的账户余额。 单位：元。取值大于0且精确到小数点后2位。
 
         :return: The amount of this ReclaimIndirectPartnerAccountReq.
         :rtype: float
@@ -81,7 +81,7 @@ class ReclaimIndirectPartnerAccountReq:
     def amount(self, amount):
         """Sets the amount of this ReclaimIndirectPartnerAccountReq.
 
-        回收金额。 华为云伙伴能力中心回收的精英服务商的账户金额。 说明： 回收金额不能大于精英服务商的账户余额。 单位：元。取值大于0且精确到小数点后2位。
+        回收金额。 华为云伙伴能力中心回收的精英服务商的账户金额。  说明： 回收金额不能大于精英服务商的账户余额。 单位：元。取值大于0且精确到小数点后2位。
 
         :param amount: The amount of this ReclaimIndirectPartnerAccountReq.
         :type: float

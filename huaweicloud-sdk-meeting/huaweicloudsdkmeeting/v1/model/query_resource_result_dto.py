@@ -27,8 +27,10 @@ class QueryResourceResultDTO:
         'type': 'str',
         'type_id': 'str',
         'type_desc': 'str',
+        'vmr_mode': 'int',
         'count': 'int',
         'expire_date': 'int',
+        'order_id': 'str',
         'status': 'int',
         'editable': 'bool'
     }
@@ -38,13 +40,15 @@ class QueryResourceResultDTO:
         'type': 'type',
         'type_id': 'typeId',
         'type_desc': 'typeDesc',
+        'vmr_mode': 'vmrMode',
         'count': 'count',
         'expire_date': 'expireDate',
+        'order_id': 'orderId',
         'status': 'status',
         'editable': 'editable'
     }
 
-    def __init__(self, id=None, type=None, type_id=None, type_desc=None, count=None, expire_date=None, status=None, editable=None):
+    def __init__(self, id=None, type=None, type_id=None, type_desc=None, vmr_mode=None, count=None, expire_date=None, order_id=None, status=None, editable=None):
         """QueryResourceResultDTO - a model defined in huaweicloud sdk"""
         
         
@@ -53,8 +57,10 @@ class QueryResourceResultDTO:
         self._type = None
         self._type_id = None
         self._type_desc = None
+        self._vmr_mode = None
         self._count = None
         self._expire_date = None
+        self._order_id = None
         self._status = None
         self._editable = None
         self.discriminator = None
@@ -67,10 +73,14 @@ class QueryResourceResultDTO:
             self.type_id = type_id
         if type_desc is not None:
             self.type_desc = type_desc
+        if vmr_mode is not None:
+            self.vmr_mode = vmr_mode
         if count is not None:
             self.count = count
         if expire_date is not None:
             self.expire_date = expire_date
+        if order_id is not None:
+            self.order_id = order_id
         if status is not None:
             self.status = status
         if editable is not None:
@@ -165,6 +175,28 @@ class QueryResourceResultDTO:
         self._type_desc = type_desc
 
     @property
+    def vmr_mode(self):
+        """Gets the vmr_mode of this QueryResourceResultDTO.
+
+        VMR模式. 0：个人会议ID 1：云会议室 2：网络研讨会
+
+        :return: The vmr_mode of this QueryResourceResultDTO.
+        :rtype: int
+        """
+        return self._vmr_mode
+
+    @vmr_mode.setter
+    def vmr_mode(self, vmr_mode):
+        """Sets the vmr_mode of this QueryResourceResultDTO.
+
+        VMR模式. 0：个人会议ID 1：云会议室 2：网络研讨会
+
+        :param vmr_mode: The vmr_mode of this QueryResourceResultDTO.
+        :type: int
+        """
+        self._vmr_mode = vmr_mode
+
+    @property
     def count(self):
         """Gets the count of this QueryResourceResultDTO.
 
@@ -207,6 +239,28 @@ class QueryResourceResultDTO:
         :type: int
         """
         self._expire_date = expire_date
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this QueryResourceResultDTO.
+
+        资源对应的订单id
+
+        :return: The order_id of this QueryResourceResultDTO.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this QueryResourceResultDTO.
+
+        资源对应的订单id
+
+        :param order_id: The order_id of this QueryResourceResultDTO.
+        :type: str
+        """
+        self._order_id = order_id
 
     @property
     def status(self):

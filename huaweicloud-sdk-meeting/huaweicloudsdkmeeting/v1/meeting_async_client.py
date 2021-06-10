@@ -723,7 +723,7 @@ class MeetingAsyncClient(Client):
 
 
     def associate_vmr_async(self, request):
-        """分配专用云会议室
+        """分配云会议室
 
         企业管理员通过该接口将云会议室分配给用户、硬终端（当前仅支持分配TE10、TE20、HUAWEI Board、HUAWEI Bar 500及HUAWEI Box系列硬件终端）。云会议室分配给硬件终端后，需要重启或重新激活硬件终端。若需要管理云会议室、预约会议、录制会议或进行完整的会控操作，请同时将该云会议室分配给会议用户。
 
@@ -733,7 +733,7 @@ class MeetingAsyncClient(Client):
         return self.associate_vmr_with_http_info(request)
 
     def associate_vmr_with_http_info(self, request):
-        """分配专用云会议室
+        """分配云会议室
 
         企业管理员通过该接口将云会议室分配给用户、硬终端（当前仅支持分配TE10、TE20、HUAWEI Board、HUAWEI Bar 500及HUAWEI Box系列硬件终端）。云会议室分配给硬件终端后，需要重启或重新激活硬件终端。若需要管理云会议室、预约会议、录制会议或进行完整的会控操作，请同时将该云会议室分配给会议用户。
 
@@ -2147,6 +2147,73 @@ class MeetingAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_webinar_async(self, request):
+        """预约网络研讨会
+
+        您可根据需要预约网络研讨会。注意：暂不支持添加外部联系人作为与会嘉宾
+
+        :param CreateWebinarRequest request
+        :return: CreateWebinarResponse
+        """
+        return self.create_webinar_with_http_info(request)
+
+    def create_webinar_with_http_info(self, request):
+        """预约网络研讨会
+
+        您可根据需要预约网络研讨会。注意：暂不支持添加外部联系人作为与会嘉宾
+
+        :param CreateWebinarRequest request
+        :return: CreateWebinarResponse
+        """
+
+        all_params = ['create_webinar_request_body', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/wss/webinar/open/conferences',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateWebinarResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_attendees_async(self, request):
         """删除与会者
 
@@ -2282,9 +2349,9 @@ class MeetingAsyncClient(Client):
 
 
     def delete_corp_vmr_async(self, request):
-        """删除专用云会议室
+        """删除云会议室
 
-        企业管理员通过该接口删除企业的专用云会议室
+        企业管理员通过该接口删除企业的云会议室
 
         :param DeleteCorpVmrRequest request
         :return: DeleteCorpVmrResponse
@@ -2292,9 +2359,9 @@ class MeetingAsyncClient(Client):
         return self.delete_corp_vmr_with_http_info(request)
 
     def delete_corp_vmr_with_http_info(self, request):
-        """删除专用云会议室
+        """删除云会议室
 
-        企业管理员通过该接口删除企业的专用云会议室
+        企业管理员通过该接口删除企业的云会议室
 
         :param DeleteCorpVmrRequest request
         :return: DeleteCorpVmrResponse
@@ -2620,10 +2687,77 @@ class MeetingAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def disassociate_vmr_async(self, request):
-        """从用户或终端回收企业专用VMR
+    def delete_webinar_async(self, request):
+        """取消网络研讨会
 
-        给企业用户回收vmr，需要做好纵向越权校验，避免企业管理员给其他企业的账号分配
+        您可根据需要取消网络研讨会。
+
+        :param DeleteWebinarRequest request
+        :return: DeleteWebinarResponse
+        """
+        return self.delete_webinar_with_http_info(request)
+
+    def delete_webinar_with_http_info(self, request):
+        """取消网络研讨会
+
+        您可根据需要取消网络研讨会。
+
+        :param DeleteWebinarRequest request
+        :return: DeleteWebinarResponse
+        """
+
+        all_params = ['conference_id', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'conference_id' in local_var_params:
+            path_params['conferenceId'] = local_var_params['conference_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/wss/webinar/open/conferences/{conferenceId}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteWebinarResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def disassociate_vmr_async(self, request):
+        """回收云会议室
+
+        企业管理员通过该接口回收云会议室
 
         :param DisassociateVmrRequest request
         :return: DisassociateVmrResponse
@@ -2631,9 +2765,9 @@ class MeetingAsyncClient(Client):
         return self.disassociate_vmr_with_http_info(request)
 
     def disassociate_vmr_with_http_info(self, request):
-        """从用户或终端回收企业专用VMR
+        """回收云会议室
 
-        给企业用户回收vmr，需要做好纵向越权校验，避免企业管理员给其他企业的账号分配
+        企业管理员通过该接口回收云会议室
 
         :param DisassociateVmrRequest request
         :return: DisassociateVmrResponse
@@ -3020,6 +3154,229 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='InviteWithPwdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_history_webinars_async(self, request):
+        """查询历史召开的网络研讨会列表
+
+        查询历史召开的网络研讨会列表，企业管理员可查询企业内所有历史召开的网络研讨会，普通账号查询自己历史召开的网络研讨会
+
+        :param ListHistoryWebinarsRequest request
+        :return: ListHistoryWebinarsResponse
+        """
+        return self.list_history_webinars_with_http_info(request)
+
+    def list_history_webinars_with_http_info(self, request):
+        """查询历史召开的网络研讨会列表
+
+        查询历史召开的网络研讨会列表，企业管理员可查询企业内所有历史召开的网络研讨会，普通账号查询自己历史召开的网络研讨会
+
+        :param ListHistoryWebinarsRequest request
+        :return: ListHistoryWebinarsResponse
+        """
+
+        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'sort_type', 'start_time', 'end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+        if 'sort_type' in local_var_params:
+            query_params.append(('sortType', local_var_params['sort_type']))
+        if 'start_time' in local_var_params:
+            query_params.append(('startTime', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('endTime', local_var_params['end_time']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/wss/webinar/open/conferences/history',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListHistoryWebinarsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_ongoing_webinars_async(self, request):
+        """查询正在召开的网络研讨会列表
+
+        查询正在召开的网络研讨会列表：企业管理员可查询企业内所有正在召开的网络研讨会，普通账号查询自己正在召开的网络研讨会
+
+        :param ListOngoingWebinarsRequest request
+        :return: ListOngoingWebinarsResponse
+        """
+        return self.list_ongoing_webinars_with_http_info(request)
+
+    def list_ongoing_webinars_with_http_info(self, request):
+        """查询正在召开的网络研讨会列表
+
+        查询正在召开的网络研讨会列表：企业管理员可查询企业内所有正在召开的网络研讨会，普通账号查询自己正在召开的网络研讨会
+
+        :param ListOngoingWebinarsRequest request
+        :return: ListOngoingWebinarsResponse
+        """
+
+        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'sort_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+        if 'sort_type' in local_var_params:
+            query_params.append(('sortType', local_var_params['sort_type']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/wss/webinar/open/conferences/ongoing',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListOngoingWebinarsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_up_coming_webinars_async(self, request):
+        """查询即将召开的网络研讨会列表
+
+        查询即将召开的网络研讨会列表：企业管理员可查询企业内所有即将召开的网络研讨会，普通账号查询自己即将召开的网络研讨会
+
+        :param ListUpComingWebinarsRequest request
+        :return: ListUpComingWebinarsResponse
+        """
+        return self.list_up_coming_webinars_with_http_info(request)
+
+    def list_up_coming_webinars_with_http_info(self, request):
+        """查询即将召开的网络研讨会列表
+
+        查询即将召开的网络研讨会列表：企业管理员可查询企业内所有即将召开的网络研讨会，普通账号查询自己即将召开的网络研讨会
+
+        :param ListUpComingWebinarsRequest request
+        :return: ListUpComingWebinarsResponse
+        """
+
+        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'sort_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+        if 'sort_type' in local_var_params:
+            query_params.append(('sortType', local_var_params['sort_type']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/wss/webinar/open/conferences/upcoming',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListUpComingWebinarsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4201,26 +4558,26 @@ class MeetingAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def search_corp_vmr_async(self, request):
-        """分页查询专用云会议室
+    def search_corp_resources_async(self, request):
+        """企业管理员分页查询企业资源订单列表
 
-        企业管理员通过该接口分页查询企业的专用云会议室。
+        企业管理员根据条件查询企业资源订单列表
 
-        :param SearchCorpVmrRequest request
-        :return: SearchCorpVmrResponse
+        :param SearchCorpResourcesRequest request
+        :return: SearchCorpResourcesResponse
         """
-        return self.search_corp_vmr_with_http_info(request)
+        return self.search_corp_resources_with_http_info(request)
 
-    def search_corp_vmr_with_http_info(self, request):
-        """分页查询专用云会议室
+    def search_corp_resources_with_http_info(self, request):
+        """企业管理员分页查询企业资源订单列表
 
-        企业管理员通过该接口分页查询企业的专用云会议室。
+        企业管理员根据条件查询企业资源订单列表
 
-        :param SearchCorpVmrRequest request
-        :return: SearchCorpVmrResponse
+        :param SearchCorpResourcesRequest request
+        :return: SearchCorpResourcesResponse
         """
 
-        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'status']
+        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'start_expire_date', 'end_expire_date', 'type', 'vmr_mode', 'type_id', 'order_id', 'status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4237,6 +4594,93 @@ class MeetingAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'search_key' in local_var_params:
             query_params.append(('searchKey', local_var_params['search_key']))
+        if 'start_expire_date' in local_var_params:
+            query_params.append(('startExpireDate', local_var_params['start_expire_date']))
+        if 'end_expire_date' in local_var_params:
+            query_params.append(('endExpireDate', local_var_params['end_expire_date']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'vmr_mode' in local_var_params:
+            query_params.append(('vmrMode', local_var_params['vmr_mode']))
+        if 'type_id' in local_var_params:
+            query_params.append(('typeId', local_var_params['type_id']))
+        if 'order_id' in local_var_params:
+            query_params.append(('orderId', local_var_params['order_id']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/dcs/corp/resource-list',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchCorpResourcesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def search_corp_vmr_async(self, request):
+        """企业管理员分页查询企业云会议室
+
+        企业管理员通过该接口分页查询企业的云会议室。
+
+        :param SearchCorpVmrRequest request
+        :return: SearchCorpVmrResponse
+        """
+        return self.search_corp_vmr_with_http_info(request)
+
+    def search_corp_vmr_with_http_info(self, request):
+        """企业管理员分页查询企业云会议室
+
+        企业管理员通过该接口分页查询企业的云会议室。
+
+        :param SearchCorpVmrRequest request
+        :return: SearchCorpVmrResponse
+        """
+
+        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'vmr_mode', 'status']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+        if 'vmr_mode' in local_var_params:
+            query_params.append(('vmrMode', local_var_params['vmr_mode']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
 
@@ -4796,9 +5240,9 @@ class MeetingAsyncClient(Client):
 
 
     def search_member_vmr_async(self, request):
-        """分页查询用户云会议室
+        """普通用户分页查询云会议室及个人会议ID
 
-        企业用户通过该接口查询个人已分配的云会议室，包括个人及专用两种。
+        企业用户通过该接口查询个人已分配的云会议室及个人会议ID。
 
         :param SearchMemberVmrRequest request
         :return: SearchMemberVmrResponse
@@ -4806,9 +5250,9 @@ class MeetingAsyncClient(Client):
         return self.search_member_vmr_with_http_info(request)
 
     def search_member_vmr_with_http_info(self, request):
-        """分页查询用户云会议室
+        """普通用户分页查询云会议室及个人会议ID
 
-        企业用户通过该接口查询个人已分配的云会议室，包括个人及专用两种。
+        企业用户通过该接口查询个人已分配的云会议室及个人会议ID。
 
         :param SearchMemberVmrRequest request
         :return: SearchMemberVmrResponse
@@ -4862,71 +5306,6 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='SearchMemberVmrResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def search_member_vmr_by_cloud_link_async(self, request):
-        """查询用户VMR列表
-
-        查询用户VMR列表。
-
-        :param SearchMemberVmrByCloudLinkRequest request
-        :return: SearchMemberVmrByCloudLinkResponse
-        """
-        return self.search_member_vmr_by_cloud_link_with_http_info(request)
-
-    def search_member_vmr_by_cloud_link_with_http_info(self, request):
-        """查询用户VMR列表
-
-        查询用户VMR列表。
-
-        :param SearchMemberVmrByCloudLinkRequest request
-        :return: SearchMemberVmrByCloudLinkResponse
-        """
-
-        all_params = ['x_request_id', 'accept_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_request_id' in local_var_params:
-            header_params['X-Request-Id'] = local_var_params['x_request_id']
-        if 'accept_language' in local_var_params:
-            header_params['Accept-Language'] = local_var_params['accept_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/usg/dcs/member/vmrinfo',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='SearchMemberVmrByCloudLinkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -5818,7 +6197,7 @@ class MeetingAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/mmc/control/conferences/display/',
+            resource_path='/v1/mmc/control/conferences/display/customMultiPicture',
             method='PUT',
             path_params=path_params,
             query_params=query_params,
@@ -7594,6 +7973,73 @@ class MeetingAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_room_setting_async(self, request):
+        """查询直播间高级设置
+
+        查询直播间高级设置
+
+        :param ShowRoomSettingRequest request
+        :return: ShowRoomSettingResponse
+        """
+        return self.show_room_setting_with_http_info(request)
+
+    def show_room_setting_with_http_info(self, request):
+        """查询直播间高级设置
+
+        查询直播间高级设置
+
+        :param ShowRoomSettingRequest request
+        :return: ShowRoomSettingResponse
+        """
+
+        all_params = ['conference_id', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'conference_id' in local_var_params:
+            path_params['conferenceId'] = local_var_params['conference_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/wss/webinar/open/room_setting/{conferenceId}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowRoomSettingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_sp_res_async(self, request):
         """查询SP的共享资源使用信息
 
@@ -7785,6 +8231,73 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowUserDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_webinar_async(self, request):
+        """查询网络研讨会详情
+
+        根据conferenceId查询网络研讨会详情。
+
+        :param ShowWebinarRequest request
+        :return: ShowWebinarResponse
+        """
+        return self.show_webinar_with_http_info(request)
+
+    def show_webinar_with_http_info(self, request):
+        """查询网络研讨会详情
+
+        根据conferenceId查询网络研讨会详情。
+
+        :param ShowWebinarRequest request
+        :return: ShowWebinarResponse
+        """
+
+        all_params = ['conference_id', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'conference_id' in local_var_params:
+            path_params['conferenceId'] = local_var_params['conference_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/wss/webinar/open/conferences/{conferenceId}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowWebinarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -8405,9 +8918,9 @@ class MeetingAsyncClient(Client):
 
 
     def update_member_vmr_async(self, request):
-        """修改用户云会议室
+        """修改用会议室及个人会议ID信息
 
-        企业用户登录后可以修改分配给用户的专用云会议室及个人云会议室。
+        企业用户登录后可以修改分配给用户的云会议室及个人会议ID。
 
         :param UpdateMemberVmrRequest request
         :return: UpdateMemberVmrResponse
@@ -8415,9 +8928,9 @@ class MeetingAsyncClient(Client):
         return self.update_member_vmr_with_http_info(request)
 
     def update_member_vmr_with_http_info(self, request):
-        """修改用户云会议室
+        """修改用会议室及个人会议ID信息
 
-        企业用户登录后可以修改分配给用户的专用云会议室及个人云会议室。
+        企业用户登录后可以修改分配给用户的云会议室及个人会议ID。
 
         :param UpdateMemberVmrRequest request
         :return: UpdateMemberVmrResponse
@@ -8814,6 +9327,75 @@ class MeetingAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_room_setting_async(self, request):
+        """高级设置 - 直播间设置
+
+        保存直播间高级设置。如有部分配置信息修改，则其他未修改的原始值也需要传入，否则部分字段会替换为默认值(即：只支持全量保存)
+
+        :param UpdateRoomSettingRequest request
+        :return: UpdateRoomSettingResponse
+        """
+        return self.update_room_setting_with_http_info(request)
+
+    def update_room_setting_with_http_info(self, request):
+        """高级设置 - 直播间设置
+
+        保存直播间高级设置。如有部分配置信息修改，则其他未修改的原始值也需要传入，否则部分字段会替换为默认值(即：只支持全量保存)
+
+        :param UpdateRoomSettingRequest request
+        :return: UpdateRoomSettingResponse
+        """
+
+        all_params = ['conference_id', 'x_request_id', 'accept_language', 'open_room_setting_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'conference_id' in local_var_params:
+            path_params['conferenceId'] = local_var_params['conference_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/wss/webinar/open/room_setting/{conferenceId}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateRoomSettingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_started_conf_config_async(self, request):
         """会中修改配置
 
@@ -9011,6 +9593,140 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateUserResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_webinar_async(self, request):
+        """编辑网络研讨会
+
+        您可根据需要修改普通网络研讨会和周期网络研讨会。注意：暂不支持添加外部联系人作为与会嘉宾
+
+        :param UpdateWebinarRequest request
+        :return: UpdateWebinarResponse
+        """
+        return self.update_webinar_with_http_info(request)
+
+    def update_webinar_with_http_info(self, request):
+        """编辑网络研讨会
+
+        您可根据需要修改普通网络研讨会和周期网络研讨会。注意：暂不支持添加外部联系人作为与会嘉宾
+
+        :param UpdateWebinarRequest request
+        :return: UpdateWebinarResponse
+        """
+
+        all_params = ['edit_webinar_request_body', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/wss/webinar/open/conferences',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateWebinarResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def upload_file_async(self, request):
+        """开放接口 - 文件上传
+
+        文件上传的开放接口
+
+        :param UploadFileRequest request
+        :return: UploadFileResponse
+        """
+        return self.upload_file_with_http_info(request)
+
+    def upload_file_with_http_info(self, request):
+        """开放接口 - 文件上传
+
+        文件上传的开放接口
+
+        :param UploadFileRequest request
+        :return: UploadFileResponse
+        """
+
+        all_params = ['file', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] =  local_var_params['file']
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/wss/webinar/open/res/file',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UploadFileResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

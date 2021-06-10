@@ -1,3 +1,93 @@
+# 3.0.47 2021-06-10
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+    - Support interfaces `ListFreeResources`,`ListFreeResourceUsages`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK BSSINTL
+
+- _Features_
+    - Support interfaces `ListFreeResources`,`ListFreeResourceUsages`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK Cloudtest
+
+- _Features_
+    - Support interfaces `CreateApiTestSuiteByRepoFile`,`ListEnvironments`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+    - Support `Data Replication Service`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+    - Support interfaces
+        - `ImportFunction`
+        - `ExportFunction`
+        - `AsyncInvokeReservedFunction`
+        - `DeleteReservedInstanceById`
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+    - Support more interfaces
+        - `CreateWebinar`
+        - `ShowWebinar`
+        - `UpdateWebinar`
+        - `DeleteWebinar`
+        - `ListOngoingWebinars`
+        - `ListHistoryWebinars`
+        - `ListUpComingWebinars`
+        - `UploadFile`
+        - `ShowRoomSetting`
+        - `UpdateRoomSetting`
+        - `SearchCorpResources`
+- _Bug Fix_
+    - None
+- _Change_
+    - Add a request parameter `vmrMode` to interface `SearchCorpVmr`.
+    - Remove the interface `SearchMemberVmrByCloudLink`.
+
+### HuaweiCloud SDK OSM
+
+- _Features_
+    - Support `Online Service Management`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+    - Support interfaces `SetBinlogClearPolicy`,`ShowBinlogClearPolicy`.
+- _Bug Fix_
+    - None
+- _Change_
+    - Add request parameters `offset`,`limit` to interface `ListOffSiteInstances`.
+
 # 3.0.46 2021-06-04
 
 ### HuaweiCloud SDK CCE

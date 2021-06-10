@@ -1,0 +1,421 @@
+# coding: utf-8
+
+import pprint
+import re
+
+import six
+
+
+
+
+
+class ChildrenJobInfo:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'billing_tag': 'str',
+        'create_time': 'str',
+        'db_use_type': 'str',
+        'description': 'str',
+        'engine_type': 'str',
+        'error_msg': 'str',
+        'id': 'str',
+        'job_direction': 'str',
+        'name': 'str',
+        'net_type': 'str',
+        'node_new_framework': 'str',
+        'status': 'str',
+        'task_type': 'str'
+    }
+
+    attribute_map = {
+        'billing_tag': 'billing_tag',
+        'create_time': 'create_time',
+        'db_use_type': 'db_use_type',
+        'description': 'description',
+        'engine_type': 'engine_type',
+        'error_msg': 'error_msg',
+        'id': 'id',
+        'job_direction': 'job_direction',
+        'name': 'name',
+        'net_type': 'net_type',
+        'node_new_framework': 'node_newFramework',
+        'status': 'status',
+        'task_type': 'task_type'
+    }
+
+    def __init__(self, billing_tag=None, create_time=None, db_use_type=None, description=None, engine_type=None, error_msg=None, id=None, job_direction=None, name=None, net_type=None, node_new_framework=None, status=None, task_type=None):
+        """ChildrenJobInfo - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._billing_tag = None
+        self._create_time = None
+        self._db_use_type = None
+        self._description = None
+        self._engine_type = None
+        self._error_msg = None
+        self._id = None
+        self._job_direction = None
+        self._name = None
+        self._net_type = None
+        self._node_new_framework = None
+        self._status = None
+        self._task_type = None
+        self.discriminator = None
+
+        self.billing_tag = billing_tag
+        self.create_time = create_time
+        self.db_use_type = db_use_type
+        self.description = description
+        self.engine_type = engine_type
+        self.error_msg = error_msg
+        self.id = id
+        self.job_direction = job_direction
+        self.name = name
+        self.net_type = net_type
+        self.node_new_framework = node_new_framework
+        self.status = status
+        self.task_type = task_type
+
+    @property
+    def billing_tag(self):
+        """Gets the billing_tag of this ChildrenJobInfo.
+
+        计费字段
+
+        :return: The billing_tag of this ChildrenJobInfo.
+        :rtype: str
+        """
+        return self._billing_tag
+
+    @billing_tag.setter
+    def billing_tag(self, billing_tag):
+        """Sets the billing_tag of this ChildrenJobInfo.
+
+        计费字段
+
+        :param billing_tag: The billing_tag of this ChildrenJobInfo.
+        :type: str
+        """
+        self._billing_tag = billing_tag
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this ChildrenJobInfo.
+
+        任务创建时间
+
+        :return: The create_time of this ChildrenJobInfo.
+        :rtype: str
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this ChildrenJobInfo.
+
+        任务创建时间
+
+        :param create_time: The create_time of this ChildrenJobInfo.
+        :type: str
+        """
+        self._create_time = create_time
+
+    @property
+    def db_use_type(self):
+        """Gets the db_use_type of this ChildrenJobInfo.
+
+        复制场景
+
+        :return: The db_use_type of this ChildrenJobInfo.
+        :rtype: str
+        """
+        return self._db_use_type
+
+    @db_use_type.setter
+    def db_use_type(self, db_use_type):
+        """Sets the db_use_type of this ChildrenJobInfo.
+
+        复制场景
+
+        :param db_use_type: The db_use_type of this ChildrenJobInfo.
+        :type: str
+        """
+        self._db_use_type = db_use_type
+
+    @property
+    def description(self):
+        """Gets the description of this ChildrenJobInfo.
+
+        任务描述
+
+        :return: The description of this ChildrenJobInfo.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ChildrenJobInfo.
+
+        任务描述
+
+        :param description: The description of this ChildrenJobInfo.
+        :type: str
+        """
+        self._description = description
+
+    @property
+    def engine_type(self):
+        """Gets the engine_type of this ChildrenJobInfo.
+
+        引擎类型
+
+        :return: The engine_type of this ChildrenJobInfo.
+        :rtype: str
+        """
+        return self._engine_type
+
+    @engine_type.setter
+    def engine_type(self, engine_type):
+        """Sets the engine_type of this ChildrenJobInfo.
+
+        引擎类型
+
+        :param engine_type: The engine_type of this ChildrenJobInfo.
+        :type: str
+        """
+        self._engine_type = engine_type
+
+    @property
+    def error_msg(self):
+        """Gets the error_msg of this ChildrenJobInfo.
+
+        任务失败原因
+
+        :return: The error_msg of this ChildrenJobInfo.
+        :rtype: str
+        """
+        return self._error_msg
+
+    @error_msg.setter
+    def error_msg(self, error_msg):
+        """Sets the error_msg of this ChildrenJobInfo.
+
+        任务失败原因
+
+        :param error_msg: The error_msg of this ChildrenJobInfo.
+        :type: str
+        """
+        self._error_msg = error_msg
+
+    @property
+    def id(self):
+        """Gets the id of this ChildrenJobInfo.
+
+        任务id
+
+        :return: The id of this ChildrenJobInfo.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ChildrenJobInfo.
+
+        任务id
+
+        :param id: The id of this ChildrenJobInfo.
+        :type: str
+        """
+        self._id = id
+
+    @property
+    def job_direction(self):
+        """Gets the job_direction of this ChildrenJobInfo.
+
+        迁移方向
+
+        :return: The job_direction of this ChildrenJobInfo.
+        :rtype: str
+        """
+        return self._job_direction
+
+    @job_direction.setter
+    def job_direction(self, job_direction):
+        """Sets the job_direction of this ChildrenJobInfo.
+
+        迁移方向
+
+        :param job_direction: The job_direction of this ChildrenJobInfo.
+        :type: str
+        """
+        self._job_direction = job_direction
+
+    @property
+    def name(self):
+        """Gets the name of this ChildrenJobInfo.
+
+        任务名称
+
+        :return: The name of this ChildrenJobInfo.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ChildrenJobInfo.
+
+        任务名称
+
+        :param name: The name of this ChildrenJobInfo.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def net_type(self):
+        """Gets the net_type of this ChildrenJobInfo.
+
+        网络类型
+
+        :return: The net_type of this ChildrenJobInfo.
+        :rtype: str
+        """
+        return self._net_type
+
+    @net_type.setter
+    def net_type(self, net_type):
+        """Sets the net_type of this ChildrenJobInfo.
+
+        网络类型
+
+        :param net_type: The net_type of this ChildrenJobInfo.
+        :type: str
+        """
+        self._net_type = net_type
+
+    @property
+    def node_new_framework(self):
+        """Gets the node_new_framework of this ChildrenJobInfo.
+
+        新框架
+
+        :return: The node_new_framework of this ChildrenJobInfo.
+        :rtype: str
+        """
+        return self._node_new_framework
+
+    @node_new_framework.setter
+    def node_new_framework(self, node_new_framework):
+        """Sets the node_new_framework of this ChildrenJobInfo.
+
+        新框架
+
+        :param node_new_framework: The node_new_framework of this ChildrenJobInfo.
+        :type: str
+        """
+        self._node_new_framework = node_new_framework
+
+    @property
+    def status(self):
+        """Gets the status of this ChildrenJobInfo.
+
+        任务状态
+
+        :return: The status of this ChildrenJobInfo.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ChildrenJobInfo.
+
+        任务状态
+
+        :param status: The status of this ChildrenJobInfo.
+        :type: str
+        """
+        self._status = status
+
+    @property
+    def task_type(self):
+        """Gets the task_type of this ChildrenJobInfo.
+
+        迁移模式
+
+        :return: The task_type of this ChildrenJobInfo.
+        :rtype: str
+        """
+        return self._task_type
+
+    @task_type.setter
+    def task_type(self, task_type):
+        """Sets the task_type of this ChildrenJobInfo.
+
+        迁移模式
+
+        :param task_type: The task_type of this ChildrenJobInfo.
+        :type: str
+        """
+        self._task_type = task_type
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        return pprint.pformat(self.to_dict())
+
+    def __repr__(self):
+        """For `print` and `pprint`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ChildrenJobInfo):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

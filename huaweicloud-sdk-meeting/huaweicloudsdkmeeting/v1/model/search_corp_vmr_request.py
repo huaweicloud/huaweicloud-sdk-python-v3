@@ -28,6 +28,7 @@ class SearchCorpVmrRequest:
         'offset': 'int',
         'limit': 'int',
         'search_key': 'str',
+        'vmr_mode': 'int',
         'status': 'int'
     }
 
@@ -37,10 +38,11 @@ class SearchCorpVmrRequest:
         'offset': 'offset',
         'limit': 'limit',
         'search_key': 'searchKey',
+        'vmr_mode': 'vmrMode',
         'status': 'status'
     }
 
-    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, status=None):
+    def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, vmr_mode=None, status=None):
         """SearchCorpVmrRequest - a model defined in huaweicloud sdk"""
         
         
@@ -50,6 +52,7 @@ class SearchCorpVmrRequest:
         self._offset = None
         self._limit = None
         self._search_key = None
+        self._vmr_mode = None
         self._status = None
         self.discriminator = None
 
@@ -63,6 +66,8 @@ class SearchCorpVmrRequest:
             self.limit = limit
         if search_key is not None:
             self.search_key = search_key
+        if vmr_mode is not None:
+            self.vmr_mode = vmr_mode
         if status is not None:
             self.status = status
 
@@ -175,6 +180,28 @@ class SearchCorpVmrRequest:
         :type: str
         """
         self._search_key = search_key
+
+    @property
+    def vmr_mode(self):
+        """Gets the vmr_mode of this SearchCorpVmrRequest.
+
+        VMR模式，不填则默认为公共云会议室。 - 1：云会议室 - 2：网络研讨会。 
+
+        :return: The vmr_mode of this SearchCorpVmrRequest.
+        :rtype: int
+        """
+        return self._vmr_mode
+
+    @vmr_mode.setter
+    def vmr_mode(self, vmr_mode):
+        """Sets the vmr_mode of this SearchCorpVmrRequest.
+
+        VMR模式，不填则默认为公共云会议室。 - 1：云会议室 - 2：网络研讨会。 
+
+        :param vmr_mode: The vmr_mode of this SearchCorpVmrRequest.
+        :type: int
+        """
+        self._vmr_mode = vmr_mode
 
     @property
     def status(self):

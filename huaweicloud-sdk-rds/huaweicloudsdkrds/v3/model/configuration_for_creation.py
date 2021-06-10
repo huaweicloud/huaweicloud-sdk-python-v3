@@ -25,7 +25,7 @@ class ConfigurationForCreation:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'datastore': 'Datastore',
+        'datastore': 'ParaGroupDatastore',
         'values': 'dict(str, str)'
     }
 
@@ -104,7 +104,7 @@ class ConfigurationForCreation:
 
 
         :return: The datastore of this ConfigurationForCreation.
-        :rtype: Datastore
+        :rtype: ParaGroupDatastore
         """
         return self._datastore
 
@@ -114,7 +114,7 @@ class ConfigurationForCreation:
 
 
         :param datastore: The datastore of this ConfigurationForCreation.
-        :type: Datastore
+        :type: ParaGroupDatastore
         """
         self._datastore = datastore
 

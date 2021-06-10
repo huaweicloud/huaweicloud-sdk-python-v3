@@ -423,7 +423,7 @@ class SubCustomerResFeeRecordV2:
     def usage_measure_id(self):
         """Gets the usage_measure_id of this SubCustomerResFeeRecordV2.
 
-        资源的使用量单位，您可以调用查询使用量单位列表接口获取。
+        资源的使用量单位，您可以调用查询度量单位列表接口获取。
 
         :return: The usage_measure_id of this SubCustomerResFeeRecordV2.
         :rtype: int
@@ -434,7 +434,7 @@ class SubCustomerResFeeRecordV2:
     def usage_measure_id(self, usage_measure_id):
         """Sets the usage_measure_id of this SubCustomerResFeeRecordV2.
 
-        资源的使用量单位，您可以调用查询使用量单位列表接口获取。
+        资源的使用量单位，您可以调用查询度量单位列表接口获取。
 
         :param usage_measure_id: The usage_measure_id of this SubCustomerResFeeRecordV2.
         :type: int
@@ -467,7 +467,7 @@ class SubCustomerResFeeRecordV2:
     def free_resource_measure_id(self):
         """Gets the free_resource_measure_id of this SubCustomerResFeeRecordV2.
 
-        套餐内使用量单位，您可以调用查询使用量单位列表接口获取。
+        套餐内使用量单位，您可以调用查询度量单位列表接口获取。
 
         :return: The free_resource_measure_id of this SubCustomerResFeeRecordV2.
         :rtype: int
@@ -478,7 +478,7 @@ class SubCustomerResFeeRecordV2:
     def free_resource_measure_id(self, free_resource_measure_id):
         """Sets the free_resource_measure_id of this SubCustomerResFeeRecordV2.
 
-        套餐内使用量单位，您可以调用查询使用量单位列表接口获取。
+        套餐内使用量单位，您可以调用查询度量单位列表接口获取。
 
         :param free_resource_measure_id: The free_resource_measure_id of this SubCustomerResFeeRecordV2.
         :type: int
@@ -995,7 +995,7 @@ class SubCustomerResFeeRecordV2:
     def spec_size_measure_id(self):
         """Gets the spec_size_measure_id of this SubCustomerResFeeRecordV2.
 
-        产品实例大小的单位，仅线性产品有该字段。您可以调用查询使用量单位列表接口获取。
+        产品实例大小的单位，仅线性产品有该字段。您可以调用查询度量单位列表接口获取。
 
         :return: The spec_size_measure_id of this SubCustomerResFeeRecordV2.
         :rtype: int
@@ -1006,7 +1006,7 @@ class SubCustomerResFeeRecordV2:
     def spec_size_measure_id(self, spec_size_measure_id):
         """Sets the spec_size_measure_id of this SubCustomerResFeeRecordV2.
 
-        产品实例大小的单位，仅线性产品有该字段。您可以调用查询使用量单位列表接口获取。
+        产品实例大小的单位，仅线性产品有该字段。您可以调用查询度量单位列表接口获取。
 
         :param spec_size_measure_id: The spec_size_measure_id of this SubCustomerResFeeRecordV2.
         :type: int

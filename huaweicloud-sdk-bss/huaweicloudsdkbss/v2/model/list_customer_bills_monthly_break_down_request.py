@@ -153,7 +153,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def charging_mode(self):
         """Gets the charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        计费模式。 1：包年/包月3：按需10：预留实例
+        计费模式。1：包年/包月3：按需10：预留实例
 
         :return: The charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: int
@@ -164,7 +164,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        计费模式。 1：包年/包月3：按需10：预留实例
+        计费模式。1：包年/包月3：按需10：预留实例
 
         :param charging_mode: The charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
         :type: int
@@ -241,7 +241,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def bill_type(self):
         """Gets the bill_type of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费
+        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费
 
         :return: The bill_type of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: int
@@ -252,7 +252,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def bill_type(self, bill_type):
         """Sets the bill_type of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费
+        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费
 
         :param bill_type: The bill_type of this ListCustomerBillsMonthlyBreakDownRequest.
         :type: int
@@ -263,7 +263,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def offset(self):
         """Gets the offset of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        偏移量，从0开始。默认值为0。
+        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :return: The offset of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: int
@@ -274,7 +274,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def offset(self, offset):
         """Sets the offset of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        偏移量，从0开始。默认值为0。
+        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListCustomerBillsMonthlyBreakDownRequest.
         :type: int
@@ -351,7 +351,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :return: The enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -362,7 +362,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
         :type: str
@@ -373,7 +373,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def method(self):
         """Gets the method of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        查询资源消费记录的方式。 oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户 默认为all，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。
+        查询资源消费记录的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。
 
         :return: The method of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -384,7 +384,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def method(self, method):
         """Sets the method of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        查询资源消费记录的方式。 oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户 默认为all，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。
+        查询资源消费记录的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。
 
         :param method: The method of this ListCustomerBillsMonthlyBreakDownRequest.
         :type: str
