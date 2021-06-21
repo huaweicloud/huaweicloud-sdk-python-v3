@@ -49,7 +49,8 @@ class DomainSourceInfo:
 
         if protocol is not None:
             self.protocol = protocol
-        self.source_type = source_type
+        if source_type is not None:
+            self.source_type = source_type
         if sources is not None:
             self.sources = sources
         if sources_priority is not None:
@@ -59,7 +60,7 @@ class DomainSourceInfo:
     def protocol(self):
         """Gets the protocol of this DomainSourceInfo.
 
-        回源、转推协议。
+        回源、转推协议
 
         :return: The protocol of this DomainSourceInfo.
         :rtype: str
@@ -70,7 +71,7 @@ class DomainSourceInfo:
     def protocol(self, protocol):
         """Sets the protocol of this DomainSourceInfo.
 
-        回源、转推协议。
+        回源、转推协议
 
         :param protocol: The protocol of this DomainSourceInfo.
         :type: str
@@ -103,7 +104,7 @@ class DomainSourceInfo:
     def sources(self):
         """Gets the sources of this DomainSourceInfo.
 
-        回源、转推地址列表，格式为：{domain/IP}[:{port}]，port默认值为1935；最少1个，最多10个。
+        回源、转推地址列表，最少1个，最多10个；格式为：{domain/IP}[:{port}]，port默认值为1935
 
         :return: The sources of this DomainSourceInfo.
         :rtype: list[str]
@@ -114,7 +115,7 @@ class DomainSourceInfo:
     def sources(self, sources):
         """Sets the sources of this DomainSourceInfo.
 
-        回源、转推地址列表，格式为：{domain/IP}[:{port}]，port默认值为1935；最少1个，最多10个。
+        回源、转推地址列表，最少1个，最多10个；格式为：{domain/IP}[:{port}]，port默认值为1935
 
         :param sources: The sources of this DomainSourceInfo.
         :type: list[str]
@@ -125,7 +126,7 @@ class DomainSourceInfo:
     def sources_priority(self):
         """Gets the sources_priority of this DomainSourceInfo.
 
-        多个回源、转推地址的优先级。
+        多个回源、转推地址的优先级
 
         :return: The sources_priority of this DomainSourceInfo.
         :rtype: str
@@ -136,7 +137,7 @@ class DomainSourceInfo:
     def sources_priority(self, sources_priority):
         """Sets the sources_priority of this DomainSourceInfo.
 
-        多个回源、转推地址的优先级。
+        多个回源、转推地址的优先级
 
         :param sources_priority: The sources_priority of this DomainSourceInfo.
         :type: str

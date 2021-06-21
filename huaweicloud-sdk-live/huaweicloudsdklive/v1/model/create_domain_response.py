@@ -29,7 +29,8 @@ class CreateDomainResponse(SdkResponse):
         'region': 'str',
         'status': 'str',
         'create_time': 'datetime',
-        'domain_source': 'DomainSourceInfo'
+        'status_describe': 'str',
+        'service_area': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class CreateDomainResponse(SdkResponse):
         'region': 'region',
         'status': 'status',
         'create_time': 'create_time',
-        'domain_source': 'domain_source'
+        'status_describe': 'status_describe',
+        'service_area': 'service_area'
     }
 
-    def __init__(self, domain=None, domain_type=None, domain_cname=None, region=None, status=None, create_time=None, domain_source=None):
+    def __init__(self, domain=None, domain_type=None, domain_cname=None, region=None, status=None, create_time=None, status_describe=None, service_area=None):
         """CreateDomainResponse - a model defined in huaweicloud sdk"""
         
         super(CreateDomainResponse, self).__init__()
@@ -53,7 +55,8 @@ class CreateDomainResponse(SdkResponse):
         self._region = None
         self._status = None
         self._create_time = None
-        self._domain_source = None
+        self._status_describe = None
+        self._service_area = None
         self.discriminator = None
 
         if domain is not None:
@@ -68,8 +71,10 @@ class CreateDomainResponse(SdkResponse):
             self.status = status
         if create_time is not None:
             self.create_time = create_time
-        if domain_source is not None:
-            self.domain_source = domain_source
+        if status_describe is not None:
+            self.status_describe = status_describe
+        if service_area is not None:
+            self.service_area = service_area
 
     @property
     def domain(self):
@@ -119,7 +124,7 @@ class CreateDomainResponse(SdkResponse):
     def domain_cname(self):
         """Gets the domain_cname of this CreateDomainResponse.
 
-        直播域名的CName
+        直播域名的CNAME
 
         :return: The domain_cname of this CreateDomainResponse.
         :rtype: str
@@ -130,7 +135,7 @@ class CreateDomainResponse(SdkResponse):
     def domain_cname(self, domain_cname):
         """Sets the domain_cname of this CreateDomainResponse.
 
-        直播域名的CName
+        直播域名的CNAME
 
         :param domain_cname: The domain_cname of this CreateDomainResponse.
         :type: str
@@ -204,24 +209,48 @@ class CreateDomainResponse(SdkResponse):
         self._create_time = create_time
 
     @property
-    def domain_source(self):
-        """Gets the domain_source of this CreateDomainResponse.
+    def status_describe(self):
+        """Gets the status_describe of this CreateDomainResponse.
 
+        状态描述
 
-        :return: The domain_source of this CreateDomainResponse.
-        :rtype: DomainSourceInfo
+        :return: The status_describe of this CreateDomainResponse.
+        :rtype: str
         """
-        return self._domain_source
+        return self._status_describe
 
-    @domain_source.setter
-    def domain_source(self, domain_source):
-        """Sets the domain_source of this CreateDomainResponse.
+    @status_describe.setter
+    def status_describe(self, status_describe):
+        """Sets the status_describe of this CreateDomainResponse.
 
+        状态描述
 
-        :param domain_source: The domain_source of this CreateDomainResponse.
-        :type: DomainSourceInfo
+        :param status_describe: The status_describe of this CreateDomainResponse.
+        :type: str
         """
-        self._domain_source = domain_source
+        self._status_describe = status_describe
+
+    @property
+    def service_area(self):
+        """Gets the service_area of this CreateDomainResponse.
+
+        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
+
+        :return: The service_area of this CreateDomainResponse.
+        :rtype: str
+        """
+        return self._service_area
+
+    @service_area.setter
+    def service_area(self, service_area):
+        """Sets the service_area of this CreateDomainResponse.
+
+        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
+
+        :param service_area: The service_area of this CreateDomainResponse.
+        :type: str
+        """
+        self._service_area = service_area
 
     def to_dict(self):
         """Returns the model properties as a dict"""

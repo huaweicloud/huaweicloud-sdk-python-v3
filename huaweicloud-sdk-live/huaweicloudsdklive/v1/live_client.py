@@ -176,26 +176,26 @@ class LiveClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def create_record_config(self, request):
-        """创建录制配置
+    def create_record_callback_config(self, request):
+        """创建录制回调配置
 
-        创建录制配置接口
+        创建录制回调配置接口
 
-        :param CreateRecordConfigRequest request
-        :return: CreateRecordConfigResponse
+        :param CreateRecordCallbackConfigRequest request
+        :return: CreateRecordCallbackConfigResponse
         """
-        return self.create_record_config_with_http_info(request)
+        return self.create_record_callback_config_with_http_info(request)
 
-    def create_record_config_with_http_info(self, request):
-        """创建录制配置
+    def create_record_callback_config_with_http_info(self, request):
+        """创建录制回调配置
 
-        创建录制配置接口
+        创建录制回调配置接口
 
-        :param CreateRecordConfigRequest request
-        :return: CreateRecordConfigResponse
+        :param CreateRecordCallbackConfigRequest request
+        :return: CreateRecordCallbackConfigResponse
         """
 
-        all_params = ['create_record_config_request_body']
+        all_params = ['create_record_callback_config_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -225,14 +225,77 @@ class LiveClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/{project_id}/record/config',
+            resource_path='/v1/{project_id}/record/callbacks',
             method='POST',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='CreateRecordConfigResponse',
+            response_type='CreateRecordCallbackConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_record_rule(self, request):
+        """创建录制规则
+
+        创建录制规则接口，录制规则对新推送的流生效，对已经推送中的流不生效
+
+        :param CreateRecordRuleRequest request
+        :return: CreateRecordRuleResponse
+        """
+        return self.create_record_rule_with_http_info(request)
+
+    def create_record_rule_with_http_info(self, request):
+        """创建录制规则
+
+        创建录制规则接口，录制规则对新推送的流生效，对已经推送中的流不生效
+
+        :param CreateRecordRuleRequest request
+        :return: CreateRecordRuleResponse
+        """
+
+        all_params = ['create_record_rule_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/record/rules',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateRecordRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -497,26 +560,26 @@ class LiveClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def delete_record_config(self, request):
-        """删除录制配置
+    def delete_record_callback_config(self, request):
+        """删除录制回调配置
 
-        删除录制配置接口
+        删除录制回调配置接口
 
-        :param DeleteRecordConfigRequest request
-        :return: DeleteRecordConfigResponse
+        :param DeleteRecordCallbackConfigRequest request
+        :return: DeleteRecordCallbackConfigResponse
         """
-        return self.delete_record_config_with_http_info(request)
+        return self.delete_record_callback_config_with_http_info(request)
 
-    def delete_record_config_with_http_info(self, request):
-        """删除录制配置
+    def delete_record_callback_config_with_http_info(self, request):
+        """删除录制回调配置
 
-        删除录制配置接口
+        删除录制回调配置接口
 
-        :param DeleteRecordConfigRequest request
-        :return: DeleteRecordConfigResponse
+        :param DeleteRecordCallbackConfigRequest request
+        :return: DeleteRecordCallbackConfigResponse
         """
 
-        all_params = ['domain', 'app_name']
+        all_params = ['id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -525,12 +588,10 @@ class LiveClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
 
         query_params = []
-        if 'domain' in local_var_params:
-            query_params.append(('domain', local_var_params['domain']))
-        if 'app_name' in local_var_params:
-            query_params.append(('app_name', local_var_params['app_name']))
 
         header_params = {}
 
@@ -548,14 +609,77 @@ class LiveClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/{project_id}/record/config',
+            resource_path='/v1/{project_id}/record/callbacks/{id}',
             method='DELETE',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='DeleteRecordConfigResponse',
+            response_type='DeleteRecordCallbackConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_record_rule(self, request):
+        """删除录制规则
+
+        删除录制规则接口
+
+        :param DeleteRecordRuleRequest request
+        :return: DeleteRecordRuleResponse
+        """
+        return self.delete_record_rule_with_http_info(request)
+
+    def delete_record_rule_with_http_info(self, request):
+        """删除录制规则
+
+        删除录制规则接口
+
+        :param DeleteRecordRuleRequest request
+        :return: DeleteRecordRuleResponse
+        """
+
+        all_params = ['id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/record/rules/{id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteRecordRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -834,26 +958,26 @@ class LiveClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_record_configs(self, request):
-        """查询录制配置
+    def list_record_callback_configs(self, request):
+        """查询录制回调配置列表
 
-        查询录制配置接口
+        查询录制回调配置列表接口。通过指定条件，查询满足条件的配置列表。
 
-        :param ListRecordConfigsRequest request
-        :return: ListRecordConfigsResponse
+        :param ListRecordCallbackConfigsRequest request
+        :return: ListRecordCallbackConfigsResponse
         """
-        return self.list_record_configs_with_http_info(request)
+        return self.list_record_callback_configs_with_http_info(request)
 
-    def list_record_configs_with_http_info(self, request):
-        """查询录制配置
+    def list_record_callback_configs_with_http_info(self, request):
+        """查询录制回调配置列表
 
-        查询录制配置接口
+        查询录制回调配置列表接口。通过指定条件，查询满足条件的配置列表。
 
-        :param ListRecordConfigsRequest request
-        :return: ListRecordConfigsResponse
+        :param ListRecordCallbackConfigsRequest request
+        :return: ListRecordCallbackConfigsResponse
         """
 
-        all_params = ['domain', 'app_name', 'stream_name', 'page', 'size', 'record_type']
+        all_params = ['publish_domain', 'app', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -864,18 +988,14 @@ class LiveClient(Client):
         path_params = {}
 
         query_params = []
-        if 'domain' in local_var_params:
-            query_params.append(('domain', local_var_params['domain']))
-        if 'app_name' in local_var_params:
-            query_params.append(('app_name', local_var_params['app_name']))
-        if 'stream_name' in local_var_params:
-            query_params.append(('stream_name', local_var_params['stream_name']))
-        if 'page' in local_var_params:
-            query_params.append(('page', local_var_params['page']))
-        if 'size' in local_var_params:
-            query_params.append(('size', local_var_params['size']))
-        if 'record_type' in local_var_params:
-            query_params.append(('record_type', local_var_params['record_type']))
+        if 'publish_domain' in local_var_params:
+            query_params.append(('publish_domain', local_var_params['publish_domain']))
+        if 'app' in local_var_params:
+            query_params.append(('app', local_var_params['app']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -893,14 +1013,87 @@ class LiveClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/{project_id}/record/config',
+            resource_path='/v1/{project_id}/record/callbacks',
             method='GET',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ListRecordConfigsResponse',
+            response_type='ListRecordCallbackConfigsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_record_rules(self, request):
+        """查询录制规则列表
+
+        查询录制规则列表接口，通过指定条件，查询满足条件的录制规则列表。
+
+        :param ListRecordRulesRequest request
+        :return: ListRecordRulesResponse
+        """
+        return self.list_record_rules_with_http_info(request)
+
+    def list_record_rules_with_http_info(self, request):
+        """查询录制规则列表
+
+        查询录制规则列表接口，通过指定条件，查询满足条件的录制规则列表。
+
+        :param ListRecordRulesRequest request
+        :return: ListRecordRulesResponse
+        """
+
+        all_params = ['publish_domain', 'app', 'stream', 'record_type', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'publish_domain' in local_var_params:
+            query_params.append(('publish_domain', local_var_params['publish_domain']))
+        if 'app' in local_var_params:
+            query_params.append(('app', local_var_params['app']))
+        if 'stream' in local_var_params:
+            query_params.append(('stream', local_var_params['stream']))
+        if 'record_type' in local_var_params:
+            query_params.append(('record_type', local_var_params['record_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/record/rules',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListRecordRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -980,75 +1173,6 @@ class LiveClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_bandwidth(self, request):
-        """查询直播加速的带宽数据
-
-        查询直播加速的播流域名网络带宽监控数据
-
-        :param ShowBandwidthRequest request
-        :return: ShowBandwidthResponse
-        """
-        return self.show_bandwidth_with_http_info(request)
-
-    def show_bandwidth_with_http_info(self, request):
-        """查询直播加速的带宽数据
-
-        查询直播加速的播流域名网络带宽监控数据
-
-        :param ShowBandwidthRequest request
-        :return: ShowBandwidthResponse
-        """
-
-        all_params = ['domain', 'start_time', 'end_time', 'step']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'domain' in local_var_params:
-            query_params.append(('domain', local_var_params['domain']))
-        if 'start_time' in local_var_params:
-            query_params.append(('start_time', local_var_params['start_time']))
-        if 'end_time' in local_var_params:
-            query_params.append(('end_time', local_var_params['end_time']))
-        if 'step' in local_var_params:
-            query_params.append(('step', local_var_params['step']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/stream/bandwidth',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def show_domain(self, request):
         """查询直播域名
 
@@ -1112,26 +1236,26 @@ class LiveClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_online_users(self, request):
-        """查询直播播放在线人数
+    def show_record_callback_config(self, request):
+        """查询录制回调配置
 
-        查询加速的直播播放在线人数
+        查询录制回调配置接口
 
-        :param ShowOnlineUsersRequest request
-        :return: ShowOnlineUsersResponse
+        :param ShowRecordCallbackConfigRequest request
+        :return: ShowRecordCallbackConfigResponse
         """
-        return self.show_online_users_with_http_info(request)
+        return self.show_record_callback_config_with_http_info(request)
 
-    def show_online_users_with_http_info(self, request):
-        """查询直播播放在线人数
+    def show_record_callback_config_with_http_info(self, request):
+        """查询录制回调配置
 
-        查询加速的直播播放在线人数
+        查询录制回调配置接口
 
-        :param ShowOnlineUsersRequest request
-        :return: ShowOnlineUsersResponse
+        :param ShowRecordCallbackConfigRequest request
+        :return: ShowRecordCallbackConfigResponse
         """
 
-        all_params = ['domain', 'app_name', 'stream_name', 'start_time', 'end_time', 'step']
+        all_params = ['id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1140,20 +1264,10 @@ class LiveClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
 
         query_params = []
-        if 'domain' in local_var_params:
-            query_params.append(('domain', local_var_params['domain']))
-        if 'app_name' in local_var_params:
-            query_params.append(('app_name', local_var_params['app_name']))
-        if 'stream_name' in local_var_params:
-            query_params.append(('stream_name', local_var_params['stream_name']))
-        if 'start_time' in local_var_params:
-            query_params.append(('start_time', local_var_params['start_time']))
-        if 'end_time' in local_var_params:
-            query_params.append(('end_time', local_var_params['end_time']))
-        if 'step' in local_var_params:
-            query_params.append(('step', local_var_params['step']))
 
         header_params = {}
 
@@ -1171,40 +1285,40 @@ class LiveClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/{project_id}/stream/users',
+            resource_path='/v1/{project_id}/record/callbacks/{id}',
             method='GET',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowOnlineUsersResponse',
+            response_type='ShowRecordCallbackConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def show_traffic(self, request):
-        """查询直播加速的流量数据
+    def show_record_rule(self, request):
+        """查询录制规则配置
 
-        查询直播加速的播流域名网络流量监控数据
+        查询录制规则接口
 
-        :param ShowTrafficRequest request
-        :return: ShowTrafficResponse
+        :param ShowRecordRuleRequest request
+        :return: ShowRecordRuleResponse
         """
-        return self.show_traffic_with_http_info(request)
+        return self.show_record_rule_with_http_info(request)
 
-    def show_traffic_with_http_info(self, request):
-        """查询直播加速的流量数据
+    def show_record_rule_with_http_info(self, request):
+        """查询录制规则配置
 
-        查询直播加速的播流域名网络流量监控数据
+        查询录制规则接口
 
-        :param ShowTrafficRequest request
-        :return: ShowTrafficResponse
+        :param ShowRecordRuleRequest request
+        :return: ShowRecordRuleResponse
         """
 
-        all_params = ['domain', 'start_time', 'end_time', 'step']
+        all_params = ['id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1213,16 +1327,10 @@ class LiveClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
 
         query_params = []
-        if 'domain' in local_var_params:
-            query_params.append(('domain', local_var_params['domain']))
-        if 'start_time' in local_var_params:
-            query_params.append(('start_time', local_var_params['start_time']))
-        if 'end_time' in local_var_params:
-            query_params.append(('end_time', local_var_params['end_time']))
-        if 'step' in local_var_params:
-            query_params.append(('step', local_var_params['step']))
 
         header_params = {}
 
@@ -1240,14 +1348,14 @@ class LiveClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/{project_id}/stream/traffic',
+            resource_path='/v1/{project_id}/record/rules/{id}',
             method='GET',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowTrafficResponse',
+            response_type='ShowRecordRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1380,6 +1488,136 @@ class LiveClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateDomainResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_record_callback_config(self, request):
+        """修改录制回调配置
+
+        修改录制回调配置接口
+
+        :param UpdateRecordCallbackConfigRequest request
+        :return: UpdateRecordCallbackConfigResponse
+        """
+        return self.update_record_callback_config_with_http_info(request)
+
+    def update_record_callback_config_with_http_info(self, request):
+        """修改录制回调配置
+
+        修改录制回调配置接口
+
+        :param UpdateRecordCallbackConfigRequest request
+        :return: UpdateRecordCallbackConfigResponse
+        """
+
+        all_params = ['id', 'update_record_callback_config_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/record/callbacks/{id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateRecordCallbackConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_record_rule(self, request):
+        """修改录制规则
+
+        修改录制规则接口，如果规则修改后，修改后的规则对正在录制的流无效，对新的流有效。
+
+        :param UpdateRecordRuleRequest request
+        :return: UpdateRecordRuleResponse
+        """
+        return self.update_record_rule_with_http_info(request)
+
+    def update_record_rule_with_http_info(self, request):
+        """修改录制规则
+
+        修改录制规则接口，如果规则修改后，修改后的规则对正在录制的流无效，对新的流有效。
+
+        :param UpdateRecordRuleRequest request
+        :return: UpdateRecordRuleResponse
+        """
+
+        all_params = ['id', 'update_record_rule_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/record/rules/{id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateRecordRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

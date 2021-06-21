@@ -34,11 +34,13 @@ class ShowTemplateDetailResponse(SdkResponse):
         'region': 'str',
         'project_id': 'str',
         'project_name': 'str',
+        'create_time': 'str',
+        'last_modify_time': 'str',
         'is_watch': 'bool',
         'description': 'str',
         'parameter': 'list[TemplateParam]',
-        'flow': 'object',
-        'states': 'object'
+        'flow': 'dict(str, dict(str, str))',
+        'states': 'dict(str, object)'
     }
 
     attribute_map = {
@@ -53,6 +55,8 @@ class ShowTemplateDetailResponse(SdkResponse):
         'region': 'region',
         'project_id': 'project_id',
         'project_name': 'project_name',
+        'create_time': 'create_time',
+        'last_modify_time': 'last_modify_time',
         'is_watch': 'is_watch',
         'description': 'description',
         'parameter': 'parameter',
@@ -60,7 +64,7 @@ class ShowTemplateDetailResponse(SdkResponse):
         'states': 'states'
     }
 
-    def __init__(self, template_id=None, template_name=None, template_type=None, user_id=None, user_name=None, domain_id=None, domain_name=None, is_build_in=None, region=None, project_id=None, project_name=None, is_watch=None, description=None, parameter=None, flow=None, states=None):
+    def __init__(self, template_id=None, template_name=None, template_type=None, user_id=None, user_name=None, domain_id=None, domain_name=None, is_build_in=None, region=None, project_id=None, project_name=None, create_time=None, last_modify_time=None, is_watch=None, description=None, parameter=None, flow=None, states=None):
         """ShowTemplateDetailResponse - a model defined in huaweicloud sdk"""
         
         super(ShowTemplateDetailResponse, self).__init__()
@@ -76,6 +80,8 @@ class ShowTemplateDetailResponse(SdkResponse):
         self._region = None
         self._project_id = None
         self._project_name = None
+        self._create_time = None
+        self._last_modify_time = None
         self._is_watch = None
         self._description = None
         self._parameter = None
@@ -105,6 +111,10 @@ class ShowTemplateDetailResponse(SdkResponse):
             self.project_id = project_id
         if project_name is not None:
             self.project_name = project_name
+        if create_time is not None:
+            self.create_time = create_time
+        if last_modify_time is not None:
+            self.last_modify_time = last_modify_time
         if is_watch is not None:
             self.is_watch = is_watch
         if description is not None:
@@ -359,6 +369,50 @@ class ShowTemplateDetailResponse(SdkResponse):
         self._project_name = project_name
 
     @property
+    def create_time(self):
+        """Gets the create_time of this ShowTemplateDetailResponse.
+
+        创建时间
+
+        :return: The create_time of this ShowTemplateDetailResponse.
+        :rtype: str
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this ShowTemplateDetailResponse.
+
+        创建时间
+
+        :param create_time: The create_time of this ShowTemplateDetailResponse.
+        :type: str
+        """
+        self._create_time = create_time
+
+    @property
+    def last_modify_time(self):
+        """Gets the last_modify_time of this ShowTemplateDetailResponse.
+
+        修改时间
+
+        :return: The last_modify_time of this ShowTemplateDetailResponse.
+        :rtype: str
+        """
+        return self._last_modify_time
+
+    @last_modify_time.setter
+    def last_modify_time(self, last_modify_time):
+        """Sets the last_modify_time of this ShowTemplateDetailResponse.
+
+        修改时间
+
+        :param last_modify_time: The last_modify_time of this ShowTemplateDetailResponse.
+        :type: str
+        """
+        self._last_modify_time = last_modify_time
+
+    @property
     def is_watch(self):
         """Gets the is_watch of this ShowTemplateDetailResponse.
 
@@ -428,10 +482,10 @@ class ShowTemplateDetailResponse(SdkResponse):
     def flow(self):
         """Gets the flow of this ShowTemplateDetailResponse.
 
-        编排flow，map类型数据
+        编排flow详情，描述流水线内各阶段任务的串并行关系。map类型数据，key为阶段名字，默认第一阶段initial，最后阶段为final，其余名字以'state_数字'标识。value为该阶段内任务(以'Task_数字'标识)以及后续阶段的标识。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
         :return: The flow of this ShowTemplateDetailResponse.
-        :rtype: object
+        :rtype: dict(str, dict(str, str))
         """
         return self._flow
 
@@ -439,10 +493,10 @@ class ShowTemplateDetailResponse(SdkResponse):
     def flow(self, flow):
         """Sets the flow of this ShowTemplateDetailResponse.
 
-        编排flow，map类型数据
+        编排flow详情，描述流水线内各阶段任务的串并行关系。map类型数据，key为阶段名字，默认第一阶段initial，最后阶段为final，其余名字以'state_数字'标识。value为该阶段内任务(以'Task_数字'标识)以及后续阶段的标识。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
         :param flow: The flow of this ShowTemplateDetailResponse.
-        :type: object
+        :type: dict(str, dict(str, str))
         """
         self._flow = flow
 
@@ -450,10 +504,10 @@ class ShowTemplateDetailResponse(SdkResponse):
     def states(self):
         """Gets the states of this ShowTemplateDetailResponse.
 
-        子任务states，map类型数据
+        编排State详情，map类型数据。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
         :return: The states of this ShowTemplateDetailResponse.
-        :rtype: object
+        :rtype: dict(str, object)
         """
         return self._states
 
@@ -461,10 +515,10 @@ class ShowTemplateDetailResponse(SdkResponse):
     def states(self, states):
         """Sets the states of this ShowTemplateDetailResponse.
 
-        子任务states，map类型数据
+        编排State详情，map类型数据。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
         :param states: The states of this ShowTemplateDetailResponse.
-        :type: object
+        :type: dict(str, object)
         """
         self._states = states
 

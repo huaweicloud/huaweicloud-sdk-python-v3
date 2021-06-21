@@ -50,7 +50,7 @@ class ShowHistoryTasksResponse(SdkResponse):
     def total(self):
         """Gets the total of this ShowHistoryTasksResponse.
 
-        总数。
+        总共的任务个数。
 
         :return: The total of this ShowHistoryTasksResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class ShowHistoryTasksResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ShowHistoryTasksResponse.
 
-        总数。
+        总共的任务个数。
 
         :param total: The total of this ShowHistoryTasksResponse.
         :type: int

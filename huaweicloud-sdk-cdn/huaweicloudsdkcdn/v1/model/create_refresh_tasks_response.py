@@ -23,11 +23,11 @@ class CreateRefreshTasksResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'refresh_task': 'RefreshPreheatingBody'
+        'refresh_task': 'RefreshTask'
     }
 
     attribute_map = {
-        'refresh_task': 'refreshTask'
+        'refresh_task': 'refresh_task'
     }
 
     def __init__(self, refresh_task=None):
@@ -47,7 +47,7 @@ class CreateRefreshTasksResponse(SdkResponse):
 
 
         :return: The refresh_task of this CreateRefreshTasksResponse.
-        :rtype: RefreshPreheatingBody
+        :rtype: RefreshTask
         """
         return self._refresh_task
 
@@ -57,7 +57,7 @@ class CreateRefreshTasksResponse(SdkResponse):
 
 
         :param refresh_task: The refresh_task of this CreateRefreshTasksResponse.
-        :type: RefreshPreheatingBody
+        :type: RefreshTask
         """
         self._refresh_task = refresh_task
 

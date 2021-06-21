@@ -23,11 +23,11 @@ class RefreshTaskRequest:
     sensitive_list = []
 
     openapi_types = {
-        'refresh_task': 'RefreshTaskRequestBody'
+        'refresh_task': 'RefreshTaskRequestRefreshTask'
     }
 
     attribute_map = {
-        'refresh_task': 'refreshTask'
+        'refresh_task': 'refresh_task'
     }
 
     def __init__(self, refresh_task=None):
@@ -38,8 +38,7 @@ class RefreshTaskRequest:
         self._refresh_task = None
         self.discriminator = None
 
-        if refresh_task is not None:
-            self.refresh_task = refresh_task
+        self.refresh_task = refresh_task
 
     @property
     def refresh_task(self):
@@ -47,7 +46,7 @@ class RefreshTaskRequest:
 
 
         :return: The refresh_task of this RefreshTaskRequest.
-        :rtype: RefreshTaskRequestBody
+        :rtype: RefreshTaskRequestRefreshTask
         """
         return self._refresh_task
 
@@ -57,7 +56,7 @@ class RefreshTaskRequest:
 
 
         :param refresh_task: The refresh_task of this RefreshTaskRequest.
-        :type: RefreshTaskRequestBody
+        :type: RefreshTaskRequestRefreshTask
         """
         self._refresh_task = refresh_task
 

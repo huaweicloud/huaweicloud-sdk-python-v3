@@ -117,7 +117,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
     def task_type(self):
         """Gets the task_type of this ShowHistoryTaskDetailsResponse.
 
-        刷新的类型， 其值可以为refresh或preheating。
+        任务的类型， 其值可以为refresh或preheating。
 
         :return: The task_type of this ShowHistoryTaskDetailsResponse.
         :rtype: str
@@ -128,7 +128,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
     def task_type(self, task_type):
         """Sets the task_type of this ShowHistoryTaskDetailsResponse.
 
-        刷新的类型， 其值可以为refresh或preheating。
+        任务的类型， 其值可以为refresh或preheating。
 
         :param task_type: The task_type of this ShowHistoryTaskDetailsResponse.
         :type: str
@@ -139,7 +139,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowHistoryTaskDetailsResponse.
 
-        刷新结果。task_done表示刷新成功，task_inprocess表示刷新中。
+        任务执行结果。task_done表示成功，task_inprocess表示处理中。
 
         :return: The status of this ShowHistoryTaskDetailsResponse.
         :rtype: str
@@ -150,7 +150,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowHistoryTaskDetailsResponse.
 
-        刷新结果。task_done表示刷新成功，task_inprocess表示刷新中。
+        任务执行结果。task_done表示成功，task_inprocess表示处理中。
 
         :param status: The status of this ShowHistoryTaskDetailsResponse.
         :type: str
@@ -161,7 +161,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
     def urls(self):
         """Gets the urls of this ShowHistoryTaskDetailsResponse.
 
-        本次刷新时提交的URL列表。
+        本次提交的url列表。
 
         :return: The urls of this ShowHistoryTaskDetailsResponse.
         :rtype: list[UrlObject]
@@ -172,7 +172,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
     def urls(self, urls):
         """Sets the urls of this ShowHistoryTaskDetailsResponse.
 
-        本次刷新时提交的URL列表。
+        本次提交的url列表。
 
         :param urls: The urls of this ShowHistoryTaskDetailsResponse.
         :type: list[UrlObject]

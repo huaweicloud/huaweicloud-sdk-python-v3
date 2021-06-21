@@ -11,7 +11,6 @@ from huaweicloudsdkcloudpipeline.v2.model.batch_show_pipelines_status_response i
 from huaweicloudsdkcloudpipeline.v2.model.constraint import Constraint
 from huaweicloudsdkcloudpipeline.v2.model.create_pipeline_by_template_request import CreatePipelineByTemplateRequest
 from huaweicloudsdkcloudpipeline.v2.model.create_pipeline_by_template_response import CreatePipelineByTemplateResponse
-from huaweicloudsdkcloudpipeline.v2.model.flow_item import FlowItem
 from huaweicloudsdkcloudpipeline.v2.model.list_pipleine_build_result_request import ListPipleineBuildResultRequest
 from huaweicloudsdkcloudpipeline.v2.model.list_pipleine_build_result_response import ListPipleineBuildResultResponse
 from huaweicloudsdkcloudpipeline.v2.model.list_templates_request import ListTemplatesRequest
@@ -45,7 +44,6 @@ from huaweicloudsdkcloudpipeline.v2.model.stop_pipeline_new_request import StopP
 from huaweicloudsdkcloudpipeline.v2.model.stop_pipeline_new_response import StopPipelineNewResponse
 from huaweicloudsdkcloudpipeline.v2.model.template_cddl import TemplateCddl
 from huaweicloudsdkcloudpipeline.v2.model.template_param import TemplateParam
-from huaweicloudsdkcloudpipeline.v2.model.template_state import TemplateState
 from huaweicloudsdkcloudpipeline.v2.model.template_view import TemplateView
 from huaweicloudsdkcloudpipeline.v2.model.workflow import Workflow
 

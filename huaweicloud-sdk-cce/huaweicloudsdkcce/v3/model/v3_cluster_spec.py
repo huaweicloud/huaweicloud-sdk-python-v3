@@ -426,7 +426,7 @@ class V3ClusterSpec:
     def kube_proxy_mode(self):
         """Gets the kube_proxy_mode of this V3ClusterSpec.
 
-        服务转发模式，支持以下两种实现：  iptables：社区传统的kube-proxy模式，完全以iptables规则的方式来实现service负载均衡。该方式最主要的问题是在服务多的时候产生太多的iptables规则，非增量式更新会引入一定的时延，大规模情况下有明显的性能问题。  ipvs：主导开发并在社区获得广泛支持的kube-proxy模式，采用增量式更新，吞吐更高，速度更快，并可以保证service更新期间连接保持不断开，适用于大规模场景。   >此参数目前仅在响应中体现，创建集群时请在**extendParam**中配置此参数。 
+        服务转发模式，支持以下两种实现： - iptables：社区传统的kube-proxy模式，完全以iptables规则的方式来实现service负载均衡。该方式最主要的问题是在服务多的时候产生太多的iptables规则，非增量式更新会引入一定的时延，大规模情况下有明显的性能问题。 - ipvs：主导开发并在社区获得广泛支持的kube-proxy模式，采用增量式更新，吞吐更高，速度更快，并可以保证service更新期间连接保持不断开，适用于大规模场景。 
 
         :return: The kube_proxy_mode of this V3ClusterSpec.
         :rtype: str
@@ -437,7 +437,7 @@ class V3ClusterSpec:
     def kube_proxy_mode(self, kube_proxy_mode):
         """Sets the kube_proxy_mode of this V3ClusterSpec.
 
-        服务转发模式，支持以下两种实现：  iptables：社区传统的kube-proxy模式，完全以iptables规则的方式来实现service负载均衡。该方式最主要的问题是在服务多的时候产生太多的iptables规则，非增量式更新会引入一定的时延，大规模情况下有明显的性能问题。  ipvs：主导开发并在社区获得广泛支持的kube-proxy模式，采用增量式更新，吞吐更高，速度更快，并可以保证service更新期间连接保持不断开，适用于大规模场景。   >此参数目前仅在响应中体现，创建集群时请在**extendParam**中配置此参数。 
+        服务转发模式，支持以下两种实现： - iptables：社区传统的kube-proxy模式，完全以iptables规则的方式来实现service负载均衡。该方式最主要的问题是在服务多的时候产生太多的iptables规则，非增量式更新会引入一定的时延，大规模情况下有明显的性能问题。 - ipvs：主导开发并在社区获得广泛支持的kube-proxy模式，采用增量式更新，吞吐更高，速度更快，并可以保证service更新期间连接保持不断开，适用于大规模场景。 
 
         :param kube_proxy_mode: The kube_proxy_mode of this V3ClusterSpec.
         :type: str
@@ -448,7 +448,7 @@ class V3ClusterSpec:
     def az(self):
         """Gets the az of this V3ClusterSpec.
 
-        可用区（仅查询返回字段）
+        可用区（仅查询返回字段）, CCE支持的可用区请参考[[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws)[[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk)获取。 
 
         :return: The az of this V3ClusterSpec.
         :rtype: str
@@ -459,7 +459,7 @@ class V3ClusterSpec:
     def az(self, az):
         """Sets the az of this V3ClusterSpec.
 
-        可用区（仅查询返回字段）
+        可用区（仅查询返回字段）, CCE支持的可用区请参考[[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws)[[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk)获取。 
 
         :param az: The az of this V3ClusterSpec.
         :type: str

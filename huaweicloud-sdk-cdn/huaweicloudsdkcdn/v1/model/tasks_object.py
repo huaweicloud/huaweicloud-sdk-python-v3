@@ -227,7 +227,7 @@ class TasksObject:
     def total(self):
         """Gets the total of this TasksObject.
 
-        总共的任务个数。
+        url总数。
 
         :return: The total of this TasksObject.
         :rtype: int
@@ -238,7 +238,7 @@ class TasksObject:
     def total(self, total):
         """Sets the total of this TasksObject.
 
-        总共的任务个数。
+        url总数。
 
         :param total: The total of this TasksObject.
         :type: int

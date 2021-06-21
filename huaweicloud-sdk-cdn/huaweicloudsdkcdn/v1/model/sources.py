@@ -123,7 +123,7 @@ class Sources:
     def enable_obs_web_hosting(self):
         """Gets the enable_obs_web_hosting of this Sources.
 
-        是否开启Obs静态网站托管(0表示关闭,1表示则为开启)
+        是否开启Obs静态网站托管(0表示关闭,1表示则为开启)，源站类型为obs_bucket时传递。
 
         :return: The enable_obs_web_hosting of this Sources.
         :rtype: int
@@ -134,7 +134,7 @@ class Sources:
     def enable_obs_web_hosting(self, enable_obs_web_hosting):
         """Sets the enable_obs_web_hosting of this Sources.
 
-        是否开启Obs静态网站托管(0表示关闭,1表示则为开启)
+        是否开启Obs静态网站托管(0表示关闭,1表示则为开启)，源站类型为obs_bucket时传递。
 
         :param enable_obs_web_hosting: The enable_obs_web_hosting of this Sources.
         :type: int

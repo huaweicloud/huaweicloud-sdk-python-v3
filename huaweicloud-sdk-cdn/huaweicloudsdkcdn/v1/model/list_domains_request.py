@@ -29,7 +29,6 @@ class ListDomainsRequest:
         'service_area': 'str',
         'page_size': 'int',
         'page_number': 'int',
-        'user_domain_id': 'str',
         'enterprise_project_id': 'str'
     }
 
@@ -40,11 +39,10 @@ class ListDomainsRequest:
         'service_area': 'service_area',
         'page_size': 'page_size',
         'page_number': 'page_number',
-        'user_domain_id': 'user_domain_id',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, domain_name=None, business_type=None, domain_status=None, service_area=None, page_size=None, page_number=None, user_domain_id=None, enterprise_project_id=None):
+    def __init__(self, domain_name=None, business_type=None, domain_status=None, service_area=None, page_size=None, page_number=None, enterprise_project_id=None):
         """ListDomainsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -55,7 +53,6 @@ class ListDomainsRequest:
         self._service_area = None
         self._page_size = None
         self._page_number = None
-        self._user_domain_id = None
         self._enterprise_project_id = None
         self.discriminator = None
 
@@ -71,8 +68,6 @@ class ListDomainsRequest:
             self.page_size = page_size
         if page_number is not None:
             self.page_number = page_number
-        if user_domain_id is not None:
-            self.user_domain_id = user_domain_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 
@@ -207,28 +202,6 @@ class ListDomainsRequest:
         :type: int
         """
         self._page_number = page_number
-
-    @property
-    def user_domain_id(self):
-        """Gets the user_domain_id of this ListDomainsRequest.
-
-        域名所属用户的domain_id。
-
-        :return: The user_domain_id of this ListDomainsRequest.
-        :rtype: str
-        """
-        return self._user_domain_id
-
-    @user_domain_id.setter
-    def user_domain_id(self, user_domain_id):
-        """Sets the user_domain_id of this ListDomainsRequest.
-
-        域名所属用户的domain_id。
-
-        :param user_domain_id: The user_domain_id of this ListDomainsRequest.
-        :type: str
-        """
-        self._user_domain_id = user_domain_id
 
     @property
     def enterprise_project_id(self):

@@ -64,7 +64,10 @@ class ChangeBaremetalNameResponsesServers:
         'os_ext_srv_att_rroot_device_name': 'str',
         'os_ext_srv_att_ruser_data': 'str',
         'locked': 'bool',
-        'tags': 'list[str]'
+        'tags': 'list[str]',
+        'server_tags': 'list[SystemTags]',
+        'enterprise_project_id': 'str',
+        'osscheduler_hints': 'ServerOsSchedulerHints'
     }
 
     attribute_map = {
@@ -109,10 +112,13 @@ class ChangeBaremetalNameResponsesServers:
         'os_ext_srv_att_rroot_device_name': 'OS-EXT-SRV-ATTR:root_device_name',
         'os_ext_srv_att_ruser_data': 'OS-EXT-SRV-ATTR:user_data',
         'locked': 'locked',
-        'tags': 'tags'
+        'tags': 'tags',
+        'server_tags': 'server_tags',
+        'enterprise_project_id': 'enterprise_project_id',
+        'osscheduler_hints': 'os:scheduler_hints'
     }
 
-    def __init__(self, name=None, id=None, status=None, created=None, updated=None, flavor=None, image=None, tenant_id=None, key_name=None, user_id=None, metadata=None, host_id=None, addresses=None, security_groups=None, links=None, os_dc_fdisk_config=None, os_ext_a_zavailability_zone=None, os_ext_srv_att_rhost=None, os_ext_srv_att_rhypervisor_hostname=None, os_ext_srv_att_rinstance_name=None, os_ext_st_spower_state=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, access_i_pv4=None, access_i_pv6=None, fault=None, config_drive=None, progress=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None):
+    def __init__(self, name=None, id=None, status=None, created=None, updated=None, flavor=None, image=None, tenant_id=None, key_name=None, user_id=None, metadata=None, host_id=None, addresses=None, security_groups=None, links=None, os_dc_fdisk_config=None, os_ext_a_zavailability_zone=None, os_ext_srv_att_rhost=None, os_ext_srv_att_rhypervisor_hostname=None, os_ext_srv_att_rinstance_name=None, os_ext_st_spower_state=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, access_i_pv4=None, access_i_pv6=None, fault=None, config_drive=None, progress=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, server_tags=None, enterprise_project_id=None, osscheduler_hints=None):
         """ChangeBaremetalNameResponsesServers - a model defined in huaweicloud sdk"""
         
         
@@ -159,6 +165,9 @@ class ChangeBaremetalNameResponsesServers:
         self._os_ext_srv_att_ruser_data = None
         self._locked = None
         self._tags = None
+        self._server_tags = None
+        self._enterprise_project_id = None
+        self._osscheduler_hints = None
         self.discriminator = None
 
         if name is not None:
@@ -245,6 +254,12 @@ class ChangeBaremetalNameResponsesServers:
             self.locked = locked
         if tags is not None:
             self.tags = tags
+        if server_tags is not None:
+            self.server_tags = server_tags
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if osscheduler_hints is not None:
+            self.osscheduler_hints = osscheduler_hints
 
     @property
     def name(self):
@@ -1159,6 +1174,70 @@ class ChangeBaremetalNameResponsesServers:
         :type: list[str]
         """
         self._tags = tags
+
+    @property
+    def server_tags(self):
+        """Gets the server_tags of this ChangeBaremetalNameResponsesServers.
+
+        裸金属服务器的系统标签
+
+        :return: The server_tags of this ChangeBaremetalNameResponsesServers.
+        :rtype: list[SystemTags]
+        """
+        return self._server_tags
+
+    @server_tags.setter
+    def server_tags(self, server_tags):
+        """Sets the server_tags of this ChangeBaremetalNameResponsesServers.
+
+        裸金属服务器的系统标签
+
+        :param server_tags: The server_tags of this ChangeBaremetalNameResponsesServers.
+        :type: list[SystemTags]
+        """
+        self._server_tags = server_tags
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ChangeBaremetalNameResponsesServers.
+
+        enterprise_project_id。
+
+        :return: The enterprise_project_id of this ChangeBaremetalNameResponsesServers.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ChangeBaremetalNameResponsesServers.
+
+        enterprise_project_id。
+
+        :param enterprise_project_id: The enterprise_project_id of this ChangeBaremetalNameResponsesServers.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def osscheduler_hints(self):
+        """Gets the osscheduler_hints of this ChangeBaremetalNameResponsesServers.
+
+
+        :return: The osscheduler_hints of this ChangeBaremetalNameResponsesServers.
+        :rtype: ServerOsSchedulerHints
+        """
+        return self._osscheduler_hints
+
+    @osscheduler_hints.setter
+    def osscheduler_hints(self, osscheduler_hints):
+        """Sets the osscheduler_hints of this ChangeBaremetalNameResponsesServers.
+
+
+        :param osscheduler_hints: The osscheduler_hints of this ChangeBaremetalNameResponsesServers.
+        :type: ServerOsSchedulerHints
+        """
+        self._osscheduler_hints = osscheduler_hints
 
     def to_dict(self):
         """Returns the model properties as a dict"""

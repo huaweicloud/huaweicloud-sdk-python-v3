@@ -24,7 +24,7 @@ class ShowGroupsRespGroupAssignment:
 
     openapi_types = {
         'topic': 'str',
-        'partitions': 'list[str]'
+        'partitions': 'list[int]'
     }
 
     attribute_map = {
@@ -75,7 +75,7 @@ class ShowGroupsRespGroupAssignment:
         分区列表。
 
         :return: The partitions of this ShowGroupsRespGroupAssignment.
-        :rtype: list[str]
+        :rtype: list[int]
         """
         return self._partitions
 
@@ -86,7 +86,7 @@ class ShowGroupsRespGroupAssignment:
         分区列表。
 
         :param partitions: The partitions of this ShowGroupsRespGroupAssignment.
-        :type: list[str]
+        :type: list[int]
         """
         self._partitions = partitions
 

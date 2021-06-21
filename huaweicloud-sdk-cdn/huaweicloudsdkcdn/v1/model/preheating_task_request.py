@@ -23,11 +23,11 @@ class PreheatingTaskRequest:
     sensitive_list = []
 
     openapi_types = {
-        'preheating_task': 'PreheatingTaskBody'
+        'preheating_task': 'PreheatingTaskRequestPreheatingTask'
     }
 
     attribute_map = {
-        'preheating_task': 'preheatingTask'
+        'preheating_task': 'preheating_task'
     }
 
     def __init__(self, preheating_task=None):
@@ -38,8 +38,7 @@ class PreheatingTaskRequest:
         self._preheating_task = None
         self.discriminator = None
 
-        if preheating_task is not None:
-            self.preheating_task = preheating_task
+        self.preheating_task = preheating_task
 
     @property
     def preheating_task(self):
@@ -47,7 +46,7 @@ class PreheatingTaskRequest:
 
 
         :return: The preheating_task of this PreheatingTaskRequest.
-        :rtype: PreheatingTaskBody
+        :rtype: PreheatingTaskRequestPreheatingTask
         """
         return self._preheating_task
 
@@ -57,7 +56,7 @@ class PreheatingTaskRequest:
 
 
         :param preheating_task: The preheating_task of this PreheatingTaskRequest.
-        :type: PreheatingTaskBody
+        :type: PreheatingTaskRequestPreheatingTask
         """
         self._preheating_task = preheating_task
 

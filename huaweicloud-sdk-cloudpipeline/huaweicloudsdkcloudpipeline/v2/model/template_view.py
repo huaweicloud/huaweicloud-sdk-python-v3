@@ -26,6 +26,7 @@ class TemplateView:
         'template_id': 'str',
         'template_name': 'str',
         'template_type': 'str',
+        'template_url': 'str',
         'user_id': 'str',
         'user_name': 'str',
         'domain_id': 'str',
@@ -34,17 +35,23 @@ class TemplateView:
         'region': 'str',
         'project_id': 'str',
         'project_name': 'str',
+        'create_time': 'str',
+        'last_modify_time': 'str',
         'is_watch': 'bool',
         'description': 'str',
         'parameter': 'list[TemplateParam]',
-        'flow': 'object',
-        'states': 'object'
+        'flow': 'dict(str, dict(str, str))',
+        'states': 'dict(str, object)',
+        'can_update': 'bool',
+        'can_delete': 'bool',
+        'need_hub': 'bool'
     }
 
     attribute_map = {
         'template_id': 'template_id',
         'template_name': 'template_name',
         'template_type': 'template_type',
+        'template_url': 'template_url',
         'user_id': 'user_id',
         'user_name': 'user_name',
         'domain_id': 'domain_id',
@@ -53,14 +60,19 @@ class TemplateView:
         'region': 'region',
         'project_id': 'project_id',
         'project_name': 'project_name',
+        'create_time': 'create_time',
+        'last_modify_time': 'last_modify_time',
         'is_watch': 'is_watch',
         'description': 'description',
         'parameter': 'parameter',
         'flow': 'flow',
-        'states': 'states'
+        'states': 'states',
+        'can_update': 'can_update',
+        'can_delete': 'can_delete',
+        'need_hub': 'need_hub'
     }
 
-    def __init__(self, template_id=None, template_name=None, template_type=None, user_id=None, user_name=None, domain_id=None, domain_name=None, is_build_in=None, region=None, project_id=None, project_name=None, is_watch=None, description=None, parameter=None, flow=None, states=None):
+    def __init__(self, template_id=None, template_name=None, template_type=None, template_url=None, user_id=None, user_name=None, domain_id=None, domain_name=None, is_build_in=None, region=None, project_id=None, project_name=None, create_time=None, last_modify_time=None, is_watch=None, description=None, parameter=None, flow=None, states=None, can_update=None, can_delete=None, need_hub=None):
         """TemplateView - a model defined in huaweicloud sdk"""
         
         
@@ -68,6 +80,7 @@ class TemplateView:
         self._template_id = None
         self._template_name = None
         self._template_type = None
+        self._template_url = None
         self._user_id = None
         self._user_name = None
         self._domain_id = None
@@ -76,16 +89,22 @@ class TemplateView:
         self._region = None
         self._project_id = None
         self._project_name = None
+        self._create_time = None
+        self._last_modify_time = None
         self._is_watch = None
         self._description = None
         self._parameter = None
         self._flow = None
         self._states = None
+        self._can_update = None
+        self._can_delete = None
+        self._need_hub = None
         self.discriminator = None
 
         self.template_id = template_id
         self.template_name = template_name
         self.template_type = template_type
+        self.template_url = template_url
         self.user_id = user_id
         self.user_name = user_name
         self.domain_id = domain_id
@@ -94,11 +113,16 @@ class TemplateView:
         self.region = region
         self.project_id = project_id
         self.project_name = project_name
+        self.create_time = create_time
+        self.last_modify_time = last_modify_time
         self.is_watch = is_watch
         self.description = description
         self.parameter = parameter
         self.flow = flow
         self.states = states
+        self.can_update = can_update
+        self.can_delete = can_delete
+        self.need_hub = need_hub
 
     @property
     def template_id(self):
@@ -165,6 +189,28 @@ class TemplateView:
         :type: str
         """
         self._template_type = template_type
+
+    @property
+    def template_url(self):
+        """Gets the template_url of this TemplateView.
+
+        模板编辑URL
+
+        :return: The template_url of this TemplateView.
+        :rtype: str
+        """
+        return self._template_url
+
+    @template_url.setter
+    def template_url(self, template_url):
+        """Sets the template_url of this TemplateView.
+
+        模板编辑URL
+
+        :param template_url: The template_url of this TemplateView.
+        :type: str
+        """
+        self._template_url = template_url
 
     @property
     def user_id(self):
@@ -280,7 +326,7 @@ class TemplateView:
     def region(self):
         """Gets the region of this TemplateView.
 
-        region
+        系统模板region为Cloud Pipeline。自定义模板region为实际region
 
         :return: The region of this TemplateView.
         :rtype: str
@@ -291,7 +337,7 @@ class TemplateView:
     def region(self, region):
         """Sets the region of this TemplateView.
 
-        region
+        系统模板region为Cloud Pipeline。自定义模板region为实际region
 
         :param region: The region of this TemplateView.
         :type: str
@@ -341,6 +387,50 @@ class TemplateView:
         :type: str
         """
         self._project_name = project_name
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this TemplateView.
+
+        创建时间
+
+        :return: The create_time of this TemplateView.
+        :rtype: str
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this TemplateView.
+
+        创建时间
+
+        :param create_time: The create_time of this TemplateView.
+        :type: str
+        """
+        self._create_time = create_time
+
+    @property
+    def last_modify_time(self):
+        """Gets the last_modify_time of this TemplateView.
+
+        修改时间
+
+        :return: The last_modify_time of this TemplateView.
+        :rtype: str
+        """
+        return self._last_modify_time
+
+    @last_modify_time.setter
+    def last_modify_time(self, last_modify_time):
+        """Sets the last_modify_time of this TemplateView.
+
+        修改时间
+
+        :param last_modify_time: The last_modify_time of this TemplateView.
+        :type: str
+        """
+        self._last_modify_time = last_modify_time
 
     @property
     def is_watch(self):
@@ -412,10 +502,10 @@ class TemplateView:
     def flow(self):
         """Gets the flow of this TemplateView.
 
-        编排flow，map类型数据
+        编排flow详情，描述流水线内各阶段任务的串并行关系。map类型数据，key为阶段名字，默认第一阶段initial，最后阶段为final，其余名字以'state_数字'标识。value为该阶段内任务(以'Task_数字'标识)以及后续阶段的标识。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
         :return: The flow of this TemplateView.
-        :rtype: object
+        :rtype: dict(str, dict(str, str))
         """
         return self._flow
 
@@ -423,10 +513,10 @@ class TemplateView:
     def flow(self, flow):
         """Sets the flow of this TemplateView.
 
-        编排flow，map类型数据
+        编排flow详情，描述流水线内各阶段任务的串并行关系。map类型数据，key为阶段名字，默认第一阶段initial，最后阶段为final，其余名字以'state_数字'标识。value为该阶段内任务(以'Task_数字'标识)以及后续阶段的标识。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
         :param flow: The flow of this TemplateView.
-        :type: object
+        :type: dict(str, dict(str, str))
         """
         self._flow = flow
 
@@ -434,10 +524,10 @@ class TemplateView:
     def states(self):
         """Gets the states of this TemplateView.
 
-        子任务states，map类型数据
+        编排State详情，map类型数据。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
         :return: The states of this TemplateView.
-        :rtype: object
+        :rtype: dict(str, object)
         """
         return self._states
 
@@ -445,12 +535,78 @@ class TemplateView:
     def states(self, states):
         """Sets the states of this TemplateView.
 
-        子任务states，map类型数据
+        编排State详情，map类型数据。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
         :param states: The states of this TemplateView.
-        :type: object
+        :type: dict(str, object)
         """
         self._states = states
+
+    @property
+    def can_update(self):
+        """Gets the can_update of this TemplateView.
+
+        是否可以修改
+
+        :return: The can_update of this TemplateView.
+        :rtype: bool
+        """
+        return self._can_update
+
+    @can_update.setter
+    def can_update(self, can_update):
+        """Sets the can_update of this TemplateView.
+
+        是否可以修改
+
+        :param can_update: The can_update of this TemplateView.
+        :type: bool
+        """
+        self._can_update = can_update
+
+    @property
+    def can_delete(self):
+        """Gets the can_delete of this TemplateView.
+
+        是否可以删除
+
+        :return: The can_delete of this TemplateView.
+        :rtype: bool
+        """
+        return self._can_delete
+
+    @can_delete.setter
+    def can_delete(self, can_delete):
+        """Sets the can_delete of this TemplateView.
+
+        是否可以删除
+
+        :param can_delete: The can_delete of this TemplateView.
+        :type: bool
+        """
+        self._can_delete = can_delete
+
+    @property
+    def need_hub(self):
+        """Gets the need_hub of this TemplateView.
+
+        是否需要代码仓库
+
+        :return: The need_hub of this TemplateView.
+        :rtype: bool
+        """
+        return self._need_hub
+
+    @need_hub.setter
+    def need_hub(self, need_hub):
+        """Sets the need_hub of this TemplateView.
+
+        是否需要代码仓库
+
+        :param need_hub: The need_hub of this TemplateView.
+        :type: bool
+        """
+        self._need_hub = need_hub
 
     def to_dict(self):
         """Returns the model properties as a dict"""

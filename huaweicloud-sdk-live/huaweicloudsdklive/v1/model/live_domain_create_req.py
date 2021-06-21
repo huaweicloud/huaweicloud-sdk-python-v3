@@ -26,6 +26,7 @@ class LiveDomainCreateReq:
         'domain': 'str',
         'domain_type': 'str',
         'region': 'str',
+        'service_area': 'str',
         'domain_source': 'DomainSourceInfo'
     }
 
@@ -33,10 +34,11 @@ class LiveDomainCreateReq:
         'domain': 'domain',
         'domain_type': 'domain_type',
         'region': 'region',
+        'service_area': 'service_area',
         'domain_source': 'domain_source'
     }
 
-    def __init__(self, domain=None, domain_type=None, region=None, domain_source=None):
+    def __init__(self, domain=None, domain_type=None, region=None, service_area=None, domain_source=None):
         """LiveDomainCreateReq - a model defined in huaweicloud sdk"""
         
         
@@ -44,12 +46,15 @@ class LiveDomainCreateReq:
         self._domain = None
         self._domain_type = None
         self._region = None
+        self._service_area = None
         self._domain_source = None
         self.discriminator = None
 
         self.domain = domain
         self.domain_type = domain_type
         self.region = region
+        if service_area is not None:
+            self.service_area = service_area
         if domain_source is not None:
             self.domain_source = domain_source
 
@@ -118,6 +123,28 @@ class LiveDomainCreateReq:
         :type: str
         """
         self._region = region
+
+    @property
+    def service_area(self):
+        """Gets the service_area of this LiveDomainCreateReq.
+
+        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
+
+        :return: The service_area of this LiveDomainCreateReq.
+        :rtype: str
+        """
+        return self._service_area
+
+    @service_area.setter
+    def service_area(self, service_area):
+        """Sets the service_area of this LiveDomainCreateReq.
+
+        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
+
+        :param service_area: The service_area of this LiveDomainCreateReq.
+        :type: str
+        """
+        self._service_area = service_area
 
     @property
     def domain_source(self):

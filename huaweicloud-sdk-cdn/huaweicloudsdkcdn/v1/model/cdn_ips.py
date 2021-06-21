@@ -24,7 +24,7 @@ class CdnIps:
 
     openapi_types = {
         'ip': 'str',
-        'belongs': 'str',
+        'belongs': 'bool',
         'region': 'str',
         'isp': 'str',
         'platform': 'str'
@@ -90,7 +90,7 @@ class CdnIps:
         是否是华为云CDN节点。
 
         :return: The belongs of this CdnIps.
-        :rtype: str
+        :rtype: bool
         """
         return self._belongs
 
@@ -101,7 +101,7 @@ class CdnIps:
         是否是华为云CDN节点。
 
         :param belongs: The belongs of this CdnIps.
-        :type: str
+        :type: bool
         """
         self._belongs = belongs
 

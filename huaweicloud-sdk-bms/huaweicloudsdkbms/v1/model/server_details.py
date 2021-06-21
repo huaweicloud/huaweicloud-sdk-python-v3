@@ -30,7 +30,7 @@ class ServerDetails:
         'updated': 'datetime',
         'tenant_id': 'str',
         'host_id': 'str',
-        'addresses': 'dict(str, list[AddressInfo])',
+        'addresses': 'Addresses',
         'key_name': 'str',
         'image': 'ImageInfo',
         'flavor': 'FlavorInfos',
@@ -409,10 +409,9 @@ class ServerDetails:
     def addresses(self):
         """Gets the addresses of this ServerDetails.
 
-        裸金属服务器的网络属性。详情请参见表3 addresses数据结构说明。
 
         :return: The addresses of this ServerDetails.
-        :rtype: dict(str, list[AddressInfo])
+        :rtype: Addresses
         """
         return self._addresses
 
@@ -420,10 +419,9 @@ class ServerDetails:
     def addresses(self, addresses):
         """Sets the addresses of this ServerDetails.
 
-        裸金属服务器的网络属性。详情请参见表3 addresses数据结构说明。
 
         :param addresses: The addresses of this ServerDetails.
-        :type: dict(str, list[AddressInfo])
+        :type: Addresses
         """
         self._addresses = addresses
 

@@ -129,7 +129,7 @@ class V3NodeSpec:
     def flavor(self):
         """Gets the flavor of this V3NodeSpec.
 
-        节点的规格
+        节点的规格，CCE支持的节点规格请参考[[节点规格说明](https://support.huaweicloud.com/api-cce/cce_02_0368.html)](tag:hws)[[节点规格说明](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0368.html)](tag:hws_hk)获取。 
 
         :return: The flavor of this V3NodeSpec.
         :rtype: str
@@ -140,7 +140,7 @@ class V3NodeSpec:
     def flavor(self, flavor):
         """Sets the flavor of this V3NodeSpec.
 
-        节点的规格
+        节点的规格，CCE支持的节点规格请参考[[节点规格说明](https://support.huaweicloud.com/api-cce/cce_02_0368.html)](tag:hws)[[节点规格说明](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0368.html)](tag:hws_hk)获取。 
 
         :param flavor: The flavor of this V3NodeSpec.
         :type: str
@@ -151,7 +151,7 @@ class V3NodeSpec:
     def az(self):
         """Gets the az of this V3NodeSpec.
 
-          节点所在的可用区名. 底层实际存在，位于该用户物理可用区组之内的可用区
+        待创建节点所在的可用区，需要指定可用区（AZ）的名称。CCE支持的可用区请参考[[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws)[[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk)获取。 
 
         :return: The az of this V3NodeSpec.
         :rtype: str
@@ -162,7 +162,7 @@ class V3NodeSpec:
     def az(self, az):
         """Sets the az of this V3NodeSpec.
 
-          节点所在的可用区名. 底层实际存在，位于该用户物理可用区组之内的可用区
+        待创建节点所在的可用区，需要指定可用区（AZ）的名称。CCE支持的可用区请参考[[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws)[[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk)获取。 
 
         :param az: The az of this V3NodeSpec.
         :type: str

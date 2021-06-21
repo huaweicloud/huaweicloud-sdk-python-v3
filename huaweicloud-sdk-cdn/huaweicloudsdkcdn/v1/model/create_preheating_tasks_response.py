@@ -23,11 +23,11 @@ class CreatePreheatingTasksResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'preheating_task': 'RefreshPreheatingBody'
+        'preheating_task': 'PreheatingTask'
     }
 
     attribute_map = {
-        'preheating_task': 'preheatingTask'
+        'preheating_task': 'preheating_task'
     }
 
     def __init__(self, preheating_task=None):
@@ -47,7 +47,7 @@ class CreatePreheatingTasksResponse(SdkResponse):
 
 
         :return: The preheating_task of this CreatePreheatingTasksResponse.
-        :rtype: RefreshPreheatingBody
+        :rtype: PreheatingTask
         """
         return self._preheating_task
 
@@ -57,7 +57,7 @@ class CreatePreheatingTasksResponse(SdkResponse):
 
 
         :param preheating_task: The preheating_task of this CreatePreheatingTasksResponse.
-        :type: RefreshPreheatingBody
+        :type: PreheatingTask
         """
         self._preheating_task = preheating_task
 

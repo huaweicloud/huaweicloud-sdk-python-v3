@@ -162,7 +162,7 @@ class CdnAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/cdn/preheatingtasks',
+            resource_path='/v1.0/cdn/content/preheating-tasks',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -227,7 +227,7 @@ class CdnAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/cdn/refreshtasks',
+            resource_path='/v1.0/cdn/content/refresh-tasks',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -455,7 +455,7 @@ class CdnAsyncClient(Client):
         :return: ListDomainsResponse
         """
 
-        all_params = ['domain_name', 'business_type', 'domain_status', 'service_area', 'page_size', 'page_number', 'user_domain_id', 'enterprise_project_id']
+        all_params = ['domain_name', 'business_type', 'domain_status', 'service_area', 'page_size', 'page_number', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -478,8 +478,6 @@ class CdnAsyncClient(Client):
             query_params.append(('page_size', local_var_params['page_size']))
         if 'page_number' in local_var_params:
             query_params.append(('page_number', local_var_params['page_number']))
-        if 'user_domain_id' in local_var_params:
-            query_params.append(('user_domain_id', local_var_params['user_domain_id']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
@@ -1345,23 +1343,23 @@ class CdnAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_refer_async(self, request):
+    def show_referer_async(self, request):
         """查询Referer过滤规则
 
         查询Referer过滤规则。
 
-        :param ShowReferRequest request
-        :return: ShowReferResponse
+        :param ShowRefererRequest request
+        :return: ShowRefererResponse
         """
-        return self.show_refer_with_http_info(request)
+        return self.show_referer_with_http_info(request)
 
-    def show_refer_with_http_info(self, request):
+    def show_referer_with_http_info(self, request):
         """查询Referer过滤规则
 
         查询Referer过滤规则。
 
-        :param ShowReferRequest request
-        :return: ShowReferResponse
+        :param ShowRefererRequest request
+        :return: ShowRefererResponse
         """
 
         all_params = ['domain_id', 'enterprise_project_id']
@@ -1403,7 +1401,7 @@ class CdnAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowReferResponse',
+            response_type='ShowRefererResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
