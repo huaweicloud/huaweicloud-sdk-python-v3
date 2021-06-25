@@ -25,10 +25,10 @@ class UserRoleVO:
     openapi_types = {
         'role': 'str',
         'comment': 'str',
-        'is_transfer': 'str',
+        'is_transfer': 'bool',
         'privileges': 'str',
         'inherits_roles': 'list[str]',
-        'selected': 'str'
+        'selected': 'bool'
     }
 
     attribute_map = {
@@ -114,7 +114,7 @@ class UserRoleVO:
         是否支持迁移。
 
         :return: The is_transfer of this UserRoleVO.
-        :rtype: str
+        :rtype: bool
         """
         return self._is_transfer
 
@@ -125,7 +125,7 @@ class UserRoleVO:
         是否支持迁移。
 
         :param is_transfer: The is_transfer of this UserRoleVO.
-        :type: str
+        :type: bool
         """
         self._is_transfer = is_transfer
 
@@ -180,7 +180,7 @@ class UserRoleVO:
         是否选择。
 
         :return: The selected of this UserRoleVO.
-        :rtype: str
+        :rtype: bool
         """
         return self._selected
 
@@ -191,7 +191,7 @@ class UserRoleVO:
         是否选择。
 
         :param selected: The selected of this UserRoleVO.
-        :type: str
+        :type: bool
         """
         self._selected = selected
 

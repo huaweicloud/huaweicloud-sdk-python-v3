@@ -36,7 +36,6 @@ class V3NodeSpec:
         'taints': 'list[Taint]',
         'k8s_tags': 'dict(str, str)',
         'ecs_group_id': 'str',
-        'fault_domain': 'str',
         'dedicated_host_id': 'str',
         'offload_node': 'bool',
         'user_tags': 'list[UserTag]',
@@ -58,7 +57,6 @@ class V3NodeSpec:
         'taints': 'taints',
         'k8s_tags': 'k8sTags',
         'ecs_group_id': 'ecsGroupId',
-        'fault_domain': 'faultDomain',
         'dedicated_host_id': 'dedicatedHostId',
         'offload_node': 'offloadNode',
         'user_tags': 'userTags',
@@ -66,7 +64,7 @@ class V3NodeSpec:
         'extend_param': 'extendParam'
     }
 
-    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, k8s_tags=None, ecs_group_id=None, fault_domain=None, dedicated_host_id=None, offload_node=None, user_tags=None, runtime=None, extend_param=None):
+    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, offload_node=None, user_tags=None, runtime=None, extend_param=None):
         """V3NodeSpec - a model defined in huaweicloud sdk"""
         
         
@@ -84,7 +82,6 @@ class V3NodeSpec:
         self._taints = None
         self._k8s_tags = None
         self._ecs_group_id = None
-        self._fault_domain = None
         self._dedicated_host_id = None
         self._offload_node = None
         self._user_tags = None
@@ -112,8 +109,6 @@ class V3NodeSpec:
             self.k8s_tags = k8s_tags
         if ecs_group_id is not None:
             self.ecs_group_id = ecs_group_id
-        if fault_domain is not None:
-            self.fault_domain = fault_domain
         if dedicated_host_id is not None:
             self.dedicated_host_id = dedicated_host_id
         if offload_node is not None:
@@ -402,28 +397,6 @@ class V3NodeSpec:
         :type: str
         """
         self._ecs_group_id = ecs_group_id
-
-    @property
-    def fault_domain(self):
-        """Gets the fault_domain of this V3NodeSpec.
-
-        云服务器故障域，将节点创建在指定故障域下。\\n >必须同时指定故障域策略的云服务器ID，且需要开启故障域特性开关 
-
-        :return: The fault_domain of this V3NodeSpec.
-        :rtype: str
-        """
-        return self._fault_domain
-
-    @fault_domain.setter
-    def fault_domain(self, fault_domain):
-        """Sets the fault_domain of this V3NodeSpec.
-
-        云服务器故障域，将节点创建在指定故障域下。\\n >必须同时指定故障域策略的云服务器ID，且需要开启故障域特性开关 
-
-        :param fault_domain: The fault_domain of this V3NodeSpec.
-        :type: str
-        """
-        self._fault_domain = fault_domain
 
     @property
     def dedicated_host_id(self):

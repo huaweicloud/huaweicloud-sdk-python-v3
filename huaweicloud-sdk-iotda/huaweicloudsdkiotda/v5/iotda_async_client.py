@@ -3356,7 +3356,7 @@ class IoTDAAsyncClient(Client):
         :return: CreateRuleActionResponse
         """
 
-        all_params = ['create_rule_action_request_body', 'instance_id', 'x_lb_service']
+        all_params = ['create_rule_action_request_body', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3371,8 +3371,6 @@ class IoTDAAsyncClient(Client):
         header_params = {}
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
-        if 'x_lb_service' in local_var_params:
-            header_params['x-LB-Service'] = local_var_params['x_lb_service']
 
         form_params = {}
 

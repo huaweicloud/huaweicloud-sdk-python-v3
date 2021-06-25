@@ -25,32 +25,27 @@ class DeleteNodeRequest:
     openapi_types = {
         'cluster_id': 'str',
         'node_id': 'str',
-        'error_status': 'str',
         'nodepool_scale_down': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
         'node_id': 'node_id',
-        'error_status': 'errorStatus',
         'nodepool_scale_down': 'nodepoolScaleDown'
     }
 
-    def __init__(self, cluster_id=None, node_id=None, error_status=None, nodepool_scale_down=None):
+    def __init__(self, cluster_id=None, node_id=None, nodepool_scale_down=None):
         """DeleteNodeRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._cluster_id = None
         self._node_id = None
-        self._error_status = None
         self._nodepool_scale_down = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
         self.node_id = node_id
-        if error_status is not None:
-            self.error_status = error_status
         if nodepool_scale_down is not None:
             self.nodepool_scale_down = nodepool_scale_down
 
@@ -97,28 +92,6 @@ class DeleteNodeRequest:
         :type: str
         """
         self._node_id = node_id
-
-    @property
-    def error_status(self):
-        """Gets the error_status of this DeleteNodeRequest.
-
-        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
-
-        :return: The error_status of this DeleteNodeRequest.
-        :rtype: str
-        """
-        return self._error_status
-
-    @error_status.setter
-    def error_status(self, error_status):
-        """Sets the error_status of this DeleteNodeRequest.
-
-        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
-
-        :param error_status: The error_status of this DeleteNodeRequest.
-        :type: str
-        """
-        self._error_status = error_status
 
     @property
     def nodepool_scale_down(self):

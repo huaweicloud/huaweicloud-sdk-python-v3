@@ -25,7 +25,7 @@ class AssociateDomainV2Request:
     openapi_types = {
         'instance_id': 'str',
         'group_id': 'str',
-        'body': 'DomainReq'
+        'body': 'UrlDomainCreate'
     }
 
     attribute_map = {
@@ -99,7 +99,7 @@ class AssociateDomainV2Request:
 
 
         :return: The body of this AssociateDomainV2Request.
-        :rtype: DomainReq
+        :rtype: UrlDomainCreate
         """
         return self._body
 
@@ -109,7 +109,7 @@ class AssociateDomainV2Request:
 
 
         :param body: The body of this AssociateDomainV2Request.
-        :type: DomainReq
+        :type: UrlDomainCreate
         """
         self._body = body
 

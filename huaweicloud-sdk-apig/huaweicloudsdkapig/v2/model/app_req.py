@@ -103,7 +103,7 @@ class AppReq:
     def app_key(self):
         """Gets the app_key of this AppReq.
 
-        APP的key。支持英文，数字，“_”,“-”,且只能以英文或数字开头，8 ~ 64个字符。 > 只支持部分region。
+        APP的key。支持英文，数字，“_”,“-”,且只能以英文或数字开头，8 ~ 64个字符。
 
         :return: The app_key of this AppReq.
         :rtype: str
@@ -114,7 +114,7 @@ class AppReq:
     def app_key(self, app_key):
         """Sets the app_key of this AppReq.
 
-        APP的key。支持英文，数字，“_”,“-”,且只能以英文或数字开头，8 ~ 64个字符。 > 只支持部分region。
+        APP的key。支持英文，数字，“_”,“-”,且只能以英文或数字开头，8 ~ 64个字符。
 
         :param app_key: The app_key of this AppReq.
         :type: str
@@ -125,7 +125,7 @@ class AppReq:
     def app_secret(self):
         """Gets the app_secret of this AppReq.
 
-        密钥。支持英文，数字，“_”,“-”,“_”,“!”,“@”,“#”,“$”,“%”且只能以英文或数字开头，8 ~ 64个字符。 > 只支持部分region。
+        密钥。支持英文，数字，“_”,“-”,“_”,“!”,“@”,“#”,“$”,“%”且只能以英文或数字开头，8 ~ 64个字符。
 
         :return: The app_secret of this AppReq.
         :rtype: str
@@ -136,7 +136,7 @@ class AppReq:
     def app_secret(self, app_secret):
         """Sets the app_secret of this AppReq.
 
-        密钥。支持英文，数字，“_”,“-”,“_”,“!”,“@”,“#”,“$”,“%”且只能以英文或数字开头，8 ~ 64个字符。 > 只支持部分region。
+        密钥。支持英文，数字，“_”,“-”,“_”,“!”,“@”,“#”,“$”,“%”且只能以英文或数字开头，8 ~ 64个字符。
 
         :param app_secret: The app_secret of this AppReq.
         :type: str

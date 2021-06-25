@@ -24,29 +24,24 @@ class ShowClusterRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'error_status': 'str',
         'detail': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'error_status': 'errorStatus',
         'detail': 'detail'
     }
 
-    def __init__(self, cluster_id=None, error_status=None, detail=None):
+    def __init__(self, cluster_id=None, detail=None):
         """ShowClusterRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._cluster_id = None
-        self._error_status = None
         self._detail = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
-        if error_status is not None:
-            self.error_status = error_status
         if detail is not None:
             self.detail = detail
 
@@ -71,28 +66,6 @@ class ShowClusterRequest:
         :type: str
         """
         self._cluster_id = cluster_id
-
-    @property
-    def error_status(self):
-        """Gets the error_status of this ShowClusterRequest.
-
-        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
-
-        :return: The error_status of this ShowClusterRequest.
-        :rtype: str
-        """
-        return self._error_status
-
-    @error_status.setter
-    def error_status(self, error_status):
-        """Sets the error_status of this ShowClusterRequest.
-
-        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
-
-        :param error_status: The error_status of this ShowClusterRequest.
-        :type: str
-        """
-        self._error_status = error_status
 
     @property
     def detail(self):

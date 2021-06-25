@@ -43,7 +43,9 @@ class ShowWebinarResponse(SdkResponse):
         'guest_join_uri': 'str',
         'guest_passwd': 'str',
         'audience_join_uri': 'str',
-        'audience_passwd': 'str'
+        'audience_passwd': 'str',
+        'notify_setting': 'OpenNotifySetting',
+        'attendees': 'list[str]'
     }
 
     attribute_map = {
@@ -67,10 +69,12 @@ class ShowWebinarResponse(SdkResponse):
         'guest_join_uri': 'guestJoinUri',
         'guest_passwd': 'guestPasswd',
         'audience_join_uri': 'audienceJoinUri',
-        'audience_passwd': 'audiencePasswd'
+        'audience_passwd': 'audiencePasswd',
+        'notify_setting': 'notifySetting',
+        'attendees': 'attendees'
     }
 
-    def __init__(self, conference_id=None, corp_id=None, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, state=None, scheduser_id=None, dept_name=None, scheduser_name=None, vmr_pkg_name=None, call_restriction=None, scope=None, audience_scope=None, chair_join_uri=None, chair_passwd=None, guest_join_uri=None, guest_passwd=None, audience_join_uri=None, audience_passwd=None):
+    def __init__(self, conference_id=None, corp_id=None, subject=None, description=None, start_time=None, duration=None, time_zone_id=None, state=None, scheduser_id=None, dept_name=None, scheduser_name=None, vmr_pkg_name=None, call_restriction=None, scope=None, audience_scope=None, chair_join_uri=None, chair_passwd=None, guest_join_uri=None, guest_passwd=None, audience_join_uri=None, audience_passwd=None, notify_setting=None, attendees=None):
         """ShowWebinarResponse - a model defined in huaweicloud sdk"""
         
         super(ShowWebinarResponse, self).__init__()
@@ -96,6 +100,8 @@ class ShowWebinarResponse(SdkResponse):
         self._guest_passwd = None
         self._audience_join_uri = None
         self._audience_passwd = None
+        self._notify_setting = None
+        self._attendees = None
         self.discriminator = None
 
         if conference_id is not None:
@@ -140,6 +146,10 @@ class ShowWebinarResponse(SdkResponse):
             self.audience_join_uri = audience_join_uri
         if audience_passwd is not None:
             self.audience_passwd = audience_passwd
+        if notify_setting is not None:
+            self.notify_setting = notify_setting
+        if attendees is not None:
+            self.attendees = attendees
 
     @property
     def conference_id(self):
@@ -600,6 +610,46 @@ class ShowWebinarResponse(SdkResponse):
         :type: str
         """
         self._audience_passwd = audience_passwd
+
+    @property
+    def notify_setting(self):
+        """Gets the notify_setting of this ShowWebinarResponse.
+
+
+        :return: The notify_setting of this ShowWebinarResponse.
+        :rtype: OpenNotifySetting
+        """
+        return self._notify_setting
+
+    @notify_setting.setter
+    def notify_setting(self, notify_setting):
+        """Sets the notify_setting of this ShowWebinarResponse.
+
+
+        :param notify_setting: The notify_setting of this ShowWebinarResponse.
+        :type: OpenNotifySetting
+        """
+        self._notify_setting = notify_setting
+
+    @property
+    def attendees(self):
+        """Gets the attendees of this ShowWebinarResponse.
+
+
+        :return: The attendees of this ShowWebinarResponse.
+        :rtype: list[str]
+        """
+        return self._attendees
+
+    @attendees.setter
+    def attendees(self, attendees):
+        """Sets the attendees of this ShowWebinarResponse.
+
+
+        :param attendees: The attendees of this ShowWebinarResponse.
+        :type: list[str]
+        """
+        self._attendees = attendees
 
     def to_dict(self):
         """Returns the model properties as a dict"""

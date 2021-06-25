@@ -26,6 +26,8 @@ class ApigRegion:
 
     AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://apig.ap-southeast-3.myhuaweicloud.com")
 
+    RU_NORTHWEST_2 = Region(id="ru-northwest-2", endpoint="https://apig.ru-northwest-2.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "cn-north-1": CN_NORTH_1,
@@ -35,6 +37,7 @@ class ApigRegion:
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-3": AP_SOUTHEAST_3,
+        "ru-northwest-2": RU_NORTHWEST_2,
     }
 
     @staticmethod

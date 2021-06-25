@@ -98,7 +98,7 @@ class Referer:
     def include_empty(self):
         """Gets the include_empty of this Referer.
 
-        是否包含空Referer。如果是黑名单并开启该选项，则表示无referer不允许访问。如果是白名单并开启该选项，则表示无referer允许访问。默认不包含。
+        是否包含空Referer。如果是黑名单并开启该选项，则表示无referer不允许访问。如果是白名单并开启该选项，则表示无referer允许访问。默认值false。
 
         :return: The include_empty of this Referer.
         :rtype: bool
@@ -109,7 +109,7 @@ class Referer:
     def include_empty(self, include_empty):
         """Sets the include_empty of this Referer.
 
-        是否包含空Referer。如果是黑名单并开启该选项，则表示无referer不允许访问。如果是白名单并开启该选项，则表示无referer允许访问。默认不包含。
+        是否包含空Referer。如果是黑名单并开启该选项，则表示无referer不允许访问。如果是白名单并开启该选项，则表示无referer允许访问。默认值false。
 
         :param include_empty: The include_empty of this Referer.
         :type: bool

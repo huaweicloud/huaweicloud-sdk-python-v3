@@ -24,7 +24,7 @@ class WordsRegionList:
 
     openapi_types = {
         'type': 'str',
-        'words_block_count': 'str',
+        'words_block_count': 'int',
         'words_block_list': 'list[GeneralTableWordsBlockList]'
     }
 
@@ -77,7 +77,7 @@ class WordsRegionList:
         子区域识别文字块数目。 
 
         :return: The words_block_count of this WordsRegionList.
-        :rtype: str
+        :rtype: int
         """
         return self._words_block_count
 
@@ -88,7 +88,7 @@ class WordsRegionList:
         子区域识别文字块数目。 
 
         :param words_block_count: The words_block_count of this WordsRegionList.
-        :type: str
+        :type: int
         """
         self._words_block_count = words_block_count
 

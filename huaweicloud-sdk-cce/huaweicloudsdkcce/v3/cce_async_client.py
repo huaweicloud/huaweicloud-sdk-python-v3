@@ -656,7 +656,7 @@ class CceAsyncClient(Client):
         :return: DeleteClusterResponse
         """
 
-        all_params = ['cluster_id', 'error_status', 'delete_efs', 'delete_eni', 'delete_evs', 'delete_net', 'delete_obs', 'delete_sfs']
+        all_params = ['cluster_id', 'delete_efs', 'delete_eni', 'delete_evs', 'delete_net', 'delete_obs', 'delete_sfs']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -669,8 +669,6 @@ class CceAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
-        if 'error_status' in local_var_params:
-            query_params.append(('errorStatus', local_var_params['error_status']))
         if 'delete_efs' in local_var_params:
             query_params.append(('delete_efs', local_var_params['delete_efs']))
         if 'delete_eni' in local_var_params:
@@ -733,7 +731,7 @@ class CceAsyncClient(Client):
         :return: DeleteNodeResponse
         """
 
-        all_params = ['cluster_id', 'node_id', 'error_status', 'nodepool_scale_down']
+        all_params = ['cluster_id', 'node_id', 'nodepool_scale_down']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -748,8 +746,6 @@ class CceAsyncClient(Client):
             path_params['node_id'] = local_var_params['node_id']
 
         query_params = []
-        if 'error_status' in local_var_params:
-            query_params.append(('errorStatus', local_var_params['error_status']))
         if 'nodepool_scale_down' in local_var_params:
             query_params.append(('nodepoolScaleDown', local_var_params['nodepool_scale_down']))
 
@@ -802,7 +798,7 @@ class CceAsyncClient(Client):
         :return: DeleteNodePoolResponse
         """
 
-        all_params = ['cluster_id', 'nodepool_id', 'error_status']
+        all_params = ['cluster_id', 'nodepool_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -817,8 +813,6 @@ class CceAsyncClient(Client):
             path_params['nodepool_id'] = local_var_params['nodepool_id']
 
         query_params = []
-        if 'error_status' in local_var_params:
-            query_params.append(('errorStatus', local_var_params['error_status']))
 
         header_params = {}
 
@@ -932,7 +926,7 @@ class CceAsyncClient(Client):
         :return: ListAddonInstancesResponse
         """
 
-        all_params = ['cluster_id', 'addon_template_name']
+        all_params = ['cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -943,8 +937,6 @@ class CceAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'addon_template_name' in local_var_params:
-            query_params.append(('addon_template_name', local_var_params['addon_template_name']))
         if 'cluster_id' in local_var_params:
             query_params.append(('cluster_id', local_var_params['cluster_id']))
 
@@ -997,7 +989,7 @@ class CceAsyncClient(Client):
         :return: ListAddonTemplatesResponse
         """
 
-        all_params = ['addon_template_name', 'base_update_addon_version', 'cluster_id', 'newest', 'version']
+        all_params = ['addon_template_name']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1010,14 +1002,6 @@ class CceAsyncClient(Client):
         query_params = []
         if 'addon_template_name' in local_var_params:
             query_params.append(('addon_template_name', local_var_params['addon_template_name']))
-        if 'base_update_addon_version' in local_var_params:
-            query_params.append(('base_update_addon_version', local_var_params['base_update_addon_version']))
-        if 'cluster_id' in local_var_params:
-            query_params.append(('cluster_id', local_var_params['cluster_id']))
-        if 'newest' in local_var_params:
-            query_params.append(('newest', local_var_params['newest']))
-        if 'version' in local_var_params:
-            query_params.append(('version', local_var_params['version']))
 
         header_params = {}
 
@@ -1068,7 +1052,7 @@ class CceAsyncClient(Client):
         :return: ListClustersResponse
         """
 
-        all_params = ['error_status', 'detail', 'status', 'type', 'version']
+        all_params = ['detail', 'status', 'type', 'version']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1079,8 +1063,6 @@ class CceAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'error_status' in local_var_params:
-            query_params.append(('errorStatus', local_var_params['error_status']))
         if 'detail' in local_var_params:
             query_params.append(('detail', local_var_params['detail']))
         if 'status' in local_var_params:
@@ -1139,7 +1121,7 @@ class CceAsyncClient(Client):
         :return: ListNodePoolsResponse
         """
 
-        all_params = ['cluster_id', 'error_status', 'show_default_node_pool']
+        all_params = ['cluster_id', 'show_default_node_pool']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1152,8 +1134,6 @@ class CceAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
-        if 'error_status' in local_var_params:
-            query_params.append(('errorStatus', local_var_params['error_status']))
         if 'show_default_node_pool' in local_var_params:
             query_params.append(('showDefaultNodePool', local_var_params['show_default_node_pool']))
 
@@ -1206,7 +1186,7 @@ class CceAsyncClient(Client):
         :return: ListNodesResponse
         """
 
-        all_params = ['cluster_id', 'error_status']
+        all_params = ['cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1219,8 +1199,6 @@ class CceAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
-        if 'error_status' in local_var_params:
-            query_params.append(('errorStatus', local_var_params['error_status']))
 
         header_params = {}
 
@@ -1336,7 +1314,7 @@ class CceAsyncClient(Client):
         :return: ShowClusterResponse
         """
 
-        all_params = ['cluster_id', 'error_status', 'detail']
+        all_params = ['cluster_id', 'detail']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1349,8 +1327,6 @@ class CceAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
-        if 'error_status' in local_var_params:
-            query_params.append(('errorStatus', local_var_params['error_status']))
         if 'detail' in local_var_params:
             query_params.append(('detail', local_var_params['detail']))
 
@@ -1466,7 +1442,7 @@ class CceAsyncClient(Client):
         :return: ShowNodeResponse
         """
 
-        all_params = ['cluster_id', 'node_id', 'error_status']
+        all_params = ['cluster_id', 'node_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1481,8 +1457,6 @@ class CceAsyncClient(Client):
             path_params['node_id'] = local_var_params['node_id']
 
         query_params = []
-        if 'error_status' in local_var_params:
-            query_params.append(('errorStatus', local_var_params['error_status']))
 
         header_params = {}
 
@@ -1533,7 +1507,7 @@ class CceAsyncClient(Client):
         :return: ShowNodePoolResponse
         """
 
-        all_params = ['cluster_id', 'nodepool_id', 'error_status']
+        all_params = ['cluster_id', 'nodepool_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1548,8 +1522,6 @@ class CceAsyncClient(Client):
             path_params['nodepool_id'] = local_var_params['nodepool_id']
 
         query_params = []
-        if 'error_status' in local_var_params:
-            query_params.append(('errorStatus', local_var_params['error_status']))
 
         header_params = {}
 
@@ -1665,7 +1637,7 @@ class CceAsyncClient(Client):
         :return: UpdateClusterResponse
         """
 
-        all_params = ['cluster_id', 'update_cluster_request_body', 'error_status']
+        all_params = ['cluster_id', 'update_cluster_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1678,8 +1650,6 @@ class CceAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
-        if 'error_status' in local_var_params:
-            query_params.append(('errorStatus', local_var_params['error_status']))
 
         header_params = {}
 
@@ -1732,7 +1702,7 @@ class CceAsyncClient(Client):
         :return: UpdateNodeResponse
         """
 
-        all_params = ['cluster_id', 'node_id', 'update_node_request_body', 'error_status']
+        all_params = ['cluster_id', 'node_id', 'update_node_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1747,8 +1717,6 @@ class CceAsyncClient(Client):
             path_params['node_id'] = local_var_params['node_id']
 
         query_params = []
-        if 'error_status' in local_var_params:
-            query_params.append(('errorStatus', local_var_params['error_status']))
 
         header_params = {}
 
@@ -1801,7 +1769,7 @@ class CceAsyncClient(Client):
         :return: UpdateNodePoolResponse
         """
 
-        all_params = ['cluster_id', 'nodepool_id', 'update_node_pool_request_body', 'error_status']
+        all_params = ['cluster_id', 'nodepool_id', 'update_node_pool_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1816,8 +1784,6 @@ class CceAsyncClient(Client):
             path_params['nodepool_id'] = local_var_params['nodepool_id']
 
         query_params = []
-        if 'error_status' in local_var_params:
-            query_params.append(('errorStatus', local_var_params['error_status']))
 
         header_params = {}
 

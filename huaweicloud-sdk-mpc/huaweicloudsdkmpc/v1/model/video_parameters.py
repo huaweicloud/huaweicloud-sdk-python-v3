@@ -33,7 +33,6 @@ class VideoParameters:
         'max_iframes_interval': 'int',
         'bframes_count': 'int',
         'frame_rate': 'int',
-        'sync_timestamp': 'bool',
         'width': 'int',
         'height': 'int',
         'aspect_ratio': 'int',
@@ -53,7 +52,6 @@ class VideoParameters:
         'max_iframes_interval': 'max_iframes_interval',
         'bframes_count': 'bframes_count',
         'frame_rate': 'frame_rate',
-        'sync_timestamp': 'sync_timestamp',
         'width': 'width',
         'height': 'height',
         'aspect_ratio': 'aspect_ratio',
@@ -62,7 +60,7 @@ class VideoParameters:
         'sr_factor': 'sr_factor'
     }
 
-    def __init__(self, output_policy=None, codec=None, bitrate=None, profile=None, level=None, preset=None, ref_frames_count=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, sync_timestamp=None, width=None, height=None, aspect_ratio=None, black_cut=None, gop_structure=None, sr_factor=None):
+    def __init__(self, output_policy=None, codec=None, bitrate=None, profile=None, level=None, preset=None, ref_frames_count=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, width=None, height=None, aspect_ratio=None, black_cut=None, gop_structure=None, sr_factor=None):
         """VideoParameters - a model defined in huaweicloud sdk"""
         
         
@@ -77,7 +75,6 @@ class VideoParameters:
         self._max_iframes_interval = None
         self._bframes_count = None
         self._frame_rate = None
-        self._sync_timestamp = None
         self._width = None
         self._height = None
         self._aspect_ratio = None
@@ -106,8 +103,6 @@ class VideoParameters:
             self.bframes_count = bframes_count
         if frame_rate is not None:
             self.frame_rate = frame_rate
-        if sync_timestamp is not None:
-            self.sync_timestamp = sync_timestamp
         if width is not None:
             self.width = width
         if height is not None:
@@ -340,28 +335,6 @@ class VideoParameters:
         :type: int
         """
         self._frame_rate = frame_rate
-
-    @property
-    def sync_timestamp(self):
-        """Gets the sync_timestamp of this VideoParameters.
-
-        降帧率时是否同步调整时间戳 在配置降帧率场景下有效。  取值范围：  - false：不调整时间戳 - true：根据 frame_rate 配置的帧率，重新计算时间戳 
-
-        :return: The sync_timestamp of this VideoParameters.
-        :rtype: bool
-        """
-        return self._sync_timestamp
-
-    @sync_timestamp.setter
-    def sync_timestamp(self, sync_timestamp):
-        """Sets the sync_timestamp of this VideoParameters.
-
-        降帧率时是否同步调整时间戳 在配置降帧率场景下有效。  取值范围：  - false：不调整时间戳 - true：根据 frame_rate 配置的帧率，重新计算时间戳 
-
-        :param sync_timestamp: The sync_timestamp of this VideoParameters.
-        :type: bool
-        """
-        self._sync_timestamp = sync_timestamp
 
     @property
     def width(self):

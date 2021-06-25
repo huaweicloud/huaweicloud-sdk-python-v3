@@ -9,7 +9,7 @@ import six
 from huaweicloudsdkcore.sdk_response import SdkResponse
 
 
-class RecognizeIDCardResponse(SdkResponse):
+class RecognizeIdCardResponse(SdkResponse):
 
 
     """
@@ -23,7 +23,7 @@ class RecognizeIDCardResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'IDCardResult'
+        'result': 'IdCardResult'
     }
 
     attribute_map = {
@@ -31,9 +31,9 @@ class RecognizeIDCardResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RecognizeIDCardResponse - a model defined in huaweicloud sdk"""
+        """RecognizeIdCardResponse - a model defined in huaweicloud sdk"""
         
-        super(RecognizeIDCardResponse, self).__init__()
+        super(RecognizeIdCardResponse, self).__init__()
 
         self._result = None
         self.discriminator = None
@@ -43,21 +43,21 @@ class RecognizeIDCardResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeIDCardResponse.
+        """Gets the result of this RecognizeIdCardResponse.
 
 
-        :return: The result of this RecognizeIDCardResponse.
-        :rtype: IDCardResult
+        :return: The result of this RecognizeIdCardResponse.
+        :rtype: IdCardResult
         """
         return self._result
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeIDCardResponse.
+        """Sets the result of this RecognizeIdCardResponse.
 
 
-        :param result: The result of this RecognizeIDCardResponse.
-        :type: IDCardResult
+        :param result: The result of this RecognizeIdCardResponse.
+        :type: IdCardResult
         """
         self._result = result
 
@@ -98,7 +98,7 @@ class RecognizeIDCardResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RecognizeIDCardResponse):
+        if not isinstance(other, RecognizeIdCardResponse):
             return False
 
         return self.__dict__ == other.__dict__

@@ -71,7 +71,7 @@ class RefreshTaskRequestRefreshTask:
     def urls(self):
         """Gets the urls of this RefreshTaskRequestRefreshTask.
 
-        刷新urls
+        输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，单个url的长度限制为10240字符，单次最多输入1000个url。
 
         :return: The urls of this RefreshTaskRequestRefreshTask.
         :rtype: list[str]
@@ -82,7 +82,7 @@ class RefreshTaskRequestRefreshTask:
     def urls(self, urls):
         """Sets the urls of this RefreshTaskRequestRefreshTask.
 
-        刷新urls
+        输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，单个url的长度限制为10240字符，单次最多输入1000个url。
 
         :param urls: The urls of this RefreshTaskRequestRefreshTask.
         :type: list[str]

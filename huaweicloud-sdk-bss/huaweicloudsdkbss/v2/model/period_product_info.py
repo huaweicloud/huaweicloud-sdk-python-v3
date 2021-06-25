@@ -153,7 +153,7 @@ class PeriodProductInfo:
     def resource_spec(self):
         """Gets the resource_spec of this PeriodProductInfo.
 
-        云服务产品的资源规格。如果是VM的资源规格，则需要在规格后面添加“.win”或“.linux”，例如“s2.small.1.linux”。具体请参见对应云服务的相关介绍。
+        云服务产品的资源规格。如果是VM的资源规格，则需要在规格后面添加“.win”或“.linux”，例如“s2.small.1.linux”。
 
         :return: The resource_spec of this PeriodProductInfo.
         :rtype: str
@@ -164,7 +164,7 @@ class PeriodProductInfo:
     def resource_spec(self, resource_spec):
         """Sets the resource_spec of this PeriodProductInfo.
 
-        云服务产品的资源规格。如果是VM的资源规格，则需要在规格后面添加“.win”或“.linux”，例如“s2.small.1.linux”。具体请参见对应云服务的相关介绍。
+        云服务产品的资源规格。如果是VM的资源规格，则需要在规格后面添加“.win”或“.linux”，例如“s2.small.1.linux”。
 
         :param resource_spec: The resource_spec of this PeriodProductInfo.
         :type: str

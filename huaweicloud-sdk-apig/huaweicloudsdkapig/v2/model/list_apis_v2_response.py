@@ -23,55 +23,31 @@ class ListApisV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total': 'int',
         'size': 'int',
+        'total': 'int',
         'apis': 'list[ApiInfoPerPage]'
     }
 
     attribute_map = {
-        'total': 'total',
         'size': 'size',
+        'total': 'total',
         'apis': 'apis'
     }
 
-    def __init__(self, total=None, size=None, apis=None):
+    def __init__(self, size=None, total=None, apis=None):
         """ListApisV2Response - a model defined in huaweicloud sdk"""
         
         super(ListApisV2Response, self).__init__()
 
-        self._total = None
         self._size = None
+        self._total = None
         self._apis = None
         self.discriminator = None
 
-        if total is not None:
-            self.total = total
-        if size is not None:
-            self.size = size
+        self.size = size
+        self.total = total
         if apis is not None:
             self.apis = apis
-
-    @property
-    def total(self):
-        """Gets the total of this ListApisV2Response.
-
-        满足条件的分组总数
-
-        :return: The total of this ListApisV2Response.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ListApisV2Response.
-
-        满足条件的分组总数
-
-        :param total: The total of this ListApisV2Response.
-        :type: int
-        """
-        self._total = total
 
     @property
     def size(self):
@@ -94,6 +70,28 @@ class ListApisV2Response(SdkResponse):
         :type: int
         """
         self._size = size
+
+    @property
+    def total(self):
+        """Gets the total of this ListApisV2Response.
+
+        满足条件的记录数
+
+        :return: The total of this ListApisV2Response.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ListApisV2Response.
+
+        满足条件的记录数
+
+        :param total: The total of this ListApisV2Response.
+        :type: int
+        """
+        self._total = total
 
     @property
     def apis(self):

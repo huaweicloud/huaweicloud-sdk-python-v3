@@ -25,18 +25,16 @@ class AddActionReq:
     openapi_types = {
         'rule_id': 'str',
         'channel': 'str',
-        'channel_detail': 'ChannelDetail',
-        'batch': 'bool'
+        'channel_detail': 'ChannelDetail'
     }
 
     attribute_map = {
         'rule_id': 'rule_id',
         'channel': 'channel',
-        'channel_detail': 'channel_detail',
-        'batch': 'batch'
+        'channel_detail': 'channel_detail'
     }
 
-    def __init__(self, rule_id=None, channel=None, channel_detail=None, batch=None):
+    def __init__(self, rule_id=None, channel=None, channel_detail=None):
         """AddActionReq - a model defined in huaweicloud sdk"""
         
         
@@ -44,14 +42,11 @@ class AddActionReq:
         self._rule_id = None
         self._channel = None
         self._channel_detail = None
-        self._batch = None
         self.discriminator = None
 
         self.rule_id = rule_id
         self.channel = channel
         self.channel_detail = channel_detail
-        if batch is not None:
-            self.batch = batch
 
     @property
     def rule_id(self):
@@ -116,28 +111,6 @@ class AddActionReq:
         :type: ChannelDetail
         """
         self._channel_detail = channel_detail
-
-    @property
-    def batch(self):
-        """Gets the batch of this AddActionReq.
-
-        **参数说明**：是否支持批量接收推送消息。
-
-        :return: The batch of this AddActionReq.
-        :rtype: bool
-        """
-        return self._batch
-
-    @batch.setter
-    def batch(self, batch):
-        """Sets the batch of this AddActionReq.
-
-        **参数说明**：是否支持批量接收推送消息。
-
-        :param batch: The batch of this AddActionReq.
-        :type: bool
-        """
-        self._batch = batch
 
     def to_dict(self):
         """Returns the model properties as a dict"""

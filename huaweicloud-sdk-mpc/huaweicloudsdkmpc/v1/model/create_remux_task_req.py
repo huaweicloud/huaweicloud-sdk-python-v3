@@ -26,19 +26,17 @@ class CreateRemuxTaskReq:
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
         'user_data': 'str',
-        'output_param': 'RemuxOutputParam',
-        'notify_url': 'str'
+        'output_param': 'RemuxOutputParam'
     }
 
     attribute_map = {
         'input': 'input',
         'output': 'output',
         'user_data': 'user_data',
-        'output_param': 'output_param',
-        'notify_url': 'notify_url'
+        'output_param': 'output_param'
     }
 
-    def __init__(self, input=None, output=None, user_data=None, output_param=None, notify_url=None):
+    def __init__(self, input=None, output=None, user_data=None, output_param=None):
         """CreateRemuxTaskReq - a model defined in huaweicloud sdk"""
         
         
@@ -47,7 +45,6 @@ class CreateRemuxTaskReq:
         self._output = None
         self._user_data = None
         self._output_param = None
-        self._notify_url = None
         self.discriminator = None
 
         if input is not None:
@@ -58,8 +55,6 @@ class CreateRemuxTaskReq:
             self.user_data = user_data
         if output_param is not None:
             self.output_param = output_param
-        if notify_url is not None:
-            self.notify_url = notify_url
 
     @property
     def input(self):
@@ -142,28 +137,6 @@ class CreateRemuxTaskReq:
         :type: RemuxOutputParam
         """
         self._output_param = output_param
-
-    @property
-    def notify_url(self):
-        """Gets the notify_url of this CreateRemuxTaskReq.
-
-        提供给mpe通知回调用的的url 
-
-        :return: The notify_url of this CreateRemuxTaskReq.
-        :rtype: str
-        """
-        return self._notify_url
-
-    @notify_url.setter
-    def notify_url(self, notify_url):
-        """Sets the notify_url of this CreateRemuxTaskReq.
-
-        提供给mpe通知回调用的的url 
-
-        :param notify_url: The notify_url of this CreateRemuxTaskReq.
-        :type: str
-        """
-        self._notify_url = notify_url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

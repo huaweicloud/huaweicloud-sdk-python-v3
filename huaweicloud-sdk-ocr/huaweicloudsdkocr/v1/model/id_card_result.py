@@ -9,7 +9,7 @@ import six
 
 
 
-class IDCardResult:
+class IdCardResult:
 
 
     """
@@ -47,7 +47,7 @@ class IDCardResult:
     }
 
     def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, issue=None, valid_from=None, valid_to=None):
-        """IDCardResult - a model defined in huaweicloud sdk"""
+        """IdCardResult - a model defined in huaweicloud sdk"""
         
         
 
@@ -83,198 +83,198 @@ class IDCardResult:
 
     @property
     def name(self):
-        """Gets the name of this IDCardResult.
+        """Gets the name of this IdCardResult.
 
         姓名。 
 
-        :return: The name of this IDCardResult.
+        :return: The name of this IdCardResult.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IDCardResult.
+        """Sets the name of this IdCardResult.
 
         姓名。 
 
-        :param name: The name of this IDCardResult.
+        :param name: The name of this IdCardResult.
         :type: str
         """
         self._name = name
 
     @property
     def sex(self):
-        """Gets the sex of this IDCardResult.
+        """Gets the sex of this IdCardResult.
 
         性别。 
 
-        :return: The sex of this IDCardResult.
+        :return: The sex of this IdCardResult.
         :rtype: str
         """
         return self._sex
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this IDCardResult.
+        """Sets the sex of this IdCardResult.
 
         性别。 
 
-        :param sex: The sex of this IDCardResult.
+        :param sex: The sex of this IdCardResult.
         :type: str
         """
         self._sex = sex
 
     @property
     def birth(self):
-        """Gets the birth of this IDCardResult.
+        """Gets the birth of this IdCardResult.
 
         出生日期。 
 
-        :return: The birth of this IDCardResult.
+        :return: The birth of this IdCardResult.
         :rtype: str
         """
         return self._birth
 
     @birth.setter
     def birth(self, birth):
-        """Sets the birth of this IDCardResult.
+        """Sets the birth of this IdCardResult.
 
         出生日期。 
 
-        :param birth: The birth of this IDCardResult.
+        :param birth: The birth of this IdCardResult.
         :type: str
         """
         self._birth = birth
 
     @property
     def ethnicity(self):
-        """Gets the ethnicity of this IDCardResult.
+        """Gets the ethnicity of this IdCardResult.
 
         民族。 
 
-        :return: The ethnicity of this IDCardResult.
+        :return: The ethnicity of this IdCardResult.
         :rtype: str
         """
         return self._ethnicity
 
     @ethnicity.setter
     def ethnicity(self, ethnicity):
-        """Sets the ethnicity of this IDCardResult.
+        """Sets the ethnicity of this IdCardResult.
 
         民族。 
 
-        :param ethnicity: The ethnicity of this IDCardResult.
+        :param ethnicity: The ethnicity of this IdCardResult.
         :type: str
         """
         self._ethnicity = ethnicity
 
     @property
     def address(self):
-        """Gets the address of this IDCardResult.
+        """Gets the address of this IdCardResult.
 
         地址。 
 
-        :return: The address of this IDCardResult.
+        :return: The address of this IdCardResult.
         :rtype: str
         """
         return self._address
 
     @address.setter
     def address(self, address):
-        """Sets the address of this IDCardResult.
+        """Sets the address of this IdCardResult.
 
         地址。 
 
-        :param address: The address of this IDCardResult.
+        :param address: The address of this IdCardResult.
         :type: str
         """
         self._address = address
 
     @property
     def number(self):
-        """Gets the number of this IDCardResult.
+        """Gets the number of this IdCardResult.
 
         身份证号。 
 
-        :return: The number of this IDCardResult.
+        :return: The number of this IdCardResult.
         :rtype: str
         """
         return self._number
 
     @number.setter
     def number(self, number):
-        """Sets the number of this IDCardResult.
+        """Sets the number of this IdCardResult.
 
         身份证号。 
 
-        :param number: The number of this IDCardResult.
+        :param number: The number of this IdCardResult.
         :type: str
         """
         self._number = number
 
     @property
     def issue(self):
-        """Gets the issue of this IDCardResult.
+        """Gets the issue of this IdCardResult.
 
         发证机关。 
 
-        :return: The issue of this IDCardResult.
+        :return: The issue of this IdCardResult.
         :rtype: str
         """
         return self._issue
 
     @issue.setter
     def issue(self, issue):
-        """Sets the issue of this IDCardResult.
+        """Sets the issue of this IdCardResult.
 
         发证机关。 
 
-        :param issue: The issue of this IDCardResult.
+        :param issue: The issue of this IdCardResult.
         :type: str
         """
         self._issue = issue
 
     @property
     def valid_from(self):
-        """Gets the valid_from of this IDCardResult.
+        """Gets the valid_from of this IdCardResult.
 
         有效起始日期。 
 
-        :return: The valid_from of this IDCardResult.
+        :return: The valid_from of this IdCardResult.
         :rtype: str
         """
         return self._valid_from
 
     @valid_from.setter
     def valid_from(self, valid_from):
-        """Sets the valid_from of this IDCardResult.
+        """Sets the valid_from of this IdCardResult.
 
         有效起始日期。 
 
-        :param valid_from: The valid_from of this IDCardResult.
+        :param valid_from: The valid_from of this IdCardResult.
         :type: str
         """
         self._valid_from = valid_from
 
     @property
     def valid_to(self):
-        """Gets the valid_to of this IDCardResult.
+        """Gets the valid_to of this IdCardResult.
 
         有效结束日期。   > 说明：  - 身份证识别只支持中国大陆汉族身份证识别。 
 
-        :return: The valid_to of this IDCardResult.
+        :return: The valid_to of this IdCardResult.
         :rtype: str
         """
         return self._valid_to
 
     @valid_to.setter
     def valid_to(self, valid_to):
-        """Sets the valid_to of this IDCardResult.
+        """Sets the valid_to of this IdCardResult.
 
         有效结束日期。   > 说明：  - 身份证识别只支持中国大陆汉族身份证识别。 
 
-        :param valid_to: The valid_to of this IDCardResult.
+        :param valid_to: The valid_to of this IdCardResult.
         :type: str
         """
         self._valid_to = valid_to
@@ -316,7 +316,7 @@ class IDCardResult:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, IDCardResult):
+        if not isinstance(other, IdCardResult):
             return False
 
         return self.__dict__ == other.__dict__

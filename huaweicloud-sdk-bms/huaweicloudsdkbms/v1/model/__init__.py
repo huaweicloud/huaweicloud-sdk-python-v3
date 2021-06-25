@@ -28,6 +28,8 @@ from huaweicloudsdkbms.v1.model.change_baremetal_name_responses_servers import C
 from huaweicloudsdkbms.v1.model.change_baremetal_name_server import ChangeBaremetalNameServer
 from huaweicloudsdkbms.v1.model.change_baremetal_server_name_request import ChangeBaremetalServerNameRequest
 from huaweicloudsdkbms.v1.model.change_baremetal_server_name_response import ChangeBaremetalServerNameResponse
+from huaweicloudsdkbms.v1.model.change_baremetal_server_os_request import ChangeBaremetalServerOsRequest
+from huaweicloudsdkbms.v1.model.change_baremetal_server_os_response import ChangeBaremetalServerOsResponse
 from huaweicloudsdkbms.v1.model.create_bare_metal_servers_request import CreateBareMetalServersRequest
 from huaweicloudsdkbms.v1.model.create_bare_metal_servers_response import CreateBareMetalServersResponse
 from huaweicloudsdkbms.v1.model.create_baremetal_servers_body import CreateBaremetalServersBody
@@ -66,6 +68,8 @@ from huaweicloudsdkbms.v1.model.metadata_infos import MetadataInfos
 from huaweicloudsdkbms.v1.model.metadata_install import MetadataInstall
 from huaweicloudsdkbms.v1.model.metadata_list import MetadataList
 from huaweicloudsdkbms.v1.model.nics import Nics
+from huaweicloudsdkbms.v1.model.os_change_req import OSChangeReq
+from huaweicloudsdkbms.v1.model.os_change import OsChange
 from huaweicloudsdkbms.v1.model.os_extended_volumes import OsExtendedVolumes
 from huaweicloudsdkbms.v1.model.os_extended_volumes_info import OsExtendedVolumesInfo
 from huaweicloudsdkbms.v1.model.os_extra_specs import OsExtraSpecs

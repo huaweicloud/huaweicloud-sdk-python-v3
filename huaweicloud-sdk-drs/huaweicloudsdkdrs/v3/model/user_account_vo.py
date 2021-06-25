@@ -26,7 +26,7 @@ class UserAccountVO:
         'id': 'str',
         'account': 'str',
         'comment': 'str',
-        'is_transfer': 'str',
+        'is_transfer': 'bool',
         'privileges': 'list[str]',
         'password': 'str',
         'is_set_password': 'bool',
@@ -149,7 +149,7 @@ class UserAccountVO:
         是否支持迁移
 
         :return: The is_transfer of this UserAccountVO.
-        :rtype: str
+        :rtype: bool
         """
         return self._is_transfer
 
@@ -160,7 +160,7 @@ class UserAccountVO:
         是否支持迁移
 
         :param is_transfer: The is_transfer of this UserAccountVO.
-        :type: str
+        :type: bool
         """
         self._is_transfer = is_transfer
 

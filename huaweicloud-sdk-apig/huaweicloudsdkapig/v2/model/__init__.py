@@ -52,6 +52,7 @@ from huaweicloudsdkapig.v2.model.backend_api_base_info import BackendApiBaseInfo
 from huaweicloudsdkapig.v2.model.backend_api_create import BackendApiCreate
 from huaweicloudsdkapig.v2.model.backend_param import BackendParam
 from huaweicloudsdkapig.v2.model.backend_param_base import BackendParamBase
+from huaweicloudsdkapig.v2.model.base_page import BasePage
 from huaweicloudsdkapig.v2.model.batch_disassociate_throttling_policy_v2_request import BatchDisassociateThrottlingPolicyV2Request
 from huaweicloudsdkapig.v2.model.batch_disassociate_throttling_policy_v2_response import BatchDisassociateThrottlingPolicyV2Response
 from huaweicloudsdkapig.v2.model.canceling_authorization_v2_request import CancelingAuthorizationV2Request
@@ -104,7 +105,6 @@ from huaweicloudsdkapig.v2.model.disassociate_request_throttling_policy_v2_respo
 from huaweicloudsdkapig.v2.model.disassociate_signature_key_v2_request import DisassociateSignatureKeyV2Request
 from huaweicloudsdkapig.v2.model.disassociate_signature_key_v2_response import DisassociateSignatureKeyV2Response
 from huaweicloudsdkapig.v2.model.domain_cert_req import DomainCertReq
-from huaweicloudsdkapig.v2.model.domain_req import DomainReq
 from huaweicloudsdkapig.v2.model.env_req import EnvReq
 from huaweicloudsdkapig.v2.model.env_resp import EnvResp
 from huaweicloudsdkapig.v2.model.env_variable_req import EnvVariableReq
@@ -187,6 +187,8 @@ from huaweicloudsdkapig.v2.model.update_api_v2_request import UpdateApiV2Request
 from huaweicloudsdkapig.v2.model.update_api_v2_response import UpdateApiV2Response
 from huaweicloudsdkapig.v2.model.update_app_v2_request import UpdateAppV2Request
 from huaweicloudsdkapig.v2.model.update_app_v2_response import UpdateAppV2Response
+from huaweicloudsdkapig.v2.model.update_domain_v2_request import UpdateDomainV2Request
+from huaweicloudsdkapig.v2.model.update_domain_v2_response import UpdateDomainV2Response
 from huaweicloudsdkapig.v2.model.update_environment_v2_request import UpdateEnvironmentV2Request
 from huaweicloudsdkapig.v2.model.update_environment_v2_response import UpdateEnvironmentV2Response
 from huaweicloudsdkapig.v2.model.update_request_throttling_policy_v2_request import UpdateRequestThrottlingPolicyV2Request
@@ -195,6 +197,10 @@ from huaweicloudsdkapig.v2.model.update_signature_key_v2_request import UpdateSi
 from huaweicloudsdkapig.v2.model.update_signature_key_v2_response import UpdateSignatureKeyV2Response
 from huaweicloudsdkapig.v2.model.update_special_throttling_configuration_v2_request import UpdateSpecialThrottlingConfigurationV2Request
 from huaweicloudsdkapig.v2.model.update_special_throttling_configuration_v2_response import UpdateSpecialThrottlingConfigurationV2Response
+from huaweicloudsdkapig.v2.model.url_domain_base import UrlDomainBase
+from huaweicloudsdkapig.v2.model.url_domain_base_info import UrlDomainBaseInfo
+from huaweicloudsdkapig.v2.model.url_domain_create import UrlDomainCreate
+from huaweicloudsdkapig.v2.model.url_domain_modify import UrlDomainModify
 from huaweicloudsdkapig.v2.model.url_domains_resp import UrlDomainsResp
 from huaweicloudsdkapig.v2.model.vpc_base_info import VpcBaseInfo
 from huaweicloudsdkapig.v2.model.vpc_info import VpcInfo

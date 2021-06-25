@@ -120,7 +120,7 @@ class ApigAsyncClient(Client):
     def associate_domain_v2_async(self, request):
         """绑定域名
 
-        用户自定义的域名，需要CNAME到API分组的子域名上才能生效，具体方法请参见[增加CNAME类型记录集](https://support.huaweicloud.com/usermanual-dns/dns_usermanual_0010.html)。 每个API分组下最多可绑定5个域名。绑定域名后，用户可通过自定义域名调用API。
+        用户自定义的域名，需要CNAME到API分组的子域名上才能生效，具体方法请参见《云解析服务用户指南》的“添加CANME类型记录集”章节。 每个API分组下最多可绑定5个域名。绑定域名后，用户可通过自定义域名调用API。
 
         :param AssociateDomainV2Request request
         :return: AssociateDomainV2Response
@@ -130,7 +130,7 @@ class ApigAsyncClient(Client):
     def associate_domain_v2_with_http_info(self, request):
         """绑定域名
 
-        用户自定义的域名，需要CNAME到API分组的子域名上才能生效，具体方法请参见[增加CNAME类型记录集](https://support.huaweicloud.com/usermanual-dns/dns_usermanual_0010.html)。 每个API分组下最多可绑定5个域名。绑定域名后，用户可通过自定义域名调用API。
+        用户自定义的域名，需要CNAME到API分组的子域名上才能生效，具体方法请参见《云解析服务用户指南》的“添加CANME类型记录集”章节。 每个API分组下最多可绑定5个域名。绑定域名后，用户可通过自定义域名调用API。
 
         :param AssociateDomainV2Request request
         :return: AssociateDomainV2Response
@@ -579,7 +579,7 @@ class ApigAsyncClient(Client):
     def delete_environment_v2_async(self, request):
         """删除环境
 
-        删除指定的环境。 该操作将导致此API在指定的环境无法被访问，可能会影响相当一部分应用和用户。请确保已经告知用户，或者确认需要强制下线。
+        删除指定的环境。  该操作将导致此API在指定的环境无法被访问，可能会影响相当一部分应用和用户。请确保已经告知用户，或者确认需要强制下线。  环境上存在已发布的API时，该环境不能被删除。
 
         :param DeleteEnvironmentV2Request request
         :return: DeleteEnvironmentV2Response
@@ -589,7 +589,7 @@ class ApigAsyncClient(Client):
     def delete_environment_v2_with_http_info(self, request):
         """删除环境
 
-        删除指定的环境。 该操作将导致此API在指定的环境无法被访问，可能会影响相当一部分应用和用户。请确保已经告知用户，或者确认需要强制下线。
+        删除指定的环境。  该操作将导致此API在指定的环境无法被访问，可能会影响相当一部分应用和用户。请确保已经告知用户，或者确认需要强制下线。  环境上存在已发布的API时，该环境不能被删除。
 
         :param DeleteEnvironmentV2Request request
         :return: DeleteEnvironmentV2Response
@@ -2078,6 +2078,75 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowDetailsOfRequestThrottlingPolicyV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_domain_v2_async(self, request):
+        """修改域名
+
+        修改绑定的域名所对应的配置信息。
+
+        :param UpdateDomainV2Request request
+        :return: UpdateDomainV2Response
+        """
+        return self.update_domain_v2_with_http_info(request)
+
+    def update_domain_v2_with_http_info(self, request):
+        """修改域名
+
+        修改绑定的域名所对应的配置信息。
+
+        :param UpdateDomainV2Request request
+        :return: UpdateDomainV2Response
+        """
+
+        all_params = ['instance_id', 'group_id', 'domain_id', 'update_domain_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateDomainV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -23,39 +23,59 @@ class ListSignatureKeysV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'size': 'int',
         'total': 'int',
-        'signs': 'list[SignatureCreateResp]',
-        'size': 'int'
+        'signs': 'list[SignatureCreateResp]'
     }
 
     attribute_map = {
+        'size': 'size',
         'total': 'total',
-        'signs': 'signs',
-        'size': 'size'
+        'signs': 'signs'
     }
 
-    def __init__(self, total=None, signs=None, size=None):
+    def __init__(self, size=None, total=None, signs=None):
         """ListSignatureKeysV2Response - a model defined in huaweicloud sdk"""
         
         super(ListSignatureKeysV2Response, self).__init__()
 
+        self._size = None
         self._total = None
         self._signs = None
-        self._size = None
         self.discriminator = None
 
-        if total is not None:
-            self.total = total
+        self.size = size
+        self.total = total
         if signs is not None:
             self.signs = signs
-        if size is not None:
-            self.size = size
+
+    @property
+    def size(self):
+        """Gets the size of this ListSignatureKeysV2Response.
+
+        本次返回的列表长度
+
+        :return: The size of this ListSignatureKeysV2Response.
+        :rtype: int
+        """
+        return self._size
+
+    @size.setter
+    def size(self, size):
+        """Sets the size of this ListSignatureKeysV2Response.
+
+        本次返回的列表长度
+
+        :param size: The size of this ListSignatureKeysV2Response.
+        :type: int
+        """
+        self._size = size
 
     @property
     def total(self):
         """Gets the total of this ListSignatureKeysV2Response.
 
-        符合条件的签名密钥的数量
+        满足条件的记录数
 
         :return: The total of this ListSignatureKeysV2Response.
         :rtype: int
@@ -66,7 +86,7 @@ class ListSignatureKeysV2Response(SdkResponse):
     def total(self, total):
         """Sets the total of this ListSignatureKeysV2Response.
 
-        符合条件的签名密钥的数量
+        满足条件的记录数
 
         :param total: The total of this ListSignatureKeysV2Response.
         :type: int
@@ -94,28 +114,6 @@ class ListSignatureKeysV2Response(SdkResponse):
         :type: list[SignatureCreateResp]
         """
         self._signs = signs
-
-    @property
-    def size(self):
-        """Gets the size of this ListSignatureKeysV2Response.
-
-        本次返回的列表长度
-
-        :return: The size of this ListSignatureKeysV2Response.
-        :rtype: int
-        """
-        return self._size
-
-    @size.setter
-    def size(self, size):
-        """Sets the size of this ListSignatureKeysV2Response.
-
-        本次返回的列表长度
-
-        :param size: The size of this ListSignatureKeysV2Response.
-        :type: int
-        """
-        self._size = size
 
     def to_dict(self):
         """Returns the model properties as a dict"""

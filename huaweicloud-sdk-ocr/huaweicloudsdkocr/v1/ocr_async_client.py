@@ -638,8 +638,8 @@ class OcrAsyncClient(Client):
 
         识别身份证图片中的文字内容，并将识别的结果返回给用户。  说明：   身份证识别只支持中国大陆汉族身份证识别。  如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
 
-        :param RecognizeIDCardRequest request
-        :return: RecognizeIDCardResponse
+        :param RecognizeIdCardRequest request
+        :return: RecognizeIdCardResponse
         """
         return self.recognize_id_card_with_http_info(request)
 
@@ -648,8 +648,8 @@ class OcrAsyncClient(Client):
 
         识别身份证图片中的文字内容，并将识别的结果返回给用户。  说明：   身份证识别只支持中国大陆汉族身份证识别。  如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
 
-        :param RecognizeIDCardRequest request
-        :return: RecognizeIDCardResponse
+        :param RecognizeIdCardRequest request
+        :return: RecognizeIdCardResponse
         """
 
         all_params = ['project_id', 'id_card_request_body']
@@ -691,7 +691,7 @@ class OcrAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='RecognizeIDCardResponse',
+            response_type='RecognizeIdCardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -26,7 +26,7 @@ class HandwritingWordsBlockList:
         'words': 'str',
         'type': 'str',
         'confidence': 'float',
-        'location': 'list[int]'
+        'location': 'list[list[int]]'
     }
 
     attribute_map = {
@@ -129,7 +129,7 @@ class HandwritingWordsBlockList:
         文字块words的区域位置信息，列表形式，分别表示文字块顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :return: The location of this HandwritingWordsBlockList.
-        :rtype: list[int]
+        :rtype: list[list[int]]
         """
         return self._location
 
@@ -140,7 +140,7 @@ class HandwritingWordsBlockList:
         文字块words的区域位置信息，列表形式，分别表示文字块顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param location: The location of this HandwritingWordsBlockList.
-        :type: list[int]
+        :type: list[list[int]]
         """
         self._location = location
 

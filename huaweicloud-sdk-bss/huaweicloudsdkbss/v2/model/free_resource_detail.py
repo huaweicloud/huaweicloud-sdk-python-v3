@@ -134,7 +134,7 @@ class FreeResourceDetail:
     def quota_reuse_cycle(self):
         """Gets the quota_reuse_cycle of this FreeResourceDetail.
 
-        重置周期，只有quota_reuse_mode为可重置，该字段才有意义。 1：小时2：天3：周4：月5：年|
+        重置周期，只有quota_reuse_mode为可重置，该字段才有意义。 1：小时2：天3：周4：月5：年
 
         :return: The quota_reuse_cycle of this FreeResourceDetail.
         :rtype: int
@@ -145,7 +145,7 @@ class FreeResourceDetail:
     def quota_reuse_cycle(self, quota_reuse_cycle):
         """Sets the quota_reuse_cycle of this FreeResourceDetail.
 
-        重置周期，只有quota_reuse_mode为可重置，该字段才有意义。 1：小时2：天3：周4：月5：年|
+        重置周期，只有quota_reuse_mode为可重置，该字段才有意义。 1：小时2：天3：周4：月5：年
 
         :param quota_reuse_cycle: The quota_reuse_cycle of this FreeResourceDetail.
         :type: int

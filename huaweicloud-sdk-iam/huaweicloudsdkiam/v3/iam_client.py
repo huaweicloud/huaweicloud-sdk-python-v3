@@ -2720,7 +2720,7 @@ class IamClient(Client):
         :return: KeystoneListPermissionsResponse
         """
 
-        all_params = ['name', 'domain_id', 'page', 'per_page']
+        all_params = ['name', 'domain_id', 'page', 'per_page', 'permission_type', 'display_name', 'type', 'catalog']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2739,6 +2739,14 @@ class IamClient(Client):
             query_params.append(('page', local_var_params['page']))
         if 'per_page' in local_var_params:
             query_params.append(('per_page', local_var_params['per_page']))
+        if 'permission_type' in local_var_params:
+            query_params.append(('permission_type', local_var_params['permission_type']))
+        if 'display_name' in local_var_params:
+            query_params.append(('display_name', local_var_params['display_name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'catalog' in local_var_params:
+            query_params.append(('catalog', local_var_params['catalog']))
 
         header_params = {}
 

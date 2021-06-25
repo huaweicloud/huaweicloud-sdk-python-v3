@@ -27,8 +27,8 @@ class GeneralTableWordsBlockList:
         'words_list': 'list[object]',
         'rows': 'list[int]',
         'columns': 'list[int]',
-        'location': 'list[object]',
-        'cell_location': 'list[object]',
+        'location': 'list[list[int]]',
+        'cell_location': 'list[list[int]]',
         'confidence': 'float',
         'excel': 'str'
     }
@@ -68,7 +68,8 @@ class GeneralTableWordsBlockList:
             self.location = location
         if cell_location is not None:
             self.cell_location = cell_location
-        self.confidence = confidence
+        if confidence is not None:
+            self.confidence = confidence
         if excel is not None:
             self.excel = excel
 
@@ -167,7 +168,7 @@ class GeneralTableWordsBlockList:
         文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :return: The location of this GeneralTableWordsBlockList.
-        :rtype: list[object]
+        :rtype: list[list[int]]
         """
         return self._location
 
@@ -178,7 +179,7 @@ class GeneralTableWordsBlockList:
         文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param location: The location of this GeneralTableWordsBlockList.
-        :type: list[object]
+        :type: list[list[int]]
         """
         self._location = location
 
@@ -189,7 +190,7 @@ class GeneralTableWordsBlockList:
         单元格位置信息，列表形式，分别表示单元格4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :return: The cell_location of this GeneralTableWordsBlockList.
-        :rtype: list[object]
+        :rtype: list[list[int]]
         """
         return self._cell_location
 
@@ -200,7 +201,7 @@ class GeneralTableWordsBlockList:
         单元格位置信息，列表形式，分别表示单元格4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param cell_location: The cell_location of this GeneralTableWordsBlockList.
-        :type: list[object]
+        :type: list[list[int]]
         """
         self._cell_location = cell_location
 

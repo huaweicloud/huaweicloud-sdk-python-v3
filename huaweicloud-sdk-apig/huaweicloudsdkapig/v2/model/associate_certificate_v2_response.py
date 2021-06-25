@@ -23,65 +23,42 @@ class AssociateCertificateV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'ssl_name': 'str',
         'url_domain': 'str',
-        'ssl_id': 'str',
         'id': 'str',
-        'status': 'int'
+        'status': 'int',
+        'min_ssl_version': 'str',
+        'ssl_name': 'str',
+        'ssl_id': 'str'
     }
 
     attribute_map = {
-        'ssl_name': 'ssl_name',
         'url_domain': 'url_domain',
-        'ssl_id': 'ssl_id',
         'id': 'id',
-        'status': 'status'
+        'status': 'status',
+        'min_ssl_version': 'min_ssl_version',
+        'ssl_name': 'ssl_name',
+        'ssl_id': 'ssl_id'
     }
 
-    def __init__(self, ssl_name=None, url_domain=None, ssl_id=None, id=None, status=None):
+    def __init__(self, url_domain=None, id=None, status=None, min_ssl_version=None, ssl_name=None, ssl_id=None):
         """AssociateCertificateV2Response - a model defined in huaweicloud sdk"""
         
         super(AssociateCertificateV2Response, self).__init__()
 
-        self._ssl_name = None
         self._url_domain = None
-        self._ssl_id = None
         self._id = None
         self._status = None
+        self._min_ssl_version = None
+        self._ssl_name = None
+        self._ssl_id = None
         self.discriminator = None
 
-        if ssl_name is not None:
-            self.ssl_name = ssl_name
-        if url_domain is not None:
-            self.url_domain = url_domain
-        if ssl_id is not None:
-            self.ssl_id = ssl_id
-        if id is not None:
-            self.id = id
-        if status is not None:
-            self.status = status
-
-    @property
-    def ssl_name(self):
-        """Gets the ssl_name of this AssociateCertificateV2Response.
-
-        证书的名称
-
-        :return: The ssl_name of this AssociateCertificateV2Response.
-        :rtype: str
-        """
-        return self._ssl_name
-
-    @ssl_name.setter
-    def ssl_name(self, ssl_name):
-        """Sets the ssl_name of this AssociateCertificateV2Response.
-
-        证书的名称
-
-        :param ssl_name: The ssl_name of this AssociateCertificateV2Response.
-        :type: str
-        """
-        self._ssl_name = ssl_name
+        self.url_domain = url_domain
+        self.id = id
+        self.status = status
+        self.min_ssl_version = min_ssl_version
+        self.ssl_name = ssl_name
+        self.ssl_id = ssl_id
 
     @property
     def url_domain(self):
@@ -104,28 +81,6 @@ class AssociateCertificateV2Response(SdkResponse):
         :type: str
         """
         self._url_domain = url_domain
-
-    @property
-    def ssl_id(self):
-        """Gets the ssl_id of this AssociateCertificateV2Response.
-
-        证书的编号
-
-        :return: The ssl_id of this AssociateCertificateV2Response.
-        :rtype: str
-        """
-        return self._ssl_id
-
-    @ssl_id.setter
-    def ssl_id(self, ssl_id):
-        """Sets the ssl_id of this AssociateCertificateV2Response.
-
-        证书的编号
-
-        :param ssl_id: The ssl_id of this AssociateCertificateV2Response.
-        :type: str
-        """
-        self._ssl_id = ssl_id
 
     @property
     def id(self):
@@ -153,7 +108,7 @@ class AssociateCertificateV2Response(SdkResponse):
     def status(self):
         """Gets the status of this AssociateCertificateV2Response.
 
-        解析状态值
+        CNAME解析状态 - 1: 未解析 - 2: 解析中 - 3: 解析成功 - 4: 解析失败
 
         :return: The status of this AssociateCertificateV2Response.
         :rtype: int
@@ -164,12 +119,78 @@ class AssociateCertificateV2Response(SdkResponse):
     def status(self, status):
         """Sets the status of this AssociateCertificateV2Response.
 
-        解析状态值
+        CNAME解析状态 - 1: 未解析 - 2: 解析中 - 3: 解析成功 - 4: 解析失败
 
         :param status: The status of this AssociateCertificateV2Response.
         :type: int
         """
         self._status = status
+
+    @property
+    def min_ssl_version(self):
+        """Gets the min_ssl_version of this AssociateCertificateV2Response.
+
+        支持的最小SSL版本
+
+        :return: The min_ssl_version of this AssociateCertificateV2Response.
+        :rtype: str
+        """
+        return self._min_ssl_version
+
+    @min_ssl_version.setter
+    def min_ssl_version(self, min_ssl_version):
+        """Sets the min_ssl_version of this AssociateCertificateV2Response.
+
+        支持的最小SSL版本
+
+        :param min_ssl_version: The min_ssl_version of this AssociateCertificateV2Response.
+        :type: str
+        """
+        self._min_ssl_version = min_ssl_version
+
+    @property
+    def ssl_name(self):
+        """Gets the ssl_name of this AssociateCertificateV2Response.
+
+        证书的名称
+
+        :return: The ssl_name of this AssociateCertificateV2Response.
+        :rtype: str
+        """
+        return self._ssl_name
+
+    @ssl_name.setter
+    def ssl_name(self, ssl_name):
+        """Sets the ssl_name of this AssociateCertificateV2Response.
+
+        证书的名称
+
+        :param ssl_name: The ssl_name of this AssociateCertificateV2Response.
+        :type: str
+        """
+        self._ssl_name = ssl_name
+
+    @property
+    def ssl_id(self):
+        """Gets the ssl_id of this AssociateCertificateV2Response.
+
+        证书的编号
+
+        :return: The ssl_id of this AssociateCertificateV2Response.
+        :rtype: str
+        """
+        return self._ssl_id
+
+    @ssl_id.setter
+    def ssl_id(self, ssl_id):
+        """Sets the ssl_id of this AssociateCertificateV2Response.
+
+        证书的编号
+
+        :param ssl_id: The ssl_id of this AssociateCertificateV2Response.
+        :type: str
+        """
+        self._ssl_id = ssl_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

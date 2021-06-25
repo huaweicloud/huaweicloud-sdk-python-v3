@@ -172,7 +172,7 @@ class ApiCreateBase:
     def name(self):
         """Gets the name of this ApiCreateBase.
 
-        API名称长度。  为3 ~ 64位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
+        API名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
         :return: The name of this ApiCreateBase.
         :rtype: str
@@ -183,7 +183,7 @@ class ApiCreateBase:
     def name(self, name):
         """Sets the name of this ApiCreateBase.
 
-        API名称长度。  为3 ~ 64位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
+        API名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param name: The name of this ApiCreateBase.
         :type: str
@@ -282,7 +282,7 @@ class ApiCreateBase:
     def req_uri(self):
         """Gets the req_uri of this ApiCreateBase.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。 > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 > 需要服从URI规范。
 
         :return: The req_uri of this ApiCreateBase.
         :rtype: str
@@ -293,7 +293,7 @@ class ApiCreateBase:
     def req_uri(self, req_uri):
         """Sets the req_uri of this ApiCreateBase.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。 > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 > 需要服从URI规范。
 
         :param req_uri: The req_uri of this ApiCreateBase.
         :type: str

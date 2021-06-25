@@ -23,7 +23,6 @@ class ListClustersRequest:
     sensitive_list = []
 
     openapi_types = {
-        'error_status': 'str',
         'detail': 'str',
         'status': 'str',
         'type': 'str',
@@ -31,27 +30,23 @@ class ListClustersRequest:
     }
 
     attribute_map = {
-        'error_status': 'errorStatus',
         'detail': 'detail',
         'status': 'status',
         'type': 'type',
         'version': 'version'
     }
 
-    def __init__(self, error_status=None, detail=None, status=None, type=None, version=None):
+    def __init__(self, detail=None, status=None, type=None, version=None):
         """ListClustersRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._error_status = None
         self._detail = None
         self._status = None
         self._type = None
         self._version = None
         self.discriminator = None
 
-        if error_status is not None:
-            self.error_status = error_status
         if detail is not None:
             self.detail = detail
         if status is not None:
@@ -60,28 +55,6 @@ class ListClustersRequest:
             self.type = type
         if version is not None:
             self.version = version
-
-    @property
-    def error_status(self):
-        """Gets the error_status of this ListClustersRequest.
-
-        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
-
-        :return: The error_status of this ListClustersRequest.
-        :rtype: str
-        """
-        return self._error_status
-
-    @error_status.setter
-    def error_status(self, error_status):
-        """Sets the error_status of this ListClustersRequest.
-
-        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
-
-        :param error_status: The error_status of this ListClustersRequest.
-        :type: str
-        """
-        self._error_status = error_status
 
     @property
     def detail(self):

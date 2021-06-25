@@ -51,7 +51,8 @@ class QosParticipantInfo:
         'microphone_info': 'str',
         'speaker_info': 'str',
         'camera_info': 'str',
-        'data_center': 'str'
+        'data_center': 'str',
+        'left_reason': 'int'
     }
 
     attribute_map = {
@@ -83,10 +84,11 @@ class QosParticipantInfo:
         'microphone_info': 'microphoneInfo',
         'speaker_info': 'speakerInfo',
         'camera_info': 'cameraInfo',
-        'data_center': 'dataCenter'
+        'data_center': 'dataCenter',
+        'left_reason': 'leftReason'
     }
 
-    def __init__(self, conf_uuid=None, conference_id=None, participant_id=None, user_uuid=None, display_name=None, dept_name=None, terminal_type=None, role=None, ip_address=None, country=None, province=None, city=None, app_version=None, join_time=None, left_time=None, system_info=None, network_type=None, alarm=None, audio_alarm_send=None, video_alarm_send=None, screen_alarm_send=None, audio_alarm_rec=None, video_alarm_rec=None, screen_alarm_rec=None, cpu_alarm=None, microphone_info=None, speaker_info=None, camera_info=None, data_center=None):
+    def __init__(self, conf_uuid=None, conference_id=None, participant_id=None, user_uuid=None, display_name=None, dept_name=None, terminal_type=None, role=None, ip_address=None, country=None, province=None, city=None, app_version=None, join_time=None, left_time=None, system_info=None, network_type=None, alarm=None, audio_alarm_send=None, video_alarm_send=None, screen_alarm_send=None, audio_alarm_rec=None, video_alarm_rec=None, screen_alarm_rec=None, cpu_alarm=None, microphone_info=None, speaker_info=None, camera_info=None, data_center=None, left_reason=None):
         """QosParticipantInfo - a model defined in huaweicloud sdk"""
         
         
@@ -120,6 +122,7 @@ class QosParticipantInfo:
         self._speaker_info = None
         self._camera_info = None
         self._data_center = None
+        self._left_reason = None
         self.discriminator = None
 
         if conf_uuid is not None:
@@ -180,6 +183,8 @@ class QosParticipantInfo:
             self.camera_info = camera_info
         if data_center is not None:
             self.data_center = data_center
+        if left_reason is not None:
+            self.left_reason = left_reason
 
     @property
     def conf_uuid(self):
@@ -818,6 +823,28 @@ class QosParticipantInfo:
         :type: str
         """
         self._data_center = data_center
+
+    @property
+    def left_reason(self):
+        """Gets the left_reason of this QosParticipantInfo.
+
+        离会原因。此字段仅标识离会原因，不做为是否已离会的判断依据。正在与会人员的离会原因初始值 = 0。 说明： * 0：正常离会。 * 1：网络异常离会。
+
+        :return: The left_reason of this QosParticipantInfo.
+        :rtype: int
+        """
+        return self._left_reason
+
+    @left_reason.setter
+    def left_reason(self, left_reason):
+        """Sets the left_reason of this QosParticipantInfo.
+
+        离会原因。此字段仅标识离会原因，不做为是否已离会的判断依据。正在与会人员的离会原因初始值 = 0。 说明： * 0：正常离会。 * 1：网络异常离会。
+
+        :param left_reason: The left_reason of this QosParticipantInfo.
+        :type: int
+        """
+        self._left_reason = left_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -34,7 +34,7 @@ class ApiPolicyHttpResp:
         'req_method': 'str',
         'req_uri': 'str',
         'timeout': 'int',
-        'vpc_channel_info': 'str',
+        'vpc_channel_info': 'VpcInfo',
         'vpc_channel_status': 'int'
     }
 
@@ -319,7 +319,7 @@ class ApiPolicyHttpResp:
     def timeout(self):
         """Gets the timeout of this ApiPolicyHttpResp.
 
-        API网关请求后端服务的超时时间。  单位：毫秒。
+        API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
         :return: The timeout of this ApiPolicyHttpResp.
         :rtype: int
@@ -330,7 +330,7 @@ class ApiPolicyHttpResp:
     def timeout(self, timeout):
         """Sets the timeout of this ApiPolicyHttpResp.
 
-        API网关请求后端服务的超时时间。  单位：毫秒。
+        API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
         :param timeout: The timeout of this ApiPolicyHttpResp.
         :type: int
@@ -341,10 +341,9 @@ class ApiPolicyHttpResp:
     def vpc_channel_info(self):
         """Gets the vpc_channel_info of this ApiPolicyHttpResp.
 
-        VPC通道信息
 
         :return: The vpc_channel_info of this ApiPolicyHttpResp.
-        :rtype: str
+        :rtype: VpcInfo
         """
         return self._vpc_channel_info
 
@@ -352,10 +351,9 @@ class ApiPolicyHttpResp:
     def vpc_channel_info(self, vpc_channel_info):
         """Sets the vpc_channel_info of this ApiPolicyHttpResp.
 
-        VPC通道信息
 
         :param vpc_channel_info: The vpc_channel_info of this ApiPolicyHttpResp.
-        :type: str
+        :type: VpcInfo
         """
         self._vpc_channel_info = vpc_channel_info
 

@@ -24,30 +24,25 @@ class ShowNodePoolRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'nodepool_id': 'str',
-        'error_status': 'str'
+        'nodepool_id': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'nodepool_id': 'nodepool_id',
-        'error_status': 'errorStatus'
+        'nodepool_id': 'nodepool_id'
     }
 
-    def __init__(self, cluster_id=None, nodepool_id=None, error_status=None):
+    def __init__(self, cluster_id=None, nodepool_id=None):
         """ShowNodePoolRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._cluster_id = None
         self._nodepool_id = None
-        self._error_status = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
         self.nodepool_id = nodepool_id
-        if error_status is not None:
-            self.error_status = error_status
 
     @property
     def cluster_id(self):
@@ -92,28 +87,6 @@ class ShowNodePoolRequest:
         :type: str
         """
         self._nodepool_id = nodepool_id
-
-    @property
-    def error_status(self):
-        """Gets the error_status of this ShowNodePoolRequest.
-
-        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
-
-        :return: The error_status of this ShowNodePoolRequest.
-        :rtype: str
-        """
-        return self._error_status
-
-    @error_status.setter
-    def error_status(self, error_status):
-        """Sets the error_status of this ShowNodePoolRequest.
-
-        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
-
-        :param error_status: The error_status of this ShowNodePoolRequest.
-        :type: str
-        """
-        self._error_status = error_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

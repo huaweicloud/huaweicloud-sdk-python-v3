@@ -38,8 +38,7 @@ class ListFreeResourceUsagesReq:
         self._free_resource_ids = None
         self.discriminator = None
 
-        if free_resource_ids is not None:
-            self.free_resource_ids = free_resource_ids
+        self.free_resource_ids = free_resource_ids
 
     @property
     def free_resource_ids(self):

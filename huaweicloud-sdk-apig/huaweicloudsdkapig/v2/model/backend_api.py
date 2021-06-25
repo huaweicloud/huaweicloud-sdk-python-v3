@@ -31,6 +31,7 @@ class BackendApi:
         'version': 'str',
         'req_uri': 'str',
         'timeout': 'int',
+        'enable_client_ssl': 'bool',
         'id': 'str',
         'status': 'int',
         'register_time': 'datetime',
@@ -48,6 +49,7 @@ class BackendApi:
         'version': 'version',
         'req_uri': 'req_uri',
         'timeout': 'timeout',
+        'enable_client_ssl': 'enable_client_ssl',
         'id': 'id',
         'status': 'status',
         'register_time': 'register_time',
@@ -56,7 +58,7 @@ class BackendApi:
         'vpc_channel_status': 'vpc_channel_status'
     }
 
-    def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, id=None, status=None, register_time=None, update_time=None, vpc_channel_info=None, vpc_channel_status=None):
+    def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, enable_client_ssl=None, id=None, status=None, register_time=None, update_time=None, vpc_channel_info=None, vpc_channel_status=None):
         """BackendApi - a model defined in huaweicloud sdk"""
         
         
@@ -69,6 +71,7 @@ class BackendApi:
         self._version = None
         self._req_uri = None
         self._timeout = None
+        self._enable_client_ssl = None
         self._id = None
         self._status = None
         self._register_time = None
@@ -89,6 +92,8 @@ class BackendApi:
             self.version = version
         self.req_uri = req_uri
         self.timeout = timeout
+        if enable_client_ssl is not None:
+            self.enable_client_ssl = enable_client_ssl
         if id is not None:
             self.id = id
         if status is not None:
@@ -260,7 +265,7 @@ class BackendApi:
     def timeout(self):
         """Gets the timeout of this BackendApi.
 
-        API网关请求后端服务的超时时间。  单位：毫秒。请求参数值不在合法范围内时将使用默认值
+        API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
         :return: The timeout of this BackendApi.
         :rtype: int
@@ -271,12 +276,34 @@ class BackendApi:
     def timeout(self, timeout):
         """Sets the timeout of this BackendApi.
 
-        API网关请求后端服务的超时时间。  单位：毫秒。请求参数值不在合法范围内时将使用默认值
+        API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
         :param timeout: The timeout of this BackendApi.
         :type: int
         """
         self._timeout = timeout
+
+    @property
+    def enable_client_ssl(self):
+        """Gets the enable_client_ssl of this BackendApi.
+
+        是否开启双向认证
+
+        :return: The enable_client_ssl of this BackendApi.
+        :rtype: bool
+        """
+        return self._enable_client_ssl
+
+    @enable_client_ssl.setter
+    def enable_client_ssl(self, enable_client_ssl):
+        """Sets the enable_client_ssl of this BackendApi.
+
+        是否开启双向认证
+
+        :param enable_client_ssl: The enable_client_ssl of this BackendApi.
+        :type: bool
+        """
+        self._enable_client_ssl = enable_client_ssl
 
     @property
     def id(self):
@@ -304,7 +331,7 @@ class BackendApi:
     def status(self):
         """Gets the status of this BackendApi.
 
-        状态
+        后端状态   - 1： 有效
 
         :return: The status of this BackendApi.
         :rtype: int
@@ -315,7 +342,7 @@ class BackendApi:
     def status(self, status):
         """Sets the status of this BackendApi.
 
-        状态
+        后端状态   - 1： 有效
 
         :param status: The status of this BackendApi.
         :type: int

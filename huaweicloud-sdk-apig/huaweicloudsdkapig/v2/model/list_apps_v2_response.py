@@ -23,61 +23,37 @@ class ListAppsV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total': 'int',
         'size': 'int',
+        'total': 'int',
         'apps': 'list[AppInfoWithBindNumResp]'
     }
 
     attribute_map = {
-        'total': 'total',
         'size': 'size',
+        'total': 'total',
         'apps': 'apps'
     }
 
-    def __init__(self, total=None, size=None, apps=None):
+    def __init__(self, size=None, total=None, apps=None):
         """ListAppsV2Response - a model defined in huaweicloud sdk"""
         
         super(ListAppsV2Response, self).__init__()
 
-        self._total = None
         self._size = None
+        self._total = None
         self._apps = None
         self.discriminator = None
 
-        if total is not None:
-            self.total = total
-        if size is not None:
-            self.size = size
+        self.size = size
+        self.total = total
         if apps is not None:
             self.apps = apps
-
-    @property
-    def total(self):
-        """Gets the total of this ListAppsV2Response.
-
-        符合条件的APP总数
-
-        :return: The total of this ListAppsV2Response.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ListAppsV2Response.
-
-        符合条件的APP总数
-
-        :param total: The total of this ListAppsV2Response.
-        :type: int
-        """
-        self._total = total
 
     @property
     def size(self):
         """Gets the size of this ListAppsV2Response.
 
-        本次查询返回的列表长度
+        本次返回的列表长度
 
         :return: The size of this ListAppsV2Response.
         :rtype: int
@@ -88,12 +64,34 @@ class ListAppsV2Response(SdkResponse):
     def size(self, size):
         """Sets the size of this ListAppsV2Response.
 
-        本次查询返回的列表长度
+        本次返回的列表长度
 
         :param size: The size of this ListAppsV2Response.
         :type: int
         """
         self._size = size
+
+    @property
+    def total(self):
+        """Gets the total of this ListAppsV2Response.
+
+        满足条件的记录数
+
+        :return: The total of this ListAppsV2Response.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ListAppsV2Response.
+
+        满足条件的记录数
+
+        :param total: The total of this ListAppsV2Response.
+        :type: int
+        """
+        self._total = total
 
     @property
     def apps(self):

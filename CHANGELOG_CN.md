@@ -1,3 +1,100 @@
+# 3.0.49 2021-06-25
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+    - 支持更多接口：
+        - `ListGatewayResponsesV2`
+        - `UpdateGatewayResponseV2`
+        - `DeleteGatewayResponseV2`
+        - `UpdateGatewayResponseTypeV2`
+        - `DeleteGatewayResponseTypeV2`
+        - `DeleteInstancesV2`
+        - `UpdateInstanceV2`
+        - `ListInstancesV2`
+        - `RemoveEipV2`
+        - `UpdateEngressEipV2`
+        - `RemoveEngressEipV2`
+        - `ListFeaturesV2`
+        - `UpdateDomainV2`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK BMS
+
+- _新增特性_
+    - 支持接口`ChangeBaremetalServerOs`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ChangeBaremetalServerName`的响应参数名称调整：`server_tags`->`sys_tags`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+    - 支持接口`ShowQuota`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ShowHistoryTaskDetails`的请求参数`url`类型调整：`integer`->`string`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`BatchUpdateUser`参数`is_transfer`、`selected`类型调整：`string`->`boolean`
+
+### HuaweiCloud SDK IAM
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`KeystoneListPermissions`新增请求参数`permission_type`、`display_name`、`catalog`、`type`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+    - 支持云日志服务
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+    - 支持接口`InviteShare`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`SetMultiPicture`新增请求参数`multiPicSaveOnly`
+    - 接口`SearchHisMeetings`新增响应参数`leftReason`
+
+### HuaweiCloud SDK VOD
+
+- _新增特性_
+    - 支持视频点播服务
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+    - 支持Web应用防火墙服务
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+
 # 3.0.48 2021-06-21
 
 ### HuaweiCloud SDK BMS

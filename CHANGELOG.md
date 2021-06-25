@@ -1,3 +1,100 @@
+# 3.0.49 2021-06-25
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+    - Support more ineterfaces:
+        - `ListGatewayResponsesV2`
+        - `UpdateGatewayResponseV2`
+        - `DeleteGatewayResponseV2`
+        - `UpdateGatewayResponseTypeV2`
+        - `DeleteGatewayResponseTypeV2`
+        - `DeleteInstancesV2`
+        - `UpdateInstanceV2`
+        - `ListInstancesV2`
+        - `RemoveEipV2`
+        - `UpdateEngressEipV2`
+        - `RemoveEngressEipV2`
+        - `ListFeaturesV2`
+        - `UpdateDomainV2`
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK BMS
+
+- _Features_
+    - Support interface `ChangeBaremetalServerOs`.
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the name of reponse parameter of interface `ChangeBaremetalServerName`: `server_tags`->`sys_tags`.
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+    - Support interface `ShowQuota`.
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the type of request parameter `url` of interface `ShowHistoryTaskDetails`: `integer`->`string`.
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+    - Support interface `ShowQuotas`.
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the type of request parameters `is_transfer`,`selected` of interface `BatchUpdateUser`: `string`->`boolean`.
+
+### HuaweiCloud SDK IAM
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add request parameters`permission_type`,`display_name`,`catalog`,`type` of interface `KeystoneListPermissions`.
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+    - Support `Log Tank Service`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+    - Support interface `InviteShare`.
+- _Bug Fix_
+    - None
+- _Change_
+    - Add request parameter `multiPicSaveOnly` to interface `SetMultiPicture`.
+    - Add reponse parameter `leftReason` to interface `SearchHisMeetings`.
+
+### HuaweiCloud SDK VOD
+
+- _Features_
+    - Support `Video on Demand` service.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+    - Support `Web Application Firewall` service.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
 # 3.0.48 2021-06-21
 
 ### HuaweiCloud SDK BMS

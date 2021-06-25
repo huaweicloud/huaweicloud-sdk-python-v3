@@ -155,7 +155,7 @@ class ApiFuncCreate:
     def timeout(self):
         """Gets the timeout of this ApiFuncCreate.
 
-        API网关请求函数服务的超时时间。  单位：毫秒。请求参数值不在合法范围内时将使用缺省值
+        API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
         :return: The timeout of this ApiFuncCreate.
         :rtype: int
@@ -166,7 +166,7 @@ class ApiFuncCreate:
     def timeout(self, timeout):
         """Sets the timeout of this ApiFuncCreate.
 
-        API网关请求函数服务的超时时间。  单位：毫秒。请求参数值不在合法范围内时将使用缺省值
+        API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
         :param timeout: The timeout of this ApiFuncCreate.
         :type: int

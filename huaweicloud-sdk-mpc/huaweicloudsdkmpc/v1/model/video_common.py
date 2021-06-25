@@ -32,7 +32,6 @@ class VideoCommon:
         'max_iframes_interval': 'int',
         'bframes_count': 'int',
         'frame_rate': 'int',
-        'sync_timestamp': 'bool',
         'aspect_ratio': 'int',
         'black_cut': 'int',
         'gop_structure': 'bool',
@@ -49,14 +48,13 @@ class VideoCommon:
         'max_iframes_interval': 'max_iframes_interval',
         'bframes_count': 'bframes_count',
         'frame_rate': 'frame_rate',
-        'sync_timestamp': 'sync_timestamp',
         'aspect_ratio': 'aspect_ratio',
         'black_cut': 'black_cut',
         'gop_structure': 'GOP_structure',
         'sr_factor': 'sr_factor'
     }
 
-    def __init__(self, output_policy=None, codec=None, profile=None, level=None, preset=None, ref_frames_count=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, sync_timestamp=None, aspect_ratio=None, black_cut=None, gop_structure=None, sr_factor=None):
+    def __init__(self, output_policy=None, codec=None, profile=None, level=None, preset=None, ref_frames_count=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, aspect_ratio=None, black_cut=None, gop_structure=None, sr_factor=None):
         """VideoCommon - a model defined in huaweicloud sdk"""
         
         
@@ -70,7 +68,6 @@ class VideoCommon:
         self._max_iframes_interval = None
         self._bframes_count = None
         self._frame_rate = None
-        self._sync_timestamp = None
         self._aspect_ratio = None
         self._black_cut = None
         self._gop_structure = None
@@ -95,8 +92,6 @@ class VideoCommon:
             self.bframes_count = bframes_count
         if frame_rate is not None:
             self.frame_rate = frame_rate
-        if sync_timestamp is not None:
-            self.sync_timestamp = sync_timestamp
         if aspect_ratio is not None:
             self.aspect_ratio = aspect_ratio
         if black_cut is not None:
@@ -303,28 +298,6 @@ class VideoCommon:
         :type: int
         """
         self._frame_rate = frame_rate
-
-    @property
-    def sync_timestamp(self):
-        """Gets the sync_timestamp of this VideoCommon.
-
-        降帧率时是否同步调整时间戳 在配置降帧率场景下有效。 取值如下： - false：不调整时间戳； - true：根据 frame_rate 配置的帧率，重新计算时间戳。 
-
-        :return: The sync_timestamp of this VideoCommon.
-        :rtype: bool
-        """
-        return self._sync_timestamp
-
-    @sync_timestamp.setter
-    def sync_timestamp(self, sync_timestamp):
-        """Sets the sync_timestamp of this VideoCommon.
-
-        降帧率时是否同步调整时间戳 在配置降帧率场景下有效。 取值如下： - false：不调整时间戳； - true：根据 frame_rate 配置的帧率，重新计算时间戳。 
-
-        :param sync_timestamp: The sync_timestamp of this VideoCommon.
-        :type: bool
-        """
-        self._sync_timestamp = sync_timestamp
 
     @property
     def aspect_ratio(self):

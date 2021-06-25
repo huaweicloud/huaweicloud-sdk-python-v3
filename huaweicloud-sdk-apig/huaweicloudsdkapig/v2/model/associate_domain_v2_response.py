@@ -25,16 +25,18 @@ class AssociateDomainV2Response(SdkResponse):
     openapi_types = {
         'url_domain': 'str',
         'id': 'str',
-        'status': 'int'
+        'status': 'int',
+        'min_ssl_version': 'str'
     }
 
     attribute_map = {
         'url_domain': 'url_domain',
         'id': 'id',
-        'status': 'status'
+        'status': 'status',
+        'min_ssl_version': 'min_ssl_version'
     }
 
-    def __init__(self, url_domain=None, id=None, status=None):
+    def __init__(self, url_domain=None, id=None, status=None, min_ssl_version=None):
         """AssociateDomainV2Response - a model defined in huaweicloud sdk"""
         
         super(AssociateDomainV2Response, self).__init__()
@@ -42,6 +44,7 @@ class AssociateDomainV2Response(SdkResponse):
         self._url_domain = None
         self._id = None
         self._status = None
+        self._min_ssl_version = None
         self.discriminator = None
 
         if url_domain is not None:
@@ -50,6 +53,8 @@ class AssociateDomainV2Response(SdkResponse):
             self.id = id
         if status is not None:
             self.status = status
+        if min_ssl_version is not None:
+            self.min_ssl_version = min_ssl_version
 
     @property
     def url_domain(self):
@@ -77,7 +82,7 @@ class AssociateDomainV2Response(SdkResponse):
     def id(self):
         """Gets the id of this AssociateDomainV2Response.
 
-        域名的编号
+        自定义域名的编号
 
         :return: The id of this AssociateDomainV2Response.
         :rtype: str
@@ -88,7 +93,7 @@ class AssociateDomainV2Response(SdkResponse):
     def id(self, id):
         """Sets the id of this AssociateDomainV2Response.
 
-        域名的编号
+        自定义域名的编号
 
         :param id: The id of this AssociateDomainV2Response.
         :type: str
@@ -116,6 +121,28 @@ class AssociateDomainV2Response(SdkResponse):
         :type: int
         """
         self._status = status
+
+    @property
+    def min_ssl_version(self):
+        """Gets the min_ssl_version of this AssociateDomainV2Response.
+
+        支持的最小SSL版本
+
+        :return: The min_ssl_version of this AssociateDomainV2Response.
+        :rtype: str
+        """
+        return self._min_ssl_version
+
+    @min_ssl_version.setter
+    def min_ssl_version(self, min_ssl_version):
+        """Sets the min_ssl_version of this AssociateDomainV2Response.
+
+        支持的最小SSL版本
+
+        :param min_ssl_version: The min_ssl_version of this AssociateDomainV2Response.
+        :type: str
+        """
+        self._min_ssl_version = min_ssl_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

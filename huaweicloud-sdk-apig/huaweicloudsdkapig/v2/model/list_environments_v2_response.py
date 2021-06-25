@@ -23,55 +23,31 @@ class ListEnvironmentsV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total': 'int',
         'size': 'int',
+        'total': 'int',
         'envs': 'list[EnvResp]'
     }
 
     attribute_map = {
-        'total': 'total',
         'size': 'size',
+        'total': 'total',
         'envs': 'envs'
     }
 
-    def __init__(self, total=None, size=None, envs=None):
+    def __init__(self, size=None, total=None, envs=None):
         """ListEnvironmentsV2Response - a model defined in huaweicloud sdk"""
         
         super(ListEnvironmentsV2Response, self).__init__()
 
-        self._total = None
         self._size = None
+        self._total = None
         self._envs = None
         self.discriminator = None
 
-        if total is not None:
-            self.total = total
-        if size is not None:
-            self.size = size
+        self.size = size
+        self.total = total
         if envs is not None:
             self.envs = envs
-
-    @property
-    def total(self):
-        """Gets the total of this ListEnvironmentsV2Response.
-
-        符合条件的环境总数
-
-        :return: The total of this ListEnvironmentsV2Response.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ListEnvironmentsV2Response.
-
-        符合条件的环境总数
-
-        :param total: The total of this ListEnvironmentsV2Response.
-        :type: int
-        """
-        self._total = total
 
     @property
     def size(self):
@@ -94,6 +70,28 @@ class ListEnvironmentsV2Response(SdkResponse):
         :type: int
         """
         self._size = size
+
+    @property
+    def total(self):
+        """Gets the total of this ListEnvironmentsV2Response.
+
+        满足条件的记录数
+
+        :return: The total of this ListEnvironmentsV2Response.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ListEnvironmentsV2Response.
+
+        满足条件的记录数
+
+        :param total: The total of this ListEnvironmentsV2Response.
+        :type: int
+        """
+        self._total = total
 
     @property
     def envs(self):

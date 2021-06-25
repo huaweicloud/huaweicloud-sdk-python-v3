@@ -32,11 +32,6 @@ class CreateTranscodingReq:
         'watermarks': 'list[WatermarkRequest]',
         'thumbnail': 'Thumbnail',
         'digital_watermark': 'DigitalWatermark',
-        'project_id': 'str',
-        'vip_user': 'bool',
-        'task_id': 'str',
-        'domain_name': 'str',
-        'tenant_project_id': 'str',
         'priority': 'int',
         'audit': 'Audit',
         'subtitle': 'Subtitle',
@@ -62,11 +57,6 @@ class CreateTranscodingReq:
         'watermarks': 'watermarks',
         'thumbnail': 'thumbnail',
         'digital_watermark': 'digital_watermark',
-        'project_id': 'project_id',
-        'vip_user': 'vip_user',
-        'task_id': 'task_id',
-        'domain_name': 'domain_name',
-        'tenant_project_id': 'tenant_project_id',
         'priority': 'priority',
         'audit': 'audit',
         'subtitle': 'subtitle',
@@ -82,7 +72,7 @@ class CreateTranscodingReq:
         'template_extend': 'template_extend'
     }
 
-    def __init__(self, input=None, output=None, trans_template_id=None, av_parameters=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, digital_watermark=None, project_id=None, vip_user=None, task_id=None, domain_name=None, tenant_project_id=None, priority=None, audit=None, subtitle=None, special_effect=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None, quality_enhance=None, system_process=None, template_extend=None):
+    def __init__(self, input=None, output=None, trans_template_id=None, av_parameters=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, digital_watermark=None, priority=None, audit=None, subtitle=None, special_effect=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None, quality_enhance=None, system_process=None, template_extend=None):
         """CreateTranscodingReq - a model defined in huaweicloud sdk"""
         
         
@@ -96,11 +86,6 @@ class CreateTranscodingReq:
         self._watermarks = None
         self._thumbnail = None
         self._digital_watermark = None
-        self._project_id = None
-        self._vip_user = None
-        self._task_id = None
-        self._domain_name = None
-        self._tenant_project_id = None
         self._priority = None
         self._audit = None
         self._subtitle = None
@@ -133,16 +118,6 @@ class CreateTranscodingReq:
             self.thumbnail = thumbnail
         if digital_watermark is not None:
             self.digital_watermark = digital_watermark
-        if project_id is not None:
-            self.project_id = project_id
-        if vip_user is not None:
-            self.vip_user = vip_user
-        if task_id is not None:
-            self.task_id = task_id
-        if domain_name is not None:
-            self.domain_name = domain_name
-        if tenant_project_id is not None:
-            self.tenant_project_id = tenant_project_id
         if priority is not None:
             self.priority = priority
         if audit is not None:
@@ -359,116 +334,6 @@ class CreateTranscodingReq:
         :type: DigitalWatermark
         """
         self._digital_watermark = digital_watermark
-
-    @property
-    def project_id(self):
-        """Gets the project_id of this CreateTranscodingReq.
-
-        项目ID
-
-        :return: The project_id of this CreateTranscodingReq.
-        :rtype: str
-        """
-        return self._project_id
-
-    @project_id.setter
-    def project_id(self, project_id):
-        """Sets the project_id of this CreateTranscodingReq.
-
-        项目ID
-
-        :param project_id: The project_id of this CreateTranscodingReq.
-        :type: str
-        """
-        self._project_id = project_id
-
-    @property
-    def vip_user(self):
-        """Gets the vip_user of this CreateTranscodingReq.
-
-        是否vip用户
-
-        :return: The vip_user of this CreateTranscodingReq.
-        :rtype: bool
-        """
-        return self._vip_user
-
-    @vip_user.setter
-    def vip_user(self, vip_user):
-        """Sets the vip_user of this CreateTranscodingReq.
-
-        是否vip用户
-
-        :param vip_user: The vip_user of this CreateTranscodingReq.
-        :type: bool
-        """
-        self._vip_user = vip_user
-
-    @property
-    def task_id(self):
-        """Gets the task_id of this CreateTranscodingReq.
-
-        任务Id
-
-        :return: The task_id of this CreateTranscodingReq.
-        :rtype: str
-        """
-        return self._task_id
-
-    @task_id.setter
-    def task_id(self, task_id):
-        """Sets the task_id of this CreateTranscodingReq.
-
-        任务Id
-
-        :param task_id: The task_id of this CreateTranscodingReq.
-        :type: str
-        """
-        self._task_id = task_id
-
-    @property
-    def domain_name(self):
-        """Gets the domain_name of this CreateTranscodingReq.
-
-        租户域名
-
-        :return: The domain_name of this CreateTranscodingReq.
-        :rtype: str
-        """
-        return self._domain_name
-
-    @domain_name.setter
-    def domain_name(self, domain_name):
-        """Sets the domain_name of this CreateTranscodingReq.
-
-        租户域名
-
-        :param domain_name: The domain_name of this CreateTranscodingReq.
-        :type: str
-        """
-        self._domain_name = domain_name
-
-    @property
-    def tenant_project_id(self):
-        """Gets the tenant_project_id of this CreateTranscodingReq.
-
-        租户Id
-
-        :return: The tenant_project_id of this CreateTranscodingReq.
-        :rtype: str
-        """
-        return self._tenant_project_id
-
-    @tenant_project_id.setter
-    def tenant_project_id(self, tenant_project_id):
-        """Sets the tenant_project_id of this CreateTranscodingReq.
-
-        租户Id
-
-        :param tenant_project_id: The tenant_project_id of this CreateTranscodingReq.
-        :type: str
-        """
-        self._tenant_project_id = tenant_project_id
 
     @property
     def priority(self):

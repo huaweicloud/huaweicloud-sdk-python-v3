@@ -23,61 +23,37 @@ class ListApisNotBoundWithSignatureKeyV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total': 'int',
         'size': 'int',
+        'total': 'int',
         'apis': 'list[SignUnbindingApiResp]'
     }
 
     attribute_map = {
-        'total': 'total',
         'size': 'size',
+        'total': 'total',
         'apis': 'apis'
     }
 
-    def __init__(self, total=None, size=None, apis=None):
+    def __init__(self, size=None, total=None, apis=None):
         """ListApisNotBoundWithSignatureKeyV2Response - a model defined in huaweicloud sdk"""
         
         super(ListApisNotBoundWithSignatureKeyV2Response, self).__init__()
 
-        self._total = None
         self._size = None
+        self._total = None
         self._apis = None
         self.discriminator = None
 
-        if total is not None:
-            self.total = total
-        if size is not None:
-            self.size = size
+        self.size = size
+        self.total = total
         if apis is not None:
             self.apis = apis
-
-    @property
-    def total(self):
-        """Gets the total of this ListApisNotBoundWithSignatureKeyV2Response.
-
-        满足查询条件的API的总个数
-
-        :return: The total of this ListApisNotBoundWithSignatureKeyV2Response.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ListApisNotBoundWithSignatureKeyV2Response.
-
-        满足查询条件的API的总个数
-
-        :param total: The total of this ListApisNotBoundWithSignatureKeyV2Response.
-        :type: int
-        """
-        self._total = total
 
     @property
     def size(self):
         """Gets the size of this ListApisNotBoundWithSignatureKeyV2Response.
 
-        本次查询返回的API列表长度
+        本次返回的列表长度
 
         :return: The size of this ListApisNotBoundWithSignatureKeyV2Response.
         :rtype: int
@@ -88,12 +64,34 @@ class ListApisNotBoundWithSignatureKeyV2Response(SdkResponse):
     def size(self, size):
         """Sets the size of this ListApisNotBoundWithSignatureKeyV2Response.
 
-        本次查询返回的API列表长度
+        本次返回的列表长度
 
         :param size: The size of this ListApisNotBoundWithSignatureKeyV2Response.
         :type: int
         """
         self._size = size
+
+    @property
+    def total(self):
+        """Gets the total of this ListApisNotBoundWithSignatureKeyV2Response.
+
+        满足条件的记录数
+
+        :return: The total of this ListApisNotBoundWithSignatureKeyV2Response.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ListApisNotBoundWithSignatureKeyV2Response.
+
+        满足条件的记录数
+
+        :param total: The total of this ListApisNotBoundWithSignatureKeyV2Response.
+        :type: int
+        """
+        self._total = total
 
     @property
     def apis(self):

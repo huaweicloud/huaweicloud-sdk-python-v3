@@ -28,7 +28,7 @@ class HttpsDetail:
         'cert_name': 'str',
         'certificate': 'str',
         'private_key': 'str',
-        'certificate_type': 'str',
+        'certificate_type': 'int',
         'expiration_time': 'int',
         'https_status': 'int',
         'force_redirect_https': 'int',
@@ -208,7 +208,7 @@ class HttpsDetail:
         0：自有证书  1：云托管证书
 
         :return: The certificate_type of this HttpsDetail.
-        :rtype: str
+        :rtype: int
         """
         return self._certificate_type
 
@@ -219,7 +219,7 @@ class HttpsDetail:
         0：自有证书  1：云托管证书
 
         :param certificate_type: The certificate_type of this HttpsDetail.
-        :type: str
+        :type: int
         """
         self._certificate_type = certificate_type
 

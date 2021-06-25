@@ -24,29 +24,24 @@ class ListNodePoolsRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'error_status': 'str',
         'show_default_node_pool': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'error_status': 'errorStatus',
         'show_default_node_pool': 'showDefaultNodePool'
     }
 
-    def __init__(self, cluster_id=None, error_status=None, show_default_node_pool=None):
+    def __init__(self, cluster_id=None, show_default_node_pool=None):
         """ListNodePoolsRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._cluster_id = None
-        self._error_status = None
         self._show_default_node_pool = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
-        if error_status is not None:
-            self.error_status = error_status
         if show_default_node_pool is not None:
             self.show_default_node_pool = show_default_node_pool
 
@@ -71,28 +66,6 @@ class ListNodePoolsRequest:
         :type: str
         """
         self._cluster_id = cluster_id
-
-    @property
-    def error_status(self):
-        """Gets the error_status of this ListNodePoolsRequest.
-
-        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
-
-        :return: The error_status of this ListNodePoolsRequest.
-        :rtype: str
-        """
-        return self._error_status
-
-    @error_status.setter
-    def error_status(self, error_status):
-        """Sets the error_status of this ListNodePoolsRequest.
-
-        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
-
-        :param error_status: The error_status of this ListNodePoolsRequest.
-        :type: str
-        """
-        self._error_status = error_status
 
     @property
     def show_default_node_pool(self):

@@ -23,37 +23,22 @@ class AddApplication:
     sensitive_list = []
 
     openapi_types = {
-        'app_name': 'str',
-        'app_id': 'str',
-        'instance_id': 'str',
-        'service_name': 'str'
+        'app_name': 'str'
     }
 
     attribute_map = {
-        'app_name': 'app_name',
-        'app_id': 'app_id',
-        'instance_id': 'instance_id',
-        'service_name': 'service_name'
+        'app_name': 'app_name'
     }
 
-    def __init__(self, app_name=None, app_id=None, instance_id=None, service_name=None):
+    def __init__(self, app_name=None):
         """AddApplication - a model defined in huaweicloud sdk"""
         
         
 
         self._app_name = None
-        self._app_id = None
-        self._instance_id = None
-        self._service_name = None
         self.discriminator = None
 
         self.app_name = app_name
-        if app_id is not None:
-            self.app_id = app_id
-        if instance_id is not None:
-            self.instance_id = instance_id
-        if service_name is not None:
-            self.service_name = service_name
 
     @property
     def app_name(self):
@@ -76,72 +61,6 @@ class AddApplication:
         :type: str
         """
         self._app_name = app_name
-
-    @property
-    def app_id(self):
-        """Gets the app_id of this AddApplication.
-
-        **参数说明**：资源空间ID。 **取值范围**：长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合。
-
-        :return: The app_id of this AddApplication.
-        :rtype: str
-        """
-        return self._app_id
-
-    @app_id.setter
-    def app_id(self, app_id):
-        """Sets the app_id of this AddApplication.
-
-        **参数说明**：资源空间ID。 **取值范围**：长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合。
-
-        :param app_id: The app_id of this AddApplication.
-        :type: str
-        """
-        self._app_id = app_id
-
-    @property
-    def instance_id(self):
-        """Gets the instance_id of this AddApplication.
-
-        **参数说明**：迁移前实例ID。 **取值范围**：长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合。
-
-        :return: The instance_id of this AddApplication.
-        :rtype: str
-        """
-        return self._instance_id
-
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        """Sets the instance_id of this AddApplication.
-
-        **参数说明**：迁移前实例ID。 **取值范围**：长度不超过64，只允许字母、数字、下划线（_）、连接符（-）的组合。
-
-        :param instance_id: The instance_id of this AddApplication.
-        :type: str
-        """
-        self._instance_id = instance_id
-
-    @property
-    def service_name(self):
-        """Gets the service_name of this AddApplication.
-
-        **参数说明**：对接的服务名。 **取值范围**： - IoTDA：代表华为云设备接入云服务。 - CTNBGW：代表天翼云设备接入服务。
-
-        :return: The service_name of this AddApplication.
-        :rtype: str
-        """
-        return self._service_name
-
-    @service_name.setter
-    def service_name(self, service_name):
-        """Sets the service_name of this AddApplication.
-
-        **参数说明**：对接的服务名。 **取值范围**： - IoTDA：代表华为云设备接入云服务。 - CTNBGW：代表天翼云设备接入服务。
-
-        :param service_name: The service_name of this AddApplication.
-        :type: str
-        """
-        self._service_name = service_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

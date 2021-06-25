@@ -291,7 +291,7 @@ class FreeResourcePackage:
     def status(self):
         """Gets the status of this FreeResourcePackage.
 
-        状态： 0：未生效1：生效中2：已用完3：已失效
+        状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
 
         :return: The status of this FreeResourcePackage.
         :rtype: int
@@ -302,7 +302,7 @@ class FreeResourcePackage:
     def status(self, status):
         """Sets the status of this FreeResourcePackage.
 
-        状态： 0：未生效1：生效中2：已用完3：已失效
+        状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
 
         :param status: The status of this FreeResourcePackage.
         :type: int
@@ -423,7 +423,7 @@ class FreeResourcePackage:
     def free_resources(self):
         """Gets the free_resources of this FreeResourcePackage.
 
-        资源套餐内的资源项信息（资源项ID级的详情）。
+        资源套餐内的资源项信息（资源项ID级的详情），具体参见表3。
 
         :return: The free_resources of this FreeResourcePackage.
         :rtype: list[FreeResource]
@@ -434,7 +434,7 @@ class FreeResourcePackage:
     def free_resources(self, free_resources):
         """Sets the free_resources of this FreeResourcePackage.
 
-        资源套餐内的资源项信息（资源项ID级的详情）。
+        资源套餐内的资源项信息（资源项ID级的详情），具体参见表3。
 
         :param free_resources: The free_resources of this FreeResourcePackage.
         :type: list[FreeResource]

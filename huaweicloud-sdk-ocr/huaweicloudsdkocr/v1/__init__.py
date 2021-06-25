@@ -30,8 +30,8 @@ from huaweicloudsdkocr.v1.model.general_text_words_block_list import GeneralText
 from huaweicloudsdkocr.v1.model.handwriting_request_body import HandwritingRequestBody
 from huaweicloudsdkocr.v1.model.handwriting_result import HandwritingResult
 from huaweicloudsdkocr.v1.model.handwriting_words_block_list import HandwritingWordsBlockList
-from huaweicloudsdkocr.v1.model.id_card_request_body import IDCardRequestBody
-from huaweicloudsdkocr.v1.model.id_card_result import IDCardResult
+from huaweicloudsdkocr.v1.model.id_card_request_body import IdCardRequestBody
+from huaweicloudsdkocr.v1.model.id_card_result import IdCardResult
 from huaweicloudsdkocr.v1.model.item_list import ItemList
 from huaweicloudsdkocr.v1.model.itinerary_list import ItineraryList
 from huaweicloudsdkocr.v1.model.license_plate_request_body import LicensePlateRequestBody
@@ -61,8 +61,8 @@ from huaweicloudsdkocr.v1.model.recognize_general_text_request import RecognizeG
 from huaweicloudsdkocr.v1.model.recognize_general_text_response import RecognizeGeneralTextResponse
 from huaweicloudsdkocr.v1.model.recognize_handwriting_request import RecognizeHandwritingRequest
 from huaweicloudsdkocr.v1.model.recognize_handwriting_response import RecognizeHandwritingResponse
-from huaweicloudsdkocr.v1.model.recognize_id_card_request import RecognizeIDCardRequest
-from huaweicloudsdkocr.v1.model.recognize_id_card_response import RecognizeIDCardResponse
+from huaweicloudsdkocr.v1.model.recognize_id_card_request import RecognizeIdCardRequest
+from huaweicloudsdkocr.v1.model.recognize_id_card_response import RecognizeIdCardResponse
 from huaweicloudsdkocr.v1.model.recognize_license_plate_request import RecognizeLicensePlateRequest
 from huaweicloudsdkocr.v1.model.recognize_license_plate_response import RecognizeLicensePlateResponse
 from huaweicloudsdkocr.v1.model.recognize_mvs_invoice_request import RecognizeMvsInvoiceRequest

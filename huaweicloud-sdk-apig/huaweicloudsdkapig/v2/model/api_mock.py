@@ -26,17 +26,25 @@ class ApiMock:
         'remark': 'str',
         'result_content': 'str',
         'version': 'str',
-        'authorizer_id': 'str'
+        'authorizer_id': 'str',
+        'id': 'str',
+        'register_time': 'datetime',
+        'status': 'int',
+        'update_time': 'datetime'
     }
 
     attribute_map = {
         'remark': 'remark',
         'result_content': 'result_content',
         'version': 'version',
-        'authorizer_id': 'authorizer_id'
+        'authorizer_id': 'authorizer_id',
+        'id': 'id',
+        'register_time': 'register_time',
+        'status': 'status',
+        'update_time': 'update_time'
     }
 
-    def __init__(self, remark=None, result_content=None, version=None, authorizer_id=None):
+    def __init__(self, remark=None, result_content=None, version=None, authorizer_id=None, id=None, register_time=None, status=None, update_time=None):
         """ApiMock - a model defined in huaweicloud sdk"""
         
         
@@ -45,6 +53,10 @@ class ApiMock:
         self._result_content = None
         self._version = None
         self._authorizer_id = None
+        self._id = None
+        self._register_time = None
+        self._status = None
+        self._update_time = None
         self.discriminator = None
 
         if remark is not None:
@@ -55,6 +67,14 @@ class ApiMock:
             self.version = version
         if authorizer_id is not None:
             self.authorizer_id = authorizer_id
+        if id is not None:
+            self.id = id
+        if register_time is not None:
+            self.register_time = register_time
+        if status is not None:
+            self.status = status
+        if update_time is not None:
+            self.update_time = update_time
 
     @property
     def remark(self):
@@ -143,6 +163,94 @@ class ApiMock:
         :type: str
         """
         self._authorizer_id = authorizer_id
+
+    @property
+    def id(self):
+        """Gets the id of this ApiMock.
+
+        编号
+
+        :return: The id of this ApiMock.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ApiMock.
+
+        编号
+
+        :param id: The id of this ApiMock.
+        :type: str
+        """
+        self._id = id
+
+    @property
+    def register_time(self):
+        """Gets the register_time of this ApiMock.
+
+        注册时间
+
+        :return: The register_time of this ApiMock.
+        :rtype: datetime
+        """
+        return self._register_time
+
+    @register_time.setter
+    def register_time(self, register_time):
+        """Sets the register_time of this ApiMock.
+
+        注册时间
+
+        :param register_time: The register_time of this ApiMock.
+        :type: datetime
+        """
+        self._register_time = register_time
+
+    @property
+    def status(self):
+        """Gets the status of this ApiMock.
+
+        后端状态   - 1： 有效
+
+        :return: The status of this ApiMock.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ApiMock.
+
+        后端状态   - 1： 有效
+
+        :param status: The status of this ApiMock.
+        :type: int
+        """
+        self._status = status
+
+    @property
+    def update_time(self):
+        """Gets the update_time of this ApiMock.
+
+        修改时间
+
+        :return: The update_time of this ApiMock.
+        :rtype: datetime
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        """Sets the update_time of this ApiMock.
+
+        修改时间
+
+        :param update_time: The update_time of this ApiMock.
+        :type: datetime
+        """
+        self._update_time = update_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -28,7 +28,6 @@ class V3ClusterSpec:
         'version': 'str',
         'description': 'str',
         'ipv6enable': 'bool',
-        'offload_cluster': 'bool',
         'host_network': 'HostNetwork',
         'container_network': 'ContainerNetwork',
         'eni_network': 'EniNetwork',
@@ -49,7 +48,6 @@ class V3ClusterSpec:
         'version': 'version',
         'description': 'description',
         'ipv6enable': 'ipv6enable',
-        'offload_cluster': 'offloadCluster',
         'host_network': 'hostNetwork',
         'container_network': 'containerNetwork',
         'eni_network': 'eniNetwork',
@@ -64,7 +62,7 @@ class V3ClusterSpec:
         'support_istio': 'supportIstio'
     }
 
-    def __init__(self, type=None, flavor=None, version=None, description=None, ipv6enable=None, offload_cluster=None, host_network=None, container_network=None, eni_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None):
+    def __init__(self, type=None, flavor=None, version=None, description=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None):
         """V3ClusterSpec - a model defined in huaweicloud sdk"""
         
         
@@ -74,7 +72,6 @@ class V3ClusterSpec:
         self._version = None
         self._description = None
         self._ipv6enable = None
-        self._offload_cluster = None
         self._host_network = None
         self._container_network = None
         self._eni_network = None
@@ -97,8 +94,6 @@ class V3ClusterSpec:
             self.description = description
         if ipv6enable is not None:
             self.ipv6enable = ipv6enable
-        if offload_cluster is not None:
-            self.offload_cluster = offload_cluster
         self.host_network = host_network
         self.container_network = container_network
         if eni_network is not None:
@@ -231,28 +226,6 @@ class V3ClusterSpec:
         :type: bool
         """
         self._ipv6enable = ipv6enable
-
-    @property
-    def offload_cluster(self):
-        """Gets the offload_cluster of this V3ClusterSpec.
-
-        CCE Turbo集群(公测)
-
-        :return: The offload_cluster of this V3ClusterSpec.
-        :rtype: bool
-        """
-        return self._offload_cluster
-
-    @offload_cluster.setter
-    def offload_cluster(self, offload_cluster):
-        """Sets the offload_cluster of this V3ClusterSpec.
-
-        CCE Turbo集群(公测)
-
-        :param offload_cluster: The offload_cluster of this V3ClusterSpec.
-        :type: bool
-        """
-        self._offload_cluster = offload_cluster
 
     @property
     def host_network(self):

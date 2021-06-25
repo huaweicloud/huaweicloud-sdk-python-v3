@@ -25,7 +25,7 @@ class LicensePlateResult:
     openapi_types = {
         'plate_number': 'str',
         'plate_color': 'str',
-        'plate_location': 'list[int]',
+        'plate_location': 'list[list[int]]',
         'confidence': 'float'
     }
 
@@ -103,7 +103,7 @@ class LicensePlateResult:
         车牌的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :return: The plate_location of this LicensePlateResult.
-        :rtype: list[int]
+        :rtype: list[list[int]]
         """
         return self._plate_location
 
@@ -114,7 +114,7 @@ class LicensePlateResult:
         车牌的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param plate_location: The plate_location of this LicensePlateResult.
-        :type: list[int]
+        :type: list[list[int]]
         """
         self._plate_location = plate_location
 

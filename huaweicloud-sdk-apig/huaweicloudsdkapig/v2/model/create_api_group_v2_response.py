@@ -374,7 +374,7 @@ class CreateApiGroupV2Response(SdkResponse):
     def status(self):
         """Gets the status of this CreateApiGroupV2Response.
 
-        状态
+        状态   - 1： 有效
 
         :return: The status of this CreateApiGroupV2Response.
         :rtype: int
@@ -385,7 +385,7 @@ class CreateApiGroupV2Response(SdkResponse):
     def status(self, status):
         """Sets the status of this CreateApiGroupV2Response.
 
-        状态
+        状态   - 1： 有效
 
         :param status: The status of this CreateApiGroupV2Response.
         :type: int

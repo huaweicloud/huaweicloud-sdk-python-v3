@@ -27,7 +27,8 @@ class UrlDomainsResp:
         'domain': 'str',
         'cname_status': 'int',
         'ssl_id': 'str',
-        'ssl_name': 'str'
+        'ssl_name': 'str',
+        'min_ssl_version': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class UrlDomainsResp:
         'domain': 'domain',
         'cname_status': 'cname_status',
         'ssl_id': 'ssl_id',
-        'ssl_name': 'ssl_name'
+        'ssl_name': 'ssl_name',
+        'min_ssl_version': 'min_ssl_version'
     }
 
-    def __init__(self, id=None, domain=None, cname_status=None, ssl_id=None, ssl_name=None):
+    def __init__(self, id=None, domain=None, cname_status=None, ssl_id=None, ssl_name=None, min_ssl_version=None):
         """UrlDomainsResp - a model defined in huaweicloud sdk"""
         
         
@@ -48,6 +50,7 @@ class UrlDomainsResp:
         self._cname_status = None
         self._ssl_id = None
         self._ssl_name = None
+        self._min_ssl_version = None
         self.discriminator = None
 
         if id is not None:
@@ -60,6 +63,8 @@ class UrlDomainsResp:
             self.ssl_id = ssl_id
         if ssl_name is not None:
             self.ssl_name = ssl_name
+        if min_ssl_version is not None:
+            self.min_ssl_version = min_ssl_version
 
     @property
     def id(self):
@@ -170,6 +175,28 @@ class UrlDomainsResp:
         :type: str
         """
         self._ssl_name = ssl_name
+
+    @property
+    def min_ssl_version(self):
+        """Gets the min_ssl_version of this UrlDomainsResp.
+
+        最小SSL协议版本号，支持TLSv1.1或TLSv1.2
+
+        :return: The min_ssl_version of this UrlDomainsResp.
+        :rtype: str
+        """
+        return self._min_ssl_version
+
+    @min_ssl_version.setter
+    def min_ssl_version(self, min_ssl_version):
+        """Sets the min_ssl_version of this UrlDomainsResp.
+
+        最小SSL协议版本号，支持TLSv1.1或TLSv1.2
+
+        :param min_ssl_version: The min_ssl_version of this UrlDomainsResp.
+        :type: str
+        """
+        self._min_ssl_version = min_ssl_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

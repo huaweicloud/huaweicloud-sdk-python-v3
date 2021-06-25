@@ -266,7 +266,7 @@ class AppInfoWithBindNumResp:
     def status(self):
         """Gets the status of this AppInfoWithBindNumResp.
 
-        状态
+        状态   - 1： 有效
 
         :return: The status of this AppInfoWithBindNumResp.
         :rtype: int
@@ -277,7 +277,7 @@ class AppInfoWithBindNumResp:
     def status(self, status):
         """Sets the status of this AppInfoWithBindNumResp.
 
-        状态
+        状态   - 1： 有效
 
         :param status: The status of this AppInfoWithBindNumResp.
         :type: int

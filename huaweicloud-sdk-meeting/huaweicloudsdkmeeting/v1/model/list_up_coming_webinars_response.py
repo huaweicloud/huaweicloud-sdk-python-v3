@@ -25,16 +25,18 @@ class ListUpComingWebinarsResponse(SdkResponse):
     openapi_types = {
         'offset': 'int',
         'limit': 'int',
-        'count': 'int'
+        'count': 'int',
+        'data': 'list[OpenWebinarUpcomingInfo]'
     }
 
     attribute_map = {
         'offset': 'offset',
         'limit': 'limit',
-        'count': 'count'
+        'count': 'count',
+        'data': 'data'
     }
 
-    def __init__(self, offset=None, limit=None, count=None):
+    def __init__(self, offset=None, limit=None, count=None, data=None):
         """ListUpComingWebinarsResponse - a model defined in huaweicloud sdk"""
         
         super(ListUpComingWebinarsResponse, self).__init__()
@@ -42,11 +44,14 @@ class ListUpComingWebinarsResponse(SdkResponse):
         self._offset = None
         self._limit = None
         self._count = None
+        self._data = None
         self.discriminator = None
 
         self.offset = offset
         self.limit = limit
         self.count = count
+        if data is not None:
+            self.data = data
 
     @property
     def offset(self):
@@ -113,6 +118,26 @@ class ListUpComingWebinarsResponse(SdkResponse):
         :type: int
         """
         self._count = count
+
+    @property
+    def data(self):
+        """Gets the data of this ListUpComingWebinarsResponse.
+
+
+        :return: The data of this ListUpComingWebinarsResponse.
+        :rtype: list[OpenWebinarUpcomingInfo]
+        """
+        return self._data
+
+    @data.setter
+    def data(self, data):
+        """Sets the data of this ListUpComingWebinarsResponse.
+
+
+        :param data: The data of this ListUpComingWebinarsResponse.
+        :type: list[OpenWebinarUpcomingInfo]
+        """
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

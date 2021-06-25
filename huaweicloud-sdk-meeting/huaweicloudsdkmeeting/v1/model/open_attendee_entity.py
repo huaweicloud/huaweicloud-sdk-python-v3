@@ -30,7 +30,6 @@ class OpenAttendeeEntity:
         'phone': 'str',
         'email': 'str',
         'sms': 'str',
-        'is_external_contact': 'bool',
         'is_hard_terminal': 'bool'
     }
 
@@ -42,11 +41,10 @@ class OpenAttendeeEntity:
         'phone': 'phone',
         'email': 'email',
         'sms': 'sms',
-        'is_external_contact': 'isExternalContact',
         'is_hard_terminal': 'isHardTerminal'
     }
 
-    def __init__(self, app_id=None, user_account=None, user_name=None, dept_name=None, phone=None, email=None, sms=None, is_external_contact=None, is_hard_terminal=None):
+    def __init__(self, app_id=None, user_account=None, user_name=None, dept_name=None, phone=None, email=None, sms=None, is_hard_terminal=None):
         """OpenAttendeeEntity - a model defined in huaweicloud sdk"""
         
         
@@ -58,7 +56,6 @@ class OpenAttendeeEntity:
         self._phone = None
         self._email = None
         self._sms = None
-        self._is_external_contact = None
         self._is_hard_terminal = None
         self.discriminator = None
 
@@ -75,8 +72,6 @@ class OpenAttendeeEntity:
             self.email = email
         if sms is not None:
             self.sms = sms
-        if is_external_contact is not None:
-            self.is_external_contact = is_external_contact
         if is_hard_terminal is not None:
             self.is_hard_terminal = is_hard_terminal
 
@@ -233,28 +228,6 @@ class OpenAttendeeEntity:
         :type: str
         """
         self._sms = sms
-
-    @property
-    def is_external_contact(self):
-        """Gets the is_external_contact of this OpenAttendeeEntity.
-
-        是否外部联系人。
-
-        :return: The is_external_contact of this OpenAttendeeEntity.
-        :rtype: bool
-        """
-        return self._is_external_contact
-
-    @is_external_contact.setter
-    def is_external_contact(self, is_external_contact):
-        """Sets the is_external_contact of this OpenAttendeeEntity.
-
-        是否外部联系人。
-
-        :param is_external_contact: The is_external_contact of this OpenAttendeeEntity.
-        :type: bool
-        """
-        self._is_external_contact = is_external_contact
 
     @property
     def is_hard_terminal(self):

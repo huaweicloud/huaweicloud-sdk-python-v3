@@ -28,7 +28,7 @@ class ShowHistoryTaskDetailsRequest:
         'page_size': 'int',
         'page_number': 'int',
         'status': 'int',
-        'url': 'int'
+        'url': 'str'
     }
 
     attribute_map = {
@@ -182,7 +182,7 @@ class ShowHistoryTaskDetailsRequest:
         url的地址，支持同一任务id的多个url,多个url用分号隔开。
 
         :return: The url of this ShowHistoryTaskDetailsRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._url
 
@@ -193,7 +193,7 @@ class ShowHistoryTaskDetailsRequest:
         url的地址，支持同一任务id的多个url,多个url用分号隔开。
 
         :param url: The url of this ShowHistoryTaskDetailsRequest.
-        :type: int
+        :type: str
         """
         self._url = url
 

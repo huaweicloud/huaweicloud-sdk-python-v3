@@ -23,7 +23,7 @@ class HttpInfoResponseBody:
     sensitive_list = []
 
     openapi_types = {
-        'https_status': 'str',
+        'https_status': 'int',
         'cert_name': 'str',
         'certificate': 'str',
         'private_key': 'str',
@@ -88,7 +88,7 @@ class HttpInfoResponseBody:
         HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源，开启时需要传递证书及私钥
 
         :return: The https_status of this HttpInfoResponseBody.
-        :rtype: str
+        :rtype: int
         """
         return self._https_status
 
@@ -99,7 +99,7 @@ class HttpInfoResponseBody:
         HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源，开启时需要传递证书及私钥
 
         :param https_status: The https_status of this HttpInfoResponseBody.
-        :type: str
+        :type: int
         """
         self._https_status = https_status
 

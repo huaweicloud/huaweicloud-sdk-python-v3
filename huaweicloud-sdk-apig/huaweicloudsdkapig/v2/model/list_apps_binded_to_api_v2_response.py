@@ -23,55 +23,31 @@ class ListAppsBindedToApiV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total': 'int',
         'size': 'int',
+        'total': 'int',
         'auths': 'list[AppAuthBindedApiResp]'
     }
 
     attribute_map = {
-        'total': 'total',
         'size': 'size',
+        'total': 'total',
         'auths': 'auths'
     }
 
-    def __init__(self, total=None, size=None, auths=None):
+    def __init__(self, size=None, total=None, auths=None):
         """ListAppsBindedToApiV2Response - a model defined in huaweicloud sdk"""
         
         super(ListAppsBindedToApiV2Response, self).__init__()
 
-        self._total = None
         self._size = None
+        self._total = None
         self._auths = None
         self.discriminator = None
 
-        if total is not None:
-            self.total = total
-        if size is not None:
-            self.size = size
+        self.size = size
+        self.total = total
         if auths is not None:
             self.auths = auths
-
-    @property
-    def total(self):
-        """Gets the total of this ListAppsBindedToApiV2Response.
-
-        符合条件的API总数
-
-        :return: The total of this ListAppsBindedToApiV2Response.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ListAppsBindedToApiV2Response.
-
-        符合条件的API总数
-
-        :param total: The total of this ListAppsBindedToApiV2Response.
-        :type: int
-        """
-        self._total = total
 
     @property
     def size(self):
@@ -94,6 +70,28 @@ class ListAppsBindedToApiV2Response(SdkResponse):
         :type: int
         """
         self._size = size
+
+    @property
+    def total(self):
+        """Gets the total of this ListAppsBindedToApiV2Response.
+
+        满足条件的记录数
+
+        :return: The total of this ListAppsBindedToApiV2Response.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ListAppsBindedToApiV2Response.
+
+        满足条件的记录数
+
+        :param total: The total of this ListAppsBindedToApiV2Response.
+        :type: int
+        """
+        self._total = total
 
     @property
     def auths(self):

@@ -9,7 +9,7 @@ import six
 
 
 
-class RecognizeIDCardRequest:
+class RecognizeIdCardRequest:
 
 
     """
@@ -24,7 +24,7 @@ class RecognizeIDCardRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'body': 'IDCardRequestBody'
+        'body': 'IdCardRequestBody'
     }
 
     attribute_map = {
@@ -33,7 +33,7 @@ class RecognizeIDCardRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """RecognizeIDCardRequest - a model defined in huaweicloud sdk"""
+        """RecognizeIdCardRequest - a model defined in huaweicloud sdk"""
         
         
 
@@ -47,43 +47,43 @@ class RecognizeIDCardRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RecognizeIDCardRequest.
+        """Gets the project_id of this RecognizeIdCardRequest.
 
         项目ID，您可以从[获取项目ID](https://support.huaweicloud.com/api-ocr/ocr_03_0130.html)中获取。
 
-        :return: The project_id of this RecognizeIDCardRequest.
+        :return: The project_id of this RecognizeIdCardRequest.
         :rtype: str
         """
         return self._project_id
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RecognizeIDCardRequest.
+        """Sets the project_id of this RecognizeIdCardRequest.
 
         项目ID，您可以从[获取项目ID](https://support.huaweicloud.com/api-ocr/ocr_03_0130.html)中获取。
 
-        :param project_id: The project_id of this RecognizeIDCardRequest.
+        :param project_id: The project_id of this RecognizeIdCardRequest.
         :type: str
         """
         self._project_id = project_id
 
     @property
     def body(self):
-        """Gets the body of this RecognizeIDCardRequest.
+        """Gets the body of this RecognizeIdCardRequest.
 
 
-        :return: The body of this RecognizeIDCardRequest.
-        :rtype: IDCardRequestBody
+        :return: The body of this RecognizeIdCardRequest.
+        :rtype: IdCardRequestBody
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RecognizeIDCardRequest.
+        """Sets the body of this RecognizeIdCardRequest.
 
 
-        :param body: The body of this RecognizeIDCardRequest.
-        :type: IDCardRequestBody
+        :param body: The body of this RecognizeIdCardRequest.
+        :type: IdCardRequestBody
         """
         self._body = body
 
@@ -124,7 +124,7 @@ class RecognizeIDCardRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RecognizeIDCardRequest):
+        if not isinstance(other, RecognizeIdCardRequest):
             return False
 
         return self.__dict__ == other.__dict__

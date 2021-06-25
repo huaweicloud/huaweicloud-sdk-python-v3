@@ -30,7 +30,8 @@ class BackendApiBaseInfo:
         'req_method': 'str',
         'version': 'str',
         'req_uri': 'str',
-        'timeout': 'int'
+        'timeout': 'int',
+        'enable_client_ssl': 'bool'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class BackendApiBaseInfo:
         'req_method': 'req_method',
         'version': 'version',
         'req_uri': 'req_uri',
-        'timeout': 'timeout'
+        'timeout': 'timeout',
+        'enable_client_ssl': 'enable_client_ssl'
     }
 
-    def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None):
+    def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, enable_client_ssl=None):
         """BackendApiBaseInfo - a model defined in huaweicloud sdk"""
         
         
@@ -57,6 +59,7 @@ class BackendApiBaseInfo:
         self._version = None
         self._req_uri = None
         self._timeout = None
+        self._enable_client_ssl = None
         self.discriminator = None
 
         if authorizer_id is not None:
@@ -71,6 +74,8 @@ class BackendApiBaseInfo:
             self.version = version
         self.req_uri = req_uri
         self.timeout = timeout
+        if enable_client_ssl is not None:
+            self.enable_client_ssl = enable_client_ssl
 
     @property
     def authorizer_id(self):
@@ -230,7 +235,7 @@ class BackendApiBaseInfo:
     def timeout(self):
         """Gets the timeout of this BackendApiBaseInfo.
 
-        API网关请求后端服务的超时时间。  单位：毫秒。请求参数值不在合法范围内时将使用默认值
+        API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
         :return: The timeout of this BackendApiBaseInfo.
         :rtype: int
@@ -241,12 +246,34 @@ class BackendApiBaseInfo:
     def timeout(self, timeout):
         """Sets the timeout of this BackendApiBaseInfo.
 
-        API网关请求后端服务的超时时间。  单位：毫秒。请求参数值不在合法范围内时将使用默认值
+        API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
         :param timeout: The timeout of this BackendApiBaseInfo.
         :type: int
         """
         self._timeout = timeout
+
+    @property
+    def enable_client_ssl(self):
+        """Gets the enable_client_ssl of this BackendApiBaseInfo.
+
+        是否开启双向认证
+
+        :return: The enable_client_ssl of this BackendApiBaseInfo.
+        :rtype: bool
+        """
+        return self._enable_client_ssl
+
+    @enable_client_ssl.setter
+    def enable_client_ssl(self, enable_client_ssl):
+        """Sets the enable_client_ssl of this BackendApiBaseInfo.
+
+        是否开启双向认证
+
+        :param enable_client_ssl: The enable_client_ssl of this BackendApiBaseInfo.
+        :type: bool
+        """
+        self._enable_client_ssl = enable_client_ssl
 
     def to_dict(self):
         """Returns the model properties as a dict"""

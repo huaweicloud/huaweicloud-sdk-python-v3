@@ -190,7 +190,7 @@ class ListFreeResourcesReq:
     def status(self):
         """Gets the status of this ListFreeResourcesReq.
 
-        状态： 0：未生效1：生效中2：已用完3：已失效
+        状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
 
         :return: The status of this ListFreeResourcesReq.
         :rtype: int
@@ -201,7 +201,7 @@ class ListFreeResourcesReq:
     def status(self, status):
         """Sets the status of this ListFreeResourcesReq.
 
-        状态： 0：未生效1：生效中2：已用完3：已失效
+        状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
 
         :param status: The status of this ListFreeResourcesReq.
         :type: int

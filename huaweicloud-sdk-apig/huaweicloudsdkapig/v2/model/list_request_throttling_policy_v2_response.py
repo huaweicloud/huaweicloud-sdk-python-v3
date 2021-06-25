@@ -23,61 +23,37 @@ class ListRequestThrottlingPolicyV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total': 'int',
         'size': 'int',
+        'total': 'int',
         'throttles': 'list[ThrottleResp]'
     }
 
     attribute_map = {
-        'total': 'total',
         'size': 'size',
+        'total': 'total',
         'throttles': 'throttles'
     }
 
-    def __init__(self, total=None, size=None, throttles=None):
+    def __init__(self, size=None, total=None, throttles=None):
         """ListRequestThrottlingPolicyV2Response - a model defined in huaweicloud sdk"""
         
         super(ListRequestThrottlingPolicyV2Response, self).__init__()
 
-        self._total = None
         self._size = None
+        self._total = None
         self._throttles = None
         self.discriminator = None
 
-        if total is not None:
-            self.total = total
-        if size is not None:
-            self.size = size
+        self.size = size
+        self.total = total
         if throttles is not None:
             self.throttles = throttles
-
-    @property
-    def total(self):
-        """Gets the total of this ListRequestThrottlingPolicyV2Response.
-
-        符合条件的流控策略的数量
-
-        :return: The total of this ListRequestThrottlingPolicyV2Response.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ListRequestThrottlingPolicyV2Response.
-
-        符合条件的流控策略的数量
-
-        :param total: The total of this ListRequestThrottlingPolicyV2Response.
-        :type: int
-        """
-        self._total = total
 
     @property
     def size(self):
         """Gets the size of this ListRequestThrottlingPolicyV2Response.
 
-        本次查询返回的列表长度
+        本次返回的列表长度
 
         :return: The size of this ListRequestThrottlingPolicyV2Response.
         :rtype: int
@@ -88,12 +64,34 @@ class ListRequestThrottlingPolicyV2Response(SdkResponse):
     def size(self, size):
         """Sets the size of this ListRequestThrottlingPolicyV2Response.
 
-        本次查询返回的列表长度
+        本次返回的列表长度
 
         :param size: The size of this ListRequestThrottlingPolicyV2Response.
         :type: int
         """
         self._size = size
+
+    @property
+    def total(self):
+        """Gets the total of this ListRequestThrottlingPolicyV2Response.
+
+        满足条件的记录数
+
+        :return: The total of this ListRequestThrottlingPolicyV2Response.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ListRequestThrottlingPolicyV2Response.
+
+        满足条件的记录数
+
+        :param total: The total of this ListRequestThrottlingPolicyV2Response.
+        :type: int
+        """
+        self._total = total
 
     @property
     def throttles(self):

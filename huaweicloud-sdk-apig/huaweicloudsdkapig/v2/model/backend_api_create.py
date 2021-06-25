@@ -31,6 +31,7 @@ class BackendApiCreate:
         'version': 'str',
         'req_uri': 'str',
         'timeout': 'int',
+        'enable_client_ssl': 'bool',
         'vpc_channel_info': 'ApiBackendVpcReq',
         'vpc_channel_status': 'int'
     }
@@ -44,11 +45,12 @@ class BackendApiCreate:
         'version': 'version',
         'req_uri': 'req_uri',
         'timeout': 'timeout',
+        'enable_client_ssl': 'enable_client_ssl',
         'vpc_channel_info': 'vpc_channel_info',
         'vpc_channel_status': 'vpc_channel_status'
     }
 
-    def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, vpc_channel_info=None, vpc_channel_status=None):
+    def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, enable_client_ssl=None, vpc_channel_info=None, vpc_channel_status=None):
         """BackendApiCreate - a model defined in huaweicloud sdk"""
         
         
@@ -61,6 +63,7 @@ class BackendApiCreate:
         self._version = None
         self._req_uri = None
         self._timeout = None
+        self._enable_client_ssl = None
         self._vpc_channel_info = None
         self._vpc_channel_status = None
         self.discriminator = None
@@ -77,6 +80,8 @@ class BackendApiCreate:
             self.version = version
         self.req_uri = req_uri
         self.timeout = timeout
+        if enable_client_ssl is not None:
+            self.enable_client_ssl = enable_client_ssl
         if vpc_channel_info is not None:
             self.vpc_channel_info = vpc_channel_info
         if vpc_channel_status is not None:
@@ -240,7 +245,7 @@ class BackendApiCreate:
     def timeout(self):
         """Gets the timeout of this BackendApiCreate.
 
-        API网关请求后端服务的超时时间。  单位：毫秒。请求参数值不在合法范围内时将使用默认值
+        API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
         :return: The timeout of this BackendApiCreate.
         :rtype: int
@@ -251,12 +256,34 @@ class BackendApiCreate:
     def timeout(self, timeout):
         """Sets the timeout of this BackendApiCreate.
 
-        API网关请求后端服务的超时时间。  单位：毫秒。请求参数值不在合法范围内时将使用默认值
+        API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
 
         :param timeout: The timeout of this BackendApiCreate.
         :type: int
         """
         self._timeout = timeout
+
+    @property
+    def enable_client_ssl(self):
+        """Gets the enable_client_ssl of this BackendApiCreate.
+
+        是否开启双向认证
+
+        :return: The enable_client_ssl of this BackendApiCreate.
+        :rtype: bool
+        """
+        return self._enable_client_ssl
+
+    @enable_client_ssl.setter
+    def enable_client_ssl(self, enable_client_ssl):
+        """Sets the enable_client_ssl of this BackendApiCreate.
+
+        是否开启双向认证
+
+        :param enable_client_ssl: The enable_client_ssl of this BackendApiCreate.
+        :type: bool
+        """
+        self._enable_client_ssl = enable_client_ssl
 
     @property
     def vpc_channel_info(self):
@@ -282,7 +309,7 @@ class BackendApiCreate:
     def vpc_channel_status(self):
         """Gets the vpc_channel_status of this BackendApiCreate.
 
-        是否使用VPC通道 - 1 : 使用VPC通道 - 2 : 不使用VPC通道
+        是否使用VPC通道 - 1：使用VPC通道 - 2：不使用VPC通道
 
         :return: The vpc_channel_status of this BackendApiCreate.
         :rtype: int
@@ -293,7 +320,7 @@ class BackendApiCreate:
     def vpc_channel_status(self, vpc_channel_status):
         """Sets the vpc_channel_status of this BackendApiCreate.
 
-        是否使用VPC通道 - 1 : 使用VPC通道 - 2 : 不使用VPC通道
+        是否使用VPC通道 - 1：使用VPC通道 - 2：不使用VPC通道
 
         :param vpc_channel_status: The vpc_channel_status of this BackendApiCreate.
         :type: int

@@ -29,8 +29,7 @@ class AddRuleReq:
         'app_type': 'str',
         'app_id': 'str',
         'select': 'str',
-        'where': 'str',
-        'data_version': 'str'
+        'where': 'str'
     }
 
     attribute_map = {
@@ -40,11 +39,10 @@ class AddRuleReq:
         'app_type': 'app_type',
         'app_id': 'app_id',
         'select': 'select',
-        'where': 'where',
-        'data_version': 'data_version'
+        'where': 'where'
     }
 
-    def __init__(self, rule_name=None, description=None, subject=None, app_type=None, app_id=None, select=None, where=None, data_version=None):
+    def __init__(self, rule_name=None, description=None, subject=None, app_type=None, app_id=None, select=None, where=None):
         """AddRuleReq - a model defined in huaweicloud sdk"""
         
         
@@ -56,7 +54,6 @@ class AddRuleReq:
         self._app_id = None
         self._select = None
         self._where = None
-        self._data_version = None
         self.discriminator = None
 
         if rule_name is not None:
@@ -72,8 +69,6 @@ class AddRuleReq:
             self.select = select
         if where is not None:
             self.where = where
-        if data_version is not None:
-            self.data_version = data_version
 
     @property
     def rule_name(self):
@@ -226,28 +221,6 @@ class AddRuleReq:
         :type: str
         """
         self._where = where
-
-    @property
-    def data_version(self):
-        """Gets the data_version of this AddRuleReq.
-
-        **参数说明**：规则推送消息的消息格式版本，租户无需设置，仅供内部兼容历史推送消息使用，iocsa的历史推送消息版本为V5.0.1
-
-        :return: The data_version of this AddRuleReq.
-        :rtype: str
-        """
-        return self._data_version
-
-    @data_version.setter
-    def data_version(self, data_version):
-        """Sets the data_version of this AddRuleReq.
-
-        **参数说明**：规则推送消息的消息格式版本，租户无需设置，仅供内部兼容历史推送消息使用，iocsa的历史推送消息版本为V5.0.1
-
-        :param data_version: The data_version of this AddRuleReq.
-        :type: str
-        """
-        self._data_version = data_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

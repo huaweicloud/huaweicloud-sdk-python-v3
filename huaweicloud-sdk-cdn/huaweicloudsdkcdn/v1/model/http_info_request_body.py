@@ -95,7 +95,7 @@ class HttpInfoRequestBody:
     def https_status(self):
         """Gets the https_status of this HttpInfoRequestBody.
 
-        HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源，开启时需要传递证书及私钥。
+        HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源，首次配置证书需要传递证书及私钥，如已有证书可不用传证书及私钥。
 
         :return: The https_status of this HttpInfoRequestBody.
         :rtype: int
@@ -106,7 +106,7 @@ class HttpInfoRequestBody:
     def https_status(self, https_status):
         """Sets the https_status of this HttpInfoRequestBody.
 
-        HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源，开启时需要传递证书及私钥。
+        HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源，首次配置证书需要传递证书及私钥，如已有证书可不用传证书及私钥。
 
         :param https_status: The https_status of this HttpInfoRequestBody.
         :type: int
@@ -117,7 +117,7 @@ class HttpInfoRequestBody:
     def certificate(self):
         """Gets the certificate of this HttpInfoRequestBody.
 
-        功能说明：HTTPS协议使用的证书内容，不启用证书则无需输入。  取值范围：PEM编码格式。
+        功能说明：HTTPS协议使用的证书内容，不启用证书则无需输入。取值范围：PEM编码格式。初次配置证书时必传。
 
         :return: The certificate of this HttpInfoRequestBody.
         :rtype: str
@@ -128,7 +128,7 @@ class HttpInfoRequestBody:
     def certificate(self, certificate):
         """Sets the certificate of this HttpInfoRequestBody.
 
-        功能说明：HTTPS协议使用的证书内容，不启用证书则无需输入。  取值范围：PEM编码格式。
+        功能说明：HTTPS协议使用的证书内容，不启用证书则无需输入。取值范围：PEM编码格式。初次配置证书时必传。
 
         :param certificate: The certificate of this HttpInfoRequestBody.
         :type: str
@@ -139,7 +139,7 @@ class HttpInfoRequestBody:
     def private_key(self):
         """Gets the private_key of this HttpInfoRequestBody.
 
-        功能说明： HTTPS协议使用的私钥，不启用证书则无需输入。  取值范围：PEM编码格式。
+        功能说明： HTTPS协议使用的私钥，不启用证书则无需输入。取值范围：PEM编码格式。初次配置证书时必传。
 
         :return: The private_key of this HttpInfoRequestBody.
         :rtype: str
@@ -150,7 +150,7 @@ class HttpInfoRequestBody:
     def private_key(self, private_key):
         """Sets the private_key of this HttpInfoRequestBody.
 
-        功能说明： HTTPS协议使用的私钥，不启用证书则无需输入。  取值范围：PEM编码格式。
+        功能说明： HTTPS协议使用的私钥，不启用证书则无需输入。取值范围：PEM编码格式。初次配置证书时必传。
 
         :param private_key: The private_key of this HttpInfoRequestBody.
         :type: str
@@ -183,7 +183,7 @@ class HttpInfoRequestBody:
     def certificate_type(self):
         """Gets the certificate_type of this HttpInfoRequestBody.
 
-        证书类型。1：代表华为云托管证书；0：表示自有证书。
+        证书类型。1：代表华为云托管证书；0：表示自有证书。 默认值0。
 
         :return: The certificate_type of this HttpInfoRequestBody.
         :rtype: int
@@ -194,7 +194,7 @@ class HttpInfoRequestBody:
     def certificate_type(self, certificate_type):
         """Sets the certificate_type of this HttpInfoRequestBody.
 
-        证书类型。1：代表华为云托管证书；0：表示自有证书。
+        证书类型。1：代表华为云托管证书；0：表示自有证书。 默认值0。
 
         :param certificate_type: The certificate_type of this HttpInfoRequestBody.
         :type: int

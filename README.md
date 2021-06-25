@@ -20,7 +20,7 @@ This document introduces how to obtain and use Huawei Cloud Python SDK.
 - To use Huawei Cloud Python SDK to access the APIs of specific service, please make sure you do have activated the
   service in [Huawei Cloud console](https://console.huaweicloud.com/?locale=en-us) if needed.
 
-- Huawei Cloud Python SDK requires **Python 3** or later, run command `python --version` to check the version of Python.
+- Huawei Cloud Python SDK requires **Python 3.3** or later, run command `python --version` to check the version of Python.
 
 ## Install Python SDK
 

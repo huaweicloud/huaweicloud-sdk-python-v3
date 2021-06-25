@@ -24,7 +24,6 @@ class RuleAction:
 
     openapi_types = {
         'type': 'str',
-        'addition': 'list[str]',
         'smn_forwarding': 'ActionSmnForwarding',
         'device_alarm': 'ActionDeviceAlarm',
         'device_command': 'ActionDeviceCommand',
@@ -37,7 +36,6 @@ class RuleAction:
 
     attribute_map = {
         'type': 'type',
-        'addition': 'addition',
         'smn_forwarding': 'smn_forwarding',
         'device_alarm': 'device_alarm',
         'device_command': 'device_command',
@@ -48,13 +46,12 @@ class RuleAction:
         'kafka_forwarding': 'kafka_forwarding'
     }
 
-    def __init__(self, type=None, addition=None, smn_forwarding=None, device_alarm=None, device_command=None, dis_forwarding=None, obs_forwarding=None, roma_forwarding=None, iota_forwarding=None, kafka_forwarding=None):
+    def __init__(self, type=None, smn_forwarding=None, device_alarm=None, device_command=None, dis_forwarding=None, obs_forwarding=None, roma_forwarding=None, iota_forwarding=None, kafka_forwarding=None):
         """RuleAction - a model defined in huaweicloud sdk"""
         
         
 
         self._type = None
-        self._addition = None
         self._smn_forwarding = None
         self._device_alarm = None
         self._device_command = None
@@ -66,8 +63,6 @@ class RuleAction:
         self.discriminator = None
 
         self.type = type
-        if addition is not None:
-            self.addition = addition
         if smn_forwarding is not None:
             self.smn_forwarding = smn_forwarding
         if device_alarm is not None:
@@ -106,28 +101,6 @@ class RuleAction:
         :type: str
         """
         self._type = type
-
-    @property
-    def addition(self):
-        """Gets the addition of this RuleAction.
-
-        **参数说明**：附加信息，在默认规则执行结果中附加额外内容，仅设备属性和消息类型数据转发规则支持。 **取值范围**：PRODUCT_ID
-
-        :return: The addition of this RuleAction.
-        :rtype: list[str]
-        """
-        return self._addition
-
-    @addition.setter
-    def addition(self, addition):
-        """Sets the addition of this RuleAction.
-
-        **参数说明**：附加信息，在默认规则执行结果中附加额外内容，仅设备属性和消息类型数据转发规则支持。 **取值范围**：PRODUCT_ID
-
-        :param addition: The addition of this RuleAction.
-        :type: list[str]
-        """
-        self._addition = addition
 
     @property
     def smn_forwarding(self):

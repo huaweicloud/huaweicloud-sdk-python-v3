@@ -119,6 +119,9 @@ from huaweicloudsdkmeeting.v1.model.id_mark_dto import IdMarkDTO
 from huaweicloudsdkmeeting.v1.model.image_moderation_result import ImageModerationResult
 from huaweicloudsdkmeeting.v1.model.invite_participant_request import InviteParticipantRequest
 from huaweicloudsdkmeeting.v1.model.invite_participant_response import InviteParticipantResponse
+from huaweicloudsdkmeeting.v1.model.invite_share_dto import InviteShareDTO
+from huaweicloudsdkmeeting.v1.model.invite_share_request import InviteShareRequest
+from huaweicloudsdkmeeting.v1.model.invite_share_response import InviteShareResponse
 from huaweicloudsdkmeeting.v1.model.invite_user_request import InviteUserRequest
 from huaweicloudsdkmeeting.v1.model.invite_user_response import InviteUserResponse
 from huaweicloudsdkmeeting.v1.model.invite_with_pwd_request import InviteWithPwdRequest
@@ -163,6 +166,9 @@ from huaweicloudsdkmeeting.v1.model.open_room_setting_vo import OpenRoomSettingV
 from huaweicloudsdkmeeting.v1.model.open_schedule_conf_req import OpenScheduleConfReq
 from huaweicloudsdkmeeting.v1.model.open_upload_file_info import OpenUploadFileInfo
 from huaweicloudsdkmeeting.v1.model.open_webinar_base_info import OpenWebinarBaseInfo
+from huaweicloudsdkmeeting.v1.model.open_webinar_history_info import OpenWebinarHistoryInfo
+from huaweicloudsdkmeeting.v1.model.open_webinar_ongoing_info import OpenWebinarOngoingInfo
+from huaweicloudsdkmeeting.v1.model.open_webinar_upcoming_info import OpenWebinarUpcomingInfo
 from huaweicloudsdkmeeting.v1.model.org_group_dto import OrgGroupDTO
 from huaweicloudsdkmeeting.v1.model.org_property_dto import OrgPropertyDTO
 from huaweicloudsdkmeeting.v1.model.page_participant import PageParticipant

@@ -27,8 +27,7 @@ class RoutingRuleAction:
         'rule_id': 'str',
         'app_id': 'str',
         'channel': 'str',
-        'channel_detail': 'ChannelDetail',
-        'batch': 'bool'
+        'channel_detail': 'ChannelDetail'
     }
 
     attribute_map = {
@@ -36,11 +35,10 @@ class RoutingRuleAction:
         'rule_id': 'rule_id',
         'app_id': 'app_id',
         'channel': 'channel',
-        'channel_detail': 'channel_detail',
-        'batch': 'batch'
+        'channel_detail': 'channel_detail'
     }
 
-    def __init__(self, action_id=None, rule_id=None, app_id=None, channel=None, channel_detail=None, batch=None):
+    def __init__(self, action_id=None, rule_id=None, app_id=None, channel=None, channel_detail=None):
         """RoutingRuleAction - a model defined in huaweicloud sdk"""
         
         
@@ -50,7 +48,6 @@ class RoutingRuleAction:
         self._app_id = None
         self._channel = None
         self._channel_detail = None
-        self._batch = None
         self.discriminator = None
 
         if action_id is not None:
@@ -63,8 +60,6 @@ class RoutingRuleAction:
             self.channel = channel
         if channel_detail is not None:
             self.channel_detail = channel_detail
-        if batch is not None:
-            self.batch = batch
 
     @property
     def action_id(self):
@@ -173,28 +168,6 @@ class RoutingRuleAction:
         :type: ChannelDetail
         """
         self._channel_detail = channel_detail
-
-    @property
-    def batch(self):
-        """Gets the batch of this RoutingRuleAction.
-
-        是否支持批量接收推送消息。
-
-        :return: The batch of this RoutingRuleAction.
-        :rtype: bool
-        """
-        return self._batch
-
-    @batch.setter
-    def batch(self, batch):
-        """Sets the batch of this RoutingRuleAction.
-
-        是否支持批量接收推送消息。
-
-        :param batch: The batch of this RoutingRuleAction.
-        :type: bool
-        """
-        self._batch = batch
 
     def to_dict(self):
         """Returns the model properties as a dict"""

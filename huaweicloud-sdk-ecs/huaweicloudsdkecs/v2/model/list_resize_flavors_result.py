@@ -36,7 +36,8 @@ class ListResizeFlavorsResult:
         'rxtx_cap': 'str',
         'os_flavor_accessis_public': 'bool',
         'links': 'list[FlavorLink]',
-        'extra_specs': 'FlavorExtraSpec'
+        'extra_specs': 'FlavorExtraSpec',
+        'instance_quota': 'object'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class ListResizeFlavorsResult:
         'rxtx_cap': 'rxtx_cap',
         'os_flavor_accessis_public': 'os-flavor-access:is_public',
         'links': 'links',
-        'extra_specs': 'extra_specs'
+        'extra_specs': 'extra_specs',
+        'instance_quota': 'instance_quota'
     }
 
-    def __init__(self, id=None, name=None, vcpus=None, ram=None, disk=None, swap=None, os_flv_ext_dat_aephemeral=None, os_flv_disable_ddisabled=None, rxtx_factor=None, rxtx_quota=None, rxtx_cap=None, os_flavor_accessis_public=None, links=None, extra_specs=None):
+    def __init__(self, id=None, name=None, vcpus=None, ram=None, disk=None, swap=None, os_flv_ext_dat_aephemeral=None, os_flv_disable_ddisabled=None, rxtx_factor=None, rxtx_quota=None, rxtx_cap=None, os_flavor_accessis_public=None, links=None, extra_specs=None, instance_quota=None):
         """ListResizeFlavorsResult - a model defined in huaweicloud sdk"""
         
         
@@ -75,6 +77,7 @@ class ListResizeFlavorsResult:
         self._os_flavor_accessis_public = None
         self._links = None
         self._extra_specs = None
+        self._instance_quota = None
         self.discriminator = None
 
         self.id = id
@@ -91,6 +94,7 @@ class ListResizeFlavorsResult:
         self.os_flavor_accessis_public = os_flavor_accessis_public
         self.links = links
         self.extra_specs = extra_specs
+        self.instance_quota = instance_quota
 
     @property
     def id(self):
@@ -397,6 +401,28 @@ class ListResizeFlavorsResult:
         :type: FlavorExtraSpec
         """
         self._extra_specs = extra_specs
+
+    @property
+    def instance_quota(self):
+        """Gets the instance_quota of this ListResizeFlavorsResult.
+
+        预留属性。
+
+        :return: The instance_quota of this ListResizeFlavorsResult.
+        :rtype: object
+        """
+        return self._instance_quota
+
+    @instance_quota.setter
+    def instance_quota(self, instance_quota):
+        """Sets the instance_quota of this ListResizeFlavorsResult.
+
+        预留属性。
+
+        :param instance_quota: The instance_quota of this ListResizeFlavorsResult.
+        :type: object
+        """
+        self._instance_quota = instance_quota
 
     def to_dict(self):
         """Returns the model properties as a dict"""

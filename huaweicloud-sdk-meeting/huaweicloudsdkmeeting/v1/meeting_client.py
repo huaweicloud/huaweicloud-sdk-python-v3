@@ -3028,6 +3028,75 @@ class MeetingClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def invite_share(self, request):
+        """邀请共享
+
+        场景描述：主席邀请、取消邀请会场共享 功能描述：主席邀请、取消邀请会场共享
+
+        :param InviteShareRequest request
+        :return: InviteShareResponse
+        """
+        return self.invite_share_with_http_info(request)
+
+    def invite_share_with_http_info(self, request):
+        """邀请共享
+
+        场景描述：主席邀请、取消邀请会场共享 功能描述：主席邀请、取消邀请会场共享
+
+        :param InviteShareRequest request
+        :return: InviteShareResponse
+        """
+
+        all_params = ['conference_id', 'participant_id', 'x_conference_authorization', 'req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'participant_id' in local_var_params:
+            query_params.append(('participantID', local_var_params['participant_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/participants/share/invite',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='InviteShareResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def invite_user(self, request):
         """邀请用户
 

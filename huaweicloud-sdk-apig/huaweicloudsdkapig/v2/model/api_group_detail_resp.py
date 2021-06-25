@@ -367,7 +367,7 @@ class ApiGroupDetailResp:
     def status(self):
         """Gets the status of this ApiGroupDetailResp.
 
-        状态
+        状态   - 1： 有效
 
         :return: The status of this ApiGroupDetailResp.
         :rtype: int
@@ -378,7 +378,7 @@ class ApiGroupDetailResp:
     def status(self, status):
         """Sets the status of this ApiGroupDetailResp.
 
-        状态
+        状态   - 1： 有效
 
         :param status: The status of this ApiGroupDetailResp.
         :type: int

@@ -74,7 +74,7 @@ class ThrottleSpecialReq:
     def object_id(self):
         """Gets the object_id of this ThrottleSpecialReq.
 
-        特殊APP的编号或特殊租户的账号ID
+        特殊APP的编号或特殊租户的帐号ID
 
         :return: The object_id of this ThrottleSpecialReq.
         :rtype: str
@@ -85,7 +85,7 @@ class ThrottleSpecialReq:
     def object_id(self, object_id):
         """Sets the object_id of this ThrottleSpecialReq.
 
-        特殊APP的编号或特殊租户的账号ID
+        特殊APP的编号或特殊租户的帐号ID
 
         :param object_id: The object_id of this ThrottleSpecialReq.
         :type: str

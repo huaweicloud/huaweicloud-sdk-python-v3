@@ -30,9 +30,7 @@ class UpdateRuleResponse(SdkResponse):
         'actions': 'list[RuleAction]',
         'rule_type': 'str',
         'status': 'str',
-        'app_id': 'str',
-        'edge_node_ids': 'list[str]',
-        'last_update_time': 'str'
+        'app_id': 'str'
     }
 
     attribute_map = {
@@ -43,12 +41,10 @@ class UpdateRuleResponse(SdkResponse):
         'actions': 'actions',
         'rule_type': 'rule_type',
         'status': 'status',
-        'app_id': 'app_id',
-        'edge_node_ids': 'edge_node_ids',
-        'last_update_time': 'last_update_time'
+        'app_id': 'app_id'
     }
 
-    def __init__(self, rule_id=None, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None, edge_node_ids=None, last_update_time=None):
+    def __init__(self, rule_id=None, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None):
         """UpdateRuleResponse - a model defined in huaweicloud sdk"""
         
         super(UpdateRuleResponse, self).__init__()
@@ -61,8 +57,6 @@ class UpdateRuleResponse(SdkResponse):
         self._rule_type = None
         self._status = None
         self._app_id = None
-        self._edge_node_ids = None
-        self._last_update_time = None
         self.discriminator = None
 
         if rule_id is not None:
@@ -81,10 +75,6 @@ class UpdateRuleResponse(SdkResponse):
             self.status = status
         if app_id is not None:
             self.app_id = app_id
-        if edge_node_ids is not None:
-            self.edge_node_ids = edge_node_ids
-        if last_update_time is not None:
-            self.last_update_time = last_update_time
 
     @property
     def rule_id(self):
@@ -259,50 +249,6 @@ class UpdateRuleResponse(SdkResponse):
         :type: str
         """
         self._app_id = app_id
-
-    @property
-    def edge_node_ids(self):
-        """Gets the edge_node_ids of this UpdateRuleResponse.
-
-        归属边缘侧节点设备ID列表。
-
-        :return: The edge_node_ids of this UpdateRuleResponse.
-        :rtype: list[str]
-        """
-        return self._edge_node_ids
-
-    @edge_node_ids.setter
-    def edge_node_ids(self, edge_node_ids):
-        """Sets the edge_node_ids of this UpdateRuleResponse.
-
-        归属边缘侧节点设备ID列表。
-
-        :param edge_node_ids: The edge_node_ids of this UpdateRuleResponse.
-        :type: list[str]
-        """
-        self._edge_node_ids = edge_node_ids
-
-    @property
-    def last_update_time(self):
-        """Gets the last_update_time of this UpdateRuleResponse.
-
-        规则最后更新时间，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'。
-
-        :return: The last_update_time of this UpdateRuleResponse.
-        :rtype: str
-        """
-        return self._last_update_time
-
-    @last_update_time.setter
-    def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this UpdateRuleResponse.
-
-        规则最后更新时间，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'。
-
-        :param last_update_time: The last_update_time of this UpdateRuleResponse.
-        :type: str
-        """
-        self._last_update_time = last_update_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

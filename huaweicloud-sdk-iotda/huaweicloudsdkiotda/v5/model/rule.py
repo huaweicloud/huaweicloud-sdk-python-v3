@@ -29,8 +29,7 @@ class Rule:
         'actions': 'list[RuleAction]',
         'rule_type': 'str',
         'status': 'str',
-        'app_id': 'str',
-        'edge_node_ids': 'list[str]'
+        'app_id': 'str'
     }
 
     attribute_map = {
@@ -40,11 +39,10 @@ class Rule:
         'actions': 'actions',
         'rule_type': 'rule_type',
         'status': 'status',
-        'app_id': 'app_id',
-        'edge_node_ids': 'edge_node_ids'
+        'app_id': 'app_id'
     }
 
-    def __init__(self, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None, edge_node_ids=None):
+    def __init__(self, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None):
         """Rule - a model defined in huaweicloud sdk"""
         
         
@@ -56,7 +54,6 @@ class Rule:
         self._rule_type = None
         self._status = None
         self._app_id = None
-        self._edge_node_ids = None
         self.discriminator = None
 
         self.name = name
@@ -69,8 +66,6 @@ class Rule:
             self.status = status
         if app_id is not None:
             self.app_id = app_id
-        if edge_node_ids is not None:
-            self.edge_node_ids = edge_node_ids
 
     @property
     def name(self):
@@ -223,28 +218,6 @@ class Rule:
         :type: str
         """
         self._app_id = app_id
-
-    @property
-    def edge_node_ids(self):
-        """Gets the edge_node_ids of this Rule.
-
-        **参数说明**：归属边缘侧节点设备ID列表。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
-
-        :return: The edge_node_ids of this Rule.
-        :rtype: list[str]
-        """
-        return self._edge_node_ids
-
-    @edge_node_ids.setter
-    def edge_node_ids(self, edge_node_ids):
-        """Sets the edge_node_ids of this Rule.
-
-        **参数说明**：归属边缘侧节点设备ID列表。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
-
-        :param edge_node_ids: The edge_node_ids of this Rule.
-        :type: list[str]
-        """
-        self._edge_node_ids = edge_node_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

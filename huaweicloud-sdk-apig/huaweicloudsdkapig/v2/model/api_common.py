@@ -222,7 +222,7 @@ class ApiCommon:
     def name(self):
         """Gets the name of this ApiCommon.
 
-        API名称长度。  为3 ~ 64位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
+        API名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
         :return: The name of this ApiCommon.
         :rtype: str
@@ -233,7 +233,7 @@ class ApiCommon:
     def name(self, name):
         """Sets the name of this ApiCommon.
 
-        API名称长度。  为3 ~ 64位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
+        API名称。  长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、下划线组成，且只能以英文或中文开头。 > 中文字符必须为UTF-8或者unicode编码。
 
         :param name: The name of this ApiCommon.
         :type: str
@@ -332,7 +332,7 @@ class ApiCommon:
     def req_uri(self):
         """Gets the req_uri of this ApiCommon.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。 > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 > 需要服从URI规范。
 
         :return: The req_uri of this ApiCommon.
         :rtype: str
@@ -343,7 +343,7 @@ class ApiCommon:
     def req_uri(self, req_uri):
         """Sets the req_uri of this ApiCommon.
 
-        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。 > 需要服从URI规范。
+        请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ . 等特殊字符，总长度不超过512，且满足URI规范。 > 需要服从URI规范。
 
         :param req_uri: The req_uri of this ApiCommon.
         :type: str
@@ -726,7 +726,7 @@ class ApiCommon:
     def status(self):
         """Gets the status of this ApiCommon.
 
-        API的状态
+        API状态   - 1： 有效
 
         :return: The status of this ApiCommon.
         :rtype: int
@@ -737,7 +737,7 @@ class ApiCommon:
     def status(self, status):
         """Sets the status of this ApiCommon.
 
-        API的状态
+        API状态   - 1： 有效
 
         :param status: The status of this ApiCommon.
         :type: int
@@ -858,7 +858,7 @@ class ApiCommon:
     def run_env_id(self):
         """Gets the run_env_id of this ApiCommon.
 
-        发布的环境id
+        发布的环境编号  存在多个发布记录时，环境编号之间用|隔开
 
         :return: The run_env_id of this ApiCommon.
         :rtype: str
@@ -869,7 +869,7 @@ class ApiCommon:
     def run_env_id(self, run_env_id):
         """Sets the run_env_id of this ApiCommon.
 
-        发布的环境id
+        发布的环境编号  存在多个发布记录时，环境编号之间用|隔开
 
         :param run_env_id: The run_env_id of this ApiCommon.
         :type: str
@@ -880,7 +880,7 @@ class ApiCommon:
     def run_env_name(self):
         """Gets the run_env_name of this ApiCommon.
 
-        发布的环境名称
+        发布的环境名称  存在多个发布记录时，环境名称之间用|隔开
 
         :return: The run_env_name of this ApiCommon.
         :rtype: str
@@ -891,7 +891,7 @@ class ApiCommon:
     def run_env_name(self, run_env_name):
         """Sets the run_env_name of this ApiCommon.
 
-        发布的环境名称
+        发布的环境名称  存在多个发布记录时，环境名称之间用|隔开
 
         :param run_env_name: The run_env_name of this ApiCommon.
         :type: str
@@ -902,7 +902,7 @@ class ApiCommon:
     def publish_id(self):
         """Gets the publish_id of this ApiCommon.
 
-        发布记录编号  存在多个发布记录时，编号之间用|隔开
+        发布记录编号  存在多个发布记录时，发布记录编号之间用|隔开
 
         :return: The publish_id of this ApiCommon.
         :rtype: str
@@ -913,7 +913,7 @@ class ApiCommon:
     def publish_id(self, publish_id):
         """Sets the publish_id of this ApiCommon.
 
-        发布记录编号  存在多个发布记录时，编号之间用|隔开
+        发布记录编号  存在多个发布记录时，发布记录编号之间用|隔开
 
         :param publish_id: The publish_id of this ApiCommon.
         :type: str

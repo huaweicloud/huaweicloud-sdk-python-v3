@@ -24,7 +24,6 @@ class DeleteClusterRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'error_status': 'str',
         'delete_efs': 'str',
         'delete_eni': 'str',
         'delete_evs': 'str',
@@ -35,7 +34,6 @@ class DeleteClusterRequest:
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'error_status': 'errorStatus',
         'delete_efs': 'delete_efs',
         'delete_eni': 'delete_eni',
         'delete_evs': 'delete_evs',
@@ -44,13 +42,12 @@ class DeleteClusterRequest:
         'delete_sfs': 'delete_sfs'
     }
 
-    def __init__(self, cluster_id=None, error_status=None, delete_efs=None, delete_eni=None, delete_evs=None, delete_net=None, delete_obs=None, delete_sfs=None):
+    def __init__(self, cluster_id=None, delete_efs=None, delete_eni=None, delete_evs=None, delete_net=None, delete_obs=None, delete_sfs=None):
         """DeleteClusterRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._cluster_id = None
-        self._error_status = None
         self._delete_efs = None
         self._delete_eni = None
         self._delete_evs = None
@@ -60,8 +57,6 @@ class DeleteClusterRequest:
         self.discriminator = None
 
         self.cluster_id = cluster_id
-        if error_status is not None:
-            self.error_status = error_status
         if delete_efs is not None:
             self.delete_efs = delete_efs
         if delete_eni is not None:
@@ -96,28 +91,6 @@ class DeleteClusterRequest:
         :type: str
         """
         self._cluster_id = cluster_id
-
-    @property
-    def error_status(self):
-        """Gets the error_status of this DeleteClusterRequest.
-
-        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
-
-        :return: The error_status of this DeleteClusterRequest.
-        :rtype: str
-        """
-        return self._error_status
-
-    @error_status.setter
-    def error_status(self, error_status):
-        """Sets the error_status of this DeleteClusterRequest.
-
-        集群状态兼容Error参数，用于API平滑切换。 兼容场景下，errorStatus为空则屏蔽Error状态为Deleting状态。
-
-        :param error_status: The error_status of this DeleteClusterRequest.
-        :type: str
-        """
-        self._error_status = error_status
 
     @property
     def delete_efs(self):

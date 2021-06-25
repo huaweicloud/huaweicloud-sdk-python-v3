@@ -72,7 +72,7 @@ class ListFreeResourcesResponse(SdkResponse):
     def free_resource_packages(self):
         """Gets the free_resource_packages of this ListFreeResourcesResponse.
 
-        资源包信息列表。
+        资源包信息列表，具体参见表2。
 
         :return: The free_resource_packages of this ListFreeResourcesResponse.
         :rtype: list[FreeResourcePackage]
@@ -83,7 +83,7 @@ class ListFreeResourcesResponse(SdkResponse):
     def free_resource_packages(self, free_resource_packages):
         """Sets the free_resource_packages of this ListFreeResourcesResponse.
 
-        资源包信息列表。
+        资源包信息列表，具体参见表2。
 
         :param free_resource_packages: The free_resource_packages of this ListFreeResourcesResponse.
         :type: list[FreeResourcePackage]

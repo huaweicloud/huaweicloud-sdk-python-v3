@@ -24,32 +24,27 @@ class UpdateActionReq:
 
     openapi_types = {
         'channel': 'str',
-        'channel_detail': 'ChannelDetail',
-        'batch': 'bool'
+        'channel_detail': 'ChannelDetail'
     }
 
     attribute_map = {
         'channel': 'channel',
-        'channel_detail': 'channel_detail',
-        'batch': 'batch'
+        'channel_detail': 'channel_detail'
     }
 
-    def __init__(self, channel=None, channel_detail=None, batch=None):
+    def __init__(self, channel=None, channel_detail=None):
         """UpdateActionReq - a model defined in huaweicloud sdk"""
         
         
 
         self._channel = None
         self._channel_detail = None
-        self._batch = None
         self.discriminator = None
 
         if channel is not None:
             self.channel = channel
         if channel_detail is not None:
             self.channel_detail = channel_detail
-        if batch is not None:
-            self.batch = batch
 
     @property
     def channel(self):
@@ -92,28 +87,6 @@ class UpdateActionReq:
         :type: ChannelDetail
         """
         self._channel_detail = channel_detail
-
-    @property
-    def batch(self):
-        """Gets the batch of this UpdateActionReq.
-
-        **参数说明**：是否支持批量接收推送消息。
-
-        :return: The batch of this UpdateActionReq.
-        :rtype: bool
-        """
-        return self._batch
-
-    @batch.setter
-    def batch(self, batch):
-        """Sets the batch of this UpdateActionReq.
-
-        **参数说明**：是否支持批量接收推送消息。
-
-        :param batch: The batch of this UpdateActionReq.
-        :type: bool
-        """
-        self._batch = batch
 
     def to_dict(self):
         """Returns the model properties as a dict"""

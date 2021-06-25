@@ -45,7 +45,7 @@ class ListFreeResourceUsagesResponse(SdkResponse):
     def free_resources(self):
         """Gets the free_resources of this ListFreeResourceUsagesResponse.
 
-        资源套餐内的资源项信息（资源项ID级的详情）。
+        资源套餐内的资源项信息（资源项ID级的详情），具体参见表2。
 
         :return: The free_resources of this ListFreeResourceUsagesResponse.
         :rtype: list[FreeResourceDetail]
@@ -56,7 +56,7 @@ class ListFreeResourceUsagesResponse(SdkResponse):
     def free_resources(self, free_resources):
         """Sets the free_resources of this ListFreeResourceUsagesResponse.
 
-        资源套餐内的资源项信息（资源项ID级的详情）。
+        资源套餐内的资源项信息（资源项ID级的详情），具体参见表2。
 
         :param free_resources: The free_resources of this ListFreeResourceUsagesResponse.
         :type: list[FreeResourceDetail]
