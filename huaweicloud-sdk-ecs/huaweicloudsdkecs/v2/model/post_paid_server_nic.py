@@ -59,7 +59,7 @@ class PostPaidServerNic:
     def subnet_id(self):
         """Gets the subnet_id of this PostPaidServerNic.
 
-        待创建云服务器的网卡信息。   需要指定vpcid对应VPC下已创建的网络（network）的ID，UUID格式。
+        待创建云服务器所在的子网信息，需要指定vpcid对应VPC下的子网ID，UUID格式。  可以通过VPC服务 [查询子网](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VPC&api=ListSubnets) 接口查询，该接口支持通过创建云服务器填写的vpcid进行过滤查询。
 
         :return: The subnet_id of this PostPaidServerNic.
         :rtype: str
@@ -70,7 +70,7 @@ class PostPaidServerNic:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this PostPaidServerNic.
 
-        待创建云服务器的网卡信息。   需要指定vpcid对应VPC下已创建的网络（network）的ID，UUID格式。
+        待创建云服务器所在的子网信息，需要指定vpcid对应VPC下的子网ID，UUID格式。  可以通过VPC服务 [查询子网](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VPC&api=ListSubnets) 接口查询，该接口支持通过创建云服务器填写的vpcid进行过滤查询。
 
         :param subnet_id: The subnet_id of this PostPaidServerNic.
         :type: str

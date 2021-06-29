@@ -25,29 +25,29 @@ class CreateConfigurationDatastoreOption:
     openapi_types = {
         'type': 'str',
         'version': 'str',
-        'storage_engine': 'str'
+        'mode': 'str'
     }
 
     attribute_map = {
         'type': 'type',
         'version': 'version',
-        'storage_engine': 'storage_engine'
+        'mode': 'mode'
     }
 
-    def __init__(self, type=None, version=None, storage_engine=None):
+    def __init__(self, type=None, version=None, mode=None):
         """CreateConfigurationDatastoreOption - a model defined in huaweicloud sdk"""
         
         
 
         self._type = None
         self._version = None
-        self._storage_engine = None
+        self._mode = None
         self.discriminator = None
 
         self.type = type
         self.version = version
-        if storage_engine is not None:
-            self.storage_engine = storage_engine
+        if mode is not None:
+            self.mode = mode
 
     @property
     def type(self):
@@ -94,26 +94,26 @@ class CreateConfigurationDatastoreOption:
         self._version = version
 
     @property
-    def storage_engine(self):
-        """Gets the storage_engine of this CreateConfigurationDatastoreOption.
+    def mode(self):
+        """Gets the mode of this CreateConfigurationDatastoreOption.
 
         数据库部署模式，GaussDB(for Mongo)该参数必选。 - GaussDB(for Mongo) 集群实例取值为\"Sharding\"。 - GaussDB(for Mongo) 副本集实例取值为\"ReplicaSet\"。
 
-        :return: The storage_engine of this CreateConfigurationDatastoreOption.
+        :return: The mode of this CreateConfigurationDatastoreOption.
         :rtype: str
         """
-        return self._storage_engine
+        return self._mode
 
-    @storage_engine.setter
-    def storage_engine(self, storage_engine):
-        """Sets the storage_engine of this CreateConfigurationDatastoreOption.
+    @mode.setter
+    def mode(self, mode):
+        """Sets the mode of this CreateConfigurationDatastoreOption.
 
         数据库部署模式，GaussDB(for Mongo)该参数必选。 - GaussDB(for Mongo) 集群实例取值为\"Sharding\"。 - GaussDB(for Mongo) 副本集实例取值为\"ReplicaSet\"。
 
-        :param storage_engine: The storage_engine of this CreateConfigurationDatastoreOption.
+        :param mode: The mode of this CreateConfigurationDatastoreOption.
         :type: str
         """
-        self._storage_engine = storage_engine
+        self._mode = mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

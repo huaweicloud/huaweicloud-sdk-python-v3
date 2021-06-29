@@ -44,7 +44,7 @@ class ListAssetCategoryRequest:
     def id(self):
         """Gets the id of this ListAssetCategoryRequest.
 
-        视频分类ID 
+        视频分类ID。 若设置为0，则查询所有一级分类。
 
         :return: The id of this ListAssetCategoryRequest.
         :rtype: int
@@ -55,7 +55,7 @@ class ListAssetCategoryRequest:
     def id(self, id):
         """Sets the id of this ListAssetCategoryRequest.
 
-        视频分类ID 
+        视频分类ID。 若设置为0，则查询所有一级分类。
 
         :param id: The id of this ListAssetCategoryRequest.
         :type: int

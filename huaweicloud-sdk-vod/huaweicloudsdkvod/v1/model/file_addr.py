@@ -52,7 +52,7 @@ class FileAddr:
     def bucket(self):
         """Gets the bucket of this FileAddr.
 
-        OBS的bucket名称。<br/> 
+        OBS的bucket名称。
 
         :return: The bucket of this FileAddr.
         :rtype: str
@@ -63,7 +63,7 @@ class FileAddr:
     def bucket(self, bucket):
         """Sets the bucket of this FileAddr.
 
-        OBS的bucket名称。<br/> 
+        OBS的bucket名称。
 
         :param bucket: The bucket of this FileAddr.
         :type: str
@@ -74,7 +74,7 @@ class FileAddr:
     def location(self):
         """Gets the location of this FileAddr.
 
-        输入OBS Bucket所在数据中心（OBS Location）。<br/> 
+        桶所在的区域名， 如“华北-北京四”的区域名为“cn-north-4”，创建的桶所在区域必须和点播服务所在区域保持一致。
 
         :return: The location of this FileAddr.
         :rtype: str
@@ -85,7 +85,7 @@ class FileAddr:
     def location(self, location):
         """Sets the location of this FileAddr.
 
-        输入OBS Bucket所在数据中心（OBS Location）。<br/> 
+        桶所在的区域名， 如“华北-北京四”的区域名为“cn-north-4”，创建的桶所在区域必须和点播服务所在区域保持一致。
 
         :param location: The location of this FileAddr.
         :type: str
@@ -96,7 +96,7 @@ class FileAddr:
     def object(self):
         """Gets the object of this FileAddr.
 
-        OBS对象路径，遵守OSS Object定义。<br/> 当用于指示input时,需要指定到具体对象<br/> 当用于指示output时, 只需指定到转码结果期望存放的路径<br/> 
+        文件的存储路径。
 
         :return: The object of this FileAddr.
         :rtype: str
@@ -107,7 +107,7 @@ class FileAddr:
     def object(self, object):
         """Sets the object of this FileAddr.
 
-        OBS对象路径，遵守OSS Object定义。<br/> 当用于指示input时,需要指定到具体对象<br/> 当用于指示output时, 只需指定到转码结果期望存放的路径<br/> 
+        文件的存储路径。
 
         :param object: The object of this FileAddr.
         :type: str

@@ -45,7 +45,7 @@ class CreatePreheatingAssetResponse(SdkResponse):
     def task_id(self):
         """Gets the task_id of this CreatePreheatingAssetResponse.
 
-        预热任务ID<br/> 
+        预热任务ID。
 
         :return: The task_id of this CreatePreheatingAssetResponse.
         :rtype: str
@@ -56,7 +56,7 @@ class CreatePreheatingAssetResponse(SdkResponse):
     def task_id(self, task_id):
         """Sets the task_id of this CreatePreheatingAssetResponse.
 
-        预热任务ID<br/> 
+        预热任务ID。
 
         :param task_id: The task_id of this CreatePreheatingAssetResponse.
         :type: str

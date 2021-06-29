@@ -690,23 +690,23 @@ class AsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def batch_unset_scaling_instances_standby_async(self, request):
+    def batch_unset_scaling_instances_stantby_async(self, request):
         """批量将实例移出备用状态
 
         批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
 
-        :param BatchUnsetScalingInstancesStandbyRequest request
-        :return: BatchUnsetScalingInstancesStandbyResponse
+        :param BatchUnsetScalingInstancesStantbyRequest request
+        :return: BatchUnsetScalingInstancesStantbyResponse
         """
-        return self.batch_unset_scaling_instances_standby_with_http_info(request)
+        return self.batch_unset_scaling_instances_stantby_with_http_info(request)
 
-    def batch_unset_scaling_instances_standby_with_http_info(self, request):
+    def batch_unset_scaling_instances_stantby_with_http_info(self, request):
         """批量将实例移出备用状态
 
         批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
 
-        :param BatchUnsetScalingInstancesStandbyRequest request
-        :return: BatchUnsetScalingInstancesStandbyResponse
+        :param BatchUnsetScalingInstancesStantbyRequest request
+        :return: BatchUnsetScalingInstancesStantbyResponse
         """
 
         all_params = ['scaling_group_id', 'bodyparam']
@@ -748,7 +748,7 @@ class AsAsyncClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='BatchUnsetScalingInstancesStandbyResponse',
+            response_type='BatchUnsetScalingInstancesStantbyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

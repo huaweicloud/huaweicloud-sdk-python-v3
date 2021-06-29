@@ -45,6 +45,7 @@ class DeleteAssetsResponse(SdkResponse):
     def delete_result_array(self):
         """Gets the delete_result_array of this DeleteAssetsResponse.
 
+        删除媒资任务的处理结果。
 
         :return: The delete_result_array of this DeleteAssetsResponse.
         :rtype: list[DeleteResult]
@@ -55,6 +56,7 @@ class DeleteAssetsResponse(SdkResponse):
     def delete_result_array(self, delete_result_array):
         """Sets the delete_result_array of this DeleteAssetsResponse.
 
+        删除媒资任务的处理结果。
 
         :param delete_result_array: The delete_result_array of this DeleteAssetsResponse.
         :type: list[DeleteResult]

@@ -55,7 +55,7 @@ class ShowVodStatisticsResponse(SdkResponse):
     def start_time(self):
         """Gets the start_time of this ShowVodStatisticsResponse.
 
-        统计起始时间 
+        统计起始时间。
 
         :return: The start_time of this ShowVodStatisticsResponse.
         :rtype: str
@@ -66,7 +66,7 @@ class ShowVodStatisticsResponse(SdkResponse):
     def start_time(self, start_time):
         """Sets the start_time of this ShowVodStatisticsResponse.
 
-        统计起始时间 
+        统计起始时间。
 
         :param start_time: The start_time of this ShowVodStatisticsResponse.
         :type: str
@@ -77,7 +77,7 @@ class ShowVodStatisticsResponse(SdkResponse):
     def interval(self):
         """Gets the interval of this ShowVodStatisticsResponse.
 
-        采样时间间隔 
+        统计间隔。
 
         :return: The interval of this ShowVodStatisticsResponse.
         :rtype: int
@@ -88,7 +88,7 @@ class ShowVodStatisticsResponse(SdkResponse):
     def interval(self, interval):
         """Sets the interval of this ShowVodStatisticsResponse.
 
-        采样时间间隔 
+        统计间隔。
 
         :param interval: The interval of this ShowVodStatisticsResponse.
         :type: int
@@ -99,6 +99,7 @@ class ShowVodStatisticsResponse(SdkResponse):
     def sample_data(self):
         """Gets the sample_data of this ShowVodStatisticsResponse.
 
+        采样数据数组。从start_time开始，每个间隔对应一个采样数据。
 
         :return: The sample_data of this ShowVodStatisticsResponse.
         :rtype: list[VodSampleData]
@@ -109,6 +110,7 @@ class ShowVodStatisticsResponse(SdkResponse):
     def sample_data(self, sample_data):
         """Sets the sample_data of this ShowVodStatisticsResponse.
 
+        采样数据数组。从start_time开始，每个间隔对应一个采样数据。
 
         :param sample_data: The sample_data of this ShowVodStatisticsResponse.
         :type: list[VodSampleData]

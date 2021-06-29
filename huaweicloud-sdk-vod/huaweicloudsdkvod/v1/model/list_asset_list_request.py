@@ -95,7 +95,7 @@ class ListAssetListRequest:
     def asset_id(self):
         """Gets the asset_id of this ListAssetListRequest.
 
-        媒资ID数组，一次最多查询10个媒资
+        媒资ID，最多同时查询10个。
 
         :return: The asset_id of this ListAssetListRequest.
         :rtype: list[str]
@@ -106,7 +106,7 @@ class ListAssetListRequest:
     def asset_id(self, asset_id):
         """Sets the asset_id of this ListAssetListRequest.
 
-        媒资ID数组，一次最多查询10个媒资
+        媒资ID，最多同时查询10个。
 
         :param asset_id: The asset_id of this ListAssetListRequest.
         :type: list[str]
@@ -117,7 +117,7 @@ class ListAssetListRequest:
     def status(self):
         """Gets the status of this ListAssetListRequest.
 
-        媒资状态。 \"CREATING\" //上传中 \"FAILED\"   //上传失败 \"CREATED\"     //上传成功 \"PUBLISHED\"  //已发布 \"WAITING_TRANSCODE\"  //等待转码，排队中 \"TRANSCODING\"  //转码中 \"TRANSCODE_SUCCEED\"  //转码成功 \"TRANSCODE_FAILED\"  //转码失败 \"THUMBNAILING\"      //截图中 \"THUMBNAIL_SUCCEED\"  //截图成功 \"THUMBNAIL_FAILED\"   //截图失败 \"UN_REVIEW\"         //未审核 \"REVIEWING\"         //审核中 \"REVIEW_SUSPICIOUS\"      //审核不过，待人工复审 \"REVIEW_PASSED\"         //审核通过 \"REVIEW_FAILED\"         //审核任务失败 \"REVIEW_BLOCKED\"        //已屏蔽 
+        媒资状态，同时查询多个状态的媒资。 取值如下： - CREATING：上传中 - FAILED：上传失败 - CREATED：上传成功 - PUBLISHED：已发布 - TRANSCODING：转码中 - TRANSCODE_SUCCEED：转码成功 - TRANSCODE_FAILED：转码失败 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败 - UN_REVIEW：未审核 - REVIEWING：审核中 - REVIEW_SUSPICIOUS ：审核不过，待人工复审 - REVIEW_PASSED：审核通过 - REVIEW_FAILED：审核任务失败 - REVIEW_BLOCKED：已屏蔽
 
         :return: The status of this ListAssetListRequest.
         :rtype: list[str]
@@ -128,7 +128,7 @@ class ListAssetListRequest:
     def status(self, status):
         """Sets the status of this ListAssetListRequest.
 
-        媒资状态。 \"CREATING\" //上传中 \"FAILED\"   //上传失败 \"CREATED\"     //上传成功 \"PUBLISHED\"  //已发布 \"WAITING_TRANSCODE\"  //等待转码，排队中 \"TRANSCODING\"  //转码中 \"TRANSCODE_SUCCEED\"  //转码成功 \"TRANSCODE_FAILED\"  //转码失败 \"THUMBNAILING\"      //截图中 \"THUMBNAIL_SUCCEED\"  //截图成功 \"THUMBNAIL_FAILED\"   //截图失败 \"UN_REVIEW\"         //未审核 \"REVIEWING\"         //审核中 \"REVIEW_SUSPICIOUS\"      //审核不过，待人工复审 \"REVIEW_PASSED\"         //审核通过 \"REVIEW_FAILED\"         //审核任务失败 \"REVIEW_BLOCKED\"        //已屏蔽 
+        媒资状态，同时查询多个状态的媒资。 取值如下： - CREATING：上传中 - FAILED：上传失败 - CREATED：上传成功 - PUBLISHED：已发布 - TRANSCODING：转码中 - TRANSCODE_SUCCEED：转码成功 - TRANSCODE_FAILED：转码失败 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败 - UN_REVIEW：未审核 - REVIEWING：审核中 - REVIEW_SUSPICIOUS ：审核不过，待人工复审 - REVIEW_PASSED：审核通过 - REVIEW_FAILED：审核任务失败 - REVIEW_BLOCKED：已屏蔽
 
         :param status: The status of this ListAssetListRequest.
         :type: list[str]
@@ -139,7 +139,7 @@ class ListAssetListRequest:
     def start_time(self):
         """Gets the start_time of this ListAssetListRequest.
 
-        起始时间。格式为 yyyymmddhhm mss。必须是与时区无关的 UTC时间。
+        起始时间。 格式为yyyymmddhhm mss。必须是与时区无关的UTC时间。
 
         :return: The start_time of this ListAssetListRequest.
         :rtype: str
@@ -150,7 +150,7 @@ class ListAssetListRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListAssetListRequest.
 
-        起始时间。格式为 yyyymmddhhm mss。必须是与时区无关的 UTC时间。
+        起始时间。 格式为yyyymmddhhm mss。必须是与时区无关的UTC时间。
 
         :param start_time: The start_time of this ListAssetListRequest.
         :type: str
@@ -161,7 +161,7 @@ class ListAssetListRequest:
     def end_time(self):
         """Gets the end_time of this ListAssetListRequest.
 
-        结束时间。格式为 yyyymmddhhm mss。必须是与时区无关的 UTC时间。 
+        结束时间。 格式为yyyymmddhhm mss。必须是与时区无关的UTC时间。
 
         :return: The end_time of this ListAssetListRequest.
         :rtype: str
@@ -172,7 +172,7 @@ class ListAssetListRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListAssetListRequest.
 
-        结束时间。格式为 yyyymmddhhm mss。必须是与时区无关的 UTC时间。 
+        结束时间。 格式为yyyymmddhhm mss。必须是与时区无关的UTC时间。
 
         :param end_time: The end_time of this ListAssetListRequest.
         :type: str
@@ -205,7 +205,7 @@ class ListAssetListRequest:
     def tags(self):
         """Gets the tags of this ListAssetListRequest.
 
-        视频标签。 单个标签不string超 过16个字节， 最多不超过16 个标签。 多个用逗号分 隔，UTF8编 码。
+        媒资标签。 单个标签不超过16个字节， 最多不超过16 个标签。 多个用英文逗号分隔，UTF8编码。
 
         :return: The tags of this ListAssetListRequest.
         :rtype: str
@@ -216,7 +216,7 @@ class ListAssetListRequest:
     def tags(self, tags):
         """Sets the tags of this ListAssetListRequest.
 
-        视频标签。 单个标签不string超 过16个字节， 最多不超过16 个标签。 多个用逗号分 隔，UTF8编 码。
+        媒资标签。 单个标签不超过16个字节， 最多不超过16 个标签。 多个用英文逗号分隔，UTF8编码。
 
         :param tags: The tags of this ListAssetListRequest.
         :type: str
@@ -227,7 +227,7 @@ class ListAssetListRequest:
     def query_string(self):
         """Gets the query_string of this ListAssetListRequest.
 
-        在媒资标题、 描述、分类名称中模糊查 询的字符串。
+        在媒资标题、 描述、分类名称中模糊查询的字符串。
 
         :return: The query_string of this ListAssetListRequest.
         :rtype: str
@@ -238,7 +238,7 @@ class ListAssetListRequest:
     def query_string(self, query_string):
         """Sets the query_string of this ListAssetListRequest.
 
-        在媒资标题、 描述、分类名称中模糊查 询的字符串。
+        在媒资标题、 描述、分类名称中模糊查询的字符串。
 
         :param query_string: The query_string of this ListAssetListRequest.
         :type: str
@@ -249,7 +249,7 @@ class ListAssetListRequest:
     def media_type(self):
         """Gets the media_type of this ListAssetListRequest.
 
-        音视频文件类型，一次最多查询20种音视频文件类型
+        音视频文件的格式，支持多格式查询，最多不超过20个。 取值如下： - 视频文件格式：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG - 音频文件格式：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
 
         :return: The media_type of this ListAssetListRequest.
         :rtype: list[str]
@@ -260,7 +260,7 @@ class ListAssetListRequest:
     def media_type(self, media_type):
         """Sets the media_type of this ListAssetListRequest.
 
-        音视频文件类型，一次最多查询20种音视频文件类型
+        音视频文件的格式，支持多格式查询，最多不超过20个。 取值如下： - 视频文件格式：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG - 音频文件格式：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
 
         :param media_type: The media_type of this ListAssetListRequest.
         :type: list[str]
@@ -271,7 +271,7 @@ class ListAssetListRequest:
     def page(self):
         """Gets the page of this ListAssetListRequest.
 
-        分页编号。默认为0。
+        分页编号。 默认值：0。
 
         :return: The page of this ListAssetListRequest.
         :rtype: int
@@ -282,7 +282,7 @@ class ListAssetListRequest:
     def page(self, page):
         """Sets the page of this ListAssetListRequest.
 
-        分页编号。默认为0。
+        分页编号。 默认值：0。
 
         :param page: The page of this ListAssetListRequest.
         :type: int
@@ -293,7 +293,7 @@ class ListAssetListRequest:
     def size(self):
         """Gets the size of this ListAssetListRequest.
 
-        每页记录数。默认10，范围 [1,100]。
+        每页记录数。 取值范围：[1,100]。 默认值：10。
 
         :return: The size of this ListAssetListRequest.
         :rtype: int
@@ -304,7 +304,7 @@ class ListAssetListRequest:
     def size(self, size):
         """Sets the size of this ListAssetListRequest.
 
-        每页记录数。默认10，范围 [1,100]。
+        每页记录数。 取值范围：[1,100]。 默认值：10。
 
         :param size: The size of this ListAssetListRequest.
         :type: int

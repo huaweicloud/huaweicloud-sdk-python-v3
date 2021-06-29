@@ -41,10 +41,8 @@ class PostgresqlCreateSchemaReq:
         self._owner = None
         self.discriminator = None
 
-        if schema_name is not None:
-            self.schema_name = schema_name
-        if owner is not None:
-            self.owner = owner
+        self.schema_name = schema_name
+        self.owner = owner
 
     @property
     def schema_name(self):

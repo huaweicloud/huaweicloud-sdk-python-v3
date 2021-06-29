@@ -26,7 +26,7 @@ class ListInstancesResult:
         'id': 'str',
         'name': 'str',
         'status': 'str',
-        'port': 'str',
+        'port': 'int',
         'mode': 'str',
         'region': 'str',
         'datastore': 'ListInstancesDatastoreResult',
@@ -193,7 +193,7 @@ class ListInstancesResult:
         数据库端口。
 
         :return: The port of this ListInstancesResult.
-        :rtype: str
+        :rtype: int
         """
         return self._port
 
@@ -204,7 +204,7 @@ class ListInstancesResult:
         数据库端口。
 
         :param port: The port of this ListInstancesResult.
-        :type: str
+        :type: int
         """
         self._port = port
 

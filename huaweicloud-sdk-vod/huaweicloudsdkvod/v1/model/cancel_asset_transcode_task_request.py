@@ -44,7 +44,7 @@ class CancelAssetTranscodeTaskRequest:
     def asset_id(self):
         """Gets the asset_id of this CancelAssetTranscodeTaskRequest.
 
-        媒姿ID 
+        媒资ID。
 
         :return: The asset_id of this CancelAssetTranscodeTaskRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class CancelAssetTranscodeTaskRequest:
     def asset_id(self, asset_id):
         """Sets the asset_id of this CancelAssetTranscodeTaskRequest.
 
-        媒姿ID 
+        媒资ID。
 
         :param asset_id: The asset_id of this CancelAssetTranscodeTaskRequest.
         :type: str

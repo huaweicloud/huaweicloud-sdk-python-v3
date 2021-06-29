@@ -69,7 +69,7 @@ class PictureReviewRet:
     def suggestion(self):
         """Gets the suggestion of this PictureReviewRet.
 
-        检测结果是否通过。 block：包含敏感信息，不通过。 pass：不包含敏感信息，通过。 review：需要人工复查。 
+        检测结果是否通过。 取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
 
         :return: The suggestion of this PictureReviewRet.
         :rtype: str
@@ -80,7 +80,7 @@ class PictureReviewRet:
     def suggestion(self, suggestion):
         """Sets the suggestion of this PictureReviewRet.
 
-        检测结果是否通过。 block：包含敏感信息，不通过。 pass：不包含敏感信息，通过。 review：需要人工复查。 
+        检测结果是否通过。 取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
 
         :param suggestion: The suggestion of this PictureReviewRet.
         :type: str
@@ -91,7 +91,7 @@ class PictureReviewRet:
     def offset(self):
         """Gets the offset of this PictureReviewRet.
 
-        截图在视频中的时间偏移值，单位为秒。封面不涉及此字段
+        截图在视频中的时间偏移值。封面不涉及此字段 单位：秒。
 
         :return: The offset of this PictureReviewRet.
         :rtype: int
@@ -102,7 +102,7 @@ class PictureReviewRet:
     def offset(self, offset):
         """Sets the offset of this PictureReviewRet.
 
-        截图在视频中的时间偏移值，单位为秒。封面不涉及此字段
+        截图在视频中的时间偏移值。封面不涉及此字段 单位：秒。
 
         :param offset: The offset of this PictureReviewRet.
         :type: int
@@ -113,7 +113,7 @@ class PictureReviewRet:
     def url(self):
         """Gets the url of this PictureReviewRet.
 
-        对应截图/封面的的访问url
+        对应截图/封面的访问URL。
 
         :return: The url of this PictureReviewRet.
         :rtype: str
@@ -124,7 +124,7 @@ class PictureReviewRet:
     def url(self, url):
         """Sets the url of this PictureReviewRet.
 
-        对应截图/封面的的访问url
+        对应截图/封面的访问URL。
 
         :param url: The url of this PictureReviewRet.
         :type: str
@@ -135,6 +135,7 @@ class PictureReviewRet:
     def politics(self):
         """Gets the politics of this PictureReviewRet.
 
+        政治因素审核结果。
 
         :return: The politics of this PictureReviewRet.
         :rtype: list[ReviewDetail]
@@ -145,6 +146,7 @@ class PictureReviewRet:
     def politics(self, politics):
         """Sets the politics of this PictureReviewRet.
 
+        政治因素审核结果。
 
         :param politics: The politics of this PictureReviewRet.
         :type: list[ReviewDetail]
@@ -155,6 +157,7 @@ class PictureReviewRet:
     def terrorism(self):
         """Gets the terrorism of this PictureReviewRet.
 
+        暴恐元素审核结果。
 
         :return: The terrorism of this PictureReviewRet.
         :rtype: list[ReviewDetail]
@@ -165,6 +168,7 @@ class PictureReviewRet:
     def terrorism(self, terrorism):
         """Sets the terrorism of this PictureReviewRet.
 
+        暴恐元素审核结果。
 
         :param terrorism: The terrorism of this PictureReviewRet.
         :type: list[ReviewDetail]
@@ -175,6 +179,7 @@ class PictureReviewRet:
     def porn(self):
         """Gets the porn of this PictureReviewRet.
 
+        涉黄内容审核结果。
 
         :return: The porn of this PictureReviewRet.
         :rtype: list[ReviewDetail]
@@ -185,6 +190,7 @@ class PictureReviewRet:
     def porn(self, porn):
         """Sets the porn of this PictureReviewRet.
 
+        涉黄内容审核结果。
 
         :param porn: The porn of this PictureReviewRet.
         :type: list[ReviewDetail]

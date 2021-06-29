@@ -9,7 +9,7 @@ import six
 
 
 
-class BatchUnsetScalingInstancesStandbyRequest:
+class BatchUnsetScalingInstancesStantbyRequest:
 
 
     """
@@ -33,7 +33,7 @@ class BatchUnsetScalingInstancesStandbyRequest:
     }
 
     def __init__(self, scaling_group_id=None, body=None):
-        """BatchUnsetScalingInstancesStandbyRequest - a model defined in huaweicloud sdk"""
+        """BatchUnsetScalingInstancesStantbyRequest - a model defined in huaweicloud sdk"""
         
         
 
@@ -47,42 +47,42 @@ class BatchUnsetScalingInstancesStandbyRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this BatchUnsetScalingInstancesStandbyRequest.
+        """Gets the scaling_group_id of this BatchUnsetScalingInstancesStantbyRequest.
 
         实例ID。
 
-        :return: The scaling_group_id of this BatchUnsetScalingInstancesStandbyRequest.
+        :return: The scaling_group_id of this BatchUnsetScalingInstancesStantbyRequest.
         :rtype: str
         """
         return self._scaling_group_id
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this BatchUnsetScalingInstancesStandbyRequest.
+        """Sets the scaling_group_id of this BatchUnsetScalingInstancesStantbyRequest.
 
         实例ID。
 
-        :param scaling_group_id: The scaling_group_id of this BatchUnsetScalingInstancesStandbyRequest.
+        :param scaling_group_id: The scaling_group_id of this BatchUnsetScalingInstancesStantbyRequest.
         :type: str
         """
         self._scaling_group_id = scaling_group_id
 
     @property
     def body(self):
-        """Gets the body of this BatchUnsetScalingInstancesStandbyRequest.
+        """Gets the body of this BatchUnsetScalingInstancesStantbyRequest.
 
 
-        :return: The body of this BatchUnsetScalingInstancesStandbyRequest.
+        :return: The body of this BatchUnsetScalingInstancesStantbyRequest.
         :rtype: BatchExitStandByInstancesOption
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUnsetScalingInstancesStandbyRequest.
+        """Sets the body of this BatchUnsetScalingInstancesStantbyRequest.
 
 
-        :param body: The body of this BatchUnsetScalingInstancesStandbyRequest.
+        :param body: The body of this BatchUnsetScalingInstancesStantbyRequest.
         :type: BatchExitStandByInstancesOption
         """
         self._body = body
@@ -124,7 +124,7 @@ class BatchUnsetScalingInstancesStandbyRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BatchUnsetScalingInstancesStandbyRequest):
+        if not isinstance(other, BatchUnsetScalingInstancesStantbyRequest):
             return False
 
         return self.__dict__ == other.__dict__

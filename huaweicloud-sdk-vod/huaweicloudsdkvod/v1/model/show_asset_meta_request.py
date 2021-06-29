@@ -33,8 +33,7 @@ class ShowAssetMetaRequest:
         'tags': 'str',
         'query_string': 'str',
         'page': 'int',
-        'size': 'int',
-        'order': 'str'
+        'size': 'int'
     }
 
     attribute_map = {
@@ -48,11 +47,10 @@ class ShowAssetMetaRequest:
         'tags': 'tags',
         'query_string': 'query_string',
         'page': 'page',
-        'size': 'size',
-        'order': 'order'
+        'size': 'size'
     }
 
-    def __init__(self, asset_id=None, status=None, transcode_status=None, asset_status=None, start_time=None, end_time=None, category_id=None, tags=None, query_string=None, page=None, size=None, order=None):
+    def __init__(self, asset_id=None, status=None, transcode_status=None, asset_status=None, start_time=None, end_time=None, category_id=None, tags=None, query_string=None, page=None, size=None):
         """ShowAssetMetaRequest - a model defined in huaweicloud sdk"""
         
         
@@ -68,7 +66,6 @@ class ShowAssetMetaRequest:
         self._query_string = None
         self._page = None
         self._size = None
-        self._order = None
         self.discriminator = None
 
         if asset_id is not None:
@@ -93,14 +90,12 @@ class ShowAssetMetaRequest:
             self.page = page
         if size is not None:
             self.size = size
-        if order is not None:
-            self.order = order
 
     @property
     def asset_id(self):
         """Gets the asset_id of this ShowAssetMetaRequest.
 
-        媒资id。一次最多10个<br/> 
+        媒资id，最多同时查询10个媒资。
 
         :return: The asset_id of this ShowAssetMetaRequest.
         :rtype: list[str]
@@ -111,7 +106,7 @@ class ShowAssetMetaRequest:
     def asset_id(self, asset_id):
         """Sets the asset_id of this ShowAssetMetaRequest.
 
-        媒资id。一次最多10个<br/> 
+        媒资id，最多同时查询10个媒资。
 
         :param asset_id: The asset_id of this ShowAssetMetaRequest.
         :type: list[str]
@@ -122,7 +117,7 @@ class ShowAssetMetaRequest:
     def status(self):
         """Gets the status of this ShowAssetMetaRequest.
 
-        媒资状态<br/> 
+        媒资状态。 取值如下： - UNCREATED：未创建（媒资ID不存在 ） - DELETED：已删除 - CANCELLED：上传取消 - SERVER_ERROR：上传失败（点播服务端故障） - UPLOAD_FAILED：上传失败（向OBS上传失败） - CREATING：创建中 - PUBLISHED：已发布 - TRANSCODING：待发布（转码中） - TRANSCODE_FAILED：待发布（转码失败） - TRANSCODE_SUCCEED：待发布（转码成功） - CREATED：待发布（未转码）
 
         :return: The status of this ShowAssetMetaRequest.
         :rtype: list[str]
@@ -133,7 +128,7 @@ class ShowAssetMetaRequest:
     def status(self, status):
         """Sets the status of this ShowAssetMetaRequest.
 
-        媒资状态<br/> 
+        媒资状态。 取值如下： - UNCREATED：未创建（媒资ID不存在 ） - DELETED：已删除 - CANCELLED：上传取消 - SERVER_ERROR：上传失败（点播服务端故障） - UPLOAD_FAILED：上传失败（向OBS上传失败） - CREATING：创建中 - PUBLISHED：已发布 - TRANSCODING：待发布（转码中） - TRANSCODE_FAILED：待发布（转码失败） - TRANSCODE_SUCCEED：待发布（转码成功） - CREATED：待发布（未转码）
 
         :param status: The status of this ShowAssetMetaRequest.
         :type: list[str]
@@ -144,7 +139,7 @@ class ShowAssetMetaRequest:
     def transcode_status(self):
         """Gets the transcode_status of this ShowAssetMetaRequest.
 
-        转码状态<br/> 
+        转码状态 取值如下： - TRANSCODING：转码中 - TRANSCODE_FAILED：转码失败 - TRANSCODE_SUCCEED：转码成功 - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：等待转码
 
         :return: The transcode_status of this ShowAssetMetaRequest.
         :rtype: list[str]
@@ -155,7 +150,7 @@ class ShowAssetMetaRequest:
     def transcode_status(self, transcode_status):
         """Sets the transcode_status of this ShowAssetMetaRequest.
 
-        转码状态<br/> 
+        转码状态 取值如下： - TRANSCODING：转码中 - TRANSCODE_FAILED：转码失败 - TRANSCODE_SUCCEED：转码成功 - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：等待转码
 
         :param transcode_status: The transcode_status of this ShowAssetMetaRequest.
         :type: list[str]
@@ -166,7 +161,7 @@ class ShowAssetMetaRequest:
     def asset_status(self):
         """Gets the asset_status of this ShowAssetMetaRequest.
 
-        媒资状态<br/> 
+        媒资状态。 取值如下： - PUBLISHED：已发布 - CREATED：未发布
 
         :return: The asset_status of this ShowAssetMetaRequest.
         :rtype: list[str]
@@ -177,7 +172,7 @@ class ShowAssetMetaRequest:
     def asset_status(self, asset_status):
         """Sets the asset_status of this ShowAssetMetaRequest.
 
-        媒资状态<br/> 
+        媒资状态。 取值如下： - PUBLISHED：已发布 - CREATED：未发布
 
         :param asset_status: The asset_status of this ShowAssetMetaRequest.
         :type: list[str]
@@ -188,7 +183,7 @@ class ShowAssetMetaRequest:
     def start_time(self):
         """Gets the start_time of this ShowAssetMetaRequest.
 
-        起始时间.指定task_id时该参数无效<br/> 
+        起始时间，查询指定“**asset_id**”时，该参数无效。 格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :return: The start_time of this ShowAssetMetaRequest.
         :rtype: str
@@ -199,7 +194,7 @@ class ShowAssetMetaRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ShowAssetMetaRequest.
 
-        起始时间.指定task_id时该参数无效<br/> 
+        起始时间，查询指定“**asset_id**”时，该参数无效。 格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :param start_time: The start_time of this ShowAssetMetaRequest.
         :type: str
@@ -210,7 +205,7 @@ class ShowAssetMetaRequest:
     def end_time(self):
         """Gets the end_time of this ShowAssetMetaRequest.
 
-        结束时间.指定task_id时该参数无效<br/> 
+        结束时间，查询指定“**asset_id**”时，该参数无效。 格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :return: The end_time of this ShowAssetMetaRequest.
         :rtype: str
@@ -221,7 +216,7 @@ class ShowAssetMetaRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowAssetMetaRequest.
 
-        结束时间.指定task_id时该参数无效<br/> 
+        结束时间，查询指定“**asset_id**”时，该参数无效。 格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :param end_time: The end_time of this ShowAssetMetaRequest.
         :type: str
@@ -232,7 +227,7 @@ class ShowAssetMetaRequest:
     def category_id(self):
         """Gets the category_id of this ShowAssetMetaRequest.
 
-        分类ID<br/> 
+        分类ID。
 
         :return: The category_id of this ShowAssetMetaRequest.
         :rtype: int
@@ -243,7 +238,7 @@ class ShowAssetMetaRequest:
     def category_id(self, category_id):
         """Sets the category_id of this ShowAssetMetaRequest.
 
-        分类ID<br/> 
+        分类ID。
 
         :param category_id: The category_id of this ShowAssetMetaRequest.
         :type: int
@@ -254,7 +249,7 @@ class ShowAssetMetaRequest:
     def tags(self):
         """Gets the tags of this ShowAssetMetaRequest.
 
-        视频标签。<br/>单个标签不超过16个字节，最多不超过16个标签。<br/> 多个用逗号分隔，UTF8编码。<br/> 
+        媒资标签。 单个标签不超过16个字节，最多不超过16个标签。 多个用逗号分隔，UTF8编码。
 
         :return: The tags of this ShowAssetMetaRequest.
         :rtype: str
@@ -265,7 +260,7 @@ class ShowAssetMetaRequest:
     def tags(self, tags):
         """Sets the tags of this ShowAssetMetaRequest.
 
-        视频标签。<br/>单个标签不超过16个字节，最多不超过16个标签。<br/> 多个用逗号分隔，UTF8编码。<br/> 
+        媒资标签。 单个标签不超过16个字节，最多不超过16个标签。 多个用逗号分隔，UTF8编码。
 
         :param tags: The tags of this ShowAssetMetaRequest.
         :type: str
@@ -276,7 +271,7 @@ class ShowAssetMetaRequest:
     def query_string(self):
         """Gets the query_string of this ShowAssetMetaRequest.
 
-        在媒资标题、描述中模糊查询的字符串。<br/>暂不支持模糊查询。<br/> 
+        在媒资标题、描述中模糊查询的字符串。
 
         :return: The query_string of this ShowAssetMetaRequest.
         :rtype: str
@@ -287,7 +282,7 @@ class ShowAssetMetaRequest:
     def query_string(self, query_string):
         """Sets the query_string of this ShowAssetMetaRequest.
 
-        在媒资标题、描述中模糊查询的字符串。<br/>暂不支持模糊查询。<br/> 
+        在媒资标题、描述中模糊查询的字符串。
 
         :param query_string: The query_string of this ShowAssetMetaRequest.
         :type: str
@@ -298,7 +293,7 @@ class ShowAssetMetaRequest:
     def page(self):
         """Gets the page of this ShowAssetMetaRequest.
 
-        分页编号,默认为0。<br/> 
+        分页编号，查询指定“asset_id”时，该参数无效。 默认值：0。
 
         :return: The page of this ShowAssetMetaRequest.
         :rtype: int
@@ -309,7 +304,7 @@ class ShowAssetMetaRequest:
     def page(self, page):
         """Sets the page of this ShowAssetMetaRequest.
 
-        分页编号,默认为0。<br/> 
+        分页编号，查询指定“asset_id”时，该参数无效。 默认值：0。
 
         :param page: The page of this ShowAssetMetaRequest.
         :type: int
@@ -320,7 +315,7 @@ class ShowAssetMetaRequest:
     def size(self):
         """Gets the size of this ShowAssetMetaRequest.
 
-        每页记录数。默认10，范围[1,100]<br/> 指定task_id时该参数无效<br/> 
+        每页记录数，查询指定“**asset_id**”时，该参数无效。 取值范围：[1,100]。 默认值：10。
 
         :return: The size of this ShowAssetMetaRequest.
         :rtype: int
@@ -331,32 +326,12 @@ class ShowAssetMetaRequest:
     def size(self, size):
         """Sets the size of this ShowAssetMetaRequest.
 
-        每页记录数。默认10，范围[1,100]<br/> 指定task_id时该参数无效<br/> 
+        每页记录数，查询指定“**asset_id**”时，该参数无效。 取值范围：[1,100]。 默认值：10。
 
         :param size: The size of this ShowAssetMetaRequest.
         :type: int
         """
         self._size = size
-
-    @property
-    def order(self):
-        """Gets the order of this ShowAssetMetaRequest.
-
-
-        :return: The order of this ShowAssetMetaRequest.
-        :rtype: str
-        """
-        return self._order
-
-    @order.setter
-    def order(self, order):
-        """Sets the order of this ShowAssetMetaRequest.
-
-
-        :param order: The order of this ShowAssetMetaRequest.
-        :type: str
-        """
-        self._order = order
 
     def to_dict(self):
         """Returns the model properties as a dict"""

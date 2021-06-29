@@ -72,7 +72,7 @@ class DiskInfo:
     def size(self):
         """Gets the size of this DiskInfo.
 
-        磁盘大小，容量单位为GB。系统盘输入大小范围为40~32768，且不小于镜像中系统盘的最小(min_disk属性)值。数据盘输入大小范围为10~32768。
+        磁盘大小，容量单位为GB。系统盘输入最大为32768，且不小于镜像中系统盘的最小(min_disk属性)值。数据盘输入大小范围为10~32768。
 
         :return: The size of this DiskInfo.
         :rtype: int
@@ -83,7 +83,7 @@ class DiskInfo:
     def size(self, size):
         """Sets the size of this DiskInfo.
 
-        磁盘大小，容量单位为GB。系统盘输入大小范围为40~32768，且不小于镜像中系统盘的最小(min_disk属性)值。数据盘输入大小范围为10~32768。
+        磁盘大小，容量单位为GB。系统盘输入最大为32768，且不小于镜像中系统盘的最小(min_disk属性)值。数据盘输入大小范围为10~32768。
 
         :param size: The size of this DiskInfo.
         :type: int

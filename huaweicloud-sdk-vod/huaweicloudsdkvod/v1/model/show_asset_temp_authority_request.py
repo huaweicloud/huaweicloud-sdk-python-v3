@@ -24,45 +24,45 @@ class ShowAssetTempAuthorityRequest:
 
     openapi_types = {
         'http_verb': 'str',
-        'content_md5': 'str',
-        'content_type': 'str',
         'bucket': 'str',
         'object_key': 'str',
+        'content_type': 'str',
+        'content_md5': 'str',
         'upload_id': 'str',
         'part_number': 'int'
     }
 
     attribute_map = {
         'http_verb': 'http_verb',
-        'content_md5': 'content_md5',
-        'content_type': 'content_type',
         'bucket': 'bucket',
         'object_key': 'object_key',
+        'content_type': 'content_type',
+        'content_md5': 'content_md5',
         'upload_id': 'upload_id',
         'part_number': 'part_number'
     }
 
-    def __init__(self, http_verb=None, content_md5=None, content_type=None, bucket=None, object_key=None, upload_id=None, part_number=None):
+    def __init__(self, http_verb=None, bucket=None, object_key=None, content_type=None, content_md5=None, upload_id=None, part_number=None):
         """ShowAssetTempAuthorityRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._http_verb = None
-        self._content_md5 = None
-        self._content_type = None
         self._bucket = None
         self._object_key = None
+        self._content_type = None
+        self._content_md5 = None
         self._upload_id = None
         self._part_number = None
         self.discriminator = None
 
         self.http_verb = http_verb
-        if content_md5 is not None:
-            self.content_md5 = content_md5
-        if content_type is not None:
-            self.content_type = content_type
         self.bucket = bucket
         self.object_key = object_key
+        if content_type is not None:
+            self.content_type = content_type
+        if content_md5 is not None:
+            self.content_md5 = content_md5
         if upload_id is not None:
             self.upload_id = upload_id
         if part_number is not None:
@@ -72,7 +72,7 @@ class ShowAssetTempAuthorityRequest:
     def http_verb(self):
         """Gets the http_verb of this ShowAssetTempAuthorityRequest.
 
-        http方法<br/>初始化多段上传任务为POST,列举多段上传任务为GET,<br/> 上传段为PUT,合并段为POST,列举已上传段为GET,取消段合并为DELETE。 
+        分段上传时调用OBS接口的HTTP方法，具体操作需要的HTTP方法请参考OBS的接口文档。  - 初始化上传任务：POST - 上传段：PUT - 合并段：POST - 取消段：DELETE - 列举已上传段：GET
 
         :return: The http_verb of this ShowAssetTempAuthorityRequest.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowAssetTempAuthorityRequest:
     def http_verb(self, http_verb):
         """Sets the http_verb of this ShowAssetTempAuthorityRequest.
 
-        http方法<br/>初始化多段上传任务为POST,列举多段上传任务为GET,<br/> 上传段为PUT,合并段为POST,列举已上传段为GET,取消段合并为DELETE。 
+        分段上传时调用OBS接口的HTTP方法，具体操作需要的HTTP方法请参考OBS的接口文档。  - 初始化上传任务：POST - 上传段：PUT - 合并段：POST - 取消段：DELETE - 列举已上传段：GET
 
         :param http_verb: The http_verb of this ShowAssetTempAuthorityRequest.
         :type: str
@@ -91,54 +91,10 @@ class ShowAssetTempAuthorityRequest:
         self._http_verb = http_verb
 
     @property
-    def content_md5(self):
-        """Gets the content_md5 of this ShowAssetTempAuthorityRequest.
-
-        上传段时,每段媒资内容的md5值,非上传段操作不涉及此字段<br/> 
-
-        :return: The content_md5 of this ShowAssetTempAuthorityRequest.
-        :rtype: str
-        """
-        return self._content_md5
-
-    @content_md5.setter
-    def content_md5(self, content_md5):
-        """Sets the content_md5 of this ShowAssetTempAuthorityRequest.
-
-        上传段时,每段媒资内容的md5值,非上传段操作不涉及此字段<br/> 
-
-        :param content_md5: The content_md5 of this ShowAssetTempAuthorityRequest.
-        :type: str
-        """
-        self._content_md5 = content_md5
-
-    @property
-    def content_type(self):
-        """Gets the content_type of this ShowAssetTempAuthorityRequest.
-
-        上传段时,媒资内容对应的content-type值,非上传段操作不涉及此字段<br/> 
-
-        :return: The content_type of this ShowAssetTempAuthorityRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        """Sets the content_type of this ShowAssetTempAuthorityRequest.
-
-        上传段时,媒资内容对应的content-type值,非上传段操作不涉及此字段<br/> 
-
-        :param content_type: The content_type of this ShowAssetTempAuthorityRequest.
-        :type: str
-        """
-        self._content_type = content_type
-
-    @property
     def bucket(self):
         """Gets the bucket of this ShowAssetTempAuthorityRequest.
 
-        桶名<br/> 
+        桶名。 调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket值。
 
         :return: The bucket of this ShowAssetTempAuthorityRequest.
         :rtype: str
@@ -149,7 +105,7 @@ class ShowAssetTempAuthorityRequest:
     def bucket(self, bucket):
         """Sets the bucket of this ShowAssetTempAuthorityRequest.
 
-        桶名<br/> 
+        桶名。 调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket值。
 
         :param bucket: The bucket of this ShowAssetTempAuthorityRequest.
         :type: str
@@ -160,7 +116,7 @@ class ShowAssetTempAuthorityRequest:
     def object_key(self):
         """Gets the object_key of this ShowAssetTempAuthorityRequest.
 
-        对象名<br/> 
+        对象名。 调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的object值。
 
         :return: The object_key of this ShowAssetTempAuthorityRequest.
         :rtype: str
@@ -171,7 +127,7 @@ class ShowAssetTempAuthorityRequest:
     def object_key(self, object_key):
         """Sets the object_key of this ShowAssetTempAuthorityRequest.
 
-        对象名<br/> 
+        对象名。 调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的object值。
 
         :param object_key: The object_key of this ShowAssetTempAuthorityRequest.
         :type: str
@@ -179,10 +135,54 @@ class ShowAssetTempAuthorityRequest:
         self._object_key = object_key
 
     @property
+    def content_type(self):
+        """Gets the content_type of this ShowAssetTempAuthorityRequest.
+
+        文件类型对应的content-type，如MP4对应video/mp4。
+
+        :return: The content_type of this ShowAssetTempAuthorityRequest.
+        :rtype: str
+        """
+        return self._content_type
+
+    @content_type.setter
+    def content_type(self, content_type):
+        """Sets the content_type of this ShowAssetTempAuthorityRequest.
+
+        文件类型对应的content-type，如MP4对应video/mp4。
+
+        :param content_type: The content_type of this ShowAssetTempAuthorityRequest.
+        :type: str
+        """
+        self._content_type = content_type
+
+    @property
+    def content_md5(self):
+        """Gets the content_md5 of this ShowAssetTempAuthorityRequest.
+
+        上传段时每段的MD5。
+
+        :return: The content_md5 of this ShowAssetTempAuthorityRequest.
+        :rtype: str
+        """
+        return self._content_md5
+
+    @content_md5.setter
+    def content_md5(self, content_md5):
+        """Sets the content_md5 of this ShowAssetTempAuthorityRequest.
+
+        上传段时每段的MD5。
+
+        :param content_md5: The content_md5 of this ShowAssetTempAuthorityRequest.
+        :type: str
+        """
+        self._content_md5 = content_md5
+
+    @property
     def upload_id(self):
         """Gets the upload_id of this ShowAssetTempAuthorityRequest.
 
-        上传任务id,由OBS分配<br/> 
+        每一个上传任务的id，是OBS进行初始段后OBS返回的。
 
         :return: The upload_id of this ShowAssetTempAuthorityRequest.
         :rtype: str
@@ -193,7 +193,7 @@ class ShowAssetTempAuthorityRequest:
     def upload_id(self, upload_id):
         """Sets the upload_id of this ShowAssetTempAuthorityRequest.
 
-        上传任务id,由OBS分配<br/> 
+        每一个上传任务的id，是OBS进行初始段后OBS返回的。
 
         :param upload_id: The upload_id of this ShowAssetTempAuthorityRequest.
         :type: str
@@ -204,7 +204,7 @@ class ShowAssetTempAuthorityRequest:
     def part_number(self):
         """Gets the part_number of this ShowAssetTempAuthorityRequest.
 
-        上传段号,取值[1,10000]<br/> 
+        上传段时每一段的id。 取值范围：[1,10000]。
 
         :return: The part_number of this ShowAssetTempAuthorityRequest.
         :rtype: int
@@ -215,7 +215,7 @@ class ShowAssetTempAuthorityRequest:
     def part_number(self, part_number):
         """Sets the part_number of this ShowAssetTempAuthorityRequest.
 
-        上传段号,取值[1,10000]<br/> 
+        上传段时每一段的id。 取值范围：[1,10000]。
 
         :param part_number: The part_number of this ShowAssetTempAuthorityRequest.
         :type: int

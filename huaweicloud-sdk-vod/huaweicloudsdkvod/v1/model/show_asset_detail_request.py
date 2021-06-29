@@ -49,7 +49,7 @@ class ShowAssetDetailRequest:
     def asset_id(self):
         """Gets the asset_id of this ShowAssetDetailRequest.
 
-        媒资ID
+        媒资ID。
 
         :return: The asset_id of this ShowAssetDetailRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class ShowAssetDetailRequest:
     def asset_id(self, asset_id):
         """Sets the asset_id of this ShowAssetDetailRequest.
 
-        媒资ID
+        媒资ID。
 
         :param asset_id: The asset_id of this ShowAssetDetailRequest.
         :type: str
@@ -71,7 +71,7 @@ class ShowAssetDetailRequest:
     def categories(self):
         """Gets the categories of this ShowAssetDetailRequest.
 
-        要查询的信息类型，可同时查询多个类型的信息。不指定时表示查询所有信息。 \"base_info\"       //媒资基本信息 \"transcode_info\"   //转码结果信息 \"thumbnail_info\"  //截图结果信息 \"review_info\"     //审核结果信息 
+        查询的信息类型。 - 为空时表示查询所有信息。 - 不为空时支持同时查询一个或者多个类型的信息，取值如下： - - base_info：媒资基本信息。 - - transcode_info：转码结果信息。 - - thumbnail_info：截图结果信息。 - - review_info：审核结果信息。
 
         :return: The categories of this ShowAssetDetailRequest.
         :rtype: list[str]
@@ -82,7 +82,7 @@ class ShowAssetDetailRequest:
     def categories(self, categories):
         """Sets the categories of this ShowAssetDetailRequest.
 
-        要查询的信息类型，可同时查询多个类型的信息。不指定时表示查询所有信息。 \"base_info\"       //媒资基本信息 \"transcode_info\"   //转码结果信息 \"thumbnail_info\"  //截图结果信息 \"review_info\"     //审核结果信息 
+        查询的信息类型。 - 为空时表示查询所有信息。 - 不为空时支持同时查询一个或者多个类型的信息，取值如下： - - base_info：媒资基本信息。 - - transcode_info：转码结果信息。 - - thumbnail_info：截图结果信息。 - - review_info：审核结果信息。
 
         :param categories: The categories of this ShowAssetDetailRequest.
         :type: list[str]

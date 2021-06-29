@@ -55,7 +55,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
     def start_time(self):
         """Gets the start_time of this ShowCdnStatisticsResponse.
 
-        统计起始时间 
+        统计起始时间。
 
         :return: The start_time of this ShowCdnStatisticsResponse.
         :rtype: str
@@ -66,7 +66,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
     def start_time(self, start_time):
         """Sets the start_time of this ShowCdnStatisticsResponse.
 
-        统计起始时间 
+        统计起始时间。
 
         :param start_time: The start_time of this ShowCdnStatisticsResponse.
         :type: str
@@ -77,7 +77,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
     def interval(self):
         """Gets the interval of this ShowCdnStatisticsResponse.
 
-        采样时间间隔 
+        统计间隔。
 
         :return: The interval of this ShowCdnStatisticsResponse.
         :rtype: int
@@ -88,7 +88,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
     def interval(self, interval):
         """Sets the interval of this ShowCdnStatisticsResponse.
 
-        采样时间间隔 
+        统计间隔。
 
         :param interval: The interval of this ShowCdnStatisticsResponse.
         :type: int
@@ -99,6 +99,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
     def values(self):
         """Gets the values of this ShowCdnStatisticsResponse.
 
+        采样数据数组。 从start_time开始，每个间隔对应一个采样数据。
 
         :return: The values of this ShowCdnStatisticsResponse.
         :rtype: list[int]
@@ -109,6 +110,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
     def values(self, values):
         """Sets the values of this ShowCdnStatisticsResponse.
 
+        采样数据数组。 从start_time开始，每个间隔对应一个采样数据。
 
         :param values: The values of this ShowCdnStatisticsResponse.
         :type: list[int]

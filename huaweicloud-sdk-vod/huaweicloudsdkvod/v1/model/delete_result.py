@@ -50,7 +50,7 @@ class DeleteResult:
     def asset_id(self):
         """Gets the asset_id of this DeleteResult.
 
-        媒体ID<br/> 
+        媒资ID。
 
         :return: The asset_id of this DeleteResult.
         :rtype: str
@@ -61,7 +61,7 @@ class DeleteResult:
     def asset_id(self, asset_id):
         """Sets the asset_id of this DeleteResult.
 
-        媒体ID<br/> 
+        媒资ID。
 
         :param asset_id: The asset_id of this DeleteResult.
         :type: str
@@ -72,7 +72,7 @@ class DeleteResult:
     def status(self):
         """Gets the status of this DeleteResult.
 
-        删除状态<br/> 
+        删除状态。  取值如下： - DELETED：已删除。 - FAILED：删除失败。
 
         :return: The status of this DeleteResult.
         :rtype: str
@@ -83,7 +83,7 @@ class DeleteResult:
     def status(self, status):
         """Sets the status of this DeleteResult.
 
-        删除状态<br/> 
+        删除状态。  取值如下： - DELETED：已删除。 - FAILED：删除失败。
 
         :param status: The status of this DeleteResult.
         :type: str

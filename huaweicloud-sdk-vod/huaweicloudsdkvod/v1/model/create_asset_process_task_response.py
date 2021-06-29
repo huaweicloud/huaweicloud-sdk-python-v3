@@ -45,6 +45,7 @@ class CreateAssetProcessTaskResponse(SdkResponse):
     def asset_id(self):
         """Gets the asset_id of this CreateAssetProcessTaskResponse.
 
+        媒资ID。
 
         :return: The asset_id of this CreateAssetProcessTaskResponse.
         :rtype: str
@@ -55,6 +56,7 @@ class CreateAssetProcessTaskResponse(SdkResponse):
     def asset_id(self, asset_id):
         """Sets the asset_id of this CreateAssetProcessTaskResponse.
 
+        媒资ID。
 
         :param asset_id: The asset_id of this CreateAssetProcessTaskResponse.
         :type: str

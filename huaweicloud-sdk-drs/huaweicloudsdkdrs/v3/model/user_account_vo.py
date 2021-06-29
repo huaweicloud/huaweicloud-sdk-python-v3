@@ -31,7 +31,7 @@ class UserAccountVO:
         'password': 'str',
         'is_set_password': 'bool',
         'roles': 'list[str]',
-        'selected': 'str'
+        'selected': 'bool'
     }
 
     attribute_map = {
@@ -259,7 +259,7 @@ class UserAccountVO:
         是否选择。
 
         :return: The selected of this UserAccountVO.
-        :rtype: str
+        :rtype: bool
         """
         return self._selected
 
@@ -270,7 +270,7 @@ class UserAccountVO:
         是否选择。
 
         :param selected: The selected of this UserAccountVO.
-        :type: str
+        :type: bool
         """
         self._selected = selected
 

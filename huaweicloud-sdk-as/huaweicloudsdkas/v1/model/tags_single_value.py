@@ -41,8 +41,7 @@ class TagsSingleValue:
         self._value = None
         self.discriminator = None
 
-        if key is not None:
-            self.key = key
+        self.key = key
         if value is not None:
             self.value = value
 

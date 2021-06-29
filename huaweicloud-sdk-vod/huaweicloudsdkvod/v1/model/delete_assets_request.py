@@ -44,7 +44,7 @@ class DeleteAssetsRequest:
     def asset_id(self):
         """Gets the asset_id of this DeleteAssetsRequest.
 
-        媒资ID 
+        媒资ID，支持一次删除多个媒资，批量删除时以逗号分隔。
 
         :return: The asset_id of this DeleteAssetsRequest.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class DeleteAssetsRequest:
     def asset_id(self, asset_id):
         """Sets the asset_id of this DeleteAssetsRequest.
 
-        媒资ID 
+        媒资ID，支持一次删除多个媒资，批量删除时以逗号分隔。
 
         :param asset_id: The asset_id of this DeleteAssetsRequest.
         :type: list[str]

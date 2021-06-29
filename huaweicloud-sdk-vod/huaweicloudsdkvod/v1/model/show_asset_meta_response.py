@@ -55,6 +55,7 @@ class ShowAssetMetaResponse(SdkResponse):
     def asset_info_array(self):
         """Gets the asset_info_array of this ShowAssetMetaResponse.
 
+        媒资信息列表。
 
         :return: The asset_info_array of this ShowAssetMetaResponse.
         :rtype: list[AssetInfo]
@@ -65,6 +66,7 @@ class ShowAssetMetaResponse(SdkResponse):
     def asset_info_array(self, asset_info_array):
         """Sets the asset_info_array of this ShowAssetMetaResponse.
 
+        媒资信息列表。
 
         :param asset_info_array: The asset_info_array of this ShowAssetMetaResponse.
         :type: list[AssetInfo]
@@ -75,6 +77,7 @@ class ShowAssetMetaResponse(SdkResponse):
     def is_truncated(self):
         """Gets the is_truncated of this ShowAssetMetaResponse.
 
+        列表是否被截断。 取值如下： - 1：表示本次查询未返回全部结果。 - 0：表示本次查询已经返回了全部结果。
 
         :return: The is_truncated of this ShowAssetMetaResponse.
         :rtype: int
@@ -85,6 +88,7 @@ class ShowAssetMetaResponse(SdkResponse):
     def is_truncated(self, is_truncated):
         """Sets the is_truncated of this ShowAssetMetaResponse.
 
+        列表是否被截断。 取值如下： - 1：表示本次查询未返回全部结果。 - 0：表示本次查询已经返回了全部结果。
 
         :param is_truncated: The is_truncated of this ShowAssetMetaResponse.
         :type: int
@@ -95,6 +99,7 @@ class ShowAssetMetaResponse(SdkResponse):
     def total(self):
         """Gets the total of this ShowAssetMetaResponse.
 
+        查询媒资总数。  **说明：** 暂只能统计2万个媒资，若您需要查询具体的媒资总数，请[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=462902cc39a04ab3a429df872021f970)申请。
 
         :return: The total of this ShowAssetMetaResponse.
         :rtype: int
@@ -105,6 +110,7 @@ class ShowAssetMetaResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ShowAssetMetaResponse.
 
+        查询媒资总数。  **说明：** 暂只能统计2万个媒资，若您需要查询具体的媒资总数，请[提交工单](https://console.huaweicloud.com/ticket/?#/ticketindex/business?productTypeId=462902cc39a04ab3a429df872021f970)申请。
 
         :param total: The total of this ShowAssetMetaResponse.
         :type: int

@@ -9,7 +9,7 @@ import six
 
 
 
-class UpdateAssetReq:
+class UploadAssetReq:
 
 
     """
@@ -45,7 +45,7 @@ class UpdateAssetReq:
     }
 
     def __init__(self, asset_id=None, video_md5=None, video_name=None, video_type=None, cover_id=None, cover_type=None, cover_md5=None, subtitles=None):
-        """UpdateAssetReq - a model defined in huaweicloud sdk"""
+        """UploadAssetReq - a model defined in huaweicloud sdk"""
         
         
 
@@ -77,176 +77,176 @@ class UpdateAssetReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this UpdateAssetReq.
+        """Gets the asset_id of this UploadAssetReq.
 
-        媒体ID<br/> 
+        媒资ID。
 
-        :return: The asset_id of this UpdateAssetReq.
+        :return: The asset_id of this UploadAssetReq.
         :rtype: str
         """
         return self._asset_id
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this UpdateAssetReq.
+        """Sets the asset_id of this UploadAssetReq.
 
-        媒体ID<br/> 
+        媒资ID。
 
-        :param asset_id: The asset_id of this UpdateAssetReq.
+        :param asset_id: The asset_id of this UploadAssetReq.
         :type: str
         """
         self._asset_id = asset_id
 
     @property
     def video_md5(self):
-        """Gets the video_md5 of this UpdateAssetReq.
+        """Gets the video_md5 of this UploadAssetReq.
 
-        视频文件MD5值<br/> 
+        视频文件MD5值。 建议参考[媒资上传和更新](https://support.huaweicloud.com/api-vod/vod_04_0212.html)生成对应的MD5值。
 
-        :return: The video_md5 of this UpdateAssetReq.
+        :return: The video_md5 of this UploadAssetReq.
         :rtype: str
         """
         return self._video_md5
 
     @video_md5.setter
     def video_md5(self, video_md5):
-        """Sets the video_md5 of this UpdateAssetReq.
+        """Sets the video_md5 of this UploadAssetReq.
 
-        视频文件MD5值<br/> 
+        视频文件MD5值。 建议参考[媒资上传和更新](https://support.huaweicloud.com/api-vod/vod_04_0212.html)生成对应的MD5值。
 
-        :param video_md5: The video_md5 of this UpdateAssetReq.
+        :param video_md5: The video_md5 of this UploadAssetReq.
         :type: str
         """
         self._video_md5 = video_md5
 
     @property
     def video_name(self):
-        """Gets the video_name of this UpdateAssetReq.
+        """Gets the video_name of this UploadAssetReq.
 
-        视频文件名<br/> 
+        视频文件名。 文件名后缀为可选。
 
-        :return: The video_name of this UpdateAssetReq.
+        :return: The video_name of this UploadAssetReq.
         :rtype: str
         """
         return self._video_name
 
     @video_name.setter
     def video_name(self, video_name):
-        """Sets the video_name of this UpdateAssetReq.
+        """Sets the video_name of this UploadAssetReq.
 
-        视频文件名<br/> 
+        视频文件名。 文件名后缀为可选。
 
-        :param video_name: The video_name of this UpdateAssetReq.
+        :param video_name: The video_name of this UploadAssetReq.
         :type: str
         """
         self._video_name = video_name
 
     @property
     def video_type(self):
-        """Gets the video_type of this UpdateAssetReq.
+        """Gets the video_type of this UploadAssetReq.
 
-        视频文件类型<br/> 
+        视频文件类型。 取值为MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV
 
-        :return: The video_type of this UpdateAssetReq.
+        :return: The video_type of this UploadAssetReq.
         :rtype: str
         """
         return self._video_type
 
     @video_type.setter
     def video_type(self, video_type):
-        """Sets the video_type of this UpdateAssetReq.
+        """Sets the video_type of this UploadAssetReq.
 
-        视频文件类型<br/> 
+        视频文件类型。 取值为MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV
 
-        :param video_type: The video_type of this UpdateAssetReq.
+        :param video_type: The video_type of this UploadAssetReq.
         :type: str
         """
         self._video_type = video_type
 
     @property
     def cover_id(self):
-        """Gets the cover_id of this UpdateAssetReq.
+        """Gets the cover_id of this UploadAssetReq.
 
-        封面ID，取值0-7。当前只支持一张封面，只能填0<br/> 
+        封面ID。 取值范围：[0,7]。 当前只支持一张封面，只能设置为0。
 
-        :return: The cover_id of this UpdateAssetReq.
+        :return: The cover_id of this UploadAssetReq.
         :rtype: int
         """
         return self._cover_id
 
     @cover_id.setter
     def cover_id(self, cover_id):
-        """Sets the cover_id of this UpdateAssetReq.
+        """Sets the cover_id of this UploadAssetReq.
 
-        封面ID，取值0-7。当前只支持一张封面，只能填0<br/> 
+        封面ID。 取值范围：[0,7]。 当前只支持一张封面，只能设置为0。
 
-        :param cover_id: The cover_id of this UpdateAssetReq.
+        :param cover_id: The cover_id of this UploadAssetReq.
         :type: int
         """
         self._cover_id = cover_id
 
     @property
     def cover_type(self):
-        """Gets the cover_type of this UpdateAssetReq.
+        """Gets the cover_type of this UploadAssetReq.
 
-        封面图片格式类型<br/> 
+        封面图片格式类型。 取值如下： - JPG - PNG
 
-        :return: The cover_type of this UpdateAssetReq.
+        :return: The cover_type of this UploadAssetReq.
         :rtype: str
         """
         return self._cover_type
 
     @cover_type.setter
     def cover_type(self, cover_type):
-        """Sets the cover_type of this UpdateAssetReq.
+        """Sets the cover_type of this UploadAssetReq.
 
-        封面图片格式类型<br/> 
+        封面图片格式类型。 取值如下： - JPG - PNG
 
-        :param cover_type: The cover_type of this UpdateAssetReq.
+        :param cover_type: The cover_type of this UploadAssetReq.
         :type: str
         """
         self._cover_type = cover_type
 
     @property
     def cover_md5(self):
-        """Gets the cover_md5 of this UpdateAssetReq.
+        """Gets the cover_md5 of this UploadAssetReq.
 
-        封面文件MD5值<br/> 
+        封面文件的MD5值。
 
-        :return: The cover_md5 of this UpdateAssetReq.
+        :return: The cover_md5 of this UploadAssetReq.
         :rtype: str
         """
         return self._cover_md5
 
     @cover_md5.setter
     def cover_md5(self, cover_md5):
-        """Sets the cover_md5 of this UpdateAssetReq.
+        """Sets the cover_md5 of this UploadAssetReq.
 
-        封面文件MD5值<br/> 
+        封面文件的MD5值。
 
-        :param cover_md5: The cover_md5 of this UpdateAssetReq.
+        :param cover_md5: The cover_md5 of this UploadAssetReq.
         :type: str
         """
         self._cover_md5 = cover_md5
 
     @property
     def subtitles(self):
-        """Gets the subtitles of this UpdateAssetReq.
+        """Gets the subtitles of this UploadAssetReq.
 
-        字幕文件信息<br/> 
+        字幕文件信息
 
-        :return: The subtitles of this UpdateAssetReq.
+        :return: The subtitles of this UploadAssetReq.
         :rtype: list[Subtitle]
         """
         return self._subtitles
 
     @subtitles.setter
     def subtitles(self, subtitles):
-        """Sets the subtitles of this UpdateAssetReq.
+        """Sets the subtitles of this UploadAssetReq.
 
-        字幕文件信息<br/> 
+        字幕文件信息
 
-        :param subtitles: The subtitles of this UpdateAssetReq.
+        :param subtitles: The subtitles of this UploadAssetReq.
         :type: list[Subtitle]
         """
         self._subtitles = subtitles
@@ -288,7 +288,7 @@ class UpdateAssetReq:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdateAssetReq):
+        if not isinstance(other, UploadAssetReq):
             return False
 
         return self.__dict__ == other.__dict__

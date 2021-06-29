@@ -51,7 +51,7 @@ class VodAsyncClient(Client):
     def cancel_asset_transcode_task_async(self, request):
         """取消媒资转码任务
 
-        ## 典型场景 ##   取消媒资转码任务。<br/>  ## 接口功能 ##   取消媒资转码任务，只能取消排队中的转码任务。<br/>  ## 接口约束 ##   无。<br/> 
+        取消媒资转码任务，只能取消排队中的转码任务。
 
         :param CancelAssetTranscodeTaskRequest request
         :return: CancelAssetTranscodeTaskResponse
@@ -61,7 +61,7 @@ class VodAsyncClient(Client):
     def cancel_asset_transcode_task_with_http_info(self, request):
         """取消媒资转码任务
 
-        ## 典型场景 ##   取消媒资转码任务。<br/>  ## 接口功能 ##   取消媒资转码任务，只能取消排队中的转码任务。<br/>  ## 接口约束 ##   无。<br/> 
+        取消媒资转码任务，只能取消排队中的转码任务。
 
         :param CancelAssetTranscodeTaskRequest request
         :return: CancelAssetTranscodeTaskResponse
@@ -114,7 +114,7 @@ class VodAsyncClient(Client):
     def cancel_extract_audio_task_async(self, request):
         """取消提取音频任务
 
-        ## 典型场景 ##   取消提取音频任务调用此接口<br/>  ## 接口功能 ##   取消提取音频任务，只有排队中的音频任务才可以取消<br/>  ## 接口约束 ##   无。<br/> 
+        取消提取音频任务，只有排队中的提取音频任务才可以取消。
 
         :param CancelExtractAudioTaskRequest request
         :return: CancelExtractAudioTaskResponse
@@ -124,7 +124,7 @@ class VodAsyncClient(Client):
     def cancel_extract_audio_task_with_http_info(self, request):
         """取消提取音频任务
 
-        ## 典型场景 ##   取消提取音频任务调用此接口<br/>  ## 接口功能 ##   取消提取音频任务，只有排队中的音频任务才可以取消<br/>  ## 接口约束 ##   无。<br/> 
+        取消提取音频任务，只有排队中的提取音频任务才可以取消。
 
         :param CancelExtractAudioTaskRequest request
         :return: CancelExtractAudioTaskResponse
@@ -175,9 +175,9 @@ class VodAsyncClient(Client):
 
 
     def check_md5_duplication_async(self, request):
-        """文件上传MD5校验
+        """上传检验
 
-        查询音视频MD5是否重复
+        校验媒资文件是否已存储于视频点播服务中。
 
         :param CheckMd5DuplicationRequest request
         :return: CheckMd5DuplicationResponse
@@ -185,9 +185,9 @@ class VodAsyncClient(Client):
         return self.check_md5_duplication_with_http_info(request)
 
     def check_md5_duplication_with_http_info(self, request):
-        """文件上传MD5校验
+        """上传检验
 
-        查询音视频MD5是否重复
+        校验媒资文件是否已存储于视频点播服务中。
 
         :param CheckMd5DuplicationRequest request
         :return: CheckMd5DuplicationResponse
@@ -242,7 +242,7 @@ class VodAsyncClient(Client):
     def confirm_asset_upload_async(self, request):
         """确认媒资上传
 
-        ## 典型场景 ##   确认媒资上传时调用此接口。<br/>  ## 接口功能 ##   确认媒资上传。<br/>  ## 接口约束 ##   无。<br/> 
+        媒资分段上传完成后，需要调用此接口通知点播服务媒资上传的状态，表示媒资上传创建完成。 
 
         :param ConfirmAssetUploadRequest request
         :return: ConfirmAssetUploadResponse
@@ -252,7 +252,7 @@ class VodAsyncClient(Client):
     def confirm_asset_upload_with_http_info(self, request):
         """确认媒资上传
 
-        ## 典型场景 ##   确认媒资上传时调用此接口。<br/>  ## 接口功能 ##   确认媒资上传。<br/>  ## 接口约束 ##   无。<br/> 
+        媒资分段上传完成后，需要调用此接口通知点播服务媒资上传的状态，表示媒资上传创建完成。 
 
         :param ConfirmAssetUploadRequest request
         :return: ConfirmAssetUploadResponse
@@ -366,9 +366,9 @@ class VodAsyncClient(Client):
 
 
     def create_asset_by_file_upload_async(self, request):
-        """上传方式创建媒资
+        """创建媒资：上传方式
 
-        上传方式创建媒资。
+        调用该接口创建媒资时，需要将对应的媒资文件上传到点播服务的OBS桶中。  若上传的单媒资文件大小小于20M，则可以直接用PUT方法对该接口返回的地址进行上传。具体使用方法请参考[示例1：媒资上传（20M以下）](https://support.huaweicloud.com/api-vod/vod_04_0195.html)。  若上传的单个媒资大小大于20M，则需要进行二进制流分割后上传，该接口的具体使用方法请参考[示例2：媒资分段上传（20M以上）](https://support.huaweicloud.com/api-vod/vod_04_0216.html)。
 
         :param CreateAssetByFileUploadRequest request
         :return: CreateAssetByFileUploadResponse
@@ -376,9 +376,9 @@ class VodAsyncClient(Client):
         return self.create_asset_by_file_upload_with_http_info(request)
 
     def create_asset_by_file_upload_with_http_info(self, request):
-        """上传方式创建媒资
+        """创建媒资：上传方式
 
-        上传方式创建媒资。
+        调用该接口创建媒资时，需要将对应的媒资文件上传到点播服务的OBS桶中。  若上传的单媒资文件大小小于20M，则可以直接用PUT方法对该接口返回的地址进行上传。具体使用方法请参考[示例1：媒资上传（20M以下）](https://support.huaweicloud.com/api-vod/vod_04_0195.html)。  若上传的单个媒资大小大于20M，则需要进行二进制流分割后上传，该接口的具体使用方法请参考[示例2：媒资分段上传（20M以上）](https://support.huaweicloud.com/api-vod/vod_04_0216.html)。
 
         :param CreateAssetByFileUploadRequest request
         :return: CreateAssetByFileUploadResponse
@@ -431,7 +431,7 @@ class VodAsyncClient(Client):
     def create_asset_category_async(self, request):
         """创建媒资分类
 
-        ## 典型场景 ##   创建媒资分类。<br/>  ## 接口功能 ##   创建媒资分类。<br/>  ## 接口约束 ##   最大支持三级分类，每个分类最多支持创建128个子分类。<br/> 
+        ## 功能介绍 ##   创建媒资分类。<br/>  ## 接口约束 ##   最大支持三级分类，每个分类最多支持创建128个子分类。<br/> 
 
         :param CreateAssetCategoryRequest request
         :return: CreateAssetCategoryResponse
@@ -441,7 +441,7 @@ class VodAsyncClient(Client):
     def create_asset_category_with_http_info(self, request):
         """创建媒资分类
 
-        ## 典型场景 ##   创建媒资分类。<br/>  ## 接口功能 ##   创建媒资分类。<br/>  ## 接口约束 ##   最大支持三级分类，每个分类最多支持创建128个子分类。<br/> 
+        ## 功能介绍 ##   创建媒资分类。<br/>  ## 接口约束 ##   最大支持三级分类，每个分类最多支持创建128个子分类。<br/> 
 
         :param CreateAssetCategoryRequest request
         :return: CreateAssetCategoryResponse
@@ -494,7 +494,7 @@ class VodAsyncClient(Client):
     def create_asset_process_task_async(self, request):
         """媒资处理
 
-        ## 典型场景 ##   媒资处理。<br/>  ## 接口功能 ##   媒资处理。<br/>  ## 接口约束 ##   无。<br/> 
+        实现视频转码、截图、加密等处理。既可以同时启动多种操作，也可以只启动一种操作。 
 
         :param CreateAssetProcessTaskRequest request
         :return: CreateAssetProcessTaskResponse
@@ -504,7 +504,7 @@ class VodAsyncClient(Client):
     def create_asset_process_task_with_http_info(self, request):
         """媒资处理
 
-        ## 典型场景 ##   媒资处理。<br/>  ## 接口功能 ##   媒资处理。<br/>  ## 接口约束 ##   无。<br/> 
+        实现视频转码、截图、加密等处理。既可以同时启动多种操作，也可以只启动一种操作。 
 
         :param CreateAssetProcessTaskRequest request
         :return: CreateAssetProcessTaskResponse
@@ -557,7 +557,7 @@ class VodAsyncClient(Client):
     def create_asset_review_task_async(self, request):
         """创建审核媒资任务
 
-        媒资审核接口
+        ## 功能介绍 ## 对上传的媒资进行审核。审核后，可以调用[查询媒资详细信息](https://support.huaweicloud.com/api-vod/vod_04_0202.html)接口查看审核结果。  ## 接口约束 ## 目前“华东-上海二”区域的点播服务暂不支持此功能。
 
         :param CreateAssetReviewTaskRequest request
         :return: CreateAssetReviewTaskResponse
@@ -567,7 +567,7 @@ class VodAsyncClient(Client):
     def create_asset_review_task_with_http_info(self, request):
         """创建审核媒资任务
 
-        媒资审核接口
+        ## 功能介绍 ## 对上传的媒资进行审核。审核后，可以调用[查询媒资详细信息](https://support.huaweicloud.com/api-vod/vod_04_0202.html)接口查看审核结果。  ## 接口约束 ## 目前“华东-上海二”区域的点播服务暂不支持此功能。
 
         :param CreateAssetReviewTaskRequest request
         :return: CreateAssetReviewTaskResponse
@@ -618,9 +618,9 @@ class VodAsyncClient(Client):
 
 
     def create_extract_audio_task_async(self, request):
-        """视频媒资提取音频
+        """音频提取
 
-        ## 典型场景 ##   从媒资中提取音频调用此接口<br/>  ## 接口功能 ##   视频媒资提取音频<br/>  ## 接口约束 ##   无。<br/> 
+        用于从已有视频文件中提取音频。 
 
         :param CreateExtractAudioTaskRequest request
         :return: CreateExtractAudioTaskResponse
@@ -628,9 +628,9 @@ class VodAsyncClient(Client):
         return self.create_extract_audio_task_with_http_info(request)
 
     def create_extract_audio_task_with_http_info(self, request):
-        """视频媒资提取音频
+        """音频提取
 
-        ## 典型场景 ##   从媒资中提取音频调用此接口<br/>  ## 接口功能 ##   视频媒资提取音频<br/>  ## 接口约束 ##   无。<br/> 
+        用于从已有视频文件中提取音频。 
 
         :param CreateExtractAudioTaskRequest request
         :return: CreateExtractAudioTaskResponse
@@ -809,7 +809,7 @@ class VodAsyncClient(Client):
     def delete_asset_category_async(self, request):
         """删除媒资分类
 
-        ## 典型场景 ##   删除媒资分类。<br/>  ## 接口功能 ##   删除媒资分类。<br/>  ## 接口约束 ##   无。<br/> 
+        删除媒资分类。 
 
         :param DeleteAssetCategoryRequest request
         :return: DeleteAssetCategoryResponse
@@ -819,7 +819,7 @@ class VodAsyncClient(Client):
     def delete_asset_category_with_http_info(self, request):
         """删除媒资分类
 
-        ## 典型场景 ##   删除媒资分类。<br/>  ## 接口功能 ##   删除媒资分类。<br/>  ## 接口约束 ##   无。<br/> 
+        删除媒资分类。 
 
         :param DeleteAssetCategoryRequest request
         :return: DeleteAssetCategoryResponse
@@ -870,9 +870,9 @@ class VodAsyncClient(Client):
 
 
     def delete_assets_async(self, request):
-        """删除媒资，支持批量删除
+        """删除媒资
 
-        ## 典型场景 ##   删除媒资，支持批量删除。<br/>  ## 接口功能 ##   删除媒资，支持批量删除。<br/>  ## 接口约束 ##   最多删除十个。<br/> 
+        ## 功能介绍 ## 删除媒资。  ## 接口约束 ## 正在处理中的媒资不支持删除，包括转码中、审核中、截图中等。
 
         :param DeleteAssetsRequest request
         :return: DeleteAssetsResponse
@@ -880,9 +880,9 @@ class VodAsyncClient(Client):
         return self.delete_assets_with_http_info(request)
 
     def delete_assets_with_http_info(self, request):
-        """删除媒资，支持批量删除
+        """删除媒资
 
-        ## 典型场景 ##   删除媒资，支持批量删除。<br/>  ## 接口功能 ##   删除媒资，支持批量删除。<br/>  ## 接口约束 ##   最多删除十个。<br/> 
+        ## 功能介绍 ## 删除媒资。  ## 接口约束 ## 正在处理中的媒资不支持删除，包括转码中、审核中、截图中等。
 
         :param DeleteAssetsRequest request
         :return: DeleteAssetsResponse
@@ -1062,7 +1062,7 @@ class VodAsyncClient(Client):
     def list_asset_category_async(self, request):
         """查询指定分类信息
 
-        ## 典型场景 ##   查询指定分类信息，及其子分类（即下一级分类）的列表。<br/>  ## 接口功能 ##   查询指定分类信息。<br/>  ## 接口约束 ##   无。<br/> 
+        查询指定分类信息，及其子分类（即下一级分类）的列表。
 
         :param ListAssetCategoryRequest request
         :return: ListAssetCategoryResponse
@@ -1072,7 +1072,7 @@ class VodAsyncClient(Client):
     def list_asset_category_with_http_info(self, request):
         """查询指定分类信息
 
-        ## 典型场景 ##   查询指定分类信息，及其子分类（即下一级分类）的列表。<br/>  ## 接口功能 ##   查询指定分类信息。<br/>  ## 接口约束 ##   无。<br/> 
+        查询指定分类信息，及其子分类（即下一级分类）的列表。
 
         :param ListAssetCategoryRequest request
         :return: ListAssetCategoryResponse
@@ -1125,7 +1125,7 @@ class VodAsyncClient(Client):
     def list_asset_list_async(self, request):
         """查询媒资列表
 
-        查询媒资列表
+        查询媒资列表，列表中的每一条记录包含媒资的概要信息。
 
         :param ListAssetListRequest request
         :return: ListAssetListResponse
@@ -1135,7 +1135,7 @@ class VodAsyncClient(Client):
     def list_asset_list_with_http_info(self, request):
         """查询媒资列表
 
-        查询媒资列表
+        查询媒资列表，列表中的每一条记录包含媒资的概要信息。
 
         :param ListAssetListRequest request
         :return: ListAssetListResponse
@@ -1278,9 +1278,9 @@ class VodAsyncClient(Client):
 
 
     def list_top_statistics_async(self, request):
-        """查询TopN播放视频信息
+        """查询TopN媒资信息
 
-        ## 典型场景 ##  查询TopN播放视频信息 。<br/>  ## 接口功能 ##  查询TopN播放视频信息 。<br/>  ##  接口约束 ##   无。<br/> 
+        查询指定域名在指定日期播放次数排名Top 100的媒资统计数据。
 
         :param ListTopStatisticsRequest request
         :return: ListTopStatisticsResponse
@@ -1288,9 +1288,9 @@ class VodAsyncClient(Client):
         return self.list_top_statistics_with_http_info(request)
 
     def list_top_statistics_with_http_info(self, request):
-        """查询TopN播放视频信息
+        """查询TopN媒资信息
 
-        ## 典型场景 ##  查询TopN播放视频信息 。<br/>  ## 接口功能 ##  查询TopN播放视频信息 。<br/>  ##  接口约束 ##   无。<br/> 
+        查询指定域名在指定日期播放次数排名Top 100的媒资统计数据。
 
         :param ListTopStatisticsRequest request
         :return: ListTopStatisticsResponse
@@ -1411,9 +1411,9 @@ class VodAsyncClient(Client):
 
 
     def publish_asset_from_obs_async(self, request):
-        """从OBS一键发布媒资
+        """创建媒资：OBS转存方式
 
-        ## 典型场景 ##   从OBS转存媒资,一键发布。<br/>  ## 接口功能 ##    在OBS中的媒资一键发布到VOD。<br/>  ## 接口约束 ##   OBS的桶必须先授权给VOD服务用户。<br/> 
+        ## 功能介绍 ##   若您在使用点播服务前，已经在OBS桶中存储了音视频文件，您可以使用该接口将存储在OBS桶中的音视频文件转存到点播服务中，使用点播服务的音视频管理功能。调用该接口前，您需要调用[桶授权](https://support.huaweicloud.com/api-vod/vod_04_0199.html)接口，将存储音视频文件的OBS桶授权给点播服务。<br/>  ## 接口约束 ##   由于不同区域的云服务不能互连，所以待转存的OBS桶和点播服务必须在同一区域，如“华北-北京四”OBS桶中的音视频只能转存到“华北-北京四”点播服务中。<br/>
 
         :param PublishAssetFromObsRequest request
         :return: PublishAssetFromObsResponse
@@ -1421,9 +1421,9 @@ class VodAsyncClient(Client):
         return self.publish_asset_from_obs_with_http_info(request)
 
     def publish_asset_from_obs_with_http_info(self, request):
-        """从OBS一键发布媒资
+        """创建媒资：OBS转存方式
 
-        ## 典型场景 ##   从OBS转存媒资,一键发布。<br/>  ## 接口功能 ##    在OBS中的媒资一键发布到VOD。<br/>  ## 接口约束 ##   OBS的桶必须先授权给VOD服务用户。<br/> 
+        ## 功能介绍 ##   若您在使用点播服务前，已经在OBS桶中存储了音视频文件，您可以使用该接口将存储在OBS桶中的音视频文件转存到点播服务中，使用点播服务的音视频管理功能。调用该接口前，您需要调用[桶授权](https://support.huaweicloud.com/api-vod/vod_04_0199.html)接口，将存储音视频文件的OBS桶授权给点播服务。<br/>  ## 接口约束 ##   由于不同区域的云服务不能互连，所以待转存的OBS桶和点播服务必须在同一区域，如“华北-北京四”OBS桶中的音视频只能转存到“华北-北京四”点播服务中。<br/>
 
         :param PublishAssetFromObsRequest request
         :return: PublishAssetFromObsResponse
@@ -1476,7 +1476,7 @@ class VodAsyncClient(Client):
     def publish_assets_async(self, request):
         """媒资发布
 
-        ## 典型场景 ##   媒资发布,支持批量发布。<br/>  ## 接口功能 ##   媒资发布,支持批量发布。<br/>  ## 接口约束 ##   无。<br/> 
+        将媒资设置为发布状态。支持批量发布。 
 
         :param PublishAssetsRequest request
         :return: PublishAssetsResponse
@@ -1486,7 +1486,7 @@ class VodAsyncClient(Client):
     def publish_assets_with_http_info(self, request):
         """媒资发布
 
-        ## 典型场景 ##   媒资发布,支持批量发布。<br/>  ## 接口功能 ##   媒资发布,支持批量发布。<br/>  ## 接口约束 ##   无。<br/> 
+        将媒资设置为发布状态。支持批量发布。 
 
         :param PublishAssetsRequest request
         :return: PublishAssetsResponse
@@ -1539,7 +1539,7 @@ class VodAsyncClient(Client):
     def show_asset_detail_async(self, request):
         """查询指定媒资的详细信息
 
-        查询指定媒资的详细信息
+        查询指定媒资的详细信息。
 
         :param ShowAssetDetailRequest request
         :return: ShowAssetDetailResponse
@@ -1549,7 +1549,7 @@ class VodAsyncClient(Client):
     def show_asset_detail_with_http_info(self, request):
         """查询指定媒资的详细信息
 
-        查询指定媒资的详细信息
+        查询指定媒资的详细信息。
 
         :param ShowAssetDetailRequest request
         :return: ShowAssetDetailResponse
@@ -1605,7 +1605,7 @@ class VodAsyncClient(Client):
     def show_asset_meta_async(self, request):
         """查询媒资信息
 
-        ## 典型场景 ##   查询媒资信息。<br/>  ## 接口功能 ##   查询媒资信息。<br/>  ## 接口约束 ##   最多同时查询10个。<br/> 
+        查询媒资信息，支持指定媒资ID、分类、状态、起止时间查询。
 
         :param ShowAssetMetaRequest request
         :return: ShowAssetMetaResponse
@@ -1615,13 +1615,13 @@ class VodAsyncClient(Client):
     def show_asset_meta_with_http_info(self, request):
         """查询媒资信息
 
-        ## 典型场景 ##   查询媒资信息。<br/>  ## 接口功能 ##   查询媒资信息。<br/>  ## 接口约束 ##   最多同时查询10个。<br/> 
+        查询媒资信息，支持指定媒资ID、分类、状态、起止时间查询。
 
         :param ShowAssetMetaRequest request
         :return: ShowAssetMetaResponse
         """
 
-        all_params = ['asset_id', 'status', 'transcode_status', 'asset_status', 'start_time', 'end_time', 'category_id', 'tags', 'query_string', 'page', 'size', 'order']
+        all_params = ['asset_id', 'status', 'transcode_status', 'asset_status', 'start_time', 'end_time', 'category_id', 'tags', 'query_string', 'page', 'size']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1658,8 +1658,6 @@ class VodAsyncClient(Client):
             query_params.append(('page', local_var_params['page']))
         if 'size' in local_var_params:
             query_params.append(('size', local_var_params['size']))
-        if 'order' in local_var_params:
-            query_params.append(('order', local_var_params['order']))
 
         header_params = {}
 
@@ -1692,9 +1690,9 @@ class VodAsyncClient(Client):
 
 
     def show_asset_temp_authority_async(self, request):
-        """获取授权（New Version）
+        """获取分段上传授权
 
-        客户端请求创建媒资时，如果媒资文件超过100MB，需采用分段的方式向OBS上传，在每次与OBS交互前，客户端需通过此接口获取到授权方可与OBS交互。 
+        客户端请求创建媒资时，如果媒资文件超过20MB，需采用分段的方式向OBS上传，在每次与OBS交互前，客户端需通过此接口获取到授权方可与OBS交互。  该接口可以获取[初始化多段上传任务](https://support.huaweicloud.com/api-obs/obs_04_0098.html)、[上传段](https://support.huaweicloud.com/api-obs/obs_04_0099.html)、[合并段](https://support.huaweicloud.com/api-obs/obs_04_0102.html)、[列举已上传段](https://support.huaweicloud.com/api-obs/obs_04_0101.html)、[取消段合并](https://support.huaweicloud.com/api-obs/obs_04_0103.html)的带有临时授权的URL，用户需要根据OBS的接口文档配置相应请求的HTTP请求方法、请求头、请求体，然后请求对应的带有临时授权的URL。  视频分段上传方式和OBS的接口文档保持一致，包括HTTP请求方法、请求头、请求体等各种入参，此接口的作用是为用户生成带有鉴权信息的URL（鉴权信息即query_str），用来替换OBS接口中对应的URL，临时给用户开通向点播服务的桶上传文件的权限。  调用获取授权接口时需要传入bucket、object_key、http_verb，其中bucket和object_key是由[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket和object，http_verb需要根据指定的操作选择。
 
         :param ShowAssetTempAuthorityRequest request
         :return: ShowAssetTempAuthorityResponse
@@ -1702,15 +1700,15 @@ class VodAsyncClient(Client):
         return self.show_asset_temp_authority_with_http_info(request)
 
     def show_asset_temp_authority_with_http_info(self, request):
-        """获取授权（New Version）
+        """获取分段上传授权
 
-        客户端请求创建媒资时，如果媒资文件超过100MB，需采用分段的方式向OBS上传，在每次与OBS交互前，客户端需通过此接口获取到授权方可与OBS交互。 
+        客户端请求创建媒资时，如果媒资文件超过20MB，需采用分段的方式向OBS上传，在每次与OBS交互前，客户端需通过此接口获取到授权方可与OBS交互。  该接口可以获取[初始化多段上传任务](https://support.huaweicloud.com/api-obs/obs_04_0098.html)、[上传段](https://support.huaweicloud.com/api-obs/obs_04_0099.html)、[合并段](https://support.huaweicloud.com/api-obs/obs_04_0102.html)、[列举已上传段](https://support.huaweicloud.com/api-obs/obs_04_0101.html)、[取消段合并](https://support.huaweicloud.com/api-obs/obs_04_0103.html)的带有临时授权的URL，用户需要根据OBS的接口文档配置相应请求的HTTP请求方法、请求头、请求体，然后请求对应的带有临时授权的URL。  视频分段上传方式和OBS的接口文档保持一致，包括HTTP请求方法、请求头、请求体等各种入参，此接口的作用是为用户生成带有鉴权信息的URL（鉴权信息即query_str），用来替换OBS接口中对应的URL，临时给用户开通向点播服务的桶上传文件的权限。  调用获取授权接口时需要传入bucket、object_key、http_verb，其中bucket和object_key是由[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket和object，http_verb需要根据指定的操作选择。
 
         :param ShowAssetTempAuthorityRequest request
         :return: ShowAssetTempAuthorityResponse
         """
 
-        all_params = ['http_verb', 'bucket', 'object_key', 'content_md5', 'content_type', 'upload_id', 'part_number']
+        all_params = ['http_verb', 'bucket', 'object_key', 'content_type', 'content_md5', 'upload_id', 'part_number']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1723,14 +1721,14 @@ class VodAsyncClient(Client):
         query_params = []
         if 'http_verb' in local_var_params:
             query_params.append(('http_verb', local_var_params['http_verb']))
-        if 'content_md5' in local_var_params:
-            query_params.append(('content_md5', local_var_params['content_md5']))
-        if 'content_type' in local_var_params:
-            query_params.append(('content_type', local_var_params['content_type']))
         if 'bucket' in local_var_params:
             query_params.append(('bucket', local_var_params['bucket']))
         if 'object_key' in local_var_params:
             query_params.append(('object_key', local_var_params['object_key']))
+        if 'content_type' in local_var_params:
+            query_params.append(('content_type', local_var_params['content_type']))
+        if 'content_md5' in local_var_params:
+            query_params.append(('content_md5', local_var_params['content_md5']))
         if 'upload_id' in local_var_params:
             query_params.append(('upload_id', local_var_params['upload_id']))
         if 'part_number' in local_var_params:
@@ -1767,9 +1765,9 @@ class VodAsyncClient(Client):
 
 
     def show_cdn_statistics_async(self, request):
-        """查询域名的cdn数据信息
+        """查询CDN统计信息
 
-        ## 典型场景 ##  查询域名的cdn数据信息 。<br/>  ## 接口功能 ##  查询域名的cdn数据信息 。<br/>  ##  接口约束 ##   无。<br/> 
+        查询CDN的统计数据，包括流量、峰值带宽、请求总数、请求命中率、流量命中率。
 
         :param ShowCdnStatisticsRequest request
         :return: ShowCdnStatisticsResponse
@@ -1777,9 +1775,9 @@ class VodAsyncClient(Client):
         return self.show_cdn_statistics_with_http_info(request)
 
     def show_cdn_statistics_with_http_info(self, request):
-        """查询域名的cdn数据信息
+        """查询CDN统计信息
 
-        ## 典型场景 ##  查询域名的cdn数据信息 。<br/>  ## 接口功能 ##  查询域名的cdn数据信息 。<br/>  ##  接口约束 ##   无。<br/> 
+        查询CDN的统计数据，包括流量、峰值带宽、请求总数、请求命中率、流量命中率。
 
         :param ShowCdnStatisticsRequest request
         :return: ShowCdnStatisticsResponse
@@ -1838,9 +1836,9 @@ class VodAsyncClient(Client):
 
 
     def show_vod_statistics_async(self, request):
-        """查询源站数据信息
+        """查询源站统计信息
 
-        ## 典型场景 ##  用于查询点播源站相关的统计数据，包括流量、存储空间、转码时长等 。<br/>  ## 接口功能 ##  用于查询点播源站相关的统计数据，包括流量、存储空间、转码时长等 。<br/>  ##  接口约束 ##   无。<br/> 
+        查询点播源站的统计数据，包括流量、存储空间、转码时长。
 
         :param ShowVodStatisticsRequest request
         :return: ShowVodStatisticsResponse
@@ -1848,9 +1846,9 @@ class VodAsyncClient(Client):
         return self.show_vod_statistics_with_http_info(request)
 
     def show_vod_statistics_with_http_info(self, request):
-        """查询源站数据信息
+        """查询源站统计信息
 
-        ## 典型场景 ##  用于查询点播源站相关的统计数据，包括流量、存储空间、转码时长等 。<br/>  ## 接口功能 ##  用于查询点播源站相关的统计数据，包括流量、存储空间、转码时长等 。<br/>  ##  接口约束 ##   无。<br/> 
+        查询点播源站的统计数据，包括流量、存储空间、转码时长。
 
         :param ShowVodStatisticsRequest request
         :return: ShowVodStatisticsResponse
@@ -1905,9 +1903,9 @@ class VodAsyncClient(Client):
 
 
     def unpublish_assets_async(self, request):
-        """媒资取消发布
+        """媒资发布取消
 
-        ## 典型场景 ##   媒资取消发布。<br/>  ## 接口功能 ##   媒资取消发布。<br/>  ## 接口约束 ##   无。<br/> 
+        将媒资设置为未发布状态。 
 
         :param UnpublishAssetsRequest request
         :return: UnpublishAssetsResponse
@@ -1915,9 +1913,9 @@ class VodAsyncClient(Client):
         return self.unpublish_assets_with_http_info(request)
 
     def unpublish_assets_with_http_info(self, request):
-        """媒资取消发布
+        """媒资发布取消
 
-        ## 典型场景 ##   媒资取消发布。<br/>  ## 接口功能 ##   媒资取消发布。<br/>  ## 接口约束 ##   无。<br/> 
+        将媒资设置为未发布状态。 
 
         :param UnpublishAssetsRequest request
         :return: UnpublishAssetsResponse
@@ -1968,9 +1966,9 @@ class VodAsyncClient(Client):
 
 
     def update_asset_async(self, request):
-        """媒资更新
+        """视频更新
 
-        ## 典型场景 ##   媒资更新,单独上传封面、更新视频文件或更新已有封面。<br/>  ## 接口功能 ##   媒资更新。<br/>  ## 接口约束 ##   无。<br/> 
+        媒资创建后，单独上传封面、更新视频文件或更新已有封面。 如果是更新视频文件，更新完后要通过[确认媒资上传](https://support.huaweicloud.com/api-vod/vod_04_0198.html)接口通知点播服务。 如果是更新封面或单独上传封面，则不需通知。 更新视频可以使用分段上传，具体方式可以参考[示例2：媒资分段上传（20M以上）](https://support.huaweicloud.com/api-vod/vod_04_0216.html)。
 
         :param UpdateAssetRequest request
         :return: UpdateAssetResponse
@@ -1978,15 +1976,15 @@ class VodAsyncClient(Client):
         return self.update_asset_with_http_info(request)
 
     def update_asset_with_http_info(self, request):
-        """媒资更新
+        """视频更新
 
-        ## 典型场景 ##   媒资更新,单独上传封面、更新视频文件或更新已有封面。<br/>  ## 接口功能 ##   媒资更新。<br/>  ## 接口约束 ##   无。<br/> 
+        媒资创建后，单独上传封面、更新视频文件或更新已有封面。 如果是更新视频文件，更新完后要通过[确认媒资上传](https://support.huaweicloud.com/api-vod/vod_04_0198.html)接口通知点播服务。 如果是更新封面或单独上传封面，则不需通知。 更新视频可以使用分段上传，具体方式可以参考[示例2：媒资分段上传（20M以上）](https://support.huaweicloud.com/api-vod/vod_04_0216.html)。
 
         :param UpdateAssetRequest request
         :return: UpdateAssetResponse
         """
 
-        all_params = ['update_asset_req']
+        all_params = ['upload_asset_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2033,7 +2031,7 @@ class VodAsyncClient(Client):
     def update_asset_category_async(self, request):
         """修改媒资分类
 
-        ## 典型场景 ##   修改媒资分类。<br/>  ## 接口功能 ##   修改媒资分类。<br/>  ## 接口约束 ##   无。<br/> 
+        修改媒资分类。 
 
         :param UpdateAssetCategoryRequest request
         :return: UpdateAssetCategoryResponse
@@ -2043,7 +2041,7 @@ class VodAsyncClient(Client):
     def update_asset_category_with_http_info(self, request):
         """修改媒资分类
 
-        ## 典型场景 ##   修改媒资分类。<br/>  ## 接口功能 ##   修改媒资分类。<br/>  ## 接口约束 ##   无。<br/> 
+        修改媒资分类。 
 
         :param UpdateAssetCategoryRequest request
         :return: UpdateAssetCategoryResponse
@@ -2094,9 +2092,9 @@ class VodAsyncClient(Client):
 
 
     def update_asset_meta_async(self, request):
-        """更新媒资信息
+        """修改媒资属性
 
-        ## 典型场景 ##   更新媒资信息。<br/>  ## 接口功能 ##   更新媒资信息。<br/>  ## 接口约束 ##   无。<br/> 
+        修改媒资属性。 
 
         :param UpdateAssetMetaRequest request
         :return: UpdateAssetMetaResponse
@@ -2104,9 +2102,9 @@ class VodAsyncClient(Client):
         return self.update_asset_meta_with_http_info(request)
 
     def update_asset_meta_with_http_info(self, request):
-        """更新媒资信息
+        """修改媒资属性
 
-        ## 典型场景 ##   更新媒资信息。<br/>  ## 接口功能 ##   更新媒资信息。<br/>  ## 接口约束 ##   无。<br/> 
+        修改媒资属性。 
 
         :param UpdateAssetMetaRequest request
         :return: UpdateAssetMetaResponse
@@ -2157,9 +2155,9 @@ class VodAsyncClient(Client):
 
 
     def update_bucket_authorized_async(self, request):
-        """修改桶授权
+        """桶授权
 
-        ## 典型场景 ##   用户通过桶策略方式授权给VOD用户操作桶的权限。<br/>  ## 接口功能 ##   用户通过桶策略方式授权给VOD用户操作桶的权限。<br/>  ## 接口约束 ##   无。<br/> 
+        用户可以通过该接口将OBS桶授权给点播服务或取消点播服务的授权。 
 
         :param UpdateBucketAuthorizedRequest request
         :return: UpdateBucketAuthorizedResponse
@@ -2167,15 +2165,15 @@ class VodAsyncClient(Client):
         return self.update_bucket_authorized_with_http_info(request)
 
     def update_bucket_authorized_with_http_info(self, request):
-        """修改桶授权
+        """桶授权
 
-        ## 典型场景 ##   用户通过桶策略方式授权给VOD用户操作桶的权限。<br/>  ## 接口功能 ##   用户通过桶策略方式授权给VOD用户操作桶的权限。<br/>  ## 接口约束 ##   无。<br/> 
+        用户可以通过该接口将OBS桶授权给点播服务或取消点播服务的授权。 
 
         :param UpdateBucketAuthorizedRequest request
         :return: UpdateBucketAuthorizedResponse
         """
 
-        all_params = ['bucket_authorized_req']
+        all_params = ['update_bucket_authorized_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2220,9 +2218,9 @@ class VodAsyncClient(Client):
 
 
     def update_cover_by_thumbnail_async(self, request):
-        """租户选择截图，来更新封面
+        """设置封面
 
-        ## 典型场景 ##   租户选择截图，来更新封面。<br/>  ## 接口功能 ##   租户选择截图，来更新封面 。<br/>  ## 接口约束 ##   无。<br/> 
+        将视频截图生成的某张图片设置成封面。
 
         :param UpdateCoverByThumbnailRequest request
         :return: UpdateCoverByThumbnailResponse
@@ -2230,9 +2228,9 @@ class VodAsyncClient(Client):
         return self.update_cover_by_thumbnail_with_http_info(request)
 
     def update_cover_by_thumbnail_with_http_info(self, request):
-        """租户选择截图，来更新封面
+        """设置封面
 
-        ## 典型场景 ##   租户选择截图，来更新封面。<br/>  ## 接口功能 ##   租户选择截图，来更新封面 。<br/>  ## 接口约束 ##   无。<br/> 
+        将视频截图生成的某张图片设置成封面。
 
         :param UpdateCoverByThumbnailRequest request
         :return: UpdateCoverByThumbnailResponse
@@ -2409,9 +2407,9 @@ class VodAsyncClient(Client):
 
 
     def upload_meta_data_by_url_async(self, request):
-        """通过URL拉取方式创建媒资
+        """创建媒资：URL拉取注入
 
-        ## 典型场景 ##    创建媒资：URL拉取注入。<br/>  ## 接口功能 ##    创建媒资：URL拉取注入。<br/>  ## 接口约束 ##    无<br/> 
+        基于音视频源文件URL，将音视频文件离线拉取上传到点播服务。 
 
         :param UploadMetaDataByUrlRequest request
         :return: UploadMetaDataByUrlResponse
@@ -2419,9 +2417,9 @@ class VodAsyncClient(Client):
         return self.upload_meta_data_by_url_with_http_info(request)
 
     def upload_meta_data_by_url_with_http_info(self, request):
-        """通过URL拉取方式创建媒资
+        """创建媒资：URL拉取注入
 
-        ## 典型场景 ##    创建媒资：URL拉取注入。<br/>  ## 接口功能 ##    创建媒资：URL拉取注入。<br/>  ## 接口约束 ##    无<br/> 
+        基于音视频源文件URL，将音视频文件离线拉取上传到点播服务。 
 
         :param UploadMetaDataByUrlRequest request
         :return: UploadMetaDataByUrlResponse
@@ -2474,7 +2472,7 @@ class VodAsyncClient(Client):
     def create_preheating_asset_async(self, request):
         """CDN预热
 
-        ## 典型场景 ##   点播发布后可向CDN预热。<br/>  ## 接口功能 ##   CDN预热。<br/>  ## 接口约束 ##   无。<br/> 
+        媒资发布后，可通过指定媒资ID或URL向CDN预热。用户初次请求时，将由CDN节点提供请求媒资，加快用户下载缓存时间，提高用户体验。
 
         :param CreatePreheatingAssetRequest request
         :return: CreatePreheatingAssetResponse
@@ -2484,7 +2482,7 @@ class VodAsyncClient(Client):
     def create_preheating_asset_with_http_info(self, request):
         """CDN预热
 
-        ## 典型场景 ##   点播发布后可向CDN预热。<br/>  ## 接口功能 ##   CDN预热。<br/>  ## 接口约束 ##   无。<br/> 
+        媒资发布后，可通过指定媒资ID或URL向CDN预热。用户初次请求时，将由CDN节点提供请求媒资，加快用户下载缓存时间，提高用户体验。
 
         :param CreatePreheatingAssetRequest request
         :return: CreatePreheatingAssetResponse
@@ -2537,7 +2535,7 @@ class VodAsyncClient(Client):
     def show_preheating_asset_async(self, request):
         """查询CDN预热
 
-        ## 典型场景 ##   向CDN查询预热。<br/>  ## 接口功能 ##   查询CDN预热。<br/>  ## 接口约束 ##   无。<br/> 
+        查询预热结果。 
 
         :param ShowPreheatingAssetRequest request
         :return: ShowPreheatingAssetResponse
@@ -2547,7 +2545,7 @@ class VodAsyncClient(Client):
     def show_preheating_asset_with_http_info(self, request):
         """查询CDN预热
 
-        ## 典型场景 ##   向CDN查询预热。<br/>  ## 接口功能 ##   查询CDN预热。<br/>  ## 接口约束 ##   无。<br/> 
+        查询预热结果。 
 
         :param ShowPreheatingAssetRequest request
         :return: ShowPreheatingAssetResponse
@@ -2598,9 +2596,9 @@ class VodAsyncClient(Client):
 
 
     def show_asset_cipher_async(self, request):
-        """查询密钥
+        """密钥查询接口
 
-        ## 典型场景 ##   终端在尝试播放加密HLS时会先向租户Server请求密钥，租户Server则对终端身份进行认证，认证通过后再向VOD查询密钥<br/>  ## 接口功能 ##   查询密钥<br/>  ## 接口约束 ##   暂无<br/> 
+        终端播放HLS加密视频时，向租户管理系统请求密钥，租户管理系统先查询其本地有没有已缓存的密钥，没有时则调用此接口向VOD查询。该接口的具体使用场景请参见[通过HLS加密防止视频泄露](https://support.huaweicloud.com/bestpractice-vod/vod_10_0004.html)。
 
         :param ShowAssetCipherRequest request
         :return: ShowAssetCipherResponse
@@ -2608,9 +2606,9 @@ class VodAsyncClient(Client):
         return self.show_asset_cipher_with_http_info(request)
 
     def show_asset_cipher_with_http_info(self, request):
-        """查询密钥
+        """密钥查询接口
 
-        ## 典型场景 ##   终端在尝试播放加密HLS时会先向租户Server请求密钥，租户Server则对终端身份进行认证，认证通过后再向VOD查询密钥<br/>  ## 接口功能 ##   查询密钥<br/>  ## 接口约束 ##   暂无<br/> 
+        终端播放HLS加密视频时，向租户管理系统请求密钥，租户管理系统先查询其本地有没有已缓存的密钥，没有时则调用此接口向VOD查询。该接口的具体使用场景请参见[通过HLS加密防止视频泄露](https://support.huaweicloud.com/bestpractice-vod/vod_10_0004.html)。
 
         :param ShowAssetCipherRequest request
         :return: ShowAssetCipherResponse
@@ -2661,9 +2659,9 @@ class VodAsyncClient(Client):
 
 
     def create_take_over_task_async(self, request):
-        """创建托管任务
+        """创建媒资：OBS托管方式
 
-        ## 典型场景 ##   创建托管任务<br/>  ## 接口功能 ##   <br/>  ## 接口约束 ##<br/> 
+        通过存量托管的方式，将已存储在OBS桶中的音视频文件同步到点播服务。  OBS托管方式分为增量托管和存量托管，增量托管暂只支持通过视频点播控制台配置，配置后，若OBS有新增音视频文件，则会自动同步到点播服务中，具体请参见[增量托管](https://support.huaweicloud.com/usermanual-vod/vod010032.html)。两个托管方式都需要先将对应的OBS桶授权给点播服务，具体请参见[桶授权](https://support.huaweicloud.com/usermanual-vod/vod010031.html)。 
 
         :param CreateTakeOverTaskRequest request
         :return: CreateTakeOverTaskResponse
@@ -2671,9 +2669,9 @@ class VodAsyncClient(Client):
         return self.create_take_over_task_with_http_info(request)
 
     def create_take_over_task_with_http_info(self, request):
-        """创建托管任务
+        """创建媒资：OBS托管方式
 
-        ## 典型场景 ##   创建托管任务<br/>  ## 接口功能 ##   <br/>  ## 接口约束 ##<br/> 
+        通过存量托管的方式，将已存储在OBS桶中的音视频文件同步到点播服务。  OBS托管方式分为增量托管和存量托管，增量托管暂只支持通过视频点播控制台配置，配置后，若OBS有新增音视频文件，则会自动同步到点播服务中，具体请参见[增量托管](https://support.huaweicloud.com/usermanual-vod/vod010032.html)。两个托管方式都需要先将对应的OBS桶授权给点播服务，具体请参见[桶授权](https://support.huaweicloud.com/usermanual-vod/vod010031.html)。 
 
         :param CreateTakeOverTaskRequest request
         :return: CreateTakeOverTaskResponse

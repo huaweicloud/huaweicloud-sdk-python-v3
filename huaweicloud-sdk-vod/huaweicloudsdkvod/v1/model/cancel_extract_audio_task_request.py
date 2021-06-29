@@ -44,7 +44,7 @@ class CancelExtractAudioTaskRequest:
     def asset_id(self):
         """Gets the asset_id of this CancelExtractAudioTaskRequest.
 
-        媒姿ID 
+        媒资ID。
 
         :return: The asset_id of this CancelExtractAudioTaskRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class CancelExtractAudioTaskRequest:
     def asset_id(self, asset_id):
         """Sets the asset_id of this CancelExtractAudioTaskRequest.
 
-        媒姿ID 
+        媒资ID。
 
         :param asset_id: The asset_id of this CancelExtractAudioTaskRequest.
         :type: str

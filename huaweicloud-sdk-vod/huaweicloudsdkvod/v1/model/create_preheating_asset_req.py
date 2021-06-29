@@ -50,7 +50,7 @@ class CreatePreheatingAssetReq:
     def asset_id(self):
         """Gets the asset_id of this CreatePreheatingAssetReq.
 
-        根据媒资ID预热时，必选。 
+        已发布媒资的ID。
 
         :return: The asset_id of this CreatePreheatingAssetReq.
         :rtype: str
@@ -61,7 +61,7 @@ class CreatePreheatingAssetReq:
     def asset_id(self, asset_id):
         """Sets the asset_id of this CreatePreheatingAssetReq.
 
-        根据媒资ID预热时，必选。 
+        已发布媒资的ID。
 
         :param asset_id: The asset_id of this CreatePreheatingAssetReq.
         :type: str
@@ -72,7 +72,7 @@ class CreatePreheatingAssetReq:
     def urls(self):
         """Gets the urls of this CreatePreheatingAssetReq.
 
-        根据url预热时，必选。<br/> 
+        已发布媒资的播放URL列表，一次最多只能预热10个URL。
 
         :return: The urls of this CreatePreheatingAssetReq.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class CreatePreheatingAssetReq:
     def urls(self, urls):
         """Sets the urls of this CreatePreheatingAssetReq.
 
-        根据url预热时，必选。<br/> 
+        已发布媒资的播放URL列表，一次最多只能预热10个URL。
 
         :param urls: The urls of this CreatePreheatingAssetReq.
         :type: list[str]

@@ -27,10 +27,7 @@ class UpdateAssetMetaReq:
         'title': 'str',
         'description': 'str',
         'category_id': 'int',
-        'tags': 'str',
-        'folder_name': 'str',
-        'custom_metadata': 'dict(str, object)',
-        'privilege': 'str'
+        'tags': 'str'
     }
 
     attribute_map = {
@@ -38,13 +35,10 @@ class UpdateAssetMetaReq:
         'title': 'title',
         'description': 'description',
         'category_id': 'category_id',
-        'tags': 'tags',
-        'folder_name': 'folder_name',
-        'custom_metadata': 'custom_metadata',
-        'privilege': 'privilege'
+        'tags': 'tags'
     }
 
-    def __init__(self, asset_id=None, title=None, description=None, category_id=None, tags=None, folder_name=None, custom_metadata=None, privilege=None):
+    def __init__(self, asset_id=None, title=None, description=None, category_id=None, tags=None):
         """UpdateAssetMetaReq - a model defined in huaweicloud sdk"""
         
         
@@ -54,9 +48,6 @@ class UpdateAssetMetaReq:
         self._description = None
         self._category_id = None
         self._tags = None
-        self._folder_name = None
-        self._custom_metadata = None
-        self._privilege = None
         self.discriminator = None
 
         self.asset_id = asset_id
@@ -68,18 +59,12 @@ class UpdateAssetMetaReq:
             self.category_id = category_id
         if tags is not None:
             self.tags = tags
-        if folder_name is not None:
-            self.folder_name = folder_name
-        if custom_metadata is not None:
-            self.custom_metadata = custom_metadata
-        if privilege is not None:
-            self.privilege = privilege
 
     @property
     def asset_id(self):
         """Gets the asset_id of this UpdateAssetMetaReq.
 
-        媒体ID<br/> 
+        媒资ID。
 
         :return: The asset_id of this UpdateAssetMetaReq.
         :rtype: str
@@ -90,7 +75,7 @@ class UpdateAssetMetaReq:
     def asset_id(self, asset_id):
         """Sets the asset_id of this UpdateAssetMetaReq.
 
-        媒体ID<br/> 
+        媒资ID。
 
         :param asset_id: The asset_id of this UpdateAssetMetaReq.
         :type: str
@@ -101,7 +86,7 @@ class UpdateAssetMetaReq:
     def title(self):
         """Gets the title of this UpdateAssetMetaReq.
 
-        媒体标题<br/> 
+        媒资标题，长度不超过128个字节，UTF-8编码。
 
         :return: The title of this UpdateAssetMetaReq.
         :rtype: str
@@ -112,7 +97,7 @@ class UpdateAssetMetaReq:
     def title(self, title):
         """Sets the title of this UpdateAssetMetaReq.
 
-        媒体标题<br/> 
+        媒资标题，长度不超过128个字节，UTF-8编码。
 
         :param title: The title of this UpdateAssetMetaReq.
         :type: str
@@ -123,7 +108,7 @@ class UpdateAssetMetaReq:
     def description(self):
         """Gets the description of this UpdateAssetMetaReq.
 
-        视频描述<br/> 
+        媒资描述，长度不超过1024个字节。
 
         :return: The description of this UpdateAssetMetaReq.
         :rtype: str
@@ -134,7 +119,7 @@ class UpdateAssetMetaReq:
     def description(self, description):
         """Sets the description of this UpdateAssetMetaReq.
 
-        视频描述<br/> 
+        媒资描述，长度不超过1024个字节。
 
         :param description: The description of this UpdateAssetMetaReq.
         :type: str
@@ -145,7 +130,7 @@ class UpdateAssetMetaReq:
     def category_id(self):
         """Gets the category_id of this UpdateAssetMetaReq.
 
-        媒资分类id<br/> 
+        媒资分类id。
 
         :return: The category_id of this UpdateAssetMetaReq.
         :rtype: int
@@ -156,7 +141,7 @@ class UpdateAssetMetaReq:
     def category_id(self, category_id):
         """Sets the category_id of this UpdateAssetMetaReq.
 
-        媒资分类id<br/> 
+        媒资分类id。
 
         :param category_id: The category_id of this UpdateAssetMetaReq.
         :type: int
@@ -167,7 +152,7 @@ class UpdateAssetMetaReq:
     def tags(self):
         """Gets the tags of this UpdateAssetMetaReq.
 
-        视频标签<br/> 
+        媒资标签。 单个标签不超过16个字节，最多不超过16个标签。 多个用逗号分隔，UTF-8编码。
 
         :return: The tags of this UpdateAssetMetaReq.
         :rtype: str
@@ -178,78 +163,12 @@ class UpdateAssetMetaReq:
     def tags(self, tags):
         """Sets the tags of this UpdateAssetMetaReq.
 
-        视频标签<br/> 
+        媒资标签。 单个标签不超过16个字节，最多不超过16个标签。 多个用逗号分隔，UTF-8编码。
 
         :param tags: The tags of this UpdateAssetMetaReq.
         :type: str
         """
         self._tags = tags
-
-    @property
-    def folder_name(self):
-        """Gets the folder_name of this UpdateAssetMetaReq.
-
-        媒资所在文件夹id
-
-        :return: The folder_name of this UpdateAssetMetaReq.
-        :rtype: str
-        """
-        return self._folder_name
-
-    @folder_name.setter
-    def folder_name(self, folder_name):
-        """Sets the folder_name of this UpdateAssetMetaReq.
-
-        媒资所在文件夹id
-
-        :param folder_name: The folder_name of this UpdateAssetMetaReq.
-        :type: str
-        """
-        self._folder_name = folder_name
-
-    @property
-    def custom_metadata(self):
-        """Gets the custom_metadata of this UpdateAssetMetaReq.
-
-        自定义元数据<br/> 
-
-        :return: The custom_metadata of this UpdateAssetMetaReq.
-        :rtype: dict(str, object)
-        """
-        return self._custom_metadata
-
-    @custom_metadata.setter
-    def custom_metadata(self, custom_metadata):
-        """Sets the custom_metadata of this UpdateAssetMetaReq.
-
-        自定义元数据<br/> 
-
-        :param custom_metadata: The custom_metadata of this UpdateAssetMetaReq.
-        :type: dict(str, object)
-        """
-        self._custom_metadata = custom_metadata
-
-    @property
-    def privilege(self):
-        """Gets the privilege of this UpdateAssetMetaReq.
-
-        权限<br/> 
-
-        :return: The privilege of this UpdateAssetMetaReq.
-        :rtype: str
-        """
-        return self._privilege
-
-    @privilege.setter
-    def privilege(self, privilege):
-        """Sets the privilege of this UpdateAssetMetaReq.
-
-        权限<br/> 
-
-        :param privilege: The privilege of this UpdateAssetMetaReq.
-        :type: str
-        """
-        self._privilege = privilege
 
     def to_dict(self):
         """Returns the model properties as a dict"""

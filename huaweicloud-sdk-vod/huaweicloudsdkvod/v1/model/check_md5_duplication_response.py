@@ -50,7 +50,7 @@ class CheckMd5DuplicationResponse(SdkResponse):
     def is_duplicated(self):
         """Gets the is_duplicated of this CheckMd5DuplicationResponse.
 
-        是否重复
+        是否重复。 取值如下： - 0：表示不重复。 - 1：表示重复。
 
         :return: The is_duplicated of this CheckMd5DuplicationResponse.
         :rtype: int
@@ -61,7 +61,7 @@ class CheckMd5DuplicationResponse(SdkResponse):
     def is_duplicated(self, is_duplicated):
         """Sets the is_duplicated of this CheckMd5DuplicationResponse.
 
-        是否重复
+        是否重复。 取值如下： - 0：表示不重复。 - 1：表示重复。
 
         :param is_duplicated: The is_duplicated of this CheckMd5DuplicationResponse.
         :type: int

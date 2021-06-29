@@ -62,7 +62,7 @@ class Subtitle:
     def id(self):
         """Gets the id of this Subtitle.
 
-        字幕文件id<br/> 
+        字幕id。 取值范围：[1,8]。
 
         :return: The id of this Subtitle.
         :rtype: int
@@ -73,7 +73,7 @@ class Subtitle:
     def id(self, id):
         """Sets the id of this Subtitle.
 
-        字幕文件id<br/> 
+        字幕id。 取值范围：[1,8]。
 
         :param id: The id of this Subtitle.
         :type: int
@@ -84,7 +84,7 @@ class Subtitle:
     def type(self):
         """Gets the type of this Subtitle.
 
-        字幕文件类型<br/> 
+        字幕文件类型，目前暂只支持“SRT”。
 
         :return: The type of this Subtitle.
         :rtype: str
@@ -95,7 +95,7 @@ class Subtitle:
     def type(self, type):
         """Sets the type of this Subtitle.
 
-        字幕文件类型<br/> 
+        字幕文件类型，目前暂只支持“SRT”。
 
         :param type: The type of this Subtitle.
         :type: str
@@ -106,7 +106,7 @@ class Subtitle:
     def language(self):
         """Gets the language of this Subtitle.
 
-        字幕文件语音种类<br/> 
+        字幕语音类型。 取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
 
         :return: The language of this Subtitle.
         :rtype: str
@@ -117,7 +117,7 @@ class Subtitle:
     def language(self, language):
         """Sets the language of this Subtitle.
 
-        字幕文件语音种类<br/> 
+        字幕语音类型。 取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
 
         :param language: The language of this Subtitle.
         :type: str
@@ -128,7 +128,7 @@ class Subtitle:
     def md5(self):
         """Gets the md5 of this Subtitle.
 
-        字幕文件md5值<br/> 
+        字幕文件的MD5值。
 
         :return: The md5 of this Subtitle.
         :rtype: str
@@ -139,7 +139,7 @@ class Subtitle:
     def md5(self, md5):
         """Sets the md5 of this Subtitle.
 
-        字幕文件md5值<br/> 
+        字幕文件的MD5值。
 
         :param md5: The md5 of this Subtitle.
         :type: str
@@ -150,7 +150,7 @@ class Subtitle:
     def description(self):
         """Gets the description of this Subtitle.
 
-        字幕文件描述<br/> 
+        字幕描述。
 
         :return: The description of this Subtitle.
         :rtype: str
@@ -161,7 +161,7 @@ class Subtitle:
     def description(self, description):
         """Sets the description of this Subtitle.
 
-        字幕文件描述<br/> 
+        字幕描述。
 
         :param description: The description of this Subtitle.
         :type: str

@@ -16,10 +16,13 @@ class MpcRegion:
 
     CN_EAST_2 = Region(id="cn-east-2", endpoint="https://mpc.cn-east-2.myhuaweicloud.com")
 
+    CN_EAST_3 = Region(id="cn-east-3", endpoint="https://mpc.cn-east-3.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "cn-north-1": CN_NORTH_1,
         "cn-east-2": CN_EAST_2,
+        "cn-east-3": CN_EAST_3,
     }
 
     @staticmethod

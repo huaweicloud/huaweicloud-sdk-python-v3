@@ -23,7 +23,7 @@ class UpdateBucketAuthorizedRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'BucketAuthorizedReq'
+        'body': 'UpdateBucketAuthorizedReq'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class UpdateBucketAuthorizedRequest:
 
 
         :return: The body of this UpdateBucketAuthorizedRequest.
-        :rtype: BucketAuthorizedReq
+        :rtype: UpdateBucketAuthorizedReq
         """
         return self._body
 
@@ -57,7 +57,7 @@ class UpdateBucketAuthorizedRequest:
 
 
         :param body: The body of this UpdateBucketAuthorizedRequest.
-        :type: BucketAuthorizedReq
+        :type: UpdateBucketAuthorizedReq
         """
         self._body = body
 

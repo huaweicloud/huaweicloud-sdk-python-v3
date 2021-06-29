@@ -105,7 +105,8 @@ class PostPaidServer:
             self.auto_terminate_time = auto_terminate_time
         if admin_pass is not None:
             self.admin_pass = admin_pass
-        self.availability_zone = availability_zone
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
         if count is not None:
             self.count = count
         if data_volumes is not None:
@@ -187,7 +188,7 @@ class PostPaidServer:
     def availability_zone(self):
         """Gets the availability_zone of this PostPaidServer.
 
-        待创建云服务器所在的可用分区，需要指定可用分区（AZ）的名称。  请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
+        待创建云服务器所在的可用分区，需要指定可用分区（AZ）的名称。  可通过接口 [查询可用区列表接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=ECS&api=NovaListAvailabilityZones) 获取，也可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
 
         :return: The availability_zone of this PostPaidServer.
         :rtype: str
@@ -198,7 +199,7 @@ class PostPaidServer:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this PostPaidServer.
 
-        待创建云服务器所在的可用分区，需要指定可用分区（AZ）的名称。  请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
+        待创建云服务器所在的可用分区，需要指定可用分区（AZ）的名称。  可通过接口 [查询可用区列表接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=ECS&api=NovaListAvailabilityZones) 获取，也可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
 
         :param availability_zone: The availability_zone of this PostPaidServer.
         :type: str
@@ -273,7 +274,7 @@ class PostPaidServer:
     def flavor_ref(self):
         """Gets the flavor_ref of this PostPaidServer.
 
-        待创建云服务器的系统规格的ID。  已上线的规格请参见《[弹性云服务器产品介绍](https://support.huaweicloud.com/ecs/index.html)》的“实例类型与规格”章节。
+        待创建云服务器的系统规格的ID。  可通过 [规格列表接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=ECS&api=ListFlavors) 查询，该接口支持通过 availability_zone 参数过滤出待创建云服务器可用区下可用的规格。  已上线的各规格详情介绍请参见《[弹性云服务器产品介绍](https://support.huaweicloud.com/ecs/index.html)》的“实例类型与规格”章节。
 
         :return: The flavor_ref of this PostPaidServer.
         :rtype: str
@@ -284,7 +285,7 @@ class PostPaidServer:
     def flavor_ref(self, flavor_ref):
         """Sets the flavor_ref of this PostPaidServer.
 
-        待创建云服务器的系统规格的ID。  已上线的规格请参见《[弹性云服务器产品介绍](https://support.huaweicloud.com/ecs/index.html)》的“实例类型与规格”章节。
+        待创建云服务器的系统规格的ID。  可通过 [规格列表接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=ECS&api=ListFlavors) 查询，该接口支持通过 availability_zone 参数过滤出待创建云服务器可用区下可用的规格。  已上线的各规格详情介绍请参见《[弹性云服务器产品介绍](https://support.huaweicloud.com/ecs/index.html)》的“实例类型与规格”章节。
 
         :param flavor_ref: The flavor_ref of this PostPaidServer.
         :type: str
@@ -295,7 +296,7 @@ class PostPaidServer:
     def image_ref(self):
         """Gets the image_ref of this PostPaidServer.
 
-        待创建云服务器的系统镜像，需要指定已创建镜像的ID，ID格式为通用唯一识别码（Universally Unique Identifier，简称UUID）。
+        待创建云服务器的系统镜像，需要指定已创建镜像的ID，ID格式为通用唯一识别码（Universally Unique Identifier，简称UUID）。  镜像的ID可以从镜像服务的 [查询镜像列表](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IMS&api=ListImages) 接口获取，该接口可根据 __imagetype、__os_type 等参数过滤选择合适镜像。
 
         :return: The image_ref of this PostPaidServer.
         :rtype: str
@@ -306,7 +307,7 @@ class PostPaidServer:
     def image_ref(self, image_ref):
         """Sets the image_ref of this PostPaidServer.
 
-        待创建云服务器的系统镜像，需要指定已创建镜像的ID，ID格式为通用唯一识别码（Universally Unique Identifier，简称UUID）。
+        待创建云服务器的系统镜像，需要指定已创建镜像的ID，ID格式为通用唯一识别码（Universally Unique Identifier，简称UUID）。  镜像的ID可以从镜像服务的 [查询镜像列表](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IMS&api=ListImages) 接口获取，该接口可根据 __imagetype、__os_type 等参数过滤选择合适镜像。
 
         :param image_ref: The image_ref of this PostPaidServer.
         :type: str
@@ -575,7 +576,7 @@ class PostPaidServer:
     def vpcid(self):
         """Gets the vpcid of this PostPaidServer.
 
-        待创建云服务器所属虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式。
+        待创建云服务器所属虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式。  可通过 [查询VPC列表](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VPC&api=ListVpcs) 接口查询。
 
         :return: The vpcid of this PostPaidServer.
         :rtype: str
@@ -586,7 +587,7 @@ class PostPaidServer:
     def vpcid(self, vpcid):
         """Sets the vpcid of this PostPaidServer.
 
-        待创建云服务器所属虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式。
+        待创建云服务器所属虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式。  可通过 [查询VPC列表](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VPC&api=ListVpcs) 接口查询。
 
         :param vpcid: The vpcid of this PostPaidServer.
         :type: str

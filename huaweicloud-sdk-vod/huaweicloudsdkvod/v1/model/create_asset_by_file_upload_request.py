@@ -23,7 +23,7 @@ class CreateAssetByFileUploadRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateAssetByFileReq'
+        'body': 'CreateAssetByFileUploadReq'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class CreateAssetByFileUploadRequest:
 
 
         :return: The body of this CreateAssetByFileUploadRequest.
-        :rtype: CreateAssetByFileReq
+        :rtype: CreateAssetByFileUploadReq
         """
         return self._body
 
@@ -57,7 +57,7 @@ class CreateAssetByFileUploadRequest:
 
 
         :param body: The body of this CreateAssetByFileUploadRequest.
-        :type: CreateAssetByFileReq
+        :type: CreateAssetByFileUploadReq
         """
         self._body = body
 

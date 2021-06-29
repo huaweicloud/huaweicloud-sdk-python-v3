@@ -45,7 +45,7 @@ class CoverInfo:
     def cover_url(self):
         """Gets the cover_url of this CoverInfo.
 
-        封面文件的下载地址<br/> 
+        封面文件的下载地址。
 
         :return: The cover_url of this CoverInfo.
         :rtype: str
@@ -56,7 +56,7 @@ class CoverInfo:
     def cover_url(self, cover_url):
         """Sets the cover_url of this CoverInfo.
 
-        封面文件的下载地址<br/> 
+        封面文件的下载地址。
 
         :param cover_url: The cover_url of this CoverInfo.
         :type: str

@@ -31,7 +31,7 @@ class InstanceConfigResult:
         'instance_name': 'str',
         'instance_id': 'str',
         'admin_pass': 'str',
-        'personality': 'PersonalityResult',
+        'personality': 'list[PersonalityResult]',
         'public_ip': 'PublicipResult',
         'user_data': 'str',
         'metadata': 'VmMetaData',
@@ -306,9 +306,10 @@ class InstanceConfigResult:
     def personality(self):
         """Gets the personality of this InstanceConfigResult.
 
+        个人信息
 
         :return: The personality of this InstanceConfigResult.
-        :rtype: PersonalityResult
+        :rtype: list[PersonalityResult]
         """
         return self._personality
 
@@ -316,9 +317,10 @@ class InstanceConfigResult:
     def personality(self, personality):
         """Sets the personality of this InstanceConfigResult.
 
+        个人信息
 
         :param personality: The personality of this InstanceConfigResult.
-        :type: PersonalityResult
+        :type: list[PersonalityResult]
         """
         self._personality = personality
 

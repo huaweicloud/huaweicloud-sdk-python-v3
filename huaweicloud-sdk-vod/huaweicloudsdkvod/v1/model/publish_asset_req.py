@@ -44,6 +44,7 @@ class PublishAssetReq:
     def asset_id(self):
         """Gets the asset_id of this PublishAssetReq.
 
+        媒资ID。
 
         :return: The asset_id of this PublishAssetReq.
         :rtype: list[str]
@@ -54,6 +55,7 @@ class PublishAssetReq:
     def asset_id(self, asset_id):
         """Sets the asset_id of this PublishAssetReq.
 
+        媒资ID。
 
         :param asset_id: The asset_id of this PublishAssetReq.
         :type: list[str]

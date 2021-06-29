@@ -48,7 +48,7 @@ class UpdateCategoryReq:
     def name(self):
         """Gets the name of this UpdateCategoryReq.
 
-        视频分类名称 
+        媒资分类名称。
 
         :return: The name of this UpdateCategoryReq.
         :rtype: str
@@ -59,7 +59,7 @@ class UpdateCategoryReq:
     def name(self, name):
         """Sets the name of this UpdateCategoryReq.
 
-        视频分类名称 
+        媒资分类名称。
 
         :param name: The name of this UpdateCategoryReq.
         :type: str
@@ -70,7 +70,7 @@ class UpdateCategoryReq:
     def id(self):
         """Gets the id of this UpdateCategoryReq.
 
-        视频分类ID 
+        媒资分类ID。
 
         :return: The id of this UpdateCategoryReq.
         :rtype: int
@@ -81,7 +81,7 @@ class UpdateCategoryReq:
     def id(self, id):
         """Sets the id of this UpdateCategoryReq.
 
-        视频分类ID 
+        媒资分类ID。
 
         :param id: The id of this UpdateCategoryReq.
         :type: int

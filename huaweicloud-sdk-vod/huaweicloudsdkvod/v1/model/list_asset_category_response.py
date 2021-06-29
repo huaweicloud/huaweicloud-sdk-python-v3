@@ -45,7 +45,7 @@ class ListAssetCategoryResponse(SdkResponse):
     def body(self):
         """Gets the body of this ListAssetCategoryResponse.
 
-        分类返回值<br/> 
+        分类返回值<br/>
 
         :return: The body of this ListAssetCategoryResponse.
         :rtype: list[QueryCategoryRsp]
@@ -56,7 +56,7 @@ class ListAssetCategoryResponse(SdkResponse):
     def body(self, body):
         """Sets the body of this ListAssetCategoryResponse.
 
-        分类返回值<br/> 
+        分类返回值<br/>
 
         :param body: The body of this ListAssetCategoryResponse.
         :type: list[QueryCategoryRsp]

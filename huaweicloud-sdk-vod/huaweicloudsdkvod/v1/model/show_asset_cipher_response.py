@@ -55,7 +55,7 @@ class ShowAssetCipherResponse(SdkResponse):
     def asset_id(self):
         """Gets the asset_id of this ShowAssetCipherResponse.
 
-        媒资id<br/> 
+        媒资ID。
 
         :return: The asset_id of this ShowAssetCipherResponse.
         :rtype: str
@@ -66,7 +66,7 @@ class ShowAssetCipherResponse(SdkResponse):
     def asset_id(self, asset_id):
         """Sets the asset_id of this ShowAssetCipherResponse.
 
-        媒资id<br/> 
+        媒资ID。
 
         :param asset_id: The asset_id of this ShowAssetCipherResponse.
         :type: str
@@ -77,7 +77,7 @@ class ShowAssetCipherResponse(SdkResponse):
     def edk(self):
         """Gets the edk of this ShowAssetCipherResponse.
 
-        密钥密文。未加密、正在加密或加密失败的媒资不会包含此字段。<br/> 
+        密钥密文。
 
         :return: The edk of this ShowAssetCipherResponse.
         :rtype: str
@@ -88,7 +88,7 @@ class ShowAssetCipherResponse(SdkResponse):
     def edk(self, edk):
         """Sets the edk of this ShowAssetCipherResponse.
 
-        密钥密文。未加密、正在加密或加密失败的媒资不会包含此字段。<br/> 
+        密钥密文。
 
         :param edk: The edk of this ShowAssetCipherResponse.
         :type: str
@@ -99,7 +99,7 @@ class ShowAssetCipherResponse(SdkResponse):
     def dk(self):
         """Gets the dk of this ShowAssetCipherResponse.
 
-        密钥明文。未加密、正在加密或加密失败的媒资不会包含此字段。<br/> 
+        密钥明文。
 
         :return: The dk of this ShowAssetCipherResponse.
         :rtype: str
@@ -110,7 +110,7 @@ class ShowAssetCipherResponse(SdkResponse):
     def dk(self, dk):
         """Sets the dk of this ShowAssetCipherResponse.
 
-        密钥明文。未加密、正在加密或加密失败的媒资不会包含此字段。<br/> 
+        密钥明文。
 
         :param dk: The dk of this ShowAssetCipherResponse.
         :type: str

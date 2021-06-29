@@ -60,7 +60,7 @@ class PlayInfo:
     def play_type(self):
         """Gets the play_type of this PlayInfo.
 
-        播放协议类型<br/> 
+        播放协议类型。 取值如下： - hls - dash - mp4
 
         :return: The play_type of this PlayInfo.
         :rtype: str
@@ -71,7 +71,7 @@ class PlayInfo:
     def play_type(self, play_type):
         """Sets the play_type of this PlayInfo.
 
-        播放协议类型<br/> 
+        播放协议类型。 取值如下： - hls - dash - mp4
 
         :param play_type: The play_type of this PlayInfo.
         :type: str
@@ -82,7 +82,7 @@ class PlayInfo:
     def url(self):
         """Gets the url of this PlayInfo.
 
-        播放url<br/> 
+        播放URL。
 
         :return: The url of this PlayInfo.
         :rtype: str
@@ -93,7 +93,7 @@ class PlayInfo:
     def url(self, url):
         """Sets the url of this PlayInfo.
 
-        播放url<br/> 
+        播放URL。
 
         :param url: The url of this PlayInfo.
         :type: str
@@ -104,7 +104,7 @@ class PlayInfo:
     def encrypted(self):
         """Gets the encrypted of this PlayInfo.
 
-        标记流是否已被加密，取值[0,1] 0表示未加密，1表示已被加密。<br/> 
+        标记流是否已被加密。 取值如下： - 0：表示未加密。 - 1：表示已被加密。 默认值：0。
 
         :return: The encrypted of this PlayInfo.
         :rtype: int
@@ -115,7 +115,7 @@ class PlayInfo:
     def encrypted(self, encrypted):
         """Sets the encrypted of this PlayInfo.
 
-        标记流是否已被加密，取值[0,1] 0表示未加密，1表示已被加密。<br/> 
+        标记流是否已被加密。 取值如下： - 0：表示未加密。 - 1：表示已被加密。 默认值：0。
 
         :param encrypted: The encrypted of this PlayInfo.
         :type: int

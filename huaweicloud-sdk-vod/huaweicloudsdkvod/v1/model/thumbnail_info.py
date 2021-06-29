@@ -60,6 +60,7 @@ class ThumbnailInfo:
     def sample(self):
         """Gets the sample of this ThumbnailInfo.
 
+        视频截图信息。
 
         :return: The sample of this ThumbnailInfo.
         :rtype: list[ThumbnailRsp]
@@ -70,6 +71,7 @@ class ThumbnailInfo:
     def sample(self, sample):
         """Sets the sample of this ThumbnailInfo.
 
+        视频截图信息。
 
         :param sample: The sample of this ThumbnailInfo.
         :type: list[ThumbnailRsp]
@@ -100,6 +102,7 @@ class ThumbnailInfo:
     def exec_desc(self):
         """Gets the exec_desc of this ThumbnailInfo.
 
+        执行情况描述。
 
         :return: The exec_desc of this ThumbnailInfo.
         :rtype: str
@@ -110,6 +113,7 @@ class ThumbnailInfo:
     def exec_desc(self, exec_desc):
         """Sets the exec_desc of this ThumbnailInfo.
 
+        执行情况描述。
 
         :param exec_desc: The exec_desc of this ThumbnailInfo.
         :type: str
@@ -120,6 +124,7 @@ class ThumbnailInfo:
     def thumbnail_status(self):
         """Gets the thumbnail_status of this ThumbnailInfo.
 
+        截图状态。 取值如下： - UN_THUMBNAIL：未截图 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败
 
         :return: The thumbnail_status of this ThumbnailInfo.
         :rtype: str
@@ -130,6 +135,7 @@ class ThumbnailInfo:
     def thumbnail_status(self, thumbnail_status):
         """Sets the thumbnail_status of this ThumbnailInfo.
 
+        截图状态。 取值如下： - UN_THUMBNAIL：未截图 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败
 
         :param thumbnail_status: The thumbnail_status of this ThumbnailInfo.
         :type: str

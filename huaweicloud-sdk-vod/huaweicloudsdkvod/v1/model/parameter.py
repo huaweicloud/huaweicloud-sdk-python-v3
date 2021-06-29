@@ -45,7 +45,7 @@ class Parameter:
     def format(self):
         """Gets the format of this Parameter.
 
-        封装格式，可选值：“MP3”。<br/> 
+        封装格式。  取值如下： - MP3 - AAC
 
         :return: The format of this Parameter.
         :rtype: str
@@ -56,7 +56,7 @@ class Parameter:
     def format(self, format):
         """Sets the format of this Parameter.
 
-        封装格式，可选值：“MP3”。<br/> 
+        封装格式。  取值如下： - MP3 - AAC
 
         :param format: The format of this Parameter.
         :type: str

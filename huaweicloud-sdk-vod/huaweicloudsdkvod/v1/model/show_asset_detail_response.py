@@ -65,7 +65,7 @@ class ShowAssetDetailResponse(SdkResponse):
     def asset_id(self):
         """Gets the asset_id of this ShowAssetDetailResponse.
 
-        媒资ID
+        媒资ID。
 
         :return: The asset_id of this ShowAssetDetailResponse.
         :rtype: str
@@ -76,7 +76,7 @@ class ShowAssetDetailResponse(SdkResponse):
     def asset_id(self, asset_id):
         """Sets the asset_id of this ShowAssetDetailResponse.
 
-        媒资ID
+        媒资ID。
 
         :param asset_id: The asset_id of this ShowAssetDetailResponse.
         :type: str

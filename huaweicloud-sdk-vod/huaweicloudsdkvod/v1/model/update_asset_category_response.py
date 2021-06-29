@@ -65,7 +65,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
     def name(self):
         """Gets the name of this UpdateAssetCategoryResponse.
 
-        视频分类名称<br/> 
+        媒资分类名称。
 
         :return: The name of this UpdateAssetCategoryResponse.
         :rtype: str
@@ -76,7 +76,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this UpdateAssetCategoryResponse.
 
-        视频分类名称<br/> 
+        媒资分类名称。
 
         :param name: The name of this UpdateAssetCategoryResponse.
         :type: str
@@ -87,7 +87,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
     def parent_id(self):
         """Gets the parent_id of this UpdateAssetCategoryResponse.
 
-        父分类ID<br/> 
+        父分类ID。 一级分类父ID为0。
 
         :return: The parent_id of this UpdateAssetCategoryResponse.
         :rtype: int
@@ -98,7 +98,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
     def parent_id(self, parent_id):
         """Sets the parent_id of this UpdateAssetCategoryResponse.
 
-        父分类ID<br/> 
+        父分类ID。 一级分类父ID为0。
 
         :param parent_id: The parent_id of this UpdateAssetCategoryResponse.
         :type: int
@@ -109,7 +109,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
     def id(self):
         """Gets the id of this UpdateAssetCategoryResponse.
 
-        视频分类ID<br/> 
+        媒资分类ID。
 
         :return: The id of this UpdateAssetCategoryResponse.
         :rtype: int
@@ -120,7 +120,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this UpdateAssetCategoryResponse.
 
-        视频分类ID<br/> 
+        媒资分类ID。
 
         :param id: The id of this UpdateAssetCategoryResponse.
         :type: int
@@ -131,7 +131,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
     def level(self):
         """Gets the level of this UpdateAssetCategoryResponse.
 
-        视频分类层级<br/> 
+        媒资分类层级。 取值如下： - 1：一级分类层级。 - 2：二级分类层级。 - 3：三级分类层级。
 
         :return: The level of this UpdateAssetCategoryResponse.
         :rtype: int
@@ -142,7 +142,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
     def level(self, level):
         """Sets the level of this UpdateAssetCategoryResponse.
 
-        视频分类层级<br/> 
+        媒资分类层级。 取值如下： - 1：一级分类层级。 - 2：二级分类层级。 - 3：三级分类层级。
 
         :param level: The level of this UpdateAssetCategoryResponse.
         :type: int
@@ -153,6 +153,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
     def project_id(self):
         """Gets the project_id of this UpdateAssetCategoryResponse.
 
+        项目ID。
 
         :return: The project_id of this UpdateAssetCategoryResponse.
         :rtype: str
@@ -163,6 +164,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
     def project_id(self, project_id):
         """Sets the project_id of this UpdateAssetCategoryResponse.
 
+        项目ID。
 
         :param project_id: The project_id of this UpdateAssetCategoryResponse.
         :type: str

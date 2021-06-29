@@ -45,6 +45,7 @@ class PublishAssetsResponse(SdkResponse):
     def asset_info_array(self):
         """Gets the asset_info_array of this PublishAssetsResponse.
 
+        发布的媒资信息。
 
         :return: The asset_info_array of this PublishAssetsResponse.
         :rtype: list[AssetInfo]
@@ -55,6 +56,7 @@ class PublishAssetsResponse(SdkResponse):
     def asset_info_array(self, asset_info_array):
         """Sets the asset_info_array of this PublishAssetsResponse.
 
+        发布的媒资信息。
 
         :param asset_info_array: The asset_info_array of this PublishAssetsResponse.
         :type: list[AssetInfo]

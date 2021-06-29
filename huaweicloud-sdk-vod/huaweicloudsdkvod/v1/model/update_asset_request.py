@@ -23,7 +23,7 @@ class UpdateAssetRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'UpdateAssetReq'
+        'body': 'UploadAssetReq'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class UpdateAssetRequest:
 
 
         :return: The body of this UpdateAssetRequest.
-        :rtype: UpdateAssetReq
+        :rtype: UploadAssetReq
         """
         return self._body
 
@@ -57,7 +57,7 @@ class UpdateAssetRequest:
 
 
         :param body: The body of this UpdateAssetRequest.
-        :type: UpdateAssetReq
+        :type: UploadAssetReq
         """
         self._body = body
 

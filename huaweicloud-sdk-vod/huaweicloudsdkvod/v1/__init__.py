@@ -13,7 +13,6 @@ from huaweicloudsdkvod.v1.model.asset_review_req import AssetReviewReq
 from huaweicloudsdkvod.v1.model.asset_summary import AssetSummary
 from huaweicloudsdkvod.v1.model.audio_template_info import AudioTemplateInfo
 from huaweicloudsdkvod.v1.model.base_info import BaseInfo
-from huaweicloudsdkvod.v1.model.bucket_authorized_req import BucketAuthorizedReq
 from huaweicloudsdkvod.v1.model.cancel_asset_transcode_task_request import CancelAssetTranscodeTaskRequest
 from huaweicloudsdkvod.v1.model.cancel_asset_transcode_task_response import CancelAssetTranscodeTaskResponse
 from huaweicloudsdkvod.v1.model.cancel_extract_audio_task_request import CancelExtractAudioTaskRequest
@@ -28,7 +27,7 @@ from huaweicloudsdkvod.v1.model.confirm_image_upload_req import ConfirmImageUplo
 from huaweicloudsdkvod.v1.model.confirm_image_upload_request import ConfirmImageUploadRequest
 from huaweicloudsdkvod.v1.model.confirm_image_upload_response import ConfirmImageUploadResponse
 from huaweicloudsdkvod.v1.model.cover_info import CoverInfo
-from huaweicloudsdkvod.v1.model.create_asset_by_file_req import CreateAssetByFileReq
+from huaweicloudsdkvod.v1.model.create_asset_by_file_upload_req import CreateAssetByFileUploadReq
 from huaweicloudsdkvod.v1.model.create_asset_by_file_upload_request import CreateAssetByFileUploadRequest
 from huaweicloudsdkvod.v1.model.create_asset_by_file_upload_response import CreateAssetByFileUploadResponse
 from huaweicloudsdkvod.v1.model.create_asset_category_request import CreateAssetCategoryRequest
@@ -110,7 +109,6 @@ from huaweicloudsdkvod.v1.model.show_take_over_task_details_request import ShowT
 from huaweicloudsdkvod.v1.model.show_take_over_task_details_response import ShowTakeOverTaskDetailsResponse
 from huaweicloudsdkvod.v1.model.show_vod_statistics_request import ShowVodStatisticsRequest
 from huaweicloudsdkvod.v1.model.show_vod_statistics_response import ShowVodStatisticsResponse
-from huaweicloudsdkvod.v1.model.status import Status
 from huaweicloudsdkvod.v1.model.subtitle import Subtitle
 from huaweicloudsdkvod.v1.model.subtitle_info import SubtitleInfo
 from huaweicloudsdkvod.v1.model.take_over_task import TakeOverTask
@@ -129,9 +127,9 @@ from huaweicloudsdkvod.v1.model.update_asset_category_response import UpdateAsse
 from huaweicloudsdkvod.v1.model.update_asset_meta_req import UpdateAssetMetaReq
 from huaweicloudsdkvod.v1.model.update_asset_meta_request import UpdateAssetMetaRequest
 from huaweicloudsdkvod.v1.model.update_asset_meta_response import UpdateAssetMetaResponse
-from huaweicloudsdkvod.v1.model.update_asset_req import UpdateAssetReq
 from huaweicloudsdkvod.v1.model.update_asset_request import UpdateAssetRequest
 from huaweicloudsdkvod.v1.model.update_asset_response import UpdateAssetResponse
+from huaweicloudsdkvod.v1.model.update_bucket_authorized_req import UpdateBucketAuthorizedReq
 from huaweicloudsdkvod.v1.model.update_bucket_authorized_request import UpdateBucketAuthorizedRequest
 from huaweicloudsdkvod.v1.model.update_bucket_authorized_response import UpdateBucketAuthorizedResponse
 from huaweicloudsdkvod.v1.model.update_category_req import UpdateCategoryReq
@@ -144,6 +142,7 @@ from huaweicloudsdkvod.v1.model.update_watermark_template_req import UpdateWater
 from huaweicloudsdkvod.v1.model.update_watermark_template_request import UpdateWatermarkTemplateRequest
 from huaweicloudsdkvod.v1.model.update_watermark_template_response import UpdateWatermarkTemplateResponse
 from huaweicloudsdkvod.v1.model.upload_asset import UploadAsset
+from huaweicloudsdkvod.v1.model.upload_asset_req import UploadAssetReq
 from huaweicloudsdkvod.v1.model.upload_meta_data_by_url import UploadMetaDataByUrl
 from huaweicloudsdkvod.v1.model.upload_meta_data_by_url_req import UploadMetaDataByUrlReq
 from huaweicloudsdkvod.v1.model.upload_meta_data_by_url_request import UploadMetaDataByUrlRequest

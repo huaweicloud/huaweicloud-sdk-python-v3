@@ -55,7 +55,7 @@ class QueryCategoryRsp:
     def id(self):
         """Gets the id of this QueryCategoryRsp.
 
-        视频分类ID<br/> 
+        分类ID。
 
         :return: The id of this QueryCategoryRsp.
         :rtype: str
@@ -66,7 +66,7 @@ class QueryCategoryRsp:
     def id(self, id):
         """Sets the id of this QueryCategoryRsp.
 
-        视频分类ID<br/> 
+        分类ID。
 
         :param id: The id of this QueryCategoryRsp.
         :type: str
@@ -77,7 +77,7 @@ class QueryCategoryRsp:
     def name(self):
         """Gets the name of this QueryCategoryRsp.
 
-        视频分类名称<br/> 
+        分类名称。
 
         :return: The name of this QueryCategoryRsp.
         :rtype: str
@@ -88,7 +88,7 @@ class QueryCategoryRsp:
     def name(self, name):
         """Sets the name of this QueryCategoryRsp.
 
-        视频分类名称<br/> 
+        分类名称。
 
         :param name: The name of this QueryCategoryRsp.
         :type: str
@@ -99,7 +99,7 @@ class QueryCategoryRsp:
     def children(self):
         """Gets the children of this QueryCategoryRsp.
 
-        子分类信息<br/> 
+        子分类列表。
 
         :return: The children of this QueryCategoryRsp.
         :rtype: list[QueryCategoryRsp]
@@ -110,7 +110,7 @@ class QueryCategoryRsp:
     def children(self, children):
         """Sets the children of this QueryCategoryRsp.
 
-        子分类信息<br/> 
+        子分类列表。
 
         :param children: The children of this QueryCategoryRsp.
         :type: list[QueryCategoryRsp]

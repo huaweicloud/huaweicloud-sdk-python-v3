@@ -31,7 +31,7 @@ class QueryTagsOption:
         'marker': 'str',
         'action': 'str',
         'offset': 'str',
-        'matchs': 'list[Matches]'
+        'matches': 'list[Matches]'
     }
 
     attribute_map = {
@@ -43,10 +43,10 @@ class QueryTagsOption:
         'marker': 'marker',
         'action': 'action',
         'offset': 'offset',
-        'matchs': 'matchs'
+        'matches': 'matches'
     }
 
-    def __init__(self, tags=None, tags_any=None, not_tags=None, not_tags_any=None, limit=None, marker=None, action=None, offset=None, matchs=None):
+    def __init__(self, tags=None, tags_any=None, not_tags=None, not_tags_any=None, limit=None, marker=None, action=None, offset=None, matches=None):
         """QueryTagsOption - a model defined in huaweicloud sdk"""
         
         
@@ -59,7 +59,7 @@ class QueryTagsOption:
         self._marker = None
         self._action = None
         self._offset = None
-        self._matchs = None
+        self._matches = None
         self.discriminator = None
 
         if tags is not None:
@@ -77,8 +77,8 @@ class QueryTagsOption:
         self.action = action
         if offset is not None:
             self.offset = offset
-        if matchs is not None:
-            self.matchs = matchs
+        if matches is not None:
+            self.matches = matches
 
     @property
     def tags(self):
@@ -257,26 +257,26 @@ class QueryTagsOption:
         self._offset = offset
 
     @property
-    def matchs(self):
-        """Gets the matchs of this QueryTagsOption.
+    def matches(self):
+        """Gets the matches of this QueryTagsOption.
 
         模糊搜索字段。
 
-        :return: The matchs of this QueryTagsOption.
+        :return: The matches of this QueryTagsOption.
         :rtype: list[Matches]
         """
-        return self._matchs
+        return self._matches
 
-    @matchs.setter
-    def matchs(self, matchs):
-        """Sets the matchs of this QueryTagsOption.
+    @matches.setter
+    def matches(self, matches):
+        """Sets the matches of this QueryTagsOption.
 
         模糊搜索字段。
 
-        :param matchs: The matchs of this QueryTagsOption.
+        :param matches: The matches of this QueryTagsOption.
         :type: list[Matches]
         """
-        self._matchs = matchs
+        self._matches = matches
 
     def to_dict(self):
         """Returns the model properties as a dict"""

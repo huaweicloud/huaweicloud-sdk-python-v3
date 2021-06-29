@@ -44,7 +44,7 @@ class ShowAssetCipherRequest:
     def asset_id(self):
         """Gets the asset_id of this ShowAssetCipherRequest.
 
-        媒资id<br/> 
+        媒资ID。
 
         :return: The asset_id of this ShowAssetCipherRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowAssetCipherRequest:
     def asset_id(self, asset_id):
         """Sets the asset_id of this ShowAssetCipherRequest.
 
-        媒资id<br/> 
+        媒资ID。
 
         :param asset_id: The asset_id of this ShowAssetCipherRequest.
         :type: str

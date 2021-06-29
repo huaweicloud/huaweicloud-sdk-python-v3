@@ -48,7 +48,7 @@ class ListTopStatisticsRequest:
     def domain(self):
         """Gets the domain of this ListTopStatisticsRequest.
 
-        加速域名，格式：www.test1.com。ALL表示查询名下全部域名。（TopN视频信息要么查询单个域名要么查询所有域名） 
+        查询域名，暂只支持查询单个或者全部域名。  取值如下： - 单个加速域名，格式：example.test1.com。 - ALL：表示查询名下全部域名。
 
         :return: The domain of this ListTopStatisticsRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ListTopStatisticsRequest:
     def domain(self, domain):
         """Sets the domain of this ListTopStatisticsRequest.
 
-        加速域名，格式：www.test1.com。ALL表示查询名下全部域名。（TopN视频信息要么查询单个域名要么查询所有域名） 
+        查询域名，暂只支持查询单个或者全部域名。  取值如下： - 单个加速域名，格式：example.test1.com。 - ALL：表示查询名下全部域名。
 
         :param domain: The domain of this ListTopStatisticsRequest.
         :type: str
@@ -70,7 +70,7 @@ class ListTopStatisticsRequest:
     def date(self):
         """Gets the date of this ListTopStatisticsRequest.
 
-        查询日期，格式为yyyymmdd。 1）  date必须为昨天或之前的日期 2）  只能查最近一个月内的数据 
+        查询日期，格式为yyyymmdd - date必须为昨天或之前的日期。 - 最多只能查最近一个月内的数据。
 
         :return: The date of this ListTopStatisticsRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ListTopStatisticsRequest:
     def date(self, date):
         """Sets the date of this ListTopStatisticsRequest.
 
-        查询日期，格式为yyyymmdd。 1）  date必须为昨天或之前的日期 2）  只能查最近一个月内的数据 
+        查询日期，格式为yyyymmdd - date必须为昨天或之前的日期。 - 最多只能查最近一个月内的数据。
 
         :param date: The date of this ListTopStatisticsRequest.
         :type: str

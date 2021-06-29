@@ -23,48 +23,28 @@ class Review:
     sensitive_list = []
 
     openapi_types = {
-        'template_id': 'str',
-        'interval': 'int',
-        'politics': 'int',
-        'terrorism': 'int',
-        'porn': 'int'
+        'template_id': 'str'
     }
 
     attribute_map = {
-        'template_id': 'template_id',
-        'interval': 'interval',
-        'politics': 'politics',
-        'terrorism': 'terrorism',
-        'porn': 'porn'
+        'template_id': 'template_id'
     }
 
-    def __init__(self, template_id=None, interval=None, politics=None, terrorism=None, porn=None):
+    def __init__(self, template_id=None):
         """Review - a model defined in huaweicloud sdk"""
         
         
 
         self._template_id = None
-        self._interval = None
-        self._politics = None
-        self._terrorism = None
-        self._porn = None
         self.discriminator = None
 
         self.template_id = template_id
-        if interval is not None:
-            self.interval = interval
-        if politics is not None:
-            self.politics = politics
-        if terrorism is not None:
-            self.terrorism = terrorism
-        if porn is not None:
-            self.porn = porn
 
     @property
     def template_id(self):
         """Gets the template_id of this Review.
 
-        审核模板ID
+        审核模板ID。您可以在视频点播控制台配置审核模板后获取，具体请参见[审核设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0057.html)。
 
         :return: The template_id of this Review.
         :rtype: str
@@ -75,100 +55,12 @@ class Review:
     def template_id(self, template_id):
         """Sets the template_id of this Review.
 
-        审核模板ID
+        审核模板ID。您可以在视频点播控制台配置审核模板后获取，具体请参见[审核设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0057.html)。
 
         :param template_id: The template_id of this Review.
         :type: str
         """
         self._template_id = template_id
-
-    @property
-    def interval(self):
-        """Gets the interval of this Review.
-
-        截图的时间间隔。单位为秒
-
-        :return: The interval of this Review.
-        :rtype: int
-        """
-        return self._interval
-
-    @interval.setter
-    def interval(self, interval):
-        """Sets the interval of this Review.
-
-        截图的时间间隔。单位为秒
-
-        :param interval: The interval of this Review.
-        :type: int
-        """
-        self._interval = interval
-
-    @property
-    def politics(self):
-        """Gets the politics of this Review.
-
-        进行政治人物检测时的置信度。 1）  未传参时表示不进行此项检测。 2）  传 -1 表示采用默认的置信度 
-
-        :return: The politics of this Review.
-        :rtype: int
-        """
-        return self._politics
-
-    @politics.setter
-    def politics(self, politics):
-        """Sets the politics of this Review.
-
-        进行政治人物检测时的置信度。 1）  未传参时表示不进行此项检测。 2）  传 -1 表示采用默认的置信度 
-
-        :param politics: The politics of this Review.
-        :type: int
-        """
-        self._politics = politics
-
-    @property
-    def terrorism(self):
-        """Gets the terrorism of this Review.
-
-        进行暴恐元素检测时的置信度。 1)  未传参时表示不进行此项检测。 2)  传 -1 表示采用默认的置信度 
-
-        :return: The terrorism of this Review.
-        :rtype: int
-        """
-        return self._terrorism
-
-    @terrorism.setter
-    def terrorism(self, terrorism):
-        """Sets the terrorism of this Review.
-
-        进行暴恐元素检测时的置信度。 1)  未传参时表示不进行此项检测。 2)  传 -1 表示采用默认的置信度 
-
-        :param terrorism: The terrorism of this Review.
-        :type: int
-        """
-        self._terrorism = terrorism
-
-    @property
-    def porn(self):
-        """Gets the porn of this Review.
-
-        进行涉黄内容检测时的置信度。 1)  未传参时表示不进行此项检测。 2)  传 -1 表示采用默认的置信度 
-
-        :return: The porn of this Review.
-        :rtype: int
-        """
-        return self._porn
-
-    @porn.setter
-    def porn(self, porn):
-        """Sets the porn of this Review.
-
-        进行涉黄内容检测时的置信度。 1)  未传参时表示不进行此项检测。 2)  传 -1 表示采用默认的置信度 
-
-        :param porn: The porn of this Review.
-        :type: int
-        """
-        self._porn = porn
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -23,8 +23,6 @@ class MetaData:
     sensitive_list = []
 
     openapi_types = {
-        'play_type': 'int',
-        'pack_type': 'str',
         'codec': 'str',
         'duration': 'int',
         'video_size': 'int',
@@ -37,8 +35,6 @@ class MetaData:
     }
 
     attribute_map = {
-        'play_type': 'play_type',
-        'pack_type': 'pack_type',
         'codec': 'codec',
         'duration': 'duration',
         'video_size': 'video_size',
@@ -50,13 +46,11 @@ class MetaData:
         'audio_channels': 'audio_channels'
     }
 
-    def __init__(self, play_type=None, pack_type=None, codec=None, duration=None, video_size=None, width=None, hight=None, bit_rate=None, frame_rate=None, quality=None, audio_channels=None):
+    def __init__(self, codec=None, duration=None, video_size=None, width=None, hight=None, bit_rate=None, frame_rate=None, quality=None, audio_channels=None):
         """MetaData - a model defined in huaweicloud sdk"""
         
         
 
-        self._play_type = None
-        self._pack_type = None
         self._codec = None
         self._duration = None
         self._video_size = None
@@ -68,10 +62,6 @@ class MetaData:
         self._audio_channels = None
         self.discriminator = None
 
-        if play_type is not None:
-            self.play_type = play_type
-        if pack_type is not None:
-            self.pack_type = pack_type
         if codec is not None:
             self.codec = codec
         if duration is not None:
@@ -92,54 +82,10 @@ class MetaData:
             self.audio_channels = audio_channels
 
     @property
-    def play_type(self):
-        """Gets the play_type of this MetaData.
-
-        封装类型,TS/MP4等<br/> 
-
-        :return: The play_type of this MetaData.
-        :rtype: int
-        """
-        return self._play_type
-
-    @play_type.setter
-    def play_type(self, play_type):
-        """Sets the play_type of this MetaData.
-
-        封装类型,TS/MP4等<br/> 
-
-        :param play_type: The play_type of this MetaData.
-        :type: int
-        """
-        self._play_type = play_type
-
-    @property
-    def pack_type(self):
-        """Gets the pack_type of this MetaData.
-
-        封装类型,TS/MP4等<br/> 
-
-        :return: The pack_type of this MetaData.
-        :rtype: str
-        """
-        return self._pack_type
-
-    @pack_type.setter
-    def pack_type(self, pack_type):
-        """Sets the pack_type of this MetaData.
-
-        封装类型,TS/MP4等<br/> 
-
-        :param pack_type: The pack_type of this MetaData.
-        :type: str
-        """
-        self._pack_type = pack_type
-
-    @property
     def codec(self):
         """Gets the codec of this MetaData.
 
-        编码类型：H.264、H.265等<br/> 
+        视频编码格式。 取值如下： - MPEG-2 - MPEG-4 - H.264 - H.265 - WMV - Vorbis - AAC - AC-3 - AMR - APE - FLAC - MP3 - MP2 - WMA - PCM - ADPCM - WavPack
 
         :return: The codec of this MetaData.
         :rtype: str
@@ -150,7 +96,7 @@ class MetaData:
     def codec(self, codec):
         """Sets the codec of this MetaData.
 
-        编码类型：H.264、H.265等<br/> 
+        视频编码格式。 取值如下： - MPEG-2 - MPEG-4 - H.264 - H.265 - WMV - Vorbis - AAC - AC-3 - AMR - APE - FLAC - MP3 - MP2 - WMA - PCM - ADPCM - WavPack
 
         :param codec: The codec of this MetaData.
         :type: str
@@ -161,7 +107,7 @@ class MetaData:
     def duration(self):
         """Gets the duration of this MetaData.
 
-        视频时长<br/> 
+        视频时长。 若视频的原时长为非整数，则该字段值为原时长的向上取整。
 
         :return: The duration of this MetaData.
         :rtype: int
@@ -172,7 +118,7 @@ class MetaData:
     def duration(self, duration):
         """Sets the duration of this MetaData.
 
-        视频时长<br/> 
+        视频时长。 若视频的原时长为非整数，则该字段值为原时长的向上取整。
 
         :param duration: The duration of this MetaData.
         :type: int
@@ -183,7 +129,7 @@ class MetaData:
     def video_size(self):
         """Gets the video_size of this MetaData.
 
-        视频文件大小<br/> 
+        视频文件大小。 单位：字节。
 
         :return: The video_size of this MetaData.
         :rtype: int
@@ -194,7 +140,7 @@ class MetaData:
     def video_size(self, video_size):
         """Sets the video_size of this MetaData.
 
-        视频文件大小<br/> 
+        视频文件大小。 单位：字节。
 
         :param video_size: The video_size of this MetaData.
         :type: int
@@ -205,7 +151,7 @@ class MetaData:
     def width(self):
         """Gets the width of this MetaData.
 
-        视频宽度<br/> 
+        视频宽度（单位：像素）。 - 编码为H.264的取值范围：[32,3840]之间2的倍数。 - 编码为H.265的取值范围：[320,3840]之间4的倍数。
 
         :return: The width of this MetaData.
         :rtype: int
@@ -216,7 +162,7 @@ class MetaData:
     def width(self, width):
         """Sets the width of this MetaData.
 
-        视频宽度<br/> 
+        视频宽度（单位：像素）。 - 编码为H.264的取值范围：[32,3840]之间2的倍数。 - 编码为H.265的取值范围：[320,3840]之间4的倍数。
 
         :param width: The width of this MetaData.
         :type: int
@@ -227,7 +173,7 @@ class MetaData:
     def hight(self):
         """Gets the hight of this MetaData.
 
-        视频高度<br/> 
+        视频高度（单位：像素）。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
 
         :return: The hight of this MetaData.
         :rtype: int
@@ -238,7 +184,7 @@ class MetaData:
     def hight(self, hight):
         """Sets the hight of this MetaData.
 
-        视频高度<br/> 
+        视频高度（单位：像素）。 - 编码为H.264的取值范围：[32,2160]之间2的倍数 。 - 编码为H.265的取值范围：[240,2160]之间4的倍数。
 
         :param hight: The hight of this MetaData.
         :type: int
@@ -249,7 +195,7 @@ class MetaData:
     def bit_rate(self):
         """Gets the bit_rate of this MetaData.
 
-        视频平均码率<br/> 
+        视频平均码率。
 
         :return: The bit_rate of this MetaData.
         :rtype: int
@@ -260,7 +206,7 @@ class MetaData:
     def bit_rate(self, bit_rate):
         """Sets the bit_rate of this MetaData.
 
-        视频平均码率<br/> 
+        视频平均码率。
 
         :param bit_rate: The bit_rate of this MetaData.
         :type: int
@@ -271,7 +217,7 @@ class MetaData:
     def frame_rate(self):
         """Gets the frame_rate of this MetaData.
 
-        帧率<br/> 
+        帧率（单位：帧每秒）。 取值如下： - FRAMERATE_AUTO = 1, - FRAMERATE_10 = 2, - FRAMERATE_15 = 3, - FRAMERATE_2397 = 4, // 23.97 fps - FRAMERATE_24 = 5, - FRAMERATE_25 = 6, - FRAMERATE_2997 = 7, // 29.97 fps - FRAMERATE_30 = 8, - FRAMERATE_50 = 9, - FRAMERATE_60 = 10 默认值：1。 单位：帧每秒。
 
         :return: The frame_rate of this MetaData.
         :rtype: int
@@ -282,7 +228,7 @@ class MetaData:
     def frame_rate(self, frame_rate):
         """Sets the frame_rate of this MetaData.
 
-        帧率<br/> 
+        帧率（单位：帧每秒）。 取值如下： - FRAMERATE_AUTO = 1, - FRAMERATE_10 = 2, - FRAMERATE_15 = 3, - FRAMERATE_2397 = 4, // 23.97 fps - FRAMERATE_24 = 5, - FRAMERATE_25 = 6, - FRAMERATE_2997 = 7, // 29.97 fps - FRAMERATE_30 = 8, - FRAMERATE_50 = 9, - FRAMERATE_60 = 10 默认值：1。 单位：帧每秒。
 
         :param frame_rate: The frame_rate of this MetaData.
         :type: int
@@ -293,7 +239,7 @@ class MetaData:
     def quality(self):
         """Gets the quality of this MetaData.
 
-        分辨率<br/> 
+        清晰度。 取值如下： - FULL_HD：超高清 - HD：高清 - SD：标清 - FLUENT：流畅 - AD：自适应 - 2K - 4K
 
         :return: The quality of this MetaData.
         :rtype: str
@@ -304,7 +250,7 @@ class MetaData:
     def quality(self, quality):
         """Sets the quality of this MetaData.
 
-        分辨率<br/> 
+        清晰度。 取值如下： - FULL_HD：超高清 - HD：高清 - SD：标清 - FLUENT：流畅 - AD：自适应 - 2K - 4K
 
         :param quality: The quality of this MetaData.
         :type: str
@@ -315,7 +261,7 @@ class MetaData:
     def audio_channels(self):
         """Gets the audio_channels of this MetaData.
 
-        音频声道数<br/> 
+        音频的声道数。
 
         :return: The audio_channels of this MetaData.
         :rtype: int
@@ -326,7 +272,7 @@ class MetaData:
     def audio_channels(self, audio_channels):
         """Sets the audio_channels of this MetaData.
 
-        音频声道数<br/> 
+        音频的声道数。
 
         :param audio_channels: The audio_channels of this MetaData.
         :type: int

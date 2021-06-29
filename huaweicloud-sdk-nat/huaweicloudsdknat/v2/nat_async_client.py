@@ -604,7 +604,7 @@ class NatAsyncClient(Client):
         :return: ListNatGatewaysResponse
         """
 
-        all_params = ['tenant_id', 'id', 'enterprise_project_id', 'description', 'created_at', 'name', 'status', 'spec', 'admin_state_up', 'internal_network_id', 'router_id', 'limit']
+        all_params = ['id', 'enterprise_project_id', 'description', 'created_at', 'name', 'status', 'spec', 'admin_state_up', 'internal_network_id', 'router_id', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -615,8 +615,6 @@ class NatAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'tenant_id' in local_var_params:
-            query_params.append(('tenant_id', local_var_params['tenant_id']))
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
         if 'enterprise_project_id' in local_var_params:

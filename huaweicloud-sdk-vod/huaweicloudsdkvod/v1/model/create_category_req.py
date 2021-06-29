@@ -49,7 +49,7 @@ class CreateCategoryReq:
     def name(self):
         """Gets the name of this CreateCategoryReq.
 
-        视频分类名称 
+        媒资分类名称，最大64字节。
 
         :return: The name of this CreateCategoryReq.
         :rtype: str
@@ -60,7 +60,7 @@ class CreateCategoryReq:
     def name(self, name):
         """Sets the name of this CreateCategoryReq.
 
-        视频分类名称 
+        媒资分类名称，最大64字节。
 
         :param name: The name of this CreateCategoryReq.
         :type: str
@@ -71,7 +71,7 @@ class CreateCategoryReq:
     def parent_id(self):
         """Gets the parent_id of this CreateCategoryReq.
 
-        父分类ID 
+        父分类ID。 若不填，则默认生成一级分类。 根节点分类ID为0。
 
         :return: The parent_id of this CreateCategoryReq.
         :rtype: int
@@ -82,7 +82,7 @@ class CreateCategoryReq:
     def parent_id(self, parent_id):
         """Sets the parent_id of this CreateCategoryReq.
 
-        父分类ID 
+        父分类ID。 若不填，则默认生成一级分类。 根节点分类ID为0。
 
         :param parent_id: The parent_id of this CreateCategoryReq.
         :type: int

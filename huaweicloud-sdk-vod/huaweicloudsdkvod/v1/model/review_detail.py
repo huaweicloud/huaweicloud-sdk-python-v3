@@ -49,7 +49,7 @@ class ReviewDetail:
     def confidence(self):
         """Gets the confidence of this ReviewDetail.
 
-        置信度，取值介于0与1之间。
+        置信度。 取值范围：[0,1]。
 
         :return: The confidence of this ReviewDetail.
         :rtype: str
@@ -60,7 +60,7 @@ class ReviewDetail:
     def confidence(self, confidence):
         """Sets the confidence of this ReviewDetail.
 
-        置信度，取值介于0与1之间。
+        置信度。 取值范围：[0,1]。
 
         :param confidence: The confidence of this ReviewDetail.
         :type: str
@@ -71,7 +71,7 @@ class ReviewDetail:
     def label(self):
         """Gets the label of this ReviewDetail.
 
-        每个检测结果的标签化说明，在politics场景中 label为对应的政治人物信息，在terrorism场景中 label为对应的暴恐元素（枪支、刀具、火灾等） 信息，在porn场景中label为对应的涉黄元素（涉 黄、性感等）信息。 
+        每个检测结果的标签化说明。 - politics场景：label为对应的政治人物信息。 - terrorism场景： label为对应的暴恐元素（枪支、刀具、火灾等） 信息。 - porn场景：label为对应的涉黄元素（涉黄、性感等）信息。
 
         :return: The label of this ReviewDetail.
         :rtype: str
@@ -82,7 +82,7 @@ class ReviewDetail:
     def label(self, label):
         """Sets the label of this ReviewDetail.
 
-        每个检测结果的标签化说明，在politics场景中 label为对应的政治人物信息，在terrorism场景中 label为对应的暴恐元素（枪支、刀具、火灾等） 信息，在porn场景中label为对应的涉黄元素（涉 黄、性感等）信息。 
+        每个检测结果的标签化说明。 - politics场景：label为对应的政治人物信息。 - terrorism场景： label为对应的暴恐元素（枪支、刀具、火灾等） 信息。 - porn场景：label为对应的涉黄元素（涉黄、性感等）信息。
 
         :param label: The label of this ReviewDetail.
         :type: str

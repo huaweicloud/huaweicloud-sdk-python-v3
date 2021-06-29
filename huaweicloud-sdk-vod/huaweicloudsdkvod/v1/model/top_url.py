@@ -65,7 +65,7 @@ class TopUrl:
     def value(self):
         """Gets the value of this TopUrl.
 
-        总播放次数 
+        总播放次数。
 
         :return: The value of this TopUrl.
         :rtype: int
@@ -76,7 +76,7 @@ class TopUrl:
     def value(self, value):
         """Sets the value of this TopUrl.
 
-        总播放次数 
+        总播放次数。
 
         :param value: The value of this TopUrl.
         :type: int
@@ -87,7 +87,7 @@ class TopUrl:
     def asset_id(self):
         """Gets the asset_id of this TopUrl.
 
-        媒资ID 
+        媒资ID。
 
         :return: The asset_id of this TopUrl.
         :rtype: str
@@ -98,7 +98,7 @@ class TopUrl:
     def asset_id(self, asset_id):
         """Sets the asset_id of this TopUrl.
 
-        媒资ID 
+        媒资ID。
 
         :param asset_id: The asset_id of this TopUrl.
         :type: str
@@ -109,7 +109,7 @@ class TopUrl:
     def title(self):
         """Gets the title of this TopUrl.
 
-        媒资名称 
+        媒资名称。
 
         :return: The title of this TopUrl.
         :rtype: str
@@ -120,7 +120,7 @@ class TopUrl:
     def title(self, title):
         """Sets the title of this TopUrl.
 
-        媒资名称 
+        媒资名称。
 
         :param title: The title of this TopUrl.
         :type: str
@@ -131,7 +131,7 @@ class TopUrl:
     def duration(self):
         """Gets the duration of this TopUrl.
 
-        媒资时长，单位为秒 
+        媒资时长。 单位：秒。
 
         :return: The duration of this TopUrl.
         :rtype: int
@@ -142,7 +142,7 @@ class TopUrl:
     def duration(self, duration):
         """Sets the duration of this TopUrl.
 
-        媒资时长，单位为秒 
+        媒资时长。 单位：秒。
 
         :param duration: The duration of this TopUrl.
         :type: int
@@ -153,7 +153,7 @@ class TopUrl:
     def size(self):
         """Gets the size of this TopUrl.
 
-        媒资原始视频大小，单位为字节 
+        媒资原始大小。 单位：字节。
 
         :return: The size of this TopUrl.
         :rtype: int
@@ -164,7 +164,7 @@ class TopUrl:
     def size(self, size):
         """Sets the size of this TopUrl.
 
-        媒资原始视频大小，单位为字节 
+        媒资原始大小。 单位：字节。
 
         :param size: The size of this TopUrl.
         :type: int

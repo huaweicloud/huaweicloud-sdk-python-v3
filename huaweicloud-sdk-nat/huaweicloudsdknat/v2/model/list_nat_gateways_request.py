@@ -23,7 +23,6 @@ class ListNatGatewaysRequest:
     sensitive_list = []
 
     openapi_types = {
-        'tenant_id': 'str',
         'id': 'str',
         'enterprise_project_id': 'str',
         'description': 'str',
@@ -38,7 +37,6 @@ class ListNatGatewaysRequest:
     }
 
     attribute_map = {
-        'tenant_id': 'tenant_id',
         'id': 'id',
         'enterprise_project_id': 'enterprise_project_id',
         'description': 'description',
@@ -52,12 +50,11 @@ class ListNatGatewaysRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, tenant_id=None, id=None, enterprise_project_id=None, description=None, created_at=None, name=None, status=None, spec=None, admin_state_up=None, internal_network_id=None, router_id=None, limit=None):
+    def __init__(self, id=None, enterprise_project_id=None, description=None, created_at=None, name=None, status=None, spec=None, admin_state_up=None, internal_network_id=None, router_id=None, limit=None):
         """ListNatGatewaysRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._tenant_id = None
         self._id = None
         self._enterprise_project_id = None
         self._description = None
@@ -71,8 +68,6 @@ class ListNatGatewaysRequest:
         self._limit = None
         self.discriminator = None
 
-        if tenant_id is not None:
-            self.tenant_id = tenant_id
         if id is not None:
             self.id = id
         if enterprise_project_id is not None:
@@ -95,28 +90,6 @@ class ListNatGatewaysRequest:
             self.router_id = router_id
         if limit is not None:
             self.limit = limit
-
-    @property
-    def tenant_id(self):
-        """Gets the tenant_id of this ListNatGatewaysRequest.
-
-        项目的ID。
-
-        :return: The tenant_id of this ListNatGatewaysRequest.
-        :rtype: str
-        """
-        return self._tenant_id
-
-    @tenant_id.setter
-    def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ListNatGatewaysRequest.
-
-        项目的ID。
-
-        :param tenant_id: The tenant_id of this ListNatGatewaysRequest.
-        :type: str
-        """
-        self._tenant_id = tenant_id
 
     @property
     def id(self):

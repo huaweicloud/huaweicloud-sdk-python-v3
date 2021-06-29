@@ -23,7 +23,7 @@ class SlowlogResult:
     sensitive_list = []
 
     openapi_types = {
-        'node_name': 'str',
+        'time': 'str',
         'database': 'str',
         'query_sample': 'str',
         'type': 'str',
@@ -31,53 +31,52 @@ class SlowlogResult:
     }
 
     attribute_map = {
-        'node_name': 'node_name',
+        'time': 'time',
         'database': 'database',
         'query_sample': 'query_sample',
         'type': 'type',
         'start_time': 'start_time'
     }
 
-    def __init__(self, node_name=None, database=None, query_sample=None, type=None, start_time=None):
+    def __init__(self, time=None, database=None, query_sample=None, type=None, start_time=None):
         """SlowlogResult - a model defined in huaweicloud sdk"""
         
         
 
-        self._node_name = None
+        self._time = None
         self._database = None
         self._query_sample = None
         self._type = None
         self._start_time = None
         self.discriminator = None
 
-        if node_name is not None:
-            self.node_name = node_name
+        self.time = time
         self.database = database
         self.query_sample = query_sample
         self.type = type
         self.start_time = start_time
 
     @property
-    def node_name(self):
-        """Gets the node_name of this SlowlogResult.
+    def time(self):
+        """Gets the time of this SlowlogResult.
 
-        节点名称。
+        执行时间。
 
-        :return: The node_name of this SlowlogResult.
+        :return: The time of this SlowlogResult.
         :rtype: str
         """
-        return self._node_name
+        return self._time
 
-    @node_name.setter
-    def node_name(self, node_name):
-        """Sets the node_name of this SlowlogResult.
+    @time.setter
+    def time(self, time):
+        """Sets the time of this SlowlogResult.
 
-        节点名称。
+        执行时间。
 
-        :param node_name: The node_name of this SlowlogResult.
+        :param time: The time of this SlowlogResult.
         :type: str
         """
-        self._node_name = node_name
+        self._time = time
 
     @property
     def database(self):

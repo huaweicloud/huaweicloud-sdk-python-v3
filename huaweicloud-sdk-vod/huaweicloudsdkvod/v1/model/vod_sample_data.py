@@ -50,7 +50,7 @@ class VodSampleData:
     def storage(self):
         """Gets the storage of this VodSampleData.
 
-        存储空间，单位：GB <br/> 
+        存储空间。 单位：GB。
 
         :return: The storage of this VodSampleData.
         :rtype: float
@@ -61,7 +61,7 @@ class VodSampleData:
     def storage(self, storage):
         """Sets the storage of this VodSampleData.
 
-        存储空间，单位：GB <br/> 
+        存储空间。 单位：GB。
 
         :param storage: The storage of this VodSampleData.
         :type: float
@@ -72,7 +72,7 @@ class VodSampleData:
     def transcode(self):
         """Gets the transcode of this VodSampleData.
 
-        转码时长，单位：秒 <br/> 
+        转码时长。 单位：秒。
 
         :return: The transcode of this VodSampleData.
         :rtype: int
@@ -83,7 +83,7 @@ class VodSampleData:
     def transcode(self, transcode):
         """Sets the transcode of this VodSampleData.
 
-        转码时长，单位：秒 <br/> 
+        转码时长。 单位：秒。
 
         :param transcode: The transcode of this VodSampleData.
         :type: int

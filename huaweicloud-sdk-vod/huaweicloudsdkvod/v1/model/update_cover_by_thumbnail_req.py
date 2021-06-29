@@ -44,7 +44,7 @@ class UpdateCoverByThumbnailReq:
     def thumbnail_url(self):
         """Gets the thumbnail_url of this UpdateCoverByThumbnailReq.
 
-        截图url<br/> 
+        截图文件的URL。 需要根据媒资ID调用[查询媒资详细信息](https://support.huaweicloud.com/api-vod/vod_04_0202.html)接口获取媒资的截图文件URL。
 
         :return: The thumbnail_url of this UpdateCoverByThumbnailReq.
         :rtype: str
@@ -55,7 +55,7 @@ class UpdateCoverByThumbnailReq:
     def thumbnail_url(self, thumbnail_url):
         """Sets the thumbnail_url of this UpdateCoverByThumbnailReq.
 
-        截图url<br/> 
+        截图文件的URL。 需要根据媒资ID调用[查询媒资详细信息](https://support.huaweicloud.com/api-vod/vod_04_0202.html)接口获取媒资的截图文件URL。
 
         :param thumbnail_url: The thumbnail_url of this UpdateCoverByThumbnailReq.
         :type: str

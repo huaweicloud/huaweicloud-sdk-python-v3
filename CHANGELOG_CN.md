@@ -1,3 +1,52 @@
+# 3.0.50 2021-06-29
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`CreateNodePool`、`ShowNodePool`、`UpdateNodePool`、`DeleteNodePool`新增请求参数`storage`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`BatchUpdateUser`的参数`selected`类型调整： `string`->`boolean`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ListInstances`的响应参数`port`类型调整： `string`->`integer`
+    - 接口`ListInstances`的响应参数名称调整： `storage_engine`->`mode`
+    - 接口`ListSlowLogs`移除响应参数`node_name`，新增响应参数`time`
+
+### HuaweiCloud SDK NAT
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 修复接口`ListNatGateways`的请求参数`project_id`重复的问题
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ShowInformationAboutDatabaseProxy`的响应参数`port`、`node_num`类型调整： `string`->`integer`
+
 # 3.0.49 2021-06-25
 
 ### HuaweiCloud SDK APIG

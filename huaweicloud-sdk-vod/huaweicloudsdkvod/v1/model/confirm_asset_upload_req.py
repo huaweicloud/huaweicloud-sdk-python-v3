@@ -48,7 +48,7 @@ class ConfirmAssetUploadReq:
     def asset_id(self):
         """Gets the asset_id of this ConfirmAssetUploadReq.
 
-        媒体ID<br/> 
+        媒资ID。
 
         :return: The asset_id of this ConfirmAssetUploadReq.
         :rtype: str
@@ -59,7 +59,7 @@ class ConfirmAssetUploadReq:
     def asset_id(self, asset_id):
         """Sets the asset_id of this ConfirmAssetUploadReq.
 
-        媒体ID<br/> 
+        媒资ID。
 
         :param asset_id: The asset_id of this ConfirmAssetUploadReq.
         :type: str
@@ -70,7 +70,7 @@ class ConfirmAssetUploadReq:
     def status(self):
         """Gets the status of this ConfirmAssetUploadReq.
 
-        上传状态<br/> 
+        上传状态。 取值如下： - CREATED：创建成功。 - FAILED：创建失败。 - CANCELLED：创建取消。
 
         :return: The status of this ConfirmAssetUploadReq.
         :rtype: str
@@ -81,7 +81,7 @@ class ConfirmAssetUploadReq:
     def status(self, status):
         """Sets the status of this ConfirmAssetUploadReq.
 
-        上传状态<br/> 
+        上传状态。 取值如下： - CREATED：创建成功。 - FAILED：创建失败。 - CANCELLED：创建取消。
 
         :param status: The status of this ConfirmAssetUploadReq.
         :type: str

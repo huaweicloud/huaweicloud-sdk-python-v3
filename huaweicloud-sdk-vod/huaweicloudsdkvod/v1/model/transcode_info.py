@@ -58,7 +58,7 @@ class TranscodeInfo:
     def template_group_name(self):
         """Gets the template_group_name of this TranscodeInfo.
 
-        转码模板组名称
+        转码模板组名称。
 
         :return: The template_group_name of this TranscodeInfo.
         :rtype: str
@@ -69,7 +69,7 @@ class TranscodeInfo:
     def template_group_name(self, template_group_name):
         """Sets the template_group_name of this TranscodeInfo.
 
-        转码模板组名称
+        转码模板组名称。
 
         :param template_group_name: The template_group_name of this TranscodeInfo.
         :type: str
@@ -80,6 +80,7 @@ class TranscodeInfo:
     def output(self):
         """Gets the output of this TranscodeInfo.
 
+        转码输出数组。 - HLS或DASH格式：此数组的成员个数为n+1，n为转码输出路数。 - MP4格式：此数组的成员个数为n，n为转码输出路数。
 
         :return: The output of this TranscodeInfo.
         :rtype: list[Output]
@@ -90,6 +91,7 @@ class TranscodeInfo:
     def output(self, output):
         """Sets the output of this TranscodeInfo.
 
+        转码输出数组。 - HLS或DASH格式：此数组的成员个数为n+1，n为转码输出路数。 - MP4格式：此数组的成员个数为n，n为转码输出路数。
 
         :param output: The output of this TranscodeInfo.
         :type: list[Output]
@@ -100,6 +102,7 @@ class TranscodeInfo:
     def exec_desc(self):
         """Gets the exec_desc of this TranscodeInfo.
 
+        执行情况描述。
 
         :return: The exec_desc of this TranscodeInfo.
         :rtype: str
@@ -110,6 +113,7 @@ class TranscodeInfo:
     def exec_desc(self, exec_desc):
         """Sets the exec_desc of this TranscodeInfo.
 
+        执行情况描述。
 
         :param exec_desc: The exec_desc of this TranscodeInfo.
         :type: str
@@ -120,6 +124,7 @@ class TranscodeInfo:
     def transcode_status(self):
         """Gets the transcode_status of this TranscodeInfo.
 
+        转码状态。 取值如下： - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中 - TRANSCODE_SUCCEED：转码成功 - TRANSCODE_FAILED：转码失败
 
         :return: The transcode_status of this TranscodeInfo.
         :rtype: str
@@ -130,6 +135,7 @@ class TranscodeInfo:
     def transcode_status(self, transcode_status):
         """Sets the transcode_status of this TranscodeInfo.
 
+        转码状态。 取值如下： - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中 - TRANSCODE_SUCCEED：转码成功 - TRANSCODE_FAILED：转码失败
 
         :param transcode_status: The transcode_status of this TranscodeInfo.
         :type: str

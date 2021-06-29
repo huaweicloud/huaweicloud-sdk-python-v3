@@ -50,7 +50,7 @@ class CreateExtractAudioTaskResponse(SdkResponse):
     def asset_id(self):
         """Gets the asset_id of this CreateExtractAudioTaskResponse.
 
-        视频源媒资ID<br/> 
+        视频源媒资ID。
 
         :return: The asset_id of this CreateExtractAudioTaskResponse.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateExtractAudioTaskResponse(SdkResponse):
     def asset_id(self, asset_id):
         """Sets the asset_id of this CreateExtractAudioTaskResponse.
 
-        视频源媒资ID<br/> 
+        视频源媒资ID。
 
         :param asset_id: The asset_id of this CreateExtractAudioTaskResponse.
         :type: str
@@ -72,7 +72,7 @@ class CreateExtractAudioTaskResponse(SdkResponse):
     def audio_asset_id(self):
         """Gets the audio_asset_id of this CreateExtractAudioTaskResponse.
 
-        提取的音频媒资ID<br/> 
+        提取的音频媒资ID。
 
         :return: The audio_asset_id of this CreateExtractAudioTaskResponse.
         :rtype: str
@@ -83,7 +83,7 @@ class CreateExtractAudioTaskResponse(SdkResponse):
     def audio_asset_id(self, audio_asset_id):
         """Sets the audio_asset_id of this CreateExtractAudioTaskResponse.
 
-        提取的音频媒资ID<br/> 
+        提取的音频媒资ID。
 
         :param audio_asset_id: The audio_asset_id of this CreateExtractAudioTaskResponse.
         :type: str

@@ -25,7 +25,7 @@ class ListResourceInstancesResponse(SdkResponse):
     openapi_types = {
         'resources': 'list[Resources]',
         'total_count': 'int',
-        'marker': 'int'
+        'marker': 'str'
     }
 
     attribute_map = {
@@ -102,7 +102,7 @@ class ListResourceInstancesResponse(SdkResponse):
         分页位置标识。
 
         :return: The marker of this ListResourceInstancesResponse.
-        :rtype: int
+        :rtype: str
         """
         return self._marker
 
@@ -113,7 +113,7 @@ class ListResourceInstancesResponse(SdkResponse):
         分页位置标识。
 
         :param marker: The marker of this ListResourceInstancesResponse.
-        :type: int
+        :type: str
         """
         self._marker = marker
 

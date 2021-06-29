@@ -1,3 +1,52 @@
+# 3.0.50 2021-06-29
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add a request parameter `storage` to interfaces `CreateNodePool`,`ShowNodePool`,`UpdateNodePool`,`DeleteNodePool`.
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the type of the parameter `selected` of the interface `BatchUpdateUser`: `string`->`boolean`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the type of the response parameter `port` of the interface `ListInstances`: `string`->`integer`.
+    - Modify the name of response parameter of the interface `ListInstances`: `storage_engine`->`mode`
+    - Remove a response parameter `node_name` and add a response parameter `time` to the interface `ListSlowLogs`.
+
+### HuaweiCloud SDK NAT
+
+- _Features_
+    - None
+- _Bug Fix_
+    - Fix the issue that the request parameter `project_id` of the interface `ListNatGateways` is duplicated.
+- _Change_
+    - None
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the type of response parameters `port`,`node_num` of the interface `ShowInformationAboutDatabaseProxy`: `string`->`integer`
+
 # 3.0.49 2021-06-25
 
 ### HuaweiCloud SDK APIG

@@ -9,7 +9,7 @@ import six
 from huaweicloudsdkcore.sdk_response import SdkResponse
 
 
-class BatchUnsetScalingInstancesStandbyResponse(SdkResponse):
+class BatchUnsetScalingInstancesStantbyResponse(SdkResponse):
 
 
     """
@@ -29,9 +29,9 @@ class BatchUnsetScalingInstancesStandbyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchUnsetScalingInstancesStandbyResponse - a model defined in huaweicloud sdk"""
+        """BatchUnsetScalingInstancesStantbyResponse - a model defined in huaweicloud sdk"""
         
-        super(BatchUnsetScalingInstancesStandbyResponse, self).__init__()
+        super(BatchUnsetScalingInstancesStantbyResponse, self).__init__()
         self.discriminator = None
 
     def to_dict(self):
@@ -71,7 +71,7 @@ class BatchUnsetScalingInstancesStandbyResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BatchUnsetScalingInstancesStandbyResponse):
+        if not isinstance(other, BatchUnsetScalingInstancesStantbyResponse):
             return False
 
         return self.__dict__ == other.__dict__

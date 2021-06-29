@@ -9,31 +9,8 @@ import six
 
 
 
-class Status:
-    """
-    allowed enum values
-    """
+class UpdateBucketAuthorizedReq:
 
-    UNCREATED = "UNCREATED"
-    DELETED = "DELETED"
-    CANCELLED = "CANCELLED"
-    SERVER_ERROR = "SERVER_ERROR"
-    UPLOAD_FAILED = "UPLOAD_FAILED"
-    CREATING = "CREATING"
-    PUBLISHED = "PUBLISHED"
-    WAITING_TRANSCODE = "WAITING_TRANSCODE"
-    TRANSCODING = "TRANSCODING"
-    TRANSCODE_FAILED = "TRANSCODE_FAILED"
-    TRANSCODE_SUCCEED = "TRANSCODE_SUCCEED"
-    CREATED = "CREATED"
-    UNPUBLISHED = "UNPUBLISHED"
-    NO_ASSET = "NO_ASSET"
-    DELETING = "DELETING"
-    DELETE_FAILED = "DELETE_FAILED"
-    OBS_CREATING = "OBS_CREATING"
-    OBS_CREATE_FAILED = "OBS_CREATE_FAILED"
-    OBS_CREATE_SUCCESS = "OBS_CREATE_SUCCESS"
-    UNKNOW = "UNkNOW"
 
     """
     Attributes:
@@ -46,16 +23,70 @@ class Status:
     sensitive_list = []
 
     openapi_types = {
+        'bucket': 'str',
+        'operation': 'str'
     }
 
     attribute_map = {
+        'bucket': 'bucket',
+        'operation': 'operation'
     }
 
-    def __init__(self):
-        """Status - a model defined in huaweicloud sdk"""
+    def __init__(self, bucket=None, operation=None):
+        """UpdateBucketAuthorizedReq - a model defined in huaweicloud sdk"""
         
         
+
+        self._bucket = None
+        self._operation = None
         self.discriminator = None
+
+        self.bucket = bucket
+        self.operation = operation
+
+    @property
+    def bucket(self):
+        """Gets the bucket of this UpdateBucketAuthorizedReq.
+
+        OBS桶名称。
+
+        :return: The bucket of this UpdateBucketAuthorizedReq.
+        :rtype: str
+        """
+        return self._bucket
+
+    @bucket.setter
+    def bucket(self, bucket):
+        """Sets the bucket of this UpdateBucketAuthorizedReq.
+
+        OBS桶名称。
+
+        :param bucket: The bucket of this UpdateBucketAuthorizedReq.
+        :type: str
+        """
+        self._bucket = bucket
+
+    @property
+    def operation(self):
+        """Gets the operation of this UpdateBucketAuthorizedReq.
+
+        是否进行桶授权。 取值如下： - 0：取消授权。 - 1：授权。
+
+        :return: The operation of this UpdateBucketAuthorizedReq.
+        :rtype: str
+        """
+        return self._operation
+
+    @operation.setter
+    def operation(self, operation):
+        """Sets the operation of this UpdateBucketAuthorizedReq.
+
+        是否进行桶授权。 取值如下： - 0：取消授权。 - 1：授权。
+
+        :param operation: The operation of this UpdateBucketAuthorizedReq.
+        :type: str
+        """
+        self._operation = operation
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -94,7 +125,7 @@ class Status:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Status):
+        if not isinstance(other, UpdateBucketAuthorizedReq):
             return False
 
         return self.__dict__ == other.__dict__
